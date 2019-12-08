@@ -1,0 +1,10 @@
+version="1.2.9"
+tags={
+	"Events"
+	"Fixes"
+	"Historical"
+	"Expansion"
+	"Gameplay"
+}
+name="FEE"
+supported_version="1.29.2.0"
