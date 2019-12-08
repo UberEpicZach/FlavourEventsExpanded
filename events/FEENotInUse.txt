@@ -1,0 +1,14 @@
+namespace = hee_announce
+
+country_event = {
+	id = hee_announce.1
+	title = hee_announce.1.t
+	desc = hee_announce.1.d
+	picture = BIG_BOOK_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = hee_announce.1.a
+	}
+}
