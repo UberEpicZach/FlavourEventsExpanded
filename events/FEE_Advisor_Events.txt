@@ -1,0 +1,80 @@
+namespace = FEE_Advisor_Event
+
+country_event = {
+	id = FEE_Advisor_Event.1
+	title = FEE_Advisor_Event.1.t
+	desc = FEE_Advisor_Event.1.d
+	picture = NEW_HEIR_eventPicture
+
+	trigger = {
+		advisor = master_of_mint
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = FEE_Advisor_Event.1.a
+
+		ai_chance = { factor = 100 }
+
+		add_treasury = 300
+	}
+}
+
+country_event = {
+	id = FEE_Advisor_Event.2
+	title = FEE_Advisor_Event.2.t
+	desc = FEE_Advisor_Event.2.d
+	picture = NEW_HEIR_eventPicture
+
+	trigger = {
+		advisor = treasurer
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = FEE_Advisor_Event.2.a
+
+		ai_chance = { factor = 100 }
+
+		add_treasury = 300
+	}
+}
+
+country_event = {
+	id = FEE_Advisor_Event.3
+	title = FEE_Advisor_Event.3.t
+	desc = FEE_Advisor_Event.3.d
+	picture = NEW_HEIR_eventPicture
+
+	trigger = {
+		advisor = master_of_mint
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = FEE_Advisor_Event.3.a
+
+		ai_chance = { factor = 100 }
+
+		add_treasury = -320
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					is_core = ROOT
+				}
+				add_unrest = -2
+			}
+		}
+		custom_tooltip = EVERY_OWNED_PROVINCE_LOSES_2_UNREST
+		custom_tooltip = ANYTHING_CAN_HAPPEN_AFTER
+	}
+}

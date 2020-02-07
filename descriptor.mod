@@ -1,10 +1,6 @@
-version="1.2.9"
+version="1.29"
 tags={
-	"Events"
-	"Fixes"
-	"Historical"
-	"Expansion"
-	"Gameplay"
+	"Balance"
 }
-name="FEE"
-supported_version="1.29.2.0"
+name="FlavourEventsExpanded"
+supported_version="1.29.4"
