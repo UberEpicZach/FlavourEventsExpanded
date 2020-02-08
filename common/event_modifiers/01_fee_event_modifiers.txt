@@ -791,7 +791,6 @@ statut_karnkowskiego = {
    local_ship_cost = -0.10
    }
 unia_mielnicka = { }
-
 #Heir Education
 neglected_heir_education = {
 	legitimacy = -0.5
@@ -802,3 +801,24 @@ neglected_heir_education = {
 #Lex Talionis II
 ruler_deposed = { }
 is_usurper = { }
+
+#Seven Virtures and Seven Sins
+fee_Chaste = {
+	heir_chance = -15
+}
+fee_temperate = {
+	global_tax_modifier = 5
+}
+fee_charitable = {
+	diplomatic_reputation = 1
+}
+fee_diligent = {
+	global_missionary_strength = 2
+	discipline = 3
+} 
+
+	
+
+
+	
+
