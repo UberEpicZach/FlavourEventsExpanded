@@ -142,8 +142,13 @@ country_event = {
 		has_dlc = "Rights of Man"
 		has_foreign_consort = no
 		is_lesser_in_union = no
-		NOT = { has_country_modifier = zoroastrian_divine_marriage }
 		num_of_cities = 2
+
+		any_owned_province = {
+			is_capital = no
+			is_core = ROOT
+			is_city = yes
+		}
 		NOT = { has_reform = ottoman_government } #Not from nobility
 		NOT = { has_ruler_flag = has_lowborn_consort }
 		NOT = {
@@ -156,11 +161,27 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			random_owned_province = {
+				limit = { 
+					is_capital = no
+					is_core = ROOT
+					is_city = yes
+				}
+				save_event_target_as = origin_of_queens_family
+			}
+			random_owned_province = {
+				limit = {
+					is_capital = no
+					is_core = ROOT
+					continent = ROOT
+				}
+				save_event_target_as = origin_of_queens_family
+			}
+			random_owned_province = {
 				limit = {
 					is_capital = no
 					OR = {
 						is_state = yes
-						is_in_capital_area = yes
+						is_in_capital_area = yes 
 					}
 					NOT = { has_estate = estate_burghers }
 					NOT = { has_estate = estate_church }
@@ -187,6 +208,19 @@ country_event = {
 						is_in_capital_area = yes 
 					}
 					has_estate = estate_nobles
+					development = 15
+					culture_group = root
+				}
+				save_event_target_as = origin_of_queens_family
+			}
+			random_owned_province = {
+				limit = {
+					is_capital = no
+					OR = {
+						is_state = yes
+						is_in_capital_area = yes 
+					}
+					has_estate = estate_nobles
 					development = 20
 				}
 				save_event_target_as = origin_of_queens_family
@@ -199,7 +233,33 @@ country_event = {
 						is_in_capital_area = yes 
 					}
 					has_estate = estate_nobles
+					development = 20
+					culture_group = root
+				}
+				save_event_target_as = origin_of_queens_family
+			}
+			random_owned_province = {
+				limit = {
+					is_capital = no
+					OR = {
+						is_state = yes
+						is_in_capital_area = yes 
+					}
+					has_estate = estate_nobles
 					development = 25
+				}
+				save_event_target_as = origin_of_queens_family
+			}
+			random_owned_province = {
+				limit = {
+					is_capital = no
+					OR = {
+						is_state = yes
+						is_in_capital_area = yes 
+					}
+					has_estate = estate_nobles
+					development = 25
+					culture_group = root
 				}
 				save_event_target_as = origin_of_queens_family
 			}
