@@ -1,6 +1,6 @@
 
 ########################################
-#	 Historical Events Extended 
+#	 Historical Events Extended
 ########################################
 
 # Bavaria chooses to reconcile with the Habsburgs or oppose them
@@ -49,7 +49,7 @@ fee_rejected_swabian_league = {
 	yearly_decay = 1
 }
 
-#Switzerland 
+#Switzerland
 fee_swiss_soldiers_opinion = {
 	opinion = 30
 	yearly_decay = 1
@@ -167,4 +167,41 @@ fee_MUG_tribute = {
 fee_NOV_gift = {
 	opinion = 25
 	yearly_decay = 1
+}
+
+# Religious Statue
+fee_religious_statue = {
+	opinion = 25
+	yearly_decay = 1
+}
+
+# A Statue of the Devil
+fee_devil_statue = {
+	opinion = -25
+	yearly_decay = 1
+	years = 10
+}
+
+# Openly Lustful Ruler
+fee_lovemaking_statue_negative = {
+	opinion = -25
+	yearly_decay = 10
+}
+
+# Openly Lustful Ruler
+fee_lovemaking_statue_negative_small = {
+	opinion = -5
+	years = 5
+}
+
+# Pious Ruler
+fee_lovemaking_statue_positive = {
+	opinion = 25
+	years = 5
+}
+
+# Pious Ruler
+fee_lovemaking_statue_positive_small = {
+	opinion = 5
+	years = 5
 }

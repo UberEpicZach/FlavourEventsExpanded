@@ -1,12 +1,70 @@
 ﻿l_english:
- FEE_Advisor_Event.1.t: "A Pouch of Gold?"
- FEE_Advisor_Event.1.d: "$TREASURER$ beams a smile at you while handing over a pouch of gold. He claims it contains the savings accumulated from hard work and donations from the richer families in your realm."
- FEE_Advisor_Event.1.a: "Excellent News!"
- FEE_Advisor_Event.2.t: "A Pouch of Gold?"
- FEE_Advisor_Event.2.d: "$MASTER_OF_MINT$ beams a smile at you while handing over a pouch of gold. He claims it contains the savings accumulated from hard work and donations from the richer families in your realm."
- FEE_Advisor_Event.2.a: "Excellent News!"
+ # Events:
+ FEE_Advisor_Event.EVTNAME1: "A Pouch of Gold?"
+ FEE_Advisor_Event.EVTDESC1: "$MASTER_OF_MINT$$TREASURER$ beams a smile at you while handing over a pouch of gold. He claims it contains the savings accumulated from hard work and donations from the richer families in your realm."
+ FEE_Advisor_Event1.EVTOPT1: "Excellent News!"
 
- #Tooltips
- EVERY_OWNED_PROVINCE_LOSES_2_UNREST: "Every Owned Core Province loses §G-2§! Unrest"
- EVERY_OWNED_PROVINCE_GAINS_1_UNREST: "Every Owned Province gains §R+1§! Unrest"
- 
+ FEE_Advisor_Event.EVTNAME2: "Monumental Suggestions"
+ FEE_Advisor_Event.EVTDESC2: "$MASTER_OF_MINT$$TREASURER$ approaches you: \"My Liege, I have a great idea for a monument. Something to raise our cultural status and make the people notice what a great ruler you are. I would require some gold and your patience, and the work would take a year to complete.\""
+ FEE_Advisor_Event2.EVTOPT1: "So be it! Surprise me!"
+ FEE_Advisor_Event2.EVTOPT2: "I don't think so ..."
+
+ FEE_Advisor_Event.EVTNAME3: "A Monumental Reveal"
+ FEE_Advisor_Event.EVTDESC3: "The monument $MASTER_OF_MINT$$TREASURER$ promised is finished. The shape of the statue seems a bit off, as it is unveiled some of the crowd seem confused. It is a giant ear with the inscription 'IT LISTENS'."
+ FEE_Advisor_Event3.EVTOPT1: "At least it's original."
+ FEE_Advisor_Event3.EVTOPT2: "Tear it down!"
+
+ FEE_Advisor_Event.EVTNAME4: "A Monumental Reveal"
+ FEE_Advisor_Event.EVTDESC4: "The monument $MASTER_OF_MINT$$TREASURER$ promised is finished. People have gathered to witness the unveiling of the new statue. It is a large portrait of [fee_statue_target.Monarch.GetName]."
+ FEE_Advisor_Event4.EVTOPT1: "Surely, this will bring us their favor."
+
+ FEE_Advisor_Event.EVTNAME5: "A Monumental Reveal"
+ FEE_Advisor_Event.EVTDESC5: "The monument $MASTER_OF_MINT$$TREASURER$ promised is finished.  At the unveiling, the crowd gasps and some even scream. It's something that resembles a throne, with an eyeless horned creature on top. It smells like blood."
+ FEE_Advisor_Event5.EVTOPT1: "I should have seen this coming."
+ FEE_Advisor_Event5.EVTOPT2: "Climb on the throne."
+
+ FEE_Advisor_Event.EVTNAME6: "A Monumental Reveal"
+ FEE_Advisor_Event.EVTDESC6: "The monument $MASTER_OF_MINT$$TREASURER$ promised is finished. Upon unveiling, a statue of yourself is revealed and you notice the crowd smiling and giving you a round of applause."
+ FEE_Advisor_Event6.EVTOPT1: "I have no words."
+ FEE_Advisor_Event6.EVTOPT2: "It's too much, remove it."
+
+ FEE_Advisor_Event.EVTNAME7: "A Monumental Reveal"
+ FEE_Advisor_Event.EVTDESC7: "The monument $MASTER_OF_MINT$$TREASURER$ promised is finished. The statue is unveiled and it's just a bigger version of $MASTER_OF_MINT$$TREASURER$, only slightly better looking than the real $MASTER_OF_MINT$$TREASURER$."
+ FEE_Advisor_Event7.EVTOPT1: "I don't know about this."
+ FEE_Advisor_Event7.EVTOPT2: "Tear it down! $MASTER_OF_MINT$$TREASURER$ will be put in their place!"
+
+ FEE_Advisor_Event.EVTNAME8: "A Monumental Reveal"
+ FEE_Advisor_Event.EVTDESC8: "The monument $MASTER_OF_MINT$$TREASURER$ promised is finished. Some people in the crowd cover their children's eyes as the statue is unveiled. It's a couple in the middle of lovemaking, and not exactly presented in a tasteful way."
+ FEE_Advisor_Event8.EVTOPT1: "Children must learn this sooner or later."
+ FEE_Advisor_Event8.EVTOPT2: "Tear it down!"
+
+ FEE_Advisor_Event.EVTNAME9: "Courtly Loans"
+ FEE_Advisor_Event.EVTDESC9: "A merchant approaches the court and carefully pleads to make a payment plan for the recent loan taken by $MASTER_OF_MINT$$TREASURER$. It seems the fruits of labour may have been exaggerated, and since the loan was made in your name, this relects poorly on you too. What will the consequence be for $MASTER_OF_MINT$$TREASURER$?"
+ FEE_Advisor_Event9.EVTOPT1: "Understandable, collecting taxes is tough work."
+ FEE_Advisor_Event9.EVTOPT2: "He has overstepped his bounds."
+
+ FEE_Advisor_Event.EVTNAME10: "A Full Days Work"
+ FEE_Advisor_Event.EVTDESC10: "$MASTER_OF_MINT$$TREASURER$ smiles at you. \"My Liege, I have noticed your mind seems to drift off whenever we discuss monetary issues. I believe that to make things interesting, one must be introduced to the subject where it is directly relevant to oneself. Perhaps you would like to join me tomorrow on a full days work?\""
+ FEE_Advisor_Event10.EVTOPT1: "Yes that would be interesting."
+ FEE_Advisor_Event10.EVTOPT2: "Hah! You must be joking. I have better things to do."
+
+ FEE_Advisor_Event.EVTNAME11: "A Full Days Work"
+ FEE_Advisor_Event.EVTDESC11: "$MASTER_OF_MINT$$TREASURER$ starts the day off collecting taxes. Some People frown and complain when they give away their earnings, $MASTER_OF_MINT$$TREASURER$ calmly explains why taxes are collected and manages to appease the complainers."
+ FEE_Advisor_Event11.EVTOPT1: "Earning trust is earning gold."
+ FEE_Advisor_Event11.EVTOPT2: "Maybe we could squeeze them for some more?"
+
+ FEE_Advisor_Event.EVTNAME12: "A Full Days Work"
+ FEE_Advisor_Event.EVTDESC12: "Today, $MASTER_OF_MINT$$TREASURER$ brings you to the nearest construction site to evaluate progress, notices that the builders are lagging behing the agreed schedule and proceeds to question them. The builders complain about the weather and want more pay to cover the delays, look over your way, awaiting a response."
+ FEE_Advisor_Event12.EVTOPT1: "We will hold our end of the deal, when you hold yours."
+ FEE_Advisor_Event12.EVTOPT2: "I guess one cannot predict the weather."
+ FEE_Advisor_Event12.EVTOPT3: "Clear the site! You will never work again!"
+
+ FEE_Advisor_Event.EVTNAME13: "A Full Days Work"
+ FEE_Advisor_Event.EVTDESC13: "A friend has come to visit $MASTER_OF_MINT$$TREASURER$ this evening. The three of you have a good time discussing your experiences over a fine evening meal. The Visitor nods at you, saying to $MASTER_OF_MINT$$TREASURER$: \"How lucky you are, to have a liege that understands your work. This cooperation should benefit the both of you.\""
+ FEE_Advisor_Event13.EVTOPT1: "It's been interesting, moreso than many other things I've tried."
+ FEE_Advisor_Event13.EVTOPT2: "It wasn't for me, it feels like stealing."
+ FEE_Advisor_Event13.EVTOPT3: "I hated it! We should just kill the peasants and take their money."
+
+ # Tooltips:
+ EVERY_OWNED_CORE_PROVINCE_MINUS_2_UNREST: "Every owned core province loses §G-2§! unrest."
+ EVERY_OWNED_CORE_PROVINCE_PLUS_1_UNREST: "Every owned core province gains §R+1§! unrest."
