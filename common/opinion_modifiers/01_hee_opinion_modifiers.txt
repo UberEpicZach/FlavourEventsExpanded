@@ -139,6 +139,12 @@ fee_diet_worms_opinion = {
 	yearly_decay = -1
 }
 
+#Burgundy King of Loth
+fee_BUR_lotharingia_opinion1 = {
+	opinion = -50
+	yearly_decay = 1
+}
+
 #Defender of Christendom
 fee_defense_of_christendom = {
 	opinion = -30
