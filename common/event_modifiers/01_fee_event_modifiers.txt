@@ -802,21 +802,6 @@ neglected_heir_education = {
 ruler_deposed = { }
 is_usurper = { }
 
-#Seven Virtures and Seven Sins
-fee_Chaste = {
-	heir_chance = -15
-}
-fee_temperate = {
-	global_tax_modifier = 5
-}
-fee_charitable = {
-	diplomatic_reputation = 1
-}
-fee_diligent = {
-	global_missionary_strength = 2
-	discipline = 3
-}
-
 # Advisor events
 fee_collecting_taxes = {
 	global_tax_income = 5
