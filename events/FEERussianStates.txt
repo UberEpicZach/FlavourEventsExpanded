@@ -1,12 +1,12 @@
 #Events for small Russian states
 
-namespace = hee_rst
+namespace = fee_rst
 
 #The Veche
 country_event = {
-	id = hee_rst.1
-	title = hee_rst.1.t
-	desc = hee_rst.1.d
+	id = fee_rst.1
+	title = fee_rst.1.t
+	desc = fee_rst.1.d
 	picture = CITY_VIEW_eventPicture
 	
 	
@@ -27,7 +27,7 @@ country_event = {
 		}
 }
    option = {
-        name = hee_rst.1.a
+        name = fee_rst.1.a
 		add_country_modifier = {
 		name = hee_NOV_veche_ADM
 		duration = 3650
@@ -39,7 +39,7 @@ country_event = {
 		}
 }
 option = {
-        name = hee_rst.1.b
+        name = fee_rst.1.b
 		add_country_modifier = {
 		name = hee_NOV_veche_DIP
 		duration = 3650
@@ -51,7 +51,7 @@ option = {
 		}
 }
 option = {
-        name = hee_rst.1.c
+        name = fee_rst.1.c
 		add_country_modifier = {
 		name = hee_NOV_veche_MIL
 		duration = 3650
@@ -63,7 +63,7 @@ option = {
 		}
 }
 option = {
-        name = hee_rst.1.e
+        name = fee_rst.1.e
 		add_country_modifier = {
 		name = hee_NOV_veche_NOT
 		duration = 3650
@@ -78,9 +78,9 @@ option = {
 
 #Seek Lithuanian Protection
 country_event = {
-	id = hee_rst.2
-	title = hee_rst.2.t
-	desc = hee_rst.2.d
+	id = fee_rst.2
+	title = fee_rst.2.t
+	desc = fee_rst.2.d
 	picture = DIPLOMACY_eventPicture
 	
 	trigger = {
@@ -118,12 +118,12 @@ country_event = {
    }
    
    option = {
-	name = hee_rst.2.a
+	name = fee_rst.2.a
 		add_mil_power = 25
 	}
 		  
 	option = {
-		name = hee_rst.2.b
+		name = fee_rst.2.b
 		add_years_of_income = -1
 		if = {
 			limit = {
@@ -139,29 +139,29 @@ country_event = {
 					ai = no
 				}
 			}
-			country_event = { id = hee_rst.3  days = 5 }
+			country_event = { id = fee_rst.3  days = 5 }
 		}
 	}
 }
 
 #Lithuania is offered to protect the kids
 country_event = {
-	id = hee_rst.3
-	title = hee_rst.3.t
-	desc = hee_rst.3.d
+	id = fee_rst.3
+	title = fee_rst.3.t
+	desc = fee_rst.3.d
 	picture = CONQUEST_eventPicture
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = hee_rst.3.a
+		name = fee_rst.3.a
 		add_years_of_income = 0.5
 		create_alliance = FROM
 		add_dip_power = 10
 	}
 	
 	option = {
-		name = hee_rst.3.b
+		name = fee_rst.3.b
 		FROM = {
 			add_years_of_income = 1
 		}

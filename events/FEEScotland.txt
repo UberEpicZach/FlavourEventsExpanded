@@ -1,12 +1,12 @@
 # Scottish events
 
-namespace = hee_SCO
+namespace = fee_SCO
 
 # The Education Act
 country_event = {
-	id = hee_SCO.1
-	title = hee_SCO.1.t
-	desc = hee_SCO.1.d
+	id = fee_SCO.1
+	title = fee_SCO.1.t
+	desc = fee_SCO.1.d
 	picture = ADVISOR_eventPicture
 
 	fire_only_once = yes
@@ -35,7 +35,7 @@ country_event = {
 
 	# Every noble should be a skilled administrator
 	option = {
-		name = hee_SCO.1.a
+		name = fee_SCO.1.a
 		add_adm_power = -10
 		add_country_modifier = {
 			name = hee_education_act
@@ -45,16 +45,16 @@ country_event = {
 
 	# It is better if they focus on military prowess.
 	option = {
-		name = hee_SCO.1.b
+		name = fee_SCO.1.b
 		add_mil_power = 30
 	}
 }
 
 # Anti-French sentiment
 country_event = {
-	id = hee_SCO.2
-	title = hee_SCO.2.t
-	desc = hee_SCO.2.d
+	id = fee_SCO.2
+	title = fee_SCO.2.t
+	desc = fee_SCO.2.d
 	picture = ANGRY_MOB_eventPicture
 
 	fire_only_once = yes
@@ -86,14 +86,14 @@ country_event = {
 	}
 
 	option = {
-		name = hee_SCO.2.a
+		name = fee_SCO.2.a
 		add_country_modifier = {
 			name = hee_scottish_french_supression
 			duration = 3650
 		}
 	}
 	option = {
-		name = hee_SCO.2.b
+		name = fee_SCO.2.b
 		reverse_add_opinion = {
 			who = FRA
 			modifier = hee_scottish_anti_french
@@ -105,9 +105,9 @@ country_event = {
 # Claim of Rights
 
 country_event = {
-	id = hee_SCO.3
-	title = hee_SCO.3.t
-	desc = hee_SCO.3.d
+	id = fee_SCO.3
+	title = fee_SCO.3.t
+	desc = fee_SCO.3.d
 	picture = GOOD_WITH_MONARCH_eventPicture
 
 	fire_only_once = yes
@@ -134,7 +134,7 @@ country_event = {
 	}
 
 	option = {
-		name = hee_SCO.3.a
+		name = fee_SCO.3.a
 		add_country_modifier = {
 			name = hee_claim_suppressed
 			duration = 7200
@@ -147,10 +147,10 @@ country_event = {
 		}
 	}
 	option = {
-		name = hee_SCO.3.b
+		name = fee_SCO.3.b
 		overlord = {
 			country_event = {
-				id = hee_SCO.4 days = 5 tooltip = hee_SCO.3.b.tt
+				id = fee_SCO.4 days = 5 tooltip = fee_SCO.3.b.tt
 			}
 		}
 	}
@@ -159,9 +159,9 @@ country_event = {
 # Scotland Presents its Claim of Right
 
 country_event = {
-	id = hee_SCO.4
-	title = hee_SCO.4.t
-	desc = hee_SCO.4.d
+	id = fee_SCO.4
+	title = fee_SCO.4.t
+	desc = fee_SCO.4.d
 	picture = CONQUEST_eventPicture
 
 	is_triggered_only = yes
@@ -173,7 +173,7 @@ country_event = {
 	}
 
 	option = {
-		name = hee_SCO.4.a
+		name = fee_SCO.4.a
 		FROM = {
 			add_country_modifier = {
 				name = hee_claim_supressed
@@ -183,7 +183,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = hee_SCO.4.b
+		name = fee_SCO.4.b
 		FROM = {
 			every_province = {
 				limit = {

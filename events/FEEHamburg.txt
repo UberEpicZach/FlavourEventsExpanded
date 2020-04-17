@@ -1,13 +1,13 @@
 # Hamburg Events
 
-namespace = hee_HAM
+namespace = fee_HAM
 
 # The Long Compromise
 
 country_event = {
-	id = hee_HAM.1
-	title = hee_HAM.1.t
-	desc = hee_HAM.1.d
+	id = fee_HAM.1
+	title = fee_HAM.1.t
+	desc = fee_HAM.1.d
 	picture = DEBATE_REPUBLICAN_eventPicture
 	
 	fire_only_once = yes
@@ -25,7 +25,7 @@ country_event = {
 	}
 	
 	option = {
-		name = hee_HAM.1.a
+		name = fee_HAM.1.a
 		44 = {
 			add_province_modifier = {
 				name = hee_long_compromise
@@ -39,9 +39,9 @@ country_event = {
 #Hamburg Stock Market
 
 country_event = {
-	id = hee_HAM.2
-	title = hee_HAM.2.t
-	desc = hee_HAM.2.d
+	id = fee_HAM.2
+	title = fee_HAM.2.t
+	desc = fee_HAM.2.d
 	picture = GREAT_BUILDING_eventPicture
 
 	fire_only_once = yes
@@ -61,14 +61,14 @@ country_event = {
 	}
 
 	option = {
-		name = hee_HAM.2.a
+		name = fee_HAM.2.a
 		add_country_modifier = {
 			name = hee_hamburg_loan_market
 			duration = -1
 		}
 	}
 	option = {
-		name = hee_HAM.2.b
+		name = fee_HAM.2.b
 		add_country_modifier = {
 			name = hee_hamburg_strict_control
 		}

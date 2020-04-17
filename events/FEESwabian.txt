@@ -1,14 +1,14 @@
 # Events for the formation, support and conflicts of the Swabian League
 
 
-namespace = hee_swabian_events
+namespace = fee_swabian_events
 
 # Establish a Defensive Swabian League
 
 country_event = {
-	id = hee_swabian_events.1
-	title = hee_swabian_events.1.t
-	desc = hee_swabian_events.1.d
+	id = fee_swabian_events.1
+	title = fee_swabian_events.1.t
+	desc = fee_swabian_events.1.d
 	picture = LIBERUM_VETO_eventPicture
 
 	trigger = {
@@ -46,7 +46,7 @@ country_event = {
 	}
 
 	option = {
-		name = hee_swabian_events.1.a		# Establish a league for all of Swabia!
+		name = fee_swabian_events.1.a		# Establish a league for all of Swabia!
 		add_country_modifier = {
 			name = hee_joined_swabian_league
 			duration = -1
@@ -56,7 +56,7 @@ country_event = {
 	}
 	
 	option = {
-		name = hee_swabian_events.1.b		# We fight on our own.
+		name = fee_swabian_events.1.b		# We fight on our own.
 		add_mil_power = 10
 		add_prestige = 5
 	}
@@ -65,9 +65,9 @@ country_event = {
 # Asked if country wants to join
 
 country_event = {
-	id = hee_swabian_events.2
-	title = hee_swabian_events.2.t
-	desc = hee_swabian_events.2.d
+	id = fee_swabian_events.2
+	title = fee_swabian_events.2.t
+	desc = fee_swabian_events.2.d
 	picture = DIPLOMACY_eventPicture
 
 
@@ -111,7 +111,7 @@ country_event = {
 	}
 	
 	option = {
-		name = hee_swabian_events.2.a		# We will join this defensive league.
+		name = fee_swabian_events.2.a		# We will join this defensive league.
 		ai_chance = {
 			factor = 75
 		}
@@ -123,11 +123,11 @@ country_event = {
 			limit = {
 				is_part_of_hre = yes
 			}
-			country_event = { id = hee_swabian_events.5 days = 30 }
+			country_event = { id = fee_swabian_events.5 days = 30 }
 		}
 	}
 	option = {
-		name = hee_swabian_events.2.b		# We stand alone.
+		name = fee_swabian_events.2.b		# We stand alone.
 		ai_chance = { factor = 25 }
 		add_prestige = 5
 		add_country_modifier = {
@@ -142,9 +142,9 @@ country_event = {
 # Now given by different event, only here for reference
 
 # country_event = {
-	# id = hee_swabian_events.3
-	# title = hee_swabian_events.3.t
-	# desc = hee_swabian_events.3.d
+	# id = fee_swabian_events.3
+	# title = fee_swabian_events.3.t
+	# desc = fee_swabian_events.3.d
 	# picture = LIBERUM_VETO_eventPicture
 
 	# triggered_only = yes
@@ -156,7 +156,7 @@ country_event = {
 	# }
 
 	# option = {
-	# name = hee_swabian_events.3.a
+	# name = fee_swabian_events.3.a
 		# every_country = {
 			# limit = {
 				# NOT = ROOT
@@ -173,9 +173,9 @@ country_event = {
 # An HRE-state outside of Swabia can join if they neighbor a member with capital in Swabia
 
 # country_event = {
-	# id = hee_swabian_events.4
-	# title = hee_swabian_events.4.t
-	# desc = hee_swabian_events.4.d
+	# id = fee_swabian_events.4
+	# title = fee_swabian_events.4.t
+	# desc = fee_swabian_events.4.d
 	# picture = DEBATE_REPUBLICAN_eventPicture
 
 	# trigger = {
@@ -221,7 +221,7 @@ country_event = {
 	# }
 
 	# option = {					#Join the Swabian League
-		# name = hee_swabian_events.4.a
+		# name = fee_swabian_events.4.a
 		# ai_chance = {
 			# factor = 80
 		# }
@@ -234,11 +234,11 @@ country_event = {
 				# has_country_modifier = hee_joined_swabian_league
 				# NOT = ROOT
 			# }
-			# country_event = { id = hee_swabian_events.5 days = 10 }
+			# country_event = { id = fee_swabian_events.5 days = 10 }
 		# }
 	# }
 	# option = {									#Reject the Swabian League
-		# name = hee_swabian_events.4.b
+		# name = fee_swabian_events.4.b
 		# ai_chance = {
 			# factor = 20
 		# }
@@ -254,9 +254,9 @@ country_event = {
 # NEW MEMBER HAS JOINED
 
 country_event = {
-	id = hee_swabian_events.5
-	title = hee_swabian_events.5.t
-	desc = hee_swabian_events.5.d
+	id = fee_swabian_events.5
+	title = fee_swabian_events.5.t
+	desc = fee_swabian_events.5.d
 	picture = CONQUEST_eventPicture
 
 	is_triggered_only = yes
@@ -266,7 +266,7 @@ country_event = {
 	}
 
 	option = {
-		name = hee_swabian_events.5.a
+		name = fee_swabian_events.5.a
 		add_adm_power = 10
 		add_mil_power = 10
 		add_dip_power = 10
@@ -284,15 +284,15 @@ country_event = {
 # A Member Turned Away
 
 country_event = {
-	id = hee_swabian_events.6
-	title = hee_swabian_events.6.t
-	desc = hee_swabian_events.6.d
+	id = fee_swabian_events.6
+	title = fee_swabian_events.6.t
+	desc = fee_swabian_events.6.d
 	picture = ACCUSATION_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = hee_swabian_events.6.a
+		name = fee_swabian_events.6.a
 		every_country = {
 			limit = {
 				has_country_modifier = hee_joined_swabian_league
@@ -314,9 +314,9 @@ country_event = {
 # INCREASES THE MORE MEMBERS DISLIKE YOU
 
 country_event = {
-	id = hee_swabian_events.7
-	title = hee_swabian_events.7.t
-	desc = hee_swabian_events.7.d
+	id = fee_swabian_events.7
+	title = fee_swabian_events.7.t
+	desc = fee_swabian_events.7.d
 	picture = ACCUSATION_eventPicture
 
 	trigger = {
@@ -363,7 +363,7 @@ country_event = {
 	}
 
 	option = {
-		name = hee_swabian_events.7.a
+		name = fee_swabian_events.7.a
 		every_country = {
 			limit = {
 				has_country_modifier = hee_joined_swabian_league
@@ -377,7 +377,7 @@ country_event = {
 			limit = {
 				has_country_modifier = hee_joined_swabian_league
 			}
-			country_event = { id = hee_swabian_events.6 days = 3 }
+			country_event = { id = fee_swabian_events.6 days = 3 }
 		}
 	}
 }
@@ -385,9 +385,9 @@ country_event = {
 # Swabian League disbanded because of lack of membership
 
 country_event = {
-	id = hee_swabian_events.8
-	title = hee_swabian_events.8.t
-	desc = hee_swabian_events.8.d
+	id = fee_swabian_events.8
+	title = fee_swabian_events.8.t
+	desc = fee_swabian_events.8.d
 	picture = CIVIL_WAR_eventPicture
 	
 	fire_only_once = yes
@@ -411,19 +411,19 @@ country_event = {
 	}
 
 	option = {
-	name = hee_swabian_events.8.a
+	name = fee_swabian_events.8.a
 		every_country = {
 			limit = {
 				has_country_modifier = hee_joined_swabian_league
 			}
-			country_event = { id = hee_swabian_events.9 days = 1 }
+			country_event = { id = fee_swabian_events.9 days = 1 }
 		}
 		every_country = {
 			limit = {
 				any_neighbor_country = { has_country_modifier = hee_joined_swabian_league }
 				NOT = { has_country_modifier = hee_joined_swabian_league }
 			}
-			country_event = { id = hee_swabian_events.22 days = 7 }
+			country_event = { id = fee_swabian_events.22 days = 7 }
 		set_global_flag = hee_swabian_league_disbanded
 		}
 	}
@@ -433,9 +433,9 @@ country_event = {
 # Member message about disbanding
 
 country_event = {
-	id = hee_swabian_events.9
-	title = hee_swabian_events.9.t
-	desc = hee_swabian_events.9.d
+	id = fee_swabian_events.9
+	title = fee_swabian_events.9.t
+	desc = fee_swabian_events.9.d
 	picture = CIVIL_WAR_eventPicture
 
 	is_triggered_only = yes
@@ -459,7 +459,7 @@ country_event = {
 	}
 
 	option = {
-		name = hee_swabian_events.9.a
+		name = fee_swabian_events.9.a
 		remove_country_modifier = hee_joined_swabian_league 
 	}
 }
@@ -467,9 +467,9 @@ country_event = {
 # League Disbanding because of religious conflict
 
 country_event = {
-	id = hee_swabian_events.10
-	title = hee_swabian_events.10.t
-	desc = hee_swabian_events.10.d
+	id = fee_swabian_events.10
+	title = fee_swabian_events.10.t
+	desc = fee_swabian_events.10.d
 	picture = RELIGIOUS_TURMOIL_eventPicture
 
 	fire_only_once = yes
@@ -512,12 +512,12 @@ country_event = {
 	}
 
 	option = {
-		name = hee_swabian_events.10.a
+		name = fee_swabian_events.10.a
 		every_country = {
 			limit = {
 				has_country_modifier = hee_joined_swabian_league
 			}
-			country_event = { id = hee_swabian_events.11 days = 10 }  # Needs to be a separate event from 9, because of different event text. Otherwise identical.
+			country_event = { id = fee_swabian_events.11 days = 10 }  # Needs to be a separate event from 9, because of different event text. Otherwise identical.
 		}
 		set_global_flag = hee_swabian_league_disbanded
 	}
@@ -526,9 +526,9 @@ country_event = {
 # Member message when disbanding because of religion
 
 country_event = {
-	id = hee_swabian_events.11
-	title = hee_swabian_events.11.t
-	desc = hee_swabian_events.11.d
+	id = fee_swabian_events.11
+	title = fee_swabian_events.11.t
+	desc = fee_swabian_events.11.d
 	picture = CIVIL_WAR_eventPicture
 
 	is_triggered_only = yes
@@ -552,7 +552,7 @@ country_event = {
 	}
 	
 	option = {
-		name = hee_swabian_events.11.a
+		name = fee_swabian_events.11.a
 		remove_country_modifier = hee_joined_swabian_league 
 		set_global_flag = hee_swabian_league_disbanded
 	}
@@ -563,9 +563,9 @@ country_event = {
 # Event if a member is fighting a defensive war against a foreign country
 
 country_event = {
-	id = hee_swabian_events.12
-	title = hee_swabian_events.12.t
-	desc = hee_swabian_events.12.d
+	id = fee_swabian_events.12
+	title = fee_swabian_events.12.t
+	desc = fee_swabian_events.12.d
 	picture = BATTLE_eventPicture
 
 	trigger = {
@@ -605,17 +605,17 @@ country_event = {
 	}
 
 	option = {
-		name = hee_swabian_events.12.a
+		name = fee_swabian_events.12.a
 		every_country = {
 			limit = { 
 				has_country_modifier = hee_joined_swabian_league 
 			}
-			country_event = { id = hee_swabian_events.13 days = 3 }
+			country_event = { id = fee_swabian_events.13 days = 3 }
 		}
 	}
 
 	option = {
-		name = hee_swabian_events.12.b
+		name = fee_swabian_events.12.b
 		add_years_of_income = 0.25
 		add_manpower = 0.5
 		add_prestige = 1
@@ -625,9 +625,9 @@ country_event = {
 # §FROM§ Needs Our Aid!
 
 country_event = {
-	id = hee_swabian_events.13
-	title = hee_swabian_events.13.t
-	desc = hee_swabian_events.13.d
+	id = fee_swabian_events.13
+	title = fee_swabian_events.13.t
+	desc = fee_swabian_events.13.d
 	picture = COUNTRY_COLLAPSE_eventPicture
 
 	is_triggered_only = yes
@@ -640,7 +640,7 @@ country_event = {
 	}
 
 	option = {						# Send military aid
-		name = hee_swabian_events.13.a
+		name = fee_swabian_events.13.a
 		ai_chance = {
 			factor = 35
 			modifier = {
@@ -650,11 +650,11 @@ country_event = {
 		}
 		add_manpower = -1
 		FROM = {
-			country_event = { id = hee_swabian_events.14 days = 1 random = 45 }
+			country_event = { id = fee_swabian_events.14 days = 1 random = 45 }
 		}
 	}
 	option = {				# Send financial aid
-		name = hee_swabian_events.13.b
+		name = fee_swabian_events.13.b
 		ai_chance = {
 			factor = 35
 			modifier = {
@@ -664,20 +664,20 @@ country_event = {
 		}
 		add_treasury = -25
 		FROM = {
-			country_event = { id = hee_swabian_events.15 days = 1 random = 45 }
+			country_event = { id = fee_swabian_events.15 days = 1 random = 45 }
 		}
 	}
 	option = {				# All aid we can muster
-		name = hee_swabian_events.13.c
+		name = fee_swabian_events.13.c
 		ai_chance = { factor = 20 }
 		add_treasury = -25
 		add_manpower = -1
 		FROM = {
-			country_event = { id = hee_swabian_events.16 days = 1 random = 45 }
+			country_event = { id = fee_swabian_events.16 days = 1 random = 45 }
 		}
 	}
 	option = {				# No aid
-		name = hee_swabian_events.13.d
+		name = fee_swabian_events.13.d
 		ai_chance = {
 			factor = 10
 			modifier = {
@@ -704,7 +704,7 @@ country_event = {
 		}
 		add_prestige = -10
 		FROM = {
-			country_event = { id = hee_swabian_events.17 days = 1 random = 45 }
+			country_event = { id = fee_swabian_events.17 days = 1 random = 45 }
 		}
 	}
 }
@@ -712,15 +712,15 @@ country_event = {
 # §FROM§ sends military aid!
 
 country_event = {
-	id = hee_swabian_events.14
-	title = hee_swabian_events.14.t
-	desc = hee_swabian_events.14.d
+	id = fee_swabian_events.14
+	title = fee_swabian_events.14.t
+	desc = fee_swabian_events.14.d
 	picture = LAND_MILITARY_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = hee_swabian_events.14.a
+		name = fee_swabian_events.14.a
 		add_manpower = 2
 	}
 }
@@ -728,15 +728,15 @@ country_event = {
 # §FROM§ sends financial aid!
 
 country_event = {
-	id = hee_swabian_events.15
-	title = hee_swabian_events.15.t
-	desc = hee_swabian_events.15.d
+	id = fee_swabian_events.15
+	title = fee_swabian_events.15.t
+	desc = fee_swabian_events.15.d
 	picture = ECONOMY_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = hee_swabian_events.15.a
+		name = fee_swabian_events.15.a
 		add_treasury = 30
 	}
 }
@@ -744,15 +744,15 @@ country_event = {
 # §FROM§ aids us every way they can!
 
 country_event = {
-	id = hee_swabian_events.16
-	title = hee_swabian_events.16.t
-	desc = hee_swabian_events.16.d
+	id = fee_swabian_events.16
+	title = fee_swabian_events.16.t
+	desc = fee_swabian_events.16.d
 	picture = MILITARY_CAMP_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = hee_swabian_events.16.a
+		name = fee_swabian_events.16.a
 		add_manpower = 2
 		add_treasury = 30
 	}
@@ -761,15 +761,15 @@ country_event = {
 # §FROM§ refuses us aid!
 
 country_event = {
-	id = hee_swabian_events.17
-	title = hee_swabian_events.17.t
-	desc = hee_swabian_events.17.d
+	id = fee_swabian_events.17
+	title = fee_swabian_events.17.t
+	desc = fee_swabian_events.17.d
 	picture = LIBERUM_VETO_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = hee_swabian_events.17.a
+		name = fee_swabian_events.17.a
 		add_opinion = {
 			who = FROM
 			modifier = hee_refused_league_aid
@@ -782,9 +782,9 @@ country_event = {
 # League Aids Stability in the Region
 
 country_event = {
-	id = hee_swabian_events.18
-	title = hee_swabian_events.18.t
-	desc = hee_swabian_events.18.d
+	id = fee_swabian_events.18
+	title = fee_swabian_events.18.t
+	desc = fee_swabian_events.18.d
 	picture = LAND_MILITARY_eventPicture
 
 	trigger = {
@@ -843,19 +843,19 @@ country_event = {
 	}
 
 	option = {		# And with the league, our country is safe
-		name = hee_swabian_events.18.a
+		name = fee_swabian_events.18.a
 		add_stability = 1
 	}
 
 	option = {		# This is a golden age for Swabia!
-		name = hee_swabian_events.18.b
+		name = fee_swabian_events.18.b
 		add_adm_power = 25
 		add_dip_power = 25
 		add_mil_power = 25
 	}
 
 	option = {		# Let's make sure we collect our League taxes.
-		name = hee_swabian_events.18.c
+		name = fee_swabian_events.18.c
 		add_treasury = 25
 	}
 }
@@ -864,9 +864,9 @@ country_event = {
 # The Swabian League is a Threat to the Confederation!
 
 country_event = {
-		id = hee_swabian_events.19
-		title = hee_swabian_events.19.t
-		desc = hee_swabian_events.19.d
+		id = fee_swabian_events.19
+		title = fee_swabian_events.19.t
+		desc = fee_swabian_events.19.d
 		picture = DEBATE_REPUBLICAN_eventPicture
 
 		fire_only_once = yes
@@ -891,7 +891,7 @@ country_event = {
 		}
 
 		option = {		# Develop a strategic defense plan
-			name = hee_swabian_events.19.a
+			name = fee_swabian_events.19.a
 			ai_chance = { 
 				factor = 50 
 				modifier = {
@@ -914,7 +914,7 @@ country_event = {
 		}
 
 		option = {		# There is safety in reconciliation
-			name = hee_swabian_events.19.b
+			name = fee_swabian_events.19.b
 			ai_chance = { factor = 50 }
 			every_country = {
 				limit = {
@@ -933,9 +933,9 @@ country_event = {
 # Event to let nations that don't immediately fufill the requirements join later.
 
 country_event = {
-	id = hee_swabian_events.20
-	title = hee_swabian_events.20.t
-	desc = hee_swabian_events.20.d
+	id = fee_swabian_events.20
+	title = fee_swabian_events.20.t
+	desc = fee_swabian_events.20.d
 	picture = CONQUEST_eventPicture
 	
 	trigger = {
@@ -971,7 +971,7 @@ country_event = {
 	}
 	
 	option = {
-		name = hee_swabian_events.20.a		# We will join this defensive league.
+		name = fee_swabian_events.20.a		# We will join this defensive league.
 		ai_chance = { 
 			factor = 90
 		}
@@ -983,12 +983,12 @@ country_event = {
 			limit = {
 				has_country_modifier = hee_joined_swabian_league
 			}
-		country_event = { id = hee_swabian_events.5 }
+		country_event = { id = fee_swabian_events.5 }
 		}
 	}
 
 	option = {
-		name = hee_swabian_events.20.b		# We stand alone.
+		name = fee_swabian_events.20.b		# We stand alone.
 		ai_chance = { factor = 10}
 		set_country_flag = hee_rejected_swabian_league
 	}
@@ -997,9 +997,9 @@ country_event = {
 # A Shadow in the West
 
 country_event = {
-	id = hee_swabian_events.21
-	title = hee_swabian_events.21.t
-	desc = hee_swabian_events.21.d
+	id = fee_swabian_events.21
+	title = fee_swabian_events.21.t
+	desc = fee_swabian_events.21.d
 	picture = MILITARY_CAMP_eventPicture
 	
 	fire_only_once = yes
@@ -1037,13 +1037,13 @@ country_event = {
 	}
 	
 	option = {
-		name = hee_swabian_events.21.a	# I don't care. We will crush them!
+		name = fee_swabian_events.21.a	# I don't care. We will crush them!
 		ai_chance = { factor = 75 }
 		add_mil_power = 50
 	}
 	
 	option = {
-		name = hee_swabian_events.21.b	# Maybe it is time for a more... diplomatic solution.
+		name = fee_swabian_events.21.b	# Maybe it is time for a more... diplomatic solution.
 		ai_chance = { factor = 25 }
 		every_country = {
 			limit = {
@@ -1060,23 +1060,23 @@ country_event = {
 
 # Event telling of the League disbanding
 country_event = {
-	id = hee_swabian_events.22
-	title = hee_swabian_events.22.t
-	desc = hee_swabian_events.22.d
+	id = fee_swabian_events.22
+	title = fee_swabian_events.22.t
+	desc = fee_swabian_events.22.d
 	picture = CIVIL_WAR_eventPicture
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = hee_swabian_events.22.a
+		name = fee_swabian_events.22.a
 	}
 }
 
 # Event telling of the formation of the League
 # country_event = {
-	# id = hee_swabian_events.23
-	# title = hee_swabian_events.23.t
-	# desc = hee_swabian_events.23.d
+	# id = fee_swabian_events.23
+	# title = fee_swabian_events.23.t
+	# desc = fee_swabian_events.23.d
 	# picture = HRE_eventPicture
 	
 	# is_triggered_only = yes
@@ -1093,9 +1093,9 @@ country_event = {
 
 #Bavaria may join the League
 # country_event = {
-	# id = hee_swabian_events.24
-	# title = hee_swabian_events.24.t
-	# desc = hee_swabian_events.24.d
+	# id = fee_swabian_events.24
+	# title = fee_swabian_events.24.t
+	# desc = fee_swabian_events.24.d
 	# picture = CONQUEST_eventPicture
 	
 	# trigger = {

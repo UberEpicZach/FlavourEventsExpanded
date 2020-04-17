@@ -1,13 +1,13 @@
 #Wurzburg events
 
-namespace = hee_WBG
+namespace = fee_WBG
 
 #Refounding the University of Wurzburg
 
 country_event = {
-	id = hee_WBG.1
-	title = hee_WBG.1.t
-	desc = hee_WBG.1.d
+	id = fee_WBG.1
+	title = fee_WBG.1.t
+	desc = fee_WBG.1.d
 	picture = GREAT_BUILDING_eventPicture
 	
 	fire_only_once = yes
@@ -24,7 +24,7 @@ country_event = {
 	}
 	
 	option = {
-		name = hee_WBG.1.a
+		name = fee_WBG.1.a
 		add_adm_power = 50
 		79 = {
 			add_province_modifier = {

@@ -1,12 +1,12 @@
 #Sicilian events
 
-namespace = hee_SIC
+namespace = fee_SIC
 
 #1693 Earthquake for owner of Sicily
 # country_event = {
-	# id = hee_SIC.1
-	# title = hee_SIC.1.t
-	# desc = hee_SIC.1.d
+	# id = fee_SIC.1
+	# title = fee_SIC.1.t
+	# desc = fee_SIC.1.d
 	# picture = COUNTRY_COLLAPSE_eventPicture
 	
 	# fire_only_once = yes
@@ -33,7 +33,7 @@ namespace = hee_SIC
 	# }
 	
 	# option = {
-		# name = hee_SIC.1.a
+		# name = fee_SIC.1.a
 		# every_country = {
 			# limit = {
 				# any_owned_province = {
@@ -41,7 +41,7 @@ namespace = hee_SIC
 				# }
 			# }
 			# country_event = {
-				# hee_SIC.2
+				# fee_SIC.2
 			# }
 		# }
 		# every_country = {
@@ -58,7 +58,7 @@ namespace = hee_SIC
 				# }
 			# }
 			# country_event = {
-				# hee_SIC.3
+				# fee_SIC.3
 			# }
 		# }
 	# }
@@ -66,15 +66,15 @@ namespace = hee_SIC
 
 #Earthquake for countries owning provinces
 # country_event = {
-	# id = hee_SIC.2
-	# title = hee_SIC.2.t
-	# desc = hee_SIC.2.d
+	# id = fee_SIC.2
+	# title = fee_SIC.2.t
+	# desc = fee_SIC.2.d
 	# picture = COUNTRY_COLLAPSE_eventPicture
 
 	# is_triggered_only = yes
 	
 	# option = {
-		# name = hee_SIC.2.a
+		# name = fee_SIC.2.a
 		# add_stability = -1
 		# add_years_of_income = -1
 		# every_owned_province = {
@@ -87,7 +87,7 @@ namespace = hee_SIC
 		# }
 	# }
 	# option = {
-		# name = hee_SIC.2.b
+		# name = fee_SIC.2.b
 		# add_stability = -1
 		# add_prestige = -10
 		# every_owned_province = {
@@ -103,15 +103,15 @@ namespace = hee_SIC
 
 #Notice to neighbors
 # country_event = {
-	# id = hee_SIC.3
-	# title = hee_SIC.3.t
-	# desc = hee_SIC.3.d
+	# id = fee_SIC.3
+	# title = fee_SIC.3.t
+	# desc = fee_SIC.3.d
 	# picture = COUNTRY_COLLAPSE_eventPicture
 
 	# is_triggered_only = yes
 	
 	# option = {
-		# name = hee_SIC.3.a
+		# name = fee_SIC.3.a
 		
 	# }
 # }

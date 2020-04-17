@@ -1,12 +1,12 @@
 #Dutch events (Netherlands++)
 
-namespace = hee_NED
+namespace = fee_NED
 
 #Generaliteitslanden
 province_event = {
-	id = hee_NED.1
-	title = hee_NED.1.t
-	desc = hee_NED.1.d
+	id = fee_NED.1
+	title = fee_NED.1.t
+	desc = fee_NED.1.d
 	picture = CITY_DEVELOPMENT_eventPicture
 	
 	trigger = {
@@ -39,7 +39,7 @@ province_event = {
 	}
 	
 	option = {
-		name = hee_NED.1.a
+		name = fee_NED.1.a
 		add_province_modifier = {
 			name = hee_generality_lands
 			duration = -1
@@ -48,9 +48,9 @@ province_event = {
 }
 
 province_event = {
-	id = hee_NED.2
-	title = hee_NED.2.t
-	desc = hee_NED.2.d
+	id = fee_NED.2
+	title = fee_NED.2.t
+	desc = fee_NED.2.d
 	picture = CITY_VIEW_eventPicture
 	
 	trigger = {
@@ -76,16 +76,16 @@ province_event = {
 	}
 	
 	option = {
-		name = hee_NED.2.a
+		name = fee_NED.2.a
 		remove_province_modifier = hee_generality_lands
 	}
 }
 
 #The revolt of Adolf van Egmond
 country_event = {
-	id = hee_NED.3
-	title = hee_NED.3.t
-	desc = hee_NED.3.d
+	id = fee_NED.3
+	title = fee_NED.3.t
+	desc = fee_NED.3.d
 	picture = BATTLE_eventPicture
 	
 	fire_only_once = yes
@@ -114,7 +114,7 @@ country_event = {
 	}
 	
 	option = {
-		name = hee_NED.3.a
+		name = fee_NED.3.a
 		random_owned_province = {
 			spawn_rebels = {
 				type = noble_rebels
@@ -132,16 +132,16 @@ country_event = {
 	}
 	
 	option = {
-		name = hee_NED.3.b
+		name = fee_NED.3.b
 		add_dip_power = -150
 	}
 }
 	
 #Compromising with Adolf
 country_event = {
-	id = hee_NED.4
-	title = hee_NED.4.t
-	desc = hee_NED.4.d
+	id = fee_NED.4
+	title = fee_NED.4.t
+	desc = fee_NED.4.d
 	picture = DIPLOMACY_eventPicture
 
 	fire_only_once = yes
@@ -168,16 +168,16 @@ country_event = {
 	}
 	
 	option = {
-		name = hee_NED.4.a
+		name = fee_NED.4.a
 		BUR = {
-			country_event = { id = hee_NED.5 days = 10 }
+			country_event = { id = fee_NED.5 days = 10 }
 		}
 		add_prestige = -10
-		custom_tooltip = hee_NED.4.tt
+		custom_tooltip = fee_NED.4.tt
 	}
 	
 	option = {
-		name = hee_NED.4.b
+		name = fee_NED.4.b
 		99 = {
 			add_province_modifier = {
 				name = hee_adolfs_unrest
@@ -190,9 +190,9 @@ country_event = {
 
 #Burgundian answer
 country_event = {
-	id = hee_NED.5
-	title = hee_NED.5.t
-	desc = hee_NED.5.d
+	id = fee_NED.5
+	title = fee_NED.5.t
+	desc = fee_NED.5.d
 	picture = CONQUEST_eventPicture
 	
 	fire_only_once = yes
@@ -200,7 +200,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = hee_NED.5.a
+		name = fee_NED.5.a
 		ai_chance = {
 			factor = 95
 			modifier = {
@@ -212,13 +212,13 @@ country_event = {
 		create_union = GEL
 		hidden_effect = {
 			GEL = {
-				country_event = { id = hee_NED.6 }
+				country_event = { id = fee_NED.6 }
 			}
 		}
 	}
 	
 	option = {
-		name = hee_NED.5.b
+		name = fee_NED.5.b
 		ai_chance = {
 			factor = 5
 			modifier = {
@@ -229,7 +229,7 @@ country_event = {
 		add_dip_power = 25
 		hidden_effect = {
 			GEL = {
-				country_event = { id = hee_NED.7 }
+				country_event = { id = fee_NED.7 }
 			}
 		}
 	}
@@ -237,15 +237,15 @@ country_event = {
 
 #Burgundy Accepts the Compromise
 country_event = {
-	id = hee_NED.6
-	title = hee_NED.6.t
-	desc = hee_NED.6.d
+	id = fee_NED.6
+	title = fee_NED.6.t
+	desc = fee_NED.6.d
 	picture = CONQUEST_eventPicture
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = hee_NED.6.a
+		name = fee_NED.6.a
 		add_treasury = 300
 		add_legitimacy = -10
 		add_country_modifier = {
@@ -257,15 +257,15 @@ country_event = {
 
 #Burgundy Declines the Compromise!
 country_event = {
-	id = hee_NED.7
-	title = hee_NED.7.t
-	desc = hee_NED.7.d
+	id = fee_NED.7
+	title = fee_NED.7.t
+	desc = fee_NED.7.d
 	picture = LIBERUM_VETO_eventPicture
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = hee_NED.7.a
+		name = fee_NED.7.a
 		add_prestige = -10
 		add_country_modifier = {
 			name = hee_adolf_compromise

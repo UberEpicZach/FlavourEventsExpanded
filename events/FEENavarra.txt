@@ -1,12 +1,12 @@
 #Navarran events
 
-namespace = hee_NAV
+namespace = fee_NAV
 
 # The Wedding of Navarra
 country_event = {
-	id = hee_NAV.1
-	title = hee_NAV.1.t
-	desc = hee_NAV.1.d
+	id = fee_NAV.1
+	title = fee_NAV.1.t
+	desc = fee_NAV.1.d
 	picture = GOOD_WITH_MONARCH_eventPicture
 	
 	fire_only_once = yes
@@ -56,18 +56,18 @@ country_event = {
 	}
 	
 	option = {
-		name = hee_NAV.1.a
+		name = fee_NAV.1.a
 		ai_chance = {
 			factor = 90
 		}
 		ARA = {
 			country_event = {
-				id = hee_NAV.2
+				id = fee_NAV.2
 			}
 		}
 	}
 	option = {
-		name = hee_NAV.1.b
+		name = fee_NAV.1.b
 		ai_chance = {
 			factor = 10
 		}
@@ -78,15 +78,15 @@ country_event = {
 
 # Navarran wedding
 country_event = {
-	id = hee_NAV.2
-	title = hee_NAV.2.t
-	desc = hee_NAV.2.d
+	id = fee_NAV.2
+	title = fee_NAV.2.t
+	desc = fee_NAV.2.d
 	picture = GOOD_WITH_MONARCH_eventPicture
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = hee_NAV.2.a
+		name = fee_NAV.2.a
 		ai_chance = {
 			factor = 100
 			modifier = {
@@ -97,7 +97,7 @@ country_event = {
 		create_union = NAV
 	}
 	option = {
-		name = hee_NAV.2.b
+		name = fee_NAV.2.b
 		ai_chance = {
 			factor = 0
 			modifier = {
@@ -108,7 +108,7 @@ country_event = {
 		add_legitimacy = -5
 		NAV = {
 			country_event = {
-				id = hee_NAV.3
+				id = fee_NAV.3
 			}
 		}
 	}
@@ -116,15 +116,15 @@ country_event = {
 
 # Aragon rejects
 country_event = {
-	id = hee_NAV.3
-	title = hee_NAV.3.t
-	desc = hee_NAV.3.d
+	id = fee_NAV.3
+	title = fee_NAV.3.t
+	desc = fee_NAV.3.d
 	picture = COURT_eventPicture
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = hee_NAV.3.a
+		name = fee_NAV.3.a
 		add_opinion = {
 			who = ARA
 			modifier = hee_rejected_marriage
@@ -134,9 +134,9 @@ country_event = {
 
 # Navarran Civil War Not Aragon
 country_event = {
-	id = hee_NAV.4
-	title = hee_NAV.4.t
-	desc = hee_NAV.4.d
+	id = fee_NAV.4
+	title = fee_NAV.4.t
+	desc = fee_NAV.4.d
 	picture = CIVIL_WAR_eventPicture
 	
 	fire_only_once = yes
@@ -182,7 +182,7 @@ country_event = {
 	}
 	
 	option = {
-		name = hee_NAV.4.a
+		name = fee_NAV.4.a
 		random_owned_province = {
 			spawn_rebels = {
 				type = pretender_rebels
@@ -192,7 +192,7 @@ country_event = {
 		}
 		overlord = {
 			country_event = {
-				id = hee_NAV.5
+				id = fee_NAV.5
 			}
 		}
 	}
@@ -200,23 +200,23 @@ country_event = {
 
 # Notification to Overlord
 country_event = {
-	id = hee_NAV.5
-	title = hee_NAV.5.t
-	desc = hee_NAV.5.d
+	id = fee_NAV.5
+	title = fee_NAV.5.t
+	desc = fee_NAV.5.d
 	picture = BATTLE_eventPicture
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = hee_NAV.5.a
+		name = fee_NAV.5.a
 	}
 }
 
 # Navarran Civil War with Aragon
 country_event = {
-	id = hee_NAV.6
-	title = hee_NAV.6.t
-	desc = hee_NAV.6.d
+	id = fee_NAV.6
+	title = fee_NAV.6.t
+	desc = fee_NAV.6.d
 	picture = CIVIL_WAR_eventPicture
 	
 	fire_only_once = yes
@@ -262,10 +262,10 @@ country_event = {
 	}
 	
 	option = {
-		name = hee_NAV.6.a
+		name = fee_NAV.6.a
 		ARA = {
 			country_event = {
-				id = hee_NAV.7
+				id = fee_NAV.7
 			}
 		}
 	}
@@ -273,15 +273,15 @@ country_event = {
 
 # Aragon Reacts
 country_event = {
-	id = hee_NAV.7
-	title = hee_NAV.7.t
-	desc = hee_NAV.7.d
+	id = fee_NAV.7
+	title = fee_NAV.7.t
+	desc = fee_NAV.7.d
 	picture = LIBERUM_VETO_eventPicture
 	
 	is_triggered_only = yes
 
 	option = {
-		name = hee_NAV.7.a
+		name = fee_NAV.7.a
 		ai_chance = {
 			factor = 85
 		}
@@ -296,7 +296,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = hee_NAV.7.b
+		name = fee_NAV.7.b
 		trigger = {
 			has_heir = yes
 		}
@@ -323,11 +323,11 @@ country_event = {
 			create_union = NAV
 		}
 		NAV = {
-			country_event = { id = hee_NAV.8 days = 3 }
+			country_event = { id = fee_NAV.8 days = 3 }
 		}
 	}
 	option = {
-		name = hee_NAV.7.c
+		name = fee_NAV.7.c
 		break_union = NAV
 		NAV = {
 			define_ruler = {
@@ -338,37 +338,37 @@ country_event = {
 				MIL = 5
 				age = 16
 			}
-			country_event = { id = hee_NAV.9 }
+			country_event = { id = fee_NAV.9 }
 		}
 	}
 }
 
 #The King of Aragon Abdicates!
 country_event = {
-	id = hee_NAV.8
-	title = hee_NAV.8.t
-	desc = hee_NAV.8.d
+	id = fee_NAV.8
+	title = fee_NAV.8.t
+	desc = fee_NAV.8.d
 	picture = COURT_eventPicture
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = hee_NAV.8.a
+		name = fee_NAV.8.a
 		add_legitimacy = -15
 	}
 }
 
 #Navarra passes to Carlos
 country_event = {
-	id = hee_NAV.9
-	title = hee_NAV.9.t
-	desc = hee_NAV.9.d
+	id = fee_NAV.9
+	title = fee_NAV.9.t
+	desc = fee_NAV.9.d
 	picture = DIPLOMACY_eventPicture
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = hee_NAV.9.a
+		name = fee_NAV.9.a
 		add_legitimacy = 5
 		add_adm_power = 10
 		add_dip_power = 10
@@ -378,9 +378,9 @@ country_event = {
 
 #St. Francis of Xavier
 country_event = {
-	id = hee_NAV.10
-	title = hee_NAV.10.t
-	desc = hee_NAV.10.d
+	id = fee_NAV.10
+	title = fee_NAV.10.t
+	desc = fee_NAV.10.d
 	picture = RELIGIOUS_CONVERSION_eventPicture
 	
 	fire_only_once = yes
@@ -415,7 +415,7 @@ country_event = {
 	}
 	
 	option = { #He should serve as a minister
-		name = hee_NAV.10.a
+		name = fee_NAV.10.a
 		ai_chance = {
 			factor = 15
 		}
@@ -428,7 +428,7 @@ country_event = {
 	}
 	
 	option = { #God leads his path
-		name = hee_NAV.10.b
+		name = fee_NAV.10.b
 		ai_chance = {
 			factor = 85
 		}
@@ -443,7 +443,7 @@ country_event = {
 						region = deccan_region
 					}
 				}
-				province_event = { id = hee_NAV.12 days = 365 }
+				province_event = { id = fee_NAV.12 days = 365 }
 			}
 			random_province = {
 				limit = {
@@ -454,18 +454,18 @@ country_event = {
 						region = deccan_region
 					}
 				}
-				province_event = { id = hee_NAV.12 days = 365 random = 90}
+				province_event = { id = fee_NAV.12 days = 365 random = 90}
 			}
 		}
-		custom_tooltip = hee_NAV.10.tt
+		custom_tooltip = fee_NAV.10.tt
 	}
 }
 
 #Ciudadela de Pamplona
 country_event = { 
-	id = hee_NAV.11
-	title = hee_NAV.11.t
-	desc = hee_NAV.11.d
+	id = fee_NAV.11
+	title = fee_NAV.11.t
+	desc = fee_NAV.11.d
 	picture = FORT_eventPicture
 	
 	fire_only_once = yes
@@ -522,7 +522,7 @@ country_event = {
 	}
 	
 	option = { #Build a great fort!
-		name = hee_NAV.11.a
+		name = fee_NAV.11.a
 		ai_chance = {
 			factor = 90
 			modifier = {
@@ -552,7 +552,7 @@ country_event = {
 	}
 	
 	option = { #Let's develop a different strategy
-		name = hee_NAV.11.b
+		name = fee_NAV.11.b
 		ai_chance = {
 			factor = 10
 			modifier = {
@@ -566,15 +566,15 @@ country_event = {
 
 #Converted by Francis Xavier
 province_event = {
-	id = hee_NAV.12
-	title = hee_NAV.12.t
-	desc = hee_NAV.12.d
+	id = fee_NAV.12
+	title = fee_NAV.12.t
+	desc = fee_NAV.12.d
 	picture = RELIGIOUS_CONVERSION_eventPicture
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = hee_NAV.12.a
+		name = fee_NAV.12.a
 		change_religion = FROM
 	}
 }

@@ -1,13 +1,13 @@
 # Catholic events
 
-namespace = hee_catholic
+namespace = fee_catholic
 
 # Masterpiece of Religious Renaissance Art
 
 country_event = {
-	id = hee_catholic.1
-	title = hee_catholic.1.t
-	desc = hee_catholic.1.d
+	id = fee_catholic.1
+	title = fee_catholic.1.t
+	desc = fee_catholic.1.d
 	picture = IMPORTANT_STATUE_eventPicture
 	
 	trigger = {
@@ -27,14 +27,14 @@ country_event = {
 	
 	#Display it for the entire Christian world to see
 	option = {
-		name = hee_catholic.1.a
+		name = fee_catholic.1.a
 		add_papal_influence = 10
 		add_prestige = 10
 	}
 	
 	#Perfect timing, I was just in need of some money
 	option = {
-		name = hee_catholic.1.b
+		name = fee_catholic.1.b
 		trigger = {
 			ai = no
 		}
@@ -45,7 +45,7 @@ country_event = {
 	
 	#This will show the people how pious I am
 	option = {
-		name = hee_catholic.1.c
+		name = fee_catholic.1.c
 		add_stability = 1
 		add_papal_influence = -5
 	}
@@ -55,9 +55,9 @@ country_event = {
 # Growth of Popular Piety
 
 country_event = {
-	id = hee_catholic.2
-	title = hee_catholic.2.t
-	desc = hee_catholic.2.d
+	id = fee_catholic.2
+	title = fee_catholic.2.t
+	desc = fee_catholic.2.d
 	picture = RELIGION_eventPicture
 	
 	trigger = {
@@ -95,7 +95,7 @@ country_event = {
 	
 	# These people should listen to the pope
 	option = {
-		name = hee_catholic.2.a
+		name = fee_catholic.2.a
 		trigger = {
 			ai = no
 		}
@@ -109,7 +109,7 @@ country_event = {
 	
 	# People should always strive for new ways to express their faith
 	option = {
-		name = hee_catholic.2.b
+		name = fee_catholic.2.b
 		add_country_modifier = {
 			name = hee_piety_supported
 			duration = 3650

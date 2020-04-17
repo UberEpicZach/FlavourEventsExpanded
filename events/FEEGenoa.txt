@@ -1,13 +1,13 @@
 # Genoese flavor events
 
-namespace = hee_GEN
+namespace = fee_GEN
 
 # The Lanterna
 
 country_event = {
-	id = hee_GEN.1
-	title = hee_GEN.1.t
-	desc = hee_GEN.1.d
+	id = fee_GEN.1
+	title = fee_GEN.1.t
+	desc = fee_GEN.1.d
 	picture = HARBOUR_eventPicture
 
 	fire_only_once = yes
@@ -27,7 +27,7 @@ country_event = {
 	}
 
 	option = {
-		name = hee_GEN.1.a
+		name = fee_GEN.1.a
 		add_country_modifier = {
 			name = hee_genoese_lanterna 
 			duration = -1
@@ -35,7 +35,7 @@ country_event = {
 		add_years_of_income = -1
 	}
 	option = {
-		name = hee_GEN.1.b
+		name = fee_GEN.1.b
 		add_dip_power = 50
 	}
 }
@@ -45,9 +45,9 @@ country_event = {
 # Sampieru Corsu
 
 country_event = {
-	id = hee_GEN.2
-	title = hee_GEN.2.t
-	desc = hee_GEN.2.d
+	id = fee_GEN.2
+	title = fee_GEN.2.t
+	desc = fee_GEN.2.d
 	picture = ANGRY_MOB_eventPicture
 	
 	is_triggered_only = yes
@@ -57,7 +57,7 @@ country_event = {
 	}
 	
 	option = {
-		name = hee_GEN.2.a
+		name = fee_GEN.2.a
 		1247 = {
 			nationalist_rebels = 1
 			}
@@ -67,9 +67,9 @@ country_event = {
 # Corsican Constitution
 
 country_event = {
-	id = hee_GEN.3
-	title = hee_GEN.3.t
-	desc = hee_GEN.3.d
+	id = fee_GEN.3
+	title = fee_GEN.3.t
+	desc = fee_GEN.3.d
 	picture = REFORM_eventPicture
 	
 	fire_only_once = yes
@@ -92,7 +92,7 @@ country_event = {
 	}
 	
 	option = {
-		name = hee_GEN.3.a
+		name = fee_GEN.3.a
 		1247 = {
 			add_nationalism = 10
 		}
@@ -105,9 +105,9 @@ country_event = {
 # Casa San Giorgi settles on Corsica
 
 country_event = {
-	id = hee_GEN.4
-	title = hee_GEN.4.t
-	desc = hee_GEN.4.d
+	id = fee_GEN.4
+	title = fee_GEN.4.t
+	desc = fee_GEN.4.d
 	picture = CORRUPTION_eventPicture
 
 	fire_only_once = yes
@@ -145,7 +145,7 @@ country_event = {
 	}
 
 	option = {
-		name = hee_GEN.4.a
+		name = fee_GEN.4.a
 		1247 = {
 			add_province_modifier = {
 				name = hee_casa_san_giorgio
@@ -161,7 +161,7 @@ country_event = {
 	}
 
 	option = {
-		name = hee_GEN.4.b
+		name = fee_GEN.4.b
 		add_adm_power = 30
 		1247 = {
 			add_local_autonomy = -25
@@ -171,9 +171,9 @@ country_event = {
 
 #Balilla
 country_event = {
-	id = hee_GEN.5
-	title = hee_GEN.5.t
-	desc = hee_GEN.5.d
+	id = fee_GEN.5
+	title = fee_GEN.5.t
+	desc = fee_GEN.5.d
 	picture = ANGRY_MOB_eventPicture
 
 	fire_only_once = yes
@@ -204,13 +204,13 @@ country_event = {
 	}
 
 	option = {
-		name = hee_GEN.5.a
+		name = fee_GEN.5.a
 		random_country = {
 			limit = {
 				controls = 101
 			}
 			country_event = {
-				id = hee_GEN.6
+				id = fee_GEN.6
 			}
 		}
 	}
@@ -218,15 +218,15 @@ country_event = {
 
 #Balilla for Controller
 country_event = {
-	id = hee_GEN.6
-	title = hee_GEN.6.t
-	desc = hee_GEN.6.d
+	id = fee_GEN.6
+	title = fee_GEN.6.t
+	desc = fee_GEN.6.d
 	picture = ANGRY_MOB_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = hee_GEN.6.a
+		name = fee_GEN.6.a
 		add_prestige = -5
 		spawn_rebels = {
 			type = nationalist_rebels

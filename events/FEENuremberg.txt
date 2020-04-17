@@ -1,13 +1,13 @@
 #Nuremberg events
 
-namespace = hee_NUM
+namespace = fee_NUM
 
 #The First Imperial Diet
 
 country_event = {
-	id = hee_NUM.1
-	title = hee_NUM.1.t
-	desc = hee_NUM.1.d
+	id = fee_NUM.1
+	title = fee_NUM.1.t
+	desc = fee_NUM.1.d
 	picture = LIBERUM_VETO_eventPicture
 	
 	trigger = {
@@ -38,7 +38,7 @@ country_event = {
 	}
 	
 	option = {
-		name = hee_NUM.1.a
+		name = fee_NUM.1.a
 		add_prestige = 5
 		add_treasury = 10
 	}

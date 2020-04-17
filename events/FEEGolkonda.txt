@@ -1,12 +1,12 @@
 #Golkondese Events
 
-namespace = hee_GOC
+namespace = fee_GOC
 
 #Expand Golkonda Fort
 country_event = {
-	id = hee_GOC.1
-	title = hee_GOC.1.t
-	desc = hee_GOC.1.d
+	id = fee_GOC.1
+	title = fee_GOC.1.t
+	desc = fee_GOC.1.d
 	picture = FORT_eventPicture
 	
 	fire_only_once = yes
@@ -27,7 +27,7 @@ country_event = {
 	}
 	
 	option = {
-		name = hee_GOC.1.a
+		name = fee_GOC.1.a
 		542 = {
 			add_province_modifier = {
 				name = hee_golkonda_fort
@@ -39,7 +39,7 @@ country_event = {
 	}
 	
 	option = {
-		name = hee_GOC.1.b
+		name = fee_GOC.1.b
 		add_mil_power = 15
 	}
 }
@@ -47,9 +47,9 @@ country_event = {
 
 #Move the capital
 country_event = {
-	id = hee_GOC.2
-	title = hee_GOC.2.t
-	desc = hee_GOC.2.d
+	id = fee_GOC.2
+	title = fee_GOC.2.t
+	desc = fee_GOC.2.d
 	picture = FORT_eventPicture
 	
 	fire_only_once = yes
@@ -67,7 +67,7 @@ country_event = {
 	}
 	
 	option = {
-		name = hee_GOC.2.a
+		name = fee_GOC.2.a
 		ai_chance = {
 			factor = 90
 		}
@@ -80,7 +80,7 @@ country_event = {
 	}
 	
 	option = {
-		name = hee_GOC.2.b
+		name = fee_GOC.2.b
 		ai_chance = {
 			factor = 10
 		}

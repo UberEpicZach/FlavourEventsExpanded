@@ -1,13 +1,13 @@
 #Norwegian Events
 
-namespace = hee_NOR
+namespace = fee_NOR
 
 #Copper Mines on Røros
 
 country_event = {
-	id = hee_NOR.1
-	title = hee_NOR.1.t
-	desc = hee_NOR.1.d
+	id = fee_NOR.1
+	title = fee_NOR.1.t
+	desc = fee_NOR.1.d
 	picture = TRADEGOODS_eventPicture
 
 	fire_only_once = yes
@@ -26,13 +26,13 @@ country_event = {
 	}
 
 	option = {
-		name = hee_NOR.1.a
+		name = fee_NOR.1.a
 		20 = {
 			change_trade_goods = copper
 		}
 	}
 	option = {
-		name = hee_NOR.1.b
+		name = fee_NOR.1.b
 		add_treasury = 50
 	}
 }
@@ -40,9 +40,9 @@ country_event = {
 #Saint Olav’s Shrine for Overlord
 
 country_event = {
-	id = hee_NOR.2
-	title = hee_NOR.2.t
-	desc = hee_NOR.2.d
+	id = fee_NOR.2
+	title = fee_NOR.2.t
+	desc = fee_NOR.2.d
 	picture = IMPORTANT_STATUE_eventPicture
 
 	fire_only_once = yes
@@ -72,7 +72,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = hee_NOR.2.a
+		name = fee_NOR.2.a
 		ai_chance = {
 			factor = 90
 		}
@@ -84,13 +84,13 @@ country_event = {
 				change_religion = ROOT
 			}
 			country_event = {
-				id = hee_NOR.3 days = 10 random = 5
+				id = fee_NOR.3 days = 10 random = 5
 			}
 			add_treasury = 25
 		}
 	}
 	option = {
-		name = hee_NOR.2.b
+		name = fee_NOR.2.b
 		ai_chance = {
 			factor = 10
 		}
@@ -101,15 +101,15 @@ country_event = {
 #Saint Olav's Shrine Norway
 
 country_event = {
-	id = hee_NOR.3
-	title = hee_NOR.3.t
-	desc = hee_NOR.3.d
+	id = fee_NOR.3
+	title = fee_NOR.3.t
+	desc = fee_NOR.3.d
 	picture = RELIGIOUS_TURMOIL_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = hee_NOR.3.a
+		name = fee_NOR.3.a
 		add_opinion = {
 			who = FROM
 			modifier = hee_olav_shrine_destroyed

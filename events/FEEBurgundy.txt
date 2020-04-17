@@ -73,7 +73,7 @@ country_event = {
 		 188 = {
 		country_or_non_sovereign_subject_holds = ROOT
 	}
-    
+	}
     mean_time_to_happen = {
         months = 3
     }
@@ -104,4 +104,5 @@ country_event = {
                 who = HAB
                 modifier = fee_BUR_lotharingia_opinion2
     }
+}
 }

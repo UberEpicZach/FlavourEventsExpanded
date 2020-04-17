@@ -1,13 +1,13 @@
 #Tuscan Events
 
-namespace = hee_TUS
+namespace = fee_TUS
 
 #Thornton Expidition 1
 
 country_event = {
-	id = hee_TUS.1
-	title = hee_TUS.1.t
-	desc = hee_TUS.1.d
+	id = fee_TUS.1
+	title = fee_TUS.1.t
+	desc = fee_TUS.1.d
 	picture = EXPLORERS_eventPicture
 
 	fire_only_once = yes
@@ -41,14 +41,14 @@ country_event = {
 	}
 
 	option = {
-		name = hee_TUS.1.a
+		name = fee_TUS.1.a
 		add_country_modifier = {
 			name = hee_thornton_colonize
 			duration = 3650
 		}
 	}
 	option = {
-		name = hee_TUS.1.b
+		name = fee_TUS.1.b
 		define_explorer = {
 			name = "Robert Thornton"
 			shock = 3
@@ -57,7 +57,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = hee_TUS.1.c
+		name = fee_TUS.1.c
 		add_prestige = -1
 	}
 }
@@ -65,9 +65,9 @@ country_event = {
 #Freedom of Religion
 
 country_event = {
-	id = hee_TUS.2
-	title = hee_TUS.2.t
-	desc = hee_TUS.2.d
+	id = fee_TUS.2
+	title = fee_TUS.2.t
+	desc = fee_TUS.2.d
 	picture = RELIGION_eventPicture
 	
 	fire_only_once = yes
@@ -115,7 +115,7 @@ country_event = {
 	}
 	
 	option = {
-		name = hee_TUS.2.a
+		name = fee_TUS.2.a
 		add_adm_power = -25
 		capital_scope = {
 			add_base_tax = 1
@@ -127,7 +127,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = hee_TUS.2.b
+		name = fee_TUS.2.b
 		add_years_of_income = 0.5
 		add_country_modifier = {
 			name = hee_tuscan_intoleration
@@ -138,9 +138,9 @@ country_event = {
 
 #Emperor Condemn's the Duchy's Elevation
 #country_event = {
-#	id = hee_TUS.3
-#	title = hee_TUS.3.t
-#	desc = hee_TUS.3.d
+#	id = fee_TUS.3
+#	title = fee_TUS.3.t
+#	desc = fee_TUS.3.d
 #	picture = LIBERUM_VETO_eventPicture
 #	
 #	fire_only_once = yes
@@ -178,7 +178,7 @@ country_event = {
 #	}
 #	
 #	option = {
-#		name = hee_TUS.3.a
+#		name = fee_TUS.3.a
 #		add_dip_power = -25
 #		add_adm_power = 25
 #		add_papal_influence = 15
@@ -188,9 +188,9 @@ country_event = {
 
 #Emperor confirms the Duchy's elevation
 #country_event = {
-#	id = hee_TUS.4
-#	title = hee_TUS.4.t
-#	desc = hee_TUS.4.d
+#	id = fee_TUS.4
+#	title = fee_TUS.4.t
+#	desc = fee_TUS.4.d
 #	picture = CONQUEST_eventPicture
 #	
 #	fire_only_once = yes
@@ -222,7 +222,7 @@ country_event = {
 #	}
 #	
 #	option = {
-#		name = hee_TUS.4.a
+#		name = fee_TUS.4.a
 #		add_dip_power = 25
 #		add_adm_power = 25
 #		add_papal_influence = 5
@@ -232,9 +232,9 @@ country_event = {
 
 #The Construction Projects of Fernandino I
 country_event = {
-	id = hee_TUS.5
-	title = hee_TUS.5.t
-	desc = hee_TUS.5.d
+	id = fee_TUS.5
+	title = fee_TUS.5.t
+	desc = fee_TUS.5.d
 	picture = CITY_DEVELOPMENT_eventPicture
 	
 	fire_only_once = yes
@@ -260,7 +260,7 @@ country_event = {
 	}
 	
 	option = {
-		name = hee_TUS.5.a
+		name = fee_TUS.5.a
 		ai_chance = {
 			factor = 70
 		}
@@ -287,7 +287,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = hee_TUS.5.b
+		name = fee_TUS.5.b
 		ai_chance = {
 			factor = 30
 		}
@@ -306,9 +306,9 @@ country_event = {
 
 #The $MONARCHTITLE$'s Treasury
 #country_event = {
-#	id = hee_TUS.6
-#	title = hee_TUS.6.t
-#	desc = hee_TUS.6.d
+#	id = fee_TUS.6
+#	title = fee_TUS.6.t
+#	desc = fee_TUS.6.d
 #	picture = TRADEGOODS_eventPicture
 #	
 #	fire_only_once = yes
@@ -319,10 +319,10 @@ country_event = {
 #			tag = LAN
 #		}
 #		NOT = {
-#			has_ruler_modifier = hee_TUS_duke_treasury
+#			has_ruler_modifier = fee_TUS_duke_treasury
 #		}
 #		NOT = {
-#			has_ruler_modifier = hee_TUS_state_treasury
+#			has_ruler_modifier = fee_TUS_state_treasury
 #		}
 #		government = monarchy
 #	}
@@ -331,18 +331,18 @@ country_event = {
 #	}
 #	
 #	option = {
-#		name = hee_TUS.6.a
+#		name = fee_TUS.6.a
 #		add_prestige = 5
 #		add_ruler_modifier = {
-#			name = hee_TUS_duke_treasury
+#			name = fee_TUS_duke_treasury
 #			duration = -1
 #		}
 #	}
 #	option = {
-#		name = hee_TUS.6.b
+#		name = fee_TUS.6.b
 #		add_prestige = -5
 #		add_ruler_modifier = {
-#			name = hee_TUS_state_treasury
+#			name = fee_TUS_state_treasury
 #			duration = -1
 #		}
 #	}
@@ -350,9 +350,9 @@ country_event = {
 
 #Accademia del Cimento
 #country_event = {
-#	id = hee_TUS.7
-#	title = hee_TUS.7.t
-#	desc = hee_TUS.7.d
+#	id = fee_TUS.7
+#	title = fee_TUS.7.t
+#	desc = fee_TUS.7.d
 #	picture = GREAT_BUILDING_eventPicture
 #	
 #	fire_only_once = yes
@@ -382,14 +382,14 @@ country_event = {
 #	}
 #	
 #	option = {
-#		name = hee_TUS.7.a
+#		name = fee_TUS.7.a
 #		add_country_modifier = {
 #			name = hee_accademia_cimento
 #			duration = 3650
 #		}
 #	}
 #	option = {
-#		name = hee_TUS.7.b
+#		name = fee_TUS.7.b
 #		add_treasury = -25
 #		add_country_modifier = {
 #			name = hee_institution_cimento
@@ -401,9 +401,9 @@ country_event = {
 
 #Puritan Reforms of Cosimo III
 country_event = {
-	id = hee_TUS.8
-	title = hee_TUS.8.t
-	desc = hee_TUS.8.d
+	id = fee_TUS.8
+	title = fee_TUS.8.t
+	desc = fee_TUS.8.d
 	picture = REFORM_eventPicture
 	
 	fire_only_once = yes
@@ -439,30 +439,30 @@ country_event = {
 	}
 	
 	option = {
-		name = hee_TUS.8.a
+		name = fee_TUS.8.a
 		add_country_modifier = {
 			name = hee_puritan_tuscany
 			duration = 3650
 		}
 	}
 	option = {
-		name = hee_TUS.8.b
+		name = fee_TUS.8.b
 	}
 	option = {
-		name = hee_TUS.8.c
+		name = fee_TUS.8.c
 		trigger = {
 			has_idea_group = humanist_ideas
 		}
-		custom_tooltip = hee_TUS.8.c.tt
+		custom_tooltip = fee_TUS.8.c.tt
 		add_stability = 1
 	}
 }
 
 #Reforms of Peter Leopold
 country_event = {
-	id = hee_TUS.10
-	title = hee_TUS.10.t
-	desc = hee_TUS.10.d
+	id = fee_TUS.10
+	title = fee_TUS.10.t
+	desc = fee_TUS.10.d
 	picture = ADVISOR_eventPicture
 	
 	fire_only_once = yes
@@ -494,7 +494,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = hee_TUS.10.a
+		name = fee_TUS.10.a
 		add_stability = 1
 		add_country_modifier = {
 			name = hee_tuscan_reforms
@@ -518,7 +518,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = hee_TUS.10.b
+		name = fee_TUS.10.b
 		add_stability = 1
 		add_adm_power = 100
 		add_legitimacy = 10
@@ -528,9 +528,9 @@ country_event = {
 #Medici Oriental Press
 
 country_event = {
-	id = hee_TUS.12
-	title = hee_TUS.12.t
-	desc = hee_TUS.12.d
+	id = fee_TUS.12
+	title = fee_TUS.12.t
+	desc = fee_TUS.12.d
 	picture = BIG_BOOK_eventPicture
 	
 	fire_only_once = yes
@@ -554,7 +554,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = hee_TUS.12.a
+		name = fee_TUS.12.a
 		add_country_modifier = {
 			name = hee_oriental_press
 			duration = 10950

@@ -1,14 +1,14 @@
 #Bavarian Events
 
-namespace = hee_BAV
+namespace = fee_BAV
 
 
 # Dealing With the Robber Barons
 
 country_event = {
-	id = hee_BAV.1
-	title = hee_BAV.1.t
-	desc = hee_BAV.1.d
+	id = fee_BAV.1
+	title = fee_BAV.1.t
+	desc = fee_BAV.1.d
 	picture = BORDER_TENSION_eventPicture
 
 	fire_only_once = yes
@@ -24,17 +24,17 @@ country_event = {
 	}
 
 	option = {
-		name = hee_BAV.1.a
+		name = fee_BAV.1.a
 		add_years_of_income = -0.25
 		add_manpower = -2
 		add_country_modifier = {
-			name = hee_fought_robber_barons
+			name = fee_fought_robber_barons
 			duration = 3650
 		}
 	}
 
 	option = {
-		name = hee_BAV.1.b
+		name = fee_BAV.1.b
 		add_treasury = 25
 	}
 }
@@ -43,9 +43,9 @@ country_event = {
 #One Duchy, United
 
 country_event = {
-	id = hee_BAV.2
-	title = hee_BAV.2.t
-	desc = hee_BAV.2.d
+	id = fee_BAV.2
+	title = fee_BAV.2.t
+	desc = fee_BAV.2.d
 	picture = CONQUEST_eventPicture
 	
 	fire_only_once = yes
@@ -71,7 +71,7 @@ country_event = {
 	}
 	
 	option = {
-		name = hee_BAV.2.a
+		name = fee_BAV.2.a
 		add_stability = 1
 		add_legitimacy = 25
 	}
@@ -81,9 +81,9 @@ country_event = {
 # Reconciliation with the Habsburgs
 
 country_event = {
-	id = hee_BAV.3
-	title = hee_BAV.3.t
-	desc = hee_BAV.3.d
+	id = fee_BAV.3
+	title = fee_BAV.3.t
+	desc = fee_BAV.3.d
 	picture = DIPLOMACY_eventPicture
 	
 	fire_only_once = yes
@@ -108,21 +108,21 @@ country_event = {
 	}
 	
 	option = {	
-		name = hee_BAV.3.a	
+		name = fee_BAV.3.a	
 		HAB = {
 			add_opinion = {
 				who = ROOT
-				modifier = hee_bav_reconcile_habsburgs
+				modifier = fee_bav_reconcile_habsburgs
 			}
 		}
 	}
 
 	option = {	
-		name = hee_BAV.3.b	
+		name = fee_BAV.3.b	
 		HAB = {
 			add_opinion = {
 				who = ROOT
-				modifier = hee_bav_against_habsburgs
+				modifier = fee_bav_against_habsburgs
 			}
 		}
 		add_legitimacy = 5

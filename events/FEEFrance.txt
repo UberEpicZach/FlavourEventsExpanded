@@ -1,14 +1,14 @@
 
 # French events
 
-namespace = hee_FRA
+namespace = fee_FRA
 
 # Sampiero Corso
 
 country_event = {
-	id = hee_FRA.1
-	title = hee_FRA.1.t
-	desc = hee_FRA.1.d
+	id = fee_FRA.1
+	title = fee_FRA.1.t
+	desc = fee_FRA.1.d
 	picture = ADVISOR_eventPicture
 	
 	trigger = {
@@ -32,7 +32,7 @@ country_event = {
 	}
 	
 	option = {
-		name = hee_FRA.1.a
+		name = fee_FRA.1.a
 		add_claim = 1247
 		GEN = {
 			country_event = { id = hee_GEN.2 days = 3 }
@@ -42,9 +42,9 @@ country_event = {
 
 #Internal Toll Systems
 country_event = {
-	id = hee_FRA.2
-	title = hee_FRA.2.t
-	desc = hee_FRA.2.d 
+	id = fee_FRA.2
+	title = fee_FRA.2.t
+	desc = fee_FRA.2.d 
 	picture = HARBOUR_eventPicture
 	
 	trigger = {
@@ -78,7 +78,7 @@ country_event = {
 	}
 	
 	option = {
-		name = hee_FRA.2.a
+		name = fee_FRA.2.a
 		ai_chance = {
 			factor = 100
 			modifier = {
@@ -90,7 +90,7 @@ country_event = {
 		add_inflation = 1
 	}
 	option = {
-		name = hee_FRA.2.b
+		name = fee_FRA.2.b
 		ai_chance = {
 			factor = 0
 			modifier = {

@@ -1,19 +1,19 @@
 #Ottoman events
 
-namespace = hee_TUR
+namespace = fee_TUR
 
 #The Ottomans seize wheat from MOL or WAL
 
 country_event = {
-  id = hee_TUR.7
-  title = hee_TUR.7.t
-  desc = hee_TUR.7.d
+  id = fee_TUR.7
+  title = fee_TUR.7.t
+  desc = fee_TUR.7.d
   picture = FAMINE_eventPicture
        
     is_triggered_only = yes
         
     option = {
-    name = hee_TUR.7.a
+    name = fee_TUR.7.a
     add_country_modifier = {
       name = hee_turkey_uses_our_wheat
       duration = 300
@@ -23,9 +23,9 @@ country_event = {
 
 #Storming the Gates of Europe
 country_event = {
-	id = hee_TUR.8
-	title = hee_TUR.8.t
-	desc = hee_TUR.8.d
+	id = fee_TUR.8
+	title = fee_TUR.8.t
+	desc = fee_TUR.8.d
 	picture = COUNTRY_COLLAPSE_eventPicture
 	
 	fire_only_once = yes
@@ -43,7 +43,7 @@ country_event = {
 	}
 	
 	option = {	#Let us reinforce our European gains.
-		name = hee_TUR.8.a
+		name = fee_TUR.8.a
 		134 = { 
 			add_base_tax = 1
 			add_base_manpower = 1
@@ -56,7 +56,7 @@ country_event = {
 		}
 	}
 	option = { #Tis but another border province. Let them rebuild.
-		name = hee_TUR.8.b
+		name = fee_TUR.8.b
 		134 = {
 			add_base_production = 1
 		}
@@ -68,9 +68,9 @@ country_event = {
 
 #Murad II's Return to the Throne
 country_event = {
-	id = hee_TUR.10
-	title = hee_TUR.10.t
-	desc = hee_TUR.10.d
+	id = fee_TUR.10
+	title = fee_TUR.10.t
+	desc = fee_TUR.10.d
 	picture = COURT_eventPicture
 	
 	fire_only_once = yes
@@ -101,7 +101,7 @@ country_event = {
 	}
 	
 	option = {
-		name = hee_TUR.10.a
+		name = fee_TUR.10.a
 		ai_chance = {
 			factor = 100
 		}
@@ -135,7 +135,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = hee_TUR.10.b
+		name = fee_TUR.10.b
 		ai_chance = {
 			factor = 0
 		}
@@ -152,9 +152,9 @@ country_event = {
 
 #Murad's Passing
 country_event = {
-	id = hee_TUR.11
-	title = hee_TUR.11.t
-	desc = hee_TUR.11.d
+	id = fee_TUR.11
+	title = fee_TUR.11.t
+	desc = fee_TUR.11.d
 	picture = KING_SICK_IN_BED_eventPicture
 	
 	fire_only_once = yes
@@ -177,7 +177,7 @@ country_event = {
 	}
 	
 	option = {
-		name = hee_TUR.11.a
+		name = fee_TUR.11.a
 		add_adm_power = 25
 		add_dip_power = 25
 		add_mil_power = 25

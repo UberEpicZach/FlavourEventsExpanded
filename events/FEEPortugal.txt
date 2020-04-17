@@ -1,13 +1,13 @@
 #Portuguese events
 
-namespace = hee_POR
+namespace = fee_POR
 
 #Luis de Camoes
 
 country_event = {
-	id = hee_POR.1
-	title = hee_POR.1.t
-	desc = hee_POR.1.d
+	id = fee_POR.1
+	title = fee_POR.1.t
+	desc = fee_POR.1.d
 	picture = ADVISOR_eventPicture
 	
 	fire_only_once = yes
@@ -24,7 +24,7 @@ country_event = {
 		months = 240
 	}
 	option = {
-		name = hee_POR.1.a
+		name = fee_POR.1.a
 		add_prestige = 15
 		add_stability = 1
 		add_navy_tradition = 5
@@ -34,9 +34,9 @@ country_event = {
 #Sebastianism for free Portugal
 
 country_event = {
-	id = hee_POR.2
-	title = hee_POR.2.t
-	desc = hee_POR.2.d
+	id = fee_POR.2
+	title = fee_POR.2.t
+	desc = fee_POR.2.d
 	picture = SHIP_SAILING_eventPicture
 	
 	fire_only_once = yes
@@ -59,7 +59,7 @@ country_event = {
 	}
 	
 	option = { #His name is Sebastian, and that's good enough for me.
-		name = hee_POR.2.a
+		name = fee_POR.2.a
 		define_ruler = {
 			name = "Sebastian"
 			dynasty = "de Avis"
@@ -71,7 +71,7 @@ country_event = {
 		}
 	}
 		option = {	#Send away this impostor!
-		name = hee_POR.2.b
+		name = fee_POR.2.b
 		add_legitimacy = 5
 		add_country_modifier = {
 			name = hee_sebastianism

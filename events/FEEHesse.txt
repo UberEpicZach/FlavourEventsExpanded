@@ -1,13 +1,13 @@
 # Hessian Events
 
-namespace = hee_HES
+namespace = fee_HES
 
 # Hirirng of the National Army (also WES)
 
 country_event = {
-	id = hee_HES.1
-	title = hee_HES.1.t
-	desc = hee_HES.1.d
+	id = fee_HES.1
+	title = fee_HES.1.t
+	desc = fee_HES.1.d
 	picture = LAND_MILITARY_eventPicture
 
 	trigger = {
@@ -54,14 +54,14 @@ country_event = {
 	}
 
 	option = {
-		name = hee_HES.1.a
+		name = fee_HES.1.a
 		add_manpower = -3
 		add_years_of_income = 0.25
 		add_army_tradition = 5.0
 	}
 
 	option = {
-		name = hee_HES.1.b
+		name = fee_HES.1.b
 		add_mil_power = 25
 	}
 }

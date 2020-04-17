@@ -1,12 +1,12 @@
 #Mughal events
 
-namespace = hee_MUG
+namespace = fee_MUG
 
 #The Red Fort
 country_event = {
-	id = hee_MUG.1
-	title = hee_MUG.1.t
-	desc = hee_MUG.1.d
+	id = fee_MUG.1
+	title = fee_MUG.1.t
+	desc = fee_MUG.1.d
 	picture = FORT_eventPicture
 	
 	fire_only_once = yes
@@ -29,7 +29,7 @@ country_event = {
 	}
 	
 	option = {
-		name = hee_MUG.1.a
+		name = fee_MUG.1.a
 		ai_chance = {
 			factor = 90
 			modifier = {
@@ -50,7 +50,7 @@ country_event = {
 	}
 	
 	option = {
-		name = hee_MUG.1.b
+		name = fee_MUG.1.b
 		ai_chance = {
 			factor = 10
 		}
@@ -61,9 +61,9 @@ country_event = {
 
 #Integration with Indian Culture
 country_event = {
-	id = hee_MUG.2
-	title = hee_MUG.2.t
-	desc = hee_MUG.2.d
+	id = fee_MUG.2
+	title = fee_MUG.2.t
+	desc = fee_MUG.2.d
 	picture = FORT_eventPicture
 	
 	fire_only_once = yes
@@ -85,7 +85,7 @@ country_event = {
 	}
 	
 	option = {
-		name = hee_MUG.2.a
+		name = fee_MUG.2.a
 		ai_chance = {
 			factor = 80
 		}
@@ -97,7 +97,7 @@ country_event = {
 	}
 	
 	option = {
-		name = hee_MUG.2.b
+		name = fee_MUG.2.b
 		ai_chance = {
 			factor = 10
 		}
@@ -108,7 +108,7 @@ country_event = {
 	}
 	
 	option = {
-		name = hee_MUG.2.c
+		name = fee_MUG.2.c
 		ai_chance = {
 			factor = 10
 		}
@@ -118,15 +118,15 @@ country_event = {
 
 #Payment from tributary
 country_event = {
-	id = hee_MUG.3
-	title = hee_MUG.3.t
-	desc = hee_MUG.3.d
+	id = fee_MUG.3
+	title = fee_MUG.3.t
+	desc = fee_MUG.3.d
 	picture = CONQUEST_eventPicture
 	
 	trigger = {
 		tag = MUG
 		NOT = {
-			has_country_modifier = hee_MUG_received_tribute
+			has_country_modifier = fee_MUG_received_tribute
 		}
 		any_subject_country = {
 			NOT = {
@@ -142,7 +142,7 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			add_country_modifier = {
-				name = hee_MUG_received_tribute
+				name = fee_MUG_received_tribute
 				duration = 1825
 				hidden = yes
 			}
@@ -150,12 +150,12 @@ country_event = {
 	}
 	
 	option = {
-		name = hee_MUG.3.a
+		name = fee_MUG.3.a
 		add_years_of_income = 0.2
 		random_subject_country = {
 			reverse_add_opinion = {
 				who = MUG
-				modifier = hee_MUG_tribute
+				modifier = fee_MUG_tribute
 			}
 			add_country_modifier = {
 				name = hee_paid_MUG_tribute

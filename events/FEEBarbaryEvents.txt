@@ -1,13 +1,13 @@
 #Barbary Corsair Events
 
-namespace = hee_barbary
+namespace = fee_barbary
 
 #Privateer Contracts
 
 country_event = {
-	id = hee_barbary.1
-	title = hee_barbary.1.t
-	desc = hee_barbary.1.d
+	id = fee_barbary.1
+	title = fee_barbary.1.t
+	desc = fee_barbary.1.d
 	picture = SHIP_SAILING_eventPicture
 
 	trigger = {
@@ -24,7 +24,7 @@ country_event = {
 			is_year = 1520
 		}
 		NOT = {
-			has_country_modifier = hee_support_barbary
+			has_country_modifier = fee_support_barbary
 		}
 		NOT = {
 			OR = {
@@ -55,20 +55,20 @@ country_event = {
 	}
 
 	option = {
-		name = hee_barbary.1.a
+		name = fee_barbary.1.a
 		ai_chance = {
 			factor = 80
 		}
 		add_country_modifier = {
-			name = hee_support_barbary
+			name = fee_support_barbary
 			duration = -1
 		}
 		add_dip_power = -25
-		custom_tooltip = hee_barbary.1.tt
+		custom_tooltip = fee_barbary.1.tt
 	}
 
 	option = {
-		name = hee_barbary.1.b
+		name = fee_barbary.1.b
 		ai_chance = {
 			factor = 20
 		}
@@ -78,13 +78,13 @@ country_event = {
 
 #Sponsor Barbary Raid
 country_event = {
-	id = hee_barbary.2
-	title = hee_barbary.2.t
-	desc = hee_barbary.2.d
+	id = fee_barbary.2
+	title = fee_barbary.2.t
+	desc = fee_barbary.2.d
 	picture = NAVAL_MILITARY_eventPicture
 
 	trigger = {
-		has_country_modifier = hee_support_barbary
+		has_country_modifier = fee_support_barbary
 		any_owned_province = {
 			region = maghreb_region
 			has_port = yes
@@ -108,12 +108,12 @@ country_event = {
 				}
 				has_port = yes
 				NOT = {
-					has_province_modifier = hee_raided_barbary
+					has_province_modifier = fee_raided_barbary
 				}
 				is_capital = no
 			}
 			NOT = {
-				has_country_modifier = hee_barbary_retaliation
+				has_country_modifier = fee_barbary_retaliation
 			}
 			NOT = {
 				truce_with = ROOT
@@ -126,7 +126,7 @@ country_event = {
 	}
 
 	option = {
-		name = hee_barbary.2.a
+		name = fee_barbary.2.a
 		ai_chance = {
 			factor = 80
 		}
@@ -142,7 +142,7 @@ country_event = {
 						religion = reformed
 					}
 					NOT = {
-						has_country_modifier = hee_barbary_retaliation
+						has_country_modifier = fee_barbary_retaliation
 					}
 					any_owned_province = {
 						has_port = yes
@@ -174,17 +174,17 @@ country_event = {
 						region = balkan_region
 					}
 					NOT = {
-						has_province_modifier = hee_raided_barbary
+						has_province_modifier = fee_raided_barbary
 					}
 					is_capital = no
 					}
 					province_event = {
-						id = hee_barbary.3 days = 30 random = 10
+						id = fee_barbary.3 days = 30 random = 10
 					}
 				}
 			}
 			country_event = {
-				id = hee_barbary.5
+				id = fee_barbary.5
 				days = 60
 			}
 			}
@@ -197,7 +197,7 @@ country_event = {
 						religion = reformed
 					}
 					NOT = {
-						has_country_modifier = hee_barbary_retaliation
+						has_country_modifier = fee_barbary_retaliation
 					}
 					any_owned_province = {
 						has_port = yes
@@ -224,7 +224,7 @@ country_event = {
 							religion = reformed
 						}
 						NOT = {
-							has_country_modifier = hee_barbary_retaliation
+							has_country_modifier = fee_barbary_retaliation
 						}
 					}
 					OR = {
@@ -238,23 +238,23 @@ country_event = {
 						region = balkan_region
 					}
 					NOT = {
-						has_province_modifier = hee_raided_barbary
+						has_province_modifier = fee_raided_barbary
 					}
 				}
 				province_event = {
-					id = hee_barbary.4 days = 30 random = 10
+					id = fee_barbary.4 days = 30 random = 10
 				}
 			}
 			}
 			country_event = {
-				id = hee_barbary.6
+				id = fee_barbary.6
 				days = 60
 			}
 		}
 		}
 		}
 	option = {
-		name = hee_barbary.2.b
+		name = fee_barbary.2.b
 		ai_chance = {
 			factor = 20
 		}
@@ -264,9 +264,9 @@ country_event = {
 
 #$PROVINCE$ Raided
 province_event = {
-	id = hee_barbary.3
-	title = hee_barbary.3.t
-	desc = hee_barbary.3.d
+	id = fee_barbary.3
+	title = fee_barbary.3.t
+	desc = fee_barbary.3.d
 	picture = BORDER_TENSION_eventPicture
 
 	is_triggered_only = yes
@@ -275,7 +275,7 @@ province_event = {
 		hidden_effect = {
 			owner = {
 				add_country_modifier = {
-					name = hee_raided_barbary_country
+					name = fee_raided_barbary_country
 					duration = 3650
 					hidden = yes
 				}
@@ -284,9 +284,9 @@ province_event = {
 	}
 
 	option = {
-		name = hee_barbary.3.a
+		name = fee_barbary.3.a
 		add_province_modifier = {
-			name = hee_raided_barbary
+			name = fee_raided_barbary
 			duration = 3650
 		}
 		owner = {
@@ -294,9 +294,9 @@ province_event = {
 		}
 	}
 	option = {
-		name = hee_barbary.3.b
+		name = fee_barbary.3.b
 		add_province_modifier = {
-			name = hee_raided_barbary
+			name = fee_raided_barbary
 			duration = 1825
 		}
 		owner = {
@@ -308,15 +308,15 @@ province_event = {
 
 #Raid repelled
 province_event = {
-	id = hee_barbary.4
-	title = hee_barbary.4.t
-	desc = hee_barbary.4.d
+	id = fee_barbary.4
+	title = fee_barbary.4.t
+	desc = fee_barbary.4.d
 	picture = BATTLE_eventPicture
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = hee_barbary.4.a
+		name = fee_barbary.4.a
 		owner = {
 			add_prestige = 5
 			add_mil_power = 25
@@ -326,15 +326,15 @@ province_event = {
 
 #Raid returns successful
 country_event = {
-	id = hee_barbary.5
-	title = hee_barbary.5.t
-	desc = hee_barbary.5.d
+	id = fee_barbary.5
+	title = fee_barbary.5.t
+	desc = fee_barbary.5.d
 	picture = FEAST_eventPicture
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = hee_barbary.5.a
+		name = fee_barbary.5.a
 		add_years_of_income = 0.5
 		add_prestige = 5
 		add_mil_power = 20
@@ -344,15 +344,15 @@ country_event = {
 
 #Raid returns in failure
 country_event = {
-	id = hee_barbary.6
-	title = hee_barbary.6.t
-	desc = hee_barbary.6.d
+	id = fee_barbary.6
+	title = fee_barbary.6.t
+	desc = fee_barbary.6.d
 	picture = OVEREXTENSION_eventPicture
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = hee_barbary.6.a
+		name = fee_barbary.6.a
 		add_mil_power = -15
 		add_dip_power = -15
 		add_prestige = -10
@@ -362,25 +362,25 @@ country_event = {
 
 #Retaliation
 country_event = {
-	id = hee_barbary.7
-	title = hee_barbary.7.t
-	desc = hee_barbary.7.d
+	id = fee_barbary.7
+	title = fee_barbary.7.t
+	desc = fee_barbary.7.d
 	picture = NAVAL_MILITARY_eventPicture
 
 	trigger = {
-		has_country_modifier = hee_raided_barbary_country
+		has_country_modifier = fee_raided_barbary_country
 		NOT = {
-			has_country_modifier = hee_barbary_retaliation
+			has_country_modifier = fee_barbary_retaliation
 		}
 		calc_true_if = {
 			any_owned_province = {
-				has_province_modifier = hee_raided_barbary
+				has_province_modifier = fee_raided_barbary
 			}
 			amount = 2
 		}
 		is_at_war = no
 		any_country = {
-			has_country_modifier = hee_support_barbary
+			has_country_modifier = fee_support_barbary
 			NOT = {
 				truce_with = ROOT
 			}
@@ -392,7 +392,7 @@ country_event = {
 	}
 	
 	option = {
-		name = hee_barbary.7.a
+		name = fee_barbary.7.a
 		ai_chance = {
 			factor = 60
 		}
@@ -400,31 +400,31 @@ country_event = {
 		add_treasury = -10
 		add_mil_power = 25
 		add_country_modifier = {
-			name = hee_barbary_retaliation
+			name = fee_barbary_retaliation
 			duration = 5475
 			hidden = yes
 		}
 		random_country = {
 			limit = {
-				has_country_modifier = hee_support_barbary
+				has_country_modifier = fee_support_barbary
 				NOT = {
 					truce_with = ROOT
 				}
 			}
 			country_event = {
-				id = hee_barbary.8 days = 20
+				id = fee_barbary.8 days = 20
 			}
 		}
 	}
 	
 	option = {
-		name = hee_barbary.7.b
+		name = fee_barbary.7.b
 		ai_chance = {
 			factor = 20
 		}
 		random_country = {
 			limit = {
-				has_country_modifier = hee_support_barbary
+				has_country_modifier = fee_support_barbary
 			}
 			reverse_add_casus_belli = {
 				target = ROOT
@@ -434,7 +434,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = hee_barbary.7.b
+		name = fee_barbary.7.b
 		ai_chance = {
 			factor = 20
 		}
@@ -444,9 +444,9 @@ country_event = {
 
 #"Retaliation" for Barbary Raids
 country_event = {
-	id = hee_barbary.8
-	title = hee_barbary.8.t
-	desc = hee_barbary.8.d
+	id = fee_barbary.8
+	title = fee_barbary.8.t
+	desc = fee_barbary.8.d
 	picture = COUNTRY_COLLAPSE_eventPicture
 	
 	is_triggered_only = yes
@@ -456,18 +456,18 @@ country_event = {
 			limit = {
 				has_port = yes
 				NOT = {
-					has_province_modifier = hee_raided_barbary
+					has_province_modifier = fee_raided_barbary
 				}
 			}
 			add_province_modifier = {
-				name = hee_raided_barbary
+				name = fee_raided_barbary
 				duration = 3650
 			}
 		}
 	}
 	
 	option = {
-		name = hee_barbary.8.a
+		name = fee_barbary.8.a
 		reverse_add_casus_belli = {
 			target = FROM
 			type = cb_trade_conflict
@@ -475,16 +475,16 @@ country_event = {
 		}
 	}
 	option = {
-		name = hee_barbary.8.b
+		name = fee_barbary.8.b
 		add_dip_power = 25
 	}
 }
 
 #Barbary Corsairs Plaguing Trade Route
 country_event = {
-	id = hee_barbary.9
-	title = hee_barbary.9.t
-	desc = hee_barbary.9.d
+	id = fee_barbary.9
+	title = fee_barbary.9.t
+	desc = fee_barbary.9.d
 	picture = SHIP_SAILING_eventPicture
 	
 	trigger = {
@@ -492,7 +492,7 @@ country_event = {
 			dip_tech = 23
 		}
 		any_country = {
-			has_country_modifier = hee_support_barbary
+			has_country_modifier = fee_support_barbary
 		}
 		is_year = 1490
 		any_owned_province = {
@@ -510,7 +510,7 @@ country_event = {
 		}
 		NOT = {
 			any_country = {
-				has_country_modifier = hee_support_barbary
+				has_country_modifier = fee_support_barbary
 				truce_with = ROOT
 			}
 		}
@@ -521,14 +521,14 @@ country_event = {
 	}
 	
 	option = {
-		name = hee_barbary.9.a
+		name = fee_barbary.9.a
 		add_dip_power = -25
 		add_treasury = -10
 	}
 	option = {
-		name = hee_barbary.9.b
+		name = fee_barbary.9.b
 		add_country_modifier = {
-			name = hee_sea_lanes_terrorised
+			name = fee_sea_lanes_terrorised
 			duration = 1095
 		}
 	}
@@ -536,13 +536,13 @@ country_event = {
 
 #Decline of the Barbary Corsairs
 country_event = {
-	id = hee_barbary.10
-	title = hee_barbary.10.t
-	desc = hee_barbary.10.d
+	id = fee_barbary.10
+	title = fee_barbary.10.t
+	desc = fee_barbary.10.d
 	picture = SHIP_SAILING_eventPicture
 	
 	trigger = {
-		has_country_modifier = hee_support_barbary
+		has_country_modifier = fee_support_barbary
 		any_country = {
 			dip_tech = 23
 		}
@@ -557,7 +557,7 @@ country_event = {
 	}
 	
 	option = {
-		name = hee_barbary.10.a
-		remove_country_modifier = hee_support_barbary
+		name = fee_barbary.10.a
+		remove_country_modifier = fee_support_barbary
 	}
 }

@@ -1,13 +1,13 @@
 #Danish events
 
-namespace = hee_DAN
+namespace = fee_DAN
 
 #The Stockholm Bloodbath
 
 country_event = {
-	id = hee_DAN.1
-	title = hee_DAN.1.t
-	desc = hee_DAN.1.d
+	id = fee_DAN.1
+	title = fee_DAN.1.t
+	desc = fee_DAN.1.d
 	picture = CITY_VIEW_eventPicture
 
 	fire_only_once = yes
@@ -40,18 +40,18 @@ country_event = {
 	}
 
 	option = {
-		name = hee_DAN.1.a
+		name = fee_DAN.1.a
 		add_stability = 1
 		SWE = {
 			country_event = {
-				id = hee_DAN.2 days = 2
+				id = fee_DAN.2 days = 2
 			}
 		}
 		add_prestige = -5
 	}
 
 	option = {
-		name = hee_DAN.1.b
+		name = fee_DAN.1.b
 		add_stability = -1
 		add_legitimacy = -10
 	}
@@ -60,28 +60,28 @@ country_event = {
 #Stockholm Bloodbath for Sweden
 
 country_event = {
-	id = hee_DAN.2
-	title = hee_DAN.2.t
-	desc = hee_DAN.2.d
+	id = fee_DAN.2
+	title = fee_DAN.2.t
+	desc = fee_DAN.2.d
 	picture = BORDER_TENSION_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = hee_DAN.2.a
+		name = fee_DAN.2.a
 		add_stability = -1
 		add_opinion = {
 			who = DAN
-			modifier = hee_stockholm_bloodbath
+			modifier = fee_stockholm_bloodbath
 		}
 	}
 }
 
 #Hans Tausen
 country_event = {
-	id = hee_DAN.3
-	title = hee_DAN.3.t
-	desc = hee_DAN.3.d
+	id = fee_DAN.3
+	title = fee_DAN.3.t
+	desc = fee_DAN.3.d
 	picture = PRAYING_eventPicture	
 
 	fire_only_once = yes
@@ -112,7 +112,7 @@ country_event = {
 					is_capital = no
 				}
 				add_province_modifier = {
-					name = hee_tausen
+					name = fee_tausen
 					duration = -1
 					hidden = yes
 				}
@@ -121,10 +121,10 @@ country_event = {
 	}
 
 	option = {
-		name = hee_DAN.3.a
+		name = fee_DAN.3.a
 		random_owned_province = {
 			limit = {
-				has_province_modifier = hee_tausen
+				has_province_modifier = fee_tausen
 			}
 			change_religion = protestant
 			add_province_modifier = {
@@ -135,13 +135,13 @@ country_event = {
 	}
 
 	option = {
-		name = hee_DAN.3.b
+		name = fee_DAN.3.b
 		random_owned_province = {
 			limit = {
-				has_province_modifier = hee_tausen
+				has_province_modifier = fee_tausen
 			}
 			add_province_modifier = {
-				name = hee_tausen_uproar
+				name = fee_tausen_uproar
 				duration = 3650
 			}
 		}
@@ -150,9 +150,9 @@ country_event = {
 
 #Tausen as advisor
 country_event = {
-	id = hee_DAN.4
-	title = hee_DAN.4.t
-	desc = hee_DAN.4.d
+	id = fee_DAN.4
+	title = fee_DAN.4.t
+	desc = fee_DAN.4.d
 	picture = RELIGIOUS_CONVERSION_eventPicture
 
 	fire_only_once = yes
@@ -171,13 +171,13 @@ country_event = {
 		modifier = {
 			factor = 0.8
 			any_owned_province = {
-				has_province_modifier = hee_tausen
+				has_province_modifier = fee_tausen
 			}
 		}
 	}
 
 	option = {
-		name = hee_DAN.4.a
+		name = fee_DAN.4.a
 		define_advisor = {
 			name = "Hans Tausen"
 			skill = 2
@@ -187,9 +187,9 @@ country_event = {
 	}
 
 	option = {
-		name = hee_DAN.4.b
+		name = fee_DAN.4.b
 		add_country_modifier = {
-			name = hee_tausen_preaching
+			name = fee_tausen_preaching
 			duration = 3650
 		}
 		if = {
@@ -198,7 +198,7 @@ country_event = {
 			}
 			NOR = {
 				country_event = {
-					id = hee_DAN.5 days = 30 random = 20
+					id = fee_DAN.5 days = 30 random = 20
 				}
 			}
 		}
@@ -208,7 +208,7 @@ country_event = {
 			}
 			SWE = {
 				country_event = {
-					id = hee_DAN.5 days = 30 random = 20
+					id = fee_DAN.5 days = 30 random = 20
 				}
 			}
 		}
@@ -217,9 +217,9 @@ country_event = {
 
 #Tausen preaching in subject countries
 country_event = {
-	id = hee_DAN.5
-	title = hee_DAN.5.t
-	desc = hee_DAN.5.d
+	id = fee_DAN.5
+	title = fee_DAN.5.t
+	desc = fee_DAN.5.d
 	picture = RELIGIOUS_CONVERSION_eventPicture
 
 	is_triggered_only = yes
@@ -229,7 +229,7 @@ country_event = {
 	}
 
 	option = {
-		name = hee_DAN.5.a
+		name = fee_DAN.5.a
 		if = {
 			limit = {
 				any_owned_province = {
@@ -244,7 +244,7 @@ country_event = {
 			}
 		}
 		add_country_modifier = {
-			name = hee_tausen_preaching
+			name = fee_tausen_preaching
 			duration = 3650
 		}
 	}
@@ -252,9 +252,9 @@ country_event = {
 
 #Architecht of the Danish Throne
 country_event = {
-	id = hee_DAN.6
-	title = hee_DAN.6.t
-	desc = hee_DAN.6.d
+	id = fee_DAN.6
+	title = fee_DAN.6.t
+	desc = fee_DAN.6.d
 	picture = GREAT_BUILDING_eventPicture
 
 	fire_only_once = yes
@@ -288,13 +288,13 @@ country_event = {
 	}
 
 	option = {
-		name = hee_DAN.6.a
+		name = fee_DAN.6.a
 		capital_scope = {
 			add_base_tax = 1
 			add_base_production = 1
 		}
 		add_country_modifier = {
-			name = hee_christian_iv
+			name = fee_christian_iv
 			duration = 7300
 		}
 		if = {
@@ -323,7 +323,7 @@ country_event = {
 			}
 			NOR = {
 				country_event = {
-					id = hee_DAN.7 days = 30 random = 10
+					id = fee_DAN.7 days = 30 random = 10
 				}
 			}
 		}
@@ -333,7 +333,7 @@ country_event = {
 			}
 			SWE = {
 				country_event = {
-					id = hee_DAN.7 days = 30 random = 10
+					id = fee_DAN.7 days = 30 random = 10
 				}
 			}
 		}
@@ -342,9 +342,9 @@ country_event = {
 
 #Architect of the Danish Throne for subjects
 country_event = {
-	id = hee_DAN.7
-	title = hee_DAN.7.t
-	desc = hee_DAN.7.d
+	id = fee_DAN.7
+	title = fee_DAN.7.t
+	desc = fee_DAN.7.d
 	picture = GREAT_BUILDING_eventPicture
 
 	is_triggered_only = yes
@@ -354,13 +354,13 @@ country_event = {
 	}
 
 	option = {
-		name = hee_DAN.7.a
+		name = fee_DAN.7.a
 		capital_scope = {
 			add_base_tax = 1
 			add_base_production = 1
 		}
 		add_country_modifier = {
-			name = hee_christian_iv
+			name = fee_christian_iv
 			duration = 7300
 		}
 	if = {
@@ -384,19 +384,19 @@ country_event = {
 
 #The Danish Monarchy
 country_event = {
-	id = hee_DAN.8
-	title = hee_DAN.8.t
-	desc = hee_DAN.8.d
+	id = fee_DAN.8
+	title = fee_DAN.8.t
+	desc = fee_DAN.8.d
 	picture = DIPLOMACY_eventPicture
 
 	trigger = {
 		tag = DAN
 		government = monarchy
 		NOT = {
-			has_ruler_modifier = hee_danish_elective
+			has_ruler_modifier = fee_danish_elective
 		}
 		NOT = {
-			has_country_modifier = hee_danish_absolutism
+			has_country_modifier = fee_danish_absolutism
 		}
 	}
 
@@ -407,7 +407,7 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			add_ruler_modifier = {
-				name = hee_danish_elective
+				name = fee_danish_elective
 				duration = -1
 				hidden = yes
 			}
@@ -415,7 +415,7 @@ country_event = {
 	}
 
 	option = {
-		name = hee_DAN.8.a
+		name = fee_DAN.8.a
 		ai_chance = {
 			factor = 98
 		}
@@ -431,7 +431,7 @@ country_event = {
 		add_mil_power = -15
 	}
 	option = {
-		name = hee_DAN.8.b
+		name = fee_DAN.8.b
 		ai_chance = {
 			factor = 2
 		}
@@ -447,9 +447,9 @@ country_event = {
 
 #Danish Absolutism
 country_event = {
-	id = hee_DAN.9
-	title = hee_DAN.9.t
-	desc = hee_DAN.9.d
+	id = fee_DAN.9
+	title = fee_DAN.9.t
+	desc = fee_DAN.9.d
 	picture = GOOD_WITH_MONARCH_eventPicture
 
 	fire_only_once = yes
@@ -483,11 +483,11 @@ country_event = {
 	}
 
 	option = {
-		name = hee_DAN.9.a
+		name = fee_DAN.9.a
 		change_government = absolute_monarchy
 		add_stability = 1
 		add_country_modifier = {
-			name = hee_danish_absolutism
+			name = fee_danish_absolutism
 			duration = -1
 		}
 	}
@@ -495,9 +495,9 @@ country_event = {
 
 #Remove Absolutism Bonus
 country_event = {
-	id = hee_DAN.10
-	title = hee_DAN.10.t
-	desc = hee_DAN.10.d
+	id = fee_DAN.10
+	title = fee_DAN.10.t
+	desc = fee_DAN.10.d
 	picture = GOOD_WITH_MONARCH_eventPicture
 
 	fire_only_once = yes
@@ -509,7 +509,7 @@ country_event = {
 			tag = DAN
 			tag = SCA
 		}
-		has_country_modifier = hee_danish_absolutism
+		has_country_modifier = fee_danish_absolutism
 		NOT = {
 			government = monarchy
 		}
@@ -521,27 +521,27 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
-			remove_country_modifier = hee_danish_absolutism
+			remove_country_modifier = fee_danish_absolutism
 		}
 	}
 
 	option = {
-		name = hee_DAN.10.a
+		name = fee_DAN.10.a
 	}
 }
 
 #End of Elective Monarchy (for Scandinavia)
 country_event = {
-	id = hee_DAN.11
-	title = hee_DAN.11.t
-	desc = hee_DAN.11.d
+	id = fee_DAN.11
+	title = fee_DAN.11.t
+	desc = fee_DAN.11.d
 	picture = LIBERUM_VETO_eventPicture
 
 	fire_only_once = yes
 
 	trigger = {
 		tag = SCA
-		has_ruler_modifier = hee_danish_elective
+		has_ruler_modifier = fee_danish_elective
 	}
 
 	mean_time_to_happen = {
@@ -549,7 +549,7 @@ country_event = {
 	}
 
 	option = {
-		name = hee_DAN.11.a
+		name = fee_DAN.11.a
 		add_stability = 1
 		add_prestige = 10
 		add_adm_power = 10
@@ -560,9 +560,9 @@ country_event = {
 
 #Struensee
 country_event = {
-	id = hee_DAN.12
-	title = hee_DAN.12.t
-	desc = hee_DAN.12.d
+	id = fee_DAN.12
+	title = fee_DAN.12.t
+	desc = fee_DAN.12.d
 	picture = KING_SICK_IN_BED_eventPicture
 
 	fire_only_once = yes
@@ -613,7 +613,7 @@ country_event = {
 	}
 
 	option = {
-		name = hee_DAN.12.a
+		name = fee_DAN.12.a
 		ai_chance = {
 			factor = 90
 		}
@@ -635,20 +635,20 @@ country_event = {
 			regency = yes
 			age = 26
 		}
-		set_ruler_flag = hee_struensee_timer
+		set_ruler_flag = fee_struensee_timer
 		add_country_modifier = {
-			name = hee_denmark_struensee
+			name = fee_denmark_struensee
 			duration = -1
 		}
 		add_ruler_modifier = {	#Compatability with Lex Talionis	
 			name = is_usurper
 			duration = -1
 		}
-		custom_tooltip = hee_DAN.12.tt
+		custom_tooltip = fee_DAN.12.tt
 	}
 
 	option = {
-		name = hee_DAN.12.b
+		name = fee_DAN.12.b
 		ai_chance = {
 			factor = 10
 			modifier = {
@@ -668,9 +668,9 @@ country_event = {
 
 #Struensee Abolishes the Norwegian Viceroyship (Personal Union)
 country_event = {
-	id = hee_DAN.13
-	title = hee_DAN.13.t
-	desc = hee_DAN.13.d
+	id = fee_DAN.13
+	title = fee_DAN.13.t
+	desc = fee_DAN.13.d
 	picture = BAD_WITH_MONARCH_eventPicture
 
 	fire_only_once = yes
@@ -682,7 +682,7 @@ country_event = {
 		}
 		dynasty = "Struensee"
 		senior_union_with = NOR
-		has_country_modifier = hee_denmark_struensee
+		has_country_modifier = fee_denmark_struensee
 	}
 
 	mean_time_to_happen = {
@@ -690,9 +690,9 @@ country_event = {
 	}
 
 	option = {
-		name = hee_DAN.13.a
+		name = fee_DAN.13.a
 		add_country_modifier = {
-			name = hee_struensee_norway
+			name = fee_struensee_norway
 			duration = -1
 		}
 	}
@@ -700,9 +700,9 @@ country_event = {
 
 #Struensee Abolishes the Norwegian Viceroyship (Integrated Norway)
 country_event = {
-	id = hee_DAN.14
-	title = hee_DAN.14.t
-	desc = hee_DAN.14.d
+	id = fee_DAN.14
+	title = fee_DAN.14.t
+	desc = fee_DAN.14.d
 	picture = BAD_WITH_MONARCH_eventPicture
 
 	fire_only_once = yes
@@ -713,7 +713,7 @@ country_event = {
 			tag = SCA
 		}
 		dynasty = "Struensee"
-		has_country_modifier = hee_denmark_struensee
+		has_country_modifier = fee_denmark_struensee
 		NOT = {
 			exists = NOR
 		}
@@ -732,7 +732,7 @@ country_event = {
 	}
 
 	option = {
-		name = hee_DAN.14.a
+		name = fee_DAN.14.a
 		every_owned_province = {
 			limit = {
 				OR = {
@@ -758,9 +758,9 @@ country_event = {
 
 #Struensee restricts noble rights
 country_event = {
-	id = hee_DAN.15
-	title = hee_DAN.15.t
-	desc = hee_DAN.15.d
+	id = fee_DAN.15
+	title = fee_DAN.15.t
+	desc = fee_DAN.15.d
 	picture = DEBATE_REPUBLICAN_eventPicture
 
 	fire_only_once = yes
@@ -771,7 +771,7 @@ country_event = {
 			tag = SCA
 		}
 		dynasty = "Struensee"
-		has_country_modifier = hee_denmark_struensee
+		has_country_modifier = fee_denmark_struensee
 	}
 
 	mean_time_to_happen = {
@@ -779,9 +779,9 @@ country_event = {
 	}
 
 	option = {
-		name = hee_DAN.15.a
+		name = fee_DAN.15.a
 		add_country_modifier = {
-			name = hee_struensee_nobles
+			name = fee_struensee_nobles
 			duration = -1
 		}
 	}
@@ -789,9 +789,9 @@ country_event = {
 
 #Struensee abolishes slave trade and unfree labor
 country_event = {
-	id = hee_DAN.16
-	title = hee_DAN.16.t
-	desc = hee_DAN.16.d
+	id = fee_DAN.16
+	title = fee_DAN.16.t
+	desc = fee_DAN.16.d
 	picture = FARMING_eventPicture
 
 	fire_only_once = yes
@@ -802,7 +802,7 @@ country_event = {
 			tag = SCA
 		}
 		dynasty = "Struensee"
-		has_country_modifier = hee_denmark_struensee
+		has_country_modifier = fee_denmark_struensee
 	}
 
 	mean_time_to_happen = {
@@ -810,9 +810,9 @@ country_event = {
 	}
 
 	option = {
-		name = hee_DAN.16.a 
+		name = fee_DAN.16.a 
 		add_country_modifier = {
-			name = hee_struensee_corvee
+			name = fee_struensee_corvee
 			duration = -1
 		}
 	}
@@ -820,9 +820,9 @@ country_event = {
 
 #Struensee abolishes the court aristocracy
 country_event = {
-	id = hee_DAN.17
-	title = hee_DAN.17.t
-	desc = hee_DAN.17.d
+	id = fee_DAN.17
+	title = fee_DAN.17.t
+	desc = fee_DAN.17.d
 	picture = LIBERUM_VETO_eventPicture
 
 	fire_only_once = yes
@@ -833,7 +833,7 @@ country_event = {
 			tag = SCA
 		}
 		dynasty = "Struensee"
-		has_country_modifier = hee_denmark_struensee
+		has_country_modifier = fee_denmark_struensee
 	}
 
 	mean_time_to_happen = {
@@ -841,9 +841,9 @@ country_event = {
 	}
 
 	option = {
-		name = hee_DAN.17.a
+		name = fee_DAN.17.a
 		add_country_modifier = {
-			name = hee_struensee_aristocracy
+			name = fee_struensee_aristocracy
 			duration = -1
 		}
 	}
@@ -851,9 +851,9 @@ country_event = {
 
 #Struensee reins in state funding and abolishes bribery
 country_event = {
-	id = hee_DAN.18
-	title = hee_DAN.18.t
-	desc = hee_DAN.18.d
+	id = fee_DAN.18
+	title = fee_DAN.18.t
+	desc = fee_DAN.18.d
 	picture = OVEREXTENSION_eventPicture
 
 	fire_only_once = yes
@@ -864,7 +864,7 @@ country_event = {
 			tag = SCA
 		}
 		dynasty = "Struensee"
-		has_country_modifier = hee_denmark_struensee
+		has_country_modifier = fee_denmark_struensee
 	}
 
 	mean_time_to_happen = {
@@ -872,9 +872,9 @@ country_event = {
 	}
 
 	option = {
-		name = hee_DAN.18.a
+		name = fee_DAN.18.a
 		add_country_modifier = {	
-			name = hee_struensee_funding
+			name = fee_struensee_funding
 			duration = -1
 		}
 	}
@@ -882,9 +882,9 @@ country_event = {
 
 #Struensee reorganizes the army
 country_event = {
-	id = hee_DAN.19
-	title = hee_DAN.19.t
-	desc = hee_DAN.19.d
+	id = fee_DAN.19
+	title = fee_DAN.19.t
+	desc = fee_DAN.19.d
 	picture = ECONOMY_eventPicture
 
 	fire_only_once = yes
@@ -895,7 +895,7 @@ country_event = {
 			tag = SCA
 		}
 		dynasty = "Struensee"
-		has_country_modifier = hee_denmark_struensee
+		has_country_modifier = fee_denmark_struensee
 	}
 
 	mean_time_to_happen = {
@@ -903,9 +903,9 @@ country_event = {
 	}
 
 	option = {
-		name = hee_DAN.19.a
+		name = fee_DAN.19.a
 		add_country_modifier = {
-			name = hee_struensee_army
+			name = fee_struensee_army
 			duration = -1
 		}
 	}
@@ -913,9 +913,9 @@ country_event = {
 
 #Struensee reforms universities and hospitals
 country_event = {
-	id = hee_DAN.20
-	title = hee_DAN.20.t
-	desc = hee_DAN.20.d
+	id = fee_DAN.20
+	title = fee_DAN.20.t
+	desc = fee_DAN.20.d
 	picture = UNIVERSITY_eventPicture
 
 	fire_only_once = yes
@@ -926,7 +926,7 @@ country_event = {
 			tag = SCA
 		}
 		dynasty = "Struensee"
-		has_country_modifier = hee_denmark_struensee
+		has_country_modifier = fee_denmark_struensee
 	}
 
 	mean_time_to_happen = {
@@ -934,9 +934,9 @@ country_event = {
 	}
 
 	option = {
-		name = hee_DAN.20.a
+		name = fee_DAN.20.a
 		add_country_modifier = {
-			name = hee_struensee_public
+			name = fee_struensee_public
 			duration = -1
 		}
 	}
@@ -944,9 +944,9 @@ country_event = {
 
 #Struensee and the Queen
 country_event = {
-	id = hee_DAN.21
-	title = hee_DAN.21.t
-	desc = hee_DAN.21.d
+	id = fee_DAN.21
+	title = fee_DAN.21.t
+	desc = fee_DAN.21.d
 	picture = THEATRE_eventPicture
 
 	fire_only_once = yes
@@ -957,7 +957,7 @@ country_event = {
 			tag = SCA
 		}
 		dynasty = "Struensee"
-		has_country_modifier = hee_denmark_struensee
+		has_country_modifier = fee_denmark_struensee
 	}
 
 	mean_time_to_happen = {
@@ -965,7 +965,7 @@ country_event = {
 	}
 
 	option = {
-		name = hee_DAN.21.a
+		name = fee_DAN.21.a
 		add_prestige = -15
 		add_legitimacy = -5
 	}
@@ -973,9 +973,9 @@ country_event = {
 
 #Freedom of the Press
 country_event = {
-	id = hee_DAN.22
-	title = hee_DAN.22.t
-	desc = hee_DAN.22.d
+	id = fee_DAN.22
+	title = fee_DAN.22.t
+	desc = fee_DAN.22.d
 	picture = COURT_eventPicture
 
 	trigger = {
@@ -984,7 +984,7 @@ country_event = {
 			tag = SCA
 		}
 		dynasty = "Struensee"
-		has_country_modifier = hee_denmark_struensee
+		has_country_modifier = fee_denmark_struensee
 	}
 
 	mean_time_to_happen = {
@@ -992,10 +992,10 @@ country_event = {
 	}
 
 	option = {
-		name = hee_DAN.22.a
+		name = fee_DAN.22.a
 		add_adm_power = 10
 		add_country_modifier = {
-			name = hee_DAN_freedom_press
+			name = fee_DAN_freedom_press
 			duration = -1
 		}
 	}
@@ -1003,9 +1003,9 @@ country_event = {
 
 #Plot against Struensee
 country_event = {
-	id = hee_DAN.23
-	title = hee_DAN.23.t
-	desc = hee_DAN.23.d
+	id = fee_DAN.23
+	title = fee_DAN.23.t
+	desc = fee_DAN.23.d
 	picture = ANGRY_MOB_eventPicture
 
 	fire_only_once = yes
@@ -1016,9 +1016,9 @@ country_event = {
 			tag = SCA
 		}
 		dynasty = "Struensee"
-		has_country_modifier = hee_denmark_struensee
+		has_country_modifier = fee_denmark_struensee
 		had_ruler_flag = {
-			flag = hee_struensee_timer days = 300
+			flag = fee_struensee_timer days = 300
 		}
 	}
 
@@ -1027,28 +1027,28 @@ country_event = {
 		modifier = {
 			factor = 0.3
 			had_ruler_flag = {
-				flag = hee_struensee_timer days = 700
+				flag = fee_struensee_timer days = 700
 			}
 		}
 	}
 
 	immediate = {
 		hidden_effect = {
-			remove_country_modifier = hee_denmark_struensee
-			remove_country_modifier = hee_DAN_freedom_press
-			remove_country_modifier = hee_struensee_public
-			remove_country_modifier = hee_struensee_army
-			remove_country_modifier = hee_struensee_funding
-			remove_country_modifier = hee_struensee_aristocracy
-			remove_country_modifier = hee_struensee_corvee
-			remove_country_modifier = hee_struensee_nobles
-			remove_country_modifier = hee_struensee_norway
+			remove_country_modifier = fee_denmark_struensee
+			remove_country_modifier = fee_DAN_freedom_press
+			remove_country_modifier = fee_struensee_public
+			remove_country_modifier = fee_struensee_army
+			remove_country_modifier = fee_struensee_funding
+			remove_country_modifier = fee_struensee_aristocracy
+			remove_country_modifier = fee_struensee_corvee
+			remove_country_modifier = fee_struensee_nobles
+			remove_country_modifier = fee_struensee_norway
 			every_country = {
 				limit = {
 					marriage_with = DAN
 				}
 				add_country_modifier = {
-					name = hee_DAN_marriage
+					name = fee_DAN_marriage
 					duration = 3650
 					hidden = yes
 				}
@@ -1057,21 +1057,21 @@ country_event = {
 	}
 
 	option = {
-		name = hee_DAN.23.a
+		name = fee_DAN.23.a
 		ai_chance = {
 			factor = 70
 		}
 		kill_ruler = yes
 	}
 	option = {
-		name = hee_DAN.23.b
+		name = fee_DAN.23.b
 		ai_chance = {
 			factor = 5
 		}
 		every_country = {
 			limit = {
 				is_subject = no
-				has_country_modifier = hee_DAN_marriage
+				has_country_modifier = fee_DAN_marriage
 			}
 			add_casus_belli = {	
 				target = DAN
@@ -1106,7 +1106,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = hee_DAN.23.c
+		name = fee_DAN.23.c
 		ai_chance = {
 			factor = 25
 		}

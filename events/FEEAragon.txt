@@ -2,13 +2,13 @@
 
 #Special thanks to Huecha for concept and design on these!
 
-namespace = hee_ARA
+namespace = fee_ARA
 
 #The Assassination of Pedro de Arbués
 country_event = {
-	id = hee_ARA.1
-	title = hee_ARA.1.t
-	desc = hee_ARA.1.d 
+	id = fee_ARA.1
+	title = fee_ARA.1.t
+	desc = fee_ARA.1.d 
 	picture = ASSASSINATION_eventPicture
 	
 	fire_only_once = yes
@@ -39,7 +39,7 @@ country_event = {
 	}
 	
 	option = {
-		name = hee_ARA.1.a 
+		name = fee_ARA.1.a 
 		ai_chance = {
 			factor = 90
 		}
@@ -59,29 +59,29 @@ country_event = {
 		add_papal_influence = 10
 		214 = {
 			add_province_modifier = {
-				name = hee_arbues_saint_province
+				name = fee_arbues_saint_province
 				duration = 7300
 			}
 		}
 		2990 = {
 			add_province_modifier = {
-				name = hee_arbues_saint_province
+				name = fee_arbues_saint_province
 				duration = 7300
 			}
 		}
 		211 = {
 			add_province_modifier = {
-				name = hee_arbues_saint_province
+				name = fee_arbues_saint_province
 				duration = 7300
 			}
 		}
 		add_country_modifier = {
-			name = hee_arbues_saint
+			name = fee_arbues_saint
 			duration = 10950
 		}
 	}
 	option = {
-		name = hee_ARA.1.b
+		name = fee_ARA.1.b
 		ai_chance = {
 			factor = 10
 		}
@@ -101,24 +101,24 @@ country_event = {
 		add_papal_influence = -10
 		214 = {
 			add_province_modifier = {
-				name = hee_arbues_no_province
+				name = fee_arbues_no_province
 				duration = 7300
 			}
 		}
 		2990 = {
 			add_province_modifier = {
-				name = hee_arbues_no_province
+				name = fee_arbues_no_province
 				duration = 7300
 			}
 		}
 		211 = {
 			add_province_modifier = {
-				name = hee_arbues_no_province
+				name = fee_arbues_no_province
 				duration = 7300
 			}
 		}
 		add_country_modifier = {
-			name = hee_arbues_no
+			name = fee_arbues_no
 			duration = 10950
 		}
 	}
@@ -126,9 +126,9 @@ country_event = {
 
 #The War in Ribagorza
 country_event = {
-	id = hee_ARA.2
-	title = hee_ARA.2.t
-	desc = hee_ARA.2.d
+	id = fee_ARA.2
+	title = fee_ARA.2.t
+	desc = fee_ARA.2.d
 	picture = ANGRY_MOB_eventPicture
 	
 	fire_only_once = yes
@@ -155,7 +155,7 @@ country_event = {
 	}
 	
 	option = {
-		name = hee_ARA.2.a
+		name = fee_ARA.2.a
 		211 = {
 			noble_rebels = 2
 			add_local_autonomy = -50
@@ -165,7 +165,7 @@ country_event = {
 	}
 	
 	option = {
-		name = hee_ARA.2.b
+		name = fee_ARA.2.b
 		211 = {
 			spawn_rebels = {
 				type = anti_tax_rebels
@@ -179,9 +179,9 @@ country_event = {
 
 #Alteraciones de Aragón for a united Spain
 country_event = {
-	id = hee_ARA.3
-	title = hee_ARA.3.t
-	desc = hee_ARA.3.d 
+	id = fee_ARA.3
+	title = fee_ARA.3.t
+	desc = fee_ARA.3.d 
 	picture = ASSASSINATION_eventPicture
 	
 	fire_only_once = yes
@@ -199,7 +199,7 @@ country_event = {
 		is_at_war = no
 		NOT = {
 			ARA = {
-				has_country_modifier = hee_alteraciones_check
+				has_country_modifier = fee_alteraciones_check
 			}
 		}
 	}
@@ -212,7 +212,7 @@ country_event = {
 		hidden_effect = {
 			ARA = {
 				add_country_modifier = {
-					name = hee_alteraciones_check
+					name = fee_alteraciones_check
 					duration = -1
 					hidden = yes
 				}
@@ -221,7 +221,7 @@ country_event = {
 	}
 	
 	option = {
-		name = hee_ARA.3.a
+		name = fee_ARA.3.a
 		214 = {
 			spawn_rebels = {
 				type = anti_tax_rebels
@@ -232,7 +232,7 @@ country_event = {
 		add_mil_power = 25
 	}
 	option = {
-		name = hee_ARA.3.b
+		name = fee_ARA.3.b
 		add_stability = 1
 		214 = {
 			add_local_autonomy = 25
@@ -248,9 +248,9 @@ country_event = {
 
 #Alteraciones event for Castile
 country_event = {
-	id = hee_ARA.4
-	title = hee_ARA.4.t
-	desc = hee_ARA.4.d 
+	id = fee_ARA.4
+	title = fee_ARA.4.t
+	desc = fee_ARA.4.d 
 	picture = ASSASSINATION_eventPicture	
 
 	fire_only_once = yes
@@ -272,7 +272,7 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			add_country_modifier = {
-				name = hee_alteraciones_check
+				name = fee_alteraciones_check
 				duration = -1
 				hidden = yes
 			}
@@ -280,7 +280,7 @@ country_event = {
 	}
 	
 	option = {
-		name = hee_ARA.4.a
+		name = fee_ARA.4.a
 		ai_chance = {
 			factor = 80
 		}
@@ -291,14 +291,14 @@ country_event = {
 		add_adm_power = 25
 		ARA = {
 			country_event = {
-				id = hee_ARA.5 
+				id = fee_ARA.5 
 				days = 10
 			}
 		}
 	}
 	
 	option = {
-		name = hee_ARA.4.b
+		name = fee_ARA.4.b
 		ai_chance = {
 			factor = 25
 		}
@@ -309,15 +309,15 @@ country_event = {
 
 #Alteraciones event for Aragon
 country_event = {	
-	id = hee_ARA.5
-	title = hee_ARA.5.t
-	desc = hee_ARA.5.d 
+	id = fee_ARA.5
+	title = fee_ARA.5.t
+	desc = fee_ARA.5.d 
 	picture = ASSASSINATION_eventPicture
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = hee_ARA.5.a
+		name = fee_ARA.5.a
 		add_stability = 1
 		214 = {
 			spawn_rebels = {
@@ -327,7 +327,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = hee_ARA.5.b
+		name = fee_ARA.5.b
 		add_prestige = 15
 		add_adm_power = 50
 		add_dip_power = 50
@@ -350,9 +350,9 @@ country_event = {
 #The Miracle of Our Lady of the Pillar
 
 country_event = {
-	id = hee_ARA.6
-	title = hee_ARA.6.t
-	desc = hee_ARA.6.d
+	id = fee_ARA.6
+	title = fee_ARA.6.t
+	desc = fee_ARA.6.d
 	picture = RELIGIOUS_CONVERSION_eventPicture
 	
 	fire_only_once = yes
@@ -376,11 +376,11 @@ country_event = {
 	}
 	
 	option = {
-		name = hee_ARA.6.a
+		name = fee_ARA.6.a
 		add_prestige = 10
 		add_papal_influence = 15
 		add_country_modifier = {
-			name = hee_pillar_miracle
+			name = fee_pillar_miracle
 			duration = 10650
 		}
 	}
@@ -388,9 +388,9 @@ country_event = {
 
 #Construct the Imperial Canal of Aragón
 country_event = {
-	id = hee_ARA.7
-	title = hee_ARA.7.t 
-	desc = hee_ARA.7.d 
+	id = fee_ARA.7
+	title = fee_ARA.7.t 
+	desc = fee_ARA.7.d 
 	picture = INVENTION_eventPicture
 	
 	fire_only_once = yes
@@ -420,7 +420,7 @@ country_event = {
 	}
 	
 	option = {
-		name = hee_ARA.7.a
+		name = fee_ARA.7.a
 		ai_chance = {
 			factor = 90
 			modifier = {
@@ -436,13 +436,13 @@ country_event = {
 		}
 		add_treasury = -150
 		add_country_modifier = {
-			name = hee_building_imperial_canal
+			name = fee_building_imperial_canal
 			duration = -1
 			hidden = yes
 		}
 	}
 	option = {
-		name = hee_ARA.7.b
+		name = fee_ARA.7.b
 		ai_chance = {
 			factor = 10
 		}
@@ -453,72 +453,72 @@ country_event = {
 
 #Canal finished
 country_event = {
-	id = hee_ARA.8
-	title = hee_ARA.8.t 
-	desc = hee_ARA.8.d 
+	id = fee_ARA.8
+	title = fee_ARA.8.t 
+	desc = fee_ARA.8.d 
 	picture = HARBOUR_eventPicture
 	
 	trigger = {
-		has_country_modifier = hee_building_imperial_canal
-		has_country_modifier = hee_channel_step_four
+		has_country_modifier = fee_building_imperial_canal
+		has_country_modifier = fee_channel_step_four
 	}
 	
 	mean_time_to_happen = {
 		months = 24
 		modifier = {
 			factor = 1.2
-			has_country_modifier = hee_channel_slow_one
+			has_country_modifier = fee_channel_slow_one
 		}
 		modifier = {
 			factor = 1.1
-			has_country_modifier = hee_channel_slow_two
+			has_country_modifier = fee_channel_slow_two
 		}
 		modifier = {
 			factor = 1.1
-			has_country_modifier = hee_channel_slow_three
+			has_country_modifier = fee_channel_slow_three
 		}
 		modifier = {
 			factor = 1.1
-			has_country_modifier = hee_channel_slow_four
+			has_country_modifier = fee_channel_slow_four
 		}
 		modifier = {
 			factor = 2
-			has_country_modifier = hee_channel_major_delay
+			has_country_modifier = fee_channel_major_delay
 		}
 	}
 	
 	immediate = {
 		hidden_effect = {
-			remove_country_modifier = hee_building_imperial_canal
-			remove_country_modifier = hee_channel_step_one
-			remove_country_modifier = hee_channel_step_two
-			remove_country_modifier = hee_channel_step_three
-			remove_country_modifier = hee_channel_step_four
-			remove_country_modifier = hee_channel_step_five
-			remove_country_modifier = hee_channel_slow_one
-			remove_country_modifier = hee_channel_slow_two
-			remove_country_modifier = hee_channel_slow_three
-			remove_country_modifier = hee_channel_slow_four
-			remove_country_modifier = hee_channel_major_delay
+			remove_country_modifier = fee_building_imperial_canal
+			remove_country_modifier = fee_channel_step_one
+			remove_country_modifier = fee_channel_step_two
+			remove_country_modifier = fee_channel_step_three
+			remove_country_modifier = fee_channel_step_four
+			remove_country_modifier = fee_channel_step_five
+			remove_country_modifier = fee_channel_slow_one
+			remove_country_modifier = fee_channel_slow_two
+			remove_country_modifier = fee_channel_slow_three
+			remove_country_modifier = fee_channel_slow_four
+			remove_country_modifier = fee_channel_major_delay
 		}
 	}
 	
 	option = {
-		name = hee_ARA.8.a
+		name = fee_ARA.8.a
 		add_prestige = 10
 		add_country_modifier = {
-			name = hee_imperial_canal
+			name = fee_imperial_canal
 			duration = -1
 		}
 		214 = {
 			add_province_modifier = {
-				name = hee_imperial_canal_province
+				name = fee_imperial_canal_province
 				duration = -1
 			}
 		}
 		210 = {
 			add_province_modifier = {
-				name = hee_imperial_canal_province
+				name = fee_imperial_canal_province
 				duration = -1
 			}
 		}
@@ -527,9 +527,9 @@ country_event = {
 
 #Citadel of Jaca
 country_event = {
-	id = hee_ARA.9
-	title = hee_ARA.9.t
-	desc = hee_ARA.9.d
+	id = fee_ARA.9
+	title = fee_ARA.9.t
+	desc = fee_ARA.9.d
 	picture = FORT_eventPicture
 	
 	fire_only_once = yes
@@ -560,15 +560,15 @@ country_event = {
 	}
 	
 	option = {
-		name = hee_ARA.9.a
+		name = fee_ARA.9.a
 		add_prestige = -5
 	}
 	option = {
-		name = hee_ARA.9.b
+		name = fee_ARA.9.b
 		add_treasury = -50
 		211 = {
 			add_province_modifier = {
-				name = hee_ciudadela_jaca
+				name = fee_ciudadela_jaca
 				duration = -1
 			}
 			add_base_manpower = 1
@@ -580,9 +580,9 @@ country_event = {
 #Foreign Viceroy
 
 country_event = {
-	id = hee_ARA.10
-	title = hee_ARA.10.t
-	desc = hee_ARA.10.d
+	id = fee_ARA.10
+	title = fee_ARA.10.t
+	desc = fee_ARA.10.d
 	picture = BAD_WITH_MONARCH_eventPicture
 	
 	fire_only_once = yes
@@ -612,22 +612,22 @@ country_event = {
 	}
 	
 	option = {
-		name = hee_ARA.10.a
+		name = fee_ARA.10.a
 		214 = {
 			add_province_modifier = {
-				name = hee_foreign_viceroy_province
+				name = fee_foreign_viceroy_province
 				duration = 7300
 			}
 		}
 		211 = {
 			add_province_modifier = {
-				name = hee_foreign_viceroy_province
+				name = fee_foreign_viceroy_province
 				duration = 7300
 			}
 		}
 		2990 = {
 			add_province_modifier = {
-				name = hee_foreign_viceroy_province
+				name = fee_foreign_viceroy_province
 				duration = 7300
 			}
 		}
@@ -635,7 +635,7 @@ country_event = {
 	}
 	
 	option = {
-		name = hee_ARA.10.b
+		name = fee_ARA.10.b
 		214 = {
 			add_local_autonomy = 50
 		}
@@ -651,9 +651,9 @@ country_event = {
 
 #Jeronimo Zurita
 country_event = {
-	id = hee_ARA.11
-	title = hee_ARA.11.t
-	desc = hee_ARA.11.d
+	id = fee_ARA.11
+	title = fee_ARA.11.t
+	desc = fee_ARA.11.d
 	picture = ADVISOR_eventPicture
 
 	fire_only_once = yes
@@ -686,7 +686,7 @@ country_event = {
 	}
 	
 	option = {
-		name = hee_ARA.11.a
+		name = fee_ARA.11.a
 		define_advisor = {
 			type = philosopher
 			name = "Jeronima Zurita"
@@ -695,16 +695,16 @@ country_event = {
 		}
 	}
 	option = {
-		name = hee_ARA.11.b
+		name = fee_ARA.11.b
 		add_adm_power = 100
 	}
 }
 
 #Miguel Servet
 country_event = {
-	id = hee_ARA.12
-	title = hee_ARA.12.t
-	desc = hee_ARA.12.d
+	id = fee_ARA.12
+	title = fee_ARA.12.t
+	desc = fee_ARA.12.d
 	picture = ADVISOR_eventPicture
 
 	fire_only_once = yes
@@ -732,7 +732,7 @@ country_event = {
 	}
 	
 	option = {
-		name = hee_ARA.12.a
+		name = fee_ARA.12.a
 		ai_chance = {
 			factor = 25
 			modifier = {
@@ -748,12 +748,12 @@ country_event = {
 			discount = yes
 		}
 		add_country_modifier = {
-			name = hee_acceptance
+			name = fee_acceptance
 			duration = 3650
 		}
 	}
 	option = {
-		name = hee_ARA.12.b
+		name = fee_ARA.12.b
 		ai_chance = {
 			factor = 75
 		}
@@ -765,7 +765,7 @@ country_event = {
 				religion = reformed
 			}
 			province_event = {
-				id = hee_ARA.13 days = 30 random = 10
+				id = fee_ARA.13 days = 30 random = 10
 			}
 		}
 	}
@@ -773,15 +773,15 @@ country_event = {
 
 #The Trial of Michael Servetus
 province_event = {
-	id = hee_ARA.13
-	title = hee_ARA.13.t
-	desc = hee_ARA.13.d
+	id = fee_ARA.13
+	title = fee_ARA.13.t
+	desc = fee_ARA.13.d
 	picture = DEBATE_REPUBLICAN_eventPicture
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = hee_ARA.13.a
+		name = fee_ARA.13.a
 		owner = {
 			add_stability = 1
 			add_fervor = 25
@@ -789,7 +789,7 @@ province_event = {
 		}
 	}
 	option = {
-		name = hee_ARA.13.b
+		name = fee_ARA.13.b
 		owner = {
 			define_advisor = {
 				type = philosopher
@@ -798,7 +798,7 @@ province_event = {
 				discount = yes
 			}
 			add_country_modifier = {
-				name = hee_acceptance
+				name = fee_acceptance
 				duration = 3650
 			}
 		}
@@ -807,9 +807,9 @@ province_event = {
 
 #Balthazar Gracian
 country_event = {
-	id = hee_ARA.14
-	title = hee_ARA.14.t
-	desc = hee_ARA.14.d
+	id = fee_ARA.14
+	title = fee_ARA.14.t
+	desc = fee_ARA.14.d
 	picture = ADVISOR_eventPicture
 
 	fire_only_once = yes
@@ -835,7 +835,7 @@ country_event = {
 	}
 	
 	option = {
-		name = hee_ARA.14.a
+		name = fee_ARA.14.a
 		define_advisor = {
 			type = philosopher
 			skill = 2
@@ -845,7 +845,7 @@ country_event = {
 		add_prestige = 10
 	}
 	option = {
-		name = hee_ARA.14.b
+		name = fee_ARA.14.b
 		add_stability = 1
 		add_prestige = 10
 	}
@@ -853,9 +853,9 @@ country_event = {
 
 #Siege of Zaragoza
 country_event = {
-	id = hee_ARA.15
-	title = hee_ARA.15.t
-	desc = hee_ARA.15.d
+	id = fee_ARA.15
+	title = fee_ARA.15.t
+	desc = fee_ARA.15.d
 	picture = COUNTRY_COLLAPSE_eventPicture
 
 	trigger = {
@@ -891,7 +891,7 @@ country_event = {
 	}
 
 	option = {
-		name = hee_ARA.15.a
+		name = fee_ARA.15.a
 		trigger = {
 			214 = {
 				fort_level = 2
@@ -899,13 +899,13 @@ country_event = {
 		}
 		214 = {
 			add_province_modifier = {
-				name = hee_defend_zaragoza
+				name = fee_defend_zaragoza
 				duration = -1
 			}
 		}
 	}
 	option = {
-		name = hee_ARA.15.b
+		name = fee_ARA.15.b
 		trigger = {
 			NOT = {
 				214 = {
@@ -921,7 +921,7 @@ country_event = {
 				fort_level = 2
 			}
 			add_province_modifier = {
-				name = hee_defend_zaragoza
+				name = fee_defend_zaragoza
 				duration = -1
 			}
 		}
@@ -931,17 +931,17 @@ country_event = {
 
 #Imperial Channel events
 country_event = {
-	id = hee_ARA.16
-	title = hee_ARA.16.t
-	desc = hee_ARA.16.d
+	id = fee_ARA.16
+	title = fee_ARA.16.t
+	desc = fee_ARA.16.d
 	picture = ELECTION_REPUBLICAN_eventPicture
 	
 	fire_only_once = yes
 	
 	trigger = {
-		has_country_modifier = hee_building_imperial_canal
+		has_country_modifier = fee_building_imperial_canal
 		NOT = {
-			has_country_modifier = hee_imperial_canal_event_timer
+			has_country_modifier = fee_imperial_canal_event_timer
 		}
 	}
 	
@@ -952,12 +952,12 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			add_country_modifier = {
-				name = hee_imperial_canal_event_timer
+				name = fee_imperial_canal_event_timer
 				duration = 365
 				hidden = yes
 			}
 			add_country_modifier = {
-				name = hee_channel_step_one
+				name = fee_channel_step_one
 				duration = -1
 				hidden = yes
 			}
@@ -965,36 +965,36 @@ country_event = {
 	}
 	
 	option = {
-		name = hee_ARA.16.a
+		name = fee_ARA.16.a
 		add_years_of_income = -0.2
 		add_prestige = 5
 	}
 	
 	option = {
-		name = hee_ARA.16.b
+		name = fee_ARA.16.b
 		add_adm_power = -10
 		add_country_modifier = {
-				name = hee_channel_slow_one
+				name = fee_channel_slow_one
 				duration = -1
 				hidden = yes
 		}
-		custom_tooltip = hee_ARA.16.tt
+		custom_tooltip = fee_ARA.16.tt
 	}
 }
 
 country_event = {
-	id = hee_ARA.17
-	title = hee_ARA.17.t
-	desc = hee_ARA.17.d
+	id = fee_ARA.17
+	title = fee_ARA.17.t
+	desc = fee_ARA.17.d
 	picture = ECONOMY_eventPicture
 	
 	fire_only_once = yes
 	
 	trigger = {
-		has_country_modifier = hee_building_imperial_canal
-		has_country_modifier = hee_channel_step_one
+		has_country_modifier = fee_building_imperial_canal
+		has_country_modifier = fee_channel_step_one
 		NOT = {
-			has_country_modifier = hee_imperial_canal_event_timer
+			has_country_modifier = fee_imperial_canal_event_timer
 		}
 	}
 	
@@ -1002,19 +1002,19 @@ country_event = {
 		months = 18
 		modifier = {
 			factor = 1.2
-			has_country_modifier = hee_channel_slow_one
+			has_country_modifier = fee_channel_slow_one
 		}
 	}
 	
 	immediate = {
 		hidden_effect = {
 			add_country_modifier = {
-				name = hee_imperial_canal_event_timer
+				name = fee_imperial_canal_event_timer
 				duration = 365
 				hidden = yes
 			}
 			add_country_modifier = {
-				name = hee_channel_step_two
+				name = fee_channel_step_two
 				duration = -1
 				hidden = yes
 			}
@@ -1022,10 +1022,10 @@ country_event = {
 	}
 	
 	option = {
-		name = hee_ARA.17.a
+		name = fee_ARA.17.a
 		hidden_effect = {
 			add_country_modifier = {
-				name = hee_pignatelli
+				name = fee_pignatelli
 				duration = -1
 				hidden = yes
 			}
@@ -1040,31 +1040,31 @@ country_event = {
 	}
 	
 	option = {
-		name = hee_ARA.17.b
+		name = fee_ARA.17.b
 			add_country_modifier = {
-				name = hee_channel_slow_two
+				name = fee_channel_slow_two
 				duration = -1
 				hidden = yes
 			}
 		add_adm_power = 20
-		custom_tooltip = hee_ARA.16.tt
+		custom_tooltip = fee_ARA.16.tt
 	}
 }
 
 country_event = {
-	id = hee_ARA.18
-	title = hee_ARA.18.t
-	desc = hee_ARA.18.d
+	id = fee_ARA.18
+	title = fee_ARA.18.t
+	desc = fee_ARA.18.d
 	picture = FARMING_eventPicture
 	
 	fire_only_once = yes
 	
 	trigger = {
-		has_country_modifier = hee_building_imperial_canal
-		has_country_modifier = hee_channel_step_two
-		has_country_modifier = hee_pignatelli
+		has_country_modifier = fee_building_imperial_canal
+		has_country_modifier = fee_channel_step_two
+		has_country_modifier = fee_pignatelli
 		NOT = {
-			has_country_modifier = hee_imperial_canal_event_timer
+			has_country_modifier = fee_imperial_canal_event_timer
 		}
 	}
 	
@@ -1074,45 +1074,45 @@ country_event = {
 	
 	immediate = {
 			add_country_modifier = {
-				name = hee_imperial_canal_event_timer
+				name = fee_imperial_canal_event_timer
 				duration = 365
 				hidden = yes
 			}
 	}
 	
 	option = {
-		name = hee_ARA.18.a
+		name = fee_ARA.18.a
 		add_papal_influence = -15
 		214 = {
 			add_base_tax = 1
 		}
 	}
 	option = {
-		name = hee_ARA.18.b
+		name = fee_ARA.18.b
 		add_papal_influence = 15
 			add_country_modifier = {
-				name = hee_channel_slow_three
+				name = fee_channel_slow_three
 				duration = -1
 				hidden = yes
 			}
-		custom_tooltip = hee_ARA.16.tt
+		custom_tooltip = fee_ARA.16.tt
 	}
 }
 
 
 country_event = {
-	id = hee_ARA.19
-	title = hee_ARA.19.t
-	desc = hee_ARA.19.d
+	id = fee_ARA.19
+	title = fee_ARA.19.t
+	desc = fee_ARA.19.d
 	picture = HARBOUR_eventPicture
 	
 	fire_only_once = yes
 	
 	trigger = {
-		has_country_modifier = hee_building_imperial_canal
-		has_country_modifier = hee_channel_step_two
+		has_country_modifier = fee_building_imperial_canal
+		has_country_modifier = fee_channel_step_two
 		NOT = {
-			has_country_modifier = hee_imperial_canal_event_timer
+			has_country_modifier = fee_imperial_canal_event_timer
 		}
 	}
 	
@@ -1122,48 +1122,48 @@ country_event = {
 	
 	immediate = {
 			add_country_modifier = {
-				name = hee_imperial_canal_event_timer
+				name = fee_imperial_canal_event_timer
 				duration = 365
 				hidden = yes
 			}
 			add_country_modifier = {
-				name = hee_channel_step_four
+				name = fee_channel_step_four
 				duration = -1
 				hidden = yes
 			}
 	}
 	
 	option = {
-		name = hee_ARA.19.a
+		name = fee_ARA.19.a
 		add_years_of_income = -0.5
 	}
 	
 	option = {
-		name = hee_ARA.19.b
+		name = fee_ARA.19.b
 		add_years_of_income = -0.2
 
 			add_country_modifier = {
-				name = hee_channel_slow_four
+				name = fee_channel_slow_four
 				duration = -1
 				hidden = yes
 			}
 
-		custom_tooltip = hee_ARA.16.tt
+		custom_tooltip = fee_ARA.16.tt
 	}
 	
 	option = {
-		name = hee_ARA.19.c
+		name = fee_ARA.19.c
 		add_adm_power = -10
 		add_country_modifier = {
-				name = hee_channel_slow_four
+				name = fee_channel_slow_four
 				duration = -1
 				hidden = yes
 			}
 		add_country_modifier = {
-				name = hee_channel_major_delay
+				name = fee_channel_major_delay
 				duration = -1
 				hidden = yes
 			}
-		custom_tooltip = hee_ARA.19.tt
+		custom_tooltip = fee_ARA.19.tt
 	}
 }
