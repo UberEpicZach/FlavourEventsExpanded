@@ -15,7 +15,7 @@ country_event = {
         tag = BUR
         is_at_war = no
 		stability = 3
-		burgundy_area = {}
+		burgundy_area = {
 			type = all
 		owned_by = ROOT
 		}
