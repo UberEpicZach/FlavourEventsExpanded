@@ -9,7 +9,7 @@ country_event = {
 	id = heir_education.1
 	title = heir_education.1.t
 	desc = heir_education.1.d
-	picture = HEIR_EDUCATION_eventPicture
+	picture = PIETY_eventPicture
 	
 	trigger = {
 		has_heir = yes
