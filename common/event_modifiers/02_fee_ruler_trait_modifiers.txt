@@ -87,10 +87,10 @@ fee_ruler_trait_slothful = {
 
 fee_ruler_trait_wroth = {
     diplomatic_reputation = -2
-    mil_tech_cost_modifier = -0.05
     global_spy_defence = -0.10
     global_unrest = 1
     discipline = 0.03
+    mil_tech_cost_modifier = -0.05
 }
 
 fee_ruler_trait_envious = {

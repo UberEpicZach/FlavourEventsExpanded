@@ -5,7 +5,7 @@ country_event = {
 	id = FEE_Advisor_Event.1
 	title = FEE_Advisor_Event.EVTNAME1
 	desc = FEE_Advisor_Event.EVTDESC1
-	picture = NEW_HEIR_eventPicture
+	picture = CITY_VIEW_eventPicture
 
 	trigger = {
 		OR = {
@@ -495,7 +495,7 @@ country_event = {
 	id = FEE_Advisor_Event.10
 	title = FEE_Advisor_Event.EVTNAME10
 	desc = FEE_Advisor_Event.EVTDESC10
-	picture = NEW_HEIR_eventPicture
+	picture = CITY_VIEW_eventPicture
 
 	trigger = {
 		OR = {
@@ -529,7 +529,7 @@ country_event = {
 	id = FEE_Advisor_Event.11
 	title = FEE_Advisor_Event.EVTNAME11
 	desc = FEE_Advisor_Event.EVTDESC11
-	picture = NEW_HEIR_eventPicture
+	picture = CITY_VIEW_eventPicture
 
 	is_triggered_only = yes
 
@@ -567,7 +567,7 @@ country_event = {
 	id = FEE_Advisor_Event.12
 	title = FEE_Advisor_Event.EVTNAME12
 	desc = FEE_Advisor_Event.EVTDESC12
-	picture = NEW_HEIR_eventPicture
+	picture = CITY_VIEW_eventPicture
 
 	is_triggered_only = yes
 
@@ -617,7 +617,7 @@ country_event = {
 	id = FEE_Advisor_Event.13
 	title = FEE_Advisor_Event.EVTNAME13
 	desc = FEE_Advisor_Event.EVTDESC13
-	picture = NEW_HEIR_eventPicture
+	picture = CITY_VIEW_eventPicture
 
 	is_triggered_only = yes
 
