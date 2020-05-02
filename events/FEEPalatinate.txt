@@ -529,6 +529,7 @@ country_event = {
 				religion = reformed
 			}
 			kill_ruler = yes
+			change_religion = catholic
 		}
 		capital_scope = {
 			spawn_rebels = {
