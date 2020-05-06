@@ -650,7 +650,12 @@ country_event = {
 			name = pal_winter_blitzkrieg
 			duration = 1825
 		}
-		add_ruler_personality = bold_fighter_personality
+		if = {
+			limit = {
+				has_dlc = "Rights of Man"
+			}
+			add_ruler_personality = bold_fighter_personality
+		}		
 		267 = {
 			add_province_modifier = {
 				name = pal_palatine_collaboration
