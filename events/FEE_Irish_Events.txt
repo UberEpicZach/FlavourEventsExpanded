@@ -250,6 +250,10 @@ country_event = {
 				who = ROOT
 				modifier = irish_dutch_support
 			}
+			reverse_add_opinion = {
+				who = ROOT
+				modifier = irish_dutch_support
+			}
 		}
 	}
 	option = {
@@ -281,6 +285,10 @@ country_event = {
 				}
 			}
 			add_opinion = {
+				who = ROOT
+				modifier = irish_iberian_support
+			}
+			reverse_add_opinion = {
 				who = ROOT
 				modifier = irish_iberian_support
 			}

@@ -1,0 +1,65 @@
+iberia_irmandinos_justified = {
+	infantry_power = 0.10
+}
+iberia_spanish_cortes = {
+	global_unrest = -2
+	max_absolutism = -30
+}
+iberia_autonomous_regions = {
+	local_autonomy = 0.30
+	local_unrest = -2
+}
+iberia_restricted_autonomy = {
+	local_autonomy = 0.10
+	local_manpower_modifier = 0.20
+	local_unrest = -1
+}
+iberia_abolished_local_privileges = {
+	local_autonomy = -0.10
+	local_manpower_modifier = 0.20
+	local_tax_modifier = 0.20
+	local_unrest = 3
+}
+iberia_autonomy_curalied = {
+	yearly_absolutism = 1
+	global_tax_modifier = 0.10
+	harsh_treatment_cost = -0.33
+}
+iberia_fueros_enforced = {
+	min_local_autonomy = 0.30
+	local_manpower_modifier = 0.40
+	local_sailors_modifier = 0.40
+}
+iberia_fueros_ignored = {
+	min_local_autonomy = -20
+	local_unrest = 2
+}
+iberia_centralised_rule = {
+	autonomy_change_time = -0.25
+	stability_cost_modifier = -0.20
+}
+iberia_institutions_respected = {
+	province_trade_power_modifier = 0.30
+	min_local_autonomy = 0.25
+	local_unrest = -2
+}
+iberia_institutions_modified = {
+	min_local_autonomy = 0.15
+}
+iberia_institutions_abolished = {
+	local_tax_modifier = 0.25
+	local_manpower_modifier = 0.25
+	local_unrest = 2
+}
+iberia_catalonian_constitution = {
+	local_unrest = -4
+	min_local_autonomy = 0.40
+}
+iberia_constitution_concessions = {
+	stability_cost_modifier = 0.25
+	max_absolutism = -30
+}
+iberia_segadores = {
+	land_morale = 0.15
+	land_forcelimit_modifier = 0.25
+}

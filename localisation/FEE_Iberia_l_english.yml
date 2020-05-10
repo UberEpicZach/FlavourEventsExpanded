@@ -1,0 +1,64 @@
+﻿l_english:
+ #Events
+ FEE_Iberia_Events.1.T: "The Irmandiño Revolts"
+ FEE_Iberia_Events.1.D: "As the Spanish kingdoms focused on the southwards reconquest of Iberia against the Moors, the traditional northern heartland regions often became neglected. \nGalicia in particular became a hotbed of instability during the latter half of the 15th century, as noble and clerical power were evenly divided in the region, and the poor weather of the Little Ice Age hit Galicia’s temperate climate especially hard. As the nobles and clergy squabbled for power, the peasants, lower nobility and merchants were increasingly oppressed, including outright banditry from the nobles and extortion from the priests. \nNow, the Galicians can stand it no longer. At first gathering in secret, the Irmandiños (brotherhood) have now armed the people, who have now risen up in revolt against their oppressors! Targeting the nobility in particular, they have already destroyed dozens of castles, and the nobility have now come to both us and the king of Portugal, desperate for our aid."
+ FEE_Iberia_Events.1.OPT1: "Crush them! Ensure that this never happens again!"
+ FEE_Iberia_Events.1.OPT2: "Attempt to negotiate the conflict"
+ FEE_Iberia_Events.1.OPT3: "The Irmandiños have a point! Curtail these criminal nobles!"
+
+ FEE_Iberia_Events.2.T: "Pedro Madruga"
+ FEE_Iberia_Events.2.D: "While not of one of the major noble families of Galicia, and even rumored to be a bastard, Pedro Madruga was a peerless example of the best of medieval knighthood in Galicia. While courteous, even-tempered, and polite, he was also a fierce warrior and became exceptionally skilled in all areas of warfare. Travelling between Castile and Portugal only facilitated his study of different and advanced battle techniques, both on land and at sea. \nDespite all this, he would never have become known were it not for the Irmandiños Revolts. He personally led the victorious royal and noble troops to victory, and was the first to introduce the early modern arquebus to northern Iberia, a factor which no doubt was vital to his victory."
+ FEE_Iberia_Events.2.OPT1: "Invite him to our court! Only the best for the flower of our knighthood"
+ FEE_Iberia_Events.2.OPT2: "He must lead our armies!"
+ FEE_Iberia_Events.2.OPT3: "We are in need of leaders for our fleet"
+
+ FEE_Iberia_Events.3.T: "The Autonomous Regions"
+ FEE_Iberia_Events.3.D: "The question of the various constituent kingdoms of our realm has always been a nagging one for the Catholic monarchs of Iberia. The very fact that many of them were recognized by Popes past as kingdoms in their own right has been a source of contention, as nobility and peasant alike have felt unrepresented in our court, causing widespread resentment. \nWith the Reconquista complete, now is the time to reorganize these outlying regions. [Root.Consort.GetName] has recently come up with the idea of a national Cortes where each region has their own representation. [Root.Monarch.GetName], however, desiring increased power in these regions, would prefer a viceroyalty. This would allow some local rule while still maintaining a dependence on the crown. However, this likely would not satisfy the regions. Most radical of all would be either withdrawing royal authority or attempting to assert total control."
+ FEE_Iberia_Events.3.OPT1: "Establish a National Cortes!"
+ FEE_Iberia_Events.3.OPT2: "Appoint Viceroys to these regions"
+ FEE_Iberia_Events.3.OPT3: "These people are more trouble than they are worth – let the local nobles deal with them"
+ FEE_Iberia_Events.3.OPT3: "Am I not the monarch? Curtail these impudent provinces!"
+
+ FEE_Iberia_Events.4.T: "Fate of the Fueros"
+ FEE_Iberia_Events.4.D: "With the Basque people finally fully integrated into our realm, the question of how best to manage their affairs remains to be settled. Being one of the oldest and most proud kingdoms of Christian Iberia, the former kingdom of Navarra stubbornly guarded its ancient institutions. \nAmong those was the Fueros, the royal charter of Navarra which not only gave Navarra kingdom rank but granted considerable autonomy to its nobles and guaranteed rights to its peasants. Now, representatives of these parties have approached us, requesting that we continue to respect these rights. In exchange, they promise their fullest support for us in other internal and external affairs."
+ FEE_Iberia_Events.4.OPT1: "What’s good for them is good for us"
+ FEE_Iberia_Events.4.OPT2: "It’s time for them to recognize who’s really in control here"
+
+ FEE_Iberia_Events.5.T: "The Institutions of Catalonia"
+ FEE_Iberia_Events.5.D: "From it’s very beginning as a march of the Carolingian Empire, Catalonia has diverged from the rest of Iberia in maintaining its unique laws and customs, some derived from Salic law, and some even from pre-Roman times. Over time, these customs were codified in the Usatges and later in the four great institutions of Catalonia. These were: the Consell de Cent, Las Corts Generals, the Consulat del Mar, and the Generalitat de Catalunya, representing the nobility, lawyers, traders, and the general estates, respectively. \nThese institutions have been maintained even under the dominion of the crown of Aragon, and now the Catalonians petition us to continue their rights as well."
+ FEE_Iberia_Events.5.OPT1: "Preserve the Institutions"
+ FEE_Iberia_Events.5.OPT2: "Make minimum concessions, but make it clear we mean business"
+ FEE_Iberia_Events.5.OPT3: "Who do these peasants think they are? Our subjects, that’s what!""
+
+ FEE_Iberia_Events.6.T: "The Catalonian Revolts"
+ FEE_Iberia_Events.6.D: "As Spanish monarchs take steps to promote their rule as absolute monarchs over the whole of Iberia, one region in particular has not forgotten their ancient rights and privileges; in fact, many there still believe that those privileges are theirs by right. The Institutions of Catalonia have become a rallying standard for the preservation of rights in the face of royal absolutism. \nEven more infuriating to the Catalonians is the increasingly outward focus of the Spanish crown, with quests for the new world and domination of Europe leaving their Mediterranean-focused and trade-dependent cities behind. Now, the Catalonians are demanding their ancient rights be encoded in an inviolable Constitution, a thing heretofore unheard of in the Iberian kingdoms. \nIf we do not act quickly, this simmering resentment might boil into outright revolt. Groups of militia known as “El Segadores” have already been gathering arms and rousing the populace with fiery invectives against our \"tyranny\""
+ FEE_Iberia_Events.6.OPT1: "Concede to the Constitutionalists"
+ FEE_Iberia_Events.6.OPT2: "The Catalonians have interfered with the state for long enough! Crush them!"
+
+ FEE_Iberia_Events.7.T: "Catalonia Defies [From.GetAdjective] Oppressors!"
+ FEE_Iberia_Events.7.D: "The Catalan people of Catalonia have had enough of the rule of our hated enemies in §Y[From.GetName]§! and have broken free! Should we ally with this fledgling state to support their independence war?"
+ FEE_Iberia_Events.7.OPT1: "We must show them our support!"
+ FEE_Iberia_Events.7.OPT2: "This is not our war."
+
+ #Modifiers
+ iberia_irmandinos_justified: "Irmandiños Justified"
+ iberia_spanish_cortes: "Spanish Cortes"
+ iberia_autonomous_regions: "Autonomous Regions"
+ iberia_restricted_autonomy: "Restricted Autonomy"
+ iberia_abolished_local_privileges: "Abolished Local Privileges"
+ iberia_autonomy_curalied: "Autonomy Curtailed"
+ iberia_fueros_enforced: "Fueros Enforced"
+ iberia_centralised_rule: "Centralized Rule enforced"
+ iberia_institutions_respected: "Institutions Respected"
+ iberia_institutions_modified: "Institutions Modified"
+ iberia_institutions_abolished: "Institutions Abolished"
+ iberia_segadores: "Segadores"
+
+ #Estate Modifiers
+ iberia_irmandinos_nobles_curtail: "Curtailed the Nobles"
+ iberia_autonomous_regions_nobles: "Autonomous Region"
+ iberia_nobles_decision: "Letting the Nobles Decide"
+ iberia_catalonia_influence: "Catalonia Institution Abolished"
+
+ #Tooltip
+ CAT_SPAWN_ARMIES: "§Y[CAT.GetName]§! will gain §Y20 Infantry§!, §Y6 Artillery§! and §Y10 Galleys§! in its capital"
