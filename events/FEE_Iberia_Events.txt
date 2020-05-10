@@ -479,7 +479,7 @@ country_event = {
 	id = FEE_Iberia_Events.4
 	title = FEE_Iberia_Events.4.T
 	desc = FEE_Iberia_Events.4.D
-	picture = ANGRY_MOB_eventPicture
+	picture = CONQUEST_eventPicture
 
 	fire_only_once = yes
 
@@ -545,7 +545,7 @@ country_event = {
 	id = FEE_Iberia_Events.5
 	title = FEE_Iberia_Events.5.T
 	desc = FEE_Iberia_Events.5.D
-	picture = ADVISOR_eventPicture
+	picture = LIBERUM_VETO_eventPicture
 
 	fire_only_once = yes
 
@@ -664,7 +664,7 @@ country_event = {
 	id = FEE_Iberia_Events.6
 	title = FEE_Iberia_Events.6.T
 	desc = FEE_Iberia_Events.6.D
-	picture = ANGRY_MOB_eventPicture
+	picture = REVOLUTION_eventPicture
 
 	fire_only_once = yes
 
@@ -885,5 +885,151 @@ country_event = {
 		}
 
 		add_prestige = -10		
+	}
+}
+
+#The Great Earthquake of 1755
+country_event = {
+	id = FEE_Iberia_Events.8
+	title = FEE_Iberia_Events.8.T
+	desc = FEE_Iberia_Events.8.D
+	picture = COUNTRY_COLLAPSE_eventPicture
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	trigger = {
+		is_year = 1755
+		NOT = { is_year = 1760 }
+		owns = 227
+	}
+
+	option = {
+		name = FEE_Iberia_Events.8.OPT.1
+
+		ai_chance = {
+			factor = 33
+		}
+
+		227 = {
+			add_base_tax = -2
+			add_base_production = -2
+			add_base_manpower = -2
+			add_devastation = 100
+		}
+		add_stability = -1
+
+		country_event = {
+			id = FEE_Iberia_Events.9
+		}
+	}
+
+	option = {
+		name = FEE_Iberia_Events.8.OPT.2
+
+		ai_chance = {
+			factor = 33
+		}
+
+		227 = {
+			add_base_manpower = -3
+			add_devastation = 60
+		}
+		add_stability = 1
+		add_years_of_income = -2
+		add_dip_power = -75
+
+		add_ruler_modifier = {
+			name = iberia_ministerial_power
+		}
+
+		country_event = {
+			id = FEE_Iberia_Events.9
+		}
+	}
+
+	option = {
+		name = FEE_Iberia_Events.8.OPT.3
+
+		ai_chance = {
+			factor = 33
+		}
+
+		227 = {
+			add_base_tax = -1
+			add_base_production = -1
+			add_base_manpower = -1
+			add_devastation = 75
+			add_province_modifier = {
+				name = iberia_oppressive_government
+				duration = 3650
+			}
+		}
+		add_war_exhaustion = 4
+		add_mil_power = -125
+
+		add_country_modifier = {
+			name = iberia_order_restored
+			duration = 3650
+		}
+		if = {
+			limit = {
+				has_estate = estate_nobles
+			}
+			add_estate_loyalty_modifier = {
+				estate = estate_nobles
+				desc = iberia_order_restored
+				loyalty = 5
+				duration = 3650
+			}
+		}
+
+		country_event = {
+			id = FEE_Iberia_Events.9
+		}
+	}
+}
+
+#Foundations of Seismology
+country_event = {
+	id = FEE_Iberia_Events.9
+	title = FEE_Iberia_Events.9.T
+	desc = FEE_Iberia_Events.9.D
+	picture = ENLIGHTENMENT_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Iberia_Events.9.OPT.1
+
+		ai_chance = {
+			factor = 100
+		}
+
+		if = {
+			limit = {
+				has_dlc = "Rule Britannia"
+			}
+			change_innovativeness = 3
+			add_country_modifier = {
+				name = iberia_seismological_studies_innovativeness
+				duration = 9125
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = iberia_seismological_studies_no_innovativeness
+				duration = 9125
+			}
+		}
+
+		define_advisor = {
+			type = natural_scientist
+			skill = 2
+			cost_multiplier = 0.50
+		}
 	}
 }

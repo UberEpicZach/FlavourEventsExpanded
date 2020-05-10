@@ -40,6 +40,16 @@
  FEE_Iberia_Events.7.OPT1: "We must show them our support!"
  FEE_Iberia_Events.7.OPT2: "This is not our war."
 
+ FEE_Iberia_Events.8.T: "The Great Earthquake of 1755"
+ FEE_Iberia_Events.8.D: "[227.GetName] is in ruins! On All Saints’ Day 1755, one of the most powerful earthquakes ever recorded struck just 200 kilometers off the coast of Portugal, rocking the nation completely. Portugal was typically earthquake-prone, [227.GetName] in particular having been severely damaged before in prior disasters. This earthquake proved to be like no other though, the death toll estimated to be about 40,000 and the great capital of Portugal destroyed, through earthquake, tsunami or fire. The earthquake itself was reported to have created crevices 5 metres wide in the city centre. Many retreated to the open spaces of the docks, to see the sea retreat to display a barren, muddy plain. Roughly an hour after the earthquake, a colossal tsunami ripped through [227.GetName] up the River Tejo, destroying all in its path. The shaking and shockwaves from the earthquake and its subsequent tsunami knocked over all varieties of candle and set the city ablaze, turning the already ruined city into a firestorm. \nBy the time the disaster was over, 85% of [227.GetName] was destroyed and countless works of art, literature, architecture and history were lost. King Joseph I and his court were, by sheer luck, out of [227.GetName] due to his daughter’s wish to spend All Saints’ Day away from the capital. King Joseph himself developed claustrophobia due to the tragedy, and was terrified of living within walls for the rest of his life, instead opting to move the court to a mass of tents on the outskirts of [227.GetName]. The prime minister, the Marquis of Pombal used this to gain power, leveraging the earthquake to take control of the royal court, and establish himself as the primary political figure in Portugal through his handling of the disaster."
+ FEE_Iberia_Events.8.OPT.1: "[227.GetName] shall be ruins forever more."
+ FEE_Iberia_Events.8.OPT.2: "Bury the Dead and heal the Living!"
+ FEE_Iberia_Events.8.OPT.3: "Restore order by any means necessary!"
+
+ FEE_Iberia_Events.9.T: "Foundations of Seismology"
+ FEE_Iberia_Events.9.D: "The destruction of [227.GetName] was a great tragedy, but life goes on. We learn from our mistakes and better ourselves and thus we must learn from this too. There is a great deal of material to study here. Let us create a new school of the sciences, dedicated to studying these earthquakes."
+ FEE_Iberia_Events.9.OPT.1: "Knowledge can always be gained from suffering. In future we may stop such great losses."
+
  #Modifiers
  iberia_irmandinos_justified: "Irmandiños Justified"
  iberia_spanish_cortes: "Spanish Cortes"
@@ -53,6 +63,11 @@
  iberia_institutions_modified: "Institutions Modified"
  iberia_institutions_abolished: "Institutions Abolished"
  iberia_segadores: "Segadores"
+ iberia_ministerial_power: "Ministerial Power"
+ iberia_oppressive_government: "Oppressive Government"
+ iberia_order_restored: "Order Restored"
+ iberia_seismological_studies_innovativeness: "Seismological Studies"
+ iberia_seismological_studies_no_innovativeness: "Seismological Studies"
 
  #Estate Modifiers
  iberia_irmandinos_nobles_curtail: "Curtailed the Nobles"

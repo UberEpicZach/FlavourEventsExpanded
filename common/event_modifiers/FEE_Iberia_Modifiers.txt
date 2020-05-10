@@ -63,3 +63,31 @@ iberia_segadores = {
 	land_morale = 0.15
 	land_forcelimit_modifier = 0.25
 }
+iberia_ministerial_power = {
+	stability_cost_modifier = 0.20
+	prestige = -1
+}
+iberia_oppressive_government = {
+	local_unrest = 10
+	local_tax_modifier = -0.50
+	local_production_efficiency = -0.25
+	local_manpower_modifier = -0.25
+	province_trade_power_value = -0.80
+}
+iberia_order_restored = {
+	harsh_treatment_cost = -0.15
+	global_unrest = -1
+}
+iberia_seismological_studies_innovativeness = {
+	dip_tech_cost_modifier = -0.05
+	adm_tech_cost_modifier = -0.05
+	war_exhaustion_cost = -0.20
+	movement_speed = 0.05
+}
+iberia_seismological_studies_no_innovativeness = {
+	dip_tech_cost_modifier = -0.05
+	adm_tech_cost_modifier = -0.05
+	war_exhaustion_cost = -0.20
+	movement_speed = 0.05
+	idea_cost = -0.03
+}
