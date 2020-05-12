@@ -5,4 +5,4 @@ tags={
         "Historical"
 }
 name="FlavourEventsExpanded"
-supported_version="1.29.4"
+supported_version="1.29.*.*"
