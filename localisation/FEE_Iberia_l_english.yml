@@ -50,6 +50,67 @@
  FEE_Iberia_Events.9.D: "The destruction of [227.GetName] was a great tragedy, but life goes on. We learn from our mistakes and better ourselves and thus we must learn from this too. There is a great deal of material to study here. Let us create a new school of the sciences, dedicated to studying these earthquakes."
  FEE_Iberia_Events.9.OPT.1: "Knowledge can always be gained from suffering. In future we may stop such great losses."
 
+ FEE_Iberia_Events.10.T: "Jimenez de Cisneros"
+ FEE_Iberia_Events.10.D: "Initially starting as a humble Franciscan friar, Francisco Jimenez de Cisneros was thrown in prison for his disagreements with the archbishop of Toledo (who is no stranger to meddling in our own affairs as well!). Upon his release, Jimenez devoted his life to reforming the church, gaining such a reputation for holiness that he became archbishop himself, as well as personal confessor of Isabella de Castilla and cardinal. \nConvoking long-overdue synods, Jimenez rooted out most, if not all, clerical corruption in Spain. Beyond this, however, he sponsored schools for the laity, oversaw the flooding of Castilian markets with translated devotional texts, and spread a new school of mystical through in clergy and laity alike. Essentially, his reforms were almost single-handedly responsible for reviving the piety of the Spanish people, purging corruption, and making Spain into the devout Catholic bastion of the early modern world, unlike any other in the world."
+ FEE_Iberia_Events.10.OPT.1: "Embrace these Reforms!"
+ FEE_Iberia_Events.10.OPT.2: "Let us show moderation"
+ FEE_Iberia_Events.10.OPT.3: "Reforms? Pah! Everything is fine!"
+
+ FEE_Iberia_Events.11.T: "University of Alcala"
+ FEE_Iberia_Events.11.D: "The brainchild of Jimenez de Cisneros, a new university at Alcala was opened to produce the best educated clergy in the world, and became known especially for its studies of Biblical languages and skill at translating them. In addition, it harmonized Renaissance humanist ideas with solid Catholic dogma in a way no other clerical school did. During the Reformation years, it would grow to become a powerhouse of the Catholic Counter-Reformation, sending trained priests to hold back reformers in Ireland, France, and Italy as well as producing many missionaries for Spain’s overseas territories."
+ FEE_Iberia_Events.11.OPT.1: "We will provide whatever this school needs!"
+ FEE_Iberia_Events.11.OPT.2: "The church should be helping our treasury, not the other way around!"
+
+ FEE_Iberia_Events.12.T: "On the Donation of Constantine"
+ FEE_Iberia_Events.12.D: "Since at least the 8th century, the Catholic Popes have made repeated reference to the \“Donation of Constantine\” said to be an imperial decree of the ancient Emperor Constantine himself, giving the Pope political authority over Western Rome as well as spiritual power. \nIndeed, it is this very claim to authority under the doctrine of Translatio Imperii that provides legitimacy for the Holy Roman Empire itself! \nThe legitimacy of the Donation has been questioned since the 11th century for various reasons. Now, however, a philological scholar in our own court has completed a years-long analysis of what is said to be the source document for this sweeping claim to power. By pointing out linguistic inconsistencies, he makes a convincing proof that the document is, in fact, a reprehensible forgery. Indeed, the scholar, named Lorenzo Valla, claims the forgery is so obvious that even the current Pope must be complicit to use it so brazenly. \nMaking this known to the world, however, given the great importance that the Donation has assumed, would make a lot of enemies, and risks undermining the church itself! At the same time, it could shore up our own claims in Italy… \nPredictably, the Inquisition has demanded we turn Valla over to be tried for heresy. How shall we proceed?"
+ FEE_Iberia_Events.12.OPT.1: "Even the Pope cannot partake in lies!"
+ FEE_Iberia_Events.12.OPT.2: "We can afford to compromise here"
+ FEE_Iberia_Events.12.OPT.3: "Hand over this charlatan to the Inquisition! The holy father must remain supreme!"
+
+ FEE_Iberia_Events.13.T: "Juan de Avila"
+ FEE_Iberia_Events.13.D: "Building on the reforms of Jimenez de Cisneros, priest Juan de Avila became a staunch advocate for the reform of the clergy, almost forseeing the religious turmoil to come due to clergy corruption. Selling his entire inherited wealth to benefit the poor as an example, he undertook a remarkable journey as an itinerant preacher through Andalusia, ministering to the poor and railing against clergy abuses, especially the practice of nobility of setting up their children in a comfortable lifestyle as priests. Understandably them, his preaching of revival (recogimiento) led to resentment among some powerful families. \nNow, certain noble families have captured him and dragged him before the Royal Inquisition, demanding he recant and be silenced."
+ FEE_Iberia_Events.13.OPT.1: "He only speaks the truth! Give him a position here to make his call nationwide!"
+ FEE_Iberia_Events.13.OPT.2: "Let him go free and continue his pilgrimage"
+ FEE_Iberia_Events.13.OPT.3: "He is guilty of heresy for questioning the church!"
+
+ FEE_Iberia_Events.14.T: "Reforming the Benedictine Order"
+ FEE_Iberia_Events.14.D: "The oldest of all the monastic orders, the Benedictines have thrived throughout Europe, but especially in Spain. The independence of individual monasteries historically set them apart from their competitors and fostered a more austere and purer lifestyle, but it has also introduced disunity and confusion in their ranks. \nNow, as we confront the reformation, it is imperative that we assist these holy men in reaffirming their original vows and make the Order into a worthy example for our own more official holy orders."
+ FEE_Iberia_Events.14.OPT.1: "Sponsor the Benedictines!"
+ FEE_Iberia_Events.14.OPT.2: "They can take responsibility for themselves"
+
+
+ .T: ""
+ .D: ""
+ .OPT.1: ""
+ .OPT.2: ""
+
+ .T: ""
+ .D: ""
+ .OPT.1: ""
+ .OPT.2: ""
+
+ .T: ""
+ .D: ""
+ .OPT.1: ""
+ .OPT.2: ""
+
+
+ .T: ""
+ .D: ""
+ .OPT.1: ""
+ .OPT.2: ""
+
+ .T: ""
+ .D: ""
+ .OPT.1: ""
+ .OPT.2: ""
+
+ .T: ""
+ .D: ""
+ .OPT.1: ""
+ .OPT.2: ""
+
+
  #Modifiers
  iberia_irmandinos_justified: "Irmandiños Justified"
  iberia_spanish_cortes: "Spanish Cortes"
@@ -68,12 +129,30 @@
  iberia_order_restored: "Order Restored"
  iberia_seismological_studies_innovativeness: "Seismological Studies"
  iberia_seismological_studies_no_innovativeness: "Seismological Studies"
+ 
+ #Spanish Catholic Modifiers
+ iberia_lay_piety: "Lay Piety"
+ iberia_reforms_rejected: "Reforms Rejected"
+ iberia_school_alcala: "School of Alcala"
+ iberia_papal_fraud_uncovered: "Papal Fraud Uncovered"
+ iberia_reconcilation_pope: "Reconciliation with the Pope"
+ iberia_submission_pope: "Submission to the Pope"
+ iberia_recogimiento: "Recogimiento"
+ iberia_juan_avila: "Juan de Avila"
+ iberia_suppressed_reform: "Suppressed Reform"
 
  #Estate Modifiers
  iberia_irmandinos_nobles_curtail: "Curtailed the Nobles"
  iberia_autonomous_regions_nobles: "Autonomous Region"
  iberia_nobles_decision: "Letting the Nobles Decide"
  iberia_catalonia_influence: "Catalonia Institution Abolished"
+ iberia_university_alcala_accepted: "Alcala Clergy Commissioned"
+ iberia_university_alcala_refused: "Alcala Commissioned"
+ iberia_juan_de_avila_welcomed: "Welcomed the Heretic"
+ iberia_juan_de_avila_freed: "Freed the Heretic"
+
+ #Opinion Modifier
+ iberia_papal_fraud_uncovered: "Papal Fraud Uncovered"
 
  #Tooltip
  CAT_SPAWN_ARMIES: "§Y[CAT.GetName]§! will gain §Y20 Infantry§!, §Y6 Artillery§! and §Y10 Galleys§! in its capital"

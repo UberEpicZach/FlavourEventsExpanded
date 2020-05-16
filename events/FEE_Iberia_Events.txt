@@ -1033,3 +1033,660 @@ country_event = {
 		}
 	}
 }
+
+#Foundations of Seismology
+country_event = {
+	id = FEE_Iberia_Events.10
+	title = FEE_Iberia_Events.10.T
+	desc = FEE_Iberia_Events.10.D
+	picture = ENLIGHTENMENT_eventPicture
+
+	trigger = {
+		culture_group = iberian
+		owns = 217
+		owns = 219
+		NOT = { tag = POR }
+		religion = catholic
+		current_age = age_of_discovery
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 300
+	}
+
+	option = {
+		name = FEE_Iberia_Events.10.OPT.1
+
+		ai_chance = {
+			factor = 33
+			modifier = {
+				factor = 100
+				ai = yes
+			}
+		}
+		add_reform_desire = -2
+		define_advisor = {
+			type = theologian
+			name = "Jimenez de Cisneros"
+			skill = 3
+			culture = castillian
+			religion = catholic
+			cost_multiplier = 0.5
+		}
+		country_event = {
+			id = FEE_Iberia_Events.11
+		}
+		add_corruption = -2
+		add_country_modifier = {
+			name = iberia_lay_piety
+		}
+		if = {
+			limit = {
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = -10
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Iberia_Events.10.OPT.2
+
+		ai_chance = {
+			factor = 33
+		}
+		add_reform_desire = -1
+		add_stability = 1
+		add_corruption = -1
+		if = {
+			limit = {
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = 10
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Iberia_Events.10.OPT.3
+
+		ai_chance = {
+			factor = 33
+		}
+		add_reform_desire = 2
+		add_stability = 1
+		add_corruption = 1		
+		add_country_modifier = {
+			name = iberia_reforms_rejected
+			duration = -1
+		}
+	}
+}
+
+# University of Alcala
+country_event = {
+	id = FEE_Iberia_Events.11
+	title = FEE_Iberia_Events.11.T
+	desc = FEE_Iberia_Events.11.D
+	picture = ENLIGHTENMENT_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Iberia_Events.11.OPT.1
+
+		ai_chance = {
+			factor = 50
+		}
+		add_years_of_income = -0.5
+		if = {
+			limit = {
+				has_dlc = "Rule Britannia"
+			}
+			change_innovativeness = 3
+		}
+		add_country_modifier = {
+			name = iberia_school_alcala
+		}
+		217 = {
+			owner = {
+				if = {
+					limit = {
+						religion = catholi
+					}
+					add_country_modifier = {
+						name = iberia_university_alcala
+						duration = -1
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = 10
+			}
+			add_estate_influence_modifier = {
+				estate = estate_church
+				desc = iberia_university_alcala_accepted
+				influence = 10
+				duration = 5475
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Iberia_Events.11.OPT.2
+
+		ai_chance = {
+			factor = 50
+		}
+		add_years_of_income = 0.5
+		add_prestige = -15
+		if = {
+			limit = {
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = -10
+			}
+			add_estate_influence_modifier = {
+				estate = estate_church
+				desc = iberia_university_alcala_refused
+				influence = -10
+				duration = 5475
+			}
+		}
+	}
+}
+
+# On the Donation of Constantine
+country_event = {
+	id = FEE_Iberia_Events.12
+	title = FEE_Iberia_Events.12.T
+	desc = FEE_Iberia_Events.12.D
+	picture = CHURCH_ESTATE_1_eventPicture
+
+	trigger = {
+		tag = ARA
+		current_age = age_of_discovery
+		religion = catholic
+		is_subject = no
+		num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+			value = 3
+			region = italy_region
+		}
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = {
+		name = FEE_Iberia_Events.12.OPT.1
+
+		ai_chance = {
+			factor = 33
+		}
+		PAP = {
+			add_opinion = {
+				who = ROOT
+				modifier = iberia_papal_fraud_uncovered
+			}
+		}
+		emperor = {
+			add_opinion = {
+				who = ROOT
+				modifier = iberia_papal_fraud_uncovered
+			}
+		}
+		add_reform_desire = 5
+		define_advisor = {
+			type = philosopher
+			name = "Lorenzo Valla"
+			skill = 2
+			culture = umbrian
+			religion = catholic
+			cost_multiplier = 0.5
+		}
+		add_country_modifier = {
+			name = iberia_papal_fraud_uncovered
+			duration = 9125
+		}
+	}
+
+	option = {
+		name = FEE_Iberia_Events.12.OPT.2
+
+		ai_chance = {
+			factor = 33
+		}
+		
+		add_reform_desire = 3
+		add_stability = 1
+		define_advisor = {
+			type = philosopher
+			name = "Lorenzo Valla"
+			skill = 2
+			culture = umbrian
+			religion = catholic
+			cost_multiplier = 0.5
+		}
+		add_country_modifier = {
+			name = iberia_reconcilation_pope
+			duration = 9125
+		}
+	}
+
+	option = {
+		name = FEE_Iberia_Events.12.OPT.3
+
+		ai_chance = {
+			factor = 33
+		}
+		
+		add_reform_desire = -1
+		add_stability = -1
+		add_country_modifier = {
+			name = iberia_submission_pope
+			duration = 9125
+		}
+	}
+}
+
+# Juan de Avila
+country_event = {
+	id = FEE_Iberia_Events.13
+	title = FEE_Iberia_Events.13.T
+	desc = FEE_Iberia_Events.13.D
+	picture = ENLIGHTENMENT_eventPicture
+
+	trigger = {
+		culture_group = iberian
+		religion = catholic
+		lower_andalucia_area = {
+			type = all
+			owned_by = ROOT
+		}
+		upper_andalucia_area = {
+			type = all
+			owned_by = ROOT
+		}
+		owns = 223
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 500
+	}
+
+	option = {
+		name = FEE_Iberia_Events.13.OPT.1
+
+		ai_chance = {
+			factor = 33
+		}
+
+		define_advisor = {
+			type = theologian
+			name = "Juan de Avila"
+			skill = 3
+			culture = andalucian
+			religion = catholic
+			cost_multiplier = 0.25
+		}
+		add_reform_desire = -1
+		add_country_modifier = {
+			name = iberia_recogimiento
+			duration = -1
+		}
+		if = {
+			limit = {
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = -10
+			}
+			add_estate_influence_modifier = {
+				estate = estate_church
+				desc = iberia_juan_de_avila_welcomed
+				influence = -10
+				duration = 5475
+			}
+		}
+		if = {
+			limit = {
+				has_estate = estate_nobles
+			}
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = -10
+			}
+			add_estate_influence_modifier = {
+				estate = estate_nobles
+				desc = iberia_juan_de_avila_welcomed
+				influence = -10
+				duration = 5475
+			}
+		}
+		every_owned_province = {
+			limit = {
+				culture = andalucian
+			}
+			add_province_modifier = {
+				name = iberia_juan_avila
+				duration = 7300
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Iberia_Events.13.OPT.2
+
+		ai_chance = {
+			factor = 33
+		}
+
+		add_stability = 1
+		add_country_modifier = {
+			name = iberia_recogimiento
+			duration = -1
+		}
+		if = {
+			limit = {
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = -10
+			}
+			add_estate_influence_modifier = {
+				estate = estate_church
+				desc = iberia_juan_de_avila_freed
+				influence = -10
+				duration = 5475
+			}
+		}
+		if = {
+			limit = {
+				has_estate = estate_nobles
+			}
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = -10
+			}
+			add_estate_influence_modifier = {
+				estate = estate_nobles
+				desc = iberia_juan_de_avila_freed
+				influence = -10
+				duration = 5475
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Iberia_Events.13.OPT.3
+
+		ai_chance = {
+			factor = 33
+		}
+		
+		add_reform_desire = 1
+		add_country_modifier = {
+			name = iberia_recogimiento
+			duration = -1
+		}
+		if = {
+			limit = {
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = 10
+			}
+		}
+		if = {
+			limit = {
+				has_estate = estate_nobles
+			}
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 10
+			}
+		}
+		every_owned_province = {
+			limit = {
+				culture = andalucian
+			}
+			add_province_modifier = {
+				name = iberia_suppressed_reform
+				duration = 7300
+			}
+		}
+	}
+}
+
+# Reforming the Benedictine Order
+country_event = {
+	id = FEE_Iberia_Events.14
+	title = FEE_Iberia_Events.14.T
+	desc = FEE_Iberia_Events.14.D
+	picture = ENLIGHTENMENT_eventPicture
+
+	trigger = {
+		culture_group = iberian
+		religion = catholic
+		has_dlc = "Golden Century"
+		current_age = age_of_reformation
+		owns = 215
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 240
+	}
+
+	option = {
+		name = FEE_Iberia_Events.14.OPT.1
+
+		ai_chance = {
+			factor = 50
+		}
+
+		add_stability = 1
+		add_years_of_income = -0.5
+		add_country_modifier = {
+			name = iberia_benedictine_reforms
+		}
+	}
+
+	option = {
+		name = FEE_Iberia_Events.14.OPT.2
+
+		ai_chance = {
+			factor = 50
+		}
+		
+		add_prestige = -10
+	}
+}
+
+# 
+country_event = {
+	id = FEE_Iberia_Events.X
+	title = FEE_Iberia_Events.X.T
+	desc = FEE_Iberia_Events.X.D
+	picture = ENLIGHTENMENT_eventPicture
+
+	trigger = {
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = Y
+	}
+
+	option = {
+		name = FEE_Iberia_Events.X.OPT.1
+
+		ai_chance = {
+			factor = 50
+		}
+	}
+
+	option = {
+		name = FEE_Iberia_Events.X.OPT.2
+
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+
+# 
+country_event = {
+	id = FEE_Iberia_Events.X
+	title = FEE_Iberia_Events.X.T
+	desc = FEE_Iberia_Events.X.D
+	picture = ENLIGHTENMENT_eventPicture
+
+	trigger = {
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = Y
+	}
+
+	option = {
+		name = FEE_Iberia_Events.X.OPT.1
+
+		ai_chance = {
+			factor = 50
+		}
+	}
+
+	option = {
+		name = FEE_Iberia_Events.X.OPT.2
+
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+
+# 
+country_event = {
+	id = FEE_Iberia_Events.X
+	title = FEE_Iberia_Events.X.T
+	desc = FEE_Iberia_Events.X.D
+	picture = ENLIGHTENMENT_eventPicture
+
+	trigger = {
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = Y
+	}
+
+	option = {
+		name = FEE_Iberia_Events.X.OPT.1
+
+		ai_chance = {
+			factor = 50
+		}
+	}
+
+	option = {
+		name = FEE_Iberia_Events.X.OPT.2
+
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+
+# 
+country_event = {
+	id = FEE_Iberia_Events.X
+	title = FEE_Iberia_Events.X.T
+	desc = FEE_Iberia_Events.X.D
+	picture = ENLIGHTENMENT_eventPicture
+
+	trigger = {
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = Y
+	}
+
+	option = {
+		name = FEE_Iberia_Events.X.OPT.1
+
+		ai_chance = {
+			factor = 50
+		}
+	}
+
+	option = {
+		name = FEE_Iberia_Events.X.OPT.2
+
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
+
+# 
+country_event = {
+	id = FEE_Iberia_Events.X
+	title = FEE_Iberia_Events.X.T
+	desc = FEE_Iberia_Events.X.D
+	picture = ENLIGHTENMENT_eventPicture
+
+	trigger = {
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = Y
+	}
+
+	option = {
+		name = FEE_Iberia_Events.X.OPT.1
+
+		ai_chance = {
+			factor = 50
+		}
+	}
+
+	option = {
+		name = FEE_Iberia_Events.X.OPT.2
+
+		ai_chance = {
+			factor = 50
+		}
+	}
+}
