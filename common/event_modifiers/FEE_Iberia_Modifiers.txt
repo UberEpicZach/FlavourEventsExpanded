@@ -135,3 +135,39 @@ iberia_benedictine_reforms = {
 	establish_order_cost = -0.50
 	religion = yes
 }
+iberia_strict_franciscans = {
+	global_unrest = -1
+	war_exhaustion = -0.03
+	religion = yes
+}
+iberia_gradual_franciscans_reform = {
+	tolerance_own = 1
+	religion = yes
+}
+iberia_orthodoxy_enforced = {
+	harsh_treatment_cost = -0.33
+}
+iberia_jesuit_education = {
+	global_missionary_strength = 0.01
+	technology_cost = -0.05
+	spy_offence = 0.20
+	religion = yes
+}
+iberia_molinism = {
+	tolerance_own = 1
+	global_unrest = -1
+	stability_cost_modifier = 0.10
+	religion = yes
+}
+iberia_poor_laws = {
+	global_tax_modifier = -0.15
+	global_unrest = -2
+	production_efficiency = 0.10
+}
+iberia_traditional_charity = {
+	tolerance_own = 1
+}
+iberia_poor_laws_church_support = {
+	global_tax_modifier = -0.10
+	global_unrest = -1
+}
