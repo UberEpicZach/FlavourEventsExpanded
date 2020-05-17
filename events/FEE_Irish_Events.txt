@@ -241,8 +241,9 @@ country_event = {
 					any_country = {
 						capital_scope = {
 							region = low_countries_region
-							army_size = PREV
 						}
+						army_size = PREV
+						total_development = PREV
 					}
 				}
 			}
@@ -279,8 +280,8 @@ country_event = {
 					any_country = {
 						capital_scope = {
 							region = iberia_region
-							army_size = PREV
 						}
+						army_size = PREV
 					}
 				}
 			}
@@ -310,8 +311,8 @@ country_event = {
 					any_country = {
 						capital_scope = {
 							region = france_region
-							army_size = PREV
 						}
+						army_size = PREV
 					}
 				}
 			}
