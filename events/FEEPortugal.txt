@@ -88,7 +88,7 @@ country_event = {
 	desc = fee_POR.3.dd
 	picture = SHIP_SAILING_eventPicture
 	
-	global = yes
+	major = yes
 	fire_only_once = yes
 	
 	trigger = {
