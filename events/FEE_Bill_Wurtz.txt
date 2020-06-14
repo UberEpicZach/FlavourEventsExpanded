@@ -1,0 +1,58 @@
+namespace = FEE_BillWurtz
+
+#Ma-ja-pa-hit. Got it
+country_event = {
+	id = FEE_BillWurtz_Events.1
+	title = FEE_BillWurtz_Events.1.t
+	desc = FEE_BillWurtz_Events.1.d
+    picture = ship_sailing
+    
+
+    trigger = {
+		capital_scope = { 
+            continent = europe }
+        exists = MAJ
+		east_java_area = {
+			has_discovered = ROOT
+		}
+		 central_java_area = {
+			has_discovered = ROOT
+		}
+	}
+    mean_time_to_happen = {
+	months = 1
+    }
+    option = {
+        name = FEE_BillWurtz_Events.1.b
+        add_prestige = 10
+	  } 
+	} 
+
+country_event = {
+	id = FEE_BillWurtz_Events.2
+	title = FEE_BillWurtz_Events.2.t
+	desc = FEE_BillWurtz_Events.2.d
+    picture = ship_sailing
+    
+    trigger = {
+		capital_scope = { 
+		region = japan_region
+		root = {
+			any_province = {  
+				has_province_modifier = {nanban_traders_here} 
+				}
+			}
+		}
+	mean_time_to_happen = {
+		months = 1
+		}
+	option = {
+		name = FEE_BillWurtz_Events.2.a
+		IS FUCKING CAPITAL IN
+		region = japan_region
+		add_country_modifier = {
+		name = FEE_NowWithGuns
+			}
+		}
+	}	
+}	
