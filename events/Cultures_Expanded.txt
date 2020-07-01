@@ -943,10 +943,16 @@ country_event = {
 		create_marriage = GLG
 		custom_tooltip = CE_barbara_von_hohenzollern_marriage
 		set_country_flag = CE_barbara_von_hohenzollern_marriage
+		ai_chance = {
+			factor = 1
+		}
 	}
 	option = {
 		name = CE_brandenburg_expanded.1.b
 		add_prestige = 5
+		ai_chance = {
+			factor = 0
+		}
 	}
 }
 
@@ -1062,6 +1068,24 @@ country_event = {
 				NOT = {
 					army_size = BRA
 				}
+			}
+			modifier = {
+				factor = 0.25
+				BRA = {
+					any_ally = {
+						army_size = BOH
+					}
+				}
+			}	
+			modifier = {
+				factor = 0.25
+				NOT = {
+					manpower_percentage = 0.50
+				}
+			}
+			modifier = {
+				factor = 1.25
+				manpower_percentage = 0.9
 			}
 		}
 	}
