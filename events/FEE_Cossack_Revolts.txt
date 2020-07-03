@@ -332,6 +332,7 @@ country_event = {
 	
 	option = {
 		name = "fee_cossack_revolts_1_4a"
+		ai_chance = { factor = 25 }
 		
 		trigger = {
 			NOT = {
@@ -363,6 +364,7 @@ country_event = {
 	
 	option = {
 		name = "fee_cossack_revolts_2_4a"
+		ai_chance = { factor = 25 }
 		
 		trigger = {
 			ruler_has_personality = intricate_web_weaver_personality
@@ -375,6 +377,7 @@ country_event = {
 	
 	option = {
 		name = "fee_cossack_revolts_3_4a"
+		ai_chance = { factor = 25 }
 		
 		trigger = {
 			NOT = {
@@ -392,6 +395,7 @@ country_event = {
 	
 	option = {
 		name = "fee_cossack_revolts_4_4a"
+		ai_chance = { factor = 25 }
 		
 		trigger = {
 			OR = {
@@ -566,12 +570,16 @@ country_event = {
 	picture = BATTLE_eventPicture
 	is_triggered_only = yes
 	
+	immediate = {
+		hidden_effect = {
+			4542 = {
+			change_controller = REB
+			}
+		}
+	}
+	
 	option = {
 		name = "fee_cossack_revolts_1_4da"
-		
-		4542 = {
-			change_controller = REB
-		}
 		
 		# Stiopa's gonna love this.
 		set_country_flag = PLC_nalyvaiko_rebellion_lubnie
@@ -660,24 +668,6 @@ country_event = {
 			limit = {
 				has_country_flag = PLC_kosinski_rebellion
 				has_spawned_rebels = cossack_rebels
-			}
-			
-			random_core_province = {
-				spawn_rebels = {
-					type = cossack_rebels
-					size = 1
-					win = no
-					unrest = 5
-				}
-			}
-			
-			random_core_province = {
-				spawn_rebels = {
-					type = cossack_rebels
-					size = 1
-					win = no
-					unrest = 5
-				}
 			}
 			
 			random_core_province = {
@@ -855,11 +845,7 @@ country_event = {
 	picture = LIBERUM_VETO_eventPicture
 	is_triggered_only = yes
 	
-	option = {
-		name = "fee_cossack_revolts_1_me_3"
-		
-		add_stability = 1
-		
+	after = {
 		280 = {
 			add_devastation = 10
 		}
@@ -898,6 +884,12 @@ country_event = {
 	}
 	
 	option = {
+		name = "fee_cossack_revolts_1_me_3"
+		
+		add_stability = 1
+	}
+	
+	option = {
 		name = "fee_cossack_revolts_2_me_3"
 		
 		trigger = {
@@ -921,42 +913,6 @@ country_event = {
 		}
 		
 		add_stability = 1
-		
-		280 = {
-			add_devastation = 10
-		}
-		
-		4247 = {
-			add_devastation = 10
-		}
-		
-		1942 = {
-			add_devastation = 10
-		}
-		
-		1944 = {
-			add_devastation = 10
-		}
-		
-		2407 = {
-			add_devastation = 10
-		}
-		
-		4542 = {
-			add_devastation = 10
-		}
-		
-		4540 = {
-			add_devastation = 10
-		}
-		
-		1943 = {
-			add_devastation = 10
-		}
-		
-		292 = {
-			add_devastation = 10
-		}
 	}
 }
 
