@@ -123,6 +123,7 @@ country_event = {
 			NOT = { has_province_modifier = CE_vlach_herders }
 		}
 		NOT = { has_country_flag = CE_vlach_herders_denied }
+		always = no
 	}
 	
 	mean_time_to_happen = {
@@ -932,6 +933,16 @@ country_event = {
 	trigger = {
 		tag = BRA
 		is_year = 1472
+		NOT = {
+			OR = {
+				is_in_war = {
+					defenders = BOH
+				}
+				is_in_war = {
+					attackers = BOH
+				}
+			}
+		}
 	}
 
 	mean_time_to_happen = {
@@ -1039,7 +1050,12 @@ country_event = {
 		}
 		ai_chance = {
 			factor = 1
-			
+			modifier = {
+				factor = 100
+				BRA = {
+					DIP = 6
+				}
+			}
 		}
 	}
 	option = {
@@ -1052,7 +1068,7 @@ country_event = {
 			}
 		}
 		ai_chance = {
-			factor = 10
+			factor = 5
 			modifier = {
 				factor = 0
 				any_ally = {
@@ -1131,13 +1147,59 @@ country_event = {
 		custom_tooltip = CE_brandenburger_seizure_of_glogau
 		ai_chance = {
 			factor = 1
+			modifier = {
+				factor = 5
+				BOH = {
+					is_at_war = yes
+				}
+			}
+			modifier = {
+				factor = 0
+				BRA = {
+					is_at_war = yes
+				}
+			}
+			modifier = {
+				factor = 5
+				BRA = {
+					army_size = BOH
+				}
+			}
+			modifier = {
+				factor = 5
+				BRA = {
+					any_ally = {
+						army_size = BOH
+					}
+				}
+			}
 		}
 	}
 	option = {
 		name = CE_brandenburg_expanded.4.b
 		add_prestige = -5
 		ai_chance = {
-			factor = 10
+			factor = 1
+			modifier = {
+				factor = 5
+				BOH = {
+					army_size = BRA
+				}
+			}
+			modifier = {
+				factor = 5
+				BRA = {
+					num_of_loans = 1
+				}
+			}
+			modifier = {
+				factor = 5
+				BRA = {
+					NOT = {
+						manpower_percentage = 0.5
+					}
+				}
+			}
 		}
 	}
 }
@@ -1164,7 +1226,7 @@ country_event = {
 			change_controller = BRA
 		}
 		ai_chance = {
-			factor = 4
+			factor = 2
 			modifier = {
 				factor = 0
 				any_ally = {
@@ -1210,7 +1272,13 @@ country_event = {
 			}
 		}
 		ai_chance = {
-			factor = 2
+			factor = 1
+			modifier = {
+				factor = 100
+				BRA = {
+					DIP = 6
+				}
+			}
 		}
 	}
 }
@@ -1251,7 +1319,7 @@ country_event = {
 	
 	mean_time_to_happen = {
 		days = 3650
-	}
+	
 
 	option = {
 		name = CE_brandenburg_expanded.7.a
@@ -1262,14 +1330,20 @@ country_event = {
 			}
 		}
 		ai_chance = {
-			factor = 1
+			factor = 10
 		}
 	}
 	option = {
 		name = CE_brandenburg_expanded.7.b
 		add_prestige = 5
 		ai_chance = {
-			factor = 0
+			factor = 1
+			modifier = {
+				factor = 100
+				BRA = {
+					DIP = 6
+				}
+			}
 		}
 	}
 }
@@ -1296,7 +1370,13 @@ country_event = {
 			modifier = CE_barbara_marriage
 		}
 		ai_chance = {
-			factor = 0
+			factor = 2
+			modifier = {
+				factor = 0
+				BRA = {
+					is_rival = BOH
+				}
+			}
 		}
 	}
 	option = {
@@ -1317,14 +1397,20 @@ country_event = {
 			days = 365
 		}
 		ai_chance = {
-			factor = 1
+			factor = 10
+			modifier = {
+				factor = 0
+				BRA = {
+					is_rival = BOH
+				}
+			}
 		}
 	}
 	option = {
 		name = CE_brandenburg_expanded.8.c
 		add_prestige = 5
 		ai_chance = {
-			factor = 0
+			factor = 1
 		}
 	}
 }
@@ -1351,13 +1437,30 @@ country_event = {
 		break_marriage = BRA
 		ai_chance = {
 			factor = 1
+			modifier = {
+				factor = 0.5
+				BOH = {
+					has_opinion = {
+						who = BRA
+						value = 100
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				BOH = {
+					any_ally = {
+						tag = BRA
+					}
+				}
+			}
 		}
 	}
 	option = {
 		name = CE_brandenburg_expanded.9.b
 		add_prestige = 5
 		ai_chance = {
-			factor = 0
+			factor = 1
 		}
 	}
 }
@@ -1386,7 +1489,7 @@ country_event = {
 			discount = yes
 		}
 		ai_chance = {
-			factor = 1
+			factor = 2
 		}
 	}
 	option = {
@@ -1397,6 +1500,306 @@ country_event = {
 				casus_belli = cb_liberation
 			}
 		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				BRA = {
+					is_at_war = yes
+				}
+			}
+			modifier = {
+				factor = 0.5
+				NOT = {
+					BRA = {
+						army_size = BOH
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				BOH = {
+					is_at_war = yes
+				}
+			}
+			modifier = {
+				factor = 2
+				BRA = {
+					any_ally = {
+						is_emperor = yes
+					}
+				}
+			}
+		}
+	}
+}
+
+##Election of Magdeburg##
+country_event = {
+	id = CE_brandenburg_expanded.11
+	title = CE_brandenburg_expanded.11.t
+	desc = CE_brandenburg_expanded.11.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BRA
+		dynasty = "von Hohenzollern"
+		is_year = 1513
+		exists = MAG
+		has_country_modifier = bra_dispositio_achillea
+	}
+	
+	mean_time_to_happen = {
+		days = 365
+	}
+	
+	option = {
+		name = CE_brandenburg_expanded.11.a
+		add_years_of_income = -2.0
+		MAG = {
+			define_ruler = {
+				name = "Albert"
+				dynasty = "von Hohenzollern"
+				dip = 2
+				adm = 1
+				age = 23
+			}
+			add_government_reform = dynastic_theocracy_reform
+		}
+		custom_tooltip = CE_Magdeburg_Hohenzollern
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 5
+				NOT = {
+					num_of_loans = 1
+				}
+			}
+			modifier = {
+				factor = 0
+				is_at_war = yes
+			}
+			modifier = {
+				factor = 2
+				DIP = 3
+			}
+			modifier = {
+				factor = 3
+				DIP = 4
+			}
+			modifier = {
+				factor = 100
+				BRA = {
+					DIP = 6
+				}
+			}
+		}
+	}
+	option = {
+		name = CE_brandenburg_expanded.11.b
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = {
+	id = CE_brandenburg_expanded.12
+	title = CE_brandenburg_expanded.12.t
+	desc = CE_brandenburg_expanded.12.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BRA
+		dynasty = "von Hohenzollern"
+		OR = {
+			religion = protestant
+			religion = reformed
+		}
+		MAG = {
+			OR = {
+				religion = protestant
+				religion = reformed
+			}
+			dynasty = "von Hohenzollern"
+		}
+		is_year = 1566
+	}
+	
+	mean_time_to_happen = {
+		days = 365
+	}
+	
+	option = {
+		name = CE_brandenburg_expanded.12.a
+		MAG = {
+			country_event = {
+				id = CE_brandenburg_expanded.13
+				days = 1
+			}
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 100
+				BRA = {
+					DIP = 6
+				}
+			}
+		}
+	}
+	option = {
+		name = CE_brandenburg_expanded.12.b
+		add_church_power = 50
+		add_fervor = 25
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+country_event = {
+	id = CE_brandenburg_expanded.13
+	title = CE_brandenburg_expanded.13.t
+	desc = CE_brandenburg_expanded.13.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = CE_brandenburg_expanded.13.a
+		BRA = {
+			inherit = MAG
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 5
+				MAG = {
+					has_opinion = {
+						who = BRA
+						value = 100
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				BRA = {
+					NOT = {
+						is_at_war = yes
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = CE_brandenburg_expanded.13.b
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+country_event = {
+	id = CE_brandenburg_expanded.14
+	title = CE_brandenburg_expanded.14.t
+	desc = CE_brandenburg_expanded.14.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BRA
+		religion = catholic
+		MAG = {
+			name = "Albert"
+			dynasty = "von Hohenzollern"
+			religion = catholic
+		}
+		is_year = 1514
+	}
+	
+	option = {
+		name = CE_brandenburg_expanded.14.a
+		hidden_effect = {
+			MAI = {
+				country_event = {
+					id = CE_brandenburg_expanded.15
+					days = 1
+				}
+			}
+		}
+		custom_tooltip = CE_albert_rules_mainz
+		add_years_of_income = -1
+		add_ruler_modifier = {
+			name = "CE_son_in_clergy"
+			duration = -1
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 5
+				NOT = {
+					BRA = {
+						num_of_loans = 1
+					}
+				}
+			}
+		}
+	}
+	option = {
+		name = CE_brandenburg_expanded.14.b
+			add_prestige = 5
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				BRA = {
+					num_of_loans = 2
+				}
+			}
+			modifier = {
+				factor = 0
+				BRA = {
+					is_at_war = yes
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = CE_brandenburg_expanded.15
+	title = CE_brandenburg_expanded.15.t
+	desc = CE_brandenburg_expanded.15.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = CE_brandenburg_expanded.15.a
+		define_ruler = {
+			name = "Albert"
+			dynasty = "von Hohenzollern"
+			dip = 2
+			adm = 1
+			age = 24
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = CE_brandenburg_expanded.15.b
+			add_prestige = 5
 		ai_chance = {
 			factor = 0
 		}

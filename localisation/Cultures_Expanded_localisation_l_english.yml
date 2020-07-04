@@ -9,6 +9,11 @@
  CE_taxes_without_diet: "Taxation without Diet"
  CE_captain_general_silesia: "Captain General of Silesia"
  CE_King_Elector_of_Bohemia: "King-Elector of Bohemia"
+ CE_franconian_league: "Franconian League"
+ CE_autonomy_for_nuremberg: "Autonomy for Nuremberg"
+ CE_son_in_clergy: "Family in High Places"
+ CE_iron_and_blood: "Iron and Blood"
+ CE_Wurzburger_Lands: "Bishopric Privilege"
  
  CE_opinion_bid_for_emperor: "Bid for the Emperorship"
  CE_barbara_marriage: "Barbara von Hohenzollern"
@@ -40,6 +45,9 @@
  ME_Hungary_Hungarian_Solution_title: "Hungarian Solution"
  ME_Hungary_Consolidate_Bohemia_title: "The Bohemian Crown"
  ME_Hungary_Silesian_Duchies_title: "Silesian Duchies"
+ 
+ GEY_discipline_1: "Commandant"
+ GEY_discipline_2: "Commandant"
  
  cultures_expanded.1.t: "Transylvanian Saxons"
  cultures_expanded.1.d: "Following the crusades and wars fought over our beloved kingdom, the kings of Hungary have consistently encouraged and granted settlement rights to knights, soldier, and artisans from the Holy Roman Empire to settle in the Southern parts of our nation to support the defence of our nation."
@@ -168,6 +176,110 @@
  CE_brandenburg_expanded.10.a: "Let us provide Barbara with a refuge."
  CE_brandenburg_expanded.10.b: "We will not suffer this theft and dishonor!"
 
+ ##Hohenzollerns of Magdeburg##
+ 
+ CE_brandenburg_expanded.11.t: "Albert of Brandenburg"
+ CE_brandenburg_expanded.11.d: "Following the ascention of his brother to the Electoral seat of Brandenburg, Albert was formally a margrave of Brandenburg, but chose to follow the ecclesiastical path after his studies at the university of Frankfurt. As such when the Archbishop of Magdeburg was a clear goal where he could execute both his divine and familial duties in life. However, when the Archbishop passed away, he had not yet aquired the required age and education for the position. Furthermore, his desired position would hold great influence."
+ CE_brandenburg_expanded.11.a: "Nothing that can't be solved with some money to grease the wheels."
+ CE_brandenburg_expanded.11.b: "You can preach from the local chapel."
+ CE_Magdeburg_Hohenzollern: "It can be very convient to have family in the church."
+ 
+ CE_brandenburg_expanded.12.t: "Prince-Archbishopric of Magdeburg"
+ CE_brandenburg_expanded.12.d: "The reformation is in full swing, and the distinction between ecclesiastical and secular is fading in the protestant realms, and the Margraviate of Brandenburg and the Archbishopric of Magdeburg have grown close over time."
+ CE_brandenburg_expanded.12.a: "Let us ask them to unite our realms"
+ CE_brandenburg_expanded.12.b: "Honor the seperation of church and state."
+ 
+ CE_brandenburg_expanded.13.t: "Union with Brandenburg"
+ CE_brandenburg_expanded.13.d: "Brandenburg asks us to unite with their realm, as we are kinsfolk and brother in faith."
+ CE_brandenburg_expanded.13.a: "Yes"
+ CE_brandenburg_expanded.13.b: "No"
+ 
+ CE_brandenburg_expanded.14.t: "Archbishop's Ambitions"
+ CE_brandenburg_expanded.14.d: "The Archbishop of Magdeburg, our kinsman Albert, has asked if we are willing to support his bid for the Archbishopric of Mainz. As a Bishop, the bishopric of Mainz is the most impressive position of them all."
+ CE_brandenburg_expanded.14.a: "Let us support our kinsman!"
+ CE_brandenburg_expanded.14.b: "Magdeburg is enough."
+ CE_albert_rules_mainz: "Albert von Hohenzollern of Magdeburg will attempt to establish himself in Mainz as well."
+ 
+ CE_brandenburg_expanded.15.t: "Albert of Mainz and Magdeburg"
+ CE_brandenburg_expanded.15.d: "We have been reproached by the archbishop Albert of Magdeburg, requesting to become Bishop of Mainz. Our most influential position as Archbishopric of Mainz is a powerful title, and as such, should not be relinquished so easily.  Additionally, the fast rise of Albert, his dynastic heritage, and his frequent breach of protocol is reason for concern. Should we accept his request, or respectfully decline?."
+ CE_brandenburg_expanded.15.a: "He seems like an able candidate and a good man! Let us accept his request."
+ CE_brandenburg_expanded.15.b: "Get this Charlatan out of Mainz!"
+ 
+ ##Hohenzollerns of Franconia##
+
+ CE_ansbach_expanded.1.t: "The Ambition of Achilles"
+ CE_ansbach_expanded.1.d: "While the Duchy of Franconia has long fallen into disuse, our family still holds significant lands in the area. The Margraviates of Ansbach and Bayreuth have long since enjoyed independence, away from our crown's influence. In order to secure our vested interests in the area and protect its people from foreign invasions, we should secure and press our legitimate claims on the surrounding areas with any means necessary, starting with the city of Nuremberg. Such an act will certainly be viewed as hostile and therefore we should be vigilant when it comes to approaching this delicate matter."
+ CE_ansbach_expanded.1.a: "Let us attempt to reform the duchy!"
+ CE_ansbach_expanded.1.b: "Let the past lie."
+ CE_franconian_ambition: "Try to restore the franconian duchy within your lifetime and be rewarded with glory.\n§YIf we secure 5 Franconian Provinces for the Hohenzollern Dynasty, our claims will be strong enough to claim the title.§!"
+ 
+ CE_ansbach_expanded.2.t: "Little town of wood and cloth"
+ CE_ansbach_expanded.2.d: "Of the many titles once held by our ancestors, one resides in the city of Nuremberg, A prosperous urban center filled with all manner of merchants, noblemen and artisans. This newfound prosperity propelled Nuremberg to a new height of success and profitability. Due to their influence as a centre of Germany, Emperor [Emperor.HRE.Name] saw fit to award them the title of "Free City", placing its walls and citizens under the Empire's protection. Despite these hurdles however, we must decide on whether we will press our claim on the city despite having our previous attempts rebuked, or abandon our plans alltogether and maintain the status quo."
+ CE_ansbach_expanded.2.a: "Implore the emperor to relinquish imperial immediacy."
+ CE_ansbach_expanded.2.b: "Form a League to force Nuremberger Submission!"
+ CE_ansbach_expanded.2.c: "They can remain independent"
+ 
+ CE_ansbach_expanded.3.t: "Margraves of Ansbach"
+ CE_ansbach_expanded.3.d: "The Margraves of Ansbach have requested us to grant them immediacy over the city of Nuremberg to restore the Duchy of Franconia."
+ CE_ansbach_expanded.3.a: "Very Well."
+ CE_ansbach_expanded.3.b: "Thanks for the bribe, but no."
+ 
+ CE_ansbach_expanded.4.t: "Ansbachian Demands"
+ CE_ansbach_expanded.4.d: "The Margraves of Ansbach have long desired our lands, and long have we fought to protect our freedom. It appears they have learned from us and now convinced the Emperor to grant them the overlordship of our lands."
+ CE_ansbach_expanded.4.a: "As the Emperor commands."
+ CE_ansbach_expanded.4.b: "As long as they guarantee our freedom."
+ CE_ansbach_expanded.4.c: "We will never submit to tyrants!"
+ 
+ CE_ansbach_expanded.5.t: "Burgraviate of Nuremberg"
+ CE_ansbach_expanded.5.d: "The City of Nuremberg has submitted to our demands, our ancestral lands are united once more!"
+ CE_ansbach_expanded.5.a: "Praise the Emperor."
+ 
+ CE_ansbach_expanded.6.t: "Nuremberger Insubordinance"
+ CE_ansbach_expanded.6.d: "Despite the demands we have made of Nuremberg and the Emperor's orders, Nuremberg refuses to submit and has demanded heavy concessions in order to agree."
+ CE_ansbach_expanded.6.a: "Convince them to make amends."
+ CE_ansbach_expanded.6.b: "The city is sour anyway."
+ 
+ CE_ansbach_expanded.7.t: "Failed Negotiations"
+ CE_ansbach_expanded.7.d: "Despite the Hohenzollern attempts at diplomacy, we will have to force our will upon nuremberg if we are to get whats ours."
+ CE_ansbach_expanded.7.a: "I guess the diplomatic attempt has failed."
+ 
+ CE_ansbach_expanded.8.t: "Broken Dreams so Grand"
+ CE_ansbach_expanded.8.d: "After a lifetime of war and ambition, our realm will have to do without the ambitious Achilles's guiding hand."
+ CE_ansbach_expanded.8.a: "The Duke may finally rest now."
+ 
+ CE_ansbach_expanded.9.t: "Dux Francorum Orientalium"
+ CE_ansbach_expanded.9.d: "Franconia is united and the ducal title is ours!"
+ CE_ansbach_expanded.9.a: "Our rule through right of conquest shall be cemented on this day!"
+ 
+ CE_ansbach_expanded.10.t: "Men of The Franconian Circle"
+ CE_ansbach_expanded.10.d: "With Nuremberger support, the Hohenzollerns hold great economic and military influence over the rest of the Franconian Circle, and yet we are denied a right we are entitled to; the right to sit at the head of this union. This disgraceful offense against the Hohenzollerns cannot be tolerated!"
+ CE_ansbach_expanded.10.a: "demand wurzburg hand over the ducal title and seat"
+ CE_ansbach_expanded.10.b: "or can it?"
+ 
+ CE_ansbach_expanded.11.t: "The Ducal Title"
+ CE_ansbach_expanded.11.d: "The Hohenzollerns of Ansbach have demanded our royal title and leading position in the Franconian Circle. Their illegitimate claims that they should lead this military alliance solely derives from power and influence. Though it it tempting to completely disregard their outlandish ultimatum, we must take into account their military and economic might."
+ CE_ansbach_expanded.11.a: "It is in our best interests to just submit."
+ CE_ansbach_expanded.11.b: "We will never submit to their insolence!"
+ CE_surrender_of_wurzburg: "This will mean the annexation of our franconian lands by the Ansbachian Hohenzollerns"
+ 
+ CE_ansbach_expanded.12.t: "Demands Refused!"
+ CE_ansbach_expanded.12.d: "The Bishop of Wurzburg has rejected our humble request for the role of head of the Franconian Circle, and has insulted in reprisal. Bearing an insult alone is plenty, but the shame of serving a tyrannical bishop is a burden too large to endure. Summon the banner, rally the men, and invite the captains; it is time to seize what is rightfully ours!"
+ CE_ansbach_expanded.12.a: "They shall suffer and beg for forgiveness."
+ CE_ansbach_expanded.12.b: "Sooner or later they will regret their actions. For now, it is best to wait."
+ 
+ CE_ansbach_expanded.13.t: "The Bishop Submits"
+ CE_ansbach_expanded.13.d: "The Bishop has aquiessed and granted us overlordship over the lands of the franconian circle."
+ CE_ansbach_expanded.13.a: "The foolish old cretin furthers our ambition"
+ 
+ CE_ansbach_expanded.14.t: "The Care of Coburg"
+ CE_ansbach_expanded.14.d: "The city of Coburg was a Franconian fief that was under Brandenburger suzerainty from 1291 - 1312, but  was inherited and later integrated by the von Wettin dynasty in 1372. Thanks to a marriage to a Hohenzollern princess in 1374, our blood has flowed in the veins of the von Wettin dynasty of Thuringia for generations. Although these claims may be farfetched, they are adequate enough for us to press them by force!"
+ CE_ansbach_expanded.14.a: "Press dynastic claims"
+ CE_ansbach_expanded.14.b: "Press Brandenburger claims"
+ CE_ansbach_expanded.14.c: "Nobody would respect them anyway"
+ 
+ 
+ 
+ 
  
  
  
