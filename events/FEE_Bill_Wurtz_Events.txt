@@ -148,3 +148,40 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = FEE_Bill_Wurtz_Events.5
+	title = FEE_Bill_Wurtz_Events.5.tt
+	desc = FEE_Bill_Wurtz_Events.5.dd
+	picture = ship_sailing
+	fire_only_once = yes
+	trigger = {
+		capital_scope = {
+			OR = {
+				region = france_region
+				region = iberia_region
+				region = italy_region
+				region = british_isles_region
+				region = south_german_region
+				region = north_german_region
+				region = scandinavia_region
+				region = low_countries_region
+			}
+		}
+		is_year = 1501
+		AND = {
+			owns_or_non_sovereign_subject_of = 852
+			is_subject = no
+		}
+	}
+	mean_time_to_happen = {
+		months = 24
+	}
+	option = {
+		name = FEE_Bill_Wurtz_Events.5.a
+		add_country_modifier = {
+			name = FEE_Bill_Wurtz_Quest_for_Pillaging
+			duration = 5475
+		}
+	}
+}
