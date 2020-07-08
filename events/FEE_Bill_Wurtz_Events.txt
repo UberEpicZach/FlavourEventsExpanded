@@ -53,7 +53,6 @@ country_event = {
 			has_province_modifier = nanban_port
 		}
 	}
-		
 	mean_time_to_happen = {
 		months = 1
 	}
@@ -70,5 +69,48 @@ country_event = {
 				duration = 10950
 			}
 		}
+	}
+}
+
+country_event = {
+	id = FEE_Bill_Wurtz_Events.3
+	# Event adds reform desire after reformation has probably began
+	# Also doesnt check council of trent - snek
+	title = FEE_Bill_Wurtz_Events.3.tt
+	desc = FEE_Bill_Wurtz_Events.3.dd
+	picture = ship_sailing
+	trigger = {
+		religion = catholic
+		capital_scope = {
+			OR = {
+				region = france_region
+				region = iberia_region
+				region = italy_region
+				region = british_isles_region
+				region = south_german_region
+				region = north_german_region
+				region = scandinavia_region
+				region = low_countries_region
+			}
+		}
+		is_year = 1510
+		NOT = {
+			has_country_flag = bill_wurtz_indulgences
+		}
+	}
+	mean_time_to_happen = {
+		months = 60
+	}
+	option = {
+		name = FEE_Bill_Wurtz_Events.3.a
+		add_treasury = 400
+		set_country_flag = bill_wurtz_indulgences
+		add_reform_desire = 0.03
+	}
+	option = {
+		name = FEE_Bill_Wurtz_Events.3.b
+		add_stability = 1
+		set_country_flag = bill_wurtz_indulgences
+		add_reform_desire = 0.03
 	}
 }
