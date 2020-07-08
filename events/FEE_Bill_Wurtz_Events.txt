@@ -190,7 +190,7 @@ country_event = {
 		add_prestige = 10
 		# a perma increase to furs stacks a bit too much, might to be temporary later
 		change_price = {
-			trade_goods = furs
+			trade_goods = fur
 			key = FEE_Bill_Wurtz_Fur_Modifier
 			value = 0.1
 			duration = -1
@@ -207,7 +207,7 @@ country_event = {
 	trigger = {
 		tag = NED
 		OR = {
-			trade_company_malacca = {
+			trade_company_indonesia = {
 				has_discovered = ROOT
 			}
 			trade_company_moluccas = {
