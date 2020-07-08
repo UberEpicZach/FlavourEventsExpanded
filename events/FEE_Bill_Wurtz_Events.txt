@@ -114,3 +114,37 @@ country_event = {
 		add_reform_desire = 0.03
 	}
 }
+
+country_event = {
+	id = FEE_Bill_Wurtz_Events.4
+	title = FEE_Bill_Wurtz_Events.4.tt
+	desc = FEE_Bill_Wurtz_Events.4.dd
+	picture = ship_sailing
+	trigger = {
+		tag = POR
+		AND = {
+			# coromandel
+			1340 = {
+				has_merchant = ROOT
+			}
+			# malacca
+			1361 = {
+				has_merchant = ROOT
+			}
+			# zanzibar
+			1448 = {
+				has_merchant = ROOT
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = FEE_Bill_Wurtz_Events.4.a
+		add_country_modifier = {
+			name = FEE_Bill_Wurtz_Spice_Trade_Monopoly
+			duration = 10950
+		}
+	}
+}
