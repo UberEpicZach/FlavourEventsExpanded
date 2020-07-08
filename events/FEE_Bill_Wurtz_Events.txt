@@ -197,3 +197,32 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = FEE_Bill_Wurtz_Events.7
+	title = FEE_Bill_Wurtz_Events.7.tt
+	desc = FEE_Bill_Wurtz_Events.7.dd
+	picture = ship_sailing
+	fire_only_once = yes
+	trigger = {
+		tag = NED
+		OR = {
+			trade_company_malacca = {
+				has_discovered = ROOT
+			}
+			trade_company_moluccas = {
+				has_discovered = ROOT
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 120
+	}
+	option = {
+		name = FEE_Bill_Wurtz_Events.7.a
+		add_country_modifier = {
+			name = FEE_Bill_Wurtz_Stolen_Spice_Trade
+			duration = 7300
+		}
+	}
+}
