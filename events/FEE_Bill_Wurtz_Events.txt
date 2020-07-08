@@ -193,7 +193,7 @@ country_event = {
 			trade_goods = fur
 			key = FEE_Bill_Wurtz_Fur_Modifier
 			value = 0.1
-			duration = -1
+			duration = 7300
 		}
 	}
 }
@@ -223,6 +223,135 @@ country_event = {
 		add_country_modifier = {
 			name = FEE_Bill_Wurtz_Stolen_Spice_Trade
 			duration = 7300
+		}
+	}
+}
+
+country_event = {
+	id = FEE_Bill_Wurtz_Events.8
+	title = FEE_Bill_Wurtz_Events.8.tt
+	desc = FEE_Bill_Wurtz_Events.8.dd
+	picture = ship_sailing
+	fire_only_once = yes
+	trigger = {
+		AND = {
+			NOT = {
+				has_country_flag = bill_wurtz_sugar_slaves
+			}
+			any_subject_country = {
+				capital_scope = {
+					colonial_region = colonial_the_carribean
+				}
+			}
+			OR = {
+				any_subject_country = {
+					any_owned_province = {
+						trade_goods = slaves
+					}
+				}
+				any_owned_province = {
+					trade_goods = slaves
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 120
+	}
+	option = {
+		name = FEE_Bill_Wurtz_Events.8.a
+		add_years_of_income = 1
+		set_country_flag = bill_wurtz_sugar_slaves
+	}
+}
+
+country_event = {
+	id = FEE_Bill_Wurtz_Events.9
+	title = FEE_Bill_Wurtz_Events.9.tt
+	desc = FEE_Bill_Wurtz_Events.9.dd
+	picture = ship_sailing
+	fire_only_once = yes
+	trigger = {
+		tag = FRA
+		current_age = age_of_revolutions
+		has_disaster_progress = {
+			disaster = revolution
+			value = 90
+		}
+		num_of_loans = 1
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		name = FEE_Bill_Wurtz_Events.9.a
+		add_disaster_progress = {
+			disaster = revolution
+			value = 10
+		}
+	}
+}
+
+country_event = {
+	id = FEE_Bill_Wurtz_Events.10
+	title = FEE_Bill_Wurtz_Events.10.tt
+	desc = FEE_Bill_Wurtz_Events.10.dd
+	picture = ship_sailing
+	fire_only_once = yes
+	major = yes
+	trigger = {
+		is_subject = yes
+		capital_scope = {
+			colonial_region = colonial_the_carribean
+		}
+		current_age = age_of_revolutions
+		has_first_revolution_started = yes
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = FEE_Bill_Wurtz_Events.10.a
+		add_liberty_desire = 60
+		random_owned_province = {
+			spawn_rebels = {
+				type = revolutionary_rebels
+				size = 3
+			}
+		}
+		random_owned_province = {
+			spawn_rebels = {
+				type = revolutionary_rebels
+				size = 3
+			}
+		}
+		random_owned_province = {
+			spawn_rebels = {
+				type = revolutionary_rebels
+				size = 3
+			}
+		}
+		add_stability = -1
+	}
+}
+
+country_event = {
+	id = FEE_Bill_Wurtz_Events.11
+	title = FEE_Bill_Wurtz_Events.11.tt
+	desc = FEE_Bill_Wurtz_Events.11.dd
+	picture = ship_sailing
+	fire_only_once = yes
+	trigger = {
+		has_institution = industrialization
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		name = FEE_Bill_Wurtz_Events.11.a
+		add_country_modifier = {
+			name = FEE_Bill_Wurtz_First_To_Steam
+			duration = 1825
 		}
 	}
 }
