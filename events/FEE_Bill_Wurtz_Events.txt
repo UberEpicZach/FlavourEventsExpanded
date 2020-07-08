@@ -74,8 +74,6 @@ country_event = {
 
 country_event = {
 	id = FEE_Bill_Wurtz_Events.3
-	# Event adds reform desire after reformation has probably began
-	# Also doesnt check council of trent - snek
 	title = FEE_Bill_Wurtz_Events.3.tt
 	desc = FEE_Bill_Wurtz_Events.3.dd
 	picture = ship_sailing
@@ -96,6 +94,7 @@ country_event = {
 		is_year = 1510
 		NOT = {
 			has_country_flag = bill_wurtz_indulgences
+			has_country_flag = counter_reformation
 		}
 	}
 	mean_time_to_happen = {
