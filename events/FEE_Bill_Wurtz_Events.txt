@@ -120,6 +120,7 @@ country_event = {
 	title = FEE_Bill_Wurtz_Events.4.tt
 	desc = FEE_Bill_Wurtz_Events.4.dd
 	picture = ship_sailing
+	fire_only_once = yes
 	trigger = {
 		tag = POR
 		AND = {
