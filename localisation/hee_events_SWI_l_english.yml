@@ -31,3 +31,19 @@
  fee_SWI.8.t: "The Bernoulli Family"
  fee_SWI.8.d: "The Bernoullis were an entire family of mathematicians, a scientific dynasty spanning a hundred years from the late 17th century. While originally from Germany, the family settled in Switzerland to escape religious persecution. \nThey were behind multiple discoveries within a range of mathematical fields, from probability to calculus. They also made important discoveries in physics, including Bernoulli's Principle, the principle that would later be used to develop the carburetor and the airplane wing. \n\nAcross three generations, the family gave rise to no less than eight prominent mathematicians."
  fee_SWI.8.a: "With thinkers like these, we will lead the enlightenment of peoples."
+ fee_SWI.9.tt: "Peace in the Zurich War"
+ fee_SWI.9.dd: "Land disputes and separatist tendencies of the canton of Zurich caused a full-out war between Zurich and the rest of the Swiss Confederacy in 1436. Despite the intervention first of the Habsburgs and then of the Dauphin of France, by November 1444 the Swiss had stood firm!\nIn the Battle of St. Jakob an der Birs in August 1444, the Swiss forces, utilizing innovative pike square tactics, inflicted such heavy losses on the invading French mercenary army that the French withdrew from the war completely.\nDespite these victories against non-Swiss opponents, Zurich itself has withstood our forces. Now, however, both sides are tired of the war. Zurich now wishes to re-enter the Confederacy if its territorial claims are recognized, but its previous alliance with the Habsburgs remains a cause of concern…."
+ fee_SWI.9.a: "Give the Zurichers what they want, but they must annul their treaties with the Austrians!"
+ fee_SWI.9.b: "Focus on resolving the land dispute in a way both sides can accept"
+ fee_SWI.9.c: "How dare they make demands of us? Let them go crawling to the Habsburgs if they want!"
+ fee_SWI.10.tt: "The Swabian Wars"
+ fee_SWI.10.dd: "The 15th century saw great wealth come into the Swiss cantons as their mercenaries became famous throughout Europe. This wealth brought about expansionism on the part of the Swiss, as this was well before the age when neutrality was thought of as a good thing.\nPerceiving the rising Confederacy as a threat to their own interests, many south German states began banding together against the common threat of Swiss and Bavarian expansion. Eventually, even the ever-meddlesome Habsburgs intervened against the Swiss.\nBeing almost unbeatable on the battlefield and resentful of constant imperial interference, the Swiss would set their sights on securing greater autonomy, and eventually even independence, from the Empire."
+ fee_SWI.10.a: "The Swiss Confederacy must expand if it is to survive!"
+ fee_SWI.10.b: "We must pursue independence from these oppressive emperors!"
+
+ # modifiers
+
+ FEE_Swiss_Expansionism: "Swiss Expansionism"
+ desc_FEE_Swiss_Expansionism: "The Swiss Confederacy must expand if it is to survive!"
+ FEE_Swiss_Neutrality: "Swiss Neutrality"
+ desc_FEE_Swiss_Neutrality: "We must pursue independence from these oppressive emperors!"
