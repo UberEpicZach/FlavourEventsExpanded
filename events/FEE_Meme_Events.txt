@@ -3,19 +3,24 @@ country_event = {
 	id = FEE_Meme_Events.1
 	title = FEE_Meme_Events.1.tt
 	desc = FEE_Meme_Events.1.dd
-    fire_only_once = yes
-    major = yes
+	fire_only_once = yes
 	trigger = {
 		ai = no
+		NOT = {
+			has_global_flag = FEE_Meme_Happened
+		}
 	}
 	mean_time_to_happen = {
 		months = 1
 	}
 	option = {
-        name = FEE_Meme_Events.1.a
-        set_global_flag = FEE_Meme_Active
-    }
-    option = {
-        name = FEE_Meme_Events.1.b
+		name = FEE_Meme_Events.1.a
+		set_global_flag = FEE_Meme_Active
+	}
+	option = {
+		name = FEE_Meme_Events.1.b
+	}
+	after = {
+		set_global_flag = FEE_Meme_Happened
 	}
 }
