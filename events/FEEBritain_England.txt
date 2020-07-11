@@ -15,7 +15,7 @@ country_event = {
 		}
 		has_institution = renaissance
 		stability = 1
-		year = 1500
+		is_year = 1500
 	}
 	
 	mean_time_to_happen = { months = 120 }
@@ -55,7 +55,7 @@ country_event = {
 			religion = anglican
 			religion = reformed
 		}
-		year = 1525
+		is_year = 1525
 	}
 	
 	mean_time_to_happen = { months = 100 }
@@ -263,7 +263,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		year = 1650
+		is_year = 1650
 		OR = {
 			tag = ENG
 			tag = GBR
@@ -501,7 +501,7 @@ country_event = {
 			tag = ENG
 			tag = GBR
 		}
-		year = 1700
+		is_year = 1700
 	}
 	
 	mean_time_to_happen = { months = 150 }
