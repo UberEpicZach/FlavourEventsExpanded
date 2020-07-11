@@ -1,0 +1,523 @@
+namespace = fee_gbr_eng
+
+# Francis Bacon
+country_event = {
+	id = fee_gbr_eng.1
+	title = "fee_gbr_eng_n_1"
+	desc = "fee_gbr_eng_d_1"
+	picture = ADVISOR_eventPicture
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			tag = ENG
+			tag = GBR
+		}
+		has_institution = renaissance
+		stability = 1
+		year = 1500
+	}
+	
+	mean_time_to_happen = { months = 120 }
+	
+	option = {
+		name = "fee_gbr_eng_1_1"
+		
+		define_advisor = {
+			type = natural_scientist
+			name = "Francis Bacon"
+			skill = 3
+			cost_modifier = -0.75
+			
+			add_country_modifier = {
+				name = "scientific_method"
+				duration = 7300
+			}
+		}
+	}
+}
+
+# The Authorized Version
+country_event = {
+	id = fee_gbr_eng.2
+	title = "fee_gbr_eng_n_2"
+	desc = "fee_gbr_eng_d_2"
+	picture = BIG_BOOK_eventPicture
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			tag = ENG
+			tag = GBR
+		}
+		OR = {
+			religion = protestant
+			religion = anglican
+			religion = reformed
+		}
+		year = 1525
+	}
+	
+	mean_time_to_happen = { months = 100 }
+	
+	option = {
+		name = "fee_gbr_eng_1_2"
+		ai_chance = { factor = 25 }
+		
+		add_years_of_income = -0.25
+		add_country_modifier = {
+			name = "king_james_bible"
+			duration = -1
+		}
+		define_advisor = {
+			type = theologian
+			cost_modifier = -0.75
+			skill = 3
+		}
+	}
+	
+	option = {
+		name = "fee_gbr_eng_2_2"
+		ai_chance = { factor = 25 }
+		
+		add_years_of_income = -0.25
+		add_country_modifier = {
+			name = "authorized_version"
+			duration = -1
+		}
+		define_advisor = {
+			type = philosopher
+			cost_modifier = -0.75
+			skill = 3
+		}
+	}
+	
+	option = {
+		name = "fee_gbr_eng_3_2"
+		ai_chance = { factor = 25 }
+		
+		add_years_of_income = -0.25
+		add_country_modifier = {
+			name = "god_now_speaks_english"
+			duration = -1
+		}
+		define_advisor = {
+			type = artist
+			cost_modifier = -0.75
+			skill = 3
+		}
+	}
+	
+	option = {
+		name = "fee_gbr_eng_4_2"
+		ai_chance = { factor = 25 }
+		
+		add_prestige = -10
+	}
+	
+	after = {
+		set_country_flag = had_the_authorized_version
+	}
+}
+
+# The Wicked Bible
+country_event = {
+	id = fee_gbr_eng.3
+	title = "fee_gbr_eng_n_3"
+	desc = "fee_gbr_eng_d_3"
+	picture = BIG_BOOK_eventPicture
+	fire_only_once = yes
+	
+	trigger = { has_country_flag = had_the_authorized_version }
+	
+	mean_time_to_happen = { months = 6 }
+	
+	option = {
+		name = "fee_gbr_eng_1_3"
+		ai_chance = { factor = 50 }
+		
+		add_years_of_income = 0.25
+	}
+	
+	option = {
+		name = "fee_gbr_eng_2_3"
+		ai_chance = { factor = 50 }
+		
+		add_stability = 1
+	}
+	
+	after = {
+		clr_country_flag = had_the_authorized_version
+	}
+}
+
+# The Acts of Union
+country_event = {
+	id = fee_gbr_eng.4
+	title = "fee_gbr_eng_n_4"
+	desc = "fee_gbr_eng_d_4"
+	picture = GOOD_WITH_MONARCH_eventPicture
+	fire_only_once = yes
+	major = yes
+	
+	trigger = {
+		tag = GBR
+		owns_or_subject_of = 4121
+		owns_or_subject_of = 4380
+		owns_or_subject_of = 372
+		owns_or_subject_of = 373
+		owns_or_subject_of = 4119
+		owns_or_subject_of = 376
+		owns_or_subject_of = 4379
+		owns_or_subject_of = 375
+		owns_or_subject_of = 4377
+		owns_or_subject_of = 374
+		owns_or_subject_of = 4118
+		owns_or_subject_of = 4378
+	}
+	
+	mean_time_to_happen = { months = 1 }
+	
+	option = {
+		name = "fee_gbr_eng_1_4"
+		
+		if = { limit = { stability = 3 } add_adm_power = 100 }
+		else = { add_stability = 1 }
+		
+		if = {
+			limit = {
+				accepted_culture = scottish
+				accepted_culture = highland_scottish
+				accepted_culture = irish
+			}
+			
+			add_dip_power = 100
+		}
+		else = {
+			add_accepted_culture = scottish
+			add_accepted_culture = highland_scottish
+			add_accepted_culture = irish
+		}
+		
+		add_country_modifier = {
+			name = "united_kingdom"
+			duration = -1
+		}
+	}
+	
+	option = {
+		name = "fee_gbr_eng_2_4"
+		ai_chance = { factor = 100 }
+		
+		if = { limit = { stability = 3 } add_adm_power = 100 }
+		else = { add_stability = 1 }
+		
+		if = {
+			limit = {
+				accepted_culture = scottish
+				accepted_culture = highland_scottish
+			}
+			
+			add_dip_power = 50
+		}
+		else = {
+			add_accepted_culture = scottish
+			add_accepted_culture = highland_scottish
+		}
+		
+		add_country_modifier = {
+			name = "union_of_britain"
+			duration = -1
+		}
+		
+		every_owned_province = {
+			limit = {
+				culture = irish
+			}
+			add_province_modifier = {
+				name = "unequal_status"
+				duration = -1
+			}
+		}
+	}
+	
+	option = {
+		name = "fee_gbr_eng_3_4"
+		
+		add_stability = -1
+		add_mil_power = 100
+		add_mercantilism = 1
+		add_country_modifier = {
+			name = "english_empire"
+			duration = -1
+		}
+	}
+}
+
+# Samuel Pepys
+country_event = {
+	id = fee_gbr_eng.6
+	title = "fee_gbr_eng_n_6"
+	desc = "fee_gbr_eng_d_6"
+	picture = ADVISOR_eventPicture
+	fire_only_once = yes
+	
+	trigger = {
+		year = 1650
+		OR = {
+			tag = ENG
+			tag = GBR
+		}
+	}
+	
+	mean_time_to_happen = { months = 150 }
+	
+	option = {
+		name = "fee_gbr_eng_1_6"
+		
+		define_advisor = {
+			type = naval_reformer
+			skill = 2
+			name = "Samuel Pepys"
+			culture = english
+			religion = ROOT
+			discount = yes
+		}
+	}
+}
+
+# The Puritans
+country_event = {
+	id = fee_gbr_eng.7
+	title = "fee_gbr_eng_n_7"
+	desc = "fee_gbr_eng_d_7"
+	picture = RELIGIOUS_TURMOIL_eventPicture
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			tag = GBR
+			tag = ENG
+		}
+		OR = {
+			religion = protestant
+			religion = anglican
+		}
+	}
+	
+	mean_time_to_happen = { months = 200 }
+	
+	option = {
+		name = "fee_gbr_eng_1_7"
+		
+		add_country_modifier = {
+			name = "puritan_dissent_tolerated"
+			duration = 18250
+		}
+		
+		add_church_power = -100
+		
+		random_owned_province = {
+			limit = { culture = english }
+			change_religion = reformed
+		}
+		random_owned_province = {
+			limit = { culture = english }
+			change_religion = reformed
+		}
+		random_owned_province = {
+			limit = { culture = english }
+			change_religion = reformed
+		}
+		random_owned_province = {
+			limit = { culture = english }
+			change_religion = reformed
+		}
+		random_owned_province = {
+			limit = { culture = english }
+			change_religion = reformed
+		}
+	}
+	
+	option = {
+		name = "fee_gbr_eng_2_7"
+		
+		add_country_modifier = {
+			name = "puritans_crushed"
+			duration = 18250
+		}
+		
+		random_owned_province = {
+			limit = { region = british_isles_region }
+			add_province_modifier = {
+				name = "puritans_persecuted"
+				duration = 7300
+			}
+			spawn_rebels = {
+				type = heretic_rebels
+				size = 5
+			}
+		}
+		random_owned_province = {
+			limit = { region = british_isles_region }
+			add_province_modifier = {
+				name = "puritans_persecuted"
+				duration = 7300
+			}
+			spawn_rebels = {
+				type = heretic_rebels
+				size = 5
+			}
+		}
+		random_owned_province = {
+			limit = { region = british_isles_region }
+			add_province_modifier = {
+				name = "puritans_persecuted"
+				duration = 7300
+			}
+			spawn_rebels = {
+				type = heretic_rebels
+				size = 5
+			}
+		}
+		random_owned_province = {
+			limit = { region = british_isles_region }
+			add_province_modifier = {
+				name = "puritans_persecuted"
+				duration = 7300
+			}
+		}
+		random_owned_province = {
+			limit = { region = british_isles_region }
+			add_province_modifier = {
+				name = "puritans_persecuted"
+				duration = 7300
+			}
+		}
+		
+		add_church_power = 100
+	}
+	
+	# Unfinished. Only gives a modifier.
+	option = {
+		name = "fee_gbr_eng_3_7"
+		
+		trigger = {
+			exploration_ideas = 2
+		}
+		
+		add_country_modifier = {
+			name = "puritans_flee_to_the_new_world"
+			duration = 18250
+		}
+	}
+}
+
+# The South Sea Company
+country_event = {
+	id = fee_gbr_eng.8
+	title = "fee_gbr_eng_n_8"
+	desc = "fee_gbr_eng_d_8"
+	picture = ECONOMY_eventPicture
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			tag = GBR
+			tag = ENG
+		}
+		exploration_ideas = 1
+		war_exhaustion = 3
+		num_of_loans = 2
+	}
+	
+	mean_time_to_happen = { months = 1 }
+	
+	option = {
+		name = "fee_gbr_eng_1_8"
+		
+		hidden_effect = {
+			random_list = {
+				85 = {
+					country_event = { id = fee_gbr_eng.9 }
+				}
+				15 = {
+					country_event = { id = fee_gbr_eng.10 }
+				}
+			}
+		}
+		
+		add_inflation = -2
+		add_years_of_income = 0.1
+		add_war_exhaustion = -2
+	}
+}
+
+# South Sea Bubble Bursts
+country_event = {
+	id = fee_gbr_eng.9
+	title = "fee_gbr_eng_n_9"
+	desc = "fee_gbr_eng_d_9"
+	picture = BANKRUPTCY_eventPicture
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = "fee_gbr_eng_1_9"
+		
+		add_stability = -2
+		add_inflation = 10
+		add_years_of_income = -1
+	}
+}
+
+# South Sea Company Pays Off
+country_event = {
+	id = fee_gbr_eng.10
+	title = "fee_gbr_eng_n_10"
+	desc = "fee_gbr_eng_d_10"
+	picture = ECONOMY_eventPicture
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = "fee_gbr_eng_1_10"
+		
+		add_stability = 1
+		add_years_of_income = 1
+		add_inflation = -5
+	}
+}
+
+country_event = {
+	id = fee_gbr_eng.12
+	title = "fee_gbr_eng_n_12"
+	desc = "fee_gbr_eng_d_12"
+	picture = ADVISOR_eventPicture
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			tag = ENG
+			tag = GBR
+		}
+		year = 1700
+	}
+	
+	mean_time_to_happen = { months = 150 }
+	
+	option = {
+		name = "fee_gbr_eng_1_12"
+		
+		add_adm_power = 100
+		add_prestige = 15
+		change_innovativeness = 1
+		define_advisor = {
+			type = artist
+			culture = saxon
+			name = "George Frederic Handel"
+			skill = 3
+			discount = yes
+		}
+	}
+}
