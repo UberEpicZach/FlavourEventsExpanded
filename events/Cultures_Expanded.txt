@@ -1544,7 +1544,10 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = BRA
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
 		dynasty = "von Hohenzollern"
 		is_year = 1513
 		exists = MAG
@@ -1614,7 +1617,10 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = BRA
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
 		dynasty = "von Hohenzollern"
 		OR = {
 			religion = protestant
@@ -1715,7 +1721,10 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = BRA
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
 		religion = catholic
 		MAG = {
 			name = "Albert"
@@ -1805,3 +1814,1029 @@ country_event = {
 		}
 	}
 }
+
+#####Inheritance of Berg#####
+
+#The Inheritance of Julich(Berg)
+country_event = {
+	id = CE_brandenburg_expanded.16
+	title = CE_brandenburg_expanded.16.t
+	desc = CE_brandenburg_expanded.16.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	major = yes
+	major_trigger = {
+		is_part_of_hre = yes
+		any_neighbor_country = {
+			is_part_of_hre = yes
+		}
+	}
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = BRG
+		BRG = {
+			is_subject = no
+		}
+		exists = BRA
+		exists = BRG
+		exists = PAL
+		#is_year = 1609 #removethisbeforeuploading#fixdis
+	}
+	
+	mean_time_to_happen = {
+		days = 180
+	}
+	immediate = {
+		hidden_effect = {
+			BRG = {
+				kill_heir = yes
+				define_ruler = {
+					name = "Antonia of Lorraine"
+					regency = yes
+					female = yes
+				}
+				add_ruler_modifier = {
+					name = CE_Infertile
+					duration = -1
+					hidden = yes
+				}
+			}
+		}
+	}
+	option = {
+		name = CE_brandenburg_expanded.16.a
+		PAL = {
+			country_event = {
+				id = CE_brandenburg_expanded.17
+				days = 30
+			}
+		}
+		BRA = {
+			country_event = {
+				id = CE_brandenburg_expanded.18
+				days = 30
+			}
+		}
+		HAB = {
+			country_event = {
+				id = CE_brandenburg_expanded.19
+				days = 90
+			}
+		}
+		ai_chance = {
+			factor = 1
+		} 
+	}
+	option = {
+		name = CE_brandenburg_expanded.16.b
+		BRG = {
+			define_ruler = {
+				claim = 20
+			}
+		}
+		PAL = {
+			add_casus_belli = {
+				target = BRG
+				type = cb_restore_personal_union 
+				months = 120
+			}
+		}
+		BRA = {
+			add_casus_belli = {
+				target = BRG
+				type = cb_restore_personal_union 
+				months = 120
+			}
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#The Duchy of Berg (Palatinate)
+country_event = {
+	id = CE_brandenburg_expanded.17
+	title = CE_brandenburg_expanded.17.t
+	desc = CE_brandenburg_expanded.17.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = CE_brandenburg_expanded.17.a
+		set_country_flag = United_Duchies_claimed_yes
+		custom_tooltip = CE_claimed_the_duchies
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = CE_brandenburg_expanded.17.b
+		add_legitimacy = 5
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#The Duchy of Berg (Brandenburg)
+country_event = {
+	id = CE_brandenburg_expanded.18
+	title = CE_brandenburg_expanded.18.t
+	desc = CE_brandenburg_expanded.18.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = CE_brandenburg_expanded.18.a
+		set_country_flag = United_Duchies_claimed_yes
+		custom_tooltip = CE_claimed_the_duchies
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = CE_brandenburg_expanded.18.b
+		add_legitimacy = 5
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#The Aulic Council(Emperor)
+country_event = {
+	id = CE_brandenburg_expanded.19
+	title = CE_brandenburg_expanded.19.t
+	desc = CE_brandenburg_expanded.19.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = CE_brandenburg_expanded.19.a
+		every_country = {
+			limit = {
+				has_country_flag = United_Duchies_claimed_yes
+			}
+			country_event = {
+				id = CE_brandenburg_expanded.20
+				days = 30
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = CE_brandenburg_expanded.19.b
+		every_country = {
+			limit = {
+				has_country_flag = United_Duchies_claimed_yes
+			}
+			country_event = {
+				id = CE_brandenburg_expanded.25
+				days = 30
+			}
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#The Aulic Council(Brandenburg/Palatinate)
+country_event = {
+	id = CE_brandenburg_expanded.20
+	title = CE_brandenburg_expanded.20.t
+	desc = CE_brandenburg_expanded.20.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	major = yes
+	major_trigger = {
+		is_part_of_hre = yes
+		any_neighbor_country = {
+			is_part_of_hre = yes
+		}
+	}
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = CE_brandenburg_expanded.20.a
+		add_army_tradition = 5
+		create_alliance = BRG
+		emperor = {
+			country_event = {
+				id = CE_brandenburg_expanded.22
+				days = 360
+			}
+		}
+		set_country_flag = United_Duchies_occupied_yes
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 0.1
+				ROOT = { 
+					any_ally = {
+						tag = HAB
+					}
+				}
+			}
+			modifier = {
+				factor = 0.1
+				NOT = {
+					manpower_percentage = 0.1
+				}
+			}
+			modifier = {
+				factor = 0.1
+				NOT = {
+					manpower_percentage = 0.5
+				}
+			}
+		}
+	}
+	option = {
+		name = CE_brandenburg_expanded.20.b
+		clr_country_flag = United_Duchies_claimed_yes
+		if = {
+			limit = {
+				NOT = {
+					any_country = {
+						has_country_flag = United_Duchies_claimed_yes
+					}
+				}
+			}
+			emperor = {
+				country_event = {
+					id = CE_brandenburg_expanded.21
+					days = 30
+				}
+			}
+		}
+		
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0.1
+				manpower_percentage = 0.5
+			}
+			modifier = {
+				factor = 0.1
+				army_size = HAB
+			}
+		}
+	}
+}
+
+#The Imperial Duchies(Emperor)
+country_event = {
+	id = CE_brandenburg_expanded.21
+	title = CE_brandenburg_expanded.21.t
+	desc = CE_brandenburg_expanded.21.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	major = yes
+	major_trigger = {
+		is_part_of_hre = yes
+		any_neighbor_country = {
+			is_part_of_hre = yes
+		}
+	}
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = CE_brandenburg_expanded.21.a
+		emperor = {
+			inherit = BRG
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+#Seizure of the United Duchies(Emperor)
+country_event = {
+	id = CE_brandenburg_expanded.22
+	title = CE_brandenburg_expanded.22.t
+	desc = CE_brandenburg_expanded.22.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	major = yes
+	major_trigger = {
+		is_part_of_hre = yes
+		any_neighbor_country = {
+			is_part_of_hre = yes
+		}
+	}
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = CE_brandenburg_expanded.22.a
+		every_country = {
+			limit = {
+				has_country_flag = United_Duchies_occupied_yes
+			}
+			country_event = {
+				id = CE_brandenburg_expanded.25
+				days = 30
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = CE_brandenburg_expanded.22.b
+		declare_war_with_cb = {
+			who = BRG
+			casus_belli = cb_vassalize_mission 
+		}
+		FRA = {
+			country_event = {
+				id = CE_brandenburg_expanded.23
+				days = 100
+			}
+		}
+		set_global_flag = United_Duchies_war_yes
+		ai_chance = {
+			factor = 1
+				modifier = {
+				factor = 0
+				ROOT = { 
+					any_ally = {
+						tag = BRG
+					}
+				}
+			}
+			modifier = {
+				factor = 0.1
+				NOT = {
+					manpower_percentage = 0.1
+				}
+			}
+			modifier = {
+				factor = 0.1
+				is_at_war = yes
+			}
+		}
+	}
+}
+
+#The Imperial war for Julich-Cleves-Berg(France)
+country_event = {
+	id = CE_brandenburg_expanded.23
+	title = CE_brandenburg_expanded.23.t
+	desc = CE_brandenburg_expanded.23.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	major = yes
+	major_trigger = {
+		is_part_of_hre = yes
+		any_neighbor_country = {
+			is_part_of_hre = yes
+		}
+	}
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = CE_brandenburg_expanded.23.a
+		emperor = {
+			country_event = {
+				id = CE_brandenburg_expanded.24
+				days = 30
+			}
+		}
+			
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = 0.1
+				is_at_war = yes
+			}
+			modifier = {
+				factor = 0
+				any_ally = {
+					tag = HAB
+				}
+			}
+		}
+	}
+	option = {
+		name = CE_brandenburg_expanded.23.b
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0.1
+				NOT = { is_at_war = yes }
+			}
+			modifier = {
+				factor = 0.1
+				army_size = HAB
+			}
+		}
+	}
+}
+
+#French Intervention
+country_event = {
+	id = CE_brandenburg_expanded.24
+	title = CE_brandenburg_expanded.24.t
+	desc = CE_brandenburg_expanded.24.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	major = yes
+	major_trigger = {
+		is_part_of_hre = yes
+		any_neighbor_country = {
+			is_part_of_hre = yes
+		}
+	}
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = CE_brandenburg_expanded.24.a
+		FRA = {
+			create_alliance = BRG
+			join_all_defensive_wars_of = BRG
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0.1
+				NOT = {
+					army_size = FRA
+				}
+			}
+			modifier = {
+				factor = 0.5
+				war_exhaustion = 5
+			}
+		}
+	}
+	option = {
+		name = CE_brandenburg_expanded.24.b
+		emperor = {
+			white_peace = BRG
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+###End of Phase 1###
+
+#The Spoils of War(Palatinate)
+country_event = {
+	id = CE_brandenburg_expanded.25
+	title = CE_brandenburg_expanded.25.t
+	desc = CE_brandenburg_expanded.25.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	major = yes
+	major_trigger = {
+		is_part_of_hre = yes
+		any_neighbor_country = {
+			is_part_of_hre = yes
+		}
+	}
+	
+	trigger = {
+		exists = BRG
+		BRG = {
+			is_subject = no
+		}
+		has_country_flag = United_Duchies_occupied_yes
+		NOT = { has_country_flag = United_Duchies_Negotiations_yes }
+		BRG = {
+			NOT = {
+				is_at_war = yes
+			}
+			had_recent_war = 1
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	immediate = {
+		set_country_flag = United_Duchies_Negotiations_yes	
+	}
+	
+	option = {
+		name = CE_brandenburg_expanded.25.a
+		set_country_flag = United_Duchies_Negotiations_Divide_yes
+		if = {
+			limit = {
+				BRA = {
+					has_country_flag = United_Duchies_Negotiations_Divide_yes
+				}
+				PAL = {
+					has_country_flag = United_Duchies_Negotiations_Divide_yes
+				}
+			}
+			BRG = {
+				country_event = {
+					id = CE_brandenburg_expanded.27
+					days = 30
+				}
+			}
+		}
+		custom_tooltip = CE_Treaty_of_Xanten
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 10
+				any_ally = {
+					OR = {
+						tag = BRA 
+						tag = PAL 
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				diplomatic_reputation = 1.5
+			}
+		}
+	}
+	option = {
+		name = CE_brandenburg_expanded.25.b
+		trigger = {
+			AND = {
+				BRA = {
+					has_country_flag = United_Duchies_occupied_yes
+				}
+				PAL = {
+					has_country_flag = United_Duchies_occupied_yes
+				}
+			}
+		}
+		BRG = {
+			country_event = {
+				id = CE_brandenburg_expanded.28
+				days = 30
+			}
+		}
+		custom_tooltip = CE_deny_treaty
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 2
+				tag = BRA
+				BRA = {
+					army_strength = {
+						who = PAL
+						value = 2
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				tag = PAL
+				PAL = {
+					army_strength = {
+						who = BRA
+						value = 2
+					}
+				}
+			}
+			modifier = {
+				factor = 0.5
+				NOT = { manpower_percentage = 0.5 }
+			}
+			modifier = {
+				factor = 0.1
+				NOT = { manpower_percentage = 0.1 }
+			}
+			modifier = {
+				factor = 0.5
+				war_exhaustion = 2
+			}
+			modifier = {
+				factor = 0.1
+				war_exhaustion = 5
+			}
+		}
+	}
+	option = {
+		name = CE_brandenburg_expanded.25.c
+		trigger = {
+			NOT = {
+				AND = {
+					BRA = {
+						has_country_flag = United_Duchies_occupied_yes
+					}
+					PAL = {
+						has_country_flag = United_Duchies_occupied_yes
+					}
+				}
+			}
+		}
+		create_union = BRG
+		ai_chance = {
+			factor = 100
+		}
+	}
+}
+
+#The Spoils of War)Brandenburg
+# country_event = {
+	# id = CE_brandenburg_expanded.26
+	# title = CE_brandenburg_expanded.26.t
+	# desc = CE_brandenburg_expanded.26.d
+	# picture = ELECTION_REPUBLICAN_eventPicture
+	
+	# fire_only_once = yes
+	
+	# trigger = {
+		# tag = BRA
+		# exists = BRG
+		# has_global_flag = United_Duchies_war_yes
+		# BRG = {
+			# NOT = {
+				# is_at_war = yes
+			# }
+		# }
+	# }
+	
+	# mean_time_to_happen = {
+		# days = 1
+	# }
+	
+	# option = {
+		# name = CE_brandenburg_expanded.26.a
+		# if = {
+			# limit = {
+				# has_global_flag = United_Duchies_divided_yes
+			# }
+			# BRG = {
+				# country_event = {
+					# id = CE_brandenburg_expanded.27
+					# days = 30
+				# }
+			# }
+			# clr_global_flag = United_Duchies_divided_yes
+		# }
+		# else = {
+			# set_global_flag = United_Duchies_divided_yes
+		# }
+		# ai_chance = {
+			# factor = 1
+		# }
+	# }
+	# option = {
+		# name = CE_brandenburg_expanded.26.b
+		# BRG = {
+			# country_event = {
+				# id = CE_brandenburg_expanded.28
+				# days = 30
+			# }
+		# }
+		# ai_chance = {
+			# factor = 0
+		# }
+	# }
+	# # option = {
+		# # name = CE_brandenburg_expanded.25.c
+		# # trigger = {
+			# # limit = {
+				# # calc_true_if = {
+					# # all_country = {
+						# # has_country_flag = United_Duchies_occupied_yes
+					# # }
+					# # value = 1
+				# # }
+				# # NOT = {
+					# # calc_true_if = {
+						# # all_country = {
+							# # has_country_flag = United_Duchies_occupied_yes
+						# # }
+						# # value = 2
+					# # }
+				# # }
+			# # }
+		# # }
+		# # if = {
+			# # limit = {
+				# # calc_true_if = {
+					# # all_country = {
+						# # has_country_flag = United_Duchies_occupied_yes
+					# # }
+					# # value = 1
+				# # }
+				# # NOT = {
+					# # calc_true_if = {
+						# # all_country = {
+							# # has_country_flag = United_Duchies_occupied_yes
+						# # }
+						# # value = 1
+					# # }
+				# # }
+			# # }
+			# # random_country = {
+				# # limit = {
+					# # has_country_flag = United_Duchies_occupied_yes
+				# # }
+				# # save_event_target_as = United_Duchies_Reciever
+			# # }
+			# # event_target:United_Duchies_Reciever = {
+				# # create_union = BRG
+			# # }
+		# # }
+		# # ai_chance = {
+			# # factor = 1000
+		# # }
+	# # }
+# }
+
+#Treaty of Xanten(Berg)
+country_event = {
+	id = CE_brandenburg_expanded.27
+	title = CE_brandenburg_expanded.27.t
+	desc = CE_brandenburg_expanded.27.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	major = yes
+	major_trigger = {
+		is_part_of_hre = yes
+		any_neighbor_country = {
+			is_part_of_hre = yes
+		}
+	}
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = CE_brandenburg_expanded.27.a
+		BRG = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						province_id = 4768
+						province_id = 84
+					}
+				}
+				cede_province = PAL
+				add_core = PAL
+			}
+		
+			every_owned_province = {
+				limit = {
+					NOT = {
+						OR = {
+							province_id = 4768
+							province_id = 84
+						}
+					}
+				}
+				cede_province = BRA
+				add_core = BRA 
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+###Second war of Julich Inheritance###
+
+#Second war of Julich Inheritance (Berg)
+country_event = {
+	id = CE_brandenburg_expanded.28
+	title = CE_brandenburg_expanded.28.t
+	desc = CE_brandenburg_expanded.28.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	major = yes
+	major_trigger = {
+		is_part_of_hre = yes
+		any_neighbor_country = {
+			is_part_of_hre = yes
+		}
+	}
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = CE_brandenburg_expanded.28.a
+		# BRA = {
+			# create_union = BRG
+		# }
+		PAL = {
+			country_event = {
+				id = CE_brandenburg_expanded.29
+				days = 30
+			}
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 2
+				BRA = {
+					has_country_flag = United_Duchies_Negotiations_Divide_yes
+				}
+			}
+			modifier = {
+				factor = 1.5
+				BRA = {
+					army_size = PAL
+				}
+			}
+			modifier = {
+				factor = 1.5
+				BRA = {
+					army_strength = {
+						who = PAL
+						value = 2
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				BRA = {
+					diplomatic_reputation = PAL
+				}
+			}
+		}
+	}
+	option = {
+		name = CE_brandenburg_expanded.28.b
+		# PAL = {
+			# create_union = BRG
+		# }
+		BRA = {
+			country_event = {
+				id = CE_brandenburg_expanded.30
+				days = 30
+			}
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 2
+				PAL = {
+					has_country_flag = United_Duchies_Negotiations_Divide_yes
+				}
+			}
+			modifier = {
+				factor = 1.5
+				PAL = {
+					army_size = BRA
+				}
+			}
+			modifier = {
+				factor = 1.5
+				PAL = {
+					army_strength = {
+						who = BRA
+						value = 2
+					}
+				}
+			}
+			modifier = {
+				factor = 1.5
+				PAL = {
+					diplomatic_reputation = BRA
+				}
+			}
+		}
+	}
+}
+
+#Berg Declares for Brandenburg
+country_event = {
+	id = CE_brandenburg_expanded.29
+	title = CE_brandenburg_expanded.29.t
+	desc = CE_brandenburg_expanded.29.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	major = yes
+	major_trigger = {
+		is_part_of_hre = yes
+		any_neighbor_country = {
+			is_part_of_hre = yes
+		}
+	}	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = CE_brandenburg_expanded.29.a
+		create_succession_crisis = {
+			attacker = PAL
+			defender = BRA
+			target = BRG
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0.5
+				NOT = {
+					army_size = PAL
+				}
+			}
+			modifier = {
+				factor = 0.5
+				NOT = {
+					manpower_percentage = 0.1
+				}
+			}
+			modifier = {
+				factor = 0.1
+				any_ally = {
+					tag = PAL
+				}
+			}
+		}
+	}
+	option = {
+		name = CE_brandenburg_expanded.29.b
+		BRA = {
+			create_union = BRG
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+#Berg Declares for the Palatinate
+country_event = {
+	id = CE_brandenburg_expanded.30
+	title = CE_brandenburg_expanded.30.t
+	desc = CE_brandenburg_expanded.30.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	major = yes
+	major_trigger = {
+		is_part_of_hre = yes
+		any_neighbor_country = {
+			is_part_of_hre = yes
+		}
+	}
+	
+	fire_only_once = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = CE_brandenburg_expanded.30.a
+		create_succession_crisis = {
+			attacker = BRA
+			defender = PAL
+			target = BRG
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0.5
+				NOT = {
+					army_size = BRA
+				}
+			}
+			modifier = {
+				factor = 0.5
+				NOT = {
+					manpower_percentage = 0.1
+				}
+			}
+			modifier = {
+				factor = 0.1
+				any_ally = {
+					tag = BRA
+				}
+			}
+		}
+	}
+	option = {
+		name = CE_brandenburg_expanded.30.b
+		PAL = {
+			create_union = BRG
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+
+
+
+

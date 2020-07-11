@@ -14,6 +14,7 @@
  CE_son_in_clergy: "Family in High Places"
  CE_iron_and_blood: "Iron and Blood"
  CE_Wurzburger_Lands: "Bishopric Privilege"
+ CE_Infertile: "Not possible to have an heir right now."
  
  CE_opinion_bid_for_emperor: "Bid for the Emperorship"
  CE_barbara_marriage: "Barbara von Hohenzollern"
@@ -204,6 +205,86 @@
  CE_brandenburg_expanded.15.d: "We have been reproached by the archbishop Albert of Magdeburg, requesting to become Bishop of Mainz. Our most influential position as Archbishopric of Mainz is a powerful title, and as such, should not be relinquished so easily.  Additionally, the fast rise of Albert, his dynastic heritage, and his frequent breach of protocol is reason for concern. Should we accept his request, or respectfully decline?."
  CE_brandenburg_expanded.15.a: "He seems like an able candidate and a good man! Let us accept his request."
  CE_brandenburg_expanded.15.b: "Get this Charlatan out of Mainz!"
+ 
+ ##Inheritance of Julich##
+ 
+ CE_brandenburg_expanded.16.t: "The Julich Inheritance"
+ CE_brandenburg_expanded.16.d: "The duke is dead, but none is to succeed him, his marriage and life has not been fruitfull. Now we face a dilemma on how to continue, the late duke's sister's however have been blessed with offspring. The duchess of prussia and electress of brandenburg is a niece of the old duke, and first in line. While the Count Palatine of Neuburg's Son as his cousin and closest male relative is also claiming the throne. Furthermore the emperor looks hungrily at our lands, hoping to increase Habsbug dominance over the low countries."
+ CE_brandenburg_expanded.16.a: "Who shall lead us now?"
+ CE_brandenburg_expanded.16.b: "Perhaps a local noble?"
+ 
+ CE_brandenburg_expanded.17.t: "The Duchy of Berg"
+ CE_brandenburg_expanded.17.d: "Our Grand-Father in Law, the duke of Julich-Cleves-Berg has passed on, and leaves no heirs to the throne of the United Duchies, the next in the line of succession is our beloved wife, and as such we could press her claim to the ducal throne."
+ CE_brandenburg_expanded.17.a: "Let us claim her inheritance."
+ CE_brandenburg_expanded.17.b: "T'is but a distant relation" 
+ CE_claimed_the_duchies:0 "By claiming the dutchies we can later enforce our claim."
+ 
+ CE_brandenburg_expanded.18.t: "The Duchy of Berg"
+ CE_brandenburg_expanded.18.d: "Our Father in Law, the duke of Julich-Cleves-Berg has passed on, and leaves no heirs to the throne of the United Duchies, the next male in the line of succession is my son, and as such we could press his claim to the ducal throne."
+ CE_brandenburg_expanded.18.a: "Let us claim his inheritance."
+ CE_brandenburg_expanded.18.b: "T'is but a distant relation" 
+ 
+ CE_brandenburg_expanded.19.t: "The Provincial Government"
+ CE_brandenburg_expanded.19.d: "The duke of the United Duchies of Julich-Cleves-Berg has passed on, and leaves no heirs to the throne of the United Duchies, counties falling under the imperial immediacy are to revert to the imperial crown under the imperial law. Let us convene the Aulic Council of the Empire and let them decree what to do with these lands."
+ CE_brandenburg_expanded.19.a: "Convince them to vote in our favor"
+ CE_brandenburg_expanded.19.b: "Let the pretenders claim the duchy."
+
+ CE_brandenburg_expanded.20.t: "The Aulic Council"
+ CE_brandenburg_expanded.20.d: "The Emperor has convened the Aulic Council and is claiming the house von Julich-Berg went extinct, while our kin still draws breath!. The Emperor is simply using this as a pretext to seize the throne of the United Duchies for himself!  How dare he try to use a tragedy of a man dying before his time to usurp the United Duchies from his favored kin."
+ CE_brandenburg_expanded.20.a: "Seize the Duchy by force!" 
+ CE_brandenburg_expanded.20.b: "We shall abide by the Imperial Aulic Council."
+ 
+ CE_brandenburg_expanded.21.t: "The Imperial Duchies"
+ CE_brandenburg_expanded.21.d: "As the Aulic Council has decided, the house von Julich-Berg is extinct, and the United Duchies fall to the the Emperor. This wealthy duchy is sure to prove a valuable asset in the struggle to unite the Holy Roman Empire and defeat our rivals!"
+ CE_brandenburg_expanded.21.a: "A fine addition to my collection"
+ 
+ CE_brandenburg_expanded.22.t: "The Seizure of the United Duchies"
+ CE_brandenburg_expanded.22.d: "Following our decision to submit the proposal to the Aulic Council, the Elector of Brandenburg and the Count Palantine of Neuburg have send forces to occupy the United Duchies, and are refusing to disband following the decision made by the Aulic Council that the duchies should go to the Emperor."
+ CE_brandenburg_expanded.22.a: "We can not afford another conflict right now."
+ CE_brandenburg_expanded.22.b: "We will force them out and enact the will of the Council!" 
+ 
+ CE_brandenburg_expanded.23.t: "The Imperial war for Julich-Cleves-Berg"
+ CE_brandenburg_expanded.23.d: "The Emperor is trying to strengthen his position by seizing the United Duchies and reinforce the spanish route and encirclement of france, cutting us off from our german allies in germany and the low countries, we can not allow this to happen without a fight."
+ CE_brandenburg_expanded.23.a: "Threaten to ally the United Duchies" 
+ CE_brandenburg_expanded.23.b: "We have enough battles to fight, we can not spare another."
+ 
+ CE_brandenburg_expanded.24.t: "French Intervention"
+ CE_brandenburg_expanded.24.d: "The damned French have learned of our struggle to aquire control over the United Duchies of Julich-Cleves-Berg and have send forces to halt our advance into the United Duchies. Disrupting our chances to easily seize them."
+ CE_brandenburg_expanded.24.a: "let them come, we'll fight you all!"
+ CE_brandenburg_expanded.24.b: "Better to know when we're beaten."
+ 
+ #End of First Phase#
+ 
+ CE_brandenburg_expanded.25.t: "The Spoils of war"
+ CE_brandenburg_expanded.25.d: "We have pushed the Emperor to stop his meddling, and any minor pretenders won't dare stand in our way, there is only one other problem, the other claimant stand in our way of seizing the entire duchy!"
+ CE_brandenburg_expanded.25.a: "We shall share the inheritance."
+ CE_brandenburg_expanded.25.b: "We will take the entire duchy!" 
+ CE_Treaty_of_Xanten:0 "This will attempt to resolve the situation by dividing the contested lands among the claimaints."
+ CE_deny_treaty:0 "This will attempt to seize the entire duchy for ourselves \nBerg will not appriciate this."
+ 
+ CE_brandenburg_expanded.26.t: "The Spoils of war"
+ CE_brandenburg_expanded.26.d: "We have pushed the Emperor to stop his meddling, and any minor pretenders won't dare stand in our way, there is only one other problem, the Heir of the Palatinate stands in our way of seizing the entire duchy!"
+ CE_brandenburg_expanded.26.a: "We shall share the inheritance."
+ CE_brandenburg_expanded.26.b: "We will take the entire duchy!" 
+ 
+ CE_brandenburg_expanded.27.t: "The Treaty of Xanten"
+ CE_brandenburg_expanded.27.d: "The Count Palatinate and the Elector of Brandenburg have come to an understanding on how to divide the United Duchies of Julich-Cleves-Berg. the ancestral lands of Julich, Berg and Ravenstein will pass down to the Palatinate, and the remaining territories of Cleves, Mark and Ravensburg shall pass down to the Elector of Brandenburg."
+ CE_brandenburg_expanded.27.a: "To each their own"
+ 
+ CE_brandenburg_expanded.28.t: "The second war of Berg Succession"
+ CE_brandenburg_expanded.28.d: "Following the Victory over Austria, we have retained our imperial immediacy and independence, but who would rule our duchy?"
+ CE_brandenburg_expanded.28.a: "Declare for Brandenburg."
+ CE_brandenburg_expanded.28.b: "Declare for Palatinate." 
+ 
+ CE_brandenburg_expanded.29.t: "Berg Declares for Brandenburg"
+ CE_brandenburg_expanded.29.d: "The United Duchies have declared for Brandenburg, We will need to face them on the battlefield if we are to gain control over our rightfull inheritance!"
+ CE_brandenburg_expanded.29.a: "Ours is the Fury!"
+ CE_brandenburg_expanded.29.b: "Enough Blood has been spilled, call it off."
+ 
+ CE_brandenburg_expanded.30.t: "Berg Declares for the Palatinate"
+ CE_brandenburg_expanded.30.d: "The United Duchies have declared for the Palatinate, We will need to face them on the battlefield if we are to gain control over our rightfull inheritance!"
+ CE_brandenburg_expanded.30.a: "Fire and Blood!"
+ CE_brandenburg_expanded.30.b: "Enough Blood has been spilled, call it off."
  
  ##Hohenzollerns of Franconia##
 
