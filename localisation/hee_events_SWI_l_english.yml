@@ -53,6 +53,14 @@
  fee_SWI.15.tt: "The Duke of Burgundy Killed!"
  fee_SWI.15.dd: "The unfortunate decision to lead the Burgundian army has cost The Duke of Burgundy his life. Failing to heed warning of enemy reinforcements, he soon found himself both surrounded and outnumbered by the Swiss and their allies.\nAs the Burgundian army began to dissolve in wild panic, The Duke of Burgundy stayed in the center, trying in vain to rally his men. He is said to have said “I struggle against a spider who is everywhere at once” on seeing how the Swiss outnumbered his forces.\nWith only him and his personal guard holding firm, he was hacked to pieces by Swiss halberds."
  fee_SWI.15.a: "A glorious Victory!"
+ fee_SWI.16.tt: "The Reformation Enters Switzerland"
+ fee_SWI.16.dd: "As the Germans to our North become embroiled with the teachings of Luther, new voices are starting to crop up here in Switzerland.\nOne new preacher, named Ulrich Zwingli in a rural canton has begun to question the Catholic Church’s practices, but refuses any comparison to Luther.\nIn a nation which respects democratic principles and fiercely guards its independence from kings, emperors, and even popes, it is unquestionable that we allow one of our own to continue voicing his opinions even in defiance of outsiders. What remains to be decided, however, is how much we listen to what he has to say."
+ fee_SWI.16.a: "For a peasant, he seems to have a lot to say. Let us take him in!"
+ fee_SWI.16.b: "How interesting. He can stay in the fields, though…"
+ fee_SWI.17.tt: "The Sausage Affair"
+ fee_SWI.17.dd: "Although Zwingli’s preaching career got off to a rocky start, especially with early sermons against the excesses of Swiss mercenaries, he quickly grew wildly popular in the countryside for his passionate reforming message. Soon, the town council at Zurich awarded Zwingli with the position of “People’s Preacher” in their town and in the canton more broadly, at the age of only thirty-five!\nHis career in Zurich started off fast and furious. He and his followers decided that only an ostentatious display against Catholic “superstitions” and “legalism” could effectively introduce the Reformation to Switzerland. To that end, on the first day of Lent, a time when Catholics were meant to abstain from eating pork and other “rich meats,” a large crowd of Zwingli’s followers held a feast of pork sausages – right in the middle of the town!\n Soon, more and more Zurichers were violating the Lenten rules. Authorities arrested Zwingli, but he argues that, since the Lent laws are unbiblical, neither he nor anyone else may be punished for breaking them."
+ fee_SWI.17.a: "He has a point! Release him!"
+ fee_SWI.17.b: "The law is the law! Throw him in prison!"
 
  # modifiers
 
@@ -66,3 +74,15 @@
  desc_FEE_Swiss_Onward_to_victory: "The Duke of Burgundy has fallen, make haste and tear down their walls!"
  FEE_Burgundian_War_experience: "Burgundian Wars experience"
  desc_FEE_Burgundian_War_experience: "We learned very much from our conflict with the burgundians, we've proven our might!"
+ FEE_Swiss_Open_to_Teachings: "Open to teaching"
+ desc_FEE_Swiss_Open_to_Teachings: "The merit of a man is in his words, not his birth."
+ FEE_Swiss_Countryside_Preaching: "Countryside Preaching"
+ desc_FEE_Swiss_Countryside_Preaching: "The peasant Ulrich Zwingli is certainly interesting, but we won't endorse him directly."
+ FEE_Swiss_Sausage_Disobedience: "Sausage Disobedience"
+ desc_FEE_Swiss_Sausage_Disobedience: "The laws of lent are unbiblical, we can't punish people for breaking them."
+
+# opinion modifier
+FEE_Swiss_released_Ulrich: "Released Ulrich"
+FEE_Swiss_released_Ulrich_PAP: "Released Ulrich"
+FEE_Swiss_jailed_Ulrich: "Jailed Ulrich"
+FEE_Swiss_jailed_Ulrich_PAP: "Jailed Ulrich"

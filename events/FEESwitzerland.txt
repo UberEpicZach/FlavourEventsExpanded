@@ -617,3 +617,116 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = fee_SWI.16
+	title = fee_SWI.16.tt
+	desc = fee_SWI.16.dd
+	picture = ADVISOR_eventPicture
+	fire_only_once = yes
+	trigger = {
+		tag = SWI
+		current_age = age_of_reformation
+		is_religion_enabled = reformed
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	immediate = {
+		set_country_flag = FEE_Reform_Entered_Switzerland
+	}
+	option = {
+		name = fee_SWI.16.a
+		define_advisor = {
+			type = theologian
+			name = "Ulrich Zwingli"
+			skill = 2
+			cost_multiplier = 0.25
+			culture = swiss
+			religion = reformed
+		}
+		add_country_modifier = {
+			name = FEE_Swiss_Open_to_Teachings
+			duration = 7300
+		}
+	}
+	option = {
+		name = fee_SWI.16.b
+		add_prestige = 5
+		add_country_modifier = {
+			name = FEE_Swiss_Countryside_Preaching
+			duration = 7300
+		}
+	}
+}
+
+country_event = {
+	id = fee_SWI.17
+	title = fee_SWI.17.tt
+	desc = fee_SWI.17.dd
+	picture = ADVISOR_eventPicture
+	fire_only_once = yes
+	trigger = {
+		tag = SWI
+		current_age = age_of_reformation
+		is_religion_enabled = reformed
+		exists = PAP
+		has_country_flag = FEE_Reform_Entered_Switzerland
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	immediate = {
+		set_country_flag = FEE_Sausage_Affair
+	}
+	option = {
+		name = fee_SWI.17.a
+		every_neighbor_country = {
+			limit = {
+				religion = catholic
+				NOT = {
+					tag = PAP
+				}
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = FEE_Swiss_released_Ulrich
+			}
+		}
+		reverse_add_opinion = {
+			who = PAP
+			modifier = FEE_Swiss_released_Ulrich_PAP
+		}
+		add_reform_desire = 0.01
+		add_country_modifier = {
+			name = FEE_Swiss_Sausage_Disobedience
+			duration = 3650
+		}
+	}
+	option = {
+		name = fee_SWI.17.b
+		add_stability = -1
+		1869 = {
+			spawn_rebels = {
+				type = reformed_rebels
+				size = 2
+			}
+		}
+		every_neighbor_country = {
+			limit = {
+				religion = catholic
+				NOT = {
+					tag = PAP
+				}
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = FEE_Swiss_jailed_Ulrich
+			}
+		}
+		reverse_add_opinion = {
+			who = PAP
+			modifier = FEE_Swiss_jailed_Ulrich_PAP
+		}
+	}
+}
