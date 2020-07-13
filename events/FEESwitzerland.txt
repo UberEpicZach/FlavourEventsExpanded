@@ -637,6 +637,21 @@ country_event = {
 	}
 	option = {
 		name = fee_SWI.16.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				has_idea_group = humanist_ideas
+			}
+			modifier = {
+				factor = 2
+				religion = reformed
+			}
+			modifier = {
+				factor = 0.5
+				religion = catholic
+			}
+		}
 		define_advisor = {
 			type = theologian
 			name = "Ulrich Zwingli"
@@ -652,6 +667,21 @@ country_event = {
 	}
 	option = {
 		name = fee_SWI.16.b
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_idea_group = humanist_ideas
+			}
+			modifier = {
+				factor = 0
+				religion = reformed
+			}
+			modifier = {
+				factor = 1.5
+				religion = catholic
+			}
+		}
 		add_prestige = 5
 		add_country_modifier = {
 			name = FEE_Swiss_Countryside_Preaching
@@ -674,13 +704,28 @@ country_event = {
 		has_country_flag = FEE_Reform_Entered_Switzerland
 	}
 	mean_time_to_happen = {
-		months = 1
+		months = 60
 	}
 	immediate = {
 		set_country_flag = FEE_Sausage_Affair
 	}
 	option = {
 		name = fee_SWI.17.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				has_idea_group = humanist_ideas
+			}
+			modifier = {
+				factor = 2
+				religion = reformed
+			}
+			modifier = {
+				factor = 0
+				religion = catholic
+			}
+		}
 		every_neighbor_country = {
 			limit = {
 				religion = catholic
@@ -705,6 +750,21 @@ country_event = {
 	}
 	option = {
 		name = fee_SWI.17.b
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				has_idea_group = humanist_ideas
+			}
+			modifier = {
+				factor = 0
+				religion = reformed
+			}
+			modifier = {
+				factor = 2
+				religion = catholic
+			}
+		}
 		add_stability = -1
 		1869 = {
 			spawn_rebels = {
@@ -727,6 +787,200 @@ country_event = {
 		reverse_add_opinion = {
 			who = PAP
 			modifier = FEE_Swiss_jailed_Ulrich_PAP
+		}
+	}
+}
+
+country_event = {
+	id = fee_SWI.18
+	title = fee_SWI.18.tt
+	desc = fee_SWI.18.dd
+	picture = ADVISOR_eventPicture
+	fire_only_once = yes
+	trigger = {
+		tag = SWI
+		current_age = age_of_reformation
+		is_religion_enabled = reformed
+		has_country_flag = FEE_Sausage_Affair
+	}
+	mean_time_to_happen = {
+		months = 6
+	}
+	option = {
+		name = fee_SWI.18.a
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				not = {
+					religion = reformed
+				}
+			}
+			modifier = {
+				factor = 0
+				has_idea_group = humanist_ideas
+			}
+		}
+		country_event = {
+			id = fee_SWI.19
+			days = 1
+		}
+	}
+	option = {
+		name = fee_SWI.18.b
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				not = {
+					religion = catholic
+				}
+			}
+			modifier = {
+				factor = 0
+				has_idea_group = humanist_ideas
+			}
+		}
+		country_event = {
+			id = fee_SWI.20
+			days = 1
+		}
+	}
+	option = {
+		name = fee_SWI.18.c
+		trigger = {
+			not = {
+				OR = {
+					religion = catholic
+					religion = reformed
+				}
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
+		add_prestige = 10
+	}
+	option = {
+		name = fee_SWI.18.d
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				not = {
+					OR = {
+						religion = catholic
+						religion = reformed
+					}
+				}
+			}
+		}
+		random_list = {
+			50 = {
+				country_event = {
+					id = fee_SWI.19
+					days = 1
+				}
+			}
+			50 = {
+				country_event = {
+					id = fee_SWI.20
+					days = 1
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = fee_SWI.19
+	title = fee_SWI.19.tt
+	desc = fee_SWI.19.dd
+	picture = ADVISOR_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = fee_SWI.19.a
+		if = {
+			limit = {
+				not = {
+					religion = reformed
+				}
+			}
+			change_religion = reformed
+		}
+		1869 = {
+			if = {
+				limit = {
+					not = {
+						religion = reformed
+					}
+				}
+				change_religion = reformed
+			}
+			if = {
+				limit = {
+					is_reformation_center = no
+				}
+				add_reform_center = reformed
+			}
+			add_province_modifier = {
+				name = FEE_Zurich_Reformation_Enshrined
+				duration = 18250
+			}
+		}
+		add_country_modifier = {
+			name = FEE_Swiss_Zwinglian_Debate
+			duration = 9125
+		}
+		add_country_modifier = {
+			name = FEE_Swiss_Religious_Fervor
+			duration = 9125
+		}
+	}
+}
+
+country_event = {
+	id = fee_SWI.20
+	title = fee_SWI.20.tt
+	desc = fee_SWI.20.dd
+	picture = ADVISOR_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = fee_SWI.20.a
+		if = {
+			limit = {
+				not = {
+					religion = catholic
+				}
+			}
+			change_religion = catholic
+		}
+		1869 = {
+			if = {
+				limit = {
+					not = {
+						religion = catholic
+					}
+				}
+				change_religion = catholic
+			}
+			if = {
+				limit = {
+					is_reformation_center = yes
+				}
+				remove_reform_center = reformed
+				remove_reform_center = protestant
+			}
+			add_province_modifier = {
+				name = FEE_Zurich_Catholicism_Enshrined
+				duration = 18250
+			}
+		}
+		add_country_modifier = {
+			name = FEE_Swiss_Catholic_Debate_Win
+			duration = 9125
 		}
 	}
 }

@@ -61,6 +61,18 @@
  fee_SWI.17.dd: "Although Zwingli’s preaching career got off to a rocky start, especially with early sermons against the excesses of Swiss mercenaries, he quickly grew wildly popular in the countryside for his passionate reforming message. Soon, the town council at Zurich awarded Zwingli with the position of “People’s Preacher” in their town and in the canton more broadly, at the age of only thirty-five!\nHis career in Zurich started off fast and furious. He and his followers decided that only an ostentatious display against Catholic “superstitions” and “legalism” could effectively introduce the Reformation to Switzerland. To that end, on the first day of Lent, a time when Catholics were meant to abstain from eating pork and other “rich meats,” a large crowd of Zwingli’s followers held a feast of pork sausages – right in the middle of the town!\n Soon, more and more Zurichers were violating the Lenten rules. Authorities arrested Zwingli, but he argues that, since the Lent laws are unbiblical, neither he nor anyone else may be punished for breaking them."
  fee_SWI.17.a: "He has a point! Release him!"
  fee_SWI.17.b: "The law is the law! Throw him in prison!"
+ fee_SWI.18.tt: "The Disputation"
+ fee_SWI.18.dd: "After the infamous Sausage Affair, Zwingli only escalated his attacks on the Catholic church; now, he refers to the Pope in Rome as a non-biblical church leader and declares our Bishop’s authority to be null and void. He even has declared that the Mass is unbiblical!\nWhile this is outright heresy, we in Switzerland have always handled differences of opinion in stride. In typical democratic fashion, the government of Zurich has decided to hold a public debate between Zwingli and leading Catholic theologians of Switzerland. Their rule that the Bible alone would be used as the basis was already a victory for Zwingli before the debate started.\nNonetheless, the Catholic theologians implored the citizens not to break with centuries of tradition, while Zwingli argues that his opinions are from the Bible and nothing else. In the end, it was a close debate, with public opinion wavering between the two sides. Now, we must decide who the winner was."
+ fee_SWI.18.a: "Zwingli has proven himself and his beliefs!"
+ fee_SWI.18.b: "The Catholic Church has proven itself worthy!"
+ fee_SWI.18.c: "What in the world are you all talking about we aren't filthy papist or calvinists"
+ fee_SWI.18.d: "It is too close to call! Let the people vote and decide!"
+ fee_SWI.19.tt: "Zwingli's triumph"
+ fee_SWI.19.dd: "Zwingli has shown that the papacy is non-biblical and that the bible is the true word of god. The dust has settled and the teachings of John Calvin will now reign supreme in Switzerland."
+ fee_SWI.19.a: "Imagine being a filthy papist."
+ fee_SWI.20.tt: "The Church's triumph"
+ fee_SWI.20.dd: "The church has shown that the papacy is holy and just, and that while the bible is the true word of god, our culture and unity as christians is equally important. The dust has settled and the teachings of The Church will now reign supreme in Switzerland."
+ fee_SWI.20.a: "Imagine being a filthy calvinist."
 
  # modifiers
 
@@ -80,6 +92,18 @@
  desc_FEE_Swiss_Countryside_Preaching: "The peasant Ulrich Zwingli is certainly interesting, but we won't endorse him directly."
  FEE_Swiss_Sausage_Disobedience: "Sausage Disobedience"
  desc_FEE_Swiss_Sausage_Disobedience: "The laws of lent are unbiblical, we can't punish people for breaking them."
+ FEE_Swiss_Zwinglian_Debate: "Zwinglian Debate"
+ desc_FEE_Swiss_Zwinglian_Debate: "Zwingli defeated the church in open debate, let us rejoice!"
+ FEE_Swiss_Religious_Fervor: "Religious Fervor"
+ desc_FEE_Swiss_Religious_Fervor: "Our spiritual destiny is pre-determined, so we must live up to the destiny god has perscribed for us."
+ FEE_Swiss_Catholic_Debate_Win: "Church won debate"
+ desc_FEE_Swiss_Catholic_Debate_Win: "Imagine losing a debate to an institution that has been taking literal cash bribes to absolve people of their sins."
+
+# province modifier
+ FEE_Zurich_Catholicism_Enshrined: "Catholicism Enshrined"
+ desc_FEE_Zurich_Catholicism_Enshrined: "Gold and Silver churches will line our streets, showing the splendor of god."
+ FEE_Zurich_Reformation_Enshrined: "Reformation Enshrined"
+ desc_FEE_Swiss_Open_to_Teachings: "With churches returning to their humble roots and the incense and gold laden churches being torn down, we have quiet a bit of extra resources to develop our fertile lands."
 
 # opinion modifier
 FEE_Swiss_released_Ulrich: "Released Ulrich"
