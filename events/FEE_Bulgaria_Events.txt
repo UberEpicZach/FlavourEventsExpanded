@@ -33,12 +33,12 @@ country_event = {
 					not = {
 						has_building = fort_15th
 					}
-                }
-                add_treasury = -100
+				}
+				add_treasury = -100
 				add_building = fort_15th
 			}
-        }
-        add_years_of_income = -0.25
+		}
+		add_years_of_income = -0.25
 		ai_chance = {
 			factor = 100
 		}
@@ -71,12 +71,51 @@ country_event = {
 		# Put the money improving the farms
 		name = FEE_Bulgaria_Events.1.d
 		4704 = {
-            add_base_production = 2
-            add_province_modifier = {
-                name = FEE_Tarnovo_Agrarian_Improvement
-                duration = 1825
-            }
+			add_base_production = 2
+			add_province_modifier = {
+				name = FEE_Tarnovo_Agrarian_Improvement
+				duration = 1825
+			}
 		}
 		add_years_of_income = -0.25
+	}
+}
+
+country_event = {
+	id = FEE_Bulgaria_Events.2
+	title = FEE_Bulgaria_Events.2.tt
+	desc = FEE_Bulgaria_Events.2.dd
+	picture = ADVISOR_eventPicture
+	fire_only_once = yes
+	trigger = {
+		is_subject = no
+		tag = BUL
+		owns_core_province = 151
+		is_at_war = no
+	}
+	mean_time_to_happen = {
+		months = 2
+	}
+	option = {
+		# encourage recruitment into army
+		name = FEE_Bulgaria_Events.2.a
+		151 = {
+			if = {
+				trigger = {
+					ROOT = {
+						not = {
+							has_country_flag = use_missions_expanded_missions_instead_of_paradox
+						}
+					}
+				}
+				change_province_name = "Tsargrad"
+				rename_capital = "Tsargrad"
+			}
+			add_devastation = -10
+		}
+		add_country_modifier = {
+			name = FEE_Bulgarian_Parades_Through_Tsargrad
+			duration = 3650
+		}
 	}
 }

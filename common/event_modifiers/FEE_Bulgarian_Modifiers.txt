@@ -14,3 +14,8 @@ FEE_Bulgarian_Administrative_Improvement = {
 FEE_Tarnovo_Agrarian_Improvement = {
     local_production_efficiency = 0.25
 }
+
+FEE_Bulgarian_Parades_Through_Tsargrad = {
+    land_morale = 0.05
+    recover_army_morale_speed = 0.1
+}
