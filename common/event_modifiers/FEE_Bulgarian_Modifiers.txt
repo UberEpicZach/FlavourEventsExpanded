@@ -1,0 +1,16 @@
+FEE_Tarnovo_Great_Fort = {
+    local_defensiveness = 0.25
+}
+
+FEE_Bulgarian_Recruitment_Drive = {
+    manpower_recovery_speed = 0.1
+    global_manpower_modifier = 0.1
+}
+
+FEE_Bulgarian_Administrative_Improvement = {
+    global_tax_modifier = 0.1
+}
+
+FEE_Tarnovo_Agrarian_Improvement = {
+    local_production_efficiency = 0.25
+}

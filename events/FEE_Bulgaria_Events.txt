@@ -1,0 +1,82 @@
+namespace = FEE_Bulgaria_Events
+# Designed by a(stolfo)_sassy_carrot, coded by babysnake
+country_event = {
+	id = FEE_Bulgaria_Events.1
+	title = FEE_Bulgaria_Events.1.tt
+	desc = FEE_Bulgaria_Events.1.dd
+	picture = ADVISOR_eventPicture
+	fire_only_once = yes
+	trigger = {
+		is_subject = no
+		tag = BUL
+		owns_core_province = 4704
+		grown_by_development = 20
+		4704 = {
+			# Tarnovo starts as 2/4/2 (8 dev)
+			# trade good is grain
+			development = 12
+		}
+	}
+	mean_time_to_happen = {
+		months = 24
+	}
+	option = {
+		# build fort
+		name = FEE_Bulgaria_Events.1.a
+		4704 = {
+			add_province_modifier = {
+				name = FEE_Tarnovo_Great_Fort
+				duration = -1
+			}
+			if = {
+				limit = {
+					not = {
+						has_building = fort_15th
+					}
+                }
+                add_treasury = -100
+				add_building = fort_15th
+			}
+        }
+        add_years_of_income = -0.25
+		ai_chance = {
+			factor = 100
+		}
+	}
+	option = {
+		# encourage recruitment into army
+		name = FEE_Bulgaria_Events.1.b
+		4704 = {
+			add_base_manpower = 2
+		}
+		add_country_modifier = {
+			name = FEE_Bulgarian_Recruitment_Drive
+			duration = 1825
+		}
+		add_years_of_income = -0.25
+	}
+	option = {
+		# Put the money towards the administration in the city
+		name = FEE_Bulgaria_Events.1.c
+		4704 = {
+			add_base_tax = 1
+		}
+		add_country_modifier = {
+			name = FEE_Bulgarian_Administrative_Improvement
+			duration = 1825
+		}
+		add_years_of_income = -0.25
+	}
+	option = {
+		# Put the money improving the farms
+		name = FEE_Bulgaria_Events.1.d
+		4704 = {
+            add_base_production = 2
+            add_province_modifier = {
+                name = FEE_Tarnovo_Agrarian_Improvement
+                duration = 1825
+            }
+		}
+		add_years_of_income = -0.25
+	}
+}
