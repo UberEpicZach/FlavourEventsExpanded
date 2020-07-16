@@ -66,11 +66,11 @@ country_event = {
 		emperor = {
 			country_event = {
 				id = CE_ansbach_expanded.3
-				days = 1
+				days = 30
 			}
 		}
 		ai_chance = {
-			factor = 1
+			factor = 5
 			modifier = {
 				factor = 2
 				NOT = {
@@ -83,8 +83,13 @@ country_event = {
 			}
 			modifier = {
 				factor = 100
-				BRA = {
-					DIP = 6
+				OR = {
+					BRA = {
+						DIP = 6
+					}
+					ANS = {
+						DIP = 6
+					}
 				}
 			}
 		}
@@ -97,7 +102,7 @@ country_event = {
 		}
 
 		ai_chance = {
-			factor = 2
+			factor = 1
 			modifier = {
 				factor = 0.1
 				treasury = 100
@@ -119,8 +124,6 @@ country_event = {
 	desc = CE_ansbach_expanded.3.d
 	picture = ELECTION_REPUBLICAN_eventPicture
 	
-	fire_only_once = yes
-	
 	is_triggered_only = yes
 	
 	option = {
@@ -128,7 +131,7 @@ country_event = {
 		NUM = {
 			country_event = {
 				id = CE_ansbach_expanded.4
-				days = 1
+				days = 30
 			}
 		}
 		add_treasury = 100
@@ -151,8 +154,13 @@ country_event = {
 			}
 			modifier = {
 				factor = 100
-				BRA = {
-					DIP = 6
+				OR = {
+					BRA = {
+						DIP = 6
+					}
+					ANS = {
+						DIP = 6
+					}
 				}
 			}
 		}
@@ -171,9 +179,7 @@ country_event = {
 	title = CE_ansbach_expanded.4.t
 	desc = CE_ansbach_expanded.4.d
 	picture = ELECTION_REPUBLICAN_eventPicture
-	
-	fire_only_once = yes
-	
+
 	is_triggered_only = yes
 	
 	option = {
@@ -184,7 +190,7 @@ country_event = {
 			}
 			country_event = {
 				id = CE_ansbach_expanded.5
-				days = 1
+				days = 30
 			}
 		}
 		ai_chance = {
@@ -212,8 +218,13 @@ country_event = {
 			}
 			modifier = {
 				factor = 100
-				BRA = {
-					DIP = 6
+				OR = {
+					BRA = {
+						DIP = 6
+					}
+					ANS = {
+						DIP = 6
+					}
 				}
 			}
 		}
@@ -226,7 +237,7 @@ country_event = {
 			}
 			country_event = {
 				id = CE_ansbach_expanded.6
-				days = 1
+				days = 30
 			}
 		}
 		ai_chance = {
@@ -262,7 +273,7 @@ country_event = {
 			}
 			country_event = {
 				id = CE_ansbach_expanded.7
-				days = 1
+				days = 30
 			}
 		}
 		ai_chance = {
@@ -276,9 +287,7 @@ country_event = {
 	title = CE_ansbach_expanded.5.t
 	desc = CE_ansbach_expanded.5.d
 	picture = ELECTION_REPUBLICAN_eventPicture
-	
-	fire_only_once = yes
-	
+
 	is_triggered_only = yes
 	
 	option = {
@@ -297,9 +306,7 @@ country_event = {
 	title = CE_ansbach_expanded.6.t
 	desc = CE_ansbach_expanded.6.d
 	picture = ELECTION_REPUBLICAN_eventPicture
-	
-	fire_only_once = yes
-	
+
 	is_triggered_only = yes
 	
 	option = {
@@ -337,9 +344,7 @@ country_event = {
 	title = CE_ansbach_expanded.7.t
 	desc = CE_ansbach_expanded.7.d
 	picture = ELECTION_REPUBLICAN_eventPicture
-	
-	fire_only_once = yes
-	
+
 	is_triggered_only = yes
 	
 	option = {
@@ -403,7 +408,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 1
+		days = 30
 	}
 	
 	option = {
@@ -489,7 +494,7 @@ country_event = {
 		WBG = {
 			country_event = {
 				id = CE_ansbach_expanded.11
-				days = 1
+				days = 30
 			}
 		}
 		ai_chance = {
@@ -510,9 +515,7 @@ country_event = {
 	title = CE_ansbach_expanded.11.t
 	desc = CE_ansbach_expanded.11.d
 	picture = ELECTION_REPUBLICAN_eventPicture
-	
-	fire_only_once = yes
-	
+
 	is_triggered_only = yes
 	
 	option = {
@@ -523,7 +526,7 @@ country_event = {
 			}
 			country_event = {
 				id = CE_ansbach_expanded.13
-				days = 1
+				days = 30
 			}
 			custom_tooltip = "CE_surrender_of_wurzburg"
 		}
@@ -562,8 +565,13 @@ country_event = {
 			}
 			modifier = {
 				factor = 100
-				BRA = {
-					DIP = 6
+				OR = {
+					BRA = {
+						DIP = 6
+					}
+					ANS = {
+						DIP = 6
+					}
 				}
 			}
 		}
@@ -576,7 +584,7 @@ country_event = {
 			}
 			country_event = {
 				id = CE_ansbach_expanded.12
-				days = 1
+				days = 30
 			}
 		}
 		ai_chance = {
@@ -590,9 +598,7 @@ country_event = {
 	title = CE_ansbach_expanded.12.t
 	desc = CE_ansbach_expanded.12.d
 	picture = ELECTION_REPUBLICAN_eventPicture
-	
-	fire_only_once = yes
-	
+
 	is_triggered_only = yes
 	
 	option = {
@@ -635,9 +641,7 @@ country_event = {
 	title = CE_ansbach_expanded.13.t
 	desc = CE_ansbach_expanded.13.d
 	picture = ELECTION_REPUBLICAN_eventPicture
-	
-	fire_only_once = yes
-	
+
 	is_triggered_only = yes
 	
 	option = {
@@ -656,6 +660,7 @@ country_event = {
 					}
 				}
 			}
+			add_core = ANS
 			cede_province = ANS
 			add_province_modifier = {
 				name = "CE_Wurzburger_Lands"
@@ -733,9 +738,14 @@ country_event = {
 		ai_chance = {
 			factor = 1
 			modifier = {
-				factor = 0
-				BRA = {
-					DIP = 6
+				factor = 100
+				OR = {
+					BRA = {
+						DIP = 6
+					}
+					ANS = {
+						DIP = 6
+					}
 				}
 			}
 			modifier = {
@@ -759,9 +769,7 @@ country_event = {
 	title = CE_ansbach_expanded.15.t
 	desc = CE_ansbach_expanded.15.d
 	picture = ELECTION_REPUBLICAN_eventPicture
-	
-	fire_only_once = yes
-	
+
 	is_triggered_only = yes
 	
 	option = {
