@@ -75,6 +75,7 @@ province_event = {
 
 	trigger = {
 		religion = catholic
+		is_religion_enabled = protestant 
 		NOT = { 
 			owner = { religion = catholic }
 		}
