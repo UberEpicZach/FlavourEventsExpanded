@@ -23,7 +23,7 @@ country_event = {
 			}
 		}
 		heir_age = 5
-		NOT = { heir_age = 15 }
+		NOT = { heir_age = 14 }
 	}
 	
 	mean_time_to_happen = {
@@ -100,7 +100,7 @@ country_event = {
 			has_heir_flag = educated_by_fortification_expert
 			has_heir_flag = educated_by_grand_captain														
 		}
-		NOT = { heir_age = 15 }
+		NOT = { heir_age = 14 }
 		advisor = artist
 	}
 	
@@ -162,7 +162,7 @@ country_event = {
 			has_heir_flag = educated_by_fortification_expert
 			has_heir_flag = educated_by_grand_captain														
 		}		
-		NOT = { heir_age = 15 }
+		NOT = { heir_age = 14 }
 		advisor = natural_scientist
 	}
 	
@@ -224,7 +224,7 @@ country_event = {
 			has_heir_flag = educated_by_fortification_expert
 			has_heir_flag = educated_by_grand_captain														
 		}		
-		NOT = { heir_age = 15 }
+		NOT = { heir_age = 14 }
 		advisor = inquisitor
 	}
 	
@@ -286,7 +286,7 @@ country_event = {
 			has_heir_flag = educated_by_fortification_expert
 			has_heir_flag = educated_by_grand_captain														
 		}		
-		NOT = { heir_age = 15 }
+		NOT = { heir_age = 14 }
 		advisor = trader
 	}
 	
@@ -352,7 +352,7 @@ country_event = {
 			has_heir_flag = educated_by_fortification_expert
 			has_heir_flag = educated_by_grand_captain														
 		}		
-		NOT = { heir_age = 15 }
+		NOT = { heir_age = 14 }
 		advisor = spymaster
 	}
 	
@@ -418,7 +418,7 @@ country_event = {
 			has_heir_flag = educated_by_fortification_expert
 			has_heir_flag = educated_by_grand_captain														
 		}		
-		NOT = { heir_age = 15 }
+		NOT = { heir_age = 14 }
 		advisor = colonial_governor
 	}
 	
@@ -484,7 +484,7 @@ country_event = {
 			has_heir_flag = educated_by_fortification_expert
 			has_heir_flag = educated_by_grand_captain														
 		}		
-		NOT = { heir_age = 15 }
+		NOT = { heir_age = 14 }
 		advisor = army_reformer
 	}
 	
@@ -550,7 +550,7 @@ country_event = {
 			has_heir_flag = educated_by_fortification_expert
 			has_heir_flag = educated_by_grand_captain														
 		}		
-		NOT = { heir_age = 15 }
+		NOT = { heir_age = 14 }
 		advisor = fortification_expert
 	}
 	
@@ -616,7 +616,7 @@ country_event = {
 			has_heir_flag = educated_by_fortification_expert
 			has_heir_flag = educated_by_grand_captain														
 		}		
-		NOT = { heir_age = 15 }
+		NOT = { heir_age = 14 }
 		advisor = grand_captain
 	}
 	
@@ -671,7 +671,7 @@ country_event = {
 	trigger = {
 		has_heir = yes   
 		has_heir_flag = in_education_excellent
-		heir_age = 15
+		heir_age = 14
 	}
 	
 	mean_time_to_happen = {
@@ -763,7 +763,7 @@ country_event = {
 	trigger = {
 		has_heir = yes   
 		has_heir_flag = in_education_good
-		heir_age = 15
+		heir_age = 14
 	}
 	
 	mean_time_to_happen = {
@@ -855,7 +855,7 @@ country_event = {
 	trigger = {
 		has_heir = yes   
 		has_heir_flag = in_education_average
-		heir_age = 15
+		heir_age = 14
 	}
 	
 	mean_time_to_happen = {
@@ -947,7 +947,7 @@ country_event = {
 	trigger = {
 		has_heir = yes   
 		has_heir_flag = in_education_but_not_learning 			
-		heir_age = 15
+		heir_age = 14
 	}
 	
 	mean_time_to_happen = {
@@ -1423,7 +1423,7 @@ country_event = {
 	
 	trigger = {
 		heir_age = 7
-		NOT = { heir_age = 15 }	
+		NOT = { heir_age = 14 }	
 		OR = { 
 			has_heir_flag = in_education_excellent 
 			has_heir_flag = in_education_good 
