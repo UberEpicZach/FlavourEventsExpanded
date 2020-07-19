@@ -397,7 +397,7 @@ country_event = {
 	
 	mean_time_to_happen = {
 		days = 3650
-	
+	}
 
 	option = {
 		name = CE_brandenburg_expanded.7.a
@@ -916,7 +916,10 @@ country_event = {
 		BRG = {
 			is_subject = no
 		}
-		exists = BRA
+		OR = {
+			exists = BRA
+			exists = PRU
+		}
 		exists = BRG
 		exists = PAL
 		is_year = 1609
@@ -950,10 +953,23 @@ country_event = {
 				days = 30
 			}
 		}
-		BRA = {
-			country_event = {
-				id = CE_brandenburg_expanded.18
-				days = 30
+		if = {
+			limit = {
+				exists = BRA
+			}
+			BRA = {
+				country_event = {
+					id = CE_brandenburg_expanded.18
+					days = 30
+				}
+			}
+		}
+		else = {
+			PRU = {
+				country_event = {
+					id = CE_brandenburg_expanded.18
+					days = 30
+				}
 			}
 		}
 		HAB = {
@@ -1378,7 +1394,7 @@ country_event = {
 
 ###End of Phase 1###
 
-#The Spoils of War(Palatinate)
+#The Spoils of War
 country_event = {
 	id = CE_brandenburg_expanded.25
 	title = CE_brandenburg_expanded.25.t
@@ -1420,8 +1436,13 @@ country_event = {
 		set_country_flag = United_Duchies_Negotiations_Divide_yes
 		if = {
 			limit = {
-				BRA = {
-					has_country_flag = United_Duchies_Negotiations_Divide_yes
+				OR = {
+					BRA = {
+						has_country_flag = United_Duchies_Negotiations_Divide_yes
+					}
+					PRU = {
+						has_country_flag = United_Duchies_Negotiations_Divide_yes
+					}
 				}
 				PAL = {
 					has_country_flag = United_Duchies_Negotiations_Divide_yes
@@ -1441,7 +1462,8 @@ country_event = {
 				factor = 10
 				any_ally = {
 					OR = {
-						tag = BRA 
+						tag = BRA
+						tag = PRU
 						tag = PAL 
 					}
 				}
@@ -1456,8 +1478,13 @@ country_event = {
 		name = CE_brandenburg_expanded.25.b
 		trigger = {
 			AND = {
-				BRA = {
-					has_country_flag = United_Duchies_occupied_yes
+				OR = {
+					BRA = {
+						has_country_flag = United_Duchies_occupied_yes
+					}
+					PRU = {
+						has_country_flag = United_Duchies_occupied_yes
+					}
 				}
 				PAL = {
 					has_country_flag = United_Duchies_occupied_yes
@@ -1516,8 +1543,13 @@ country_event = {
 		trigger = {
 			NOT = {
 				AND = {
-					BRA = {
-						has_country_flag = United_Duchies_occupied_yes
+					OR = {
+						BRA = {
+							has_country_flag = United_Duchies_occupied_yes
+						}
+						PRU = {
+							has_country_flag = United_Duchies_occupied_yes
+						}
 					}
 					PAL = {
 						has_country_flag = United_Duchies_occupied_yes
@@ -1673,18 +1705,36 @@ country_event = {
 				cede_province = PAL
 				add_core = PAL
 			}
-		
-			every_owned_province = {
+			if = {
 				limit = {
-					NOT = {
-						OR = {
-							province_id = 4768
-							province_id = 84
+					exists = BRA 
+				}
+				every_owned_province = {
+					limit = {
+						NOT = {
+							OR = {
+								province_id = 4768
+								province_id = 84
+							}
 						}
 					}
+					cede_province = BRA
+					add_core = BRA 
 				}
-				cede_province = BRA
-				add_core = BRA 
+			}
+			else = {
+				every_owned_province = {
+					limit = {
+						NOT = {
+							OR = {
+								province_id = 4768
+								province_id = 84
+							}
+						}
+					}
+					cede_province = PRU
+					add_core = PRU 
+				}
 			}
 		}
 		ai_chance = {
@@ -1728,22 +1778,40 @@ country_event = {
 			factor = 1
 			modifier = {
 				factor = 2
-				BRA = {
-					has_country_flag = United_Duchies_Negotiations_Divide_yes
+				OR = {
+					BRA = {
+						has_country_flag = United_Duchies_Negotiations_Divide_yes
+					}
+					PRU = {
+						has_country_flag = United_Duchies_Negotiations_Divide_yes
+					}
 				}
 			}
 			modifier = {
 				factor = 1.5
-				BRA = {
-					army_size = PAL
+				OR = {
+					BRA = {
+						army_size = PAL
+					}
+					PRU = {
+						army_size = PAL
+					}
 				}
 			}
 			modifier = {
 				factor = 1.5
-				BRA = {
-					army_strength = {
-						who = PAL
-						value = 2
+				OR = {
+					BRA = {
+						army_strength = {
+							who = PAL
+							value = 2
+						}
+					}
+					PRU = {
+						army_strength = {
+							who = PAL
+							value = 2
+						}
 					}
 				}
 			}
@@ -1760,10 +1828,23 @@ country_event = {
 		# PAL = {
 			# create_union = BRG
 		# }
-		BRA = {
-			country_event = {
-				id = CE_brandenburg_expanded.30
-				days = 30
+		if = {
+			limit = {
+				exists = BRA 
+			}
+			BRA = {
+				country_event = {
+					id = CE_brandenburg_expanded.30
+					days = 30
+				}
+			}
+		}
+		else = {
+			PRU = {
+				country_event = {
+					id = CE_brandenburg_expanded.30
+					days = 30
+				}
 			}
 		}
 		ai_chance = {
@@ -1777,23 +1858,36 @@ country_event = {
 			modifier = {
 				factor = 1.5
 				PAL = {
-					army_size = BRA
-				}
-			}
-			modifier = {
-				factor = 1.5
-				PAL = {
-					army_strength = {
-						who = BRA
-						value = 2
+					OR = {
+						army_size = BRA
+						army_size = PRU
 					}
 				}
 			}
 			modifier = {
 				factor = 1.5
 				PAL = {
-					diplomatic_reputation = BRA
+					OR = {
+						army_strength = {
+							who = BRA
+							value = 2
+						}
+						army_strength = {
+							who = PRU
+							value = 2
+						}
+					}
 				}
+			}
+			modifier = {
+				factor = 1.5
+				PAL = {
+					OR = {
+						diplomatic_reputation = BRA
+						diplomatic_reputation = PRU
+					}
+				}
+				
 			}
 		}
 	}
@@ -1847,8 +1941,18 @@ country_event = {
 	}
 	option = {
 		name = CE_brandenburg_expanded.29.b
-		BRA = {
-			create_union = BRG
+		if = {
+			limit = {
+				exists = BRA 
+			}
+			BRA = {
+				create_union = BRG
+			}
+		}
+		else = {
+			PRU = {
+				create_union = BRG
+			}
 		}
 		ai_chance = {
 			factor = 1
@@ -1886,7 +1990,10 @@ country_event = {
 			modifier = {
 				factor = 0.5
 				NOT = {
-					army_size = BRA
+					OR = {
+						army_size = BRA
+						army_size = PRU
+					}
 				}
 			}
 			modifier = {
@@ -1897,8 +2004,13 @@ country_event = {
 			}
 			modifier = {
 				factor = 0.1
-				any_ally = {
-					tag = BRA
+				OR = {
+					any_ally = {
+						tag = BRA
+					}
+					any_ally = {
+						tag = PRU
+					}
 				}
 			}
 		}

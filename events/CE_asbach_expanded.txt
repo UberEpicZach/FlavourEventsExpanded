@@ -20,7 +20,7 @@ country_event = {
 			}
 		}
 		is_year = 1470
-	}
+	}`
 	
 	mean_time_to_happen = {
 		days = 365
@@ -100,7 +100,6 @@ country_event = {
 			name = "CE_franconian_league"
 			duration = 3650
 		}
-
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -168,6 +167,15 @@ country_event = {
 	option = {
 		name = CE_ansbach_expanded.3.b
 		add_treasury = 100
+		random_country = {
+			limit = {
+				has_country_flag = CE_franconian_ambition
+			}
+			country_event = {
+				id = CE_ansbach_expanded.7
+				days = 30
+			}
+		}
 		ai_chance = {
 			factor = 1
 		}
@@ -413,6 +421,7 @@ country_event = {
 	
 	option = {
 		name = CE_ansbach_expanded.9.a
+		clr_country_flag = CE_franconian_ambition
 		every_province = {
 			limit = {
 				culture = franconian
