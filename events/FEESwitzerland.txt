@@ -90,12 +90,12 @@ country_event = {
 		FRA = {
 			add_opinion = {
 				who = SWI
-				modifier = hee_swiss_soldiers_opinion
+				modifier = fee_swiss_soldiers_opinion
 			}
 		}
 		add_opinion = {
 			who = FRA
-			modifier = hee_swiss_soldiers_opinion
+			modifier = fee_swiss_soldiers_opinion
 		}
 	}
 	option = {
@@ -125,7 +125,7 @@ country_event = {
 		name = fee_SWI.4.a
 		add_opinion = {
 			who = SWI
-			modifier = hee_swiss_soldiers_denied
+			modifier = fee_swiss_soldiers_denied
 		}
 	}
 }
@@ -222,7 +222,7 @@ country_event = {
 		}
 		reverse_add_opinion = {
 			who = FRA
-			modifier = hee_valtellina_issue
+			modifier = fee_valtellina_issue
 		}
 		reverse_add_casus_belli = {
 			target = HAB
@@ -243,7 +243,7 @@ country_event = {
 		}
 		reverse_add_opinion = {
 			who = HAB
-			modifier = hee_valtellina_issue
+			modifier = fee_valtellina_issue
 		}
 		reverse_add_casus_belli = {
 			target = FRA
@@ -303,7 +303,7 @@ country_event = {
 	option = {
 		name = fee_SWI.7.b
 		add_country_modifier = {
-			name = hee_wettstein
+			name = fee_wettstein
 			duration = 7200
 		}
 		add_dip_power = 50
@@ -336,7 +336,7 @@ country_event = {
 	option = {
 		name = fee_SWI.8.a
 		add_country_modifier = {
-			name = hee_bernoullis
+			name = fee_bernoullis
 			duration = -1
 		}
 	}

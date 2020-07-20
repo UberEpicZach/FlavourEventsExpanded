@@ -18,7 +18,7 @@ country_event = {
 			is_year = 1590
 		}
 		NOT = {
-			has_country_modifier = hee_moved_capital
+			has_country_modifier = fee_moved_capital
 		}
 	}
 	
@@ -30,7 +30,7 @@ country_event = {
 		name = fee_GOC.1.a
 		542 = {
 			add_province_modifier = {
-				name = hee_golkonda_fort
+				name = fee_golkonda_fort
 				duration = 1
 			}
 			add_base_manpower = 1

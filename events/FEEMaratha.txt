@@ -35,7 +35,7 @@ country_event = {
 		}
 		NOT = {
 			any_country = {
-				has_country_modifier = hee_marathi_enemy
+				has_country_modifier = fee_marathi_enemy
 			}
 		}
 		NOT = {
@@ -73,7 +73,7 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 				add_country_modifier = { #Keep track of previous owner
-					name = hee_marathi_enemy
+					name = fee_marathi_enemy
 					duration = -1
 					hidden = yes
 				}
@@ -138,13 +138,13 @@ province_event = {
 		owner = {
 			OR = {
 				AND = {
-					has_country_modifier = hee_marathi_enemy
+					has_country_modifier = fee_marathi_enemy
 					num_of_cities = 5
 					war_with = MAR
 				}
 				AND = {
 					any_subject_country = {
-						has_country_modifier = hee_marathi_enemy
+						has_country_modifier = fee_marathi_enemy
 					}
 					num_of_cities = 6
 					war_with = MAR
@@ -158,7 +158,7 @@ province_event = {
 		is_capital = no
 		NOT = {
 			owner = {
-				has_country_modifier = hee_no_more_defections
+				has_country_modifier = fee_no_more_defections
 			}
 		}
 	}
@@ -176,11 +176,11 @@ province_event = {
 			if = {
 				limit = {
 					owner = {
-						has_country_modifier = hee_defected_once
+						has_country_modifier = fee_defected_once
 					}
 				}
 				add_country_modifier = {
-					name = hee_no_more_defections
+					name = fee_no_more_defections
 					duration = -1
 					hidden = yes
 				}
@@ -204,7 +204,7 @@ province_event = {
 		}
 		hidden_effect = {
 			add_country_modifier = {
-				name = hee_defected_once
+				name = fee_defected_once
 				duration = -1
 				hidden = yes
 			}
@@ -240,7 +240,7 @@ country_event = {
 	trigger = {
 		tag = MAR
 		any_country = {
-			has_country_modifier = hee_marathi_enemy
+			has_country_modifier = fee_marathi_enemy
 			war_with = MAR
 		}
 	}
@@ -256,7 +256,7 @@ country_event = {
 		add_treasury = 25
 		random_country = {
 			limit = {
-				has_country_modifier = hee_marathi_enemy
+				has_country_modifier = fee_marathi_enemy
 			}
 			country_event = { id = fee_MAR.5 }
 		}
@@ -295,7 +295,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		has_country_modifier = hee_marathi_enemy
+		has_country_modifier = fee_marathi_enemy
 		war_with = MAR
 		any_province = {
 			OR = {
@@ -323,7 +323,7 @@ country_event = {
 		add_treasury = -25
 		add_mil_power = 25
 		add_country_modifier = {
-			name = hee_western_aid_marathan_enemy
+			name = fee_western_aid_marathan_enemy
 			duration = 365
 		}
 		random_owned_province = {
@@ -357,7 +357,7 @@ country_event = {
 	
 	trigger = {
 		any_country = {
-			has_country_modifier = hee_marathi_enemy
+			has_country_modifier = fee_marathi_enemy
 			war_with = MAR
 		}
 	}
@@ -369,7 +369,7 @@ country_event = {
 		}
 		add_mil_power = 100
 		add_country_modifier = {
-			name = hee_maratha_western_arms
+			name = fee_maratha_western_arms
 			duration = 720
 		}
 		random_country = {
@@ -384,7 +384,7 @@ country_event = {
 			}
 			add_opinion = {
 				who = MAR
-				modifier = hee_maratha_raided_stores
+				modifier = fee_maratha_raided_stores
 			}
 		}
 	}

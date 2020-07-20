@@ -36,7 +36,7 @@ country_event = {
 			add_base_tax = 1
 			add_base_manpower = 1
 			add_province_modifier = {
-				name = hee_borno_fortified
+				name = fee_borno_fortified
 				duration = -1
 			}
 		}
@@ -121,7 +121,7 @@ country_event = {
 		name = fee_KBO.3.a
 		add_adm_power = 50
 		add_country_modifier = {
-			name = hee_aluma_reforms
+			name = fee_aluma_reforms
 			duration = 18250
 		}
 	}

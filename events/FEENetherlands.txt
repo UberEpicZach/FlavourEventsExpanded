@@ -30,7 +30,7 @@ province_event = {
 		}
 		is_capital = no
 		NOT = {
-			has_province_modifier = hee_generality_lands
+			has_province_modifier = fee_generality_lands
 		}
 	}
 	
@@ -41,7 +41,7 @@ province_event = {
 	option = {
 		name = fee_NED.1.a
 		add_province_modifier = {
-			name = hee_generality_lands
+			name = fee_generality_lands
 			duration = -1
 		}
 	}
@@ -62,7 +62,7 @@ province_event = {
 			}
 			is_at_war = no
 		}
-		has_province_modifier = hee_generality_lands
+		has_province_modifier = fee_generality_lands
 		OR = {
 			has_owner_religion = yes
 			owner = {
@@ -77,7 +77,7 @@ province_event = {
 	
 	option = {
 		name = fee_NED.2.a
-		remove_province_modifier = hee_generality_lands
+		remove_province_modifier = fee_generality_lands
 	}
 }
 
@@ -124,7 +124,7 @@ country_event = {
 		}
 		hidden_effect = {
 			add_country_modifier = {
-				name = hee_adolf_revolted
+				name = fee_adolf_revolted
 				duration = 3650
 				hidden = yes
 			}
@@ -147,7 +147,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		has_country_modifier = hee_adolf_revolted
+		has_country_modifier = fee_adolf_revolted
 		is_subject = no
 		OR = {
 			any_country = {
@@ -180,7 +180,7 @@ country_event = {
 		name = fee_NED.4.b
 		99 = {
 			add_province_modifier = {
-				name = hee_adolfs_unrest
+				name = fee_adolfs_unrest
 				duration = 3650
 			}
 		}
@@ -249,7 +249,7 @@ country_event = {
 		add_treasury = 300
 		add_legitimacy = -10
 		add_country_modifier = {
-			name = hee_adolf_compromise
+			name = fee_adolf_compromise
 			duration = 7300
 		}
 	}
@@ -268,7 +268,7 @@ country_event = {
 		name = fee_NED.7.a
 		add_prestige = -10
 		add_country_modifier = {
-			name = hee_adolf_compromise
+			name = fee_adolf_compromise
 			duration = 7300
 		}
 		add_casus_belli = {

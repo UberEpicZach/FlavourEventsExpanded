@@ -112,7 +112,7 @@ country_event = {
 		name = fee_NOR.3.a
 		add_opinion = {
 			who = FROM
-			modifier = hee_olav_shrine_destroyed
+			modifier = fee_olav_shrine_destroyed
 		}
 		add_liberty_desire = 5
 	}

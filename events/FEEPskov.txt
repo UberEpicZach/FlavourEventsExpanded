@@ -59,7 +59,7 @@ country_event = {
 	 option = {
 		 name = fee_psk.2.a
 		 add_country_modifier = {
-			name = hee_legal_code_of_pskov
+			name = fee_legal_code_of_pskov
 			duration = -1
 		 }
 	 }
