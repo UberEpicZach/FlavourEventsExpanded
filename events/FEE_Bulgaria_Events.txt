@@ -125,17 +125,80 @@ country_event = {
 	desc = FEE_Bulgaria_Events.3.dd
 	picture = ADVISOR_eventPicture
 	fire_only_once = yes
-	is_triggered_only = yes
+	trigger = {
+		is_subject = no
+		tag = BUL
+		owns_core_province = 151
+		OR = {
+			is_great_power = yes
+			total_development = 500
+		}
+		uses_patriarch_authority = yes
+	}
 	option = {
 		name = FEE_Bulgaria_Events.3.a
-		
+		add_prestige = 20
+		add_years_of_income = -0.5
+		if = {
+			trigger = {
+				patriarch_authority = 0.8
+			}
+			add_prestige = 10
+		}
+		add_patriarch_authority = 0.2
+		add_country_modifier = {
+			name = FEE_Bulgarian_Statue_Military
+			duration = -1
+		}
+		ai_chance = {
+			factor = 100
+		}
 	}
 	option = {
 		name = FEE_Bulgaria_Events.3.b
-		
+		add_years_of_income = -0.5
+		add_prestige = 20
+		if = {
+			trigger = {
+				patriarch_authority = 0.8
+			}
+			add_prestige = 10
+		}
+		add_patriarch_authority = 0.2
+		add_country_modifier = {
+			name = FEE_Bulgarian_Statue_Trade
+			duration = -1
+		}
+		151 = {
+			add_province_modifier = {
+				name = FEE_Bulgaria_Constantinople_Statue_Trade
+				duration = -1
+			}
+		}
+		ai_chance = {
+			factor = 100
+		}
 	}
 	option = {
 		name = FEE_Bulgaria_Events.3.c
-		
+		add_prestige = -5
+		set_country_flag = FEE_Bulgaria_Statue_Later
+		country_event = {
+			id = FEE_Bulgaria_Events.3
+			days = 1825
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+	option = {
+		trigger = {
+			has_country_flag = FEE_Bulgaria_Statue_Later
+		}
+		name = FEE_Bulgaria_Events.3.d
+		add_prestige = -10
+		ai_chance = {
+			factor = 0
+		}
 	}
 }
