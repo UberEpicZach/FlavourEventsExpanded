@@ -66,11 +66,11 @@ fee_ruler_trait_patient = {
 
 fee_ruler_trait_kind = {
     diplomatic_reputation = 1
-    global_unrest =    -0.02
+    global_unrest = -0.02
 }
 
 fee_ruler_trait_gluttonous = {
-    global_tax_modifier -0.5
+    global_tax_modifier = -0.5
     papal_influence = -0.02
     diplomatic_reputation = 1
 }
