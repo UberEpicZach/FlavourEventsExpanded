@@ -97,7 +97,6 @@ country_event = {
 		months = 2
 	}
 	option = {
-		# encourage recruitment into army
 		name = FEE_Bulgaria_Events.2.a
 		151 = {
 			if = {
@@ -117,5 +116,26 @@ country_event = {
 			name = FEE_Bulgarian_Parades_Through_Tsargrad
 			duration = 3650
 		}
+	}
+}
+
+country_event = {
+	id = FEE_Bulgaria_Events.3
+	title = FEE_Bulgaria_Events.3.tt
+	desc = FEE_Bulgaria_Events.3.dd
+	picture = ADVISOR_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = FEE_Bulgaria_Events.3.a
+		
+	}
+	option = {
+		name = FEE_Bulgaria_Events.3.b
+		
+	}
+	option = {
+		name = FEE_Bulgaria_Events.3.c
+		
 	}
 }

@@ -344,7 +344,6 @@ country_event = {
 
 # START CHUK SWISS EVENTS
 #Designed by Chu_Ko_Noob, coded by babysnake
-
 country_event = {
 	id = fee_SWI.9
 	title = fee_SWI.9.tt
@@ -491,7 +490,6 @@ country_event = {
 		BUR = {
 			country_event = {
 				id = fee_SWI.12
-				days = 0
 			}
 		}
 	}
@@ -510,13 +508,7 @@ country_event = {
 			factor = 100
 		}
 		convert_ruler_to_general = yes
-		set_country_flag = fee_Charles_in_command
-		hidden_effect = {
-			country_event = {
-				id = fee_SWI.13
-				days = 1825
-			}
-		}
+		set_ruler_flag = fee_Charles_in_command
 	}
 	option = {
 		name = fee_SWI.12.b
@@ -527,53 +519,26 @@ country_event = {
 	}
 }
 
-country_event = {
-	id = fee_SWI.13
-	title = fee_SWI.13.tt
-	desc = fee_SWI.13.dd
-	picture = ADVISOR_eventPicture
-	fire_only_once = yes
-	is_triggered_only = yes
-	hidden = yes
-	immediate = {
-		clr_country_flag = fee_Charles_in_commmand
-	}
-}
-
+# Removed due to simplification, please remind me to re-index these missions. - Babysnake
+# country_event = {
+# 	id = fee_SWI.13
+# 	title = fee_SWI.13.tt
+# 	desc = fee_SWI.13.dd
+# 	picture = ADVISOR_eventPicture
+# 	fire_only_once = yes
+# 	is_triggered_only = yes
+# 	hidden = yes
+# 	immediate = {
+# 		clr_country_flag = fee_Charles_in_commmand
+# 	}
+# }
 country_event = {
 	id = fee_SWI.14
 	title = fee_SWI.14.tt
 	desc = fee_SWI.14.dd
 	picture = ADVISOR_eventPicture
 	fire_only_once = yes
-	mean_time_to_happen = {
-		months = 2
-	}
-	trigger = {
-		tag = BUR
-		has_country_flag = fee_Charles_in_command
-		SWI = {
-			any_owned_province = {
-				has_ruler_leader_from = ROOT
-			}
-		}
-		AND = {
-			OR = {
-				is_in_war = {
-					attacker_leader = SWI
-				}
-				is_in_war = {
-					defender_leader = SWI
-				}
-			}
-			NOT = {
-				war_score_against = {
-					value = -20
-					who = SWI
-				}
-			}
-		}
-	}
+	is_triggered_only = yes
 	immediate = {
 		kill_ruler = yes
 		random = {
