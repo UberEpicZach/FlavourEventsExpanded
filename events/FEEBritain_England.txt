@@ -2,8 +2,8 @@ namespace = fee_gbr_eng
 # Francis Bacon
 country_event = {
 	id = fee_gbr_eng.1
-	title = "fee_gbr_eng_n_1"
-	desc = "fee_gbr_eng_d_1"
+	title = fee_gbr_eng_n_1
+	desc = fee_gbr_eng_d_1
 	picture = ADVISOR_eventPicture
 	fire_only_once = yes
 	trigger = {
@@ -19,7 +19,7 @@ country_event = {
 		months = 120
 	}
 	option = {
-		name = "fee_gbr_eng_1_1"
+		name = fee_gbr_eng_1_1
 		define_advisor = {
 			type = natural_scientist
 			name = "Francis Bacon"
@@ -36,8 +36,8 @@ country_event = {
 # The Authorized Version
 country_event = {
 	id = fee_gbr_eng.2
-	title = "fee_gbr_eng_n_2"
-	desc = "fee_gbr_eng_d_2"
+	title = fee_gbr_eng_n_2
+	desc = fee_gbr_eng_d_2
 	picture = BIG_BOOK_eventPicture
 	fire_only_once = yes
 	trigger = {
@@ -56,7 +56,7 @@ country_event = {
 		months = 100
 	}
 	option = {
-		name = "fee_gbr_eng_1_2"
+		name = fee_gbr_eng_1_2
 		ai_chance = {
 			factor = 25
 		}
@@ -72,7 +72,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "fee_gbr_eng_2_2"
+		name = fee_gbr_eng_2_2
 		ai_chance = {
 			factor = 25
 		}
@@ -88,7 +88,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "fee_gbr_eng_3_2"
+		name = fee_gbr_eng_3_2
 		ai_chance = {
 			factor = 25
 		}
@@ -104,7 +104,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "fee_gbr_eng_4_2"
+		name = fee_gbr_eng_4_2
 		ai_chance = {
 			factor = 25
 		}
@@ -118,8 +118,8 @@ country_event = {
 # The Wicked Bible
 country_event = {
 	id = fee_gbr_eng.3
-	title = "fee_gbr_eng_n_3"
-	desc = "fee_gbr_eng_d_3"
+	title = fee_gbr_eng_n_3
+	desc = fee_gbr_eng_d_3
 	picture = BIG_BOOK_eventPicture
 	fire_only_once = yes
 	trigger = {
@@ -129,14 +129,14 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = "fee_gbr_eng_1_3"
+		name = fee_gbr_eng_1_3
 		ai_chance = {
 			factor = 50
 		}
 		add_years_of_income = 0.25
 	}
 	option = {
-		name = "fee_gbr_eng_2_3"
+		name = fee_gbr_eng_2_3
 		ai_chance = {
 			factor = 50
 		}
@@ -150,8 +150,8 @@ country_event = {
 # The Acts of Union
 country_event = {
 	id = fee_gbr_eng.4
-	title = "fee_gbr_eng_n_4"
-	desc = "fee_gbr_eng_d_4"
+	title = fee_gbr_eng_n_4
+	desc = fee_gbr_eng_d_4
 	picture = GOOD_WITH_MONARCH_eventPicture
 	fire_only_once = yes
 	major = yes
@@ -174,7 +174,7 @@ country_event = {
 		months = 1
 	}
 	option = {
-		name = "fee_gbr_eng_1_4"
+		name = fee_gbr_eng_1_4
 		if = {
 			limit = {
 				stability = 3
@@ -203,7 +203,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "fee_gbr_eng_2_4"
+		name = fee_gbr_eng_2_4
 		ai_chance = {
 			factor = 100
 		}
@@ -242,7 +242,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "fee_gbr_eng_3_4"
+		name = fee_gbr_eng_3_4
 		add_stability = -1
 		add_mil_power = 100
 		add_mercantilism = 1
@@ -255,8 +255,8 @@ country_event = {
 
 country_event = {
 	id = fee_gbr_eng.5
-	title = "fee_gbr_eng_n_5"
-	desc = "fee_gbr_eng_d_5"
+	title = fee_gbr_eng_n_5
+	desc = fee_gbr_eng_d_5
 	picture = ADVISOR_eventPicture
 	fire_only_once = yes
 	trigger = {
@@ -274,12 +274,12 @@ country_event = {
 		months = 1
 	}
 	option = {
-		name = "fee_gbr_eng_1_5"
+		name = fee_gbr_eng_1_5
 		custom_tooltip = fee_gbr_eng_statute_tooltip_1
 		set_country_flag = fee_gbr_eng_statute_flag
 	}
 	option = {
-		name = "fee_gbr_eng_2_5"
+		name = fee_gbr_eng_2_5
 		add_country_modifier = {
 			name = fee_gbr_eng_centralization_of_monarchy
 			duration = -1
@@ -290,8 +290,8 @@ country_event = {
 # Samuel Pepys
 country_event = {
 	id = fee_gbr_eng.6
-	title = "fee_gbr_eng_n_6"
-	desc = "fee_gbr_eng_d_6"
+	title = fee_gbr_eng_n_6
+	desc = fee_gbr_eng_d_6
 	picture = ADVISOR_eventPicture
 	fire_only_once = yes
 	trigger = {
@@ -305,7 +305,7 @@ country_event = {
 		months = 150
 	}
 	option = {
-		name = "fee_gbr_eng_1_6"
+		name = fee_gbr_eng_1_6
 		define_advisor = {
 			type = naval_reformer
 			skill = 2
@@ -320,8 +320,8 @@ country_event = {
 # The Puritans
 country_event = {
 	id = fee_gbr_eng.7
-	title = "fee_gbr_eng_n_7"
-	desc = "fee_gbr_eng_d_7"
+	title = fee_gbr_eng_n_7
+	desc = fee_gbr_eng_d_7
 	picture = RELIGIOUS_TURMOIL_eventPicture
 	fire_only_once = yes
 	trigger = {
@@ -338,7 +338,7 @@ country_event = {
 		months = 200
 	}
 	option = {
-		name = "fee_gbr_eng_1_7"
+		name = fee_gbr_eng_1_7
 		add_country_modifier = {
 			name = "puritan_dissent_tolerated"
 			duration = 18250
@@ -376,7 +376,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "fee_gbr_eng_2_7"
+		name = fee_gbr_eng_2_7
 		add_country_modifier = {
 			name = "puritans_crushed"
 			duration = 18250
@@ -442,7 +442,7 @@ country_event = {
 	}
 	# Unfinished. Only gives a modifier.
 	option = {
-		name = "fee_gbr_eng_3_7"
+		name = fee_gbr_eng_3_7
 		trigger = {
 			exploration_ideas = 2
 		}
@@ -531,8 +531,8 @@ country_event = {
 # The South Sea Company
 country_event = {
 	id = fee_gbr_eng.8
-	title = "fee_gbr_eng_n_8"
-	desc = "fee_gbr_eng_d_8"
+	title = fee_gbr_eng_n_8
+	desc = fee_gbr_eng_d_8
 	picture = ECONOMY_eventPicture
 	fire_only_once = yes
 	trigger = {
@@ -548,7 +548,7 @@ country_event = {
 		months = 1
 	}
 	option = {
-		name = "fee_gbr_eng_1_8"
+		name = fee_gbr_eng_1_8
 		hidden_effect = {
 			random_list = {
 				85 = {
@@ -572,13 +572,13 @@ country_event = {
 # South Sea Bubble Bursts
 country_event = {
 	id = fee_gbr_eng.9
-	title = "fee_gbr_eng_n_9"
-	desc = "fee_gbr_eng_d_9"
+	title = fee_gbr_eng_n_9
+	desc = fee_gbr_eng_d_9
 	picture = BANKRUPTCY_eventPicture
 	is_triggered_only = yes
 	major = yes
 	option = {
-		name = "fee_gbr_eng_1_9"
+		name = fee_gbr_eng_1_9
 		add_stability = -2
 		add_inflation = 10
 		add_years_of_income = -1
@@ -588,13 +588,13 @@ country_event = {
 # South Sea Company Pays Off
 country_event = {
 	id = fee_gbr_eng.10
-	title = "fee_gbr_eng_n_10"
-	desc = "fee_gbr_eng_d_10"
+	title = fee_gbr_eng_n_10
+	desc = fee_gbr_eng_d_10
 	picture = ECONOMY_eventPicture
 	is_triggered_only = yes
 	major = yes
 	option = {
-		name = "fee_gbr_eng_1_10"
+		name = fee_gbr_eng_1_10
 		add_stability = 1
 		add_years_of_income = 1
 		add_inflation = -5
@@ -658,8 +658,8 @@ country_event = {
 
 country_event = {
 	id = fee_gbr_eng.12
-	title = "fee_gbr_eng_n_12"
-	desc = "fee_gbr_eng_d_12"
+	title = fee_gbr_eng_n_12
+	desc = fee_gbr_eng_d_12
 	picture = ADVISOR_eventPicture
 	fire_only_once = yes
 	trigger = {
@@ -673,7 +673,7 @@ country_event = {
 		months = 150
 	}
 	option = {
-		name = "fee_gbr_eng_1_12"
+		name = fee_gbr_eng_1_12
 		add_adm_power = 100
 		add_prestige = 15
 		change_innovativeness = 1
@@ -746,5 +746,36 @@ province_event = {
 	}
 	option = {
 		name = fee_gbr_eng.14.a
+	}
+}
+
+country_event = {
+	id = fee_gbr_eng.15
+	title = fee_gbr_eng_n_12
+	desc = fee_gbr_eng_d_12
+	picture = ADVISOR_eventPicture
+	fire_only_once = yes
+	trigger = {
+		OR = {
+			tag = ENG
+			tag = GBR
+		}
+		is_year = 1700
+	}
+	mean_time_to_happen = {
+		months = 150
+	}
+	option = {
+		name = fee_gbr_eng_1_12
+		add_adm_power = 100
+		add_prestige = 15
+		change_innovativeness = 1
+		define_advisor = {
+			type = artist
+			culture = saxon
+			name = "George Frederic Handel"
+			skill = 3
+			discount = yes
+		}
 	}
 }
