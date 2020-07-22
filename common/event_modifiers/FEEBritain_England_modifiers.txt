@@ -28,3 +28,22 @@ puritans_persecuted = {
 }
 puritans_flee_to_the_new_world = { global_colonial_growth = 25 }
 puritans_utopia = { local_missionary_strength = -1 }
+
+fee_gbr_eng_preparations_to_defend_hour = {
+	manpower_recovery_speed = 0.1	
+}
+
+fee_gbr_eng_abuses_tolerated = {
+	trade_efficiency = 0.1	
+}
+
+fee_gbr_eng_centralization_of_monarchy = {
+	global_unrest = 2
+	max_absolutism = 5
+}
+
+fee_gbr_eng_statute_province_modifier = {
+	min_local_autonomy = 10
+	local_unrest = -2
+	local_production_efficiency = 0.1
+}

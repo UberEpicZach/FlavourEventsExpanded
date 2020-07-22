@@ -253,6 +253,40 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = fee_gbr_eng.5
+	title = "fee_gbr_eng_n_5"
+	desc = "fee_gbr_eng_d_5"
+	picture = ADVISOR_eventPicture
+	fire_only_once = yes
+	trigger = {
+		tag = GBR
+		calc_true_if = {
+			all_owned_province = {
+				limit = {
+					culture = highland_scottish
+				}
+			}
+			value = 2
+		}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		name = "fee_gbr_eng_1_5"
+		custom_tooltip = fee_gbr_eng_statute_tooltip_1
+		set_country_flag = fee_gbr_eng_statute_flag
+	}
+	option = {
+		name = "fee_gbr_eng_2_5"
+		add_country_modifier = {
+			name = fee_gbr_eng_centralization_of_monarchy
+			duration = -1
+		}
+	}
+}
+
 # Samuel Pepys
 country_event = {
 	id = fee_gbr_eng.6
@@ -568,6 +602,61 @@ country_event = {
 }
 
 country_event = {
+	id = fee_gbr_eng.11
+	title = fee_gbr_eng_n_11
+	desc = fee_gbr_eng_d_11
+	picture = ADVISOR_eventPicture
+	fire_only_once = yes
+	trigger = {
+		OR = {
+			tag = ENG
+			tag = GBR
+		}
+		any_rival_country = {
+			capital_scope = {
+				region = iberia_region
+			}
+		}
+		is_year = 1500
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	immediate = {
+		hidden_effect = {
+			#selects the iberian rival so it's name can be used in localization
+			random_rival_country = {
+				limit = {
+					capital_scope = {
+						region = iberia_region
+					}
+				}
+				save_event_target_as = fee_gbr_eng_ear_target
+			}
+		}
+	}
+	option = {
+		name = fee_gbr_eng_1_11
+		add_casus_belli = {
+			target = event_target:fee_gbr_eng_ear_target
+			type = cb_insult
+			months = 120
+		}
+		add_country_modifier = {
+			name = fee_gbr_eng_preparations_to_defend_hour
+			duration = 3650
+		}
+	}
+	option = {
+		name = fee_gbr_eng_2_11
+		add_country_modifier = {
+			name = fee_gbr_eng_abuses_tolerated
+			duration = 3650
+		}
+	}
+}
+
+country_event = {
 	id = fee_gbr_eng.12
 	title = "fee_gbr_eng_n_12"
 	desc = "fee_gbr_eng_d_12"
@@ -595,5 +684,67 @@ country_event = {
 			skill = 3
 			discount = yes
 		}
+	}
+}
+
+# hidden event adding the statute of icolmkill
+province_event = {
+	id = fee_gbr_eng.13
+	title = fee_gbr_eng_n_13
+	desc = fee_gbr_eng_d_13
+	hidden = yes
+	trigger = {
+		owner = {
+			has_country_flag = fee_gbr_eng_statute_flag
+		}
+		NOT = {
+			has_province_modifier = fee_gbr_eng_statute_province_modifier
+		}
+		has_owner_culture = no
+		is_state = yes
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	immediate = {
+		add_province_modifier = {
+			name = fee_gbr_eng_statute_province_modifier
+			duration = -1
+		}
+	}
+	option = {
+		name = fee_gbr_eng.13.a
+	}
+}
+
+province_event = {
+	id = fee_gbr_eng.14
+	title = fee_gbr_eng_n_14
+	desc = fee_gbr_eng_d_14
+	hidden = yes
+	trigger = {
+		has_province_modifier = fee_gbr_eng_statute_province_modifier
+		OR = {
+			NOT = {
+				has_owner_culture = no
+			}
+			NOT = {
+				is_state = yes
+			}
+			NOT = {
+				owner = {
+					has_country_flag = fee_gbr_eng_statute_flag
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	immediate = {
+		remove_province_modifier = fee_gbr_eng_statute_province_modifier
+	}
+	option = {
+		name = fee_gbr_eng.14.a
 	}
 }

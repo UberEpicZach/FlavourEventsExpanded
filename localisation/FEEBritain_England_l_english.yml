@@ -34,6 +34,9 @@
     fee_gbr_eng_1_5: "Ours shall be an Indirect Empire."
     fee_gbr_eng_2_5: "Bah! We can rule every one of these louts ourselves!"
     statutes_of_icolmkill: "Statutes of Icolmkill"
+    fee_gbr_eng_centralization_of_monarchy: "Centralization of Monarchy"
+    fee_gbr_eng_statute_province_modifier: "Statutes of Icolmkill"
+    fee_gbr_eng_statute_tooltip_1: "All non-primary culture stated provinces will recieve 10% more minimum autonomy, 10% more production efficency, and -2 unrest for the rest of the game."
     
     fee_gbr_eng_n_6: "Samuel Pepys"
     fee_gbr_eng_d_6: "Despite having no maritime experience, Samuel Pepys was a skillful navigator in the political sense, using his position as a member of Parliament to secure a place in the Admiralty. There, he proved surprisingly adept at his various duties, overseeing an early professionalization of navies in Britain. Additionally, the careful diaries he kept would not only prove a useful historical source but also provide a role model for British captains in their record-keeping."
@@ -65,9 +68,11 @@
     fee_gbr_eng_1_10: "Great!"
     
     fee_gbr_eng_n_11: "Jenkins' Ear"
-    fee_gbr_eng_d_11: "Relations have never been good between the Spanish and ourselves in our competition for New World and African trade. Now, however, has come yet another increase in tensions due to the barbarous conduct of the Spanish!\n\nIt seems that a ship of the Spanish coast guard – a fine title for a glorified pirate! – stopped and boarded a British merchant vessel. Robert Jenkins, the ship’s master mariner, was accused of smuggling. Without trial or hesitation, the Spanish captain simply drew his sword and cut off Jenkins’ Ear! Worse, he threatened to do the same to our monarch if he should come.\n\nThis gravest indignity weighs not only on Jenkins but on the honor of our entire nation!"
+    fee_gbr_eng_d_11: "Relations have never been good between the [fee_gbr_eng_ear_target.GetAdjective] and ourselves in our competition for New World and African trade. Now, however, has come yet another increase in tensions due to the barbarous conduct of the [fee_gbr_eng_ear_target.GetAdjective]!\n\nIt seems that a ship of the [fee_gbr_eng_ear_target.GetAdjective] coast guard – a fine title for a glorified pirate! – stopped and boarded a British merchant vessel. Robert Jenkins, the ship’s master mariner, was accused of smuggling. Without trial or hesitation, the [fee_gbr_eng_ear_target.GetAdjective] captain simply drew his sword and cut off Jenkins’ Ear! Worse, he threatened to do the same to our monarch if he should come.\n\nThis gravest indignity weighs not only on Jenkins but on the honor of our entire nation!"
     fee_gbr_eng_1_11: "This is cause for war!"
     fee_gbr_eng_2_11: "This is not important enough for war."
+    fee_gbr_eng_preparations_to_defend_hour: "Preperation to defend honor"
+    fee_gbr_eng_abuses_tolerated: "Abuses tolerated"
     
     fee_gbr_eng_n_12: "George Frederic Handel"
     fee_gbr_eng_d_12: "While originally from Prussia, George Frederic Handel was a Baroque composer who spent the bulk of his career in London. Often considered one of the greatest composers of the Baroque era, and indeed of Western Civilization generally, Handel was known for his choral compositions, sinfonias including “Arrival of the Queen of Sheba,” and coronation anthems for the British crown.\n\nHis greatest achievement, “The Messiah,” was an opera showcasing the Christmas and Easter stories, whose chorus so impressed $MONARCH$ that it caused [Root.Monarch.GetHerHim] to rise from [Root.Monarch.GetHerHis] seat in respect, an honor that no British monarch had ever given a composer."
