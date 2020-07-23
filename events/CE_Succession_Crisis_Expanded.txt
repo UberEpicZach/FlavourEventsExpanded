@@ -12,7 +12,7 @@ country_event = {
 			is_part_of_hre = yes
 		}
 	}
-
+	
 	trigger = {
 		ruler_age = 70
 		NOT = { has_global_flag = flag_for_partition }
