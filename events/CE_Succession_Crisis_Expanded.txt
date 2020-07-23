@@ -14,9 +14,16 @@ country_event = {
 	}
 	
 	trigger = {
-		ruler_age = 70
-		NOT = { has_global_flag = flag_for_partition }
-		always = no
+		#ruler_age = 70
+		#religion_group = christian
+		NOT = {
+			has_global_flag = flag_for_partition
+		}
+		OR = {
+			tag = boh
+			tag = hun
+			tag = pol
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -25,37 +32,113 @@ country_event = {
 	immediate = {
 		set_global_flag = flag_for_partition
 		hidden_effect = {
-			random_country = {
+			if = {
 				limit = {
-					marriage_with = ROOT
-					NOT = {	has_country_flag = claimant_country_1_flag }
-					NOT = {	has_country_flag = claimant_country_2_flag }
-					NOT = {	has_country_flag = claimant_country_3_flag }
-					NOT = {	has_country_flag = claimant_country_4_flag }
+						random_country = {
+							marriage_with = ROOT
+							NOT = {	has_country_flag = claimant_country_1_flag }
+							NOT = {	has_country_flag = claimant_country_2_flag }
+							NOT = {	has_country_flag = claimant_country_3_flag }
+							NOT = {	has_country_flag = claimant_country_4_flag }
+						}
 				}
-				set_country_flag = claimant_country_1_flag
-				save_global_event_target_as = claimant_country_1
+				random_country = {
+					limit = {
+						marriage_with = ROOT
+						NOT = {	has_country_flag = claimant_country_1_flag }
+						NOT = {	has_country_flag = claimant_country_2_flag }
+						NOT = {	has_country_flag = claimant_country_3_flag }
+						NOT = {	has_country_flag = claimant_country_4_flag }
+						
+					}
+					set_country_flag = claimant_country_1_flag
+					save_global_event_target_as = claimant_country_1
+				}
 			}
-			random_country = {
-				limit = {
-					marriage_with = ROOT
-					NOT = {	has_country_flag = claimant_country_1_flag }
-					NOT = {	has_country_flag = claimant_country_2_flag }
-					NOT = {	has_country_flag = claimant_country_3_flag }
-					NOT = {	has_country_flag = claimant_country_4_flag }
+			else = {
+				random_neighbor_country = {
+					limit = {
+						NOT = {	has_country_flag = claimant_country_1_flag }
+						NOT = {	has_country_flag = claimant_country_2_flag }
+						NOT = {	has_country_flag = claimant_country_3_flag }
+						NOT = {	has_country_flag = claimant_country_4_flag }
+						
+					}
+					set_country_flag = claimant_country_1_flag
+					save_global_event_target_as = claimant_country_1
 				}
-				set_country_flag = claimant_country_2_flag
-				save_global_event_target_as = claimant_country_2
 			}
-			random_neighbor_country = {
+			if = {
 				limit = {
-					NOT = {	has_country_flag = claimant_country_1_flag }
-					NOT = {	has_country_flag = claimant_country_2_flag }
-					NOT = {	has_country_flag = claimant_country_3_flag }
-					NOT = {	has_country_flag = claimant_country_4_flag }
+						random_country = {
+							marriage_with = ROOT
+							NOT = {	has_country_flag = claimant_country_1_flag }
+							NOT = {	has_country_flag = claimant_country_2_flag }
+							NOT = {	has_country_flag = claimant_country_3_flag }
+							NOT = {	has_country_flag = claimant_country_4_flag }
+						}
 				}
-				set_country_flag = claimant_country_3_flag
-				save_global_event_target_as = claimant_country_3
+				random_country = {
+					limit = {
+						marriage_with = ROOT
+						NOT = {	has_country_flag = claimant_country_1_flag }
+						NOT = {	has_country_flag = claimant_country_2_flag }
+						NOT = {	has_country_flag = claimant_country_3_flag }
+						NOT = {	has_country_flag = claimant_country_4_flag }
+						
+					}
+					set_country_flag = claimant_country_2_flag
+					save_global_event_target_as = claimant_country_2
+				}
+			}
+			else = {
+				random_neighbor_country = {
+					limit = {
+						NOT = {	has_country_flag = claimant_country_1_flag }
+						NOT = {	has_country_flag = claimant_country_2_flag }
+						NOT = {	has_country_flag = claimant_country_3_flag }
+						NOT = {	has_country_flag = claimant_country_4_flag }
+						
+					}
+					set_country_flag = claimant_country_2_flag
+					save_global_event_target_as = claimant_country_2
+				}
+			}
+			if = {
+				limit = {
+						random_country = {
+							marriage_with = ROOT
+							NOT = {	has_country_flag = claimant_country_1_flag }
+							NOT = {	has_country_flag = claimant_country_2_flag }
+							NOT = {	has_country_flag = claimant_country_3_flag }
+							NOT = {	has_country_flag = claimant_country_4_flag }
+						}
+				}
+				random_country = {
+					limit = {
+						marriage_with = ROOT
+						NOT = {	has_country_flag = claimant_country_1_flag }
+						NOT = {	has_country_flag = claimant_country_2_flag }
+						NOT = {	has_country_flag = claimant_country_3_flag }
+						NOT = {	has_country_flag = claimant_country_4_flag }
+						
+					}
+					set_country_flag = claimant_country_3_flag
+					save_global_event_target_as = claimant_country_3
+				}
+			}
+			else = {
+				random_neighbor_country = {
+					limit = {
+						NOT = {	has_country_flag = claimant_country_1_flag }
+						NOT = {	has_country_flag = claimant_country_2_flag }
+						NOT = {	has_country_flag = claimant_country_3_flag }
+						NOT = {	has_country_flag = claimant_country_4_flag }
+						
+					}
+					set_country_flag = claimant_country_3_flag
+					save_global_event_target_as = claimant_country_3
+				}
 			}
 			if = {
 				limit = {
@@ -95,7 +178,7 @@ country_event = {
 					mil = 2
 					regency = yes
 					fixed = yes
-					female = yes
+					#female = yes
 				}
 					# add_ruler_modifier = {
 						# name = CE_Infertile
@@ -111,25 +194,25 @@ country_event = {
 		event_target:claimant_country_1 = {
 			country_event = {
 				id = succession_crisis_expanded.2
-				days = 30
+				days = 1
 			}
 		}
 		event_target:claimant_country_2 = {
 			country_event = {
 				id = succession_crisis_expanded.2
-				days = 30
+				days = 1
 			}
 		}
 		event_target:claimant_country_3 = {
 			country_event = {
 				id = succession_crisis_expanded.2
-				days = 30
+				days = 1
 			}
 		}
 		event_target:claimant_country_4 = {
 			country_event = {
 				id = succession_crisis_expanded.3
-				days = 60
+				days = 10
 			}
 		}
 		ai_chance = {
@@ -142,6 +225,20 @@ country_event = {
 			define_ruler = {
 				claim = 20
 			}
+		}
+		hidden_effect = {
+			every_country = {
+				clr_country_flag = claimant_country_1_flag
+				clr_country_flag = claimant_country_2_flag
+				clr_country_flag = claimant_country_3_flag
+				clr_country_flag = claimant_country_4_flag
+			}
+			clr_global_flag = flag_for_partition
+			clear_global_event_target = partitioned_country
+			clear_global_event_target = claimant_country_1
+			clear_global_event_target = claimant_country_2 
+			clear_global_event_target = claimant_country_3
+			clear_global_event_target = claimant_country_4
 		}
 		ai_chance = {
 			factor = 0
@@ -205,7 +302,7 @@ country_event = {
 			}
 			country_event = {
 				id = succession_crisis_expanded.4
-				days = 30
+				days = 1
 			}
 		}
 		ai_chance = {
@@ -220,7 +317,7 @@ country_event = {
 			}
 			country_event = {
 				id = succession_crisis_expanded.10
-				days = 30
+				days = 1
 			}
 		}
 		ai_chance = {
@@ -252,7 +349,7 @@ country_event = {
 		event_target:claimant_country_4 = {
 			country_event = {
 				id = succession_crisis_expanded.6
-				days = 360
+				days = 1
 			}
 		}
 		set_country_flag = United_Duchies_occupied_yes
@@ -274,7 +371,7 @@ country_event = {
 			event_target:claimant_country_4 = {
 				country_event = {
 					id = succession_crisis_expanded.5
-					days = 30
+					days = 1
 				}
 			}
 		}
@@ -319,6 +416,7 @@ country_event = {
 				clr_country_flag = claimant_country_3_flag
 				clr_country_flag = claimant_country_4_flag
 			}
+			clr_global_flag = flag_for_partition
 			clear_global_event_target = partitioned_country
 			clear_global_event_target = claimant_country_1
 			clear_global_event_target = claimant_country_2 
@@ -352,7 +450,7 @@ country_event = {
 			}
 			country_event = {
 				id = succession_crisis_expanded.7
-				days = 30
+				days = 1
 			}
 		}
 		ai_chance = {
@@ -392,7 +490,7 @@ country_event = {
 		emperor = {
 			country_event = {
 				id = succession_crisis_expanded.10
-				days = 30
+				days = 1
 			}
 		}
 			
@@ -514,7 +612,7 @@ country_event = {
 			event_target:partitioned_country = {
 				country_event = {
 					id = succession_crisis_expanded.11
-					days = 30
+					days = 1
 				}
 			}
 		}
@@ -541,7 +639,7 @@ country_event = {
 		event_target:partitioned_country = {
 			country_event = {
 				id = succession_crisis_expanded.12
-				days = 30
+				days = 1
 			}
 		}
 		custom_tooltip = CE_deny_treaty
@@ -574,7 +672,7 @@ country_event = {
 				limit = {
 					num_of_cities = 1
 				}
-				every_owned_province = {
+				every_owned_province = { 
 					limit = {
 						any_neighbor_province = {
 							is_core = event_target:claimant_country_1
@@ -607,7 +705,12 @@ country_event = {
 			}
 			event_target:claimant_country_1 = {
 				create_vassal = event_target:partitioned_country
-				create_union = event_target:partitioned_country
+				if = {
+					limit = {
+						religion_group = christian
+					}
+					create_union = event_target:partitioned_country
+				}
 			}
 			event_target:claimant_country_2 = {
 				random_owned_province = {
@@ -625,7 +728,12 @@ country_event = {
 					}
 				}
 				create_vassal = event_target:partitioned_country_2
-				create_union = event_target:partitioned_country_2
+				if = {
+					limit = {
+						religion_group = christian
+					}
+					create_union = event_target:partitioned_country_2
+				}
 				every_owned_province = {
 					limit = {
 						has_province_flag = SE_claimed_land
@@ -650,7 +758,12 @@ country_event = {
 					}
 				}
 				create_vassal = event_target:partitioned_country_3
-				create_union = event_target:partitioned_country_3
+				if = {
+					limit = {
+						religion_group = christian
+					}
+					create_union = event_target:partitioned_country_3
+				}
 				every_owned_province = {
 					limit = {
 						has_province_flag = SE_claimed_land
@@ -658,11 +771,12 @@ country_event = {
 					cede_province = event_target:partitioned_country_3
 					add_core = event_target:partitioned_country_3
 				}
+			}
 		}
+	}
 		
-		ai_chance = {
-			factor = 1
-		}
+	ai_chance = {
+		factor = 1
 	}
 
 	after = {
@@ -673,6 +787,7 @@ country_event = {
 				clr_country_flag = claimant_country_3_flag
 				clr_country_flag = claimant_country_4_flag
 			}
+			clr_global_flag = flag_for_partition
 			clear_global_event_target = partitioned_country
 			clear_global_event_target = claimant_country_1
 			clear_global_event_target = claimant_country_2 
@@ -681,6 +796,7 @@ country_event = {
 		}
 	}
 }
+
 
 ###Second war of Julich Inheritance###
 
