@@ -27,7 +27,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		days = 1
+		days = 90
 	}
 	immediate = {
 		set_global_flag = flag_for_partition
