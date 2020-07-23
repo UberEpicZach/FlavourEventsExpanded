@@ -339,13 +339,13 @@ country_event = {
 		}
 
 		add_treasury = 300
-		set_ruler_flag = fee_lw_bill_ruler
-		set_country_flag = fee_lw_bill_ruler
+		set_ruler_flag = fee_lw_bill_ruler_ruler
+		set_country_flag = fee_lw_bill_ruler_country
 		custom_tooltip = FEE_LW_Bill_TT
 	}
 
 	option = {
-		name = FEE_Low_Countries_Events.6.OPT1
+		name = FEE_Low_Countries_Events.6.OPT2
 		ai_chance = {
 			factor = 0
 		}
@@ -360,11 +360,13 @@ country_event = {
 	title = FEE_Low_Countries_Events.7.T
 	desc = FEE_Low_Countries_Events.7.D
 	picture = OVEREXTENSION_eventPicture
+
+	fire_only_once = yes
 	
 	trigger = {
 		tag = GEL
-		NOT = { has_ruler_flag = fee_lw_bill_ruler }
-		has_country_flag = fee_lw_bill_ruler
+		NOT = { has_ruler_flag = fee_lw_bill_ruler_ruler }
+		has_country_flag = fee_lw_bill_ruler_country
 	}
 
 	immediate = {
@@ -533,6 +535,7 @@ country_event = {
 			factor = 33
 		}
 
+		kill_ruler = yes
 		emperor = {
 			add_casus_belli = {
 				type = cb_restore_personal_union
@@ -557,6 +560,7 @@ country_event = {
 			factor = 33
 		}
 
+		kill_ruler = yes
 		emperor = {
 			create_union = ROOT
 		}
@@ -573,6 +577,7 @@ country_event = {
 			factor = 33
 		}
 
+		kill_ruler = yes
 		BRG = {
 			create_union = ROOT
 		}
