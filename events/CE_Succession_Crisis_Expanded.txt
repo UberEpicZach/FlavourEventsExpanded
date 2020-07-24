@@ -20,10 +20,11 @@ country_event = {
 			has_global_flag = flag_for_partition
 		}
 		OR = {
-			TAG = BOH
-			TAG = HUN
-			TAG = POL
+			tag = BOH
+			tag = HUN
+			tag = POL
 		}
+		always = no
 	}
 	
 	mean_time_to_happen = {
