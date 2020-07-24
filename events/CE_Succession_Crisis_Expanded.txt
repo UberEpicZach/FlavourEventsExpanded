@@ -34,13 +34,13 @@ country_event = {
 		hidden_effect = {
 			if = {
 				limit = {
-						random_country = {
-							marriage_with = ROOT
-							NOT = {	has_country_flag = claimant_country_1_flag }
-							NOT = {	has_country_flag = claimant_country_2_flag }
-							NOT = {	has_country_flag = claimant_country_3_flag }
-							NOT = {	has_country_flag = claimant_country_4_flag }
-						}
+					any_country = {
+						marriage_with = ROOT
+						NOT = {	has_country_flag = claimant_country_1_flag }
+						NOT = {	has_country_flag = claimant_country_2_flag }
+						NOT = {	has_country_flag = claimant_country_3_flag }
+						NOT = {	has_country_flag = claimant_country_4_flag }
+					}
 				}
 				random_country = {
 					limit = {
@@ -70,13 +70,13 @@ country_event = {
 			}
 			if = {
 				limit = {
-						random_country = {
-							marriage_with = ROOT
-							NOT = {	has_country_flag = claimant_country_1_flag }
-							NOT = {	has_country_flag = claimant_country_2_flag }
-							NOT = {	has_country_flag = claimant_country_3_flag }
-							NOT = {	has_country_flag = claimant_country_4_flag }
-						}
+					any_country = {
+						marriage_with = ROOT
+						NOT = {	has_country_flag = claimant_country_1_flag }
+						NOT = {	has_country_flag = claimant_country_2_flag }
+						NOT = {	has_country_flag = claimant_country_3_flag }
+						NOT = {	has_country_flag = claimant_country_4_flag }
+					}
 				}
 				random_country = {
 					limit = {
@@ -106,13 +106,13 @@ country_event = {
 			}
 			if = {
 				limit = {
-						random_country = {
-							marriage_with = ROOT
-							NOT = {	has_country_flag = claimant_country_1_flag }
-							NOT = {	has_country_flag = claimant_country_2_flag }
-							NOT = {	has_country_flag = claimant_country_3_flag }
-							NOT = {	has_country_flag = claimant_country_4_flag }
-						}
+					any_country = {
+						marriage_with = ROOT
+						NOT = {	has_country_flag = claimant_country_1_flag }
+						NOT = {	has_country_flag = claimant_country_2_flag }
+						NOT = {	has_country_flag = claimant_country_3_flag }
+						NOT = {	has_country_flag = claimant_country_4_flag }
+					}
 				}
 				random_country = {
 					limit = {
