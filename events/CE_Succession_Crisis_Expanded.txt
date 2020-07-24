@@ -20,14 +20,14 @@ country_event = {
 			has_global_flag = flag_for_partition
 		}
 		OR = {
-			tag = boh
-			tag = hun
-			tag = pol
+			TAG = BOH
+			TAG = HUN
+			TAG = POL
 		}
 	}
 	
 	mean_time_to_happen = {
-		days = 90
+		days = 1
 	}
 	immediate = {
 		set_global_flag = flag_for_partition
@@ -612,7 +612,7 @@ country_event = {
 			event_target:partitioned_country = {
 				country_event = {
 					id = succession_crisis_expanded.11
-					days = 1
+					days = 30
 				}
 			}
 		}
@@ -734,12 +734,19 @@ country_event = {
 					}
 					create_union = event_target:partitioned_country_2
 				}
-				every_owned_province = {
+				if = {
 					limit = {
-						has_province_flag = SE_claimed_land
+						event_target:partitioned_country_2 = {
+							exists = yes
+						}	
 					}
-					cede_province = event_target:partitioned_country_2
-					add_core = event_target:partitioned_country_2
+					every_owned_province = {
+						limit = {
+							has_province_flag = SE_claimed_land
+						}
+						cede_province = event_target:partitioned_country_2
+						add_core = event_target:partitioned_country_2
+					}
 				}
 			}
 			event_target:claimant_country_3 = {
@@ -764,17 +771,24 @@ country_event = {
 					}
 					create_union = event_target:partitioned_country_3
 				}
-				every_owned_province = {
+				if = {
 					limit = {
-						has_province_flag = SE_claimed_land
+						event_target:partitioned_country_3 = {
+							exists = yes
+						}	
 					}
-					cede_province = event_target:partitioned_country_3
-					add_core = event_target:partitioned_country_3
+					every_owned_province = {
+						limit = {
+							has_province_flag = SE_claimed_land
+						}
+						cede_province = event_target:partitioned_country_3
+						add_core = event_target:partitioned_country_3
+					}
 				}
 			}
 		}
 	}
-		
+	
 	ai_chance = {
 		factor = 1
 	}
@@ -786,6 +800,9 @@ country_event = {
 				clr_country_flag = claimant_country_2_flag
 				clr_country_flag = claimant_country_3_flag
 				clr_country_flag = claimant_country_4_flag
+				clr_country_flag = country_claimed_yes
+				clr_country_flag = United_Duchies_claimed_yes
+				clr_country_flag = United_Duchies_Negotiations_Divide_yes
 			}
 			clr_global_flag = flag_for_partition
 			clear_global_event_target = partitioned_country
