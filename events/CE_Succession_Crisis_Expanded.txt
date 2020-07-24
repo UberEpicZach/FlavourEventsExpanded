@@ -31,7 +31,39 @@ country_event = {
 		days = 1
 	}
 	immediate = {
+		hidden_effect = {
+			every_country = {
+				clr_country_flag = claimant_country_1_flag
+				clr_country_flag = claimant_country_2_flag
+				clr_country_flag = claimant_country_3_flag
+				clr_country_flag = claimant_country_4_flag
+				clr_country_flag = country_claimed_yes
+				clr_country_flag = United_Duchies_claimed_yes
+				clr_country_flag = United_Duchies_Negotiations_Divide_yes
+			}
+			every_province = {
+				clr_province_flag = SE_claimed_land
+			}
+			clr_global_flag = flag_for_partition
+			clear_global_event_target = partitioned_country
+			clear_global_event_target = partitioned_country_2
+			clear_global_event_target = partitioned_country_3
+			clear_global_event_target = claimant_country_1
+			clear_global_event_target = claimant_country_2 
+			clear_global_event_target = claimant_country_3
+			clear_global_event_target = claimant_country_4
+		}
 		set_global_flag = flag_for_partition
+		every_subject_country = {
+				limit = {
+					NOT = {
+						is_subject_of_type = tributary_state
+					}
+				}
+				PREV = {
+					inherit = PREV
+				}
+			}
 		hidden_effect = {
 			if = {
 				limit = {
@@ -673,44 +705,169 @@ country_event = {
 				limit = {
 					num_of_cities = 1
 				}
-				every_owned_province = { 
+				if = {
 					limit = {
-						any_neighbor_province = {
-							is_core = event_target:claimant_country_1
+						any_owned_province = {
+							any_neighbor_province = {
+								owner = {
+									tag = event_target:claimant_country_1
+								}
+							}
 						}
 					}
-					cede_province = event_target:claimant_country_1
-					set_province_flag = SE_claimed_land
-					add_core = owner
+					random_owned_area = {
+						limit = {
+							any_province = {
+								area = PREV
+								any_neighbor_province = {
+									owner = {
+										tag = event_target:claimant_country_1
+									}
+								}
+							}
+						}
+						cede_province = event_target:claimant_country_1
+						set_province_flag = SE_claimed_land
+					}
 				}
-				every_owned_province = {
-					limit = {
-						any_neighbor_province = {
-							is_core = event_target:claimant_country_2
+				else = {
+					random_list = {
+						1 = { 
+							random_owned_area = { 
+								cede_province = event_target:claimant_country_1
+								set_province_flag = SE_claimed_land	
+							}
 						}
+						10 = { }
 					}
-					cede_province = event_target:claimant_country_2
-					set_province_flag = SE_claimed_land
-					add_core = owner
 				}
-				every_owned_province = {
+				if = {
 					limit = {
-						any_neighbor_province = {
-							is_core = event_target:claimant_country_3
+						any_owned_province = {
+							any_neighbor_province = {
+								owner = {
+									tag = event_target:claimant_country_2
+								}
+							}
 						}
 					}
-					cede_province = event_target:claimant_country_3
-					set_province_flag = SE_claimed_land
-					add_core = owner
+					random_owned_area = {
+						limit = {
+							any_province = {
+								area = PREV
+								any_neighbor_province = {
+									owner = {
+										tag = event_target:claimant_country_2
+									}
+								}
+							}
+						}
+						cede_province = event_target:claimant_country_2
+						set_province_flag = SE_claimed_land
+					}
+				}
+				else = {
+					random_list = {
+						1 = { 
+							random_owned_area = { 
+								cede_province = event_target:claimant_country_2 
+								set_province_flag = SE_claimed_land	
+							}
+						}
+						10 = { }
+					}
+				}
+				if = {
+					limit = {
+						any_owned_province = {
+							any_neighbor_province = {
+								owner = {
+									tag = event_target:claimant_country_3
+								}
+							}
+						}
+					}
+					random_owned_area = {
+						limit = {
+							any_province = {
+								area = PREV
+								any_neighbor_province = {
+									owner = {
+										tag = event_target:claimant_country_3
+									}
+								}
+							}
+						}
+						cede_province = event_target:claimant_country_3
+						set_province_flag = SE_claimed_land
+					}
+				}
+				else = {
+					random_list = {
+						1 = { 
+							random_owned_area = { 
+								cede_province = event_target:claimant_country_3
+								set_province_flag = SE_claimed_land	
+							}
+						}
+						10 = { }
+					}
+				}
+				if = {
+					limit = {
+						always = no
+					}
+					every_owned_province = {
+						limit = {
+							any_neighbor_province = {
+								owner = {
+									tag = event_target:claimant_country_1
+								}
+							}
+						}
+						cede_province = event_target:claimant_country_1
+						set_province_flag = SE_claimed_land
+					}
+					every_owned_province = {
+						limit = {
+							any_neighbor_province = {
+								owner = {
+									tag = event_target:claimant_country_2
+								}
+							}
+						}
+						cede_province = event_target:claimant_country_2
+						set_province_flag = SE_claimed_land
+					}
+					every_owned_province = {
+						limit = {
+							any_neighbor_province = {
+								owner = {
+									tag = event_target:claimant_country_3
+								}
+							}
+						}
+						cede_province = event_target:claimant_country_3
+						set_province_flag = SE_claimed_land
+					}
 				}
 			}
 			event_target:claimant_country_1 = {
-				create_vassal = event_target:partitioned_country
+				every_owned_province {
+					limit = {
+						is_core = event_target:partitioned_country
+						has_province_flag = SE_claimed_land
+					}
+					cede_province = event_target:partitioned_country
+				}
 				if = {
 					limit = {
 						religion_group = christian
 					}
 					create_union = event_target:partitioned_country
+				}
+				else = { 
+					vassalize = event_target:partitioned_country
 				}
 			}
 			event_target:claimant_country_2 = {
@@ -728,12 +885,21 @@ country_event = {
 						save_global_event_target_as = partitioned_country_2
 					}
 				}
-				create_vassal = event_target:partitioned_country_2
+				every_owned_province {
+					limit = {
+						is_core = event_target:partitioned_country
+						has_province_flag = SE_claimed_land
+					}
+					cede_province = event_target:partitioned_country_2
+				}
 				if = {
 					limit = {
 						religion_group = christian
 					}
 					create_union = event_target:partitioned_country_2
+				}
+				else = { 
+					vassalize = event_target:partitioned_country_2
 				}
 				if = {
 					limit = {
@@ -758,19 +924,28 @@ country_event = {
 							exists = no
 						}
 					}
-						random_core_country = {
+					random_core_country = {
 						limit = {
 							exists = no
 						}
 						save_global_event_target_as = partitioned_country_3
 					}
 				}
-				create_vassal = event_target:partitioned_country_3
+				every_owned_province {
+					limit = {
+						is_core = event_target:partitioned_country
+						has_province_flag = SE_claimed_land
+					}
+					cede_province = event_target:partitioned_country_3
+				}
 				if = {
 					limit = {
 						religion_group = christian
 					}
 					create_union = event_target:partitioned_country_3
+				}
+				else = { 
+					vassalize = event_target:partitioned_country_3
 				}
 				if = {
 					limit = {
@@ -804,6 +979,9 @@ country_event = {
 				clr_country_flag = country_claimed_yes
 				clr_country_flag = United_Duchies_claimed_yes
 				clr_country_flag = United_Duchies_Negotiations_Divide_yes
+			}
+			every_province = {
+				clr_province_flag = SE_claimed_land
 			}
 			clr_global_flag = flag_for_partition
 			clear_global_event_target = partitioned_country
