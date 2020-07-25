@@ -731,14 +731,17 @@ country_event = {
 					}
 				}
 				else = {
-					random_list = {
-						1 = { 
-							random_owned_area = { 
-								cede_province = event_target:claimant_country_1
-								set_province_flag = SE_claimed_land	
+					random_owned_area = {
+						limit = {
+							any_province = {
+								area = prev
+								NOT = {
+									is_in_capital_area = yes
+								}
 							}
 						}
-						10 = { }
+						cede_province = event_target:claimant_country_1
+						set_province_flag = SE_claimed_land	
 					}
 				}
 				if = {
@@ -767,14 +770,17 @@ country_event = {
 					}
 				}
 				else = {
-					random_list = {
-						1 = { 
-							random_owned_area = { 
-								cede_province = event_target:claimant_country_2 
-								set_province_flag = SE_claimed_land	
+					random_owned_area = {
+						limit = {
+							any_province = {
+								area = prev
+								NOT = {
+									is_in_capital_area = yes
+								}
 							}
 						}
-						10 = { }
+						cede_province = event_target:claimant_country_2
+						set_province_flag = SE_claimed_land	
 					}
 				}
 				if = {
@@ -803,14 +809,17 @@ country_event = {
 					}
 				}
 				else = {
-					random_list = {
-						1 = { 
-							random_owned_area = { 
-								cede_province = event_target:claimant_country_3
-								set_province_flag = SE_claimed_land	
+					random_owned_area = {
+						limit = {
+							any_province = {
+								area = prev
+								NOT = {
+									is_in_capital_area = yes
+								}
 							}
 						}
-						10 = { }
+						cede_province = event_target:claimant_country_3
+						set_province_flag = SE_claimed_land	
 					}
 				}
 				if = {
@@ -869,6 +878,13 @@ country_event = {
 				else = { 
 					vassalize = event_target:partitioned_country
 				}
+				event_target:partitioned_country = {
+					capital = {
+						PREV = {
+							change_religion = PREV
+						}
+					}
+				}
 			}
 			event_target:claimant_country_2 = {
 				random_owned_province = {
@@ -883,36 +899,59 @@ country_event = {
 							exists = no
 						}
 						save_global_event_target_as = partitioned_country_2
+						event_target:claimant_country_2 = {
+							set_country_flag = partitioned_country_2_flag
+						}
 					}
-				}
-				every_owned_province {
-					limit = {
-						is_core = event_target:partitioned_country
-						has_province_flag = SE_claimed_land
-					}
-					cede_province = event_target:partitioned_country_2
 				}
 				if = {
 					limit = {
-						religion_group = christian
+						has_country_flag = partitioned_country_2_flag
 					}
-					create_union = event_target:partitioned_country_2
-				}
-				else = { 
-					vassalize = event_target:partitioned_country_2
-				}
-				if = {
-					limit = {
-						event_target:partitioned_country_2 = {
-							exists = yes
-						}	
+					every_owned_province {
+						limit = {
+							is_core = event_target:partitioned_country
+							has_province_flag = SE_claimed_land
+						}
+						cede_province = event_target:partitioned_country_2
 					}
+					if = {
+						limit = {
+							religion_group = christian
+						}
+						create_union = event_target:partitioned_country_2
+					}
+					else = { 
+						vassalize = event_target:partitioned_country_2
+					}
+					if = {
+						limit = {
+							event_target:partitioned_country_2 = {
+								exists = yes
+							}	
+						}
+						every_owned_province = {
+							limit = {
+								has_province_flag = SE_claimed_land
+							}
+							cede_province = event_target:partitioned_country_2
+							add_core = event_target:partitioned_country_2
+						}
+					}
+				}
+				else = {
 					every_owned_province = {
 						limit = {
 							has_province_flag = SE_claimed_land
 						}
-						cede_province = event_target:partitioned_country_2
-						add_core = event_target:partitioned_country_2
+					}
+					add_core = PREV
+				}
+				event_target:partitioned_country_2 = {
+					capital = {
+						PREV = {
+							change_religion = PREV
+						}
 					}
 				}
 			}
@@ -929,37 +968,60 @@ country_event = {
 							exists = no
 						}
 						save_global_event_target_as = partitioned_country_3
+						event_target:claimant_country_3 = {
+							set_country_flag = partitioned_country_3_flag
+						}
 					}
-				}
-				every_owned_province {
-					limit = {
-						is_core = event_target:partitioned_country
-						has_province_flag = SE_claimed_land
-					}
-					cede_province = event_target:partitioned_country_3
 				}
 				if = {
 					limit = {
-						religion_group = christian
+						has_country_flag = partitioned_country_3_flag
 					}
-					create_union = event_target:partitioned_country_3
-				}
-				else = { 
-					vassalize = event_target:partitioned_country_3
-				}
-				if = {
-					limit = {
+					every_owned_province {
+						limit = {
+							is_core = event_target:partitioned_country
+							has_province_flag = SE_claimed_land
+						}
+						cede_province = event_target:partitioned_country_3
+					}
+					if = {
+						limit = {
+							religion_group = christian
+						}
+						create_union = event_target:partitioned_country_3
+					}
+					else = { 
+						vassalize = event_target:partitioned_country_3
+					}
+					if = {
+						limit = {
+							event_target:partitioned_country_3 = {
+								exists = yes
+							}	
+						}
+						every_owned_province = {
+							limit = {
+								has_province_flag = SE_claimed_land
+							}
+							cede_province = event_target:partitioned_country_3
+							add_core = event_target:partitioned_country_3
+						}
 						event_target:partitioned_country_3 = {
-							exists = yes
-						}	
+							capital = {
+								PREV = {
+									change_religion = PREV
+								}
+							}
+						}
 					}
+				}
+				else = {
 					every_owned_province = {
 						limit = {
 							has_province_flag = SE_claimed_land
 						}
-						cede_province = event_target:partitioned_country_3
-						add_core = event_target:partitioned_country_3
 					}
+					add_core = PREV
 				}
 			}
 		}
