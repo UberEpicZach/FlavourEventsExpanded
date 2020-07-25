@@ -24,7 +24,7 @@ country_event = {
 			type = natural_scientist
 			name = "Francis Bacon"
 			skill = 3
-			cost_modifier = -0.75
+			cost_multiplier = 0.25
 			add_country_modifier = {
 				name = "scientific_method"
 				duration = 7300
@@ -67,7 +67,7 @@ country_event = {
 		}
 		define_advisor = {
 			type = theologian
-			cost_modifier = -0.75
+			cost_multiplier = 0.25
 			skill = 3
 		}
 	}
@@ -83,7 +83,7 @@ country_event = {
 		}
 		define_advisor = {
 			type = philosopher
-			cost_modifier = -0.75
+			cost_multiplier = 0.25
 			skill = 3
 		}
 	}
@@ -99,7 +99,7 @@ country_event = {
 		}
 		define_advisor = {
 			type = artist
-			cost_modifier = -0.75
+			cost_multiplier = 0.25
 			skill = 3
 		}
 	}
@@ -440,7 +440,6 @@ country_event = {
 		}
 		add_church_power = 100
 	}
-	# Unfinished. Only gives a modifier.
 	option = {
 		name = fee_gbr_eng_3_7
 		trigger = {
@@ -751,8 +750,8 @@ province_event = {
 
 country_event = {
 	id = fee_gbr_eng.15
-	title = fee_gbr_eng_n_12
-	desc = fee_gbr_eng_d_12
+	title = fee_gbr_eng_n_15
+	desc = fee_gbr_eng_d_15
 	picture = ADVISOR_eventPicture
 	fire_only_once = yes
 	trigger = {
@@ -760,22 +759,78 @@ country_event = {
 			tag = ENG
 			tag = GBR
 		}
-		is_year = 1700
+		is_year = 1550
+		NOT = {
+			is_year = 1600
+		}
+		OR = {
+			has_country_flag = circumnavigation_done
+			has_country_flag = circumnavigation_first
+		}
+		any_province = {
+			colonial_region = colonial_california
+			has_discovered = ROOT
+		}
 	}
 	mean_time_to_happen = {
-		months = 150
+		months = 60
 	}
 	option = {
-		name = fee_gbr_eng_1_12
-		add_adm_power = 100
-		add_prestige = 15
-		change_innovativeness = 1
+		name = fee_gbr_eng_1_15
+		define_admiral = {
+			shock = 3
+			fire = 3
+			manuever = 6
+			siege = 2
+			name = "Francis Drake"
+			trait = El_Draque_modifier
+		}
+		if = {
+			limit = {
+				any_rival_country = {
+					capital_scope = {
+						region = iberia_region
+					}
+				}
+			}
+			random_rival_country = {
+				limit = {
+					capital_scope = {
+						region = iberia_region
+					}
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = FEE_Britain_England_El_Draque_Opinion_Modifier
+				}
+			}
+		}
+		else = {
+			add_prestige = -20
+		}
+	}
+	option = {
+		name = fee_gbr_eng_2_15
+		define_explorer = {
+			shock = 1
+			fire = 1
+			manuever = 6
+			siege = 1
+			name = "Francis Drake"
+			trait = Sea_Dog_modifier
+		}
+		add_country_modifier = {
+			name = fee_gbr_eng_legacy_of_drake
+			duration = 7300
+		}
+	}
+	option = {
+		name = fee_gbr_eng_3_15
 		define_advisor = {
-			type = artist
-			culture = saxon
-			name = "George Frederic Handel"
+			type = navigator
+			name = "Francis Drake"
 			skill = 3
-			discount = yes
+			cost_multiplier = 0.25
 		}
 	}
 }
