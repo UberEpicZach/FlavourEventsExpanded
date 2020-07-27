@@ -22,7 +22,21 @@
     FEE_HRE_Minors.5.dd: "As Western Europe begins to bring wealth from the New World and open up maritime trade to the Orient, the traditional wealth of German states dried up and the states of the Empire entered a prolonged depression. The overland routes between Italy and Germany fell into disuse and the trade in north Germany fell further and further behind that of the Atlantic powers. Even the great house of the Fuggers, making loans on the basis of ongoing German prosperity, found themselves overstretched and collapsed into bankruptcy. People began to leave the onceprosperous German cities, many for the booming cities of the Low Countries. "
     FEE_HRE_Minors.5.a: "We shall recover… eventually!"
 
+    FEE_HRE_Minors.6.tt: "Martin Luther in Hiding"
+    FEE_HRE_Minors.6.dd: "Despite Luther’s ringing defense of his faith in the Bible, the Diet of Worms proclaimed him a heretic. A price was laid on his head, giving any Imperial citizen free license to kill Luther. Elector [Root.Monarch.GetName], however, was not about to let this happen. Determined to save the fledgling Reformation while he/she still could, [Root.Monarch.GetName] had him “ambushed” by masked men and spirited away to one of his castles, where no one would find him.\nLuther used the time well, translating the Bible into German directly from the original Greek, writing hymns, and coining the five key tenets of the Reformation: Sola Scriptura, Sola Gratia, Sola Fide, Solus Christus, and Soli Deo Gloria. These five “Sola’s” would become the rallying cry of the reformation all over Europe."
+    FEE_HRE_Minors.6.a: "God has willed it"
 
+    FEE_HRE_Minors.7.tt: "The Question of the Imperial Navy"
+    FEE_HRE_Minors.7.dd: "The Holy Roman Empire has always been defined by two things: its decentralization and independence of princes, and its focus on internal, mainly German, affairs. As such, the Empire has never had the need or the resources to develop an Imperial Navy.\nHowever, when [ROOT] began to invest its own meager resources into a competitive navy, the Emperor did not take long to take note of the development. Now, a diplomat from the Emperor’s court has arrived in [ROOT] with an interesting proposal.\nPointing out the obvious truth, the Imperial diplomat argued that, since we have invested into expensive warships, our defensive capabilities on land may be sadly lacking in comparison to our neighbors. At the same time, the Emperor has a strong land army but little in the way of a navy. If we were to join forces with the Emperor and place our navy at his disposal should he need it, he would be more than willing to protect us on land in return."
+    FEE_HRE_Minors.7.a: "A splendid proposition!"
+    FEE_HRE_Minors.7.b: "We are better off alone"
+
+    FEE_HRE_Minors.8.tt: "Industrialization in the Rhineland"
+    FEE_HRE_Minors.8.dd: "While Britain may have led the way in its abundance of coal, the densely-populated and resource-rich ground of the Rhineland is in an excellent position to compete. And compete we must. Our small size relative to the great European powers means we must find a niche in the emerging international market or become merely a commodity ourselves to be taken, traded, and sold to the highest bidder. The reforms necessary to bring about needed change, and the speed at which they must be done, may make some people uncomfortable, however."
+    FEE_HRE_Minors.8.a: "Wealth is the only way by which small nations can have influence"
+    FEE_HRE_Minors.8.b: "We must lead the way in human advancement; only then may we achieve the respect of our neighbors"
+    FEE_HRE_Minors.8.c: "A nation that cannot defend itself is destined for the ash heap of history"
+    FEE_HRE_Minors.8.d: "The ways of our forefathers have held true thus far; there is no pressing need"
 
 # modifiers
     FEE_HRE_Minor_Durer: "Albrecht Durer"
@@ -30,3 +44,9 @@
     FEE_HRE_Minor_Expulsion_of_Jews: "Expelled Jews"
     FEE_HRE_Minor_Jewish_Refuge: "Jewish Refuge"
     FEE_HRE_Minors_German_Economic_Depression: "German Economic Depression"
+    FEE_HRE_Minors_Martin_Luther_in_Hiding: "Martin Luther in Hiding"
+    FEE_HRE_Minors_Independent_Navy: "Independent Navy"
+
+# opinion modifiers
+    FEE_HRE_Minor_Imperial_Navy_Opinion_Modifier: "Imperial Navy"
+    FEE_HRE_Minor_Imperial_Navy_Malus_Opinion_Modifier: "Imperial Navy Rejected"

@@ -146,7 +146,7 @@ country_event = {
 		name = FEE_HRE_Minors.3.a
 		add_reform_desire = 0.05
 		country_event = {
-			# id = ??? cant find the event
+			id = FEE_HRE_Minors.6
 		}
 	}
 	option = {
@@ -210,13 +210,13 @@ country_event = {
 		months = 200
 	}
 	option = {
-        name = FEE_HRE_Minors.5.a
-        every_country = {
+		name = FEE_HRE_Minors.5.a
+		every_country = {
 			limit = {
 				capital_scope = {
 					OR = {
-                        region = north_german_region
-                        region = south_german_region
+						region = north_german_region
+						region = south_german_region
 					}
 				}
 			}
@@ -226,5 +226,169 @@ country_event = {
 			}
 		}
 		add_stability = -1
+	}
+}
+
+country_event = {
+	id = FEE_HRE_Minors.6
+	title = FEE_HRE_Minors.6.tt
+	desc = FEE_HRE_Minors.6.dd
+	picture = ADVISOR_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = FEE_HRE_Minors.6.a
+		define_advisor = {
+			type = theologian
+			name = "Martin Luther"
+			skill = 3
+			culture = saxon
+			religion = protestant
+			cost_multiplier = 0.25
+		}
+	}
+	option = {
+		name = FEE_HRE_Minors.6.b
+		add_country_modifier = {
+			name = FEE_HRE_Minors_Martin_Luther_in_Hiding
+			duration = 3650
+		}
+	}
+}
+
+country_event = {
+	id = FEE_HRE_Minors.7
+	title = FEE_HRE_Minors.7.tt
+	desc = FEE_HRE_Minors.7.dd
+	picture = ADVISOR_eventPicture
+	fire_only_once = yes
+	trigger = {
+		is_emperor = no
+		is_elector = yes
+		or = {
+			naval_ideas = 3
+			maritime_ideas = 3
+		}
+		emperor = {
+			land_forcelimit = 100
+		}
+		num_of_heavy_ship = 10
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = FEE_HRE_Minors.7.a
+		create_alliance = emperor
+		add_opinion = {
+			who = emperor
+			modifier = FEE_HRE_Minor_Imperial_Navy_Opinion_Modifier
+		}
+		reverse_add_opinion = {
+			who = emperor
+			modifier = FEE_HRE_Minor_Imperial_Navy_Opinion_Modifier
+		}
+		add_country_modifier = {
+			name = FEE_HRE_Minors_Imperial_Patronage
+			duration = -1
+		}
+		add_prestige = 10
+	}
+	option = {
+		name = FEE_HRE_Minors.7.b
+		add_opinion = {
+			who = emperor
+			modifier = FEE_HRE_Minor_Imperial_Navy_Malus_Opinion_Modifier
+		}
+		reverse_add_opinion = {
+			who = emperor
+			modifier = FEE_HRE_Minor_Imperial_Navy_Malus_Opinion_Modifier
+		}
+		add_country_modifier = {
+			name = FEE_HRE_Minors_Independent_Navy
+			duration = -1
+		}
+	}
+}
+
+country_event = {
+	id = FEE_HRE_Minors.8
+	title = FEE_HRE_Minors.8.tt
+	desc = FEE_HRE_Minors.8.dd
+	picture = ADVISOR_eventPicture
+	fire_only_once = yes
+	trigger = {
+		is_part_of_hre = yes
+		or = {
+			has_idea_group = economic_ideas
+			has_idea_group = innovativeness_ideas
+		}
+		calc_true_if = {
+			any_owned_province = {
+				or = {
+					area = palatinate_area
+					area = north_rhine_area
+					area = lower_rhineland_area
+				}
+			}
+			value = 5
+		}
+		not = {
+			total_development = 500
+		}
+		any_owned_province = {
+			development = 30
+			OR = {
+				has_building = mills
+				has_building = farm_estate
+				has_building = tradecompany
+				has_building = plantations
+				has_building = textile
+				has_building = weapons
+				has_building = wharf
+				has_building = furnace
+			}
+		}
+		any_owned_province = {
+			has_building = furnace
+		}
+	}
+	mean_time_to_happen = {
+		months = 120
+	}
+	option = {
+		name = FEE_HRE_Minors.8.a
+		trigger = {
+			has_idea_group = economic_ideas
+		}
+		add_country_modifier = {
+			name = FEE_HRE_Minor_Economic_Ambition
+			duration = 7300
+		}
+		add_stability = -1
+	}
+	option = {
+		name = FEE_HRE_Minors.8.b
+		trigger = {
+			has_idea_group = innovativeness_ideas
+		}
+		add_country_modifier = {
+			name = FEE_HRE_Minor_Technological_Leadership
+			duration = 7300
+		}
+		add_stability = -1
+	}
+	option = {
+		name = FEE_HRE_Minors.8.c
+		add_country_modifier = {
+			name = FEE_HRE_Minor_Military_Reforms
+			duration = 7300
+		}
+		add_stability = -1
+	}
+	option = {
+		name = FEE_HRE_Minors.8.d
+		add_prestige = 10
+		add_stability = 1
 	}
 }
