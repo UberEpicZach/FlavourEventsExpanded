@@ -1227,7 +1227,8 @@ country_event = {
 	title = FEE_Iberia_Events.12.T
 	desc = FEE_Iberia_Events.12.D
 	picture = CHURCH_ESTATE_1_eventPicture
-
+	major = yes 
+	
 	trigger = {
 		tag = ARA
 		current_age = age_of_discovery
