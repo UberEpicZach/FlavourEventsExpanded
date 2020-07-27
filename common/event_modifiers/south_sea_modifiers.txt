@@ -1,0 +1,11 @@
+south_sea_company_agitating_for_peace = {
+	war_exhaustion = 0.5
+}
+
+south_sea_company_succeeds = {
+	interest = -0.5
+}
+
+crackdown_on_public_enterprises = {
+	global_trade_goods_size_modifier = -0.1
+}

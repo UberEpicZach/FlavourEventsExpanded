@@ -1,0 +1,889 @@
+################################################
+############# THE SOUTH SEA BUBBLE #############
+############ A Story in Three Acts #############
+################################################
+
+# Credits: 
+#  This event chain takes inspiration from the Extra History video series on the South Sea Bubble - https://www.youtube.com/watch?v=k1kndKWJKB8&list=PLEb6sGT7oD8HXTsBEmm3uxFrnvsmfOfhg
+#  Additional information was sourced from the Wikipedia article on the South Sea Company - https://en.wikipedia.org/wiki/South_Sea_Company
+
+# Notes on the structure of the event chain:
+#   The chain is mostly linear. Events that are labeled as "Off Ramps" end the event chain early. 
+#   Since the chain follows historical events, these off-ramps are all fictional scenarios.
+
+namespace = south_sea_company
+
+############# ACT 1: The Genius of John Blunt #############
+
+#An Intriguing Proposal
+
+country_event = {
+	id = south_sea_company.1
+	desc = south_sea_company.1.desc
+	title = south_sea_company.1.title	
+	picture = BANKRUPTCY_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		is_year = 1700
+		NOT = { 
+			is_year = 1720
+		}
+		OR = {
+			tag = ENG
+			tag = GBR
+		}
+		NOT = {				#To avoid confusion, this won't fire if both Great Britain and England exist.
+			AND = {
+				exists = GBR
+				exists = ENG 
+			}
+		}
+		num_of_loans = 5
+		any_owned_province = {		#Own at least one province in Ireland
+			OR = {
+				area = munster_area
+				area = connacht_area
+				area = ulster_area
+				area = leinster_area
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 12	
+	}
+	
+	
+	option = {
+		name = south_sea_company.1.a
+		
+		add_corruption = 0.5
+		add_years_of_income = 0.3
+		
+		define_advisor = {
+			type = master_of_mint
+			name = "John Blunt"
+			skill = 3
+			discount = yes
+		}
+		hidden_effect = {
+			country_event = {
+				id = south_sea_company.2
+				days = 180
+			}
+		}
+	}
+	
+}
+
+#A Better Lottery
+
+country_event = {
+	id = south_sea_company.2
+	desc = south_sea_company.2.desc
+	title = south_sea_company.2.title
+	picture = ECONOMY_eventPicture
+	
+	is_triggered_only = yes	
+	
+	option = {
+		name = south_sea_company.2.a
+		
+		add_years_of_income = 0.5
+		add_inflation = 2
+		set_country_flag = john_blunt	#Used to trigger the next event
+	}
+}
+
+# In order for the rest of the events to make sense, Britain has to be at war with Spain, own less than 10 provinces in South America, and have Spain own more than 10 provinces there. 
+# Since this is fairly restrictive, I designed it so that even if this isn't the case, the player/ai can at least still get the first two events about John Blunt if they meet the conditions for them.
+
+#The South Sea Company
+
+country_event = {
+	id = south_sea_company.3
+	desc = south_sea_company.3.desc
+	title = south_sea_company.3.title
+	fire_only_once = yes
+	picture = SHIP_SAILING_eventPicture
+	
+	trigger = {
+		is_year = 1700
+		NOT = { is_year = 1720 }		#Year range and country flag requirement give a reasonable window for a war with Spain to start
+		has_country_flag = john_blunt	#This flag is only given through the previous event in the chain, so no need to check if country is ENG or GBR
+		war_with = SPA
+		
+		#Spain must have at least 10 provinces in South America, either directly or through a subject
+		SPA = {							
+			OR = {
+				num_of_owned_provinces_with = {
+					value = 10
+					continent = south_america
+				}
+				any_subject_country = {
+					num_of_owned_provinces_with = {
+						value = 10
+						continent = south_america
+					}
+				}
+			}
+		}
+		
+		#GBR/ENG must NOT have more than 10 provinces in South America, either directly or through a subject
+		NOT = {
+			OR = {
+				num_of_owned_provinces_with = {
+					value = 10
+					continent = south_america
+				}
+				any_subject_country = {
+					num_of_owned_provinces_with = {
+						value = 10
+						continent = south_america
+					}
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = south_sea_company.3.a
+		custom_tooltip = south_sea_company.3.tooltip	#Warns the player that the company won't succeed unless they end their war with Spain in one year, and suggests taking provinces in South America could be worthwhile.
+		
+		#Adds a modifier that increases monthly war exhaustion. Mostly to encourage the AI to end the war.
+		add_country_modifier = {
+			name = "south_sea_company_agitating_for_peace"
+			duration = 365 
+		}
+		
+		hidden_effect = {
+			set_country_flag = south_sea_awaiting_peace
+			country_event = {
+				id = south_sea_company.5	#Event for if the war with Spain does not end within 1 year
+				days = 365
+			}
+		}
+	}
+}
+
+#The Riches of the South Sea (Fictional) (Off-Ramp)
+
+country_event = {							#Fictional scenario where the SSC actually makes money off of the South Sea trade. Ends the event chain early.
+	id = south_sea_company.4
+	desc = south_sea_company.4.desc
+	title = south_sea_company.4.title
+	picture = SHIP_SAILING_eventPicture
+
+	
+	trigger = {
+		has_country_flag = south_sea_awaiting_peace
+		NOT = {
+			war_with = SPA
+		}
+		OR = {									#GBR/ENG has 10 provinces in South America
+			num_of_owned_provinces_with = {
+				value = 10	
+				continent = south_america
+			}
+			any_subject_country = {
+				num_of_owned_provinces_with = {
+					value = 10
+					continent = south_america
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {			#Fires shortly after war with Spain ends
+		months = 1
+	}
+	
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = south_sea_awaiting_peace
+		}
+	}
+	
+	option = {							
+		name = south_sea_company.4.a
+		add_years_of_income = 5
+		add_country_modifier = {
+			name = "south_sea_company_succeeds"
+			duration = -1
+		}
+		remove_country_modifier = south_sea_company_agitating_for_peace	 
+	}
+}
+
+#The South Sea Company Fails (Fictional) (Off-Ramp)
+
+country_event = {							#Fictional scenario where the war drags on and the SSC fails to take off. Ends chain early.
+	id = south_sea_company.5
+	desc = south_sea_company.5.desc
+	title = south_sea_company.5.title
+	picture = SHIP_SAILING_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		war_with = SPA
+	}
+	
+	option = {
+		name = south_sea_company.5.a
+		remove_advisor = master_of_mint		#This is intended to get rid of John Blunt, but it could remove some other master of mint you happen to have, since we can't define advisor IDs when creating them. Otherwise I would assign John Blunt a unique advisor ID and call it here.
+	}
+}
+
+############# ACT 2: Blowing Up the Bubble #############
+
+#A Bad Deal
+
+country_event = {
+	id = south_sea_company.6
+	desc = south_sea_company.6.desc
+	title = south_sea_company.6.title
+	picture = DIPLOMACY_eventPicture
+	
+	trigger = {							#War with Spain ends without GBR/ENG gaining ports in South America - as happened historically. Event chain carries on.
+		has_country_flag = south_sea_awaiting_peace
+		NOT = { war_with = SPA }
+		NOT = {
+			OR = {
+				num_of_owned_provinces_with = {
+					value = 10
+					continent = south_america
+				}
+				any_subject_country = {
+					num_of_owned_provinces_with = {
+						value = 10 
+						continent = south_america
+					}
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {			#Fires shortly after war with Spain ends
+		months = 1
+	}
+	
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = south_sea_awaiting_peace
+		}
+	}
+	
+	option = {
+		name = south_sea_company.6.a
+		remove_country_modifier = south_sea_company_agitating_for_peace	
+		hidden_effect = {
+			country_event = {
+				id = south_sea_company.7
+				days = 180
+			}
+		}
+	}
+}
+
+#A Royal Institution
+
+country_event = {
+	id = south_sea_company.7
+	desc = south_sea_company.7.desc
+	title = south_sea_company.7.title
+	picture = COURT_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = south_sea_company.7.a
+		add_years_of_income = 0.5
+		add_legitimacy = 10
+		hidden_effect = {
+			#The next event in the chain requires the vanilla Jacobite Rebellion event to have happened. To keep the chain going, if that event has not happened by 1715, this event forces it.
+			if = {
+				limit = {
+					is_year = 1715 
+					NOT = {
+						has_country_flag = ENG_had_event_9139	#Flag set upon the vanilla event firing.
+					}
+				}
+				country_event = {
+					id = flavor_eng.9139
+					days = 30
+				}
+			}
+		}
+	}
+}
+
+#The Jacobite Rebellion is Crushed
+
+country_event = {
+	id = south_sea_company.8
+	desc = south_sea_company.8.desc
+	title = south_sea_company.8.title	
+	picture = STREET_SPEECH_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {									#Has had, and defeated, the Jacobite rebellion.
+		has_country_flag = ENG_had_event_9139
+		NOT = { num_of_rebel_armies = 1 }		#Unfortunately this is inexact - it picks out ANY rebel army, so if GBR has multiple revolts the event won't fire until all are defeated. I could include a province-scope "NOT = { controlled by = pretender }" trigger, but that would return true as soon as the rebels spawned, and I cannot specify the type of rebel armies existing as a trigger condition to counteract this.
+		NOT = { num_of_rebel_controlled_provinces = 1 }
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	option = {
+		name = south_sea_company.8.a
+		add_years_of_income = 0.5
+		hidden_effect = {
+			country_event = {
+				id = south_sea_company.9
+				days = 180
+			}
+		}
+	}
+}
+
+#Bribing MPs
+
+country_event = {
+	id = south_sea_company.9
+	desc = south_sea_company.9.desc
+	title = south_sea_company.9.title
+	picture = CORRUPTION_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			set_variable = { which = bubble_size value = 0 } #The value of this variable determines how bad the consequences of the SSC failing will be. The greater it is, the worse the consequences.
+			country_event = {
+				id = south_sea_company.10 
+				days = 180
+			}
+		}
+	}
+	#Bribe MPs to buy stock. Gives money, but increases corruption and - secretly - increases the severity of the fallout down the line.
+	option = {
+		name = south_sea_company.9.a
+		add_years_of_income = 0.5
+		add_corruption = 1.0
+		hidden_effect = {
+			change_variable = { which = bubble_size value = 1 }	#Adds 1 to bubble_size
+		}
+		
+		ai_chance = {						#The main criteria the AI will use in deciding which option to take is how many loans it has. 
+			factor = 30                     #The idea is the AI will take the easy option until it pays off all its loans, making the severity of the fallout tied directly to how in debt the AI is.
+			modifier = {
+				factor = 2
+				num_of_loans = 1
+				NOT = { num_of_loans = 2 }
+			}
+			modifier = {
+				factor = 2.5
+				num_of_loans = 2
+				NOT = { num_of_loans = 3 }
+			}
+			modifier = {
+				factor = 3
+				num_of_loans = 3
+				NOT = { num_of_loans = 4 }
+			}
+			modifier = {
+				factor = 4
+				num_of_loans = 4
+			}			
+		}
+	}
+	
+	option = {
+		name = south_sea_company.9.b
+		add_stability = -1
+		
+		ai_chance = {
+			factor = 70
+			modifier = {
+				factor = 0.75
+				stability = 1
+			}
+			modifier = {
+				factor = 0.5
+				stability = 0
+				NOT = { stability = 1 }
+			}
+			modifier = {
+				factor = 0.25
+				stability = -1
+				NOT = { stability = 0 }
+			}
+			modifier = {
+				factor = 0
+				stability = -2
+				NOT = { stability = -1 }
+			}
+		}
+	}
+} 
+
+#Pay Shares Back in Installments
+
+country_event = {
+	id = south_sea_company.10
+	desc = south_sea_company.10.desc
+	title = south_sea_company.10.title
+	picture = CORRUPTION_eventPicture
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = south_sea_company.11
+				days = 180
+			}
+		}
+	}
+
+	option = {
+		name = south_sea_company.10.a
+		add_years_of_income = 0.5
+		hidden_effect = {
+			change_variable = { which = bubble_size value = 1 }	#Adds 1 to bubble_size
+		}
+		ai_chance = {						
+			factor = 30
+			modifier = {
+				factor = 1.25
+				num_of_loans = 1
+				NOT = { num_of_loans = 2 }
+			}
+			modifier = {
+				factor = 1.5
+				num_of_loans = 2
+				NOT = { num_of_loans = 3 }
+			}
+			modifier = {
+				factor = 1.75
+				num_of_loans = 3
+				NOT = { num_of_loans = 4 }
+			}
+			modifier = {
+				factor = 2
+				num_of_loans = 4
+			}			
+		}
+	}
+	
+	option = {
+		name = south_sea_company.10.b
+		add_years_of_income = -0.5
+		ai_chance = {
+			factor = 70
+			modifier = {
+				factor = 0.75
+				NOT = { years_of_income = 2 }
+				years_of_income = 1.5
+			}
+			modifier = {
+				factor = 0.5
+				NOT = { years_of_income = 1.5 }
+				years_of_income = 1
+			}
+			modifier = {
+				factor = 0.25
+				NOT = { years_of_income = 1 }
+				years_of_income = 0.5 
+			}
+			modifier = {
+				factor = 0
+				NOT = { years_of_income = 0.5 }
+			}
+		}		
+	}
+}
+
+#Offer Loans to Buy Stock
+
+country_event = {
+	id = south_sea_company.11
+	desc = south_sea_company.11.desc
+	title = south_sea_company.11.title
+	picture = CORRUPTION_eventPicture
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = south_sea_company.12
+				days = 180
+			}
+		}
+	}
+	
+	option = {
+		name = south_sea_company.11.a
+		add_years_of_income = 0.5
+		add_inflation = 0.5
+		hidden_effect = {
+			change_variable = { which = bubble_size value = 1 }	#Adds 1 to bubble_size
+		}
+		ai_chance = {						
+			factor = 30
+			modifier = {
+				factor = 1.25
+				num_of_loans = 1
+				NOT = { num_of_loans = 2 }
+			}
+			modifier = {
+				factor = 1.5
+				num_of_loans = 2
+				NOT = { num_of_loans = 3 }
+			}
+			modifier = {
+				factor = 1.75
+				num_of_loans = 3
+				NOT = { num_of_loans = 4 }
+			}
+			modifier = {
+				factor = 2
+				num_of_loans = 4
+			}			
+		}
+	}
+	
+	option = {
+		name = south_sea_company.11.b	
+		add_years_of_income = -0.5
+		ai_chance = {
+			factor = 70
+			modifier = {
+				factor = 0.75
+				NOT = { years_of_income = 2 }
+				years_of_income = 1.5
+			}
+			modifier = {
+				factor = 0.5
+				NOT = { years_of_income = 1.5 }
+				years_of_income = 1
+			}
+			modifier = {
+				factor = 0.25
+				NOT = { years_of_income = 1 }
+				years_of_income = 0.5 
+			}
+			modifier = {
+				factor = 0
+				NOT = { years_of_income = 0.5 }
+			}
+		}
+	}
+}
+
+#Stock Market Frenzy
+
+country_event = {
+	id = south_sea_company.12
+	desc = south_sea_company.12.desc
+	title = south_sea_company.12.title
+	picture = MERCHANTS_TALKING_eventPicture
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			country_event = {
+				id = south_sea_company.13
+				days = 180
+			}
+		}
+	}
+		
+	option = {
+		name = south_sea_company.12.a
+		add_years_of_income = 0.5
+		add_country_modifier = {
+			name = "crackdown_on_public_enterprises"	#This is a severe enough penalty that having this choice contribute to the bubble_size would be overkill.
+			duration = 3650
+		}
+		ai_chance = {						
+			factor = 30                    
+			modifier = {
+				factor = 2
+				num_of_loans = 1
+				NOT = { num_of_loans = 2 }
+			}
+			modifier = {
+				factor = 2.5
+				num_of_loans = 2
+				NOT = { num_of_loans = 3 }
+			}
+			modifier = {
+				factor = 3
+				num_of_loans = 3
+				NOT = { num_of_loans = 4 }
+			}
+			modifier = {
+				factor = 4
+				num_of_loans = 4
+			}			
+		}
+	}
+	
+	option = {
+		name = south_sea_company.12.b
+		add_stability = -1
+		ai_chance = {
+			factor = 70
+			modifier = {
+				factor = 0.75
+				stability = 1
+			}
+			modifier = {
+				factor = 0.5
+				stability = 0
+				NOT = { stability = 1 }
+			}
+			modifier = {
+				factor = 0.25
+				stability = -1
+				NOT = { stability = 0 }
+			}
+			modifier = {
+				factor = 0
+				stability = -2
+				NOT = { stability = -1 }
+			}
+		}
+	}
+}
+
+############# ACT 3: The Bubble Bursts #############
+
+#Trouble on the Horizon
+
+country_event = {
+	id = south_sea_company.13
+	desc = south_sea_company.13.desc
+	title = south_sea_company.13.title
+	picture = MERCHANTS_TALKING_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = south_sea_company.13.a
+		add_years_of_income = 0.5
+		hidden_effect = {
+			country_event = {
+				id = south_sea_company.14
+				days = 180
+			}
+		}
+	}
+}
+
+#The Bubble Bursts
+
+country_event = {
+	id = south_sea_company.14
+	desc = south_sea_company.14.desc
+	title = south_sea_company.14.title
+	picture = BANKRUPTCY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = south_sea_company.14.a
+		#This is where the bubble_size variable matters. The outcome of this event is worse depending on how many times the player took the easy option in events 11, 10, and 9. 
+		if = {
+			limit = {
+				check_variable = { which = bubble_size value = 0 }
+				NOT = { check_variable = { which = bubble_size value = 1 } }
+			}
+			add_years_of_income = -1
+			add_legitimacy = -10
+		}
+		if = {
+			limit = {
+				check_variable = { which = bubble_size value = 1 }
+				NOT = { check_variable = { which = bubble_size value = 2 } }
+			}
+			add_stability = -1
+			add_years_of_income = -1.5
+			add_legitimacy = -20
+		}
+		if = {
+			limit = {
+				check_variable = { which = bubble_size value = 2 }
+				NOT = { check_variable = { which = bubble_size value = 3 } }
+			}
+			add_stability = -2
+			add_years_of_income = -2
+			add_legitimacy = -30
+		}
+		if = {
+			limit = {
+				check_variable = { which = bubble_size value = 3 }
+				NOT = { check_variable = { which = bubble_size value = 4 } }
+			}
+			add_stability = -3
+			add_years_of_income = -2.5
+			add_legitimacy = -40
+		}
+		
+		hidden_effect = {
+			country_event = {
+				 id = south_sea_company.15
+				 days = 180
+			}
+		}
+	}
+}
+
+#The Ballad of Robert Knight 
+#  In order for this part of the story to make sense, Brussels has to be owned by a Habsburg ruler. 
+#  If this isn't the case, the chain ends with the previous event, which also provides a reasonable conclusion to the narrative.
+
+country_event = {
+	id = south_sea_company.15
+	desc = south_sea_company.15.desc
+	title = south_sea_company.15.title
+	picture = ACCUSATION_eventPicture
+	is_triggered_only = yes
+	
+	trigger = {
+		92 = {	#Brabant, AKA Brussels
+			owner = {
+				dynasty = "von Habsburg"	#Knight fled to the Habsburg Netherlands, so as long as Brabant is held by ANY Habsburg country, the localisation will still fit history.
+			}
+		}
+	}
+	
+	option = {
+		name = south_sea_company.15.a
+		hidden_effect = {
+			92 = {	#Brabant, AKA Brussels
+				owner = {
+					save_event_target_as = brussels_owner	#For dynamic localisation
+				}
+			}
+		}
+		event_target:brussels_owner = {
+			country_event = {
+				id = south_sea_company.16
+			}
+		}
+	}
+}
+
+#Letters from the Isles (for owner of Brussels)
+
+country_event = {
+	id = south_sea_company.16
+	desc = south_sea_company.16.desc
+	title = south_sea_company.16.title
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {		#Make Knight dissapear
+		name = south_sea_company.16.a
+		add_years_of_income = 0.2
+		FROM = {
+			country_event = {
+				id = south_sea_company.17
+				days = 30
+			}
+		}
+		ai_chance = {
+			factor = 70
+		}
+	}
+	
+	option = {		#Let Knight return
+		name = south_sea_company.16.b
+		FROM = {
+			country_event = {
+				id = south_sea_company.18
+				days = 30
+			}
+		}
+		ai_chance = {
+			factor = 30
+		}
+	}
+}
+
+#Robert Knight Dissapears
+
+country_event = {
+	id = south_sea_company.17
+	desc = south_sea_company.17.desc
+	title = south_sea_company.17.title
+	picture = SPY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = south_sea_company.17.a
+		add_years_of_income = -0.2
+		add_stability = 1
+	}
+}
+
+#The Testimony of Robert Knight (Fictional)
+
+country_event = {
+	id = south_sea_company.18
+	desc = south_sea_company.18.desc
+	title = south_sea_company.18.title
+	picture = ACCUSATION_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = south_sea_company.18.a
+		add_legitimacy = -50
+		add_stability = -2
+		add_corruption = -1		#Not a typo - purging all the officials does help clean thing up. 
+	}
+}
+
+#  The End! 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
