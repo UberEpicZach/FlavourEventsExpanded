@@ -357,13 +357,32 @@
  CE_ansbach_expanded.14.a: "Press dynastic claims"
  CE_ansbach_expanded.14.b: "Press Brandenburger claims"
  CE_ansbach_expanded.14.c: "Nobody would respect them anyway"
+
+ CE_edict_of_potsdam_chain.1.t: "Edict de Fontainebleau" # (For France)
+ CE_edict_of_potsdam_chain.1.d: "The disloyal and heretical Huguenots can no longer be tolerated, their presence is offensive to all godfearing men of France, and the idea of maintaining the Edict of Nantes has become a burden shackling our nation to the Huguenots, let us end this vile and destructive force, and throw on the yoke they imposed on us in 1598!"
+ CE_edict_of_potsdam_chain.1.a: "I have a vision, its clear to me now, and oh what has to be done."
+ CE_edict_of_potsdam_chain.1.a.tooltip: "It might as well happen that these traitors will find someplace to stay abroad..."
+ CE_edict_of_potsdam_chain.1.b: "I suppose we can suffer them to live."
+
+ CE_edict_of_potsdam_chain.2.t: "Edict de Fontainebleau" # (For Prussia/Brandenburg)
+ CE_edict_of_potsdam_chain.2.d: "The king of France has gone mad and is declaring open season on his own subjects. After decades of abuse and mistreatement, sad that it has come to this. However, this could be an opportune moment to invite them over to repopulate our lands."
+ CE_edict_of_potsdam_chain.2.a: "Start the presses and prepare the couriers, invite them all!"
+ CE_edict_of_potsdam_chain.2.b: "Perhaps a later opportunity..."
+
+ CE_edict_of_potsdam_chain.3.t: "French Exodus"
+ CE_edict_of_potsdam_chain.3.d: "Sounds of 'The king has betrayed us' and 'flee for your lives' appears to be commonplace amongst the huguenots, and many of our pious citizens have taken it upon themselves to 'encourage' to expell their treasonous kin."
+ CE_edict_of_potsdam_chain.3.a: "Good riddance!"
+ CE_edict_of_potsdam_chain.3.a.tooltip: "§Y[Root.GetName]§! loses §R-5%§! (Exactly §R-[Root.5_percent_of_development_truncated.GetValue]§! development) of the current total development, distributed randomly between random provinces in §YFrench Region§!."
  
- 
- 
- 
- 
- 
- 
- 
+ CE_edict_of_potsdam_chain.4.t: "The Edict of Potsdam"
+ CE_edict_of_potsdam_chain.4.d: "The French Exodus has not gone unnoticed, and many of the people that now lack a place to call home are looking for a new start. If grant them generous offers of 'Two Horses, a Cow, and fifty Thalers' in addition to a farmstead, we can ensure many will look for a better life in our realm!"
+ CE_edict_of_potsdam_chain.4.a: "Issue it!"
+ CE_edict_of_potsdam_chain.4.b: "We can't afford that. Let them go somewhere else..."
+ CE_edict_of_potsdam_chain.4.a.tooltip: "Huguenots from §Y[FRA.GetName]§! have arrived! §Y[Root.GetName]§! gets §G+[Root.huguenots_arrived_in_capital.GetValue]§! development in the capital province of §Y[Root.Capital.GetCapitalName]§!."
+
+ CE_edict_of_potsdam_chain.5.t: "Huguenot Dissidents"
+ CE_edict_of_potsdam_chain.5.d: "For some reasons Huguenot dissidents from France have decided to choose our capital for their safe heaven. We should incporporate them to our society and make them work for the greater glory of our state. It may cost a bit but outcomes might be even greater than the price."
+ CE_edict_of_potsdam_chain.5.a: "Of course!"
+ CE_edict_of_potsdam_chain.5.b: "We can't really afford it..."
  
  
