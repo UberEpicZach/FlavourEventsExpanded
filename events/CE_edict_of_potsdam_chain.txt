@@ -350,17 +350,15 @@ country_event = {
 				else = {
 					add_base_manpower = 1
 				}
-			}
-			capital_scope = {
-				set_variable = {
+				export_to_variable = {
 					which = PRU_BRA_capital_tax
 					value = base_tax
 				}
-				set_variable = {
+				export_to_variable = {
 					which = PRU_BRA_capital_production
 					value = base_production
 				}
-				set_variable = {
+				export_to_variable = {
 					which = PRU_BRA_capital_manpower
 					value = base_manpower
 				}
@@ -389,8 +387,18 @@ country_event = {
 						religion = protestant
 						religion = reformed
 					}
-					NOT = {
-						total_development = PRU
+					if = {
+						limit = {
+							exists = PRU
+						}
+						NOT = {
+							total_development = PRU
+						}
+					}
+					else = {
+						NOT = {
+							total_development = BRA
+						}
 					}
 				}
 				country_event = {
