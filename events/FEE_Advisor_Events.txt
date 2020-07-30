@@ -1103,8 +1103,14 @@ country_event = {
 			random_list = {
 				25 = {
 					country_event = { id = FEE_Advisor_Event.24 days = 365 random = 30 }
+				}
+				25 = {
 					country_event = { id = FEE_Advisor_Event.25 days = 365 random = 30 }
+				}
+				25 = {
 					country_event = { id = FEE_Advisor_Event.26 days = 365 random = 30 }
+				}
+				25 = {
 					country_event = { id = FEE_Advisor_Event.27 days = 365 random = 30 }
 				}
 			}
