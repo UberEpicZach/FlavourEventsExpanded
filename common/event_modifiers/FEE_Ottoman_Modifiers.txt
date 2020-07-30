@@ -3,7 +3,6 @@ FEE_chiflik_system = {
 	global_unrest = -1
 	development_cost = 0.05
 	cavalry_power = -0.1
-	global_trade_goods_size_modifier = -0.1
 }
 
 FEE_defied_strong_ottoman_figureheads = {
@@ -22,4 +21,8 @@ FEE_turkish_controlled_city = {
 BUL_resistance = {
 	discipline = 0.05
 	land_forcelimit_modifier = 1
+}
+
+FEE_religious_zeal = {
+	global_missionary_strength = 0.05
 }

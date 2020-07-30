@@ -12,6 +12,7 @@ country_event = {
 		has_reform = ottoman_government
 		is_year = 1550
 		has_idea = timariot_system
+		total_development = 1000
 	}
 	
 	mean_time_to_happen = {
@@ -158,13 +159,131 @@ country_event = {
 				desc = FEE_goes_away_when_war_ends
 			}
 			hidden_effect = {
-				build_to_forcelimit = {
-					infantry = 0.8
-					cavalry = 0.2
-				}
 				add_treasury = 100
 				add_manpower = 7
+				country_event = { id = FEE_ottoman_events.4 days = 5 }
 			}
+		}
+	}
+}
+
+country_event = {
+	id = FEE_ottoman_events.4
+	title = FEE_ottoman_events.4.t
+	desc = FEE_ottoman_events.4.d
+	
+	is_triggered_only = yes
+	hidden = yes
+	
+	option = {
+		name = FEE_ottoman_events.4.a
+		ai_chance = {
+			factor = 100
+		}
+		capital_scope = {
+			build_to_forcelimit = {
+				infantry = 0.8
+				cavalry = 0.2
+			}
+		}
+	}
+}
+
+country_event = {
+	id = FEE_ottoman_events.5
+	title = FEE_ottoman_events.5.t
+	desc = FEE_ottoman_events.5.d
+	
+	hidden = yes
+	
+	trigger = {
+		has_country_modifier = BUL_resistance
+		NOT = { war_with = TUR }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = FEE_ottoman_events.5.a
+		ai_chance = {
+			factor = 100
+		}
+		remove_country_modifier = BUL_resistance
+	}
+}
+
+country_event = {
+	id = FEE_ottoman_events.6
+	title = FEE_ottoman_events.6.t
+	desc = FEE_ottoman_events.6.d
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = TUR
+		318 = {
+			owned_by = ROOT
+		}
+		is_year = 1650
+		NOT = { is_year = 1680 }
+		NOT = { religion = jewish }
+	}
+	
+	mean_time_to_happen = {
+		months = 100
+	}
+	
+	option = {
+		name = FEE_ottoman_events.6.a
+		ai_chance = {
+			factor = 70
+		}
+		318 = {
+			spawn_rebels = {
+				type = jewish_rebels
+				size = 1
+			}
+		}
+	}
+	option = {
+		name = FEE_ottoman_events.6.b
+		ai_chance = {
+			factor = 30
+		}
+		country_event = { id = FEE_ottoman_events.7 days = 5 }
+	}
+}
+
+country_event = {
+	id = FEE_ottoman_events.7
+	title = FEE_ottoman_events.7.t
+	desc = FEE_ottoman_events.7.d
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = FEE_ottoman_events.7.a
+		ai_chance = {
+			factor = 70
+		}
+		318 = {
+			spawn_rebels = {
+				type = jewish_rebels
+				size = 1
+			}
+		}
+	}
+	option = {
+		name = FEE_ottoman_events.7.b
+		ai_chance = {
+			factor = 30
+		}
+		change_religion = jewish
+		add_country_modifier = {
+			name = FEE_religious_zeal
+			duration = 3650
 		}
 	}
 }
