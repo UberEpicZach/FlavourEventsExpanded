@@ -424,6 +424,7 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = {
+		hidden_effect = {
 			capital_scope = {
 				export_to_variable = {
 					variable_name = CURRENT_capital_tax
@@ -438,6 +439,7 @@ country_event = {
 					value = base_manpower
 				}
 			}
+		}
 	}
 
 	option = {
