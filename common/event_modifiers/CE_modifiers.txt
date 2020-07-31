@@ -20,7 +20,7 @@ CE_vlach_law = {
 	burghers_loyalty_modifier = -0.05
 }
 CE_elected_king_of_bohemia = {
-	legitimacy = 1
+	legitimacy = 0.5
 }
 CE_royal_prerogative_tax = {
 	war_taxes_cost_modifier = -0.5

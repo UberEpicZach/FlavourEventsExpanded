@@ -275,8 +275,8 @@ country_event = {
 						}
 					}
 				}
-			}
 			cede_province = SIL
+			}
 			every_province = {
 				limit = {
 					area = lusatia_area
@@ -311,7 +311,7 @@ country_event = {
 		vassalize = SOR
 		vassalize = MVA
 		add_ruler_modifier = {
-			name = "CE_king_of_bohemia" #+0.5 Legitimacy
+			name = "CE_elected_king_of_bohemia" #+0.5 Legitimacy
 			duration = -1
 		}
 		HAB = {
