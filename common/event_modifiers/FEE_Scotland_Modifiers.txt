@@ -1,0 +1,71 @@
+FEE_Scotland_compulsory_education = {
+	adm_tech_cost_modifier = -0.05
+}
+
+FEE_Scotland_education_stifled = {
+	adm_tech_cost_modifier = 0.05
+}
+
+FEE_Scotland_forced_order = {
+	local_unrest = 5
+}
+
+FEE_Scotland_chieftans_pleased = {
+	local_unrest = -5
+	local_manpower_modifier = 0.2
+}
+
+FEE_Scotland_land_focus = {
+	mil_tech_cost_modifier = -0.1
+	dip_tech_cost_modifier = 0.1
+}
+
+FEE_Scotland_the_faithful_encouraged = {
+	tolerance_own = 2
+}
+
+FEE_Scotland_the_faithful_disappointed = {
+	tolerance_own = -2
+}
+
+FEE_Scotland_reformers_violently_suppressed = {
+	global_unrest = 2
+	tolerance_heretic = -2
+}
+
+FEE_Scotland_reformers_stifled = {
+	global_unrest = 1
+	tolerance_heretic = -1
+}
+
+FEE_Scotland_new_ideas_heeded = {
+	tolerance_heretic = 1
+}
+
+FEE_Scotland_john_knox_local_missionary = {
+	local_missionary_strength = -1
+}
+
+FEE_Scotland_john_knox_global_missionary = {
+	global_missionary_strength = 0.04
+	tolerance_own = 2
+}
+
+FEE_Scotland_reigning_in_the_presbyterians = {
+	max_absolutism = 25
+}
+
+FEE_Scotland_presbyterian_freedoms_protected = {
+	max_absolutism = -30
+	global_unrest = -2
+	clergy_loyalty_modifier = 0.05
+}
+
+FEE_Scotland_presbyterians_placated = {
+	max_absolutism = -30
+}
+
+FEE_Scotland_presbyterian_compromise = {
+	max_absolutism = -10
+	global_unrest = -1
+}

@@ -1,0 +1,133 @@
+﻿l_english:
+    FEE_Scotland_Covenanters: "Covenanter Scotland"
+    FEE_Scotland_Covenanters_ADJ: "Covenanter Scotland"
+
+    FEE_Scotland_compulsory_education: "Compulsory Education"
+    FEE_Scotland_education_stifled: "Education Stifled"
+    FEE_Scotland_forced_order: "Forced Order"
+    FEE_Scotland_chieftans_pleased: "Chieftans Pleased"
+    FEE_Scotland_land_focus: "Land Focus"
+    FEE_Scotland_the_faithful_encouraged: "The Faithful Encouraged"
+    FEE_Scotland_the_faithful_disappointed: "The Faithful Disappointed"
+    FEE_Scotland_reformers_violently_suppressed: "Reformers Violently Suppressed"
+    FEE_Scotland_reformers_stifled: "Reformers Stifled"
+    FEE_Scotland_new_ideas_heeded: "New Ideas Heeded"
+    FEE_Scotland_john_knox_local_missionary: "John Knox"
+    FEE_Scotland_john_knox_global_missionary: "John Knox"
+    FEE_Scotland_thankful_for_not_supporting_rebels: "Thankful for not Supporting Rebels"
+    FEE_Scotland_infuriated_by_supporting_rebels: "Infuriated by Supporting Rebels"
+    FEE_Scotland_reigning_in_the_presbyterians: "Reigning In the Presbyterians"
+    FEE_Scotland_presbyterian_freedoms_protected: "Presbyterian Freedoms Protected"
+    FEE_Scotland_presbyterians_placated: "Presbyterians Placated"
+    FEE_Scotland_presbyterian_compromise: "Presbyterian Compromise"
+    
+    FEE_Scotland_strategic_marriage: "Strategic Marriage"
+    FEE_Scotland_marriage_offer_spurned: "Marriage Offer Spurned"
+    FEE_Scotland_prepared_for_crusade_against_turks: "Prepared for Crusade Against Turks"
+
+    FEE_Scotland_Events.1.t: "The Renaissance in Scotland"
+    FEE_Scotland_Events.1.d: "While the Renaissance is in full swing in far-off Italy, under the blessed leadership of [SCO.Monarch.GetName], education and culture have flowered in Scotland at long last. The University of St. Andrews, one of the oldest such institutions in the British Isles, had already been founded in 1413, with the University of Glasgow and University of St. Andrew’s following in 1450 and 1495. The pinnacle of this flowering came in 1496 with the Education Act of 1496, when Scotland became the first nation in the world to institute compulsory education (of landowners), for the purposes of fostering a more equitable justice system in Scotland."
+    FEE_Scotland_Events.1.a: "Pass the Education Act!"
+    FEE_Scotland_Events.1.b: "Fund the Universities, but do not anger the Lords of Scotland"
+    FEE_Scotland_Events.1.c: "We don’t need these dangerous new Italian ideas!"
+
+    FEE_Scotland_Events.2.t: "A Strategic Marriage"
+    FEE_Scotland_Events.2.d: "With the rise of the Tudors in England and the Hundred Years' War drawing to a slow andpainful close, Scotland stands at a crossroads. The English, ever seeking to expand into Scottishholdings, are a historic and existential threat, but currently exhausted from years of foreignengagements and civil wars, and are perhaps, for the first time in history, open to rapprochement with their northern neighbour. Meanwhile, France is the historic ally of Scotland, but with the English largely evicted from Europe, their interest in helping Scotland might well wane beyond repair if swift diplomatic action is not taken. The time has come for Scotland to solidify her diplomatic standing in Europe, but no longer can she dally between France in England: we must choose a side! And with several eligible daughters of House [SCO.Dynasty.GetName], a royal marriage could well seal whichever bond we pursue."
+    FEE_Scotland_Events.2.a: "Marriage with France"
+    FEE_Scotland_Events.2.b: "Marriage with England"
+    FEE_Scotland_Events.2.b.tooltip1: "Removes all §Y[ENG.GetAdjective]§! claims to §Y[SCO.GetAdjective]§! lands."
+    
+    FEE_Scotland_Events.3.t: "Marriage Offer Spurned"
+    FEE_Scotland_Events.3.d: "With the great displeasure we have been informed that our marriage proposal for Scotland was somehow spurned. If these Scottish dogs think they can just simply say \"no\" to us then they are even more stupid than we thought. But from such a situation another possibility emerges - we could use the wole confusion and simply press our claim to the Scottish throne by using pure force."
+    FEE_Scotland_Events.3.a: "They shall taste our swords!"
+    
+    FEE_Scotland_Events.4.t: "Treaty of Perpetual Peace"
+    FEE_Scotland_Events.4.d: "Sometimes, on a very rare occasion diplomacy indeed turns out to be stronger than the sword. By the grace ouf our Lord and Saviour, Scottish lords have come to their senses and finally noticed an other way to handle our tense situation. Instead conducting another pointless assault and fighting never ending skirmishes, they decided to offer us a deal - by terms of which our countries could amend mutual relationships."
+    FEE_Scotland_Events.4.a: "This might be the beginning of our reconciliation!"
+
+    FEE_Scotland_Events.5.t: "[SCO.Monarch.GetName] Visits the Highlands"
+    FEE_Scotland_Events.5.d: "In 1494, James IV of Scotland, one of the few late Scottish kings to learn Gaelic, made a series of visits to the Highlands after reconciling with the power of the Lordship of the Isles and the Douglass clan. Not only was such a visit almost unheard of for Scottish kings, but James decided that coming as a friend to the clans rather than as an assertive overlord would prove more productive, and this was indeed the case. After many royal feasts and hunts with the variousgreat clan chieftains of the North, we must now decide - shall we attempt to divert the clans from constant petty warfare via economic projects? Or are we to placate the chiefs in exchange for loyalty?"
+    FEE_Scotland_Events.5.a: "Let us impose order on these wild northerners!"
+    FEE_Scotland_Events.5.b: "Let us continue to befriend the clans"
+    
+    FEE_Scotland_Events.6.t: "Naval Expansion and the Great Michael"
+    FEE_Scotland_Events.6.d: "In the aftermath of the fall of Constantinople, [SCO.Monarch.GetName], having settled internal conflicts and achieved peace, however uneasy, with England, has become filled with religious zeal, and the desire to use Scotland’s position as the balance decider in European alliances to form a new crusade, one that would unite Christendom against the Turkish menace. However, to do so, a great fleet will first be needed to get to the Levant in the first place..."
+    FEE_Scotland_Events.6.a: "Build a Grand Fleet!"
+    FEE_Scotland_Events.6.a.tooltip1: "All rivals of §Y[TUR.GetName]§! will get §G+100§! opinion modifier towards §Y[SCO.GetName]§!."
+    FEE_Scotland_Events.6.b: "We do not have the resources for a fleet with England at our doorstep!"
+    
+    FEE_Scotland_Events.7.t: "Disaster at Flodden"
+    FEE_Scotland_Events.7.d: "In 1513, as a result of the renewal of the Auld Alliance with France, the insolent English monarch Henry VIII rebuffed James IV’s attempts to secure peace in the British Isles, declaring himself the “verie owner of Scotland,” bringing yet another Anglo-Scottish War to the island. The Scottish army, ill-equipped and badly led, managed to capture English border forts before being caught at Flodden. The battle was in name only, as it quickly became a massacre: the flower of the Scottish nobility, the knights of Scotland, were slaughtered almost to a man, and the Royal Scottish army for a time ceased to exist as a credible fighting force. The battle is remembered today in the Scottish eulogy song which laments: The Flowers of the Forest are a’wede away."
+    FEE_Scotland_Events.7.a: "O God, why hast thou forsaken Scotland?"
+    
+    FEE_Scotland_Events.8.t: "Corruption in the Church"
+    FEE_Scotland_Events.8.d: "As Protestant views gain steam on the continent, nowhere in Europe is the Catholic Church as corrupt as the Church in Scotland. “Pilates, not Prelates,” Pope Eugenius IV had described Scottish bishops. Priests are regularly ordained who cannot even read or write, while many others are openly drunk or lecherous, while still others use their positions to increase their own luxurious dwellings (which more often than not are fought over by bastard sons after the death of the priest), while rural church buildings fall into disrepair."
+    FEE_Scotland_Events.8.a: "Root out the Rot!"
+    FEE_Scotland_Events.8.b: "The situation is not without it’s advantages..."
+    
+    FEE_Scotland_Events.9.t: "Early Scottish Reformers"
+    FEE_Scotland_Events.9.d: "With the arrival of preachers Patrick Hamilton and George Wishart, the Reformation has arrived in Scotland. Bringing revolutionary Protestant ideas to a nation weary of corruption in the church, their words spread like wildfire. Ever-larger crowds, including some of noble stock, follow them wherever they go, and seditious whispers against the Roman church are not so quiet anymore..."
+    FEE_Scotland_Events.9.a: "Burn the heretics!"
+    FEE_Scotland_Events.9.b: "Have these traitorous dogs killed secretly"
+    FEE_Scotland_Events.9.c: "Let us hear what these new preachers have to say..."
+    
+    FEE_Scotland_Events.10.t: "Martyrdom of Patrick Hamilton"
+    FEE_Scotland_Events.10.d: "Rather than seek reconciliation, the Scottish monarch, [SCO.Monarch.GetName], egged on by the Catholic cardinals, has decided to make a public example of the Protestant preacher Patrick Hamilton in order to quell the sedition caused by his words. However, attempting intimidating Scots has rarely proven successful, and the courage at which Hamilton met his death only inspired more people to follow his ideas and those of other reformers. One observer remarked to the presiding Cardinal \"My Lord, if you burn any more, let them be burned in cellars, for the reek of Patrick Hamiltion has infected as many as it blew upon.\""
+    FEE_Scotland_Events.10.a: "Only time will tell what comes of this..."
+    
+    FEE_Scotland_Events.11.t: "John Knox"
+    FEE_Scotland_Events.11.d: "Having already been involved as the right-hand man of George Wishart, an early Scottish reformers, former Catholic priest John Knox was banished after the initial suppression of thereformers’ message led to his leading a daring assault on the Cardinal’s castle by protestant zealots, during which the Cardinal was killed. \n\nCondemned as a rower on a French galley, a fate which normally would prove fatal. While physically weakened and no longer able to wield a great Scottish two-handed sword as he did under Wishart, Knox’s already formidable personality was only honed by his experience aboard the galleys. \n\nHaving spent several years under the strict tutelage of John Calvin in Geneva, Knox adopted a rare but potent strain of Protestantism, and returned to Scotland determined to bring that faith to his homeland."
+    FEE_Scotland_Events.11.a: "What could this mean for Scotland?"
+    
+    FEE_Scotland_Events.12.t: "The Lords of the Congregation"
+    FEE_Scotland_Events.12.d: "While the bold new ideas brought by the flaming personality of Knox have not officially been accepted, many of the Scottish nobles, whether through genuine belief, disgust at the corruption of the clergy, or simply a desire to reduce royal power, have secretly formed a pact, calling themselves of Lords of the Congregation. Their seditious spirit was fueled by Calvin’s and Knox’s radical interpretation of Scripture, which gave license to and indeed encouraged \"lesser magistrates\" to rise up and install a more \"godly\" ruler."
+    FEE_Scotland_Events.12.a: "How dare they?"
+    FEE_Scotland_Events.12.a.tooltip1: "Other §YReformed§! countries might see an opportunity in supporting the rebels..."
+    
+    FEE_Scotland_Events.13.t: "Brothers in Arms?"
+    FEE_Scotland_Events.13.d: "The news have arrived that in the distant land of Scotland our brothers and sisters in faith have taken up their arms and trying to impose rightful way of interpreting the very words of our Lord and Saviour upon their ungodly ruler! Perhaps by providing them enough help both in terms of gold and willing to fight souls we would turn the tide of such a godly conflict towards the victory of true believers? Yet, doing so would also gravely infuriate [SCO.Monarch.GetName] of [SCO.GetName]."
+    FEE_Scotland_Events.13.a: "Oh yes, of course, everything for faith! Let God sort his own!"
+    FEE_Scotland_Events.13.b: "Or perhaps not. Better leave it be..."
+    
+    FEE_Scotland_Events.14.t: "[From.GetAdjective] [From.Monarch.GetTitle] Supports Rebellion!"
+    FEE_Scotland_Events.14.d: "An enemy force from abroad has supported the rebellious zealots that have ravaged our country. Such a clearly hostile interference in our nation will not go unnoticed.\nLet [From.Monarch.GetName], the [From.GetAdjective] [From.Monarch.GetTitle] know of this offense!"
+    FEE_Scotland_Events.14.a: "Damn thou shall be!"
+    
+    FEE_Scotland_Events.15.t: "[From.GetAdjective] [From.Monarch.GetTitle] Refuses to Support Rebellion!"
+    FEE_Scotland_Events.15.d: "A force from abroad has refused to support the rebellious zealots that have ravaged our country. Such a clearly friedly act will not go unnoticed.\nLet [From.Monarch.GetName], the [From.GetAdjective] [From.Monarch.GetTitle] know of our gratitude!"
+    FEE_Scotland_Events.15.a: "Wonderfully!"
+    
+    FEE_Scotland_Events.16.t: "Reimposition of Church Hierarchy"
+    FEE_Scotland_Events.16.d: "After successive waves of reformers had taken control of the church largely out of both royal and papal hands, the Stuart kings often sought ways to reign in the autonomy of both the church and the nobles who ran it. Taking a page from Scotland’s southern neighbor, [SCO.Monarch.GetName] has come up with an ambitious plan of enforcing a common book of prayer (approved by the crown of course), and generally bringing the church, and the nobles who back the church, back undernational control.\n\nOne of the greatest obstacles to [SCO.Monarch.GetName]'s plan, and to central authority in general, is the rigorously Presbyterian structure of the church instituted by Knox. In this structure, churches are governed by an assembly of the elders of each congregation, who in turn comprise the General Assembly, with no central figurehead or hierarchy. For [SCO.Monarch.GetName]’s plan to make any progress, he must first reinstitute a more traditional hierarchy of bishops, beholden to the crown."
+    FEE_Scotland_Events.16.a: "Crack down on the Presbyterians"
+    FEE_Scotland_Events.16.b: "Make Concessions to the Presbyterians"
+    
+    FEE_Scotland_Events.17.t: "Jenny Geddes and the Prayer Book Riots"
+    FEE_Scotland_Events.17.d: "The imposition of a uniform prayer book and the re-introduction of pipe organs - derisively called a “kist o’whistles” by Scots - to Scottish churches was meant merely as a benign first stepin [SCO.Monarch.GetName]’s plans. However, the mere suggestion of “popery” was met with resistance fierce enough to completely catch [SCO.Monarch.GetName] completely off guard. Churches all over Scotland bristled with the changes, and it only took a spark to light them.\n\nThat spark came from Edinburgh itself, the historic heart of the Scottish church. When the new prayer book was first read, one Jenny Geddes, a local young woman, was the first to stand. “​De'il gie you colic, the wame o' ye, fause thief; daur ye say Mass in my lug?” ​she yelled. Picking up a humble stool, universally used by congregation members in church’s largely barren of seating, Geddes hurled the stool directly at the offending preacher. Within minutes, the entire city was up in arms, and the tumult quickly spread throughout Scotland."
+    FEE_Scotland_Events.17.a: "Back down, and quickly!"
+    FEE_Scotland_Events.17.b: "The Presbyterians will bend, or be destroyed!"
+    
+    FEE_Scotland_Events.18.t: "Signing of the National Covenant"
+    FEE_Scotland_Events.18.d: "The revolt of the Presbyterians has once again brought the Lords of the Congregation, never far from the public eye, to the forefront of Scottish politics again. Now, however, fearing the threat of royal absolutism, even more nobles have joined their ranks. Together with notable Presbyterian ministers, representatives from the burghers, and several minor gentry, they have drafted a landmark document, the National Covenant.\n\nThe Covenanters, as they became known, pledged their loyalty both to “the true religion” and to royal authority, but only within limits far below those of European absolutist monarchs. Copies of the Covenant were swiftly carried from Edinburgh throughout all Scotland.\n\nEven more alarming, Scotland’s greatest military leaders, including Archibald Campbell, a Highland Chieftain, and Alexander Leslie, a distinguished veteran of the War of the Protestant League on the continent."
+    FEE_Scotland_Events.18.a: "Back down"
+    FEE_Scotland_Events.18.b: "Negotiate with the Covenanters"
+    FEE_Scotland_Events.18.c: "Crush Them!"
+    FEE_Scotland_Events.18.c.tooltip1: "It will tear up [SCO.GetName]. Highland provinces of Covenanters will break off from the state and declare independence war against us.\n\nIt's highly probable that our rivals join in at the Convenanters' side!"
+    
+    FEE_Scotland_Events.19.t: "Scottish Civil War"
+    FEE_Scotland_Events.19.d: "War! Tensions between Crown and Covenant have reached a boiling point. Under the leadership of Leslie and Campbell, the Covenanters have had enough, declaring their own independence from the Kingdom of Scotland!" 
+    FEE_Scotland_Events.19.a: "For the Covenant!"
+    FEE_Scotland_Events.19.b: "For the Crown!"
+    
+    FEE_Scotland_Events.20.t: "Covenanters Rise up Against Oppressors!"
+    FEE_Scotland_Events.20.d: "War! Tensions between Crown and Covenant have reached a boiling point. Under the leadership of Leslie and Campbell, the Covenanters have had enough, declaring their own independence from our rival, the Kingdom of Scotland!" 
+    FEE_Scotland_Events.20.a: "Support them!"
+    FEE_Scotland_Events.20.b: "Do nothing"
+    
+    FEE_Scotland_Events.21.t: "[From.GetAdjective] [From.Monarch.GetTitle] Supports Rebellion!"
+    FEE_Scotland_Events.21.d: "An enemy force from abroad has supported the rebellious zealots that have ravaged our country. Such a clearly hostile interference in our nation will not go unnoticed.\nLet [From.Monarch.GetName], the [From.GetAdjective] [From.Monarch.GetTitle] know of this offense!"
+    FEE_Scotland_Events.21.a: "Damn thou shall be!"
+    
+    FEE_Scotland_Events.22.t: "[From.GetAdjective] [From.Monarch.GetTitle] Refuses to Support Rebellion!"
+    FEE_Scotland_Events.22.d: "A force from abroad has refused to support the rebellious zealots that have ravaged our country. Such a clearly friedly act will not go unnoticed.\nLet [From.Monarch.GetName], the [From.GetAdjective] [From.Monarch.GetTitle] know of our gratitude!"
+    FEE_Scotland_Events.22.a: "Wonderfully!"
