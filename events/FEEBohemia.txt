@@ -8,6 +8,8 @@ country_event = {
 	desc = "events_boh.2.dd"
 	picture = MILITARY_CAMP_eventPicture
 	
+	fire_only_once = yes
+
 	trigger = {
 		tag = BOH
 		NOT = { is_year = 1490 }
@@ -34,6 +36,8 @@ country_event = {
 	desc = "events_boh.3.dd"
 	picture = REFORM_eventPicture
 	
+	fire_only_once = yes
+
 	trigger = {
 		tag = BOH
 		has_ruler = "Jirí"
@@ -112,6 +116,7 @@ country_event = {
 	picture = ECONOMY_eventPicture
 	
 	major = yes
+	fire_only_once = yes
 	
 	trigger = {
 		tag = BOH
@@ -171,6 +176,8 @@ country_event = {
 	desc = "events_boh.5.dd"
 	picture = ANGRY_MOB_eventPicture
 	
+	fire_only_once = yes
+
 	trigger = {
 		tag = BOH
 		is_subject_of = HAB
@@ -225,8 +232,9 @@ country_event = {
 	desc = "events_boh.6.dd"
 	picture = SIEGE_eventPicture
 	
-	trigger = {
+	fire_only_once = yes
 
+	trigger = {
 		owns_core_province = 266
 		any_country = { 
 			OR = {

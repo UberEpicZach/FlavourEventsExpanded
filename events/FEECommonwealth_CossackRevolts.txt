@@ -642,7 +642,7 @@ country_event = {
 			add_devastation = 20
 			spawn_rebels = {
 				type = cossack_rebels
-				size = 5
+				size = 3
 				win = yes
 				leader = "Severyn Nalyvaiko"
 			}
@@ -654,6 +654,7 @@ country_event = {
 				add_devastation = 10
 				spawn_rebels = {
 					type = cossack_rebels
+					size = 0
 					win = yes
 				}
 				kill_units = { who = REB }
@@ -663,6 +664,7 @@ country_event = {
 				add_devastation = 10
 				spawn_rebels = {
 					type = cossack_rebels
+					size = 0
 					win = yes
 				}
 				kill_units = { who = REB }
@@ -672,6 +674,7 @@ country_event = {
 				add_devastation = 10
 				spawn_rebels = {
 					type = cossack_rebels
+					size = 0
 					win = yes
 				}
 				kill_units = { who = REB }
@@ -681,6 +684,7 @@ country_event = {
 				add_devastation = 10
 				spawn_rebels = {
 					type = cossack_rebels
+					size = 0
 					win = yes
 				}
 				kill_units = { who = REB }
@@ -690,6 +694,7 @@ country_event = {
 				add_devastation = 10
 				spawn_rebels = {
 					type = cossack_rebels
+					size = 0
 					win = yes
 				}
 				kill_units = { who = REB }
@@ -699,6 +704,7 @@ country_event = {
 				add_devastation = 10
 				spawn_rebels = {
 					type = cossack_rebels
+					size = 0
 					win = yes
 				}
 				kill_units = { who = REB }
@@ -708,6 +714,7 @@ country_event = {
 				add_devastation = 10
 				spawn_rebels = {
 					type = cossack_rebels
+					size = 0
 					win = yes
 				}
 				kill_units = { who = REB }
@@ -810,6 +817,7 @@ country_event = {
 			4542 = {
 				spawn_rebels = {
 					type = cossack_rebels
+					size = 0
 					win = yes
 				}
 				kill_units = { who = REB }
@@ -899,8 +907,10 @@ country_event = {
 				limit = {
 					4542 = { has_province_flag = PLC_tabor_lubnie }
 				}
-				remove_building = fort_15th
-				clr_province_flag = PLC_tabor_lubnie
+				4542 = {
+					remove_building = fort_15th
+					clr_province_flag = PLC_tabor_lubnie
+				}
 			}
 		}
 		
@@ -909,14 +919,7 @@ country_event = {
 			duration = 3650
 		}
 		
-		every_core_country = {
-			limit = {
-				has_rebel_faction = cossack_rebels
-			}
-			change_controller = ROOT
-		}
-		
-		clr_province_flag = PLC_nalyvaiko_lubnie
+		clr_country_flag = PLC_nalyvaiko_lubnie
 		set_country_flag = PLC_dealt_with_nalyvaiko_uprising_default
 	}
 }
