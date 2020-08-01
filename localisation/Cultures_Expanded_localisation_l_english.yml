@@ -386,71 +386,63 @@
  CE_edict_of_potsdam_chain.5.b: "We can't really afford that..."
  
  CE_hungary_expanded.1.t: "Bohemian Raids"
- CE_hungary_expanded.1.d: "bohemia is mean and is stealing our moneys :sob: "
- CE_hungary_expanded.1.a: "me dumdum and let them do so"
- CE_hungary_expanded.1.b: "me fight bohemia"
- 
+ CE_hungary_expanded.1.d: "Ever since the Hussite Wars in Bohemia, our long border with Bohemia has faced various raids from Hussite radicals, and with the rise of King Jiri z Podebrady - The Hussite King, the raids have grown in frequency. Many Austrian nobles have petitioned the [HAB.Monarch.GetTitle] [HAB.Monarch.GetName] to demand an end to this!"
+ CE_hungary_expanded.1.a: "The way to victory is to be diplomatic" 			 
+ CE_hungary_expanded.1.b: "We must take direct action"
+			
+
  CE_hungary_expanded.2.t: "Austrian Reparations"
- CE_hungary_expanded.2.d: "Your brother raided austria, austria mad, austria want big money"
- CE_hungary_expanded.2.a: "oki"
- CE_hungary_expanded.2.b: "nevah!"
- 
- CE_hungary_expanded.3.t: "Bohemia Pays"
- CE_hungary_expanded.3.d: "Bohemia paid for his own sins"
+ CE_hungary_expanded.2.d: "Ever since the beginning of the Hussite Wars and continuous crusades into our lands, the more radical of our great peoples have been reported to attack bordering catholic villages in Austria, today an Imperial representative has arrived demanding monetary reparations and justice to be served from the "Radical Pigs."
+ CE_hungary_expanded.2.a: "We shall accept the Imperial demands"
+ CE_hungary_expanded.2.a.tt: "This will make us look better in the eyes of Catholics."		 
+ CE_hungary_expanded.2.b: "We decline to acknowledge these claims"
+			
+
+ CE_hungary_expanded.3.t: "Bohemia The Just"
+ CE_hungary_expanded.3.d: "Our Imperial diplomat to bohemia has arrived back today with amazing news, Jiri z Podebrady has personally brought justice upon the   radical Hussites terrorising our border, while not going back on his faith, he has made significant moves to ease tensions between the Hussites and Catholics in  Bohemia and abroad by personally paying the damages caused by his people."
  CE_hungary_expanded.3.a: "Good riddance"
- 
+			
+
  CE_hungary_expanded.4.t: "Crusade of Prague"
- CE_hungary_expanded.4.d: "Popeman says fuck bohemia + chinman wants to punish bohemia, u in?"
- CE_hungary_expanded.4.a: ":yos:"
- CE_hungary_expanded.4.b: ":monkas:"
- 
+ CE_hungary_expanded.4.d: "His holiness, Pope [PAP.Monarch.GetName] had offered the throne of Bohemia originally to Prince-Elector [BRA.Monarch.GetName] of Brandenburg. Due to ongoing internal economic issues and a growing conflict to be with Pomerania, [BRA.Monarch.GetName] had to refuse. Today a papal representative has arrived in [Root.Capital.GetName}, to privately discuss matters of Prague and the throne of Bohemia - it could be [HUN.Monarch.GetName]'s, for the price of removing the Hussites from Bohemia. Now at the same time, it is known that Austria has grown fed-up with Hussite raids into Austrian lands and was beginning to mobilize troops to the Bohemian border. \nCould this be our time to capitalise on this chaos?"
+ CE_hungary_expanded.4.a: "Only the ladder is real"
+ CE_hungary_expanded.4.a.tt: "The climb is all there is"			 
+ CE_hungary_expanded.4.b: "We must focus on defending our south."
+			
+
  CE_hungary_expanded.5.t: "Papal Subsidies"
- CE_hungary_expanded.5.d: "Popeman is very happy with you"
- CE_hungary_expanded.5.a: ":pray:"
- 
+ CE_hungary_expanded.5.d: "Accepting the offer of the pope and joining the war against Bohemia with Austria is proving to be a smart move, as the pope today has declared monetary subsidies to the Crusading efforts in Bohemia - making things better, Austria doesn't know about our offer of Kingship, nor will they."
+ CE_hungary_expanded.5.a: "Onwards to victory!"
+			
+
  CE_hungary_expanded.6.t: "King of Bohemia"
- CE_hungary_expanded.6.d: "Catholic czechs and pope want to declare me king of bohemia and grant me lands"
+ CE_hungary_expanded.6.d: "As our armies march through the Czech lands of Bohemia and Silesia after the defeats of the primary Hussite Army, men, women and children alike have come out of their homes. They call to [Hun.Monarch.GetName] as King, they chant in unison, /"King [Hun.Monarch.GetName]!, King [Hun.Monarch.GetName]!, King [Hun.Monarch.GetName]!"/ these Catholic civilians have lived hard lives under Hussite rule long enough and with previous papal backing, It is time to declare what we are, Kings of Bohemia"
  CE_hungary_expanded.6.a: "Long live the king" 
- CE_hungary_expanded.6.b: "please not more responsibilities"
- 
+ CE_hungary_expanded.6.b: "The Hussites are defeated, let's go home"
+			
+
  CE_hungary_expanded.7.t: "King of Bohemia"
- CE_hungary_expanded.7.d: "Hungary take czech lands, hungary mean"
- CE_hungary_expanded.7.a: ":pepe_reee:"
- CE_hungary_expanded.7.b: "we can do this"
- 
+ CE_hungary_expanded.7.d: "After successfully defeating the main Bohemian army, it has been seen that both the Hungarian troops and [HUN.Monarch.GetName] are paraded around as liberators, some even calling HIM...King of Bohemia. This was our war, the Hungarians weren't here with us to remove the Hussites but instead joined for self-profit - letting our troops die in the process."
+ CE_hungary_expanded.7.a: "We have been betrayed."
+ CE_hungary_expanded.7.b: "The main thing is, the Hussites are gone."
+			
  CE_hungary_expanded.8.t: "Austrian Gold"
- CE_hungary_expanded.8.d: "Chin-man promised me gold, lets ask"
- CE_hungary_expanded.8.a: ":yos:"
- CE_hungary_expanded.8.b: "no" 
- 
+ CE_hungary_expanded.8.d: "When Hungary had joined the war with Austria against Bohemia, the Emperor had offered us payments for our support, now some might say that we were paid in gaining a crown - but others might say that we are still due our money for our.../"hard work"/."
+ CE_hungary_expanded.8.a: "We shall demand our payment"
+ CE_hungary_expanded.8.b: "we were in crowns and thrones" 
+			
  CE_hungary_expanded.9.t: "Austrian Gold"
- CE_hungary_expanded.9.d: "Hungary ask for money"
- CE_hungary_expanded.9.a: "yos"
- CE_hungary_expanded.9.b: "no u"
- 
+ CE_hungary_expanded.9.d: "After the defeats of the Hussites many months ago, the Hungarians had backstabbed us taking the crown for themselves leaving us with nothing. Today we have received a letter from [HUN.Monarch.GetName] demanding money that we had /"offered"/ them upon joining. Along with subsidies from the pope and the Crown of Bohemia itself, we were sure not to mention it, but for [HUN.Monarch.GetName] to demand more after all we have done for them? Outrageous demands"
+ CE_hungary_expanded.9.a: "...Pay them what we owe"
+ CE_hungary_expanded.9.b: "We shall not listen to these Wicked demands"
+			
+
  CE_hungary_expanded.10.t: "Austrian Payments"
- CE_hungary_expanded.10.d: "Chin-man pay"
- CE_hungary_expanded.10.a: "made them pay"
- 
+ CE_hungary_expanded.10.d: "To everyone's surpise, a rider from [HAB.Capital.GetName] has arrived in [HUN.Capital.GetName] today, bringing a package. \nWithin is the gold, we asked from weeks prior"
+ CE_hungary_epanded.10.a: "It is great for them to have paid"
+			
+
  CE_hungary_expanded.11.t: "Austrian Betrayal"
- CE_hungary_expanded.11.d: "Chin-man no pay"
- CE_hungary_expanded.11.a: "make them pay"
- CE_hungary_expanded.11.b: "sad"
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+ CE_hungary_expanded.11.d: "It wasn't until we sent three other letters to [HAB.Capital.GetName], that we had finally concluded that, No, Austria would not give us our due./"
+ CE_hungary_expanded.11.a: "If [HAB.Capital.GetName] won't pay us, why not take [HAB.Capital.GetName]?"
+ CE_hungary_expanded.11.b: "A shame." 
