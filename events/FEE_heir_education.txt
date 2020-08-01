@@ -1106,8 +1106,8 @@ country_event = {
 		clr_heir_flag = in_education_good
 		clr_heir_flag = in_education_average
 		clr_heir_flag = in_education_but_not_learning
-		change__heir_adm = 3
-		change__heir_dip = -2
+		change_heir_adm = 3
+		change_heir_dip = -2
 		add_prestige = 5				
 	}		
 }
