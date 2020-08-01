@@ -1,4 +1,6 @@
 namespace = CE_hungary_expanded
+	#Jay DoubleU
+
 
 #Austria #Bohemian Raids
 country_event = {
@@ -71,16 +73,19 @@ country_event = {
 	}
 	option = {
 		name = CE_hungary_expanded.1.b
-		customtooltip = CE_austria_demands_reparations
+		custom_tooltip = CE_austria_demands_reparations
+		custom_tooltip = CE_austria_calls_for_aid
 		tooltip = {
 			declare_war_with_cb = {
 				who = BOH
 				casus_belli = cb_liberation  
 			}
 		}
-		country_event = {
-			id = CE_hungary_expanded.2
-			days = 30
+		BOH = {
+			country_event = {
+				id = CE_hungary_expanded.2
+				days = 30
+			}
 		}
 		ai_chance = {
 			factor = 1
@@ -132,6 +137,7 @@ country_event = {
 				days = 30
 			}
 		}
+
 		set_country_flag = CE_promised_hungary_bag_of_gold
 		ai_chance = {
 			factor = 1
@@ -174,6 +180,7 @@ country_event = {
 			id = CE_hungary_expanded.5
 			days = 60
 		}
+		custom_tooltip = CE_and_hungary_will_answer
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -181,7 +188,6 @@ country_event = {
 				is_at_war = yes
 			}
 		}
-		
 	}
 	option = {
 		name = CE_hungary_expanded.4.b

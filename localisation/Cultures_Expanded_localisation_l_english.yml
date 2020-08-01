@@ -387,14 +387,15 @@
  
  CE_hungary_expanded.1.t: "Bohemian Raids"
  CE_hungary_expanded.1.d: "Ever since the Hussite Wars in Bohemia, our long border with Bohemia has faced various raids from Hussite radicals, and with the rise of King Jiri z Podebrady - The Hussite King, the raids have grown in frequency. Many Austrian nobles have petitioned the [HAB.Monarch.GetTitle] [HAB.Monarch.GetName] to demand an end to this!"
- CE_hungary_expanded.1.a: "The way to victory is to be diplomatic" 			 
+ CE_hungary_expanded.1.a: "The way to victory is to be diplomatic" 	
  CE_hungary_expanded.1.b: "We must take direct action"
-			
+ CE_austria_demands_reparations: "Demand reparations under threat of war"
+ CE_austria_calls_for_aid: "Ask Hungary for support in exchange for a fee."
 
  CE_hungary_expanded.2.t: "Austrian Reparations"
  CE_hungary_expanded.2.d: "Ever since the beginning of the Hussite Wars and continuous crusades into our lands, the more radical of our great peoples have been reported to attack bordering catholic villages in Austria, today an Imperial representative has arrived demanding monetary reparations and justice to be served from the "Radical Pigs."
  CE_hungary_expanded.2.a: "We shall accept the Imperial demands"
- CE_hungary_expanded.2.a.tt: "This will make us look better in the eyes of Catholics."		 
+ CE_hungary_expanded.2.a.tt: "This will make us look better in the eyes of Catholics."
  CE_hungary_expanded.2.b: "We decline to acknowledge these claims"
 			
 
@@ -404,9 +405,9 @@
 			
 
  CE_hungary_expanded.4.t: "Crusade of Prague"
- CE_hungary_expanded.4.d: "His holiness, Pope [PAP.Monarch.GetName] had offered the throne of Bohemia originally to Prince-Elector [BRA.Monarch.GetName] of Brandenburg. Due to ongoing internal economic issues and a growing conflict to be with Pomerania, [BRA.Monarch.GetName] had to refuse. Today a papal representative has arrived in [Root.Capital.GetName}, to privately discuss matters of Prague and the throne of Bohemia - it could be [HUN.Monarch.GetName]'s, for the price of removing the Hussites from Bohemia. Now at the same time, it is known that Austria has grown fed-up with Hussite raids into Austrian lands and was beginning to mobilize troops to the Bohemian border. \nCould this be our time to capitalise on this chaos?"
+ CE_hungary_expanded.4.d: "His holiness, Pope [PAP.Monarch.GetName] had offered the throne of Bohemia originally to Prince-Elector [BRA.Monarch.GetName] of Brandenburg. Due to ongoing internal economic issues and a growing conflict to be with Pomerania, [BRA.Monarch.GetName] had to refuse. Today a papal representative has arrived in [Root.Capital.GetName], to privately discuss matters of Prague and the throne of Bohemia - it could be [HUN.Monarch.GetName]'s, for the price of removing the Hussites from Bohemia. Now at the same time, it is known that Austria has grown fed-up with Hussite raids into Austrian lands and was beginning to mobilize troops to the Bohemian border. \nCould this be our time to capitalise on this chaos?"
  CE_hungary_expanded.4.a: "Only the ladder is real"
- CE_hungary_expanded.4.a.tt: "The climb is all there is"			 
+ CE_and_hungary_will_answer: "If we can liberate silesia we might be able to gain the support of the catholic estates."			 
  CE_hungary_expanded.4.b: "We must focus on defending our south."
 			
 
