@@ -75,8 +75,18 @@ country_event = {
 		add_country_modifier = { 
 	    	name = neglected_heir_education
 	    	duration = 1825  
-		}					
-	}		
+		}
+	}
+	option = {
+		name = heir_education.1.f
+		trigger = {
+			heir_adm = 6
+			heir_dip = 6
+			heir_mil = 6
+		}
+		custom_tooltip = heir_education.1.f.tt
+		add_prestige = 20
+	}							
 }
 
 # The Artist's Canvas
