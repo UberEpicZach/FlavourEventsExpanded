@@ -51,3 +51,36 @@ fee_gbr_eng_statute_province_modifier = {
 fee_gbr_eng_legacy_of_drake = {
 	range = 0.2
 }
+
+fee_great_plague = {
+	local_tax_modifier = -0.9
+	local_production_efficiency = -0.9
+	trade_goods_size_modifier = -0.9
+	province_trade_power_modifier = -0.9
+	local_manpower_modifier = -0.9
+}
+
+fee_destruction_of_the_capital = {
+	local_tax_modifier = -0.3
+	local_production_efficiency = -0.3
+	trade_goods_size_modifier = -0.3
+	province_trade_power_modifier = -0.3
+	local_manpower_modifier = -0.3
+	local_development_cost = -0.15
+	supply_limit_modifier = -0.75
+}
+
+fee_wrens_london = {
+	global_unrest = -0.5
+	adm_tech_cost_modifier = -0.03
+}
+
+fee_everlyns_london = {
+	diplomatic_reputation = 0.5
+	dip_tech_cost_modifier = -0.03
+}
+
+fee_hookes_london = {
+	war_exhaustion_cost = -0.1
+	mil_tech_cost_modifier = -0.03
+}

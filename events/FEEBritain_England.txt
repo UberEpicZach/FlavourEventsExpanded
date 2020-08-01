@@ -835,3 +835,210 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = fee_gbr_eng.16
+	title = fee_gbr_eng.16.t
+	desc = fee_gbr_eng.16.d
+	picture = ADVISOR_eventPicture
+	fire_only_once = yes
+	major = yes
+	trigger = {
+		OR = {
+			tag = ENG
+			tag = GBR
+		}
+		is_year = 1664
+		NOT = {
+			is_year = 1667
+		}
+		236 = {
+			owned_by = ROOT
+		}
+	}
+	mean_time_to_happen = {
+		months = 9
+	}
+	option = {
+		name = fee_gbr_eng.16.a
+		236 = {
+			add_devastation = 30
+			add_province_modifier = {
+				name = fee_great_plague
+				duration = 365
+			}
+		}
+		set_country_flag = fee_allow_great_fire
+	}
+}
+
+country_event = {
+	id = fee_gbr_eng.17
+	title = fee_gbr_eng.17.t
+	desc = fee_gbr_eng.17.d
+	picture = ADVISOR_eventPicture
+	fire_only_once = yes
+	trigger = {
+		OR = {
+			tag = ENG
+			tag = GBR
+		}
+		is_year = 1664
+		NOT = {
+			is_year = 1667
+		}
+		236 = {
+			owned_by = ROOT
+		}
+		has_country_flag = fee_allow_great_fire
+	}
+	mean_time_to_happen = {
+		months = 9
+	}
+	option = {
+		name = fee_gbr_eng.17.a
+		236 = {
+			add_devastation = 50
+			add_province_modifier = {
+				name = fee_destruction_of_the_capital
+				duration = -1
+			}
+			add_base_tax = -3
+			add_base_production = -3
+			add_base_manpower = -3
+		}
+		hidden_effect = {
+			country_event = id = fee_gbr_eng.18 days = 558 }
+		}
+	}
+}
+
+country_event = {
+	id = fee_gbr_eng.18
+	title = fee_gbr_eng.18.t
+	desc = fee_gbr_eng.18.d
+	picture = ADVISOR_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = fee_gbr_eng.18.a
+		236 = {
+			remove_province_modifier = fee_destruction_of_the_capital
+			add_province_modifier = {
+				name = fee_wrens_london
+				duration = -1
+			}
+			add_base_tax = 2
+			add_base_production = 2
+			add_base_manpower = 2
+		}
+	}
+	option = {
+		name = fee_gbr_eng.18.b
+		236 = {
+			remove_province_modifier = fee_destruction_of_the_capital
+			add_province_modifier = {
+				name = fee_everlyns_london
+				duration = -1
+			}
+			add_base_tax = 2
+			add_base_production = 2
+			add_base_manpower = 2
+		}
+	}
+	option = {
+		name = fee_gbr_eng.18.c
+		236 = {
+			remove_province_modifier = fee_destruction_of_the_capital
+			add_province_modifier = {
+				name = fee_hookes_london
+				duration = -1
+			}
+			add_base_tax = 2
+			add_base_production = 2
+			add_base_manpower = 2
+		}
+	}
+}
+
+country_event = {
+	id = fee_gbr_eng.19
+	title = fee_gbr_eng.19.t
+	desc = fee_gbr_eng.19.d
+	picture = ADVISOR_eventPicture
+	fire_only_once = yes
+	trigger = {
+		OR = {
+			tag = ENG
+			tag = GBR
+		}
+		OR = {
+			AND = {
+				any_country = {
+					dynasty = "von Habsburg"
+					is_rival = ROOT
+				}
+			}
+			SPA = {
+				is_rival = ROOT
+			}
+		}
+		ROOT = {
+			is_part_of_hre = no
+			NOT = { dynasty = "von Habsburg" }
+			NOT = { junior_union_with = SPA }
+		}
+		FRA = {
+			is_part_of_hre = no
+			NOT = { dynasty = "von Habsburg" }
+			NOT = { junior_union_with = SPA }
+		}
+		SPA = {
+			OR = {
+				NOT = {	junior_union_with = ROOT }
+				NOT = { junior_union_with = FRA }
+			}
+		}
+		is_year = 1490
+		NOT = {
+			is_year = 1560
+		}
+	}
+	option = {
+		name = fee_gbr_eng.19.a
+		add_years_of_income = 0.2
+		if = {
+			limit = {
+				FRA = {
+					is_rival = ROOT
+				}
+				FRA = {
+					remove_historical_rival = ROOT
+				}
+				remove_historical_rival = FRA
+			}
+		}
+		else = {
+			FRA = {
+				add_opinion = {
+					who = ROOT
+					modifier = fee_field_of_the_cloth_of_gold
+				}
+			}
+			add_opinion = {
+				who = FRA
+				modifier = fee_field_of_the_cloth_of_gold
+			}
+		}
+	}
+	option = {
+		name = fee_gbr_eng.19.b
+		FRA = {
+			add_opinion = {
+				who = ROOT
+				modifier = fee_not_field_of_the_cloth_of_gold
+			}
+		}
+		add_prestige = -10
+	}
+}
