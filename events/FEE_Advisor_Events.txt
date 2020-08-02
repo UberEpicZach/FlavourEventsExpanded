@@ -949,12 +949,7 @@ country_event = {
 	option = {
 		name = FEE_Advisor_Event20.EVTOPT1
 
-		define_general = {
-			fire = 4
-			shock = 4
-			manuever = 4
-			siege = 1
-		}
+		create_general = { tradition = 60 }
 		add_country_modifier = {
 			name = fee_up_and_coming_commander
 			duration = 18250

@@ -528,78 +528,78 @@ country_event = {
 }
 
 # The South Sea Company
-#country_event = {
-#	id = fee_gbr_eng.8
-#	title = fee_gbr_eng_n_8
-#	desc = fee_gbr_eng_d_8
-#	picture = ECONOMY_eventPicture
-#	fire_only_once = yes
-#	trigger = {
-#		OR = {
-#			tag = GBR
-#			tag = ENG
-#		}
-#		is_year = 1600
-#		exploration_ideas = 1
-#		war_exhaustion = 3
-#		num_of_loans = 2
-#	}
-#	mean_time_to_happen = {
-#		months = 1
-#	}
-#	option = {
-#		name = fee_gbr_eng_1_8
-#		hidden_effect = {
-#			random_list = {
-#				85 = {
-#					country_event = {
-#						id = fee_gbr_eng.9
-#					}
-#				}
-#				15 = {
-#					country_event = {
-#						id = fee_gbr_eng.10
-#					}
-#				}
-#			}
-#		}
-#		add_inflation = -2
-#		add_years_of_income = 0.1
-#		add_war_exhaustion = -2
-#	}
-#}
+country_event = {
+	id = fee_gbr_eng.8
+	title = fee_gbr_eng_n_8
+	desc = fee_gbr_eng_d_8
+	picture = ECONOMY_eventPicture
+	fire_only_once = yes
+	trigger = {
+		OR = {
+			tag = GBR
+			tag = ENG
+		}
+		is_year = 1600
+		exploration_ideas = 1
+		war_exhaustion = 3
+		num_of_loans = 2
+	}
+	mean_time_to_happen = {
+		months = 1
+	}
+	option = {
+		name = fee_gbr_eng_1_8
+		hidden_effect = {
+			random_list = {
+				85 = {
+					country_event = {
+						id = fee_gbr_eng.9
+					}
+				}
+				15 = {
+					country_event = {
+						id = fee_gbr_eng.10
+					}
+				}
+			}
+		}
+		add_inflation = -2
+		add_years_of_income = 0.1
+		add_war_exhaustion = -2
+	}
+}
 
 # South Sea Bubble Bursts
-#country_event = {
-#	id = fee_gbr_eng.9
-#	title = fee_gbr_eng_n_9
-#	desc = fee_gbr_eng_d_9
-#	picture = BANKRUPTCY_eventPicture
-#	is_triggered_only = yes
-#	major = yes
-#	option = {
-#		name = fee_gbr_eng_1_9
-#		add_stability = -2
-#		add_inflation = 10
-#		add_years_of_income = -1
-#	}
-#}
+country_event = {
+	id = fee_gbr_eng.9
+	title = fee_gbr_eng_n_9
+	desc = fee_gbr_eng_d_9
+	picture = BANKRUPTCY_eventPicture
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = fee_gbr_eng_1_9
+		add_stability = -2
+		add_inflation = 10
+		add_years_of_income = -1
+	}
+}
 
-# South Sea Company Pays Off
-#country_event = {
-#	id = fee_gbr_eng.10
-#	title = fee_gbr_eng_n_10
-#	desc = fee_gbr_eng_d_10
-#	picture = ECONOMY_eventPicture
-#	is_triggered_only = yes
-#	major = yes
-#	option = {
-#		name = fee_gbr_eng_1_10
-#		add_stability = 1
-#		add_years_of_income = 1
-#		add_inflation = -5
-#	}
-#}
+#South Sea Company Pays Off
+country_event = {
+	id = fee_gbr_eng.10
+	title = fee_gbr_eng_n_10
+	desc = fee_gbr_eng_d_10
+	picture = ECONOMY_eventPicture
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = fee_gbr_eng_1_10
+		add_stability = 1
+		add_years_of_income = 1
+		add_inflation = -5
+	}
+}
 
 country_event = {
 	id = fee_gbr_eng.11

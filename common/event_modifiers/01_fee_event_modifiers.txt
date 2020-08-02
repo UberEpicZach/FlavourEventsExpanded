@@ -189,7 +189,7 @@ fee_turkey_uses_our_wheat = {
 
 ### Renaissance modifiers ###
 # Renaissance trigger
-fee_renaissance = {
+fee_renaissance = { innovativeness_gain = 0.005 
 }
 
 fee_had_renaissance = {
@@ -197,7 +197,7 @@ fee_had_renaissance = {
 
 #Renaissance building in province
 fee_renaissance_architecture = {
-	local_build_cost = -0.3
+	local_build_cost = -0.2
 }
 
 fee_renaissance_architecture_timer = {

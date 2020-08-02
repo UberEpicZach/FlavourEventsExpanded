@@ -448,31 +448,32 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		TEU = {
-			ai = yes
-		}
-		OR = {
-			AND = {
-				tag = POL
-				NOT = { exists = PLC }
-			}
-			tag = PLC
-		}
-		exists = TEU
-		OR = {
-		   TEU = { is_subject_of = POL }
-		   TEU = { is_subject_of = PLC }
-		NOT = {
-			exists = PRU
-		}
+        TEU = {
+            ai = yes
+        }
+        OR = {
+            AND = {
+                tag = POL
+                NOT = { exists = PLC }
+            }
+            tag = PLC
+        }
+        exists = TEU
+        OR = {
+           TEU = { is_subject_of = POL }
+           TEU = { is_subject_of = PLC }
+        }
+        NOT = {
+            exists = PRU
+        }
         is_year = 1520
-		NOT = { is_year = 1540 }
-		}
-		is_religion_enabled = protestant
-		NOT = {
-			has_global_flag = cg_flag_cg_active 
-		}
-    }		
+        NOT = { is_year = 1540 }
+        }
+        is_religion_enabled = protestant
+        NOT = {
+            has_global_flag = cg_flag_cg_active 
+        }
+}		
         mean_time_to_happen = {
 		months = 120 
 	    }

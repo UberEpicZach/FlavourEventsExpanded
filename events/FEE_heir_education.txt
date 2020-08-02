@@ -688,6 +688,14 @@ country_event = {
 		days = 1							
 	}
 	
+	immediate = {
+		hidden_effect = { 
+		clr_heir_flag = in_education_excellent
+		clr_heir_flag = in_education_good
+		clr_heir_flag = in_education_average
+		clr_heir_flag = in_education_but_not_learning }
+	}
+
 	option = {
 		name = heir_education.11.a		
  		hidden_effect = {
@@ -780,6 +788,14 @@ country_event = {
 		days = 1							
 	}
 	
+	immediate = {
+		hidden_effect = { 
+		clr_heir_flag = in_education_excellent
+		clr_heir_flag = in_education_good
+		clr_heir_flag = in_education_average
+		clr_heir_flag = in_education_but_not_learning }
+	}
+
 	option = {
 		name = heir_education.12.a		
  		hidden_effect = {
@@ -872,6 +888,13 @@ country_event = {
 		days = 1							
 	}
 	
+	immediate = {
+		hidden_effect = { 
+		clr_heir_flag = in_education_excellent
+		clr_heir_flag = in_education_good
+		clr_heir_flag = in_education_average
+		clr_heir_flag = in_education_but_not_learning }
+	}
 	option = {
 		name = heir_education.13.a		
  		hidden_effect = {
@@ -964,6 +987,14 @@ country_event = {
 		days = 1							
 	}
 	
+	immediate = {
+		hidden_effect = { 
+		clr_heir_flag = in_education_excellent
+		clr_heir_flag = in_education_good
+		clr_heir_flag = in_education_average
+		clr_heir_flag = in_education_but_not_learning }
+	}
+
 	option = {
 		name = heir_education.14.a		
  		hidden_effect = {
@@ -1036,10 +1067,6 @@ country_event = {
 
 	option = {
 		name = heir_education.101.a
-		clr_heir_flag = in_education_excellent
-		clr_heir_flag = in_education_good
-		clr_heir_flag = in_education_average
-		clr_heir_flag = in_education_but_not_learning 
 		change_heir_adm = 1	
 		change_heir_dip = 1
 		change_heir_mil = 1
@@ -1062,10 +1089,6 @@ country_event = {
 	
 	option = {
 		name = heir_education.102.a
-		clr_heir_flag = in_education_excellent
-		clr_heir_flag = in_education_good
-		clr_heir_flag = in_education_average
-		clr_heir_flag = in_education_but_not_learning
 		change_heir_dip = 2
 		change_heir_mil = -1
 		add_prestige = 5				
@@ -1087,10 +1110,6 @@ country_event = {
 	
 	option = {
 		name = heir_education.103.a
-		clr_heir_flag = in_education_excellent
-		clr_heir_flag = in_education_good
-		clr_heir_flag = in_education_average
-		clr_heir_flag = in_education_but_not_learning
 		change_heir_adm = 2
 		change_heir_mil = 2
 		add_prestige = 5				
@@ -1112,10 +1131,6 @@ country_event = {
 	
 	option = {
 		name = heir_education.104.a
-		clr_heir_flag = in_education_excellent
-		clr_heir_flag = in_education_good
-		clr_heir_flag = in_education_average
-		clr_heir_flag = in_education_but_not_learning
 		change_heir_adm = 3
 		change_heir_dip = -2
 		add_prestige = 5				
@@ -1137,10 +1152,6 @@ country_event = {
 	
 	option = {
 		name = heir_education.105.a
-		clr_heir_flag = in_education_excellent
-		clr_heir_flag = in_education_good
-		clr_heir_flag = in_education_average
-		clr_heir_flag = in_education_but_not_learning
 		change_heir_mil = 3
 		change_heir_adm = -1
 		add_prestige = 5
@@ -1162,10 +1173,6 @@ country_event = {
 	
 	option = {
 		name = heir_education.106.a
-		clr_heir_flag = in_education_excellent
-		clr_heir_flag = in_education_good
-		clr_heir_flag = in_education_average
-		clr_heir_flag = in_education_but_not_learning
 		change_heir_dip = 2
 		change_heir_adm = 2
 		add_prestige = 5
@@ -1187,10 +1194,6 @@ country_event = {
 	
 	option = {
 		name = heir_education.107.a
-		clr_heir_flag = in_education_excellent
-		clr_heir_flag = in_education_good
-		clr_heir_flag = in_education_average
-		clr_heir_flag = in_education_but_not_learning
 		change_heir_dip = -1
 		change_heir_adm = -1
 		change_heir_mil = -1
@@ -1213,13 +1216,9 @@ country_event = {
 	
 	option = {
 		name = heir_education.108.a
-		clr_heir_flag = in_education_excellent
-		clr_heir_flag = in_education_good
-		clr_heir_flag = in_education_average
-		clr_heir_flag = in_education_but_not_learning
 		change_heir_dip = 3
-		change_heir_adm = -3
-		change_heir_mil = -3
+		change_heir_adm = -2
+		change_heir_mil = -2
 		add_prestige = -5
 	}		
 }
@@ -1239,13 +1238,9 @@ country_event = {
 	
 	option = {
 		name = heir_education.109.a
-		clr_heir_flag = in_education_excellent
-		clr_heir_flag = in_education_good
-		clr_heir_flag = in_education_average
-		clr_heir_flag = in_education_but_not_learning
 		change_heir_dip = -3
 		change_heir_adm = -3
-		change_heir_mil = 3
+		change_heir_mil = 4
 		add_prestige = -5
 	}		
 }
@@ -1265,10 +1260,6 @@ country_event = {
 	
 	option = {
 		name = heir_education.110.a
-		clr_heir_flag = in_education_excellent
-		clr_heir_flag = in_education_good
-		clr_heir_flag = in_education_average
-		clr_heir_flag = in_education_but_not_learning
 		change_heir_dip = -1
 		change_heir_adm = 1
 		change_heir_mil = 1
@@ -1298,10 +1289,6 @@ country_event = {
 	
 	option = {
 		name = heir_education.111.a
-		clr_heir_flag = in_education_excellent
-		clr_heir_flag = in_education_good
-		clr_heir_flag = in_education_average
-		clr_heir_flag = in_education_but_not_learning
 		change_heir_dip = -1
 		change_heir_adm = 1
 		change_heir_mil = 1
@@ -1331,10 +1318,6 @@ country_event = {
 	
 	option = {
 		name = heir_education.112.a
-		clr_heir_flag = in_education_excellent
-		clr_heir_flag = in_education_good
-		clr_heir_flag = in_education_average
-		clr_heir_flag = in_education_but_not_learning
 		change_heir_dip = -1
 		change_heir_adm = -1
 		add_years_of_income = -0.5 
@@ -1357,10 +1340,6 @@ country_event = {
 	
 	option = {
 		name = heir_education.113.a
-		clr_heir_flag = in_education_excellent
-		clr_heir_flag = in_education_good
-		clr_heir_flag = in_education_average
-		clr_heir_flag = in_education_but_not_learning
 		change_heir_mil = -1
 		change_heir_adm = -1
 		add_prestige = -5
@@ -1389,10 +1368,6 @@ country_event = {
 	
 	option = {
 		name = heir_education.114.a
-		clr_heir_flag = in_education_excellent
-		clr_heir_flag = in_education_good
-		clr_heir_flag = in_education_average
-		clr_heir_flag = in_education_but_not_learning
 		change_heir_dip = 2
 		add_prestige = 5
 	}		
@@ -1413,10 +1388,6 @@ country_event = {
 	
 	option = {
 		name = heir_education.115.a
-		clr_heir_flag = in_education_excellent
-		clr_heir_flag = in_education_good
-		clr_heir_flag = in_education_average
-		clr_heir_flag = in_education_but_not_learning
 		change_heir_dip = 1
 		change_heir_adm = 1
 		change_heir_mil = -3
