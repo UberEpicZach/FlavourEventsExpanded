@@ -1,15 +1,79 @@
 Namespace = FEE_Bohemia
 	#Jay DoubleU
 
-#Death of Jiri
+#Hungary #Setupeventbecauseidk
 country_event = {
 	id = FEE_Bohemia.1
 	title = FEE_Bohemia.1.t
 	desc = FEE_Bohemia.1.d
 	picture = CITY_VIEW_eventPicture
+	hidden = yes
+
+	trigger = {
+		tag = HUN
+		has_ruler = "Mátyás Hunyadi"
+		has_ruler = "Mátyás"
+		has_ruler = "Matyas"
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 1
+	}
+	immediate = {
+		set_country_flag = FEE_Corvinus
+	}
+
+	option = {
+		name = FEE_Bohemia.1.a
+	}
+}
+
+#Bohemia #Setupeventbecauseidk
+country_event = {
+	id = FEE_Bohemia.2
+	title = FEE_Bohemia.2.t
+	desc = FEE_Bohemia.2.d
+	picture = CITY_VIEW_eventPicture
+	hidden = yes
 
 	trigger = {
 		tag = BOH
+		has_ruler = "Jirí z Podebrad"
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 1
+	}
+	immediate = {
+		set_country_flag = FEE_Podebrad
+		add_ruler_modifier = {
+			name = FEE_BOH_Infertility
+			duration = -1
+		}
+	}
+
+	option = {
+		name = FEE_Bohemia.2.a
+	}
+}
+
+#Bohemia #Death of Jiri Podebrad
+country_event = {
+	id = FEE_Bohemia.3
+	title = FEE_Bohemia.3.t
+	desc = FEE_Bohemia.3.d
+	picture = CITY_VIEW_eventPicture
+
+	trigger = {
+		tag = BOH
+		NOT = {
+			has_ruler = "Jirí z Podebrad"
+		}
+		has_country_flag = FEE_Podebrad
 	}
 
 	fire_only_once = yes
@@ -19,6 +83,121 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Bohemia.1.a
+		name = FEE_Bohemia.3.a
+		define_ruler = {
+			name = "Vladislav"
+			dynasty = "Jagiellon"
+			adm = 2
+			dip = 4
+			mil = 2
+			fixed = yes
+		}
+		kill_heir = yes
+		add_stability = 2
+		#change_estate_land_share = {
+		#	estate = estate_nobles
+		#	share = 20
+		#}
+		set_estate_privilege = estate_noble_baron_pensions
+		set_estate_privilege = estate_noble_baron_courts
+		set_estate_privilege = estate_noble_baron_courtier
+		set_estate_privilege = estate_noble_baron_titles
+		POL = {
+			country_event = {
+				id = FEE_Bohemia.4
+				days = 30
+			}
+		}
+		random_owned_province = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 2
+				leader_dynasty = "Podebrad"
+				leader = "Bocek 'the Disabled'"
+			}
+		}
+		random_owned_province = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 2 
+				leader_dynasty = "Podebrad"
+				leader = "Henry 'the Younger'"
+			}
+		}
+		random_owned_province = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 2
+				leader_dynasty = "Podebrad"
+				leader = "Henry 'the Elder'"
+			}
+		}
+		random_owned_province = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 2
+				leader_dynasty = "Podebrad"
+				leader = "Victor"
+			}
+		}
+	}
+	option = {
+		name = FEE_Bohemia.3.a
+		define_ruler = {
+			name = "Victor z"
+			dynasty = "Podebrad"
+			adm = 2
+			dip = 4
+			mil = 2
+			fixed = yes
+		}
+		kill_heir = yes
+		capital_scope = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 3
+				leader_dynasty = "Jagiellon"
+				leader = "Vladislav"
+			}
+		}
+	}
+}
+
+#Bohemia #Death of Jiri Podebrad
+country_event = {
+	id = FEE_Bohemia.4
+	title = FEE_Bohemia.4.t
+	desc = FEE_Bohemia.4.d
+	picture = CITY_VIEW_eventPicture
+
+	trigger = {
+		tag = BOH
+		NOT = {
+			has_ruler = "Jirí z Podebrad"
+		}
+		has_country_flag = FEE_Podebrad
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = FEE_Bohemia.4.a
+		define_ruler = {
+			name = "Vladislav"
+			dynasty = "Jagiellon"
+			adm = 2
+			dip = 4
+			mil = 2
+			fixed = yes
+		}
+		kill_heir = yes
+	}
+	option = {
+		name = FEE_Bohemia.3.a
+
 	}
 }
