@@ -981,7 +981,6 @@ country_event = {
 	title = FEE_Scotland_Events.16.t
 	desc = FEE_Scotland_Events.16.d
 	picture = CORRUPTION_eventPicture
-
 	trigger = {
 		OR = {
 			tag = SCO
@@ -1001,13 +1000,10 @@ country_event = {
 			current_age = age_of_absolutism
 		}
 	}
-
 	mean_time_to_happen = {
 		months = 240
 	}
-
 	fire_only_once = yes
-
 	option = {
 		name = FEE_Scotland_Events.16.a
 		hidden_effect = {
@@ -1030,7 +1026,6 @@ country_event = {
 			duration = -1
 		}
 	}
-
 	option = {
 		name = FEE_Scotland_Events.16.b
 		ai_chance = {
@@ -1058,9 +1053,7 @@ country_event = {
 	title = FEE_Scotland_Events.17.t
 	desc = FEE_Scotland_Events.17.d
 	picture = CORRUPTION_eventPicture
-
 	is_triggered_only = yes
-
 	option = {
 		name = FEE_Scotland_Events.17.a
 		add_stability = -1
@@ -1070,7 +1063,6 @@ country_event = {
 			duration = -1
 		}
 	}
-
 	option = {
 		name = FEE_Scotland_Events.17.b
 		add_stability = -2
@@ -1126,9 +1118,7 @@ country_event = {
 	title = FEE_Scotland_Events.18.t
 	desc = FEE_Scotland_Events.18.d
 	picture = CORRUPTION_eventPicture
-
 	is_triggered_only = yes
-
 	option = {
 		name = FEE_Scotland_Events.18.a
 		add_stability = -1
@@ -1140,7 +1130,6 @@ country_event = {
 		disband_rebels = reformed_rebels
 		disband_rebels = particularist_rebels
 	}
-
 	option = {
 		name = FEE_Scotland_Events.18.b
 		add_stability = 1
@@ -1161,7 +1150,6 @@ country_event = {
 			duration = -1
 		}
 	}
-
 	option = {
 		name = FEE_Scotland_Events.18.c
 		save_event_target_as = FEE_Scotland_rival_target
@@ -1178,10 +1166,8 @@ country_event = {
 	title = FEE_Scotland_Events.19.t
 	desc = FEE_Scotland_Events.19.d
 	picture = CORRUPTION_eventPicture
-
 	major = yes
 	is_triggered_only = yes
-
 	immediate = {
 		hidden_effect = {
 			release = HSC
@@ -1248,12 +1234,10 @@ country_event = {
 			}
 		}
 	}
-
 	option = {
 		name = FEE_Scotland_Events.19.a
 		custom_tooltip = FEE_Scotland_Events.19.a.tooltip1
 	}
-
 	option = {
 		name = FEE_Scotland_Events.19.b
 		switch_tag = HSC
@@ -1273,9 +1257,7 @@ country_event = {
 	title = FEE_Scotland_Events.20.t
 	desc = FEE_Scotland_Events.20.d
 	picture = CORRUPTION_eventPicture
-
 	is_triggered_only = yes
-
 	option = {
 		ai_chance = {
 			factor = 2
@@ -1295,7 +1277,6 @@ country_event = {
 			}
 		}
 	}
-
 	option = {
 		ai_chance = {
 			factor = 1
@@ -1316,9 +1297,7 @@ country_event = {
 	title = FEE_Scotland_Events.21.t
 	desc = FEE_Scotland_Events.21.d
 	picture = CORRUPTION_eventPicture
-
 	is_triggered_only = yes
-
 	option = {
 		name = FEE_Scotland_Events.21.a
 		add_opinion = {
@@ -1337,9 +1316,7 @@ country_event = {
 	title = FEE_Scotland_Events.22.t
 	desc = FEE_Scotland_Events.22.d
 	picture = CORRUPTION_eventPicture
-
 	is_triggered_only = yes
-
 	option = {
 		name = FEE_Scotland_Events.22.a
 		add_opinion = {
@@ -1359,9 +1336,7 @@ country_event = {
 	title = FEE_Scotland_Events.22.t
 	desc = FEE_Scotland_Events.22.d
 	picture = CORRUPTION_eventPicture
-
 	is_triggered_only = yes
-
 	option = {
 		name = FEE_Scotland_Events.23.a
 		add_opinion = {
@@ -1381,10 +1356,8 @@ country_event = {
 	title = FEE_Scotland_Events.24.t
 	desc = FEE_Scotland_Events.24.d
 	picture = CORRUPTION_eventPicture
-
 	major = yes
 	fire_only_once = yes
-
 	trigger = {
 		tag = SCO
 		AND = {
@@ -1408,7 +1381,6 @@ country_event = {
 			}
 		}
 	}
-
 	immediate = {
 		if = {
 			limit = {
@@ -1422,7 +1394,6 @@ country_event = {
 			set_country_flag = FEE_Scotland_covenanter_won
 		}
 	}
-
 	option = {
 		name = FEE_Scotland_Events.24.a
 		add_stability = 2
@@ -1448,9 +1419,7 @@ country_event = {
 	title = FEE_Scotland_Events.25.t
 	desc = FEE_Scotland_Events.25.d
 	picture = CORRUPTION_eventPicture
-
 	fire_only_once = yes
-
 	trigger = {
 		OR = {
 			tag = SCO
@@ -1459,22 +1428,19 @@ country_event = {
 		is_at_war = no
 		OR = {
 			has_country_flag = FEE_Scotland_covenanter_won
-			has_country_flag = FEE_Scotland_covenanter_lost	
+			has_country_flag = FEE_Scotland_covenanter_lost
 		}
 	}
-
 	mean_time_to_happen = {
 		months = 60
 	}
-
 	option = {
 		name = FEE_Scotland_Events.25.a
 		add_absolutism = -2
 		kingdom_of_the_isles_area = {
-			add_local_autonomy = 0.25
+			add_local_autonomy = 25
 		}
 	}
-
 	option = {
 		name = FEE_Scotland_Events.25.b
 		add_stability = -1
@@ -1496,9 +1462,7 @@ country_event = {
 	title = FEE_Scotland_Events.26.t
 	desc = FEE_Scotland_Events.26.d
 	picture = CORRUPTION_eventPicture
-
 	fire_only_once = yes
-
 	trigger = {
 		OR = {
 			tag = SCO
@@ -1541,7 +1505,6 @@ country_event = {
 			}
 		}
 	}
-
 	option = {
 		ai_chance = {
 			factor = 1
@@ -1560,7 +1523,6 @@ country_event = {
 			}
 		}
 	}
-
 	option = {
 		add_prestige = -5
 		add_country_modifier = {
@@ -1575,90 +1537,306 @@ country_event = {
 	title = FEE_Scotland_Events.27.t
 	desc = FEE_Scotland_Events.27.d
 	picture = CORRUPTION_eventPicture
-
 	is_triggered_only = yes
-
-	option = {
-		835 = {
-			if = {
-				limit = {
-					NOT = {
-						is_empty = yes
+	immediate = {
+		hidden_effect = {
+			colombia_region = {
+				discover_country = ROOT
+			}
+			central_america_region = {
+				discover_country = ROOT
+			}
+			835 = {
+				if = {
+					limit = {
+						NOT = {
+							is_empty = yes
+						}
+					}
+					add_claim = ROOT
+					if = {
+						limit = {
+							any_province = {
+								colombia_region = {
+									is_empty = yes
+								}
+							}
+						}
+						random_province = {
+							limit = {
+								is_empty = yes
+								region = colombia_region
+							}
+							save_event_target_as = FEE_Scotland_first_colony
+							create_colony = 1000
+							cede_province = ROOT
+							add_core = ROOT
+							change_culture = ROOT
+							change_religion = ROOT
+							add_base_tax = 5
+							add_base_production = 5
+							add_base_manpower = 5
+						}
 					}
 				}
-				ROOT = {
-					add_prestige = 1
+				else = {
+					save_event_target_as = FEE_Scotland_first_colony
+					create_colony = 1000
+					cede_province = ROOT
+					add_core = ROOT
+					change_culture = ROOT
+					change_religion = ROOT
+					add_base_tax = 5
+					add_base_production = 5
+					add_base_manpower = 5
 				}
 			}
-			else = {
-				add_core = ROOT
+			2819 = {
+				if = {
+					limit = {
+						NOT = {
+							is_empty = yes
+						}
+					}
+					add_claim = ROOT
+					if = {
+						limit = {
+							colombia_region = {
+								any_province = {
+									is_empty = yes
+								}
+							}
+						}
+						random_province = {
+							limit = {
+								is_empty = yes
+								region = colombia_region
+							}
+							save_event_target_as = FEE_Scotland_second_colony
+							create_colony = 1000
+							cede_province = ROOT
+							add_core = ROOT
+							change_culture = ROOT
+							change_religion = ROOT
+							add_building = fort_15th
+							add_base_tax = 4
+							add_base_production = 4
+							add_base_manpower = 4
+						}
+					}
+				}
+				else = {
+					save_event_target_as = FEE_Scotland_second_colony
+					create_colony = 1000
+					cede_province = ROOT
+					add_core = ROOT
+					change_culture = ROOT
+					change_religion = ROOT
+					add_building = fort_15th
+					add_base_tax = 4
+					add_base_production = 4
+					add_base_manpower = 4
+				}
+			}
+			828 = {
+				if = {
+					limit = {
+						NOT = {
+							is_empty = yes
+						}
+					}
+					add_claim = ROOT
+					if = {
+						limit = {
+							colombia_region = {
+								any_province = {
+									is_empty = yes
+								}
+							}
+						}
+						random_province = {
+							limit = {
+								is_empty = yes
+								region = colombia_region
+							}
+							save_event_target_as = FEE_Scotland_third_colony
+							create_colony = 1000
+							cede_province = ROOT
+							add_core = ROOT
+							change_culture = ROOT
+							change_religion = ROOT
+						}
+					}
+				}
+				else = {
+					save_event_target_as = FEE_Scotland_third_colony
+					create_colony = 1000
+					cede_province = ROOT
+					add_core = ROOT
+					change_culture = ROOT
+					change_religion = ROOT
+				}
+			}
+			827 = {
+				if = {
+					limit = {
+						NOT = {
+							is_empty = yes
+						}
+					}
+					add_claim = ROOT
+					if = {
+						limit = {
+							colombia_region = {
+								any_province = {
+									is_empty = yes
+								}
+							}
+						}
+						random_province = {
+							limit = {
+								is_empty = yes
+								region = colombia_region
+							}
+							save_event_target_as = FEE_Scotland_fourth_colony
+							create_colony = 1000
+							cede_province = ROOT
+							add_core = ROOT
+							change_culture = ROOT
+							change_religion = ROOT
+						}
+					}
+				}
+				else = {
+					save_event_target_as = FEE_Scotland_fourth_colony
+					create_colony = 1000
+					cede_province = ROOT
+					add_core = ROOT
+					change_culture = ROOT
+					change_religion = ROOT
+				}
+			}
+			840 = {
+				if = {
+					limit = {
+						NOT = {
+							is_empty = yes
+						}
+					}
+					add_claim = ROOT
+					if = {
+						limit = {
+							central_america_region = {
+								any_province = {
+									is_empty = yes
+								}
+							}
+						}
+						random_province = {
+							limit = {
+								is_empty = yes
+								region = central_america_region
+							}
+							save_event_target_as = FEE_Scotland_fifth_colony
+							create_colony = 1000
+							cede_province = ROOT
+							add_core = ROOT
+							change_culture = ROOT
+							change_religion = ROOT
+						}
+					}
+				}
+				else = {
+					save_event_target_as = FEE_Scotland_fifth_colony
+					create_colony = 1000
+					cede_province = ROOT
+					add_core = ROOT
+					change_culture = ROOT
+					change_religion = ROOT
+				}
+			}
+		}
+	}
+	option = {
+		name = FEE_Scotland_Events.27.a
+		tooltip = {
+			colombia_region = {
+				discover_country = ROOT
+			}
+			central_america_region = {
+				discover_country = ROOT
+			}
+			835 = {
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+						}
+					}
+					add_claim = ROOT
+				}
+			}
+			event_target:FEE_Scotland_first_colony = {
+				custom_tooltip = FEE_Scotland_Events.27.a.tooltip1
 				add_base_tax = 5
 				add_base_production = 5
 				add_base_manpower = 5
 			}
-		}
-		2819 = {
-			if = {
-				limit = {
-					NOT = {
-						is_empty = yes
+			2819 = {
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+						}
 					}
-				}
-				ROOT = {
-					add_prestige = 1
+					add_claim = ROOT
 				}
 			}
-			else = {
-				add_core = ROOT
+			event_target:FEE_Scotland_second_colony = {
+				custom_tooltip = FEE_Scotland_Events.27.a.tooltip1
 				add_building = fort_15th
 				add_base_tax = 4
 				add_base_production = 4
 				add_base_manpower = 4
 			}
-		}
-		828 = {
-			if = {
-				limit = {
-					NOT = {
-						is_empty = yes
+			828 = {
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+						}
 					}
-				}
-				ROOT = {
-					add_prestige = 1
+					add_claim = ROOT
 				}
 			}
-			else = {
-				add_core = ROOT
+			event_target:FEE_Scotland_third_colony = {
+				custom_tooltip = FEE_Scotland_Events.27.a.tooltip1
 			}
-		}
-		827 = {
-			if = {
-				limit = {
-					NOT = {
-						is_empty = yes
+			827 = {
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+						}
 					}
-				}
-				ROOT = {
-					add_prestige = 1
+					add_claim = ROOT
 				}
 			}
-			else = {
-				add_core = ROOT
+			event_target:FEE_Scotland_fourth_colony = {
+				custom_tooltip = FEE_Scotland_Events.27.a.tooltip1
 			}
-		}
-		840 = {
-			if = {
-				limit = {
-					NOT = {
-						is_empty = yes
+			840 = {
+				if = {
+					limit = {
+						NOT = {
+							owned_by = ROOT
+						}
 					}
-				}
-				ROOT = {
-					add_prestige = 1
+					add_claim = ROOT
 				}
 			}
-			else = {
-				add_core = ROOT
+			event_target:FEE_Scotland_fifth_colony = {
+				custom_tooltip = FEE_Scotland_Events.27.a.tooltip1
 			}
 		}
 	}
@@ -1669,9 +1847,7 @@ country_event = {
 	title = FEE_Scotland_Events.28.t
 	desc = FEE_Scotland_Events.28.d
 	picture = CORRUPTION_eventPicture
-
 	is_triggered_only = yes
-
 	option = {
 		name = FEE_Scotland_Events.28.a
 		add_stability = -2
@@ -1684,9 +1860,7 @@ country_event = {
 	title = FEE_Scotland_Events.29.t
 	desc = FEE_Scotland_Events.29.d
 	picture = CORRUPTION_eventPicture
-
 	fire_only_once = yes
-
 	trigger = {
 		OR = {
 			tag = SCO
@@ -1702,7 +1876,6 @@ country_event = {
 		}
 		is_year = 1700
 	}
-
 	option = {
 		name = FEE_Scotland_Events.29.a
 		ai_chance = {
@@ -1735,7 +1908,6 @@ country_event = {
 			duration = 7300
 		}
 	}
-
 	option = {
 		name = FEE_Scotland_Events.29.b
 		kingdom_of_the_isles_area = {
@@ -1760,9 +1932,7 @@ country_event = {
 	title = FEE_Scotland_Events.30.t
 	desc = FEE_Scotland_Events.30.d
 	picture = CORRUPTION_eventPicture
-
 	fire_only_once = yes
-
 	trigger = {
 		OR = {
 			tag = SCO
@@ -1781,7 +1951,6 @@ country_event = {
 			amount = 2
 		}
 	}
-
 	option = {
 		name = FEE_Scotland_Events.30.a
 		ai_chance = {
@@ -1829,7 +1998,6 @@ country_event = {
 			}
 		}
 	}
-
 	option = {
 		name = FEE_Scotland_Events.30.b
 		add_stability = 1
@@ -1846,9 +2014,7 @@ country_event = {
 	title = FEE_Scotland_Events.31.t
 	desc = FEE_Scotland_Events.31.d
 	picture = CORRUPTION_eventPicture
-
 	fire_only_once = yes
-
 	trigger = {
 		OR = {
 			tag = SCO
@@ -1864,7 +2030,6 @@ country_event = {
 			has_institution = enlightenment
 		}
 	}
-
 	mean_time_to_happen = {
 		months = 100
 		modifier = {
@@ -1872,7 +2037,6 @@ country_event = {
 			has_idea_group = innovativeness_ideas
 		}
 	}
-
 	option = {
 		name = FEE_Scotland_Events.31.a
 		ai_chance = {
@@ -1899,7 +2063,6 @@ country_event = {
 			duration = -1
 		}
 	}
-
 	option = {
 		name = FEE_Scotland_Events.31.b
 		add_years_of_income = -0.25
@@ -1914,7 +2077,6 @@ country_event = {
 			duration = 18250
 		}
 	}
-
 	option = {
 		name = FEE_Scotland_Events.31.c
 		add_legitimacy = 20
@@ -1929,9 +2091,7 @@ country_event = {
 	title = FEE_Scotland_Events.32.t
 	desc = FEE_Scotland_Events.32.d
 	picture = CORRUPTION_eventPicture
-
 	fire_only_once = yes
-
 	trigger = {
 		OR = {
 			tag = SCO
@@ -1940,7 +2100,6 @@ country_event = {
 		has_institution = global_trade
 		has_institution = enlightenment
 	}
-
 	mean_time_to_happen = {
 		months = 200
 		modifier = {
@@ -1952,7 +2111,6 @@ country_event = {
 			has_idea_group = economic_ideas
 		}
 	}
-
 	option = {
 		name = FEE_Scotland_Events.32.a
 		ai_chance = {
@@ -1976,7 +2134,6 @@ country_event = {
 			duration = -1
 		}
 	}
-
 	option = {
 		name = FEE_Scotland_Events.32.b
 		add_stability = -1
@@ -1996,10 +2153,8 @@ country_event = {
 	id = FEE_Scotland_Events.33
 	title = FEE_Scotland_Events.33.t
 	desc = FEE_Scotland_Events.33.d
-	picture = CORRUPTION_eventPicture	
-
+	picture = CORRUPTION_eventPicture
 	fire_only_once = yes
-	
 	trigger = {
 		OR = {
 			tag = SCO
@@ -2013,11 +2168,9 @@ country_event = {
 			trade_goods = coal
 		}
 	}
-
 	mean_time_to_happen = {
 		months = 200
 	}
-
 	option = {
 		name = FEE_Scotland_Events.33.a
 		change_innovativeness = 10
@@ -2044,10 +2197,8 @@ country_event = {
 	id = FEE_Scotland_Events.34
 	title = FEE_Scotland_Events.34.t
 	desc = FEE_Scotland_Events.34.d
-	picture = CORRUPTION_eventPicture	
-
+	picture = CORRUPTION_eventPicture
 	fire_only_once = yes
-	
 	trigger = {
 		OR = {
 			tag = SCO
@@ -2055,7 +2206,6 @@ country_event = {
 		}
 		has_institution = enlightenment
 	}
-
 	mean_time_to_happen = {
 		months = 240
 		modifier = {
@@ -2063,7 +2213,6 @@ country_event = {
 			has_idea_group = innovativeness_ideas
 		}
 	}
-
 	option = {
 		name = FEE_Scotland_Events.34.a
 		ai_chance = {
@@ -2076,7 +2225,6 @@ country_event = {
 			duration = 36500
 		}
 	}
-
 	option = {
 		name = FEE_Scotland_Events.34.b
 		add_prestige = -10
@@ -2087,10 +2235,8 @@ country_event = {
 	id = FEE_Scotland_Events.35
 	title = FEE_Scotland_Events.35.t
 	desc = FEE_Scotland_Events.35.d
-	picture = CORRUPTION_eventPicture	
-
+	picture = CORRUPTION_eventPicture
 	fire_only_once = yes
-	
 	trigger = {
 		OR = {
 			tag = SCO
@@ -2100,7 +2246,6 @@ country_event = {
 		is_year = 1721
 		has_institution = enlightenment
 	}
-
 	option = {
 		name = FEE_Scotland_Events.35.a
 		add_prestige = 50
@@ -2124,12 +2269,10 @@ country_event = {
 			}
 		}
 	}
-
 	option = {
 		name = FEE_Scotland_Events.35.b
 		add_prestige = 30
 	}
-
 	option = {
 		name = FEE_Scotland_Events.35.c
 		add_prestige = -10
@@ -2141,10 +2284,8 @@ country_event = {
 	id = FEE_Scotland_Events.36
 	title = FEE_Scotland_Events.36.t
 	desc = FEE_Scotland_Events.36.d
-	picture = CORRUPTION_eventPicture	
-
+	picture = CORRUPTION_eventPicture
 	fire_only_once = yes
-	
 	trigger = {
 		OR = {
 			tag = SCO
@@ -2153,7 +2294,6 @@ country_event = {
 		is_year = 1750
 		is_at_war = yes
 	}
-
 	mean_time_to_happen = {
 		months = 3
 		modifier = {
@@ -2165,7 +2305,6 @@ country_event = {
 			has_idea_group = quality_ideas
 		}
 	}
-
 	option = {
 		name = FEE_Scotland_Events.36.a
 		add_stability = 1
@@ -2173,14 +2312,13 @@ country_event = {
 			estate = estate_nobles
 			desc = FEE_Scotland_traditional_warfare
 			loyalty = 10
-			duration = 20
+			duration = 7300
 		}
 		add_country_modifier = {
 			name = FEE_Scotland_traditional_warfare
 			duration = 18250
 		}
 	}
-
 	option = {
 		name = FEE_Scotland_Events.36.b
 		add_country_modifier = {
@@ -2188,7 +2326,6 @@ country_event = {
 			duration = 18250
 		}
 	}
-
 	option = {
 		name = FEE_Scotland_Events.36.c
 		add_mil_power = 100
