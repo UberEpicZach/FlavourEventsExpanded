@@ -20,6 +20,7 @@ country_event = {
 				has_heir_flag = in_education_good 
 				has_heir_flag = in_education_average 
 				has_heir_flag = in_education_but_not_learning 
+				has_heir_flag = heir_is_a_genius
 			}
 		}
 		heir_age = 5
@@ -85,6 +86,7 @@ country_event = {
 			heir_mil = 6
 		}
 		custom_tooltip = heir_education.1.f.tt
+		set_heir_flag = heir_is_a_genius
 		add_prestige = 20
 	}							
 }
