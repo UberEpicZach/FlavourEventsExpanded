@@ -1292,6 +1292,7 @@ country_event = {
 	}
 }
 
+#Scotland - response to rival supporting Covenanters
 country_event = {
 	id = FEE_Scotland_Events.21
 	title = FEE_Scotland_Events.21.t
@@ -1311,6 +1312,7 @@ country_event = {
 	}
 }
 
+#Scotland - response to rival NOT supporting Covenanters
 country_event = {
 	id = FEE_Scotland_Events.22
 	title = FEE_Scotland_Events.22.t
@@ -1331,6 +1333,7 @@ country_event = {
 	}
 }
 
+#Covenanters - response to Scottish rival who supported them
 country_event = {
 	id = FEE_Scotland_Events.23
 	title = FEE_Scotland_Events.22.t
@@ -1351,6 +1354,7 @@ country_event = {
 	}
 }
 
+#Scottish Civil War is Finished
 country_event = {
 	id = FEE_Scotland_Events.24
 	title = FEE_Scotland_Events.24.t
@@ -1414,6 +1418,7 @@ country_event = {
 	}
 }
 
+#Incident at Glencoe
 country_event = {
 	id = FEE_Scotland_Events.25
 	title = FEE_Scotland_Events.25.t
@@ -1457,6 +1462,7 @@ country_event = {
 	}
 }
 
+#The Darien Scheme
 country_event = {
 	id = FEE_Scotland_Events.26
 	title = FEE_Scotland_Events.26.t
@@ -1506,6 +1512,7 @@ country_event = {
 		}
 	}
 	option = {
+		name = FEE_Scotland_Events.26.a
 		ai_chance = {
 			factor = 1
 		}
@@ -1524,6 +1531,7 @@ country_event = {
 		}
 	}
 	option = {
+		name = FEE_Scotland_Events.26.b
 		add_prestige = -5
 		add_country_modifier = {
 			name = FEE_Scotland_colonial_ventures_ignored
@@ -1532,6 +1540,7 @@ country_event = {
 	}
 }
 
+#Darien Success
 country_event = {
 	id = FEE_Scotland_Events.27
 	title = FEE_Scotland_Events.27.t
@@ -1842,6 +1851,7 @@ country_event = {
 	}
 }
 
+#Disaster at Darien
 country_event = {
 	id = FEE_Scotland_Events.28
 	title = FEE_Scotland_Events.28.t
@@ -1850,11 +1860,12 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = FEE_Scotland_Events.28.a
-		add_stability = -2
-		add_prestige = -40
+		add_stability = -1
+		add_prestige = -20
 	}
 }
 
+#The Highland Clearances
 country_event = {
 	id = FEE_Scotland_Events.29
 	title = FEE_Scotland_Events.29.t
@@ -1927,6 +1938,7 @@ country_event = {
 	}
 }
 
+#Glasgow Tobacco Markets
 country_event = {
 	id = FEE_Scotland_Events.30
 	title = FEE_Scotland_Events.30.t
@@ -2009,6 +2021,7 @@ country_event = {
 	}
 }
 
+#Scottish Enlightenment
 country_event = {
 	id = FEE_Scotland_Events.31
 	title = FEE_Scotland_Events.31.t
@@ -2086,6 +2099,7 @@ country_event = {
 	}
 }
 
+#Adam Smith and the Wealth of Nations
 country_event = {
 	id = FEE_Scotland_Events.32
 	title = FEE_Scotland_Events.32.t
@@ -2149,6 +2163,7 @@ country_event = {
 	}
 }
 
+#James Watt
 country_event = {
 	id = FEE_Scotland_Events.33
 	title = FEE_Scotland_Events.33.t
@@ -2193,6 +2208,7 @@ country_event = {
 	}
 }
 
+#Encyclopedia Britannica
 country_event = {
 	id = FEE_Scotland_Events.34
 	title = FEE_Scotland_Events.34.t
@@ -2231,6 +2247,7 @@ country_event = {
 	}
 }
 
+#The Celtic Revival Movement
 country_event = {
 	id = FEE_Scotland_Events.35
 	title = FEE_Scotland_Events.35.t
@@ -2280,6 +2297,7 @@ country_event = {
 	}
 }
 
+#Scotland and Modern Warfare
 country_event = {
 	id = FEE_Scotland_Events.36
 	title = FEE_Scotland_Events.36.t
