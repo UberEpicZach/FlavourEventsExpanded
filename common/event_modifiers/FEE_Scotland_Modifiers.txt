@@ -69,3 +69,75 @@ FEE_Scotland_presbyterian_compromise = {
 	max_absolutism = -10
 	global_unrest = -1
 }
+
+FEE_Scotland_colonial_ventures_ignored = {
+	global_colonial_growth = -20
+}
+
+FEE_Scotland_rapid_population_growth = {
+	development_cost = -0.1
+	local_unrest = 5
+}
+
+FEE_Scotland_crofters_displaced = {
+	development_cost = -0.05
+	global_unrest = 1
+}
+
+FEE_Scotland_crofters_protected = {
+	global_unrest = -1
+	global_manpower_modifier = 0.1
+}
+
+FEE_Scotland_tobacco_emporium = {
+	province_trade_power_value = 10
+}
+
+FEE_Scotland_scottish_enlightenment = {
+	technology_cost = -0.1
+	embracement_cost = -0.2
+}
+
+FEE_Scotland_assistance_to_the_existing_societies = {
+	global_institution_spread = 0.2
+}
+
+FEE_Scotland_invisible_hand = {
+	production_efficiency = 0.2
+	development_cost = -0.1
+	global_tax_modifier = -0.2
+}
+
+FEE_Scotland_heavy_hand = {
+	global_tax_modifier = 0.2
+}
+
+FEE_Scotland_industrial_pioneer = {
+	development_cost = -0.1
+}
+
+FEE_Scotland_watt_engines = {
+	trade_goods_size_modifier = 0.1
+}
+
+FEE_Scotland_encyclopedia_brittanica = {
+	technology_cost = -0.1
+}
+
+FEE_Scotland_pride_of_scotland = {
+	prestige = 1
+	land_morale = 0.05
+}
+
+FEE_Scotland_traditional_warfare = {
+	shock_damage = 0.1
+	mil_tech_cost_modifier = 0.05
+}
+
+FEE_Scotland_moderate_army_reforms = {
+	discipline = 0.025
+}
+
+FEE_Scotland_reformed_scots_army = {
+	discipline = 0.05
+}
