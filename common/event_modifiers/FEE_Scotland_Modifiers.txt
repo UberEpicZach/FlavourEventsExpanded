@@ -141,3 +141,9 @@ FEE_Scotland_moderate_army_reforms = {
 FEE_Scotland_reformed_scots_army = {
 	discipline = 0.05
 }
+
+FEE_Scotland_we_shall_never_surrender = {
+	discipline = 0.05
+	land_morale = 0.1
+	shock_damage_received = -0.2
+}

@@ -38,6 +38,7 @@
     FEE_Scotland_traditional_warfare: "Traditional Warfare"
     FEE_Scotland_moderate_army_reforms: "Moderate Army Reforms"
     FEE_Scotland_reformed_scots_army: "Reformed Scots Army"
+    FEE_Scotland_we_shall_never_surrender: "We Shall Never Surrender"
     
     FEE_Scotland_strategic_marriage: "Strategic Marriage"
     FEE_Scotland_marriage_offer_spurned: "Marriage Offer Spurned"
@@ -75,8 +76,9 @@
     FEE_Scotland_Events.6.b: "We do not have the resources for a fleet with England at our doorstep!"
     
     FEE_Scotland_Events.7.t: "Disaster at Flodden"
-    FEE_Scotland_Events.7.d: "In 1513, as a result of the renewal of the Auld Alliance with France, the insolent English monarch Henry VIII rebuffed James IV’s attempts to secure peace in the British Isles, declaring himself the “verie owner of Scotland,” bringing yet another Anglo-Scottish War to the island. The Scottish army, ill-equipped and badly led, managed to capture English border forts before being caught at Flodden. The battle was in name only, as it quickly became a massacre: the flower of the Scottish nobility, the knights of Scotland, were slaughtered almost to a man, and the Royal Scottish army for a time ceased to exist as a credible fighting force. The battle is remembered today in the Scottish eulogy song which laments: The Flowers of the Forest are a’wede away."
+    FEE_Scotland_Events.7.d: "In 1513, as a result of the renewal of the Auld Alliance with France, the insolent English monarch Henry VIII rebuffed James IV’s attempts to secure peace in the British Isles, declaring himself the \"verie owner of Scotland\", bringing yet another Anglo-Scottish War to the island. The Scottish army, ill-equipped and badly led, managed to capture English border forts before being caught at Flodden. The battle was in name only, as it quickly became a massacre: the flower of the Scottish nobility, the knights of Scotland, were slaughtered almost to a man, and the Royal Scottish army for a time ceased to exist as a credible fighting force. The battle is remembered today in the Scottish eulogy song which laments: The Flowers of the Forest are a’wede away."
     FEE_Scotland_Events.7.a: "O God, why hast thou forsaken Scotland?"
+    FEE_Scotland_Events.7.b: "We shall never surrender!"
     
     FEE_Scotland_Events.8.t: "Corruption in the Church"
     FEE_Scotland_Events.8.d: "As Protestant views gain steam on the continent, nowhere in Europe is the Catholic Church as corrupt as the Church in Scotland. “Pilates, not Prelates,” Pope Eugenius IV had described Scottish bishops. Priests are regularly ordained who cannot even read or write, while many others are openly drunk or lecherous, while still others use their positions to increase their own luxurious dwellings (which more often than not are fought over by bastard sons after the death of the priest), while rural church buildings fall into disrepair."
@@ -227,3 +229,11 @@
     FEE_Scotland_Events.36.a: "We cannot abandon the heritage that has served us so well!"
     FEE_Scotland_Events.36.b: "Reform the army but preserve its traditions"
     FEE_Scotland_Events.36.c: "Forge a Modern Military"
+    
+    FEE_Scotland_Events.37.t: "Disaster at Flodden"
+    FEE_Scotland_Events.37.d: "The [From.Monarch.GetTitle] of [From.GetName] has been slain by our mighty host and his royal force totally massacred! They are scattered to the wind, running away for their lives and thus no longer willing to fight..."
+    FEE_Scotland_Events.37.a: "What a wonderful outcome!"
+    
+    FEE_Scotland_Events.38.t: "Disaster at Flodden"
+    FEE_Scotland_Events.38.d: "The [From.Monarch.GetTitle] of [From.GetName] has been slain by our mighty host and his royal force totally massacred! Despite that, these devilish skirts are unbroken and yet willing to fight for their freedom. We have to crush them!"
+    FEE_Scotland_Events.38.a: "Cut them to the pieces!"

@@ -518,10 +518,60 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = FEE_Scotland_Events.7.a
-		add_stability = -2
+		add_stability = -1
 		add_yearly_manpower = -2
 		kill_ruler = yes
 		white_peace = ENG
+		hidden_effect = {
+			ENG = {
+				country_event = {
+					id = FEE_Scotland_Events.37
+				}
+			}
+		}
+	}
+	option = {
+		name = FEE_Scotland_Events.7.b
+		add_stability = -1
+		add_yearly_manpower = -2
+		kill_ruler = yes
+		add_country_modifier = {
+			name = FEE_Scotland_we_shall_never_surrender
+			duration = 1825
+		}
+		hidden_effect = {
+			ENG = {
+				country_event = {
+					id = FEE_Scotland_Events.38
+				}
+			}
+		}
+	}
+}
+
+#Disaster at Flodden for England, option 1
+country_event = {
+	id = FEE_Scotland_Events.37
+	title = FEE_Scotland_Events.37.t
+	desc = FEE_Scotland_Events.37.d
+	picture = CORRUPTION_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = FEE_Scotland_Events.37.a
+		add_prestige = 5
+	}
+}
+
+#Disaster at Flodden for England, option 2
+country_event = {
+	id = FEE_Scotland_Events.38
+	title = FEE_Scotland_Events.38.t
+	desc = FEE_Scotland_Events.38.d
+	picture = CORRUPTION_eventPicture
+	is_triggered_only = yes
+	option = {
+		name = FEE_Scotland_Events.38.a
+		add_prestige = 5
 	}
 }
 
