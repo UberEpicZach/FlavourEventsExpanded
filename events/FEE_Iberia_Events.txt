@@ -1304,7 +1304,7 @@ country_event = {
 
 	option = {
 		name = FEE_Iberia_Events.12.OPT.3
-
+		custom_tooltip = FEE_Iberia_Events.12.OPT.3.tt
 		ai_chance = {
 			factor = 33
 		}

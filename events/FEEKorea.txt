@@ -375,7 +375,8 @@ country_event = {
 
 	trigger = {
 		tag = KOR
-		is_westernising = yes
+		has_institution = printing_press
+		NOT = { has_institution = global_trade }
 		has_country_modifier = fee_silhak
 	}
 
@@ -385,7 +386,9 @@ country_event = {
 
 	option = {
 		name = fee_KOR.9.a
-		add_westernisation = 120
+		add_country_modifier = {
+			name = fee_westernisation_replacement
+			duration = 120
 		remove_country_modifier = fee_silhak
 	}
 }

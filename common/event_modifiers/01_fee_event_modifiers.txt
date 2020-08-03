@@ -87,7 +87,7 @@ fee_savoy_army = {
 
 fee_savoy_mercenaries = {
 	merc_maintenance_modifier = -0.1
-	possible_mercenaries = 0.25
+	mercenary_manpower= 0.1
 	mercenary_cost = -0.1
 }
 
@@ -150,8 +150,8 @@ fee_MOL_conquered = {
 
 #The Black Army for Hungary
 hungarian_mercenary_core = {
-	mercenary_cost = -0.2
-	possible_mercenaries = 0.5
+	mercenary_cost = -0.3
+	mercenary_manpower= 0.1
 	army_tradition_decay = -0.01
 }
 
@@ -303,6 +303,10 @@ fee_hyangyak = {
 #Silhak
 fee_silhak = {
 	technology_cost = -0.1
+}
+
+fee_westernisation_replacement = { 	
+	institution_growth = 0.10
 }
 
 #Hamburg Stock Market
@@ -898,7 +902,7 @@ fee_red_fort = {
 #Integration with Indian Culture for Mughals (or not)
 fee_hindu_integration = {
 	religious_unity = 0.15
-	accepted_culture_threshold = -0.15
+	num_accepted_cultures = 1
 	diplomatic_reputation = 1
 	vassal_income = 0.1
 	global_missionary_strength = -0.01
