@@ -1,0 +1,489 @@
+namespace = CE_hungary_expanded
+	#Jay DoubleU
+
+
+#Austria #Bohemian Raids
+country_event = {
+	id = CE_hungary_expanded.1
+	title = CE_hungary_expanded.1.t
+	desc = CE_hungary_expanded.1.d
+	picture = CITY_VIEW_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = HAB
+        BOH = {
+            has_country_flag = first_hussite_king
+        }
+	}
+	
+	mean_time_to_happen = {
+        months = 120
+	}
+	
+	immediate = {
+		random_owned_province = {
+			limit = {
+				any_neighbouring_province = {
+					owner = {
+						tag = BOH
+					}
+				}
+			}
+			add_devastation = 15
+		}
+		random_owned_province = {
+			limit = {
+				any_neighbouring_province = {
+					owner = {
+						tag = BOH
+					}
+				}
+				NOT = { devastation = 10}
+			}
+			add_devastation = 15
+		}
+	}
+
+	option = {
+		name = CE_hungary_expanded.1.a
+		every_owned_province = {
+			limit = {
+				any_neighbor_province = {
+					owner = {
+						tag = BOH
+					}
+				}
+			}
+			add_base_tax = -1
+			add_base_production = -1
+			add_base_manpower = -1
+		}
+		add_stability = -1
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = {
+					is_at_war = yes
+				}
+			}
+		}
+	}
+	option = {
+		name = CE_hungary_expanded.1.b
+		custom_tooltip = CE_austria_demands_reparations
+		custom_tooltip = CE_austria_calls_for_aid
+		tooltip = {
+			declare_war_with_cb = {
+				who = BOH
+				casus_belli = cb_liberation  
+			}
+		}
+		BOH = {
+			country_event = {
+				id = CE_hungary_expanded.2
+				days = 30
+			}
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_at_war = yes
+			}
+		}
+	}
+}
+
+#Bohemia #Austrian Reparations
+country_event = {
+	id = CE_hungary_expanded.2
+	title = CE_hungary_expanded.2.t
+	desc = CE_hungary_expanded.2.d
+	picture = CITY_VIEW_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = CE_hungary_expanded.2.a
+		add_treasury = -250
+		HAB = {
+			country_event = {
+				id = CE_hungary_expanded.3
+				days = 30
+			}
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_at_war = no
+			}
+		}
+	}
+	option = {
+		name = CE_hungary_expanded.2.b
+		HAB = {
+			declare_war_with_cb = {
+				who = BOH
+				casus_belli = cb_liberation  
+			}
+		}
+		HUN = {
+			country_event = {
+				id = CE_hungary_expanded.4
+				days = 30
+			}
+		}
+
+		set_country_flag = CE_promised_hungary_bag_of_gold
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_at_war = yes
+			}
+		}
+	}
+}
+
+#Austria#Bohemia pays
+country_event = {
+	id = CE_hungary_expanded.3
+	title = CE_hungary_expanded.3.t
+	desc = CE_hungary_expanded.3.d
+	picture = CITY_VIEW_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = CE_hungary_expanded.3.a
+		add_treasury = 250
+	}
+}
+
+#Hungary #Another Crusade?
+country_event = {
+	id = CE_hungary_expanded.4
+	title = CE_hungary_expanded.4.t
+	desc = CE_hungary_expanded.4.d
+	picture = CITY_VIEW_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = CE_hungary_expanded.4.a
+		join_all_offensive_wars_of = HAB
+		country_event = {
+			id = CE_hungary_expanded.5
+			days = 60
+		}
+		custom_tooltip = CE_and_hungary_will_answer
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_at_war = yes
+			}
+		}
+	}
+	option = {
+		name = CE_hungary_expanded.4.b
+		add_legitimacy = -20
+		add_prestige = -25
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_at_war = no
+			}
+		}
+	}
+}
+
+#Hungary #Papal Subsidies
+country_event = {
+	id = CE_hungary_expanded.5
+	title = CE_hungary_expanded.5.t
+	desc = CE_hungary_expanded.5.d
+	picture = CITY_VIEW_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = CE_hungary_expanded.5.a
+		add_ruler_modifier = {
+			name = "CE_hungarian_papal_subsidies" #+24 yearly income
+			duration = 3650
+		}
+	}
+}
+
+#Hungary #King  of Bohemia
+country_event = {
+	id = CE_hungary_expanded.6
+	title = CE_hungary_expanded.6.t
+	desc = CE_hungary_expanded.6.d
+	picture = CITY_VIEW_eventPicture
+
+	Trigger = {
+		Tag = HUN
+		BOH = {
+			has_country_flag = first_hussite_king
+		}
+		HUN = {
+			is_in_war = {
+				attacker_leader = BOH
+				duration = 1
+			}
+		}
+		silesia_area = {
+			owner = {
+				or = {
+					tag = BOH
+					overlord = {
+						tag = BOH
+					}
+				}
+			}
+		}
+		all_province = {
+			limit = {
+				area = silesia_area
+				controller = {
+					OR = {
+						tag = HUN
+						tag = HAB
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = CE_hungary_expanded.6.a
+		hidden_effect = {
+			every_province = {
+				limit = {
+					area = silesia_area
+					owner = {
+						or = {
+							tag = BOH
+							overlord = {
+								tag = BOH
+							}
+						}
+					}
+				}
+			cede_province = SIL
+			}
+			every_province = {
+				limit = {
+					area = lusatia_area
+					owner = {
+						or = {
+							tag = BOH
+							overlord = {
+								tag = BOH
+							}
+						}
+					}
+				}
+				cede_province = SOR
+			}
+			every_province = {
+				limit = {
+					area = moravia_area
+					owner = {
+						or = {
+							tag = BOH
+							overlord = {
+								tag = BOH
+							}
+						}
+					}
+				}
+				cede_province = MVA
+			}
+		}
+		white_peace = BOH
+		vassalize = SIL
+		vassalize = SOR
+		vassalize = MVA
+		add_ruler_modifier = {
+			name = "CE_elected_king_of_bohemia" #+0.5 Legitimacy
+			duration = -1
+		}
+		HAB = {
+			country_event = {
+				id = CE_hungary_expanded.7
+				duration = 30
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = CE_hungary_expanded.6.b
+		add_prestige = 10
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#Austria #King of Bohemia
+country_event = {
+	id = CE_hungary_expanded.7
+	title = CE_hungary_expanded.7.t
+	desc = CE_hungary_expanded.7.d
+	picture = CITY_VIEW_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = CE_hungary_expanded.7.a
+		white_peace = BOH
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = CE_hungary_expanded.7.b
+		add_prestige = 5
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#Hungary #Austrian Gold
+country_event = {
+	id = CE_hungary_expanded.8
+	title = CE_hungary_expanded.8.t
+	desc = CE_hungary_expanded.8.d
+	picture = CITY_VIEW_eventPicture
+
+	trigger = {
+		Tag = HUN
+		HAB = {
+			has_country_flag = CE_promised_hungary_bag_of_gold
+		}
+		is_at_war = no
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	option = {
+		name = CE_hungary_expanded.8.a
+		country_event = {
+			id = CE_hungary_expanded.9
+			days = 30
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = CE_hungary_expanded.8.b
+		add_papal_influence = 10
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+#Austria #Hungarian Payday
+country_event = {
+	id = CE_hungary_expanded.9
+	title = CE_hungary_expanded.9.t
+	desc = CE_hungary_expanded.9.d
+	picture = CITY_VIEW_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = CE_hungary_expanded.9.a
+		add_treasury = -500
+		tooltip = {
+			HUN = {
+				add_treasury = 500
+			}
+		}
+		hidden_effect = {
+			HUN = {
+				country_event = {
+					id = CE_hungary_expanded.10
+					days = 30
+				}
+			}
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_at_war = yes
+			}
+		}
+	}
+
+	option = {
+		name = CE_hungary_expanded.9.b
+		HUN = {
+			country_event = {
+				id = CE_hungary_expanded.11
+				days = 30
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+#Austria #Hungarian Payday
+country_event = {
+	id = CE_hungary_expanded.10
+	title = CE_hungary_expanded.10.t
+	desc = CE_hungary_expanded.10.d
+	picture = CITY_VIEW_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = CE_hungary_expanded.10.a
+		add_treasury = 500
+	}
+}
+
+#Hungary #Austrian Betrayal
+country_event = {
+	id = CE_hungary_expanded.11
+	title = CE_hungary_expanded.11.t
+	desc = CE_hungary_expanded.11.d
+	picture = CITY_VIEW_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = CE_hungary_expanded.11.a
+		add_casus_belli = {
+			target = HAB
+			type = cb_loan_cancelled 
+			months = 120
+		}
+	}
+	option = {
+		name = CE_hungary_expanded.11.b
+		add_prestige = -10
+	}
+}

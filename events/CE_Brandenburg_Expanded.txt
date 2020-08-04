@@ -1,4 +1,5 @@
 namespace = CE_brandenburg_expanded
+	#Jay DoubleU
 
 country_event = {
 	id = CE_brandenburg_expanded.1
@@ -805,7 +806,7 @@ country_event = {
 		}
 		religion = catholic
 		MAG = {
-			name = "Albert"
+			has_ruler = "Albert"
 			dynasty = "von Hohenzollern"
 			religion = catholic
 		}
@@ -1268,7 +1269,7 @@ country_event = {
 		set_global_flag = United_Duchies_war_yes
 		ai_chance = {
 			factor = 1
-				modifier = {
+			modifier = {
 				factor = 0
 				ROOT = { 
 					any_ally = {

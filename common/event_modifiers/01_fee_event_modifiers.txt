@@ -1072,3 +1072,9 @@ FEE_Denmark_Agricultural_Reform = {
 FEE_Denmark_Reforms_Ignored = {
 	technology_cost = 0.1
 }
+
+#FEE_Bohemia
+
+FEE_BOH_Infertility = {
+	heir_chance = -0.90
+}
