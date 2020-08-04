@@ -5,13 +5,13 @@
  succession_crisis_expanded.1.a: "Let us look at his kin"
  succession_crisis_expanded.1.b: "Elect a local noble"
  
- succession_crisis_expanded.2.t: "Succession crisis in [From.Country.GetName]"
- succession_crisis_expanded.2.d: "The king of [From.Country.GetName] is dead, yet his blood flows through our veins, should we lay claim tom his lands?"
+ succession_crisis_expanded.2.t: "Succession crisis in [From.GetName]"
+ succession_crisis_expanded.2.d: "The king of [From.GetName] is dead, yet his blood flows through our veins, should we lay claim tom his lands?"
  succession_crisis_expanded.2.a: "Claim our birthright!"
  succession_crisis_expanded.2.b: "We busy"
  
  succession_crisis_expanded.3.t: "The council of [This.Capital.GetName]"
- succession_crisis_expanded.3.d: "We are hosting a council to determine what will happen to [From.Country.GetName]."
+ succession_crisis_expanded.3.d: "We are hosting a council to determine what will happen to [From.GetName]."
  succession_crisis_expanded.3.a: "Attempt to claim it for our own"
  succession_crisis_expanded.3.b: "Let the meeting commnce"
  
@@ -34,6 +34,6 @@
  succession_crisis_expanded.10.a: "As long as we get a piece we're fine."
  succession_crisis_expanded.10.b: "It is rightfully ours, and we're willing to fight for it!"
 
- succession_crisis_expanded.11.t: "The partition of [Root.Country.GetName]"
- succession_crisis_expanded.11.d: "[Root.Country.GetName] is being divided between the rightfull heirs, surely this is what the late monarch would have wanted!."
+ succession_crisis_expanded.11.t: "The partition of [Root.GetName]"
+ succession_crisis_expanded.11.d: "[Root.GetName] is being divided between the rightfull heirs, surely this is what the late monarch would have wanted!."
  succession_crisis_expanded.11.a: "Remember to invest in the eastern lands!"
