@@ -27,3 +27,15 @@ FEE_Scotland_infuriated_by_supporting_rebels = {
 	years = 5
 	yearly_decay = 2
 }
+
+FEE_Scotland_thankful_for_joining_war = {
+	opinion = 100
+	years = 5
+	yearly_decay = 2
+}
+
+FEE_Scotland_innocent_clansmen_massacred = {
+	opinion = 40
+	years = 5
+	yearly_decay = 2
+}
