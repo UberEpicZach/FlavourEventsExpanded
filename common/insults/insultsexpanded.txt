@@ -329,14 +329,15 @@ insult_waterloo = {
 	}
 	
 	insult_penal_colony = {
-		FROM = {
-			OR = {
-				tag = GBR
-				tag = ENG
+		trigger = {
+			FROM = {
+				OR = {
+					tag = GBR
+					tag = ENG
 			}
 		}
 	}
-	
+}
 	insult_from_paderborn = {
 		trigger = {
 			FROM = {

@@ -1023,13 +1023,13 @@ country_event = {
 					}
 					add_core = PREV
 				}
-			}
+		ai_chance = {
+		factor = 1
+	}
 		}
 	}
 	
-	ai_chance = {
-		factor = 1
-	}
+	
 
 	after = {
 		hidden_effect = {

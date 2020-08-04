@@ -6,7 +6,7 @@ fee_ruler_trait_humble = {
 fee_ruler_trait_lustful = {
 	heir_chance = 0.20
     	legitimacy = -0.02
-    	legitimacy_equivalent = -0.01
+    	add_legitimacy_equivalent = { value = -0.01 }
     	tolerance_own = -1
     	tolerance_heathen = 1
     	tolerance_heretic = 1
