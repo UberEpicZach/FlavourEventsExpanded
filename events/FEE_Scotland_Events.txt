@@ -518,12 +518,10 @@ country_event = {
 	fire_only_once = yes
 	option = {
 		name = FEE_Scotland_Events.7.a
-		add_stability = -2
+		add_stability = -1
 		add_yearly_manpower = -2
 		kill_ruler = yes
 		white_peace = ENG
-<<<<<<< Updated upstream
-=======
 		hidden_effect = {
 			ENG = {
 				country_event = {
@@ -558,7 +556,6 @@ country_event = {
 	desc = FEE_Scotland_Events.37.d
 	picture = BATTLE_eventPicture
 	is_triggered_only = yes
-	
 	option = {
 		name = FEE_Scotland_Events.37.a
 		add_prestige = 5
@@ -575,7 +572,6 @@ country_event = {
 	option = {
 		name = FEE_Scotland_Events.38.a
 		add_prestige = 5
->>>>>>> Stashed changes
 	}
 }
 
@@ -584,7 +580,7 @@ country_event = {
 	id = FEE_Scotland_Events.8
 	title = FEE_Scotland_Events.8.t
 	desc = FEE_Scotland_Events.8.d
-	picture = CORRUPTION_eventPicture
+	picture = REFORM_eventPicture
 	trigger = {
 		is_year = 1480
 		religion = catholic
@@ -1034,12 +1030,7 @@ country_event = {
 	id = FEE_Scotland_Events.16
 	title = FEE_Scotland_Events.16.t
 	desc = FEE_Scotland_Events.16.d
-<<<<<<< Updated upstream
-	picture = CORRUPTION_eventPicture
-
-=======
 	picture = CITY_VIEW_eventPicture
->>>>>>> Stashed changes
 	trigger = {
 		OR = {
 			tag = SCO
@@ -1059,13 +1050,10 @@ country_event = {
 			current_age = age_of_absolutism
 		}
 	}
-
 	mean_time_to_happen = {
 		months = 240
 	}
-
 	fire_only_once = yes
-
 	option = {
 		name = FEE_Scotland_Events.16.a
 		hidden_effect = {
@@ -1088,7 +1076,6 @@ country_event = {
 			duration = -1
 		}
 	}
-
 	option = {
 		name = FEE_Scotland_Events.16.b
 		ai_chance = {
@@ -1115,14 +1102,8 @@ country_event = {
 	id = FEE_Scotland_Events.17
 	title = FEE_Scotland_Events.17.t
 	desc = FEE_Scotland_Events.17.d
-<<<<<<< Updated upstream
-	picture = CORRUPTION_eventPicture
-
-=======
 	picture = STREET_SPEECH_eventPicture
->>>>>>> Stashed changes
 	is_triggered_only = yes
-
 	option = {
 		name = FEE_Scotland_Events.17.a
 		add_stability = -1
@@ -1132,7 +1113,6 @@ country_event = {
 			duration = -1
 		}
 	}
-
 	option = {
 		name = FEE_Scotland_Events.17.b
 		add_stability = -2
@@ -1187,14 +1167,8 @@ country_event = {
 	id = FEE_Scotland_Events.18
 	title = FEE_Scotland_Events.18.t
 	desc = FEE_Scotland_Events.18.d
-<<<<<<< Updated upstream
-	picture = CORRUPTION_eventPicture
-
-=======
 	picture = COURT_eventPicture
->>>>>>> Stashed changes
 	is_triggered_only = yes
-
 	option = {
 		name = FEE_Scotland_Events.18.a
 		add_stability = -1
@@ -1206,7 +1180,6 @@ country_event = {
 		disband_rebels = reformed_rebels
 		disband_rebels = particularist_rebels
 	}
-
 	option = {
 		name = FEE_Scotland_Events.18.b
 		add_stability = 1
@@ -1227,7 +1200,6 @@ country_event = {
 			duration = -1
 		}
 	}
-
 	option = {
 		name = FEE_Scotland_Events.18.c
 		save_event_target_as = FEE_Scotland_rival_target
@@ -1243,15 +1215,9 @@ country_event = {
 	id = FEE_Scotland_Events.19
 	title = FEE_Scotland_Events.19.t
 	desc = FEE_Scotland_Events.19.d
-<<<<<<< Updated upstream
-	picture = CORRUPTION_eventPicture
-
-=======
 	picture = BATTLE_eventPicture
->>>>>>> Stashed changes
 	major = yes
 	is_triggered_only = yes
-
 	immediate = {
 		hidden_effect = {
 			release = HSC
@@ -1318,14 +1284,20 @@ country_event = {
 			}
 		}
 	}
-
 	option = {
 		name = FEE_Scotland_Events.19.a
-		switch_tag = HSC
+		custom_tooltip = FEE_Scotland_Events.19.a.tooltip1
 	}
-
 	option = {
 		name = FEE_Scotland_Events.19.b
+		switch_tag = HSC
+		custom_tooltip = FEE_Scotland_Events.19.b.tooltip1
+		HSC = {
+			add_country_modifier = {
+				name = FEE_Scotland_presbyterian_freedoms_protected
+				duration = -1
+			}
+		}
 	}
 }
 
@@ -1334,14 +1306,8 @@ country_event = {
 	id = FEE_Scotland_Events.20
 	title = FEE_Scotland_Events.20.t
 	desc = FEE_Scotland_Events.20.d
-<<<<<<< Updated upstream
-	picture = CORRUPTION_eventPicture
-
-=======
 	picture = BORDER_TENSION_eventPicture
->>>>>>> Stashed changes
 	is_triggered_only = yes
-
 	option = {
 		ai_chance = {
 			factor = 2
@@ -1355,8 +1321,12 @@ country_event = {
 				id = FEE_Scotland_Events.21
 			}
 		}
+		event_target:FEE_Scotland_HSC_target = {
+			country_event = {
+				id = FEE_Scotland_Events.23
+			}
+		}
 	}
-
 	option = {
 		ai_chance = {
 			factor = 1
@@ -1372,18 +1342,13 @@ country_event = {
 	}
 }
 
+#Scotland - response to rival supporting Covenanters
 country_event = {
 	id = FEE_Scotland_Events.21
 	title = FEE_Scotland_Events.21.t
 	desc = FEE_Scotland_Events.21.d
-<<<<<<< Updated upstream
-	picture = CORRUPTION_eventPicture
-
-=======
 	picture = BORDER_TENSION_eventPicture
->>>>>>> Stashed changes
 	is_triggered_only = yes
-
 	option = {
 		name = FEE_Scotland_Events.21.a
 		add_opinion = {
@@ -1397,18 +1362,13 @@ country_event = {
 	}
 }
 
+#Scotland - response to rival NOT supporting Covenanters
 country_event = {
 	id = FEE_Scotland_Events.22
 	title = FEE_Scotland_Events.22.t
 	desc = FEE_Scotland_Events.22.d
-<<<<<<< Updated upstream
-	picture = CORRUPTION_eventPicture
-
-=======
 	picture = RELIGIOUS_TURMOIL_eventPicture
->>>>>>> Stashed changes
 	is_triggered_only = yes
-
 	option = {
 		name = FEE_Scotland_Events.22.a
 		add_opinion = {
@@ -1423,14 +1383,11 @@ country_event = {
 	}
 }
 
+#Covenanters - response to Scottish rival who supported them
 country_event = {
 	id = FEE_Scotland_Events.23
 	title = FEE_Scotland_Events.22.t
 	desc = FEE_Scotland_Events.22.d
-<<<<<<< Updated upstream
-	picture = CORRUPTION_eventPicture
-
-=======
 	picture = RELIGIOUS_TURMOIL_eventPicture
 	is_triggered_only = yes
 	option = {
@@ -1455,20 +1412,8 @@ country_event = {
 	picture = WOUNDED_SOLDIERS_eventPicture
 	major = yes
 	fire_only_once = yes
->>>>>>> Stashed changes
 	trigger = {
-		OR = {
-			tag = SCO
-			tag = HSC
-		}
-		AND = {
-			SCO = {
-				exists = yes
-			}
-			HSC = {
-				exists = yes
-			}
-		}
+		tag = SCO
 		AND = {
 			SCO = {
 				NOT = {
@@ -1481,36 +1426,25 @@ country_event = {
 				}
 			}
 		}
-		AND = {
+		OR = {
 			SCO = {
 				truce_with = HSC
 			}
 			HSC = {
-				truce_with = SCO
+				exists = no
 			}
 		}
 	}
-
 	immediate = {
 		if = {
 			limit = {
 				HSC = {
-					 has_country_modifier = just_lost_war_timer
-				}
-			}
-			HSC = {
-				every_owned_province = {
-					cede_province = SCO
+					exists = no
 				}
 			}
 			set_country_flag = FEE_Scotland_covenanter_lost
 		}
 		else = {
-<<<<<<< Updated upstream
-			SCO = {
-				every_owned_province = {
-					cede_province = HSC
-=======
 			set_country_flag = FEE_Scotland_covenanter_won
 		}
 	}
@@ -1583,7 +1517,7 @@ country_event = {
 	id = FEE_Scotland_Events.26
 	title = FEE_Scotland_Events.26.t
 	desc = FEE_Scotland_Events.26.d
-	picture = COLONIZATiON_eventPicture
+	picture = COLONIZATION_eventPicture
 	fire_only_once = yes
 	trigger = {
 		OR = {
@@ -1637,22 +1571,23 @@ country_event = {
 			60 = {
 				country_event = {
 					id = FEE_Scotland_Events.27
->>>>>>> Stashed changes
 				}
 			}
-			HSC = {
-				change_tag = SCO
+			40 = {
+				country_event = {
+					id = FEE_Scotland_Events.28
+				}
 			}
-			set_country_flag = FEE_Scotland_covenanter_won
 		}
 	}
-
 	option = {
-		
+		name = FEE_Scotland_Events.26.b
+		add_prestige = -5
+		add_country_modifier = {
+			name = FEE_Scotland_colonial_ventures_ignored
+			duration = 7300
+		}
 	}
-<<<<<<< Updated upstream
-}
-=======
 }
 
 #Darien Success
@@ -1660,7 +1595,7 @@ country_event = {
 	id = FEE_Scotland_Events.27
 	title = FEE_Scotland_Events.27.t
 	desc = FEE_Scotland_Events.27.d
-	picture = COLONIZATiON_eventPicture
+	picture = COLONIZATION_eventPicture
 	is_triggered_only = yes
 	immediate = {
 		hidden_effect = {
@@ -1971,7 +1906,7 @@ country_event = {
 	id = FEE_Scotland_Events.28
 	title = FEE_Scotland_Events.28.t
 	desc = FEE_Scotland_Events.28.d
-	picture = COLONIZATIONventPicture
+	picture = COLONIZATION_eventPicture
 	is_triggered_only = yes
 	option = {
 		name = FEE_Scotland_Events.28.a
@@ -1985,7 +1920,7 @@ country_event = {
 	id = FEE_Scotland_Events.29
 	title = FEE_Scotland_Events.29.t
 	desc = FEE_Scotland_Events.29.d
-	picture =WESTEERNISATION_eventPicture
+	picture = WESTEERNISATION_eventPicture
 	fire_only_once = yes
 	trigger = {
 		OR = {
@@ -2367,7 +2302,7 @@ country_event = {
 	id = FEE_Scotland_Events.35
 	title = FEE_Scotland_Events.35.t
 	desc = FEE_Scotland_Events.35.d
-	picture =COURT_eventPicture
+	picture = COURT_eventPicture
 	fire_only_once = yes
 	trigger = {
 		OR = {
@@ -2475,4 +2410,3 @@ country_event = {
 		}
 	}
 }
->>>>>>> Stashed changes
