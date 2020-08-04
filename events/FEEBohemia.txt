@@ -7,14 +7,14 @@ country_event = {
 	title = "events_boh.2.tt"
 	desc = "events_boh.2.dd"
 	picture = MILITARY_CAMP_eventPicture
-	
+
 	fire_only_once = yes
 
 	trigger = {
 		tag = BOH
 		NOT = { is_year = 1490 }
  	}
-	
+
 	mean_time_to_happen = {
 		months = 120
 	}
@@ -35,19 +35,19 @@ country_event = {
 	title = "events_boh.3.tt"
 	desc = "events_boh.3.dd"
 	picture = REFORM_eventPicture
-	
+
 	fire_only_once = yes
 
 	trigger = {
 		tag = BOH
 		has_ruler = "Jirí"
-		has_dynasty = "z Podebrad"
+		dynasty = "z Podebrad"
 		OR = {
 			religion = hussite
 			ruler_religion = hussite
 		}
  	}
-	
+
 	mean_time_to_happen = {
 		months = 12
 	}
@@ -58,7 +58,7 @@ country_event = {
 			limit = {
 				exists = TUR
 			}
-			every_country = { 
+			every_country = {
 				limit = {
 					is_rival = TUR
 					religion_group = christian
@@ -114,10 +114,10 @@ country_event = {
 	title = "events_boh.4.tt"
 	desc = "events_boh.4.dd"
 	picture = ECONOMY_eventPicture
-	
+
 	major = yes
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = BOH
 		is_part_of_hre = yes
@@ -125,11 +125,11 @@ country_event = {
 		is_year = 1500
 		NOT = { is_year = 1550 }
  	}
-	
+
 	mean_time_to_happen = {
 		months = 200
 	}
-	
+
 	option = {
 		name = events_boh.4.a #Wonderful news!
 		2967 = {
@@ -157,7 +157,7 @@ country_event = {
 					duration = 7300
 				}
 			}
-		}	
+		}
 	}
 	option = {
 		name = events_boh.4.b #Yes yes, very nice, but what's in it for me?
@@ -175,14 +175,14 @@ country_event = {
 	title = "events_boh.5.tt"
 	desc = "events_boh.5.dd"
 	picture = ANGRY_MOB_eventPicture
-	
+
 	fire_only_once = yes
 
 	trigger = {
 		tag = BOH
 		is_subject_of = HAB
 		overlord = {
-			religion = catholic 
+			religion = catholic
 		}
 		OR = {
 			religion = protestant
@@ -192,7 +192,7 @@ country_event = {
 		is_year = 1540
 		NOT = { is_year = 1620 }
  	}
-	
+
 	mean_time_to_happen = {
 		months = 300
 		modifier = {
@@ -200,7 +200,7 @@ country_event = {
 			liberty_desire = 50
 		}
 	}
-	
+
 	option = {
 		name = events_boh.5.a #Throw them out the window!
 		add_liberty_desire = 100
@@ -231,12 +231,12 @@ country_event = {
 	title = "events_boh.6.tt"
 	desc = "events_boh.6.dd"
 	picture = SIEGE_eventPicture
-	
+
 	fire_only_once = yes
 
 	trigger = {
 		owns_core_province = 266
-		any_country = { 
+		any_country = {
 			OR = {
 				culture = saxon
 				culture = prussian
@@ -245,11 +245,11 @@ country_event = {
 		}
 		is_year = 1720
  	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	option = {
 		name = events_boh.6.a #Will we ever recover?
 		266 = {
@@ -258,5 +258,5 @@ country_event = {
 			add_base_manpower = -2
 			add_devastation = 50
 		}
-	}	
+	}
 }

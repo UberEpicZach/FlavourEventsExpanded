@@ -4,9 +4,10 @@ country_event = {
 	id = FEE_ottoman_events.1
 	title = FEE_ottoman_events.1.t
 	desc = FEE_ottoman_events.1.d
-	
+	picture = DIPLOMACY_eventPicture
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		janissary_percentage = 0.15
 		has_reform = ottoman_government
@@ -14,11 +15,11 @@ country_event = {
 		has_idea = timariot_system
 		total_development = 1000
 	}
-	
+
 	mean_time_to_happen = {
 		months = 50
 	}
-	
+
 	option = {
 		name = FEE_ottoman_events.1.a
 		ai_chance = {
@@ -47,9 +48,10 @@ country_event = {
 	id = FEE_ottoman_events.2
 	title = FEE_ottoman_events.2.t
 	desc = FEE_ottoman_events.2.d
-	
+	picture = DIPLOMACY_eventPicture
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = BYZ
 		NOT = { exists = BYZ }
@@ -58,11 +60,11 @@ country_event = {
 			not = { culture = greek }
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 15
 	}
-	
+
 	option = {
 		name = FEE_ottoman_events.2.a
 		ai_chance = {
@@ -97,9 +99,10 @@ country_event = {
 	id = FEE_ottoman_events.3
 	title = FEE_ottoman_events.3.t
 	desc = FEE_ottoman_events.3.d
-	
+	picture = DIPLOMACY_eventPicture
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		is_year = 1444
 		NOT = { is_year = 1451 }
@@ -109,11 +112,11 @@ country_event = {
 			is_core = BUL
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 10
 	}
-	
+
 	option = {
 		name = FEE_ottoman_events.3.a
 		ai_chance = {
@@ -171,10 +174,11 @@ country_event = {
 	id = FEE_ottoman_events.4
 	title = FEE_ottoman_events.4.t
 	desc = FEE_ottoman_events.4.d
-	
+	picture = DIPLOMACY_eventPicture
+
 	is_triggered_only = yes
 	hidden = yes
-	
+
 	option = {
 		name = FEE_ottoman_events.4.a
 		ai_chance = {
@@ -193,18 +197,19 @@ country_event = {
 	id = FEE_ottoman_events.5
 	title = FEE_ottoman_events.5.t
 	desc = FEE_ottoman_events.5.d
-	
+	picture = DIPLOMACY_eventPicture
+
 	hidden = yes
-	
+
 	trigger = {
 		has_country_modifier = BUL_resistance
 		NOT = { war_with = TUR }
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
+
 	option = {
 		name = FEE_ottoman_events.5.a
 		ai_chance = {
@@ -218,9 +223,10 @@ country_event = {
 	id = FEE_ottoman_events.6
 	title = FEE_ottoman_events.6.t
 	desc = FEE_ottoman_events.6.d
-	
+	picture = DIPLOMACY_eventPicture
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = TUR
 		318 = {
@@ -230,11 +236,11 @@ country_event = {
 		NOT = { is_year = 1680 }
 		NOT = { religion = jewish }
 	}
-	
+
 	mean_time_to_happen = {
 		months = 100
 	}
-	
+
 	option = {
 		name = FEE_ottoman_events.6.a
 		ai_chance = {
@@ -260,9 +266,10 @@ country_event = {
 	id = FEE_ottoman_events.7
 	title = FEE_ottoman_events.7.t
 	desc = FEE_ottoman_events.7.d
-	
+	picture = DIPLOMACY_eventPicture
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = FEE_ottoman_events.7.a
 		ai_chance = {

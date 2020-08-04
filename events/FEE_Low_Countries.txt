@@ -1,6 +1,6 @@
 namespace = FEE_Low_Countries_Events
 
-#The States General 
+#The States General
 country_event = {
 	id = FEE_Low_Countries_Events.1
 	title = FEE_Low_Countries_Events.1.T
@@ -62,9 +62,12 @@ country_event = {
 					amount = 3
 					all_subject_country = {
 						OR = {
-							is_subject_of_type = brother_kingdom
+							AND = {
+								is_expanded_mod_active = { mod = subjects }
+								is_subject_of_type = brother_kingdom
+								is_subject_of_type = integrated_personal_union
+							}
 							is_subject_of_type = personal_union
-							is_subject_of_type = integrated_personal_union
 						}
 					}
 				}
@@ -80,9 +83,12 @@ country_event = {
 					amount = 2
 					all_subject_country = {
 						OR = {
-							is_subject_of_type = brother_kingdom
+							AND = {
+								is_expanded_mod_active = { mod = subjects }
+								is_subject_of_type = brother_kingdom
+								is_subject_of_type = integrated_personal_union
+							}
 							is_subject_of_type = personal_union
-							is_subject_of_type = integrated_personal_union
 						}
 					}
 				}
@@ -98,9 +104,12 @@ country_event = {
 					amount = 1
 					all_subject_country = {
 						OR = {
-							is_subject_of_type = brother_kingdom
+							AND = {
+								is_expanded_mod_active = { mod = subjects }
+								is_subject_of_type = brother_kingdom
+								is_subject_of_type = integrated_personal_union
+							}
 							is_subject_of_type = personal_union
-							is_subject_of_type = integrated_personal_union
 						}
 					}
 				}
@@ -145,7 +154,7 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
 		tag = HOL
-		owns = 97		
+		owns = 97
 	}
 
 	mean_time_to_happen = {
@@ -254,7 +263,7 @@ country_event = {
 }
 
 #The Guelders Wars Event Chain
-#Claims to the Duchy of Gelre 
+#Claims to the Duchy of Gelre
 country_event = {
 	id = FEE_Low_Countries_Events.4
 	title = FEE_Low_Countries_Events.4.T
@@ -362,7 +371,7 @@ country_event = {
 	picture = OVEREXTENSION_eventPicture
 
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = GEL
 		NOT = { has_ruler_flag = fee_lw_bill_ruler_ruler }
@@ -404,7 +413,7 @@ country_event = {
 		else = {
 			192 = {
 				if = {
-					limit = { 
+					limit = {
 						NOT = { owned_by = ROOT }
 					}
 					owner = {
@@ -461,7 +470,7 @@ country_event = {
 		ai_chance = {
 			factor = 50
 		}
-		
+
 		add_country_modifier = {
 			name = fee_lw_loot_pay
 			duration = 18250
@@ -588,7 +597,7 @@ country_event = {
 		clr_global_flag = fee_lw_guelders_wars_start
 	}
 }
-#End of Guelders Wars 
+#End of Guelders Wars
 
 #The Supreme Court of Holland
 country_event = {
@@ -993,7 +1002,7 @@ country_event = {
 			add_base_manpower = 4
 			if = {
 				limit = {
-					owner = { 
+					owner = {
 						NOT = { mil_tech = 14 }
 					}
 				}
@@ -1012,7 +1021,7 @@ country_event = {
 				}
 			}
 			else_if = {
-				limit = { 
+				limit = {
 					owner = {
 						mil_tech = 14
 						NOT = { mil_tech = 19 }
@@ -1042,7 +1051,7 @@ country_event = {
 				}
 			}
 			else_if = {
-				limit = { 
+				limit = {
 					owner = {
 						mil_tech = 19
 						NOT = { mil_tech = 24 }
@@ -1081,7 +1090,7 @@ country_event = {
 				}
 			}
 			else_if = {
-				limit = { 
+				limit = {
 					owner = {
 						mil_tech = 24
 					}
@@ -1166,9 +1175,7 @@ country_event = {
 			limit = {
 				has_estate = estate_burghers
 			}
-			add_estate_burghers_loyalty_effect = {
-				amount = 10
-			}
+			add_estate_burghers_loyalty_effect = yes
 		}
 		else = { add_mercantilism = 2 }
 	}
@@ -1202,7 +1209,7 @@ country_event = {
 		ai_chance = {
 			factor = 50
 		}
-		
+
 		FRA = {
 			every_rival_country = {
 				remove_rival = ROOT
@@ -1231,7 +1238,7 @@ country_event = {
 		ai_chance = {
 			factor = 50
 		}
-		
+
 		FRA = {
 			every_rival_country = {
 				add_casus_belli = {
@@ -1325,7 +1332,7 @@ country_event = {
 			duration = 7300
 		}
 		random_owned_province = {
-			limit = { 
+			limit = {
 				NOT = { religion = catholic }
 			}
 			add_base_tax = 2
@@ -1372,7 +1379,7 @@ country_event = {
 	title = FEE_Low_Countries_Events.22.T
 	desc = FEE_Low_Countries_Events.22.D
 	picture = WOUNDED_SOLDIERS_eventPicture
-	
+
 	trigger = {
 		tag = NED
 		any_country = { offensive_war_with = ROOT }
@@ -1483,30 +1490,6 @@ country_event = {
 		add_country_modifier = {
 			name = fee_lw_trade_compacency
 			duration = 7300
-		}
-	}
-}
-
-#
-country_event = {
-	id = FEE_Low_Countries_Events.
-	title = FEE_Low_Countries_Events..T
-	desc = FEE_Low_Countries_Events..D
-	picture = DIPLOMACY_eventPicture
-
-	is_triggered_only = yes
-
-	option = {
-		name = FEE_Low_Countries_Events..OPT1
-		ai_chance = {
-			factor = 50
-		}
-	}
-
-	option = {
-		name = FEE_Low_Countries_Events..OPT2
-		ai_chance = {
-			factor = 50
 		}
 	}
 }

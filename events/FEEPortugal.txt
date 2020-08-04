@@ -9,9 +9,9 @@ country_event = {
 	title = fee_POR.1.t
 	desc = fee_POR.1.d
 	picture = ADVISOR_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = POR
 		is_year = 1530
@@ -19,7 +19,7 @@ country_event = {
 			is_year = 1580
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 240
 	}
@@ -38,9 +38,9 @@ country_event = {
 	title = fee_POR.2.t
 	desc = fee_POR.2.d
 	picture = SHIP_SAILING_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = POR
 		is_subject = no
@@ -57,7 +57,7 @@ country_event = {
 			ruler_is_foreigner = yes
 		}
 	}
-	
+
 	option = { #His name is Sebastian, and that's good enough for me.
 		name = fee_POR.2.a
 		define_ruler = {
@@ -87,11 +87,11 @@ country_event = {
 	title = fee_POR.3.tt
 	desc = fee_POR.3.dd
 	picture = SHIP_SAILING_eventPicture
-	
+
 	fire_only_once = yes
 	major = yes
 	major_trigger = { }
-	
+
 	trigger = {
 		tag = POR
 		NOT = { exists = BYZ }
@@ -108,16 +108,16 @@ country_event = {
 				region = mashriq_region
 				region = caucasia_region
 			}
-		}	
+		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 12
 	}
-	
-	option = { 
+
+	option = {
 		name = fee_POR.3.a #Well I guess we'll have to find another way to India!
-		create_explorer = 60
+		create_explorer = { tradition = 60 }
 		add_country_modifier = {
 			name = fee_por_spice_sail
 			duration = 10950
@@ -129,7 +129,7 @@ country_event = {
 				speed = 0.5
 				cost = 0
 			}
-		}	
+		}
 	}
 }
 
@@ -140,19 +140,19 @@ country_event = {
 	title = fee_POR.4.tt
 	desc = fee_POR.4.dd
 	picture = UNIVERSITY_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = POR
-		current_age = age_of_discovery	
+		current_age = age_of_discovery
 	}
-	
+
 	mean_time_to_happen = {
 		months = 12
 	}
-	
-	option = { 
+
+	option = {
 		name = fee_POR.4.a #Found Henry the Navigators' School!
 		add_years_of_income = -0.5
 		add_country_modifier = {
@@ -168,8 +168,8 @@ country_event = {
 			cost_multiplier = 0.25
 		}
 	}
-	option = { 
+	option = {
 		name = fee_POR.4.b #This isn't a matter for the crown.
-		add_legitimacy = 10	
+		add_legitimacy = 10
 	}
 }

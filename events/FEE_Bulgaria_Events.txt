@@ -100,9 +100,9 @@ country_event = {
 		name = FEE_Bulgaria_Events.2.a
 		151 = {
 			if = {
-				trigger = {
+				limit = {
 					ROOT = {
-						not = {
+						NOT = {
 							has_country_flag = use_missions_expanded_missions_instead_of_paradox
 						}
 					}
@@ -140,7 +140,7 @@ country_event = {
 		add_prestige = 20
 		add_years_of_income = -0.5
 		if = {
-			trigger = {
+			limit = {
 				patriarch_authority = 0.8
 			}
 			add_prestige = 10
@@ -159,7 +159,7 @@ country_event = {
 		add_years_of_income = -0.5
 		add_prestige = 20
 		if = {
-			trigger = {
+			limit = {
 				patriarch_authority = 0.8
 			}
 			add_prestige = 10

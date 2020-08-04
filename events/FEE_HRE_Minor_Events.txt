@@ -169,9 +169,10 @@ country_event = {
 			is_institution_origin = printing_press
 		}
 		is_year = 1550
-		not = {
+		NOT = {
 			is_year = 1560
 		}
+		innovativeness_ideas = 3
 	}
 	mean_time_to_happen = {
 		months = 1
@@ -185,7 +186,6 @@ country_event = {
 			culture = hessian
 			cost_multiplier = 0.5
 		}
-		innovativeness_ideas = 3
 		change_innovativeness = 5
 		add_adm_power = 100
 	}
@@ -319,19 +319,19 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
 		is_part_of_hre = yes
-		or = {
+		OR = {
 			has_idea_group = economic_ideas
 			has_idea_group = innovativeness_ideas
 		}
 		calc_true_if = {
-			any_owned_province = {
-				or = {
+			all_owned_province = {
+				OR = {
 					area = palatinate_area
 					area = north_rhine_area
 					area = lower_rhineland_area
 				}
 			}
-			value = 5
+			amount = 5
 		}
 		not = {
 			total_development = 500

@@ -101,10 +101,15 @@ country_event = {
 		#}
 		custom_tooltip = FEE_BOH_Privilege_Hell
 		hidden_effect = {
-			set_estate_privilege = estate_noble_baron_pensions
-			set_estate_privilege = estate_noble_baron_courts
-			set_estate_privilege = estate_noble_baron_courtier
-			set_estate_privilege = estate_noble_baron_titles
+			if = {
+				limit = {
+					is_expanded_mod_active = { mod = governments }
+				}
+				set_estate_privilege = estate_noble_baron_pensions
+				set_estate_privilege = estate_noble_baron_courts
+				set_estate_privilege = estate_noble_baron_courtier
+				set_estate_privilege = estate_noble_baron_titles
+			}
 		}
 		POL = {
 			country_event = {
@@ -123,7 +128,7 @@ country_event = {
 		random_owned_province = {
 			spawn_rebels = {
 				type = pretender_rebels
-				size = 2 
+				size = 2
 				leader_dynasty = "Podebrad"
 				leader = "Henry 'the Younger'"
 			}
@@ -191,10 +196,10 @@ country_event = {
 	option = {
 		name = FEE_Bohemia.4.a
 		266 = {
-			cede_province = MRV
+			cede_province = MVA
 		}
 		2970 {
-			cede_province = MRV
+			cede_province = MVA
 		}
 		GLG = {
 
@@ -229,10 +234,10 @@ country_event = {
 	option = {
 		name = FEE_Bohemia.5.a
 		266 = {
-			cede_province = MRV
+			cede_province = MVA
 		}
 		2970 {
-			cede_province = MRV
+			cede_province = MVA
 		}
 	}
 	option = {
@@ -263,10 +268,10 @@ country_event = {
 	option = {
 		name = FEE_Bohemia.6.a
 		266 = {
-			cede_province = MRV
+			cede_province = MVA
 		}
 		2970 {
-			cede_province = MRV
+			cede_province = MVA
 		}
 	}
 	option = {
@@ -297,10 +302,10 @@ country_event = {
 	option = {
 		name = FEE_Bohemia.7.a
 		266 = {
-			cede_province = MRV
+			cede_province = MVA
 		}
 		2970 {
-			cede_province = MRV
+			cede_province = MVA
 		}
 	}
 	option = {
@@ -331,10 +336,10 @@ country_event = {
 	option = {
 		name = FEE_Bohemia.8.a
 		266 = {
-			cede_province = MRV
+			cede_province = MVA
 		}
 		2970 {
-			cede_province = MRV
+			cede_province = MVA
 		}
 	}
 	option = {

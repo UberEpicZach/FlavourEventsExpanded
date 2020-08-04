@@ -37,26 +37,26 @@ insult_inquisition = {
 		NOT = {	religion = catholic }
 		}
 	}
-	
+
 insult_waterloo = {
 	trigger = {
 		FROM = { tag = GBR }
 		tag = FRA
 		}
 	}
-	
+
 	insult_majapahit = {
 	trigger = {
 		tag = MAJ
 		}
 	}
-	
+
 	insult_byzantium = {
 		trigger = {
 			tag = BYZ
 			}
 		}
-		
+
 	insult_armada = {
 		trigger = {
 			FROM = { tag = GBR }
@@ -66,26 +66,26 @@ insult_waterloo = {
 			}
 		}
 	}
-	
+
 	insult_hussites = {
 		trigger = {
 			FROM = { tag = BOH }
 		}
 	}
-	
+
 	insult_america = {
 		trigger = {
 			FROM = { tag = USA }
 			tag = GBR
 		}
 	}
-	
+
 	insults_no_freedom = {
 		trigger = {
 			always = yes
 		}
 	}
-	
+
 	insult_russia = {
 		trigger = {
 			FROM = {
@@ -97,7 +97,7 @@ insult_waterloo = {
 			tag = RUS
 		}
 	}
-	
+
 	insult_england_sucks = {
 		trigger = {
 			FROM = {
@@ -108,7 +108,7 @@ insult_waterloo = {
 			tag = GBR
 		}
 	}
-	
+
 	insult_no_u = {
 		trigger = {
 			OR = {
@@ -124,7 +124,7 @@ insult_waterloo = {
 			}
 		}
 	}
-	
+
 	insult_french_are_weak = {
 		trigger = {
 			FROM = {
@@ -136,7 +136,7 @@ insult_waterloo = {
 			tag = FRA
 		}
 	}
-				
+
 	insult_owns_golden_century = {
 		trigger = {
 			has_dlc = "Golden Century"
@@ -145,10 +145,10 @@ insult_waterloo = {
 			}
 			ai = no
 			num_of_loans = 1
-			
+
 		}
 	}
-	
+
 	insult_prussia_above_all = {
 		trigger = {
 			FROM = {
@@ -169,7 +169,7 @@ insult_waterloo = {
 			tag = HAB
 		}
 	}
-	
+
 	insult_pay_debt = {
 		trigger = {
 			FROM = {
@@ -179,7 +179,7 @@ insult_waterloo = {
 			num_of_loans = 1
 		}
 	}
-	
+
 	insult_bismarck = {
 		trigger = {
 			FROM = {
@@ -189,7 +189,7 @@ insult_waterloo = {
 			tag = GBR
 		}
 	}
-	
+
 	insult_NUTS = {
 		trigger = {
 			FROM = {
@@ -198,13 +198,13 @@ insult_waterloo = {
 			culture_group = germanic
 		}
 	}
-	
+
 	insult_disgusting_monarch = {
 		trigger = {
 			always = yes
 		}
 	}
-	
+
 	insult_pride_of_the_fleet = {
 		trigger = {
 			FROM = {
@@ -213,37 +213,37 @@ insult_waterloo = {
 			has_flagship = yes
 		}
 	}
-	
+
 	insult_weak_enemies = {
 		trigger = {
 			always = yes
 		}
 	}
-	
+
 	insult_i_will_drink_from_your_skull = {
 		trigger = {
 			always = yes
 		}
 	}
-	
+
 	insult_more_skulls = {
 		trigger = {
 			always = yes
 		}
 	}
-	
+
 	insult_denmark_does_not_exist = {
 		trigger = {
 			tag = DAN
 		}
 	}
-	
+
 	insult_keep_the_stork = {
 		trigger = {
 			always = yes
 		}
 	}
-	
+
 	insult_france_to_england = {
 		trigger = {
 			FROM = {
@@ -255,7 +255,7 @@ insult_waterloo = {
 			}
 		}
 	}
-	
+
 	insult_communism_stinks = {
 		trigger = {
 			FROM = {
@@ -264,7 +264,7 @@ insult_waterloo = {
 			has_reform = peasants_republic
 		}
 	}
-	
+
 	insult_spain_is_weak = {
 		trigger = {
 			OR = {
@@ -273,13 +273,13 @@ insult_waterloo = {
 			}
 		}
 	}
-	
+
 	insult_milan_stinks = {
 		trigger = {
 			tag = MLO
 		}
 	}
-	
+
 	insult_to_portugal = {
 		trigger = {
 			FROM = {
@@ -291,19 +291,19 @@ insult_waterloo = {
 			tag = POR
 		}
 	}
-	
+
 	insult_labeled_as_a_fool = {
 		trigger = {
 			always = yes
 		}
 	}
-	
+
 	insult_paderborn_is_bad = {
 		trigger = {
-			tag = PDB
+			tag = PAD
 		}
 	}
-	
+
 	insult_no_holy_see = {
 		trigger = {
 			FROM = {
@@ -311,23 +311,23 @@ insult_waterloo = {
 			}
 			tag = PAP
 		}
-		
+
 	}
-	
+
 	insult_jihad = {
 		trigger = {
 			FROM = { religion_group = muslim }
 			religion = catholic
 		}
 	}
-	
+
 	insult_jews = {
 		trigger = {
 			FROM = { religion_group = jewish_group }
 			NOT = { religion_group = jewish_group }
 		}
 	}
-	
+
 	insult_penal_colony = {
 		trigger = {
 			FROM = {
@@ -341,12 +341,12 @@ insult_waterloo = {
 	insult_from_paderborn = {
 		trigger = {
 			FROM = {
-				tag = PDB
+				tag = PAD
 			}
 			tag = AAC
 		}
 	}
-	
+
 	insult_flemmies_suck = {
 		trigger = {
 			FROM = {
@@ -355,31 +355,31 @@ insult_waterloo = {
 			tag = FLA
 		}
 	}
-	
+
 	insult_byzantium_is_dead = {
 		trigger = {
 			tag = BYZ
 		}
 	}
-	
+
 	insult_you_are_huns = {
 		trigger = {
 			tag = TUR
 		}
 	}
-	
+
 	insult_ban_jay = {
 		trigger = {
 			tag = NED
 		}
 	}
-	
+
 	insult_a_lemon = {
 		trigger = {
 			always = yes
 		}
 	}
-	
+
 	insult_soviet_union = {
 		trigger = {
 			FROM = {
@@ -388,7 +388,7 @@ insult_waterloo = {
 			}
 		}
 	}
-	
+
 	insult_pisan = {
 		trigger = {
 			OR = {
@@ -399,20 +399,21 @@ insult_waterloo = {
 			}
 		}
 	}
-	
+
 	insult_carthago_delenda_est = {
 		trigger = {
 			FROM = { tag = ROM }
+			is_expanded_mod_active = { mod = missions }
 			tag = CTH
 		}
 	}
-	
+
 	insult_techwoke = {
 		trigger = {
 			always = yes
 		}
 	}
-	
+
 	insult_dont_be_humble = {
 		trigger = {
 			always = yes

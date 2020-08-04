@@ -25,10 +25,10 @@ country_event = {
 			name = "Francis Bacon"
 			skill = 3
 			cost_multiplier = 0.25
-			add_country_modifier = {
-				name = "scientific_method"
-				duration = 7300
-			}
+		}
+		add_country_modifier = {
+			name = "scientific_method"
+			duration = 7300
 		}
 	}
 }
@@ -263,11 +263,9 @@ country_event = {
 		tag = GBR
 		calc_true_if = {
 			all_owned_province = {
-				limit = {
-					culture = highland_scottish
-				}
+				culture = highland_scottish
 			}
-			value = 2
+			amount = 2
 		}
 	}
 	mean_time_to_happen = {
@@ -692,7 +690,10 @@ province_event = {
 	id = fee_gbr_eng.13
 	title = fee_gbr_eng_n_13
 	desc = fee_gbr_eng_d_13
+	picture = DIPLOMACY_eventPicture
+
 	hidden = yes
+
 	trigger = {
 		owner = {
 			has_country_flag = fee_gbr_eng_statute_flag
@@ -721,7 +722,10 @@ province_event = {
 	id = fee_gbr_eng.14
 	title = fee_gbr_eng_n_14
 	desc = fee_gbr_eng_d_14
+	picture = DIPLOMACY_eventPicture
+
 	hidden = yes
+
 	trigger = {
 		has_province_modifier = fee_gbr_eng_statute_province_modifier
 		OR = {
@@ -908,7 +912,7 @@ country_event = {
 			add_base_manpower = -3
 		}
 		hidden_effect = {
-			country_event = id = fee_gbr_eng.18 days = 558 }
+			country_event = { id = fee_gbr_eng.18 days = 558 }
 		}
 	}
 }
@@ -1010,13 +1014,13 @@ country_event = {
 		if = {
 			limit = {
 				FRA = {
-					is_rival = ROOT
+					historical_rival_with = ROOT
 				}
-				FRA = {
-					remove_historical_rival = ROOT
-				}
-				remove_historical_rival = FRA
 			}
+			FRA = {
+				remove_historical_rival = ROOT
+			}
+			remove_historical_rival = FRA
 		}
 		else = {
 			FRA = {

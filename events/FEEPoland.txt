@@ -12,9 +12,9 @@ namespace = fee_POL
 #	title = fee_POL.9.t
 #	desc = fee_POL.9.d
 #	picture = LIBERUM_VETO_eventPicture
-#	
+#
 #	fire_only_once = yes
-#	
+#
 #	trigger = {
 #		OR = {
 #			AND = {
@@ -27,20 +27,20 @@ namespace = fee_POL
 #		NOT = { is_year = 1480 }
 #		is_at_war = yes
 #	}
-#	
+#
 #	mean_time_to_happen = {
 #		months = 6
 #	}
-#	
+#
 #	option = {
 #		name = fee_POL.9.a # Accept the Conventions (Road to nobility)
-#		add_country_modifier = { 
+#		add_country_modifier = {
 #			name = pol_statuty_nieszawskie
-#			duration = -1 
+#			duration = -1
 #		}
 #		every_owned_province = {
 #		add_local_autonomy = 15
-#        }		
+#        }
 #	}
 #	option = {
 #		name = fee_POL.9.b # Refuse to sign it and defy the Magnates (Road to absolutism)
@@ -60,9 +60,9 @@ namespace = fee_POL
 #	title = fee_POL.10.t
 #	desc = fee_POL.10.d
 #	picture = COURT_eventPicture
-#	
+#
 #	fire_only_once = yes
-#	
+#
 #	trigger = {
 #		OR = {
 #			AND = {
@@ -75,11 +75,11 @@ namespace = fee_POL
 #		NOT = { is_year = 1520 }
 #		is_at_war = yes
 #	}
-#	
+#
 #	mean_time_to_happen = {
 #		months = 6
 #	}
-#	
+#
 #	option = {
 #		name = fee_POL.10.a # Enact
 #		add_stability = 1
@@ -102,9 +102,9 @@ country_event = {
 	title = fee_POL.11.t
 	desc = fee_POL.11.d
 	picture = COURT_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = POL
 		NOT = { is_year = 1540 }
@@ -120,11 +120,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 50
 	}
-	
+
 	option = {
 		name = fee_POL.11.a # Our countries should cooperate
 		create_union = LIT
@@ -145,9 +145,9 @@ country_event = {
 	title = fee_POL.12.t
 	desc = fee_POL.12.d
 	picture = COURT_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		OR = {
 			AND = {
@@ -159,11 +159,11 @@ country_event = {
 		is_year = 1495
 		NOT = { is_year = 1530 }
 	}
-	
+
 	mean_time_to_happen = {
 		months = 6
 	}
-	
+
 	option = {
 		name = fee_POL.12.a # Sign
 		ai_chance = {
@@ -209,19 +209,19 @@ country_event = {
 	title = fee_POL.13.t
 	desc = fee_POL.13.d
 	picture = COURT_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = POL
-		senior_union_with = LIT 
+		senior_union_with = LIT
 		has_country_modifier = pol_przywilej_mielnicki
 	}
-	
+
 	mean_time_to_happen = {
 		months = 48
 	}
-	
+
 	option = {
 		name = fee_POL.13.a # Unite our countries under Poland(This will create massive rebellion in Lithuania)
 		ai_chance = {
@@ -229,7 +229,7 @@ country_event = {
 		}
 		inherit = LIT
 		add_stability = 1
-		hidden_effect = { 
+		hidden_effect = {
 		    add_country_modifier = {
 			name = unia_mielnicka
 			duration = -1
@@ -250,14 +250,14 @@ country_event = {
 	title = fee_POL.14.t
 	desc = fee_POL.14.d
 	picture = COURT_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = POL
 		has_country_modifier = pol_przywilej_mielnicki
 	}
-	
+
 	mean_time_to_happen = {
 		months = 24
 	}
@@ -295,9 +295,9 @@ country_event = {
 	title = fee_POL.15.t
 	desc = fee_POL.15.d
 	picture = COURT_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		OR = {
 			AND = {
@@ -311,11 +311,11 @@ country_event = {
 	#   has_country_modifier =	pol_statut_piotrkowski
 	    has_country_modifier = pol_przywilej_mielnicki
 		}
-	
+
 	mean_time_to_happen = {
 		months = 60
 	}
-	
+
 	option = {
 		name = fee_POL.15.a # Well, accept it
 		add_adm_power = 150
@@ -327,9 +327,9 @@ country_event = {
 	title = fee_POL.16.t
 	desc = fee_POL.16.d
 	picture = LIBERUM_VETO_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		OR = {
 			AND = {
@@ -343,17 +343,17 @@ country_event = {
 	#	has_country_modifier =	pol_statut_piotrkowski
 	    has_country_modifier = pol_przywilej_mielnicki
 	}
-	
+
 	mean_time_to_happen = {
 		months = 60
 	}
-	
+
 	option = {
 		name = fee_POL.16.a # The beginning of noble rules
 		remove_country_modifier = pol_przywilej_mielnicki
 		every_owned_province = {
 		add_local_autonomy = 15
-        }		
+        }
 	}
 	option = {
 		name = fee_POL.16.b # NO power to nobles!
@@ -404,9 +404,9 @@ country_event = {
 	title = fee_POL.17.t
 	desc = fee_POL.17.d
 	picture = COURT_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		OR = {
 			AND = {
@@ -418,11 +418,11 @@ country_event = {
 		is_year = 1520
 		NOT = { is_year = 1550 }
 		}
-	
+
 	mean_time_to_happen = {
 		months = 240
 	}
-	
+
 	option = {
 		name = fee_POL.17.a # Enact
 		add_stability = 1
@@ -444,9 +444,9 @@ country_event = {
 	title = fee_POL.18.t
 	desc = fee_POL.18.d
 	picture = COURT_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
         TEU = {
             ai = yes
@@ -468,15 +468,14 @@ country_event = {
         }
         is_year = 1520
         NOT = { is_year = 1540 }
-        }
         is_religion_enabled = protestant
         NOT = {
-            has_global_flag = cg_flag_cg_active 
+            has_global_flag = cg_flag_cg_active
         }
-}		
-        mean_time_to_happen = {
-		months = 120 
-	    }
+	}
+    mean_time_to_happen = {
+		months = 120
+	}
 	option = {
 		name = fee_POL.18.a # Force them to create Prussia
 		TEU = { country_event = { id = fee_POL.22 } }
@@ -491,9 +490,9 @@ country_event = {
 	title = fee_POL.19.t
 	desc = fee_POL.19.d
 	picture = COURT_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		OR = {
 			AND = {
@@ -505,7 +504,7 @@ country_event = {
        owns = 43
        is_neighbor_of = PRU
        religion = catholic
-       	
+
      }
 
 	 mean_time_to_happen = {
@@ -530,12 +529,12 @@ country_event = {
 	title = fee_POL.20.t
 	desc = fee_POL.20.d
 	picture = COURT_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		NOT = {
-				has_global_flag = cg_flag_cg_active 
+				has_global_flag = cg_flag_cg_active
 			}
 		OR = {
 			AND = {
@@ -555,7 +554,7 @@ country_event = {
 		}
 	}
 	 mean_time_to_happen = {
-		months = 12 
+		months = 12
 	}
     option = {
 		name = fee_POL.20.a # Incoroporate Livonia
@@ -571,9 +570,9 @@ country_event = {
 	title = fee_POL.21.t
 	desc = fee_POL.21.d
 	picture = COURT_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		OR = {
 			AND = {
@@ -586,11 +585,11 @@ country_event = {
 	   is_year = 1560
 	   NOT = { is_year = 1580 }
        }
-	   
+
 	   mean_time_to_happen = {
-		months = 120 
+		months = 120
 	}
-	 
+
      option = {
 		name = fee_POL.21.a # Sign
 		add_dip_power = -150
@@ -613,12 +612,12 @@ country_event = {
 	title = fee_POL.22.t
 	desc = fee_POL.22.d
 	picture = COURT_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	trigger = {
 		NOT = {
-			has_global_flag = cg_flag_cg_active 
+			has_global_flag = cg_flag_cg_active
 		}
 	}
 
@@ -639,15 +638,15 @@ country_event = {
 	title = fee_POL.23.t
 	desc = fee_POL.23.d
 	picture = COURT_eventPicture
-	
+
 	is_triggered_only = yes
 
 	trigger = {
 		NOT = {
-			has_global_flag = cg_flag_cg_active 
+			has_global_flag = cg_flag_cg_active
 		}
 	}
- 	
+
 	option = {  	# Humble before Poland
 	 name = fee_POL.23.a
 	 FROM = { inherit = LIV}

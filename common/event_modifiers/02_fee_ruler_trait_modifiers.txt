@@ -5,12 +5,15 @@ fee_ruler_trait_humble = {
 
 fee_ruler_trait_lustful = {
 	heir_chance = 0.20
-    	legitimacy = -0.02
-    	add_legitimacy_equivalent = { value = -0.01 }
-    	tolerance_own = -1
-    	tolerance_heathen = 1
-    	tolerance_heretic = 1
-    	papal_influence = -0.02
+	legitimacy = -0.02
+	republican_tradition = -0.02
+	horde_unity = -0.02
+	meritocracy = -0.02
+	devotion = -0.02
+	tolerance_own = -1
+	tolerance_heathen = 1
+	tolerance_heretic = 1
+	papal_influence = -0.02
 }
 
 fee_ruler_trait_honest = {
@@ -75,7 +78,7 @@ fee_ruler_trait_gluttonous = {
     diplomatic_reputation = 1
 }
 
-fee_ruler_trait_greedy = { 
+fee_ruler_trait_greedy = {
     diplomatic_reputation = -0.5
     global_tax_modifier = 0.20
 }
@@ -95,7 +98,7 @@ fee_ruler_trait_wroth = {
 
 fee_ruler_trait_envious = {
     diplomatic_reputation = -0.50
-    spy_offence = 0.50 
+    spy_offence = 0.50
     global_spy_defence = 0.20
 }
 fee_ruler_trait_proud = {
@@ -120,10 +123,10 @@ fee_ruler_trait_brave  = {
 }
 
 fee_ruler_trait_content = {
-    heir_chance = 0.25 
+    heir_chance = 0.25
 }
 
-fee_ruler_trait_craven = { 
+fee_ruler_trait_craven = {
     land_morale = -0.05
 }
 

@@ -20,7 +20,7 @@ country_event = {
 	desc = "1_cr_desc"
 	picture = BARBARY_PIRATES_eventPicture
 	fire_only_once = yes
-	
+
 	trigger = {
 		is_year = 1580
 		tag = TUR
@@ -30,13 +30,13 @@ country_event = {
 			has_estate = estate_cossacks
 		}
 	}
-	
+
 	mean_time_to_happen = { months = 60 }
-	
+
 	option = {
 		name = "1_cr_a"
 		ai_chance = { factor = 85 }
-		
+
 		hidden_effect = {
 			PLC = {
 				country_event = {
@@ -47,11 +47,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "1_cr_b"
 		ai_chance = { factor = 15 }
-		
+
 		add_prestige = -15
 		add_legitimacy = -20
 		add_stability = -1
@@ -65,16 +65,16 @@ country_event = {
 	desc = "2_cr_desc"
 	picture = DIPLOMACY_eventPicture
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "2_cr_a"
 		ai_chance = { factor = 90 }
-		
+
 		add_country_modifier = {
 			name = "order_in_ukraine"
 			duration = 3652
 		}
-		
+
 		TUR = {
 			country_event = {
 				id = fee_plc_cr.3
@@ -84,13 +84,13 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "2_cr_b"
 		ai_chance = { factor = 10 }
-		
+
 		add_prestige = 15
-		
+
 		TUR = {
 			country_event = {
 				id = fee_plc_cr.4
@@ -109,10 +109,10 @@ country_event = {
 	desc = "3_cr_desc"
 	picture = DIPLOMACY_eventPicture
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "3_cr_a"
-		
+
 		add_stability = 1
 		add_prestige = 15
 	}
@@ -125,7 +125,7 @@ country_event = {
 	desc = "4_cr_desc"
 	picture = BORDER_TENSION_eventPicture
 	is_triggered_only = yes
-	
+
 	immediate = {
 		hidden_effect = {
 			PLC = {
@@ -136,7 +136,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "4_cr_a"
 	}
@@ -150,7 +150,7 @@ country_event = {
 	desc = "5_cr_desc"
 	picture = BORDER_TENSION_eventPicture
 	fire_only_once = yes
-	
+
 	trigger = {
 		is_year = 1591
 		tag = PLC
@@ -162,14 +162,14 @@ country_event = {
 		owns_core_province = 4539
 		owns_core_province = 4540
 	}
-	
+
 	mean_time_to_happen = { months = 12 }
-	
+
 	option = {
 		name = "5_cr_a"
-		
+
 		280 = { add_devastation = 2 }
-		
+
 		hidden_effect = {
 			country_event = {
 				id = fee_plc_cr.6
@@ -187,10 +187,10 @@ country_event = {
 	desc = "6_cr_desc"
 	picture = ANGRY_MOB_eventPicture
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "6_cr_a"
-		
+
 		hidden_effect = {
 			random_list = {
 				75 = {
@@ -219,10 +219,10 @@ country_event = {
 	desc = "7_cr_desc"
 	picture = CONQUEST_eventPicture
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "7_cr_a"
-		
+
 		# +Mission for ME and a mechanism preventing next event chain from firing before this one is over.
 		set_country_flag = PLC_dealt_with_kosinski_uprising
 	}
@@ -235,12 +235,12 @@ country_event = {
 	desc = "8_cr_desc"
 	picture = BATTLE_eventPicture
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "8_cr_a"
-		
+
 		add_prestige = -10
-		
+
 		280 = {
 			spawn_rebels = {
 				type = cossack_rebels
@@ -248,7 +248,7 @@ country_event = {
 				win = yes
 			}
 		}
-		
+
 		1944 = {
 			spawn_rebels = {
 				type = cossack_rebels
@@ -256,7 +256,7 @@ country_event = {
 				win = yes
 			}
 		}
-		
+
 		hidden_effect = {
 			country_event = {
 				id = fee_plc_cr.1001
@@ -273,9 +273,10 @@ country_event = {
 	title = "8_cr_title"
 	desc = "8_cr_desc"
 	picture = BATTLE_eventPicture
-	is_triggered_only = yes
+
 	hidden = yes
-	
+	is_triggered_only = yes
+
 	immediate = {
 		2962 = {
 			spawn_rebels = {
@@ -284,7 +285,7 @@ country_event = {
 				win = yes
 			}
 		}
-		
+
 		4540 = {
 			spawn_rebels = {
 				type = cossack_rebels
@@ -292,12 +293,18 @@ country_event = {
 				win = yes
 			}
 		}
-		
+
 		country_event = {
 			id = fee_plc_cr.1002
 			days = 120
 			random = 30
 		}
+	}
+
+	option = {
+		name = 8_cr_option
+
+		ai_chance = { factor = 100 }
 	}
 }
 
@@ -307,9 +314,10 @@ country_event = {
 	title = "8_cr_title"
 	desc = "8_cr_desc"
 	picture = BATTLE_eventPicture
-	is_triggered_only = yes
+
 	hidden = yes
-	
+	is_triggered_only = yes
+
 	immediate = {
 		292 = {
 			spawn_rebels = {
@@ -318,7 +326,7 @@ country_event = {
 				win = yes
 			}
 		}
-		
+
 		4539 = {
 			spawn_rebels = {
 				type = cossack_rebels
@@ -326,11 +334,17 @@ country_event = {
 				win = yes
 			}
 		}
-		
+
 		country_event = {
 			id = fee_plc_cr.1003
 			days = 90
 		}
+	}
+
+	option = {
+		name = 8_cr_option
+
+		ai_chance = { factor = 100 }
 	}
 }
 
@@ -340,9 +354,10 @@ country_event = {
 	title = "8_cr_title"
 	desc = "8_cr_desc"
 	picture = BATTLE_eventPicture
-	is_triggered_only = yes
+
 	hidden = yes
-	
+	is_triggered_only = yes
+
 	immediate = {
 		if = {
 			limit = { has_spawned_rebels = cossack_rebels }
@@ -355,6 +370,12 @@ country_event = {
 			country_event = { id = fee_plc_cr.9 }
 		}
 	}
+
+	option = {
+		name = 8_cr_option
+
+		ai_chance = { factor = 100 }
+	}
 }
 
 # End of Kosinski Uprising (Intervention)
@@ -364,10 +385,10 @@ country_event = {
 	desc = "9_cr_desc"
 	picture = CONQUEST_eventPicture
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "9_cr_a"
-		
+
 		set_country_flag = PLC_dealt_with_kosinski_uprising
 	}
 }
@@ -380,7 +401,7 @@ country_event = {
 	desc = "10_cr_desc"
 	picture = SEJM_eventPicture
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = PLC
 		has_estate = estate_cossacks
@@ -398,12 +419,12 @@ country_event = {
 		owns_core_province = 4540
 		owns_core_province = 4542
 	}
-	
+
 	mean_time_to_happen = { months = 64 }
-	
+
 	option = {
 		name = "10_cr_a"
-		
+
 		trigger = {
 			NOT = {
 				OR = {
@@ -422,7 +443,7 @@ country_event = {
 				}
 			}
 		}
-		
+
 		hidden_effect = {
 			random_list = {
 				80 = {
@@ -442,17 +463,17 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "10_cr_b"
-		
+
 		trigger = {
 			OR = {
 				ruler_has_personality = just_personality
 				ruler_has_personality = righteous_personality
 			}
 		}
-		
+
 		add_estate_loyalty = {
 			estate = estate_cossacks
 			loyalty = 10
@@ -461,7 +482,7 @@ country_event = {
 			name = grateful_cossacks
 			duration = 3650
 		}
-		
+
 		hidden_effect = {
 			country_event = {
 				id = fee_plc_cr.11
@@ -470,18 +491,18 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "10_cr_c"
-		
+
 		trigger = { ruler_has_personality = kind_hearted_personality }
-		
+
 		add_years_of_income = -0.5
 		add_country_modifier = {
 			name = grateful_cossacks
 			duration = 3650
 		}
-		
+
 		hidden_effect = {
 			country_event = {
 				id = fee_plc_cr.11
@@ -490,23 +511,23 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "10_cr_d"
-		
+
 		trigger = {
 			OR = {
 				ruler_has_personality = secretive_personality
 				ruler_has_personality = intricate_web_weaver_personality
 			}
 		}
-		
+
 		add_years_of_income = -0.25
 		add_estate_loyalty = {
 			estate = estate_nobles
 			loyalty = -5
 		}
-		
+
 		hidden_effect = {
 			country_event = {
 				id = fee_plc_cr.11
@@ -515,10 +536,10 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "10_cr_e"
-	
+
 		trigger = {
 			OR = {
 				ruler_has_personality = charismatic_negotiator_personality
@@ -526,12 +547,12 @@ country_event = {
 				ruler_has_personality = silver_tongue_personality
 			}
 		}
-		
+
 		add_country_modifier = {
 			name = grateful_cossacks
 			duration = 3650
 		}
-		
+
 		hidden_effect = {
 			country_event = {
 				id = fee_plc_cr.11
@@ -540,23 +561,23 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "10_cr_f"
-	
+
 		trigger = {
 			OR = {
 				ruler_has_personality = embezzler_personality
 				ruler_has_personality = greedy_personality
 			}
 		}
-		
+
 		add_years_of_income = 0.5
 		add_country_modifier = {
 			name = despised_by_the_cossacks
 			duration = 3650
 		}
-		
+
 		hidden_effect = {
 			country_event = {
 				id = fee_plc_cr.12
@@ -565,23 +586,23 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "10_cr_g"
-		
+
 		trigger = {
 			OR = {
 				ruler_has_personality = cruel_personality
 				ruler_has_personality = malevolent_personality
 			}
 		}
-		
+
 		add_stability = -1
 		add_country_modifier = {
 			name = despised_by_the_cossacks
 			duration = 3650
 		}
-		
+
 		hidden_effect = {
 			country_event = {
 				id = fee_plc_cr.12
@@ -599,7 +620,7 @@ country_event = {
 	desc = "11_cr_desc"
 	picture = SEJM_eventPicture
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "11_cr_a"
 		set_country_flag = PLC_dealt_with_nalyvaiko_uprising
@@ -614,10 +635,10 @@ country_event = {
 	desc = "12_cr_desc"
 	picture = SEJM_eventPicture
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "12_cr_a"
-		
+
 		hidden_effect = {
 			country_event = {
 				id = fee_plc_cr.13
@@ -635,17 +656,17 @@ country_event = {
 	desc = "13_cr_desc"
 	picture = NOBLE_ESTATE_eventPicture
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "13_cr_a"
-		
+
 		define_general = {
 			shock = 4
 			fire = 4
 			manuever = 3
 			name = "Stanislaw Zolkiewski"
 		}
-		
+
 		# Mohilew
 		292 = {
 			add_devastation = 20
@@ -656,7 +677,7 @@ country_event = {
 				leader = "Severyn Nalyvaiko"
 			}
 		}
-		
+
 		hidden_effect = {
 			# Bratslaw
 			1943 = {
@@ -728,17 +749,17 @@ country_event = {
 				}
 				kill_units = { who = REB }
 			}
-			
+
 			country_event = {
 				id = fee_plc_cr.1004
 				days = 240
 			}
 		}
 	}
-	
+
 	option = {
 		name = "13_cr_b"
-		
+
 		hidden_effect = {
 			country_event = {
 				id = fee_plc_cr.14
@@ -755,13 +776,13 @@ country_event = {
 	desc = "14_cr_desc"
 	picture = FAMINE_eventPicture
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "14_cr_a"
-		
+
 		set_country_flag = PLC_dealt_with_nalyvaiko_uprising
 		set_country_flag = PLC_dealt_with_nalyvaiko_uprising_peacefully_2
-		
+
 		disband_rebels = cossack_rebels
 		capital_scope = {
 			spawn_rebels = {
@@ -769,12 +790,12 @@ country_event = {
 				size = 3
 			}
 		}
-		
+
 		add_country_modifier = {
 			name = nalyvaiko_peace_offer
 			duration = 3650
 		}
-		
+
 		292 = { add_devastation = 20 }
 		1943 = { add_devastation = 10 }
 		4540 = { add_devastation = 10 }
@@ -792,13 +813,14 @@ country_event = {
 	title = "8_cr_title"
 	desc = "8_cr_desc"
 	picture = BATTLE_eventPicture
-	is_triggered_only = yes
+
 	hidden = yes
-	
+	is_triggered_only = yes
+
 	immediate = {
 		if = {
 			limit = { has_spawned_rebels = cossack_rebels }
-			
+
 			country_event = {
 				id = fee_plc_cr.1004
 				days = 120
@@ -806,11 +828,17 @@ country_event = {
 		}
 		else_if = {
 			limit = { NOT = { has_spawned_rebels = cossack_rebels } }
-			
+
 			country_event = {
 				id = fee_plc_cr.15
 			}
 		}
+	}
+
+	option = {
+		name = 8_cr_option
+
+		ai_chance = { factor = 100 }
 	}
 }
 
@@ -821,10 +849,10 @@ country_event = {
 	desc = "15_cr_desc"
 	picture = BATTLE_eventPicture
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "15_cr_a"
-		
+
 		hidden_effect = {
 			4542 = {
 				spawn_rebels = {
@@ -833,7 +861,7 @@ country_event = {
 					win = yes
 				}
 				kill_units = { who = REB }
-				
+
 				if = {
 					limit = {
 						NOT = {
@@ -845,14 +873,14 @@ country_event = {
 							}
 						}
 					}
-					
+
 					add_building = fort_15th
 					set_province_flag = PLC_tabor_lubnie
 				}
 			}
-			
+
 			set_country_flag = PLC_nalyvaiko_lubnie
-			
+
 			country_event = {
 				id = fee_plc_cr.1005
 				days = 180
@@ -867,9 +895,10 @@ country_event = {
 	title = "8_cr_title"
 	desc = "8_cr_desc"
 	picture = BATTLE_eventPicture
+
 	hidden = yes
 	is_triggered_only = yes
-	
+
 	immediate = {
 		# Default outcome: Player sieges down Lubnie
 		if = {
@@ -881,16 +910,16 @@ country_event = {
 					}
 				}
 			}
-			
+
 			country_event = {
 				id = fee_plc_cr.16
 			}
-			
+
 			if = {
 				limit = {
 					4542 = { has_province_flag = PLC_tabor_lubnie }
 				}
-				
+
 				4542 = {
 					remove_building = fort_15th
 					clr_province_flag = PLC_tabor_lubnie
@@ -904,6 +933,12 @@ country_event = {
 			}
 		}
 	}
+
+	option = {
+		name = 8_cr_option
+
+		ai_chance = { factor = 100 }
+	}
 }
 
 # End of Nalyvaiko Uprising (Default)
@@ -913,10 +948,10 @@ country_event = {
 	desc = "16_cr_desc"
 	picture = VILLAGE_BURNING_eventPicture
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "16_cr_a"
-		
+
 		hidden_effect = {
 			if = {
 				limit = {
@@ -928,12 +963,12 @@ country_event = {
 				}
 			}
 		}
-		
+
 		add_country_modifier = {
 			name = nalyvaiko_cossack_lands_confiscated
 			duration = 3650
 		}
-		
+
 		clr_country_flag = PLC_nalyvaiko_lubnie
 		set_country_flag = PLC_dealt_with_nalyvaiko_uprising_default
 	}
@@ -946,10 +981,10 @@ country_event = {
 	desc = "17_cr_desc"
 	picture = GENERALS_DISCUSSING_eventPicture
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "17_cr_a"
-		
+
 		hidden_effect = {
 			random_list = {
 				60 = { country_event = { id = fee_plc_cr.19 } }
@@ -966,7 +1001,7 @@ country_event = {
 	desc = "18_cr_desc"
 	picture = GENERALS_DISCUSSING_eventPicture
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "18_cr_a"
 	}
@@ -979,16 +1014,16 @@ country_event = {
 	desc = "19_cr_desc"
 	picture = GENERALS_DISCUSSING_eventPicture
 	is_triggered_only = yes
-	
+
 	option = {
 		name = "19_cr_a"
-		
+
 		hidden_effect = { country_event = { id = fee_plc_cr.20 } }
 	}
-	
+
 	option = {
 		name = "19_cr_b"
-		
+
 		hidden_effect = { country_event = { id = fee_plc_cr.21 } }
 	}
 }
@@ -1000,7 +1035,7 @@ country_event = {
 	desc = "20_cr_desc"
 	picture = MILITARY_CAMP_eventPicture
 	is_triggered_only = yes
-	
+
 	immediate = {
 		hidden_effect = {
 			if = {
@@ -1012,16 +1047,16 @@ country_event = {
 				clr_province_flag = PLC_tabor_lubnie
 			}
 		}
-		
+
 		4542 = { change_controller = ROOT }
-		
+
 		set_country_flag = PLC_dealt_with_nalyvaiko_uprising_peacefully_3
 		}
 	}
-	
+
 	option = {
 		name = "20_cr_a"
-		
+
 		add_estate_loyalty = {
 			estate = estate_nobles
 			loyalty = -10
@@ -1041,7 +1076,7 @@ country_event = {
 	desc = "21_cr_desc"
 	picture = VILLAGE_RAIDED_eventPicture
 	is_triggered_only = yes
-	
+
 	immediate = {
 		if = {
 			limit = {
@@ -1052,15 +1087,15 @@ country_event = {
 				clr_province_flag = PLC_tabor_lubnie
 			}
 		}
-		
+
 		4542 = { change_controller = ROOT }
-		
+
 		set_country_flag = PLC_dealt_with_nalyvaiko_uprising_bloody
 	}
-	
+
 	option = {
 		name = "20_cr_a"
-		
+
 		add_estate_loyalty = {
 			estate = estate_nobles
 			loyalty = 10
@@ -1069,7 +1104,7 @@ country_event = {
 			estate = estate_cossacks
 			loyalty = -10
 		}
-		
+
 		add_country_modifier = {
 			name = nalyvaiko_cossack_lands_confiscated
 			duration = 3650

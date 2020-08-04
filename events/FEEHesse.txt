@@ -25,8 +25,8 @@ country_event = {
 		army_size = 10
 		any_country = {
 			OR = {
-				capital_scope = { region = north_germany_region }
-				capital_scope = { region = south_germany_region }
+				capital_scope = { region = north_german_region }
+				capital_scope = { region = south_german_region }
 				capital_scope = { region = france_region }
 				capital_scope = { region = scandinavia_region }
 				capital_scope = { region = low_countries_region }

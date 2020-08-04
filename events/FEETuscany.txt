@@ -22,7 +22,7 @@ country_event = {
 			is_year = 1630
 		}
 		NOT = {
-			num_of_colonial_subjects = 1
+			colony = 1
 		}
 		NOT = {
 			has_global_flag = fee_robert_thornton
@@ -69,9 +69,9 @@ country_event = {
 	title = fee_TUS.2.t
 	desc = fee_TUS.2.d
 	picture = RELIGION_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		OR = {
 			tag = TUS
@@ -86,7 +86,7 @@ country_event = {
 		is_year = 1550
 		religion = catholic
 	}
-	
+
 	mean_time_to_happen = {
 		months = 240
 		modifier = {
@@ -113,7 +113,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = fee_TUS.2.a
 		add_adm_power = -25
@@ -142,9 +142,9 @@ country_event = {
 #	title = fee_TUS.3.t
 #	desc = fee_TUS.3.d
 #	picture = LIBERUM_VETO_eventPicture
-#	
+#
 #	fire_only_once = yes
-#	
+#
 #	trigger = {
 #		tag = TUS
 #		NOT = {
@@ -163,11 +163,11 @@ country_event = {
 #			}
 #		}
 #	}
-#	
+#
 #	mean_time_to_happen = {
 #		months = 6
 #	}
-#	
+#
 #	immediate = {
 #		hidden_effect = {
 #			add_country_modifier = {
@@ -176,7 +176,7 @@ country_event = {
 #			}
 #		}
 #	}
-#	
+#
 #	option = {
 #		name = fee_TUS.3.a
 #		add_dip_power = -25
@@ -192,9 +192,9 @@ country_event = {
 #	title = fee_TUS.4.t
 #	desc = fee_TUS.4.d
 #	picture = CONQUEST_eventPicture
-#	
+#
 #	fire_only_once = yes
-#	
+#
 #	trigger = {
 #		tag = TUS
 #		NOT = {
@@ -207,11 +207,11 @@ country_event = {
 #		}
 #		num_of_cities = 3
 #	}
-#	
+#
 #	mean_time_to_happen = {
 #		months = 6
 #	}
-#	
+#
 #	immediate = {
 #		hidden_effect = {
 #			add_country_modifier = {
@@ -220,7 +220,7 @@ country_event = {
 #			}
 #		}
 #	}
-#	
+#
 #	option = {
 #		name = fee_TUS.4.a
 #		add_dip_power = 25
@@ -236,9 +236,9 @@ country_event = {
 	title = fee_TUS.5.t
 	desc = fee_TUS.5.d
 	picture = CITY_DEVELOPMENT_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		OR = {
 			tag = TUS
@@ -250,7 +250,7 @@ country_event = {
 		}
 		is_at_war = no
 	}
-	
+
 	mean_time_to_happen = {
 		months = 180
 		modifier = {
@@ -258,7 +258,7 @@ country_event = {
 			has_idea_group = economic_ideas
 		}
 	}
-	
+
 	option = {
 		name = fee_TUS.5.a
 		ai_chance = {
@@ -310,9 +310,9 @@ country_event = {
 #	title = fee_TUS.6.t
 #	desc = fee_TUS.6.d
 #	picture = TRADEGOODS_eventPicture
-#	
+#
 #	fire_only_once = yes
-#	
+#
 #	trigger = {
 #		OR = {
 #			tag = TUS
@@ -329,7 +329,7 @@ country_event = {
 #	mean_time_to_happen = {
 #		months = 36
 #	}
-#	
+#
 #	option = {
 #		name = fee_TUS.6.a
 #		add_prestige = 5
@@ -354,9 +354,9 @@ country_event = {
 #	title = fee_TUS.7.t
 #	desc = fee_TUS.7.d
 #	picture = GREAT_BUILDING_eventPicture
-#	
+#
 #	fire_only_once = yes
-#	
+#
 #	trigger = {
 #		OR = {
 #			tag = TUS
@@ -368,7 +368,7 @@ country_event = {
 #		}
 #		owns = 116
 #	}
-#	
+#
 #	mean_time_to_happen = {
 #		months = 180
 #		modifier = {
@@ -380,7 +380,7 @@ country_event = {
 #			ADM = 4
 #		}
 #	}
-#	
+#
 #	option = {
 #		name = fee_TUS.7.a
 #		add_country_modifier = {
@@ -405,9 +405,9 @@ country_event = {
 	title = fee_TUS.8.t
 	desc = fee_TUS.8.d
 	picture = REFORM_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		OR = {
 			tag = TUS
@@ -419,7 +419,7 @@ country_event = {
 		}
 		religion = catholic
 	}
-	
+
 	mean_time_to_happen = {
 		months = 480
 		modifier = {
@@ -437,7 +437,7 @@ country_event = {
 			has_idea_group = religious_ideas
 		}
 	}
-	
+
 	option = {
 		name = fee_TUS.8.a
 		add_country_modifier = {
@@ -464,9 +464,9 @@ country_event = {
 	title = fee_TUS.10.t
 	desc = fee_TUS.10.d
 	picture = ADVISOR_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		OR = {
 			tag = TUS
@@ -477,9 +477,9 @@ country_event = {
 			is_year = 1790
 		}
 		is_at_war = no
-		
+
 	}
-	
+
 	mean_time_to_happen = {
 		months = 240
 		modifier = {
@@ -532,9 +532,9 @@ country_event = {
 	title = fee_TUS.12.t
 	desc = fee_TUS.12.d
 	picture = BIG_BOOK_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		OR = {
 			tag = TUS

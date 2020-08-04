@@ -6,17 +6,17 @@ country_event = {
 	title = cultures_expanded.1.t
 	desc = cultures_expanded.1.d
 	picture = CITY_VIEW_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = HUN
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		set_country_flag = CE_transylvanian_saxons
 	}
@@ -38,18 +38,18 @@ country_event = {
 	title = cultures_expanded.2.t
 	desc = cultures_expanded.2.d
 	picture = CITY_VIEW_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = HUN
 		has_country_flag = CE_transylvanian_saxons
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	immediate = {
 		set_country_flag = CE_szekelys
 	}
@@ -71,14 +71,14 @@ country_event = {
 	title = cultures_expanded.3.t
 	desc = cultures_expanded.3.d
 	picture = CITY_VIEW_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = HUN
 		has_country_flag = CE_szekelys
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
@@ -108,25 +108,23 @@ country_event = {
 	title = cultures_expanded.4.t
 	desc = cultures_expanded.4.d
 	picture = CITY_VIEW_eventPicture
-	
+
 	trigger = {
 		any_owned_province = {
-			limit = {
-				OR = {
-					province_id = 1828
-					province_id = 4699
-					province_id = 138
-					province_id = 1827
-					province_id = 3000
-					province_id = 4176
-				}
+			OR = {
+				province_id = 1828
+				province_id = 4699
+				province_id = 138
+				province_id = 1827
+				province_id = 3000
+				province_id = 4176
 			}
 			NOT = { has_province_modifier = CE_vlach_herders }
 		}
 		NOT = { has_country_flag = CE_vlach_herders_denied }
 		always = no
 	}
-	
+
 	mean_time_to_happen = {
 		days = 7300
 	}
@@ -153,7 +151,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = cultures_expanded.4.b
 		trigger = {
@@ -166,7 +164,7 @@ country_event = {
 		}
 		set_country_flag = CE_vlach_herders_denied
 	}
-	
+
 	option = {
 		name = cultures_expanded.4.c
 		add_estate_loyalty = {
@@ -182,9 +180,9 @@ country_event = {
 	title = cultures_expanded.5.t
 	desc = cultures_expanded.5.d
 	picture = CITY_VIEW_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = HUN
 		OR = {
@@ -192,7 +190,7 @@ country_event = {
 			NOT = { exists = WAL }
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 3650
 		modifier = {
@@ -218,7 +216,7 @@ country_event = {
 			change_culture = romanian
 		}
 	}
-	
+
 	option = {
 		name = cultures_expanded.5.b
 		add_estate_loyalty = {
@@ -252,14 +250,14 @@ country_event = {
 	title = cultures_expanded.6.t
 	desc = cultures_expanded.6.d
 	picture = CITY_VIEW_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = HUN
 		is_year = 1467
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 		modifier = {
@@ -281,7 +279,7 @@ country_event = {
 					}
 					spawn_rebels = {
 						size = 2
-						type = anti_tax_rebels  
+						type = anti_tax_rebels
 					}
 				}
 				random_owned_province = {
@@ -290,13 +288,13 @@ country_event = {
 					}
 					spawn_rebels = {
 						size = 1
-						type = anti_tax_rebels 
+						type = anti_tax_rebels
 					}
 				}
 				set_country_flag = CE_fought_union_of_nations
 			}
 			50 = {
-				country_event = { 
+				country_event = {
 					id = cultures_expanded.7
 					days = 30
 				}
@@ -317,13 +315,13 @@ country_event = {
 				# }
 				# spawn_rebels = {
 					# size = 1
-					# type = anti_tax_rebels 
+					# type = anti_tax_rebels
 					# friend = MOL
 				# }
 			# }
 		# }
 	}
-	
+
 	option = {
 		name = cultures_expanded.6.b
 		every_owned_province = {
@@ -345,9 +343,9 @@ country_event = {
 	title = cultures_expanded.7.t
 	desc = cultures_expanded.7.d
 	picture = CITY_VIEW_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = HUN
 		has_country_flag = CE_fought_union_of_nations
@@ -358,7 +356,7 @@ country_event = {
 		}
 	}
 }
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
@@ -375,7 +373,7 @@ country_event = {
 			}
 			spawn_rebels = {
 				size = 3
-				type = noble_rebels  
+				type = noble_rebels
 			}
 		}
 		random_owned_province = {
@@ -384,7 +382,7 @@ country_event = {
 			}
 			spawn_rebels = {
 				size = 2
-				type = noble_rebels 
+				type = noble_rebels
 			}
 		}
 		every_owned_province = {
@@ -394,7 +392,7 @@ country_event = {
 			remove_province_modifier = CE_union_of_nations
 		}
 	}
-	
+
 	option = {
 		name = cultures_expanded.7.b
 		every_owned_province = {
@@ -420,7 +418,7 @@ country_event = {
 		}
 	}
 	# after = {
-		# if = {			
+		# if = {
 			# NOT = {
 				# has_opinion = {
 					# who = MOL
@@ -430,11 +428,11 @@ country_event = {
 		# }
 		# add_casus_belli = {
 			# target = MOL
-			# type = cb_insult 
+			# type = cb_insult
 			# months = 9125
 		# }
 	# }
-			
+
 }
 
 country_event = {
@@ -442,9 +440,9 @@ country_event = {
 	title = cultures_expanded.8.t
 	desc = cultures_expanded.8.d
 	picture = ELECTION_REPUBLICAN_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = HUN
 		num_of_owned_provinces_with = {
@@ -455,7 +453,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
@@ -490,9 +488,9 @@ country_event = {
 	title = cultures_expanded.9.t
 	desc = cultures_expanded.9.d
 	picture = ELECTION_REPUBLICAN_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = HUN
 		NOT = {
@@ -507,7 +505,7 @@ country_event = {
 		offensive_war_with = BOH
 		dynasty = "Hunyadi"
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
@@ -527,9 +525,9 @@ country_event = {
 	title = cultures_expanded.10.t
 	desc = cultures_expanded.10.d
 	picture = ELECTION_REPUBLICAN_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = HUN
 		NOT = {
@@ -545,7 +543,7 @@ country_event = {
 		dynasty = "Hunyadi"
 		has_country_modifier = CE_royal_prerogative_tax
 	}
-	
+
 	mean_time_to_happen = {
 		days = 730
 	}
@@ -577,15 +575,15 @@ country_event = {
 	title = cultures_expanded.11.t
 	desc = cultures_expanded.11.d
 	picture = ELECTION_REPUBLICAN_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = HUN
 		has_country_modifier = CE_royal_prerogative_tax
 		has_country_modifier = CE_taxes_without_diet
 	}
-	
+
 	mean_time_to_happen = {
 		days = 365
 	}
@@ -624,7 +622,7 @@ country_event = {
 			}
 			spawn_rebels = {
 				size = 2
-				type = noble_rebels  
+				type = noble_rebels
 			}
 		}
 		random_owned_province = {
@@ -633,7 +631,7 @@ country_event = {
 			}
 			spawn_rebels = {
 				size = 3
-				type = noble_rebels 
+				type = noble_rebels
 			}
 		}
 	}
@@ -645,14 +643,9 @@ country_event = {
 	title = cultures_expanded.12.t
 	desc = cultures_expanded.12.d
 	picture = ELECTION_REPUBLICAN_eventPicture
-	
+
 	fire_only_once = yes
-	
-	is_triggered_only = yes	
-	
-	mean_time_to_happen = {
-		days = 1850
-	}
+	is_triggered_only = yes
 
 	option = {
 		name = cultures_expanded.12.a
@@ -665,7 +658,7 @@ country_event = {
 			every_owned_province = {
 				limit = {
 					OR = {
-						culture = schlesian 
+						culture = schlesian
 					}
 				}
 				add_province_modifier = {
@@ -674,7 +667,7 @@ country_event = {
 				}
 			}
 			add_estate_loyalty = {
-				estate = estate_nobles 
+				estate = estate_nobles
 				loyalty = -15
 			}
 		}
@@ -719,7 +712,7 @@ country_event = {
 	option = {
 		name = cultures_expanded.12.b
 		add_prestige = -15
-		country_event = { 
+		country_event = {
 			id = cultures_expanded.13
 			days = 730
 		}
@@ -732,10 +725,10 @@ country_event = {
 	title = cultures_expanded.13.t
 	desc = cultures_expanded.13.d
 	picture = ELECTION_REPUBLICAN_eventPicture
-	
+
 	fire_only_once = yes
-	
-	is_triggered_only = yes	
+
+	is_triggered_only = yes
 
 	option = {
 		name = cultures_expanded.13.a
@@ -748,7 +741,7 @@ country_event = {
 			every_owned_province = {
 				limit = {
 					OR = {
-						culture = schlesian 
+						culture = schlesian
 					}
 				}
 				add_province_modifier = {
@@ -812,14 +805,14 @@ country_event = {
 	title = cultures_expanded.14.t
 	desc = cultures_expanded.14.d
 	picture = ELECTION_REPUBLICAN_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		dynasty = "Hunyadi"
 		mil = 6
 		NOT = {
-			year = 1500
+			is_year = 1500
 		}
 	}
 
@@ -843,13 +836,13 @@ country_event = {
 	title = cultures_expanded.15.t
 	desc = cultures_expanded.15.d
 	picture = ELECTION_REPUBLICAN_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		dynasty = "Hunyadi"
 		NOT = {
-			year = 1500
+			is_year = 1500
 		}
 		silesia_area = {
 			type = all
@@ -869,7 +862,7 @@ country_event = {
 		name = cultures_expanded.15.a
 		add_casus_belli = {
 			target = HAB
-			type = cb_insult 
+			type = cb_insult
 			months = 9125
 		}
 		set_country_flag = "CE_to_vienna"
@@ -882,25 +875,25 @@ country_event = {
 	title = cultures_expanded.16.t
 	desc = cultures_expanded.16.d
 	picture = ELECTION_REPUBLICAN_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		134 = {
 			controller = {
 				tag = HUN
 			}
-			owner = { 
+			owner = {
 				tag = HAB
 			}
 		}
 		dynasty = "Hunyadi"
 		NOT = {
-			year = 1500
+			is_year = 1500
 		}
 		has_country_flag = CE_to_vienna
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}

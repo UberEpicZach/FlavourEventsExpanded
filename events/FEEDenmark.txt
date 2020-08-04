@@ -596,7 +596,7 @@ country_event = {
 			duration = -1
 		}
 		add_ruler_modifier = {
-			#Compatability with Lex Talionis	
+			#Compatability with Lex Talionis
 			name = is_usurper
 			duration = -1
 		}
@@ -1070,13 +1070,18 @@ country_event = {
 		months = 120
 		modifier = {
 			factor = 0.5
-			has_idea_group = aristocratic_ideas
+			has_idea_group = aristocracy_ideas
 		}
 	}
 	option = {
 		name = fee_DAN.24.a
 		add_stability = 1
-		set_estate_privilege = estate_nobles_supremacy_over_the_crown
+		if = {
+			limit = {
+				is_expanded_mod_active = { mod = governments }
+			}
+			set_estate_privilege = estate_nobles_supremacy_over_the_crown
+		}
 		set_estate_privilege = estate_nobles_right_of_counsel
 		change_estate_land_share = {
 			estate = estate_nobles
@@ -1270,7 +1275,9 @@ country_event = {
 		}
 		add_estate_influence_modifier = {
 			estate = estate_burghers
-			loyalty = 15
+			influence = 15
+			desc = EST_VAL_DENMARK_RENEWED_TRADE_INVESTEMENTS
+			duration = -1
 		}
 	}
 	option = {
