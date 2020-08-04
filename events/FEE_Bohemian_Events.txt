@@ -12,6 +12,7 @@ country_event = {
 	trigger = {
 		tag = HUN
 		has_country_flag = hun_has_had_matthias_corvinus_event
+		has_ruler = "Mátyás"
 		always = no
 	}
 
@@ -71,7 +72,7 @@ country_event = {
 	trigger = {
 		tag = BOH
 		NOT = {
-			has_ruler = "JirÃ­ z Podebrad"
+			has_ruler = "Jirí z Podebrad"
 		}
 		has_country_flag = FEE_Podebrad
 		always = no
