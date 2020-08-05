@@ -9,7 +9,9 @@
  heir_education.1.c.tt: "Heir will be decently taught, they will gain the basic life skills needed to rule and be taught a few specialities"
  heir_education.1.e: "My child needs hands-on lifeskills to effectively rule."
  heir_education.1.e.tt: "Heir will be taught from life-experience and occasionally advisors, this may be an cheaper option which has the chance of being great or bad"
-
+ heir_education.1.f: "Our heir is a natural Genius, he has no need for Education!"
+ heir_education.1.f.tt: "As our heir is at the max stat, it would be best to let not to waste the time and money."
+ neglected_heir_education: "Heir Neglected"
 
 
  heir_education.2.t: "The Artist's Canvas"
@@ -59,19 +61,19 @@
 
  heir_education.11.t: "Heir's Excellent Education has Finished"
  heir_education.11.d: "After a decade of learning and studying from the best tutors money could find, $HEIR$ has finally finished their education in one of the most prestigious academies in $CAPITAL_CITY$. Despite learning calligraphy from the finest $CULTURE$ writers and taught etiquette by a famed governess, its still very unknown if $HEIR$ has learned much or anything at all, and we pray to the heavens that all the funds didn't go down the drain..."
- heir_education.11.a: "Let's see what you've learn."
+ heir_education.11.a: "Let's see what you've learned."
 
  heir_education.12.t: "Heir's Good Education has Finished"
  heir_education.12.d: "After a decade of learning and studying from our most experienced educators, $HEIR$ has finally finished their education by graduating from a small yet well-known school in $CAPITAL_CITY$. Despite being able to talk, read and write fluently with special commendation from several teachers, its still very unknown if $HEIR$ has learned much or anything at all, and we pray to the heavens that all the funds didn't go down the drain..."
- heir_education.12.a: "Let's see what you've learn."
+ heir_education.12.a: "Let's see what you've learned."
 
  heir_education.13.t: "Heir's Average Education has Finished"
  heir_education.13.d: "After a decade of learning and studying from a homeschooled curriculum, $HEIR$ has finally finished their education with their humble tutor in his home at $CAPITAL_CITY$. Despite only taught by a tutor with adequate expertise, $HEIR$ have learned much about our realm through his own experiences, its still very unknown if $HEIR$ has learned much or anything at all, and we pray to the heavens that all the funds didn't go down the drain..."
- heir_education.13.a: "Let's see what you've learn."
+ heir_education.13.a: "Let's see what you've learned."
 
  heir_education.14.t: "Heir's Lack of Education has Finished"
  heir_education.14.d: "After a decade of learning and studying from arbitrary experiences and often first-hand accounts, $HEIR$ has finally finished their education scuttering and interacting with the various classes and people all over $CAPITAL_CITY$. Although our heir received no formal education and little tutoring throughout his young life, $HEIR$ have learned much by his own means, prodding his nose into others' business most of the time but its still very unknown if $HEIR$ has learned much or anything at all, and we pray to the heavens that all the funds didn't go down the drain..."
- heir_education.14.a: "Let's see what you've learn."
+ heir_education.14.a: "Let's see what you've learned."
 
  heir_education.101.t: "Respected Scholar"
  heir_education.101.d: "Throughout the years of their youth, our heir has become a respected scholar. $HEIR$ has shown great interest in the arts, sciences and scripture since a very young age and has applied this greatly in his education, scoring exceptionally high-marks in examinations and winning numerous awards for $HEIR_ADJ$ cunningness and wit. Considered an excellent pupil by the teachers, $HEIR$ has done well throughout his education and has balanced the use of the pen and the sword, all while learning the intricacies of bureaucracy and beuaty of the arts. Our education has made $HEIR$ into a well-rounded heir fit for the throne."

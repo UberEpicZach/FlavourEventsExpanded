@@ -20,7 +20,7 @@ country_event = {
 		tag = TVE
 		}
 		NOT = {
-			has_country_modifier = hee_NOV_veche
+			has_country_modifier = fee_NOV_veche
 		}
 		NOT = {
 			adm_tech = 16
@@ -29,11 +29,11 @@ country_event = {
    option = {
         name = fee_rst.1.a
 		add_country_modifier = {
-		name = hee_NOV_veche_ADM
+		name = fee_NOV_veche_ADM
 		duration = 3650
 		}
 		add_country_modifier = {
-			name = hee_NOV_veche
+			name = fee_NOV_veche
 			duration = 3650
 			hidden = yes
 		}
@@ -41,11 +41,11 @@ country_event = {
 option = {
         name = fee_rst.1.b
 		add_country_modifier = {
-		name = hee_NOV_veche_DIP
+		name = fee_NOV_veche_DIP
 		duration = 3650
 		}
 		add_country_modifier = {
-			name = hee_NOV_veche
+			name = fee_NOV_veche
 			duration = 3650
 			hidden = yes
 		}
@@ -53,11 +53,11 @@ option = {
 option = {
         name = fee_rst.1.c
 		add_country_modifier = {
-		name = hee_NOV_veche_MIL
+		name = fee_NOV_veche_MIL
 		duration = 3650
 		}
 		add_country_modifier = {
-			name = hee_NOV_veche
+			name = fee_NOV_veche
 			duration = 3650
 			hidden = yes
 		}
@@ -65,11 +65,11 @@ option = {
 option = {
         name = fee_rst.1.e
 		add_country_modifier = {
-		name = hee_NOV_veche_NOT
+		name = fee_NOV_veche_NOT
 		duration = 3650
 		}
 		add_country_modifier = {
-			name = hee_NOV_veche
+			name = fee_NOV_veche
 			duration = 3650
 			hidden = yes
 		}

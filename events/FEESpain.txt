@@ -5,9 +5,9 @@ namespace = fee_SPA
 # Pedro Alvarez de Toledo
 
 country_event = {
-	id = hee_SPA.1
-	title = hee_SPA.1.t
-	desc = hee_SPA.1.d
+	id = fee_SPA.1
+	title = fee_SPA.1.t
+	desc = fee_SPA.1.d
 	picture = ADVISOR_eventPicture
 
 	fire_only_once = yes
@@ -29,14 +29,14 @@ country_event = {
 
 	# His work in naples makes the crown proud.
 	option = {
-		name = hee_SPA.1.a
+		name = fee_SPA.1.a
 		121 = { add_base_tax = 1 }
 		121 = { add_base_production = 1 }
 	}
 
 	# His talent should be used in other parts of our country.
 	option = {
-		name = hee_SPA.1.b
+		name = fee_SPA.1.b
 		add_adm_power = 50
 		add_dip_power = 25
 	}

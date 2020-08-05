@@ -42,7 +42,7 @@ country_event = {
 		add_mil_power = 30
 		522 = {
 			add_province_modifier = {
-				name = hee_red_fort
+				name = fee_red_fort
 				duration = -1
 			}
 		}
@@ -91,7 +91,7 @@ country_event = {
 		}
 		add_dip_power = 50
 		add_country_modifier = {
-			name = hee_hindu_integration
+			name = fee_hindu_integration
 			duration = 36500
 		}
 	}
@@ -102,7 +102,7 @@ country_event = {
 			factor = 10
 		}
 		add_country_modifier = {
-			name = hee_hindu_conversion_policy
+			name = fee_hindu_conversion_policy
 			duration = 730
 		}
 	}
@@ -130,7 +130,7 @@ country_event = {
 		}
 		any_subject_country = {
 			NOT = {
-				has_country_modifier = hee_paid_MUG_tribute
+				has_country_modifier = fee_paid_MUG_tribute
 			}
 		}
 	}
@@ -158,7 +158,7 @@ country_event = {
 				modifier = fee_MUG_tribute
 			}
 			add_country_modifier = {
-				name = hee_paid_MUG_tribute
+				name = fee_paid_MUG_tribute
 				duration = 3650
 				hidden = yes
 			}

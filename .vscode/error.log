@@ -1,0 +1,1100 @@
+[modifier.cpp:1119]: unknown modifier 'accepted_culture_threshold' in file common/event_modifiers/01_fee_event_modifiers.txt
+[modifier.cpp:1119]: unknown modifier 'legitimacy_equivalent' in file common/event_modifiers/02_fee_ruler_trait_modifiers.txt
+[modifier.cpp:3399]: The image for 'unrest_catholic_provinces_opposite' does not exist as a picture!
+[trigger.cpp:596]: Unknown trigger-type name in events/CE_Brandenburg_Expanded.txt line : 808
+[persistent.cpp:53]: Error: "Unexpected token: name, near line: 808
+" in file: "events/CE_Brandenburg_Expanded.txt" near line: 808
+[effect.cpp:2876]: Unknown effect-type capital in events/CE_Succession_Crisis_Expanded.txt line : 882
+[persistent.cpp:53]: Error: "Unexpected token: capital, near line: 882
+" in file: "events/CE_Succession_Crisis_Expanded.txt" near line: 886
+[effect.cpp:2876]: Unknown effect-type capital in events/CE_Succession_Crisis_Expanded.txt line : 951
+[persistent.cpp:53]: Error: "Unexpected token: capital, near line: 951
+" in file: "events/CE_Succession_Crisis_Expanded.txt" near line: 955
+[effect.cpp:2876]: Unknown effect-type capital in events/CE_Succession_Crisis_Expanded.txt line : 1010
+[persistent.cpp:53]: Error: "Unexpected token: capital, near line: 1010
+" in file: "events/CE_Succession_Crisis_Expanded.txt" near line: 1014
+[event.cpp:436]: Error: "ai_chance" in file: "events/CE_Succession_Crisis_Expanded.txt" near line: 1030
+[event.cpp:436]: Error: "factor" in file: "events/CE_Succession_Crisis_Expanded.txt" near line: 1031
+[eventmanager.cpp:206]: Corrupt Event Table Entry - after in events/CE_Succession_Crisis_Expanded.txtline: 1034
+[eventmanager.cpp:206]: Corrupt Event Table Entry - hidden_effect in events/CE_Succession_Crisis_Expanded.txtline: 1035
+[eventmanager.cpp:206]: Corrupt Event Table Entry - every_country in events/CE_Succession_Crisis_Expanded.txtline: 1036
+[eventmanager.cpp:206]: Corrupt Event Table Entry - clr_country_flag in events/CE_Succession_Crisis_Expanded.txtline: 1037
+[eventmanager.cpp:206]: Corrupt Event Table Entry - clr_country_flag in events/CE_Succession_Crisis_Expanded.txtline: 1038
+[eventmanager.cpp:206]: Corrupt Event Table Entry - clr_country_flag in events/CE_Succession_Crisis_Expanded.txtline: 1039
+[eventmanager.cpp:206]: Corrupt Event Table Entry - clr_country_flag in events/CE_Succession_Crisis_Expanded.txtline: 1040
+[eventmanager.cpp:206]: Corrupt Event Table Entry - clr_country_flag in events/CE_Succession_Crisis_Expanded.txtline: 1041
+[eventmanager.cpp:206]: Corrupt Event Table Entry - clr_country_flag in events/CE_Succession_Crisis_Expanded.txtline: 1042
+[eventmanager.cpp:206]: Corrupt Event Table Entry - clr_country_flag in events/CE_Succession_Crisis_Expanded.txtline: 1043
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_Succession_Crisis_Expanded.txtline: 1045
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_Succession_Crisis_Expanded.txtline: 1045
+[eventmanager.cpp:206]: Corrupt Event Table Entry - clr_province_flag in events/CE_Succession_Crisis_Expanded.txtline: 1046
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_Succession_Crisis_Expanded.txtline: 1048
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_Succession_Crisis_Expanded.txtline: 1048
+[eventmanager.cpp:206]: Corrupt Event Table Entry - clear_global_event_target in events/CE_Succession_Crisis_Expanded.txtline: 1049
+[eventmanager.cpp:206]: Corrupt Event Table Entry - clear_global_event_target in events/CE_Succession_Crisis_Expanded.txtline: 1050
+[eventmanager.cpp:206]: Corrupt Event Table Entry - clear_global_event_target in events/CE_Succession_Crisis_Expanded.txtline: 1051
+[eventmanager.cpp:206]: Corrupt Event Table Entry - clear_global_event_target in events/CE_Succession_Crisis_Expanded.txtline: 1052
+[eventmanager.cpp:206]: Corrupt Event Table Entry - clear_global_event_target in events/CE_Succession_Crisis_Expanded.txtline: 1053
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_Succession_Crisis_Expanded.txtline: 1055
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_Succession_Crisis_Expanded.txtline: 1062
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_Succession_Crisis_Expanded.txtline: 1062
+[eventmanager.cpp:206]: Corrupt Event Table Entry - id in events/CE_Succession_Crisis_Expanded.txtline: 1063
+[eventmanager.cpp:206]: Corrupt Event Table Entry - title in events/CE_Succession_Crisis_Expanded.txtline: 1064
+[eventmanager.cpp:206]: Corrupt Event Table Entry - desc in events/CE_Succession_Crisis_Expanded.txtline: 1065
+[eventmanager.cpp:206]: Corrupt Event Table Entry - picture in events/CE_Succession_Crisis_Expanded.txtline: 1066
+[eventmanager.cpp:206]: Corrupt Event Table Entry - major in events/CE_Succession_Crisis_Expanded.txtline: 1067
+[eventmanager.cpp:206]: Corrupt Event Table Entry - major_trigger in events/CE_Succession_Crisis_Expanded.txtline: 1068
+[eventmanager.cpp:206]: Corrupt Event Table Entry - is_part_of_hre in events/CE_Succession_Crisis_Expanded.txtline: 1069
+[eventmanager.cpp:206]: Corrupt Event Table Entry - any_neighbor_country in events/CE_Succession_Crisis_Expanded.txtline: 1070
+[eventmanager.cpp:206]: Corrupt Event Table Entry - is_part_of_hre in events/CE_Succession_Crisis_Expanded.txtline: 1071
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_Succession_Crisis_Expanded.txtline: 1073
+[eventmanager.cpp:206]: Corrupt Event Table Entry - fire_only_once in events/CE_Succession_Crisis_Expanded.txtline: 1075
+[eventmanager.cpp:206]: Corrupt Event Table Entry - is_triggered_only in events/CE_Succession_Crisis_Expanded.txtline: 1077
+[eventmanager.cpp:206]: Corrupt Event Table Entry - option in events/CE_Succession_Crisis_Expanded.txtline: 1079
+[eventmanager.cpp:206]: Corrupt Event Table Entry - name in events/CE_Succession_Crisis_Expanded.txtline: 1080
+[eventmanager.cpp:206]: Corrupt Event Table Entry - PAL in events/CE_Succession_Crisis_Expanded.txtline: 1084
+[event.cpp:436]: Error: "days" in file: "events/CE_Succession_Crisis_Expanded.txt" near line: 1087
+[eventmanager.cpp:156]: Event #1600029 (succession_crisis_expanded.29) is missing a title in events/CE_Succession_Crisis_Expanded.txt
+[eventmanager.cpp:159]: Event #1600029 (succession_crisis_expanded.29) is missing a desc in events/CE_Succession_Crisis_Expanded.txt
+[eventmanager.cpp:162]: Event #1600029 (succession_crisis_expanded.29) has no options in events/CE_Succession_Crisis_Expanded.txt
+[eventmanager.cpp:165]: Event #1600029 (succession_crisis_expanded.29) is missing picture in events/CE_Succession_Crisis_Expanded.txt
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_Succession_Crisis_Expanded.txtline: 1090
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_Succession_Crisis_Expanded.txtline: 1090
+[eventmanager.cpp:206]: Corrupt Event Table Entry - factor in events/CE_Succession_Crisis_Expanded.txtline: 1091
+[eventmanager.cpp:206]: Corrupt Event Table Entry - modifier in events/CE_Succession_Crisis_Expanded.txtline: 1092
+[eventmanager.cpp:206]: Corrupt Event Table Entry - factor in events/CE_Succession_Crisis_Expanded.txtline: 1093
+[eventmanager.cpp:206]: Corrupt Event Table Entry - OR in events/CE_Succession_Crisis_Expanded.txtline: 1094
+[eventmanager.cpp:206]: Corrupt Event Table Entry - BRA in events/CE_Succession_Crisis_Expanded.txtline: 1095
+[eventmanager.cpp:206]: Corrupt Event Table Entry - has_country_flag in events/CE_Succession_Crisis_Expanded.txtline: 1096
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_Succession_Crisis_Expanded.txtline: 1098
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_Succession_Crisis_Expanded.txtline: 1098
+[eventmanager.cpp:206]: Corrupt Event Table Entry - has_country_flag in events/CE_Succession_Crisis_Expanded.txtline: 1099
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_Succession_Crisis_Expanded.txtline: 1101
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_Succession_Crisis_Expanded.txtline: 1103
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_Succession_Crisis_Expanded.txtline: 1103
+[eventmanager.cpp:206]: Corrupt Event Table Entry - factor in events/CE_Succession_Crisis_Expanded.txtline: 1104
+[eventmanager.cpp:206]: Corrupt Event Table Entry - OR in events/CE_Succession_Crisis_Expanded.txtline: 1105
+[eventmanager.cpp:206]: Corrupt Event Table Entry - BRA in events/CE_Succession_Crisis_Expanded.txtline: 1106
+[eventmanager.cpp:206]: Corrupt Event Table Entry - army_size in events/CE_Succession_Crisis_Expanded.txtline: 1107
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_Succession_Crisis_Expanded.txtline: 1109
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_Succession_Crisis_Expanded.txtline: 1109
+[eventmanager.cpp:206]: Corrupt Event Table Entry - army_size in events/CE_Succession_Crisis_Expanded.txtline: 1110
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_Succession_Crisis_Expanded.txtline: 1112
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_Succession_Crisis_Expanded.txtline: 1114
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_Succession_Crisis_Expanded.txtline: 1114
+[eventmanager.cpp:206]: Corrupt Event Table Entry - factor in events/CE_Succession_Crisis_Expanded.txtline: 1115
+[eventmanager.cpp:206]: Corrupt Event Table Entry - OR in events/CE_Succession_Crisis_Expanded.txtline: 1116
+[eventmanager.cpp:206]: Corrupt Event Table Entry - BRA in events/CE_Succession_Crisis_Expanded.txtline: 1117
+[eventmanager.cpp:206]: Corrupt Event Table Entry - army_strength in events/CE_Succession_Crisis_Expanded.txtline: 1118
+[eventmanager.cpp:206]: Corrupt Event Table Entry - who in events/CE_Succession_Crisis_Expanded.txtline: 1119
+[eventmanager.cpp:206]: Corrupt Event Table Entry - value in events/CE_Succession_Crisis_Expanded.txtline: 1120
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_Succession_Crisis_Expanded.txtline: 1122
+[eventmanager.cpp:206]: Corrupt Event Table Entry - PRU in events/CE_Succession_Crisis_Expanded.txtline: 1123
+[eventmanager.cpp:206]: Corrupt Event Table Entry - army_strength in events/CE_Succession_Crisis_Expanded.txtline: 1124
+[eventmanager.cpp:206]: Corrupt Event Table Entry - who in events/CE_Succession_Crisis_Expanded.txtline: 1125
+[eventmanager.cpp:206]: Corrupt Event Table Entry - value in events/CE_Succession_Crisis_Expanded.txtline: 1126
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_Succession_Crisis_Expanded.txtline: 1128
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_Succession_Crisis_Expanded.txtline: 1130
+[eventmanager.cpp:206]: Corrupt Event Table Entry - modifier in events/CE_Succession_Crisis_Expanded.txtline: 1131
+[eventmanager.cpp:206]: Corrupt Event Table Entry - factor in events/CE_Succession_Crisis_Expanded.txtline: 1132
+[eventmanager.cpp:206]: Corrupt Event Table Entry - BRA in events/CE_Succession_Crisis_Expanded.txtline: 1133
+[eventmanager.cpp:206]: Corrupt Event Table Entry - diplomatic_reputation in events/CE_Succession_Crisis_Expanded.txtline: 1134
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_Succession_Crisis_Expanded.txtline: 1136
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_Succession_Crisis_Expanded.txtline: 1138
+[eventmanager.cpp:206]: Corrupt Event Table Entry - option in events/CE_Succession_Crisis_Expanded.txtline: 1139
+[eventmanager.cpp:206]: Corrupt Event Table Entry - name in events/CE_Succession_Crisis_Expanded.txtline: 1140
+[eventmanager.cpp:206]: Corrupt Event Table Entry - if in events/CE_Succession_Crisis_Expanded.txtline: 1144
+[eventmanager.cpp:206]: Corrupt Event Table Entry - limit in events/CE_Succession_Crisis_Expanded.txtline: 1145
+[eventmanager.cpp:206]: Corrupt Event Table Entry - exists in events/CE_Succession_Crisis_Expanded.txtline: 1146
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_Succession_Crisis_Expanded.txtline: 1148
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_Succession_Crisis_Expanded.txtline: 1148
+[event.cpp:436]: Error: "days" in file: "events/CE_Succession_Crisis_Expanded.txt" near line: 1151
+[eventmanager.cpp:156]: Event #1600030 (succession_crisis_expanded.30) is missing a title in events/CE_Succession_Crisis_Expanded.txt
+[eventmanager.cpp:159]: Event #1600030 (succession_crisis_expanded.30) is missing a desc in events/CE_Succession_Crisis_Expanded.txt
+[eventmanager.cpp:162]: Event #1600030 (succession_crisis_expanded.30) has no options in events/CE_Succession_Crisis_Expanded.txt
+[eventmanager.cpp:165]: Event #1600030 (succession_crisis_expanded.30) is missing picture in events/CE_Succession_Crisis_Expanded.txt
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_Succession_Crisis_Expanded.txtline: 1154
+[eventmanager.cpp:206]: Corrupt Event Table Entry - else in events/CE_Succession_Crisis_Expanded.txtline: 1155
+[eventmanager.cpp:206]: Corrupt Event Table Entry - PRU in events/CE_Succession_Crisis_Expanded.txtline: 1156
+[id.cpp:75]: Failed to create id 1600030 53. Already exists in game.
+[event.cpp:351]: Failed to create CID for event succession_crisis_expanded.30 (duplicate id?)
+[event.cpp:436]: Error: "days" in file: "events/CE_Succession_Crisis_Expanded.txt" near line: 1159
+[eventmanager.cpp:156]: Event #0 (succession_crisis_expanded.30) is missing a title in events/CE_Succession_Crisis_Expanded.txt
+[eventmanager.cpp:159]: Event #0 (succession_crisis_expanded.30) is missing a desc in events/CE_Succession_Crisis_Expanded.txt
+[eventmanager.cpp:162]: Event #0 (succession_crisis_expanded.30) has no options in events/CE_Succession_Crisis_Expanded.txt
+[eventmanager.cpp:165]: Event #0 (succession_crisis_expanded.30) is missing picture in events/CE_Succession_Crisis_Expanded.txt
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_Succession_Crisis_Expanded.txtline: 1162
+[eventmanager.cpp:206]: Corrupt Event Table Entry - ai_chance in events/CE_Succession_Crisis_Expanded.txtline: 1163
+[eventmanager.cpp:206]: Corrupt Event Table Entry - factor in events/CE_Succession_Crisis_Expanded.txtline: 1164
+[eventmanager.cpp:206]: Corrupt Event Table Entry - modifier in events/CE_Succession_Crisis_Expanded.txtline: 1165
+[eventmanager.cpp:206]: Corrupt Event Table Entry - factor in events/CE_Succession_Crisis_Expanded.txtline: 1166
+[eventmanager.cpp:206]: Corrupt Event Table Entry - PAL in events/CE_Succession_Crisis_Expanded.txtline: 1167
+[eventmanager.cpp:206]: Corrupt Event Table Entry - has_country_flag in events/CE_Succession_Crisis_Expanded.txtline: 1168
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_Succession_Crisis_Expanded.txtline: 1170
+[eventmanager.cpp:206]: Corrupt Event Table Entry - modifier in events/CE_Succession_Crisis_Expanded.txtline: 1171
+[eventmanager.cpp:206]: Corrupt Event Table Entry - factor in events/CE_Succession_Crisis_Expanded.txtline: 1172
+[eventmanager.cpp:206]: Corrupt Event Table Entry - PAL in events/CE_Succession_Crisis_Expanded.txtline: 1173
+[eventmanager.cpp:206]: Corrupt Event Table Entry - OR in events/CE_Succession_Crisis_Expanded.txtline: 1174
+[eventmanager.cpp:206]: Corrupt Event Table Entry - army_size in events/CE_Succession_Crisis_Expanded.txtline: 1175
+[eventmanager.cpp:206]: Corrupt Event Table Entry - army_size in events/CE_Succession_Crisis_Expanded.txtline: 1176
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_Succession_Crisis_Expanded.txtline: 1178
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_Succession_Crisis_Expanded.txtline: 1180
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_Succession_Crisis_Expanded.txtline: 1180
+[eventmanager.cpp:206]: Corrupt Event Table Entry - factor in events/CE_Succession_Crisis_Expanded.txtline: 1181
+[eventmanager.cpp:206]: Corrupt Event Table Entry - PAL in events/CE_Succession_Crisis_Expanded.txtline: 1182
+[eventmanager.cpp:206]: Corrupt Event Table Entry - OR in events/CE_Succession_Crisis_Expanded.txtline: 1183
+[eventmanager.cpp:206]: Corrupt Event Table Entry - army_strength in events/CE_Succession_Crisis_Expanded.txtline: 1184
+[eventmanager.cpp:206]: Corrupt Event Table Entry - who in events/CE_Succession_Crisis_Expanded.txtline: 1185
+[eventmanager.cpp:206]: Corrupt Event Table Entry - value in events/CE_Succession_Crisis_Expanded.txtline: 1186
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_Succession_Crisis_Expanded.txtline: 1188
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_Succession_Crisis_Expanded.txtline: 1188
+[eventmanager.cpp:206]: Corrupt Event Table Entry - who in events/CE_Succession_Crisis_Expanded.txtline: 1189
+[eventmanager.cpp:206]: Corrupt Event Table Entry - value in events/CE_Succession_Crisis_Expanded.txtline: 1190
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_Succession_Crisis_Expanded.txtline: 1192
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_Succession_Crisis_Expanded.txtline: 1194
+[eventmanager.cpp:206]: Corrupt Event Table Entry - modifier in events/CE_Succession_Crisis_Expanded.txtline: 1195
+[eventmanager.cpp:206]: Corrupt Event Table Entry - factor in events/CE_Succession_Crisis_Expanded.txtline: 1196
+[eventmanager.cpp:206]: Corrupt Event Table Entry - PAL in events/CE_Succession_Crisis_Expanded.txtline: 1197
+[eventmanager.cpp:206]: Corrupt Event Table Entry - OR in events/CE_Succession_Crisis_Expanded.txtline: 1198
+[eventmanager.cpp:206]: Corrupt Event Table Entry - diplomatic_reputation in events/CE_Succession_Crisis_Expanded.txtline: 1199
+[eventmanager.cpp:206]: Corrupt Event Table Entry - diplomatic_reputation in events/CE_Succession_Crisis_Expanded.txtline: 1200
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_Succession_Crisis_Expanded.txtline: 1202
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_Succession_Crisis_Expanded.txtline: 1205
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_Succession_Crisis_Expanded.txtline: 1207
+[id.cpp:75]: Failed to create id 1600029 53. Already exists in game.
+[event.cpp:351]: Failed to create CID for event succession_crisis_expanded.29 (duplicate id?)
+[id.cpp:75]: Failed to create id 1600030 53. Already exists in game.
+[event.cpp:351]: Failed to create CID for event succession_crisis_expanded.30 (duplicate id?)
+[event.cpp:436]: Error: "`" in file: "events/CE_asbach_expanded.txt" near line: 25
+[event.cpp:436]: Error: "=" in file: "events/CE_asbach_expanded.txt" near line: 25
+[event.cpp:436]: Error: "days" in file: "events/CE_asbach_expanded.txt" near line: 26
+[eventmanager.cpp:162]: Event #1700001 (CE_ansbach_expanded.1) has no options in events/CE_asbach_expanded.txt
+[eventmanager.cpp:206]: Corrupt Event Table Entry - option in events/CE_asbach_expanded.txtline: 29
+[eventmanager.cpp:206]: Corrupt Event Table Entry - name in events/CE_asbach_expanded.txtline: 30
+[eventmanager.cpp:206]: Corrupt Event Table Entry - custom_tooltip in events/CE_asbach_expanded.txtline: 31
+[eventmanager.cpp:206]: Corrupt Event Table Entry - set_country_flag in events/CE_asbach_expanded.txtline: 32
+[eventmanager.cpp:206]: Corrupt Event Table Entry - set_ruler_flag in events/CE_asbach_expanded.txtline: 33
+[eventmanager.cpp:206]: Corrupt Event Table Entry - ai_chance in events/CE_asbach_expanded.txtline: 34
+[eventmanager.cpp:206]: Corrupt Event Table Entry - factor in events/CE_asbach_expanded.txtline: 35
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 37
+[eventmanager.cpp:206]: Corrupt Event Table Entry - option in events/CE_asbach_expanded.txtline: 38
+[eventmanager.cpp:206]: Corrupt Event Table Entry - name in events/CE_asbach_expanded.txtline: 39
+[eventmanager.cpp:206]: Corrupt Event Table Entry - add_prestige in events/CE_asbach_expanded.txtline: 40
+[eventmanager.cpp:206]: Corrupt Event Table Entry - ai_chance in events/CE_asbach_expanded.txtline: 41
+[eventmanager.cpp:206]: Corrupt Event Table Entry - factor in events/CE_asbach_expanded.txtline: 42
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 44
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 47
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 47
+[eventmanager.cpp:206]: Corrupt Event Table Entry - id in events/CE_asbach_expanded.txtline: 48
+[eventmanager.cpp:206]: Corrupt Event Table Entry - title in events/CE_asbach_expanded.txtline: 49
+[eventmanager.cpp:206]: Corrupt Event Table Entry - desc in events/CE_asbach_expanded.txtline: 50
+[eventmanager.cpp:206]: Corrupt Event Table Entry - picture in events/CE_asbach_expanded.txtline: 51
+[eventmanager.cpp:206]: Corrupt Event Table Entry - fire_only_once in events/CE_asbach_expanded.txtline: 53
+[eventmanager.cpp:206]: Corrupt Event Table Entry - trigger in events/CE_asbach_expanded.txtline: 55
+[eventmanager.cpp:206]: Corrupt Event Table Entry - has_ruler_flag in events/CE_asbach_expanded.txtline: 56
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 59
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 59
+[eventmanager.cpp:206]: Corrupt Event Table Entry - days in events/CE_asbach_expanded.txtline: 60
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 63
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 63
+[eventmanager.cpp:206]: Corrupt Event Table Entry - name in events/CE_asbach_expanded.txtline: 64
+[eventmanager.cpp:206]: Corrupt Event Table Entry - add_treasury in events/CE_asbach_expanded.txtline: 65
+[eventmanager.cpp:206]: Corrupt Event Table Entry - emperor in events/CE_asbach_expanded.txtline: 66
+[event.cpp:436]: Error: "days" in file: "events/CE_asbach_expanded.txt" near line: 69
+[eventmanager.cpp:156]: Event #1700003 (CE_ansbach_expanded.3) is missing a title in events/CE_asbach_expanded.txt
+[eventmanager.cpp:159]: Event #1700003 (CE_ansbach_expanded.3) is missing a desc in events/CE_asbach_expanded.txt
+[eventmanager.cpp:162]: Event #1700003 (CE_ansbach_expanded.3) has no options in events/CE_asbach_expanded.txt
+[eventmanager.cpp:165]: Event #1700003 (CE_ansbach_expanded.3) is missing picture in events/CE_asbach_expanded.txt
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 72
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 72
+[eventmanager.cpp:206]: Corrupt Event Table Entry - factor in events/CE_asbach_expanded.txtline: 73
+[eventmanager.cpp:206]: Corrupt Event Table Entry - modifier in events/CE_asbach_expanded.txtline: 74
+[eventmanager.cpp:206]: Corrupt Event Table Entry - factor in events/CE_asbach_expanded.txtline: 75
+[eventmanager.cpp:206]: Corrupt Event Table Entry - NOT in events/CE_asbach_expanded.txtline: 76
+[eventmanager.cpp:206]: Corrupt Event Table Entry - num_of_loans in events/CE_asbach_expanded.txtline: 77
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 79
+[eventmanager.cpp:206]: Corrupt Event Table Entry - modifier in events/CE_asbach_expanded.txtline: 80
+[eventmanager.cpp:206]: Corrupt Event Table Entry - factor in events/CE_asbach_expanded.txtline: 81
+[eventmanager.cpp:206]: Corrupt Event Table Entry - treasury in events/CE_asbach_expanded.txtline: 82
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 84
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 84
+[eventmanager.cpp:206]: Corrupt Event Table Entry - factor in events/CE_asbach_expanded.txtline: 85
+[eventmanager.cpp:206]: Corrupt Event Table Entry - OR in events/CE_asbach_expanded.txtline: 86
+[eventmanager.cpp:206]: Corrupt Event Table Entry - BRA in events/CE_asbach_expanded.txtline: 87
+[eventmanager.cpp:206]: Corrupt Event Table Entry - DIP in events/CE_asbach_expanded.txtline: 88
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 90
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 90
+[eventmanager.cpp:206]: Corrupt Event Table Entry - DIP in events/CE_asbach_expanded.txtline: 91
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 93
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 95
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 97
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 97
+[eventmanager.cpp:206]: Corrupt Event Table Entry - name in events/CE_asbach_expanded.txtline: 98
+[eventmanager.cpp:206]: Corrupt Event Table Entry - add_country_modifier in events/CE_asbach_expanded.txtline: 99
+[eventmanager.cpp:206]: Corrupt Event Table Entry - name in events/CE_asbach_expanded.txtline: 100
+[eventmanager.cpp:206]: Corrupt Event Table Entry - duration in events/CE_asbach_expanded.txtline: 101
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 103
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 103
+[eventmanager.cpp:206]: Corrupt Event Table Entry - factor in events/CE_asbach_expanded.txtline: 104
+[eventmanager.cpp:206]: Corrupt Event Table Entry - modifier in events/CE_asbach_expanded.txtline: 105
+[eventmanager.cpp:206]: Corrupt Event Table Entry - factor in events/CE_asbach_expanded.txtline: 106
+[eventmanager.cpp:206]: Corrupt Event Table Entry - treasury in events/CE_asbach_expanded.txtline: 107
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 109
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 111
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 111
+[eventmanager.cpp:206]: Corrupt Event Table Entry - name in events/CE_asbach_expanded.txtline: 112
+[eventmanager.cpp:206]: Corrupt Event Table Entry - add_prestige in events/CE_asbach_expanded.txtline: 113
+[eventmanager.cpp:206]: Corrupt Event Table Entry - ai_chance in events/CE_asbach_expanded.txtline: 114
+[eventmanager.cpp:206]: Corrupt Event Table Entry - factor in events/CE_asbach_expanded.txtline: 115
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 117
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 120
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 120
+[eventmanager.cpp:206]: Corrupt Event Table Entry - id in events/CE_asbach_expanded.txtline: 121
+[eventmanager.cpp:206]: Corrupt Event Table Entry - title in events/CE_asbach_expanded.txtline: 122
+[eventmanager.cpp:206]: Corrupt Event Table Entry - desc in events/CE_asbach_expanded.txtline: 123
+[eventmanager.cpp:206]: Corrupt Event Table Entry - picture in events/CE_asbach_expanded.txtline: 124
+[eventmanager.cpp:206]: Corrupt Event Table Entry - is_triggered_only in events/CE_asbach_expanded.txtline: 126
+[eventmanager.cpp:206]: Corrupt Event Table Entry - option in events/CE_asbach_expanded.txtline: 128
+[eventmanager.cpp:206]: Corrupt Event Table Entry - name in events/CE_asbach_expanded.txtline: 129
+[eventmanager.cpp:206]: Corrupt Event Table Entry - NUM in events/CE_asbach_expanded.txtline: 130
+[event.cpp:436]: Error: "days" in file: "events/CE_asbach_expanded.txt" near line: 133
+[eventmanager.cpp:156]: Event #1700004 (CE_ansbach_expanded.4) is missing a title in events/CE_asbach_expanded.txt
+[eventmanager.cpp:159]: Event #1700004 (CE_ansbach_expanded.4) is missing a desc in events/CE_asbach_expanded.txt
+[eventmanager.cpp:162]: Event #1700004 (CE_ansbach_expanded.4) has no options in events/CE_asbach_expanded.txt
+[eventmanager.cpp:165]: Event #1700004 (CE_ansbach_expanded.4) is missing picture in events/CE_asbach_expanded.txt
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 136
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 136
+[eventmanager.cpp:206]: Corrupt Event Table Entry - ai_chance in events/CE_asbach_expanded.txtline: 137
+[eventmanager.cpp:206]: Corrupt Event Table Entry - factor in events/CE_asbach_expanded.txtline: 138
+[eventmanager.cpp:206]: Corrupt Event Table Entry - modifier in events/CE_asbach_expanded.txtline: 139
+[eventmanager.cpp:206]: Corrupt Event Table Entry - factor in events/CE_asbach_expanded.txtline: 140
+[eventmanager.cpp:206]: Corrupt Event Table Entry - emperor in events/CE_asbach_expanded.txtline: 141
+[eventmanager.cpp:206]: Corrupt Event Table Entry - OR in events/CE_asbach_expanded.txtline: 142
+[eventmanager.cpp:206]: Corrupt Event Table Entry - has_opinion in events/CE_asbach_expanded.txtline: 143
+[eventmanager.cpp:206]: Corrupt Event Table Entry - who in events/CE_asbach_expanded.txtline: 144
+[eventmanager.cpp:206]: Corrupt Event Table Entry - value in events/CE_asbach_expanded.txtline: 145
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 147
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 147
+[eventmanager.cpp:206]: Corrupt Event Table Entry - who in events/CE_asbach_expanded.txtline: 148
+[eventmanager.cpp:206]: Corrupt Event Table Entry - value in events/CE_asbach_expanded.txtline: 149
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 151
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 153
+[eventmanager.cpp:206]: Corrupt Event Table Entry - modifier in events/CE_asbach_expanded.txtline: 154
+[eventmanager.cpp:206]: Corrupt Event Table Entry - factor in events/CE_asbach_expanded.txtline: 155
+[eventmanager.cpp:206]: Corrupt Event Table Entry - OR in events/CE_asbach_expanded.txtline: 156
+[eventmanager.cpp:206]: Corrupt Event Table Entry - BRA in events/CE_asbach_expanded.txtline: 157
+[eventmanager.cpp:206]: Corrupt Event Table Entry - DIP in events/CE_asbach_expanded.txtline: 158
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 160
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 160
+[eventmanager.cpp:206]: Corrupt Event Table Entry - DIP in events/CE_asbach_expanded.txtline: 161
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 163
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 165
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 167
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 167
+[eventmanager.cpp:206]: Corrupt Event Table Entry - name in events/CE_asbach_expanded.txtline: 168
+[eventmanager.cpp:206]: Corrupt Event Table Entry - add_treasury in events/CE_asbach_expanded.txtline: 169
+[eventmanager.cpp:206]: Corrupt Event Table Entry - random_country in events/CE_asbach_expanded.txtline: 170
+[eventmanager.cpp:206]: Corrupt Event Table Entry - limit in events/CE_asbach_expanded.txtline: 171
+[eventmanager.cpp:206]: Corrupt Event Table Entry - has_country_flag in events/CE_asbach_expanded.txtline: 172
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 174
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 174
+[eventmanager.cpp:206]: Corrupt Event Table Entry - id in events/CE_asbach_expanded.txtline: 175
+[eventmanager.cpp:206]: Corrupt Event Table Entry - days in events/CE_asbach_expanded.txtline: 176
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 178
+[eventmanager.cpp:206]: Corrupt Event Table Entry - ai_chance in events/CE_asbach_expanded.txtline: 179
+[eventmanager.cpp:206]: Corrupt Event Table Entry - factor in events/CE_asbach_expanded.txtline: 180
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 182
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 185
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 185
+[eventmanager.cpp:206]: Corrupt Event Table Entry - id in events/CE_asbach_expanded.txtline: 186
+[eventmanager.cpp:206]: Corrupt Event Table Entry - title in events/CE_asbach_expanded.txtline: 187
+[eventmanager.cpp:206]: Corrupt Event Table Entry - desc in events/CE_asbach_expanded.txtline: 188
+[eventmanager.cpp:206]: Corrupt Event Table Entry - picture in events/CE_asbach_expanded.txtline: 189
+[eventmanager.cpp:206]: Corrupt Event Table Entry - is_triggered_only in events/CE_asbach_expanded.txtline: 191
+[eventmanager.cpp:206]: Corrupt Event Table Entry - option in events/CE_asbach_expanded.txtline: 193
+[eventmanager.cpp:206]: Corrupt Event Table Entry - name in events/CE_asbach_expanded.txtline: 194
+[eventmanager.cpp:206]: Corrupt Event Table Entry - random_country in events/CE_asbach_expanded.txtline: 195
+[eventmanager.cpp:206]: Corrupt Event Table Entry - limit in events/CE_asbach_expanded.txtline: 196
+[eventmanager.cpp:206]: Corrupt Event Table Entry - has_country_flag in events/CE_asbach_expanded.txtline: 197
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 199
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 199
+[eventmanager.cpp:206]: Corrupt Event Table Entry - id in events/CE_asbach_expanded.txtline: 200
+[eventmanager.cpp:206]: Corrupt Event Table Entry - days in events/CE_asbach_expanded.txtline: 201
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 203
+[eventmanager.cpp:206]: Corrupt Event Table Entry - ai_chance in events/CE_asbach_expanded.txtline: 204
+[eventmanager.cpp:206]: Corrupt Event Table Entry - factor in events/CE_asbach_expanded.txtline: 205
+[eventmanager.cpp:206]: Corrupt Event Table Entry - modifier in events/CE_asbach_expanded.txtline: 206
+[eventmanager.cpp:206]: Corrupt Event Table Entry - factor in events/CE_asbach_expanded.txtline: 207
+[eventmanager.cpp:206]: Corrupt Event Table Entry - ANS in events/CE_asbach_expanded.txtline: 208
+[eventmanager.cpp:206]: Corrupt Event Table Entry - army_size in events/CE_asbach_expanded.txtline: 209
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 211
+[eventmanager.cpp:206]: Corrupt Event Table Entry - modifier in events/CE_asbach_expanded.txtline: 212
+[eventmanager.cpp:206]: Corrupt Event Table Entry - factor in events/CE_asbach_expanded.txtline: 213
+[eventmanager.cpp:206]: Corrupt Event Table Entry - NUM in events/CE_asbach_expanded.txtline: 214
+[eventmanager.cpp:206]: Corrupt Event Table Entry - OR in events/CE_asbach_expanded.txtline: 215
+[eventmanager.cpp:206]: Corrupt Event Table Entry - has_opinion in events/CE_asbach_expanded.txtline: 216
+[eventmanager.cpp:206]: Corrupt Event Table Entry - who in events/CE_asbach_expanded.txtline: 217
+[eventmanager.cpp:206]: Corrupt Event Table Entry - value in events/CE_asbach_expanded.txtline: 218
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 220
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 220
+[eventmanager.cpp:206]: Corrupt Event Table Entry - who in events/CE_asbach_expanded.txtline: 221
+[eventmanager.cpp:206]: Corrupt Event Table Entry - value in events/CE_asbach_expanded.txtline: 222
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 224
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 226
+[eventmanager.cpp:206]: Corrupt Event Table Entry - modifier in events/CE_asbach_expanded.txtline: 227
+[eventmanager.cpp:206]: Corrupt Event Table Entry - factor in events/CE_asbach_expanded.txtline: 228
+[eventmanager.cpp:206]: Corrupt Event Table Entry - OR in events/CE_asbach_expanded.txtline: 229
+[eventmanager.cpp:206]: Corrupt Event Table Entry - BRA in events/CE_asbach_expanded.txtline: 230
+[eventmanager.cpp:206]: Corrupt Event Table Entry - DIP in events/CE_asbach_expanded.txtline: 231
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 233
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 233
+[eventmanager.cpp:206]: Corrupt Event Table Entry - DIP in events/CE_asbach_expanded.txtline: 234
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 236
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 238
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 240
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 240
+[eventmanager.cpp:206]: Corrupt Event Table Entry - name in events/CE_asbach_expanded.txtline: 241
+[eventmanager.cpp:206]: Corrupt Event Table Entry - random_country in events/CE_asbach_expanded.txtline: 242
+[eventmanager.cpp:206]: Corrupt Event Table Entry - limit in events/CE_asbach_expanded.txtline: 243
+[eventmanager.cpp:206]: Corrupt Event Table Entry - has_country_flag in events/CE_asbach_expanded.txtline: 244
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 246
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 246
+[eventmanager.cpp:206]: Corrupt Event Table Entry - id in events/CE_asbach_expanded.txtline: 247
+[eventmanager.cpp:206]: Corrupt Event Table Entry - days in events/CE_asbach_expanded.txtline: 248
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 250
+[eventmanager.cpp:206]: Corrupt Event Table Entry - ai_chance in events/CE_asbach_expanded.txtline: 251
+[eventmanager.cpp:206]: Corrupt Event Table Entry - factor in events/CE_asbach_expanded.txtline: 252
+[eventmanager.cpp:206]: Corrupt Event Table Entry - modifier in events/CE_asbach_expanded.txtline: 253
+[eventmanager.cpp:206]: Corrupt Event Table Entry - factor in events/CE_asbach_expanded.txtline: 254
+[eventmanager.cpp:206]: Corrupt Event Table Entry - ANS in events/CE_asbach_expanded.txtline: 255
+[eventmanager.cpp:206]: Corrupt Event Table Entry - army_size in events/CE_asbach_expanded.txtline: 256
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 258
+[eventmanager.cpp:206]: Corrupt Event Table Entry - modifier in events/CE_asbach_expanded.txtline: 259
+[eventmanager.cpp:206]: Corrupt Event Table Entry - factor in events/CE_asbach_expanded.txtline: 260
+[eventmanager.cpp:206]: Corrupt Event Table Entry - NUM in events/CE_asbach_expanded.txtline: 261
+[eventmanager.cpp:206]: Corrupt Event Table Entry - OR in events/CE_asbach_expanded.txtline: 262
+[eventmanager.cpp:206]: Corrupt Event Table Entry - has_opinion in events/CE_asbach_expanded.txtline: 263
+[eventmanager.cpp:206]: Corrupt Event Table Entry - who in events/CE_asbach_expanded.txtline: 264
+[eventmanager.cpp:206]: Corrupt Event Table Entry - value in events/CE_asbach_expanded.txtline: 265
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 267
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 267
+[eventmanager.cpp:206]: Corrupt Event Table Entry - who in events/CE_asbach_expanded.txtline: 268
+[eventmanager.cpp:206]: Corrupt Event Table Entry - value in events/CE_asbach_expanded.txtline: 269
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 271
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 273
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 275
+[eventmanager.cpp:206]: Corrupt Event Table Entry - option in events/CE_asbach_expanded.txtline: 276
+[eventmanager.cpp:206]: Corrupt Event Table Entry - name in events/CE_asbach_expanded.txtline: 277
+[eventmanager.cpp:206]: Corrupt Event Table Entry - random_country in events/CE_asbach_expanded.txtline: 278
+[eventmanager.cpp:206]: Corrupt Event Table Entry - limit in events/CE_asbach_expanded.txtline: 279
+[eventmanager.cpp:206]: Corrupt Event Table Entry - has_country_flag in events/CE_asbach_expanded.txtline: 280
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 282
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 282
+[eventmanager.cpp:206]: Corrupt Event Table Entry - id in events/CE_asbach_expanded.txtline: 283
+[eventmanager.cpp:206]: Corrupt Event Table Entry - days in events/CE_asbach_expanded.txtline: 284
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 286
+[eventmanager.cpp:206]: Corrupt Event Table Entry - ai_chance in events/CE_asbach_expanded.txtline: 287
+[eventmanager.cpp:206]: Corrupt Event Table Entry - factor in events/CE_asbach_expanded.txtline: 288
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 290
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 293
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 293
+[eventmanager.cpp:206]: Corrupt Event Table Entry - id in events/CE_asbach_expanded.txtline: 294
+[eventmanager.cpp:206]: Corrupt Event Table Entry - title in events/CE_asbach_expanded.txtline: 295
+[eventmanager.cpp:206]: Corrupt Event Table Entry - desc in events/CE_asbach_expanded.txtline: 296
+[eventmanager.cpp:206]: Corrupt Event Table Entry - picture in events/CE_asbach_expanded.txtline: 297
+[eventmanager.cpp:206]: Corrupt Event Table Entry - is_triggered_only in events/CE_asbach_expanded.txtline: 299
+[eventmanager.cpp:206]: Corrupt Event Table Entry - option in events/CE_asbach_expanded.txtline: 301
+[eventmanager.cpp:206]: Corrupt Event Table Entry - name in events/CE_asbach_expanded.txtline: 302
+[eventmanager.cpp:206]: Corrupt Event Table Entry - ANS in events/CE_asbach_expanded.txtline: 303
+[eventmanager.cpp:206]: Corrupt Event Table Entry - vassalize in events/CE_asbach_expanded.txtline: 304
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 306
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 306
+[eventmanager.cpp:206]: Corrupt Event Table Entry - factor in events/CE_asbach_expanded.txtline: 307
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 309
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 312
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 312
+[eventmanager.cpp:206]: Corrupt Event Table Entry - id in events/CE_asbach_expanded.txtline: 313
+[eventmanager.cpp:206]: Corrupt Event Table Entry - title in events/CE_asbach_expanded.txtline: 314
+[eventmanager.cpp:206]: Corrupt Event Table Entry - desc in events/CE_asbach_expanded.txtline: 315
+[eventmanager.cpp:206]: Corrupt Event Table Entry - picture in events/CE_asbach_expanded.txtline: 316
+[eventmanager.cpp:206]: Corrupt Event Table Entry - is_triggered_only in events/CE_asbach_expanded.txtline: 318
+[eventmanager.cpp:206]: Corrupt Event Table Entry - option in events/CE_asbach_expanded.txtline: 320
+[eventmanager.cpp:206]: Corrupt Event Table Entry - name in events/CE_asbach_expanded.txtline: 321
+[eventmanager.cpp:206]: Corrupt Event Table Entry - add_years_of_income in events/CE_asbach_expanded.txtline: 322
+[eventmanager.cpp:206]: Corrupt Event Table Entry - ANS in events/CE_asbach_expanded.txtline: 323
+[eventmanager.cpp:206]: Corrupt Event Table Entry - vassalize in events/CE_asbach_expanded.txtline: 324
+[eventmanager.cpp:206]: Corrupt Event Table Entry - add_country_modifier in events/CE_asbach_expanded.txtline: 325
+[eventmanager.cpp:206]: Corrupt Event Table Entry - name in events/CE_asbach_expanded.txtline: 326
+[eventmanager.cpp:206]: Corrupt Event Table Entry - duration in events/CE_asbach_expanded.txtline: 327
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 329
+[eventmanager.cpp:206]: Corrupt Event Table Entry - ai_chance in events/CE_asbach_expanded.txtline: 331
+[eventmanager.cpp:206]: Corrupt Event Table Entry - factor in events/CE_asbach_expanded.txtline: 332
+[eventmanager.cpp:206]: Corrupt Event Table Entry - modifier in events/CE_asbach_expanded.txtline: 333
+[eventmanager.cpp:206]: Corrupt Event Table Entry - factor in events/CE_asbach_expanded.txtline: 334
+[eventmanager.cpp:206]: Corrupt Event Table Entry - NOT in events/CE_asbach_expanded.txtline: 335
+[eventmanager.cpp:206]: Corrupt Event Table Entry - is_at_war in events/CE_asbach_expanded.txtline: 336
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 338
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 340
+[eventmanager.cpp:206]: Corrupt Event Table Entry - option in events/CE_asbach_expanded.txtline: 341
+[eventmanager.cpp:206]: Corrupt Event Table Entry - name in events/CE_asbach_expanded.txtline: 342
+[eventmanager.cpp:206]: Corrupt Event Table Entry - add_prestige in events/CE_asbach_expanded.txtline: 343
+[eventmanager.cpp:206]: Corrupt Event Table Entry - ai_chance in events/CE_asbach_expanded.txtline: 344
+[eventmanager.cpp:206]: Corrupt Event Table Entry - factor in events/CE_asbach_expanded.txtline: 345
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 347
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 350
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 350
+[eventmanager.cpp:206]: Corrupt Event Table Entry - id in events/CE_asbach_expanded.txtline: 351
+[eventmanager.cpp:206]: Corrupt Event Table Entry - title in events/CE_asbach_expanded.txtline: 352
+[eventmanager.cpp:206]: Corrupt Event Table Entry - desc in events/CE_asbach_expanded.txtline: 353
+[eventmanager.cpp:206]: Corrupt Event Table Entry - picture in events/CE_asbach_expanded.txtline: 354
+[eventmanager.cpp:206]: Corrupt Event Table Entry - is_triggered_only in events/CE_asbach_expanded.txtline: 356
+[eventmanager.cpp:206]: Corrupt Event Table Entry - option in events/CE_asbach_expanded.txtline: 358
+[eventmanager.cpp:206]: Corrupt Event Table Entry - name in events/CE_asbach_expanded.txtline: 359
+[eventmanager.cpp:206]: Corrupt Event Table Entry - add_prestige in events/CE_asbach_expanded.txtline: 360
+[eventmanager.cpp:206]: Corrupt Event Table Entry - ai_chance in events/CE_asbach_expanded.txtline: 361
+[eventmanager.cpp:206]: Corrupt Event Table Entry - factor in events/CE_asbach_expanded.txtline: 362
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 364
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 367
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 367
+[eventmanager.cpp:206]: Corrupt Event Table Entry - id in events/CE_asbach_expanded.txtline: 368
+[eventmanager.cpp:206]: Corrupt Event Table Entry - title in events/CE_asbach_expanded.txtline: 369
+[eventmanager.cpp:206]: Corrupt Event Table Entry - desc in events/CE_asbach_expanded.txtline: 370
+[eventmanager.cpp:206]: Corrupt Event Table Entry - picture in events/CE_asbach_expanded.txtline: 371
+[eventmanager.cpp:206]: Corrupt Event Table Entry - fire_only_once in events/CE_asbach_expanded.txtline: 373
+[eventmanager.cpp:206]: Corrupt Event Table Entry - trigger in events/CE_asbach_expanded.txtline: 375
+[eventmanager.cpp:206]: Corrupt Event Table Entry - has_country_flag in events/CE_asbach_expanded.txtline: 376
+[eventmanager.cpp:206]: Corrupt Event Table Entry - NOT in events/CE_asbach_expanded.txtline: 377
+[eventmanager.cpp:206]: Corrupt Event Table Entry - has_ruler_flag in events/CE_asbach_expanded.txtline: 377
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 378
+[eventmanager.cpp:206]: Corrupt Event Table Entry - option in events/CE_asbach_expanded.txtline: 380
+[eventmanager.cpp:206]: Corrupt Event Table Entry - name in events/CE_asbach_expanded.txtline: 381
+[eventmanager.cpp:206]: Corrupt Event Table Entry - add_prestige in events/CE_asbach_expanded.txtline: 382
+[eventmanager.cpp:206]: Corrupt Event Table Entry - ai_chance in events/CE_asbach_expanded.txtline: 383
+[eventmanager.cpp:206]: Corrupt Event Table Entry - factor in events/CE_asbach_expanded.txtline: 384
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 386
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 389
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 389
+[eventmanager.cpp:206]: Corrupt Event Table Entry - id in events/CE_asbach_expanded.txtline: 390
+[eventmanager.cpp:206]: Corrupt Event Table Entry - title in events/CE_asbach_expanded.txtline: 391
+[eventmanager.cpp:206]: Corrupt Event Table Entry - desc in events/CE_asbach_expanded.txtline: 392
+[eventmanager.cpp:206]: Corrupt Event Table Entry - picture in events/CE_asbach_expanded.txtline: 393
+[eventmanager.cpp:206]: Corrupt Event Table Entry - fire_only_once in events/CE_asbach_expanded.txtline: 395
+[eventmanager.cpp:206]: Corrupt Event Table Entry - trigger in events/CE_asbach_expanded.txtline: 397
+[eventmanager.cpp:206]: Corrupt Event Table Entry - has_country_flag in events/CE_asbach_expanded.txtline: 398
+[eventmanager.cpp:206]: Corrupt Event Table Entry - has_ruler_flag in events/CE_asbach_expanded.txtline: 399
+[eventmanager.cpp:206]: Corrupt Event Table Entry - calc_true_if in events/CE_asbach_expanded.txtline: 400
+[eventmanager.cpp:206]: Corrupt Event Table Entry - all_province in events/CE_asbach_expanded.txtline: 401
+[eventmanager.cpp:206]: Corrupt Event Table Entry - culture in events/CE_asbach_expanded.txtline: 402
+[eventmanager.cpp:206]: Corrupt Event Table Entry - OR in events/CE_asbach_expanded.txtline: 403
+[eventmanager.cpp:206]: Corrupt Event Table Entry - owner in events/CE_asbach_expanded.txtline: 404
+[eventmanager.cpp:206]: Corrupt Event Table Entry - dynasty in events/CE_asbach_expanded.txtline: 405
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 407
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 407
+[eventmanager.cpp:206]: Corrupt Event Table Entry - overlord in events/CE_asbach_expanded.txtline: 408
+[eventmanager.cpp:206]: Corrupt Event Table Entry - dynasty in events/CE_asbach_expanded.txtline: 409
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 411
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 413
+[eventmanager.cpp:206]: Corrupt Event Table Entry - amount in events/CE_asbach_expanded.txtline: 414
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 416
+[eventmanager.cpp:206]: Corrupt Event Table Entry - mean_time_to_happen in events/CE_asbach_expanded.txtline: 418
+[eventmanager.cpp:206]: Corrupt Event Table Entry - days in events/CE_asbach_expanded.txtline: 419
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 422
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 422
+[eventmanager.cpp:206]: Corrupt Event Table Entry - name in events/CE_asbach_expanded.txtline: 423
+[eventmanager.cpp:206]: Corrupt Event Table Entry - clr_country_flag in events/CE_asbach_expanded.txtline: 424
+[eventmanager.cpp:206]: Corrupt Event Table Entry - every_province in events/CE_asbach_expanded.txtline: 425
+[eventmanager.cpp:206]: Corrupt Event Table Entry - limit in events/CE_asbach_expanded.txtline: 426
+[eventmanager.cpp:206]: Corrupt Event Table Entry - culture in events/CE_asbach_expanded.txtline: 427
+[eventmanager.cpp:206]: Corrupt Event Table Entry - OR in events/CE_asbach_expanded.txtline: 428
+[eventmanager.cpp:206]: Corrupt Event Table Entry - owner in events/CE_asbach_expanded.txtline: 429
+[eventmanager.cpp:206]: Corrupt Event Table Entry - dynasty in events/CE_asbach_expanded.txtline: 430
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 432
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 432
+[eventmanager.cpp:206]: Corrupt Event Table Entry - overlord in events/CE_asbach_expanded.txtline: 433
+[eventmanager.cpp:206]: Corrupt Event Table Entry - dynasty in events/CE_asbach_expanded.txtline: 434
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 436
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 438
+[eventmanager.cpp:206]: Corrupt Event Table Entry - cede_province in events/CE_asbach_expanded.txtline: 439
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 441
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 441
+[eventmanager.cpp:206]: Corrupt Event Table Entry - restore_country_name_effect in events/CE_asbach_expanded.txtline: 442
+[eventmanager.cpp:206]: Corrupt Event Table Entry - franconia_area in events/CE_asbach_expanded.txtline: 443
+[eventmanager.cpp:206]: Corrupt Event Table Entry - limit in events/CE_asbach_expanded.txtline: 444
+[eventmanager.cpp:206]: Corrupt Event Table Entry - NOT in events/CE_asbach_expanded.txtline: 445
+[eventmanager.cpp:206]: Corrupt Event Table Entry - owned_by in events/CE_asbach_expanded.txtline: 445
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 446
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 446
+[eventmanager.cpp:206]: Corrupt Event Table Entry - is_permanent_claim in events/CE_asbach_expanded.txtline: 446
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 447
+[eventmanager.cpp:206]: Corrupt Event Table Entry - add_permanent_claim in events/CE_asbach_expanded.txtline: 448
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 450
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 450
+[eventmanager.cpp:206]: Corrupt Event Table Entry - limit in events/CE_asbach_expanded.txtline: 451
+[eventmanager.cpp:206]: Corrupt Event Table Entry - NOT in events/CE_asbach_expanded.txtline: 452
+[eventmanager.cpp:206]: Corrupt Event Table Entry - owned_by in events/CE_asbach_expanded.txtline: 452
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 453
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 453
+[eventmanager.cpp:206]: Corrupt Event Table Entry - is_permanent_claim in events/CE_asbach_expanded.txtline: 453
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 454
+[eventmanager.cpp:206]: Corrupt Event Table Entry - add_permanent_claim in events/CE_asbach_expanded.txtline: 455
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 457
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 457
+[eventmanager.cpp:206]: Corrupt Event Table Entry - change_tag in events/CE_asbach_expanded.txtline: 458
+[eventmanager.cpp:206]: Corrupt Event Table Entry - set_country_flag in events/CE_asbach_expanded.txtline: 459
+[eventmanager.cpp:206]: Corrupt Event Table Entry - if in events/CE_asbach_expanded.txtline: 460
+[eventmanager.cpp:206]: Corrupt Event Table Entry - limit in events/CE_asbach_expanded.txtline: 461
+[eventmanager.cpp:206]: Corrupt Event Table Entry - is_playing_custom_nation in events/CE_asbach_expanded.txtline: 462
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 464
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 464
+[eventmanager.cpp:206]: Corrupt Event Table Entry - id in events/CE_asbach_expanded.txtline: 464
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 465
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 467
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 467
+[eventmanager.cpp:206]: Corrupt Event Table Entry - ai_chance in events/CE_asbach_expanded.txtline: 468
+[eventmanager.cpp:206]: Corrupt Event Table Entry - factor in events/CE_asbach_expanded.txtline: 469
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 471
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 474
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 474
+[eventmanager.cpp:206]: Corrupt Event Table Entry - id in events/CE_asbach_expanded.txtline: 475
+[eventmanager.cpp:206]: Corrupt Event Table Entry - title in events/CE_asbach_expanded.txtline: 476
+[eventmanager.cpp:206]: Corrupt Event Table Entry - desc in events/CE_asbach_expanded.txtline: 477
+[eventmanager.cpp:206]: Corrupt Event Table Entry - picture in events/CE_asbach_expanded.txtline: 478
+[eventmanager.cpp:206]: Corrupt Event Table Entry - fire_only_once in events/CE_asbach_expanded.txtline: 480
+[eventmanager.cpp:206]: Corrupt Event Table Entry - trigger in events/CE_asbach_expanded.txtline: 482
+[eventmanager.cpp:206]: Corrupt Event Table Entry - has_ruler_flag in events/CE_asbach_expanded.txtline: 483
+[eventmanager.cpp:206]: Corrupt Event Table Entry - OR in events/CE_asbach_expanded.txtline: 484
+[eventmanager.cpp:206]: Corrupt Event Table Entry - ANS in events/CE_asbach_expanded.txtline: 485
+[eventmanager.cpp:206]: Corrupt Event Table Entry - any_subject_country in events/CE_asbach_expanded.txtline: 486
+[eventmanager.cpp:206]: Corrupt Event Table Entry - tag in events/CE_asbach_expanded.txtline: 487
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 489
+[eventmanager.cpp:206]: Corrupt Event Table Entry - army_strength in events/CE_asbach_expanded.txtline: 490
+[eventmanager.cpp:206]: Corrupt Event Table Entry - who in events/CE_asbach_expanded.txtline: 491
+[eventmanager.cpp:206]: Corrupt Event Table Entry - value in events/CE_asbach_expanded.txtline: 492
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 494
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 497
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 497
+[eventmanager.cpp:206]: Corrupt Event Table Entry - days in events/CE_asbach_expanded.txtline: 498
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 501
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 501
+[eventmanager.cpp:206]: Corrupt Event Table Entry - name in events/CE_asbach_expanded.txtline: 502
+[eventmanager.cpp:206]: Corrupt Event Table Entry - WBG in events/CE_asbach_expanded.txtline: 503
+[event.cpp:436]: Error: "days" in file: "events/CE_asbach_expanded.txt" near line: 506
+[eventmanager.cpp:156]: Event #1700011 (CE_ansbach_expanded.11) is missing a title in events/CE_asbach_expanded.txt
+[eventmanager.cpp:159]: Event #1700011 (CE_ansbach_expanded.11) is missing a desc in events/CE_asbach_expanded.txt
+[eventmanager.cpp:162]: Event #1700011 (CE_ansbach_expanded.11) has no options in events/CE_asbach_expanded.txt
+[eventmanager.cpp:165]: Event #1700011 (CE_ansbach_expanded.11) is missing picture in events/CE_asbach_expanded.txt
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 509
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 509
+[eventmanager.cpp:206]: Corrupt Event Table Entry - factor in events/CE_asbach_expanded.txtline: 510
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 512
+[eventmanager.cpp:206]: Corrupt Event Table Entry - option in events/CE_asbach_expanded.txtline: 513
+[eventmanager.cpp:206]: Corrupt Event Table Entry - name in events/CE_asbach_expanded.txtline: 514
+[eventmanager.cpp:206]: Corrupt Event Table Entry - add_prestige in events/CE_asbach_expanded.txtline: 515
+[eventmanager.cpp:206]: Corrupt Event Table Entry - ai_chance in events/CE_asbach_expanded.txtline: 516
+[eventmanager.cpp:206]: Corrupt Event Table Entry - factor in events/CE_asbach_expanded.txtline: 517
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 519
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 522
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 522
+[eventmanager.cpp:206]: Corrupt Event Table Entry - id in events/CE_asbach_expanded.txtline: 523
+[eventmanager.cpp:206]: Corrupt Event Table Entry - title in events/CE_asbach_expanded.txtline: 524
+[eventmanager.cpp:206]: Corrupt Event Table Entry - desc in events/CE_asbach_expanded.txtline: 525
+[eventmanager.cpp:206]: Corrupt Event Table Entry - picture in events/CE_asbach_expanded.txtline: 526
+[eventmanager.cpp:206]: Corrupt Event Table Entry - is_triggered_only in events/CE_asbach_expanded.txtline: 528
+[eventmanager.cpp:206]: Corrupt Event Table Entry - option in events/CE_asbach_expanded.txtline: 530
+[eventmanager.cpp:206]: Corrupt Event Table Entry - name in events/CE_asbach_expanded.txtline: 531
+[eventmanager.cpp:206]: Corrupt Event Table Entry - random_country in events/CE_asbach_expanded.txtline: 532
+[eventmanager.cpp:206]: Corrupt Event Table Entry - limit in events/CE_asbach_expanded.txtline: 533
+[eventmanager.cpp:206]: Corrupt Event Table Entry - has_country_flag in events/CE_asbach_expanded.txtline: 534
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 536
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 536
+[eventmanager.cpp:206]: Corrupt Event Table Entry - id in events/CE_asbach_expanded.txtline: 537
+[eventmanager.cpp:206]: Corrupt Event Table Entry - days in events/CE_asbach_expanded.txtline: 538
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 540
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 540
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 542
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 542
+[eventmanager.cpp:206]: Corrupt Event Table Entry - factor in events/CE_asbach_expanded.txtline: 543
+[eventmanager.cpp:206]: Corrupt Event Table Entry - modifier in events/CE_asbach_expanded.txtline: 544
+[eventmanager.cpp:206]: Corrupt Event Table Entry - factor in events/CE_asbach_expanded.txtline: 545
+[eventmanager.cpp:206]: Corrupt Event Table Entry - ANS in events/CE_asbach_expanded.txtline: 546
+[eventmanager.cpp:206]: Corrupt Event Table Entry - overlord in events/CE_asbach_expanded.txtline: 547
+[eventmanager.cpp:206]: Corrupt Event Table Entry - tag in events/CE_asbach_expanded.txtline: 548
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 550
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 552
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 552
+[eventmanager.cpp:206]: Corrupt Event Table Entry - factor in events/CE_asbach_expanded.txtline: 553
+[eventmanager.cpp:206]: Corrupt Event Table Entry - ANS in events/CE_asbach_expanded.txtline: 554
+[eventmanager.cpp:206]: Corrupt Event Table Entry - army_size in events/CE_asbach_expanded.txtline: 555
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 557
+[eventmanager.cpp:206]: Corrupt Event Table Entry - modifier in events/CE_asbach_expanded.txtline: 558
+[eventmanager.cpp:206]: Corrupt Event Table Entry - factor in events/CE_asbach_expanded.txtline: 559
+[eventmanager.cpp:206]: Corrupt Event Table Entry - WBG in events/CE_asbach_expanded.txtline: 560
+[eventmanager.cpp:206]: Corrupt Event Table Entry - is_at_war in events/CE_asbach_expanded.txtline: 561
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 563
+[eventmanager.cpp:206]: Corrupt Event Table Entry - modifier in events/CE_asbach_expanded.txtline: 564
+[eventmanager.cpp:206]: Corrupt Event Table Entry - factor in events/CE_asbach_expanded.txtline: 565
+[eventmanager.cpp:206]: Corrupt Event Table Entry - OR in events/CE_asbach_expanded.txtline: 566
+[eventmanager.cpp:206]: Corrupt Event Table Entry - is_in_war in events/CE_asbach_expanded.txtline: 567
+[eventmanager.cpp:206]: Corrupt Event Table Entry - defenders in events/CE_asbach_expanded.txtline: 568
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 570
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 570
+[eventmanager.cpp:206]: Corrupt Event Table Entry - attackers in events/CE_asbach_expanded.txtline: 571
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 573
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 575
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 575
+[eventmanager.cpp:206]: Corrupt Event Table Entry - factor in events/CE_asbach_expanded.txtline: 576
+[eventmanager.cpp:206]: Corrupt Event Table Entry - OR in events/CE_asbach_expanded.txtline: 577
+[eventmanager.cpp:206]: Corrupt Event Table Entry - BRA in events/CE_asbach_expanded.txtline: 578
+[eventmanager.cpp:206]: Corrupt Event Table Entry - DIP in events/CE_asbach_expanded.txtline: 579
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 581
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 581
+[eventmanager.cpp:206]: Corrupt Event Table Entry - DIP in events/CE_asbach_expanded.txtline: 582
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 584
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 586
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 588
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 588
+[eventmanager.cpp:206]: Corrupt Event Table Entry - name in events/CE_asbach_expanded.txtline: 589
+[eventmanager.cpp:206]: Corrupt Event Table Entry - random_country in events/CE_asbach_expanded.txtline: 590
+[eventmanager.cpp:206]: Corrupt Event Table Entry - limit in events/CE_asbach_expanded.txtline: 591
+[eventmanager.cpp:206]: Corrupt Event Table Entry - has_country_flag in events/CE_asbach_expanded.txtline: 592
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 594
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 594
+[eventmanager.cpp:206]: Corrupt Event Table Entry - id in events/CE_asbach_expanded.txtline: 595
+[eventmanager.cpp:206]: Corrupt Event Table Entry - days in events/CE_asbach_expanded.txtline: 596
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 598
+[eventmanager.cpp:206]: Corrupt Event Table Entry - ai_chance in events/CE_asbach_expanded.txtline: 599
+[eventmanager.cpp:206]: Corrupt Event Table Entry - factor in events/CE_asbach_expanded.txtline: 600
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 602
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 605
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 605
+[eventmanager.cpp:206]: Corrupt Event Table Entry - id in events/CE_asbach_expanded.txtline: 606
+[eventmanager.cpp:206]: Corrupt Event Table Entry - title in events/CE_asbach_expanded.txtline: 607
+[eventmanager.cpp:206]: Corrupt Event Table Entry - desc in events/CE_asbach_expanded.txtline: 608
+[eventmanager.cpp:206]: Corrupt Event Table Entry - picture in events/CE_asbach_expanded.txtline: 609
+[eventmanager.cpp:206]: Corrupt Event Table Entry - is_triggered_only in events/CE_asbach_expanded.txtline: 611
+[eventmanager.cpp:206]: Corrupt Event Table Entry - option in events/CE_asbach_expanded.txtline: 613
+[eventmanager.cpp:206]: Corrupt Event Table Entry - name in events/CE_asbach_expanded.txtline: 614
+[eventmanager.cpp:206]: Corrupt Event Table Entry - every_province in events/CE_asbach_expanded.txtline: 615
+[eventmanager.cpp:206]: Corrupt Event Table Entry - limit in events/CE_asbach_expanded.txtline: 616
+[eventmanager.cpp:206]: Corrupt Event Table Entry - culture in events/CE_asbach_expanded.txtline: 617
+[eventmanager.cpp:206]: Corrupt Event Table Entry - OR in events/CE_asbach_expanded.txtline: 618
+[eventmanager.cpp:206]: Corrupt Event Table Entry - owner in events/CE_asbach_expanded.txtline: 619
+[eventmanager.cpp:206]: Corrupt Event Table Entry - tag in events/CE_asbach_expanded.txtline: 620
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 622
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 622
+[eventmanager.cpp:206]: Corrupt Event Table Entry - overlord in events/CE_asbach_expanded.txtline: 623
+[eventmanager.cpp:206]: Corrupt Event Table Entry - tag in events/CE_asbach_expanded.txtline: 624
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 626
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 628
+[eventmanager.cpp:206]: Corrupt Event Table Entry - add_permanent_claim in events/CE_asbach_expanded.txtline: 629
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 631
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 631
+[eventmanager.cpp:206]: Corrupt Event Table Entry - name in events/CE_asbach_expanded.txtline: 632
+[eventmanager.cpp:206]: Corrupt Event Table Entry - duration in events/CE_asbach_expanded.txtline: 633
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 635
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 635
+[eventmanager.cpp:206]: Corrupt Event Table Entry - factor in events/CE_asbach_expanded.txtline: 636
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 638
+[eventmanager.cpp:206]: Corrupt Event Table Entry - option in events/CE_asbach_expanded.txtline: 639
+[eventmanager.cpp:206]: Corrupt Event Table Entry - name in events/CE_asbach_expanded.txtline: 640
+[eventmanager.cpp:206]: Corrupt Event Table Entry - add_prestige in events/CE_asbach_expanded.txtline: 641
+[eventmanager.cpp:206]: Corrupt Event Table Entry - ai_chance in events/CE_asbach_expanded.txtline: 642
+[eventmanager.cpp:206]: Corrupt Event Table Entry - factor in events/CE_asbach_expanded.txtline: 643
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 645
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 648
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 648
+[eventmanager.cpp:206]: Corrupt Event Table Entry - id in events/CE_asbach_expanded.txtline: 649
+[eventmanager.cpp:206]: Corrupt Event Table Entry - title in events/CE_asbach_expanded.txtline: 650
+[eventmanager.cpp:206]: Corrupt Event Table Entry - desc in events/CE_asbach_expanded.txtline: 651
+[eventmanager.cpp:206]: Corrupt Event Table Entry - picture in events/CE_asbach_expanded.txtline: 652
+[eventmanager.cpp:206]: Corrupt Event Table Entry - is_triggered_only in events/CE_asbach_expanded.txtline: 654
+[eventmanager.cpp:206]: Corrupt Event Table Entry - option in events/CE_asbach_expanded.txtline: 656
+[eventmanager.cpp:206]: Corrupt Event Table Entry - name in events/CE_asbach_expanded.txtline: 657
+[eventmanager.cpp:206]: Corrupt Event Table Entry - every_province in events/CE_asbach_expanded.txtline: 658
+[eventmanager.cpp:206]: Corrupt Event Table Entry - limit in events/CE_asbach_expanded.txtline: 659
+[eventmanager.cpp:206]: Corrupt Event Table Entry - culture in events/CE_asbach_expanded.txtline: 660
+[eventmanager.cpp:206]: Corrupt Event Table Entry - OR in events/CE_asbach_expanded.txtline: 661
+[eventmanager.cpp:206]: Corrupt Event Table Entry - owner in events/CE_asbach_expanded.txtline: 662
+[eventmanager.cpp:206]: Corrupt Event Table Entry - tag in events/CE_asbach_expanded.txtline: 663
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 665
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 665
+[eventmanager.cpp:206]: Corrupt Event Table Entry - overlord in events/CE_asbach_expanded.txtline: 666
+[eventmanager.cpp:206]: Corrupt Event Table Entry - tag in events/CE_asbach_expanded.txtline: 667
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 669
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 671
+[eventmanager.cpp:206]: Corrupt Event Table Entry - add_core in events/CE_asbach_expanded.txtline: 672
+[eventmanager.cpp:206]: Corrupt Event Table Entry - cede_province in events/CE_asbach_expanded.txtline: 673
+[eventmanager.cpp:206]: Corrupt Event Table Entry - add_province_modifier in events/CE_asbach_expanded.txtline: 674
+[eventmanager.cpp:206]: Corrupt Event Table Entry - name in events/CE_asbach_expanded.txtline: 675
+[eventmanager.cpp:206]: Corrupt Event Table Entry - duration in events/CE_asbach_expanded.txtline: 676
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 678
+[eventmanager.cpp:206]: Corrupt Event Table Entry - ai_chance in events/CE_asbach_expanded.txtline: 680
+[eventmanager.cpp:206]: Corrupt Event Table Entry - factor in events/CE_asbach_expanded.txtline: 681
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 683
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 686
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 686
+[eventmanager.cpp:206]: Corrupt Event Table Entry - id in events/CE_asbach_expanded.txtline: 687
+[eventmanager.cpp:206]: Corrupt Event Table Entry - title in events/CE_asbach_expanded.txtline: 688
+[eventmanager.cpp:206]: Corrupt Event Table Entry - desc in events/CE_asbach_expanded.txtline: 689
+[eventmanager.cpp:206]: Corrupt Event Table Entry - picture in events/CE_asbach_expanded.txtline: 690
+[eventmanager.cpp:206]: Corrupt Event Table Entry - fire_only_once in events/CE_asbach_expanded.txtline: 692
+[eventmanager.cpp:206]: Corrupt Event Table Entry - trigger in events/CE_asbach_expanded.txtline: 694
+[eventmanager.cpp:206]: Corrupt Event Table Entry - dynasty in events/CE_asbach_expanded.txtline: 695
+[eventmanager.cpp:206]: Corrupt Event Table Entry - OR in events/CE_asbach_expanded.txtline: 696
+[eventmanager.cpp:206]: Corrupt Event Table Entry - 66 in events/CE_asbach_expanded.txtline: 697
+[eventmanager.cpp:206]: Corrupt Event Table Entry - is_core in events/CE_asbach_expanded.txtline: 698
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 700
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 700
+[eventmanager.cpp:206]: Corrupt Event Table Entry - is_core in events/CE_asbach_expanded.txtline: 701
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 703
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 703
+[eventmanager.cpp:206]: Corrupt Event Table Entry - is_core in events/CE_asbach_expanded.txtline: 704
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 706
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 706
+[eventmanager.cpp:206]: Corrupt Event Table Entry - is_core in events/CE_asbach_expanded.txtline: 707
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 709
+[eventmanager.cpp:206]: Corrupt Event Table Entry - has_ruler_flag in events/CE_asbach_expanded.txtline: 710
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 713
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 713
+[eventmanager.cpp:206]: Corrupt Event Table Entry - name in events/CE_asbach_expanded.txtline: 714
+[eventmanager.cpp:206]: Corrupt Event Table Entry - add_legitimacy in events/CE_asbach_expanded.txtline: 715
+[eventmanager.cpp:206]: Corrupt Event Table Entry - 4716 in events/CE_asbach_expanded.txtline: 716
+[eventmanager.cpp:206]: Corrupt Event Table Entry - add_claim in events/CE_asbach_expanded.txtline: 717
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 719
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 719
+[eventmanager.cpp:206]: Corrupt Event Table Entry - factor in events/CE_asbach_expanded.txtline: 720
+[eventmanager.cpp:206]: Corrupt Event Table Entry - modifier in events/CE_asbach_expanded.txtline: 721
+[eventmanager.cpp:206]: Corrupt Event Table Entry - factor in events/CE_asbach_expanded.txtline: 722
+[eventmanager.cpp:206]: Corrupt Event Table Entry - tag in events/CE_asbach_expanded.txtline: 723
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 725
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 727
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 727
+[eventmanager.cpp:206]: Corrupt Event Table Entry - name in events/CE_asbach_expanded.txtline: 728
+[eventmanager.cpp:206]: Corrupt Event Table Entry - trigger in events/CE_asbach_expanded.txtline: 729
+[eventmanager.cpp:206]: Corrupt Event Table Entry - tag in events/CE_asbach_expanded.txtline: 730
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 732
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 732
+[eventmanager.cpp:206]: Corrupt Event Table Entry - 4716 in events/CE_asbach_expanded.txtline: 733
+[eventmanager.cpp:206]: Corrupt Event Table Entry - add_claim in events/CE_asbach_expanded.txtline: 734
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 736
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 736
+[eventmanager.cpp:206]: Corrupt Event Table Entry - factor in events/CE_asbach_expanded.txtline: 737
+[eventmanager.cpp:206]: Corrupt Event Table Entry - modifier in events/CE_asbach_expanded.txtline: 738
+[eventmanager.cpp:206]: Corrupt Event Table Entry - factor in events/CE_asbach_expanded.txtline: 739
+[eventmanager.cpp:206]: Corrupt Event Table Entry - tag in events/CE_asbach_expanded.txtline: 740
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 742
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 744
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 744
+[eventmanager.cpp:206]: Corrupt Event Table Entry - name in events/CE_asbach_expanded.txtline: 745
+[eventmanager.cpp:206]: Corrupt Event Table Entry - add_legitimacy in events/CE_asbach_expanded.txtline: 746
+[eventmanager.cpp:206]: Corrupt Event Table Entry - ai_chance in events/CE_asbach_expanded.txtline: 747
+[eventmanager.cpp:206]: Corrupt Event Table Entry - factor in events/CE_asbach_expanded.txtline: 748
+[eventmanager.cpp:206]: Corrupt Event Table Entry - modifier in events/CE_asbach_expanded.txtline: 749
+[eventmanager.cpp:206]: Corrupt Event Table Entry - factor in events/CE_asbach_expanded.txtline: 750
+[eventmanager.cpp:206]: Corrupt Event Table Entry - OR in events/CE_asbach_expanded.txtline: 751
+[eventmanager.cpp:206]: Corrupt Event Table Entry - BRA in events/CE_asbach_expanded.txtline: 752
+[eventmanager.cpp:206]: Corrupt Event Table Entry - DIP in events/CE_asbach_expanded.txtline: 753
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 755
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 755
+[eventmanager.cpp:206]: Corrupt Event Table Entry - DIP in events/CE_asbach_expanded.txtline: 756
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 758
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 760
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 760
+[eventmanager.cpp:206]: Corrupt Event Table Entry - factor in events/CE_asbach_expanded.txtline: 761
+[eventmanager.cpp:206]: Corrupt Event Table Entry - BRA in events/CE_asbach_expanded.txtline: 762
+[eventmanager.cpp:206]: Corrupt Event Table Entry - DIP in events/CE_asbach_expanded.txtline: 763
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 765
+[eventmanager.cpp:206]: Corrupt Event Table Entry - modifier in events/CE_asbach_expanded.txtline: 766
+[eventmanager.cpp:206]: Corrupt Event Table Entry - factor in events/CE_asbach_expanded.txtline: 767
+[eventmanager.cpp:206]: Corrupt Event Table Entry - NOT in events/CE_asbach_expanded.txtline: 768
+[eventmanager.cpp:206]: Corrupt Event Table Entry - DIP in events/CE_asbach_expanded.txtline: 769
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 771
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 773
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 776
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/CE_asbach_expanded.txtline: 776
+[eventmanager.cpp:206]: Corrupt Event Table Entry - id in events/CE_asbach_expanded.txtline: 777
+[eventmanager.cpp:206]: Corrupt Event Table Entry - title in events/CE_asbach_expanded.txtline: 778
+[eventmanager.cpp:206]: Corrupt Event Table Entry - desc in events/CE_asbach_expanded.txtline: 779
+[eventmanager.cpp:206]: Corrupt Event Table Entry - picture in events/CE_asbach_expanded.txtline: 780
+[eventmanager.cpp:206]: Corrupt Event Table Entry - is_triggered_only in events/CE_asbach_expanded.txtline: 782
+[eventmanager.cpp:206]: Corrupt Event Table Entry - option in events/CE_asbach_expanded.txtline: 784
+[eventmanager.cpp:206]: Corrupt Event Table Entry - name in events/CE_asbach_expanded.txtline: 785
+[eventmanager.cpp:206]: Corrupt Event Table Entry - define_ruler in events/CE_asbach_expanded.txtline: 786
+[eventmanager.cpp:206]: Corrupt Event Table Entry - dynasty in events/CE_asbach_expanded.txtline: 787
+[eventmanager.cpp:206]: Corrupt Event Table Entry - dip in events/CE_asbach_expanded.txtline: 788
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 790
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/CE_asbach_expanded.txtline: 791
+[trigger.cpp:596]: Unknown trigger-type limit in events/Cultures_Expanded.txt line : 113
+[persistent.cpp:53]: Error: "Unexpected token: limit, near line: 113
+" in file: "events/Cultures_Expanded.txt" near line: 122
+[eventmanager.cpp:169]: Event cultures_expanded.12.t (#3300012 (cultures_expanded.12)) is triggered only, but does not have a 1 base-factor in events/Cultures_Expanded.txt
+[trigger.cpp:596]: Unknown trigger-type year in events/Cultures_Expanded.txt line : 819
+[persistent.cpp:53]: Error: "Unexpected token: year, near line: 819
+" in file: "events/Cultures_Expanded.txt" near line: 819
+[trigger.cpp:596]: Unknown trigger-type year in events/Cultures_Expanded.txt line : 849
+[persistent.cpp:53]: Error: "Unexpected token: year, near line: 849
+" in file: "events/Cultures_Expanded.txt" near line: 849
+[trigger.cpp:596]: Unknown trigger-type year in events/Cultures_Expanded.txt line : 896
+[persistent.cpp:53]: Error: "Unexpected token: year, near line: 896
+" in file: "events/Cultures_Expanded.txt" near line: 896
+[persistent.cpp:53]: Error: "Unexpected token: add_piety, near line: 254
+" in file: "events/FEEAjuuraan.txt" near line: 254
+[persistent.cpp:53]: Error: "Unexpected token: add_prestige, near line: 255
+" in file: "events/FEEAjuuraan.txt" near line: 255
+[persistent.cpp:53]: Error: "Unexpected token: add_mil_power, near line: 256
+" in file: "events/FEEAjuuraan.txt" near line: 256
+[effect.cpp:2876]: Unknown effect-type option in events/FEEAjuuraan.txt line : 258
+[persistent.cpp:53]: Error: "Unexpected token: option, near line: 258
+" in file: "events/FEEAjuuraan.txt" near line: 267
+[effect.cpp:2876]: Unknown effect-type add_base_mil in events/FEEAntwerp.txt line : 120
+[persistent.cpp:53]: Error: "Unexpected token: add_base_mil, near line: 120
+" in file: "events/FEEAntwerp.txt" near line: 120
+[effect.cpp:2876]: Unknown effect-type add_base_mil in events/FEEAntwerp.txt line : 152
+[persistent.cpp:53]: Error: "Unexpected token: add_base_mil, near line: 152
+" in file: "events/FEEAntwerp.txt" near line: 152
+[trigger.cpp:596]: Unknown trigger-type hre_reform_level in events/FEEAustria.txt line : 22
+[persistent.cpp:53]: Error: "Unexpected token: hre_reform_level, near line: 22
+" in file: "events/FEEAustria.txt" near line: 22
+[trigger.cpp:596]: Unknown trigger-type has_dynasty in events/FEEBohemia.txt line : 44
+[persistent.cpp:53]: Error: "Unexpected token: has_dynasty, near line: 44
+" in file: "events/FEEBohemia.txt" near line: 44
+[persistent.cpp:53]: Error: "Unexpected token: add_country_modifier, near line: 28
+" in file: "events/FEEBritain_England.txt" near line: 31
+[trigger.cpp:596]: Unknown trigger-type limit in events/FEEBritain_England.txt line : 266
+[persistent.cpp:53]: Error: "Unexpected token: limit, near line: 266
+" in file: "events/FEEBritain_England.txt" near line: 268
+[trigger.cpp:596]: Unknown trigger-type value in events/FEEBritain_England.txt line : 270
+[persistent.cpp:53]: Error: "Unexpected token: value, near line: 270
+" in file: "events/FEEBritain_England.txt" near line: 270
+[eventmanager.cpp:165]: Event #5800013 (fee_gbr_eng.13) is missing picture in events/FEEBritain_England.txt
+[eventmanager.cpp:165]: Event #5800014 (fee_gbr_eng.14) is missing picture in events/FEEBritain_England.txt
+[persistent.cpp:53]: Error: "Unexpected token: =, near line: 911
+" in file: "events/FEEBritain_England.txt" near line: 911
+[trigger.cpp:596]: Unknown trigger-type remove_historical_rival in events/FEEBritain_England.txt line : 1016
+[persistent.cpp:53]: Error: "Unexpected token: remove_historical_rival, near line: 1016
+" in file: "events/FEEBritain_England.txt" near line: 1016
+[trigger.cpp:596]: Unknown trigger-type remove_historical_rival in events/FEEBritain_England.txt line : 1018
+[persistent.cpp:53]: Error: "Unexpected token: remove_historical_rival, near line: 1018
+" in file: "events/FEEBritain_England.txt" near line: 1018
+[eventmanager.cpp:156]: Event #6001001 (fee_plc_cr.1001) is missing a title in events/FEECommonwealth_CossackRevolts.txt
+[eventmanager.cpp:159]: Event #6001001 (fee_plc_cr.1001) is missing a desc in events/FEECommonwealth_CossackRevolts.txt
+[eventmanager.cpp:162]: Event #6001001 (fee_plc_cr.1001) has no options in events/FEECommonwealth_CossackRevolts.txt
+[eventmanager.cpp:165]: Event #6001001 (fee_plc_cr.1001) is missing picture in events/FEECommonwealth_CossackRevolts.txt
+[eventmanager.cpp:156]: Event #6001002 (fee_plc_cr.1002) is missing a title in events/FEECommonwealth_CossackRevolts.txt
+[eventmanager.cpp:159]: Event #6001002 (fee_plc_cr.1002) is missing a desc in events/FEECommonwealth_CossackRevolts.txt
+[eventmanager.cpp:162]: Event #6001002 (fee_plc_cr.1002) has no options in events/FEECommonwealth_CossackRevolts.txt
+[eventmanager.cpp:165]: Event #6001002 (fee_plc_cr.1002) is missing picture in events/FEECommonwealth_CossackRevolts.txt
+[eventmanager.cpp:156]: Event #6001003 (fee_plc_cr.1003) is missing a title in events/FEECommonwealth_CossackRevolts.txt
+[eventmanager.cpp:159]: Event #6001003 (fee_plc_cr.1003) is missing a desc in events/FEECommonwealth_CossackRevolts.txt
+[eventmanager.cpp:162]: Event #6001003 (fee_plc_cr.1003) has no options in events/FEECommonwealth_CossackRevolts.txt
+[eventmanager.cpp:165]: Event #6001003 (fee_plc_cr.1003) is missing picture in events/FEECommonwealth_CossackRevolts.txt
+[eventmanager.cpp:156]: Event #6001004 (fee_plc_cr.1004) is missing a title in events/FEECommonwealth_CossackRevolts.txt
+[eventmanager.cpp:159]: Event #6001004 (fee_plc_cr.1004) is missing a desc in events/FEECommonwealth_CossackRevolts.txt
+[eventmanager.cpp:162]: Event #6001004 (fee_plc_cr.1004) has no options in events/FEECommonwealth_CossackRevolts.txt
+[eventmanager.cpp:165]: Event #6001004 (fee_plc_cr.1004) is missing picture in events/FEECommonwealth_CossackRevolts.txt
+[eventmanager.cpp:156]: Event #6001005 (fee_plc_cr.1005) is missing a title in events/FEECommonwealth_CossackRevolts.txt
+[eventmanager.cpp:159]: Event #6001005 (fee_plc_cr.1005) is missing a desc in events/FEECommonwealth_CossackRevolts.txt
+[eventmanager.cpp:162]: Event #6001005 (fee_plc_cr.1005) has no options in events/FEECommonwealth_CossackRevolts.txt
+[eventmanager.cpp:165]: Event #6001005 (fee_plc_cr.1005) is missing picture in events/FEECommonwealth_CossackRevolts.txt
+[persistent.cpp:53]: Error: "Unexpected token: loyalty, near line: 1273
+" in file: "events/FEEDenmark.txt" near line: 1273
+[trigger.cpp:596]: Unknown trigger-type is_westernising in events/FEEKorea.txt line : 378
+[persistent.cpp:53]: Error: "Unexpected token: is_westernising, near line: 378
+" in file: "events/FEEKorea.txt" near line: 378
+[effect.cpp:2876]: Unknown effect-type add_westernisation in events/FEEKorea.txt line : 388
+[persistent.cpp:53]: Error: "Unexpected token: add_westernisation, near line: 388
+" in file: "events/FEEKorea.txt" near line: 388
+[event.cpp:436]: Error: "country_event" in file: "events/FEEMaratha.txt" near line: 289
+[eventmanager.cpp:169]: Event fee_MAR.6.t (#7600006 (fee_MAR.6)) is triggered only, but does not have a 1 base-factor in events/FEEMaratha.txt
+[effect.cpp:2876]: Unknown effect-type hidden in events/FEENetherlands.txt line : 370
+[persistent.cpp:53]: Error: "Unexpected token: hidden, near line: 370
+" in file: "events/FEENetherlands.txt" near line: 372
+[effect.cpp:2876]: Unknown effect-type hidden in events/FEENetherlands.txt line : 446
+[persistent.cpp:53]: Error: "Unexpected token: hidden, near line: 446
+" in file: "events/FEENetherlands.txt" near line: 448
+[effectimplementation.cpp:6169]: Unknown casus belli 'cb_reconquest' in events/FEENetherlands.txt : 527
+[event.cpp:436]: Error: "is_religion_enabled" in file: "events/FEEPoland.txt" near line: 472
+[event.cpp:436]: Error: "NOT" in file: "events/FEEPoland.txt" near line: 473
+[event.cpp:436]: Error: "has_global_flag" in file: "events/FEEPoland.txt" near line: 474
+[eventmanager.cpp:162]: Event #9000018 (fee_POL.18) has no options in events/FEEPoland.txt
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/FEEPoland.txtline: 477
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/FEEPoland.txtline: 477
+[eventmanager.cpp:206]: Corrupt Event Table Entry - months in events/FEEPoland.txtline: 478
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/FEEPoland.txtline: 480
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/FEEPoland.txtline: 480
+[eventmanager.cpp:206]: Corrupt Event Table Entry - name in events/FEEPoland.txtline: 481
+[eventmanager.cpp:206]: Corrupt Event Table Entry - TEU in events/FEEPoland.txtline: 482
+[eventmanager.cpp:156]: Event #9000022 (fee_POL.22) is missing a title in events/FEEPoland.txt
+[eventmanager.cpp:159]: Event #9000022 (fee_POL.22) is missing a desc in events/FEEPoland.txt
+[eventmanager.cpp:162]: Event #9000022 (fee_POL.22) has no options in events/FEEPoland.txt
+[eventmanager.cpp:165]: Event #9000022 (fee_POL.22) is missing picture in events/FEEPoland.txt
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/FEEPoland.txtline: 483
+[eventmanager.cpp:206]: Corrupt Event Table Entry - option in events/FEEPoland.txtline: 484
+[eventmanager.cpp:206]: Corrupt Event Table Entry - name in events/FEEPoland.txtline: 485
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/FEEPoland.txtline: 487
+[id.cpp:75]: Failed to create id 9000022 53. Already exists in game.
+[event.cpp:351]: Failed to create CID for event fee_POL.22 (duplicate id?)
+[persistent.cpp:53]: Error: "Unexpected token: add_country_modifier, near line: 121
+" in file: "events/FEEPortugal.txt" near line: 124
+[persistent.cpp:53]: Error: "Unexpected token: capital_scope, near line: 125
+" in file: "events/FEEPortugal.txt" near line: 132
+[event.cpp:436]: Error: "country_event" in file: "events/FEEPortugal.txt" near line: 138
+[trigger.cpp:596]: Unknown trigger-type num_of_colonial_subjects in events/FEETuscany.txt line : 25
+[persistent.cpp:53]: Error: "Unexpected token: num_of_colonial_subjects, near line: 25
+" in file: "events/FEETuscany.txt" near line: 25
+[effect.cpp:2876]: Unknown effect-type trigger in events/FEE_Bulgaria_Events.txt line : 103
+[persistent.cpp:53]: Error: "Unexpected token: trigger, near line: 103
+" in file: "events/FEE_Bulgaria_Events.txt" near line: 109
+[effect.cpp:2876]: Unknown effect-type trigger in events/FEE_Bulgaria_Events.txt line : 143
+[persistent.cpp:53]: Error: "Unexpected token: trigger, near line: 143
+" in file: "events/FEE_Bulgaria_Events.txt" near line: 145
+[effect.cpp:2876]: Unknown effect-type trigger in events/FEE_Bulgaria_Events.txt line : 162
+[persistent.cpp:53]: Error: "Unexpected token: trigger, near line: 162
+" in file: "events/FEE_Bulgaria_Events.txt" near line: 164
+[trigger.cpp:596]: Unknown trigger-type burgundy_area in events/FEE_Burgundy.txt line : 18
+[persistent.cpp:53]: Error: "Unexpected token: burgundy_area, near line: 18
+" in file: "events/FEE_Burgundy.txt" near line: 21
+[effectimplementation.cpp:8852]: Unknown opinion 'fee_BUR_lotharingia_opinion2' in events/FEE_Burgundy.txt : 105
+[effect.cpp:2876]: Unknown effect-type innovativeness_ideas in events/FEE_HRE_Minor_Events.txt line : 188
+[persistent.cpp:53]: Error: "Unexpected token: innovativeness_ideas, near line: 188
+" in file: "events/FEE_HRE_Minor_Events.txt" near line: 188
+[effectimplementation.cpp:3728]: Unknown modifier-type 'FEE_HRE_Minors_Imperial_Patronage'.
+[trigger.cpp:596]: Unknown trigger-type value in events/FEE_HRE_Minor_Events.txt line : 334
+[persistent.cpp:53]: Error: "Unexpected token: value, near line: 334
+" in file: "events/FEE_HRE_Minor_Events.txt" near line: 334
+[triggerimplementation.cpp:32098]: Subject type not found in DB: brother_kingdom
+[triggerimplementation.cpp:32098]: Subject type not found in DB: integrated_personal_union
+[triggerimplementation.cpp:32098]: Subject type not found in DB: brother_kingdom
+[triggerimplementation.cpp:32098]: Subject type not found in DB: integrated_personal_union
+[triggerimplementation.cpp:32098]: Subject type not found in DB: brother_kingdom
+[triggerimplementation.cpp:32098]: Subject type not found in DB: integrated_personal_union
+[trigger.cpp:596]: Unknown trigger-type is_expanded_mod_active in events/FEE_Low_Countries.txt line : 756
+[persistent.cpp:53]: Error: "Unexpected token: is_expanded_mod_active, near line: 756
+" in file: "events/FEE_Low_Countries.txt" near line: 756
+[trigger.cpp:596]: Unknown trigger-type is_expanded_mod_active in events/FEE_Low_Countries.txt line : 791
+[persistent.cpp:53]: Error: "Unexpected token: is_expanded_mod_active, near line: 791
+" in file: "events/FEE_Low_Countries.txt" near line: 791
+[trigger.cpp:596]: Unknown trigger-type is_expanded_mod_active in events/FEE_Low_Countries.txt line : 818
+[persistent.cpp:53]: Error: "Unexpected token: is_expanded_mod_active, near line: 818
+" in file: "events/FEE_Low_Countries.txt" near line: 818
+[metascript.cpp:96]: Compiling source for add_estate_burghers_loyalty_effect failed for missing args: amount
+[eventmanager.cpp:354]: Incorrect namespace event id: FEE_Low_Countries_Events.
+[eventmanager.cpp:165]: Event #11600001 (FEE_Meme_Events.1) is missing picture in events/FEE_Meme_Events.txt
+[eventmanager.cpp:165]: Event #11700001 (FEE_ottoman_events.1) is missing picture in events/FEE_Ottoman_Events.txt
+[eventmanager.cpp:165]: Event #11700002 (FEE_ottoman_events.2) is missing picture in events/FEE_Ottoman_Events.txt
+[eventmanager.cpp:165]: Event #11700003 (FEE_ottoman_events.3) is missing picture in events/FEE_Ottoman_Events.txt
+[eventmanager.cpp:165]: Event #11700004 (FEE_ottoman_events.4) is missing picture in events/FEE_Ottoman_Events.txt
+[eventmanager.cpp:165]: Event #11700005 (FEE_ottoman_events.5) is missing picture in events/FEE_Ottoman_Events.txt
+[eventmanager.cpp:165]: Event #11700006 (FEE_ottoman_events.6) is missing picture in events/FEE_Ottoman_Events.txt
+[eventmanager.cpp:165]: Event #11700007 (FEE_ottoman_events.7) is missing picture in events/FEE_Ottoman_Events.txt
+[persistent.cpp:53]: Error: "Unexpected token: modiifer, near line: 795
+" in file: "events/FEE_Palatinate_Events.txt" near line: 795
+[trigger.cpp:596]: Unknown trigger-type num_of_colonial_subjects in events/FEE_heir_education.txt line : 443
+[persistent.cpp:53]: Error: "Unexpected token: num_of_colonial_subjects, near line: 443
+" in file: "events/FEE_heir_education.txt" near line: 443
+[eventmanager.cpp:206]: Corrupt Event Table Entry - id in events/FEE_heir_education.txtline: 1400
+[eventmanager.cpp:206]: Corrupt Event Table Entry - title in events/FEE_heir_education.txtline: 1401
+[eventmanager.cpp:206]: Corrupt Event Table Entry - desc in events/FEE_heir_education.txtline: 1402
+[eventmanager.cpp:206]: Corrupt Event Table Entry - picture in events/FEE_heir_education.txtline: 1403
+[eventmanager.cpp:206]: Corrupt Event Table Entry - trigger in events/FEE_heir_education.txtline: 1405
+[eventmanager.cpp:206]: Corrupt Event Table Entry - heir_age in events/FEE_heir_education.txtline: 1406
+[eventmanager.cpp:206]: Corrupt Event Table Entry - NOT in events/FEE_heir_education.txtline: 1407
+[eventmanager.cpp:206]: Corrupt Event Table Entry - heir_age in events/FEE_heir_education.txtline: 1407
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/FEE_heir_education.txtline: 1408
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/FEE_heir_education.txtline: 1408
+[eventmanager.cpp:206]: Corrupt Event Table Entry - has_heir_flag in events/FEE_heir_education.txtline: 1409
+[eventmanager.cpp:206]: Corrupt Event Table Entry - has_heir_flag in events/FEE_heir_education.txtline: 1410
+[eventmanager.cpp:206]: Corrupt Event Table Entry - has_heir_flag in events/FEE_heir_education.txtline: 1411
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/FEE_heir_education.txtline: 1413
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/FEE_heir_education.txtline: 1413
+[eventmanager.cpp:206]: Corrupt Event Table Entry - OR in events/FEE_heir_education.txtline: 1414
+[eventmanager.cpp:206]: Corrupt Event Table Entry - has_heir_flag in events/FEE_heir_education.txtline: 1415
+[eventmanager.cpp:206]: Corrupt Event Table Entry - has_heir_flag in events/FEE_heir_education.txtline: 1416
+[eventmanager.cpp:206]: Corrupt Event Table Entry - has_heir_flag in events/FEE_heir_education.txtline: 1417
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/FEE_heir_education.txtline: 1419
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/FEE_heir_education.txtline: 1422
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/FEE_heir_education.txtline: 1422
+[eventmanager.cpp:206]: Corrupt Event Table Entry - days in events/FEE_heir_education.txtline: 1423
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/FEE_heir_education.txtline: 1426
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/FEE_heir_education.txtline: 1426
+[eventmanager.cpp:206]: Corrupt Event Table Entry - name in events/FEE_heir_education.txtline: 1427
+[eventmanager.cpp:206]: Corrupt Event Table Entry - change_heir_adm in events/FEE_heir_education.txtline: 1428
+[eventmanager.cpp:206]: Corrupt Event Table Entry - set_heir_flag in events/FEE_heir_education.txtline: 1429
+[eventmanager.cpp:206]: Corrupt Event Table Entry - add_years_of_income in events/FEE_heir_education.txtline: 1430
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/FEE_heir_education.txtline: 1433
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/FEE_heir_education.txtline: 1433
+[eventmanager.cpp:206]: Corrupt Event Table Entry - name in events/FEE_heir_education.txtline: 1434
+[eventmanager.cpp:206]: Corrupt Event Table Entry - change_heir_dip in events/FEE_heir_education.txtline: 1435
+[eventmanager.cpp:206]: Corrupt Event Table Entry - set_heir_flag in events/FEE_heir_education.txtline: 1436
+[eventmanager.cpp:206]: Corrupt Event Table Entry - add_years_of_income in events/FEE_heir_education.txtline: 1437
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/FEE_heir_education.txtline: 1440
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/FEE_heir_education.txtline: 1440
+[eventmanager.cpp:206]: Corrupt Event Table Entry - name in events/FEE_heir_education.txtline: 1441
+[eventmanager.cpp:206]: Corrupt Event Table Entry - change_heir_mil in events/FEE_heir_education.txtline: 1442
+[eventmanager.cpp:206]: Corrupt Event Table Entry - has_heir_flag in events/FEE_heir_education.txtline: 1443
+[eventmanager.cpp:206]: Corrupt Event Table Entry - add_years_of_income in events/FEE_heir_education.txtline: 1444
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/FEE_heir_education.txtline: 1447
+[eventmanager.cpp:206]: Corrupt Event Table Entry - = in events/FEE_heir_education.txtline: 1447
+[eventmanager.cpp:206]: Corrupt Event Table Entry - name in events/FEE_heir_education.txtline: 1448
+[eventmanager.cpp:206]: Corrupt Event Table Entry - } in events/FEE_heir_education.txtline: 1450
+[persistent.cpp:53]: Error: "Unexpected token: trait, near line: 345
+" in file: "events/cod_events.txt" near line: 345
+[triggerimplementation.cpp:19136]: Unknown country 'PDB' in tag trigger
+[triggerimplementation.cpp:19136]: Unknown country 'PDB' in tag trigger
+[triggerimplementation.cpp:19136]: Unknown country 'CTH' in tag trigger
+[triggerimplementation.cpp:24266]: Invalid idea group for idea_group trigger: 'aristocratic_ideas'
+[triggerimplementation.cpp:15672]: Unknown region used in a trigger north_germany_region
+[triggerimplementation.cpp:15672]: Unknown region used in a trigger south_germany_region
+[triggerimplementation.cpp:15672]: Unknown region used in a trigger western_india_region
+[triggerimplementation.cpp:15672]: Unknown region used in a trigger western_india_region
+[effectimplementation.cpp:23509]: Invalid estate privilege 'estate_nobles_supremacy_over_the_crown' in effect.
+[texturehandler.cpp:145]: Texture Handler encountered missing texture file: gfx/nterface/rivals/ledger_invisible_button_60x17.dds
+[texturehandler.cpp:299]: Couldn't find texture file: gfx/nterface/rivals/ledger_invisible_button_60x17.dds.
+[spritetype.cpp:339]: Error initialising texture: gfx\nterface\rivals\ledger_invisible_button_60x17.dds for spritetype GFX_ledger_invisible_button60x17
+[spritetype.cpp:339]: Error initialising texture: gfx\nterface\rivals\ledger_invisible_button_60x17.dds for spritetype GFX_ledger_invisible_button60x17
+[spritetype.cpp:339]: Error initialising texture: gfx\nterface\rivals\ledger_invisible_button_60x17.dds for spritetype GFX_ledger_invisible_button60x17
+[spritetype.cpp:339]: Error initialising texture: gfx\nterface\rivals\ledger_invisible_button_60x17.dds for spritetype GFX_ledger_invisible_button60x17
+[spritetype.cpp:339]: Error initialising texture: gfx\nterface\rivals\ledger_invisible_button_60x17.dds for spritetype GFX_ledger_invisible_button60x17
+[spritetype.cpp:339]: Error initialising texture: gfx\nterface\rivals\ledger_invisible_button_60x17.dds for spritetype GFX_ledger_invisible_button60x17
+[spritetype.cpp:339]: Error initialising texture: gfx\nterface\rivals\ledger_invisible_button_60x17.dds for spritetype GFX_ledger_invisible_button60x17
+[spritetype.cpp:339]: Error initialising texture: gfx\nterface\rivals\ledger_invisible_button_60x17.dds for spritetype GFX_ledger_invisible_button60x17
+[ck2text.cpp:267]: Unknown text property 'GetParliamentName]' for tag '[This.GetParliamentName]'
+[triggerimplementation.cpp:6452]: Script error: none: [triggerimplementation.cpp:6452]: Unknown culture group "tatar.
+[triggerimplementation.cpp:6455]: Root country: ALB Root province: 0
+[triggerimplementation.cpp:6452]: Script error: none: [triggerimplementation.cpp:6452]: Unknown culture group "tatar.
+[triggerimplementation.cpp:6455]: Root country: ALB Root province: 0
+[triggerimplementation.cpp:6452]: Script error: none: [triggerimplementation.cpp:6452]: Unknown culture group "tatar.
+[triggerimplementation.cpp:6455]: Root country: TEO Root province: 0
+[triggerimplementation.cpp:6452]: Script error: none: [triggerimplementation.cpp:6452]: Unknown culture group "tatar.
+[triggerimplementation.cpp:6455]: Root country: TEO Root province: 0
+[triggerimplementation.cpp:6452]: Script error: none: [triggerimplementation.cpp:6452]: Unknown culture group "tatar.
+[triggerimplementation.cpp:6455]: Root country: TLA Root province: 0
+[triggerimplementation.cpp:6452]: Script error: none: [triggerimplementation.cpp:6452]: Unknown culture group "tatar.
+[triggerimplementation.cpp:6455]: Root country: TLA Root province: 0
+[texturehandler.cpp:145]: Texture Handler encountered missing texture file: gfx/nterface/rivals/ledger_invisible_button_60x17.dds
+[texturehandler.cpp:299]: Couldn't find texture file: gfx/nterface/rivals/ledger_invisible_button_60x17.dds.
+[spritetype.cpp:339]: Error initialising texture: gfx\nterface\rivals\ledger_invisible_button_60x17.dds for spritetype GFX_ledger_invisible_button60x17
+[spritetype.cpp:339]: Error initialising texture: gfx\nterface\rivals\ledger_invisible_button_60x17.dds for spritetype GFX_ledger_invisible_button60x17
+[spritetype.cpp:339]: Error initialising texture: gfx\nterface\rivals\ledger_invisible_button_60x17.dds for spritetype GFX_ledger_invisible_button60x17
+[spritetype.cpp:339]: Error initialising texture: gfx\nterface\rivals\ledger_invisible_button_60x17.dds for spritetype GFX_ledger_invisible_button60x17
+[texturehandler.cpp:145]: Texture Handler encountered missing texture file: gfx/nterface/rivals/ledger_invisible_button_60x17.dds
+[texturehandler.cpp:299]: Couldn't find texture file: gfx/nterface/rivals/ledger_invisible_button_60x17.dds.
+[spritetype.cpp:339]: Error initialising texture: gfx\nterface\rivals\ledger_invisible_button_60x17.dds for spritetype GFX_ledger_invisible_button60x17
+[spritetype.cpp:339]: Error initialising texture: gfx\nterface\rivals\ledger_invisible_button_60x17.dds for spritetype GFX_ledger_invisible_button60x17
+[spritetype.cpp:339]: Error initialising texture: gfx\nterface\rivals\ledger_invisible_button_60x17.dds for spritetype GFX_ledger_invisible_button60x17
+[spritetype.cpp:339]: Error initialising texture: gfx\nterface\rivals\ledger_invisible_button_60x17.dds for spritetype GFX_ledger_invisible_button60x17
+[graphics.cpp:1121]: No font with name 
+[graphics.cpp:1121]: No font with name 
+[graphics.cpp:1121]: No font with name 
+[graphics.cpp:1121]: No font with name 
+[triggerimplementation.cpp:6452]: Script error: none: [triggerimplementation.cpp:6452]: Unknown culture group "tatar.
+[triggerimplementation.cpp:6455]: Root country: SAV Root province: 0
+[triggerimplementation.cpp:6452]: Script error: none: [triggerimplementation.cpp:6452]: Unknown culture group "tatar.
+[triggerimplementation.cpp:6455]: Root country: SAV Root province: 0
+[texturehandler.cpp:145]: Texture Handler encountered missing texture file: gfx/nterface/rivals/ledger_invisible_button_60x17.dds
+[texturehandler.cpp:299]: Couldn't find texture file: gfx/nterface/rivals/ledger_invisible_button_60x17.dds.
+[spritetype.cpp:339]: Error initialising texture: gfx\nterface\rivals\ledger_invisible_button_60x17.dds for spritetype GFX_ledger_invisible_button60x17
+[spritetype.cpp:339]: Error initialising texture: gfx\nterface\rivals\ledger_invisible_button_60x17.dds for spritetype GFX_ledger_invisible_button60x17
+[spritetype.cpp:339]: Error initialising texture: gfx\nterface\rivals\ledger_invisible_button_60x17.dds for spritetype GFX_ledger_invisible_button60x17
+[spritetype.cpp:339]: Error initialising texture: gfx\nterface\rivals\ledger_invisible_button_60x17.dds for spritetype GFX_ledger_invisible_button60x17
+[fixedwindow.cpp:2961]: interface/mapicons.gui: Missing Button 'defender_condottieri_shield' in window 'navy_combat_mapicon'.

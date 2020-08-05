@@ -1,0 +1,81 @@
+# Palatine Events
+
+namespace = FEE_Greek_Events
+
+# They have arrived
+
+country_event = {
+	id = FEE_Greek_Events.1
+	title = FEE_Greek_Events.1.T
+	desc = FEE_Greek_Events.1.D
+	picture = CIVIL_WAR_eventPicture
+
+	trigger = {
+		culture_group = byzantine 
+		OR = {
+			any_country = {
+				culture_group = scandinavian
+				has_opinion = {
+					who = ROOT
+					value = 125
+				}
+			}
+			any_country = {
+				culture_group = scandinavian
+				alliance_with = ROOT
+			}
+		}
+		NOT = {
+			has_country_flag = fee_enlisted_variags
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+		modifier = {
+			factor = 0.0001
+			is_at_war = yes
+		}
+	}
+
+	option = {
+		name = FEE_Greek_Events.1.OPT1
+
+		ai_chance = {
+			factor = 50
+		}
+
+		define_general = {
+			name = "Vasilis Konungr"
+			fire = 6
+			shock = 4
+			manuever = 2
+			siege = 4
+			trait = master_of_arms_personality
+		}
+
+		add_country_modifier = {
+			name = FEE_greek_varangian
+			duration = -1
+		}
+
+		every_province = {
+			limit = {
+				owned_by = ROOT
+				NOT = {
+					culture_group = byzantine
+				}
+			}
+			add_unrest = 4
+		}
+		set_country_flag = fee_enlisted_variags
+	}
+
+	option = {
+		name = FEE_Greek_Events.1.OPT2
+
+		ai_chance = {
+			factor = 50
+		}
+	}
+}

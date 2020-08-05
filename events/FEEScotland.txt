@@ -38,7 +38,7 @@ country_event = {
 		name = fee_SCO.1.a
 		add_adm_power = -10
 		add_country_modifier = {
-			name = hee_education_act
+			name = fee_education_act
 			duration = 18250
 		}
 	}
@@ -88,7 +88,7 @@ country_event = {
 	option = {
 		name = fee_SCO.2.a
 		add_country_modifier = {
-			name = hee_scottish_french_supression
+			name = fee_scottish_french_supression
 			duration = 3650
 		}
 	}
@@ -96,7 +96,7 @@ country_event = {
 		name = fee_SCO.2.b
 		reverse_add_opinion = {
 			who = FRA
-			modifier = hee_scottish_anti_french
+			modifier = fee_scottish_anti_french
 		}
 	}
 }
@@ -136,13 +136,13 @@ country_event = {
 	option = {
 		name = fee_SCO.3.a
 		add_country_modifier = {
-			name = hee_claim_suppressed
+			name = fee_claim_suppressed
 			duration = 7200
 		}
 		overlord = {
 			add_opinion = {
 				who = ROOT
-				modifier = hee_subject_claim_supressed
+				modifier = fee_subject_claim_supressed
 			}
 		}
 	}
@@ -176,7 +176,7 @@ country_event = {
 		name = fee_SCO.4.a
 		FROM = {
 			add_country_modifier = {
-				name = hee_claim_supressed
+				name = fee_claim_supressed
 				duration = 10000
 			}
 			add_liberty_desire = 25

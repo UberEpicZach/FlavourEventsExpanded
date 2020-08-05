@@ -19,7 +19,7 @@ country_event = {
 			is_year = 1472
 		}
 		NOT = {
-			has_country_modifier = hee_perm_freed
+			has_country_modifier = fee_perm_freed
 		}
 		OR = {
 			ai = yes
@@ -40,7 +40,7 @@ country_event = {
 		}
 		hidden_effect = {
 			add_country_modifier = {
-				name = hee_perm_freed
+				name = fee_perm_freed
 				duration = -1
 				hidden = yes
 			}
@@ -68,7 +68,7 @@ country_event = {
 		NOT = {
 			num_of_cities = 7
 		}
-		has_country_modifier = hee_perm_freed
+		has_country_modifier = fee_perm_freed
 	}
 
      mean_time_to_happen = {

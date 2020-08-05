@@ -76,3 +76,38 @@
  fee_DAN.23.a: "About time we cut his head off, this was getting out of hand!"
  fee_DAN.23.b: "That's enough! The people will free Struensee and abolish the entire monarchy!"
  fee_DAN.23.c: "The Queen will capitalise on his reforms to seize power."
+
+ fee_DAN.24.t: "The Riksråd of Denmark"
+ fee_DAN.24.d: "Throughout the Middle Ages, Danish earls and other nobles sought to limit the power of the Kings of Denmark, who had been a very strong and sometimes outright tyrannical ruler during the early days of the Danish Kingdom. \nThe Riksråd, or Council of the Realm, was first mentioned in the 1320s. By the 1440s it had become known as main opponent of royal power. In general, they maintained a healthy balance of power, electing the kings of Denmark in exchange for giving certain lucrative revenues to the King. The nobles in turn generally protected the rights of the common people from excessive taxation, and took on much of the administration of the realm.\nWith the loss of the Kingdom of Sweden, however, came a break in the balance of power. The heavy losses suffered by royal armies and treasury as well as the loss of prestige gave them the opportunity to seize more power for themselves. They now demand that the King sign a haandfæstning, a document guaranteeing noble privileges as a condition of the nobility’s acceptance of the King’s continued rule. Among the new rights\nthey demand is the right to revolt against any King that does not keep all promises, written or spoken, to the noble estate. Failure to sign this document, they warn, will force the nobility to invoke Denmark’s ancient elective monarchy, in which the de facto recognition of hereditary rule will be abolished and a new King sought from elsewhere…"
+ fee_DAN.24.a: "Give them what they want"
+ fee_DAN.24.b: "These demands are preposterous!"
+
+ fee_DAN.25.t: "The Riksråd of Norway"
+ fee_DAN.25.d: "While the nobles have been more influential in Denmark, Norway’s status as a junior partner has robbed their nobility of much of their power to restrain the king. Furthermore, Norway’s status as a true hereditary monarchy, rather than Denmark’s de jure elective monarchy, meant that the powers of the Norwegian Riksråd diminished over time rather than strengthened. Soon they served as little more than councils in the case of regency. \nIn 1536, King Christian III of Denmark-Norway, in response to a bishop-led rebellion against his efforts to convert Norway to Lutheranism, finally abolished the Norwegian Riksråd, which never assembled again."
+ fee_DAN.25.a: "Excellent"
+
+ fee_DAN.26.t: "Danish Intervention in the Protestant League"
+ fee_DAN.26.d: "By the 16th century, Denmark remained one of the most powerful, and crucially, most wealthy realms in Europe. In addition, it was one of the few realms outside the Holy Roman Empire to have adopted Lutheranism. As one of the leading Lutheran rulers, then, [Root.Monarch.GetName] of Denmark looked on anxiously as the clouds of religious war gathered over Germany, although he did not formally join the league. A victory for the Catholic Empire, he knew, could only spell disaster for Lutheranism in Europe and would upset the balance of Europe in a way very likely to endanger Danish sovereignty."
+ fee_DAN.26.a: "It is time we intervened in this war"
+ fee_DAN.26.b: "We should stay out of German affairs"
+
+ fee_DAN.27.t: "Economic Reforms"
+ fee_DAN.27.d: "Denmark’s strategic location has brought it great wealth from North and Baltic Sea trade. However, Denmark is not a populous nation, nor one especially rich in natural resources. It’s production depends chiefly on agriculture still, even as other nations rush to exploit more lucrative resources and industries. Even our agriculture risks falling behind, as nobles continue to use serfdom instead of free peasantry, lowering the quality (and therefore the prince) of our grain."
+ fee_DAN.27.a: "We must make all efforts to diversify our economy!"
+ fee_DAN.27.b: "We must expand our trade networks to bring in more wealth!"
+ fee_DAN.27.c: "We must reform the Agricultural sector!"
+ fee_DAN.27.acustom: "For the capital and one other danish province: 25% chance to change its trade good to cloth, 25% chance to change its trade good to salt, 50% chance for failure and consequences."
+
+ fee_DAN.28.t: "Diversification Efforts Fail"
+ fee_DAN.28.d: "Despite the best efforts of [RULER], the vested interests in agricultural serfdom were simply too strong to overcome. Additionally, the lack of mineral resources and the dependence on imports made any heavy industry or weapons manufacturing a non-starter. It seems Denmark is doomed to continue in the old ways as the rest of the world advances…"
+ fee_DAN.28.a: "Damn!"
+
+ FEE_Denmark_Out_of_German_Affairs_Opinion_Modifier: "Stayed out of German Affairs"
+
+ FEE_Denmark_Norway_reigned_in: "Norway reigned in"
+ FEE_Denmark_Danish_interventionism: "Danish Interventionism"
+ FEE_Denmark_Renewed_trade_investements: "Renewed Trade Investements"
+ FEE_Denmark_Agricultural_Reform: "Agricultural Reforms"
+ FEE_Denmark_Reforms_Ignored: "Reforms Ignored"
+
+ EST_VAL_DENMARK_RENEWED_TRADE_INVESTEMENTS: "Renewed Trade Investements: §Y$VAL$%§!"

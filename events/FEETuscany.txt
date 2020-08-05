@@ -22,10 +22,10 @@ country_event = {
 			is_year = 1630
 		}
 		NOT = {
-			num_of_colonial_subjects = 1
+			colony = 1
 		}
 		NOT = {
-			has_global_flag = hee_robert_thornton
+			has_global_flag = fee_robert_thornton
 		}
 		num_of_ports = 1
 	}
@@ -36,14 +36,14 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
-			set_global_flag = hee_robert_thornton
+			set_global_flag = fee_robert_thornton
 		}
 	}
 
 	option = {
 		name = fee_TUS.1.a
 		add_country_modifier = {
-			name = hee_thornton_colonize
+			name = fee_thornton_colonize
 			duration = 3650
 		}
 	}
@@ -69,9 +69,9 @@ country_event = {
 	title = fee_TUS.2.t
 	desc = fee_TUS.2.d
 	picture = RELIGION_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		OR = {
 			tag = TUS
@@ -86,7 +86,7 @@ country_event = {
 		is_year = 1550
 		religion = catholic
 	}
-	
+
 	mean_time_to_happen = {
 		months = 240
 		modifier = {
@@ -113,7 +113,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = fee_TUS.2.a
 		add_adm_power = -25
@@ -122,7 +122,7 @@ country_event = {
 			add_base_production = 1
 		}
 		add_country_modifier = {
-			name = hee_tuscan_toleration
+			name = fee_tuscan_toleration
 			duration = 7300
 		}
 	}
@@ -130,7 +130,7 @@ country_event = {
 		name = fee_TUS.2.b
 		add_years_of_income = 0.5
 		add_country_modifier = {
-			name = hee_tuscan_intoleration
+			name = fee_tuscan_intoleration
 			duration = 7300
 		}
 	}
@@ -142,13 +142,13 @@ country_event = {
 #	title = fee_TUS.3.t
 #	desc = fee_TUS.3.d
 #	picture = LIBERUM_VETO_eventPicture
-#	
+#
 #	fire_only_once = yes
-#	
+#
 #	trigger = {
 #		tag = TUS
 #		NOT = {
-#			has_country_modifier = hee_grand_duchy_reaction
+#			has_country_modifier = fee_grand_duchy_reaction
 #		}
 #		government = monarchy
 #		OR = {
@@ -163,20 +163,20 @@ country_event = {
 #			}
 #		}
 #	}
-#	
+#
 #	mean_time_to_happen = {
 #		months = 6
 #	}
-#	
+#
 #	immediate = {
 #		hidden_effect = {
 #			add_country_modifier = {
-#				name = hee_grand_duchy_reaction
+#				name = fee_grand_duchy_reaction
 #				duration = -1
 #			}
 #		}
 #	}
-#	
+#
 #	option = {
 #		name = fee_TUS.3.a
 #		add_dip_power = -25
@@ -192,13 +192,13 @@ country_event = {
 #	title = fee_TUS.4.t
 #	desc = fee_TUS.4.d
 #	picture = CONQUEST_eventPicture
-#	
+#
 #	fire_only_once = yes
-#	
+#
 #	trigger = {
 #		tag = TUS
 #		NOT = {
-#			has_country_modifier = hee_grand_duchy_reaction
+#			has_country_modifier = fee_grand_duchy_reaction
 #		}
 #		government = monarchy
 #		reverse_has_opinion = {
@@ -207,20 +207,20 @@ country_event = {
 #		}
 #		num_of_cities = 3
 #	}
-#	
+#
 #	mean_time_to_happen = {
 #		months = 6
 #	}
-#	
+#
 #	immediate = {
 #		hidden_effect = {
 #			add_country_modifier = {
-#				name = hee_grand_duchy_reaction
+#				name = fee_grand_duchy_reaction
 #				duration = -1
 #			}
 #		}
 #	}
-#	
+#
 #	option = {
 #		name = fee_TUS.4.a
 #		add_dip_power = 25
@@ -236,9 +236,9 @@ country_event = {
 	title = fee_TUS.5.t
 	desc = fee_TUS.5.d
 	picture = CITY_DEVELOPMENT_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		OR = {
 			tag = TUS
@@ -250,7 +250,7 @@ country_event = {
 		}
 		is_at_war = no
 	}
-	
+
 	mean_time_to_happen = {
 		months = 180
 		modifier = {
@@ -258,7 +258,7 @@ country_event = {
 			has_idea_group = economic_ideas
 		}
 	}
-	
+
 	option = {
 		name = fee_TUS.5.a
 		ai_chance = {
@@ -281,7 +281,7 @@ country_event = {
 				region = italy_region
 			}
 			add_province_modifier = {
-				name = hee_tuscan_toll_roads
+				name = fee_tuscan_toll_roads
 				duration = 7300
 			}
 		}
@@ -297,7 +297,7 @@ country_event = {
 				region = italy_region
 			}
 			add_province_modifier = {
-				name = hee_tuscan_toll_roads
+				name = fee_tuscan_toll_roads
 				duration = 10950
 			}
 		}
@@ -310,9 +310,9 @@ country_event = {
 #	title = fee_TUS.6.t
 #	desc = fee_TUS.6.d
 #	picture = TRADEGOODS_eventPicture
-#	
+#
 #	fire_only_once = yes
-#	
+#
 #	trigger = {
 #		OR = {
 #			tag = TUS
@@ -329,7 +329,7 @@ country_event = {
 #	mean_time_to_happen = {
 #		months = 36
 #	}
-#	
+#
 #	option = {
 #		name = fee_TUS.6.a
 #		add_prestige = 5
@@ -354,9 +354,9 @@ country_event = {
 #	title = fee_TUS.7.t
 #	desc = fee_TUS.7.d
 #	picture = GREAT_BUILDING_eventPicture
-#	
+#
 #	fire_only_once = yes
-#	
+#
 #	trigger = {
 #		OR = {
 #			tag = TUS
@@ -368,7 +368,7 @@ country_event = {
 #		}
 #		owns = 116
 #	}
-#	
+#
 #	mean_time_to_happen = {
 #		months = 180
 #		modifier = {
@@ -380,11 +380,11 @@ country_event = {
 #			ADM = 4
 #		}
 #	}
-#	
+#
 #	option = {
 #		name = fee_TUS.7.a
 #		add_country_modifier = {
-#			name = hee_accademia_cimento
+#			name = fee_accademia_cimento
 #			duration = 3650
 #		}
 #	}
@@ -392,7 +392,7 @@ country_event = {
 #		name = fee_TUS.7.b
 #		add_treasury = -25
 #		add_country_modifier = {
-#			name = hee_institution_cimento
+#			name = fee_institution_cimento
 #			duration = 3650
 #		}
 #	}
@@ -405,9 +405,9 @@ country_event = {
 	title = fee_TUS.8.t
 	desc = fee_TUS.8.d
 	picture = REFORM_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		OR = {
 			tag = TUS
@@ -419,7 +419,7 @@ country_event = {
 		}
 		religion = catholic
 	}
-	
+
 	mean_time_to_happen = {
 		months = 480
 		modifier = {
@@ -437,11 +437,11 @@ country_event = {
 			has_idea_group = religious_ideas
 		}
 	}
-	
+
 	option = {
 		name = fee_TUS.8.a
 		add_country_modifier = {
-			name = hee_puritan_tuscany
+			name = fee_puritan_tuscany
 			duration = 3650
 		}
 	}
@@ -464,9 +464,9 @@ country_event = {
 	title = fee_TUS.10.t
 	desc = fee_TUS.10.d
 	picture = ADVISOR_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		OR = {
 			tag = TUS
@@ -477,9 +477,9 @@ country_event = {
 			is_year = 1790
 		}
 		is_at_war = no
-		
+
 	}
-	
+
 	mean_time_to_happen = {
 		months = 240
 		modifier = {
@@ -497,7 +497,7 @@ country_event = {
 		name = fee_TUS.10.a
 		add_stability = 1
 		add_country_modifier = {
-			name = hee_tuscan_reforms
+			name = fee_tuscan_reforms
 			duration = -1
 		}
 		if = {
@@ -532,9 +532,9 @@ country_event = {
 	title = fee_TUS.12.t
 	desc = fee_TUS.12.d
 	picture = BIG_BOOK_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		OR = {
 			tag = TUS
@@ -556,7 +556,7 @@ country_event = {
 	option = {
 		name = fee_TUS.12.a
 		add_country_modifier = {
-			name = hee_oriental_press
+			name = fee_oriental_press
 			duration = 10950
 		}
 	}

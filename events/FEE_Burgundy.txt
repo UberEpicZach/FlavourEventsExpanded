@@ -15,9 +15,13 @@ country_event = {
         tag = BUR
         is_at_war = no
 		stability = 3
-		burgundy_area = {
+		west_burgundy_area = {
 			type = all
-		owned_by = ROOT
+			owned_by = ROOT
+		}
+		bourgogne_area = {
+			type = all
+			owned_by = ROOT
 		}
 		97 = {
 		 country_or_non_sovereign_subject_holds = ROOT
@@ -57,7 +61,7 @@ country_event = {
 	}
 		 181 = {
 		 country_or_non_sovereign_subject_holds = ROOT
-	}		 
+	}
 		 94 = {
 		 country_or_non_sovereign_subject_holds = ROOT
 	}
@@ -86,18 +90,18 @@ country_event = {
 		add_opinion = {
 				who = FRA
 				modifier = fee_BUR_lotharingia_opinion1
-		}		
-		add_opinion = { 
+		}
+		add_opinion = {
 				who = SWI
 				modifier = fee_BUR_lotharingia_opinion1
 		}
 		add_opinion = {
 				who = SAV
 				modifier = fee_BUR_lotharingia_opinion1
-		}		
-		country_event = { id = fee_HAB.7}
+		}
+		country_event = { id = fee_HAB.8}
 	}
-	
+
     option = {
         name = fee_BUR.1.b
         add_opinion = {

@@ -9,9 +9,9 @@ country_event = {
 	title = fee_KOR.1.t
 	desc = fee_KOR.1.d
 	picture = BIG_BOOK_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = KOR
 		NOT = {
@@ -19,7 +19,7 @@ country_event = {
 		}
 		is_at_war = no
 	}
-	
+
 	mean_time_to_happen = {
 		months = 18
 		modifier = {
@@ -27,11 +27,11 @@ country_event = {
 			advisor = statesman
 		}
 	}
-	
+
 	option = {
 		name = fee_KOR.1.a
 		add_country_modifier = {
-			name = hee_hangul_introduced
+			name = fee_hangul_introduced
 			duration = 10950
 		}
 	}
@@ -44,9 +44,9 @@ country_event = {
 	title = fee_KOR.2.t
 	desc = fee_KOR.2.d
 	picture = ASSASSINATION_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = KOR
 		NOT = {
@@ -56,7 +56,7 @@ country_event = {
 		is_at_war = no
 		government = monarchy
 	}
-	
+
 	mean_time_to_happen = {
 		months = 24
 		modifier = {
@@ -66,7 +66,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = fee_KOR.2.a
 		kill_heir = yes
@@ -148,7 +148,7 @@ country_event = {
 	option = {
 		name = fee_KOR.3.a
 		add_country_modifier = {
-			name = hee_sarim
+			name = fee_sarim
 			duration = -1
 		}
 		capital_scope = {
@@ -173,7 +173,7 @@ country_event = {
 			tag = KOR
 			NOT = { is_year = 1600 }
 			NOT = {
-				has_ruler_modifier = hee_office_censor_timer
+				has_ruler_modifier = fee_office_censor_timer
 			}
 		}
 
@@ -198,7 +198,7 @@ country_event = {
 		immediate = {
 			hidden_effect = {
 				add_ruler_modifier = {
-					name = hee_office_censor_timer
+					name = fee_office_censor_timer
 					duration = 3650
 				}
 			}
@@ -222,7 +222,7 @@ country_event = {
 	id = fee_KOR.5
 	title = fee_KOR.5.t
 	desc = fee_KOR.5.d
-	picture = CITY_DEVELOPMENT_eventPicture 
+	picture = CITY_DEVELOPMENT_eventPicture
 
 	fire_only_once = yes
 
@@ -248,7 +248,7 @@ country_event = {
 				}
 				add_local_autonomy = 20
 				add_province_modifier = {
-					name = hee_hyangyak
+					name = fee_hyangyak
 					duration = -1
 				}
 			}
@@ -358,7 +358,7 @@ country_event = {
 	option = {
 		name = fee_KOR.8.a
 		add_country_modifier = {
-			name = hee_silhak
+			name = fee_silhak
 			duration = -1
 		}
 	}
@@ -375,8 +375,9 @@ country_event = {
 
 	trigger = {
 		tag = KOR
-		is_westernising = yes
-		has_country_modifier = hee_silhak
+		has_institution = printing_press
+		NOT = { has_institution = global_trade }
+		has_country_modifier = fee_silhak
 	}
 
 	mean_time_to_happen = {
@@ -385,8 +386,11 @@ country_event = {
 
 	option = {
 		name = fee_KOR.9.a
-		add_westernisation = 120
-		remove_country_modifier = hee_silhak
+		add_country_modifier = {
+			name = fee_westernisation_replacement
+			duration = 120
+		}
+		remove_country_modifier = fee_silhak
 	}
 }
 

@@ -17,7 +17,7 @@ country_event = {
 		emperor = {
 			is_at_war = no
 			NOT = {
-				has_ruler_modifier = hee_first_diet
+				has_ruler_modifier = fee_first_diet
 			}
 		}
 		owns_core_province = 67
@@ -31,7 +31,7 @@ country_event = {
 		hidden_effect = {
 			emperor = {
 				add_ruler_modifier = {
-					name = hee_first_diet
+					name = fee_first_diet
 				}
 			}
 		}

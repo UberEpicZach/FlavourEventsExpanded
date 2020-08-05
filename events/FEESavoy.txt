@@ -29,7 +29,7 @@ namespace = fee_SAV
 		# set_capital = 103
 		# 103 = {
 			# add_province_modifier = {
-				# name = hee_cittadella
+				# name = fee_cittadella
 				# duration = -1
 			# }
 		# }
@@ -84,7 +84,7 @@ country_event = {
 	option = {		# We need a standing army.
 		name = fee_SAV.2.a
 		add_country_modifier = {
-			name = hee_savoy_army
+			name = fee_savoy_army
 			duration = 10950
 		}
 	}
@@ -92,7 +92,7 @@ country_event = {
 	option = {		#mercenaries are our greatest strength
 		name = fee_SAV.2.b
 		add_country_modifier = {
-			name = hee_savoy_mercenaries
+			name = fee_savoy_mercenaries
 			duration = 10950
 		}
 	}
@@ -179,7 +179,7 @@ country_event = {
 			# }
 		# }
 		# NOT = {
-			# has_ruler_modifier = hee_savoy_side
+			# has_ruler_modifier = fee_savoy_side
 		# }
 	# }
 	
@@ -195,11 +195,11 @@ country_event = {
 		# hidden_effect = {
 			# reverse_remove_opinion = {
 				# who = FRA
-				# modifier = hee_savoy_cooperation
+				# modifier = fee_savoy_cooperation
 			# }
 			# reverse_remove_opinion = {
 				# who = SPA
-				# modifier = hee_savoy_cooperation
+				# modifier = fee_savoy_cooperation
 			# }
 		# }
 	# }
@@ -208,10 +208,10 @@ country_event = {
 		# name = fee_SAV.4.a
 		# reverse_add_opinion = {
 			# who = FRA
-			# modifier = hee_savoy_cooperation
+			# modifier = fee_savoy_cooperation
 		# }
 		# add_ruler_modifier = {
-			# name = hee_savoy_side
+			# name = fee_savoy_side
 			# duration = 3650
 		# }
 	# }
@@ -219,10 +219,10 @@ country_event = {
 		# name = fee_SAV.4.b
 		# reverse_add_opinion = {
 			# who = SPA
-			# modifier = hee_savoy_cooperation
+			# modifier = fee_savoy_cooperation
 		# }
 		# add_ruler_modifier = {
-			# name = hee_savoy_side
+			# name = fee_savoy_side
 			# duration = 3650
 		# }
 	# }

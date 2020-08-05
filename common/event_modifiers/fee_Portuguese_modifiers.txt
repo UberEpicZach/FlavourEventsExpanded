@@ -1,0 +1,9 @@
+fee_por_spice_sail = {
+	range = 0.2
+}
+
+fee_por_henrique_naval_reforms = {
+	heavy_ship_power = 0.1
+	dip_tech_cost_modifier = -0.05
+	global_ship_cost = -0.1
+}
