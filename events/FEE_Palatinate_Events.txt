@@ -386,7 +386,7 @@ country_event = {
 		}
 
 		add_years_of_income = -1
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		add_prestige = 10
 	}
 
@@ -452,7 +452,7 @@ country_event = {
 		}
 
 		add_years_of_income = 0.5
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 }
 
