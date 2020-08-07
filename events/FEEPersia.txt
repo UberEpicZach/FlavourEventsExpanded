@@ -298,7 +298,7 @@ country_event = {
 		
 		option = { # The Qizibash are no threat to the Shah.
 			name = fee_PER.6.b
-			add_stability = 1
+			add_stability_or_adm_power = yes
 		}
 	}
 	
@@ -332,7 +332,7 @@ country_event = {
 				}
 			}
 			add_prestige = 20
-			add_stability = 1
+			add_stability_or_adm_power = yes
 			capital_scope = {
 			add_base_tax = 1
 			hidden_effect = {
@@ -375,7 +375,7 @@ country_event = {
 					hidden = yes
 				}
 			}
-			add_stability = 1
+			add_stability_or_adm_power = yes
 			
 		}
 		
