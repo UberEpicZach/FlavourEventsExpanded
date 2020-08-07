@@ -4,7 +4,7 @@
 
 namespace = fee_ARA
 
-#The Assassination of Pedro de ArbuÈs
+#The Assassination of Pedro de Arbu√©s
 country_event = {
 	id = fee_ARA.1
 	title = fee_ARA.1.t
@@ -177,7 +177,7 @@ country_event = {
 	}
 }
 
-#Alteraciones de AragÛn for a united Spain
+#Alteraciones de Arag√≥n for a united Spain
 country_event = {
 	id = fee_ARA.3
 	title = fee_ARA.3.t
@@ -233,7 +233,7 @@ country_event = {
 	}
 	option = {
 		name = fee_ARA.3.b
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		214 = {
 			add_local_autonomy = 25
 		}
@@ -318,7 +318,7 @@ country_event = {
 	
 	option = {
 		name = fee_ARA.5.a
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		214 = {
 			spawn_rebels = {
 				type = anti_tax_rebels
@@ -386,7 +386,7 @@ country_event = {
 	}
 }
 
-#Construct the Imperial Canal of AragÛn
+#Construct the Imperial Canal of Arag√≥n
 country_event = {
 	id = fee_ARA.7
 	title = fee_ARA.7.t 
@@ -446,7 +446,7 @@ country_event = {
 		ai_chance = {
 			factor = 10
 		}
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		add_prestige = -5
 	}
 }
@@ -758,7 +758,7 @@ country_event = {
 			factor = 75
 		}
 		add_papal_influence = 15
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		random_province = {
 			limit = {
 				is_reformation_center = yes
@@ -783,7 +783,7 @@ province_event = {
 	option = {
 		name = fee_ARA.13.a
 		owner = {
-			add_stability = 1
+			add_stability_or_adm_power = yes
 			add_fervor = 25
 			add_church_power = 25
 		}
@@ -839,14 +839,14 @@ country_event = {
 		define_advisor = {
 			type = philosopher
 			skill = 2
-			name = "Baltasar Graci·n"
+			name = "Baltasar Graci√°n"
 			discount = yes
 		}
 		add_prestige = 10
 	}
 	option = {
 		name = fee_ARA.14.b
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		add_prestige = 10
 	}
 }
