@@ -844,7 +844,7 @@ country_event = {
 
 	option = {		# And with the league, our country is safe
 		name = fee_swabian_events.18.a
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 
 	option = {		# This is a golden age for Swabia!
