@@ -140,7 +140,7 @@ country_event = {
 		ai_chance = {
 			factor = 50
 		}
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 	after = {
 		clr_country_flag = had_the_authorized_version
