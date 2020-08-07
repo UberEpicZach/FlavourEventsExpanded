@@ -440,7 +440,7 @@ country_event = {
 			}
 			add_permanent_claim = ROOT
 		}
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		add_country_modifier = {
 			name = FEE_Swiss_Expansionism
 			duration = -1
@@ -449,7 +449,7 @@ country_event = {
 	option = {
 		name = fee_SWI.10.b
 		set_in_empire = no
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		add_country_modifier = {
 			name = FEE_Swiss_Neutrality
 			duration = -1
