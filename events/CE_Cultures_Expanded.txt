@@ -595,7 +595,7 @@ country_event = {
 			mil = 6
 		}
 		highlight = yes
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		POL = {
 			add_casus_belli = {
 				target = HUN
