@@ -34,7 +34,7 @@ country_event = {
 	}
 	option = {
 		name = fee_DAN.1.a
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		SWE = {
 			country_event = {
 				id = fee_DAN.2
@@ -454,7 +454,7 @@ country_event = {
 	option = {
 		name = fee_DAN.9.a
 		change_government = absolute_monarchy
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		add_country_modifier = {
 			name = fee_danish_absolutism
 			duration = -1
@@ -509,7 +509,7 @@ country_event = {
 	}
 	option = {
 		name = fee_DAN.11.a
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		add_prestige = 10
 		add_adm_power = 10
 		add_dip_power = 10
@@ -1075,7 +1075,7 @@ country_event = {
 	}
 	option = {
 		name = fee_DAN.24.a
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		if = {
 			limit = {
 				is_expanded_mod_active = { mod = governments }
