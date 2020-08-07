@@ -454,7 +454,7 @@ country_event = {
 			has_idea_group = humanist_ideas
 		}
 		custom_tooltip = fee_TUS.8.c.tt
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 }
 
@@ -495,7 +495,7 @@ country_event = {
 	}
 	option = {
 		name = fee_TUS.10.a
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		add_country_modifier = {
 			name = fee_tuscan_reforms
 			duration = -1
@@ -519,7 +519,7 @@ country_event = {
 	}
 	option = {
 		name = fee_TUS.10.b
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		add_adm_power = 100
 		add_legitimacy = 10
 	}
