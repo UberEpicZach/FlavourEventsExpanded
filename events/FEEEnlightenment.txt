@@ -79,7 +79,7 @@ country_event = {
 
 	option = {
 		name = fee_enlightenment.2.b
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 }
 
@@ -192,7 +192,7 @@ country_event = {
 		add_papal_influence = 15
 		add_fervor = 25
 		add_church_power = 25
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		add_country_modifier = {
 			name = fee_scientific_revolution_opposed
 			duration = -1
@@ -1170,7 +1170,7 @@ country_event = {
 
 	option = {
 		name = fee_enlightenment.22.a
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		random_neighbor_country = {
 			limit = {
 				has_country_modifier = fee_enlightenment
