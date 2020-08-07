@@ -251,7 +251,7 @@ country_event = {
 	option = {
 		name = fee_NAP.6.a
 		add_prestige = 10
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		add_treasury = 50
 	}
 }
