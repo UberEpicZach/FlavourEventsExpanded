@@ -103,7 +103,7 @@ country_event = {
 	}
 	option = {
 		name = FEE_Bill_Wurtz_Events.3.b
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		set_country_flag = bill_wurtz_indulgences
 		add_reform_desire = 0.03
 	}
