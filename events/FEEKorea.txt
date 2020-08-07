@@ -157,7 +157,7 @@ country_event = {
 	}
 	option = {
 		name = fee_KOR.3.b
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 }
 
@@ -290,7 +290,7 @@ country_event = {
 			skill = 3
 			discount = yes
 		}
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 	option = {
 		name = fee_KOR.6.b
