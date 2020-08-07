@@ -389,6 +389,6 @@ country_event = {
 	option = {
 		name = FEE_HRE_Minors.8.d
 		add_prestige = 10
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 }
