@@ -414,7 +414,7 @@ country_event = {
 	}
 	option = {
 		name = CE_brandenburg_expanded.7.b
-		add_prestige = 5
+		add_stability = -1
 		ai_chance = {
 			factor = 1
 			modifier = {
