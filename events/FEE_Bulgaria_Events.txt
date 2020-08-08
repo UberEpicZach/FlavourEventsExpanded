@@ -34,7 +34,7 @@ country_event = {
 						has_building = fort_15th
 					}
 				}
-				add_treasury = -100
+				BUL = { add_treasury = -100 }
 				add_building = fort_15th
 			}
 		}
