@@ -138,3 +138,9 @@ fee_ruler_trait_trusting = {
 fee_ruler_trait_zealous = {
    
 }
+
+#BOH
+FEE_BOH_OPINION = {
+    opinion = 200
+	yearly_decay = 10
+}
