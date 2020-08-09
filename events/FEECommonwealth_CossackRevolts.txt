@@ -1,11 +1,25 @@
+##########################################################
+# Lumisentius' second attempt in making Cossack Revolts. #
+# Date: 11.07.2020										 #
+# Latest update: 09.08.2020								 #
+# Finished event chains:								 #
+# 	- Cossack Raids Against Ottomans					 #
+# 	- Kosinski Uprising									 #
+# 	- Nalyvaiko Uprising								 #
+#														 #
+# Planned event chains:									 #
+#	- Khmelnytskyi Uprising								 #
+# Total amount of events: 25							 #
+##########################################################
+
 namespace = fee_plc_cr
 
 # [COSSACK RAIDS AGAINST OTTOMANS CHAIN]
 # Cossack Raids
 country_event = {
 	id = fee_plc_cr.1
-	title = "1_cr_title"
-	desc = "1_cr_desc"
+	title = "cr_1_title"
+	desc = "cr_1_desc"
 	picture = BARBARY_PIRATES_eventPicture
 	fire_only_once = yes
 	
@@ -27,7 +41,7 @@ country_event = {
 	mean_time_to_happen = { months = 60 }
 	
 	option = {
-		name = "1_cr_a"
+		name = "cr_1_a"
 		ai_chance = { factor = 85 }
 		
 		hidden_effect = {
@@ -42,7 +56,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "1_cr_b"
+		name = "cr_1_b"
 		ai_chance = { factor = 15 }
 		
 		add_prestige = -15
@@ -54,13 +68,13 @@ country_event = {
 # Threatened by Sultan
 country_event = {
 	id = fee_plc_cr.2
-	title = "2_cr_title"
-	desc = "2_cr_desc"
+	title = "cr_2_title"
+	desc = "cr_2_desc"
 	picture = DIPLOMACY_eventPicture
 	is_triggered_only = yes
 	
 	option = {
-		name = "2_cr_a"
+		name = "cr_2_a"
 		ai_chance = { factor = 90 }
 		
 		add_country_modifier = {
@@ -73,13 +87,13 @@ country_event = {
 				id = fee_plc_cr.3
 				days = 30
 				random = 15
-				tooltip = "2_cr_a_tooltip"
+				tooltip = "cr_2_a_tooltip"
 			}
 		}
 	}
 	
 	option = {
-		name = "2_cr_b"
+		name = "cr_2_b"
 		ai_chance = { factor = 10 }
 		
 		add_prestige = 15
@@ -89,7 +103,7 @@ country_event = {
 				id = fee_plc_cr.4
 				days = 30
 				random = 15
-				tooltip = "2_cr_b_tooltip"
+				tooltip = "cr_2_b_tooltip"
 			}
 		}
 	}
@@ -98,13 +112,13 @@ country_event = {
 # Commonwealth accepts our demands
 country_event = {
 	id = fee_plc_cr.3
-	title = "3_cr_title"
-	desc = "3_cr_desc"
+	title = "cr_3_title"
+	desc = "cr_3_desc"
 	picture = DIPLOMACY_eventPicture
 	is_triggered_only = yes
 	
 	option = {
-		name = "3_cr_a"
+		name = "cr_3_a"
 		
 		add_stability_or_adm_power = yes
 		add_prestige = 15
@@ -114,8 +128,8 @@ country_event = {
 # Commonwealth rejects our demands
 country_event = {
 	id = fee_plc_cr.4
-	title = "4_cr_title"
-	desc = "4_cr_desc"
+	title = "cr_4_title"
+	desc = "cr_4_desc"
 	picture = BORDER_TENSION_eventPicture
 	is_triggered_only = yes
 	
@@ -131,7 +145,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "4_cr_a"
+		name = "cr_4_a"
 	}
 }
 
@@ -139,8 +153,8 @@ country_event = {
 # A Conflict between Ruthenian Nobility
 country_event = {
 	id = fee_plc_cr.5
-	title = "5_cr_title"
-	desc = "5_cr_desc"
+	title = "cr_5_title"
+	desc = "cr_5_desc"
 	picture = BORDER_TENSION_eventPicture
 	fire_only_once = yes
 	
@@ -159,7 +173,7 @@ country_event = {
 	mean_time_to_happen = { months = 12 }
 	
 	option = {
-		name = "5_cr_a"
+		name = "cr_5_a"
 		
 		280 = { add_devastation = 2 }
 		
@@ -176,13 +190,13 @@ country_event = {
 # Ruthenian Noble names himself a Hetman
 country_event = {
 	id = fee_plc_cr.6
-	title = "6_cr_title"
-	desc = "6_cr_desc"
+	title = "cr_6_title"
+	desc = "cr_6_desc"
 	picture = ANGRY_MOB_eventPicture
 	is_triggered_only = yes
 	
 	option = {
-		name = "6_cr_a"
+		name = "cr_6_a"
 		
 		hidden_effect = {
 			random_list = {
@@ -208,13 +222,13 @@ country_event = {
 # End of Kosinski Uprising (Success)
 country_event = {
 	id = fee_plc_cr.7
-	title = "7_cr_title"
-	desc = "7_cr_desc"
+	title = "cr_7_title"
+	desc = "cr_7_desc"
 	picture = CONQUEST_eventPicture
 	is_triggered_only = yes
 	
 	option = {
-		name = "7_cr_a"
+		name = "cr_7_a"
 		
 		# +Mission for ME and a mechanism preventing next event chain from firing before this one is over.
 		set_country_flag = PLC_dealt_with_kosinski_uprising
@@ -224,13 +238,13 @@ country_event = {
 # Embarrassing Failure
 country_event = {
 	id = fee_plc_cr.8
-	title = "8_cr_title"
-	desc = "8_cr_desc"
+	title = "cr_8_title"
+	desc = "cr_8_desc"
 	picture = BATTLE_eventPicture
 	is_triggered_only = yes
 	
 	option = {
-		name = "8_cr_a"
+		name = "cr_8_a"
 		
 		add_prestige = -10
 		
@@ -356,13 +370,13 @@ country_event = {
 # End of Kosinski Uprising (Intervention)
 country_event = {
 	id = fee_plc_cr.9
-	title = "9_cr_title"
-	desc = "9_cr_desc"
+	title = "cr_9_title"
+	desc = "cr_9_desc"
 	picture = CONQUEST_eventPicture
 	is_triggered_only = yes
 	
 	option = {
-		name = "9_cr_a"
+		name = "cr_9_a"
 		
 		set_country_flag = PLC_dealt_with_kosinski_uprising
 	}
@@ -372,8 +386,8 @@ country_event = {
 # An influental Cossack demands changes
 country_event = {
 	id = fee_plc_cr.10
-	title = "10_cr_title"
-	desc = "10_cr_desc"
+	title = "cr_10_title"
+	desc = "cr_10_desc"
 	picture = SEJM_eventPicture
 	fire_only_once = yes
 	
@@ -398,7 +412,7 @@ country_event = {
 	mean_time_to_happen = { months = 64 }
 	
 	option = {
-		name = "10_cr_a"
+		name = "cr_10_a"
 		
 		trigger = {
 			NOT = {
@@ -440,7 +454,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "10_cr_b"
+		name = "cr_10_b"
 		
 		trigger = {
 			OR = {
@@ -468,7 +482,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "10_cr_c"
+		name = "cr_10_c"
 		
 		trigger = { ruler_has_personality = kind_hearted_personality }
 		
@@ -488,7 +502,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "10_cr_d"
+		name = "cr_10_d"
 		
 		trigger = {
 			OR = {
@@ -513,7 +527,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "10_cr_e"
+		name = "cr_10_e"
 	
 		trigger = {
 			OR = {
@@ -538,7 +552,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "10_cr_f"
+		name = "cr_10_f"
 	
 		trigger = {
 			OR = {
@@ -563,7 +577,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "10_cr_g"
+		name = "cr_10_g"
 		
 		trigger = {
 			OR = {
@@ -591,13 +605,13 @@ country_event = {
 # Szlachta Agrees
 country_event = {
 	id = fee_plc_cr.11
-	title = "11_cr_title"
-	desc = "11_cr_desc"
+	title = "cr_11_title"
+	desc = "cr_11_desc"
 	picture = SEJM_eventPicture
 	is_triggered_only = yes
 	
 	option = {
-		name = "11_cr_a"
+		name = "cr_11_a"
 		set_country_flag = PLC_dealt_with_nalyvaiko_uprising
 		set_country_flag = PLC_dealt_with_nalyvaiko_uprising_peacefully
 	}
@@ -606,13 +620,13 @@ country_event = {
 # Szlachta Refuses
 country_event = {
 	id = fee_plc_cr.12
-	title = "12_cr_title"
-	desc = "12_cr_desc"
+	title = "cr_12_title"
+	desc = "cr_12_desc"
 	picture = SEJM_eventPicture
 	is_triggered_only = yes
 	
 	option = {
-		name = "12_cr_a"
+		name = "cr_12_a"
 		
 		hidden_effect = {
 			country_event = {
@@ -627,13 +641,13 @@ country_event = {
 # Szlachta Requests our Help
 country_event = {
 	id = fee_plc_cr.13
-	title = "13_cr_title"
-	desc = "13_cr_desc"
+	title = "cr_13_title"
+	desc = "cr_13_desc"
 	picture = NOBLE_ESTATE_eventPicture
 	is_triggered_only = yes
 	
 	option = {
-		name = "13_cr_a"
+		name = "cr_13_a"
 		
 		define_general = {
 			shock = 4
@@ -733,7 +747,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "13_cr_b"
+		name = "cr_13_b"
 		
 		hidden_effect = {
 			country_event = {
@@ -747,13 +761,13 @@ country_event = {
 # End of Nalyvaiko Uprising (Peacefully)
 country_event = {
 	id = fee_plc_cr.14
-	title = "14_cr_title"
-	desc = "14_cr_desc"
+	title = "cr_14_title"
+	desc = "cr_14_desc"
 	picture = FAMINE_eventPicture
 	is_triggered_only = yes
 	
 	option = {
-		name = "14_cr_a"
+		name = "cr_14_a"
 		
 		set_country_flag = PLC_dealt_with_nalyvaiko_uprising
 		set_country_flag = PLC_dealt_with_nalyvaiko_uprising_peacefully_2
@@ -814,13 +828,13 @@ country_event = {
 # Rebels Were Forced to Retreat
 country_event = {
 	id = fee_plc_cr.15
-	title = "15_cr_title"
-	desc = "15_cr_desc"
+	title = "cr_15_title"
+	desc = "cr_15_desc"
 	picture = BATTLE_eventPicture
 	is_triggered_only = yes
 	
 	option = {
-		name = "15_cr_a"
+		name = "cr_15_a"
 		
 		hidden_effect = {
 			4542 = {
@@ -907,13 +921,13 @@ country_event = {
 # End of Nalyvaiko Uprising (Default)
 country_event = {
 	id = fee_plc_cr.16
-	title = "16_cr_title"
-	desc = "16_cr_desc"
+	title = "cr_16_title"
+	desc = "cr_16_desc"
 	picture = VILLAGE_BURNING_eventPicture
 	is_triggered_only = yes
 	
 	option = {
-		name = "16_cr_a"
+		name = "cr_16_a"
 		
 		hidden_effect = {
 			if = {
@@ -940,13 +954,13 @@ country_event = {
 # Negotiations with Rebels â„–1
 country_event = {
 	id = fee_plc_cr.17
-	title = "17_cr_title"
-	desc = "17_cr_desc"
+	title = "cr_17_title"
+	desc = "cr_17_desc"
 	picture = GENERALS_DISCUSSING_eventPicture
 	is_triggered_only = yes
 	
 	option = {
-		name = "17_cr_a"
+		name = "cr_17_a"
 		
 		hidden_effect = {
 			random_list = {
@@ -960,32 +974,32 @@ country_event = {
 # Negotiations with Rebels (Failure)
 country_event = {
 	id = fee_plc_cr.18
-	title = "18_cr_title"
-	desc = "18_cr_desc"
+	title = "cr_18_title"
+	desc = "cr_18_desc"
 	picture = GENERALS_DISCUSSING_eventPicture
 	is_triggered_only = yes
 	
 	option = {
-		name = "18_cr_a"
+		name = "cr_18_a"
 	}
 }
 
 # Negotiations with Rebels â„–2
 country_event = {
 	id = fee_plc_cr.19
-	title = "19_cr_title"
-	desc = "19_cr_desc"
+	title = "cr_19_title"
+	desc = "cr_19_desc"
 	picture = GENERALS_DISCUSSING_eventPicture
 	is_triggered_only = yes
 	
 	option = {
-		name = "19_cr_a"
+		name = "cr_19_a"
 		
 		hidden_effect = { country_event = { id = fee_plc_cr.20 } }
 	}
 	
 	option = {
-		name = "19_cr_b"
+		name = "cr_19_b"
 		
 		hidden_effect = { country_event = { id = fee_plc_cr.21 } }
 	}
@@ -994,8 +1008,8 @@ country_event = {
 # Negotiations with Rebels (Peacefully)
 country_event = {
 	id = fee_plc_cr.20
-	title = "20_cr_title"
-	desc = "20_cr_desc"
+	title = "cr_20_title"
+	desc = "cr_20_desc"
 	picture = MILITARY_CAMP_eventPicture
 	is_triggered_only = yes
 	
@@ -1018,7 +1032,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "20_cr_a"
+		name = "cr_20_a"
 		
 		add_estate_loyalty = {
 			estate = estate_nobles
@@ -1035,8 +1049,8 @@ country_event = {
 # Negotiations with Rebels (Bloody)
 country_event = {
 	id = fee_plc_cr.21
-	title = "21_cr_title"
-	desc = "21_cr_desc"
+	title = "cr_21_title"
+	desc = "cr_21_desc"
 	picture = VILLAGE_RAIDED_eventPicture
 	is_triggered_only = yes
 	
@@ -1057,7 +1071,7 @@ country_event = {
 	}
 	
 	option = {
-		name = "21_cr_a"
+		name = "cr_21_a"
 		
 		add_estate_loyalty = {
 			estate = estate_nobles
