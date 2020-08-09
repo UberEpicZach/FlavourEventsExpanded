@@ -335,9 +335,10 @@ country_event = {
 			add_stability_or_adm_power = yes
 			capital_scope = {
 			add_base_tax = 1
+			}
 			hidden_effect = {
 				remove_country_modifier = per_the_qizilbash
-			}
+			
 			}
 		}
 		
