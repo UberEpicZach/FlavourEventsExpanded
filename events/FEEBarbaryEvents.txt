@@ -18,7 +18,7 @@ country_event = {
 			region = maghreb_region
 			has_port = yes
 		}
-		religion = islam
+		religion_group = muslim
 		is_year = 1490
 		NOT = { 
 			is_year = 1520
