@@ -96,7 +96,7 @@ country_event = {
 		trigger = {
 			or = {
 				has_idea_group = humanist_ideas
-				personality = tolerant_personality
+				ruler_has_personality = tolerant_personality
 			}
 		}
 		if = {
