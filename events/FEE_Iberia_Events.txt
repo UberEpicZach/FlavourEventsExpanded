@@ -1523,6 +1523,7 @@ country_event = {
 		add_years_of_income = -0.5
 		add_country_modifier = {
 			name = iberia_benedictine_reforms
+			duration = -1
 		}
 	}
 
@@ -1637,6 +1638,7 @@ country_event = {
 		add_papal_influence = 10
 		add_country_modifier = {
 			name = iberia_jesuit_education
+			duration = -1
 		}
 	}
 
