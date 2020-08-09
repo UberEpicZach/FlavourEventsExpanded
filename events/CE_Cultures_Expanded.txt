@@ -671,7 +671,7 @@ country_event = {
 				loyalty = -15
 			}
 		}
-		else = {
+		else if = {
 			limit = {
 				GLG = {
 					is_subject_of = HUN
@@ -750,7 +750,7 @@ country_event = {
 				}
 			}
 		}
-		else = {
+		else if = {
 			limit = {
 				GLG = {
 					is_subject_of = HUN
