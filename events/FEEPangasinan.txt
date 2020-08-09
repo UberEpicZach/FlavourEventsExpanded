@@ -43,7 +43,7 @@ country_event = {
 			name = "Lim"
 			dynasty = "Hong"
 			culture = hakka
-			religion = confucian
+			religion = confucianism
 			male = yes
 			adm = 2
 			dip = 5
@@ -103,7 +103,7 @@ country_event = {
 			define_ruler = {
 				name = "Lim Hong"
 				culture = hakka
-				religion = confucian
+				religion = confucianism
 				male = yes
 				adm = 2
 				dip = 5
@@ -173,7 +173,7 @@ country_event = {
 			define_ruler = {
 				name = "Lim Hong"
 				culture = hakka
-				religion = confucian
+				religion = confucianism
 				male = yes
 			}			
 		}	
@@ -224,7 +224,7 @@ country_event = {
 			name = "Lim Hong"
 			skill = 1
 			culture = hakka
-			religion = confucian
+			religion = confucianism
 		}		
 	}	
 }
