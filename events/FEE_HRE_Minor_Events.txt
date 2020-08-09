@@ -94,7 +94,7 @@ country_event = {
 	option = {
 		name = FEE_HRE_Minors.2.c
 		trigger = {
-			or = {
+			OR = {
 				has_idea_group = humanist_ideas
 				ruler_has_personality = tolerant_personality
 			}
