@@ -71,6 +71,7 @@ country_event = {
 		name = fee_HAM.2.b
 		add_country_modifier = {
 			name = fee_hamburg_strict_control
+			duration = -1
 		}
 	}
 }
