@@ -228,10 +228,12 @@ country_event = {
 	option = {
 		name = fee_GEN.6.a
 		add_prestige = -5
+		101 = {
 		spawn_rebels = {
 			type = nationalist_rebels
 			size = 2
 			win = yes
+			}
 		}
 	}
 }
