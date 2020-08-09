@@ -21,6 +21,7 @@ country_event = {
 		months = 24
 	}
 	option = {
+		add_years_of_income = -0.25
 		# build fort
 		name = FEE_Bulgaria_Events.1.a
 		4704 = {
@@ -34,11 +35,10 @@ country_event = {
 						has_building = fort_15th
 					}
 				}
-				BUL = { add_treasury = -100 }
+				owner = { add_treasury = -100 }
 				add_building = fort_15th
 			}
-		}
-		add_years_of_income = -0.25
+		}	
 		ai_chance = {
 			factor = 100
 		}
