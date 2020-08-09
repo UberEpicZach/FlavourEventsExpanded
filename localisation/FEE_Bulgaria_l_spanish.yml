@@ -1,0 +1,37 @@
+﻿l_spanish:
+ FEE_Bulgaria_Events.1.tt: "Reconstrucción del Tsarevets"
+ FEE_Bulgaria_Events.1.dd: "Durante la ocupación, los otomanos destruyeron numerosas fortalezas en nuestras tierras para reducir las posibilidades de rebelión de nuestro pueblo. El Tsarevets fue una de esas fortalezas, asediada en 1393, se ha dejado que se derrumbe a lo largo de los siglos. La iglesia, que se encuentra en la cima de la colina en las partes internas de la fortaleza, ya no recibe muchos visitantes. La ciudad fuera de la Fortaleza ha crecido mucho después de la caída de Bulgaria en 1396. Para honrar la gloria de los hermanos Asen y Peter, debemos reconstruir la fortaleza, desde donde comenzó la segunda vida de Bulgaria. Los muros se ampliarán y se rehacerán, ¡el puente que conecta la fortaleza con la ciudad será renovado! ¡Con la ayuda de hábiles búlgaros, El Tsarevets superará la gloria de cualquier ciudad búlgara anterior!"
+ FEE_Bulgaria_Events.1.a: "¡Reconstruyan el Tsarevets!"
+ FEE_Bulgaria_Events.1.b: "¡Basura! ¡Demos más dinero a nuestros oficiales de reclutamiento para hacer crecer nuestro ejército!"
+ FEE_Bulgaria_Events.1.c: "¡No! ¡Pongamos el dinero en los edificios administrativos de Tarnovo!"
+ FEE_Bulgaria_Events.1.d: "¡Esperen! ¡Utilicemos el dinero para ayudar a mejorar la infraestructura del campesinado circundante!"
+ FEE_Bulgaria_Events.2.tt: "Desfiles Militares Búlgaros a través de Tsargrad"
+ FEE_Bulgaria_Events.2.dd: "Muchos pensaron que nuestras ambiciones de ser el único hegemón de los Balcanes eran escandalosas, que seríamos derrotados de la Tierra, como en 1382; Ay, nos levantamos y destruimos a todos los que se nos opusieron, mostramos al mundo nuestro prestigio y hoy celebramos nuestras conquistas y nuestra prosperidad; ¡Hoy! ¡Celebramos a los hombres que se sacrificaron en nombre del Zar, ¡Hoy! Alentamos a las mujeres, que criaron a nuestros hijos, que mantuvieron a nuestro país en ciernes. En ese tiempo, habíamos construido una academia en la ciudad, para enseñar a nuestros soldados de reserva cómo entretener a la gente con tales comodidades y hoy vemos el resultado. Los soldados desfilan frente a la Columna de Constantino, el Obelisco de Teodosio y Hagia Sophia. Nuestro Zar los sigue, usualmente visto en túnica, hoy se lo ve con uniforme de oficial, marchando con los soldados, saludando a su pueblo bendiciendo a los infantes y mostrándoles que él también es un humano, que no sería nada; si no fuera por ellos. Después de la marcha, viene una demostración de brillantez, soldados mostrando su disciplina, caballería usando sus caballos para saltar obstáculos y una marca de cañón que dispara explosivos desde las tierras del este. Estas festividades le han demostrado al pueblo que nuestra dinastía fue verdaderamente elegida por los Dioses y que protegeremos los intereses no solo de aquellos que son de origen búlgaro, sino de aquellos a quienes ella protege dentro de sus fronteras."
+ FEE_Bulgaria_Events.2.a: "Dulgo da caruva Tsarya! Spokoino da zhivee naroda! I nepobedima da e Bulgaria!"
+
+ FEE_Bulgaria_Events.3.tt: "Estatua de Simeón el Grande"
+ FEE_Bulgaria_Events.3.dd: "Después de mucho debate sobre qué hacer para celebrar nuestra gran nación, muchos historiadores recomiendan que construyamos una estatua en honor de Simeón el Grande, el primer Zar de Bulgaria. Los arquitectos de nuestra corte nos dicen que deberíamos hacerlo en mármol, como para reflejar el mito griego de que Konstantinos XI se convirtió en mármol, y que regresaría para restaurar Roma cuando Constantinopla les fuera devuelta. Nuestros generales nos dicen que debemos convertirlo en un Santo de la Guerra, para reunir tropas más fácilmente e inculcar honor a nuestros soldados. Nuestros comerciantes nos dicen que lo hagamos una luz brillante en la oscuridad del Mediterráneo, para ayudar a guiar a los comerciantes a nuestra gloriosa nación. Depende de nuestro gobernante [Root.Monarch.GetName] decidir."
+ FEE_Bulgaria_Events.3.a: "Un símbolo para infundir honor a nuestros soldados."
+ FEE_Bulgaria_Events.3.b: "Una antorcha para iluminar el Mediterráneo."
+ FEE_Bulgaria_Events.3.c: "No podemos permitirnos esto ahora, pregúntame más tarde."
+ FEE_Bulgaria_Events.3.d: "!NUNCA¡."
+
+
+ # modifiers
+ FEE_Tarnovo_Great_Fort: "El Gran Fuerte de Tsarevets"
+ desc_FEE_Tarnovo_Great_Fort: "Un gran fuerte que cayó en 1393, ahora reconstruido con su antigua gloria"
+ FEE_Bulgarian_Recruitment_Drive: "Campaña de reclutamiento de Tarnovo"
+ desc_FEE_Bulgarian_Recruitment_Drive: "El dinero se quito del proyecto de reconstrucción del Tsarevet, y se destino al crecimiento de nuestras fuerzas armadas."
+ FEE_Bulgarian_Administrative_Improvement: "Esfuerzos Administrativos de Tarnovo"
+ desc_FEE_Bulgarian_Administrative_Improvement: "El dinero se quito fuera del proyecto de reconstrucción del Tsarevets y se destino al crecimiento de nuestras capacidades administrativas."
+ FEE_Tarnovo_Agrarian_Improvement: "Proyecto de revitalización de tierras de Tarnovo"
+ desc_FEE_Tarnovo_Agrarian_Improvement: "El Dinero se quito del proyecto de reconstrucción del Tsarevets y se destino al crecimiento de nuestras comunidades agrarias."
+ FEE_Bulgarian_Parades_Through_Tsargrad: "Desfile por Tsargrad"
+ desc_FEE_Bulgarian_Parades_Through_Tsargrad: "¡Nuestros ejércitos triunfan! ¡La ciudad del deseo del mundo es nuestra!"
+
+ FEE_Bulgarian_Statue_Military: "Estatua de Simeón el Grande"
+ desc_FEE_Bulgarian_Statue_Military: "¡La estatua de Simeón el Grande marcará para siempre la grandeza de nuestros ejércitos!"
+ FEE_Bulgarian_Statue_Trade: "Estatua de Simeón el Grande"
+ desc_FEE_Bulgarian_Statue_Trade: "¡El faro resplandeciente de La estatua de Simeón el Grande brillará para siempre sobre el Mediterráneo!"
+ FEE_Bulgaria_Constantinople_Statue_Trade: "Estatua de Simeón el Grande"
+ desc_FEE_Bulgaria_Constantinople_Statue_Trade: "¡El faro resplandeciente de La estatua de Simeón el Grande brillará para siempre sobre el Mediterráneo!" 
