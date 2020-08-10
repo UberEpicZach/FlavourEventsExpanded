@@ -15,6 +15,7 @@
  CE_iron_and_blood: "Iron and Blood"
  CE_Wurzburger_Lands: "Bishopric Privilege"
  CE_Infertile: "Not possible to have an heir right now."
+ CE_hungarian_papal_subsidies: "Papal"
  
  CE_opinion_bid_for_emperor: "Bid for the Emperorship"
  CE_barbara_marriage: "Barbara von Hohenzollern"
@@ -46,9 +47,6 @@
  ME_Hungary_Hungarian_Solution_title: "Hungarian Solution"
  ME_Hungary_Consolidate_Bohemia_title: "The Bohemian Crown"
  ME_Hungary_Silesian_Duchies_title: "Silesian Duchies"
- 
- GEY_discipline_1: "Commandant"
- GEY_discipline_2: "Commandant"
  
  cultures_expanded.1.t: "Transylvanian Saxons"
  cultures_expanded.1.d: "Following the crusades and wars fought over our beloved kingdom, the kings of Hungary have consistently encouraged and granted settlement rights to knights, soldier, and artisans from the Holy Roman Empire to settle in the Southern parts of our nation to support the defence of our nation."
@@ -89,18 +87,7 @@
  cultures_expanded.8.d: "Following the papal call to arms against the excommunicated George of Podebrady, Matyas of Hungary invaded the lands of the Bohemian Crown, conquering about half of these lands, but failing to continue his advance into Bohemia Proper. The Catholic estates of the Bohemian Crown elected Matyas of Hungary to be their new king as he held papal favor and was already the de-facto controller of much of the Bohemian Crown."
  cultures_expanded.8.a: "Now to get the crown"
  
- cultures_expanded.9.t: "Diet of 1468" 
- cultures_expanded.9.d: "The Diet of 1468 was called by Matyas Corvinus to fund the war against Bohemia, and while the Diet eventually was willing to grand the right to levy an additional tax, but only after several religious and secular lords pledged he would not increase the taxation any further."
- cultures_expanded.9.a: "Excellent"
  
- cultures_expanded.10.t: "The Extraordinary Tax" 
- cultures_expanded.10.d: "Following a painful blow during the war, Matyas required additional funds to restore his army and reassert himself in the conflict. Without consulting or seeking permission from the Diet, he raised another tax to continue the war effort."
- cultures_expanded.10.a: "I hope this doesn't come back to bite me."
- 
- cultures_expanded.11.t: "Diet of 1470" 
- cultures_expanded.11.d: "The Diet of 1470 was called by Matyas Corvinus to restore the faith of the estates in his rulership following the costly war and the high taxes Matyas raised without asking the Diet for permission, as well as breaking the faith the estates had put into him to not impose further taxes. Even going so far as offering the hungarian crown to the king of poland. Only the fear of Matyas Corvinus's reputation swayed them from attempting to overthrow him and rise in rebellion."
- cultures_expanded.11.a: "I swear i will respect the Diet and will not levy taxes without permission."
- cultures_expanded.11.b: "If only Matyas was still among us."
 
  cultures_expanded.12.t: "Frederick of Liegniz" 
  cultures_expanded.12.d: "Following the conquest of the Silesian duchies, it became apparent that they are a proud and diverse people, with their nobility splintered in dozens of duchies and impossible to pin down. To still manage the shared defence and governing of Silesia, Matyas Corvinus attempted to place the Silesian duke 'Frederick of Liegniz' as captain-general of Silesia, but this was rejected by the dukes of Silesia."
@@ -285,7 +272,29 @@
  CE_brandenburg_expanded.30.d: "The United Duchies have declared for the Palatinate, We will need to face them on the battlefield if we are to gain control over our rightfull inheritance!"
  CE_brandenburg_expanded.30.a: "Fire and Blood!"
  CE_brandenburg_expanded.30.b: "Enough Blood has been spilled, call it off."
+
+ CE_brandenburg_expanded.31.t: "Levy the wine tonnage"
+ CE_brandenburg_expanded.31.d: "After ascending to the Brandenburger throne, Albert decided to implement a customs tax on wine within his Brandenburger territories. These funds would later allow him to wage war in both the Ickermark, Pommerania-Stettin and secure the Silesian lands for Barbara von Hohenzollen"
+ CE_brandenburg_expanded.31.a: "Fill The Coffers!"
+ CE_brandenburg_expanded.31.b: "Lets not burden the Burghers."
+ CE_BRA_Wine_Customs: "Wine Customs"
  
+ CE_brandenburg_expanded.32.t: "Beer Excise"
+ CE_brandenburg_expanded.32.d: "To raise additional funds for the purchase of lusatia and regain some of the northern mark's territories, Johan Cicero attempted to raise an additional tax on beer, but this was strongly contested by the local populace, especially the Altmarkian peasantry and brewers were firm in their opposition to the Excise, as this was a tax that was levied upon production rather then consumption, and would hurt their sales drastically."
+ CE_brandenburg_expanded.32.a: "Pass the tax."
+ CE_brandenburg_expanded.32.b: "Perhaps we're better of with a happy peasantry."
+ CE_BRA_Beer_Excise: "Beer Excise"
+ 
+ CE_brandenburg_expanded.33.t: "Desecration of the Host"
+ CE_brandenburg_expanded.33.d: "A group of Jews stand accused of desecrating the host of christ, and the clergy/mob is calling for their heads and have already sacked and burned several Jewish communities and are demanding your support in driving them out of the Mark of Brandenburg."
+ CE_brandenburg_expanded.33.a: "Exile the Brandenburger Jews."
+ CE_brandenburg_expanded.33.b: "Deploy the army to restore order."
+
+ CE_brandenburg_expanded.34.t: "Furstentag of 1539"
+ CE_brandenburg_expanded.34.d: "At the Imperial Diet of 1539, it was revealed by a Lutheran delegate that the story of Jewish desecration of the catholic host in Brandenburg was a fabricated lie, and the resulting riots, persecutions and exile was unjust. After the Diet a Jewish advocate approached the Elector to ask him to repeal the decree that exiled the jews, and to allow their re-settlement of the Mark of Brandenburg."
+ CE_brandenburg_expanded.34.a: "Let the Jews return to Brandenburg."
+ CE_brandenburg_expanded.34.b: "Maintain the Edict."
+
  ##Hohenzollerns of Franconia##
 
  CE_ansbach_expanded.1.t: "The Ambition of Achilles"
@@ -414,6 +423,7 @@
  CE_hungary_expanded.5.t: "Papal Subsidies"
  CE_hungary_expanded.5.d: "Accepting the offer of the pope and joining the war against Bohemia with Austria is proving to be a smart move, as the pope today has declared monetary subsidies to the Crusading efforts in Bohemia - making things better, Austria doesn't know about our offer of Kingship, nor will they."
  CE_hungary_expanded.5.a: "Onwards to victory!"
+ CE_hungarian_papal_subsidies: "Papal Subsidies"
 			
 
  CE_hungary_expanded.6.t: "King of Bohemia"
@@ -447,3 +457,16 @@
  CE_hungary_expanded.11.d: "It wasn't until we sent three other letters to [HAB.Capital.GetName], that we had finally concluded that, No, Austria would not give us our due./"
  CE_hungary_expanded.11.a: "If [HAB.Capital.GetName] won't pay us, why not take [HAB.Capital.GetName]?"
  CE_hungary_expanded.11.b: "A shame." 
+
+ CE_hungary_expanded.12.t: "Diet of 1468" 
+ CE_hungary_expanded.12.d: "The Diet of 1468 was called by Matyas Corvinus to fund the war against Bohemia, and while the Diet eventually was willing to grand the right to levy an additional tax, but only after several religious and secular lords pledged he would not increase the taxation any further."
+ CE_hungary_expanded.12.a: "Excellent"
+ 
+ CE_hungary_expanded.13.t: "The Extraordinary Tax" 
+ CE_hungary_expanded.13.d: "Following a painful blow during the war, Matyas required additional funds to restore his army and reassert himself in the conflict. Without consulting or seeking permission from the Diet, he raised another tax to continue the war effort."
+ CE_hungary_expanded.13.a: "I hope this doesn't come back to bite me."
+ 
+ CE_hungary_expanded.14.t: "Diet of 1470" 
+ CE_hungary_expanded.14.d: "The Diet of 1470 was called by Matyas Corvinus to restore the faith of the estates in his rulership following the costly war and the high taxes Matyas raised without asking the Diet for permission, as well as breaking the faith the estates had put into him to not impose further taxes. Even going so far as offering the hungarian crown to the king of poland. Only the fear of Matyas Corvinus's reputation swayed them from attempting to overthrow him and rise in rebellion."
+ CE_hungary_expanded.14.a: "I swear i will respect the Diet and will not levy taxes without permission."
+ CE_hungary_expanded.14.b: "If only Matyas was still among us."

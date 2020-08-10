@@ -13,7 +13,6 @@ country_event = {
 		tag = HUN
 		has_country_flag = hun_has_had_matthias_corvinus_event
 		has_ruler = "Mátyás"
-		always = no
 	}
 
 	fire_only_once = yes
@@ -23,6 +22,7 @@ country_event = {
 	}
 	immediate = {
 		set_country_flag = FEE_Corvinus
+		set_ruler_flag = FEE_Matyas_Reign
 	}
 
 	option = {
@@ -41,7 +41,6 @@ country_event = {
 	trigger = {
 		tag = BOH
 		has_country_flag = first_hussite_king
-		always = no
 	}
 
 	fire_only_once = yes
@@ -72,10 +71,9 @@ country_event = {
 	trigger = {
 		tag = BOH
 		NOT = {
-			has_ruler = "Jirí z Podebrad"
+			has_ruler_modifier =  FEE_BOH_Infertility
 		}
 		has_country_flag = FEE_Podebrad
-		always = no
 	}
 
 	fire_only_once = yes
@@ -96,32 +94,31 @@ country_event = {
 		}
 		kill_heir = yes
 		add_stability = 2
-		#change_estate_land_share = {
-		#	estate = estate_nobles
-		#	share = 20
-		#}
-		custom_tooltip = FEE_BOH_Privilege_Hell
-		hidden_effect = {
-			if = {
-				limit = {
-					is_expanded_mod_active = { mod = governments }
-				}
-				set_estate_privilege = estate_noble_baron_pensions
-				set_estate_privilege = estate_noble_baron_courts
-				set_estate_privilege = estate_noble_baron_courtier
-				set_estate_privilege = estate_noble_baron_titles
-			}
+		change_estate_land_share = {
+			estate = estate_nobles
+			share = 20
 		}
+		add_country_modifier = {
+			name = FEE_BOH_noble_concessions
+			duration = -1
+		}
+		#custom_tooltip = FEE_BOH_Privilege_Hell
+		#hidden_effect = {
+		#	set_estate_privilege = estate_noble_baron_pensions
+		#	set_estate_privilege = estate_noble_baron_courts
+		#	set_estate_privilege = estate_noble_baron_courtier
+		#	set_estate_privilege = estate_noble_baron_titles
+		#}
 		POL = {
 			country_event = {
-				id = FEE_Bohemia.99
+				id = FEE_Bohemia.4
 				days = 30
 			}
 		}
 		random_owned_province = {
 			spawn_rebels = {
 				type = pretender_rebels
-				size = 2
+				size = 1
 				leader_dynasty = "Podebrad"
 				leader = "Bocek 'the Disabled'"
 			}
@@ -129,7 +126,7 @@ country_event = {
 		random_owned_province = {
 			spawn_rebels = {
 				type = pretender_rebels
-				size = 2
+				size = 1
 				leader_dynasty = "Podebrad"
 				leader = "Henry 'the Younger'"
 			}
@@ -137,7 +134,7 @@ country_event = {
 		random_owned_province = {
 			spawn_rebels = {
 				type = pretender_rebels
-				size = 2
+				size = 1
 				leader_dynasty = "Podebrad"
 				leader = "Henry 'the Elder'"
 			}
@@ -152,7 +149,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = FEE_Bohemia.3.a
+		name = FEE_Bohemia.3.b
 		define_ruler = {
 			name = "Victor z"
 			dynasty = "Podebrad"
@@ -174,45 +171,27 @@ country_event = {
 	}
 }
 
-#Bohemia #A Feud of Brothers
+#Poland #The Bohemian Throne
 country_event = {
 	id = FEE_Bohemia.4
 	title = FEE_Bohemia.4.t
 	desc = FEE_Bohemia.4.d
 	picture = CITY_VIEW_eventPicture
 
-	trigger = {
-		tag = BOH
-		has_spawned_rebels = no
-		has_country_flag = FEE_BOH_Brothers
-		always = no
-	}
+	is_triggered_only = yes
 
 	fire_only_once = yes
 
-	mean_time_to_happen = {
-		months = 1
-	}
-
 	option = {
 		name = FEE_Bohemia.4.a
-		266 = {
-			cede_province = MVA
+		reverse_add_opinion = {
+			who = POL
+			modifier = FEE_BOH_OPINION
 		}
-		2970 {
-			cede_province = MVA
-		}
-		GLG = {
-
-		}
-	}
-	option = {
-		name = FEE_Bohemia.4.a
-
 	}
 }
 
-#Bohemia #A Feud of Brothers
+#Hungary #The Death of Matyas
 country_event = {
 	id = FEE_Bohemia.5
 	title = FEE_Bohemia.5.t
@@ -220,131 +199,163 @@ country_event = {
 	picture = CITY_VIEW_eventPicture
 
 	trigger = {
-		tag = BOH
-		has_spawned_rebels = no
-		has_country_flag = FEE_BOH_Brothers
-		always = no
+		tag = HUN
+		has_country_flag = FEE_Corvinus
+		not = {
+			has_ruler_flag = FEE_Matyas_Reign
+		}
 	}
 
 	fire_only_once = yes
 
 	mean_time_to_happen = {
-		months = 1
+		days = 30
 	}
 
 	option = {
 		name = FEE_Bohemia.5.a
-		266 = {
-			cede_province = MVA
+		BOH = {
+			create_union = HUN
 		}
-		2970 {
-			cede_province = MVA
+		kill_heir = yes
+		add_stability = 2
+		change_estate_land_share = {
+			estate = estate_nobles
+			share = 20
+		}
+		add_country_modifier = {
+			name = FEE_BOH_noble_concessions
+			duration = -1
+		}
+		HAB = {
+			country_event = {
+				id = FEE_Bohemia.7
+				days = 30
+			}
+		}
+		POL = {
+			country_event = {
+				id = FEE_Bohemia.6
+				days = 30
+			}
 		}
 	}
 	option = {
-		name = FEE_Bohemia.5.a
-
+		name = FEE_Bohemia.5.b
+		define_ruler = {
+			name = "Janos"
+			dynasty = "Hunyadi"
+			adm = 2
+			dip = 3
+			mil = 5
+			age = 17
+			fixed = yes
+		}
+		kill_heir = yes
+		add_stability = -3
+		change_estate_land_share = {
+			estate = all
+			share = -10
+		}
+		add_country_modifier = {
+			name = FEE_HUN_young_janos
+			duration = -1
+		}
+		HAB = {
+			country_event = {
+				id = FEE_Bohemia.7
+				days = 30
+			}
+		}
+		TUR = {
+			country_event = {
+				id = FEE_Bohemia.8
+				days = 30
+			}
+		}
+	}
+	option = {
+		name = FEE_Bohemia.5.c
+		HAB = {
+			create_union = HUN
+		}
 	}
 }
 
+#Poland #The Hungarian Throne
 country_event = {
-	id = FEE_Bohemia.56
-	title = FEE_Bohemia.5.t
-	desc = FEE_Bohemia.5.d
+	id = FEE_Bohemia.6
+	title = FEE_Bohemia.6.t
+	desc = FEE_Bohemia.6.d
 	picture = CITY_VIEW_eventPicture
 
-	trigger = {
-		tag = BOH
-		has_spawned_rebels = no
-		has_country_flag = FEE_BOH_Brothers
-		always = no
-	}
+	is_triggered_only = yes
 
 	fire_only_once = yes
 
-	mean_time_to_happen = {
-		months = 1
-	}
-
 	option = {
 		name = FEE_Bohemia.6.a
-		266 = {
-			cede_province = MVA
+		add_opinion = {
+			who = HUN
+			modifier = FEE_BOH_OPINION
 		}
-		2970 {
-			cede_province = MVA
-		}
-	}
-	option = {
-		name = FEE_Bohemia.6.a
-
+		create_alliance = HUN
+		create_marriage = HUN
 	}
 }
 
+#Austria #The Hungarian Throne
 country_event = {
 	id = FEE_Bohemia.7
 	title = FEE_Bohemia.7.t
 	desc = FEE_Bohemia.7.d
 	picture = CITY_VIEW_eventPicture
 
-	trigger = {
-		tag = BOH
-		has_spawned_rebels = no
-		has_country_flag = FEE_BOH_Brothers
-		always = no
-	}
+	is_triggered_only = yes
 
 	fire_only_once = yes
 
-	mean_time_to_happen = {
-		months = 1
-	}
-
 	option = {
 		name = FEE_Bohemia.7.a
-		266 = {
-			cede_province = MVA
+		add_casus_belli = {
+			type = cb_restore_personal_union 
+			target = HUN
 		}
-		2970 {
-			cede_province = MVA
+		add_opinion = {
+			who = HUN
+			modifier = FEE_BOH_OPINION
 		}
 	}
 	option = {
-		name = FEE_Bohemia.7.a
-
+		name = FEE_Bohemia.7.b
+		add_prestige = -10
+		add_opinion = {
+			who = HUN
+			modifier = FEE_BOH_OPINION
+		}
 	}
 }
 
+#Ottomans #The Hungarian Throne
 country_event = {
 	id = FEE_Bohemia.8
 	title = FEE_Bohemia.8.t
 	desc = FEE_Bohemia.8.d
 	picture = CITY_VIEW_eventPicture
 
-	trigger = {
-		tag = BOH
-		has_spawned_rebels = no
-		has_country_flag = FEE_BOH_Brothers
-		always = no
-	}
+	is_triggered_only = yes
 
 	fire_only_once = yes
 
-	mean_time_to_happen = {
-		months = 1
-	}
-
 	option = {
 		name = FEE_Bohemia.8.a
-		266 = {
-			cede_province = MVA
+		transylvania_area = {
+			type = all
+			add_claim = TUR
 		}
-		2970 {
-			cede_province = MVA
+		southern_transylvania_area = {
+			type = all
+			add_claim = TUR
 		}
-	}
-	option = {
-		name = FEE_Bohemia.8.a
-
 	}
 }

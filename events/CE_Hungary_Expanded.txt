@@ -248,16 +248,27 @@ country_event = {
 					}
 				}
 			}
-		}
-		silesia_area = {
-			type = all
 			controller = {
 				OR = {
 					tag = HUN
 					tag = HAB
+					any_ally = {
+						tag = HUN
+					}
 				}
 			}
 		}
+		#all_province = {
+		#	limit = {
+		#		area = silesia_area
+		#		controller = {
+		#			OR = {
+		#				tag = HUN
+		#				tag = HAB
+		#			}
+		#		}
+		#	}
+		#}
 	}
 
 	mean_time_to_happen = {
@@ -317,6 +328,13 @@ country_event = {
 		add_ruler_modifier = {
 			name = "CE_elected_king_of_bohemia" #+0.5 Legitimacy
 			duration = -1
+		}
+		HUN = {
+			add_casus_belli = {
+				target = BOH
+				type = cb_restore_personal_union
+				months = 9125
+			}
 		}
 		HAB = {
 			country_event = {
@@ -485,3 +503,142 @@ country_event = {
 		add_prestige = -10
 	}
 }
+
+#Diet of 1468, extra taxes
+country_event = {
+	id = CE_hungary_expanded.12
+	title = CE_hungary_expanded.12.t
+	desc = CE_hungary_expanded.12.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = HUN
+		offensive_war_with = BOH
+		NOT = { is_year = 1490}
+		dynasty = Hunyadi
+	}
+	
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	option = {
+		name = CE_hungary_expanded.12.a
+		add_country_modifier = {
+			name = "CE_royal_prerogative_tax"
+			duration = 3650
+		}
+	}
+}
+
+#Taxes Without Diet
+country_event = {
+	id = CE_hungary_expanded.13
+	title = CE_hungary_expanded.13.t
+	desc = CE_hungary_expanded.13.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = HUN
+		offensive_war_with = BOH
+		NOT = { is_year = 1490}
+		dynasty = Hunyadi
+		has_country_modifier = CE_royal_prerogative_tax
+	}
+	
+	mean_time_to_happen = {
+		days = 730
+	}
+
+	option = {
+		name = CE_hungary_expanded.13.a
+		add_country_modifier = {
+			name = "CE_taxes_without_diet"
+			duration = 3650
+		}
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = -5
+		}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -5
+		}
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = -5
+		}
+	}
+}
+
+#Diet of 1470
+country_event = {
+	id = CE_hungary_expanded.14
+	title = CE_hungary_expanded.14.t
+	desc = CE_hungary_expanded.14.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = HUN
+		has_country_modifier = CE_royal_prerogative_tax
+		has_country_modifier = CE_taxes_without_diet
+	}
+	
+	mean_time_to_happen = {
+		days = 365
+	}
+
+	option = {
+		name = CE_hungary_expanded.14.a
+		trigger = {
+			dynasty = "Hunyadi"
+			mil = 6
+		}
+		highlight = yes
+		add_stability = 1
+		POL = {
+			add_casus_belli = {
+				target = HUN
+				type = cb_restore_personal_union
+				months = 9125
+			}
+		}
+	}
+	option = {
+		name = CE_hungary_expanded.14.b
+		trigger = {
+			NOT = {
+				OR = {
+					dynasty = "Hunyadi"
+					mil = 6
+				}
+			}
+		}
+		highlight = yes
+		random_owned_province = {
+			limit = {
+				culture = hungarian
+			}
+			spawn_rebels = {
+				size = 2
+				type = noble_rebels  
+			}
+		}
+		random_owned_province = {
+			limit = {
+				culture = hungarian
+			}
+			spawn_rebels = {
+				size = 3
+				type = noble_rebels 
+			}
+		}
+	}
+}
+

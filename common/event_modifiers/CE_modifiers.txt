@@ -56,13 +56,19 @@ CE_iron_and_blood = {
 CE_Wurzburger_Lands = {
 	local_autonomy = 0.10
 }
-CE_Infertile = {
-	
+CE_hungarian_papal_subsidies = {
+	global_tax_income = 24
 }
 
-
-
-
+CE_BRA_Wine_Customs = {
+	trade_efficiency = 0.05
+	burghers_loyalty_modifier = -0.05
+}
+CE_BRA_Beer_Excise = {
+	global_tax_modifier = 0.15
+	global_unrest = 1
+	global_trade_goods_size_modifier = -0.05
+}
 
 
 
