@@ -2033,6 +2033,11 @@ country_event = {
 	title = CE_brandenburg_expanded.31.t
 	desc = CE_brandenburg_expanded.31.d
 	picture = ELECTION_REPUBLICAN_eventPicture
+
+	trigger = {
+		tag = BRA
+		is_year = 1470
+	}
 	
 	fire_only_once = yes
 
@@ -2056,19 +2061,24 @@ country_event = {
 	}
 }
 
-#Brandenburg #Wine Customs for Albrecht Achilles 1470
+#Brandenburg #Beer Excise for Johan Cicero 1488
 country_event = {
 	id = CE_brandenburg_expanded.32
 	title = CE_brandenburg_expanded.32.t
 	desc = CE_brandenburg_expanded.32.d
 	picture = ELECTION_REPUBLICAN_eventPicture
 	
+	trigger = {
+		tag = BRA
+		is_year = 1488
+	}
+
 	fire_only_once = yes
 
 	option = {
 		name = CE_brandenburg_expanded.32.a
 		add_ruler_modifier = {
-			name = "CE_BRA_Beer_Exercise"
+			name = "CE_BRA_Beer_Excise"
 			duration = -1
 		}
 		random_list = {
