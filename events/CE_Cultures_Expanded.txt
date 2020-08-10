@@ -122,7 +122,6 @@ country_event = {
 			NOT = { has_province_modifier = CE_vlach_herders }
 		}
 		NOT = { has_country_flag = CE_vlach_herders_denied }
-		always = no
 	}
 
 	mean_time_to_happen = {
