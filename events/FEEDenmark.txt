@@ -1078,7 +1078,9 @@ country_event = {
 		add_stability_or_adm_power = yes
 		if = {
 			limit = {
-				is_expanded_mod_active = { mod = governments }
+				is_expanded_mod_active = {
+					mod = governments
+				}
 			}
 			set_estate_privilege = estate_nobles_supremacy_over_the_crown
 		}
@@ -1094,7 +1096,7 @@ country_event = {
 		ai_chance = {
 			factor = 1
 		}
-	} 
+	}
 	option = {
 		name = fee_DAN.24.b
 		add_stability = -1
@@ -1117,14 +1119,17 @@ country_event = {
 		}
 	}
 	option = {
-		name =fee_DAN.24.c
+		name = fee_DAN.24.c
 		add_stability_or_adm_power = yes
 		if = {
 			limit = {
-				is_expanded_mod_active = { mod = governments }
+				is_expanded_mod_active = {
+					mod = governments
+				}
 			}
 			add_government_reform = elective_monarchy_reform
-		 }
+		}
+	}
 }
 
 country_event = {
