@@ -145,8 +145,13 @@ country_event = {
 	option = {
 		name = FEE_HRE_Minors.3.a
 		add_reform_desire = 0.05
-		country_event = {
-			id = FEE_HRE_Minors.6
+		random_elector = {
+			limit = {
+				religion = protestant
+			}
+			country_event = {
+				id = FEE_HRE_Minors.6
+			}
 		}
 	}
 	option = {

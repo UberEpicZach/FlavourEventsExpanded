@@ -1,17 +1,12 @@
 #Portuguese events
-
 namespace = fee_POR
-
 #Luis de Camoes
-
 country_event = {
 	id = fee_POR.1
 	title = fee_POR.1.t
 	desc = fee_POR.1.d
 	picture = ADVISOR_eventPicture
-
 	fire_only_once = yes
-
 	trigger = {
 		tag = POR
 		is_year = 1530
@@ -19,7 +14,6 @@ country_event = {
 			is_year = 1580
 		}
 	}
-
 	mean_time_to_happen = {
 		months = 240
 	}
@@ -32,15 +26,12 @@ country_event = {
 }
 
 #Sebastianism for free Portugal
-
 country_event = {
 	id = fee_POR.2
 	title = fee_POR.2.t
 	desc = fee_POR.2.d
 	picture = SHIP_SAILING_eventPicture
-
 	fire_only_once = yes
-
 	trigger = {
 		tag = POR
 		is_subject = no
@@ -51,14 +42,16 @@ country_event = {
 		OR = {
 			AND = {
 				has_heir = no
-				NOT = { dynasty = "de Avis" }
+				NOT = {
+					dynasty = "de Avis"
+				}
 			}
 			has_regency = yes
 			ruler_is_foreigner = yes
 		}
 	}
-
-	option = { #His name is Sebastian, and that's good enough for me.
+	option = {
+		#His name is Sebastian, and that's good enough for me.
 		name = fee_POR.2.a
 		define_ruler = {
 			name = "Sebastian"
@@ -70,7 +63,8 @@ country_event = {
 			claim = 30
 		}
 	}
-		option = {	#Send away this impostor!
+	option = {
+		#Send away this impostor!
 		name = fee_POR.2.b
 		add_legitimacy = 5
 		add_country_modifier = {
@@ -81,79 +75,98 @@ country_event = {
 }
 
 #Spiceless!
-
 country_event = {
 	id = fee_POR.3
 	title = fee_POR.3.tt
 	desc = fee_POR.3.dd
 	picture = SHIP_SAILING_eventPicture
-
 	fire_only_once = yes
 	major = yes
-	major_trigger = { }
-
+	major_trigger = {
+	}
 	trigger = {
 		tag = POR
-		NOT = { exists = BYZ }
+		NOT = {
+			exists = BYZ
+		}
 		151 = {
 			owner = {
-				NOT = { religion_group = christian }
+				NOT = {
+					religion_group = christian
+				}
 			}
 		}
 		asia = {
 			type = all
 			OR = {
-				NOT = { has_discovered = ROOT }
+				NOT = {
+					has_discovered = ROOT
+				}
 				region = arabia_region
 				region = mashriq_region
 				region = caucasia_region
 			}
 		}
 	}
-
 	mean_time_to_happen = {
 		months = 12
 	}
-
 	option = {
-		name = fee_POR.3.a #Well I guess we'll have to find another way to India!
-		create_explorer = { tradition = 60 }
+		name = fee_POR.3.a		#Well I guess we'll have to find another way to India!
+		create_explorer = {
+			tradition = 60
+		}
 		add_country_modifier = {
 			name = fee_por_spice_sail
 			duration = 10950
 		}
-		capital_scope = {
-			add_unit_construction = {
-				type = light_ship
-				amount = 3
-				speed = 0.5
-				cost = 0
+		if = {
+			limit = {
+				capital_scope = {
+					has_port = yes
+				}
+			}
+			capital_scope = {
+				add_unit_construction = {
+					type = light_ship
+					amount = 3
+					speed = 0.5
+					cost = 0
+				}
+			}
+		}
+		else = {
+			random_owned_province = {
+				limit = {
+					has_port = yes
+				}
+				add_unit_construction = {
+					type = light_ship
+					amount = 3
+					speed = 0.5
+					cost = 0
+				}
 			}
 		}
 	}
 }
 
 #The School of Sagres
-
 country_event = {
 	id = fee_POR.4
 	title = fee_POR.4.tt
 	desc = fee_POR.4.dd
 	picture = UNIVERSITY_eventPicture
-
 	fire_only_once = yes
-
 	trigger = {
 		tag = POR
 		current_age = age_of_discovery
 	}
-
 	mean_time_to_happen = {
 		months = 12
 	}
-
 	option = {
-		name = fee_POR.4.a #Found Henry the Navigators' School!
+		name = fee_POR.4.a		#Found Henry the Navigators' School!
 		add_years_of_income = -0.5
 		add_country_modifier = {
 			name = fee_por_henrique_naval_reforms
@@ -169,7 +182,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = fee_POR.4.b #This isn't a matter for the crown.
+		name = fee_POR.4.b		#This isn't a matter for the crown.
 		add_legitimacy = 10
 	}
 }
