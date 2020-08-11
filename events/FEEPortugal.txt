@@ -186,3 +186,51 @@ country_event = {
 		add_legitimacy = 10
 	}
 }
+
+# A rising star
+country_event = {
+	id = fee_POR.5
+	title = fee_POR.5.tt
+	desc = fee_POR.5.dd
+	picture = UNIVERSITY_eventPicture
+	fire_only_once = yes
+	trigger = {
+		tag = POR
+		exploration_ideas = 1
+		CAS = {
+			had_country_flag = {
+				flag = civil_war_in_castile
+				days = 365
+			}
+		}
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+	option = {
+		name = fee_POR.5.a
+		add_years_of_income = -0.25
+		add_country_modifier = {
+			name = fee_por_francisco_de_almeida
+			duration = -1
+		}
+		custom_tooltip = fee_por_francisco_custom_tooltip_1
+	}
+	option = {
+		name = fee_POR.5.b
+		define_general = {
+			name = "Francisco de Almeida"
+			shock = 5
+			fire = 5
+			manuever = 4
+			siege = 2
+			trait = master_of_arms_personality
+		}
+		custom_tooltip = fee_por_francisco_custom_tooltip_2
+	}
+	option = {
+		name = fee_POR.5.c
+		add_prestige = 10
+		add_papal_influence = 10
+	}
+}
