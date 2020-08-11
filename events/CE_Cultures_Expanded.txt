@@ -14,7 +14,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		days = 30
+		months = 12
 	}
 
 	immediate = {
@@ -47,7 +47,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		days = 30
+		months = 6
 	}
 
 	immediate = {
@@ -80,7 +80,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		days = 30
+		days = 12
 	}
 
 	immediate = {
@@ -122,7 +122,6 @@ country_event = {
 			NOT = { has_province_modifier = CE_vlach_herders }
 		}
 		NOT = { has_country_flag = CE_vlach_herders_denied }
-		always = no
 	}
 
 	mean_time_to_happen = {

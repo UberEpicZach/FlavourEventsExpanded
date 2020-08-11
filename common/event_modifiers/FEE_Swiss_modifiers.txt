@@ -27,9 +27,7 @@ FEE_Swiss_Countryside_Preaching = {
 }
 
 FEE_Swiss_Sausage_Disobedience = {
-    unrest_catholic_provinces = 2
-#	unrest_reformed_provinces = -1 # doesn't exist
-#	unrest_protestant_provinces = -1 # doesn't exist
+    global_unrest = 1
 }
 
 FEE_Zurich_Reformation_Enshrined = {
