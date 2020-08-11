@@ -169,13 +169,14 @@ country_event = {
 		ai_chance = {
 			factor = 90
 		}
-		every_owned_province = {
-			add_local_autonomy = 15
-		}
 		add_country_modifier = {
 			name = pol_przywilej_mielnicki
 			duration = -1
 		}
+		every_owned_province = {
+			add_local_autonomy = 15
+		}
+		
 	}
 	option = {
 		name = fee_POL.12.b # Reject
@@ -255,7 +256,7 @@ country_event = {
 
 	trigger = {
 		tag = POL
-		has_country_modifier = pol_przywilej_mielnicki
+		has_country_modifier = unia_mielnicka
 	}
 
 	mean_time_to_happen = {
