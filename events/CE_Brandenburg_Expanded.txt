@@ -2233,8 +2233,9 @@ country_event = {
 			}
 		}
 		tooltip = {
-			add_years_of_income = -0.5
+			add_treasury = -75
 		}
+		custom_tooltip = JE_BRA_Bohemia_Retains_repurchase_rights
 	}
 	option = {
 		name = CE_brandenburg_expanded.35.b
@@ -2269,14 +2270,16 @@ country_event = {
 	option = {
 		name = CE_brandenburg_expanded.36.a
 		BOH = {
-			add_years_of_income = 0.5
+			add_treasury = 75
 		}
 		BRA = {
-			add_years_of_income = -0.5
+			add_treasury = -75
 		}
 		1763 = {
 			cede_province = BRA
 		}
+		set_global_flag = JE_BRA_Pawning_of_Zollern
+		custom_tooltip = JE_BRA_Bohemia_Retains_repurchase_rights
 	}
 	option = {
 		name = CE_brandenburg_expanded.36.b
@@ -2434,7 +2437,7 @@ country_event = {
 	}
 }
 
-#Brandenburg #The Division of Joachim, 1571
+#Brandenburg #The Ìnheritance of Brandenburg-Kustrin, 1571
 country_event = {
 	id = CE_brandenburg_expanded.40
 	title = CE_brandenburg_expanded.40.t
@@ -2469,18 +2472,20 @@ country_event = {
 	}
 
 	immediate = {
-		RUP = {
-			kill_heir = yes
-			define_ruler = {
-				name = "Regency Council"
-				adm = 2
-				dip = 2
-				mil = 2
-				fixed = yes
-				regency = yes
+		hidden_effect = {
+			RUP = {
+				kill_heir = yes
+				define_ruler = {
+					name = "Regency Council"
+					adm = 2
+					dip = 2
+					mil = 2
+					fixed = yes
+					regency = yes
+				}
 			}
+			clr_global_flag = CE_BRA_KUS_SPLIT_FLAG
 		}
-		clr_global_flag = CE_BRA_KUS_SPLIT_FLAG
 	}
 
 	option = {
@@ -2488,5 +2493,127 @@ country_event = {
 		BRA = {
 			inherit = RUP
 		}
+	}
+}
+
+#Bohemia #Right of Repurchase, 1516
+country_event = {
+	id = CE_brandenburg_expanded.41
+	title = CE_brandenburg_expanded.41.t
+	desc = CE_brandenburg_expanded.41.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	major = yes
+	major_trigger = {
+		tag = BRA
+	}
+
+	trigger = {
+		tag = BRA
+		is_year = 1516 
+		has_global_flag = JE_BRA_Pawning_of_Zollern
+		1763 = {
+			owner = {
+				tag = BRA
+			}
+		}
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+
+	immediate = {
+		clr_global_flag = JE_BRA_Pawning_of_Zollern
+	}
+
+	option = {
+		name = CE_brandenburg_expanded.41.a
+		tooltip = {
+			BOH = {
+				add_treasury = -75
+			}
+			BRA = {
+				add_treasury = 75
+			}
+		}
+		BRA = {
+			country_event = {
+				id = CE_brandenburg_expanded.42
+				days = 30
+			}
+		}
+	}
+	option = {
+		name = CE_brandenburg_expanded.41.b
+		BRA = {
+			country_event = {
+				id = CE_brandenburg_expanded.43
+				days = 30
+			}
+		}
+	}
+}
+
+#Brandenburg #Bohemian Repurchase, 1516
+country_event = {
+	id = CE_brandenburg_expanded.42
+	title = CE_brandenburg_expanded.42.t
+	desc = CE_brandenburg_expanded.42.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	major = yes
+	major_trigger = {
+		tag = BOH
+	}
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = CE_brandenburg_expanded.42.a
+		BOH = {
+			add_treasury = -75
+		}
+		BRA = {
+			add_treasury = 75
+		}
+		1763 = {
+			cede_province = BOH
+		}
+	}
+}
+
+#Brandenburg #Sale of Repurchase Rights, 1516
+country_event = {
+	id = CE_brandenburg_expanded.43
+	title = CE_brandenburg_expanded.43.t
+	desc = CE_brandenburg_expanded.43.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	major = yes
+	major_trigger = {
+		tag = BOH
+	}
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = CE_brandenburg_expanded.43.a
+		BOH = {
+			add_treasury = 50
+		}
+		BRA = {
+			add_treasury = -50
+		}
+		1763 = {
+			add_local_autonomy = -25
+		}
+	}
+	option = {
+		name = CE_brandenburg_expanded.43.a
+		add_prestige = -10
 	}
 }
