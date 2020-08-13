@@ -12,7 +12,6 @@ country_event = {
 	trigger = {
 		tag = HUN
 		has_country_flag = hun_has_had_matthias_corvinus_event
-		always = no
 	}
 
 	fire_only_once = yes
@@ -41,13 +40,12 @@ country_event = {
 	trigger = {
 		tag = BOH
 		has_country_flag = first_hussite_king
-		always = no
 	}
 
 	fire_only_once = yes
 
 	mean_time_to_happen = {
-		months = 1
+		months = 6
 	}
 	immediate = {
 		set_country_flag = FEE_Podebrad
@@ -75,7 +73,6 @@ country_event = {
 			has_ruler_modifier =  FEE_BOH_Infertility
 		}
 		has_country_flag = FEE_Podebrad
-		always = no
 	}
 
 	fire_only_once = yes
@@ -206,7 +203,6 @@ country_event = {
 		not = {
 			has_ruler_flag = FEE_Matyas_Reign
 		}
-		always = no
 	}
 
 	fire_only_once = yes
