@@ -2200,3 +2200,293 @@ country_event = {
 		}
 	}
 }
+
+#Brandenburg #Extinction of the House of Torgow, 1490
+country_event = {
+	id = CE_brandenburg_expanded.35
+	title = CE_brandenburg_expanded.35.t
+	desc = CE_brandenburg_expanded.35.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	trigger = {
+		tag = BRA
+		is_year = 1490
+		1763 = {
+			owner = {
+				tag = BOH
+			}
+		}
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+
+	option = {
+		name = CE_brandenburg_expanded.35.a
+		BOH = {
+			country_event = {
+				id = CE_brandenburg_expanded.36
+				days = 30
+			}
+		}
+		tooltip = {
+			add_years_of_income = -0.5
+		}
+	}
+	option = {
+		name = CE_brandenburg_expanded.35.b
+		1763 = {
+			add_claim = BRA
+		}
+	}
+	option = {
+		name = CE_brandenburg_expanded.35.c
+		add_opinion = {
+			who = BOH
+			modifier = CE_Conceeded_Territory
+		}
+	}
+}
+
+#Bohemia #Extinction of the House of Torgow, 1490
+country_event = {
+	id = CE_brandenburg_expanded.36
+	title = CE_brandenburg_expanded.36.t
+	desc = CE_brandenburg_expanded.36.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	major = yes
+	major_trigger = {
+		tag = BRA
+	}
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = CE_brandenburg_expanded.36.a
+		BOH = {
+			add_years_of_income = 0.5
+		}
+		BRA = {
+			add_years_of_income = -0.5
+		}
+		1763 = {
+			cede_province = BRA
+		}
+	}
+	option = {
+		name = CE_brandenburg_expanded.36.b
+		add_legitimacy = 5
+	}
+}
+
+#Brandenburg #Upcoming Disaster, 1525
+country_event = {
+	id = CE_brandenburg_expanded.37
+	title = CE_brandenburg_expanded.37.t
+	desc = CE_brandenburg_expanded.37.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	trigger = {
+		tag = BRA
+		is_year = 1525
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+	option = {
+		name = CE_brandenburg_expanded.37.a
+		add_prestige = -25
+		add_legitimacy = -25
+	}
+	option = {
+		name = CE_brandenburg_expanded.37.b
+		tooltip = {
+			random_list = {
+				75 = { }
+				25 = {
+					capital_scope = {
+						add_base_tax = -3
+						add_base_production = -3
+						add_base_manpower = -3
+					}
+					kill_ruler = yes
+				}
+			}
+		}
+	}
+}
+
+#Brandenburg #Alma Mater Viadrina, 1506
+country_event = {
+	id = CE_brandenburg_expanded.38
+	title = CE_brandenburg_expanded.38.t
+	desc = CE_brandenburg_expanded.38.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	trigger = {
+		tag = BRA
+		is_year = 1506
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+	option = {
+		name = CE_brandenburg_expanded.38.a
+		change_innovativeness = 2.5
+		add_papal_influence = 5
+	}
+}
+
+#Brandenburg #The Division of Joachim, 1535
+country_event = {
+	id = CE_brandenburg_expanded.39
+	title = CE_brandenburg_expanded.39.t
+	desc = CE_brandenburg_expanded.39.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	trigger = {
+		tag = BRA
+		is_year = 1535
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+	immediate = {
+		set_global_flag = CE_BRA_KUS_SPLIT_FLAG
+	}
+
+	option = {
+		name = CE_brandenburg_expanded.39.a
+		custom_tooltip = CE_BRA_BRA_KUS_Release
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						area = neumark_area
+						area = lusatia_area
+					}
+					owner = {
+						tag = BRA
+					}
+				}
+				cede_province = RUP
+			}
+			RUP = {
+				define_ruler = {
+					name = "Johann"
+					dynasty = "Von Hohenzollern"
+				}
+				add_ruler_modifier = {
+					name = CE_Ruppin_infertility
+					duration = -1
+				}
+				override_country_name = "BRA_KUS"
+			}
+		}
+	}
+	option = {
+		name = CE_brandenburg_expanded.39.b
+		add_stability = -2
+		random_owned_province = {
+			limit = {
+				area = neumark_area
+			}
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 3
+				leader_dynasty = "Von Hohenzollern"
+				leader = "Johann"
+			}
+		}
+	}
+	option = {
+		name = CE_brandenburg_expanded.39.c
+		trigger = {
+			has_country_modifier = bra_dispositio_achillea
+		}
+		highlight = yes
+		add_stability = -1
+		random_owned_province = {
+			limit = {
+				area = neumark_area
+			}
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 2
+				leader_dynasty = "Von Hohenzollern"
+				leader = "Johann"
+			}
+		}
+	}
+}
+
+#Brandenburg #The Division of Joachim, 1571
+country_event = {
+	id = CE_brandenburg_expanded.40
+	title = CE_brandenburg_expanded.40.t
+	desc = CE_brandenburg_expanded.40.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	trigger = {
+		tag = BRA
+		has_global_flag = CE_BRA_KUS_SPLIT_FLAG
+		OR = {
+			RUP = {
+				NOT = {
+					has_ruler_modifier = CE_Ruppin_infertility
+				}
+			}
+			is_year = 1571
+		}
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+		modifier = {
+			factor = 0.01
+			RUP = {
+				NOT = {
+					has_ruler_modifier = CE_Ruppin_infertility
+				}
+			}
+		}
+	}
+
+	immediate = {
+		RUP = {
+			kill_heir = yes
+			define_ruler = {
+				name = "Regency Council"
+				adm = 2
+				dip = 2
+				mil = 2
+				fixed = yes
+				regency = yes
+			}
+		}
+		clr_global_flag = CE_BRA_KUS_SPLIT_FLAG
+	}
+
+	option = {
+		name = CE_brandenburg_expanded.40.a
+		BRA = {
+			inherit = RUP
+		}
+	}
+}
