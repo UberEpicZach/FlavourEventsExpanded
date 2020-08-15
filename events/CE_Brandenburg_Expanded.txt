@@ -2055,12 +2055,18 @@ country_event = {
 			estate = estate_burghers
 			loyalty = -5
 		}
+		ai_chance = {
+			factor = 1
+		}
 	}
 	option = {
 		name = CE_brandenburg_expanded.31.b
 		add_estate_loyalty = {
 			estate = estate_burghers
 			loyalty = 5
+		}
+		ai_chance = {
+			factor = 0
 		}
 	}
 }
@@ -2100,12 +2106,18 @@ country_event = {
 				}
 			}
 		}
+		ai_chance = {
+			factor = 1
+		}
 	}
 	option = {
 		name = CE_brandenburg_expanded.32.b
 		add_estate_loyalty = {
 			estate = estate_burghers
 			loyalty = 5
+		}
+		ai_chance = {
+			factor = 0
 		}
 	}
 }
@@ -2144,6 +2156,9 @@ country_event = {
 			estate = estate_church
 			loyalty = 5
 		}
+		ai_chance = {
+			factor = 1
+		}
 	}
 	option = {
 		name = CE_brandenburg_expanded.33.b
@@ -2151,6 +2166,9 @@ country_event = {
 		add_estate_loyalty = {
 			estate = estate_church
 			loyalty = -10
+		}
+		ai_chance = {
+			factor = 0
 		}
 	}
 }
@@ -2191,12 +2209,18 @@ country_event = {
 			estate = estate_church
 			loyalty = -5
 		}
+		ai_chance = {
+			factor = 1
+		}
 	}
 	option = {
 		name = CE_brandenburg_expanded.34.b
 		add_estate_loyalty = {
 			estate = estate_church
 			loyalty = 5
+		}
+		ai_chance = {
+			factor = 0
 		}
 	}
 }
@@ -2236,11 +2260,17 @@ country_event = {
 			add_treasury = -75
 		}
 		custom_tooltip = JE_BRA_Bohemia_Retains_repurchase_rights
+		ai_chance = {
+			factor = 1
+		}
 	}
 	option = {
 		name = CE_brandenburg_expanded.35.b
 		1763 = {
 			add_claim = BRA
+		}
+		ai_chance = {
+			factor = 0
 		}
 	}
 	option = {
@@ -2248,6 +2278,9 @@ country_event = {
 		add_opinion = {
 			who = BOH
 			modifier = CE_Conceeded_Territory
+		}
+		ai_chance = {
+			factor = 0
 		}
 	}
 }
@@ -2280,10 +2313,16 @@ country_event = {
 		}
 		set_global_flag = JE_BRA_Pawning_of_Zollern
 		custom_tooltip = JE_BRA_Bohemia_Retains_repurchase_rights
+		ai_chance = {
+			factor = 1
+		}
 	}
 	option = {
 		name = CE_brandenburg_expanded.36.b
 		add_legitimacy = 5
+		ai_chance = {
+			factor = 0
+		}
 	}
 }
 
@@ -2308,6 +2347,9 @@ country_event = {
 		name = CE_brandenburg_expanded.37.a
 		add_prestige = -25
 		add_legitimacy = -25
+		ai_chance = {
+			factor = 1
+		}
 	}
 	option = {
 		name = CE_brandenburg_expanded.37.b
@@ -2323,6 +2365,9 @@ country_event = {
 					kill_ruler = yes
 				}
 			}
+		}
+		ai_chance = {
+			factor = 0
 		}
 	}
 }
@@ -2400,6 +2445,9 @@ country_event = {
 				override_country_name = "BRA_KUS"
 			}
 		}
+		ai_chance = {
+			factor = 1
+		}
 	}
 	option = {
 		name = CE_brandenburg_expanded.39.b
@@ -2414,6 +2462,9 @@ country_event = {
 				leader_dynasty = "Von Hohenzollern"
 				leader = "Johann"
 			}
+		}
+		ai_chance = {
+			factor = 0
 		}
 	}
 	option = {
@@ -2433,6 +2484,9 @@ country_event = {
 				leader_dynasty = "Von Hohenzollern"
 				leader = "Johann"
 			}
+		}
+		ai_chance = {
+			factor = 1
 		}
 	}
 }
@@ -2544,6 +2598,9 @@ country_event = {
 				days = 30
 			}
 		}
+		ai_chance = {
+			factor = 0
+		}
 	}
 	option = {
 		name = CE_brandenburg_expanded.41.b
@@ -2552,6 +2609,9 @@ country_event = {
 				id = CE_brandenburg_expanded.43
 				days = 30
 			}
+		}
+		ai_chance = {
+			factor = 1
 		}
 	}
 }
@@ -2610,10 +2670,127 @@ country_event = {
 		}
 		1763 = {
 			add_local_autonomy = -25
+			remove_core = BOH
+		}
+		ai_chance = {
+			factor = 1
 		}
 	}
 	option = {
 		name = CE_brandenburg_expanded.43.a
 		add_prestige = -10
+	}
+}
+
+#Brandenburg #GruneWalt Hunting Lodge, 1542
+country_event = {
+	id = CE_brandenburg_expanded.44
+	title = CE_brandenburg_expanded.44.t
+	desc = CE_brandenburg_expanded.44.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	trigger = {
+		tag = BRA
+		is_year = 1542
+		NOT = { is_year = 1550 }
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+
+	option = {
+		name = CE_brandenburg_expanded.44.a
+		set_ruler_flag = CE_BRA_Hunting_Lodge
+		if = {
+			limit = {
+				is_ai = no
+			}
+			add_treasury = -700
+		} 
+		add_ruler_modifier = {
+			name = CE_BRA_Lover_of_the_Hunt #-25% State Maintenance, -5% estate Loyalty
+			duration = -1
+		}
+	}
+}
+
+#Brandenburg #Accident at the Lodge, 1551
+country_event = {
+	id = CE_brandenburg_expanded.45
+	title = CE_brandenburg_expanded.45.t
+	desc = CE_brandenburg_expanded.45.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	trigger = {
+		tag = BRA
+		is_year = 1551
+		NOT = { is_year = 1560 }
+		has_ruler_flag = CE_BRA_Hunting_Lodge
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+
+	option = {
+		name = CE_brandenburg_expanded.45.a
+		clr_ruler_flag = CE_BRA_Hunting_Lodge
+		add_prestige = -15
+		add_ruler_modifier = {
+			name = CE_BRA_The_Beautifull_Foundress #-0.5 Legitimacy
+			duration = -1
+		}
+	}
+}
+
+#Brandenburg #Accident at the Lodge, 1543
+country_event = {
+	id = CE_brandenburg_expanded.46
+	title = CE_brandenburg_expanded.46.t
+	desc = CE_brandenburg_expanded.46.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	trigger = {
+		tag = BRA
+		is_year = 1543
+		NOT = { is_year = 1570 }
+		has_ruler_flag = CE_BRA_Hunting_Lodge
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 365
+	}
+
+	option = {
+		name = CE_brandenburg_expanded.46.a
+		
+		2969 = {
+			add_base_tax = 2
+			add_base_production= 1
+		}
+		add_country_modifier = {
+			name = CE_BRA_Jewish_Tax
+			duration = 7300
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = CE_brandenburg_expanded.46.b
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = 10
+		}
+		ai_chance = {
+			factor = 0
+		}
 	}
 }

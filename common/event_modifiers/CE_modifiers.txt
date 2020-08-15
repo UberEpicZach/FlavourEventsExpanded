@@ -70,7 +70,22 @@ CE_BRA_Beer_Excise = {
 	global_trade_goods_size_modifier = -0.05
 }
 CE_Ruppin_infertility = {
-	heir_chance = -10
+	heir_chance = -0.90
+}
+
+CE_BRA_Lover_of_the_Hunt = {
+	state_maintenance_modifier = 0.25
+	clergy_loyalty_modifier = -0.05
+	nobles_loyalty_modifier = -0.05
+	burghers_loyalty_modifier = -0.05
+}
+
+CE_BRA_The_Beautifull_Foundress = {
+	legitimacy = -0.5
+}
+
+CE_BRA_Jewish_Tax = {
+	global_tax_modifier = 0.10
 }
 
 
