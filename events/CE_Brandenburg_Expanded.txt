@@ -2678,8 +2678,11 @@ country_event = {
 		}
 	}
 	option = {
-		name = CE_brandenburg_expanded.43.a
+		name = CE_brandenburg_expanded.43.b
 		add_prestige = -10
+		ai_chance = {
+			factor = 0
+		}
 	}
 }
 
@@ -2691,15 +2694,16 @@ country_event = {
 	picture = ELECTION_REPUBLICAN_eventPicture
 
 	trigger = {
-		tag = BRA
-		is_year = 1542
-		NOT = { is_year = 1550 }
+		#tag = BRA
+		#is_year = 1542
+		#NOT = { is_year = 1550 }
 	}
 
 	fire_only_once = yes
 
 	mean_time_to_happen = {
-		days = 120
+		days = 1
+		#days = 120
 	}
 
 	option = {
@@ -2711,6 +2715,18 @@ country_event = {
 			}
 			add_treasury = -700
 		} 
+		add_ruler_modifier = {
+			name = CE_BRA_Lover_of_the_Hunt #-25% State Maintenance, -5% estate Loyalty
+			duration = -1
+		}
+	}
+	option = {
+		name = CE_brandenburg_expanded.44.b
+		add_adm_power = -100
+		add_dip_power = -100
+		add_mil_power = -100
+		add_legitimacy = -25
+		change_adm = -1
 		add_ruler_modifier = {
 			name = CE_BRA_Lover_of_the_Hunt #-25% State Maintenance, -5% estate Loyalty
 			duration = -1
@@ -2792,6 +2808,270 @@ country_event = {
 		}
 		ai_chance = {
 			factor = 0
+		}
+	}
+}
+
+#Brandenburg #Introduction of the Reformation, 1539
+country_event = {
+	id = CE_brandenburg_expanded.47
+	title = CE_brandenburg_expanded.47.t
+	desc = CE_brandenburg_expanded.47.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	trigger = {
+		tag = BRA
+		OR = {
+			AND = {
+				is_year = 1525
+				religion = catholic
+			}
+			AND = {
+				calc_true_if = {
+					all_owned_province = {
+						religion = protestant
+					}
+					amount = 3
+				}
+			}
+		}		
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+
+	option = {
+		name = CE_brandenburg_expanded.47.a
+		
+		add_ruler_modifier = {
+			name = CE_BRA_religious_pragmatism
+			duration = -1
+		}	
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+#Brandenburg #Secularization of the Monasteries, 1545
+country_event = {
+	id = CE_brandenburg_expanded.48
+	title = CE_brandenburg_expanded.48.t
+	desc = CE_brandenburg_expanded.48.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	trigger = {
+		tag = BRA
+		OR = {
+			religion = protestant
+			AND = {
+				religion = catholic
+				has_ruler_modifier = CE_BRA_religious_pragmatism
+			}
+		}
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+
+	option = {
+		name = CE_brandenburg_expanded.48.a
+		
+		add_years_of_income = 0.5
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = CE_brandenburg_expanded.48.b
+		
+		random_owned_province = {
+			add_base_tax = 1
+		}
+		random_owned_province = {
+			add_base_tax = 1
+		}
+		random_owned_province = {
+			add_base_tax = 1
+		}
+		random_owned_province = {
+			add_base_tax = 1
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+#Brandenburg #Lippold Ben Chluchim, 1549
+country_event = {
+	id = CE_brandenburg_expanded.49
+	title = CE_brandenburg_expanded.49.t
+	desc = CE_brandenburg_expanded.49.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	trigger = {
+		tag = BRA
+		is_year = 1549
+		NOT = {
+			has_country_flag = CE_BRA_expelled_the_jews
+		}
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+
+	option = {
+		name = CE_brandenburg_expanded.49.a
+		
+		define_advisor = {
+			type = court_jew
+			name = "Lippold Ben Chluchim"
+			skill = 2
+			discount = yes
+			culture = hebrew
+			religion = jewish
+		}
+
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = CE_brandenburg_expanded.49.b
+		
+		add_ruler_modifier = {
+			name = "CE_BRA_Lippold_Ben_Chluchim"
+			duration = -1
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+#Brandenburg #Devaluation of the Mint, 1550
+country_event = {
+	id = CE_brandenburg_expanded.50
+	title = CE_brandenburg_expanded.50.t
+	desc = CE_brandenburg_expanded.50.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	trigger = {
+		tag = BRA
+		is_year = 1550
+		NOT = { is_year = 1575 }
+		num_of_loans = 1
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+
+	option = {
+		name = CE_brandenburg_expanded.50.a
+		
+		add_years_of_income = 1
+		add_inflation = 3
+		custom_tooltip = CE_BRA_Could_Lead_To_Economic_Collapse
+		hidden_effect = {
+			country_event = {
+				id = CE_brandenburg_expanded.51
+				days = 1825
+			}
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+
+	option = {
+		name = CE_brandenburg_expanded.50.b
+		
+		add_legitimacy = 5
+
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+#Brandenburg #Illegal Foreign Mints, 1555
+country_event = {
+	id = CE_brandenburg_expanded.51
+	title = CE_brandenburg_expanded.51.t
+	desc = CE_brandenburg_expanded.51.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = CE_brandenburg_expanded.51.a
+		
+		add_years_of_income = 1
+		add_inflation = 3
+		custom_tooltip = CE_BRA_Could_Lead_To_Economic_Collapse
+		hidden_effect = {
+			country_event = {
+				id = CE_brandenburg_expanded.52
+				days = 1825
+			}
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+
+	option = {
+		name = CE_brandenburg_expanded.51.b
+		
+		add_country_modifier = {
+			name = CE_BRA_economic_downturn
+			duration = 3650
+		}
+
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+#Brandenburg #Economic Collapse, 1560
+country_event = {
+	id = CE_brandenburg_expanded.52
+	title = CE_brandenburg_expanded.52.t
+	desc = CE_brandenburg_expanded.52.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = CE_brandenburg_expanded.52.a
+		
+		add_country_modifier = {
+			name = CE_BRA_economic_collapse
+			duration = 7300
+		}
+
+		ai_chance = {
+			factor = 1
 		}
 	}
 }
