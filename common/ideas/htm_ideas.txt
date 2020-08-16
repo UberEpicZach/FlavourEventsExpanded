@@ -1,0 +1,37 @@
+HTM_ideas = {
+	start = {
+		infantry_power = 0.1
+		land_morale = 0.15
+	}
+	
+	bonus = {
+		republican_tradition = 0.5
+	}
+	
+	trigger = {
+		tag = HTM
+	}
+	free = yes
+	
+	htm_test1 = {
+		diplomatic_upkeep = 1
+	}
+	htm_test2 = {
+		global_unrest = -2		
+	}
+	htm_test3 = {
+		idea_cost = -0.1
+	}
+	htm_test4 = {
+		religious_unity = 0.25
+	}
+	htm_test5 = {
+		fire_damage = 0.1
+	}
+	htm_test6 = {
+		trade_efficiency = 0.1	
+	}
+	htm_test7 = {
+		army_tradition = 0.5
+	}
+}

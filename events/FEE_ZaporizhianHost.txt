@@ -1,0 +1,149 @@
+namespace = fee_htm
+
+# [KHMELNYTSKY UPRISING EVENT CHAIN]
+# Suspicious Cossack
+country_event = {
+	id = fee_htm.1
+	title = "htm_1_title"
+	desc = "htm_1_desc"
+	picture = KHMELNYTSKY_eventPicture
+
+	trigger = {
+		tag = PLC
+		owns = 283
+		is_year = 1647
+		has_estate = estate_cossacks
+	}
+
+	mean_time_to_happen = {
+		months = 11
+	}
+	
+	option = {
+		name = "htm_1_a"
+		
+		hidden_effect = {
+			country_event = {
+				id = fee_htm.2
+				days = 30
+				random = 210
+			}
+		}
+	}
+}
+
+country_event = {
+	id = fee_htm.2
+	title = "htm_2_title"
+	desc = "htm_2_desc"
+	picture = KHMELNYTSKY_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "htm_2_a"
+		
+		hidden_effect = {
+			country_event = {
+				id = fee_htm.3
+				days = 30
+				random = 210
+			}
+		}
+	}
+}
+
+country_event = {
+	id = fee_htm.3
+	title = "htm_3_title"
+	desc = "htm_3_desc"
+	picture = KHMELNYTSKY_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = "htm_3_a"
+	}
+	
+	option = {
+		name = "htm_3_b"
+
+		switch_tag = HTM
+	}
+	
+	immediate = {
+		hidden_effect = {
+			every_core_province = {
+				limit = {
+					region = crimea_region
+					culture = ruthenian
+					religion = orthodox
+				}
+				
+				add_core = HTM
+			}
+		}
+		release = HTM
+		HTM = { country_event = { id = fee_htm.1000 } }
+	}
+}
+
+# Since PDX broke "release" command in 1.30, this event would set everything up for the released tag to work properly.
+country_event = {
+	id = fee_htm.1000
+	hidden = yes
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			change_primary_culture = ruthenian
+			change_religion = orthodox
+			change_government = republic
+			change_technology_group = nomad_group
+			add_idea_group = plutocracy_ideas
+			add_idea_group = diplomatic_ideas
+			add_idea_group = defensive_ideas
+			add_idea_group = humanist_ideas
+			add_idea_group = innovativeness_ideas
+			# Plutocracy
+			add_idea = tradition_of_payment
+			add_idea = abolished_serfdom
+			add_idea = bill_of_rights
+			# Diplomatic
+			add_idea = foreign_embassies
+			add_idea = cabinet
+			# Defensive
+			add_idea = battlefield_commisions
+			add_idea = military_drill
+			add_idea = improved_manuever
+			add_idea = regimental_system
+			add_idea = defensive_mentality
+			add_idea = supply_trains
+			add_idea = improved_foraging
+			# Humanist
+			add_idea = tolerance_idea
+			add_idea = local_traditions
+			add_idea = ecumenism
+			add_idea = indirect_rule
+			add_idea = cultural_ties
+			# Innovativeness
+			add_idea = patron_of_art
+			add_idea = empiricism
+			add_government_reform = cossacks_reform
+			283 = {
+				move_capital_effect = yes
+			}
+			define_ruler = {
+				name = "Bogdan Khmelnytsky"
+				age = 53
+				adm = 4
+				dip = 4
+				mil = 6
+				fixed = yes
+				male = yes
+			}
+		}
+	}
+	
+	option = {
+		
+	}
+}
