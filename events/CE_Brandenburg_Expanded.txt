@@ -12,6 +12,7 @@ country_event = {
 	trigger = {
 		tag = BRA
 		is_year = 1472
+		NOT = { is_year = 1480 }
 		NOT = {
 			OR = {
 				is_in_war = {
@@ -56,6 +57,7 @@ country_event = {
 	
 	trigger = {
 		is_year = 1478
+		not = { is_year = 1490}
 		tag = BOH
 		BRA = {
 			has_country_flag = CE_barbara_von_hohenzollern_marriage
@@ -924,6 +926,7 @@ country_event = {
 		exists = BRG
 		exists = PAL
 		is_year = 1609
+		NOT = { is_year = 1630 }
 	}
 	
 	mean_time_to_happen = {
@@ -2035,8 +2038,12 @@ country_event = {
 	picture = ELECTION_REPUBLICAN_eventPicture
 
 	trigger = {
-		tag = BRA
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
 		is_year = 1470
+		NOT = { is_year = 1480 }
 	}
 	
 	fire_only_once = yes
@@ -2079,8 +2086,12 @@ country_event = {
 	picture = ELECTION_REPUBLICAN_eventPicture
 	
 	trigger = {
-		tag = BRA
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
 		is_year = 1488
+		NOT = { is_year = 1500 }
 	}
 
 	fire_only_once = yes
@@ -2130,8 +2141,12 @@ country_event = {
 	picture = ELECTION_REPUBLICAN_eventPicture
 	
 	trigger = {
-		tag = BRA
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
 		is_year = 1510
+		NOT = { is_year = 1520}
 	}
 
 	fire_only_once = yes
@@ -2181,8 +2196,12 @@ country_event = {
 	picture = ELECTION_REPUBLICAN_eventPicture
 	
 	trigger = {
-		tag = BRA
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
 		is_year = 1539
+		NOT = { is_year = 1550 }
 		has_country_flag = CE_BRA_expelled_the_jews
 	}
 
@@ -2233,8 +2252,12 @@ country_event = {
 	picture = ELECTION_REPUBLICAN_eventPicture
 	
 	trigger = {
-		tag = BRA
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
 		is_year = 1490
+		NOT = { is_year = 1500 }
 		1763 = {
 			owner = {
 				tag = BOH
@@ -2293,7 +2316,10 @@ country_event = {
 	picture = ELECTION_REPUBLICAN_eventPicture
 	major = yes
 	major_trigger = {
-		tag = BRA
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
 	}
 	
 	is_triggered_only = yes
@@ -2334,8 +2360,12 @@ country_event = {
 	picture = ELECTION_REPUBLICAN_eventPicture
 	
 	trigger = {
-		tag = BRA
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
 		is_year = 1525
+		NOT = { is_year = 1535 }
 	}
 
 	fire_only_once = yes
@@ -2380,8 +2410,12 @@ country_event = {
 	picture = ELECTION_REPUBLICAN_eventPicture
 	
 	trigger = {
-		tag = BRA
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
 		is_year = 1506
+		NOT = { is_year = 1516 }
 	}
 
 	fire_only_once = yes
@@ -2404,8 +2438,12 @@ country_event = {
 	picture = ELECTION_REPUBLICAN_eventPicture
 	
 	trigger = {
-		tag = BRA
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
 		is_year = 1535
+		NOT = { is_year = 1545 }
 	}
 
 	fire_only_once = yes
@@ -2500,7 +2538,10 @@ country_event = {
 	picture = ELECTION_REPUBLICAN_eventPicture
 	
 	trigger = {
-		tag = BRA
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
 		has_global_flag = CE_BRA_KUS_SPLIT_FLAG
 		OR = {
 			RUP = {
@@ -2559,12 +2600,16 @@ country_event = {
 	picture = ELECTION_REPUBLICAN_eventPicture
 	major = yes
 	major_trigger = {
-		tag = BRA
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
 	}
 
 	trigger = {
-		tag = BRA
+		tag = BOH
 		is_year = 1516 
+		NOT = { is_year = 1530 }
 		has_global_flag = JE_BRA_Pawning_of_Zollern
 		1763 = {
 			owner = {
@@ -2694,16 +2739,18 @@ country_event = {
 	picture = ELECTION_REPUBLICAN_eventPicture
 
 	trigger = {
-		#tag = BRA
-		#is_year = 1542
-		#NOT = { is_year = 1550 }
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
+		is_year = 1542
+		NOT = { is_year = 1550 }
 	}
 
 	fire_only_once = yes
 
 	mean_time_to_happen = {
-		days = 1
-		#days = 120
+		days = 120
 	}
 
 	option = {
@@ -2742,7 +2789,10 @@ country_event = {
 	picture = ELECTION_REPUBLICAN_eventPicture
 
 	trigger = {
-		tag = BRA
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
 		is_year = 1551
 		NOT = { is_year = 1560 }
 		has_ruler_flag = CE_BRA_Hunting_Lodge
@@ -2773,7 +2823,10 @@ country_event = {
 	picture = ELECTION_REPUBLICAN_eventPicture
 
 	trigger = {
-		tag = BRA
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
 		is_year = 1543
 		NOT = { is_year = 1570 }
 		has_ruler_flag = CE_BRA_Hunting_Lodge
@@ -2820,7 +2873,10 @@ country_event = {
 	picture = ELECTION_REPUBLICAN_eventPicture
 
 	trigger = {
-		tag = BRA
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
 		OR = {
 			AND = {
 				is_year = 1525
@@ -2833,6 +2889,7 @@ country_event = {
 					}
 					amount = 3
 				}
+				NOT = { religion = protestant }
 			}
 		}		
 	}
@@ -2864,7 +2921,10 @@ country_event = {
 	picture = ELECTION_REPUBLICAN_eventPicture
 
 	trigger = {
-		tag = BRA
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
 		OR = {
 			religion = protestant
 			AND = {
@@ -2918,8 +2978,12 @@ country_event = {
 	picture = ELECTION_REPUBLICAN_eventPicture
 
 	trigger = {
-		tag = BRA
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
 		is_year = 1549
+		NOT = { is_year = 1560 }
 		NOT = {
 			has_country_flag = CE_BRA_expelled_the_jews
 		}
@@ -2969,7 +3033,10 @@ country_event = {
 	picture = ELECTION_REPUBLICAN_eventPicture
 
 	trigger = {
-		tag = BRA
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
 		is_year = 1550
 		NOT = { is_year = 1575 }
 		num_of_loans = 1
