@@ -103,3 +103,13 @@ CE_BRA_Jewish_Privileges_Restored = {
 	global_unrest = 1
 	global_tax_modifier = 0.10	
 }
+CE_BRA_Elector_of_St_John = {
+	prestige = 0.5
+}
+CE_BRA_Knights_Of_the_Order_of_St_John = {
+	global_manpower_modifier = 0.05
+	cavalry_cost = -0.05
+}
+CE_BRA_secularization_of_st_john = {
+	global_tax_modifier = 0.10
+}

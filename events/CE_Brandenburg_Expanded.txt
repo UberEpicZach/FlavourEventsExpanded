@@ -3302,3 +3302,151 @@ country_event = {
 		}
 	}
 }
+
+#Brandenburg #The Order of St John, 1460
+country_event = {
+	id = CE_brandenburg_expanded.56
+	title = CE_brandenburg_expanded.56.t
+	desc = CE_brandenburg_expanded.56.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	trigger = {
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
+		is_year = 1460
+		NOT = { is_year = 1470 }
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+
+	option = {
+		name = CE_brandenburg_expanded.56.a
+		
+		add_ruler_modifier = {
+			name = CE_BRA_Elector_of_St_John
+			duration = -1
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+#Brandenburg #The Conversion of The Order of St John, 1538
+country_event = {
+	id = CE_brandenburg_expanded.57
+	title = CE_brandenburg_expanded.57.t
+	desc = CE_brandenburg_expanded.57.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	trigger = {
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
+		is_year = 1538
+		NOT = { is_year = 1550 }
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+
+	option = {
+		name = CE_brandenburg_expanded.57.a
+		
+		add_country_modifier = {
+			name = CE_BRA_Knights_Of_the_Order_of_St_John
+			duration = 36500
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+#Brandenburg #The Secularization of the Order of St John, 1650
+country_event = {
+	id = CE_brandenburg_expanded.58
+	title = CE_brandenburg_expanded.58.t
+	desc = CE_brandenburg_expanded.58.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	trigger = {
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
+		is_year = 1650
+		NOT = { is_year = 1660 }
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+
+	option = {
+		name = CE_brandenburg_expanded.58.a
+		
+		remove_country_modifier = CE_BRA_Knights_Of_the_Order_of_St_John
+		every_country = {
+			limit = {
+				culture_group = germanic
+				#religion = protestant
+			}
+			country_event = {
+				id = CE_brandenburg_expanded.59
+			}
+		}
+		random_owned_province = {
+			add_base_manpower = 1
+		}
+		random_owned_province = {
+			add_base_manpower = 1
+		}
+		random_owned_province = {
+			add_base_manpower = 1
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+#Brandenburg #Secularization of the Order of St John, 1650
+country_event = {
+	id = CE_brandenburg_expanded.59
+	title = CE_brandenburg_expanded.59.t
+	desc = CE_brandenburg_expanded.59.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = CE_brandenburg_expanded.59.a
+		
+		capital_scope = {
+			add_base_manpower = 1
+		}
+		add_country_modifier = {
+			name = CE_BRA_secularization_of_st_john
+			duration = 3650
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
