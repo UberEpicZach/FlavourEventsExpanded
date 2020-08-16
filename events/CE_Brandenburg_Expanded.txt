@@ -3402,7 +3402,7 @@ country_event = {
 		every_country = {
 			limit = {
 				culture_group = germanic
-				#religion = protestant
+				religion = protestant
 			}
 			country_event = {
 				id = CE_brandenburg_expanded.59
