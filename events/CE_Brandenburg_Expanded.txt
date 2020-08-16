@@ -3075,3 +3075,163 @@ country_event = {
 		}
 	}
 }
+
+#Brandenburg #Pogrom of 1571, 1571
+country_event = {
+	id = CE_brandenburg_expanded.53
+	title = CE_brandenburg_expanded.53.t
+	desc = CE_brandenburg_expanded.53.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	trigger = {
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
+		is_year = 1571
+		NOT = { is_year = 1600 }
+		NOT = {
+			has_country_flag = CE_BRA_expelled_the_jews
+		}
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+
+	option = {
+		name = CE_brandenburg_expanded.53.a
+		
+		add_years_of_income = 0.5
+		add_ruler_modifier = {
+			name = CE_BRA_Jews_Expelled
+			duration = -1
+		}
+		set_country_flag = CE_BRA_expelled_the_jews
+		clr_country_flag = CE_BRA_un_expelled_the_jews
+		hidden_effect = {
+			if = {
+				limit = {
+					court_jew = 1
+				}
+				country_event = {
+					id = CE_brandenburg_expanded.54
+					days = 30
+				}
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = CE_brandenburg_expanded.53.b
+		add_years_of_income = -0.25
+		set_country_flag = CE_BRA_expelled_the_jews
+		clr_country_flag = CE_BRA_un_expelled_the_jews
+		hidden_effect = {
+			if = {
+				limit = {
+					court_jew = 1
+				}
+				country_event = {
+					id = CE_brandenburg_expanded.54
+					days = 30
+				}
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = CE_brandenburg_expanded.53.c
+		add_stability = -1
+		add_ruler_modifier = {
+			name = CE_BRA_Jewish_Privileges_Restored
+			duration = -1
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#Brandenburg #The Arrest of Lippold Ben Chluchim, 1571
+country_event = {
+	id = CE_brandenburg_expanded.54
+	title = CE_brandenburg_expanded.54.t
+	desc = CE_brandenburg_expanded.54.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = CE_brandenburg_expanded.54.a
+		
+		add_prestige = -10
+		kill_advisor = court_jew
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = CE_brandenburg_expanded.54.b
+		country_event = {
+			id = CE_brandenburg_expanded.55
+			days = 30
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#Brandenburg #The Arrest of Lippold Ben Chluchim, 1571
+country_event = {
+	id = CE_brandenburg_expanded.55
+	title = CE_brandenburg_expanded.55.t
+	desc = CE_brandenburg_expanded.55.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = CE_brandenburg_expanded.55.a
+		
+		add_stability = -1
+		kill_advisor = court_jew
+		ai_chance = {
+			factor = 0
+		}
+	}
+
+	option = {
+		name = CE_brandenburg_expanded.55.b
+		add_years_of_income = -0.1
+		add_prestige = -25
+		remove_advisor = court_jew
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = CE_brandenburg_expanded.55.c
+		trigger = {
+			has_ruler_modifier = CE_BRA_Jewish_Privileges_Restored
+		}
+		add_years_of_income = -0.1
+		add_prestige = -15
+		ai_chance = {
+			factor = 10
+		}
+	}
+}

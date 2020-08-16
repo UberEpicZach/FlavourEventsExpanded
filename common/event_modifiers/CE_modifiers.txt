@@ -96,4 +96,10 @@ CE_BRA_economic_downturn = {
 CE_BRA_economic_collapse = {
 	trade_efficiency = -0.20
 }
-
+CE_BRA_Jews_Expelled = {
+	interest = 2
+}
+CE_BRA_Jewish_Privileges_Restored = {
+	global_unrest = 1
+	global_tax_modifier = 0.10	
+}
