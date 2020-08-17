@@ -23,24 +23,13 @@ country_event = {
 	}
 	
 	immediate = {
-		random_owned_province = {
+		every_owned_province = {
 			limit = {
-				any_neighbouring_province = {
+				any_neighbor_province = {
 					owner = {
 						tag = BOH
 					}
 				}
-			}
-			add_devastation = 15
-		}
-		random_owned_province = {
-			limit = {
-				any_neighbouring_province = {
-					owner = {
-						tag = BOH
-					}
-				}
-				NOT = { devastation = 10}
 			}
 			add_devastation = 15
 		}
@@ -74,11 +63,18 @@ country_event = {
 	option = {
 		name = CE_hungary_expanded.1.b
 		custom_tooltip = CE_austria_demands_reparations
-		custom_tooltip = CE_austria_calls_for_aid
+		
 		tooltip = {
 			declare_war_with_cb = {
 				who = BOH
-				casus_belli = cb_liberation  
+				casus_belli = cb_border_war
+			}
+		}
+		HAB = {
+			add_casus_belli = {
+				target = BOH
+				type = cb_border_war
+				months = 12
 			}
 		}
 		BOH = {
@@ -87,6 +83,7 @@ country_event = {
 				days = 30
 			}
 		}
+		custom_tooltip = CE_austria_calls_for_aid
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -109,6 +106,11 @@ country_event = {
 	option = {
 		name = CE_hungary_expanded.2.a
 		add_treasury = -250
+		tooltip = {
+			HAB = {
+				add_treasury = 250
+			}
+		}
 		HAB = {
 			country_event = {
 				id = CE_hungary_expanded.3
@@ -126,10 +128,7 @@ country_event = {
 	option = {
 		name = CE_hungary_expanded.2.b
 		HAB = {
-			declare_war_with_cb = {
-				who = BOH
-				casus_belli = cb_liberation  
-			}
+			declare_war = BOH
 		}
 		HUN = {
 			country_event = {
@@ -161,6 +160,11 @@ country_event = {
 	option = {
 		name = CE_hungary_expanded.3.a
 		add_treasury = 250
+		tooltip = {
+			BOH = {
+				add_treasury = -250
+			}
+		}
 	}
 }
 
