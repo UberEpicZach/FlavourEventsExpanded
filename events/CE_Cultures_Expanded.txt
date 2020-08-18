@@ -11,6 +11,7 @@ country_event = {
 
 	trigger = {
 		tag = HUN
+		NOT = { has_country_flag = CE_transylvanian_saxons }
 	}
 
 	mean_time_to_happen = {
@@ -44,6 +45,7 @@ country_event = {
 	trigger = {
 		tag = HUN
 		has_country_flag = CE_transylvanian_saxons
+		NOT = { has_country_flag = CE_szekelys }
 	}
 
 	mean_time_to_happen = {
@@ -77,6 +79,7 @@ country_event = {
 	trigger = {
 		tag = HUN
 		has_country_flag = CE_szekelys
+		NOT = { has_country_flag = CE_Union_Of_Nations }
 	}
 
 	mean_time_to_happen = {
@@ -84,6 +87,7 @@ country_event = {
 	}
 
 	immediate = {
+		set_country_flag = CE_Union_Of_Nations
 	}
 
 	option = {

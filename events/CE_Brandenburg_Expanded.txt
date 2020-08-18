@@ -12,6 +12,7 @@ country_event = {
 	trigger = {
 		tag = BRA
 		is_year = 1472
+		NOT = { is_year = 1480 }
 		NOT = {
 			OR = {
 				is_in_war = {
@@ -56,6 +57,7 @@ country_event = {
 	
 	trigger = {
 		is_year = 1478
+		not = { is_year = 1490}
 		tag = BOH
 		BRA = {
 			has_country_flag = CE_barbara_von_hohenzollern_marriage
@@ -924,6 +926,7 @@ country_event = {
 		exists = BRG
 		exists = PAL
 		is_year = 1609
+		NOT = { is_year = 1630 }
 	}
 	
 	mean_time_to_happen = {
@@ -2035,8 +2038,12 @@ country_event = {
 	picture = ELECTION_REPUBLICAN_eventPicture
 
 	trigger = {
-		tag = BRA
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
 		is_year = 1470
+		NOT = { is_year = 1480 }
 	}
 	
 	fire_only_once = yes
@@ -2055,12 +2062,18 @@ country_event = {
 			estate = estate_burghers
 			loyalty = -5
 		}
+		ai_chance = {
+			factor = 1
+		}
 	}
 	option = {
 		name = CE_brandenburg_expanded.31.b
 		add_estate_loyalty = {
 			estate = estate_burghers
 			loyalty = 5
+		}
+		ai_chance = {
+			factor = 0
 		}
 	}
 }
@@ -2073,8 +2086,12 @@ country_event = {
 	picture = ELECTION_REPUBLICAN_eventPicture
 	
 	trigger = {
-		tag = BRA
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
 		is_year = 1488
+		NOT = { is_year = 1500 }
 	}
 
 	fire_only_once = yes
@@ -2100,12 +2117,18 @@ country_event = {
 				}
 			}
 		}
+		ai_chance = {
+			factor = 1
+		}
 	}
 	option = {
 		name = CE_brandenburg_expanded.32.b
 		add_estate_loyalty = {
 			estate = estate_burghers
 			loyalty = 5
+		}
+		ai_chance = {
+			factor = 0
 		}
 	}
 }
@@ -2118,8 +2141,12 @@ country_event = {
 	picture = ELECTION_REPUBLICAN_eventPicture
 	
 	trigger = {
-		tag = BRA
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
 		is_year = 1510
+		NOT = { is_year = 1520}
 	}
 
 	fire_only_once = yes
@@ -2144,6 +2171,9 @@ country_event = {
 			estate = estate_church
 			loyalty = 5
 		}
+		ai_chance = {
+			factor = 1
+		}
 	}
 	option = {
 		name = CE_brandenburg_expanded.33.b
@@ -2151,6 +2181,9 @@ country_event = {
 		add_estate_loyalty = {
 			estate = estate_church
 			loyalty = -10
+		}
+		ai_chance = {
+			factor = 0
 		}
 	}
 }
@@ -2163,8 +2196,12 @@ country_event = {
 	picture = ELECTION_REPUBLICAN_eventPicture
 	
 	trigger = {
-		tag = BRA
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
 		is_year = 1539
+		NOT = { is_year = 1550 }
 		has_country_flag = CE_BRA_expelled_the_jews
 	}
 
@@ -2191,12 +2228,1225 @@ country_event = {
 			estate = estate_church
 			loyalty = -5
 		}
+		ai_chance = {
+			factor = 1
+		}
 	}
 	option = {
 		name = CE_brandenburg_expanded.34.b
 		add_estate_loyalty = {
 			estate = estate_church
 			loyalty = 5
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#Brandenburg #Extinction of the House of Torgow, 1490
+country_event = {
+	id = CE_brandenburg_expanded.35
+	title = CE_brandenburg_expanded.35.t
+	desc = CE_brandenburg_expanded.35.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	trigger = {
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
+		is_year = 1490
+		NOT = { is_year = 1500 }
+		1763 = {
+			owner = {
+				tag = BOH
+			}
+		}
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+
+	option = {
+		name = CE_brandenburg_expanded.35.a
+		BOH = {
+			country_event = {
+				id = CE_brandenburg_expanded.36
+				days = 30
+			}
+		}
+		tooltip = {
+			add_treasury = -75
+		}
+		custom_tooltip = JE_BRA_Bohemia_Retains_repurchase_rights
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = CE_brandenburg_expanded.35.b
+		1763 = {
+			add_claim = BRA
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+	option = {
+		name = CE_brandenburg_expanded.35.c
+		add_opinion = {
+			who = BOH
+			modifier = CE_Conceeded_Territory
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#Bohemia #Extinction of the House of Torgow, 1490
+country_event = {
+	id = CE_brandenburg_expanded.36
+	title = CE_brandenburg_expanded.36.t
+	desc = CE_brandenburg_expanded.36.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	major = yes
+	major_trigger = {
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
+	}
+	
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = CE_brandenburg_expanded.36.a
+		BOH = {
+			add_treasury = 75
+		}
+		BRA = {
+			add_treasury = -75
+		}
+		1763 = {
+			cede_province = BRA
+		}
+		set_global_flag = JE_BRA_Pawning_of_Zollern
+		custom_tooltip = JE_BRA_Bohemia_Retains_repurchase_rights
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = CE_brandenburg_expanded.36.b
+		add_legitimacy = 5
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#Brandenburg #Upcoming Disaster, 1525
+country_event = {
+	id = CE_brandenburg_expanded.37
+	title = CE_brandenburg_expanded.37.t
+	desc = CE_brandenburg_expanded.37.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	trigger = {
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
+		is_year = 1525
+		NOT = { is_year = 1535 }
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+	option = {
+		name = CE_brandenburg_expanded.37.a
+		add_prestige = -25
+		add_legitimacy = -25
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = CE_brandenburg_expanded.37.b
+		tooltip = {
+			random_list = {
+				75 = { }
+				25 = {
+					capital_scope = {
+						add_base_tax = -3
+						add_base_production = -3
+						add_base_manpower = -3
+					}
+					kill_ruler = yes
+				}
+			}
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#Brandenburg #Alma Mater Viadrina, 1506
+country_event = {
+	id = CE_brandenburg_expanded.38
+	title = CE_brandenburg_expanded.38.t
+	desc = CE_brandenburg_expanded.38.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	trigger = {
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
+		is_year = 1506
+		NOT = { is_year = 1516 }
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+	option = {
+		name = CE_brandenburg_expanded.38.a
+		change_innovativeness = 2.5
+		add_papal_influence = 5
+	}
+}
+
+#Brandenburg #The Division of Joachim, 1535
+country_event = {
+	id = CE_brandenburg_expanded.39
+	title = CE_brandenburg_expanded.39.t
+	desc = CE_brandenburg_expanded.39.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	trigger = {
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
+		is_year = 1535
+		NOT = { is_year = 1545 }
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+	immediate = {
+		set_global_flag = CE_BRA_KUS_SPLIT_FLAG
+	}
+
+	option = {
+		name = CE_brandenburg_expanded.39.a
+		custom_tooltip = CE_BRA_BRA_KUS_Release
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						area = neumark_area
+						area = lusatia_area
+					}
+					owner = {
+						tag = BRA
+					}
+				}
+				cede_province = RUP
+				add_core = RUP
+			}
+			RUP = {
+				define_ruler = {
+					name = "Johann"
+					dynasty = "Von Hohenzollern"
+				}
+				add_ruler_modifier = {
+					name = CE_Ruppin_infertility
+					duration = -1
+				}
+				override_country_name = "BRA_KUS"
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = CE_brandenburg_expanded.39.b
+		add_stability = -2
+		random_owned_province = {
+			limit = {
+				area = neumark_area
+			}
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 3
+				leader_dynasty = "Von Hohenzollern"
+				leader = "Johann"
+			}
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+	option = {
+		name = CE_brandenburg_expanded.39.c
+		trigger = {
+			has_country_modifier = bra_dispositio_achillea
+		}
+		highlight = yes
+		add_stability = -1
+		random_owned_province = {
+			limit = {
+				area = neumark_area
+			}
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 2
+				leader_dynasty = "Von Hohenzollern"
+				leader = "Johann"
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+#Brandenburg #The Ìnheritance of Brandenburg-Kustrin, 1571
+country_event = {
+	id = CE_brandenburg_expanded.40
+	title = CE_brandenburg_expanded.40.t
+	desc = CE_brandenburg_expanded.40.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	trigger = {
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
+		has_global_flag = CE_BRA_KUS_SPLIT_FLAG
+		OR = {
+			RUP = {
+				NOT = {
+					has_ruler_modifier = CE_Ruppin_infertility
+				}
+			}
+			is_year = 1571
+		}
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+		modifier = {
+			factor = 0.01
+			RUP = {
+				NOT = {
+					has_ruler_modifier = CE_Ruppin_infertility
+				}
+			}
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			RUP = {
+				kill_heir = yes
+				define_ruler = {
+					name = "Regency Council"
+					adm = 2
+					dip = 2
+					mil = 2
+					fixed = yes
+					regency = yes
+				}
+			}
+			clr_global_flag = CE_BRA_KUS_SPLIT_FLAG
+		}
+	}
+
+	option = {
+		name = CE_brandenburg_expanded.40.a
+		BRA = {
+			inherit = RUP
+		}
+	}
+}
+
+#Bohemia #Right of Repurchase, 1516
+country_event = {
+	id = CE_brandenburg_expanded.41
+	title = CE_brandenburg_expanded.41.t
+	desc = CE_brandenburg_expanded.41.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	major = yes
+	major_trigger = {
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
+	}
+
+	trigger = {
+		tag = BOH
+		is_year = 1516 
+		NOT = { is_year = 1530 }
+		has_global_flag = JE_BRA_Pawning_of_Zollern
+		1763 = {
+			owner = {
+				tag = BRA
+			}
+		}
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+
+	immediate = {
+		clr_global_flag = JE_BRA_Pawning_of_Zollern
+	}
+
+	option = {
+		name = CE_brandenburg_expanded.41.a
+		tooltip = {
+			BOH = {
+				add_treasury = -75
+			}
+			BRA = {
+				add_treasury = 75
+			}
+		}
+		BRA = {
+			country_event = {
+				id = CE_brandenburg_expanded.42
+				days = 30
+			}
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+	option = {
+		name = CE_brandenburg_expanded.41.b
+		BRA = {
+			country_event = {
+				id = CE_brandenburg_expanded.43
+				days = 30
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+#Brandenburg #Bohemian Repurchase, 1516
+country_event = {
+	id = CE_brandenburg_expanded.42
+	title = CE_brandenburg_expanded.42.t
+	desc = CE_brandenburg_expanded.42.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	major = yes
+	major_trigger = {
+		tag = BOH
+	}
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = CE_brandenburg_expanded.42.a
+		BOH = {
+			add_treasury = -75
+		}
+		BRA = {
+			add_treasury = 75
+		}
+		1763 = {
+			cede_province = BOH
+		}
+	}
+}
+
+#Brandenburg #Sale of Repurchase Rights, 1516
+country_event = {
+	id = CE_brandenburg_expanded.43
+	title = CE_brandenburg_expanded.43.t
+	desc = CE_brandenburg_expanded.43.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+	major = yes
+	major_trigger = {
+		tag = BOH
+	}
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = CE_brandenburg_expanded.43.a
+		BOH = {
+			add_treasury = 50
+		}
+		BRA = {
+			add_treasury = -50
+		}
+		1763 = {
+			add_local_autonomy = -25
+			remove_core = BOH
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = CE_brandenburg_expanded.43.b
+		add_prestige = -10
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#Brandenburg #GruneWalt Hunting Lodge, 1542
+country_event = {
+	id = CE_brandenburg_expanded.44
+	title = CE_brandenburg_expanded.44.t
+	desc = CE_brandenburg_expanded.44.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	trigger = {
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
+		is_year = 1542
+		NOT = { is_year = 1550 }
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+
+	option = {
+		name = CE_brandenburg_expanded.44.a
+		set_ruler_flag = CE_BRA_Hunting_Lodge
+		if = {
+			limit = {
+				is_ai = no
+			}
+			add_treasury = -700
+		} 
+		add_ruler_modifier = {
+			name = CE_BRA_Lover_of_the_Hunt #-25% State Maintenance, -5% estate Loyalty
+			duration = -1
+		}
+	}
+	option = {
+		name = CE_brandenburg_expanded.44.b
+		add_adm_power = -100
+		add_dip_power = -100
+		add_mil_power = -100
+		add_legitimacy = -25
+		change_adm = -1
+		add_ruler_modifier = {
+			name = CE_BRA_Lover_of_the_Hunt #-25% State Maintenance, -5% estate Loyalty
+			duration = -1
+		}
+	}
+}
+
+#Brandenburg #Accident at the Lodge, 1551
+country_event = {
+	id = CE_brandenburg_expanded.45
+	title = CE_brandenburg_expanded.45.t
+	desc = CE_brandenburg_expanded.45.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	trigger = {
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
+		is_year = 1551
+		NOT = { is_year = 1560 }
+		has_ruler_flag = CE_BRA_Hunting_Lodge
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+
+	option = {
+		name = CE_brandenburg_expanded.45.a
+		clr_ruler_flag = CE_BRA_Hunting_Lodge
+		add_prestige = -15
+		add_ruler_modifier = {
+			name = CE_BRA_The_Beautifull_Foundress #-0.5 Legitimacy
+			duration = -1
+		}
+	}
+}
+
+#Brandenburg #Accident at the Lodge, 1543
+country_event = {
+	id = CE_brandenburg_expanded.46
+	title = CE_brandenburg_expanded.46.t
+	desc = CE_brandenburg_expanded.46.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	trigger = {
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
+		is_year = 1543
+		NOT = { is_year = 1570 }
+		has_ruler_flag = CE_BRA_Hunting_Lodge
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 365
+	}
+
+	option = {
+		name = CE_brandenburg_expanded.46.a
+		
+		2969 = {
+			add_base_tax = 2
+			add_base_production= 1
+		}
+		add_country_modifier = {
+			name = CE_BRA_Jewish_Tax
+			duration = 7300
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = CE_brandenburg_expanded.46.b
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = 10
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#Brandenburg #Introduction of the Reformation, 1539
+country_event = {
+	id = CE_brandenburg_expanded.47
+	title = CE_brandenburg_expanded.47.t
+	desc = CE_brandenburg_expanded.47.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	trigger = {
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
+		OR = {
+			AND = {
+				is_year = 1525
+				religion = catholic
+			}
+			AND = {
+				calc_true_if = {
+					all_owned_province = {
+						religion = protestant
+					}
+					amount = 3
+				}
+				NOT = { religion = protestant }
+			}
+		}		
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+
+	option = {
+		name = CE_brandenburg_expanded.47.a
+		
+		add_ruler_modifier = {
+			name = CE_BRA_religious_pragmatism
+			duration = -1
+		}	
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+#Brandenburg #Secularization of the Monasteries, 1545
+country_event = {
+	id = CE_brandenburg_expanded.48
+	title = CE_brandenburg_expanded.48.t
+	desc = CE_brandenburg_expanded.48.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	trigger = {
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
+		OR = {
+			religion = protestant
+			AND = {
+				religion = catholic
+				has_ruler_modifier = CE_BRA_religious_pragmatism
+			}
+		}
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+
+	option = {
+		name = CE_brandenburg_expanded.48.a
+		
+		add_years_of_income = 0.5
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = CE_brandenburg_expanded.48.b
+		
+		random_owned_province = {
+			add_base_tax = 1
+		}
+		random_owned_province = {
+			add_base_tax = 1
+		}
+		random_owned_province = {
+			add_base_tax = 1
+		}
+		random_owned_province = {
+			add_base_tax = 1
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+#Brandenburg #Lippold Ben Chluchim, 1549
+country_event = {
+	id = CE_brandenburg_expanded.49
+	title = CE_brandenburg_expanded.49.t
+	desc = CE_brandenburg_expanded.49.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	trigger = {
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
+		is_year = 1549
+		NOT = { is_year = 1560 }
+		NOT = {
+			has_country_flag = CE_BRA_expelled_the_jews
+		}
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+
+	option = {
+		name = CE_brandenburg_expanded.49.a
+		
+		define_advisor = {
+			type = court_jew
+			name = "Lippold Ben Chluchim"
+			skill = 2
+			discount = yes
+			culture = hebrew
+			religion = jewish
+		}
+
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = CE_brandenburg_expanded.49.b
+		
+		add_ruler_modifier = {
+			name = "CE_BRA_Lippold_Ben_Chluchim"
+			duration = -1
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+#Brandenburg #Devaluation of the Mint, 1550
+country_event = {
+	id = CE_brandenburg_expanded.50
+	title = CE_brandenburg_expanded.50.t
+	desc = CE_brandenburg_expanded.50.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	trigger = {
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
+		is_year = 1550
+		NOT = { is_year = 1575 }
+		num_of_loans = 1
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+
+	option = {
+		name = CE_brandenburg_expanded.50.a
+		
+		add_years_of_income = 1
+		add_inflation = 3
+		custom_tooltip = CE_BRA_Could_Lead_To_Economic_Collapse
+		hidden_effect = {
+			country_event = {
+				id = CE_brandenburg_expanded.51
+				days = 1825
+			}
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+
+	option = {
+		name = CE_brandenburg_expanded.50.b
+		
+		add_legitimacy = 5
+
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+#Brandenburg #Illegal Foreign Mints, 1555
+country_event = {
+	id = CE_brandenburg_expanded.51
+	title = CE_brandenburg_expanded.51.t
+	desc = CE_brandenburg_expanded.51.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = CE_brandenburg_expanded.51.a
+		
+		add_years_of_income = 1
+		add_inflation = 3
+		custom_tooltip = CE_BRA_Could_Lead_To_Economic_Collapse
+		hidden_effect = {
+			country_event = {
+				id = CE_brandenburg_expanded.52
+				days = 1825
+			}
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+
+	option = {
+		name = CE_brandenburg_expanded.51.b
+		
+		add_country_modifier = {
+			name = CE_BRA_economic_downturn
+			duration = 3650
+		}
+
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+#Brandenburg #Economic Collapse, 1560
+country_event = {
+	id = CE_brandenburg_expanded.52
+	title = CE_brandenburg_expanded.52.t
+	desc = CE_brandenburg_expanded.52.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = CE_brandenburg_expanded.52.a
+		
+		add_country_modifier = {
+			name = CE_BRA_economic_collapse
+			duration = 7300
+		}
+
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+#Brandenburg #Pogrom of 1571, 1571
+country_event = {
+	id = CE_brandenburg_expanded.53
+	title = CE_brandenburg_expanded.53.t
+	desc = CE_brandenburg_expanded.53.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	trigger = {
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
+		is_year = 1571
+		NOT = { is_year = 1600 }
+		NOT = {
+			has_country_flag = CE_BRA_expelled_the_jews
+		}
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+
+	option = {
+		name = CE_brandenburg_expanded.53.a
+		
+		add_years_of_income = 0.5
+		add_ruler_modifier = {
+			name = CE_BRA_Jews_Expelled
+			duration = -1
+		}
+		set_country_flag = CE_BRA_expelled_the_jews
+		clr_country_flag = CE_BRA_un_expelled_the_jews
+		hidden_effect = {
+			if = {
+				limit = {
+					court_jew = 1
+				}
+				country_event = {
+					id = CE_brandenburg_expanded.54
+					days = 30
+				}
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = CE_brandenburg_expanded.53.b
+		add_years_of_income = -0.25
+		set_country_flag = CE_BRA_expelled_the_jews
+		clr_country_flag = CE_BRA_un_expelled_the_jews
+		hidden_effect = {
+			if = {
+				limit = {
+					court_jew = 1
+				}
+				country_event = {
+					id = CE_brandenburg_expanded.54
+					days = 30
+				}
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = CE_brandenburg_expanded.53.c
+		add_stability = -1
+		add_ruler_modifier = {
+			name = CE_BRA_Jewish_Privileges_Restored
+			duration = -1
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#Brandenburg #The Arrest of Lippold Ben Chluchim, 1571
+country_event = {
+	id = CE_brandenburg_expanded.54
+	title = CE_brandenburg_expanded.54.t
+	desc = CE_brandenburg_expanded.54.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = CE_brandenburg_expanded.54.a
+		
+		add_prestige = -10
+		kill_advisor = court_jew
+		ai_chance = {
+			factor = 1
+		}
+	}
+
+	option = {
+		name = CE_brandenburg_expanded.54.b
+		country_event = {
+			id = CE_brandenburg_expanded.55
+			days = 30
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#Brandenburg #The Arrest of Lippold Ben Chluchim, 1571
+country_event = {
+	id = CE_brandenburg_expanded.55
+	title = CE_brandenburg_expanded.55.t
+	desc = CE_brandenburg_expanded.55.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = CE_brandenburg_expanded.55.a
+		
+		add_stability = -1
+		kill_advisor = court_jew
+		ai_chance = {
+			factor = 0
+		}
+	}
+
+	option = {
+		name = CE_brandenburg_expanded.55.b
+		add_years_of_income = -0.1
+		add_prestige = -25
+		remove_advisor = court_jew
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = CE_brandenburg_expanded.55.c
+		trigger = {
+			has_ruler_modifier = CE_BRA_Jewish_Privileges_Restored
+		}
+		add_years_of_income = -0.1
+		add_prestige = -15
+		ai_chance = {
+			factor = 10
+		}
+	}
+}
+
+#Brandenburg #The Order of St John, 1460
+country_event = {
+	id = CE_brandenburg_expanded.56
+	title = CE_brandenburg_expanded.56.t
+	desc = CE_brandenburg_expanded.56.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	trigger = {
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
+		is_year = 1460
+		NOT = { is_year = 1470 }
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+
+	option = {
+		name = CE_brandenburg_expanded.56.a
+		
+		add_ruler_modifier = {
+			name = CE_BRA_Elector_of_St_John
+			duration = -1
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+#Brandenburg #The Conversion of The Order of St John, 1538
+country_event = {
+	id = CE_brandenburg_expanded.57
+	title = CE_brandenburg_expanded.57.t
+	desc = CE_brandenburg_expanded.57.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	trigger = {
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
+		is_year = 1538
+		NOT = { is_year = 1550 }
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+
+	option = {
+		name = CE_brandenburg_expanded.57.a
+		
+		add_country_modifier = {
+			name = CE_BRA_Knights_Of_the_Order_of_St_John
+			duration = 36500
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+#Brandenburg #The Secularization of the Order of St John, 1650
+country_event = {
+	id = CE_brandenburg_expanded.58
+	title = CE_brandenburg_expanded.58.t
+	desc = CE_brandenburg_expanded.58.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	trigger = {
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
+		is_year = 1650
+		NOT = { is_year = 1660 }
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 120
+	}
+
+	option = {
+		name = CE_brandenburg_expanded.58.a
+		
+		remove_country_modifier = CE_BRA_Knights_Of_the_Order_of_St_John
+		every_country = {
+			limit = {
+				culture_group = germanic
+				religion = protestant
+			}
+			country_event = {
+				id = CE_brandenburg_expanded.59
+			}
+		}
+		random_owned_province = {
+			add_base_manpower = 1
+		}
+		random_owned_province = {
+			add_base_manpower = 1
+		}
+		random_owned_province = {
+			add_base_manpower = 1
+		}
+		
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+#Brandenburg #Secularization of the Order of St John, 1650
+country_event = {
+	id = CE_brandenburg_expanded.59
+	title = CE_brandenburg_expanded.59.t
+	desc = CE_brandenburg_expanded.59.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
+	option = {
+		name = CE_brandenburg_expanded.59.a
+		
+		capital_scope = {
+			add_base_manpower = 1
+		}
+		add_country_modifier = {
+			name = CE_BRA_secularization_of_st_john
+			duration = 3650
+		}
+		ai_chance = {
+			factor = 1
 		}
 	}
 }

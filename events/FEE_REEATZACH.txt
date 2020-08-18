@@ -12,7 +12,7 @@ country_event = {
 	trigger = {
 		tag = HUN
 		has_country_flag = hun_has_had_matthias_corvinus_event
-		has_ruler = "M·ty·s"
+		has_ruler = "M√°ty√°s"
 	}
 
 	fire_only_once = yes
@@ -46,7 +46,7 @@ country_event = {
 	fire_only_once = yes
 
 	mean_time_to_happen = {
-		months = 1
+		months = 6
 	}
 	immediate = {
 		set_country_flag = FEE_Podebrad
