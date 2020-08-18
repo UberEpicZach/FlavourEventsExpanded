@@ -456,7 +456,15 @@ country_event = {
 				}
 				add_permanent_claim = ANS
 			}
-			add_core = ANS
+			every_owned_province = {
+				limit = {
+					OR = {
+						area = franconia_area
+						area = upper_franconia_area
+					}
+				}
+				add_core = ANS
+			}
 			change_tag = FKN
 			set_country_flag = formed_franconia_flag
 			if = {

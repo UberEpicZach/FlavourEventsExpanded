@@ -356,12 +356,12 @@ country_event = {
 		tag = HUN
 		has_country_flag = CE_fought_union_of_nations
 		NOT = {
-			AND = {
-			num_of_rebel_armies = 1
-			num_of_rebel_controlled_provinces = 1
+			OR = {
+				num_of_rebel_armies = 1
+				num_of_rebel_controlled_provinces = 1
+			}
 		}
 	}
-}
 
 	mean_time_to_happen = {
 		days = 30
