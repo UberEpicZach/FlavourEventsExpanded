@@ -8,7 +8,7 @@ country_event = {
 	desc = fee_antwerp.1.dd
 	picture = CITY_eventPicture
 	hidden = yes
-	
+
 	trigger = {
 		OR = {
 			tag = SPA
@@ -18,15 +18,15 @@ country_event = {
 		controls = 1744
 		NOT = {
 			owns = 1744
-		}	
+		}
 		1744 = {
 			owner = {
 				war_with = ROOT
 			}
 		}
 		NOT = { has_country_flag = sacked_antwerp }
-	}	
-	
+	}
+
 	immediate = {
 		if = {
 			limit = {
@@ -47,10 +47,10 @@ country_event = {
 			country_event = { id = fee_antwerp.2 }
 		}
 	}
-	
-	option = { 
-		name = fee_antwerp.1.a		
-	}	
+
+	option = {
+		name = fee_antwerp.1.a
+	}
 }
 
 #Sack of Antwerp (Spain)
@@ -61,9 +61,9 @@ country_event = {
 	picture = CITY_eventPicture
 	fire_only_once = yes
 	is_triggered_only = yes
-	
-	option = { 
-		name = fee_antwerp.2.a	
+
+	option = {
+		name = fee_antwerp.2.a
 		add_years_of_income = 0.35
 		add_army_professionalism = -0.025
 		add_prestige = -20
@@ -80,9 +80,9 @@ country_event = {
 				country_event = { id = fee_antwerp.3 }
 			}
 		}
-	}	
-	option = { 
-		name = fee_antwerp.2.b	
+	}
+	option = {
+		name = fee_antwerp.2.b
 		add_years_of_income = 0.1
 		add_army_professionalism = 0.05
 		add_prestige = 5
@@ -100,7 +100,7 @@ country_event = {
 				country_event = { id = fee_antwerp.3 }
 			}
 		}
-	}		
+	}
 }
 
 #Sack of Antwerp (Owner)
@@ -111,13 +111,13 @@ country_event = {
 	picture = CITY_eventPicture
 	fire_only_once = yes
 	is_triggered_only = yes
-	
-	option = { 
-		name = fee_antwerp.3.a	
+
+	option = {
+		name = fee_antwerp.3.a
 		1744 = {
 			add_base_tax = -2
 			add_base_production = -2
-			add_base_mil = -2
+			add_base_manpower = -2
 			add_devastation = 95
 			add_province_modifier = {
 				name = fee_spa_destroyed_infrastructure
@@ -149,7 +149,7 @@ country_event = {
 		97 = {
 			add_base_tax = 1
 			add_base_production = 2
-			add_base_mil = 1
+			add_base_manpower = 1
 			add_province_modifier = {
 				name = fee_spa_antwerp_refugees
 				duration = 7300
@@ -163,5 +163,5 @@ country_event = {
 			name = fee_spa_black_legend
 			duration = -1
 		}
-	}		
+	}
 }

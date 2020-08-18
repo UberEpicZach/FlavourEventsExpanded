@@ -18,7 +18,7 @@ country_event = {
 			region = maghreb_region
 			has_port = yes
 		}
-		religion = islam
+		religion_group = muslim
 		is_year = 1490
 		NOT = { 
 			is_year = 1520
@@ -72,7 +72,7 @@ country_event = {
 		ai_chance = {
 			factor = 20
 		}
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 }
 

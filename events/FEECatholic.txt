@@ -46,7 +46,7 @@ country_event = {
 	#This will show the people how pious I am
 	option = {
 		name = fee_catholic.1.c
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		add_papal_influence = -5
 	}
 }
@@ -67,7 +67,7 @@ country_event = {
 		religion = catholic
 		reform_desire = 0.02
 		NOT = {
-			has_country_flag = hee_popular_piety
+			has_country_flag = fee_popular_piety
 		}
 	}
 	
@@ -86,7 +86,7 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			add_country_modifier = {
-				name = hee_popular_piety_timer
+				name = fee_popular_piety_timer
 				duration = 18250
 				hidden = yes
 			}
@@ -100,7 +100,7 @@ country_event = {
 			ai = no
 		}
 		add_country_modifier = {
-			name = hee_piety_resisted
+			name = fee_piety_resisted
 			duration = 3650
 		}
 		add_papal_influence = 15
@@ -111,7 +111,7 @@ country_event = {
 	option = {
 		name = fee_catholic.2.b
 		add_country_modifier = {
-			name = hee_piety_supported
+			name = fee_piety_supported
 			duration = 3650
 		}
 		add_papal_influence = -15

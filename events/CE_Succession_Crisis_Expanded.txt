@@ -689,6 +689,7 @@ country_event = {
 	title = succession_crisis_expanded.11.t
 	desc = succession_crisis_expanded.11.d
 	picture = ELECTION_REPUBLICAN_eventPicture
+	
 	major = yes
 	major_trigger = {
 		is_part_of_hre = yes
@@ -701,6 +702,11 @@ country_event = {
 	
 	option = {
 		name = succession_crisis_expanded.11.a
+		
+		ai_chance = {
+			factor = 1
+		}
+		
 		event_target:partitioned_country = {
 			while = {
 				limit = {
@@ -964,10 +970,6 @@ country_event = {
 				}
 			}
 		}
-	}
-	
-	ai_chance = {
-		factor = 1
 	}
 
 	after = {

@@ -17,7 +17,7 @@
  FEE_Iberia_Events.3.OPT1: "Establish a National Cortes!"
  FEE_Iberia_Events.3.OPT2: "Appoint Viceroys to these regions"
  FEE_Iberia_Events.3.OPT3: "These people are more trouble than they are worth – let the local nobles deal with them"
- FEE_Iberia_Events.3.OPT3: "Am I not the monarch? Curtail these impudent provinces!"
+ FEE_Iberia_Events.3.OPT4: "Am I not the monarch? Curtail these impudent provinces!"
 
  FEE_Iberia_Events.4.T: "Fate of the Fueros"
  FEE_Iberia_Events.4.D: "With the Basque people finally fully integrated into our realm, the question of how best to manage their affairs remains to be settled. Being one of the oldest and most proud kingdoms of Christian Iberia, the former kingdom of Navarra stubbornly guarded its ancient institutions. \nAmong those was the Fueros, the royal charter of Navarra which not only gave Navarra kingdom rank but granted considerable autonomy to its nobles and guaranteed rights to its peasants. Now, representatives of these parties have approached us, requesting that we continue to respect these rights. In exchange, they promise their fullest support for us in other internal and external affairs."
@@ -65,7 +65,8 @@
  FEE_Iberia_Events.12.D: "Since at least the 8th century, the Catholic Popes have made repeated reference to the \"Donation of Constantine\" said to be an imperial decree of the ancient Emperor Constantine himself, giving the Pope political authority over Western Rome as well as spiritual power. \nIndeed, it is this very claim to authority under the doctrine of Translatio Imperii that provides legitimacy for the Holy Roman Empire itself! \nThe legitimacy of the Donation has been questioned since the 11th century for various reasons. Now, however, a philological scholar in our own court has completed a years-long analysis of what is said to be the source document for this sweeping claim to power. By pointing out linguistic inconsistencies, he makes a convincing proof that the document is, in fact, a reprehensible forgery. Indeed, the scholar, named Lorenzo Valla, claims the forgery is so obvious that even the current Pope must be complicit to use it so brazenly. \nMaking this known to the world, however, given the great importance that the Donation has assumed, would make a lot of enemies, and risks undermining the church itself! At the same time, it could shore up our own claims in Italy… \nPredictably, the Inquisition has demanded we turn Valla over to be tried for heresy. How shall we proceed?"
  FEE_Iberia_Events.12.OPT.1: "Even the Pope cannot partake in lies!"
  FEE_Iberia_Events.12.OPT.2: "We can afford to compromise here"
- FEE_Iberia_Events.12.OPT.3: "Hand over this charlatan to the Inquisition! The holy father must remain supreme!"
+ FEE_Iberia_Events.12.OPT.3: "Hand over this charlatan to the Inquisition!"
+ FEE_Iberia_Events.12.OPT.3.TT: "The holy father must remain supreme!"
 
  FEE_Iberia_Events.13.T: "Juan de Avila"
  FEE_Iberia_Events.13.D: "Building on the reforms of Jimenez de Cisneros, priest Juan de Avila became a staunch advocate for the reform of the clergy, almost forseeing the religious turmoil to come due to clergy corruption. Selling his entire inherited wealth to benefit the poor as an example, he undertook a remarkable journey as an itinerant preacher through Andalusia, ministering to the poor and railing against clergy abuses, especially the practice of nobility of setting up their children in a comfortable lifestyle as priests. Understandably them, his preaching of revival (recogimiento) led to resentment among some powerful families. \nNow, certain noble families have captured him and dragged him before the Royal Inquisition, demanding he recant and be silenced."
@@ -121,6 +122,7 @@
  iberia_abolished_local_privileges: "Abolished Local Privileges"
  iberia_autonomy_curalied: "Autonomy Curtailed"
  iberia_fueros_enforced: "Fueros Enforced"
+ iberia_fueros_ignored: "Fueros Ignored"
  iberia_centralised_rule: "Centralized Rule enforced"
  iberia_institutions_respected: "Institutions Respected"
  iberia_institutions_modified: "Institutions Modified"

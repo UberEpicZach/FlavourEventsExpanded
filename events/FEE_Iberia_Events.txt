@@ -387,10 +387,22 @@ country_event = {
 			}
 		}
 		release = CAT
+		CAT = {
+			change_government = monarchy
+			add_government_reform = feudal_nobility
+		}
 		create_union = CAT
 		release = GAL
+		GAL = {
+			change_government = monarchy
+			add_government_reform = feudal_nobility
+		}
 		create_union = GAL
 		release = NAV
+		NAV = {
+			change_government = monarchy
+			add_government_reform = feudal_nobility
+		}
 		create_union = NAV
 	}
 
@@ -674,7 +686,13 @@ country_event = {
 	title = FEE_Iberia_Events.6.T
 	desc = FEE_Iberia_Events.6.D
 	picture = REVOLUTION_eventPicture
-
+	
+	major = yes
+	major_trigger = {
+		capital_scope = {
+			continent = europe
+		}
+	}
 	fire_only_once = yes
 
 	trigger = {
@@ -1227,7 +1245,8 @@ country_event = {
 	title = FEE_Iberia_Events.12.T
 	desc = FEE_Iberia_Events.12.D
 	picture = CHURCH_ESTATE_1_eventPicture
-
+	major = yes 
+	
 	trigger = {
 		tag = ARA
 		current_age = age_of_discovery
@@ -1303,7 +1322,7 @@ country_event = {
 
 	option = {
 		name = FEE_Iberia_Events.12.OPT.3
-
+		custom_tooltip = FEE_Iberia_Events.12.OPT.3.tt
 		ai_chance = {
 			factor = 33
 		}
@@ -1522,6 +1541,7 @@ country_event = {
 		add_years_of_income = -0.5
 		add_country_modifier = {
 			name = iberia_benedictine_reforms
+			duration = -1
 		}
 	}
 
@@ -1636,6 +1656,7 @@ country_event = {
 		add_papal_influence = 10
 		add_country_modifier = {
 			name = iberia_jesuit_education
+			duration = -1
 		}
 	}
 

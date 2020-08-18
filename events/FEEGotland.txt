@@ -1,14 +1,14 @@
 
 # Gotland events
 
-namespace = hee_GfT
+namespace = fee_GOT
 
 # A Thing of Our Own
 
 country_event = {
 	id = fee_GOT.1
-	title = hee_GfT.1.t
-	desc = hee_GfT.1.d
+	title = fee_GOT.1.t
+	desc = fee_GOT.1.d
 	picture = BORDER_TENSION_eventPicture
 
 	trigger = {
@@ -21,17 +21,17 @@ country_event = {
 		months = 800
 	}
 	option = {
-		name = hee_GfT.1.a
-		add_stability = 1
+		name = fee_GOT.1.a
+		add_stability_or_adm_power = yes
 	}
 }
 
 # It's a Gotland Thing
 
 country_event = {
-	id = hee_GfT.2
-	title = hee_GfT.2.t
-	desc = hee_GfT.2.d
+	id = fee_GOT.2
+	title = fee_GOT.2.t
+	desc = fee_GOT.2.d
 	picture = STREET_SPEECH_eventPicture
 
 	trigger = {
@@ -44,13 +44,13 @@ country_event = {
 	}
 
 	option = {
-		name = hee_GfT.2.a
+		name = fee_GOT.2.a
 		25 = {
 			add_local_autonomy = 25
 		}	
 	}
 	option = {
-		name = hee_GfT.2.b
+		name = fee_GOT.2.b
 		25 = {
 		nationalist_rebels = 1
 		}

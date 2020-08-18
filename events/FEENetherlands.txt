@@ -8,7 +8,7 @@ province_event = {
 	title = fee_NED.1.t
 	desc = fee_NED.1.d
 	picture = CITY_DEVELOPMENT_eventPicture
-	
+
 	trigger = {
 		owner = {
 			tag = NED
@@ -30,18 +30,18 @@ province_event = {
 		}
 		is_capital = no
 		NOT = {
-			has_province_modifier = hee_generality_lands
+			has_province_modifier = fee_generality_lands
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 60
 	}
-	
+
 	option = {
 		name = fee_NED.1.a
 		add_province_modifier = {
-			name = hee_generality_lands
+			name = fee_generality_lands
 			duration = -1
 		}
 	}
@@ -52,7 +52,7 @@ province_event = {
 	title = fee_NED.2.t
 	desc = fee_NED.2.d
 	picture = CITY_VIEW_eventPicture
-	
+
 	trigger = {
 		owner = {
 			tag = NED
@@ -62,7 +62,7 @@ province_event = {
 			}
 			is_at_war = no
 		}
-		has_province_modifier = hee_generality_lands
+		has_province_modifier = fee_generality_lands
 		OR = {
 			has_owner_religion = yes
 			owner = {
@@ -70,14 +70,14 @@ province_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 36
 	}
-	
+
 	option = {
 		name = fee_NED.2.a
-		remove_province_modifier = hee_generality_lands
+		remove_province_modifier = fee_generality_lands
 	}
 }
 
@@ -87,13 +87,13 @@ country_event = {
 	title = fee_NED.3.t
 	desc = fee_NED.3.d
 	picture = BATTLE_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = GEL
 		NOT = {
-			is_year = 1480 
+			is_year = 1480
 		}
 		exists = BUR
 		NOT = {
@@ -102,7 +102,7 @@ country_event = {
 		owns = 99
 		is_year = 1450
 	}
-	
+
 	mean_time_to_happen = {
 		months = 240
 		modifier = {
@@ -112,7 +112,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = fee_NED.3.a
 		random_owned_province = {
@@ -124,19 +124,19 @@ country_event = {
 		}
 		hidden_effect = {
 			add_country_modifier = {
-				name = hee_adolf_revolted
+				name = fee_adolf_revolted
 				duration = 3650
 				hidden = yes
 			}
 		}
 	}
-	
+
 	option = {
 		name = fee_NED.3.b
 		add_dip_power = -150
 	}
 }
-	
+
 #Compromising with Adolf
 country_event = {
 	id = fee_NED.4
@@ -145,9 +145,9 @@ country_event = {
 	picture = DIPLOMACY_eventPicture
 
 	fire_only_once = yes
-	
+
 	trigger = {
-		has_country_modifier = hee_adolf_revolted
+		has_country_modifier = fee_adolf_revolted
 		is_subject = no
 		OR = {
 			any_country = {
@@ -162,11 +162,11 @@ country_event = {
 			is_at_war = no
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 30
 	}
-	
+
 	option = {
 		name = fee_NED.4.a
 		BUR = {
@@ -175,12 +175,12 @@ country_event = {
 		add_prestige = -10
 		custom_tooltip = fee_NED.4.tt
 	}
-	
+
 	option = {
 		name = fee_NED.4.b
 		99 = {
 			add_province_modifier = {
-				name = hee_adolfs_unrest
+				name = fee_adolfs_unrest
 				duration = 3650
 			}
 		}
@@ -194,11 +194,11 @@ country_event = {
 	title = fee_NED.5.t
 	desc = fee_NED.5.d
 	picture = CONQUEST_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = fee_NED.5.a
 		ai_chance = {
@@ -216,7 +216,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = fee_NED.5.b
 		ai_chance = {
@@ -241,15 +241,15 @@ country_event = {
 	title = fee_NED.6.t
 	desc = fee_NED.6.d
 	picture = CONQUEST_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = fee_NED.6.a
 		add_treasury = 300
 		add_legitimacy = -10
 		add_country_modifier = {
-			name = hee_adolf_compromise
+			name = fee_adolf_compromise
 			duration = 7300
 		}
 	}
@@ -261,14 +261,14 @@ country_event = {
 	title = fee_NED.7.t
 	desc = fee_NED.7.d
 	picture = LIBERUM_VETO_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = fee_NED.7.a
 		add_prestige = -10
 		add_country_modifier = {
-			name = hee_adolf_compromise
+			name = fee_adolf_compromise
 			duration = 7300
 		}
 		add_casus_belli = {
@@ -284,23 +284,23 @@ country_event = {
 	title = fee_NED.8.t
 	desc = fee_NED.8.d
 	picture = SHIP_SAILING_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = NED
 		has_discovered = 624
 	}
-	
+
 	mean_time_to_happen = {
 		months = 120
 	}
-	
+
 	option = {
 		name = fee_NED.8.a
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		597 = {
 			add_trade_modifier = {
 				who = ROOT
@@ -327,9 +327,9 @@ country_event = {
 	}
 	option = {
 		name = fee_NED.8.b
-		
+
 		ai_chance = { factor = 0 }
-		
+
 		add_prestige = -5
 	}
 }
@@ -340,9 +340,9 @@ country_event = {
 	title = fee_NED.9.t
 	desc = fee_NED.9.d
 	picture = LIBERUM_VETO_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = NED
 		has_country_flag = fee_allow_for_founding_of_batavia
@@ -361,23 +361,23 @@ country_event = {
 			has_discovered = ROOT
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 120
 	}
-	
+
 	immediate = {
-		hidden = {
+		hidden_effect = {
 			set_country_flag = fee_allow_for_formusa
 		}
 	}
-	
+
 	option = {
 		name = fee_NED.9.a
-		
+
 		ai_chance = { factor = 100 }
-		
-		
+
+
 		add_years_of_income = -0.25
 		630 = {
 			owner = {
@@ -401,10 +401,10 @@ country_event = {
 	}
 	option = {
 		name = fee_NED.9.b
-		
+
 		ai_chance = { factor = 0 }
-		
-		
+
+
 		add_prestige = 5
 		630 = {
 			owner = {
@@ -423,9 +423,9 @@ country_event = {
 	title = fee_NED.10.t
 	desc = fee_NED.10.d
 	picture = LIBERUM_VETO_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = NED
 		has_country_flag = fee_allow_for_formusa
@@ -437,23 +437,23 @@ country_event = {
 		}
 		exists = FRM
 	}
-	
+
 	mean_time_to_happen = {
 		months = 240
 	}
-	
+
 	immediate = {
-		hidden = {
+		hidden_effect = {
 			set_country_flag = fee_allow_tunging_event
 		}
 	}
-	
+
 	option = {
 		name = fee_NED.10.a
-		
+
 		ai_chance = { factor = 100 }
-		
-		
+
+
 		738 = {
 			cede_province = ROOT
 			add_core = ROOT
@@ -463,15 +463,15 @@ country_event = {
 	}
 }
 
-#Koxinga and Tungning 
+#Koxinga and Tungning
 country_event = {
 	id = fee_NED.11
 	title = fee_NED.11.t
 	desc = fee_NED.11.d
 	picture = LIBERUM_VETO_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = NED
 		exists = FRM
@@ -479,13 +479,13 @@ country_event = {
 			owned_by = ROOT
 		}
 	}
-	
+
 	option = {
 		name = fee_NED.11.a
-		
+
 		ai_chance = { factor = 0 }
-		
-		
+
+
 		738 = {
 			cede_province = FRM
 			add_core = FRM
@@ -495,10 +495,10 @@ country_event = {
 	}
 	option = {
 		name = fee_NED.11.b
-		
+
 		ai_chance = { factor = 100 }
-		
-		
+
+
 		738 = {
 			add_core = FRM
 		}
@@ -514,24 +514,24 @@ country_event = {
 	title = fee_NED.12.t
 	desc = fee_NED.12.d
 	picture = LIBERUM_VETO_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = fee_NED.12.a
-		
+
 		ai_chance = { factor = 100 }
-		
+
 		declare_war_with_cb = {
 			who = PREV
-			casus_belli = cb_reconquest
+			casus_belli = cb_core
 			war_goal_province = 738
 		}
 	}
-	
+
 	option = {
 		name = fee_NED.12.b
-		
+
 		ai_chance = { factor = 0 }
 	}
 }

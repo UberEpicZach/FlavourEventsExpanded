@@ -1,13 +1,13 @@
 # Palatine Events
 
-namespace = hee_PAL
+namespace = fee_PAL
 
 # Johann Wilhelm II, Elector Palatine
 
 country_event = {
-	id = hee_PAL.1
-	title = hee_PAL.1.t
-	desc = hee_PAL.1.d
+	id = fee_PAL.1
+	title = fee_PAL.1.t
+	desc = fee_PAL.1.d
 	picture = ADVISOR_eventPicture
 
 	fire_only_once = yes
@@ -33,8 +33,8 @@ country_event = {
 	}
 
 	option = {
-		name = hee_PAL.1.a
-		add_stability = 1
+		name = fee_PAL.1.a
+		add_stability_or_adm_power = yes
 		add_adm_power = 50
 	}	
 }

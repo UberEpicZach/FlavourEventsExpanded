@@ -22,7 +22,7 @@ country_event = {
 			tag = BRE
 		}
 		NOT = { is_year = 1560 }
-		NOT = { has_country_modifier = hee_johannes_bugenhagen }
+		NOT = { has_country_modifier = fee_johannes_bugenhagen }
 		religion = protestant
 		any_province = { religion = catholic }
 	}
@@ -42,7 +42,7 @@ country_event = {
 	immediate = {
 		hidden_effect = { 
 			add_country_modifier = {
-				name = hee_johannes_bugenhagen
+				name = fee_johannes_bugenhagen
 				duration = -1
 				hidden = yes
 			}
@@ -61,7 +61,7 @@ country_event = {
 
 	option = {
 		name = fee_protestant.1.b
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 }
 
@@ -75,6 +75,7 @@ province_event = {
 
 	trigger = {
 		religion = catholic
+		is_religion_enabled = protestant 
 		NOT = { 
 			owner = { religion = catholic }
 		}

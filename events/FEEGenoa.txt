@@ -18,7 +18,7 @@ country_event = {
 		is_year = 1535
 		NOT = { is_year = 1580 }
 		NOT = {
-			has_country_modifier = hee_genoese_lanterna
+			has_country_modifier = fee_genoese_lanterna
 		}
 	}
 
@@ -29,7 +29,7 @@ country_event = {
 	option = {
 		name = fee_GEN.1.a
 		add_country_modifier = {
-			name = hee_genoese_lanterna 
+			name = fee_genoese_lanterna 
 			duration = -1
 		}
 		add_years_of_income = -1
@@ -120,7 +120,7 @@ country_event = {
 		is_year = 1450
 		NOT = { is_year = 1470 }
 		NOT = { 
-			has_country_modifier = hee_san_giorgio_timer
+			has_country_modifier = fee_san_giorgio_timer
 		}
 	}
 
@@ -138,7 +138,7 @@ country_event = {
 
 	immediate = {
 		add_country_modifier = {
-			name = hee_san_giorgio_timer
+			name = fee_san_giorgio_timer
 			duration = -1
 			hidden = yes
 		}
@@ -148,7 +148,7 @@ country_event = {
 		name = fee_GEN.4.a
 		1247 = {
 			add_province_modifier = {
-				name = hee_casa_san_giorgio
+				name = fee_casa_san_giorgio
 				duration = -1
 			}
 		}
@@ -228,10 +228,12 @@ country_event = {
 	option = {
 		name = fee_GEN.6.a
 		add_prestige = -5
+		101 = {
 		spawn_rebels = {
 			type = nationalist_rebels
 			size = 2
 			win = yes
+			}
 		}
 	}
 }

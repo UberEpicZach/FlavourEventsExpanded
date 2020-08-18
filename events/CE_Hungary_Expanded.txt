@@ -8,20 +8,20 @@ country_event = {
 	title = CE_hungary_expanded.1.t
 	desc = CE_hungary_expanded.1.d
 	picture = CITY_VIEW_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = HAB
         BOH = {
             has_country_flag = first_hussite_king
         }
 	}
-	
+
 	mean_time_to_happen = {
         months = 120
 	}
-	
+
 	immediate = {
 		every_owned_province = {
 			limit = {
@@ -65,18 +65,14 @@ country_event = {
 		custom_tooltip = CE_austria_demands_reparations
 		
 		tooltip = {
-			declare_war_with_cb = {
-				who = BOH
-				casus_belli = cb_border_war
-			}
-		}
-		HAB = {
-			add_casus_belli = {
-				target = BOH
-				type = cb_border_war
-				months = 12
-			}
-		}
+      HAB = {
+        add_casus_belli = {
+          target = BOH
+          type = cb_border_war
+          months = 12
+        }
+      }
+     }
 		BOH = {
 			country_event = {
 				id = CE_hungary_expanded.2
@@ -100,7 +96,7 @@ country_event = {
 	title = CE_hungary_expanded.2.t
 	desc = CE_hungary_expanded.2.d
 	picture = CITY_VIEW_eventPicture
-	
+
 	is_triggered_only = yes
 
 	option = {
@@ -232,8 +228,8 @@ country_event = {
 	desc = CE_hungary_expanded.6.d
 	picture = CITY_VIEW_eventPicture
 
-	Trigger = {
-		Tag = HUN
+	trigger = {
+		tag = HUN
 		BOH = {
 			has_country_flag = first_hussite_king
 		}
@@ -343,7 +339,7 @@ country_event = {
 		HAB = {
 			country_event = {
 				id = CE_hungary_expanded.7
-				duration = 30
+				days = 30
 			}
 		}
 		ai_chance = {
@@ -392,7 +388,7 @@ country_event = {
 	picture = CITY_VIEW_eventPicture
 
 	trigger = {
-		Tag = HUN
+		tag = HUN
 		HAB = {
 			has_country_flag = CE_promised_hungary_bag_of_gold
 		}
@@ -498,7 +494,7 @@ country_event = {
 		name = CE_hungary_expanded.11.a
 		add_casus_belli = {
 			target = HAB
-			type = cb_loan_cancelled 
+			type = cb_loan_cancelled
 			months = 120
 		}
 	}

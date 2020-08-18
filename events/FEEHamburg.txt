@@ -28,11 +28,11 @@ country_event = {
 		name = fee_HAM.1.a
 		44 = {
 			add_province_modifier = {
-				name = hee_long_compromise
+				name = fee_long_compromise
 				duration = 3650
 			}
 		}
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 }
 
@@ -63,14 +63,15 @@ country_event = {
 	option = {
 		name = fee_HAM.2.a
 		add_country_modifier = {
-			name = hee_hamburg_loan_market
+			name = fee_hamburg_loan_market
 			duration = -1
 		}
 	}
 	option = {
 		name = fee_HAM.2.b
 		add_country_modifier = {
-			name = hee_hamburg_strict_control
+			name = fee_hamburg_strict_control
+			duration = -1
 		}
 	}
 }

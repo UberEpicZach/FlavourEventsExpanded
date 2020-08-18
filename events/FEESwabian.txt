@@ -12,14 +12,14 @@ country_event = {
 	picture = LIBERUM_VETO_eventPicture
 
 	trigger = {
-		NOT = { has_global_flag = hee_swabian_league_established }
+		NOT = { has_global_flag = fee_swabian_league_established }
 		OR = {
 			capital_scope = { area = lower_swabia_area }
 			capital_scope = { area = upper_swabia_area }
 		}
 		is_year = 1460
 		NOT = { is_year = 1520 }
-		NOT = { has_global_flag = hee_swabian_league_disbanded }
+		NOT = { has_global_flag = fee_swabian_league_disbanded }
 		NOT = { is_at_war = yes }
 		NOT = { tag = BAV }
 		is_part_of_hre = yes
@@ -48,10 +48,10 @@ country_event = {
 	option = {
 		name = fee_swabian_events.1.a		# Establish a league for all of Swabia!
 		add_country_modifier = {
-			name = hee_joined_swabian_league
+			name = fee_joined_swabian_league
 			duration = -1
 		}
-		set_global_flag = hee_swabian_league_established
+		set_global_flag = fee_swabian_league_established
 		add_prestige = 10
 	}
 	
@@ -89,15 +89,15 @@ country_event = {
 				is_emperor = no
 			}
 		}
-		has_global_flag = hee_swabian_league_established
+		has_global_flag = fee_swabian_league_established
 		NOT = {
-			has_country_modifier = hee_joined_swabian_league
+			has_country_modifier = fee_joined_swabian_league
 		}
 		NOT = {
-			has_country_modifier = hee_rejected_swabian_league
+			has_country_modifier = fee_rejected_swabian_league
 		}
 		NOT = {
-			has_global_flag = hee_swabian_league_disbanded
+			has_global_flag = fee_swabian_league_disbanded
 		}
 		is_at_war = no
 		is_part_of_hre = yes
@@ -116,7 +116,7 @@ country_event = {
 			factor = 75
 		}
 		add_country_modifier = {
-			name = hee_joined_swabian_league
+			name = fee_joined_swabian_league
 			duration = -1
 		}
 		every_country = {
@@ -131,7 +131,7 @@ country_event = {
 		ai_chance = { factor = 25 }
 		add_prestige = 5
 		add_country_modifier = {
-			name = hee_rejected_swabian_league
+			name = fee_rejected_swabian_league
 			duration = -1
 			hidden = yes
 		}
@@ -150,8 +150,8 @@ country_event = {
 	# triggered_only = yes
 
 	# trigger = {
-		# has_country_modifier = hee_joined_swabian_league
-		# NOT = { has_country_flag = hee_thrown_out_swabian_league }
+		# has_country_modifier = fee_joined_swabian_league
+		# NOT = { has_country_flag = fee_thrown_out_swabian_league }
 		# is_subject = no
 	# }
 
@@ -160,11 +160,11 @@ country_event = {
 		# every_country = {
 			# limit = {
 				# NOT = ROOT
-				# has_country_modifier = hee_joined_swabian_league
+				# has_country_modifier = fee_joined_swabian_league
 			# }
 			# add_opinion = {
 				# who = ROOT
-				# modifier = hee_swabian_league_member
+				# modifier = fee_swabian_league_member
 			# }
 		# }
 	# }
@@ -182,10 +182,10 @@ country_event = {
 		# any_neighbor_country = {
 			# capital_scope = { region = swabia }
 		# }
-		# has_global_flag = hee_swabian_league_established
-		# NOT = { has_country_modifier = hee_joined_swabian_league }
-		# NOT = { has_country_modifier = hee_rejected_swabian_league }
-		# NOT = { has_global_flag = hee_swabian_league_disbanded }
+		# has_global_flag = fee_swabian_league_established
+		# NOT = { has_country_modifier = fee_joined_swabian_league }
+		# NOT = { has_country_modifier = fee_rejected_swabian_league }
+		# NOT = { has_global_flag = fee_swabian_league_disbanded }
 		# NOT = { is_at_war = yes }
 		# is_subject = no
 		# is_part_of_hre = yes
@@ -202,7 +202,7 @@ country_event = {
 		# modifier = {
 			# factor = 0.8
 			# any_country = {
-				# has_country_modifier = hee_joined_swabian_league
+				# has_country_modifier = fee_joined_swabian_league
 				# capital_scope = { region = swabia }
 				# has_opinion = {
 					# who = ROOT
@@ -213,7 +213,7 @@ country_event = {
 		# modifier = {
 			# factor = 0.8
 			# any_country = {
-				# has_country_modifier = hee_joined_swabian_league
+				# has_country_modifier = fee_joined_swabian_league
 				# capital_scope = { region = swabia }
 				# alliance_with = ROOT
 			# }
@@ -226,12 +226,12 @@ country_event = {
 			# factor = 80
 		# }
 		# add_country_modifier = {
-			# name = hee_joined_swabian_league
+			# name = fee_joined_swabian_league
 			# duration = -1
 		# }
 		# every_country = {
 			# limit = {
-				# has_country_modifier = hee_joined_swabian_league
+				# has_country_modifier = fee_joined_swabian_league
 				# NOT = ROOT
 			# }
 			# country_event = { id = fee_swabian_events.5 days = 10 }
@@ -243,7 +243,7 @@ country_event = {
 			# factor = 20
 		# }
 		# add_country_modifier = {
-			# name = hee_rejected_swabian_league
+			# name = fee_rejected_swabian_league
 			# duration = -1
 			# hidden = yes
 		# }
@@ -262,7 +262,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	trigger = {
-		has_country_modifier = hee_joined_swabian_league
+		has_country_modifier = fee_joined_swabian_league
 	}
 
 	option = {
@@ -272,11 +272,11 @@ country_event = {
 		add_dip_power = 10
 		add_opinion = {
 			who = FROM
-			modifier = hee_swabian_league_member
+			modifier = fee_swabian_league_member
 		}
 		reverse_add_opinion = {
 			who = FROM
-			modifier = hee_swabian_league_member
+			modifier = fee_swabian_league_member
 		}
 	}
 }
@@ -295,15 +295,15 @@ country_event = {
 		name = fee_swabian_events.6.a
 		every_country = {
 			limit = {
-				has_country_modifier = hee_joined_swabian_league
+				has_country_modifier = fee_joined_swabian_league
 			}
 			remove_opinion = {
 				who = FROM
-				modifier = hee_swabian_league_member
+				modifier = fee_swabian_league_member
 			}
 			reverse_remove_opinion = {
 				who = FROM
-				modifier = hee_swabian_league_member
+				modifier = fee_swabian_league_member
 			}
 		}
 	}
@@ -320,9 +320,9 @@ country_event = {
 	picture = ACCUSATION_eventPicture
 
 	trigger = {
-		has_country_modifier = hee_joined_swabian_league
+		has_country_modifier = fee_joined_swabian_league
 		any_country = {
-			has_country_modifier = hee_joined_swabian_league
+			has_country_modifier = fee_joined_swabian_league
 			defensive_war_with = ROOT
 		}
 	}
@@ -332,7 +332,7 @@ country_event = {
 		modifier = {
 			factor = 1.5
 			any_country = {
-				has_country_modifier = hee_joined_swabian_league
+				has_country_modifier = fee_joined_swabian_league
 				has_opinion = {
 					who = ROOT
 					value = 150
@@ -342,7 +342,7 @@ country_event = {
 		modifier = {
 			factor = 0.6
 			any_country = {
-				has_country_modifier = hee_joined_swabian_league
+				has_country_modifier = fee_joined_swabian_league
 				NOT = { 	
 					has_opinion = {
 						who = ROOT
@@ -354,9 +354,9 @@ country_event = {
 	}
 
 	immediate = {
-		remove_country_modifier = hee_joined_swabian_league
+		remove_country_modifier = fee_joined_swabian_league
 		add_country_modifier = { 
-			name = hee_rejected_swabian_league
+			name = fee_rejected_swabian_league
 			duration = -1
 			hidden = yes
 		}
@@ -366,16 +366,16 @@ country_event = {
 		name = fee_swabian_events.7.a
 		every_country = {
 			limit = {
-				has_country_modifier = hee_joined_swabian_league
+				has_country_modifier = fee_joined_swabian_league
 			}
 			reverse_remove_opinion = {
 				who = ROOT
-				modifier = hee_swabian_league_member
+				modifier = fee_swabian_league_member
 			}
 		}
 		every_country = {
 			limit = {
-				has_country_modifier = hee_joined_swabian_league
+				has_country_modifier = fee_joined_swabian_league
 			}
 			country_event = { id = fee_swabian_events.6 days = 3 }
 		}
@@ -394,12 +394,12 @@ country_event = {
 	
 	trigger = {
 		is_year = 1510
-		has_global_flag = hee_swabian_league_established
-		NOT = { has_global_flag = hee_swabian_league_disbanded }
+		has_global_flag = fee_swabian_league_established
+		NOT = { has_global_flag = fee_swabian_league_disbanded }
 		NOT = {
 			calc_true_if = {
 				all_country = {
-					has_country_modifier = hee_joined_swabian_league
+					has_country_modifier = fee_joined_swabian_league
 				}
 				amount = 3
 			}
@@ -414,17 +414,17 @@ country_event = {
 	name = fee_swabian_events.8.a
 		every_country = {
 			limit = {
-				has_country_modifier = hee_joined_swabian_league
+				has_country_modifier = fee_joined_swabian_league
 			}
 			country_event = { id = fee_swabian_events.9 days = 1 }
 		}
 		every_country = {
 			limit = {
-				any_neighbor_country = { has_country_modifier = hee_joined_swabian_league }
-				NOT = { has_country_modifier = hee_joined_swabian_league }
+				any_neighbor_country = { has_country_modifier = fee_joined_swabian_league }
+				NOT = { has_country_modifier = fee_joined_swabian_league }
 			}
 			country_event = { id = fee_swabian_events.22 days = 7 }
-		set_global_flag = hee_swabian_league_disbanded
+		set_global_flag = fee_swabian_league_disbanded
 		}
 	}
 }
@@ -441,18 +441,18 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_country_modifier = hee_joined_swabian_league
+		has_country_modifier = fee_joined_swabian_league
 	}
 	
 	immediate = {
 		hidden_effect = {
 			every_country = {
 				limit = {
-					has_country_modifier = hee_joined_swabian_league
+					has_country_modifier = fee_joined_swabian_league
 				}
 				reverse_remove_opinion = {
 					who = ROOT
-					modifier = hee_swabian_league_member
+					modifier = fee_swabian_league_member
 				}
 			}
 		}
@@ -460,7 +460,7 @@ country_event = {
 
 	option = {
 		name = fee_swabian_events.9.a
-		remove_country_modifier = hee_joined_swabian_league 
+		remove_country_modifier = fee_joined_swabian_league 
 	}
 }
 
@@ -475,32 +475,32 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		has_global_flag = hee_swabian_league_established
-		NOT = { has_global_flag = hee_swabian_league_disbanded }
+		has_global_flag = fee_swabian_league_established
+		NOT = { has_global_flag = fee_swabian_league_disbanded }
 		OR = {
 			AND = {
 				any_country = {
-						has_country_modifier = hee_joined_swabian_league
+						has_country_modifier = fee_joined_swabian_league
 						religion = catholic
 				}
 				OR = {		
 					any_country = {
-							has_country_modifier = hee_joined_swabian_league
+							has_country_modifier = fee_joined_swabian_league
 							religion = protestant
 					}
 					any_country = {
-							has_country_modifier = hee_joined_swabian_league
+							has_country_modifier = fee_joined_swabian_league
 							religion = reformed
 					}
 				}
 			}
 			AND = {
 				any_country = {
-					has_country_modifier = hee_joined_swabian_league
+					has_country_modifier = fee_joined_swabian_league
 					religion = protestant
 				}
 				any_country = {
-					has_country_modifier = hee_joined_swabian_league
+					has_country_modifier = fee_joined_swabian_league
 					religion = reformed
 				}
 			}
@@ -515,11 +515,11 @@ country_event = {
 		name = fee_swabian_events.10.a
 		every_country = {
 			limit = {
-				has_country_modifier = hee_joined_swabian_league
+				has_country_modifier = fee_joined_swabian_league
 			}
 			country_event = { id = fee_swabian_events.11 days = 10 }  # Needs to be a separate event from 9, because of different event text. Otherwise identical.
 		}
-		set_global_flag = hee_swabian_league_disbanded
+		set_global_flag = fee_swabian_league_disbanded
 	}
 }
 
@@ -534,18 +534,18 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_country_modifier = hee_joined_swabian_league
+		has_country_modifier = fee_joined_swabian_league
 	}
 
 	immediate = {
 		hidden_effect = {
 			every_country = {
 				limit = {
-					has_country_modifier = hee_joined_swabian_league
+					has_country_modifier = fee_joined_swabian_league
 				}
 				reverse_remove_opinion = {
 					who = ROOT
-					modifier = hee_swabian_league_member
+					modifier = fee_swabian_league_member
 				}
 			}
 		}
@@ -553,8 +553,8 @@ country_event = {
 	
 	option = {
 		name = fee_swabian_events.11.a
-		remove_country_modifier = hee_joined_swabian_league 
-		set_global_flag = hee_swabian_league_disbanded
+		remove_country_modifier = fee_joined_swabian_league 
+		set_global_flag = fee_swabian_league_disbanded
 	}
 }
 
@@ -569,17 +569,17 @@ country_event = {
 	picture = BATTLE_eventPicture
 
 	trigger = {
-		has_country_modifier = hee_joined_swabian_league
+		has_country_modifier = fee_joined_swabian_league
 		NOT = { 
-			has_global_flag = hee_swabian_league_disbanded 
+			has_global_flag = fee_swabian_league_disbanded 
 		}
 		any_country = {
 			NOT = {
-				has_country_modifier = hee_joined_swabian_league
+				has_country_modifier = fee_joined_swabian_league
 			}
 			offensive_war_with = ROOT
 		}	
-		NOT = { has_country_modifier = hee_league_aid }
+		NOT = { has_country_modifier = fee_league_aid }
 	}
 
 	mean_time_to_happen = {
@@ -598,7 +598,7 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			add_country_modifier = {
-				name = hee_league_aid
+				name = fee_league_aid
 				duration = 3650
 			}
 		}
@@ -608,7 +608,7 @@ country_event = {
 		name = fee_swabian_events.12.a
 		every_country = {
 			limit = { 
-				has_country_modifier = hee_joined_swabian_league 
+				has_country_modifier = fee_joined_swabian_league 
 			}
 			country_event = { id = fee_swabian_events.13 days = 3 }
 		}
@@ -633,7 +633,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_country_modifier = hee_joined_swabian_league
+		has_country_modifier = fee_joined_swabian_league
 		NOT = {
 			is_at_war = yes
 		}
@@ -772,7 +772,7 @@ country_event = {
 		name = fee_swabian_events.17.a
 		add_opinion = {
 			who = FROM
-			modifier = hee_refused_league_aid
+			modifier = fee_refused_league_aid
 		}
 	}
 
@@ -788,11 +788,11 @@ country_event = {
 	picture = LAND_MILITARY_eventPicture
 
 	trigger = {
-		has_country_modifier = hee_joined_swabian_league
+		has_country_modifier = fee_joined_swabian_league
 		is_at_war = no
 		calc_true_if = {
 			all_country = {
-				has_country_modifier = hee_joined_swabian_league
+				has_country_modifier = fee_joined_swabian_league
 				NOT = {
 					had_recent_war = 10
 				}
@@ -800,7 +800,7 @@ country_event = {
 			amount = 3
 		}
 		NOT = {
-			has_global_flag = hee_swabian_league_disbanded
+			has_global_flag = fee_swabian_league_disbanded
 		}
 	}
 
@@ -810,7 +810,7 @@ country_event = {
 			factor = 0.75
 			any_country = {
 				alliance_with = ROOT
-				has_country_modifier = hee_joined_swabian_league
+				has_country_modifier = fee_joined_swabian_league
 			}
 		}
 		modifier = {
@@ -818,7 +818,7 @@ country_event = {
 			calc_true_if = {
 				all_country = {
 					alliance_with = ROOT
-					has_country_modifier = hee_joined_swabian_league
+					has_country_modifier = fee_joined_swabian_league
 				}
 				amount = 2
 			}
@@ -828,7 +828,7 @@ country_event = {
 			calc_true_if = {
 				all_country = {
 					alliance_with = ROOT
-					has_country_modifier = hee_joined_swabian_league
+					has_country_modifier = fee_joined_swabian_league
 				}
 				amount = 3
 			}
@@ -836,7 +836,7 @@ country_event = {
 		modifier = {
 			factor = 1.25
 			any_country = {
-					has_country_modifier = hee_joined_swabian_league
+					has_country_modifier = fee_joined_swabian_league
 					is_rival = ROOT
 			}
 		}
@@ -844,7 +844,7 @@ country_event = {
 
 	option = {		# And with the league, our country is safe
 		name = fee_swabian_events.18.a
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 
 	option = {		# This is a golden age for Swabia!
@@ -873,9 +873,9 @@ country_event = {
 		
 		trigger = {
 			tag = SWI
-			has_global_flag = hee_swabian_league_established
-			NOT = { has_global_flag = hee_swabian_league_established }
-			NOT = { has_country_modifier = hee_joined_swabian_league }
+			has_global_flag = fee_swabian_league_established
+			NOT = { has_global_flag = fee_swabian_league_established }
+			NOT = { has_country_modifier = fee_joined_swabian_league }
 			NOT = { is_at_war = yes }
 		}
 
@@ -884,7 +884,7 @@ country_event = {
 			modifier = {
 				factor = 0.8
 				any_country = {
-					has_country_modifier = hee_joined_swabian_league
+					has_country_modifier = fee_joined_swabian_league
 					truce_with = SWI
 				}
 			}
@@ -899,7 +899,7 @@ country_event = {
 					calc_true_if = {
 						NOT = {
 							any_country = {
-								has_country_modifier = hee_joined_swabian_league
+								has_country_modifier = fee_joined_swabian_league
 								reverse_has_opinion = {
 									who = ROOT
 									value = 25
@@ -918,11 +918,11 @@ country_event = {
 			ai_chance = { factor = 50 }
 			every_country = {
 				limit = {
-					has_country_modifier = hee_joined_swabian_league
+					has_country_modifier = fee_joined_swabian_league
 				}
 				add_opinion = {
 					who = SWI
-					modifier = hee_swabian_reconciliation
+					modifier = fee_swabian_reconciliation
 				}
 			}
 			add_dip_power = 10
@@ -939,18 +939,18 @@ country_event = {
 	picture = CONQUEST_eventPicture
 	
 	trigger = {
-		NOT = { has_country_modifier = hee_joined_swabian_league}
-		NOT = { has_country_flag = hee_rejected_swabian_league }
+		NOT = { has_country_modifier = fee_joined_swabian_league}
+		NOT = { has_country_flag = fee_rejected_swabian_league }
 		is_part_of_hre = yes
-		has_global_flag = hee_swabian_league_established
+		has_global_flag = fee_swabian_league_established
 		OR = {
 			capital_scope = { area = lower_swabia_area }
 			capital_scope = { area = upper_swabia_area }
 		}
 		is_at_war = no
-		NOT = { has_country_flag = hee_thrown_out_swabian_league }
+		NOT = { has_country_flag = fee_thrown_out_swabian_league }
 		is_subject = no
-		NOT = { has_global_flag = hee_swabian_league_disbanded}
+		NOT = { has_global_flag = fee_swabian_league_disbanded}
 	}
 	
 	mean_time_to_happen = {
@@ -959,7 +959,7 @@ country_event = {
 			factor = 0.6
 			calc_true_if = {
 				all_country = {
-					has_country_modifier = hee_joined_swabian_league
+					has_country_modifier = fee_joined_swabian_league
 					has_opinion = {
 						who = ROOT
 						value = 100
@@ -976,12 +976,12 @@ country_event = {
 			factor = 90
 		}
 		add_country_modifier = {
-			name = hee_joined_swabian_league
+			name = fee_joined_swabian_league
 			duration = -1
 		}
 		every_country = {
 			limit = {
-				has_country_modifier = hee_joined_swabian_league
+				has_country_modifier = fee_joined_swabian_league
 			}
 		country_event = { id = fee_swabian_events.5 }
 		}
@@ -990,7 +990,7 @@ country_event = {
 	option = {
 		name = fee_swabian_events.20.b		# We stand alone.
 		ai_chance = { factor = 10}
-		set_country_flag = hee_rejected_swabian_league
+		set_country_flag = fee_rejected_swabian_league
 	}
 }
 
@@ -1007,7 +1007,7 @@ country_event = {
 	trigger = {
 		tag = BAV
 		any_neighbor_country = {
-			has_country_modifier = hee_joined_swabian_league
+			has_country_modifier = fee_joined_swabian_league
 			NOT = {
 				has_opinion = {
 					who = ROOT
@@ -1015,22 +1015,22 @@ country_event = {
 				}
 			}
 		}
-		NOT = { has_global_flag = hee_swabian_league_disbanded }
-		has_global_flag = hee_swabian_league_established
-		NOT = { has_country_modifier = hee_joined_swabian_league }
+		NOT = { has_global_flag = fee_swabian_league_disbanded }
+		has_global_flag = fee_swabian_league_established
+		NOT = { has_country_modifier = fee_joined_swabian_league }
 	}
 	
 	mean_time_to_happen = {
 		months = 160
 		modifier = {
 			factor = 0.8
-			any_neighbor_country = { has_country_modifier = hee_joined_swabian_league }
+			any_neighbor_country = { has_country_modifier = fee_joined_swabian_league }
 			any_owned_province = { is_claim = PREV }
 		}
 		modifier = {
 			factor = 0.8
 			any_country = {
-				has_country_modifier = hee_joined_swabian_league
+				has_country_modifier = fee_joined_swabian_league
 				truce_with = ROOT			
 			}
 		}
@@ -1047,14 +1047,14 @@ country_event = {
 		ai_chance = { factor = 25 }
 		every_country = {
 			limit = {
-				has_country_modifier = hee_joined_swabian_league
+				has_country_modifier = fee_joined_swabian_league
 			}
 			add_opinion = {
 				who = BAV
-				modifier = hee_swabian_reconciliation
+				modifier = fee_swabian_reconciliation
 			}
 		}
-		set_country_flag = hee_swabian_reconciliation
+		set_country_flag = fee_swabian_reconciliation
 	}
 }
 
@@ -1086,7 +1086,7 @@ country_event = {
 	# }
 	
 	# option = {
-		# name = hee_swabian_league.23.a
+		# name = fee_swabian_league.23.a
 	# }
 # }
 
@@ -1100,7 +1100,7 @@ country_event = {
 	
 	# trigger = {
 		# tag = BAV
-		# has_country_flag = hee_swabian_reconciliation
+		# has_country_flag = fee_swabian_reconciliation
 		# is_at_war = no
 	# }
 	

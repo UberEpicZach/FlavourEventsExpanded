@@ -18,9 +18,8 @@ country_event = {
         NOT = {
             is_religion_enabled = protestant
         }
-        NOT = {
-            hre_reform_level = 3
-        }
+        NOT = { hre_reform_passed = hofgericht }
+        NOT = { hre_reform_passed = emperor_reichsstabilitaet }
         imperial_influence = 20
     }
 
@@ -69,7 +68,7 @@ country_event = {
     id = fee_HAB.2
     title = fee_HAB.2.t
     desc = fee_HAB.2.d
-    picture = 
+    picture = HRE_eventPicture
 
     fire_only_once = yes
 
@@ -177,7 +176,7 @@ country_event = {
 		ai_chance = {
 			factor = 15
 		}
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		add_adm_power = 10
 		add_dip_power = 10
 	}

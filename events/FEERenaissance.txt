@@ -31,7 +31,7 @@ country_event = {
 		NOT = { has_country_modifier = fee_renaissance }
 		NOT = { is_year = 1610 }
 		NOT = {
-			has_country_modifier = hee_had_renaissance
+			has_country_modifier = fee_had_renaissance
 		}
 	}
 
@@ -62,7 +62,7 @@ country_event = {
 		NOT = { is_year = 1590 }
 		NOT = { has_country_modifier = fee_renaissance }
 		has_institution = renaissance
-		NOT = { has_country_modifier = hee_had_renaissance }
+		NOT = { has_country_modifier = fee_had_renaissance }
 	}
 
 	mean_time_to_happen = {
@@ -110,7 +110,7 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			add_country_modifier = {
-				name = hee_had_renaissance
+				name = fee_had_renaissance
 				duration = -1
 				hidden = yes
 			}
@@ -323,7 +323,7 @@ country_event = {
 		name = fee_renaissance.9.a
 		add_treasury = -30
 		add_country_modifier = {
-			name = hee_polymath_adm
+			name = fee_polymath_adm
 			duration = 1825
 		}
 	}
@@ -331,7 +331,7 @@ country_event = {
 		name = fee_renaissance.9.b
 		add_treasury = -30
 		add_country_modifier = {
-			name = hee_polymath_dip
+			name = fee_polymath_dip
 			duration = 1825
 		}
 
@@ -340,7 +340,7 @@ country_event = {
 		name = fee_renaissance.9.c
 		add_treasury = -30
 		add_country_modifier = {
-			name = hee_polymath_mil
+			name = fee_polymath_mil
 			duration = 1825
 		}
 	}
@@ -348,7 +348,7 @@ country_event = {
 		name = fee_renaissance.9.e
 		add_treasury = -30
 		add_country_modifier = {
-			name = hee_polymath_ideas
+			name = fee_polymath_ideas
 			duration = 1825
 		}
 	}
@@ -402,7 +402,7 @@ country_event = {
 
 	trigger = {
 		has_country_modifier = fee_renaissance
-		NOT = { has_country_modifier = hee_falsified_timer }
+		NOT = { has_country_modifier = fee_falsified_timer }
 		any_province = {
 			is_claim = ROOT
 			NOT = { owned_by = ROOT }
@@ -415,7 +415,7 @@ country_event = {
 
 	immediate = {
 		add_country_modifier = {
-			name = hee_falsified_timer
+			name = fee_falsified_timer
 			duration = 18250
 			hidden = yes
 		}
@@ -438,7 +438,7 @@ country_event = {
 	option = {
 		name = fee_renaissance.11.c
 		add_country_modifier = {
-			name = hee_ignore_falsification	#Extra AE
+			name = fee_ignore_falsification	#Extra AE
 			duration = 3650
 		}
 		# random_province = {

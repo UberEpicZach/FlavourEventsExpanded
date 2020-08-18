@@ -9,69 +9,71 @@
  heir_education.1.c.tt: "Heir will be decently taught, they will gain the basic life skills needed to rule and be taught a few specialities"
  heir_education.1.e: "My child needs hands-on lifeskills to effectively rule."
  heir_education.1.e.tt: "Heir will be taught from life-experience and occasionally advisors, this may be an cheaper option which has the chance of being great or bad"
-
+ heir_education.1.f: "Our heir is a natural Genius, he has no need for Education!"
+ heir_education.1.f.tt: "As our heir is at the max stat, it would be best to let not to waste the time and money."
+ neglected_heir_education: "Heir Neglected"
 
 
  heir_education.2.t: "The Artist's Canvas"
- heir_education.2.d: "One day, $ARTIST$ approached your presence, "Your majesty, I'm concerned about the upbringing of $HEIR$, I understand if you don't trust the schools to educate him but someone needs to teach him the ropes of running our country."\n\nAs expected, $ARTIST$ is offering themselves to become $HEIR$'s tutor, teaching $HEIR_O_PRONOUN$ about the sophistication of the arts and music. In fact, $ARTIST$ would like to teach $HEIR$ the ways of mastering the canvas and bring $HEIR_O_PRONOUN$ to meet many prestigious artists and poets."
+ heir_education.2.d: "One day, $ARTIST$ approached your presence, \"Your majesty, I'm concerned about the upbringing of $HEIR$, I understand if you don't trust the schools to educate him but someone needs to teach him the ropes of running our country.\"\n\nAs expected, $ARTIST$ is offering themselves to become $HEIR$'s tutor, teaching $HEIR_O_PRONOUN$ about the sophistication of the arts and music. In fact, $ARTIST$ would like to teach $HEIR$ the ways of mastering the canvas and bring $HEIR_O_PRONOUN$ to meet many prestigious artists and poets."
  heir_education.2.a: "I count on you to make $HEIR$ a master of the arts."
  heir_education.2.b: "Now where was that portrait I asked?"
 
  heir_education.3.t: "The Scientist's Experiment"
- heir_education.3.d: "One day, $NATURAL_SCIENTIST$ approached your presence, "Your majesty, I'm concerned about the upbringing of $HEIR$, I understand if you don't trust the schools to educate him but someone needs to teach him the ropes of running our country."\n\nAs expected, $NATURAL_SCIENTIST$ is offering themselves to become $HEIR$'s tutor, teaching $HEIR_O_PRONOUN$ about the laws of nature and mathematics. In fact, $NATURAL_SCIENTIST$ would like to expose $HEIR$ the wonders of science and bring $HEIR_O_PRONOUN$ to meet many esteemed scholars."
+ heir_education.3.d: "One day, $NATURAL_SCIENTIST$ approached your presence, \"Your majesty, I'm concerned about the upbringing of $HEIR$, I understand if you don't trust the schools to educate him but someone needs to teach him the ropes of running our country.\"\n\nAs expected, $NATURAL_SCIENTIST$ is offering themselves to become $HEIR$'s tutor, teaching $HEIR_O_PRONOUN$ about the laws of nature and mathematics. In fact, $NATURAL_SCIENTIST$ would like to expose $HEIR$ the wonders of science and bring $HEIR_O_PRONOUN$ to meet many esteemed scholars."
  heir_education.3.a: "I count on you to make $HEIR$ a beacon of knowledge."
  heir_education.3.b: "So how are those experiments going?"
 
  heir_education.4.t: "The Inquisitor's Apprentice"
- heir_education.4.d: "One day, $INQUISITOR$ approached your presence, "Your majesty, I'm concerned about the upbringing of $HEIR$, I understand if you don't trust the schools to educate him but someone needs to teach him the ropes of running our country."\n\nAs expected, $INQUISITOR$ is offering themselves to become $HEIR$'s tutor, teaching $HEIR_O_PRONOUN$ about the scriptures and in all matters of the religious laws. In fact, $INQUISITOR$ would like to take $HEIR$ as their apprentice and show $HEIR_O_PRONOUN$ the truth about our beloved faith."
+ heir_education.4.d: "One day, $INQUISITOR$ approached your presence, \"Your majesty, I'm concerned about the upbringing of $HEIR$, I understand if you don't trust the schools to educate him but someone needs to teach him the ropes of running our country.\"\n\nAs expected, $INQUISITOR$ is offering themselves to become $HEIR$'s tutor, teaching $HEIR_O_PRONOUN$ about the scriptures and in all matters of the religious laws. In fact, $INQUISITOR$ would like to take $HEIR$ as their apprentice and show $HEIR_O_PRONOUN$ the truth about our beloved faith."
  heir_education.4.a: "I count on you to make $HEIR$ one of god's pious servant."
  heir_education.4.b: "There's an awful lot of heretics these days isn't there?"
 
  heir_education.5.t: "The Trader's Bargain"
- heir_education.5.d: "One day, $TRADER$ approached your presence, "Your majesty, I'm concerned about the upbringing of $HEIR$, I understand if you don't trust the schools to educate him but someone needs to teach him the ropes of running our country."\n\nAs expected, $TRADER$ is offering themselves to become $HEIR$'s tutor, teaching $HEIR_O_PRONOUN$ about economics and the silver tongue of commerce. In fact, $TRADER$ would like to take $HEIR$ to various markets all over the continent and show $HEIR_O_PRONOUN$ the way business is done among men of wit."
+ heir_education.5.d: "One day, $TRADER$ approached your presence, \"Your majesty, I'm concerned about the upbringing of $HEIR$, I understand if you don't trust the schools to educate him but someone needs to teach him the ropes of running our country.\"\n\nAs expected, $TRADER$ is offering themselves to become $HEIR$'s tutor, teaching $HEIR_O_PRONOUN$ about economics and the silver tongue of commerce. In fact, $TRADER$ would like to take $HEIR$ to various markets all over the continent and show $HEIR_O_PRONOUN$ the way business is done among men of wit."
  heir_education.5.a: "I count on you to make $HEIR$ the embodiment of wealth."
  heir_education.5.b: "How's the trade doing old friend?"
 
  heir_education.6.t: "The Spymaster's Secrets"
- heir_education.6.d: "One day, $SPYMASTER$ approached your presence, "Your majesty, I'm concerned about the upbringing of $HEIR$, I understand if you don't trust the schools to educate him but someone needs to teach him the ropes of running our country."\n\nAs expected, $SPYMASTER$ is offering themselves to become $HEIR$'s tutor, teaching $HEIR_O_PRONOUN$ about deception and the game of espionage. In fact, $SPYMASTER$ would like to share $HEIR$ the secrets to be the best amongst the shadows and introduce $HEIR_O_PRONOUN$ to many spymasters and inspectors known for their cunning intelligence."
+ heir_education.6.d: "One day, $SPYMASTER$ approached your presence, \"Your majesty, I'm concerned about the upbringing of $HEIR$, I understand if you don't trust the schools to educate him but someone needs to teach him the ropes of running our country.\"\n\nAs expected, $SPYMASTER$ is offering themselves to become $HEIR$'s tutor, teaching $HEIR_O_PRONOUN$ about deception and the game of espionage. In fact, $SPYMASTER$ would like to share $HEIR$ the secrets to be the best amongst the shadows and introduce $HEIR_O_PRONOUN$ to many spymasters and inspectors known for their cunning intelligence."
  heir_education.6.a: "I count on you to make $HEIR$ an elusive shadow."
  heir_education.6.b: "I wonder what those pesky rivals are up to..."
 
  heir_education.7.t: "The Governor's Expeditions"
- heir_education.7.d: "One day, $COLONIAL_GOVERNOR$ approached your presence, "Your majesty, I'm concerned about the upbringing of $HEIR$, I understand if you don't trust the schools to educate him but someone needs to teach him the ropes of running our country."\n\nAs expected, $COLONIAL_GOVERNOR$ is offering themselves to become $HEIR$'s tutor, teaching $HEIR_O_PRONOUN$ about administrating a settlement and the politics of colonies. In fact, $COLONIAL_GOVERNOR$ would like to show $HEIR$ the tricks of running an efficient bureaucracy and introduce $HEIR_O_PRONOUN$ to the splendors of wealth from the new world."
+ heir_education.7.d: "One day, $COLONIAL_GOVERNOR$ approached your presence, \"Your majesty, I'm concerned about the upbringing of $HEIR$, I understand if you don't trust the schools to educate him but someone needs to teach him the ropes of running our country.\"\n\nAs expected, $COLONIAL_GOVERNOR$ is offering themselves to become $HEIR$'s tutor, teaching $HEIR_O_PRONOUN$ about administrating a settlement and the politics of colonies. In fact, $COLONIAL_GOVERNOR$ would like to show $HEIR$ the tricks of running an efficient bureaucracy and introduce $HEIR_O_PRONOUN$ to the splendors of wealth from the new world."
  heir_education.7.a: "I count on you to make $HEIR$ a colonial mastermind"
  heir_education.7.b: "How are the colonies?" 
 
  heir_education.8.t: "The Reformer's Tactics"
- heir_education.8.d: "One day, $ARMY_REFORMER$ approached your presence, "Your majesty, I'm concerned about the upbringing of $HEIR$, I understand if you don't trust the schools to educate him but someone needs to teach him the ropes of running our country."\n\nAs expected, $ARMY_REFORMER$ is offering themselves to become $HEIR$'s tutor, teaching $HEIR_O_PRONOUN$ about military strategies and tactics. In fact, $ARMY_REFORMER$ would like to show $HEIR$ the value of military strength on the battlefield and introduce $HEIR_O_PRONOUN$ to the thrilling world of warfare."
+ heir_education.8.d: "One day, $ARMY_REFORMER$ approached your presence, \"Your majesty, I'm concerned about the upbringing of $HEIR$, I understand if you don't trust the schools to educate him but someone needs to teach him the ropes of running our country.\"\n\nAs expected, $ARMY_REFORMER$ is offering themselves to become $HEIR$'s tutor, teaching $HEIR_O_PRONOUN$ about military strategies and tactics. In fact, $ARMY_REFORMER$ would like to show $HEIR$ the value of military strength on the battlefield and introduce $HEIR_O_PRONOUN$ to the thrilling world of warfare."
  heir_education.8.a: "I count on you to make $HEIR$ a tactical genius."
  heir_education.8.b: "I hope the troops are doing well..." 
 
  heir_education.9.t: "The Fortifier's Defence"
- heir_education.9.d: "One day, $FORTIFICATION_EXPERT$ approached your presence, "Your majesty, I'm concerned about the upbringing of $HEIR$, I understand if you don't trust the schools to educate him but someone needs to teach him the ropes of running our country."\n\nAs expected, $FORTIFICATION_EXPERT$ is offering themselves to become $HEIR$'s tutor, teaching $HEIR_O_PRONOUN$ about the importance of preparation and how to create strategically excellent forts. In fact, $FORTIFICATION_EXPERT$ would like to encourage $HEIR$ on engineering $HEIR_O_PRONOUN$ own fortresses to get first hand experience and introduce $HEIR_O_PRONOUN$ to numerous renowned military engineers and architects."
+ heir_education.9.d: "One day, $FORTIFICATION_EXPERT$ approached your presence, \"Your majesty, I'm concerned about the upbringing of $HEIR$, I understand if you don't trust the schools to educate him but someone needs to teach him the ropes of running our country.\"\n\nAs expected, $FORTIFICATION_EXPERT$ is offering themselves to become $HEIR$'s tutor, teaching $HEIR_O_PRONOUN$ about the importance of preparation and how to create strategically excellent forts. In fact, $FORTIFICATION_EXPERT$ would like to encourage $HEIR$ on engineering $HEIR_O_PRONOUN$ own fortresses to get first hand experience and introduce $HEIR_O_PRONOUN$ to numerous renowned military engineers and architects."
  heir_education.9.a: "I count on you to make $HEIR$ a fortification expert."
  heir_education.9.b: "I hope the troops are doing well..." 
 
  heir_education.10.t: "The Grand Captain's Men"
- heir_education.10.d: "One day, $GRAND_CAPTAIN$ approached your presence, "Your majesty, I'm concerned about the upbringing of $HEIR$, I understand if you don't trust the schools to educate him but someone needs to teach him the ropes of running our country."\n\nAs expected, $GRAND_CAPTAIN$ is offering themselves to become $HEIR$'s tutor, teaching $HEIR_O_PRONOUN$ about discipline and the qualities of a valiant fighter on the battlefield. In fact, $GRAND_CAPTAIN$ would like to encourage $HEIR$ on joining $HEIR_O_PRONOUN$ first military expedition facing the enemy and introduce $HEIR_O_PRONOUN$ to the most skilled and deadly men we have to offer, in hopes that he can learn from them too."
+ heir_education.10.d: "One day, $GRAND_CAPTAIN$ approached your presence, \"Your majesty, I'm concerned about the upbringing of $HEIR$, I understand if you don't trust the schools to educate him but someone needs to teach him the ropes of running our country.\"\n\nAs expected, $GRAND_CAPTAIN$ is offering themselves to become $HEIR$'s tutor, teaching $HEIR_O_PRONOUN$ about discipline and the qualities of a valiant fighter on the battlefield. In fact, $GRAND_CAPTAIN$ would like to encourage $HEIR$ on joining $HEIR_O_PRONOUN$ first military expedition facing the enemy and introduce $HEIR_O_PRONOUN$ to the most skilled and deadly men we have to offer, in hopes that he can learn from them too."
  heir_education.10.a: "I count on you to make $HEIR$ a fortification expert."
  heir_education.10.b: "I hope the troops are doing well..." 
 
  heir_education.11.t: "Heir's Excellent Education has Finished"
  heir_education.11.d: "After a decade of learning and studying from the best tutors money could find, $HEIR$ has finally finished their education in one of the most prestigious academies in $CAPITAL_CITY$. Despite learning calligraphy from the finest $CULTURE$ writers and taught etiquette by a famed governess, its still very unknown if $HEIR$ has learned much or anything at all, and we pray to the heavens that all the funds didn't go down the drain..."
- heir_education.11.a: "Let's see what you've learn."
+ heir_education.11.a: "Let's see what you've learned."
 
  heir_education.12.t: "Heir's Good Education has Finished"
  heir_education.12.d: "After a decade of learning and studying from our most experienced educators, $HEIR$ has finally finished their education by graduating from a small yet well-known school in $CAPITAL_CITY$. Despite being able to talk, read and write fluently with special commendation from several teachers, its still very unknown if $HEIR$ has learned much or anything at all, and we pray to the heavens that all the funds didn't go down the drain..."
- heir_education.12.a: "Let's see what you've learn."
+ heir_education.12.a: "Let's see what you've learned."
 
  heir_education.13.t: "Heir's Average Education has Finished"
  heir_education.13.d: "After a decade of learning and studying from a homeschooled curriculum, $HEIR$ has finally finished their education with their humble tutor in his home at $CAPITAL_CITY$. Despite only taught by a tutor with adequate expertise, $HEIR$ have learned much about our realm through his own experiences, its still very unknown if $HEIR$ has learned much or anything at all, and we pray to the heavens that all the funds didn't go down the drain..."
- heir_education.13.a: "Let's see what you've learn."
+ heir_education.13.a: "Let's see what you've learned."
 
  heir_education.14.t: "Heir's Lack of Education has Finished"
  heir_education.14.d: "After a decade of learning and studying from arbitrary experiences and often first-hand accounts, $HEIR$ has finally finished their education scuttering and interacting with the various classes and people all over $CAPITAL_CITY$. Although our heir received no formal education and little tutoring throughout his young life, $HEIR$ have learned much by his own means, prodding his nose into others' business most of the time but its still very unknown if $HEIR$ has learned much or anything at all, and we pray to the heavens that all the funds didn't go down the drain..."
- heir_education.14.a: "Let's see what you've learn."
+ heir_education.14.a: "Let's see what you've learned."
 
  heir_education.101.t: "Respected Scholar"
  heir_education.101.d: "Throughout the years of their youth, our heir has become a respected scholar. $HEIR$ has shown great interest in the arts, sciences and scripture since a very young age and has applied this greatly in his education, scoring exceptionally high-marks in examinations and winning numerous awards for $HEIR_ADJ$ cunningness and wit. Considered an excellent pupil by the teachers, $HEIR$ has done well throughout his education and has balanced the use of the pen and the sword, all while learning the intricacies of bureaucracy and beuaty of the arts. Our education has made $HEIR$ into a well-rounded heir fit for the throne."
@@ -132,3 +134,10 @@
  heir_education.115.t: "Jolly Performer"
  heir_education.115.d: "Throughout the years of their youth, our heir has become a jolly performer. Never finding much talent in diplomatic, administrative or military tasks, $HEIR$ was a lost cause to many of our courtiers yet unknown at the time, $HEIR$ was gifted with the talent of pleasing patrons and entertaining crowds, able to entertain many with $HEIR_ADJ$ plays, tragedies and musical, as well as vocal, talent. Born to be on stage, $HEIR$ has mastered the art of acting and music, able to play several instruments and often finding joy in entertaining people with them. Due to this however, our heir is frowned upon our military, often seeing $HEIR$ as not fit for rule since a monarch do not play the lute or entertain the dull masses."
  heir_education.115.a: "I don't know whether I'm entertained or amused."
+ 
+ heir_education.200.t: "Extra Lessons?"
+ heir_education.200.d: "As our heir continues to grow into a stronger, more educated heir; some have suggested that we should place [Root.Heir.GetHerHimCap] into more lessons to learn some specialities. \nMany different classes would involve giving [Root.Heir.GetHerHimCap] more administrative duties to learn from, or we could task [Root.Heir.GetHerHimCap] with learning more proper Etiquette in a court of diplomats or even train [Root.Heir.GetHerHimCap] to be a better swordfighter with Fencing training."
+ heir_education.200.a: "Administative classes."
+ heir_education.200.b: "Teach [Root.Heir.GetHerHimCap] proper Diplomatic Etiquette."
+ heir_education.200.c: "Fencing Classes for [Root.Heir.GetName]!"
+ heir_education.200.e: "We should not overwork our heir, he is fine learning what he is."

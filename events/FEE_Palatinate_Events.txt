@@ -3,7 +3,7 @@
 namespace = FEE_Palatinate_Events
 
 # Ernst von Mansfeld
-country_event = { 
+country_event = {
 	id = FEE_Palatinate_Events.1
 	title = FEE_Palatinate_Events.1.T
 	desc = FEE_Palatinate_Events.1.D
@@ -29,7 +29,7 @@ country_event = {
 
 	option = {
 		name = FEE_Palatinate_Events.1.OPT1
-		
+
 		ai_chance = {
 			factor = 50
 		}
@@ -47,7 +47,7 @@ country_event = {
 
 	option = {
 		name = FEE_Palatinate_Events.1.OPT2
-		
+
 		ai_chance = {
 			factor = 50
 		}
@@ -55,7 +55,7 @@ country_event = {
 }
 
 #Imperial Duties and Salic Law
-country_event = { 
+country_event = {
 	id = FEE_Palatinate_Events.2
 	title = FEE_Palatinate_Events.2.T
 	desc = FEE_Palatinate_Events.2.D
@@ -83,7 +83,7 @@ country_event = {
 		trigger = {
 			tag = PAL
 		}
-		
+
 		ai_chance = {
 			factor = 33
 		}
@@ -142,7 +142,7 @@ country_event = {
 		trigger = {
 			tag = SAX
 		}
-		
+
 		ai_chance = {
 			factor = 33
 		}
@@ -206,7 +206,7 @@ country_event = {
 
 	option = {
 		name = FEE_Palatinate_Events.2.OPT3
-		
+
 		ai_chance = {
 			factor = 33
 		}
@@ -353,7 +353,7 @@ country_event = {
 				}
 			}
 			else_if = {
-				limit = { 
+				limit = {
 					NOT = {
 						has_building = temple
 					}
@@ -386,7 +386,7 @@ country_event = {
 		}
 
 		add_years_of_income = -1
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		add_prestige = 10
 	}
 
@@ -452,7 +452,7 @@ country_event = {
 		}
 
 		add_years_of_income = 0.5
-		add_stability = 1
+		add_stability_or_adm_power = yes
 	}
 }
 
@@ -500,7 +500,7 @@ country_event = {
 			dip = 6
 			mil = 3
 			age = 40
-			claim = 100 
+			claim = 100
 			fixed = yes
 			religion = reformed
 			culture = hessian
@@ -699,7 +699,7 @@ country_event = {
 				has_dlc = "Rights of Man"
 			}
 			add_ruler_personality = bold_fighter_personality
-		}		
+		}
 		267 = {
 			add_province_modifier = {
 				name = pal_palatine_collaboration
@@ -792,7 +792,7 @@ country_event = {
 				in_league = protestant
 			}
 			add_opinion = {
-				modiifer = pal_appeased_league_opinion 
+				modifier = pal_appeased_league_opinion
 				who = ROOT
 			}
 		}

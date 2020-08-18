@@ -1,17 +1,12 @@
 #Danish events
-
 namespace = fee_DAN
-
 #The Stockholm Bloodbath
-
 country_event = {
 	id = fee_DAN.1
 	title = fee_DAN.1.t
 	desc = fee_DAN.1.d
 	picture = CITY_VIEW_eventPicture
-
 	fire_only_once = yes
-
 	trigger = {
 		tag = DAN
 		is_year = 1500
@@ -30,7 +25,6 @@ country_event = {
 			}
 		}
 	}
-
 	mean_time_to_happen = {
 		months = 180
 		modifier = {
@@ -38,18 +32,17 @@ country_event = {
 			truce_with = SWE
 		}
 	}
-
 	option = {
 		name = fee_DAN.1.a
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		SWE = {
 			country_event = {
-				id = fee_DAN.2 days = 2
+				id = fee_DAN.2
+				days = 2
 			}
 		}
 		add_prestige = -5
 	}
-
 	option = {
 		name = fee_DAN.1.b
 		add_stability = -1
@@ -58,15 +51,12 @@ country_event = {
 }
 
 #Stockholm Bloodbath for Sweden
-
 country_event = {
 	id = fee_DAN.2
 	title = fee_DAN.2.t
 	desc = fee_DAN.2.d
 	picture = BORDER_TENSION_eventPicture
-
 	is_triggered_only = yes
-
 	option = {
 		name = fee_DAN.2.a
 		add_stability = -1
@@ -82,10 +72,8 @@ country_event = {
 	id = fee_DAN.3
 	title = fee_DAN.3.t
 	desc = fee_DAN.3.d
-	picture = PRAYING_eventPicture	
-
+	picture = PRAYING_eventPicture
 	fire_only_once = yes
-
 	trigger = {
 		OR = {
 			tag = DAN
@@ -100,11 +88,9 @@ country_event = {
 			is_year = 1530
 		}
 	}
-	
 	mean_time_to_happen = {
 		months = 60
 	}
-
 	immediate = {
 		hidden_effect = {
 			random_owned_province = {
@@ -119,7 +105,6 @@ country_event = {
 			}
 		}
 	}
-
 	option = {
 		name = fee_DAN.3.a
 		random_owned_province = {
@@ -133,7 +118,6 @@ country_event = {
 			}
 		}
 	}
-
 	option = {
 		name = fee_DAN.3.b
 		random_owned_province = {
@@ -154,9 +138,7 @@ country_event = {
 	title = fee_DAN.4.t
 	desc = fee_DAN.4.d
 	picture = RELIGIOUS_CONVERSION_eventPicture
-
 	fire_only_once = yes
-
 	trigger = {
 		tag = DAN
 		religion = protestant
@@ -165,7 +147,6 @@ country_event = {
 			is_year = 1540
 		}
 	}
-
 	mean_time_to_happen = {
 		months = 96
 		modifier = {
@@ -175,7 +156,6 @@ country_event = {
 			}
 		}
 	}
-
 	option = {
 		name = fee_DAN.4.a
 		define_advisor = {
@@ -185,7 +165,6 @@ country_event = {
 			discount = yes
 		}
 	}
-
 	option = {
 		name = fee_DAN.4.b
 		add_country_modifier = {
@@ -198,7 +177,9 @@ country_event = {
 			}
 			NOR = {
 				country_event = {
-					id = fee_DAN.5 days = 30 random = 20
+					id = fee_DAN.5
+					days = 30
+					random = 20
 				}
 			}
 		}
@@ -208,7 +189,9 @@ country_event = {
 			}
 			SWE = {
 				country_event = {
-					id = fee_DAN.5 days = 30 random = 20
+					id = fee_DAN.5
+					days = 30
+					random = 20
 				}
 			}
 		}
@@ -221,13 +204,10 @@ country_event = {
 	title = fee_DAN.5.t
 	desc = fee_DAN.5.d
 	picture = RELIGIOUS_CONVERSION_eventPicture
-
 	is_triggered_only = yes
-
 	trigger = {
 		junior_union_with = DAN
 	}
-
 	option = {
 		name = fee_DAN.5.a
 		if = {
@@ -256,9 +236,7 @@ country_event = {
 	title = fee_DAN.6.t
 	desc = fee_DAN.6.d
 	picture = GREAT_BUILDING_eventPicture
-
 	fire_only_once = yes
-
 	trigger = {
 		OR = {
 			tag = DAN
@@ -274,7 +252,6 @@ country_event = {
 		ADM = 4
 		government = monarchy
 	}
-
 	mean_time_to_happen = {
 		months = 360
 		modifier = {
@@ -286,7 +263,6 @@ country_event = {
 			treasury = 100
 		}
 	}
-
 	option = {
 		name = fee_DAN.6.a
 		capital_scope = {
@@ -323,7 +299,9 @@ country_event = {
 			}
 			NOR = {
 				country_event = {
-					id = fee_DAN.7 days = 30 random = 10
+					id = fee_DAN.7
+					days = 30
+					random = 10
 				}
 			}
 		}
@@ -333,7 +311,9 @@ country_event = {
 			}
 			SWE = {
 				country_event = {
-					id = fee_DAN.7 days = 30 random = 10
+					id = fee_DAN.7
+					days = 30
+					random = 10
 				}
 			}
 		}
@@ -346,13 +326,10 @@ country_event = {
 	title = fee_DAN.7.t
 	desc = fee_DAN.7.d
 	picture = GREAT_BUILDING_eventPicture
-
 	is_triggered_only = yes
-
 	trigger = {
 		junior_union_with = DAN
 	}
-
 	option = {
 		name = fee_DAN.7.a
 		capital_scope = {
@@ -363,22 +340,22 @@ country_event = {
 			name = fee_christian_iv
 			duration = 7300
 		}
-	if = {
-		limit = {
-			owns_core_province = 24
+		if = {
+			limit = {
+				owns_core_province = 24
+			}
+			24 = {
+				add_base_tax = 1
+			}
 		}
-		24 = {
-			add_base_tax = 1
+		if = {
+			limit = {
+				owns_core_province = 6
+			}
+			6 = {
+				add_base_tax = 1
+			}
 		}
-	}
-	if = {
-		limit = {
-			owns_core_province =  6
-		}
-		6 = {
-			add_base_tax = 1
-		}
-	}
 	}
 }
 
@@ -388,7 +365,6 @@ country_event = {
 	title = fee_DAN.8.t
 	desc = fee_DAN.8.d
 	picture = DIPLOMACY_eventPicture
-
 	trigger = {
 		tag = DAN
 		government = monarchy
@@ -399,11 +375,9 @@ country_event = {
 			has_country_modifier = fee_danish_absolutism
 		}
 	}
-
 	mean_time_to_happen = {
-		days = 5
+		months = 48
 	}
-	
 	immediate = {
 		hidden_effect = {
 			add_ruler_modifier = {
@@ -413,7 +387,6 @@ country_event = {
 			}
 		}
 	}
-
 	option = {
 		name = fee_DAN.8.a
 		ai_chance = {
@@ -451,9 +424,7 @@ country_event = {
 	title = fee_DAN.9.t
 	desc = fee_DAN.9.d
 	picture = GOOD_WITH_MONARCH_eventPicture
-
 	fire_only_once = yes
-
 	trigger = {
 		OR = {
 			tag = DAN
@@ -465,7 +436,6 @@ country_event = {
 		is_year = 1660
 		government = monarchy
 	}
-
 	mean_time_to_happen = {
 		months = 180
 		modifier = {
@@ -481,11 +451,10 @@ country_event = {
 			stability = 2
 		}
 	}
-
 	option = {
 		name = fee_DAN.9.a
 		change_government = absolute_monarchy
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		add_country_modifier = {
 			name = fee_danish_absolutism
 			duration = -1
@@ -499,11 +468,8 @@ country_event = {
 	title = fee_DAN.10.t
 	desc = fee_DAN.10.d
 	picture = GOOD_WITH_MONARCH_eventPicture
-
 	fire_only_once = yes
-
 	hidden = yes
-
 	trigger = {
 		OR = {
 			tag = DAN
@@ -514,17 +480,14 @@ country_event = {
 			government = monarchy
 		}
 	}
-
 	mean_time_to_happen = {
 		days = 10
 	}
-
 	immediate = {
 		hidden_effect = {
 			remove_country_modifier = fee_danish_absolutism
 		}
 	}
-
 	option = {
 		name = fee_DAN.10.a
 	}
@@ -536,21 +499,17 @@ country_event = {
 	title = fee_DAN.11.t
 	desc = fee_DAN.11.d
 	picture = LIBERUM_VETO_eventPicture
-
 	fire_only_once = yes
-
 	trigger = {
 		tag = SCA
 		has_ruler_modifier = fee_danish_elective
 	}
-
 	mean_time_to_happen = {
 		days = 1
 	}
-
 	option = {
 		name = fee_DAN.11.a
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		add_prestige = 10
 		add_adm_power = 10
 		add_dip_power = 10
@@ -564,9 +523,7 @@ country_event = {
 	title = fee_DAN.12.t
 	desc = fee_DAN.12.d
 	picture = KING_SICK_IN_BED_eventPicture
-
 	fire_only_once = yes
-
 	trigger = {
 		OR = {
 			tag = DAN
@@ -585,7 +542,6 @@ country_event = {
 			has_disaster = aspiration_for_liberty
 		}
 	}
-
 	mean_time_to_happen = {
 		months = 360
 		modifier = {
@@ -611,7 +567,6 @@ country_event = {
 			has_disaster = aspiration_for_liberty
 		}
 	}
-
 	option = {
 		name = fee_DAN.12.a
 		ai_chance = {
@@ -640,13 +595,13 @@ country_event = {
 			name = fee_denmark_struensee
 			duration = -1
 		}
-		add_ruler_modifier = {	#Compatability with Lex Talionis	
+		add_ruler_modifier = {
+			#Compatability with Lex Talionis
 			name = is_usurper
 			duration = -1
 		}
 		custom_tooltip = fee_DAN.12.tt
 	}
-
 	option = {
 		name = fee_DAN.12.b
 		ai_chance = {
@@ -672,9 +627,7 @@ country_event = {
 	title = fee_DAN.13.t
 	desc = fee_DAN.13.d
 	picture = BAD_WITH_MONARCH_eventPicture
-
 	fire_only_once = yes
-
 	trigger = {
 		OR = {
 			tag = DAN
@@ -684,11 +637,9 @@ country_event = {
 		senior_union_with = NOR
 		has_country_modifier = fee_denmark_struensee
 	}
-
 	mean_time_to_happen = {
 		months = 3
 	}
-
 	option = {
 		name = fee_DAN.13.a
 		add_country_modifier = {
@@ -704,9 +655,7 @@ country_event = {
 	title = fee_DAN.14.t
 	desc = fee_DAN.14.d
 	picture = BAD_WITH_MONARCH_eventPicture
-
 	fire_only_once = yes
-
 	trigger = {
 		OR = {
 			tag = DAN
@@ -726,11 +675,9 @@ country_event = {
 			culture = norwegian
 		}
 	}
-
 	mean_time_to_happen = {
 		months = 3
 	}
-
 	option = {
 		name = fee_DAN.14.a
 		every_owned_province = {
@@ -762,9 +709,7 @@ country_event = {
 	title = fee_DAN.15.t
 	desc = fee_DAN.15.d
 	picture = DEBATE_REPUBLICAN_eventPicture
-
 	fire_only_once = yes
-
 	trigger = {
 		OR = {
 			tag = DAN
@@ -773,11 +718,9 @@ country_event = {
 		dynasty = "Struensee"
 		has_country_modifier = fee_denmark_struensee
 	}
-
 	mean_time_to_happen = {
 		months = 5
 	}
-
 	option = {
 		name = fee_DAN.15.a
 		add_country_modifier = {
@@ -793,9 +736,7 @@ country_event = {
 	title = fee_DAN.16.t
 	desc = fee_DAN.16.d
 	picture = FARMING_eventPicture
-
 	fire_only_once = yes
-
 	trigger = {
 		OR = {
 			tag = DAN
@@ -804,13 +745,11 @@ country_event = {
 		dynasty = "Struensee"
 		has_country_modifier = fee_denmark_struensee
 	}
-
 	mean_time_to_happen = {
 		months = 5
 	}
-
 	option = {
-		name = fee_DAN.16.a 
+		name = fee_DAN.16.a
 		add_country_modifier = {
 			name = fee_struensee_corvee
 			duration = -1
@@ -824,9 +763,7 @@ country_event = {
 	title = fee_DAN.17.t
 	desc = fee_DAN.17.d
 	picture = LIBERUM_VETO_eventPicture
-
 	fire_only_once = yes
-
 	trigger = {
 		OR = {
 			tag = DAN
@@ -835,11 +772,9 @@ country_event = {
 		dynasty = "Struensee"
 		has_country_modifier = fee_denmark_struensee
 	}
-
 	mean_time_to_happen = {
 		months = 7
 	}
-
 	option = {
 		name = fee_DAN.17.a
 		add_country_modifier = {
@@ -855,9 +790,7 @@ country_event = {
 	title = fee_DAN.18.t
 	desc = fee_DAN.18.d
 	picture = OVEREXTENSION_eventPicture
-
 	fire_only_once = yes
-
 	trigger = {
 		OR = {
 			tag = DAN
@@ -866,14 +799,12 @@ country_event = {
 		dynasty = "Struensee"
 		has_country_modifier = fee_denmark_struensee
 	}
-
 	mean_time_to_happen = {
 		months = 5
 	}
-
 	option = {
 		name = fee_DAN.18.a
-		add_country_modifier = {	
+		add_country_modifier = {
 			name = fee_struensee_funding
 			duration = -1
 		}
@@ -886,9 +817,7 @@ country_event = {
 	title = fee_DAN.19.t
 	desc = fee_DAN.19.d
 	picture = ECONOMY_eventPicture
-
 	fire_only_once = yes
-
 	trigger = {
 		OR = {
 			tag = DAN
@@ -897,11 +826,9 @@ country_event = {
 		dynasty = "Struensee"
 		has_country_modifier = fee_denmark_struensee
 	}
-
 	mean_time_to_happen = {
 		months = 6
 	}
-
 	option = {
 		name = fee_DAN.19.a
 		add_country_modifier = {
@@ -917,9 +844,7 @@ country_event = {
 	title = fee_DAN.20.t
 	desc = fee_DAN.20.d
 	picture = UNIVERSITY_eventPicture
-
 	fire_only_once = yes
-
 	trigger = {
 		OR = {
 			tag = DAN
@@ -928,11 +853,9 @@ country_event = {
 		dynasty = "Struensee"
 		has_country_modifier = fee_denmark_struensee
 	}
-
 	mean_time_to_happen = {
 		months = 6
 	}
-
 	option = {
 		name = fee_DAN.20.a
 		add_country_modifier = {
@@ -948,9 +871,7 @@ country_event = {
 	title = fee_DAN.21.t
 	desc = fee_DAN.21.d
 	picture = THEATRE_eventPicture
-
 	fire_only_once = yes
-
 	trigger = {
 		OR = {
 			tag = DAN
@@ -959,11 +880,9 @@ country_event = {
 		dynasty = "Struensee"
 		has_country_modifier = fee_denmark_struensee
 	}
-
 	mean_time_to_happen = {
 		months = 6
 	}
-
 	option = {
 		name = fee_DAN.21.a
 		add_prestige = -15
@@ -977,7 +896,6 @@ country_event = {
 	title = fee_DAN.22.t
 	desc = fee_DAN.22.d
 	picture = COURT_eventPicture
-
 	trigger = {
 		OR = {
 			tag = DAN
@@ -986,11 +904,9 @@ country_event = {
 		dynasty = "Struensee"
 		has_country_modifier = fee_denmark_struensee
 	}
-
 	mean_time_to_happen = {
 		months = 6
 	}
-
 	option = {
 		name = fee_DAN.22.a
 		add_adm_power = 10
@@ -1007,9 +923,7 @@ country_event = {
 	title = fee_DAN.23.t
 	desc = fee_DAN.23.d
 	picture = ANGRY_MOB_eventPicture
-
 	fire_only_once = yes
-
 	trigger = {
 		OR = {
 			tag = DAN
@@ -1018,20 +932,20 @@ country_event = {
 		dynasty = "Struensee"
 		has_country_modifier = fee_denmark_struensee
 		had_ruler_flag = {
-			flag = fee_struensee_timer days = 300
+			flag = fee_struensee_timer
+			days = 300
 		}
 	}
-
 	mean_time_to_happen = {
 		months = 3
 		modifier = {
 			factor = 0.3
 			had_ruler_flag = {
-				flag = fee_struensee_timer days = 700
+				flag = fee_struensee_timer
+				days = 700
 			}
 		}
 	}
-
 	immediate = {
 		hidden_effect = {
 			remove_country_modifier = fee_denmark_struensee
@@ -1055,7 +969,6 @@ country_event = {
 			}
 		}
 	}
-
 	option = {
 		name = fee_DAN.23.a
 		ai_chance = {
@@ -1073,7 +986,7 @@ country_event = {
 				is_subject = no
 				has_country_modifier = fee_DAN_marriage
 			}
-			add_casus_belli = {	
+			add_casus_belli = {
 				target = DAN
 				type = cb_change_government
 				months = 120
@@ -1137,6 +1050,276 @@ country_event = {
 			SWE = {
 				change_government = constitutional_monarchy
 			}
+		}
+	}
+}
+
+country_event = {
+	id = fee_DAN.24
+	title = fee_DAN.24.t
+	desc = fee_DAN.24.d
+	picture = CITY_VIEW_eventPicture
+	fire_only_once = yes
+	trigger = {
+		tag = DAN
+		SWE = {
+			is_subject = no
+		}
+	}
+	mean_time_to_happen = {
+		months = 120
+		modifier = {
+			factor = 0.5
+			has_idea_group = aristocracy_ideas
+		}
+	}
+	option = {
+		name = fee_DAN.24.a
+		add_stability_or_adm_power = yes
+		if = {
+			limit = {
+				is_expanded_mod_active = {
+					mod = governments
+				}
+			}
+			set_estate_privilege = estate_nobles_supremacy_over_the_crown
+		}
+		set_estate_privilege = estate_nobles_right_of_counsel
+		change_estate_land_share = {
+			estate = estate_nobles
+			share = 5
+		}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 10
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = fee_DAN.24.b
+		add_stability = -1
+		add_prestige = 15
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -10
+		}
+		random_owned_province = {
+			spawn_rebels = {
+				type = noble_rebels
+				size = 3
+			}
+		}
+		random_owned_province = {
+			spawn_rebels = {
+				type = noble_rebels
+				size = 3
+			}
+		}
+	}
+	option = {
+		name = fee_DAN.24.c
+		add_stability_or_adm_power = yes
+		if = {
+			limit = {
+				is_expanded_mod_active = {
+					mod = governments
+				}
+			}
+			add_government_reform = elective_monarchy_reform
+		}
+	}
+}
+
+country_event = {
+	id = fee_DAN.25
+	title = fee_DAN.25.t
+	desc = fee_DAN.25.d
+	picture = CITY_VIEW_eventPicture
+	fire_only_once = yes
+	trigger = {
+		tag = DAN
+		overlord_of = NOR
+		religion = protestant
+		is_year = 1500
+		not = {
+			is_year = 1550
+		}
+	}
+	mean_time_to_happen = {
+		months = 200
+		modifier = {
+			factor = 0.6
+			has_idea_group = influence_ideas
+		}
+	}
+	option = {
+		name = fee_DAN.25.a
+		add_country_modifier = {
+			name = FEE_Denmark_Norway_reigned_in
+			duration = -1
+		}
+	}
+}
+
+country_event = {
+	id = fee_DAN.26
+	title = fee_DAN.26.t
+	desc = fee_DAN.26.d
+	picture = CITY_VIEW_eventPicture
+	fire_only_once = yes
+	trigger = {
+		tag = DAN
+		is_at_war = no
+		religion = protestant
+		army_size = 20
+		is_in_league_war = no
+		emperor = {
+			is_in_league_war = yes
+		}
+	}
+	mean_time_to_happen = {
+		months = 4
+	}
+	option = {
+		name = fee_DAN.26.a
+		join_league = protestant
+		add_country_modifier = {
+			name = FEE_Denmark_Danish_interventionism
+			duration = 7300
+		}
+	}
+	option = {
+		name = fee_DAN.26.b
+		add_opinion = {
+			who = emperor
+			modifier = FEE_Denmark_Out_of_German_Affairs_Opinion_Modifier
+		}
+		reverse_add_opinion = {
+			who = emperor
+			modifier = FEE_Denmark_Out_of_German_Affairs_Opinion_Modifier
+		}
+	}
+}
+
+country_event = {
+	id = fee_DAN.27
+	title = fee_DAN.27.t
+	desc = fee_DAN.27.d
+	picture = CITY_VIEW_eventPicture
+	fire_only_once = yes
+	trigger = {
+		tag = DAN
+		is_year = 1650
+	}
+	mean_time_to_happen = {
+		months = 400
+		modifier = {
+			factor = 0.5
+			has_idea_group = economic_ideas
+		}
+		modifier = {
+			factor = 0.5
+			has_idea_group = innovativeness_ideas
+		}
+	}
+	option = {
+		name = fee_DAN.27.a
+		custom_tooltip = fee_DAN.27.acustom
+		add_adm_power = -100
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -15
+		}
+		random_list = {
+			25 = {
+				capital_scope = {
+					change_trade_goods = cloth
+					add_base_production = 3
+				}
+				random_owned_province = {
+					limit = {
+						is_capital = no
+						culture = danish
+						or = {
+							trade_goods = grain
+							trade_goods = naval_supplies
+						}
+					}
+					change_trade_goods = cloth
+					add_base_production = 3
+				}
+			}
+			25 = {
+				capital_scope = {
+					change_trade_goods = salt
+					add_base_production = 4
+				}
+				random_owned_province = {
+					limit = {
+						is_capital = no
+						culture = danish
+						or = {
+							trade_goods = grain
+							trade_goods = naval_supplies
+						}
+					}
+					change_trade_goods = salt
+					add_base_production = 4
+				}
+			}
+			50 = {
+				country_event = {
+					id = fee_DAN.28
+				}
+			}
+		}
+	}
+	option = {
+		name = fee_DAN.27.b
+		add_dip_power = -100
+		add_country_modifier = {
+			name = FEE_Denmark_Renewed_trade_investements
+			duration = -1
+		}
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = 10
+		}
+		add_estate_influence_modifier = {
+			estate = estate_burghers
+			influence = 15
+			desc = EST_VAL_DENMARK_RENEWED_TRADE_INVESTEMENTS
+			duration = -1
+		}
+	}
+	option = {
+		name = fee_DAN.27.b
+		add_adm_power = -100
+		add_country_modifier = {
+			name = FEE_Denmark_Agricultural_Reform
+			duration = -1
+		}
+	}
+}
+
+country_event = {
+	id = fee_DAN.28
+	title = fee_DAN.28.t
+	desc = fee_DAN.28.d
+	picture = CITY_VIEW_eventPicture
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = fee_DAN.28.a
+		add_country_modifier = {
+			name = FEE_Denmark_Reforms_Ignored
+			duration = 10950
+		}
+		change_estate_land_share = {
+			estate = estate_nobles
+			share = 2
 		}
 	}
 }
