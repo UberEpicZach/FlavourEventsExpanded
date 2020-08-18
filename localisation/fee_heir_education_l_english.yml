@@ -136,8 +136,8 @@
  heir_education.115.a: "I don't know whether I'm entertained or amused."
  
  heir_education.200.t: "Extra Lessons?"
- heir_education.200.d: "As our heir continues to grow into a stronger, more educated heir; some have suggested that we should place him into more lessons to learn some specialities. \nMany different classes would involve giving him more administrative duties to learn from, or we could task him with learning more proper Etiquette in a court of diplomats or even train him to be a better swordfighter with Fencing training."
+ heir_education.200.d: "As our heir continues to grow into a stronger, more educated heir; some have suggested that we should place [Root.Heir.GetHerHimCap] into more lessons to learn some specialities. \nMany different classes would involve giving [Root.Heir.GetHerHimCap] more administrative duties to learn from, or we could task [Root.Heir.GetHerHimCap] with learning more proper Etiquette in a court of diplomats or even train [Root.Heir.GetHerHimCap] to be a better swordfighter with Fencing training."
  heir_education.200.a: "Administative classes."
- heir_education.200.b: "Teach [Root.Heir.GetSheHeCap] proper Diplomatic Etiquette."
+ heir_education.200.b: "Teach [Root.Heir.GetHerHimCap] proper Diplomatic Etiquette."
  heir_education.200.c: "Fencing Classes for [Root.Heir.GetName]!"
  heir_education.200.e: "We should not overwork our heir, he is fine learning what he is."
