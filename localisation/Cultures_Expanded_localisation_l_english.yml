@@ -481,8 +481,8 @@
  
  CE_ansbach_expanded.10.t: "Men of The Franconian Circle"
  CE_ansbach_expanded.10.d: "With Nuremberger support, the Hohenzollerns hold great economic and military influence over the rest of the Franconian Circle, and yet we are denied a right we are entitled to; the right to sit at the head of this union. This disgraceful offense against the Hohenzollerns cannot be tolerated!"
- CE_ansbach_expanded.10.a: "demand wurzburg hand over the ducal title and seat"
- CE_ansbach_expanded.10.b: "or can it?"
+ CE_ansbach_expanded.10.a: "Demand wurzburg hand over the ducal title and seat"
+ CE_ansbach_expanded.10.b: "Or can it?"
  
  CE_ansbach_expanded.11.t: "The Ducal Title"
  CE_ansbach_expanded.11.d: "The Hohenzollerns of Ansbach have demanded our royal title and leading position in the Franconian Circle. Their illegitimate claims that they should lead this military alliance solely derives from power and influence. Though it it tempting to completely disregard their outlandish ultimatum, we must take into account their military and economic might."
@@ -544,6 +544,7 @@
  CE_hungary_expanded.2.a: "We shall accept the Imperial demands"
  CE_hungary_expanded.2.a.tt: "This will make us look better in the eyes of Catholics."
  CE_hungary_expanded.2.b: "We decline to acknowledge these claims"
+ CE_HUN_catholic_sympathizers: "Catholic Sympathizers might launch an uprising if we were to lose control of the entirity of Silesia"
 			
 
  CE_hungary_expanded.3.t: "Bohemia The Just"
@@ -603,8 +604,15 @@
  CE_hungary_expanded.13.t: "The Extraordinary Tax" 
  CE_hungary_expanded.13.d: "Following a painful blow during the war, Matyas required additional funds to restore his army and reassert himself in the conflict. Without consulting or seeking permission from the Diet, he raised another tax to continue the war effort."
  CE_hungary_expanded.13.a: "I hope this doesn't come back to bite me."
+ CE_hungary_expanded.13.b: "I guess the war isn;t that important."
  
  CE_hungary_expanded.14.t: "Diet of 1470" 
  CE_hungary_expanded.14.d: "The Diet of 1470 was called by Matyas Corvinus to restore the faith of the estates in his rulership following the costly war and the high taxes Matyas raised without asking the Diet for permission, as well as breaking the faith the estates had put into him to not impose further taxes. Even going so far as offering the hungarian crown to the king of poland. Only the fear of Matyas Corvinus's reputation swayed them from attempting to overthrow him and rise in rebellion."
  CE_hungary_expanded.14.a: "I swear i will respect the Diet and will not levy taxes without permission."
  CE_hungary_expanded.14.b: "If only Matyas was still among us."
+
+ CE_hungary_expanded.15.t: "Uprising of the Catholic Estates"
+ CE_hungary_expanded.15.d: "As the Hungarian armies march through the Czech lands of Bohemia and Silesia after the defeats of the primary Hussite Army, men, women and children alike have come out of their homes. They call to [Hun.Monarch.GetName] as King, they chant in unison, /"King [Hun.Monarch.GetName]!, King [Hun.Monarch.GetName]!, King [Hun.Monarch.GetName]!"/ these Catholic civilians have lived hard lives under Hussite rule long enough and with previous papal backing, the estates are trying to elect [Hun.Monarch.GetName] of Hungary as king of Bohemia."
+ CE_hungary_expanded.15.a: "We must put them down!" 
+ CE_hungary_expanded.15.b: "If this is the price to pay to survive the Hungarian Onslaught."
+ CE_HUN_revolt_of_the_estates: "This will cause Lusatia, Silesia and Moravia to seccede from the Hussite Bohemian Crown and seek Hungarian Catholic protection."

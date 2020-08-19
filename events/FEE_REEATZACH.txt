@@ -147,6 +147,9 @@ country_event = {
 				leader = "Victor"
 			}
 		}
+		ai_chance = {
+			factor = 1
+		}
 	}
 	option = {
 		name = FEE_Bohemia.3.b
@@ -168,6 +171,9 @@ country_event = {
 			}
 		}
 		set_country_flag = FEE_BOH_Brothers
+		ai_chance = {
+			factor = 1
+		}
 	}
 }
 
@@ -239,6 +245,14 @@ country_event = {
 				days = 30
 			}
 		}
+		BOH = {
+			inherit = SOR
+			inherit = MVA
+			vassalize = SIL
+		}
+		ai_chance = {
+			factor = 1
+		}
 	}
 	option = {
 		name = FEE_Bohemia.5.b
@@ -273,11 +287,17 @@ country_event = {
 				days = 30
 			}
 		}
+		ai_chance = {
+			factor = 0
+		}
 	}
 	option = {
 		name = FEE_Bohemia.5.c
 		HAB = {
 			create_union = HUN
+		}
+		ai_chance = {
+			factor = 0
 		}
 	}
 }

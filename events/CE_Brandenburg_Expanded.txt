@@ -31,7 +31,7 @@ country_event = {
 	
 	option = {
 		name = CE_brandenburg_expanded.1.a
-		create_marriage = GLG
+		#create_marriage = GLG
 		custom_tooltip = CE_barbara_von_hohenzollern_marriage
 		set_country_flag = CE_barbara_von_hohenzollern_marriage
 		ai_chance = {
@@ -650,6 +650,7 @@ country_event = {
 				adm = 1
 				age = 23
 			}
+			kill_heir = yes
 			add_government_reform = dynastic_theocracy_reform
 		}
 		custom_tooltip = CE_Magdeburg_Hohenzollern

@@ -137,7 +137,7 @@ country_event = {
 		}
 		add_treasury = 100
 		ai_chance = {
-			factor = 1
+			factor = 2
 			modifier = {
 				factor = 10
 				emperor = {
@@ -456,7 +456,15 @@ country_event = {
 				}
 				add_permanent_claim = ANS
 			}
-			add_core = ANS
+			every_owned_province = {
+				limit = {
+					OR = {
+						area = franconia_area
+						area = upper_franconia_area
+					}
+				}
+				add_core = ANS
+			}
 			change_tag = FKN
 			set_country_flag = formed_franconia_flag
 			if = {
@@ -484,6 +492,10 @@ country_event = {
 	trigger = {
 		has_ruler_flag = CE_franconian_ambition
 		OR = {
+			had_ruler_flag = {
+				flag = CE_franconian_ambition
+				days = 1825
+			}
 			ANS = {
 				any_subject_country = {
 					tag = NUM
@@ -554,6 +566,12 @@ country_event = {
 			modifier = {
 				factor = 2
 				ANS = {
+					army_size = WBG
+				}
+			}
+			modifier = {
+				factor = 2
+				BRA = {
 					army_size = WBG
 				}
 			}
