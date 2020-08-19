@@ -125,6 +125,7 @@ country_event = {
 		name = CE_hungary_expanded.2.b
 		HAB = {
 			declare_war = BOH
+			set_country_flag = CE_promised_hungary_bag_of_gold
 		}
 		HUN = {
 			country_event = {
@@ -132,8 +133,7 @@ country_event = {
 				days = 30
 			}
 		}
-
-		set_country_flag = CE_promised_hungary_bag_of_gold
+		custom_tooltip = CE_HUN_catholic_sympathizers
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -228,54 +228,7 @@ country_event = {
 	desc = CE_hungary_expanded.6.d
 	picture = CITY_VIEW_eventPicture
 
-	trigger = {
-		tag = HUN
-		BOH = {
-			has_country_flag = first_hussite_king
-		}
-		HUN = {
-			is_in_war = {
-				attacker_leader = HAB
-				defender_leader = BOH
-				duration = 1
-			}
-		}
-		silesia_area = {
-			limit = {
-				owner = {
-					OR = {
-						tag = BOH
-						overlord = {
-							tag = BOH
-						}
-					}
-				}
-			}
-			controller = {
-				OR = {
-					tag = HUN
-					tag = HAB
-					any_ally = {
-						OR = {
-							tag = HUN
-							tag = HAB
-						}
-					}
-				}
-			}
-		}
-		#all_province = {
-		#	limit = {
-		#		area = silesia_area
-		#		controller = {
-		#			OR = {
-		#				tag = HUN
-		#				tag = HAB
-		#			}
-		#		}
-		#	}
-		#}
-	}
+	is_triggered_only = yes
 
 	mean_time_to_happen = {
 		days = 1
@@ -651,6 +604,93 @@ country_event = {
 				size = 3
 				type = noble_rebels 
 			}
+		}
+	}
+}
+
+#Bohemia #King  of Bohemia
+country_event = {
+	id = CE_hungary_expanded.15
+	title = CE_hungary_expanded.15.t
+	desc = CE_hungary_expanded.15.d
+	picture = CITY_VIEW_eventPicture
+
+	trigger = {
+		tag = BOH
+		BOH = {
+			has_country_flag = first_hussite_king
+		}
+		HUN = {
+			is_in_war = {
+				attacker_leader = HAB
+				defender_leader = BOH
+				duration = 1
+			}
+		}
+		NOT = {
+			is_year = 1500
+		}
+		silesia_area = {
+			limit = {
+				owner = {
+					OR = {
+						tag = BOH
+						overlord = {
+							tag = BOH
+						}
+					}
+				}
+			}
+			controller = {
+				OR = {
+					tag = HUN
+					tag = HAB
+					any_ally = {
+						OR = {
+							tag = HUN
+							tag = HAB
+						}
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = CE_hungary_expanded.15.a
+		add_stability = -2
+		random_owned_province = {
+			spawn_rebels = {
+				type = catholic_rebels 
+				size = 2
+				friend = HUN
+			}
+		}
+		random_owned_province = {
+			spawn_rebels = {
+				type = catholic_rebels 
+				size = 3
+				friend = HUN
+			}
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+	option = {
+		name = CE_hungary_expanded.15.b
+		custom_tooltip = CE_HUN_revolt_of_the_estates
+		HUN = {
+			country_event = {
+				id = CE_hungary_expanded.6
+			}
+		}
+		ai_chance = {
+			factor = 1
 		}
 	}
 }

@@ -544,6 +544,7 @@
  CE_hungary_expanded.2.a: "We shall accept the Imperial demands"
  CE_hungary_expanded.2.a.tt: "This will make us look better in the eyes of Catholics."
  CE_hungary_expanded.2.b: "We decline to acknowledge these claims"
+ CE_HUN_catholic_sympathizers: "Catholic Sympathizers might launch an uprising if we were to lose control of the entirity of Silesia"
 			
 
  CE_hungary_expanded.3.t: "Bohemia The Just"
@@ -609,3 +610,9 @@
  CE_hungary_expanded.14.d: "The Diet of 1470 was called by Matyas Corvinus to restore the faith of the estates in his rulership following the costly war and the high taxes Matyas raised without asking the Diet for permission, as well as breaking the faith the estates had put into him to not impose further taxes. Even going so far as offering the hungarian crown to the king of poland. Only the fear of Matyas Corvinus's reputation swayed them from attempting to overthrow him and rise in rebellion."
  CE_hungary_expanded.14.a: "I swear i will respect the Diet and will not levy taxes without permission."
  CE_hungary_expanded.14.b: "If only Matyas was still among us."
+
+ CE_hungary_expanded.15.t: "Uprising of the Catholic Estates"
+ CE_hungary_expanded.15.d: "As the Hungarian armies march through the Czech lands of Bohemia and Silesia after the defeats of the primary Hussite Army, men, women and children alike have come out of their homes. They call to [Hun.Monarch.GetName] as King, they chant in unison, /"King [Hun.Monarch.GetName]!, King [Hun.Monarch.GetName]!, King [Hun.Monarch.GetName]!"/ these Catholic civilians have lived hard lives under Hussite rule long enough and with previous papal backing, the estates are trying to elect [Hun.Monarch.GetName] of Hungary as king of Bohemia."
+ CE_hungary_expanded.15.a: "We must put them down!" 
+ CE_hungary_expanded.15.b: "If this is the price to pay to survive the Hungarian Onslaught."
+ CE_HUN_revolt_of_the_estates: "This will cause Lusatia, Silesia and Moravia to seccede from the Hussite Bohemian Crown and seek Hungarian Catholic protection."
