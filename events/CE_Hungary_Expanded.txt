@@ -14,8 +14,9 @@ country_event = {
 	trigger = {
 		tag = HAB
         BOH = {
+			is_subject = no
             has_country_flag = first_hussite_king
-        }
+		}
 	}
 
 	mean_time_to_happen = {
