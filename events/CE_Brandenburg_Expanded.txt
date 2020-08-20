@@ -2444,7 +2444,10 @@ country_event = {
 			tag = PRU
 		}
 		is_year = 1535
-		NOT = { is_year = 1545 }
+		NOT = { is_year = 1545 }`
+		NOT = {
+			exists = RUP
+		}
 	}
 
 	fire_only_once = yes
@@ -2928,6 +2931,7 @@ country_event = {
 		}
 		OR = {
 			religion = protestant
+			religion = reformed
 			AND = {
 				religion = catholic
 				has_ruler_modifier = CE_BRA_religious_pragmatism
@@ -2953,9 +2957,6 @@ country_event = {
 	option = {
 		name = CE_brandenburg_expanded.48.b
 		
-		random_owned_province = {
-			add_base_tax = 1
-		}
 		random_owned_province = {
 			add_base_tax = 1
 		}
