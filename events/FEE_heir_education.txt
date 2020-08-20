@@ -11,10 +11,12 @@ country_event = {
 	desc = heir_education.1.d
 	picture = HEIR_EDUCATION_eventPicture
 
+	immediate = { set_heir_flag = heir_has_been_prompted }
+
 	trigger = {
 		has_heir = yes
 		is_lesser_in_union = no
-                has_global_flag = FEE_Heir_Education_Active
+        has_global_flag = FEE_Heir_Education_Active
 		NOT = {
 			OR = {
 				has_heir_flag = in_education_excellent
@@ -22,6 +24,7 @@ country_event = {
 				has_heir_flag = in_education_average
 				has_heir_flag = in_education_but_not_learning
 				has_heir_flag = heir_is_a_genius
+				has_heir_flag = heir_has_been_prompted
 			}
 		}
 		heir_age = 5
@@ -1572,6 +1575,7 @@ country_event = {
 	desc = heir_education.200.d
 	picture = HEIR_EDUCATION_eventPicture
 
+	immediate = { set_heir_flag = Extra_Lessons_Fired }
 	trigger = {
 		heir_age = 7
 		NOT = { heir_age = 14 }
@@ -1586,6 +1590,7 @@ country_event = {
 				has_heir_flag = more_etiquette
 				has_heir_flag = more_fencing
 				has_heir_flag = extra_lessons_declined
+				has_heir_flag = Extra_Lessons_Fired
 			}
 		}
 	}

@@ -199,7 +199,7 @@ country_event = {
 		is_at_war = no
 		NOT = {
 			ARA = {
-				has_country_modifier = fee_alteraciones_check
+				has_country_flag = fee_alteraciones_check
 			}
 		}
 	}
@@ -211,10 +211,7 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			ARA = {
-				add_country_modifier = {
-					name = fee_alteraciones_check
-					duration = -1
-					hidden = yes
+				set_country_flag = fee_alteraciones_check
 				}
 			}
 		}
@@ -271,10 +268,7 @@ country_event = {
 	
 	immediate = {
 		hidden_effect = {
-			add_country_modifier = {
-				name = fee_alteraciones_check
-				duration = -1
-				hidden = yes
+			set_country_flag = fee_alteraciones_check
 			}
 		}
 	}
