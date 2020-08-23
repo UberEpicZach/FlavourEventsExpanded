@@ -1633,7 +1633,7 @@ country_event = {
 		name = heir_education.200.c  #Fencing!
 		if = {
 			limit = {
-				heir_mil = 1
+				heir_mil = 6
 			}
 			add_mil_power = 100
 		}
