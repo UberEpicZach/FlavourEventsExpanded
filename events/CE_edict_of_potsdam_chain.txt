@@ -61,11 +61,17 @@ country_event = {
 			}
 		}
 		add_prestige = 10
+		ai_chance = {
+			factor = 1
+		}
 	}
 
 	option = {
 		name = CE_edict_of_potsdam_chain.1.b
 		add_stability = -2
+		ai_chance = {
+			factor = 0
+		}
 	}
 }
 
