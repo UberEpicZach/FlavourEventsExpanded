@@ -3451,3 +3451,208 @@ country_event = {
 		}
 	}
 }
+
+#Brandenburg #The Bishop Investiture, 1451
+country_event = {
+	id = CE_brandenburg_expanded.60
+	title = CE_brandenburg_expanded.60.t
+	desc = CE_brandenburg_expanded.60.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	trigger = {
+		tag = BRA
+		papal_influence = 10
+		is_year = 1451
+		NOT = { is_year = 1470 }
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	option = {
+		name = CE_brandenburg_expanded.60.a
+		
+		4748 = {
+			add_province_modifier = {
+				name = CE_BRA_Margravian_Dues
+				duration = 3650
+			}
+		}
+		50 = {
+			add_province_modifier = {
+				name = CE_BRA_Margravian_Dues
+				duration = 3650
+			}
+		}
+		add_country_modifier = {
+			name = CE_BRA_Papal_Influence_Spend
+			duration = 3650
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = CE_brandenburg_expanded.60.b
+		add_prestige = 5
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#Brandenburg #Berliner Dom, 1465
+country_event = {
+	id = CE_brandenburg_expanded.61
+	title = CE_brandenburg_expanded.61.t
+	desc = CE_brandenburg_expanded.61.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	trigger = {
+		tag = BRA
+		50 = {
+			has_building = temple
+		}
+		is_year = 1465
+		NOT = { is_year = 1490 }
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	option = {
+		name = CE_brandenburg_expanded.61.a
+
+		add_country_modifier = {
+			name = CE_BRA_Berliner_Choir
+			duration = 3650
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+#Brandenburg #Dutch Settlement of Prussia, 1646
+country_event = {
+	id = CE_brandenburg_expanded.62
+	title = CE_brandenburg_expanded.62.t
+	desc = CE_brandenburg_expanded.62.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	trigger = {
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
+		is_year = 1646
+		NOT = { is_year = 1676 }
+		any_country = {
+			primary_culture = dutch
+			OR = {
+				has_opinion = {
+					who = BRA
+					value = 100
+				}
+				has_opinion = {
+					who = PRU
+					value = 100
+				}
+			}
+		}
+		owns = 50
+		owns = 1759
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	option = {
+		name = CE_brandenburg_expanded.62.a
+
+		50 = {
+			add_base_tax = 1
+		}
+		1759 = {
+			add_base_production = 1
+		}
+		add_country_modifier = {
+			name = CE_BRA_Dutch_Techniques
+			duration = 3650
+		}
+		add_adm_power = -50
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = CE_brandenburg_expanded.62.b
+
+		add_manpower = 1
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+#Brandenburg #The Priegnitzer Lands, 1482
+country_event = {
+	id = CE_brandenburg_expanded.63
+	title = CE_brandenburg_expanded.63.t
+	desc = CE_brandenburg_expanded.63.d
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	trigger = {
+		OR = {
+			tag = BRA
+			tag = PRU
+		}
+		is_year = 1480
+		NOT = { is_year = 1500 }
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 700
+	}
+
+	option = {
+		name = CE_brandenburg_expanded.63.a
+
+		4786 = {
+			spawn_rebels = {
+				type = anti_tax_rebels
+				size = 1
+			}
+		}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 10
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = CE_brandenburg_expanded.63.b
+
+		add_manpower = 0.5
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -10
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
