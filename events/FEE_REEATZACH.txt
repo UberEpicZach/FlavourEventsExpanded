@@ -119,7 +119,7 @@ country_event = {
 			spawn_rebels = {
 				type = pretender_rebels
 				size = 1
-				leader_dynasty = "Podebrad"
+				leader_dynasty = ""z Podebrad""
 				leader = "Bocek 'the Disabled'"
 			}
 		}
@@ -127,7 +127,7 @@ country_event = {
 			spawn_rebels = {
 				type = pretender_rebels
 				size = 1
-				leader_dynasty = "Podebrad"
+				leader_dynasty = ""z Podebrad""
 				leader = "Henry 'the Younger'"
 			}
 		}
@@ -135,7 +135,7 @@ country_event = {
 			spawn_rebels = {
 				type = pretender_rebels
 				size = 1
-				leader_dynasty = "Podebrad"
+				leader_dynasty = ""z Podebrad""
 				leader = "Henry 'the Elder'"
 			}
 		}
@@ -143,7 +143,7 @@ country_event = {
 			spawn_rebels = {
 				type = pretender_rebels
 				size = 2
-				leader_dynasty = "Podebrad"
+				leader_dynasty = ""z Podebrad""
 				leader = "Victor"
 			}
 		}
@@ -155,7 +155,7 @@ country_event = {
 		name = FEE_Bohemia.3.b
 		define_ruler = {
 			name = "Victor z"
-			dynasty = "Podebrad"
+			dynasty = ""z Podebrad""
 			adm = 2
 			dip = 4
 			mil = 2

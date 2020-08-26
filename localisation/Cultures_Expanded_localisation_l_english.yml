@@ -386,7 +386,7 @@
  CE_brandenburg_expanded.51.t: "Illegal Foreign Mints"
  CE_brandenburg_expanded.51.d: "Dozens of merchants have been found to be using weighted precious metal and foreign coins to avoid having to deal with our inflated currency, hurting our income and reducing the domestic demand for our coins."
  CE_brandenburg_expanded.51.a: "This can not be allowed, seize them!"
- CE_brandenburg_expanded.51.b: "Perhaps we should allow foreign coins to be used for trade after all" `
+ CE_brandenburg_expanded.51.b: "Perhaps we should allow foreign coins to be used for trade after all"
  CE_BRA_economic_downturn: "Economic Downturn"
 
  CE_brandenburg_expanded.52.t: "Economic Collapse"
@@ -431,6 +431,35 @@
  CE_brandenburg_expanded.59.d: "With the fall of the Order of St John, we are now able to directly levy taxes and troops from our previously monastic subjects. Where before our levies and taxes went to the Elector of Brandenburg, now they shall march in our armies and feed our people!"
  CE_brandenburg_expanded.59.a: "Excellent"
  CE_BRA_secularization_of_st_john: "Secularization of St John"
+
+ CE_brandenburg_expanded.60.t: "The Bishop Investiture"
+ CE_brandenburg_expanded.60.d: "by 1451 the Pope at long last ceded the right to appoint the Bishops of Brandenburg and Havelberg to the Margrave of Brandenburg, as well as the sovereignty over the lands these dioceses held. This did not come easily however, to convince the pope we have had to call in a lot of favor, which will reduce our capacity to seek further attention from his holyness."
+ CE_brandenburg_expanded.60.a: "But we secured it none the less!"
+ CE_brandenburg_expanded.60.b: "Its not like we needed your permission or anything." #Baka
+ CE_BRA_Margravian_Dues: "Margrave's Dues"
+ CE_BRA_Papal_Influence_Spend: "Favors Called in"
+
+ CE_brandenburg_expanded.61.t: "Berliner Dom"
+ CE_brandenburg_expanded.61.d: "Following the construction of the Erasmus Chapel in the Spree Fortress near Berlin, and its consecration for use as the court church of the Elector. The Holy Father caught word of this and offered to found a new monastery at the Erasmus Chapel. With the incomes and constitution of the monastery to be granted to the Elector. And with the establishment of the Berlin Cathedral Choir, its first musiTcal institution was born. Consisting of 5 singing boys."
+ CE_brandenburg_expanded.61.a: "Thank the Holy Father."
+ CE_BRA_Berliner_Choir: "Berliner Singing Boys" #Choir Boys
+
+ CE_brandenburg_expanded.62.t: "The Dutch Settlement of Prussia"
+ CE_brandenburg_expanded.62.d: "Following his apprenticeship in Holland, the young Friedrich Wilhelm returned to his devastated inheritance in Brandenburg. With much of the Mark of Brandenburg in disrepair from plundering during the thirty years war. To remedy this he married the eldest daughter of the Dutch Stadholder and used his and his new wife's connections to invite hundreds of dutch craftsmen, builders and merchants to the Mark of Brandenburg."
+ CE_brandenburg_expanded.62.a: "Welkom mijn Broeders."
+ CE_brandenburg_expanded.62.b: "Conscript them all."
+ CE_BRA_Dutch_Techniques: "Dutch Agriculture and Architecture"
+
+ CE_brandenburg_expanded.63.t: "The Priegnitzer Bandits"
+ CE_brandenburg_expanded.63.d: "Starting his reign over Brandenburg at the age of 15, Johann ' Cicero' von Hohenzollen managed to align his estates in a way his ambitious father had not. Following this alignment it became much easier to rid the poor and bandit-ridden lands of Brandenburg of their miscreants, for the estates signed with the elector instead of against him. Allowing him to destroy 15 castles of robber barons and force them to submit or die."
+ CE_brandenburg_expanded.63.a: "Enact justice upon any brigand found in the area!"
+ CE_brandenburg_expanded.63.b: "Perhaps we can come to an understanding."
+
+ CE_brandenburg_expanded.64.t: "The Pomeranian Revolt"
+ CE_brandenburg_expanded.64.d: "Following the Pomeranian Wars, many of the Pomeranian leading nobles were discontented with the Hohenzollerns of Brandenburg. Now in our time of weakness, the Pomeranians are rising to reclaim their lands, independence and their pride."
+ CE_brandenburg_expanded.64.a: "Curse them."
+ CE_brandenburg_expanded.64.b: "Offer them Freedom in exchange for support."
+ CE_BRA_Release_Pommerania: "Redirect the Pomeranians, we grant them control over hinterpommern and vorpommern in exchange for joining the war on Brandenburg's side."
 
 
  ##Hohenzollerns of Franconia##
@@ -555,7 +584,7 @@
  CE_hungary_expanded.4.t: "Crusade of Prague"
  CE_hungary_expanded.4.d: "His holiness, Pope [PAP.Monarch.GetName] had offered the throne of Bohemia originally to Prince-Elector [BRA.Monarch.GetName] of Brandenburg. Due to ongoing internal economic issues and a growing conflict to be with Pomerania, [BRA.Monarch.GetName] had to refuse. Today a papal representative has arrived in [Root.Capital.GetName], to privately discuss matters of Prague and the throne of Bohemia - it could be [HUN.Monarch.GetName]'s, for the price of removing the Hussites from Bohemia. Now at the same time, it is known that Austria has grown fed-up with Hussite raids into Austrian lands and was beginning to mobilize troops to the Bohemian border. \nCould this be our time to capitalise on this chaos?"
  CE_hungary_expanded.4.a: "Only the ladder is real"
- CE_and_hungary_will_answer: "If we can liberate silesia we might be able to gain the support of the catholic estates."			 
+ CE_and_hungary_will_answer: "If we can liberate Silesia we might be able to gain the support of the Catholic estates."			 
  CE_hungary_expanded.4.b: "We must focus on defending our south."
 			
 

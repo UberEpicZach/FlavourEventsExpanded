@@ -1,111 +1,111 @@
 namespace = cultures_expanded
 	#Jay DoubleU
 
-country_event = {
-	id = cultures_expanded.1
-	title = cultures_expanded.1.t
-	desc = cultures_expanded.1.d
-	picture = CITY_VIEW_eventPicture
+# country_event = {
+	# id = cultures_expanded.1
+	# title = cultures_expanded.1.t
+	# desc = cultures_expanded.1.d
+	# picture = CITY_VIEW_eventPicture
 
-	fire_only_once = yes
+	# fire_only_once = yes
 
-	trigger = {
-		tag = HUN
-		NOT = { has_country_flag = CE_transylvanian_saxons }
-	}
+	# trigger = {
+		# tag = HUN
+		# NOT = { has_country_flag = CE_transylvanian_saxons }
+	# }
 
-	mean_time_to_happen = {
-		months = 12
-	}
+	# mean_time_to_happen = {
+		# months = 12
+	# }
 
-	immediate = {
-		set_country_flag = CE_transylvanian_saxons
-	}
+	# immediate = {
+		# set_country_flag = CE_transylvanian_saxons
+	# }
 
-	option = {
-		name = cultures_expanded.1.a
-		4128 = {
-			change_culture = franconian
-			add_province_modifier = {
-				name = "CE_transylvanian_saxons"
-				duration = -1
-			}
-		}
-	}
-}
+	# option = {
+		# name = cultures_expanded.1.a
+		# 4128 = {
+			# change_culture = franconian
+			# add_province_modifier = {
+				# name = "CE_transylvanian_saxons"
+				# duration = -1
+			# }
+		# }
+	# }
+# }
 
-country_event = {
-	id = cultures_expanded.2
-	title = cultures_expanded.2.t
-	desc = cultures_expanded.2.d
-	picture = CITY_VIEW_eventPicture
+# country_event = {
+	# id = cultures_expanded.2
+	# title = cultures_expanded.2.t
+	# desc = cultures_expanded.2.d
+	# picture = CITY_VIEW_eventPicture
 
-	fire_only_once = yes
+	# fire_only_once = yes
 
-	trigger = {
-		tag = HUN
-		has_country_flag = CE_transylvanian_saxons
-		NOT = { has_country_flag = CE_szekelys }
-	}
+	# trigger = {
+		# tag = HUN
+		# has_country_flag = CE_transylvanian_saxons
+		# NOT = { has_country_flag = CE_szekelys }
+	# }
 
-	mean_time_to_happen = {
-		months = 6
-	}
+	# mean_time_to_happen = {
+		# months = 6
+	# }
 
-	immediate = {
-		set_country_flag = CE_szekelys
-	}
+	# immediate = {
+		# set_country_flag = CE_szekelys
+	# }
 
-	option = {
-		name = cultures_expanded.2.a
-		158 = {
-			change_culture = hungarian
-			add_province_modifier = {
-				name = "CE_szekelys"
-				duration = -1
-			}
-		}
-	}
-}
+	# option = {
+		# name = cultures_expanded.2.a
+		# 158 = {
+			# change_culture = hungarian
+			# add_province_modifier = {
+				# name = "CE_szekelys"
+				# duration = -1
+			# }
+		# }
+	# }
+# }
 
-country_event = {
-	id = cultures_expanded.3
-	title = cultures_expanded.3.t
-	desc = cultures_expanded.3.d
-	picture = CITY_VIEW_eventPicture
+# country_event = {
+	# id = cultures_expanded.3
+	# title = cultures_expanded.3.t
+	# desc = cultures_expanded.3.d
+	# picture = CITY_VIEW_eventPicture
 
-	fire_only_once = yes
+	# fire_only_once = yes
 
-	trigger = {
-		tag = HUN
-		has_country_flag = CE_szekelys
-		NOT = { has_country_flag = CE_Union_Of_Nations }
-	}
+	# trigger = {
+		# tag = HUN
+		# has_country_flag = CE_szekelys
+		# NOT = { has_country_flag = CE_Union_Of_Nations }
+	# }
 
-	mean_time_to_happen = {
-		days = 12
-	}
+	# mean_time_to_happen = {
+		# days = 12
+	# }
 
-	immediate = {
-		set_country_flag = CE_Union_Of_Nations
-	}
+	# immediate = {
+		# set_country_flag = CE_Union_Of_Nations
+	# }
 
-	option = {
-		name = cultures_expanded.3.a
-		transylvania_area = {
-			add_province_modifier = {
-				name = "CE_union_of_nations"
-				duration = -1
-			}
-		}
-		southern_transylvania_area = {
-			add_province_modifier = {
-				name = "CE_union_of_nations"
-				duration = -1
-			}
-		}
-	}
-}
+	# option = {
+		# name = cultures_expanded.3.a
+		# transylvania_area = {
+			# add_province_modifier = {
+				# name = "CE_union_of_nations"
+				# duration = -1
+			# }
+		# }
+		# southern_transylvania_area = {
+			# add_province_modifier = {
+				# name = "CE_union_of_nations"
+				# duration = -1
+			# }
+		# }
+	# }
+# }
 
 country_event = {
 	id = cultures_expanded.4

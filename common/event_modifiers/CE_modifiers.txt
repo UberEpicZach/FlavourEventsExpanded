@@ -113,3 +113,16 @@ CE_BRA_Knights_Of_the_Order_of_St_John = {
 CE_BRA_secularization_of_st_john = {
 	global_tax_modifier = 0.10
 }
+CE_BRA_Margravian_Dues = {
+	local_tax_modifier = 0.10
+}
+CE_BRA_Papal_Influence_Spend = {
+	papal_influence = -0.5
+}
+CE_BRA_Berliner_Choir = {
+	papal_influence = 0.5
+}
+CE_BRA_Dutch_Techniques = {
+	production_efficiency = 0.10
+	adm_tech_cost_modifier = -0.1
+}
