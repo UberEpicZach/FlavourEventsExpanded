@@ -13,6 +13,9 @@ country_event = {
 
 	trigger = {
 		tag = HAB
+		BOH = {
+			is_subject = no
+		}
         BOH = {
             has_country_flag = first_hussite_king
         }
@@ -127,10 +130,17 @@ country_event = {
 			declare_war = BOH
 			set_country_flag = CE_promised_hungary_bag_of_gold
 		}
-		HUN = {
-			country_event = {
-				id = CE_hungary_expanded.4
-				days = 30
+		if = {
+			limit = {
+				HUN = {
+					is_subject = no
+				}
+			}
+			HUN = {
+				country_event = {
+					id = CE_hungary_expanded.4
+					days = 30
+				}
 			}
 		}
 		custom_tooltip = CE_HUN_catholic_sympathizers
@@ -349,6 +359,8 @@ country_event = {
 	desc = CE_hungary_expanded.8.d
 	picture = CITY_VIEW_eventPicture
 
+	fire_only_once = yes
+
 	trigger = {
 		tag = HUN
 		HAB = {
@@ -359,6 +371,10 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 30
+	}
+
+	immediate = {
+		clr_country_flag = CE_promised_hungary_bag_of_gold
 	}
 
 	option = {
@@ -625,14 +641,31 @@ country_event = {
 		HUN = {
 			is_in_war = {
 				attacker_leader = HAB
+				attackers = HUN
 				defender_leader = BOH
 				duration = 1
 			}
+			is_subject = no
 		}
 		NOT = {
 			is_year = 1500
 		}
+		calc_true_if = {
+			all_province = {
+				area = silesia_area
+				owner = {
+					OR = {
+						tag = BOH
+						overlord = {
+							tag = BOH
+						}
+					}
+				}
+			}
+			amount = 4
+		}
 		silesia_area = {
+			type = all
 			limit = {
 				owner = {
 					OR = {
