@@ -61,7 +61,7 @@ country_event = {
 	desc = FEE_Palatinate_Events.2.D
 	picture = REFORM_eventPicture
 
-	fire_only_once = yes
+	#fire_only_once = yes
 
 	trigger = {
 		OR = {
@@ -347,16 +347,12 @@ country_event = {
 			}
 			if = {
 				limit = {
-					NOT = {
-						has_building = cathedral
-					}
+					has_building = cathedral
 				}
 			}
 			else_if = {
 				limit = {
-					NOT = {
-						has_building = temple
-					}
+					has_building = temple
 				}
 				add_building_construction = {
 					building = cathedral
@@ -373,6 +369,11 @@ country_event = {
 			}
 		}
 		every_owned_province = {
+			limit = {
+				any_province_in_state = { 
+					is_capital = yes
+				}	
+			}
 			add_base_tax = 1
 		}
 
