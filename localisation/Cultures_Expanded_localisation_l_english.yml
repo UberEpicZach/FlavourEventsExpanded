@@ -56,10 +56,6 @@
  cultures_expanded.2.d: "Our cousins the Szekelys are Hungarians like us, but according to legend, their lineage can be traced back to the Hunnic tribes that terrorized the Roman Empire. Their strongholds in the Carpathian highlands held firm until our arrival into the Carpathian basin, and they have guarded our eastern borders ever since."
  cultures_expanded.2.a: "Ok"
  
- cultures_expanded.3.t: "Union of Three Nations"
- cultures_expanded.3.d: "In 1438, The Transylvanian Estates organized into the 'Unio Trium Nationum' following Ottoman and Wallachian raids into Transylvania and the inaction of the late King Sigismund of Hungary's lack of timely response. The local and spontaneous organization both kept the peace in their domains as well as attempted to halt further Southern aggression."
- cultures_expanded.3.a: "Ok"
- 
  cultures_expanded.4.t: "Vlach Herders"
  cultures_expanded.4.d: "Vlach Herders spread from the wallachian lands out to find fresh pastures and buyers for their flocks of sheep. Recently multiple shepherds have migrated near some of the fertile valleys within our realm, offering the skills and resources they bring with them, although local herders and cities are looking at this suspiciously."
  cultures_expanded.4.a: "Ok"
@@ -72,16 +68,7 @@
  cultures_expanded.5.b: "Ok"
  cultures_expanded.5.c: "Disperse them over the country"
  
- cultures_expanded.6.t: "Crush the Estates"
- cultures_expanded.6.d: "In 1467 under Matyas Corvinus the Hungarian Crown reformed their taxation and made the so called 'Thirtieth' a permanent crown tax. The further removal of any earlier granted privileges caused much unrest. The Transylvanian Estates known as the 'Three Nations', which have had major influences on the Transylvania region for decades now, have taken up arms and are amassing troops. and claim to be ready to defend Hungarian freedom. Rumor has it that the Voivode of Moldavia has encouraged and supported these rebels."
- cultures_expanded.6.a: "Crush them in battle"
- cultures_expanded.6.b: "Aquiess to their demands."
- 
- cultures_expanded.7.t: "Crushed the Estates"
- cultures_expanded.7.d: "Having dealt with the military might of the Estates, now comes the time to deal with the troublemakers and their retinues."
- cultures_expanded.7.a: "Stake the traitors, their kin and take their land."
- cultures_expanded.7.b: "Execute the traitors and abolish their privileges."
- cultures_expanded.7.c: "Forgive them."
+
  
  cultures_expanded.8.t: "Election of Matyas Corvinus"
  cultures_expanded.8.d: "Following the papal call to arms against the excommunicated George of Podebrady, Matyas of Hungary invaded the lands of the Bohemian Crown, conquering about half of these lands, but failing to continue his advance into Bohemia Proper. The Catholic estates of the Bohemian Crown elected Matyas of Hungary to be their new king as he held papal favor and was already the de-facto controller of much of the Bohemian Crown."
@@ -641,7 +628,27 @@
  CE_hungary_expanded.14.b: "If only Matyas was still among us."
 
  CE_hungary_expanded.15.t: "Uprising of the Catholic Estates"
- CE_hungary_expanded.15.d: "As the Hungarian armies march through the Czech lands of Bohemia and Silesia after the defeats of the primary Hussite Army, men, women and children alike have come out of their homes. They call to [Hun.Monarch.GetName] as King, they chant in unison, /"King [Hun.Monarch.GetName]!, King [Hun.Monarch.GetName]!, King [Hun.Monarch.GetName]!"/ these Catholic civilians have lived hard lives under Hussite rule long enough and with previous papal backing, the estates are trying to elect [Hun.Monarch.GetName] of Hungary as king of Bohemia."
+ CE_hungary_expanded.15.d: "As the Hungarian armies march through the Czech lands of Bohemia and Silesia after the defeats of the primary Hussite Army, men, women and children alike have come out of their homes. They call to [Hun.Monarch.GetName] as King, they chant in unison, /"King [HUN.Monarch.GetName]!, King [HUN.Monarch.GetName]!, King [HUN.Monarch.GetName]!"/ these Catholic civilians have lived hard lives under Hussite rule long enough and with previous papal backing, the estates are trying to elect [Hun.Monarch.GetName] of Hungary as king of Bohemia."
  CE_hungary_expanded.15.a: "We must put them down!" 
  CE_hungary_expanded.15.b: "If this is the price to pay to survive the Hungarian Onslaught."
  CE_HUN_revolt_of_the_estates: "This will cause Lusatia, Silesia and Moravia to seccede from the Hussite Bohemian Crown and seek Hungarian Catholic protection."
+
+ CE_hungary_expanded.16.t: "Union of Three Nations"
+ CE_hungary_expanded.16.d: "In 1438, The Transylvanian Estates organized into the 'Unio Trium Nationum' following Ottoman and Wallachian raids into Transylvania and the inaction of the late King Sigismund of Hungary's lack of timely response. The local and spontaneous organization both kept the peace in their domains as well as attempted to halt further Southern aggression."
+ CE_hungary_expanded.16.a: "We should deal with them at some point."
+
+ CE_hungary_expanded.17.t: "Crush the Estates"
+ CE_hungary_expanded.17.d: "In 1467 under Matyas Corvinus the Hungarian Crown reformed their taxation and made the so called 'Thirtieth' a permanent crown tax. The further removal of any earlier granted privileges caused much unrest. The Transylvanian Estates known as the 'Three Nations', which have had major influences on the Transylvania region for decades now, have taken up arms and are amassing troops. and claim to be ready to defend Hungarian freedom. Rumor has it that the Voivode of Moldavia has encouraged and supported these rebels."
+ CE_hungary_expanded.17.a: "Crush them in battle"
+ CE_hungary_expanded.17.b: "Aquiess to their demands."
+ 
+ CE_hungary_expanded.18.t: "Crushed the Estates"
+ CE_hungary_expanded.18.d: "Having dealt with the military might of the Estates, now comes the time to deal with the troublemakers and their retinues."
+ CE_hungary_expanded.18.a: "Stake the traitors, their kin and take their land."
+ CE_hungary_expanded.18.b: "Execute the traitors and abolish their privileges."
+ CE_hungary_expanded.18.c: "Forgive them."
+
+ CE_hungary_expanded.19.t: "Matyas is dead, justice is lost"
+ CE_hungary_expanded.19.d: "The catholic estates of the Bohemian crown have, following King Matyas Corvinus's Death, reasserted themselves and wish to reunite with the Bohemian Crown, citing unfair treatment and a desire for stability as their goal. They have taken up arms and are trying to force our troops from their lands."
+ CE_hungary_expanded.19.a: "If only Matyas had lived."
+ CE_hungary_expanded.19.b: "We'll fight to protect his legacy, to the last man!"

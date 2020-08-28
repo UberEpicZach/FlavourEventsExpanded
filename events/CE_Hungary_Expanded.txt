@@ -128,12 +128,15 @@ country_event = {
 	option = {
 		name = CE_hungary_expanded.2.b
 		HAB = {
-			declare_war = BOH
-			set_country_flag = CE_promised_hungary_bag_of_gold
+			declare_war_with_cb = {
+				who = BOH
+				casus_belli = cb_liberation
+			}
 		}
 		if = {
 			limit = {
 				HUN = {
+					NOT = { has_truce = BOH }
 					is_subject = no
 				}
 			}
@@ -143,6 +146,7 @@ country_event = {
 					days = 30
 				}
 			}
+			set_country_flag = CE_promised_hungary_bag_of_gold
 		}
 		custom_tooltip = CE_HUN_catholic_sympathizers
 		ai_chance = {
@@ -189,9 +193,11 @@ country_event = {
 		HUN = {
 			join_all_offensive_wars_of = HAB
 		}
-		country_event = {
-			id = CE_hungary_expanded.5
-			days = 60
+		hidden_effect = {
+			country_event = {
+				id = CE_hungary_expanded.5
+				days = 60
+			}
 		}
 		custom_tooltip = CE_and_hungary_will_answer
 		ai_chance = {
@@ -368,14 +374,17 @@ country_event = {
 			has_country_flag = CE_promised_hungary_bag_of_gold
 		}
 		is_at_war = no
+		had_recent_war = 5
 	}
 
 	mean_time_to_happen = {
-		days = 30
+		days = 120
 	}
 
 	immediate = {
-		clr_country_flag = CE_promised_hungary_bag_of_gold
+		HAB = {
+			clr_country_flag = CE_promised_hungary_bag_of_gold
+		}
 	}
 
 	option = {
@@ -637,7 +646,7 @@ country_event = {
 	trigger = {
 		tag = BOH
 		BOH = {
-			has_country_flag = first_hussite_king
+			has_ruler_flag = hussite_king
 		}
 		HUN = {
 			is_in_war = {
@@ -727,6 +736,438 @@ country_event = {
 		}
 		ai_chance = {
 			factor = 1
+		}
+	}
+}
+
+country_event = {
+	id = CE_hungary_expanded.16
+	title = CE_hungary_expanded.16.t
+	desc = CE_hungary_expanded.16.d
+	picture = CITY_VIEW_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = HUN
+		NOT = { has_country_flag = CE_Union_Of_Nations }
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	immediate = {
+		set_country_flag = CE_Union_Of_Nations
+	}
+
+	option = {
+		name = CE_hungary_expanded.16.a
+		transylvania_area = {
+			add_province_modifier = {
+				name = "CE_union_of_nations"
+				duration = -1
+			}
+		}
+		southern_transylvania_area = {
+			add_province_modifier = {
+				name = "CE_union_of_nations"
+				duration = -1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = CE_hungary_expanded.17
+	title = CE_hungary_expanded.17.t
+	desc = CE_hungary_expanded.17.d
+	picture = CITY_VIEW_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = HUN
+		#is_year = 1467
+		any_owned_province = {
+			has_province_modifier = CE_union_of_nations
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 30
+		modifier = {
+			factor = 0.1
+			is_year = 1468
+		}
+	}
+
+	immediate = {
+	}
+
+	option = {
+		name = CE_hungary_expanded.17.a
+		random_list = {
+			50 = {
+				random_owned_province = {
+					limit = {
+						has_province_modifier = CE_union_of_nations
+					}
+					spawn_rebels = {
+						size = 2
+						type = anti_tax_rebels
+					}
+				}
+				random_owned_province = {
+					limit = {
+						has_province_modifier = CE_union_of_nations
+					}
+					spawn_rebels = {
+						size = 1
+						type = anti_tax_rebels
+					}
+				}
+				set_country_flag = CE_fought_union_of_nations
+			}
+			50 = {
+				country_event = {
+					id = cultures_expanded.7
+					days = 30
+				}
+			}
+		}
+		# if = {
+			# limit = {
+				# NOT = {
+					# has_opinion = {
+						# who = MOL
+						# value = 0
+					# }
+				# }
+			# }
+			# random_owned_province = {
+				# limit = {
+					# has_province_modifier = CE_union_of_nations
+				# }
+				# spawn_rebels = {
+					# size = 1
+					# type = anti_tax_rebels
+					# friend = MOL
+				# }
+			# }
+		# }
+	}
+
+	option = {
+		name = CE_hungary_expanded.17.b
+		every_owned_province = {
+			limit = {
+				has_province_modifier = CE_union_of_nations
+			}
+			add_local_autonomy = 25
+		}
+		change_estate_land_share = {
+			estate = estate_nobles
+			share = 2.5
+		}
+	}
+}
+
+#Estates Crushed
+country_event = {
+	id = CE_hungary_expanded.18
+	title = CE_hungary_expanded.18.t
+	desc = CE_hungary_expanded.18.d
+	picture = CITY_VIEW_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = HUN
+		has_country_flag = CE_fought_union_of_nations
+		NOT = {
+			OR = {
+				num_of_rebel_armies = 1
+				num_of_rebel_controlled_provinces = 1
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	option = {
+		name = CE_hungary_expanded.18.a
+		change_estate_land_share = {
+			estate = estate_nobles
+			share = -2
+		}
+		random_owned_province = {
+			limit = {
+				has_province_modifier = CE_union_of_nations
+			}
+			spawn_rebels = {
+				size = 3
+				type = noble_rebels
+			}
+		}
+		random_owned_province = {
+			limit = {
+				has_province_modifier = CE_union_of_nations
+			}
+			spawn_rebels = {
+				size = 2
+				type = noble_rebels
+			}
+		}
+		every_owned_province = {
+			limit = {
+				has_province_modifier = CE_union_of_nations
+			}
+			remove_province_modifier = CE_union_of_nations
+		}
+	}
+
+	option = {
+		name = CE_hungary_expanded.18.b
+		every_owned_province = {
+			limit = {
+				has_province_modifier = CE_union_of_nations
+			}
+			remove_province_modifier = CE_union_of_nations
+		}
+	}
+	option = {
+		name = CE_hungary_expanded.18.c
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = 5
+		}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 5
+		}
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = 5
+		}
+	}
+	# after = {
+		# if = {
+			# NOT = {
+				# has_opinion = {
+					# who = MOL
+					# value = 0
+				# }
+			# }
+		# }
+		# add_casus_belli = {
+			# target = MOL
+			# type = cb_insult
+			# months = 9125
+		# }
+	# }
+
+}
+
+country_event = {
+	id = CE_hungary_expanded.19
+	title = CE_hungary_expanded.19.t
+	desc = CE_hungary_expanded.19.d
+	picture = CITY_VIEW_eventPicture
+
+	trigger = {
+		tag = HUN
+		is_subject = no
+		NOT = {
+			HUN = {
+				war_with = BOH
+			}
+		}
+		NOT = {
+			junior_union_with = BOH
+		}
+		OR = {
+			SIL = {
+				is_subject_of = HUN
+			}
+			MVA = {
+				is_subject_of = HUN
+			}
+			SOR = {
+				is_subject_of = HUN
+			}
+		}
+		NOT = {
+			has_ruler_flag = FEE_Matyas_Reign
+		}
+		NOT = {
+			is_year = 1525
+		}
+		NOT = {
+			has_country_flag = CE_HUN_Bohemian_Revolt
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 365
+	}
+
+	immediate = {
+		set_country_flag = CE_HUN_Bohemian_Revolt
+		if = {
+			limit = {
+				SIL = {
+					is_subject_of = HUN
+				}
+			}
+			SIL = {
+				add_liberty_desire = 25
+			}
+		}
+		if = {
+			limit = {
+				MVA = {
+					is_subject_of = HUN
+				}
+			}
+			MVA = {
+				add_liberty_desire = 25
+			}
+		}
+		if = {
+			limit = {
+				SOR = {
+					is_subject_of = HUN
+				}
+			}
+			SOR = {
+				add_liberty_desire = 25
+			}
+		}
+	}
+
+	option = {
+		name = CE_hungary_expanded.19.a
+		BOH = {
+			if = {
+				limit = {
+					SIL = {
+						is_subject_of = HUN
+						liberty_desire = 50
+					}
+				}
+				tooltip = {
+					vassalize = SIL
+				}
+				set_country_flag = CE_HUN_integrate_silesia
+			}
+			if = {
+				limit = {
+					MVA = {
+						is_subject_of = HUN
+						liberty_desire = 50
+					}
+				}
+				tooltip = {
+					inherit = MVA
+				}
+				set_country_flag = CE_HUN_integrate_moravia
+			}
+			if = {
+				limit = {
+					SOR = {
+						is_subject_of = HUN
+						liberty_desire = 50
+					}
+				}
+				tooltip = {
+					inherit = SOR
+				}
+				set_country_flag = CE_HUN_integrate_sorbia
+			}
+			if = { 
+				limit = {
+					has_country_flag = CE_HUN_integrate_silesia
+				}
+				vassalize = SIL
+			}
+			if = { 
+				limit = {
+					has_country_flag = CE_HUN_integrate_moravia
+				}
+				inherit = MVA
+			}
+			if = { 
+				limit = {
+					has_country_flag = CE_HUN_integrate_sorbia
+				}
+				inherit = SOR
+			}
+			clr_country_flag = CE_HUN_integrate_silesia
+			clr_country_flag = CE_HUN_integrate_moravia
+			clr_country_flag = CE_HUN_integrate_sorbia
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = CE_hungary_expanded.19.b
+		add_stability = -3
+		HUN = {
+			if = {
+				limit = {
+					SIL = {
+						is_subject_of = HUN
+						liberty_desire = 50
+					}
+				}
+				SIL = {
+					capital_scope = {
+						spawn_rebels = {
+							type = nationalists
+							size = 3
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					MVA = {
+						is_subject_of = HUN
+						liberty_desire = 50
+					}
+				}
+				MVA = {
+					capital_scope = {
+						spawn_rebels = {
+							type = nationalists
+							size = 3
+						}
+					}
+				}
+			}
+			if = {
+				limit = {
+					SOR = {
+						is_subject_of = HUN
+						liberty_desire = 50
+					}
+				}
+				SOR = {
+					capital_scope = {
+						spawn_rebels = {
+							type = nationalists
+							size = 3
+						}
+					}
+				}
+			}
+		}
+		ai_chance = {
+			factor = 0
 		}
 	}
 }
