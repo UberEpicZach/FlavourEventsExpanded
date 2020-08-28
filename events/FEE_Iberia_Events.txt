@@ -1245,7 +1245,6 @@ country_event = {
 	title = FEE_Iberia_Events.12.T
 	desc = FEE_Iberia_Events.12.D
 	picture = CHURCH_ESTATE_1_eventPicture
-	major = yes 
 	
 	trigger = {
 		tag = ARA
@@ -1282,6 +1281,18 @@ country_event = {
 				modifier = iberia_papal_fraud_uncovered
 			}
 		}
+	every_country = { 
+		limit = {
+		religion = catholic
+		NOT = {
+			tag = ROOT
+		}
+	} 
+		country_event = {
+			id = FEE_Iberia_Events.120
+			days = 5
+	}
+}		add_prestige = 15
 		add_reform_desire = 0.05
 		define_advisor = {
 			type = philosopher
@@ -1335,6 +1346,32 @@ country_event = {
 		}
 	}
 }
+
+# A Papal Fraud
+country_event = {
+	id = FEE_Iberia_Events.120
+	title = FEE_Iberia_Events.120.T
+	desc = FEE_Iberia_Events.120.D
+	picture = CHURCH_ESTATE_1_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Iberia_Events.120.A
+		custom_tooltip = FEE_Iberia_Events.120.tt
+
+		PAP = {
+            add_opinion = {
+                who = ROOT
+                modifier = iberia_papal_fraud_uncovered
+            }
+         }
+		add_opinion = {
+            who = PAP
+            modifier = iberia_papal_fraud_uncovered
+            }
+		}
+	}
 
 # Juan de Avila
 country_event = {
