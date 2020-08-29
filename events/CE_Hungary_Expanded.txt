@@ -675,14 +675,11 @@ country_event = {
 			amount = 4
 		}
 		silesia_area = {
-			type = all
-			limit = {
-				owner = {
-					OR = {
+			owner = {
+				OR = {
+					tag = BOH
+					overlord = {
 						tag = BOH
-						overlord = {
-							tag = BOH
-						}
 					}
 				}
 			}
