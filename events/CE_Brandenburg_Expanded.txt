@@ -2444,7 +2444,7 @@ country_event = {
 			tag = PRU
 		}
 		is_year = 1535
-		NOT = { is_year = 1545 }`
+		NOT = { is_year = 1545 }
 		NOT = {
 			exists = RUP
 		}
@@ -2762,7 +2762,7 @@ country_event = {
 		set_ruler_flag = CE_BRA_Hunting_Lodge
 		if = {
 			limit = {
-				is_ai = no
+				ai = no
 			}
 			add_treasury = -700
 		} 
@@ -3683,7 +3683,7 @@ country_event = {
 			amount = 4
 		}
 		is_at_war = yes
-		any_neighbour_country = {
+		any_neighbor_country = {
 			war_score_against = {
 				who = BRA
 				value = 50
