@@ -212,7 +212,6 @@ country_event = {
 		hidden_effect = {
 			ARA = {
 				set_country_flag = fee_alteraciones_check
-				}
 			}
 		}
 	}
@@ -269,7 +268,6 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			set_country_flag = fee_alteraciones_check
-			}
 		}
 	}
 	
