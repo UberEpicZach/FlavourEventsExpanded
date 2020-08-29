@@ -17,7 +17,7 @@ country_event = {
 			is_subject = no
 		}
         BOH = {
-            has_country_flag = first_hussite_king
+            has_ruler_modifier = FEE_BOH_Infertility
         }
 	}
 
@@ -787,7 +787,7 @@ country_event = {
 
 	trigger = {
 		tag = HUN
-		#is_year = 1467
+		is_year = 1467
 		any_owned_province = {
 			has_province_modifier = CE_union_of_nations
 		}
@@ -830,7 +830,7 @@ country_event = {
 			}
 			50 = {
 				country_event = {
-					id = cultures_expanded.7
+					id = CE_hungary_expanded.18
 					days = 30
 				}
 			}
