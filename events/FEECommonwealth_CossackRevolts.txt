@@ -277,6 +277,9 @@ country_event = {
 # Kosinski Uprising [Phase 1]
 country_event = {
 	id = fee_plc_cr.1001
+	title = "cr_1001_title"
+	desc = "cr_1001_desc"
+	picture = BATTLE_eventPicture
 	is_triggered_only = yes
 	hidden = yes
 	
@@ -312,6 +315,9 @@ country_event = {
 # Kosinski Uprising [Phase 2]
 country_event = {
 	id = fee_plc_cr.1002
+	title = "cr_1002_title"
+	desc = "cr_1002_desc"
+	picture = BATTLE_eventPicture
 	is_triggered_only = yes
 	hidden = yes
 	
@@ -346,6 +352,9 @@ country_event = {
 # Kosinski Uprising [Final Phase (Loop)]
 country_event = {
 	id = fee_plc_cr.1003
+	title = "cr_1003_title"
+	desc = "cr_1003_desc"
+	picture = BATTLE_eventPicture
 	is_triggered_only = yes
 	hidden = yes
 	
@@ -799,6 +808,9 @@ country_event = {
 # Loop to check if there's any Cossack rebels in the country.
 country_event = {
 	id = fee_plc_cr.1004
+	title = "cr_1004_title"
+	desc = "cr_1004_desc"
+	picture = BATTLE_eventPicture
 	is_triggered_only = yes
 	hidden = yes
 	
@@ -875,6 +887,9 @@ country_event = {
 # Another loop to check what player had decided.
 country_event = {
 	id = fee_plc_cr.1005
+	title = "cr_1005_title"
+	desc = "cr_1005_desc"
+	picture = BATTLE_eventPicture
 	hidden = yes
 	is_triggered_only = yes
 	

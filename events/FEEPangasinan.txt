@@ -184,7 +184,7 @@ country_event = {
 			}
 			add_claim = PGS
 		}
-		bataan_area = {
+		visayas_area = {
 			limit = {
 				NOT = { is_core = PGS }
 				NOT = { is_claim = PGS }
