@@ -17,13 +17,34 @@ country_event = {
 			is_subject = no
 		}
         BOH = {
-			is_subject = no
-            has_country_flag = first_hussite_king
+            has_ruler_modifier = FEE_BOH_Infertility
 		}
+		is_year = 1466
 	}
 
 	mean_time_to_happen = {
-        months = 120
+		months = 120
+		modifier = {
+			factor = 2
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 0.50
+			is_at_war = no
+		}
+		modifier = {
+			factor = 0.25
+			NOT = {
+				OR = {
+					BOH = {
+						has_truce = HUN
+					}
+					HUN = {
+						has_truce = BOH
+					}
+				}
+			}
+		}
 	}
 
 	immediate = {
@@ -136,7 +157,6 @@ country_event = {
 		if = {
 			limit = {
 				HUN = {
-					NOT = { has_truce = BOH }
 					is_subject = no
 				}
 			}
@@ -146,7 +166,9 @@ country_event = {
 					days = 30
 				}
 			}
-			set_country_flag = CE_promised_hungary_bag_of_gold
+			HAB = {
+				set_country_flag = CE_promised_hungary_bag_of_gold
+			}
 		}
 		custom_tooltip = CE_HUN_catholic_sympathizers
 		ai_chance = {
@@ -389,9 +411,11 @@ country_event = {
 
 	option = {
 		name = CE_hungary_expanded.8.a
-		country_event = {
-			id = CE_hungary_expanded.9
-			days = 30
+		HAB = {
+			country_event = {
+				id = CE_hungary_expanded.9
+				days = 30
+			}
 		}
 		ai_chance = {
 			factor = 1
@@ -432,10 +456,24 @@ country_event = {
 			}
 		}
 		ai_chance = {
-			factor = 1
+			factor = 2
 			modifier = {
-				factor = 0
+				factor = 0.25
 				is_at_war = yes
+			}
+			modifier = {
+				factor = 2
+				current_income_balance = 1
+			}
+			modifier = {
+				factor = 10
+				current_income_balance = 5
+			}
+			modifier = {
+				factor = 5
+				NOT = {
+					num_of_loans = 1
+				}
 			}
 		}
 	}
@@ -450,6 +488,7 @@ country_event = {
 		}
 		ai_chance = {
 			factor = 1
+			
 		}
 	}
 }
@@ -646,15 +685,15 @@ country_event = {
 	trigger = {
 		tag = BOH
 		BOH = {
-			has_ruler_flag = hussite_king
+			has_ruler_modifier = FEE_BOH_Infertility
+		}
+		is_in_war = {
+			attacker_leader = HAB
+			attackers = HUN
+			defender_leader = BOH
+			duration = 1
 		}
 		HUN = {
-			is_in_war = {
-				attacker_leader = HAB
-				attackers = HUN
-				defender_leader = BOH
-				duration = 1
-			}
 			is_subject = no
 		}
 		NOT = {
@@ -785,7 +824,7 @@ country_event = {
 
 	trigger = {
 		tag = HUN
-		#is_year = 1467
+		is_year = 1467
 		any_owned_province = {
 			has_province_modifier = CE_union_of_nations
 		}
@@ -828,7 +867,7 @@ country_event = {
 			}
 			50 = {
 				country_event = {
-					id = cultures_expanded.7
+					id = CE_hungary_expanded.18
 					days = 30
 				}
 			}
@@ -968,6 +1007,7 @@ country_event = {
 
 }
 
+#Matyas is death, Justice is Lost
 country_event = {
 	id = CE_hungary_expanded.19
 	title = CE_hungary_expanded.19.t
@@ -999,9 +1039,7 @@ country_event = {
 		NOT = {
 			has_ruler_flag = FEE_Matyas_Reign
 		}
-		NOT = {
-			is_year = 1525
-		}
+		has_country_flag = FEE_Corvinus
 		NOT = {
 			has_country_flag = CE_HUN_Bohemian_Revolt
 		}
@@ -1020,7 +1058,7 @@ country_event = {
 				}
 			}
 			SIL = {
-				add_liberty_desire = 25
+				add_liberty_desire = 50
 			}
 		}
 		if = {
@@ -1030,7 +1068,7 @@ country_event = {
 				}
 			}
 			MVA = {
-				add_liberty_desire = 25
+				add_liberty_desire = 50
 			}
 		}
 		if = {
@@ -1040,7 +1078,7 @@ country_event = {
 				}
 			}
 			SOR = {
-				add_liberty_desire = 25
+				add_liberty_desire = 50
 			}
 		}
 	}
