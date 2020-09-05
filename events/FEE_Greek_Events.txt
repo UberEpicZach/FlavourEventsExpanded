@@ -1,9 +1,6 @@
-# Palatine Events
-
 namespace = FEE_Greek_Events
 
 # They have arrived
-
 country_event = {
 	id = FEE_Greek_Events.1
 	title = FEE_Greek_Events.1.T
@@ -77,5 +74,7 @@ country_event = {
 		ai_chance = {
 			factor = 50
 		}
+		
+		add_stability_or_adm_power = yes
 	}
 }
