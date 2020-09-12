@@ -11,5 +11,6 @@ CE_barbara_marriage = {
 	yearly_decay = 5
 }
 CE_Conceeded_Territory = {
-	#missing
+	opinion = 50
+	yearly_decay = 2.5
 }
