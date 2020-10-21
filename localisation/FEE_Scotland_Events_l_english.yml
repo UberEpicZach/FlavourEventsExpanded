@@ -78,6 +78,7 @@
     FEE_Scotland_Events.7.t: "Disaster at Flodden"
     FEE_Scotland_Events.7.d: "In 1513, as a result of the renewal of the Auld Alliance with France, the insolent English monarch Henry VIII rebuffed James IV’s attempts to secure peace in the British Isles, declaring himself the \"verie owner of Scotland\", bringing yet another Anglo-Scottish War to the island. The Scottish army, ill-equipped and badly led, managed to capture English border forts before being caught at Flodden. The battle was in name only, as it quickly became a massacre: the flower of the Scottish nobility, the knights of Scotland, were slaughtered almost to a man, and the Royal Scottish army for a time ceased to exist as a credible fighting force. The battle is remembered today in the Scottish eulogy song which laments: The Flowers of the Forest are a’wede away."
     FEE_Scotland_Events.7.a: "O God, why hast thou forsaken Scotland?"
+    FEE_Scotland_Events.7.a.TT: "Propose Peace?"
     FEE_Scotland_Events.7.b: "We shall never surrender!"
     
     FEE_Scotland_Events.8.t: "Corruption in the Church"
@@ -232,8 +233,13 @@
     
     FEE_Scotland_Events.37.t: "Disaster at Flodden"
     FEE_Scotland_Events.37.d: "The [From.Monarch.GetTitle] of [From.GetName] has been slain by our mighty host and his royal force totally massacred! They are scattered to the wind, running away for their lives and thus no longer willing to fight..."
-    FEE_Scotland_Events.37.a: "What a wonderful outcome!"
+    FEE_Scotland_Events.37.a: "Let us focus our troops on the French!"
+    FEE_Scotland_Events.37.b: "Defenseless Peasants?"
     
     FEE_Scotland_Events.38.t: "Disaster at Flodden"
     FEE_Scotland_Events.38.d: "The [From.Monarch.GetTitle] of [From.GetName] has been slain by our mighty host and his royal force totally massacred! Despite that, these devilish skirts are unbroken and yet willing to fight for their freedom. We have to crush them!"
     FEE_Scotland_Events.38.a: "Cut them to the pieces!"
+
+    FEE_Scotland_Events.300.t: "England continues invasion!"
+    FEE_Scotland_Events.300.d: "England tossed away our request of peace! Pissed on the very soil our dead men and monarch lie and have come for our wifes and children too!"
+    FEE_Scotland_Events.300.a: "..."

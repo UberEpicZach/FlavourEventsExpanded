@@ -147,3 +147,10 @@ FEE_Scotland_we_shall_never_surrender = {
 	land_morale = 0.1
 	shock_damage_received = -0.2
 }
+FEE_INVADE_ANYWAYS = {
+	ae_impact = 0.15
+	unjustified_demands = 0.15
+}
+FEE_Get_Fucked_English = {
+	local_unrest = 0.5
+}
