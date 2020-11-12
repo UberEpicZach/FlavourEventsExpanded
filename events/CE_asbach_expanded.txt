@@ -803,9 +803,10 @@ country_event = {
 	
 	option = {
 		name = CE_ansbach_expanded.15.a
-		define_ruler = {
-			dynasty = "von Hohenzollern"
-			dip = 6
+		add_ruler_personality = glory_hound_personality
+		set_ai_personality = {
+			personality = ai_militarist 
+			locked = yes
 		}
 	}
 }

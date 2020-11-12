@@ -687,6 +687,9 @@ country_event = {
 		BOH = {
 			has_ruler_modifier = FEE_BOH_Infertility
 		}
+		HUN = {
+			has_ruler_flag = FEE_Matyas_Reign
+		}
 		is_in_war = {
 			attacker_leader = HAB
 			attackers = HUN
@@ -1139,6 +1142,16 @@ country_event = {
 					has_country_flag = CE_HUN_integrate_sorbia
 				}
 				inherit = SOR
+			}
+			every_owned_province = {
+				limit = {
+					OR = {
+						area = silesia_area
+						area = lusatia_area
+						area = moravia_area
+					}
+					cede_province = BOH
+				}
 			}
 			clr_country_flag = CE_HUN_integrate_silesia
 			clr_country_flag = CE_HUN_integrate_moravia

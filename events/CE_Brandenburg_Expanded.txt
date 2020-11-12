@@ -1917,11 +1917,26 @@ country_event = {
 	
 	option = {
 		name = CE_brandenburg_expanded.29.a
-		create_succession_crisis = {
-			attacker = PAL
-			defender = BRA
-			target = BRG
+		if = {
+			limit = {
+				BRA = {
+					exists = yes
+				}
+			}
+			create_succession_crisis = {
+				attacker = PAL
+				defender = BRA
+				target = BRG
+			}
 		}
+		else = {
+			create_succession_crisis = {
+				attacker = PAL
+				defender = PRU
+				target = BRG
+			}
+		}
+		
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -1985,10 +2000,24 @@ country_event = {
 	
 	option = {
 		name = CE_brandenburg_expanded.30.a
-		create_succession_crisis = {
-			attacker = BRA
-			defender = PAL
-			target = BRG
+		if = {
+			limit = {
+				BRA = {
+					exists = yes
+				}
+			}
+			create_succession_crisis = {
+				attacker = BRA
+				defender = PAL
+				target = BRG
+			}
+		}
+		else = {
+			create_succession_crisis = {
+				attacker = PRU
+				defender = PAL
+				target = BRG
+			}
 		}
 		ai_chance = {
 			factor = 1
