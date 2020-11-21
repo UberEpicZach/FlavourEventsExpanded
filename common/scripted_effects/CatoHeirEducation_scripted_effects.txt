@@ -1,0 +1,601 @@
+#Unsorted Scripted effects:
+
+#General effect for extending or adding province modifier
+add_education_progress_tiny = {
+	change_variable = {
+		which = heirEducationalLevel
+		value = 5
+	}
+}
+add_education_progress_small = {
+	change_variable = {
+		which = heirEducationalLevel
+		value = 10
+	}
+}
+add_education_progress_medium = {
+	change_variable = {
+		which = heirEducationalLevel
+		value = 15
+	}
+}
+add_education_progress_large = {
+	change_variable = {
+		which = heirEducationalLevel
+		value = 20
+	}
+}
+add_education_progress_huge = {
+	change_variable = {
+		which = heirEducationalLevel
+		value = 25
+	}
+}
+subtract_education_progress_tiny = {
+	subtract_variable = {
+		which = heirEducationalLevel
+		value = 5
+	}
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					which = heirEducationalLevel
+					value = 0
+				}
+			}
+		}
+		set_variable = {
+			which = heirEducationalLevel
+			value = 0
+		}
+	}
+}
+subtract_education_progress_small = {
+	subtract_variable = {
+		which = heirEducationalLevel
+		value = 10
+	}
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					which = heirEducationalLevel
+					value = 0
+				}
+			}
+		}
+		set_variable = {
+			which = heirEducationalLevel
+			value = 0
+		}
+	}
+}
+subtract_education_progress_medium = {
+	subtract_variable = {
+		which = heirEducationalLevel
+		value = 15
+	}
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					which = heirEducationalLevel
+					value = 0
+				}
+			}
+		}
+		set_variable = {
+			which = heirEducationalLevel
+			value = 0
+		}
+	}
+}
+subtract_education_progress_large = {
+	subtract_variable = {
+		which = heirEducationalLevel
+		value = 20
+	}
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					which = heirEducationalLevel
+					value = 0
+				}
+			}
+		}
+		set_variable = {
+			which = heirEducationalLevel
+			value = 0
+		}
+	}
+}
+subtract_education_progress_huge = {
+	subtract_variable = {
+		which = heirEducationalLevel
+		value = 25
+	}
+	if = {
+		limit = {
+			NOT = {
+				check_variable = {
+					which = heirEducationalLevel
+					value = 0
+				}
+			}
+		}
+		set_variable = {
+			which = heirEducationalLevel
+			value = 0
+		}
+	}
+}
+add_good_clerical_education = {
+	add_ruler_modifier = {
+		name = good_clerical_education
+		duration = -1
+	}
+	if = {
+		limit = {
+			NOT = {
+				adm = 6
+			}
+		}
+		change_adm = 1
+	}
+	else = {
+		add_ruler_modifier = {
+			name = adm_education_bonus_1
+			duration = -1
+		}
+	}
+}
+add_best_clerical_education = {
+	add_ruler_modifier = {
+		name = best_clerical_education
+		duration = -1
+	}
+	if = {
+		limit = {
+			NOT = {
+				adm = 5
+			}
+		}
+		change_adm = 2
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				adm = 6
+			}
+		}
+		change_adm = 1
+		add_ruler_modifier = {
+			name = adm_education_bonus_1
+			duration = -1
+		}
+	}
+	else = {
+		add_ruler_modifier = {
+			name = adm_education_bonus_2
+			duration = -1
+		}
+	}
+}
+add_good_administrative_education = {
+	add_ruler_modifier = {
+		name = good_administrative_education
+		duration = -1
+	}
+	if = {
+		limit = {
+			NOT = {
+				adm = 6
+			}
+		}
+		change_adm = 1
+	}
+	else = {
+		add_ruler_modifier = {
+			name = adm_education_bonus_1
+			duration = -1
+		}
+	}
+}
+add_best_administrative_education = {
+	add_ruler_modifier = {
+		name = best_administrative_education
+		duration = -1
+	}
+	if = {
+		limit = {
+			NOT = {
+				adm = 5
+			}
+		}
+		change_adm = 2
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				adm = 6
+			}
+		}
+		change_adm = 1
+		add_ruler_modifier = {
+			name = adm_education_bonus_1
+			duration = -1
+		}
+	}
+	else = {
+		add_ruler_modifier = {
+			name = adm_education_bonus_2
+			duration = -1
+		}
+	}
+}
+add_good_scholastic_education = {
+	add_ruler_modifier = {
+		name = good_scholastic_education
+		duration = -1
+	}
+	if = {
+		limit = {
+			NOT = {
+				adm = 6
+			}
+		}
+		change_adm = 1
+	}
+	else = {
+		add_ruler_modifier = {
+			name = adm_education_bonus_1
+			duration = -1
+		}
+	}
+}
+add_best_scholastic_education = {
+	add_ruler_modifier = {
+		name = best_scholastic_education
+		duration = -1
+	}
+	if = {
+		limit = {
+			NOT = {
+				adm = 5
+			}
+		}
+		change_adm = 2
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				adm = 6
+			}
+		}
+		change_adm = 1
+		add_ruler_modifier = {
+			name = adm_education_bonus_1
+			duration = -1
+		}
+	}
+	else = {
+		add_ruler_modifier = {
+			name = adm_education_bonus_2
+			duration = -1
+		}
+	}
+}
+add_good_diplomacy_education = {
+	add_ruler_modifier = {
+		name = good_diplomacy_education
+		duration = -1
+	}
+	if = {
+		limit = {
+			NOT = {
+				dip = 6
+			}
+		}
+		change_dip = 1
+	}
+	else = {
+		add_ruler_modifier = {
+			name = dip_education_bonus_1
+			duration = -1
+		}
+	}
+}
+add_best_diplomacy_education = {
+	add_ruler_modifier = {
+		name = best_diplomacy_education
+		duration = -1
+	}
+	if = {
+		limit = {
+			NOT = {
+				dip = 5
+			}
+		}
+		change_dip = 2
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				dip = 6
+			}
+		}
+		change_dip = 1
+		add_ruler_modifier = {
+			name = dip_education_bonus_1
+			duration = -1
+		}
+	}
+	else = {
+		add_ruler_modifier = {
+			name = dip_education_bonus_2
+			duration = -1
+		}
+	}
+}
+add_good_intrigue_education = {
+	add_ruler_modifier = {
+		name = good_intrigue_education
+		duration = -1
+	}
+	if = {
+		limit = {
+			NOT = {
+				dip = 6
+			}
+		}
+		change_dip = 1
+	}
+	else = {
+		add_ruler_modifier = {
+			name = dip_education_bonus_1
+			duration = -1
+		}
+	}
+}
+add_best_intrigue_education = {
+	add_ruler_modifier = {
+		name = best_intrigue_education
+		duration = -1
+	}
+	if = {
+		limit = {
+			NOT = {
+				dip = 5
+			}
+		}
+		change_dip = 2
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				dip = 6
+			}
+		}
+		change_dip = 1
+		add_ruler_modifier = {
+			name = dip_education_bonus_1
+			duration = -1
+		}
+	}
+	else = {
+		add_ruler_modifier = {
+			name = dip_education_bonus_2
+			duration = -1
+		}
+	}
+}
+add_good_trade_education = {
+	add_ruler_modifier = {
+		name = good_trade_education
+		duration = -1
+	}
+	if = {
+		limit = {
+			NOT = {
+				dip = 6
+			}
+		}
+		change_dip = 1
+	}
+	else = {
+		add_ruler_modifier = {
+			name = dip_education_bonus_1
+			duration = -1
+		}
+	}
+}
+add_best_trade_education = {
+	add_ruler_modifier = {
+		name = best_trade_education
+		duration = -1
+	}
+	if = {
+		limit = {
+			NOT = {
+				dip = 5
+			}
+		}
+		change_dip = 2
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				dip = 6
+			}
+		}
+		change_dip = 1
+		add_ruler_modifier = {
+			name = dip_education_bonus_1
+			duration = -1
+		}
+	}
+	else = {
+		add_ruler_modifier = {
+			name = dip_education_bonus_2
+			duration = -1
+		}
+	}
+}
+add_good_martial_education = {
+	add_ruler_modifier = {
+		name = good_martial_education
+		duration = -1
+	}
+	if = {
+		limit = {
+			NOT = {
+				mil = 6
+			}
+		}
+		change_mil = 1
+	}
+	else = {
+		add_ruler_modifier = {
+			name = mil_education_bonus_1
+			duration = -1
+		}
+	}
+}
+add_best_martial_education = {
+	add_ruler_modifier = {
+		name = best_martial_education
+		duration = -1
+	}
+	if = {
+		limit = {
+			NOT = {
+				mil = 5
+			}
+		}
+		change_mil = 2
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				mil = 6
+			}
+		}
+		change_mil = 1
+		add_ruler_modifier = {
+			name = mil_education_bonus_1
+			duration = -1
+		}
+	}
+	else = {
+		add_ruler_modifier = {
+			name = mil_education_bonus_2
+			duration = -1
+		}
+	}
+}
+add_good_naval_education = {
+	add_ruler_modifier = {
+		name = good_naval_education
+		duration = -1
+	}
+	if = {
+		limit = {
+			NOT = {
+				mil = 6
+			}
+		}
+		change_mil = 1
+	}
+	else = {
+		add_ruler_modifier = {
+			name = mil_education_bonus_1
+			duration = -1
+		}
+	}
+}
+add_best_naval_education = {
+	add_ruler_modifier = {
+		name = best_naval_education
+		duration = -1
+	}
+	if = {
+		limit = {
+			NOT = {
+				mil = 5
+			}
+		}
+		change_mil = 2
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				mil = 6
+			}
+		}
+		change_mil = 1
+		add_ruler_modifier = {
+			name = mil_education_bonus_1
+			duration = -1
+		}
+	}
+	else = {
+		add_ruler_modifier = {
+			name = mil_education_bonus_2
+			duration = -1
+		}
+	}
+}
+add_good_logistics_education = {
+	add_ruler_modifier = {
+		name = good_logistics_education
+		duration = -1
+	}
+	if = {
+		limit = {
+			NOT = {
+				mil = 6
+			}
+		}
+		change_mil = 1
+	}
+	else = {
+		add_ruler_modifier = {
+			name = mil_education_bonus_1
+			duration = -1
+		}
+	}
+}
+add_best_logistics_education = {
+	add_ruler_modifier = {
+		name = best_logistics_education
+		duration = -1
+	}
+	if = {
+		limit = {
+			NOT = {
+				mil = 5
+			}
+		}
+		change_mil = 2
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				mil = 6
+			}
+		}
+		change_mil = 1
+		add_ruler_modifier = {
+			name = mil_education_bonus_1
+			duration = -1
+		}
+	}
+	else = {
+		add_ruler_modifier = {
+			name = mil_education_bonus_2
+			duration = -1
+		}
+	}
+}
