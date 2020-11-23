@@ -12,16 +12,16 @@ country_event = {
 	
 	trigger = {
 		dynasty = "von Hohenzollern"
-		#OR = {
-			#AND = {
-			#	tag = ANS
-			#	is_subject = no
-			#}
+		OR = {
+			AND = {
+				tag = ANS
+				is_subject = no
+			}
 			any_subject_country = {
 				tag = ANS
 			}
-		#}
-		#is_year = 1470
+		}
+		is_year = 1470
 	}
 	
 	mean_time_to_happen = {
