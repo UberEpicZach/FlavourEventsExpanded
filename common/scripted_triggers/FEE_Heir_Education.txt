@@ -36,3 +36,12 @@ no_education_trait_ruler = {
 	NOT = { has_ruler_modifier = good_logistics_education }
 	NOT = { has_ruler_modifier = best_logistics_education }
 }
+government_does_not_use_hereditary_heir = {
+	OR = {
+		government = republic
+		government = theocracy
+		has_reform = states_general_reform
+		has_reform = mamluk_government
+		has_reform = legislative_sejm
+	}
+}
