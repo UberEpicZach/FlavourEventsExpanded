@@ -38,10 +38,30 @@ no_education_trait_ruler = {
 }
 government_does_not_use_hereditary_heir = {
 	OR = {
-		government = republic
-		government = theocracy
+		AND = {
+			government = republic
+		}
+		AND = {
+			government = theocracy
+			NOT = {
+				OR = {
+					has_reform = ajuraan_theocracy_reform
+					has_reform = dynastic_theocracy_reform
+				}
+			}
+		}
 		has_reform = states_general_reform
 		has_reform = mamluk_government
-		has_reform = legislative_sejm
+		has_reform = elective_monarchy
+		has_reform = crown_of_saint_wenceslaus
+		has_reform = empire_of_japan_reform
+		has_reform = rum_eagle_reform
+		has_reform = 
 	}
+}
+ruler_available = {
+
+}
+heir_available = {
+
 }
