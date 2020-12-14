@@ -568,9 +568,12 @@ country_event = {
 	picture = ECONOMY_eventPicture
 	trigger = {
 		OR = {
-			had_heir_flag = {
-				flag = heir_started_education
-				days = 2920 ###8 years
+			AND = {
+				had_heir_flag = {
+					flag = heir_started_education
+					days = 2920 ###8 years
+				}
+				NOT = { has_heir_flag = on_world_tour }
 			}
 			has_ruler_flag = heir_started_education
 		}
@@ -1182,6 +1185,12 @@ country_event = {
 		has_ruler_flag = heir_finished_education
 		no_education_trait_ruler = yes
 		is_lesser_in_union = no
+		NOT = {
+			has_ruler_flag = assigned_education
+		}
+	}
+	immediate = {
+		set_ruler_flag = assigned_education
 	}
 	
 	option = {
