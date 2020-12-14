@@ -599,3 +599,691 @@ add_best_logistics_education = {
 		}
 	}
 }
+travel_to_first_tour_destination = {
+	if = {
+		 limit = {
+			NOT = {
+				capital_distance = {
+					who = event_target:world_tour_target_1
+					distance = 200
+				}
+			}
+		}
+		country_event = {
+			id = Cato_Grand_Tour_Event_Chain.0006
+			days = 30
+			random = 5
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				capital_distance = {
+					who = event_target:world_tour_target_1
+					distance = 400
+				}
+			}
+		}
+		country_event = {
+			id = Cato_Grand_Tour_Event_Chain.0006
+			days = 60
+			random = 10
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				capital_distance = {
+					who = event_target:world_tour_target_1
+					distance = 600
+				}
+			}
+		}
+		country_event = {
+			id = Cato_Grand_Tour_Event_Chain.0006
+			days = 90
+			random = 15
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				capital_distance = {
+					who = event_target:world_tour_target_1
+					distance = 800
+				}
+			}
+		}
+		country_event = {
+			id = Cato_Grand_Tour_Event_Chain.0006
+			days = 120
+			random = 20
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				capital_distance = {
+					who = event_target:world_tour_target_1
+					distance = 1000
+				}
+			}
+		}
+		country_event = {
+			id = Cato_Grand_Tour_Event_Chain.0006
+			days = 150
+			random = 25
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				capital_distance = {
+					who = event_target:world_tour_target_1
+					distance = 1200
+				}
+			}
+		}
+		country_event = {
+			id = Cato_Grand_Tour_Event_Chain.0006
+			days = 150
+			random = 30
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				capital_distance = {
+					who = event_target:world_tour_target_1
+					distance = 1400
+				}
+			}
+		}
+		country_event = {
+			id = Cato_Grand_Tour_Event_Chain.0006
+			days = 150
+			random = 35
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				capital_distance = {
+					who = event_target:world_tour_target_1
+					distance = 1600
+				}
+			}
+		}
+		country_event = {
+			id = Cato_Grand_Tour_Event_Chain.0006
+			days = 180
+			random = 40
+		}
+	}
+	else = {
+		country_event = {
+			id = Cato_Grand_Tour_Event_Chain.0006
+			days = 210
+			random = 45
+		}
+	}
+}
+travel_to_second_tour_destination = {
+	if = {
+		 limit = {
+			event_target:world_tour_target_1 = {
+				NOT = {
+					capital_distance = {
+						who = event_target:world_tour_target_2
+						distance = 200
+					}
+				}
+			}
+		}
+		country_event = {
+			id = Cato_Grand_Tour_Event_Chain.0008
+			days = 30
+			random = 5
+		}
+	}
+	else_if = {
+		limit = {
+			event_target:world_tour_target_1 = {
+				NOT = {
+					capital_distance = {
+						who = event_target:world_tour_target_2
+						distance = 400
+					}
+				}
+			}
+		}
+		country_event = {
+			id = Cato_Grand_Tour_Event_Chain.0008
+			days = 60
+			random = 10
+		}
+	}
+	else_if = {
+		limit = {
+			event_target:world_tour_target_1 = {
+				NOT = {
+					capital_distance = {
+						who = event_target:world_tour_target_2
+						distance = 600
+					}
+				}
+			}
+		}
+		country_event = {
+			id = Cato_Grand_Tour_Event_Chain.0008
+			days = 90
+			random = 15
+		}
+	}
+	else_if = {
+		limit = {
+			event_target:world_tour_target_1 = {
+				NOT = {
+					capital_distance = {
+						who = event_target:world_tour_target_2
+						distance = 800
+					}
+				}
+			}
+		}
+		country_event = {
+			id = Cato_Grand_Tour_Event_Chain.0008
+			days = 120
+			random = 20
+		}
+	}
+	else_if = {
+		limit = {
+			event_target:world_tour_target_1 = {
+				NOT = {
+					capital_distance = {
+						who = event_target:world_tour_target_2
+						distance = 1000
+					}
+				}
+			}
+		}
+		country_event = {
+			id = Cato_Grand_Tour_Event_Chain.0008
+			days = 150
+			random = 25
+		}
+	}
+	else_if = {
+		limit = {
+			event_target:world_tour_target_1 = {
+				NOT = {
+					capital_distance = {
+						who = event_target:world_tour_target_2
+						distance = 1200
+					}
+				}
+			}
+		}
+		country_event = {
+			id = Cato_Grand_Tour_Event_Chain.0008
+			days = 150
+			random = 30
+		}
+	}
+	else_if = {
+		limit = {
+			event_target:world_tour_target_1 = {
+				NOT = {
+					capital_distance = {
+						who = event_target:world_tour_target_2
+						distance = 1400
+					}
+				}
+			}
+		}
+		country_event = {
+			id = Cato_Grand_Tour_Event_Chain.0008
+			days = 150
+			random = 35
+		}
+	}
+	else_if = {
+		limit = {
+			event_target:world_tour_target_1 = {
+				NOT = {
+					capital_distance = {
+						who = event_target:world_tour_target_2
+						distance = 1600
+					}
+				}
+			}
+		}
+		country_event = {
+			id = Cato_Grand_Tour_Event_Chain.0008
+			days = 180
+			random = 40
+		}
+	}
+	else = {
+		country_event = {
+			id = Cato_Grand_Tour_Event_Chain.0008
+			days = 210
+			random = 45
+		}
+	}
+}
+travel_to_third_tour_destination = {
+	if = {
+		 limit = {
+			event_target:world_tour_target_2 = {
+				NOT = {
+					capital_distance = {
+						who = event_target:world_tour_target_3
+						distance = 200
+					}
+				}
+			}
+		}
+		country_event = {
+			id = Cato_Grand_Tour_Event_Chain.0010
+			days = 30
+			random = 5
+		}
+	}
+	else_if = {
+		limit = {
+			event_target:world_tour_target_2 = {
+				NOT = {
+					capital_distance = {
+						who = event_target:world_tour_target_3
+						distance = 400
+					}
+				}
+			}
+		}
+		country_event = {
+			id = Cato_Grand_Tour_Event_Chain.0010
+			days = 60
+			random = 10
+		}
+	}
+	else_if = {
+		limit = {
+			event_target:world_tour_target_2 = {
+				NOT = {
+					capital_distance = {
+						who = event_target:world_tour_target_3
+						distance = 600
+					}
+				}
+			}
+		}
+		country_event = {
+			id = Cato_Grand_Tour_Event_Chain.0010
+			days = 90
+			random = 15
+		}
+	}
+	else_if = {
+		limit = {
+			event_target:world_tour_target_2 = {
+				NOT = {
+					capital_distance = {
+						who = event_target:world_tour_target_3
+						distance = 800
+					}
+				}
+			}
+		}
+		country_event = {
+			id = Cato_Grand_Tour_Event_Chain.0010
+			days = 120
+			random = 20
+		}
+	}
+	else_if = {
+		limit = {
+			event_target:world_tour_target_2 = {
+				NOT = {
+					capital_distance = {
+						who = event_target:world_tour_target_3
+						distance = 1000
+					}
+				}
+			}
+		}
+		country_event = {
+			id = Cato_Grand_Tour_Event_Chain.0010
+			days = 150
+			random = 25
+		}
+	}
+	else_if = {
+		limit = {
+			event_target:world_tour_target_2 = {
+				NOT = {
+					capital_distance = {
+						who = event_target:world_tour_target_3
+						distance = 1200
+					}
+				}
+			}
+		}
+		country_event = {
+			id = Cato_Grand_Tour_Event_Chain.0010
+			days = 150
+			random = 30
+		}
+	}
+	else_if = {
+		limit = {
+			event_target:world_tour_target_2 = {
+				NOT = {
+					capital_distance = {
+						who = event_target:world_tour_target_3
+						distance = 1400
+					}
+				}
+			}
+		}
+		country_event = {
+			id = Cato_Grand_Tour_Event_Chain.0010
+			days = 150
+			random = 35
+		}
+	}
+	else_if = {
+		limit = {
+			event_target:world_tour_target_2 = {
+				NOT = {
+					capital_distance = {
+						who = event_target:world_tour_target_3
+						distance = 1600
+					}
+				}
+			}
+		}
+		country_event = {
+			id = Cato_Grand_Tour_Event_Chain.0010
+			days = 180
+			random = 40
+		}
+	}
+	else = {
+		country_event = {
+			id = Cato_Grand_Tour_Event_Chain.0010
+			days = 210
+			random = 45
+		}
+	}
+}
+###
+travel_home_world_tour = {
+	if = {
+		 limit = {
+			NOT = {
+				capital_distance = {
+					who = event_target:world_tour_target_3
+					distance = 200
+				}
+			}
+		}
+		country_event = {
+			id = Cato_Grand_Tour_Event_Chain.0012
+			days = 30
+			random = 5
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				capital_distance = {
+					who = event_target:world_tour_target_3
+					distance = 400
+				}
+			}
+		}
+		country_event = {
+			id = Cato_Grand_Tour_Event_Chain.0012
+			days = 60
+			random = 10
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				capital_distance = {
+					who = event_target:world_tour_target_3
+					distance = 600
+				}
+			}
+		}
+		country_event = {
+			id = Cato_Grand_Tour_Event_Chain.0012
+			days = 90
+			random = 15
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				capital_distance = {
+					who = event_target:world_tour_target_3
+					distance = 800
+				}
+			}
+		}
+		country_event = {
+			id = Cato_Grand_Tour_Event_Chain.0012
+			days = 120
+			random = 20
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				capital_distance = {
+					who = event_target:world_tour_target_3
+					distance = 1000
+				}
+			}
+		}
+		country_event = {
+			id = Cato_Grand_Tour_Event_Chain.0012
+			days = 150
+			random = 25
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				capital_distance = {
+					who = event_target:world_tour_target_3
+					distance = 1200
+				}
+			}
+		}
+		country_event = {
+			id = Cato_Grand_Tour_Event_Chain.0012
+			days = 150
+			random = 30
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				capital_distance = {
+					who = event_target:world_tour_target_3
+					distance = 1400
+				}
+			}
+		}
+		country_event = {
+			id = Cato_Grand_Tour_Event_Chain.0012
+			days = 150
+			random = 35
+		}
+	}
+	else_if = {
+		limit = {
+			NOT = {
+				capital_distance = {
+					who = event_target:world_tour_target_3
+					distance = 1600
+				}
+			}
+		}
+		country_event = {
+			id = Cato_Grand_Tour_Event_Chain.0012
+			days = 180
+			random = 40
+		}
+	}
+	else = {
+		country_event = {
+			id = Cato_Grand_Tour_Event_Chain.0012
+			days = 210
+			random = 45
+		}
+	}
+}
+
+###
+pick_grand_tour_possible_locations = {
+	if = {
+			limit = {
+				any_known_country = {
+					limit = {
+						OR = {
+							technology_group = ROOT
+							religion_group = ROOT
+							culture_group = ROOT
+							alliance_with = ROOT
+						}
+					}
+					NOT = {
+						war_with = ROOT
+					}
+					NOT = { has_country_flag = world_tour_target_1 }
+					NOT = { has_country_flag = world_tour_target_2 }
+					has_opinion = {
+						who = ROOT
+						value = 0
+					}
+				}
+			}
+			random_known_country = {
+				limit = {
+					OR = {
+						technology_group = ROOT
+						religion_group = ROOT
+						culture_group = ROOT
+						alliance_with = ROOT
+					}
+					NOT = { war_with = ROOT }
+					has_opinion = {
+						who = ROOT
+						value = 0
+					}
+					NOT = { has_country_flag = world_tour_target_1 }
+					NOT = { has_country_flag = world_tour_target_2 }
+				}
+				save_event_target_as = world_tour_country_1
+				set_country_flag = world_tour_country_1
+			}
+		}
+		if = {
+			limit = {
+				any_known_country = {
+					limit = {
+						OR = {
+							technology_group = ROOT
+							religion_group = ROOT
+							culture_group = ROOT
+							alliance_with = ROOT
+						}
+					}
+					NOT = {
+						war_with = ROOT
+					}
+					has_opinion = {
+						who = ROOT
+						value = 0
+					}
+					NOT = { has_country_flag = world_tour_target_1 }
+					NOT = { has_country_flag = world_tour_target_2 }
+				}
+			}
+			random_known_country = {
+				limit = {
+					OR = {
+						technology_group = ROOT
+						religion_group = ROOT
+						culture_group = ROOT
+						alliance_with = ROOT
+					}
+					NOT = { war_with = ROOT }
+					has_opinion = {
+						who = ROOT
+						value = 0
+					}
+					NOT = {
+						has_country_flag = world_tour_country_1
+					}
+					NOT = { has_country_flag = world_tour_target_1 }
+					NOT = { has_country_flag = world_tour_target_2 }
+				}
+				save_event_target_as = world_tour_country_2
+				set_country_flag = world_tour_country_2
+			}
+		}
+		if = {
+			limit = {
+				any_known_country = {
+					limit = {
+						OR = {
+							technology_group = ROOT
+							religion_group = ROOT
+							culture_group = ROOT
+							alliance_with = ROOT
+						}
+					}
+					NOT = {
+						war_with = ROOT
+					}
+					has_opinion = {
+						who = ROOT
+						value = 0
+					}
+					NOT = { has_country_flag = world_tour_target_1 }
+					NOT = { has_country_flag = world_tour_target_2 }
+				}
+			}
+			random_known_country = {
+				limit = {
+					OR = {
+						technology_group = ROOT
+						religion_group = ROOT
+						culture_group = ROOT
+						alliance_with = ROOT
+					}
+					NOT = { war_with = ROOT }
+					has_opinion = {
+						who = ROOT
+						value = 0
+					}
+					NOT = {
+						has_country_flag = world_tour_country_1
+					}
+					NOT = {
+						has_country_flag = world_tour_country_2
+					}
+					NOT = { has_country_flag = world_tour_target_1 }
+					NOT = { has_country_flag = world_tour_target_2 }
+				}
+				save_event_target_as = world_tour_country_3
+				set_country_flag = world_tour_country_3
+			}
+		}
+}
