@@ -44,7 +44,7 @@ country_event = {
 	}
 }
 country_event = {
-	id = cato_education_events_education_progress.00002 ###Heir Studies Abroad
+	id = cato_education_events_education_progress.0002 ###Heir Studies Abroad
 	title = cato_education_events_education_progress.0002.title
 	desc = cato_education_events_education_progress.0002.desc
 	picture = ECONOMY_eventPicture
@@ -56,7 +56,7 @@ country_event = {
 	trigger = {
 		has_heir_flag = heir_started_education
 		is_lesser_in_union = no
-		any_ally = {
+		any_ally = { #Must be ally and at least be on tech parity or better
 			NOT = {
 				tech_differnce = 1
 				has_opinion_modifier = {
@@ -238,7 +238,6 @@ country_event = {
 				mil = 4
 			}
 		}
-		add_education_progress_tiny = yes
 		ai_chance = {
 			factor = 1
 		}
@@ -312,7 +311,7 @@ country_event = {
 	}
 	option = {
 		name = cato_education_events_education_progress.0006.b ###Support the Heir
-		add_education_progress_tiny = yes
+		subtract_education_progress_tiny = yes
 		ai_chance = {
 			factor = 1
 		}
