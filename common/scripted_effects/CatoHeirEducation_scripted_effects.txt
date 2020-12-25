@@ -6,11 +6,35 @@ add_education_progress_tiny = {
 		which = heirEducationalLevel
 		value = 5
 	}
+	if = {
+		limit = {
+			check_variable = {
+				which = heirEducationalLevel
+				value = 100
+			}
+		}
+		set_variable = {
+			which = heirEducationalLevel
+			value = 100
+		}
+	}
 }
 add_education_progress_small = {
 	change_variable = {
 		which = heirEducationalLevel
 		value = 10
+	}
+	if = {
+		limit = {
+			check_variable = {
+				which = heirEducationalLevel
+				value = 100
+			}
+		}
+		set_variable = {
+			which = heirEducationalLevel
+			value = 100
+		}
 	}
 }
 add_education_progress_medium = {
@@ -18,17 +42,53 @@ add_education_progress_medium = {
 		which = heirEducationalLevel
 		value = 15
 	}
+	if = {
+		limit = {
+			check_variable = {
+				which = heirEducationalLevel
+				value = 100
+			}
+		}
+		set_variable = {
+			which = heirEducationalLevel
+			value = 100
+		}
+	}
 }
 add_education_progress_large = {
 	change_variable = {
 		which = heirEducationalLevel
 		value = 20
 	}
+	if = {
+		limit = {
+			check_variable = {
+				which = heirEducationalLevel
+				value = 100
+			}
+		}
+		set_variable = {
+			which = heirEducationalLevel
+			value = 100
+		}
+	}
 }
 add_education_progress_huge = {
 	change_variable = {
 		which = heirEducationalLevel
 		value = 25
+	}
+	if = {
+		limit = {
+			check_variable = {
+				which = heirEducationalLevel
+				value = 100
+			}
+		}
+		set_variable = {
+			which = heirEducationalLevel
+			value = 100
+		}
 	}
 }
 subtract_education_progress_tiny = {
