@@ -251,7 +251,7 @@ country_event = {
 			}
 		}
 		ai_chance = {
-			factor = 1
+			factor = 4
 			modifier = {
 				factor = 5
 				ANS = {
@@ -287,7 +287,7 @@ country_event = {
 			}
 		}
 		ai_chance = {
-			factor = 1
+			factor = 5
 		}
 	}
 }
@@ -571,12 +571,6 @@ country_event = {
 			}
 			modifier = {
 				factor = 2
-				BRA = {
-					army_size = WBG
-				}
-			}
-			modifier = {
-				factor = 2
 				WBG = {
 					is_at_war = yes
 				}
@@ -617,7 +611,7 @@ country_event = {
 			}
 		}
 		ai_chance = {
-			factor = 2
+			factor = 3
 		}
 	}
 }

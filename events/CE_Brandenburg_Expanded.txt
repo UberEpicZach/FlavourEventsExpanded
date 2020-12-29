@@ -762,7 +762,7 @@ country_event = {
 	
 	option = {
 		name = CE_brandenburg_expanded.13.a
-		BRA = {
+		FROM = {
 			inherit = MAG
 		}
 		ai_chance = {
@@ -789,7 +789,7 @@ country_event = {
 	option = {
 		name = CE_brandenburg_expanded.13.b
 		ai_chance = {
-			factor = 1
+			factor = 0
 		}
 	}
 }
@@ -2328,7 +2328,7 @@ country_event = {
 	}
 	option = {
 		name = CE_brandenburg_expanded.35.c
-		add_opinion = {
+		reverse_add_opinion = {
 			who = BOH
 			modifier = CE_Conceeded_Territory
 		}
@@ -2472,6 +2472,11 @@ country_event = {
 			tag = BRA
 			tag = PRU
 		}
+		NOT = {
+			RUP = {
+				exists = yes
+			}
+		}
 		is_year = 1535
 		NOT = { is_year = 1545 }
 	}
@@ -2482,18 +2487,23 @@ country_event = {
 		days = 120
 	}
 	immediate = {
-		set_global_flag = CE_BRA_KUS_SPLIT_FLAG
 	}
 
 	option = {
 		name = CE_brandenburg_expanded.39.a
 		custom_tooltip = CE_BRA_BRA_KUS_Release
+		set_global_flag = CE_BRA_KUS_SPLIT_FLAG
 		hidden_effect = {
 			every_owned_province = {
 				limit = {
 					OR = {
 						area = neumark_area
 						area = lusatia_area
+						# area = vorpommern_area 
+						# area = hinter_pommern_area 
+						# area = silesia_area 
+						# area = east_prussia_area 
+						# area = west_prussia_area 
 					}
 					owner = {
 						tag = BRA
@@ -2503,6 +2513,9 @@ country_event = {
 				add_core = RUP
 			}
 			RUP = {
+				PREV = {
+					add_truce_with = PREV
+				}
 				define_ruler = {
 					name = "Johann"
 					dynasty = "Von Hohenzollern"
