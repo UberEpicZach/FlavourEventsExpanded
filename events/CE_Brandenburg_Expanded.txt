@@ -1438,6 +1438,21 @@ country_event = {
 	
 	option = {
 		name = CE_brandenburg_expanded.25.a
+		trigger = {
+			AND = {
+				OR = {
+					BRA = {
+						has_country_flag = United_Duchies_occupied_yes
+					}
+					PRU = {
+						has_country_flag = United_Duchies_occupied_yes
+					}
+				}
+				PAL = {
+					has_country_flag = United_Duchies_occupied_yes
+				}
+			}
+		}
 		set_country_flag = United_Duchies_Negotiations_Divide_yes
 		if = {
 			limit = {
