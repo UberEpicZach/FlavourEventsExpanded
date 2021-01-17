@@ -1281,18 +1281,17 @@ country_event = {
 				modifier = iberia_papal_fraud_uncovered
 			}
 		}
-	every_country = { 
-		limit = {
-		religion = catholic
-		NOT = {
-			tag = ROOT
+		every_country = {
+			limit = {
+				religion = catholic
+				NOT = { tag = ROOT }
+			}
+			country_event = {
+				id = FEE_Iberia_Events.120
+				days = 5
+			}
 		}
-	} 
-		country_event = {
-			id = FEE_Iberia_Events.120
-			days = 5
-	}
-}		add_prestige = 15
+		add_prestige = 15
 		add_reform_desire = 0.05
 		define_advisor = {
 			type = philosopher
@@ -1361,17 +1360,17 @@ country_event = {
 		custom_tooltip = FEE_Iberia_Events.120.tt
 
 		PAP = {
-            add_opinion = {
-                who = ROOT
-                modifier = iberia_papal_fraud_uncovered
-            }
-         }
+			add_opinion = {
+				who = ROOT
+				modifier = iberia_papal_fraud_uncovered
+			}
+		}
 		add_opinion = {
-            who = PAP
-            modifier = iberia_papal_fraud_uncovered
-            }
+			who = PAP
+			modifier = iberia_papal_fraud_uncovered
 		}
 	}
+}
 
 # Juan de Avila
 country_event = {
