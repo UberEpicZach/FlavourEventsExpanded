@@ -1258,6 +1258,7 @@ country_event = {
 	}
 
 	fire_only_once = yes
+	major = yes
 
 	mean_time_to_happen = {
 		months = 24
@@ -1269,11 +1270,17 @@ country_event = {
 		ai_chance = {
 			factor = 33
 		}
+		add_prestige = 15
+		add_reform_desire = 0.05
 		PAP = {
 			add_opinion = {
 				who = ROOT
 				modifier = iberia_papal_fraud_uncovered
 			}
+		}
+		add_opinion = {
+			who = PAP
+			modifier = iberia_papal_fraud_uncovered
 		}
 		emperor = {
 			add_opinion = {
@@ -1281,18 +1288,27 @@ country_event = {
 				modifier = iberia_papal_fraud_uncovered
 			}
 		}
-		every_country = {
-			limit = {
-				religion = catholic
-				NOT = { tag = ROOT }
-			}
-			country_event = {
-				id = FEE_Iberia_Events.120
-				days = 5
+		add_opinion = {
+			who = emperor
+			modifier = iberia_papal_fraud_uncovered
+		}
+		custom_tooltip = FEE_Iberia_Events.12.tt
+		hidden_effect = {
+			every_country = {
+				limit = {
+					religion = catholic
+					NOT = { tag = ROOT }
+				}
+				add_opinion = {
+					who = PAP
+					modifier = iberia_papal_fraud_uncovered
+				}
+				reverse_add_opinion = {
+					who = PAP
+					modifier = iberia_papal_fraud_uncovered
+				}
 			}
 		}
-		add_prestige = 15
-		add_reform_desire = 0.05
 		define_advisor = {
 			type = philosopher
 			name = "Lorenzo Valla"
@@ -1342,32 +1358,6 @@ country_event = {
 		add_country_modifier = {
 			name = iberia_submission_pope
 			duration = 9125
-		}
-	}
-}
-
-# A Papal Fraud
-country_event = {
-	id = FEE_Iberia_Events.120
-	title = FEE_Iberia_Events.120.T
-	desc = FEE_Iberia_Events.120.D
-	picture = CHURCH_ESTATE_1_eventPicture
-
-	is_triggered_only = yes
-
-	option = {
-		name = FEE_Iberia_Events.120.A
-		custom_tooltip = FEE_Iberia_Events.120.tt
-
-		PAP = {
-			add_opinion = {
-				who = ROOT
-				modifier = iberia_papal_fraud_uncovered
-			}
-		}
-		add_opinion = {
-			who = PAP
-			modifier = iberia_papal_fraud_uncovered
 		}
 	}
 }
