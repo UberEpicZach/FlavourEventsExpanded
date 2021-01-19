@@ -232,8 +232,8 @@ country_event = {
 	}
 	option = {
 		name = CE_hungary_expanded.4.b
-		add_legitimacy = -20
-		add_prestige = -25
+		add_legitimacy = -10
+		add_prestige = -15
 		ai_chance = {
 			factor = 1
 			modifier = {
