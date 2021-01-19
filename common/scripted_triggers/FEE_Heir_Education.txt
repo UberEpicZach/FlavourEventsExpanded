@@ -1,0 +1,67 @@
+no_education_trait_ruler = {
+	NOT = { has_ruler_modifier = poor_clerical_education }
+	NOT = { has_ruler_modifier = okay_clerical_education }
+	NOT = { has_ruler_modifier = good_clerical_education }
+	NOT = { has_ruler_modifier = best_clerical_education }
+	NOT = { has_ruler_modifier = poor_administration_education }
+	NOT = { has_ruler_modifier = okay_administration_education }
+	NOT = { has_ruler_modifier = good_administration_education }
+	NOT = { has_ruler_modifier = best_administration_education }
+	NOT = { has_ruler_modifier = poor_scholastic_education }
+	NOT = { has_ruler_modifier = okay_scholastic_education }
+	NOT = { has_ruler_modifier = good_scholastic_education }
+	NOT = { has_ruler_modifier = best_scholastic_education }
+	NOT = { has_ruler_modifier = poor_diplomatic_education }
+	NOT = { has_ruler_modifier = okay_diplomatic_education }
+	NOT = { has_ruler_modifier = good_diplomatic_education }
+	NOT = { has_ruler_modifier = best_diplomatic_education }
+	NOT = { has_ruler_modifier = poor_intrigue_education }
+	NOT = { has_ruler_modifier = okay_intrigue_education }
+	NOT = { has_ruler_modifier = good_intrigue_education }
+	NOT = { has_ruler_modifier = best_intrigue_education }
+	NOT = { has_ruler_modifier = poor_trade_education }
+	NOT = { has_ruler_modifier = okay_trade_education }
+	NOT = { has_ruler_modifier = good_trade_education }
+	NOT = { has_ruler_modifier = best_trade_education }
+	NOT = { has_ruler_modifier = poor_martial_education }
+	NOT = { has_ruler_modifier = okay_martial_education }
+	NOT = { has_ruler_modifier = good_martial_education }
+	NOT = { has_ruler_modifier = best_martial_education }
+	NOT = { has_ruler_modifier = poor_naval_education }
+	NOT = { has_ruler_modifier = okay_naval_education }
+	NOT = { has_ruler_modifier = good_naval_education }
+	NOT = { has_ruler_modifier = best_naval_education }
+	NOT = { has_ruler_modifier = poor_logistics_education }
+	NOT = { has_ruler_modifier = okay_logistics_education }
+	NOT = { has_ruler_modifier = good_logistics_education }
+	NOT = { has_ruler_modifier = best_logistics_education }
+}
+government_does_not_use_hereditary_heir = {
+	OR = {
+		AND = {
+			government = republic
+		}
+		AND = {
+			government = theocracy
+			NOT = {
+				OR = {
+					has_reform = ajuraan_theocracy_reform
+					has_reform = dynastic_theocracy_reform
+				}
+			}
+		}
+		has_reform = states_general_reform
+		has_reform = mamluk_government
+		has_reform = elective_monarchy
+		has_reform = crown_of_saint_wenceslaus
+		has_reform = empire_of_japan_reform
+		has_reform = rum_eagle_reform
+		has_reform = 
+	}
+}
+ruler_available = {
+
+}
+heir_available = {
+
+}
