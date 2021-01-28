@@ -12,22 +12,604 @@ namespace = cato_education_events_education_progress
 ### General Events
 ############
 country_event = {
-	id = cato_education_events_education_progress.0001 ###Heir Studies Hard
+	id = cato_education_events_education_progress.0001 ###The AI randomly selects an event to give you
 	title = cato_education_events_education_progress.0001.title
 	desc = cato_education_events_education_progress.0001.desc
 	picture = ECONOMY_eventPicture
 	
-	mean_time_to_happen = {
-		months = 84 ### 7 years
-		modifier = {
-			factor = 0.5 ### 3.5 years if heir picks a category
-			has_heir_flag = heir_chose_education_category
-		}
-		modifier = {
-			factor = 0.75 ### 5.25 years if heir picks subcategory
-			has_heir_flag = heir_chose_education_category
+	is_triggered_only = yes
+	hidden = yes
+	trigger = {
+		has_heir_flag = heir_started_education
+		is_lesser_in_union = no
+	}
+	immediate = {
+		country_event = {
+			id = cato_education_events_education_progress.0001
+			days = 120
 		}
 	}
+	
+	
+	option = { ###Send heir to study abroad
+		name = cato_education_events_education_progress.0001.a
+		trigger = {
+			any_ally = { #Must be ally and at least be on tech parity or better
+				NOT = {
+					tech_differnce = 1
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = he_opinion_tutoring_heir
+					}
+				}
+			}
+		}
+		country_event = {
+			id = cato_education_events_education_progress.0002
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = { ###Heir Lacks interest in subject
+		name = cato_education_events_education_progress.0001.a
+		trigger = { 
+			NOT = {
+				has_heir_flag = heir_chose_education_category
+			}
+		}
+		country_event = {
+			id = cato_education_events_education_progress.0003
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				modifier = {
+					factor = 0.25
+					has_heir_flag = heir_chose_education_subcategory
+				}
+			}
+		}
+	}
+	option = {###Heir struggles to comprehend material
+		name = cato_education_events_education_progress.0004.a
+		trigger = {
+			if = {
+				limit = {
+					has_heir_flag = started_admin_education
+				}
+				NOT = {
+					heir_adm = 3
+				}
+			}
+			if = {
+				limit = {
+					has_heir_flag = started_dip_education
+				}
+				NOT = {
+					heir_dip = 3
+				}
+			}
+			if = {
+				limit = {
+					has_heir_flag = started_mil_education
+				}
+				NOT = {
+					heir_mil = 3
+				}
+			}
+		}
+		country_event = {
+			id = cato_education_events_education_progress.0004
+		}
+		ai_chance = {
+			factor = 1
+				modifier = {
+				factor = 4
+				AND = {
+					has_heir_flag = started_admin_education
+					NOT = { heir_adm = 1} 
+				}
+			}
+			modifier = {
+				factor = 4
+				AND = {
+					has_heir_flag = started_dip_education
+					NOT = { heir_dip = 1} 
+				}
+			}
+			modifier = {
+				factor = 4
+				AND = {
+					has_heir_flag = started_mil_education
+					NOT = { heir_mil = 1} 
+				}
+			}
+		}
+	}
+	option = {###Heir Making Progress
+		name = cato_education_events_education_progress.0005.a
+		country_event = {
+			id = cato_education_events_education_progress.0005
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.25
+				AND = {
+					has_heir_flag = started_admin_education
+					heir_adm = 5
+				}
+			}
+			modifier = {
+				factor = 1.25
+				AND = {
+					has_heir_flag = started_dip_education
+					heir_dip = 5
+				}
+			}
+			modifier = {
+				factor = 1.25
+				AND = {
+					has_heir_flag = started_mil_education
+					heir_mil = 5
+				}
+			}
+		}
+	}
+	option = { ###Heir studies hard
+		name = cato_education_events_education_progress.0005.a
+		country_event = {
+			id = cato_education_events_education_progress.0007
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.5
+				has_heir_flag = heir_chose_education_subcategory
+			}
+			modifier = {
+				factor = 2
+				has_heir_flag = heir_chose_education_category
+			}
+		}
+	}
+	option = { ###Heir fights with tutor
+		name = cato_education_events_education_progress.0006.a
+		country_event = {
+			id = cato_education_events_education_progress.0006
+		}
+		ai_chance = {
+			factor = 1
+			
+		}
+	}
+	############
+	### Clerical Events
+	############
+	option = { ###Has an religious or humanist ideas
+		name = cato_education_events_education_progress.0005.a
+		trigger = {
+			has_heir_flag = clerical_education
+			OR = {
+				has_idea_group = religious_ideas
+				has_idea_group = humanist_ideas
+			}
+		}
+		country_event = {
+			id = cato_education_events_education_progress.1000
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = { ###Has religious building in capital
+		name = cato_education_events_education_progress.0005.a
+		trigger = {
+			has_heir_flag = clerical_education
+			capital_scope = {
+				OR = {
+					has_building = temple
+					has_building = cathedral
+				}
+			}
+		}
+		country_event = {
+			id = cato_education_events_education_progress.1001
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = { ###Has inquisitor or theologian
+		name = cato_education_events_education_progress.0005.a
+		trigger = {
+			has_heir_flag = clerical_education
+			OR = {
+				advisor = theologian
+				advisor = inquisitor
+			}
+		}
+		country_event = {
+			id = cato_education_events_education_progress.1002
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	############
+	### Administrative Events
+	############
+	option = { ###Has economic, expansion, or administrative ideas
+		name = cato_education_events_education_progress.0005.a
+		trigger = {
+			has_heir_flag = administrative_education
+			OR = {
+				has_idea_group = economic_ideas
+				has_idea_group = administrative_ideas
+				has_idea_group = expansion_ideas
+			}
+		}
+		country_event = {
+			id = cato_education_events_education_progress.2000
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = { ###Has courthouse or townhall in capital
+		name = cato_education_events_education_progress.0005.a
+		trigger = {
+			has_heir_flag = administrative_education
+			capital_scope = {
+				OR = {
+					has_building = courthouse
+					has_building = townhall
+				}
+			}
+		}
+		country_event = {
+			id = cato_education_events_education_progress.2001
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = { ###Has treasurer or master of mint 
+		name = cato_education_events_education_progress.0005.a
+		trigger = {
+			has_heir_flag = administrative_education
+			OR = {
+				advisor = treasurer
+				advisor = master_of_mint
+			}
+		}
+		country_event = {
+			id = cato_education_events_education_progress.2002
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	############
+	### Scholastic Events
+	############
+	option = { ###Has Innovative Ideas 
+		name = cato_education_events_education_progress.0005.a
+		trigger = {
+			has_heir_flag = scholastic_education
+			has_idea_group = innovative_ideas
+		}
+		country_event = {
+			id = cato_education_events_education_progress.3000
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = { ###Has university in capital
+		name = cato_education_events_education_progress.0005.a
+		trigger = {
+			has_heir_flag = scholastic_education
+			capital_scope = {
+				has_building = university
+			}
+		}
+		country_event = {
+			id = cato_education_events_education_progress.3001
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = { ###Has Natural Scientist or Philosopher 
+		name = cato_education_events_education_progress.0005.a
+		trigger = {
+			has_heir_flag = scholastic_education
+			OR = {
+				advisor = natural_scientist
+				advisor = philosopher
+			}
+		}
+		country_event = {
+			id = cato_education_events_education_progress.3002
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	############
+	### Diplomatic Events
+	############
+	option = { ###Has diplomatic or influence ideas
+		name = cato_education_events_education_progress.0005.a
+		trigger = {
+			has_heir_flag = diplomacy_education
+			OR = {
+				has_idea_group = diplomatic_ideas
+				has_idea_group = influence_ideas
+			}
+		}
+		country_event = {
+			id = cato_education_events_education_progress.4000
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = { ###Has Diplomat or Statesman
+		name = cato_education_events_education_progress.0005.a
+		trigger = {
+			has_heir_flag = diplomacy_education
+			OR = {
+				advisor = diplomat
+				advisor = statesman
+			}
+		}
+		country_event = {
+			id = cato_education_events_education_progress.4001
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	############
+	### Intrigue Events
+	############
+	option = { ###Has espionage ideas 
+		name = cato_education_events_education_progress.0005.a
+		trigger = {
+			has_heir_flag = intrigue_education
+			has_idea_group = spy_ideas
+		}
+		country_event = {
+			id = cato_education_events_education_progress.5000
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = { ###Has spymaster
+		name = cato_education_events_education_progress.0005.a
+		trigger = {
+			has_heir_flag = intrigue_education
+			advisor = spymaster
+		}
+		country_event = {
+			id = cato_education_events_education_progress.5001
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	############
+	### Trade Events
+	############
+	option = { ###Has trade, economic, or maritime ideas
+		name = cato_education_events_education_progress.0005.a
+		trigger = {
+			has_heir_flag = trade_education
+			OR = {
+				has_idea_group = trade_ideas
+				has_idea_group = economic_ideas
+				has_idea_group = maritime_ideas
+			}
+		}
+		country_event = {
+			id = cato_education_events_education_progress.6000
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = { ###Has marketplace, trade depot, or stock exchange in capital
+		name = cato_education_events_education_progress.0005.a
+		trigger = {
+			has_heir_flag = trade_education
+			capital_scope = {
+				OR = {
+					has_building = marketplace
+					has_building = trade_depot
+					has_building = stock_exchange
+				}
+			}
+		}
+		country_event = {
+			id = cato_education_events_education_progress.6001
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = { ###Has trader
+		name = cato_education_events_education_progress.0005.a
+		trigger = {
+			has_heir_flag = trade_education
+			advisor = trader
+		}
+		country_event = {
+			id = cato_education_events_education_progress.6002
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	############
+	### Martial/Logistics Events
+	############
+	option = { ###Has either Quality, Quantity, offensive, defensive, aristocratic, or plutocratic ideas
+		name = cato_education_events_education_progress.0005.a
+		trigger = {
+			OR = {
+				has_heir_flag = martial_education
+				has_heir_flag = logistics_education
+			}
+			OR = {
+				has_idea_group = quality_ideas
+				has_idea_group = quantity_ideas
+				has_idea_group = offensive_ideas
+				has_idea_group = defensive_ideas
+				has_idea_group = aristocratic_ideas
+				has_idea_group = plutocratic_ideas
+			}
+		}
+		country_event = {
+			id = cato_education_events_education_progress.7000
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = { ###Has a military building or fort in the capital
+		name = cato_education_events_education_progress.0005.a
+		trigger = {
+			OR = {
+				has_heir_flag = martial_education
+				has_heir_flag = logistics_education
+			}
+			capital_scope = {
+				OR = {
+					has_building = barracks
+					has_building = training_field
+					has_building = regimental_camp
+					has_building = conscription_center
+					has_building = fort_15th
+					has_building = fort_16th
+					has_building = fort_17th
+					has_building = fort_18th
+				}
+			}
+		}
+		country_event = {
+			id = cato_education_events_education_progress.7001
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = { ###Has commandant, army reformer, or recuirting captain
+		name = cato_education_events_education_progress.0005.a
+		trigger = {
+			has_heir_flag = martial_education
+			OR = {
+				advisor = commandant
+				advisor = army_reformer
+				advisor = recruitmaster
+			}
+		}
+		country_event = {
+			id = cato_education_events_education_progress.7002
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = { ###Has quartermaster, grand captain, army organizer, or fortification expert
+		name = cato_education_events_education_progress.0005.a
+		trigger = {
+			has_heir_flag = logistics_education
+			OR = {
+				advisor = quartermaster
+				advisor = grand_captain
+				advisor = army_organiser
+				advisor = fortification_expert
+			}
+		}
+		country_event = {
+			id = cato_education_events_education_progress.7003
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	############
+	### Naval Events
+	############
+	option = { ###Has naval, maritime, aristocratic, plutocratic, or exploration ideas
+		name = cato_education_events_education_progress.0005.a
+		trigger = {
+			has_heir_flag = naval_education
+			OR = {
+				has_idea_group = naval_ideas
+				has_idea_group = maritime_ideas
+				has_idea_group = aristocratic_ideas
+				has_idea_group = plutocratic_ideas
+				has_idea_group = exploration_ideas
+			}
+		}
+		country_event = {
+			id = cato_education_events_education_progress.8000
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = { ###Has shipyard, grand shipyard, dock, drydock, coastal battery, or naval battery
+		name = cato_education_events_education_progress.0005.a
+		trigger = {
+			has_heir_flag = naval_education
+			capital_scope = {
+				OR = {
+					has_building = shipyard
+					has_building = grand_shipyard
+					has_building = dock
+					has_building = drydock
+					has_building = coastal_battery
+					has_building = naval_battery
+				}
+			}
+		}
+		country_event = {
+			id = cato_education_events_education_progress.8001
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = { ###Has navigator or naval reformer
+		name = cato_education_events_education_progress.0005.a
+		trigger = {
+			has_heir_flag = naval_education
+			OR = {
+				advisor = navigator
+				advisor = naval_reformer
+			}
+		}
+		country_event = {
+			id = cato_education_events_education_progress.8002
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {
+	id = cato_education_events_education_progress.0007 ###Heir Studies Hard
+	title = cato_education_events_education_progress.0001.title
+	desc = cato_education_events_education_progress.0001.desc
+	picture = ECONOMY_eventPicture
+	
+	is_triggered_only = yes
 	
 	trigger = {
 		has_heir_flag = heir_started_education
@@ -49,9 +631,7 @@ country_event = {
 	desc = cato_education_events_education_progress.0002.desc
 	picture = ECONOMY_eventPicture
 	
-	mean_time_to_happen = {
-		months = 60 ### 5 years
-	}
+	is_triggered_only = yes
 	
 	trigger = {
 		has_heir_flag = heir_started_education
@@ -97,13 +677,7 @@ country_event = {
 	desc = cato_education_events_education_progress.0003.desc
 	picture = ECONOMY_eventPicture
 	
-	mean_time_to_happen = {
-		months = 96 ### 8 years
-		modifier = {
-			factor = 4
-			has_heir_flag = heir_chose_education_subcategory
-		}
-	}
+	is_triggered_only = yes
 	
 	trigger = {
 		has_heir_flag = heir_started_education
@@ -128,30 +702,7 @@ country_event = {
 	desc = cato_education_events_education_progress.0004.desc
 	picture = ECONOMY_eventPicture
 	
-	mean_time_to_happen = {
-		months = 96 ### 8 years
-		modifier = {
-			factor = 0.25
-			AND = {
-				has_heir_flag = started_admin_education
-				NOT = { heir_adm = 1} 
-			}
-		}
-		modifier = {
-			factor = 0.25
-			AND = {
-				has_heir_flag = started_dip_education
-				NOT = { heir_dip = 1} 
-			}
-		}
-		modifier = {
-			factor = 0.25
-			AND = {
-				has_heir_flag = started_mil_education
-				NOT = { heir_mil = 1} 
-			}
-		}
-	}
+	is_triggered_only = yes
 	
 	trigger = {
 		has_heir_flag = heir_started_education
@@ -248,30 +799,7 @@ country_event = {
 	title = cato_education_events_education_progress.0005.title
 	desc = cato_education_events_education_progress.0005.desc
 	picture = ECONOMY_eventPicture
-	mean_time_to_happen = {
-		months = 48 ### 4 years
-		modifier = {
-			factor = 0.75
-			AND = {
-				has_heir_flag = started_admin_education
-				heir_adm = 5
-			}
-		}
-		modifier = {
-			factor = 0.75
-			AND = {
-				has_heir_flag = started_dip_education
-				heir_dip = 5
-			}
-		}
-		modifier = {
-			factor = 0.75
-			AND = {
-				has_heir_flag = started_mil_education
-				heir_mil = 5
-			}
-		}
-	}
+	is_triggered_only = yes
 	
 	trigger = {
 		has_heir_flag = heir_started_education
@@ -292,9 +820,7 @@ country_event = {
 	title = cato_education_events_education_progress.0006.title
 	desc = cato_education_events_education_progress.0006.desc
 	picture = ECONOMY_eventPicture
-	mean_time_to_happen = {
-		months = 96 ### 8 years
-	}
+	is_triggered_only = yes
 	
 	trigger = {
 		has_heir_flag = heir_started_education
@@ -350,15 +876,13 @@ country_event = {
 	desc = cato_education_events_education_progress.1000.desc
 	picture = ECONOMY_eventPicture
 	
-	mean_time_to_happen = {
-		months = 6
-	}
+	is_triggered_only = yes
 	
 	trigger = {
 		has_heir_flag = clerical_education
 		is_lesser_in_union = no
 		has_heir_flag = heir_started_education
-		NOT = { has_heir_flag = education_idea_group_bonus }
+		
 		OR = {
 			has_idea_group = religious_ideas
 			has_idea_group = humanist_ideas
@@ -381,9 +905,7 @@ country_event = {
 	desc = cato_education_events_education_progress.1001.desc
 	picture = ECONOMY_eventPicture
 	
-	mean_time_to_happen = {
-		months = 1
-	}
+	is_triggered_only = yes
 	
 	trigger = {
 		has_heir_flag = clerical_education
@@ -395,13 +917,13 @@ country_event = {
 				has_building = cathedral
 			}
 		}
-		OR = {
-			NOT = { has_heir_flag = education_building_bonus_large }
-			AND = {
-				has_heir_flag = education_building_bonus_small
-				capital_scope = { has_building = cathedral }
-			}
-		}
+		###OR = {
+		###	NOT = { has_heir_flag = education_building_bonus_large }
+		###	AND = {
+		###		has_heir_flag = education_building_bonus_small
+		###		capital_scope = { has_building = cathedral }
+		###	}
+		###}
 	}
 	
 	
@@ -443,67 +965,13 @@ country_event = {
 	desc = cato_education_events_education_progress.1002.desc
 	picture = ECONOMY_eventPicture
 	
-	mean_time_to_happen = {
-		months = 48
-		modifier = {
-			factor = 0.9
-			AND = {
-				OR = {
-					theologian = 2
-					inquisitor = 2
-				}
-				NOT = {
-					OR = {
-						theologian = 3
-						inquisitor = 3
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 0.8
-			AND = {
-				OR = {
-					theologian = 3
-					inquisitor = 3
-				}
-				NOT = {
-					OR = {
-						theologian = 4
-						inquisitor = 4
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = .7
-			AND = {
-				OR = {
-					theologian = 4
-					inquisitor = 4
-				}
-				NOT = {
-					OR = {
-						theologian = 5
-						inquisitor = 5
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 0.6
-			OR = {
-				theologian = 5
-				inquisitor = 5
-			}
-		}
-	}
+	is_triggered_only = yes
 	
 	trigger = {
 		has_heir_flag = clerical_education
 		is_lesser_in_union = no
 		has_heir_flag = heir_started_education
-		NOT = { has_heir_flag = education_advisor_bonus }
+		
 		OR = {
 			advisor = theologian
 			advisor = inquisitor
@@ -513,7 +981,7 @@ country_event = {
 	
 	option = {
 		name = cato_education_events_education_progress.1002.a
-		###set_heir_flag = education_advisor_bonus
+		
 		add_education_progress_medium = yes
 		ai_chance = {
 			factor = 1
@@ -529,9 +997,7 @@ country_event = {
 	desc = cato_education_events_education_progress.2000.desc
 	picture = ECONOMY_eventPicture
 	
-	mean_time_to_happen = {
-		months = 48
-	}
+	is_triggered_only = yes
 	
 	trigger = {
 		has_heir_flag = administrative_education
@@ -559,21 +1025,13 @@ country_event = {
 	desc = cato_education_events_education_progress.2001.desc
 	picture = ECONOMY_eventPicture
 	
-	mean_time_to_happen = {
-		months = 48
-		modifier = {
-			factor = 0.5
-			capital_scope = {
-				has_building = townhall
-			}
-		}
-	}
+	is_triggered_only = yes
 	
 	trigger = {
 		has_heir_flag = administrative_education
 		is_lesser_in_union = no
 		has_heir_flag = heir_started_education
-		NOT = { has_heir_flag = education_building_bonus }
+		
 		capital_scope = {
 			OR = {
 				has_building = courthouse
@@ -597,47 +1055,17 @@ country_event = {
 	desc = cato_education_events_education_progress.2002.desc
 	picture = ECONOMY_eventPicture
 	
-	mean_time_to_happen = {
-		months = 48
-		modifier = {
-			factor = 0.9
-			AND = {
-				treasurer = 2
-				NOT = {
-					treasurer = 3
-				}
-			}
-		}
-		modifier = {
-			factor = 0.8
-			AND = {
-				treasurer = 3
-				NOT = {
-					treasurer = 4
-				}
-			}
-		}
-		modifier = {
-			factor = .7
-			AND = {
-				treasurer = 4
-				NOT = {
-					treasurer = 5
-				}
-			}
-		}
-		modifier = {
-			factor = 0.6
-			treasurer = 5
-		}
-	}
+	is_triggered_only = yes
 	
 	trigger = {
 		has_heir_flag = administrative_education
 		is_lesser_in_union = no
 		has_heir_flag = heir_started_education
-		NOT = { has_heir_flag = education_advisor_bonus }
-		advisor = treasurer
+		
+		OR = {
+			advisor = treasurer
+			advisor = master_of_mint
+		}
 	}
 	
 	
@@ -659,9 +1087,7 @@ country_event = {
 	desc = cato_education_events_education_progress.3000.desc
 	picture = ECONOMY_eventPicture
 	
-	mean_time_to_happen = {
-		months = 48
-	}
+	is_triggered_only = yes
 	
 	trigger = {
 		has_heir_flag = scholastic_education
@@ -685,15 +1111,12 @@ country_event = {
 	desc = cato_education_events_education_progress.3001.desc
 	picture = ECONOMY_eventPicture
 	
-	mean_time_to_happen = {
-		months = 48
-	}
+	is_triggered_only = yes
 	
 	trigger = {
 		has_heir_flag = scholastic_education
 		is_lesser_in_union = no
 		has_heir_flag = heir_started_education
-		NOT = { has_heir_flag = education_building_bonus }
 		capital_scope = {
 			has_building = university
 		}
@@ -714,67 +1137,13 @@ country_event = {
 	desc = cato_education_events_education_progress.3002.desc
 	picture = ECONOMY_eventPicture
 	
-	mean_time_to_happen = {
-		months = 48
-		modifier = {
-			factor = 0.9
-			AND = {
-				OR = {
-					natural_scientist = 2
-					philosopher = 2
-				}
-				NOT = {
-					OR = {
-						natural_scientist = 3
-						philosopher = 3
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 0.8
-			AND = {
-				OR = {
-					natural_scientist = 3
-					philosopher = 3
-				}
-				NOT = {
-					OR = {
-						natural_scientist = 4
-						philosopher = 4
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = .7
-			AND = {
-				OR = {
-					natural_scientist = 4
-					philosopher = 4
-				}
-				NOT = {
-					OR = {
-						natural_scientist = 5
-						philosopher = 5
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 0.6
-			OR = {
-				natural_scientist = 5
-				philosopher = 5
-			}
-		}
-	}
+	is_triggered_only = yes
 	
 	trigger = {
 		has_heir_flag = scholastic_education
 		is_lesser_in_union = no
 		has_heir_flag = heir_started_education
-		NOT = { has_heir_flag = education_advisor_bonus }
+		
 		OR = {
 			advisor = natural_scientist
 			advisor = philosopher
@@ -784,7 +1153,7 @@ country_event = {
 	
 	option = {
 		name = cato_education_events_education_progress.3002.a
-		###set_heir_flag = education_advisor_bonus
+		
 		add_education_progress_medium = yes
 		ai_chance = {
 			factor = 1
@@ -800,9 +1169,7 @@ country_event = {
 	desc = cato_education_events_education_progress.4000.desc
 	picture = ECONOMY_eventPicture
 	
-	mean_time_to_happen = {
-		months = 48
-	}
+	is_triggered_only = yes
 	
 	trigger = {
 		has_heir_flag = diplomacy_education
@@ -829,67 +1196,13 @@ country_event = {
 	desc = cato_education_events_education_progress.4001.desc
 	picture = ECONOMY_eventPicture
 	
-	mean_time_to_happen = {
-		months = 48
-		modifier = {
-			factor = 0.9
-			AND = {
-				OR = {
-					diplomat = 2
-					statesman = 2
-				}
-				NOT = {
-					OR = {
-						diplomat = 3
-						statesman = 3
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 0.8
-			AND = {
-				OR = {
-					diplomat = 3
-					statesman = 3
-				}
-				NOT = {
-					OR = {
-						diplomat = 4
-						statesman = 5
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = .7
-			AND = {
-				OR = {
-					diplomat = 4
-					statesman = 4
-				}
-				NOT = {
-					OR = {
-						diplomat = 5
-						statesman = 5
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 0.6
-			OR = {
-				diplomat = 5
-				statesman = 5
-			}
-		}
-	}
+	is_triggered_only = yes
 	
 	trigger = {
 		has_heir_flag = diplomacy_education
 		is_lesser_in_union = no
 		has_heir_flag = heir_started_education
-		NOT = { has_heir_flag = education_advisor_bonus }
+		
 		OR = {
 			advisor = diplomat
 			advisor = statesman
@@ -899,7 +1212,7 @@ country_event = {
 	
 	option = {
 		name = cato_education_events_education_progress.4001.a
-		###set_heir_flag = education_advisor_bonus
+		
 		add_education_progress_medium = yes
 		ai_chance = {
 			factor = 1
@@ -915,9 +1228,7 @@ country_event = {
 	desc = cato_education_events_education_progress.5000.desc
 	picture = ECONOMY_eventPicture
 	
-	mean_time_to_happen = {
-		months = 48
-	}
+	is_triggered_only = yes
 	
 	trigger = {
 		has_heir_flag = intrigue_education
@@ -941,53 +1252,19 @@ country_event = {
 	desc = cato_education_events_education_progress.5001.desc
 	picture = ECONOMY_eventPicture
 	
-	mean_time_to_happen = {
-		months = 48
-		modifier = {
-			factor = 0.9
-			AND = {
-				spymaster = 2
-				NOT = {
-					spymaster = 3
-				}
-			}
-		}
-		modifier = {
-			factor = 0.8
-			AND = {
-				spymaster = 3
-				NOT = {
-					spymaster = 4
-				}
-			}
-		}
-		modifier = {
-			factor = .7
-			AND = {
-				spymaster = 4
-				NOT = {
-					spymaster = 5
-				}
-			}
-		}
-		modifier = {
-			factor = 0.6
-			spymaster = 5
-		}
-	}
+	is_triggered_only = yes
 	
 	trigger = {
 		has_heir_flag = intrigue_education
 		is_lesser_in_union = no
 		has_heir_flag = heir_started_education
-		NOT = { has_heir_flag = education_advisor_bonus }
 		advisor = spymaster
 	}
 	
 	
 	option = {
 		name = cato_education_events_education_progress.5001.a
-		###set_heir_flag = education_advisor_bonus
+		
 		add_education_progress_medium = yes
 		ai_chance = {
 			factor = 1
@@ -1003,9 +1280,7 @@ country_event = {
 	desc = cato_education_events_education_progress.6000.desc
 	picture = ECONOMY_eventPicture
 	
-	mean_time_to_happen = {
-		months = 48
-	}
+	is_triggered_only = yes
 	
 	trigger = {
 		has_heir_flag = trade_education
@@ -1033,30 +1308,12 @@ country_event = {
 	desc = cato_education_events_education_progress.6001.desc
 	picture = ECONOMY_eventPicture
 	
-	mean_time_to_happen = {
-		months = 48
-		modifier = {
-			factor = 0.75
-			capital_scope = {
-				has_building = trade_depot
-			}
-		}
-		modifier = {
-			factor = 0.5
-			capital_scope = {
-				has_building = stock_exchange
-			}
-		}
-	}
+	is_triggered_only = yes
 	
 	trigger = {
 		has_heir_flag = trade_education
 		is_lesser_in_union = no
 		has_heir_flag = heir_started_education
-		NOT = {
-			has_heir_flag = heir_finished_education
-		}
-		NOT = { has_heir_flag = education_building_bonus }
 		capital_scope = {
 			OR = {
 				has_building = marketplace
@@ -1081,53 +1338,18 @@ country_event = {
 	desc = cato_education_events_education_progress.6002.desc
 	picture = ECONOMY_eventPicture
 	
-	mean_time_to_happen = {
-		months = 48
-		modifier = {
-			factor = 0.9
-			AND = {
-				trader = 2
-				NOT = {
-					trader = 3
-				}
-			}
-		}
-		modifier = {
-			factor = 0.8
-			AND = {
-				trader = 3
-				NOT = {
-					trader = 3
-				}
-			}
-		}
-		modifier = {
-			factor = .7
-			AND = {
-				trader = 4
-				NOT = {
-					trader = 4
-				}
-			}
-		}
-		modifier = {
-			factor = 0.6
-			trader = 5
-		}
-	}
+	is_triggered_only = yes
 	
 	trigger = {
 		has_heir_flag = trade_education
 		is_lesser_in_union = no
 		has_heir_flag = heir_started_education
-		NOT = { has_heir_flag = education_advisor_bonus }
 		advisor = trader
 	}
 	
 	
 	option = {
 		name = cato_education_events_education_progress.6002.a
-		###set_heir_flag = education_advisor_bonus
 		add_education_progress_medium = yes
 		ai_chance = {
 			factor = 1
@@ -1143,9 +1365,7 @@ country_event = {
 	desc = cato_education_events_education_progress.7000.desc
 	picture = ECONOMY_eventPicture
 	
-	mean_time_to_happen = {
-		months = 48
-	}
+	is_triggered_only = yes
 	
 	trigger = {
 		OR = {
@@ -1179,12 +1399,7 @@ country_event = {
 	desc = cato_education_events_education_progress.7001.desc
 	picture = ECONOMY_eventPicture
 	
-	mean_time_to_happen = {
-		months = 48
-		modifier = {
-			factor = 0.5
-		}
-	}
+	is_triggered_only = yes
 	
 	trigger = {
 		OR = {
@@ -1193,7 +1408,7 @@ country_event = {
 		}
 		is_lesser_in_union = no
 		has_heir_flag = heir_started_education
-		NOT = { has_heir_flag = education_building_bonus }
+		
 		capital_scope = {
 			OR = {
 				has_building = barracks
@@ -1223,74 +1438,12 @@ country_event = {
 	desc = cato_education_events_education_progress.7002.desc
 	picture = ECONOMY_eventPicture
 	
-	mean_time_to_happen = {
-		months = 48
-		modifier = {
-			factor = 0.9
-			AND = {
-				OR = {
-					commandant = 2
-					army_reformer = 2
-					recruitmaster = 2
-				}
-				NOT = {
-					OR = {
-						commandant = 3
-						army_reformer = 3
-						recruitmaster = 3
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 0.8
-			AND = {
-				OR = {
-					commandant = 3
-					army_reformer = 3
-					recruitmaster = 3
-				}
-				NOT = {
-					OR = {
-						commandant = 4
-						army_reformer = 4
-						recruitmaster = 4
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = .7
-			AND = {
-				OR = {
-					commandant = 4
-					army_reformer = 4
-					recruitmaster = 4
-				}
-				NOT = {
-					OR = {
-						commandant = 5
-						army_reformer = 5
-						recruitmaster = 5
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 0.6
-			OR = {
-				commandant = 5
-				army_reformer = 5
-				recruitmaster = 5
-			}
-		}
-	}
+	is_triggered_only = yes
 	
 	trigger = {
 		has_heir_flag = martial_education
 		is_lesser_in_union = no
 		has_heir_flag = heir_started_education
-		NOT = { has_heir_flag = education_advisor_bonus }
 		OR = {
 			advisor = commandant
 			advisor = army_reformer
@@ -1300,8 +1453,7 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_education_progress.35.a
-		###set_heir_flag = education_advisor_bonus
+		name = cato_education_events_education_progress.7002.a
 		add_education_progress_medium = yes
 		ai_chance = {
 			factor = 1
@@ -1314,81 +1466,12 @@ country_event = {
 	desc = cato_education_events_education_progress.7003.desc
 	picture = ECONOMY_eventPicture
 	
-	mean_time_to_happen = {
-		months = 48
-		modifier = {
-			factor = 0.9
-			AND = {
-				OR = {
-					quartermaster = 2
-					grand_captain = 2
-					army_organiser = 2
-					fortification_expert = 2
-				}
-				NOT = {
-					OR = {
-						quartermaster = 3
-						grand_captain = 3
-						army_organiser = 3
-						fortification_expert = 3
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 0.8
-			AND = {
-				OR = {
-					quartermaster = 3
-					grand_captain = 3
-					army_organiser = 3
-					fortification_expert = 3
-				}
-				NOT = {
-					OR = {
-						quartermaster = 4
-						grand_captain = 4
-						army_organiser = 4
-						fortification_expert = 4
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = .7
-			AND = {
-				OR = {
-					quartermaster = 4
-					grand_captain = 4
-					army_organiser = 4
-					fortification_expert = 4
-				}
-				NOT = {
-					OR = {
-						quartermaster = 5
-						grand_captain = 5
-						army_organiser = 5
-						fortification_expert = 5
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 0.6
-			OR = {
-				quartermaster = 5
-				grand_captain = 5
-				army_organiser = 5
-				fortification_expert = 5
-			}
-		}
-	}
+	is_triggered_only = yes
 	
 	trigger = {
 		has_heir_flag = logistics_education
 		is_lesser_in_union = no
 		has_heir_flag = heir_started_education
-		NOT = { has_heir_flag = education_advisor_bonus }
 		OR = {
 			advisor = quartermaster
 			advisor = grand_captain
@@ -1400,7 +1483,7 @@ country_event = {
 	
 	option = {
 		name = cato_education_events_education_progress.7003.a
-		###set_heir_flag = education_advisor_bonus
+		
 		add_education_progress_medium = yes
 		ai_chance = {
 			factor = 1
@@ -1416,9 +1499,7 @@ country_event = {
 	desc = cato_education_events_education_progress.8000.desc
 	picture = ECONOMY_eventPicture
 	
-	mean_time_to_happen = {
-		months = 48
-	}
+	is_triggered_only = yes
 	
 	trigger = {
 		has_heir_flag = naval_education
@@ -1448,18 +1529,12 @@ country_event = {
 	desc = cato_education_events_education_progress.8001.desc
 	picture = ECONOMY_eventPicture
 	
-	mean_time_to_happen = {
-		months = 48
-		modifier = {
-			factor = 0.5
-		}
-	}
+	is_triggered_only = yes
 	
 	trigger = {
 		has_heir_flag = naval_education
 		is_lesser_in_union = no
 		has_heir_flag = heir_started_education
-		NOT = { has_heir_flag = education_building_bonus }
 		capital_scope = {
 			OR = {
 				has_building = shipyard
@@ -1487,67 +1562,12 @@ country_event = {
 	desc = cato_education_events_education_progress.8002.desc
 	picture = ECONOMY_eventPicture
 	
-	mean_time_to_happen = {
-		months = 48
-		modifier = {
-			factor = 0.9
-			AND = {
-				OR = {
-					navigator = 2
-					naval_reformer = 2
-				}
-				NOT = {
-					OR = {
-						navigator = 3
-						naval_reformer = 3
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 0.8
-			AND = {
-				OR = {
-					navigator = 3
-					naval_reformer = 3
-				}
-				NOT = {
-					OR = {
-						navigator = 4
-						naval_reformer = 4
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = .7
-			AND = {
-				OR = {
-					navigator = 4
-					naval_reformer = 4
-				}
-				NOT = {
-					OR = {
-						navigator = 5
-						naval_reformer = 5
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 0.6
-			OR = {
-				navigator = 5
-				naval_reformer = 5
-			}
-		}
-	}
+	is_triggered_only = yes
 	
 	trigger = {
 		has_heir_flag = naval_education
 		is_lesser_in_union = no
 		has_heir_flag = heir_started_education
-		NOT = { has_heir_flag = education_advisor_bonus }
 		OR = {
 			advisor = navigator
 			advisor = naval_reformer
@@ -1557,7 +1577,7 @@ country_event = {
 	
 	option = {
 		name = cato_education_events_education_progress.8002.a
-		###set_heir_flag = education_advisor_bonus
+		
 		add_education_progress_medium = yes
 		ai_chance = {
 			factor = 1
