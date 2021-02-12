@@ -708,6 +708,9 @@ country_event = {
 				}
 			}
 		}
+		any_owned_province = {
+			area = catalonia_area
+		}
 		current_age = age_of_absolutism
 		catalonia_area = {
 			NOT = { has_province_modifier = iberia_institutions_respected }
