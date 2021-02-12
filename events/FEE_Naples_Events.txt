@@ -659,7 +659,7 @@ country_event = {
 	option = {
 		name = FEE_Naples_Events.10.OPT1
 
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		add_country_modifier = {
 			name = nap_twenty_years_prosperity
 			duration = 7300
@@ -722,7 +722,7 @@ country_event = {
 	option = {
 		name = FEE_Naples_Events.11.OPT1
 
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		add_country_modifier = {
 			name = nap_twenty_years_prosperity
 			duration = 7300
@@ -1244,7 +1244,7 @@ country_event = {
 
 	option = {
 		name = FEE_Naples_Events.15.OPT1
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		add_splendor = 50
 		add_adm_power = 50
 		change_estate_land_share = {
@@ -1275,7 +1275,7 @@ country_event = {
 	option = {
 		name = FEE_Naples_Events.16.OPT1
 
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		custom_tooltip = NAPLES_TWENTY_YEARS_PROSPERITY
 		add_estate_loyalty_modifier = {
 			estate = estate_nobles

@@ -1,0 +1,23 @@
+fee_france_interfered = {
+	opinion = -20
+	yearly_decay = 1
+}
+fee_france_successfull = {
+	opinion = 10
+	yearly_decay = 1
+}
+fee_france_local = {
+	opinion = -20
+	yearly_decay = 1
+}
+fee_france_provincialism_opinion = {
+	opinion = 20
+	yearly_decay = 1
+}
+#name_of_modifier = {
+#	opinion = 1
+#	min = -15			# optional
+#	max = 15			# optional
+#	yearly_decay = 5	# optional
+#	months = 10			# optional
+#}

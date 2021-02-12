@@ -1,0 +1,508 @@
+name_space = FEE_France_Events
+
+country_event = {
+	id = FEE_France_Events.0
+	title = FEE_France_Events.0.T
+	desc = FEE_France_Events.0.D
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	fire_only_once = yes
+	hidden = yes
+
+	trigger = {
+		is_in_war = {
+			attacker_leader = ENG
+			defender_leader = FRA
+			casus_belli = cb_restore_personal_union
+		}
+	}
+
+	immediate = {
+		set_global_flag = fee_surrender_main
+	}
+
+	option = {
+		name = FEE_France_Events.0.OPT1
+	}
+}
+
+#French Feudalism and the Hundred Years’ War
+country_event = {
+	id = FEE_France_Events.1
+	title = FEE_France_Events.1.T
+	desc = FEE_France_Events.1.D
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	fire_only_once = yes
+	trigger = {
+		has_global_flag = fee_surrender_main
+		NOT = { is_year = 1454 }
+		tag = FRA
+		is_at_war = no
+		calc_true_if = {
+			amount = 2
+			all_subject_country = {
+				capital_scope = {
+					region = france_region
+				}
+			}
+		}
+		has_estate_privilege = estate_nobles_french_strong_duchies
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = fee_french_feudalism_hundred_years_war
+		}
+	}
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	option = {
+		name = FEE_France_Events.1.OPT1
+		ai_chance = {
+			factor = 33
+		}
+
+		set_country_flag = french_centralization
+		add_adm_power = -100
+		add_prestige = 20
+		add_country_modifier = {
+			name = fee_france_administrative_unificaiton
+			duration = 18250
+		}
+		every_subject_country = {
+			country_event = {
+				id = FEE_France_Events.4
+			}
+		}
+	}
+
+	option = {
+		name = FEE_France_Events.1.OPT2
+		ai_chance = {
+			factor = 33
+		}
+
+		set_country_flag = french_centralization
+		add_country_modifier = {
+			name = fee_france_feudal_militaries
+			duration = 18250
+		}
+		if = {
+			limit = {
+				is_expanded_mod_active = { mod = governments }
+			}
+			set_estate_privilege = estate_nobles_blood_tax
+		}
+		else = {
+			if = {
+				limit = {
+					num_of_subjects = 1
+				}
+				add_country_modifier = {
+					name = fee_france_blood_tax
+					duration = 18250
+				}
+			}
+			else_if = {
+				limit = { num_of_subjects = 2 }
+				add_country_modifier = {
+					name = fee_france_blood_tax2
+					duration = 18250
+				}
+			}
+			else_if = {
+				limit = { num_of_subjects = 3 }
+				add_country_modifier = {
+					name = fee_france_blood_tax3
+					duration = 18250
+				}
+			}
+			else_if = {
+				limit = { num_of_subjects = 4 }
+				add_country_modifier = {
+					name = fee_france_blood_tax4
+					duration = 18250
+				}
+			}
+			else_if = {
+				limit = { num_of_subjects = 5 }
+				add_country_modifier = {
+					name = fee_france_blood_tax5
+					duration = 18250
+				}
+			}
+		}
+		every_subject_country = {
+			country_event = {
+				id = FEE_France_Events.4
+			}
+		}
+	}
+
+	option = {
+		name = FEE_France_Events.1.OPT3
+		ai_chance = {
+			factor = 33
+		}
+
+		set_country_flag = french_decentralization
+		add_stability_or_adm_power = yes
+		add_country_modifier = {
+			name = fee_france_decentralization
+			duration = 18250
+		}
+	}
+}
+
+country_event = {
+	id = FEE_France_Events.2
+	title = FEE_France_Events.2.T
+	desc = FEE_France_Events.2.D
+	picture = UNIVERSITY_eventPicture
+	
+	fire_only_once = yes
+	trigger = {
+		has_country_flag = french_centralization
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = FEE_France_Events.2.OPT1
+		ai_chance = {
+			factor = 33
+		}
+		
+		random_list = {
+			40 = {
+				random_owned_province = {
+					limit = {
+						is_core = ROOT
+					}
+					spawn_rebels = {
+						size = 2
+						type = particularist_rebels
+					}
+					spawn_rebels = {
+						size = 2
+						type = particularist_rebels
+					}
+				}
+				every_subject_country = {
+					add_opinion = {
+						who = ROOT
+						modifier = fee_france_interfered
+					}
+				}
+				add_estate_burghers_loyalty_effect = yes
+				add_estate_church_loyalty_effect = yes
+				add_estate_nobles_loyalty_effect = yes
+			}
+			40 = {
+				add_country_modifier = {
+					name = fee_france_legal_reform
+					duration = 10950
+				}
+				change_government_reform_progress = 30
+			}
+			20 = {
+				add_adm_power = 100
+				custom_tooltip = AUTONOMY_TT
+				hidden_effect = {
+					every_core_province = {
+						add_local_autonomy = -5
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_France_Events.2.OPT2
+		ai_chance = {
+			factor = 33
+		}
+		
+		random_list = {
+			40 = {
+				add_country_modifier = {
+					name = fee_france_friendly_legal_class
+					duration = 14600
+				}
+			}
+			40 = {
+				add_prestige = -20
+			}
+			20 = {
+				add_stability_or_adm_power = yes
+			}
+		}
+	}
+
+	option = {
+		name = FEE_France_Events.2.OPT3
+		ai_chance = {
+			factor = 33
+		}
+		highlight = yes
+		trigger = {
+			if = {
+				limit = { has_dlc = "Rights of Man" }
+				OR = {
+					ruler_has_personality = just_personality
+					ruler_has_personality = lawgiver_personality
+					ruler_has_personality = benevolent_personality
+					ruler_has_personality = scholar_personality
+				}
+			}
+			else = {
+				OR = {
+					influence_ideas = 3
+					diplomatic_ideas = 3
+				}
+			}
+		}
+
+		add_stability_or_adm_power = yes
+		add_country_modifier = {
+			name = fee_france_friendly_legal_class
+			duration = 14600
+		}
+		every_subject_country = {
+			add_opinion = {
+				who = ROOT
+				modifier = fee_france_successfull
+			}
+		}
+	}
+}
+
+#Regional Identities in France
+country_event = {
+	id = FEE_France_Events.3
+	title = FEE_France_Events.3.T
+	desc = FEE_France_Events.3.D
+	picture = CULTURE_eventPicture
+
+	fire_only_once = yes
+	trigger = {
+		tag = FRA
+		has_global_flag = fee_french_feudalism_hundred_years_war
+		NOT = { is_year = 1500 }
+	}
+
+	mean_time_to_happen = {
+		months = 36
+	}
+
+	option = {
+		name = FEE_France_Events.3.OPT1
+
+		if = {
+			limit = {
+				NOT = { has_country_flag = french_centralization }
+			}
+			set_country_flag = french_centralization
+		}
+		add_country_modifier = {
+			name = fee_france_cultural_unification_effort
+			duration = 18250
+		}
+		every_subject_country = {
+			add_liberty_desire = 10
+		}
+		every_subject_country = {
+			if = {
+				limit = {
+					NOT = { culture = cosmopolitan_french }
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = fee_france_local
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_France_Events.3.OPT2
+
+		add_stability_or_adm_power = yes
+		add_country_modifier = {
+			name = fee_france_provincialism
+			duration = 91250
+		}
+
+		every_country = {
+			limit = {
+				capital_scope = {
+					region = france_region
+				}
+				NOT = { culture = cosmopolitan_french }
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = fee_france_provincialism_opinion
+			}
+		}
+	}
+}
+
+#
+country_event = {
+	id = FEE_France_Events.4
+	title = FEE_France_Events.4.T
+	desc = FEE_France_Events.4.D
+	picture = FARMING_eventPicture
+
+	fire_only_once = yes
+	trigger = {
+		tag = NAP
+	}
+
+	mean_time_to_happen = {
+		days = 60
+	}
+
+	option = {
+		name = FEE_France_Events.4.OPT1
+
+	}
+}
+
+#
+country_event = {
+	id = FEE_France_Events.5
+	title = FEE_France_Events.5.T
+	desc = FEE_France_Events.5.D
+	picture = FARMING_eventPicture
+
+	fire_only_once = yes
+	trigger = {
+		tag = NAP
+	}
+
+	mean_time_to_happen = {
+		days = 60
+	}
+
+	option = {
+		name = FEE_France_Events.5.OPT1
+
+	}
+}
+
+#
+country_event = {
+	id = FEE_France_Events.6
+	title = FEE_France_Events.6.T
+	desc = FEE_France_Events.6.D
+	picture = FARMING_eventPicture
+
+	fire_only_once = yes
+	trigger = {
+		tag = NAP
+	}
+
+	mean_time_to_happen = {
+		days = 60
+	}
+
+	option = {
+		name = FEE_France_Events.6.OPT1
+
+	}
+}
+
+#
+country_event = {
+	id = FEE_France_Events.7
+	title = FEE_France_Events.7.T
+	desc = FEE_France_Events.7.D
+	picture = FARMING_eventPicture
+
+	fire_only_once = yes
+	trigger = {
+		tag = NAP
+	}
+
+	mean_time_to_happen = {
+		days = 60
+	}
+
+	option = {
+		name = FEE_France_Events.7.OPT1
+
+	}
+}
+
+#
+country_event = {
+	id = FEE_France_Events.8
+	title = FEE_France_Events.8.T
+	desc = FEE_France_Events.8.D
+	picture = FARMING_eventPicture
+
+	fire_only_once = yes
+	trigger = {
+		tag = NAP
+	}
+
+	mean_time_to_happen = {
+		days = 60
+	}
+
+	option = {
+		name = FEE_France_Events.8.OPT1
+
+	}
+}
+
+#
+country_event = {
+	id = FEE_France_Events.9
+	title = FEE_France_Events.9.T
+	desc = FEE_France_Events.9.D
+	picture = FARMING_eventPicture
+
+	fire_only_once = yes
+	trigger = {
+		tag = NAP
+	}
+
+	mean_time_to_happen = {
+		days = 60
+	}
+
+	option = {
+		name = FEE_France_Events.9.OPT1
+
+	}
+}
+
+#
+country_event = {
+	id = FEE_France_Events.10
+	title = FEE_France_Events.10.T
+	desc = FEE_France_Events.10.D
+	picture = FARMING_eventPicture
+
+	fire_only_once = yes
+	trigger = {
+		tag = NAP
+	}
+
+	mean_time_to_happen = {
+		days = 60
+	}
+
+	option = {
+		name = FEE_France_Events.10.OPT1
+
+	}
+}

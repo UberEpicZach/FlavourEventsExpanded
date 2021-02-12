@@ -1,0 +1,52 @@
+﻿l_english:
+ FEE_France_Events.01.T: "This is a hidden event"
+ FEE_France_Events.01.D: "You should not be able to see this one, if it has happened contact the creator of the mod Flavour and Events Expanded"
+ FEE_France_Events.01.OPT1: "Blame Zach"
+
+ FEE_France_Events.1.T: "French Feudalism and the Hundred Years’ War"
+ FEE_France_Events.1.D: "In many of its aspects the institution of feudalism that defined medieval European life had its origins in France. During the 11th century, however, the “French Feudal Revolution” gave French feudalism a bewildering complexity that existed nowhere else in Europe, as holdings got broken down into ever smaller parts under the emergent classes of seigneurs and castellons. Some regions, such as Toulouse, were brought to heal, but most regions remained largely ruled by small powers with little control from Paris. \n\nThe agony of the Hundred Years’ War only increased the confusion, as allegiances between the various vassals fluctuated between the Valois and Plantagenet claimants to the throne. The expense of the war left France unable to enforce feudal obligations on several more prominent vassals, but also underlined the need for centralization to mount an effective defense against foreign aggression. To truly centralize France, however, centuries of tradition, laws, and feudal contracts would, sooner or later, need to be disregarded or destroyed…"
+ FEE_France_Events.1.OPT1: "We must centralize the Kingdom of France!"
+ FEE_France_Events.1.OPT2: "We should remind our vassals of their military obligations!"
+ FEE_France_Events.1.OPT3: "France is too vast to govern, we must preserve the feudal system!"
+
+ FEE_France_Events.2.T: "Law Courts and Parlements"
+ FEE_France_Events.2.D: "Power in France does not solely lie with the nobility, who exercise varying levels of independence from Paris. The rising class of lawyers, themselves centered in Paris, conduct much of the administration of the country with little oversight by the monarchy. Due to the inadequate road system, the further away from Paris the courts are, the less they tend to listen to the king. A properly unified administration of the nation must, of course, start here."
+ FEE_France_Events.2.OPT1: "We shall reign them in by any means necessary!"
+ FEE_France_Events.2.OPT2: "Let us seek to reason with them: perhaps they will help us on their own"
+ FEE_France_Events.2.OPT3: "§GLet the King Himself negotiate with these men§!"
+
+ FEE_France_Events.3.T: "Regional Identities in France"
+ FEE_France_Events.3.D: "France in the early modern period was a vast and populous land: by some measures the largest and most populous realm in the Western World, and certainly the largest to be claimed by one hereditary monarch, as opposed to the elective monarchy of the more populous but divided Holy Roman Empire. Despite the greater political unity, people in the various regions of France clung to their local identities rather than considering themselves Frenchmen, especially further away from the capital."
+ FEE_France_Events.3.OPT1: "It is time we create a France for the French! "
+ FEE_France_Events.3.OPT2: "Let the provincials be themselves, I don’t care"
+
+ FEE_France_Events.4.T: "Paris Seeks Control"
+
+ #Estate Modifeirs
+ 
+
+ #Event Modifiers
+ fee_france_administrative_unificaiton: "Administrative Unification"
+ fee_france_feudal_militaries: "Feudal Militaries"
+ fee_france_decentralization: "Decentralization"
+ fee_france_blood_tax: "Blood Tax"
+ fee_france_blood_tax2: "Blood Tax"
+ fee_france_blood_tax3: "Blood Tax"
+ fee_france_blood_tax4: "Blood Tax"
+ fee_france_blood_tax5: "Blood Tax"
+ fee_france_legal_reform: "Legal Reform"
+ fee_france_friendly_legal_class: "Friendly Legal Class"
+ fee_france_cultural_unification_effort: "Cultural Unification Effort"
+ fee_france_provincionalism: "Provincialism"
+
+ #Opinion Modifiers
+ fee_france_interfered: "Interfered with Local Custom"
+ fee_france_successfull: "Successfull Negotiations"
+ fee_france_provincialism_opinion: "Provincialism"
+
+ #Trade Modifiers
+ fee_year_without_summer: "Year Without a Summer"
+
+ #Tooltips
+ FATE_OF_France_TT: "Upon death of René I de Valois, France will enter a personal union under France"
+ AUTONOMY_TT: "Lose §G-5.00%§! Local Autonomy in §YEvery Owned Cored Province§!"
