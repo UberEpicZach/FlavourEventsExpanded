@@ -5,7 +5,9 @@ country_event = {
 	id = FEE_Greek_Events.1
 	title = FEE_Greek_Events.1.T
 	desc = FEE_Greek_Events.1.D
-	picture = CIVIL_WAR_eventPicture
+	picture = SOLDIER_INFIGHTING_eventPicture
+
+	fire_only_once = yes
 
 	trigger = {
 		culture_group = byzantine 
@@ -21,9 +23,6 @@ country_event = {
 				culture_group = scandinavian
 				alliance_with = ROOT
 			}
-		}
-		NOT = {
-			has_country_flag = fee_enlisted_variags
 		}
 	}
 
@@ -51,7 +50,7 @@ country_event = {
 			trait = master_of_arms_personality
 		}
 
-		add_country_modifier = {
+		add_ruler_modifier = {
 			name = FEE_greek_varangian
 			duration = -1
 		}
