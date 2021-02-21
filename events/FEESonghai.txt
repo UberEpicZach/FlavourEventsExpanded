@@ -80,12 +80,19 @@ country_event = {
 			MIL = 5
 		}
 	}
+	
+	immediate = {
+		set_country_flag = askia_dynasty_mission_flag
+	}
 
 	option = {
 		name = fee_SON.2.a
 		ai_chance = {
 			factor = 85
 		}
+		
+		set_country_flag = askia_made_ruler_flag
+		
 		add_country_modifier = {
 			name = ruler_deposed
 			duration = -1
