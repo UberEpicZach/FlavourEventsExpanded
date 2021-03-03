@@ -14,6 +14,10 @@ fee_france_provincialism_opinion = {
 	opinion = 20
 	yearly_decay = 1
 }
+fee_redid_joan_trial = {
+	opinion = -50
+	yearly_decay = 1
+}
 #name_of_modifier = {
 #	opinion = 1
 #	min = -15			# optional

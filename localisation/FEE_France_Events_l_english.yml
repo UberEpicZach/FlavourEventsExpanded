@@ -21,6 +21,10 @@
  FEE_France_Events.3.OPT2: "Let the provincials be themselves, I don’t care"
 
  FEE_France_Events.4.T: "Paris Seeks Control"
+ 
+ FEE_France_Events.11.T: "Re-Trial of Jeanne D'Arc"
+ FEE_France_Events.11.D: "In the year 1429, the Hundred years war was still raging on. With much of Northern France under the Anglo-Burgundian alliance, France was in a weak position. That same year, a peasant girl named Jeanne D'Arc, instructed by voices of angels, went into the royal court of Chinon where king Charles VII, along with many military leaders, to Orleans in order to defeat the English. In the ensuing battle, she earned the nickname 'Maid of Orleans'. Later on in her life, she helped the king be crowned at Reims, and led an unsuccessful attack to reclaim the city of Paris. In the year 1431, she was captured by the Burgundians who sold her to the English, and she was trialed and executed in the city of Rouen.\n\nNow, with the support of the Pope, the university of Paris, and the city of Rouen at our hand, the trial has been re-done, with over 115 witnesses testifying of the maid's purity. This will eliminate any claims that the kingdom was reclaim using a sorceress, thus removing any threats of undermining our legitimacy."
+ FEE_France_Events.11.OPT1: "The English fops have been beaten once again."
 
  #Estate Modifeirs
  
@@ -43,6 +47,7 @@
  fee_france_interfered: "Interfered with Local Custom"
  fee_france_successfull: "Successfull Negotiations"
  fee_france_provincialism_opinion: "Provincialism"
+ fee_redid_joan_trial: "Re-Trial of Jeanne D'Arc"
 
  #Trade Modifiers
  fee_year_without_summer: "Year Without a Summer"
