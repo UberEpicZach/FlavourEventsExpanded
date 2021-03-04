@@ -1,0 +1,137 @@
+namespace = FEE_Historical_Friends
+	#Uber
+
+
+#Weather
+country_event = {
+	id = FEE_Historical_Friends.1
+	title = FEE_Historical_Friends.1.
+	desc = FEE_Historical_Friends.1.d
+	picture = CITY_VIEW_eventPicture
+	hidden = yes
+	fire_only_once = yes
+
+	trigger = {
+		any_country = {
+			OR = {
+				AND = {
+					alliance_with = ROOT
+					ROOT = {
+						NOT = { has_country_flag = allied_with_@PREV }
+					}
+				}
+				AND = {
+					NOT = { alliance_with = ROOT }
+					ROOT = {
+						has_country_flag = allied_with_@PREV
+					}
+				}
+			}
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						AND = {
+							alliance_with = ROOT
+							ROOT = {
+								NOT = { has_country_flag = allied_with_@PREV }
+							}
+						}
+						AND = {
+							NOT = { alliance_with = ROOT }
+							ROOT = {
+								has_country_flag = allied_with_@PREV
+							}
+						}
+					}
+				}
+				if = {
+					limit = {
+						alliance_with = ROOT
+					}
+					ROOT = {
+						set_country_flag = allied_with_@PREV
+					}
+				}
+				else = {
+					ROOT = {
+						clr_country_flag = allied_with_@PREV
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Historical_Friends.1.a
+	
+	}
+}
+
+country_event = {
+	id = FEE_Historical_Friends.2
+	title = FEE_Historical_Friends.2.T
+	desc = FEE_Historical_Friends.2.T
+	picture = CITY_VIEW_eventPicture
+	hidden = yes
+	fire_only_once = yes
+
+	trigger = {
+		any_ally = {
+			has_country_flag = allied_with_@PREV
+			had_country_flag = { flag = allied_with_@PREV days = 36500 }
+			OR = {
+				NOT = { historical_friend_with = ROOT }
+				ROOT = {
+					NOT = { historical_friend_with = PREV }
+				}
+			}
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			random_ally = {
+				limit = {
+					has_country_flag = allied_with_@PREV
+					had_country_flag = { flag = allied_with_@PREV days = 36500 }
+				}
+				save_event_target_as = historical_ally
+			}
+		}
+	}
+	
+	option = { #Friends
+		name = FEE_Historical_Friends.2.OPT1
+		
+		event_target:historical_ally = {
+			add_historical_friend = ROOT
+			ROOT = { add_historical_friend = PREV }
+
+			add_trust = {
+				who = ROOT
+				value = 30
+				mutual = yes
+			}
+		}
+	}
+
+	option = {
+		name =  FEE_Historical_Friends.2.OPT2 #I Kinda want his shit actually
+		
+		event_target:historical_ally = {
+			add_opinion = {
+				who = ROOT
+				modifier = FEE_rejected_historical_alliance
+			}
+		}
+		
+		break_alliance_with = { who = event_target:historical_ally }
+
+		add_stability = -2
+	}
+}

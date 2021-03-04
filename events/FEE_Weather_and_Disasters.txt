@@ -1,0 +1,2757 @@
+namespace = FEE_Weather_and_Disasters.txt
+	#Uber
+
+#Earthquake 1
+province_event = {
+	id = FEE_Weather_and_Disasters.2
+	title = "FEE_Weather_and_Disasters.2.T"
+	desc = "FEE_Weather_and_Disasters.2.D"
+	picture = panic
+	major = yes
+	
+	trigger = { 
+		OR = {
+			#RED AND YELLOW REGIONS
+			region = cascadia_region
+			region = california_region
+			region = mexico_region
+			region = central_america_region
+			region = colombia_region
+			region = peru_region
+			region = upper_peru_region
+			region = la_plata_region 
+			region = carribeans_region
+			region = iberia_region
+			region = italy_region
+			region = balkan_region
+			region = anatolia_region
+			region = mashriq_region
+			region = tibet_region
+			region = persia_region
+			region = khorasan_region
+			region = caucasia_region
+			region = mongolia_region
+			region = north_china_region
+			region = burma_region
+			region = japan_region
+			region = moluccas_region
+			region = malaya_region
+			region = oceanea_region
+			region = tibet_region
+			region = khorasan_region
+			area = east_java_area
+			area = central_java_area
+			area = west_java_area
+			area = lesser_sunda_islands_area
+			region = guinea_region
+			region = central_africa_region
+			#JUST GREEN
+			area = tripolitania_area
+			area = djerba_area
+			area = kabylia_area
+			area = barbary_coast_area
+			area = algiers_area
+			area = northern_morocco_area
+			region = france_region
+			region = south_german_region
+			region = british_isles_region
+			region = carpathia_region
+			region = canada_region
+			region = northeast_america_region
+			region = southeast_america_region
+			region = mississippi_region
+			region = scandinavia_region
+			region = low_countries_region
+		
+		}
+		NOT = {
+			any_province = { has_province_modifier = earthquake }
+		}
+		
+	}
+	
+	mean_time_to_happen = {
+		months = 4600000
+			#America's, 1.4
+			modifier = {
+				factor = 1.4
+				region = cascadia_region
+			}
+			modifier = {
+				factor = 1.4
+				region = california_region
+			}
+			modifier = {
+				factor = 1.4
+				region = mexico_region
+			}
+			modifier = {
+				factor = 1.4
+				region = central_america_region
+			}
+			modifier = {
+				factor = 1.4
+				region = colombia_region
+			}
+			modifier = {
+				factor = 1.4
+				region = peru_region
+			}
+			modifier = {
+				factor = 1.4
+				region = upper_peru_region
+			}
+			modifier = {
+				factor = 1.4
+				region = la_plata_region
+			}
+			modifier = {
+				factor = 1.4
+				region = carribeans_region
+			}
+			modifier = {
+				factor = 1.4
+				region = upper_peru_region
+			}
+
+			#Eurasia
+			modifier = {
+				factor = 1.0
+				region = italy_region
+			}
+			modifier = {
+				factor = 1.2
+				region = balkan_region
+			}
+			modifier = {
+				factor = 1.5
+				region = anatolia_region
+			}
+			modifier = {
+				factor = 1.4
+				region = mashriq_region
+			}
+			modifier = {
+				factor = 2.0
+				region = tibet_region
+			}
+			modifier = {
+				factor = 1.8
+				region = persia_region
+			}
+			modifier = {
+				factor = 1.9
+				region = khorasan_region
+			}
+			modifier = {
+				factor = 1.4
+				region = caucasia_region
+			}
+			modifier = {
+				factor = 1.9
+				region = burma_region
+			}
+			modifier = {
+				factor = 1.6
+				region = japan_region
+			}
+			modifier = {
+				factor = 1.9
+				region = moluccas_region
+			}
+			modifier = {
+				factor = 1.8
+				region = malaya_region
+			}
+
+			modifier = {
+				factor = 1.8
+				area = east_java_area
+			}
+
+			modifier = {
+				factor = 1.8
+				area = central_java_area
+			}
+
+			modifier = {
+				factor = 1.8
+				area = west_java_area
+			}
+			modifier = {
+				factor = 1.6
+				region = japan_region
+			}
+			modifier = {
+				factor = 1.6
+				region = japan_region
+			}
+			modifier = {
+				factor = 1.6
+				region = japan_region
+			}
+
+			modifier = {
+				factor = 0.85
+				area = apulia_area
+			}
+			modifier = {
+				factor = 0.85
+				area = campania_area
+			}
+			modifier = {
+				factor = 0.85
+				area = lucania_area
+			}
+			modifier = {
+				factor = 1.2
+				region = canaan_region
+			}
+			modifier = {
+				factor = 0.8
+				region = mare_aegaeum_islands_region
+			}
+			modifier = {
+				factor = 0.9
+				region = asia_minor
+			}
+			modifier = {
+				factor = 0.8
+				region = armenia_region
+			}
+			
+	}
+
+	
+	immediate = {
+		random_list = {
+			30 = { #Richter Scale 4#
+				if = {
+					limit = {
+						base_tax = 1
+					}
+					add_base_tax = -1
+				}
+				
+				if = {
+					limit = { has_building = marketplace }
+						random = {
+							chance = 16
+							remove_building = marketplace
+						}
+				}
+				if = {
+					limit = { has_building = workshop }
+						random = {
+							chance = 16
+							remove_building = workshop
+						}
+				}
+				if = {
+					limit = { has_building = temple }
+						random = {
+							chance = 16
+							remove_building = temple
+						}
+				}
+				if = {
+					limit = { has_building = barracks }
+						random = {
+							chance = 16
+							remove_building = barracks
+						}
+				}
+				if = {
+					limit = { has_building = shipyard }
+						random = {
+							chance = 16
+							remove_building = shipyard
+						}
+				}
+				if = {
+					limit = { has_building = fort_15th }
+						random = {
+							chance = 16
+							remove_building = fort_15th
+						}
+				}
+				if = {
+					limit = { has_building = coastal_defence }
+						random = {
+							chance = 16
+							remove_building = coastal_defence
+						}
+				}
+				if = {
+					limit = { has_building = courthouse }
+						random = {
+							chance = 16
+							remove_building = courthouse
+						}
+				}
+				if = {
+					limit = { has_building = dock }
+						random = {
+							chance = 16
+							remove_building = dock
+						}
+				}
+				if = {
+					limit = { has_building = regimental_camp }
+						random = {
+							chance = 16
+							remove_building = regimental_camp
+						}
+				}
+				if = {
+					limit = { has_building = fort_16th }
+						random = {
+							chance = 16
+							remove_building = fort_16th
+						}
+				}
+				if = {
+					limit = { has_building = naval_battery }
+						random = {
+							chance = 16
+							remove_building = naval_battery
+						}
+				}
+				if = {
+					limit = { has_building = cathedral }
+						random = {
+							chance = 16
+							remove_building = cathedral
+						}
+				}
+				if = {
+					limit = { has_building = university }
+						random = {
+							chance = 16
+							remove_building = university
+						}
+				}
+				if = {
+					limit = { has_building = trade_depot }
+						random = {
+							chance = 16
+							remove_building = trade_depot
+						}
+				}
+				if = {
+					limit = { has_building = grand_shipyard }
+						random = {
+							chance = 16
+							remove_building = grand_shipyard
+						}
+				}
+				if = {
+					limit = { has_building = training_fields }
+						random = {
+							chance = 16
+							remove_building = training_fields
+						}
+				}
+				if = {
+					limit = { has_building = fort_17th }
+						random = {
+							chance = 16
+							remove_building = fort_17th
+						}
+				}
+				if = {
+					limit = { has_building = stock_exchange }
+						random = {
+							chance = 16
+							remove_building = stock_exchange
+						}
+				}
+				if = {
+					limit = { has_building = counting_house }
+						random = {
+							chance = 16
+							remove_building = counting_house
+						}
+				}
+				if = {
+					limit = { has_building = town_hall }
+						random = {
+							chance = 16
+							remove_building = town_hall
+						}
+				}
+				if = {
+					limit = { has_building = drydock }
+						random = {
+							chance = 16
+							remove_building = drydock
+						}
+				}
+				if = {
+					limit = { has_building = conscription_center }
+						random = {
+							chance = 16
+							remove_building = conscription_center
+						}
+				}
+				if = {
+					limit = { has_building = fort_18th }
+						random = {
+							chance = 16
+							remove_building = fort_18th
+						}
+				}
+				#if = {
+				#	limit = { has_building = manufactory }
+				#		random = {
+				#			chance = 16
+				#			remove_building = manufactory
+				#		}
+				#}
+				if = {
+					limit = { has_building = wharf }
+						random = {
+							chance = 16
+							remove_building = wharf
+						}
+				}
+				if = {
+					limit = { has_building = weapons }
+						random = {
+							chance = 16
+							remove_building = weapons
+						}
+				}
+				if = {
+					limit = { has_building = textile }
+						random = {
+							chance = 16
+							remove_building = textile
+						}
+				}
+				if = {
+					limit = { has_building = plantations }
+						random = {
+							chance = 16
+							remove_building = plantations
+						}
+				}
+				if = {
+					limit = { has_building = tradecompany }
+						random = {
+							chance = 16
+							remove_building = tradecompany
+						}
+				}
+				if = {
+					limit = { has_building = farm_estate }
+						random = {
+							chance = 16
+							remove_building = farm_estate
+						}
+				}
+				if = {
+					limit = { has_building = mills }
+						random = {
+							chance = 16
+							remove_building = mills
+						}
+				}
+				if = {
+					limit = { has_building = furnace }
+						random = {
+							chance = 16
+							remove_building = furnace
+						}
+				}
+				if = {
+					limit = { has_building = ramparts }
+						random = {
+							chance = 16
+							remove_building = ramparts
+						}
+				}
+				if = {
+					limit = { has_building = soldier_households }
+						random = {
+							chance = 16
+							remove_building = soldier_households
+						}
+				}
+				if = {
+					limit = { has_building = impressment_offices }
+						random = {
+							chance = 16
+							remove_building = impressment_offices
+						}
+				}
+				if = {
+					limit = { has_building = state_house }
+						random = {
+							chance = 16
+							remove_building = state_house
+						}
+				}
+				hidden_effect = { add_devastation = 5 }
+				
+				add_province_modifier = {
+					name = "earthquake_4"
+					duration = 730
+				}
+	
+				every_neighbor_province = {
+					hidden_effect = { add_devastation = 3 }
+					add_province_modifier = {
+						name = "earthquake_4"
+						duration = 730
+					}	
+				} 
+			}
+			26 = { #Richter Scale 5# 
+				if = {
+					limit = {
+						base_tax = 1
+						base_production = 1
+					}
+					add_base_production = -1
+					add_base_tax = -1
+				}
+				
+				if = {
+					limit = { has_building = marketplace }
+						random = {
+							chance = 19
+							remove_building = marketplace
+						}
+				}
+				if = {
+					limit = { has_building = workshop }
+						random = {
+							chance = 19
+							remove_building = workshop
+						}
+				}
+				if = {
+					limit = { has_building = temple }
+						random = {
+							chance = 19
+							remove_building = temple
+						}
+				}
+				if = {
+					limit = { has_building = barracks }
+						random = {
+							chance = 19
+							remove_building = barracks
+						}
+				}
+				if = {
+					limit = { has_building = shipyard }
+						random = {
+							chance = 19
+							remove_building = shipyard
+						}
+				}
+				if = {
+					limit = { has_building = fort_15th }
+						random = {
+							chance = 19
+							remove_building = fort_15th
+						}
+				}
+				if = {
+					limit = { has_building = coastal_defence }
+						random = {
+							chance = 19
+							remove_building = coastal_defence
+						}
+				}
+				if = {
+					limit = { has_building = courthouse }
+						random = {
+							chance = 19
+							remove_building = courthouse
+						}
+				}
+				if = {
+					limit = { has_building = dock }
+						random = {
+							chance = 19
+							remove_building = dock
+						}
+				}
+				if = {
+					limit = { has_building = regimental_camp }
+						random = {
+							chance = 19
+							remove_building = regimental_camp
+						}
+				}
+				if = {
+					limit = { has_building = fort_16th }
+						random = {
+							chance = 19
+							remove_building = fort_16th
+						}
+				}
+				if = {
+					limit = { has_building = naval_battery }
+						random = {
+							chance = 19
+							remove_building = naval_battery
+						}
+				}
+				if = {
+					limit = { has_building = cathedral }
+						random = {
+							chance = 19
+							remove_building = cathedral
+						}
+				}
+				if = {
+					limit = { has_building = university }
+						random = {
+							chance = 19
+							remove_building = university
+						}
+				}
+				if = {
+					limit = { has_building = trade_depot }
+						random = {
+							chance = 19
+							remove_building = trade_depot
+						}
+				}
+				if = {
+					limit = { has_building = grand_shipyard }
+						random = {
+							chance = 19
+							remove_building = grand_shipyard
+						}
+				}
+				if = {
+					limit = { has_building = training_fields }
+						random = {
+							chance = 19
+							remove_building = training_fields
+						}
+				}
+				if = {
+					limit = { has_building = fort_17th }
+						random = {
+							chance = 19
+							remove_building = fort_17th
+						}
+				}
+				if = {
+					limit = { has_building = stock_exchange }
+						random = {
+							chance = 19
+							remove_building = stock_exchange
+						}
+				}
+				if = {
+					limit = { has_building = counting_house }
+						random = {
+							chance = 19
+							remove_building = counting_house
+						}
+				}
+				if = {
+					limit = { has_building = town_hall }
+						random = {
+							chance = 19
+							remove_building = town_hall
+						}
+				}
+				if = {
+					limit = { has_building = drydock }
+						random = {
+							chance = 19
+							remove_building = drydock
+						}
+				}
+				if = {
+					limit = { has_building = conscription_center }
+						random = {
+							chance = 19
+							remove_building = conscription_center
+						}
+				}
+				if = {
+					limit = { has_building = fort_18th }
+						random = {
+							chance = 19
+							remove_building = fort_18th
+						}
+				}
+				#if = {
+				#	limit = { has_building = manufactory }
+				#		random = {
+				#			chance = 19
+				#			remove_building = manufactory
+				#		}
+				#}
+				if = {
+					limit = { has_building = wharf }
+						random = {
+							chance = 19
+							remove_building = wharf
+						}
+				}
+				if = {
+					limit = { has_building = weapons }
+						random = {
+							chance = 19
+							remove_building = weapons
+						}
+				}
+				if = {
+					limit = { has_building = textile }
+						random = {
+							chance = 19
+							remove_building = textile
+						}
+				}
+				if = {
+					limit = { has_building = plantations }
+						random = {
+							chance = 19
+							remove_building = plantations
+						}
+				}
+				if = {
+					limit = { has_building = tradecompany }
+						random = {
+							chance = 19
+							remove_building = tradecompany
+						}
+				}
+				if = {
+					limit = { has_building = farm_estate }
+						random = {
+							chance = 19
+							remove_building = farm_estate
+						}
+				}
+				if = {
+					limit = { has_building = mills }
+						random = {
+							chance = 19
+							remove_building = mills
+						}
+				}
+				if = {
+					limit = { has_building = furnace }
+						random = {
+							chance = 19
+							remove_building = furnace
+						}
+				}
+				if = {
+					limit = { has_building = ramparts }
+						random = {
+							chance = 19
+							remove_building = ramparts
+						}
+				}
+				if = {
+					limit = { has_building = soldier_households }
+						random = {
+							chance = 19
+							remove_building = soldier_households
+						}
+				}
+				if = {
+					limit = { has_building = impressment_offices }
+						random = {
+							chance = 19
+							remove_building = impressment_offices
+						}
+				}
+				if = {
+					limit = { has_building = state_house }
+						random = {
+							chance = 19
+							remove_building = state_house
+						}
+				}
+				hidden_effect = { add_devastation = 10 }
+				
+				add_province_modifier = {
+					name = "earthquake_5"
+					duration = 730
+				}
+	
+				every_neighbor_province = {
+					hidden_effect = { add_devastation = 5 }
+					add_province_modifier = {
+						name = "earthquake_5"
+						duration = 730
+					}	
+				}
+			}
+			25 = { #Richter Scale 6#
+				if = {
+					limit = {
+						base_tax = 2
+						base_production = 1
+					}
+					add_base_production = -1
+					add_base_tax = -2
+				}
+				
+				if = {
+					limit = { has_building = marketplace }
+						random = {
+							chance = 30
+							remove_building = marketplace
+						}
+				}
+				if = {
+					limit = { has_building = workshop }
+						random = {
+							chance = 30
+							remove_building = workshop
+						}
+				}
+				if = {
+					limit = { has_building = temple }
+						random = {
+							chance = 30
+							remove_building = temple
+						}
+				}
+				if = {
+					limit = { has_building = barracks }
+						random = {
+							chance = 30
+							remove_building = barracks
+						}
+				}
+				if = {
+					limit = { has_building = shipyard }
+						random = {
+							chance = 30
+							remove_building = shipyard
+						}
+				}
+				if = {
+					limit = { has_building = fort_15th }
+						random = {
+							chance = 30
+							remove_building = fort_15th
+						}
+				}
+				if = {
+					limit = { has_building = coastal_defence }
+						random = {
+							chance = 30
+							remove_building = coastal_defence
+						}
+				}
+				if = {
+					limit = { has_building = courthouse }
+						random = {
+							chance = 30
+							remove_building = courthouse
+						}
+				}
+				if = {
+					limit = { has_building = dock }
+						random = {
+							chance = 30
+							remove_building = dock
+						}
+				}
+				if = {
+					limit = { has_building = regimental_camp }
+						random = {
+							chance = 30
+							remove_building = regimental_camp
+						}
+				}
+				if = {
+					limit = { has_building = fort_16th }
+						random = {
+							chance = 30
+							remove_building = fort_16th
+						}
+				}
+				if = {
+					limit = { has_building = naval_battery }
+						random = {
+							chance = 30
+							remove_building = naval_battery
+						}
+				}
+				if = {
+					limit = { has_building = cathedral }
+						random = {
+							chance = 30
+							remove_building = cathedral
+						}
+				}
+				if = {
+					limit = { has_building = university }
+						random = {
+							chance = 30
+							remove_building = university
+						}
+				}
+				if = {
+					limit = { has_building = trade_depot }
+						random = {
+							chance = 30
+							remove_building = trade_depot
+						}
+				}
+				if = {
+					limit = { has_building = grand_shipyard }
+						random = {
+							chance = 30
+							remove_building = grand_shipyard
+						}
+				}
+				if = {
+					limit = { has_building = training_fields }
+						random = {
+							chance = 30
+							remove_building = training_fields
+						}
+				}
+				if = {
+					limit = { has_building = fort_17th }
+						random = {
+							chance = 30
+							remove_building = fort_17th
+						}
+				}
+				if = {
+					limit = { has_building = stock_exchange }
+						random = {
+							chance = 30
+							remove_building = stock_exchange
+						}
+				}
+				if = {
+					limit = { has_building = counting_house }
+						random = {
+							chance = 30
+							remove_building = counting_house
+						}
+				}
+				if = {
+					limit = { has_building = town_hall }
+						random = {
+							chance = 30
+							remove_building = town_hall
+						}
+				}
+				if = {
+					limit = { has_building = drydock }
+						random = {
+							chance = 30
+							remove_building = drydock
+						}
+				}
+				if = {
+					limit = { has_building = conscription_center }
+						random = {
+							chance = 30
+							remove_building = conscription_center
+						}
+				}
+				if = {
+					limit = { has_building = fort_18th }
+						random = {
+							chance = 30
+							remove_building = fort_18th
+						}
+				}
+				#if = {
+				#	limit = { has_building = manufactory }
+				#		random = {
+				#			chance = 30
+				#			remove_building = manufactory
+				#		}
+				#}
+				if = {
+					limit = { has_building = wharf }
+						random = {
+							chance = 30
+							remove_building = wharf
+						}
+				}
+				if = {
+					limit = { has_building = weapons }
+						random = {
+							chance = 30
+							remove_building = weapons
+						}
+				}
+				if = {
+					limit = { has_building = textile }
+						random = {
+							chance = 30
+							remove_building = textile
+						}
+				}
+				if = {
+					limit = { has_building = plantations }
+						random = {
+							chance = 30
+							remove_building = plantations
+						}
+				}
+				if = {
+					limit = { has_building = tradecompany }
+						random = {
+							chance = 30
+							remove_building = tradecompany
+						}
+				}
+				if = {
+					limit = { has_building = farm_estate }
+						random = {
+							chance = 30
+							remove_building = farm_estate
+						}
+				}
+				if = {
+					limit = { has_building = mills }
+						random = {
+							chance = 30
+							remove_building = mills
+						}
+				}
+				if = {
+					limit = { has_building = furnace }
+						random = {
+							chance = 30
+							remove_building = furnace
+						}
+				}
+				if = {
+					limit = { has_building = ramparts }
+						random = {
+							chance = 30
+							remove_building = ramparts
+						}
+				}
+				if = {
+					limit = { has_building = soldier_households }
+						random = {
+							chance = 30
+							remove_building = soldier_households
+						}
+				}
+				if = {
+					limit = { has_building = impressment_offices }
+						random = {
+							chance = 30
+							remove_building = impressment_offices
+						}
+				}
+				if = {
+					limit = { has_building = state_house }
+						random = {
+							chance = 30
+							remove_building = state_house
+						}
+				}
+				hidden_effect = { add_devastation = 20 }
+				
+				add_province_modifier = {
+					name = "earthquake_6"
+					duration = 730
+				}
+	
+				every_neighbor_province = {
+					hidden_effect = { add_devastation = 10 }
+					add_province_modifier = {
+						name = "earthquake_6"
+						duration = 730
+					}	
+				}
+			}
+			15 = { #Richter Scale 7#
+				if = {
+					limit = {
+						base_tax = 4
+						base_production = 4
+						base_manpower = 4
+					}
+					add_base_production = -3
+					add_base_tax = -3
+					add_base_manpower = -3
+				}
+				
+				if = {
+					limit = { has_building = marketplace }
+						random = {
+							chance = 50
+							remove_building = marketplace
+						}
+				}
+				if = {
+					limit = { has_building = workshop }
+						random = {
+							chance = 50
+							remove_building = workshop
+						}
+				}
+				if = {
+					limit = { has_building = temple }
+						random = {
+							chance = 50
+							remove_building = temple
+						}
+				}
+				if = {
+					limit = { has_building = barracks }
+						random = {
+							chance = 50
+							remove_building = barracks
+						}
+				}
+				if = {
+					limit = { has_building = shipyard }
+						random = {
+							chance = 50
+							remove_building = shipyard
+						}
+				}
+				if = {
+					limit = { has_building = fort_15th }
+						random = {
+							chance = 50
+							remove_building = fort_15th
+						}
+				}
+				if = {
+					limit = { has_building = coastal_defence }
+						random = {
+							chance = 50
+							remove_building = coastal_defence
+						}
+				}
+				if = {
+					limit = { has_building = courthouse }
+						random = {
+							chance = 50
+							remove_building = courthouse
+						}
+				}
+				if = {
+					limit = { has_building = dock }
+						random = {
+							chance = 50
+							remove_building = dock
+						}
+				}
+				if = {
+					limit = { has_building = regimental_camp }
+						random = {
+							chance = 50
+							remove_building = regimental_camp
+						}
+				}
+				if = {
+					limit = { has_building = fort_16th }
+						random = {
+							chance = 50
+							remove_building = fort_16th
+						}
+				}
+				if = {
+					limit = { has_building = naval_battery }
+						random = {
+							chance = 50
+							remove_building = naval_battery
+						}
+				}
+				if = {
+					limit = { has_building = cathedral }
+						random = {
+							chance = 50
+							remove_building = cathedral
+						}
+				}
+				if = {
+					limit = { has_building = university }
+						random = {
+							chance = 50
+							remove_building = university
+						}
+				}
+				if = {
+					limit = { has_building = trade_depot }
+						random = {
+							chance = 50
+							remove_building = trade_depot
+						}
+				}
+				if = {
+					limit = { has_building = grand_shipyard }
+						random = {
+							chance = 50
+							remove_building = grand_shipyard
+						}
+				}
+				if = {
+					limit = { has_building = training_fields }
+						random = {
+							chance = 50
+							remove_building = training_fields
+						}
+				}
+				if = {
+					limit = { has_building = fort_17th }
+						random = {
+							chance = 50
+							remove_building = fort_17th
+						}
+				}
+				if = {
+					limit = { has_building = stock_exchange }
+						random = {
+							chance = 50
+							remove_building = stock_exchange
+						}
+				}
+				if = {
+					limit = { has_building = counting_house }
+						random = {
+							chance = 50
+							remove_building = counting_house
+						}
+				}
+				if = {
+					limit = { has_building = town_hall }
+						random = {
+							chance = 50
+							remove_building = town_hall
+						}
+				}
+				if = {
+					limit = { has_building = drydock }
+						random = {
+							chance = 50
+							remove_building = drydock
+						}
+				}
+				if = {
+					limit = { has_building = conscription_center }
+						random = {
+							chance = 50
+							remove_building = conscription_center
+						}
+				}
+				if = {
+					limit = { has_building = fort_18th }
+						random = {
+							chance = 50
+							remove_building = fort_18th
+						}
+				}
+				#if = {
+				#	limit = { has_building = manufactory }
+				#		random = {
+				#			chance = 50
+				#			remove_building = manufactory
+				#		}
+				#}
+				if = {
+					limit = { has_building = wharf }
+						random = {
+							chance = 50
+							remove_building = wharf
+						}
+				}
+				if = {
+					limit = { has_building = weapons }
+						random = {
+							chance = 50
+							remove_building = weapons
+						}
+				}
+				if = {
+					limit = { has_building = textile }
+						random = {
+							chance = 50
+							remove_building = textile
+						}
+				}
+				if = {
+					limit = { has_building = plantations }
+						random = {
+							chance = 50
+							remove_building = plantations
+						}
+				}
+				if = {
+					limit = { has_building = tradecompany }
+						random = {
+							chance = 50
+							remove_building = tradecompany
+						}
+				}
+				if = {
+					limit = { has_building = farm_estate }
+						random = {
+							chance = 50
+							remove_building = farm_estate
+						}
+				}
+				if = {
+					limit = { has_building = mills }
+						random = {
+							chance = 50
+							remove_building = mills
+						}
+				}
+				if = {
+					limit = { has_building = furnace }
+						random = {
+							chance = 50
+							remove_building = furnace
+						}
+				}
+				if = {
+					limit = { has_building = ramparts }
+						random = {
+							chance = 50
+							remove_building = ramparts
+						}
+				}
+				if = {
+					limit = { has_building = soldier_households }
+						random = {
+							chance = 50
+							remove_building = soldier_households
+						}
+				}
+				if = {
+					limit = { has_building = impressment_offices }
+						random = {
+							chance = 50
+							remove_building = impressment_offices
+						}
+				}
+				if = {
+					limit = { has_building = state_house }
+						random = {
+							chance = 50
+							remove_building = state_house
+						}
+				}
+				hidden_effect = { add_devastation = 40 }
+				
+				add_province_modifier = {
+					name = "earthquake_7"
+					duration = 730
+				}
+	
+				every_neighbor_province = {
+
+					if = {
+						limit = {
+							base_tax = 2
+							base_production = 1
+						}
+						add_base_production = -1
+						add_base_tax = -2
+					}
+					
+					if = {
+						limit = { has_building = marketplace }
+							random = {
+								chance = 30
+								remove_building = marketplace
+							}
+					}
+					if = {
+						limit = { has_building = workshop }
+							random = {
+								chance = 30
+								remove_building = workshop
+							}
+					}
+					if = {
+						limit = { has_building = temple }
+							random = {
+								chance = 30
+								remove_building = temple
+							}
+					}
+					if = {
+						limit = { has_building = barracks }
+							random = {
+								chance = 30
+								remove_building = barracks
+							}
+					}
+					if = {
+						limit = { has_building = shipyard }
+							random = {
+								chance = 30
+								remove_building = shipyard
+							}
+					}
+					if = {
+						limit = { has_building = fort_15th }
+							random = {
+								chance = 30
+								remove_building = fort_15th
+							}
+					}
+					if = {
+						limit = { has_building = coastal_defence }
+							random = {
+								chance = 30
+								remove_building = coastal_defence
+							}
+					}
+					if = {
+						limit = { has_building = courthouse }
+							random = {
+								chance = 30
+								remove_building = courthouse
+							}
+					}
+					if = {
+						limit = { has_building = dock }
+							random = {
+								chance = 30
+								remove_building = dock
+							}
+					}
+					if = {
+						limit = { has_building = regimental_camp }
+							random = {
+								chance = 30
+								remove_building = regimental_camp
+							}
+					}
+					if = {
+						limit = { has_building = fort_16th }
+							random = {
+								chance = 30
+								remove_building = fort_16th
+							}
+					}
+					if = {
+						limit = { has_building = naval_battery }
+							random = {
+								chance = 30
+								remove_building = naval_battery
+							}
+					}
+					if = {
+						limit = { has_building = cathedral }
+							random = {
+								chance = 30
+								remove_building = cathedral
+							}
+					}
+					if = {
+						limit = { has_building = university }
+							random = {
+								chance = 30
+								remove_building = university
+							}
+					}
+					if = {
+						limit = { has_building = trade_depot }
+							random = {
+								chance = 30
+								remove_building = trade_depot
+							}
+					}
+					if = {
+						limit = { has_building = grand_shipyard }
+							random = {
+								chance = 30
+								remove_building = grand_shipyard
+							}
+					}
+					if = {
+						limit = { has_building = training_fields }
+							random = {
+								chance = 30
+								remove_building = training_fields
+							}
+					}
+					if = {
+						limit = { has_building = fort_17th }
+							random = {
+								chance = 30
+								remove_building = fort_17th
+							}
+					}
+					if = {
+						limit = { has_building = stock_exchange }
+							random = {
+								chance = 30
+								remove_building = stock_exchange
+							}
+					}
+					if = {
+						limit = { has_building = counting_house }
+							random = {
+								chance = 30
+								remove_building = counting_house
+							}
+					}
+					if = {
+						limit = { has_building = town_hall }
+							random = {
+								chance = 30
+								remove_building = town_hall
+							}
+					}
+					if = {
+						limit = { has_building = drydock }
+							random = {
+								chance = 30
+								remove_building = drydock
+							}
+					}
+					if = {
+						limit = { has_building = conscription_center }
+							random = {
+								chance = 30
+								remove_building = conscription_center
+							}
+					}
+					if = {
+						limit = { has_building = fort_18th }
+							random = {
+								chance = 30
+								remove_building = fort_18th
+							}
+					}
+					#if = {
+					#	limit = { has_building = manufactory }
+					#		random = {
+					#			chance = 30
+					#			remove_building = manufactory
+					#		}
+					#}
+					if = {
+						limit = { has_building = wharf }
+							random = {
+								chance = 30
+								remove_building = wharf
+							}
+					}
+					if = {
+						limit = { has_building = weapons }
+							random = {
+								chance = 30
+								remove_building = weapons
+							}
+					}
+					if = {
+						limit = { has_building = textile }
+							random = {
+								chance = 30
+								remove_building = textile
+							}
+					}
+					if = {
+						limit = { has_building = plantations }
+							random = {
+								chance = 30
+								remove_building = plantations
+							}
+					}
+					if = {
+						limit = { has_building = tradecompany }
+							random = {
+								chance = 30
+								remove_building = tradecompany
+							}
+					}
+					if = {
+						limit = { has_building = farm_estate }
+							random = {
+								chance = 30
+								remove_building = farm_estate
+							}
+					}
+					if = {
+						limit = { has_building = mills }
+							random = {
+								chance = 30
+								remove_building = mills
+							}
+					}
+					if = {
+						limit = { has_building = furnace }
+							random = {
+								chance = 30
+								remove_building = furnace
+							}
+					}
+					if = {
+						limit = { has_building = ramparts }
+							random = {
+								chance = 30
+								remove_building = ramparts
+							}
+					}
+					if = {
+						limit = { has_building = soldier_households }
+							random = {
+								chance = 30
+								remove_building = soldier_households
+							}
+					}
+					if = {
+						limit = { has_building = impressment_offices }
+							random = {
+								chance = 30
+								remove_building = impressment_offices
+							}
+					}
+					if = {
+						limit = { has_building = state_house }
+							random = {
+								chance = 30
+								remove_building = state_house
+							}
+					}
+
+					hidden_effect = { add_devastation = 26 }
+					add_province_modifier = {
+						name = "earthquake_7"
+						duration = 730
+					}	
+				}
+			}
+			3 = { #Richter Scale 8#  	
+				if = {
+					limit = {
+						base_tax = 5
+						base_production = 5
+						base_manpower = 5
+					}
+					add_base_production = -5
+					add_base_tax = -5
+					add_base_manpower = -5
+				}
+				
+				if = {
+					limit = { has_building = marketplace }
+						random = {
+							chance = 75
+							remove_building = marketplace
+						}
+				}
+				if = {
+					limit = { has_building = workshop }
+						random = {
+							chance = 75
+							remove_building = workshop
+						}
+				}
+				if = {
+					limit = { has_building = temple }
+						random = {
+							chance = 75
+							remove_building = temple
+						}
+				}
+				if = {
+					limit = { has_building = barracks }
+						random = {
+							chance = 75
+							remove_building = barracks
+						}
+				}
+				if = {
+					limit = { has_building = shipyard }
+						random = {
+							chance = 75
+							remove_building = shipyard
+						}
+				}
+				if = {
+					limit = { has_building = fort_15th }
+						random = {
+							chance = 75
+							remove_building = fort_15th
+						}
+				}
+				if = {
+					limit = { has_building = coastal_defence }
+						random = {
+							chance = 75
+							remove_building = coastal_defence
+						}
+				}
+				if = {
+					limit = { has_building = courthouse }
+						random = {
+							chance = 75
+							remove_building = courthouse
+						}
+				}
+				if = {
+					limit = { has_building = dock }
+						random = {
+							chance = 75
+							remove_building = dock
+						}
+				}
+				if = {
+					limit = { has_building = regimental_camp }
+						random = {
+							chance = 75
+							remove_building = regimental_camp
+						}
+				}
+				if = {
+					limit = { has_building = fort_16th }
+						random = {
+							chance = 75
+							remove_building = fort_16th
+						}
+				}
+				if = {
+					limit = { has_building = naval_battery }
+						random = {
+							chance = 75
+							remove_building = naval_battery
+						}
+				}
+				if = {
+					limit = { has_building = cathedral }
+						random = {
+							chance = 75
+							remove_building = cathedral
+						}
+				}
+				if = {
+					limit = { has_building = university }
+						random = {
+							chance = 75
+							remove_building = university
+						}
+				}
+				if = {
+					limit = { has_building = trade_depot }
+						random = {
+							chance = 75
+							remove_building = trade_depot
+						}
+				}
+				if = {
+					limit = { has_building = grand_shipyard }
+						random = {
+							chance = 75
+							remove_building = grand_shipyard
+						}
+				}
+				if = {
+					limit = { has_building = training_fields }
+						random = {
+							chance = 75
+							remove_building = training_fields
+						}
+				}
+				if = {
+					limit = { has_building = fort_17th }
+						random = {
+							chance = 75
+							remove_building = fort_17th
+						}
+				}
+				if = {
+					limit = { has_building = stock_exchange }
+						random = {
+							chance = 75
+							remove_building = stock_exchange
+						}
+				}
+				if = {
+					limit = { has_building = counting_house }
+						random = {
+							chance = 75
+							remove_building = counting_house
+						}
+				}
+				if = {
+					limit = { has_building = town_hall }
+						random = {
+							chance = 75
+							remove_building = town_hall
+						}
+				}
+				if = {
+					limit = { has_building = drydock }
+						random = {
+							chance = 75
+							remove_building = drydock
+						}
+				}
+				if = {
+					limit = { has_building = conscription_center }
+						random = {
+							chance = 75
+							remove_building = conscription_center
+						}
+				}
+				if = {
+					limit = { has_building = fort_18th }
+						random = {
+							chance = 75
+							remove_building = fort_18th
+						}
+				}
+				#if = {
+				#	limit = { has_building = manufactory }
+				#		random = {
+				#			chance = 75
+				#			remove_building = manufactory
+				#		}
+				#}
+				if = {
+					limit = { has_building = wharf }
+						random = {
+							chance = 75
+							remove_building = wharf
+						}
+				}
+				if = {
+					limit = { has_building = weapons }
+						random = {
+							chance = 75
+							remove_building = weapons
+						}
+				}
+				if = {
+					limit = { has_building = textile }
+						random = {
+							chance = 75
+							remove_building = textile
+						}
+				}
+				if = {
+					limit = { has_building = plantations }
+						random = {
+							chance = 75
+							remove_building = plantations
+						}
+				}
+				if = {
+					limit = { has_building = tradecompany }
+						random = {
+							chance = 75
+							remove_building = tradecompany
+						}
+				}
+				if = {
+					limit = { has_building = farm_estate }
+						random = {
+							chance = 75
+							remove_building = farm_estate
+						}
+				}
+				if = {
+					limit = { has_building = mills }
+						random = {
+							chance = 75
+							remove_building = mills
+						}
+				}
+				if = {
+					limit = { has_building = furnace }
+						random = {
+							chance = 75
+							remove_building = furnace
+						}
+				}
+				if = {
+					limit = { has_building = ramparts }
+						random = {
+							chance = 75
+							remove_building = ramparts
+						}
+				}
+				if = {
+					limit = { has_building = soldier_households }
+						random = {
+							chance = 75
+							remove_building = soldier_households
+						}
+				}
+				if = {
+					limit = { has_building = impressment_offices }
+						random = {
+							chance = 75
+							remove_building = impressment_offices
+						}
+				}
+				if = {
+					limit = { has_building = state_house }
+						random = {
+							chance = 75
+							remove_building = state_house
+						}
+				}
+				hidden_effect = { add_devastation = 50 }
+				
+				add_province_modifier = {
+					name = "earthquake_8"
+					duration = 730
+				}
+	
+				every_neighbor_province = {
+					if = {
+						limit = {
+							base_tax = 3
+							base_production = 3
+							base_manpower = 3
+						}
+						add_base_production = -3
+						add_base_tax = -3
+						add_base_manpower = -3
+					}
+
+					if = {
+						limit = { has_building = marketplace }
+							random = {
+								chance = 50
+								remove_building = marketplace
+							}
+					}
+					if = {
+						limit = { has_building = workshop }
+							random = {
+								chance = 50
+								remove_building = workshop
+							}
+					}
+					if = {
+						limit = { has_building = temple }
+							random = {
+								chance = 50
+								remove_building = temple
+							}
+					}
+					if = {
+						limit = { has_building = barracks }
+							random = {
+								chance = 50
+								remove_building = barracks
+							}
+					}
+					if = {
+						limit = { has_building = shipyard }
+							random = {
+								chance = 50
+								remove_building = shipyard
+							}
+					}
+					if = {
+						limit = { has_building = fort_15th }
+							random = {
+								chance = 50
+								remove_building = fort_15th
+							}
+					}
+					if = {
+						limit = { has_building = coastal_defence }
+							random = {
+								chance = 50
+								remove_building = coastal_defence
+							}
+					}
+					if = {
+						limit = { has_building = courthouse }
+							random = {
+								chance = 50
+								remove_building = courthouse
+							}
+					}
+					if = {
+						limit = { has_building = dock }
+							random = {
+								chance = 50
+								remove_building = dock
+							}
+					}
+					if = {
+						limit = { has_building = regimental_camp }
+							random = {
+								chance = 50
+								remove_building = regimental_camp
+							}
+					}
+					if = {
+						limit = { has_building = fort_16th }
+							random = {
+								chance = 50
+								remove_building = fort_16th
+							}
+					}
+					if = {
+						limit = { has_building = naval_battery }
+							random = {
+								chance = 50
+								remove_building = naval_battery
+							}
+					}
+					if = {
+						limit = { has_building = cathedral }
+							random = {
+								chance = 50
+								remove_building = cathedral
+							}
+					}
+					if = {
+						limit = { has_building = university }
+							random = {
+								chance = 50
+								remove_building = university
+							}
+					}
+					if = {
+						limit = { has_building = trade_depot }
+							random = {
+								chance = 50
+								remove_building = trade_depot
+							}
+					}
+					if = {
+						limit = { has_building = grand_shipyard }
+							random = {
+								chance = 50
+								remove_building = grand_shipyard
+							}
+					}
+					if = {
+						limit = { has_building = training_fields }
+							random = {
+								chance = 50
+								remove_building = training_fields
+							}
+					}
+					if = {
+						limit = { has_building = fort_17th }
+							random = {
+								chance = 50
+								remove_building = fort_17th
+							}
+					}
+					if = {
+						limit = { has_building = stock_exchange }
+							random = {
+								chance = 50
+								remove_building = stock_exchange
+							}
+					}
+					if = {
+						limit = { has_building = counting_house }
+							random = {
+								chance = 50
+								remove_building = counting_house
+							}
+					}
+					if = {
+						limit = { has_building = town_hall }
+							random = {
+								chance = 50
+								remove_building = town_hall
+							}
+					}
+					if = {
+						limit = { has_building = drydock }
+							random = {
+								chance = 50
+								remove_building = drydock
+							}
+					}
+					if = {
+						limit = { has_building = conscription_center }
+							random = {
+								chance = 50
+								remove_building = conscription_center
+							}
+					}
+					if = {
+						limit = { has_building = fort_18th }
+							random = {
+								chance = 50
+								remove_building = fort_18th
+							}
+					}
+					#if = {
+					#	limit = { has_building = manufactory }
+					#		random = {
+					#			chance = 50
+					#			remove_building = manufactory
+					#		}
+					#}
+					if = {
+						limit = { has_building = wharf }
+							random = {
+								chance = 50
+								remove_building = wharf
+							}
+					}
+					if = {
+						limit = { has_building = weapons }
+							random = {
+								chance = 50
+								remove_building = weapons
+							}
+					}
+					if = {
+						limit = { has_building = textile }
+							random = {
+								chance = 50
+								remove_building = textile
+							}
+					}
+					if = {
+						limit = { has_building = plantations }
+							random = {
+								chance = 50
+								remove_building = plantations
+							}
+					}
+					if = {
+						limit = { has_building = tradecompany }
+							random = {
+								chance = 50
+								remove_building = tradecompany
+							}
+					}
+					if = {
+						limit = { has_building = farm_estate }
+							random = {
+								chance = 50
+								remove_building = farm_estate
+							}
+					}
+					if = {
+						limit = { has_building = mills }
+							random = {
+								chance = 50
+								remove_building = mills
+							}
+					}
+					if = {
+						limit = { has_building = furnace }
+							random = {
+								chance = 50
+								remove_building = furnace
+							}
+					}
+					if = {
+						limit = { has_building = ramparts }
+							random = {
+								chance = 50
+								remove_building = ramparts
+							}
+					}
+					if = {
+						limit = { has_building = soldier_households }
+							random = {
+								chance = 50
+								remove_building = soldier_households
+							}
+					}
+					if = {
+						limit = { has_building = impressment_offices }
+							random = {
+								chance = 50
+								remove_building = impressment_offices
+							}
+					}
+					if = {
+						limit = { has_building = state_house }
+							random = {
+								chance = 50
+								remove_building = state_house
+							}
+					}
+					hidden_effect = { add_devastation = 30 }
+
+					add_province_modifier = {
+						name = "earthquake_8"
+						duration = 730
+					}	
+				}
+			}
+			1 = { #Richter Scale 9#  	 
+				if = {
+					limit = {
+						base_tax = 1
+						base_production = 1
+						base_manpower = 1
+					}
+					add_base_production = -10
+					add_base_tax = -10
+					add_base_manpower = -10
+				}
+				
+				if = {
+					limit = { has_building = marketplace }
+						random = {
+							chance = 89
+							remove_building = marketplace
+						}
+				}
+				if = {
+					limit = { has_building = workshop }
+						random = {
+							chance = 89
+							remove_building = workshop
+						}
+				}
+				if = {
+					limit = { has_building = temple }
+						random = {
+							chance = 89
+							remove_building = temple
+						}
+				}
+				if = {
+					limit = { has_building = barracks }
+						random = {
+							chance = 89
+							remove_building = barracks
+						}
+				}
+				if = {
+					limit = { has_building = shipyard }
+						random = {
+							chance = 89
+							remove_building = shipyard
+						}
+				}
+				if = {
+					limit = { has_building = fort_15th }
+						random = {
+							chance = 89
+							remove_building = fort_15th
+						}
+				}
+				if = {
+					limit = { has_building = coastal_defence }
+						random = {
+							chance = 89
+							remove_building = coastal_defence
+						}
+				}
+				if = {
+					limit = { has_building = courthouse }
+						random = {
+							chance = 89
+							remove_building = courthouse
+						}
+				}
+				if = {
+					limit = { has_building = dock }
+						random = {
+							chance = 89
+							remove_building = dock
+						}
+				}
+				if = {
+					limit = { has_building = regimental_camp }
+						random = {
+							chance = 89
+							remove_building = regimental_camp
+						}
+				}
+				if = {
+					limit = { has_building = fort_16th }
+						random = {
+							chance = 89
+							remove_building = fort_16th
+						}
+				}
+				if = {
+					limit = { has_building = naval_battery }
+						random = {
+							chance = 89
+							remove_building = naval_battery
+						}
+				}
+				if = {
+					limit = { has_building = cathedral }
+						random = {
+							chance = 89
+							remove_building = cathedral
+						}
+				}
+				if = {
+					limit = { has_building = university }
+						random = {
+							chance = 89
+							remove_building = university
+						}
+				}
+				if = {
+					limit = { has_building = trade_depot }
+						random = {
+							chance = 89
+							remove_building = trade_depot
+						}
+				}
+				if = {
+					limit = { has_building = grand_shipyard }
+						random = {
+							chance = 89
+							remove_building = grand_shipyard
+						}
+				}
+				if = {
+					limit = { has_building = training_fields }
+						random = {
+							chance = 89
+							remove_building = training_fields
+						}
+				}
+				if = {
+					limit = { has_building = fort_17th }
+						random = {
+							chance = 89
+							remove_building = fort_17th
+						}
+				}
+				if = {
+					limit = { has_building = stock_exchange }
+						random = {
+							chance = 89
+							remove_building = stock_exchange
+						}
+				}
+				if = {
+					limit = { has_building = counting_house }
+						random = {
+							chance = 89
+							remove_building = counting_house
+						}
+				}
+				if = {
+					limit = { has_building = town_hall }
+						random = {
+							chance = 89
+							remove_building = town_hall
+						}
+				}
+				if = {
+					limit = { has_building = drydock }
+						random = {
+							chance = 89
+							remove_building = drydock
+						}
+				}
+				if = {
+					limit = { has_building = conscription_center }
+						random = {
+							chance = 89
+							remove_building = conscription_center
+						}
+				}
+				if = {
+					limit = { has_building = fort_18th }
+						random = {
+							chance = 89
+							remove_building = fort_18th
+						}
+				}
+				#if = {
+				#	limit = { has_building = manufactory }
+				#		random = {
+				#			chance = 89
+				#			remove_building = manufactory
+				#		}
+				#}
+				if = {
+					limit = { has_building = wharf }
+						random = {
+							chance = 89
+							remove_building = wharf
+						}
+				}
+				if = {
+					limit = { has_building = weapons }
+						random = {
+							chance = 89
+							remove_building = weapons
+						}
+				}
+				if = {
+					limit = { has_building = textile }
+						random = {
+							chance = 89
+							remove_building = textile
+						}
+				}
+				if = {
+					limit = { has_building = plantations }
+						random = {
+							chance = 89
+							remove_building = plantations
+						}
+				}
+				if = {
+					limit = { has_building = tradecompany }
+						random = {
+							chance = 89
+							remove_building = tradecompany
+						}
+				}
+				if = {
+					limit = { has_building = farm_estate }
+						random = {
+							chance = 89
+							remove_building = farm_estate
+						}
+				}
+				if = {
+					limit = { has_building = mills }
+						random = {
+							chance = 89
+							remove_building = mills
+						}
+				}
+				if = {
+					limit = { has_building = furnace }
+						random = {
+							chance = 89
+							remove_building = furnace
+						}
+				}
+				if = {
+					limit = { has_building = ramparts }
+						random = {
+							chance = 89
+							remove_building = ramparts
+						}
+				}
+				if = {
+					limit = { has_building = soldier_households }
+						random = {
+							chance = 89
+							remove_building = soldier_households
+						}
+				}
+				if = {
+					limit = { has_building = impressment_offices }
+						random = {
+							chance = 89
+							remove_building = impressment_offices
+						}
+				}
+				if = {
+					limit = { has_building = state_house }
+						random = {
+							chance = 89
+							remove_building = state_house
+						}
+				}
+				hidden_effect = { add_devastation = 70 }
+				
+				add_province_modifier = {
+					name = "earthquake_9"
+					duration = 730
+				}
+	
+				every_neighbor_province = {
+					if = {
+						limit = {
+							base_tax = 3
+							base_production = 3
+							base_manpower = 3
+						}
+						add_base_production = -3
+						add_base_tax = -3
+						add_base_manpower = -3
+					}
+
+					if = {
+						limit = { has_building = marketplace }
+							random = {
+								chance = 50
+								remove_building = marketplace
+							}
+					}
+					if = {
+						limit = { has_building = workshop }
+							random = {
+								chance = 50
+								remove_building = workshop
+							}
+					}
+					if = {
+						limit = { has_building = temple }
+							random = {
+								chance = 50
+								remove_building = temple
+							}
+					}
+					if = {
+						limit = { has_building = barracks }
+							random = {
+								chance = 50
+								remove_building = barracks
+							}
+					}
+					if = {
+						limit = { has_building = shipyard }
+							random = {
+								chance = 50
+								remove_building = shipyard
+							}
+					}
+					if = {
+						limit = { has_building = fort_15th }
+							random = {
+								chance = 50
+								remove_building = fort_15th
+							}
+					}
+					if = {
+						limit = { has_building = coastal_defence }
+							random = {
+								chance = 50
+								remove_building = coastal_defence
+							}
+					}
+					if = {
+						limit = { has_building = courthouse }
+							random = {
+								chance = 50
+								remove_building = courthouse
+							}
+					}
+					if = {
+						limit = { has_building = dock }
+							random = {
+								chance = 50
+								remove_building = dock
+							}
+					}
+					if = {
+						limit = { has_building = regimental_camp }
+							random = {
+								chance = 50
+								remove_building = regimental_camp
+							}
+					}
+					if = {
+						limit = { has_building = fort_16th }
+							random = {
+								chance = 50
+								remove_building = fort_16th
+							}
+					}
+					if = {
+						limit = { has_building = naval_battery }
+							random = {
+								chance = 50
+								remove_building = naval_battery
+							}
+					}
+					if = {
+						limit = { has_building = cathedral }
+							random = {
+								chance = 50
+								remove_building = cathedral
+							}
+					}
+					if = {
+						limit = { has_building = university }
+							random = {
+								chance = 50
+								remove_building = university
+							}
+					}
+					if = {
+						limit = { has_building = trade_depot }
+							random = {
+								chance = 50
+								remove_building = trade_depot
+							}
+					}
+					if = {
+						limit = { has_building = grand_shipyard }
+							random = {
+								chance = 50
+								remove_building = grand_shipyard
+							}
+					}
+					if = {
+						limit = { has_building = training_fields }
+							random = {
+								chance = 50
+								remove_building = training_fields
+							}
+					}
+					if = {
+						limit = { has_building = fort_17th }
+							random = {
+								chance = 50
+								remove_building = fort_17th
+							}
+					}
+					if = {
+						limit = { has_building = stock_exchange }
+							random = {
+								chance = 50
+								remove_building = stock_exchange
+							}
+					}
+					if = {
+						limit = { has_building = counting_house }
+							random = {
+								chance = 50
+								remove_building = counting_house
+							}
+					}
+					if = {
+						limit = { has_building = town_hall }
+							random = {
+								chance = 50
+								remove_building = town_hall
+							}
+					}
+					if = {
+						limit = { has_building = drydock }
+							random = {
+								chance = 50
+								remove_building = drydock
+							}
+					}
+					if = {
+						limit = { has_building = conscription_center }
+							random = {
+								chance = 50
+								remove_building = conscription_center
+							}
+					}
+					if = {
+						limit = { has_building = fort_18th }
+							random = {
+								chance = 50
+								remove_building = fort_18th
+							}
+					}
+					#if = {
+					#	limit = { has_building = manufactory }
+					#		random = {
+					#			chance = 50
+					#			remove_building = manufactory
+					#		}
+					#}
+					if = {
+						limit = { has_building = wharf }
+							random = {
+								chance = 50
+								remove_building = wharf
+							}
+					}
+					if = {
+						limit = { has_building = weapons }
+							random = {
+								chance = 50
+								remove_building = weapons
+							}
+					}
+					if = {
+						limit = { has_building = textile }
+							random = {
+								chance = 50
+								remove_building = textile
+							}
+					}
+					if = {
+						limit = { has_building = plantations }
+							random = {
+								chance = 50
+								remove_building = plantations
+							}
+					}
+					if = {
+						limit = { has_building = tradecompany }
+							random = {
+								chance = 50
+								remove_building = tradecompany
+							}
+					}
+					if = {
+						limit = { has_building = farm_estate }
+							random = {
+								chance = 50
+								remove_building = farm_estate
+							}
+					}
+					if = {
+						limit = { has_building = mills }
+							random = {
+								chance = 50
+								remove_building = mills
+							}
+					}
+					if = {
+						limit = { has_building = furnace }
+							random = {
+								chance = 50
+								remove_building = furnace
+							}
+					}
+					if = {
+						limit = { has_building = ramparts }
+							random = {
+								chance = 50
+								remove_building = ramparts
+							}
+					}
+					if = {
+						limit = { has_building = soldier_households }
+							random = {
+								chance = 50
+								remove_building = soldier_households
+							}
+					}
+					if = {
+						limit = { has_building = impressment_offices }
+							random = {
+								chance = 50
+								remove_building = impressment_offices
+							}
+					}
+					if = {
+						limit = { has_building = state_house }
+							random = {
+								chance = 50
+								remove_building = state_house
+							}
+					}
+					hidden_effect = { add_devastation = 30 }
+
+					add_province_modifier = {
+						name = "earthquake_9"
+						duration = 730
+					}	
+				}
+			}
+		}
+	}
+
+
+	option = {
+		name = "FEE_Weather_and_Disasters.2.OPT1"
+		
+	}
+
+}

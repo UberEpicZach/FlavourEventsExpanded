@@ -1089,3 +1089,40 @@ FEE_HUN_young_janos = {
 	burghers_loyalty_modifier = -0.05
 	church_loyalty_modifier = -0.05
 }
+
+earthquake_4 = {
+	local_production_efficiency = -0.1
+	local_tax_modifier = -0.1
+	supply_limit_modifier = -0.1
+}
+
+earthquake_5 = {
+	local_production_efficiency = -0.2
+	local_tax_modifier = -0.2
+	supply_limit_modifier = -0.2
+}
+
+earthquake_6 = {
+	local_production_efficiency = -0.3
+	local_tax_modifier = -0.3
+	supply_limit_modifier = -0.3
+}
+
+earthquake_7 = {
+	local_production_efficiency = -0.4
+	local_tax_modifier = -0.4
+	supply_limit_modifier = -0.4
+}
+
+earthquake_8 = {
+	local_production_efficiency = -0.5
+	local_tax_modifier = -0.5
+	supply_limit_modifier = -0.5
+}
+
+earthquake_9 = {
+	local_production_efficiency = -0.6
+	local_tax_modifier = -0.6
+	supply_limit_modifier = -0.6
+}
+
