@@ -1,4 +1,18 @@
 ﻿l_english:
-    FEE_Weather_and_Disasters.2.T: "Earthquake in [Province.GetName]"
-    FEE_Weather_and_Disasters.2.D: "Tragedy has struck [Province.GetName]! During a calm day, the ground shook violently with anger and it was clear that hard times were upon the people of [Province.GetName]. What followed was a violent earthquake that brought forth devastation the likes of which were a calamity to the peasantry. Though the initial wave is now over, aftershocks and destruction still persist."
-    FEE_Weather_and_Disasters.2.OPT1: "God Save Us!"
+    FEE_Weather_and_Disasters.3.T: "Earthquake in [Root.Province.GetName]"
+    FEE_Weather_and_Disasters.3.D1: "Tragedy has struck [Root.Province.GetName]! During a calm day, the ground shook violently with anger and it was clear that hard times were upon the people of [Root.Province.GetName]. What followed was a violent earthquake that brought forth devastation the likes of which were a calamity to the peasantry. Though the initial wave is now over, aftershocks and destruction still persist."
+    FEE_Weather_and_Disasters.3.D1: "Tragedy has struck [Root.Province.GetName]! During a calm day, the ground shook violently with anger and it was clear that hard times were upon the people of [Root.Province.GetName]. What followed was a violent earthquake that brought forth devastation the likes of which were a calamity to the peasantry. Though the initial wave is now over, aftershocks and destruction still persist."
+    FEE_Weather_and_Disasters.3.D2: "Tragedy has struck [Root.Province.GetName]! During a calm day, the ground shook violently with anger and it was clear that hard times were upon the people of [Root.Province.GetName]. What followed was a violent earthquake that brought forth devastation the likes of which were a calamity to the peasantry. Though the initial wave is now over, aftershocks and destruction still persist."
+    FEE_Weather_and_Disasters.3.D3: "Tragedy has struck [Root.Province.GetName]! During a calm day, the ground shook violently with anger and it was clear that hard times were upon the people of [Root.Province.GetName]. What followed was a violent earthquake that brought forth devastation the likes of which were a calamity to the peasantry. Though the initial wave is now over, aftershocks and destruction still persist."
+    FEE_Weather_and_Disasters.3.D4: "Tragedy has struck [Root.Province.GetName]! During a calm day, the ground shook violently with anger and it was clear that hard times were upon the people of [Root.Province.GetName]. What followed was a violent earthquake that brought forth devastation the likes of which were a calamity to the peasantry. Though the initial wave is now over, aftershocks and destruction still persist."
+    FEE_Weather_and_Disasters.3.D5: "Tragedy has struck [Root.Province.GetName]! During a calm day, the ground shook violently with anger and it was clear that hard times were upon the people of [Root.Province.GetName]. What followed was a violent earthquake that brought forth devastation the likes of which were a calamity to the peasantry. Though the initial wave is now over, aftershocks and destruction still persist."
+    FEE_Weather_and_Disasters.3.D6: "Tragedy has struck [Root.Province.GetName]! During a calm day, the ground shook violently with anger and it was clear that hard times were upon the people of [Root.Province.GetName]. What followed was a violent earthquake that brought forth devastation the likes of which were a calamity to the peasantry. Though the initial wave is now over, aftershocks and destruction still persist."
+    FEE_Weather_and_Disasters.3.OPT1: "God Save Us!"
+
+
+    earthquake_4: "Small Earthquake"
+    earthquake_5: "Medium Eathquake"
+    earthquake_6: "Strong Earthquake"
+    earthquake_7: "Large Earthquake"
+    earthquake_8: "Massive Earthquake"
+    earthquake_9: "Humongous Earthquake"

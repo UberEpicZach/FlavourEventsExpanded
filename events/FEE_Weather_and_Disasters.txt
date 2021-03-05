@@ -224,7 +224,8 @@ province_event = {
 
 	
 	immediate = {
-		random_list = {
+		hidden_effect = {
+			random_list = {
 			30 = { #Richter Scale 4#
 				if = {
 					limit = {
@@ -2744,8 +2745,9 @@ province_event = {
 						duration = 730
 					}	
 				}
+				}
 			}
-		}
+		}	
 	}
 
 
