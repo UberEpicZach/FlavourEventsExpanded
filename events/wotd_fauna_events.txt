@@ -1,0 +1,1026 @@
+namespace = wotd_fauna_events
+
+# Kakapo
+country_event = {
+	id = wotd_fauna_events.1
+	title = wotd_fauna_events.1.t
+	desc = wotd_fauna_events.1.d
+	picture = dodogfx_KAKAPO_eventPicture
+	goto = faunaprovince
+	fire_only_once = yes
+	
+	trigger = {
+		ai = no
+		has_discovered = 1246
+		has_discovered = 1109
+		has_discovered = 2738
+		1246 = {
+			is_empty = yes
+		}
+		tasman_sea_area = {#tasman_sea_area
+			light_ships_in_province = ROOT
+		}
+	}
+	
+		mean_time_to_happen = {
+			days = 1
+		}
+
+	immediate = {
+	hidden_effect = {
+				1246 = {
+					save_event_target_as = faunaprovince
+				}
+		}		
+	}
+
+	option = {#save him
+		name = wotd_fauna_events.1.a									   
+	}	
+	option = {#trade to natives
+		name = wotd_fauna_events.1.b
+		random_province = {
+			limit = {
+				area = te_waipounamu_area
+				is_empty = yes
+			}
+		change_native_ferocity = -4
+		}									   
+	}
+	option = {#Ship's mascot
+		name = wotd_fauna_events.1.c	
+		add_country_modifier = {
+			name = wotd_ships_parrot
+			duration = 9125  
+			desc = wotd_ships_parrot_DESC
+			}
+		set_country_flag = wotd_admiral_kakapo											   
+	}
+}
+
+# Admiral Kakapo
+country_event = {
+	id = wotd_fauna_events.139
+	title = wotd_fauna_events.139.t
+	desc = wotd_fauna_events.139.d
+	picture = dodogfx_ADMIRAL_KAKAPO_eventPicture
+	
+	
+	trigger = {
+		ai = no
+		has_country_flag = wotd_admiral_kakapo
+		NOT = {
+			has_country_modifier = wotd_ships_parrot
+		}
+	}
+	
+		mean_time_to_happen = {
+			days = 90
+		}
+
+	immediate = {
+	hidden_effect = {
+		clr_country_flag = wotd_admiral_kakapo
+				1246 = {
+					save_event_target_as = faunaprovince
+				}
+		}		
+	}
+
+	option = {#sell
+		name = wotd_fauna_events.139.a
+		add_treasury = 75									   
+	}
+	option = {#hire
+		name = wotd_fauna_events.139.b
+			define_admiral = {
+				shock = 4
+				fire = 2
+				manuever = 4
+				siege = 2
+				name = "Kakapo"
+			}
+	}		
+}
+
+# Sea Cows Ahoy!
+country_event = {
+	id = wotd_fauna_events.2
+	title = wotd_fauna_events.2.t
+	desc = wotd_fauna_events.2.d
+	picture = dodogfx_STELLER_SEA_COW_eventPicture
+	goto = 979
+
+	fire_only_once = yes
+	
+	trigger = {
+		ai = no
+		has_discovered = 979
+		979 = {
+			is_empty = yes
+		}
+		berring_sea_area = {#berring_sea_area
+			light_ships_in_province = ROOT
+		}
+	}
+	
+		mean_time_to_happen = {
+			days = 1
+		}
+
+	immediate = {
+	hidden_effect = {
+		random_known_country = {
+			limit = {
+				technology_group = ROOT 
+			has_opinion = {
+				who = ROOT
+				value = 50
+			}
+			border_distance = {
+				who = ROOT
+				distance = 200
+			}
+			NOT = {
+				adm = ROOT 
+			}							
+			}
+				save_event_target_as = faunacountry
+			}
+		}		
+	}
+
+	option = {#save him
+		name = wotd_fauna_events.2.a									   
+	}	
+	option = {#eat
+		name = wotd_fauna_events.2.b
+		add_country_modifier = {
+			name = wotd_fed_sailors
+			duration = 180  
+			}									   
+	}
+	option = {#Sell
+		name = wotd_fauna_events.2.c
+		trigger = {
+			any_known_country = {
+				technology_group = ROOT 
+			has_opinion = {
+				who = ROOT
+				value = 50
+			}
+			border_distance = {
+				who = ROOT
+				distance = 200
+			}
+			NOT = {
+				adm = ROOT 
+			}				
+			}
+		}
+		add_treasury = 100	
+		random_known_country = {
+			limit = {
+				technology_group = ROOT 
+			has_opinion = {
+				who = ROOT
+				value = 50
+			}
+			border_distance = {
+				who = ROOT
+				distance = 200
+			}
+			NOT = {
+				adm = ROOT 
+			}							
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = wotd_rare_gift
+			}
+			add_prestige = -5
+		}
+	}
+	option = {#Livestock
+		name = wotd_fauna_events.2.7	
+			979 = {
+				change_trade_goods = livestock 
+				add_base_production = 2
+			}											   
+	}	
+}
+
+# Man-Sized Salamanders
+country_event = {
+	id = wotd_fauna_events.3
+	title = wotd_fauna_events.3.t
+	desc = wotd_fauna_events.3.d
+	picture = dodogfx_JAPANESE_GIANT_SALAMANDER_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		ai = no
+		OR = {
+			culture_group = japanese_g
+			culture_group = korean_g
+			culture_group = east_asian
+			culture_group = evenks
+			culture_group = altaic
+		}
+		any_owned_province = {
+			OR = {
+				area = sanindo_area
+				area = saigoku_area
+				AND = {
+					superregion = china_superregion
+					has_terrain = mountain 
+				}
+			}
+		}
+	}
+	
+		mean_time_to_happen = {
+			days = 1500
+		}
+
+	immediate = {
+	hidden_effect = {
+		}		
+	}
+
+	option = {#farm it
+		name = wotd_fauna_events.3.a
+		add_treasury = 100									   
+	}	
+	option = {#festival
+		name = wotd_fauna_events.3.b
+		random_owned_province = {
+			limit = {
+			OR = {
+				area = sanindo_area
+				area = saigoku_area
+				AND = {
+					superregion = china_superregion
+					has_terrain = mountain 
+				}
+			}				
+			}
+			add_province_modifier = {
+				name = wotd_hamazaki_festival
+				duration = -1 
+			}
+		}									   
+	}
+	option = {#royal salamander
+		name = wotd_fauna_events.3.c
+		capital_scope = {
+			add_province_modifier = {
+				name = wotd_hellbender
+				duration = 18250 
+				desc = wotd_hellbender_DESC
+			}			
+		}
+		set_country_flag = wotd_dragon_pond
+	}	
+}
+
+# Dragon Pond
+country_event = {
+	id = wotd_fauna_events.140
+	title = wotd_fauna_events.140.t
+	desc = wotd_fauna_events.140.d
+	picture = dodogfx_DRAGON_IN_THE_POND_eventPicture
+	
+	trigger = {
+		ai = no
+		has_country_flag = wotd_dragon_pond
+		capital_scope = {
+		NOT = {
+			has_province_modifier = wotd_hellbender
+		}
+		}
+	}
+	
+		mean_time_to_happen = {
+			days = 90
+		}
+
+	immediate = {
+	hidden_effect = {
+		clr_country_flag = wotd_dragon_pond
+				capital_scope = {
+					save_event_target_as = faunaprovince
+				}
+		}		
+	}
+
+	option = {#sell
+		name = wotd_fauna_events.140.a
+		capital_scope = {
+			add_province_modifier = {
+				name = wotd_royal_dragon
+				duration = -1 
+			}
+		}		
+		add_legitimacy = 20									   
+		add_meritocracy = 20
+		add_republican_tradition = 10
+		add_devotion = 20 
+		add_horde_unity = 20 
+	}		
+}
+
+# Elephantine Birds
+country_event = {
+	id = wotd_fauna_events.4
+	title = wotd_fauna_events.4.t
+	desc = wotd_fauna_events.4.d
+	picture = dodogfx_ELEPHANT_BIRD_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		ai = no
+		NOT = {
+			primary_culture = madagasque
+		}
+		any_owned_province = {
+			OR = {
+				area = southern_madagascar
+				area = betsimasaraka_area
+				area = sakalava_area
+			}
+		}
+	}
+	
+		mean_time_to_happen = {
+			days = 180
+		}
+
+	immediate = {
+	hidden_effect = {
+		}		
+	}
+
+	option = {#Eggs to allies
+		name = wotd_fauna_events.4.a
+		trigger = {
+			num_of_allies = 1
+		}
+		every_ally = {
+			add_opinion = {
+				who = ROOT
+				modifier = wotd_rare_gift
+			}			
+		}
+	}	
+	option = {#Eggs to rivals
+		name = wotd_fauna_events.4.b
+		trigger = {
+			any_rival_country = {
+				is_rival = ROOT
+			}
+		}
+		add_country_modifier = {
+			name = wotd_mocking_gifts
+			duration = 1095  
+			desc = wotd_mocking_gifts_DESC
+			}									   
+	}
+	option = {#Island of Rukh
+		name = wotd_fauna_events.4.c
+		trigger = {
+			religion_group = muslim
+		}
+		add_prestige = 15
+	}
+	option = {#Great Venetian
+		name = wotd_fauna_events.4.7
+		trigger = {
+			primary_culture = venetian
+		}
+		add_country_modifier = {
+			name = wotd_national_pride
+			duration = 1825  
+			}		
+	}	
+	option = {#Let them alone
+		name = wotd_fauna_events.4.8
+		every_province = {
+			limit = {
+				OR = {
+				area = southern_madagascar
+				area = betsimasaraka_area
+				area = sakalava_area					
+				area = madagascar_highlands_area					
+				}
+			}
+		add_province_modifier = {
+			name = wotd_hostile_fauna
+			duration = -1  
+			}
+		}	
+	}		
+}
+
+# Swimming Jackasses African Penguins
+country_event = {
+	id = wotd_fauna_events.5
+	title = wotd_fauna_events.5.t
+	desc = wotd_fauna_events.5.d
+	picture = dodogfx_AFRICAN_PENGUINS_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		ai = no
+		has_discovered = 1461
+		has_discovered = 1460
+		has_discovered = 1459
+		has_discovered = 1458
+		any_province = {
+			area = cape_of_good_hope_area
+			is_strongest_trade_power = ROOT
+		}
+		cape_of_storms_area = {#cape_of_storms_area
+			light_ships_in_province = ROOT
+		}
+	}
+	
+		mean_time_to_happen = {
+			days = 1
+		}
+
+	immediate = {
+	hidden_effect = {
+		}		
+	}
+
+	option = {#Claim the islands
+		name = wotd_fauna_events.5.a
+		trigger = {
+		OR = {
+		1174 = {
+			NOT = {
+				owned_by = ROOT
+			}
+		}		
+		1177 = {
+			NOT = {
+				owned_by = ROOT
+			}
+		}
+		}		
+		}
+		1174 = {
+		    add_claim = ROOT
+		}		
+		1177 = {
+		    add_claim = ROOT
+		}
+	}	
+	option = {#bring to children
+		name = wotd_fauna_events.5.b
+		add_prestige = 5									   
+	}
+	option = {#New Coat
+		name = wotd_fauna_events.5.c
+		trigger = {
+			employed_advisor = {
+				type = artist
+			}
+		}
+		add_dip_power = 25
+	}		
+}
+
+# Cook Lost in the Jungle Orangutan
+country_event = {
+	id = wotd_fauna_events.6
+	title = wotd_fauna_events.6.t
+	desc = wotd_fauna_events.6.d
+	picture = dodogfx_ORANGUTAN_eventPicture
+	goto = faunaprovince
+
+	fire_only_once = yes
+	
+	trigger = {
+		ai = no
+		any_owned_province = {
+			is_colony = yes
+			OR = {
+				area = kalimantan_area
+				area = south_sumatra_area
+			}
+		}
+	}
+	
+		mean_time_to_happen = {
+			days = 60
+		}
+
+	immediate = {
+	hidden_effect = {
+				random_owned_province = {
+					limit = {
+						is_colony = yes
+						OR = {
+							area = kalimantan_area
+							area = south_sumatra_area
+						}
+					}
+					save_event_target_as = faunaprovince
+				}		
+		}		
+	}
+
+	option = {#blame natives
+		name = wotd_fauna_events.6.a
+		event_target:faunaprovince = {
+			change_native_hostileness = 2 
+			}		
+	}	
+	option = {#Jacobus Bontius
+		name = wotd_fauna_events.6.b
+		trigger = {
+			OR = {
+				culture_group = germanic		
+				culture_group = scandinavian		
+				culture_group = british		
+				culture_group = gaelic
+				culture_group = latin
+				culture_group = iberian		
+				culture_group = french	
+				culture_group = carpathian		
+				culture_group = south_slavic		
+				culture_group = west_slavic			
+				culture_group = east_slavic		
+				culture_group = baltic		
+				culture_group = byzantine		
+			}
+		}
+		define_advisor = {
+			type = natural_scientist
+			name = "Jacobus Bontius"
+			skill = 3
+			culture = dutch
+			discount = yes
+		}			
+	}
+	option = {#Hunt Orangutans
+		name = wotd_fauna_events.6.c
+		event_target:faunaprovince = {
+			change_native_hostileness = -4 
+			}		
+	}		
+}
+
+# Stinkbird Hoatzin
+country_event = {
+	id = wotd_fauna_events.7
+	title = wotd_fauna_events.7.t
+	desc = wotd_fauna_events.7.d
+	picture = dodogfx_HOATZIN_eventPicture
+	goto = faunaprovince
+
+	fire_only_once = yes
+	
+	trigger = {
+		ai = no
+		num_of_conquistadors = 1
+		any_province = {
+			is_empty = yes
+			OR = {
+				area = pontal_area
+				area = amazon_area
+				area = upper_guyana_area
+				area = colombian_amazonas_area
+				area = guapore_area
+				area = mato_grosso_area
+			}
+			unit_has_leader = yes 
+			units_in_province = ROOT
+		}
+	}
+	
+		mean_time_to_happen = {
+			days = 60
+		}
+
+	immediate = {
+	hidden_effect = {
+				random_province = {
+					limit = {
+						is_empty = yes
+						OR = {
+							area = pontal_area
+							area = amazon_area
+							area = upper_guyana_area
+							area = colombian_amazonas_area
+							area = guapore_area
+							area = mato_grosso_area
+						}
+						unit_has_leader = yes 
+						units_in_province = ROOT						
+					}
+					save_event_target_as = faunaprovince
+				}
+		}		
+	}
+
+	option = {#bugger
+		name = wotd_fauna_events.7.a									   
+		event_target:faunaprovince = {
+			add_province_modifier = { 
+				name = wotd_bothersome_fauna
+				duration = 120  
+			}
+			every_empty_neighbor_province = {
+				add_province_modifier = { 
+					name = wotd_bothersome_fauna
+					duration = 120  
+				}
+				}
+			}
+	}	
+}
+
+# Rediscovery of â€œDaXiongMao
+country_event = {
+	id = wotd_fauna_events.8
+	title = wotd_fauna_events.8.t
+	desc = wotd_fauna_events.8.d
+	picture = dodogfx_PANDA_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		ai = no
+		owns_core_province = 700		# Xi'an
+		owns_core_province = 4198		# Fengxian
+		owns_core_province = 689		# Hanzhong
+		owns_core_province = 661		# Dali
+		sichuan_area = {
+			type = all
+			owned_by = ROOT
+			has_owner_religion = yes 
+		}		
+		yun_gui_area = {
+			type = all
+			owned_by = ROOT
+			has_owner_religion = yes 
+		}
+		chuannan_area = {
+			type = all
+			owned_by = ROOT
+			has_owner_religion = yes 
+		}
+		chuanbei_area = {
+			type = all
+			owned_by = ROOT
+			has_owner_religion = yes 
+		}				
+	}
+	
+		mean_time_to_happen = {
+			days = 160
+		}
+
+	immediate = {
+	hidden_effect = {
+		}		
+	}
+
+	option = {#Panda Diplomacy
+		name = wotd_fauna_events.8.a
+		if = {
+			limit = {
+				exists = JAP
+			}
+			JAP = {
+				add_opinion = {
+					who = ROOT
+					modifier = wotd_panda_diplomacy
+				}				
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+				exists = JAP
+				}
+				exists = ASK
+			}
+			ASK = {
+				add_opinion = {
+					who = ROOT
+					modifier = wotd_panda_diplomacy
+				}				
+			}
+		}
+		if = {
+			limit = {
+				exists = AYU
+			}
+			AYU = {
+				add_opinion = {
+					who = ROOT
+					modifier = wotd_panda_diplomacy
+				}				
+			}
+		}						
+		random_known_country = {
+			limit = {
+				border_distance = {
+					who = ROOT
+					distance = 400
+				}
+				NOT = {
+					TAG = JAP
+					TAG = AYU
+					TAG = ASK
+				}
+				is_great_power = yes 
+			}
+				add_opinion = {
+					who = ROOT
+					modifier = wotd_panda_diplomacy
+				}			
+		}
+		add_country_modifier = {
+			name = wotd_has_pandas
+			duration = 1095  			
+		}
+	}	
+	option = {#medicinal
+		name = wotd_fauna_events.8.b
+		add_treasury = 150
+		add_prestige = -5									   
+	}	
+}
+
+# A Painters Passing Fancy?
+country_event = {
+	id = wotd_fauna_events.9
+	title = wotd_fauna_events.9.t
+	desc = wotd_fauna_events.9.d
+	picture = dodogfx_OCELOT_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		ai = no
+		any_province = {
+			country_or_vassal_holds = ROOT
+			OR = {
+				superregion = south_america_superregion
+				superregion = central_america_superregion
+				superregion = south_america_superregion
+			}
+			is_overseas = yes
+		}			
+	}
+	
+		mean_time_to_happen = {
+			months = 80
+		}
+
+	immediate = {
+	hidden_effect = {
+		}		
+	}
+
+	option = {#Artist and ocelot
+		name = wotd_fauna_events.9.a
+		define_advisor = {
+			type = artist
+			skill = 3
+			culture = ROOT
+			discount = yes
+		}
+	}	
+	option = {#sell
+		name = wotd_fauna_events.9.b
+		add_treasury = 50
+	}	
+}
+
+# Thieving Tamarins
+country_event = {
+	id = wotd_fauna_events.1000
+	title = wotd_fauna_events.1000.t
+	desc = wotd_fauna_events.1000.d
+	picture = dodogfx_GOLDEN_LION_TAMARIN_eventPicture
+	goto = faunaprovince
+
+	fire_only_once = yes
+	
+	trigger = {
+		ai = no
+		num_of_conquistadors = 1
+		any_province = {
+			is_empty = yes
+			OR = {
+				area = pernambuco_area
+				area = bahia_area
+				area = rio_de_janeiro_area
+				area = minas_gerais_area
+				area = diamantina_area
+				area = sao_paolo_area
+				area = west_sao_paolo_area
+				area = rio_grande_do_sol_area
+			}
+			has_port = no
+			unit_has_leader = yes 
+			units_in_province = ROOT
+			has_terrain = jungle
+		}			
+	}
+	
+		mean_time_to_happen = {
+			days = 30
+		}
+
+	immediate = {
+	hidden_effect = {
+				random_province = {
+					limit = {
+						is_empty = yes
+						OR = {
+							area = pernambuco_area
+							area = bahia_area
+							area = rio_de_janeiro_area
+							area = minas_gerais_area
+							area = diamantina_area
+							area = sao_paolo_area
+							area = west_sao_paolo_area
+							area = rio_grande_do_sol_area
+						}
+						has_port = no
+						unit_has_leader = yes 
+						units_in_province = ROOT						
+						has_terrain = jungle
+					}
+					save_event_target_as = faunaprovince
+				}		
+		}		
+	}
+
+	option = {#Artist and ocelot
+		name = wotd_fauna_events.1000.a
+		event_target:faunaprovince = {
+			kill_leader = {
+				type = conquistador
+			}
+			}
+		define_conquistador = {
+			shock = 2
+			fire = 2
+			manuever = 3
+			siege = 2
+		}
+	}		
+}
+
+#Kangaroos
+country_event = {
+	id = wotd_fauna_events.11
+	title = wotd_fauna_events.11.t
+	desc = wotd_fauna_events.11.d
+	picture = dodogfx_RED_KANGAROO_eventPicture
+	goto = faunaprovince
+
+	fire_only_once = yes
+	
+	trigger = {
+		ai = no
+		has_discovered = 2731
+		2731 = {
+			is_empty = yes
+		}
+		coral_sea_area = {#coral_sea_area
+			light_ships_in_province = ROOT
+		}
+	}
+	
+		mean_time_to_happen = {
+			days = 1
+		}
+
+	immediate = {
+	hidden_effect = {
+				2731 = {
+					save_event_target_as = faunaprovince
+				}
+		}		
+	}
+
+	option = {#save him
+		name = wotd_fauna_events.11.a
+		add_prestige = -5									   
+		add_navy_tradition = 5									   
+	}	
+	option = {#blame officer
+		name = wotd_fauna_events.11.b
+		add_navy_tradition = -10									   
+	}
+}
+
+# Cook Lost in the Jungle Orangutan
+country_event = {
+	id = wotd_fauna_events.13
+	title = wotd_fauna_events.13.t
+	desc = wotd_fauna_events.13.d
+	picture = dodogfx_THYLACINE_WOLF_eventPicture
+	goto = faunaprovince
+
+	fire_only_once = yes
+	
+	trigger = {
+		ai = no
+		any_owned_province = {
+			is_colony = yes
+			province_id = 1085 
+		}
+	}
+	
+		mean_time_to_happen = {
+			days = 60
+		}
+
+	immediate = {
+	hidden_effect = {
+				1085 = {
+					save_event_target_as = faunaprovince
+				}		
+		}		
+	}
+
+	option = {#wolves
+		name = wotd_fauna_events.13.a
+			add_adm_power = -20 
+			random_list = { #general
+			50 = { 
+				event_target:faunaprovince = {
+					change_trade_goods = wool 
+					add_base_production = 1 
+					}
+			}
+			50 = { 
+				event_target:faunaprovince = {
+					change_trade_goods = livestock 
+					add_base_production = 1 
+					}
+			}			
+		}				
+	}
+	option = {#dig deep
+		name = wotd_fauna_events.13.b
+			add_treasury = -50
+			random_list = { #general
+			10 = { 
+				event_target:faunaprovince = {
+					change_trade_goods = gold 
+					}
+			}
+			60 = { 
+				event_target:faunaprovince = {
+					change_trade_goods = iron 
+					}
+			}
+			30 = { 
+				event_target:faunaprovince = {
+					change_trade_goods = copper 
+					}
+			}			
+		}				
+	}	
+	option = {#Cows
+		name = wotd_fauna_events.13.c
+			random_list = { #general
+			50 = { 
+				event_target:faunaprovince = {
+					change_trade_goods = livestock 
+					}
+			}
+			50 = { 
+				event_target:faunaprovince = {
+					change_trade_goods = livestock 
+					add_base_production = -1 
+					}
+			}			
+		}			
+	}		
+}
+
+#Return of the “Cameleopards”
+
+#the Falkland Islands Wolf 
+
+#decision to enable this through a decision to fund a
+#naturalist mission when you first have an explorer
+
+#The Old Man Along the Amur
+
+#Origami Cranes

@@ -1,0 +1,230 @@
+spriteTypes = {
+	
+		# Dodo
+		spriteType = {
+			name = "dodogfx_HUNT_FOR_DODOS_eventPicture"
+			texturefile = "gfx/event_pictures/HUNT_FOR_DODOS_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# Dodo Extinct
+		spriteType = {
+			name = "dodogfx_DODO_EXTINCT_eventPicture"
+			texturefile = "gfx/event_pictures/DODO_EXTINCT_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# KAKAPO_eventPicture 
+		spriteType = {
+			name = "dodogfx_KAKAPO_eventPicture"
+			texturefile = "gfx/event_pictures/FAUNA/KAKAPO_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# ADMIRAL_KAKAPO_eventPicture 
+		spriteType = {
+			name = "dodogfx_ADMIRAL_KAKAPO_eventPicture"
+			texturefile = "gfx/event_pictures/FAUNA/ADMIRAL_KAKAPO_eventPicture.dds"
+			allwaystransparent = yes
+		}		
+
+		# AFRICAN_PENGUINS_eventPicture 
+		spriteType = {
+			name = "dodogfx_AFRICAN_PENGUINS_eventPicture"
+			texturefile = "gfx/event_pictures/FAUNA/AFRICAN_PENGUINS_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# BAIJI_eventPicture 
+		spriteType = {
+			name = "dodogfx_BAIJI_eventPicture"
+			texturefile = "gfx/event_pictures/FAUNA/BAIJI_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# BEAVER_eventPicture 
+		spriteType = {
+			name = "dodogfx_BEAVER_eventPicture"
+			texturefile = "gfx/event_pictures/FAUNA/BEAVER_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# BORNEO_PYGMY_ELEPHANT_eventPicture 
+		spriteType = {
+			name = "dodogfx_BORNEO_PYGMY_ELEPHANT_eventPicture"
+			texturefile = "gfx/event_pictures/FAUNA/BORNEO_PYGMY_ELEPHANT_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# CALIFORNIAN_CONDOR_eventPicture 
+		spriteType = {
+			name = "dodogfx_CALIFORNIAN_CONDOR_eventPicture"
+			texturefile = "gfx/event_pictures/FAUNA/CALIFORNIAN_CONDOR_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# DRAGON_IN_THE_POND_eventPicture 
+		spriteType = {
+			name = "dodogfx_DRAGON_IN_THE_POND_eventPicture"
+			texturefile = "gfx/event_pictures/FAUNA/DRAGON_IN_THE_POND_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# ELEPHANT_BIRD_eventPicture 
+		spriteType = {
+			name = "dodogfx_ELEPHANT_BIRD_eventPicture"
+			texturefile = "gfx/event_pictures/FAUNA/ELEPHANT_BIRD_eventPicture.dds"
+			allwaystransparent = yes
+		}		
+
+		# GOLDEN_LION_TAMARIN_eventPicture 
+		spriteType = {
+			name = "dodogfx_GOLDEN_LION_TAMARIN_eventPicture"
+			texturefile = "gfx/event_pictures/FAUNA/GOLDEN_LION_TAMARIN_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# HOATZIN_eventPicture 
+		spriteType = {
+			name = "dodogfx_HOATZIN_eventPicture"
+			texturefile = "gfx/event_pictures/FAUNA/HOATZIN_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# JAPANESE_GIANT_SALAMANDER_eventPicture 
+		spriteType = {
+			name = "dodogfx_JAPANESE_GIANT_SALAMANDER_eventPicture"
+			texturefile = "gfx/event_pictures/FAUNA/JAPANESE_GIANT_SALAMANDER_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# KOMODO_DRAGON_eventPicture 
+		spriteType = {
+			name = "dodogfx_KOMODO_DRAGON_eventPicture"
+			texturefile = "gfx/event_pictures/FAUNA/KOMODO_DRAGON_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# MANDRILL_MONKEY_eventPicture 
+		spriteType = {
+			name = "dodogfx_MANDRILL_MONKEY_eventPicture"
+			texturefile = "gfx/event_pictures/FAUNA/MANDRILL_MONKEY_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# MOA_HAAST_MAORI_eventPicture 
+		spriteType = {
+			name = "dodogfx_MOA_HAAST_MAORI_eventPicture"
+			texturefile = "gfx/event_pictures/FAUNA/MOA_HAAST_MAORI_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# OCELOT_eventPicture 
+		spriteType = {
+			name = "dodogfx_OCELOT_eventPicture"
+			texturefile = "gfx/event_pictures/FAUNA/OCELOT_eventPicture.dds"
+			allwaystransparent = yes
+		}		
+
+		# ORANGUTAN_eventPicture 
+		spriteType = {
+			name = "dodogfx_ORANGUTAN_eventPicture"
+			texturefile = "gfx/event_pictures/FAUNA/ORANGUTAN_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# PANDA_eventPicture 
+		spriteType = {
+			name = "dodogfx_PANDA_eventPicture"
+			texturefile = "gfx/event_pictures/FAUNA/PANDA_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# PUERTO_RICAN_PARROT_eventPicture 
+		spriteType = {
+			name = "dodogfx_PUERTO_RICAN_PARROT_eventPicture"
+			texturefile = "gfx/event_pictures/FAUNA/PUERTO_RICAN_PARROT_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# RED_KANGAROO_eventPicture 
+		spriteType = {
+			name = "dodogfx_RED_KANGAROO_eventPicture"
+			texturefile = "gfx/event_pictures/FAUNA/RED_KANGAROO_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# RED_PANDA_eventPicture 
+		spriteType = {
+			name = "dodogfx_RED_PANDA_eventPicture"
+			texturefile = "gfx/event_pictures/FAUNA/RED_PANDA_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# ROTHSCHILD_GIRAFFE_eventPicture 
+		spriteType = {
+			name = "dodogfx_ROTHSCHILD_GIRAFFE_eventPicture"
+			texturefile = "gfx/event_pictures/FAUNA/ROTHSCHILD_GIRAFFE_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# SPIXS_MACAW_eventPicture 
+		spriteType = {
+			name = "dodogfx_SPIXS_MACAW_eventPicture"
+			texturefile = "gfx/event_pictures/FAUNA/SPIXS_MACAW_eventPicture.dds"
+			allwaystransparent = yes
+		}		
+
+		# STELLER_SEA_COW_eventPicture 
+		spriteType = {
+			name = "dodogfx_STELLER_SEA_COW_eventPicture"
+			texturefile = "gfx/event_pictures/FAUNA/STELLER_SEA_COW_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# THYLACINE_WOLF_eventPicture 
+		spriteType = {
+			name = "dodogfx_THYLACINE_WOLF_eventPicture"
+			texturefile = "gfx/event_pictures/FAUNA/THYLACINE_WOLF_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# TIMBER_RATTLESNAKE_eventPicture 
+		spriteType = {
+			name = "dodogfx_TIMBER_RATTLESNAKE_eventPicture"
+			texturefile = "gfx/event_pictures/FAUNA/TIMBER_RATTLESNAKE_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# WALRUS_eventPicture 
+		spriteType = {
+			name = "dodogfx_WALRUS_eventPicture"
+			texturefile = "gfx/event_pictures/FAUNA/WALRUS_eventPicture.dds"
+			allwaystransparent = yes
+		}
+
+		# WESTERN_LOWLAND_GORILLA_eventPicture 
+		spriteType = {
+			name = "dodogfx_WESTERN_LOWLAND_GORILLA_eventPicture"
+			texturefile = "gfx/event_pictures/FAUNA/WESTERN_LOWLAND_GORILLA_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		# A Clean Ship
+		spritetype = {
+			name = "A_CLEAN_SHIP_eventPicture.dds"
+			texturefile = "gfx/event_pictures/A_CLEAN_SHIP_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		spritetype = { 
+			name = "MOAI_STATUES_eventPicture.dds"
+			texturefile = "gfx/event_pictures/MOAI_STATUES_eventPicture.dds"
+			allwaystransparent = yes
+		}
+		
+		spitetype = { 
+			name = "FLEET_LOST_IN_STORM_eventPicture.dds"
+			texturefile = "gfx/event_pictures/FLEET_LOST_IN_STORM_eventPicture.dds"
+			allwaystransparent = yes
+		}
+}		

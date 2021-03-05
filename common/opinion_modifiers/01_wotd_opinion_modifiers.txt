@@ -1,0 +1,10 @@
+#Opinion modifiers used in the mod
+wotd_rare_gift = {
+	opinion = 50
+	yearly_decay = 5
+}
+
+wotd_panda_diplomacy = {
+	opinion = 25
+	years = 50
+}

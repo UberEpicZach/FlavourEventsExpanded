@@ -1,0 +1,70 @@
+##################################################################################################
+# scriptable and usable for event-system below.
+##################################################################################################
+
+wotd_fed_sailors = {
+	naval_attrition = -0.75
+	picture = "dodo_province_icon"
+}
+
+wotd_dodo_specimens = {
+	local_institution_spread = 0.25
+	picture = "dodo_province_icon"
+}
+
+wotd_dodos_found = {
+}
+
+wotd_ships_parrot = {
+	naval_tradition_from_battle = 0.1
+	naval_tradition_from_trade = 0.1 
+}
+
+wotd_hamazaki_festival = {
+	trade_goods_size_modifier = 0.25
+}
+
+wotd_hellbender = {
+	local_unrest = -1
+	picture = "hellbender_province_icon"
+}
+
+wotd_royal_dragon = {
+	devotion = 1 
+	republican_tradition = 0.5 
+	legitimacy = 1 
+	horde_unity = 1 
+	meritocracy = 1 
+	imperial_authority_value = 0.1 
+	picture = "hellbender_province_icon"
+}
+
+wotd_mocking_gifts = {
+	power_projection_from_insults = 0.5
+}
+
+wotd_national_pride = {
+	same_culture_advisor_cost = -0.5 
+}
+
+wotd_hostile_fauna = {
+	local_hostile_attrition = 2
+	picture = "elephant_bird_province_icon"
+}
+
+wotd_bothersome_fauna = {
+	local_hostile_movement_speed = -0.5 
+	local_friendly_movement_speed = -0.5 	
+}
+
+wotd_has_pandas = {
+	diplomatic_reputation = 1 	
+}
+
+WOTDcastaways = { 
+	local_colonial_growth = -5 
+}
+
+HurricaneTest = {
+	hostile_fleet_attrition = 100
+}

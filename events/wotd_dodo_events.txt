@@ -1,0 +1,104 @@
+namespace = wotd_dodo_events
+
+# An Odd Flightless Bird
+country_event = {
+	id = wotd_dodo_events.1
+	title = wotd_dodo_events.1.t
+	desc = wotd_dodo_events.1.d
+	picture = dodogfx_HUNT_FOR_DODOS_eventPicture
+	goto = 1102
+
+	fire_only_once = yes
+	
+	trigger = {
+		ai = no
+		has_discovered = 1102
+		1102 = {
+			is_empty = yes
+		}
+		western_indian_ocean_area = {#western_indian_ocean_area
+			light_ships_in_province = ROOT
+		}
+	}
+	
+		mean_time_to_happen = {
+			days = 1
+		}
+
+	immediate = {
+	hidden_effect = {
+				1102 = {
+					save_event_target_as = dodoprovince
+				}
+		}		
+	}
+
+	option = {#eat it
+		name = wotd_dodo_events.1.a
+		add_country_modifier = {
+			name = wotd_fed_sailors
+			duration = 90  
+			}									   
+	}	
+	option = {#send speciment
+		name = wotd_dodo_events.1.b
+		every_owned_province = {
+			limit = {
+				OR = {
+					is_capital = yes
+					has_building = university
+				}
+			}
+		add_province_modifier = {
+			name = wotd_dodo_specimens
+			duration = 7300 
+			}
+		}
+		set_country_flag = wotd_dodo_import
+		hidden_effect = {
+		add_country_modifier = {
+			name = wotd_dodo_specimens
+			duration = 36500 
+			hidden = yes				
+			}
+		}									   
+	}
+	option = {#leave it alone
+		name = wotd_dodo_events.1.c									   
+	}
+}
+
+# Dodo Extinct
+country_event = {
+	id = wotd_dodo_events.2
+	title = wotd_dodo_events.2.t
+	desc = wotd_dodo_events.2.d
+	picture = dodogfx_DODO_EXTINCT_eventPicture
+	goto = 1102
+	
+	trigger = {
+		ai = no
+		has_country_flag = wotd_dodo_import
+		NOT = {
+			has_country_modifier = wotd_dodos_found
+		}
+	}
+	
+		mean_time_to_happen = {
+			days = 1000
+		}
+
+	immediate = {
+	hidden_effect = {
+		clr_country_flag = wotd_dodo_import
+				1102 = {
+					save_event_target_as = dodoprovince
+				}
+		}		
+	}
+
+	option = {#what a waste
+		name = wotd_dodo_events.2.a
+		add_prestige = -10									   
+	}	
+}

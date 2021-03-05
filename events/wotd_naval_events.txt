@@ -1,0 +1,154 @@
+namespace = wotd_naval_events
+
+#MOAI STATUES
+
+country_event = {
+	id = wotd_naval_events.1
+	title = wotd_naval_events.1.t
+	desc = wotd_naval_events.1.d
+	picture = MOAI_STATUES_eventPicture.dds
+	goto = 1988
+	fire_only_once = yes
+
+	trigger = {
+		ai = no
+		has_discovered = 1988
+		NOT = { 
+			is_year = 1551
+		}
+		easter_island_area = {#Easter Island Sea title
+			light_ships_in_province = ROOT
+	}
+	}
+		mean_time_to_happen = {
+			days = 1
+		}
+
+	option = { #we should be moving on
+		name = wotd_naval_events.1.a
+
+	}
+}
+
+#need to add a way to sink said fleet
+#Great Barrier Reef Storm
+country_event = {
+	id = wotd_naval_events.9
+	title = wotd_naval_events.9.t
+	desc = wotd_naval_events.9.d
+	picture = FLEET_LOST_IN_STORM_eventPicture.dds
+	goto = 1092
+	fire_only_once = yes
+
+	trigger = {
+		ai = no
+		1092 = {
+			has_discovered = ROOT
+		  }
+		  great_barrier_reef_area= {#Coast of the Great Barrier Reef
+			light_ships_in_province = ROOT
+	}
+}
+	immediate = {
+	    hidden = { 
+			add_country_flag = BARRIERSTORM
+		}
+	}
+		mean_time_to_happen = {
+			days = 1
+		}
+
+	option = { #All...All of them?
+		name = wotd_naval_events.9.a
+		custom_tooltip = "The Hurricane has sunken our fleet."
+		1411 = {
+			kill_units = {
+				who = ROOT
+				type = light_ship
+				amount = 10
+			}
+			kill_units = {
+				who = ROOT
+				type = heavy_ship 
+				amount = 10 
+			}
+			kill_units = { 
+				who = ROOT			
+				type = galley 
+				amount = 10 
+			}
+			kill_units = {
+				who = ROOT
+				type = transport 
+				amount = 10 
+			}		
+		}
+	}	
+}
+
+#AUSTRIALIAN CASTAWAYS
+country_event = {
+	id = wotd_naval_events.10
+	title = wotd_naval_events.10.t
+	desc = wotd_naval_events.10.d
+	picture = MOAI_STATUES_eventPicture.dds
+	goto = 1092
+	fire_only_once = yes
+
+	trigger = {
+		ai = no
+		has_country_flag = BARRIERSTORM
+		torres_strait_area = {#Coast of the Great Barrier Reef
+			light_ships_in_province = ROOT
+	 	}	
+	}
+		mean_time_to_happen = {
+			days = 1
+		}
+
+	option = { #Create the colony
+		name = wotd_naval_events.10.a
+		custom_tooltip = "Without intervention, this colony is likey to fail in the coming years"
+		1092 = {
+			create_colony = 900
+		 }
+		hidden = {
+			1092 = {
+				name = WOTDcastaways
+				duration = -1 
+		}
+	}
+}
+	option = { #They are sailors, are they not?
+		name = wotd_naval_events.10.b
+		add_sailors = 5000
+	}
+}
+
+country_event = {
+	id = wotd_naval_events.1
+	title = wotd_naval_events.1.t
+	desc = wotd_naval_events.1.d
+	picture = MOAI_STATUES_eventPicture.dds
+	goto = 1988
+	fire_only_once = yes
+
+	trigger = {
+		always = no
+		has_discovered = 1988
+		NOT = { 
+			is_year = 1551
+		}
+		easter_island_area = {#Easter Island Sea title
+			light_ships_in_province = ROOT
+	}
+	}
+		mean_time_to_happen = {
+			days = 1
+		}
+
+	option = { #we should be moving on
+		name = wotd_naval_events.1.a
+
+	}
+}
