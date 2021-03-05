@@ -1,0 +1,714 @@
+########################################################################################
+#Way of the Dodo - Disasters and Development
+################
+#1. Zheng He’s Legacy - Three Jewel Festival
+#2. Trakai Castle
+#3. Sea Cow Cheese
+#4. Growth of the Grachtengordel
+
+namespace = disasters_and_development
+
+# Zheng He’s Legacy - Three Jewel Festival
+country_event = {
+	id = disasters_and_development.1
+	title = disasters_and_development.1.t
+	desc = disasters_and_development.1.d
+	picture = ZHENG_HE_LEGACY_eventPicture
+	trigger = {
+		primary_culture = phoenician
+	}
+	# Develop our Southern Capital.
+	option = { 
+		name = "disasters_and_development.EVTOPTA1"
+	}
+	# Chinese Ceylon - Establish our Hegemony over the Indian Ocean.
+	option = { 
+		name = "disasters_and_development.EVTOPTB1"
+	}
+	# The Festival of Mazu
+	option = { 
+		name = "disasters_and_development.EVTOPTC1"
+	}
+	# A Second Age of Exploration!
+	option = { 
+		name = "disasters_and_development.EVTOPTD1"
+	}
+}
+
+# Trakai Castle
+country_event = {
+	id = disasters_and_development.2
+	title = disasters_and_development.2.t
+	desc = disasters_and_development.2.d
+	picture = TRAKAI_CASTLE_eventPicture
+	trigger = {
+		primary_culture = phoenician
+	}
+	# Fit for a summer palace.
+	option = { 
+		name = "disasters_and_development.EVTOPTA2"
+	}
+	# A luxurious prison for our political prisoners.
+	option = { 
+		name = "disasters_and_development.EVTOPTB2"
+	}
+	# Pawn it off to some count.
+	option = { 
+		name = "disasters_and_development.EVTOPTC2"
+	}
+	# My arse! Its walls have just become 10 feet taller.
+	option = { 
+		name = "disasters_and_development.EVTOPTD2"
+	}
+}
+
+# Sea Cow Cheese
+country_event = {
+	id = disasters_and_development.3
+	title = disasters_and_development.3.t
+	desc = disasters_and_development.3.d
+	picture = SEA_COW_CHEESE_eventPicture
+	trigger = {
+		primary_culture = phoenician
+	}
+	# Excellent. More of that please.
+	option = { 
+		name = "disasters_and_development.EVTOPTA3"
+	}
+}
+
+# Growth of the Grachtengordel
+country_event = {
+	id = disasters_and_development.4
+	title = disasters_and_development.4.t
+	desc = disasters_and_development.4.d
+	picture = GRACHTENGORDEL_eventPicture
+	trigger = {
+		primary_culture = phoenician
+	}
+	# G E K O L O N I S E E R D 
+	option = { 
+		name = "disasters_and_development.EVTOPTA4"
+	}
+}
+
+# 
+country_event = {
+	id = disasters_and_development.
+	title = disasters_and_development..t
+	desc = disasters_and_development..d
+	picture = _eventPicture
+	trigger = {
+		primary_culture = phoenician
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTA"
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTB"
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTC"
+	}
+}
+
+# 
+country_event = {
+	id = disasters_and_development.
+	title = disasters_and_development..t
+	desc = disasters_and_development..d
+	picture = _eventPicture
+	trigger = {
+		primary_culture = phoenician
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTA"
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTB"
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTC"
+	}
+}
+
+# 
+country_event = {
+	id = disasters_and_development.
+	title = disasters_and_development..t
+	desc = disasters_and_development..d
+	picture = _eventPicture
+	trigger = {
+		primary_culture = phoenician
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTA"
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTB"
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTC"
+	}
+}
+
+# 
+country_event = {
+	id = disasters_and_development.
+	title = disasters_and_development..t
+	desc = disasters_and_development..d
+	picture = _eventPicture
+	trigger = {
+		primary_culture = phoenician
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTA"
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTB"
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTC"
+	}
+}
+
+# 
+country_event = {
+	id = disasters_and_development.
+	title = disasters_and_development..t
+	desc = disasters_and_development..d
+	picture = _eventPicture
+	trigger = {
+		primary_culture = phoenician
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTA"
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTB"
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTC"
+	}
+}
+
+# 
+country_event = {
+	id = disasters_and_development.
+	title = disasters_and_development..t
+	desc = disasters_and_development..d
+	picture = _eventPicture
+	trigger = {
+		primary_culture = phoenician
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTA"
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTB"
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTC"
+	}
+}
+
+# 
+country_event = {
+	id = disasters_and_development.
+	title = disasters_and_development..t
+	desc = disasters_and_development..d
+	picture = _eventPicture
+	trigger = {
+		primary_culture = phoenician
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTA"
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTB"
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTC"
+	}
+}
+
+# 
+country_event = {
+	id = disasters_and_development.
+	title = disasters_and_development..t
+	desc = disasters_and_development..d
+	picture = _eventPicture
+	trigger = {
+		primary_culture = phoenician
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTA"
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTB"
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTC"
+	}
+}
+
+# 
+country_event = {
+	id = disasters_and_development.
+	title = disasters_and_development..t
+	desc = disasters_and_development..d
+	picture = _eventPicture
+	trigger = {
+		primary_culture = phoenician
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTA"
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTB"
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTC"
+	}
+}
+
+# 
+country_event = {
+	id = disasters_and_development.
+	title = disasters_and_development..t
+	desc = disasters_and_development..d
+	picture = _eventPicture
+	trigger = {
+		primary_culture = phoenician
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTA"
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTB"
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTC"
+	}
+}
+
+# 
+country_event = {
+	id = disasters_and_development.
+	title = disasters_and_development..t
+	desc = disasters_and_development..d
+	picture = _eventPicture
+	trigger = {
+		primary_culture = phoenician
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTA"
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTB"
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTC"
+	}
+}
+
+# 
+country_event = {
+	id = disasters_and_development.
+	title = disasters_and_development..t
+	desc = disasters_and_development..d
+	picture = _eventPicture
+	trigger = {
+		primary_culture = phoenician
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTA"
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTB"
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTC"
+	}
+}
+
+# 
+country_event = {
+	id = disasters_and_development.
+	title = disasters_and_development..t
+	desc = disasters_and_development..d
+	picture = _eventPicture
+	trigger = {
+		primary_culture = phoenician
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTA"
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTB"
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTC"
+	}
+}
+
+# 
+country_event = {
+	id = disasters_and_development.
+	title = disasters_and_development..t
+	desc = disasters_and_development..d
+	picture = _eventPicture
+	trigger = {
+		primary_culture = phoenician
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTA"
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTB"
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTC"
+	}
+}
+
+# 
+country_event = {
+	id = disasters_and_development.
+	title = disasters_and_development..t
+	desc = disasters_and_development..d
+	picture = _eventPicture
+	trigger = {
+		primary_culture = phoenician
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTA"
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTB"
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTC"
+	}
+}
+
+# 
+country_event = {
+	id = disasters_and_development.
+	title = disasters_and_development..t
+	desc = disasters_and_development..d
+	picture = _eventPicture
+	trigger = {
+		primary_culture = phoenician
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTA"
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTB"
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTC"
+	}
+}
+
+# 
+country_event = {
+	id = disasters_and_development.
+	title = disasters_and_development..t
+	desc = disasters_and_development..d
+	picture = _eventPicture
+	trigger = {
+		primary_culture = phoenician
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTA"
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTB"
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTC"
+	}
+}
+
+# 
+country_event = {
+	id = disasters_and_development.
+	title = disasters_and_development..t
+	desc = disasters_and_development..d
+	picture = _eventPicture
+	trigger = {
+		primary_culture = phoenician
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTA"
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTB"
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTC"
+	}
+}
+
+# 
+country_event = {
+	id = disasters_and_development.
+	title = disasters_and_development..t
+	desc = disasters_and_development..d
+	picture = _eventPicture
+	trigger = {
+		primary_culture = phoenician
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTA"
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTB"
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTC"
+	}
+}
+
+# 
+country_event = {
+	id = disasters_and_development.
+	title = disasters_and_development..t
+	desc = disasters_and_development..d
+	picture = _eventPicture
+	trigger = {
+		primary_culture = phoenician
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTA"
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTB"
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTC"
+	}
+}
+
+# 
+country_event = {
+	id = disasters_and_development.
+	title = disasters_and_development..t
+	desc = disasters_and_development..d
+	picture = _eventPicture
+	trigger = {
+		primary_culture = phoenician
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTA"
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTB"
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTC"
+	}
+}
+
+# 
+country_event = {
+	id = disasters_and_development.
+	title = disasters_and_development..t
+	desc = disasters_and_development..d
+	picture = _eventPicture
+	trigger = {
+		primary_culture = phoenician
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTA"
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTB"
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTC"
+	}
+}
+
+# 
+country_event = {
+	id = disasters_and_development.
+	title = disasters_and_development..t
+	desc = disasters_and_development..d
+	picture = _eventPicture
+	trigger = {
+		primary_culture = phoenician
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTA"
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTB"
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTC"
+	}
+}
+
+# 
+country_event = {
+	id = disasters_and_development.
+	title = disasters_and_development..t
+	desc = disasters_and_development..d
+	picture = _eventPicture
+	trigger = {
+		primary_culture = phoenician
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTA"
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTB"
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTC"
+	}
+}
+
+# 
+country_event = {
+	id = disasters_and_development.
+	title = disasters_and_development..t
+	desc = disasters_and_development..d
+	picture = _eventPicture
+	trigger = {
+		primary_culture = phoenician
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTA"
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTB"
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTC"
+	}
+}
+
+# 
+country_event = {
+	id = disasters_and_development.
+	title = disasters_and_development..t
+	desc = disasters_and_development..d
+	picture = _eventPicture
+	trigger = {
+		primary_culture = phoenician
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTA"
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTB"
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTC"
+	}
+}
+
+# 
+country_event = {
+	id = disasters_and_development.
+	title = disasters_and_development..t
+	desc = disasters_and_development..d
+	picture = _eventPicture
+	trigger = {
+		primary_culture = phoenician
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTA"
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTB"
+	}
+	# 
+	option = { 
+		name = "disasters_and_development.EVTOPTC"
+	}
+}
