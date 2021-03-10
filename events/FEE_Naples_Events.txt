@@ -731,7 +731,7 @@ country_event = {
 			estate = estate_nobles
 			desc = nap_nobles_happy
 			loyalty = 20
-			duration = 20
+			duration = 7300
 		}
 		custom_tooltip = NAPLES_TWENTY_YEARS_PROSPERITY
 		hidden_effect = {
@@ -1281,7 +1281,7 @@ country_event = {
 			estate = estate_nobles
 			desc = nap_nobles_happy
 			loyalty = 20
-			duration = 20
+			duration = 7300
 		}
 		hidden_effect = {
 			every_owned_province = {
