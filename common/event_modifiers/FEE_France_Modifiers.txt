@@ -43,3 +43,15 @@ fee_france_provincialism = {
 	diplomatic_annexation_cost = 0.05
 	num_accepted_cultures = 1
 }
+fee_france_independence_asserted = {
+	diplomatic_reputation = 1
+}
+fee_france_state_control_over_church = {
+	curia_treasury_contribution = -1
+	prestige = 0.005
+	global_tax_modifier = 0.05
+}
+fee_france_church_state = {
+	global_autonomy = -0.05
+	tolerance_own = 1
+}
