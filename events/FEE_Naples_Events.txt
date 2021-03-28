@@ -9,7 +9,10 @@ country_event = {
 
 	fire_only_once = yes
 	trigger = {
-		tag = NAP
+		OR = {
+			tag = NAP
+			tag = TTS
+		}
 		has_ruler = "Alfons V"
 	}
 
@@ -106,7 +109,10 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
 		is_year = 1447
-		tag = NAP
+		OR = {
+			tag = NAP
+			tag = TTS
+		}
 		any_owned_province = {
 			area = central_italy_area
 			OR = {
@@ -167,7 +173,10 @@ country_event = {
 	trigger = {
 		OR = {
 			AND = {
-				tag = NAP
+				OR = {
+					tag = NAP
+					tag = TTS
+				}
 				is_subject = no
 			}
 			AND = {
@@ -280,7 +289,10 @@ country_event = {
 
 	fire_only_once = yes
 	trigger = {
-		tag = NAP
+		OR = {
+			tag = NAP
+			tag = TTS
+		}
 		is_year = 1458
 		owns_core_province = 121
 		121 = { num_of_times_improved = 2 }
@@ -327,7 +339,10 @@ country_event = {
 
 	fire_only_once = yes
 	trigger = {
-		tag = NAP
+		OR = {
+			tag = NAP
+			tag = TTS
+		}
 		is_year = 1484
 		owns_core_province = 121
 		121 = {
@@ -367,7 +382,10 @@ country_event = {
 
 	fire_only_once = yes
 	trigger = {
-		tag = NAP
+		OR = {
+			tag = NAP
+			tag = TTS
+		}
 		NOT = { has_ruler = "Alfons V" }
 		has_ruler = yes
 	}
@@ -422,7 +440,10 @@ country_event = {
 
 	fire_only_once = yes
 	trigger = {
-		tag = NAP
+		OR = {
+			tag = NAP
+			tag = TTS
+		}
 		NOT = { has_ruler = "Alfons V" }
 		NOT = { is_year = 1459 }
 		has_estate = estate_nobles
@@ -710,7 +731,10 @@ country_event = {
 
 	is_triggered_only = yes
 	trigger = {
-		tag = NAP
+		OR = {
+			tag = NAP
+			tag = TTS
+		}
 		is_year = 1465
 		NOT = { has_country_flag = nap_barony_first_risen }
 	}
@@ -763,7 +787,10 @@ country_event = {
 
 	is_triggered_only = yes
 	trigger = {
-		tag = NAP
+		OR = {
+			tag = NAP
+			tag = TTS
+		}
 		has_country_flag = nap_barony_first_risen
 	}
 
@@ -802,7 +829,10 @@ country_event = {
 
 	fire_only_once = yes
 	trigger = {
-		tag = NAP
+		OR = {
+			tag = NAP
+			tag = TTS
+		}
 		is_year = 1464
 		NOT = { is_year = 1486 }
 		has_estate = estate_nobles
@@ -839,7 +869,10 @@ country_event = {
 
 	is_triggered_only = yes
 	trigger = {
-		tag = NAP
+		OR = {
+			tag = NAP
+			tag = TTS
+		}
 		has_estate = estate_nobles
 		NOT = {
 			estate_loyalty = {
@@ -1232,7 +1265,10 @@ country_event = {
 
 	is_triggered_only = yes
 	trigger = {
-		tag = NAP
+		OR = {
+			tag = NAP
+			tag = TTS
+		}
 		has_country_flag = nap_barony_second_risen
 		NOT = { num_of_rebel_controlled_provinces = 1 }
 		NOT = { num_of_rebel_armies = 1 }
@@ -1263,7 +1299,10 @@ country_event = {
 
 	fire_only_once = yes
 	trigger = {
-		tag = NAP
+		OR = {
+			tag = NAP
+			tag = TTS
+		}
 		is_year = 1487
 		NOT = { has_country_flag = nap_barony_second_risen }
 	}
