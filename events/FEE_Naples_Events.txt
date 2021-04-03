@@ -113,18 +113,28 @@ country_event = {
 			tag = NAP
 			tag = TTS
 		}
-		any_owned_province = {
-			area = central_italy_area
-			OR = {
-				num_of_times_improved = 3
-				base_production = 5
+		OR = {
+			development_in_provinces = {
+				value = 50
+				OR = {
+					trade_goods = livestock
+					trade_goods = olive_oil
+					trade_goods = cheese
+				}
 			}
-		}
-		any_owned_province = {
-			area = apulia_area
-			OR = {
-				num_of_times_improved = 3
-				base_production = 5
+			any_owned_province = {
+				area = central_italy_area
+				OR = {
+					num_of_times_improved = 3
+					base_production = 5
+				}
+			}
+			any_owned_province = {
+				area = apulia_area
+				OR = {
+					num_of_times_improved = 3
+					base_production = 5
+				}
 			}
 		}
 	}
