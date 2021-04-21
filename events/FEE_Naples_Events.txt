@@ -86,13 +86,13 @@ country_event = {
 		}
 		BYZ = {
 			add_opinion = {
-				who = BYZ
+				who = ROOT
 				modifier = fee_naples_recoinciliation
 			}
 		}
 		PAP = {
 			add_opinion = {
-				who = BYZ
+				who = ROOT
 				modifier = fee_naples_recoinciliation
 			}
 		}
@@ -398,6 +398,10 @@ country_event = {
 		}
 		NOT = { has_ruler = "Alfons V" }
 		has_ruler = yes
+	}
+
+	mean_time_to_happen = {
+		months = 12
 	}
 
 	option = {
