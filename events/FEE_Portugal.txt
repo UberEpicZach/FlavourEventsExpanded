@@ -1,0 +1,703 @@
+namespace = FEE_Portugal_Events
+
+#Luis de Camoes
+country_event = {
+	id = FEE_Portugal_Events.1
+	title = FEE_Portugal_Events.1.t
+	desc = FEE_Portugal_Events.1.OPT4
+	picture = ADVISOR_eventPicture
+	fire_only_once = yes
+	trigger = {
+		tag = POR
+		is_year = 1530
+		NOT = {
+			is_year = 1580
+		}
+	}
+	mean_time_to_happen = {
+		months = 240
+	}
+	option = {
+		name = FEE_Portugal_Events.1.OPT1
+		add_prestige = 15
+		add_stability_or_adm_power = yes
+		add_navy_tradition = 5
+	}
+}
+
+#Sebastianism for free Portugal
+country_event = {
+	id = FEE_Portugal_Events.2
+	title = FEE_Portugal_Events.2.t
+	desc = FEE_Portugal_Events.2.OPT4
+	picture = SHIP_SAILING_eventPicture
+	fire_only_once = yes
+	trigger = {
+		tag = POR
+		is_subject = no
+		is_year = 1580
+		NOT = {
+			is_year = 1680
+		}
+		OR = {
+			AND = {
+				has_heir = no
+				NOT = {
+					dynasty = "de Avis"
+				}
+			}
+			has_regency = yes
+			ruler_is_foreigner = yes
+		}
+	}
+	option = {
+		#His name is Sebastian, and that's good enough for me.
+		name = FEE_Portugal_Events.2.OPT1
+		define_ruler = {
+			name = "Sebastian"
+			dynasty = "de Avis"
+			mil = 2
+			dip = 3
+			adm = 3
+			age = 28
+			claim = 30
+		}
+	}
+	option = {
+		#Send away this impostor!
+		name = FEE_Portugal_Events.2.OPT2
+		add_legitimacy = 5
+		add_country_modifier = {
+			name = fee_sebastianism
+			duration = 1825
+		}
+	}
+}
+
+#Spiceless!
+country_event = {
+	id = FEE_Portugal_Events.3
+	title = FEE_Portugal_Events.3.T
+	desc = FEE_Portugal_Events.3.D
+	picture = SHIP_SAILING_eventPicture
+
+	fire_only_once = yes
+
+	major = yes
+	major_trigger = {
+		capital_scope = {
+			superregion = europe_superregion
+		}
+	}
+
+	trigger = {
+		tag = POR
+		NOT = { exists = BYZ }
+		151 = {
+			owner = {
+				NOT = {
+					religion_group = christian
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = FEE_Portugal_Events.3.OPT1
+
+		create_explorer = {
+			tradition = 60
+		}
+		add_country_modifier = {
+			name = fee_por_spice_sail
+			duration = 10950
+		}
+		if = {
+			limit = {
+				capital_scope = {
+					has_port = yes
+				}
+			}
+			capital_scope = {
+				add_unit_construction = {
+					type = light_ship
+					amount = 3
+					speed = 0.5
+					cost = 0
+				}
+			}
+		}
+		else = {
+			random_owned_province = {
+				limit = {
+					has_port = yes
+				}
+				add_unit_construction = {
+					type = light_ship
+					amount = 3
+					speed = 0.5
+					cost = 0
+				}
+			}
+		}
+	}
+}
+
+#The School of Sagres
+country_event = {
+	id = FEE_Portugal_Events.4
+	title = FEE_Portugal_Events.4.T
+	desc = FEE_Portugal_Events.4.D
+	picture = UNIVERSITY_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = POR
+		current_age = age_of_discovery
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = FEE_Portugal_Events.4.OPT1
+		add_years_of_income = -0.5
+		
+		custom_tooltip = fee_portugal_henrique_duration
+		add_country_modifier = {
+			name = fee_por_henrique_naval_reforms
+			duration = -1
+		}
+		define_advisor = {
+			type = navigator
+			name = "Henry the Navigator"
+			skill = 3
+			culture = portugese
+			religion = catholic
+			cost_multiplier = 0.25
+		}		
+		hidden_effect = { country_event = {	id = FEE_Portugal_Events.100 } }
+	}
+
+	option = {
+		name = FEE_Portugal_Events.4.OPT2
+
+		add_legitimacy_equivalent_fee = {
+			value = 10
+		}
+	}
+}
+
+# A rising star
+country_event = {
+	id = FEE_Portugal_Events.5
+	title = FEE_Portugal_Events.5.T
+	desc = FEE_Portugal_Events.5.D
+	picture = UNIVERSITY_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = POR
+		exploration_ideas = 1
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = FEE_Portugal_Events.5.OPT1
+		
+		add_years_of_income = -0.25
+		add_country_modifier = {
+			name = fee_por_francisco_de_almeida
+			duration = -1
+		}
+		custom_tooltip = fee_por_francisco_custom_tooltip_1
+	}
+
+	option = {
+		name = FEE_Portugal_Events.5.OPT2
+
+		define_general = {
+			name = "Francisco de Almeida"
+			shock = 5
+			fire = 5
+			manuever = 4
+			siege = 2
+			trait = master_of_arms_personality
+		}
+		custom_tooltip = fee_por_francisco_custom_tooltip_2
+	}
+
+	option = {
+		name = FEE_Portugal_Events.5.OPT3
+
+		add_prestige = 10
+		add_papal_influence = 10
+	}
+}
+
+
+
+#The Shores of Africa
+country_event = {
+	id = FEE_Portugal_Events.6
+	title = FEE_Portugal_Events.6.T
+	desc = FEE_Portugal_Events.6.D
+	picture = BIG_ARABIAN_CITY_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = POR
+		has_country_modifier = fee_por_francisco_de_almeida
+		334 = {
+			owned_by = ROOT
+			has_province_modifier = slaves_raided
+		}
+		4563 = {
+			NOT = { 
+				owner = {
+					ai = no
+				}
+			}
+			NOT = {
+				owner = {
+					capital_scope = {
+						NOT = {
+							region = maghreb_region
+						}
+					}
+				}
+			}
+		}
+	}
+
+	immediate = {
+		4563 = {
+			owner = {
+				save_event_target_as = sale_owner
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 150
+	}
+
+	option = {
+		name = FEE_Portugal_Events.6.OPT1
+		ai_chance = {
+			factor = 50
+		}
+		
+		add_mil_power = -100
+		4563 = {
+			owner = {
+				add_country_modifier = {
+					name = fee_por_portuguese_weaponry
+					duration = 5475
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = fee_por_portuguese_weaponry
+				}
+				reverse_add_opinion = {
+					who = ROOT
+					modifier = fee_por_portuguese_weaponry
+				}
+			}
+		}
+		random_list = {
+			50 = { 
+				country_event = {
+					id = FEE_Portugal_Events.7
+					days = 15
+				}
+			}
+			50 = { 
+				country_event = {
+					id = FEE_Portugal_Events.8
+					days = 15
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Portugal_Events.6.OPT2
+		ai_chance = {
+			factor = 50
+		}
+		
+		add_prestige = 10
+		4563 = {
+			owner = {
+				add_opinion = {
+					who = ROOT
+					modifier = fee_por_failed_diplomacy
+				}
+				reverse_add_opinion = {
+					who = ROOT
+					modifier = fee_por_failed_diplomacy
+				}
+			}
+		}
+	}
+}
+
+#Emir Lends his Aid
+country_event = {
+	id = FEE_Portugal_Events.7
+	title = FEE_Portugal_Events.7.T
+	desc = FEE_Portugal_Events.7.D
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Portugal_Events.7.OPT1
+
+		add_dip_power = 100
+	}
+}
+
+#Emir's Betrayal
+country_event = {
+	id = FEE_Portugal_Events.8
+	title = FEE_Portugal_Events.8.T
+	desc = FEE_Portugal_Events.8.D
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Portugal_Events.8.OPT1
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				OR = {
+					NOT = { stability = 1 }
+					NOT = { manpower_percentage = 0.5 }
+					war_exhaustion = 1
+				}
+			}
+		}
+
+		declare_war_with_cb = {
+			casus_belli = cb_vassalize_mission
+			who = event_target:sale_owner
+		}
+		custom_tooltip = fee_por_end_war_tt
+		add_country_modifier = {
+			name = fee_por_avenge_betrayal
+			duration = -1
+		}
+
+		hidden_effect = {
+			country_event = {
+				id = FEE_Portugal_Events.101
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Portugal_Events.8.OPT2
+		ai_chance = {
+			factor = 50
+		}
+
+		add_prestige = -15
+	}
+}
+
+#To Africa!
+country_event = {
+	id = FEE_Portugal_Events.9
+	title = FEE_Portugal_Events.9.T
+	desc = FEE_Portugal_Events.9.D
+	picture = EXPLORERS_eventPicture
+
+	fire_only_once = yes
+	trigger = {
+		tag = POR
+		has_country_modifier = fee_por_francisco_de_almeida
+		any_province = {
+			superregion = india_superregion
+			has_discovered = ROOT
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = FEE_Portugal_Events.9.OPT1
+		ai_chance = {
+			factor = 33
+			modifier = {
+				factor = 0
+				NOT = { treasury = 250 }
+			}
+		}
+
+		add_treasury = -250
+		create_explorer = {
+			tradition = 60
+		}
+		1196 = {
+			if = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+		1201 = {
+			if = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+		1186 = {
+			if = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+		if = {
+			limit = {
+				capital_scope = {
+					has_port = yes
+				}
+			}
+			capital_scope = {
+				add_unit_construction = {
+					type = heavy_ship
+					cost = 0
+					speed = 0.25
+					amount = 3
+				}
+				if = {
+					limit = {
+						any_neighbor_province = {
+							has_port = yes
+							owned_by = ROOT
+						}
+					}
+					random_neighbor_province = {
+						limit = {
+							has_port = yes
+							owned_by = ROOT
+						}
+						add_unit_construction = {
+							type = light_ship
+							cost = 0
+							speed = 0.25
+							amount = 7
+						}
+					}
+				}
+			}
+		}
+		else = {
+			random_owned_province = {
+				limit = { has_port = yes }
+				add_unit_construction = {
+					type = heavy_ship
+					cost = 0
+					speed = 0.25
+					amount = 3
+				}
+			}
+			random_owned_province = {
+				limit = { has_port = yes }
+				add_unit_construction = {
+					type = light_ship
+					cost = 0
+					speed = 0.25
+					amount = 7
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Portugal_Events.9.OPT2
+		ai_chance = {
+			factor = 33
+			modifier = {
+				factor = 0
+				NOT = { treasury = 125 }
+			}
+		}
+
+		1196 = {
+			if = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+		1201 = {
+			if = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+		1186 = {
+			if = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+		if = {
+			limit = {
+				capital_scope = {
+					has_port = yes
+				}
+			}
+			capital_scope = {
+				add_unit_construction = {
+					type = heavy_ship
+					cost = 0
+					speed = 0.25
+					amount = 3
+				}
+			}
+		}
+		else = {
+			random_owned_province = {
+				limit = { has_port = yes }
+				add_unit_construction = {
+					type = heavy_ship
+					cost = 0
+					speed = 0.25
+					amount = 3
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Portugal_Events.9.OPT3
+		ai_chance = {
+			factor = 33
+		}
+
+	}
+}
+
+country_event = {
+	id = FEE_Portugal_Events.
+	title = FEE_Portugal_Events..T
+	desc = FEE_Portugal_Events..D
+	picture = FARMING_eventPicture
+
+	fire_only_once = yes
+	trigger = {
+		tag = NAP
+	}
+
+	mean_time_to_happen = {
+		days = 60
+	}
+
+	option = {
+		name = FEE_Portugal_Events..OPT1
+
+	}
+
+	option = {
+		name = FEE_Portugal_Events..OPT2
+
+	}
+
+	option = {
+		name = FEE_Portugal_Events..OPT3
+
+	}
+}
+
+#Remove Naval Reforms
+country_event = {
+	id = FEE_Portugal_Events.100
+	title = FEE_Portugal_Events.100.T
+	desc = FEE_Portugal_Events.100.D
+	picture = UNIVERSITY_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag = POR
+		NOT = { current_age = age_of_discovery }
+		has_country_modifier = fee_por_henrique_naval_reforms
+	}
+
+	immediate = {
+		hidden_effect = {
+			remove_country_modifier = fee_por_henrique_naval_reforms
+		}
+	}
+
+	option = {
+		name = FEE_Portugal_Events.100.OPT1
+	}
+}
+
+
+
+#Remove Naval Reforms
+country_event = {
+	id = FEE_Portugal_Events.101
+	title = FEE_Portugal_Events.101.T
+	desc = FEE_Portugal_Events.101.D
+	picture = UNIVERSITY_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag = POR
+		NOT = { 
+			war_with = event_target:sale_owner
+		}
+		has_country_modifier = fee_por_avenge_betrayal
+	}
+
+	immediate = {
+		hidden_effect = {
+			remove_country_modifier = fee_por_avenge_betrayal
+		}
+	}
+
+	option = {
+		name = FEE_Portugal_Events.101.OPT1
+	}
+}

@@ -1,0 +1,22 @@
+fee_por_spice_sail = {
+	range = 0.2
+}
+
+fee_por_henrique_naval_reforms = {
+	heavy_ship_power = 0.1
+	dip_tech_cost_modifier = -0.05
+	global_ship_cost = -0.1
+}
+
+fee_por_francisco_de_almeida = {
+	land_morale = 0.05
+}
+
+fee_por_portuguese_weaponry = {
+	mil_tech_cost_modifier = -0.10
+}
+
+fee_por_avenge_betrayal = {
+	ae_impact = -0.20
+	province_warscore_cost = -0.15
+}
