@@ -42,6 +42,28 @@
  FEE_Portugal_Events.9.OPT2: "Let us not overextend; why send an armada when a few ships will do?"
  FEE_Portugal_Events.9.OPT3: "Let us steer clear of Africa. Who knows what trouble could lie there?"
 
+ FEE_Portugal_Events.10.T: "Looking to India"
+ FEE_Portugal_Events.10.D: "Having established a presence in Africa, we are tantalizingly close to India itself. Appreciative of Almeida’s success, the crown has vested him with the title “Viceroy of India.” Of course, as we yet have little presence in India this title is mostly ceremonial. Both Almeida and the crown, however, have plans to change that, both revolving around the potentially lucrative spices of Cannanore. \n\nPast that, whether their plans are the same remains to be seen. "
+ FEE_Portugal_Events.10.OPT1: "Let us deal diplomatically for a foothold in India, as per the crown’s plan"
+ FEE_Portugal_Events.10.OPT2: "Let us listen to Almeida and use some “persuasion”"
+
+ FEE_Portugal_Events.11.T: "The Zamorin"
+ FEE_Portugal_Events.11.D: "While our setting up of trading posts in India has so far met with great success, more than one local Hindu prince is jealous of our profits. One of the most prominent, known simply as ‘The Zamorin,’ rules over the rich port of Calicut and has begun assembling an alliance against us! Rather than respecting our trade, he demands payment for all the lost trade income he blames on us having better offers than he...\n\nAlmeida wishes to meet this threat head-on at sea rather than wait for the Zamorin to come to us..."
+ FEE_Portugal_Events.11.OPT1: "We must prepare for battle on the seas"
+ FEE_Portugal_Events.11.OPT2: "Let us seek an alliance of our own to contain this threat"
+ FEE_Portugal_Events.11.OPT3: "Give the Zamorin what he wants"
+
+ FEE_Portugal_Events.12.T: "Almeida’s Son Killed!"
+ FEE_Portugal_Events.12.D: "After Francisco de Almeida finally settled in as Viceroy of Portugal’s holdings in India, tragedy struck. Francisco had sent his only son, Lourenco de Almeida, on routine expeditions of his own to secure additional trade opportunities on the Indian coast. However, news arrived back in Cannanore that Lourenco had run across an Egyptian fleet heading to India to pirate our hard-won trade! \n\nIn the resulting skirmish, Lourenco was killed. Francisco did not take this news well, and went into a deep depression and rage, vowing revenge. His men, having followed him for years through great hardship, are likely to follow him come what may. \n\nMeanwhile back in Lisbon, whispers at the royal court have begun to accuse Almeida of treason against the crown, that he only sought power from himself in India, where distance already makes him de-facto independent. No doubt these whispers are at least partly fueled by jealousy. Indeed, Almeida has been a loyal servant of Portugal since before the way to India was even discovered. However, the risk of treason is real, and it is not to be taken lightly."
+ FEE_Portugal_Events.12.OPT1: "Clearly, Almeida is no longer fit for duty."
+ FEE_Portugal_Events.12.OPT2: "Almeida has proven a loyal servant of the state."
+ FEE_Portugal_Events.12.OPT3: "Lourenco’s death is an unacceptable loss!"
+
+ FEE_Portugal_Events.13.T: "Almeida Defies the King"
+ FEE_Portugal_Events.13.D: "Almeida’s thirst for revenge was clearly greater than anyone anticipated. No sooner had Alfonso de Albuquerque landed in India as Almeida’s replacement than Almeida did the unthinkable. Arresting Alfonso, he gathered a fleet and set sail on his own behalf. He promises, however, that he will return his fleet and men to the authority of Portugal as soon as his revenge is complete."
+ FEE_Portugal_Events.13.OPT1: "He is nothing but a traitor!"
+ FEE_Portugal_Events.13.OPT2: "We have no choice but to hope he keeps his word"
+
  FEE_Portugal_Events.100.T: "Hidden Event 100"
  FEE_Portugal_Events.100.D: "Notify the head of Flavours and Events Expanded"
  FEE_Portugal_Events.100.OPT1: "and write +zach in the chat"
@@ -57,12 +79,23 @@
  fee_por_portuguese_weaponry: "Portuguese Weaponry"
  fee_por_avenge_betrayal: "Avenge Betrayal"
 
+ fee_por_vendettas_sanctioned: "Vendettas Sanctioned"
+ fee_por_pursuing_enemies: "Pursuing Enemies"
  #Opinion Modifiers
  fee_por_portuguese_weaponry: "Portuguese Weaponry"
  fee_por_failed_diplomacy: "Failed Diplomacy"
+ fee_por_diplomacy: "Diplomacy"
+ fee_por_persuasion: "Persuasion"
+ fee_por_alliance: "Alliance"
+ fee_por_bows_local_rulers: "Bows to Local Rulers"
 
  #ToolTips
  fee_por_francisco_custom_tooltip_1: "Francisco will be allowed to follow his passion. We will hear from him again... (opens colonial events related to francisco)"
  fee_por_francisco_custom_tooltip_2: "Francisco's colonial ambitions will be forever crushed."
  fee_portugal_henrique_duration: "The following modifier will last until the end of the Age of Discovery"
  fee_por_end_war_tt: "This modifier will last until the end of the war."
+
+ fee_por_killed_1: "A replacement must be sent at once and Almeida must be arrested!\n"
+ fee_por_killed_2: "He may have his revenge, and then must be replaced.\n"
+ fee_por_killed_3: "We shall assist our loyal servant.\n"
+ fee_por_king: "Henceforth he and anyone who follow him are outlaws!\n"

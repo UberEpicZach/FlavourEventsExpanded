@@ -6,6 +6,22 @@ fee_por_failed_diplomacy = {
 	opinion = -100
 	yearly_decay = 2
 }
+fee_por_diplomacy = {
+	opinion = 100
+	yearly_decay = 1
+}
+fee_por_persuasion = {
+	opinion = -100
+	yearly_decay = 1
+}
+fee_por_alliance = {
+	opinion = 100
+	yearly_decay = 1
+}
+fee_por_bows_local_rulers = {
+	opinion = 100
+	yearly_decay = 2
+}
 #name_of_modifier = {
 #	opinion = 1
 #	min = -15			# optional

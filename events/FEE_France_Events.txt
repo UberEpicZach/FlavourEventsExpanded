@@ -423,6 +423,10 @@ country_event = {
 		name = FEE_France_Events.5.OPT2
 
 		add_stability_or_adm_power = yes
+		change_estate_land_share = {
+			estate = estate_nobles
+			share = 5
+		}
 	}
 
 	option = {
@@ -758,7 +762,7 @@ country_event = {
 		add_stability_or_adm_power = yes
 		change_estate_land_share = {
 			estate = estate_church
-			share = -5
+			share = 5
 		}
 		add_estate_loyalty_modifier = {
 			estate = estate_church

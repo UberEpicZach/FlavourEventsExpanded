@@ -20,3 +20,11 @@ fee_por_avenge_betrayal = {
 	ae_impact = -0.20
 	province_warscore_cost = -0.15
 }
+
+fee_por_vendettas_sanctioned = {
+	may_perform_slave_raid_on_same_religion = yes
+	privateer_efficiency = 0.25
+}
+fee_por_pursuing_enemies = {
+	naval_morale = 0.10
+}
