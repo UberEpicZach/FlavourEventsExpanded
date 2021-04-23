@@ -30,7 +30,10 @@ fee_por_pursuing_enemies = {
 }
 
 fee_por_jewish_liberties_granted = {
-	tolerance_heathen = 3
+	tolerance_heathen = 2
+	trade_efficiency = 0.05
+	papal_influence = -2
+	tolerance_own = -1
 }
 fee_por_prospering_jewish_communities = {
 	production_efficiency = 0.10
