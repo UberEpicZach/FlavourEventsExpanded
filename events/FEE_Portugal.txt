@@ -1008,16 +1008,538 @@ country_event = {
 	}
 }
 
-#
+#Securing our African Interests
 country_event = {
-	id = FEE_Portugal_Events.
-	title = FEE_Portugal_Events..T
-	desc = FEE_Portugal_Events..D
-	picture = FARMING_eventPicture
+	id = FEE_Portugal_Events.14
+	title = FEE_Portugal_Events.14.T
+	desc = FEE_Portugal_Events.14.D
+	picture = BURGHER_ESTATE_eventPicture
 
 	fire_only_once = yes
 	trigger = {
 		tag = POR
+		has_estate = estate_burghers
+		num_of_owned_provinces_with = {
+			value = 2
+			any_trade_node_member_province = {
+				province_id = 1466 #Ivory Coast
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = FEE_Portugal_Events.14.OPT1
+
+		add_mil_power = -100
+		add_estate_burghers_loyalty_effect = yes
+		custom_tooltip = securing_african_interest_TT
+		hidden_effect = {
+			1466 = {
+				every_trade_node_member_province = {
+					limit = {
+						owned_by = ROOT
+					}
+					if = {
+						limit = {
+							ROOT = { mil_tech = 24 }
+						}
+						if = {
+							limit = {
+								NOT = { has_building = fort_18th }
+							}
+							hidden_effect = {
+								remove_building = fort_15th
+								remove_building = fort_16th
+								remove_building = fort_17th
+							}
+							add_building_construction = {
+								building = fort_18th
+								speed = 1
+								cost = 0
+							}
+						}
+					}
+					else_if = {
+						limit = {
+							ROOT = {
+								mil_tech = 19
+								NOT = { mil_tech = 24 }
+							}
+						}
+						if = {
+							limit = {
+								NOT = { has_building = fort_17th }
+							}
+							hidden_effect = {
+								remove_building = fort_15th
+								remove_building = fort_16th
+							}
+							add_building_construction = {
+								building = fort_17th
+								speed = 1
+								cost = 0
+							}
+						}
+					}
+					else_if = {
+						limit = {
+							ROOT = {
+								mil_tech = 14
+								NOT = { mil_tech = 19 }
+							}
+						}
+						if = {
+							limit = {
+								NOT = { has_building = fort_16th }
+							}
+							hidden_effect = {
+								remove_building = fort_15th
+							}
+							add_building_construction = {
+								building = fort_16th
+								speed = 1
+								cost = 0
+							}
+						}
+					}
+					else = {
+						if = {
+							limit = {
+								NOT = { has_building = fort_15th }
+							}
+							add_building_construction = {
+								building = fort_15th
+								speed = 1
+								cost = 0
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Portugal_Events.14.OPT2
+		
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = -15
+		}
+	}
+}
+
+#Sephardic Jews Arrive in Portugal
+country_event = {
+	id = FEE_Portugal_Events.15
+	title = FEE_Portugal_Events.15.T
+	desc = FEE_Portugal_Events.15.D
+	picture = RELIGIOUS_MIGRANTS_eventPicture
+
+	fire_only_once = yes
+	trigger = {
+		tag = POR
+		NOT = { exists = GRA }
+		exists = CAS
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = FEE_Portugal_Events.15.OPT1
+		ai_chance = {
+			factor = 33
+		}
+
+		add_stability = -1
+		add_ruler_modifier = {
+			name = fee_por_jewish_liberties_granted
+		}
+		add_ruler_modifier = {
+			name = fee_por_prospering_jewish_communities
+		}
+		capital_scope = {
+			add_base_tax = 3
+		}
+		random_owned_province = {
+			limit = { region = iberia_region }
+			change_religion = jewish
+		}
+		CAS = {
+			add_opinion = {
+				who = ROOT
+				modifier = fee_por_jewish_welcome
+			}
+			reverse_add_opinion = {
+				who = ROOT
+				modifier = fee_por_jewish_welcome
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Portugal_Events.15.OPT2
+		ai_chance = {
+			factor = 33
+		}
+
+		add_stability = -1
+		add_yearly_manpower = 1
+		add_ruler_modifier = {
+			name = fee_por_jewish_liberties_granted
+		}
+		add_ruler_modifier = {
+			name = fee_por_jewish_weaponsmiths
+		}
+		random_owned_province = {
+			limit = {
+				region = iberia_region
+				NOT = { is_capital_of = ROOT }
+			}
+			change_religion = jewish
+		}
+		CAS = {
+			add_opinion = {
+				who = ROOT
+				modifier = fee_por_jewish_welcome
+			}
+			reverse_add_opinion = {
+				who = ROOT
+				modifier = fee_por_jewish_welcome
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Portugal_Events.15.OPT3
+		ai_chance = {
+			factor = 33
+		}
+
+		add_stability_or_adm_power = yes
+		if = {
+			limit = {
+				religion = catholic
+			}
+			add_papal_influence = 10
+		}
+		CAS = {
+			add_opinion = {
+				who = ROOT
+				modifier = fee_por_jewish_rejected
+			}
+			reverse_add_opinion = {
+				who = ROOT
+				modifier = fee_por_jewish_rejected
+			}
+		}
+	}
+}
+
+#Expulsion of the Jews?
+country_event = {
+	id = FEE_Portugal_Events.16
+	title = FEE_Portugal_Events.16.T
+	desc = FEE_Portugal_Events.16.D
+	picture = RELIGIOUS_MIGRANTS_eventPicture
+
+	fire_only_once = yes
+	trigger = {
+		tag = POR
+		has_ruler_modifier = fee_por_jewish_liberties_granted
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = FEE_Portugal_Events.16.OPT1
+		ai_chance = {
+			factor = 33
+		}
+
+		add_years_of_income = 1
+		add_stability = -1
+		remove_country_modifier = fee_por_jewish_liberties_granted
+		add_country_modifier = {
+			name = fee_por_jewish_expulsion
+			duration = 9125
+		}
+	}
+
+	option = {
+		name = FEE_Portugal_Events.16.OPT2
+		ai_chance = {
+			factor = 33
+		}
+
+		remove_country_modifier = fee_por_jewish_liberties_granted
+		add_country_modifier = {
+			name = fee_por_jewish_conversion_attempts
+			duration = 9125
+		}
+	}
+
+	option = {
+		name = FEE_Portugal_Events.16.OPT3
+		ai_chance = {
+			factor = 33
+		}
+
+		add_stability = -1
+		random_owned_province = {
+			limit = { region = iberia_region }
+			spawn_rebels = {
+				size = 2
+				type = catholic_rebels
+			}
+		}
+		random_owned_province = {
+			limit = { region = iberia_region }
+			spawn_rebels = {
+				size = 2
+				type = catholic_rebels
+			}
+		}
+		random_owned_province = {
+			limit = { region = iberia_region }
+			spawn_rebels = {
+				size = 2
+				type = catholic_rebels
+			}
+		}
+	}
+}
+
+#Securing Malacca Trade
+country_event = {
+	id = FEE_Portugal_Events.17
+	title = FEE_Portugal_Events.17.T
+	desc = FEE_Portugal_Events.17.D
+	picture = TRADE_GOODS_eventPicture
+
+	fire_only_once = yes
+	trigger = {
+		tag = POR
+		owns_core_province = 596
+	}
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	option = {
+		name = FEE_Portugal_Events.17.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_years_of_income = -0.5
+		add_dip_power = -100
+		596 = {
+			add_base_production = 3
+			if = {
+				limit = {
+					province_has_center_of_trade_of_level = 3
+				}
+				add_province_modifier = {
+					name = fee_por_malacca_restored
+					duration = -1
+				}
+			}
+			else = {
+				add_center_of_trade_level = 1
+			}
+		}
+		add_estate_burghers_loyalty_effect = yes
+	}
+
+	option = {
+		name = FEE_Portugal_Events.17.OPT2
+		ai_chance = {
+			factor = 50
+		}
+
+		add_years_of_income = 0.1
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = -10
+		}
+	}
+}
+
+#Portuguese Arrivals in Japan
+country_event = {
+	id = FEE_Portugal_Events.18
+	title = FEE_Portugal_Events.18.T
+	desc = FEE_Portugal_Events.18.D
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	trigger = {
+		tag = POR
+		1012 = {
+			has_discovered = ROOT
+			owner = {
+				capital_scope = {
+					region = japan_region
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = {
+		name = FEE_Portugal_Events.18.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_years_of_income = 0.1
+		add_mil_power = -50
+		1376 = {
+			add_trade_modifier = {
+				who = ROOT
+				duration = 18250
+				power = 20
+				key = fee_por_japan_weapons_trafficking
+			}
+		}
+		1012 = {
+			owner = {
+				add_mil_power = 100
+				add_country_modifier = {
+					name = fee_por_portuguese_weaponry_japan
+					duration = 18250
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = fee_por_japan_weapons_trafficking
+				}
+				reverse_add_opinion = {
+					who = ROOT
+					modifier = fee_por_japan_weapons_trafficking
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Portugal_Events.18.OPT2
+		ai_chance = {
+			factor = 50
+		}
+		
+		add_prestige = 10
+	}
+}
+
+#Ferdinand Magellan 
+country_event = {
+	id = FEE_Portugal_Events.19
+	title = FEE_Portugal_Events.19.T
+	desc = FEE_Portugal_Events.19.D
+	picture = ADVISOR_eventPicture
+
+	fire_only_once = yes
+	trigger = {
+		tag = POR
+		is_year = 1550
+		exists = SPA
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = FEE_Portugal_Events.19.OPT1
+		ai_chance = {
+			factor = 33
+		}
+
+		define_explorer = {
+			fire = 3
+			shock = 3
+			manuever = 6
+			siege = 1
+			name = "Ferdinand Magellan"
+		}
+		add_country_modifier = {
+			name = fee_por_magellan_expedition
+			duration = 5475
+		}
+		add_opinion = {
+			who = SPA
+			modifier = fee_por_magellan_portuguese
+		}
+		reverse_add_opinion = {
+			who = SPA
+			modifier = fee_por_magellan_portuguese
+		}
+	}
+
+	option = {
+		name = FEE_Portugal_Events.19.OPT2
+		ai_chance = {
+			factor = 33
+		}
+
+		define_advisor = {
+			type = navigator
+			name = "Ferdinand Magellan"
+			skill = 3
+			cost_multiplier = 0.25
+		}
+	}
+
+	option = {
+		name = FEE_Portugal_Events.19.OPT3
+		ai_chance = {
+			factor = 33
+		}
+
+		add_opinion = {
+			who = SPA
+			modifier = fee_por_magellan_spanish
+		}
+		reverse_add_opinion = {
+			who = SPA
+			modifier = fee_por_magellan_spanish
+		}
+	}
+}
+
+#Societas Jesu in Asia
+country_event = {
+	id = FEE_Portugal_Events.20
+	title = FEE_Portugal_Events.20.T
+	desc = FEE_Portugal_Events.20.D
+	picture = RELIGIOUS_TURMOIL_eventPicture
+
+	fire_only_once = yes
+	trigger = {
+		tag = POR
+		any_owned_province = {
+			superregion = india_superregion
+		}
+		1361 = {
+			any_trade_node_member_province = {
+				owned_by = ROOT
+			}
+		}
+		current_age = age_of_reformation
+		religion = catholic
 	}
 
 	mean_time_to_happen = {
@@ -1025,18 +1547,107 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Portugal_Events..OPT1
+		name = FEE_Portugal_Events.20.OPT1
+		ai_chance = {
+			factor = 33
+		}
 
+		add_years_of_income = -0.1
+		add_papal_influence = 10
+		add_country_modifier = {
+			name = fee_por_asian_inquisition
+			duration = -1
+		}
+		define_advisor = {
+			type = inquisitor
+			skill = 3
+			cost_multiplier = 0.50
+			name = "Francis Xavier"
+		}
+		random_owned_province = {
+			limit = {
+				superregion = india_superregion
+			}
+			change_religion = ROOT
+		}
+		1361 = {
+			random_trade_node_member_province = {
+				limit = { owned_by = ROOT }
+				change_religion = ROOT
+			}
+		}
 	}
 
 	option = {
-		name = FEE_Portugal_Events..OPT2
+		name = FEE_Portugal_Events.20.OPT2
+		ai_chance = {
+			factor = 33
+		}
 
+		add_papal_influence = 5
+		add_country_modifier = {
+			name = fee_por_portuguese_jesuits
+			duration = -1
+		}
+		random_owned_province = {
+			limit = {
+				superregion = india_superregion
+			}
+			change_religion = ROOT
+		}
+		1361 = {
+			random_trade_node_member_province = {
+				limit = { owned_by = ROOT }
+				change_religion = ROOT
+			}
+		}
 	}
 
 	option = {
-		name = FEE_Portugal_Events..OPT3
+		name = FEE_Portugal_Events.20.OPT3
+		ai_chance = {
+			factor = 33
+		}
 
+		add_stability = 1
+		add_papal_influence = -10
+		add_country_modifier = {
+			name = fee_por_rejected_jesuits
+			duration = -1
+		}
+	}
+}
+
+#Sugar Cultivation in Brazil
+country_event = {
+	id = FEE_Portugal_Events.21
+	title = FEE_Portugal_Events.21.T
+	desc = FEE_Portugal_Events.21.D
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	trigger = {
+		tag = POR
+		pernambuco_area = {
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	option = {
+		name = FEE_Portugal_Events.21.OPT1
+
+		add_country_modifier = {
+			name = fee_por_sugar_rush
+			duration = 5475
+		}
+		pernambuco_area = {
+			add_base_production = 1
+			change_trade_goods = sugar
+		}
 	}
 }
 

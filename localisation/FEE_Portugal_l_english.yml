@@ -17,13 +17,13 @@
  FEE_Portugal_Events.4.OPT2: "This isn't a matter for the crown."
 
  FEE_Portugal_Events.5.T: "A Rising Star"
- FEE_Portugal_Events.5.D: "During the bloody war of the Castilian Succession, one of our noblemen and soldiers proved a far more capable leader than anyone expected. Rallying our soldiers from almost  certain defeat, he turned what would have been annihilation into a victory. Now, his ambitions have grown along with his fame, and he has arrived at court seeking official promotion and new assignments abroad. "
+ FEE_Portugal_Events.5.D: "During the bloody war of the Castilian Succession, one of our noblemen and soldiers proved a far more capable leader than anyone expected. Rallying our soldiers from almost \n\ncertain defeat, he turned what would have been annihilation into a victory. Now, his ambitions have grown along with his fame, and he has arrived at court seeking official promotion and new assignments abroad. "
  FEE_Portugal_Events.5.OPT1: "By all means, give him what he has deserved!"
  FEE_Portugal_Events.5.OPT2: "That’s great, kid. Don’t get cocky."
  FEE_Portugal_Events.5.OPT3: "Such self-serving ambition is hardly worthy of our patronage!"
 
  FEE_Portugal_Events.6.T: "The Shores of Africa"
- FEE_Portugal_Events.6.D: "Despite the inroads made by Portugal into the heart of the Moorish homeland, our control over the northern coast of Africa is being increasingly challenged by pirates and tribal raids. We have already dispatched Alfonso de Albuquerque to re-establish our control. Besides building an island fort in the area, however, he has struggled to find success. None other than Francisco de Almeida has approached us with a new and bold plan to dealing with these annoyances. A local emir has hinted that he might help us, provided we provide him with European gunpowder weaponry with which to do so. Of course, these weapons could later be used against us...  "
+ FEE_Portugal_Events.6.D: "Despite the inroads made by Portugal into the heart of the Moorish homeland, our control over the northern coast of Africa is being increasingly challenged by pirates and tribal raids. We have already dispatched Alfonso de Albuquerque to re-establish our control. Besides building an island fort in the area, however, he has struggled to find success. None other than Francisco de Almeida has approached us with a new and bold plan to dealing with these annoyances. A local emir has hinted that he might help us, provided we provide him with European gunpowder weaponry with which to do so. Of course, these weapons could later be used against us... \n\n"
  FEE_Portugal_Events.6.OPT1: "Almeida’s plan is a good one!"
  FEE_Portugal_Events.6.OPT2: "Arming our potential enemies is never wise"
 
@@ -64,6 +64,49 @@
  FEE_Portugal_Events.13.OPT1: "He is nothing but a traitor!"
  FEE_Portugal_Events.13.OPT2: "We have no choice but to hope he keeps his word"
 
+ FEE_Portugal_Events.14.T: "Securing our African Interests "
+ FEE_Portugal_Events.14.D: "Merchants and explorers have discovered new sources of wealth on the African continent, circumventing the Arab-controlled caravans across the Sahara. \n\nNeedless to say, established trading interests take none too kindly to our presence, and may agitate locals against us. Accordingly, merchants have asked us for our help in securing their posts on the Ivory Coast. "
+ FEE_Portugal_Events.14.OPT1: "They shall receive our help"
+ FEE_Portugal_Events.14.OPT2: "The merchants must take care of themselves"
+
+ FEE_Portugal_Events.15.T: "Sephardic Jews Arrive in Portugal"
+ FEE_Portugal_Events.15.D: "Portugal has long had an established, prosperous, and well-tolerated Jewish community within its borders. At times, a full 20% of the population of the Kingdom of Portugal has been Jewish. \n\nWith the final fall of the Moors in Granada came a great expulsion of the Jews throughout the realms of the Catholic Monarchs of Castile and Aragon. Many of them fled to friendly lands such as Holland. However, the presence of a strong Jewish community here has drawn the majority of them to seek asylum in Portugal. \n\nGranting them asylum in his realm might bring [Root.Monarch.GetName] many advantages. Indeed, several of the most prominent families among them have even promised gifts and skilled craftsmen for weaponry to aid [Root.Monarch.GetName] in wars against the Muslims if he lets them in. \n\nAt the same time, tension between Jews and Christians in Portugal is never far from the surface, and an influx of Jewish refugees may spark a crisis."
+ FEE_Portugal_Events.15.OPT1: "Accept their gifts and grant them full toleration"
+ FEE_Portugal_Events.15.OPT2: "Admit them into our realm in exchange for military aid"
+ FEE_Portugal_Events.15.OPT3: "We do not need to risk the wrath of Castile or of our own people"
+
+ FEE_Portugal_Events.16.T: "Expulsion of the Jews?"
+ FEE_Portugal_Events.16.D: "There is no question that the Jewish refugees who settled in Portugal from Castile have become very successful. In fact, [Root.Monarch.GetName] considers them an essential part of the Portuguese economy. \n\nHowever, their success has caused heightened tension from non-Jewish Portuguese citizens who feel slighted by the Jews’ success. Now, a group of clergy and middle-class Christians has arrived at court, along with indignant diplomats from our neighbors, demanding that we cease allowing the Jews to live freely among us."
+ FEE_Portugal_Events.16.OPT1: "Expel the Jews and confiscate their wealth!"
+ FEE_Portugal_Events.16.OPT2: "Attempt to Convert the Jews to Christianity so they can stay!"
+ FEE_Portugal_Events.16.OPT3: "The King will not be bullied into abusing his subjects!"
+
+ FEE_Portugal_Events.17.T: "Securing Malacca Trade"
+ FEE_Portugal_Events.17.D: "Having conquered the famous port of Malacca, the merchants in charge of the trading feitoria there expected to seize the same control of the spice trade that the Malaccans themselves had once enjoyed. However, they soon found out that without the centralized bureaucracy and navy from the Malacca Sultans, the importance of the port was greatly diminished. Portuguese merchants now had to compete with a host of smaller ports instead of profiting from Malacca’s fabled riches. Action must be taken if we are to received the benefits from the city that our admirals promised us when we set out to take it."
+ FEE_Portugal_Events.17.OPT1: "We must spare no expenses to revive the city!"
+ FEE_Portugal_Events.17.OPT2: "Shouldn’t these merchants be helping us rather than complaining?"
+
+ FEE_Portugal_Events.18.T: "Portuguese Arrivals in Japan"
+ FEE_Portugal_Events.18.D: "Our first arrivals on the fabled isles of Japan were met with a curious mixture of respectful awe and bewildered disdain. Despite this, however, we were received hospitably, and our hosts’ face lit up when we began to describe our weaponry to him! \n\nAfter several days of demonstrating our firearms, including not only their usage but a description of the various parts involved and even how to clean them properly. The local lord of the place, called Satsuma, was most eager to obtain these weapons, and promised well-made swords, silks, and chinaware in exchange for a steady supply of weapons."
+ FEE_Portugal_Events.18.OPT1: "By all means, let the trade commence!"
+ FEE_Portugal_Events.18.OPT2: "These seems too risky, we’d best not meddle in local warfare like this"
+
+ FEE_Portugal_Events.19.T: "Ferdinand Magellan"
+ FEE_Portugal_Events.19.D: "An ambitious explorer has arrived at our court seeking an audience, named Ferdinand Magellan. He has already distinguished himself on discovery missions for both the Spanish and Portuguese crowns, including in the now-famous expeditions of Francisco de Almeida. He proposes a new scheme for sailing to the Spice Islands, one where we avoid the tumultuous African and Indian Ocean waters altogether and sail around the southern tip of America instead. Not only would this potentially be a better route to the Spice Islands, he argues, but would also provide the chance to discover yet more new and rich lands beyond the South Atlantic. \n\nRemembering how the Portuguese crown rejected the plans of Christopher Columbus to their everlasting sorrow, [Root.Monarch.GetName] is most reluctant to reject Magellan’s plan. However, going under South America also risks violating the Treaty of Tordesillas, angering the Spanish and giving them cause for war."
+ FEE_Portugal_Events.19.OPT1: "Allow him to set out at once!"
+ FEE_Portugal_Events.19.OPT2: "Best to keep him here to further our own interests without angering Spain"
+ FEE_Portugal_Events.19.OPT3: "We already have the route to the Spice Islands well-established, we need no more"
+
+ FEE_Portugal_Events.20.T: "Societas Jesu in Asia"
+ FEE_Portugal_Events.20.D: "As Europe is rocked by Reformation and Counter-Reformation, the effort to spread the Catholic faith outside of Europe itself has grown apace. \n\nFrom one of our garrisons in India comes news that none other than Francis Xavier, co-founder of the Societas Jesu, has arrived. He wishes first to purify the faith among the Portuguese there, who he finds altogether too focused on wealth and too lax in their faith, and then from there spread the faith to all of our holdings in Asia. Xavier wishes for us to allow him leave to bring yet more Jesuits from Spain into our realm, or else set up our own Inquisition to help him reach his goal. \n\nNaturally, this might bite into our profits, but Xavier and many devout voices insist that this is a worthy sacrifice for the glory of God."
+ FEE_Portugal_Events.20.OPT1: "No one expected the Portuguese Inquisition!"
+ FEE_Portugal_Events.20.OPT2: "Allow the Jesuits to pursue their missionary efforts unmolested"
+ FEE_Portugal_Events.20.OPT3: "Keep them out of our trading posts, we don’t need them stirring up trouble"
+
+ FEE_Portugal_Events.21.T: "Sugar Cultivation in Brazil"
+ FEE_Portugal_Events.21.D: "Once a luxury only imported over harsh land routes from the East, sugarcane has found a favorable climate in our new colonies and is proving to be more profitable than anyone could have imagined as it becomes accessible to the public for the first time. \nOur colony in Brazil especially is beginning to find great success in growing this crop. Let’s hope no one steals our success..."
+ FEE_Portugal_Events.21.OPT1: "Sweet!"
+
  FEE_Portugal_Events.100.T: "Hidden Event 100"
  FEE_Portugal_Events.100.D: "Notify the head of Flavours and Events Expanded"
  FEE_Portugal_Events.100.OPT1: "and write +zach in the chat"
@@ -81,13 +124,43 @@
 
  fee_por_vendettas_sanctioned: "Vendettas Sanctioned"
  fee_por_pursuing_enemies: "Pursuing Enemies"
+
+ fee_por_jewish_liberties_granted: "Jewish Liberties Granted"
+ fee_por_prospering_jewish_communities: "Prospering Jewish Communities"
+ fee_por_jewish_weaponsmiths: "Jewish Weaponsmiths"
+
+ fee_por_jewish_expulsion: "Jewish Expulsion"
+ fee_por_jewish_conversion_attempts: "Jewish Conversion Attempts"
+
+ fee_por_malacca_restored: "Malacca Restored"
+
+ fee_por_portuguese_weaponry_japan: "Portuguese Weaponry"
+
+ fee_por_magellan_expedition: "Magellan Expedition"
+
+ fee_por_asian_inquisition: "Asian Inquisition"
+ fee_por_portuguese_jesuits: "Portuguese Jesuits"
+ fee_por_rejected_jesuits: "Rejected Jesuits"
+
+ fee_por_sugar_rush: "Sugar Rush"
+
  #Opinion Modifiers
  fee_por_portuguese_weaponry: "Portuguese Weaponry"
  fee_por_failed_diplomacy: "Failed Diplomacy"
+
  fee_por_diplomacy: "Diplomacy"
  fee_por_persuasion: "Persuasion"
+
  fee_por_alliance: "Alliance"
  fee_por_bows_local_rulers: "Bows to Local Rulers"
+
+ fee_por_jewish_welcome: "Jewish Welcome"
+ fee_por_jewish_rejected: "Jewish Rejected"
+
+ fee_por_japan_weapons_trafficking: "Japan Weapons Trafficking"
+
+ fee_por_magellan_portuguese: "Portuguese Magellan"
+ fee_por_magellan_spanish: "Spanish Magellan"
 
  #ToolTips
  fee_por_francisco_custom_tooltip_1: "Francisco will be allowed to follow his passion. We will hear from him again... (opens colonial events related to francisco)"
@@ -99,3 +172,5 @@
  fee_por_killed_2: "He may have his revenge, and then must be replaced.\n"
  fee_por_killed_3: "We shall assist our loyal servant.\n"
  fee_por_king: "Henceforth he and anyone who follow him are outlaws!\n"
+
+ securing_african_interest_TT: "We will build the §Ycurrent level fort§! in every province in the §MIvocry Coast§! trade node"
