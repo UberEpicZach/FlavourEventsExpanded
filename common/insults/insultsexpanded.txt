@@ -90,8 +90,8 @@ insult_waterloo = {
 		trigger = {
 			FROM = {
 				NOT = {
-					culture_group = tatar
-					culture_group russian
+					culture_group = tartar
+					culture = russian
 				}
 			}
 			tag = RUS

@@ -11,10 +11,8 @@ country_event = {
 	
 	trigger = {
 		has_global_flag = FEE_Meme_Active
-		NOT = {
-			is_year 1550
-			legitimacy = 40
-		}
+		NOT = { is_year = 1550 }
+		NOT = { legitimacy = 40 }
 		is_female = yes
 	}
 	mean_time_to_happen = {
@@ -26,7 +24,7 @@ country_event = {
 	}
 	option = {
 		name = FEE_Monty_Python_Events.1.b
-		
+
 		country_event = { id = FEE_Monty_Python_Events.2 }
 	}
 }
