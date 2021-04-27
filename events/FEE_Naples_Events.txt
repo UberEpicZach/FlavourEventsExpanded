@@ -507,17 +507,6 @@ country_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		months = 2
-		modifier = {
-			factor = 0.5
-			estate_influence = {
-				estate = estate_nobles
-				influence = 65
-			}
-		}
-	}
-
 	immediate = {
 		set_country_flag = nap_barony_first_risen
 	}
@@ -753,10 +742,6 @@ country_event = {
 		NOT = { has_country_flag = nap_barony_first_risen }
 	}
 
-	mean_time_to_happen = {
-		days = 60
-	}
-
 	option = {
 		name = FEE_Naples_Events.11.OPT1
 
@@ -806,10 +791,6 @@ country_event = {
 			tag = TTS
 		}
 		has_country_flag = nap_barony_first_risen
-	}
-
-	mean_time_to_happen = {
-		days = 60
 	}
 
 	option = {
@@ -896,17 +877,6 @@ country_event = {
 		}
 		is_year = 1485
 		NOT = { is_year = 1486 }
-	}
-
-	mean_time_to_happen = {
-		months = 2
-		modifier = {
-			factor = 0.5
-			estate_influence = {
-				estate = estate_nobles
-				influence = 65
-			}
-		}
 	}
 
 	immediate = {
@@ -1294,6 +1264,10 @@ country_event = {
 
 	option = {
 		name = FEE_Naples_Events.15.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
 		add_stability_or_adm_power = yes
 		add_splendor = 50
 		add_adm_power = 50
