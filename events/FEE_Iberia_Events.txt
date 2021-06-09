@@ -389,19 +389,19 @@ country_event = {
 		release = CAT
 		CAT = {
 			change_government = monarchy
-			add_government_reform = feudal_nobility
+			add_government_reform = feudalism_reform
 		}
 		create_union = CAT
 		release = GAL
 		GAL = {
 			change_government = monarchy
-			add_government_reform = feudal_nobility
+			add_government_reform = feudalism_reform
 		}
 		create_union = GAL
 		release = NAV
 		NAV = {
 			change_government = monarchy
-			add_government_reform = feudal_nobility
+			add_government_reform = feudalism_reform
 		}
 		create_union = NAV
 	}
