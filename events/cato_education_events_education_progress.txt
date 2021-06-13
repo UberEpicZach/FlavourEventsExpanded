@@ -157,8 +157,18 @@ country_event = {
 			}
 		}
 	}
+	option = { ###Heir fights with tutor
+		name = cato_education_events_education_progress.0001.a
+		country_event = {
+			id = cato_education_events_education_progress.0006
+		}
+		ai_chance = {
+			factor = 1
+			
+		}
+	}
 	option = { ###Heir studies hard
-		name = cato_education_events_education_progress.0005.a
+		name = cato_education_events_education_progress.0001.a
 		country_event = {
 			id = cato_education_events_education_progress.0007
 		}
@@ -172,16 +182,6 @@ country_event = {
 				factor = 2
 				has_heir_flag = heir_chose_education_category
 			}
-		}
-	}
-	option = { ###Heir fights with tutor
-		name = cato_education_events_education_progress.0006.a
-		country_event = {
-			id = cato_education_events_education_progress.0006
-		}
-		ai_chance = {
-			factor = 1
-			
 		}
 	}
 	############
@@ -264,7 +264,7 @@ country_event = {
 			capital_scope = {
 				OR = {
 					has_building = courthouse
-					has_building = townhall
+					has_building = town_hall
 				}
 			}
 		}
@@ -298,7 +298,7 @@ country_event = {
 		name = cato_education_events_education_progress.0005.a
 		trigger = {
 			has_heir_flag = scholastic_education
-			has_idea_group = innovative_ideas
+			has_idea_group = innovativeness_ideas
 		}
 		country_event = {
 			id = cato_education_events_education_progress.3000
@@ -490,7 +490,7 @@ country_event = {
 			capital_scope = {
 				OR = {
 					has_building = barracks
-					has_building = training_field
+					has_building = training_fields
 					has_building = regimental_camp
 					has_building = conscription_center
 					has_building = fort_15th
@@ -574,7 +574,7 @@ country_event = {
 					has_building = grand_shipyard
 					has_building = dock
 					has_building = drydock
-					has_building = coastal_battery
+					has_building = coastal_defence
 					has_building = naval_battery
 				}
 			}
@@ -598,28 +598,6 @@ country_event = {
 		country_event = {
 			id = cato_education_events_education_progress.8002
 		}
-		ai_chance = {
-			factor = 1
-		}
-	}
-}
-country_event = {
-	id = cato_education_events_education_progress.0007 ###Heir Studies Hard
-	title = cato_education_events_education_progress.0001.title
-	desc = cato_education_events_education_progress.0001.desc
-	picture = ECONOMY_eventPicture
-	
-	is_triggered_only = yes
-	
-	trigger = {
-		has_heir_flag = heir_started_education
-		is_lesser_in_union = no
-	}
-	
-	
-	option = {
-		name = cato_education_events_education_progress.0001.a
-		add_education_progress_small = yes
 		ai_chance = {
 			factor = 1
 		}
@@ -691,6 +669,16 @@ country_event = {
 	option = {
 		name = cato_education_events_education_progress.0003.a
 		subtract_education_progress_small = yes
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = cato_education_events_education_progress.0003.b
+		random = {
+			chance = 50
+			subtract_education_progress_medium = yes
+		}
 		ai_chance = {
 			factor = 1
 		}
@@ -769,6 +757,7 @@ country_event = {
 	}
 	option = {
 		name = cato_education_events_education_progress.0004.c ### I shall personally tutor him
+		highlight = yes
 		trigger = {
 			if = {
 				limit = {
@@ -867,6 +856,28 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	id = cato_education_events_education_progress.0007 ###Heir Studies Hard
+	title = cato_education_events_education_progress.0001.title
+	desc = cato_education_events_education_progress.0001.desc
+	picture = ECONOMY_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_heir_flag = heir_started_education
+		is_lesser_in_union = no
+	}
+	
+	
+	option = {
+		name = cato_education_events_education_progress.0001.a
+		add_education_progress_small = yes
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
 ############
 ### Improvements for Clerical Education
 ############
@@ -917,42 +928,21 @@ country_event = {
 				has_building = cathedral
 			}
 		}
-		###OR = {
-		###	NOT = { has_heir_flag = education_building_bonus_large }
-		###	AND = {
-		###		has_heir_flag = education_building_bonus_small
-		###		capital_scope = { has_building = cathedral }
-		###	}
-		###}
 	}
 	
 	
 	option = {
 		name = cato_education_events_education_progress.1001.a
-		set_heir_flag = education_idea_group_bonus
 		if = {
 			limit = {
-				NOT = { has_heir_flag = education_building_bonus_small }
 				capital_scope = {
 					has_building = cathedral
 				}
 			}
 			add_education_progress_medium = yes
-			set_heir_flag = education_building_bonus_large
-		}
-		else_if = {
-			limit = {
-				has_heir_flag = education_building_bonus_small
-				capital_scope = {
-					has_building = cathedral
-				}
-			}
-			add_education_progress_small = yes
-			set_heir_flag = education_building_bonus_large
 		}
 		else = {
 			add_education_progress_small = yes
-			set_heir_flag = education_building_bonus_small
 		}
 		ai_chance = {
 			factor = 1
@@ -1035,7 +1025,7 @@ country_event = {
 		capital_scope = {
 			OR = {
 				has_building = courthouse
-				has_building = townhall
+				has_building = town_hall
 			}
 		}
 	}
@@ -1043,7 +1033,17 @@ country_event = {
 	
 	option = {
 		name = cato_education_events_education_progress.2001.a
-		add_education_progress_small = yes
+		if = {
+			limit = {
+				capital_scope = {
+					has_building = town_hall
+				}
+			}
+			add_education_progress_medium = yes
+		}
+		else = {
+			add_education_progress_small = yes
+		}
 		ai_chance = {
 			factor = 1
 		}
@@ -1071,7 +1071,6 @@ country_event = {
 	
 	option = {
 		name = cato_education_events_education_progress.2002.a
-		set_heir_flag = education_idea_group_bonus
 		add_education_progress_medium = yes
 		ai_chance = {
 			factor = 1
@@ -1093,7 +1092,7 @@ country_event = {
 		has_heir_flag = scholastic_education
 		is_lesser_in_union = no
 		has_heir_flag = heir_started_education
-		has_idea_group = innovative_ideas
+		has_idea_group = innovativeness_ideas
 	}
 	
 	
@@ -1412,7 +1411,7 @@ country_event = {
 		capital_scope = {
 			OR = {
 				has_building = barracks
-				has_building = training_field
+				has_building = training_fields
 				has_building = regimental_camp
 				has_building = conscription_center
 				has_building = fort_15th
@@ -1541,7 +1540,7 @@ country_event = {
 				has_building = grand_shipyard
 				has_building = dock
 				has_building = drydock
-				has_building = coastal_battery
+				has_building = coastal_defence
 				has_building = naval_battery
 			}
 		}
