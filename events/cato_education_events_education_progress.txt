@@ -1,0 +1,1585 @@
+namespace = cato_education_events_education_progress
+###0001-0999 General Education Events
+###1000-1999 Clerical Education Events
+###2000-2999 Administrative Education Events
+###3000-3999 Scholastic Education Events
+###4000-4999 Diplomacy Education Events
+###5000-5999 Intrigue Education Events
+###6000-6999 Trade Education Events
+###7000-7999 Martial AND Logistics Education Events (They share most modifiers)
+###8000-8999 Naval Education Events
+############
+### General Events
+############
+country_event = {
+	id = cato_education_events_education_progress.0001 ###The AI randomly selects an event to give you
+	title = cato_education_events_education_progress.0001.title
+	desc = cato_education_events_education_progress.0001.desc
+	picture = ECONOMY_eventPicture
+	
+	is_triggered_only = yes
+	hidden = yes
+	trigger = {
+		has_heir_flag = heir_started_education
+		is_lesser_in_union = no
+	}
+	immediate = {
+		country_event = {
+			id = cato_education_events_education_progress.0001
+			days = 120
+		}
+	}
+	
+	
+	option = { ###Send heir to study abroad
+		name = cato_education_events_education_progress.0001.a
+		trigger = {
+			any_ally = { #Must be ally and at least be on tech parity or better
+				NOT = {
+					tech_differnce = 1
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = he_opinion_tutoring_heir
+					}
+				}
+			}
+		}
+		country_event = {
+			id = cato_education_events_education_progress.0002
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = { ###Heir Lacks interest in subject
+		name = cato_education_events_education_progress.0001.a
+		trigger = { 
+			NOT = {
+				has_heir_flag = heir_chose_education_category
+			}
+		}
+		country_event = {
+			id = cato_education_events_education_progress.0003
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				modifier = {
+					factor = 0.25
+					has_heir_flag = heir_chose_education_subcategory
+				}
+			}
+		}
+	}
+	option = {###Heir struggles to comprehend material
+		name = cato_education_events_education_progress.0004.a
+		trigger = {
+			if = {
+				limit = {
+					has_heir_flag = started_admin_education
+				}
+				NOT = {
+					heir_adm = 3
+				}
+			}
+			if = {
+				limit = {
+					has_heir_flag = started_dip_education
+				}
+				NOT = {
+					heir_dip = 3
+				}
+			}
+			if = {
+				limit = {
+					has_heir_flag = started_mil_education
+				}
+				NOT = {
+					heir_mil = 3
+				}
+			}
+		}
+		country_event = {
+			id = cato_education_events_education_progress.0004
+		}
+		ai_chance = {
+			factor = 1
+				modifier = {
+				factor = 4
+				AND = {
+					has_heir_flag = started_admin_education
+					NOT = { heir_adm = 1} 
+				}
+			}
+			modifier = {
+				factor = 4
+				AND = {
+					has_heir_flag = started_dip_education
+					NOT = { heir_dip = 1} 
+				}
+			}
+			modifier = {
+				factor = 4
+				AND = {
+					has_heir_flag = started_mil_education
+					NOT = { heir_mil = 1} 
+				}
+			}
+		}
+	}
+	option = {###Heir Making Progress
+		name = cato_education_events_education_progress.0005.a
+		country_event = {
+			id = cato_education_events_education_progress.0005
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.25
+				AND = {
+					has_heir_flag = started_admin_education
+					heir_adm = 5
+				}
+			}
+			modifier = {
+				factor = 1.25
+				AND = {
+					has_heir_flag = started_dip_education
+					heir_dip = 5
+				}
+			}
+			modifier = {
+				factor = 1.25
+				AND = {
+					has_heir_flag = started_mil_education
+					heir_mil = 5
+				}
+			}
+		}
+	}
+	option = { ###Heir fights with tutor
+		name = cato_education_events_education_progress.0001.a
+		country_event = {
+			id = cato_education_events_education_progress.0006
+		}
+		ai_chance = {
+			factor = 1
+			
+		}
+	}
+	option = { ###Heir studies hard
+		name = cato_education_events_education_progress.0001.a
+		country_event = {
+			id = cato_education_events_education_progress.0007
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.5
+				has_heir_flag = heir_chose_education_subcategory
+			}
+			modifier = {
+				factor = 2
+				has_heir_flag = heir_chose_education_category
+			}
+		}
+	}
+	############
+	### Clerical Events
+	############
+	option = { ###Has an religious or humanist ideas
+		name = cato_education_events_education_progress.0005.a
+		trigger = {
+			has_heir_flag = clerical_education
+			OR = {
+				has_idea_group = religious_ideas
+				has_idea_group = humanist_ideas
+			}
+		}
+		country_event = {
+			id = cato_education_events_education_progress.1000
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = { ###Has religious building in capital
+		name = cato_education_events_education_progress.0005.a
+		trigger = {
+			has_heir_flag = clerical_education
+			capital_scope = {
+				OR = {
+					has_building = temple
+					has_building = cathedral
+				}
+			}
+		}
+		country_event = {
+			id = cato_education_events_education_progress.1001
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = { ###Has inquisitor or theologian
+		name = cato_education_events_education_progress.0005.a
+		trigger = {
+			has_heir_flag = clerical_education
+			OR = {
+				advisor = theologian
+				advisor = inquisitor
+			}
+		}
+		country_event = {
+			id = cato_education_events_education_progress.1002
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	############
+	### Administrative Events
+	############
+	option = { ###Has economic, expansion, or administrative ideas
+		name = cato_education_events_education_progress.0005.a
+		trigger = {
+			has_heir_flag = administrative_education
+			OR = {
+				has_idea_group = economic_ideas
+				has_idea_group = administrative_ideas
+				has_idea_group = expansion_ideas
+			}
+		}
+		country_event = {
+			id = cato_education_events_education_progress.2000
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = { ###Has courthouse or townhall in capital
+		name = cato_education_events_education_progress.0005.a
+		trigger = {
+			has_heir_flag = administrative_education
+			capital_scope = {
+				OR = {
+					has_building = courthouse
+					has_building = town_hall
+				}
+			}
+		}
+		country_event = {
+			id = cato_education_events_education_progress.2001
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = { ###Has treasurer or master of mint 
+		name = cato_education_events_education_progress.0005.a
+		trigger = {
+			has_heir_flag = administrative_education
+			OR = {
+				advisor = treasurer
+				advisor = master_of_mint
+			}
+		}
+		country_event = {
+			id = cato_education_events_education_progress.2002
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	############
+	### Scholastic Events
+	############
+	option = { ###Has Innovative Ideas 
+		name = cato_education_events_education_progress.0005.a
+		trigger = {
+			has_heir_flag = scholastic_education
+			has_idea_group = innovativeness_ideas
+		}
+		country_event = {
+			id = cato_education_events_education_progress.3000
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = { ###Has university in capital
+		name = cato_education_events_education_progress.0005.a
+		trigger = {
+			has_heir_flag = scholastic_education
+			capital_scope = {
+				has_building = university
+			}
+		}
+		country_event = {
+			id = cato_education_events_education_progress.3001
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = { ###Has Natural Scientist or Philosopher 
+		name = cato_education_events_education_progress.0005.a
+		trigger = {
+			has_heir_flag = scholastic_education
+			OR = {
+				advisor = natural_scientist
+				advisor = philosopher
+			}
+		}
+		country_event = {
+			id = cato_education_events_education_progress.3002
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	############
+	### Diplomatic Events
+	############
+	option = { ###Has diplomatic or influence ideas
+		name = cato_education_events_education_progress.0005.a
+		trigger = {
+			has_heir_flag = diplomacy_education
+			OR = {
+				has_idea_group = diplomatic_ideas
+				has_idea_group = influence_ideas
+			}
+		}
+		country_event = {
+			id = cato_education_events_education_progress.4000
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = { ###Has Diplomat or Statesman
+		name = cato_education_events_education_progress.0005.a
+		trigger = {
+			has_heir_flag = diplomacy_education
+			OR = {
+				advisor = diplomat
+				advisor = statesman
+			}
+		}
+		country_event = {
+			id = cato_education_events_education_progress.4001
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	############
+	### Intrigue Events
+	############
+	option = { ###Has espionage ideas 
+		name = cato_education_events_education_progress.0005.a
+		trigger = {
+			has_heir_flag = intrigue_education
+			has_idea_group = spy_ideas
+		}
+		country_event = {
+			id = cato_education_events_education_progress.5000
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = { ###Has spymaster
+		name = cato_education_events_education_progress.0005.a
+		trigger = {
+			has_heir_flag = intrigue_education
+			advisor = spymaster
+		}
+		country_event = {
+			id = cato_education_events_education_progress.5001
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	############
+	### Trade Events
+	############
+	option = { ###Has trade, economic, or maritime ideas
+		name = cato_education_events_education_progress.0005.a
+		trigger = {
+			has_heir_flag = trade_education
+			OR = {
+				has_idea_group = trade_ideas
+				has_idea_group = economic_ideas
+				has_idea_group = maritime_ideas
+			}
+		}
+		country_event = {
+			id = cato_education_events_education_progress.6000
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = { ###Has marketplace, trade depot, or stock exchange in capital
+		name = cato_education_events_education_progress.0005.a
+		trigger = {
+			has_heir_flag = trade_education
+			capital_scope = {
+				OR = {
+					has_building = marketplace
+					has_building = trade_depot
+					has_building = stock_exchange
+				}
+			}
+		}
+		country_event = {
+			id = cato_education_events_education_progress.6001
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = { ###Has trader
+		name = cato_education_events_education_progress.0005.a
+		trigger = {
+			has_heir_flag = trade_education
+			advisor = trader
+		}
+		country_event = {
+			id = cato_education_events_education_progress.6002
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	############
+	### Martial/Logistics Events
+	############
+	option = { ###Has either Quality, Quantity, offensive, defensive, aristocratic, or plutocratic ideas
+		name = cato_education_events_education_progress.0005.a
+		trigger = {
+			OR = {
+				has_heir_flag = martial_education
+				has_heir_flag = logistics_education
+			}
+			OR = {
+				has_idea_group = quality_ideas
+				has_idea_group = quantity_ideas
+				has_idea_group = offensive_ideas
+				has_idea_group = defensive_ideas
+				has_idea_group = aristocratic_ideas
+				has_idea_group = plutocratic_ideas
+			}
+		}
+		country_event = {
+			id = cato_education_events_education_progress.7000
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = { ###Has a military building or fort in the capital
+		name = cato_education_events_education_progress.0005.a
+		trigger = {
+			OR = {
+				has_heir_flag = martial_education
+				has_heir_flag = logistics_education
+			}
+			capital_scope = {
+				OR = {
+					has_building = barracks
+					has_building = training_fields
+					has_building = regimental_camp
+					has_building = conscription_center
+					has_building = fort_15th
+					has_building = fort_16th
+					has_building = fort_17th
+					has_building = fort_18th
+				}
+			}
+		}
+		country_event = {
+			id = cato_education_events_education_progress.7001
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = { ###Has commandant, army reformer, or recuirting captain
+		name = cato_education_events_education_progress.0005.a
+		trigger = {
+			has_heir_flag = martial_education
+			OR = {
+				advisor = commandant
+				advisor = army_reformer
+				advisor = recruitmaster
+			}
+		}
+		country_event = {
+			id = cato_education_events_education_progress.7002
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = { ###Has quartermaster, grand captain, army organizer, or fortification expert
+		name = cato_education_events_education_progress.0005.a
+		trigger = {
+			has_heir_flag = logistics_education
+			OR = {
+				advisor = quartermaster
+				advisor = grand_captain
+				advisor = army_organiser
+				advisor = fortification_expert
+			}
+		}
+		country_event = {
+			id = cato_education_events_education_progress.7003
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	############
+	### Naval Events
+	############
+	option = { ###Has naval, maritime, aristocratic, plutocratic, or exploration ideas
+		name = cato_education_events_education_progress.0005.a
+		trigger = {
+			has_heir_flag = naval_education
+			OR = {
+				has_idea_group = naval_ideas
+				has_idea_group = maritime_ideas
+				has_idea_group = aristocratic_ideas
+				has_idea_group = plutocratic_ideas
+				has_idea_group = exploration_ideas
+			}
+		}
+		country_event = {
+			id = cato_education_events_education_progress.8000
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = { ###Has shipyard, grand shipyard, dock, drydock, coastal battery, or naval battery
+		name = cato_education_events_education_progress.0005.a
+		trigger = {
+			has_heir_flag = naval_education
+			capital_scope = {
+				OR = {
+					has_building = shipyard
+					has_building = grand_shipyard
+					has_building = dock
+					has_building = drydock
+					has_building = coastal_defence
+					has_building = naval_battery
+				}
+			}
+		}
+		country_event = {
+			id = cato_education_events_education_progress.8001
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = { ###Has navigator or naval reformer
+		name = cato_education_events_education_progress.0005.a
+		trigger = {
+			has_heir_flag = naval_education
+			OR = {
+				advisor = navigator
+				advisor = naval_reformer
+			}
+		}
+		country_event = {
+			id = cato_education_events_education_progress.8002
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {
+	id = cato_education_events_education_progress.0002 ###Heir Studies Abroad
+	title = cato_education_events_education_progress.0002.title
+	desc = cato_education_events_education_progress.0002.desc
+	picture = ECONOMY_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_heir_flag = heir_started_education
+		is_lesser_in_union = no
+		any_ally = { #Must be ally and at least be on tech parity or better
+			NOT = {
+				tech_differnce = 1
+				has_opinion_modifier = {
+					who = ROOT
+					modifier = he_opinion_tutoring_heir
+				}
+			}
+		}
+	}
+	
+	
+	option = {
+		name = cato_education_events_education_progress.0002.a
+		random_ally = {
+			limit = {
+				NOT = {
+					tech_differnce = 1
+					has_opinion_modifier = {
+						who = ROOT
+						modifier = he_opinion_tutoring_heir
+					}
+				}
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = he_opinion_tutoring_heir
+			}
+		}
+		add_education_progress_medium = yes
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {
+	id = cato_education_events_education_progress.0003 ###Heir Lacks interest in subject
+	title = cato_education_events_education_progress.0003.title
+	desc = cato_education_events_education_progress.0003.desc
+	picture = ECONOMY_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_heir_flag = heir_started_education
+		NOT = {
+			has_heir_flag = heir_chose_education_category
+		}
+		is_lesser_in_union = no
+	}
+	
+	
+	option = {
+		name = cato_education_events_education_progress.0003.a
+		subtract_education_progress_small = yes
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = cato_education_events_education_progress.0003.b
+		random = {
+			chance = 50
+			subtract_education_progress_medium = yes
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {
+	id = cato_education_events_education_progress.0004 ###Heir Struggles to comprehend the material
+	title = cato_education_events_education_progress.0004.title
+	desc = cato_education_events_education_progress.0004.desc
+	picture = ECONOMY_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_heir_flag = heir_started_education
+		is_lesser_in_union = no
+		if = {
+			limit = {
+				has_heir_flag = started_admin_education
+			}
+			NOT = {
+				heir_adm = 3
+			}
+		}
+		if = {
+			limit = {
+				has_heir_flag = started_dip_education
+			}
+			NOT = {
+				heir_dip = 3
+			}
+		}
+		if = {
+			limit = {
+				has_heir_flag = started_mil_education
+			}
+			NOT = {
+				heir_mil = 3
+			}
+		}
+	}
+	
+	
+	option = {
+		name = cato_education_events_education_progress.0004.a ### He'll figure it out, I'm sure...
+		subtract_education_progress_small = yes
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = cato_education_events_education_progress.0004.b ### Buy more material
+		if = {
+			limit = {
+				NOT = {
+					monthly_income = 4.166
+				}
+			}
+			add_treasury = -50
+		}
+		else_if = {
+			limit = {
+				monthly_income = 4.166
+				NOT = {
+					monthly_income = 41.66
+				}
+			}
+			add_years_of_income = -1
+		}
+		else = {
+			add_treasury = -500
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = cato_education_events_education_progress.0004.c ### I shall personally tutor him
+		highlight = yes
+		trigger = {
+			if = {
+				limit = {
+					has_heir_flag = started_admin_education
+				}
+				adm = 4
+			}
+			if = {
+				limit = {
+					has_heir_flag = started_dip_education
+				}
+				dip = 4
+			}
+			if = {
+				limit = {
+					has_heir_flag = started_mil_education
+				}
+				mil = 4
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {
+	id = cato_education_events_education_progress.0005 ###Heir Making Progress
+	title = cato_education_events_education_progress.0005.title
+	desc = cato_education_events_education_progress.0005.desc
+	picture = ECONOMY_eventPicture
+	is_triggered_only = yes
+	
+	trigger = {
+		has_heir_flag = heir_started_education
+		is_lesser_in_union = no
+	}
+	
+	
+	option = {
+		name = cato_education_events_education_progress.0005.a
+		add_education_progress_tiny = yes
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {
+	id = cato_education_events_education_progress.0006 ###Heir fights with tutor
+	title = cato_education_events_education_progress.0006.title
+	desc = cato_education_events_education_progress.0006.desc
+	picture = ECONOMY_eventPicture
+	is_triggered_only = yes
+	
+	trigger = {
+		has_heir_flag = heir_started_education
+		is_lesser_in_union = no
+	}
+	
+	
+	option = {
+		name = cato_education_events_education_progress.0006.a ###Support the Tutor
+		add_heir_claim = -10
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = cato_education_events_education_progress.0006.b ###Support the Heir
+		subtract_education_progress_tiny = yes
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = cato_education_events_education_progress.0006.c ###Find a compromise
+		if = {
+			limit = {
+				has_heir_flag = started_admin_education
+			}
+			add_adm_power = -50
+		}
+		else_if = {
+			limit = {
+				has_heir_flag = started_dip_education
+			}
+			add_dip_power = -50
+		}
+		else_if = {
+			limit = {
+				has_heir_flag = started_mil_education
+			}
+			add_mil_power = -50
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {
+	id = cato_education_events_education_progress.0007 ###Heir Studies Hard
+	title = cato_education_events_education_progress.0001.title
+	desc = cato_education_events_education_progress.0001.desc
+	picture = ECONOMY_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_heir_flag = heir_started_education
+		is_lesser_in_union = no
+	}
+	
+	
+	option = {
+		name = cato_education_events_education_progress.0001.a
+		add_education_progress_small = yes
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+############
+### Improvements for Clerical Education
+############
+country_event = {
+	id = cato_education_events_education_progress.1000 ###Has Humanist or Religious Ideas
+	title = cato_education_events_education_progress.1000.title
+	desc = cato_education_events_education_progress.1000.desc
+	picture = ECONOMY_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_heir_flag = clerical_education
+		is_lesser_in_union = no
+		has_heir_flag = heir_started_education
+		
+		OR = {
+			has_idea_group = religious_ideas
+			has_idea_group = humanist_ideas
+		}
+	}
+	
+	
+	option = {
+		name = cato_education_events_education_progress.1000.a
+		set_heir_flag = education_idea_group_bonus
+		add_education_progress_large = yes
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {
+	id = cato_education_events_education_progress.1001 ###Has temple or cathedral in capital
+	title = cato_education_events_education_progress.1001.title
+	desc = cato_education_events_education_progress.1001.desc
+	picture = ECONOMY_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_heir_flag = clerical_education
+		is_lesser_in_union = no
+		has_heir_flag = heir_started_education
+		capital_scope = {
+			OR = {
+				has_building = temple
+				has_building = cathedral
+			}
+		}
+	}
+	
+	
+	option = {
+		name = cato_education_events_education_progress.1001.a
+		if = {
+			limit = {
+				capital_scope = {
+					has_building = cathedral
+				}
+			}
+			add_education_progress_medium = yes
+		}
+		else = {
+			add_education_progress_small = yes
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {
+	id = cato_education_events_education_progress.1002 ###Has Inquisitor or Theologian Advisor
+	title = cato_education_events_education_progress.1002.title
+	desc = cato_education_events_education_progress.1002.desc
+	picture = ECONOMY_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_heir_flag = clerical_education
+		is_lesser_in_union = no
+		has_heir_flag = heir_started_education
+		
+		OR = {
+			advisor = theologian
+			advisor = inquisitor
+		}
+	}
+	
+	
+	option = {
+		name = cato_education_events_education_progress.1002.a
+		
+		add_education_progress_medium = yes
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+############
+### Improvements for Administrative Education
+############
+country_event = {
+	id = cato_education_events_education_progress.2000 ###Has Economic, Expansion, or Administrative
+	title = cato_education_events_education_progress.2000.title
+	desc = cato_education_events_education_progress.2000.desc
+	picture = ECONOMY_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_heir_flag = administrative_education
+		is_lesser_in_union = no
+		has_heir_flag = heir_started_education
+		OR = {
+			has_idea_group = economic_ideas
+			has_idea_group = administrative_ideas
+			has_idea_group = expansion_ideas
+		}
+	}
+	
+	
+	option = {
+		name = cato_education_events_education_progress.2000.a
+		add_education_progress_small = yes
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {
+	id = cato_education_events_education_progress.2001 ###Has courthouse or townhall in capital
+	title = cato_education_events_education_progress.2001.title
+	desc = cato_education_events_education_progress.2001.desc
+	picture = ECONOMY_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_heir_flag = administrative_education
+		is_lesser_in_union = no
+		has_heir_flag = heir_started_education
+		
+		capital_scope = {
+			OR = {
+				has_building = courthouse
+				has_building = town_hall
+			}
+		}
+	}
+	
+	
+	option = {
+		name = cato_education_events_education_progress.2001.a
+		if = {
+			limit = {
+				capital_scope = {
+					has_building = town_hall
+				}
+			}
+			add_education_progress_medium = yes
+		}
+		else = {
+			add_education_progress_small = yes
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {
+	id = cato_education_events_education_progress.2002 ###Treasurer or Master of Mint Advisor Advisor
+	title = cato_education_events_education_progress.2002.title
+	desc = cato_education_events_education_progress.2002.desc
+	picture = ECONOMY_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_heir_flag = administrative_education
+		is_lesser_in_union = no
+		has_heir_flag = heir_started_education
+		
+		OR = {
+			advisor = treasurer
+			advisor = master_of_mint
+		}
+	}
+	
+	
+	option = {
+		name = cato_education_events_education_progress.2002.a
+		add_education_progress_medium = yes
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+############
+### Improvements for Scholastic Education
+############
+country_event = {
+	id = cato_education_events_education_progress.3000 ###Has Innovative Ideas
+	title = cato_education_events_education_progress.3000.title
+	desc = cato_education_events_education_progress.3000.desc
+	picture = ECONOMY_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_heir_flag = scholastic_education
+		is_lesser_in_union = no
+		has_heir_flag = heir_started_education
+		has_idea_group = innovativeness_ideas
+	}
+	
+	
+	option = {
+		name = cato_education_events_education_progress.3000.a
+		add_education_progress_small = yes
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {
+	id = cato_education_events_education_progress.3001 ###Has University in Capital
+	title = cato_education_events_education_progress.3001.title
+	desc = cato_education_events_education_progress.3001.desc
+	picture = ECONOMY_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_heir_flag = scholastic_education
+		is_lesser_in_union = no
+		has_heir_flag = heir_started_education
+		capital_scope = {
+			has_building = university
+		}
+	}
+	
+	
+	option = {
+		name = cato_education_events_education_progress.3001.a
+		add_education_progress_small = yes
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {
+	id = cato_education_events_education_progress.3002 ###Natural Scientist or Philosopher Advisor
+	title = cato_education_events_education_progress.3002.title
+	desc = cato_education_events_education_progress.3002.desc
+	picture = ECONOMY_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_heir_flag = scholastic_education
+		is_lesser_in_union = no
+		has_heir_flag = heir_started_education
+		
+		OR = {
+			advisor = natural_scientist
+			advisor = philosopher
+		}
+	}
+	
+	
+	option = {
+		name = cato_education_events_education_progress.3002.a
+		
+		add_education_progress_medium = yes
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+############
+### Improvements for Diplomacy Education
+############
+country_event = {
+	id = cato_education_events_education_progress.4000 ###Has Diplomatic or Influence Ideas
+	title = cato_education_events_education_progress.4000.title
+	desc = cato_education_events_education_progress.4000.desc
+	picture = ECONOMY_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_heir_flag = diplomacy_education
+		is_lesser_in_union = no
+		has_heir_flag = heir_started_education
+		OR = {
+			has_idea_group = diplomatic_ideas
+			has_idea_group = influence_ideas
+		}
+	}
+	
+	
+	option = {
+		name = cato_education_events_education_progress.4000.a
+		add_education_progress_small = yes
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {
+	id = cato_education_events_education_progress.4001 ###Diplomat or Statesman Advisor
+	title = cato_education_events_education_progress.4001.title
+	desc = cato_education_events_education_progress.4001.desc
+	picture = ECONOMY_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_heir_flag = diplomacy_education
+		is_lesser_in_union = no
+		has_heir_flag = heir_started_education
+		
+		OR = {
+			advisor = diplomat
+			advisor = statesman
+		}
+	}
+	
+	
+	option = {
+		name = cato_education_events_education_progress.4001.a
+		
+		add_education_progress_medium = yes
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+############
+### Improvements for Intrigue Education
+############
+country_event = {
+	id = cato_education_events_education_progress.5000 ###Has Espionage Ideas
+	title = cato_education_events_education_progress.5000.title
+	desc = cato_education_events_education_progress.5000.desc
+	picture = ECONOMY_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_heir_flag = intrigue_education
+		is_lesser_in_union = no
+		has_heir_flag = heir_started_education
+		has_idea_group = spy_ideas
+	}
+	
+	
+	option = {
+		name = cato_education_events_education_progress.5000.a
+		add_education_progress_small = yes
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {
+	id = cato_education_events_education_progress.5001 ###Spymaster advisor
+	title = cato_education_events_education_progress.5001.title
+	desc = cato_education_events_education_progress.5001.desc
+	picture = ECONOMY_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_heir_flag = intrigue_education
+		is_lesser_in_union = no
+		has_heir_flag = heir_started_education
+		advisor = spymaster
+	}
+	
+	
+	option = {
+		name = cato_education_events_education_progress.5001.a
+		
+		add_education_progress_medium = yes
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+############
+### Improvements for Trade Education
+############
+country_event = {
+	id = cato_education_events_education_progress.6000 ###Has Trade, Economic, or Maritime ideas
+	title = cato_education_events_education_progress.6000.title
+	desc = cato_education_events_education_progress.6000.desc
+	picture = ECONOMY_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_heir_flag = trade_education
+		is_lesser_in_union = no
+		has_heir_flag = heir_started_education
+		OR = {
+			has_idea_group = trade_ideas
+			has_idea_group = economic_ideas
+			has_idea_group = maritime_ideas
+		}
+	}
+	
+	
+	option = {
+		name = cato_education_events_education_progress.6000.a
+		add_education_progress_small = yes
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {
+	id = cato_education_events_education_progress.6001 ###Has Marketplace, Trade Depot, or Stock Exchange
+	title = cato_education_events_education_progress.6001.title
+	desc = cato_education_events_education_progress.6001.desc
+	picture = ECONOMY_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_heir_flag = trade_education
+		is_lesser_in_union = no
+		has_heir_flag = heir_started_education
+		capital_scope = {
+			OR = {
+				has_building = marketplace
+				has_building = trade_depot
+				has_building = stock_exchange
+			}
+		}
+	}
+	
+	
+	option = {
+		name = cato_education_events_education_progress.6001.a
+		add_education_progress_small = yes
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {
+	id = cato_education_events_education_progress.6002 ###Trader advisor
+	title = cato_education_events_education_progress.6002.title
+	desc = cato_education_events_education_progress.6002.desc
+	picture = ECONOMY_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_heir_flag = trade_education
+		is_lesser_in_union = no
+		has_heir_flag = heir_started_education
+		advisor = trader
+	}
+	
+	
+	option = {
+		name = cato_education_events_education_progress.6002.a
+		add_education_progress_medium = yes
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+############
+### Improvements for Martial & Logistics Education(Since they share every modifier except for advisors)
+############
+country_event = {
+	id = cato_education_events_education_progress.7000 ###Has any military idea except for naval, 
+	title = cato_education_events_education_progress.7000.title
+	desc = cato_education_events_education_progress.7000.desc
+	picture = ECONOMY_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			has_heir_flag = martial_education
+			has_heir_flag = logistics_education
+		}
+		is_lesser_in_union = no
+		has_heir_flag = heir_started_education
+		OR = {
+			has_idea_group = quality_ideas
+			has_idea_group = quantity_ideas
+			has_idea_group = offensive_ideas
+			has_idea_group = defensive_ideas
+			has_idea_group = aristocratic_ideas
+			has_idea_group = plutocratic_ideas
+		}
+	}
+	
+	
+	option = {
+		name = cato_education_events_education_progress.7000.a
+		add_education_progress_small = yes
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {
+	id = cato_education_events_education_progress.7001 ###Has a barracks, training field, regimental camp, conscription center, or any fort building in capital
+	title = cato_education_events_education_progress.7001.title
+	desc = cato_education_events_education_progress.7001.desc
+	picture = ECONOMY_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		OR = {
+			has_heir_flag = martial_education
+			has_heir_flag = logistics_education
+		}
+		is_lesser_in_union = no
+		has_heir_flag = heir_started_education
+		
+		capital_scope = {
+			OR = {
+				has_building = barracks
+				has_building = training_fields
+				has_building = regimental_camp
+				has_building = conscription_center
+				has_building = fort_15th
+				has_building = fort_16th
+				has_building = fort_17th
+				has_building = fort_18th
+			}
+		}
+	}
+	
+	
+	option = {
+		name = cato_education_events_education_progress.7001.a
+		add_education_progress_small = yes
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {
+	id = cato_education_events_education_progress.7002 ###Has Commandant or Army Reformer (Martial Education)
+	title = cato_education_events_education_progress.7002.title
+	desc = cato_education_events_education_progress.7002.desc
+	picture = ECONOMY_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_heir_flag = martial_education
+		is_lesser_in_union = no
+		has_heir_flag = heir_started_education
+		OR = {
+			advisor = commandant
+			advisor = army_reformer
+			advisor = recruitmaster
+		}
+	}
+	
+	
+	option = {
+		name = cato_education_events_education_progress.7002.a
+		add_education_progress_medium = yes
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {
+	id = cato_education_events_education_progress.7003 ###Has Quartermaster, Grand Captain, Army Organizer, or Military Engineer
+	title = cato_education_events_education_progress.7003.title
+	desc = cato_education_events_education_progress.7003.desc
+	picture = ECONOMY_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_heir_flag = logistics_education
+		is_lesser_in_union = no
+		has_heir_flag = heir_started_education
+		OR = {
+			advisor = quartermaster
+			advisor = grand_captain
+			advisor = army_organiser
+			advisor = fortification_expert
+		}
+	}
+	
+	
+	option = {
+		name = cato_education_events_education_progress.7003.a
+		
+		add_education_progress_medium = yes
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+############
+### Improvements for Naval Education
+############
+country_event = {
+	id = cato_education_events_education_progress.8000 ###Has any Naval, Maritime, Aristocratic, Plutocratic, or Exploration ideas
+	title = cato_education_events_education_progress.8000.title
+	desc = cato_education_events_education_progress.8000.desc
+	picture = ECONOMY_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_heir_flag = naval_education
+		is_lesser_in_union = no
+		has_heir_flag = heir_started_education
+		OR = {
+			has_idea_group = naval_ideas
+			has_idea_group = maritime_ideas
+			has_idea_group = aristocratic_ideas
+			has_idea_group = plutocratic_ideas
+			has_idea_group = exploration_ideas
+		}
+	}
+	
+	
+	option = {
+		name = cato_education_events_education_progress.8000.a
+		add_education_progress_small = yes
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {
+	id = cato_education_events_education_progress.8001 ###Has a shipyard, dock,  in capital
+	title = cato_education_events_education_progress.8001.title
+	desc = cato_education_events_education_progress.8001.desc
+	picture = ECONOMY_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_heir_flag = naval_education
+		is_lesser_in_union = no
+		has_heir_flag = heir_started_education
+		capital_scope = {
+			OR = {
+				has_building = shipyard
+				has_building = grand_shipyard
+				has_building = dock
+				has_building = drydock
+				has_building = coastal_defence
+				has_building = naval_battery
+			}
+		}
+	}
+	
+	
+	option = {
+		name = cato_education_events_education_progress.8001.a
+		add_education_progress_small = yes
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {
+	id = cato_education_events_education_progress.8002 ###Has Navigator or Naval Refomer Advisor
+	title = cato_education_events_education_progress.8002.title
+	desc = cato_education_events_education_progress.8002.desc
+	picture = ECONOMY_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_heir_flag = naval_education
+		is_lesser_in_union = no
+		has_heir_flag = heir_started_education
+		OR = {
+			advisor = navigator
+			advisor = naval_reformer
+		}
+	}
+	
+	
+	option = {
+		name = cato_education_events_education_progress.8002.a
+		
+		add_education_progress_medium = yes
+		ai_chance = {
+			factor = 1
+		}
+	}
+}

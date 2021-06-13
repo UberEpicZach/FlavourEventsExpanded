@@ -6,16 +6,18 @@ add_education_progress_tiny = {
 		which = heirEducationalLevel
 		value = 5
 	}
-	if = {
-		limit = {
-			check_variable = {
+	hidden_effect = {
+		if = {
+			limit = {
+				check_variable = {
+					which = heirEducationalLevel
+					value = 100
+				}
+			}
+			set_variable = {
 				which = heirEducationalLevel
 				value = 100
 			}
-		}
-		set_variable = {
-			which = heirEducationalLevel
-			value = 100
 		}
 	}
 }
@@ -24,16 +26,18 @@ add_education_progress_small = {
 		which = heirEducationalLevel
 		value = 10
 	}
-	if = {
-		limit = {
-			check_variable = {
+	hidden_effect = {
+		if = {
+			limit = {
+				check_variable = {
+					which = heirEducationalLevel
+					value = 100
+				}
+			}
+			set_variable = {
 				which = heirEducationalLevel
 				value = 100
 			}
-		}
-		set_variable = {
-			which = heirEducationalLevel
-			value = 100
 		}
 	}
 }
@@ -42,16 +46,18 @@ add_education_progress_medium = {
 		which = heirEducationalLevel
 		value = 15
 	}
-	if = {
-		limit = {
-			check_variable = {
+	hidden_effect = {
+		if = {
+			limit = {
+				check_variable = {
+					which = heirEducationalLevel
+					value = 100
+				}
+			}
+			set_variable = {
 				which = heirEducationalLevel
 				value = 100
 			}
-		}
-		set_variable = {
-			which = heirEducationalLevel
-			value = 100
 		}
 	}
 }
@@ -60,16 +66,18 @@ add_education_progress_large = {
 		which = heirEducationalLevel
 		value = 20
 	}
-	if = {
-		limit = {
-			check_variable = {
+	hidden_effect = {
+		if = {
+			limit = {
+				check_variable = {
+					which = heirEducationalLevel
+					value = 100
+				}
+			}
+			set_variable = {
 				which = heirEducationalLevel
 				value = 100
 			}
-		}
-		set_variable = {
-			which = heirEducationalLevel
-			value = 100
 		}
 	}
 }
@@ -78,16 +86,18 @@ add_education_progress_huge = {
 		which = heirEducationalLevel
 		value = 25
 	}
-	if = {
-		limit = {
-			check_variable = {
+	hidden_effect = {
+		if = {
+			limit = {
+				check_variable = {
+					which = heirEducationalLevel
+					value = 100
+				}
+			}
+			set_variable = {
 				which = heirEducationalLevel
 				value = 100
 			}
-		}
-		set_variable = {
-			which = heirEducationalLevel
-			value = 100
 		}
 	}
 }
@@ -96,18 +106,20 @@ subtract_education_progress_tiny = {
 		which = heirEducationalLevel
 		value = 5
 	}
-	if = {
-		limit = {
-			NOT = {
-				check_variable = {
-					which = heirEducationalLevel
-					value = 0
+	hidden_effect = {
+		if = {
+			limit = {
+				NOT = {
+					check_variable = {
+						which = heirEducationalLevel
+						value = 0
+					}
 				}
 			}
-		}
-		set_variable = {
-			which = heirEducationalLevel
-			value = 0
+			set_variable = {
+				which = heirEducationalLevel
+				value = 0
+			}
 		}
 	}
 }
@@ -116,18 +128,20 @@ subtract_education_progress_small = {
 		which = heirEducationalLevel
 		value = 10
 	}
-	if = {
-		limit = {
-			NOT = {
-				check_variable = {
-					which = heirEducationalLevel
-					value = 0
+	hidden_effect = {
+		if = {
+			limit = {
+				NOT = {
+					check_variable = {
+						which = heirEducationalLevel
+						value = 0
+					}
 				}
 			}
-		}
-		set_variable = {
-			which = heirEducationalLevel
-			value = 0
+			set_variable = {
+				which = heirEducationalLevel
+				value = 0
+			}
 		}
 	}
 }
@@ -136,18 +150,20 @@ subtract_education_progress_medium = {
 		which = heirEducationalLevel
 		value = 15
 	}
-	if = {
-		limit = {
-			NOT = {
-				check_variable = {
-					which = heirEducationalLevel
-					value = 0
+	hidden_effect = {
+		if = {
+			limit = {
+				NOT = {
+					check_variable = {
+						which = heirEducationalLevel
+						value = 0
+					}
 				}
 			}
-		}
-		set_variable = {
-			which = heirEducationalLevel
-			value = 0
+			set_variable = {
+				which = heirEducationalLevel
+				value = 0
+			}
 		}
 	}
 }
@@ -156,18 +172,20 @@ subtract_education_progress_large = {
 		which = heirEducationalLevel
 		value = 20
 	}
-	if = {
-		limit = {
-			NOT = {
-				check_variable = {
-					which = heirEducationalLevel
-					value = 0
+	hidden_effect = {
+		if = {
+			limit = {
+				NOT = {
+					check_variable = {
+						which = heirEducationalLevel
+						value = 0
+					}
 				}
 			}
-		}
-		set_variable = {
-			which = heirEducationalLevel
-			value = 0
+			set_variable = {
+				which = heirEducationalLevel
+				value = 0
+			}
 		}
 	}
 }
@@ -176,18 +194,20 @@ subtract_education_progress_huge = {
 		which = heirEducationalLevel
 		value = 25
 	}
-	if = {
-		limit = {
-			NOT = {
-				check_variable = {
-					which = heirEducationalLevel
-					value = 0
+	hidden_effect = {
+		if = {
+			limit = {
+				NOT = {
+					check_variable = {
+						which = heirEducationalLevel
+						value = 0
+					}
 				}
 			}
-		}
-		set_variable = {
-			which = heirEducationalLevel
-			value = 0
+			set_variable = {
+				which = heirEducationalLevel
+				value = 0
+			}
 		}
 	}
 }
@@ -196,18 +216,20 @@ add_good_clerical_education = {
 		name = good_clerical_education
 		duration = -1
 	}
-	if = {
-		limit = {
-			NOT = {
-				adm = 6
+	hidden_effect = {
+		if = {
+			limit = {
+				NOT = {
+					check_variable = {
+						which = heirEducationalLevel
+						value = 0
+					}
+				}
 			}
-		}
-		change_adm = 1
-	}
-	else = {
-		add_ruler_modifier = {
-			name = adm_education_bonus_1
-			duration = -1
+			set_variable = {
+				which = heirEducationalLevel
+				value = 0
+			}
 		}
 	}
 }
