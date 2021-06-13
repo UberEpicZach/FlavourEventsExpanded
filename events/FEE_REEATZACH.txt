@@ -228,8 +228,15 @@ country_event = {
 
 	option = {
 		name = FEE_Bohemia.5.a
-		BOH = {
-			create_union = HUN
+
+		if = {
+			limit = {
+				BOH = { valid_for_personal_unions_trigger = yes }
+				HUN = { valid_for_personal_unions_trigger = yes }
+			}
+			BOH = {
+				create_union = HUN
+			}
 		}
 		kill_heir = yes
 		add_stability = 2
@@ -301,8 +308,15 @@ country_event = {
 	}
 	option = {
 		name = FEE_Bohemia.5.c
-		HAB = {
-			create_union = HUN
+
+		if = {
+			limit = {
+				HAB = { valid_for_personal_unions_trigger = yes }
+				HUN = { valid_for_personal_unions_trigger = yes }
+			}
+			HAB = {
+				create_union = HUN
+			}
 		}
 		ai_chance = {
 			factor = 0

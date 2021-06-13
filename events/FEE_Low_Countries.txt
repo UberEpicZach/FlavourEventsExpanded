@@ -576,8 +576,14 @@ country_event = {
 		}
 
 		kill_ruler = yes
-		emperor = {
-			create_union = ROOT
+		if = {
+			limit = {
+				valid_for_personal_unions_trigger = yes
+				emperor = { valid_for_personal_unions_trigger = yes }
+			}
+			emperor = {
+				create_union = ROOT
+			}
 		}
 		every_owned_province = {
 			add_permanent_claim = BRG
@@ -593,8 +599,14 @@ country_event = {
 		}
 
 		kill_ruler = yes
-		BRG = {
-			create_union = ROOT
+		if = {
+			limit = {
+				BRG = { valid_for_personal_unions_trigger = yes }
+				valid_for_personal_unions_trigger = yes
+			}
+			BRG = {
+				create_union = ROOT
+			}
 		}
 		every_owned_province = {
 			add_permanent_claim = emperor

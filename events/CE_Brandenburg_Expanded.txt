@@ -558,8 +558,14 @@ country_event = {
 	
 	option = {
 		name = CE_brandenburg_expanded.10.a
-		BOH = {
-			create_union = GLG
+		if = {
+			limit = {
+				BOH = { valid_for_personal_unions_trigger = yes }
+				GLG = { valid_for_personal_unions_trigger = yes }
+			}
+			BOH = {
+				create_union = GLG
+			}
 		}
 		define_advisor = {
 			type = diplomat
@@ -1576,6 +1582,8 @@ country_event = {
 					}
 				}
 			}
+			BRG = { valid_for_personal_unions_trigger = yes }
+			valid_for_personal_unions_trigger = yes
 		}
 		create_union = BRG
 		ai_chance = {
@@ -1976,6 +1984,15 @@ country_event = {
 	}
 	option = {
 		name = CE_brandenburg_expanded.29.b
+		trigger = {
+			hidden_trigger = {
+				OR = {
+					BRA = { valid_for_personal_unions_trigger = yes }
+					PRU = { valid_for_personal_unions_trigger = yes }
+				}
+				BRG = { valid_for_personal_unions_trigger = yes }
+			}
+		}
 		if = {
 			limit = {
 				exists = BRA 

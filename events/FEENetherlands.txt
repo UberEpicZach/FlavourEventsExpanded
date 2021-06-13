@@ -209,7 +209,14 @@ country_event = {
 			}
 		}
 		add_years_of_income = -0.8
-		create_union = GEL
+
+		if = {
+			limit = {
+				valid_for_personal_unions_trigger = yes
+				GEL = { valid_for_personal_unions_trigger = yes }
+			}
+			create_union = GEL
+		}
 		hidden_effect = {
 			GEL = {
 				country_event = { id = fee_NED.6 }

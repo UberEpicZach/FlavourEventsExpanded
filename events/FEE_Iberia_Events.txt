@@ -391,19 +391,37 @@ country_event = {
 			change_government = monarchy
 			add_government_reform = feudalism_reform
 		}
-		create_union = CAT
+		if = {
+			limit = {
+				valid_for_personal_unions_trigger = yes
+				CAT = { valid_for_personal_unions_trigger = yes }
+			}
+			create_union = CAT
+		}
 		release = GAL
 		GAL = {
 			change_government = monarchy
 			add_government_reform = feudalism_reform
 		}
-		create_union = GAL
+		if = {
+			limit = {
+				valid_for_personal_unions_trigger = yes
+				GAL = { valid_for_personal_unions_trigger = yes }
+			}
+			create_union = GAL
+		}
 		release = NAV
 		NAV = {
 			change_government = monarchy
 			add_government_reform = feudalism_reform
 		}
-		create_union = NAV
+		if = {
+			limit = {
+				valid_for_personal_unions_trigger = yes
+				NAV = { valid_for_personal_unions_trigger = yes }
+			}
+			create_union = NAV
+		}
 	}
 
 	option = {
