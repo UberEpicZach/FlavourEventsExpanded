@@ -500,7 +500,8 @@ country_event = {
 
 	fire_only_once = yes
 	trigger = {
-		
+		tag = VEN
+		is_year = 1447
 	}
 
 	option = {
