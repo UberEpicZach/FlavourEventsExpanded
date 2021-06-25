@@ -146,16 +146,12 @@ country_event = {
 		every_owned_province = {
 			limit = {
 				OR = {
-					area = apulia_area
-					area = central_italy_area
-				}
-				OR = {
 					trade_goods = livestock
 					trade_goods = olive_oil
 					trade_goods = cheese
 				}
 			}
-			add_province_modifier = {
+			add_permanent_province_modifier = {
 				name = nap_transumanza
 				duration = -1
 			}

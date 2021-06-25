@@ -360,7 +360,7 @@ country_event = {
 		add_years_of_income = -0.5
 		custom_tooltip = VEN_FANTI_MAR_TT
 		tooltip = {
-			add_province_modifier = {
+			add_permanent_province_modifier = {
 				name = ven_fanti_mar
 				duration = -1
 			}
@@ -370,7 +370,7 @@ country_event = {
 				limit = {
 					has_port = yes
 				}
-				add_province_modifier = {
+				add_permanent_province_modifier = {
 					name = ven_fanti_mar
 					duration = -1
 				}
