@@ -824,8 +824,12 @@ country_event = {
 		random_list = {
 			50 = {
 				break_union = BOH
-				emperor = {
-					create_union = BOH
+				if = {
+					limit = {
+						emperor = { valid_for_personal_unions_trigger = yes }
+						BOH = { valid_for_personal_unions_trigger = yes }
+					}
+					emperor = { create_union = BOH }
 				}
 			}
 			50 = { }

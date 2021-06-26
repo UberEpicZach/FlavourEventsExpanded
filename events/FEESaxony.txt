@@ -45,7 +45,13 @@ country_event = {
 			add_core = 59
 		}
 		release = THU
-		create_union = THU
+		if = {
+			limit = {
+				valid_for_personal_unions_trigger = yes
+				THU = { valid_for_personal_unions_trigger = yes }
+			}
+			create_union = THU
+		}
 		add_country_modifier = {
 			name = fee_treaty_of_leipzig
 			duration = -1

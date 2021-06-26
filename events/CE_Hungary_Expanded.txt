@@ -232,8 +232,8 @@ country_event = {
 	}
 	option = {
 		name = CE_hungary_expanded.4.b
-		add_legitimacy = -20
-		add_prestige = -25
+		add_legitimacy = -10
+		add_prestige = -15
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -634,7 +634,7 @@ country_event = {
 			}
 		}
 		highlight = yes
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		POL = {
 			add_casus_belli = {
 				target = HUN
@@ -1150,8 +1150,8 @@ country_event = {
 						area = lusatia_area
 						area = moravia_area
 					}
-					cede_province = BOH
 				}
+				cede_province = BOH
 			}
 			clr_country_flag = CE_HUN_integrate_silesia
 			clr_country_flag = CE_HUN_integrate_moravia
@@ -1175,7 +1175,7 @@ country_event = {
 				SIL = {
 					capital_scope = {
 						spawn_rebels = {
-							type = nationalists
+							type = nationalist_rebels
 							size = 3
 						}
 					}
@@ -1191,7 +1191,7 @@ country_event = {
 				MVA = {
 					capital_scope = {
 						spawn_rebels = {
-							type = nationalists
+							type = nationalist_rebels
 							size = 3
 						}
 					}
@@ -1207,7 +1207,7 @@ country_event = {
 				SOR = {
 					capital_scope = {
 						spawn_rebels = {
-							type = nationalists
+							type = nationalist_rebels
 							size = 3
 						}
 					}

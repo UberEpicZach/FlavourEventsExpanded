@@ -10,7 +10,7 @@ country_event = {
     fire_only_once = yes
 
     trigger = {
-        always = yes
+		NOT = { has_global_flag = flavour_and_events_expanded_mod_active }
     }
 
     mean_time_to_happen = {

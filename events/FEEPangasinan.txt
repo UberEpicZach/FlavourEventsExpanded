@@ -73,11 +73,13 @@ country_event = {
 		trigger = {
 			NOT = { exists = PGS }
 			NOT = { capital = 2698 }
-		}	
+		}
+		
 		ai_chance = { factor = 90 }
+
 		2698 = {
 			cede_province = PGS
-		}
+		}		
 		if = {
 			limit = {
 				5239 = {

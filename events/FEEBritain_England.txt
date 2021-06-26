@@ -175,15 +175,7 @@ country_event = {
 	}
 	option = {
 		name = fee_gbr_eng_1_4
-		if = {
-			limit = {
-				stability = 3
-			}
-			add_adm_power = 100
-		}
-		else = {
-			add_stability = 1
-		}
+		add_stability_or_adm_power = yes
 		if = {
 			limit = {
 				accepted_culture = scottish
@@ -207,15 +199,7 @@ country_event = {
 		ai_chance = {
 			factor = 100
 		}
-		if = {
-			limit = {
-				stability = 3
-			}
-			add_adm_power = 100
-		}
-		else = {
-			add_stability = 1
-		}
+		add_stability_or_adm_power = yes
 		if = {
 			limit = {
 				accepted_culture = scottish
@@ -389,7 +373,7 @@ country_event = {
 			}
 			spawn_rebels = {
 				type = heretic_rebels
-				size = 5
+				size = 3
 			}
 		}
 		random_owned_province = {
@@ -402,7 +386,7 @@ country_event = {
 			}
 			spawn_rebels = {
 				type = heretic_rebels
-				size = 5
+				size = 3
 			}
 		}
 		random_owned_province = {
@@ -415,7 +399,7 @@ country_event = {
 			}
 			spawn_rebels = {
 				type = heretic_rebels
-				size = 5
+				size = 3
 			}
 		}
 		random_owned_province = {
@@ -593,7 +577,7 @@ country_event = {
 	major = yes
 	option = {
 		name = fee_gbr_eng_1_10
-		add_stability = 1
+		add_stability_or_adm_power = yes
 		add_years_of_income = 1
 		add_inflation = -5
 	}
