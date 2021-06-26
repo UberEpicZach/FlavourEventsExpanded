@@ -1,9 +1,9 @@
 namespace = FEE_France_Events
 
 country_event = {
-	id = FEE_France_Events.01
-	title = FEE_France_Events.01.T
-	desc = FEE_France_Events.01.D
+	id = FEE_France_Events.1a
+	title = FEE_France_Events.1a.T
+	desc = FEE_France_Events.1a.D
 	picture = GOOD_WITH_MONARCH_eventPicture
 
 	fire_only_once = yes
@@ -22,7 +22,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_France_Events.01.OPT1
+		name = FEE_France_Events.1a.OPT1
 	}
 }
 
