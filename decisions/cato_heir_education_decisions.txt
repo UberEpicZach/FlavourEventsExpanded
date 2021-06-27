@@ -1,0 +1,50 @@
+country_decisions = {
+	educate_heir = {
+		potential = {
+			NOT = {
+				government = theocracy
+				heir_age = 14
+			}
+			is_lesser_in_union = no
+			has_heir = yes
+			has_global_flag = FEE_Heir_Education_Active
+			heir_age = 5
+			
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = NOT_STARTED_HEIR_EDUCATION
+				AND = {
+					NOT = {
+						has_heir_flag = heir_started_education
+					}
+					NOT = {
+						has_heir_flag = heir_finished_education
+					}
+				}
+			}
+		}
+		effect = {
+			country_event = {
+				id = cato_education_events_setup_hereditary.1
+			}
+			hidden_effect = {
+				set_heir_flag = heir_started_education
+			}
+		}
+	}
+	view_heir_education = {
+		potential = {
+			OR = {
+				has_heir_flag = heir_started_education
+				has_heir_flag = heir_finished_education
+			}
+		}
+		allow = {
+			always = no
+		}
+		effect = {
+			custom_tooltip = HEIR_EDUCATION_PROGRESS
+		}
+	}
+}
