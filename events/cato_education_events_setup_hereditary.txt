@@ -12,7 +12,6 @@ country_event = {
 	trigger = {
 		has_heir = yes
 		is_lesser_in_union = no
-		has_global_flag = FEE_Heir_Education_Active
 		NOT = {
 		    OR = {
 				has_heir_flag = in_education_excellent
@@ -31,6 +30,7 @@ country_event = {
 				which = heirEducationalLevel
 				value = 0
 			}
+			set_heir_flag = heir_started_education
 		}
 	}
 	option = {
