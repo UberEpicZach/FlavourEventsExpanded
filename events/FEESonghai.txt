@@ -26,7 +26,7 @@ country_event = {
 	option = {
 		name = fee_SON.1.a
 		define_general = {
-			name = "Muhammad Askia"
+			name = "Muhammad Ture"
 			fire = 3
 			shock = 5
 			manuever = 4
@@ -58,7 +58,6 @@ country_event = {
 		}
 		is_year = 1485
 		religion = sunni
-		has_leader = "Muhammad Askia"
 	}
 
 	mean_time_to_happen = {
@@ -80,32 +79,25 @@ country_event = {
 			MIL = 5
 		}
 	}
-	
-	immediate = {
-		set_country_flag = askia_dynasty_mission_flag
-	}
 
 	option = {
 		name = fee_SON.2.a
 		ai_chance = {
 			factor = 85
 		}
-		
-		set_country_flag = askia_made_ruler_flag
-		
 		add_country_modifier = {
 			name = ruler_deposed
 			duration = -1
 			hidden = yes
 		}
-		define_leader_to_ruler = {
-			type = general
+		define_ruler = {
 			name = "Askia Muhammad"
+			dynasty = "Askia"
 			adm = 6
 			dip = 5
 			mil = 4
-			claim = 60
-			fixed = yes
+			age = 35
+			claim = 30
 		}
 		kill_heir = yes
 		add_piety = 0.15

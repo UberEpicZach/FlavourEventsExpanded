@@ -869,7 +869,7 @@ country_event = {
 				}
 				if = {
 					limit = {
-						valid_for_personal_unions_trigger = yes
+						religion_group = christian
 					}
 					create_union = event_target:partitioned_country
 				}
@@ -901,7 +901,7 @@ country_event = {
 				}
 				if = {
 					limit = {
-						valid_for_personal_unions_trigger = yes
+						religion_group = christian
 					}
 					create_union = event_target:partitioned_country_2
 				}
@@ -947,7 +947,7 @@ country_event = {
 				}
 				if = {
 					limit = {
-						valid_for_personal_unions_trigger = yes
+						religion_group = christian
 					}
 					create_union = event_target:partitioned_country_3
 				}

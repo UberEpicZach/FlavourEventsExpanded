@@ -12,16 +12,16 @@ country_event = {
 	
 	trigger = {
 		dynasty = "von Hohenzollern"
-		OR = {
-			AND = {
-				tag = ANS
-				is_subject = no
-			}
+		#OR = {
+			#AND = {
+			#	tag = ANS
+			#	is_subject = no
+			#}
 			any_subject_country = {
 				tag = ANS
 			}
-		}
-		is_year = 1470
+		#}
+		#is_year = 1470
 	}
 	
 	mean_time_to_happen = {
@@ -251,7 +251,7 @@ country_event = {
 			}
 		}
 		ai_chance = {
-			factor = 4
+			factor = 1
 			modifier = {
 				factor = 5
 				ANS = {
@@ -287,7 +287,7 @@ country_event = {
 			}
 		}
 		ai_chance = {
-			factor = 5
+			factor = 1
 		}
 	}
 }
@@ -571,6 +571,12 @@ country_event = {
 			}
 			modifier = {
 				factor = 2
+				BRA = {
+					army_size = WBG
+				}
+			}
+			modifier = {
+				factor = 2
 				WBG = {
 					is_at_war = yes
 				}
@@ -611,7 +617,7 @@ country_event = {
 			}
 		}
 		ai_chance = {
-			factor = 3
+			factor = 2
 		}
 	}
 }

@@ -127,14 +127,7 @@ country_event = {
 
 	option = {
 		name = fee_POL.11.a # Our countries should cooperate
-
-		if = {
-			limit = {
-				valid_for_personal_unions_trigger = yes
-				LIT = { valid_for_personal_unions_trigger = yes }
-			}
-			create_union = LIT
-		}
+		create_union = LIT
 		ai_chance = {
 			factor = 70
 		}

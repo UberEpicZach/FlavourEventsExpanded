@@ -1,8 +1,8 @@
-version="1.2"
+version="1.30.*.*"
 tags={
 	"Balance"
         "Events"
         "Historical"
 }
 name="FlavourEventsExpanded"
-supported_version="1.31.0"
+supported_version="1.30.4"

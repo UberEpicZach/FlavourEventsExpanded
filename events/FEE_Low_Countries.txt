@@ -64,10 +64,8 @@ country_event = {
 						OR = {
 							AND = {
 								is_expanded_mod_active = { mod = subjects }
-								OR = {
-									is_subject_of_type = brother_kingdom
-									is_subject_of_type = integrated_personal_union
-								}
+								is_subject_of_type = brother_kingdom
+								is_subject_of_type = integrated_personal_union
 							}
 							is_subject_of_type = personal_union
 						}
@@ -87,10 +85,8 @@ country_event = {
 						OR = {
 							AND = {
 								is_expanded_mod_active = { mod = subjects }
-								OR = {
-									is_subject_of_type = brother_kingdom
-									is_subject_of_type = integrated_personal_union
-								}
+								is_subject_of_type = brother_kingdom
+								is_subject_of_type = integrated_personal_union
 							}
 							is_subject_of_type = personal_union
 						}
@@ -110,10 +106,8 @@ country_event = {
 						OR = {
 							AND = {
 								is_expanded_mod_active = { mod = subjects }
-								OR = {
-									is_subject_of_type = brother_kingdom
-									is_subject_of_type = integrated_personal_union
-								}
+								is_subject_of_type = brother_kingdom
+								is_subject_of_type = integrated_personal_union
 							}
 							is_subject_of_type = personal_union
 						}
@@ -576,14 +570,8 @@ country_event = {
 		}
 
 		kill_ruler = yes
-		if = {
-			limit = {
-				valid_for_personal_unions_trigger = yes
-				emperor = { valid_for_personal_unions_trigger = yes }
-			}
-			emperor = {
-				create_union = ROOT
-			}
+		emperor = {
+			create_union = ROOT
 		}
 		every_owned_province = {
 			add_permanent_claim = BRG
@@ -599,14 +587,8 @@ country_event = {
 		}
 
 		kill_ruler = yes
-		if = {
-			limit = {
-				BRG = { valid_for_personal_unions_trigger = yes }
-				valid_for_personal_unions_trigger = yes
-			}
-			BRG = {
-				create_union = ROOT
-			}
+		BRG = {
+			create_union = ROOT
 		}
 		every_owned_province = {
 			add_permanent_claim = emperor

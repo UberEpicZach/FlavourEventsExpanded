@@ -94,14 +94,7 @@ country_event = {
 				is_subject = yes
 			}
 		}
-		
-		if = {
-			limit = {
-				valid_for_personal_unions_trigger = yes
-				NAV = { valid_for_personal_unions_trigger = yes }
-			}
-			create_union = NAV
-		}
+		create_union = NAV
 	}
 	option = {
 		name = fee_NAV.2.b
@@ -326,8 +319,6 @@ country_event = {
 						prestige = 1
 					}
 				}
-				valid_for_personal_unions_trigger = yes
-				NAV = { valid_for_personal_unions_trigger = yes }
 			}
 			create_union = NAV
 		}

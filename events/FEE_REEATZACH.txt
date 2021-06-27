@@ -215,9 +215,6 @@ country_event = {
 		NOT = {
 			has_ruler_flag = FEE_Matyas_Reign
 		}
-		NOT = {
-			is_subject = yes
-		}
 	}
 
 	fire_only_once = yes
@@ -228,15 +225,8 @@ country_event = {
 
 	option = {
 		name = FEE_Bohemia.5.a
-
-		if = {
-			limit = {
-				BOH = { valid_for_personal_unions_trigger = yes }
-				HUN = { valid_for_personal_unions_trigger = yes }
-			}
-			BOH = {
-				create_union = HUN
-			}
+		BOH = {
+			create_union = HUN
 		}
 		kill_heir = yes
 		add_stability = 2
@@ -308,15 +298,8 @@ country_event = {
 	}
 	option = {
 		name = FEE_Bohemia.5.c
-
-		if = {
-			limit = {
-				HAB = { valid_for_personal_unions_trigger = yes }
-				HUN = { valid_for_personal_unions_trigger = yes }
-			}
-			HAB = {
-				create_union = HUN
-			}
+		HAB = {
+			create_union = HUN
 		}
 		ai_chance = {
 			factor = 0

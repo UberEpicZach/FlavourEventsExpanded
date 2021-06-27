@@ -750,13 +750,13 @@ fee_rationalist_trade = {
 }
 
 fee_mercantilist_suffering = {
-	global_foreign_trade_power = -0.10
-	trade_efficiency = -0.10
+	global_foreign_trade_power = -0.01
+	trade_efficiency = -0.01
 }
 
 fee_province_war_criticism = {
 	local_unrest = 2
-	development_cost = 0.10
+	development_cost = 0.01
 }
 
 fee_war_criticism = {
@@ -765,13 +765,13 @@ fee_war_criticism = {
 
 fee_enlightenment_thinker_repressed = {
 	global_unrest = -1
-	stability_cost_modifier = 0.10
+	stability_cost_modifier = 0.01
 	legitimacy = -0.025
 }
 
 fee_enlightenment_anti_government = {
 	global_unrest = 1
-	stability_cost_modifier = 0.10
+	stability_cost_modifier = 0.01
 }
 
 fee_anti_religious_work_catholic = {

@@ -315,13 +315,7 @@ country_event = {
 		ai_chance = { factor = 30 }
 		
 		release	= FIN
-		if = {
-			limit = {
-				valid_for_personal_unions_trigger = yes
-				FIN = { valid_for_personal_unions_trigger = yes }
-			}
-			create_union = FIN
-		}
+		create_union = FIN
 		
 		finland_area = {
 			cede_province = FIN

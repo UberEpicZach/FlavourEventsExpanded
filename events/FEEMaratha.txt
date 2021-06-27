@@ -179,12 +179,10 @@ province_event = {
 						has_country_modifier = fee_defected_once
 					}
 				}
-				owner = {
-					add_country_modifier = {
-						name = fee_no_more_defections
-						duration = -1
-						hidden = yes
-					}
+				add_country_modifier = {
+					name = fee_no_more_defections
+					duration = -1
+					hidden = yes
 				}
 			}
 		}
@@ -205,12 +203,10 @@ province_event = {
 			cavalry = ROOT
 		}
 		hidden_effect = {
-			owner = {
-				add_country_modifier = {
-					name = fee_defected_once
-					duration = -1
-					hidden = yes
-				}
+			add_country_modifier = {
+				name = fee_defected_once
+				duration = -1
+				hidden = yes
 			}
 		}
 	}
