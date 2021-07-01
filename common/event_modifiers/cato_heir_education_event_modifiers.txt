@@ -9,7 +9,7 @@ adm_education_bonus_2 = {
 	country_admin_power = 2
 }
 dip_education_bonus_1 = {
-	country_admin_power = 1
+	country_diplomatic_power = 1
 }
 dip_education_bonus_2 = {
 	country_diplomatic_power = 2
@@ -149,7 +149,7 @@ okay_martial_education = {
 	army_tradition = 0.5
 }
 good_martial_education = {
-	land_morale = 0.75
+	land_morale = 0.075
 	manpower_recovery_speed = 0.15
 	army_tradition = 0.75
 }
