@@ -25,7 +25,7 @@ country_event = {
 	immediate = {
 		country_event = {
 			id = cato_education_events_education_progress.0001
-			days = 120
+			days = 180
 		}
 	}
 	option = {
@@ -58,12 +58,54 @@ country_event = {
 	option = {
 		name = cato_education_events_education_progress.0003.title
 		country_event = { id = cato_education_events_education_progress.0003 }
-		ai_chance = { factor = 1 }
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_heir_flag = heir_chose_education
+			}
+			modifier = {
+				factor = 0.25
+				has_heir_flag = heir_chose_education_subcategory
+			}
+		}
 	}
 	option = {
 		name = cato_education_events_education_progress.0004.title
 		country_event = { id = cato_education_events_education_progress.0004 }
-		ai_chance = { factor = 1 }
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				has_heir_flag = started_admin_education
+				heir_adm = 3
+			}
+			modifier = {
+				factor = 0
+				has_heir_flag = started_dip_education
+				heir_dip = 3
+			}
+			modifier = {
+				factor = 0
+				has_heir_flag = started_mil_education
+				heir_mil = 3
+			}
+			modifier = {
+				factor = 4
+				has_heir_flag = started_admin_education
+				NOT = { heir_adm = 1 }
+			}
+			modifier = {
+				factor = 4
+				has_heir_flag = started_dip_education
+				NOT = { heir_dip = 1 }
+			}
+			modifier = {
+				factor = 4
+				has_heir_flag = started_mil_education
+				NOT = { heir_mil = 1 }
+			}
+		}
 	}
 	option = {
 		name = cato_education_events_education_progress.0005.title
@@ -73,11 +115,16 @@ country_event = {
 	option = {
 		name = cato_education_events_education_progress.0006.title
 		country_event = { id = cato_education_events_education_progress.0006 }
-		ai_chance = { factor = 1 }
+		ai_chance = { factor = 0.5 }
 	}
 	option = {
 		name = cato_education_events_education_progress.0007.title
 		country_event = { id = cato_education_events_education_progress.0007 }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = cato_education_events_education_progress.0009.title
+		country_event = { id = cato_education_events_education_progress.0009 }
 		ai_chance = { factor = 1 }
 	}
 	option = {
@@ -569,7 +616,7 @@ country_event = {
 	desc = cato_education_events_education_progress.0005.desc
 	picture = ECONOMY_eventPicture
 	is_triggered_only = yes
-	
+	hidden = yes
 	trigger = {
 		has_heir_flag = heir_started_education
 		is_lesser_in_union = no
@@ -643,6 +690,7 @@ country_event = {
 	picture = ECONOMY_eventPicture
 	
 	is_triggered_only = yes
+	hidden = yes
 	
 	trigger = {
 		has_heir_flag = heir_started_education
@@ -677,6 +725,28 @@ country_event = {
 		country_event = {
 			id = cato_education_events_education_progress.0001
 		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {
+	id = cato_education_events_education_progress.0009 ###Event Picker Callback
+	title = cato_education_events_education_progress.0001.title
+	desc = cato_education_events_education_progress.0001.desc
+	picture = ECONOMY_eventPicture
+	hidden - yes
+	is_triggered_only = yes
+	
+	trigger = {
+		has_heir_flag = heir_started_education
+		is_lesser_in_union = no
+	}
+	
+	
+	option = {
+		name = cato_education_events_education_progress.0009.a
+		subtract_education_progress_tiny = yes
 		ai_chance = {
 			factor = 1
 		}
