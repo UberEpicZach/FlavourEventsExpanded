@@ -35,7 +35,7 @@ fee_france_friendly_legal_class = {
 }
 fee_france_cultural_unification_effort = {
 	culture_conversion_cost = -0.10
-	global_autonomy = 0.05
+	global_autonomy = -0.05
 }
 fee_france_provincialism = {
 	global_autonomy = 0.05
@@ -48,7 +48,7 @@ fee_france_independence_asserted = {
 }
 fee_france_state_control_over_church = {
 	curia_treasury_contribution = -1
-	prestige = 0.005
+	prestige = 0.05
 	global_tax_modifier = 0.05
 }
 fee_france_church_state = {
