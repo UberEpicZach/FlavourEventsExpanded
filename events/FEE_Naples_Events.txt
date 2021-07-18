@@ -12,6 +12,7 @@ country_event = {
 		OR = {
 			tag = NAP
 			tag = TTS
+			was_tag = NAP
 		}
 		has_ruler = "Alfons V"
 	}
@@ -112,6 +113,7 @@ country_event = {
 		OR = {
 			tag = NAP
 			tag = TTS
+			was_tag = NAP
 		}
 		OR = {
 			development_in_provinces = {
@@ -182,6 +184,7 @@ country_event = {
 				OR = {
 					tag = NAP
 					tag = TTS
+					was_tag = NAP
 				}
 				is_subject = no
 			}
@@ -298,6 +301,7 @@ country_event = {
 		OR = {
 			tag = NAP
 			tag = TTS
+			was_tag = NAP
 		}
 		is_year = 1458
 		owns_core_province = 121
@@ -348,6 +352,7 @@ country_event = {
 		OR = {
 			tag = NAP
 			tag = TTS
+			was_tag = NAP
 		}
 		is_year = 1484
 		owns_core_province = 121
@@ -391,6 +396,7 @@ country_event = {
 		OR = {
 			tag = NAP
 			tag = TTS
+			was_tag = NAP
 		}
 		NOT = { has_ruler = "Alfons V" }
 		has_ruler = yes
@@ -453,6 +459,7 @@ country_event = {
 		OR = {
 			tag = NAP
 			tag = TTS
+			was_tag = NAP
 		}
 		NOT = { has_ruler = "Alfons V" }
 		NOT = { is_year = 1459 }
@@ -463,17 +470,17 @@ country_event = {
 		name = FEE_Naples_Events.8.OPT1
 
 		custom_tooltip = nap_pre_conjury_tt
-		hidden_effect = {
-			country_event = {
-				id = FEE_Naples_Events.9
-			}
-			country_event = {
-				id = FEE_Naples_Events.10
-			}
-			country_event = {
-				id = FEE_Naples_Events.11
-			}
-		}
+		#hidden_effect = {
+		#	country_event = {
+		#		id = FEE_Naples_Events.9
+		#	}
+		#	country_event = {
+		#		id = FEE_Naples_Events.10
+		#	}
+		#	country_event = {
+		#		id = FEE_Naples_Events.11
+		#	}
+		#}
 	}
 }
 
@@ -484,8 +491,13 @@ country_event = {
 	desc = FEE_Naples_Events.9.D
 	picture = NOBLE_ESTATE_DEMANDS_eventPicture
 
-	is_triggered_only = yes
+	fire_only_once = yes
 	trigger = {
+		OR = {
+			tag = NAP
+			tag = TTS
+			was_tag = NAP
+		}
 		has_estate = estate_nobles
 		NOT = {
 			estate_loyalty = {
@@ -501,6 +513,10 @@ country_event = {
 		any_owned_province = {
 			area = calabria_area
 		}
+	}
+
+	mean_time_to_happen = {
+		days = 60
 	}
 
 	immediate = {
@@ -667,6 +683,11 @@ country_event = {
 
 	fire_only_once = yes
 	trigger = {
+		OR = {
+			tag = NAP
+			tag = TTS
+			was_tag = NAP
+		}
 		has_country_flag = nap_barony_first_risen
 		NOT = { num_of_rebel_controlled_provinces = 1 }
 		NOT = { num_of_rebel_armies = 1 }
@@ -728,11 +749,12 @@ country_event = {
 	desc = FEE_Naples_Events.11.D
 	picture = NOBLE_ESTATE_eventPicture
 
-	is_triggered_only = yes
+	fire_only_once = yes
 	trigger = {
 		OR = {
 			tag = NAP
 			tag = TTS
+			was_tag = NAP
 		}
 		is_year = 1465
 		NOT = { has_country_flag = nap_barony_first_risen }
@@ -780,13 +802,18 @@ country_event = {
 	desc = FEE_Naples_Events.12.D
 	picture = MILITARY_CAMP_eventPicture
 
-	is_triggered_only = yes
+	fire_only_once = yes
 	trigger = {
 		OR = {
 			tag = NAP
 			tag = TTS
+			was_tag = NAP
 		}
 		has_country_flag = nap_barony_first_risen
+	}
+
+	mean_time_to_happen = {
+		days = 60
 	}
 
 	option = {
@@ -823,6 +850,7 @@ country_event = {
 		OR = {
 			tag = NAP
 			tag = TTS
+			was_tag = NAP
 		}
 		is_year = 1466
 		NOT = { is_year = 1486 }
@@ -837,17 +865,17 @@ country_event = {
 		name = FEE_Naples_Events.13.OPT1
 
 		custom_tooltip = nap_pre_conjury_2_tt
-		hidden_effect = {
-			country_event = {
-				id = FEE_Naples_Events.14
-			}
-			country_event = {
-				id = FEE_Naples_Events.15
-			}
-			country_event = {
-				id = FEE_Naples_Events.16
-			}
-		}
+		#hidden_effect = {
+		#	country_event = {
+		#		id = FEE_Naples_Events.14
+		#	}
+		#	country_event = {
+		#		id = FEE_Naples_Events.15
+		#	}
+		#	country_event = {
+		#		id = FEE_Naples_Events.16
+		#	}
+		#}
 	}
 }
 
@@ -858,11 +886,12 @@ country_event = {
 	desc = FEE_Naples_Events.14.D
 	picture = NOBLE_ESTATE_DEMANDS_eventPicture
 
-	is_triggered_only = yes
+	fire_only_once = yes
 	trigger = {
 		OR = {
 			tag = NAP
 			tag = TTS
+			was_tag = NAP
 		}
 		has_estate = estate_nobles
 		NOT = {
@@ -1243,11 +1272,12 @@ country_event = {
 	desc = FEE_Naples_Events.15.D
 	picture = GOOD_WITH_MONARCH_eventPicture
 
-	is_triggered_only = yes
+	fire_only_once = yes
 	trigger = {
 		OR = {
 			tag = NAP
 			tag = TTS
+			was_tag = NAP
 		}
 		has_country_flag = nap_barony_second_risen
 		NOT = { num_of_rebel_controlled_provinces = 1 }
@@ -1286,6 +1316,7 @@ country_event = {
 		OR = {
 			tag = NAP
 			tag = TTS
+			was_tag = NAP
 		}
 		is_year = 1487
 		NOT = { has_country_flag = nap_barony_second_risen }
@@ -1335,7 +1366,11 @@ country_event = {
 
 	fire_only_once = yes
 	trigger = {
-		tag = NAP
+		OR = {
+			tag = NAP
+			tag = TTS
+			was_tag = NAP
+		}
 		is_subject = no
 	}
 
@@ -1387,7 +1422,15 @@ country_event = {
 
 	fire_only_once = yes
 	trigger = {
-		tag = NAP
+		OR = {
+			tag = NAP
+			AND = { 
+				was_tag = NAP
+				NOT = { tag = ITA }
+			}
+		}
+		adm_tech = 7
+		is_year = 1492
 		tuscany_area = {
 			type = all
 			owned_by = ROOT
