@@ -2,111 +2,117 @@
 
 #General effect for extending or adding province modifier
 add_education_progress_tiny = {
-	change_variable = {
-		which = heirEducationalLevel
-		value = 5
-	}
+	custom_tooltip = TINY_EDUCATION_GAIN
 	hidden_effect = {
+		change_variable = {
+			which = heirEducationalLevel
+			value = 5
+		}
 		if = {
 			limit = {
 				check_variable = {
 					which = heirEducationalLevel
-					value = 100
+					value = 125
 				}
 			}
 			set_variable = {
 				which = heirEducationalLevel
-				value = 100
+				value = 125
 			}
 		}
 	}
 }
 add_education_progress_small = {
-	change_variable = {
-		which = heirEducationalLevel
-		value = 10
-	}
+	custom_tooltip = SMALL_EDUCATION_GAIN
 	hidden_effect = {
+		change_variable = {
+			which = heirEducationalLevel
+			value = 10
+		}
 		if = {
 			limit = {
 				check_variable = {
 					which = heirEducationalLevel
-					value = 100
+					value = 125
 				}
 			}
 			set_variable = {
 				which = heirEducationalLevel
-				value = 100
+				value = 125
 			}
 		}
 	}
 }
 add_education_progress_medium = {
-	change_variable = {
-		which = heirEducationalLevel
-		value = 15
-	}
+	custom_tooltip = MEDIUM_EDUCATION_GAIN
 	hidden_effect = {
+		change_variable = {
+			which = heirEducationalLevel
+			value = 15
+		}
 		if = {
 			limit = {
 				check_variable = {
 					which = heirEducationalLevel
-					value = 100
+					value = 125
 				}
 			}
 			set_variable = {
 				which = heirEducationalLevel
-				value = 100
+				value = 125
 			}
 		}
 	}
 }
 add_education_progress_large = {
-	change_variable = {
-		which = heirEducationalLevel
-		value = 20
-	}
+	custom_tooltip = LARGE_EDUCATION_GAIN
 	hidden_effect = {
+		change_variable = {
+			which = heirEducationalLevel
+			value = 20
+		}
 		if = {
 			limit = {
 				check_variable = {
 					which = heirEducationalLevel
-					value = 100
+					value = 125
 				}
 			}
 			set_variable = {
 				which = heirEducationalLevel
-				value = 100
+				value = 125
 			}
 		}
 	}
 }
 add_education_progress_huge = {
-	change_variable = {
-		which = heirEducationalLevel
-		value = 25
-	}
+	custom_tooltip = HUGE_EDUCATION_GAIN
 	hidden_effect = {
+		change_variable = {
+			which = heirEducationalLevel
+			value = 25
+		}
 		if = {
 			limit = {
 				check_variable = {
 					which = heirEducationalLevel
-					value = 100
+					value = 125
 				}
 			}
 			set_variable = {
 				which = heirEducationalLevel
-				value = 100
+				value = 125
 			}
 		}
 	}
 }
 subtract_education_progress_tiny = {
-	subtract_variable = {
-		which = heirEducationalLevel
-		value = 5
-	}
+	custom_tooltip = TINY_EDUCATION_LOSS
 	hidden_effect = {
+		subtract_variable = {
+			which = heirEducationalLevel
+			value = 5
+		}
 		if = {
 			limit = {
 				NOT = {
@@ -124,11 +130,12 @@ subtract_education_progress_tiny = {
 	}
 }
 subtract_education_progress_small = {
-	subtract_variable = {
-		which = heirEducationalLevel
-		value = 10
-	}
+	custom_tooltip = SMALL_EDUCATION_LOSS
 	hidden_effect = {
+		subtract_variable = {
+			which = heirEducationalLevel
+			value = 10
+		}
 		if = {
 			limit = {
 				NOT = {
@@ -146,11 +153,12 @@ subtract_education_progress_small = {
 	}
 }
 subtract_education_progress_medium = {
-	subtract_variable = {
-		which = heirEducationalLevel
-		value = 15
-	}
+	custom_tooltip = MEDIUM_EDUCATION_LOSS
 	hidden_effect = {
+		subtract_variable = {
+			which = heirEducationalLevel
+			value = 15
+		}
 		if = {
 			limit = {
 				NOT = {
@@ -168,11 +176,12 @@ subtract_education_progress_medium = {
 	}
 }
 subtract_education_progress_large = {
-	subtract_variable = {
-		which = heirEducationalLevel
-		value = 20
-	}
+	custom_tooltip = LARGE_EDUCATION_LOSS
 	hidden_effect = {
+		subtract_variable = {
+			which = heirEducationalLevel
+			value = 20
+		}
 		if = {
 			limit = {
 				NOT = {
@@ -190,11 +199,12 @@ subtract_education_progress_large = {
 	}
 }
 subtract_education_progress_huge = {
-	subtract_variable = {
-		which = heirEducationalLevel
-		value = 25
-	}
+	custom_tooltip = HUGE_EDUCATION_LOSS
 	hidden_effect = {
+		subtract_variable = {
+			which = heirEducationalLevel
+			value = 25
+		}
 		if = {
 			limit = {
 				NOT = {
@@ -680,6 +690,20 @@ add_best_logistics_education = {
 			duration = -1
 		}
 	}
+}
+clear_heir_education_flags = {
+	clr_heir_flag = clerical_education
+	clr_heir_flag = administrative_education
+	clr_heir_flag = scholastic_education
+	clr_heir_flag = diplomacy_education
+	clr_heir_flag = intrigue_education
+	clr_heir_flag = trade_education
+	clr_heir_flag = martial_education
+	clr_heir_flag = naval_education
+	clr_heir_flag = logistics_education
+	clr_heir_flag = started_admin_education
+	clr_heir_flag = started_dip_education
+	clr_heir_flag = started_mil_education
 }
 travel_to_first_tour_destination = {
 	if = {
