@@ -8,7 +8,12 @@ country_decisions = {
 			is_lesser_in_union = no
 			has_heir = yes
 			heir_age = 5
-			
+			NOT = {
+				OR = {
+					has_heir_flag = heir_started_education
+					has_heir_flag = heir_finished_education
+				}
+			}
 		}
 		allow = {
 			custom_trigger_tooltip = {
@@ -43,7 +48,28 @@ country_decisions = {
 			always = no
 		}
 		effect = {
-			custom_tooltip = HEIR_EDUCATION_PROGRESS
+			if = {
+				limit = {
+					check_variable = {
+						which = heirEducationalLevel
+						value = 66
+					}
+				}
+				custom_tooltip = HEIR_EDUCATION_PROGRESS_HIGH
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = heirEducationalLevel
+						value = 33
+					}
+				} 
+				custom_tooltip = HEIR_EDUCATION_PROGRESS_MEDIUM
+			}
+			else = {
+				custom_tooltip = HEIR_EDUCATION_PROGRESS_LOW
+			}
+			###custom_tooltip = HEIR_EDUCATION_PROGRESS
 		}
 	}
 }
