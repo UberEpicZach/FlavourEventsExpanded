@@ -62,7 +62,7 @@ country_event = {
 			factor = 1
 			modifier = {
 				factor = 0
-				has_heir_flag = heir_chose_education
+				has_heir_flag = heir_chose_education_category
 			}
 			modifier = {
 				factor = 0.25
@@ -123,9 +123,46 @@ country_event = {
 		ai_chance = { factor = 1 }
 	}
 	option = {
+		name = cato_education_events_education_progress.0008.title
+		country_event = { id = cato_education_events_education_progress.0008 }
+		ai_chance = { factor = 1 }
+	}
+	option = {
 		name = cato_education_events_education_progress.0009.title
 		country_event = { id = cato_education_events_education_progress.0009 }
+		ai_chance = {
+			factor = 0.5
+			modifier = {
+				factor = 0.1
+				has_heir_flag = tutor_fraud
+			}
+		}
+	}
+	option = {
+		name = cato_education_events_education_progress.0010.title
+		country_event = { id = cato_education_events_education_progress.0010 }
 		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = cato_education_events_education_progress.0011.title
+		country_event = { id = cato_education_events_education_progress.0011 }
+		ai_chance = { factor = 0.1 }
+	}
+	option = {
+		name = cato_education_events_education_progress.0012.title
+		trigger = {
+			NOT = {
+				has_heir_flag = heir_chose_education_category
+			}
+		}
+		country_event = { id = cato_education_events_education_progress.0012 }
+		ai_chance = {
+			factor = 0.1
+			modifier = {
+				factor = 0.5
+				has_heir_flag = heir_chose_education_subcategory
+			}
+		}
 	}
 	option = {
 		name = cato_education_events_education_progress.1000.title
@@ -590,19 +627,28 @@ country_event = {
 				limit = {
 					has_heir_flag = started_admin_education
 				}
-				adm = 4
+				OR = {
+					adm = 4
+					ruler_has_good_adm_education = yes
+				}
 			}
 			if = {
 				limit = {
 					has_heir_flag = started_dip_education
 				}
-				dip = 4
+				OR = {
+					dip = 4
+					ruler_has_good_dip_education = yes
+				}
 			}
 			if = {
 				limit = {
 					has_heir_flag = started_mil_education
 				}
-				mil = 4
+				OR = {
+					mil = 4
+					ruler_has_good_mil_education = yes
+				}
 			}
 		}
 		ai_chance = {
@@ -647,6 +693,8 @@ country_event = {
 	option = {
 		name = cato_education_events_education_progress.0006.a ###Support the Tutor
 		add_heir_claim = -10
+		add_mandate = -3
+		add_meritocracy = 5
 		ai_chance = {
 			factor = 1
 		}
@@ -654,6 +702,7 @@ country_event = {
 	option = {
 		name = cato_education_events_education_progress.0006.b ###Support the Heir
 		subtract_education_progress_tiny = yes
+		add_meritocracy = -5
 		ai_chance = {
 			factor = 1
 		}
@@ -707,35 +756,11 @@ country_event = {
 	}
 }
 country_event = {
-	id = cato_education_events_education_progress.0008 ###Event Picker Callback
-	title = cato_education_events_education_progress.0001.title
-	desc = cato_education_events_education_progress.0001.desc
+	id = cato_education_events_education_progress.0008 ###Heir Fails to Grasp Concepts
+	title = cato_education_events_education_progress.0008.title
+	desc = cato_education_events_education_progress.0008.desc
 	picture = ECONOMY_eventPicture
-	
-	is_triggered_only = yes
-	
-	trigger = {
-		has_heir_flag = heir_started_education
-		is_lesser_in_union = no
-	}
-	
-	
-	option = {
-		name = cato_education_events_education_progress.0001.a
-		country_event = {
-			id = cato_education_events_education_progress.0001
-		}
-		ai_chance = {
-			factor = 1
-		}
-	}
-}
-country_event = {
-	id = cato_education_events_education_progress.0009 ###Event Picker Callback
-	title = cato_education_events_education_progress.0001.title
-	desc = cato_education_events_education_progress.0001.desc
-	picture = ECONOMY_eventPicture
-	hidden - yes
+	hidden = yes
 	is_triggered_only = yes
 	
 	trigger = {
@@ -746,9 +771,616 @@ country_event = {
 	
 	option = {
 		name = cato_education_events_education_progress.0009.a
-		subtract_education_progress_tiny = yes
+		subtract_education_progress_tiny = yes	
 		ai_chance = {
 			factor = 1
+		}
+	}
+}
+country_event = {
+	id = cato_education_events_education_progress.0009 ###Tutor is a Fraud
+	title = cato_education_events_education_progress.0009.title
+	desc = cato_education_events_education_progress.0009.desc
+	picture = ECONOMY_eventPicture
+	is_triggered_only = yes
+	
+	trigger = {
+		has_heir_flag = heir_started_education
+		is_lesser_in_union = no
+	}
+	
+	
+	option = {
+		name = cato_education_events_education_progress.0009.a
+		if = {
+			limit = {
+				has_heir_flag = started_admin_education
+			}
+			add_adm_power = -15
+		}
+		else_if = {
+			limit = {
+				has_heir_flag = started_dip_education
+			}
+			add_dip_power = -15
+		}
+		else_if = {
+			limit = {
+				has_heir_flag = started_mil_education
+			}
+			add_mil_power = -15
+		}
+		if = {
+			limit = {
+				NOT = {
+					monthly_income = 1.041667
+				}
+			}
+			add_treasury = -25
+		}
+		else_if = {
+			limit = {
+				monthly_income = 1.041667
+				NOT = {
+					monthly_income = 10.41667
+				}
+			}
+			add_years_of_income = -0.5
+		}
+		else = {
+			add_treasury = -250
+		}
+		add_prestige = -10
+		set_heir_flag = tutor_fraud
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = cato_education_events_education_progress.0009.b
+		subtract_education_progress_large = yes
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {
+	id = cato_education_events_education_progress.0010 ###Monarch's old tutor offers assistance
+	title = cato_education_events_education_progress.0010.title
+	desc = cato_education_events_education_progress.0010.desc
+	picture = ECONOMY_eventPicture
+	hidden = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		has_heir_flag = heir_started_education
+		is_lesser_in_union = no
+	}
+	
+	
+	option = {
+		name = cato_education_events_education_progress.0010.a
+		add_education_progress_medium = yes
+		if = {
+			limit = {
+				NOT = {
+					monthly_income = 83.33334
+				}
+			}
+			add_years_of_income = -1
+		}
+		else = {
+			add_treasury = -1000
+		}
+		set_heir_flag = tutored_by_rulers_tutor
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = cato_education_events_education_progress.0010.b
+		set_heir_flag = tutored_by_rulers_tutor
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {
+	id = cato_education_events_education_progress.0011 ###Heir Grows Decadent
+	title = cato_education_events_education_progress.0011.title
+	desc = cato_education_events_education_progress.0011.desc
+	picture = ECONOMY_eventPicture
+	hidden = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		has_heir_flag = heir_started_education
+		is_lesser_in_union = no
+	}
+	
+	
+	option = {
+		name = cato_education_events_education_progress.0011.a
+		subtract_education_progress_medium = yes
+		add_heir_claim = -10
+		set_heir_flag = decadent_heir
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {
+	id = cato_education_events_education_progress.0012 ###Heir Wishes to Change Education
+	title = cato_education_events_education_progress.0012.title
+	desc = cato_education_events_education_progress.0012.desc
+	picture = ECONOMY_eventPicture
+	is_triggered_only = yes
+	
+	trigger = {
+		has_heir_flag = heir_started_education
+		is_lesser_in_union = no
+	}
+	
+	
+	option = {
+		name = cato_education_events_education_progress.0012.a
+		subtract_education_progress_huge = yes
+		ai_chance = {
+			factor = 0
+		}
+	}
+	option = {
+		name = cato_education_events_education_progress.0012.b
+		subtract_education_progress_small = yes
+		custom_tooltip = HEIR_CHANGE_EDUCATION_SUBCATEGORY
+		hidden_effect = {
+			if = {
+				limit = {
+					OR = {
+						has_heir_flag = clerical_education
+						has_heir_flag = administrative_education
+						has_heir_flag = scholastic_education
+					}
+				}
+				country_event = {
+					id = cato_education_events_education_progress.0014
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						has_heir_flag = diplomacy_education
+						has_heir_flag = intrigue_education
+						has_heir_flag = trade_education
+					}
+				}
+				country_event = {
+					id = cato_education_events_education_progress.0015
+				}
+			}
+			else = {
+				country_event = {
+					id = cato_education_events_education_progress.0016
+				}
+			}
+			set_heir_flag = heir_chose_education_subcategory
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+	option = {
+		name = cato_education_events_education_progress.0012.c
+		custom_tooltip = HEIR_CHANGE_EDUCATION_CATEGORY
+		hidden_effect = {
+			clr_heir_flag = heir_chose_education_subcategory
+			country_event = {
+				id = cato_education_events_education_progress.0013
+			}
+			set_heir_flag = heir_chose_education_category
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {
+	id = cato_education_events_education_progress.0013 ###Heir Changes Education Major Category Hidden Event
+	title = cato_education_events_education_progress.0013.title
+	desc = cato_education_events_education_progress.0013.desc
+	picture = ECONOMY_eventPicture
+	hidden = yes
+	is_triggered_only = yes
+	
+	trigger = {
+		has_heir_flag = heir_started_education
+		is_lesser_in_union = no
+	}
+	
+	
+	option = {
+		name = cato_education_events_setup_hereditary.1.a
+		trigger = {
+			NOT = { has_heir_flag = clerical_education }
+		}
+		clear_heir_education_flags = yes
+		set_heir_flag = clerical_education
+		set_heir_flag = started_admin_education
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.2
+				has_idea_group = religious_ideas
+			}
+			modifier = {
+				factor = 1.2
+				has_idea_group = humanist_ideas
+			}
+		}
+	}
+	option = {
+		name = cato_education_events_setup_hereditary.1.b
+		trigger = {
+			NOT = { has_heir_flag = administrative_education }
+		}
+		clear_heir_education_flags = yes
+		set_heir_flag = administrative_education
+		set_heir_flag = started_admin_education
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.2
+				has_idea_group = economic_ideas
+			}
+			modifier = {
+				factor = 1.2
+				has_idea_group = expansion_ideas
+			}
+			modifier = {
+				factor = 1.2
+				has_idea_group = administrative_ideas
+			}
+		}
+	}
+	option = {
+		name = cato_education_events_setup_hereditary.1.c
+		trigger = {
+			NOT = { has_heir_flag = scholastic_education }
+		}
+		clear_heir_education_flags = yes
+		set_heir_flag = scholastic_education
+		set_heir_flag = started_admin_education
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.2
+				has_idea_group = innovative_ideas
+			}
+		}
+	}
+	option = {
+		name = cato_education_events_setup_hereditary.1.a
+		trigger = {
+			NOT = { has_heir_flag = diplomacy_education }
+		}
+		clear_heir_education_flags = yes
+		set_heir_flag = diplomacy_education
+		set_heir_flag = started_dip_education
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.2
+				has_idea_group = diplomatic_ideas
+			}
+			modifier = {
+				factor = 1.2
+				has_idea_group = influence_ideas
+			}
+		}
+	}
+	option = {
+		name = cato_education_events_setup_hereditary.1.b
+		trigger = {
+			NOT = { has_heir_flag = intrigue_education }
+		}
+		clear_heir_education_flags = yes
+		set_heir_flag = intrigue_education
+		set_heir_flag = started_dip_education
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.2
+				has_idea_group = spy_ideas
+			}
+		}
+	}
+	option = {
+		name = cato_education_events_setup_hereditary.1.c
+		trigger = {
+			NOT = { has_heir_flag = trade_education }
+		}
+		clear_heir_education_flags = yes
+		set_heir_flag = trade_education
+		set_heir_flag = started_dip_education
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.2
+				has_idea_group = trade_ideas
+			}
+			modifier = {
+				factor = 1.2
+				has_idea_group = economic_ideas
+			}
+		}
+	}
+	option = {
+		name = cato_education_events_education_progress.1.a
+		trigger = {
+			NOT = { has_heir_flag = martial_education }
+		}
+		clear_heir_education_flags = yes
+		set_heir_flag = martial_education
+		set_heir_flag = started_mil_education
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.2
+				has_idea_group = quality_ideas
+			}
+			modifier = {
+				factor = 1.2
+				has_idea_group = quantity_ideas
+			}
+		}
+	}
+	option = {
+		name = cato_education_events_education_progress.1.b
+		trigger = {
+			NOT = { has_heir_flag = naval_education }
+		}
+		clear_heir_education_flags = yes
+		set_heir_flag = naval_education
+		set_heir_flag = started_mil_education
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.2
+				has_idea_group = maritime_ideas
+			}
+			modifier = {
+				factor = 1.2
+				has_idea_group = naval_ideas
+			}
+		}
+	}
+	option = {
+		name = cato_education_events_education_progress.1.c
+		trigger = {
+			NOT = { has_heir_flag = logistics_education }
+		}
+		clear_heir_education_flags = yes``
+		set_heir_flag = logistics_education
+		set_heir_flag = started_mil_education
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.2
+				has_idea_group = offensive_ideas
+			}
+			modifier = {
+				factor = 1.2
+				has_idea_group = defensive_ideas
+			}
+		}
+	}
+}
+country_event = {
+	id = cato_education_events_education_progress.0014 ###Hidden event where the heir picks an admin sub-category.
+	title = cato_education_events_education_progress.0.title
+	desc = cato_education_events_education_progress.0.desc
+	picture = ECONOMY_eventPicture
+	
+	is_triggered_only = yes
+	hidden = yes
+	trigger = {
+		has_heir = yes
+		is_lesser_in_union = no
+	}
+	
+	option = {
+		name = cato_education_events_education_progress.1.a
+		trigger = {
+			NOT = { has_heir_flag = clerical_education }
+		}
+		clear_heir_education_flags = yes
+		set_heir_flag = clerical_education
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.2
+				has_idea_group = religious_ideas
+			}
+			modifier = {
+				factor = 1.2
+				has_idea_group = humanist_ideas
+			}
+		}
+	}
+	option = {
+		name = cato_education_events_education_progress.1.b
+		trigger = {
+			NOT = { has_heir_flag = administrative_education }
+		}
+		clear_heir_education_flags = yes
+		set_heir_flag = administrative_education
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.2
+				has_idea_group = economic_ideas
+			}
+			modifier = {
+				factor = 1.2
+				has_idea_group = expansion_ideas
+			}
+			modifier = {
+				factor = 1.2
+				has_idea_group = administrative_ideas
+			}
+		}
+	}
+	option = {
+		name = cato_education_events_education_progress.1.c
+		trigger = {
+			NOT = { has_heir_flag = scholastic_education }
+		}
+		clear_heir_education_flags = yes
+		set_heir_flag = scholastic_education
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.2
+				has_idea_group = innovative_ideas
+			}
+		}
+	}
+}
+country_event = {
+	id = cato_education_events_education_progress.0015 ###Hidden event where the heir picks an diplomatic sub-category.
+	title = cato_education_events_setup_hereditary.0.title
+	desc = cato_education_events_setup_hereditary.0.desc
+	picture = ECONOMY_eventPicture
+	
+	is_triggered_only = yes
+	hidden = yes
+	trigger = {
+		has_heir = yes
+		is_lesser_in_union = no
+	}
+	
+	option = {
+		name = cato_education_events_setup_hereditary.1.a
+		trigger = {
+			NOT = { has_heir_flag = diplomacy_education }
+		}
+		clear_heir_education_flags = yes
+		set_heir_flag = diplomacy_education
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.2
+				has_idea_group = diplomatic_ideas
+			}
+			modifier = {
+				factor = 1.2
+				has_idea_group = influence_ideas
+			}
+		}
+	}
+	option = {
+		name = cato_education_events_setup_hereditary.1.b
+		trigger = {
+			NOT = { has_heir_flag = intrigue_education }
+		}
+		clear_heir_education_flags = yes
+		set_heir_flag = intrigue_education
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.2
+				has_idea_group = spy_ideas
+			}
+		}
+	}
+	option = {
+		name = cato_education_events_setup_hereditary.1.c
+		trigger = {
+			NOT = { has_heir_flag = trade_education }
+		}
+		clear_heir_education_flags = yes
+		set_heir_flag = trade_education
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.2
+				has_idea_group = trade_ideas
+			}
+			modifier = {
+				factor = 1.2
+				has_idea_group = economic_ideas
+			}
+		}
+	}
+}
+country_event = {
+	id = cato_education_events_education_progress.0016 ###Hidden event where the heir picks an military sub-category.
+	title = cato_education_events_education_progress.0.title
+	desc = cato_education_events_education_progress.0.desc
+	picture = ECONOMY_eventPicture
+	
+	is_triggered_only = yes
+	hidden = yes
+	trigger = {
+		has_heir = yes
+		is_lesser_in_union = no
+	}
+	
+	option = {
+		name = cato_education_events_education_progress.1.a
+		trigger = {
+			NOT = { has_heir_flag = martial_education }
+		}
+		clear_heir_education_flags = yes
+		set_heir_flag = martial_education
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.2
+				has_idea_group = quality_ideas
+			}
+			modifier = {
+				factor = 1.2
+				has_idea_group = quantity_ideas
+			}
+		}
+	}
+	option = {
+		name = cato_education_events_education_progress.1.b
+		trigger = {
+			NOT = { has_heir_flag = naval_education }
+		}
+		clear_heir_education_flags = yes
+		set_heir_flag = naval_education
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.2
+				has_idea_group = maritime_ideas
+			}
+			modifier = {
+				factor = 1.2
+				has_idea_group = naval_ideas
+			}
+		}
+	}
+	option = {
+		name = cato_education_events_education_progress.1.c
+		trigger = {
+			NOT = { has_heir_flag = logistics_education }
+		}
+		clear_heir_education_flags = yes``
+		set_heir_flag = logistics_education
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.2
+				has_idea_group = offensive_ideas
+			}
+			modifier = {
+				factor = 1.2
+				has_idea_group = defensive_ideas
+			}
 		}
 	}
 }
@@ -778,7 +1410,7 @@ country_event = {
 	option = {
 		name = cato_education_events_education_progress.1000.a
 		set_heir_flag = education_idea_group_bonus
-		add_education_progress_large = yes
+		add_education_progress_medium = yes
 		ai_chance = {
 			factor = 1
 		}
@@ -847,6 +1479,154 @@ country_event = {
 		name = cato_education_events_education_progress.1002.a
 		
 		add_education_progress_medium = yes
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {
+	id = cato_education_events_education_progress.1003 ###Heir Visits Same Religion Neighbor
+	title = cato_education_events_education_progress.1003.title
+	desc = cato_education_events_education_progress.1003.desc
+	picture = ECONOMY_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_heir_flag = clerical_education
+		is_lesser_in_union = no
+		has_heir_flag = heir_started_education
+		any_neighbor_country = {
+			religion = ROOT
+		}
+	}
+	
+	
+	option = {
+		name = cato_education_events_education_progress.1003.a
+		random_neighbor_country = {
+			limit = {
+				religion = ROOT
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = he_heir_religion
+			}
+		}
+		add_education_progress_small = yes
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {
+	id = cato_education_events_education_progress.1004 ###Heir Visits Same Religion Neighbor(bad)
+	title = cato_education_events_education_progress.1004.title
+	desc = cato_education_events_education_progress.1004.desc
+	picture = ECONOMY_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_heir_flag = clerical_education
+		is_lesser_in_union = no
+		has_heir_flag = heir_started_education
+		any_neighbor_country = {
+			religion = ROOT
+		}
+	}
+	
+	
+	option = {
+		name = cato_education_events_education_progress.1004.a
+		random_neighbor_country = {
+			limit = {
+				religion = ROOT
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = he_heir_religion_offended
+			}
+		}
+		subtract_education_progress_small = yes
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {
+	id = cato_education_events_education_progress.1005 ###Heir Visits Different Religion Ally
+	title = cato_education_events_education_progress.1005.title
+	desc = cato_education_events_education_progress.1005.desc
+	picture = ECONOMY_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_heir_flag = clerical_education
+		is_lesser_in_union = no
+		has_heir_flag = heir_started_education
+		any_ally_country = {
+			NOT = {
+				religion = ROOT
+			}
+		}
+	}
+	
+	
+	option = {
+		name = cato_education_events_education_progress.1005.a
+		random_ally_country = {
+			limit = {
+				NOT = {
+					religion = ROOT
+				}
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = he_heir_different_religion_respect
+			}
+		}
+		add_education_progress_small = yes
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {
+	id = cato_education_events_education_progress.1006 ###Heir Visits Different Religion Ally(Bad)
+	title = cato_education_events_education_progress.1006.title
+	desc = cato_education_events_education_progress.1006.desc
+	picture = ECONOMY_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_heir_flag = clerical_education
+		is_lesser_in_union = no
+		has_heir_flag = heir_started_education
+		any_ally_country = {
+			NOT = {
+				religion = ROOT
+			}
+		}
+	}
+	
+	
+	option = {
+		name = cato_education_events_education_progress.1006.a
+		random_ally_country = {
+			limit = {
+				NOT = {
+					religion = ROOT
+				}
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = he_heir_different_religion_offended
+			}
+		}
+		subtract_education_progress_small = yes
 		ai_chance = {
 			factor = 1
 		}
