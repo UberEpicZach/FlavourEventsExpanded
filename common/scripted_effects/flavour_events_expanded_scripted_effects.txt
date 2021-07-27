@@ -57,3 +57,20 @@ change_religious_influence_equivalent_fee = {
 		}
 	]
 }
+
+## breaks the alliance between current scope and who
+### break_alliance_with_fee = { who = <scope> }
+break_alliance_with_fee = {
+	if = {
+		limit = {
+			alliance_with = $who$
+		}
+		$who$ = {
+			custom_tooltip = BREAK_ALLIANCE_WITH_TT
+		}
+		hidden_effect = {
+			add_rival = $who$
+			remove_rival = $who$
+		}
+	}
+}

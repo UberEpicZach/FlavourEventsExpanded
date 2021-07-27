@@ -778,7 +778,7 @@ country_event = {
 	}
 }
 
-#
+#Clergy Refuses
 country_event = {
 	id = FEE_France_Events.9
 	title = FEE_France_Events.9.T
@@ -894,6 +894,7 @@ country_event = {
 	}
 }
 
+#Re-Trial of Jeanne D'Arc
 country_event = {
 	id = FEE_France_Events.11
 	title = FEE_France_Events.11.T
@@ -936,5 +937,542 @@ country_event = {
 			modifier = fee_redid_joan_trial
 		}
 		add_reform_desire = -0.03
+	}
+}
+
+#
+country_event = {
+	id = FEE_France_Events.12
+	title = FEE_France_Events.12.T
+	desc = FEE_France_Events.12.D
+	picture = BURGHER_ESTATE_eventPicture
+
+	fire_only_once = yes
+	trigger = {
+		tag = FRA
+		has_country_flag = french_centralization
+		is_at_war = no
+		estate_influence = {
+			estate = estate_burghers
+			influence = 20
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 75
+		modifier = {
+			factor = 0.5
+			OR = {
+				treasurer = 1
+				master_of_mint = 1
+			}
+		}
+		modifier = {
+			factor = 0.75
+			trade_income_percentage = 0.25
+		}
+		modifier = {
+			factor = 0.5
+			economic_ideas = 1
+		}
+	}
+
+	option = {
+		name = FEE_France_Events.12.OPT1
+		ai_chance = {
+			factor = 80
+		}
+		
+		set_country_flag = bourgeoisie_oppose_king
+		add_stability = -1
+		change_estate_land_share = {
+			estate = estate_burghers
+			share = -5
+		}
+		random_list = {
+			50 = { }
+			50 = {
+				random_owned_province = {
+					spawn_rebels = {
+						size = 2
+						type = particularist_rebels
+					}
+				}
+				random_owned_province = {
+					spawn_rebels = {
+						size = 2
+						type = particularist_rebels
+					}
+				}
+				every_subject_country = {
+					country_event = {
+						id = FEE_France_Events.13
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_France_Events.12.OPT2
+		ai_chance = {
+			factor = 20
+		}
+
+		set_country_flag = bourgeoisie_support_king
+		change_estate_land_share = {
+			estate = estate_burghers
+			share = 5
+		}
+		add_estate_influence_modifier = {
+			estate = estate_burghers
+			desc = fee_france_third_estate_placated
+			influence = 10
+			duration = 14600
+		}
+		add_estate_loyalty_modifier = {
+			estate = estate_burghers
+			desc = fee_france_third_estate_placated
+			loyalty = 15
+			duration = 14600
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_estate_privilege = estate_burghers_exclusive_trade_rights
+				}
+			}
+			set_estate_privilege = estate_burghers_exclusive_trade_rights
+		}
+		add_country_modifier = {
+			name = fee_france_third_estate_placated
+			duration = 14600
+		}
+	}
+}
+
+#Conflict Between King and Cities
+country_event = {
+	id = FEE_France_Events.13
+	title = FEE_France_Events.13.T
+	desc = FEE_France_Events.13.D
+	picture = BURGHER_ESTATE_UPSET_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_France_Events.13.OPT1
+		
+		add_years_of_income = 0.5
+		add_country_modifier = {
+			name = fee_bourgeoisie_support
+			duration = 5475
+		}
+		if = {
+			limit = {
+				has_estate = estate_burghers
+			}
+			add_estate_loyalty_modifier = {
+				estate = estate_burghers
+				desc = fee_bourgeoisie_support
+				loyalty = 10
+				duration = 5475
+			}
+		}
+	}
+
+	option = {
+		name = FEE_France_Events.13.OPT2
+		
+		reduce_estate_burghers_loyalty_effect = yes
+		add_prestige = 15
+		add_liberty_desire = 10
+		hidden_effect = {
+			FROM = { clr_country_flag = bourgeoisie_oppose_king }
+		}
+	}
+}
+
+#A Regular Army
+country_event = {
+	id = FEE_France_Events.14
+	title = FEE_France_Events.14.T
+	desc = FEE_France_Events.14.D
+	picture = CULTURE_eventPicture
+
+	fire_only_once = yes
+	trigger = {
+		tag = FRA
+		has_global_flag = fee_surrender_main
+		is_year = 1446
+		NOT = { war_with = ENG }
+		num_of_mercenaries = 1
+	}
+
+	mean_time_to_happen = {
+		months = 12
+		modifier = {
+			factor = 0.5
+			MIL = 3
+		}
+		modifier = {
+			factor = 0.75
+			army_reformer = 1
+		}
+	}
+
+	option = {
+		name = FEE_France_Events.14.OPT1
+
+		if = {
+			limit = { num_of_subjects = 6 }
+			add_country_modifier = {
+				name = fee_france_reinforced_feudal_militaries_6
+				duration = 1950
+			}
+		}
+		else_if = {
+			limit = { num_of_subjects = 5 }
+			add_country_modifier = {
+				name = fee_france_reinforced_feudal_militaries_5
+				duration = 1950
+			}
+		}
+		else_if = {
+			limit = { num_of_subjects = 4 }
+			add_country_modifier = {
+				name = fee_france_reinforced_feudal_militaries_4
+				duration = 1950
+			}
+		}
+		else_if = {
+			limit = { num_of_subjects = 3 }
+			add_country_modifier = {
+				name = fee_france_reinforced_feudal_militaries_3
+				duration = 1950
+			}
+		}
+		else_if = {
+			limit = { num_of_subjects = 2 }
+			add_country_modifier = {
+				name = fee_france_reinforced_feudal_militaries_2
+				duration = 1950
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = fee_france_reinforced_feudal_militaries_1
+				duration = 1950
+			}
+		}
+	}
+
+	option = {
+		name = FEE_France_Events.14.OPT2
+
+		add_country_modifier = {
+			name = fee_france_crown_levies
+			duration = 1950
+		}
+	}
+
+	option = {
+		name = FEE_France_Events.14.OPT3
+
+		add_country_modifier = {
+			name = fee_france_mercenary_core
+			duration = 1950
+		}
+		country_event = {
+			id = FEE_France_Events.20
+			days = 30
+		}
+	}
+}
+
+#The Provencal Claims 
+country_event = {
+	id = FEE_France_Events.15
+	title = FEE_France_Events.15.T
+	desc = FEE_France_Events.15.D
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	fire_only_once = yes
+	trigger = {
+		tag = FRA
+		has_country_flag = french_centralization
+		exists = PRO
+		alliance_with = PRO
+		is_year = 1450
+	}
+	
+	major = yes
+
+	mean_time_to_happen = {
+		months = 24
+		modifier = {
+			factor = 0.5
+			PRO = {
+				is_excommunicated = yes
+			}
+		}
+	}
+
+	option = {
+		name = FEE_France_Events.15.OPT1
+		ai_chance = {
+			factor = 80
+		}
+
+		break_alliance_with_fee = { who = PRO }
+		PRO = {
+			add_opinion = {
+				who = ROOT
+				modifier = fee_france_claims_pressed
+			}
+		}
+		add_casus_belli = {
+			type = cb_restore_personal_union
+			target = PRO
+		}
+		set_country_flag = provence_against_france
+	}
+
+	option = {
+		name = FEE_France_Events.15.OPT2
+		ai_chance = {
+			factor = 20
+		}
+
+		PRO = {
+			add_opinion = {
+				who = ROOT
+				modifier = fee_france_claims_waived
+			}
+		}
+		set_country_flag = provence_support_france
+	}
+}
+
+#The Breton Question
+country_event = {
+	id = FEE_France_Events.16
+	title = FEE_France_Events.16.T
+	desc = FEE_France_Events.16.D
+	picture = REVOLUTION_eventPicture
+
+	fire_only_once = yes
+	trigger = {
+		tag = FRA
+		has_country_flag = french_centralization
+		is_at_war = no
+		is_year = 1455
+		exists = BRI
+	}
+
+	mean_time_to_happen = {
+		months = 36
+	}
+
+	option = {
+		name = FEE_France_Events.16.OPT1
+		ai_chance = {
+			factor = 40
+		}
+
+		hidden_effect = {
+			BRI = { set_country_flag = Brittany_against_france }
+		}
+		add_casus_belli = {
+			type = cb_vassalize_mission
+			target = BRI
+		}
+		reverse_add_opinion = {
+			who = BRI
+			modifier = fee_france_claims_pressed
+		}
+	}
+
+	option = {
+		name = FEE_France_Events.16.OPT2
+		ai_chance = {
+			factor = 40
+		}
+
+		BRI = {
+			country_event = {
+				id = FEE_France_Events.17
+				days = 1
+			}
+		}
+	}
+
+	option = {
+		name = FEE_France_Events.16.OPT3
+		ai_chance = {
+			factor = 20
+		}
+
+		add_prestige = 15
+		add_opinion = {
+			who = BRI
+			modifier = fee_france_claims_waived
+		}
+		reverse_add_opinion = {
+			who = BRI
+			modifier = fee_france_claims_waived
+		}
+		BRI = {
+			every_owned_province = {
+				limit = { is_core = ROOT }
+				remove_core = ROOT
+			}
+		}
+		hidden_effect = {
+			BRI = { set_country_flag = Brittany_supports_france }
+		}
+	}
+}
+
+#France Demands Tribute
+country_event = {
+	id = FEE_France_Events.17
+	title = FEE_France_Events.17.T
+	desc = FEE_France_Events.17.D
+	picture = CONQUEST_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_France_Events.17.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		set_country_flag = Brittany_supports_france
+		add_years_of_income = -2
+		add_country_modifier = {
+			name = fee_treaty_honored
+			duration = 21900
+		}
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = fee_tribute_received
+			}
+			country_event = {
+				id = FEE_France_Events.18
+			}
+		}
+	}
+
+	option = {
+		name = FEE_France_Events.17.OPT2
+		ai_chance = {
+			factor = 50
+		}
+
+		set_country_flag = Brittany_against_france
+		add_country_modifier = {
+			name = fee_independence_from_france
+			duration = 21900
+		}
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = fee_tribute_denied
+			}
+			country_event = {
+				id = FEE_France_Events.19
+			}
+		}
+	}
+}
+
+#Brittany Accepts 
+country_event = {
+	id = FEE_France_Events.18
+	title = FEE_France_Events.18.T
+	desc = FEE_France_Events.18.D
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_France_Events.18.OPT1
+
+		add_treasury = 200
+	}
+}
+
+#Brittany Refuses 
+country_event = {
+	id = FEE_France_Events.19
+	title = FEE_France_Events.19.T
+	desc = FEE_France_Events.19.D
+	picture = ACCUSATION_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_France_Events.19.OPT1
+
+		add_casus_belli = {
+			type = cb_vassalize_mission
+			target = FROM
+		}
+	}
+}
+
+
+#Scottish Mercenaries
+country_event = {
+	id = FEE_France_Events.20
+	title = FEE_France_Events.20.T
+	desc = FEE_France_Events.20.D
+	picture = SCOTTISH_MERCENARIES_eventPicture
+	
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_France_Events.20.OPT1
+
+		add_country_modifier = {
+			name = feee_scots_mercenaries
+			duration = -1
+		}
+		custom_tooltip = FEE_GARDE_ECOSSAISE_TT
+		set_country_flag = fee_garde_ecossaise
+	}
+
+	option = {
+		name = FEE_France_Events.20.OPT2
+
+		add_mil_power = 50
+		add_army_professionalism = 0.03
+	}
+}
+
+#Hidden Event
+country_event = {
+	id = FEE_France_Events.201
+	title = FEE_France_Events.201.T
+	desc = FEE_France_Events.201.D
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	fire_only_once = yes
+	hidden = yes
+
+	trigger = {
+		has_country_modifier = feee_scots_mercenaries
+		NOT = { current_age = age_of_discovery }
+	}
+
+	immediate = {
+		remove_country_modifier = feee_scots_mercenaries
+	}
+
+	option = {
+		name = FEE_France_Events.201.OPT1
 	}
 }
