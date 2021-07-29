@@ -78,12 +78,9 @@ country_event = {
 	trigger = {
 		tag = TUR
 		has_ruler = "Mehmet II Fatih"
-		NOT = {
-			is_year = 1450
-		}
-		NOT = {
-			stability = 2
-		}
+		NOT = { is_year = 1450 }
+		NOT = { stability = 2 }
+		is_subject = no
 	}
 	
 	mean_time_to_happen = {

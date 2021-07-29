@@ -466,17 +466,18 @@ country_event = {
 
 	fire_only_once = yes
 
-	mean_time_to_happen = {
-		months = 12
-	}
-
 	trigger = {
 		tag = PAL
+		is_subject = no
 		is_religion_enabled = protestant
 		is_religion_enabled = reformed
 		NOT = {
 			religion = reformed
 		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
 	}
 
 	option = {

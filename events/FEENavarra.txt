@@ -293,6 +293,7 @@ country_event = {
 			factor = 85
 		}
 		NAV = {
+			is_subject = no
 			random_owned_province = {
 				spawn_rebels = {
 					type = pretender_rebels

@@ -533,6 +533,7 @@ country_event = {
 			}
 		}
 		government = monarchy
+		is_subject = no
 		is_year = 1750
 		NOT = {
 			is_year = 1790
@@ -930,6 +931,7 @@ country_event = {
 			tag = SCA
 		}
 		dynasty = "Struensee"
+		is_subject = no
 		has_country_modifier = fee_denmark_struensee
 		had_ruler_flag = {
 			flag = fee_struensee_timer

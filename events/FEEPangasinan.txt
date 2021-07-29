@@ -25,6 +25,7 @@ country_event = {
 		name = "events_pgs.1.a" #Sure why not.
 		trigger = {
 			tag = PGS
+			is_subject = no
 			NOT = { has_reform = pirate_republic_reform }
 		}
 		ai_chance = { factor = 20 }
@@ -95,6 +96,7 @@ country_event = {
 			if = {
 				limit = {
 					has_dlc = "Dharma"
+					is_subject = no
 				}
 				change_government = republic
 				add_government_reform = pirate_republic_reform
@@ -165,6 +167,7 @@ country_event = {
 			if = {
 				limit = {
 					has_dlc = "Dharma"
+					is_subject = no
 				}
 				change_government = republic
 				add_government_reform = pirate_republic_reform

@@ -53,12 +53,11 @@ country_event = {
 
 	trigger = {
 		tag = SON
-		NOT = {
-			is_year = 1510
-		}
+		NOT = { is_year = 1510 }
 		is_year = 1485
 		religion = sunni
 		has_leader = "Muhammad Askia"
+		is_subject = no
 	}
 
 	mean_time_to_happen = {

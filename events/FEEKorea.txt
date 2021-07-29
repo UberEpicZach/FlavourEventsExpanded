@@ -49,10 +49,10 @@ country_event = {
 
 	trigger = {
 		tag = KOR
-		NOT = {
-			is_year = 1480
-		}
+		NOT = { is_year = 1480
+		 }
 		has_regency = yes
+		is_subject = no
 		is_at_war = no
 		government = monarchy
 	}
