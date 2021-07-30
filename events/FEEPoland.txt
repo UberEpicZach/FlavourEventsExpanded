@@ -502,6 +502,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
+		is_religion_enabled = protestant
 		OR = {
 			AND = {
 				tag = POL
@@ -516,21 +517,27 @@ country_event = {
      }
 
 	 mean_time_to_happen = {
-		months = 12 }
-     option = {
+		months = 12
+	}
+
+	option = {
 		name = fee_POL.19.a # Catholicism is our main religion
+
 		43 = {
- spawn_rebels = {
-  type = religious_rebels
-  size = 2
- }
-}
-}
-     option = {
-		name = fee_POL.19.b # Let them live
-			43 = { change_religion = protestant }
+			spawn_rebels = {
+				type = religious_rebels
+				size = 2
+			}
 		}
+	}
+
+	option = {
+		name = fee_POL.19.b # Let them live
+
+		43 = { change_religion = protestant }
+	}
 }
+
 # Pakt wileński
 country_event = {
 	id = fee_POL.20
