@@ -649,6 +649,8 @@ country_event = {
 		name = CE_brandenburg_expanded.11.a
 		add_years_of_income = -2.0
 		MAG = {
+			add_government_reform = dynastic_theocracy_reform
+			kill_heir = yes
 			define_ruler = {
 				name = "Albert"
 				dynasty = "von Hohenzollern"
@@ -656,8 +658,6 @@ country_event = {
 				adm = 1
 				age = 23
 			}
-			kill_heir = yes
-			add_government_reform = dynastic_theocracy_reform
 		}
 		custom_tooltip = CE_Magdeburg_Hohenzollern
 		ai_chance = {
