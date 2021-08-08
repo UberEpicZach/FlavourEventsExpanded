@@ -7,9 +7,13 @@ country_decisions = {
 			}
 			is_lesser_in_union = no
 			has_heir = yes
-			has_global_flag = FEE_Heir_Education_Active
 			heir_age = 5
-			
+			NOT = {
+				OR = {
+					has_heir_flag = heir_started_education
+					has_heir_flag = heir_finished_education
+				}
+			}
 		}
 		allow = {
 			custom_trigger_tooltip = {
@@ -44,7 +48,82 @@ country_decisions = {
 			always = no
 		}
 		effect = {
-			custom_tooltip = HEIR_EDUCATION_PROGRESS
+			if = {
+				limit = {
+					check_variable = {
+						which = heirEducationalLevel
+						value = 66
+					}
+				}
+				custom_tooltip = HEIR_EDUCATION_PROGRESS_HIGH
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = heirEducationalLevel
+						value = 33
+					}
+				} 
+				custom_tooltip = HEIR_EDUCATION_PROGRESS_MEDIUM
+			}
+			else = {
+				custom_tooltip = HEIR_EDUCATION_PROGRESS_LOW
+			}
+			if = {
+				limit = {
+					has_heir_flag = clerical_education
+				}
+				custom_tooltip = HEIR_EDUCATION_PROGRESS_CLERICAL
+			}
+			else_if = {
+				limit = {
+					has_heir_flag = administrative_education
+				}
+				custom_tooltip = HEIR_EDUCATION_PROGRESS_ADMINISTRATIVE
+			}
+			else_if = {
+				limit = {
+					has_heir_flag = scholastic_education
+				}
+				custom_tooltip = HEIR_EDUCATION_PROGRESS_SCHOLASTIC
+			}
+			else_if = {
+				limit = {
+					has_heir_flag = diplomacy_education
+				}
+				custom_tooltip = HEIR_EDUCATION_PROGRESS_DIPLOMACY
+			}
+			else_if = {
+				limit = {
+					has_heir_flag = intrigue_education
+				}
+				custom_tooltip = HEIR_EDUCATION_PROGRESS_INTRIGUE
+			}
+			else_if = {
+				limit = {
+					has_heir_flag = trade_education
+				}
+				custom_tooltip = HEIR_EDUCATION_PROGRESS_TRADE
+			}
+			else_if = {
+				limit = {
+					has_heir_flag = martial_education
+				}
+				custom_tooltip = HEIR_EDUCATION_PROGRESS_MARTIAL
+			}
+			else_if = {
+				limit = {
+					has_heir_flag = logistics_education
+				}
+				custom_tooltip = HEIR_EDUCATION_PROGRESS_LOGISTICS
+			}
+			else_if = {
+				limit = {
+					has_heir_flag = naval_education
+				}
+				custom_tooltip = HEIR_EDUCATION_PROGRESS_NAVAL
+			}
+			###custom_tooltip = HEIR_EDUCATION_PROGRESS
 		}
 	}
 }
