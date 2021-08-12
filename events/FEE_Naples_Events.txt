@@ -282,7 +282,7 @@ country_event = {
 		add_years_of_income = 3
 		if = {
 			limit = {
-				NOT = { war_exhaustion = 1 }
+				war_exhaustion = 1
 			}
 			add_war_exhaustion = -2.5
 		}
@@ -497,7 +497,7 @@ country_event = {
 		NOT = {
 			estate_loyalty = {
 				estate = estate_nobles
-				loyalty = 65
+				loyalty = 60
 			}
 		}
 		is_year = 1459
@@ -892,7 +892,7 @@ country_event = {
 		NOT = {
 			estate_loyalty = {
 				estate = estate_nobles
-				loyalty = 65
+				loyalty = 60
 			}
 		}
 		is_year = 1485
