@@ -198,3 +198,12 @@ best_logistics_education = {
 	defensiveness = 0.2
 	movement_speed = 0.2
 }
+fe_education_clerical_upset_local = {
+	local_missionary_strength = -0.05
+	local_unrest = 10
+}
+fe_education_clerical_inspired_local = {
+	local_missionary_strength = 0.02
+	local_unrest = -1
+	local_religious_unity_contribution = -0.5
+}
