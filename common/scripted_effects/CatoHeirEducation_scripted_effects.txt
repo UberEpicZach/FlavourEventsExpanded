@@ -226,21 +226,17 @@ add_good_clerical_education = {
 		name = good_clerical_education
 		duration = -1
 	}
-	hidden_effect = {
-		if = {
-			limit = {
-				NOT = {
-					check_variable = {
-						which = heirEducationalLevel
-						value = 0
-					}
-				}
-			}
-			set_variable = {
-				which = heirEducationalLevel
-				value = 0
-			}
+	if = {
+		limit = {
+			adm = 6
 		}
+		add_ruler_modifier = {
+			name = adm_education_bonus_1
+			duration = -1
+		}
+	}
+	else = {
+		change_adm = 1
 	}
 }
 add_best_clerical_education = {
@@ -1392,4 +1388,21 @@ pick_grand_tour_possible_locations = {
 				set_country_flag = world_tour_country_3
 			}
 		}
+}
+clear_heir_success_flag = {
+	clr_heir_flag = he_critical_success
+	clr_heir_flag = he_critical_success_1
+	clr_heir_flag = he_critical_success_2
+	clr_heir_flag = he_success
+	clr_heir_flag = he_success_1
+	clr_heir_flag = he_success_2
+	clr_heir_flag = he_neutral
+	clr_heir_flag = he_neutral_1
+	clr_heir_flag = he_neutral_2
+	clr_heir_flag = he_fail
+	clr_heir_flag = he_fail_1
+	clr_heir_flag = he_fail_2
+	clr_heir_flag = he_critical_fail
+	clr_heir_flag = he_critical_fail_1
+	clr_heir_flag = he_critical_fail_2
 }
