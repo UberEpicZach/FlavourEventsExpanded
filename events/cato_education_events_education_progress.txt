@@ -74,7 +74,7 @@ country_event = {
 		name = cato_education_events_education_progress.0004.title
 		country_event = { id = cato_education_events_education_progress.0004 }
 		ai_chance = {
-			factor = 1
+			factor = 0.5
 			modifier = {
 				factor = 0
 				has_heir_flag = started_admin_education
@@ -131,7 +131,7 @@ country_event = {
 		name = cato_education_events_education_progress.0009.title
 		country_event = { id = cato_education_events_education_progress.0009 }
 		ai_chance = {
-			factor = 0.5
+			factor = 0.25
 			modifier = {
 				factor = 0.1
 				has_heir_flag = tutor_fraud
@@ -140,11 +140,21 @@ country_event = {
 	}
 	option = {
 		name = cato_education_events_education_progress.0010.title
+		trigger = {
+			NOT = {
+				has_heir_flag = tutored_by_rulers_tutor
+			}
+		}
 		country_event = { id = cato_education_events_education_progress.0010 }
 		ai_chance = { factor = 1 }
 	}
 	option = {
 		name = cato_education_events_education_progress.0011.title
+		trigger = {
+			NOT = {
+				has_heir_flag = decadent_heir
+			}
+		}
 		country_event = { id = cato_education_events_education_progress.0011 }
 		ai_chance = { factor = 0.1 }
 	}
@@ -201,6 +211,31 @@ country_event = {
 		}
 		country_event = { id = cato_education_events_education_progress.1002 }
 		ai_chance = { factor = 1 }
+	}
+	option = { ###Visit same religion neighbor
+		name = cato_education_events_education_progress.1003.title
+		trigger = {
+			has_heir_flag = clerical_education
+			any_neighbor_country = {
+				NOT = { war_with = ROOT }
+				religion = ROOT
+			}
+		}
+		country_event = { id = cato_education_events_education_progress.1003 }
+		ai_chance = { factor = 100 }
+	}
+	option = { ###Visit different religion ally
+		name = cato_education_events_education_progress.1006.title
+		trigger = {
+			has_heir_flag = clerical_education
+			any_ally = {
+				NOT = {
+					religion = ROOT
+				}
+			}
+		}
+		country_event = { id = cato_education_events_education_progress.1006 }
+		ai_chance = { factor = 100 }
 	}
 	option = {
 		name = cato_education_events_education_progress.2000.title
@@ -770,7 +805,7 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_education_progress.0009.a
+		name = cato_education_events_education_progress.0008.a
 		subtract_education_progress_tiny = yes	
 		ai_chance = {
 			factor = 1
@@ -822,7 +857,7 @@ country_event = {
 			limit = {
 				monthly_income = 1.041667
 				NOT = {
-					monthly_income = 10.41667
+					monthly_income = 41.666667
 				}
 			}
 			add_years_of_income = -0.5
@@ -849,7 +884,6 @@ country_event = {
 	title = cato_education_events_education_progress.0010.title
 	desc = cato_education_events_education_progress.0010.desc
 	picture = ECONOMY_eventPicture
-	hidden = yes
 	is_triggered_only = yes
 	
 	trigger = {
@@ -864,13 +898,13 @@ country_event = {
 		if = {
 			limit = {
 				NOT = {
-					monthly_income = 83.33334
+					monthly_income = 20.8334
 				}
 			}
 			add_years_of_income = -1
 		}
 		else = {
-			add_treasury = -1000
+			add_treasury = -250
 		}
 		set_heir_flag = tutored_by_rulers_tutor
 		ai_chance = {
@@ -1485,116 +1519,219 @@ country_event = {
 	}
 }
 country_event = {
-	id = cato_education_events_education_progress.1003 ###Heir Visits Same Religion Neighbor
+	id = cato_education_events_education_progress.1003 ###Heir Visits Same Religion Neighbor(setup)
 	title = cato_education_events_education_progress.1003.title
 	desc = cato_education_events_education_progress.1003.desc
-	picture = ECONOMY_eventPicture
+	picture = RELIGION_eventPicture
 	
 	is_triggered_only = yes
-	
 	trigger = {
 		has_heir_flag = clerical_education
 		is_lesser_in_union = no
 		has_heir_flag = heir_started_education
 		any_neighbor_country = {
+			NOT = { war_with = ROOT }
 			religion = ROOT
+		}
+	}
+	immediate = {
+		hidden_effect = {
+			random_neighbor_country = {
+				limit = {
+					religion = ROOT
+				}
+				save_event_target_as = same_religion_neighbor
+			}
 		}
 	}
 	
 	
 	option = {
 		name = cato_education_events_education_progress.1003.a
-		random_neighbor_country = {
-			limit = {
-				religion = ROOT
-			}
-			add_opinion = {
-				who = ROOT
-				modifier = he_heir_religion
-			}
+		country_event = {
+			id = cato_education_events_education_progress.1004
 		}
-		add_education_progress_small = yes
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = cato_education_events_education_progress.1003.b
 		ai_chance = {
 			factor = 1
 		}
 	}
 }
 country_event = {
-	id = cato_education_events_education_progress.1004 ###Heir Visits Same Religion Neighbor(bad)
+	id = cato_education_events_education_progress.1004 ###Heir Visits Same Religion Neighbor(Choose outcome)
 	title = cato_education_events_education_progress.1004.title
 	desc = cato_education_events_education_progress.1004.desc
 	picture = ECONOMY_eventPicture
 	
 	is_triggered_only = yes
-	
-	trigger = {
-		has_heir_flag = clerical_education
-		is_lesser_in_union = no
-		has_heir_flag = heir_started_education
-		any_neighbor_country = {
-			religion = ROOT
-		}
+	hidden = yes
+	immediate = {
 	}
 	
 	
 	option = {
-		name = cato_education_events_education_progress.1004.a
-		random_neighbor_country = {
-			limit = {
-				religion = ROOT
+		name = cato_education_events_education_progress.1003.a
+		set_heir_flag = he_critical_success
+		country_event = {
+			id = cato_education_events_education_progress.1005
+		}
+		ai_chance = {
+			factor = 5
+		}
+	}
+	option = {
+		name = cato_education_events_education_progress.1003.a
+		set_heir_flag = he_success
+		country_event = {
+			id = cato_education_events_education_progress.1005
+		}
+		ai_chance = {
+			factor = 45
+		}
+	}
+	option = {
+		name = cato_education_events_education_progress.1003.a
+		set_heir_flag = he_neutral
+		country_event = {
+			id = cato_education_events_education_progress.1005
+		}
+		ai_chance = {
+			factor = 45
+		}
+	}
+	option = {
+		name = cato_education_events_education_progress.1003.a
+		set_heir_flag = he_fail
+		country_event = {
+			id = cato_education_events_education_progress.1005
+		}
+		ai_chance = {
+			factor = 5
+		}
+	}
+}
+country_event = {
+	id = cato_education_events_education_progress.1005 ###Heir Visits Same Religion Neighbor(Outcome)
+	title = cato_education_events_education_progress.1005.title
+	desc = {
+		trigger = {
+			has_heir_flag = he_critical_success
+		}
+		desc = cato_education_events_education_progress.1005.desc_critical_success
+	}
+	desc = {
+		trigger = {
+			has_heir_flag = he_success
+		}
+		desc = cato_education_events_education_progress.1005.desc_success
+	}
+	desc = {
+		trigger = {
+			has_heir_flag = he_neutral
+		}
+		desc = cato_education_events_education_progress.1005.desc_neutral
+	}
+	desc = {
+		trigger = {
+			has_heir_flag = he_fail
+		}
+		desc = cato_education_events_education_progress.1005.desc_fail
+	}
+	picture = {
+		trigger= {
+			OR = {
+				has_heir_flag = he_critical_success
+				has_heir_flag = he_success
+				has_heir_flag = he_neutral
 			}
+		}
+		picture = RELIGION_eventPicture
+	}
+	picture = {
+		trigger= {
+			has_heir_flag = he_fail
+		}
+		picture = RELIGIOUS_TURMOIL_eventPicture
+	}
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = cato_education_events_education_progress.1005.a
+		trigger = {
+			has_heir_flag = he_critical_success
+		}
+		add_education_progress_medium = yes
+		define_advisor = {
+			type = theologian
+			culture = event_target:same_religion_neighbor
+			skill = 2
+			cost_multiplier  = 0.5
+		}
+		event_target:same_religion_neighbor = {
+			add_opinion = {
+				who = ROOT
+				modifier = he_heir_religion
+			}
+		}
+		clear_heir_success_flag = yes
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = cato_education_events_education_progress.1005.b
+		trigger = {
+			has_heir_flag = he_success
+		}
+		add_education_progress_small = yes
+		event_target:same_religion_neighbor = {
+			add_opinion = {
+				who = ROOT
+				modifier = he_heir_religion
+			}
+		}
+		clear_heir_success_flag = yes
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = cato_education_events_education_progress.1005.c
+		trigger = {
+			has_heir_flag = he_neutral
+		}
+		add_education_progress_tiny = yes
+		clear_heir_success_flag = yes
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = cato_education_events_education_progress.1005.d
+		trigger = {
+			has_heir_flag = he_fail
+		}
+		subtract_education_progress_tiny = yes
+		event_target:same_religion_neighbor = {
 			add_opinion = {
 				who = ROOT
 				modifier = he_heir_religion_offended
 			}
 		}
-		subtract_education_progress_small = yes
+		clear_heir_success_flag = yes
 		ai_chance = {
 			factor = 1
 		}
 	}
 }
 country_event = {
-	id = cato_education_events_education_progress.1005 ###Heir Visits Different Religion Ally
-	title = cato_education_events_education_progress.1005.title
-	desc = cato_education_events_education_progress.1005.desc
-	picture = ECONOMY_eventPicture
-	
-	is_triggered_only = yes
-	
-	trigger = {
-		has_heir_flag = clerical_education
-		is_lesser_in_union = no
-		has_heir_flag = heir_started_education
-		any_ally_country = {
-			NOT = {
-				religion = ROOT
-			}
-		}
-	}
-	
-	
-	option = {
-		name = cato_education_events_education_progress.1005.a
-		random_ally_country = {
-			limit = {
-				NOT = {
-					religion = ROOT
-				}
-			}
-			add_opinion = {
-				who = ROOT
-				modifier = he_heir_different_religion_respect
-			}
-		}
-		add_education_progress_small = yes
-		ai_chance = {
-			factor = 1
-		}
-	}
-}
-country_event = {
-	id = cato_education_events_education_progress.1006 ###Heir Visits Different Religion Ally(Bad)
+	id = cato_education_events_education_progress.1006 ###Heir Visits Different Religion Ally(start)
 	title = cato_education_events_education_progress.1006.title
 	desc = cato_education_events_education_progress.1006.desc
 	picture = ECONOMY_eventPicture
@@ -1605,28 +1742,513 @@ country_event = {
 		has_heir_flag = clerical_education
 		is_lesser_in_union = no
 		has_heir_flag = heir_started_education
-		any_ally_country = {
+		any_ally = {
 			NOT = {
 				religion = ROOT
 			}
 		}
 	}
+	immediate = {
+		hidden_effect = {
+			random_ally = {
+				limit = {
+					NOT = { religion = ROOT }
+				}
+				save_event_target_as = different_religion_ally
+			}
+		}
+	}
+	
+	option = {
+		name = cato_education_events_education_progress.1006.a ###Allow
+		country_event = {
+			id = cato_education_events_education_progress.1007
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = cato_education_events_education_progress.1006.b ###They'll be better at home
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {
+	id = cato_education_events_education_progress.1007 ###Heir Visits Different Religion Ally(Choose outcome)
+	title = cato_education_events_education_progress.1007.title
+	desc = cato_education_events_education_progress.1007.desc
+	picture = ECONOMY_eventPicture
+	
+	is_triggered_only = yes
+	hidden = yes
+	immediate = {
+	}
 	
 	
 	option = {
-		name = cato_education_events_education_progress.1006.a
-		random_ally_country = {
-			limit = {
-				NOT = {
-					religion = ROOT
-				}
+		name = cato_education_events_education_progress.1003.a
+		set_heir_flag = he_critical_success
+		country_event = {
+			id = cato_education_events_education_progress.1008
+		}
+		ai_chance = {
+			factor = 5
+		}
+	}
+	option = {
+		name = cato_education_events_education_progress.1003.a
+		set_heir_flag = he_success
+		country_event = {
+			id = cato_education_events_education_progress.1008
+		}
+		ai_chance = {
+			factor = 60
+		}
+	}
+	option = {
+		name = cato_education_events_education_progress.1003.a
+		set_heir_flag = he_neutral
+		country_event = {
+			id = cato_education_events_education_progress.1008
+		}
+		ai_chance = {
+			factor = 30
+		}
+	}
+	option = {
+		name = cato_education_events_education_progress.1003.a
+		set_heir_flag = he_fail
+		country_event = {
+			id = cato_education_events_education_progress.1008
+		}
+		ai_chance = {
+			factor = 5
+		}
+	}
+}
+country_event = {
+	id = cato_education_events_education_progress.1008 ###Heir Visits Different Religion Ally(Result)
+	title = cato_education_events_education_progress.1008.title
+	desc = {
+		trigger = {
+			has_heir_flag = he_critical_success
+		}
+		desc = cato_education_events_education_progress.1008.desc_critical_success
+	}
+	desc = {
+		trigger = {
+			has_heir_flag = he_success
+		}
+		desc = cato_education_events_education_progress.1008.desc_success
+	}
+	desc = {
+		trigger = {
+			has_heir_flag = he_neutral
+		}
+		desc = cato_education_events_education_progress.1008.desc_neutral
+	}
+	desc = {
+		trigger = {
+			has_heir_flag = he_fail
+		}
+		desc = cato_education_events_education_progress.1008.desc_fail
+	}
+	picture = {
+		trigger= {
+			OR = {
+				has_heir_flag = he_critical_success
+				has_heir_flag = he_success
+				has_heir_flag = he_neutral
 			}
+		}
+		picture = RELIGION_eventPicture
+	}
+	picture = {
+		trigger= {
+			has_heir_flag = he_fail
+		}
+		picture = RELIGIOUS_TURMOIL_eventPicture
+	}
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+	
+	
+	option = {
+		name = cato_education_events_education_progress.1008.a
+		trigger = {
+			has_heir_flag = he_critical_success
+		}
+		add_education_progress_medium = yes
+		define_advisor = {
+			type = theologian
+			culture = event_target:different_religion_ally
+			skill = 2
+			cost_multiplier  = 0.5
+		}
+		event_target:different_religion_ally = {
+			add_opinion = {
+				who = ROOT
+				modifier = he_heir_religion
+			}
+		}
+		clear_heir_success_flag = yes
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = cato_education_events_education_progress.1008.b
+		trigger = {
+			has_heir_flag = he_success
+		}
+		add_education_progress_small = yes
+		event_target:different_religion_ally = {
+			add_opinion = {
+				who = ROOT
+				modifier = he_heir_religion
+			}
+		}
+		clear_heir_success_flag = yes
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = cato_education_events_education_progress.1008.c
+		trigger = {
+			has_heir_flag = he_neutral
+		}
+		add_education_progress_tiny = yes
+		clear_heir_success_flag = yes
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = cato_education_events_education_progress.1008.d
+		trigger = {
+			has_heir_flag = he_fail
+		}
+		subtract_education_progress_tiny = yes
+		event_target:different_religion_ally = {
 			add_opinion = {
 				who = ROOT
 				modifier = he_heir_different_religion_offended
 			}
 		}
-		subtract_education_progress_small = yes
+		clear_heir_success_flag = yes
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {
+	id = cato_education_events_education_progress.1009 ###Heir Becomes Zealous
+	title = cato_education_events_education_progress.1009.title
+	desc = cato_education_events_education_progress.1009.desc
+	picture = ECONOMY_eventPicture
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	
+	
+	option = {
+		name = cato_education_events_education_progress.1009.a
+		set_heir_flag = got_trait_education
+		add_ruler_personality = zealot_personality
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {
+	id = cato_education_events_education_progress.1010 ###Heir Becomes Tolerant
+	title = cato_education_events_education_progress.1010.title
+	desc = cato_education_events_education_progress.1010.desc
+	picture = ECONOMY_eventPicture
+	
+	is_triggered_only = yes
+	immediate = {
+	}
+	
+	
+	option = {
+		name = cato_education_events_education_progress.1010.a
+		set_heir_flag = got_trait_education
+		add_ruler_personality = tolerant_personality
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {
+	id = cato_education_events_education_progress.1011 ###Heir Helps Convert Provinces(start)
+	title = cato_education_events_education_progress.1011.title
+	desc = cato_education_events_education_progress.1011.desc
+	picture = ECONOMY_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_heir_flag = clerical_education
+		is_lesser_in_union = no
+		has_heir_flag = heir_started_education
+	}
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					NOT = { religion = ROOT }
+				}
+				save_event_target_as = different_religion_province
+			}
+		}
+	}
+	
+	option = {
+		name = cato_education_events_education_progress.10011.a ###Allow
+		country_event = {
+			id = cato_education_events_education_progress.1012
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = cato_education_events_education_progress.1011.b ###They'll be better at home
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {
+	id = cato_education_events_education_progress.1012 ###Heir Helps Convert Provinces(Choose outcome)
+	title = cato_education_events_education_progress.1012.title
+	desc = cato_education_events_education_progress.1012.desc
+	picture = ECONOMY_eventPicture
+	
+	is_triggered_only = yes
+	hidden = yes
+	immediate = {
+	}
+	
+	
+	option = {
+		name = cato_education_events_education_progress.1012.a
+		set_heir_flag = he_critical_success
+		country_event = {
+			id = cato_education_events_education_progress.1013
+		}
+		ai_chance = {
+			factor = 5
+		}
+	}
+	option = {
+		name = cato_education_events_education_progress.1012.a
+		set_heir_flag = he_success
+		country_event = {
+			id = cato_education_events_education_progress.1013
+		}
+		ai_chance = {
+			factor = 60
+		}
+	}
+	option = {
+		name = cato_education_events_education_progress.1012.a
+		set_heir_flag = he_neutral_1
+		country_event = {
+			id = cato_education_events_education_progress.1013
+		}
+		ai_chance = {
+			factor = 30
+		}
+	}
+	option = {
+		name = cato_education_events_education_progress.1012.a
+		set_heir_flag = he_neutral_2
+		country_event = {
+			id = cato_education_events_education_progress.1013
+		}
+		ai_chance = {
+			factor = 30
+		}
+	}
+	option = {
+		name = cato_education_events_education_progress.1012.a
+		set_heir_flag = he_fail
+		country_event = {
+			id = cato_education_events_education_progress.1013
+		}
+		ai_chance = {
+			factor = 5
+		}
+	}
+	option = {
+		name = cato_education_events_education_progress.1012.a
+		set_heir_flag = he_critical_fail
+		country_event = {
+			id = cato_education_events_education_progress.1013
+		}
+		ai_chance = {
+			factor = 300
+		}
+	}
+}
+country_event = {
+	id = cato_education_events_education_progress.1013 ###Heir Helps Convert Provinces(Result)
+	title = cato_education_events_education_progress.1013.title
+	desc = {
+		trigger = {
+			has_heir_flag = he_critical_success
+		}
+		desc = cato_education_events_education_progress.1013.desc_critical_success
+	}
+	desc = {
+		trigger = {
+			has_heir_flag = he_success
+		}
+		desc = cato_education_events_education_progress.1013.desc_success
+	}
+	desc = {
+		trigger = {
+			has_heir_flag = he_neutral_1
+		}
+		desc = cato_education_events_education_progress.1013.desc_neutral_1
+	}
+	desc = {
+		trigger = {
+			has_heir_flag = he_neutral_2
+		}
+		desc = cato_education_events_education_progress.1013.desc_neutral_2
+	}
+	desc = {
+		trigger = {
+			has_heir_flag = he_fail
+		}
+		desc = cato_education_events_education_progress.1013.desc_fail
+	}
+	desc = {
+		trigger = {
+			has_heir_flag = he_critical_fail
+		}
+		desc = cato_education_events_education_progress.1013.desc_critical_fail
+	}
+	picture = {
+		trigger= {
+			OR = {
+				has_heir_flag = he_critical_success
+				has_heir_flag = he_success
+				has_heir_flag = he_neutral
+			}
+		}
+		picture = RELIGION_eventPicture
+	}
+	picture = {
+		trigger= {
+			OR = {
+				has_heir_flag = he_fail
+				has_heir_flag = he_critical_fail
+			}
+		}
+		picture = RELIGIOUS_TURMOIL_eventPicture
+	}
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+	
+	
+	option = {
+		name = cato_education_events_education_progress.1008.a
+		trigger = {
+			has_heir_flag = he_critical_success
+		}
+		add_education_progress_medium = yes
+		event_target:different_religion_province = {
+			change_religion = ROOT
+		}
+		clear_heir_success_flag = yes
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = cato_education_events_education_progress.1008.b
+		trigger = {
+			has_heir_flag = he_success
+		}
+		add_education_progress_small = yes
+		event_target:different_religion_province = {
+			add_province_modifier = {
+				name = fe_education_religious_upset
+				duration = 3650
+			}
+		}
+		clear_heir_success_flag = yes
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = cato_education_events_education_progress.1008.c
+		trigger = {
+			has_heir_flag = he_neutral_1
+		}
+		add_education_progress_tiny = yes
+		clear_heir_success_flag = yes
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = cato_education_events_education_progress.1008.c
+		trigger = {
+			has_heir_flag = he_neutral_2
+		}
+		add_education_progress_tiny = yes
+		set_heir_religion = event_target:different_religion_province
+		clear_heir_success_flag = yes
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = cato_education_events_education_progress.1008.d
+		trigger = {
+			has_heir_flag = he_fail
+		}
+		subtract_education_progress_tiny = yes
+		event_target:different_religion_province = {
+			add_province_modifier = {
+				name = fe_education_religious_upset
+				duration = 3650
+			}
+		}
+		clear_heir_success_flag = yes
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = cato_education_events_education_progress.1008.d
+		trigger = {
+			has_heir_flag = he_critical_fail
+		}
+		subtract_education_progress_tiny = yes
+		event_target:different_religion_province = {
+			spawn_rebels = {
+				type = religious_rebels
+				size = 2
+			}
+		}
+		clear_heir_success_flag = yes
 		ai_chance = {
 			factor = 1
 		}
@@ -1726,6 +2348,31 @@ country_event = {
 	option = {
 		name = cato_education_events_education_progress.2002.a
 		add_education_progress_medium = yes
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {
+	id = cato_education_events_education_progress.2003 ###Heir requests to assist the tax collectors
+	title = cato_education_events_education_progress.2003.title
+	desc = cato_education_events_education_progress.2003.desc
+	picture = ECONOMY_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_heir_flag = administrative_education
+		is_lesser_in_union = no
+		has_heir_flag = heir_started_education
+	}
+	
+	
+	option = {
+		name = cato_education_events_education_progress.2002.a
+		hidden_effect = {
+			
+		}
 		ai_chance = {
 			factor = 1
 		}
