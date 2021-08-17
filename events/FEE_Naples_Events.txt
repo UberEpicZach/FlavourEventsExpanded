@@ -465,17 +465,6 @@ country_event = {
 		name = FEE_Naples_Events.8.OPT1
 
 		custom_tooltip = nap_pre_conjury_tt
-		#hidden_effect = {
-		#	country_event = {
-		#		id = FEE_Naples_Events.9
-		#	}
-		#	country_event = {
-		#		id = FEE_Naples_Events.10
-		#	}
-		#	country_event = {
-		#		id = FEE_Naples_Events.11
-		#	}
-		#}
 	}
 }
 
@@ -497,16 +486,16 @@ country_event = {
 		NOT = {
 			estate_loyalty = {
 				estate = estate_nobles
-				loyalty = 60
+				loyalty = 65
 			}
 		}
 		is_year = 1459
 		NOT = { is_year = 1464 }
-		any_owned_province = {
-			area = apulia_area
+		apulia_area = {
+			owned_by = ROOT
 		}
-		any_owned_province = {
-			area = calabria_area
+		calabria_area = {
+			owned_by = ROOT
 		}
 	}
 
@@ -730,7 +719,7 @@ country_event = {
 					add_prosperity = 15
 				}
 				else = {
-					add_devastation = 50
+					add_devastation = -50
 				}
 			}
 		}
@@ -783,7 +772,7 @@ country_event = {
 					add_prosperity = 15
 				}
 				else = {
-					add_devastation = 50
+					add_devastation = -50
 				}
 			}
 		}
