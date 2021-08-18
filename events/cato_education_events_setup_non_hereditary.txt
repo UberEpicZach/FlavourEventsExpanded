@@ -61,7 +61,7 @@ country_event = {
 			}
 			modifier = {
 				factor = 1.2
-				has_idea_group = innovative_ideas
+				has_idea_group = innovativeness_ideas
 			}
 			modifier = {
 				factor = 1.2
@@ -77,11 +77,11 @@ country_event = {
 			}
 			modifier = {
 				factor = 1.2
-				has_idea_group = aristocratic_ideas
+				has_idea_group = aristocracy_ideas
 			}
 			modifier = {
 				factor = 1.2
-				has_idea_group = plutocratic_ideas
+				has_idea_group = plutocracy_ideas
 			}
 			modifier = {
 				factor = 1.2
@@ -255,7 +255,7 @@ country_event = {
 			factor = 1
 			modifier = {
 				factor = 1.2
-				has_idea_group = innovative_ideas
+				has_idea_group = innovativeness_ideas
 			}
 		}
 	}
@@ -660,7 +660,7 @@ country_event = {
 					limit = {
 						has_ruler_flag = scholastic_education
 					}
-					has_idea_group = innovative_ideas
+					has_idea_group = innovativeness_ideas
 				}
 				else_if = {
 					limit = {
@@ -684,7 +684,7 @@ country_event = {
 					OR = {
 						has_idea_group = trade_ideas
 						has_idea_group = economic_ideas
-						has_idea_group = plutocratic_ideas
+						has_idea_group = plutocracy_ideas
 						has_idea_group = maritime_ideas
 					}
 				}
@@ -700,8 +700,8 @@ country_event = {
 						has_idea_group = quantity_ideas
 						has_idea_group = defensive_ideas
 						has_idea_group = offensive_ideas
-						has_idea_group = aristocratic_ideas
-						has_idea_group = plutocratic_ideas
+						has_idea_group = aristocracy_ideas
+						has_idea_group = plutocracy_ideas
 					}
 				}
 				else_if = {
@@ -710,8 +710,8 @@ country_event = {
 					}
 					OR = {
 						has_idea_group = naval_ideas
-						has_idea_group = plutocratic_ideas
-						has_idea_group = aristocratic_ideas
+						has_idea_group = plutocracy_ideas
+						has_idea_group = aristocracy_ideas
 						has_idea_group = exploration_ideas
 						has_idea_group = maritime_ideas
 					}
@@ -800,7 +800,7 @@ country_event = {
 					limit = {
 						has_ruler_flag = scholastic_education
 					}
-					has_idea_group = innovative_ideas
+					has_idea_group = innovativeness_ideas
 				}
 				else_if = {
 					limit = {
@@ -839,8 +839,8 @@ country_event = {
 						has_idea_group = quantity_ideas
 						has_idea_group = defensive_ideas
 						has_idea_group = offensive_ideas
-						has_idea_group = aristocratic_ideas
-						has_idea_group = plutocratic_ideas
+						has_idea_group = aristocracy_ideas
+						has_idea_group = plutocracy_ideas
 					}
 				}
 				else_if = {
@@ -849,8 +849,8 @@ country_event = {
 					}
 					OR = {
 						has_idea_group = naval_ideas
-						has_idea_group = plutocratic_ideas
-						has_idea_group = aristocratic_ideas
+						has_idea_group = plutocracy_ideas
+						has_idea_group = aristocracy_ideas
 						has_idea_group = exploration_ideas
 						has_idea_group = maritime_ideas
 					}

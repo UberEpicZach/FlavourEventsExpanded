@@ -316,7 +316,7 @@ country_event = {
 			}
 			modifier = {
 				factor = 1.2
-				has_idea_group = innovative_ideas
+				has_idea_group = innovativeness_ideas
 			}
 			modifier = {
 				factor = 1.2
@@ -332,11 +332,11 @@ country_event = {
 			}
 			modifier = {
 				factor = 1.2
-				has_idea_group = aristocratic_ideas
+				has_idea_group = aristocracy_ideas
 			}
 			modifier = {
 				factor = 1.2
-				has_idea_group = plutocratic_ideas
+				has_idea_group = plutocracy_ideas
 			}
 			modifier = {
 				factor = 1.2
@@ -513,7 +513,7 @@ country_event = {
 			factor = 1
 			modifier = {
 				factor = 1.2
-				has_idea_group = innovative_ideas
+				has_idea_group = innovativeness_ideas
 			}
 		}
 	}
