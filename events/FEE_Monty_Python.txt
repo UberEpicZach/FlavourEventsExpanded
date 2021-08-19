@@ -14,10 +14,16 @@ country_event = {
 		NOT = { is_year = 1550 }
 		NOT = { legitimacy = 40 }
 		is_female = yes
+		NOT = { has_country_flag = complaining_peasant }
 	}
 	mean_time_to_happen = {
 		months = 12
 	}
+
+	immediate = {
+		hidden_effect = { set_country_flag = complaining_peasant }
+	}
+
 	option = {
 		name = FEE_Monty_Python_Events.1.a
 		
