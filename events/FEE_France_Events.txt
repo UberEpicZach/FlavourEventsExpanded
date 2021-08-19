@@ -1020,6 +1020,10 @@ country_event = {
 		}
 
 		set_country_flag = bourgeoisie_support_king
+		add_country_modifier = {
+			name = fee_france_third_estate_placated
+			duration = 14600
+		}
 		change_estate_land_share = {
 			estate = estate_burghers
 			share = 5
@@ -1038,15 +1042,9 @@ country_event = {
 		}
 		if = {
 			limit = {
-				NOT = {
-					has_estate_privilege = estate_burghers_exclusive_trade_rights
-				}
+				NOT = { has_estate_privilege = estate_burghers_exclusive_trade_rights }
 			}
 			set_estate_privilege = estate_burghers_exclusive_trade_rights
-		}
-		add_country_modifier = {
-			name = fee_france_third_estate_placated
-			duration = 14600
 		}
 	}
 }
