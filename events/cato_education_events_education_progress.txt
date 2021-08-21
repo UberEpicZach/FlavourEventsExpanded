@@ -131,9 +131,9 @@ country_event = {
 		name = cato_education_events_education_progress.0009.title
 		country_event = { id = cato_education_events_education_progress.0009 }
 		ai_chance = {
-			factor = 0.25
+			factor = 0.2
 			modifier = {
-				factor = 0.1
+				factor = 0
 				has_heir_flag = tutor_fraud
 			}
 		}
@@ -874,6 +874,7 @@ country_event = {
 	option = {
 		name = cato_education_events_education_progress.0009.b
 		subtract_education_progress_large = yes
+		set_heir_flag = tutor_fraud
 		ai_chance = {
 			factor = 1
 		}
