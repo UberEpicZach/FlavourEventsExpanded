@@ -222,7 +222,7 @@ country_event = {
 			}
 		}
 		country_event = { id = cato_education_events_education_progress.1003 }
-		ai_chance = { factor = 100 }
+		ai_chance = { factor = 1 }
 	}
 	option = { ###Visit different religion ally
 		name = cato_education_events_education_progress.1006.title
@@ -235,7 +235,7 @@ country_event = {
 			}
 		}
 		country_event = { id = cato_education_events_education_progress.1006 }
-		ai_chance = { factor = 100 }
+		ai_chance = { factor = 1 }
 	}
 	option = {
 		name = cato_education_events_education_progress.2000.title
