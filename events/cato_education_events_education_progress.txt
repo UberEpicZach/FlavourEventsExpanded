@@ -237,6 +237,40 @@ country_event = {
 		country_event = { id = cato_education_events_education_progress.1006 }
 		ai_chance = { factor = 1 }
 	}
+	option = { ###Heir Becomes Zealous
+		name = cato_education_events_education_progress.1009.title
+		trigger = {
+			has_heir_flag = clerical_education
+			NOT = { heir_has_personality = zealot_personality }
+			NOT = { heir_has_personality = tolerant_personality }
+			NOT = { has_idea_group = humanist_ideas }
+		}
+		country_event = { id = cato_education_events_education_progress.1009 }
+		ai_chance = { factor = 0.5 }
+	}
+	option = { ###Heir Becomes Tolerant
+		name = cato_education_events_education_progress.1010.title
+		trigger = {
+			has_heir_flag = clerical_education
+			NOT = { heir_has_personality = zealot_personality }
+			NOT = { heir_has_personality = tolerant_personality }
+			NOT = { has_idea_group = religious_ideas }
+		}
+		country_event = { id = cato_education_events_education_progress.1010 }
+		ai_chance = { factor = 0.5 }
+	}
+	option = { ###Heir Helps convert province
+		name = cato_education_events_education_progress.1011.title
+		trigger = {
+			has_heir_flag = clerical_education
+			NOT = { heir_has_personality = zealot_personality }
+			any_owned_province = {
+				NOT = { religion = ROOT }
+			}
+		}
+		country_event = { id = cato_education_events_education_progress.1011 }
+		ai_chance = { factor = 0.5 }
+	}
 	option = {
 		name = cato_education_events_education_progress.2000.title
 		trigger = {
