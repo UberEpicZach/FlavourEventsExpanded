@@ -721,7 +721,7 @@ country_event = {
 			}
 		}
 		ai_chance = {
-			factor = 1
+			factor = 100
 		}
 	}
 }
@@ -731,7 +731,7 @@ country_event = {
 	desc = cato_education_events_education_progress.0005.desc
 	picture = ECONOMY_eventPicture
 	is_triggered_only = yes
-	hidden = yes
+	###hidden = yes
 	trigger = {
 		has_heir_flag = heir_started_education
 		is_lesser_in_union = no
@@ -808,7 +808,7 @@ country_event = {
 	picture = ECONOMY_eventPicture
 	
 	is_triggered_only = yes
-	hidden = yes
+	###hidden = yes
 	
 	trigger = {
 		has_heir_flag = heir_started_education
