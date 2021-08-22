@@ -691,7 +691,7 @@ country_event = {
 		}
 		add_estate_loyalty_modifier = {
 			estate = estate_nobles
-			loyalty = -50
+			loyalty = -30
 			desc = nap_nobles_restrained
 			duration = 7300
 		}
@@ -709,7 +709,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_province = {
 				limit = {
-					devastation = 25
+					devastation = 1
 				}
 				if = {
 					limit = {
@@ -762,7 +762,7 @@ country_event = {
 		hidden_effect = {
 			every_owned_province = {
 				limit = {
-					devastation = 25
+					devastation = 1
 				}
 				if = {
 					limit = {
