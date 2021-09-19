@@ -1,0 +1,34 @@
+﻿l_english:
+ FEE_Fairs_Events.1.T: "The Trading Fairs"
+ FEE_Fairs_Events.1.D: "In the Middle Ages, many fairs were transformed into temporary markets of special importance for international and long-distance trade, as many traders made journeys of up to days to reach places where they were sure they could do business. The fairs were usually connected to religious celebrations, such as the day of the patron saint of the locality. On these occasions, the rulers granted exemption from duties and taxes thus making the prices of the goods sold cheaper. The privilege of the Fair, in Latin nundinas, was granted or confirmed to a town or city by means of a special royal diploma or of the reigning feudal lord written on parchment and was fitted with a leaden seal inside which the heraldic coat of arms of who he had released him. The diploma describes the motivation, the place and date where the fair was held each year, the duration (generally eight consecutive days) and the relative exemptions (taxes, duties, etc.). This privilege stimulated the influx of buyers from outside, attracted by the possibility of saving and concluding deals in a more convenient way. Important was the function of the \"mastromercato\" or \"master of the fair\" which, in addition to regulating the exchange of goods, had control of the criminal jurisdiction of the city limited to the period of the fair. Modern trade fairs have their roots in European business fairs of the late Middle Ages in the period of development of mercantile capitalism: an example is the Champagne fairs, active since the 12th century. "
+ FEE_Fairs_Events.1.OPT1: "So many cities will host them!"
+
+ FEE_Fairs_Events.2.T: "Hidden Event to Select the Trading Fair"
+ FEE_Fairs_Events.2.D: "You should not read this event, so if you do something went wrong, although it might have been just enabled only for debugging reason still, please, report it to Zach of the Flavours and Events Expanded Team. \n\nThe sole reason of existance of this event is choosing which (owned) province will host the next trading fair."
+ FEE_Fairs_Events.2.OPT1: "Report the error :T"
+
+ FEE_Fairs_Events.3.T: "Trading Fair of [Root.GetName]"
+ FEE_Fairs_Events.3.D: "Finally a trading fair has reached this wonderful city and will stay here for 2 years attracting even more people both to trade and stay here!"
+ FEE_Fairs_Events.3.OPT1: "Welcome them all!"
+
+ FEE_Fairs_Events.4000.T: "Fair Ended in [Root.GetName]"
+ FEE_Fairs_Events.4000.D: "Sadly everything must come to an end, and while we loved the time spent with them the current trading fair must travel to another city to host there another fair, until our next time!"
+ FEE_Fairs_Events.4000.OPT1: "Let us see the report"
+
+ FEE_Fairs_Events.5000.T: "Gypsy Caravan"
+ FEE_Fairs_Events.5000.D: ""
+ FEE_Fairs_Events.5000.OPT1: ""
+
+ FEE_Fairs_Events.6.T: "Famous Artist"
+ FEE_Fairs_Events.6.D: ""
+ FEE_Fairs_Events.6.OPT1: ""
+
+ #Estate Modifeirs
+
+ #Event Modifiers
+
+ #Opinion Modifiers
+
+ #Tooltips
+ FEE_FAIRS_STARTING_TT: "Up to once every §M5 Years§! a §GTrading Fair§! will be hosted in an owned province with either a §YCenter of Trade§! or §Y10§! Base Production and §YTrade§! Building. \nA fair can return to the same province only once every 10 years."
+ FEE_FAIRS_PROVINCE_TT: "The Trading Caravans and Fairs have chose [Root.GetName] to host the next fair!"
