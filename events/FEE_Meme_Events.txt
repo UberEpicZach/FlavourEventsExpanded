@@ -31,3 +31,40 @@ country_event = {
 		name = FEE_Meme_Events.1.b
 	}
 }
+
+#Holding out for a Hero
+country_event = {
+	id = FEE_Meme_Events.2
+	title = FEE_Meme_Events.2.T
+	desc = FEE_Meme_Events.2.D
+	picture = MILITARY_CAMP_eventPicture
+
+	trigger = {
+		has_global_flag = FEE_Meme_Active
+		NOT = { has_country_flag = fee_meme_hero_fired }
+		NOT = { total_development = 100 }
+		OR = {
+			war_exhaustion = 5
+			NOT = { war_score = -25 }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	immediate = {
+		set_country_flag = fee_meme_hero_fired
+	}
+
+	option = {
+		name = FEE_Meme_Events.2.OPT1
+
+		create_general = {
+			tradition = 75
+		}
+		add_war_exhaustion = -5
+		add_stability = 1
+		add_mil_power = 50
+	}
+}
