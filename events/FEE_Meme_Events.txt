@@ -47,6 +47,10 @@ country_event = {
 			war_exhaustion = 5
 			NOT = { war_score = -25 }
 		}
+		any_country = {
+			total_development = 100
+			war_with = ROOT
+		}
 	}
 
 	mean_time_to_happen = {
