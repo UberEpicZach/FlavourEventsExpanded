@@ -1,4 +1,4 @@
-namespace = cato_education_events_setup_non_hereditary_setup_non_hereditary
+namespace = cato_education_events_setup_non_hereditary
 ###1-7 The player picking an education
 ###All events in this file should be hidden to players. Currently use mtth, could they be hooked to election on_action?
 ############
@@ -233,14 +233,6 @@ country_event = {
 			factor = 1
 			modifier = {
 				factor = 1.2
-				has_idea_group = economic_ideas
-			}
-			modifier = {
-				factor = 1.2
-				has_idea_group = expansion_ideas
-			}
-			modifier = {
-				factor = 1.2
 				has_idea_group = administrative_ideas
 			}
 		}
@@ -256,6 +248,20 @@ country_event = {
 			modifier = {
 				factor = 1.2
 				has_idea_group = innovativeness_ideas
+			}
+		}
+	}
+	option = {
+		name = cato_education_events_setup_non_hereditary.1.d
+		set_ruler_flag = industrial_education
+		country_event = {
+			id = cato_education_events_setup_non_hereditary.6
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.2
+				has_idea_group = economic_ideas
 			}
 		}
 	}
@@ -318,6 +324,24 @@ country_event = {
 			modifier = {
 				factor = 1.2
 				has_idea_group = economic_ideas
+			}
+		}
+	}
+	option = {
+		name = cato_education_events_setup_non_hereditary.1.d
+		set_ruler_flag = colonial_education
+		country_event = {
+			id = cato_education_events_setup_non_hereditary.6
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.2
+				has_idea_group = exploration_ideas
+			}
+			modifier = {
+				factor = 1.2
+				has_idea_group = expansion_ideas
 			}
 		}
 	}
@@ -384,6 +408,20 @@ country_event = {
 			modifier = {
 				factor = 1.2
 				has_idea_group = defensive_ideas
+			}
+		}
+	}
+	option = {
+		name = cato_education_events_setup_non_hereditary.1.d
+		set_ruler_flag = modern_army_education
+		country_event = {
+			id = cato_education_events_setup_non_hereditary.6
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.2
+				has_idea_group = quality_ideas
 			}
 		}
 	}
@@ -664,6 +702,12 @@ country_event = {
 				}
 				else_if = {
 					limit = {
+						has_ruler_flag = industrial_education
+					}
+					has_idea_group = economic_ideas
+				}
+				else_if = {
+					limit = {
 						has_ruler_flag = diplomacy_education
 					}
 					OR = {
@@ -690,9 +734,19 @@ country_event = {
 				}
 				else_if = {
 					limit = {
+						has_ruler_flag = colonial_education
+					}
+					OR = {
+						has_idea_group = exploration_ideas
+						has_idea_group = expansion_ideas
+					}
+				}
+				else_if = {
+					limit = {
 						OR = {
 							has_ruler_flag = martial_education
 							has_ruler_flag = logistics_education
+							has_ruler_flag = modern_army_education
 						}
 					}
 					OR = {
@@ -804,6 +858,12 @@ country_event = {
 				}
 				else_if = {
 					limit = {
+						has_ruler_flag = industrial_education
+					}
+					has_idea_group = economic_ideas
+				}
+				else_if = {
+					limit = {
 						has_ruler_flag = diplomacy_education
 					}
 					OR = {
@@ -824,7 +884,17 @@ country_event = {
 					OR = {
 						has_idea_group = trade_ideas
 						has_idea_group = economic_ideas
+						has_idea_group = plutocracy_ideas
 						has_idea_group = maritime_ideas
+					}
+				}
+				else_if = {
+					limit = {
+						has_ruler_flag = colonial_education
+					}
+					OR = {
+						has_idea_group = exploration_ideas
+						has_idea_group = expansion_ideas
 					}
 				}
 				else_if = {
@@ -832,6 +902,7 @@ country_event = {
 						OR = {
 							has_ruler_flag = martial_education
 							has_ruler_flag = logistics_education
+							has_ruler_flag = modern_army_education
 						}
 					}
 					OR = {
@@ -1007,6 +1078,40 @@ country_event = {
 		}
 		else_if = {
 			limit = {
+				has_ruler_flag = industrial_education
+				has_ruler_flag = poor_education
+			}
+			add_ruler_modifier = {
+				name = poor_industrial_education
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_ruler_flag = industrial_education
+				has_ruler_flag = okay_education
+			}
+			add_ruler_modifier = {
+				name = okay_industrial_education
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_ruler_flag = industrial_education
+				has_ruler_flag = good_education
+			}
+			add_good_industrial_education = yes
+		}
+		else_if = {
+			limit = {
+				has_ruler_flag = industrial_education
+				has_ruler_flag = best_education
+			}
+			add_best_industrial_education = yes
+		}
+		else_if = {
+			limit = {
 				has_ruler_flag = diplomacy_education
 				has_ruler_flag = poor_education
 			}
@@ -1112,6 +1217,40 @@ country_event = {
 		}
 		else_if = {
 			limit = {
+				has_ruler_flag = colonial_education
+				has_ruler_flag = poor_education
+			}
+			add_ruler_modifier = {
+				name = poor_colonial_education
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_ruler_flag = colonial_education
+				has_ruler_flag = okay_education
+			}
+			add_ruler_modifier = {
+				name = okay_colonial_education
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_ruler_flag = colonial_education
+				has_ruler_flag = good_education
+			}
+			add_good_colonial_education = yes
+		}
+		else_if = {
+			limit = {
+				has_ruler_flag = colonial_education
+				has_ruler_flag = best_education
+			}
+			add_best_colonial_education = yes
+		}
+		else_if = {
+			limit = {
 				has_ruler_flag = martial_education
 				has_ruler_flag = poor_education
 			}
@@ -1211,6 +1350,40 @@ country_event = {
 				has_ruler_flag = best_education
 			}
 			add_best_logistics_education = yes
+		}
+		else_if = {
+			limit = {
+				has_ruler_flag = modern_army_education
+				has_ruler_flag = poor_education
+			}
+			add_ruler_modifier = {
+				name = poor_modern_army_education
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_ruler_flag = modern_army_education
+				has_ruler_flag = okay_education
+			}
+			add_ruler_modifier = {
+				name = okay_modern_army_education
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_ruler_flag = modern_army_education
+				has_ruler_flag = good_education
+			}
+			add_good_modern_army_education = yes
+		}
+		else_if = {
+			limit = {
+				has_ruler_flag = modern_army_education
+				has_ruler_flag = best_education
+			}
+			add_best_modern_army_education = yes
 		}
 		ai_chance = {
 			factor = 1

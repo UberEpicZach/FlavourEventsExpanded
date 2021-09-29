@@ -35,7 +35,7 @@ country_event = {
 	}
 	option = {
 		name = cato_education_events_setup_hereditary.1.a
-		set_heir_flag = started_admin_education
+		set_heir_flag = started_adm_education
 		country_event = {
 			id = cato_education_events_setup_hereditary.2
 		}
@@ -133,6 +133,19 @@ country_event = {
 		}
 	}
 	option = {
+		name = cato_education_events_setup_hereditary.2.e
+		set_heir_flag = industrial_education
+		hidden_effect = {
+			country_event = {
+				id = cato_education_events_education_progress.0001
+				days = 60
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
 		name = cato_education_events_setup_hereditary.2.d
 		hidden_effect = {
 			set_heir_flag = heir_chose_education_subcategory
@@ -190,6 +203,19 @@ country_event = {
 	option = {
 		name = cato_education_events_setup_hereditary.3.c
 		set_heir_flag = trade_education
+		hidden_effect = {
+			country_event = {
+				id = cato_education_events_education_progress.0001
+				days = 60
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = cato_education_events_setup_hereditary.3.e
+		set_heir_flag = colonial_education
 		hidden_effect = {
 			country_event = {
 				id = cato_education_events_education_progress.0001
@@ -269,6 +295,19 @@ country_event = {
 		}
 	}
 	option = {
+		name = cato_education_events_setup_hereditary.4.e
+		set_heir_flag = modern_army_education
+		hidden_effect = {
+			country_event = {
+				id = cato_education_events_education_progress.0001
+				days = 60
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
 		name = cato_education_events_setup_hereditary.4.d
 		hidden_effect = {
 			set_heir_flag = heir_chose_education_subcategory
@@ -300,7 +339,7 @@ country_event = {
 	}
 	option = {
 		name = cato_education_events_setup_hereditary.1.a
-		set_heir_flag = started_admin_education
+		set_heir_flag = started_adm_education
 		country_event = {
 			id = cato_education_events_setup_hereditary.6
 		}
@@ -488,14 +527,6 @@ country_event = {
 			factor = 1
 			modifier = {
 				factor = 1.2
-				has_idea_group = economic_ideas
-			}
-			modifier = {
-				factor = 1.2
-				has_idea_group = expansion_ideas
-			}
-			modifier = {
-				factor = 1.2
 				has_idea_group = administrative_ideas
 			}
 		}
@@ -514,6 +545,23 @@ country_event = {
 			modifier = {
 				factor = 1.2
 				has_idea_group = innovativeness_ideas
+			}
+		}
+	}
+	option = {
+		name = cato_education_events_setup_hereditary.1.d
+		set_heir_flag = industrial_education
+		hidden_effect = {
+			country_event = {
+				id = cato_education_events_education_progress.0001
+				days = 60
+			}
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.2
+				has_idea_group = economic_ideas
 			}
 		}
 	}
@@ -587,6 +635,27 @@ country_event = {
 			modifier = {
 				factor = 1.2
 				has_idea_group = economic_ideas
+			}
+		}
+	}
+	option = {
+		name = cato_education_events_setup_hereditary.1.d
+		set_heir_flag = colonial_education
+		hidden_effect = {
+			country_event = {
+				id = cato_education_events_education_progress.0001
+				days = 60
+			}
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.2
+				has_idea_group = expansion_ideas
+			}
+			modifier = {
+				factor = 1.2
+				has_idea_group = exploration_ideas
 			}
 		}
 	}
@@ -667,6 +736,23 @@ country_event = {
 			}
 		}
 	}
+	option = {
+		name = cato_education_events_setup_hereditary.1.c
+		set_heir_flag = modern_army_education
+		hidden_effect = {
+			country_event = {
+				id = cato_education_events_education_progress.0001
+				days = 60
+			}
+		}
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 1.2
+				has_idea_group = quality_ideas
+			}
+		}
+	}
 }
 country_event = {
 	id = cato_education_events_setup_hereditary.10 ###Preparation event that fires when either an heir finishes their education after 8 years or they ascend the throne. Calculates their educational level and assigns them a flag which is used in the next event to add the modifier.
@@ -692,9 +778,9 @@ country_event = {
 			AND = {
 				had_heir_flag = {
 					flag = heir_started_education
-					days = 2920 ###8 years
+					days = 1###2920 8 years
 				}
-				NOT = { has_heir_flag = on_world_tour }
+				heir_not_busy = yes
 			}
 			has_ruler_flag = heir_started_education
 		}
@@ -846,6 +932,34 @@ country_event = {
 			}
 			else_if = {
 				limit = {
+					has_heir_flag = industrial_education
+					has_country_flag = poor_education
+				}
+				set_heir_flag = poor_industrial_education
+			}
+			else_if = {
+				limit = {
+					has_heir_flag = industrial_education
+					has_country_flag = okay_education
+				}
+				set_heir_flag = okay_industrial_education
+			}
+			else_if = {
+				limit = {
+					has_heir_flag = industrial_education
+					has_country_flag = good_education
+				}
+				set_heir_flag = good_industrial_education
+			}
+			else_if = {
+				limit = {
+					has_heir_flag = industrial_education
+					has_country_flag = best_education
+				}
+				set_heir_flag = best_industrial_education
+			}
+			else_if = {
+				limit = {
 					has_heir_flag = diplomacy_education
 					has_country_flag = poor_education
 				}
@@ -930,6 +1044,34 @@ country_event = {
 			}
 			else_if = {
 				limit = {
+					has_heir_flag = colonial_education
+					has_country_flag = poor_education
+				}
+				set_heir_flag = poor_colonial_education
+			}
+			else_if = {
+				limit = {
+					has_heir_flag = colonial_education
+					has_country_flag = okay_education
+				}
+				set_heir_flag = okay_colonial_education
+			}
+			else_if = {
+				limit = {
+					has_heir_flag = colonial_education
+					has_country_flag = good_education
+				}
+				set_heir_flag = good_colonial_education
+			}
+			else_if = {
+				limit = {
+					has_heir_flag = colonial_education
+					has_country_flag = best_education
+				}
+				set_heir_flag = best_colonial_education
+			}
+			else_if = {
+				limit = {
 					has_heir_flag = martial_education
 					has_country_flag = poor_education
 				}
@@ -1011,6 +1153,34 @@ country_event = {
 					has_country_flag = best_education
 				}
 				set_heir_flag = best_logistics_education
+			}
+			else_if = {
+				limit = {
+					has_heir_flag = modern_army_education
+					has_country_flag = poor_education
+				}
+				set_heir_flag = poor_modern_army_education
+			}
+			else_if = {
+				limit = {
+					has_heir_flag = modern_army_education
+					has_country_flag = okay_education
+				}
+				set_heir_flag = okay_modern_army_education
+			}
+			else_if = {
+				limit = {
+					has_heir_flag = modern_army_education
+					has_country_flag = good_education
+				}
+				set_heir_flag = good_modern_army_education
+			}
+			else_if = {
+				limit = {
+					has_heir_flag = modern_army_education
+					has_country_flag = best_education
+				}
+				set_heir_flag = best_modern_army_education
 			}
 			set_heir_flag = heir_finished_education
 			clr_heir_flag = heir_started_education
@@ -1105,6 +1275,34 @@ country_event = {
 			}
 			else_if = {
 				limit = {
+					has_ruler_flag = industrial_education
+					has_country_flag = poor_education
+				}
+				set_ruler_flag = poor_industrial_education
+			}
+			else_if = {
+				limit = {
+					has_ruler_flag = industrial_education
+					has_country_flag = okay_education
+				}
+				set_ruler_flag = okay_industrial_education
+			}
+			else_if = {
+				limit = {
+					has_ruler_flag = industrial_education
+					has_country_flag = good_education
+				}
+				set_ruler_flag = good_industrial_education
+			}
+			else_if = {
+				limit = {
+					has_ruler_flag = industrial_education
+					has_country_flag = best_education
+				}
+				set_ruler_flag = best_industrial_education
+			}
+			else_if = {
+				limit = {
 					has_ruler_flag = diplomacy_education
 					has_country_flag = poor_education
 				}
@@ -1186,6 +1384,34 @@ country_event = {
 					has_country_flag = best_education
 				}
 				set_ruler_flag = best_trade_education
+			}
+			else_if = {
+				limit = {
+					has_ruler_flag = colonial_education
+					has_country_flag = poor_education
+				}
+				set_ruler_flag = poor_colonial_education
+			}
+			else_if = {
+				limit = {
+					has_ruler_flag = colonial_education
+					has_country_flag = okay_education
+				}
+				set_ruler_flag = okay_colonial_education
+			}
+			else_if = {
+				limit = {
+					has_ruler_flag = colonial_education
+					has_country_flag = good_education
+				}
+				set_ruler_flag = good_colonial_education
+			}
+			else_if = {
+				limit = {
+					has_ruler_flag = colonial_education
+					has_country_flag = best_education
+				}
+				set_ruler_flag = best_colonial_education
 			}
 			else_if = {
 				limit = {
@@ -1271,21 +1497,40 @@ country_event = {
 				}
 				set_ruler_flag = best_logistics_education
 			}
+			else_if = {
+				limit = {
+					has_ruler_flag = modern_army_education
+					has_country_flag = poor_education
+				}
+				set_ruler_flag = poor_modern_army_education
+			}
+			else_if = {
+				limit = {
+					has_ruler_flag = modern_army_education
+					has_country_flag = okay_education
+				}
+				set_ruler_flag = okay_modern_army_education
+			}
+			else_if = {
+				limit = {
+					has_ruler_flag = modern_army_education
+					has_country_flag = good_education
+				}
+				set_ruler_flag = good_modern_army_education
+			}
+			else_if = {
+				limit = {
+					has_ruler_flag = modern_army_education
+					has_country_flag = best_education
+				}
+				set_ruler_flag = best_modern_army_education
+			}
 			clr_country_flag = poor_education
 			clr_country_flag = okay_education
 			clr_country_flag = good_education
 			clr_country_flag = best_education
-			if = {
-                limit = {
-                    has_heir_flag = heir_started_education
-                }
-                set_heir_flag = heir_finished_education
-                clr_heir_flag = heir_started_education
-            }
-            else = {
-                set_ruler_flag = heir_finished_education
-                clr_ruler_flag = heir_started_education
-            }
+            set_ruler_flag = heir_finished_education
+            clr_ruler_flag = heir_started_education
 		}
 		ai_chance = {
 			factor = 1
@@ -1408,6 +1653,36 @@ country_event = {
 		}
 		else_if = {
 			limit = {
+				has_ruler_flag = poor_industrial_education
+			}
+			add_ruler_modifier = {
+				name = poor_industrial_education
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_ruler_flag = okay_industrial_education
+			}
+			add_ruler_modifier = {
+				name = okay_industrial_education
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_ruler_flag = good_industrial_education
+			}
+			add_good_industrial_education = yes
+		}
+		else_if = {
+			limit = {
+				has_ruler_flag = best_industrial_education
+			}
+			add_best_industrial_education = yes
+		}
+		else_if = {
+			limit = {
 				has_ruler_flag = poor_diplomacy_education
 			}
 			add_ruler_modifier = {
@@ -1495,6 +1770,36 @@ country_event = {
 				has_ruler_flag = best_trade_education
 			}
 			add_best_trade_education = yes
+		}
+		else_if = {
+			limit = {
+				has_ruler_flag = poor_colonial_education
+			}
+			add_ruler_modifier = {
+				name = poor_colonial_education
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_ruler_flag = okay_colonial_education
+			}
+			add_ruler_modifier = {
+				name = okay_colonial_education
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_ruler_flag = good_colonial_education
+			}
+			add_good_colonial_education = yes
+		}
+		else_if = {
+			limit = {
+				has_ruler_flag = best_colonial_education
+			}
+			add_best_colonial_education = yes
 		}
 		else_if = {
 			limit = {
@@ -1586,6 +1891,36 @@ country_event = {
 			}
 			add_best_logistics_education = yes
 		}
+		else_if = {
+			limit = {
+				has_ruler_flag = poor_modern_army_education
+			}
+			add_ruler_modifier = {
+				name = poor_modern_army_education
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_ruler_flag = okay_modern_army_education
+			}
+			add_ruler_modifier = {
+				name = okay_modern_army_education
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_ruler_flag = good_modern_army_education
+			}
+			add_good_modern_army_education = yes
+		}
+		else_if = {
+			limit = {
+				has_ruler_flag = best_modern_army_education
+			}
+			add_best_modern_army_education = yes
+		}
 		clr_ruler_flag = poor_clerical_education
 		clr_ruler_flag = okay_clerical_education
 		clr_ruler_flag = good_clerical_education
@@ -1598,6 +1933,10 @@ country_event = {
 		clr_ruler_flag = okay_scholastic_education
 		clr_ruler_flag = good_scholastic_education
 		clr_ruler_flag = best_scholastic_education
+		clr_ruler_flag = poor_industrial_education
+		clr_ruler_flag = okay_industrial_education
+		clr_ruler_flag = good_industrial_education
+		clr_ruler_flag = best_industrial_education
 		clr_ruler_flag = poor_diplomacy_education
 		clr_ruler_flag = okay_diplomacy_education
 		clr_ruler_flag = good_diplomacy_education
@@ -1610,6 +1949,10 @@ country_event = {
 		clr_ruler_flag = okay_trade_education
 		clr_ruler_flag = good_trade_education
 		clr_ruler_flag = best_trade_education
+		clr_ruler_flag = poor_colonial_education
+		clr_ruler_flag = okay_colonial_education
+		clr_ruler_flag = good_colonial_education
+		clr_ruler_flag = best_colonial_education
 		clr_ruler_flag = poor_martial_education
 		clr_ruler_flag = okay_martial_education
 		clr_ruler_flag = good_martial_education
@@ -1622,5 +1965,9 @@ country_event = {
 		clr_ruler_flag = okay_logistics_education
 		clr_ruler_flag = good_logistics_education
 		clr_ruler_flag = best_logistics_education
+		clr_ruler_flag = poor_modern_army_education
+		clr_ruler_flag = okay_modern_army_education
+		clr_ruler_flag = good_modern_army_education
+		clr_ruler_flag = best_modern_army_education
 	}
 }
