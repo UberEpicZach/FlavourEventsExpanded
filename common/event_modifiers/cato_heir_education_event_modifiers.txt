@@ -242,22 +242,22 @@ best_logistics_education = {
 }
 poor_modern_army_education = {
 	infantry_power = 0.025
-	drill_gain = 0.25
+	drill_gain_modifier = 0.25
 	yearly_army_professionalism = 0.00125
 }
 okay_modern_army_education = {
 	infantry_power = 0.05
-	drill_gain = 0.5
+	drill_gain_modifier = 0.5
 	yearly_army_professionalism = 0.0025
 }
 good_modern_army_education = {
 	infantry_power = 0.075
-	drill_gain = 0.75
+	drill_gain_modifier = 0.75
 	yearly_army_professionalism = 0.00375
 }
 best_modern_army_education = {
 	infantry_power = 0.1
-	drill_gain = 1
+	drill_gain_modifier = 1
 	yearly_army_professionalism = 0.005
 }
 fe_education_clerical_upset_local = {
