@@ -2271,7 +2271,7 @@ country_event = {
 		add_education_progress_small = yes
 		event_target:different_religion_province = {
 			add_province_modifier = {
-				name = fe_education_religious_inspired_local
+				name = fe_education_clerical_inspired_local
 				duration = 3650
 			}
 		}
@@ -2311,7 +2311,7 @@ country_event = {
 		subtract_education_progress_tiny = yes
 		event_target:different_religion_province = {
 			add_province_modifier = {
-				name = fe_education_religious_upset_local
+				name = fe_education_clerical_upset_local
 				duration = 3650
 			}
 		}
