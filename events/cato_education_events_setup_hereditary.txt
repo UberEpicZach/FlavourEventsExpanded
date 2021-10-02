@@ -778,7 +778,7 @@ country_event = {
 			AND = {
 				had_heir_flag = {
 					flag = heir_started_education
-					days = 1###2920 8 years
+					days = 2920###2920 8 years
 				}
 				heir_not_busy = yes
 			}
