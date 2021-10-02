@@ -306,6 +306,19 @@ country_event = {
 		country_event = { id = cato_education_events_education_progress.1017 }
 		ai_chance = { factor = 1 }
 	}
+	option = { ### Heir interacts with religious minority
+		name = cato_education_events_education_progress.1018.title
+		trigger = {
+			has_heir_flag = clerical_education
+			any_owned_province = {
+				NOT = {
+					religion = ROOT
+				}
+			}
+		}
+		country_event = { id = cato_education_events_education_progress.1018 }
+		ai_chance = { factor = 1 }
+	}
 	option = {
 		name = cato_education_events_education_progress.2000.title
 		trigger = {
@@ -2082,7 +2095,7 @@ country_event = {
 	}
 	
 	option = {
-		name = cato_education_events_education_progress.10011.a ###Allow
+		name = cato_education_events_education_progress.1011.a ###Allow
 		country_event = {
 			id = cato_education_events_education_progress.1012
 		}
@@ -2258,7 +2271,7 @@ country_event = {
 		add_education_progress_small = yes
 		event_target:different_religion_province = {
 			add_province_modifier = {
-				name = fe_education_religious_upset
+				name = fe_education_religious_inspired_local
 				duration = 3650
 			}
 		}
@@ -2298,7 +2311,7 @@ country_event = {
 		subtract_education_progress_tiny = yes
 		event_target:different_religion_province = {
 			add_province_modifier = {
-				name = fe_education_religious_upset
+				name = fe_education_religious_upset_local
 				duration = 3650
 			}
 		}
@@ -2759,8 +2772,48 @@ country_event = {
 country_event = {
 	id = cato_education_events_education_progress.1019 ###Heir Interacts with Religious Minority End
 	title = cato_education_events_education_progress.1019.title
-	desc = cato_education_events_education_progress.1019.desc
-	picture = ECONOMY_eventPicture
+	desc = {
+		trigger = {
+			has_heir_flag = heir_appease_heretic
+		}
+		desc = cato_education_events_education_progress.1019.desc_appease_heretic
+	}
+	desc = {
+		trigger = {
+			has_heir_flag = heir_appease_heathen
+		}
+		desc = cato_education_events_education_progress.1019.desc_appease_heathen
+	}
+	desc = {
+		trigger = {
+			has_heir_flag = heir_offend_heathen
+		}
+		desc = cato_education_events_education_progress.1019.desc_offend_heathen
+	}
+	desc = {
+		trigger = {
+			has_heir_flag = heir_offend_heretic
+		}
+		desc = cato_education_events_education_progress.1019.desc_offend_heretic
+	}
+	picture = {
+		trigger= {
+			OR = {
+				has_heir_flag = heir_appease_heretic
+				has_heir_flag = heir_appease_heathen
+			}
+		}
+		picture = RELIGION_eventPicture
+	}
+	picture = {
+		trigger= {
+			OR = {
+				has_heir_flag = heir_offend_heathen
+				has_heir_flag = heir_offend_heretic
+			}
+		}
+		picture = RELIGIOUS_TURMOIL_eventPicture
+	}
 	
 	is_triggered_only = yes
 	trigger = {
@@ -2804,7 +2857,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.1019.c
+		name = cato_education_events_education_progress.1019.a
 		trigger = {
 			has_heir_flag = heir_appease_heretic
 		}
@@ -2818,7 +2871,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.1019.d
+		name = cato_education_events_education_progress.1019.b
 		trigger = {
 			has_heir_flag = heir_offend_heretic
 		}
@@ -2931,113 +2984,113 @@ country_event = {
 		}
 	}
 }
-country_event = {
-	id = cato_education_events_education_progress.2003 ###Heir requests to assist the tax collectors
-	title = cato_education_events_education_progress.2003.title
-	desc = cato_education_events_education_progress.2003.desc
-	picture = ECONOMY_eventPicture
-	
-	is_triggered_only = yes
-	
-	trigger = {
-		has_heir_flag = administrative_education
-		is_lesser_in_union = no
-		heir_can_recieve_education_events = yes
-	}
-	
-	
-	option = {
-		name = cato_education_events_education_progress.2002.a
-		hidden_effect = {
-			
-		}
-		ai_chance = {
-			factor = 1
-		}
-	}
-	option = {
-		name = cato_education_events_education_progress.2002.a
-		hidden_effect = {
-			
-		}
-		ai_chance = {
-			factor = 1
-		}
-	}
-}
-country_event = {
-	id = cato_education_events_education_progress.2004 ###Heir requests to assist the tax collectors(Choose Outcome)
-	title = cato_education_events_education_progress.2004.title
-	desc = cato_education_events_education_progress.2004.desc
-	picture = ECONOMY_eventPicture
-	
-	is_triggered_only = yes
-	hidden = yes
-	immediate = {
-	}
-	
-	
-	option = {
-		name = cato_education_events_education_progress.1012.a
-		set_heir_flag = he_critical_success
-		country_event = {
-			id = cato_education_events_education_progress.1013
-		}
-		ai_chance = {
-			factor = 5
-		}
-	}
-	option = {
-		name = cato_education_events_education_progress.1012.a
-		set_heir_flag = he_success
-		country_event = {
-			id = cato_education_events_education_progress.1013
-		}
-		ai_chance = {
-			factor = 60
-		}
-	}
-	option = {
-		name = cato_education_events_education_progress.1012.a
-		set_heir_flag = he_neutral_1
-		country_event = {
-			id = cato_education_events_education_progress.1013
-		}
-		ai_chance = {
-			factor = 30
-		}
-	}
-	option = {
-		name = cato_education_events_education_progress.1012.a
-		set_heir_flag = he_neutral_2
-		country_event = {
-			id = cato_education_events_education_progress.1013
-		}
-		ai_chance = {
-			factor = 30
-		}
-	}
-	option = {
-		name = cato_education_events_education_progress.1012.a
-		set_heir_flag = he_fail
-		country_event = {
-			id = cato_education_events_education_progress.1013
-		}
-		ai_chance = {
-			factor = 5
-		}
-	}
-	option = {
-		name = cato_education_events_education_progress.1012.a
-		set_heir_flag = he_critical_fail
-		country_event = {
-			id = cato_education_events_education_progress.1013
-		}
-		ai_chance = {
-			factor = 300
-		}
-	}
-}
+###country_event = {
+###	id = cato_education_events_education_progress.2003 ###Heir requests to assist the tax collectors
+###	title = cato_education_events_education_progress.2003.title
+###	desc = cato_education_events_education_progress.2003.desc
+###	picture = ECONOMY_eventPicture
+###	
+###	is_triggered_only = yes
+###	
+###	trigger = {
+###		has_heir_flag = administrative_education
+###		is_lesser_in_union = no
+###		heir_can_recieve_education_events = yes
+###	}
+###	
+###	
+###	option = {
+###		name = cato_education_events_education_progress.2003.a
+###		hidden_effect = {
+###			
+###		}
+###		ai_chance = {
+###			factor = 1
+###		}
+###	}
+###	option = {
+###		name = cato_education_events_education_progress.2003.b
+###		hidden_effect = {
+###			
+###		}
+###		ai_chance = {
+###			factor = 1
+###		}
+###	}
+###}
+###country_event = {
+###	id = cato_education_events_education_progress.2004 ###Heir requests to assist the tax collectors(Choose Outcome)
+###	title = cato_education_events_education_progress.2004.title
+###	desc = cato_education_events_education_progress.2004.desc
+###	picture = ECONOMY_eventPicture
+###	
+###	is_triggered_only = yes
+###	hidden = yes
+###	immediate = {
+###	}
+###	
+###	
+###	option = {
+###		name = cato_education_events_education_progress.1012.a
+###		set_heir_flag = he_critical_success
+###		country_event = {
+###			id = cato_education_events_education_progress.1013
+###		}
+###		ai_chance = {
+###			factor = 5
+###		}
+###	}
+###	option = {
+###		name = cato_education_events_education_progress.1012.a
+###		set_heir_flag = he_success
+###		country_event = {
+###			id = cato_education_events_education_progress.1013
+###		}
+###		ai_chance = {
+###			factor = 60
+###		}
+###	}
+###	option = {
+###		name = cato_education_events_education_progress.1012.a
+###		set_heir_flag = he_neutral_1
+###		country_event = {
+###			id = cato_education_events_education_progress.1013
+###		}
+###		ai_chance = {
+###			factor = 30
+###		}
+###	}
+###	option = {
+###		name = cato_education_events_education_progress.1012.a
+###		set_heir_flag = he_neutral_2
+###		country_event = {
+###			id = cato_education_events_education_progress.1013
+###		}
+###		ai_chance = {
+###			factor = 30
+###		}
+###	}
+###	option = {
+###		name = cato_education_events_education_progress.1012.a
+###		set_heir_flag = he_fail
+###		country_event = {
+###			id = cato_education_events_education_progress.1013
+###		}
+###		ai_chance = {
+###			factor = 5
+###		}
+###	}
+###	option = {
+###		name = cato_education_events_education_progress.1012.a
+###		set_heir_flag = he_critical_fail
+###		country_event = {
+###			id = cato_education_events_education_progress.1013
+###		}
+###		ai_chance = {
+###			factor = 5
+###		}
+###	}
+###}
 ############
 ### Improvements for Scholastic Education
 ############
