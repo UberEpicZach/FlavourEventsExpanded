@@ -140,6 +140,10 @@ province_event = {
 				days = 730
 			}
 		}
+		add_province_modifier = {
+			name = fee_trading_fair
+			duration = 730
+		}
 	}
 }
 
@@ -440,7 +444,7 @@ province_event = {
 					type = trader
 					skill = 2
 					cost_multiplier = 0.75
-					culture = event_target:target_province
+					culture = ROOT
 				}
 			}
 		}
