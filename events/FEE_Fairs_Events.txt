@@ -36,9 +36,12 @@ country_event = {
 	hidden = yes
 	trigger = {
 		has_global_flag = fee_trading_fairs_enabled
-		had_country_flag = {
-			flag = fee_trading_fair_started
-			days = 3650
+		OR = {
+			had_country_flag = {
+				flag = fee_trading_fair_started
+				days = 3650
+			}
+			NOT = { has_country_flag = fee_trading_fair_started }
 		}
 		any_owned_province = {
 			OR = {
