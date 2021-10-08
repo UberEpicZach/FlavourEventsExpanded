@@ -2,6 +2,7 @@
  FEE_Fairs_Events.1.T: "The Trading Fairs"
  FEE_Fairs_Events.1.D: "In the Middle Ages, many fairs were transformed into temporary markets of special importance for international and long-distance trade, as many traders made journeys of up to days to reach places where they were sure they could do business. The fairs were usually connected to religious celebrations, such as the day of the patron saint of the locality. On these occasions, the rulers granted exemption from duties and taxes thus making the prices of the goods sold cheaper. The privilege of the Fair, in Latin nundinas, was granted or confirmed to a town or city by means of a special royal diploma or of the reigning feudal lord written on parchment and was fitted with a leaden seal inside which the heraldic coat of arms of who he had released him. The diploma describes the motivation, the place and date where the fair was held each year, the duration (generally eight consecutive days) and the relative exemptions (taxes, duties, etc.). This privilege stimulated the influx of buyers from outside, attracted by the possibility of saving and concluding deals in a more convenient way. Important was the function of the \"mastromercato\" or \"master of the fair\" which, in addition to regulating the exchange of goods, had control of the criminal jurisdiction of the city limited to the period of the fair. Modern trade fairs have their roots in European business fairs of the late Middle Ages in the period of development of mercantile capitalism: an example is the Champagne fairs, active since the 12th century. "
  FEE_Fairs_Events.1.OPT1: "So many cities will host them!"
+ FEE_Fairs_Events.1.OPT2: "I want to save Game Performance"
 
  FEE_Fairs_Events.2.T: "Hidden Event to Select the Trading Fair"
  FEE_Fairs_Events.2.D: "You should not read this event, so if you do something went wrong, although it might have been just enabled only for debugging reason still, please, report it to Zach of the Flavours and Events Expanded Team. \n\nThe sole reason of existance of this event is choosing which (owned) province will host the next trading fair."
@@ -30,6 +31,19 @@
  FEE_Fairs_Events.5001.OPT1: "The fire is magnificent!"
  FEE_Fairs_Events.5001.OPT2: "Stop the fire before it burns the city!"
 
+ FEE_Fairs_Events.5002.T: "Furtune Teller"
+ FEE_Fairs_Events.5002.D: "My dear lord, this must be a dream, a furtune teller is here! She wants to look at our lines and see what the future holds for us, we should surely ask for such knowledge and see where it's going to guide us!"
+ FEE_Fairs_Events.5002.OPT1: "Let's see what awaits in the future!"
+ FEE_Fairs_Events.5002.OPT2: "Who would ever believe in this?"
+
+ FEE_Fairs_Events.5003.T: "Luck?"
+ FEE_Fairs_Events.5003.D: "Marvellous news my liege, what she told was true and we have finally been able to unleash our pure strength and luck, no one dares to block us now!"
+ FEE_Fairs_Events.5003.OPT1: "Our future holds against no one"
+
+ FEE_Fairs_Events.5004.T: "Misfortune?"
+ FEE_Fairs_Events.5004.D: "All the old women in the fair watch us as if it was our fault what that damned which saw in our hands? We should just go and pray for the Lord is the true decider of this world, not some destiny."
+ FEE_Fairs_Events.5004.OPT1: "Black clouds lie ahead!"
+
  FEE_Fairs_Events.6000.T: "Famous Artist"
  FEE_Fairs_Events.6000.D: "A famous artist has reached the fair seeing trying to show is work around and gather even more fame to be accepted everywhere. At first glance his work seems interesting enough to think we might want to hire him, should we my liege?"
  FEE_Fairs_Events.6000.OPT1: "We should just celebrate his work and found it!"
@@ -40,8 +54,17 @@
  #Event Modifiers
  fee_trading_fair: "Trading Fair!"
  desc_fee_trading_fair: "The current level of the trading fair is: §G[Root.feeTradingFairLevel.GetValue]"
+ fee_luck_1: "Luck"
+ fee_luck_2: "Luck"
+ fee_luck_3: "Luck"
+ fee_luck_4: "Luck"
+ fee_misfortune_1: "Misfortune"
+ fee_misfortune_2: "Misfortune"
+ fee_misfortune_3: "Misfortune"
+ fee_misfortune_4: "Misfortune"
  #Opinion Modifiers
 
  #Tooltips
- FEE_FAIRS_STARTING_TT: "Up to once every §M5 Years§! a §GTrading Fair§! will be hosted in an owned province with either a §YCenter of Trade§! or §Y10§! Base Production and §YTrade§! Building. \nA fair can return to the same province only once every 10 years."
+ FEE_FAIRS_STARTING_TT: "Up to once every §M10 Years§! a §GTrading Fair§! will be hosted in an owned province with either a §YCenter of Trade§! or §Y10§! Base Production and §YTrade§! Building. \nA fair can return to the same province only once every 15 years."
+ FEE_FAIRS_DISABLED_TT: "You will disable the §GTrading Fairs§! thus saving some performance in the game, but losing a ton of flavour."
  FEE_FAIRS_PROVINCE_TT: "The Trading Caravans and Fairs have chose [Root.GetName] to host the next fair!"
