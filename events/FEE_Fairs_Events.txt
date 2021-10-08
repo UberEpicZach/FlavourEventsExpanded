@@ -85,6 +85,10 @@ country_event = {
 					}
 				}
 				set_province_flag = fee_province_trading_fair_accepted
+				province_event = {
+					id = FEE_Fairs_Events.3
+					days = 90
+				}
 			}
 			clr_country_flag = fee_trading_fair_started
 		}
@@ -108,13 +112,7 @@ province_event = {
 
 	goto = ROOT
 	
-	trigger = {
-		has_province_flag = fee_province_trading_fair_accepted
-	}
-
-	mean_time_to_happen = {
-		months = 3
-	}
+	is_triggered_only = yes
 
 	option = {
 		name = FEE_Fairs_Events.3.OPT1
@@ -342,6 +340,71 @@ province_event = {
 				change_variable = {
 					which = feeTradingFairLevel
 					value = 3
+				}
+			}
+			if = {
+				limit = {
+					owner = { is_trade_league_leader = yes }
+				}
+				change_variable = {
+					which = feeTradingFairLevel
+					value = 10
+				}
+			}
+			if = {
+				limit = {
+					owner = {
+						num_of_owned_provinces_with = {
+							value = 3
+							province_has_center_of_trade_of_level = 3
+						}
+					}
+				}
+				change_variable = {
+					which = feeTradingFairLevel
+					value = 8
+				}
+			}
+			else_if = {
+				limit = {
+					owner = {
+						num_of_owned_provinces_with = {
+							value = 3
+							province_has_center_of_trade_of_level = 2
+						}
+					}
+				}
+				change_variable = {
+					which = feeTradingFairLevel
+					value = 7
+				}
+			}
+			else_if = {
+				limit = {
+					owner = {
+						num_of_owned_provinces_with = {
+							value = 2
+							province_has_center_of_trade_of_level = 3
+						}
+					}
+				}
+				change_variable = {
+					which = feeTradingFairLevel
+					value = 8
+				}
+			}
+			else_if = {
+				limit = {
+					owner = {
+						num_of_owned_provinces_with = {
+							value = 2
+							province_has_center_of_trade_of_level = 2
+						}
+					}
+				}
+				change_variable = {
+					which = feeTradingFairLevel
+					value = 5
 				}
 			}
 		}
