@@ -11,23 +11,35 @@
  FEE_Fairs_Events.3.D: "Finally a trading fair has reached this wonderful city and will stay here for 2 years attracting even more people both to trade and stay here!"
  FEE_Fairs_Events.3.OPT1: "Welcome them all!"
 
+ FEE_Fairs_Events.3000.T: "Invitation to the trading Fair"
+ FEE_Fairs_Events.3000.D: "Once the Trading Fair has started many have suggested that you, my liege should go and take part of the fair to both show your interest and be seen by the commoners who would revere you, what should you do my lord?"
+ FEE_Fairs_Events.3000.OPT1: "I will go"
+ FEE_Fairs_Events.3000.OPT2: "I have sadly more important things to attend"
+
  FEE_Fairs_Events.4000.T: "Fair Ended in [Root.GetName]"
  FEE_Fairs_Events.4000.D: "Sadly everything must come to an end, and while we loved the time spent with them the current trading fair must travel to another city to host there another fair, until our next time!"
  FEE_Fairs_Events.4000.OPT1: "Let us see the report"
 
- FEE_Fairs_Events.5000.T: "Gypsy Caravan"
- FEE_Fairs_Events.5000.D: ""
- FEE_Fairs_Events.5000.OPT1: ""
+ FEE_Fairs_Events.5000.T: "Nomad Caravan"
+ FEE_Fairs_Events.5000.D: "A caravan of nomads has entered the fair bringing many new people with fire-eaters knifethrowers, jugglers and what else, their singing can be heard in all the squares of the cities, and while some don't approve of them, it is clear how some of them would benefit the entire fair and what not, the city itself!"
+ FEE_Fairs_Events.5000.OPT1: "Welcome them, the more the merrier"
+ FEE_Fairs_Events.5000.OPT2: "We don't want them"
 
- FEE_Fairs_Events.6.T: "Famous Artist"
- FEE_Fairs_Events.6.D: ""
- FEE_Fairs_Events.6.OPT1: ""
+ FEE_Fairs_Events.5001.T: "Fire Eater"
+ FEE_Fairs_Events.5001.D: "Even as they spoke there came a blare of trumpets. Then there was a crash and a flash and smoke. The waters of the Deeping-stream poured out hissing and foaming: they were choked no longer, a gaping was blasted in the wall. A host of dark shapes poured in."
+ FEE_Fairs_Events.5001.OPT1: "The fire is magnificent!"
+ FEE_Fairs_Events.5001.OPT2: "Stop the fire before it burns the city!"
+
+ FEE_Fairs_Events.6000.T: "Famous Artist"
+ FEE_Fairs_Events.6000.D: "A famous artist has reached the fair seeing trying to show is work around and gather even more fame to be accepted everywhere. At first glance his work seems interesting enough to think we might want to hire him, should we my liege?"
+ FEE_Fairs_Events.6000.OPT1: "We should just celebrate his work and found it!"
+ FEE_Fairs_Events.6000.OPT2: "We should bribe it into our court"
 
  #Estate Modifeirs
 
  #Event Modifiers
  fee_trading_fair: "Trading Fair!"
- desc_fee_trading_fair: "§G[Root.feeTradingFairLevel.GetValue]"
+ desc_fee_trading_fair: "The current level of the trading fair is: §G[Root.feeTradingFairLevel.GetValue]"
  #Opinion Modifiers
 
  #Tooltips

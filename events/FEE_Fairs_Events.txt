@@ -69,7 +69,13 @@ country_event = {
 		hidden_effect = {
 			random_owned_province = {
 				limit = {
-					NOT = { has_province_flag = fee_province_trading_fair_accepted }
+					OR = {
+						NOT = { has_province_flag = fee_province_trading_fair_accepted }
+						had_province_flag = {
+							flag = fee_province_trading_fair_started
+							days = 3650
+						}
+					}
 					OR = {
 						province_has_center_of_trade_of_level = 1
 						AND = {
@@ -80,26 +86,12 @@ country_event = {
 				}
 				set_province_flag = fee_province_trading_fair_accepted
 			}
+			clr_country_flag = fee_trading_fair_started
 		}
-		clr_country_flag = fee_trading_fair_started
 	}
 
 	option = {
 		name = FEE_Fairs_Events.2.OPT1
-
-		random_owned_province = {
-			limit = {
-				NOT = { has_province_flag = fee_province_trading_fair_accepted }
-				OR = {
-					province_has_center_of_trade_of_level = 1
-					AND = {
-						base_production = 10
-						has_trade_building_trigger = yes
-					}
-				}
-			}
-			set_province_flag = fee_province_trading_fair_accepted
-		}
 	}
 	
 	after = {
@@ -118,7 +110,6 @@ province_event = {
 	
 	trigger = {
 		has_province_flag = fee_province_trading_fair_accepted
-		NOT = { has_province_flag = fee_province_trading_fair_started }
 	}
 
 	mean_time_to_happen = {
@@ -138,14 +129,75 @@ province_event = {
 				which = feeTradingFairLevel
 				value = 0
 			}
-			province_event = {
-				id = FEE_Fairs_Events.4000
-				days = 730
-			}
 		}
 		add_province_modifier = {
 			name = fee_trading_fair
 			duration = 730
+		}
+		province_event = {
+			id = FEE_Fairs_Events.4000
+			days = 730
+		}
+	}
+}
+
+#Ruler goes to the trading fair
+province_event = {
+	id = FEE_Fairs_Events.3000
+	title = FEE_Fairs_Events.3000.T
+	desc = FEE_Fairs_Events.3000.D
+	picture = CARAVAN_EVENT_Picture
+
+	goto = ROOT
+	
+	trigger = {
+		has_province_flag = fee_province_trading_fair_started
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	option = {
+		name = FEE_Fairs_Events.3000.OPT1
+		ai_chance = {
+			factor = 50
+		}
+		
+		owner = {
+			add_prestige = 10
+			add_stability = 1
+		}
+		set_province_flag = fee_province_trading_fair_ruler_goes_to_fair
+		change_variable = {
+			which = feeTradingFairLevel
+			value = 5
+		}
+	}
+
+	option = {
+		name = FEE_Fairs_Events.3000.OPT1
+		ai_chance = {
+			factor = 50
+		}
+		
+		owner = {
+			if = {
+				limit = {
+					government = republic
+				}
+				add_republican_tradition = 5
+			}
+			else = {
+				add_legitimacy_equivalent_fee = { value = 5 }
+			}
+			add_adm_power = 25
+			add_dip_power = 25
+			add_mil_power = 25
+		}
+		change_variable = {
+			which = feeTradingFairLevel
+			value = -5
 		}
 	}
 }
@@ -214,7 +266,7 @@ province_event = {
 					value = 10
 				}
 			}
-			if = {
+			else_if = {
 				limit = {
 					owner = {
 						NOT = { DIP = 1 }
@@ -236,7 +288,7 @@ province_event = {
 					value = 15
 				}
 			}
-			if = {
+			else_if = {
 				limit = {
 					owner = {
 						NOT = { monthly_dip = 6 }
@@ -256,7 +308,7 @@ province_event = {
 					value = 5
 				}
 			}
-			if = {
+			else_if = {
 				limit = {
 					devastation = 25
 				}
@@ -375,12 +427,12 @@ province_event = {
 					owner = { DIP = 1 }
 				}
 				owner = {
-					add_dip_power = -50
+					add_dip_power = -25
 				}
 			}
 			else = {
 				owner = {
-					add_dip_power = -75
+					add_dip_power = -50
 				}
 			}
 		}
@@ -398,12 +450,12 @@ province_event = {
 					owner = { DIP = 6 }
 				}
 				owner = {
-					add_dip_power = 75
+					add_dip_power = 50
 				}
 			}
 			else = {
 				owner = {
-					add_dip_power = 50
+					add_dip_power = 25
 				}
 			}
 		}
@@ -464,6 +516,14 @@ province_event = {
 
 	after = {
 		hidden_effect = {
+			clr_province_flag = fee_province_trading_fair_ruler_goes_to_fair
+			clr_province_flag = fee_province_trading_fair_famous_artist_accepted
+			clr_province_flag = fee_province_trading_fair_famous_artist_refused
+
+			clr_province_flag = fee_province_trading_fair_nomad_accepted
+			clr_province_flag = fee_province_trading_fair_nomad_repulsed
+			clr_province_flag = fee_province_trading_fair_nomad_fire
+			
 			set_variable = {
 				which = feeTradingFairLevel
 				value = 0
@@ -472,7 +532,7 @@ province_event = {
 	}
 }
 
-#Gypsy Caravan
+#Nomad Caravan
 province_event = {
 	id = FEE_Fairs_Events.5000
 	title = FEE_Fairs_Events.5000.T
@@ -480,9 +540,9 @@ province_event = {
 	picture = CARAVAN_EVENT_Picture
 
 	trigger = {
-		always = no
-		has_province_flag = fee_province_trading_fair_accepted
-		NOT = { has_province_flag = fee_province_trading_fair_gypsies }
+		has_province_flag = fee_province_trading_fair_started
+		NOT = { has_province_flag = fee_province_trading_fair_nomad_accepted }
+		NOT = { has_province_flag = fee_province_trading_fair_nomad_repulsed }
 	}
 
 	mean_time_to_happen = {
@@ -491,12 +551,34 @@ province_event = {
 
 	option = {
 		name = FEE_Fairs_Events.5000.OPT1
+		ai_chance = {
+			factor = 50
+		}
 
-		set_province_flag = fee_province_trading_fair_gypsies
+		owner = { add_dip_power = 25 }
+		set_province_flag = fee_province_trading_fair_nomad_accepted
+		change_variable = {
+			which = feeTradingFairLevel
+			value = 5
+		}
+	}
+
+	option = {
+		name = FEE_Fairs_Events.5000.OPT2
+		ai_chance = {
+			factor = 50
+		}
+
+		owner = { add_mil_power = 25 }
+		set_province_flag = fee_province_trading_fair_nomad_repulsed
+		change_variable = {
+			which = feeTradingFairLevel
+			value = -5
+		}
 	}
 }
 
-#Famous Artist
+#Fire Eater
 province_event = {
 	id = FEE_Fairs_Events.5001
 	title = FEE_Fairs_Events.5001.T
@@ -504,9 +586,61 @@ province_event = {
 	picture = CARAVAN_EVENT_Picture
 
 	trigger = {
-		always = no
-		has_province_flag = fee_province_trading_fair_accepted
-		NOT = { has_province_flag = fee_province_trading_fair_famous_artist }
+		has_province_flag = fee_province_trading_fair_started
+		has_province_flag = fee_province_trading_fair_nomad_accepted
+		NOT = { has_province_flag = fee_province_trading_fair_nomad_fire }
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	immediate = {
+		hidden_effect = { set_province_flag = fee_province_trading_fair_nomad_fire }
+	}
+
+	option = {
+		name = FEE_Fairs_Events.5001.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		owner = { add_prestige = 5 }
+		change_variable = {
+			which = feeTradingFairLevel
+			value = 3
+		}
+		random_list = {
+			33 = { add_devastation = 3 }
+			67 = {  }
+		}
+	}
+
+	option = {
+		name = FEE_Fairs_Events.5001.OPT2
+		ai_chance = {
+			factor = 50
+		}
+
+		owner = { add_mil_power = -25 }
+		change_variable = {
+			which = feeTradingFairLevel
+			value = -3
+		}
+	}
+}
+
+#Famous Artist
+province_event = {
+	id = FEE_Fairs_Events.6000
+	title = FEE_Fairs_Events.6000.T
+	desc = FEE_Fairs_Events.6000.D
+	picture = CARAVAN_EVENT_Picture
+
+	trigger = {
+		has_province_flag = fee_province_trading_fair_started
+		NOT = { has_province_flag = fee_province_trading_fair_famous_artist_accepted }
+		NOT = { has_province_flag = fee_province_trading_fair_famous_artist_refused }
 	}
 
 	mean_time_to_happen = {
@@ -514,9 +648,39 @@ province_event = {
 	}
 
 	option = {
-		name = FEE_Fairs_Events.5001.OPT1
+		name = FEE_Fairs_Events.6000.OPT1
 
-		set_province_flag = fee_province_trading_fair_famous_artist
+		set_province_flag = fee_province_trading_fair_famous_artist_accepted
+		owner = { add_years_of_income = 0.0145 } #half month of income
+		owner = { 
+			add_prestige = 5
+			random_list = {
+				50 = { change_innovativeness = 3 }
+				50 = { }
+			}
+		}
+		change_variable = {
+			which = feeTradingFairLevel
+			value = 7
+		}
+	}
+
+	option = {
+		name = FEE_Fairs_Events.6000.OPT2
+
+		set_province_flag = fee_province_trading_fair_famous_artist_refused
+		owner = { add_years_of_income = -0.0145 } #half month of income
+		owner = {
+			define_advisor = {
+				type = artist
+				skill = 2
+				cost_multiplier = 0.50
+			}
+		}
+		change_variable = {
+			which = feeTradingFairLevel
+			value = -8
+		}
 	}
 }
 

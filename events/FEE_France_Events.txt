@@ -649,7 +649,7 @@ country_event = {
 		kill_ruler = yes
 		add_stability = -1
 		add_legitimacy_equivalent_fee = {
-			amount = -20
+			value = -20
 		}
 		overlord = {
 			add_opinion = {
