@@ -35,6 +35,7 @@ country_event = {
 
 	hidden = yes
 	trigger = {
+		has_global_flag = fee_trading_fairs_enabled
 		had_country_flag = {
 			flag = fee_trading_fair_started
 			days = 3650
@@ -130,9 +131,6 @@ province_event = {
 		custom_tooltip = FEE_FAIRS_PROVINCE_TT
 		hidden_effect = {
 			set_province_flag = fee_province_trading_fair_started
-			owner = {
-				set_country_flag = fee_trading_fair_started
-			}
 			set_variable = {
 				which = feeTradingFairLevel
 				value = 0
