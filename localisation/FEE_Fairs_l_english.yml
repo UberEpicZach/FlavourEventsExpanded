@@ -40,9 +40,46 @@
  FEE_Fairs_Events.5003.D: "Marvellous news my liege, what she told was true and we have finally been able to unleash our pure strength and luck, no one dares to block us now!"
  FEE_Fairs_Events.5003.OPT1: "Our future holds against no one"
 
- FEE_Fairs_Events.5004.T: "Misfortune?"
- FEE_Fairs_Events.5004.D: "All the old women in the fair watch us as if it was our fault what that damned which saw in our hands? We should just go and pray for the Lord is the true decider of this world, not some destiny."
- FEE_Fairs_Events.5004.OPT1: "Black clouds lie ahead!"
+ FEE_Fairs_Events.5004.T: "Almighty Protection"
+ FEE_Fairs_Events.5004.D: "Ehy Angel, can you tell me, will you lead us to the place? Full of heat, in the fire, for we only brought disgrace? I am the one. If they only knew!"
+ FEE_Fairs_Events.5004.OPT1: "Our future holds against no one"
+
+ FEE_Fairs_Events.5005.T: "Solemn Hymn"
+ FEE_Fairs_Events.5005.D: "Ehy Angel, can you tell me, will you lead us to the place? Full of heat, in the fire, for we only brought disgrace? I am the one. If they only knew!"
+ FEE_Fairs_Events.5005.OPT1: "Our future holds against no one"
+
+ FEE_Fairs_Events.5006.T: "Angelic Blessing"
+ FEE_Fairs_Events.5006.D: "Ehy Angel, can you tell me, will you lead us to the place? Full of heat, in the fire, for we only brought disgrace? I am the one. If they only knew!"
+ FEE_Fairs_Events.5006.OPT1: "Our future holds against no one"
+
+ FEE_Fairs_Events.5007.T: "Kiss of Luck"
+ FEE_Fairs_Events.5007.D: "Ehy Angel, can you tell me, will you lead us to the place? Full of heat, in the fire, for we only brought disgrace? I am the one. If they only knew!"
+ FEE_Fairs_Events.5007.OPT1: "Our future holds against no one"
+
+ FEE_Fairs_Events.5010.T: "Misfortune?"
+ FEE_Fairs_Events.5010.D: "All the old women in the fair watch us as if it was our fault what that damned which saw in our hands? We should just go and pray for the Lord is the true decider of this world, not some destiny."
+ FEE_Fairs_Events.5010.OPT1: "Black clouds lie ahead!"
+
+ FEE_Fairs_Events.5011.T: "Ruinous Powers"
+ FEE_Fairs_Events.5011.D: "May she be cursed, she who damned my pride! How will I forgive her who wouldn't forgive? Me who just valued the power. How should I live in peace with the one? Outshining me and then have me devoured"
+ FEE_Fairs_Events.5011.OPT1: "A small Misfortune"
+
+ FEE_Fairs_Events.5012.T: "Demonic Embrace"
+ FEE_Fairs_Events.5012.D: "May she be cursed, she who damned my pride! How will I forgive her who wouldn't forgive? Me who just valued the power. How should I live in peace with the one? Outshining me and then have me devoured"
+ FEE_Fairs_Events.5012.OPT1: "This is something to be considered"
+
+ FEE_Fairs_Events.5013.T: "Ancient Cursing"
+ FEE_Fairs_Events.5013.D: "May she be cursed, she who damned my pride! How will I forgive her who wouldn't forgive? Me who just valued the power. How should I live in peace with the one? Outshining me and then have me devoured"
+ FEE_Fairs_Events.5013.OPT1: "Our country is going to be ruined"
+
+ FEE_Fairs_Events.5014.T: "Witch's Eyes"
+ FEE_Fairs_Events.5014.D: "May she be cursed, she who damned my pride! How will I forgive her who wouldn't forgive? Me who just valued the power. How should I live in peace with the one? Outshining me and then have me devoured"
+ FEE_Fairs_Events.5014.OPT1: "I shall hide myself and die in shame."
+
+ FEE_Fairs_Events.5020.T: "The end of the Nomad Caravan?"
+ FEE_Fairs_Events.5020.D: "As the trading fair goes to an end the nomad caravan have started setting up their charts to move away to the next fair, or should we bribe them to stay in?"
+ FEE_Fairs_Events.5020.OPT2: "Banish em!"
+ FEE_Fairs_Events.5020.OPT1: "Let them stay, we will gladly use their workforce"
 
  FEE_Fairs_Events.6000.T: "Famous Artist"
  FEE_Fairs_Events.6000.D: "A famous artist has reached the fair seeing trying to show is work around and gather even more fame to be accepted everywhere. At first glance his work seems interesting enough to think we might want to hire him, should we my liege?"
@@ -53,18 +90,18 @@
 
  #Event Modifiers
  fee_trading_fair: "Trading Fair!"
- desc_fee_trading_fair: "The current level of the trading fair is: §G[Root.feeTradingFairLevel.GetValue]"
- fee_luck_1: "Luck"
- fee_luck_2: "Luck"
- fee_luck_3: "Luck"
- fee_luck_4: "Luck"
- fee_misfortune_1: "Misfortune"
- fee_misfortune_2: "Misfortune"
- fee_misfortune_3: "Misfortune"
- fee_misfortune_4: "Misfortune"
+ desc_fee_trading_fair: "The current level of the trading fair is: §Y[Root.feeTradingFairLevel.GetValue]"
+ fee_luck_1: "Almighty Protection"
+ fee_luck_2: "Solemn Hymn"
+ fee_luck_3: "Angelic Blessing"
+ fee_luck_4: "Kiss of Luck"
+ fee_misfortune_1: "Ruinous Powers"
+ fee_misfortune_2: "Demonic Embrace"
+ fee_misfortune_3: "Ancient Cursing"
+ fee_misfortune_4: "Witch's Eyes"
  #Opinion Modifiers
 
  #Tooltips
  FEE_FAIRS_STARTING_TT: "Up to once every §M10 Years§! a §GTrading Fair§! will be hosted in an owned province with either a §YCenter of Trade§! or §Y10§! Base Production and §YTrade§! Building. \nA fair can return to the same province only once every 15 years."
  FEE_FAIRS_DISABLED_TT: "You will disable the §GTrading Fairs§! thus saving some performance in the game, but losing a ton of flavour."
- FEE_FAIRS_PROVINCE_TT: "The Trading Caravans and Fairs have chose [Root.GetName] to host the next fair!"
+ FEE_FAIRS_PROVINCE_TT: "The Trading Caravans and Fairs have chosen [Root.GetName] to host the next fair!"
