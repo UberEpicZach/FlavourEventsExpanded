@@ -51,13 +51,7 @@ country_event = {
 			NOT = { has_country_flag = fee_trading_fair_started }
 		}
 		any_owned_province = {
-			OR = {
-				province_has_center_of_trade_of_level = 1
-				AND = {
-					base_production = 10
-					has_trade_building_trigger = yes
-				}
-			}
+			province_has_center_of_trade_of_level = 1
 			OR = {
 				NOT = { has_province_flag = fee_province_trading_fair_accepted }
 				had_province_flag = {
@@ -76,18 +70,12 @@ country_event = {
 		hidden_effect = {
 			random_owned_province = {
 				limit = {
-					OR = {
-						province_has_center_of_trade_of_level = 1
-						AND = {
-							base_production = 10
-							has_trade_building_trigger = yes
-						}
-					}
+					province_has_center_of_trade_of_level = 1
 					OR = {
 						NOT = { has_province_flag = fee_province_trading_fair_accepted }
 						had_province_flag = {
 							flag = fee_province_trading_fair_started
-							days = 3650
+							days = 5475
 						}
 					}
 				}
