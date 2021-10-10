@@ -3,6 +3,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			ai = no
+			has_country_flag = fee_trading_fair_started
 		}
 		allow = { }		
 		effect = {
