@@ -131,7 +131,7 @@ province_event = {
 		}
 		add_province_modifier = {
 			name = fee_trading_fair
-			duration = 730
+			duration = 740
 		}
 		province_event = {
 			id = FEE_Fairs_Events.4000

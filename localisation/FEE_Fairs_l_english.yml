@@ -18,7 +18,7 @@
  FEE_Fairs_Events.3000.OPT2: "I have sadly more important things to attend"
 
  FEE_Fairs_Events.4000.T: "Fair Ended in [Root.GetName]"
- FEE_Fairs_Events.4000.D: "Sadly everything must come to an end, and while we loved the time spent with them the current trading fair must travel to another city to host there another fair, until our next time!"
+ FEE_Fairs_Events.4000.D: "These effect are calculated on the go and added to the fair's level in the modifier.\n§Ylvl 2 COT§!: §G+10§! §BProgress§! \n§Y1 Trade Idea§!: §G+5§! §BProgress§! \n§Y3 Trade Idea§!: §G+10§! §BProgress§! \n§YFull Trade Idea§!: §G+20§! §BProgress§! \n§YRuler's DIP§! is at least §Y5§!: §G+10§! §BProgress§! \n§YRuler's DIP§! is lower than §Y1§!: §R-10§! §BProgress§! \nGain at least §Y12 Diplomatic Power§!: §G+15§! §BProgress§! \nGain less than §Y6 Diplomatic Power§!: §R-15§! §BProgress§! \nAt least §Y50 Prosperity§!: §G+5§! §BProgress§! \nAt Least §Y25 Devastation§!: §R-5§! §BProgress§! \n§Ylvl 1 Trader§!: §G+3§! §BProgress§! \n§Ylvl 2 Trader§!: §G+6§! §BProgress§! \n§Ylvl 3 Trader§!: §G+10§! §BProgress§!\n\n§BProgress <-95§!: §R-1 or -2§! §Y Production §!\n§B-95 < Progress < -65§!: §R+33§! §Y Devastation §!\n§B-65 < Progress < -35§!: §R-3§! §Y Mercantilism §!\n§B-35 < Progress < -15§!: §R-1§! §Y Month of Income §!\n§B-15 < Progress < 0§!: §R-25 or -50§! §Y Dip Power §!\n§B0 < Progress < 15§!: §G+25 or 50§! §Y Dip Power §!\n§B15 < Progress < 35§!: §G+3§! §Y Mercantilism §!\n§B35 < Progress < 65§!: §G+1§! §Y Month of Income §!\n§B65 < Progress < 95§!: §GLvl 2§! §Y Trader §!\n§BProgress > 95§!: §G+1 or +2§! §Y Production §!"
  FEE_Fairs_Events.4000.OPT1: "Let us see the report"
 
  FEE_Fairs_Events.5000.T: "Nomad Caravan"
@@ -101,7 +101,10 @@
  fee_misfortune_4: "Witch's Eyes"
  #Opinion Modifiers
 
+ #Variable
+ feeTradingFairLevel: "Trading Fair Level"
+
  #Tooltips
- FEE_FAIRS_STARTING_TT: "Up to once every §M10 Years§! a §GTrading Fair§! will be hosted in an owned province with a §YCenter of Trade§! \nA fair can return to the same province only once every 15 years."
+ FEE_FAIRS_STARTING_TT: "Up to once every §Y10 Years§! a §GTrading Fair§! will be hosted in an owned province with a §MCenter of Trade§! of any level. \nA fair can return in the same province only once every §Y15 years.§!"
  FEE_FAIRS_DISABLED_TT: "You will disable the §GTrading Fairs§! thus saving some performance in the game, but losing a ton of flavour."
  FEE_FAIRS_PROVINCE_TT: "The Trading Caravans and Fairs have chosen [Root.GetName] to host the next fair!"
