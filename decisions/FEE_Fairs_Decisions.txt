@@ -1,0 +1,22 @@
+country_decisions = {
+	fee_fair_decisions = {
+		major = yes
+		potential = {
+			ai = no
+		}
+		allow = { }		
+		effect = {
+			country_event = {
+				id = FEE_Fairs_Events.4
+			}
+		}
+		ai_will_do = {
+			factor = 0
+			modifier = {
+				factor = 100
+				NOT = { manpower = 10 }
+				is_at_war = yes
+			}
+		}
+	}
+}
