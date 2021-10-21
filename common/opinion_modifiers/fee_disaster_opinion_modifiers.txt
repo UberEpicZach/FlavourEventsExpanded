@@ -1,0 +1,23 @@
+fee_portuguese_succession_crisis_acceptance = {
+	opinion = 50
+	yearly_decay = 1
+	max = 50
+}
+
+fee_portuguese_succession_crisis_rejection = {
+	opinion = -50
+	yearly_decay = 1
+	min = -50
+}
+
+fee_portuguese_succession_crisis_involvement = {
+	opinion = -50
+	yearly_decay = 1
+	min = -50
+}
+
+fee_portuguese_succession_crisis_grateful = {
+	opinion = 50
+	yearly_decay = 1
+	max = 50
+}

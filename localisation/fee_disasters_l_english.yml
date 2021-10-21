@@ -1,0 +1,67 @@
+﻿l_english:
+ # Disasters:
+ fee_portuguese_succession_crisis: "Portuguese Succession Crisis"
+
+ # Events:
+ disaster_fee_portuguese_succession_crisis.EVTNAME1: "Portuguese Succession Crisis"
+ disaster_fee_portuguese_succession_crisis.EVTDESC1: "As a result of [Root.Monarch.GetHerHis] shaky claim to the [Root.GetAdjective] throne, [Root.Monarch.GetName]'s ascension to the [Root.GetAdjective] throne prompted a dynastic crisis. Several claimants have gathered supporters and declared themselves the rightful kings of [Root.GetName]. The confusion has led to a breakdown of law and order within the Kingdom as various pretenders fight each other as well as the central government in [Root.Capital.GetName]."
+ disaster_fee_portuguese_succession_crisis1.EVTOPT1: "Support the Monarch!"
+ disaster_fee_portuguese_succession_crisis1.EVTOPT2: "Support a New King!"
+
+ disaster_fee_portuguese_succession_crisis.EVTNAME2: "The Succession is Secure"
+ disaster_fee_portuguese_succession_crisis.EVTDESC2: "After a long and bitter struggle, the last rebelling army has laid down their arms. Regardless of whether the new king is lawful or even legitimate, the fact is that he has enforced his rule and none are left who can now challenge him. In any case, few would wish to return to the chaos and anarchy of the previous years. As the crown manages to regain control over the kingdom, the [Root.GetAdjective] people breathe a sigh of relief as they look for a recovery of prosperity in the future."
+ disaster_fee_portuguese_succession_crisis2.EVTOPT1: "At least the fighting is over..."
+
+ disaster_fee_portuguese_succession_crisis.EVTNAME3: "Spread of Civil War"
+ disaster_fee_portuguese_succession_crisis.EVTDESC3: "Prominent nobles in [Root.GetName] have joined the revolt and taken up arms against us."
+ disaster_fee_portuguese_succession_crisis3.EVTOPT1: "No Loyalty..."
+
+ disaster_fee_portuguese_succession_crisis.EVTNAME4: "Chaos Engulfs the Provinces"
+ disaster_fee_portuguese_succession_crisis.EVTDESC4: "Protesting their new king, widely seen as illegitimate, as well as the breakdown of central control and the rule of law, peasants and burghers alike have taken up arms themselves. Seeking to overthrow the nobility, they ironically rebel to demand a return to order."
+ disaster_fee_portuguese_succession_crisis4.EVTOPT1: "How strange..."
+
+ disaster_fee_portuguese_succession_crisis.EVTNAME5: "The Cardinal who would be King"
+ disaster_fee_portuguese_succession_crisis.EVTDESC5: "In addition to the royal and noble claimants to the throne, the uncle of the late king, a Cardinal, has also sought to become ruler, and rather successfully. In seeking to revive the fortunes of the Avis dynasty, he also plans to petition the Pope to revoke his clerical position and take a royal bride."
+ disaster_fee_portuguese_succession_crisis5.EVTOPT1: "Support him as the true King."
+ disaster_fee_portuguese_succession_crisis5.EVTOPT2: "We don't need him."
+
+ disaster_fee_portuguese_succession_crisis.EVTNAME6: "A Special Request"
+ disaster_fee_portuguese_succession_crisis.EVTDESC6: "In an effort to curtail the unrest in [From.GetName], a Cardinal has used his position as uncle of the late king to seize the throne. In order to secure his family line, he asks us to release him from his clerical vow of celibacy."
+ disaster_fee_portuguese_succession_crisis6.EVTOPT1: "Accept his request."
+ disaster_fee_portuguese_succession_crisis6.EVTOPT2: "It is against the Church!"
+
+ disaster_fee_portuguese_succession_crisis.EVTNAME7: "Holy Father Accepts"
+ disaster_fee_portuguese_succession_crisis.EVTDESC7: "With a heart full of love for his flock in [Root.GetName], the Holy Father has granted our request to put aside [Root.Monarch.GetName]'s vows for the good of the country."
+ disaster_fee_portuguese_succession_crisis7.EVTOPT1: "The throne grows more secure!"
+
+ disaster_fee_portuguese_succession_crisis.EVTNAME8: "Holy Father Refuses"
+ disaster_fee_portuguese_succession_crisis.EVTDESC8: "Undoubtedly influenced by those who wish us harm, the Pope has refused our reasonable request."
+ disaster_fee_portuguese_succession_crisis8.EVTOPT1: "There is nothing to be done..."
+
+ disaster_fee_portuguese_succession_crisis.EVTNAME9: "Nobility Worried"
+ disaster_fee_portuguese_succession_crisis.EVTDESC9: "Concerned that the ongoing succession crisis threatens to undermine their own independence, the [Root.GetAdjective] nobility have sought to get rid of pretenders... themselves."
+ disaster_fee_portuguese_succession_crisis9.EVTOPT1: "This is fine..."
+
+ disaster_fee_portuguese_succession_crisis.EVTNAME11: "Portuguese Succession Crisis"
+ disaster_fee_portuguese_succession_crisis.EVTDESC11: "While for centuries being the most stable of the Iberian crowns, recent years have seen [From.GetName] fall into disarray due to the succession crisis. This would be a perfect opportunity for us, as the rightful rulers of all of Hispania, should we choose to risk involvement."
+ disaster_fee_portuguese_succession_crisis11.EVTOPT1: "Interfere in [From.GetName]."
+ disaster_fee_portuguese_succession_crisis11.EVTOPT2: "[From.GetName] is our friend and ally!"
+
+ disaster_fee_portuguese_succession_crisis.EVTNAME12: "Spanish Involvement"
+ disaster_fee_portuguese_succession_crisis.EVTDESC12: "Having not forgotten their claims to the whole peninsula, the self-proclaimed King of "Spain" has decided to pursue his own claim on our throne."
+ disaster_fee_portuguese_succession_crisis12.EVTOPT1: "We must prepare for invasion!"
+
+ # Modifiers:
+ fee_portuguese_succession_crisis_chaste_king: "Chaste King"
+ fee_portuguese_succession_crisis_invasion_imminent: "Spanish Invasion Imminent"
+ fee_portuguese_succession_crisis_resolved: "Succession Crisis Resolved"
+
+ # Opinion Modifiers:
+ fee_portuguese_succession_crisis_acceptance: "Holy Father Accepted"
+ fee_portuguese_succession_crisis_rejection: "Holy Father Refused"
+ fee_portuguese_succession_crisis_involvement: "Spanish Involvement"
+ fee_portuguese_succession_crisis_grateful: "Grateful"
+
+ # Tooltips:
+ PORTUGUESE_SUCCESSION_CRISIS_BREAK_ALLIANCE_WITH_POR_TT: "§Y[Root.GetName]§! breaks their alliance with §Y[From.GetName]§!."
+ PORTUGUESE_SUCCESSION_CRISIS_NEW_RULER_WILL_GAIN_INFERTILE_TRAIT_TT: "He will gain the §YInfertile§! trait.\n"
