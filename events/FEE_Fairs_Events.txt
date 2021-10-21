@@ -1161,7 +1161,7 @@ province_event = {
 		}
 		
 		owner = { add_years_of_income = -0.083 }
-		add_development_scaled_on_monarch_skill_fee = yes
+		add_development_half_monarch_skill_fee = yes
 		change_variable = {
 			which = feeTradingFairLevel
 			value = 10
