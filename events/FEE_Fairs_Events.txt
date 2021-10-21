@@ -225,7 +225,12 @@ province_event = {
 		
 		owner = {
 			add_prestige = 10
-			add_stability = 1
+			if = {
+				limit = {
+					NOT = { stability = 3 }
+				}
+				add_stability = 1
+			}
 		}
 		set_province_flag = fee_province_trading_fair_ruler_goes_to_fair
 		change_variable = {
@@ -1175,7 +1180,12 @@ province_event = {
 		}
 		
 		owner = {
-			add_stability = 1
+			if = {
+				limit = {
+					NOT = { stability = 3 }
+				}
+				add_stability = 1
+			}
 			add_mil_power = 75
 		}
 		change_variable = {
