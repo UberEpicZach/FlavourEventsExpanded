@@ -59,6 +59,9 @@ fee_portuguese_succession_crisis = {
 	modifier = {
 		global_unrest = 5
 		legitimacy = -5
+		stability_cost_modifier = 0.5
+		monthly_heir_claim_increase = -1
+		block_introduce_heir = yes
 	}
 
 	on_start = disaster_fee_portuguese_succession_crisis.1
@@ -69,11 +72,11 @@ fee_portuguese_succession_crisis = {
 		}
 		random_events = {
 			1000 = 0
-			50 = disaster_fee_portuguese_succession_crisis.3
-			50 = disaster_fee_portuguese_succession_crisis.4
-			100 = disaster_fee_portuguese_succession_crisis.5
-			50 = disaster_fee_portuguese_succession_crisis.9
-			75 = disaster_fee_portuguese_succession_crisis.10
+			100 = disaster_fee_portuguese_succession_crisis.3
+			100 = disaster_fee_portuguese_succession_crisis.4
+			200 = disaster_fee_portuguese_succession_crisis.5
+			100 = disaster_fee_portuguese_succession_crisis.9
+			150 = disaster_fee_portuguese_succession_crisis.10
 		}
 	}
 }
