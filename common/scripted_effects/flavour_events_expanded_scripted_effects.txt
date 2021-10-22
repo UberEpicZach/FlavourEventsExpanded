@@ -76,6 +76,119 @@ break_alliance_with_fee = {
 }
 
 #Add from 1 to 6 develop in province[s] based on the Monarch's Skill
+# add_development_scaled_on_monarch_skill_yes = yes
+add_development_scaled_on_monarch_skill_fee = {
+    if = {
+        limit = { 
+            owner = { ADM = 6 }
+        }
+        add_base_tax = 6
+    }
+    else_if = {
+        limit = { 
+            owner = { ADM = 5 }
+        }
+        add_base_tax = 5
+    }
+    else_if = {
+        limit = { 
+            owner = { ADM = 4 }
+        }
+        add_base_tax = 4
+    }
+    else_if = {
+        limit = { 
+            owner = { ADM = 3 }
+        }
+        add_base_tax = 3
+    }
+    else_if = {
+        limit = { 
+            owner = { ADM = 2 }
+        }
+        add_base_tax = 2
+    }
+    else_if = {
+        limit = { 
+            owner = { ADM = 1 }
+        }
+        add_base_tax = 1
+    }
+    if = {
+        limit = { 
+            owner = { DIP = 6 }
+        }
+        add_base_production = 6
+    }
+    else_if = {
+        limit = { 
+            owner = { DIP = 5 }
+        }
+        add_base_production = 5
+    }
+    else_if = {
+        limit = { 
+            owner = { DIP = 4 }
+        }
+        add_base_production = 4
+    }
+    else_if = {
+        limit = { 
+            owner = { DIP = 3 }
+        }
+        add_base_production = 3
+    }
+    else_if = {
+        limit = { 
+            owner = { DIP = 2 }
+        }
+        add_base_production = 2
+    }
+    else_if = {
+        limit = { 
+            owner = { DIP = 1 }
+        }
+        add_base_production = 1
+    }
+    if = {
+        limit = { 
+            owner = { MIL = 6 }
+        }
+        add_base_manpower = 6
+    }
+    else_if = {
+        limit = { 
+            owner = { MIL = 5 }
+        }
+        add_base_manpower = 5
+    }
+    else_if = {
+        limit = { 
+            owner = { MIL = 4 }
+        }
+        add_base_manpower = 4
+    }
+    else_if = {
+        limit = { 
+            owner = { MIL = 3 }
+        }
+        add_base_manpower = 3
+    }
+    else_if = {
+        limit = { 
+            owner = { MIL = 2 }
+        }
+        add_base_manpower = 2
+    }
+    else_if = {
+        limit = { 
+            owner = { MIL = 1 }
+        }
+        add_base_manpower = 1
+    }
+}
+
+#Add from 1 to 3 develop in province[s] based on the Monarch's Skill
 # add_development_half_monarch_skill_fee = yes
 add_development_half_monarch_skill_fee = {
 	if = {
@@ -134,6 +247,48 @@ add_development_half_monarch_skill_fee = {
 	}
 }
 
+#Add from 1 to 2 develop in province[s] based on the Monarch's Skill
+# add_development_third_monarch_skill_fee = yes
+add_development_third_monarch_skill_fee = {
+	if = {
+		limit = { 
+			owner = { ADM = 6 }
+		}
+		add_base_tax = 2
+	}
+	else_if = {
+		limit = { 
+			owner = { ADM = 3 }
+		}
+		add_base_tax = 1
+	}
+	if = {
+		limit = { 
+			owner = { DIP = 6 }
+		}
+		add_base_production = 2
+	}
+	else_if = {
+		limit = { 
+			owner = { DIP = 3 }
+		}
+		add_base_production = 1
+	}
+	if = {
+		limit = { 
+			owner = { MIL = 6 }
+		}
+		add_base_manpower = 2
+	}
+	else_if = {
+		limit = { 
+			owner = { MIL = 3 }
+		}
+		add_base_manpower = 1
+	}
+}
+
+#Add from 10 to 120 monarch power based on the Monarch's Skill
 # add_mana_scaled_on_monarch_skill_fee = yes
 add_mana_scaled_on_monarch_skill_fee = {
 	if = {
@@ -156,8 +311,12 @@ add_mana_scaled_on_monarch_skill_fee = {
 		limit = { ADM = 2 }
 		add_adm_power = 40
 	}
-	else = {
+	else_if = {
+		limit = { ADM = 1 }
 		add_adm_power = 20
+	}
+	else = {
+		add_adm_power = 10
 	}
 	if = {
 		limit = { DIP = 6 }
@@ -179,8 +338,12 @@ add_mana_scaled_on_monarch_skill_fee = {
 		limit = { DIP = 2 }
 		add_dip_power = 40
 	}
-	else = {
+	else_if = {
+		limit = { DIP = 1 }
 		add_dip_power = 20
+	}
+	else = {
+		add_dip_power = 10
 	}
 	if = {
 		limit = { MIL = 6 }
@@ -202,7 +365,11 @@ add_mana_scaled_on_monarch_skill_fee = {
 		limit = { MIL = 2 }
 		add_mil_power = 40
 	}
-	else = {
+	else_if = {
+		limit = { MIL = 1 }
 		add_mil_power = 20
+	}
+	else = {
+		add_mil_power = 10
 	}
 }
