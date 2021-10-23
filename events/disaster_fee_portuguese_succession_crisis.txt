@@ -532,6 +532,10 @@ country_event = {
 	desc = disaster_fee_portuguese_succession_crisis.EVTDESC11
 	picture = CIVIL_WAR_eventPicture
 
+	major = yes
+	major_trigger = {
+		tag = POR
+	}
 	is_triggered_only = yes
 
 	option = {
