@@ -13,10 +13,6 @@ country_event = {
 		ai = no
 		NOT = { has_global_flag = fee_trading_fairs_enabled }
 	}
-	
-	mean_time_to_happen = {
-		months = 1
-	}
 
 	option = {
 		name = FEE_Fairs_Events.1.OPT1
@@ -659,7 +655,7 @@ province_event = {
 	goto = ROOT
 	
 	mean_time_to_happen = {
-		months = 3
+		months = 12
 	}
 
 	option = {
@@ -707,7 +703,7 @@ province_event = {
 	goto = ROOT
 	
 	mean_time_to_happen = {
-		months = 3
+		months = 6
 	}
 
 	immediate = {
@@ -762,7 +758,7 @@ province_event = {
 	goto = ROOT
 	
 	mean_time_to_happen = {
-		months = 3
+		months = 6
 	}
 
 	immediate = {
@@ -1128,7 +1124,7 @@ province_event = {
 	goto = ROOT
 	
 	mean_time_to_happen = {
-		months = 12
+		months = 18
 	}
 
 	immediate = {
@@ -1187,7 +1183,7 @@ province_event = {
 	goto = ROOT
 	
 	mean_time_to_happen = {
-		months = 6
+		months = 9
 	}
 
 	option = {
