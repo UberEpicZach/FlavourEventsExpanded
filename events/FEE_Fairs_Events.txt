@@ -1117,7 +1117,7 @@ province_event = {
 		has_province_modifier = fee_trading_fair
 		had_province_flag = {
 			flag = fee_province_trading_fair_nomad_accepted
-			days = 365
+			days = 1095
 		}
 		NOT = { has_province_flag = fee_province_trading_fair_dealed_nomad }
 	}
