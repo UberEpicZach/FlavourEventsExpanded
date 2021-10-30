@@ -632,6 +632,10 @@ province_event = {
 			clr_province_flag = fee_province_trading_fair_furtune_teller
 			clr_province_flag = fee_province_trading_fair_dealed_nomad
 
+			clr_province_flag = fee_trading_fair_banquet_preparation
+			clr_province_flag = fee_trading_fair_banquet_invitation
+			clr_province_flag = fee_trading_fair_banquet_personal
+
 			set_variable = {
 				which = feeTradingFairLevel
 				value = 0
@@ -1237,7 +1241,7 @@ province_event = {
 		NOT = { current_age = age_of_absolutism }
 		NOT = { current_age = age_of_reformation }
 		had_province_flag = {
-			flag = fee_trading_fair
+			flag = fee_province_trading_fair_started
 			days = 1095
 		}
 		NOT = { has_province_flag = fee_trading_fair_banquet_preparation }
