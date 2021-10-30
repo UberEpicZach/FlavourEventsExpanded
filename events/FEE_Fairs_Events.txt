@@ -1331,53 +1331,79 @@ country_event = {
 
 	is_triggered_only = yes
 
-	major = yes
-	major_trigger = {
-		tag = FROM
-	}
-
 	option = {
 		name = FEE_Fairs_Events.7002.OPT1
 		ai_chance = {
 			factor = 50
 			modifier = {
 				factor = 2
-				alliance_with = FROM
+				FROM = {
+					owner = {
+						ROOT = {
+							alliance_with = PREV
+						}
+					}
+				}
 			}
 			modifier = {
 				factor = 1.5
-				marriage_with = FROM
+				FROM = {
+					owner = {
+						ROOT = {
+							marriage_with = PREV
+						}
+					}
+				}
 			}
 			modifier = {
 				factor = 2
-				is_subject_of = ROOT
-			}
-			modifier = {
-				factor = 1.25
-				has_opinion = {
-					who = FROM
-					value = 75
+				FROM = {
+					owner = {
+						ROOT = {
+							is_subject_of = PREV
+						}
+					}
 				}
 			}
 			modifier = {
 				factor = 1.25
-				religion = FROM
+				FROM = {
+					owner = {
+						ROOT = {
+							has_opinion = {
+								who = PREV
+								value = 75
+							}
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 1.25
+				FROM = {
+					owner = {
+						ROOT = {
+							religion = PREV
+						}
+					}
+				}
 			}
 			modifier = {
 				factor = 1.125
-				culture_group = FROM
+				FROM = {
+					owner = {
+						ROOT = {
+							culture_group = PREV
+						}
+					}
+				}
 			}
 		}
 
 		FROM = {
-			random_owned_province = {
-				limit = {
-					has_province_flag = fee_trading_fair_banquet_invitation
-				}
-				province_event = {
-					id = FEE_Fairs_Events.7003
-					days = 30
-				}
+			province_event = {
+				id = FEE_Fairs_Events.7003
+				days = 30
 			}
 		}
 	}
@@ -1388,40 +1414,61 @@ country_event = {
 			factor = 50
 			modifier = {
 				factor = 2
-				is_rival = FROM
+				FROM = {
+					owner = {
+						ROOT = { is_rival = PREV }
+					}
+				}
 			}
 			modifier = {
 				factor = 1.5
-				is_enemy = FROM
-			}
-			modifier = {
-				factor = 1.25
-				NOT = {
-					has_opinion = {
-						who = FROM
-						value = -50
+				FROM = {
+					owner = {
+						ROOT = { is_enemy = PREV }
 					}
 				}
 			}
 			modifier = {
 				factor = 1.25
-				NOT = { religion = FROM }
+				FROM = {
+					owner = {
+						ROOT = {
+							NOT = {
+								has_opinion = {
+									who = PREV
+									value = -50
+								}
+							}
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 1.25
+				FROM = {
+					owner = {
+						ROOT = {
+							NOT = { religion = PREV }
+						}
+					}
+				}
 			}
 			modifier = {
 				factor = 1.125
-				NOT = { culture_group = FROM }
+				FROM = {
+					owner = {
+						ROOT = {
+							NOT = { culture_group = PREV }
+						}
+					}
+				}
 			}
 		}
 
 		FROM = {
-			random_owned_province = {
-				limit = {
-					has_province_flag = fee_trading_fair_banquet_invitation
-				}
-				province_event = {
-					id = FEE_Fairs_Events.7003
-					days = 30
-				}
+			province_event = {
+				id = FEE_Fairs_Events.7004
+				days = 30
 			}
 		}
 	}
