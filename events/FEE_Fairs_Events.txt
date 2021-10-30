@@ -38,6 +38,7 @@ country_event = {
 
 	hidden = yes
 	trigger = {
+		NOT = { is_institution_enabled = global_trade }
 		has_global_flag = fee_trading_fairs_enabled
 		OR = {
 			had_country_flag = {
@@ -1219,6 +1220,267 @@ province_event = {
 		change_variable = {
 			which = feeTradingFairLevel
 			value = -8
+		}
+	}
+}
+
+#Banquet Preparation
+province_event = {
+	id = FEE_Fairs_Events.7000
+	title = FEE_Fairs_Events.7000.T
+	desc = FEE_Fairs_Events.7000.D
+	picture = COURT_eventPicture
+
+	trigger = {
+		has_global_flag = fee_trading_fairs_enabled
+		NOT = { current_age = age_of_revolutions }
+		NOT = { current_age = age_of_absolutism }
+		NOT = { current_age = age_of_reformation }
+		had_province_flag = {
+			flag = fee_trading_fair
+			days = 1095
+		}
+		NOT = { has_province_flag = fee_trading_fair_banquet_preparation }
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	immediate = {
+		hidden_effect = { set_province_flag = fee_trading_fair_banquet_preparation }
+	}
+
+	option = {
+		name = FEE_Fairs_Events.7000.OPT1
+
+		owner = {
+			add_years_of_income = -0.5
+			if = {
+				limit = { government = republic }
+				add_republican_tradition = 3
+			}
+			else = {
+				add_legitimacy_equivalent_fee = { value = 5 }
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Fairs_Events.7000.OPT2
+
+		owner = { add_prestige = -10 }
+	}
+}
+
+#Banquet Invitation
+province_event = {
+	id = FEE_Fairs_Events.7001
+	title = FEE_Fairs_Events.7001.T
+	desc = FEE_Fairs_Events.7001.D
+	picture = COURT_eventPicture
+
+	trigger = {
+		has_province_flag = fee_trading_fair_banquet_preparation
+		NOT = { has_province_flag = fee_trading_fair_banquet_invitation }
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	immediate = {
+		hidden_effect = { set_province_flag = fee_trading_fair_banquet_invitation }
+	}
+
+	option = {
+		name = FEE_Fairs_Events.7001.OPT1
+
+		owner = { add_prestige = 5 }
+		change_variable = {
+			which = feeTradingFairLevel
+			value = 5
+		}
+		set_province_flag = fee_trading_fair_banquet_personal
+	}
+
+	option = {
+		name = FEE_Fairs_Events.7001.OPT1
+
+		owner = {
+			every_neighbor_country = {
+				country_event = {
+					id = FEE_Fairs_Events.7002
+					days = 30
+				}
+			}
+		}
+	}
+}
+
+#Invitation
+country_event = {
+	id = FEE_Fairs_Events.7002
+	title = FEE_Fairs_Events.7002.T
+	desc = FEE_Fairs_Events.7002.D
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+
+	major = yes
+	major_trigger = {
+		tag = FROM
+	}
+
+	option = {
+		name = FEE_Fairs_Events.7002.OPT1
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				alliance_with = FROM
+			}
+			modifier = {
+				factor = 1.5
+				marriage_with = FROM
+			}
+			modifier = {
+				factor = 2
+				is_subject_of = ROOT
+			}
+			modifier = {
+				factor = 1.25
+				has_opinion = {
+					who = FROM
+					value = 75
+				}
+			}
+			modifier = {
+				factor = 1.25
+				religion = FROM
+			}
+			modifier = {
+				factor = 1.125
+				culture_group = FROM
+			}
+		}
+
+		FROM = {
+			random_owned_province = {
+				limit = {
+					has_province_flag = fee_trading_fair_banquet_invitation
+				}
+				province_event = {
+					id = FEE_Fairs_Events.7003
+					days = 30
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Fairs_Events.7002.OPT2
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				is_rival = FROM
+			}
+			modifier = {
+				factor = 1.5
+				is_enemy = FROM
+			}
+			modifier = {
+				factor = 1.25
+				NOT = {
+					has_opinion = {
+						who = FROM
+						value = -50
+					}
+				}
+			}
+			modifier = {
+				factor = 1.25
+				NOT = { religion = FROM }
+			}
+			modifier = {
+				factor = 1.125
+				NOT = { culture_group = FROM }
+			}
+		}
+
+		FROM = {
+			random_owned_province = {
+				limit = {
+					has_province_flag = fee_trading_fair_banquet_invitation
+				}
+				province_event = {
+					id = FEE_Fairs_Events.7003
+					days = 30
+				}
+			}
+		}
+	}
+}
+
+#ROOT Comes to Banquet
+province_event = {
+	id = FEE_Fairs_Events.7003
+	title = FEE_Fairs_Events.7003.T
+	desc = FEE_Fairs_Events.7003.D
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Fairs_Events.7003.OPT1
+
+		owner = {
+			add_opinion = {
+				who = FROM
+				modifier = fee_fairs_accepted_invitation
+			}
+		}
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = fee_fairs_accepted_invitation
+			}
+		}
+		change_variable = {
+			which = feeTradingFairLevel
+			value = 5
+		}
+	}
+}
+
+#ROOT Does not come to Banquet
+province_event = {
+	id = FEE_Fairs_Events.7004
+	title = FEE_Fairs_Events.7004.T
+	desc = FEE_Fairs_Events.7004.D
+	picture = BAD_WITH_MONARCH_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Fairs_Events.7004.OPT1
+
+		owner = {
+			add_opinion = {
+				who = FROM
+				modifier = fee_fairs_declined_invitation
+			}
+		}
+		FROM = {
+			add_opinion = {
+				who = ROOT
+				modifier = fee_fairs_declined_invitation
+			}
+		}
+		change_variable = {
+			which = feeTradingFairLevel
+			value = -5
 		}
 	}
 }

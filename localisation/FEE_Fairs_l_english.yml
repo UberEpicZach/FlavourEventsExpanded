@@ -96,7 +96,31 @@
  FEE_Fairs_Events.6000.OPT1: "We should just celebrate his work and found it!"
  FEE_Fairs_Events.6000.OPT2: "We should bribe it into our court"
 
- #Estate Modifeirs
+
+ FEE_Fairs_Events.7000.T: "Banquet Preparation"
+ FEE_Fairs_Events.7000.D: "What great celebration does not hold a banquet worth of Emperors? While our Trading Fair has attracted many mechants, caravans, nomads into our city, but it is time that we prepare to accustom more important people into our humble court and create a banquet that won't be forgotten!"
+ FEE_Fairs_Events.7000.OPT1: "Go forth with the preparation"
+ FEE_Fairs_Events.7000.OPT2: "More Gold Needed"
+
+ FEE_Fairs_Events.7001.T: "Banquet Invitation"
+ FEE_Fairs_Events.7001.D: "We have thought my liege about it, and while the royal coffins do have the preparation to have more than one excellent guest we could also only invite the famous person from our own city to attract the local population"
+ FEE_Fairs_Events.7001.OPT1: "We should prefer our population"
+ FEE_Fairs_Events.7001.OPT2: "The more the merrier!"
+
+ FEE_Fairs_Events.7002.T: "Invitation from [FROM.GetName]"
+ FEE_Fairs_Events.7002.D: "Sire, I'm a humble servant of [FROM.GetName] which is hosting a wonderful banquet at his city while a trading caravan has arrived in the beloved square of the city, will you come?"
+ FEE_Fairs_Events.7002.OPT1: "Marvellous, let us celebrate!"
+ FEE_Fairs_Events.7002.OPT2: "It might be a trap, never!"
+
+ FEE_Fairs_Events.7003.T: "[FROM.GetName] has accepted our invitation"
+ FEE_Fairs_Events.7003.D: "The dark gates were swung open. The horsemen entered, walking in file behind their guide. They found a broad path, paved with hewn stones, now winding upward, now climbing in short flights of well-laid steps. Many houses built of elegant bricks and many dark doors they passed. Beside the way in a stone channel a stream of clear water flowed, sparkling and chattering. The great host of the numerous servants escorting [FROM.GetName] now opened in the graet square outside our palace while our men have prepared their accomodation in the palace."
+ FEE_Fairs_Events.7003.OPT1: "Marvellous, let them come in!"
+
+ FEE_Fairs_Events.7004.T: "[FROM.GetName] has declined our invitation"
+ FEE_Fairs_Events.7004.D: "Sadly [FROM.GetName] has decided to no join our banquet, in fear of it being an excuse for a trap like a red wedding."
+ FEE_Fairs_Events.7004.OPT1: "A treachery?"
+
+ #Estate Modifiers
 
  #Event Modifiers
  fee_trading_fair: "Trading Fair!"
@@ -109,13 +133,16 @@
  fee_misfortune_2: "Demonic Embrace"
  fee_misfortune_3: "Ancient Cursing"
  fee_misfortune_4: "Witch's Eyes"
+
  #Opinion Modifiers
+ fee_fairs_accepted_invitation: "Accepted Invitation"
+ fee_fairs_declined_invitation: "Declined Invitation"
 
  #Variable
  feeTradingFairLevel: "Trading Fair Level"
 
  #Tooltips
- FEE_FAIRS_STARTING_TT: "Up to once every §Y10 Years§! a §GTrading Fair§! will be hosted in an owned province with a §MCenter of Trade§! of any level. \nA fair can return in the same province only once every §Y15 years.§!"
+ FEE_FAIRS_STARTING_TT: "Up to once every §Y10 Years§! a §GTrading Fair§! will be hosted in an owned province with a §MCenter of Trade§! of any level. \nA fair can return in the same province only once every §Y15 years.§!\n\nTrading Fairs will spawn until §RGlobal Trade§!"
  FEE_FAIRS_DISABLED_TT: "You will disable the §GTrading Fairs§! thus saving some performance in the game, but losing a ton of flavour."
  FEE_FAIRS_PROVINCE_TT: "The Trading Caravans and Fairs have chosen [Root.GetName] to host the next fair!"
 
