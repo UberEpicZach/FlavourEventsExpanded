@@ -5,4 +5,10 @@ spriteTypes = {
 		noOfFrames = 3
 		loadType = "INGAME"
 	}
+	spriteType = {
+		name = "GFX_disaster_fee_decline_of_the_ottomans"
+		texturefile = "gfx/interface/disasters/fee_decline_of_the_ottomans.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
 }
