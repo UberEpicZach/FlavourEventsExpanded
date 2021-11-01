@@ -758,6 +758,16 @@ province_event = {
 		has_province_flag = fee_province_trading_fair_nomad_accepted
 		has_province_flag = fee_province_trading_fair_ruler_goes_to_fair
 		NOT = { has_province_flag = fee_province_trading_fair_furtune_teller }
+		owner = {
+			NOT = { has_ruler_modifier = fee_luck_1 }
+			NOT = { has_ruler_modifier = fee_luck_2 }
+			NOT = { has_ruler_modifier = fee_luck_3 }
+			NOT = { has_ruler_modifier = fee_luck_4 }
+			NOT = { has_ruler_modifier = fee_misfortune_1 }
+			NOT = { has_ruler_modifier = fee_misfortune_2 }
+			NOT = { has_ruler_modifier = fee_misfortune_3 }
+			NOT = { has_ruler_modifier = fee_misfortune_4 }
+		}
 	}
 
 	goto = ROOT
@@ -822,9 +832,7 @@ country_event = {
 		}
 
 		if = {
-			limit = {
-				total_development = 300
-			}
+			limit = { total_development = 300 }
 			add_mana_scaled_on_monarch_skill_fee = yes
 		}
 		else = {
