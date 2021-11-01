@@ -1156,6 +1156,14 @@ province_event = {
 			which = feeTradingFairLevel
 			value = 10
 		}
+		hidden_effect = {
+			change_variable = {
+				which = feeNomadCaravan
+				value = 10
+			}
+			set_province_flag = fee_nomad_caravan_in
+			clr_province_flag = fee_nomad_fired_between_fairs
+		}
 	}
 
 	option = {
@@ -1177,6 +1185,111 @@ province_event = {
 			which = feeTradingFairLevel
 			value = -15
 		}
+		set_province_flag = fee_nomad_restored
+	}
+}
+
+#Nomad Problem
+province_event = {
+	id = FEE_Fairs_Events.5021
+	title = FEE_Fairs_Events.5021.T
+	desc = FEE_Fairs_Events.5021.D
+	picture = REVOLT_eventPicture
+
+	trigger = {
+		NOT = { has_province_modifier = fee_trading_fair }
+		has_province_flag = fee_nomad_caravan_in
+		NOT = { has_province_flag = fee_nomad_restored }
+		NOT = { has_province_flag = fee_nomad_fired_between_fairs }
+	}
+
+	goto = ROOT
+	
+	mean_time_to_happen = {
+		years = 2
+		modifier = {
+			factor = 0.75
+			check_variable = {
+				which = feeNomadCaravan
+				value = 50
+			}
+		}
+		modifier = {
+			factor = 0.9
+			check_variable = {
+				which = feeNomadCaravan
+				value = 30
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Fairs_Events.5021.OPT1
+		ai_chance = {
+			factor = 50
+		}
+		
+		if = {
+			limit = {
+				check_variable = {
+					which = feeNomadCaravan
+					value = 10
+				}
+			}
+			add_devastation = 10
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = feeNomadCaravan
+					value = 25
+				}
+			}
+			add_devastation = 20
+			if = {
+				limit = { base_tax = 1 }
+				add_base_tax = -1
+			}
+			if = {
+				limit = { base_production = 1 }
+				add_base_production = -1
+			}
+			if = {
+				limit = { base_manpower = 1 }
+				add_base_manpower = -1
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = {
+					which = feeNomadCaravan
+					value = 50
+				}
+			}
+			add_devastation = 33
+			if = {
+				limit = { base_tax = 3 }
+				add_base_tax = -3
+			}
+			if = {
+				limit = { base_production = 3 }
+				add_base_production = -3
+			}
+			if = {
+				limit = { base_manpower = 3 }
+				add_base_manpower = -3
+			}
+			owner = {
+				add_stability = -1
+				add_adm_power = -50
+				add_dip_power = -50
+				add_mil_power = -50
+			}
+		}
+	}
+
+	after = {
+		hidden_effect = { set_province_flag = fee_nomad_fired_between_fairs }
 	}
 }
 
