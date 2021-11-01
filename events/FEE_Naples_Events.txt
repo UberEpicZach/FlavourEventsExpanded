@@ -1403,20 +1403,23 @@ country_event = {
 
 	fire_only_once = yes
 	trigger = {
+		is_year = 1492
 		OR = {
 			tag = NAP
-			AND = { 
-				was_tag = NAP
-				NOT = { tag = ITA }
-			}
+			tag = SIC
+			tag = TTS
 		}
+		NOT = { has_country_flag = formed_italy_flag }
 		adm_tech = 7
-		is_year = 1492
 		tuscany_area = {
 			type = all
 			owned_by = ROOT
 		}
 		lazio_area = {
+			type = all
+			owned_by = ROOT
+		}
+		naples_area = {
 			type = all
 			owned_by = ROOT
 		}
