@@ -1934,9 +1934,9 @@ country_event = {
 
 	major = yes
 	fire_only_once = yes
+	is_triggered_only = yes
 
 	trigger = {
-		has_disaster = fee_decline_of_the_ottomans
 		has_global_flag = greek_cores
 		NOT = { exists = GRE }
 		num_of_owned_provinces_with = {
@@ -1944,10 +1944,6 @@ country_event = {
 			is_core = GRE
 			controlled_by = REB
 		}
-	}
-
-	mean_time_to_happen = {
-		months = 1
 	}
 
 	immediate = {

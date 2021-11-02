@@ -97,29 +97,30 @@ fee_decline_of_the_ottomans = {
 
 	on_monthly = {
 		events = {
+			disaster_fee_decline_of_the_ottomans.24
 		}
 		random_events = {
-			1000 = 0
-			100 = disaster_fee_decline_of_the_ottomans.3
+			1600 = 0
+			50 = disaster_fee_decline_of_the_ottomans.3
 			100 = disaster_fee_decline_of_the_ottomans.4
 			100 = disaster_fee_decline_of_the_ottomans.5
-			100 = disaster_fee_decline_of_the_ottomans.6
+			50 = disaster_fee_decline_of_the_ottomans.6
 			100 = disaster_fee_decline_of_the_ottomans.7
 			100 = disaster_fee_decline_of_the_ottomans.8
-			100 = disaster_fee_decline_of_the_ottomans.9
+			50 = disaster_fee_decline_of_the_ottomans.9
 			100 = disaster_fee_decline_of_the_ottomans.10
-			100 = disaster_fee_decline_of_the_ottomans.11
+			50 = disaster_fee_decline_of_the_ottomans.11
 			100 = disaster_fee_decline_of_the_ottomans.12
 			100 = disaster_fee_decline_of_the_ottomans.13
-			100 = disaster_fee_decline_of_the_ottomans.14
-			100 = disaster_fee_decline_of_the_ottomans.15
+			75 = disaster_fee_decline_of_the_ottomans.14
+			75 = disaster_fee_decline_of_the_ottomans.15
 			100 = disaster_fee_decline_of_the_ottomans.16
 			100 = disaster_fee_decline_of_the_ottomans.17
 			100 = disaster_fee_decline_of_the_ottomans.18
-			100 = disaster_fee_decline_of_the_ottomans.19
+			50 = disaster_fee_decline_of_the_ottomans.19
 			100 = disaster_fee_decline_of_the_ottomans.20
-			100 = disaster_fee_decline_of_the_ottomans.21
-			100 = disaster_fee_decline_of_the_ottomans.22
+			50 = disaster_fee_decline_of_the_ottomans.21
+			50 = disaster_fee_decline_of_the_ottomans.22
 		}
 	}
 }
