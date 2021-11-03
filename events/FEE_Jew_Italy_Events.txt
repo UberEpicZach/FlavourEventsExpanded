@@ -227,7 +227,6 @@ province_event = {
 				which = FEE_JEW_ITALY_CITY_OPPOSE
 				value = 10
 			}
-			set_province_flag = fee_jew_sicily_giudecca_approved
 		}
 	}
 
@@ -269,16 +268,17 @@ province_event = {
 		}
 
 		hidden_effect = {
-			change_variable = {
-				which = FEE_JEW_ITALY_CITY_APPROVE
-				value = 10
-			}
 			owner = {
 				change_variable = {
 					which = FEE_JEW_ITALY_APPROVE
 					value = 5
 				}
 			}
+			change_variable = {
+				which = FEE_JEW_ITALY_CITY_APPROVE
+				value = 10
+			}
+			set_province_flag = fee_jew_sicily_giudecca_approved
 		}
 	}
 }

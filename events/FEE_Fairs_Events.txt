@@ -1337,7 +1337,7 @@ province_event = {
 		name = FEE_Fairs_Events.6000.OPT1
 
 		set_province_flag = fee_province_trading_fair_famous_artist_accepted
-		owner = { add_years_of_income = 0.0145 } #half month of income
+		owner = { add_years_of_income = 0.0416 } #half month of income
 		owner = {
 			add_prestige = 5
 			random_list = {
@@ -1355,7 +1355,7 @@ province_event = {
 		name = FEE_Fairs_Events.6000.OPT2
 
 		set_province_flag = fee_province_trading_fair_famous_artist_refused
-		owner = { add_years_of_income = -0.0145 } #half month of income
+		owner = { add_years_of_income = -0.0416 } #half month of income
 		owner = {
 			define_advisor = {
 				type = artist
