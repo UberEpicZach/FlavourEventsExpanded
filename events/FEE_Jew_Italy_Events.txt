@@ -314,6 +314,16 @@ province_event = {
 
 	option = {
 		name = FEE_Jew_Italy_Events.4.OPT1
+		trigger = {
+			hidden_trigger = {
+				NOT = {
+					check_variable = {
+						which = FEE_JEW_ITALY_APPROVE
+						value = 50
+					}
+				}
+			}
+		}
 		ai_chance = {
 			factor = 50
 			modifier = {
@@ -330,6 +340,7 @@ province_event = {
 				owner = { culture_group = iberian }
 			}
 		}
+		custom_tooltip = REJECT_JEWS_TT
 
 		owner = {
 			add_papal_influence = 10
@@ -351,6 +362,16 @@ province_event = {
 
 	option = {
 		name = FEE_Jew_Italy_Events.4.OPT2
+		trigger = {
+			hidden_trigger = {
+				NOT = {
+					check_variable = {
+						which = FEE_JEW_ITALY_OPPOSE
+						value = 50
+					}
+				}
+			}
+		}
 		ai_chance = {
 			factor = 50
 			modifier = {
@@ -363,6 +384,7 @@ province_event = {
 				}
 			}
 		}
+		custom_tooltip = ACCEPT_JEWS_TT
 
 		owner = {
 			add_years_of_income = -0.083
@@ -375,14 +397,9 @@ province_event = {
 			limit = {
 				NOT = { religion = jewish }
 			}
-			random_list = {
-				75 = { change_religion = jewish }
-				25 = { add_base_production = 1 }
-			}
+			change_religion = jewish
 		}
-		else = {
-			add_base_production = 1
-		}
+		add_base_production = 1
 		add_prosperity = 10
 	}
 }
@@ -410,7 +427,6 @@ province_event = {
 			owned_by = ROOT
 		}
 	}
-
 
 	mean_time_to_happen = {
 		months = 6
@@ -450,7 +466,7 @@ province_event = {
 			33 = {
 				123 = { 
 					random_list = {
-						50 =  {add_development_third_monarch_skill_fee = yes }
+						50 = { add_development_third_monarch_skill_fee = yes }
 						50 = { add_prosperity = 5 }
 					}
 				}
@@ -458,7 +474,7 @@ province_event = {
 			33 = {
 				2984 = { 
 					random_list = {
-						50 =  {add_development_third_monarch_skill_fee = yes }
+						50 = { add_development_third_monarch_skill_fee = yes }
 						50 = { add_prosperity = 5 }
 					}
 				}
@@ -466,7 +482,7 @@ province_event = {
 			33 = {
 				1934 = { 
 					random_list = {
-						50 =  {add_development_third_monarch_skill_fee = yes }
+						50 = { add_development_third_monarch_skill_fee = yes }
 						50 = { add_prosperity = 5 }
 					}
 				}
@@ -501,6 +517,48 @@ province_event = {
 				name = italian_jew_allowed_stay_2
 				duration = -1
 			}
+		}
+	}
+}
+
+#Medic at Court
+country_event = {
+	id = FEE_Jew_Italy_Events.1000
+	title = FEE_Jew_Italy_Events.1000.T
+	desc = FEE_Jew_Italy_Events.1000.D
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		check_variable = {
+			which = FEE_JEW_ITALY_APPROVE
+			value = 50
+		}
+		OR = {
+			NOT = { has_country_flag = fee_jews_italy_medic }
+			had_country_flag = {
+				flag = fee_jews_italy_medic
+				days = 5475
+			}
+		}
+		NOT = {
+			has_ruler_modifier = fee_jews_medic
+		}
+	}
+
+	mean_time_to_happen = {
+		years = 25
+		modifier = {
+			factor = 1.25
+			religious_ideas = 3
+		}
+	}
+
+	option = {
+		name = FEE_Jew_Italy_Events.1000.OPT1
+
+		add_ruler_modifier = {
+			name = fee_jews_medic
+			duration = -1
 		}
 	}
 }
