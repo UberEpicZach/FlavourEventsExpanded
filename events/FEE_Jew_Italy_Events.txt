@@ -217,16 +217,17 @@ province_event = {
 			add_mil_power = 10
 		}
 		hidden_effect = {
-			change_variable = {
-				which = FEE_JEW_ITALY_CITY_OPPOSE
-				value = 10
-			}
 			owner = {
 				change_variable = {
 					which = FEE_JEW_ITALY_OPPOSE
 					value = 5
 				}
 			}
+			change_variable = {
+				which = FEE_JEW_ITALY_CITY_OPPOSE
+				value = 10
+			}
+			set_province_flag = fee_jew_sicily_giudecca_approved
 		}
 	}
 
@@ -291,7 +292,7 @@ province_event = {
 
 	trigger = {
 		NOT = { is_year = 1470 }
-		has_province_flag = fee_jew_sicily_giudecca_event
+		has_province_flag = fee_jew_sicily_giudecca_approved
 		OR = {
 			area = western_sicily_area
 			area = sicily_area
@@ -336,14 +337,12 @@ province_event = {
 		}
 		remove_development_third_monarch_skill_fee = yes
 		add_devastation = 10
-		random_list = {
-			25 = {
-				random_neighbor_province = {
+		random_neighbor_province = {
+			random_list = {
+				25 = {
 					add_development_third_monarch_skill_fee = yes
 				}
-			}
-			75 = {
-				random_neighbor_province = {
+				75 = {
 					add_devastation = 15
 				}
 			}
@@ -372,9 +371,17 @@ province_event = {
 			name = italian_jew_allowed_stay
 			duration = -1
 		}
-		random_list = {
-			75 = { change_religion = jewish }
-			25 = { add_base_production = 1 }
+		if = {
+			limit = {
+				NOT = { religion = jewish }
+			}
+			random_list = {
+				75 = { change_religion = jewish }
+				25 = { add_base_production = 1 }
+			}
+		}
+		else = {
+			add_base_production = 1
 		}
 		add_prosperity = 10
 	}

@@ -79,109 +79,109 @@ break_alliance_with_fee = {
 # add_development_scaled_on_monarch_skill_yes = yes
 add_development_scaled_on_monarch_skill_fee = {
 	if = {
-		limit = { 
+		limit = {
 			owner = { ADM = 6 }
 		}
 		add_base_tax = 6
 	}
 	else_if = {
-		limit = { 
+		limit = {
 			owner = { ADM = 5 }
 		}
 		add_base_tax = 5
 	}
 	else_if = {
-		limit = { 
+		limit = {
 			owner = { ADM = 4 }
 		}
 		add_base_tax = 4
 	}
 	else_if = {
-		limit = { 
+		limit = {
 			owner = { ADM = 3 }
 		}
 		add_base_tax = 3
 	}
 	else_if = {
-		limit = { 
+		limit = {
 			owner = { ADM = 2 }
 		}
 		add_base_tax = 2
 	}
 	else_if = {
-		limit = { 
+		limit = {
 			owner = { ADM = 1 }
 		}
 		add_base_tax = 1
 	}
 	if = {
-		limit = { 
+		limit = {
 			owner = { DIP = 6 }
 		}
 		add_base_production = 6
 	}
 	else_if = {
-		limit = { 
+		limit = {
 			owner = { DIP = 5 }
 		}
 		add_base_production = 5
 	}
 	else_if = {
-		limit = { 
+		limit = {
 			owner = { DIP = 4 }
 		}
 		add_base_production = 4
 	}
 	else_if = {
-		limit = { 
+		limit = {
 			owner = { DIP = 3 }
 		}
 		add_base_production = 3
 	}
 	else_if = {
-		limit = { 
+		limit = {
 			owner = { DIP = 2 }
 		}
 		add_base_production = 2
 	}
 	else_if = {
-		limit = { 
+		limit = {
 			owner = { DIP = 1 }
 		}
 		add_base_production = 1
 	}
 	if = {
-		limit = { 
+		limit = {
 			owner = { MIL = 6 }
 		}
 		add_base_manpower = 6
 	}
 	else_if = {
-		limit = { 
+		limit = {
 			owner = { MIL = 5 }
 		}
 		add_base_manpower = 5
 	}
 	else_if = {
-		limit = { 
+		limit = {
 			owner = { MIL = 4 }
 		}
 		add_base_manpower = 4
 	}
 	else_if = {
-		limit = { 
+		limit = {
 			owner = { MIL = 3 }
 		}
 		add_base_manpower = 3
 	}
 	else_if = {
-		limit = { 
+		limit = {
 			owner = { MIL = 2 }
 		}
 		add_base_manpower = 2
 	}
 	else_if = {
-		limit = { 
+		limit = {
 			owner = { MIL = 1 }
 		}
 		add_base_manpower = 1
@@ -200,7 +200,7 @@ remove_development_scaled_on_monarch_skill_fee = {
 		add_base_tax = -6
 	}
 	else_if = {
-		limit = { 
+		limit = {
 			owner = {
 				NOT = { ADM = 2 }
 			}
@@ -208,7 +208,7 @@ remove_development_scaled_on_monarch_skill_fee = {
 		add_base_tax = -5
 	}
 	else_if = {
-		limit = { 
+		limit = {
 			owner = {
 				NOT = { ADM = 3 }
 			}
@@ -216,7 +216,7 @@ remove_development_scaled_on_monarch_skill_fee = {
 		add_base_tax = -4
 	}
 	else_if = {
-		limit = { 
+		limit = {
 			owner = {
 				NOT = { ADM = 4 }
 			}
@@ -224,7 +224,7 @@ remove_development_scaled_on_monarch_skill_fee = {
 		add_base_tax = -3
 	}
 	else_if = {
-		limit = { 
+		limit = {
 			owner = {
 				NOT = { ADM = 5 }
 			}
@@ -243,7 +243,7 @@ remove_development_scaled_on_monarch_skill_fee = {
 		add_base_production = -6
 	}
 	else_if = {
-		limit = { 
+		limit = {
 			owner = {
 				NOT = { DIP = 2 }
 			}
@@ -251,7 +251,7 @@ remove_development_scaled_on_monarch_skill_fee = {
 		add_base_production = -5
 	}
 	else_if = {
-		limit = { 
+		limit = {
 			owner = {
 				NOT = { DIP = 3 }
 			}
@@ -259,7 +259,7 @@ remove_development_scaled_on_monarch_skill_fee = {
 		add_base_production = -4
 	}
 	else_if = {
-		limit = { 
+		limit = {
 			owner = {
 				NOT = { DIP = 4 }
 			}
@@ -267,7 +267,7 @@ remove_development_scaled_on_monarch_skill_fee = {
 		add_base_production = -3
 	}
 	else_if = {
-		limit = { 
+		limit = {
 			owner = {
 				NOT = { DIP = 5 }
 			}
@@ -286,7 +286,7 @@ remove_development_scaled_on_monarch_skill_fee = {
 		add_base_manpower = -6
 	}
 	else_if = {
-		limit = { 
+		limit = {
 			owner = {
 				NOT = { MIL = 2 }
 			}
@@ -294,7 +294,7 @@ remove_development_scaled_on_monarch_skill_fee = {
 		add_base_manpower = -5
 	}
 	else_if = {
-		limit = { 
+		limit = {
 			owner = {
 				NOT = { MIL = 3 }
 			}
@@ -302,7 +302,7 @@ remove_development_scaled_on_monarch_skill_fee = {
 		add_base_manpower = -4
 	}
 	else_if = {
-		limit = { 
+		limit = {
 			owner = {
 				NOT = { MIL = 4 }
 			}
@@ -310,7 +310,7 @@ remove_development_scaled_on_monarch_skill_fee = {
 		add_base_manpower = -3
 	}
 	else_if = {
-		limit = { 
+		limit = {
 			owner = {
 				NOT = { MIL = 5 }
 			}
@@ -326,55 +326,55 @@ remove_development_scaled_on_monarch_skill_fee = {
 # add_development_half_monarch_skill_fee = yes
 add_development_half_monarch_skill_fee = {
 	if = {
-		limit = { 
+		limit = {
 			owner = { ADM = 6 }
 		}
 		add_base_tax = 3
 	}
 	else_if = {
-		limit = { 
+		limit = {
 			owner = { ADM = 4 }
 		}
 		add_base_tax = 2
 	}
 	else_if = {
-		limit = { 
+		limit = {
 			owner = { ADM = 2 }
 		}
 		add_base_tax = 1
 	}
 	if = {
-		limit = { 
+		limit = {
 			owner = { DIP = 6 }
 		}
 		add_base_production = 3
 	}
 	else_if = {
-		limit = { 
+		limit = {
 			owner = { DIP = 4 }
 		}
 		add_base_production = 2
 	}
 	else_if = {
-		limit = { 
+		limit = {
 			owner = { DIP = 2 }
 		}
 		add_base_production = 1
 	}
 	if = {
-		limit = { 
+		limit = {
 			owner = { MIL = 6 }
 		}
 		add_base_manpower = 3
 	}
 	else_if = {
-		limit = { 
+		limit = {
 			owner = { MIL = 4 }
 		}
 		add_base_manpower = 2
 	}
 	else_if = {
-		limit = { 
+		limit = {
 			owner = { MIL = 2 }
 		}
 		add_base_manpower = 1
@@ -393,7 +393,7 @@ remove_development_half_monarch_skill_fee = {
 		add_base_tax = -3
 	}
 	else_if = {
-		limit = { 
+		limit = {
 			owner = {
 				NOT = { ADM = 3 }
 			}
@@ -401,7 +401,7 @@ remove_development_half_monarch_skill_fee = {
 		add_base_tax = -2
 	}
 	else_if = {
-		limit = { 
+		limit = {
 			owner = {
 				NOT = { ADM = 5 }
 			}
@@ -420,7 +420,7 @@ remove_development_half_monarch_skill_fee = {
 		add_base_production = -6
 	}
 	else_if = {
-		limit = { 
+		limit = {
 			owner = {
 				NOT = { DIP = 2 }
 			}
@@ -428,7 +428,7 @@ remove_development_half_monarch_skill_fee = {
 		add_base_production = -5
 	}
 	else_if = {
-		limit = { 
+		limit = {
 			owner = {
 				NOT = { DIP = 3 }
 			}
@@ -436,7 +436,7 @@ remove_development_half_monarch_skill_fee = {
 		add_base_production = -4
 	}
 	else_if = {
-		limit = { 
+		limit = {
 			owner = {
 				NOT = { DIP = 4 }
 			}
@@ -444,7 +444,7 @@ remove_development_half_monarch_skill_fee = {
 		add_base_production = -3
 	}
 	else_if = {
-		limit = { 
+		limit = {
 			owner = {
 				NOT = { DIP = 5 }
 			}
@@ -463,7 +463,7 @@ remove_development_half_monarch_skill_fee = {
 		add_base_manpower = -6
 	}
 	else_if = {
-		limit = { 
+		limit = {
 			owner = {
 				NOT = { MIL = 2 }
 			}
@@ -471,7 +471,7 @@ remove_development_half_monarch_skill_fee = {
 		add_base_manpower = -5
 	}
 	else_if = {
-		limit = { 
+		limit = {
 			owner = {
 				NOT = { MIL = 3 }
 			}
@@ -479,7 +479,7 @@ remove_development_half_monarch_skill_fee = {
 		add_base_manpower = -4
 	}
 	else_if = {
-		limit = { 
+		limit = {
 			owner = {
 				NOT = { MIL = 4 }
 			}
@@ -487,7 +487,7 @@ remove_development_half_monarch_skill_fee = {
 		add_base_manpower = -3
 	}
 	else_if = {
-		limit = { 
+		limit = {
 			owner = {
 				NOT = { MIL = 5 }
 			}
@@ -503,37 +503,37 @@ remove_development_half_monarch_skill_fee = {
 # add_development_third_monarch_skill_fee = yes
 add_development_third_monarch_skill_fee = {
 	if = {
-		limit = { 
+		limit = {
 			owner = { ADM = 6 }
 		}
 		add_base_tax = 2
 	}
 	else_if = {
-		limit = { 
+		limit = {
 			owner = { ADM = 3 }
 		}
 		add_base_tax = 1
 	}
 	if = {
-		limit = { 
+		limit = {
 			owner = { DIP = 6 }
 		}
 		add_base_production = 2
 	}
 	else_if = {
-		limit = { 
+		limit = {
 			owner = { DIP = 3 }
 		}
 		add_base_production = 1
 	}
 	if = {
-		limit = { 
+		limit = {
 			owner = { MIL = 6 }
 		}
 		add_base_manpower = 2
 	}
 	else_if = {
-		limit = { 
+		limit = {
 			owner = { MIL = 3 }
 		}
 		add_base_manpower = 1
@@ -544,54 +544,36 @@ add_development_third_monarch_skill_fee = {
 # remove_development_third_monarch_skill_fee = yes
 remove_development_third_monarch_skill_fee = {
 	if = {
-		limit = { 
+		limit = {
 			owner = {
 				ADM = 3
-				NOT = { ADM = 6 }
 			}
 		}
 		add_base_tax = -1
 	}
-	else_if = {
-		limit = { 
-			owner = {
-				NOT = { ADM = 3 }
-			}
-		}
+	else = {
 		add_base_tax = -2
 	}
 	if = {
-		limit = { 
+		limit = {
 			owner = {
 				DIP = 3
-				NOT = { DIP = 6 }
 			}
 		}
 		add_base_production = -1
 	}
-	else_if = {
-		limit = { 
-			owner = {
-				NOT = { DIP = 3 }
-			}
-		}
+	else = {
 		add_base_production = -2
 	}
 	if = {
-		limit = { 
+		limit = {
 			owner = {
 				MIL = 3
-				NOT = { MIL = 6 }
 			}
 		}
 		add_base_manpower = -1
 	}
-	else_if = {
-		limit = { 
-			owner = {
-				NOT = { MIL = 3 }
-			}
-		}
+	else = {
 		add_base_manpower = -2
 	}
 }
