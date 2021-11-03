@@ -333,7 +333,7 @@ province_event = {
 
 		owner = {
 			add_papal_influence = 10
-			add_years_of_income = 0.083
+			add_years_of_income = 0.3
 		}
 		remove_development_third_monarch_skill_fee = yes
 		add_devastation = 10
