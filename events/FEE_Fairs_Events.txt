@@ -1420,15 +1420,17 @@ province_event = {
 }
 
 #Banquet Invitation
-province_event = {
+country_event = {
 	id = FEE_Fairs_Events.7001
 	title = FEE_Fairs_Events.7001.T
 	desc = FEE_Fairs_Events.7001.D
 	picture = COURT_eventPicture
 
 	trigger = {
-		has_province_flag = fee_trading_fair_banquet_preparation
-		NOT = { has_province_flag = fee_trading_fair_banquet_invitation }
+		any_owned_province = {
+			has_province_flag = fee_trading_fair_banquet_preparation
+			NOT = { has_province_flag = fee_trading_fair_banquet_invitation }
+		}
 	}
 
 	mean_time_to_happen = {
@@ -1436,29 +1438,32 @@ province_event = {
 	}
 
 	immediate = {
-		hidden_effect = { set_province_flag = fee_trading_fair_banquet_invitation }
-	}
-
-	option = {
-		name = FEE_Fairs_Events.7001.OPT1
-
-		owner = { add_prestige = 5 }
-		change_variable = {
-			which = feeTradingFairLevel
-			value = 5
+		hidden_effect = {
+			random_owned_province = { set_province_flag = fee_trading_fair_banquet_invitation }
 		}
-		set_province_flag = fee_trading_fair_banquet_personal
 	}
 
 	option = {
 		name = FEE_Fairs_Events.7001.OPT1
 
-		owner = {
-			every_neighbor_country = {
-				country_event = {
-					id = FEE_Fairs_Events.7002
-					days = 30
-				}
+		add_prestige = 5
+		random_owned_province = {
+			change_variable = {
+				which = feeTradingFairLevel
+				value = 5
+			}
+			limit = { has_province_flag = fee_province_trading_fair_started }
+			set_province_flag = fee_trading_fair_banquet_personal
+		}
+	}
+
+	option = {
+		name = FEE_Fairs_Events.7001.OPT1
+
+		every_neighbor_country = {
+			country_event = {
+				id = FEE_Fairs_Events.7002
+				days = 30
 			}
 		}
 	}
@@ -1543,7 +1548,7 @@ country_event = {
 		}
 
 		FROM = {
-			province_event = {
+			country_event = {
 				id = FEE_Fairs_Events.7003
 				days = 30
 			}
@@ -1608,7 +1613,7 @@ country_event = {
 		}
 
 		FROM = {
-			province_event = {
+			country_event = {
 				id = FEE_Fairs_Events.7004
 				days = 30
 			}
@@ -1617,7 +1622,7 @@ country_event = {
 }
 
 #ROOT Comes to Banquet
-province_event = {
+country_event = {
 	id = FEE_Fairs_Events.7003
 	title = FEE_Fairs_Events.7003.T
 	desc = FEE_Fairs_Events.7003.D
@@ -1628,11 +1633,9 @@ province_event = {
 	option = {
 		name = FEE_Fairs_Events.7003.OPT1
 
-		owner = {
-			add_opinion = {
-				who = FROM
-				modifier = fee_fairs_accepted_invitation
-			}
+		add_opinion = {
+			who = FROM
+			modifier = fee_fairs_accepted_invitation
 		}
 		FROM = {
 			add_opinion = {
@@ -1640,15 +1643,20 @@ province_event = {
 				modifier = fee_fairs_accepted_invitation
 			}
 		}
-		change_variable = {
-			which = feeTradingFairLevel
-			value = 5
+		random_owned_province = {
+			limit = {
+				has_province_flag = fee_province_trading_fair_started
+			}
+			change_variable = {
+				which = feeTradingFairLevel
+				value = 5
+			}
 		}
 	}
 }
 
 #ROOT Does not come to Banquet
-province_event = {
+country_event = {
 	id = FEE_Fairs_Events.7004
 	title = FEE_Fairs_Events.7004.T
 	desc = FEE_Fairs_Events.7004.D
@@ -1659,11 +1667,9 @@ province_event = {
 	option = {
 		name = FEE_Fairs_Events.7004.OPT1
 
-		owner = {
-			add_opinion = {
-				who = FROM
-				modifier = fee_fairs_declined_invitation
-			}
+		add_opinion = {
+			who = FROM
+			modifier = fee_fairs_declined_invitation
 		}
 		FROM = {
 			add_opinion = {
@@ -1671,9 +1677,14 @@ province_event = {
 				modifier = fee_fairs_declined_invitation
 			}
 		}
-		change_variable = {
-			which = feeTradingFairLevel
-			value = -5
+		random_owned_province = {
+			limit = {
+				has_province_flag = fee_province_trading_fair_started
+			}
+			change_variable = {
+				which = feeTradingFairLevel
+				value = -5
+			}
 		}
 	}
 }
