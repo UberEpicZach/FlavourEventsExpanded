@@ -24,6 +24,10 @@ country_event = {
 		hidden_effect = { set_country_flag = fee_jew_sicily_initial_event }
 	}
 
+	mean_time_to_happen = {
+		months = 12
+	}
+
 	option = {
 		name = FEE_Jew_Italy_Events.1.OPT1
 		ai_chance = {
@@ -210,7 +214,7 @@ province_event = {
 		owner = {
 			add_prestige = 3
 			add_papal_influence = 10
-			add_mil_power = 8
+			add_mil_power = 10
 		}
 		hidden_effect = {
 			change_variable = {
@@ -278,7 +282,7 @@ province_event = {
 	}
 }
 
-#Hebrew under Alfonso V
+#Jews of Root.GetName
 province_event = {
 	id = FEE_Jew_Italy_Events.4
 	title = FEE_Jew_Italy_Events.4.T
@@ -292,10 +296,19 @@ province_event = {
 			area = western_sicily_area
 			area = sicily_area
 		}
+		NOT = { has_province_flag = fee_jew_sicily_jews_of_root }
 	}
 
 	mean_time_to_happen = {
 		months = 12
+	}
+
+	goto = ROOT
+
+	immediate = {
+		hidden_effect = {
+			set_province_flag = fee_jew_sicily_jews_of_root
+		}
 	}
 
 	option = {
@@ -329,7 +342,11 @@ province_event = {
 					add_development_third_monarch_skill_fee = yes
 				}
 			}
-			75 = { add_devastation = 15 }
+			75 = {
+				random_neighbor_province = {
+					add_devastation = 15
+				}
+			}
 		}
 	}
 
