@@ -377,6 +377,7 @@ province_event = {
 			area = western_sicily_area
 			area = sicily_area
 		}
+		NOT = { province_id = 126 }
 	}
 
 	major = yes
