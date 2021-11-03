@@ -14,10 +14,21 @@
  FEE_Jew_Italy_Events.3.OPT1: "We shan't allow the creation"
  FEE_Jew_Italy_Events.3.OPT2: "We will allow the creation"
 
+ FEE_Jew_Italy_Events.4.T: "Jews of [Root.GetName]"
+ FEE_Jew_Italy_Events.4.D: "Under later kings the Giudecca were often seen their rights completely revoked due to the greed and zealot of many rulers, but [Root.Monarch.GetName], [Root.Monarch.GetTitle] of [Root.GetName] has decreed that, regarding the Giudecca of [Root.GetName] the Jewish community, that has lived in this city for millenia now, under protection of the many population that ruled these island, arabs, byzantines, greeks, romans, normans and now us shall"
+ FEE_Jew_Italy_Events.4.OPT1: "We don't care about them, expel em!"
+ FEE_Jew_Italy_Events.4.OPT2: "Our brothers in faith shall stay in their communities"
+
+ FEE_Jew_Italy_Events.5.T: "Expulsion of 1492"
+ FEE_Jew_Italy_Events.5.D: "We also order in this edict that Jews and Jews of any age residing in our domains or territories leave with their sons and daughters, servants and relatives of all ages at the end of July this year and that they dare not return to our lands. and do not take a step forward to trespass in the way that if a Jew who does not accept this edict is found in or returns to these domains, he will be sentenced to death and confiscation of his property."
+ FEE_Jew_Italy_Events.5.OPT1: "Remove the infedels!"
+ FEE_Jew_Italy_Events.5.OPT2: "How could we turn our back on them?"
+
  #Estate Modifiers
 
  #Event Modifiers
-
+ italian_jew_allowed_stay: "Jewish-Italian Community"
+ italian_jew_allowed_stay_2: "Reneewed Jewish-Italian Community"
 
  #Opinion Modifiers
 
