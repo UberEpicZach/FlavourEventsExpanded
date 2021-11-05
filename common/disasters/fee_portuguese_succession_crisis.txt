@@ -1,0 +1,86 @@
+fee_portuguese_succession_crisis = {
+	potential = {
+		tag = POR
+		NOT = { has_country_flag = had_fee_portuguese_succession_crisis }
+		OR = {
+			current_age = age_of_discovery
+			current_age = age_of_reformation
+		}
+		government = monarchy
+		is_free_or_tributary_trigger = yes
+	}
+	can_start = {
+		current_age = age_of_reformation
+		NOT = { legitimacy = 50 }
+		has_any_disaster = no
+	}
+	can_stop = {
+		OR = {
+			has_any_disaster = yes
+			NOT = { government = monarchy }
+			is_lesser_in_union = yes
+		}
+	}
+	progress = {
+		modifier = {
+			factor = 3
+			NOT = { months_of_ruling = 60 }
+		}
+		modifier = {
+			factor = 2
+			has_new_dynasty = yes
+		}
+		modifier = {
+			factor = 1
+			NOT = { stability = 1 }
+		}
+		modifier = {
+			factor = 1
+			NOT = { stability = 0 }
+		}
+		modifier = {
+			factor = 1
+			NOT = { legitimacy = 90 }
+		}
+		modifier = {
+			factor = 1
+			has_heir = no
+		}
+	}
+	can_end = {
+		hidden_trigger = {
+			has_country_flag = had_fee_portuguese_succession_crisis # don't want this to end before you pick an option, potentially
+		}
+		OR = {
+			is_lesser_in_union = yes
+			AND = {
+				stability = 3
+				NOT = { num_of_rebel_armies = 1 }
+				NOT = { num_of_rebel_controlled_provinces = 1 }
+			}
+		}
+	}
+	modifier = {
+		global_unrest = 5
+		legitimacy = -5
+		stability_cost_modifier = 0.5
+		monthly_heir_claim_increase = -1
+		block_introduce_heir = yes
+	}
+
+	on_start = disaster_fee_portuguese_succession_crisis.1
+	on_end = disaster_fee_portuguese_succession_crisis.2
+
+	on_monthly = {
+		events = {
+		}
+		random_events = {
+			1000 = 0
+			100 = disaster_fee_portuguese_succession_crisis.3
+			100 = disaster_fee_portuguese_succession_crisis.4
+			200 = disaster_fee_portuguese_succession_crisis.5
+			100 = disaster_fee_portuguese_succession_crisis.9
+			150 = disaster_fee_portuguese_succession_crisis.10
+		}
+	}
+}

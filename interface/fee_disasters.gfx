@@ -1,0 +1,14 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_disaster_fee_portuguese_succession_crisis"
+		texturefile = "gfx/interface/disasters/fee_portuguese_succession_crisis.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_disaster_fee_decline_of_the_ottomans"
+		texturefile = "gfx/interface/disasters/fee_decline_of_the_ottomans.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+}

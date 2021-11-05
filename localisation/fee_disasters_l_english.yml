@@ -1,0 +1,192 @@
+﻿l_english:
+ # Disasters:
+ fee_portuguese_succession_crisis: "Portuguese Succession Crisis"
+ fee_decline_of_the_ottomans: "Decline of the Ottomans"
+
+ # Events:
+ disaster_fee_portuguese_succession_crisis.EVTNAME1: "Portuguese Succession Crisis"
+ disaster_fee_portuguese_succession_crisis.EVTDESC1: "As a result of [Root.Monarch.GetHerHis] shaky claim to the [Root.GetAdjective] throne, [Root.Monarch.GetName]'s ascension to the [Root.GetAdjective] throne prompted a dynastic crisis. Several claimants have gathered supporters and declared themselves the rightful kings of [Root.GetName]. The confusion has led to a breakdown of law and order within the Kingdom as various pretenders fight each other as well as the central government in [Root.Capital.GetName]."
+ disaster_fee_portuguese_succession_crisis1.EVTOPT1: "Support the Monarch!"
+ disaster_fee_portuguese_succession_crisis1.EVTOPT2: "Support a New King!"
+
+ disaster_fee_portuguese_succession_crisis.EVTNAME2: "The Succession is Secure"
+ disaster_fee_portuguese_succession_crisis.EVTDESC2: "After a long and bitter struggle, the last rebelling army has laid down their arms. Regardless of whether the new king is lawful or even legitimate, the fact is that he has enforced his rule and none are left who can now challenge him. In any case, few would wish to return to the chaos and anarchy of the previous years. As the crown manages to regain control over the kingdom, the [Root.GetAdjective] people breathe a sigh of relief as they look for a recovery of prosperity in the future."
+ disaster_fee_portuguese_succession_crisis2.EVTOPT1: "At least the fighting is over..."
+
+ disaster_fee_portuguese_succession_crisis.EVTNAME3: "Spread of Civil War"
+ disaster_fee_portuguese_succession_crisis.EVTDESC3: "Prominent nobles in [Root.GetName] have joined the revolt and taken up arms against us."
+ disaster_fee_portuguese_succession_crisis3.EVTOPT1: "No Loyalty..."
+
+ disaster_fee_portuguese_succession_crisis.EVTNAME4: "Chaos Engulfs the Provinces"
+ disaster_fee_portuguese_succession_crisis.EVTDESC4: "Protesting their new king, widely seen as illegitimate, as well as the breakdown of central control and the rule of law, peasants and burghers alike have taken up arms themselves. Seeking to overthrow the nobility, they ironically rebel to demand a return to order."
+ disaster_fee_portuguese_succession_crisis4.EVTOPT1: "How strange..."
+
+ disaster_fee_portuguese_succession_crisis.EVTNAME5: "The Cardinal who would be King"
+ disaster_fee_portuguese_succession_crisis.EVTDESC5: "In addition to the royal and noble claimants to the throne, the uncle of the late king, a Cardinal, has also sought to become ruler, and rather successfully. In seeking to revive the fortunes of the Avis dynasty, he also plans to petition the Pope to revoke his clerical position and take a royal bride."
+ disaster_fee_portuguese_succession_crisis5.EVTOPT1: "Support him as the true King."
+ disaster_fee_portuguese_succession_crisis5.EVTOPT2: "We don't need him."
+
+ disaster_fee_portuguese_succession_crisis.EVTNAME6: "A Special Request"
+ disaster_fee_portuguese_succession_crisis.EVTDESC6: "In an effort to curtail the unrest in [From.GetName], a Cardinal has used his position as uncle of the late king to seize the throne. In order to secure his family line, he asks us to release him from his clerical vow of celibacy."
+ disaster_fee_portuguese_succession_crisis6.EVTOPT1: "Accept his request."
+ disaster_fee_portuguese_succession_crisis6.EVTOPT2: "It is against the Church!"
+
+ disaster_fee_portuguese_succession_crisis.EVTNAME7: "Holy Father Accepts"
+ disaster_fee_portuguese_succession_crisis.EVTDESC7: "With a heart full of love for his flock in [Root.GetName], the Holy Father has granted our request to put aside [Root.Monarch.GetName]'s vows for the good of the country."
+ disaster_fee_portuguese_succession_crisis7.EVTOPT1: "The throne grows more secure!"
+
+ disaster_fee_portuguese_succession_crisis.EVTNAME8: "Holy Father Refuses"
+ disaster_fee_portuguese_succession_crisis.EVTDESC8: "Undoubtedly influenced by those who wish us harm, the Pope has refused our reasonable request."
+ disaster_fee_portuguese_succession_crisis8.EVTOPT1: "There is nothing to be done..."
+
+ disaster_fee_portuguese_succession_crisis.EVTNAME9: "Nobility Worried"
+ disaster_fee_portuguese_succession_crisis.EVTDESC9: "Concerned that the ongoing succession crisis threatens to undermine their own independence, the [Root.GetAdjective] nobility have sought to get rid of pretenders... themselves."
+ disaster_fee_portuguese_succession_crisis9.EVTOPT1: "This is fine..."
+
+ disaster_fee_portuguese_succession_crisis.EVTNAME11: "Portuguese Succession Crisis"
+ disaster_fee_portuguese_succession_crisis.EVTDESC11: "While for centuries being the most stable of the Iberian crowns, recent years have seen [From.GetName] fall into disarray due to the succession crisis. This would be a perfect opportunity for us, as the rightful rulers of all of Hispania, should we choose to risk involvement."
+ disaster_fee_portuguese_succession_crisis11.EVTOPT1: "Interfere in [From.GetName]."
+ disaster_fee_portuguese_succession_crisis11.EVTOPT2: "[From.GetName] is our friend and ally!"
+
+ disaster_fee_portuguese_succession_crisis.EVTNAME12: "Spanish Involvement"
+ disaster_fee_portuguese_succession_crisis.EVTDESC12: "Having not forgotten their claims to the whole peninsula, the self-proclaimed King of "Spain" has decided to pursue his own claim on our throne."
+ disaster_fee_portuguese_succession_crisis12.EVTOPT1: "We must prepare for invasion!"
+
+ disaster_fee_decline_of_the_ottomans.EVTNAME1: "The Decline of the Ottomans"
+ disaster_fee_decline_of_the_ottomans.EVTDESC1: "While the rest of the world changed and entered modernity, the Ottoman Empire did not. Their strength in earlier ages left them complacent and strongly opposed to change. The Sultans themselves largely withdrew from governance and enjoyed their harems while corrupt nobles, radical clergymen, and the decadent, outmoded officer corps, and others vied for true control over the empire. In addition, control by the central government, known as the Sublime Porte, is rapidly waning in the face of this decadence, as provincial governors often function more and more independently. The Ottomans were still feared throughout Europe for their mighty armies, but if the system is not reformed quickly, the Turkish weakness will not long continue to go unnoticed..."
+ disaster_fee_decline_of_the_ottomans1.EVTOPT1: "The Empire must endure!"
+
+ disaster_fee_decline_of_the_ottomans.EVTNAME2: "Tanzimat"
+ disaster_fee_decline_of_the_ottomans.EVTDESC2: "After the long years of decay, [Root.Monarch.GetName] has finally managed to right the ship of state and begin the long period of recovery. His vision, known as Tanzimat (Reform), intends to reshape the Ottoman state into a functioning modern society. By curtailing the ruling classes, ensuring equal protection of the laws for all, and reforming institutions from top to bottom, the Sultanate may yet survive into the modern era as a Great Power, or at least as a respectable state."
+ disaster_fee_decline_of_the_ottomans2.EVTOPT1: "One can only hope it is not too late..."
+
+ disaster_fee_decline_of_the_ottomans.EVTNAME3: "Stagnating Economy"
+ disaster_fee_decline_of_the_ottomans.EVTDESC3: "While the Ottoman Empire grew rich on trade and production of luxury goods, the timar system by which they governed their vast empire proved an obstacle to further economic development. This semi-feudal system led to an increasingly strong focus on agricultural productivity at the expense of investing in industry, which in any case was stifled by the inflexible land divisions. This results in weak economic growth and increasing difficulty keeping up with the industrial powers of Europe."
+ disaster_fee_decline_of_the_ottomans3.EVTOPT1: "I'm not seeing the problem..."
+
+ disaster_fee_decline_of_the_ottomans.EVTNAME4: "Illiterate Populace"
+ disaster_fee_decline_of_the_ottomans.EVTDESC4: "Due to a variety of factors, including an emphasis on war and the officer class, Ottoman society began to lack greatly behind the Western Powers in terms of education. Hovering between 5% and 10% total literacy, the Ottomans increasingly became unable to keep up with the rest of Europe in technological innovation and business methods."
+ disaster_fee_decline_of_the_ottomans4.EVTOPT1: "We need to educate the kids who can't read good..."
+
+ disaster_fee_decline_of_the_ottomans.EVTNAME5: "Failures of the Timar System"
+ disaster_fee_decline_of_the_ottomans.EVTDESC5: "The Timar system served the Ottoman Empire well in its initial years of expansion, when taxation was the primary source of income for most governments and recruiting soldiers for war was the Ottomans' top priority. Now, this system is rapidly becoming outmoded. Worse, the declining control of the Sublime Porte has allowed the Timars to begin exploiting the land for their own short-term gain rather than effectively manage it. This deprived the Ottoman state of a stable, long-term revenue source. In addition, this also forced peasants off their lands and into cities, simultaneously reducing the number of productive rural workers while increasing the dependency of the city for food."
+ disaster_fee_decline_of_the_ottomans5.EVTOPT1: "Unfortunate..."
+
+ disaster_fee_decline_of_the_ottomans.EVTNAME6: "Debasing Currency"
+ disaster_fee_decline_of_the_ottomans.EVTDESC6: "As the economic situation of the empire continued to deteriorate, the Sultanate began to devalue its currency in order to pay its armies and bureaucracy. However, even worse were the provincial governors doing the same thing. Free from any personal consequences to themselves from the general decline in value, they freely printed and minted worthless coinage to enrich themselves at the expense of the Empire."
+ disaster_fee_decline_of_the_ottomans6.EVTOPT1: "These Jackals will be the end of us!"
+
+ disaster_fee_decline_of_the_ottomans.EVTNAME7: "The Decline of Ottoman Trade Dominance"
+ disaster_fee_decline_of_the_ottomans.EVTDESC7: "Once the sole arbiter of trade between Asia, Africa, and Europe, the Ottomans grew wealthy on monopolizing trade. However, the rise of colonialism has rendered most of the ancient overland trade routes to Asia obsolete, and even the vaunted Red Sea route has begun to decline as new routes to India, along with trade from the New World, leave Ottoman traders behind. What was once a geographically advantageous position, dominating the Mediterranean, has become a geographic prison."
+ disaster_fee_decline_of_the_ottomans7.EVTOPT1: "We shall recover... eventually!"
+
+ disaster_fee_decline_of_the_ottomans.EVTNAME8: "More Economic Downturn"
+ disaster_fee_decline_of_the_ottomans.EVTDESC8: "From its inception, the Ottoman Sultanate was a warlike state with its priority firmly on a strong army and expansionism rather than the development of a home economy. In the era when spoils were more common, the armies could often be paid by such spoils. As the Ottomans ran out of easy expansion routes however, the lack of economic growth began to snowball as the army became more expensive. Now that we are on the backfoot militarily, the situation has only gotten worse. We must either invest in our own industry, or find new conquests... or both."
+ disaster_fee_decline_of_the_ottomans8.EVTOPT1: "If a shark does not swim, it sinks..."
+
+ disaster_fee_decline_of_the_ottomans.EVTNAME9: "Celali Revolts"
+ disaster_fee_decline_of_the_ottomans.EVTDESC9: "The increasing instability and economic decline has led to anarchy in much of the countryside nominally part of the empire. The discontent with lack of adequate food, the failure to maintain law and order, and the resentment against the Sultan and his lords alike, has led to simmering anger for quite some time. \n\nNow, a radical travelling Shi'ite cleric, known only as Celal, has whipped the already angry people into a fury. The Celali revolts, as they came to be called, were ostensibly a religious uprising but were more an expression of general discontent."
+ disaster_fee_decline_of_the_ottomans9.EVTOPT1: "Dispatch the Army and crush them!"
+
+ disaster_fee_decline_of_the_ottomans.EVTNAME10: "Price Controls"
+ disaster_fee_decline_of_the_ottomans.EVTDESC10: "As food becomes scarcer, merchants often feel as if they have no choice but to gouge the starving peasants clamoring to buy their bread. A debate among the viziers has broken out about how to address this. Some insist that the only morally right option is to put in price controls to alleviate the poor's suffering, while others say that the potential ruin of the traders helps no one. In fact, while price controls may alleviate poverty and starvation, the ripple effect on the economy at large could theoretically be catastrophic."
+ disaster_fee_decline_of_the_ottomans10.EVTOPT1: "Bread must be at a fair price!"
+ disaster_fee_decline_of_the_ottomans10.EVTOPT2: "We must not interfere with the merchants!"
+ disaster_fee_decline_of_the_ottomans10.EVTOPT3: "We will buy the bread ourselves and distribute it to the people!"
+
+ disaster_fee_decline_of_the_ottomans.EVTNAME11: "Corrupt Landholding"
+ disaster_fee_decline_of_the_ottomans.EVTDESC11: "As part of the Sublime Porte's method of governing its vast domains, large... tracts of land were handed off to various noble houses and mosques as theirs to govern on behalf of the Sultan. The greed that inevitably resulted in reduced incomes and increased privatization of the land taxes has plagued the empire since its inception. Now, however, as other problems come to the forefront, this problem has become more prominent, as well as getting worse in the confusion."
+ disaster_fee_decline_of_the_ottomans11.EVTOPT1: "There was nothing to be done..."
+ disaster_fee_decline_of_the_ottomans11.EVTOPT2: "We must arrest those responsible!"
+
+ disaster_fee_decline_of_the_ottomans.EVTNAME12: "Balkan Separatism"
+ disaster_fee_decline_of_the_ottomans.EVTDESC12: "The Sublime Porte has always ruled over an uneasy mixture of peoples, religions, and subject nations. Despite claims by the Sultans and their supporters both here and abroad, the relationship of our Balkan subjects to us in particular has always been one of master and servant. Tired of religious discrimination, foreign high taxes, and forced conscription into the Sultanate's army, many have grown to bitterly resent their second-class citizen status. \n\nIn our moment of weakness, these diverse populations have begun to set wheels in motion to bring about their independence and our downfall..."
+ disaster_fee_decline_of_the_ottomans12.EVTOPT1: "Only time will tell what this may bring..."
+
+ disaster_fee_decline_of_the_ottomans.EVTNAME13: "Hungarian Separatism"
+ disaster_fee_decline_of_the_ottomans.EVTDESC13: "More than just simply one of the many ethnicities of our empire, Hungarians under our rule remember the days when they were a powerful rival to the Ottomans in their own right. Our rivals have taken advantage of this, sowing seperatist sentiment in old Hungarian lands..."
+ disaster_fee_decline_of_the_ottomans13.EVTOPT1: "Okay."
+
+ disaster_fee_decline_of_the_ottomans.EVTNAME14: "Croat Resistance"
+ disaster_fee_decline_of_the_ottomans.EVTDESC14: "When the Ottoman Empire made its initial rapid advance across the Balkans, the small but old and proud Christian kingdom of Croatia made a stubborn stand which halted the empire's progress for years. Now, the memory of these "heroes," combined with our current weakness, has encouraged a new generation of Croats to take up arms against us..."
+ disaster_fee_decline_of_the_ottomans14.EVTOPT1: "That's all we needed..."
+
+ disaster_fee_decline_of_the_ottomans.EVTNAME15: "Romanian Uprising"
+ disaster_fee_decline_of_the_ottomans.EVTDESC15: "Although a nation known as "Rumania" has never existed, and did not exist when we conquered the people now known as Romanians, that has apparently not stopped them of dreaming of a nation-state of their own."
+ disaster_fee_decline_of_the_ottomans15.EVTOPT1: "How dare they..."
+
+ disaster_fee_decline_of_the_ottomans.EVTNAME16: "Bulgarian Awakening"
+ disaster_fee_decline_of_the_ottomans.EVTDESC16: "Since the HRE-backed revolts of 1408, Bulgaria has long been one of the most tranquil parts of the empire. Thankfully so, for its proximity to Konstantiniyye made it especially critical to the empire's infrastructure and military. \n\nIn this new age, however, the wave of national consciousness sweeping the Balkans has awaken long-dormant separatism in Bulgaria once again. An illicit book by an Orthodox monk, titled the Istoriya Slavyabolgarskaya (The Slavonic Bulgarian History) has sparked a "National Awakening." The most radical of these have already begun taking up arms against us, but more are sure to follow..."
+ disaster_fee_decline_of_the_ottomans16.EVTOPT1: "Crush them!"
+
+ disaster_fee_decline_of_the_ottomans.EVTNAME17: "Great Bosnian Uprising"
+ disaster_fee_decline_of_the_ottomans.EVTDESC17: "Although efforts to Turkify and convert the Bosnian population to Islam have met with greater success than elsewhere in the Balkans, this has done little to dim the nationalism and independence fervor sweeping the region. Several prominent nobles have raised armies demanding independence."
+ disaster_fee_decline_of_the_ottomans17.EVTOPT1: "Fools! They will be dealt with..."
+
+ disaster_fee_decline_of_the_ottomans.EVTNAME18: "Serbian Revolution"
+ disaster_fee_decline_of_the_ottomans.EVTDESC18: "The Serbs, long poised on the frontier between the Ottomans and their rivals, enjoyed a particular degree of autonomy. This, however, has not endeared them to us. Far from it, in fact! The autonomy they enjoy has only given them a taste for full independence. In addition, new ideas of constitutionalism and equal rights have taken root here more than many places in the empire. Combined with seperatist, religious, and local elites' forces, we have a perfect storm brewing..."
+ disaster_fee_decline_of_the_ottomans18.EVTOPT1: "No one can remove us!"
+
+ disaster_fee_decline_of_the_ottomans.EVTNAME19: "Ottoman Superiority Questioned"
+ disaster_fee_decline_of_the_ottomans.EVTDESC19: "In the earlier ages, when Ottoman superiority over both the kafirs in Europe and our enemies elsewhere was undeniable, there was little reason to question our ways. Now that the rest of the world has caught up, with some rumors even saying we have fallen behind, murmurs among the elite threaten to depose this image of superiority. If we decide to heed these seditious voices, we may be able to learn from our enemies and reverse our defeats. However, this could threaten the already-teetering structure of the empire..."
+ disaster_fee_decline_of_the_ottomans19.EVTOPT1: "Nothing an infidel can come up with can match our glorious empire!"
+ disaster_fee_decline_of_the_ottomans19.EVTOPT2: "We can learn from our enemies as well as inevitably defeat them."
+
+ disaster_fee_decline_of_the_ottomans.EVTNAME20: "Contacts with the West"
+ disaster_fee_decline_of_the_ottomans.EVTDESC20: "As the Ottoman Empire is in decline, a small sector of the elites have chosen to send their children to study in Europe rather than immersing them in our ways. Now, these young men are returning to the Sublime Porte filled with marvelous tales about technological advancements, new cultural achievements, and new ideas of governance from the West. For now, they are few in number and pose no threat, should we determine these notions are, in fact, threatening. We may choose to risk these ideas in order to create a more flexible, and thus durable, society. Alternatively, the clergy warns against these infidel ideas, and after all the new politics that comes with them may undermine our Islamic Empire..."
+ disaster_fee_decline_of_the_ottomans20.EVTOPT1: "Encourage more openness with the West!"
+ disaster_fee_decline_of_the_ottomans20.EVTOPT2: "We must not allow these heathen ideas to disturb the Caliphate."
+
+ disaster_fee_decline_of_the_ottomans.EVTNAME21: "Famine in the Cities"
+ disaster_fee_decline_of_the_ottomans.EVTDESC21: "The ongoing revolts have had multiple deleterious effects on the Sublime Porte's ability to feed its own people. While peasants fleeing the violence and corrupt landlords are flooding into our cities, those same events are preventing us from bringing in enough food to even feed those already residing there. The grim reaper of urban famine, with its close companion, plague, has followed the peasants into the cities. Soon the promised safety of the walls became a prison. Despairing of their lot in life, these peasants have now turned violent..."
+ disaster_fee_decline_of_the_ottomans21.EVTOPT1: "Alas that these evil days should be mine!"
+
+ disaster_fee_decline_of_the_ottomans.EVTNAME22: "Decadent Ruling Classes"
+ disaster_fee_decline_of_the_ottomans.EVTDESC22: "Even in its hour of need, it is becoming clear that the Sublime Porte cannot rely on its ruling classes for help. Indeed, their decadence has in large part contributed to our decline. With each passing year nobility and clergy alike become less loyal to the Sultan. Many have carved out private fiefdoms for themselves and pay next to no tribute to the capital."
+ disaster_fee_decline_of_the_ottomans22.EVTOPT1: "We have no choice but to give them free rein."
+ disaster_fee_decline_of_the_ottomans22.EVTOPT2: "We must stop this!"
+
+ disaster_fee_decline_of_the_ottomans.EVTNAME23: "Rise of the Hayduks"
+ disaster_fee_decline_of_the_ottomans.EVTDESC23: "Taking advantage of the chaos in the Balkans, a sharp increase in the number of armed bandits has plagued commerce and troop movements. Hailed by our enemies as "freedom-fighters", we who actually have to deal with them know they are nothing more than brigands."
+ disaster_fee_decline_of_the_ottomans23.EVTOPT1: "Unbelievable..."
+
+ disaster_fee_decline_of_the_ottomans.EVTNAME24: "Greek Revolts!"
+ disaster_fee_decline_of_the_ottomans.EVTDESC24: "Chu, you forgot the localisation for this one, SMH!"
+ disaster_fee_decline_of_the_ottomans24.EVTOPT1: "Let them fight for their "freedom" and see how much it costs them..."
+
+ disaster_fee_decline_of_the_ottomans.EVTNAME25: "Greece Declares Independence!"
+ disaster_fee_decline_of_the_ottomans.EVTDESC25: "After centuries of domination by the Ottomans, the Greeks have finally struck out to reclaim their place as an independent nation. Should we ally with this new state and help them to secure their freedom?"
+ disaster_fee_decline_of_the_ottomans25.EVTOPT1: "The Greeks must be liberated!"
+ disaster_fee_decline_of_the_ottomans25.EVTOPT2: "Let the Turks handle their own affairs."
+
+ # Modifiers:
+ fee_portuguese_succession_crisis_chaste_king: "Chaste King"
+ fee_portuguese_succession_crisis_invasion_imminent: "Spanish Invasion Imminent"
+ fee_portuguese_succession_crisis_resolved: "Succession Crisis Resolved"
+
+ fee_decline_of_the_ottomans_tanzimat: "Tanzimat"
+ fee_decline_of_the_ottomans_illiterate: "Illiterate"
+ fee_decline_of_the_ottomans_timar_system_failure: "Timar System Failure"
+ fee_decline_of_the_ottomans_ottoman_trade_decline: "Ottoman Trade Decline"
+ fee_decline_of_the_ottomans_economic_adjustments: "Economic Adjustments"
+ fee_decline_of_the_ottomans_price_controls: "Price Controls"
+ fee_decline_of_the_ottomans_starving_poor: "Starving Poor"
+ fee_decline_of_the_ottomans_increased_openness: "Increased Openness"
+ fee_decline_of_the_ottomans_closed_borders: "Closed Borders"
+ fee_decline_of_the_ottomans_hungarian_separatism: "Hungarian Separatism"
+ fee_decline_of_the_ottomans_hayduks: "Hayduks"
+ fee_decline_of_the_ottomans_greek_freedom_fighters: "Greek Freedom Fighters"
+
+ # Opinion Modifiers:
+ fee_portuguese_succession_crisis_acceptance: "Holy Father Accepted"
+ fee_portuguese_succession_crisis_rejection: "Holy Father Refused"
+ fee_portuguese_succession_crisis_involvement: "Spanish Involvement"
+ fee_portuguese_succession_crisis_grateful: "Grateful"
+
+ fee_decline_of_the_ottomans_greece_opinion: "Supported Our Independence"
+
+ # Tooltips:
+ PORTUGUESE_SUCCESSION_CRISIS_BREAK_ALLIANCE_WITH_POR_TT: "§Y[Root.GetName]§! breaks their alliance with §Y[From.GetName]§!."
+ PORTUGUESE_SUCCESSION_CRISIS_NEW_RULER_WILL_GAIN_INFERTILE_TRAIT_TT: "He will gain the §YInfertile§! trait.\n"
+
+ HAD_FEE_DECLINE_OF_THE_OTTOMANS_FOR_15_YEARS_TT: "Had the '§YDecline of the Ottomans§!' disaster for at least §Y15 years§!"
