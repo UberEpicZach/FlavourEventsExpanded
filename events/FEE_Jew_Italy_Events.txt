@@ -17,11 +17,11 @@ country_event = {
 				owned_by = ROOT
 			}
 		}
-		NOT = { has_country_flag = fee_jew_sicily_initial_event }
+		NOT = { has_country_flag = fee_jew_initial_event }
 	}
 
 	immediate = {
-		hidden_effect = { set_country_flag = fee_jew_sicily_initial_event }
+		hidden_effect = { set_country_flag = fee_jew_initial_event }
 	}
 
 	mean_time_to_happen = {
@@ -34,7 +34,7 @@ country_event = {
 			factor = 50
 		}
 
-		custom_tooltip = FEE_JEW_SICILY_START_OPPOSE_TT
+		custom_tooltip = FEE_JEW_START_OPPOSE_TT
 		add_mil_power = 25
 
 		add_country_modifier = {
@@ -53,7 +53,7 @@ country_event = {
 			factor = 50
 		}
 
-		custom_tooltip = FEE_JEW_SICILY_START_APPROVE_TT
+		custom_tooltip = FEE_JEW_START_APPROVE_TT
 		add_dip_power = 25
 
 		add_country_modifier = {

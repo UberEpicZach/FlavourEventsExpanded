@@ -1389,6 +1389,7 @@ province_event = {
 	picture = COURT_eventPicture
 
 	trigger = {
+		has_province_modifier = fee_trading_fair
 		has_global_flag = fee_trading_fairs_enabled
 		NOT = { current_age = age_of_revolutions }
 		NOT = { current_age = age_of_absolutism }
