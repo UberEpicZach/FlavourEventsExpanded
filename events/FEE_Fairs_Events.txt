@@ -79,7 +79,7 @@ country_event = {
 				set_province_flag = fee_province_trading_fair_started
 				province_event = {
 					id = FEE_Fairs_Events.3
-					days = 90
+					days = 30
 				}
 			}
 			clr_country_flag = fee_trading_fair_started
@@ -124,6 +124,18 @@ province_event = {
 			set_variable = {
 				which = feeTradingFairLevel
 				value = 0
+			}
+			if = {
+				limit = {
+					owner = {
+						NOT = {
+							any_owned_province = {
+								has_province_flag = fee_first_trading_fair
+							}
+						}
+					}
+				}
+				set_province_flag = fee_first_trading_fair
 			}
 		}
 		add_province_modifier = {
@@ -195,6 +207,34 @@ country_event = {
 	}
 }
 
+#Original Trading Fairs
+province_event = {
+	id = FEE_Fairs_Events.6
+	title = FEE_Fairs_Events.6.T
+	desc = FEE_Fairs_Events.6.D
+	picture = CARAVAN_EVENT_Picture
+
+	trigger = {
+		is_institution_enabled = global_trade
+		has_global_flag = fee_trading_fairs_enabled
+		has_province_flag = fee_first_trading_fair
+		NOT = { has_province_modifier = fee_trading_fair }
+	}
+
+	mean_time_to_happen = {
+		years = 1
+	}
+
+	option = {
+		name = FEE_Fairs_Events.6.OPT1
+
+		add_permanent_province_modifier = {
+			name = fee_trading_fair
+			duration = -1
+		}
+	}
+}
+
 #Ruler goes to the trading fair
 province_event = {
 	id = FEE_Fairs_Events.3000
@@ -221,7 +261,7 @@ province_event = {
 		}
 		
 		owner = {
-			add_prestige = 10
+			add_prestige = 5
 		}
 		set_province_flag = fee_province_trading_fair_ruler_goes_to_fair
 		change_variable = {
@@ -637,6 +677,7 @@ province_event = {
 			owner = {
 				clr_country_flag = fee_trading_fair_banquet_invitation
 			}
+			remove_province_modifier = fee_trading_fair
 
 			set_variable = {
 				which = feeTradingFairLevel
@@ -658,7 +699,7 @@ province_event = {
 		has_province_flag = fee_province_trading_fair_started
 		had_province_flag = {
 			flag = fee_province_trading_fair_started
-			days = 3650
+			days = 1095
 		}
 		NOT = { has_province_flag = fee_province_trading_fair_nomad_accepted }
 		NOT = { has_province_flag = fee_province_trading_fair_nomad_repulsed }
@@ -710,7 +751,7 @@ province_event = {
 		has_province_modifier = fee_trading_fair
 		had_province_flag = {
 			flag = fee_province_trading_fair_started
-			days = 3650
+			days = 90
 		}
 		has_province_flag = fee_province_trading_fair_nomad_accepted
 		NOT = { has_province_flag = fee_province_trading_fair_nomad_fire }
@@ -1140,7 +1181,7 @@ province_event = {
 		has_province_modifier = fee_trading_fair
 		had_province_flag = {
 			flag = fee_province_trading_fair_nomad_accepted
-			days = 1095
+			days = 365
 		}
 		NOT = { has_province_flag = fee_province_trading_fair_dealed_nomad }
 	}
@@ -1148,7 +1189,7 @@ province_event = {
 	goto = ROOT
 	
 	mean_time_to_happen = {
-		months = 18
+		months = 12
 	}
 
 	immediate = {
