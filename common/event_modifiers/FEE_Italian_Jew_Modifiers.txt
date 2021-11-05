@@ -1,12 +1,14 @@
+fee_jews_value = { }
+
 italian_jew_allowed_stay = {
 	local_build_cost = -0.075
 	local_tax_modifier = 0.075
-	local_missionary_maintenance_cost = -0.025
+	local_missionary_strength = -0.025
 }
 italian_jew_allowed_stay_2 = {
 	local_build_cost = -0.125
 	local_tax_modifier = 0.125
-	local_missionary_maintenance_cost = -0.05
+	local_missionary_strength = -0.05
 }
 
 fee_jews_medic = {

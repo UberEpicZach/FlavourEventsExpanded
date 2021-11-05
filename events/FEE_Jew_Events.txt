@@ -1,10 +1,10 @@
-namespace = FEE_Jew_Italy_Events
+namespace = FEE_Jew_Events
 
 #Jews of Sicily
 country_event = {
-	id = FEE_Jew_Italy_Events.1
-	title = FEE_Jew_Italy_Events.1.T
-	desc = FEE_Jew_Italy_Events.1.D
+	id = FEE_Jew_Events.1
+	title = FEE_Jew_Events.1.T
+	desc = FEE_Jew_Events.1.D
 	picture = RELIGIOUS_TURMOIL_eventPicture
 	
 	trigger = {
@@ -29,7 +29,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Jew_Italy_Events.1.OPT1
+		name = FEE_Jew_Events.1.OPT1
 		ai_chance = {
 			factor = 50
 		}
@@ -50,7 +50,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Jew_Italy_Events.1.OPT2
+		name = FEE_Jew_Events.1.OPT2
 		ai_chance = {
 			factor = 50
 		}
@@ -73,9 +73,9 @@ country_event = {
 
 #Savoca
 country_event = {
-	id = FEE_Jew_Italy_Events.2
-	title = FEE_Jew_Italy_Events.2.T
-	desc = FEE_Jew_Italy_Events.2.D
+	id = FEE_Jew_Events.2
+	title = FEE_Jew_Events.2.T
+	desc = FEE_Jew_Events.2.D
 	picture = RELIGIOUS_TURMOIL_eventPicture
 
 	fire_only_once = yes
@@ -89,7 +89,7 @@ country_event = {
 	goto = ROOT
 
 	option = {
-		name = FEE_Jew_Italy_Events.2.OPT1
+		name = FEE_Jew_Events.2.OPT1
 		ai_chance = {
 			factor = 50
 		}
@@ -105,7 +105,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Jew_Italy_Events.2.OPT2
+		name = FEE_Jew_Events.2.OPT2
 		ai_chance = {
 			factor = 50
 		}
@@ -176,9 +176,9 @@ country_event = {
 
 #Giudecca of [Root.GetName]
 province_event = {
-	id = FEE_Jew_Italy_Events.3
-	title = FEE_Jew_Italy_Events.3.T
-	desc = FEE_Jew_Italy_Events.3.D
+	id = FEE_Jew_Events.3
+	title = FEE_Jew_Events.3.T
+	desc = FEE_Jew_Events.3.D
 	picture = RELIGIOUS_TURMOIL_eventPicture
 
 	trigger = {
@@ -205,7 +205,7 @@ province_event = {
 	}
 
 	option = {
-		name = FEE_Jew_Italy_Events.3.OPT1
+		name = FEE_Jew_Events.3.OPT1
 		ai_chance = {
 			factor = 50
 			modifier = {
@@ -243,7 +243,7 @@ province_event = {
 	}
 
 	option = {
-		name = FEE_Jew_Italy_Events.3.OPT2
+		name = FEE_Jew_Events.3.OPT2
 		ai_chance = {
 			factor = 50
 			modifier = {
@@ -297,9 +297,9 @@ province_event = {
 
 #Jews of Root.GetName
 province_event = {
-	id = FEE_Jew_Italy_Events.4
-	title = FEE_Jew_Italy_Events.4.T
-	desc = FEE_Jew_Italy_Events.4.D
+	id = FEE_Jew_Events.4
+	title = FEE_Jew_Events.4.T
+	desc = FEE_Jew_Events.4.D
 	picture = RELIGIOUS_TURMOIL_eventPicture
 
 	trigger = {
@@ -328,7 +328,7 @@ province_event = {
 	}
 
 	option = {
-		name = FEE_Jew_Italy_Events.4.OPT1
+		name = FEE_Jew_Events.4.OPT1
 		trigger = {
 			hidden_trigger = {
 				NOT = {
@@ -377,7 +377,7 @@ province_event = {
 	}
 
 	option = {
-		name = FEE_Jew_Italy_Events.4.OPT2
+		name = FEE_Jew_Events.4.OPT2
 		trigger = {
 			hidden_trigger = {
 				NOT = {
@@ -416,9 +416,9 @@ province_event = {
 
 #Expulsion of 1492
 province_event = {
-	id = FEE_Jew_Italy_Events.5
-	title = FEE_Jew_Italy_Events.5.T
-	desc = FEE_Jew_Italy_Events.5.D
+	id = FEE_Jew_Events.5
+	title = FEE_Jew_Events.5.T
+	desc = FEE_Jew_Events.5.D
 	picture = RELIGIOUS_TURMOIL_eventPicture
 
 	fire_only_once = yes
@@ -443,7 +443,7 @@ province_event = {
 	}
 
 	option = {
-		name = FEE_Jew_Italy_Events.5.OPT1
+		name = FEE_Jew_Events.5.OPT1
 		ai_chance = {
 			factor = 75
 			modifier = {
@@ -505,7 +505,7 @@ province_event = {
 	}
 
 	option = {
-		name = FEE_Jew_Italy_Events.5.OPT2
+		name = FEE_Jew_Events.5.OPT2
 		ai_chance = {
 			factor = 25
 			modifier = {
@@ -551,9 +551,9 @@ province_event = {
 
 #Medic at Court
 country_event = {
-	id = FEE_Jew_Italy_Events.1000
-	title = FEE_Jew_Italy_Events.1000.T
-	desc = FEE_Jew_Italy_Events.1000.D
+	id = FEE_Jew_Events.1000
+	title = FEE_Jew_Events.1000.T
+	desc = FEE_Jew_Events.1000.D
 	picture = ADVISOR_eventPicture
 	
 	trigger = {
@@ -582,7 +582,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Jew_Italy_Events.1000.OPT1
+		name = FEE_Jew_Events.1000.OPT1
 
 		add_ruler_modifier = {
 			name = fee_jews_medic
@@ -593,9 +593,9 @@ country_event = {
 
 #
 #country_event = {
-#	id = FEE_Jew_Italy_Events.
-#	title = FEE_Jew_Italy_Events..T
-#	desc = FEE_Jew_Italy_Events..D
+#	id = FEE_Jew_Events.
+#	title = FEE_Jew_Events..T
+#	desc = FEE_Jew_Events..D
 #	picture = RELIGIOUS_TURMOIL_eventPicture
 #
 #	fire_only_once = yes
@@ -609,7 +609,7 @@ country_event = {
 #	}
 #
 #	option = {
-#		name = FEE_Jew_Italy_Events..OPT1
+#		name = FEE_Jew_Events..OPT1
 #		ai_chance = {
 #			factor = 50
 #			modifier = {
@@ -630,7 +630,7 @@ country_event = {
 #	}
 #
 #	option = {
-#		name = FEE_Jew_Italy_Events..OPT2
+#		name = FEE_Jew_Events..OPT2
 #		ai_chance = {
 #			factor = 50
 #			modifier = {

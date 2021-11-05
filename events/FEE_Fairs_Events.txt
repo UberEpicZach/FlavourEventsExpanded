@@ -633,8 +633,10 @@ province_event = {
 			clr_province_flag = fee_province_trading_fair_dealed_nomad
 
 			clr_province_flag = fee_trading_fair_banquet_preparation
-			clr_province_flag = fee_trading_fair_banquet_invitation
 			clr_province_flag = fee_trading_fair_banquet_personal
+			owner = {
+				clr_country_flag = fee_trading_fair_banquet_invitation
+			}
 
 			set_variable = {
 				which = feeTradingFairLevel
@@ -653,6 +655,11 @@ province_event = {
 
 	trigger = {
 		has_province_modifier = fee_trading_fair
+		has_province_flag = fee_province_trading_fair_started
+		had_province_flag = {
+			flag = fee_province_trading_fair_started
+			days = 3650
+		}
 		NOT = { has_province_flag = fee_province_trading_fair_nomad_accepted }
 		NOT = { has_province_flag = fee_province_trading_fair_nomad_repulsed }
 	}
@@ -701,6 +708,10 @@ province_event = {
 
 	trigger = {
 		has_province_modifier = fee_trading_fair
+		had_province_flag = {
+			flag = fee_province_trading_fair_started
+			days = 3650
+		}
 		has_province_flag = fee_province_trading_fair_nomad_accepted
 		NOT = { has_province_flag = fee_province_trading_fair_nomad_fire }
 	}
@@ -1401,7 +1412,7 @@ province_event = {
 		name = FEE_Fairs_Events.7000.OPT1
 
 		owner = {
-			add_years_of_income = -0.5
+			add_years_of_income = -0.332
 			if = {
 				limit = { government = republic }
 				add_republican_tradition = 3
@@ -1410,12 +1421,20 @@ province_event = {
 				add_legitimacy_equivalent_fee = { value = 5 }
 			}
 		}
+		change_variable = {
+			which = feeTradingFairLevel
+			value = 5
+		}
 	}
 
 	option = {
 		name = FEE_Fairs_Events.7000.OPT2
 
-		owner = { add_prestige = -10 }
+		owner = { add_prestige = -5 }
+		change_variable = {
+			which = feeTradingFairLevel
+			value = -5
+		}
 	}
 }
 
@@ -1429,17 +1448,17 @@ country_event = {
 	trigger = {
 		any_owned_province = {
 			has_province_flag = fee_trading_fair_banquet_preparation
-			NOT = { has_province_flag = fee_trading_fair_banquet_invitation }
 		}
+		NOT = { has_country_flag = fee_trading_fair_banquet_invitation }
 	}
 
 	mean_time_to_happen = {
-		months = 3
+		months = 9
 	}
 
 	immediate = {
 		hidden_effect = {
-			random_owned_province = { set_province_flag = fee_trading_fair_banquet_invitation }
+			set_country_flag = fee_trading_fair_banquet_invitation
 		}
 	}
 
@@ -1458,7 +1477,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Fairs_Events.7001.OPT1
+		name = FEE_Fairs_Events.7001.OPT2
 
 		every_neighbor_country = {
 			country_event = {

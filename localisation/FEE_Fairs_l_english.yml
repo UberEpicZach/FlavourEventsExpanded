@@ -112,17 +112,17 @@
  FEE_Fairs_Events.7001.OPT1: "We should prefer our population"
  FEE_Fairs_Events.7001.OPT2: "The more the merrier!"
 
- FEE_Fairs_Events.7002.T: "Invitation from [FROM.GetName]"
- FEE_Fairs_Events.7002.D: "Sire, I'm a humble servant of [FROM.GetName] which is hosting a wonderful banquet at his city while a trading caravan has arrived in the beloved square of the city, will you come?"
+ FEE_Fairs_Events.7002.T: "Invitation from [From.GetName]"
+ FEE_Fairs_Events.7002.D: "Sire, I'm a humble servant of [From.GetName] which is hosting a wonderful banquet at his city while a trading caravan has arrived in the beloved square of the city, will you come?"
  FEE_Fairs_Events.7002.OPT1: "Marvellous, let us celebrate!"
  FEE_Fairs_Events.7002.OPT2: "It might be a trap, never!"
 
- FEE_Fairs_Events.7003.T: "[FROM.GetName] has accepted our invitation"
- FEE_Fairs_Events.7003.D: "The dark gates were swung open. The horsemen entered, walking in file behind their guide. They found a broad path, paved with hewn stones, now winding upward, now climbing in short flights of well-laid steps. Many houses built of elegant bricks and many dark doors they passed. Beside the way in a stone channel a stream of clear water flowed, sparkling and chattering. The great host of the numerous servants escorting [FROM.owner.GetName] now opened in the graet square outside our palace while our men have prepared their accomodation in the palace."
+ FEE_Fairs_Events.7003.T: "[From.GetName] has accepted our invitation"
+ FEE_Fairs_Events.7003.D: "The dark gates were swung open. The horsemen entered, walking in file behind their guide. They found a broad path, paved with hewn stones, now winding upward, now climbing in short flights of well-laid steps. Many houses built of elegant bricks and many dark doors they passed. Beside the way in a stone channel a stream of clear water flowed, sparkling and chattering. The great host of the numerous servants escorting [From.owner.GetName] now opened in the graet square outside our palace while our men have prepared their accomodation in the palace."
  FEE_Fairs_Events.7003.OPT1: "Marvellous, let them come in!"
 
- FEE_Fairs_Events.7004.T: "[FROM.GetName] has declined our invitation"
- FEE_Fairs_Events.7004.D: "Sadly [FROM.GetName] has decided to no join our banquet, in fear of it being an excuse for a trap like a red wedding."
+ FEE_Fairs_Events.7004.T: "[From.GetName] has declined our invitation"
+ FEE_Fairs_Events.7004.D: "Sadly [From.GetName] has decided to no join our banquet, in fear of it being an excuse for a trap like a red wedding."
  FEE_Fairs_Events.7004.OPT1: "A treachery?"
 
  #Estate Modifiers
