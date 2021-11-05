@@ -37,15 +37,13 @@ country_event = {
 		custom_tooltip = FEE_JEW_SICILY_START_OPPOSE_TT
 		add_mil_power = 25
 
-		hidden_effect = {
-			change_variable = {
-				which = FEE_JEW_OPPOSE
-				value = 10
-			}
-		}
 		add_country_modifier = {
 			name = fee_jews_value
 			duration = -1
+		}
+		change_variable = {
+			which = FEE_JEW_OPPOSE
+			value = 10
 		}
 	}
 
@@ -58,15 +56,13 @@ country_event = {
 		custom_tooltip = FEE_JEW_SICILY_START_APPROVE_TT
 		add_dip_power = 25
 
-		hidden_effect = {
-			change_variable = {
-				which = FEE_JEW_APPROVE
-				value = 10
-			}
-		}
 		add_country_modifier = {
 			name = fee_jews_value
 			duration = -1
+		}
+		change_variable = {
+			which = FEE_JEW_APPROVE
+			value = 10
 		}
 	}
 }
@@ -86,7 +82,7 @@ country_event = {
 		has_country_flag = fee_jew_sicily_initial_event
 	}
 
-	goto = ROOT
+	goto = 124
 
 	option = {
 		name = FEE_Jew_Italy_Events.2.OPT1
@@ -96,9 +92,13 @@ country_event = {
 
 		add_treasury = 25
 		add_papal_influence = 25
-		hidden_effect = {
+		change_variable = {
+			which = FEE_JEW_OPPOSE
+			value = 10
+		}
+		124 = {
 			change_variable = {
-				which = FEE_JEW_OPPOSE
+				which = FEE_JEW_CITY_OPPOSE
 				value = 10
 			}
 		}
@@ -165,9 +165,13 @@ country_event = {
 			add_dip_power = 10
 		}
 
-		hidden_effect = {
+		change_variable = {
+			which = FEE_JEW_APPROVE
+			value = 10
+		}
+		124 = {
 			change_variable = {
-				which = FEE_JEW_APPROVE
+				which = FEE_JEW_CITY_APPROVE
 				value = 10
 			}
 		}
@@ -227,18 +231,14 @@ province_event = {
 			add_prestige = 3
 			add_papal_influence = 10
 			add_mil_power = 10
-		}
-		hidden_effect = {
-			owner = {
-				change_variable = {
-					which = FEE_JEW_OPPOSE
-					value = 5
-				}
-			}
 			change_variable = {
-				which = FEE_JEW_CITY_OPPOSE
-				value = 10
+				which = FEE_JEW_OPPOSE
+				value = 5
 			}
+		}
+		change_variable = {
+			which = FEE_JEW_CITY_OPPOSE
+			value = 10
 		}
 	}
 
@@ -259,6 +259,10 @@ province_event = {
 		
 		owner = { 
 			add_legitimacy_equivalent_fee = { value = 3 }
+			change_variable = {
+				which = FEE_JEW_APPROVE
+				value = 5
+			}
 		}
 		if = {
 			limit = { 
@@ -279,17 +283,11 @@ province_event = {
 			add_base_manpower = 1
 		}
 
+		change_variable = {
+			which = FEE_JEW_CITY_APPROVE
+			value = 10
+		}
 		hidden_effect = {
-			owner = {
-				change_variable = {
-					which = FEE_JEW_APPROVE
-					value = 5
-				}
-			}
-			change_variable = {
-				which = FEE_JEW_CITY_APPROVE
-				value = 10
-			}
 			set_province_flag = fee_jew_sicily_giudecca_approved
 		}
 	}
@@ -363,6 +361,10 @@ province_event = {
 			add_mil_power = 15
 		}
 		remove_development_third_monarch_skill_fee = yes
+		change_variable = {
+			which = FEE_JEW_CITY_OPPOSE
+			value = 5
+		}
 		add_devastation = 10
 		random_neighbor_province = {
 			random_list = {
@@ -411,6 +413,10 @@ province_event = {
 		}
 		add_base_production = 1
 		add_prosperity = 10
+		change_variable = {
+			which = FEE_JEW_CITY_APPROVE
+			value = 10
+		}
 	}
 }
 
@@ -475,6 +481,10 @@ province_event = {
 				has_province_modifier = italian_jew_allowed_stay
 			}
 			remove_province_modifier = italian_jew_allowed_stay
+		}
+		change_variable = {
+			which = FEE_JEW_CITY_OPPOSE
+			value = 15
 		}
 		random_list = {
 			33 = {
@@ -546,47 +556,9 @@ province_event = {
 				duration = -1
 			}
 		}
-	}
-}
-
-#Medic at Court
-country_event = {
-	id = FEE_Jew_Italy_Events.1000
-	title = FEE_Jew_Italy_Events.1000.T
-	desc = FEE_Jew_Italy_Events.1000.D
-	picture = ADVISOR_eventPicture
-	
-	trigger = {
-		check_variable = {
-			which = FEE_JEW_APPROVE
-			value = 50
-		}
-		OR = {
-			NOT = { has_country_flag = fee_jews_italy_medic }
-			had_country_flag = {
-				flag = fee_jews_italy_medic
-				days = 5475
-			}
-		}
-		NOT = {
-			has_ruler_modifier = fee_jews_medic
-		}
-	}
-
-	mean_time_to_happen = {
-		years = 25
-		modifier = {
-			factor = 1.25
-			religious_ideas = 3
-		}
-	}
-
-	option = {
-		name = FEE_Jew_Italy_Events.1000.OPT1
-
-		add_ruler_modifier = {
-			name = fee_jews_medic
-			duration = -1
+		change_variable = {
+			which = FEE_JEW_CITY_APPROVE
+			value = 15
 		}
 	}
 }
