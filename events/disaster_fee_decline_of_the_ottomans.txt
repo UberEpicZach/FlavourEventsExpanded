@@ -29,6 +29,7 @@ country_event = {
 	desc = disaster_fee_decline_of_the_ottomans.EVTDESC2
 	picture = GOOD_WITH_MONARCH_eventPicture
 
+	major = yes
 	is_triggered_only = yes
 
 	option = {
@@ -899,6 +900,7 @@ country_event = {
 	desc = disaster_fee_decline_of_the_ottomans.EVTDESC12
 	picture = CIVIL_WAR_eventPicture
 
+	major = yes
 	fire_only_once = yes
 	is_triggered_only = yes
 
@@ -1962,9 +1964,9 @@ country_event = {
 			vassalize = GRE
 			GRE = {
 				change_religion = orthodox
-				change_primary_culture = serbian
+				change_primary_culture = greek
 				change_government = republic
-				add_government_reform = plutocracy_reform
+				add_government_reform = merchants_reform
 				adopt_reform_progress = ROOT
 				define_ruler = {
 					name = "Ioannis Kapodistrias"
@@ -2039,6 +2041,10 @@ country_event = {
 	desc = disaster_fee_decline_of_the_ottomans.EVTDESC25
 	picture = CIVIL_WAR_eventPicture
 
+	major = yes
+	major_trigger = {
+		tag = GRE
+	}
 	is_triggered_only = yes
 
 	option = {
