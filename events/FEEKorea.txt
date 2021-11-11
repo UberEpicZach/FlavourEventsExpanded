@@ -69,7 +69,7 @@ country_event = {
 
 	option = {
 		name = fee_KOR.2.a
-		kill_heir = yes
+		kill_heir = {}
 		add_country_modifier = {
 			name = ruler_deposed
 			duration = -1

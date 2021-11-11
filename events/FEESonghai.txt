@@ -106,7 +106,7 @@ country_event = {
 			claim = 60
 			fixed = yes
 		}
-		kill_heir = yes
+		kill_heir = {}
 		add_piety = 0.15
 		add_stability = -1
 		random_owned_province = {
