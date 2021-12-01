@@ -99,7 +99,7 @@ country_event = {
 			mil = 2
 			fixed = yes
 		}
-		kill_heir = yes
+		kill_heir = {}
 		add_stability = 2
 		change_estate_land_share = {
 			estate = estate_nobles
@@ -168,7 +168,7 @@ country_event = {
 			mil = 2
 			fixed = yes
 		}
-		kill_heir = yes
+		kill_heir = {}
 		capital_scope = {
 			spawn_rebels = {
 				type = pretender_rebels
@@ -238,7 +238,7 @@ country_event = {
 				create_union = HUN
 			}
 		}
-		kill_heir = yes
+		kill_heir = {}
 		add_stability = 2
 		change_estate_land_share = {
 			estate = estate_nobles
@@ -280,7 +280,7 @@ country_event = {
 			age = 17
 			fixed = yes
 		}
-		kill_heir = yes
+		kill_heir = {}
 		add_stability = -3
 		change_estate_land_share = {
 			estate = all

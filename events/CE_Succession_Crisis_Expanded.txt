@@ -204,7 +204,7 @@ country_event = {
 				}
 			}
 			ROOT = {
-				kill_heir = yes
+				kill_heir = {}
 				define_ruler = {
 					name = "Regency Council"
 					adm = 2
@@ -860,7 +860,7 @@ country_event = {
 				}
 			}
 			event_target:claimant_country_1 = {
-				every_owned_province {
+				every_owned_province = {
 					limit = {
 						is_core = event_target:partitioned_country
 						has_province_flag = SE_claimed_land
@@ -892,7 +892,7 @@ country_event = {
 						save_global_event_target_as = partitioned_country_2
 					}
 				}
-				every_owned_province {
+				every_owned_province = {
 					limit = {
 						is_core = event_target:partitioned_country
 						has_province_flag = SE_claimed_land
@@ -938,7 +938,7 @@ country_event = {
 						save_global_event_target_as = partitioned_country_3
 					}
 				}
-				every_owned_province {
+				every_owned_province = {
 					limit = {
 						is_core = event_target:partitioned_country
 						has_province_flag = SE_claimed_land

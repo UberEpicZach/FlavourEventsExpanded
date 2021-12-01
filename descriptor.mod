@@ -1,8 +1,12 @@
-version="1.2"
-tags={
-	"Balance"
-        "Events"
-        "Historical"
+version="1.31.4"
+dependencies={
+    "Missions Expanded"
 }
-name="FlavourEventsExpanded"
-supported_version="1.31.0"
+tags={
+	"Events"
+	"Converted From CKII"
+	"Gameplay"
+	"Historical"
+}
+name="Flavour and Events Expanded Git"
+supported_version="1.31.6"
