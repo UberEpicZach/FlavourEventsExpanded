@@ -1,0 +1,1747 @@
+namespace = disaster_fee_division_of_the_habsburg_monarchy
+
+# Start of Disaster
+country_event = {
+	id = disaster_fee_division_of_the_habsburg_monarchy.1
+	title = disaster_fee_division_of_the_habsburg_monarchy.EVTNAME1
+	desc = disaster_fee_division_of_the_habsburg_monarchy.EVTDESC1
+	picture = CIVIL_WAR_eventPicture
+
+	major = yes
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = had_fee_division_of_the_habsburg_monarchy
+			set_country_flag = hab_division_1
+		}
+	}
+
+	option = {
+		name = disaster_fee_division_of_the_habsburg_monarchy1.EVTOPT1
+
+		add_stability = -1
+		add_legitimacy = -50
+	}
+}
+
+# End of Disaster
+country_event = {
+	id = disaster_fee_division_of_the_habsburg_monarchy.2
+	title = disaster_fee_division_of_the_habsburg_monarchy.EVTNAME2
+	desc = disaster_fee_division_of_the_habsburg_monarchy.EVTDESC2
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = disaster_fee_division_of_the_habsburg_monarchy2.EVTOPT1
+
+		add_stability = 2
+		change_government_reform_progress = 100
+		add_adm_power = 100
+		add_dip_power = 100
+		if = {
+			limit = {
+				has_country_flag = military_reunification
+			}
+			if = {
+				limit = {
+					has_reform = feudalism_reform
+				}
+				remove_government_reform = feudalism_reform
+			}
+			add_country_modifier = {
+				name = fee_division_of_the_habsburg_monarchy_new_habsburg_monarchy
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_country_flag = diplomatic_reunification
+			}
+			add_country_modifier = {
+				name = fee_division_of_the_habsburg_monarchy_restored_habsburg_monarchy
+				duration = -1
+			}
+		}
+		hidden_effect = {
+			clr_country_flag = hab_division_1
+			clr_country_flag = hab_division_2
+			clr_country_flag = hab_division_3
+			clr_country_flag = hab_division_4
+			clr_country_flag = military_reunification
+			clr_country_flag = diplomatic_reunification
+		}
+	}
+}
+
+# Release Styria
+country_event = {
+	id = disaster_fee_division_of_the_habsburg_monarchy.3
+	title = disaster_fee_division_of_the_habsburg_monarchy.EVTNAME3
+	desc = disaster_fee_division_of_the_habsburg_monarchy.EVTDESC3
+	picture = CIVIL_WAR_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = HAB
+			was_tag = HAB
+		}
+		has_disaster = fee_division_of_the_habsburg_monarchy
+		has_country_flag = hab_division_1
+		NOT = { exists = STY }
+		inner_austria_area = {
+			owned_by = ROOT
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	immediate = {
+		hidden_effect = {
+			inner_austria_area = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_core = STY
+				if = {
+					limit = {
+						units_in_province = REB
+					}
+					kill_units = {
+						who = REB
+					}
+				}
+			}
+			every_owned_province = {
+				limit = {
+					NOT = { area = inner_austria_area }
+					is_core = STY
+				}
+				set_province_flag = was_core_of_STY
+				remove_core = STY
+			}
+			release = STY
+			vassalize = STY
+			every_owned_province = {
+				limit = {
+					has_province_flag = was_core_of_STY
+				}
+				clr_province_flag = was_core_of_STY
+				add_core = STY
+			}
+			STY = {
+				change_government = monarchy
+				add_government_reform = feudalism_reform
+				adopt_reform_progress = ROOT
+				change_religion = new_variable:dominant_religion
+				change_primary_culture = new_variable:dominant_culture
+				define_ruler = {
+					claim = 75
+					dynasty = "von Habsburg"
+				}
+				set_prestige_to_zero = yes
+				add_years_of_income = 15
+				if = {
+					limit = {
+						NOT = { treasury = 1000 }
+					}
+					add_treasury = 1000
+				}
+				add_yearly_manpower = 15
+				if = {
+					limit = {
+						NOT = { manpower = 5 }
+					}
+					add_manpower = 5
+				}
+				capital_scope = {
+					build_to_forcelimit = {
+						infantry = 0.7
+						cavalry = 0.2
+						artillery = 0.1
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = disaster_fee_division_of_the_habsburg_monarchy3.EVTOPT1
+
+		tooltip = {
+			STY = {
+				custom_tooltip = FEE_DIVISION_OF_THE_HABSBURG_MONARCHY_THIS_IS_RELEASED_AS_FREE_TT
+			}
+		}
+		hidden_effect = {
+			STY = {
+				grant_independence = yes
+			}
+			if = {
+				limit = {
+					hre_size = 1
+					is_emperor = yes
+					NOT = { hre_reform_passed = emperor_erbkaisertum }
+					NOT = { hre_reform_passed = erbkaisertum }
+					calc_true_if = {
+						all_elector = {
+							NOT = { tag = ROOT }
+						}
+						amount = 1
+					}
+				}
+				set_country_flag = electors_can_decide_STY_for_emperor
+				every_elector = {
+					limit = {
+						NOT = { tag = ROOT }
+					}
+					country_event = { id = disaster_fee_division_of_the_habsburg_monarchy.4 days = 1 }
+				}
+			}
+		}
+	}
+
+	option = {
+		name = disaster_fee_division_of_the_habsburg_monarchy3.EVTOPT2
+
+		add_stability = -1
+		tooltip = {
+			STY = {
+				custom_tooltip = FEE_DIVISION_OF_THE_HABSBURG_MONARCHY_THIS_IS_RELEASED_AS_VASSAL_TT
+			}
+		}
+		STY = {
+			hidden_effect = {
+				add_casus_belli = {
+					target = ROOT
+					type = cb_independence_war
+				}
+			}
+			declare_war_with_cb = {
+				who = ROOT
+				casus_belli = cb_independence_war
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					hre_size = 1
+					is_emperor = yes
+					NOT = { hre_reform_passed = emperor_erbkaisertum }
+					NOT = { hre_reform_passed = erbkaisertum }
+					calc_true_if = {
+						all_elector = {
+							NOT = { tag = ROOT }
+						}
+						amount = 1
+					}
+				}
+				set_country_flag = electors_can_decide_STY_for_emperor
+				every_elector = {
+					limit = {
+						NOT = { tag = ROOT }
+					}
+					country_event = { id = disaster_fee_division_of_the_habsburg_monarchy.4 days = 1 }
+				}
+			}
+		}
+	}
+
+	after = {
+		set_country_flag = hab_division_2
+	}
+}
+
+# The Return of the King
+country_event = {
+	id = disaster_fee_division_of_the_habsburg_monarchy.4
+	title = disaster_fee_division_of_the_habsburg_monarchy.EVTNAME4
+	desc = disaster_fee_division_of_the_habsburg_monarchy.EVTDESC4
+	picture = HRE_eventPicture
+
+	major = yes
+	major_trigger = {
+		is_emperor = yes
+	}
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = elector_can_back_STY_for_emperor
+		}
+	}
+
+	option = {
+		name = disaster_fee_division_of_the_habsburg_monarchy4.EVTOPT1
+
+		ai_chance = {
+			factor = 0.4
+			modifier = {
+				factor = 100
+				is_rival = FROM
+			}
+			modifier = {
+				factor = 2
+				NOT = {
+					has_opinion = {
+						who = FROM
+						value = 0
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					alliance_with = FROM
+					is_subject_of = FROM
+				}
+			}
+		}
+
+		create_alliance = STY
+		if = {
+			limit = {
+				government = monarchy
+				religion_group = STY
+			}
+			create_marriage = STY
+		}
+		if = {
+			limit = {
+				STY = {
+					is_in_war = {
+						attacker_leader = THIS
+						defender_leader = FROM
+						casus_belli = cb_independence_war
+					}
+				}
+			}
+			join_all_offensive_wars_of = STY
+		}
+		custom_tooltip = FEE_DIVISION_OF_THE_HABSBURG_MONARCHY_ELECTOR_BACKS_STY_FOR_EMPEROR_TT
+		set_country_flag = elector_backs_STY_for_emperor
+	}
+
+	option = {
+		name = disaster_fee_division_of_the_habsburg_monarchy4.EVTOPT2
+
+		ai_chance = {
+			factor = 0.6
+			modifier = {
+				factor = 0
+				is_rival = FROM
+			}
+			modifier = {
+				factor = 0.5
+				NOT = {
+					has_opinion = {
+						who = FROM
+						value = 0
+					}
+				}
+			}
+			modifier = {
+				factor = 100
+				OR = {
+					alliance_with = FROM
+					is_subject_of = FROM
+				}
+			}
+		}
+
+		add_stability_or_adm_power = yes
+	}
+
+	after = {
+		set_country_flag = elector_decided_about_STY_for_emperor
+	}
+}
+
+# Hidden Event to trigger the Styria becomes Emperor Event
+country_event = {
+	id = disaster_fee_division_of_the_habsburg_monarchy.5
+	title = disaster_fee_division_of_the_habsburg_monarchy.EVTNAME5
+	desc = disaster_fee_division_of_the_habsburg_monarchy.EVTDESC5
+	picture = HRE_eventPicture
+
+	hidden = yes
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = HAB
+			was_tag = HAB
+		}
+		has_country_flag = electors_can_decide_STY_for_emperor
+		all_elector = {
+			OR = {
+				NOT = { has_country_flag = elector_can_back_STY_for_emperor }
+				has_country_flag = elector_decided_about_STY_for_emperor
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					is_emperor = yes
+					calc_true_if = {
+						all_elector = {
+							has_country_flag = elector_backs_STY_for_emperor
+						}
+						amount = 4
+					}
+					STY = {
+						religion_group = christian
+						has_regency = no
+						government = monarchy
+					}
+					OR = {
+						NOT = { has_dlc = "Art of War" }
+						AND = {
+							has_dlc = "Art of War"
+							OR = {
+								STY = { religion = ROOT }
+								hre_religion_treaty = yes
+							}
+						}
+					}
+				}
+				country_event = { id = disaster_fee_division_of_the_habsburg_monarchy.6 }
+			}
+			clr_country_flag = electors_can_decide_STY_for_emperor
+			every_country = {
+				clr_country_flag = elector_can_back_STY_for_emperor
+				clr_country_flag = elector_decided_about_STY_for_emperor
+				clr_country_flag = elector_backs_STY_for_emperor
+			}
+		}
+	}
+
+	option = {
+		name = disaster_fee_division_of_the_habsburg_monarchy5.EVTOPT1
+
+		ai_chance = { factor = 100 }
+	}
+}
+
+# Styria becomes Emperor
+country_event = {
+	id = disaster_fee_division_of_the_habsburg_monarchy.6
+	title = disaster_fee_division_of_the_habsburg_monarchy.EVTNAME6
+	desc = disaster_fee_division_of_the_habsburg_monarchy.EVTDESC6
+	picture = HRE_eventPicture
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = disaster_fee_division_of_the_habsburg_monarchy6.EVTOPT1
+
+		tooltip = {
+			set_emperor = no
+		}
+		custom_tooltip = FEE_DIVISION_OF_THE_HABSBURG_MONARCHY_STY_BECOMES_EMPEROR_TT
+		hidden_effect = {
+			STY = {
+				set_emperor = yes
+			}
+		}
+	}
+}
+
+# Release Tirol
+country_event = {
+	id = disaster_fee_division_of_the_habsburg_monarchy.7
+	title = disaster_fee_division_of_the_habsburg_monarchy.EVTNAME7
+	desc = disaster_fee_division_of_the_habsburg_monarchy.EVTDESC7
+	picture = CIVIL_WAR_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = HAB
+			was_tag = HAB
+		}
+		has_disaster = fee_division_of_the_habsburg_monarchy
+		has_country_flag = hab_division_2
+		NOT = { exists = TIR }
+		tirol_area = {
+			owned_by = ROOT
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	immediate = {
+		hidden_effect = {
+			tirol_area = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_core = TIR
+				if = {
+					limit = {
+						units_in_province = REB
+					}
+					kill_units = {
+						who = REB
+					}
+				}
+			}
+			every_owned_province = {
+				limit = {
+					NOT = { area = tirol_area }
+					is_core = TIR
+				}
+				set_province_flag = was_core_of_TIR
+				remove_core = TIR
+			}
+			release = TIR
+			vassalize = TIR
+			every_owned_province = {
+				limit = {
+					has_province_flag = was_core_of_TIR
+				}
+				clr_province_flag = was_core_of_TIR
+				add_core = TIR
+			}
+			TIR = {
+				change_government = monarchy
+				add_government_reform = feudalism_reform
+				adopt_reform_progress = ROOT
+				change_religion = new_variable:dominant_religion
+				change_primary_culture = new_variable:dominant_culture
+				define_ruler = {
+					claim = 75
+					dynasty = "von Habsburg"
+				}
+				set_prestige_to_zero = yes
+				add_years_of_income = 15
+				if = {
+					limit = {
+						NOT = { treasury = 1000 }
+					}
+					add_treasury = 1000
+				}
+				add_yearly_manpower = 15
+				if = {
+					limit = {
+						NOT = { manpower = 5 }
+					}
+					add_manpower = 5
+				}
+				capital_scope = {
+					build_to_forcelimit = {
+						infantry = 0.7
+						cavalry = 0.2
+						artillery = 0.1
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = disaster_fee_division_of_the_habsburg_monarchy7.EVTOPT1
+
+		tooltip = {
+			TIR = {
+				custom_tooltip = FEE_DIVISION_OF_THE_HABSBURG_MONARCHY_THIS_IS_RELEASED_AS_FREE_TT
+			}
+		}
+		hidden_effect = {
+			TIR = {
+				grant_independence = yes
+			}
+		}
+	}
+
+	option = {
+		name = disaster_fee_division_of_the_habsburg_monarchy7.EVTOPT2
+
+		add_stability = -1
+		tooltip = {
+			TIR = {
+				custom_tooltip = FEE_DIVISION_OF_THE_HABSBURG_MONARCHY_THIS_IS_RELEASED_AS_VASSAL_TT
+			}
+		}
+		TIR = {
+			hidden_effect = {
+				add_casus_belli = {
+					target = ROOT
+					type = cb_independence_war
+				}
+			}
+			declare_war_with_cb = {
+				who = ROOT
+				casus_belli = cb_independence_war
+			}
+		}
+	}
+
+	after = {
+		set_country_flag = hab_division_3
+	}
+}
+
+# Release Hungary (for Austria)
+country_event = {
+	id = disaster_fee_division_of_the_habsburg_monarchy.8
+	title = disaster_fee_division_of_the_habsburg_monarchy.EVTNAME8
+	desc = disaster_fee_division_of_the_habsburg_monarchy.EVTDESC8
+	picture = CIVIL_WAR_eventPicture
+
+	major = yes
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = HAB
+			was_tag = HAB
+		}
+		has_disaster = fee_division_of_the_habsburg_monarchy
+		has_country_flag = hab_division_3
+		exists = HUN
+		overlord_of = HUN
+		HUN = {
+			OR = {
+				junior_union_with = ROOT
+				AND = {
+					is_expanded_mod_active = { mod = subjects }
+					is_subject_of_type = brother_kingdom
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	option = {
+		name = disaster_fee_division_of_the_habsburg_monarchy8.EVTOPT1
+
+		tooltip = {
+			HUN = {
+				grant_independence = yes
+				add_truce_with = ROOT
+			}
+		}
+		hidden_effect = {
+			HUN = {
+				country_event = { id = disaster_fee_division_of_the_habsburg_monarchy.9 }
+			}
+		}
+	}
+
+	option = {
+		name = disaster_fee_division_of_the_habsburg_monarchy8.EVTOPT2
+
+		add_legitimacy = -20
+		HUN = {
+			add_liberty_desire = 75
+		}
+	}
+}
+
+# Release Hungary (for Hungary)
+country_event = {
+	id = disaster_fee_division_of_the_habsburg_monarchy.9
+	title = disaster_fee_division_of_the_habsburg_monarchy.EVTNAME9
+	desc = disaster_fee_division_of_the_habsburg_monarchy.EVTDESC9
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = disaster_fee_division_of_the_habsburg_monarchy9.EVTOPT1
+
+		add_truce_with = FROM
+		tooltip = {
+			grant_independence = yes
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					is_lesser_in_union = yes
+				}
+				break_union = yes
+			}
+			else = {
+				overlord = {
+					ROOT = {
+						grant_independence = yes
+					}
+				}
+			}
+		}
+		define_ruler = {
+			name = "Maximilian"
+			dynasty = "von Habsburg"
+			age = 16
+			claim = 50
+			adm = 2
+			dip = 4
+			mil = 4
+		}
+		hidden_effect = {
+			kill_heir = { allow_new_heir = no }
+		}
+	}
+}
+
+# Release Bohemia (for Austria)
+country_event = {
+	id = disaster_fee_division_of_the_habsburg_monarchy.10
+	title = disaster_fee_division_of_the_habsburg_monarchy.EVTNAME10
+	desc = disaster_fee_division_of_the_habsburg_monarchy.EVTDESC10
+	picture = CIVIL_WAR_eventPicture
+
+	major = yes
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = HAB
+			was_tag = HAB
+		}
+		has_disaster = fee_division_of_the_habsburg_monarchy
+		has_country_flag = hab_division_3
+		exists = BOH
+		overlord_of = BOH
+		BOH = {
+			OR = {
+				junior_union_with = ROOT
+				AND = {
+					is_expanded_mod_active = { mod = subjects }
+					is_subject_of_type = brother_kingdom
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	option = {
+		name = disaster_fee_division_of_the_habsburg_monarchy10.EVTOPT1
+
+		tooltip = {
+			BOH = {
+				grant_independence = yes
+				add_truce_with = ROOT
+			}
+		}
+		hidden_effect = {
+			BOH = {
+				country_event = { id = disaster_fee_division_of_the_habsburg_monarchy.11 }
+			}
+		}
+	}
+
+	option = {
+		name = disaster_fee_division_of_the_habsburg_monarchy10.EVTOPT2
+
+		add_legitimacy = -20
+		BOH = {
+			add_liberty_desire = 75
+		}
+	}
+}
+
+# Release Bohemia (for Bohemia)
+country_event = {
+	id = disaster_fee_division_of_the_habsburg_monarchy.11
+	title = disaster_fee_division_of_the_habsburg_monarchy.EVTNAME11
+	desc = disaster_fee_division_of_the_habsburg_monarchy.EVTDESC11
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = disaster_fee_division_of_the_habsburg_monarchy11.EVTOPT1
+
+		add_truce_with = FROM
+		tooltip = {
+			grant_independence = yes
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					is_lesser_in_union = yes
+				}
+				break_union = yes
+			}
+			else = {
+				overlord = {
+					ROOT = {
+						grant_independence = yes
+					}
+				}
+			}
+		}
+		define_ruler = {
+			dynasty = "von Habsburg"
+			claim = 100
+		}
+		hidden_effect = {
+			kill_heir = { allow_new_heir = no }
+		}
+	}
+}
+
+# Release Swabia
+country_event = {
+	id = disaster_fee_division_of_the_habsburg_monarchy.12
+	title = disaster_fee_division_of_the_habsburg_monarchy.EVTNAME12
+	desc = disaster_fee_division_of_the_habsburg_monarchy.EVTDESC12
+	picture = CIVIL_WAR_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = HAB
+			was_tag = HAB
+		}
+		has_disaster = fee_division_of_the_habsburg_monarchy
+		has_country_flag = hab_division_3
+		NOT = { exists = SWA }
+		any_owned_province = {
+			culture = swabian
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	immediate = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					culture = swabian
+				}
+				add_core = SWA
+				if = {
+					limit = {
+						units_in_province = REB
+					}
+					kill_units = {
+						who = REB
+					}
+				}
+			}
+			every_owned_province = {
+				limit = {
+					NOT = { culture = swabian }
+					is_core = SWA
+				}
+				set_province_flag = was_core_of_SWA
+				remove_core = SWA
+			}
+			release = SWA
+			vassalize = SWA
+			every_owned_province = {
+				limit = {
+					has_province_flag = was_core_of_SWA
+				}
+				clr_province_flag = was_core_of_SWA
+				add_core = SWA
+			}
+			SWA = {
+				change_government = monarchy
+				add_government_reform = feudalism_reform
+				adopt_reform_progress = ROOT
+				change_religion = new_variable:dominant_religion
+				change_primary_culture = new_variable:dominant_culture
+				define_ruler = {
+					claim = 75
+					dynasty = "von Habsburg"
+				}
+				set_prestige_to_zero = yes
+				add_years_of_income = 15
+				if = {
+					limit = {
+						NOT = { treasury = 1000 }
+					}
+					add_treasury = 1000
+				}
+				add_yearly_manpower = 15
+				if = {
+					limit = {
+						NOT = { manpower = 5 }
+					}
+					add_manpower = 5
+				}
+				capital_scope = {
+					build_to_forcelimit = {
+						infantry = 0.7
+						cavalry = 0.2
+						artillery = 0.1
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = disaster_fee_division_of_the_habsburg_monarchy12.EVTOPT1
+
+		tooltip = {
+			SWA = {
+				custom_tooltip = FEE_DIVISION_OF_THE_HABSBURG_MONARCHY_THIS_IS_RELEASED_AS_FREE_TT
+			}
+		}
+		hidden_effect = {
+			SWA = {
+				grant_independence = yes
+			}
+		}
+	}
+
+	option = {
+		name = disaster_fee_division_of_the_habsburg_monarchy12.EVTOPT2
+
+		add_stability = -1
+		tooltip = {
+			SWA = {
+				custom_tooltip = FEE_DIVISION_OF_THE_HABSBURG_MONARCHY_THIS_IS_RELEASED_AS_VASSAL_TT
+			}
+		}
+		SWA = {
+			hidden_effect = {
+				add_casus_belli = {
+					target = ROOT
+					type = cb_independence_war
+				}
+			}
+			declare_war_with_cb = {
+				who = ROOT
+				casus_belli = cb_independence_war
+			}
+		}
+	}
+
+	after = {
+		set_country_flag = hab_division_4
+	}
+}
+
+# Reunification?
+country_event = {
+	id = disaster_fee_division_of_the_habsburg_monarchy.13
+	title = disaster_fee_division_of_the_habsburg_monarchy.EVTNAME13
+	desc = disaster_fee_division_of_the_habsburg_monarchy.EVTDESC13
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = HAB
+			was_tag = HAB
+		}
+		has_disaster = fee_division_of_the_habsburg_monarchy
+		has_country_flag = hab_division_4
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = disaster_fee_division_of_the_habsburg_monarchy13.EVTOPT1
+
+		add_country_modifier = {
+			name = fee_division_of_the_habsburg_monarchy_diplomatic_efforts
+			duration = 27375
+		}
+		set_country_flag = diplomatic_reunification
+	}
+
+	option = {
+		name = disaster_fee_division_of_the_habsburg_monarchy13.EVTOPT2
+
+		add_country_modifier = {
+			name = fee_division_of_the_habsburg_monarchy_reunification_wars
+			duration = 1825
+		}
+		if = {
+			limit = {
+				exists = STY
+				NOT = { overlord_of = STY }
+			}
+			add_casus_belli = {
+				target = STY
+				type = cb_restore_personal_union
+			}
+		}
+		if = {
+			limit = {
+				exists = TIR
+				NOT = { overlord_of = TIR }
+			}
+			add_casus_belli = {
+				target = TIR
+				type = cb_restore_personal_union
+			}
+		}
+		if = {
+			limit = {
+				exists = HUN
+				NOT = { overlord_of = HUN }
+			}
+			add_casus_belli = {
+				target = HUN
+				type = cb_restore_personal_union
+			}
+		}
+		if = {
+			limit = {
+				exists = BOH
+				NOT = { overlord_of = BOH }
+			}
+			add_casus_belli = {
+				target = BOH
+				type = cb_restore_personal_union
+			}
+		}
+		if = {
+			limit = {
+				exists = SWA
+				NOT = { overlord_of = SWA }
+			}
+			add_casus_belli = {
+				target = SWA
+				type = cb_restore_personal_union
+			}
+		}
+		set_country_flag = military_reunification
+	}
+}
+
+# Proposal from [From.Capital.GetName]
+country_event = {
+	id = disaster_fee_division_of_the_habsburg_monarchy.14
+	title = disaster_fee_division_of_the_habsburg_monarchy.EVTNAME14
+	desc = disaster_fee_division_of_the_habsburg_monarchy.EVTDESC14
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = disaster_fee_division_of_the_habsburg_monarchy14.EVTOPT1
+
+		ai_chance = {
+			factor = 0.5
+			modifier = {
+				factor = 0.5
+				army_strength = { who = FROM value = 2 }
+			}
+			modifier = {
+				factor = 2
+				NOT = { army_strength = { who = FROM value = 0.5 } }
+			}
+		}
+
+		tooltip = {
+			FROM = {
+				create_union = ROOT
+			}
+			add_opinion = {
+				who = FROM
+				modifier = fee_division_of_the_habsburg_monarchy_acceptance
+			}
+			reverse_add_opinion = {
+				who = FROM
+				modifier = fee_division_of_the_habsburg_monarchy_acceptance
+			}
+			add_liberty_desire = -30
+		}
+		hidden_effect = {
+			FROM = {
+				country_event = { id = disaster_fee_division_of_the_habsburg_monarchy.15 days = 3 }
+			}
+		}
+	}
+
+	option = {
+		name = disaster_fee_division_of_the_habsburg_monarchy14.EVTOPT2
+
+		ai_chance = {
+			factor = 0.5
+			modifier = {
+				factor = 2
+				army_strength = { who = FROM value = 2 }
+			}
+			modifier = {
+				factor = 0.5
+				NOT = { army_strength = { who = FROM value = 0.5 } }
+			}
+		}
+
+		tooltip = {
+			FROM = {
+				add_casus_belli = {
+					target = ROOT
+					type = cb_restore_personal_union
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						tag = STY
+						tag = TIR
+					}
+				}
+				every_owned_province = {
+					limit = {
+						OR = {
+							culture = FROM
+							culture = austrian
+						}
+					}
+					add_core = FROM
+				}
+			}
+			else = {
+				FROM = {
+					add_dip_power = 100
+				}
+			}
+		}
+		hidden_effect = {
+			FROM = {
+				country_event = { id = disaster_fee_division_of_the_habsburg_monarchy.16 days = 3 }
+			}
+		}
+	}
+}
+
+# [From.GetName] Accepts!
+country_event = {
+	id = disaster_fee_division_of_the_habsburg_monarchy.15
+	title = disaster_fee_division_of_the_habsburg_monarchy.EVTNAME15
+	desc = disaster_fee_division_of_the_habsburg_monarchy.EVTDESC15
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = disaster_fee_division_of_the_habsburg_monarchy15.EVTOPT1
+
+		hidden_effect = {
+			FROM = {
+				if = {
+					limit = {
+						is_subject = yes
+					}
+					overlord = {
+						PREV = { grant_independence = yes }
+					}
+				}
+			}
+		}
+		create_union = FROM
+		add_opinion = {
+			who = FROM
+			modifier = fee_division_of_the_habsburg_monarchy_acceptance
+		}
+		reverse_add_opinion = {
+			who = FROM
+			modifier = fee_division_of_the_habsburg_monarchy_acceptance
+		}
+		FROM = {
+			add_liberty_desire = -30
+		}
+	}
+}
+
+# [From.GetName] Refuses!
+country_event = {
+	id = disaster_fee_division_of_the_habsburg_monarchy.16
+	title = disaster_fee_division_of_the_habsburg_monarchy.EVTNAME16
+	desc = disaster_fee_division_of_the_habsburg_monarchy.EVTDESC16
+	picture = BAD_WITH_MONARCH_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = disaster_fee_division_of_the_habsburg_monarchy16.EVTOPT1
+
+		add_casus_belli = {
+			target = FROM
+			type = cb_restore_personal_union
+		}
+		if = {
+			limit = {
+				FROM = {
+					OR = {
+						tag = STY
+						tag = TIR
+					}
+				}
+			}
+			FROM = {
+				every_owned_province = {
+					limit = {
+						OR = {
+							culture = ROOT
+							culture = austrian
+						}
+					}
+					add_core = ROOT
+				}
+			}
+		}
+		else = {
+			add_dip_power = 100
+		}
+	}
+}
+
+# Proposal to Styria
+country_event = {
+	id = disaster_fee_division_of_the_habsburg_monarchy.17
+	title = disaster_fee_division_of_the_habsburg_monarchy.EVTNAME17
+	desc = disaster_fee_division_of_the_habsburg_monarchy.EVTDESC17
+	picture = DIPLOMACY_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = HAB
+			was_tag = HAB
+		}
+		has_disaster = fee_division_of_the_habsburg_monarchy
+		has_country_flag = diplomatic_reunification
+		has_country_flag = hab_division_3
+		exists = STY
+		STY = {
+			is_free_or_tributary_trigger = yes
+		}
+		NOT = { war_with = STY }
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = disaster_fee_division_of_the_habsburg_monarchy17.EVTOPT1
+
+		STY = {
+			country_event = { id = disaster_fee_division_of_the_habsburg_monarchy.14 days = 3 }
+		}
+	}
+
+	option = {
+		name = disaster_fee_division_of_the_habsburg_monarchy17.EVTOPT2
+
+		add_legitimacy = 10
+	}
+}
+
+# Proposal to Tirol
+country_event = {
+	id = disaster_fee_division_of_the_habsburg_monarchy.18
+	title = disaster_fee_division_of_the_habsburg_monarchy.EVTNAME18
+	desc = disaster_fee_division_of_the_habsburg_monarchy.EVTDESC18
+	picture = DIPLOMACY_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = HAB
+			was_tag = HAB
+		}
+		has_disaster = fee_division_of_the_habsburg_monarchy
+		has_country_flag = diplomatic_reunification
+		has_country_flag = hab_division_3
+		exists = TIR
+		TIR = {
+			is_free_or_tributary_trigger = yes
+		}
+		NOT = { war_with = TIR }
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = disaster_fee_division_of_the_habsburg_monarchy18.EVTOPT1
+
+		TIR = {
+			country_event = { id = disaster_fee_division_of_the_habsburg_monarchy.14 days = 3 }
+		}
+	}
+
+	option = {
+		name = disaster_fee_division_of_the_habsburg_monarchy18.EVTOPT2
+
+		add_legitimacy = 10
+	}
+}
+
+# Proposal to Swabia
+country_event = {
+	id = disaster_fee_division_of_the_habsburg_monarchy.19
+	title = disaster_fee_division_of_the_habsburg_monarchy.EVTNAME19
+	desc = disaster_fee_division_of_the_habsburg_monarchy.EVTDESC19
+	picture = DIPLOMACY_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = HAB
+			was_tag = HAB
+		}
+		has_disaster = fee_division_of_the_habsburg_monarchy
+		has_country_flag = diplomatic_reunification
+		has_country_flag = hab_division_4
+		exists = SWA
+		SWA = {
+			is_free_or_tributary_trigger = yes
+		}
+		NOT = { war_with = SWA }
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = disaster_fee_division_of_the_habsburg_monarchy19.EVTOPT1
+
+		SWA = {
+			country_event = { id = disaster_fee_division_of_the_habsburg_monarchy.14 days = 3 }
+		}
+	}
+
+	option = {
+		name = disaster_fee_division_of_the_habsburg_monarchy19.EVTOPT2
+
+		add_legitimacy = 10
+	}
+}
+
+# Proposal to Hungary
+country_event = {
+	id = disaster_fee_division_of_the_habsburg_monarchy.20
+	title = disaster_fee_division_of_the_habsburg_monarchy.EVTNAME20
+	desc = disaster_fee_division_of_the_habsburg_monarchy.EVTDESC20
+	picture = DIPLOMACY_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = HAB
+			was_tag = HAB
+		}
+		has_disaster = fee_division_of_the_habsburg_monarchy
+		has_country_flag = diplomatic_reunification
+		has_country_flag = hab_division_3
+		exists = HUN
+		HUN = {
+			is_free_or_tributary_trigger = yes
+			dynasty = "von Habsburg"
+		}
+		NOT = { war_with = HUN }
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = disaster_fee_division_of_the_habsburg_monarchy20.EVTOPT1
+
+		HUN = {
+			country_event = { id = disaster_fee_division_of_the_habsburg_monarchy.14 days = 3 }
+		}
+	}
+
+	option = {
+		name = disaster_fee_division_of_the_habsburg_monarchy20.EVTOPT2
+
+		add_legitimacy = 10
+	}
+}
+
+# Proposal to Bohemia
+country_event = {
+	id = disaster_fee_division_of_the_habsburg_monarchy.21
+	title = disaster_fee_division_of_the_habsburg_monarchy.EVTNAME21
+	desc = disaster_fee_division_of_the_habsburg_monarchy.EVTDESC21
+	picture = DIPLOMACY_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = HAB
+			was_tag = HAB
+		}
+		has_disaster = fee_division_of_the_habsburg_monarchy
+		has_country_flag = diplomatic_reunification
+		has_country_flag = hab_division_3
+		exists = BOH
+		BOH = {
+			is_free_or_tributary_trigger = yes
+			dynasty = "von Habsburg"
+		}
+		NOT = { war_with = BOH }
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = disaster_fee_division_of_the_habsburg_monarchy21.EVTOPT1
+
+		BOH = {
+			country_event = { id = disaster_fee_division_of_the_habsburg_monarchy.14 days = 3 }
+		}
+	}
+
+	option = {
+		name = disaster_fee_division_of_the_habsburg_monarchy21.EVTOPT2
+
+		add_legitimacy = 10
+	}
+}
+
+# Nobility Protest
+country_event = {
+	id = disaster_fee_division_of_the_habsburg_monarchy.22
+	title = disaster_fee_division_of_the_habsburg_monarchy.EVTNAME22
+	desc = disaster_fee_division_of_the_habsburg_monarchy.EVTDESC22
+	picture = DIPLOMACY_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = HAB
+			was_tag = HAB
+		}
+		has_disaster = fee_division_of_the_habsburg_monarchy
+		has_country_flag = military_reunification
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					any_owned_province = {
+						is_island = no
+						is_capital = no
+					}
+				}
+				random_owned_province = {
+					limit = {
+						is_island = no
+						is_capital = no
+					}
+					save_event_target_as = target_province_1
+				}
+			}
+			else_if = {
+				limit = {
+					any_owned_province = {
+						is_island = no
+					}
+				}
+				random_owned_province = {
+					limit = {
+						is_island = no
+					}
+					save_event_target_as = target_province_1
+				}
+			}
+			else = {
+				random_owned_province = {
+					save_event_target_as = target_province_1
+				}
+			}
+			if = {
+				limit = {
+					any_owned_province = {
+						is_island = no
+						is_capital = no
+						NOT = { province_id = event_target:target_province_1 }
+					}
+				}
+				random_owned_province = {
+					limit = {
+						is_island = no
+						is_capital = no
+						NOT = { province_id = event_target:target_province_1 }
+					}
+					save_event_target_as = target_province_2
+				}
+			}
+			else_if = {
+				limit = {
+					any_owned_province = {
+						is_island = no
+						NOT = { province_id = event_target:target_province_1 }
+					}
+				}
+				random_owned_province = {
+					limit = {
+						is_island = no
+						NOT = { province_id = event_target:target_province_1 }
+					}
+					save_event_target_as = target_province_2
+				}
+			}
+			else_if = {
+				limit = {
+					any_owned_province = {
+						NOT = { province_id = event_target:target_province_1 }
+					}
+				}
+				random_owned_province = {
+					limit = {
+						NOT = { province_id = event_target:target_province_1 }
+					}
+					save_event_target_as = target_province_2
+				}
+			}
+			else = {
+				random_owned_province = {
+					save_event_target_as = target_province_2
+				}
+			}
+		}
+	}
+
+	option = {
+		name = disaster_fee_division_of_the_habsburg_monarchy22.EVTOPT1
+
+		event_target:target_province_1 = {
+			noble_rebels = 3
+		}
+		event_target:target_province_2 = {
+			noble_rebels = 3
+		}
+	}
+}
+
+# Order Restored in Styria
+country_event = {
+	id = disaster_fee_division_of_the_habsburg_monarchy.23
+	title = disaster_fee_division_of_the_habsburg_monarchy.EVTNAME23
+	desc = disaster_fee_division_of_the_habsburg_monarchy.EVTDESC23
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = HAB
+			was_tag = HAB
+		}
+		has_disaster = fee_division_of_the_habsburg_monarchy
+		has_country_flag = military_reunification
+		has_country_flag = hab_division_2
+		exists = STY
+		overlord_of = STY
+		STY = {
+			is_subject_other_than_tributary_trigger = yes
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = disaster_fee_division_of_the_habsburg_monarchy23.EVTOPT1
+
+		ai_chance = {
+			factor = 0.5
+			modifier = {
+				factor = 0
+				STY = { ai = no }
+			}
+		}
+
+		inherit = STY
+		add_country_modifier = {
+			name = fee_division_of_the_habsburg_monarchy_forcible_annexation
+			duration = 5475
+		}
+		every_subject_country = {
+			limit = {
+				NOT = { tag = STY }
+			}
+			add_liberty_desire = 20
+		}
+	}
+
+	option = {
+		name = disaster_fee_division_of_the_habsburg_monarchy23.EVTOPT2
+
+		ai_chance = {
+			factor = 0.5
+		}
+
+		add_stability_or_adm_power = yes
+		add_country_modifier = {
+			name = fee_division_of_the_habsburg_monarchy_generous_peace
+			duration = 5475
+		}
+		every_subject_country = {
+			add_liberty_desire = -10
+		}
+	}
+}
+
+# Order Restored in Tirol
+country_event = {
+	id = disaster_fee_division_of_the_habsburg_monarchy.24
+	title = disaster_fee_division_of_the_habsburg_monarchy.EVTNAME24
+	desc = disaster_fee_division_of_the_habsburg_monarchy.EVTDESC24
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = HAB
+			was_tag = HAB
+		}
+		has_disaster = fee_division_of_the_habsburg_monarchy
+		has_country_flag = military_reunification
+		has_country_flag = hab_division_3
+		exists = TIR
+		overlord_of = TIR
+		TIR = {
+			is_subject_other_than_tributary_trigger = yes
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = disaster_fee_division_of_the_habsburg_monarchy24.EVTOPT1
+
+		add_years_of_income = 0.5
+		add_country_modifier = {
+			name = fee_division_of_the_habsburg_monarchy_accelerated_reintegration
+			duration = 9125
+		}
+		every_subject_country = {
+			add_liberty_desire = 10
+		}
+	}
+
+	option = {
+		name = disaster_fee_division_of_the_habsburg_monarchy24.EVTOPT2
+
+		add_stability_or_adm_power = yes
+		add_country_modifier = {
+			name = fee_division_of_the_habsburg_monarchy_fair_treatment
+			duration = 5475
+		}
+		every_subject_country = {
+			add_liberty_desire = -5
+		}
+	}
+}
+
+# Order Restored in Bohemia
+country_event = {
+	id = disaster_fee_division_of_the_habsburg_monarchy.25
+	title = disaster_fee_division_of_the_habsburg_monarchy.EVTNAME25
+	desc = disaster_fee_division_of_the_habsburg_monarchy.EVTDESC25
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = HAB
+			was_tag = HAB
+		}
+		has_disaster = fee_division_of_the_habsburg_monarchy
+		has_country_flag = military_reunification
+		has_country_flag = hab_division_3
+		exists = BOH
+		senior_union_with = BOH
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = disaster_fee_division_of_the_habsburg_monarchy25.EVTOPT1
+
+		add_stability = -1
+		add_country_modifier = {
+			name = fee_division_of_the_habsburg_monarchy_bohemian_crown_hab
+			duration = 9125
+		}
+		BOH = {
+			add_country_modifier = {
+				name = fee_division_of_the_habsburg_monarchy_bohemian_crown_boh
+				duration = 9125
+			}
+			random_owned_province = {
+				pretender_rebels = 2
+			}
+			random_owned_province = {
+				pretender_rebels = 2
+			}
+		}
+		every_subject_country = {
+			add_liberty_desire = 10
+		}
+	}
+
+	option = {
+		name = disaster_fee_division_of_the_habsburg_monarchy25.EVTOPT2
+
+		add_stability_or_adm_power = yes
+		add_country_modifier = {
+			name = fee_division_of_the_habsburg_monarchy_benevolent_rulership
+			duration = 5475
+		}
+		BOH = {
+			add_liberty_desire = -20
+		}
+	}
+}

@@ -71,3 +71,58 @@ fee_decline_of_the_ottomans_hayduks = {
 fee_decline_of_the_ottomans_greek_freedom_fighters = {
 	land_morale = 0.15
 }
+
+# Austria
+fee_division_of_the_habsburg_monarchy_new_habsburg_monarchy = {
+	administrative_efficiency = 0.05
+	max_absolutism = 20
+}
+
+fee_division_of_the_habsburg_monarchy_restored_habsburg_monarchy = {
+	diplomatic_annexation_cost = -0.1
+	reduced_liberty_desire = 10
+	accept_vassalization_reasons = 5
+	max_absolutism = -15
+}
+
+fee_division_of_the_habsburg_monarchy_diplomatic_efforts = {
+	diplomatic_upkeep = 1
+	diplomatic_reputation = 1
+	diplomatic_annexation_cost = -0.15
+}
+
+fee_division_of_the_habsburg_monarchy_reunification_wars = {
+	ae_impact = -0.25
+}
+
+fee_division_of_the_habsburg_monarchy_forcible_annexation = {
+	diplomatic_reputation = -2
+	stability_cost_modifier = 0.1
+}
+
+fee_division_of_the_habsburg_monarchy_generous_peace = {
+	diplomatic_reputation = 1
+	prestige = 1
+}
+
+fee_division_of_the_habsburg_monarchy_accelerated_reintegration = {
+	diplomatic_annexation_cost = -0.1
+}
+
+fee_division_of_the_habsburg_monarchy_fair_treatment = {
+	diplomatic_upkeep = 1
+}
+
+fee_division_of_the_habsburg_monarchy_bohemian_crown_hab = {
+	imperial_authority = 0.2
+}
+
+fee_division_of_the_habsburg_monarchy_bohemian_crown_boh = {
+	legitimate_subject_elector = 25
+}
+
+fee_division_of_the_habsburg_monarchy_benevolent_rulership = {
+	reduced_liberty_desire = 10
+	diplomatic_annexation_cost = 0.1
+	improve_relation_modifier = 0.15
+}

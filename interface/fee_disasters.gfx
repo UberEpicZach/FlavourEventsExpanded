@@ -11,4 +11,10 @@ spriteTypes = {
 		noOfFrames = 3
 		loadType = "INGAME"
 	}
+	spriteType = {
+		name = "GFX_disaster_fee_division_of_the_habsburg_monarchy"
+		texturefile = "gfx/interface/disasters/fee_division_of_the_habsburg_monarchy.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
 }
