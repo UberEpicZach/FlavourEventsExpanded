@@ -109,6 +109,7 @@ country_event = {
 				limit = {
 					owned_by = ROOT
 				}
+				remove_core = ROOT
 				add_core = STY
 				if = {
 					limit = {
@@ -494,6 +495,7 @@ country_event = {
 				limit = {
 					owned_by = ROOT
 				}
+				remove_core = ROOT
 				add_core = TIR
 				if = {
 					limit = {
@@ -839,6 +841,7 @@ country_event = {
 				limit = {
 					culture = swabian
 				}
+				remove_core = ROOT
 				add_core = SWA
 				if = {
 					limit = {
@@ -1218,48 +1221,48 @@ country_event = {
 	}
 }
 
-# Proposal to Styria
-country_event = {
-	id = disaster_fee_division_of_the_habsburg_monarchy.17
-	title = disaster_fee_division_of_the_habsburg_monarchy.EVTNAME17
-	desc = disaster_fee_division_of_the_habsburg_monarchy.EVTDESC17
-	picture = DIPLOMACY_eventPicture
-
-	fire_only_once = yes
-
-	trigger = {
-		OR = {
-			tag = HAB
-			was_tag = HAB
-		}
-		has_disaster = fee_division_of_the_habsburg_monarchy
-		has_country_flag = diplomatic_reunification
-		has_country_flag = hab_division_3
-		exists = STY
-		STY = {
-			is_free_or_tributary_trigger = yes
-		}
-		NOT = { war_with = STY }
-	}
-
-	mean_time_to_happen = {
-		months = 12
-	}
-
-	option = {
-		name = disaster_fee_division_of_the_habsburg_monarchy17.EVTOPT1
-
-		STY = {
-			country_event = { id = disaster_fee_division_of_the_habsburg_monarchy.14 days = 3 }
-		}
-	}
-
-	option = {
-		name = disaster_fee_division_of_the_habsburg_monarchy17.EVTOPT2
-
-		add_legitimacy = 10
-	}
-}
+# Proposal to Styria [deleted]
+#	country_event = {
+#		id = disaster_fee_division_of_the_habsburg_monarchy.17
+#		title = disaster_fee_division_of_the_habsburg_monarchy.EVTNAME17
+#		desc = disaster_fee_division_of_the_habsburg_monarchy.EVTDESC17
+#		picture = DIPLOMACY_eventPicture
+#
+#		fire_only_once = yes
+#
+#		trigger = {
+#			OR = {
+#				tag = HAB
+#				was_tag = HAB
+#			}
+#			has_disaster = fee_division_of_the_habsburg_monarchy
+#			has_country_flag = diplomatic_reunification
+#			has_country_flag = hab_division_3
+#			exists = STY
+#			STY = {
+#				is_free_or_tributary_trigger = yes
+#			}
+#			NOT = { war_with = STY }
+#		}
+#
+#		mean_time_to_happen = {
+#			months = 12
+#		}
+#
+#		option = {
+#			name = disaster_fee_division_of_the_habsburg_monarchy17.EVTOPT1
+#
+#			STY = {
+#				country_event = { id = disaster_fee_division_of_the_habsburg_monarchy.14 days = 3 }
+#			}
+#		}
+#
+#		option = {
+#			name = disaster_fee_division_of_the_habsburg_monarchy17.EVTOPT2
+#
+#			add_legitimacy = 10
+#		}
+#	}
 
 # Proposal to Tirol
 country_event = {
