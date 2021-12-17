@@ -12,6 +12,12 @@ province_event = {
 			which = Melva_JEW_CITY_APPROVE
 			value = 50
 		}
+		NOT = {
+			check_variable = {
+				which = Melva_JEW_CITY_APPROVE
+				value = 100
+			}
+		}
 		NOT = { religion = jewish }
 		OR = {
 			NOT = { has_province_flag = melva_jew_province_wants_convert }
