@@ -7,6 +7,8 @@ country_event = {
 	desc = Melva_Wars_Italy_Events.100.D
 	picture = BATTLE_eventPicture
 
+	fire_only_once = yes
+
 	trigger = {
 		is_year = 1494
 		NOT = { is_year = 1498 }
@@ -26,12 +28,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		months = 3
-	}
-
-	immediate = {
-		hidden_effect = {
-			set_country_flag = melva_italy_wars_flag
-		}
 	}
 
 	option = {
@@ -180,93 +176,146 @@ country_event = {
 	}
 }
 
-#Cavalry
-country_event = {
-	id = Melva_Wars_Italy_Events.200
-	title = Melva_Wars_Italy_Events.200.T
-	desc = Melva_Wars_Italy_Events.200.D
-	picture = BATTLE_eventPicture
+#Second Italian War
+#country_event = {
+#	id = Melva_Wars_Italy_Events.200
+#	title = Melva_Wars_Italy_Events.200.T
+#	desc = Melva_Wars_Italy_Events.200.D
+#	picture = BATTLE_eventPicture
+#
+#	fire_only_once = yes
+#
+#	trigger = {
+#		is_year = 1499
+#		NOT = { is_year = 1504 }
+#		tag = FRA
+#		exists = FRA
+#		exists = MLO
+#		FRA = {
+#			is_free_or_tributary_trigger = yes
+#		}
+#		MLO = {
+#			is_free_or_tributary_trigger = yes
+#		}
+#		NOT = {
+#			war_with = MLO
+#		}
+#	}
+#
+#	mean_time_to_happen = {
+#		months = 3
+#	}
+#
+#	option = {
+#		name = Melva_Wars_Italy_Events.200.OPT1
+#		ai_chance = {
+#			factor = 100
+#		}
+#
+#		custom_tooltip = SECOND_ITALIAN_WARS_TT
+#		declare_war_with_cb = {
+#			casus_belli = cb_vassalize_mission
+#			who = MLO
+#		}
+#		hidden_effect = {
+#		}
+#	}
+#
+#	option = {
+#		name = Melva_Wars_Italy_Events.200.OPT2
+#		ai_chance = {
+#			factor = 0
+#		}
+#		
+#		add_prestige = -10
+#		add_adm_power = -50
+#		add_dip_power = -50
+#		add_mil_power = -50
+#	}
+#}
 
-	is_triggered_only = yes
+#Third Italian War
+#country_event = {
+#	id = Melva_Wars_Italy_Events.300
+#	title = Melva_Wars_Italy_Events.300.T
+#	desc = Melva_Wars_Italy_Events.300.D
+#	picture = BATTLE_eventPicture
+#
+#	fire_only_once = yes
+#
+#	trigger = {
+#		is_year = 1494
+#		NOT = { is_year = 1498 }
+#		tag = FRA
+#		exists = FRA
+#		exists = NAP
+#		FRA = {
+#			valid_for_personal_unions_trigger = yes
+#		}
+#		NAP = {
+#			valid_for_personal_unions_trigger = yes
+#		}
+#		NOT = {
+#			war_with = NAP
+#		}
+#	}
+#
+#	option = {
+#		name = Melva_Wars_Italy_Events.300.OPT1
+#		ai_chance = {
+#			factor = 1
+#		}
+#
+#		add_country_modifier = {
+#			name = melva_italian_wars_cavalry
+#			duration = 3650
+#		}
+#	}
+#}
 
-	option = {
-		name = Melva_Wars_Italy_Events.200.OPT1
-		ai_chance = {
-			factor = 1
-		}
+#Fourth Italian War
+#country_event = {
+#	id = Melva_Wars_Italy_Events.400
+#	title = Melva_Wars_Italy_Events.400.T
+#	desc = Melva_Wars_Italy_Events.400.D
+#	picture = BATTLE_eventPicture
+#
+#	is_triggered_only = yes
+#
+#	option = {
+#		name = Melva_Wars_Italy_Events.400.OPT1
+#		ai_chance = {
+#			factor = 1
+#		}
+#
+#		add_country_modifier = {
+#			name = melva_italian_wars_artillery
+#			duration = 3650
+#		}
+#	}
+#}
 
-		add_country_modifier = {
-			name = melva_italian_wars_cavalry
-			duration = 3650
-		}
-	}
-}
-
-#Cavalry
-country_event = {
-	id = Melva_Wars_Italy_Events.300
-	title = Melva_Wars_Italy_Events.300.T
-	desc = Melva_Wars_Italy_Events.300.D
-	picture = BATTLE_eventPicture
-
-	is_triggered_only = yes
-
-	option = {
-		name = Melva_Wars_Italy_Events.300.OPT1
-		ai_chance = {
-			factor = 1
-		}
-
-		add_country_modifier = {
-			name = melva_italian_wars_cavalry
-			duration = 3650
-		}
-	}
-}
-
-#Artillery
-country_event = {
-	id = Melva_Wars_Italy_Events.400
-	title = Melva_Wars_Italy_Events.400.T
-	desc = Melva_Wars_Italy_Events.400.D
-	picture = BATTLE_eventPicture
-
-	is_triggered_only = yes
-
-	option = {
-		name = Melva_Wars_Italy_Events.400.OPT1
-		ai_chance = {
-			factor = 1
-		}
-
-		add_country_modifier = {
-			name = melva_italian_wars_artillery
-			duration = 3650
-		}
-	}
-}
-
-#Forts
-country_event = {
-	id = Melva_Wars_Italy_Events.500
-	title = Melva_Wars_Italy_Events.500.T
-	desc = Melva_Wars_Italy_Events.500.D
-	picture = BATTLE_eventPicture
-
-	is_triggered_only = yes
-
-	option = {
-		name = Melva_Wars_Italy_Events.500.OPT1
-		ai_chance = {
-			factor = 1
-		}
-
-		add_country_modifier = {
-			name = melva_italian_wars_forts
-			duration = 3650
-		}
-	}
-}
+#Fifth Italian War
+#country_event = {
+#	id = Melva_Wars_Italy_Events.500
+#	title = Melva_Wars_Italy_Events.500.T
+#	desc = Melva_Wars_Italy_Events.500.D
+#	picture = BATTLE_eventPicture
+#
+#	is_triggered_only = yes
+#
+#	option = {
+#		name = Melva_Wars_Italy_Events.500.OPT1
+#		ai_chance = {
+#			factor = 1
+#		}
+#
+#		add_country_modifier = {
+#			name = melva_italian_wars_forts
+#			duration = 3650
+#		}
+#	}
+#}
 
 
 #
