@@ -648,7 +648,7 @@ country_event = {
 
 		kill_ruler = yes
 		add_stability = -1
-		add_legitimacy_equivalent = { value = -20 republican_tradition = -10 }
+		add_legitimacy_equivalent = { amount = -20 republican_tradition = -10 }
 		overlord = {
 			add_opinion = {
 				who = ROOT
