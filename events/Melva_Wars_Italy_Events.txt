@@ -1,6 +1,6 @@
 namespace = Melva_Wars_Italy_Events
 
-#The wars of Italy
+#First Italian War
 country_event = {
 	id = Melva_Wars_Italy_Events.100
 	title = Melva_Wars_Italy_Events.100.T
@@ -8,7 +8,7 @@ country_event = {
 	picture = BATTLE_eventPicture
 
 	trigger = {
-		is_year = 11494
+		is_year = 1494
 		NOT = { is_year = 1498 }
 		tag = FRA
 		exists = FRA
@@ -25,7 +25,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		years = 2
+		months = 3
 	}
 
 	immediate = {
@@ -40,12 +40,89 @@ country_event = {
 			factor = 100
 		}
 
+		custom_tooltip = FIRST_ITALIAN_WARS_TT
 		declare_war_with_cb = {
 			casus_belli = cb_restore_personal_union
 			who = NAP
 		}
 		hidden_effect = {
-			
+			if = {
+				limit = {
+					exists = MLO
+					MLO = { is_free_or_tributary_trigger = yes }
+				}
+				MLO = {
+					country_event = {
+						id = Melva_Wars_Italy_Events.101
+					}
+				}
+			}
+			if = {
+				limit = {
+					exists = PAP
+					PAP = { is_free_or_tributary_trigger = yes }
+				}
+				PAP = {
+					country_event = {
+						id = Melva_Wars_Italy_Events.101
+					}
+				}
+			}
+			if = {
+				limit = {
+					exists = VEN
+					VEN = { is_free_or_tributary_trigger = yes }
+				}
+				VEN = {
+					country_event = {
+						id = Melva_Wars_Italy_Events.101
+					}
+				}
+			}
+			if = {
+				limit = {
+					exists = MAN
+					MAN = { is_free_or_tributary_trigger = yes }
+				}
+				MAN = {
+					country_event = {
+						id = Melva_Wars_Italy_Events.101
+					}
+				}
+			}
+			if = {
+				limit = {
+					exists = GEN
+					GEN = { is_free_or_tributary_trigger = yes }
+				}
+				GEN = {
+					country_event = {
+						id = Melva_Wars_Italy_Events.101
+					}
+				}
+			}
+			if = {
+				limit = {
+					exists = ARA
+					ARA = { is_free_or_tributary_trigger = yes }
+				}
+				ARA = {
+					country_event = {
+						id = Melva_Wars_Italy_Events.101
+					}
+				}
+			}
+			if = {
+				limit = {
+					exists = CAS
+					CAS = { is_free_or_tributary_trigger = yes }
+				}
+				CAS = {
+					country_event = {
+						id = Melva_Wars_Italy_Events.101
+					}
+				}
+			}
 		}
 	}
 
@@ -56,29 +133,50 @@ country_event = {
 		}
 		
 		add_prestige = -10
-		add_legitimacy_equivalent = { value = -25 republican_tradition = -13 }
+		add_legitimacy_equivalent = { amount = -25 republican_tradition = -13 }
 	}
 }
 
-#Infantry
+#Chiamata alle Armi
 country_event = {
-	id = Melva_Wars_Italy_Events.2
-	title = Melva_Wars_Italy_Events.2.T
-	desc = Melva_Wars_Italy_Events.2.D
+	id = Melva_Wars_Italy_Events.101
+	title = Melva_Wars_Italy_Events.101.T
+	desc = Melva_Wars_Italy_Events.101.D
 	picture = BATTLE_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = Melva_Wars_Italy_Events.2.OPT1
+		name = Melva_Wars_Italy_Events.101.OPT1
 		ai_chance = {
-			factor = 1
+			factor = 50
+			modifier = {
+				factor = 20
+				tag = MLO
+			}
 		}
 
-		add_country_modifier = {
-			name = melva_italian_wars_infantry
-			duration = 3650
+		join_all_offensive_wars_of = FROM
+	}
+
+	option = {
+		name = Melva_Wars_Italy_Events.101.OPT2
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 20
+				OR = {
+					tag = PAP
+					tag = VEN
+					tag = MAN
+					tag = GEN
+					tag = ARA
+					tag = CAS
+				}
+			}
 		}
+
+		join_all_defensive_wars_of = NAP
 	}
 }
 
