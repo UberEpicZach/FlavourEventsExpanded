@@ -182,15 +182,37 @@ country_event = {
 
 #Cavalry
 country_event = {
-	id = Melva_Wars_Italy_Events.3
-	title = Melva_Wars_Italy_Events.3.T
-	desc = Melva_Wars_Italy_Events.3.D
+	id = Melva_Wars_Italy_Events.200
+	title = Melva_Wars_Italy_Events.200.T
+	desc = Melva_Wars_Italy_Events.200.D
 	picture = BATTLE_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = Melva_Wars_Italy_Events.3.OPT1
+		name = Melva_Wars_Italy_Events.200.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
+		add_country_modifier = {
+			name = melva_italian_wars_cavalry
+			duration = 3650
+		}
+	}
+}
+
+#Cavalry
+country_event = {
+	id = Melva_Wars_Italy_Events.300
+	title = Melva_Wars_Italy_Events.300.T
+	desc = Melva_Wars_Italy_Events.300.D
+	picture = BATTLE_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = Melva_Wars_Italy_Events.300.OPT1
 		ai_chance = {
 			factor = 1
 		}
@@ -204,15 +226,15 @@ country_event = {
 
 #Artillery
 country_event = {
-	id = Melva_Wars_Italy_Events.4
-	title = Melva_Wars_Italy_Events.4.T
-	desc = Melva_Wars_Italy_Events.4.D
+	id = Melva_Wars_Italy_Events.400
+	title = Melva_Wars_Italy_Events.400.T
+	desc = Melva_Wars_Italy_Events.400.D
 	picture = BATTLE_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = Melva_Wars_Italy_Events.4.OPT1
+		name = Melva_Wars_Italy_Events.400.OPT1
 		ai_chance = {
 			factor = 1
 		}
@@ -226,15 +248,15 @@ country_event = {
 
 #Forts
 country_event = {
-	id = Melva_Wars_Italy_Events.5
-	title = Melva_Wars_Italy_Events.5.T
-	desc = Melva_Wars_Italy_Events.5.D
+	id = Melva_Wars_Italy_Events.500
+	title = Melva_Wars_Italy_Events.500.T
+	desc = Melva_Wars_Italy_Events.500.D
 	picture = BATTLE_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = Melva_Wars_Italy_Events.5.OPT1
+		name = Melva_Wars_Italy_Events.500.OPT1
 		ai_chance = {
 			factor = 1
 		}
