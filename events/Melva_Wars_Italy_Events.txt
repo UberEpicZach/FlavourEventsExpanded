@@ -30,6 +30,18 @@ country_event = {
 		months = 3
 	}
 
+	major = yes
+	major_trigger = {
+		any_owned_province = {
+			OR = {
+				region = italy_region
+				region = france_region
+				region = iberia_region
+				is_part_of_hre = yes
+			}
+		}
+	}
+
 	option = {
 		name = Melva_Wars_Italy_Events.100.OPT1
 		ai_chance = {
