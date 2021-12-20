@@ -4,16 +4,16 @@ namespace = fee_BUR
 
 #Philip the Good parleys with Emperor Frederick III
 country_event = {
-    id = fee_BUR.1
-    title = fee_BUR.1.t
-    desc = fee_BUR.1.d
-    picture = HRE_eventPicture
+	id = fee_BUR.1
+	title = fee_BUR.1.t
+	desc = fee_BUR.1.d
+	picture = HRE_eventPicture
 
-    fire_only_once = yes
+	fire_only_once = yes
 
-    trigger = {
-        tag = BUR
-        is_at_war = no
+	trigger = {
+		tag = BUR
+		is_at_war = no
 		stability = 3
 		west_burgundy_area = {
 			type = all
@@ -80,11 +80,11 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-        months = 3
-    }
+		months = 3
+	}
 
-    option = {
-        name = fee_BUR.1.a
+	option = {
+		name = fee_BUR.1.a
 		ai_chance = {
 			factor = 75
 		}
@@ -104,13 +104,13 @@ country_event = {
 		country_event = { id = fee_HAB.8 }
 	}
 
-    option = {
-        name = fee_BUR.1.b
-        
+	option = {
+		name = fee_BUR.1.b
+		
 		add_opinion = {
 			who = HAB
 			modifier = fee_BUR_lotharingia_opinion2
-    	}
+		}
 	}
 }
 
@@ -133,29 +133,25 @@ country_event = {
 	}
 
 	# Option A: Host a grand feast!
-    option = {
-        name = fee_BUR.2.a
+	option = {
+		name = fee_BUR.2.a
 		ai_chance = {
 			factor = 50
 		}
-        add_years_of_income = -0.2
-        add_prestige = 20
-        if = {
-            limit = { has_dlc = "Mandate of Heaven" }
-            add_splendor = 100
-        }
-        # Two ifs instead of if-else, ugly, but seen on vanilla in janissary_decadence.txt
-        if = { 
-            limit = {
-                NOT = { has_dlc = "Mandate of Heaven" }
-                add_dip_power = 50
-            }
-        }
+		add_years_of_income = -0.2
+		add_prestige = 20
+		if = {
+			limit = { has_dlc = "Mandate of Heaven" }
+			add_splendor = 100
+		}
+		else = { 
+			add_dip_power = 50
+		}
 	}	
 	
 	# Option B: We can wait...
-    option = {
-        name = fee_BUR.2.b
+	option = {
+		name = fee_BUR.2.b
 		ai_chance = {
 			factor = 50
 		}
@@ -170,53 +166,55 @@ country_event = {
 	desc = fee_BUR.3.d
 	picture = MARY_OF_GUELDERS_eventPicture
 
-    trigger = {
-        OR = {
-            tag = BUR
-            tag = GEL
-            tag = SCO
-        }
-        is_year = 1451 
-    }
-    mean_time_to_happen = {
-		months = 240
-        modifier = {
-		    factor = 0.5
-		    tag = BUR
-	    }
-	}
 	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = BUR
+			tag = GEL
+			tag = SCO
+		}
+		is_year = 1451 
+	}
+
+	mean_time_to_happen = {
+		months = 240
+		modifier = {
+			factor = 0.5
+			tag = BUR
+		}
+	}
 	
-    # Option A: She should be an advisor!
-    option = {
-        name = fee_BUR.3.a
+	# Option A: She should be an advisor!
+	option = {
+		name = fee_BUR.3.a
 		ai_chance = {
 			factor = 50
 		}
-        # Gains level 2 female stateman advisor Maria van Gelre of Dutch culture and state religion
+		# Gains level 2 female stateman advisor Maria van Gelre of Dutch culture and state religion
 		define_advisor = {
 			type = statesman
-            culture = dutch
+			culture = dutch
 			religion = root
-            skill = 2
-            name = "Maria van Gelre"
-            female = yes
+			skill = 2
+			name = "Maria van Gelre"
+			female = yes
 		}
 
 	}	
 	
 	# Option B: We can learn from her
-    option = {
-        name = fee_BUR.3.b
+	option = {
+		name = fee_BUR.3.b
 		ai_chance = {
 			factor = 30
 		}
 		add_dip_power = 50
 	}
 
-    # Option C: How nice
-    option = {
-        name = fee_BUR.3.c
+	# Option C: How nice
+	option = {
+		name = fee_BUR.3.c
 		ai_chance = {
 			factor = 20
 		}
