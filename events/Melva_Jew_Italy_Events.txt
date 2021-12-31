@@ -394,14 +394,14 @@ province_event = {
 			which = Melva_JEW_CITY_OPPOSE
 			value = 10
 		}
-		add_devastation = 10
+		add_devastation = 25
 		random_neighbor_province = {
 			random_list = {
 				25 = {
 					add_development_third_monarch_skill = yes
 				}
 				75 = {
-					add_devastation = 10
+					add_devastation = 25
 				}
 			}
 		}
