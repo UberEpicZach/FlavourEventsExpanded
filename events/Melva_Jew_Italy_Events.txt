@@ -389,7 +389,7 @@ province_event = {
 			add_years_of_income = 0.166
 			add_mil_power = 15
 		}
-		remove_development_third_monarch_skill = yes
+		remove_development_third_monarch_skill_fee = yes
 		change_variable = {
 			which = Melva_JEW_CITY_OPPOSE
 			value = 10
@@ -512,7 +512,7 @@ province_event = {
 			add_papal_influence = 5
 			add_mil_power = -10
 		}
-		remove_development_third_monarch_skill = yes
+		remove_development_third_monarch_skill_fee = yes
 		if = {
 			limit = {
 				has_province_modifier = italian_jew_allowed_stay
