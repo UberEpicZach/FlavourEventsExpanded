@@ -274,6 +274,14 @@
  disaster_fee_division_of_the_habsburg_monarchy25.EVTOPT1: "We must clamp down!"
  disaster_fee_division_of_the_habsburg_monarchy25.EVTOPT2: "Reaffirm the [BOH.GetAdjective]s' Ancient Rights and Privileges."
 
+ disaster_fee_division_of_the_habsburg_monarchy.EVTNAME26: "[vassal_to_support.GetName] in Trouble!"
+ disaster_fee_division_of_the_habsburg_monarchy.EVTDESC26: "The nation of [vassal_to_support.GetName] is in trouble. [From.GetName] oppressed them for decades and they finally have risen up against their cruel overlords! However they are weak and may not be able to withstand their force. We need to help them in their fight..."
+ disaster_fee_division_of_the_habsburg_monarchy26.EVTOPT1: "We must help §Y[vassal_to_support.GetName]§!!"
+ disaster_fee_division_of_the_habsburg_monarchy26.EVTOPT2: "I don't see where this is my problem?"
+
+ FEE_DIVISION_OF_THE_HABSBURG_MONARCHY_RIVALS_MAY_JOIN_VASSAL_IN_WAR_TT: "Our §Yrivals§! may join them in their §YIndependence War§!."
+ FEE_DIVISION_OF_THE_HABSBURG_MONARCHY_SOUTH_GERMANS_MAY_JOIN_VASSAL_IN_WAR_TT: "Independent countries in §YSouth Germany§! may join them in their §YIndependence War§!."
+
  # Modifiers:
  fee_portuguese_succession_crisis_chaste_king: "Chaste King"
  fee_portuguese_succession_crisis_invasion_imminent: "Spanish Invasion Imminent"

@@ -621,6 +621,25 @@ country_event = {
 				casus_belli = cb_independence_war
 			}
 		}
+		custom_tooltip = FEE_DIVISION_OF_THE_HABSBURG_MONARCHY_RIVALS_MAY_JOIN_VASSAL_IN_WAR_TT
+		hidden_effect = {
+			if = {
+				limit = {
+					any_rival_country = {
+						NOT = { war_with = ROOT }
+					}
+				}
+				TIR = {
+					save_event_target_as = vassal_to_support
+				}
+				every_rival_country = {
+					limit = {
+						NOT = { war_with = ROOT }
+					}
+					country_event = { id = disaster_fee_division_of_the_habsburg_monarchy.26 }
+				}
+			}
+		}
 	}
 
 	after = {
@@ -965,6 +984,37 @@ country_event = {
 			declare_war_with_cb = {
 				who = ROOT
 				casus_belli = cb_independence_war
+			}
+		}
+		custom_tooltip = FEE_DIVISION_OF_THE_HABSBURG_MONARCHY_SOUTH_GERMANS_MAY_JOIN_VASSAL_IN_WAR_TT
+		hidden_effect = {
+			if = {
+				limit = {
+					any_country = {
+						is_subject = no
+						NOT = { war_with = ROOT }
+						NOT = { alliance_with = ROOT }
+						NOT = { alliance_with = SWA }
+						capital_scope = {
+							region = south_german_region
+						}
+					}
+				}
+				SWA = {
+					save_event_target_as = vassal_to_support
+				}
+				every_country = {
+					limit = {
+						is_subject = no
+						NOT = { war_with = ROOT }
+						NOT = { alliance_with = ROOT }
+						NOT = { alliance_with = SWA }
+						capital_scope = {
+							region = south_german_region
+						}
+					}
+					country_event = { id = disaster_fee_division_of_the_habsburg_monarchy.26 }
+				}
 			}
 		}
 	}
@@ -1773,5 +1823,139 @@ country_event = {
 		BOH = {
 			add_liberty_desire = -20
 		}
+	}
+}
+
+# [vassal_to_support.GetName] in Trouble!
+country_event = {
+	id = disaster_fee_division_of_the_habsburg_monarchy.26
+	title = disaster_fee_division_of_the_habsburg_monarchy.EVTNAME26
+	desc = disaster_fee_division_of_the_habsburg_monarchy.EVTDESC26
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_saved_event_target = vassal_to_support
+		event_target:vassal_to_support = {
+			is_at_war = yes
+			is_in_war =  {
+				defender_leader = THIS
+				attacker_leader = FROM
+			}
+		}
+	}
+
+	option = {
+		name = disaster_fee_division_of_the_habsburg_monarchy26.EVTOPT1
+
+		ai_chance = {
+			factor = 0.33
+			modifier = {
+				factor = 10
+				is_rival = FROM
+			}
+			modifier = {
+				factor = 5
+				is_enemy = FROM
+			}
+			modifier = {
+				factor = 2
+				NOT = {
+					has_opinion = {
+						who = FROM
+						value = 0
+					}
+				}
+			}
+			modifier = {
+				factor = 3
+				NOT = {
+					has_opinion = {
+						who = FROM
+						value = -50
+					}
+				}
+			}
+			modifier = {
+				factor = 5
+				NOT = {
+					has_opinion = {
+						who = FROM
+						value = -100
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				has_opinion = {
+					who = event_target:vassal_to_support
+					value = 100
+				}
+			}
+		}
+
+		join_all_defensive_wars_of = event_target:vassal_to_support
+	}
+
+	option = {
+		name = disaster_fee_division_of_the_habsburg_monarchy26.EVTOPT2
+
+		ai_chance = {
+			factor = 0.66
+			modifier = {
+				factor = 0
+				is_rival = FROM
+			}
+			modifier = {
+				factor = 0.25
+				is_enemy = FROM
+			}
+			modifier = {
+				factor = 2
+				is_at_war = yes
+			}
+			modifier = {
+				factor = 1.5
+				NOT = { army_size = FROM }
+			}
+			modifier = {
+				factor = 3
+				NOT = { army_size = 10 }
+				FROM = {
+					army_size = 20
+				}
+			}
+			modifier = {
+				factor = 1.1
+				has_opinion = {
+					who = FROM
+					value = 50
+				}
+			}
+			modifier = {
+				factor = 1.25
+				has_opinion = {
+					who = FROM
+					value = 100
+				}
+			}
+			modifier = {
+				factor = 1.5
+				has_opinion = {
+					who = FROM
+					value = 150
+				}
+			}
+			modifier = {
+				factor = 2
+				has_opinion = {
+					who = FROM
+					value = 200
+				}
+			}
+		}
+
+		add_prestige = -5
 	}
 }
