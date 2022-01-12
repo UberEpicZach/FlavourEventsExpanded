@@ -1317,7 +1317,18 @@ country_event = {
 #			has_country_flag = hab_division_3
 #			exists = STY
 #			STY = {
-#				is_free_or_tributary_trigger = yes
+#				OR = {
+#					is_free_or_tributary_trigger = yes
+#					AND = {
+#						is_subject_of = ROOT
+#						years_in_vassalage_under = {
+#							who = ROOT
+#							years = 5
+#							all_subject_country = yes
+#						}
+#						NOT = { liberty_desire = 50 }
+#					}
+#				}
 #			}
 #			NOT = { war_with = STY }
 #		}
@@ -1329,6 +1340,10 @@ country_event = {
 #		option = {
 #			name = disaster_fee_division_of_the_habsburg_monarchy17.EVTOPT1
 #
+#			trigger = {
+#				NOT = { overlord_of = STY }
+#			}
+#
 #			STY = {
 #				country_event = { id = disaster_fee_division_of_the_habsburg_monarchy.14 days = 3 }
 #			}
@@ -1337,7 +1352,22 @@ country_event = {
 #		option = {
 #			name = disaster_fee_division_of_the_habsburg_monarchy17.EVTOPT2
 #
+#			trigger = {
+#				NOT = { overlord_of = STY }
+#			}
+#
 #			add_legitimacy = 10
+#		}
+#
+#		option = {
+#			name = disaster_fee_division_of_the_habsburg_monarchy17.EVTOPT3
+#
+#			trigger = {
+#				overlord_of = STY
+#			}
+#
+#			add_legitimacy = 10
+#			add_dip_power = 50
 #		}
 #	}
 
@@ -1360,7 +1390,18 @@ country_event = {
 		has_country_flag = hab_division_3
 		exists = TIR
 		TIR = {
-			is_free_or_tributary_trigger = yes
+			OR = {
+				is_free_or_tributary_trigger = yes
+				AND = {
+					is_subject_of = ROOT
+					years_in_vassalage_under = {
+						who = ROOT
+						years = 5
+						all_subject_country = yes
+					}
+					NOT = { liberty_desire = 50 }
+				}
+			}
 		}
 		NOT = { war_with = TIR }
 	}
@@ -1372,6 +1413,10 @@ country_event = {
 	option = {
 		name = disaster_fee_division_of_the_habsburg_monarchy18.EVTOPT1
 
+		trigger = {
+			NOT = { overlord_of = TIR }
+		}
+
 		TIR = {
 			country_event = { id = disaster_fee_division_of_the_habsburg_monarchy.14 days = 3 }
 		}
@@ -1380,7 +1425,22 @@ country_event = {
 	option = {
 		name = disaster_fee_division_of_the_habsburg_monarchy18.EVTOPT2
 
+		trigger = {
+			NOT = { overlord_of = TIR }
+		}
+
 		add_legitimacy = 10
+	}
+
+	option = {
+		name = disaster_fee_division_of_the_habsburg_monarchy18.EVTOPT3
+
+		trigger = {
+			overlord_of = TIR
+		}
+
+		add_legitimacy = 10
+		add_dip_power = 50
 	}
 }
 
@@ -1403,7 +1463,18 @@ country_event = {
 		has_country_flag = hab_division_4
 		exists = SWA
 		SWA = {
-			is_free_or_tributary_trigger = yes
+			OR = {
+				is_free_or_tributary_trigger = yes
+				AND = {
+					is_subject_of = ROOT
+					years_in_vassalage_under = {
+						who = ROOT
+						years = 5
+						all_subject_country = yes
+					}
+					NOT = { liberty_desire = 50 }
+				}
+			}
 		}
 		NOT = { war_with = SWA }
 	}
@@ -1415,6 +1486,10 @@ country_event = {
 	option = {
 		name = disaster_fee_division_of_the_habsburg_monarchy19.EVTOPT1
 
+		trigger = {
+			NOT = { overlord_of = SWA }
+		}
+
 		SWA = {
 			country_event = { id = disaster_fee_division_of_the_habsburg_monarchy.14 days = 3 }
 		}
@@ -1423,7 +1498,22 @@ country_event = {
 	option = {
 		name = disaster_fee_division_of_the_habsburg_monarchy19.EVTOPT2
 
+		trigger = {
+			NOT = { overlord_of = SWA }
+		}
+
 		add_legitimacy = 10
+	}
+
+	option = {
+		name = disaster_fee_division_of_the_habsburg_monarchy19.EVTOPT3
+
+		trigger = {
+			overlord_of = SWA
+		}
+
+		add_legitimacy = 10
+		add_dip_power = 50
 	}
 }
 
