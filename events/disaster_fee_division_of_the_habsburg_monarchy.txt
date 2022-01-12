@@ -1142,19 +1142,31 @@ country_event = {
 			}
 		}
 
-		tooltip = {
-			FROM = {
-				create_union = ROOT
+		if = {
+			limit = {
+				is_subject_of = FROM
 			}
-			add_opinion = {
-				who = FROM
-				modifier = fee_division_of_the_habsburg_monarchy_acceptance
+			tooltip = {
+				FROM = {
+					inherit = ROOT
+				}
 			}
-			reverse_add_opinion = {
-				who = FROM
-				modifier = fee_division_of_the_habsburg_monarchy_acceptance
+		}
+		else = {
+			tooltip = {
+				FROM = {
+					create_union = ROOT
+				}
+				add_opinion = {
+					who = FROM
+					modifier = fee_division_of_the_habsburg_monarchy_acceptance
+				}
+				reverse_add_opinion = {
+					who = FROM
+					modifier = fee_division_of_the_habsburg_monarchy_acceptance
+				}
+				add_liberty_desire = -30
 			}
-			add_liberty_desire = -30
 		}
 		hidden_effect = {
 			FROM = {
@@ -1228,29 +1240,37 @@ country_event = {
 	option = {
 		name = disaster_fee_division_of_the_habsburg_monarchy15.EVTOPT1
 
-		hidden_effect = {
-			FROM = {
-				if = {
-					limit = {
-						is_subject = yes
-					}
-					overlord = {
-						PREV = { grant_independence = yes }
+		if = {
+			limit = {
+				overlord_of = FROM
+			}
+			inherit = FROM
+		}
+		else = {
+			hidden_effect = {
+				FROM = {
+					if = {
+						limit = {
+							is_subject = yes
+						}
+						overlord = {
+							PREV = { grant_independence = yes }
+						}
 					}
 				}
 			}
-		}
-		create_union = FROM
-		add_opinion = {
-			who = FROM
-			modifier = fee_division_of_the_habsburg_monarchy_acceptance
-		}
-		reverse_add_opinion = {
-			who = FROM
-			modifier = fee_division_of_the_habsburg_monarchy_acceptance
-		}
-		FROM = {
-			add_liberty_desire = -30
+			create_union = FROM
+			add_opinion = {
+				who = FROM
+				modifier = fee_division_of_the_habsburg_monarchy_acceptance
+			}
+			reverse_add_opinion = {
+				who = FROM
+				modifier = fee_division_of_the_habsburg_monarchy_acceptance
+			}
+			FROM = {
+				add_liberty_desire = -30
+			}
 		}
 	}
 }
@@ -1340,10 +1360,6 @@ country_event = {
 #		option = {
 #			name = disaster_fee_division_of_the_habsburg_monarchy17.EVTOPT1
 #
-#			trigger = {
-#				NOT = { overlord_of = STY }
-#			}
-#
 #			STY = {
 #				country_event = { id = disaster_fee_division_of_the_habsburg_monarchy.14 days = 3 }
 #			}
@@ -1352,22 +1368,7 @@ country_event = {
 #		option = {
 #			name = disaster_fee_division_of_the_habsburg_monarchy17.EVTOPT2
 #
-#			trigger = {
-#				NOT = { overlord_of = STY }
-#			}
-#
 #			add_legitimacy = 10
-#		}
-#
-#		option = {
-#			name = disaster_fee_division_of_the_habsburg_monarchy17.EVTOPT3
-#
-#			trigger = {
-#				overlord_of = STY
-#			}
-#
-#			add_legitimacy = 10
-#			add_dip_power = 50
 #		}
 #	}
 
@@ -1413,10 +1414,6 @@ country_event = {
 	option = {
 		name = disaster_fee_division_of_the_habsburg_monarchy18.EVTOPT1
 
-		trigger = {
-			NOT = { overlord_of = TIR }
-		}
-
 		TIR = {
 			country_event = { id = disaster_fee_division_of_the_habsburg_monarchy.14 days = 3 }
 		}
@@ -1425,22 +1422,7 @@ country_event = {
 	option = {
 		name = disaster_fee_division_of_the_habsburg_monarchy18.EVTOPT2
 
-		trigger = {
-			NOT = { overlord_of = TIR }
-		}
-
 		add_legitimacy = 10
-	}
-
-	option = {
-		name = disaster_fee_division_of_the_habsburg_monarchy18.EVTOPT3
-
-		trigger = {
-			overlord_of = TIR
-		}
-
-		add_legitimacy = 10
-		add_dip_power = 50
 	}
 }
 
@@ -1486,10 +1468,6 @@ country_event = {
 	option = {
 		name = disaster_fee_division_of_the_habsburg_monarchy19.EVTOPT1
 
-		trigger = {
-			NOT = { overlord_of = SWA }
-		}
-
 		SWA = {
 			country_event = { id = disaster_fee_division_of_the_habsburg_monarchy.14 days = 3 }
 		}
@@ -1498,22 +1476,7 @@ country_event = {
 	option = {
 		name = disaster_fee_division_of_the_habsburg_monarchy19.EVTOPT2
 
-		trigger = {
-			NOT = { overlord_of = SWA }
-		}
-
 		add_legitimacy = 10
-	}
-
-	option = {
-		name = disaster_fee_division_of_the_habsburg_monarchy19.EVTOPT3
-
-		trigger = {
-			overlord_of = SWA
-		}
-
-		add_legitimacy = 10
-		add_dip_power = 50
 	}
 }
 
