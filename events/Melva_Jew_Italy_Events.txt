@@ -491,6 +491,7 @@ province_event = {
 		hidden_effect = {
 			set_province_flag = melva_jew_expulsion_1492
 			owner = {
+				clr_country_flag = melva_jew_expulsion_1492_country
 				set_country_flag = melva_jew_expulsion_1492_country
 			}
 		}
