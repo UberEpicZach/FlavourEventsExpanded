@@ -466,6 +466,12 @@ province_event = {
 		}
 		NOT = { province_id = 126 }
 		NOT = { has_province_flag = melva_jew_expulsion_1492 }
+		owner = {
+			had_country_flag = {
+				flag = melva_jew_expulsion_1492_country
+				days = 730
+			}
+		}
 	}
 
 	major = yes
@@ -482,7 +488,12 @@ province_event = {
 	}
 
 	immediate = {
-		hidden_effect = { set_province_flag = melva_jew_expulsion_1492 }
+		hidden_effect = {
+			set_province_flag = melva_jew_expulsion_1492
+			owner = {
+				set_country_flag = melva_jew_expulsion_1492_country
+			}
+		}
 	}
 
 	option = {
