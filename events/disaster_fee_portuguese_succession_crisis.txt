@@ -128,7 +128,7 @@ country_event = {
 			limit = {
 				has_heir = yes
 			}
-			kill_heir = yes
+			kill_heir = { }
 		}
 		define_ruler = {
 			age = 20
@@ -286,7 +286,7 @@ country_event = {
 			limit = {
 				has_heir = yes
 			}
-			kill_heir = yes
+			kill_heir = { }
 		}
 		define_ruler = {
 			name = "Henrique"
