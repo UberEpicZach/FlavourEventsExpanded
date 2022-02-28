@@ -1,0 +1,13 @@
+cb_fee_partition_of_poland = {
+	is_triggered_only = yes
+	months = 300
+
+	prerequisites = {
+		is_neighbor_of = FROM
+		FROM = {
+			has_disaster = fee_partition_of_poland
+		}
+	}
+
+	war_goal = fee_partition_of_poland_war_goal
+}

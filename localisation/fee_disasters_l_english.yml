@@ -3,6 +3,7 @@
  fee_portuguese_succession_crisis: "Portuguese Succession Crisis"
  fee_decline_of_the_ottomans: "Decline of the Ottomans"
  fee_division_of_the_habsburg_monarchy: "Division of the Habsburg Monarchy"
+ fee_partition_of_poland: "Partition of Poland?"
 
  # Events:
  disaster_fee_portuguese_succession_crisis.EVTNAME1: "Portuguese Succession Crisis"
@@ -279,8 +280,84 @@
  disaster_fee_division_of_the_habsburg_monarchy26.EVTOPT1: "We must help §Y[vassal_to_support.GetName]§!!"
  disaster_fee_division_of_the_habsburg_monarchy26.EVTOPT2: "I don't see where this is my problem?"
 
- FEE_DIVISION_OF_THE_HABSBURG_MONARCHY_RIVALS_MAY_JOIN_VASSAL_IN_WAR_TT: "Our §Yrivals§! may join them in their §YIndependence War§!."
- FEE_DIVISION_OF_THE_HABSBURG_MONARCHY_SOUTH_GERMANS_MAY_JOIN_VASSAL_IN_WAR_TT: "Independent countries in §YSouth Germany§! may join them in their §YIndependence War§!."
+
+ disaster_fee_partition_of_poland.EVTNAME1: "Threats of Partition"
+ disaster_fee_partition_of_poland.EVTDESC1: "The geographic condition of [Root.GetName] has never been a good one. With few natural borders and surrounded by potential enemies, some might say it was only a matter of time before they were taken advantage of. However, others contrast [Root.GetName]'s past strength with their present condition, and say the greed and avarice of the nobility are solely, or at least mostly, to blame. The question of blame, for now however, is irrelevant. We are threatened with imminent invasion and, despite our handicaps, must do what we can."
+ disaster_fee_partition_of_poland1.EVTOPT1: "Ride out and meet them! For Death and Glory!"
+
+ disaster_fee_partition_of_poland.EVTNAME2: "Future Secured"
+ disaster_fee_partition_of_poland.EVTDESC2: "Although the perfect storm of internal and external threats threatened to undo us, we have, against all odds, survived. Now we must begin the process of rebuilding."
+ disaster_fee_partition_of_poland2.EVTOPT1: "[Root.GetName] is not yet lost!"
+
+ disaster_fee_partition_of_poland.EVTNAME4: "Falling Behind"
+ disaster_fee_partition_of_poland.EVTDESC4: "The geopolitical landscape has changed, and while [From.GetName] remained stagnant, other powers have grown up all around it. Once the hegemon of Eastern Europe, the citizens of [From.GetName] can no longer rest assured that they are safe from outside invasion. The old ways that made the kingdom great may no longer be enough, and murmurs are only growing louder that soon the realm may even fall completely..."
+ disaster_fee_partition_of_poland4.EVTOPT1: "We must act quickly before others take advantage first!"
+
+ disaster_fee_partition_of_poland.EVTNAME6: "Paralysis in [From.GetName]"
+ disaster_fee_partition_of_poland.EVTDESC6: "The central government of [From.GetName] has long been one which operated by the consent of its governed. In practice, this gave the nobles essentially unlimited power over [From.GetName]. This system, which worked in a more feudal age and when Poland dominated the continent, is now clearly outmoded as more capable states rise up around it. Faced with the threat of invasion by stronger nations, [From.GetName] can only sit and wait for the axe to fall as the nobility fails to come to an agreement."
+ disaster_fee_partition_of_poland6.EVTOPT1: "It is an opportunity waiting to be taken."
+
+ disaster_fee_partition_of_poland.EVTNAME8: "Worries Abate"
+ disaster_fee_partition_of_poland.EVTDESC8: "The vulnerability of [From.GetName] has subsided, at least for now."
+ disaster_fee_partition_of_poland8.EVTOPT1: "Fortunate... at least for them."
+
+ disaster_fee_partition_of_poland.EVTNAME10: "Alliance of the Three Black Eagles"
+ disaster_fee_partition_of_poland.EVTDESC10: "Called as such in Poland, which was represented by a white eagle, this refers to the three powers which partitioned them and signed secret pacts to do so. Prussia, Austria, and Russia, in contrast to Poland's white eagle, all flew black eagles in their flags."
+ disaster_fee_partition_of_poland10.EVTOPT1: "Fate has decreed it."
+
+ disaster_fee_partition_of_poland.EVTNAME11: "Debased Currency"
+ disaster_fee_partition_of_poland.EVTDESC11: "As part of its plan to weaken [Root.GetName] in preparation for invasion, [inflation_country.Monarch.GetName] of [inflation_country.GetName] ordered a massive quantity of counterfeit [Root.GetAdjective] złoty to be made and pumped into [Root.GetName]. So massive was this undertaking that it severely weakened the [Root.GetAdjective] economy and, crucially, it's ability to fund any military resistance."
+ disaster_fee_partition_of_poland11.EVTOPT1: "Bastards!"
+
+ disaster_fee_partition_of_poland.EVTNAME12: "Danzig or War"
+ disaster_fee_partition_of_poland.EVTDESC12: "Seeking to unite the Germanic territories under a Germanic flag, the bastard ruler of [danzig_or_war_enemy.GetName] has demanded we hand over [43.GetName], or Danzig as they call it, to them, thus depriving us of one of our few useful ports."
+ disaster_fee_partition_of_poland12.EVTOPT1: "We have no choice but to accept."
+ disaster_fee_partition_of_poland12.EVTOPT2: "They can come and take it!"
+
+ disaster_fee_partition_of_poland.EVTNAME13: "A [Root.GetAdjective] [43.GetName]"
+ disaster_fee_partition_of_poland.EVTDESC13: "[From.GetName] has given in to our diplomatic pressure and accepted our demand to cede [43.GetName] to its legitimate owner, us."
+ disaster_fee_partition_of_poland13.EVTOPT1: "A glorious day for [Root.GetName] and [43.GetName]!"
+
+ disaster_fee_partition_of_poland.EVTNAME14: "The Poles Refuse"
+ disaster_fee_partition_of_poland.EVTDESC14: "Despite our reasonable request, the Poles have refused to give up the rightful German port of [43.GetName] to us."
+ disaster_fee_partition_of_poland14.EVTOPT1: "War it is then!"
+ disaster_fee_partition_of_poland14.EVTOPT2: "So be it..."
+
+ disaster_fee_partition_of_poland.EVTNAME15: "A New Constitution?"
+ disaster_fee_partition_of_poland.EVTDESC15: "The Struggle for Royal Power was a dark chapter in [Root.GetAdjective] history. Out of it came reforms that went a long way towards reforming [Root.GetName] into a modern monarchy. However, a new generation of nobles, combining Enlightenment thought with fond memories of their ancestor's privileges (along with persuasive funding from Russian enemies of [Root.GetName]), are once again demanding the Liberum Veto. Drawing up a new constitution with many of the characteristics of old [Root.GetName], they call it the Cardinal Laws and demand we pass it."
+ disaster_fee_partition_of_poland15.EVTOPT1: "We have no choice but to accept."
+ disaster_fee_partition_of_poland15.EVTOPT2: "We didn't ride through fire and water to bandy crooked word!"
+
+ disaster_fee_partition_of_poland.EVTNAME16: "Demands for Peasant Autonomy"
+ disaster_fee_partition_of_poland.EVTDESC16: "Traditionally, the life of a [Root.GetAdjective] peasant was meager but at least relatively safe. With the threats on our border, vocal parties within the court have begun demanding increased concessions for the peasantry. Rumors swirl that the Russians are instigating this to deliberately weaken us but we may never know for sure..."
+ disaster_fee_partition_of_poland16.EVTOPT1: "Grant the Concessions."
+ disaster_fee_partition_of_poland16.EVTOPT2: "Refuse the rabble!"
+
+ disaster_fee_partition_of_poland.EVTNAME17: "Cossacks Restless"
+ disaster_fee_partition_of_poland.EVTDESC17: "Adding to our grief, the Cossacks of the steppe, ever jealous of their own liberty, have seized the opportunity to rise up against us!"
+ disaster_fee_partition_of_poland17.EVTOPT1: "Ingrates!"
+
+ disaster_fee_partition_of_poland.EVTNAME18: "Confederation of Bar"
+ disaster_fee_partition_of_poland.EVTDESC18: "Although many of the nobility are bought and paid for by foreign actors, some of them still remain loyal to the ideals of the old [Root.GetName]. However, in return for their help in expelling foreign incursions, they of course demand their old rights."
+ disaster_fee_partition_of_poland18.EVTOPT1: "We need their help."
+ disaster_fee_partition_of_poland18.EVTOPT2: "We can do it without them."
+
+ disaster_fee_partition_of_poland.EVTNAME19: "Foreign Trade Dries Up"
+ disaster_fee_partition_of_poland.EVTDESC19: "Despite being neither ethnically [Root.GetAdjective] nor a majority of the [Root.GetAdjective] population, the Baltic Prussian coast served as the backbone of the [Root.GetAdjective] economy, due to its rich estuaries and trading cities. The loss of this territory in the Partition broke this backbone, leading to a nearly 80% reduction in trade revenue. The enormous trade fees placed on [Root.GetAdjective] merchants by the new owners of those cities further punished the [Root.GetAdjective] economy."
+ disaster_fee_partition_of_poland19.EVTOPT1: "Will we survive?"
+
+ disaster_fee_partition_of_poland.EVTNAME21: "The May Constitution"
+ disaster_fee_partition_of_poland.EVTDESC21: "In a desperate bid to curtail the power of the nobility, some in the court have suggested that we bring together the battered and beleaguered Polish burgher class and grant them enough rights to balance out noble power. These old city rights, once called the Magdeburg Laws, would be restored and enshrined in a new constitution, dubbed the May Constitution. Understandably, however, the nobles strongly prefer the current constitution..."
+ disaster_fee_partition_of_poland21.EVTOPT1: "Enact the May Constitution!"
+ disaster_fee_partition_of_poland21.EVTOPT2: "Keep the Old Ways."
+
+ disaster_fee_partition_of_poland.EVTNAME22: "Kosciuszko Uprising"
+ disaster_fee_partition_of_poland.EVTDESC22: "In a last-ditch attempt to rid [From.GetName] of foreign invaders, a ragtag group of loyalists has banded together to take matters into their own hands and regain [From.GetName]'s territory."
+ disaster_fee_partition_of_poland22.EVTOPT1: "Crush Them!"
+
+ disaster_fee_partition_of_poland.EVTNAME23: "Partition of [From.GetName]"
+ disaster_fee_partition_of_poland.EVTDESC23: "The inability of the Poles to maintain a strong defense against us, combined with the promise of fertile and profitable land ripe for the taking, has created a golden opportunity for us. We must act quickly to take what we can. While we may find such an easy conquest distasteful, others will surely take advantage if we do not."
+ disaster_fee_partition_of_poland23.EVTOPT1: "Call Out the Troops!"
 
  # Modifiers:
  fee_portuguese_succession_crisis_chaste_king: "Chaste King"
@@ -312,6 +389,12 @@
  fee_division_of_the_habsburg_monarchy_bohemian_crown_boh: "The Bohemian Crown"
  fee_division_of_the_habsburg_monarchy_benevolent_rulership: "Bevevolent Rulership"
 
+ fee_partition_of_poland_survived_partition: "Survived Partition"
+ fee_partition_of_poland_fight_for_danzig: "Fight for Danzig"
+ fee_partition_of_poland_liberty_of_the_peasantry: "Liberty of the Peasantry"
+ fee_partition_of_poland_trade_dried_up: "Trade Dried Up"
+ fee_partition_of_poland_support_from_the_burghers: "Support from the Burghers"
+
  # Opinion Modifiers:
  fee_portuguese_succession_crisis_acceptance: "Holy Father Accepted"
  fee_portuguese_succession_crisis_rejection: "Holy Father Refused"
@@ -321,6 +404,21 @@
  fee_decline_of_the_ottomans_greece_opinion: "Supported Our Independence"
 
  fee_division_of_the_habsburg_monarchy_acceptance: "Accepted Proposal"
+
+ fee_partition_of_poland_black_eagles_alliance_opinion: "Black Eagles"
+
+ # Estate Modifiers:
+ EST_VAL_FEE_PARTITION_OF_POLAND_CONFEDERATION_OF_BAR: "Confederation of Bar: §Y$VAL$%§!"
+ EST_VAL_FEE_PARTITION_OF_POLAND_THE_MAY_CONSTITUTION: "May Constitution: §Y$VAL$%§!"
+
+ # Casus Bellis:
+ cb_fee_partition_of_poland: "Partition of Poland"
+ cb_fee_partition_of_poland_desc: "They are weak, we must strike and partition them between us and their other neighbors now."
+
+ # War Goals:
+ fee_partition_of_poland_war_goal: "Take Capital"
+ fee_partition_of_poland_war_goal_desc: "The war goal is to conquer their capital."
+ FEE_PARTITION_OF_POLAND_WAR_NAME: "$ORDER$ $FIRST$ War of $SECOND$ Partition"
 
  # Tooltips:
  PORTUGUESE_SUCCESSION_CRISIS_BREAK_ALLIANCE_WITH_POR_TT: "§Y[Root.GetName]§! breaks their alliance with §Y[From.GetName]§!."
@@ -340,3 +438,13 @@
  FEE_DIVISION_OF_THE_HABSBURG_MONARCHY_THIS_IS_RELEASED_AS_VASSAL_TT: "@[This.GetTag] §Y[This.GetName]§! is released as our vassal."
  FEE_DIVISION_OF_THE_HABSBURG_MONARCHY_ELECTOR_BACKS_STY_FOR_EMPEROR_TT: "We will support @STY §Y[STY.GetName]§! as the Emperor. \n@STY §Y[STY.GetName]§! will become Emperor soon, if they are eligible for the Emperor title and at least §Y3§! other Electors supported them. \nOtherwise @[From.GetTag] §Y[From.GetName]§! will stay Emperor."
  FEE_DIVISION_OF_THE_HABSBURG_MONARCHY_STY_BECOMES_EMPEROR_TT: "@STY §Y[STY.GetName]§! becomes the §YHoly Roman Emperor§!."
+ FEE_DIVISION_OF_THE_HABSBURG_MONARCHY_RIVALS_MAY_JOIN_VASSAL_IN_WAR_TT: "Our §Yrivals§! may join them in their §YIndependence War§!."
+ FEE_DIVISION_OF_THE_HABSBURG_MONARCHY_SOUTH_GERMANS_MAY_JOIN_VASSAL_IN_WAR_TT: "Independent countries in §YSouth Germany§! may join them in their §YIndependence War§!."
+
+ FEE_PARTITION_OF_POLAND_NO_VALID_NEIGHBOR_COUNTRY_TT: "There is no strong enough independent neighbor country that is neither allied to nor has a truce with §Y[Root.GetName]§!"
+ FEE_PARTITION_OF_POLAND_WAR_WITH_VALID_NEIGHBOR_COUNTRY_M10_WS_TT: "Losing a war against a strong and independent neighbor country (less than §Y-10%§! war score)"
+ FEE_PARTITION_OF_POLAND_WAR_WITH_VALID_NEIGHBOR_COUNTRY_M25_WS_TT: "Heavily losing a war against a strong and independent neighbor country (less than §Y-25%§! war score)"
+ FEE_PARTITION_OF_POLAND_WAR_WITH_VALID_NEIGHBOR_COUNTRY_BETWEEN_25_WS_TT: "Winning a war against a strong and independent neighbor country (at least §Y25%§! war score)"
+ FEE_PARTITION_OF_POLAND_HAD_DISASTER_FOR_5_YEARS_TT: "Had the '§YPartition of Poland?§!' disaster for at least §Y5 years§!"
+ FEE_PARTITION_OF_POLAND_BLACK_EAGLES_ALLIANCE_REMOVE_RIVALS_TT: "\nAny potential rivalries between @PRU §Y[PRU.GetName]§!, @HAB §Y[HAB.GetName]§! and @RUS §Y[RUS.GetName]§! are removed."
+ FEE_PARTITION_OF_POLAND_BLACK_EAGLES_ALLIANCE_TT: "@PRU §Y[PRU.GetName]§!, @HAB §Y[HAB.GetName]§! and @RUS §Y[RUS.GetName]§! enter an alliance with each other."

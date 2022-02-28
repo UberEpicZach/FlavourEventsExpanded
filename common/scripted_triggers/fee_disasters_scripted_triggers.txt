@@ -1,0 +1,17 @@
+fee_partition_of_poland_is_valid_neighbor_country = {
+	is_subject = no
+	if = {
+		limit = {
+			OR = {
+				has_dlc = "Rights of Man"
+				has_dlc = "Emperor"
+			}
+		}
+		is_great_power = yes
+	}
+	else = {
+		total_development = 400
+	}
+	NOT = { alliance_with = $disaster_target$ }
+	NOT = { truce_with = $disaster_target$ }
+}
