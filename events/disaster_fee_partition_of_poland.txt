@@ -24,7 +24,7 @@ country_event = {
 		add_prestige = -50
 		hidden_effect = {
 			every_neighbor_country = {
-				country_event = { id = disaster_fee_partition_of_poland.23 }
+				country_event = { id = disaster_fee_partition_of_poland.22 }
 			}
 		}
 	}
@@ -978,7 +978,7 @@ country_event = {
 			estate = estate_nobles
 			desc = EST_VAL_FEE_PARTITION_OF_POLAND_CONFEDERATION_OF_BAR
 			influence = 20
-			duration = 3650
+			duration = 9125
 		}
 		event_target:target_province = {
 			if = {
@@ -1025,7 +1025,7 @@ country_event = {
 			estate = estate_nobles
 			desc = EST_VAL_FEE_PARTITION_OF_POLAND_CONFEDERATION_OF_BAR
 			influence = -20
-			duration = 3650
+			duration = 9125
 		}
 		event_target:target_province = {
 			if = {
@@ -1215,7 +1215,7 @@ country_event = {
 			estate = estate_nobles
 			desc = EST_VAL_FEE_PARTITION_OF_POLAND_THE_MAY_CONSTITUTION
 			influence = -20
-			duration = 3650
+			duration = 9125
 		}
 		add_estate_loyalty = {
 			estate = estate_burghers
@@ -1225,7 +1225,7 @@ country_event = {
 			estate = estate_burghers
 			desc = EST_VAL_FEE_PARTITION_OF_POLAND_THE_MAY_CONSTITUTION
 			influence = 10
-			duration = 3650
+			duration = 9125
 		}
 		change_estate_land_share = {
 			estate = estate_burghers
@@ -1263,7 +1263,7 @@ country_event = {
 			estate = estate_nobles
 			desc = EST_VAL_FEE_PARTITION_OF_POLAND_THE_MAY_CONSTITUTION
 			influence = 15
-			duration = 3650
+			duration = 9125
 		}
 	}
 }
@@ -1272,43 +1272,100 @@ country_event = {
 	id = disaster_fee_partition_of_poland.22
 	title = disaster_fee_partition_of_poland.EVTNAME22
 	desc = disaster_fee_partition_of_poland.EVTDESC22
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = disaster_fee_partition_of_poland22.EVTOPT1
+
+		add_casus_belli = {
+			target = FROM
+			type = cb_fee_partition_of_poland
+		}
+	}
+}
+
+country_event = {
+	id = disaster_fee_partition_of_poland.23
+	title = disaster_fee_partition_of_poland.EVTNAME23
+	desc = disaster_fee_partition_of_poland.EVTDESC23
 	picture = GOOD_WITH_MONARCH_eventPicture
 
-	fire_only_once = yes
+	hidden = yes
 	is_triggered_only = yes
 
 	trigger = {
 		tag = PLC
-		calc_true_if = {
-			all_core_province = {
-				NOT = { owned_by = ROOT }
-				controlled_by = owner
+		any_country = {
+			NOT = { tag = ROOT }
+			NOT = { has_country_flag = fee_partition_of_poland_got_polish_rebels }
+			num_of_owned_provinces_with = {
+				value = 10
+				controlled_by = PREV
+				is_core = ROOT
 			}
-			amount = 10
 		}
 	}
 
 	immediate = {
 		hidden_effect = {
-			random_core_province = {
+			random_country = {
 				limit = {
-					NOT = { owned_by = ROOT }
-					controlled_by = owner
+					NOT = { tag = ROOT }
+					NOT = { has_country_flag = fee_partition_of_poland_got_polish_rebels }
+					num_of_owned_provinces_with = {
+						value = 10
+						controlled_by = PREV
+						is_core = ROOT
+					}
+				}
+				set_country_flag = fee_partition_of_poland_got_polish_rebels
+				country_event = { id = disaster_fee_partition_of_poland.24 }
+			}
+		}
+	}
+
+	option = {
+		name = disaster_fee_partition_of_poland23.EVTOPT1
+
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = disaster_fee_partition_of_poland.24
+	title = disaster_fee_partition_of_poland.EVTNAME24
+	desc = disaster_fee_partition_of_poland.EVTDESC24
+	picture = ANGRY_MOB_eventPicture
+
+	major = yes
+	major_trigger = {
+		tag = PLC
+	}
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					controlled_by = ROOT
+					is_core = FROM
 				}
 				save_event_target_as = rebel_province_1
 			}
 			random_owned_province = {
 				limit = {
-					NOT = { owned_by = ROOT }
-					controlled_by = owner
+					controlled_by = ROOT
+					is_core = FROM
 					NOT = { province_id = event_target:rebel_province_1 }
 				}
 				save_event_target_as = rebel_province_2
 			}
 			random_owned_province = {
 				limit = {
-					NOT = { owned_by = ROOT }
-					controlled_by = owner
+					controlled_by = ROOT
+					is_core = FROM
 					NOT = { province_id = event_target:rebel_province_1 }
 					NOT = { province_id = event_target:rebel_province_2 }
 				}
@@ -1318,7 +1375,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_partition_of_poland22.EVTOPT1
+		name = disaster_fee_partition_of_poland24.EVTOPT1
 
 		event_target:rebel_province_1 = {
 			nationalist_rebels = 3
@@ -1328,24 +1385,6 @@ country_event = {
 		}
 		event_target:rebel_province_3 = {
 			nationalist_rebels = 3
-		}
-	}
-}
-
-country_event = {
-	id = disaster_fee_partition_of_poland.23
-	title = disaster_fee_partition_of_poland.EVTNAME23
-	desc = disaster_fee_partition_of_poland.EVTDESC23
-	picture = DIPLOMACY_eventPicture
-
-	is_triggered_only = yes
-
-	option = {
-		name = disaster_fee_partition_of_poland23.EVTOPT1
-
-		add_casus_belli = {
-			target = FROM
-			type = cb_fee_partition_of_poland
 		}
 	}
 }

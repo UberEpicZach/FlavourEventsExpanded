@@ -351,13 +351,13 @@
  disaster_fee_partition_of_poland21.EVTOPT1: "Enact the May Constitution!"
  disaster_fee_partition_of_poland21.EVTOPT2: "Keep the Old Ways."
 
- disaster_fee_partition_of_poland.EVTNAME22: "Kosciuszko Uprising"
- disaster_fee_partition_of_poland.EVTDESC22: "In a last-ditch attempt to rid [From.GetName] of foreign invaders, a ragtag group of loyalists has banded together to take matters into their own hands and regain [From.GetName]'s territory."
- disaster_fee_partition_of_poland22.EVTOPT1: "Crush Them!"
+ disaster_fee_partition_of_poland.EVTNAME22: "Partition of [From.GetName]"
+ disaster_fee_partition_of_poland.EVTDESC22: "The inability of the Poles to maintain a strong defense against us, combined with the promise of fertile and profitable land ripe for the taking, has created a golden opportunity for us. We must act quickly to take what we can. While we may find such an easy conquest distasteful, others will surely take advantage if we do not."
+ disaster_fee_partition_of_poland22.EVTOPT1: "Call Out the Troops!"
 
- disaster_fee_partition_of_poland.EVTNAME23: "Partition of [From.GetName]"
- disaster_fee_partition_of_poland.EVTDESC23: "The inability of the Poles to maintain a strong defense against us, combined with the promise of fertile and profitable land ripe for the taking, has created a golden opportunity for us. We must act quickly to take what we can. While we may find such an easy conquest distasteful, others will surely take advantage if we do not."
- disaster_fee_partition_of_poland23.EVTOPT1: "Call Out the Troops!"
+ disaster_fee_partition_of_poland.EVTNAME24: "Kosciuszko Uprising"
+ disaster_fee_partition_of_poland.EVTDESC24: "In a last-ditch attempt to rid [From.GetName] of foreign invaders, a ragtag group of loyalists has banded together to take matters into their own hands and regain [From.GetName]'s territory."
+ disaster_fee_partition_of_poland24.EVTOPT1: "Crush Them!"
 
  # Modifiers:
  fee_portuguese_succession_crisis_chaste_king: "Chaste King"
