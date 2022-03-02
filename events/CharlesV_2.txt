@@ -117,10 +117,10 @@ country_event = {
 			kill_ruler = yes
 		}
 		
-		#Makes Austria the Emperor
-		HAB = {
-			set_emperor = yes
-		}
+		# #Makes Austria the Emperor
+		# HAB = {
+		# 	set_emperor = yes
+		# }
 		
 		set_country_flag = abdicate_option
 		
@@ -343,10 +343,10 @@ country_event = {
 			kill_ruler = yes
 		}
 		
-		#Makes Austria the Emperor
-		HAB = {
-			set_emperor = yes
-		}
+		# #Makes Austria the Emperor
+		# HAB = {
+		# 	set_emperor = yes
+		# }
 		
 		set_country_flag = abdicate_option
 		

@@ -321,7 +321,7 @@ country_event = {
 		
 		ROOT = {
 			capital_scope = {	#Puts Spain in the Empire
-			set_in_empire = yes
+				set_in_empire = yes
 			}
 		}
 	}
