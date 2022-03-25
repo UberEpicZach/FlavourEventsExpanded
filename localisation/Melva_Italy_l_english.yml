@@ -27,3 +27,42 @@
  melva_italian_wars_cavalry: "Heavy Cavalry is the Protagonist!"
  melva_italian_wars_artillery: "Field Artillery for the first time"
  melva_italian_wars_forts: "A Star Fort?"
+
+#Disaster
+ #Events
+  Melva_Italy_Disaster_Events.3.T: "A New State"
+  Melva_Italy_Disaster_Events.3.D: "There they stood who fought valiantly for their ideals. There they stood who fought heroically for a new day. Their last breath was clear \"Will we feel the power of freedom with the dawn of a new day?\". \nThis decision is now ours to take."
+  Melva_Italy_Disaster_Events.3.OPT1: "A new Constitution"
+  Melva_Italy_Disaster_Events.3.OPT2: "The king reigns but does not rule"
+  Melva_Italy_Disaster_Events.3.OPT3: "Why should we change?"
+ 
+  Melva_Italy_Disaster_Events.4.T: "A Republican Matter"
+  Melva_Italy_Disaster_Events.4.D: "The newly founded state has been struggling with the government organization and trying to meet the demand of its citizen with the authority given by the tradition of old."
+  Melva_Italy_Disaster_Events.4.OPT1: "We must be careful"
+ 
+  Melva_Italy_Disaster_Events.5.T: "Giovine Italia"
+  Melva_Italy_Disaster_Events.5.D: "The goal of these revolutionaries is to transform Italy into a unitary democratic republic, according to the principles of freedom, independence and unity, by dismissing the governments of the previous pre-unification states."
+  Melva_Italy_Disaster_Events.5.OPT1: "They won't win"
+ 
+  Melva_Italy_Disaster_Events.6.T: "King's Aider"
+  Melva_Italy_Disaster_Events.6.D: "A republic in our land? I think not. We have dismissed so many other republic when they rose against the Viceroys, and we will defy this one as well."
+  Melva_Italy_Disaster_Events.6.OPT1: "They won't win"
+
+ #Rebels
+  ita_republican_rebels_title: "Giovine Italia"
+  ita_republican_rebels_name: "Giovine Italia"
+  ita_republican_rebels_desc: "The goal of these revolutionaries is to transform Italy into a unitary democratic republic, according to the principles of freedom, independence and unity, by dismissing the governments of the previous pre-unification states."
+  ita_republican_rebels_demand: "Install a Constitutional Republic"
+  ita_republican_rebels_demand_desc: "These Republican rebels fight to overthrow the government and install a constitutional republic where the citiziens will be protected by any oppression."
+  ita_republican_rebels_army: "Armata di Giovine Italia"
+ 
+  ita_monarchy_rebels_title: "Monarchici"
+  ita_monarchy_rebels_name: "Monarch Aider"
+  ita_monarchy_rebels_desc: "A republic in our land? I think not. We have dismissed so many other republic when they rose against the Viceroys, and we will defy this one as well."
+  ita_monarchy_rebels_demand: "Install a Parliamentary Monarchy"
+  ita_monarchy_rebels_demand_desc: "These Monarchy rebels fight to overthrow the government and install a parliamentary monarchy where the rule will reign supreme."
+  ita_monarchy_rebels_army: "Armata dei Monarchici"
+
+ #Disaster
+  italy_republican_matter_disaster: "The Republican Matter"
+  ITA_DISASTER_REPUBLICAN_TT: "The Distater will stop if the Republican or Monarchich rebels enforce their demand through their revolt OR if the disaster has been going for at least 15 years"
