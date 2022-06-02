@@ -276,8 +276,35 @@ FEE_heretics_appeased = {
 	tolerance_heretic = 1
 }
 FEE_heathens_offended = {
-	tolerance_heretic = -1
+	tolerance_heathen = -1
 }
 FEE_heathens_appeased = {
 	tolerance_heathen = 1
+}
+HE_capital_tax_boost_small = {
+	local_tax_modifier = 0.2
+}
+HE_capital_tax_boost_ambitious = {
+	local_tax_modifier = 5
+}
+HE_capital_tax_malus_ambitious = {
+	local_tax_modifier = -0.75
+}
+HE_administrative_global_tax_boost = {
+	global_tax_modifier = 0.2
+}
+HE_administrative_global_tax_malus = {
+	global_tax_modifier = -0.2
+}
+HE_efficient_state_management = {
+	state_maintenance_modifier = -0.2
+	governing_capacity_modifier = 0.2
+}
+HE_inefficient_state_management = {
+	state_maintenance_modifier = 0.2
+	governing_capacity_modifier = -0.2
+}
+HE_administrative_looking_to_the_past = {
+	idea_cost = -0.1
+	adm_tech_cost_modifier = -0.1
 }
