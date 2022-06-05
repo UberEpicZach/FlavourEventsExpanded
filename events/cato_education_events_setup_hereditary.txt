@@ -1184,6 +1184,7 @@ country_event = {
 			}
 			set_heir_flag = heir_finished_education
 			clr_heir_flag = heir_started_education
+			clear_country_education_quality_flags = yes
 		}
 		else_if = { ###Now for those whose education ended because they ascended the throne.
 			limit = {
@@ -1525,10 +1526,7 @@ country_event = {
 				}
 				set_ruler_flag = best_modern_army_education
 			}
-			clr_country_flag = poor_education
-			clr_country_flag = okay_education
-			clr_country_flag = good_education
-			clr_country_flag = best_education
+			clear_country_education_quality_flags = yes
             set_ruler_flag = heir_finished_education
             clr_ruler_flag = heir_started_education
 		}

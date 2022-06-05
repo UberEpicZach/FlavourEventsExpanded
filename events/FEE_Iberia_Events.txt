@@ -247,25 +247,23 @@ country_event = {
 
 	trigger = {
 		is_year = 1450
-		NOT = {
-			AND = {
-				exists = CAT
-				exists = GAL
-				exists = GRA
-				exists = NAV
-			}
-		}
+		NOT = { exists = CAT }
+		NOT = { exists = GAL }
+		NOT = { exists = NAV }
 		galicia_area = {
 			type = all
 			country_or_non_sovereign_subject_holds = ROOT
+			NOT = { owned_by = GAL }
 		}
 		catalonia_area = {
 			type = all
 			country_or_non_sovereign_subject_holds = ROOT
+			NOT = { owned_by = CAT }
 		}
 		basque_country = {
 			type = all
 			country_or_non_sovereign_subject_holds = ROOT
+			NOT = { owned_by = NAV }
 		}
 		capital_scope = {
 			region = iberia_region
@@ -386,41 +384,56 @@ country_event = {
 				duration = 3650
 			}
 		}
-		release = CAT
-		CAT = {
-			change_government = monarchy
-			add_government_reform = feudalism_reform
+		if = {
+			limit = {
+				NOT = { exists = CAT }
+			}
+			release = CAT
+			CAT = {
+				change_government = monarchy
+				add_government_reform = feudalism_reform
+			}
+			if = {
+				limit = {
+					valid_for_personal_unions_trigger = yes
+					CAT = { valid_for_personal_unions_trigger = yes }
+				}
+				create_union = CAT
+			}
 		}
 		if = {
 			limit = {
-				valid_for_personal_unions_trigger = yes
-				CAT = { valid_for_personal_unions_trigger = yes }
+				NOT = { exists = GAL }
 			}
-			create_union = CAT
-		}
-		release = GAL
-		GAL = {
-			change_government = monarchy
-			add_government_reform = feudalism_reform
+			release = GAL
+			GAL = {
+				change_government = monarchy
+				add_government_reform = feudalism_reform
+			}
+			if = {
+				limit = {
+					valid_for_personal_unions_trigger = yes
+					GAL = { valid_for_personal_unions_trigger = yes }
+				}
+				create_union = GAL
+			}
 		}
 		if = {
 			limit = {
-				valid_for_personal_unions_trigger = yes
-				GAL = { valid_for_personal_unions_trigger = yes }
+				NOT = { exists = NAV }
 			}
-			create_union = GAL
-		}
-		release = NAV
-		NAV = {
-			change_government = monarchy
-			add_government_reform = feudalism_reform
-		}
-		if = {
-			limit = {
-				valid_for_personal_unions_trigger = yes
-				NAV = { valid_for_personal_unions_trigger = yes }
+			release = NAV
+			NAV = {
+				change_government = monarchy
+				add_government_reform = feudalism_reform
 			}
-			create_union = NAV
+			if = {
+				limit = {
+					valid_for_personal_unions_trigger = yes
+					NAV = { valid_for_personal_unions_trigger = yes }
+				}
+				create_union = NAV
+			}
 		}
 	}
 
