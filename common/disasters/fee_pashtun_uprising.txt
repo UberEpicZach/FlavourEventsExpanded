@@ -1,0 +1,197 @@
+fee_pashtun_uprising = {
+	potential = {
+		tag = DLH
+		NOT = { has_country_flag = had_fee_pashtun_uprising }
+		current_age = age_of_discovery
+		technology_group = indian
+		government = monarchy
+		is_free_or_tributary_trigger = yes
+	}
+	can_start = {
+		current_age = age_of_discovery
+		has_any_disaster = no
+		NOT = { primary_culture = afghani }
+		unrest = 1
+		NOT = { legitimacy = 50 }
+		if = {
+			limit = {
+				has_estate = estate_rajput
+			}
+			NOT = {
+				estate_loyalty = {
+					estate = estate_rajput
+					loyalty = 30
+				}
+			}
+			estate_influence = {
+				estate = estate_rajput
+				influence = 20
+			}
+		}
+		else_if = {
+			limit = {
+				has_estate = estate_nobles
+			}
+			NOT = {
+				estate_loyalty = {
+					estate = estate_nobles
+					loyalty = 30
+				}
+			}
+			estate_influence = {
+				estate = estate_nobles
+				influence = 20
+			}
+		}
+		num_of_owned_provinces_with = {
+			value = 25
+			is_core = ROOT
+		}
+	}
+	can_stop = {
+		if = {
+			limit = {
+				has_estate = estate_rajput
+			}
+			OR = {
+				has_any_disaster = yes
+				primary_culture = afghani
+				NOT = { government = monarchy }
+				estate_loyalty = {
+					estate = estate_rajput
+					loyalty = 60
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_estate = estate_nobles
+			}
+			OR = {
+				has_any_disaster = yes
+				primary_culture = afghani
+				NOT = { government = monarchy }
+				estate_loyalty = {
+					estate = estate_nobles
+					loyalty = 60
+				}
+			}
+		}
+		else = {
+			OR = {
+				has_any_disaster = yes
+				primary_culture = afghani
+				NOT = { government = monarchy }
+			}
+		}
+	}
+	progress = {
+		modifier = {
+			factor = 1
+			NOT = { ADM = 4 }
+		}
+		modifier = {
+			factor = 1
+			NOT = { DIP = 4 }
+		}
+		modifier = {
+			factor = 1
+			NOT = { MIL = 4 }
+		}
+		modifier = {
+			factor = 1
+			has_estate = estate_jains
+			NOT = {
+				estate_loyalty = {
+					estate = estate_jains
+					loyalty = 30
+				}
+			}
+		}
+		modifier = {
+			factor = 1
+			has_estate = estate_brahmins
+			NOT = {
+				estate_loyalty = {
+					estate = estate_brahmins
+					loyalty = 30
+				}
+			}
+		}
+		modifier = {
+			factor = 1
+			has_estate = estate_vaisyas
+			NOT = {
+				estate_loyalty = {
+					estate = estate_vaisyas
+					loyalty = 30
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			has_estate = estate_rajput
+			NOT = {
+				estate_loyalty = {
+					estate = estate_rajput
+					loyalty = 30
+				}
+			}
+		}
+		modifier = {
+			factor = 1
+			NOT = { legitimacy = 75 }
+		}
+		modifier = {
+			factor = 2
+			NOT = { stability = 0 }
+		}
+		modifier = {
+			factor = 5
+			has_heir = no
+		}
+	}
+	can_end = {
+		hidden_trigger = {
+			has_country_flag = had_fee_pashtun_uprising # don't want this to end before you pick an option, potentially
+		}
+		stability = 2
+		NOT = { num_of_rebel_armies = 1 }
+		NOT = { num_of_rebel_controlled_provinces = 1 }
+		is_at_war = no
+		OR = {
+			NOT = { unrest = 0 }
+			custom_trigger_tooltip = {
+				tooltip = HAD_FEE_PASHTUN_UPRISING_FOR_2_YEARS_TT
+				had_country_flag = { flag = had_fee_pashtun_uprising days = 730 }
+			}
+			all_owned_province = {
+				NOT = { unrest = 0.01 }
+			}
+		}
+	}
+	modifier = {
+		technology_cost = 0.2
+		global_manpower_modifier = -0.2
+		global_unrest = 6
+	}
+
+	on_start = disaster_fee_pashtun_uprising.1
+	on_end = disaster_fee_pashtun_uprising.2
+
+	on_monthly = {
+		events = {
+		}
+		random_events = {
+			1000 = 0
+			200 = disaster_fee_pashtun_uprising.3
+			100 = disaster_fee_pashtun_uprising.4
+			100 = disaster_fee_pashtun_uprising.5
+			150 = disaster_fee_pashtun_uprising.6
+			150 = disaster_fee_pashtun_uprising.7
+			100 = disaster_fee_pashtun_uprising.8
+			100 = disaster_fee_pashtun_uprising.9
+			300 = disaster_fee_pashtun_uprising.10
+		}
+	}
+}

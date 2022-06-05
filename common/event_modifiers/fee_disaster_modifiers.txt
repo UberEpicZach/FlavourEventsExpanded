@@ -150,3 +150,24 @@ fee_partition_of_poland_trade_dried_up = {
 fee_partition_of_poland_support_from_the_burghers = {
 	global_trade_goods_size_modifier = 0.1
 }
+
+# Delhi
+fee_pashtun_uprising_delhi_rule_confirmed = {
+	legitimacy = 1
+	years_of_nationalism = -5
+}
+
+fee_pashtun_uprising_abandoned_trade_routes = {
+	trade_efficiency = -0.15
+	global_trade_power = -0.2
+}
+
+fee_pashtun_uprising_pacified = {
+	local_unrest = -10
+}
+
+fee_pashtun_uprising_invasion_of_india = {
+	land_forcelimit_modifier = 0.25
+	mil_tech_cost_modifier = -0.1
+	global_regiment_cost = -0.2
+}

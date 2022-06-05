@@ -24,6 +24,13 @@ spriteTypes = {
 		loadType = "INGAME"
 	}
 	spriteType = {
+		name = "GFX_disaster_fee_pashtun_uprising"
+		texturefile = "gfx/interface/disasters/fee_pashtun_uprising.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+
+	spriteType = {
 		name = "GFX_disaster_italy_republican_matter_disaster"
 		texturefile = "gfx//interface//disasters//civil_war.dds"
 		noOfFrames = 3

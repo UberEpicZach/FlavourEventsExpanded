@@ -4,6 +4,7 @@
  fee_decline_of_the_ottomans: "Decline of the Ottomans"
  fee_division_of_the_habsburg_monarchy: "Division of the Habsburg Monarchy"
  fee_partition_of_poland: "Partition of Poland?"
+ fee_pashtun_uprising: "Pashtun Uprising"
 
  # Events:
  disaster_fee_portuguese_succession_crisis.EVTNAME1: "Portuguese Succession Crisis"
@@ -359,6 +360,52 @@
  disaster_fee_partition_of_poland.EVTDESC24: "In a last-ditch attempt to rid [From.GetName] of foreign invaders, a ragtag group of loyalists has banded together to take matters into their own hands and regain [From.GetName]'s territory."
  disaster_fee_partition_of_poland24.EVTOPT1: "Crush Them!"
 
+ disaster_fee_pashtun_uprising.EVTNAME1: "Pashtun Uprising"
+ disaster_fee_pashtun_uprising.EVTDESC1: "Since its founding in 1206, the [Root.GetName] [Root.GovernmentName] has been an often-precarious state. Built upon a Turkic invading force and based on a Sunni minority ruling a Hindu majority, the empire has always depended on maintaining a delicate balance between Turkic and Hindustani. While the Turco-Mongol invaders themselves are no longer the ruling dynasty, a class of foreign Pashtun nobles has never fully lost its influence. With the failure of [Root.Monarch.GetName] to either pacify or curtail these nobles, they have begun to mobilize their influence to once again take control of [Root.GetName] for themselves. Their chosen [Root.Monarch.GetTitle], a brother of the current, now leads men in open revolt. \n\n[Root.GetName] has weathered much instability in its past and always recovered, but this may prove its greatest test. Only time will tell if the current regime can survive as [Root.GetName] once again sees its land engulfed in turmoil..."
+ disaster_fee_pashtun_uprising1.EVTOPT1: "The more things change..."
+
+ disaster_fee_pashtun_uprising.EVTNAME2: "The [Root.GovernmentName] is Victorious"
+ disaster_fee_pashtun_uprising.EVTDESC2: "Although uprisings threatened to tear the [Root.GovernmentName] apart, [Root.Monarch.GetName] has managed to gather enough of both military strength and governmental capital to hold it together. While many inherent weaknesses remain, the [Root.Monarch.GetTitle] has secured [Root.Monarch.GetHerHis] rightful place as hegemon of Hindustan, and none now remain who can or will oppose him. Many of them have been killed, while the others, whether through fear, loyalty, or belief, now look to a brighter future for [Root.GetName]."
+ disaster_fee_pashtun_uprising2.EVTOPT1: "The worst is behind us."
+
+ disaster_fee_pashtun_uprising.EVTNAME3: "Trade Routes Abandoned"
+ disaster_fee_pashtun_uprising.EVTDESC3: "The instability sweeping the [Root.GovernmentName], as well as the diversion of the state treasury to deal with constant revolts, has led to a breakdown of the overland trade routes that are the lifeblood of [Root.GetName]'s economy. Plagued by bandits, many of its famous trade highways lie all but desolate, while merchants ply coasts further south in search of better profits. The traders of the Deccan, adept at caravanning, have encroached from the south, cutting further into profits to [Root.GetAdjective] coffers. With fewer and fewer sources of revenue, the [Root.GovernmentName] had better resolve its conflicts soon or face collapse."
+ disaster_fee_pashtun_uprising3.EVTOPT1: "This can't be good..."
+
+ disaster_fee_pashtun_uprising.EVTNAME4: "Rajput Revolts"
+ disaster_fee_pashtun_uprising.EVTDESC4: "Seizing the opportunity given by their Pashtun counterparts, the more southerly nobles of the Rajasthani plains have also decided to rise up against us!"
+ disaster_fee_pashtun_uprising4.EVTOPT1: "We will crush them!"
+
+ disaster_fee_pashtun_uprising.EVTNAME5: "Shortage of Gold and Silver"
+ disaster_fee_pashtun_uprising.EVTDESC5: "Traditionally, most of India's silver and gold bullion was imported from Burma and China. The collapse of trade resulting from the instability in [Root.GetName] has cut off this supply. In desperation to fund its army, the Sultans resorted to devaluation of their coinage, issuing the Billon Tanga instead of it's previous silver coins."
+ disaster_fee_pashtun_uprising5.EVTOPT1: "What could possibly go wrong?"
+
+ disaster_fee_pashtun_uprising.EVTNAME6: "Anarchy Spreads"
+ disaster_fee_pashtun_uprising.EVTDESC6: "With our inability to keep our own ruling class in check, the perception has spread that the [Root.Monarch.GetTitle] is unable to effectively rule [Root.Monarch.GetHerHis] diverse Indian subjects. Because of this, a willingness to revolt that was previously unknown has spread throughout the realm. This is especially strong in the border provinces of the Empire, with far less affinity for the [Root.Monarch.GetTitle] than peoples closer to the Imperial City itself have had."
+ disaster_fee_pashtun_uprising6.EVTOPT1: "Ingrates! I brought peace, justice, and freedom to my empire!"
+
+ disaster_fee_pashtun_uprising.EVTNAME7: "Autocracy Rejected"
+ disaster_fee_pashtun_uprising.EVTDESC7: "As one of the many grievances listed for the revolt, [Root.Monarch.GetName]'s autocratic tendencies and attempts to increase centralized control were especially prominent in [Root.Monarch.GetHerHis] rejection by the nobles. While those already in open revolt must either be surrendered to or put down by force, those still considering rebellion might be pacified if the [Root.Monarch.GetTitle] reverses course."
+ disaster_fee_pashtun_uprising7.EVTOPT1: "Appease them!"
+ disaster_fee_pashtun_uprising7.EVTOPT2: "I am [Root.Monarch.GetTitle], not them!"
+
+ disaster_fee_pashtun_uprising.EVTNAME8: "Popular Uprising"
+ disaster_fee_pashtun_uprising.EVTDESC8: "Since its birth in 1206, the [Root.GetName] [Root.GovernmentName], from succession to tax collection, has been founded primarily on military strength rather than either popular support, religious legitimacy, or any other more traditional means. Of course, in situations like our current disaster when the military strength of the [Root.GovernmentName] is sapped, the discontented people now take their opportunity to attempt their own overthrow. Some wish simply to bring down the regime, but some even attempt to bring about religious regime change. Taking advantage of the chaos, they have managed to raise an army against us."
+ disaster_fee_pashtun_uprising8.EVTOPT1: "Crush them!"
+
+ disaster_fee_pashtun_uprising.EVTNAME9: "Bureaucracy Collapses"
+ disaster_fee_pashtun_uprising.EVTDESC9: "The administration of [Root.GetName] was never a paragon of efficiency, but without a strong ruler or during times of crisis, it utterly collapsed. Taxes were left unpaid, censuses unconducted, and the court became ever more nepotistic as the societal structure broke down."
+ disaster_fee_pashtun_uprising9.EVTOPT1: "Meet the new boss, same as the old boss..."
+
+ disaster_fee_pashtun_uprising.EVTNAME11: "Pashtun Nobles Request Aid"
+ disaster_fee_pashtun_uprising.EVTDESC11: "Spearheading the civil war in [From.GetName] are our distant cousins the Pashtun nobles of Hindustan. The ties of kinship run deep, and many in the court lent a sympathetic ear when a delegation of these nobles arrived in [Root.Capital.GetName] to beseech our aid. Despite our ties, mobilizing in their support is risky, and after all we owe them nothing... However, this could present an opportunity..."
+ disaster_fee_pashtun_uprising11.EVTOPT1: "We ride to war!"
+ disaster_fee_pashtun_uprising11.EVTOPT2: "Where were they when we needed their help?"
+
+ disaster_fee_pashtun_uprising.EVTNAME12: "[From.GetAdjective] Intervention"
+ disaster_fee_pashtun_uprising.EVTDESC12: "As a culturally [From.GetAdjective] class living among Hindustanis, the Pasthun nobility have never forgotten their roots. Because of this, they found a sympathetic ear in the [From.Monarch.GetTitle] of [From.GetName] for their rebellion. So sympathetic, in fact, that [From.GetName] now marches to war against us on their behalf!"
+ disaster_fee_pashtun_uprising12.EVTOPT1: "Let them come!"
+
  # Modifiers:
  fee_portuguese_succession_crisis_chaste_king: "Chaste King"
  fee_portuguese_succession_crisis_invasion_imminent: "Spanish Invasion Imminent"
@@ -394,6 +441,11 @@
  fee_partition_of_poland_liberty_of_the_peasantry: "Liberty of the Peasantry"
  fee_partition_of_poland_trade_dried_up: "Trade Dried Up"
  fee_partition_of_poland_support_from_the_burghers: "Support from the Burghers"
+
+ fee_pashtun_uprising_delhi_rule_confirmed: "Delhi Rule Confirmed"
+ fee_pashtun_uprising_abandoned_trade_routes: "Abandoned Trade Routes"
+ fee_pashtun_uprising_pacified: "Pacified"
+ fee_pashtun_uprising_invasion_of_india: "Invasion of India"
 
  # Opinion Modifiers:
  fee_portuguese_succession_crisis_acceptance: "Holy Father Accepted"
@@ -448,3 +500,6 @@
  FEE_PARTITION_OF_POLAND_HAD_DISASTER_FOR_5_YEARS_TT: "Had the '§YPartition of Poland?§!' disaster for at least §Y5 years§!"
  FEE_PARTITION_OF_POLAND_BLACK_EAGLES_ALLIANCE_REMOVE_RIVALS_TT: "\nAny potential rivalries between @PRU §Y[PRU.GetName]§!, @HAB §Y[HAB.GetName]§! and @RUS §Y[RUS.GetName]§! are removed."
  FEE_PARTITION_OF_POLAND_BLACK_EAGLES_ALLIANCE_TT: "@PRU §Y[PRU.GetName]§!, @HAB §Y[HAB.GetName]§! and @RUS §Y[RUS.GetName]§! enter an alliance with each other."
+
+ HAD_FEE_PASHTUN_UPRISING_FOR_2_YEARS_TT: "Had the '§YPashtun Uprising§!' disaster for at least §Y2 years§!"
+ DISASTER_FEE_PASHTUN_UPRISING.7.TT: "\nEvery owned province: \nGain §R+20.00%§! Local Autonomy."
