@@ -180,6 +180,18 @@ country_event = {
 				has_idea_group = maritime_ideas
 			}
 			modifier = {
+				factor = 1.2
+				has_idea_group = horde_gov_ideas
+			}
+			modifier = {
+				factor = 1.2
+				has_idea_group = theocracy_gov_ideas
+			}
+			modifier = {
+				factor = 1.2
+				has_idea_group = indigenous_ideas
+			}
+			modifier = {
 				factor = 3
 				faction_in_power = mr_aristocrats
 			}
