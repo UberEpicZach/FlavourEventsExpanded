@@ -5,6 +5,8 @@
  fee_division_of_the_habsburg_monarchy: "Division of the Habsburg Monarchy"
  fee_partition_of_poland: "Partition of Poland?"
  fee_pashtun_uprising: "Pashtun Uprising"
+ fee_zemene_mesafint: "Zemene Mesafint"
+ fee_crisis_of_the_mughal_empire: "Crisis of the Mughal Empire"
 
  # Events:
  disaster_fee_portuguese_succession_crisis.EVTNAME1: "Portuguese Succession Crisis"
@@ -406,6 +408,109 @@
  disaster_fee_pashtun_uprising.EVTDESC12: "As a culturally [From.GetAdjective] class living among Hindustanis, the Pasthun nobility have never forgotten their roots. Because of this, they found a sympathetic ear in the [From.Monarch.GetTitle] of [From.GetName] for their rebellion. So sympathetic, in fact, that [From.GetName] now marches to war against us on their behalf!"
  disaster_fee_pashtun_uprising12.EVTOPT1: "Let them come!"
 
+ disaster_fee_zemene_mesafint.EVTNAME1: "Zemene Mesafint"
+ disaster_fee_zemene_mesafint.EVTDESC1: "In the 18th century, the Empire of Ethiopia went through a period of numerous conflicts within its own borders. Having defeated it's rivals, the Empire was helpless against factions led by various princes of the realm as each sought to fight each other for power while the Emperor increasingly had little authority outside the capital. \n\nThe development of both culture and society stagnated during this period; additionally, it was time of increased religious strife both within the Coptic Orthodox Ethiopian Church as well as between Chrstians and Muslims in the realm."
+ disaster_fee_zemene_mesafint1.EVTOPT1: "We must preserve the empire!"
+
+ disaster_fee_zemene_mesafint.EVTNAME2: "The End of an Era"
+ disaster_fee_zemene_mesafint.EVTDESC2: "At long last, the Era of the Princes is over. A new and reformed monarchy is back in power, and [Root.GetName] can finally enter the modern age and leave behind its inner struggles."
+ disaster_fee_zemene_mesafint2.EVTOPT1: "Let us rebuild this land..."
+
+ disaster_fee_zemene_mesafint.EVTNAME3: "Princes Demand the Right to Rule"
+ disaster_fee_zemene_mesafint.EVTDESC3: "Even at the worst, the ruling dynasty of [Root.GetName] maintained a near-legendary status, being chosen directly by God in the minds of both commoner and noble. While the integrity of the dynasty was never questioned, many of the local princes claimed divine ordination in their own right, and were willing to seize such right to rule by force during this period."
+ disaster_fee_zemene_mesafint3.EVTOPT1: "Crush them!"
+ disaster_fee_zemene_mesafint3.EVTOPT2: "Attempt Negotiations."
+ disaster_fee_zemene_mesafint3.EVTOPT3: "Give in to their demands."
+
+ disaster_fee_zemene_mesafint.EVTNAME4: "Succession Crisis"
+ disaster_fee_zemene_mesafint.EVTDESC4: "While none seriously questioned the right of the ruling dynasty to rule, [Root.GetName]'s complex succession system was prey to there being numerous contenders from within the same royal house. In a period of instability, noble factions often supported one contender over another with the implicit promise, that, once in power, they would be favorites."
+ disaster_fee_zemene_mesafint4.EVTOPT1: "How dare they?"
+
+ disaster_fee_zemene_mesafint.EVTNAME5: "Rise of Empress Mentewab"
+ disaster_fee_zemene_mesafint.EVTDESC5: "Faced with the lack of imperial authority, the Queen Mother of the latest Emperor has risen to prominence in [Root.Capital.GetName]. In an unprecedented move, she has requested the Patriarch to be crowned Empress to ensure the continuing stability of the empire. Historically, Mentewab was the first female ruler of Ethiopia's long history, and an able ruler who helped Ethiopia recover from years of decline."
+ disaster_fee_zemene_mesafint5.EVTOPT1: "Crown her Itege at once!"
+ disaster_fee_zemene_mesafint5.EVTOPT2: "Refuse this upstart!"
+
+ disaster_fee_zemene_mesafint.EVTNAME6: "Regional Conflicts"
+ disaster_fee_zemene_mesafint.EVTDESC6: "As centralized authority continues to decay, the diverse nationalities that make up the empire have become increasingly disloyal. Areas that have accepted imperial rule for centuries are now seeking to claim their own independence..."
+ disaster_fee_zemene_mesafint6.EVTOPT1: "A minor inconvenience..."
+
+ disaster_fee_zemene_mesafint.EVTNAME7: "[Root.Monarch.GetTitle] Assasinated!"
+ disaster_fee_zemene_mesafint.EVTDESC7: "In a stunning turn of events that rocked not only the capital but sent shock-waves throughout East Africa, the [Root.Monarch.GetTitle] was brutally killed in the palace today. Prior to this period of conflict, this was unheard of in the empire. News of the first killings, indeed, sparked a national outcry that anyone would raise a hand against the Lord's Annointed. Now, however, with different factions vying for the throne this only opens the floodgates to further killings and unrest."
+ disaster_fee_zemene_mesafint7.EVTOPT1: "Dark Times are ahead of us."
+
+ disaster_fee_zemene_mesafint.EVTNAME8: "The End of Absolute Monarchy?"
+ disaster_fee_zemene_mesafint.EVTDESC8: "With their belief that the [Root.Monarch.GetTitle] was God's Chosen, it was only natural that the European philosophy of absolutism found open ears in [Root.GetName]. However, this theory seems increasingly unworkable during the current conflict."
+ disaster_fee_zemene_mesafint8.EVTOPT1: "The Age of Kings is over..."
+ disaster_fee_zemene_mesafint8.EVTOPT2: "I am the Senate!"
+
+ disaster_fee_zemene_mesafint.EVTNAME9: "Rise of the Wara Sheh Dynasty"
+ disaster_fee_zemene_mesafint.EVTDESC9: "While none aspired to seize the formal title of Emperor, there were families who wished to rule in all but name. One of the more prominent from the province of Yejju was the Wara Sheh. Due to their influence wielded in [Root.GetName] for a period of over 70 years, they are often called the Wara Sheh dynasty."
+ disaster_fee_zemene_mesafint9.EVTOPT1: "Accept their rule and influence."
+ disaster_fee_zemene_mesafint9.EVTOPT2: "Crush these upstarts!"
+
+ disaster_fee_crisis_of_the_mughal_empire.EVTNAME1: "Crisis of the Mughal Empire"
+ disaster_fee_crisis_of_the_mughal_empire.EVTDESC1: "Not since the days of Chandragupta has any empire laid such a legitimate claim to Master of India. However, the Great Mughal Empire now faces a crisis. The actions of [Root.Monarch.GetName] have been inadequate and indeed outright harmful to the rule over India. Discontent has spread like wildfire, and the decay of the once-peerless Mughal administration has undermined the very foundations of the empire. Without strong leadership, none can claim to rule India."
+ disaster_fee_crisis_of_the_mughal_empire1.EVTOPT1: "Can we survive?"
+
+ disaster_fee_crisis_of_the_mughal_empire.EVTNAME2: "The Empire Victorious"
+ disaster_fee_crisis_of_the_mughal_empire.EVTDESC2: "We have survived the greatest challenge yet to our rule, and we have come out stronger for it!"
+ disaster_fee_crisis_of_the_mughal_empire2.EVTOPT1: "Order is Restored at Last!"
+
+ disaster_fee_crisis_of_the_mughal_empire.EVTNAME3: "Disloyalty in the Army"
+ disaster_fee_crisis_of_the_mughal_empire.EVTDESC3: "Once a disciplined and awe-inspiring force, the [Root.GetAdjective] armies have become weak and defective. The old levy system, which inspired fierce loyalty and made organization easy in the early days of the empire, proved inadequate to face the challenges of large-scale imperial rule. The nobles who once proved capable leaders have become decadent and selfish, the distance between the capital and the front weakened the bonds that once united soldier and emperor, and scheming nobles began to use their contingents as personal retinues at the expense of Imperial effectiveness."
+ disaster_fee_crisis_of_the_mughal_empire3.EVTOPT1: "We don't have time for this..."
+
+ disaster_fee_crisis_of_the_mughal_empire.EVTNAME4: "Discontent Among the Hindu"
+ disaster_fee_crisis_of_the_mughal_empire.EVTDESC4: "The [Root.GetAdjective] [Root.GovernmentName] was founded on religious tolerance of the Dharmic faiths. It would not, in fact, be unfair to say that the empire could never have even began without the generous privileges granted to the Hindu and Sikh faiths by Akbar and other early emperor. Later rulers, however, seemed to have forgotten that most of their population were not followers of Islam. Reimposing the hated jizya tax, barring Hindus from coveted court positions, attempting forcible conversion, and even burning temples, they quickly turned the people against them."
+ disaster_fee_crisis_of_the_mughal_empire4.EVTOPT1: "They are only kafir..."
+
+ disaster_fee_crisis_of_the_mughal_empire.EVTNAME5: "Degeneration of the Nobility"
+ disaster_fee_crisis_of_the_mughal_empire.EVTDESC5: "The original military ruling class of the empire were hardened Afghani warriors. Their descendants are shadows of that former glory. Lulled by the wealth and leisure of India, they became slothful, and debauched. Many spent more time in their harems than anywhere else, and felt no need nor loyalty to aid the empire as a whole."
+ disaster_fee_crisis_of_the_mughal_empire5.EVTOPT1: "Disgraceful!"
+
+ disaster_fee_crisis_of_the_mughal_empire.EVTNAME6: "Economic Collapse"
+ disaster_fee_crisis_of_the_mughal_empire.EVTDESC6: "While the peace and stability of the early empire brought relative prosperity, the [Root.GetAdjective] [Root.GovernmentName] had never truly encouraged economic growth. Focusing on the urban centers that made and sold luxury goods abroad, the administration mostly ignored the rest of the country, treating it as a source of quick tax revenue. This caused a wider economic stagnation, but recent tax increases by an increasingly desperate imperial treasury have instigated full-on economic collapse. Demanding as much as one-half of the harvest, tax collectors caused farmers to overwork the land leading to soil depletion, and the [Root.GetAdjective] treasury began for the first time in its history to consider bankruptcy."
+ disaster_fee_crisis_of_the_mughal_empire6.EVTOPT1: "What else could we do?"
+
+ disaster_fee_crisis_of_the_mughal_empire.EVTNAME7: "[Root.GetAdjective] Peasants Rise Up"
+ disaster_fee_crisis_of_the_mughal_empire.EVTDESC7: "The [Root.GetAdjective] dynasty relied heavily on the taxation of harvests directly from the farming castes. Not only did this disproportionately affect and impoverish the farmers, but also was subject to the whims of climate and weather. The instability of the empire combined with poverty from these taxes has finally pushed the peasantry passed the breaking point. Forming into roving bands of robbers, they react against the law and order of the empire."
+ disaster_fee_crisis_of_the_mughal_empire7.EVTOPT1: "The Peasants are Revolting!"
+
+ disaster_fee_crisis_of_the_mughal_empire.EVTNAME8: "Jains Demand Support"
+ disaster_fee_crisis_of_the_mughal_empire.EVTDESC8: "The Jains, although a small religious minority, proved a vital part of the [Root.GetAdjective]'s extensive administration. As money managers, loan offerors, and bankers, their support was needed more than ever in hard times. \n\nFeeling insecure in their positions and our ability to pay as instability engulfs the empire, the Jains have confronted us demanding that we pay them upfront for their services."
+ disaster_fee_crisis_of_the_mughal_empire8.EVTOPT1: "We must accept."
+ disaster_fee_crisis_of_the_mughal_empire8.EVTOPT2: "Refuse!"
+
+ disaster_fee_crisis_of_the_mughal_empire.EVTNAME9: "Mutiny in the Army"
+ disaster_fee_crisis_of_the_mughal_empire.EVTDESC9: "In addition to creating fragmentation and competing loyalties, the overgrown levy system has resulted in the soldiery, many of whom are essentially mercenaries, to not be paid. Because of this, the army increasingly lacks fighting morale as well as discipline."
+ disaster_fee_crisis_of_the_mughal_empire9.EVTOPT1: "Dogs!"
+
+ disaster_fee_crisis_of_the_mughal_empire.EVTNAME10: "Lack of Officers"
+ disaster_fee_crisis_of_the_mughal_empire.EVTDESC10: "The decadence of the nobility has resulted in a shortage of good officers. In addition, many of those who were capable have been killed, either on the battlefield or as the result of vile plots from jealous rivals."
+ disaster_fee_crisis_of_the_mughal_empire10.EVTOPT1: "Who now will lead our forces?"
+
+ disaster_fee_crisis_of_the_mughal_empire.EVTNAME11: "Rajput Rebellion"
+ disaster_fee_crisis_of_the_mughal_empire.EVTDESC11: "One of the more astute moves of the early emperors, in addition to tolerance of the Hindus, was their respect for and working relationship with the Rajputs. Later rulers, however, sought to reduce the Rajputs' independence. A foolish move, for the Rajputs still controlled much of the Indian armed forces. Now, they seek full independence for themselves!"
+ disaster_fee_crisis_of_the_mughal_empire11.EVTOPT1: "The Mughals, and they alone, Rule India!"
+
+ disaster_fee_crisis_of_the_mughal_empire.EVTNAME12: "Sharia Restrictions Backfire"
+ disaster_fee_crisis_of_the_mughal_empire.EVTDESC12: "The hard-line Islamic rule of [Root.Monarch.GetName] has not only angered the non-Muslims of the realm, of which there are plenty. In fact, the harsh rules supported by radical clerics go so far as to ban many cultural activities. The use of musical instruments, the performance of theater, and even the musical recitation of Islamic poetry has all been attacked by the clergy, and [Root.Monarch.GetName]'s actions to ban these things have made even most Muslims rebel against the harsh new way of life."
+ disaster_fee_crisis_of_the_mughal_empire12.EVTOPT1: "Let them enjoy their worldly pleasures."
+ disaster_fee_crisis_of_the_mughal_empire12.EVTOPT2: "Kill all who defy Allah!"
+
+ disaster_fee_crisis_of_the_mughal_empire.EVTNAME13: "Nobles Revolt!"
+ disaster_fee_crisis_of_the_mughal_empire.EVTDESC13: "Tired of the inability of the empire to provide for them in the way in which they are accustomed, nobles have mustered their own forces to revolt against us!"
+ disaster_fee_crisis_of_the_mughal_empire13.EVTOPT1: "They will swear allegiance or be destroyed!"
+
+ disaster_fee_crisis_of_the_mughal_empire.EVTNAME14: "Succession Problems"
+ disaster_fee_crisis_of_the_mughal_empire.EVTDESC14: "Unlike other older states, the [Root.GetAdjective] [Root.GovernmentName] lacked a set rule of succession and ignored primogeniture. While this could result in more capable rulers overall, it also risked succession crises and disputes. During times like this of instability, pretenders are more rife than ever."
+ disaster_fee_crisis_of_the_mughal_empire14.EVTOPT1: "I will show them who is Emperor!"
+
+ disaster_fee_crisis_of_the_mughal_empire.EVTNAME15: "Corruption in Administration"
+ disaster_fee_crisis_of_the_mughal_empire.EVTDESC15: "Once a beacon of efficient and loyal administration, the bureaucrats of our nation now take bribes on the regular and work not for us but for themselves."
+ disaster_fee_crisis_of_the_mughal_empire15.EVTOPT1: "Disgusting!"
+
  # Modifiers:
  fee_portuguese_succession_crisis_chaste_king: "Chaste King"
  fee_portuguese_succession_crisis_invasion_imminent: "Spanish Invasion Imminent"
@@ -447,6 +552,13 @@
  fee_pashtun_uprising_pacified: "Pacified"
  fee_pashtun_uprising_invasion_of_india: "Invasion of India"
 
+ fee_zemene_mesafint_modern_empire: "Modern Empire"
+ fee_zemene_mesafint_wara_sheh_dynasty: "Wara Sheh Dynasty"
+
+ fee_crisis_of_the_mughal_empire_weakened_army: "Weakened Army"
+ fee_crisis_of_the_mughal_empire_mughal_economic_collapse: "Mughal Economic Collapse"
+ fee_crisis_of_the_mughal_empire_unpaid_army: "Unpaid Army"
+
  # Opinion Modifiers:
  fee_portuguese_succession_crisis_acceptance: "Holy Father Accepted"
  fee_portuguese_succession_crisis_rejection: "Holy Father Refused"
@@ -462,6 +574,9 @@
  # Estate Modifiers:
  EST_VAL_FEE_PARTITION_OF_POLAND_CONFEDERATION_OF_BAR: "Confederation of Bar: §Y$VAL$%§!"
  EST_VAL_FEE_PARTITION_OF_POLAND_THE_MAY_CONSTITUTION: "May Constitution: §Y$VAL$%§!"
+ EST_VAL_FEE_ZEMENE_MESAFINT_REFUSED_RIGHTS: "Demand for Rights Refused: §Y$VAL$%§!"
+ EST_VAL_FEE_ZEMENE_MESAFINT_NEGOTIATIONS: "Demand for Rights Negotiated: §Y$VAL$%§!"
+ EST_VAL_FEE_ZEMENE_MESAFINT_FULLFILLED_DEMANDS: "Demands for Rights Fulfilled: §Y$VAL$%§!"
 
  # Casus Bellis:
  cb_fee_partition_of_poland: "Partition of Poland"
@@ -503,3 +618,9 @@
 
  HAD_FEE_PASHTUN_UPRISING_FOR_2_YEARS_TT: "Had the '§YPashtun Uprising§!' disaster for at least §Y2 years§!"
  DISASTER_FEE_PASHTUN_UPRISING.7.TT: "\nEvery owned province: \nGain §R+20.00%§! Local Autonomy."
+
+ FEE_ZEMENE_MESAFINT_10_AUTONOMY_IN_EVERY_CORE_TT: "Every owned core province gains §R+10%§! autonomy."
+ FEE_ZEMENE_MESAFINT_20_AUTONOMY_IN_EVERY_CORE_TT: "Every owned core province gains §R+20%§! autonomy."
+
+ FEE_CRISIS_OF_THE_MUGHAL_EMPIRE_LESS_THAN_0_TOLERANCE_OF_HEATHENS_TT: "Our §YTolerance of Heathens§! is less than §Y0§!"
+ FEE_CRISIS_OF_THE_MUGHAL_EMPIRE_RULER_STATS_LESS_THAN_6_TOTAL_TT: "The combined amount of the ruler skills of §Y[This.Monarch.GetName]§! are less than §Y6§!"
