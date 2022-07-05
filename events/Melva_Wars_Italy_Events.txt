@@ -45,7 +45,7 @@ country_event = {
 	option = {
 		name = Melva_Wars_Italy_Events.100.OPT1
 		ai_chance = {
-			factor = 100
+			factor = 90
 		}
 
 		custom_tooltip = FIRST_ITALIAN_WARS_TT
@@ -60,6 +60,17 @@ country_event = {
 					MLO = { is_free_or_tributary_trigger = yes }
 				}
 				MLO = {
+					country_event = {
+						id = Melva_Wars_Italy_Events.101
+					}
+				}
+			}
+			if = {
+				limit = {
+					exists = FER
+					FER = { is_free_or_tributary_trigger = yes }
+				}
+				FER = {
 					country_event = {
 						id = Melva_Wars_Italy_Events.101
 					}
@@ -137,10 +148,26 @@ country_event = {
 	option = {
 		name = Melva_Wars_Italy_Events.100.OPT2
 		ai_chance = {
-			factor = 0
+			factor = 10
+			modifier = {
+				factor = 100
+				NOT = { army_size = NAP }
+			}
+			modifier = {
+				factor = 100
+				NOT = { army_size = ARA }
+			}
+			modifier = {
+				factor = 100
+				NOT = { army_size = CAS }
+			}
+			modifier = {
+				factor = 100
+				NOT = { army_size = SPA }
+			}
 		}
 		
-		add_prestige = -10
+		add_prestige = -30
 		add_legitimacy_equivalent = { amount = -25 republican_tradition = -13 }
 	}
 }
@@ -157,10 +184,13 @@ country_event = {
 	option = {
 		name = Melva_Wars_Italy_Events.101.OPT1
 		ai_chance = {
-			factor = 50
+			factor = 40
 			modifier = {
-				factor = 20
-				tag = MLO
+				factor = 25
+				OR = {
+					tag = MLO
+					tag = FER
+				}
 			}
 		}
 
@@ -170,9 +200,9 @@ country_event = {
 	option = {
 		name = Melva_Wars_Italy_Events.101.OPT2
 		ai_chance = {
-			factor = 50
+			factor = 40
 			modifier = {
-				factor = 20
+				factor = 25
 				OR = {
 					tag = PAP
 					tag = VEN
@@ -185,6 +215,42 @@ country_event = {
 		}
 
 		join_all_defensive_wars_of = NAP
+	}
+
+	option = {
+		name = Melva_Wars_Italy_Events.101.OPT3
+		ai_chance = {
+			factor = 20
+			modifier = {
+				factor = 50
+				alliance_with = FRA
+			}
+			modifier = {
+				factor = 50
+				NOT = {
+					army_strength = {
+						who = FRA
+						value = 0.50
+					}
+				}
+			}
+			modifier = {
+				factor = 25
+				OR = {
+					has_opinion = {
+						who = FRA
+						value = 125
+					}
+					reverse_has_opinion = {
+						who = FRA
+						value = 125
+					}
+				}
+			}
+		}
+
+		add_stability = -2
+		add_prestige = -25
 	}
 }
 
