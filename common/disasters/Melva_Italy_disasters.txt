@@ -50,6 +50,10 @@ italy_republican_matter_disaster = {
 			NOT = { legitimacy_equivalent = 50 }
 		}
 		modifier = {
+			factor = -1.5
+			legitimacy_equivalent = 90
+		}
+		modifier = {
 			factor = 1
 			NOT = { stability = 1 }
 		}
@@ -78,8 +82,16 @@ italy_republican_matter_disaster = {
 	can_end = {
 		stability = 1
 		is_at_war = no
-		NOT = { num_of_rebel_controlled_provinces = 1 }
-		NOT = { num_of_rebel_armies = 1 }
+		NOT = {
+			italy_region = {
+				controlled_by = ita_republican_rebels
+			}
+		}
+		NOT = {
+			italy_region = {
+				controlled_by = ita_monarchy_rebels
+			}
+		}
 		custom_trigger_tooltip = {
 			tooltip = ITA_DISASTER_REPUBLICAN_TT
 			OR = {
@@ -94,9 +106,9 @@ italy_republican_matter_disaster = {
 	
 	modifier = {
 		reform_progress_growth = -0.50
-		stability_cost_modifier = 0.50
+		stability_cost_modifier = 0.75
 		global_unrest = 5
-		prestige = -1
+		prestige = -3
 		legitimacy = -2
 		republican_tradition = -1
 		devotion = -2
@@ -104,11 +116,16 @@ italy_republican_matter_disaster = {
 		meritocracy = -2
 	}
 
-	on_start = Melva_Italy_Disaster_Events.4
-	on_end = Melva_Italy_Disaster_Events.3
+	on_start = Melva_Italy_Disaster_Events.1
+	on_end = Melva_Italy_Disaster_Events.2
 	
 	on_monthly = {
 		events = {
+		}
+		random_events = {
+			1600 = 0
+			100 = Melva_Italy_Disaster_Events.3
+			100 = Melva_Italy_Disaster_Events.4 
 		}
 	}
 }
