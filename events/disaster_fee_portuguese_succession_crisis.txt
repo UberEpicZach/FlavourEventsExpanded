@@ -171,6 +171,7 @@ country_event = {
 	desc = disaster_fee_portuguese_succession_crisis.EVTDESC2
 	picture = GOOD_WITH_MONARCH_eventPicture
 
+	major = yes
 	is_triggered_only = yes
 
 	option = {

@@ -171,3 +171,27 @@ fee_pashtun_uprising_invasion_of_india = {
 	mil_tech_cost_modifier = -0.1
 	global_regiment_cost = -0.2
 }
+
+# Ethiopia
+fee_zemene_mesafint_modern_empire = {
+	global_autonomy = -0.1
+	max_absolutism = 15
+}
+
+fee_zemene_mesafint_wara_sheh_dynasty = {
+	nobles_influence_modifier = 0.3
+	global_tax_modifier = -0.15
+}
+
+# Mughals
+fee_crisis_of_the_mughal_empire_weakened_army = {
+	land_morale = -0.15
+}
+
+fee_crisis_of_the_mughal_empire_mughal_economic_collapse = {
+	global_trade_goods_size_modifier = -0.2
+}
+
+fee_crisis_of_the_mughal_empire_unpaid_army = {
+    discipline = -0.05
+}

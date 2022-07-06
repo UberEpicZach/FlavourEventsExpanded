@@ -29,6 +29,18 @@ spriteTypes = {
 		noOfFrames = 3
 		loadType = "INGAME"
 	}
+	spriteType = {
+		name = "GFX_disaster_fee_zemene_mesafint"
+		texturefile = "gfx/interface/disasters/fee_zemene_mesafint.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_disaster_fee_crisis_of_the_mughal_empire"
+		texturefile = "gfx/interface/disasters/fee_crisis_of_the_mughal_empire.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
 
 	spriteType = {
 		name = "GFX_disaster_italy_republican_matter_disaster"
