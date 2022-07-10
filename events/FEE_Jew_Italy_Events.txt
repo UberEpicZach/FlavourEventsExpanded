@@ -1,10 +1,10 @@
-namespace = Melva_Jew_Italy_Events
+namespace = FEE_Jew_Italy_Events
 
 #Jews of Sicily
 country_event = {
-	id = Melva_Jew_Italy_Events.1
-	title = Melva_Jew_Italy_Events.1.T
-	desc = Melva_Jew_Italy_Events.1.D
+	id = FEE_Jew_Italy_Events.1
+	title = FEE_Jew_Italy_Events.1.T
+	desc = FEE_Jew_Italy_Events.1.D
 	picture = RELIGIOUS_TURMOIL_eventPicture
 	
 	trigger = {
@@ -17,18 +17,18 @@ country_event = {
 				owned_by = ROOT
 			}
 		}
-		NOT = { has_country_flag = melva_jew_initial_event }
+		NOT = { has_country_flag = fee_jew_initial_event }
 	}
 
 	immediate = {
 		hidden_effect = {
-			set_country_flag = melva_jew_initial_event
+			set_country_flag = fee_jew_initial_event
 			set_variable = {
-				which = Melva_JEW_OPPOSE
+				which = FEE_JEW_OPPOSE
 				value = 0
 			}
 			set_variable = {
-				which = Melva_JEW_APPROVE
+				which = FEE_JEW_APPROVE
 				value = 0
 			}
 		}
@@ -39,39 +39,39 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Jew_Italy_Events.1.OPT1
+		name = FEE_Jew_Italy_Events.1.OPT1
 		ai_chance = {
 			factor = 50
 		}
 
-		custom_tooltip = Melva_JEW_START_OPPOSE_TT
+		custom_tooltip = FEE_JEW_START_OPPOSE_TT
 		add_mil_power = 25
 
 		add_country_modifier = {
-			name = melva_jews_value
+			name = fee_jews_value
 			duration = -1
 		}
 		change_variable = {
-			which = Melva_JEW_OPPOSE
+			which = FEE_JEW_OPPOSE
 			value = 10
 		}
 	}
 
 	option = {
-		name = Melva_Jew_Italy_Events.1.OPT2
+		name = FEE_Jew_Italy_Events.1.OPT2
 		ai_chance = {
 			factor = 50
 		}
 
-		custom_tooltip = Melva_JEW_START_APPROVE_TT
+		custom_tooltip = FEE_JEW_START_APPROVE_TT
 		add_dip_power = 25
 
 		add_country_modifier = {
-			name = melva_jews_value
+			name = fee_jews_value
 			duration = -1
 		}
 		change_variable = {
-			which = Melva_JEW_APPROVE
+			which = FEE_JEW_APPROVE
 			value = 10
 		}
 	}
@@ -79,9 +79,9 @@ country_event = {
 
 #Savoca
 country_event = {
-	id = Melva_Jew_Italy_Events.2
-	title = Melva_Jew_Italy_Events.2.T
-	desc = Melva_Jew_Italy_Events.2.D
+	id = FEE_Jew_Italy_Events.2
+	title = FEE_Jew_Italy_Events.2.T
+	desc = FEE_Jew_Italy_Events.2.D
 	picture = RELIGIOUS_TURMOIL_eventPicture
 
 	fire_only_once = yes
@@ -90,13 +90,13 @@ country_event = {
 		is_year = 1470
 		NOT = { is_year = 1492 }
 		owns = 124
-		has_country_flag = melva_jew_initial_event
+		has_country_flag = fee_jew_initial_event
 	}
 
 	goto = 124
 
 	option = {
-		name = Melva_Jew_Italy_Events.2.OPT1
+		name = FEE_Jew_Italy_Events.2.OPT1
 		ai_chance = {
 			factor = 50
 		}
@@ -104,19 +104,19 @@ country_event = {
 		add_treasury = 25
 		add_papal_influence = 25
 		change_variable = {
-			which = Melva_JEW_OPPOSE
+			which = FEE_JEW_OPPOSE
 			value = 10
 		}
 		124 = {
 			change_variable = {
-				which = Melva_JEW_CITY_OPPOSE
+				which = FEE_JEW_CITY_OPPOSE
 				value = 10
 			}
 		}
 	}
 
 	option = {
-		name = Melva_Jew_Italy_Events.2.OPT2
+		name = FEE_Jew_Italy_Events.2.OPT2
 		ai_chance = {
 			factor = 50
 		}
@@ -177,12 +177,12 @@ country_event = {
 		}
 
 		change_variable = {
-			which = Melva_JEW_APPROVE
+			which = FEE_JEW_APPROVE
 			value = 10
 		}
 		124 = {
 			change_variable = {
-				which = Melva_JEW_CITY_APPROVE
+				which = FEE_JEW_CITY_APPROVE
 				value = 10
 			}
 		}
@@ -191,22 +191,22 @@ country_event = {
 
 #Giudecca of [Root.GetName]
 province_event = {
-	id = Melva_Jew_Italy_Events.3
-	title = Melva_Jew_Italy_Events.3.T
-	desc = Melva_Jew_Italy_Events.3.D
+	id = FEE_Jew_Italy_Events.3
+	title = FEE_Jew_Italy_Events.3.T
+	desc = FEE_Jew_Italy_Events.3.D
 	picture = RELIGIOUS_TURMOIL_eventPicture
 
 	trigger = {
 		NOT = { is_year = 1470 }
 		owner = {
-			has_country_flag = melva_jew_initial_event
+			has_country_flag = fee_jew_initial_event
 		}
 		OR = {
 			area = western_sicily_area
 			area = sicily_area
 		}
 		NOT = { province_id = 126 }
-		NOT = { has_province_flag = melva_jew_sicily_giudecca_event }
+		NOT = { has_province_flag = fee_jew_sicily_giudecca_event }
 	}
 
 	mean_time_to_happen = {
@@ -217,27 +217,27 @@ province_event = {
 
 	immediate = {
 		hidden_effect = {
-			set_province_flag = melva_jew_sicily_giudecca_event
+			set_province_flag = fee_jew_sicily_giudecca_event
 			set_variable = {
-				which = Melva_JEW_CITY_OPPOSE
+				which = FEE_JEW_CITY_OPPOSE
 				value = 0
 			}
 			set_variable = {
-				which = Melva_JEW_CITY_APPROVE
+				which = FEE_JEW_CITY_APPROVE
 				value = 0
 			}
 		}
 	}
 
 	option = {
-		name = Melva_Jew_Italy_Events.3.OPT1
+		name = FEE_Jew_Italy_Events.3.OPT1
 		ai_chance = {
 			factor = 50
 			modifier = {
 				factor = 2
 				owner = {
 					check_variable = {
-						which = Melva_JEW_OPPOSE
+						which = FEE_JEW_OPPOSE
 						value = 15
 					}
 				}
@@ -253,7 +253,7 @@ province_event = {
 			add_papal_influence = 10
 			add_mil_power = 10
 			change_variable = {
-				which = Melva_JEW_OPPOSE
+				which = FEE_JEW_OPPOSE
 				value = 5
 			}
 		}
@@ -262,20 +262,20 @@ province_event = {
 			duration = -1
 		}
 		change_variable = {
-			which = Melva_JEW_CITY_OPPOSE
+			which = FEE_JEW_CITY_OPPOSE
 			value = 10
 		}
 	}
 
 	option = {
-		name = Melva_Jew_Italy_Events.3.OPT2
+		name = FEE_Jew_Italy_Events.3.OPT2
 		ai_chance = {
 			factor = 50
 			modifier = {
 				factor = 2
 				owner = {
 					check_variable = {
-						which = Melva_JEW_APPROVE
+						which = FEE_JEW_APPROVE
 						value = 7
 					}
 				}
@@ -285,7 +285,7 @@ province_event = {
 		owner = { 
 			add_legitimacy_equivalent = { amount = 3 republican_tradition = 3 }
 			change_variable = {
-				which = Melva_JEW_APPROVE
+				which = FEE_JEW_APPROVE
 				value = 5
 			}
 		}
@@ -313,33 +313,33 @@ province_event = {
 			duration = -1
 		}
 		change_variable = {
-			which = Melva_JEW_CITY_APPROVE
+			which = FEE_JEW_CITY_APPROVE
 			value = 10
 		}
 		hidden_effect = {
-			set_province_flag = melva_jew_sicily_giudecca_approved
+			set_province_flag = fee_jew_sicily_giudecca_approved
 		}
 	}
 }
 
 #Jews of Root.GetName
 province_event = {
-	id = Melva_Jew_Italy_Events.4
-	title = Melva_Jew_Italy_Events.4.T
-	desc = Melva_Jew_Italy_Events.4.D
+	id = FEE_Jew_Italy_Events.4
+	title = FEE_Jew_Italy_Events.4.T
+	desc = FEE_Jew_Italy_Events.4.D
 	picture = RELIGIOUS_TURMOIL_eventPicture
 
 	trigger = {
 		NOT = { is_year = 1470 }
 		had_province_flag = {
-			flag = melva_jew_sicily_giudecca_approved
+			flag = fee_jew_sicily_giudecca_approved
 			days = 1825
 		}
 		OR = {
 			area = western_sicily_area
 			area = sicily_area
 		}
-		NOT = { has_province_flag = melva_jew_sicily_jews_of_root }
+		NOT = { has_province_flag = fee_jew_sicily_jews_of_root }
 	}
 
 	mean_time_to_happen = {
@@ -350,17 +350,17 @@ province_event = {
 
 	immediate = {
 		hidden_effect = {
-			set_province_flag = melva_jew_sicily_jews_of_root
+			set_province_flag = fee_jew_sicily_jews_of_root
 		}
 	}
 
 	option = {
-		name = Melva_Jew_Italy_Events.4.OPT1
+		name = FEE_Jew_Italy_Events.4.OPT1
 		trigger = {
 			hidden_trigger = {
 				NOT = {
 					check_variable = {
-						which = Melva_JEW_APPROVE
+						which = FEE_JEW_APPROVE
 						value = 50
 					}
 				}
@@ -372,7 +372,7 @@ province_event = {
 				factor = 2
 				owner = {
 					check_variable = {
-						which = Melva_JEW_OPPOSE
+						which = FEE_JEW_OPPOSE
 						value = 30
 					}
 				}
@@ -391,7 +391,7 @@ province_event = {
 		}
 		remove_development_third_monarch_skill_fee = yes
 		change_variable = {
-			which = Melva_JEW_CITY_OPPOSE
+			which = FEE_JEW_CITY_OPPOSE
 			value = 10
 		}
 		add_devastation = 25
@@ -408,12 +408,12 @@ province_event = {
 	}
 
 	option = {
-		name = Melva_Jew_Italy_Events.4.OPT2
+		name = FEE_Jew_Italy_Events.4.OPT2
 		trigger = {
 			hidden_trigger = {
 				NOT = {
 					check_variable = {
-						which = Melva_JEW_OPPOSE
+						which = FEE_JEW_OPPOSE
 						value = 50
 					}
 				}
@@ -425,7 +425,7 @@ province_event = {
 				factor = 2
 				owner = {
 					check_variable = {
-						which = Melva_JEW_APPROVE
+						which = FEE_JEW_APPROVE
 						value = 30
 					}
 				}
@@ -444,7 +444,7 @@ province_event = {
 		add_base_production = 1
 		add_prosperity = 10
 		change_variable = {
-			which = Melva_JEW_CITY_APPROVE
+			which = FEE_JEW_CITY_APPROVE
 			value = 10
 		}
 	}
@@ -452,9 +452,9 @@ province_event = {
 
 #Expulsion of 1492
 province_event = {
-	id = Melva_Jew_Italy_Events.5
-	title = Melva_Jew_Italy_Events.5.T
-	desc = Melva_Jew_Italy_Events.5.D
+	id = FEE_Jew_Italy_Events.5
+	title = FEE_Jew_Italy_Events.5.T
+	desc = FEE_Jew_Italy_Events.5.D
 	picture = RELIGIOUS_TURMOIL_eventPicture
 
 	trigger = {
@@ -465,10 +465,10 @@ province_event = {
 			area = sicily_area
 		}
 		NOT = { province_id = 126 }
-		NOT = { has_province_flag = melva_jew_expulsion_1492 }
+		NOT = { has_province_flag = fee_jew_expulsion_1492 }
 		owner = {
 			had_country_flag = {
-				flag = melva_jew_expulsion_1492_country
+				flag = fee_jew_expulsion_1492_country
 				days = 730
 			}
 		}
@@ -489,23 +489,23 @@ province_event = {
 
 	immediate = {
 		hidden_effect = {
-			set_province_flag = melva_jew_expulsion_1492
+			set_province_flag = fee_jew_expulsion_1492
 			owner = {
-				clr_country_flag = melva_jew_expulsion_1492_country
-				set_country_flag = melva_jew_expulsion_1492_country
+				clr_country_flag = fee_jew_expulsion_1492_country
+				set_country_flag = fee_jew_expulsion_1492_country
 			}
 		}
 	}
 
 	option = {
-		name = Melva_Jew_Italy_Events.5.OPT1
+		name = FEE_Jew_Italy_Events.5.OPT1
 		ai_chance = {
 			factor = 75
 			modifier = {
 				factor = 1.125
 				owner = {
 					check_variable = {
-						which = Melva_JEW_OPPOSE
+						which = FEE_JEW_OPPOSE
 						value = 30
 					}
 				}
@@ -536,11 +536,11 @@ province_event = {
 			}
 		}
 		change_variable = {
-			which = Melva_JEW_CITY_OPPOSE
+			which = FEE_JEW_CITY_OPPOSE
 			value = 15
 		}
 		set_variable = {
-			which = Melva_JEW_CITY_APPROVE
+			which = FEE_JEW_CITY_APPROVE
 			value = -25
 		}
 		random_list = {
@@ -572,14 +572,14 @@ province_event = {
 	}
 
 	option = {
-		name = Melva_Jew_Italy_Events.5.OPT2
+		name = FEE_Jew_Italy_Events.5.OPT2
 		ai_chance = {
 			factor = 25
 			modifier = {
 				factor = 4
 				owner = {
 					check_variable = {
-						which = Melva_JEW_APPROVE
+						which = FEE_JEW_APPROVE
 						value = 30
 					}
 				}
@@ -617,11 +617,11 @@ province_event = {
 			}
 		}
 		change_variable = {
-			which = Melva_JEW_CITY_APPROVE
+			which = FEE_JEW_CITY_APPROVE
 			value = 25
 		}
 		set_variable = {
-			which = Melva_JEW_CITY_OPPOSE
+			which = FEE_JEW_CITY_OPPOSE
 			value = -25
 		}
 	}
@@ -629,9 +629,9 @@ province_event = {
 
 #Jews of Naples
 province_event = {
-	id = Melva_Jew_Italy_Events.6
-	title = Melva_Jew_Italy_Events.6.T
-	desc = Melva_Jew_Italy_Events.6.D
+	id = FEE_Jew_Italy_Events.6
+	title = FEE_Jew_Italy_Events.6.T
+	desc = FEE_Jew_Italy_Events.6.D
 	picture = RELIGIOUS_TURMOIL_eventPicture
 
 	fire_only_once = yes
@@ -639,19 +639,19 @@ province_event = {
 	trigger = {
 		province_id = 121
 		NOT = { is_year = 1473 }
-		NOT = { has_province_flag = melva_jew_naples_event }
+		NOT = { has_province_flag = fee_jew_naples_event }
 	}
 
 	immediate = {
 		hidden_effect = {
-			set_province_flag = melva_jew_naples_event
+			set_province_flag = fee_jew_naples_event
 			owner = {
 				if = {
 					limit = {
-						NOT = { has_country_modifier = melva_jews_value }
+						NOT = { has_country_modifier = fee_jews_value }
 					}
 					add_country_modifier = {
-						name = melva_jews_value
+						name = fee_jews_value
 						duration = -1
 					}
 				}
@@ -675,14 +675,14 @@ province_event = {
 	}
 
 	option = {
-		name = Melva_Jew_Italy_Events.6.OPT1
+		name = FEE_Jew_Italy_Events.6.OPT1
 		ai_chance = {
 			factor = 50
 			modifier = {
 				factor = 1.125
 				owner = {
 					check_variable = {
-						which = Melva_JEW_OPPOSE
+						which = FEE_JEW_OPPOSE
 						value = 30
 					}
 				}
@@ -693,25 +693,25 @@ province_event = {
 			}
 		}
 
-		custom_tooltip = Melva_JEW_START_OPPOSE_TT
+		custom_tooltip = FEE_JEW_START_OPPOSE_TT
 		owner = {
 			add_mil_power = 25
 			change_variable = {
-				which = Melva_JEW_OPPOSE
+				which = FEE_JEW_OPPOSE
 				value = 10
 			}
 		}
 	}
 
 	option = {
-		name = Melva_Jew_Italy_Events.6.OPT2
+		name = FEE_Jew_Italy_Events.6.OPT2
 		ai_chance = {
 			factor = 50
 			modifier = {
 				factor = 4
 				owner = {
 					check_variable = {
-						which = Melva_JEW_APPROVE
+						which = FEE_JEW_APPROVE
 						value = 30
 					}
 				}
@@ -726,12 +726,12 @@ province_event = {
 			}
 		}
 
-		custom_tooltip = Melva_JEW_START_APPROVE_TT
+		custom_tooltip = FEE_JEW_START_APPROVE_TT
 		
 		owner = {
 			add_dip_power = 25
 			change_variable = {
-				which = Melva_JEW_APPROVE
+				which = FEE_JEW_APPROVE
 				value = 10
 			}
 		}
@@ -740,9 +740,9 @@ province_event = {
 
 #Stamperia del 1473
 province_event = {
-	id = Melva_Jew_Italy_Events.7
-	title = Melva_Jew_Italy_Events.7.T
-	desc = Melva_Jew_Italy_Events.7.D
+	id = FEE_Jew_Italy_Events.7
+	title = FEE_Jew_Italy_Events.7.T
+	desc = FEE_Jew_Italy_Events.7.D
 	picture = RELIGIOUS_TURMOIL_eventPicture
 
 	fire_only_once = yes
@@ -750,19 +750,19 @@ province_event = {
 	trigger = {
 		province_id = 121
 		is_year = 1473
-		NOT = { has_province_flag = melva_jew_naples_stamperia }
+		NOT = { has_province_flag = fee_jew_naples_stamperia }
 	}
 
 	immediate = {
 		hidden_effect = {
-			set_province_flag = melva_jew_naples_stamperia
+			set_province_flag = fee_jew_naples_stamperia
 			owner = {
 				if = {
 					limit = {
-						NOT = { has_country_modifier = melva_jews_value }
+						NOT = { has_country_modifier = fee_jews_value }
 					}
 					add_country_modifier = {
-						name = melva_jews_value
+						name = fee_jews_value
 						duration = -1
 					}
 				}
@@ -786,14 +786,14 @@ province_event = {
 	}
 
 	option = {
-		name = Melva_Jew_Italy_Events.6.OPT1
+		name = FEE_Jew_Italy_Events.6.OPT1
 		ai_chance = {
 			factor = 50
 			modifier = {
 				factor = 1.125
 				owner = {
 					check_variable = {
-						which = Melva_JEW_OPPOSE
+						which = FEE_JEW_OPPOSE
 						value = 30
 					}
 				}
@@ -809,7 +809,7 @@ province_event = {
 			add_papal_influence = 15
 			add_mil_power = 25
 			change_variable = {
-				which = Melva_JEW_OPPOSE
+				which = FEE_JEW_OPPOSE
 				value = 10
 			}
 		}
@@ -828,14 +828,14 @@ province_event = {
 	}
 
 	option = {
-		name = Melva_Jew_Italy_Events.6.OPT2
+		name = FEE_Jew_Italy_Events.6.OPT2
 		ai_chance = {
 			factor = 50
 			modifier = {
 				factor = 4
 				owner = {
 					check_variable = {
-						which = Melva_JEW_APPROVE
+						which = FEE_JEW_APPROVE
 						value = 30
 					}
 				}
@@ -854,7 +854,7 @@ province_event = {
 			add_legitimacy_equivalent = { amount = 3 republican_tradition = 3 }
 			add_treasury = -100
 			change_variable = {
-				which = Melva_JEW_APPROVE
+				which = FEE_JEW_APPROVE
 				value = 10
 			}
 		}
@@ -878,7 +878,7 @@ province_event = {
 			duration = 18250
 		}
 		change_variable = {
-			which = Melva_JEW_CITY_APPROVE
+			which = FEE_JEW_CITY_APPROVE
 			value = 10
 		}
 	}
@@ -886,9 +886,9 @@ province_event = {
 
 #Profughi del 1492 of Root.GetName
 province_event = {
-	id = Melva_Jew_Italy_Events.8
-	title = Melva_Jew_Italy_Events.8.T
-	desc = Melva_Jew_Italy_Events.8.D
+	id = FEE_Jew_Italy_Events.8
+	title = FEE_Jew_Italy_Events.8.T
+	desc = FEE_Jew_Italy_Events.8.D
 	picture = RELIGIOUS_TURMOIL_eventPicture
 
 	trigger = {
@@ -899,7 +899,7 @@ province_event = {
 			area = calabria_area
 			area = apulia_area
 		}
-		NOT = { has_province_flag = melva_jew_naples_profughes }
+		NOT = { has_province_flag = fee_jew_naples_profughes }
 	}
 
 	mean_time_to_happen = {
@@ -910,14 +910,14 @@ province_event = {
 
 	immediate = {
 		hidden_effect = {
-			set_province_flag = melva_jew_naples_profughes
+			set_province_flag = fee_jew_naples_profughes
 			owner = {
 				if = {
 					limit = {
-						NOT = { has_country_modifier = melva_jews_value }
+						NOT = { has_country_modifier = fee_jews_value }
 					}
 					add_country_modifier = {
-						name = melva_jews_value
+						name = fee_jews_value
 						duration = -1
 					}
 				}
@@ -926,14 +926,14 @@ province_event = {
 	}
 
 	option = {
-		name = Melva_Jew_Italy_Events.8.OPT1
+		name = FEE_Jew_Italy_Events.8.OPT1
 		ai_chance = {
 			factor = 50
 			modifier = {
 				factor = 2
 				owner = {
 					check_variable = {
-						which = Melva_JEW_OPPOSE
+						which = FEE_JEW_OPPOSE
 						value = 30
 					}
 				}
@@ -950,25 +950,25 @@ province_event = {
 			add_papal_influence = 10
 			add_mil_power = 10
 			change_variable = {
-				which = Melva_JEW_OPPOSE
+				which = FEE_JEW_OPPOSE
 				value = 5
 			}
 		}
 		change_variable = {
-			which = Melva_JEW_CITY_OPPOSE
+			which = FEE_JEW_CITY_OPPOSE
 			value = 10
 		}
 	}
 
 	option = {
-		name = Melva_Jew_Italy_Events.8.OPT2
+		name = FEE_Jew_Italy_Events.8.OPT2
 		ai_chance = {
 			factor = 50
 			modifier = {
 				factor = 2
 				owner = {
 					check_variable = {
-						which = Melva_JEW_APPROVE
+						which = FEE_JEW_APPROVE
 						value = 30
 					}
 				}
@@ -1000,7 +1000,7 @@ province_event = {
 			duration = -1
 		}
 		change_variable = {
-			which = Melva_JEW_CITY_APPROVE
+			which = FEE_JEW_CITY_APPROVE
 			value = 10
 		}
 	}
@@ -1008,9 +1008,9 @@ province_event = {
 
 #Espulsion del 1540
 province_event = {
-	id = Melva_Jew_Italy_Events.9
-	title = Melva_Jew_Italy_Events.9.T
-	desc = Melva_Jew_Italy_Events.9.D
+	id = FEE_Jew_Italy_Events.9
+	title = FEE_Jew_Italy_Events.9.T
+	desc = FEE_Jew_Italy_Events.9.D
 	picture = RELIGIOUS_TURMOIL_eventPicture
 	
 	trigger = {
@@ -1020,7 +1020,7 @@ province_event = {
 			area = apulia_area
 		}
 		is_year = 1540
-		NOT = { has_province_flag = melva_jew_expulsion_1540 }
+		NOT = { has_province_flag = fee_jew_expulsion_1540 }
 		OR = {
 			has_province_modifier = italian_jew_province
 			has_province_modifier = italian_jew_allowed_stay
@@ -1030,36 +1030,36 @@ province_event = {
 
 	immediate = {
 		hidden_effect = {
-			set_province_flag = melva_jew_expulsion_1540
+			set_province_flag = fee_jew_expulsion_1540
 			owner = {
 				if = {
 					limit = {
 						NOT = {
 							check_variable = {
-								which = Melva_JEW_OPPOSE
+								which = FEE_JEW_OPPOSE
 								value = 0
 							}
 						}
 						check_variable = {
-							which = Melva_JEW_OPPOSE
+							which = FEE_JEW_OPPOSE
 							value = 0
 						}
 					}
 					set_variable = {
-						which = Melva_JEW_OPPOSE
+						which = FEE_JEW_OPPOSE
 						value = 0
 					}
 					set_variable = {
-						which = Melva_JEW_APPROVE
+						which = FEE_JEW_APPROVE
 						value = 0
 					}
 				}
 				if = {
 					limit = {
-						NOT = { has_country_modifier = melva_jews_value }
+						NOT = { has_country_modifier = fee_jews_value }
 					}
 					add_country_modifier = {
-						name = melva_jews_value
+						name = fee_jews_value
 						duration = -1
 					}
 				}
@@ -1072,14 +1072,14 @@ province_event = {
 	}
 
 	option = {
-		name = Melva_Jew_Italy_Events.9.OPT1
+		name = FEE_Jew_Italy_Events.9.OPT1
 		ai_chance = {
 			factor = 50
 			modifier = {
 				factor = 1.125
 				owner = {
 					check_variable = {
-						which = Melva_JEW_OPPOSE
+						which = FEE_JEW_OPPOSE
 						value = 30
 					}
 				}
@@ -1109,7 +1109,7 @@ province_event = {
 			add_papal_influence = 15
 			add_mil_power = 25
 			change_variable = {
-				which = Melva_JEW_OPPOSE
+				which = FEE_JEW_OPPOSE
 				value = 10
 			}
 		}
@@ -1126,24 +1126,24 @@ province_event = {
 			remove_province_modifier = italian_jew_allowed_stay
 		}
 		change_variable = {
-			which = Melva_JEW_CITY_OPPOSE
+			which = FEE_JEW_CITY_OPPOSE
 			value = 25
 		}
 		set_variable = {
-			which = Melva_JEW_CITY_APPROVE
+			which = FEE_JEW_CITY_APPROVE
 			value = -25
 		}
 	}
 
 	option = {
-		name = Melva_Jew_Italy_Events.9.OPT2
+		name = FEE_Jew_Italy_Events.9.OPT2
 		ai_chance = {
 			factor = 50
 			modifier = {
 				factor = 4
 				owner = {
 					check_variable = {
-						which = Melva_JEW_APPROVE
+						which = FEE_JEW_APPROVE
 						value = 30
 					}
 				}
@@ -1162,7 +1162,7 @@ province_event = {
 			add_legitimacy_equivalent = { amount = 3 republican_tradition = 3 }
 			add_treasury = -100
 			change_variable = {
-				which = Melva_JEW_APPROVE
+				which = FEE_JEW_APPROVE
 				value = 10
 			}
 		}
@@ -1186,11 +1186,11 @@ province_event = {
 			}
 		}
 		change_variable = {
-			which = Melva_JEW_CITY_APPROVE
+			which = FEE_JEW_CITY_APPROVE
 			value = 25
 		}
 		set_variable = {
-			which = Melva_JEW_CITY_OPPOSE
+			which = FEE_JEW_CITY_OPPOSE
 			value = -25
 		}
 	}
@@ -1198,9 +1198,9 @@ province_event = {
 
 #
 #country_event = {
-#	id = Melva_Jew_Italy_Events.
-#	title = Melva_Jew_Italy_Events..T
-#	desc = Melva_Jew_Italy_Events..D
+#	id = FEE_Jew_Italy_Events.
+#	title = FEE_Jew_Italy_Events..T
+#	desc = FEE_Jew_Italy_Events..D
 #	picture = RELIGIOUS_TURMOIL_eventPicture
 #
 #	fire_only_once = yes
@@ -1214,14 +1214,14 @@ province_event = {
 #	}
 #
 #	option = {
-#		name = Melva_Jew_Italy_Events..OPT1
+#		name = FEE_Jew_Italy_Events..OPT1
 #		ai_chance = {
 #			factor = 50
 #			modifier = {
 #				factor = 1.125
 #				owner = {
 #					check_variable = {
-#						which = Melva_JEW_OPPOSE
+#						which = FEE_JEW_OPPOSE
 #						value = 30
 #					}
 #				}
@@ -1235,14 +1235,14 @@ province_event = {
 #	}
 #
 #	option = {
-#		name = Melva_Jew_Italy_Events..OPT2
+#		name = FEE_Jew_Italy_Events..OPT2
 #		ai_chance = {
 #			factor = 50
 #			modifier = {
 #				factor = 4
 #				owner = {
 #					check_variable = {
-#						which = Melva_JEW_APPROVE
+#						which = FEE_JEW_APPROVE
 #						value = 30
 #					}
 #				}

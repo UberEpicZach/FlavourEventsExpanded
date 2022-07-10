@@ -1,28 +1,28 @@
-namespace = Melva_Jews_Events
+namespace = FEE_Jews_Events
 
 #Growth of the Jewish Community
 #province_event = {
-#	id = Melva_Jews_Events.1
-#	title = Melva_Jews_Events.1.T
-#	desc = Melva_Jews_Events.1.D
+#	id = FEE_Jews_Events.1
+#	title = FEE_Jews_Events.1.T
+#	desc = FEE_Jews_Events.1.D
 #	picture = RELIGIOUS_TURMOIL_eventPicture
 #
 #	trigger = {
 #		check_variable = {
-#			which = Melva_JEW_CITY_APPROVE
+#			which = FEE_JEW_CITY_APPROVE
 #			value = 50
 #		}
 #		NOT = {
 #			check_variable = {
-#				which = Melva_JEW_CITY_APPROVE
+#				which = FEE_JEW_CITY_APPROVE
 #				value = 100
 #			}
 #		}
 #		NOT = { religion = jewish }
 #		OR = {
-#			NOT = { has_province_flag = melva_jew_province_wants_convert }
+#			NOT = { has_province_flag = fee_jew_province_wants_convert }
 #			had_province_flag = {
-#				flag = melva_jew_province_wants_convert
+#				flag = fee_jew_province_wants_convert
 #				days = 3650
 #			}
 #		}
@@ -33,14 +33,14 @@ namespace = Melva_Jews_Events
 #	}
 #
 #	option = {
-#		name = Melva_Jews_Events.1.OPT1
+#		name = FEE_Jews_Events.1.OPT1
 #		ai_chance = {
 #			factor = 50
 #			modifier = {
 #				factor = 2
 #				owner = {
 #					check_variable = {
-#						which = Melva_JEW_OPPOSE
+#						which = FEE_JEW_OPPOSE
 #						value = 30
 #					}
 #				}
@@ -52,24 +52,24 @@ namespace = Melva_Jews_Events
 #		}
 #
 #		change_variable = {
-#			which = Melva_JEW_OPPOSE
+#			which = FEE_JEW_OPPOSE
 #			value = 5
 #		}
 #		change_variable = {
-#			which = Melva_JEW_CITY_APPROVE
+#			which = FEE_JEW_CITY_APPROVE
 #			value = -5
 #		}
 #	}
 #
 #	option = {
-#		name = Melva_Jews_Events.1.OPT2
+#		name = FEE_Jews_Events.1.OPT2
 #		ai_chance = {
 #			factor = 50
 #			modifier = {
 #				factor = 2
 #				owner = {
 #					check_variable = {
-#						which = Melva_JEW_APPROVE
+#						which = FEE_JEW_APPROVE
 #						value = 30
 #					}
 #				}
@@ -85,11 +85,11 @@ namespace = Melva_Jews_Events
 #		}
 #
 #		change_variable = {
-#			which = Melva_JEW_APPROVE
+#			which = FEE_JEW_APPROVE
 #			value = 5
 #		}
 #		change_variable = {
-#			which = Melva_JEW_CITY_APPROVE
+#			which = FEE_JEW_CITY_APPROVE
 #			value = 5
 #		}
 #		if = {
@@ -111,7 +111,7 @@ namespace = Melva_Jews_Events
 #		if = {
 #			limit = {
 #				check_variable = {
-#					which = Melva_JEW_CITY_APPROVE
+#					which = FEE_JEW_CITY_APPROVE
 #					value = 50
 #				}
 #			}
@@ -119,7 +119,7 @@ namespace = Melva_Jews_Events
 #				5 = {
 #					change_religion = jewish
 #					set_variable = {
-#						which = Melva_JEW_CITY_APPROVE
+#						which = FEE_JEW_CITY_APPROVE
 #						value = 100
 #					}
 #				}
@@ -129,7 +129,7 @@ namespace = Melva_Jews_Events
 #		else_if = {
 #			limit = {
 #				check_variable = {
-#					which = Melva_JEW_CITY_APPROVE
+#					which = FEE_JEW_CITY_APPROVE
 #					value = 60
 #				}
 #			}
@@ -137,7 +137,7 @@ namespace = Melva_Jews_Events
 #				10 = {
 #					change_religion = jewish
 #					set_variable = {
-#						which = Melva_JEW_CITY_APPROVE
+#						which = FEE_JEW_CITY_APPROVE
 #						value = 100
 #					}
 #				}
@@ -147,7 +147,7 @@ namespace = Melva_Jews_Events
 #		else_if = {
 #			limit = {
 #				check_variable = {
-#					which = Melva_JEW_CITY_APPROVE
+#					which = FEE_JEW_CITY_APPROVE
 #					value = 70
 #				}
 #			}
@@ -155,7 +155,7 @@ namespace = Melva_Jews_Events
 #				20 = {
 #					change_religion = jewish
 #					set_variable = {
-#						which = Melva_JEW_CITY_APPROVE
+#						which = FEE_JEW_CITY_APPROVE
 #						value = 100
 #					}
 #				}
@@ -165,7 +165,7 @@ namespace = Melva_Jews_Events
 #		else_if = {
 #			limit = {
 #				check_variable = {
-#					which = Melva_JEW_CITY_APPROVE
+#					which = FEE_JEW_CITY_APPROVE
 #					value = 80
 #				}
 #			}
@@ -173,7 +173,7 @@ namespace = Melva_Jews_Events
 #				30 = {
 #					change_religion = jewish
 #					set_variable = {
-#						which = Melva_JEW_CITY_APPROVE
+#						which = FEE_JEW_CITY_APPROVE
 #						value = 100
 #					}
 #				}
@@ -183,7 +183,7 @@ namespace = Melva_Jews_Events
 #		else_if = {
 #			limit = {
 #				check_variable = {
-#					which = Melva_JEW_CITY_APPROVE
+#					which = FEE_JEW_CITY_APPROVE
 #					value = 90
 #				}
 #			}
@@ -191,7 +191,7 @@ namespace = Melva_Jews_Events
 #				40 = {
 #					change_religion = jewish
 #					set_variable = {
-#						which = Melva_JEW_CITY_APPROVE
+#						which = FEE_JEW_CITY_APPROVE
 #						value = 100
 #					}
 #				}
@@ -201,7 +201,7 @@ namespace = Melva_Jews_Events
 #		else_if = {
 #			limit = {
 #				check_variable = {
-#					which = Melva_JEW_CITY_APPROVE
+#					which = FEE_JEW_CITY_APPROVE
 #					value = 100
 #				}
 #			}
@@ -209,7 +209,7 @@ namespace = Melva_Jews_Events
 #				50 = {
 #					change_religion = jewish
 #					set_variable = {
-#						which = Melva_JEW_CITY_APPROVE
+#						which = FEE_JEW_CITY_APPROVE
 #						value = 100
 #					}
 #				}
@@ -221,31 +221,31 @@ namespace = Melva_Jews_Events
 
 #Medic at Court
 country_event = {
-	id = Melva_Jews_Events.1000
-	title = Melva_Jews_Events.1000.T
-	desc = Melva_Jews_Events.1000.D
+	id = FEE_Jews_Events.1000
+	title = FEE_Jews_Events.1000.T
+	desc = FEE_Jews_Events.1000.D
 	picture = ADVISOR_eventPicture
 	
 	trigger = {
 		check_variable = {
-			which = Melva_JEW_APPROVE
+			which = FEE_JEW_APPROVE
 			value = 50
 		}
 		OR = {
-			NOT = { has_country_flag = melva_jews_medic }
+			NOT = { has_country_flag = fee_jews_medic }
 			had_country_flag = {
-				flag = melva_jews_medic
+				flag = fee_jews_medic
 				days = 5475
 			}
 		}
 		NOT = {
-			has_ruler_modifier = melva_jews_medic_modifier
+			has_ruler_modifier = fee_jews_medic_modifier
 		}
 	}
 
 	immediate = {
 		hidden_effect = {
-			set_country_flag = melva_jews_medic
+			set_country_flag = fee_jews_medic
 		}
 	}
 
@@ -258,10 +258,10 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Jews_Events.1000.OPT1
+		name = FEE_Jews_Events.1000.OPT1
 
 		add_ruler_modifier = {
-			name = melva_jews_medic_modifier
+			name = fee_jews_medic_modifier
 			duration = -1
 		}
 	}
@@ -269,9 +269,9 @@ country_event = {
 
 #
 #country_event = {
-#	id = Melva_Jews_Events.
-#	title = Melva_Jews_Events..T
-#	desc = Melva_Jews_Events..D
+#	id = FEE_Jews_Events.
+#	title = FEE_Jews_Events..T
+#	desc = FEE_Jews_Events..D
 #	picture = RELIGIOUS_TURMOIL_eventPicture
 #
 #	fire_only_once = yes
@@ -285,14 +285,14 @@ country_event = {
 #	}
 #
 #	option = {
-#		name = Melva_Jews_Events..OPT1
+#		name = FEE_Jews_Events..OPT1
 #		ai_chance = {
 #			factor = 50
 #			modifier = {
 #				factor = 1.125
 #				owner = {
 #					check_variable = {
-#						which = Melva_JEW_OPPOSE
+#						which = FEE_JEW_OPPOSE
 #						value = 30
 #					}
 #				}
@@ -306,14 +306,14 @@ country_event = {
 #	}
 #
 #	option = {
-#		name = Melva_Jews_Events..OPT2
+#		name = FEE_Jews_Events..OPT2
 #		ai_chance = {
 #			factor = 50
 #			modifier = {
 #				factor = 4
 #				owner = {
 #					check_variable = {
-#						which = Melva_JEW_APPROVE
+#						which = FEE_JEW_APPROVE
 #						value = 30
 #					}
 #				}

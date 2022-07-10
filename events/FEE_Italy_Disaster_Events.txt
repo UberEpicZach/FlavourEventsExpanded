@@ -1,10 +1,10 @@
-namespace = Melva_Italy_Disaster_Events
+namespace = FEE_Italy_Disaster_Events
 
 #A New State
 country_event = {
-	id = Melva_Italy_Disaster_Events.2
-	title = Melva_Italy_Disaster_Events.2.T
-	desc = Melva_Italy_Disaster_Events.2.D
+	id = FEE_Italy_Disaster_Events.2
+	title = FEE_Italy_Disaster_Events.2.T
+	desc = FEE_Italy_Disaster_Events.2.D
 	picture = GOOD_WITH_MONARCH_eventPicture
 
 	is_triggered_only = yes
@@ -17,7 +17,7 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Italy_Disaster_Events.2.OPT1
+		name = FEE_Italy_Disaster_Events.2.OPT1
 
 		ai_chance = { factor = 0.40 }
 
@@ -37,7 +37,7 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Italy_Disaster_Events.2.OPT2
+		name = FEE_Italy_Disaster_Events.2.OPT2
 
 		ai_chance = { factor = 0.40 }
 
@@ -51,26 +51,25 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Italy_Disaster_Events.2.OPT3
+		name = FEE_Italy_Disaster_Events.2.OPT3
 
 		ai_chance = { factor = 0.20 }
 
-		custom_tooltip = ITA_REPUBLICAN_PROBLEMS_TT
 		add_stability = -1
 	}
 }
 
 #Republican Matter
 country_event = {
-	id = Melva_Italy_Disaster_Events.1
-	title = Melva_Italy_Disaster_Events.1.T
-	desc = Melva_Italy_Disaster_Events.1.D
+	id = FEE_Italy_Disaster_Events.1
+	title = FEE_Italy_Disaster_Events.1.T
+	desc = FEE_Italy_Disaster_Events.1.D
 	picture = GOOD_WITH_MONARCH_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = Melva_Italy_Disaster_Events.1.OPT1
+		name = FEE_Italy_Disaster_Events.1.OPT1
 
 		add_stability = -1
 		add_prestige = -20
@@ -83,9 +82,9 @@ country_event = {
 
 #Giovine Italia
 country_event = {
-	id = Melva_Italy_Disaster_Events.3
-	title = Melva_Italy_Disaster_Events.3.T
-	desc = Melva_Italy_Disaster_Events.3.D
+	id = FEE_Italy_Disaster_Events.3
+	title = FEE_Italy_Disaster_Events.3.T
+	desc = FEE_Italy_Disaster_Events.3.D
 	picture = DEBATE_REPUBLICAN_eventPicture
 
 	is_triggered_only = yes
@@ -113,7 +112,7 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Italy_Disaster_Events.3.OPT1
+		name = FEE_Italy_Disaster_Events.3.OPT1
 
 		random_owned_province = {
 			limit = {
@@ -151,9 +150,9 @@ country_event = {
 
 #Monarchy Aider
 country_event = {
-	id = Melva_Italy_Disaster_Events.4 
-	title = Melva_Italy_Disaster_Events.4.T
-	desc = Melva_Italy_Disaster_Events.4.D
+	id = FEE_Italy_Disaster_Events.4 
+	title = FEE_Italy_Disaster_Events.4.T
+	desc = FEE_Italy_Disaster_Events.4.D
 	picture = DEBATE_REPUBLICAN_eventPicture
 
 	is_triggered_only = yes
@@ -183,7 +182,7 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Italy_Disaster_Events.4.OPT1
+		name = FEE_Italy_Disaster_Events.4.OPT1
 
 		random_owned_province = {
 			limit = {

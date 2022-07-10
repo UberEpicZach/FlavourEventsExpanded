@@ -1,10 +1,10 @@
-namespace = Melva_Mantua_Events
+namespace = FEE_Mantua_Events
 
 #Antonio di Puccio Pisano
 country_event = {
-	id = Melva_Mantua_Events.1
-	title = Melva_Mantua_Events.1.T
-	desc = Melva_Mantua_Events.1.D
+	id = FEE_Mantua_Events.1
+	title = FEE_Mantua_Events.1.T
+	desc = FEE_Mantua_Events.1.D
 	picture = ADVISOR_eventPicture
 
 	fire_only_once = yes
@@ -18,7 +18,7 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Mantua_Events.1.OPT1
+		name = FEE_Mantua_Events.1.OPT1
 		ai_chance = {
 			factor = 33
 		}
@@ -36,9 +36,9 @@ country_event = {
 
 #Leon Battista Alberti
 country_event = {
-	id = Melva_Mantua_Events.2
-	title = Melva_Mantua_Events.2.T
-	desc = Melva_Mantua_Events.2.D
+	id = FEE_Mantua_Events.2
+	title = FEE_Mantua_Events.2.T
+	desc = FEE_Mantua_Events.2.D
 	picture = ADVISOR_eventPicture
 
 	fire_only_once = yes
@@ -52,7 +52,7 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Mantua_Events.2.OPT1
+		name = FEE_Mantua_Events.2.OPT1
 
 		define_advisor = {
 			type = natural_scientist
@@ -67,9 +67,9 @@ country_event = {
 
 #San Sebastiano
 country_event = {
-	id = Melva_Mantua_Events.3
-	title = Melva_Mantua_Events.3.T
-	desc = Melva_Mantua_Events.3.D
+	id = FEE_Mantua_Events.3
+	title = FEE_Mantua_Events.3.T
+	desc = FEE_Mantua_Events.3.D
 	picture = ST_PETERS_CHURCH_eventPicture
 
 	fire_only_once = yes
@@ -84,7 +84,7 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Mantua_Events.3.OPT1
+		name = FEE_Mantua_Events.3.OPT1
 		ai_chance = {
 			factor = 50
 		}
@@ -110,7 +110,7 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Mantua_Events.3.OPT2
+		name = FEE_Mantua_Events.3.OPT2
 		ai_chance = {
 			factor = 50
 		}
@@ -121,9 +121,9 @@ country_event = {
 
 #Basilica di Sant'Andrea
 country_event = {
-	id = Melva_Mantua_Events.4
-	title = Melva_Mantua_Events.4.T
-	desc = Melva_Mantua_Events.4.D
+	id = FEE_Mantua_Events.4
+	title = FEE_Mantua_Events.4.T
+	desc = FEE_Mantua_Events.4.D
 	picture = ST_PETERS_CHURCH_eventPicture
 
 	fire_only_once = yes
@@ -138,7 +138,7 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Mantua_Events.4.OPT1
+		name = FEE_Mantua_Events.4.OPT1
 		ai_chance = {
 			factor = 50
 			modifier = {
@@ -159,7 +159,7 @@ country_event = {
 				add_base_tax = 2
 			}
 			add_permanent_province_modifier = {
-				name = melva_mantua_sant_andrea
+				name = fee_mantua_sant_andrea
 				duration = -1
 			}
 		}
@@ -167,7 +167,7 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Mantua_Events.4.OPT2
+		name = FEE_Mantua_Events.4.OPT2
 		ai_chance = {
 			factor = 50
 			modifier = {
@@ -182,9 +182,9 @@ country_event = {
 
 #Scuola di Mantova
 country_event = {
-	id = Melva_Mantua_Events.5
-	title = Melva_Mantua_Events.5.T
-	desc = Melva_Mantua_Events.5.D
+	id = FEE_Mantua_Events.5
+	title = FEE_Mantua_Events.5.T
+	desc = FEE_Mantua_Events.5.D
 	picture = UNIVERSITY_eventPicture
 
 	fire_only_once = yes
@@ -221,7 +221,7 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Mantua_Events.5.OPT1
+		name = FEE_Mantua_Events.5.OPT1
 
 		add_adm_power = 25
 		add_innovativeness_big_effect = yes
@@ -233,9 +233,9 @@ country_event = {
 
 #Castello di San Giorgio
 country_event = {
-	id = Melva_Mantua_Events.6
-	title = Melva_Mantua_Events.6.T
-	desc = Melva_Mantua_Events.6.D
+	id = FEE_Mantua_Events.6
+	title = FEE_Mantua_Events.6.T
+	desc = FEE_Mantua_Events.6.D
 	picture = FORTIFIED_CITY_WITH_CARAVAN_OUTSIDE_eventPicture
 
 	fire_only_once = yes
@@ -261,10 +261,10 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Mantua_Events.6.OPT1
+		name = FEE_Mantua_Events.6.OPT1
 		109 = {
 			add_permanent_province_modifier = {
-				name = melva_mantua_castello_san_giorgio
+				name = fee_mantua_castello_san_giorgio
 				duration = -1
 			}
 		}
@@ -273,9 +273,9 @@ country_event = {
 
 #Reggia dei Gonzaga
 country_event = {
-	id = Melva_Mantua_Events.7
-	title = Melva_Mantua_Events.7.T
-	desc = Melva_Mantua_Events.7.D
+	id = FEE_Mantua_Events.7
+	title = FEE_Mantua_Events.7.T
+	desc = FEE_Mantua_Events.7.D
 	picture = QUEEN_AT_COUNCIL_TABLE_eventPicture
 
 	fire_only_once = yes
@@ -293,7 +293,7 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Mantua_Events.7.OPT1
+		name = FEE_Mantua_Events.7.OPT1
 		ai_chance = {
 			factor = 50
 		}
@@ -301,7 +301,7 @@ country_event = {
 		add_stability_or_adm_power = yes
 		109 = {
 			add_permanent_province_modifier = {
-				name = melva_mantua_palazzo_ducale
+				name = fee_mantua_palazzo_ducale
 				duration = -1
 			}
 		}
@@ -311,9 +311,9 @@ country_event = {
 
 #Celeste Galeria
 country_event = {
-	id = Melva_Mantua_Events.8
-	title = Melva_Mantua_Events.8.T
-	desc = Melva_Mantua_Events.8.D
+	id = FEE_Mantua_Events.8
+	title = FEE_Mantua_Events.8.T
+	desc = FEE_Mantua_Events.8.D
 	picture = BAD_WITH_MONARCH_eventPicture
 
 	fire_only_once = yes
@@ -331,11 +331,11 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Mantua_Events.8.OPT1
+		name = FEE_Mantua_Events.8.OPT1
 
 		109 = {
 			add_permanent_province_modifier = {
-				name = melva_mantua_celeste_galleria
+				name = fee_mantua_celeste_galleria
 				duration = -1
 			}
 		}
@@ -344,9 +344,9 @@ country_event = {
 
 #Condotte Militari
 country_event = {
-	id = Melva_Mantua_Events.9
-	title = Melva_Mantua_Events.9.T
-	desc = Melva_Mantua_Events.9.D
+	id = FEE_Mantua_Events.9
+	title = FEE_Mantua_Events.9.T
+	desc = FEE_Mantua_Events.9.D
 	picture = MILITARISTICALLY_TALENTED_RULER_eventPicture
 
 	fire_only_once = yes
@@ -365,12 +365,12 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Mantua_Events.9.OPT1
+		name = FEE_Mantua_Events.9.OPT1
 
 		add_mil_power = 100
 		add_yearly_manpower = 1
 		add_country_modifier = {
-			name = melva_mantua_condotte_militari
+			name = fee_mantua_condotte_militari
 			duration = 18250
 		}
 	}
@@ -378,9 +378,9 @@ country_event = {
 
 #Comunità ebraica di Mantova
 country_event = {
-	id = Melva_Mantua_Events.10
-	title = Melva_Mantua_Events.10.T
-	desc = Melva_Mantua_Events.10.D
+	id = FEE_Mantua_Events.10
+	title = FEE_Mantua_Events.10.T
+	desc = FEE_Mantua_Events.10.D
 	picture = RELIGIOUS_MIGRANTS_eventPicture
 
 	fire_only_once = yes
@@ -395,11 +395,11 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Mantua_Events.10.OPT1
+		name = FEE_Mantua_Events.10.OPT1
 
 		109 = {
 			add_permanent_province_modifier = {
-				name = melva_mantua_comunita_ebraica
+				name = fee_mantua_comunita_ebraica
 				duration = -1
 			}
 		}
@@ -408,24 +408,24 @@ country_event = {
 
 #Ghetto Mantovano
 country_event = {
-	id = Melva_Mantua_Events.11
-	title = Melva_Mantua_Events.11.T
-	desc = Melva_Mantua_Events.11.D
+	id = FEE_Mantua_Events.11
+	title = FEE_Mantua_Events.11.T
+	desc = FEE_Mantua_Events.11.D
 	picture = CITY_DEVELOPMENT_eventPicture
 
 	fire_only_once = yes
 	trigger = {
 		owns = 109
 		is_year = 1610
-		109 = { has_province_modifier = melva_mantua_comunita_ebraica }
+		109 = { has_province_modifier = fee_mantua_comunita_ebraica }
 	}
 
 	option = {
-		name = Melva_Mantua_Events.11.OPT1
+		name = FEE_Mantua_Events.11.OPT1
 
 		109 = {
 			add_permanent_province_modifier = {
-				name = melva_mantua_ghetto
+				name = fee_mantua_ghetto
 				duration = -1
 			}
 		}
@@ -434,9 +434,9 @@ country_event = {
 
 #
 #country_event = {
-#	id = Melva_Mantua_Events.
-#	title = Melva_Mantua_Events..T
-#	desc = Melva_Mantua_Events..D
+#	id = FEE_Mantua_Events.
+#	title = FEE_Mantua_Events..T
+#	desc = FEE_Mantua_Events..D
 #	picture = FARMING_eventPicture
 #
 #	fire_only_once = yes
@@ -449,7 +449,7 @@ country_event = {
 #	}
 #
 #	option = {
-#		name = Melva_Mantua_Events..OPT1
+#		name = FEE_Mantua_Events..OPT1
 #
 #	}
 #}

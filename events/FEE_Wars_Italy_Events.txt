@@ -1,10 +1,10 @@
-namespace = Melva_Wars_Italy_Events
+namespace = FEE_Wars_Italy_Events
 
 #First Italian War
 country_event = {
-	id = Melva_Wars_Italy_Events.100
-	title = Melva_Wars_Italy_Events.100.T
-	desc = Melva_Wars_Italy_Events.100.D
+	id = FEE_Wars_Italy_Events.100
+	title = FEE_Wars_Italy_Events.100.T
+	desc = FEE_Wars_Italy_Events.100.D
 	picture = BATTLE_eventPicture
 
 	fire_only_once = yes
@@ -43,7 +43,7 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Wars_Italy_Events.100.OPT1
+		name = FEE_Wars_Italy_Events.100.OPT1
 		ai_chance = {
 			factor = 100
 		}
@@ -61,7 +61,7 @@ country_event = {
 				}
 				MLO = {
 					country_event = {
-						id = Melva_Wars_Italy_Events.101
+						id = FEE_Wars_Italy_Events.101
 					}
 				}
 			}
@@ -72,7 +72,7 @@ country_event = {
 				}
 				PAP = {
 					country_event = {
-						id = Melva_Wars_Italy_Events.101
+						id = FEE_Wars_Italy_Events.101
 					}
 				}
 			}
@@ -83,7 +83,7 @@ country_event = {
 				}
 				VEN = {
 					country_event = {
-						id = Melva_Wars_Italy_Events.101
+						id = FEE_Wars_Italy_Events.101
 					}
 				}
 			}
@@ -94,7 +94,7 @@ country_event = {
 				}
 				MAN = {
 					country_event = {
-						id = Melva_Wars_Italy_Events.101
+						id = FEE_Wars_Italy_Events.101
 					}
 				}
 			}
@@ -105,7 +105,7 @@ country_event = {
 				}
 				GEN = {
 					country_event = {
-						id = Melva_Wars_Italy_Events.101
+						id = FEE_Wars_Italy_Events.101
 					}
 				}
 			}
@@ -116,7 +116,7 @@ country_event = {
 				}
 				ARA = {
 					country_event = {
-						id = Melva_Wars_Italy_Events.101
+						id = FEE_Wars_Italy_Events.101
 					}
 				}
 			}
@@ -127,7 +127,7 @@ country_event = {
 				}
 				CAS = {
 					country_event = {
-						id = Melva_Wars_Italy_Events.101
+						id = FEE_Wars_Italy_Events.101
 					}
 				}
 			}
@@ -135,7 +135,7 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Wars_Italy_Events.100.OPT2
+		name = FEE_Wars_Italy_Events.100.OPT2
 		ai_chance = {
 			factor = 0
 		}
@@ -147,15 +147,15 @@ country_event = {
 
 #Chiamata alle Armi
 country_event = {
-	id = Melva_Wars_Italy_Events.101
-	title = Melva_Wars_Italy_Events.101.T
-	desc = Melva_Wars_Italy_Events.101.D
+	id = FEE_Wars_Italy_Events.101
+	title = FEE_Wars_Italy_Events.101.T
+	desc = FEE_Wars_Italy_Events.101.D
 	picture = BATTLE_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = Melva_Wars_Italy_Events.101.OPT1
+		name = FEE_Wars_Italy_Events.101.OPT1
 		ai_chance = {
 			factor = 50
 			modifier = {
@@ -168,7 +168,7 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Wars_Italy_Events.101.OPT2
+		name = FEE_Wars_Italy_Events.101.OPT2
 		ai_chance = {
 			factor = 50
 			modifier = {
@@ -190,9 +190,9 @@ country_event = {
 
 #Second Italian War
 #country_event = {
-#	id = Melva_Wars_Italy_Events.200
-#	title = Melva_Wars_Italy_Events.200.T
-#	desc = Melva_Wars_Italy_Events.200.D
+#	id = FEE_Wars_Italy_Events.200
+#	title = FEE_Wars_Italy_Events.200.T
+#	desc = FEE_Wars_Italy_Events.200.D
 #	picture = BATTLE_eventPicture
 #
 #	fire_only_once = yes
@@ -219,7 +219,7 @@ country_event = {
 #	}
 #
 #	option = {
-#		name = Melva_Wars_Italy_Events.200.OPT1
+#		name = FEE_Wars_Italy_Events.200.OPT1
 #		ai_chance = {
 #			factor = 100
 #		}
@@ -234,7 +234,7 @@ country_event = {
 #	}
 #
 #	option = {
-#		name = Melva_Wars_Italy_Events.200.OPT2
+#		name = FEE_Wars_Italy_Events.200.OPT2
 #		ai_chance = {
 #			factor = 0
 #		}
@@ -248,9 +248,9 @@ country_event = {
 
 #Third Italian War
 #country_event = {
-#	id = Melva_Wars_Italy_Events.300
-#	title = Melva_Wars_Italy_Events.300.T
-#	desc = Melva_Wars_Italy_Events.300.D
+#	id = FEE_Wars_Italy_Events.300
+#	title = FEE_Wars_Italy_Events.300.T
+#	desc = FEE_Wars_Italy_Events.300.D
 #	picture = BATTLE_eventPicture
 #
 #	fire_only_once = yes
@@ -273,13 +273,13 @@ country_event = {
 #	}
 #
 #	option = {
-#		name = Melva_Wars_Italy_Events.300.OPT1
+#		name = FEE_Wars_Italy_Events.300.OPT1
 #		ai_chance = {
 #			factor = 1
 #		}
 #
 #		add_country_modifier = {
-#			name = melva_italian_wars_cavalry
+#			name = fee_italian_wars_cavalry
 #			duration = 3650
 #		}
 #	}
@@ -287,21 +287,21 @@ country_event = {
 
 #Fourth Italian War
 #country_event = {
-#	id = Melva_Wars_Italy_Events.400
-#	title = Melva_Wars_Italy_Events.400.T
-#	desc = Melva_Wars_Italy_Events.400.D
+#	id = FEE_Wars_Italy_Events.400
+#	title = FEE_Wars_Italy_Events.400.T
+#	desc = FEE_Wars_Italy_Events.400.D
 #	picture = BATTLE_eventPicture
 #
 #	is_triggered_only = yes
 #
 #	option = {
-#		name = Melva_Wars_Italy_Events.400.OPT1
+#		name = FEE_Wars_Italy_Events.400.OPT1
 #		ai_chance = {
 #			factor = 1
 #		}
 #
 #		add_country_modifier = {
-#			name = melva_italian_wars_artillery
+#			name = fee_italian_wars_artillery
 #			duration = 3650
 #		}
 #	}
@@ -309,21 +309,21 @@ country_event = {
 
 #Fifth Italian War
 #country_event = {
-#	id = Melva_Wars_Italy_Events.500
-#	title = Melva_Wars_Italy_Events.500.T
-#	desc = Melva_Wars_Italy_Events.500.D
+#	id = FEE_Wars_Italy_Events.500
+#	title = FEE_Wars_Italy_Events.500.T
+#	desc = FEE_Wars_Italy_Events.500.D
 #	picture = BATTLE_eventPicture
 #
 #	is_triggered_only = yes
 #
 #	option = {
-#		name = Melva_Wars_Italy_Events.500.OPT1
+#		name = FEE_Wars_Italy_Events.500.OPT1
 #		ai_chance = {
 #			factor = 1
 #		}
 #
 #		add_country_modifier = {
-#			name = melva_italian_wars_forts
+#			name = fee_italian_wars_forts
 #			duration = 3650
 #		}
 #	}
@@ -332,9 +332,9 @@ country_event = {
 
 #
 #country_event = {
-#	id = Melva_Wars_Italy_Events.
-#	title = Melva_Wars_Italy_Events..T
-#	desc = Melva_Wars_Italy_Events..D
+#	id = FEE_Wars_Italy_Events.
+#	title = FEE_Wars_Italy_Events..T
+#	desc = FEE_Wars_Italy_Events..D
 #	picture = BATTLE_eventPicture
 #
 #	fire_only_once = yes
@@ -348,7 +348,7 @@ country_event = {
 #	}
 #
 #	option = {
-#		name = Melva_Wars_Italy_Events..OPT1
+#		name = FEE_Wars_Italy_Events..OPT1
 #		ai_chance = {
 #			factor = 50
 #		}
@@ -356,7 +356,7 @@ country_event = {
 #	}
 #
 #	option = {
-#		name = Melva_Wars_Italy_Events..OPT2
+#		name = FEE_Wars_Italy_Events..OPT2
 #		ai_chance = {
 #			factor = 50
 #		}

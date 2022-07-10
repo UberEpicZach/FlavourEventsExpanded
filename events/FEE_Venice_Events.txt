@@ -1,10 +1,10 @@
-namespace = Melva_Venice_Events
+namespace = FEE_Venice_Events
 
 #The Venetian Fleet
 country_event = {
-	id = Melva_Venice_Events.1
-	title = Melva_Venice_Events.1.T
-	desc = Melva_Venice_Events.1.D
+	id = FEE_Venice_Events.1
+	title = FEE_Venice_Events.1.T
+	desc = FEE_Venice_Events.1.D
 	picture = NAVAL_MILITARY_eventPicture
 
 	fire_only_once = yes
@@ -30,7 +30,7 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Venice_Events.1.OPT1
+		name = FEE_Venice_Events.1.OPT1
 		ai_chance = {
 			factor = 33
 		}
@@ -43,7 +43,7 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Venice_Events.1.OPT2
+		name = FEE_Venice_Events.1.OPT2
 		ai_chance = {
 			factor = 33
 		}
@@ -56,7 +56,7 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Venice_Events.1.OPT3
+		name = FEE_Venice_Events.1.OPT3
 		ai_chance = {
 			factor = 33
 		}
@@ -67,9 +67,9 @@ country_event = {
 
 #Magistrato alla Milizia da Mar
 country_event = {
-	id = Melva_Venice_Events.2
-	title = Melva_Venice_Events.2.T
-	desc = Melva_Venice_Events.2.D
+	id = FEE_Venice_Events.2
+	title = FEE_Venice_Events.2.T
+	desc = FEE_Venice_Events.2.D
 	picture = CITY_DEVELOPMENT_eventPicture
 
 	fire_only_once = yes
@@ -89,7 +89,7 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Venice_Events.2.OPT1
+		name = FEE_Venice_Events.2.OPT1
 
 		112 = {
 			add_permanent_province_modifier = {
@@ -102,9 +102,9 @@ country_event = {
 
 #Naval Reforms #1 
 country_event = {
-	id = Melva_Venice_Events.3
-	title = Melva_Venice_Events.3.T
-	desc = Melva_Venice_Events.3.D
+	id = FEE_Venice_Events.3
+	title = FEE_Venice_Events.3.T
+	desc = FEE_Venice_Events.3.D
 	picture = SHIP_SAILING_eventPicture
 
 	fire_only_once = yes
@@ -122,7 +122,7 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Venice_Events.3.OPT1
+		name = FEE_Venice_Events.3.OPT1
 		ai_chance = {
 			factor = 50
 		}
@@ -167,9 +167,9 @@ country_event = {
 
 #Governator de' Condannati
 country_event = {
-	id = Melva_Venice_Events.4
-	title = Melva_Venice_Events.4.T
-	desc = Melva_Venice_Events.4.D
+	id = FEE_Venice_Events.4
+	title = FEE_Venice_Events.4.T
+	desc = FEE_Venice_Events.4.D
 	picture = NAVAL_MILITARY_eventPicture
 
 	fire_only_once = yes
@@ -190,7 +190,7 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Venice_Events.4.OPT1
+		name = FEE_Venice_Events.4.OPT1
 
 		add_country_modifier = {
 			name = ven_commander_convicts
@@ -201,9 +201,9 @@ country_event = {
 
 #Porta di Terra
 country_event = {
-	id = Melva_Venice_Events.5
-	title = Melva_Venice_Events.5.T
-	desc = Melva_Venice_Events.5.D
+	id = FEE_Venice_Events.5
+	title = FEE_Venice_Events.5.T
+	desc = FEE_Venice_Events.5.D
 	picture = CITY_DEVELOPMENT_eventPicture
 
 	fire_only_once = yes
@@ -229,7 +229,7 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Venice_Events.5.OPT1
+		name = FEE_Venice_Events.5.OPT1
 
 		add_dip_power = 25
 		if = {
@@ -253,9 +253,9 @@ country_event = {
 
 #Arsenal Expansion 1473
 country_event = {
-	id = Melva_Venice_Events.6
-	title = Melva_Venice_Events.6.T
-	desc = Melva_Venice_Events.6.D
+	id = FEE_Venice_Events.6
+	title = FEE_Venice_Events.6.T
+	desc = FEE_Venice_Events.6.D
 	picture = SHIP_SAILING_eventPicture
 
 	fire_only_once = yes
@@ -302,7 +302,7 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Venice_Events.6.OPT1
+		name = FEE_Venice_Events.6.OPT1
 
 		112 = {
 			add_permanent_province_modifier = {
@@ -315,9 +315,9 @@ country_event = {
 
 #Espansione dell'Arsenale del 1535
 country_event = {
-	id = Melva_Venice_Events.7
-	title = Melva_Venice_Events.7.T
-	desc = Melva_Venice_Events.7.D
+	id = FEE_Venice_Events.7
+	title = FEE_Venice_Events.7.T
+	desc = FEE_Venice_Events.7.D
 	picture = SHIP_SAILING_eventPicture
 
 	fire_only_once = yes
@@ -360,7 +360,7 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Venice_Events.7.OPT1
+		name = FEE_Venice_Events.7.OPT1
 		ai_chance = {
 			factor = 50
 		}
@@ -377,9 +377,9 @@ country_event = {
 
 #Espansione finale dell'Arsenale
 country_event = {
-	id = Melva_Venice_Events.8
-	title = Melva_Venice_Events.8.T
-	desc = Melva_Venice_Events.8.D
+	id = FEE_Venice_Events.8
+	title = FEE_Venice_Events.8.T
+	desc = FEE_Venice_Events.8.D
 	picture = SHIP_SAILING_eventPicture
 
 	fire_only_once = yes
@@ -416,7 +416,7 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Venice_Events.8.OPT1
+		name = FEE_Venice_Events.8.OPT1
 
 		112 = {
 			remove_province_modifier = ven_arsenal_expansion
@@ -431,9 +431,9 @@ country_event = {
 
 #Fanti di Mar
 country_event = {
-	id = Melva_Venice_Events.9
-	title = Melva_Venice_Events.9.T
-	desc = Melva_Venice_Events.9.D
+	id = FEE_Venice_Events.9
+	title = FEE_Venice_Events.9.T
+	desc = FEE_Venice_Events.9.D
 	picture = MILITARY_CAMP_eventPicture
 
 	fire_only_once = yes
@@ -457,7 +457,7 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Venice_Events.9.OPT1
+		name = FEE_Venice_Events.9.OPT1
 		
 		add_mil_power = -100
 		add_years_of_income = -0.5
@@ -482,7 +482,7 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Venice_Events.9.OPT2
+		name = FEE_Venice_Events.9.OPT2
 		
 		add_prestige = -5
 	}
@@ -490,9 +490,9 @@ country_event = {
 
 #Trade Expansion in Costantinople
 country_event = {
-	id = Melva_Venice_Events.10
-	title = Melva_Venice_Events.10.T
-	desc = Melva_Venice_Events.10.D
+	id = FEE_Venice_Events.10
+	title = FEE_Venice_Events.10.T
+	desc = FEE_Venice_Events.10.D
 	picture = TRADEGOODS_eventPicture
 
 	fire_only_once = yes
@@ -513,20 +513,20 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Venice_Events.10.OPT1
+		name = FEE_Venice_Events.10.OPT1
 		
 		add_legitimacy_equivalent = { amount = 10 republican_tradition = 5 }
 		add_dip_power = 25
 		TUR = {
 			country_event = {
-				id = Melva_Venice_Events.11
+				id = FEE_Venice_Events.11
 				days = 30
 			}
 		}
 	}
 
 	option = {
-		name = Melva_Venice_Events.10.OPT2
+		name = FEE_Venice_Events.10.OPT2
 		
 		add_mil_power = 150
 		151 = {
@@ -543,9 +543,9 @@ country_event = {
 
 #Venetian Trade Deal
 country_event = {
-	id = Melva_Venice_Events.11
-	title = Melva_Venice_Events.11.T
-	desc = Melva_Venice_Events.11.D
+	id = FEE_Venice_Events.11
+	title = FEE_Venice_Events.11.T
+	desc = FEE_Venice_Events.11.D
 	picture = DIPLOMACY_eventPicture
 
 	is_triggered_only = yes
@@ -556,7 +556,7 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Venice_Events.11.OPT1
+		name = FEE_Venice_Events.11.OPT1
 		ai_chance = {
 			factor = 50
 			modifier = {
@@ -582,7 +582,7 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Venice_Events.11.OPT2
+		name = FEE_Venice_Events.11.OPT2
 		ai_chance = {
 			factor = 50
 			modifier = {
@@ -602,9 +602,9 @@ country_event = {
 
 #The arrival of Michele Attendolo 
 country_event = {
-	id = Melva_Venice_Events.12
-	title = Melva_Venice_Events.12.T
-	desc = Melva_Venice_Events.12.D
+	id = FEE_Venice_Events.12
+	title = FEE_Venice_Events.12.T
+	desc = FEE_Venice_Events.12.D
 	picture = GENERALS_DISCUSSING_eventPicture
 
 	fire_only_once = yes
@@ -620,7 +620,7 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Venice_Events.12.OPT1
+		name = FEE_Venice_Events.12.OPT1
 
 		add_mil_power = 25
 		define_general = {
@@ -635,9 +635,9 @@ country_event = {
 
 #Jews of 1509
 country_event = {
-	id = Melva_Venice_Events.13
-	title = Melva_Venice_Events.13.T
-	desc = Melva_Venice_Events.13.D
+	id = FEE_Venice_Events.13
+	title = FEE_Venice_Events.13.T
+	desc = FEE_Venice_Events.13.D
 	picture = RELIGIOUS_MIGRANTS_eventPicture
 
 	fire_only_once = yes
@@ -651,7 +651,7 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Venice_Events.13.OPT1
+		name = FEE_Venice_Events.13.OPT1
 		ai_chance = {
 			factor = 50
 		}
@@ -668,7 +668,7 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Venice_Events.13.OPT2
+		name = FEE_Venice_Events.13.OPT2
 
 		add_papal_influence = 50
 		add_stability_or_adm_power = yes
@@ -677,9 +677,9 @@ country_event = {
 
 #Ghetto Novo
 country_event = {
-	id = Melva_Venice_Events.14
-	title = Melva_Venice_Events.14.T
-	desc = Melva_Venice_Events.14.D
+	id = FEE_Venice_Events.14
+	title = FEE_Venice_Events.14.T
+	desc = FEE_Venice_Events.14.D
 	picture = RELIGIOUS_TURMOIL_eventPicture
 
 	fire_only_once = yes
@@ -694,7 +694,7 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Venice_Events.14.OPT1
+		name = FEE_Venice_Events.14.OPT1
 		ai_chance = {
 			factor = 50
 		}
@@ -723,7 +723,7 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Venice_Events.14.OPT2
+		name = FEE_Venice_Events.14.OPT2
 		ai_chance = {
 			factor = 50
 
@@ -737,9 +737,9 @@ country_event = {
 
 #The Levantini Family
 country_event = {
-	id = Melva_Venice_Events.15
-	title = Melva_Venice_Events.15.T
-	desc = Melva_Venice_Events.15.D
+	id = FEE_Venice_Events.15
+	title = FEE_Venice_Events.15.T
+	desc = FEE_Venice_Events.15.D
 	picture = CITY_DEVELOPMENT_eventPicture
 
 	fire_only_once = yes
@@ -754,7 +754,7 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Venice_Events.15.OPT1
+		name = FEE_Venice_Events.15.OPT1
 		ai_chance = {
 			factor = 1
 		}
@@ -767,9 +767,9 @@ country_event = {
 
 #
 #country_event = {
-#	id = Melva_Venice_Events.
-#	title = Melva_Venice_Events..T
-#	desc = Melva_Venice_Events..D
+#	id = FEE_Venice_Events.
+#	title = FEE_Venice_Events..T
+#	desc = FEE_Venice_Events..D
 #	picture = FARMING_eventPicture
 #
 #	fire_only_once = yes
@@ -782,7 +782,7 @@ country_event = {
 #	}
 #
 #	option = {
-#		name = Melva_Venice_Events..OPT1
+#		name = FEE_Venice_Events..OPT1
 #
 #	}
 #}

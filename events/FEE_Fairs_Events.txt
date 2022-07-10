@@ -1,66 +1,66 @@
-namespace = Melva_Fairs_Events
+namespace = FEE_Fairs_Events
 
 #Event to talk about the Trading Fairs
 country_event = {
-	id = Melva_Fairs_Events.1
-	title = Melva_Fairs_Events.1.T
-	desc = Melva_Fairs_Events.1.D
+	id = FEE_Fairs_Events.1
+	title = FEE_Fairs_Events.1.T
+	desc = FEE_Fairs_Events.1.D
 	picture = CARAVAN_EVENT_Picture
 
 	fire_only_once = yes
 	major = yes
 	trigger = {
 		ai = no
-		NOT = { has_global_flag = melva_trading_fairs_enabled }
+		NOT = { has_global_flag = fee_trading_fairs_enabled }
 		NOT = { is_institution_enabled = global_trade }
 		NOT = { is_year = 1446 }
 	}
 
 	option = {
-		name = Melva_Fairs_Events.1.OPT1
+		name = FEE_Fairs_Events.1.OPT1
 
 		custom_tooltip = MELVA_FAIRS_STARTING_TT
-		set_global_flag = melva_trading_fairs_enabled
+		set_global_flag = fee_trading_fairs_enabled
 		hidden_effect = {
 			every_province = {
 				limit = { province_has_center_of_trade_of_level = 1 }
-				set_province_flag = melva_trading_fair_eligible
+				set_province_flag = fee_trading_fair_eligible
 			}
 		}
 	}
 
 	option = {
-		name = Melva_Fairs_Events.1.OPT2
+		name = FEE_Fairs_Events.1.OPT2
 
 		custom_tooltip = MELVA_FAIRS_DISABLE_TT
-		clr_global_flag = melva_trading_fairs_enabled
+		clr_global_flag = fee_trading_fairs_enabled
 	}
 }
 
 #Hidden Event to Select the Trading Fair
 country_event = {
-	id = Melva_Fairs_Events.2
-	title = Melva_Fairs_Events.2.T
-	desc = Melva_Fairs_Events.2.D
+	id = FEE_Fairs_Events.2
+	title = FEE_Fairs_Events.2.T
+	desc = FEE_Fairs_Events.2.D
 	picture = CARAVAN_EVENT_Picture
 
 	hidden = yes
 	trigger = {
 		NOT = { is_institution_enabled = global_trade }
-		has_global_flag = melva_trading_fairs_enabled
+		has_global_flag = fee_trading_fairs_enabled
 		OR = {
 			had_country_flag = {
-				flag = melva_trading_fair_started
+				flag = fee_trading_fair_started
 				days = 3650
 			}
-			NOT = { has_country_flag = melva_trading_fair_started }
+			NOT = { has_country_flag = fee_trading_fair_started }
 		}
 		any_owned_province = {
 			province_has_center_of_trade_of_level = 1
 			OR = {
-				NOT = { has_province_flag = melva_province_trading_fair_started }
+				NOT = { has_province_flag = fee_province_trading_fair_started }
 				had_province_flag = {
-					flag = melva_province_trading_fair_started
+					flag = fee_province_trading_fair_started
 					days = 5475
 				}
 			}
@@ -77,39 +77,39 @@ country_event = {
 				limit = {
 					province_has_center_of_trade_of_level = 1
 					OR = {
-						NOT = { has_province_flag = melva_province_trading_fair_started }
+						NOT = { has_province_flag = fee_province_trading_fair_started }
 						had_province_flag = {
-							flag = melva_province_trading_fair_started
+							flag = fee_province_trading_fair_started
 							days = 5475
 						}
 					}
 				}
-				set_province_flag = melva_province_trading_fair_started
+				set_province_flag = fee_province_trading_fair_started
 				province_event = {
-					id = Melva_Fairs_Events.3
+					id = FEE_Fairs_Events.3
 					days = 30
 				}
 			}
-			clr_country_flag = melva_trading_fair_started
+			clr_country_flag = fee_trading_fair_started
 		}
 	}
 
 	option = {
-		name = Melva_Fairs_Events.2.OPT1
+		name = FEE_Fairs_Events.2.OPT1
 	}
 	
 	after = {
 		hidden_effect = {
-			set_country_flag = melva_trading_fair_started
+			set_country_flag = fee_trading_fair_started
 		}
 	}
 }
 
 #Trading Fair of Province Name
 province_event = {
-	id = Melva_Fairs_Events.3
-	title = Melva_Fairs_Events.3.T
-	desc = Melva_Fairs_Events.3.D
+	id = FEE_Fairs_Events.3
+	title = FEE_Fairs_Events.3.T
+	desc = FEE_Fairs_Events.3.D
 	picture = CARAVAN_EVENT_Picture
 
 	goto = ROOT
@@ -118,43 +118,43 @@ province_event = {
 
 	immediate = {
 		hidden_effect = {
-			clr_province_flag = melva_province_trading_fair_started
+			clr_province_flag = fee_province_trading_fair_started
 		}
 	}
 
 	option = {
-		name = Melva_Fairs_Events.3.OPT1
+		name = FEE_Fairs_Events.3.OPT1
 		ai_chance = {
 			factor = 50
 		}
 		
 		custom_tooltip = MELVA_FAIRS_PROVINCE_TT
 		hidden_effect = {
-			set_province_flag = melva_province_trading_fair_started
+			set_province_flag = fee_province_trading_fair_started
 			set_variable = {
 				which = melvaTradingFairLevel
 				value = 0
 			}
 			if = {
 				limit = {
-					has_province_flag = melva_trading_fair_eligible
-					NOT = { has_province_flag = melva_first_trading_fair }
+					has_province_flag = fee_trading_fair_eligible
+					NOT = { has_province_flag = fee_first_trading_fair }
 					owner = {
-						NOT = { has_country_flag = melva_first_trading_fair_country }
+						NOT = { has_country_flag = fee_first_trading_fair_country }
 					}
 				}
-				set_province_flag = melva_first_trading_fair
+				set_province_flag = fee_first_trading_fair
 				owner = {
-					set_country_flag = melva_first_trading_fair_country
+					set_country_flag = fee_first_trading_fair_country
 				}
 			}
 		}
 		add_province_modifier = {
-			name = melva_trading_fair_province_modifier
+			name = fee_trading_fair_province_modifier
 			duration = 1825
 		}
 		province_event = {
-			id = Melva_Fairs_Events.7
+			id = FEE_Fairs_Events.7
 			days = 1825
 		}
 	}
@@ -162,26 +162,26 @@ province_event = {
 
 #Explaination Progress
 country_event = {
-	id = Melva_Fairs_Events.4
-	title = Melva_Fairs_Events.4.T
-	desc = Melva_Fairs_Events.4.D
+	id = FEE_Fairs_Events.4
+	title = FEE_Fairs_Events.4.T
+	desc = FEE_Fairs_Events.4.D
 	picture = GOOD_WITH_MONARCH_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = Melva_Fairs_Events.4.OPT1
+		name = FEE_Fairs_Events.4.OPT1
 		ai_chance = {
 			factor = 50
 		}
 		
 		country_event = {
-			id = Melva_Fairs_Events.5
+			id = FEE_Fairs_Events.5
 		}
 	}
 
 	option = {
-		name = Melva_Fairs_Events.4.OPT2
+		name = FEE_Fairs_Events.4.OPT2
 		ai_chance = {
 			factor = 50
 		}
@@ -191,26 +191,26 @@ country_event = {
 
 #Explaination Result
 country_event = {
-	id = Melva_Fairs_Events.5
-	title = Melva_Fairs_Events.5.T
-	desc = Melva_Fairs_Events.5.D
+	id = FEE_Fairs_Events.5
+	title = FEE_Fairs_Events.5.T
+	desc = FEE_Fairs_Events.5.D
 	picture = GOOD_WITH_MONARCH_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = Melva_Fairs_Events.5.OPT1
+		name = FEE_Fairs_Events.5.OPT1
 		ai_chance = {
 			factor = 50
 		}
 		
 		country_event = {
-			id = Melva_Fairs_Events.4
+			id = FEE_Fairs_Events.4
 		}
 	}
 
 	option = {
-		name = Melva_Fairs_Events.5.OPT2
+		name = FEE_Fairs_Events.5.OPT2
 		ai_chance = {
 			factor = 50
 		}
@@ -220,16 +220,16 @@ country_event = {
 
 #Original Trading Fairs
 country_event = {
-	id = Melva_Fairs_Events.6
-	title = Melva_Fairs_Events.6.T
-	desc = Melva_Fairs_Events.6.D
+	id = FEE_Fairs_Events.6
+	title = FEE_Fairs_Events.6.T
+	desc = FEE_Fairs_Events.6.D
 	picture = CARAVAN_EVENT_Picture
 
 	fire_only_once = yes
 
 	trigger = {
 		is_institution_enabled = global_trade
-		has_global_flag = melva_trading_fairs_enabled
+		has_global_flag = fee_trading_fairs_enabled
 	}
 
 	major = yes
@@ -239,24 +239,24 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Fairs_Events.6.OPT1
+		name = FEE_Fairs_Events.6.OPT1
 
 		custom_tooltip = MELVA_ORIGIN_TRADING_FAIRS_TT
 		tooltip = {
 			add_permanent_province_modifier = {
-				name = melva_trading_fair_origin
+				name = fee_trading_fair_origin
 				duration = -1
 			}
 		}
 		hidden_effect = {
 			every_province = {
 				limit = {
-					has_province_flag = melva_first_trading_fair
-					owner = { has_country_flag = melva_first_trading_fair_country }
-					NOT = { has_province_modifier = melva_trading_fair_origin }
+					has_province_flag = fee_first_trading_fair
+					owner = { has_country_flag = fee_first_trading_fair_country }
+					NOT = { has_province_modifier = fee_trading_fair_origin }
 				}
 				add_permanent_province_modifier = {
-					name = melva_trading_fair_origin
+					name = fee_trading_fair_origin
 					duration = -1
 				}
 			}
@@ -266,9 +266,9 @@ country_event = {
 
 #Fair Ended in ProvinceId
 province_event = {
-	id = Melva_Fairs_Events.7
-	title = Melva_Fairs_Events.7.T
-	desc = Melva_Fairs_Events.7.D
+	id = FEE_Fairs_Events.7
+	title = FEE_Fairs_Events.7.T
+	desc = FEE_Fairs_Events.7.D
 	picture = CARAVAN_EVENT_Picture
 
 	is_triggered_only = yes
@@ -279,7 +279,7 @@ province_event = {
 		hidden_effect = {
 			if = {
 				limit = {
-					NOT = { has_province_modifier = melva_trading_fair_province_modifier }
+					NOT = { has_province_modifier = fee_trading_fair_province_modifier }
 				}
 				set_variable = {
 					which = melvaTradingFairLevel
@@ -470,7 +470,7 @@ province_event = {
 	}
 
 	option = {
-		name = Melva_Fairs_Events.7.OPT1
+		name = FEE_Fairs_Events.7.OPT1
 		ai_chance = {
 			factor = 50
 		}
@@ -650,27 +650,27 @@ province_event = {
 
 	after = {
 		hidden_effect = {
-			clr_province_flag = melva_province_trading_fair_ruler_goes_to_fair
-			clr_province_flag = melva_province_trading_fair_ruler_does_not_go_to_fair
-			clr_province_flag = melva_province_trading_fair_famous_artist_accepted
-			clr_province_flag = melva_province_trading_fair_famous_artist_refused
+			clr_province_flag = fee_province_trading_fair_ruler_goes_to_fair
+			clr_province_flag = fee_province_trading_fair_ruler_does_not_go_to_fair
+			clr_province_flag = fee_province_trading_fair_famous_artist_accepted
+			clr_province_flag = fee_province_trading_fair_famous_artist_refused
 
-			clr_province_flag = melva_province_trading_fair_nomad_accepted
-			clr_province_flag = melva_province_trading_fair_nomad_repulsed
-			clr_province_flag = melva_province_trading_fair_nomad_fire
-			clr_province_flag = melva_province_trading_fair_furtune_teller
-			clr_province_flag = melva_province_trading_fair_dealed_nomad
+			clr_province_flag = fee_province_trading_fair_nomad_accepted
+			clr_province_flag = fee_province_trading_fair_nomad_repulsed
+			clr_province_flag = fee_province_trading_fair_nomad_fire
+			clr_province_flag = fee_province_trading_fair_furtune_teller
+			clr_province_flag = fee_province_trading_fair_dealed_nomad
 
-			clr_province_flag = melva_trading_fair_banquet_preparation
-			clr_province_flag = melva_trading_fair_banquet_personal
+			clr_province_flag = fee_trading_fair_banquet_preparation
+			clr_province_flag = fee_trading_fair_banquet_personal
 			owner = {
-				clr_country_flag = melva_trading_fair_banquet_invitation
+				clr_country_flag = fee_trading_fair_banquet_invitation
 			}
 			if = {
 				limit = {
-					has_province_modifier = melva_trading_fair_province_modifier
+					has_province_modifier = fee_trading_fair_province_modifier
 				}
-				remove_province_modifier = melva_trading_fair_province_modifier
+				remove_province_modifier = fee_trading_fair_province_modifier
 			}
 
 			set_variable = {
@@ -683,15 +683,15 @@ province_event = {
 
 #Ruler goes to the trading fair
 province_event = {
-	id = Melva_Fairs_Events.3000
-	title = Melva_Fairs_Events.3000.T
-	desc = Melva_Fairs_Events.3000.D
+	id = FEE_Fairs_Events.3000
+	title = FEE_Fairs_Events.3000.T
+	desc = FEE_Fairs_Events.3000.D
 	picture = CARAVAN_EVENT_Picture
 	
 	trigger = {
-		has_province_modifier = melva_trading_fair_province_modifier
-		NOT = { has_province_flag = melva_province_trading_fair_ruler_goes_to_fair }
-		NOT = { has_province_flag = melva_province_trading_fair_ruler_does_not_go_to_fair }
+		has_province_modifier = fee_trading_fair_province_modifier
+		NOT = { has_province_flag = fee_province_trading_fair_ruler_goes_to_fair }
+		NOT = { has_province_flag = fee_province_trading_fair_ruler_does_not_go_to_fair }
 	}
 
 	goto = ROOT
@@ -701,7 +701,7 @@ province_event = {
 	}
 
 	option = {
-		name = Melva_Fairs_Events.3000.OPT1
+		name = FEE_Fairs_Events.3000.OPT1
 		ai_chance = {
 			factor = 50
 		}
@@ -709,7 +709,7 @@ province_event = {
 		owner = {
 			add_prestige = 5
 		}
-		set_province_flag = melva_province_trading_fair_ruler_goes_to_fair
+		set_province_flag = fee_province_trading_fair_ruler_goes_to_fair
 		change_variable = {
 			which = melvaTradingFairLevel
 			value = 5
@@ -717,7 +717,7 @@ province_event = {
 	}
 
 	option = {
-		name = Melva_Fairs_Events.3000.OPT2
+		name = FEE_Fairs_Events.3000.OPT2
 		ai_chance = {
 			factor = 50
 		}
@@ -727,7 +727,7 @@ province_event = {
 			add_dip_power = 25
 			add_mil_power = 25
 		}
-		set_province_flag = melva_province_trading_fair_ruler_does_not_go_to_fair
+		set_province_flag = fee_province_trading_fair_ruler_does_not_go_to_fair
 		change_variable = {
 			which = melvaTradingFairLevel
 			value = -5
@@ -737,20 +737,20 @@ province_event = {
 
 #Nomad Caravan
 province_event = {
-	id = Melva_Fairs_Events.5000
-	title = Melva_Fairs_Events.5000.T
-	desc = Melva_Fairs_Events.5000.D
+	id = FEE_Fairs_Events.5000
+	title = FEE_Fairs_Events.5000.T
+	desc = FEE_Fairs_Events.5000.D
 	picture = CARAVAN_EVENT_Picture
 
 	trigger = {
-		has_province_modifier = melva_trading_fair_province_modifier
-		has_province_flag = melva_province_trading_fair_started
+		has_province_modifier = fee_trading_fair_province_modifier
+		has_province_flag = fee_province_trading_fair_started
 		had_province_flag = {
-			flag = melva_province_trading_fair_started
+			flag = fee_province_trading_fair_started
 			days = 1095
 		}
-		NOT = { has_province_flag = melva_province_trading_fair_nomad_accepted }
-		NOT = { has_province_flag = melva_province_trading_fair_nomad_repulsed }
+		NOT = { has_province_flag = fee_province_trading_fair_nomad_accepted }
+		NOT = { has_province_flag = fee_province_trading_fair_nomad_repulsed }
 	}
 
 	goto = ROOT
@@ -760,13 +760,13 @@ province_event = {
 	}
 
 	option = {
-		name = Melva_Fairs_Events.5000.OPT1
+		name = FEE_Fairs_Events.5000.OPT1
 		ai_chance = {
 			factor = 50
 		}
 
 		owner = { add_dip_power = 25 }
-		set_province_flag = melva_province_trading_fair_nomad_accepted
+		set_province_flag = fee_province_trading_fair_nomad_accepted
 		change_variable = {
 			which = melvaTradingFairLevel
 			value = 5
@@ -774,13 +774,13 @@ province_event = {
 	}
 
 	option = {
-		name = Melva_Fairs_Events.5000.OPT2
+		name = FEE_Fairs_Events.5000.OPT2
 		ai_chance = {
 			factor = 50
 		}
 
 		owner = { add_mil_power = 25 }
-		set_province_flag = melva_province_trading_fair_nomad_repulsed
+		set_province_flag = fee_province_trading_fair_nomad_repulsed
 		change_variable = {
 			which = melvaTradingFairLevel
 			value = -5
@@ -790,19 +790,19 @@ province_event = {
 
 #Fire Eater
 province_event = {
-	id = Melva_Fairs_Events.5001
-	title = Melva_Fairs_Events.5001.T
-	desc = Melva_Fairs_Events.5001.D
+	id = FEE_Fairs_Events.5001
+	title = FEE_Fairs_Events.5001.T
+	desc = FEE_Fairs_Events.5001.D
 	picture = CARAVAN_EVENT_Picture
 
 	trigger = {
-		has_province_modifier = melva_trading_fair_province_modifier
+		has_province_modifier = fee_trading_fair_province_modifier
 		had_province_flag = {
-			flag = melva_province_trading_fair_started
+			flag = fee_province_trading_fair_started
 			days = 90
 		}
-		has_province_flag = melva_province_trading_fair_nomad_accepted
-		NOT = { has_province_flag = melva_province_trading_fair_nomad_fire }
+		has_province_flag = fee_province_trading_fair_nomad_accepted
+		NOT = { has_province_flag = fee_province_trading_fair_nomad_fire }
 	}
 
 	goto = ROOT
@@ -812,11 +812,11 @@ province_event = {
 	}
 
 	immediate = {
-		hidden_effect = { set_province_flag = melva_province_trading_fair_nomad_fire }
+		hidden_effect = { set_province_flag = fee_province_trading_fair_nomad_fire }
 	}
 
 	option = {
-		name = Melva_Fairs_Events.5001.OPT1
+		name = FEE_Fairs_Events.5001.OPT1
 		ai_chance = {
 			factor = 50
 		}
@@ -833,7 +833,7 @@ province_event = {
 	}
 
 	option = {
-		name = Melva_Fairs_Events.5001.OPT2
+		name = FEE_Fairs_Events.5001.OPT2
 		ai_chance = {
 			factor = 50
 		}
@@ -848,25 +848,25 @@ province_event = {
 
 #Furtune Teller
 province_event = {
-	id = Melva_Fairs_Events.5002
-	title = Melva_Fairs_Events.5002.T
-	desc = Melva_Fairs_Events.5002.D
+	id = FEE_Fairs_Events.5002
+	title = FEE_Fairs_Events.5002.T
+	desc = FEE_Fairs_Events.5002.D
 	picture = CARAVAN_EVENT_Picture
 
 	trigger = {
-		has_province_modifier = melva_trading_fair_province_modifier
-		has_province_flag = melva_province_trading_fair_nomad_accepted
-		has_province_flag = melva_province_trading_fair_ruler_goes_to_fair
-		NOT = { has_province_flag = melva_province_trading_fair_furtune_teller }
+		has_province_modifier = fee_trading_fair_province_modifier
+		has_province_flag = fee_province_trading_fair_nomad_accepted
+		has_province_flag = fee_province_trading_fair_ruler_goes_to_fair
+		NOT = { has_province_flag = fee_province_trading_fair_furtune_teller }
 		owner = {
-			NOT = { has_ruler_modifier = melva_almighty_protection }
-			NOT = { has_ruler_modifier = melva_solemn_hymn }
-			NOT = { has_ruler_modifier = melva_angelic_blessing }
-			NOT = { has_ruler_modifier = melva_kiss_luck }
-			NOT = { has_ruler_modifier = melva_ruinous_powers }
-			NOT = { has_ruler_modifier = melva_demonic_embrace }
-			NOT = { has_ruler_modifier = melva_ancient_curse }
-			NOT = { has_ruler_modifier = melva_witch_eye }
+			NOT = { has_ruler_modifier = fee_almighty_protection }
+			NOT = { has_ruler_modifier = fee_solemn_hymn }
+			NOT = { has_ruler_modifier = fee_angelic_blessing }
+			NOT = { has_ruler_modifier = fee_kiss_luck }
+			NOT = { has_ruler_modifier = fee_ruinous_powers }
+			NOT = { has_ruler_modifier = fee_demonic_embrace }
+			NOT = { has_ruler_modifier = fee_ancient_curse }
+			NOT = { has_ruler_modifier = fee_witch_eye }
 		}
 	}
 
@@ -877,11 +877,11 @@ province_event = {
 	}
 
 	immediate = {
-		hidden_effect = { set_province_flag = melva_province_trading_fair_furtune_teller }
+		hidden_effect = { set_province_flag = fee_province_trading_fair_furtune_teller }
 	}
 
 	option = {
-		name = Melva_Fairs_Events.5002.OPT1
+		name = FEE_Fairs_Events.5002.OPT1
 		ai_chance = {
 			factor = 50
 		}
@@ -890,7 +890,7 @@ province_event = {
 			50 = {
 				owner = {
 					country_event = {
-						id = Melva_Fairs_Events.5003
+						id = FEE_Fairs_Events.5003
 						days = 30
 					}
 				}
@@ -898,7 +898,7 @@ province_event = {
 			50 = {
 				owner = {
 					country_event = {
-						id = Melva_Fairs_Events.5014
+						id = FEE_Fairs_Events.5014
 						days = 30
 					}
 				}
@@ -907,7 +907,7 @@ province_event = {
 	}
 
 	option = {
-		name = Melva_Fairs_Events.5002.OPT2
+		name = FEE_Fairs_Events.5002.OPT2
 		ai_chance = {
 			factor = 50
 		}
@@ -918,15 +918,15 @@ province_event = {
 
 #Luck
 country_event = {
-	id = Melva_Fairs_Events.5003
-	title = Melva_Fairs_Events.5003.T
-	desc = Melva_Fairs_Events.5003.D
+	id = FEE_Fairs_Events.5003
+	title = FEE_Fairs_Events.5003.T
+	desc = FEE_Fairs_Events.5003.D
 	picture = GOOD_WITH_MONARCH_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = Melva_Fairs_Events.5003.OPT1
+		name = FEE_Fairs_Events.5003.OPT1
 		ai_chance = {
 			factor = 50
 		}
@@ -939,25 +939,25 @@ country_event = {
 			random_list = {
 				10 = {
 					country_event = {
-						id = Melva_Fairs_Events.5004
+						id = FEE_Fairs_Events.5004
 						days = 10
 					}
 				}
 				20 = {
 					country_event = {
-						id = Melva_Fairs_Events.5005
+						id = FEE_Fairs_Events.5005
 						days = 10
 					}
 				}
 				30 = {
 					country_event = {
-						id = Melva_Fairs_Events.5006
+						id = FEE_Fairs_Events.5006
 						days = 10
 					}
 				}
 				40 = {
 					country_event = {
-						id = Melva_Fairs_Events.5007
+						id = FEE_Fairs_Events.5007
 						days = 10
 					}
 				}
@@ -968,15 +968,15 @@ country_event = {
 
 #Almighty Protection
 country_event = {
-	id = Melva_Fairs_Events.5004
-	title = Melva_Fairs_Events.5004.T
-	desc = Melva_Fairs_Events.5004.D
+	id = FEE_Fairs_Events.5004
+	title = FEE_Fairs_Events.5004.T
+	desc = FEE_Fairs_Events.5004.D
 	picture = GOOD_WITH_MONARCH_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = Melva_Fairs_Events.5004.OPT1
+		name = FEE_Fairs_Events.5004.OPT1
 		ai_chance = {
 			factor = 50
 		}
@@ -989,7 +989,7 @@ country_event = {
 		}
 		else = {
 			add_ruler_modifier = {
-				name = melva_almighty_protection
+				name = fee_almighty_protection
 				duration = -1
 			}
 		}
@@ -998,15 +998,15 @@ country_event = {
 
 #Solemn Hymn
 country_event = {
-	id = Melva_Fairs_Events.5005
-	title = Melva_Fairs_Events.5005.T
-	desc = Melva_Fairs_Events.5005.D
+	id = FEE_Fairs_Events.5005
+	title = FEE_Fairs_Events.5005.T
+	desc = FEE_Fairs_Events.5005.D
 	picture = GOOD_WITH_MONARCH_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = Melva_Fairs_Events.5005.OPT1
+		name = FEE_Fairs_Events.5005.OPT1
 		ai_chance = {
 			factor = 50
 		}
@@ -1019,7 +1019,7 @@ country_event = {
 		}
 		else = {
 			add_ruler_modifier = {
-				name = melva_solemn_hymn
+				name = fee_solemn_hymn
 				duration = -1
 			}
 		}
@@ -1028,15 +1028,15 @@ country_event = {
 
 #Angelic Blessing
 country_event = {
-	id = Melva_Fairs_Events.5006
-	title = Melva_Fairs_Events.5006.T
-	desc = Melva_Fairs_Events.5006.D
+	id = FEE_Fairs_Events.5006
+	title = FEE_Fairs_Events.5006.T
+	desc = FEE_Fairs_Events.5006.D
 	picture = GOOD_WITH_MONARCH_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = Melva_Fairs_Events.5006.OPT1
+		name = FEE_Fairs_Events.5006.OPT1
 		ai_chance = {
 			factor = 50
 		}
@@ -1049,7 +1049,7 @@ country_event = {
 		}
 		else = {
 			add_ruler_modifier = {
-				name = melva_angelic_blessing
+				name = fee_angelic_blessing
 				duration = -1
 			}
 		}
@@ -1058,15 +1058,15 @@ country_event = {
 
 #Kiss of Luck
 country_event = {
-	id = Melva_Fairs_Events.5007
-	title = Melva_Fairs_Events.5007.T
-	desc = Melva_Fairs_Events.5007.D
+	id = FEE_Fairs_Events.5007
+	title = FEE_Fairs_Events.5007.T
+	desc = FEE_Fairs_Events.5007.D
 	picture = GOOD_WITH_MONARCH_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = Melva_Fairs_Events.5007.OPT1
+		name = FEE_Fairs_Events.5007.OPT1
 		ai_chance = {
 			factor = 50
 		}
@@ -1079,7 +1079,7 @@ country_event = {
 		}
 		else = {
 			add_ruler_modifier = {
-				name = melva_angelic_blessing
+				name = fee_angelic_blessing
 				duration = -1
 			}
 		}
@@ -1088,15 +1088,15 @@ country_event = {
 
 #Misfortune
 country_event = {
-	id = Melva_Fairs_Events.5010
-	title = Melva_Fairs_Events.5010.T
-	desc = Melva_Fairs_Events.5010.D
+	id = FEE_Fairs_Events.5010
+	title = FEE_Fairs_Events.5010.T
+	desc = FEE_Fairs_Events.5010.D
 	picture = BAD_WITH_MONARCH_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = Melva_Fairs_Events.5010.OPT1
+		name = FEE_Fairs_Events.5010.OPT1
 		ai_chance = {
 			factor = 50
 		}
@@ -1104,25 +1104,25 @@ country_event = {
 		random_list = {
 			10 = {
 				country_event = {
-					id = Melva_Fairs_Events.5011
+					id = FEE_Fairs_Events.5011
 					days = 10
 				}
 			}
 			20 = {
 				country_event = {
-					id = Melva_Fairs_Events.5012
+					id = FEE_Fairs_Events.5012
 					days = 10
 				}
 			}
 			30 = {
 				country_event = {
-					id = Melva_Fairs_Events.5013
+					id = FEE_Fairs_Events.5013
 					days = 10
 				}
 			}
 			40 = {
 				country_event = {
-					id = Melva_Fairs_Events.5014
+					id = FEE_Fairs_Events.5014
 					days = 10
 				}
 			}
@@ -1132,21 +1132,21 @@ country_event = {
 
 #Ruinous Powers
 country_event = {
-	id = Melva_Fairs_Events.5011
-	title = Melva_Fairs_Events.5011.T
-	desc = Melva_Fairs_Events.5011.D
+	id = FEE_Fairs_Events.5011
+	title = FEE_Fairs_Events.5011.T
+	desc = FEE_Fairs_Events.5011.D
 	picture = BAD_WITH_MONARCH_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = Melva_Fairs_Events.5011.OPT1
+		name = FEE_Fairs_Events.5011.OPT1
 		ai_chance = {
 			factor = 50
 		}
 
 		add_ruler_modifier = {
-			name = melva_ruinous_powers
+			name = fee_ruinous_powers
 			duration = -1
 		}
 	}
@@ -1154,21 +1154,21 @@ country_event = {
 
 #Demonic Embrace
 country_event = {
-	id = Melva_Fairs_Events.5012
-	title = Melva_Fairs_Events.5012.T
-	desc = Melva_Fairs_Events.5012.D
+	id = FEE_Fairs_Events.5012
+	title = FEE_Fairs_Events.5012.T
+	desc = FEE_Fairs_Events.5012.D
 	picture = BAD_WITH_MONARCH_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = Melva_Fairs_Events.5012.OPT1
+		name = FEE_Fairs_Events.5012.OPT1
 		ai_chance = {
 			factor = 50
 		}
 
 		add_ruler_modifier = {
-			name = melva_demonic_embrace
+			name = fee_demonic_embrace
 			duration = -1
 		}
 	}
@@ -1176,21 +1176,21 @@ country_event = {
 
 #Ancient Cursing
 country_event = {
-	id = Melva_Fairs_Events.5013
-	title = Melva_Fairs_Events.5013.T
-	desc = Melva_Fairs_Events.5013.D
+	id = FEE_Fairs_Events.5013
+	title = FEE_Fairs_Events.5013.T
+	desc = FEE_Fairs_Events.5013.D
 	picture = BAD_WITH_MONARCH_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = Melva_Fairs_Events.5013.OPT1
+		name = FEE_Fairs_Events.5013.OPT1
 		ai_chance = {
 			factor = 50
 		}
 
 		add_ruler_modifier = {
-			name = melva_ancient_curse
+			name = fee_ancient_curse
 			duration = -1
 		}
 	}
@@ -1198,21 +1198,21 @@ country_event = {
 
 #Witch's Eyes
 country_event = {
-	id = Melva_Fairs_Events.5014
-	title = Melva_Fairs_Events.5014.T
-	desc = Melva_Fairs_Events.5014.D
+	id = FEE_Fairs_Events.5014
+	title = FEE_Fairs_Events.5014.T
+	desc = FEE_Fairs_Events.5014.D
 	picture = BAD_WITH_MONARCH_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = Melva_Fairs_Events.5014.OPT1
+		name = FEE_Fairs_Events.5014.OPT1
 		ai_chance = {
 			factor = 50
 		}
 
 		add_ruler_modifier = {
-			name = melva_witch_eye
+			name = fee_witch_eye
 			duration = -1
 		}
 	}
@@ -1220,18 +1220,18 @@ country_event = {
 
 #The end of the Nomad Caravan?
 province_event = {
-	id = Melva_Fairs_Events.5020
-	title = Melva_Fairs_Events.5020.T
-	desc = Melva_Fairs_Events.5020.D
+	id = FEE_Fairs_Events.5020
+	title = FEE_Fairs_Events.5020.T
+	desc = FEE_Fairs_Events.5020.D
 	picture = CARAVAN_EVENT_Picture
 
 	trigger = {
-		has_province_modifier = melva_trading_fair_province_modifier
+		has_province_modifier = fee_trading_fair_province_modifier
 		had_province_flag = {
-			flag = melva_province_trading_fair_nomad_accepted
+			flag = fee_province_trading_fair_nomad_accepted
 			days = 365
 		}
-		NOT = { has_province_flag = melva_province_trading_fair_dealed_nomad }
+		NOT = { has_province_flag = fee_province_trading_fair_dealed_nomad }
 	}
 
 	goto = ROOT
@@ -1241,11 +1241,11 @@ province_event = {
 	}
 
 	immediate = {
-		hidden_effect = { set_province_flag = melva_province_trading_fair_dealed_nomad }
+		hidden_effect = { set_province_flag = fee_province_trading_fair_dealed_nomad }
 	}
 
 	option = {
-		name = Melva_Fairs_Events.5020.OPT1
+		name = FEE_Fairs_Events.5020.OPT1
 		ai_chance = {
 			factor = 50
 		}
@@ -1261,13 +1261,13 @@ province_event = {
 				which = melvaNomadCaravan
 				value = 10
 			}
-			set_province_flag = melva_nomad_caravan_in
-			clr_province_flag = melva_nomad_fired_between_fairs
+			set_province_flag = fee_nomad_caravan_in
+			clr_province_flag = fee_nomad_fired_between_fairs
 		}
 	}
 
 	option = {
-		name = Melva_Fairs_Events.5020.OPT2
+		name = FEE_Fairs_Events.5020.OPT2
 		ai_chance = {
 			factor = 50
 		}
@@ -1285,22 +1285,22 @@ province_event = {
 			which = melvaTradingFairLevel
 			value = -15
 		}
-		set_province_flag = melva_nomad_restored
+		set_province_flag = fee_nomad_restored
 	}
 }
 
 #Nomad Problem
 province_event = {
-	id = Melva_Fairs_Events.5021
-	title = Melva_Fairs_Events.5021.T
-	desc = Melva_Fairs_Events.5021.D
+	id = FEE_Fairs_Events.5021
+	title = FEE_Fairs_Events.5021.T
+	desc = FEE_Fairs_Events.5021.D
 	picture = REVOLT_eventPicture
 
 	trigger = {
-		NOT = { has_province_modifier = melva_trading_fair_province_modifier }
-		has_province_flag = melva_nomad_caravan_in
-		NOT = { has_province_flag = melva_nomad_restored }
-		NOT = { has_province_flag = melva_nomad_fired_between_fairs }
+		NOT = { has_province_modifier = fee_trading_fair_province_modifier }
+		has_province_flag = fee_nomad_caravan_in
+		NOT = { has_province_flag = fee_nomad_restored }
+		NOT = { has_province_flag = fee_nomad_fired_between_fairs }
 	}
 
 	goto = ROOT
@@ -1324,7 +1324,7 @@ province_event = {
 	}
 
 	option = {
-		name = Melva_Fairs_Events.5021.OPT1
+		name = FEE_Fairs_Events.5021.OPT1
 		ai_chance = {
 			factor = 50
 		}
@@ -1371,21 +1371,21 @@ province_event = {
 	}
 
 	after = {
-		hidden_effect = { set_province_flag = melva_nomad_fired_between_fairs }
+		hidden_effect = { set_province_flag = fee_nomad_fired_between_fairs }
 	}
 }
 
 #Famous Artist
 province_event = {
-	id = Melva_Fairs_Events.6000
-	title = Melva_Fairs_Events.6000.T
-	desc = Melva_Fairs_Events.6000.D
+	id = FEE_Fairs_Events.6000
+	title = FEE_Fairs_Events.6000.T
+	desc = FEE_Fairs_Events.6000.D
 	picture = CARAVAN_EVENT_Picture
 
 	trigger = {
-		has_province_modifier = melva_trading_fair_province_modifier
-		NOT = { has_province_flag = melva_province_trading_fair_famous_artist_accepted }
-		NOT = { has_province_flag = melva_province_trading_fair_famous_artist_refused }
+		has_province_modifier = fee_trading_fair_province_modifier
+		NOT = { has_province_flag = fee_province_trading_fair_famous_artist_accepted }
+		NOT = { has_province_flag = fee_province_trading_fair_famous_artist_refused }
 	}
 
 	goto = ROOT
@@ -1395,9 +1395,9 @@ province_event = {
 	}
 
 	option = {
-		name = Melva_Fairs_Events.6000.OPT1
+		name = FEE_Fairs_Events.6000.OPT1
 
-		set_province_flag = melva_province_trading_fair_famous_artist_accepted
+		set_province_flag = fee_province_trading_fair_famous_artist_accepted
 		owner = { add_years_of_income = 0.0416 } #half month of income
 		owner = {
 			add_prestige = 5
@@ -1413,9 +1413,9 @@ province_event = {
 	}
 
 	option = {
-		name = Melva_Fairs_Events.6000.OPT2
+		name = FEE_Fairs_Events.6000.OPT2
 
-		set_province_flag = melva_province_trading_fair_famous_artist_refused
+		set_province_flag = fee_province_trading_fair_famous_artist_refused
 		owner = { add_years_of_income = -0.0416 } #half month of income
 		owner = {
 			define_advisor = {
@@ -1433,22 +1433,22 @@ province_event = {
 
 #Banquet Preparation
 province_event = {
-	id = Melva_Fairs_Events.7000
-	title = Melva_Fairs_Events.7000.T
-	desc = Melva_Fairs_Events.7000.D
+	id = FEE_Fairs_Events.7000
+	title = FEE_Fairs_Events.7000.T
+	desc = FEE_Fairs_Events.7000.D
 	picture = COURT_eventPicture
 
 	trigger = {
-		has_province_modifier = melva_trading_fair_province_modifier
-		has_global_flag = melva_trading_fairs_enabled
+		has_province_modifier = fee_trading_fair_province_modifier
+		has_global_flag = fee_trading_fairs_enabled
 		NOT = { current_age = age_of_revolutions }
 		NOT = { current_age = age_of_absolutism }
 		NOT = { current_age = age_of_reformation }
 		had_province_flag = {
-			flag = melva_province_trading_fair_started
+			flag = fee_province_trading_fair_started
 			days = 1095
 		}
-		NOT = { has_province_flag = melva_trading_fair_banquet_preparation }
+		NOT = { has_province_flag = fee_trading_fair_banquet_preparation }
 	}
 
 	mean_time_to_happen = {
@@ -1456,11 +1456,11 @@ province_event = {
 	}
 
 	immediate = {
-		hidden_effect = { set_province_flag = melva_trading_fair_banquet_preparation }
+		hidden_effect = { set_province_flag = fee_trading_fair_banquet_preparation }
 	}
 
 	option = {
-		name = Melva_Fairs_Events.7000.OPT1
+		name = FEE_Fairs_Events.7000.OPT1
 
 		owner = {
 			add_years_of_income = -0.332
@@ -1473,7 +1473,7 @@ province_event = {
 	}
 
 	option = {
-		name = Melva_Fairs_Events.7000.OPT2
+		name = FEE_Fairs_Events.7000.OPT2
 
 		owner = { add_prestige = -5 }
 		change_variable = {
@@ -1485,16 +1485,16 @@ province_event = {
 
 #Banquet Invitation
 country_event = {
-	id = Melva_Fairs_Events.7001
-	title = Melva_Fairs_Events.7001.T
-	desc = Melva_Fairs_Events.7001.D
+	id = FEE_Fairs_Events.7001
+	title = FEE_Fairs_Events.7001.T
+	desc = FEE_Fairs_Events.7001.D
 	picture = COURT_eventPicture
 
 	trigger = {
 		any_owned_province = {
-			has_province_flag = melva_trading_fair_banquet_preparation
+			has_province_flag = fee_trading_fair_banquet_preparation
 		}
-		NOT = { has_country_flag = melva_trading_fair_banquet_invitation }
+		NOT = { has_country_flag = fee_trading_fair_banquet_invitation }
 	}
 
 	mean_time_to_happen = {
@@ -1503,33 +1503,33 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
-			set_country_flag = melva_trading_fair_banquet_invitation
+			set_country_flag = fee_trading_fair_banquet_invitation
 		}
 	}
 
 	option = {
-		name = Melva_Fairs_Events.7001.OPT1
+		name = FEE_Fairs_Events.7001.OPT1
 
 		add_prestige = 5
 		random_owned_province = {
-			limit = { has_province_flag = melva_province_trading_fair_started }
+			limit = { has_province_flag = fee_province_trading_fair_started }
 			change_variable = {
 				which = melvaTradingFairLevel
 				value = 5
 			}
-			set_province_flag = melva_trading_fair_banquet_personal
+			set_province_flag = fee_trading_fair_banquet_personal
 		}
 	}
 
 	option = {
-		name = Melva_Fairs_Events.7001.OPT2
+		name = FEE_Fairs_Events.7001.OPT2
 
 		every_neighbor_country = {
 			limit = {
 				NOT = { war_with = ROOT }
 			}
 			country_event = {
-				id = Melva_Fairs_Events.7002
+				id = FEE_Fairs_Events.7002
 				days = 30
 			}
 		}
@@ -1538,15 +1538,15 @@ country_event = {
 
 #Invitation
 country_event = {
-	id = Melva_Fairs_Events.7002
-	title = Melva_Fairs_Events.7002.T
-	desc = Melva_Fairs_Events.7002.D
+	id = FEE_Fairs_Events.7002
+	title = FEE_Fairs_Events.7002.T
+	desc = FEE_Fairs_Events.7002.D
 	picture = DIPLOMACY_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = Melva_Fairs_Events.7002.OPT1
+		name = FEE_Fairs_Events.7002.OPT1
 		ai_chance = {
 			factor = 50
 			modifier = {
@@ -1627,14 +1627,14 @@ country_event = {
 
 		FROM = {
 			country_event = {
-				id = Melva_Fairs_Events.7003
+				id = FEE_Fairs_Events.7003
 				days = 30
 			}
 		}
 	}
 
 	option = {
-		name = Melva_Fairs_Events.7002.OPT2
+		name = FEE_Fairs_Events.7002.OPT2
 		ai_chance = {
 			factor = 50
 			modifier = {
@@ -1692,7 +1692,7 @@ country_event = {
 
 		FROM = {
 			country_event = {
-				id = Melva_Fairs_Events.7004
+				id = FEE_Fairs_Events.7004
 				days = 30
 			}
 		}
@@ -1701,29 +1701,29 @@ country_event = {
 
 #ROOT Comes to Banquet
 country_event = {
-	id = Melva_Fairs_Events.7003
-	title = Melva_Fairs_Events.7003.T
-	desc = Melva_Fairs_Events.7003.D
+	id = FEE_Fairs_Events.7003
+	title = FEE_Fairs_Events.7003.T
+	desc = FEE_Fairs_Events.7003.D
 	picture = GOOD_WITH_MONARCH_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = Melva_Fairs_Events.7003.OPT1
+		name = FEE_Fairs_Events.7003.OPT1
 
 		add_opinion = {
 			who = FROM
-			modifier = melva_fairs_accepted_invitation
+			modifier = fee_fairs_accepted_invitation
 		}
 		FROM = {
 			add_opinion = {
 				who = ROOT
-				modifier = melva_fairs_accepted_invitation
+				modifier = fee_fairs_accepted_invitation
 			}
 		}
 		random_owned_province = {
 			limit = {
-				has_province_flag = melva_province_trading_fair_started
+				has_province_flag = fee_province_trading_fair_started
 			}
 			change_variable = {
 				which = melvaTradingFairLevel
@@ -1735,29 +1735,29 @@ country_event = {
 
 #ROOT Does not come to Banquet
 country_event = {
-	id = Melva_Fairs_Events.7004
-	title = Melva_Fairs_Events.7004.T
-	desc = Melva_Fairs_Events.7004.D
+	id = FEE_Fairs_Events.7004
+	title = FEE_Fairs_Events.7004.T
+	desc = FEE_Fairs_Events.7004.D
 	picture = BAD_WITH_MONARCH_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = Melva_Fairs_Events.7004.OPT1
+		name = FEE_Fairs_Events.7004.OPT1
 
 		add_opinion = {
 			who = FROM
-			modifier = melva_fairs_declined_invitation
+			modifier = fee_fairs_declined_invitation
 		}
 		FROM = {
 			add_opinion = {
 				who = ROOT
-				modifier = melva_fairs_declined_invitation
+				modifier = fee_fairs_declined_invitation
 			}
 		}
 		random_owned_province = {
 			limit = {
-				has_province_flag = melva_province_trading_fair_started
+				has_province_flag = fee_province_trading_fair_started
 			}
 			change_variable = {
 				which = melvaTradingFairLevel
@@ -1769,9 +1769,9 @@ country_event = {
 
 #
 #country_event = {
-#	id = Melva_Fairs_Events.
-#	title = Melva_Fairs_Events..T
-#	desc = Melva_Fairs_Events..D
+#	id = FEE_Fairs_Events.
+#	title = FEE_Fairs_Events..T
+#	desc = FEE_Fairs_Events..D
 #	picture = CARAVAN_EVENT_Picture
 #
 #	fire_only_once = yes
@@ -1785,7 +1785,7 @@ country_event = {
 #	}
 #
 #	option = {
-#		name = Melva_Fairs_Events..OPT1
+#		name = FEE_Fairs_Events..OPT1
 #
 #	}
 #}

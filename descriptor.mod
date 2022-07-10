@@ -9,4 +9,4 @@ tags={
 	"Historical"
 }
 name="Flavour and Events Expanded Git"
-supported_version="1.31.6"
+supported_version="1.33.3"

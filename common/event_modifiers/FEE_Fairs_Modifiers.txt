@@ -1,14 +1,14 @@
-melva_trading_fair_province_modifier = {
+fee_trading_fair_province_modifier = {
 	trade_value_modifier = 0.10
 	trade_goods_size_modifier = 0.10
 	local_development_cost = -0.10
 }
-melva_trading_fair_origin = {
+fee_trading_fair_origin = {
 	trade_value_modifier = 0.10
 	trade_goods_size_modifier = 0.10
 	local_development_cost = -0.10
 }
-melva_almighty_protection = {
+fee_almighty_protection = {
 	global_missionary_strength = 0.01
 	stability_cost_modifier = -0.10
 	global_institution_spread = 0.10
@@ -32,7 +32,7 @@ melva_almighty_protection = {
 	ae_impact = -0.25
 	governing_capacity_modifier = 0.25
 }
-melva_solemn_hymn = {
+fee_solemn_hymn = {
 	global_missionary_strength = 0.01
 	global_institution_spread = 0.10
 	mercenary_cost = -0.20
@@ -43,19 +43,19 @@ melva_solemn_hymn = {
 	global_unrest = -1
 	ae_impact = -0.25
 }
-melva_angelic_blessing = {
+fee_angelic_blessing = {
 	global_missionary_strength = 0.01
 	mercenary_cost = -0.20
 	missionary_maintenance_cost = -0.10
 	spy_offence = 0.10
 	ae_impact = -0.25
 }
-melva_kiss_luck = {
+fee_kiss_luck = {
 	global_missionary_strength = 0.01
 	missionary_maintenance_cost = -0.10
 	ae_impact = -0.25
 }
-melva_ruinous_powers = {
+fee_ruinous_powers = {
 	global_missionary_strength = -0.01
 	stability_cost_modifier = 0.10
 	global_institution_spread = -0.10
@@ -79,7 +79,7 @@ melva_ruinous_powers = {
 	ae_impact = 0.25
 	governing_capacity_modifier = -0.25
 }
-melva_demonic_embrace = {
+fee_demonic_embrace = {
 	global_missionary_strength = -0.01
 	global_institution_spread = -0.10
 	mercenary_cost = 0.20
@@ -90,14 +90,14 @@ melva_demonic_embrace = {
 	global_unrest = 1
 	ae_impact = 0.25
 }
-melva_ancient_curse = {
+fee_ancient_curse = {
 	global_missionary_strength = -0.01
 	mercenary_cost = 0.20
 	missionary_maintenance_cost = 0.10
 	spy_offence = -0.10
 	ae_impact = 0.25
 }
-melva_witch_eye = {
+fee_witch_eye = {
 	global_missionary_strength = -0.01
 	missionary_maintenance_cost = 0.10
 	ae_impact = 0.25
