@@ -10,7 +10,7 @@ fee_crisis_of_the_mughal_empire = {
 		government = monarchy
 		religion_group = muslim
 		num_of_owned_provinces_with = {
-			amount = 50
+			value = 50
 			is_core = ROOT
 		}
 	}
@@ -133,10 +133,10 @@ fee_crisis_of_the_mughal_empire = {
 		}
 		modifier = {
 			factor = 1
-			has_estate = estate_vaishyas
+			has_estate = estate_vaisyas
 			NOT = {
 				estate_loyalty = {
-					estate = estate_vaishyas
+					estate = estate_vaisyas
 					loyalty = 30
 				}
 			}
@@ -200,7 +200,7 @@ fee_crisis_of_the_mughal_empire = {
 	on_monthly = {
 		events = {
 		}
-		random_event = {
+		random_events = {
 			1000 = 0
 			200 = disaster_fee_crisis_of_the_mughal_empire.3
 			100 = disaster_fee_crisis_of_the_mughal_empire.4

@@ -25,30 +25,11 @@ italy_republican_matter_disaster = {
 	
 	progress = {
 		modifier = {
-			factor = -1.25
-			stability = 3
+			factor = -2
+			stability = 2
 		}
 		modifier = {
-			factor = 1
-			government = republic
-			NOT = { has_reform = constitutional_republic_reform }
-		}
-		modifier = {
-			factor = 1
-			government = monarchy
-			NOT = { has_parliament = yes }
-		}
-		modifier = {
-			factor = 2
-			NOT = { government = monarchy }
-			NOT = { government = republic }
-		}
-		modifier = {
-			factor = 1.5
-			NOT = { legitimacy_equivalent = 50 }
-		}
-		modifier = {
-			factor = -1.5
+			factor = -2
 			legitimacy_equivalent = 90
 		}
 		modifier = {
@@ -57,23 +38,32 @@ italy_republican_matter_disaster = {
 		}
 		modifier = {
 			factor = 1.5
+			NOT = { has_parliament = yes }
+		}
+		modifier = {
+			factor = 1.5
 			NOT = { stability = -1 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { legitimacy_equivalent = 50 }
+		}
+		modifier = {
+			factor = 2
+			NOT = { government = monarchy }
+			NOT = { government = republic }
 		}
 		modifier = {
 			factor = 2
 			NOT = { stability = -2 }
 		}
 		modifier = {
-			factor = 1.25
-			unrest = 1
-		}
-		modifier = {
-			factor = 1.15
-			war_exhaustion = 3
-		}
-		modifier = {
-			factor = 1.5
+			factor = 2
 			war_exhaustion = 5
+		}
+		modifier = {
+			factor = 3
+			unrest = 3
 		}
 	}
 

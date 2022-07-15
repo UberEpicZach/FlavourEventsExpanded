@@ -19,7 +19,7 @@ fee_zemene_mesafint = {
 		}
 		is_free_or_tributary_trigger = yes
 		num_of_owned_provinces_with = {
-			amount = 50
+			value = 50
 			is_core = ROOT
 		}
 	}
@@ -112,7 +112,7 @@ fee_zemene_mesafint = {
 	on_monthly = {
 		events = {
 		}
-		randon_events = {
+		random_events = {
 			1000 = 0
 			100 = disaster_fee_zemene_mesafint.3
 			100 = disaster_fee_zemene_mesafint.4
