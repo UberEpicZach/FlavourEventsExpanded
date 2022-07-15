@@ -151,7 +151,6 @@ country_event = {
 
 	# trigger = {
 		# has_country_modifier = fee_joined_swabian_league
-		# NOT = { has_country_flag = fee_thrown_out_swabian_league }
 		# is_subject = no
 	# }
 
@@ -659,7 +658,7 @@ country_event = {
 			factor = 35
 			modifier = {
 				factor = 0
-				not = { treasury = 20 }
+				NOT = { treasury = 20 }
 			}
 		}
 		add_treasury = -25
@@ -775,7 +774,6 @@ country_event = {
 			modifier = fee_refused_league_aid
 		}
 	}
-
 }
 
 
@@ -948,7 +946,6 @@ country_event = {
 			capital_scope = { area = upper_swabia_area }
 		}
 		is_at_war = no
-		NOT = { has_country_flag = fee_thrown_out_swabian_league }
 		is_subject = no
 		NOT = { has_global_flag = fee_swabian_league_disbanded}
 	}

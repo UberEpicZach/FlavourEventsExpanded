@@ -97,7 +97,6 @@ country_event = {
 			adm = 2
 			dip = 4
 			mil = 2
-			fixed = yes
 		}
 		kill_heir = {}
 		add_stability = 2
@@ -166,7 +165,6 @@ country_event = {
 			adm = 2
 			dip = 4
 			mil = 2
-			fixed = yes
 		}
 		kill_heir = {}
 		capital_scope = {
@@ -278,7 +276,6 @@ country_event = {
 			dip = 3
 			mil = 5
 			age = 17
-			fixed = yes
 		}
 		kill_heir = {}
 		add_stability = -3

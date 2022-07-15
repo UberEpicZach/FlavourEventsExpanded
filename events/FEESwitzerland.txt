@@ -780,7 +780,7 @@ country_event = {
 			factor = 50
 			modifier = {
 				factor = 0
-				not = {
+				NOT = {
 					religion = reformed
 				}
 			}
@@ -800,7 +800,7 @@ country_event = {
 			factor = 50
 			modifier = {
 				factor = 0
-				not = {
+				NOT = {
 					religion = catholic
 				}
 			}
@@ -817,7 +817,7 @@ country_event = {
 	option = {
 		name = fee_SWI.18.c
 		trigger = {
-			not = {
+			NOT = {
 				OR = {
 					religion = catholic
 					religion = reformed
@@ -835,7 +835,7 @@ country_event = {
 			factor = 50
 			modifier = {
 				factor = 0
-				not = {
+				NOT = {
 					OR = {
 						religion = catholic
 						religion = reformed
@@ -871,7 +871,7 @@ country_event = {
 		name = fee_SWI.19.a
 		if = {
 			limit = {
-				not = {
+				NOT = {
 					religion = reformed
 				}
 			}
@@ -880,7 +880,7 @@ country_event = {
 		1869 = {
 			if = {
 				limit = {
-					not = {
+					NOT = {
 						religion = reformed
 					}
 				}
@@ -919,7 +919,7 @@ country_event = {
 		name = fee_SWI.20.a
 		if = {
 			limit = {
-				not = {
+				NOT = {
 					religion = catholic
 				}
 			}
@@ -928,7 +928,7 @@ country_event = {
 		1869 = {
 			if = {
 				limit = {
-					not = {
+					NOT = {
 						religion = catholic
 					}
 				}

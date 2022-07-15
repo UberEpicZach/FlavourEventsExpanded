@@ -453,7 +453,7 @@ country_event = {
 	}
 	option = {
 		name = fee_DAN.9.a
-		change_government = absolute_monarchy
+		change_government = dictatorship
 		add_stability_or_adm_power = yes
 		add_country_modifier = {
 			name = fee_danish_absolutism
@@ -1084,7 +1084,7 @@ country_event = {
 					mod = governments
 				}
 			}
-			set_estate_privilege = estate_nobles_supremacy_over_the_crown
+			set_estate_privilege = estate_nobles_supremacy_over_crown
 		}
 		set_estate_privilege = estate_nobles_right_of_counsel
 		change_estate_land_share = {
@@ -1145,7 +1145,7 @@ country_event = {
 		overlord_of = NOR
 		religion = protestant
 		is_year = 1500
-		not = {
+		NOT = {
 			is_year = 1550
 		}
 	}

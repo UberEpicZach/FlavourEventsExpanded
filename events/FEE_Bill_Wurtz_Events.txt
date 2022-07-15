@@ -87,10 +87,8 @@ country_event = {
 			continent = europe
 		}
 		is_year = 1510
-		NOT = {
-			has_country_flag = bill_wurtz_indulgences
-			has_country_flag = counter_reformation
-		}
+		NOT = { has_country_flag = bill_wurtz_indulgences }
+		NOT = { has_country_flag = counter_reformation }
 	}
 	mean_time_to_happen = {
 		months = 60

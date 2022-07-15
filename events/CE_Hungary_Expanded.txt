@@ -37,10 +37,10 @@ country_event = {
 			NOT = {
 				OR = {
 					BOH = {
-						has_truce = HUN
+						truce_with = HUN
 					}
 					HUN = {
-						has_truce = BOH
+						truce_with = BOH
 					}
 				}
 			}

@@ -49,7 +49,6 @@ country_event = {
 			adm = 2
 			dip = 5
 			mil = 3
-			fixed = yes
 		}
 	}
 	option = {
@@ -80,17 +79,6 @@ country_event = {
 
 		2698 = {
 			cede_province = PGS
-		}		
-		if = {
-			limit = {
-				5239 = {
-					owned_by = ROOT
-				}
-				NOT = { capital = 5239 }
-			}
-			5239 = {
-				cede_province = PGS
-			}
 		}
 		PGS = {
 			if = {
@@ -112,7 +100,6 @@ country_event = {
 				adm = 2
 				dip = 5
 				mil = 3
-				fixed = yes				
 			}
 			declare_war_with_cb = {
 				who = ROOT
@@ -151,17 +138,6 @@ country_event = {
 		ai_chance = { factor = 5 }
 		2698 = {
 			cede_province = PGS
-		}
-		if = {
-			limit = {
-				5239 = {
-					owned_by = ROOT
-				}
-				NOT = { capital = 5239 }
-			}
-			5239 = {
-				cede_province = PGS
-			}
 		}
 		PGS = {
 			if = {

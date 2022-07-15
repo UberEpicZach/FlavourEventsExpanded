@@ -144,7 +144,16 @@ country_event = {
 	option = {
 		name = Melva_Naples_Events.2.OPT1
 
-		add_years_of_income = 0.25
+		add_years_of_owned_provinces_production_income = {
+			years = 5
+			trigger = {
+				OR = {
+					trade_goods = livestock
+					trade_goods = olive_oil
+					trade_goods = cheese
+				}
+			}
+		}
 		every_owned_province = {
 			limit = {
 				OR = {

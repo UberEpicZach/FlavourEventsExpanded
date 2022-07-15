@@ -683,7 +683,7 @@ country_event = {
 					size = 0
 					win = yes
 				}
-				kill_units = { who = REB }
+				kill_units = { who = controller }
 			}
 			# Bar
 			4540 = {
@@ -693,7 +693,7 @@ country_event = {
 					size = 0
 					win = yes
 				}
-				kill_units = { who = REB }
+				kill_units = { who = controller }
 			}
 			# Lutsk
 			279 = {
@@ -703,7 +703,7 @@ country_event = {
 					size = 0
 					win = yes
 				}
-				kill_units = { who = REB }
+				kill_units = { who = controller }
 			}
 			# Ternopil
 			281 = {
@@ -713,7 +713,7 @@ country_event = {
 					size = 0
 					win = yes
 				}
-				kill_units = { who = REB }
+				kill_units = { who = controller }
 			}
 			# Kaniv
 			1944 = {
@@ -723,7 +723,7 @@ country_event = {
 					size = 0
 					win = yes
 				}
-				kill_units = { who = REB }
+				kill_units = { who = controller }
 			}
 			# Slutsk
 			4545 = {
@@ -733,7 +733,7 @@ country_event = {
 					size = 0
 					win = yes
 				}
-				kill_units = { who = REB }
+				kill_units = { who = controller }
 			}
 			# Bobrujsk
 			4544 = {
@@ -743,7 +743,7 @@ country_event = {
 					size = 0
 					win = yes
 				}
-				kill_units = { who = REB }
+				kill_units = { who = controller }
 			}
 			
 			country_event = {
@@ -853,7 +853,7 @@ country_event = {
 					size = 0
 					win = yes
 				}
-				kill_units = { who = REB }
+				kill_units = { who = controller }
 				
 				if = {
 					limit = {

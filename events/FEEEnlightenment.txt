@@ -92,7 +92,7 @@ country_event = {
 
 	trigger = {
 		has_country_modifier = fee_enlightenment
-		government = absolute_monarchy
+		government = dictatorship
 		NOT = {
 			has_ruler_modifier = fee_enlightened_absolutism_check
 		}
@@ -503,7 +503,7 @@ country_event = {
 			has_ruler_modifier = fee_enlightened_ruler
 		}
 		NOT = {
-			government = constitutional_republic
+			has_reform = constitutional_republic
 		}
 	}
 
@@ -511,27 +511,27 @@ country_event = {
 		months = 1000
 		modifier = {
 			factor = 0.8
-			government = feudal_monarchy
+			has_reform = feudal_monarchy
 		}
 		modifier = {
 			factor = 0.8
-			government = despotic_monarchy
+			has_reform = despotic_monarchy
 		}
 		modifier = {
 			factor = 1.4
-			government = constitutional_monarchy
+			has_reform = constitutional_monarchy
 		}
 		modifier = {
 			factor = 1.2
-			government = english_monarchy
+			has_reform = english_monarchy
 		}
 		modifier = {
 			factor = 1.2
-			government = administrative_republic
+			has_reform = administrative_republic
 		}
 		modifier = {
 			factor = 0.9
-			government = merchant_republic
+			has_reform = merchant_republic
 		}
 		modifier = {
 			factor = 0.8
@@ -712,7 +712,7 @@ country_event = {
 		}
 		modifier = {
 			factor = 0.8
-			government = merchant_republic
+			has_reform = merchant_republic
 		}
 	}
 
@@ -905,8 +905,8 @@ country_event = {
 		}
 		NOT = {
 			OR = {
-				government = constitutional_republic
-				government = administrative_republic
+				has_reform = constitutional_republic
+				has_reform = administrative_republic
 			}
 		}
 	}
@@ -915,19 +915,19 @@ country_event = {
 		months = 1800
 		modifier = {
 			factor = 0.8
-			government = feudal_monarchy
+			has_reform = feudal_monarchy
 		}
 		modifier = {
 			factor = 0.8
-			government = despotic_monarchy
+			has_reform = despotic_monarchy
 		}
 		modifier = {
 			factor = 0.8
-			government = noble_republic
+			has_reform = noble_republic
 		}
 		modifier = {
 			factor = 0.8
-			government = oligarchic_republic
+			has_reform = oligarchic_republic
 		}
 		modifier = {
 			factor = 0.8
@@ -1218,6 +1218,7 @@ country_event = {
 		name = fee_enlightenment.23.a
 		add_country_modifier = {
 			name = fee_enlightenment_academia_adm
+			duration = 3650
 		}
 	}
 
@@ -1225,6 +1226,7 @@ country_event = {
 		name = fee_enlightenment.23.b
 		add_country_modifier = {
 			name = fee_enlightenment_academia_dip
+			duration = 3650
 		}
 	}
 
@@ -1232,6 +1234,7 @@ country_event = {
 		name = fee_enlightenment.23.c
 		add_country_modifier = {
 			name = fee_enlightenment_academia_mil
+			duration = 3650
 		}
 	}
 }

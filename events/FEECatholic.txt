@@ -67,7 +67,7 @@ country_event = {
 		religion = catholic
 		reform_desire = 0.02
 		NOT = {
-			has_country_flag = fee_popular_piety
+			has_country_modifier = fee_popular_piety_timer
 		}
 	}
 	

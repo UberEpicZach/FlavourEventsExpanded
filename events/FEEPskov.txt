@@ -12,14 +12,14 @@ country_event = {
 	fire_only_once = yes 
 	
 	trigger =  {
-	 tag = PSK
-	 is_year = 1450
+	tag = PSK
+	is_year = 1450
 	}
-	 
+		
 	mean_time_to_happen = {
-	   months = 60
+	  months = 60
 	}
-	   
+	  
 	option = { 
 	name = fee_psk.1.a
     274 = { change_trade_goods = fish }	
@@ -49,18 +49,18 @@ country_event = {
 	fire_only_once = yes 
 	
 	trigger =  {
-	 tag = PSK
-	 is_year = 1445
-	 }
-	 
-	 mean_time_to_happen = {
-	   months = 24
-	   }
-	 option = {
-		 name = fee_psk.2.a
-		 add_country_modifier = {
+		tag = PSK
+		is_year = 1445
+	}
+
+	mean_time_to_happen = {
+	  months = 24
+	}
+	option = {
+		name = fee_psk.2.a
+		add_country_modifier = {
 			name = fee_legal_code_of_pskov
 			duration = -1
-		 }
-	 }
+		}
+	}
 }

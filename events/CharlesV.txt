@@ -25,10 +25,9 @@ country_event = {
 		is_subject = no
 		government = monarchy
 		
-		NOT = {			#Won't replace an existing heir if the monarch dies and leaves a regency.
-			has_regency = yes
-			has_heir = yes
-		}
+		#Won't replace an existing heir if the monarch dies and leaves a regency.
+		NOT = { has_regency = yes }
+		NOT = { has_heir = yes }
 		capital_scope = {
 			continent = europe
 		}
@@ -118,10 +117,8 @@ country_event = {
 		HAB = {		#Austria must be Habsburg
 			dynasty = "von Habsburg"
 		}
-		NOT = {		
-			junior_union_with = HAB	#Won't fire if already in a union with Austria.
-			senior_union_with = HAB
-		}
+		NOT = { junior_union_with = HAB }	#Won't fire if already in a union with Austria.
+		NOT = { senior_union_with = HAB }
 		has_country_flag = charlesv_born
 		NOT = { has_country_flag = charlesv_dead } #Won't fire if Chalres died as an heir
 		NOT = { has_country_flag = charlesv_ruler } 
@@ -167,9 +164,7 @@ country_event = {
 					is_emperor = yes
 				}
 			}
-			ROOT = {
-				set_emperor = yes
-			}
+			set_emperor = yes
 		}
 		HAB = {
 			if = {

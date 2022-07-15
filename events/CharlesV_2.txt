@@ -166,7 +166,7 @@ country_event = {
 			capital_scope = {
 				spawn_rebels = {
 					type = pretender_rebels
-					size = 3		#This is going to be one monster of a rebellion
+					size = 3
 					leader = "Ferdinand von Habsburg"
 				}
 			}
@@ -176,7 +176,7 @@ country_event = {
 				}
 				spawn_rebels = {
 					type = pretender_rebels
-					size = 3		#This is going to be one monster of a rebellion
+					size = 3
 					leader = "Ferdinand von Habsburg"
 				}
 			}
@@ -186,7 +186,7 @@ country_event = {
 				}
 				spawn_rebels = {
 					type = pretender_rebels
-					size = 1		#This is going to be one monster of a rebellion
+					size = 1
 					leader = "Ferdinand von Habsburg"
 				}
 			}
@@ -198,28 +198,32 @@ country_event = {
 					has_subject_of_type = personal_union
 				}
 				BOH = {
-					limit = {
-						is_subject_of_type = personal_union
-						has_country_flag = austriaspersonalunions
-					}
-					capital_scope = {
-						spawn_rebels = {
-							type = pretender_rebels
-							size = 2		#This is going to be one monster of a rebellion
-							leader = "Ferdinand von Habsburg"
+					if = {
+						limit = {
+							is_subject_of_type = personal_union
+							has_country_flag = austriaspersonalunions
+						}
+						capital_scope = {
+							spawn_rebels = {
+								type = pretender_rebels
+								size = 2
+								leader = "Ferdinand von Habsburg"
+							}
 						}
 					}
 				}
 				HUN = {
-					limit = {
-						is_subject_of_type = personal_union
-						has_country_flag = austriaspersonalunions
-					}
-					capital_scope = {
-						spawn_rebels = {
-							type = pretender_rebels
-							size = 1		#This is going to be one monster of a rebellion
-							leader = "Ferdinand von Habsburg"
+					if = {
+						limit = {
+							is_subject_of_type = personal_union
+							has_country_flag = austriaspersonalunions
+						}
+						capital_scope = {
+							spawn_rebels = {
+								type = pretender_rebels
+								size = 1
+								leader = "Ferdinand von Habsburg"
+							}
 						}
 					}
 				}
@@ -376,14 +380,14 @@ country_event = {
 			capital_scope = {
 				spawn_rebels = {
 					type = pretender_rebels
-					size = 3		#This is going to be one monster of a rebellion
+					size = 3
 					leader = "Ferdinand von Habsburg"
 				}
 			}
 			capital_scope = {
 				spawn_rebels = {
 					type = pretender_rebels
-					size = 1		#This is going to be one monster of a rebellion
+					size = 1
 					leader = "Ferdinand von Habsburg"
 				}
 			}
@@ -393,7 +397,7 @@ country_event = {
 				}
 				spawn_rebels = {
 					type = pretender_rebels
-					size = 1		#This is going to be one monster of a rebellion
+					size = 1
 					leader = "Ferdinand von Habsburg"
 				}
 			}
@@ -403,7 +407,7 @@ country_event = {
 				}
 				spawn_rebels = {
 					type = pretender_rebels
-					size = 3		#This is going to be one monster of a rebellion
+					size = 3
 					leader = "Ferdinand von Habsburg"
 				}
 			}
@@ -413,7 +417,7 @@ country_event = {
 				}
 				spawn_rebels = {
 					type = pretender_rebels
-					size = 1		#This is going to be one monster of a rebellion
+					size = 1
 					leader = "Ferdinand von Habsburg"
 				}
 			}
@@ -423,7 +427,7 @@ country_event = {
 				}
 				spawn_rebels = {
 					type = pretender_rebels
-					size = 1		#This is going to be one monster of a rebellion
+					size = 1
 					leader = "Ferdinand von Habsburg"
 				}
 			}
@@ -434,28 +438,32 @@ country_event = {
 						has_subject_of_type = personal_union
 					}
 					BOH = {
-						limit = {
-							is_subject_of_type = personal_union
-							has_country_flag = austriaspersonalunions
-						}
-						capital_scope = {
-							spawn_rebels = {
-								type = pretender_rebels
-								size = 2		#This is going to be one monster of a rebellion
-								leader = "Ferdinand von Habsburg"
+						if = {
+							limit = {
+								is_subject_of_type = personal_union
+								has_country_flag = austriaspersonalunions
+							}
+							capital_scope = {
+								spawn_rebels = {
+									type = pretender_rebels
+									size = 2
+									leader = "Ferdinand von Habsburg"
+								}
 							}
 						}
 					}
 					HUN = {
-						limit = {
-							is_subject_of_type = personal_union
-							has_country_flag = austriaspersonalunions
-						}
-						capital_scope = {
-							spawn_rebels = {
-								type = pretender_rebels
-								size = 1		#This is going to be one monster of a rebellion
-								leader = "Ferdinand von Habsburg"
+						if = {
+							limit = {
+								is_subject_of_type = personal_union
+								has_country_flag = austriaspersonalunions
+							}
+							capital_scope = {
+								spawn_rebels = {
+									type = pretender_rebels
+									size = 1
+									leader = "Ferdinand von Habsburg"
+								}
 							}
 						}
 					}

@@ -502,7 +502,7 @@ country_event = {
 		}
 		if = {
 			limit = {
-				has_country_flag = liberalism
+				has_country_flag = had_liberalism
 			}
 			country_event = {
 				id = aspiration_for_liberty.4 days = 1

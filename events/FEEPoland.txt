@@ -40,7 +40,7 @@ namespace = fee_POL
 #		}
 #		every_owned_province = {
 #		add_local_autonomy = 15
-#        }
+#		}
 #	}
 #	option = {
 #		name = fee_POL.9.b # Refuse to sign it and defy the Magnates (Road to absolutism)
@@ -191,19 +191,19 @@ country_event = {
 			factor = 10
 		}
 		random_owned_province = {
-		 limit = {
+			limit = {
 				continent = europe
 			}
 			polish_noble_rebels = 2
 		}
 		random_owned_province = {
-		 limit = {
+			limit = {
 				continent = europe
 			}
 			polish_noble_rebels = 2
 		}
 		random_owned_province = {
-		 limit = {
+			limit = {
 				continent = europe
 			}
 			polish_noble_rebels = 2
@@ -238,14 +238,14 @@ country_event = {
 		inherit = LIT
 		add_stability_or_adm_power = yes
 		hidden_effect = {
-		    add_country_modifier = {
+			   add_country_modifier = {
 			name = unia_mielnicka
 			duration = -1
-		                }
-		        }
+						   }
+				   }
 		}
 	option = {
-	    name = fee_POL.13.b # Do not push them to sign it
+		   name = fee_POL.13.b # Do not push them to sign it
 		ai_chance = {
 			factor = 95
 		}
@@ -272,25 +272,25 @@ country_event = {
 	option = {
 		name = fee_POL.14.a # I told you so
 		random_owned_province = {
-		 limit = {
+			limit = {
 				area = lithuania_area
 			}
 			nationalist_rebels = 3
 		}
 		random_owned_province = {
-		 limit = {
+			limit = {
 				region = ruthenia_region
 			}
 			nationalist_rebels = 3
 		}
 		random_owned_province = {
-		 limit = {
+			limit = {
 				region = ruthenia_region
 			}
 			nationalist_rebels = 3
 		}
 		random_owned_province = {
-		 limit = {
+			limit = {
 				region = ruthenia_region
 			}
 			nationalist_rebels = 3
@@ -317,7 +317,7 @@ country_event = {
 		is_year = 1500
 		NOT = { is_year = 1520 }
 	#   has_country_modifier =	pol_statut_piotrkowski
-	    has_country_modifier = pol_przywilej_mielnicki
+		   has_country_modifier = pol_przywilej_mielnicki
 		}
 
 	mean_time_to_happen = {
@@ -349,7 +349,7 @@ country_event = {
 		is_year = 1505
 		NOT = { is_year = 1515 }
 	#	has_country_modifier =	pol_statut_piotrkowski
-	    has_country_modifier = pol_przywilej_mielnicki
+		   has_country_modifier = pol_przywilej_mielnicki
 	}
 
 	mean_time_to_happen = {
@@ -361,7 +361,7 @@ country_event = {
 		remove_country_modifier = pol_przywilej_mielnicki
 		every_owned_province = {
 		add_local_autonomy = 15
-        }
+		}
 	}
 	option = {
 		name = fee_POL.16.b # NO power to nobles!
@@ -456,39 +456,36 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-        TEU = {
-            ai = yes
-        }
-        OR = {
-            AND = {
-                tag = POL
-                NOT = { exists = PLC }
-            }
-            tag = PLC
-        }
-        exists = TEU
-        OR = {
-           TEU = { is_subject_of = POL }
-           TEU = { is_subject_of = PLC }
-        }
-        NOT = {
-            exists = PRU
-        }
-        is_year = 1520
-        NOT = { is_year = 1540 }
-        is_religion_enabled = protestant
-        NOT = {
-            has_global_flag = cg_flag_cg_active
-        }
+		TEU = {
+			ai = yes
+		}
+		OR = {
+			AND = {
+				tag = POL
+				NOT = { exists = PLC }
+			}
+			tag = PLC
+		}
+		exists = TEU
+		OR = {
+		   TEU = { is_subject_of = POL }
+		   TEU = { is_subject_of = PLC }
+		}
+		NOT = {
+			exists = PRU
+		}
+		is_year = 1520
+		NOT = { is_year = 1540 }
+		is_religion_enabled = protestant
 	}
-    mean_time_to_happen = {
+	mean_time_to_happen = {
 		months = 120
 	}
 	option = {
 		name = fee_POL.18.a # Force them to create Prussia
 		TEU = { country_event = { id = fee_POL.22 } }
 	}
-    option = {
+	option = {
 		name = fee_POL.18.b # Do nothing
 	}
 }
@@ -510,12 +507,12 @@ country_event = {
 			}
 			tag = PLC
 		}
-       owns = 43
-       is_neighbor_of = PRU
-       religion = catholic
-     }
+	   owns = 43
+	   is_neighbor_of = PRU
+	   religion = catholic
+	 }
 
-	 mean_time_to_happen = {
+		mean_time_to_happen = {
 		months = 12
 	}
 
@@ -547,9 +544,6 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		NOT = {
-				has_global_flag = cg_flag_cg_active
-			}
 		OR = {
 			AND = {
 				tag = POL
@@ -557,24 +551,24 @@ country_event = {
 			}
 			tag = PLC
 		}
-       is_neighbor_of = LIV
-	   OR = {
-	   MOS = {
-	   owns = 1842
-	   owns = 1834 }
-	   RUS = {
-	   owns = 1842
-	   owns = 1834 }
+	   is_neighbor_of = LIV
+		  OR = {
+		  MOS = {
+		  owns = 1842
+		  owns = 1834 }
+		  RUS = {
+		  owns = 1842
+		  owns = 1834 }
 		}
 	}
-	 mean_time_to_happen = {
+		mean_time_to_happen = {
 		months = 12
 	}
-    option = {
+	option = {
 		name = fee_POL.20.a # Incoroporate Livonia
 		LIV = { country_event = { id = fee_POL.23 } }
 	}
-     option = {
+	 option = {
 		name = fee_POL.20.b # Do nothing
 		}
 }
@@ -595,26 +589,26 @@ country_event = {
 			}
 			tag = PLC
 		}
-       owns = 43
-	   is_year = 1560
-	   NOT = { is_year = 1580 }
-       }
+	   owns = 43
+		  is_year = 1560
+		  NOT = { is_year = 1580 }
+	   }
 
-	   mean_time_to_happen = {
+		  mean_time_to_happen = {
 		months = 120
 	}
 
-     option = {
+	 option = {
 		name = fee_POL.21.a # Sign
 		add_dip_power = -150
 		43 = {
 		add_province_modifier = {
-        name = statut_karnkowskiego
-        duration = -1
-        }
-      }
+		name = statut_karnkowskiego
+		duration = -1
+		}
+	  }
 	}
-     option = {
+	 option = {
 		name = fee_POL.21.b # It is unnecessary
 	}
 }
@@ -629,21 +623,17 @@ country_event = {
 
 	is_triggered_only = yes
 
-	trigger = {
-		NOT = {
-			has_global_flag = cg_flag_cg_active
-		}
-	}
-
 	option = {  	# Humble before Poland
-	 name = fee_POL.22.a
-	 change_tag = PRU
-	 change_religion = protestant
-	 capital_scope = {
+		name = fee_POL.22.a
+		change_tag = PRU
+
 		change_religion = protestant
-	 }
-	 change_government = feudal_monarchy
-	 }
+		capital_scope = {
+			change_religion = protestant
+		}
+		change_government_to_monarchy = yes
+		add_government_reform = feudal_monarchy
+	}
 }
 
 #From fee_POL.20
@@ -655,22 +645,16 @@ country_event = {
 
 	is_triggered_only = yes
 
-	trigger = {
-		NOT = {
-			has_global_flag = cg_flag_cg_active
-		}
-	}
-
 	option = {  	# Humble before Poland
-	 name = fee_POL.23.a
-	 FROM = { inherit = LIV}
-	 }
-	 option = {  	# We are too strong
-	 name = fee_POL.23.b
-	 FROM = { declare_war_with_cb = {
-     who = LIV
-     casus_belli = cb_annex
-	                         }
-	                   }
+		name = fee_POL.23.a
+		FROM = { inherit = LIV}
+		}
+		option = {  	# We are too strong
+		name = fee_POL.23.b
+		FROM = { declare_war_with_cb = {
+	 who = LIV
+	 casus_belli = cb_annex
+								}
+						  }
 	}
  }

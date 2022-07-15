@@ -89,10 +89,8 @@ insult_waterloo = {
 	insult_russia = {
 		trigger = {
 			FROM = {
-				NOT = {
-					culture_group = tartar
-					culture = russian
-				}
+				NOT = { culture_group = tartar }
+				NOT = { culture = russian }
 			}
 			tag = RUS
 		}
@@ -402,9 +400,8 @@ insult_waterloo = {
 
 	insult_carthago_delenda_est = {
 		trigger = {
-			FROM = { tag = ROM }
-			is_expanded_mod_active = { mod = missions }
-			tag = CTH
+			FROM = { culture_group = latin }
+			tag = TUN
 		}
 	}
 

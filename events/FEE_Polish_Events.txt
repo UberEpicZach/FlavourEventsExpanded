@@ -59,9 +59,12 @@ country_event = {
 		}
 		custom_tooltip = POLAND_RUTHENIA_TRUE_BELIEVERS
 		tooltip = {
-			add_province_modifier = {
-				name = pol_true_believers
-				duration = -1
+			random_owned_province = {
+				limit = { culture = ruthenian }
+				add_province_modifier = {
+					name = pol_true_believers
+					duration = -1
+				}
 			}
 		}
 		hidden_effect = {

@@ -126,7 +126,7 @@ country_event = {
 		hidden_effect = {
 			export_to_variable = {
 				which = 5_percent_of_development
-				value = total_development
+				value = trigger_value:total_development
 			}
 			multiply_variable = {
 				which = 5_percent_of_development
@@ -263,15 +263,15 @@ country_event = {
 			capital_scope = {
 				export_to_variable = {
 					variable_name = PRU_BRA_capital_tax
-					value = base_tax
+					value = trigger_value:base_tax
 				}
 				export_to_variable = {
 					variable_name = PRU_BRA_capital_production
-					value = base_production
+					value = trigger_value:base_production
 				}
 				export_to_variable = {
 					variable_name = PRU_BRA_capital_manpower
-					value = base_manpower
+					value = trigger_value:base_manpower
 				}
 			}
 			while = {
@@ -359,15 +359,15 @@ country_event = {
 				}
 				export_to_variable = {
 					which = PRU_BRA_capital_tax
-					value = base_tax
+					value = trigger_value:base_tax
 				}
 				export_to_variable = {
 					which = PRU_BRA_capital_production
-					value = base_production
+					value = trigger_value:base_production
 				}
 				export_to_variable = {
 					which = PRU_BRA_capital_manpower
-					value = base_manpower
+					value = trigger_value:base_manpower
 				}
 			}
 			subtract_variable = {
@@ -436,15 +436,15 @@ country_event = {
 			capital_scope = {
 				export_to_variable = {
 					variable_name = CURRENT_capital_tax
-					value = base_tax
+					value = trigger_value:base_tax
 				}
 				export_to_variable = {
 					variable_name = CURRENT_capital_production
-					value = base_production
+					value = trigger_value:base_production
 				}
 				export_to_variable = {
 					variable_name = CURRENT_capital_manpower
-					value = base_manpower
+					value = trigger_value:base_manpower
 				}
 			}
 		}

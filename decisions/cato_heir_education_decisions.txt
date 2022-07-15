@@ -2,10 +2,8 @@ country_decisions = {
 	educate_heir = {
 		major = yes
 		potential = {
-			NOT = {
-				government = theocracy
-				heir_age = 20
-			}
+			NOT = { government = theocracy }
+			NOT = { heir_age = 20 }
 			is_lesser_in_union = no
 			has_heir = yes
 			heir_age = 5

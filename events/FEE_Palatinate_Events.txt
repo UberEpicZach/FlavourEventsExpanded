@@ -349,6 +349,7 @@ country_event = {
 				limit = {
 					has_building = cathedral
 				}
+				add_base_tax = 1
 			}
 			else_if = {
 				limit = {
@@ -503,7 +504,6 @@ country_event = {
 			mil = 3
 			age = 40
 			claim = 100
-			fixed = yes
 			religion = reformed
 			culture = hessian
 		}

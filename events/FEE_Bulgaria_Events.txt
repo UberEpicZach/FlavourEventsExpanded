@@ -31,7 +31,7 @@ country_event = {
 			}
 			if = {
 				limit = {
-					not = {
+					NOT = {
 						has_building = fort_15th
 					}
 				}

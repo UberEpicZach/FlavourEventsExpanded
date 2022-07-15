@@ -64,7 +64,7 @@ country_event = {
 		months = 360
 		modifier = {
 			factor = 0.6
-			has_country_flag = fee_general_ture
+			has_country_modifier = fee_general_ture
 		}
 		modifier = {
 			factor = 1.3

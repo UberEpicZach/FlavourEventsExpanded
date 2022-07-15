@@ -40,10 +40,7 @@ country_event = {
 		33 = {
 			if = {
 				limit = {
-					NOT = {
-						has_building = shipyard
-						has_building = grand_shipyard
-					}
+					NOT = { has_shipyard_building_trigger = yes }
 				}
 				
 				add_building = grand_shipyard
@@ -65,10 +62,8 @@ country_event = {
 		33 = {
 			if = {
 				limit = {
-					NOT = {
-						has_building = coastal_defence
-						has_building = naval_battery
-					}
+					NOT = { has_building = coastal_defence }
+					NOT = { has_building = naval_battery }
 				}
 				
 				add_building = naval_battery
@@ -92,10 +87,7 @@ country_event = {
 			if = {
 				limit = {
 					NOT = {
-						has_building = fort_15th
-						has_building = fort_16th
-						has_building = fort_17th
-						has_building = fort_18th
+						fort_level = 1
 					}
 				}
 				

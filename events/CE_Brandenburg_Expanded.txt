@@ -57,7 +57,7 @@ country_event = {
 	
 	trigger = {
 		is_year = 1478
-		not = { is_year = 1490}
+		NOT = { is_year = 1490}
 		tag = BOH
 		BRA = {
 			has_country_flag = CE_barbara_von_hohenzollern_marriage
@@ -2487,7 +2487,7 @@ country_event = {
 	}
 	option = {
 		name = CE_brandenburg_expanded.38.a
-		change_innovativeness = 2.5
+		change_innovativeness = 2
 		add_papal_influence = 5
 	}
 }
@@ -2654,7 +2654,6 @@ country_event = {
 					adm = 2
 					dip = 2
 					mil = 2
-					fixed = yes
 					regency = yes
 				}
 			}
