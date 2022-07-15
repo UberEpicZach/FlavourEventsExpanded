@@ -1,0 +1,339 @@
+namespace = disaster_fee_netherlands_rampjaar
+
+#Rampjaar
+country_event = {
+	id = disaster_fee_netherlands_rampjaar.1
+	title = disaster_fee_netherlands_rampjaar.1.T
+	desc = disaster_fee_netherlands_rampjaar.1.D
+	picture = BAD_WITH_MONARCH_eventPicture
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = disaster_fee_netherlands_rampjaar.1.OPT1
+
+		add_stability = -2
+		set_country_flag = had_fee_netherlands_rampjaar
+	}
+}
+
+#The Rampjaar has Ended
+country_event = {
+	id = disaster_fee_netherlands_rampjaar.2
+	title = disaster_fee_netherlands_rampjaar.2.T
+	desc = disaster_fee_netherlands_rampjaar.2.D
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = disaster_fee_netherlands_rampjaar.2.OPT1
+
+		add_stability_or_adm_power = yes
+		add_country_modifier = {
+			name = fee_disaster_netherlands_survived_rampjaar
+			duration = 18250
+		}
+	}
+}
+
+#[Root.Monarch.GetName] and the Mob
+country_event = {
+	id = disaster_fee_netherlands_rampjaar.3
+	title = disaster_fee_netherlands_rampjaar.3.T
+	desc = disaster_fee_netherlands_rampjaar.3.D
+	picture = LAND_MILITARY_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = disaster_fee_netherlands_rampjaar.3.OPT1
+
+		add_stability = -2
+		add_prestige = -20
+		kill_ruler = yes
+		kill_advisor_by_category_effect = { ADM = yes }
+		kill_advisor_by_category_effect = { DIP = yes }
+		kill_advisor_by_category_effect = { MIL = yes }
+		capital_scope = {
+			leadered_peasant_rebels = 1
+		}
+		every_neighbor_country = {
+			add_opinion = {
+				who = ROOT
+				modifier = fee_disaster_netherlands_cannibals
+			}
+		}
+	}
+}
+
+#Panic in the Netherlands
+country_event = {
+	id = disaster_fee_netherlands_rampjaar.4
+	title = disaster_fee_netherlands_rampjaar.4.T
+	desc = disaster_fee_netherlands_rampjaar.4.D
+	picture = ANGRY_MOB_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					
+					is_state = yes
+				}
+				save_event_target_as = rebel_province_1
+			}
+			random_owned_province = {
+				limit = {
+					
+					is_state = yes
+				}
+				save_event_target_as = rebel_province_2
+			}
+			random_owned_province = {
+				limit = {
+					
+					is_state = yes
+				}
+				save_event_target_as = rebel_province_3
+			}
+			random_owned_province = {
+				limit = {
+					is_state = yes
+					NOT = { province_id = event_target:rebel_province_1 }
+					NOT = { province_id = event_target:rebel_province_3 }
+				}
+				save_event_target_as = rebel_province_2
+			}
+			random_owned_province = {
+				limit = {
+					is_state = yes
+					NOT = { province_id = event_target:rebel_province_2 }
+					NOT = { province_id = event_target:rebel_province_3 }
+				}
+				save_event_target_as = rebel_province_1
+			}
+		}
+	}
+	option = {
+		name = disaster_fee_netherlands_rampjaar.4.OPT1
+
+		event_target:rebel_province_1 = {
+			particularist_rebels = 3
+		}
+		event_target:rebel_province_2 = {
+			particularist_rebels = 3
+		}
+		event_target:rebel_province_3 = {
+			particularist_rebels = 3
+		}
+	}
+}
+
+#Orangist Coup
+country_event = {
+	id = disaster_fee_netherlands_rampjaar.5
+	title = disaster_fee_netherlands_rampjaar.5.T
+	desc = disaster_fee_netherlands_rampjaar.5.D
+	picture = BATTLE_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		OR = {
+			government = republic
+			government = monarchy
+		}
+	}
+
+	option = {
+		name = disaster_fee_netherlands_rampjaar.5.OPT1
+
+		if = {
+			limit = {
+				government = republic
+			}
+			if = {
+				limit = {
+					has_reform = dutch_republic
+				}
+				change_statists_vs_orangists = 1
+			}
+			else = {
+				add_republican_tradition = -20
+			}
+			define_ruler = {
+				name = "Willem"
+				dynasty = "van Oranje"
+				adm = 4
+				dip = 6
+				mil = 4
+				claim = 90
+			}
+		}
+		else = {
+			add_legitimacy = -30
+			define_ruler = {
+				name = "Willem"
+				dynasty = "van Oranje"
+				adm = 4
+				dip = 6
+				mil = 4
+				claim = 90
+			}
+		}
+	}
+
+	option = {
+		name = disaster_fee_netherlands_rampjaar.5.OPT2
+
+		if = {
+			limit = {
+				government = republic
+			}
+			if = {
+				limit = {
+					has_reform = dutch_republic
+				}
+				change_statists_vs_orangists = -1
+			}
+			else = {
+				add_stability = -1
+			}
+			random_owned_province = {
+				limit = {
+					is_state = yes
+					development = 10
+				}
+				spawn_rebels = {
+					size = 3
+					type = pretender_rebels
+				}
+			}
+		}
+		else = {
+			add_stability = -1
+			random_owned_province = {
+				limit = {
+					development = 10
+				}
+				spawn_rebels = {
+					size = 3
+					type = pretender_rebels
+				}
+			}
+		}
+	}
+}
+
+#Imperial Intervention
+country_event = {
+	id = disaster_fee_netherlands_rampjaar.6
+	title = disaster_fee_netherlands_rampjaar.6.T
+	desc = disaster_fee_netherlands_rampjaar.6.D
+	picture = IMPERIAL_SEAL_eventPicture-+
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		any_country = {
+			ROOT = { defensive_war_with = THIS }
+		}
+		NOT = { is_part_of_hre = yes }
+		emperor = {
+			ai = yes
+			NOT = {
+				war_with = ROOT
+			}
+		}
+	}
+
+	option = {
+		name = disaster_fee_netherlands_rampjaar.6.OPT1
+
+		add_prestige = -20
+		create_alliance = emperor
+		emperor = {
+			join_all_defensive_wars_of = ROOT
+		}
+	}
+
+	option = {
+		name = disaster_fee_netherlands_rampjaar.6.OPT2
+
+		add_stability_or_adm_power = yes
+	}
+}
+
+#Disloyalty in the Army
+country_event = {
+	id = disaster_fee_netherlands_rampjaar.7
+	title = disaster_fee_netherlands_rampjaar.7.T
+	desc = disaster_fee_netherlands_rampjaar.7.D
+	picture = LAND_MILITARY_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = disaster_fee_netherlands_rampjaar.7.OPT1
+
+		add_country_modifier = {
+			name = fee_disaster_netherlands_paralyzed_army
+			duration = 3650
+		}
+	}
+}
+
+#Economic Downturn
+country_event = {
+	id = disaster_fee_netherlands_rampjaar.8
+	title = disaster_fee_netherlands_rampjaar.8.T
+	desc = disaster_fee_netherlands_rampjaar.8.D
+	picture = CORRUPTION_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = disaster_fee_netherlands_rampjaar.8.OPT1
+
+		add_country_modifier = {
+			name = fee_disaster_netherlands_trade_advantage_lost
+			duration = 3650
+		}
+		random_owned_province = {
+			add_base_production = -2
+		}
+	}
+}
+
+#More Economic Downturn
+country_event = {
+	id = disaster_fee_netherlands_rampjaar.9
+	title = disaster_fee_netherlands_rampjaar.9.T
+	desc = disaster_fee_netherlands_rampjaar.9.D
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+	trigger = {
+		has_country_modifier = fee_disaster_netherlands_trade_advantage_lost
+	}
+
+	option = {
+		name = disaster_fee_netherlands_rampjaar.9.OPT1
+
+		add_country_modifier = {
+			name = fee_disaster_netherlands_more_economic_downturn
+			duration = 3650
+		}
+		random_owned_province = {
+			add_base_production = -2
+		}
+	}
+}

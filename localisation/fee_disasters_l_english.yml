@@ -7,6 +7,8 @@
  fee_pashtun_uprising: "Pashtun Uprising"
  fee_zemene_mesafint: "Zemene Mesafint"
  fee_crisis_of_the_mughal_empire: "Crisis of the Mughal Empire"
+  fee_italy_republican_matter_disaster: "The Republican Matter"
+ fee_netherlands_rampjaar: "Rampjaar"
 
  # Events:
  disaster_fee_portuguese_succession_crisis.EVTNAME1: "Portuguese Succession Crisis"
@@ -511,6 +513,64 @@
  disaster_fee_crisis_of_the_mughal_empire.EVTDESC15: "Once a beacon of efficient and loyal administration, the bureaucrats of our nation now take bribes on the regular and work not for us but for themselves."
  disaster_fee_crisis_of_the_mughal_empire15.EVTOPT1: "Disgusting!"
 
+ #Italy
+  disaster_fee_italy_events.2.T: "A New State"
+  disaster_fee_italy_events.2.D: "There they stood who fought valiantly for their ideals. There they stood who fought heroically for a new day. Their last breath was clear \"Will we feel the power of freedom with the dawn of a new day?\". \nThis decision is now ours to take."
+  disaster_fee_italy_events.2.OPT1: "A new Constitution"
+  disaster_fee_italy_events.2.OPT2: "The king reigns but does not rule"
+  disaster_fee_italy_events.2.OPT3: "Why should we change?"
+ 
+  disaster_fee_italy_events.1.T: "A Republican Matter"
+  disaster_fee_italy_events.1.D: "The newly founded state has been struggling with the government organization and trying to meet the demand of its citizen with the authority given by the tradition of old."
+  disaster_fee_italy_events.1.OPT1: "We must be careful"
+ 
+  disaster_fee_italy_events.3.T: "Giovine Italia"
+  disaster_fee_italy_events.3.D: "The goal of these revolutionaries is to transform Italy into a unitary democratic republic, according to the principles of freedom, independence and unity, by dismissing the governments of the previous pre-unification states."
+  disaster_fee_italy_events.3.OPT1: "They won't win"
+ 
+  disaster_fee_italy_events.4.T: "King's Aider"
+  disaster_fee_italy_events.4.D: "A republic in our land? I think not. We have dismissed so many other republic when they rose against the Viceroys, and we will defy this one as well."
+  disaster_fee_italy_events.4.OPT1: "They won't win"
+
+ #Dutch
+  disaster_fee_netherlands_rampjaar.1.T: "Rampjaar"
+  disaster_fee_netherlands_rampjaar.1.D: "A combination of external threats, internal strife, and incompetent leadership has created a perfect storm in the Netherlands. The very survival of the Dutch nation is at risk, and parties lamenting the end of our independence and prosperity have labelled it thusly: the Dutch people are redeloos ("irrational"), our government is radeloos ("distraught"), and the country is reddeloos ("beyond salvation")."
+  disaster_fee_netherlands_rampjaar.1.OPT1: "Disastrous!"
+
+  disaster_fee_netherlands_rampjaar.2.T: "The Rampjaar has Ended"
+  disaster_fee_netherlands_rampjaar.2.D: "Much damage has been done, but the perfect storm that threatened the downfall of our nation itself has dissipated. Now the work of rebuilding must begin."
+  disaster_fee_netherlands_rampjaar.2.OPT1: "Now thank we all our God!"
+
+  disaster_fee_netherlands_rampjaar.3.T: "[Root.Monarch.GetName] and the Mob"
+  disaster_fee_netherlands_rampjaar.3.D: "Discontent with the dire situation of the Netherlands has led to a search for scapegoat among the populace. The incompetent rule of [Root.Monarch.GetName] made both him and his cabinet a natural target of the people's anger. A plot was quickly devised to rid the nation of their influence. Using a staged peasant revolt as a diversion to distract the Stadtholder's guards, [Root.Monarch.GetName] as well as his brother were seized by a gathered crowd in [Root.Capital.GetName], including the town militia. \nFollowing their seizure by the mob, an unanticipated and truly ghastly scene unfolded, as the brothers were brutally murdered by the mob. Their naked, mutilated bodies were then strung up and paraded by the crowd, and their livers were even eaten by the mob in a cannibalistic frenzy. Through it all, the mob remained remarkably organized and disciplined, leading many to doubt that such a scene, horrid as it was, could have been unplanned. This realization prompted the entire cabinet to flee the country in fear for their own lives. This event would be remembered as one of the darkest hours in Dutch history."
+  disaster_fee_netherlands_rampjaar.3.OPT1: "A black day in our history!"
+
+  disaster_fee_netherlands_rampjaar.4.T: "Panic in the Netherlands"
+  disaster_fee_netherlands_rampjaar.4.D: "The turmoil our nation is experiencing has undermined the certainty and stability that provided the Netherlands with one of it's main economic advantages for decades. Especially, it gave Dutch ports the reputation of being safe ports where commercial and property rights were protected. Merchants have begun to shy away from our ports because of this loss of stability, leading to a widespread concern among citizens of an economic downturn. These concerns have rapidly turned into complete panic, and in several cities rioting and looting has broken out."
+  disaster_fee_netherlands_rampjaar.4.OPT1: "Order must be restored!"
+
+  disaster_fee_netherlands_rampjaar.5.T: "Orangist Coup"
+  disaster_fee_netherlands_rampjaar.5.D: "Taking advantage of the chaos caused by this disaster, the house of Oranje, having long been jealous of competing political forces, seek to scapegoat their political enemies and secure their own power."
+  disaster_fee_netherlands_rampjaar.5.OPT1: "Heed the Orangists!"
+  disaster_fee_netherlands_rampjaar.5.OPT2: "Ignore these rabble-rousers!"
+
+  disaster_fee_netherlands_rampjaar.6.T: "Imperial Intervention"
+  disaster_fee_netherlands_rampjaar.6.D: "Although the Netherlands seceded from the Holy Roman Empire upon its formation, the Emperor has never forgotten his claim on our lands. However, ever has the Empire favored diplomacy over direct confrontation, and our current predicament has presented the opportunity of a lifetime for Imperial diplomacy. \nThe Emperor has approached us offering his protection in exchange for our commitment to aid him in the future against his own enemies. While this may result in a valuable alliance and military aid in a desperate situation, this also compromises our own diplomatic independence."
+  disaster_fee_netherlands_rampjaar.6.OPT1: "Accept this deal!"
+  disaster_fee_netherlands_rampjaar.6.OPT2: "We have never needed the Empire!"
+
+  disaster_fee_netherlands_rampjaar.7.T: "Disloyalty in the Army"
+  disaster_fee_netherlands_rampjaar.7.D: "Discouraged by our inability to maintain order, many in the army are deserting, and the ones that remain are demoralized and fail to even maintain even basic order in their ranks. Their officers mostly do not attempt to remedy this, being demoralized themselves, and even those who do are unable to break the apathy that has descended on the army like a dark cloud."
+  disaster_fee_netherlands_rampjaar.7.OPT1: "Something must be done!"
+
+  disaster_fee_netherlands_rampjaar.8.T: "Economic Downturn"
+  disaster_fee_netherlands_rampjaar.8.D: "The turmoil our nation is experiencing has undermined the certainty and stability that provided the Netherlands with one of it's main economic advantages for decades. Especially, it gave Dutch ports the reputation of being safe ports where commercial and property rights were protected. \nWith foreign trade being the very life-blood of our economy, this withdrawal has undermined our entire economic base. As the effect of this ripples throughout our economy, it will inevitably do severe and possibly irreversible damage to us."
+  disaster_fee_netherlands_rampjaar.8.OPT1: "There is nothing we can do"
+
+  disaster_fee_netherlands_rampjaar.9.T: "More Economic Downturn"
+  disaster_fee_netherlands_rampjaar.9.D: "The chaos caused by our inner turmoil has reduced our ability to compete in trade. This, as well as the instability itself, has had catastrophic effects on our production of goods as well, for both domestic and foreign trade."
+  disaster_fee_netherlands_rampjaar.9.OPT1: "What else could go wrong?"
+
  # Modifiers:
  fee_portuguese_succession_crisis_chaste_king: "Chaste King"
  fee_portuguese_succession_crisis_invasion_imminent: "Spanish Invasion Imminent"
@@ -559,6 +619,11 @@
  fee_crisis_of_the_mughal_empire_mughal_economic_collapse: "Mughal Economic Collapse"
  fee_crisis_of_the_mughal_empire_unpaid_army: "Unpaid Army"
 
+ fee_disaster_netherlands_survived_rampjaar: "Survived Rampjaar"
+ fee_disaster_netherlands_paralyzed_army: "Paralyzed Army"
+ fee_disaster_netherlands_trade_advantage_lost: "Trade Advantage Lost"
+ fee_disaster_netherlands_more_economic_downturn: "More Economic Downturns"
+
  # Opinion Modifiers:
  fee_portuguese_succession_crisis_acceptance: "Holy Father Accepted"
  fee_portuguese_succession_crisis_rejection: "Holy Father Refused"
@@ -570,6 +635,26 @@
  fee_division_of_the_habsburg_monarchy_acceptance: "Accepted Proposal"
 
  fee_partition_of_poland_black_eagles_alliance_opinion: "Black Eagles"
+
+ fee_disaster_netherlands_cannibals: "Cannibals"
+
+ # Flags
+  had_fee_netherlands_rampjaar: "Rampjaar"
+
+ # Rebels
+  ita_republican_rebels_title: "Giovine Italia"
+  ita_republican_rebels_name: "Giovine Italia"
+  ita_republican_rebels_desc: "The goal of these revolutionaries is to transform Italy into a unitary democratic republic, according to the principles of freedom, independence and unity, by dismissing the governments of the previous pre-unification states."
+  ita_republican_rebels_demand: "Install a Constitutional Republic"
+  ita_republican_rebels_demand_desc: "These Republican rebels fight to overthrow the government and install a constitutional republic where the citiziens will be protected by any oppression."
+  ita_republican_rebels_army: "Armata di Giovine Italia"
+ 
+  ita_monarchy_rebels_title: "Monarchici"
+  ita_monarchy_rebels_name: "Monarch Aider"
+  ita_monarchy_rebels_desc: "A republic in our land? I think not. We have dismissed so many other republic when they rose against the Viceroys, and we will defy this one as well."
+  ita_monarchy_rebels_demand: "Install a Parliamentary Monarchy"
+  ita_monarchy_rebels_demand_desc: "These Monarchy rebels fight to overthrow the government and install a parliamentary monarchy where the rule will reign supreme."
+  ita_monarchy_rebels_army: "Armata dei Monarchici"
 
  # Estate Modifiers:
  EST_VAL_FEE_PARTITION_OF_POLAND_CONFEDERATION_OF_BAR: "Confederation of Bar: §Y$VAL$%§!"
@@ -624,3 +709,6 @@
 
  FEE_CRISIS_OF_THE_MUGHAL_EMPIRE_LESS_THAN_0_TOLERANCE_OF_HEATHENS_TT: "Our §YTolerance of Heathens§! is less than §Y0§!"
  FEE_CRISIS_OF_THE_MUGHAL_EMPIRE_RULER_STATS_LESS_THAN_6_TOTAL_TT: "The combined amount of the ruler skills of §Y[This.Monarch.GetName]§! is less than §Y6§!"
+
+ ITA_DISASTER_REPUBLICAN_TT: "One of the followign must be true:\n    §YRepublican§! or §YMonarchist§! rebels enforce their demand\n    The disaster has been going for at least §Y15 years§!"
+ ITA_REPUBLICAN_MATTER_TT: "In the next years Republicans in the North and Monarchist in the South of Italy will rise to try impose their view. One of them might calm down only if we decide to become either: \nAny Monarchy with a §YParliament§! \n§YConstitutional Republic§!"

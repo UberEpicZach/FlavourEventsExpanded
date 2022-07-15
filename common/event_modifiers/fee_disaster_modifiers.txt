@@ -195,3 +195,18 @@ fee_crisis_of_the_mughal_empire_mughal_economic_collapse = {
 fee_crisis_of_the_mughal_empire_unpaid_army = {
     discipline = -0.05
 }
+
+# Netherlands
+fee_disaster_netherlands_survived_rampjaar = {
+	land_morale = 0.05
+	naval_morale = 0.10
+}
+fee_disaster_netherlands_paralyzed_army = {
+	infantry_power = -0.10
+}
+fee_disaster_netherlands_trade_advantage_lost = {
+	global_trade_power = -0.10
+}
+fee_disaster_netherlands_more_economic_downturn = {
+	global_trade_goods_size_modifier = -0.10
+}

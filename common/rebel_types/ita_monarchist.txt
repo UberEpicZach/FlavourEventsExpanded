@@ -81,7 +81,7 @@ ita_monarchy_rebels = {
 	demands_enforced_effect = {
 		hidden_effect = {
 			clr_country_flag = ita_republican_matter
-			set_country_flag = ita_republican_matter_subversed
+			set_country_flag = fee_ita_republican_matter_subversed
 		}
 		add_prestige = -10
 		if = {

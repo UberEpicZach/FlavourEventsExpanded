@@ -1,4 +1,4 @@
-italy_republican_matter_disaster = {
+fee_italy_republican_matter_disaster = {
 	potential = {
 		tag = ITA
 		italy_region = {
@@ -9,7 +9,7 @@ italy_republican_matter_disaster = {
 			current_age = age_of_absolutism
 			current_age = age_of_revolutions
 		}
-		NOT = { has_country_flag = ita_republican_matter_subversed }
+		NOT = { has_country_flag = fee_ita_republican_matter_subversed }
 	}
 	can_start = {
 		has_any_disaster = no
@@ -83,7 +83,7 @@ italy_republican_matter_disaster = {
 		custom_trigger_tooltip = {
 			tooltip = ITA_DISASTER_REPUBLICAN_TT
 			OR = {
-				has_country_flag = ita_republican_matter_subversed
+				has_country_flag = fee_ita_republican_matter_subversed
 				had_country_flag = {
 					flag = ita_republican_matter
 					days = 5475
@@ -104,16 +104,16 @@ italy_republican_matter_disaster = {
 		meritocracy = -2
 	}
 
-	on_start = FEE_Italy_Disaster_Events.1
-	on_end = FEE_Italy_Disaster_Events.2
+	on_start = disaster_fee_italy_events.1
+	on_end = disaster_fee_italy_events.2
 	
 	on_monthly = {
 		events = {
 		}
 		random_events = {
 			1600 = 0
-			100 = FEE_Italy_Disaster_Events.3
-			100 = FEE_Italy_Disaster_Events.4 
+			100 = disaster_fee_italy_events.3
+			100 = disaster_fee_italy_events.4 
 		}
 	}
 }
