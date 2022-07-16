@@ -10,27 +10,19 @@
  FEE_Wars_Italy_Events.101.OPT2: "Naples must not be subjugated!"
  FEE_Wars_Italy_Events.101.OPT3: "We will stand aside"
 
- FEE_Wars_Italy_Events.200.T: "Cavalry"
- FEE_Wars_Italy_Events.200.D: "Heavy cavalry - the latest evolution of medieval armored knights - remained the protagonist in the battlefields of the Italian wars. The French gendarmes generally proved to be the most effective against the horse troops of the other states, mainly because of the excellent horses in their possession. The Spaniards used a type of cavalry called Jinete in their sorties."
- FEE_Wars_Italy_Events.200.OPT1: "To Charge!"
+ FEE_Wars_Italy_Events.200.T: "Guerra su Napoli"
+ FEE_Wars_Italy_Events.200.D: "It's 1498, after the death of Charles VIII his cousin [FRA.Monarch.GetName] duke of Orleans has risen to the throne, after the Guerra del Gesso, the first Italian War, has spread bllod all over Italy with the French claim on the Napolitan throne Italy is still in turmoil and the Dukedom of Milan, home of our grandmother Valentina Visconti is now vacant and it could be once claimed for eternity. We have already tried to claim the city of Milan during the first campaign of cousin Charles VIII when we occupied Novara from Ludovico Sforza, but sadly back then we failed due to the intervetion of the Holy League lead by Venetian and Milanese forces. Now due to the strenght of the Venetian and the isolation of the Milanese throne we might be able to reclaim our place in the Italian affairs."
+ FEE_Wars_Italy_Events.200.OPT1: "Their throne is ours"
+ FEE_Wars_Italy_Events.200.OPT2: "We can't risk this war"
 
- FEE_Wars_Italy_Events.300.T: "Cavalry"
- FEE_Wars_Italy_Events.300.D: "Heavy cavalry - the latest evolution of medieval armored knights - remained the protagonist in the battlefields of the Italian wars. The French gendarmes generally proved to be the most effective against the horse troops of the other states, mainly because of the excellent horses in their possession. The Spaniards used a type of cavalry called Jinete in their sorties."
- FEE_Wars_Italy_Events.300.OPT1: "To Charge!"
-
- FEE_Wars_Italy_Events.400.T: "Artillery"
- FEE_Wars_Italy_Events.400.D: "The Italian wars saw artillery, especially field artillery, take on an indispensable role in any first-rate army. Charles VIII, during his invasion of Italy, brought with him a truly mobile siege procession, consisting of culverins and bombards mounted on wheeled trolleys, which could be deployed against an enemy fortress immediately upon arrival. The French siege arsenal brought with it several technological innovations. Charles's army used horses to pull cannons rather than the oxen typically used up to that time. Furthermore, French cannons, forged in the same methods used to produce bronze bells, boasted a previously unknown lightness and mobility. The most important improvement of the French however was the creation of iron cannonballs. Before the Italian wars, artillery fired stone balls that often shattered upon impact. The invention of water mills allowed the operation of furnaces with a temperature sufficient to melt the iron in order to make cannon balls. With this technology, Charles's army could conquer, within a few hours, walls and castles that had previously resisted sieges for months or even years. \n\nThe armies of the Italian wars were led by a great variety of commanders, from mercenaries to noble leaders up to the king himself."
- FEE_Wars_Italy_Events.400.OPT1: "Tear them down!"
-
- FEE_Wars_Italy_Events.500.T: "Forts"
- FEE_Wars_Italy_Events.500.D: "Most of the fighting that took place during the Italian wars took place during the sieges. That of the first descent of Charles VIII in Italy is traditionally considered the initial date of the development of the fortification to the modern, which will lead to the birth of increasingly complex fortified systems during the subsequent invasions. The army of Charles VIII in fact had a modern artillery in front of which many antiquated medieval castles had to succumb. These systems will soon spread throughout Europe, initially by Italian engineers."
- FEE_Wars_Italy_Events.500.OPT1: "They won't fall"
+ FEE_Wars_Italy_Events.201.T: "Chiamata alle Armi"
+ FEE_Wars_Italy_Events.201.D: "And now the War has been brought over the prosperous lands of Italy and hell will unleash on the flourishing Peninsula that saw peace in the past 5 years. \nThe King of France has declared his Vassalization attempt on the Dukedom of Milan and we must decide, who will we side with, France or Milan?"
+ FEE_Wars_Italy_Events.201.OPT1: "We will help France in his claims!"
+ FEE_Wars_Italy_Events.201.OPT2: "Mialn must not be subjugated!"
+ FEE_Wars_Italy_Events.201.OPT3: "We will stand aside"
 
  #Modifiers
- fee_italian_wars_infantry: "Musketeers for everyone!"
- fee_italian_wars_cavalry: "Heavy Cavalry is the Protagonist!"
- fee_italian_wars_artillery: "Field Artillery for the first time"
- fee_italian_wars_forts: "A Star Fort?"
 
  #Tooltips
- FIRST_ITALIAN_WARS_TT: "Many of the Italian Nations, between Milan, Venice, the Papal State, as well as the Spanish Crown might interfere into this war"
+ FIRST_ITALIAN_WARS_TT: "Many of the Italian Nations, between Milan, Venice, the Papal State, as well as the Spanish Crown might interfere into this war. We will try to ask for help from the Milanese and Ferrarese families."
+ SECOND_ITALIAN_WARS_TT: "Many of the Italian Nations, like Milan, Naples as well as the Spanish Crown might interfere into this war. We will try to ask for help from the Venetian, the Holy See and the Swiss Cantons on our side."
