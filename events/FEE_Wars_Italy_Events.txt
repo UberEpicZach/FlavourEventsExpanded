@@ -259,6 +259,7 @@ country_event = {
 	}
 }
 
+
 #Second Italian War
 country_event = {
 	id = FEE_Wars_Italy_Events.200
@@ -494,6 +495,7 @@ country_event = {
 	}
 }
 
+
 #Third Italian War
 country_event = {
 	id = FEE_Wars_Italy_Events.300
@@ -695,7 +697,6 @@ country_event = {
 	}
 }
 
-
 #Chiamata alle Armi
 country_event = {
 	id = FEE_Wars_Italy_Events.301
@@ -841,6 +842,7 @@ country_event = {
 		add_prestige = -12
 	}
 }
+
 
 #Fourth Italian War
 country_event = {
@@ -1121,6 +1123,7 @@ country_event = {
 		add_prestige = -12
 	}
 }
+
 
 #Fifth Italian War
 country_event = {
@@ -1480,6 +1483,7 @@ country_event = {
 	}
 }
 
+
 #Sixth Italian War
 country_event = {
 	id = FEE_Wars_Italy_Events.600
@@ -1720,6 +1724,7 @@ country_event = {
 		add_prestige = -12
 	}
 }
+
 
 #Seventh Italian War
 country_event = {
@@ -1997,7 +2002,8 @@ country_event = {
 	}
 }
 
-#Guerra Asburgo-Valois
+
+#Eight Italian War
 country_event = {
 	id = FEE_Wars_Italy_Events.800
 	title = FEE_Wars_Italy_Events.800.T
