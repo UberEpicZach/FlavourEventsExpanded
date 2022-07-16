@@ -229,7 +229,7 @@ country_event = {
 	trigger = {
 		check_variable = {
 			which = FEE_JEW_APPROVE
-			value = 50
+			value = 33
 		}
 		OR = {
 			NOT = { has_country_flag = fee_jews_medic }
@@ -250,10 +250,24 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		years = 25
+		years = 15
 		modifier = {
 			factor = 1.25
 			religious_ideas = 3
+		}
+		modifier = {
+			factor = 0.25
+			check_variable = {
+				which = FEE_JEW_APPROVE
+				value = 50
+			}
+		}
+		modifier = {
+			factor = 0.33
+			check_variable = {
+				which = FEE_JEW_CITY_APPROVE
+				value = 25
+			}
 		}
 	}
 
