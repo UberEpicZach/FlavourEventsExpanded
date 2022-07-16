@@ -1,6 +1,6 @@
 ﻿l_english:
  FEE_Wars_Italy_Events.100.T: "Guerra del Gesso"
- FEE_Wars_Italy_Events.100.D: "The little more than twenty year old King of France [FRA.Monarch.GetName], through his paternal grandmother, Maria of Anjou (1404-1463), claimed a distant hereditary right to the crown of the Kingdom of Naples. In 1492 he directed the resources of his kingdom towards the conquest of that realm, encouraged by Ludovico Sforza, called Il Moro (who was not yet Duke of Milan but was only its regent) and urged by his advisors, Guillaume Briçonnet and de Vers. \nThe reconquest of the largest kingdom of the Peninsula, already ruled by the House of Anjou (from 1282 to 1442), did not include, in the projects of Charles, Sicily. Through the conquest of the kingdom of Naples the king of France could have not simply increased the dominions of his House, an ambition common to many Middle-European or Anglo-Saxon ruling houses, but rather to make them the starting point for those Crusades whose echo had been reinvigorated by the expulsion of the Arabs from the last Spanish possession, the Kingdom of Granada (1492). The political project of Res Publica Christiana Pro Recuperanda Terra Sancta still had a hold in the European aristocracies, despite the fact that the eight Crusades aimed at realizing it ended in disaster. The King of France himself, Louis IX, lost his life during the Eighth Crusade. Acre, the last Christian stronghold, fell definitively in 1291."
+ FEE_Wars_Italy_Events.100.D: "The little more than twenty year old King of France [FRA.Monarch.GetName], through his paternal grandmother, Maria of Anjou (1404-1463), claimed a distant hereditary right to the crown of the Kingdom of Naples. In 1492 he directed the resources of his kingdom towards the conquest of that realm, encouraged by Ludovico Sforza, called Il Moro (who was not yet Duke of Milan but was only its regent) and urged by his advisors, Guillaume Briçonnet and de Vers. \nThe reconquest of the largest kingdom of the Peninsula, already ruled by the House of Anjou (from 1282 to 1442), did not include, in the projects of [SPA.Monarch.GetName], Sicily. Through the conquest of the kingdom of Naples the king of France could have not simply increased the dominions of his House, an ambition common to many Middle-European or Anglo-Saxon ruling houses, but rather to make them the starting point for those Crusades whose echo had been reinvigorated by the expulsion of the Arabs from the last Spanish possession, the Kingdom of Granada (1492). The political project of Res Publica Christiana Pro Recuperanda Terra Sancta still had a hold in the European aristocracies, despite the fact that the eight Crusades aimed at realizing it ended in disaster. The King of France himself, Louis IX, lost his life during the Eighth Crusade. Acre, the last Christian stronghold, fell definitively in 1291."
  FEE_Wars_Italy_Events.100.OPT1: "Their throne is ours"
  FEE_Wars_Italy_Events.100.OPT2: "We can't risk this war"
 
@@ -11,7 +11,7 @@
  FEE_Wars_Italy_Events.101.OPT3: "We will stand aside"
 
  FEE_Wars_Italy_Events.200.T: "Guerra su Napoli"
- FEE_Wars_Italy_Events.200.D: "It's 1498, after the death of Charles VIII his cousin [FRA.Monarch.GetName] duke of Orleans has risen to the throne, after the Guerra del Gesso, the first Italian War, has spread bllod all over Italy with the French claim on the Napolitan throne Italy is still in turmoil and the Dukedom of Milan, home of our grandmother Valentina Visconti is now vacant and it could be once claimed for eternity. We have already tried to claim the city of Milan during the first campaign of cousin Charles VIII when we occupied Novara from Ludovico Sforza, but sadly back then we failed due to the intervetion of the Holy League lead by Venetian and Milanese forces. Now due to the strenght of the Venetian and the isolation of the Milanese throne we might be able to reclaim our place in the Italian affairs."
+ FEE_Wars_Italy_Events.200.D: "It's 1498, after the death of [SPA.Monarch.GetName] VIII his cousin [FRA.Monarch.GetName] duke of Orleans has risen to the throne, after the Guerra del Gesso, the first Italian War, has spread bllod all over Italy with the French claim on the Napolitan throne Italy is still in turmoil and the Dukedom of Milan, home of our grandmother Valentina Visconti is now vacant and it could be once claimed for eternity. We have already tried to claim the city of Milan during the first campaign of cousin [SPA.Monarch.GetName] VIII when we occupied Novara from Ludovico Sforza, but sadly back then we failed due to the intervetion of the Holy League lead by Venetian and Milanese forces. Now due to the strenght of the Venetian and the isolation of the Milanese throne we might be able to reclaim our place in the Italian affairs."
  FEE_Wars_Italy_Events.200.OPT1: "Their throne is ours"
  FEE_Wars_Italy_Events.200.OPT2: "We can't risk this war"
 
@@ -31,9 +31,36 @@
  FEE_Wars_Italy_Events.301.OPT1: "We will help France in his claims!"
  FEE_Wars_Italy_Events.301.OPT2: "Venice must not be destroyed!"
  FEE_Wars_Italy_Events.301.OPT3: "We will stand aside"
+
+ FEE_Wars_Italy_Events.400.T: "Guerra dei Quattro Anni"
+ FEE_Wars_Italy_Events.400.D: "Following the Battle of Marignano in 1515, a period of peace had been established in Europe, which, however, slowly fell apart by the beginning of 1518. Since his election to the papal throne, Pope [PAP.Monarch.GetName] was intent on continuing the Italian policy of the Church initiated by Julius II, but in diametrically opposed ways. \nThe greatest challenge for his pontificate opened with the death of Maximilian of Habsburg in 1519 and the possible rise of the latter's grandson, [SPA.Monarch.GetName], already Burgundian Duke of the Netherlands since 1506 and King of Spain since 1516. Opposing him, presenting himself as an alternative, was [FRA.Monarch.GetName] of France, perhaps the most powerful man in Europe after the peace imposed on the Habsburgs and the Pope himself. Since the former owned Naples and the latter Milan, the election of the Emperor also became a decisive game for Italy. It was clear to Pope [PAP.Monarch.GetName] that whoever won would drive the other out of the peninsula and break the balance imposed by the peace of Noyon and Brussels. Control of imperial Italy, and in particular Lombardy, was, for [SPA.Monarch.GetName]' chancellor, the Italian Mercurino Arborio di Gattinara, the 'keystone' to universal monarchy, as it could link the various possessions of Flanders, Spain, Austria and, in the event, Germany. Losing it, for [FRA.Monarch.GetName], meant instead seeing France encircled by Habsburg dominions."
+ FEE_Wars_Italy_Events.400.OPT1: "We must destroy them!"
+ FEE_Wars_Italy_Events.400.OPT2: "We should seek peace in Europe"
+
+ FEE_Wars_Italy_Events.401.T: "Chiamata alle Armi"
+ FEE_Wars_Italy_Events.401.D: "And now the War has been brought over the prosperous lands of Europe and hell will unleash on the flourishing Continet that saw peace in the past 5 years. \nThe King of France is in danger."
+ FEE_Wars_Italy_Events.401.OPT1: "France should be brought to their knees"
+ FEE_Wars_Italy_Events.401.OPT2: "France must not be destroyed!"
+ FEE_Wars_Italy_Events.401.OPT3: "We will stand aside"
+
+ FEE_Wars_Italy_Events.500.T: "Guerra della Lega di Cognac"
+ FEE_Wars_Italy_Events.500.D: "The Italian states, fearing excessive Hapsburg hegemony following the defeat of the French, approached [FRA.Monarch.GetName], who, having obtained his freedom, declared the Treaty of Madrid null and void because it had been concluded under captivity. \nIn 1526, Pope [PAP.Monarch.GetName] of the Medici family, also alarmed by the great rise in power of [SPA.Monarch.GetName], abandoned the alliance with the emperor stipulated in the Treaty of Rome and formed the League of Cognac together with [FRA.Monarch.GetName] of France, the Republic of Venice, the Republic of Florence and other minor Italian states."
+ FEE_Wars_Italy_Events.500.OPT1: "We must destroy them!"
+ FEE_Wars_Italy_Events.500.OPT2: "We should seek peace in Europe"
+
+ FEE_Wars_Italy_Events.501.T: "Chiamata alle Armi"
+ FEE_Wars_Italy_Events.501.D: "And now the War has been brought over the prosperous lands of Europe and hell will unleash on the flourishing Continet that saw peace in the past 5 years. \nThe Pope is leading the charge."
+ FEE_Wars_Italy_Events.501.OPT1: "We will ride alongside the Holy See"
+ FEE_Wars_Italy_Events.501.OPT2: "The League of Cognac must be stopped"
+ FEE_Wars_Italy_Events.501.OPT3: "We will stand aside"
  #Modifiers
 
  #Tooltips
  FIRST_ITALIAN_WARS_TT: "Many of the Italian Nations, between Milan, Venice, the Papal State, as well as the Spanish Crown might interfere into this war. We will try to ask for help from the Milanese and Ferrarese families."
  SECOND_ITALIAN_WARS_TT: "Many of the Italian Nations, like Milan, Naples as well as the Spanish Crown might interfere into this war. We will try to ask for help from the Venetian, the Holy See and the Swiss Cantons on our side."
- THIRD_ITALIAN_WARS_TT: "Many of the Italian Nations, the Imperial thorne and Spanish crowns will have to decide who to join"
+ THIRD_ITALIAN_WARS_TT: "Many of the Italian Nations, the Imperial throne and Spanish crowns will have to decide who to side with"
+ FOURTH_ITALIAN_WARS_TT: "Many of the Italian Nations, the Imperial throne and Spanish crowns will have to decide who to side with"
+ FIFFTH_ITALIAN_WARS_TT: "Some of the Italian Nations, the Imperial throne, the Spanish crowns, England and others will have to decide who to side with"
+ SIXTH_ITALIAN_WARS_TT: "Many of the Italian Nations, the Imperial throne and Spanish crowns will have to decide who to side with"
+ SEVENTH_ITALIAN_WARS_TT: "Many of the Italian Nations, the Imperial throne and Spanish crowns will have to decide who to side with"
+ EIGHT_ITALIAN_WARS_TT: "Many of the Italian Nations, the Imperial throne and Spanish crowns will have to decide who to side with"

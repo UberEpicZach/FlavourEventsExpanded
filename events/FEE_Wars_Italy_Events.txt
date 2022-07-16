@@ -43,7 +43,7 @@ country_event = {
 			factor = 90
 		}
 
-		custom_tooltip = FIRST_ITALIAN_WARS_TT
+		#custom_tooltip = FIRST_ITALIAN_WARS_TT
 		declare_war_with_cb = {
 			casus_belli = cb_restore_personal_union
 			who = NAP
@@ -160,7 +160,7 @@ country_event = {
 			}
 		}
 
-		add_prestige = -30
+		add_prestige = -15
 		add_legitimacy_equivalent = { amount = -25 republican_tradition = -13 }
 	}
 }
@@ -186,6 +186,13 @@ country_event = {
 				}
 			}
 			modifier = {
+				factor = 25
+				OR = {
+					is_rival = NAP
+					is_enemy = NAP
+				}
+			}
+			modifier = {
 				factor = 50
 				alliance_with = FRA
 			}
@@ -198,6 +205,17 @@ country_event = {
 		name = FEE_Wars_Italy_Events.101.OPT2
 		ai_chance = {
 			factor = 40
+			modifier = {
+				factor = 25
+				alliance_with = NAP
+			}
+			modifier = {
+				factor = 25
+				OR = {
+					is_rival = FRA
+					is_enemy = FRA
+				}
+			}
 			modifier = {
 				factor = 25
 				OR = {
@@ -284,7 +302,7 @@ country_event = {
 			factor = 90
 		}
 
-		custom_tooltip = SECOND_ITALIAN_WARS_TT
+		#custom_tooltip = SECOND_ITALIAN_WARS_TT
 		declare_war_with_cb = {
 			casus_belli = cb_vassalize_mission
 			who = MLO
@@ -379,7 +397,7 @@ country_event = {
 			}
 		}
 
-		add_prestige = -30
+		add_prestige = -15
 		add_legitimacy_equivalent = { amount = -25 republican_tradition = -13 }
 	}
 }
@@ -405,6 +423,17 @@ country_event = {
 					tag = VEN
 				}
 			}
+			modifier = {
+				factor = 25
+				alliance_with = FRA
+			}
+			modifier = {
+				factor = 25
+				OR = {
+					is_enemy = NAP
+					is_rival = NAP
+				}
+			}
 		}
 
 		join_all_offensive_wars_of = FROM
@@ -423,8 +452,15 @@ country_event = {
 				}
 			}
 			modifier = {
-				factor = 50
-				alliance_with = FRA
+				factor = 25
+				alliance_with = MLO
+			}
+			modifier = {
+				factor = 25
+				OR = {
+					is_enemy = FRA
+					is_rival = FRA
+				}
 			}
 		}
 
@@ -506,7 +542,7 @@ country_event = {
 			factor = 1
 		}
 
-		custom_tooltip = THIRD_ITALIAN_WARS_TT
+		#custom_tooltip = THIRD_ITALIAN_WARS_TT
 		declare_war_with_cb = {
 			casus_belli = cb_humiliate
 			who = VEN
@@ -804,49 +840,758 @@ country_event = {
 }
 
 #Fourth Italian War
-#country_event = {
-#	id = FEE_Wars_Italy_Events.400
-#	title = FEE_Wars_Italy_Events.400.T
-#	desc = FEE_Wars_Italy_Events.400.D
-#	picture = BATTLE_eventPicture
-#
-#	is_triggered_only = yes
-#
-#	option = {
-#		name = FEE_Wars_Italy_Events.400.OPT1
-#		ai_chance = {
-#			factor = 1
-#		}
-#
-#		add_country_modifier = {
-#			name = fee_italian_wars_artillery
-#			duration = 3650
-#		}
-#	}
-#}
+country_event = {
+	id = FEE_Wars_Italy_Events.400
+	title = FEE_Wars_Italy_Events.400.T
+	desc = FEE_Wars_Italy_Events.400.D
+	picture = BATTLE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_year = 1521
+		NOT = { is_year = 1526 }
+		if = {
+			limit = {
+				hre_size = 1
+			}
+			tag = emperor
+		}
+		else_if = {
+			limit = {
+				exists = HAB
+			}
+			tag = HAB
+		}
+		else_if = {
+			limit = {
+				OR = {
+					tag = SPA
+					tag = CAS
+				}
+			}
+			low_countries_region = {
+				owned_by = ROOT
+			}
+			iberia_region = {
+				owned_by = ROOT
+			}
+			italy_region = {
+				owned_by = ROOT
+			}
+		}
+		is_free_or_tributary_trigger = yes
+		exists = FRA
+		FRA = {
+			is_free_or_tributary_trigger = yes
+			NOT = { war_with = ROOT }
+			NOT = { truce_with = ROOT }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	major = yes
+	major_trigger = {
+		any_owned_province = {
+			OR = {
+				region = italy_region
+				region = france_region
+				region = iberia_region
+				is_part_of_hre = yes
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Wars_Italy_Events.400.OPT1
+		ai_chance = {
+			factor = 90
+		}
+
+		declare_war_with_cb = {
+			who = FRA
+			casus_belli = cb_humiliate
+		}
+
+		#custom_tooltip = FOURTH_ITALIAN_WARS_TT
+		if = {
+			limit = {
+				exists = NAV
+				NAV = { is_free_or_tributary_trigger = yes }
+			}
+			NAV = {
+				country_event = {
+					id = FEE_Wars_Italy_Events.401
+				}
+			}
+		}
+		if = {
+			limit = {
+				exists = VEN
+				VEN = { is_free_or_tributary_trigger = yes }
+			}
+			VEN = {
+				country_event = {
+					id = FEE_Wars_Italy_Events.401
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = { tag = SPA }
+				exists = SPA
+				SPA = { is_free_or_tributary_trigger = yes }
+			}
+			SPA = {
+				country_event = {
+					id = FEE_Wars_Italy_Events.401
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = { tag = HAB }
+				exists = HAB
+				HAB = { is_free_or_tributary_trigger = yes }
+			}
+			HAB = {
+				country_event = {
+					id = FEE_Wars_Italy_Events.401
+				}
+			}
+		}
+		if = {
+			limit = {
+				NOT = { tag = CAS }
+				exists = CAS
+				CAS = { is_free_or_tributary_trigger = yes }
+			}
+			CAS = {
+				country_event = {
+					id = FEE_Wars_Italy_Events.401
+				}
+			}
+		}
+		if = {
+			limit = {
+				exists = ENG
+				ENG = { is_free_or_tributary_trigger = yes }
+			}
+			ENG = {
+				country_event = {
+					id = FEE_Wars_Italy_Events.401
+				}
+			}
+		}
+		if = {
+			limit = {
+				exists = MAN
+				MAN = { is_free_or_tributary_trigger = yes }
+			}
+			MAN = {
+				country_event = {
+					id = FEE_Wars_Italy_Events.401
+				}
+			}
+		}
+		if = {
+			limit = {
+				exists = PAP
+				PAP = { is_free_or_tributary_trigger = yes }
+			}
+			PAP = {
+				country_event = {
+					id = FEE_Wars_Italy_Events.401
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = FEE_Wars_Italy_Events.400.OPT2
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 100
+				NOT = { army_size = FRA }
+			}
+		}
+
+		add_prestige = -15
+		add_imperial_influence = -15
+	}
+}
+
+#Chiamata alle Armi
+country_event = {
+	id = FEE_Wars_Italy_Events.401
+	title = FEE_Wars_Italy_Events.401.T
+	desc = FEE_Wars_Italy_Events.401.D
+	picture = BATTLE_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Wars_Italy_Events.401.OPT1
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 25
+				OR = {
+					tag = SPA
+					tag = CAS
+					tag = ENG
+					tag = MAN
+					tag = PAP
+					tag = HAB
+				}
+			}
+			modifier = {
+				factor = 25
+				OR = {
+					is_rival = FRA
+					is_enemy = FRA
+				}
+			}
+			modifier = {
+				factor = 50
+				alliance_with = FROM
+			}
+		}
+
+		join_all_offensive_wars_of = FROM
+	}
+
+	option = {
+		name = FEE_Wars_Italy_Events.401.OPT2
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 25
+				alliance_with = FRA
+			}
+			modifier = {
+				factor = 25
+				OR = {
+					is_rival = FROM
+					is_enemy = FROM
+				}
+			}
+			modifier = {
+				factor = 25
+				OR = {
+					tag = VEN
+					tag = NAV
+				}
+			}
+		}
+
+		join_all_defensive_wars_of = FRA 
+	}
+
+	option = {
+		name = FEE_Wars_Italy_Events.401.OPT3
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = 50
+				NOT = {
+					manpower_percentage = 0.50
+				}
+			}
+			modifier = {
+				factor = 50
+				NOT = {
+					army_size_percentage = 0.50
+				}
+			}
+			modifier = {
+				factor = 50
+				war_exhaustion = 3
+			}
+		}
+
+		add_stability = -1
+		add_prestige = -12
+	}
+}
 
 #Fifth Italian War
+country_event = {
+	id = FEE_Wars_Italy_Events.500
+	title = FEE_Wars_Italy_Events.500.T
+	desc = FEE_Wars_Italy_Events.500.D
+	picture = BATTLE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_year = 1526
+		NOT = { is_year = 1530 }
+		tag = PAP
+		OR = {
+			exists = emperor
+			exists = SPA
+			exists = HAB
+			exists = CAS
+		}
+		is_free_or_tributary_trigger = yes
+		any_country = {
+			OR = {
+				tag = emperor
+				tag = SPA
+				tag = HAB
+				tag = CAS
+			}
+			is_free_or_tributary_trigger = yes
+			NOT = { war_with = ROOT }
+			NOT = { truce_with = ROOT }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	major = yes
+	major_trigger = {
+		any_owned_province = {
+			OR = {
+				region = italy_region
+				region = france_region
+				region = iberia_region
+				is_part_of_hre = yes
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Wars_Italy_Events.400.OPT1
+		ai_chance = {
+			factor = 90
+		}
+
+		if = {
+			limit = {
+				hre_size = 1
+			}
+			declare_war_with_cb = {
+				who = emperor
+				casus_belli = cb_humiliate
+			}
+		}
+		else_if = {
+			limit = {
+				exists = HAB
+			}
+			declare_war_with_cb = {
+				who = HAB
+				casus_belli = cb_humiliate
+			}
+		}
+		else_if = {
+			limit = {
+				exists = SPA
+			}
+			declare_war_with_cb = {
+				who = SPA
+				casus_belli = cb_humiliate
+			}
+		}
+		else = {
+			declare_war_with_cb = {
+				who = CAS
+				casus_belli = cb_humiliate
+			}
+		}
+
+		#custom_tooltip = FIFFTH_ITALIAN_WARS_TT
+		if = {
+			limit = {
+				exists = VEN
+				VEN = { is_free_or_tributary_trigger = yes }
+			}
+			VEN = {
+				country_event = {
+					id = FEE_Wars_Italy_Events.501
+				}
+			}
+		}
+		if = {
+			limit = {
+				exists = FRA
+				FRA = { is_free_or_tributary_trigger = yes }
+			}
+			FRA = {
+				country_event = {
+					id = FEE_Wars_Italy_Events.501
+				}
+			}
+		}
+		if = {
+			limit = {
+				exists = SPA
+				SPA = { is_free_or_tributary_trigger = yes }
+			}
+			SPA = {
+				country_event = {
+					id = FEE_Wars_Italy_Events.501
+				}
+			}
+		}
+		if = {
+			limit = {
+				exists = HAB
+				HAB = { is_free_or_tributary_trigger = yes }
+			}
+			HAB = {
+				country_event = {
+					id = FEE_Wars_Italy_Events.501
+				}
+			}
+		}
+		if = {
+			limit = {
+				exists = CAS
+				CAS = { is_free_or_tributary_trigger = yes }
+			}
+			CAS = {
+				country_event = {
+					id = FEE_Wars_Italy_Events.501
+				}
+			}
+		}
+		if = {
+			limit = {
+				exists = LAN
+				LAN = { is_free_or_tributary_trigger = yes }
+			}
+			LAN = {
+				country_event = {
+					id = FEE_Wars_Italy_Events.501
+				}
+			}
+		}
+		if = {
+			limit = {
+				exists = TUS
+				TUS = { is_free_or_tributary_trigger = yes }
+			}
+			TUS = {
+				country_event = {
+					id = FEE_Wars_Italy_Events.501
+				}
+			}
+		}
+		if = {
+			limit = {
+				exists = MLO
+				MLO = { is_free_or_tributary_trigger = yes }
+			}
+			MLO = {
+				country_event = {
+					id = FEE_Wars_Italy_Events.501
+				}
+			}
+		}
+		if = {
+			limit = {
+				exists = GEN
+				GEN = { is_free_or_tributary_trigger = yes }
+			}
+			GEN = {
+				country_event = {
+					id = FEE_Wars_Italy_Events.501
+				}
+			}
+		}
+		if = {
+			limit = {
+				exists = NAV
+				NAV = { is_free_or_tributary_trigger = yes }
+			}
+			NAV = {
+				country_event = {
+					id = FEE_Wars_Italy_Events.501
+				}
+			}
+		}
+		if = {
+			limit = {
+				exists = FER
+				FER = { is_free_or_tributary_trigger = yes }
+			}
+			FER = {
+				country_event = {
+					id = FEE_Wars_Italy_Events.501
+				}
+			}
+		}
+		if = {
+			limit = {
+				exists = SIE
+				SIE = { is_free_or_tributary_trigger = yes }
+			}
+			SIE = {
+				country_event = {
+					id = FEE_Wars_Italy_Events.501
+				}
+			}
+		}
+		if = {
+			limit = {
+				exists = MAN
+				MAN = { is_free_or_tributary_trigger = yes }
+			}
+			MAN = {
+				country_event = {
+					id = FEE_Wars_Italy_Events.501
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = FEE_Wars_Italy_Events.500.OPT2
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 100
+				any_country = {
+					OR = {
+						tag = emperor
+						tag = SPA
+						tag = HAB
+						tag = CAS
+					}
+					army_size = ROOT
+				}
+			}
+		}
+
+		add_prestige = -15
+		add_reform_desire = 0.10
+		add_legitimacy_equivalent = { amount = -25 republican_tradition = -13 }
+	}
+}
+
+
+#Chiamata alle Armi
+country_event = {
+	id = FEE_Wars_Italy_Events.501
+	title = FEE_Wars_Italy_Events.501.T
+	desc = FEE_Wars_Italy_Events.501.D
+	picture = BATTLE_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Wars_Italy_Events.501.OPT1
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 25
+				OR = {
+					tag = VEN
+					tag = FRA
+					tag = LAN
+					tag = TUS
+					tag = MLO
+					tag = NAV
+					tag = GEN
+				}
+			}
+			modifier = {
+				factor = 25
+				any_country = {
+					OR = {
+						tag = emperor
+						tag = HAB
+						tag = CAS
+						tag = SPA
+					}
+					OR = {
+						is_rival = ROOT
+						is_enemy = ROOT
+					}
+				}
+			}
+			modifier = {
+				factor = 50
+				alliance_with = FROM
+			}
+		}
+
+		join_all_offensive_wars_of = FROM
+	}
+
+	option = {
+		name = FEE_Wars_Italy_Events.501.OPT2
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 25
+				any_country = {
+					OR = {
+						tag = emperor
+						tag = HAB
+						tag = CAS
+						tag = SPA
+					}
+					alliance_with = ROOT
+				}
+			}
+			modifier = {
+				factor = 25
+				OR = {
+					is_rival = FROM
+					is_enemy = FROM
+				}
+			}
+			modifier = {
+				factor = 25
+				OR = {
+					tag = emperor
+					tag = HAB
+					tag = CAS
+					tag = SPA
+					tag = FER
+					tag = SIE
+					tag = MAN
+				}
+			}
+		}
+
+		random_country = {
+			limit = {
+				is_in_war = {
+					attacker_leader = PAP
+					defender_leader = THIS
+				}
+			}
+			join_all_defensive_wars_of = THIS
+		}
+	}
+
+	option = {
+		name = FEE_Wars_Italy_Events.501.OPT3
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = 50
+				NOT = {
+					manpower_percentage = 0.50
+				}
+			}
+			modifier = {
+				factor = 50
+				NOT = {
+					army_size_percentage = 0.50
+				}
+			}
+			modifier = {
+				factor = 50
+				war_exhaustion = 3
+			}
+		}
+
+		add_stability = -1
+		add_prestige = -12
+	}
+}
+
+#Sixth Italian War
 #country_event = {
-#	id = FEE_Wars_Italy_Events.500
-#	title = FEE_Wars_Italy_Events.500.T
-#	desc = FEE_Wars_Italy_Events.500.D
+#	id = FEE_Wars_Italy_Events.600
+#	title = FEE_Wars_Italy_Events.600.T
+#	desc = FEE_Wars_Italy_Events.600.D
 #	picture = BATTLE_eventPicture
 #
-#	is_triggered_only = yes
+#	fire_only_once = yes
+#
+#	major = yes
+#	major_trigger = {
+#		any_owned_province = {
+#			OR = {
+#				region = italy_region
+#				region = france_region
+#				region = iberia_region
+#				is_part_of_hre = yes
+#			}
+#		}
+#	}
 #
 #	option = {
-#		name = FEE_Wars_Italy_Events.500.OPT1
+#		name = FEE_Wars_Italy_Events.600.OPT1
 #		ai_chance = {
 #			factor = 1
 #		}
 #
-#		add_country_modifier = {
-#			name = fee_italian_wars_forts
-#			duration = 3650
-#		}
 #	}
 #}
 
+#Seventh Italian War
+#country_event = {
+#	id = FEE_Wars_Italy_Events.700
+#	title = FEE_Wars_Italy_Events.700.T
+#	desc = FEE_Wars_Italy_Events.700.D
+#	picture = BATTLE_eventPicture
+#
+#	fire_only_once = yes
+#
+#	major = yes
+#	major_trigger = {
+#		any_owned_province = {
+#			OR = {
+#				region = italy_region
+#				region = france_region
+#				region = iberia_region
+#				is_part_of_hre = yes
+#			}
+#		}
+#	}
+#
+#	option = {
+#		name = FEE_Wars_Italy_Events.700.OPT1
+#		ai_chance = {
+#			factor = 1
+#		}
+#
+#	}
+#}
+
+#Eight Italian War
+#country_event = {
+#	id = FEE_Wars_Italy_Events.800
+#	title = FEE_Wars_Italy_Events.800.T
+#	desc = FEE_Wars_Italy_Events.800.D
+#	picture = BATTLE_eventPicture
+#
+#	fire_only_once = yes
+#
+#	major = yes
+#	major_trigger = {
+#		any_owned_province = {
+#			OR = {
+#				region = italy_region
+#				region = france_region
+#				region = iberia_region
+#				is_part_of_hre = yes
+#			}
+#		}
+#	}
+#
+#	option = {
+#		name = FEE_Wars_Italy_Events.800.OPT1
+#		ai_chance = {
+#			factor = 1
+#		}
+#
+#	}
+#}
 
 #
 #country_event = {
