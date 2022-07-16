@@ -1,10 +1,10 @@
-namespace = Melva_Naples_Events
+namespace = FEE_Naples_Events
 
 #The Court of Alfonso il Magnanimo
 country_event = {
-	id = Melva_Naples_Events.1
-	title = Melva_Naples_Events.1.T
-	desc = Melva_Naples_Events.1.D
+	id = FEE_Naples_Events.1
+	title = FEE_Naples_Events.1.T
+	desc = FEE_Naples_Events.1.D
 	picture = ADVISOR_eventPicture
 
 	fire_only_once = yes
@@ -29,7 +29,7 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Naples_Events.1.OPT1
+		name = FEE_Naples_Events.1.OPT1
 		ai_chance = {
 			factor = 33
 		}
@@ -45,7 +45,7 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Naples_Events.1.OPT2
+		name = FEE_Naples_Events.1.OPT2
 		ai_chance = {
 			factor = 33
 		}
@@ -63,7 +63,7 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Naples_Events.1.OPT3
+		name = FEE_Naples_Events.1.OPT3
 		ai_chance = {
 			factor = 33
 		}
@@ -79,22 +79,22 @@ country_event = {
 
 		add_opinion = {
 			who = BYZ
-			modifier = melva_naples_recoinciliation
+			modifier = fee_naples_recoinciliation
 		}
 		add_opinion = {
 			who = PAP
-			modifier = melva_naples_recoinciliation
+			modifier = fee_naples_recoinciliation
 		}
 		BYZ = {
 			add_opinion = {
 				who = ROOT
-				modifier = melva_naples_recoinciliation
+				modifier = fee_naples_recoinciliation
 			}
 		}
 		PAP = {
 			add_opinion = {
 				who = ROOT
-				modifier = melva_naples_recoinciliation
+				modifier = fee_naples_recoinciliation
 			}
 		}
 	}
@@ -102,9 +102,9 @@ country_event = {
 
 #Regia dogana della mena delle pecore di Puglia
 country_event = {
-	id = Melva_Naples_Events.2
-	title = Melva_Naples_Events.2.T
-	desc = Melva_Naples_Events.2.D
+	id = FEE_Naples_Events.2
+	title = FEE_Naples_Events.2.T
+	desc = FEE_Naples_Events.2.D
 	picture = FARMING_eventPicture
 
 	fire_only_once = yes
@@ -142,7 +142,7 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Naples_Events.2.OPT1
+		name = FEE_Naples_Events.2.OPT1
 
 		add_years_of_owned_provinces_production_income = {
 			years = 5
@@ -181,9 +181,9 @@ country_event = {
 
 #Gjergj Kastrioti Skënderbeu 
 country_event = {
-	id = Melva_Naples_Events.3
-	title = Melva_Naples_Events.3.T
-	desc = Melva_Naples_Events.3.D
+	id = FEE_Naples_Events.3
+	title = FEE_Naples_Events.3.T
+	desc = FEE_Naples_Events.3.D
 	picture = DIPLOMACY_eventPicture
 
 	fire_only_once = yes
@@ -207,7 +207,7 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Naples_Events.3.OPT1
+		name = FEE_Naples_Events.3.OPT1
 		ai_chance = {
 			factor = 50
 			modifier = {
@@ -219,7 +219,7 @@ country_event = {
 		create_guarantee = ALB
 		ALB = {
 			country_event = {
-				id = Melva_Naples_Events.4
+				id = FEE_Naples_Events.4
 				days = 30
 			}
 		}
@@ -230,13 +230,13 @@ country_event = {
 		custom_tooltip = ALB_HELP_TT
 		hidden_effect = {
 			country_event = {
-				id = Melva_Naples_Events.12
+				id = FEE_Naples_Events.12
 			}
 		}
 	}
 
 	option = {
-		name = Melva_Naples_Events.3.OPT2
+		name = FEE_Naples_Events.3.OPT2
 		ai_chance = {
 			factor = 50
 		}
@@ -251,15 +251,15 @@ country_event = {
 
 #Aragorn Helps Skanderberg
 country_event = {
-	id = Melva_Naples_Events.4
-	title = Melva_Naples_Events.4.T
-	desc = Melva_Naples_Events.4.D
+	id = FEE_Naples_Events.4
+	title = FEE_Naples_Events.4.T
+	desc = FEE_Naples_Events.4.D
 	picture = DIPLOMACY_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = Melva_Naples_Events.4.OPT1
+		name = FEE_Naples_Events.4.OPT1
 
 		add_yearly_manpower = 2
 		add_years_of_income = 3
@@ -278,7 +278,7 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Naples_Events.4.OPT2
+		name = FEE_Naples_Events.4.OPT2
 		ai_chance = {
 			factor = 50
 			modifier = {
@@ -300,9 +300,9 @@ country_event = {
 
 #Accademia Pontaniana
 country_event = {
-	id = Melva_Naples_Events.5
-	title = Melva_Naples_Events.5.T
-	desc = Melva_Naples_Events.5.D
+	id = FEE_Naples_Events.5
+	title = FEE_Naples_Events.5.T
+	desc = FEE_Naples_Events.5.D
 	picture = UNIVERSITY_eventPicture
 
 	fire_only_once = yes
@@ -337,7 +337,7 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Naples_Events.5.OPT1
+		name = FEE_Naples_Events.5.OPT1
 		add_adm_power = 25
 		add_innovativeness_small_effect = yes
 		121 = {
@@ -351,9 +351,9 @@ country_event = {
 
 #Porta Capuana
 country_event = {
-	id = Melva_Naples_Events.6
-	title = Melva_Naples_Events.6.T
-	desc = Melva_Naples_Events.6.D
+	id = FEE_Naples_Events.6
+	title = FEE_Naples_Events.6.T
+	desc = FEE_Naples_Events.6.D
 	picture = FORTIFIED_CITY_WITH_CARAVAN_OUTSIDE_eventPicture
 
 	fire_only_once = yes
@@ -377,7 +377,7 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Naples_Events.6.OPT1
+		name = FEE_Naples_Events.6.OPT1
 
 		121 = {
 			add_permanent_province_modifier = {
@@ -390,9 +390,9 @@ country_event = {
 
 #Isabella di Chiaromonte
 country_event = {
-	id = Melva_Naples_Events.7
-	title = Melva_Naples_Events.7.T
-	desc = Melva_Naples_Events.7.D
+	id = FEE_Naples_Events.7
+	title = FEE_Naples_Events.7.T
+	desc = FEE_Naples_Events.7.D
 	picture = QUEEN_AT_COUNCIL_TABLE_eventPicture
 
 	fire_only_once = yes
@@ -412,7 +412,7 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Naples_Events.7.OPT1
+		name = FEE_Naples_Events.7.OPT1
 		ai_chance = {
 			factor = 50
 		}
@@ -426,7 +426,7 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Naples_Events.7.OPT2
+		name = FEE_Naples_Events.7.OPT2
 		ai_chance = {
 			factor = 50
 		}
@@ -454,9 +454,9 @@ country_event = {
 
 #Pre-Conjury
 country_event = {
-	id = Melva_Naples_Events.8
-	title = Melva_Naples_Events.8.T
-	desc = Melva_Naples_Events.8.D
+	id = FEE_Naples_Events.8
+	title = FEE_Naples_Events.8.T
+	desc = FEE_Naples_Events.8.D
 	picture = BAD_WITH_MONARCH_eventPicture
 
 	fire_only_once = yes
@@ -473,7 +473,7 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Naples_Events.8.OPT1
+		name = FEE_Naples_Events.8.OPT1
 
 		custom_tooltip = nap_pre_conjury_tt
 	}
@@ -481,9 +481,9 @@ country_event = {
 
 #Barony Conjury 1
 country_event = {
-	id = Melva_Naples_Events.9
-	title = Melva_Naples_Events.9.T
-	desc = Melva_Naples_Events.9.D
+	id = FEE_Naples_Events.9
+	title = FEE_Naples_Events.9.T
+	desc = FEE_Naples_Events.9.D
 	picture = NOBLE_ESTATE_DEMANDS_eventPicture
 
 	fire_only_once = yes
@@ -519,7 +519,7 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Naples_Events.9.OPT1
+		name = FEE_Naples_Events.9.OPT1
 
 		add_stability = -1
 		if = {
@@ -671,9 +671,9 @@ country_event = {
 
 #Congiura dei baroni sedata
 country_event = {
-	id = Melva_Naples_Events.10
-	title = Melva_Naples_Events.10.T
-	desc = Melva_Naples_Events.10.D
+	id = FEE_Naples_Events.10
+	title = FEE_Naples_Events.10.T
+	desc = FEE_Naples_Events.10.D
 	picture = GOOD_WITH_MONARCH_eventPicture
 
 	fire_only_once = yes
@@ -693,7 +693,7 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Naples_Events.10.OPT1
+		name = FEE_Naples_Events.10.OPT1
 
 		add_stability_or_adm_power = yes
 		add_country_modifier = {
@@ -736,9 +736,9 @@ country_event = {
 
 #First Revolt sventata
 country_event = {
-	id = Melva_Naples_Events.11
-	title = Melva_Naples_Events.11.T
-	desc = Melva_Naples_Events.11.D
+	id = FEE_Naples_Events.11
+	title = FEE_Naples_Events.11.T
+	desc = FEE_Naples_Events.11.D
 	picture = NOBLE_ESTATE_eventPicture
 
 	fire_only_once = yes
@@ -753,7 +753,7 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Naples_Events.11.OPT1
+		name = FEE_Naples_Events.11.OPT1
 
 		add_stability_or_adm_power = yes
 		add_country_modifier = {
@@ -789,9 +789,9 @@ country_event = {
 
 #The arrival of Kastrioty
 country_event = {
-	id = Melva_Naples_Events.12
-	title = Melva_Naples_Events.12.T
-	desc = Melva_Naples_Events.12.D
+	id = FEE_Naples_Events.12
+	title = FEE_Naples_Events.12.T
+	desc = FEE_Naples_Events.12.D
 	picture = MILITARY_CAMP_eventPicture
 
 	fire_only_once = yes
@@ -809,7 +809,7 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Naples_Events.12.OPT1
+		name = FEE_Naples_Events.12.OPT1
 		random_owned_province = {
 			limit = {
 				controlled_by = ROOT
@@ -832,9 +832,9 @@ country_event = {
 
 #Second Barony Conjury, before
 country_event = {
-	id = Melva_Naples_Events.13
-	title = Melva_Naples_Events.13.T
-	desc = Melva_Naples_Events.13.D
+	id = FEE_Naples_Events.13
+	title = FEE_Naples_Events.13.T
+	desc = FEE_Naples_Events.13.D
 	picture = BAD_WITH_MONARCH_eventPicture
 
 	fire_only_once = yes
@@ -854,18 +854,18 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Naples_Events.13.OPT1
+		name = FEE_Naples_Events.13.OPT1
 
 		custom_tooltip = nap_pre_conjury_2_tt
 		#hidden_effect = {
 		#	country_event = {
-		#		id = Melva_Naples_Events.14
+		#		id = FEE_Naples_Events.14
 		#	}
 		#	country_event = {
-		#		id = Melva_Naples_Events.15
+		#		id = FEE_Naples_Events.15
 		#	}
 		#	country_event = {
-		#		id = Melva_Naples_Events.16
+		#		id = FEE_Naples_Events.16
 		#	}
 		#}
 	}
@@ -873,9 +873,9 @@ country_event = {
 
 #Second Barony Conjury
 country_event = {
-	id = Melva_Naples_Events.14
-	title = Melva_Naples_Events.14.T
-	desc = Melva_Naples_Events.14.D
+	id = FEE_Naples_Events.14
+	title = FEE_Naples_Events.14.T
+	desc = FEE_Naples_Events.14.D
 	picture = NOBLE_ESTATE_DEMANDS_eventPicture
 
 	fire_only_once = yes
@@ -901,7 +901,7 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Naples_Events.14.OPT1
+		name = FEE_Naples_Events.14.OPT1
 
 		add_stability = -1
 		if = {
@@ -1259,9 +1259,9 @@ country_event = {
 
 #The Barons have been defeated
 country_event = {
-	id = Melva_Naples_Events.15
-	title = Melva_Naples_Events.15.T
-	desc = Melva_Naples_Events.15.D
+	id = FEE_Naples_Events.15
+	title = FEE_Naples_Events.15.T
+	desc = FEE_Naples_Events.15.D
 	picture = GOOD_WITH_MONARCH_eventPicture
 
 	fire_only_once = yes
@@ -1281,7 +1281,7 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Naples_Events.15.OPT1
+		name = FEE_Naples_Events.15.OPT1
 		ai_chance = {
 			factor = 1
 		}
@@ -1298,9 +1298,9 @@ country_event = {
 
 #Second Conjury evaded
 country_event = {
-	id = Melva_Naples_Events.16
-	title = Melva_Naples_Events.16.T
-	desc = Melva_Naples_Events.16.D
+	id = FEE_Naples_Events.16
+	title = FEE_Naples_Events.16.T
+	desc = FEE_Naples_Events.16.D
 	picture = NOBLE_ESTATE_eventPicture
 
 	fire_only_once = yes
@@ -1319,7 +1319,7 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Naples_Events.16.OPT1
+		name = FEE_Naples_Events.16.OPT1
 
 		add_stability_or_adm_power = yes
 		custom_tooltip = NAPLES_TWENTY_YEARS_PROSPERITY
@@ -1351,9 +1351,9 @@ country_event = {
 
 #The Dream of Ladislao I
 country_event = {
-	id = Melva_Naples_Events.17
-	title = Melva_Naples_Events.17.T
-	desc = Melva_Naples_Events.17.D
+	id = FEE_Naples_Events.17
+	title = FEE_Naples_Events.17.T
+	desc = FEE_Naples_Events.17.D
 	picture = GOOD_WITH_MONARCH_eventPicture
 
 	fire_only_once = yes
@@ -1372,7 +1372,7 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Naples_Events.17.OPT1
+		name = FEE_Naples_Events.17.OPT1
 		ai_chance = {
 			factor = 50
 		}
@@ -1394,7 +1394,7 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Naples_Events.17.OPT2
+		name = FEE_Naples_Events.17.OPT2
 		ai_chance = {
 			factor = 50
 		}
@@ -1408,9 +1408,9 @@ country_event = {
 
 #Legacy of Ladislao I
 country_event = {
-	id = Melva_Naples_Events.18
-	title = Melva_Naples_Events.18.T
-	desc = Melva_Naples_Events.18.D
+	id = FEE_Naples_Events.18
+	title = FEE_Naples_Events.18.T
+	desc = FEE_Naples_Events.18.D
 	picture = GOOD_WITH_MONARCH_eventPicture
 
 	fire_only_once = yes
@@ -1443,7 +1443,7 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Naples_Events.18.OPT1
+		name = FEE_Naples_Events.18.OPT1
 		ai_chance = {
 			factor = 90
 		}
@@ -1486,7 +1486,7 @@ country_event = {
 	}
 
 	option = {
-		name = Melva_Naples_Events.18.OPT2
+		name = FEE_Naples_Events.18.OPT2
 		ai_chance = {
 			factor = 10
 		}
@@ -1500,9 +1500,9 @@ country_event = {
 
 #
 #country_event = {
-#	id = Melva_Naples_Events.
-#	title = Melva_Naples_Events..T
-#	desc = Melva_Naples_Events..D
+#	id = FEE_Naples_Events.
+#	title = FEE_Naples_Events..T
+#	desc = FEE_Naples_Events..D
 #	picture = FARMING_eventPicture
 #
 #	fire_only_once = yes
@@ -1515,7 +1515,7 @@ country_event = {
 #	}
 #
 #	option = {
-#		name = Melva_Naples_Events..OPT1
+#		name = FEE_Naples_Events..OPT1
 #
 #	}
 #}

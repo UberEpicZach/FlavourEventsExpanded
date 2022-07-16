@@ -1,17 +1,17 @@
 country_decisions = {
-	melva_fair_decisions = {
+	fee_fair_decisions = {
 		major = yes
 		potential = {
 			ai = no
-			has_country_flag = melva_trading_fair_started
+			has_country_flag = fee_trading_fair_started
 			any_owned_province = {
-				has_province_flag = melva_province_trading_fair_started
+				has_province_flag = fee_province_trading_fair_started
 			}
 		}
 		allow = { }		
 		effect = {
 			country_event = {
-				id = Melva_Fairs_Events.4
+				id = FEE_Fairs_Events.4
 			}
 		}
 		ai_will_do = {
@@ -23,7 +23,7 @@ country_decisions = {
 			}
 		}
 	}
-	melva_fair_disable_enabled = {
+	fee_fair_disable_enabled = {
 		major = yes
 		potential = {
 			ai = no
@@ -33,33 +33,33 @@ country_decisions = {
 		effect = {
 			if = {
 				limit = {
-					has_global_flag = melva_trading_fairs_enabled
+					has_global_flag = fee_trading_fairs_enabled
 				}
 				custom_tooltip = MELVA_FAIRS_DISABLE_TT
-				clr_global_flag = melva_trading_fairs_enabled
+				clr_global_flag = fee_trading_fairs_enabled
 				hidden_effect = {
 					every_country = {
 						limit = {
-							has_country_flag = melva_first_trading_fair_country
+							has_country_flag = fee_first_trading_fair_country
 						}
-						clr_country_flag = melva_first_trading_fair_country
+						clr_country_flag = fee_first_trading_fair_country
 					}
 					every_province = {
 						limit = {
-							has_province_flag = melva_province_trading_fair_started
+							has_province_flag = fee_province_trading_fair_started
 						}
-						clr_province_flag = melva_province_trading_fair_started
+						clr_province_flag = fee_province_trading_fair_started
 					}
 					every_province = {
 						limit = {
-							has_province_modifier = melva_trading_fair_province_modifier
+							has_province_modifier = fee_trading_fair_province_modifier
 						}
-						remove_province_modifier = melva_trading_fair_province_modifier
+						remove_province_modifier = fee_trading_fair_province_modifier
 					}
 				}
 			}
 			else = {
-				set_global_flag = melva_trading_fairs_enabled
+				set_global_flag = fee_trading_fairs_enabled
 				custom_tooltip = FAIRS_ENABLE_TT
 			}
 		}

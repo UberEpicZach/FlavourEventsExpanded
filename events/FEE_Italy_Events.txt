@@ -1,10 +1,10 @@
-namespace = Melva_Italy_Events
+namespace = FEE_Italy_Events
 
 #The wars of Italy
 country_event = {
-	id = Melva_Italy_Events.1
-	title = Melva_Italy_Events.1.T
-	desc = Melva_Italy_Events.1.D
+	id = FEE_Italy_Events.1
+	title = FEE_Italy_Events.1.T
+	desc = FEE_Italy_Events.1.D
 	picture = BATTLE_eventPicture
 
 	trigger = {
@@ -14,7 +14,7 @@ country_event = {
 		}
 		culture_group = latin
 		had_recent_war = 10
-		NOT = { has_country_flag = melva_italy_wars_flag }
+		NOT = { has_country_flag = fee_italy_wars_flag }
 	}
 
 	mean_time_to_happen = {
@@ -23,54 +23,54 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
-			set_country_flag = melva_italy_wars_flag
+			set_country_flag = fee_italy_wars_flag
 		}
 	}
 
 	option = {
-		name = Melva_Italy_Events.1.OPT1
+		name = FEE_Italy_Events.1.OPT1
 		ai_chance = {
 			factor = 25
 		}
 
 		country_event = {
-			id = Melva_Italy_Events.2
+			id = FEE_Italy_Events.2
 			days = 30
 		}
 	}
 
 	option = {
-		name = Melva_Italy_Events.1.OPT2
+		name = FEE_Italy_Events.1.OPT2
 		ai_chance = {
 			factor = 25
 		}
 
 		country_event = {
-			id = Melva_Italy_Events.3
+			id = FEE_Italy_Events.3
 			days = 30
 		}
 	}
 
 	option = {
-		name = Melva_Italy_Events.1.OPT3
+		name = FEE_Italy_Events.1.OPT3
 		ai_chance = {
 			factor = 25
 		}
 
 		country_event = {
-			id = Melva_Italy_Events.4
+			id = FEE_Italy_Events.4
 			days = 30
 		}
 	}
 
 	option = {
-		name = Melva_Italy_Events.1.OPT4
+		name = FEE_Italy_Events.1.OPT4
 		ai_chance = {
 			factor = 25
 		}
 
 		country_event = {
-			id = Melva_Italy_Events.5
+			id = FEE_Italy_Events.5
 			days = 30
 		}
 	}
@@ -78,21 +78,21 @@ country_event = {
 
 #Infantry
 country_event = {
-	id = Melva_Italy_Events.2
-	title = Melva_Italy_Events.2.T
-	desc = Melva_Italy_Events.2.D
+	id = FEE_Italy_Events.2
+	title = FEE_Italy_Events.2.T
+	desc = FEE_Italy_Events.2.D
 	picture = BATTLE_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = Melva_Italy_Events.2.OPT1
+		name = FEE_Italy_Events.2.OPT1
 		ai_chance = {
 			factor = 1
 		}
 
 		add_country_modifier = {
-			name = melva_italian_wars_infantry
+			name = fee_italian_wars_infantry
 			duration = 3650
 		}
 	}
@@ -100,21 +100,21 @@ country_event = {
 
 #Cavalry
 country_event = {
-	id = Melva_Italy_Events.3
-	title = Melva_Italy_Events.3.T
-	desc = Melva_Italy_Events.3.D
+	id = FEE_Italy_Events.3
+	title = FEE_Italy_Events.3.T
+	desc = FEE_Italy_Events.3.D
 	picture = BATTLE_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = Melva_Italy_Events.3.OPT1
+		name = FEE_Italy_Events.3.OPT1
 		ai_chance = {
 			factor = 1
 		}
 
 		add_country_modifier = {
-			name = melva_italian_wars_cavalry
+			name = fee_italian_wars_cavalry
 			duration = 3650
 		}
 	}
@@ -122,21 +122,21 @@ country_event = {
 
 #Artillery
 country_event = {
-	id = Melva_Italy_Events.4
-	title = Melva_Italy_Events.4.T
-	desc = Melva_Italy_Events.4.D
+	id = FEE_Italy_Events.4
+	title = FEE_Italy_Events.4.T
+	desc = FEE_Italy_Events.4.D
 	picture = BATTLE_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = Melva_Italy_Events.4.OPT1
+		name = FEE_Italy_Events.4.OPT1
 		ai_chance = {
 			factor = 1
 		}
 
 		add_country_modifier = {
-			name = melva_italian_wars_artillery
+			name = fee_italian_wars_artillery
 			duration = 3650
 		}
 	}
@@ -144,21 +144,21 @@ country_event = {
 
 #Forts
 country_event = {
-	id = Melva_Italy_Events.5
-	title = Melva_Italy_Events.5.T
-	desc = Melva_Italy_Events.5.D
+	id = FEE_Italy_Events.5
+	title = FEE_Italy_Events.5.T
+	desc = FEE_Italy_Events.5.D
 	picture = BATTLE_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = Melva_Italy_Events.5.OPT1
+		name = FEE_Italy_Events.5.OPT1
 		ai_chance = {
 			factor = 1
 		}
 
 		add_country_modifier = {
-			name = melva_italian_wars_forts
+			name = fee_italian_wars_forts
 			duration = 3650
 		}
 	}
@@ -167,9 +167,9 @@ country_event = {
 
 #
 #country_event = {
-#	id = Melva_Italy_Events.
-#	title = Melva_Italy_Events..T
-#	desc = Melva_Italy_Events..D
+#	id = FEE_Italy_Events.
+#	title = FEE_Italy_Events..T
+#	desc = FEE_Italy_Events..D
 #	picture = BATTLE_eventPicture
 #
 #	fire_only_once = yes
@@ -183,7 +183,7 @@ country_event = {
 #	}
 #
 #	option = {
-#		name = Melva_Italy_Events..OPT1
+#		name = FEE_Italy_Events..OPT1
 #		ai_chance = {
 #			factor = 50
 #		}
@@ -191,7 +191,7 @@ country_event = {
 #	}
 #
 #	option = {
-#		name = Melva_Italy_Events..OPT2
+#		name = FEE_Italy_Events..OPT2
 #		ai_chance = {
 #			factor = 50
 #		}
