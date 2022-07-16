@@ -1472,7 +1472,7 @@ country_event = {
 					defender_leader = THIS
 				}
 			}
-			join_all_defensive_wars_of = THIS
+			ROOT = { join_all_defensive_wars_of = PREV }
 		}
 	}
 
