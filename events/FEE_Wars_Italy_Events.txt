@@ -278,12 +278,77 @@ country_event = {
 			tag = NAP
 			tag = FRA
 		}
-		105 = {
-			owner = {
-				has_country_flag = fee_first_italian_war_flag
-				is_in_war = {
-					attacker_leader = FRA
-					casus_belli = cb_restore_personal_union
+		OR = {
+			AND = {
+				tag = FRA
+				105 = {
+					units_in_province = FRA
+				}
+			}
+			any_country = {
+				OR = {
+					AND = {
+						has_country_flag = fee_first_italian_war_flag
+						offensive_war_with = NAP
+					}
+					AND = {
+						is_in_war = {
+							attacker_leader = FRA
+							defender_leader = NAP
+						}
+						OR = {
+							alliance_with = FRA
+							overlord = {
+								OR = {
+									alliance_with = FRA
+									AND = {
+										offensive_war_with = NAP
+										has_country_flag = fee_first_italian_war_flag
+									}
+								}
+							}
+						}
+					}
+				}
+				105 = {
+					units_in_province = PREV
+				}
+			}
+		}
+		OR = {
+			AND = {
+				tag = NAP
+				105 = {
+					units_in_province = NAP
+				}
+			}
+			any_country = {
+				OR = {
+					AND = {
+						has_country_flag = fee_first_italian_war_flag
+						defensive_war_with = FRA
+					}
+					AND = {
+						is_in_war = {
+							attacker_leader = FRA
+							defender_leader = NAP
+						}
+						OR = {
+							alliance_with = NAP
+							overlord = {
+								OR = {
+									alliance_with = NAP
+									AND = {
+										defensive_war_with = FRA
+										has_country_flag = fee_first_italian_war_flag
+									}
+								}
+							}
+						}
+					}
+				}
+				105 = {
+					units_in_province = PREV
 				}
 			}
 		}
