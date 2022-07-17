@@ -44,6 +44,7 @@ country_event = {
 		}
 
 		#custom_tooltip = FIRST_ITALIAN_WARS_TT
+		set_country_flag = fee_first_italian_war_flag
 		declare_war_with_cb = {
 			casus_belli = cb_restore_personal_union
 			who = NAP
@@ -199,6 +200,7 @@ country_event = {
 		}
 
 		join_all_offensive_wars_of = FROM
+		set_country_flag = fee_first_italian_war_flag
 	}
 
 	option = {
@@ -230,6 +232,7 @@ country_event = {
 		}
 
 		join_all_defensive_wars_of = NAP
+		set_country_flag = fee_first_italian_war_flag
 	}
 
 	option = {
@@ -256,6 +259,115 @@ country_event = {
 
 		add_stability = -1
 		add_prestige = -12
+	}
+}
+
+#Battle of Fornovo
+country_event = {
+	id = FEE_Wars_Italy_Events.102
+	title = FEE_Wars_Italy_Events.102.T
+	desc = FEE_Wars_Italy_Events.102.D
+	picture = BATTLE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_date = 1495.7.6
+		NOT = { is_year = 1498 }
+		OR = {
+			tag = NAP
+			tag = FRA
+		}
+		105 = {
+			owner = {
+				has_country_flag = fee_first_italian_war_flag
+				is_in_war = {
+					attacker_leader = FRA
+					casus_belli = cb_restore_personal_union
+				}
+			}
+		}
+	}
+
+	major = yes
+	major_trigger = {
+		has_country_flag = fee_first_italian_war_flag
+		is_in_war = {
+			attacker_leader = FRA
+			defender_leader = NAP
+			casus_belli = cb_restore_personal_union
+		}
+	}
+
+	option = {
+		name = FEE_Wars_Italy_Events.102.OPT1
+
+		every_country = {
+			limit = {
+				OR = {
+					tag = FRA
+					AND = {
+						has_country_flag = fee_first_italian_war_flag
+						offensive_war_with = NAP
+					}
+					AND = {
+						is_in_war = {
+							attacker_leader = FRA
+							defender_leader = NAP
+						}
+						OR = {
+							alliance_with = FRA
+							overlord = {
+								OR = {
+									alliance_with = FRA
+									AND = {
+										offensive_war_with = NAP
+										has_country_flag = fee_first_italian_war_flag
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			add_prestige = -10
+			add_army_tradition = 5
+			add_war_exhaustion = 1
+			add_years_of_income = -0.332
+		}
+		every_country = {
+			limit = {
+				OR = {
+					tag = NAP
+					AND = {
+						defensive_war_with = FRA
+						has_country_flag = fee_first_italian_war_flag
+					}
+					AND = {
+						is_in_war = {
+							attacker_leader = FRA
+							defender_leader = NAP
+						}
+						OR = {
+							alliance_with = NAP
+							overlord = {
+								OR = {
+									alliance_with = NAP
+									AND = {
+										defensive_war_with = FRA
+										has_country_flag = fee_first_italian_war_flag
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			add_prestige = 10
+			add_army_tradition = -5
+			add_war_exhaustion = 1
+			add_years_of_income = 0.332
+		}
 	}
 }
 
