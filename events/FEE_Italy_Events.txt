@@ -165,6 +165,316 @@ country_event = {
 }
 
 
+#The French Disease
+country_event = {
+	id = FEE_Italy_Events.100
+	title = FEE_Italy_Events.100.T
+	desc = FEE_Italy_Events.100.D
+	picture = PLAGUE_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = FRA
+		italy_region = {
+			OR = {
+				controlled_by = FRA
+				owned_by = FRA
+			}
+		}
+	}
+	
+	major = yes
+	major_trigger = {
+		capital_scope = {
+			continent = europe
+		}
+	}
+
+	mean_time_to_happen = {
+		years = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = fee_country_can_spread_syphilis
+			italy_region = {
+				limit = {
+					OR = {
+						controlled_by = FRA
+						owned_by = FRA
+					}
+				}
+				set_province_flag = fee_province_has_syphilis
+			}
+			every_country = {
+				limit = {
+					italy_region = {
+						has_province_flag = fee_province_has_syphilis
+						units_in_province = PREV
+					}
+				}
+				set_country_flag = fee_country_can_spread_syphilis
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Italy_Events.100.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
+		custom_tooltip = FEE_FRENCH_DISEASE_TT
+	}
+}
+
+#Syphilis outbreaks in [event_target_fee_province_syphilis.GetName]
+country_event = {
+	id = FEE_Italy_Events.101
+	title = FEE_Italy_Events.101.T
+	desc = FEE_Italy_Events.101.D
+	picture = PLAGUE_eventPicture
+	
+	trigger = {
+		NOT = { has_country_flag = has_competent_doctors }
+		any_owned_province = {
+			has_province_flag = fee_province_has_syphilis
+			OR = {
+				NOT = { has_province_flag = fee_province_had_syphilis_outbreak }
+				had_province_flag = { flag = fee_province_had_syphilis_outbreak days = 10950 }
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		years = 2
+	}
+
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					has_province_flag = fee_province_has_syphilis
+					OR = {
+						NOT = { has_province_flag = fee_province_had_syphilis_outbreak }
+						had_province_flag = { flag = fee_province_had_syphilis_outbreak days = 10950 }
+					}
+				}
+				save_event_target_as = event_target_fee_province_syphilis
+				set_province_flag = fee_province_had_syphilis_outbreak
+			}
+		}
+	}
+
+	goto = event_target_fee_province_syphilis
+
+	option = {
+		name = FEE_Italy_Events.101.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_adm_power = -50
+		event_target:event_target_fee_province_syphilis = {
+			add_province_modifier = {
+				name = fee_quarantined_syphilis_outbreak
+				duration = 3650
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Italy_Events.101.OPT2
+		ai_chance = {
+			factor = 50
+		}
+
+		custom_tooltip = FEE_SPREAD_SYPHILIS_TT
+		event_target:event_target_fee_province_syphilis = {
+			random_list = {
+				75 = { }
+				25 = { add_base_tax = -1 }
+			}
+			random_list = {
+				75 = { }
+				25 = { add_base_production = -1 }
+			}
+			random_list = {
+				75 = { }
+				25 = { add_base_manpower = -1 }
+			}
+			add_province_modifier = {
+				name = fee_syphilis_outbreak
+				duration = 3650
+			}
+		}
+	}
+}
+
+#Syphilis spread to [event_target_fee_province_syphilis_spread.GetName]
+country_event = {
+	id = FEE_Italy_Events.102
+	title = FEE_Italy_Events.102.T
+	desc = FEE_Italy_Events.102.D
+	picture = PLAGUE_eventPicture
+	
+	trigger = {
+		NOT = { has_country_flag = has_competent_doctors }
+		any_owned_province = {
+			any_neighbor_province = {
+				has_province_flag = fee_province_has_syphilis
+				has_province_flag = fee_province_had_syphilis_outbreak 
+				NOT = { has_province_modifier = fee_quarantined_syphilis_outbreak }
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		years = 2
+	}
+
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					any_neighbor_province = {
+						has_province_flag = fee_province_has_syphilis
+						has_province_flag = fee_province_had_syphilis_outbreak 
+						NOT = { has_province_modifier = quarantined_influenza }
+					}
+				}
+				save_event_target_as = event_target_fee_province_syphilis_spread
+				set_province_flag = fee_province_had_syphilis_outbreak
+			}
+		}
+	}
+
+	goto = event_target_fee_province_syphilis_spread
+
+	option = {
+		name = FEE_Italy_Events.102.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_adm_power = -50
+		event_target:event_target_fee_province_syphilis_spread = {
+			add_province_modifier = {
+				name = fee_quarantined_syphilis_outbreak
+				duration = 3650
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Italy_Events.102.OPT2
+		ai_chance = {
+			factor = 50
+		}
+
+		custom_tooltip = FEE_SPREAD_SYPHILIS_TT
+		event_target:event_target_fee_province_syphilis_spread = {
+			random_list = {
+				75 = { }
+				25 = { add_base_tax = -1 }
+			}
+			random_list = {
+				75 = { }
+				25 = { add_base_production = -1 }
+			}
+			random_list = {
+				75 = { }
+				25 = { add_base_manpower = -1 }
+			}
+			add_province_modifier = {
+				name = fee_syphilis_outbreak
+				duration = 3650
+			}
+		}
+	}
+}
+
+#Army spreading the syphilis in [event_target_fee_province_syphilis_spread_army.GetName]
+country_event = {
+	id = FEE_Italy_Events.103
+	title = FEE_Italy_Events.103.T
+	desc = FEE_Italy_Events.103.D
+	picture = PLAGUE_eventPicture
+	
+	trigger = {
+		has_country_flag = fee_country_can_spread_syphilis
+		NOT = { has_country_flag = has_competent_doctors }
+		any_owned_province = {
+			NOT = { has_province_flag = fee_province_has_syphilis }
+			NOT = { has_province_flag = fee_province_had_syphilis_outbreak }
+			units_in_province = PREV
+		}
+	}
+
+	mean_time_to_happen = {
+		years = 2
+	}
+
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					NOT = { has_province_flag = fee_province_has_syphilis }
+					NOT = { has_province_flag = fee_province_had_syphilis_outbreak }
+					units_in_province = PREV
+				}
+				save_event_target_as = event_target_fee_province_syphilis_spread_army
+				set_province_flag = fee_province_had_syphilis_outbreak
+			}
+		}
+	}
+
+	goto = event_target_fee_province_syphilis_spread_army
+
+	option = {
+		name = FEE_Italy_Events.103.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_adm_power = -50
+		event_target:event_target_fee_province_syphilis_spread_army = {
+			add_province_modifier = {
+				name = fee_quarantined_syphilis_outbreak
+				duration = 3650
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Italy_Events.103.OPT2
+		ai_chance = {
+			factor = 50
+		}
+
+		custom_tooltip = FEE_SPREAD_SYPHILIS_TT
+		event_target:event_target_fee_province_syphilis_spread_army = {
+			random_list = {
+				75 = { }
+				25 = { add_base_tax = -1 }
+			}
+			random_list = {
+				75 = { }
+				25 = { add_base_production = -1 }
+			}
+			random_list = {
+				75 = { }
+				25 = { add_base_manpower = -1 }
+			}
+			add_province_modifier = {
+				name = fee_syphilis_outbreak
+				duration = 3650
+			}
+		}
+	}
+}
+
 #
 #country_event = {
 #	id = FEE_Italy_Events.

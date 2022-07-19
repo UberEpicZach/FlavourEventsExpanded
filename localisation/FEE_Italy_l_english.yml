@@ -22,8 +22,37 @@
  FEE_Italy_Events.5.D: "Most of the fighting that took place during the Italian wars took place during the sieges. That of the first descent of Charles VIII in Italy is traditionally considered the initial date of the development of the fortification to the modern, which will lead to the birth of increasingly complex fortified systems during the subsequent invasions. The army of Charles VIII in fact had a modern artillery in front of which many antiquated medieval castles had to succumb. These systems will soon spread throughout Europe, initially by Italian engineers."
  FEE_Italy_Events.5.OPT1: "They won't fall"
 
- #Modifiers
+# Siphilis
+ FEE_Italy_Events.100.T: "Syphilis Sive de Morbo Gallico"
+ FEE_Italy_Events.100.D: "The descent of the french army on the italian soil has brought, alongside death and destruction, a new disease that has never been seen before, apparently enlarged by the prostitution presence within the army itself, thus the Catholic Church has identified this new \"French Disease\" as a curse from God against mankind for their licentious customs and the immorality of their conduct."
+ FEE_Italy_Events.100.OPT1: "Hope this won't bring any problems."
+
+ FEE_Italy_Events.101.T: "Syphilis outbreaks in [event_target_fee_province_syphilis.GetName]"
+ FEE_Italy_Events.101.D: "The local population has shown chancroid on their genitalia as well as exantthema on their whole body and reddish papules on their back, might this be the sign of God's punishment upon us?"
+ FEE_Italy_Events.101.OPT1: "We should lock absteen and isolate the whores!"
+ FEE_Italy_Events.101.OPT2: "In times likes these a bit of fun might ease the tension"
+
+ FEE_Italy_Events.102.T: "Syphilis spread to [event_target_fee_province_syphilis_spread.GetName]"
+ FEE_Italy_Events.102.D: "The local population has shown chancroid on their genitalia as well as exantthema on their whole body and reddish papules on their back, might this be the sign of God's punishment upon us?"
+ FEE_Italy_Events.102.OPT1: "We should lock, absteen and isolate the whores!"
+ FEE_Italy_Events.102.OPT2: "In times likes these a bit of fun might ease the tension"
+
+ FEE_Italy_Events.103.T: "Army spreading the syphilis in [event_target_fee_province_syphilis_spread_army.GetName]"
+ FEE_Italy_Events.103.D: ""
+ FEE_Italy_Events.103.OPT1: "We should lock, absteen and isolate the whores!"
+ FEE_Italy_Events.103.OPT2: "In times likes these a bit of fun might ease the tension"
+
+# Modifiers
  fee_italian_wars_infantry: "Musketeers for everyone!"
  fee_italian_wars_cavalry: "Heavy Cavalry is the Protagonist!"
  fee_italian_wars_artillery: "Field Artillery for the first time"
  fee_italian_wars_forts: "A Star Fort?"
+
+ fee_quarantined_syphilis_outbreak: "Quarantined Syphilis Outbreak"
+ desc_fee_quarantined_syphilis_outbreak: "It's not hard to be a celibate!"
+ fee_syphilis_outbreak: "Syphilis Outbreak"
+ desc_fee_syphilis_outbreak: "Can someone stop fuck those prostitute?"
+
+# Tooltip
+ FEE_FRENCH_DISEASE_TT: "The new disease might spread to nearby owned or controlled provinces. Army marching on those provinces might bring the siphilis back to their homeland"
+ FEE_SPREAD_SYPHILIS_TT: "§RThe French Disease might spread to nearby provinces§!"

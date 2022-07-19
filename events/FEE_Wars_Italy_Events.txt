@@ -272,21 +272,22 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		is_date = 1495.7.6
+		is_year = 1494
 		NOT = { is_year = 1498 }
+		FRA = {
+			has_country_flag = fee_first_italian_war_flag
+			offensive_war_with = NAP
+		}
 		OR = {
 			tag = NAP
 			tag = FRA
 		}
-		OR = {
-			AND = {
-				tag = FRA
-				105 = {
-					units_in_province = FRA
-				}
-			}
-			any_country = {
+		105 = {
+			NOT = { controlled_by = owner }
+			controller = {
 				OR = {
+					tag = FRA
+					tag = NAP
 					AND = {
 						has_country_flag = fee_first_italian_war_flag
 						offensive_war_with = NAP
@@ -309,21 +310,6 @@ country_event = {
 							}
 						}
 					}
-				}
-				105 = {
-					units_in_province = PREV
-				}
-			}
-		}
-		OR = {
-			AND = {
-				tag = NAP
-				105 = {
-					units_in_province = NAP
-				}
-			}
-			any_country = {
-				OR = {
 					AND = {
 						has_country_flag = fee_first_italian_war_flag
 						defensive_war_with = FRA
@@ -346,9 +332,6 @@ country_event = {
 							}
 						}
 					}
-				}
-				105 = {
-					units_in_province = PREV
 				}
 			}
 		}
