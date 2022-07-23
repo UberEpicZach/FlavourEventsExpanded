@@ -10,3 +10,7 @@ fee_syphilis_outbreak = {
 	local_tax_modifier = -0.25
 	trade_goods_size = -0.25
 }
+
+fee_syphilis_troops_contained = {
+	land_morale = -0.05
+}

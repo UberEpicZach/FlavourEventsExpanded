@@ -9,11 +9,40 @@ namespace = FEE_Diseases_Events
 country_event = {
 	id = FEE_Diseases_Events.100
 	title = FEE_Diseases_Events.100.T
-	desc = FEE_Diseases_Events.100.D
+	desc = {
+		trigger = {
+			italy_region = {
+				OR = {
+					controller = {
+						num_of_colonies = 1
+					}
+					owner = {
+						num_of_colonies = 1
+					}
+				}
+			}
+		}
+		desc = FEE_Diseases_Events.100.D_French
+	}
+	desc = {
+		trigger = {
+			italy_region = {
+				OR = {
+					controller = {
+						num_of_colonies = 1
+					}
+					owner = {
+						num_of_colonies = 1
+					}
+				}
+			}
+		}
+		desc = FEE_Diseases_Events.100.D_Colonial
+	}
 	picture = PLAGUE_eventPicture
 
 	fire_only_once = yes
-	
+
 	trigger = {
 		is_year = 1440
 		NOT = { is_year = 1750 }
@@ -37,7 +66,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	major = yes
 	major_trigger = {
 		capital_scope = {
@@ -106,14 +135,43 @@ country_event = {
 		any_owned_province = {
 			has_province_flag = fee_province_has_syphilis
 			OR = {
-				NOT = { has_province_flag = fee_province_had_syphilis_outbreak }
-				had_province_flag = { flag = fee_province_had_syphilis_outbreak days = 10950 }
+				NOT = { has_province_flag = fee_province_has_syphilis_outbreak }
+				had_province_flag = { flag = fee_province_has_syphilis_outbreak days = 10950 }
 			}
 		}
 	}
 
 	mean_time_to_happen = {
 		years = 2
+		modifier = {
+			factor = 0.5
+			NOT = { is_year = 1500 }
+		}
+		modifier = {
+			factor = 1
+			is_year = 1500
+			NOT = { is_year = 1550 }
+		}
+		modifier = {
+			factor = 1.5
+			is_year = 1550
+			NOT = { is_year = 1600 }
+		}
+		modifier = {
+			factor = 2
+			is_year = 1600
+			NOT = { is_year = 1650 }
+		}
+		modifier = {
+			factor = 2.5
+			is_year = 1650
+			NOT = { is_year = 1700 }
+		}
+		modifier = {
+			factor = 3
+			is_year = 1750
+			NOT = { is_year = 1750 }
+		}
 	}
 
 	immediate = {
@@ -122,12 +180,198 @@ country_event = {
 				limit = {
 					has_province_flag = fee_province_has_syphilis
 					OR = {
-						NOT = { has_province_flag = fee_province_had_syphilis_outbreak }
-						had_province_flag = { flag = fee_province_had_syphilis_outbreak days = 10950 }
+						NOT = { has_province_flag = fee_province_has_syphilis_outbreak }
+						had_province_flag = { flag = fee_province_has_syphilis_outbreak days = 10950 }
 					}
 				}
 				save_event_target_as = event_target_fee_province_syphilis
-				set_province_flag = fee_province_had_syphilis_outbreak
+				set_province_flag = fee_province_has_syphilis_outbreak
+				event_target:event_target_fee_province_syphilis = {
+					set_variable = {
+						which = fee_syphilis_counter
+						value = 0
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = fee_country_slacking_manpower
+				}
+				event_target:event_target_fee_province_syphilis = {
+					change_variable = {
+						which = fee_syphilis_counter
+						value = -10
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_country_modifier = fee_syphilis_troops_contained
+				}
+				event_target:event_target_fee_province_syphilis = {
+					change_variable = {
+						which = fee_syphilis_counter
+						value = -15
+					}
+				}
+			}
+			if = {
+				limit = {
+					army_professionalism = 0.90
+				}
+				event_target:event_target_fee_province_syphilis = {
+					change_variable = {
+						which = fee_syphilis_counter
+						value = -15
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					army_professionalism = 0.75
+				}
+				event_target:event_target_fee_province_syphilis = {
+					change_variable = {
+						which = fee_syphilis_counter
+						value = -10
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					army_professionalism = 0.50
+				}
+				event_target:event_target_fee_province_syphilis = {
+					change_variable = {
+						which = fee_syphilis_counter
+						value = -5
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					army_professionalism = 0.25
+				}
+				event_target:event_target_fee_province_syphilis = {
+					change_variable = {
+						which = fee_syphilis_counter
+						value = 5
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					army_professionalism = 0.10
+				}
+				event_target:event_target_fee_province_syphilis = {
+					change_variable = {
+						which = fee_syphilis_counter
+						value = 10
+					}
+				}
+			}
+			else = {
+				event_target:event_target_fee_province_syphilis = {
+					change_variable = {
+						which = fee_syphilis_counter
+						value = 15
+					}
+				}
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						influence = 90
+						estate = estate_church
+					}
+				}
+				event_target:event_target_fee_province_syphilis = {
+					change_variable = {
+						which = fee_syphilis_counter
+						value = -15
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					estate_influence = {
+						influence = 75
+						estate = estate_church
+					}
+				}
+				event_target:event_target_fee_province_syphilis = {
+					change_variable = {
+						which = fee_syphilis_counter
+						value = -10
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					estate_influence = {
+						influence = 50
+						estate = estate_church
+					}
+				}
+				event_target:event_target_fee_province_syphilis = {
+					change_variable = {
+						which = fee_syphilis_counter
+						value = -5
+					}
+				}
+			}
+			event_target:event_target_fee_province_syphilis = {
+				if = {
+					limit = {
+						development = 27
+					}
+					change_variable = {
+						which = fee_syphilis_counter
+						value = 20
+					}
+				}
+				else_if = {
+					limit = {
+						development = 22
+					}
+					change_variable = {
+						which = fee_syphilis_counter
+						value = 15
+					}
+				}
+				else_if = {
+					limit = {
+						development = 17
+					}
+					change_variable = {
+						which = fee_syphilis_counter
+						value = 10
+					}
+				}
+				else_if = {
+					limit = {
+						development = 12
+					}
+					change_variable = {
+						which = fee_syphilis_counter
+						value = 5
+					}
+				}
+				else_if = {
+					limit = {
+						development = 7
+					}
+					change_variable = {
+						which = fee_syphilis_counter
+						value = -5
+					}
+				}
+				else = {
+					change_variable = {
+						which = fee_syphilis_counter
+						value = -10
+					}
+				}
 			}
 		}
 	}
@@ -146,6 +390,68 @@ country_event = {
 				name = fee_quarantined_syphilis_outbreak
 				duration = 3650
 			}
+			if = {
+				limit = {
+					check_variable = {
+						which = fee_syphilis_counter
+						value = 90
+					}
+				}
+				add_base_tax = -2
+				add_base_production = -2
+				add_base_manpower = -2
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = fee_syphilis_counter
+						value = 75
+					}
+				}
+				owner = {
+					add_adm_power = -25
+					add_dip_power = -25
+					add_mil_power = -25
+				}
+				add_base_tax = -1
+				add_base_production = -1
+				add_base_manpower = -1
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = fee_syphilis_counter
+						value = 50
+					}
+				}
+				add_base_tax = -1
+				add_base_production = -1
+				add_base_manpower = -1
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = fee_syphilis_counter
+						value = 25
+					}
+				}
+				owner = {
+					add_adm_power = -25
+					add_dip_power = -25
+					add_mil_power = -25
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = fee_syphilis_counter
+						value = 10
+					}
+				}
+				owner = {
+					add_prestige = -10
+				}
+			}
 		}
 	}
 
@@ -157,21 +463,71 @@ country_event = {
 
 		custom_tooltip = FEE_SPREAD_SYPHILIS_TT
 		event_target:event_target_fee_province_syphilis = {
-			random_list = {
-				75 = { }
-				25 = { add_base_tax = -1 }
-			}
-			random_list = {
-				75 = { }
-				25 = { add_base_production = -1 }
-			}
-			random_list = {
-				75 = { }
-				25 = { add_base_manpower = -1 }
-			}
 			add_province_modifier = {
 				name = fee_syphilis_outbreak
 				duration = 3650
+			}
+			if = {
+				limit = {
+					check_variable = {
+						which = fee_syphilis_counter
+						value = 90
+					}
+				}
+				add_base_tax = -2
+				add_base_production = -2
+				add_base_manpower = -2
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = fee_syphilis_counter
+						value = 75
+					}
+				}
+				owner = {
+					add_adm_power = -25
+					add_dip_power = -25
+					add_mil_power = -25
+				}
+				add_base_tax = -1
+				add_base_production = -1
+				add_base_manpower = -1
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = fee_syphilis_counter
+						value = 50
+					}
+				}
+				add_base_tax = -1
+				add_base_production = -1
+				add_base_manpower = -1
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = fee_syphilis_counter
+						value = 25
+					}
+				}
+				owner = {
+					add_adm_power = -25
+					add_dip_power = -25
+					add_mil_power = -25
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = fee_syphilis_counter
+						value = 10
+					}
+				}
+				owner = {
+					add_prestige = -10
+				}
 			}
 		}
 	}
@@ -190,7 +546,7 @@ country_event = {
 		any_owned_province = {
 			any_neighbor_province = {
 				has_province_flag = fee_province_has_syphilis
-				has_province_flag = fee_province_had_syphilis_outbreak 
+				has_province_flag = fee_province_has_syphilis_outbreak 
 				NOT = { has_province_modifier = fee_quarantined_syphilis_outbreak }
 			}
 		}
@@ -198,6 +554,35 @@ country_event = {
 
 	mean_time_to_happen = {
 		years = 2
+		modifier = {
+			factor = 0.5
+			NOT = { is_year = 1500 }
+		}
+		modifier = {
+			factor = 1
+			is_year = 1500
+			NOT = { is_year = 1550 }
+		}
+		modifier = {
+			factor = 1.5
+			is_year = 1550
+			NOT = { is_year = 1600 }
+		}
+		modifier = {
+			factor = 2
+			is_year = 1600
+			NOT = { is_year = 1650 }
+		}
+		modifier = {
+			factor = 2.5
+			is_year = 1650
+			NOT = { is_year = 1700 }
+		}
+		modifier = {
+			factor = 3
+			is_year = 1750
+			NOT = { is_year = 1750 }
+		}
 	}
 
 	immediate = {
@@ -206,12 +591,198 @@ country_event = {
 				limit = {
 					any_neighbor_province = {
 						has_province_flag = fee_province_has_syphilis
-						has_province_flag = fee_province_had_syphilis_outbreak 
+						has_province_flag = fee_province_has_syphilis_outbreak 
 						NOT = { has_province_modifier = quarantined_influenza }
 					}
 				}
 				save_event_target_as = event_target_fee_province_syphilis_spread
-				set_province_flag = fee_province_had_syphilis_outbreak
+				set_province_flag = fee_province_has_syphilis_outbreak
+				event_target:event_target_fee_province_syphilis = {
+					set_variable = {
+						which = fee_syphilis_counter
+						value = 0
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = fee_country_slacking_manpower
+				}
+				event_target:event_target_fee_province_syphilis = {
+					change_variable = {
+						which = fee_syphilis_counter
+						value = -10
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_country_modifier = fee_syphilis_troops_contained
+				}
+				event_target:event_target_fee_province_syphilis = {
+					change_variable = {
+						which = fee_syphilis_counter
+						value = -15
+					}
+				}
+			}
+			if = {
+				limit = {
+					army_professionalism = 0.90
+				}
+				event_target:event_target_fee_province_syphilis = {
+					change_variable = {
+						which = fee_syphilis_counter
+						value = -15
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					army_professionalism = 0.75
+				}
+				event_target:event_target_fee_province_syphilis = {
+					change_variable = {
+						which = fee_syphilis_counter
+						value = -10
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					army_professionalism = 0.50
+				}
+				event_target:event_target_fee_province_syphilis = {
+					change_variable = {
+						which = fee_syphilis_counter
+						value = -5
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					army_professionalism = 0.25
+				}
+				event_target:event_target_fee_province_syphilis = {
+					change_variable = {
+						which = fee_syphilis_counter
+						value = 5
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					army_professionalism = 0.10
+				}
+				event_target:event_target_fee_province_syphilis = {
+					change_variable = {
+						which = fee_syphilis_counter
+						value = 10
+					}
+				}
+			}
+			else = {
+				event_target:event_target_fee_province_syphilis = {
+					change_variable = {
+						which = fee_syphilis_counter
+						value = 15
+					}
+				}
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						influence = 90
+						estate = estate_church
+					}
+				}
+				event_target:event_target_fee_province_syphilis = {
+					change_variable = {
+						which = fee_syphilis_counter
+						value = -15
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					estate_influence = {
+						influence = 75
+						estate = estate_church
+					}
+				}
+				event_target:event_target_fee_province_syphilis = {
+					change_variable = {
+						which = fee_syphilis_counter
+						value = -10
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					estate_influence = {
+						influence = 50
+						estate = estate_church
+					}
+				}
+				event_target:event_target_fee_province_syphilis = {
+					change_variable = {
+						which = fee_syphilis_counter
+						value = -5
+					}
+				}
+			}
+			event_target:event_target_fee_province_syphilis = {
+				if = {
+					limit = {
+						development = 27
+					}
+					change_variable = {
+						which = fee_syphilis_counter
+						value = 20
+					}
+				}
+				else_if = {
+					limit = {
+						development = 22
+					}
+					change_variable = {
+						which = fee_syphilis_counter
+						value = 15
+					}
+				}
+				else_if = {
+					limit = {
+						development = 17
+					}
+					change_variable = {
+						which = fee_syphilis_counter
+						value = 10
+					}
+				}
+				else_if = {
+					limit = {
+						development = 12
+					}
+					change_variable = {
+						which = fee_syphilis_counter
+						value = 5
+					}
+				}
+				else_if = {
+					limit = {
+						development = 7
+					}
+					change_variable = {
+						which = fee_syphilis_counter
+						value = -5
+					}
+				}
+				else = {
+					change_variable = {
+						which = fee_syphilis_counter
+						value = -10
+					}
+				}
 			}
 		}
 	}
@@ -225,10 +796,72 @@ country_event = {
 		}
 
 		add_adm_power = -50
-		event_target:event_target_fee_province_syphilis_spread = {
+		event_target:event_target_fee_province_syphilis = {
 			add_province_modifier = {
 				name = fee_quarantined_syphilis_outbreak
 				duration = 3650
+			}
+			if = {
+				limit = {
+					check_variable = {
+						which = fee_syphilis_counter
+						value = 90
+					}
+				}
+				add_base_tax = -2
+				add_base_production = -2
+				add_base_manpower = -2
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = fee_syphilis_counter
+						value = 75
+					}
+				}
+				owner = {
+					add_adm_power = -25
+					add_dip_power = -25
+					add_mil_power = -25
+				}
+				add_base_tax = -1
+				add_base_production = -1
+				add_base_manpower = -1
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = fee_syphilis_counter
+						value = 50
+					}
+				}
+				add_base_tax = -1
+				add_base_production = -1
+				add_base_manpower = -1
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = fee_syphilis_counter
+						value = 25
+					}
+				}
+				owner = {
+					add_adm_power = -25
+					add_dip_power = -25
+					add_mil_power = -25
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = fee_syphilis_counter
+						value = 10
+					}
+				}
+				owner = {
+					add_prestige = -10
+				}
 			}
 		}
 	}
@@ -240,22 +873,72 @@ country_event = {
 		}
 
 		custom_tooltip = FEE_SPREAD_SYPHILIS_TT
-		event_target:event_target_fee_province_syphilis_spread = {
-			random_list = {
-				75 = { }
-				25 = { add_base_tax = -1 }
-			}
-			random_list = {
-				75 = { }
-				25 = { add_base_production = -1 }
-			}
-			random_list = {
-				75 = { }
-				25 = { add_base_manpower = -1 }
-			}
+		event_target:event_target_fee_province_syphilis = {
 			add_province_modifier = {
 				name = fee_syphilis_outbreak
 				duration = 3650
+			}
+			if = {
+				limit = {
+					check_variable = {
+						which = fee_syphilis_counter
+						value = 90
+					}
+				}
+				add_base_tax = -2
+				add_base_production = -2
+				add_base_manpower = -2
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = fee_syphilis_counter
+						value = 75
+					}
+				}
+				owner = {
+					add_adm_power = -25
+					add_dip_power = -25
+					add_mil_power = -25
+				}
+				add_base_tax = -1
+				add_base_production = -1
+				add_base_manpower = -1
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = fee_syphilis_counter
+						value = 50
+					}
+				}
+				add_base_tax = -1
+				add_base_production = -1
+				add_base_manpower = -1
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = fee_syphilis_counter
+						value = 25
+					}
+				}
+				owner = {
+					add_adm_power = -25
+					add_dip_power = -25
+					add_mil_power = -25
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = fee_syphilis_counter
+						value = 10
+					}
+				}
+				owner = {
+					add_prestige = -10
+				}
 			}
 		}
 	}
@@ -274,13 +957,42 @@ country_event = {
 		NOT = { has_country_flag = has_competent_doctors }
 		any_owned_province = {
 			NOT = { has_province_flag = fee_province_has_syphilis }
-			NOT = { has_province_flag = fee_province_had_syphilis_outbreak }
+			NOT = { has_province_flag = fee_province_has_syphilis_outbreak }
 			units_in_province = PREV
 		}
 	}
 
 	mean_time_to_happen = {
 		years = 2
+		modifier = {
+			factor = 0.5
+			NOT = { is_year = 1500 }
+		}
+		modifier = {
+			factor = 1
+			is_year = 1500
+			NOT = { is_year = 1550 }
+		}
+		modifier = {
+			factor = 1.5
+			is_year = 1550
+			NOT = { is_year = 1600 }
+		}
+		modifier = {
+			factor = 2
+			is_year = 1600
+			NOT = { is_year = 1650 }
+		}
+		modifier = {
+			factor = 2.5
+			is_year = 1650
+			NOT = { is_year = 1700 }
+		}
+		modifier = {
+			factor = 3
+			is_year = 1750
+			NOT = { is_year = 1750 }
+		}
 	}
 
 	immediate = {
@@ -288,11 +1000,197 @@ country_event = {
 			random_owned_province = {
 				limit = {
 					NOT = { has_province_flag = fee_province_has_syphilis }
-					NOT = { has_province_flag = fee_province_had_syphilis_outbreak }
+					NOT = { has_province_flag = fee_province_has_syphilis_outbreak }
 					units_in_province = PREV
 				}
 				save_event_target_as = event_target_fee_province_syphilis_spread_army
-				set_province_flag = fee_province_had_syphilis_outbreak
+				set_province_flag = fee_province_has_syphilis_outbreak
+				event_target:event_target_fee_province_syphilis = {
+					set_variable = {
+						which = fee_syphilis_counter
+						value = 0
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = fee_country_slacking_manpower
+				}
+				event_target:event_target_fee_province_syphilis = {
+					change_variable = {
+						which = fee_syphilis_counter
+						value = -10
+					}
+				}
+			}
+			if = {
+				limit = {
+					has_country_modifier = fee_syphilis_troops_contained
+				}
+				event_target:event_target_fee_province_syphilis = {
+					change_variable = {
+						which = fee_syphilis_counter
+						value = -15
+					}
+				}
+			}
+			if = {
+				limit = {
+					army_professionalism = 0.90
+				}
+				event_target:event_target_fee_province_syphilis = {
+					change_variable = {
+						which = fee_syphilis_counter
+						value = -15
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					army_professionalism = 0.75
+				}
+				event_target:event_target_fee_province_syphilis = {
+					change_variable = {
+						which = fee_syphilis_counter
+						value = -10
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					army_professionalism = 0.50
+				}
+				event_target:event_target_fee_province_syphilis = {
+					change_variable = {
+						which = fee_syphilis_counter
+						value = -5
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					army_professionalism = 0.25
+				}
+				event_target:event_target_fee_province_syphilis = {
+					change_variable = {
+						which = fee_syphilis_counter
+						value = 5
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					army_professionalism = 0.10
+				}
+				event_target:event_target_fee_province_syphilis = {
+					change_variable = {
+						which = fee_syphilis_counter
+						value = 10
+					}
+				}
+			}
+			else = {
+				event_target:event_target_fee_province_syphilis = {
+					change_variable = {
+						which = fee_syphilis_counter
+						value = 15
+					}
+				}
+			}
+			if = {
+				limit = {
+					estate_influence = {
+						influence = 90
+						estate = estate_church
+					}
+				}
+				event_target:event_target_fee_province_syphilis = {
+					change_variable = {
+						which = fee_syphilis_counter
+						value = -15
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					estate_influence = {
+						influence = 75
+						estate = estate_church
+					}
+				}
+				event_target:event_target_fee_province_syphilis = {
+					change_variable = {
+						which = fee_syphilis_counter
+						value = -10
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					estate_influence = {
+						influence = 50
+						estate = estate_church
+					}
+				}
+				event_target:event_target_fee_province_syphilis = {
+					change_variable = {
+						which = fee_syphilis_counter
+						value = -5
+					}
+				}
+			}
+			event_target:event_target_fee_province_syphilis = {
+				if = {
+					limit = {
+						development = 27
+					}
+					change_variable = {
+						which = fee_syphilis_counter
+						value = 20
+					}
+				}
+				else_if = {
+					limit = {
+						development = 22
+					}
+					change_variable = {
+						which = fee_syphilis_counter
+						value = 15
+					}
+				}
+				else_if = {
+					limit = {
+						development = 17
+					}
+					change_variable = {
+						which = fee_syphilis_counter
+						value = 10
+					}
+				}
+				else_if = {
+					limit = {
+						development = 12
+					}
+					change_variable = {
+						which = fee_syphilis_counter
+						value = 5
+					}
+				}
+				else_if = {
+					limit = {
+						development = 7
+					}
+					change_variable = {
+						which = fee_syphilis_counter
+						value = -5
+					}
+				}
+				else = {
+					change_variable = {
+						which = fee_syphilis_counter
+						value = -10
+					}
+				}
 			}
 		}
 	}
@@ -306,10 +1204,72 @@ country_event = {
 		}
 
 		add_adm_power = -50
-		event_target:event_target_fee_province_syphilis_spread_army = {
+		event_target:event_target_fee_province_syphilis = {
 			add_province_modifier = {
 				name = fee_quarantined_syphilis_outbreak
 				duration = 3650
+			}
+			if = {
+				limit = {
+					check_variable = {
+						which = fee_syphilis_counter
+						value = 90
+					}
+				}
+				add_base_tax = -2
+				add_base_production = -2
+				add_base_manpower = -2
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = fee_syphilis_counter
+						value = 75
+					}
+				}
+				owner = {
+					add_adm_power = -25
+					add_dip_power = -25
+					add_mil_power = -25
+				}
+				add_base_tax = -1
+				add_base_production = -1
+				add_base_manpower = -1
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = fee_syphilis_counter
+						value = 50
+					}
+				}
+				add_base_tax = -1
+				add_base_production = -1
+				add_base_manpower = -1
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = fee_syphilis_counter
+						value = 25
+					}
+				}
+				owner = {
+					add_adm_power = -25
+					add_dip_power = -25
+					add_mil_power = -25
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = fee_syphilis_counter
+						value = 10
+					}
+				}
+				owner = {
+					add_prestige = -10
+				}
 			}
 		}
 	}
@@ -321,24 +1281,143 @@ country_event = {
 		}
 
 		custom_tooltip = FEE_SPREAD_SYPHILIS_TT
-		event_target:event_target_fee_province_syphilis_spread_army = {
-			random_list = {
-				75 = { }
-				25 = { add_base_tax = -1 }
-			}
-			random_list = {
-				75 = { }
-				25 = { add_base_production = -1 }
-			}
-			random_list = {
-				75 = { }
-				25 = { add_base_manpower = -1 }
-			}
+		event_target:event_target_fee_province_syphilis = {
 			add_province_modifier = {
 				name = fee_syphilis_outbreak
 				duration = 3650
 			}
+			if = {
+				limit = {
+					check_variable = {
+						which = fee_syphilis_counter
+						value = 90
+					}
+				}
+				add_base_tax = -2
+				add_base_production = -2
+				add_base_manpower = -2
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = fee_syphilis_counter
+						value = 75
+					}
+				}
+				owner = {
+					add_adm_power = -25
+					add_dip_power = -25
+					add_mil_power = -25
+				}
+				add_base_tax = -1
+				add_base_production = -1
+				add_base_manpower = -1
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = fee_syphilis_counter
+						value = 50
+					}
+				}
+				add_base_tax = -1
+				add_base_production = -1
+				add_base_manpower = -1
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = fee_syphilis_counter
+						value = 25
+					}
+				}
+				owner = {
+					add_adm_power = -25
+					add_dip_power = -25
+					add_mil_power = -25
+				}
+			}
+			else_if = {
+				limit = {
+					check_variable = {
+						which = fee_syphilis_counter
+						value = 10
+					}
+				}
+				owner = {
+					add_prestige = -10
+				}
+			}
 		}
+	}
+}
+
+#Slacking the Recruitment
+country_event = {
+	id = FEE_Diseases_Events.105
+	title = FEE_Diseases_Events.105.T
+	desc = FEE_Diseases_Events.105.D
+	picture = GENERALS_DISCUSSING_eventPicture
+
+	trigger = {
+		any_owned_province = {
+			OR = {
+				has_province_flag = fee_province_has_syphilis
+				has_province_flag = fee_province_has_syphilis_outbreak
+			}
+		}
+		OR = {
+			NOT = { has_country_flag = fee_syphilis_dealing_troops }
+			had_country_flag = {
+				flag = fee_syphilis_dealing_troops
+				days = 1825
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		years = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = fee_syphilis_dealing_troops
+			set_country_flag = fee_syphilis_dealing_troops
+			clr_country_flag = fee_country_slacking_manpower
+		}
+	}
+
+	option = {
+		name = FEE_Diseases_Events.105.OPT1
+		ai_chance = {
+			factor = 33
+		}
+
+		add_yearly_manpower = -0.5
+		custom_tooltip = FEE_SYPHILIS_SLACKING_MANPOWER_TT
+		set_country_flag = fee_country_slacking_manpower
+	}
+
+	option = {
+		name = FEE_Diseases_Events.105.OPT2
+		ai_chance = {
+			factor = 33
+		}
+
+		custom_tooltip = FEE_SYPHILIS_SLACKING_MANPOWER_TT
+		add_country_modifier = {
+			name = fee_syphilis_troops_contained
+			duration = 1825
+		}
+	}
+
+	option = {
+		name = FEE_Diseases_Events.105.OPT3
+		ai_chance = {
+			factor = 33
+		}
+
+		add_mil_power = -25
 	}
 }
 
