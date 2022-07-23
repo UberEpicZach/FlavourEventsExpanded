@@ -419,6 +419,90 @@ country_event = {
 	}
 }
 
+#Louis de la Trémoille
+country_event = {
+	id = FEE_Wars_Italy_Events.103
+	title = FEE_Wars_Italy_Events.103.T
+	desc = FEE_Wars_Italy_Events.103.D
+	picture = GENERALS_DISCUSSING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = FRA
+		offensive_war_with = NAP
+		has_country_flag = fee_first_italian_war_flag
+	}
+
+	option = {
+		name = FEE_Wars_Italy_Events.103.OPT1
+		
+		add_mil_power = 25
+		create_general = {
+			tradition = 50
+			name = "Louis de la Trémoille"
+		}
+	}
+}
+
+#Ferrante d'Este
+country_event = {
+	id = FEE_Wars_Italy_Events.104
+	title = FEE_Wars_Italy_Events.104.T
+	desc = FEE_Wars_Italy_Events.104.D
+	picture = GENERALS_DISCUSSING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = FER
+		has_country_flag = fee_first_italian_war_flag
+		FRA = {
+			offensive_war_with = NAP
+			has_country_flag = fee_first_italian_war_flag
+		}
+	}
+
+	option = {
+		name = FEE_Wars_Italy_Events.104.OPT1
+		
+		add_army_tradition = 5
+		create_general = {
+			tradition = 50
+			name = "Ferrante d'Este"
+		}
+	}
+}
+
+#Galeazzo Sanseverino
+country_event = {
+	id = FEE_Wars_Italy_Events.105
+	title = FEE_Wars_Italy_Events.105.T
+	desc = FEE_Wars_Italy_Events.105.D
+	picture = GENERALS_DISCUSSING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = MLO
+		has_country_flag = fee_first_italian_war_flag
+		FRA = {
+			offensive_war_with = NAP
+			has_country_flag = fee_first_italian_war_flag
+		}
+	}
+
+	option = {
+		name = FEE_Wars_Italy_Events.105.OPT1
+		
+		add_legitimacy_equivalent = { amount = 5 republican_tradition = 3 }
+		create_general = {
+			tradition = 50
+			name = "Galeazzo Sanseverino"
+		}
+	}
+}
+
 
 #Second Italian War
 country_event = {
