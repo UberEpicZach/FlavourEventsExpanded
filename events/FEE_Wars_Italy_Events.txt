@@ -468,7 +468,7 @@ country_event = {
 		
 		add_army_tradition = 5
 		create_general = {
-			tradition = 50
+			tradition = 75
 			name = "Ferrante d'Este"
 		}
 	}
@@ -497,7 +497,7 @@ country_event = {
 		
 		add_legitimacy_equivalent = { amount = 5 republican_tradition = 3 }
 		create_general = {
-			tradition = 50
+			tradition = 33
 			name = "Galeazzo Sanseverino"
 		}
 	}
