@@ -3,8 +3,8 @@ namespace = CE_brandenburg_expanded
 
 country_event = {
 	id = CE_brandenburg_expanded.1
-	title = CE_brandenburg_expanded.1.t
-	desc = CE_brandenburg_expanded.1.d
+	title = CE_brandenburg_expanded.1.T
+	desc = CE_brandenburg_expanded.1.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 	
 	fire_only_once = yes
@@ -30,7 +30,7 @@ country_event = {
 	}
 	
 	option = {
-		name = CE_brandenburg_expanded.1.a
+		name = CE_brandenburg_expanded.1.OPT1
 		#create_marriage = GLG
 		custom_tooltip = CE_barbara_von_hohenzollern_marriage
 		set_country_flag = CE_barbara_von_hohenzollern_marriage
@@ -39,7 +39,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = CE_brandenburg_expanded.1.b
+		name = CE_brandenburg_expanded.1.OPT2
 		add_prestige = 5
 		ai_chance = {
 			factor = 0
@@ -49,8 +49,8 @@ country_event = {
 
 country_event = {
 	id = CE_brandenburg_expanded.2
-	title = CE_brandenburg_expanded.2.t
-	desc = CE_brandenburg_expanded.2.d
+	title = CE_brandenburg_expanded.2.T
+	desc = CE_brandenburg_expanded.2.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 	
 	fire_only_once = yes
@@ -122,7 +122,7 @@ country_event = {
 	}
 	
 	option = {
-		name = CE_brandenburg_expanded.2.a
+		name = CE_brandenburg_expanded.2.OPT1
 		BRA = {
 			country_event = {
 				id = CE_brandenburg_expanded.3
@@ -140,7 +140,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = CE_brandenburg_expanded.2.b
+		name = CE_brandenburg_expanded.2.OPT2
 		add_prestige = 5
 		BRA = {
 			country_event = {
@@ -190,8 +190,8 @@ country_event = {
 
 country_event = {
 	id = CE_brandenburg_expanded.3
-	title = CE_brandenburg_expanded.3.t
-	desc = CE_brandenburg_expanded.3.d
+	title = CE_brandenburg_expanded.3.T
+	desc = CE_brandenburg_expanded.3.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 	
 	fire_only_once = yes
@@ -199,7 +199,7 @@ country_event = {
 	is_triggered_only = yes 	
 
 	option = {
-		name = CE_brandenburg_expanded.3.a
+		name = CE_brandenburg_expanded.3.OPT1
 		BRA = {
 			vassalize = GLG
 		}
@@ -208,8 +208,8 @@ country_event = {
 
 country_event = {
 	id = CE_brandenburg_expanded.4
-	title = CE_brandenburg_expanded.4.t
-	desc = CE_brandenburg_expanded.4.d
+	title = CE_brandenburg_expanded.4.T
+	desc = CE_brandenburg_expanded.4.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 	
 	fire_only_once = yes
@@ -217,7 +217,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = CE_brandenburg_expanded.4.a
+		name = CE_brandenburg_expanded.4.OPT1
 		add_army_tradition = 5
 		BOH = {
 			country_event = {
@@ -257,7 +257,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = CE_brandenburg_expanded.4.b
+		name = CE_brandenburg_expanded.4.OPT2
 		add_prestige = -5
 		ai_chance = {
 			factor = 1
@@ -287,8 +287,8 @@ country_event = {
 
 country_event = {
 	id = CE_brandenburg_expanded.5
-	title = CE_brandenburg_expanded.5.t
-	desc = CE_brandenburg_expanded.5.d
+	title = CE_brandenburg_expanded.5.T
+	desc = CE_brandenburg_expanded.5.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 	
 	fire_only_once = yes
@@ -296,7 +296,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = CE_brandenburg_expanded.5.a
+		name = CE_brandenburg_expanded.5.OPT1
 		BOH = {
 			declare_war_with_cb = {
 				who = BRA
@@ -345,7 +345,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = CE_brandenburg_expanded.5.b
+		name = CE_brandenburg_expanded.5.OPT2
 		BRA = {
 			country_event = {
 				id = CE_brandenburg_expanded.6
@@ -366,8 +366,8 @@ country_event = {
 
 country_event = {
 	id = CE_brandenburg_expanded.6
-	title = CE_brandenburg_expanded.6.t
-	desc = CE_brandenburg_expanded.6.d
+	title = CE_brandenburg_expanded.6.T
+	desc = CE_brandenburg_expanded.6.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 	
 	fire_only_once = yes
@@ -375,7 +375,7 @@ country_event = {
 	is_triggered_only = yes 	
 
 	option = {
-		name = CE_brandenburg_expanded.6.a
+		name = CE_brandenburg_expanded.6.OPT1
 		BRA = {
 			vassalize = GLG
 		}
@@ -384,8 +384,8 @@ country_event = {
 
 country_event = {
 	id = CE_brandenburg_expanded.7
-	title = CE_brandenburg_expanded.7.t
-	desc = CE_brandenburg_expanded.7.d
+	title = CE_brandenburg_expanded.7.T
+	desc = CE_brandenburg_expanded.7.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 	
 	fire_only_once = yes
@@ -403,7 +403,7 @@ country_event = {
 	}
 
 	option = {
-		name = CE_brandenburg_expanded.7.a
+		name = CE_brandenburg_expanded.7.OPT1
 		BOH = {
 			country_event = {
 				id = CE_brandenburg_expanded.8
@@ -415,7 +415,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = CE_brandenburg_expanded.7.b
+		name = CE_brandenburg_expanded.7.OPT2
 		add_stability = -1
 		ai_chance = {
 			factor = 1
@@ -431,8 +431,8 @@ country_event = {
 
 country_event = {
 	id = CE_brandenburg_expanded.8
-	title = CE_brandenburg_expanded.8.t
-	desc = CE_brandenburg_expanded.8.d
+	title = CE_brandenburg_expanded.8.T
+	desc = CE_brandenburg_expanded.8.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 	
 	fire_only_once = yes
@@ -440,7 +440,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = CE_brandenburg_expanded.8.a
+		name = CE_brandenburg_expanded.8.OPT1
 		create_marriage = BRA
 		add_opinion = {
 			who = BRA
@@ -461,7 +461,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = CE_brandenburg_expanded.8.b
+		name = CE_brandenburg_expanded.8.OPT2
 		create_marriage = BRA
 		add_opinion = {
 			who = BRA
@@ -488,7 +488,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = CE_brandenburg_expanded.8.c
+		name = CE_brandenburg_expanded.8.OPT3
 		add_prestige = 5
 		ai_chance = {
 			factor = 1
@@ -498,8 +498,8 @@ country_event = {
 
 country_event = {
 	id = CE_brandenburg_expanded.9
-	title = CE_brandenburg_expanded.9.t
-	desc = CE_brandenburg_expanded.9.d
+	title = CE_brandenburg_expanded.9.T
+	desc = CE_brandenburg_expanded.9.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 	
 	fire_only_once = yes
@@ -507,7 +507,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = CE_brandenburg_expanded.9.a
+		name = CE_brandenburg_expanded.9.OPT1
 		BRA = {
 			country_event = {
 				id = CE_brandenburg_expanded.10
@@ -538,7 +538,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = CE_brandenburg_expanded.9.b
+		name = CE_brandenburg_expanded.9.OPT2
 		add_prestige = 5
 		ai_chance = {
 			factor = 1
@@ -548,8 +548,8 @@ country_event = {
 
 country_event = {
 	id = CE_brandenburg_expanded.10
-	title = CE_brandenburg_expanded.10.t
-	desc = CE_brandenburg_expanded.10.d
+	title = CE_brandenburg_expanded.10.T
+	desc = CE_brandenburg_expanded.10.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 	
 	fire_only_once = yes
@@ -557,7 +557,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = CE_brandenburg_expanded.10.a
+		name = CE_brandenburg_expanded.10.OPT1
 		if = {
 			limit = {
 				BOH = { valid_for_personal_unions_trigger = yes }
@@ -580,7 +580,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = CE_brandenburg_expanded.10.b
+		name = CE_brandenburg_expanded.10.OPT2
 		BRA = {
 			declare_war_with_cb = {
 				who = BOH
@@ -624,8 +624,8 @@ country_event = {
 ##Election of Magdeburg##
 country_event = {
 	id = CE_brandenburg_expanded.11
-	title = CE_brandenburg_expanded.11.t
-	desc = CE_brandenburg_expanded.11.d
+	title = CE_brandenburg_expanded.11.T
+	desc = CE_brandenburg_expanded.11.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 	
 	fire_only_once = yes
@@ -646,7 +646,7 @@ country_event = {
 	}
 	
 	option = {
-		name = CE_brandenburg_expanded.11.a
+		name = CE_brandenburg_expanded.11.OPT1
 		add_years_of_income = -2.0
 		MAG = {
 			add_government_reform = dynastic_theocracy_reform
@@ -689,7 +689,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = CE_brandenburg_expanded.11.b
+		name = CE_brandenburg_expanded.11.OPT2
 		ai_chance = {
 			factor = 1
 		}
@@ -698,8 +698,8 @@ country_event = {
 
 country_event = {
 	id = CE_brandenburg_expanded.12
-	title = CE_brandenburg_expanded.12.t
-	desc = CE_brandenburg_expanded.12.d
+	title = CE_brandenburg_expanded.12.T
+	desc = CE_brandenburg_expanded.12.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 	
 	fire_only_once = yes
@@ -729,7 +729,7 @@ country_event = {
 	}
 	
 	option = {
-		name = CE_brandenburg_expanded.12.a
+		name = CE_brandenburg_expanded.12.OPT1
 		MAG = {
 			country_event = {
 				id = CE_brandenburg_expanded.13
@@ -747,7 +747,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = CE_brandenburg_expanded.12.b
+		name = CE_brandenburg_expanded.12.OPT2
 		add_church_power = 50
 		add_fervor = 25
 		ai_chance = {
@@ -758,8 +758,8 @@ country_event = {
 
 country_event = {
 	id = CE_brandenburg_expanded.13
-	title = CE_brandenburg_expanded.13.t
-	desc = CE_brandenburg_expanded.13.d
+	title = CE_brandenburg_expanded.13.T
+	desc = CE_brandenburg_expanded.13.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 	
 	fire_only_once = yes
@@ -767,7 +767,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = CE_brandenburg_expanded.13.a
+		name = CE_brandenburg_expanded.13.OPT1
 		FROM = {
 			inherit = MAG
 		}
@@ -793,7 +793,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = CE_brandenburg_expanded.13.b
+		name = CE_brandenburg_expanded.13.OPT2
 		ai_chance = {
 			factor = 0
 		}
@@ -802,8 +802,8 @@ country_event = {
 
 country_event = {
 	id = CE_brandenburg_expanded.14
-	title = CE_brandenburg_expanded.14.t
-	desc = CE_brandenburg_expanded.14.d
+	title = CE_brandenburg_expanded.14.T
+	desc = CE_brandenburg_expanded.14.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 	
 	fire_only_once = yes
@@ -823,7 +823,7 @@ country_event = {
 	}
 	
 	option = {
-		name = CE_brandenburg_expanded.14.a
+		name = CE_brandenburg_expanded.14.OPT1
 		hidden_effect = {
 			MAI = {
 				country_event = {
@@ -851,7 +851,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = CE_brandenburg_expanded.14.b
+		name = CE_brandenburg_expanded.14.OPT2
 			add_prestige = 5
 		ai_chance = {
 			factor = 1
@@ -873,8 +873,8 @@ country_event = {
 
 country_event = {
 	id = CE_brandenburg_expanded.15
-	title = CE_brandenburg_expanded.15.t
-	desc = CE_brandenburg_expanded.15.d
+	title = CE_brandenburg_expanded.15.T
+	desc = CE_brandenburg_expanded.15.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 	
 	fire_only_once = yes
@@ -882,7 +882,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = CE_brandenburg_expanded.15.a
+		name = CE_brandenburg_expanded.15.OPT1
 		define_ruler = {
 			name = "Albert"
 			dynasty = "von Hohenzollern"
@@ -895,7 +895,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = CE_brandenburg_expanded.15.b
+		name = CE_brandenburg_expanded.15.OPT2
 			add_prestige = 5
 		ai_chance = {
 			factor = 0
@@ -908,8 +908,8 @@ country_event = {
 #The Inheritance of Julich(Berg)
 country_event = {
 	id = CE_brandenburg_expanded.16
-	title = CE_brandenburg_expanded.16.t
-	desc = CE_brandenburg_expanded.16.d
+	title = CE_brandenburg_expanded.16.T
+	desc = CE_brandenburg_expanded.16.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 	major = yes
 	major_trigger = {
@@ -957,7 +957,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = CE_brandenburg_expanded.16.a
+		name = CE_brandenburg_expanded.16.OPT1
 		PAL = {
 			country_event = {
 				id = CE_brandenburg_expanded.17
@@ -994,7 +994,7 @@ country_event = {
 		} 
 	}
 	option = {
-		name = CE_brandenburg_expanded.16.b
+		name = CE_brandenburg_expanded.16.OPT2
 		BRG = {
 			define_ruler = {
 				claim = 20
@@ -1023,8 +1023,8 @@ country_event = {
 #The Duchy of Berg (Palatinate)
 country_event = {
 	id = CE_brandenburg_expanded.17
-	title = CE_brandenburg_expanded.17.t
-	desc = CE_brandenburg_expanded.17.d
+	title = CE_brandenburg_expanded.17.T
+	desc = CE_brandenburg_expanded.17.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 	
 	fire_only_once = yes
@@ -1032,7 +1032,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = CE_brandenburg_expanded.17.a
+		name = CE_brandenburg_expanded.17.OPT1
 		set_country_flag = United_Duchies_claimed_yes
 		custom_tooltip = CE_claimed_the_duchies
 		ai_chance = {
@@ -1040,7 +1040,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = CE_brandenburg_expanded.17.b
+		name = CE_brandenburg_expanded.17.OPT2
 		add_legitimacy = 5
 		ai_chance = {
 			factor = 0
@@ -1051,8 +1051,8 @@ country_event = {
 #The Duchy of Berg (Brandenburg)
 country_event = {
 	id = CE_brandenburg_expanded.18
-	title = CE_brandenburg_expanded.18.t
-	desc = CE_brandenburg_expanded.18.d
+	title = CE_brandenburg_expanded.18.T
+	desc = CE_brandenburg_expanded.18.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 	
 	fire_only_once = yes
@@ -1060,7 +1060,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = CE_brandenburg_expanded.18.a
+		name = CE_brandenburg_expanded.18.OPT1
 		set_country_flag = United_Duchies_claimed_yes
 		custom_tooltip = CE_claimed_the_duchies
 		ai_chance = {
@@ -1068,7 +1068,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = CE_brandenburg_expanded.18.b
+		name = CE_brandenburg_expanded.18.OPT2
 		add_legitimacy = 5
 		ai_chance = {
 			factor = 0
@@ -1079,8 +1079,8 @@ country_event = {
 #The Aulic Council(Emperor)
 country_event = {
 	id = CE_brandenburg_expanded.19
-	title = CE_brandenburg_expanded.19.t
-	desc = CE_brandenburg_expanded.19.d
+	title = CE_brandenburg_expanded.19.T
+	desc = CE_brandenburg_expanded.19.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 	
 	fire_only_once = yes
@@ -1088,7 +1088,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = CE_brandenburg_expanded.19.a
+		name = CE_brandenburg_expanded.19.OPT1
 		every_country = {
 			limit = {
 				has_country_flag = United_Duchies_claimed_yes
@@ -1103,7 +1103,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = CE_brandenburg_expanded.19.b
+		name = CE_brandenburg_expanded.19.OPT2
 		every_country = {
 			limit = {
 				has_country_flag = United_Duchies_claimed_yes
@@ -1122,8 +1122,8 @@ country_event = {
 #The Aulic Council(Brandenburg/Palatinate)
 country_event = {
 	id = CE_brandenburg_expanded.20
-	title = CE_brandenburg_expanded.20.t
-	desc = CE_brandenburg_expanded.20.d
+	title = CE_brandenburg_expanded.20.T
+	desc = CE_brandenburg_expanded.20.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 	major = yes
 	major_trigger = {
@@ -1136,7 +1136,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = CE_brandenburg_expanded.20.a
+		name = CE_brandenburg_expanded.20.OPT1
 		add_army_tradition = 5
 		create_alliance = BRG
 		emperor = {
@@ -1171,7 +1171,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = CE_brandenburg_expanded.20.b
+		name = CE_brandenburg_expanded.20.OPT2
 		clr_country_flag = United_Duchies_claimed_yes
 		if = {
 			limit = {
@@ -1206,8 +1206,8 @@ country_event = {
 #The Imperial Duchies(Emperor)
 country_event = {
 	id = CE_brandenburg_expanded.21
-	title = CE_brandenburg_expanded.21.t
-	desc = CE_brandenburg_expanded.21.d
+	title = CE_brandenburg_expanded.21.T
+	desc = CE_brandenburg_expanded.21.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 	major = yes
 	major_trigger = {
@@ -1222,7 +1222,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = CE_brandenburg_expanded.21.a
+		name = CE_brandenburg_expanded.21.OPT1
 		emperor = {
 			inherit = BRG
 		}
@@ -1235,8 +1235,8 @@ country_event = {
 #Seizure of the United Duchies(Emperor)
 country_event = {
 	id = CE_brandenburg_expanded.22
-	title = CE_brandenburg_expanded.22.t
-	desc = CE_brandenburg_expanded.22.d
+	title = CE_brandenburg_expanded.22.T
+	desc = CE_brandenburg_expanded.22.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 	major = yes
 	major_trigger = {
@@ -1250,7 +1250,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = CE_brandenburg_expanded.22.a
+		name = CE_brandenburg_expanded.22.OPT1
 		every_country = {
 			limit = {
 				has_country_flag = United_Duchies_occupied_yes
@@ -1265,7 +1265,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = CE_brandenburg_expanded.22.b
+		name = CE_brandenburg_expanded.22.OPT2
 		declare_war_with_cb = {
 			who = BRG
 			casus_belli = cb_vassalize_mission 
@@ -1304,8 +1304,8 @@ country_event = {
 #The Imperial war for Julich-Cleves-Berg(France)
 country_event = {
 	id = CE_brandenburg_expanded.23
-	title = CE_brandenburg_expanded.23.t
-	desc = CE_brandenburg_expanded.23.d
+	title = CE_brandenburg_expanded.23.T
+	desc = CE_brandenburg_expanded.23.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 	major = yes
 	major_trigger = {
@@ -1318,7 +1318,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = CE_brandenburg_expanded.23.a
+		name = CE_brandenburg_expanded.23.OPT1
 		emperor = {
 			country_event = {
 				id = CE_brandenburg_expanded.24
@@ -1341,7 +1341,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = CE_brandenburg_expanded.23.b
+		name = CE_brandenburg_expanded.23.OPT2
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -1359,8 +1359,8 @@ country_event = {
 #French Intervention
 country_event = {
 	id = CE_brandenburg_expanded.24
-	title = CE_brandenburg_expanded.24.t
-	desc = CE_brandenburg_expanded.24.d
+	title = CE_brandenburg_expanded.24.T
+	desc = CE_brandenburg_expanded.24.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 	major = yes
 	major_trigger = {
@@ -1373,7 +1373,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = CE_brandenburg_expanded.24.a
+		name = CE_brandenburg_expanded.24.OPT1
 		FRA = {
 			create_alliance = BRG
 			join_all_defensive_wars_of = BRG
@@ -1393,7 +1393,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = CE_brandenburg_expanded.24.b
+		name = CE_brandenburg_expanded.24.OPT2
 		emperor = {
 			white_peace = BRG
 		}
@@ -1408,8 +1408,8 @@ country_event = {
 #The Spoils of War
 country_event = {
 	id = CE_brandenburg_expanded.25
-	title = CE_brandenburg_expanded.25.t
-	desc = CE_brandenburg_expanded.25.d
+	title = CE_brandenburg_expanded.25.T
+	desc = CE_brandenburg_expanded.25.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 	major = yes
 	major_trigger = {
@@ -1443,7 +1443,7 @@ country_event = {
 	}
 	
 	option = {
-		name = CE_brandenburg_expanded.25.a
+		name = CE_brandenburg_expanded.25.OPT1
 		trigger = {
 			AND = {
 				OR = {
@@ -1501,7 +1501,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = CE_brandenburg_expanded.25.b
+		name = CE_brandenburg_expanded.25.OPT2
 		trigger = {
 			AND = {
 				OR = {
@@ -1565,7 +1565,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = CE_brandenburg_expanded.25.c
+		name = CE_brandenburg_expanded.25.OPT3
 		trigger = {
 			NOT = {
 				AND = {
@@ -1595,8 +1595,8 @@ country_event = {
 #The Spoils of War)Brandenburg
 # country_event = {
 	# id = CE_brandenburg_expanded.26
-	# title = CE_brandenburg_expanded.26.t
-	# desc = CE_brandenburg_expanded.26.d
+	# title = CE_brandenburg_expanded.26.T
+	# desc = CE_brandenburg_expanded.26.D
 	# picture = ELECTION_REPUBLICAN_eventPicture
 	
 	# fire_only_once = yes
@@ -1617,7 +1617,7 @@ country_event = {
 	# }
 	
 	# option = {
-		# name = CE_brandenburg_expanded.26.a
+		# name = CE_brandenburg_expanded.26.OPT1
 		# if = {
 			# limit = {
 				# has_global_flag = United_Duchies_divided_yes
@@ -1638,7 +1638,7 @@ country_event = {
 		# }
 	# }
 	# option = {
-		# name = CE_brandenburg_expanded.26.b
+		# name = CE_brandenburg_expanded.26.OPT2
 		# BRG = {
 			# country_event = {
 				# id = CE_brandenburg_expanded.28
@@ -1650,7 +1650,7 @@ country_event = {
 		# }
 	# }
 	# # option = {
-		# # name = CE_brandenburg_expanded.25.c
+		# # name = CE_brandenburg_expanded.25.OPT3
 		# # trigger = {
 			# # limit = {
 				# # calc_true_if = {
@@ -1705,8 +1705,8 @@ country_event = {
 #Treaty of Xanten(Berg)
 country_event = {
 	id = CE_brandenburg_expanded.27
-	title = CE_brandenburg_expanded.27.t
-	desc = CE_brandenburg_expanded.27.d
+	title = CE_brandenburg_expanded.27.T
+	desc = CE_brandenburg_expanded.27.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 	major = yes
 	major_trigger = {
@@ -1721,7 +1721,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = CE_brandenburg_expanded.27.a
+		name = CE_brandenburg_expanded.27.OPT1
 		BRG = {
 			every_owned_province = {
 				limit = {
@@ -1776,8 +1776,8 @@ country_event = {
 #Second war of Julich Inheritance (Berg)
 country_event = {
 	id = CE_brandenburg_expanded.28
-	title = CE_brandenburg_expanded.28.t
-	desc = CE_brandenburg_expanded.28.d
+	title = CE_brandenburg_expanded.28.T
+	desc = CE_brandenburg_expanded.28.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 	major = yes
 	major_trigger = {
@@ -1792,7 +1792,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = CE_brandenburg_expanded.28.a
+		name = CE_brandenburg_expanded.28.OPT1
 		# BRA = {
 			# create_union = BRG
 		# }
@@ -1852,7 +1852,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = CE_brandenburg_expanded.28.b
+		name = CE_brandenburg_expanded.28.OPT2
 		# PAL = {
 			# create_union = BRG
 		# }
@@ -1924,8 +1924,8 @@ country_event = {
 #Berg Declares for Brandenburg
 country_event = {
 	id = CE_brandenburg_expanded.29
-	title = CE_brandenburg_expanded.29.t
-	desc = CE_brandenburg_expanded.29.d
+	title = CE_brandenburg_expanded.29.T
+	desc = CE_brandenburg_expanded.29.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 	major = yes
 	major_trigger = {
@@ -1939,7 +1939,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = CE_brandenburg_expanded.29.a
+		name = CE_brandenburg_expanded.29.OPT1
 		if = {
 			limit = {
 				BRA = {
@@ -1983,7 +1983,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = CE_brandenburg_expanded.29.b
+		name = CE_brandenburg_expanded.29.OPT2
 		trigger = {
 			hidden_trigger = {
 				OR = {
@@ -2015,8 +2015,8 @@ country_event = {
 #Berg Declares for the Palatinate
 country_event = {
 	id = CE_brandenburg_expanded.30
-	title = CE_brandenburg_expanded.30.t
-	desc = CE_brandenburg_expanded.30.d
+	title = CE_brandenburg_expanded.30.T
+	desc = CE_brandenburg_expanded.30.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 	major = yes
 	major_trigger = {
@@ -2031,7 +2031,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = CE_brandenburg_expanded.30.a
+		name = CE_brandenburg_expanded.30.OPT1
 		if = {
 			limit = {
 				BRA = {
@@ -2082,7 +2082,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = CE_brandenburg_expanded.30.b
+		name = CE_brandenburg_expanded.30.OPT2
 		PAL = {
 			create_union = BRG
 		}
@@ -2095,8 +2095,8 @@ country_event = {
 #Brandenburg #Wine Customs for Albrecht Achilles 1470
 country_event = {
 	id = CE_brandenburg_expanded.31
-	title = CE_brandenburg_expanded.31.t
-	desc = CE_brandenburg_expanded.31.d
+	title = CE_brandenburg_expanded.31.T
+	desc = CE_brandenburg_expanded.31.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 
 	trigger = {
@@ -2115,7 +2115,7 @@ country_event = {
 	}
 
 	option = {
-		name = CE_brandenburg_expanded.31.a
+		name = CE_brandenburg_expanded.31.OPT1
 		add_ruler_modifier = {
 			name = "CE_BRA_Wine_Customs"
 			duration = -1
@@ -2129,7 +2129,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = CE_brandenburg_expanded.31.b
+		name = CE_brandenburg_expanded.31.OPT2
 		add_estate_loyalty = {
 			estate = estate_burghers
 			loyalty = 5
@@ -2143,8 +2143,8 @@ country_event = {
 #Brandenburg #Beer Excise for Johan Cicero 1488
 country_event = {
 	id = CE_brandenburg_expanded.32
-	title = CE_brandenburg_expanded.32.t
-	desc = CE_brandenburg_expanded.32.d
+	title = CE_brandenburg_expanded.32.T
+	desc = CE_brandenburg_expanded.32.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 	
 	trigger = {
@@ -2163,7 +2163,7 @@ country_event = {
 	}
 
 	option = {
-		name = CE_brandenburg_expanded.32.a
+		name = CE_brandenburg_expanded.32.OPT1
 		add_ruler_modifier = {
 			name = "CE_BRA_Beer_Excise"
 			duration = -1
@@ -2184,7 +2184,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = CE_brandenburg_expanded.32.b
+		name = CE_brandenburg_expanded.32.OPT2
 		add_estate_loyalty = {
 			estate = estate_burghers
 			loyalty = 5
@@ -2198,8 +2198,8 @@ country_event = {
 #Brandenburg #Desecration of the Host 1510 #Expell the Jews
 country_event = {
 	id = CE_brandenburg_expanded.33
-	title = CE_brandenburg_expanded.33.t
-	desc = CE_brandenburg_expanded.33.d
+	title = CE_brandenburg_expanded.33.T
+	desc = CE_brandenburg_expanded.33.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 	
 	trigger = {
@@ -2218,7 +2218,7 @@ country_event = {
 	}
 
 	option = {
-		name = CE_brandenburg_expanded.33.a
+		name = CE_brandenburg_expanded.33.OPT1
 		set_country_flag = CE_BRA_expelled_the_jews
 		random_owned_province = {
 			add_base_tax = -1
@@ -2238,7 +2238,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = CE_brandenburg_expanded.33.b
+		name = CE_brandenburg_expanded.33.OPT2
 		add_stability = -1
 		add_estate_loyalty = {
 			estate = estate_church
@@ -2253,8 +2253,8 @@ country_event = {
 #Brandenburg #Furstentag of 1539 1539 #Un-Expell the Jews
 country_event = {
 	id = CE_brandenburg_expanded.34
-	title = CE_brandenburg_expanded.34.t
-	desc = CE_brandenburg_expanded.34.d
+	title = CE_brandenburg_expanded.34.T
+	desc = CE_brandenburg_expanded.34.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 	
 	trigger = {
@@ -2274,7 +2274,7 @@ country_event = {
 	}
 
 	option = {
-		name = CE_brandenburg_expanded.34.a
+		name = CE_brandenburg_expanded.34.OPT1
 		clr_country_flag = CE_BRA_expelled_the_jews
 		set_country_flag = CE_BRA_un_expelled_the_jews
 		random_owned_province = {
@@ -2295,7 +2295,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = CE_brandenburg_expanded.34.b
+		name = CE_brandenburg_expanded.34.OPT2
 		add_estate_loyalty = {
 			estate = estate_church
 			loyalty = 5
@@ -2309,8 +2309,8 @@ country_event = {
 #Brandenburg #Extinction of the House of Torgow, 1490
 country_event = {
 	id = CE_brandenburg_expanded.35
-	title = CE_brandenburg_expanded.35.t
-	desc = CE_brandenburg_expanded.35.d
+	title = CE_brandenburg_expanded.35.T
+	desc = CE_brandenburg_expanded.35.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 	
 	trigger = {
@@ -2334,7 +2334,7 @@ country_event = {
 	}
 
 	option = {
-		name = CE_brandenburg_expanded.35.a
+		name = CE_brandenburg_expanded.35.OPT1
 		BOH = {
 			country_event = {
 				id = CE_brandenburg_expanded.36
@@ -2350,7 +2350,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = CE_brandenburg_expanded.35.b
+		name = CE_brandenburg_expanded.35.OPT2
 		1763 = {
 			add_claim = BRA
 		}
@@ -2359,7 +2359,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = CE_brandenburg_expanded.35.c
+		name = CE_brandenburg_expanded.35.OPT3
 		reverse_add_opinion = {
 			who = BOH
 			modifier = CE_Conceeded_Territory
@@ -2373,8 +2373,8 @@ country_event = {
 #Bohemia #Extinction of the House of Torgow, 1490
 country_event = {
 	id = CE_brandenburg_expanded.36
-	title = CE_brandenburg_expanded.36.t
-	desc = CE_brandenburg_expanded.36.d
+	title = CE_brandenburg_expanded.36.T
+	desc = CE_brandenburg_expanded.36.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 	major = yes
 	major_trigger = {
@@ -2389,7 +2389,7 @@ country_event = {
 	fire_only_once = yes
 
 	option = {
-		name = CE_brandenburg_expanded.36.a
+		name = CE_brandenburg_expanded.36.OPT1
 		BOH = {
 			add_treasury = 75
 		}
@@ -2406,7 +2406,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = CE_brandenburg_expanded.36.b
+		name = CE_brandenburg_expanded.36.OPT2
 		add_legitimacy = 5
 		ai_chance = {
 			factor = 0
@@ -2417,8 +2417,8 @@ country_event = {
 #Brandenburg #Upcoming Disaster, 1525
 country_event = {
 	id = CE_brandenburg_expanded.37
-	title = CE_brandenburg_expanded.37.t
-	desc = CE_brandenburg_expanded.37.d
+	title = CE_brandenburg_expanded.37.T
+	desc = CE_brandenburg_expanded.37.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 	
 	trigger = {
@@ -2436,7 +2436,7 @@ country_event = {
 		days = 120
 	}
 	option = {
-		name = CE_brandenburg_expanded.37.a
+		name = CE_brandenburg_expanded.37.OPT1
 		add_prestige = -25
 		add_legitimacy = -25
 		ai_chance = {
@@ -2444,7 +2444,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = CE_brandenburg_expanded.37.b
+		name = CE_brandenburg_expanded.37.OPT2
 		tooltip = {
 			random_list = {
 				75 = { }
@@ -2467,8 +2467,8 @@ country_event = {
 #Brandenburg #Alma Mater Viadrina, 1506
 country_event = {
 	id = CE_brandenburg_expanded.38
-	title = CE_brandenburg_expanded.38.t
-	desc = CE_brandenburg_expanded.38.d
+	title = CE_brandenburg_expanded.38.T
+	desc = CE_brandenburg_expanded.38.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 	
 	trigger = {
@@ -2486,7 +2486,7 @@ country_event = {
 		days = 120
 	}
 	option = {
-		name = CE_brandenburg_expanded.38.a
+		name = CE_brandenburg_expanded.38.OPT1
 		change_innovativeness = 2
 		add_papal_influence = 5
 	}
@@ -2495,8 +2495,8 @@ country_event = {
 #Brandenburg #The Division of Joachim, 1535
 country_event = {
 	id = CE_brandenburg_expanded.39
-	title = CE_brandenburg_expanded.39.t
-	desc = CE_brandenburg_expanded.39.d
+	title = CE_brandenburg_expanded.39.T
+	desc = CE_brandenburg_expanded.39.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 	
 	trigger = {
@@ -2525,7 +2525,7 @@ country_event = {
 	}
 
 	option = {
-		name = CE_brandenburg_expanded.39.a
+		name = CE_brandenburg_expanded.39.OPT1
 		custom_tooltip = CE_BRA_BRA_KUS_Release
 		set_global_flag = CE_BRA_KUS_SPLIT_FLAG
 		hidden_effect = {
@@ -2567,7 +2567,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = CE_brandenburg_expanded.39.b
+		name = CE_brandenburg_expanded.39.OPT2
 		add_stability = -2
 		random_owned_province = {
 			limit = {
@@ -2585,7 +2585,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = CE_brandenburg_expanded.39.c
+		name = CE_brandenburg_expanded.39.OPT3
 		trigger = {
 			has_country_modifier = bra_dispositio_achillea
 		}
@@ -2611,8 +2611,8 @@ country_event = {
 #Brandenburg #The Ìnheritance of Brandenburg-Kustrin, 1571
 country_event = {
 	id = CE_brandenburg_expanded.40
-	title = CE_brandenburg_expanded.40.t
-	desc = CE_brandenburg_expanded.40.d
+	title = CE_brandenburg_expanded.40.T
+	desc = CE_brandenburg_expanded.40.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 	
 	trigger = {
@@ -2662,7 +2662,7 @@ country_event = {
 	}
 
 	option = {
-		name = CE_brandenburg_expanded.40.a
+		name = CE_brandenburg_expanded.40.OPT1
 		BRA = {
 			inherit = RUP
 		}
@@ -2672,8 +2672,8 @@ country_event = {
 #Bohemia #Right of Repurchase, 1516
 country_event = {
 	id = CE_brandenburg_expanded.41
-	title = CE_brandenburg_expanded.41.t
-	desc = CE_brandenburg_expanded.41.d
+	title = CE_brandenburg_expanded.41.T
+	desc = CE_brandenburg_expanded.41.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 	major = yes
 	major_trigger = {
@@ -2706,7 +2706,7 @@ country_event = {
 	}
 
 	option = {
-		name = CE_brandenburg_expanded.41.a
+		name = CE_brandenburg_expanded.41.OPT1
 		tooltip = {
 			BOH = {
 				add_treasury = -75
@@ -2726,7 +2726,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = CE_brandenburg_expanded.41.b
+		name = CE_brandenburg_expanded.41.OPT2
 		BRA = {
 			country_event = {
 				id = CE_brandenburg_expanded.43
@@ -2742,8 +2742,8 @@ country_event = {
 #Brandenburg #Bohemian Repurchase, 1516
 country_event = {
 	id = CE_brandenburg_expanded.42
-	title = CE_brandenburg_expanded.42.t
-	desc = CE_brandenburg_expanded.42.d
+	title = CE_brandenburg_expanded.42.T
+	desc = CE_brandenburg_expanded.42.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 	major = yes
 	major_trigger = {
@@ -2755,7 +2755,7 @@ country_event = {
 	fire_only_once = yes
 
 	option = {
-		name = CE_brandenburg_expanded.42.a
+		name = CE_brandenburg_expanded.42.OPT1
 		BOH = {
 			add_treasury = -75
 		}
@@ -2771,8 +2771,8 @@ country_event = {
 #Brandenburg #Sale of Repurchase Rights, 1516
 country_event = {
 	id = CE_brandenburg_expanded.43
-	title = CE_brandenburg_expanded.43.t
-	desc = CE_brandenburg_expanded.43.d
+	title = CE_brandenburg_expanded.43.T
+	desc = CE_brandenburg_expanded.43.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 	major = yes
 	major_trigger = {
@@ -2784,7 +2784,7 @@ country_event = {
 	fire_only_once = yes
 
 	option = {
-		name = CE_brandenburg_expanded.43.a
+		name = CE_brandenburg_expanded.43.OPT1
 		BOH = {
 			add_treasury = 50
 		}
@@ -2800,7 +2800,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = CE_brandenburg_expanded.43.b
+		name = CE_brandenburg_expanded.43.OPT2
 		add_prestige = -10
 		ai_chance = {
 			factor = 0
@@ -2811,8 +2811,8 @@ country_event = {
 #Brandenburg #GruneWalt Hunting Lodge, 1542
 country_event = {
 	id = CE_brandenburg_expanded.44
-	title = CE_brandenburg_expanded.44.t
-	desc = CE_brandenburg_expanded.44.d
+	title = CE_brandenburg_expanded.44.T
+	desc = CE_brandenburg_expanded.44.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 
 	trigger = {
@@ -2831,7 +2831,7 @@ country_event = {
 	}
 
 	option = {
-		name = CE_brandenburg_expanded.44.a
+		name = CE_brandenburg_expanded.44.OPT1
 		set_ruler_flag = CE_BRA_Hunting_Lodge
 		if = {
 			limit = {
@@ -2845,7 +2845,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = CE_brandenburg_expanded.44.b
+		name = CE_brandenburg_expanded.44.OPT2
 		add_adm_power = -100
 		add_dip_power = -100
 		add_mil_power = -100
@@ -2861,8 +2861,8 @@ country_event = {
 #Brandenburg #Accident at the Lodge, 1551
 country_event = {
 	id = CE_brandenburg_expanded.45
-	title = CE_brandenburg_expanded.45.t
-	desc = CE_brandenburg_expanded.45.d
+	title = CE_brandenburg_expanded.45.T
+	desc = CE_brandenburg_expanded.45.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 
 	trigger = {
@@ -2882,7 +2882,7 @@ country_event = {
 	}
 
 	option = {
-		name = CE_brandenburg_expanded.45.a
+		name = CE_brandenburg_expanded.45.OPT1
 		clr_ruler_flag = CE_BRA_Hunting_Lodge
 		add_prestige = -15
 		add_ruler_modifier = {
@@ -2895,8 +2895,8 @@ country_event = {
 #Brandenburg #Accident at the Lodge, 1543
 country_event = {
 	id = CE_brandenburg_expanded.46
-	title = CE_brandenburg_expanded.46.t
-	desc = CE_brandenburg_expanded.46.d
+	title = CE_brandenburg_expanded.46.T
+	desc = CE_brandenburg_expanded.46.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 
 	trigger = {
@@ -2916,7 +2916,7 @@ country_event = {
 	}
 
 	option = {
-		name = CE_brandenburg_expanded.46.a
+		name = CE_brandenburg_expanded.46.OPT1
 		
 		2969 = {
 			add_base_tax = 2
@@ -2931,7 +2931,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = CE_brandenburg_expanded.46.b
+		name = CE_brandenburg_expanded.46.OPT2
 		add_estate_loyalty = {
 			estate = estate_church
 			loyalty = 10
@@ -2945,8 +2945,8 @@ country_event = {
 #Brandenburg #Introduction of the Reformation, 1539
 country_event = {
 	id = CE_brandenburg_expanded.47
-	title = CE_brandenburg_expanded.47.t
-	desc = CE_brandenburg_expanded.47.d
+	title = CE_brandenburg_expanded.47.T
+	desc = CE_brandenburg_expanded.47.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 
 	trigger = {
@@ -2978,7 +2978,7 @@ country_event = {
 	}
 
 	option = {
-		name = CE_brandenburg_expanded.47.a
+		name = CE_brandenburg_expanded.47.OPT1
 		
 		add_ruler_modifier = {
 			name = CE_BRA_religious_pragmatism
@@ -2993,8 +2993,8 @@ country_event = {
 #Brandenburg #Secularization of the Monasteries, 1545
 country_event = {
 	id = CE_brandenburg_expanded.48
-	title = CE_brandenburg_expanded.48.t
-	desc = CE_brandenburg_expanded.48.d
+	title = CE_brandenburg_expanded.48.T
+	desc = CE_brandenburg_expanded.48.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 
 	trigger = {
@@ -3019,7 +3019,7 @@ country_event = {
 	}
 
 	option = {
-		name = CE_brandenburg_expanded.48.a
+		name = CE_brandenburg_expanded.48.OPT1
 		
 		add_years_of_income = 0.5
 		ai_chance = {
@@ -3028,7 +3028,7 @@ country_event = {
 	}
 
 	option = {
-		name = CE_brandenburg_expanded.48.b
+		name = CE_brandenburg_expanded.48.OPT2
 		
 		random_owned_province = {
 			add_base_tax = 1
@@ -3048,8 +3048,8 @@ country_event = {
 #Brandenburg #Lippold Ben Chluchim, 1549
 country_event = {
 	id = CE_brandenburg_expanded.49
-	title = CE_brandenburg_expanded.49.t
-	desc = CE_brandenburg_expanded.49.d
+	title = CE_brandenburg_expanded.49.T
+	desc = CE_brandenburg_expanded.49.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 
 	trigger = {
@@ -3071,7 +3071,7 @@ country_event = {
 	}
 
 	option = {
-		name = CE_brandenburg_expanded.49.a
+		name = CE_brandenburg_expanded.49.OPT1
 		
 		define_advisor = {
 			type = court_jew
@@ -3088,7 +3088,7 @@ country_event = {
 	}
 
 	option = {
-		name = CE_brandenburg_expanded.49.b
+		name = CE_brandenburg_expanded.49.OPT2
 		
 		add_ruler_modifier = {
 			name = "CE_BRA_Lippold_Ben_Chluchim"
@@ -3103,8 +3103,8 @@ country_event = {
 #Brandenburg #Devaluation of the Mint, 1550
 country_event = {
 	id = CE_brandenburg_expanded.50
-	title = CE_brandenburg_expanded.50.t
-	desc = CE_brandenburg_expanded.50.d
+	title = CE_brandenburg_expanded.50.T
+	desc = CE_brandenburg_expanded.50.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 
 	trigger = {
@@ -3124,7 +3124,7 @@ country_event = {
 	}
 
 	option = {
-		name = CE_brandenburg_expanded.50.a
+		name = CE_brandenburg_expanded.50.OPT1
 		
 		add_years_of_income = 1
 		add_inflation = 3
@@ -3141,7 +3141,7 @@ country_event = {
 	}
 
 	option = {
-		name = CE_brandenburg_expanded.50.b
+		name = CE_brandenburg_expanded.50.OPT2
 		
 		add_legitimacy = 5
 
@@ -3154,8 +3154,8 @@ country_event = {
 #Brandenburg #Illegal Foreign Mints, 1555
 country_event = {
 	id = CE_brandenburg_expanded.51
-	title = CE_brandenburg_expanded.51.t
-	desc = CE_brandenburg_expanded.51.d
+	title = CE_brandenburg_expanded.51.T
+	desc = CE_brandenburg_expanded.51.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 
 	is_triggered_only = yes
@@ -3163,7 +3163,7 @@ country_event = {
 	fire_only_once = yes
 
 	option = {
-		name = CE_brandenburg_expanded.51.a
+		name = CE_brandenburg_expanded.51.OPT1
 		
 		add_years_of_income = 1
 		add_inflation = 3
@@ -3180,7 +3180,7 @@ country_event = {
 	}
 
 	option = {
-		name = CE_brandenburg_expanded.51.b
+		name = CE_brandenburg_expanded.51.OPT2
 		
 		add_country_modifier = {
 			name = CE_BRA_economic_downturn
@@ -3196,8 +3196,8 @@ country_event = {
 #Brandenburg #Economic Collapse, 1560
 country_event = {
 	id = CE_brandenburg_expanded.52
-	title = CE_brandenburg_expanded.52.t
-	desc = CE_brandenburg_expanded.52.d
+	title = CE_brandenburg_expanded.52.T
+	desc = CE_brandenburg_expanded.52.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 
 	is_triggered_only = yes
@@ -3205,7 +3205,7 @@ country_event = {
 	fire_only_once = yes
 
 	option = {
-		name = CE_brandenburg_expanded.52.a
+		name = CE_brandenburg_expanded.52.OPT1
 		
 		add_country_modifier = {
 			name = CE_BRA_economic_collapse
@@ -3221,8 +3221,8 @@ country_event = {
 #Brandenburg #Pogrom of 1571, 1571
 country_event = {
 	id = CE_brandenburg_expanded.53
-	title = CE_brandenburg_expanded.53.t
-	desc = CE_brandenburg_expanded.53.d
+	title = CE_brandenburg_expanded.53.T
+	desc = CE_brandenburg_expanded.53.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 
 	trigger = {
@@ -3244,7 +3244,7 @@ country_event = {
 	}
 
 	option = {
-		name = CE_brandenburg_expanded.53.a
+		name = CE_brandenburg_expanded.53.OPT1
 		
 		add_years_of_income = 0.5
 		add_ruler_modifier = {
@@ -3270,7 +3270,7 @@ country_event = {
 	}
 
 	option = {
-		name = CE_brandenburg_expanded.53.b
+		name = CE_brandenburg_expanded.53.OPT2
 		add_years_of_income = -0.25
 		set_country_flag = CE_BRA_expelled_the_jews
 		clr_country_flag = CE_BRA_un_expelled_the_jews
@@ -3290,7 +3290,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = CE_brandenburg_expanded.53.c
+		name = CE_brandenburg_expanded.53.OPT3
 		add_stability = -1
 		add_ruler_modifier = {
 			name = CE_BRA_Jewish_Privileges_Restored
@@ -3305,8 +3305,8 @@ country_event = {
 #Brandenburg #The Arrest of Lippold Ben Chluchim, 1571
 country_event = {
 	id = CE_brandenburg_expanded.54
-	title = CE_brandenburg_expanded.54.t
-	desc = CE_brandenburg_expanded.54.d
+	title = CE_brandenburg_expanded.54.T
+	desc = CE_brandenburg_expanded.54.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 
 	is_triggered_only = yes
@@ -3314,7 +3314,7 @@ country_event = {
 	fire_only_once = yes
 
 	option = {
-		name = CE_brandenburg_expanded.54.a
+		name = CE_brandenburg_expanded.54.OPT1
 		
 		add_prestige = -10
 		kill_advisor = court_jew
@@ -3324,7 +3324,7 @@ country_event = {
 	}
 
 	option = {
-		name = CE_brandenburg_expanded.54.b
+		name = CE_brandenburg_expanded.54.OPT2
 		country_event = {
 			id = CE_brandenburg_expanded.55
 			days = 30
@@ -3338,8 +3338,8 @@ country_event = {
 #Brandenburg #The Arrest of Lippold Ben Chluchim, 1571
 country_event = {
 	id = CE_brandenburg_expanded.55
-	title = CE_brandenburg_expanded.55.t
-	desc = CE_brandenburg_expanded.55.d
+	title = CE_brandenburg_expanded.55.T
+	desc = CE_brandenburg_expanded.55.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 
 	is_triggered_only = yes
@@ -3347,7 +3347,7 @@ country_event = {
 	fire_only_once = yes
 
 	option = {
-		name = CE_brandenburg_expanded.55.a
+		name = CE_brandenburg_expanded.55.OPT1
 		
 		add_stability = -1
 		kill_advisor = court_jew
@@ -3357,7 +3357,7 @@ country_event = {
 	}
 
 	option = {
-		name = CE_brandenburg_expanded.55.b
+		name = CE_brandenburg_expanded.55.OPT2
 		add_years_of_income = -0.1
 		add_prestige = -25
 		remove_advisor = court_jew
@@ -3366,7 +3366,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = CE_brandenburg_expanded.55.c
+		name = CE_brandenburg_expanded.55.OPT3
 		trigger = {
 			has_ruler_modifier = CE_BRA_Jewish_Privileges_Restored
 		}
@@ -3381,8 +3381,8 @@ country_event = {
 #Brandenburg #The Order of St John, 1460
 country_event = {
 	id = CE_brandenburg_expanded.56
-	title = CE_brandenburg_expanded.56.t
-	desc = CE_brandenburg_expanded.56.d
+	title = CE_brandenburg_expanded.56.T
+	desc = CE_brandenburg_expanded.56.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 
 	trigger = {
@@ -3401,7 +3401,7 @@ country_event = {
 	}
 
 	option = {
-		name = CE_brandenburg_expanded.56.a
+		name = CE_brandenburg_expanded.56.OPT1
 		
 		add_ruler_modifier = {
 			name = CE_BRA_Elector_of_St_John
@@ -3416,8 +3416,8 @@ country_event = {
 #Brandenburg #The Conversion of The Order of St John, 1538
 country_event = {
 	id = CE_brandenburg_expanded.57
-	title = CE_brandenburg_expanded.57.t
-	desc = CE_brandenburg_expanded.57.d
+	title = CE_brandenburg_expanded.57.T
+	desc = CE_brandenburg_expanded.57.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 
 	trigger = {
@@ -3436,7 +3436,7 @@ country_event = {
 	}
 
 	option = {
-		name = CE_brandenburg_expanded.57.a
+		name = CE_brandenburg_expanded.57.OPT1
 		
 		add_country_modifier = {
 			name = CE_BRA_Knights_Of_the_Order_of_St_John
@@ -3451,8 +3451,8 @@ country_event = {
 #Brandenburg #The Secularization of the Order of St John, 1650
 country_event = {
 	id = CE_brandenburg_expanded.58
-	title = CE_brandenburg_expanded.58.t
-	desc = CE_brandenburg_expanded.58.d
+	title = CE_brandenburg_expanded.58.T
+	desc = CE_brandenburg_expanded.58.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 
 	trigger = {
@@ -3471,7 +3471,7 @@ country_event = {
 	}
 
 	option = {
-		name = CE_brandenburg_expanded.58.a
+		name = CE_brandenburg_expanded.58.OPT1
 		
 		remove_country_modifier = CE_BRA_Knights_Of_the_Order_of_St_John
 		every_country = {
@@ -3502,8 +3502,8 @@ country_event = {
 #Brandenburg #Secularization of the Order of St John, 1650
 country_event = {
 	id = CE_brandenburg_expanded.59
-	title = CE_brandenburg_expanded.59.t
-	desc = CE_brandenburg_expanded.59.d
+	title = CE_brandenburg_expanded.59.T
+	desc = CE_brandenburg_expanded.59.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 
 	is_triggered_only = yes
@@ -3511,7 +3511,7 @@ country_event = {
 	fire_only_once = yes
 
 	option = {
-		name = CE_brandenburg_expanded.59.a
+		name = CE_brandenburg_expanded.59.OPT1
 		
 		capital_scope = {
 			add_base_manpower = 1
@@ -3529,8 +3529,8 @@ country_event = {
 #Brandenburg #The Bishop Investiture, 1451
 country_event = {
 	id = CE_brandenburg_expanded.60
-	title = CE_brandenburg_expanded.60.t
-	desc = CE_brandenburg_expanded.60.d
+	title = CE_brandenburg_expanded.60.T
+	desc = CE_brandenburg_expanded.60.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 
 	trigger = {
@@ -3547,7 +3547,7 @@ country_event = {
 	}
 
 	option = {
-		name = CE_brandenburg_expanded.60.a
+		name = CE_brandenburg_expanded.60.OPT1
 		
 		4748 = {
 			add_province_modifier = {
@@ -3570,7 +3570,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = CE_brandenburg_expanded.60.b
+		name = CE_brandenburg_expanded.60.OPT2
 		add_prestige = 5
 		ai_chance = {
 			factor = 0
@@ -3581,8 +3581,8 @@ country_event = {
 #Brandenburg #Berliner Dom, 1465
 country_event = {
 	id = CE_brandenburg_expanded.61
-	title = CE_brandenburg_expanded.61.t
-	desc = CE_brandenburg_expanded.61.d
+	title = CE_brandenburg_expanded.61.T
+	desc = CE_brandenburg_expanded.61.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 
 	trigger = {
@@ -3601,7 +3601,7 @@ country_event = {
 	}
 
 	option = {
-		name = CE_brandenburg_expanded.61.a
+		name = CE_brandenburg_expanded.61.OPT1
 
 		add_country_modifier = {
 			name = CE_BRA_Berliner_Choir
@@ -3616,8 +3616,8 @@ country_event = {
 #Brandenburg #Dutch Settlement of Prussia, 1646
 country_event = {
 	id = CE_brandenburg_expanded.62
-	title = CE_brandenburg_expanded.62.t
-	desc = CE_brandenburg_expanded.62.d
+	title = CE_brandenburg_expanded.62.T
+	desc = CE_brandenburg_expanded.62.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 
 	trigger = {
@@ -3651,7 +3651,7 @@ country_event = {
 	}
 
 	option = {
-		name = CE_brandenburg_expanded.62.a
+		name = CE_brandenburg_expanded.62.OPT1
 
 		50 = {
 			add_base_tax = 1
@@ -3669,7 +3669,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = CE_brandenburg_expanded.62.b
+		name = CE_brandenburg_expanded.62.OPT2
 
 		add_manpower = 1
 		ai_chance = {
@@ -3681,8 +3681,8 @@ country_event = {
 #Brandenburg #The Priegnitzer Lands, 1482
 country_event = {
 	id = CE_brandenburg_expanded.63
-	title = CE_brandenburg_expanded.63.t
-	desc = CE_brandenburg_expanded.63.d
+	title = CE_brandenburg_expanded.63.T
+	desc = CE_brandenburg_expanded.63.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 
 	trigger = {
@@ -3701,7 +3701,7 @@ country_event = {
 	}
 
 	option = {
-		name = CE_brandenburg_expanded.63.a
+		name = CE_brandenburg_expanded.63.OPT1
 
 		4786 = {
 			spawn_rebels = {
@@ -3718,7 +3718,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = CE_brandenburg_expanded.63.b
+		name = CE_brandenburg_expanded.63.OPT2
 
 		add_manpower = 0.5
 		add_years_of_income = -0.1
@@ -3735,8 +3735,8 @@ country_event = {
 #Brandenburg #The Pommeranian Revolt, 1470-1490
 country_event = {
 	id = CE_brandenburg_expanded.64
-	title = CE_brandenburg_expanded.64.t
-	desc = CE_brandenburg_expanded.64.d
+	title = CE_brandenburg_expanded.64.T
+	desc = CE_brandenburg_expanded.64.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 
 	trigger = {
@@ -3771,7 +3771,7 @@ country_event = {
 	}
 
 	option = {
-		name = CE_brandenburg_expanded.64.a
+		name = CE_brandenburg_expanded.64.OPT1
 
 		random_owned_province = {
 			limit = {
@@ -3787,7 +3787,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = CE_brandenburg_expanded.64.b
+		name = CE_brandenburg_expanded.64.OPT2
 		custom_tooltip = CE_BRA_Release_Pommerania
 		hidden_effect = {
 			every_owned_province = {

@@ -5,8 +5,8 @@ namespace = fee_BUR
 #Philip the Good parleys with Emperor Frederick III
 country_event = {
 	id = fee_BUR.1
-	title = fee_BUR.1.t
-	desc = fee_BUR.1.d
+	title = fee_BUR.1.T
+	desc = fee_BUR.1.D
 	picture = HRE_eventPicture
 
 	fire_only_once = yes
@@ -84,7 +84,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_BUR.1.a
+		name = fee_BUR.1.OPT1
 		ai_chance = {
 			factor = 75
 		}
@@ -105,7 +105,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_BUR.1.b
+		name = fee_BUR.1.OPT2
 		
 		add_opinion = {
 			who = HAB
@@ -117,8 +117,8 @@ country_event = {
 #A Burgundian feast?
 country_event = {
 	id = fee_BUR.2
-	title = fee_BUR.2.t
-	desc = fee_BUR.2.d
+	title = fee_BUR.2.T
+	desc = fee_BUR.2.D
 	picture = FEAST_eventPicture
 
 	fire_only_once = no
@@ -134,7 +134,7 @@ country_event = {
 
 	# Option A: Host a grand feast!
 	option = {
-		name = fee_BUR.2.a
+		name = fee_BUR.2.OPT1
 		ai_chance = {
 			factor = 50
 		}
@@ -151,7 +151,7 @@ country_event = {
 	
 	# Option B: We can wait...
 	option = {
-		name = fee_BUR.2.b
+		name = fee_BUR.2.OPT2
 		ai_chance = {
 			factor = 50
 		}
@@ -162,8 +162,8 @@ country_event = {
 #Mary of Guelders
 country_event = {
 	id = fee_BUR.3
-	title = fee_BUR.3.t
-	desc = fee_BUR.3.d
+	title = fee_BUR.3.T
+	desc = fee_BUR.3.D
 	picture = MARY_OF_GUELDERS_eventPicture
 
 	fire_only_once = yes
@@ -187,7 +187,7 @@ country_event = {
 	
 	# Option A: She should be an advisor!
 	option = {
-		name = fee_BUR.3.a
+		name = fee_BUR.3.OPT1
 		ai_chance = {
 			factor = 50
 		}
@@ -205,7 +205,7 @@ country_event = {
 	
 	# Option B: We can learn from her
 	option = {
-		name = fee_BUR.3.b
+		name = fee_BUR.3.OPT2
 		ai_chance = {
 			factor = 30
 		}
@@ -214,7 +214,7 @@ country_event = {
 
 	# Option C: How nice
 	option = {
-		name = fee_BUR.3.c
+		name = fee_BUR.3.OPT3
 		ai_chance = {
 			factor = 20
 		}
@@ -224,8 +224,8 @@ country_event = {
 # Georges Chastellain
 country_event = {
 	id = fee_BUR.4
-	title = fee_BUR.4.t
-	desc = fee_BUR.4.d
+	title = fee_BUR.4.T
+	desc = fee_BUR.4.D
 	picture = GEORGES_CHASTELLAIN_eventPicture
 
     trigger = {
@@ -239,7 +239,7 @@ country_event = {
 	
     # Option A: His histories will record our deeds for our posterity forever
     option = {
-        name = fee_BUR.4.a
+        name = fee_BUR.4.OPT1
 		ai_chance = {
 			factor = 50
 		}
@@ -260,7 +260,7 @@ country_event = {
 	
 	# # Option B: # TO DO
     # option = {
-    #     name = fee_BUR.4.b
+    #     name = fee_BUR.4.OPT2
 	# 	ai_chance = {
 	# 		factor = 50
 	# 	}
@@ -272,8 +272,8 @@ country_event = {
 # #Jean Le Fèvre de Saint-Remy (reserved / in design phase)
 # country_event = {
 # 	id = fee_BUR.5
-# 	title = fee_BUR.5.t
-# 	desc = fee_BUR.5.d
+# 	title = fee_BUR.5.T
+# 	desc = fee_BUR.5.D
 # 	picture = event_test
 # }
 
@@ -281,8 +281,8 @@ country_event = {
 # # Jacques de Lalaing
 # country_event = {
 # 	id = fee_BUR.6
-# 	title = fee_BUR.6.t
-# 	desc = fee_BUR.6.d
+# 	title = fee_BUR.6.T
+# 	desc = fee_BUR.6.D
 # 	picture = JACQUES_DE_LALAING_eventPicture
 
 # 	trigger = {
@@ -294,7 +294,7 @@ country_event = {
 	
 #     # Option A: He must lead our armies!
 #     option = {
-#         name = fee_BUR.6.a
+#         name = fee_BUR.6.OPT1
 # 		ai_chance = {
 # 			factor = 50
 # 		}
@@ -313,7 +313,7 @@ country_event = {
 # 	# Option B: # This man shall serve our court!
 
 # 	option = {
-# 		name = fee_BUR.6.b
+# 		name = fee_BUR.6.OPT2
 # 			ai_chance = {
 # 				factor = 50
 # 			}
@@ -339,8 +339,8 @@ country_event = {
 # #Guns of Burgundy
 # country_event = {
 # 	id = fee_BUR.7
-# 	title = fee_BUR.7.t
-# 	desc = fee_BUR.7.d
+# 	title = fee_BUR.7.T
+# 	desc = fee_BUR.7.D
 # 	picture = GUNS_FOR_BURGUNDY_eventPicture
 
 #     trigger = {
@@ -355,7 +355,7 @@ country_event = {
 	
 #     # Option A: Ok
 #     option = {
-#         name = fee_BUR.7.a
+#         name = fee_BUR.7.OPT1
 # 		ai_chance = {
 # 			factor = 100
 # 		}
@@ -380,8 +380,8 @@ country_event = {
 # #The Salt Tax
 # country_event = {
 # 	id = fee_BUR.8
-# 	title = fee_BUR.8.t
-# 	desc = fee_BUR.8.d
+# 	title = fee_BUR.8.T
+# 	desc = fee_BUR.8.D
 # 	picture = THE_SALT_TAX_eventPicture
 
 #     trigger = {
@@ -398,7 +398,7 @@ country_event = {
 	
 #     # Option A: Propose the tax
 #     option = {
-#         name = fee_BUR.8.a
+#         name = fee_BUR.8.OPT1
 # 		ai_chance = {
 # 			factor = 75
 # 		}
@@ -415,7 +415,7 @@ country_event = {
 # 	}
 # 	# Option B: We shall respect their rights and privileges
 #     option = {
-#         name = fee_BUR.8.b
+#         name = fee_BUR.8.OPT2
 # 		ai_chance = {
 # 			factor = 25
 # 		}
@@ -430,15 +430,15 @@ country_event = {
 # #Revolt of Gent
 # country_event = {
 # 	id = fee_BUR.9
-# 	title = fee_BUR.9.t
-# 	desc = fee_BUR.9.d
+# 	title = fee_BUR.9.T
+# 	desc = fee_BUR.9.D
 # 	picture = REVOLT_OF_GENT_eventPicture
 
 # 	is_triggered_only = yes
 	
 #     # Option A: Rally the Troops!
 #     option = {
-# 		name = fee_BUR.9.a
+# 		name = fee_BUR.9.OPT1
 # 		# (If Gent is owned by a junior partner): 1 (size 3) pretender rebels rise up in revolt in Gent
 # 		# (If Gent is an owned core province): 1 (size 3) Flemish separatists rise in revolt in Gent
 # 		# and Burghers Estate loses 20 loyalty
@@ -476,15 +476,15 @@ country_event = {
 # #Gent accepts
 # country_event = {
 # 	id = fee_BUR.10
-# 	title = fee_BUR.10.t
-# 	desc = fee_BUR.10.d
+# 	title = fee_BUR.10.T
+# 	desc = fee_BUR.10.D
 # 	picture = GENT_ACCEPTS_eventPicture
 
 # 	is_triggered_only = yes
 	
 #     # Option A: Excellent
 #     option = {
-#         name = fee_BUR.10.a
+#         name = fee_BUR.10.OPT1
 # 		add_years_of_income = 0.2
 # 		add_ruler_modifier  = {
 # 			name = fee_burgundian_salt_tax
@@ -496,8 +496,8 @@ country_event = {
 # #Treaty of Peronne
 # country_event = {
 # 	id = fee_BUR.11
-# 	title = fee_BUR.11.t
-# 	desc = fee_BUR.11.d
+# 	title = fee_BUR.11.T
+# 	desc = fee_BUR.11.D
 # 	picture = TREATY_OF_PERONNE_eventPicture
 
 # 	fire_only_once = yes
@@ -518,7 +518,7 @@ country_event = {
 # 	}
 #     # Option A: Peace in our time!
 #     option = {
-#         name = fee_BUR.11.a
+#         name = fee_BUR.11.OPT1
 
 # 		add_opinion = {
 # 			who = FRA

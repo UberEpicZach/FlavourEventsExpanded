@@ -4,8 +4,8 @@ namespace = fee_PER
 # The Qizilbash
 country_event = {
 	id = fee_PER.1
-	title = fee_PER.1.t
-	desc = fee_PER.1.d
+	title = fee_PER.1.T
+	desc = fee_PER.1.D
 	picture = HORDE_ON_HORSEBACK_eventPicture
 	
 	fire_only_once = yes
@@ -21,7 +21,7 @@ country_event = {
 	}
 	
 	option = { #They are here for us now, that is all that matters.
-		name = fee_PER.1.a
+		name = fee_PER.1.OPT1
 
 		hidden_effect = {
 			add_country_modifier = {
@@ -37,8 +37,8 @@ country_event = {
 # The Qizilbash Lend Their Support
 country_event = {
 	id = fee_PER.2
-	title = fee_PER.2.t
-	desc = fee_PER.2.d
+	title = fee_PER.2.T
+	desc = fee_PER.2.D
 	picture = MILITARY_CAMP_eventPicture
 	
 	trigger = {
@@ -69,14 +69,14 @@ country_event = {
 	}
 	
 	option = { #United for the Shah!
-		name = fee_PER.2.a
+		name = fee_PER.2.OPT1
 
 		add_manpower = 10
 		add_army_tradition = 5
 	}
 
 	option = { # Ask for their guidance
-		name = fee_PER.2.b
+		name = fee_PER.2.OPT2
 
 		add_mil_power = 50
 		add_army_tradition = 10
@@ -86,8 +86,8 @@ country_event = {
 # The Qizilbash Fight for Power
 country_event = {
 	id = fee_PER.3
-	title = fee_PER.3.t
-	desc = fee_PER.3.d
+	title = fee_PER.3.T
+	desc = fee_PER.3.D
 	picture = HORDE_ON_HORSEBACK_eventPicture
 	
 	trigger = {
@@ -104,7 +104,7 @@ country_event = {
 	
 	
 	option = { # Long live the Shah!
-		name = fee_PER.3.a
+		name = fee_PER.3.OPT1
 
 		hidden_effect = {
 			add_ruler_modifier = {
@@ -129,7 +129,7 @@ country_event = {
 	}
 	
 	option = { # Let us ensure the loyalty of the tribes.
-		name = fee_PER.3.b
+		name = fee_PER.3.OPT2
 
 		hidden_effect = {
 			add_ruler_modifier = {
@@ -145,8 +145,8 @@ country_event = {
 # Qizilbash Plot!
 country_event = {
 	id = fee_PER.4
-	title = fee_PER.4.t
-	desc = fee_PER.4.d
+	title = fee_PER.4.T
+	desc = fee_PER.4.D
 	picture = LIBERUM_VETO_eventPicture
 	
 	trigger = {
@@ -165,13 +165,13 @@ country_event = {
 	}
 	
 	option = { # The situation will only get worse if we interfere.
-		name = fee_PER.4.a
+		name = fee_PER.4.OPT1
 
 		add_stability = -1
 	}
 	
 	option = { # We will not be slaves to the whims of the tribes!
-		name = fee_PER.4.b
+		name = fee_PER.4.OPT2
 
 		random_owned_province = {
 			spawn_rebels = {
@@ -185,8 +185,8 @@ country_event = {
 # Pressure From the Qizilbash
 country_event = {
 	id = fee_PER.5
-	title = fee_PER.5.t
-	desc = fee_PER.5.d
+	title = fee_PER.5.T
+	desc = fee_PER.5.D
 	picture = ANGRY_MOB_eventPicture
 	
 	trigger = {
@@ -201,14 +201,14 @@ country_event = {
 	}
 
 	option = { # Let them have their way.
-		name = fee_PER.5.a
+		name = fee_PER.5.OPT1
 
 		add_adm_power = -50
 		add_mil_power = 25
 	}
 
 	option = { # Resist every way we can!
-		name = fee_PER.5.b
+		name = fee_PER.5.OPT2
 
 		add_adm_power = -25
 		add_dip_power = -25
@@ -223,7 +223,7 @@ country_event = {
 	}
 
 	option = { # Those who oppose us will be driven out!
-		name = fee_PER.5.c
+		name = fee_PER.5.OPT3
 
 		hidden_effect = {
 			add_ruler_modifier = {
@@ -244,8 +244,8 @@ country_event = {
 # The Third Force	
 country_event = {
 	id = fee_PER.6
-	title = fee_PER.6.t
-	desc = fee_PER.6.d
+	title = fee_PER.6.T
+	desc = fee_PER.6.D
 	picture = FARMING_eventPicture
 	
 	fire_only_once = yes
@@ -268,7 +268,7 @@ country_event = {
 	}
 	
 	option = { # We need them to reform our society!
-		name = fee_PER.6.a
+		name = fee_PER.6.OPT1
 
 		random_owned_province = {
 			limit = {
@@ -286,7 +286,7 @@ country_event = {
 		}
 	
 	option = { # The Qizibash are no threat to the Shah.
-		name = fee_PER.6.b
+		name = fee_PER.6.OPT2
 
 		add_stability_or_adm_power = yes
 	}
@@ -295,8 +295,8 @@ country_event = {
 # End of Tribal Independence
 country_event = {
 	id = fee_PER.7
-	title = fee_PER.7.t
-	desc = fee_PER.7.d
+	title = fee_PER.7.T
+	desc = fee_PER.7.D
 	picture = GOOD_WITH_MONARCH_eventPicture
 	
 	trigger = {
@@ -311,7 +311,7 @@ country_event = {
 	}
 	
 	option = { # No one will ever hold Persia hostage again!
-		name = fee_PER.7.a
+		name = fee_PER.7.OPT1
 
 		hidden_effect = {
 			add_country_modifier = {
@@ -334,8 +334,8 @@ country_event = {
 #Decline of the Qizilbash	
 country_event = {
 	id = fee_PER.8
-	title = fee_PER.8.t
-	desc = fee_PER.8.d
+	title = fee_PER.8.T
+	desc = fee_PER.8.D
 	picture = REFORM_eventPicture
 	
 	trigger = {
@@ -350,7 +350,7 @@ country_event = {
 	}
 	
 	option = { # IT is time Persia looked to the future.
-		name = fee_PER.8.a
+		name = fee_PER.8.OPT1
 
 		hidden_effect = {
 			remove_country_modifier = per_the_qizilbash

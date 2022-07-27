@@ -6,8 +6,8 @@ namespace = fee_WBG
 
 country_event = {
 	id = fee_WBG.1
-	title = fee_WBG.1.t
-	desc = fee_WBG.1.d
+	title = fee_WBG.1.T
+	desc = fee_WBG.1.D
 	picture = GREAT_BUILDING_eventPicture
 	
 	fire_only_once = yes
@@ -24,7 +24,7 @@ country_event = {
 	}
 	
 	option = {
-		name = fee_WBG.1.a
+		name = fee_WBG.1.OPT1
 		add_adm_power = 50
 		79 = {
 			add_province_modifier = {

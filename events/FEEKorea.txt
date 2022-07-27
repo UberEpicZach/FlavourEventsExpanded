@@ -6,8 +6,8 @@ namespace = fee_KOR
 
 country_event = {
 	id = fee_KOR.1
-	title = fee_KOR.1.t
-	desc = fee_KOR.1.d
+	title = fee_KOR.1.T
+	desc = fee_KOR.1.D
 	picture = BIG_BOOK_eventPicture
 
 	fire_only_once = yes
@@ -29,7 +29,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_KOR.1.a
+		name = fee_KOR.1.OPT1
 		add_country_modifier = {
 			name = fee_hangul_introduced
 			duration = 10950
@@ -41,8 +41,8 @@ country_event = {
 
 country_event = {
 	id = fee_KOR.2
-	title = fee_KOR.2.t
-	desc = fee_KOR.2.d
+	title = fee_KOR.2.T
+	desc = fee_KOR.2.D
 	picture = ASSASSINATION_eventPicture
 
 	fire_only_once = yes
@@ -68,7 +68,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_KOR.2.a
+		name = fee_KOR.2.OPT1
 		kill_heir = {}
 		add_country_modifier = {
 			name = ruler_deposed
@@ -91,7 +91,7 @@ country_event = {
 		add_stability = -1
 	}
 	option = {
-		name = fee_KOR.2.b
+		name = fee_KOR.2.OPT2
 		random_province = {
 			limit = {
 				culture = korean
@@ -118,8 +118,8 @@ country_event = {
 
 country_event = {
 	id = fee_KOR.3
-	title = fee_KOR.3.t
-	desc = fee_KOR.3.d
+	title = fee_KOR.3.T
+	desc = fee_KOR.3.D
 	picture = ADVISOR_eventPicture
 
 	fire_only_once = yes
@@ -146,7 +146,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_KOR.3.a
+		name = fee_KOR.3.OPT1
 		add_country_modifier = {
 			name = fee_sarim
 			duration = -1
@@ -156,7 +156,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = fee_KOR.3.b
+		name = fee_KOR.3.OPT2
 		add_stability_or_adm_power = yes
 	}
 }
@@ -165,8 +165,8 @@ country_event = {
 
 country_event = {
 		id = fee_KOR.4
-		title = fee_KOR.4.t
-		desc = fee_KOR.4.d
+		title = fee_KOR.4.T
+		desc = fee_KOR.4.D
 		picture = ACCUSATION_eventPicture
 
 		trigger = {
@@ -205,13 +205,13 @@ country_event = {
 		}
 
 		option = {
-			name = fee_KOR.4.a
+			name = fee_KOR.4.OPT1
 			add_adm_power = -50
 			add_dip_power = -50
 			add_prestige = -10
 		}
 		option = {
-			name = fee_KOR.4.b
+			name = fee_KOR.4.OPT2
 			add_stability = -1
 		}
 }
@@ -220,8 +220,8 @@ country_event = {
 
 country_event = {
 	id = fee_KOR.5
-	title = fee_KOR.5.t
-	desc = fee_KOR.5.d
+	title = fee_KOR.5.T
+	desc = fee_KOR.5.D
 	picture = CITY_DEVELOPMENT_eventPicture
 
 	fire_only_once = yes
@@ -239,7 +239,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_KOR.5.a
+		name = fee_KOR.5.OPT1
 		custom_tooltip = fee_KOR.5.tt
 		hidden_effect = {
 			every_province = {
@@ -255,7 +255,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = fee_KOR.5.b
+		name = fee_KOR.5.OPT2
 		add_adm_power = 25
 		add_treasury = 10
 	}
@@ -264,8 +264,8 @@ country_event = {
 #Jo Gwang-jo
 country_event = {
 	id = fee_KOR.6
-	title = fee_KOR.6.t
-	desc = fee_KOR.6.d
+	title = fee_KOR.6.T
+	desc = fee_KOR.6.D
 	picture = ADVISOR_eventPicture
 
 	fire_only_once = yes
@@ -283,7 +283,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_KOR.6.a
+		name = fee_KOR.6.OPT1
 		define_advisor = {
 			type = philosopher
 			name = "Jo Gwang-jo"
@@ -293,7 +293,7 @@ country_event = {
 		add_stability_or_adm_power = yes
 	}
 	option = {
-		name = fee_KOR.6.b
+		name = fee_KOR.6.OPT2
 		add_adm_power = 50
 		add_dip_power = 25
 		add_mil_power = 25
@@ -303,8 +303,8 @@ country_event = {
 #Queen Jeongsun
 country_event = {
 	id = fee_KOR.7
-	title = fee_KOR.7.t
-	desc = fee_KOR.7.d
+	title = fee_KOR.7.T
+	desc = fee_KOR.7.D
 	picture = wihgfx_FEMALE_RULER_eventPicture
 
 	fire_only_once = yes
@@ -320,7 +320,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_KOR.7.a
+		name = fee_KOR.7.OPT1
 		define_advisor = {
 			female = yes
 			type = inquisitor
@@ -329,7 +329,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = fee_KOR.7.b
+		name = fee_KOR.7.OPT2
 		add_prestige = 10
 	}
 }
@@ -337,8 +337,8 @@ country_event = {
 #Silhak Movement
 country_event = {
 	id = fee_KOR.8
-	title = fee_KOR.8.t
-	desc = fee_KOR.8.d
+	title = fee_KOR.8.T
+	desc = fee_KOR.8.D
 	picture = DEBATE_REPUBLICAN_eventPicture
 
 	fire_only_once = yes
@@ -356,7 +356,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_KOR.8.a
+		name = fee_KOR.8.OPT1
 		add_country_modifier = {
 			name = fee_silhak
 			duration = -1
@@ -367,8 +367,8 @@ country_event = {
 #Silhak Scholars Aid Westernisation
 country_event = {
 	id = fee_KOR.9
-	title = fee_KOR.9.t
-	desc = fee_KOR.9.d
+	title = fee_KOR.9.T
+	desc = fee_KOR.9.D
 	picture = ADVISOR_eventPicture
 
 	fire_only_once = yes
@@ -385,7 +385,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_KOR.9.a
+		name = fee_KOR.9.OPT1
 		add_country_modifier = {
 			name = fee_westernisation_replacement
 			duration = 120
@@ -397,8 +397,8 @@ country_event = {
 #Yi Sun-sin
 country_event = {
 	id = fee_KOR.10
-	title = fee_KOR.10.t
-	desc = fee_KOR.10.d
+	title = fee_KOR.10.T
+	desc = fee_KOR.10.D
 	picture = SHIP_SAILING_eventPicture
 
 	fire_only_once = yes
@@ -424,7 +424,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_KOR.10.a
+		name = fee_KOR.10.OPT1
 		define_admiral = {
 			name = "Yi Sun-sin"
 			shock = 5
@@ -435,7 +435,7 @@ country_event = {
 		add_navy_tradition = 5
 	}
 	option = {
-		name = fee_KOR.10.b
+		name = fee_KOR.10.OPT2
 		add_navy_tradition = 10
 		add_dip_power = 50
 	}
@@ -444,8 +444,8 @@ country_event = {
 #De Sperwer shipwrecks
 country_event = {
 	id = fee_KOR.11
-	title = fee_KOR.11.t
-	desc = fee_KOR.11.d
+	title = fee_KOR.11.T
+	desc = fee_KOR.11.D
 	picture = SHIP_SAILING_eventPicture
 
 	fire_only_once = yes
@@ -465,11 +465,11 @@ country_event = {
 	}
 
 	option = {
-		name = fee_KOR.11.a
+		name = fee_KOR.11.OPT1
 		add_dip_power = 50
 	}
 	option = {
-		name = fee_KOR.11.b
+		name = fee_KOR.11.OPT2
 		add_mil_power = 50
 	}
 }

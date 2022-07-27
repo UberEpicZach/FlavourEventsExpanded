@@ -5,8 +5,8 @@ namespace = CE_hungary_expanded
 #Austria #Bohemian Raids
 country_event = {
 	id = CE_hungary_expanded.1
-	title = CE_hungary_expanded.1.t
-	desc = CE_hungary_expanded.1.d
+	title = CE_hungary_expanded.1.T
+	desc = CE_hungary_expanded.1.D
 	picture = CITY_VIEW_eventPicture
 
 	fire_only_once = yes
@@ -61,7 +61,7 @@ country_event = {
 	}
 
 	option = {
-		name = CE_hungary_expanded.1.a
+		name = CE_hungary_expanded.1.OPT1
 		every_owned_province = {
 			limit = {
 				any_neighbor_province = {
@@ -86,7 +86,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = CE_hungary_expanded.1.b
+		name = CE_hungary_expanded.1.OPT2
 		custom_tooltip = CE_austria_demands_reparations
 		
 		tooltip = {
@@ -118,14 +118,14 @@ country_event = {
 #Bohemia #Austrian Reparations
 country_event = {
 	id = CE_hungary_expanded.2
-	title = CE_hungary_expanded.2.t
-	desc = CE_hungary_expanded.2.d
+	title = CE_hungary_expanded.2.T
+	desc = CE_hungary_expanded.2.D
 	picture = CITY_VIEW_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = CE_hungary_expanded.2.a
+		name = CE_hungary_expanded.2.OPT1
 		add_treasury = -250
 		tooltip = {
 			HAB = {
@@ -147,7 +147,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = CE_hungary_expanded.2.b
+		name = CE_hungary_expanded.2.OPT2
 		HAB = {
 			declare_war_with_cb = {
 				who = BOH
@@ -184,14 +184,14 @@ country_event = {
 #Austria#Bohemia pays
 country_event = {
 	id = CE_hungary_expanded.3
-	title = CE_hungary_expanded.3.t
-	desc = CE_hungary_expanded.3.d
+	title = CE_hungary_expanded.3.T
+	desc = CE_hungary_expanded.3.D
 	picture = CITY_VIEW_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = CE_hungary_expanded.3.a
+		name = CE_hungary_expanded.3.OPT1
 		add_treasury = 250
 		tooltip = {
 			BOH = {
@@ -204,14 +204,14 @@ country_event = {
 #Hungary #Another Crusade?
 country_event = {
 	id = CE_hungary_expanded.4
-	title = CE_hungary_expanded.4.t
-	desc = CE_hungary_expanded.4.d
+	title = CE_hungary_expanded.4.T
+	desc = CE_hungary_expanded.4.D
 	picture = CITY_VIEW_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = CE_hungary_expanded.4.a
+		name = CE_hungary_expanded.4.OPT1
 		HUN = {
 			join_all_offensive_wars_of = HAB
 		}
@@ -231,7 +231,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = CE_hungary_expanded.4.b
+		name = CE_hungary_expanded.4.OPT2
 		add_legitimacy = -10
 		add_prestige = -15
 		ai_chance = {
@@ -247,14 +247,14 @@ country_event = {
 #Hungary #Papal Subsidies
 country_event = {
 	id = CE_hungary_expanded.5
-	title = CE_hungary_expanded.5.t
-	desc = CE_hungary_expanded.5.d
+	title = CE_hungary_expanded.5.T
+	desc = CE_hungary_expanded.5.D
 	picture = CITY_VIEW_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = CE_hungary_expanded.5.a
+		name = CE_hungary_expanded.5.OPT1
 		add_ruler_modifier = {
 			name = "CE_hungarian_papal_subsidies" #+24 yearly income
 			duration = 3650
@@ -265,8 +265,8 @@ country_event = {
 #Hungary #King  of Bohemia
 country_event = {
 	id = CE_hungary_expanded.6
-	title = CE_hungary_expanded.6.t
-	desc = CE_hungary_expanded.6.d
+	title = CE_hungary_expanded.6.T
+	desc = CE_hungary_expanded.6.D
 	picture = CITY_VIEW_eventPicture
 
 	is_triggered_only = yes
@@ -276,7 +276,7 @@ country_event = {
 	}
 
 	option = {
-		name = CE_hungary_expanded.6.a
+		name = CE_hungary_expanded.6.OPT1
 		hidden_effect = {
 			every_province = {
 				limit = {
@@ -348,7 +348,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = CE_hungary_expanded.6.b
+		name = CE_hungary_expanded.6.OPT2
 		add_prestige = 10
 		ai_chance = {
 			factor = 0
@@ -359,21 +359,21 @@ country_event = {
 #Austria #King of Bohemia
 country_event = {
 	id = CE_hungary_expanded.7
-	title = CE_hungary_expanded.7.t
-	desc = CE_hungary_expanded.7.d
+	title = CE_hungary_expanded.7.T
+	desc = CE_hungary_expanded.7.D
 	picture = CITY_VIEW_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = CE_hungary_expanded.7.a
+		name = CE_hungary_expanded.7.OPT1
 		white_peace = BOH
 		ai_chance = {
 			factor = 1
 		}
 	}
 	option = {
-		name = CE_hungary_expanded.7.b
+		name = CE_hungary_expanded.7.OPT2
 		add_prestige = 5
 		ai_chance = {
 			factor = 0
@@ -384,8 +384,8 @@ country_event = {
 #Hungary #Austrian Gold
 country_event = {
 	id = CE_hungary_expanded.8
-	title = CE_hungary_expanded.8.t
-	desc = CE_hungary_expanded.8.d
+	title = CE_hungary_expanded.8.T
+	desc = CE_hungary_expanded.8.D
 	picture = CITY_VIEW_eventPicture
 
 	fire_only_once = yes
@@ -410,7 +410,7 @@ country_event = {
 	}
 
 	option = {
-		name = CE_hungary_expanded.8.a
+		name = CE_hungary_expanded.8.OPT1
 		HAB = {
 			country_event = {
 				id = CE_hungary_expanded.9
@@ -422,7 +422,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = CE_hungary_expanded.8.b
+		name = CE_hungary_expanded.8.OPT2
 		add_papal_influence = 10
 		ai_chance = {
 			factor = 1
@@ -433,14 +433,14 @@ country_event = {
 #Austria #Hungarian Payday
 country_event = {
 	id = CE_hungary_expanded.9
-	title = CE_hungary_expanded.9.t
-	desc = CE_hungary_expanded.9.d
+	title = CE_hungary_expanded.9.T
+	desc = CE_hungary_expanded.9.D
 	picture = CITY_VIEW_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = CE_hungary_expanded.9.a
+		name = CE_hungary_expanded.9.OPT1
 		add_treasury = -500
 		tooltip = {
 			HUN = {
@@ -479,7 +479,7 @@ country_event = {
 	}
 
 	option = {
-		name = CE_hungary_expanded.9.b
+		name = CE_hungary_expanded.9.OPT2
 		HUN = {
 			country_event = {
 				id = CE_hungary_expanded.11
@@ -496,14 +496,14 @@ country_event = {
 #Austria #Hungarian Payday
 country_event = {
 	id = CE_hungary_expanded.10
-	title = CE_hungary_expanded.10.t
-	desc = CE_hungary_expanded.10.d
+	title = CE_hungary_expanded.10.T
+	desc = CE_hungary_expanded.10.D
 	picture = CITY_VIEW_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = CE_hungary_expanded.10.a
+		name = CE_hungary_expanded.10.OPT1
 		add_treasury = 500
 	}
 }
@@ -511,14 +511,14 @@ country_event = {
 #Hungary #Austrian Betrayal
 country_event = {
 	id = CE_hungary_expanded.11
-	title = CE_hungary_expanded.11.t
-	desc = CE_hungary_expanded.11.d
+	title = CE_hungary_expanded.11.T
+	desc = CE_hungary_expanded.11.D
 	picture = CITY_VIEW_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = CE_hungary_expanded.11.a
+		name = CE_hungary_expanded.11.OPT1
 		add_casus_belli = {
 			target = HAB
 			type = cb_loan_cancelled
@@ -526,7 +526,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = CE_hungary_expanded.11.b
+		name = CE_hungary_expanded.11.OPT2
 		add_prestige = -10
 	}
 }
@@ -534,8 +534,8 @@ country_event = {
 #Diet of 1468, extra taxes
 country_event = {
 	id = CE_hungary_expanded.12
-	title = CE_hungary_expanded.12.t
-	desc = CE_hungary_expanded.12.d
+	title = CE_hungary_expanded.12.T
+	desc = CE_hungary_expanded.12.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 	
 	fire_only_once = yes
@@ -552,7 +552,7 @@ country_event = {
 	}
 
 	option = {
-		name = CE_hungary_expanded.12.a
+		name = CE_hungary_expanded.12.OPT1
 		add_country_modifier = {
 			name = "CE_royal_prerogative_tax"
 			duration = 3650
@@ -563,8 +563,8 @@ country_event = {
 #Taxes Without Diet
 country_event = {
 	id = CE_hungary_expanded.13
-	title = CE_hungary_expanded.13.t
-	desc = CE_hungary_expanded.13.d
+	title = CE_hungary_expanded.13.T
+	desc = CE_hungary_expanded.13.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 	
 	fire_only_once = yes
@@ -582,7 +582,7 @@ country_event = {
 	}
 
 	option = {
-		name = CE_hungary_expanded.13.a
+		name = CE_hungary_expanded.13.OPT1
 		add_country_modifier = {
 			name = "CE_taxes_without_diet"
 			duration = 3650
@@ -601,7 +601,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = CE_hungary_expanded.13.b
+		name = CE_hungary_expanded.13.OPT2
 		add_legitimacy = 5
 	}
 }
@@ -609,8 +609,8 @@ country_event = {
 #Diet of 1470
 country_event = {
 	id = CE_hungary_expanded.14
-	title = CE_hungary_expanded.14.t
-	desc = CE_hungary_expanded.14.d
+	title = CE_hungary_expanded.14.T
+	desc = CE_hungary_expanded.14.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 	
 	fire_only_once = yes
@@ -626,7 +626,7 @@ country_event = {
 	}
 
 	option = {
-		name = CE_hungary_expanded.14.a
+		name = CE_hungary_expanded.14.OPT1
 		trigger = {
 			OR = {
 				dynasty = "Hunyadi"
@@ -644,7 +644,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = CE_hungary_expanded.14.b
+		name = CE_hungary_expanded.14.OPT2
 		trigger = {
 			NOT = {
 				OR = {
@@ -678,8 +678,8 @@ country_event = {
 #Bohemia #King  of Bohemia
 country_event = {
 	id = CE_hungary_expanded.15
-	title = CE_hungary_expanded.15.t
-	desc = CE_hungary_expanded.15.d
+	title = CE_hungary_expanded.15.T
+	desc = CE_hungary_expanded.15.D
 	picture = CITY_VIEW_eventPicture
 
 	trigger = {
@@ -745,7 +745,7 @@ country_event = {
 	}
 
 	option = {
-		name = CE_hungary_expanded.15.a
+		name = CE_hungary_expanded.15.OPT1
 		add_stability = -2
 		random_owned_province = {
 			spawn_rebels = {
@@ -766,7 +766,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = CE_hungary_expanded.15.b
+		name = CE_hungary_expanded.15.OPT2
 		custom_tooltip = CE_HUN_revolt_of_the_estates
 		HUN = {
 			country_event = {
@@ -781,8 +781,8 @@ country_event = {
 
 country_event = {
 	id = CE_hungary_expanded.16
-	title = CE_hungary_expanded.16.t
-	desc = CE_hungary_expanded.16.d
+	title = CE_hungary_expanded.16.T
+	desc = CE_hungary_expanded.16.D
 	picture = CITY_VIEW_eventPicture
 
 	fire_only_once = yes
@@ -801,7 +801,7 @@ country_event = {
 	}
 
 	option = {
-		name = CE_hungary_expanded.16.a
+		name = CE_hungary_expanded.16.OPT1
 		transylvania_area = {
 			add_province_modifier = {
 				name = "CE_union_of_nations"
@@ -819,8 +819,8 @@ country_event = {
 
 country_event = {
 	id = CE_hungary_expanded.17
-	title = CE_hungary_expanded.17.t
-	desc = CE_hungary_expanded.17.d
+	title = CE_hungary_expanded.17.T
+	desc = CE_hungary_expanded.17.D
 	picture = CITY_VIEW_eventPicture
 
 	fire_only_once = yes
@@ -845,7 +845,7 @@ country_event = {
 	}
 
 	option = {
-		name = CE_hungary_expanded.17.a
+		name = CE_hungary_expanded.17.OPT1
 		random_list = {
 			50 = {
 				random_owned_province = {
@@ -898,7 +898,7 @@ country_event = {
 	}
 
 	option = {
-		name = CE_hungary_expanded.17.b
+		name = CE_hungary_expanded.17.OPT2
 		every_owned_province = {
 			limit = {
 				has_province_modifier = CE_union_of_nations
@@ -915,8 +915,8 @@ country_event = {
 #Estates Crushed
 country_event = {
 	id = CE_hungary_expanded.18
-	title = CE_hungary_expanded.18.t
-	desc = CE_hungary_expanded.18.d
+	title = CE_hungary_expanded.18.T
+	desc = CE_hungary_expanded.18.D
 	picture = CITY_VIEW_eventPicture
 
 	fire_only_once = yes
@@ -937,7 +937,7 @@ country_event = {
 	}
 
 	option = {
-		name = CE_hungary_expanded.18.a
+		name = CE_hungary_expanded.18.OPT1
 		change_estate_land_share = {
 			estate = estate_nobles
 			share = -2
@@ -969,7 +969,7 @@ country_event = {
 	}
 
 	option = {
-		name = CE_hungary_expanded.18.b
+		name = CE_hungary_expanded.18.OPT2
 		every_owned_province = {
 			limit = {
 				has_province_modifier = CE_union_of_nations
@@ -978,7 +978,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = CE_hungary_expanded.18.c
+		name = CE_hungary_expanded.18.OPT3
 		add_estate_loyalty = {
 			estate = estate_burghers
 			loyalty = 5
@@ -1013,8 +1013,8 @@ country_event = {
 #Matyas is death, Justice is Lost
 country_event = {
 	id = CE_hungary_expanded.19
-	title = CE_hungary_expanded.19.t
-	desc = CE_hungary_expanded.19.d
+	title = CE_hungary_expanded.19.T
+	desc = CE_hungary_expanded.19.D
 	picture = CITY_VIEW_eventPicture
 
 	trigger = {
@@ -1087,7 +1087,7 @@ country_event = {
 	}
 
 	option = {
-		name = CE_hungary_expanded.19.a
+		name = CE_hungary_expanded.19.OPT1
 		BOH = {
 			if = {
 				limit = {
@@ -1162,7 +1162,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = CE_hungary_expanded.19.b
+		name = CE_hungary_expanded.19.OPT2
 		add_stability = -3
 		HUN = {
 			if = {

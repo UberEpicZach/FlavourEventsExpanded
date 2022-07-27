@@ -3,8 +3,8 @@ namespace = fee_SWI
 #Swiss mercenaries succeed abroad
 country_event = {
 	id = fee_SWI.1
-	title = fee_SWI.1.t
-	desc = fee_SWI.1.d
+	title = fee_SWI.1.T
+	desc = fee_SWI.1.D
 	picture = BATTLE_eventPicture
 	fire_only_once = yes
 	trigger = {
@@ -22,13 +22,13 @@ country_event = {
 		}
 	}
 	option = {
-		name = fee_SWI.1.a
+		name = fee_SWI.1.OPT1
 		add_army_tradition = 10
 		add_years_of_income = 0.25
 		add_prestige = 10
 	}
 	option = {
-		name = fee_SWI.1.b
+		name = fee_SWI.1.OPT2
 		add_army_tradition = 10
 		add_years_of_income = 0.5
 		add_mil_power = 25
@@ -40,8 +40,8 @@ country_event = {
 #Swiss Mercenaries in Our Standing Army
 country_event = {
 	id = fee_SWI.2
-	title = fee_SWI.2.t
-	desc = fee_SWI.2.d
+	title = fee_SWI.2.T
+	desc = fee_SWI.2.D
 	picture = LAND_MILITARY_eventPicture
 	fire_only_once = yes
 	trigger = {
@@ -58,7 +58,7 @@ country_event = {
 		months = 240
 	}
 	option = {
-		name = fee_SWI.2.a
+		name = fee_SWI.2.OPT1
 		add_manpower = 3
 		add_mil_power = 25
 		SWI = {
@@ -67,22 +67,22 @@ country_event = {
 				days = 10
 			}
 		}
-		custom_tooltip = fee_SWI.2.a.tt
+		custom_tooltip = fee_SWI.2.OPT1.tt
 	}
 }
 
 #In Service of the French King
 country_event = {
 	id = fee_SWI.3
-	title = fee_SWI.3.t
-	desc = fee_SWI.3.d
+	title = fee_SWI.3.T
+	desc = fee_SWI.3.D
 	picture = LAND_MILITARY_eventPicture
 	is_triggered_only = yes
 	trigger = {
 		exists = FRA
 	}
 	option = {
-		name = fee_SWI.3.a
+		name = fee_SWI.3.OPT1
 		ai_chance = {
 			factor = 95
 		}
@@ -99,7 +99,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = fee_SWI.3.b
+		name = fee_SWI.3.OPT2
 		ai_chance = {
 			factor = 5
 		}
@@ -117,12 +117,12 @@ country_event = {
 # Mercenaries Condemned by Switzerland
 country_event = {
 	id = fee_SWI.4
-	title = fee_SWI.4.t
-	desc = fee_SWI.4.d
+	title = fee_SWI.4.T
+	desc = fee_SWI.4.D
 	picture = BORDER_TENSION_eventPicture
 	is_triggered_only = yes
 	option = {
-		name = fee_SWI.4.a
+		name = fee_SWI.4.OPT1
 		add_opinion = {
 			who = SWI
 			modifier = fee_swiss_soldiers_denied
@@ -133,8 +133,8 @@ country_event = {
 #Jörg Jenatsch
 country_event = {
 	id = fee_SWI.5
-	title = fee_SWI.5.t
-	desc = fee_SWI.5.d
+	title = fee_SWI.5.T
+	desc = fee_SWI.5.D
 	picture = ADVISOR_eventPicture
 	fire_only_once = yes
 	trigger = {
@@ -160,7 +160,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = fee_SWI.5.a
+		name = fee_SWI.5.OPT1
 		add_army_tradition = 5
 		define_advisor = {
 			type = army_reformer
@@ -170,7 +170,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = fee_SWI.5.b
+		name = fee_SWI.5.OPT2
 		add_army_tradition = 5
 		add_mil_power = 25
 	}
@@ -179,8 +179,8 @@ country_event = {
 #Bündner Wirren
 country_event = {
 	id = fee_SWI.6
-	title = fee_SWI.6.t
-	desc = fee_SWI.6.d
+	title = fee_SWI.6.T
+	desc = fee_SWI.6.D
 	picture = COUNTRY_COLLAPSE_eventPicture
 	fire_only_once = yes
 	trigger = {
@@ -213,7 +213,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = fee_SWI.6.a
+		name = fee_SWI.6.OPT1
 		1873 = {
 			add_unrest = 5
 		}
@@ -234,7 +234,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = fee_SWI.6.b
+		name = fee_SWI.6.OPT2
 		1873 = {
 			add_unrest = 5
 		}
@@ -259,8 +259,8 @@ country_event = {
 # Johann Rudolf Wettstein
 country_event = {
 	id = fee_SWI.7
-	title = fee_SWI.7.t
-	desc = fee_SWI.7.d
+	title = fee_SWI.7.T
+	desc = fee_SWI.7.D
 	picture = ADVISOR_eventPicture
 	fire_only_once = yes
 	trigger = {
@@ -291,7 +291,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = fee_SWI.7.a
+		name = fee_SWI.7.OPT1
 		define_advisor = {
 			type = statesman
 			name = "Johann Rudolf Wettstein"
@@ -301,7 +301,7 @@ country_event = {
 		add_dip_power = 50
 	}
 	option = {
-		name = fee_SWI.7.b
+		name = fee_SWI.7.OPT2
 		add_country_modifier = {
 			name = fee_wettstein
 			duration = 7200
@@ -309,7 +309,7 @@ country_event = {
 		add_dip_power = 50
 	}
 	option = {
-		name = fee_SWI.7.c
+		name = fee_SWI.7.OPT3
 		add_dip_power = 100
 	}
 }
@@ -317,8 +317,8 @@ country_event = {
 # The Bernoulli Family
 country_event = {
 	id = fee_SWI.8
-	title = fee_SWI.8.t
-	desc = fee_SWI.8.d
+	title = fee_SWI.8.T
+	desc = fee_SWI.8.D
 	picture = ADVISOR_eventPicture
 	fire_only_once = yes
 	trigger = {
@@ -334,7 +334,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = fee_SWI.8.a
+		name = fee_SWI.8.OPT1
 		add_country_modifier = {
 			name = fee_bernoullis
 			duration = -1
@@ -362,7 +362,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = fee_SWI.9.a
+		name = fee_SWI.9.OPT1
 		add_war_exhaustion = -5
 		1869 = {
 			add_local_autonomy = 50
@@ -373,7 +373,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = fee_SWI.9.b
+		name = fee_SWI.9.OPT2
 		add_war_exhaustion = -5
 		1869 = {
 			add_local_autonomy = 25
@@ -384,7 +384,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = fee_SWI.9.c
+		name = fee_SWI.9.OPT3
 		1869 = {
 			cede_province = HAB
 		}
@@ -417,7 +417,7 @@ country_event = {
 		months = 120
 	}
 	option = {
-		name = fee_SWI.10.a
+		name = fee_SWI.10.OPT1
 		upper_swabia_area = {
 			limit = {
 				NOT = {
@@ -447,7 +447,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = fee_SWI.10.b
+		name = fee_SWI.10.OPT2
 		set_in_empire = no
 		add_stability_or_adm_power = yes
 		add_country_modifier = {
@@ -481,7 +481,7 @@ country_event = {
 		months = 1
 	}
 	option = {
-		name = fee_SWI.11.a
+		name = fee_SWI.11.OPT1
 		add_mil_power = 100
 		add_country_modifier = {
 			name = FEE_Burgundian_Wars
@@ -503,7 +503,7 @@ country_event = {
 	is_triggered_only = yes
 	fire_only_once = yes
 	option = {
-		name = fee_SWI.12.a
+		name = fee_SWI.12.OPT1
 		ai_chance = {
 			factor = 100
 		}
@@ -512,7 +512,7 @@ country_event = {
 		set_ruler_flag = fee_Charles_in_command
 	}
 	option = {
-		name = fee_SWI.12.b
+		name = fee_SWI.12.OPT2
 		ai_chance = {
 			factor = 0
 		}
@@ -560,7 +560,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = fee_SWI.14.a
+		name = fee_SWI.14.OPT1
 		add_stability = -1
 		add_war_exhaustion = 5
 	}
@@ -574,7 +574,7 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
-		name = fee_SWI.15.a
+		name = fee_SWI.15.OPT1
 		add_country_modifier = {
 			name = FEE_Swiss_Onward_to_victory
 			duration = 1825
@@ -604,7 +604,7 @@ country_event = {
 		set_country_flag = FEE_Reform_Entered_Switzerland
 	}
 	option = {
-		name = fee_SWI.16.a
+		name = fee_SWI.16.OPT1
 		ai_chance = {
 			factor = 50
 			modifier = {
@@ -634,7 +634,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = fee_SWI.16.b
+		name = fee_SWI.16.OPT2
 		ai_chance = {
 			factor = 50
 			modifier = {
@@ -678,7 +678,7 @@ country_event = {
 		set_country_flag = FEE_Sausage_Affair
 	}
 	option = {
-		name = fee_SWI.17.a
+		name = fee_SWI.17.OPT1
 		ai_chance = {
 			factor = 50
 			modifier = {
@@ -717,7 +717,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = fee_SWI.17.b
+		name = fee_SWI.17.OPT2
 		ai_chance = {
 			factor = 50
 			modifier = {
@@ -775,7 +775,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = fee_SWI.18.a
+		name = fee_SWI.18.OPT1
 		ai_chance = {
 			factor = 50
 			modifier = {
@@ -795,7 +795,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = fee_SWI.18.b
+		name = fee_SWI.18.OPT2
 		ai_chance = {
 			factor = 50
 			modifier = {
@@ -815,7 +815,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = fee_SWI.18.c
+		name = fee_SWI.18.OPT3
 		trigger = {
 			NOT = {
 				OR = {
@@ -830,7 +830,7 @@ country_event = {
 		add_prestige = 10
 	}
 	option = {
-		name = fee_SWI.18.d
+		name = fee_SWI.18.D
 		ai_chance = {
 			factor = 50
 			modifier = {
@@ -868,7 +868,7 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
-		name = fee_SWI.19.a
+		name = fee_SWI.19.OPT1
 		if = {
 			limit = {
 				NOT = {
@@ -916,7 +916,7 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
-		name = fee_SWI.20.a
+		name = fee_SWI.20.OPT1
 		if = {
 			limit = {
 				NOT = {

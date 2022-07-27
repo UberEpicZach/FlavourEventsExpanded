@@ -847,3 +847,38 @@ country_event = {
 		}
 	}
 }
+
+# Johann Wilhelm II, Elector Palatine
+country_event = {
+	id = FEE_Palatinate_Events.10
+	title = FEE_Palatinate_Events.10.T
+	desc = FEE_Palatinate_Events.10.D
+	picture = ADVISOR_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = PAL
+		is_year = 1680
+		NOT = { is_year = 1715 }
+	}
+
+	mean_time_to_happen = {
+		months = 300
+		modifier = {
+			factor = 0.9
+			has_idea_group = innovativeness_ideas
+		}
+		modifier = {
+			factor = 0.9
+			has_idea_group = humanist_ideas
+		}
+	}
+
+	option = {
+		name = FEE_Palatinate_Events.10.OPT1
+
+		add_stability_or_adm_power = yes
+		add_adm_power = 50
+	}	
+}

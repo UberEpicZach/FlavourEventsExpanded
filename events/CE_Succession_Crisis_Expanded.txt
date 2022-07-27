@@ -3,8 +3,8 @@ namespace = succession_crisis_expanded
 
 country_event = {
 	id = succession_crisis_expanded.1
-	title = succession_crisis_expanded.1.t
-	desc = succession_crisis_expanded.1.d
+	title = succession_crisis_expanded.1.T
+	desc = succession_crisis_expanded.1.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 	major = yes
 	major_trigger = {
@@ -223,7 +223,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = succession_crisis_expanded.1.a
+		name = succession_crisis_expanded.1.OPT1
 		event_target:claimant_country_1 = {
 			country_event = {
 				id = succession_crisis_expanded.2
@@ -253,7 +253,7 @@ country_event = {
 		} 
 	}
 	option = {
-		name = succession_crisis_expanded.1.b
+		name = succession_crisis_expanded.1.OPT2
 		ROOT = {
 			define_ruler = {
 				claim = 20
@@ -282,8 +282,8 @@ country_event = {
 #The Claimants
 country_event = {
 	id = succession_crisis_expanded.2
-	title = succession_crisis_expanded.2.t
-	desc = succession_crisis_expanded.2.d
+	title = succession_crisis_expanded.2.T
+	desc = succession_crisis_expanded.2.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 	major = yes
 	major_trigger = {
@@ -296,7 +296,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = succession_crisis_expanded.2.a
+		name = succession_crisis_expanded.2.OPT1
 		set_country_flag = country_claimed_yes
 		custom_tooltip = CE_claimed_the_duchies
 		ai_chance = {
@@ -304,7 +304,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = succession_crisis_expanded.2.b
+		name = succession_crisis_expanded.2.OPT2
 		ai_chance = {
 			factor = 0
 		}
@@ -314,8 +314,8 @@ country_event = {
 #The Aulic Council(Emperor)
 country_event = {
 	id = succession_crisis_expanded.3
-	title = succession_crisis_expanded.3.t
-	desc = succession_crisis_expanded.3.d
+	title = succession_crisis_expanded.3.T
+	desc = succession_crisis_expanded.3.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 	major = yes
 	major_trigger = {
@@ -328,7 +328,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = succession_crisis_expanded.3.a
+		name = succession_crisis_expanded.3.OPT1
 		every_country = {
 			limit = {
 				has_country_flag = country_claimed_yes
@@ -343,7 +343,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = succession_crisis_expanded.3.b
+		name = succession_crisis_expanded.3.OPT2
 		every_country = {
 			limit = {
 				has_country_flag = country_claimed_yes
@@ -362,8 +362,8 @@ country_event = {
 #The Emperor Demands
 country_event = {
 	id = succession_crisis_expanded.4
-	title = succession_crisis_expanded.4.t
-	desc = succession_crisis_expanded.4.d
+	title = succession_crisis_expanded.4.T
+	desc = succession_crisis_expanded.4.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 	major = yes
 	major_trigger = {
@@ -376,7 +376,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = succession_crisis_expanded.4.a
+		name = succession_crisis_expanded.4.OPT1
 		add_army_tradition = 5
 		create_alliance = event_target:partitioned_country
 		event_target:claimant_country_4 = {
@@ -391,7 +391,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = succession_crisis_expanded.4.b
+		name = succession_crisis_expanded.4.OPT2
 		clr_country_flag = country_claimed_yes
 		if = {
 			limit = {
@@ -418,8 +418,8 @@ country_event = {
 #The Imperial Duchies(Emperor)
 country_event = {
 	id = succession_crisis_expanded.5
-	title = succession_crisis_expanded.5.t
-	desc = succession_crisis_expanded.5.d
+	title = succession_crisis_expanded.5.T
+	desc = succession_crisis_expanded.5.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 	major = yes
 	major_trigger = {
@@ -432,7 +432,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = succession_crisis_expanded.5.a
+		name = succession_crisis_expanded.5.OPT1
 		event_target:claimant_country_4 = {
 			inherit = event_target:partitioned_country
 		}
@@ -462,8 +462,8 @@ country_event = {
 #Seizure of the United Duchies(Emperor)
 country_event = {
 	id = succession_crisis_expanded.6
-	title = succession_crisis_expanded.6.t
-	desc = succession_crisis_expanded.6.d
+	title = succession_crisis_expanded.6.T
+	desc = succession_crisis_expanded.6.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 	major = yes
 	major_trigger = {
@@ -476,7 +476,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = succession_crisis_expanded.6.a
+		name = succession_crisis_expanded.6.OPT1
 		every_country = {
 			limit = {
 				has_country_flag = United_Duchies_occupied_yes
@@ -491,7 +491,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = succession_crisis_expanded.6.b
+		name = succession_crisis_expanded.6.OPT2
 		declare_war_with_cb = {
 			who = event_target:partitioned_country
 			casus_belli = cb_vassalize_mission 
@@ -505,8 +505,8 @@ country_event = {
 #The Imperial war for Julich-Cleves-Berg(France)
 country_event = {
 	id = succession_crisis_expanded.7
-	title = succession_crisis_expanded.7.t
-	desc = succession_crisis_expanded.7.d
+	title = succession_crisis_expanded.7.T
+	desc = succession_crisis_expanded.7.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 	major = yes
 	major_trigger = {
@@ -519,7 +519,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = succession_crisis_expanded.7.a
+		name = succession_crisis_expanded.7.OPT1
 		emperor = {
 			country_event = {
 				id = succession_crisis_expanded.10
@@ -532,7 +532,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = succession_crisis_expanded.7.b
+		name = succession_crisis_expanded.7.OPT2
 		ai_chance = {
 			factor = 1
 		}
@@ -542,8 +542,8 @@ country_event = {
 #French Intervention
 country_event = {
 	id = succession_crisis_expanded.24
-	title = succession_crisis_expanded.24.t
-	desc = succession_crisis_expanded.24.d
+	title = succession_crisis_expanded.24.T
+	desc = succession_crisis_expanded.24.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 	major = yes
 	major_trigger = {
@@ -556,7 +556,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = succession_crisis_expanded.24.a
+		name = succession_crisis_expanded.24.OPT1
 		FRA = {
 			create_alliance = BRG
 			join_all_defensive_wars_of = BRG
@@ -576,7 +576,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = succession_crisis_expanded.24.b
+		name = succession_crisis_expanded.24.OPT2
 		emperor = {
 			white_peace = BRG
 		}
@@ -591,8 +591,8 @@ country_event = {
 #The Spoils of War
 country_event = {
 	id = succession_crisis_expanded.10
-	title = succession_crisis_expanded.10.t
-	desc = succession_crisis_expanded.10.d
+	title = succession_crisis_expanded.10.T
+	desc = succession_crisis_expanded.10.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 	major = yes
 	major_trigger = {
@@ -628,7 +628,7 @@ country_event = {
 	}
 	
 	option = {
-		name = succession_crisis_expanded.10.a
+		name = succession_crisis_expanded.10.OPT1
 		set_country_flag = United_Duchies_Negotiations_Divide_yes
 		if = {
 			limit = {
@@ -655,7 +655,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = succession_crisis_expanded.10.b
+		name = succession_crisis_expanded.10.OPT2
 		trigger = {
 			AND = {
 				event_target:claimant_country_1 = {
@@ -685,8 +685,8 @@ country_event = {
 #Treaty of Xanten(Berg)
 country_event = {
 	id = succession_crisis_expanded.11
-	title = succession_crisis_expanded.11.t
-	desc = succession_crisis_expanded.11.d
+	title = succession_crisis_expanded.11.T
+	desc = succession_crisis_expanded.11.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 	
 	major = yes
@@ -700,7 +700,7 @@ country_event = {
 	is_triggered_only = yes
 	
 	option = {
-		name = succession_crisis_expanded.11.a
+		name = succession_crisis_expanded.11.OPT1
 		
 		ai_chance = {
 			factor = 1
@@ -1001,8 +1001,8 @@ country_event = {
 # #Second war of Julich Inheritance (Berg)
 # country_event = {
 # 	id = succession_crisis_expanded.28
-# 	title = succession_crisis_expanded.28.t
-# 	desc = succession_crisis_expanded.28.d
+# 	title = succession_crisis_expanded.28.T
+# 	desc = succession_crisis_expanded.28.D
 # 	picture = ELECTION_REPUBLICAN_eventPicture
 # 	major = yes
 # 	major_trigger = {
@@ -1017,7 +1017,7 @@ country_event = {
 # 	is_triggered_only = yes
 	
 # 	option = {
-# 		name = succession_crisis_expanded.28.a
+# 		name = succession_crisis_expanded.28.OPT1
 # 		# BRA = {
 # 			# create_union = BRG
 # 		# }
@@ -1077,7 +1077,7 @@ country_event = {
 # 		}
 # 	}
 # 	option = {
-# 		name = succession_crisis_expanded.28.b
+# 		name = succession_crisis_expanded.28.OPT2
 # 		# PAL = {
 # 			# create_union = BRG
 # 		# }
@@ -1149,8 +1149,8 @@ country_event = {
 # #Berg Declares for Brandenburg
 # country_event = {
 # 	id = succession_crisis_expanded.29
-# 	title = succession_crisis_expanded.29.t
-# 	desc = succession_crisis_expanded.29.d
+# 	title = succession_crisis_expanded.29.T
+# 	desc = succession_crisis_expanded.29.D
 # 	picture = ELECTION_REPUBLICAN_eventPicture
 # 	major = yes
 # 	major_trigger = {
@@ -1164,7 +1164,7 @@ country_event = {
 # 	is_triggered_only = yes
 	
 # 	option = {
-# 		name = succession_crisis_expanded.29.a
+# 		name = succession_crisis_expanded.29.OPT1
 # 		create_succession_crisis = {
 # 			attacker = PAL
 # 			defender = BRA
@@ -1193,7 +1193,7 @@ country_event = {
 # 		}
 # 	}
 # 	option = {
-# 		name = succession_crisis_expanded.29.b
+# 		name = succession_crisis_expanded.29.OPT2
 # 		if = {
 # 			limit = {
 # 				exists = BRA 
@@ -1216,8 +1216,8 @@ country_event = {
 # #Berg Declares for the Palatinate
 # country_event = {
 # 	id = succession_crisis_expanded.30
-# 	title = succession_crisis_expanded.30.t
-# 	desc = succession_crisis_expanded.30.d
+# 	title = succession_crisis_expanded.30.T
+# 	desc = succession_crisis_expanded.30.D
 # 	picture = ELECTION_REPUBLICAN_eventPicture
 # 	major = yes
 # 	major_trigger = {
@@ -1232,7 +1232,7 @@ country_event = {
 # 	is_triggered_only = yes
 	
 # 	option = {
-# 		name = succession_crisis_expanded.30.a
+# 		name = succession_crisis_expanded.30.OPT1
 # 		create_succession_crisis = {
 # 			attacker = BRA
 # 			defender = PAL
@@ -1269,7 +1269,7 @@ country_event = {
 # 		}
 # 	}
 # 	option = {
-# 		name = succession_crisis_expanded.30.b
+# 		name = succession_crisis_expanded.30.OPT2
 # 		PAL = {
 # 			create_union = BRG
 # 		}

@@ -4,8 +4,8 @@ namespace = fee_enlightenment
 
 country_event = {
 	id = fee_enlightenment.24
-	title = fee_enlightenment.24.t
-	desc = fee_enlightenment.24.d
+	title = fee_enlightenment.24.T
+	desc = fee_enlightenment.24.D
 	picture = GOOD_WITH_MONARCH_eventPicture
 
 	trigger = {
@@ -29,7 +29,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_enlightenment.24.a
+		name = fee_enlightenment.24.OPT1
 		add_country_modifier = {
 			name = fee_enlightenment
 			duration = -1
@@ -41,8 +41,8 @@ country_event = {
 #Coffee House Gathering
 country_event = {
 	id = fee_enlightenment.2
-	title = fee_enlightenment.2.t
-	desc = fee_enlightenment.2.d
+	title = fee_enlightenment.2.T
+	desc = fee_enlightenment.2.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 
 	trigger = {
@@ -70,7 +70,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_enlightenment.2.a
+		name = fee_enlightenment.2.OPT1
 		add_country_modifier = {
 			name = fee_enlightenment_coffee_house
 			duration = 3650
@@ -78,7 +78,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_enlightenment.2.b
+		name = fee_enlightenment.2.OPT2
 		add_stability_or_adm_power = yes
 	}
 }
@@ -86,8 +86,8 @@ country_event = {
 #Enlightened Absolutism
 country_event = {
 	id = fee_enlightenment.3
-	title = fee_enlightenment.3.t
-	desc = fee_enlightenment.3.d
+	title = fee_enlightenment.3.T
+	desc = fee_enlightenment.3.D
 	picture = COURT_eventPicture
 
 	trigger = {
@@ -129,7 +129,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_enlightenment.3.a
+		name = fee_enlightenment.3.OPT1
 		ai_chance = {
 			factor = 25
 		}
@@ -139,7 +139,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = fee_enlightenment.3.b
+		name = fee_enlightenment.3.OPT2
 		ai_chance = {
 			factor = 75
 		}
@@ -153,8 +153,8 @@ country_event = {
 #Support the Scientific Revolution
 country_event = {
 	id = fee_enlightenment.4
-	title = fee_enlightenment.4.t
-	desc = fee_enlightenment.4.d
+	title = fee_enlightenment.4.T
+	desc = fee_enlightenment.4.D
 	picture = ECONOMY_eventPicture
 
 	fire_only_once = yes
@@ -177,7 +177,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_enlightenment.4.a
+		name = fee_enlightenment.4.OPT1
 		add_adm_power = -15
 		add_years_of_income = -0.2
 		add_country_modifier = {
@@ -188,7 +188,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_enlightenment.4.b
+		name = fee_enlightenment.4.OPT2
 		add_papal_influence = 15
 		add_fervor = 25
 		add_church_power = 25
@@ -204,8 +204,8 @@ country_event = {
 #Benefits of the Scientific Revolution
 country_event = {
 	id = fee_enlightenment.5
-	title = fee_enlightenment.5.t
-	desc = fee_enlightenment.5.d
+	title = fee_enlightenment.5.T
+	desc = fee_enlightenment.5.D
 	picture = INVENTION_eventPicture
 
 	trigger = {
@@ -230,7 +230,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_enlightenment.5.a
+		name = fee_enlightenment.5.OPT1
 		add_country_modifier = {
 			name = fee_scientific_revolution_tech
 			duration = 7200
@@ -238,7 +238,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_enlightenment.5.b
+		name = fee_enlightenment.5.OPT2
 		add_country_modifier = {
 			name = fee_scientific_revolution_ideas
 			duration = 7200
@@ -250,8 +250,8 @@ country_event = {
 #Our Country is Falling Behind
 country_event = {
 	id = fee_enlightenment.6
-	title = fee_enlightenment.6.t
-	desc = fee_enlightenment.6.d
+	title = fee_enlightenment.6.T
+	desc = fee_enlightenment.6.D
 	picture = MILITARY_CAMP_eventPicture
 
 	trigger = {
@@ -276,7 +276,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_enlightenment.6.a
+		name = fee_enlightenment.6.OPT1
 		ai_chance = {
 			factor = 70
 		}
@@ -287,7 +287,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_enlightenment.6.b
+		name = fee_enlightenment.6.OPT2
 		ai_chance = {
 			factor = 30
 		}
@@ -298,8 +298,8 @@ country_event = {
 #Scientist Publishes Grand Work
 country_event = {
 	id = fee_enlightenment.8
-	title = fee_enlightenment.8.t
-	desc = fee_enlightenment.8.d
+	title = fee_enlightenment.8.T
+	desc = fee_enlightenment.8.D
 	picture = BIG_BOOK_eventPicture
 
 	trigger = {
@@ -349,7 +349,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_enlightenment.8.a
+		name = fee_enlightenment.8.OPT1
 		trigger = {
 			has_country_modifier = fee_great_work_check
 		}
@@ -364,7 +364,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = fee_enlightenment.8.b
+		name = fee_enlightenment.8.OPT2
 		trigger = {
 			has_country_modifier = fee_great_work_check
 		}
@@ -379,7 +379,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = fee_enlightenment.8.c
+		name = fee_enlightenment.8.OPT3
 		trigger = {
 			has_country_modifier = fee_great_work_check
 		}
@@ -440,8 +440,8 @@ country_event = {
 #Philosopher Criticises the Church
 country_event = {
 	id = fee_enlightenment.9
-	title = fee_enlightenment.9.t
-	desc = fee_enlightenment.9.d
+	title = fee_enlightenment.9.T
+	desc = fee_enlightenment.9.D
 	picture = RELIGIOUS_TURMOIL_eventPicture
 
 	trigger = {
@@ -468,7 +468,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_enlightenment.9.a
+		name = fee_enlightenment.9.OPT1
 		add_papal_influence = -30
 		add_church_power = -50
 		add_fervor = -50
@@ -477,12 +477,12 @@ country_event = {
 	}
 
 	option = {
-		name = fee_enlightenment.9.b
+		name = fee_enlightenment.9.OPT2
 		add_stability = -1
 	}
 
 	option = {
-		name = fee_enlightenment.9.c
+		name = fee_enlightenment.9.OPT3
 		trigger = {
 			has_country_modifier = fee_strong_censorship
 		}
@@ -493,8 +493,8 @@ country_event = {
 #Philosopher Criticises the [Root.Governmentname]
 country_event = {
 	id = fee_enlightenment.10
-	title = fee_enlightenment.10.t
-	desc = fee_enlightenment.10.d
+	title = fee_enlightenment.10.T
+	desc = fee_enlightenment.10.D
 	picture = DEBATE_REPUBLICAN_eventPicture
 
 	trigger = {
@@ -540,12 +540,12 @@ country_event = {
 	}
 
 	option = {
-		name = fee_enlightenment.10.a
+		name = fee_enlightenment.10.OPT1
 		add_stability = -1
 	}
 
 	option = {
-		name = fee_enlightenment.10.b
+		name = fee_enlightenment.10.OPT2
 		add_adm_power = -30
 		add_dip_power = -30
 		add_mil_power = -30
@@ -555,8 +555,8 @@ country_event = {
 #Thinker Goes Abroad
 country_event = {
 	id = fee_enlightenment.11
-	title = fee_enlightenment.11.t
-	desc = fee_enlightenment.11.d
+	title = fee_enlightenment.11.T
+	desc = fee_enlightenment.11.D
 	picture = MERCHANTS_TALKING_eventPicture
 
 	trigger = {
@@ -593,11 +593,11 @@ country_event = {
 	}
 
 	option = {
-		name = fee_enlightenment.11.a
+		name = fee_enlightenment.11.OPT1
 		add_dip_power = -25
 	}
 	option = {
-		name = fee_enlightenment.11.b
+		name = fee_enlightenment.11.OPT2
 		add_legitimacy = -5
 		add_republican_tradition = -5
 	}
@@ -606,8 +606,8 @@ country_event = {
 #Military Thought Suffers Under Rationalism
 country_event = {
 	id = fee_enlightenment.12
-	title = fee_enlightenment.12.t
-	desc = fee_enlightenment.12.d
+	title = fee_enlightenment.12.T
+	desc = fee_enlightenment.12.D
 	picture = LAND_MILITARY_eventPicture
 
 	trigger = {
@@ -630,12 +630,12 @@ country_event = {
 	}
 
 	option = {
-		name = fee_enlightenment.12.a
+		name = fee_enlightenment.12.OPT1
 		add_mil_power = -50
 	}
 
 	option = {
-		name = fee_enlightenment.12.b
+		name = fee_enlightenment.12.OPT2
 		add_country_modifier = {
 			name = fee_suffering_military_thought
 			duration = 1825
@@ -646,8 +646,8 @@ country_event = {
 #Rationalism Aids Trade
 country_event = {
 	id = fee_enlightenment.13
-	title = fee_enlightenment.13.t
-	desc = fee_enlightenment.13.d
+	title = fee_enlightenment.13.T
+	desc = fee_enlightenment.13.D
 	picture = NAVAL_MILITARY_eventPicture
 
 	trigger = {
@@ -676,18 +676,18 @@ country_event = {
 	}
 
 	option = {
-		name = fee_enlightenment.13.a
+		name = fee_enlightenment.13.OPT1
 		add_dip_power = 50
 	}
 	option = {
-		name = fee_enlightenment.13.b
+		name = fee_enlightenment.13.OPT2
 		add_country_modifier = {
 			name = fee_rationalist_trade
 			duration = 1825
 		}
 	}
 	option = {
-		name = fee_enlightenment.13.c
+		name = fee_enlightenment.13.OPT3
 		add_years_of_income = 0.3
 	}
 }
@@ -695,8 +695,8 @@ country_event = {
 #Mercantilism Questioned
 country_event = {
 	id = fee_enlightenment.14
-	title = fee_enlightenment.14.t
-	desc = fee_enlightenment.14.d
+	title = fee_enlightenment.14.T
+	desc = fee_enlightenment.14.D
 	picture = OVEREXTENSION_eventPicture
 
 	trigger = {
@@ -717,7 +717,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_enlightenment.14.a
+		name = fee_enlightenment.14.OPT1
 		ai_chance = {
 			factor = 50
 		}
@@ -725,7 +725,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_enlightenment.14.b
+		name = fee_enlightenment.14.OPT2
 		ai_chance = {
 			factor = 50
 		}
@@ -736,7 +736,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_enlightenment.14.c
+		name = fee_enlightenment.14.OPT3
 		ai_chance = {
 			factor = 0
 		}
@@ -748,8 +748,8 @@ country_event = {
 #Advances in Military Practice
 country_event = {
 	id = fee_enlightenment.15
-	title = fee_enlightenment.15.t
-	desc = fee_enlightenment.15.d
+	title = fee_enlightenment.15.T
+	desc = fee_enlightenment.15.D
 	picture = MILITARY_CAMP_eventPicture
 
 	trigger = {
@@ -777,12 +777,12 @@ country_event = {
 	}
 
 	option = {
-		name = fee_enlightenment.15.a
+		name = fee_enlightenment.15.OPT1
 		add_mil_power = 35
 	}
 
 	option = {
-		name = fee_enlightenment.15.b
+		name = fee_enlightenment.15.OPT2
 		add_army_tradition = 10
 	}
 }
@@ -790,8 +790,8 @@ country_event = {
 #War Criticised
 country_event = {
 	id = fee_enlightenment.16
-	title = fee_enlightenment.16.t
-	desc = fee_enlightenment.16.d
+	title = fee_enlightenment.16.T
+	desc = fee_enlightenment.16.D
 	picture = WOUNDED_SOLDIERS_eventPicture
 
 	trigger = {
@@ -845,7 +845,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_enlightenment.16.a
+		name = fee_enlightenment.16.OPT1
 		add_prestige = -10
 		random_owned_province = {
 			limit = {
@@ -881,7 +881,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_enlightenment.16.b
+		name = fee_enlightenment.16.OPT2
 		add_legitimacy = -5
 		add_stability = -1
 		add_country_modifier = {
@@ -894,8 +894,8 @@ country_event = {
 #Anti-government Radicalism
 country_event = {
 	id = fee_enlightenment.17
-	title = fee_enlightenment.17.t
-	desc = fee_enlightenment.17.d
+	title = fee_enlightenment.17.T
+	desc = fee_enlightenment.17.D
 	picture = ANGRY_MOB_eventPicture
 
 	trigger = {
@@ -952,7 +952,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_enlightenment.17.a
+		name = fee_enlightenment.17.OPT1
 		add_country_modifier = {
 			name = fee_enlightenment_anti_government
 			duration = 7300
@@ -960,7 +960,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_enlightenment.17.b
+		name = fee_enlightenment.17.OPT2
 		add_stability = -2
 		add_country_modifier = {
 			name = fee_enlightenment_thinker_repressed
@@ -973,8 +973,8 @@ country_event = {
 #Anti-religious work circulates
 country_event = {
 	id = fee_enlightenment.18
-	title = fee_enlightenment.18.t
-	desc = fee_enlightenment.18.d
+	title = fee_enlightenment.18.T
+	desc = fee_enlightenment.18.D
 	picture = PRAYING_eventPicture
 
 	trigger = {
@@ -1006,7 +1006,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_enlightenment.18.a
+		name = fee_enlightenment.18.OPT1
 		trigger = {
 			religion = catholic
 		}
@@ -1017,7 +1017,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_enlightenment.18.b
+		name = fee_enlightenment.18.OPT2
 		trigger = {
 			religion = protestant
 		}
@@ -1028,7 +1028,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_enlightenment.18.c
+		name = fee_enlightenment.18.OPT3
 		trigger = {
 			religion = reformed
 		}
@@ -1066,8 +1066,8 @@ country_event = {
 
 country_event = {
 	id = fee_enlightenment.19
-	title = fee_enlightenment.19.t
-	desc = fee_enlightenment.19.d
+	title = fee_enlightenment.19.T
+	desc = fee_enlightenment.19.D
 	picture = RELIGIOUS_CONVERSION_eventPicture
 
 	trigger = {
@@ -1098,7 +1098,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_enlightenment.19.a
+		name = fee_enlightenment.19.OPT1
 		remove_country_modifier = fee_anti_religious_work_catholic
 		remove_country_modifier = fee_anti_religious_work_reformed
 		remove_country_modifier = fee_anti_religious_work_protestant
@@ -1108,8 +1108,8 @@ country_event = {
 #End of the Enlightenment In Time
 country_event = {
 	id = fee_enlightenment.20
-	title = fee_enlightenment.20.t
-	desc = fee_enlightenment.20.d
+	title = fee_enlightenment.20.T
+	desc = fee_enlightenment.20.D
 	picture = UNIVERSITY_eventPicture
 
 	trigger = {
@@ -1122,7 +1122,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_enlightenment.20.a
+		name = fee_enlightenment.20.OPT1
 		remove_country_modifier = fee_enlightenment
 	}
 }
@@ -1130,8 +1130,8 @@ country_event = {
 #Dawn of the Revolution
 country_event = {
 	id = fee_enlightenment.21
-	title = fee_enlightenment.21.t
-	desc = fee_enlightenment.21.d
+	title = fee_enlightenment.21.T
+	desc = fee_enlightenment.21.D
 	picture = REVOLUTION_eventPicture
 
 	trigger = {
@@ -1149,15 +1149,15 @@ country_event = {
 	}
 
 	option = {
-		name = fee_enlightenment.21.a
+		name = fee_enlightenment.21.OPT1
 	}
 }
 
 #Literary Salon
 country_event = {
 	id = fee_enlightenment.22
-	title = fee_enlightenment.22.t
-	desc = fee_enlightenment.22.d
+	title = fee_enlightenment.22.T
+	desc = fee_enlightenment.22.D
 	picture = THEATRE_eventPicture
 
 	trigger = {
@@ -1169,7 +1169,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_enlightenment.22.a
+		name = fee_enlightenment.22.OPT1
 		add_stability_or_adm_power = yes
 		random_neighbor_country = {
 			limit = {
@@ -1183,7 +1183,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_enlightenment.22.b
+		name = fee_enlightenment.22.OPT2
 		add_country_modifier = {
 			name = fee_literary_salon
 			duration = 1825
@@ -1195,8 +1195,8 @@ country_event = {
 #Academic Society
 country_event = {
 	id = fee_enlightenment.23
-	title = fee_enlightenment.23.t
-	desc = fee_enlightenment.23.d
+	title = fee_enlightenment.23.T
+	desc = fee_enlightenment.23.D
 	picture = DIPLOMACY_eventPicture
 
 	trigger = {
@@ -1215,7 +1215,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_enlightenment.23.a
+		name = fee_enlightenment.23.OPT1
 		add_country_modifier = {
 			name = fee_enlightenment_academia_adm
 			duration = 3650
@@ -1223,7 +1223,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_enlightenment.23.b
+		name = fee_enlightenment.23.OPT2
 		add_country_modifier = {
 			name = fee_enlightenment_academia_dip
 			duration = 3650
@@ -1231,7 +1231,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_enlightenment.23.c
+		name = fee_enlightenment.23.OPT3
 		add_country_modifier = {
 			name = fee_enlightenment_academia_mil
 			duration = 3650

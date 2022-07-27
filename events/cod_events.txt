@@ -2,8 +2,8 @@ namespace = cod_event
 
 country_event = { #Child of Destiny
 	id = cod_event.1
-	title = cod_event.1.t
-	desc = cod_event.1.d
+	title = cod_event.1.T
+	desc = cod_event.1.D
 	picture = NEW_HEIR_eventPicture
 
 	trigger = {
@@ -26,7 +26,7 @@ country_event = { #Child of Destiny
 	}
 
 	option = {
-		name = cod_event.1.a
+		name = cod_event.1.OPT1
 
 		ai_chance = { factor = 100 }
 	}
@@ -34,8 +34,8 @@ country_event = { #Child of Destiny
 
 country_event = {
 	id = cod_event.2
-	title = cod_event.2.t
-	desc = cod_event.2.d
+	title = cod_event.2.T
+	desc = cod_event.2.D
 	picture = ASSASSINATION_eventPicture
 
 	is_triggered_only = yes
@@ -54,7 +54,7 @@ country_event = {
 	}
 
 	option = {
-		name = cod_event.2.a
+		name = cod_event.2.OPT1
 
 		ai_chance = { factor = 100 }
 
@@ -64,8 +64,8 @@ country_event = {
 
 country_event = {
 	id = cod_event.3
-	title = cod_event.3.t
-	desc = cod_event.3.d
+	title = cod_event.3.T
+	desc = cod_event.3.D
 	picture = COURT_eventPicture
 
 	is_triggered_only = yes
@@ -84,7 +84,7 @@ country_event = {
 	}
 
 	option = {
-		name = cod_event.3.a
+		name = cod_event.3.OPT1
 
 		ai_chance = { factor = 100 }
 
@@ -94,8 +94,8 @@ country_event = {
 
 country_event = {
 	id = cod_event.4
-	title = cod_event.4.t
-	desc = cod_event.4.d
+	title = cod_event.4.T
+	desc = cod_event.4.D
 	picture = RELIGIOUS_WARS_eventPicture
 
 	is_triggered_only = yes
@@ -114,7 +114,7 @@ country_event = {
 	}
 
 	option = {
-		name = cod_event.4.a
+		name = cod_event.4.OPT1
 
 		ai_chance = { factor = 100 }
 
@@ -124,8 +124,8 @@ country_event = {
 
 country_event = {
 	id = cod_event.5
-	title = cod_event.5.t
-	desc = cod_event.5.d
+	title = cod_event.5.T
+	desc = cod_event.5.D
 	picture = CONQUEST_eventPicture
 
 	is_triggered_only = yes
@@ -144,7 +144,7 @@ country_event = {
 	}
 
 	option = {
-		name = cod_event.5.a
+		name = cod_event.5.OPT1
 
 		ai_chance = { factor = 100 }
 
@@ -155,8 +155,8 @@ country_event = {
 
 country_event = {
 	id = cod_event.6
-	title = cod_event.6.t
-	desc = cod_event.6.d
+	title = cod_event.6.T
+	desc = cod_event.6.D
 	picture = GOOD_WITH_MONARCH_eventPicture
 
 	is_triggered_only = yes
@@ -171,7 +171,7 @@ country_event = {
 	}
 
 	option = {
-		name = cod_event.6.a
+		name = cod_event.6.OPT1
 
 		ai_chance = { factor = 100 }
 
@@ -182,8 +182,8 @@ country_event = {
 
 country_event = {
 	id = cod_event.7
-	title = cod_event.7.t
-	desc = cod_event.7.d
+	title = cod_event.7.T
+	desc = cod_event.7.D
 	picture = SPY_eventPicture
 
 	is_triggered_only = yes
@@ -202,7 +202,7 @@ country_event = {
 	}
 
 	option = {
-		name = cod_event.7.a
+		name = cod_event.7.OPT1
 
 		ai_chance = { factor = 100 }
 
@@ -212,8 +212,8 @@ country_event = {
 
 country_event = {
 	id = cod_event.8
-	title = cod_event.8.t
-	desc = cod_event.8.d
+	title = cod_event.8.T
+	desc = cod_event.8.D
 	picture = DEATH_OF_HEIR_eventPicture
 
 	is_triggered_only = yes
@@ -232,7 +232,7 @@ country_event = {
 	}
 
 	option = {
-		name = cod_event.8.a
+		name = cod_event.8.OPT1
 
 		ai_chance = { factor = 100 }
 
@@ -242,8 +242,8 @@ country_event = {
 
 country_event = {
 	id = cod_event.9
-	title = cod_event.9.t
-	desc = cod_event.9.d
+	title = cod_event.9.T
+	desc = cod_event.9.D
 	picture = ADVISOR_eventPicture
 
 	is_triggered_only = yes
@@ -256,7 +256,7 @@ country_event = {
 	}
 
 	option = {
-		name = cod_event.9.a
+		name = cod_event.9.OPT1
 
 		ai_chance = { factor = 100 }
 
@@ -267,8 +267,8 @@ country_event = {
 
 country_event = {
 	id = cod_event.10
-	title = cod_event.10.t
-	desc = cod_event.10.d
+	title = cod_event.10.T
+	desc = cod_event.10.D
 	picture = DEATH_OF_HEIR_eventPicture
 
 	hidden = yes
@@ -290,7 +290,7 @@ country_event = {
 	}
 
 	option = {
-		name = cod_event.10.a
+		name = cod_event.10.OPT1
 
 		ai_chance = { factor = 100 }
 
@@ -302,8 +302,8 @@ country_event = {
 
 country_event = {
 	id = cod_event.11
-	title = cod_event.11.t
-	desc = cod_event.11.d
+	title = cod_event.11.T
+	desc = cod_event.11.D
 	picture = HORDE_ON_HORSEBACK_eventPicture
 
 	trigger = {
@@ -322,7 +322,7 @@ country_event = {
 	}
 
 	option = {
-		name = cod_event.11.a
+		name = cod_event.11.OPT1
 
 		ai_chance = { factor = 100 }
 

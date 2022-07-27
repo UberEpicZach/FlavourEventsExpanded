@@ -9,8 +9,8 @@ namespace = fee_POL
 # Przywilej cerekwicko-nieszawski
 #country_event = {
 #	id = fee_POL.9
-#	title = fee_POL.9.t
-#	desc = fee_POL.9.d
+#	title = fee_POL.9.T
+#	desc = fee_POL.9.D
 #	picture = LIBERUM_VETO_eventPicture
 #
 #	fire_only_once = yes
@@ -33,7 +33,7 @@ namespace = fee_POL
 #	}
 #
 #	option = {
-#		name = fee_POL.9.a # Accept the Conventions (Road to nobility)
+#		name = fee_POL.9.OPT1 # Accept the Conventions (Road to nobility)
 #		add_country_modifier = {
 #			name = pol_statuty_nieszawskie
 #			duration = -1
@@ -43,7 +43,7 @@ namespace = fee_POL
 #		}
 #	}
 #	option = {
-#		name = fee_POL.9.b # Refuse to sign it and defy the Magnates (Road to absolutism)
+#		name = fee_POL.9.OPT2 # Refuse to sign it and defy the Magnates (Road to absolutism)
 #		add_manpower = -2.5
 #		random_owned_province = {
 #			limit = {
@@ -57,8 +57,8 @@ namespace = fee_POL
 # Konstytucje piotrkowskie
 #country_event = {
 #	id = fee_POL.10
-#	title = fee_POL.10.t
-#	desc = fee_POL.10.d
+#	title = fee_POL.10.T
+#	desc = fee_POL.10.D
 #	picture = COURT_eventPicture
 #
 #	fire_only_once = yes
@@ -81,7 +81,7 @@ namespace = fee_POL
 #	}
 #
 #	option = {
-#		name = fee_POL.10.a # Enact
+#		name = fee_POL.10.OPT1 # Enact
 #		add_stability = 1
 #		add_mercantilism = 0.025
 #		add_country_modifier = {
@@ -90,7 +90,7 @@ namespace = fee_POL
 #		}
 #	}
 #	option = {
-#		name = fee_POL.10.b # Refuse to enact
+#		name = fee_POL.10.OPT2 # Refuse to enact
 #		add_stability = -3
 #		add_manpower = -2.5
 #	}
@@ -99,8 +99,8 @@ namespace = fee_POL
 # Unia krakowsko-wileńska
 country_event = {
 	id = fee_POL.11
-	title = fee_POL.11.t
-	desc = fee_POL.11.d
+	title = fee_POL.11.T
+	desc = fee_POL.11.D
 	picture = COURT_eventPicture
 
 	fire_only_once = yes
@@ -126,7 +126,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_POL.11.a # Our countries should cooperate
+		name = fee_POL.11.OPT1 # Our countries should cooperate
 
 		if = {
 			limit = {
@@ -140,7 +140,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = fee_POL.11.b
+		name = fee_POL.11.OPT2
 		ai_chance = {
 			factor = 30
 		}
@@ -149,8 +149,8 @@ country_event = {
 # Przywilej mielnicki
 country_event = {
 	id = fee_POL.12
-	title = fee_POL.12.t
-	desc = fee_POL.12.d
+	title = fee_POL.12.T
+	desc = fee_POL.12.D
 	picture = COURT_eventPicture
 
 	fire_only_once = yes
@@ -172,7 +172,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_POL.12.a # Sign
+		name = fee_POL.12.OPT1 # Sign
 		ai_chance = {
 			factor = 90
 		}
@@ -186,7 +186,7 @@ country_event = {
 		
 	}
 	option = {
-		name = fee_POL.12.b # Reject
+		name = fee_POL.12.OPT2 # Reject
 		ai_chance = {
 			factor = 10
 		}
@@ -214,8 +214,8 @@ country_event = {
 # Unia mielnicka
 country_event = {
 	id = fee_POL.13
-	title = fee_POL.13.t
-	desc = fee_POL.13.d
+	title = fee_POL.13.T
+	desc = fee_POL.13.D
 	picture = COURT_eventPicture
 
 	fire_only_once = yes
@@ -231,7 +231,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_POL.13.a # Unite our countries under Poland(This will create massive rebellion in Lithuania)
+		name = fee_POL.13.OPT1 # Unite our countries under Poland(This will create massive rebellion in Lithuania)
 		ai_chance = {
 			factor = 5
 		}
@@ -245,7 +245,7 @@ country_event = {
 				   }
 		}
 	option = {
-		   name = fee_POL.13.b # Do not push them to sign it
+		   name = fee_POL.13.OPT2 # Do not push them to sign it
 		ai_chance = {
 			factor = 95
 		}
@@ -255,8 +255,8 @@ country_event = {
 # Lithuanian reaction to incorporation
 country_event = {
 	id = fee_POL.14
-	title = fee_POL.14.t
-	desc = fee_POL.14.d
+	title = fee_POL.14.T
+	desc = fee_POL.14.D
 	picture = COURT_eventPicture
 
 	fire_only_once = yes
@@ -270,7 +270,7 @@ country_event = {
 		months = 24
 	}
 	option = {
-		name = fee_POL.14.a # I told you so
+		name = fee_POL.14.OPT1 # I told you so
 		random_owned_province = {
 			limit = {
 				area = lithuania_area
@@ -300,8 +300,8 @@ country_event = {
 #Sejm piotrkowski
 country_event = {
 	id = fee_POL.15
-	title = fee_POL.15.t
-	desc = fee_POL.15.d
+	title = fee_POL.15.T
+	desc = fee_POL.15.D
 	picture = COURT_eventPicture
 
 	fire_only_once = yes
@@ -325,15 +325,15 @@ country_event = {
 	}
 
 	option = {
-		name = fee_POL.15.a # Well, accept it
+		name = fee_POL.15.OPT1 # Well, accept it
 		add_adm_power = 150
 		}
 }
 # Przywilej cerekwicko-nieszawski
 country_event = {
 	id = fee_POL.16
-	title = fee_POL.16.t
-	desc = fee_POL.16.d
+	title = fee_POL.16.T
+	desc = fee_POL.16.D
 	picture = LIBERUM_VETO_eventPicture
 
 	fire_only_once = yes
@@ -357,14 +357,14 @@ country_event = {
 	}
 
 	option = {
-		name = fee_POL.16.a # The beginning of noble rules
+		name = fee_POL.16.OPT1 # The beginning of noble rules
 		remove_country_modifier = pol_przywilej_mielnicki
 		every_owned_province = {
 		add_local_autonomy = 15
 		}
 	}
 	option = {
-		name = fee_POL.16.b # NO power to nobles!
+		name = fee_POL.16.OPT2 # NO power to nobles!
 		remove_country_modifier = pol_przywilej_mielnicki
 		remove_country_modifier = pol_statut_piotrkowski
 		remove_country_modifier = pol_statuty_nieszawskie
@@ -409,8 +409,8 @@ country_event = {
 # Przywilej toruński
 country_event = {
 	id = fee_POL.17
-	title = fee_POL.17.t
-	desc = fee_POL.17.d
+	title = fee_POL.17.T
+	desc = fee_POL.17.D
 	picture = COURT_eventPicture
 
 	fire_only_once = yes
@@ -432,7 +432,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_POL.17.a # Enact
+		name = fee_POL.17.OPT1 # Enact
 		add_stability_or_adm_power = yes
 		add_mercantilism = 3
 		add_country_modifier = {
@@ -441,7 +441,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = fee_POL.17.b # Refuse to enact
+		name = fee_POL.17.OPT2 # Refuse to enact
 		add_stability = -3
 		}
 }
@@ -449,8 +449,8 @@ country_event = {
 #Hołd Pruski.1
 country_event = {
 	id = fee_POL.18
-	title = fee_POL.18.t
-	desc = fee_POL.18.d
+	title = fee_POL.18.T
+	desc = fee_POL.18.D
 	picture = COURT_eventPicture
 
 	fire_only_once = yes
@@ -482,18 +482,18 @@ country_event = {
 		months = 120
 	}
 	option = {
-		name = fee_POL.18.a # Force them to create Prussia
+		name = fee_POL.18.OPT1 # Force them to create Prussia
 		TEU = { country_event = { id = fee_POL.22 } }
 	}
 	option = {
-		name = fee_POL.18.b # Do nothing
+		name = fee_POL.18.OPT2 # Do nothing
 	}
 }
 # Tumult gdański
 country_event = {
 	id = fee_POL.19
-	title = fee_POL.19.t
-	desc = fee_POL.19.d
+	title = fee_POL.19.T
+	desc = fee_POL.19.D
 	picture = COURT_eventPicture
 
 	fire_only_once = yes
@@ -517,7 +517,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_POL.19.a # Catholicism is our main religion
+		name = fee_POL.19.OPT1 # Catholicism is our main religion
 
 		43 = {
 			spawn_rebels = {
@@ -528,7 +528,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_POL.19.b # Let them live
+		name = fee_POL.19.OPT2 # Let them live
 
 		43 = { change_religion = protestant }
 	}
@@ -537,8 +537,8 @@ country_event = {
 # Pakt wileński
 country_event = {
 	id = fee_POL.20
-	title = fee_POL.20.t
-	desc = fee_POL.20.d
+	title = fee_POL.20.T
+	desc = fee_POL.20.D
 	picture = COURT_eventPicture
 
 	fire_only_once = yes
@@ -565,18 +565,18 @@ country_event = {
 		months = 12
 	}
 	option = {
-		name = fee_POL.20.a # Incoroporate Livonia
+		name = fee_POL.20.OPT1 # Incoroporate Livonia
 		LIV = { country_event = { id = fee_POL.23 } }
 	}
 	 option = {
-		name = fee_POL.20.b # Do nothing
+		name = fee_POL.20.OPT2 # Do nothing
 		}
 }
 # Statut karnkowskiego
 country_event = {
 	id = fee_POL.21
-	title = fee_POL.21.t
-	desc = fee_POL.21.d
+	title = fee_POL.21.T
+	desc = fee_POL.21.D
 	picture = COURT_eventPicture
 
 	fire_only_once = yes
@@ -599,7 +599,7 @@ country_event = {
 	}
 
 	 option = {
-		name = fee_POL.21.a # Sign
+		name = fee_POL.21.OPT1 # Sign
 		add_dip_power = -150
 		43 = {
 		add_province_modifier = {
@@ -609,7 +609,7 @@ country_event = {
 	  }
 	}
 	 option = {
-		name = fee_POL.21.b # It is unnecessary
+		name = fee_POL.21.OPT2 # It is unnecessary
 	}
 }
 
@@ -617,14 +617,14 @@ country_event = {
 #From fee_POL.18
 country_event = {
 	id = fee_POL.22
-	title = fee_POL.22.t
-	desc = fee_POL.22.d
+	title = fee_POL.22.T
+	desc = fee_POL.22.D
 	picture = COURT_eventPicture
 
 	is_triggered_only = yes
 
 	option = {  	# Humble before Poland
-		name = fee_POL.22.a
+		name = fee_POL.22.OPT1
 		change_tag = PRU
 
 		change_religion = protestant
@@ -639,18 +639,18 @@ country_event = {
 #From fee_POL.20
 country_event = {
 	id = fee_POL.23
-	title = fee_POL.23.t
-	desc = fee_POL.23.d
+	title = fee_POL.23.T
+	desc = fee_POL.23.D
 	picture = COURT_eventPicture
 
 	is_triggered_only = yes
 
 	option = {  	# Humble before Poland
-		name = fee_POL.23.a
+		name = fee_POL.23.OPT1
 		FROM = { inherit = LIV}
 		}
 		option = {  	# We are too strong
-		name = fee_POL.23.b
+		name = fee_POL.23.OPT2
 		FROM = { declare_war_with_cb = {
 	 who = LIV
 	 casus_belli = cb_annex

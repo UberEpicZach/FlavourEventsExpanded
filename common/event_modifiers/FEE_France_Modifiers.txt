@@ -109,6 +109,13 @@ fee_independence_from_france = {
 	prestige = 0.5
 }
 
-feee_scots_mercenaries = {
+fee_france_scots_mercenaries = {
 	mercenary_discipline = 0.025
+}
+
+#French Internal Tolls
+fee_france_bad_tolls_timer = {
+}
+fee_FRA_revamped_tolls = {
+	global_tax_modifier = 0.05
 }

@@ -23,12 +23,12 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Meme_Events.1.a
+		name = FEE_Meme_Events.1.OPT1
 		set_global_flag = FEE_Meme_Active
 	}
 
 	option = {
-		name = FEE_Meme_Events.1.b
+		name = FEE_Meme_Events.1.OPT2
 	}
 }
 

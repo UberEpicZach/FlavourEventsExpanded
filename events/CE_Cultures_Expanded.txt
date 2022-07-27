@@ -3,8 +3,8 @@ namespace = cultures_expanded
 
 # country_event = {
 	# id = cultures_expanded.1
-	# title = cultures_expanded.1.t
-	# desc = cultures_expanded.1.d
+	# title = cultures_expanded.1.T
+	# desc = cultures_expanded.1.D
 	# picture = CITY_VIEW_eventPicture
 
 	# fire_only_once = yes
@@ -23,7 +23,7 @@ namespace = cultures_expanded
 	# }
 
 	# option = {
-		# name = cultures_expanded.1.a
+		# name = cultures_expanded.1.OPT1
 		# 4128 = {
 			# change_culture = franconian
 			# add_province_modifier = {
@@ -36,8 +36,8 @@ namespace = cultures_expanded
 
 # country_event = {
 	# id = cultures_expanded.2
-	# title = cultures_expanded.2.t
-	# desc = cultures_expanded.2.d
+	# title = cultures_expanded.2.T
+	# desc = cultures_expanded.2.D
 	# picture = CITY_VIEW_eventPicture
 
 	# fire_only_once = yes
@@ -57,7 +57,7 @@ namespace = cultures_expanded
 	# }
 
 	# option = {
-		# name = cultures_expanded.2.a
+		# name = cultures_expanded.2.OPT1
 		# 158 = {
 			# change_culture = hungarian
 			# add_province_modifier = {
@@ -70,8 +70,8 @@ namespace = cultures_expanded
 
 # country_event = {
 	# id = cultures_expanded.4
-	# title = cultures_expanded.4.t
-	# desc = cultures_expanded.4.d
+	# title = cultures_expanded.4.T
+	# desc = cultures_expanded.4.D
 	# picture = CITY_VIEW_eventPicture
 
 	# trigger = {
@@ -97,7 +97,7 @@ namespace = cultures_expanded
 	# }
 
 	# option = {
-		# name = cultures_expanded.4.a
+		# name = cultures_expanded.4.OPT1
 		# every_owned_province = {
 			# limit = {
 				# OR = {
@@ -117,7 +117,7 @@ namespace = cultures_expanded
 	# }
 
 	# option = {
-		# name = cultures_expanded.4.b
+		# name = cultures_expanded.4.OPT2
 		# trigger = {
 			# tag = SER
 		# }
@@ -130,7 +130,7 @@ namespace = cultures_expanded
 	# }
 
 	# option = {
-		# name = cultures_expanded.4.c
+		# name = cultures_expanded.4.OPT3
 		# add_estate_loyalty = {
 			# estate = estate_burghers
 			# loyalty = 5
@@ -141,8 +141,8 @@ namespace = cultures_expanded
 
 # country_event = {
 	# id = cultures_expanded.5
-	# title = cultures_expanded.5.t
-	# desc = cultures_expanded.5.d
+	# title = cultures_expanded.5.T
+	# desc = cultures_expanded.5.D
 	# picture = CITY_VIEW_eventPicture
 
 	# fire_only_once = yes
@@ -168,7 +168,7 @@ namespace = cultures_expanded
 	# }
 
 	# option = {
-		# name = cultures_expanded.5.a
+		# name = cultures_expanded.5.OPT1
 		# add_country_modifier = {
 			# name = "CE_vlach_law"
 			# duration = -1
@@ -182,7 +182,7 @@ namespace = cultures_expanded
 	# }
 
 	# option = {
-		# name = cultures_expanded.5.b
+		# name = cultures_expanded.5.OPT2
 		# add_estate_loyalty = {
 			# estate = estate_burghers
 			# loyalty = 5
@@ -195,7 +195,7 @@ namespace = cultures_expanded
 		# }
 	# }
 	# option = {
-		# name = cultures_expanded.5.c
+		# name = cultures_expanded.5.OPT3
 		# random_owned_province = {
 			# add_base_tax = 1
 		# }
@@ -213,8 +213,8 @@ namespace = cultures_expanded
 
 # country_event = {
 	# id = cultures_expanded.8
-	# title = cultures_expanded.8.t
-	# desc = cultures_expanded.8.d
+	# title = cultures_expanded.8.T
+	# desc = cultures_expanded.8.D
 	# picture = ELECTION_REPUBLICAN_eventPicture
 
 	# fire_only_once = yes
@@ -235,7 +235,7 @@ namespace = cultures_expanded
 	# }
 
 	# option = {
-		# name = cultures_expanded.8.a
+		# name = cultures_expanded.8.OPT1
 		# add_casus_belli = {
 			# target = BOH
 			# type = cb_restore_personal_union
@@ -261,15 +261,15 @@ namespace = cultures_expanded
 # #Captain General of Silesia v1
 # country_event = {
 	# id = cultures_expanded.12
-	# title = cultures_expanded.12.t
-	# desc = cultures_expanded.12.d
+	# title = cultures_expanded.12.T
+	# desc = cultures_expanded.12.D
 	# picture = ELECTION_REPUBLICAN_eventPicture
 
 	# fire_only_once = yes
 	# is_triggered_only = yes
 
 	# option = {
-		# name = cultures_expanded.12.a
+		# name = cultures_expanded.12.OPT1
 		# if = {
 			# limit = {
 				# any_owned_province = {
@@ -331,7 +331,7 @@ namespace = cultures_expanded
 		# }
 	# }
 	# option = {
-		# name = cultures_expanded.12.b
+		# name = cultures_expanded.12.OPT2
 		# add_prestige = -15
 		# country_event = {
 			# id = cultures_expanded.13
@@ -343,8 +343,8 @@ namespace = cultures_expanded
 # #Captain General of Silesia v2
 # country_event = {
 	# id = cultures_expanded.13
-	# title = cultures_expanded.13.t
-	# desc = cultures_expanded.13.d
+	# title = cultures_expanded.13.T
+	# desc = cultures_expanded.13.D
 	# picture = ELECTION_REPUBLICAN_eventPicture
 
 	# fire_only_once = yes
@@ -352,7 +352,7 @@ namespace = cultures_expanded
 	# is_triggered_only = yes
 
 	# option = {
-		# name = cultures_expanded.13.a
+		# name = cultures_expanded.13.OPT1
 		# if = {
 			# limit = {
 				# any_owned_province = {
@@ -423,8 +423,8 @@ namespace = cultures_expanded
 # #The Austrian Offer
 # country_event = {
 	# id = cultures_expanded.14
-	# title = cultures_expanded.14.t
-	# desc = cultures_expanded.14.d
+	# title = cultures_expanded.14.T
+	# desc = cultures_expanded.14.D
 	# picture = ELECTION_REPUBLICAN_eventPicture
 
 	# fire_only_once = yes
@@ -438,7 +438,7 @@ namespace = cultures_expanded
 	# }
 
 	# option = {
-		# name = cultures_expanded.14.a
+		# name = cultures_expanded.14.OPT1
 		# silesia_area = {
 			# add_claim = HUN
 		# }
@@ -454,8 +454,8 @@ namespace = cultures_expanded
 # #The Austrian Betrayal
 # country_event = {
 	# id = cultures_expanded.15
-	# title = cultures_expanded.15.t
-	# desc = cultures_expanded.15.d
+	# title = cultures_expanded.15.T
+	# desc = cultures_expanded.15.D
 	# picture = ELECTION_REPUBLICAN_eventPicture
 
 	# fire_only_once = yes
@@ -480,7 +480,7 @@ namespace = cultures_expanded
 	# }
 
 	# option = {
-		# name = cultures_expanded.15.a
+		# name = cultures_expanded.15.OPT1
 		# add_casus_belli = {
 			# target = HAB
 			# type = cb_insult
@@ -493,8 +493,8 @@ namespace = cultures_expanded
 # #Hungarian Solution
 # country_event = {
 	# id = cultures_expanded.16
-	# title = cultures_expanded.16.t
-	# desc = cultures_expanded.16.d
+	# title = cultures_expanded.16.T
+	# desc = cultures_expanded.16.D
 	# picture = ELECTION_REPUBLICAN_eventPicture
 
 	# fire_only_once = yes
@@ -520,7 +520,7 @@ namespace = cultures_expanded
 	# }
 
 	# option = {
-		# name = cultures_expanded.16.a
+		# name = cultures_expanded.16.OPT1
 		# every_country = {
 			# limit = {
 				# is_elector = yes

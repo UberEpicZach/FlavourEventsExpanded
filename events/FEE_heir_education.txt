@@ -7,8 +7,8 @@ namespace = heir_education
 # Education for the Heir?
 #country_event = {
 #	id = heir_education.1
-#	title = heir_education.1.t
-#	desc = heir_education.1.d
+#	title = heir_education.1.T
+#	desc = heir_education.1.D
 #	picture = HEIR_EDUCATION_eventPicture
 #
 #	immediate = { set_heir_flag = heir_has_been_prompted }
@@ -44,9 +44,9 @@ namespace = heir_education
 #	}
 #
 #	option = {
-#		name = heir_education.1.a
+#		name = heir_education.1.OPT1
 #		set_heir_flag = in_education_excellent
-#		custom_tooltip = heir_education.1.a.tt
+#		custom_tooltip = heir_education.1.OPT1.tt
 #		add_adm_power = -50
 #		add_dip_power = -50
 #		add_mil_power = -50
@@ -54,9 +54,9 @@ namespace = heir_education
 #	}
 #
 #	option = {
-#		name = heir_education.1.b
+#		name = heir_education.1.OPT2
 #		set_heir_flag = in_education_good
-#		custom_tooltip = heir_education.1.b.tt
+#		custom_tooltip = heir_education.1.OPT2.tt
 #		add_adm_power = -50
 #		add_dip_power = -50
 #		add_mil_power = -50
@@ -64,9 +64,9 @@ namespace = heir_education
 #	}
 #
 #	option = {
-#		name = heir_education.1.c
+#		name = heir_education.1.OPT3
 #		set_heir_flag = in_education_average
-#		custom_tooltip = heir_education.1.c.tt
+#		custom_tooltip = heir_education.1.OPT3.tt
 #		add_adm_power = -25
 #		add_dip_power = -25
 #		add_mil_power = -25
@@ -98,8 +98,8 @@ namespace = heir_education
 # The Artist's Canvas
 country_event = {
 	id = heir_education.2
-	title = heir_education.2.t
-	desc = heir_education.2.d
+	title = heir_education.2.T
+	desc = heir_education.2.D
 	picture = HEIR_EDUCATION_eventPicture
 
 	trigger = {
@@ -145,14 +145,14 @@ country_event = {
 	}
 
 	option = {
-		name = heir_education.2.a
+		name = heir_education.2.OPT1
 		set_heir_flag = educated_by_artist
 		custom_tooltip = heir_is_being_educated_by_artist
 		add_adm_power = -25
 	}
 
 	option = {
-		name = heir_education.2.b
+		name = heir_education.2.OPT2
 		add_prestige = -5
 	}
 }
@@ -160,8 +160,8 @@ country_event = {
 # The Scientist's Experiment
 country_event = {
 	id = heir_education.3
-	title = heir_education.3.t
-	desc = heir_education.3.d
+	title = heir_education.3.T
+	desc = heir_education.3.D
 	picture = HEIR_EDUCATION_eventPicture
 
 	trigger = {
@@ -207,14 +207,14 @@ country_event = {
 	}
 
 	option = {
-		name = heir_education.3.a
+		name = heir_education.3.OPT1
 		set_heir_flag = educated_by_natural_scientist
 		custom_tooltip = heir_is_being_educated_by_natural_scientist
 		add_adm_power = -25
 	}
 
 	option = {
-		name = heir_education.3.b
+		name = heir_education.3.OPT2
 		add_prestige = -5
 	}
 }
@@ -222,8 +222,8 @@ country_event = {
 # The Inquisitor's Apprentice
 country_event = {
 	id = heir_education.4
-	title = heir_education.4.t
-	desc = heir_education.4.d
+	title = heir_education.4.T
+	desc = heir_education.4.D
 	picture = HEIR_EDUCATION_eventPicture
 
 	trigger = {
@@ -269,14 +269,14 @@ country_event = {
 	}
 
 	option = {
-		name = heir_education.4.a
+		name = heir_education.4.OPT1
 		set_heir_flag = educated_by_inquisitor
 		custom_tooltip = heir_is_being_educated_by_inquisitor
 		add_adm_power = -25
 	}
 
 	option = {
-		name = heir_education.4.b
+		name = heir_education.4.OPT2
 		add_prestige = -5
 	}
 }
@@ -284,8 +284,8 @@ country_event = {
 # The Trader's Bargain
 country_event = {
 	id = heir_education.5
-	title = heir_education.5.t
-	desc = heir_education.5.d
+	title = heir_education.5.T
+	desc = heir_education.5.D
 	picture = HEIR_EDUCATION_eventPicture
 
 	trigger = {
@@ -335,14 +335,14 @@ country_event = {
 	}
 
 	option = {
-		name = heir_education.5.a
+		name = heir_education.5.OPT1
 		set_heir_flag = educated_by_trader
 		custom_tooltip = heir_is_being_educated_by_trader
 		add_dip_power = -25
 	}
 
 	option = {
-		name = heir_education.5.b
+		name = heir_education.5.OPT2
 		add_prestige = -5
 	}
 }
@@ -350,8 +350,8 @@ country_event = {
 # The Spymaster's Secrets
 country_event = {
 	id = heir_education.6
-	title = heir_education.6.t
-	desc = heir_education.6.d
+	title = heir_education.6.T
+	desc = heir_education.6.D
 	picture = HEIR_EDUCATION_eventPicture
 
 	trigger = {
@@ -401,14 +401,14 @@ country_event = {
 	}
 
 	option = {
-		name = heir_education.6.a
+		name = heir_education.6.OPT1
 		set_heir_flag = educated_by_spymaster
 		custom_tooltip = heir_is_being_educated_by_spymaster
 		add_dip_power = -25
 	}
 
 	option = {
-		name = heir_education.6.b
+		name = heir_education.6.OPT2
 		add_prestige = -5
 	}
 }
@@ -416,8 +416,8 @@ country_event = {
 # The Governor's Expeditions
 country_event = {
 	id = heir_education.7
-	title = heir_education.7.t
-	desc = heir_education.7.d
+	title = heir_education.7.T
+	desc = heir_education.7.D
 	picture = HEIR_EDUCATION_eventPicture
 
 	trigger = {
@@ -467,14 +467,14 @@ country_event = {
 	}
 
 	option = {
-		name = heir_education.7.a
+		name = heir_education.7.OPT1
 		set_heir_flag = educated_by_colonial_governor
 		custom_tooltip = heir_is_being_educated_by_colonial_governor
 		add_dip_power = -25
 	}
 
 	option = {
-		name = heir_education.7.b
+		name = heir_education.7.OPT2
 		add_prestige = -5
 	}
 }
@@ -482,8 +482,8 @@ country_event = {
 # The Reformer's Tactics
 country_event = {
 	id = heir_education.8
-	title = heir_education.8.t
-	desc = heir_education.8.d
+	title = heir_education.8.T
+	desc = heir_education.8.D
 	picture = HEIR_EDUCATION_eventPicture
 
 	trigger = {
@@ -533,14 +533,14 @@ country_event = {
 	}
 
 	option = {
-		name = heir_education.8.a
+		name = heir_education.8.OPT1
 		set_heir_flag = educated_by_army_reformer
 		custom_tooltip = heir_is_being_educated_by_army_reformer
 		add_mil_power = -25
 	}
 
 	option = {
-		name = heir_education.8.b
+		name = heir_education.8.OPT2
 		add_prestige = -5
 	}
 }
@@ -548,8 +548,8 @@ country_event = {
 # The Fortifier's Defence
 country_event = {
 	id = heir_education.9
-	title = heir_education.9.t
-	desc = heir_education.9.d
+	title = heir_education.9.T
+	desc = heir_education.9.D
 	picture = HEIR_EDUCATION_eventPicture
 
 	trigger = {
@@ -599,14 +599,14 @@ country_event = {
 	}
 
 	option = {
-		name = heir_education.9.a
+		name = heir_education.9.OPT1
 		set_heir_flag = educated_by_fortification_expert
 		custom_tooltip = heir_is_being_educated_by_fortification_expert
 		add_mil_power = -25
 	}
 
 	option = {
-		name = heir_education.9.b
+		name = heir_education.9.OPT2
 		add_prestige = -5
 	}
 }
@@ -614,8 +614,8 @@ country_event = {
 # The Grand Captain's Men
 country_event = {
 	id = heir_education.10
-	title = heir_education.10.t
-	desc = heir_education.10.d
+	title = heir_education.10.T
+	desc = heir_education.10.D
 	picture = HEIR_EDUCATION_eventPicture
 
 	trigger = {
@@ -665,14 +665,14 @@ country_event = {
 	}
 
 	option = {
-		name = heir_education.10.a
+		name = heir_education.10.OPT1
 		set_heir_flag = educated_by_grand_captain
 		custom_tooltip = heir_is_being_educated_by_grand_captain
 		add_mil_power = -25
 	}
 
 	option = {
-		name = heir_education.10.b
+		name = heir_education.10.OPT2
 		add_prestige = -5
 	}
 }
@@ -680,8 +680,8 @@ country_event = {
 # Heir's Education has Finished ( Excellent Education )
 country_event = {
 	id = heir_education.11
-	title = heir_education.11.t
-	desc = heir_education.11.d
+	title = heir_education.11.T
+	desc = heir_education.11.D
 	picture = HEIR_EDUCATION_eventPicture
 
 	trigger = {
@@ -703,7 +703,7 @@ country_event = {
 	}
 
 	option = {
-		name = heir_education.11.a
+		name = heir_education.11.OPT1
  		hidden_effect = {
 			random_list = {
 			    20 = {
@@ -780,8 +780,8 @@ country_event = {
 # Heir's Education has Finished ( Good Education )
 country_event = {
 	id = heir_education.12
-	title = heir_education.12.t
-	desc = heir_education.12.d
+	title = heir_education.12.T
+	desc = heir_education.12.D
 	picture = HEIR_EDUCATION_eventPicture
 
 	trigger = {
@@ -803,7 +803,7 @@ country_event = {
 	}
 
 	option = {
-		name = heir_education.12.a
+		name = heir_education.12.OPT1
  		hidden_effect = {
 			random_list = {
 			    10 = {
@@ -880,8 +880,8 @@ country_event = {
 # Heir's Education has Finished ( Average Education )
 country_event = {
 	id = heir_education.13
-	title = heir_education.13.t
-	desc = heir_education.13.d
+	title = heir_education.13.T
+	desc = heir_education.13.D
 	picture = HEIR_EDUCATION_eventPicture
 
 	trigger = {
@@ -902,7 +902,7 @@ country_event = {
 		clr_heir_flag = in_education_but_not_learning }
 	}
 	option = {
-		name = heir_education.13.a
+		name = heir_education.13.OPT1
  		hidden_effect = {
 			random_list = {
 			    15 = {
@@ -979,8 +979,8 @@ country_event = {
 # Heir's Education has Finished ( No Education )
 country_event = {
 	id = heir_education.14
-	title = heir_education.14.t
-	desc = heir_education.14.d
+	title = heir_education.14.T
+	desc = heir_education.14.D
 	picture = HEIR_EDUCATION_eventPicture
 
 	trigger = {
@@ -1002,7 +1002,7 @@ country_event = {
 	}
 
 	option = {
-		name = heir_education.14.a
+		name = heir_education.14.OPT1
  		hidden_effect = {
 			random_list = {
 			    5 = {
@@ -1061,8 +1061,8 @@ country_event = {
 # Respected Scholar
 country_event = {
 	id = heir_education.101
-	title = heir_education.101.t
-	desc = heir_education.101.d
+	title = heir_education.101.T
+	desc = heir_education.101.D
 	picture = HEIR_EDUCATION_eventPicture
 
 	is_triggered_only = yes
@@ -1072,7 +1072,7 @@ country_event = {
 	}
 
 	option = {
-		name = heir_education.101.a
+		name = heir_education.101.OPT1
 		if = {
 			limit = {
 				heir_adm = 6
@@ -1107,8 +1107,8 @@ country_event = {
 # Shadow Mastermind
 country_event = {
 	id = heir_education.102
-	title = heir_education.102.t
-	desc = heir_education.102.d
+	title = heir_education.102.T
+	desc = heir_education.102.D
 	picture = HEIR_EDUCATION_eventPicture
 
 	is_triggered_only = yes
@@ -1118,7 +1118,7 @@ country_event = {
 	}
 
 	option = {
-		name = heir_education.102.a
+		name = heir_education.102.OPT1
 		if = {
 			limit = {
 				heir_dip = 6
@@ -1144,8 +1144,8 @@ country_event = {
 # Military Mathematician
 country_event = {
 	id = heir_education.103
-	title = heir_education.103.t
-	desc = heir_education.103.d
+	title = heir_education.103.T
+	desc = heir_education.103.D
 	picture = HEIR_EDUCATION_eventPicture
 
 	is_triggered_only = yes
@@ -1155,7 +1155,7 @@ country_event = {
 	}
 
 	option = {
-		name = heir_education.103.a
+		name = heir_education.103.OPT1
 		if = {
 			limit = {
 				heir_adm = 5
@@ -1181,8 +1181,8 @@ country_event = {
 # Gullible Genius
 country_event = {
 	id = heir_education.104
-	title = heir_education.104.t
-	desc = heir_education.104.d
+	title = heir_education.104.T
+	desc = heir_education.104.D
 	picture = HEIR_EDUCATION_eventPicture
 
 	is_triggered_only = yes
@@ -1192,7 +1192,7 @@ country_event = {
 	}
 
 	option = {
-		name = heir_education.104.a
+		name = heir_education.104.OPT1
 		if = {
 			limit = {
 				heir_adm = 4
@@ -1210,8 +1210,8 @@ country_event = {
 # Master of the Sword
 country_event = {
 	id = heir_education.105
-	title = heir_education.105.t
-	desc = heir_education.105.d
+	title = heir_education.105.T
+	desc = heir_education.105.D
 	picture = HEIR_EDUCATION_eventPicture
 
 	is_triggered_only = yes
@@ -1221,7 +1221,7 @@ country_event = {
 	}
 
 	option = {
-		name = heir_education.105.a
+		name = heir_education.105.OPT1
 		if = {
 			limit = {
 				heir_mil = 4
@@ -1239,8 +1239,8 @@ country_event = {
 # Pragmatic Jury
 country_event = {
 	id = heir_education.106
-	title = heir_education.106.t
-	desc = heir_education.106.d
+	title = heir_education.106.T
+	desc = heir_education.106.D
 	picture = HEIR_EDUCATION_eventPicture
 
 	is_triggered_only = yes
@@ -1250,7 +1250,7 @@ country_event = {
 	}
 
 	option = {
-		name = heir_education.106.a
+		name = heir_education.106.OPT1
 		if = {
 			limit = {
 				heir_dip = 5
@@ -1276,8 +1276,8 @@ country_event = {
 # Dim Pupil
 country_event = {
 	id = heir_education.107
-	title = heir_education.107.t
-	desc = heir_education.107.d
+	title = heir_education.107.T
+	desc = heir_education.107.D
 	picture = HEIR_EDUCATION_eventPicture
 
 	is_triggered_only = yes
@@ -1287,7 +1287,7 @@ country_event = {
 	}
 
 	option = {
-		name = heir_education.107.a
+		name = heir_education.107.OPT1
 		change_heir_dip = -1
 		change_heir_adm = -1
 		change_heir_mil = -1
@@ -1298,8 +1298,8 @@ country_event = {
 # Merry Drunkard
 country_event = {
 	id = heir_education.108
-	title = heir_education.108.t
-	desc = heir_education.108.d
+	title = heir_education.108.T
+	desc = heir_education.108.D
 	picture = HEIR_EDUCATION_eventPicture
 
 	is_triggered_only = yes
@@ -1309,7 +1309,7 @@ country_event = {
 	}
 
 	option = {
-		name = heir_education.108.a
+		name = heir_education.108.OPT1
 		if = {
 			limit = {
 				heir_dip = 4
@@ -1328,8 +1328,8 @@ country_event = {
 # Not-so-bright Warrior
 country_event = {
 	id = heir_education.109
-	title = heir_education.109.t
-	desc = heir_education.109.d
+	title = heir_education.109.T
+	desc = heir_education.109.D
 	picture = HEIR_EDUCATION_eventPicture
 
 	is_triggered_only = yes
@@ -1339,7 +1339,7 @@ country_event = {
 	}
 
 	option = {
-		name = heir_education.109.a
+		name = heir_education.109.OPT1
 		change_heir_dip = -3
 		change_heir_adm = -3
 		if = {
@@ -1358,8 +1358,8 @@ country_event = {
 # Pious Zealot
 country_event = {
 	id = heir_education.110
-	title = heir_education.110.t
-	desc = heir_education.110.d
+	title = heir_education.110.T
+	desc = heir_education.110.D
 	picture = HEIR_EDUCATION_eventPicture
 
 	is_triggered_only = yes
@@ -1369,7 +1369,7 @@ country_event = {
 	}
 
 	option = {
-		name = heir_education.110.a
+		name = heir_education.110.OPT1
 		if = {
 			limit = {
 				heir_adm = 6
@@ -1403,8 +1403,8 @@ country_event = {
 # Curious Skeptic
 country_event = {
 	id = heir_education.111
-	title = heir_education.111.t
-	desc = heir_education.111.d
+	title = heir_education.111.T
+	desc = heir_education.111.D
 	picture = HEIR_EDUCATION_eventPicture
 
 	is_triggered_only = yes
@@ -1414,7 +1414,7 @@ country_event = {
 	}
 
 	option = {
-		name = heir_education.111.a
+		name = heir_education.111.OPT1
 		if = {
 			limit = {
 				heir_adm = 6
@@ -1448,8 +1448,8 @@ country_event = {
 # Unfortunate Gambler
 country_event = {
 	id = heir_education.112
-	title = heir_education.112.t
-	desc = heir_education.112.d
+	title = heir_education.112.T
+	desc = heir_education.112.D
 	picture = HEIR_EDUCATION_eventPicture
 
 	is_triggered_only = yes
@@ -1459,7 +1459,7 @@ country_event = {
 	}
 
 	option = {
-		name = heir_education.112.a
+		name = heir_education.112.OPT1
 		change_heir_dip = -1
 		change_heir_adm = -1
 		add_years_of_income = -0.5
@@ -1470,8 +1470,8 @@ country_event = {
 # Believer of the Occult
 country_event = {
 	id = heir_education.113
-	title = heir_education.113.t
-	desc = heir_education.113.d
+	title = heir_education.113.T
+	desc = heir_education.113.D
 	picture = HEIR_EDUCATION_eventPicture
 
 	is_triggered_only = yes
@@ -1481,7 +1481,7 @@ country_event = {
 	}
 
 	option = {
-		name = heir_education.113.a
+		name = heir_education.113.OPT1
 		change_heir_mil = -1
 		change_heir_adm = -1
 		add_prestige = -5
@@ -1498,8 +1498,8 @@ country_event = {
 # Mercantile Maestro
 country_event = {
 	id = heir_education.114
-	title = heir_education.114.t
-	desc = heir_education.114.d
+	title = heir_education.114.T
+	desc = heir_education.114.D
 	picture = HEIR_EDUCATION_eventPicture
 
 	is_triggered_only = yes
@@ -1509,7 +1509,7 @@ country_event = {
 	}
 
 	option = {
-		name = heir_education.114.a
+		name = heir_education.114.OPT1
 		if = {
 			limit = {
 				heir_dip = 6
@@ -1532,8 +1532,8 @@ country_event = {
 # Jolly Performer
 country_event = {
 	id = heir_education.115
-	title = heir_education.115.t
-	desc = heir_education.115.d
+	title = heir_education.115.T
+	desc = heir_education.115.D
 	picture = HEIR_EDUCATION_eventPicture
 
 	is_triggered_only = yes
@@ -1543,7 +1543,7 @@ country_event = {
 	}
 
 	option = {
-		name = heir_education.115.a
+		name = heir_education.115.OPT1
 		if = {
 			limit = {
 				heir_adm = 6
@@ -1570,8 +1570,8 @@ country_event = {
 # Extra Lessons?
 country_event = {
 	id = heir_education.200
-	title = heir_education.200.t
-	desc = heir_education.200.d
+	title = heir_education.200.T
+	desc = heir_education.200.D
 	picture = HEIR_EDUCATION_eventPicture
 
 	immediate = { set_heir_flag = Extra_Lessons_Fired }
@@ -1599,7 +1599,7 @@ country_event = {
 	}
 
 	option = {
-		name = heir_education.200.a  #Homework!
+		name = heir_education.200.OPT1  #Homework!
 		if = {
 			limit = {
 				heir_adm = 6
@@ -1614,7 +1614,7 @@ country_event = {
 	}
 
 	option = {
-		name = heir_education.200.b  #Etiquette!
+		name = heir_education.200.OPT2  #Etiquette!
 		if = {
 			limit = {
 				heir_dip = 6
@@ -1629,7 +1629,7 @@ country_event = {
 	}
 
 	option = {
-		name = heir_education.200.c  #Fencing!
+		name = heir_education.200.OPT3  #Fencing!
 		if = {
 			limit = {
 				heir_mil = 6

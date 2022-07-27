@@ -78,16 +78,52 @@
  FEE_Naples_Events.18.OPT1: "We are triumphant"
  FEE_Naples_Events.18.OPT2: "It's time to let the old ways die"
 
+ FEE_Naples_Events.19.T: "Pedro Alvarez de Toledo"
+ FEE_Naples_Events.19.D: "Pedro Alvarez de Toledo was the first viceroy of Naples to effectively govern the kingdom on behalf of the Spanish crown. While issuing grand construction projects and modernizing the country, part of the reason for his success was his firm rule and ruthlessness. Where previous viceroys had failed to exert control over the kingdom, \"Don Pedro\" closed down humanist institutions and instituted harsh penalties for petty crimes. He centralised national institutions, and moved every court to the Castel Capuano. By breaking up traditional land holdings, barons were forced to move to the city where they would be within reach of de Toledo's government. \nHe failed in introducing the Spanish Inquisition in Naples, however, as revolts forced the Spanish king to retract the order. De Toledo passed away shortly after, in 1552, while on state business in Siena, ensuring that his legacy of state building would forever outshine the harshness of his rule."
+ FEE_Naples_Events.19.OPT1: "We need to centralize our state."
+ FEE_Naples_Events.19.OPT2: "We must focus on growing our military."
+
+ FEE_Naples_Events.20.T: "The Construction Projects of Pedro Alvarez de Toledo"
+ FEE_Naples_Events.20.D: "In addition to reforming the society of the Kingdom of Naples, Viceroy Pedro Alvarez de Toledo commissioned grand construction projects in the city of Naples itself. The old walls were expanded and new ones were built along the seafront. Fortresses, shipyards and barracks were modernised and expanded. He also commissioned a new palace for the Viceroy, which was then surrounded by buildings in square-grid streets. The Spanish Quarter, as it was called, was the first of its kind in Europe, and is still one of the most distinct areas of Naples. The express goal was to make Naples invulnerable, but it also had the side effect of making it the second largest city in Europe at the time. By his death in 1552, the legacy of the harsh ruler as a city-builder was more than secure, and Naples would continue to be a center of southern European power for centuries."
+ FEE_Naples_Events.20.OPT1: "Build additional storehouses."
+ FEE_Naples_Events.20.OPT2: "Build additional barracks."
+
+ FEE_Naples_Events.21.T: "The Flood of Bones"
+ FEE_Naples_Events.21.D: "The cave that would become the Fontanelle cemetery had for hundreds of years been used as a charnel house for old remains, which had been moved from graveyards in Naples to make space for citizens insisting on being interred near their churches. In the late 17th century, however, a series of floods caused remains to be washed from the cave into the streets of Naples. The grisly sight of skulls grinning up at them and bones resting in their gutters made the citizens realise that something had to be done to accommodate the ever-growing population."
+ FEE_Naples_Events.21.OPT1: "Establish the Fontanelle cemetery and reform the graveyards!"
+
+ FEE_Naples_Events.22.T: "Ospedale di San Gennaro dei Poveri"
+ FEE_Naples_Events.22.D: "The San Gennaro dei Poveri was the very first hospice for the poor in Naples, a city that in 1667, when the hospice was built, struggled with overpopulation and severe poverty. The ancient building had been renovated and repurposed multiple times, from a monastery in the 8th century to a plague hospital in the 17th, before it found a new purpose as a poor house. While it could never house all of the estimated 1, destitute people in the city at the time, it was the first in a long tradition of hospices for the poor in Naples."
+ FEE_Naples_Events.22.OPT1: "We need this, for the good of the poor."
+ FEE_Naples_Events.22.OPT2: "Our resources are better spent elsewhere."
+
+ FEE_Naples_Events.23.T: "Ospedale L'Albergo Reale dei Poveri"
+ FEE_Naples_Events.23.D: "The Albergo Reale dei Poveri was an enormous hospice for the poor in Naples from 1751. The institution was intended to not just provide care to the ill, but provide an entire self-sufficient community of the poor where they could live and work. At times its five stories would house as many as five thousand people, relieving some of the pressure poverty placed on the city of Naples. The building was designed by the famous architect Ferdinando Fuga, which was how it got its nickname \"Palazzo Fuga\"."
+ FEE_Naples_Events.23.OPT1: "Let us show our people we care!"
+ FEE_Naples_Events.23.OPT2: "Who can afford to spend money on the poor?"
+
+ FEE_Naples_Events.24.T: "Francesco Solimena"
+ FEE_Naples_Events.24.D: "Francesco Solimena, who lived from 1657 to 1747, was a Neapolitan painter who came to define the Baroque style in southern Italy. He trained and worked with his painter father, Angelo Solimena, and is famous for decorating churches with him, including the cathedral of Nocera. On his own, Francesco would become renown for painting frescoes in his signature dark, detailed and dramatically lit style. As Francesco's reputation grew, his atelier became a gathering point of painter students from across Naples, and he provided tutelage for many of Italy's most famous baroque painters."
+ FEE_Naples_Events.24.OPT1: "He has shown us what baroque art truly can be!"
+
  #Estate Modifeirs
  nap_nobles_restrained: "Restrained the Barones"
  nap_nobles_happy: "Nobles are Happy"
 
  #Event Modifiers
- nap_magnanimo: "Il Magnanimo"
- nap_transumanza: "Transumanza"
+ fee_nap_magnanimo: "Il Magnanimo"
+ fee_nap_transumanza: "Transumanza"
  nap_transumanza_ge: "Transumanza"
- nap_porta_capuana: "Porta Capuana"
- nap_twenty_years_prosperity: "Twenty Years of Prosperity"
+ fee_nap_porta_capuana: "Porta Capuana"
+ fee_nap_twenty_years_prosperity: "Twenty Years of Prosperity"
+ fee_pedro_alvarez: "Pedro Alvarez de Toledo"
+ desc_fee_pedro_alvarez: "While a harsh ruler, de Toledo did much to centralise the Neapolitan state."
+ fee_nap_gennaro_poveri: "San Gennaro dei Poveri"
+ desc_fee_nap_gennaro_poveri: "We have invested in Naples' long tradition of poor houses."
+ fee_nap_albergo_reale: "Ospedale L'Albergo Reale dei Poveri"
+ desc_fee_nap_albergo_reale: "Few cities, or indeed countries, can say they have done as much to allay the plight of the poor as Naples."
+ fee_nap_de_toledo_naples: "De Toledo's Building Projects"
+ desc_fee_nap_de_toledo_naples: "The Viceroy of Naples has been expanding the city immensely."
 
  #Opinion Modifiers
  fee_naples_recoinciliation: "Recoincilation"

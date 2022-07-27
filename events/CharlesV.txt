@@ -85,7 +85,7 @@ country_event = {
 	}
 	
 	option = {
-		name = charlesv.1.a #charlesv.1.a:0 "Interesting..."
+		name = charlesv.1.OPT1 #charlesv.1.OPT1:0 "Interesting..."
 		define_heir = {
 			dynasty = "von Habsburg"
 			name = "Charles V"
@@ -125,7 +125,7 @@ country_event = {
 	}
 
 	option = {
-		name = charlesv.2.a	#charlesv.2.a:0 "Long may he reign!"
+		name = charlesv.2.OPT1	#charlesv.2.OPT1:0 "Long may he reign!"
 		#Add 20 AE
 		hidden_effect = {
 			set_country_flag = charlesv_ruler 
@@ -148,7 +148,7 @@ country_event = {
 			age = 0
 		}
 		
-		#tooltip = chalresv.2.a
+		#tooltip = chalresv.2.OPT1
 		#Make Spain the Emperor:
 		ROOT = {
 			capital_scope = {	#Puts Spain in the Empire
@@ -215,7 +215,7 @@ country_event = {
 #	
 #	}
 #	option = {
-#		name = charlesv.5.a
+#		name = charlesv.5.OPT1
 #		every_country = {	
 #			limit = {
 #				is_elector = yes
@@ -238,7 +238,7 @@ country_event = {
 #	
 #	}
 #	option = {
-#		name = charlesv.6.a
+#		name = charlesv.6.OPT1
 #		ROOT = {
 #			capital_scope = {	#Puts Spain in the Empire
 #				set_in_empire = yes
@@ -259,7 +259,7 @@ country_event = {
 #	trigger = {
 #	
 #	}
-#		name = charlesv.7.a
+#		name = charlesv.7.OPT1
 #		every_country = {
 #			limit = {
 #				is_emperor = yes
@@ -281,7 +281,7 @@ country_event = {
 #	
 #	}
 #	option = {
-#		name = charlesv.8.a
+#		name = charlesv.8.OPT1
 #		every_country = {
 #			limit = {
 #				has_country_flag = was_elector
@@ -303,7 +303,7 @@ country_event = {
 #	
 #	}
 #	option = {
-#		name = charlesv.9.a
+#		name = charlesv.9.OPT1
 #		elector = no
 #	}
 #}
@@ -321,7 +321,7 @@ country_event = {
 	}
 	
 	option = {
-		name = charlesv.1.a #charlesv.1.a:0 "Interesting..."
+		name = charlesv.1.OPT1 #charlesv.1.OPT1:0 "Interesting..."
 		
 		ROOT = {
 			capital_scope = {	#Puts Spain in the Empire

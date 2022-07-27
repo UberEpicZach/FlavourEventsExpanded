@@ -22,7 +22,7 @@ country_event = {
 	}	
 	
 	option = {
-		name = "events_pgs.1.a" #Sure why not.
+		name = "events_pgs.1.OPT1" #Sure why not.
 		trigger = {
 			tag = PGS
 			is_subject = no
@@ -52,7 +52,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = "events_pgs.1.b" #Crush him.
+		name = "events_pgs.1.OPT2" #Crush him.
 		trigger = {
 			OR = {
 				exists = PGS
@@ -69,7 +69,7 @@ country_event = {
 		}	
 	}
 	option = {
-		name = "events_pgs.1.c" #Refuse him the offer.
+		name = "events_pgs.1.OPT3" #Refuse him the offer.
 		trigger = {
 			NOT = { exists = PGS }
 			NOT = { capital = 2698 }
@@ -130,7 +130,7 @@ country_event = {
 		}	
 	}
 	option = {
-		name = "events_pgs.1.d" #Give the land to him.
+		name = "events_pgs.1.D" #Give the land to him.
 		trigger = {
 			NOT = { exists = PGS }
 			NOT = { capital = 2698 }

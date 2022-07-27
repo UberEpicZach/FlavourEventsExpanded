@@ -5,8 +5,8 @@ namespace = fee_renaissance
 # Start renaissance in countries that should have it
 country_event = {
 	id = fee_renaissance.1
-	title = fee_renaissance.1.t
-	desc = fee_renaissance.1.d
+	title = fee_renaissance.1.T
+	desc = fee_renaissance.1.D
 	picture = IMPORTANT_STATUE_eventPicture
 
 	trigger = {
@@ -40,7 +40,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_renaissance.1.a
+		name = fee_renaissance.1.OPT1
 		add_country_modifier = {
 			name = fee_renaissance
 			duration = -1
@@ -54,8 +54,8 @@ country_event = {
 #Renaissance spreads
 country_event = {
 	id = fee_renaissance.2
-	title = fee_renaissance.2.t
-	desc = fee_renaissance.2.d
+	title = fee_renaissance.2.T
+	desc = fee_renaissance.2.D
 	picture = IMPORTANT_STATUE_eventPicture
 
 	trigger = {
@@ -70,7 +70,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_renaissance.2.a
+		name = fee_renaissance.2.OPT1
 		add_country_modifier = {
 			name = fee_renaissance
 			duration = -1
@@ -82,8 +82,8 @@ country_event = {
 # End of renaissance influences
 country_event = {
 	id = fee_renaissance.3
-	title = fee_renaissance.3.t
-	desc = fee_renaissance.3.d
+	title = fee_renaissance.3.T
+	desc = fee_renaissance.3.D
 	picture = BIG_BOOK_eventPicture
 
 	trigger = {
@@ -118,7 +118,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_renaissance.3.a
+		name = fee_renaissance.3.OPT1
 		remove_country_modifier = fee_renaissance
 	}
 }
@@ -126,8 +126,8 @@ country_event = {
 # Great Building Constructed in the Renaissance Style
 province_event = {
 	id = fee_renaissance.4
-	title = fee_renaissance.4.t
-	desc = fee_renaissance.4.d
+	title = fee_renaissance.4.T
+	desc = fee_renaissance.4.D
 	picture = GREAT_BUILDING_eventPicture
 
 	trigger = {
@@ -145,7 +145,7 @@ province_event = {
 	}
 
 	option = {
-		name = fee_renaissance.4.a
+		name = fee_renaissance.4.OPT1
 		add_base_tax = 1
 		ROOT = { add_province_modifier = {
 			name = fee_renaissance_architecture
@@ -164,7 +164,7 @@ province_event = {
 		}
 	}
 	option = {
-		name = fee_renaissance.4.b
+		name = fee_renaissance.4.OPT2
 		add_base_production = 1
 		ROOT = { 
 			add_province_modifier = {
@@ -184,7 +184,7 @@ province_event = {
 		}
 	}
 	option = {
-		name = fee_renaissance.4.c
+		name = fee_renaissance.4.OPT3
 		add_base_manpower = 1
 		ROOT = {
 			add_province_modifier = {
@@ -208,8 +208,8 @@ province_event = {
 # Great renaissance library
 country_event = {
 	id = fee_renaissance.5
-	title = fee_renaissance.5.t
-	desc = fee_renaissance.5.d
+	title = fee_renaissance.5.T
+	desc = fee_renaissance.5.D
 	picture = GREAT_BUILDING_eventPicture
 
 	trigger = {
@@ -222,7 +222,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_renaissance.5.a
+		name = fee_renaissance.5.OPT1
 		add_adm_power = 25
 		add_prestige = 5
 	}
@@ -231,8 +231,8 @@ country_event = {
 # Renaissance cartographer
 country_event = {
 	id = fee_renaissance.6
-	title = fee_renaissance.6.t
-	desc = fee_renaissance.6.d
+	title = fee_renaissance.6.T
+	desc = fee_renaissance.6.D
 	picture = ADVISOR_eventPicture
 
 	trigger = {
@@ -249,7 +249,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_renaissance.6.a
+		name = fee_renaissance.6.OPT1
 		add_dip_power = 50
 	}
 }
@@ -257,8 +257,8 @@ country_event = {
 # Writing of a military manual in our language
 country_event = {
 	id = fee_renaissance.7
-	title = fee_renaissance.7.t
-	desc = fee_renaissance.7.d
+	title = fee_renaissance.7.T
+	desc = fee_renaissance.7.D
 	picture = BIG_BOOK_eventPicture
 
 	trigger = {
@@ -274,7 +274,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_renaissance.7.a
+		name = fee_renaissance.7.OPT1
 		add_mil_power = 25
 		add_army_tradition = 5.0
 	}
@@ -283,8 +283,8 @@ country_event = {
 # Renaissance writer
 country_event = {
 	id = fee_renaissance.8
-	title = fee_renaissance.8.t
-	desc = fee_renaissance.8.d
+	title = fee_renaissance.8.T
+	desc = fee_renaissance.8.D
 	picture = ECONOMY_eventPicture
 
 	trigger = {
@@ -296,7 +296,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_renaissance.8.a
+		name = fee_renaissance.8.OPT1
 		add_country_modifier = {
 			name = fee_renaissance_writer	#Stab cost -10 & +1 prestige?
 			duration = 3650
@@ -307,8 +307,8 @@ country_event = {
 # Renaissance polymath
 country_event = {
 	id = fee_renaissance.9
-	title = fee_renaissance.9.t
-	desc = fee_renaissance.9.d
+	title = fee_renaissance.9.T
+	desc = fee_renaissance.9.D
 	picture = ADVISOR_eventPicture
 
 	trigger = {
@@ -320,7 +320,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_renaissance.9.a
+		name = fee_renaissance.9.OPT1
 		add_treasury = -30
 		add_country_modifier = {
 			name = fee_polymath_adm
@@ -328,7 +328,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = fee_renaissance.9.b
+		name = fee_renaissance.9.OPT2
 		add_treasury = -30
 		add_country_modifier = {
 			name = fee_polymath_dip
@@ -337,7 +337,7 @@ country_event = {
 
 	}
 	option = {
-		name = fee_renaissance.9.c
+		name = fee_renaissance.9.OPT3
 		add_treasury = -30
 		add_country_modifier = {
 			name = fee_polymath_mil
@@ -361,8 +361,8 @@ country_event = {
 # Renaissance writer produces theological treatise
 country_event = {
 	id = fee_renaissance.10
-	title = fee_renaissance.10.t
-	desc = fee_renaissance.10.d
+	title = fee_renaissance.10.T
+	desc = fee_renaissance.10.D
 	picture = RELIGION_eventPicture
 
 	trigger = {
@@ -383,11 +383,11 @@ country_event = {
 	}
 
 	option = {
-		name = fee_renaissance.10.a
+		name = fee_renaissance.10.OPT1
 		add_papal_influence = 15
 	}
 	option = {
-		name = fee_renaissance.10.b
+		name = fee_renaissance.10.OPT2
 		add_papal_influence = -5
 		add_prestige = 5
 	}
@@ -396,8 +396,8 @@ country_event = {
 # Claim discovered to be false!
 country_event = {
 	id = fee_renaissance.11
-	title = fee_renaissance.11.t
-	desc = fee_renaissance.11.d
+	title = fee_renaissance.11.T
+	desc = fee_renaissance.11.D
 	picture = RELIGION_eventPicture
 
 	trigger = {
@@ -422,11 +422,11 @@ country_event = {
 	}
 
 	option = {
-		name = fee_renaissance.11.a
+		name = fee_renaissance.11.OPT1
 		add_treasury = -30
 	}
 	option = {
-		name = fee_renaissance.11.b
+		name = fee_renaissance.11.OPT2
 		random_province = {
 			limit = {
 				is_claim = ROOT
@@ -436,7 +436,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = fee_renaissance.11.c
+		name = fee_renaissance.11.OPT3
 		add_country_modifier = {
 			name = fee_ignore_falsification	#Extra AE
 			duration = 3650
@@ -462,8 +462,8 @@ country_event = {
 # Papal Legate Concedes to Humanist
 country_event = {
 	id = fee_renaissance.12
-	title = fee_renaissance.12.t
-	desc = fee_renaissance.12.d
+	title = fee_renaissance.12.T
+	desc = fee_renaissance.12.D
 	picture = RELIGION_eventPicture
 	
 	trigger = {
@@ -491,13 +491,13 @@ country_event = {
 	}
 	
 	option = {
-		name = fee_renaissance.12.a
+		name = fee_renaissance.12.OPT1
 		add_prestige = 10
 		add_reform_desire = -0.01
 	}
 	
 	option = {
-		name = fee_renaissance.12.b
+		name = fee_renaissance.12.OPT2
 		define_advisor = {
 			type = philosopher
 			skill = 2
@@ -509,8 +509,8 @@ country_event = {
 #Construction Running Over Budget
 country_event = {
 	id = fee_renaissance.13
-	title = fee_renaissance.13.t
-	desc = fee_renaissance.13.d
+	title = fee_renaissance.13.T
+	desc = fee_renaissance.13.D
 	picture = OVEREXTENSION_eventPicture
 
 	trigger = {
@@ -526,13 +526,13 @@ country_event = {
 	}
 
 	option = {
-		name = fee_renaissance.13.a #Increase the budget
+		name = fee_renaissance.13.OPT1 #Increase the budget
 		add_inflation = 0.5
 		add_treasury = -20
 	}
 
 	option = {
-		name = fee_renaissance.13.b #Reorganise the project
+		name = fee_renaissance.13.OPT2 #Reorganise the project
 		add_adm_power = -20
 	}
 }
@@ -540,8 +540,8 @@ country_event = {
 #Iconic Renaissance Building
 province_event = {
 	id = fee_renaissance.14
-	title = fee_renaissance.14.t
-	desc = fee_renaissance.14.d
+	title = fee_renaissance.14.T
+	desc = fee_renaissance.14.D
 	picture = GREAT_BUILDING_eventPicture
 
 	trigger = {
@@ -571,7 +571,7 @@ province_event = {
 	}
 
 	option = {
-		name = fee_renaissance.14.a
+		name = fee_renaissance.14.OPT1
 		trigger = {
 			has_province_flag = fee_renaissance_palace
 		}
@@ -581,7 +581,7 @@ province_event = {
 		}
 	}
 	option = {
-		name = fee_renaissance.14.b
+		name = fee_renaissance.14.OPT2
 		trigger = {
 			has_province_flag = fee_renaissance_barracks
 		}
@@ -591,7 +591,7 @@ province_event = {
 		}
 	}
 	option = {
-		name = fee_renaissance.14.c
+		name = fee_renaissance.14.OPT3
 		trigger = {
 			has_province_flag = fee_renaissance_marketplace
 		}

@@ -5,8 +5,8 @@ namespace = fee_SCO
 # The Education Act
 country_event = {
 	id = fee_SCO.1
-	title = fee_SCO.1.t
-	desc = fee_SCO.1.d
+	title = fee_SCO.1.T
+	desc = fee_SCO.1.D
 	picture = ADVISOR_eventPicture
 
 	fire_only_once = yes
@@ -35,7 +35,7 @@ country_event = {
 
 	# Every noble should be a skilled administrator
 	option = {
-		name = fee_SCO.1.a
+		name = fee_SCO.1.OPT1
 		add_adm_power = -10
 		add_country_modifier = {
 			name = fee_education_act
@@ -45,7 +45,7 @@ country_event = {
 
 	# It is better if they focus on military prowess.
 	option = {
-		name = fee_SCO.1.b
+		name = fee_SCO.1.OPT2
 		add_mil_power = 30
 	}
 }
@@ -53,8 +53,8 @@ country_event = {
 # Anti-French sentiment
 country_event = {
 	id = fee_SCO.2
-	title = fee_SCO.2.t
-	desc = fee_SCO.2.d
+	title = fee_SCO.2.T
+	desc = fee_SCO.2.D
 	picture = ANGRY_MOB_eventPicture
 
 	fire_only_once = yes
@@ -86,14 +86,14 @@ country_event = {
 	}
 
 	option = {
-		name = fee_SCO.2.a
+		name = fee_SCO.2.OPT1
 		add_country_modifier = {
 			name = fee_scottish_french_supression
 			duration = 3650
 		}
 	}
 	option = {
-		name = fee_SCO.2.b
+		name = fee_SCO.2.OPT2
 		reverse_add_opinion = {
 			who = FRA
 			modifier = fee_scottish_anti_french
@@ -106,8 +106,8 @@ country_event = {
 
 country_event = {
 	id = fee_SCO.3
-	title = fee_SCO.3.t
-	desc = fee_SCO.3.d
+	title = fee_SCO.3.T
+	desc = fee_SCO.3.D
 	picture = GOOD_WITH_MONARCH_eventPicture
 
 	fire_only_once = yes
@@ -134,7 +134,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_SCO.3.a
+		name = fee_SCO.3.OPT1
 		add_country_modifier = {
 			name = fee_claim_suppressed
 			duration = 7200
@@ -147,10 +147,10 @@ country_event = {
 		}
 	}
 	option = {
-		name = fee_SCO.3.b
+		name = fee_SCO.3.OPT2
 		overlord = {
 			country_event = {
-				id = fee_SCO.4 days = 5 tooltip = fee_SCO.3.b.tt
+				id = fee_SCO.4 days = 5 tooltip = fee_SCO.3.OPT2.tt
 			}
 		}
 	}
@@ -160,8 +160,8 @@ country_event = {
 
 country_event = {
 	id = fee_SCO.4
-	title = fee_SCO.4.t
-	desc = fee_SCO.4.d
+	title = fee_SCO.4.T
+	desc = fee_SCO.4.D
 	picture = CONQUEST_eventPicture
 
 	is_triggered_only = yes
@@ -173,7 +173,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_SCO.4.a
+		name = fee_SCO.4.OPT1
 		FROM = {
 			add_country_modifier = {
 				name = fee_claim_supressed
@@ -183,7 +183,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = fee_SCO.4.b
+		name = fee_SCO.4.OPT2
 		FROM = {
 			every_province = {
 				limit = {

@@ -1,0 +1,236 @@
+namespace = FEE_Genoa_Events
+
+# The Lanterna
+country_event = {
+	id = FEE_Genoa_Events.1
+	title = FEE_Genoa_Events.1.T
+	desc = FEE_Genoa_Events.1.D
+	picture = HARBOUR_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+		tag = GEN
+		owns_core_province = 101
+		is_year = 1535
+		NOT = { is_year = 1580 }
+		NOT = {
+			has_country_modifier = fee_genoa_lanterna
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 130
+	}
+
+	option = {
+		name = FEE_Genoa_Events.1.OPT1
+
+		add_country_modifier = {
+			name = fee_genoa_lanterna 
+			duration = -1
+		}
+		add_years_of_income = -1
+	}
+
+	option = {
+		name = FEE_Genoa_Events.1.OPT2
+
+		add_dip_power = 50
+	}
+}
+
+# Sampieru Corsu
+country_event = {
+	id = FEE_Genoa_Events.2
+	title = FEE_Genoa_Events.2.T
+	desc = FEE_Genoa_Events.2.D
+	picture = ANGRY_MOB_eventPicture
+	
+	is_triggered_only = yes
+
+	immediate = {
+		COR = { add_core = 1247 }
+	}
+	
+	option = {
+		name = FEE_Genoa_Events.2.OPT1
+
+		1247 = {
+			nationalist_rebels = 1
+		}
+	}
+}
+
+# Corsican Constitution
+country_event = {
+	id = FEE_Genoa_Events.3
+	title = FEE_Genoa_Events.3.T
+	desc = FEE_Genoa_Events.3.D
+	picture = REFORM_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		owns_core_province = 1247
+		is_year = 1750
+		NOT = { exists = COR }
+	}
+	
+	mean_time_to_happen = {
+		months = 400
+	}
+	immediate = {
+		COR = {
+			add_core = 1247
+		}
+	}
+	
+	option = {
+		name = FEE_Genoa_Events.3.OPT1
+
+		1247 = {
+			add_nationalism = 10
+		}
+		1247 = {
+			nationalist_rebels = 2
+		}
+	}
+}
+
+# Casa San Giorgi settles on Corsica
+country_event = {
+	id = FEE_Genoa_Events.4
+	title = FEE_Genoa_Events.4.T
+	desc = FEE_Genoa_Events.4.D
+	picture = CORRUPTION_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_year = 1450
+		OR = {
+			tag = GEN
+			tag = COR
+		}
+		NOT = { is_year = 1470 }
+		NOT = { 
+			has_country_modifier = fee_genoa_san_giorgio_timer
+		}
+		owns = 1247
+	}
+
+	mean_time_to_happen = {
+		months = 180
+		modifier = {
+			factor = 0.60
+			num_of_loans = 5
+		}
+		modifier = {
+			factor = 0.8
+			has_idea_group = economic_ideas
+		}
+	}
+
+	immediate = {
+		add_country_modifier = {
+			name = fee_genoa_san_giorgio_timer
+			duration = -1
+			hidden = yes
+		}
+	}
+
+	option = {
+		name = FEE_Genoa_Events.4.OPT1
+
+		add_years_of_income = 1
+		1247 = {
+			add_base_tax = -1
+			add_base_production = 2
+			add_local_autonomy = 25
+			add_province_modifier = {
+				name = fee_genoa_casa_san_giorgio
+				duration = -1
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Genoa_Events.4.OPT2
+
+		add_adm_power = 30
+		1247 = {
+			add_local_autonomy = -25
+		}
+	}
+}
+
+#Balilla
+country_event = {
+	id = FEE_Genoa_Events.5
+	title = FEE_Genoa_Events.5.T
+	desc = FEE_Genoa_Events.5.D
+	picture = ANGRY_MOB_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GEN
+		is_year = 1700
+		owns = 101
+		101 = {
+			culture = ligurian
+		}
+		any_country = {
+			capital_scope = {
+				continent = europe
+			}
+			num_of_cities = 15
+			controls = 101
+		}
+		NOT = {
+			101 = {
+				has_siege = yes
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 8
+	}
+
+	option = {
+		name = FEE_Genoa_Events.5.OPT1
+
+		101 = {
+			controller = {
+				country_event = {
+					id = FEE_Genoa_Events.6
+				}
+			}
+		}
+	}
+}
+
+#Balilla for Controller
+country_event = {
+	id = FEE_Genoa_Events.6
+	title = FEE_Genoa_Events.6.T
+	desc = FEE_Genoa_Events.6.D
+	picture = ANGRY_MOB_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Genoa_Events.6.OPT1
+
+		add_prestige = -5
+		101 = {
+			spawn_rebels = {
+				type = nationalist_rebels
+				size = 2
+				win = yes
+			}
+		}
+	}
+}

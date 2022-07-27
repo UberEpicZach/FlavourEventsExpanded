@@ -1,0 +1,33 @@
+﻿l_english:
+ FEE_Genoa_Events.1.T: "Construction of the Lanterna"
+ FEE_Genoa_Events.1.D: "A lighthouse had kept watch over Genoa for centuries, but it wasn't until 1543 construction finished on what would become known as the Lanterna, the tallest lighthouse in the world for more than 350 years. Standing at the edge of the city, overlooking the entrance to the harbour, the lighthouse guided ships safely to land. Thanks to the relative safety of Genoese waters, many foreign traders made the city their port of choice, and so helped Genoa prosper through the ages."
+ FEE_Genoa_Events.1.OPT1: "Let us make our lighthouse shine to the far reaches of the Mediterranean!"
+ FEE_Genoa_Events.1.OPT2: "The lighthouse we have now is more than good enough."
+
+ FEE_Genoa_Events.2.T: "Sampiero Corso"
+ FEE_Genoa_Events.2.D: "Living from 1498 to 1567, Sampiero Corso was a Corsican lower noble and soldier. He grew up to become a condottieri, and fought for several paymasters in Italy. Eventually he came into the service of the French king, where his familiarity with Corsica became an advantage to the French efforts in Italy. \nNow it seems that our ruthless enemies in France has chosen to send Sampiero Corso in an attempt to free Corsica for later French occupation!"
+ FEE_Genoa_Events.2.OPT1: "Curse that man, and curse all the kings of France!"
+
+ FEE_Genoa_Events.3.T: "The Corsican Constitution"
+ FEE_Genoa_Events.3.D: "Inspired by Enlightenment thinkers, Pasquale Paoli drafted a constitution for the independent Republic of Corsica in 1755. Sponsored by Great Britain, Paoli not only managed to drive the Genoese off the island, but also reorganised the government into a functioning state, complete with a university and its own mint. Although the republic would fall to France in 1769, Paolis reforms advanced the island significantly, and international recognition of the Corsican people as a distinct culture."
+ FEE_Genoa_Events.3.OPT1: "Of course, none of this will happen if we can help it."
+
+ FEE_Genoa_Events.4.T: "Casa San Giorgio on Corsica"
+ FEE_Genoa_Events.4.D: "The distance from Genoa to Corsica was an administrative challenge, and war or local dissent could make it impossible for the doge to exert any political power on the island. As the Bank of Saint George became a major creditor for Genoa, they acquired the right to collect taxes on Corsica, provided they also protected the island. \nWhile the bank treated Genoese settlers preferentially over locals, it did much to develop the island, especially the towns and fortifications along the coast. However, the bank's taxation would eventually grow to wear as heavily on the locals as the republic's had, and provided the driving force of the Corsican movement to replace Genoese authority with French."
+ FEE_Genoa_Events.4.OPT1: "The Casa San Giorgio should administer Corsica."
+ FEE_Genoa_Events.4.OPT2: "Genoa needs to reassert its control."
+
+ FEE_Genoa_Events.5.T: "Balilla and the Genoese Revolt"
+ FEE_Genoa_Events.5.D: "Something incredible has happened. Under the military occupation of Genoa, the people have been suffering and forced to aid the occupying forces. \nThis morning, an artillery piece got stuck in a moat, and the soldiers transporting it forced onlookers to drag it out, cursing and lashing them as they worked under threat of death.\n\nOne onlooker, however, just a young boy, picked a stone from the road. With the words \"Am I to begin?\" he threw it at one of the soldiers. The crowd instantly turned on the occupying force.\n\nOver the course of just a few days, the foreign soldiers were evicted from the city, and Genoa was once again free. The young boy who started it all would become known as Balilla, a symbol of the struggle for Italian independence."
+ FEE_Genoa_Events.5.OPT1: "For Genoa!"
+
+ FEE_Genoa_Events.6.T: "Balilla Uprising in Genoa"
+ FEE_Genoa_Events.6.D: "Something terrible has happened. Under the [Root.GetAdjective] occupation of Genoa, the people have been made to aid the occupying forces, as appropriate. \nThis morning, however, an artillery piece got stuck in a moat, and the soldiers transporting it forced onlookers to drag it out, cursing and lashing them as they worked far slower than they should.\n\nOne onlooker however, just a young boy, picked a stone from the road. With the accursed words \"Am I to begin?\" he threw it at one of the soldiers. The crowd instantly turned on the occupying force.\n\nOver the course of just a few days, the [Root.GetAdjective] soldiers were evicted from the city. The young boy who started it all would become known as Balilla, a symbol of Italian impertinence and rudeness."
+ FEE_Genoa_Events.6.OPT1: "Once we retake the city they will all pay!"
+
+ #Modifiers
+ fee_genoa_lanterna: "The Lanterna"
+ desc_fee_genoa_lanterna: "The great tower looking out across the Mediterranean, beckoning traders to our shore."
+ fee_genoa_casa_san_giorgio: "Casa San Giorgio"
+ desc_fee_genoa_casa_san_giorgio: "The Bank of the House of San Giorgio has been given charge of a number of administrative tasks on the island."
+ 

@@ -6,8 +6,8 @@ namespace = fee_catholic
 
 country_event = {
 	id = fee_catholic.1
-	title = fee_catholic.1.t
-	desc = fee_catholic.1.d
+	title = fee_catholic.1.T
+	desc = fee_catholic.1.D
 	picture = IMPORTANT_STATUE_eventPicture
 	
 	trigger = {
@@ -27,14 +27,14 @@ country_event = {
 	
 	#Display it for the entire Christian world to see
 	option = {
-		name = fee_catholic.1.a
+		name = fee_catholic.1.OPT1
 		add_papal_influence = 10
 		add_prestige = 10
 	}
 	
 	#Perfect timing, I was just in need of some money
 	option = {
-		name = fee_catholic.1.b
+		name = fee_catholic.1.OPT2
 		trigger = {
 			ai = no
 		}
@@ -45,7 +45,7 @@ country_event = {
 	
 	#This will show the people how pious I am
 	option = {
-		name = fee_catholic.1.c
+		name = fee_catholic.1.OPT3
 		add_stability_or_adm_power = yes
 		add_papal_influence = -5
 	}
@@ -56,8 +56,8 @@ country_event = {
 
 country_event = {
 	id = fee_catholic.2
-	title = fee_catholic.2.t
-	desc = fee_catholic.2.d
+	title = fee_catholic.2.T
+	desc = fee_catholic.2.D
 	picture = RELIGION_eventPicture
 	
 	trigger = {
@@ -95,7 +95,7 @@ country_event = {
 	
 	# These people should listen to the pope
 	option = {
-		name = fee_catholic.2.a
+		name = fee_catholic.2.OPT1
 		trigger = {
 			ai = no
 		}
@@ -109,7 +109,7 @@ country_event = {
 	
 	# People should always strive for new ways to express their faith
 	option = {
-		name = fee_catholic.2.b
+		name = fee_catholic.2.OPT2
 		add_country_modifier = {
 			name = fee_piety_supported
 			duration = 3650

@@ -4,8 +4,8 @@ namespace = fee_MAR
 #Maratha Uprising
 country_event = {
 	id = fee_MAR.1
-	title = fee_MAR.1.t
-	desc = fee_MAR.1.d
+	title = fee_MAR.1.T
+	desc = fee_MAR.1.D
 	picture = BATTLE_eventPicture
 
 	major = yes
@@ -104,7 +104,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_MAR.1.a
+		name = fee_MAR.1.OPT1
 		hidden_effect = {
 			MAR = {
 				capital_scope = {
@@ -128,8 +128,8 @@ country_event = {
 #Fort Defects
 province_event = {
 	id = fee_MAR.2
-	title = fee_MAR.2.t
-	desc = fee_MAR.2.d
+	title = fee_MAR.2.T
+	desc = fee_MAR.2.D
 	picture = CONQUEST_eventPicture
 
 	fire_only_once = yes
@@ -191,7 +191,7 @@ province_event = {
 	}
 
 	option = {
-		name = fee_MAR.2.a
+		name = fee_MAR.2.OPT1
 		add_core = MAR
 		cede_province = MAR
 		hidden_effect = {
@@ -220,14 +220,14 @@ province_event = {
 #Forts defect
 country_event = {
 	id = fee_MAR.3
-	title = fee_MAR.3.t
-	desc = fee_MAR.3.d
+	title = fee_MAR.3.T
+	desc = fee_MAR.3.D
 	picture = CONQUEST_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = fee_MAR.3.a
+		name = fee_MAR.3.OPT1
 		add_mil_power = 50
 	}
 }
@@ -235,8 +235,8 @@ country_event = {
 #Doing What Needs to be Done
 country_event = {
 	id = fee_MAR.4
-	title = fee_MAR.4.t
-	desc = fee_MAR.4.d
+	title = fee_MAR.4.T
+	desc = fee_MAR.4.D
 	picture = DIPLOMACY_eventPicture
 
 	fire_only_once = yes
@@ -254,7 +254,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_MAR.4.a
+		name = fee_MAR.4.OPT1
 		add_mil_power = 50
 		add_manpower = 2
 		add_treasury = 25
@@ -270,14 +270,14 @@ country_event = {
 #Negotiations and Betrayal!
 country_event = {
 	id = fee_MAR.5
-	title = fee_MAR.5.t
-	desc = fee_MAR.5.d
+	title = fee_MAR.5.T
+	desc = fee_MAR.5.D
 	picture = ASSASSINATION_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = fee_MAR.5.a
+		name = fee_MAR.5.OPT1
 		add_mil_power = -25
 		add_manpower = -3
 		if = {
@@ -292,8 +292,8 @@ country_event = {
 #Western Aid
 country_event = {
 	id = fee_MAR.6
-	title = fee_MAR.6.t
-	desc = fee_MAR.6.d
+	title = fee_MAR.6.T
+	desc = fee_MAR.6.D
 	picture = LAND_MILITARY_eventPicture
 
 	fire_only_once = yes
@@ -320,7 +320,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_MAR.6.a
+		name = fee_MAR.6.OPT1
 		ai_chance = {
 			factor = 90
 		}
@@ -341,7 +341,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = fee_MAR.6.b
+		name = fee_MAR.6.OPT2
 		ai_chance = {
 			factor = 10
 		}
@@ -353,8 +353,8 @@ country_event = {
 #$FROM$ Uses Foreign Weaponry
 country_event = {
 	id = fee_MAR.7
-	title = fee_MAR.7.t
-	desc = fee_MAR.7.d
+	title = fee_MAR.7.T
+	desc = fee_MAR.7.D
 	picture = SIEGE_eventPicture
 
 	is_triggered_only = yes
@@ -367,7 +367,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_MAR.7.a
+		name = fee_MAR.7.OPT1
 		ai_chance = {
 			factor = 90
 		}
@@ -393,7 +393,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = fee_MAR.7.b
+		name = fee_MAR.7.OPT2
 		ai_chance = {
 			factor = 10
 		}

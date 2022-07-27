@@ -6,8 +6,8 @@ namespace = fee_PAP
 
 country_event = {
 	id = fee_PAP.1
-	title = fee_PAP.1.t
-	desc = fee_PAP.1.d
+	title = fee_PAP.1.T
+	desc = fee_PAP.1.D
 	picture = CORRUPTION_eventPicture
 	
 	trigger = {
@@ -48,12 +48,12 @@ country_event = {
 	}
 	
 	option = {
-		name = fee_PAP.1.a
+		name = fee_PAP.1.OPT1
 		add_treasury = 50
 		add_reform_desire = 0.01
 	}
 	option = {
-		name = fee_PAP.1.b
+		name = fee_PAP.1.OPT2
 		add_treasury = 10
 		add_reform_desire = -0.01
 	}

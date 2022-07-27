@@ -3,8 +3,8 @@ namespace = FEE_Portugal_Events
 #Luis de Camoes
 country_event = {
 	id = FEE_Portugal_Events.1
-	title = FEE_Portugal_Events.1.t
-	desc = FEE_Portugal_Events.1.d
+	title = FEE_Portugal_Events.1.T
+	desc = FEE_Portugal_Events.1.D
 	picture = ADVISOR_eventPicture
 	fire_only_once = yes
 	trigger = {
@@ -18,7 +18,7 @@ country_event = {
 		months = 240
 	}
 	option = {
-		name = FEE_Portugal_Events.1.a
+		name = FEE_Portugal_Events.1.OPT1
 		add_prestige = 15
 		add_stability_or_adm_power = yes
 		add_navy_tradition = 5
@@ -28,8 +28,8 @@ country_event = {
 #Sebastianism for free Portugal
 country_event = {
 	id = FEE_Portugal_Events.2
-	title = FEE_Portugal_Events.2.t
-	desc = FEE_Portugal_Events.2.d
+	title = FEE_Portugal_Events.2.T
+	desc = FEE_Portugal_Events.2.D
 	picture = SHIP_SAILING_eventPicture
 	fire_only_once = yes
 	trigger = {
@@ -52,7 +52,7 @@ country_event = {
 	}
 	option = {
 		#His name is Sebastian, and that's good enough for me.
-		name = FEE_Portugal_Events.2.a
+		name = FEE_Portugal_Events.2.OPT1
 		define_ruler = {
 			name = "Sebastian"
 			dynasty = "de Avis"
@@ -65,7 +65,7 @@ country_event = {
 	}
 	option = {
 		#Send away this impostor!
-		name = FEE_Portugal_Events.2.b
+		name = FEE_Portugal_Events.2.OPT2
 		add_legitimacy = 5
 		add_country_modifier = {
 			name = fee_sebastianism

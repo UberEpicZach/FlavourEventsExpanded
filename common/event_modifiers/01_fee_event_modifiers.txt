@@ -65,18 +65,6 @@ fee_claim_suppressed = {
 	global_unrest = 5
 }
 
-# Genoa has built the Lanterna
-fee_genoese_lanterna = {
-	global_own_trade_power = 0.1
-}
-
-# San Giorgio on Corsica
-fee_san_giorgio_timer = {
-}
-
-fee_casa_san_giorgio = {
-	development_cost = -0.1
-}
 
 #Savoy chooses between cheaper mercenaries or more expensive ones, but better army.
 fee_savoy_army = {
@@ -101,25 +89,6 @@ fee_piety_resisted = {
 
 fee_piety_supported = {
 	global_unrest = -1
-}
-
-#Naples' hospices
-fee_gennaro_poveri = {
-	local_unrest = -1
-}
-
-fee_albergo_reale = {
-	global_unrest = -1
-}
-
-#de Toledo events
-fee_de_toledo_naples = {
-	development_cost = -0.2
-}
-
-fee_pedro_alvarez = {
-	local_autonomy = -0.05
-	global_unrest = 1
 }
 
 #Bugenhagen timer
@@ -411,14 +380,6 @@ fee_tuscan_reforms = {
 #Medici Oriental Press
 fee_oriental_press = {
 	idea_cost = -0.05
-}
-
-#French Internal Tolls
-fee_FRA_revamped_tolls = {
-	global_tax_modifier = 0.05
-}
-
-fee_bad_tolls_timer = {
 }
 
 #Treaty of Leipzig

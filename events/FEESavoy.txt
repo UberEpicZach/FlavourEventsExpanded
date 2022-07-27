@@ -8,8 +8,8 @@ namespace = fee_SAV
 
 # country_event = {
 	# id = fee_SAV.1
-	# title = fee_SAV.1.t
-	# desc = fee_SAV.1.d
+	# title = fee_SAV.1.T
+	# desc = fee_SAV.1.D
 	# picture = FORT_eventPicture
 	
 	# fire_only_once = yes
@@ -23,7 +23,7 @@ namespace = fee_SAV
 	# }
 
 	# option = {
-		# name = fee_SAV.1.a
+		# name = fee_SAV.1.OPT1
 		# 103 = { add_base_tax = 1 }
 		# 103 = { add_base_manpower = 1 }
 		# set_capital = 103
@@ -36,7 +36,7 @@ namespace = fee_SAV
 	# }
 	
 	# option = {
-		# name = fee_SAV.1.b
+		# name = fee_SAV.1.OPT2
 		# add_mil_power = 25
 	# }
 
@@ -44,8 +44,8 @@ namespace = fee_SAV
 
 country_event = {
 	id = fee_SAV.2
-	title = fee_SAV.2.t
-	desc = fee_SAV.2.d
+	title = fee_SAV.2.T
+	desc = fee_SAV.2.D
 	picture = MILITARY_CAMP_eventPicture
 	
 	fire_only_once = yes
@@ -82,7 +82,7 @@ country_event = {
 	}
 	
 	option = {		# We need a standing army.
-		name = fee_SAV.2.a
+		name = fee_SAV.2.OPT1
 		add_country_modifier = {
 			name = fee_savoy_army
 			duration = 10950
@@ -90,7 +90,7 @@ country_event = {
 	}
 
 	option = {		#mercenaries are our greatest strength
-		name = fee_SAV.2.b
+		name = fee_SAV.2.OPT2
 		add_country_modifier = {
 			name = fee_savoy_mercenaries
 			duration = 10950
@@ -102,8 +102,8 @@ country_event = {
 
 country_event = {
 	id = fee_SAV.3
-	title = fee_SAV.3.t
-	desc = fee_SAV.3.d
+	title = fee_SAV.3.T
+	desc = fee_SAV.3.D
 	picture = ADVISOR_eventPicture
 	
 	fire_only_once = yes
@@ -134,14 +134,14 @@ country_event = {
 	}
 	
 	option = {		# The glory days of Savoy are yet to come
-		name = fee_SAV.3.a
+		name = fee_SAV.3.OPT1
 		add_adm_power = 25
 		add_dip_power = 25
 		add_mil_power = 25
 	}
 	
 	option = {		# Our army is the source of our might
-		name = fee_SAV.3.b
+		name = fee_SAV.3.OPT2
 		add_army_tradition = 10.0
 		add_mil_power = 50
 		add_adm_power = 10
@@ -154,8 +154,8 @@ country_event = {
 
 # country_event = {
 	# id = fee_SAV.4
-	# title = fee_SAV.4.t
-	# desc = fee_SAV.4.d
+	# title = fee_SAV.4.T
+	# desc = fee_SAV.4.D
 	# picture = COURT_eventPicture
 	
 	# trigger = {
@@ -205,7 +205,7 @@ country_event = {
 	# }
 	
 	# option = {
-		# name = fee_SAV.4.a
+		# name = fee_SAV.4.OPT1
 		# reverse_add_opinion = {
 			# who = FRA
 			# modifier = fee_savoy_cooperation
@@ -216,7 +216,7 @@ country_event = {
 		# }
 	# }
 	# option = {
-		# name = fee_SAV.4.b
+		# name = fee_SAV.4.OPT2
 		# reverse_add_opinion = {
 			# who = SPA
 			# modifier = fee_savoy_cooperation
@@ -227,7 +227,7 @@ country_event = {
 		# }
 	# }
 	# option = {
-		# name = fee_SAV.4.c
+		# name = fee_SAV.4.OPT3
 		# add_dip_power = 25
 	# }
 # }
@@ -236,8 +236,8 @@ country_event = {
 
 country_event = {
 	id = fee_SAV.5
-	title = fee_SAV.5.t
-	desc = fee_SAV.5.d
+	title = fee_SAV.5.T
+	desc = fee_SAV.5.D
 	picture = ADVISOR_eventPicture
 	
 	fire_only_once = yes
@@ -269,7 +269,7 @@ country_event = {
 	}
 	
 	option = {
-		name = fee_SAV.5.a
+		name = fee_SAV.5.OPT1
 		add_adm_power = 25
 		add_dip_power = 50
 		add_mil_power = -25

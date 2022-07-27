@@ -5,8 +5,8 @@ namespace = fee_SON
 #General Muhammad Ture
 country_event = {
 	id = fee_SON.1
-	title = fee_SON.1.t
-	desc = fee_SON.1.d
+	title = fee_SON.1.T
+	desc = fee_SON.1.D
 	picture = BATTLE_eventPicture
 
 	fire_only_once = yes
@@ -24,7 +24,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_SON.1.a
+		name = fee_SON.1.OPT1
 		define_general = {
 			name = "Muhammad Askia"
 			fire = 3
@@ -45,8 +45,8 @@ country_event = {
 #The Heretic Heir
 country_event = {
 	id = fee_SON.2
-	title = fee_SON.2.t
-	desc = fee_SON.2.d
+	title = fee_SON.2.T
+	desc = fee_SON.2.D
 	picture = RELIGIOUS_CONVERSION_eventPicture
 
 	fire_only_once = yes
@@ -85,7 +85,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_SON.2.a
+		name = fee_SON.2.OPT1
 		ai_chance = {
 			factor = 85
 		}
@@ -124,7 +124,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = fee_SON.2.b
+		name = fee_SON.2.OPT2
 		ai_chance = {
 			factor = 15
 		}

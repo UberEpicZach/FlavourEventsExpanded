@@ -20,7 +20,7 @@ country_event = {
 	}
 
 	option = {
-		name = events_boh.2.a #Excellent
+		name = events_boh.2.OPT1 #Excellent
 		add_mil_power = 100
 		add_country_modifier = {
 			name = boh_hussite_ingenuity
@@ -53,7 +53,7 @@ country_event = {
 	}
 
 	option = {
-		name = events_boh.3.a #Unfortunate, but we can make some good out of this.
+		name = events_boh.3.OPT1 #Unfortunate, but we can make some good out of this.
 		if = {
 			limit = {
 				exists = TUR
@@ -102,7 +102,7 @@ country_event = {
 		add_prestige = 15
 	}
 	option = {
-		name = events_boh.3.b #How naïve! Perhaps we should forget the whole thing.
+		name = events_boh.3.OPT2 #How naïve! Perhaps we should forget the whole thing.
 		add_prestige = -10
 		add_dip_power = 50
 	}
@@ -131,7 +131,7 @@ country_event = {
 	}
 
 	option = {
-		name = events_boh.4.a #Wonderful news!
+		name = events_boh.4.OPT1 #Wonderful news!
 		2967 = {
 			add_base_production = 2
 		}
@@ -160,7 +160,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = events_boh.4.b #Yes yes, very nice, but what's in it for me?
+		name = events_boh.4.OPT2 #Yes yes, very nice, but what's in it for me?
 		add_years_of_income = 1
 		add_prestige = -10
 		add_country_modifier = {
@@ -202,7 +202,7 @@ country_event = {
 	}
 
 	option = {
-		name = events_boh.5.a #Throw them out the window!
+		name = events_boh.5.OPT1 #Throw them out the window!
 		add_liberty_desire = 100
 		every_country = {
 			limit = {
@@ -215,7 +215,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = events_boh.5.b #We have no choice but to submit.
+		name = events_boh.5.OPT2 #We have no choice but to submit.
 		add_stability = -2
 		change_religion = catholic
 		add_country_modifier = {
@@ -251,7 +251,7 @@ country_event = {
 	}
 
 	option = {
-		name = events_boh.6.a #Will we ever recover?
+		name = events_boh.6.OPT1 #Will we ever recover?
 		266 = {
 			add_base_tax = -2
 			add_base_production = -2

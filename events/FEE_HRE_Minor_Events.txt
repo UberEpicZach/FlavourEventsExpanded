@@ -39,7 +39,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = FEE_HRE_Minors.1.a
+		name = FEE_HRE_Minors.1.OPT1
 		define_advisor = {
 			type = artist
 			name = "Albrecht Durer"
@@ -76,14 +76,14 @@ country_event = {
 		}
 	}
 	option = {
-		name = FEE_HRE_Minors.2.a
+		name = FEE_HRE_Minors.2.OPT1
 		add_country_modifier = {
 			name = FEE_HRE_Minor_Tolerance_of_Jews
 			duration = 18250
 		}
 	}
 	option = {
-		name = FEE_HRE_Minors.2.b
+		name = FEE_HRE_Minors.2.OPT2
 		add_country_modifier = {
 			name = FEE_HRE_Minor_Expulsion_of_Jews
 			duration = 7300
@@ -92,7 +92,7 @@ country_event = {
 		add_years_of_income = 0.25
 	}
 	option = {
-		name = FEE_HRE_Minors.2.c
+		name = FEE_HRE_Minors.2.OPT3
 		trigger = {
 			OR = {
 				has_idea_group = humanist_ideas
@@ -143,7 +143,7 @@ country_event = {
 		months = 6
 	}
 	option = {
-		name = FEE_HRE_Minors.3.a
+		name = FEE_HRE_Minors.3.OPT1
 		add_reform_desire = 0.05
 		random_elector = {
 			limit = {
@@ -155,7 +155,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = FEE_HRE_Minors.3.b
+		name = FEE_HRE_Minors.3.OPT2
 		add_reform_desire = 0.03
 		1761 = {
 			add_reform_center = protestant
@@ -183,7 +183,7 @@ country_event = {
 		months = 1
 	}
 	option = {
-		name = FEE_HRE_Minors.4.a
+		name = FEE_HRE_Minors.4.OPT1
 		define_advisor = {
 			type = natural_scientist
 			name = "Johannes Gutenburg"
@@ -215,7 +215,7 @@ country_event = {
 		months = 200
 	}
 	option = {
-		name = FEE_HRE_Minors.5.a
+		name = FEE_HRE_Minors.5.OPT1
 		every_country = {
 			limit = {
 				capital_scope = {
@@ -242,7 +242,7 @@ country_event = {
 	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
-		name = FEE_HRE_Minors.6.a
+		name = FEE_HRE_Minors.6.OPT1
 		define_advisor = {
 			type = theologian
 			name = "Martin Luther"
@@ -253,7 +253,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = FEE_HRE_Minors.6.b
+		name = FEE_HRE_Minors.6.OPT2
 		add_country_modifier = {
 			name = FEE_HRE_Minors_Martin_Luther_in_Hiding
 			duration = 3650
@@ -283,7 +283,7 @@ country_event = {
 		months = 12
 	}
 	option = {
-		name = FEE_HRE_Minors.7.a
+		name = FEE_HRE_Minors.7.OPT1
 		create_alliance = emperor
 		add_opinion = {
 			who = emperor
@@ -300,7 +300,7 @@ country_event = {
 		add_prestige = 10
 	}
 	option = {
-		name = FEE_HRE_Minors.7.b
+		name = FEE_HRE_Minors.7.OPT2
 		add_opinion = {
 			who = emperor
 			modifier = FEE_HRE_Minor_Imperial_Navy_Malus_Opinion_Modifier
@@ -362,7 +362,7 @@ country_event = {
 		months = 120
 	}
 	option = {
-		name = FEE_HRE_Minors.8.a
+		name = FEE_HRE_Minors.8.OPT1
 		trigger = {
 			has_idea_group = economic_ideas
 		}
@@ -373,7 +373,7 @@ country_event = {
 		add_stability = -1
 	}
 	option = {
-		name = FEE_HRE_Minors.8.b
+		name = FEE_HRE_Minors.8.OPT2
 		trigger = {
 			has_idea_group = innovativeness_ideas
 		}
@@ -384,7 +384,7 @@ country_event = {
 		add_stability = -1
 	}
 	option = {
-		name = FEE_HRE_Minors.8.c
+		name = FEE_HRE_Minors.8.OPT3
 		add_country_modifier = {
 			name = FEE_HRE_Minor_Military_Reforms
 			duration = 7300
@@ -392,7 +392,7 @@ country_event = {
 		add_stability = -1
 	}
 	option = {
-		name = FEE_HRE_Minors.8.d
+		name = FEE_HRE_Minors.8.D
 		add_prestige = 10
 		add_stability_or_adm_power = yes
 	}

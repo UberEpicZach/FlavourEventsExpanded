@@ -6,8 +6,8 @@ namespace = fee_NOR
 
 country_event = {
 	id = fee_NOR.1
-	title = fee_NOR.1.t
-	desc = fee_NOR.1.d
+	title = fee_NOR.1.T
+	desc = fee_NOR.1.D
 	picture = TRADEGOODS_eventPicture
 
 	fire_only_once = yes
@@ -26,13 +26,13 @@ country_event = {
 	}
 
 	option = {
-		name = fee_NOR.1.a
+		name = fee_NOR.1.OPT1
 		20 = {
 			change_trade_goods = copper
 		}
 	}
 	option = {
-		name = fee_NOR.1.b
+		name = fee_NOR.1.OPT2
 		add_treasury = 50
 	}
 }
@@ -41,8 +41,8 @@ country_event = {
 
 country_event = {
 	id = fee_NOR.2
-	title = fee_NOR.2.t
-	desc = fee_NOR.2.d
+	title = fee_NOR.2.T
+	desc = fee_NOR.2.D
 	picture = IMPORTANT_STATUE_eventPicture
 
 	fire_only_once = yes
@@ -72,7 +72,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = fee_NOR.2.a
+		name = fee_NOR.2.OPT1
 		ai_chance = {
 			factor = 90
 		}
@@ -90,7 +90,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = fee_NOR.2.b
+		name = fee_NOR.2.OPT2
 		ai_chance = {
 			factor = 10
 		}
@@ -102,14 +102,14 @@ country_event = {
 
 country_event = {
 	id = fee_NOR.3
-	title = fee_NOR.3.t
-	desc = fee_NOR.3.d
+	title = fee_NOR.3.T
+	desc = fee_NOR.3.D
 	picture = RELIGIOUS_TURMOIL_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = fee_NOR.3.a
+		name = fee_NOR.3.OPT1
 		add_opinion = {
 			who = FROM
 			modifier = fee_olav_shrine_destroyed

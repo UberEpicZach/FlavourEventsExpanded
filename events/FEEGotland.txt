@@ -7,8 +7,8 @@ namespace = fee_GOT
 
 country_event = {
 	id = fee_GOT.1
-	title = fee_GOT.1.t
-	desc = fee_GOT.1.d
+	title = fee_GOT.1.T
+	desc = fee_GOT.1.D
 	picture = BORDER_TENSION_eventPicture
 
 	trigger = {
@@ -21,7 +21,7 @@ country_event = {
 		months = 800
 	}
 	option = {
-		name = fee_GOT.1.a
+		name = fee_GOT.1.OPT1
 		add_stability_or_adm_power = yes
 	}
 }
@@ -30,8 +30,8 @@ country_event = {
 
 country_event = {
 	id = fee_GOT.2
-	title = fee_GOT.2.t
-	desc = fee_GOT.2.d
+	title = fee_GOT.2.T
+	desc = fee_GOT.2.D
 	picture = STREET_SPEECH_eventPicture
 
 	trigger = {
@@ -44,13 +44,13 @@ country_event = {
 	}
 
 	option = {
-		name = fee_GOT.2.a
+		name = fee_GOT.2.OPT1
 		25 = {
 			add_local_autonomy = 25
 		}	
 	}
 	option = {
-		name = fee_GOT.2.b
+		name = fee_GOT.2.OPT2
 		25 = {
 		nationalist_rebels = 1
 		}

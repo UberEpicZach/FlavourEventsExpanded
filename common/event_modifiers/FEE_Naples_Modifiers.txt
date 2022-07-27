@@ -1,17 +1,30 @@
-nap_magnanimo = {
+fee_nap_magnanimo = {
 	reform_progress_growth = 0.10
 	global_unrest = -1
 }
-nap_transumanza = {
+fee_nap_transumanza = {
 	trade_goods_size_modifier = 0.10
 	local_development_cost = -0.05
 }
-nap_porta_capuana = {
+fee_nap_porta_capuana = {
 	local_defensiveness = 0.05
 	province_trade_power_value = 5
 }
-nap_twenty_years_prosperity = {
+fee_nap_twenty_years_prosperity = {
 	global_unrest = -2
 	development_cost = -0.10
 	global_tax_modifier = 0.05
+}
+fee_nap_pedro_alvarez = {
+	local_autonomy = -0.05
+	global_unrest = 1
+}
+fee_nap_de_toledo_naples = {
+	local_development_cost = -0.2
+}
+fee_nap_gennaro_poveri = {
+	local_unrest = -1
+}
+fee_nap_albergo_reale = {
+	global_unrest = -1
 }

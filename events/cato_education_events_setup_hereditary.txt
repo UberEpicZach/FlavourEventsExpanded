@@ -34,7 +34,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_setup_hereditary.1.a
+		name = cato_education_events_setup_hereditary.1.OPT1
 		set_heir_flag = started_adm_education
 		country_event = {
 			id = cato_education_events_setup_hereditary.2
@@ -44,7 +44,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_setup_hereditary.1.b
+		name = cato_education_events_setup_hereditary.1.OPT2
 		set_heir_flag = started_dip_education
 		country_event = {
 			id = cato_education_events_setup_hereditary.3
@@ -54,7 +54,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_setup_hereditary.1.c
+		name = cato_education_events_setup_hereditary.1.OPT3
 		set_heir_flag = started_mil_education
 		country_event = {
 			id = cato_education_events_setup_hereditary.4
@@ -64,7 +64,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_setup_hereditary.1.d
+		name = cato_education_events_setup_hereditary.1.D
 		set_heir_flag = started_chosen_education
 		hidden_effect = {
 			country_event = {
@@ -94,7 +94,7 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_setup_hereditary.2.a
+		name = cato_education_events_setup_hereditary.2.OPT1
 		set_heir_flag = clerical_education
 		hidden_effect = {
 			country_event = {
@@ -107,7 +107,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_setup_hereditary.2.b
+		name = cato_education_events_setup_hereditary.2.OPT2
 		set_heir_flag = administrative_education
 		hidden_effect = {
 			country_event = {
@@ -120,7 +120,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_setup_hereditary.2.c
+		name = cato_education_events_setup_hereditary.2.OPT3
 		set_heir_flag = scholastic_education
 		hidden_effect = {
 			country_event = {
@@ -146,7 +146,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_setup_hereditary.2.d
+		name = cato_education_events_setup_hereditary.2.D
 		hidden_effect = {
 			set_heir_flag = heir_chose_education_subcategory
 			country_event = {
@@ -175,7 +175,7 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_setup_hereditary.3.a
+		name = cato_education_events_setup_hereditary.3.OPT1
 		set_heir_flag = diplomacy_education
 		hidden_effect = {
 			country_event = {
@@ -188,7 +188,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_setup_hereditary.3.b
+		name = cato_education_events_setup_hereditary.3.OPT2
 		set_heir_flag = intrigue_education
 		hidden_effect = {
 			country_event = {
@@ -201,7 +201,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_setup_hereditary.3.c
+		name = cato_education_events_setup_hereditary.3.OPT3
 		set_heir_flag = trade_education
 		hidden_effect = {
 			country_event = {
@@ -227,7 +227,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_setup_hereditary.3.d
+		name = cato_education_events_setup_hereditary.3.D
 		hidden_effect = {
 			set_heir_flag = heir_chose_education_subcategory
 			country_event = {
@@ -256,7 +256,7 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_setup_hereditary.4.a
+		name = cato_education_events_setup_hereditary.4.OPT1
 		set_heir_flag = martial_education
 		hidden_effect = {
 			country_event = {
@@ -269,7 +269,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_setup_hereditary.4.b
+		name = cato_education_events_setup_hereditary.4.OPT2
 		set_heir_flag = naval_education
 		hidden_effect = {
 			country_event = {
@@ -282,7 +282,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_setup_hereditary.4.c
+		name = cato_education_events_setup_hereditary.4.OPT3
 		set_heir_flag = logistics_education
 		hidden_effect = {
 			country_event = {
@@ -308,7 +308,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_setup_hereditary.4.d
+		name = cato_education_events_setup_hereditary.4.D
 		hidden_effect = {
 			set_heir_flag = heir_chose_education_subcategory
 			country_event = {
@@ -338,7 +338,7 @@ country_event = {
 	immediate = {
 	}
 	option = {
-		name = cato_education_events_setup_hereditary.1.a
+		name = cato_education_events_setup_hereditary.1.OPT1
 		set_heir_flag = started_adm_education
 		country_event = {
 			id = cato_education_events_setup_hereditary.6
@@ -392,7 +392,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_setup_hereditary.1.b
+		name = cato_education_events_setup_hereditary.1.OPT2
 		set_heir_flag = started_dip_education
 		country_event = {
 			id = cato_education_events_setup_hereditary.7
@@ -434,7 +434,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_setup_hereditary.1.c
+		name = cato_education_events_setup_hereditary.1.OPT3
 		set_heir_flag = started_mil_education
 		country_event = {
 			id = cato_education_events_setup_hereditary.8
@@ -494,7 +494,7 @@ country_event = {
 	}
 	
 	option = {
-		name = cato_education_events_setup_hereditary.1.a
+		name = cato_education_events_setup_hereditary.1.OPT1
 		set_heir_flag = clerical_education
 		hidden_effect = {
 			country_event = {
@@ -515,7 +515,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_setup_hereditary.1.b
+		name = cato_education_events_setup_hereditary.1.OPT2
 		set_heir_flag = administrative_education
 		hidden_effect = {
 			country_event = {
@@ -532,7 +532,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_setup_hereditary.1.c
+		name = cato_education_events_setup_hereditary.1.OPT3
 		set_heir_flag = scholastic_education
 		hidden_effect = {
 			country_event = {
@@ -549,7 +549,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_setup_hereditary.1.d
+		name = cato_education_events_setup_hereditary.1.D
 		set_heir_flag = industrial_education
 		hidden_effect = {
 			country_event = {
@@ -580,7 +580,7 @@ country_event = {
 	}
 	
 	option = {
-		name = cato_education_events_setup_hereditary.1.a
+		name = cato_education_events_setup_hereditary.1.OPT1
 		set_heir_flag = diplomacy_education
 		hidden_effect = {
 			country_event = {
@@ -601,7 +601,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_setup_hereditary.1.b
+		name = cato_education_events_setup_hereditary.1.OPT2
 		set_heir_flag = intrigue_education
 		hidden_effect = {
 			country_event = {
@@ -618,7 +618,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_setup_hereditary.1.c
+		name = cato_education_events_setup_hereditary.1.OPT3
 		set_heir_flag = trade_education
 		hidden_effect = {
 			country_event = {
@@ -639,7 +639,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_setup_hereditary.1.d
+		name = cato_education_events_setup_hereditary.1.D
 		set_heir_flag = colonial_education
 		hidden_effect = {
 			country_event = {
@@ -674,7 +674,7 @@ country_event = {
 	}
 	
 	option = {
-		name = cato_education_events_setup_hereditary.1.a
+		name = cato_education_events_setup_hereditary.1.OPT1
 		set_heir_flag = martial_education
 		hidden_effect = {
 			country_event = {
@@ -695,7 +695,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_setup_hereditary.1.b
+		name = cato_education_events_setup_hereditary.1.OPT2
 		set_heir_flag = naval_education
 		hidden_effect = {
 			country_event = {
@@ -716,7 +716,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_setup_hereditary.1.c
+		name = cato_education_events_setup_hereditary.1.OPT3
 		set_heir_flag = logistics_education
 		hidden_effect = {
 			country_event = {
@@ -737,7 +737,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_setup_hereditary.1.c
+		name = cato_education_events_setup_hereditary.1.OPT3
 		set_heir_flag = modern_army_education
 		hidden_effect = {
 			country_event = {
@@ -764,13 +764,13 @@ country_event = {
 				days = 2920 ###8 years
 			}
 		}
-		desc = "cato_education_events_setup_hereditary.10.desc.a"###Description for if the heir completes their education successfully.
+		desc = "cato_education_events_setup_hereditary.10.desc.OPT1"###Description for if the heir completes their education successfully.
 	}
 	desc = {
 		trigger = { 
 			has_ruler_flag = heir_started_education
 		}
-		desc = "cato_education_events_setup_hereditary.10.desc.b"###Description for if the heir is forced to the throne before they complete it.
+		desc = "cato_education_events_setup_hereditary.10.desc.OPT2"###Description for if the heir is forced to the throne before they complete it.
 	}
 	picture = ECONOMY_eventPicture
 	trigger = {
@@ -841,7 +841,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_setup_hereditary.10.a
+		name = cato_education_events_setup_hereditary.10.OPT1
 		if = { ### For those who have completed their full eight years of education.
 			limit = {
 				has_heir_flag = heir_started_education
@@ -1558,7 +1558,7 @@ country_event = {
 	}
 	
 	option = {
-		name = cato_education_events_setup_hereditary.11.a
+		name = cato_education_events_setup_hereditary.11.OPT1
 		if = {
 			limit = {
 				has_ruler_flag = poor_clerical_education

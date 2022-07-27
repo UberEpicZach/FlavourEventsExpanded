@@ -5,8 +5,8 @@
 ##Perm Freed
 #country_event = {
 #	id = fee_prm.1
-#	title = fee_prm.1.t
-#	desc = fee_prm.1.d
+#	title = fee_prm.1.T
+#	desc = fee_prm.1.D
 #	picture = DIPLOMACY_eventPicture
 #
 #	fire_only_once = yes
@@ -34,7 +34,7 @@
 #	}
 #
 #    option = {
-#	name = fee_prm.1.a
+#	name = fee_prm.1.OPT1
 #		MOS = {
 #			free_vassal = PRM
 #		}
@@ -48,15 +48,15 @@
 #	}
 #	
 #	option = {
-#	name = fee_prm.1.b
+#	name = fee_prm.1.OPT2
 #	}
 #}
 #
 ##An Overlord
 #country_event = {
 #	id = fee_prm.2
-#	title = fee_prm.2.t
-#	desc = fee_prm.2.d
+#	title = fee_prm.2.T
+#	desc = fee_prm.2.D
 #	picture = DIPLOMACY_eventPicture
 #
 #	fire_only_once = yes
@@ -76,7 +76,7 @@
 #	}
 #	
 #   option = { 
-#   name = fee_prm.2.a
+#   name = fee_prm.2.OPT1
 #   ai_chance = {
 #	factor = 5
 #   }
@@ -96,7 +96,7 @@
 #   }
 #  }
 #   option = { 
-#   name = fee_prm.2.b
+#   name = fee_prm.2.OPT2
 #   ai_chance = {
 #	factor = 80
 #   }
@@ -116,7 +116,7 @@
 #   }
 #  }
 #  option = { 
-#   name = fee_prm.2.c
+#   name = fee_prm.2.OPT3
 #   ai_chance = {
 #	factor = 5
 #   }
@@ -149,21 +149,21 @@
 ##Offer of Vassalisation
 #country_event = {
 #	id = fee_prm.3
-#	title = fee_prm.3.t
-#	desc = fee_prm.3.d
+#	title = fee_prm.3.T
+#	desc = fee_prm.3.D
 #	picture = DIPLOMACY_eventPicture
 #	
 #	is_triggered_only = yes
 #	
 #	option = {
-#		name = fee_prm.3.a
+#		name = fee_prm.3.OPT1
 #		ai_chance = {
 #			factor = 100
 #		}
 #		vassalize = FROM
 #	}
 #	option = {
-#		name = fee_prm.3.b
+#		name = fee_prm.3.OPT2
 #		ai_chance = {
 #			factor = 0
 #		}

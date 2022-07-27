@@ -4,8 +4,8 @@ Namespace = FEE_Bohemia
 #Hungary #Setupevent
 country_event = {
 	id = FEE_Bohemia.1
-	title = FEE_Bohemia.1.t
-	desc = FEE_Bohemia.1.d
+	title = FEE_Bohemia.1.T
+	desc = FEE_Bohemia.1.D
 	picture = CITY_VIEW_eventPicture
 	hidden = yes
 
@@ -30,15 +30,15 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Bohemia.1.a
+		name = FEE_Bohemia.1.OPT1
 	}
 }
 
 #Bohemia #Setupevent
 country_event = {
 	id = FEE_Bohemia.2
-	title = FEE_Bohemia.2.t
-	desc = FEE_Bohemia.2.d
+	title = FEE_Bohemia.2.T
+	desc = FEE_Bohemia.2.D
 	picture = CITY_VIEW_eventPicture
 	hidden = yes
 
@@ -61,15 +61,15 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Bohemia.2.a
+		name = FEE_Bohemia.2.OPT1
 	}
 }
 
 #Bohemia #Death of Jiri Podebrad
 country_event = {
 	id = FEE_Bohemia.3
-	title = FEE_Bohemia.3.t
-	desc = FEE_Bohemia.3.d
+	title = FEE_Bohemia.3.T
+	desc = FEE_Bohemia.3.D
 	picture = CITY_VIEW_eventPicture
 
 	trigger = {
@@ -90,7 +90,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Bohemia.3.a
+		name = FEE_Bohemia.3.OPT1
 		define_ruler = {
 			name = "Vladislav"
 			dynasty = "Jagiellon"
@@ -158,7 +158,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = FEE_Bohemia.3.b
+		name = FEE_Bohemia.3.OPT2
 		define_ruler = {
 			name = "Victor z"
 			dynasty = "z Podebrad"
@@ -185,8 +185,8 @@ country_event = {
 #Poland #The Bohemian Throne
 country_event = {
 	id = FEE_Bohemia.4
-	title = FEE_Bohemia.4.t
-	desc = FEE_Bohemia.4.d
+	title = FEE_Bohemia.4.T
+	desc = FEE_Bohemia.4.D
 	picture = CITY_VIEW_eventPicture
 
 	is_triggered_only = yes
@@ -194,7 +194,7 @@ country_event = {
 	fire_only_once = yes
 
 	option = {
-		name = FEE_Bohemia.4.a
+		name = FEE_Bohemia.4.OPT1
 		reverse_add_opinion = {
 			who = POL
 			modifier = FEE_BOH_OPINION
@@ -205,8 +205,8 @@ country_event = {
 #Hungary #The Death of Matyas
 country_event = {
 	id = FEE_Bohemia.5
-	title = FEE_Bohemia.5.t
-	desc = FEE_Bohemia.5.d
+	title = FEE_Bohemia.5.T
+	desc = FEE_Bohemia.5.D
 	picture = CITY_VIEW_eventPicture
 
 	trigger = {
@@ -225,7 +225,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Bohemia.5.a
+		name = FEE_Bohemia.5.OPT1
 
 		if = {
 			limit = {
@@ -268,7 +268,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = FEE_Bohemia.5.b
+		name = FEE_Bohemia.5.OPT2
 		define_ruler = {
 			name = "Janos"
 			dynasty = "Hunyadi"
@@ -304,7 +304,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = FEE_Bohemia.5.c
+		name = FEE_Bohemia.5.OPT3
 
 		if = {
 			limit = {
@@ -324,8 +324,8 @@ country_event = {
 #Poland #The Hungarian Throne
 country_event = {
 	id = FEE_Bohemia.6
-	title = FEE_Bohemia.6.t
-	desc = FEE_Bohemia.6.d
+	title = FEE_Bohemia.6.T
+	desc = FEE_Bohemia.6.D
 	picture = CITY_VIEW_eventPicture
 
 	is_triggered_only = yes
@@ -333,7 +333,7 @@ country_event = {
 	fire_only_once = yes
 
 	option = {
-		name = FEE_Bohemia.6.a
+		name = FEE_Bohemia.6.OPT1
 		add_opinion = {
 			who = HUN
 			modifier = FEE_BOH_OPINION
@@ -346,8 +346,8 @@ country_event = {
 #Austria #The Hungarian Throne
 country_event = {
 	id = FEE_Bohemia.7
-	title = FEE_Bohemia.7.t
-	desc = FEE_Bohemia.7.d
+	title = FEE_Bohemia.7.T
+	desc = FEE_Bohemia.7.D
 	picture = CITY_VIEW_eventPicture
 
 	is_triggered_only = yes
@@ -355,7 +355,7 @@ country_event = {
 	fire_only_once = yes
 
 	option = {
-		name = FEE_Bohemia.7.a
+		name = FEE_Bohemia.7.OPT1
 		add_casus_belli = {
 			type = cb_restore_personal_union 
 			target = HUN
@@ -366,7 +366,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = FEE_Bohemia.7.b
+		name = FEE_Bohemia.7.OPT2
 		add_prestige = -10
 		add_opinion = {
 			who = HUN
@@ -378,8 +378,8 @@ country_event = {
 #Ottomans #The Hungarian Throne
 country_event = {
 	id = FEE_Bohemia.8
-	title = FEE_Bohemia.8.t
-	desc = FEE_Bohemia.8.d
+	title = FEE_Bohemia.8.T
+	desc = FEE_Bohemia.8.D
 	picture = CITY_VIEW_eventPicture
 
 	is_triggered_only = yes
@@ -387,7 +387,7 @@ country_event = {
 	fire_only_once = yes
 
 	option = {
-		name = FEE_Bohemia.8.a
+		name = FEE_Bohemia.8.OPT1
 		transylvania_area = {
 			add_claim = TUR
 		}

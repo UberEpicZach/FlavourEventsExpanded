@@ -5,8 +5,8 @@ namespace = fee_MUG
 #The Red Fort
 country_event = {
 	id = fee_MUG.1
-	title = fee_MUG.1.t
-	desc = fee_MUG.1.d
+	title = fee_MUG.1.T
+	desc = fee_MUG.1.D
 	picture = FORT_eventPicture
 	
 	fire_only_once = yes
@@ -29,7 +29,7 @@ country_event = {
 	}
 	
 	option = {
-		name = fee_MUG.1.a
+		name = fee_MUG.1.OPT1
 		ai_chance = {
 			factor = 90
 			modifier = {
@@ -50,7 +50,7 @@ country_event = {
 	}
 	
 	option = {
-		name = fee_MUG.1.b
+		name = fee_MUG.1.OPT2
 		ai_chance = {
 			factor = 10
 		}
@@ -62,8 +62,8 @@ country_event = {
 #Integration with Indian Culture
 country_event = {
 	id = fee_MUG.2
-	title = fee_MUG.2.t
-	desc = fee_MUG.2.d
+	title = fee_MUG.2.T
+	desc = fee_MUG.2.D
 	picture = FORT_eventPicture
 	
 	fire_only_once = yes
@@ -85,7 +85,7 @@ country_event = {
 	}
 	
 	option = {
-		name = fee_MUG.2.a
+		name = fee_MUG.2.OPT1
 		ai_chance = {
 			factor = 80
 		}
@@ -97,7 +97,7 @@ country_event = {
 	}
 	
 	option = {
-		name = fee_MUG.2.b
+		name = fee_MUG.2.OPT2
 		ai_chance = {
 			factor = 10
 		}
@@ -108,7 +108,7 @@ country_event = {
 	}
 	
 	option = {
-		name = fee_MUG.2.c
+		name = fee_MUG.2.OPT3
 		ai_chance = {
 			factor = 10
 		}
@@ -119,8 +119,8 @@ country_event = {
 #Payment from tributary
 country_event = {
 	id = fee_MUG.3
-	title = fee_MUG.3.t
-	desc = fee_MUG.3.d
+	title = fee_MUG.3.T
+	desc = fee_MUG.3.D
 	picture = CONQUEST_eventPicture
 	
 	trigger = {
@@ -150,7 +150,7 @@ country_event = {
 	}
 	
 	option = {
-		name = fee_MUG.3.a
+		name = fee_MUG.3.OPT1
 		add_years_of_income = 0.2
 		random_subject_country = {
 			reverse_add_opinion = {

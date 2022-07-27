@@ -5,8 +5,8 @@ namespace = fee_NED
 #Generaliteitslanden
 province_event = {
 	id = fee_NED.1
-	title = fee_NED.1.t
-	desc = fee_NED.1.d
+	title = fee_NED.1.T
+	desc = fee_NED.1.D
 	picture = CITY_DEVELOPMENT_eventPicture
 
 	trigger = {
@@ -39,7 +39,7 @@ province_event = {
 	}
 
 	option = {
-		name = fee_NED.1.a
+		name = fee_NED.1.OPT1
 		add_province_modifier = {
 			name = fee_generality_lands
 			duration = -1
@@ -49,8 +49,8 @@ province_event = {
 
 province_event = {
 	id = fee_NED.2
-	title = fee_NED.2.t
-	desc = fee_NED.2.d
+	title = fee_NED.2.T
+	desc = fee_NED.2.D
 	picture = CITY_VIEW_eventPicture
 
 	trigger = {
@@ -76,7 +76,7 @@ province_event = {
 	}
 
 	option = {
-		name = fee_NED.2.a
+		name = fee_NED.2.OPT1
 		remove_province_modifier = fee_generality_lands
 	}
 }
@@ -84,8 +84,8 @@ province_event = {
 #The revolt of Adolf van Egmond
 country_event = {
 	id = fee_NED.3
-	title = fee_NED.3.t
-	desc = fee_NED.3.d
+	title = fee_NED.3.T
+	desc = fee_NED.3.D
 	picture = BATTLE_eventPicture
 
 	fire_only_once = yes
@@ -114,7 +114,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_NED.3.a
+		name = fee_NED.3.OPT1
 		random_owned_province = {
 			spawn_rebels = {
 				type = noble_rebels
@@ -132,7 +132,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_NED.3.b
+		name = fee_NED.3.OPT2
 		add_dip_power = -150
 	}
 }
@@ -140,8 +140,8 @@ country_event = {
 #Compromising with Adolf
 country_event = {
 	id = fee_NED.4
-	title = fee_NED.4.t
-	desc = fee_NED.4.d
+	title = fee_NED.4.T
+	desc = fee_NED.4.D
 	picture = DIPLOMACY_eventPicture
 
 	fire_only_once = yes
@@ -168,7 +168,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_NED.4.a
+		name = fee_NED.4.OPT1
 		BUR = {
 			country_event = { id = fee_NED.5 days = 10 }
 		}
@@ -177,7 +177,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_NED.4.b
+		name = fee_NED.4.OPT2
 		99 = {
 			add_province_modifier = {
 				name = fee_adolfs_unrest
@@ -191,8 +191,8 @@ country_event = {
 #Burgundian answer
 country_event = {
 	id = fee_NED.5
-	title = fee_NED.5.t
-	desc = fee_NED.5.d
+	title = fee_NED.5.T
+	desc = fee_NED.5.D
 	picture = CONQUEST_eventPicture
 
 	fire_only_once = yes
@@ -200,7 +200,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = fee_NED.5.a
+		name = fee_NED.5.OPT1
 		ai_chance = {
 			factor = 95
 			modifier = {
@@ -225,7 +225,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_NED.5.b
+		name = fee_NED.5.OPT2
 		ai_chance = {
 			factor = 5
 			modifier = {
@@ -245,14 +245,14 @@ country_event = {
 #Burgundy Accepts the Compromise
 country_event = {
 	id = fee_NED.6
-	title = fee_NED.6.t
-	desc = fee_NED.6.d
+	title = fee_NED.6.T
+	desc = fee_NED.6.D
 	picture = CONQUEST_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = fee_NED.6.a
+		name = fee_NED.6.OPT1
 		add_treasury = 300
 		add_legitimacy = -10
 		add_country_modifier = {
@@ -265,14 +265,14 @@ country_event = {
 #Burgundy Declines the Compromise!
 country_event = {
 	id = fee_NED.7
-	title = fee_NED.7.t
-	desc = fee_NED.7.d
+	title = fee_NED.7.T
+	desc = fee_NED.7.D
 	picture = LIBERUM_VETO_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = fee_NED.7.a
+		name = fee_NED.7.OPT1
 		add_prestige = -10
 		add_country_modifier = {
 			name = fee_adolf_compromise
@@ -288,8 +288,8 @@ country_event = {
 #Arrival in Indonesia
 country_event = {
 	id = fee_NED.8
-	title = fee_NED.8.t
-	desc = fee_NED.8.d
+	title = fee_NED.8.T
+	desc = fee_NED.8.D
 	picture = SHIP_SAILING_eventPicture
 
 	fire_only_once = yes
@@ -304,7 +304,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_NED.8.a
+		name = fee_NED.8.OPT1
 
 		ai_chance = { factor = 100 }
 
@@ -333,7 +333,7 @@ country_event = {
 		set_country_flag = fee_allow_for_founding_of_batavia
 	}
 	option = {
-		name = fee_NED.8.b
+		name = fee_NED.8.OPT2
 
 		ai_chance = { factor = 0 }
 
@@ -344,8 +344,8 @@ country_event = {
 #Founding of Batavia
 country_event = {
 	id = fee_NED.9
-	title = fee_NED.9.t
-	desc = fee_NED.9.d
+	title = fee_NED.9.T
+	desc = fee_NED.9.D
 	picture = LIBERUM_VETO_eventPicture
 
 	fire_only_once = yes
@@ -380,7 +380,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_NED.9.a
+		name = fee_NED.9.OPT1
 
 		ai_chance = { factor = 100 }
 
@@ -407,7 +407,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = fee_NED.9.b
+		name = fee_NED.9.OPT2
 
 		ai_chance = { factor = 0 }
 
@@ -427,8 +427,8 @@ country_event = {
 #Formosa
 country_event = {
 	id = fee_NED.10
-	title = fee_NED.10.t
-	desc = fee_NED.10.d
+	title = fee_NED.10.T
+	desc = fee_NED.10.D
 	picture = LIBERUM_VETO_eventPicture
 
 	fire_only_once = yes
@@ -456,7 +456,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_NED.10.a
+		name = fee_NED.10.OPT1
 
 		ai_chance = { factor = 100 }
 
@@ -473,8 +473,8 @@ country_event = {
 #Koxinga and Tungning
 country_event = {
 	id = fee_NED.11
-	title = fee_NED.11.t
-	desc = fee_NED.11.d
+	title = fee_NED.11.T
+	desc = fee_NED.11.D
 	picture = LIBERUM_VETO_eventPicture
 
 	fire_only_once = yes
@@ -488,7 +488,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_NED.11.a
+		name = fee_NED.11.OPT1
 
 		ai_chance = { factor = 0 }
 
@@ -501,7 +501,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = fee_NED.11.b
+		name = fee_NED.11.OPT2
 
 		ai_chance = { factor = 100 }
 
@@ -518,14 +518,14 @@ country_event = {
 #The Dutch impede us
 country_event = {
 	id = fee_NED.12
-	title = fee_NED.12.t
-	desc = fee_NED.12.d
+	title = fee_NED.12.T
+	desc = fee_NED.12.D
 	picture = LIBERUM_VETO_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = fee_NED.12.a
+		name = fee_NED.12.OPT1
 
 		ai_chance = { factor = 100 }
 
@@ -537,7 +537,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_NED.12.b
+		name = fee_NED.12.OPT2
 
 		ai_chance = { factor = 0 }
 	}

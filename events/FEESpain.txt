@@ -6,8 +6,8 @@ namespace = fee_SPA
 
 country_event = {
 	id = fee_SPA.1
-	title = fee_SPA.1.t
-	desc = fee_SPA.1.d
+	title = fee_SPA.1.T
+	desc = fee_SPA.1.D
 	picture = ADVISOR_eventPicture
 
 	fire_only_once = yes
@@ -29,14 +29,14 @@ country_event = {
 
 	# His work in naples makes the crown proud.
 	option = {
-		name = fee_SPA.1.a
+		name = fee_SPA.1.OPT1
 		121 = { add_base_tax = 1 }
 		121 = { add_base_production = 1 }
 	}
 
 	# His talent should be used in other parts of our country.
 	option = {
-		name = fee_SPA.1.b
+		name = fee_SPA.1.OPT2
 		add_adm_power = 50
 		add_dip_power = 25
 	}

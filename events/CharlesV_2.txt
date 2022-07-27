@@ -28,8 +28,8 @@ country_event = {
 	
 	#Abdicate option
 	option = {
-		name = charlesv.3.a
-		custom_tooltip = charlesv.10.a.tt
+		name = charlesv.3.OPT1
+		custom_tooltip = charlesv.10.OPT1.tt
 		break_union = HAB			#Breaks the PU with Austria
 		hidden_effect = {
 			ROOT = {
@@ -144,7 +144,7 @@ country_event = {
 	
 	#Don't Abdicate option (mostly just for the player). Will make things even harder for Charles.
 	option = {
-		name = charlesv.3.b
+		name = charlesv.3.OPT2
 		set_country_flag = abdicate_option
 		add_ruler_modifier = {
 			name = charles_is_weak
@@ -260,10 +260,10 @@ country_event = {
 	
 	#Abdicate option
 	option = {
-		name = charlesv.10.a
+		name = charlesv.10.OPT1
 		break_union = HAB			#Breaks the PU with Austria
 		
-		custom_tooltip = charlesv.10.a.tt
+		custom_tooltip = charlesv.10.OPT1.tt
 		hidden_effect = {
 			ROOT = {
 				if = {
@@ -374,7 +374,7 @@ country_event = {
 	
 	#Don't Abdicate option (mostly just for the player)
 	option = {
-		name = charlesv.10.b
+		name = charlesv.10.OPT2
 		set_country_flag = abdicate_option
 		HAB = {
 			capital_scope = {
@@ -495,7 +495,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = charlesv.4.a
+		name = charlesv.4.OPT1
 		set_country_flag = charlesv_dead	#Prevents chain from continuing
 	}
 }

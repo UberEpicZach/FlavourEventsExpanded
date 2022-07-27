@@ -1434,7 +1434,7 @@ country_event = {
 		name = FEE_France_Events.20.OPT1
 
 		add_country_modifier = {
-			name = feee_scots_mercenaries
+			name = fee_france_scots_mercenaries
 			duration = -1
 		}
 		custom_tooltip = FEE_GARDE_ECOSSAISE_TT
@@ -1449,6 +1449,112 @@ country_event = {
 	}
 }
 
+# Sampiero Corso
+country_event = {
+	id = FEE_France_Events.21
+	title = FEE_France_Events.21.T
+	desc = FEE_France_Events.21.D
+	picture = ADVISOR_eventPicture
+	
+	trigger = {
+		is_year = 1550
+		tag = FRA
+		exists = GEN
+		war_with = GEN
+		NOT = { is_year = 1580 }
+		GEN = {
+			owns_core_province = 1247
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 60
+		modifier = {
+			factor = 0.4
+			1247 = {
+				unrest = 1
+			}
+		}
+	}
+	
+	option = {
+		name = FEE_France_Events.21.OPT1
+		add_claim = 1247
+
+		GEN = {
+			country_event = { id = FEE_Genoa_Events.2 days = 3 }
+		}
+	}
+}
+
+#Internal Toll Systems
+country_event = {
+	id = FEE_France_Events.22
+	title = FEE_France_Events.22.T
+	desc = FEE_France_Events.22.D 
+	picture = HARBOUR_eventPicture
+	
+	trigger = {
+		is_year = 1600
+		tag = FRA
+		NOT = { is_year = 1800 }
+		num_of_cities = 12
+		is_at_war = no
+		government = monarchy
+		NOT = { has_country_modifier = fee_france_revamped_tolls }
+		NOT = { has_country_modifier = fee_france_bad_tolls_timer }
+	}
+	
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.5
+			treasury = 100
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			add_country_modifier = {
+				name = fee_france_bad_tolls_timer
+				duration = 7300
+			}
+		}
+	}
+	
+	option = {
+		name = FEE_France_Events.22.OPT1
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 50
+				treasury = 500
+			}
+		}
+
+		add_years_of_income = -0.1
+		add_inflation = 1
+	}
+
+	option = {
+		name = FEE_France_Events.22.OPT2
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 50
+				treasury = 500
+			}
+		}
+
+		add_years_of_income = -1.5
+		add_inflation = -2
+		add_country_modifier = {
+			name = fee_france_revamped_tolls
+			duration = -1
+		}
+	}
+}
+
 #Hidden Event
 country_event = {
 	id = FEE_France_Events.201
@@ -1460,12 +1566,12 @@ country_event = {
 	hidden = yes
 
 	trigger = {
-		has_country_modifier = feee_scots_mercenaries
+		has_country_modifier = fee_france_scots_mercenaries
 		NOT = { current_age = age_of_discovery }
 	}
 
 	immediate = {
-		remove_country_modifier = feee_scots_mercenaries
+		remove_country_modifier = fee_france_scots_mercenaries
 	}
 
 	option = {

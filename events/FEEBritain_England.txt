@@ -698,7 +698,7 @@ province_event = {
 		}
 	}
 	option = {
-		name = fee_gbr_eng.13.a
+		name = fee_gbr_eng.13.OPT1
 	}
 }
 
@@ -733,7 +733,7 @@ province_event = {
 		remove_province_modifier = fee_gbr_eng_statute_province_modifier
 	}
 	option = {
-		name = fee_gbr_eng.14.a
+		name = fee_gbr_eng.14.OPT1
 	}
 }
 
@@ -826,8 +826,8 @@ country_event = {
 
 country_event = {
 	id = fee_gbr_eng.16
-	title = fee_gbr_eng.16.t
-	desc = fee_gbr_eng.16.d
+	title = fee_gbr_eng.16.T
+	desc = fee_gbr_eng.16.D
 	picture = ADVISOR_eventPicture
 	fire_only_once = yes
 	major = yes
@@ -848,7 +848,7 @@ country_event = {
 		months = 9
 	}
 	option = {
-		name = fee_gbr_eng.16.a
+		name = fee_gbr_eng.16.OPT1
 		236 = {
 			add_devastation = 30
 			add_province_modifier = {
@@ -862,8 +862,8 @@ country_event = {
 
 country_event = {
 	id = fee_gbr_eng.17
-	title = fee_gbr_eng.17.t
-	desc = fee_gbr_eng.17.d
+	title = fee_gbr_eng.17.T
+	desc = fee_gbr_eng.17.D
 	picture = ADVISOR_eventPicture
 	fire_only_once = yes
 	trigger = {
@@ -884,7 +884,7 @@ country_event = {
 		months = 9
 	}
 	option = {
-		name = fee_gbr_eng.17.a
+		name = fee_gbr_eng.17.OPT1
 		236 = {
 			add_devastation = 50
 			add_province_modifier = {
@@ -903,13 +903,13 @@ country_event = {
 
 country_event = {
 	id = fee_gbr_eng.18
-	title = fee_gbr_eng.18.t
-	desc = fee_gbr_eng.18.d
+	title = fee_gbr_eng.18.T
+	desc = fee_gbr_eng.18.D
 	picture = ADVISOR_eventPicture
 	fire_only_once = yes
 	is_triggered_only = yes
 	option = {
-		name = fee_gbr_eng.18.a
+		name = fee_gbr_eng.18.OPT1
 		236 = {
 			remove_province_modifier = fee_destruction_of_the_capital
 			add_province_modifier = {
@@ -922,7 +922,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = fee_gbr_eng.18.b
+		name = fee_gbr_eng.18.OPT2
 		236 = {
 			remove_province_modifier = fee_destruction_of_the_capital
 			add_province_modifier = {
@@ -935,7 +935,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = fee_gbr_eng.18.c
+		name = fee_gbr_eng.18.OPT3
 		236 = {
 			remove_province_modifier = fee_destruction_of_the_capital
 			add_province_modifier = {
@@ -951,8 +951,8 @@ country_event = {
 
 country_event = {
 	id = fee_gbr_eng.19
-	title = fee_gbr_eng.19.t
-	desc = fee_gbr_eng.19.d
+	title = fee_gbr_eng.19.T
+	desc = fee_gbr_eng.19.D
 	picture = ADVISOR_eventPicture
 	fire_only_once = yes
 	trigger = {
@@ -993,7 +993,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = fee_gbr_eng.19.a
+		name = fee_gbr_eng.19.OPT1
 		add_years_of_income = 0.2
 		if = {
 			limit = {
@@ -1020,7 +1020,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = fee_gbr_eng.19.b
+		name = fee_gbr_eng.19.OPT2
 		FRA = {
 			add_opinion = {
 				who = ROOT

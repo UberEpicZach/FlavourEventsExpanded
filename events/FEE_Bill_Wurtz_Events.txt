@@ -26,7 +26,7 @@ country_event = {
 		months = 1
 	}
 	option = {
-		name = FEE_Bill_Wurtz_Events.1.a
+		name = FEE_Bill_Wurtz_Events.1.OPT1
 		add_prestige = 10
 		if = {
 			limit = {
@@ -60,7 +60,7 @@ country_event = {
 		months = 1
 	}
 	option = {
-		name = FEE_Bill_Wurtz_Events.2.a
+		name = FEE_Bill_Wurtz_Events.2.OPT1
 		every_country = {
 			limit = {
 				capital_scope = {
@@ -94,13 +94,13 @@ country_event = {
 		months = 60
 	}
 	option = {
-		name = FEE_Bill_Wurtz_Events.3.a
+		name = FEE_Bill_Wurtz_Events.3.OPT1
 		add_treasury = 400
 		set_country_flag = bill_wurtz_indulgences
 		add_reform_desire = 0.03
 	}
 	option = {
-		name = FEE_Bill_Wurtz_Events.3.b
+		name = FEE_Bill_Wurtz_Events.3.OPT2
 		add_stability_or_adm_power = yes
 		set_country_flag = bill_wurtz_indulgences
 		add_reform_desire = 0.03
@@ -135,7 +135,7 @@ country_event = {
 		months = 12
 	}
 	option = {
-		name = FEE_Bill_Wurtz_Events.4.a
+		name = FEE_Bill_Wurtz_Events.4.OPT1
 		add_country_modifier = {
 			name = FEE_Bill_Wurtz_Spice_Trade_Monopoly
 			duration = 10950
@@ -164,7 +164,7 @@ country_event = {
 		months = 24
 	}
 	option = {
-		name = FEE_Bill_Wurtz_Events.5.a
+		name = FEE_Bill_Wurtz_Events.5.OPT1
 		add_country_modifier = {
 			name = FEE_Bill_Wurtz_Quest_for_Pillaging
 			duration = 5475
@@ -191,7 +191,7 @@ country_event = {
 		months = 120
 	}
 	option = {
-		name = FEE_Bill_Wurtz_Events.6.a
+		name = FEE_Bill_Wurtz_Events.6.OPT1
 		add_prestige = 10
 		# a perma increase to furs stacks a bit too much, might to be temporary later
 		change_price = {
@@ -225,7 +225,7 @@ country_event = {
 		months = 120
 	}
 	option = {
-		name = FEE_Bill_Wurtz_Events.7.a
+		name = FEE_Bill_Wurtz_Events.7.OPT1
 		add_country_modifier = {
 			name = FEE_Bill_Wurtz_Stolen_Spice_Trade
 			duration = 7300
@@ -266,7 +266,7 @@ country_event = {
 		months = 120
 	}
 	option = {
-		name = FEE_Bill_Wurtz_Events.8.a
+		name = FEE_Bill_Wurtz_Events.8.OPT1
 		add_years_of_income = 1
 		set_country_flag = bill_wurtz_sugar_slaves
 	}
@@ -292,7 +292,7 @@ country_event = {
 		months = 1
 	}
 	option = {
-		name = FEE_Bill_Wurtz_Events.9.a
+		name = FEE_Bill_Wurtz_Events.9.OPT1
 		add_disaster_progress = {
 			disaster = revolution
 			value = 10
@@ -319,7 +319,7 @@ country_event = {
 		months = 12
 	}
 	option = {
-		name = FEE_Bill_Wurtz_Events.10.a
+		name = FEE_Bill_Wurtz_Events.10.OPT1
 		add_liberty_desire = 60
 		random_owned_province = {
 			spawn_rebels = {
@@ -357,7 +357,7 @@ country_event = {
 		months = 1
 	}
 	option = {
-		name = FEE_Bill_Wurtz_Events.11.a
+		name = FEE_Bill_Wurtz_Events.11.OPT1
 		add_country_modifier = {
 			name = FEE_Bill_Wurtz_First_To_Steam
 			duration = 1825
