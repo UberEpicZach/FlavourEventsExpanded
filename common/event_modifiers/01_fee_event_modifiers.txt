@@ -130,13 +130,6 @@ hungarian_renaissance = {
 	prestige = 1
 }
 
-# Athleta Christi
-athleta_christi = {
-	tolerance_own = 1
-	prestige = 0.5
-	global_unrest = -1
-}
-
 #Ottomans seizing the wheat of WAL or MOL
 fee_feeding_the_army_using_WAL = {
 	manpower_recovery_speed = 0.075
@@ -292,17 +285,6 @@ fee_thornton_colonize = {
 	colonists = 1
 }
 
-#Ajuuraan integrates Mogadishu currency
-fee_mogadishu_currency = {
-	trade_efficiency = 0.05
-	interest = -0.5
-}
-
-fee_mogadishu_administration = {
-	local_unrest = -1
-	local_autonomy = 0.03
-}
-
 #Toob Menadir for Ajuuraan or Mogadishu
 fee_toob_menadir = {
 	local_production_efficiency = 0.2
@@ -427,25 +409,6 @@ fee_janissaries_against_ruler = {
 	global_unrest = 1
 }
 
-#Aragon and Pedro de Arbues
-fee_arbues_saint_province = {
-	local_unrest = 3
-}
-
-fee_arbues_saint = {
-	global_missionary_strength = 0.01
-	tolerance_heretic = -1
-	tolerance_heathen = -1
-}
-
-fee_arbues_no_province = {
-	local_unrest = -1
-}
-
-fee_arbues_no = {
-	tolerance_heathen = 1
-	tolerance_heretic = 1
-}
 
 fee_alteraciones_check = {
 }
@@ -502,11 +465,6 @@ fee_channel_slow_five = {
 }
 
 fee_imperial_canal_event_timer = {
-}
-
-#Miracle by Our Lady of the Pillar
-fee_pillar_miracle = {
-	stability_cost_modifier = -0.15
 }
 
 # Citadel of Jaca
@@ -655,16 +613,6 @@ fee_DAN_freedom_press = {
 }
 
 fee_DAN_marriage = {
-}
-
-#Ajuuraan army
-fee_AJU_army = {
-	global_manpower_modifier = 0.1
-}
-
-fee_AJU_mercenary = {
-	mercenary_cost = -0.1
-	merc_maintenance_modifier = -0.1
 }
 
 #The Enlightenment modifiers

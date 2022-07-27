@@ -90,12 +90,6 @@ fee_olav_shrine_destroyed = {
 	yearly_decay = 0.5
 }
 
-#Toob Menadir Trade
-fee_toob_menadir_trade = {
-	opinion = 20
-	yearly_decay = 0.5
-}
-
 #Rivalry or Reconciliation for Saxony and Brandenburg
 fee_against_hohenzollern = {
 	opinion = -30

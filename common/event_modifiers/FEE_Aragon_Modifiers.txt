@@ -1,0 +1,24 @@
+#Aragon and Pedro de Arbues
+fee_aragon_arbues_saint_province = {
+	local_unrest = 3
+}
+
+fee_aragon_arbues_saint = {
+	global_missionary_strength = 0.01
+	tolerance_heretic = -1
+	tolerance_heathen = -1
+}
+
+fee_aragon_arbues_no_province = {
+	local_unrest = -1
+}
+
+fee_aragon_arbues_no = {
+	tolerance_heathen = 1
+	tolerance_heretic = 1
+}
+
+#Miracle by Our Lady of the Pillar
+fee_aragon_pillar_miracle = {
+	stability_cost_modifier = -0.15
+}

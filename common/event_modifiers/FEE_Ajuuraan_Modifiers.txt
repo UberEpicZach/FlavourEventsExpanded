@@ -1,0 +1,18 @@
+
+#Ajuuraan integrates Mogadishu currency
+fee_ajuuraan_mogadishu_currency = {
+	trade_efficiency = 0.05
+	interest = -0.5
+}
+fee_ajuuraan_mogadishu_administration = {
+	local_unrest = -1
+	local_autonomy = 0.03
+}
+#Ajuuraan army
+fee_ajuuraan_local_conscripts = {
+	global_manpower_modifier = 0.1
+}
+fee_ajuuraan_reliance_mercenaries = {
+	mercenary_cost = -0.1
+	merc_maintenance_modifier = -0.1
+}
