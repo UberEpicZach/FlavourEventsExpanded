@@ -490,7 +490,7 @@ country_event = {
 
 		add_treasury = -150
 		add_country_modifier = {
-			name = fee_building_imperial_canal
+			name = fee_aragon_building_imperial_canal
 			duration = -1
 			hidden = yes
 		}
@@ -500,6 +500,7 @@ country_event = {
 		ai_chance = {
 			factor = 10
 		}
+
 		add_stability_or_adm_power = yes
 		add_prestige = -5
 	}
@@ -513,67 +514,78 @@ country_event = {
 	picture = HARBOUR_eventPicture
 	
 	trigger = {
-		has_country_modifier = fee_building_imperial_canal
-		has_country_modifier = fee_channel_step_four
+		has_country_modifier = fee_aragon_building_imperial_canal
+		has_country_modifier = fee_aragon_channel_step_four
 	}
 	
 	mean_time_to_happen = {
 		months = 24
 		modifier = {
 			factor = 1.2
-			has_country_modifier = fee_channel_slow_one
+			has_country_modifier = fee_aragon_channel_slow_one
 		}
 		modifier = {
 			factor = 1.1
-			has_country_modifier = fee_channel_slow_two
+			has_country_modifier = fee_aragon_channel_slow_two
 		}
 		modifier = {
 			factor = 1.1
-			has_country_modifier = fee_channel_slow_three
+			has_country_modifier = fee_aragon_channel_slow_three
 		}
 		modifier = {
 			factor = 1.1
-			has_country_modifier = fee_channel_slow_four
+			has_country_modifier = fee_aragon_channel_slow_four
 		}
 		modifier = {
 			factor = 2
-			has_country_modifier = fee_channel_major_delay
+			has_country_modifier = fee_aragon_channel_major_delay
 		}
 	}
 	
 	immediate = {
 		hidden_effect = {
-			remove_country_modifier = fee_building_imperial_canal
-			remove_country_modifier = fee_channel_step_one
-			remove_country_modifier = fee_channel_step_two
-			remove_country_modifier = fee_channel_step_three
-			remove_country_modifier = fee_channel_step_four
-			remove_country_modifier = fee_channel_step_five
-			remove_country_modifier = fee_channel_slow_one
-			remove_country_modifier = fee_channel_slow_two
-			remove_country_modifier = fee_channel_slow_three
-			remove_country_modifier = fee_channel_slow_four
-			remove_country_modifier = fee_channel_major_delay
+			remove_country_modifier = fee_aragon_building_imperial_canal
+			remove_country_modifier = fee_aragon_channel_step_one
+			remove_country_modifier = fee_aragon_channel_step_two
+			remove_country_modifier = fee_aragon_channel_step_three
+			remove_country_modifier = fee_aragon_channel_step_four
+			remove_country_modifier = fee_aragon_channel_step_five
+			remove_country_modifier = fee_aragon_channel_slow_one
+			remove_country_modifier = fee_aragon_channel_slow_two
+			remove_country_modifier = fee_aragon_channel_slow_three
+			remove_country_modifier = fee_aragon_channel_slow_four
+			remove_country_modifier = fee_aragon_channel_major_delay
 		}
 	}
 	
 	option = {
 		name = FEE_Aragon_Events.8.OPT1
+	
 		add_prestige = 10
 		add_country_modifier = {
-			name = fee_imperial_canal
+			name = fee_aragon_imperial_canal
 			duration = -1
 		}
 		214 = {
-			add_province_modifier = {
-				name = fee_imperial_canal_province
-				duration = -1
+			if = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = fee_aragon_imperial_canal_province
+					duration = -1
+				}
 			}
 		}
 		210 = {
-			add_province_modifier = {
-				name = fee_imperial_canal_province
-				duration = -1
+			if = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = fee_aragon_imperial_canal_province
+					duration = -1
+				}
 			}
 		}
 	}
@@ -613,19 +625,21 @@ country_event = {
 	
 	option = {
 		name = FEE_Aragon_Events.9.OPT1
+
 		add_prestige = -5
 	}
 	option = {
 		name = FEE_Aragon_Events.9.OPT2
+
 		add_treasury = -50
+		add_mil_power = 25
 		211 = {
+			add_base_manpower = 1
 			add_province_modifier = {
-				name = fee_ciudadela_jaca
+				name = fee_aragon_ciudadela_jaca
 				duration = -1
 			}
-			add_base_manpower = 1
 		}
-		add_mil_power = 25
 	}
 }
 
@@ -646,9 +660,7 @@ country_event = {
 			}
 			AND = {
 				tag = SPA
-				NOT = {
-					exists = SPA
-				}
+				NOT = { exists = ARA }
 			}
 		}
 		OR = {
@@ -664,39 +676,71 @@ country_event = {
 	
 	option = {
 		name = FEE_Aragon_Events.10.OPT1
+
+		add_liberty_desire = 10
 		214 = {
-			add_province_modifier = {
-				name = fee_foreign_viceroy_province
-				duration = 7300
+			if = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = fee_aragon_foreign_viceroy_province
+					duration = 7300
+				}
 			}
 		}
 		211 = {
-			add_province_modifier = {
-				name = fee_foreign_viceroy_province
-				duration = 7300
+			if = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = fee_aragon_foreign_viceroy_province
+					duration = 7300
+				}
 			}
 		}
 		2990 = {
-			add_province_modifier = {
-				name = fee_foreign_viceroy_province
-				duration = 7300
+			if = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = fee_aragon_foreign_viceroy_province
+					duration = 7300
+				}
 			}
 		}
-		add_liberty_desire = 10
 	}
 	
 	option = {
 		name = FEE_Aragon_Events.10.OPT2
+
+		add_adm_power = -50
 		214 = {
-			add_local_autonomy = 50
+			if = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_local_autonomy = 50
+			}
 		}
 		211 = {
-			add_local_autonomy = 50
+			if = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_local_autonomy = 50
+			}
 		}
 		2990 = {
-			add_local_autonomy = 50
+			if = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_local_autonomy = 50
+			}
 		}
-		add_adm_power = -50
 	}
 }
 
@@ -714,9 +758,7 @@ country_event = {
 			tag = ARA
 			AND = {
 				tag = SPA
-				NOT = {
-					exists = ARA
-				}
+				NOT = { exists = ARA }
 			}
 		}
 		is_year = 1520
@@ -736,6 +778,7 @@ country_event = {
 	
 	option = {
 		name = FEE_Aragon_Events.11.OPT1
+
 		define_advisor = {
 			type = philosopher
 			name = "Jeronima Zurita"
@@ -743,8 +786,10 @@ country_event = {
 			discount = yes
 		}
 	}
+
 	option = {
 		name = FEE_Aragon_Events.11.OPT2
+
 		add_adm_power = 100
 	}
 }
@@ -787,6 +832,7 @@ country_event = {
 				has_idea_group = religious_ideas
 			}
 		}
+
 		add_papal_influence = -15
 		define_advisor = {
 			type = philosopher
@@ -795,15 +841,17 @@ country_event = {
 			discount = yes
 		}
 		add_country_modifier = {
-			name = fee_acceptance
+			name = fee_aragon_religious_acceptance
 			duration = 3650
 		}
 	}
+
 	option = {
 		name = FEE_Aragon_Events.12.OPT2
 		ai_chance = {
 			factor = 75
 		}
+
 		add_papal_influence = 15
 		add_stability_or_adm_power = yes
 		random_province = {
@@ -812,7 +860,9 @@ country_event = {
 				religion = reformed
 			}
 			province_event = {
-				id = FEE_Aragon_Events.13 days = 30 random = 10
+				id = FEE_Aragon_Events.13
+				days = 30
+				random = 10
 			}
 		}
 	}
@@ -829,14 +879,17 @@ province_event = {
 	
 	option = {
 		name = FEE_Aragon_Events.13.OPT1
+
 		owner = {
 			add_stability_or_adm_power = yes
 			add_fervor = 25
 			add_church_power = 25
 		}
 	}
+
 	option = {
 		name = FEE_Aragon_Events.13.OPT2
+
 		owner = {
 			define_advisor = {
 				type = philosopher
@@ -845,7 +898,7 @@ province_event = {
 				discount = yes
 			}
 			add_country_modifier = {
-				name = fee_acceptance
+				name = fee_aragon_religious_acceptance
 				duration = 3650
 			}
 		}
@@ -881,6 +934,7 @@ country_event = {
 	
 	option = {
 		name = FEE_Aragon_Events.14.OPT1
+
 		define_advisor = {
 			type = philosopher
 			skill = 2
@@ -891,6 +945,7 @@ country_event = {
 	}
 	option = {
 		name = FEE_Aragon_Events.14.OPT2
+
 		add_stability_or_adm_power = yes
 		add_prestige = 10
 	}
@@ -942,13 +997,15 @@ country_event = {
 				fort_level = 2
 			}
 		}
+
 		214 = {
 			add_province_modifier = {
-				name = fee_defend_zaragoza
+				name = fee_aragon_defend_zaragoza
 				duration = -1
 			}
 		}
 	}
+
 	option = {
 		name = FEE_Aragon_Events.15.OPT2
 		trigger = {
@@ -958,6 +1015,7 @@ country_event = {
 				}
 			}
 		}
+
 		random_owned_province = {
 			limit = {
 				any_neighbor_province = {
@@ -966,7 +1024,7 @@ country_event = {
 				fort_level = 2
 			}
 			add_province_modifier = {
-				name = fee_defend_zaragoza
+				name = fee_aragon_defend_zaragoza
 				duration = -1
 			}
 		}
@@ -983,9 +1041,9 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		has_country_modifier = fee_building_imperial_canal
+		has_country_modifier = fee_aragon_building_imperial_canal
 		NOT = {
-			has_country_modifier = fee_imperial_canal_event_timer
+			has_country_modifier = fee_aragon_imperial_canal_event_timer
 		}
 	}
 	
@@ -996,12 +1054,12 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			add_country_modifier = {
-				name = fee_imperial_canal_event_timer
+				name = fee_aragon_imperial_canal_event_timer
 				duration = 365
 				hidden = yes
 			}
 			add_country_modifier = {
-				name = fee_channel_step_one
+				name = fee_aragon_channel_step_one
 				duration = -1
 				hidden = yes
 			}
@@ -1018,11 +1076,11 @@ country_event = {
 		name = FEE_Aragon_Events.16.OPT2
 		add_adm_power = -10
 		add_country_modifier = {
-				name = fee_channel_slow_one
+				name = fee_aragon_channel_slow_one
 				duration = -1
 				hidden = yes
 		}
-		custom_tooltip = FEE_Aragon_Events.16.tt
+		custom_tooltip = FEE_Aragon_Events.16.TT
 	}
 }
 
@@ -1035,10 +1093,10 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		has_country_modifier = fee_building_imperial_canal
-		has_country_modifier = fee_channel_step_one
+		has_country_modifier = fee_aragon_building_imperial_canal
+		has_country_modifier = fee_aragon_channel_step_one
 		NOT = {
-			has_country_modifier = fee_imperial_canal_event_timer
+			has_country_modifier = fee_aragon_imperial_canal_event_timer
 		}
 	}
 	
@@ -1046,19 +1104,19 @@ country_event = {
 		months = 18
 		modifier = {
 			factor = 1.2
-			has_country_modifier = fee_channel_slow_one
+			has_country_modifier = fee_aragon_channel_slow_one
 		}
 	}
 	
 	immediate = {
 		hidden_effect = {
 			add_country_modifier = {
-				name = fee_imperial_canal_event_timer
+				name = fee_aragon_imperial_canal_event_timer
 				duration = 365
 				hidden = yes
 			}
 			add_country_modifier = {
-				name = fee_channel_step_two
+				name = fee_aragon_channel_step_two
 				duration = -1
 				hidden = yes
 			}
@@ -1069,29 +1127,31 @@ country_event = {
 		name = FEE_Aragon_Events.17.OPT1
 		hidden_effect = {
 			add_country_modifier = {
-				name = fee_pignatelli
+				name = fee_aragon_pignatelli
 				duration = -1
 				hidden = yes
 			}
 		}
+
+		add_adm_power = -50
 		define_advisor = {
 			type = philosopher
 			skill = 2
 			name = "Ramon Pignatelli"
 			discount = yes
 		}
-		add_adm_power = -10
 	}
 	
 	option = {
 		name = FEE_Aragon_Events.17.OPT2
-			add_country_modifier = {
-				name = fee_channel_slow_two
-				duration = -1
-				hidden = yes
-			}
-		add_adm_power = 20
-		custom_tooltip = FEE_Aragon_Events.16.tt
+
+		add_adm_power = 25
+		custom_tooltip = FEE_Aragon_Events.16.TT
+		add_country_modifier = {
+			name = fee_aragon_channel_slow_two
+			duration = -1
+			hidden = yes
+		}
 	}
 }
 
@@ -1104,11 +1164,12 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		has_country_modifier = fee_building_imperial_canal
-		has_country_modifier = fee_channel_step_two
-		has_country_modifier = fee_pignatelli
+		owns = 214
+		has_country_modifier = fee_aragon_building_imperial_canal
+		has_country_modifier = fee_aragon_channel_step_two
+		has_country_modifier = fee_aragon_pignatelli
 		NOT = {
-			has_country_modifier = fee_imperial_canal_event_timer
+			has_country_modifier = fee_aragon_imperial_canal_event_timer
 		}
 	}
 	
@@ -1117,15 +1178,18 @@ country_event = {
 	}
 	
 	immediate = {
+		hidden_effect = {
 			add_country_modifier = {
-				name = fee_imperial_canal_event_timer
+				name = fee_aragon_imperial_canal_event_timer
 				duration = 365
 				hidden = yes
 			}
+		}
 	}
 	
 	option = {
 		name = FEE_Aragon_Events.18.OPT1
+
 		add_papal_influence = -15
 		214 = {
 			add_base_tax = 1
@@ -1133,13 +1197,14 @@ country_event = {
 	}
 	option = {
 		name = FEE_Aragon_Events.18.OPT2
+
 		add_papal_influence = 15
-			add_country_modifier = {
-				name = fee_channel_slow_three
-				duration = -1
-				hidden = yes
-			}
-		custom_tooltip = FEE_Aragon_Events.16.tt
+		custom_tooltip = FEE_Aragon_Events.16.TT
+		add_country_modifier = {
+			name = fee_aragon_channel_slow_three
+			duration = -1
+			hidden = yes
+		}
 	}
 }
 
@@ -1152,10 +1217,10 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		has_country_modifier = fee_building_imperial_canal
-		has_country_modifier = fee_channel_step_two
+		has_country_modifier = fee_aragon_building_imperial_canal
+		has_country_modifier = fee_aragon_channel_step_two
 		NOT = {
-			has_country_modifier = fee_imperial_canal_event_timer
+			has_country_modifier = fee_aragon_imperial_canal_event_timer
 		}
 	}
 	
@@ -1164,49 +1229,56 @@ country_event = {
 	}
 	
 	immediate = {
+		hidden_effect = {
 			add_country_modifier = {
-				name = fee_imperial_canal_event_timer
+				name = fee_aragon_imperial_canal_event_timer
 				duration = 365
 				hidden = yes
 			}
 			add_country_modifier = {
-				name = fee_channel_step_four
+				name = fee_aragon_channel_step_four
 				duration = -1
 				hidden = yes
 			}
+		}
 	}
 	
 	option = {
 		name = FEE_Aragon_Events.19.OPT1
+
 		add_years_of_income = -0.5
 	}
 	
 	option = {
 		name = FEE_Aragon_Events.19.OPT2
-		add_years_of_income = -0.2
 
+		custom_tooltip = FEE_Aragon_Events.16.TT
+		add_years_of_income = -0.2
+		hidden_effect = {
 			add_country_modifier = {
-				name = fee_channel_slow_four
+				name = fee_aragon_channel_slow_four
 				duration = -1
 				hidden = yes
 			}
-
-		custom_tooltip = FEE_Aragon_Events.16.tt
+		}
 	}
 	
 	option = {
 		name = FEE_Aragon_Events.19.OPT3
-		add_adm_power = -10
-		add_country_modifier = {
-				name = fee_channel_slow_four
+
+		add_adm_power = -50
+		custom_tooltip = FEE_Aragon_Events.19.TT
+		hidden_effect = {
+			add_country_modifier = {
+				name = fee_aragon_channel_slow_four
 				duration = -1
 				hidden = yes
 			}
-		add_country_modifier = {
-				name = fee_channel_major_delay
+			add_country_modifier = {
+				name = fee_aragon_channel_major_delay
 				duration = -1
 				hidden = yes
 			}
-		custom_tooltip = FEE_Aragon_Events.19.tt
+		}
 	}
 }
