@@ -251,7 +251,7 @@ country_event = {
 				}
 			}
 		}
-		
+
 		add_army_tradition = 5
 		custom_tooltip = fee_brandenburg_seizure_of_glogau_tt
 		BOH = {
@@ -2667,16 +2667,9 @@ country_event = {
 			tag = BRA
 			tag = PRU
 		}
-		NOT = {
-			RUP = {
-				exists = yes
-			}
-		}
 		is_year = 1535
 		NOT = { is_year = 1545 }
-		NOT = {
-			exists = RUP
-		}
+		NOT = { exists = RUP }
 	}
 
 	fire_only_once = yes
@@ -2684,28 +2677,26 @@ country_event = {
 	mean_time_to_happen = {
 		days = 120
 	}
-	immediate = {
-	}
 
 	option = {
 		name = FEE_Brandenburg_Events.39.OPT1
-		custom_tooltip = CE_BRA_BRA_KUS_Release
-		set_global_flag = CE_BRA_KUS_SPLIT_FLAG
+		ai_chance = {
+			factor = 1
+		}
+
+		custom_tooltip = fee_brandenburg_bra_kus_release_tt
+		set_global_flag = fee_bran_kus_split_flag
 		hidden_effect = {
-			every_owned_province = {
+			neumark_area = {
 				limit = {
-					OR = {
-						area = neumark_area
-						area = lusatia_area
-						# area = vorpommern_area 
-						# area = hinter_pommern_area 
-						# area = silesia_area 
-						# area = east_prussia_area 
-						# area = west_prussia_area 
-					}
-					owner = {
-						tag = BRA
-					}
+					owned_by = ROOT
+				}
+				cede_province = RUP
+				add_core = RUP
+			}
+			lusatia_area = {
+				limit = {
+					owned_by = ROOT
 				}
 				cede_province = RUP
 				add_core = RUP
@@ -2725,12 +2716,14 @@ country_event = {
 				override_country_name = "BRA_KUS"
 			}
 		}
-		ai_chance = {
-			factor = 1
-		}
 	}
+
 	option = {
 		name = FEE_Brandenburg_Events.39.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
 		add_stability = -2
 		random_owned_province = {
 			limit = {
@@ -2743,16 +2736,18 @@ country_event = {
 				leader = "Johann"
 			}
 		}
-		ai_chance = {
-			factor = 0
-		}
 	}
+
 	option = {
 		name = FEE_Brandenburg_Events.39.OPT3
 		trigger = {
 			has_country_modifier = bra_dispositio_achillea
 		}
+		ai_chance = {
+			factor = 1
+		}
 		highlight = yes
+
 		add_stability = -1
 		random_owned_province = {
 			limit = {
@@ -2765,13 +2760,10 @@ country_event = {
 				leader = "Johann"
 			}
 		}
-		ai_chance = {
-			factor = 1
-		}
 	}
 }
 
-#Brandenburg #The Ìnheritance of Brandenburg-Kustrin, 1571
+#Brandenburg #The Inheritance of Brandenburg-Kustrin, 1571
 country_event = {
 	id = FEE_Brandenburg_Events.40
 	title = FEE_Brandenburg_Events.40.T
@@ -2783,14 +2775,17 @@ country_event = {
 			tag = BRA
 			tag = PRU
 		}
-		has_global_flag = CE_BRA_KUS_SPLIT_FLAG
+		has_global_flag = fee_bran_kus_split_flag
 		OR = {
+			is_year = 1571
 			RUP = {
 				NOT = {
 					has_ruler_modifier = fee_bran_ruppin_infertility
 				}
 			}
-			is_year = 1571
+		}
+		RUP = {
+			is_subject_of = RUP
 		}
 	}
 
@@ -2820,12 +2815,13 @@ country_event = {
 					regency = yes
 				}
 			}
-			clr_global_flag = CE_BRA_KUS_SPLIT_FLAG
+			clr_global_flag = fee_bran_kus_split_flag
 		}
 	}
 
 	option = {
 		name = FEE_Brandenburg_Events.40.OPT1
+
 		BRA = {
 			inherit = RUP
 		}
@@ -2838,6 +2834,7 @@ country_event = {
 	title = FEE_Brandenburg_Events.41.T
 	desc = FEE_Brandenburg_Events.41.D
 	picture = ELECTION_REPUBLICAN_eventPicture
+
 	major = yes
 	major_trigger = {
 		OR = {
@@ -2853,7 +2850,10 @@ country_event = {
 		has_global_flag = fee_bran_pawning_zollern
 		1763 = {
 			owner = {
-				tag = BRA
+				OR = {
+					tag = BRA
+					tag = PRU
+				}
 			}
 		}
 	}
@@ -2870,34 +2870,72 @@ country_event = {
 
 	option = {
 		name = FEE_Brandenburg_Events.41.OPT1
+		ai_chance = {
+			factor = 0
+		}
+
 		tooltip = {
 			BOH = {
 				add_treasury = -75
 			}
+			if = {
+				limit = {
+					exists = BRA
+				}
+				BRA = {
+					add_treasury = 75
+				}
+			}
+			else = {
+				PRU = {
+					add_treasury = 75
+				}
+			}
+		}
+		if = {
+			limit = {
+				exists = BRA
+			}
 			BRA = {
-				add_treasury = 75
+				country_event = {
+					id = FEE_Brandenburg_Events.42
+					days = 30
+				}
 			}
 		}
-		BRA = {
-			country_event = {
-				id = FEE_Brandenburg_Events.42
-				days = 30
+		else = {
+			PRU = {
+				country_event = {
+					id = FEE_Brandenburg_Events.42
+					days = 30
+				}
 			}
-		}
-		ai_chance = {
-			factor = 0
 		}
 	}
 	option = {
 		name = FEE_Brandenburg_Events.41.OPT2
-		BRA = {
-			country_event = {
-				id = FEE_Brandenburg_Events.43
-				days = 30
-			}
-		}
 		ai_chance = {
 			factor = 1
+		}
+
+		if = {
+			limit = {
+				exists = BRA
+			}
+			BRA = {
+				country_event = {
+					id = FEE_Brandenburg_Events.43
+					days = 30
+				}
+			}
+		}
+		else = {
+			PRU = {
+				country_event = {
+					id = FEE_Brandenburg_Events.43
+					days = 30
+				}
+			}
 		}
 	}
 }
@@ -2908,6 +2946,7 @@ country_event = {
 	title = FEE_Brandenburg_Events.42.T
 	desc = FEE_Brandenburg_Events.42.D
 	picture = ELECTION_REPUBLICAN_eventPicture
+
 	major = yes
 	major_trigger = {
 		tag = BOH
@@ -2919,14 +2958,14 @@ country_event = {
 
 	option = {
 		name = FEE_Brandenburg_Events.42.OPT1
-		BOH = {
+
+		PREV = {
 			add_treasury = -75
 		}
-		BRA = {
-			add_treasury = 75
-		}
+		add_treasury = 75
 		1763 = {
-			cede_province = BOH
+			cede_province = PREV
+			add_core = PREV
 		}
 	}
 }
@@ -2937,37 +2976,38 @@ country_event = {
 	title = FEE_Brandenburg_Events.43.T
 	desc = FEE_Brandenburg_Events.43.D
 	picture = ELECTION_REPUBLICAN_eventPicture
-	major = yes
-	major_trigger = {
-		tag = BOH
-	}
 
 	is_triggered_only = yes
 
 	fire_only_once = yes
 
+	major = yes
+	major_trigger = {
+		tag = BOH
+	}
+
 	option = {
 		name = FEE_Brandenburg_Events.43.OPT1
-		BOH = {
-			add_treasury = 50
-		}
-		BRA = {
-			add_treasury = -50
-		}
-		1763 = {
-			add_local_autonomy = -25
-			remove_core = BOH
-		}
 		ai_chance = {
 			factor = 1
+		}
+
+		PREV = {
+			add_treasury = 50
+		}
+		add_treasury = -50
+		1763 = {
+			add_local_autonomy = -25
+			remove_core = PREV
 		}
 	}
 	option = {
 		name = FEE_Brandenburg_Events.43.OPT2
-		add_prestige = -10
 		ai_chance = {
 			factor = 0
 		}
+
+		add_prestige = -10
 	}
 }
 
@@ -2995,7 +3035,8 @@ country_event = {
 
 	option = {
 		name = FEE_Brandenburg_Events.44.OPT1
-		set_ruler_flag = CE_BRA_Hunting_Lodge
+
+		set_ruler_flag = fee_bran_hunting_lodge
 		if = {
 			limit = {
 				ai = no
@@ -3007,13 +3048,15 @@ country_event = {
 			duration = -1
 		}
 	}
+
 	option = {
 		name = FEE_Brandenburg_Events.44.OPT2
+
+		add_legitimacy_equivalent = { amount = -25 republican_tradition = -13 }
+		change_adm = -1
 		add_adm_power = -100
 		add_dip_power = -100
 		add_mil_power = -100
-		add_legitimacy_equivalent = { amount = -25 republican_tradition = -13 }
-		change_adm = -1
 		add_ruler_modifier = {
 			name = fee_bran_lover_of_the_hunt #-25% State Maintenance, -5% estate Loyalty
 			duration = -1
@@ -3035,7 +3078,7 @@ country_event = {
 		}
 		is_year = 1551
 		NOT = { is_year = 1560 }
-		has_ruler_flag = CE_BRA_Hunting_Lodge
+		has_ruler_flag = fee_bran_hunting_lodge
 	}
 
 	fire_only_once = yes
@@ -3046,7 +3089,8 @@ country_event = {
 
 	option = {
 		name = FEE_Brandenburg_Events.45.OPT1
-		clr_ruler_flag = CE_BRA_Hunting_Lodge
+
+		clr_ruler_flag = fee_bran_hunting_lodge
 		add_prestige = -15
 		add_ruler_modifier = {
 			name = fee_bran_beautiful_foundress #-0.5 Legitimacy
@@ -3069,7 +3113,7 @@ country_event = {
 		}
 		is_year = 1543
 		NOT = { is_year = 1570 }
-		has_ruler_flag = CE_BRA_Hunting_Lodge
+		has_ruler_flag = fee_bran_hunting_lodge
 	}
 
 	fire_only_once = yes
@@ -3080,27 +3124,36 @@ country_event = {
 
 	option = {
 		name = FEE_Brandenburg_Events.46.OPT1
-		
-		2969 = {
-			add_base_tax = 2
-			add_base_production= 1
+		ai_chance = {
+			factor = 1
 		}
+
 		add_country_modifier = {
 			name = fee_bran_jewish_tax
 			duration = 7300
 		}
-		ai_chance = {
-			factor = 1
+		2969 = {
+			add_base_tax = 2
+			add_base_production= 1
 		}
 	}
 	option = {
 		name = FEE_Brandenburg_Events.46.OPT2
-		add_estate_loyalty = {
-			estate = estate_church
-			loyalty = 10
-		}
 		ai_chance = {
 			factor = 0
+		}
+
+		if = {
+			limit = {
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = 10
+			}
+		}
+		else = {
+			add_adm_power = 25
 		}
 	}
 }
@@ -3123,11 +3176,9 @@ country_event = {
 				religion = catholic
 			}
 			AND = {
-				calc_true_if = {
-					all_owned_province = {
-						religion = protestant
-					}
-					amount = 3
+				num_of_owned_provinces_with = {
+					value = 3
+					religion = protestant
 				}
 				NOT = { religion = protestant }
 			}
@@ -3142,13 +3193,13 @@ country_event = {
 
 	option = {
 		name = FEE_Brandenburg_Events.47.OPT1
-		
+		ai_chance = {
+			factor = 1
+		}
+
 		add_ruler_modifier = {
 			name = fee_bran_religious_pragmatism
 			duration = -1
-		}	
-		ai_chance = {
-			factor = 1
 		}
 	}
 }
@@ -3183,27 +3234,27 @@ country_event = {
 
 	option = {
 		name = FEE_Brandenburg_Events.48.OPT1
-		
-		add_years_of_income = 0.5
 		ai_chance = {
 			factor = 1
 		}
+
+		add_years_of_income = 0.5
 	}
 
 	option = {
 		name = FEE_Brandenburg_Events.48.OPT2
-		
-		random_owned_province = {
-			add_base_tax = 1
-		}
-		random_owned_province = {
-			add_base_tax = 1
-		}
-		random_owned_province = {
-			add_base_tax = 1
-		}
 		ai_chance = {
 			factor = 1
+		}
+
+		random_owned_province = {
+			add_base_tax = 1
+		}
+		random_owned_province = {
+			add_base_tax = 1
+		}
+		random_owned_province = {
+			add_base_tax = 1
 		}
 	}
 }
@@ -3235,7 +3286,10 @@ country_event = {
 
 	option = {
 		name = FEE_Brandenburg_Events.49.OPT1
-		
+		ai_chance = {
+			factor = 1
+		}
+
 		define_advisor = {
 			type = court_jew
 			name = "Lippold Ben Chluchim"
@@ -3244,21 +3298,17 @@ country_event = {
 			culture = hebrew
 			religion = jewish
 		}
-
-		ai_chance = {
-			factor = 1
-		}
 	}
 
 	option = {
 		name = FEE_Brandenburg_Events.49.OPT2
-		
+		ai_chance = {
+			factor = 1
+		}
+
 		add_ruler_modifier = {
 			name = fee_bran_lippold_ben_chluchim
 			duration = -1
-		}
-		ai_chance = {
-			factor = 1
 		}
 	}
 }
@@ -3288,29 +3338,28 @@ country_event = {
 
 	option = {
 		name = FEE_Brandenburg_Events.50.OPT1
-		
+		ai_chance = {
+			factor = 0
+		}
+
 		add_years_of_income = 1
 		add_inflation = 3
-		custom_tooltip = CE_BRA_Could_Lead_To_Economic_Collapse
+		custom_tooltip = fee_brandenburg_could_lead_economic_collapse_tt
 		hidden_effect = {
 			country_event = {
 				id = FEE_Brandenburg_Events.51
 				days = 1825
 			}
 		}
-		ai_chance = {
-			factor = 0
-		}
 	}
 
 	option = {
 		name = FEE_Brandenburg_Events.50.OPT2
-		
-		add_legitimacy_equivalent = { amount = 5 republican_tradition = 3 }
-
 		ai_chance = {
 			factor = 1
 		}
+
+		add_legitimacy_equivalent = { amount = 5 republican_tradition = 3 }
 	}
 }
 
@@ -3330,10 +3379,10 @@ country_event = {
 		ai_chance = {
 			factor = 0
 		}
-		
+
 		add_years_of_income = 1
 		add_inflation = 3
-		custom_tooltip = CE_BRA_Could_Lead_To_Economic_Collapse
+		custom_tooltip = fee_brandenburg_could_lead_economic_collapse_tt
 		hidden_effect = {
 			country_event = {
 				id = FEE_Brandenburg_Events.52
@@ -3347,7 +3396,7 @@ country_event = {
 		ai_chance = {
 			factor = 1
 		}
-		
+
 		add_country_modifier = {
 			name = fee_bran_economic_downturn
 			duration = 3650
@@ -3368,14 +3417,13 @@ country_event = {
 
 	option = {
 		name = FEE_Brandenburg_Events.52.OPT1
-		
+		ai_chance = {
+			factor = 1
+		}
+
 		add_country_modifier = {
 			name = fee_bran_economic_collapse
 			duration = 7300
-		}
-
-		ai_chance = {
-			factor = 1
 		}
 	}
 }
@@ -3407,7 +3455,10 @@ country_event = {
 
 	option = {
 		name = FEE_Brandenburg_Events.53.OPT1
-		
+		ai_chance = {
+			factor = 1
+		}
+
 		add_years_of_income = 0.5
 		add_ruler_modifier = {
 			name = fee_bran_jewish_assets_seized
@@ -3426,13 +3477,14 @@ country_event = {
 				}
 			}
 		}
-		ai_chance = {
-			factor = 1
-		}
 	}
 
 	option = {
 		name = FEE_Brandenburg_Events.53.OPT2
+		ai_chance = {
+			factor = 1
+		}
+
 		add_years_of_income = -0.25
 		set_country_flag = fee_bran_expelled_the_jews
 		clr_country_flag = fee_bran_un_expelled_the_jews
@@ -3447,19 +3499,18 @@ country_event = {
 				}
 			}
 		}
-		ai_chance = {
-			factor = 1
-		}
 	}
+
 	option = {
 		name = FEE_Brandenburg_Events.53.OPT3
+		ai_chance = {
+			factor = 0
+		}
+
 		add_stability = -1
 		add_ruler_modifier = {
 			name = fee_bran_restored_jewish_privileges
 			duration = -1
-		}
-		ai_chance = {
-			factor = 0
 		}
 	}
 }
@@ -3477,7 +3528,7 @@ country_event = {
 
 	option = {
 		name = FEE_Brandenburg_Events.54.OPT1
-		
+
 		add_prestige = -10
 		kill_advisor = court_jew
 		ai_chance = {
@@ -3487,12 +3538,13 @@ country_event = {
 
 	option = {
 		name = FEE_Brandenburg_Events.54.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
 		country_event = {
 			id = FEE_Brandenburg_Events.55
 			days = 30
-		}
-		ai_chance = {
-			factor = 0
 		}
 	}
 }
@@ -3510,33 +3562,35 @@ country_event = {
 
 	option = {
 		name = FEE_Brandenburg_Events.55.OPT1
-		
-		add_stability = -1
-		kill_advisor = court_jew
 		ai_chance = {
 			factor = 0
 		}
+
+		add_stability = -1
+		kill_advisor = court_jew
 	}
 
 	option = {
 		name = FEE_Brandenburg_Events.55.OPT2
-		add_years_of_income = -0.1
-		add_prestige = -25
-		remove_advisor = court_jew
 		ai_chance = {
 			factor = 1
 		}
+
+		add_years_of_income = -0.1
+		add_prestige = -25
+		remove_advisor = court_jew
 	}
 	option = {
 		name = FEE_Brandenburg_Events.55.OPT3
 		trigger = {
 			has_ruler_modifier = fee_bran_restored_jewish_privileges
 		}
-		add_years_of_income = -0.1
-		add_prestige = -15
 		ai_chance = {
 			factor = 10
 		}
+
+		add_years_of_income = -0.1
+		add_prestige = -15
 	}
 }
 
@@ -3564,13 +3618,13 @@ country_event = {
 
 	option = {
 		name = FEE_Brandenburg_Events.56.OPT1
-		
+		ai_chance = {
+			factor = 1
+		}
+
 		add_ruler_modifier = {
 			name = fee_bran_elector_order_john
 			duration = -1
-		}
-		ai_chance = {
-			factor = 1
 		}
 	}
 }
@@ -3599,13 +3653,13 @@ country_event = {
 
 	option = {
 		name = FEE_Brandenburg_Events.57.OPT1
-		
+		ai_chance = {
+			factor = 1
+		}
+
 		add_country_modifier = {
 			name = fee_bran_knights_order_john
 			duration = 36500
-		}
-		ai_chance = {
-			factor = 1
 		}
 	}
 }
@@ -3634,7 +3688,10 @@ country_event = {
 
 	option = {
 		name = FEE_Brandenburg_Events.58.OPT1
-		
+		ai_chance = {
+			factor = 1
+		}
+
 		remove_country_modifier = fee_bran_knights_order_john
 		every_country = {
 			limit = {
@@ -3654,10 +3711,6 @@ country_event = {
 		random_owned_province = {
 			add_base_manpower = 1
 		}
-		
-		ai_chance = {
-			factor = 1
-		}
 	}
 }
 
@@ -3674,16 +3727,16 @@ country_event = {
 
 	option = {
 		name = FEE_Brandenburg_Events.59.OPT1
-		
-		capital_scope = {
-			add_base_manpower = 1
+		ai_chance = {
+			factor = 1
 		}
+
 		add_country_modifier = {
 			name = fee_bran_secularization_john
 			duration = 3650
 		}
-		ai_chance = {
-			factor = 1
+		capital_scope = {
+			add_base_manpower = 1
 		}
 	}
 }
@@ -3710,33 +3763,44 @@ country_event = {
 
 	option = {
 		name = FEE_Brandenburg_Events.60.OPT1
-		
-		4748 = {
-			add_province_modifier = {
-				name = fee_bran_margrave_dues
-				duration = 3650
-			}
+		ai_chance = {
+			factor = 1
 		}
-		50 = {
-			add_province_modifier = {
-				name = fee_bran_margrave_dues
-				duration = 3650
-			}
-		}
+
 		add_country_modifier = {
 			name = fee_bran_favors_called_in
 			duration = 3650
 		}
-		ai_chance = {
-			factor = 1
+		4748 = {
+			if = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = fee_bran_margrave_dues
+					duration = 3650
+				}
+			}
+		}
+		50 = {
+			if = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = fee_bran_margrave_dues
+					duration = 3650
+				}
+			}
 		}
 	}
 	option = {
 		name = FEE_Brandenburg_Events.60.OPT2
-		add_prestige = 5
 		ai_chance = {
 			factor = 0
 		}
+
+		add_prestige = 5
 	}
 }
 
@@ -3764,13 +3828,13 @@ country_event = {
 
 	option = {
 		name = FEE_Brandenburg_Events.61.OPT1
+		ai_chance = {
+			factor = 1
+		}
 
 		add_country_modifier = {
 			name = fee_bran_berliner_singing_boys
 			duration = 3650
-		}
-		ai_chance = {
-			factor = 1
 		}
 	}
 }
@@ -3789,21 +3853,21 @@ country_event = {
 		}
 		is_year = 1646
 		NOT = { is_year = 1676 }
+		owns = 50
+		owns = 1759
 		any_country = {
 			primary_culture = dutch
 			OR = {
 				has_opinion = {
-					who = BRA
+					who = ROOT
 					value = 100
 				}
-				has_opinion = {
-					who = PRU
+				reverse_has_opinion = {
+					who = ROOT
 					value = 100
 				}
 			}
 		}
-		owns = 50
-		owns = 1759
 	}
 
 	fire_only_once = yes
@@ -3814,29 +3878,25 @@ country_event = {
 
 	option = {
 		name = FEE_Brandenburg_Events.62.OPT1
+		ai_chance = {
+			factor = 1
+		}
 
-		50 = {
-			add_base_tax = 1
-		}
-		1759 = {
-			add_base_production = 1
-		}
+		add_adm_power = -50
 		add_country_modifier = {
 			name = fee_bran_dutch_agriculture_architecture
 			duration = 3650
 		}
-		add_adm_power = -50
-		ai_chance = {
-			factor = 1
-		}
+		50 = { add_base_tax = 1 }
+		1759 = { add_base_production = 1 }
 	}
 	option = {
 		name = FEE_Brandenburg_Events.62.OPT2
-
-		add_manpower = 1
 		ai_chance = {
 			factor = 0
 		}
+
+		add_manpower = 1
 	}
 }
 
@@ -3864,32 +3924,45 @@ country_event = {
 
 	option = {
 		name = FEE_Brandenburg_Events.63.OPT1
-
-		4786 = {
-			spawn_rebels = {
-				type = anti_tax_rebels
-				size = 1
-			}
-		}
-		add_estate_loyalty = {
-			estate = estate_nobles
-			loyalty = 10
-		}
 		ai_chance = {
 			factor = 1
+		}
+
+		if = {
+			limit = {
+				has_estate = estate_nobles
+			}
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 10
+			}
+		}
+		else = {
+			add_mil_power = 25
+		}
+		4786 = {
+			if = {
+				limit = {
+					owned_by = ROOT
+				}
+				spawn_rebels = {
+					type = anti_tax_rebels
+					size = 1
+				}
+			}
 		}
 	}
 	option = {
 		name = FEE_Brandenburg_Events.63.OPT2
+		ai_chance = {
+			factor = 0
+		}
 
 		add_manpower = 0.5
 		add_years_of_income = -0.1
 		add_estate_loyalty = {
 			estate = estate_nobles
 			loyalty = -10
-		}
-		ai_chance = {
-			factor = 0
 		}
 	}
 }
@@ -3908,14 +3981,12 @@ country_event = {
 		}
 		is_year = 1470
 		NOT = { is_year = 1490 }
-		calc_true_if = {
-			all_owned_province = {
-				OR = {
-					area = vorpommern_area 
-					area = hinter_pommern_area  
-				}
+		num_of_owned_provinces_with = {
+			value = 4
+			OR = {
+				area = vorpommern_area 
+				area = hinter_pommern_area  
 			}
-			amount = 4
 		}
 		is_at_war = yes
 		any_neighbor_country = {
@@ -3934,6 +4005,9 @@ country_event = {
 
 	option = {
 		name = FEE_Brandenburg_Events.64.OPT1
+		ai_chance = {
+			factor = 1
+		}
 
 		random_owned_province = {
 			limit = {
@@ -3944,12 +4018,15 @@ country_event = {
 				size = 2
 			}
 		}
-		ai_chance = {
-			factor = 1
-		}
 	}
+
 	option = {
 		name = FEE_Brandenburg_Events.64.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
+		add_war_exhaustion = -2
 		custom_tooltip = fee_brandenburg_release_pomerania_tt
 		hidden_effect = {
 			every_owned_province = {
@@ -3965,10 +4042,6 @@ country_event = {
 				join_all_offensive_wars_of = BRA
 				join_all_defensive_wars_of = BRA
 			}
-		}
-		add_war_exhaustion = -2
-		ai_chance = {
-			factor = 0
 		}
 	}
 }
