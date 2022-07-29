@@ -115,7 +115,7 @@ country_event = {
 			factor = 50
 		}
 
-		add_papal_influence = -5
+		change_religious_influence_equivalent_fee = { remove = 5 }
 	}
 }
 
@@ -305,7 +305,7 @@ country_event = {
 				duration = -1
 			}
 		}
-		add_papal_influence = 10
+		change_religious_influence_equivalent_fee = { add = 10 }
 	}
 }
 

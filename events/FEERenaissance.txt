@@ -384,11 +384,11 @@ country_event = {
 
 	option = {
 		name = fee_renaissance.10.OPT1
-		add_papal_influence = 15
+		change_religious_influence_equivalent_fee = { add = 15 }
 	}
 	option = {
 		name = fee_renaissance.10.OPT2
-		add_papal_influence = -5
+		change_religious_influence_equivalent_fee = { remove = 5 }
 		add_prestige = 5
 	}
 }
@@ -577,7 +577,7 @@ province_event = {
 		}
 		owner = {
 			add_adm_power = 10
-			add_legitimacy = 5
+			add_legitimacy_equivalent = { amount = 5 republican_tradition = 3 }
 		}
 	}
 	option = {

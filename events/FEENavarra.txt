@@ -71,7 +71,7 @@ country_event = {
 		ai_chance = {
 			factor = 10
 		}
-		add_legitimacy = -5
+		add_legitimacy_equivalent = { amount = -5 republican_tradition = -3 }
 		add_prestige = 5
 	}
 }
@@ -112,7 +112,7 @@ country_event = {
 				is_subject = yes
 			}
 		}
-		add_legitimacy = -5
+		add_legitimacy_equivalent = { amount = -5 republican_tradition = -3 }
 		NAV = {
 			country_event = {
 				id = fee_NAV.3
@@ -364,7 +364,7 @@ country_event = {
 	
 	option = {
 		name = fee_NAV.8.OPT1
-		add_legitimacy = -15
+		add_legitimacy_equivalent = { amount = -15 republican_tradition = -8 }
 	}
 }
 
@@ -379,7 +379,7 @@ country_event = {
 	
 	option = {
 		name = fee_NAV.9.OPT1
-		add_legitimacy = 5
+		add_legitimacy_equivalent = { amount = 5 republican_tradition = 3 }
 		add_adm_power = 10
 		add_dip_power = 10
 		add_mil_power = 10

@@ -325,7 +325,7 @@ country_event = {
 			name = "puritan_dissent_tolerated"
 			duration = 18250
 		}
-		add_church_power = -100
+		change_religious_influence_equivalent_fee = { remove = 100 }
 		random_owned_province = {
 			limit = {
 				culture = english
@@ -420,7 +420,7 @@ country_event = {
 				duration = 7300
 			}
 		}
-		add_church_power = 100
+		change_religious_influence_equivalent_fee = { add = 100 }
 	}
 	option = {
 		name = fee_gbr_eng_3_7

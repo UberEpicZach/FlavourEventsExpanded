@@ -1713,7 +1713,7 @@ country_event = {
 			factor = 50
 		}
 		add_years_of_income = -0.25
-		add_papal_influence = 10
+		change_religious_influence_equivalent_fee = { add = 10 }
 		add_country_modifier = {
 			name = iberia_jesuit_education
 			duration = -1
@@ -1777,7 +1777,7 @@ country_event = {
 		ai_chance = {
 			factor = 33
 		}
-		add_papal_influence = 10
+		change_religious_influence_equivalent_fee = { add = 10 }
 		add_prestige = 15
 	}
 

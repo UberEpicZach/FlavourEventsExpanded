@@ -79,22 +79,22 @@ country_event = {
 
 		add_opinion = {
 			who = BYZ
-			modifier = fee_naples_recoinciliation
+			modifier = fee_nap_recoinciliation
 		}
 		add_opinion = {
 			who = PAP
-			modifier = fee_naples_recoinciliation
+			modifier = fee_nap_recoinciliation
 		}
 		BYZ = {
 			add_opinion = {
 				who = ROOT
-				modifier = fee_naples_recoinciliation
+				modifier = fee_nap_recoinciliation
 			}
 		}
 		PAP = {
 			add_opinion = {
 				who = ROOT
-				modifier = fee_naples_recoinciliation
+				modifier = fee_nap_recoinciliation
 			}
 		}
 	}
@@ -242,7 +242,7 @@ country_event = {
 		}
 		add_opinion = {
 			who = TUR
-			modifier = nap_helps_skanderberg
+			modifier = fee_nap_helps_skanderberg
 		}
 		custom_tooltip = ALB_HELP_TT
 		hidden_effect = {

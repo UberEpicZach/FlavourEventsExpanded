@@ -189,9 +189,7 @@ country_event = {
 
 	option = {
 		name = fee_enlightenment.4.OPT2
-		add_papal_influence = 15
-		add_fervor = 25
-		add_church_power = 25
+		change_religious_influence_equivalent_fee = { add = 15 }
 		add_stability_or_adm_power = yes
 		add_country_modifier = {
 			name = fee_scientific_revolution_opposed
@@ -469,11 +467,9 @@ country_event = {
 
 	option = {
 		name = fee_enlightenment.9.OPT1
-		add_papal_influence = -30
-		add_church_power = -50
-		add_fervor = -50
+		change_religious_influence_equivalent_fee = { remove = 30 }
 		add_prestige = -10
-		add_legitimacy = -3
+		add_legitimacy_equivalent = { amount = -3 republican_tradition = -3 }
 	}
 
 	option = {
@@ -598,8 +594,7 @@ country_event = {
 	}
 	option = {
 		name = fee_enlightenment.11.OPT2
-		add_legitimacy = -5
-		add_republican_tradition = -5
+		add_legitimacy_equivalent = { amount = -5 republican_tradition = -3 }
 	}
 }
 
@@ -882,7 +877,7 @@ country_event = {
 
 	option = {
 		name = fee_enlightenment.16.OPT2
-		add_legitimacy = -5
+		add_legitimacy_equivalent = { amount = -5 republican_tradition = -3 }
 		add_stability = -1
 		add_country_modifier = {
 			name = fee_enlightenment_thinker_repressed
@@ -1058,7 +1053,7 @@ country_event = {
 	option = {
 		name = fee_enlightenment.18.f
 		add_stability = -1
-		add_legitimacy = -5
+		add_legitimacy_equivalent = { amount = -5 republican_tradition = -3 }
 	}
 }
 

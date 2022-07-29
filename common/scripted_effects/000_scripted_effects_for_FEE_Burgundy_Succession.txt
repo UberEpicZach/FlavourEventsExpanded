@@ -41,7 +41,7 @@ burgundian_inheritance_start_effect = {
 						has_heir_flag = mary_is_heir
 					}
 				}
-				add_legitimacy = 10
+				add_legitimacy_equivalent = { amount = 10 republican_tradition = 5 }
 			}
 			else = { #if she was not named heir, she becomes ruler here
 				define_ruler = {

@@ -23,7 +23,7 @@ country_event = {
 	
 	option = {
 		name = "events_mul.1.OPT1" #The time for them to accept their new sultans has not yet come.
-		add_legitimacy = -25
+		add_legitimacy_equivalent = { amount = -25 republican_tradition = -12 }
 		add_stability = -1
 	}
 }

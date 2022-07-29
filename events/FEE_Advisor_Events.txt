@@ -294,7 +294,7 @@ country_event = {
 	option = {
 		name = FEE_Advisor_Event6.EVTOPT1
 
-		add_legitimacy = 75
+		add_legitimacy_equivalent = { amount = 75 republican_tradition = 30 }
 		random = {
 			chance = 25
 			add_ruler_modifier = {
@@ -338,14 +338,14 @@ country_event = {
 	option = {
 		name = FEE_Advisor_Event7.EVTOPT1
 
-		add_legitimacy = -15
+		add_legitimacy_equivalent = { amount = -15 republican_tradition = -8 }
 		add_prestige = -15
 	}
 
 	option = {
 		name = FEE_Advisor_Event7.EVTOPT2
 
-		add_legitimacy = -10
+		add_legitimacy_equivalent = { amount = -10 republican_tradition = -5 }
 		add_prestige = -10
 		if = {
 			limit = {

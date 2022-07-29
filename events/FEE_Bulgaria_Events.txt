@@ -145,7 +145,7 @@ country_event = {
 			}
 			add_prestige = 10
 		}
-		add_patriarch_authority = 0.2
+		change_religious_influence_equivalent_fee = { add = 20 }
 		add_country_modifier = {
 			name = FEE_Bulgarian_Statue_Military
 			duration = -1
@@ -164,7 +164,7 @@ country_event = {
 			}
 			add_prestige = 10
 		}
-		add_patriarch_authority = 0.2
+		change_religious_influence_equivalent_fee = { add = 20 }
 		add_country_modifier = {
 			name = FEE_Bulgarian_Statue_Trade
 			duration = -1

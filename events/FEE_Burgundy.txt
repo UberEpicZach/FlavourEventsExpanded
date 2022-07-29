@@ -528,7 +528,7 @@ country_event = {
 # 			who = FRA
 # 			modifier = fee_treaty_of_peronne
 # 		}
-# 		add_legitimacy = 20
+# 		add_legitimacy_equivalent = { amount = 20 republican_tradition = 10 }
 
 # 		every_province = {
 # 			limit = {

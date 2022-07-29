@@ -664,7 +664,7 @@ country_event = {
 			factor = 50
 		}
 
-		add_papal_influence = -25
+		change_religious_influence_equivalent_fee = { remove = 25 }
 		add_legitimacy_equivalent = { amount = 10 republican_tradition = 5 }
 		112 = {
 			add_base_production = 1
@@ -678,7 +678,7 @@ country_event = {
 	option = {
 		name = FEE_Venice_Events.13.OPT2
 
-		add_papal_influence = 50
+		change_religious_influence_equivalent_fee = { add = 50 }
 		add_stability_or_adm_power = yes
 	}
 }
@@ -739,7 +739,7 @@ country_event = {
 
 		add_mil_power = 50
 		add_stability_or_adm_power = yes
-		add_papal_influence = 50
+		change_religious_influence_equivalent_fee = { add = 50 }
 	}
 }
 

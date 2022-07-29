@@ -73,7 +73,7 @@ country_event = {
 	option = {
 		name = fee_BAV.2.OPT1
 		add_stability_or_adm_power = yes
-		add_legitimacy = 25
+		add_legitimacy_equivalent = { amount = 25 republican_tradition = 13 }
 	}
 	
 }
@@ -125,7 +125,7 @@ country_event = {
 				modifier = fee_bav_against_habsburgs
 			}
 		}
-		add_legitimacy = 5
+		add_legitimacy_equivalent = { amount = 5 republican_tradition = 3 }
 		add_prestige = 5
 	}
 }

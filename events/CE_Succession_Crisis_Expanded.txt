@@ -39,8 +39,8 @@ country_event = {
 				clr_country_flag = claimant_country_3_flag
 				clr_country_flag = claimant_country_4_flag
 				clr_country_flag = country_claimed_yes
-				clr_country_flag = United_Duchies_claimed_yes
-				clr_country_flag = United_Duchies_Negotiations_Divide_yes
+				clr_country_flag = fee_brandenburg_united_duchies_claimed_yes
+				clr_country_flag = fee_brandenburg_united_negotiations_divide_yes
 			}
 			every_province = {
 				clr_province_flag = SE_claimed_land
@@ -214,7 +214,7 @@ country_event = {
 					#female = yes
 				}
 					# add_ruler_modifier = {
-						# name = CE_Infertile
+						# name = fee_bran_infertile
 						# duration = -1
 						# hidden = yes
 					# }
@@ -298,7 +298,7 @@ country_event = {
 	option = {
 		name = succession_crisis_expanded.2.OPT1
 		set_country_flag = country_claimed_yes
-		custom_tooltip = CE_claimed_the_duchies
+		custom_tooltip = fee_brandenburg_claimed_the_duchies_tt
 		ai_chance = {
 			factor = 1
 		}
@@ -385,7 +385,7 @@ country_event = {
 				days = 1
 			}
 		}
-		set_country_flag = United_Duchies_occupied_yes
+		set_country_flag = fee_brandenburg_united_duchies_occupied_yes
 		ai_chance = {
 			factor = 1
 		}
@@ -479,7 +479,7 @@ country_event = {
 		name = succession_crisis_expanded.6.OPT1
 		every_country = {
 			limit = {
-				has_country_flag = United_Duchies_occupied_yes
+				has_country_flag = fee_brandenburg_united_duchies_occupied_yes
 			}
 			country_event = {
 				id = succession_crisis_expanded.7
@@ -609,8 +609,8 @@ country_event = {
 		# event_target:partitioned_country = {
 			# is_subject = no
 		# }
-		# has_country_flag = United_Duchies_occupied_yes
-		# NOT = { has_country_flag = United_Duchies_Negotiations_yes }
+		# has_country_flag = fee_brandenburg_united_duchies_occupied_yes
+		# NOT = { has_country_flag = fee_brandenburg_united_negotiations_yes }
 		# event_target:partitioned_country = {
 			# NOT = {
 				# is_at_war = yes
@@ -624,22 +624,22 @@ country_event = {
 	}
 	
 	immediate = {
-		set_country_flag = United_Duchies_Negotiations_yes	
+		set_country_flag = fee_brandenburg_united_negotiations_yes	
 	}
 	
 	option = {
 		name = succession_crisis_expanded.10.OPT1
-		set_country_flag = United_Duchies_Negotiations_Divide_yes
+		set_country_flag = fee_brandenburg_united_negotiations_divide_yes
 		if = {
 			limit = {
 				event_target:claimant_country_1 = {
-					has_country_flag = United_Duchies_Negotiations_Divide_yes
+					has_country_flag = fee_brandenburg_united_negotiations_divide_yes
 				}
 				event_target:claimant_country_2 = {
-					has_country_flag = United_Duchies_Negotiations_Divide_yes
+					has_country_flag = fee_brandenburg_united_negotiations_divide_yes
 				}
 				event_target:claimant_country_3 = {
-					has_country_flag = United_Duchies_Negotiations_Divide_yes
+					has_country_flag = fee_brandenburg_united_negotiations_divide_yes
 				}
 			}
 			event_target:partitioned_country = {
@@ -649,7 +649,7 @@ country_event = {
 				}
 			}
 		}
-		custom_tooltip = CE_Treaty_of_Xanten
+		custom_tooltip = fee_brandenburg_treaty_xanten_tt
 		ai_chance = {
 			factor = 1
 		}
@@ -659,13 +659,13 @@ country_event = {
 		trigger = {
 			AND = {
 				event_target:claimant_country_1 = {
-					has_country_flag = United_Duchies_occupied_yes
+					has_country_flag = fee_brandenburg_united_duchies_occupied_yes
 				}
 				event_target:claimant_country_2 = {
-					has_country_flag = United_Duchies_occupied_yes
+					has_country_flag = fee_brandenburg_united_duchies_occupied_yes
 				}
 				event_target:claimant_country_3 = {
-					has_country_flag = United_Duchies_Negotiations_Divide_yes
+					has_country_flag = fee_brandenburg_united_negotiations_divide_yes
 				}
 			}
 		}
@@ -675,7 +675,7 @@ country_event = {
 				days = 1
 			}
 		}
-		custom_tooltip = CE_deny_treaty
+		custom_tooltip = fee_brandenburg_deny_treaty_tt
 		ai_chance = {
 			factor = 0
 		}
@@ -979,8 +979,8 @@ country_event = {
 				clr_country_flag = claimant_country_3_flag
 				clr_country_flag = claimant_country_4_flag
 				clr_country_flag = country_claimed_yes
-				clr_country_flag = United_Duchies_claimed_yes
-				clr_country_flag = United_Duchies_Negotiations_Divide_yes
+				clr_country_flag = fee_brandenburg_united_duchies_claimed_yes
+				clr_country_flag = fee_brandenburg_united_negotiations_divide_yes
 			}
 			every_province = {
 				clr_province_flag = SE_claimed_land
@@ -1033,10 +1033,10 @@ country_event = {
 # 				factor = 2
 # 				OR = {
 # 					BRA = {
-# 						has_country_flag = United_Duchies_Negotiations_Divide_yes
+# 						has_country_flag = fee_brandenburg_united_negotiations_divide_yes
 # 					}
 # 					PRU = {
-# 						has_country_flag = United_Duchies_Negotiations_Divide_yes
+# 						has_country_flag = fee_brandenburg_united_negotiations_divide_yes
 # 					}
 # 				}
 # 			}
@@ -1105,7 +1105,7 @@ country_event = {
 # 			modifier = {
 # 				factor = 2
 # 				PAL = {
-# 					has_country_flag = United_Duchies_Negotiations_Divide_yes
+# 					has_country_flag = fee_brandenburg_united_negotiations_divide_yes
 # 				}
 # 			}
 # 			modifier = {

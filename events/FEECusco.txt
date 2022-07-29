@@ -27,6 +27,6 @@ country_event = {
 	option = {
 		name = "events_csu.1.OPT1" #This year's Situa Raymi will be better than all others!
 		add_prestige = 15
-		add_authority = 5
+		change_religious_influence_equivalent_fee = { add = 5 }
 	}
 }

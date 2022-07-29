@@ -232,7 +232,7 @@ country_event = {
 	}
 	option = {
 		name = CE_hungary_expanded.4.OPT2
-		add_legitimacy = -10
+		add_legitimacy_equivalent = { amount = -10 republican_tradition = -5 }
 		add_prestige = -15
 		ai_chance = {
 			factor = 1
@@ -423,7 +423,7 @@ country_event = {
 	}
 	option = {
 		name = CE_hungary_expanded.8.OPT2
-		add_papal_influence = 10
+		change_religious_influence_equivalent_fee = { add = 10 }
 		ai_chance = {
 			factor = 1
 		}
@@ -602,7 +602,7 @@ country_event = {
 	}
 	option = {
 		name = CE_hungary_expanded.13.OPT2
-		add_legitimacy = 5
+		add_legitimacy_equivalent = { amount = 5 republican_tradition = 3 }
 	}
 }
 

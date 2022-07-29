@@ -1390,13 +1390,7 @@ country_event = {
 		}
 		change_heir_dip = -1
 		add_prestige = 5
-		add_piety = 0.05
-		add_patriarch_authority = 0.05
-		add_harmony = 5
-		add_papal_influence = 5
-		add_karma = 5
-		add_fervor = 5
-		add_authority = 5
+		change_religious_influence_equivalent_fee = { add = 5 }
 	}
 }
 
@@ -1435,13 +1429,7 @@ country_event = {
 		}
 		change_heir_dip = -1
 		add_prestige = 5
-		add_piety = -0.05
-		add_patriarch_authority = -0.05
-		add_harmony = -5
-		add_papal_influence = -5
-		add_karma = -5
-		add_fervor = -5
-		add_authority = -5
+		change_religious_influence_equivalent_fee = { remove = 5 }
 	}
 }
 
@@ -1485,13 +1473,7 @@ country_event = {
 		change_heir_mil = -1
 		change_heir_adm = -1
 		add_prestige = -5
-		add_piety = -0.05
-		add_patriarch_authority = -0.05
-		add_harmony = -5
-		add_papal_influence = -5
-		add_karma = -5
-		add_fervor = -5
-		add_authority = -5
+		change_religious_influence_equivalent_fee = { remove = 5 }
 	}
 }
 

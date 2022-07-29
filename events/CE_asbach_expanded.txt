@@ -726,7 +726,7 @@ country_event = {
 	
 	option = {
 		name = CE_ansbach_expanded.14.OPT1
-		add_legitimacy = -5
+		add_legitimacy_equivalent = { amount = -5 republican_tradition = -3 }
 		4716 = {
 			add_claim = ANS
 		}
@@ -743,7 +743,7 @@ country_event = {
 		trigger = {
 			tag = BRA
 		}
-		add_legitimacy = -20
+		add_legitimacy_equivalent = { amount = -20 republican_tradition = -12 }
 		4716 = {
 			add_claim = BRA
 		}
@@ -757,7 +757,7 @@ country_event = {
 	}
 	option = {
 		name = CE_ansbach_expanded.14.OPT3
-		add_legitimacy = 5
+		add_legitimacy_equivalent = { amount = 5 republican_tradition = 3 }
 		ai_chance = {
 			factor = 1
 			modifier = {

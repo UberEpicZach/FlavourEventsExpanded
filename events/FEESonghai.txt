@@ -107,7 +107,7 @@ country_event = {
 			fixed = yes
 		}
 		kill_heir = {}
-		add_piety = 0.15
+		change_religious_influence_equivalent_fee = { add = 15 }
 		add_stability = -1
 		random_owned_province = {
 			spawn_rebels = {

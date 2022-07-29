@@ -797,7 +797,7 @@ country_event = {
 				limit = {
 					religion = catholic
 				}
-				add_papal_influence = -20
+				change_religious_influence_equivalent_fee = { remove = 20 }
 				random_owned_province = {
 					limit = { has_cardinal = yes }
 					remove_cardinal = yes
@@ -838,7 +838,7 @@ country_event = {
 				limit = {
 					religion = catholic
 				}
-				add_papal_influence = -30
+				change_religious_influence_equivalent_fee = { remove = 30 }
 			}
 			else = {
 				change_religious_influence_equivalent_fee = {

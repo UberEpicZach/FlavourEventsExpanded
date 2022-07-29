@@ -43,7 +43,7 @@ country_event = {
 		}
 
 		add_adm_power = 25
-		add_papal_influence = 10
+		change_religious_influence_equivalent_fee = { add = 10 }
 		add_country_modifier = {
 			name = fee_aragon_arbues_saint
 			duration = 10950
@@ -99,7 +99,7 @@ country_event = {
 		}
 
 		add_dip_power = 25
-		add_papal_influence = -10
+		change_religious_influence_equivalent_fee = { remove = 10 }
 		add_country_modifier = {
 			name = fee_aragon_arbues_no
 			duration = 10950
@@ -431,7 +431,7 @@ country_event = {
 		name = FEE_Aragon_Events.6.OPT1
 
 		add_prestige = 10
-		add_papal_influence = 15
+		change_religious_influence_equivalent_fee = { add = 15 }
 		add_country_modifier = {
 			name = fee_aragon_pillar_miracle
 			duration = 10650
@@ -833,7 +833,7 @@ country_event = {
 			}
 		}
 
-		add_papal_influence = -15
+		change_religious_influence_equivalent_fee = { remove = 15 }
 		define_advisor = {
 			type = philosopher
 			skill = 2
@@ -852,7 +852,7 @@ country_event = {
 			factor = 75
 		}
 
-		add_papal_influence = 15
+		change_religious_influence_equivalent_fee = { add = 15 }
 		add_stability_or_adm_power = yes
 		random_province = {
 			limit = {
@@ -882,8 +882,7 @@ province_event = {
 
 		owner = {
 			add_stability_or_adm_power = yes
-			add_fervor = 25
-			add_church_power = 25
+			change_religious_influence_equivalent_fee = { add = 25 }
 		}
 	}
 
@@ -1190,7 +1189,7 @@ country_event = {
 	option = {
 		name = FEE_Aragon_Events.18.OPT1
 
-		add_papal_influence = -15
+		change_religious_influence_equivalent_fee = { remove = 15 }
 		214 = {
 			add_base_tax = 1
 		}
@@ -1198,7 +1197,7 @@ country_event = {
 	option = {
 		name = FEE_Aragon_Events.18.OPT2
 
-		add_papal_influence = 15
+		change_religious_influence_equivalent_fee = { add = 15 }
 		custom_tooltip = FEE_Aragon_Events.16.TT
 		add_country_modifier = {
 			name = fee_aragon_channel_slow_three

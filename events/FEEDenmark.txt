@@ -46,7 +46,7 @@ country_event = {
 	option = {
 		name = fee_DAN.1.OPT2
 		add_stability = -1
-		add_legitimacy = -10
+		add_legitimacy_equivalent = { amount = -10 republican_tradition = -5 }
 	}
 }
 
@@ -392,7 +392,7 @@ country_event = {
 		ai_chance = {
 			factor = 98
 		}
-		add_legitimacy = 10
+		add_legitimacy_equivalent = { amount = 10 republican_tradition = 5 }
 		random_owned_province = {
 			limit = {
 				is_capital = no
@@ -887,7 +887,7 @@ country_event = {
 	option = {
 		name = fee_DAN.21.OPT1
 		add_prestige = -15
-		add_legitimacy = -5
+		add_legitimacy_equivalent = { amount = -5 republican_tradition = -3 }
 	}
 }
 

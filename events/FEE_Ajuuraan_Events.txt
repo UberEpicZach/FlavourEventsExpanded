@@ -170,7 +170,7 @@ country_event = {
 		name = FEE_Ajuuraan_Events.4.OPT1
 
 		add_stability = -1
-		add_piety = 0.1
+		change_religious_influence_equivalent_fee = { add = 10 }
 		add_country_modifier = {
 			name = fee_ajuuraan_local_conscripts
 			duration = -1
@@ -233,7 +233,7 @@ country_event = {
 	option = {
 		name = FEE_Ajuuraan_Events.5.OPT1
 
-		add_piety = 0.2
+		change_religious_influence_equivalent_fee = { add = 20 }
 		add_prestige = 10
 		add_adm_power = 25
 		define_advisor = {
@@ -251,7 +251,7 @@ country_event = {
 		name = FEE_Ajuuraan_Events.5.OPT2
 
 		create_general = { tradition = 40 }
-		add_piety = -0.2
+		change_religious_influence_equivalent_fee = { remove = 20 }
 		add_prestige = 10
 		add_mil_power = 25
 	}
