@@ -17,7 +17,6 @@
  FEE_Brandenburg_Events.4.D: "Following the untimely passing of Henry 'of Glogau' Piast, his will stated that Barbara von Hohenzollern would inherit the duchy. However, the King of Bohemia claim the duchy as part of the bohemian crownlands. Even the other dukes of Silesia claim the duchy through familial ties, and they have chosen to dispute the will of Henry Piast."
  FEE_Brandenburg_Events.4.OPT1: "let us occupy it before anyone else does."
  FEE_Brandenburg_Events.4.OPT2: "lets back off."
- CE_brandenburger_seizure_of_glogau: "The Bohemian King and Silesians Dukes might declare war to retake it."
  
  FEE_Brandenburg_Events.5.T: "The Invasion of Glogau"
  FEE_Brandenburg_Events.5.D: "The army of Brandenburg has entered Glogau and has occupied it, enforcing their laughable claim to those lands that belong to the Bohemian Crown."
@@ -27,7 +26,6 @@
  FEE_Brandenburg_Events.6.T: "Gunboat Diplomacy"
  FEE_Brandenburg_Events.6.D: "Placing our army in Glogau appears to have convinced the Bohemian King to honor the late duke's will after all, and allow Barbara von Hohenzollern to rule the duchy!"
  FEE_Brandenburg_Events.6.OPT1: "A fine addition to our lands."
- 
  
  FEE_Brandenburg_Events.7.T: "A Happy Family"
  FEE_Brandenburg_Events.7.D: "Barbara, Duchess of Glogau, has been widowed, Let us offer a marriage between the Hohenzollerns of Brandenburg and the Bohemian King in order to restore our ties with our mighty neighbours!"
@@ -39,7 +37,6 @@
  FEE_Brandenburg_Events.8.OPT1: "Let us pursue the path of peace."
  FEE_Brandenburg_Events.8.OPT2: "They tricked the duke of Glogau, let us return the favor."
  FEE_Brandenburg_Events.8.OPT3: "No thanks, we do not need either."
- CE_abandon_barbara: "Start plotting against the Hohenzollerns."
  
  FEE_Brandenburg_Events.9.T: "Integrate the Duchy"
  FEE_Brandenburg_Events.9.D: "The Duchy of Glogau is owned by Barbara von Hohenzollern, my 'beloved' wife, let us celebrate our marriage by uniting our realms! The Bohemian Crownlands will be re-united and the Hohenzollern Intrusion will finally be brought to an end."
@@ -58,7 +55,6 @@
  FEE_Brandenburg_Events.11.D: "Following the ascention of his brother to the Electoral seat of Brandenburg, Albert was formally a margrave of Brandenburg, but chose to follow the ecclesiastical path after his studies at the university of Frankfurt. As such when the Archbishop of Magdeburg was a clear goal where he could execute both his divine and familial duties in life. However, when the Archbishop passed away, he had not yet aquired the required age and education for the position. Furthermore, his desired position would hold great influence."
  FEE_Brandenburg_Events.11.OPT1: "Nothing that can't be solved with some money to grease the wheels."
  FEE_Brandenburg_Events.11.OPT2: "You can preach from the local chapel."
- CE_Magdeburg_Hohenzollern: "It can be very convient to have family in the church."
  
  FEE_Brandenburg_Events.12.T: "Prince-Archbishopric of Magdeburg"
  FEE_Brandenburg_Events.12.D: "The reformation is in full swing, and the distinction between ecclesiastical and secular is fading in the protestant realms, and the Margraviate of Brandenburg and the Archbishopric of Magdeburg have grown close over time."
@@ -74,7 +70,7 @@
  FEE_Brandenburg_Events.14.D: "The Archbishop of Magdeburg, our kinsman Albert, has asked if we are willing to support his bid for the Archbishopric of Mainz. As a Bishop, the bishopric of Mainz is the most impressive position of them all."
  FEE_Brandenburg_Events.14.OPT1: "Let us support our kinsman!"
  FEE_Brandenburg_Events.14.OPT2: "Magdeburg is enough."
- CE_albert_rules_mainz: "Albert von Hohenzollern of Magdeburg will attempt to establish himself in Mainz as well."
+ fee_brandenburg_albert_rules_mainz_tt: "Albert von Hohenzollern of Magdeburg will attempt to establish himself in Mainz as well."
  
  FEE_Brandenburg_Events.15.T: "Albert of Mainz and Magdeburg"
  FEE_Brandenburg_Events.15.D: "We have been reproached by the archbishop Albert of Magdeburg, requesting to become Bishop of Mainz. Our most influential position as Archbishopric of Mainz is a powerful title, and as such, should not be relinquished so easily.  Additionally, the fast rise of Albert, his dynastic heritage, and his frequent breach of protocol is reason for concern. Should we accept his request, or respectfully decline?."
@@ -91,8 +87,7 @@
  FEE_Brandenburg_Events.17.T: "The Duchy of Berg"
  FEE_Brandenburg_Events.17.D: "Our Grand-Father in Law, the duke of Julich-Cleves-Berg has passed on, and leaves no heirs to the throne of the United Duchies, the next in the line of succession is our beloved wife, and as such we could press her claim to the ducal throne."
  FEE_Brandenburg_Events.17.OPT1: "Let us claim her inheritance."
- FEE_Brandenburg_Events.17.OPT2: "T'is but a distant relation" 
- CE_claimed_the_duchies:0 "By claiming the dutchies we can later enforce our claim."
+ FEE_Brandenburg_Events.17.OPT2: "T'is but a distant relation"
  
  FEE_Brandenburg_Events.18.T: "The Duchy of Berg"
  FEE_Brandenburg_Events.18.D: "Our Father in Law, the duke of Julich-Cleves-Berg has passed on, and leaves no heirs to the throne of the United Duchies, the next male in the line of succession is my son, and as such we could press his claim to the ducal throne."
@@ -135,8 +130,6 @@
  FEE_Brandenburg_Events.25.OPT1: "We shall share the inheritance."
  FEE_Brandenburg_Events.25.OPT2: "We will take the entire duchy!" 
  FEE_Brandenburg_Events.25.OPT3: "He failed to make good on his claim before, and shall not be negotiated with today."
- CE_Treaty_of_Xanten:0 "This will attempt to resolve the situation by dividing the contested lands among the claimaints."
- CE_deny_treaty:0 "This will attempt to seize the entire duchy for ourselves \nBerg will not appriciate this."
  
  FEE_Brandenburg_Events.26.T: "The Spoils of war"
  FEE_Brandenburg_Events.26.D: "We have pushed the Emperor to stop his meddling, and any minor pretenders won't dare stand in our way, there is only one other problem, the Heir of the Palatinate stands in our way of seizing the entire duchy!"
@@ -168,13 +161,11 @@
  FEE_Brandenburg_Events.31.D: "After ascending to the Brandenburger throne, Albert decided to implement a customs tax on wine within his Brandenburger territories. These funds would later allow him to wage war in both the Ickermark, Pommerania-Stettin and secure the Silesian lands for Barbara von Hohenzollen."
  FEE_Brandenburg_Events.31.OPT1: "Fill the coffers!"
  FEE_Brandenburg_Events.31.OPT2: "Lets not burden the Burghers."
- CE_BRA_Wine_Customs: "Wine Customs"
  
  FEE_Brandenburg_Events.32.T: "Beer Excise"
  FEE_Brandenburg_Events.32.D: "To raise additional funds for the purchase of lusatia and regain some of the northern mark's territories, Johan Cicero attempted to raise an additional tax on beer, but this was strongly contested by the local populace, especially the Altmarkian peasantry and brewers were firm in their opposition to the Excise, as this was a tax that was levied upon production rather then consumption, and would hurt their sales drastically."
  FEE_Brandenburg_Events.32.OPT1: "Pass the tax."
  FEE_Brandenburg_Events.32.OPT2: "Perhaps we're better of with a happy peasantry."
- CE_BRA_Beer_Excise: "Beer Excise"
  
  FEE_Brandenburg_Events.33.T: "Desecration of the Host"
  FEE_Brandenburg_Events.33.D: "A group of Jews stand accused of desecrating the host of christ, and the clergy/mob is calling for their heads and have already sacked and burned several Jewish communities and are demanding your support in driving them out of the Mark of Brandenburg."
@@ -191,8 +182,7 @@
  FEE_Brandenburg_Events.35.OPT1: "Make the offer."
  FEE_Brandenburg_Events.35.OPT2: "Claim it."
  FEE_Brandenburg_Events.35.OPT3: "Confirm Bohemian ownership."
- JE_BRA_Bohemia_Retains_repurchase_rights: "Bohemia Retains the 'right of repurchase' for 25 years."
- CE_Conceeded_Territory: "Conceeded Territory"
+ fee_brandenburg_bohemia_retains_purchase_rights_tt: "Bohemia Retains the 'right of repurchase' for 25 years."
 
  FEE_Brandenburg_Events.36.T: "Extinction of the house of Torgow"
  FEE_Brandenburg_Events.36.D: "The border duchy of Zossen has its house cut short by the recent demise of the owning dukes. And as part of the lands of the Bohemian Crown, it should fall to the king of Bohemia. However as the lords of Zossen were subjects of the Brandenburger Electors, they have a significant claim as well. they have offered us a significant sum in exchange for the land."
@@ -213,10 +203,6 @@
  FEE_Brandenburg_Events.39.OPT1: "We shall abide by his will."
  FEE_Brandenburg_Events.39.OPT2: "Deprive Johann of his inheritance."
  FEE_Brandenburg_Events.39.OPT3: "Declare the will to be in violation of the Disposito Achillea."
- CE_BRA_BRA_KUS_Release: "Cedes our Lusatian and Neumarker possesions to our brother for his own margraviate."
- CE_Ruppin_infertility: "Johann's lack of heirs."
- BRA_KUS: "Brandenburg-Kustrin"
- BRA_KUS_ADJ: "Brandenburger"
 
  FEE_Brandenburg_Events.40.T: "The Inheritance of Margraviate Brandenburg-Kustrin"
  FEE_Brandenburg_Events.40.D: "Following the death of the childless Johann of Brandenburg-Kustrin, the lands have fallen back into our hands and brandenburg is undivided once more!"
@@ -240,23 +226,19 @@
  FEE_Brandenburg_Events.44.D: "To quench his thirst for hunting, lavish feasts and inscrupulous friends, Joachim ll wished to build a great hunting lodge at the lake 'Grunewalt' south of Berlin. His lack of interest in state affairs and his attention for his mistress enraged the estates and at points reduced them to rebuking the elector in an attempt to get him to forfill his duties"
  FEE_Brandenburg_Events.44.OPT1: "I just wanna hunt"
  FEE_Brandenburg_Events.44.OPT2: "Let him host his parties from the palace instead"
- CE_BRA_Lover_of_the_Hunt: "Lover of the Hunt"
  
  FEE_Brandenburg_Events.45.T: "Accident at the Lodge"
  FEE_Brandenburg_Events.45.D: "After joining her husband for a hunting trip and a party at the Grunewalt Hunting Lodge, a rotten floor collapsed under the couple and ended with the impalement of the electress unto hanging antlers of the room below. Leaving her crippled and in constant pain."
  FEE_Brandenburg_Events.45.OPT1: "Time for a concubine"
- CE_BRA_The_Beautifull_Foundress: "The Beautifull Foundress"
 
  FEE_Brandenburg_Events.46.T: "Jewish Settlers"
  FEE_Brandenburg_Events.46.D: "To help deal with the massive costs of his lifestyle, Joachim ll promoted the immigration and taxation of Jews into the Mark of Brandenburg following his abolishment of the edict that banned them in 1539. With Frankfurt an die Oder being especially attractive due to its riches and being on a crossroads of trade routes. Levying heavy taxes upon these new immigrants is a surefire way of raising the required funds."
  FEE_Brandenburg_Events.46.OPT1: "Invite the Jews!"
  FEE_Brandenburg_Events.46.OPT2: "Lets not upset the populace."
- CE_BRA_Jewish_Tax: "Jewish Tax"
 
  FEE_Brandenburg_Events.47.T: "Introduction of the Reformation"
  FEE_Brandenburg_Events.47.D: "Following consulting with Philipp Melanchthon, Joachim ll decided to introduce a new church order in the Mark of Brandenburg, allowing priests to marry, take communion with consecrated wine and lutheran doctrines, but maintaining strong catholic traditions in order to maintain diplomatic bonds with either side of the religious schism. Taking part in a church ceremony and recieving communion of both forms."
  FEE_Brandenburg_Events.47.OPT1: "Amen."
- CE_BRA_religious_pragmatism: "Religious Pragmatism"
 
  FEE_Brandenburg_Events.48.T: "Secularization of the Monasteries"
  FEE_Brandenburg_Events.48.D: "Following the introduction of the Reformation into brandenburg, and the rise of expenses following his expensive lifestyle, Joachim ll decided to start secularizing the monasteries and bishoprics in Brandenburg."
@@ -267,32 +249,26 @@
  FEE_Brandenburg_Events.49.D: "After allowing the Jews to settle in Brandenburg again, and after losing our Court Jew to a armed robbery, Lippold Ben Chluchim has risen to our court and has been suggested as a new candidate for the position."
  FEE_Brandenburg_Events.49.OPT1: "Appoint him as Chaimberlain"
  FEE_Brandenburg_Events.49.OPT2: "He can serve us better as a regular courtier"
- CE_BRA_Lippold_Ben_Chluchim: "Lippold Ben Chluchim"
 
  FEE_Brandenburg_Events.50.T: "Devaluation of the Mint"
  FEE_Brandenburg_Events.50.D: "To cover the outstanding debts, Joachim ll attempted to reduce the precious metal content of the Brandenburger Mint as a way of increasing the crown revenues. Even banning the use of foreign mints to ensure the stability of the domestically minted coins."
  FEE_Brandenburg_Events.50.OPT1: "An Excellent Tactic"
  FEE_Brandenburg_Events.50.OPT2: "Better to guarentee the international stability of the mint"
- CE_BRA_Could_Lead_To_Economic_Collapse: "This could lead to economic collapse in the long term."
 
  FEE_Brandenburg_Events.51.T: "Illegal Foreign Mints"
  FEE_Brandenburg_Events.51.D: "Dozens of merchants have been found to be using weighted precious metal and foreign coins to avoid having to deal with our inflated currency, hurting our income and reducing the domestic demand for our coins."
  FEE_Brandenburg_Events.51.OPT1: "This can not be allowed, seize them!"
  FEE_Brandenburg_Events.51.OPT2: "Perhaps we should allow foreign coins to be used for trade after all"
- CE_BRA_economic_downturn: "Economic Downturn"
 
  FEE_Brandenburg_Events.52.T: "Economic Collapse"
  FEE_Brandenburg_Events.52.D: "Following the banning of foreign coins and the restriction of even barter trade with weighted amounts of precious metals, the merchants of brandenburg are no longer able to import anything without paying atrocious amounts of income, as the hyperinflation of brandenburg has left it without any stability or guarentee you'll be able to use the coins for anything of value."
  FEE_Brandenburg_Events.52.OPT1: "Who could have seen this coming"
- CE_BRA_economic_collapse: "Economic Collapse"
 
  FEE_Brandenburg_Events.53.T: "Pogrom of 1571"
  FEE_Brandenburg_Events.53.D: "Following the death of Joachim ll, Johann Georg of Brandenburg arrested and seized the assetss of many of his fathers favorites, including his fathers mistress. This included several high ranking jews, and following the removal of his father's protections of the jews, a pogrom formed where most of the jewish households in the Electorate were looted, and many loan contracts were burned, reducing the debt burden of the electorate and its citizens at a heavy cost to jewish lives and trust in the financial systems. After the fires had died down and the smoke cleared, Johann George wished to banish the jews from brandenburg once more."
  FEE_Brandenburg_Events.53.OPT1: "Seize their assets"
  FEE_Brandenburg_Events.53.OPT2: "Compensate their damages"
  FEE_Brandenburg_Events.53.OPT3: "Reconsider their banishment"
- CE_BRA_Jews_Expelled: "Jewish Assets seized"
- CE_BRA_Jewish_Privileges_Restored: "Restored Jewish Privileges"
 
  FEE_Brandenburg_Events.54.T: "The Arrest of Lippold Ben Chluchim"
  FEE_Brandenburg_Events.54.D: "Following a long career as the master of the mint and court jew in the court of Joachim ll, upon his death, Johann Georg ordered the arrest of Lippold Ben Chluchim and had him put on trial for corruption and embezzlement."
@@ -308,12 +284,10 @@
  FEE_Brandenburg_Events.56.T: "The Order of St John"
  FEE_Brandenburg_Events.56.D: "Following the levantine crusades and the expulsion of the templars, there was still a significant organisational structure of knights and monasteries. If we can secure the right of nomination for the election of the order's grand master, we can effectively gain control over the order."
  FEE_Brandenburg_Events.56.OPT1: "We are an Elector after all." 
- CE_BRA_Elector_of_St_John: "Elector of the Order of St John"
 
  FEE_Brandenburg_Events.57.T: "The Conversion of the Order of St John"
  FEE_Brandenburg_Events.57.D: "Following the conversion of the elector to Lutheran Christianity, the grand master followed the Example of his friend and converted as well, releasing their vows of poverty and celibacy, becoming able to marry and own lands. Which paid fealty to their grand master, and indirectly, the Elector of Brandenburg."
  FEE_Brandenburg_Events.57.OPT1: "A most welcome development."
- CE_BRA_Knights_Of_the_Order_of_St_John: "Elector of the Order of St John"
 
  FEE_Brandenburg_Events.58.T: "The Secularization of the Order of St John"
  FEE_Brandenburg_Events.58.D: "As part of the religious peace in the empire, much of the lands once loyal to the Order of St John were secularized and annexed by their de-jure overlords, this greatly reduced the Electors reach, and benefitted the protestant nations of the empire, as many now found themselves with a new source of levies and taxes."
@@ -322,25 +296,20 @@
  FEE_Brandenburg_Events.59.T: "Secularization of the Order of St John"
  FEE_Brandenburg_Events.59.D: "With the fall of the Order of St John, we are now able to directly levy taxes and troops from our previously monastic subjects. Where before our levies and taxes went to the Elector of Brandenburg, now they shall march in our armies and feed our people!"
  FEE_Brandenburg_Events.59.OPT1: "Excellent"
- CE_BRA_secularization_of_st_john: "Secularization of St John"
 
  FEE_Brandenburg_Events.60.T: "The Bishop Investiture"
  FEE_Brandenburg_Events.60.D: "by 1451 the Pope at long last ceded the right to appoint the Bishops of Brandenburg and Havelberg to the Margrave of Brandenburg, as well as the sovereignty over the lands these dioceses held. This did not come easily however, to convince the pope we have had to call in a lot of favor, which will reduce our capacity to seek further attention from his holyness."
  FEE_Brandenburg_Events.60.OPT1: "But we secured it none the less!"
  FEE_Brandenburg_Events.60.OPT2: "Its not like we needed your permission or anything." #Baka
- CE_BRA_Margravian_Dues: "Margrave's Dues"
- CE_BRA_Papal_Influence_Spend: "Favors Called in"
 
  FEE_Brandenburg_Events.61.T: "Berliner Dom"
  FEE_Brandenburg_Events.61.D: "Following the construction of the Erasmus Chapel in the Spree Fortress near Berlin, and its consecration for use as the court church of the Elector. The Holy Father caught word of this and offered to found a new monastery at the Erasmus Chapel. With the incomes and constitution of the monastery to be granted to the Elector. And with the establishment of the Berlin Cathedral Choir, its first musiTcal institution was born. Consisting of 5 singing boys."
  FEE_Brandenburg_Events.61.OPT1: "Thank the Holy Father."
- CE_BRA_Berliner_Choir: "Berliner Singing Boys" #Choir Boys
 
  FEE_Brandenburg_Events.62.T: "The Dutch Settlement of Prussia"
  FEE_Brandenburg_Events.62.D: "Following his apprenticeship in Holland, the young Friedrich Wilhelm returned to his devastated inheritance in Brandenburg. With much of the Mark of Brandenburg in disrepair from plundering during the thirty years war. To remedy this he married the eldest daughter of the Dutch Stadholder and used his and his new wife's connections to invite hundreds of dutch craftsmen, builders and merchants to the Mark of Brandenburg."
  FEE_Brandenburg_Events.62.OPT1: "Welkom mijn Broeders."
  FEE_Brandenburg_Events.62.OPT2: "Conscript them all."
- CE_BRA_Dutch_Techniques: "Dutch Agriculture and Architecture"
 
  FEE_Brandenburg_Events.63.T: "The Priegnitzer Bandits"
  FEE_Brandenburg_Events.63.D: "Starting his reign over Brandenburg at the age of 15, Johann ' Cicero' von Hohenzollen managed to align his estates in a way his ambitious father had not. Following this alignment it became much easier to rid the poor and bandit-ridden lands of Brandenburg of their miscreants, for the estates signed with the elector instead of against him. Allowing him to destroy 15 castles of robber barons and force them to submit or die."
@@ -351,7 +320,45 @@
  FEE_Brandenburg_Events.64.D: "Following the Pomeranian Wars, many of the Pomeranian leading nobles were discontented with the Hohenzollerns of Brandenburg. Now in our time of weakness, the Pomeranians are rising to reclaim their lands, independence and their pride."
  FEE_Brandenburg_Events.64.OPT1: "Curse them."
  FEE_Brandenburg_Events.64.OPT2: "Offer them Freedom in exchange for support."
- CE_BRA_Release_Pommerania: "Redirect the Pomeranians, we grant them control over hinterpommern and vorpommern in exchange for joining the war on Brandenburg's side."
+
+ #Modifiers
+ fee_bran_son_in_clergy: "Family in High Places"
+ fee_bran_infertile: "Not possible to have an heir right now."
+ fee_bran_wine_customs: "Wine Customs"
+ fee_bran_beer_excise: "Beer Excise"
+ fee_bran_ruppin_infertility: "Johann's lack of heirs."
+ fee_bran_lover_of_the_hunt: "Lover of the Hunt"
+ CE_BRA_BRA_KUS_Release: "Cedes our Lusatian and Neumarker possesions to our brother for his own margraviate."
+ fee_bran_beautiful_foundress: "The Beautifull Foundress"
+ fee_bran_jewish_tax: "Jewish Tax"
+ fee_bran_religious_pragmatism: "Religious Pragmatism"
+ fee_bran_lippold_ben_chluchim: "Lippold Ben Chluchim"
+ CE_BRA_Could_Lead_To_Economic_Collapse: "This could lead to economic collapse in the long term."
+ fee_bran_economic_downturn: "Economic Downturn"
+ fee_bran_economic_collapse: "Economic Collapse"
+ fee_bran_jewish_assets_seized: "Jewish Assets seized"
+ fee_bran_restored_jewish_privileges: "Restored Jewish Privileges"
+ fee_bran_elector_order_john: "Elector of the Order of St John"
+ fee_bran_knights_order_john: "Elector of the Order of St John"
+ fee_bran_secularization_john: "Secularization of St John"
+ fee_bran_margrave_dues: "Margrave's Dues"
+ fee_bran_favors_called_in: "Favors Called in"
+ fee_bran_berliner_singing_boys: "Berliner Singing Boys" #Choir Boys
+ fee_bran_dutch_agriculture_architecture: "Dutch Agriculture and Architecture"
+
+ #Opinion Modifiers
+ fee_bran_conceeded_territory: "Conceeded Territory"
 
  #Tooltips:
  fee_brandenburg_barbara_von_hohenzollern_marriage_tt: "Accidents may happen."
+ fee_brandenburg_seizure_of_glogau_tt: "The Bohemian King and Silesians Dukes might declare war to retake it."
+ fee_brandenburg_abandon_barbara_tt: "Start plotting against the Hohenzollerns."
+ fee_brandenburg_Magdeburg_Hohenzollern_tt: "It can be very convient to have family in the church."
+ fee_brandenburg_claimed_the_duchies_tt: "By claiming the dutchies we can later enforce our claim."
+ fee_brandenburg_treaty_xanten_tt: "This will attempt to resolve the situation by dividing the contested lands among the claimaints."
+ fee_brandenburg_deny_treaty_tt: "This will attempt to seize the entire duchy for ourselves \nBerg will not appriciate this."
+ fee_brandenburg_release_pomerania_tt: "Redirect the Pomeranians, we grant them control over hinterpommern and vorpommern in exchange for joining the war on Brandenburg's side."
+
+ #Renames
+ BRA_KUS: "Brandenburg-Kustrin"
+ BRA_KUS_ADJ: "Brandenburger"

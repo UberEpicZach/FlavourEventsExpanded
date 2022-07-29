@@ -7,9 +7,9 @@ country_event = {
 	title = FEE_Brandenburg_Events.1.T
 	desc = FEE_Brandenburg_Events.1.D
 	picture = ELECTION_REPUBLICAN_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = BRA
 		is_year = 1472
@@ -29,7 +29,7 @@ country_event = {
 	mean_time_to_happen = {
 		days = 30
 	}
-	
+
 	option = {
 		name = FEE_Brandenburg_Events.1.OPT1
 		ai_chance = {
@@ -57,9 +57,9 @@ country_event = {
 	title = FEE_Brandenburg_Events.2.T
 	desc = FEE_Brandenburg_Events.2.D
 	picture = ELECTION_REPUBLICAN_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		is_year = 1478
 		NOT = { is_year = 1490 }
@@ -84,7 +84,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
@@ -121,7 +121,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = FEE_Brandenburg_Events.2.OPT1
 		ai_chance = {
@@ -197,9 +197,9 @@ country_event = {
 	title = FEE_Brandenburg_Events.3.T
 	desc = FEE_Brandenburg_Events.3.D
 	picture = ELECTION_REPUBLICAN_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	is_triggered_only = yes 	
 
 	option = {
@@ -216,7 +216,7 @@ country_event = {
 	title = FEE_Brandenburg_Events.4.T
 	desc = FEE_Brandenburg_Events.4.D
 	picture = ELECTION_REPUBLICAN_eventPicture
-	
+
 	fire_only_once = yes
 	is_triggered_only = yes
 
@@ -253,7 +253,7 @@ country_event = {
 		}
 		
 		add_army_tradition = 5
-		custom_tooltip = CE_brandenburger_seizure_of_glogau
+		custom_tooltip = fee_brandenburg_seizure_of_glogau_tt
 		BOH = {
 			country_event = {
 				id = FEE_Brandenburg_Events.5
@@ -291,27 +291,19 @@ country_event = {
 	}
 }
 
+#The Invasion of Glogau
 country_event = {
 	id = FEE_Brandenburg_Events.5
 	title = FEE_Brandenburg_Events.5.T
 	desc = FEE_Brandenburg_Events.5.D
 	picture = ELECTION_REPUBLICAN_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	is_triggered_only = yes
 
 	option = {
 		name = FEE_Brandenburg_Events.5.OPT1
-		BOH = {
-			declare_war_with_cb = {
-				who = BRA
-				casus_belli = cb_liberation
-			}
-		}
-		2966 = {
-			change_controller = BRA
-		}
 		ai_chance = {
 			factor = 2
 			modifier = {
@@ -349,15 +341,19 @@ country_event = {
 				manpower_percentage = 0.9
 			}
 		}
+
+		BOH = {
+			declare_war_with_cb = {
+				who = BRA
+				casus_belli = cb_liberation
+			}
+		}
+		2966 = {
+			change_controller = BRA
+		}
 	}
 	option = {
 		name = FEE_Brandenburg_Events.5.OPT2
-		BRA = {
-			country_event = {
-				id = FEE_Brandenburg_Events.6
-				days = 1
-			}
-		}
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -367,35 +363,45 @@ country_event = {
 				}
 			}
 		}
+
+		BRA = {
+			country_event = {
+				id = FEE_Brandenburg_Events.6
+				days = 1
+			}
+		}
 	}
 }
 
+# Gunboat Diplomacy
 country_event = {
 	id = FEE_Brandenburg_Events.6
 	title = FEE_Brandenburg_Events.6.T
 	desc = FEE_Brandenburg_Events.6.D
 	picture = ELECTION_REPUBLICAN_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	is_triggered_only = yes 	
 
 	option = {
 		name = FEE_Brandenburg_Events.6.OPT1
+
 		BRA = {
 			vassalize = GLG
 		}
 	}
 }
 
+#A Happy Family
 country_event = {
 	id = FEE_Brandenburg_Events.7
 	title = FEE_Brandenburg_Events.7.T
 	desc = FEE_Brandenburg_Events.7.D
 	picture = ELECTION_REPUBLICAN_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = BRA
 		any_subject_country = {
@@ -403,26 +409,27 @@ country_event = {
 			dynasty = "von Hohenzollern"
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 3650
 	}
 
 	option = {
 		name = FEE_Brandenburg_Events.7.OPT1
+		ai_chance = {
+			factor = 10
+		}
+
 		BOH = {
 			country_event = {
 				id = FEE_Brandenburg_Events.8
 				days = 1
 			}
 		}
-		ai_chance = {
-			factor = 10
-		}
 	}
+
 	option = {
 		name = FEE_Brandenburg_Events.7.OPT2
-		add_stability = -1
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -432,30 +439,24 @@ country_event = {
 				}
 			}
 		}
+
+		add_stability = -1
 	}
 }
 
+#A Marriage Offer
 country_event = {
 	id = FEE_Brandenburg_Events.8
 	title = FEE_Brandenburg_Events.8.T
 	desc = FEE_Brandenburg_Events.8.D
 	picture = ELECTION_REPUBLICAN_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = FEE_Brandenburg_Events.8.OPT1
-		create_marriage = BRA
-		add_opinion = {
-			who = BRA
-			modifier = CE_barbara_marriage
-		}
-		reverse_add_opinion = {
-			who = BRA
-			modifier = CE_barbara_marriage
-		}
 		ai_chance = {
 			factor = 2
 			modifier = {
@@ -465,9 +466,7 @@ country_event = {
 				}
 			}
 		}
-	}
-	option = {
-		name = FEE_Brandenburg_Events.8.OPT2
+
 		create_marriage = BRA
 		add_opinion = {
 			who = BRA
@@ -477,12 +476,10 @@ country_event = {
 			who = BRA
 			modifier = CE_barbara_marriage
 		}
-		custom_tooltip = CE_abandon_barbara
-		set_country_flag = CE_tricked_barbara
-		country_event = {
-			id = FEE_Brandenburg_Events.9
-			days = 365
-		}
+	}
+
+	option = {
+		name = FEE_Brandenburg_Events.8.OPT2
 		ai_chance = {
 			factor = 10
 			modifier = {
@@ -492,26 +489,45 @@ country_event = {
 				}
 			}
 		}
+
+		create_marriage = BRA
+		add_opinion = {
+			who = BRA
+			modifier = CE_barbara_marriage
+		}
+		reverse_add_opinion = {
+			who = BRA
+			modifier = CE_barbara_marriage
+		}
+		custom_tooltip = fee_brandenburg_abandon_barbara_tt
+		set_country_flag = CE_tricked_barbara
+		country_event = {
+			id = FEE_Brandenburg_Events.9
+			days = 365
+		}
 	}
+
 	option = {
 		name = FEE_Brandenburg_Events.8.OPT3
-		add_prestige = 5
 		ai_chance = {
 			factor = 1
 		}
+
+		add_prestige = 5
 	}
 }
 
+#Integrate the Duchy
 country_event = {
 	id = FEE_Brandenburg_Events.9
 	title = FEE_Brandenburg_Events.9.T
 	desc = FEE_Brandenburg_Events.9.D
 	picture = ELECTION_REPUBLICAN_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = FEE_Brandenburg_Events.9.OPT1
 		BRA = {
@@ -552,18 +568,31 @@ country_event = {
 	}
 }
 
+#The Betrayal of Barbara
 country_event = {
 	id = FEE_Brandenburg_Events.10
 	title = FEE_Brandenburg_Events.10.T
 	desc = FEE_Brandenburg_Events.10.D
 	picture = ELECTION_REPUBLICAN_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = FEE_Brandenburg_Events.10.OPT1
+		ai_chance = {
+			factor = 2
+		}
+
+		define_advisor = {
+			type = diplomat
+			name = "Barbara von Hohenzollern"
+			skill = 1
+			culture = ROOT
+			religion = ROOT
+			discount = yes
+		}
 		if = {
 			limit = {
 				BOH = { valid_for_personal_unions_trigger = yes }
@@ -573,26 +602,9 @@ country_event = {
 				create_union = GLG
 			}
 		}
-		define_advisor = {
-			type = diplomat
-			name = "Barbara von Hohenzollern"
-			skill = 1
-			culture = ROOT
-			religion = ROOT
-			discount = yes
-		}
-		ai_chance = {
-			factor = 2
-		}
 	}
 	option = {
 		name = FEE_Brandenburg_Events.10.OPT2
-		BRA = {
-			declare_war_with_cb = {
-				who = BOH
-				casus_belli = cb_liberation
-			}
-		}
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -624,18 +636,26 @@ country_event = {
 				}
 			}
 		}
+
+		BRA = {
+			declare_war_with_cb = {
+				who = BOH
+				casus_belli = cb_liberation
+			}
+		}
 	}
 }
 
 ##Election of Magdeburg##
+#Albert of Brandenburg
 country_event = {
 	id = FEE_Brandenburg_Events.11
 	title = FEE_Brandenburg_Events.11.T
 	desc = FEE_Brandenburg_Events.11.D
 	picture = ELECTION_REPUBLICAN_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		OR = {
 			tag = BRA
@@ -646,11 +666,11 @@ country_event = {
 		exists = MAG
 		has_country_modifier = bra_dispositio_achillea
 	}
-	
+
 	mean_time_to_happen = {
 		days = 365
 	}
-	
+
 	option = {
 		name = FEE_Brandenburg_Events.11.OPT1
 		ai_chance = {
@@ -681,7 +701,7 @@ country_event = {
 			}
 		}
 
-		custom_tooltip = CE_Magdeburg_Hohenzollern
+		custom_tooltip = fee_brandenburg_Magdeburg_Hohenzollern_tt
 		add_years_of_income = -2.0
 		MAG = {
 			change_government_to_theocracy = yes
@@ -710,14 +730,15 @@ country_event = {
 	}
 }
 
+#Prince-Archbishopric of Magdeburg
 country_event = {
 	id = FEE_Brandenburg_Events.12
 	title = FEE_Brandenburg_Events.12.T
 	desc = FEE_Brandenburg_Events.12.D
 	picture = ELECTION_REPUBLICAN_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		OR = {
 			tag = BRA
@@ -737,19 +758,13 @@ country_event = {
 		}
 		is_year = 1566
 	}
-	
+
 	mean_time_to_happen = {
 		days = 365
 	}
-	
+
 	option = {
 		name = FEE_Brandenburg_Events.12.OPT1
-		MAG = {
-			country_event = {
-				id = FEE_Brandenburg_Events.13
-				days = 1
-			}
-		}
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -759,32 +774,37 @@ country_event = {
 				}
 			}
 		}
+
+		MAG = {
+			country_event = {
+				id = FEE_Brandenburg_Events.13
+				days = 1
+			}
+		}
 	}
 	option = {
 		name = FEE_Brandenburg_Events.12.OPT2
-		add_church_power = 50
-		add_fervor = 25
 		ai_chance = {
 			factor = 0
 		}
+
+		add_adm_power = 75
 	}
 }
 
+#Union with Brandenburg
 country_event = {
 	id = FEE_Brandenburg_Events.13
 	title = FEE_Brandenburg_Events.13.T
 	desc = FEE_Brandenburg_Events.13.D
 	picture = ELECTION_REPUBLICAN_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = FEE_Brandenburg_Events.13.OPT1
-		FROM = {
-			inherit = MAG
-		}
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -805,23 +825,29 @@ country_event = {
 				}
 			}
 		}
+
+		FROM = {
+			inherit = MAG
+		}
 	}
 	option = {
 		name = FEE_Brandenburg_Events.13.OPT2
 		ai_chance = {
 			factor = 0
 		}
+
 	}
 }
 
+#Archbishop's Ambitions
 country_event = {
 	id = FEE_Brandenburg_Events.14
 	title = FEE_Brandenburg_Events.14.T
 	desc = FEE_Brandenburg_Events.14.D
 	picture = ELECTION_REPUBLICAN_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		OR = {
 			tag = BRA
@@ -835,23 +861,9 @@ country_event = {
 		}
 		is_year = 1514
 	}
-	
+
 	option = {
 		name = FEE_Brandenburg_Events.14.OPT1
-		hidden_effect = {
-			MAI = {
-				country_event = {
-					id = FEE_Brandenburg_Events.15
-					days = 1
-				}
-			}
-		}
-		custom_tooltip = CE_albert_rules_mainz
-		add_years_of_income = -1
-		add_ruler_modifier = {
-			name = "CE_son_in_clergy"
-			duration = -1
-		}
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -863,10 +875,24 @@ country_event = {
 				}
 			}
 		}
+
+		add_years_of_income = -1
+		add_ruler_modifier = {
+			name = fee_bran_son_in_clergy
+			duration = -1
+		}
+		custom_tooltip = fee_brandenburg_albert_rules_mainz_tt
+		hidden_effect = {
+			MAI = {
+				country_event = {
+					id = FEE_Brandenburg_Events.15
+					days = 1
+				}
+			}
+		}
 	}
 	option = {
 		name = FEE_Brandenburg_Events.14.OPT2
-			add_prestige = 5
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -882,21 +908,28 @@ country_event = {
 				}
 			}
 		}
+
+		add_prestige = 5
 	}
 }
 
+#Albert of Mainz and Magdeburg
 country_event = {
 	id = FEE_Brandenburg_Events.15
 	title = FEE_Brandenburg_Events.15.T
 	desc = FEE_Brandenburg_Events.15.D
 	picture = ELECTION_REPUBLICAN_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = FEE_Brandenburg_Events.15.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
 		define_ruler = {
 			name = "Albert"
 			dynasty = "von Hohenzollern"
@@ -904,37 +937,26 @@ country_event = {
 			adm = 1
 			age = 24
 		}
-		ai_chance = {
-			factor = 1
-		}
 	}
 	option = {
 		name = FEE_Brandenburg_Events.15.OPT2
-			add_prestige = 5
 		ai_chance = {
 			factor = 0
 		}
+
+		add_prestige = 5
 	}
 }
 
 #####Inheritance of Berg#####
 
-#The Inheritance of Julich(Berg)
+#The Julich Inheritance(Berg)
 country_event = {
 	id = FEE_Brandenburg_Events.16
 	title = FEE_Brandenburg_Events.16.T
 	desc = FEE_Brandenburg_Events.16.D
 	picture = ELECTION_REPUBLICAN_eventPicture
-	major = yes
-	major_trigger = {
-		is_part_of_hre = yes
-		any_neighbor_country = {
-			is_part_of_hre = yes
-		}
-	}
-	
-	fire_only_once = yes
-	
+
 	trigger = {
 		tag = BRG
 		BRG = {
@@ -949,10 +971,21 @@ country_event = {
 		is_year = 1609
 		NOT = { is_year = 1630 }
 	}
-	
+
+	fire_only_once = yes
+
 	mean_time_to_happen = {
 		days = 180
 	}
+
+	major = yes
+	major_trigger = {
+		is_part_of_hre = yes
+		any_neighbor_country = {
+			is_part_of_hre = yes
+		}
+	}
+
 	immediate = {
 		hidden_effect = {
 			BRG = {
@@ -963,15 +996,20 @@ country_event = {
 					female = yes
 				}
 				add_ruler_modifier = {
-					name = CE_Infertile
+					name = fee_bran_infertile
 					duration = -1
 					hidden = yes
 				}
 			}
 		}
 	}
+
 	option = {
 		name = FEE_Brandenburg_Events.16.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
 		PAL = {
 			country_event = {
 				id = FEE_Brandenburg_Events.17
@@ -1003,12 +1041,13 @@ country_event = {
 				days = 90
 			}
 		}
-		ai_chance = {
-			factor = 1
-		} 
 	}
 	option = {
 		name = FEE_Brandenburg_Events.16.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
 		BRG = {
 			define_ruler = {
 				claim = 20
@@ -1028,9 +1067,6 @@ country_event = {
 				months = 120
 			}
 		}
-		ai_chance = {
-			factor = 0
-		}
 	}
 }
 
@@ -1040,25 +1076,28 @@ country_event = {
 	title = FEE_Brandenburg_Events.17.T
 	desc = FEE_Brandenburg_Events.17.D
 	picture = ELECTION_REPUBLICAN_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = FEE_Brandenburg_Events.17.OPT1
-		set_country_flag = United_Duchies_claimed_yes
-		custom_tooltip = CE_claimed_the_duchies
 		ai_chance = {
 			factor = 1
 		}
+
+		set_country_flag = fee_brandenburg_united_duchies_claimed_yes
+		custom_tooltip = fee_brandenburg_claimed_the_duchies_tt
 	}
+
 	option = {
 		name = FEE_Brandenburg_Events.17.OPT2
-		add_legitimacy = 5
 		ai_chance = {
 			factor = 0
 		}
+
+		add_legitimacy_equivalent = { amount = 5 republican_tradition = 3 }
 	}
 }
 
@@ -1068,25 +1107,28 @@ country_event = {
 	title = FEE_Brandenburg_Events.18.T
 	desc = FEE_Brandenburg_Events.18.D
 	picture = ELECTION_REPUBLICAN_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = FEE_Brandenburg_Events.18.OPT1
-		set_country_flag = United_Duchies_claimed_yes
-		custom_tooltip = CE_claimed_the_duchies
 		ai_chance = {
 			factor = 1
 		}
+
+		set_country_flag = fee_brandenburg_united_duchies_claimed_yes
+		custom_tooltip = fee_brandenburg_claimed_the_duchies_tt
 	}
+
 	option = {
 		name = FEE_Brandenburg_Events.18.OPT2
-		add_legitimacy = 5
 		ai_chance = {
 			factor = 0
 		}
+
+		add_legitimacy_equivalent = { amount = 5 republican_tradition = 3 }
 	}
 }
 
@@ -1096,39 +1138,42 @@ country_event = {
 	title = FEE_Brandenburg_Events.19.T
 	desc = FEE_Brandenburg_Events.19.D
 	picture = ELECTION_REPUBLICAN_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = FEE_Brandenburg_Events.19.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
 		every_country = {
 			limit = {
-				has_country_flag = United_Duchies_claimed_yes
+				has_country_flag = fee_brandenburg_united_duchies_claimed_yes
 			}
 			country_event = {
 				id = FEE_Brandenburg_Events.20
 				days = 30
 			}
 		}
-		ai_chance = {
-			factor = 1
-		}
 	}
+
 	option = {
 		name = FEE_Brandenburg_Events.19.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
 		every_country = {
 			limit = {
-				has_country_flag = United_Duchies_claimed_yes
+				has_country_flag = fee_brandenburg_united_duchies_claimed_yes
 			}
 			country_event = {
 				id = FEE_Brandenburg_Events.25
 				days = 30
 			}
-		}
-		ai_chance = {
-			factor = 0
 		}
 	}
 }
@@ -1139,6 +1184,9 @@ country_event = {
 	title = FEE_Brandenburg_Events.20.T
 	desc = FEE_Brandenburg_Events.20.D
 	picture = ELECTION_REPUBLICAN_eventPicture
+
+	is_triggered_only = yes
+
 	major = yes
 	major_trigger = {
 		is_part_of_hre = yes
@@ -1146,20 +1194,9 @@ country_event = {
 			is_part_of_hre = yes
 		}
 	}
-	
-	is_triggered_only = yes
-	
+
 	option = {
 		name = FEE_Brandenburg_Events.20.OPT1
-		add_army_tradition = 5
-		create_alliance = BRG
-		emperor = {
-			country_event = {
-				id = FEE_Brandenburg_Events.22
-				days = 360
-			}
-		}
-		set_country_flag = United_Duchies_occupied_yes
 		ai_chance = {
 			factor = 10
 			modifier = {
@@ -1183,26 +1220,19 @@ country_event = {
 				}
 			}
 		}
+
+		add_army_tradition = 5
+		create_alliance = BRG
+		emperor = {
+			country_event = {
+				id = FEE_Brandenburg_Events.22
+				days = 360
+			}
+		}
+		set_country_flag = fee_brandenburg_united_duchies_occupied_yes
 	}
 	option = {
 		name = FEE_Brandenburg_Events.20.OPT2
-		clr_country_flag = United_Duchies_claimed_yes
-		if = {
-			limit = {
-				NOT = {
-					any_country = {
-						has_country_flag = United_Duchies_claimed_yes
-					}
-				}
-			}
-			emperor = {
-				country_event = {
-					id = FEE_Brandenburg_Events.21
-					days = 30
-				}
-			}
-		}
-		
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -1214,6 +1244,23 @@ country_event = {
 				army_size = HAB
 			}
 		}
+
+		clr_country_flag = fee_brandenburg_united_duchies_claimed_yes
+		if = {
+			limit = {
+				NOT = {
+					any_country = {
+						has_country_flag = fee_brandenburg_united_duchies_claimed_yes
+					}
+				}
+			}
+			emperor = {
+				country_event = {
+					id = FEE_Brandenburg_Events.21
+					days = 30
+				}
+			}
+		}
 	}
 }
 
@@ -1223,6 +1270,11 @@ country_event = {
 	title = FEE_Brandenburg_Events.21.T
 	desc = FEE_Brandenburg_Events.21.D
 	picture = ELECTION_REPUBLICAN_eventPicture
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
 	major = yes
 	major_trigger = {
 		is_part_of_hre = yes
@@ -1230,18 +1282,15 @@ country_event = {
 			is_part_of_hre = yes
 		}
 	}
-	
-	fire_only_once = yes
-	
-	is_triggered_only = yes
-	
+
 	option = {
 		name = FEE_Brandenburg_Events.21.OPT1
-		emperor = {
-			inherit = BRG
-		}
 		ai_chance = {
 			factor = 1
+		}
+
+		emperor = {
+			inherit = BRG
 		}
 	}
 }
@@ -1252,6 +1301,11 @@ country_event = {
 	title = FEE_Brandenburg_Events.22.T
 	desc = FEE_Brandenburg_Events.22.D
 	picture = ELECTION_REPUBLICAN_eventPicture
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
 	major = yes
 	major_trigger = {
 		is_part_of_hre = yes
@@ -1259,38 +1313,26 @@ country_event = {
 			is_part_of_hre = yes
 		}
 	}
-	fire_only_once = yes
-	
-	is_triggered_only = yes
-	
+
 	option = {
 		name = FEE_Brandenburg_Events.22.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
 		every_country = {
 			limit = {
-				has_country_flag = United_Duchies_occupied_yes
+				has_country_flag = fee_brandenburg_united_duchies_occupied_yes
 			}
 			country_event = {
 				id = FEE_Brandenburg_Events.25
 				days = 30
 			}
 		}
-		ai_chance = {
-			factor = 1
-		}
 	}
+
 	option = {
 		name = FEE_Brandenburg_Events.22.OPT2
-		declare_war_with_cb = {
-			who = BRG
-			casus_belli = cb_vassalize_mission 
-		}
-		FRA = {
-			country_event = {
-				id = FEE_Brandenburg_Events.23
-				days = 100
-			}
-		}
-		set_global_flag = United_Duchies_war_yes
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -1312,6 +1354,18 @@ country_event = {
 				is_at_war = yes
 			}
 		}
+
+		declare_war_with_cb = {
+			who = BRG
+			casus_belli = cb_vassalize_mission 
+		}
+		FRA = {
+			country_event = {
+				id = FEE_Brandenburg_Events.23
+				days = 100
+			}
+		}
+		set_global_flag = fee_brandenburg_united_duchies_war_yes
 	}
 }
 
@@ -1321,6 +1375,9 @@ country_event = {
 	title = FEE_Brandenburg_Events.23.T
 	desc = FEE_Brandenburg_Events.23.D
 	picture = ELECTION_REPUBLICAN_eventPicture
+
+	is_triggered_only = yes
+
 	major = yes
 	major_trigger = {
 		is_part_of_hre = yes
@@ -1328,18 +1385,9 @@ country_event = {
 			is_part_of_hre = yes
 		}
 	}
-	
-	is_triggered_only = yes
-	
+
 	option = {
 		name = FEE_Brandenburg_Events.23.OPT1
-		emperor = {
-			country_event = {
-				id = FEE_Brandenburg_Events.24
-				days = 30
-			}
-		}
-			
 		ai_chance = {
 			factor = 2
 			modifier = {
@@ -1353,7 +1401,15 @@ country_event = {
 				}
 			}
 		}
+
+		emperor = {
+			country_event = {
+				id = FEE_Brandenburg_Events.24
+				days = 30
+			}
+		}
 	}
+
 	option = {
 		name = FEE_Brandenburg_Events.23.OPT2
 		ai_chance = {
@@ -1367,6 +1423,8 @@ country_event = {
 				army_size = HAB
 			}
 		}
+
+		add_prestige = 5
 	}
 }
 
@@ -1376,6 +1434,9 @@ country_event = {
 	title = FEE_Brandenburg_Events.24.T
 	desc = FEE_Brandenburg_Events.24.D
 	picture = ELECTION_REPUBLICAN_eventPicture
+
+	is_triggered_only = yes
+
 	major = yes
 	major_trigger = {
 		is_part_of_hre = yes
@@ -1383,15 +1444,9 @@ country_event = {
 			is_part_of_hre = yes
 		}
 	}
-	
-	is_triggered_only = yes
-	
+
 	option = {
 		name = FEE_Brandenburg_Events.24.OPT1
-		FRA = {
-			create_alliance = BRG
-			join_all_defensive_wars_of = BRG
-		}
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -1405,14 +1460,21 @@ country_event = {
 				war_exhaustion = 5
 			}
 		}
+
+		FRA = {
+			create_alliance = BRG
+			join_all_defensive_wars_of = BRG
+		}
 	}
+
 	option = {
 		name = FEE_Brandenburg_Events.24.OPT2
-		emperor = {
-			white_peace = BRG
-		}
 		ai_chance = {
 			factor = 1
+		}
+
+		emperor = {
+			white_peace = BRG
 		}
 	}
 }
@@ -1425,21 +1487,14 @@ country_event = {
 	title = FEE_Brandenburg_Events.25.T
 	desc = FEE_Brandenburg_Events.25.D
 	picture = ELECTION_REPUBLICAN_eventPicture
-	major = yes
-	major_trigger = {
-		is_part_of_hre = yes
-		any_neighbor_country = {
-			is_part_of_hre = yes
-		}
-	}
-	
+
 	trigger = {
 		exists = BRG
 		BRG = {
 			is_subject = no
 		}
-		has_country_flag = United_Duchies_occupied_yes
-		NOT = { has_country_flag = United_Duchies_Negotiations_yes }
+		has_country_flag = fee_brandenburg_united_duchies_occupied_yes
+		NOT = { has_country_flag = fee_brandenburg_united_negotiations_yes }
 		BRG = {
 			NOT = {
 				is_at_war = yes
@@ -1447,55 +1502,27 @@ country_event = {
 			had_recent_war = 1
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		days = 1
 	}
-	
-	immediate = {
-		set_country_flag = United_Duchies_Negotiations_yes	
+
+	major = yes
+	major_trigger = {
+		is_part_of_hre = yes
+		any_neighbor_country = {
+			is_part_of_hre = yes
+		}
 	}
-	
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = fee_brandenburg_united_negotiations_yes
+		}
+	}
+
 	option = {
 		name = FEE_Brandenburg_Events.25.OPT1
-		trigger = {
-			AND = {
-				OR = {
-					BRA = {
-						has_country_flag = United_Duchies_occupied_yes
-					}
-					PRU = {
-						has_country_flag = United_Duchies_occupied_yes
-					}
-				}
-				PAL = {
-					has_country_flag = United_Duchies_occupied_yes
-				}
-			}
-		}
-		set_country_flag = United_Duchies_Negotiations_Divide_yes
-		if = {
-			limit = {
-				OR = {
-					BRA = {
-						has_country_flag = United_Duchies_Negotiations_Divide_yes
-					}
-					PRU = {
-						has_country_flag = United_Duchies_Negotiations_Divide_yes
-					}
-				}
-				PAL = {
-					has_country_flag = United_Duchies_Negotiations_Divide_yes
-				}
-			}
-			BRG = {
-				country_event = {
-					id = FEE_Brandenburg_Events.27
-					days = 30
-				}
-			}
-		}
-		custom_tooltip = CE_Treaty_of_Xanten
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -1510,34 +1537,51 @@ country_event = {
 			}
 			modifier = {
 				factor = 2
-				diplomatic_reputation = 1.5
+				diplomatic_reputation = 1
 			}
 		}
-	}
-	option = {
-		name = FEE_Brandenburg_Events.25.OPT2
 		trigger = {
 			AND = {
 				OR = {
 					BRA = {
-						has_country_flag = United_Duchies_occupied_yes
+						has_country_flag = fee_brandenburg_united_duchies_occupied_yes
 					}
 					PRU = {
-						has_country_flag = United_Duchies_occupied_yes
+						has_country_flag = fee_brandenburg_united_duchies_occupied_yes
 					}
 				}
 				PAL = {
-					has_country_flag = United_Duchies_occupied_yes
+					has_country_flag = fee_brandenburg_united_duchies_occupied_yes
 				}
 			}
 		}
-		BRG = {
-			country_event = {
-				id = FEE_Brandenburg_Events.28
-				days = 30
+
+		set_country_flag = fee_brandenburg_united_negotiations_divide_yes
+		if = {
+			limit = {
+				OR = {
+					BRA = {
+						has_country_flag = fee_brandenburg_united_negotiations_divide_yes
+					}
+					PRU = {
+						has_country_flag = fee_brandenburg_united_negotiations_divide_yes
+					}
+				}
+				PAL = {
+					has_country_flag = fee_brandenburg_united_negotiations_divide_yes
+				}
+			}
+			BRG = {
+				country_event = {
+					id = FEE_Brandenburg_Events.27
+					days = 30
+				}
 			}
 		}
-		custom_tooltip = CE_deny_treaty
+		custom_tooltip = fee_brandenburg_treaty_xanten_tt
+	}
+	option = {
+		name = FEE_Brandenburg_Events.25.OPT2
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -1577,6 +1621,29 @@ country_event = {
 				war_exhaustion = 5
 			}
 		}
+		trigger = {
+			AND = {
+				OR = {
+					BRA = {
+						has_country_flag = fee_brandenburg_united_duchies_occupied_yes
+					}
+					PRU = {
+						has_country_flag = fee_brandenburg_united_duchies_occupied_yes
+					}
+				}
+				PAL = {
+					has_country_flag = fee_brandenburg_united_duchies_occupied_yes
+				}
+			}
+		}
+
+		custom_tooltip = fee_brandenburg_deny_treaty_tt
+		BRG = {
+			country_event = {
+				id = FEE_Brandenburg_Events.28
+				days = 30
+			}
+		}
 	}
 	option = {
 		name = FEE_Brandenburg_Events.25.OPT3
@@ -1585,51 +1652,52 @@ country_event = {
 				AND = {
 					OR = {
 						BRA = {
-							has_country_flag = United_Duchies_occupied_yes
+							has_country_flag = fee_brandenburg_united_duchies_occupied_yes
 						}
 						PRU = {
-							has_country_flag = United_Duchies_occupied_yes
+							has_country_flag = fee_brandenburg_united_duchies_occupied_yes
 						}
 					}
 					PAL = {
-						has_country_flag = United_Duchies_occupied_yes
+						has_country_flag = fee_brandenburg_united_duchies_occupied_yes
 					}
 				}
 			}
 			BRG = { valid_for_personal_unions_trigger = yes }
 			valid_for_personal_unions_trigger = yes
 		}
-		create_union = BRG
 		ai_chance = {
 			factor = 100
 		}
+
+		create_union = BRG
 	}
 }
 
-#The Spoils of War)Brandenburg
+#(The Spoils of War)Brandenburg
 # country_event = {
 	# id = FEE_Brandenburg_Events.26
 	# title = FEE_Brandenburg_Events.26.T
 	# desc = FEE_Brandenburg_Events.26.D
 	# picture = ELECTION_REPUBLICAN_eventPicture
-	
+
 	# fire_only_once = yes
-	
+
 	# trigger = {
 		# tag = BRA
 		# exists = BRG
-		# has_global_flag = United_Duchies_war_yes
+		# has_global_flag = fee_brandenburg_united_duchies_war_yes
 		# BRG = {
 			# NOT = {
 				# is_at_war = yes
 			# }
 		# }
 	# }
-	
+
 	# mean_time_to_happen = {
 		# days = 1
 	# }
-	
+
 	# option = {
 		# name = FEE_Brandenburg_Events.26.OPT1
 		# if = {
@@ -1669,14 +1737,14 @@ country_event = {
 			# # limit = {
 				# # calc_true_if = {
 					# # all_country = {
-						# # has_country_flag = United_Duchies_occupied_yes
+						# # has_country_flag = fee_brandenburg_united_duchies_occupied_yes
 					# # }
 					# # value = 1
 				# # }
 				# # NOT = {
 					# # calc_true_if = {
 						# # all_country = {
-							# # has_country_flag = United_Duchies_occupied_yes
+							# # has_country_flag = fee_brandenburg_united_duchies_occupied_yes
 						# # }
 						# # value = 2
 					# # }
@@ -1687,14 +1755,14 @@ country_event = {
 			# # limit = {
 				# # calc_true_if = {
 					# # all_country = {
-						# # has_country_flag = United_Duchies_occupied_yes
+						# # has_country_flag = fee_brandenburg_united_duchies_occupied_yes
 					# # }
 					# # value = 1
 				# # }
 				# # NOT = {
 					# # calc_true_if = {
 						# # all_country = {
-							# # has_country_flag = United_Duchies_occupied_yes
+							# # has_country_flag = fee_brandenburg_united_duchies_occupied_yes
 						# # }
 						# # value = 1
 					# # }
@@ -1702,7 +1770,7 @@ country_event = {
 			# # }
 			# # random_country = {
 				# # limit = {
-					# # has_country_flag = United_Duchies_occupied_yes
+					# # has_country_flag = fee_brandenburg_united_duchies_occupied_yes
 				# # }
 				# # save_event_target_as = United_Duchies_Reciever
 			# # }
@@ -1722,6 +1790,11 @@ country_event = {
 	title = FEE_Brandenburg_Events.27.T
 	desc = FEE_Brandenburg_Events.27.D
 	picture = ELECTION_REPUBLICAN_eventPicture
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
 	major = yes
 	major_trigger = {
 		is_part_of_hre = yes
@@ -1729,58 +1802,54 @@ country_event = {
 			is_part_of_hre = yes
 		}
 	}
-	
-	fire_only_once = yes
-	
-	is_triggered_only = yes
-	
+
 	option = {
 		name = FEE_Brandenburg_Events.27.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
 		BRG = {
-			every_owned_province = {
+			if = {
 				limit = {
-					OR = {
-						province_id = 4768
-						province_id = 84
+					owns = 4768
+				}
+				4768 = {
+					cede_province = PAL
+					add_core = PAL
+					if = {
+						limit = {
+							exists = BRA 
+						}
+						add_permanent_claim = BRA
+						add_core = BRA 
+					}
+					else = {
+						add_permanent_claim = PRU
+						add_core = PRU 
 					}
 				}
-				cede_province = PAL
-				add_core = PAL
 			}
 			if = {
 				limit = {
-					exists = BRA 
+					owns = 84
 				}
-				every_owned_province = {
-					limit = {
-						NOT = {
-							OR = {
-								province_id = 4768
-								province_id = 84
-							}
+				84 = {
+					cede_province = PAL
+					add_core = PAL
+					if = {
+						limit = {
+							exists = BRA 
 						}
+						add_permanent_claim = BRA
+						add_core = BRA 
 					}
-					cede_province = BRA
-					add_core = BRA 
+					else = {
+						add_permanent_claim = PRU
+						add_core = PRU 
+					}
 				}
 			}
-			else = {
-				every_owned_province = {
-					limit = {
-						NOT = {
-							OR = {
-								province_id = 4768
-								province_id = 84
-							}
-						}
-					}
-					cede_province = PRU
-					add_core = PRU 
-				}
-			}
-		}
-		ai_chance = {
-			factor = 1
 		}
 	}
 }
@@ -1793,6 +1862,11 @@ country_event = {
 	title = FEE_Brandenburg_Events.28.T
 	desc = FEE_Brandenburg_Events.28.D
 	picture = ELECTION_REPUBLICAN_eventPicture
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
 	major = yes
 	major_trigger = {
 		is_part_of_hre = yes
@@ -1800,32 +1874,19 @@ country_event = {
 			is_part_of_hre = yes
 		}
 	}
-	
-	fire_only_once = yes
-	
-	is_triggered_only = yes
-	
+
 	option = {
 		name = FEE_Brandenburg_Events.28.OPT1
-		# BRA = {
-			# create_union = BRG
-		# }
-		PAL = {
-			country_event = {
-				id = FEE_Brandenburg_Events.29
-				days = 30
-			}
-		}
 		ai_chance = {
 			factor = 1
 			modifier = {
 				factor = 2
 				OR = {
 					BRA = {
-						has_country_flag = United_Duchies_Negotiations_Divide_yes
+						has_country_flag = fee_brandenburg_united_negotiations_divide_yes
 					}
 					PRU = {
-						has_country_flag = United_Duchies_Negotiations_Divide_yes
+						has_country_flag = fee_brandenburg_united_negotiations_divide_yes
 					}
 				}
 			}
@@ -1864,37 +1925,25 @@ country_event = {
 				}
 			}
 		}
+
+		# BRA = {
+			# create_union = BRG
+		# }
+		PAL = {
+			country_event = {
+				id = FEE_Brandenburg_Events.29
+				days = 30
+			}
+		}
 	}
 	option = {
 		name = FEE_Brandenburg_Events.28.OPT2
-		# PAL = {
-			# create_union = BRG
-		# }
-		if = {
-			limit = {
-				exists = BRA 
-			}
-			BRA = {
-				country_event = {
-					id = FEE_Brandenburg_Events.30
-					days = 30
-				}
-			}
-		}
-		else = {
-			PRU = {
-				country_event = {
-					id = FEE_Brandenburg_Events.30
-					days = 30
-				}
-			}
-		}
 		ai_chance = {
 			factor = 1
 			modifier = {
 				factor = 2
 				PAL = {
-					has_country_flag = United_Duchies_Negotiations_Divide_yes
+					has_country_flag = fee_brandenburg_united_negotiations_divide_yes
 				}
 			}
 			modifier = {
@@ -1932,6 +1981,29 @@ country_event = {
 				
 			}
 		}
+
+		# PAL = {
+			# create_union = BRG
+		# }
+		if = {
+			limit = {
+				exists = BRA 
+			}
+			BRA = {
+				country_event = {
+					id = FEE_Brandenburg_Events.30
+					days = 30
+				}
+			}
+		}
+		else = {
+			PRU = {
+				country_event = {
+					id = FEE_Brandenburg_Events.30
+					days = 30
+				}
+			}
+		}
 	}
 }
 
@@ -1941,39 +2013,36 @@ country_event = {
 	title = FEE_Brandenburg_Events.29.T
 	desc = FEE_Brandenburg_Events.29.D
 	picture = ELECTION_REPUBLICAN_eventPicture
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		exists = PAL
+		exists = BRG
+		OR = {
+			exists = BRA
+			exists = PRU
+		}
+		PAL = { is_subject_other_than_tributary_trigger = no }
+		OR = {
+			BRA = { is_subject_other_than_tributary_trigger = no }
+			PRU = { is_subject_other_than_tributary_trigger = no }
+		}
+		BRG = { is_subject_other_than_tributary_trigger = no }
+	}
+
 	major = yes
 	major_trigger = {
 		is_part_of_hre = yes
 		any_neighbor_country = {
 			is_part_of_hre = yes
 		}
-	}	
-	fire_only_once = yes
-	
-	is_triggered_only = yes
-	
+	}
+
 	option = {
 		name = FEE_Brandenburg_Events.29.OPT1
-		if = {
-			limit = {
-				BRA = {
-					exists = yes
-				}
-			}
-			create_succession_crisis = {
-				attacker = PAL
-				defender = BRA
-				target = BRG
-			}
-		}
-		else = {
-			create_succession_crisis = {
-				attacker = PAL
-				defender = PRU
-				target = BRG
-			}
-		}
-		
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -1995,9 +2064,33 @@ country_event = {
 				}
 			}
 		}
+
+		if = {
+			limit = {
+				BRA = {
+					exists = yes
+				}
+			}
+			create_succession_crisis = {
+				attacker = PAL
+				defender = BRA
+				target = BRG
+			}
+		}
+		else = {
+			create_succession_crisis = {
+				attacker = PAL
+				defender = PRU
+				target = BRG
+			}
+		}
 	}
+
 	option = {
 		name = FEE_Brandenburg_Events.29.OPT2
+		ai_chance = {
+			factor = 1
+		}
 		trigger = {
 			hidden_trigger = {
 				OR = {
@@ -2007,6 +2100,7 @@ country_event = {
 				BRG = { valid_for_personal_unions_trigger = yes }
 			}
 		}
+
 		if = {
 			limit = {
 				exists = BRA 
@@ -2019,9 +2113,6 @@ country_event = {
 			PRU = {
 				create_union = BRG
 			}
-		}
-		ai_chance = {
-			factor = 1
 		}
 	}
 }
@@ -2039,11 +2130,11 @@ country_event = {
 			is_part_of_hre = yes
 		}
 	}
-	
+
 	fire_only_once = yes
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = FEE_Brandenburg_Events.30.OPT1
 		if = {
@@ -2125,7 +2216,7 @@ country_event = {
 		is_year = 1470
 		NOT = { is_year = 1480 }
 	}
-	
+
 	fire_only_once = yes
 
 	mean_time_to_happen = {
@@ -2134,26 +2225,36 @@ country_event = {
 
 	option = {
 		name = FEE_Brandenburg_Events.31.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
 		add_ruler_modifier = {
-			name = "CE_BRA_Wine_Customs"
+			name = fee_bran_wine_customs
 			duration = -1
 		}
 		add_estate_loyalty = {
 			estate = estate_burghers
 			loyalty = -5
 		}
-		ai_chance = {
-			factor = 1
-		}
 	}
 	option = {
 		name = FEE_Brandenburg_Events.31.OPT2
-		add_estate_loyalty = {
-			estate = estate_burghers
-			loyalty = 5
-		}
 		ai_chance = {
 			factor = 0
+		}
+
+		if = {
+			limit = {
+				has_estate = estate_burghers
+			}
+			add_estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 5
+			}
+		}
+		else = {
+			add_dip_power = 25
 		}
 	}
 }
@@ -2164,7 +2265,7 @@ country_event = {
 	title = FEE_Brandenburg_Events.32.T
 	desc = FEE_Brandenburg_Events.32.D
 	picture = ELECTION_REPUBLICAN_eventPicture
-	
+
 	trigger = {
 		OR = {
 			tag = BRA
@@ -2182,33 +2283,49 @@ country_event = {
 
 	option = {
 		name = FEE_Brandenburg_Events.32.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
 		add_ruler_modifier = {
-			name = "CE_BRA_Beer_Excise"
+			name = fee_bran_beer_excise
 			duration = -1
 		}
-		random_list = {
-			75 = { }
-			25 = {
-				2964 = {
-					spawn_rebels = {
-						size = 1
-						type = anti_tax_rebels
+		if = {
+			limit = {
+				owns = 2964
+			}
+			random_list = {
+				75 = { }
+				25 = {
+					2964 = {
+						spawn_rebels = {
+							size = 1
+							type = anti_tax_rebels
+						}
 					}
 				}
 			}
 		}
-		ai_chance = {
-			factor = 1
-		}
 	}
+
 	option = {
 		name = FEE_Brandenburg_Events.32.OPT2
-		add_estate_loyalty = {
-			estate = estate_burghers
-			loyalty = 5
-		}
 		ai_chance = {
 			factor = 0
+		}
+
+		if = {
+			limit = {
+				has_estate = estate_burghers
+			}
+			add_estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 5
+			}
+		}
+		else = {
+			add_dip_power = 25
 		}
 	}
 }
@@ -2219,7 +2336,7 @@ country_event = {
 	title = FEE_Brandenburg_Events.33.T
 	desc = FEE_Brandenburg_Events.33.D
 	picture = ELECTION_REPUBLICAN_eventPicture
-	
+
 	trigger = {
 		OR = {
 			tag = BRA
@@ -2237,7 +2354,11 @@ country_event = {
 
 	option = {
 		name = FEE_Brandenburg_Events.33.OPT1
-		set_country_flag = CE_BRA_expelled_the_jews
+		ai_chance = {
+			factor = 1
+		}
+
+		set_country_flag = fee_bran_expelled_the_jews
 		random_owned_province = {
 			add_base_tax = -1
 		}
@@ -2251,19 +2372,17 @@ country_event = {
 			estate = estate_church
 			loyalty = 5
 		}
-		ai_chance = {
-			factor = 1
-		}
 	}
 	option = {
 		name = FEE_Brandenburg_Events.33.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
 		add_stability = -1
 		add_estate_loyalty = {
 			estate = estate_church
 			loyalty = -10
-		}
-		ai_chance = {
-			factor = 0
 		}
 	}
 }
@@ -2274,7 +2393,7 @@ country_event = {
 	title = FEE_Brandenburg_Events.34.T
 	desc = FEE_Brandenburg_Events.34.D
 	picture = ELECTION_REPUBLICAN_eventPicture
-	
+
 	trigger = {
 		OR = {
 			tag = BRA
@@ -2282,7 +2401,7 @@ country_event = {
 		}
 		is_year = 1539
 		NOT = { is_year = 1550 }
-		has_country_flag = CE_BRA_expelled_the_jews
+		has_country_flag = fee_bran_expelled_the_jews
 	}
 
 	fire_only_once = yes
@@ -2293,8 +2412,12 @@ country_event = {
 
 	option = {
 		name = FEE_Brandenburg_Events.34.OPT1
-		clr_country_flag = CE_BRA_expelled_the_jews
-		set_country_flag = CE_BRA_un_expelled_the_jews
+		ai_chance = {
+			factor = 1
+		}
+
+		clr_country_flag = fee_bran_expelled_the_jews
+		set_country_flag = fee_bran_un_expelled_the_jews
 		random_owned_province = {
 			add_base_tax = 1
 		}
@@ -2308,18 +2431,16 @@ country_event = {
 			estate = estate_church
 			loyalty = -5
 		}
-		ai_chance = {
-			factor = 1
-		}
 	}
 	option = {
 		name = FEE_Brandenburg_Events.34.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
 		add_estate_loyalty = {
 			estate = estate_church
 			loyalty = 5
-		}
-		ai_chance = {
-			factor = 0
 		}
 	}
 }
@@ -2330,7 +2451,7 @@ country_event = {
 	title = FEE_Brandenburg_Events.35.T
 	desc = FEE_Brandenburg_Events.35.D
 	picture = ELECTION_REPUBLICAN_eventPicture
-	
+
 	trigger = {
 		OR = {
 			tag = BRA
@@ -2353,6 +2474,11 @@ country_event = {
 
 	option = {
 		name = FEE_Brandenburg_Events.35.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
+		custom_tooltip = fee_brandenburg_bohemia_retains_purchase_rights_tt
 		BOH = {
 			country_event = {
 				id = FEE_Brandenburg_Events.36
@@ -2362,28 +2488,28 @@ country_event = {
 		tooltip = {
 			add_treasury = -75
 		}
-		custom_tooltip = JE_BRA_Bohemia_Retains_repurchase_rights
-		ai_chance = {
-			factor = 1
-		}
 	}
+
 	option = {
 		name = FEE_Brandenburg_Events.35.OPT2
-		1763 = {
-			add_claim = BRA
-		}
 		ai_chance = {
 			factor = 0
+		}
+
+		1763 = {
+			add_permanent_claim = BRA
 		}
 	}
+
 	option = {
 		name = FEE_Brandenburg_Events.35.OPT3
-		reverse_add_opinion = {
-			who = BOH
-			modifier = CE_Conceeded_Territory
-		}
 		ai_chance = {
 			factor = 0
+		}
+
+		reverse_add_opinion = {
+			who = BOH
+			modifier = fee_bran_conceeded_territory
 		}
 	}
 }
@@ -2394,6 +2520,11 @@ country_event = {
 	title = FEE_Brandenburg_Events.36.T
 	desc = FEE_Brandenburg_Events.36.D
 	picture = ELECTION_REPUBLICAN_eventPicture
+
+	is_triggered_only = yes
+
+	fire_only_once = yes
+
 	major = yes
 	major_trigger = {
 		OR = {
@@ -2401,13 +2532,13 @@ country_event = {
 			tag = PRU
 		}
 	}
-	
-	is_triggered_only = yes
-
-	fire_only_once = yes
 
 	option = {
 		name = FEE_Brandenburg_Events.36.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
 		BOH = {
 			add_treasury = 75
 		}
@@ -2415,20 +2546,20 @@ country_event = {
 			add_treasury = -75
 		}
 		1763 = {
+			add_core = BRA
 			cede_province = BRA
 		}
-		set_global_flag = JE_BRA_Pawning_of_Zollern
-		custom_tooltip = JE_BRA_Bohemia_Retains_repurchase_rights
-		ai_chance = {
-			factor = 1
-		}
+		set_global_flag = fee_bran_pawning_zollern
+		custom_tooltip = fee_brandenburg_bohemia_retains_purchase_rights_tt
 	}
+
 	option = {
 		name = FEE_Brandenburg_Events.36.OPT2
-		add_legitimacy = 5
 		ai_chance = {
 			factor = 0
 		}
+
+		add_legitimacy_equivalent = { amount = 5 republican_tradition = 3 }
 	}
 }
 
@@ -2438,7 +2569,7 @@ country_event = {
 	title = FEE_Brandenburg_Events.37.T
 	desc = FEE_Brandenburg_Events.37.D
 	picture = ELECTION_REPUBLICAN_eventPicture
-	
+
 	trigger = {
 		OR = {
 			tag = BRA
@@ -2453,31 +2584,35 @@ country_event = {
 	mean_time_to_happen = {
 		days = 120
 	}
+
 	option = {
 		name = FEE_Brandenburg_Events.37.OPT1
-		add_prestige = -25
-		add_legitimacy = -25
 		ai_chance = {
 			factor = 1
 		}
+
+		add_prestige = -25
+		add_legitimacy_equivalent = { amount = -25 republican_tradition = -13 }
 	}
+
 	option = {
 		name = FEE_Brandenburg_Events.37.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
 		tooltip = {
 			random_list = {
 				75 = { }
 				25 = {
+					kill_ruler = yes
 					capital_scope = {
 						add_base_tax = -3
 						add_base_production = -3
 						add_base_manpower = -3
 					}
-					kill_ruler = yes
 				}
 			}
-		}
-		ai_chance = {
-			factor = 0
 		}
 	}
 }
@@ -2488,7 +2623,7 @@ country_event = {
 	title = FEE_Brandenburg_Events.38.T
 	desc = FEE_Brandenburg_Events.38.D
 	picture = ELECTION_REPUBLICAN_eventPicture
-	
+
 	trigger = {
 		OR = {
 			tag = BRA
@@ -2503,10 +2638,20 @@ country_event = {
 	mean_time_to_happen = {
 		days = 120
 	}
+
 	option = {
 		name = FEE_Brandenburg_Events.38.OPT1
-		change_innovativeness = 2
-		add_papal_influence = 5
+
+		if = {
+			limit = {
+				has_dlc = "Rule Britannia"
+			}
+			change_innovativeness = 2
+		}
+		else = {
+			add_adm_power = 25
+		}
+		change_religious_influence_equivalent_fee = { add = 5 }
 	}
 }
 
@@ -2516,7 +2661,7 @@ country_event = {
 	title = FEE_Brandenburg_Events.39.T
 	desc = FEE_Brandenburg_Events.39.D
 	picture = ELECTION_REPUBLICAN_eventPicture
-	
+
 	trigger = {
 		OR = {
 			tag = BRA
@@ -2574,7 +2719,7 @@ country_event = {
 					dynasty = "Von Hohenzollern"
 				}
 				add_ruler_modifier = {
-					name = CE_Ruppin_infertility
+					name = fee_bran_ruppin_infertility
 					duration = -1
 				}
 				override_country_name = "BRA_KUS"
@@ -2632,7 +2777,7 @@ country_event = {
 	title = FEE_Brandenburg_Events.40.T
 	desc = FEE_Brandenburg_Events.40.D
 	picture = ELECTION_REPUBLICAN_eventPicture
-	
+
 	trigger = {
 		OR = {
 			tag = BRA
@@ -2642,7 +2787,7 @@ country_event = {
 		OR = {
 			RUP = {
 				NOT = {
-					has_ruler_modifier = CE_Ruppin_infertility
+					has_ruler_modifier = fee_bran_ruppin_infertility
 				}
 			}
 			is_year = 1571
@@ -2657,7 +2802,7 @@ country_event = {
 			factor = 0.01
 			RUP = {
 				NOT = {
-					has_ruler_modifier = CE_Ruppin_infertility
+					has_ruler_modifier = fee_bran_ruppin_infertility
 				}
 			}
 		}
@@ -2705,7 +2850,7 @@ country_event = {
 		tag = BOH
 		is_year = 1516 
 		NOT = { is_year = 1530 }
-		has_global_flag = JE_BRA_Pawning_of_Zollern
+		has_global_flag = fee_bran_pawning_zollern
 		1763 = {
 			owner = {
 				tag = BRA
@@ -2720,7 +2865,7 @@ country_event = {
 	}
 
 	immediate = {
-		clr_global_flag = JE_BRA_Pawning_of_Zollern
+		clr_global_flag = fee_bran_pawning_zollern
 	}
 
 	option = {
@@ -2858,7 +3003,7 @@ country_event = {
 			add_treasury = -700
 		} 
 		add_ruler_modifier = {
-			name = CE_BRA_Lover_of_the_Hunt #-25% State Maintenance, -5% estate Loyalty
+			name = fee_bran_lover_of_the_hunt #-25% State Maintenance, -5% estate Loyalty
 			duration = -1
 		}
 	}
@@ -2867,10 +3012,10 @@ country_event = {
 		add_adm_power = -100
 		add_dip_power = -100
 		add_mil_power = -100
-		add_legitimacy = -25
+		add_legitimacy_equivalent = { amount = -25 republican_tradition = -13 }
 		change_adm = -1
 		add_ruler_modifier = {
-			name = CE_BRA_Lover_of_the_Hunt #-25% State Maintenance, -5% estate Loyalty
+			name = fee_bran_lover_of_the_hunt #-25% State Maintenance, -5% estate Loyalty
 			duration = -1
 		}
 	}
@@ -2904,7 +3049,7 @@ country_event = {
 		clr_ruler_flag = CE_BRA_Hunting_Lodge
 		add_prestige = -15
 		add_ruler_modifier = {
-			name = CE_BRA_The_Beautifull_Foundress #-0.5 Legitimacy
+			name = fee_bran_beautiful_foundress #-0.5 Legitimacy
 			duration = -1
 		}
 	}
@@ -2941,7 +3086,7 @@ country_event = {
 			add_base_production= 1
 		}
 		add_country_modifier = {
-			name = CE_BRA_Jewish_Tax
+			name = fee_bran_jewish_tax
 			duration = 7300
 		}
 		ai_chance = {
@@ -2999,7 +3144,7 @@ country_event = {
 		name = FEE_Brandenburg_Events.47.OPT1
 		
 		add_ruler_modifier = {
-			name = CE_BRA_religious_pragmatism
+			name = fee_bran_religious_pragmatism
 			duration = -1
 		}	
 		ai_chance = {
@@ -3025,7 +3170,7 @@ country_event = {
 			religion = reformed
 			AND = {
 				religion = catholic
-				has_ruler_modifier = CE_BRA_religious_pragmatism
+				has_ruler_modifier = fee_bran_religious_pragmatism
 			}
 		}
 	}
@@ -3078,7 +3223,7 @@ country_event = {
 		is_year = 1549
 		NOT = { is_year = 1560 }
 		NOT = {
-			has_country_flag = CE_BRA_expelled_the_jews
+			has_country_flag = fee_bran_expelled_the_jews
 		}
 	}
 
@@ -3109,7 +3254,7 @@ country_event = {
 		name = FEE_Brandenburg_Events.49.OPT2
 		
 		add_ruler_modifier = {
-			name = "CE_BRA_Lippold_Ben_Chluchim"
+			name = fee_bran_lippold_ben_chluchim
 			duration = -1
 		}
 		ai_chance = {
@@ -3161,7 +3306,7 @@ country_event = {
 	option = {
 		name = FEE_Brandenburg_Events.50.OPT2
 		
-		add_legitimacy = 5
+		add_legitimacy_equivalent = { amount = 5 republican_tradition = 3 }
 
 		ai_chance = {
 			factor = 1
@@ -3182,6 +3327,9 @@ country_event = {
 
 	option = {
 		name = FEE_Brandenburg_Events.51.OPT1
+		ai_chance = {
+			factor = 0
+		}
 		
 		add_years_of_income = 1
 		add_inflation = 3
@@ -3192,21 +3340,17 @@ country_event = {
 				days = 1825
 			}
 		}
-		ai_chance = {
-			factor = 0
-		}
 	}
 
 	option = {
 		name = FEE_Brandenburg_Events.51.OPT2
-		
-		add_country_modifier = {
-			name = CE_BRA_economic_downturn
-			duration = 3650
-		}
-
 		ai_chance = {
 			factor = 1
+		}
+		
+		add_country_modifier = {
+			name = fee_bran_economic_downturn
+			duration = 3650
 		}
 	}
 }
@@ -3226,7 +3370,7 @@ country_event = {
 		name = FEE_Brandenburg_Events.52.OPT1
 		
 		add_country_modifier = {
-			name = CE_BRA_economic_collapse
+			name = fee_bran_economic_collapse
 			duration = 7300
 		}
 
@@ -3251,7 +3395,7 @@ country_event = {
 		is_year = 1571
 		NOT = { is_year = 1600 }
 		NOT = {
-			has_country_flag = CE_BRA_expelled_the_jews
+			has_country_flag = fee_bran_expelled_the_jews
 		}
 	}
 
@@ -3266,11 +3410,11 @@ country_event = {
 		
 		add_years_of_income = 0.5
 		add_ruler_modifier = {
-			name = CE_BRA_Jews_Expelled
+			name = fee_bran_jewish_assets_seized
 			duration = -1
 		}
-		set_country_flag = CE_BRA_expelled_the_jews
-		clr_country_flag = CE_BRA_un_expelled_the_jews
+		set_country_flag = fee_bran_expelled_the_jews
+		clr_country_flag = fee_bran_un_expelled_the_jews
 		hidden_effect = {
 			if = {
 				limit = {
@@ -3290,8 +3434,8 @@ country_event = {
 	option = {
 		name = FEE_Brandenburg_Events.53.OPT2
 		add_years_of_income = -0.25
-		set_country_flag = CE_BRA_expelled_the_jews
-		clr_country_flag = CE_BRA_un_expelled_the_jews
+		set_country_flag = fee_bran_expelled_the_jews
+		clr_country_flag = fee_bran_un_expelled_the_jews
 		hidden_effect = {
 			if = {
 				limit = {
@@ -3311,7 +3455,7 @@ country_event = {
 		name = FEE_Brandenburg_Events.53.OPT3
 		add_stability = -1
 		add_ruler_modifier = {
-			name = CE_BRA_Jewish_Privileges_Restored
+			name = fee_bran_restored_jewish_privileges
 			duration = -1
 		}
 		ai_chance = {
@@ -3386,7 +3530,7 @@ country_event = {
 	option = {
 		name = FEE_Brandenburg_Events.55.OPT3
 		trigger = {
-			has_ruler_modifier = CE_BRA_Jewish_Privileges_Restored
+			has_ruler_modifier = fee_bran_restored_jewish_privileges
 		}
 		add_years_of_income = -0.1
 		add_prestige = -15
@@ -3422,7 +3566,7 @@ country_event = {
 		name = FEE_Brandenburg_Events.56.OPT1
 		
 		add_ruler_modifier = {
-			name = CE_BRA_Elector_of_St_John
+			name = fee_bran_elector_order_john
 			duration = -1
 		}
 		ai_chance = {
@@ -3457,7 +3601,7 @@ country_event = {
 		name = FEE_Brandenburg_Events.57.OPT1
 		
 		add_country_modifier = {
-			name = CE_BRA_Knights_Of_the_Order_of_St_John
+			name = fee_bran_knights_order_john
 			duration = 36500
 		}
 		ai_chance = {
@@ -3491,7 +3635,7 @@ country_event = {
 	option = {
 		name = FEE_Brandenburg_Events.58.OPT1
 		
-		remove_country_modifier = CE_BRA_Knights_Of_the_Order_of_St_John
+		remove_country_modifier = fee_bran_knights_order_john
 		every_country = {
 			limit = {
 				culture_group = germanic
@@ -3535,7 +3679,7 @@ country_event = {
 			add_base_manpower = 1
 		}
 		add_country_modifier = {
-			name = CE_BRA_secularization_of_st_john
+			name = fee_bran_secularization_john
 			duration = 3650
 		}
 		ai_chance = {
@@ -3569,18 +3713,18 @@ country_event = {
 		
 		4748 = {
 			add_province_modifier = {
-				name = CE_BRA_Margravian_Dues
+				name = fee_bran_margrave_dues
 				duration = 3650
 			}
 		}
 		50 = {
 			add_province_modifier = {
-				name = CE_BRA_Margravian_Dues
+				name = fee_bran_margrave_dues
 				duration = 3650
 			}
 		}
 		add_country_modifier = {
-			name = CE_BRA_Papal_Influence_Spend
+			name = fee_bran_favors_called_in
 			duration = 3650
 		}
 		ai_chance = {
@@ -3622,7 +3766,7 @@ country_event = {
 		name = FEE_Brandenburg_Events.61.OPT1
 
 		add_country_modifier = {
-			name = CE_BRA_Berliner_Choir
+			name = fee_bran_berliner_singing_boys
 			duration = 3650
 		}
 		ai_chance = {
@@ -3678,7 +3822,7 @@ country_event = {
 			add_base_production = 1
 		}
 		add_country_modifier = {
-			name = CE_BRA_Dutch_Techniques
+			name = fee_bran_dutch_agriculture_architecture
 			duration = 3650
 		}
 		add_adm_power = -50
@@ -3806,7 +3950,7 @@ country_event = {
 	}
 	option = {
 		name = FEE_Brandenburg_Events.64.OPT2
-		custom_tooltip = CE_BRA_Release_Pommerania
+		custom_tooltip = fee_brandenburg_release_pomerania_tt
 		hidden_effect = {
 			every_owned_province = {
 				limit = {

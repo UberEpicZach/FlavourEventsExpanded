@@ -1,0 +1,73 @@
+fee_bran_son_in_clergy = {
+	papal_influence = 0.5
+	prestige = 0.5
+}
+fee_bran_infertile = {
+	heir_chance = -0.9
+}
+fee_bran_wine_customs = {
+	trade_efficiency = 0.10
+	burghers_loyalty_modifier = -0.05
+}
+fee_bran_beer_excise = {
+	global_tax_modifier = 0.15
+	global_unrest = 1
+	global_trade_goods_size_modifier = -0.05
+}
+fee_bran_ruppin_infertility = {
+	heir_chance = -0.90
+}
+fee_bran_lover_of_the_hunt = {
+	state_maintenance_modifier = 0.25
+	all_estate_loyalty_equilibrium = -0.05
+}
+fee_bran_beautiful_foundress = {
+	legitimacy = -0.5
+	republican_tradition = -0.3
+	devotion = -0.5
+}
+fee_bran_jewish_tax = {
+	global_tax_modifier = 0.10
+}
+fee_bran_religious_pragmatism = {
+	tolerance_heretic = 1
+}
+fee_bran_lippold_ben_chluchim = {
+	interest = -0.5
+}
+fee_bran_economic_downturn = {
+	trade_efficiency = -0.05
+}
+fee_bran_economic_collapse = {
+	trade_efficiency = -0.20
+}
+fee_bran_jewish_assets_seized = {
+	interest = 2
+}
+fee_bran_restored_jewish_privileges = {
+	global_unrest = 1
+	global_tax_modifier = 0.10	
+}
+fee_bran_elector_order_john = {
+	prestige = 0.5
+}
+fee_bran_knights_order_john = {
+	global_manpower_modifier = 0.05
+	cavalry_cost = -0.05
+}
+fee_bran_secularization_john = {
+	global_tax_modifier = 0.10
+}
+fee_bran_margrave_dues = {
+	local_tax_modifier = 0.10
+}
+fee_bran_favors_called_in = {
+	papal_influence = -0.5
+}
+fee_bran_berliner_singing_boys = {
+	papal_influence = 0.5
+}
+fee_bran_dutch_agriculture_architecture = {
+	production_efficiency = 0.10
+	adm_tech_cost_modifier = -0.1
+}
