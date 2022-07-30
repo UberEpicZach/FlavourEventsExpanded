@@ -1,0 +1,450 @@
+namespace = FEE_Austria_Events
+
+#The Diet of Worms
+country_event = {
+	id = FEE_Austria_Events.1
+	title = FEE_Austria_Events.1.T
+	desc = FEE_Austria_Events.1.D
+	picture = HRE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = HAB
+		is_emperor = yes
+		is_year = 1480
+		NOT = {
+			is_religion_enabled = protestant
+		}
+		NOT = { hre_reform_passed = hofgericht }
+		NOT = { hre_reform_passed = emperor_reichsstabilitaet }
+		imperial_influence = 20
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = FEE_Austria_Events.1.OPT1
+
+		add_imperial_influence = 20
+		add_dip_power = 20
+		add_mil_power = 20
+		add_stability = -1
+		if = {
+			limit = {
+				61 = {
+					is_part_of_hre = yes
+				}
+			}
+			61 = {
+				add_base_tax = 1
+			}
+		}
+		add_country_modifier = {
+			name = fee_hab_reforms_diet_worms
+			duration = 365
+		}
+	}
+
+	option = {
+		name = FEE_Austria_Events.1.OPT2
+
+		add_imperial_influence = -20
+		every_country = {
+			limit = {
+				is_part_of_hre = yes
+			}
+			add_opinion = {
+				who = HAB
+				modifier = fee_hab_protected_imperial_status_quo
+			}
+		}
+	}
+}
+
+#Rise of the Ottomans in Europe
+country_event = {
+	id = FEE_Austria_Events.2
+	title = FEE_Austria_Events.2.T
+	desc = FEE_Austria_Events.2.D
+	picture = HRE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = HAB
+		TUR = {
+			num_of_cities = 12
+		}
+		NOT = {
+			any_owned_province = {
+				NOT = {
+					continent = europe
+				}
+			}
+		}
+		OR = {
+			any_owned_province = {
+				any_neighbor_province = {
+					owned_by = TUR
+				}
+			}
+			any_subject_country = {
+				any_owned_province = {
+					any_neighbor_province = {
+						owned_by = TUR
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Austria_Events.2.OPT1
+		ai_chance = {
+			factor = 100
+		}
+
+		add_mil_power = 50
+		add_manpower = 3
+		add_army_tradition = 5.0
+		add_opinion = {
+			who = TUR
+			modifier = fee_hab_bulwark_christendom
+		}
+		reverse_add_opinion = {
+			who = TUR
+			modifier = fee_hab_bulwark_christendom
+		}
+	}
+	option = {
+		name = FEE_Austria_Events.2.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
+		add_dip_power = 25
+		add_treasury = 10
+	}
+}
+
+#The Austrian Baroque
+country_event = {
+	id = FEE_Austria_Events.3
+	title = FEE_Austria_Events.3.T
+	desc = FEE_Austria_Events.3.D
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = HAB
+		is_year = 1650
+		NOT = { is_year = 1730 }
+		government = monarchy
+		num_of_cities = 10
+		legitimacy = 80
+		stability = 1
+	}
+
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 0.8
+			stability = 2
+		}
+		modifier = {
+			factor = 0.8
+			legitimacy_equivalent = 100
+		}
+	}
+
+	option = {
+		name = FEE_Austria_Events.3.OPT1
+		ai_chance = {
+			factor = 85
+		}
+
+		add_country_modifier = {
+			name = fee_hab_austrian_baroque
+			duration = -1
+		}
+		custom_tooltip = fee_hab_austrian_continue_develop_tt
+	}
+	option = {
+		name = FEE_Austria_Events.3.OPT2
+		ai_chance = {
+			factor = 15
+		}
+
+		add_stability_or_adm_power = yes
+		add_adm_power = 10
+		add_dip_power = 10
+	}
+}
+
+#Austria Into the Future
+country_event = {
+	id = FEE_Austria_Events.4
+	title = FEE_Austria_Events.4.T
+	desc = FEE_Austria_Events.4.D
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		has_country_modifier = fee_hab_austrian_baroque
+		is_year = 1715
+	}
+
+	mean_time_to_happen = {
+		months = 300
+		modifier = {
+			factor = 0.1
+			has_disaster = aspiration_for_liberty
+		}
+		modifier = {
+			factor = 0.3
+			is_year = 1740
+		}
+	}
+
+	option = {
+		name = FEE_Austria_Events.4.OPT1
+
+		remove_country_modifier = fee_hab_austrian_baroque
+	}
+}
+
+#Build Beautiful Palaces
+country_event = {
+	id = FEE_Austria_Events.5
+	title = FEE_Austria_Events.5.T
+	desc = FEE_Austria_Events.5.D
+	picture = GREAT_BUILDING_eventPicture
+
+	trigger = {
+		tag = HAB
+		has_country_modifier = fee_hab_austrian_baroque
+		NOT = {
+			has_country_modifier = fee_hab_baroque_building_timer
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 90
+	}
+
+	option = {
+		name = FEE_Austria_Events.5.OPT1
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 25
+				num_of_loans = 1
+				NOT = {
+					num_of_loans = 5
+				}
+			}
+			modifier = {
+				factor = 0
+				num_of_loans = 5
+			}
+		}
+
+		add_treasury = -50
+		add_prestige = 5
+		random_owned_province = {
+			limit = {
+				is_in_capital_area = yes
+				development = 16
+			}
+			add_base_tax = 1
+		}
+		hidden_effect = {
+			add_country_modifier = {
+				name = fee_hab_baroque_building_timer
+				duration = 365
+				hidden = yes
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Austria_Events.5.OPT2
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 75
+				num_of_loans = 1
+				NOT = {
+					num_of_loans = 5
+				}
+			}
+			modifier = {
+				factor = 100
+				num_of_loans = 5
+			}
+		}
+
+		add_prestige = -3
+		add_adm_power = 5
+	}
+}
+
+#Build Beautiful Military Schools
+country_event = {
+	id = FEE_Austria_Events.6
+	title = FEE_Austria_Events.6.T
+	desc = FEE_Austria_Events.6.D
+	picture = LAND_MILITARY_eventPicture
+
+	trigger = {
+		tag = HAB
+		has_country_modifier = fee_hab_austrian_baroque
+		NOT = {
+			has_country_modifier = fee_hab_baroque_building_timer
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 90
+	}
+
+	option = {
+		name = FEE_Austria_Events.6.OPT1
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 25
+				num_of_loans = 1
+				NOT = {
+					num_of_loans = 5
+				}
+			}
+			modifier = {
+				factor = 0
+				num_of_loans = 5
+			}
+		}
+
+		add_treasury = -50
+		add_prestige = 5
+		random_owned_province = {
+			limit = {
+				is_in_capital_area = yes
+				development = 16
+			}
+			add_base_manpower = 1
+		}
+		hidden_effect = {
+			add_country_modifier = {
+				name = fee_hab_baroque_building_timer
+				duration = 365
+				hidden = yes
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Austria_Events.6.OPT2
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 75
+				num_of_loans = 1
+				NOT = {
+					num_of_loans = 5
+				}
+			}
+			modifier = {
+				factor = 100
+				num_of_loans = 5
+			}
+		}
+		add_prestige = -3
+		add_mil_power = 5
+	}
+}
+
+#Build Beautiful Manufactories
+country_event = {
+	id = FEE_Austria_Events.7
+	title = FEE_Austria_Events.7.T
+	desc = FEE_Austria_Events.7.D
+	picture = HARBOUR_eventPicture
+
+	trigger = {
+		tag = HAB
+		has_country_modifier = fee_hab_austrian_baroque
+		NOT = {
+			has_country_modifier = fee_hab_baroque_building_timer
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 90
+	}
+
+	option = {
+		name = FEE_Austria_Events.7.OPT1
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 25
+				num_of_loans = 1
+				NOT = {
+					num_of_loans = 5
+				}
+			}
+			modifier = {
+				factor = 0
+				num_of_loans = 5
+			}
+		}
+
+		add_treasury = -50
+		add_prestige = 5
+		hidden_effect = {
+			add_country_modifier = {
+				name = fee_hab_baroque_building_timer
+				duration = 365
+				hidden = yes
+			}
+		}
+		random_owned_province = {
+			limit = {
+				is_in_capital_area = yes
+				development = 16
+			}
+			add_base_production = 1
+		}
+	}
+
+	option = {
+		name = FEE_Austria_Events.7.OPT2
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 75
+				num_of_loans = 1
+				NOT = {
+					num_of_loans = 5
+				}
+			}
+			modifier = {
+				factor = 100
+				num_of_loans = 5
+			}
+		}
+
+		add_prestige = -3
+		add_dip_power = 5
+	}
+}

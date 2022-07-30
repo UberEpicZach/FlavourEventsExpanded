@@ -130,11 +130,6 @@ fee_literary_work_circulated = {
 	yearly_decay = 1
 }
 
-#Diet of Worms
-fee_diet_worms_opinion = {
-	opinion = 15
-	yearly_decay = 1
-}
 
 #Burgundy King of Loth
 fee_BUR_lotharingia_opinion1 = {
@@ -145,12 +140,6 @@ fee_BUR_lotharingia_opinion1 = {
 #Burgundy King of Loth
 fee_BUR_lotharingia_opinion2 = {
 	opinion = 50
-	yearly_decay = 1
-}
-
-#Defender of Christendom
-fee_defense_of_christendom = {
-	opinion = -30
 	yearly_decay = 1
 }
 

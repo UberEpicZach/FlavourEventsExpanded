@@ -696,22 +696,6 @@ fee_anti_religious_work_timer = {
 fee_strong_censorship = {
 }
 
-#Austrian Modifiers
-#Reforms of Worms
-fee_diet_worms = {
-	stability_cost_modifier = -0.1
-	global_unrest = -1
-}
-
-#Austrian Baroque
-fee_austrian_baroque = {
-	prestige = 0.5
-	build_cost = -0.05
-}
-
-#Building timer
-fee_baroque_building_timer = {
-}
 
 #Navarran Civil War
 fee_navarran_civil_war = {

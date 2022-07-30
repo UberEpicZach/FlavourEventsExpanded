@@ -1,0 +1,10 @@
+#Diet of Worms
+fee_hab_protected_imperial_status_quo = {
+	opinion = 15
+	yearly_decay = 1
+}
+#Defender of Christendom
+fee_hab_bulwark_christendom = {
+	opinion = -30
+	yearly_decay = 1
+}

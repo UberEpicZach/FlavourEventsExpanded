@@ -1,0 +1,12 @@
+#Reforms of Worms
+fee_hab_reforms_diet_worms = {
+	stability_cost_modifier = -0.1
+	global_unrest = -1
+}
+#Austrian Baroque
+fee_hab_austrian_baroque = {
+	prestige = 0.5
+	build_cost = -0.05
+}
+#Building timer
+fee_hab_baroque_building_timer = { }
