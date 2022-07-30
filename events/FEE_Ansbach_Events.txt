@@ -1,0 +1,883 @@
+namespace = FEE_Ansbach_Events
+#Jay DoubleU
+
+# The Ambition of Achilles
+country_event = {
+	id = FEE_Ansbach_Events.1
+	title = FEE_Ansbach_Events.1.T
+	desc = FEE_Ansbach_Events.1.D
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		dynasty = "von Hohenzollern"
+		OR = {
+			AND = {
+				tag = ANS
+				is_subject = no
+			}
+			overlord_of = ANS
+		}
+		is_year = 1470
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = FEE_Ansbach_Events.1.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
+		custom_tooltip = fee_ansbach_franconian_ambition_tt
+		set_country_flag = fee_ansbanch_country_franconian_ambition
+		set_ruler_flag = fee_ansbanch_ruler_franconian_ambition
+	}
+	option = {
+		name = FEE_Ansbach_Events.1.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
+		add_prestige = -5
+	}
+}
+
+# Little town of wood and cloth
+country_event = {
+	id = FEE_Ansbach_Events.2
+	title = FEE_Ansbach_Events.2.T
+	desc = FEE_Ansbach_Events.2.D
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		has_ruler_flag = fee_ansbanch_ruler_franconian_ambition
+	}
+
+	mean_time_to_happen = {
+		days = 365
+	}
+
+	option = {
+		name = FEE_Ansbach_Events.2.OPT1
+		ai_chance = {
+			factor = 5
+			modifier = {
+				factor = 2
+				NOT = {
+					num_of_loans = 2
+				}
+			}
+			modifier = {
+				factor = 10
+				treasury = 100
+			}
+			modifier = {
+				factor = 100
+				OR = {
+					BRA = {
+						DIP = 6
+					}
+					ANS = {
+						DIP = 6
+					}
+				}
+			}
+		}
+		trigger = {
+			hre_size = 1
+		}
+
+		add_treasury = -100
+		emperor = {
+			country_event = {
+				id = FEE_Ansbach_Events.3
+				days = 30
+			}
+		}
+	}
+	option = {
+		name = FEE_Ansbach_Events.2.OPT2
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0.1
+				treasury = 100
+			}
+		}
+
+		add_country_modifier = {
+			name = fee_ansbach_franconian_league
+			duration = 3650
+		}
+	}
+	option = {
+		name = FEE_Ansbach_Events.2.OPT3
+		ai_chance = {
+			factor = 0
+		}
+
+		add_prestige = -5
+	}
+}
+
+# Margraves of Ansbach
+country_event = {
+	id = FEE_Ansbach_Events.3
+	title = FEE_Ansbach_Events.3.T
+	desc = FEE_Ansbach_Events.3.D
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Ansbach_Events.3.OPT1
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = 10
+				emperor = {
+					OR = {
+						has_opinion = {
+							who = ANS
+							value = 100
+						}
+						has_opinion = {
+							who = BRA
+							value = 100
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 100
+				OR = {
+					BRA = {
+						DIP = 6
+					}
+					ANS = {
+						DIP = 6
+					}
+				}
+			}
+		}
+		trigger = {
+			exists = NUM
+		}
+
+		add_treasury = 100
+		NUM = {
+			country_event = {
+				id = FEE_Ansbach_Events.4
+				days = 30
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Ansbach_Events.3.OPT2
+		ai_chance = {
+			factor = 1
+		}
+
+		add_treasury = 100
+		random_country = {
+			limit = {
+				has_country_flag = fee_ansbanch_country_franconian_ambition
+			}
+			country_event = {
+				id = FEE_Ansbach_Events.7
+				days = 30
+			}
+		}
+	}
+}
+
+# Ansbachian Demands
+country_event = {
+	id = FEE_Ansbach_Events.4
+	title = FEE_Ansbach_Events.4.T
+	desc = FEE_Ansbach_Events.4.D
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Ansbach_Events.4.OPT1
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 5
+				ANS = {
+					army_size = NUM
+				}
+			}
+			modifier = {
+				factor = 5
+				NUM = {
+					OR = {
+						has_opinion = {
+							who = ANS
+							value = 100
+						}
+						has_opinion = {
+							who = BRA
+							value = 100
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 100
+				OR = {
+					BRA = {
+						DIP = 6
+					}
+					ANS = {
+						DIP = 6
+					}
+				}
+			}
+		}
+
+		random_country = {
+			limit = {
+				has_country_flag = fee_ansbanch_country_franconian_ambition
+			}
+			country_event = {
+				id = FEE_Ansbach_Events.5
+				days = 30
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Ansbach_Events.4.OPT2
+		ai_chance = {
+			factor = 4
+			modifier = {
+				factor = 5
+				ANS = {
+					army_size = NUM
+				}
+			}
+			modifier = {
+				factor = 5
+				NUM = {
+					OR = {
+						has_opinion = {
+							who = ANS
+							value = 100
+						}
+						has_opinion = {
+							who = BRA
+							value = 100
+						}
+					}
+				}
+			}
+		}
+
+		random_country = {
+			limit = {
+				has_country_flag = fee_ansbanch_country_franconian_ambition
+			}
+			country_event = {
+				id = FEE_Ansbach_Events.6
+				days = 30
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Ansbach_Events.4.OPT3
+		ai_chance = {
+			factor = 5
+		}
+
+		random_country = {
+			limit = {
+				has_country_flag = fee_ansbanch_country_franconian_ambition
+			}
+			country_event = {
+				id = FEE_Ansbach_Events.7
+				days = 30
+			}
+		}
+	}
+}
+
+# Burgraviate of Nuremberg
+country_event = {
+	id = FEE_Ansbach_Events.5
+	title = FEE_Ansbach_Events.5.T
+	desc = FEE_Ansbach_Events.5.D
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	is_triggered_only = yes
+	trigger = {
+		exists = ANS
+		exists = NUM
+		ANS = { is_free_or_tributary_trigger = yes }
+		NUM = { is_free_or_tributary_trigger = yes }
+	}
+
+	option = {
+		name = FEE_Ansbach_Events.5.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
+		ANS = {
+			vassalize = NUM
+		}
+	}
+}
+
+# Nuremberger Insubordinance
+country_event = {
+	id = FEE_Ansbach_Events.6
+	title = FEE_Ansbach_Events.6.T
+	desc = FEE_Ansbach_Events.6.D
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Ansbach_Events.6.OPT1
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 10
+				NOT = {
+					is_at_war = yes
+				}
+			}
+		}
+
+		add_years_of_income = -2.5
+		ANS = {
+			if = {
+				limit = {
+					is_free_or_tributary_trigger = yes
+					NUM = { is_free_or_tributary_trigger = yes }
+				}
+				vassalize = NUM
+			}
+			add_country_modifier = {
+				name = fee_ansbach_autonomy_for_nuremberg
+				duration = 9125
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Ansbach_Events.6.OPT2
+		ai_chance = {
+			factor = 1
+		}
+
+		add_prestige = -5
+	}
+}
+
+# Failed Negotiations
+country_event = {
+	id = FEE_Ansbach_Events.7
+	title = FEE_Ansbach_Events.7.T
+	desc = FEE_Ansbach_Events.7.D
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Ansbach_Events.7.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
+		add_prestige = -5
+	}
+}
+
+# Broken Dreams so Grand
+country_event = {
+	id = FEE_Ansbach_Events.8
+	title = FEE_Ansbach_Events.8.T
+	desc = FEE_Ansbach_Events.8.D
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		has_country_flag = fee_ansbanch_country_franconian_ambition
+		NOT = { has_ruler_flag = fee_ansbanch_ruler_franconian_ambition }
+	}
+
+	option = {
+		name = FEE_Ansbach_Events.8.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
+		add_prestige = -50
+	}
+}
+
+# Dux Francorum Orientalium
+country_event = {
+	id = FEE_Ansbach_Events.9
+	title = FEE_Ansbach_Events.9.T
+	desc = FEE_Ansbach_Events.9.D
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		has_country_flag = fee_ansbanch_country_franconian_ambition
+		has_ruler_flag = fee_ansbanch_ruler_franconian_ambition
+		calc_true_if = {
+			all_province = {
+				culture = franconian
+				OR = {
+					owner = {
+						dynasty = "von Hohenzollern"
+					}
+					owner = {
+						overlord = {
+							dynasty = "von Hohenzollern"
+						}
+					}
+				}
+			}
+			amount = 5
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	option = {
+		name = FEE_Ansbach_Events.9.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
+		add_prestige = 50
+		clr_country_flag = fee_ansbanch_country_franconian_ambition
+		every_province = {
+			limit = {
+				culture = franconian
+				OR = {
+					owner = {
+						dynasty = "von Hohenzollern"
+					}
+					owner = {
+						overlord = {
+							dynasty = "von Hohenzollern"
+						}
+					}
+				}
+			}
+			cede_province = ANS 
+		}
+		ANS = {
+			franconia_area = {
+				limit = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				add_core = ANS
+			}
+			upper_franconia_area = {
+				limit = {
+					country_or_non_sovereign_subject_holds = ROOT
+				}
+				add_core = ANS
+			}
+			change_tag = FKN
+			restore_country_name_effect = yes
+			franconia_area = {
+				limit = {
+					NOT = { owned_by = root }
+					NOT = { is_permanent_claim = root }
+				}
+				add_permanent_claim = root
+			}
+			upper_franconia_area = {
+				limit = {
+					NOT = { owned_by = root }
+					NOT = { is_permanent_claim = root }
+				}
+				add_permanent_claim = root
+			}
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			set_country_flag = formed_franconia_flag
+			if = {
+				limit = {
+					total_development = 100
+					OR = {
+						is_elector = yes
+						is_part_of_hre = no
+					}
+				}
+				set_government_rank = 2
+			}
+			swap_non_generic_missions = yes
+			if = {
+				limit = {
+					is_playing_custom_nation = no
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+	}
+}
+
+# Men of The Franconian Circle
+country_event = {
+	id = FEE_Ansbach_Events.10
+	title = FEE_Ansbach_Events.10.T
+	desc = FEE_Ansbach_Events.10.D
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		has_ruler_flag = fee_ansbanch_ruler_franconian_ambition
+		OR = {
+			had_ruler_flag = {
+				flag = fee_ansbanch_ruler_franconian_ambition
+				days = 1825
+			}
+			ANS = {
+				any_subject_country = {
+					tag = NUM
+				}
+			}
+			army_strength = {
+				who = WBG
+				value = 2
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	option = {
+		name = FEE_Ansbach_Events.10.OPT1
+		ai_chance = {
+			factor = 1
+		}
+		trigger = {
+			exists = WBG
+		}
+
+		WBG = {
+			country_event = {
+				id = FEE_Ansbach_Events.11
+				days = 30
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Ansbach_Events.10.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
+		add_prestige = -5
+	}
+}
+
+# The Ducal Title
+country_event = {
+	id = FEE_Ansbach_Events.11
+	title = FEE_Ansbach_Events.11.T
+	desc = FEE_Ansbach_Events.11.D
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Ansbach_Events.11.OPT1
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 2
+				ANS = {
+					overlord = {
+						tag = BRA
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				ANS = {
+					army_size = WBG
+				}
+			}
+			modifier = {
+				factor = 2
+				WBG = {
+					is_at_war = yes
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					is_in_war = {
+						defenders = ANS
+					}
+					is_in_war = {
+						attackers = ANS
+					}
+				}
+			}
+			modifier = {
+				factor = 100
+				OR = {
+					BRA = {
+						DIP = 6
+					}
+					ANS = {
+						DIP = 6
+					}
+				}
+			}
+		}
+
+		random_country = {
+			limit = {
+				has_country_flag = fee_ansbanch_country_franconian_ambition
+			}
+			country_event = {
+				id = FEE_Ansbach_Events.13
+				days = 30
+			}
+			custom_tooltip = "fee_ansbach_surrender_of_wurzburg_tt"
+		}
+	}
+	option = {
+		name = FEE_Ansbach_Events.11.OPT2
+		ai_chance = {
+			factor = 3
+		}
+
+		random_country = {
+			limit = {
+				has_country_flag = fee_ansbanch_country_franconian_ambition
+			}
+			country_event = {
+				id = FEE_Ansbach_Events.12
+				days = 30
+			}
+		}
+	}
+}
+
+# Demands Refused!
+country_event = {
+	id = FEE_Ansbach_Events.12
+	title = FEE_Ansbach_Events.12.T
+	desc = FEE_Ansbach_Events.12.D
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Ansbach_Events.12.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
+		every_province = {
+			limit = {
+				culture = franconian
+				OR = {
+					owned_by = WBG
+					owner = {
+						overlord_of = WBG
+					}
+				}
+			}
+			add_permanent_claim = ANS
+		}
+		add_country_modifier = {
+			name = fee_ansbach_iron_and_blood
+			duration = 3650
+		}
+	}
+
+	option = {
+		name = FEE_Ansbach_Events.12.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
+		add_prestige = -15
+	}
+}
+
+# The Bishop Submits
+country_event = {
+	id = FEE_Ansbach_Events.13
+	title = FEE_Ansbach_Events.13.T
+	desc = FEE_Ansbach_Events.13.D
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Ansbach_Events.13.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
+		every_province = {
+			limit = {
+				culture = franconian
+				OR = {
+					owner = {
+						tag = WBG
+					}
+					owner = {
+						overlord = {
+							tag = WBG
+						}
+					}
+				}
+			}
+			add_core = ANS
+			cede_province = ANS
+			add_province_modifier = {
+				name = "fee_ansbach_bisphoric_privilege"
+				duration = 9125
+			}
+		}
+	}
+}
+
+# The Care of Coburg
+country_event = {
+	id = FEE_Ansbach_Events.14
+	title = FEE_Ansbach_Events.14.T
+	desc = FEE_Ansbach_Events.14.D
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		dynasty = "von Hohenzollern"
+		has_ruler_flag = fee_ansbanch_ruler_franconian_ambition
+		OR = {
+			66 = {
+				is_core = ANS
+			}
+			66 = {
+				is_core = BRA
+			}
+			79 = { 
+				is_core = ANS
+			}
+			79 = {
+				is_core = BRA
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Ansbach_Events.14.OPT1
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 2
+				tag = ANS
+			}
+		}
+
+		add_legitimacy_equivalent = { amount = -5 republican_tradition = -3 }
+		4716 = {
+			add_permanent_claim = ANS
+		}
+	}
+
+	option = {
+		name = FEE_Ansbach_Events.14.OPT2
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 2
+				tag = BRA
+			}
+		}
+		trigger = {
+			tag = BRA
+		}
+
+		add_legitimacy_equivalent = { amount = -20 republican_tradition = -12 }
+		4716 = {
+			add_permanent_claim = BRA
+		}
+	}
+	option = {
+		name = FEE_Ansbach_Events.14.OPT3
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 100
+				OR = {
+					BRA = {
+						DIP = 6
+					}
+					ANS = {
+						DIP = 6
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				BRA = {
+					DIP = 2
+				}
+			}
+			modifier = {
+				factor = 10
+				NOT = {
+					DIP = 2
+				}
+			}
+		}
+
+		add_legitimacy_equivalent = { amount = 5 republican_tradition = 3 }
+	}
+}
+
+# country_event = {
+# 	id = FEE_Ansbach_Events.15
+# 	title = FEE_Ansbach_Events.15.T
+# 	desc = FEE_Ansbach_Events.15.D
+# 	picture = ELECTION_REPUBLICAN_eventPicture
+
+# 	is_triggered_only = yes
+
+# 	option = {
+# 		name = FEE_Ansbach_Events.15.OPT1
+# 		add_ruler_personality = glory_hound_personality
+# 		set_ai_personality = {
+# 			personality = ai_militarist 
+# 			locked = yes
+# 		}
+# 	}
+# }
