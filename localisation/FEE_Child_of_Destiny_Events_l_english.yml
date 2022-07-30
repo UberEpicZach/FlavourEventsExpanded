@@ -1,0 +1,50 @@
+﻿l_english:
+ # Events:
+ FEE_Child_of_Destiny_Events.1.T: "Child of Destiny"
+ FEE_Child_of_Destiny_Events.1.D: "As you hold little [Root.Heir.GetName] in your arms you feel something ominous eminate from [Root.Heir.GetName]'s tiny eyes. They are not filled with the glee of a newborn babe, but with the determined ambition of a warrior... You are sure it is nothing, but the person who delivered [Root.Heir.GetName] did claim the night of [Root.Heir.GetName]'s birth unusual somehow, blessed perhaps? Although some would call it folly, you remember the night as one bearing prophecy.\n\nAs you put [Root.Heir.GetName] back to bed, a shiver runs down your spine -- in your  mind's eyes, an image of the world changing flashes past, where great kings bend the knee to your son.\n\nPerhaps it is time for you to go to bed, too."
+ FEE_Child_of_Destiny_Events.1.OPT1: "Then ask for thyself another Kingdom, for that which I leave is too small for thee."
+ 
+ FEE_Child_of_Destiny_Events.2.T: "[Root.Heir.GetName] Attacked!"
+ FEE_Child_of_Destiny_Events.2.D: "As I checked on little [Root.Heir.GetName], I am terrified to discover a snake on [Root.Heir.GetName]'s crib! Fortunately the snake is dead, but who killed it? It surely could not have been [Root.Heir.GetName]? I better keep an eye out..."
+ FEE_Child_of_Destiny_Events.2.OPT1: "Phew! At least my heir is alive."
+ 
+ FEE_Child_of_Destiny_Events.3.T: "Our Heir Poisoned!"
+ FEE_Child_of_Destiny_Events.3.D: "A terrified servant brings [Root.Heir.GetName] to me, tears running down her cheeks. She claims that [Root.Heir.GetName] drank an entire vial of poison while in the cookery! Strangely enough, it does not look like [Root.Heir.GetName] is ailing at all...In fact, [Root.Heir.GetName] is babbling as usual, smiling at me."
+ FEE_Child_of_Destiny_Events.3.OPT1: "That is... nice. Now take this obnoxious babe away, please."
+ 
+ FEE_Child_of_Destiny_Events.4.T: "A Holy Warrior?"
+ FEE_Child_of_Destiny_Events.4.D: "I had accompany [Root.Heir.GetName] to a holy place, to learn more about our faith. Upon returning, people claim that [Root.Heir.GetName] had a vision from God while praying! Apparently my son loudly proclaimed passages from there, which he had no way of knowing..."
+ FEE_Child_of_Destiny_Events.4.OPT1: "Why do you bother me with this? Send [Root.Heir.GetName] back for all I care!"
+ 
+ FEE_Child_of_Destiny_Events.5.T: "The Cunning General"
+ FEE_Child_of_Destiny_Events.5.D: "Just as I started to wonder where [Root.Heir.GetName] is, a servant comes bearing news. Apparently [Root.Heir.GetName] has spent all day practicing swordsmanship with one of my generals! According to the servant, [Root.Heir.GetName] shows great promise as a fighter and a strategist -- [Root.Heir.GetName] evidently left him very impressed!"
+ FEE_Child_of_Destiny_Events.5.OPT1: "Hm, better not promote these tendencies..."
+ 
+ FEE_Child_of_Destiny_Events.6.T: "The Great Ruler"
+ FEE_Child_of_Destiny_Events.6.D: "My servant apparently lost track of [Root.Heir.GetName] today, and it took hours to locate! [Root.Heir.GetName] was found in the nick of time, just before I was about to order a full-scale search. When they found [Root.Heir.GetName], he was reading a book no one had ever seen before, written in Latin no less..."
+ FEE_Child_of_Destiny_Events.6.OPT1: "Ridiculous... dispose of that book, and keep an eye on [Root.Heir.GetName]!"
+ 
+ FEE_Child_of_Destiny_Events.7.T: "An Assassination Attempt!"
+ FEE_Child_of_Destiny_Events.7.D: "Grave news! This very night, [Root.Heir.GetName] was assaulted in his tent! An assassin somehow managed to sneak into the settlement, killing any guard in his way. In a stroke of luck, [Root.Heir.GetName] managed to impale the assailant on a fire poker."
+ FEE_Child_of_Destiny_Events.7.OPT1: "By God, what if they come for me next?"
+ 
+ FEE_Child_of_Destiny_Events.8.T: "A Hunting Accident?"
+ FEE_Child_of_Destiny_Events.8.D: "I am awestruck when I see what my marshal and [Root.Heir.GetName] have brought back from heir hunt. A trophy from a massive bear! I thought they were hunting for rabbit... My marshal ensures me that he and [Root.Heir.GetName] tracked the bear together, and that he absolutely did not lose track of where [Root.Heir.GetName] was, only arriving after the bear was already dead..."
+ FEE_Child_of_Destiny_Events.8.OPT1: "Unbelievable!"
+ 
+ FEE_Child_of_Destiny_Events.9.T: "The Popular Child"
+ FEE_Child_of_Destiny_Events.9.D: "[Root.Heir.GetName] is no mere child anymore, that much is evident. [Root.Heir.GetName] is constantly surrounded by young infatuated admirers, and he is obviously enjoying the attention!"
+ FEE_Child_of_Destiny_Events.9.OPT1: "How quaint. Guards, please relocate all these annoying admirers!"
+ 
+ FEE_Child_of_Destiny_Events.11.T: "The Great Conqueror"
+ FEE_Child_of_Destiny_Events.11.D: "As the days pass by, you look at your realm, a small stone in a big river, the land where everyone thinks nothing can change, even with the greatest ambition. Many are impressed with it, many laugh at it, but your destiny is one. A permanent goal, conquering everything in your path. A journey so long, yet so rewarding. A goal so enthusiastic, yet so absurd. Are you perhaps the chosen one, or are you just another mortal?"
+ FEE_Child_of_Destiny_Events.11.OPT1: "Beware world, for I am here to tame you!"
+ 
+ # Tooltips:
+ cod_your_heirs_abilities_keep_growing: "§Y[Root.Heir.GetName]'s§! abilities keep growing..."
+ 
+ # Other:
+ child_of_destiny_personality: "Child of Destiny"
+ child_of_destiny_personality_desc: "This ruler is filled with ambition. He will not stop at anything until the world is either his, or he is dead."
+ child_of_destiny_general_modifier: "Child of Destiny"
+ 
