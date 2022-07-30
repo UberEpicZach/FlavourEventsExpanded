@@ -1,11 +1,11 @@
-namespace = CE_edict_of_potsdam_chain
-	#ScorpeoneLemonen/#Jay DoubleU
+namespace = FEE_Edict_Of_Potsdam_Events
+# ScorpeoneLemonen/#Jay DoubleU
 
-#Edict de Fontainebleau (FRA)
+# Edict de Fontainebleau (FRA)
 country_event = {
-	id = CE_edict_of_potsdam_chain.1
-	title = CE_edict_of_potsdam_chain.1.T
-	desc = CE_edict_of_potsdam_chain.1.D
+	id = FEE_Edict_Of_Potsdam_Events.1
+	title = FEE_Edict_Of_Potsdam_Events.1.T
+	desc = FEE_Edict_Of_Potsdam_Events.1.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 
 	fire_only_once = yes
@@ -30,15 +30,20 @@ country_event = {
 	}
 
 	option = {
-		name = CE_edict_of_potsdam_chain.1.OPT1
+		name = FEE_Edict_Of_Potsdam_Events.1.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
+		add_prestige = 10
 		if = {
 			limit = {
-				FRA = { has_country_modifier = edict_de_nantes }
+				has_country_modifier = edict_de_nantes
 			}
 			remove_country_modifier = edict_de_nantes
 			set_country_flag = revoked_the_edict_of_nantes
 		}
-		custom_tooltip = CE_edict_of_potsdam_chain.1.OPT1.tooltip
+		custom_tooltip = fee_edict_potsdam_hugenots_outside_tt
 		hidden_effect = {
 			if = {
 				limit = {
@@ -46,7 +51,7 @@ country_event = {
 				}
 				PRU = {
 					country_event = {
-						id = CE_edict_of_potsdam_chain.2
+						id = FEE_Edict_Of_Potsdam_Events.2
 						days = 1
 					}
 				}
@@ -54,54 +59,59 @@ country_event = {
 			else = {
 				BRA = {
 					country_event = {
-						id = CE_edict_of_potsdam_chain.2
+						id = FEE_Edict_Of_Potsdam_Events.2
 						days = 1
 					}
 				}
 			}
 		}
-		add_prestige = 10
-		ai_chance = {
-			factor = 1
-		}
 	}
 
 	option = {
-		name = CE_edict_of_potsdam_chain.1.OPT2
-		add_stability = -2
+		name = FEE_Edict_Of_Potsdam_Events.1.OPT2
 		ai_chance = {
 			factor = 0
 		}
+
+		add_stability = -2
 	}
 }
 
-#Edict de Fontainebleau (PRU/BRA)
+# Edict de Fontainebleau (PRU/BRA)
 country_event = {
-	id = CE_edict_of_potsdam_chain.2
-	title = CE_edict_of_potsdam_chain.2.T
-	desc = CE_edict_of_potsdam_chain.2.D
+	id = FEE_Edict_Of_Potsdam_Events.2
+	title = FEE_Edict_Of_Potsdam_Events.2.T
+	desc = FEE_Edict_Of_Potsdam_Events.2.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 
 	fire_only_once = yes
 	is_triggered_only = yes
 
 	option = {
-		name = CE_edict_of_potsdam_chain.2.OPT1
+		name = FEE_Edict_Of_Potsdam_Events.2.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
 		add_years_of_income = -0.2
-		set_country_flag = huguenots_invited
+		set_country_flag = fee_edict_potsdam_huguenots_invited
 	}
 
 	option = {
-		name = CE_edict_of_potsdam_chain.2.OPT2
+		name = FEE_Edict_Of_Potsdam_Events.2.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
 		add_prestige = -10
 	}
 }
 
-#French Exodus (FRA)
+# French Exodus (FRA)
 country_event = {
-	id = CE_edict_of_potsdam_chain.3
-	title = CE_edict_of_potsdam_chain.3.T
-	desc = CE_edict_of_potsdam_chain.3.D
+	id = FEE_Edict_Of_Potsdam_Events.3
+	title = FEE_Edict_Of_Potsdam_Events.3.T
+	desc = FEE_Edict_Of_Potsdam_Events.3.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 
 	fire_only_once = yes
@@ -110,10 +120,10 @@ country_event = {
 		tag = FRA
 		OR = {
 			PRU = {
-				has_country_flag = huguenots_invited
+				has_country_flag = fee_edict_potsdam_huguenots_invited
 			}
 			BRA = {
-				has_country_flag = huguenots_invited
+				has_country_flag = fee_edict_potsdam_huguenots_invited
 			}
 		}
 	}
@@ -200,17 +210,18 @@ country_event = {
 	}
 
 	option = {
-		name = CE_edict_of_potsdam_chain.3.OPT1
-		custom_tooltip = CE_edict_of_potsdam_chain.3.OPT1.tooltip
+		name = FEE_Edict_Of_Potsdam_Events.3.OPT1
+
+		custom_tooltip = fee_edict_potsdam_loses_5_percent_development_for_France_tt
 		set_country_flag = huguenots_left
 	}
 }
 
-#The Edict of Potsdam (PRU/BRA)
+# The Edict of Potsdam (PRU/BRA)
 country_event = {
-	id = CE_edict_of_potsdam_chain.4
-	title = CE_edict_of_potsdam_chain.4.T
-	desc = CE_edict_of_potsdam_chain.4.D
+	id = FEE_Edict_Of_Potsdam_Events.4
+	title = FEE_Edict_Of_Potsdam_Events.4.T
+	desc = FEE_Edict_Of_Potsdam_Events.4.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 
 	fire_only_once = yes
@@ -303,7 +314,7 @@ country_event = {
 						}
 					}
 					country_event = {
-						id = CE_edict_of_potsdam_chain.5
+						id = FEE_Edict_Of_Potsdam_Events.5
 						days = 30
 					}
 				}
@@ -316,8 +327,10 @@ country_event = {
 	}
 
 	option = {
-		name = CE_edict_of_potsdam_chain.4.OPT1
-		custom_tooltip = CE_edict_of_potsdam_chain.4.OPT1.tooltip
+		name = FEE_Edict_Of_Potsdam_Events.4.OPT1
+
+		add_years_of_income = -1
+		custom_tooltip = fee_edict_potsdam_arrival_hugenots_tt
 		while = {
 			limit = { 
 				check_variable = {
@@ -375,11 +388,10 @@ country_event = {
 				value = 1
 			}
 		}
-		add_years_of_income = -1
 	}
 
 	option = {
-		name = CE_edict_of_potsdam_chain.4.OPT2
+		name = FEE_Edict_Of_Potsdam_Events.4.OPT2
 		add_prestige = -10
 		while = {
 			limit = {
@@ -410,7 +422,7 @@ country_event = {
 					}
 				}
 				country_event = {
-					id = CE_edict_of_potsdam_chain.5
+					id = FEE_Edict_Of_Potsdam_Events.5
 					days = 30
 				}
 			}
@@ -422,10 +434,11 @@ country_event = {
 	}
 }
 
+# Huguenot Dissidents
 country_event = {
-	id = CE_edict_of_potsdam_chain.5
-	title = CE_edict_of_potsdam_chain.5.T
-	desc = CE_edict_of_potsdam_chain.5.D
+	id = FEE_Edict_Of_Potsdam_Events.5
+	title = FEE_Edict_Of_Potsdam_Events.5.T
+	desc = FEE_Edict_Of_Potsdam_Events.5.D
 	picture = ELECTION_REPUBLICAN_eventPicture
 
 	fire_only_once = no
@@ -451,11 +464,13 @@ country_event = {
 	}
 
 	option = {
-		name = CE_edict_of_potsdam_chain.5.OPT1
+		name = FEE_Edict_Of_Potsdam_Events.5.OPT1
 		ai_chance = {
 			factor = 75
 		}
+
 		add_prestige = 5
+		add_years_of_income = -0.05
 		capital_scope = {
 			if = {
 				limit = {
@@ -489,14 +504,14 @@ country_event = {
 				add_base_manpower = 1
 			}
 		}
-		add_years_of_income = -0.05
 	}
 
 	option = {
-		name = CE_edict_of_potsdam_chain.5.OPT2
+		name = FEE_Edict_Of_Potsdam_Events.5.OPT2
 		ai_chance = {
 			factor = 25
 		}
+
 		add_prestige = -1
 	}
 }
