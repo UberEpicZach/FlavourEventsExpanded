@@ -901,20 +901,3 @@ FEE_Denmark_Agricultural_Reform = {
 FEE_Denmark_Reforms_Ignored = {
 	technology_cost = 0.1
 }
-
-#FEE_Bohemia
-
-FEE_BOH_Infertility = {
-	heir_chance = -0.90
-}
-
-FEE_BOH_noble_concessions = {
-	liberty_desire = 15
-	nobles_influence_modifier = 0.25
-	nobles_loyalty_modifier = 0.05
-}
-FEE_HUN_young_janos = {
-	nobles_loyalty_modifier = -0.05
-	burghers_loyalty_modifier = -0.05
-	church_loyalty_modifier = -0.05
-}

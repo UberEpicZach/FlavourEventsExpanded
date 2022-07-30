@@ -1,15 +1,10 @@
 ﻿l_english:
  CE_transylvanian_saxons: "Transylvanian Saxons"
  CE_szekelys: "Szekelys Seats"
- CE_union_of_nations: "Unio Trium Nationum"
  CE_vlach_herders: "Vlach Herders"
  CE_vlach_law: "Vlach Law"
- CE_elected_king_of_bohemia: "Elected King of Bohemia"
- CE_royal_prerogative_tax: "Royal Prerogative"
- CE_taxes_without_diet: "Taxation without Diet"
  CE_captain_general_silesia: "Captain General of Silesia"
  CE_King_Elector_of_Bohemia: "King-Elector of Bohemia"
- CE_hungarian_papal_subsidies: "Papal"
  
  CE_opinion_bid_for_emperor: "Bid for the Emperorship"
  CE_barbara_marriage: "Barbara von Hohenzollern"
@@ -90,108 +85,3 @@
  cultures_expanded.16.T: "The Hungarian Solution"
  cultures_expanded.16.D: "Having occupied Vienna, the Austrian Emperor has become much more willing to honor his earlier offer and to pay us our due and grant us the crown and electorate we earned."
  cultures_expanded.16.OPT1: "To each their wages."
-
- CE_hungary_expanded.1.T: "Bohemian Raids"
- CE_hungary_expanded.1.D: "Ever since the Hussite Wars in Bohemia, our long border with Bohemia has faced various raids from Hussite radicals, and with the rise of King Jiri z Podebrady - The Hussite King, the raids have grown in frequency. Many Austrian nobles have petitioned the [HAB.Monarch.GetTitle] [HAB.Monarch.GetName] to demand an end to this!"
- CE_hungary_expanded.1.OPT1: "The way to victory is to be diplomatic" 	
- CE_hungary_expanded.1.OPT2: "We must take direct action"
- CE_austria_demands_reparations: "Demand reparations under threat of war"
- CE_austria_calls_for_aid: "Ask Hungary for support in exchange for a fee."
-
- CE_hungary_expanded.2.T: "Austrian Reparations"
- CE_hungary_expanded.2.D: "Ever since the beginning of the Hussite Wars and continuous crusades into our lands, the more radical of our great peoples have been reported to attack bordering catholic villages in Austria, today an Imperial representative has arrived demanding monetary reparations and justice to be served from the "Radical Pigs."
- CE_hungary_expanded.2.OPT1: "We shall accept the Imperial demands"
- CE_hungary_expanded.2.OPT1.tt: "This will make us look better in the eyes of Catholics."
- CE_hungary_expanded.2.OPT2: "We decline to acknowledge these claims"
- CE_HUN_catholic_sympathizers: "Catholic Sympathizers might launch an uprising if we were to lose control of the entirity of Silesia"
-			
-
- CE_hungary_expanded.3.T: "Bohemia The Just"
- CE_hungary_expanded.3.D: "Our Imperial diplomat to bohemia has arrived back today with amazing news, Jiri z Podebrady has personally brought justice upon the   radical Hussites terrorising our border, while not going back on his faith, he has made significant moves to ease tensions between the Hussites and Catholics in  Bohemia and abroad by personally paying the damages caused by his people."
- CE_hungary_expanded.3.OPT1: "Good riddance"
-			
-
- CE_hungary_expanded.4.T: "Crusade of Prague"
- CE_hungary_expanded.4.D: "His holiness, Pope [PAP.Monarch.GetName] had offered the throne of Bohemia originally to Prince-Elector [BRA.Monarch.GetName] of Brandenburg. Due to ongoing internal economic issues and a growing conflict to be with Pomerania, [BRA.Monarch.GetName] had to refuse. Today a papal representative has arrived in [Root.Capital.GetName], to privately discuss matters of Prague and the throne of Bohemia - it could be [HUN.Monarch.GetName]'s, for the price of removing the Hussites from Bohemia. Now at the same time, it is known that Austria has grown fed-up with Hussite raids into Austrian lands and was beginning to mobilize troops to the Bohemian border. \nCould this be our time to capitalise on this chaos?"
- CE_hungary_expanded.4.OPT1: "Only the ladder is real"
- CE_and_hungary_will_answer: "If we can liberate Silesia we might be able to gain the support of the Catholic estates."			 
- CE_hungary_expanded.4.OPT2: "We must focus on defending our south."
-			
-
- CE_hungary_expanded.5.T: "Papal Subsidies"
- CE_hungary_expanded.5.D: "Accepting the offer of the pope and joining the war against Bohemia with Austria is proving to be a smart move, as the pope today has declared monetary subsidies to the Crusading efforts in Bohemia - making things better, Austria doesn't know about our offer of Kingship, nor will they."
- CE_hungary_expanded.5.OPT1: "Onwards to victory!"
- CE_hungarian_papal_subsidies: "Papal Subsidies"
-			
-
- CE_hungary_expanded.6.T: "King of Bohemia"
- CE_hungary_expanded.6.D: "As our armies march through the Czech lands of Bohemia and Silesia after the defeats of the primary Hussite Army, men, women and children alike have come out of their homes. They call to [HUN.Monarch.GetName] as King, they chant in unison, /"King [HUN.Monarch.GetName]!, King [HUN.Monarch.GetName]!, King [HUN.Monarch.GetName]!"/ these Catholic civilians have lived hard lives under Hussite rule long enough and with previous papal backing, It is time to declare what we are, Kings of Bohemia"
- CE_hungary_expanded.6.OPT1: "Long live the king" 
- CE_hungary_expanded.6.OPT2: "The Hussites are defeated, let's go home"
-			
-
- CE_hungary_expanded.7.T: "King of Bohemia"
- CE_hungary_expanded.7.D: "After successfully defeating the main Bohemian army, it has been seen that both the Hungarian troops and [HUN.Monarch.GetName] are paraded around as liberators, some even calling HIM...King of Bohemia. This was our war, the Hungarians weren't here with us to remove the Hussites but instead joined for self-profit - letting our troops die in the process."
- CE_hungary_expanded.7.OPT1: "We have been betrayed."
- CE_hungary_expanded.7.OPT2: "The main thing is, the Hussites are gone."
-			
- CE_hungary_expanded.8.T: "Austrian Gold"
- CE_hungary_expanded.8.D: "When Hungary had joined the war with Austria against Bohemia, the Emperor had offered us payments for our support, now some might say that we were paid in gaining a crown - but others might say that we are still due our money for our.../"hard work"/."
- CE_hungary_expanded.8.OPT1: "We shall demand our payment"
- CE_hungary_expanded.8.OPT2: "we were in crowns and thrones" 
-			
- CE_hungary_expanded.9.T: "Austrian Gold"
- CE_hungary_expanded.9.D: "After the defeats of the Hussites many months ago, the Hungarians had backstabbed us taking the crown for themselves leaving us with nothing. Today we have received a letter from [HUN.Monarch.GetName] demanding money that we had /"offered"/ them upon joining. Along with subsidies from the pope and the Crown of Bohemia itself, we were sure not to mention it, but for [HUN.Monarch.GetName] to demand more after all we have done for them? Outrageous demands"
- CE_hungary_expanded.9.OPT1: "...Pay them what we owe"
- CE_hungary_expanded.9.OPT2: "We shall not listen to these Wicked demands"
-			
-
- CE_hungary_expanded.10.T: "Austrian Payments"
- CE_hungary_expanded.10.D: "To everyone's surpise, a rider from [HAB.Capital.GetName] has arrived in [HUN.Capital.GetName] today, bringing a package. \nWithin is the gold, we asked from weeks prior"
- CE_hungary_expanded.10.OPT1: "It is great for them to have paid"
-			
-
- CE_hungary_expanded.11.T: "Austrian Betrayal"
- CE_hungary_expanded.11.D: "It wasn't until we sent three other letters to [HAB.Capital.GetName], that we had finally concluded that, No, Austria would not give us our due./"
- CE_hungary_expanded.11.OPT1: "If [HAB.Capital.GetName] won't pay us, why not take [HAB.Capital.GetName]?"
- CE_hungary_expanded.11.OPT2: "A shame." 
-
- CE_hungary_expanded.12.T: "Diet of 1468" 
- CE_hungary_expanded.12.D: "The Diet of 1468 was called by Matyas Corvinus to fund the war against Bohemia, and while the Diet eventually was willing to grand the right to levy an additional tax, but only after several religious and secular lords pledged he would not increase the taxation any further."
- CE_hungary_expanded.12.OPT1: "Excellent"
- 
- CE_hungary_expanded.13.T: "The Extraordinary Tax" 
- CE_hungary_expanded.13.D: "Following a painful blow during the war, Matyas required additional funds to restore his army and reassert himself in the conflict. Without consulting or seeking permission from the Diet, he raised another tax to continue the war effort."
- CE_hungary_expanded.13.OPT1: "I hope this doesn't come back to bite me."
- CE_hungary_expanded.13.OPT2: "I guess the war isn;t that important."
- 
- CE_hungary_expanded.14.T: "Diet of 1470" 
- CE_hungary_expanded.14.D: "The Diet of 1470 was called by Matyas Corvinus to restore the faith of the estates in his rulership following the costly war and the high taxes Matyas raised without asking the Diet for permission, as well as breaking the faith the estates had put into him to not impose further taxes. Even going so far as offering the hungarian crown to the king of poland. Only the fear of Matyas Corvinus's reputation swayed them from attempting to overthrow him and rise in rebellion."
- CE_hungary_expanded.14.OPT1: "I swear i will respect the Diet and will not levy taxes without permission."
- CE_hungary_expanded.14.OPT2: "If only Matyas was still among us."
-
- CE_hungary_expanded.15.T: "Uprising of the Catholic Estates"
- CE_hungary_expanded.15.D: "As the Hungarian armies march through the Czech lands of Bohemia and Silesia after the defeats of the primary Hussite Army, men, women and children alike have come out of their homes. They call to [HUN.Monarch.GetName] as King, they chant in unison, /"King [HUN.Monarch.GetName]!, King [HUN.Monarch.GetName]!, King [HUN.Monarch.GetName]!"/ these Catholic civilians have lived hard lives under Hussite rule long enough and with previous papal backing, the estates are trying to elect [HUN.Monarch.GetName] of Hungary as king of Bohemia."
- CE_hungary_expanded.15.OPT1: "We must put them down!" 
- CE_hungary_expanded.15.OPT2: "If this is the price to pay to survive the Hungarian Onslaught."
- CE_HUN_revolt_of_the_estates: "This will cause Lusatia, Silesia and Moravia to seccede from the Hussite Bohemian Crown and seek Hungarian Catholic protection."
-
- CE_hungary_expanded.16.T: "Union of Three Nations"
- CE_hungary_expanded.16.D: "In 1438, The Transylvanian Estates organized into the 'Unio Trium Nationum' following Ottoman and Wallachian raids into Transylvania and the inaction of the late King Sigismund of Hungary's lack of timely response. The local and spontaneous organization both kept the peace in their domains as well as attempted to halt further Southern aggression."
- CE_hungary_expanded.16.OPT1: "We should deal with them at some point."
-
- CE_hungary_expanded.17.T: "Crush the Estates"
- CE_hungary_expanded.17.D: "In 1467 under Matyas Corvinus the Hungarian Crown reformed their taxation and made the so called 'Thirtieth' a permanent crown tax. The further removal of any earlier granted privileges caused much unrest. The Transylvanian Estates known as the 'Three Nations', which have had major influences on the Transylvania region for decades now, have taken up arms and are amassing troops. and claim to be ready to defend Hungarian freedom. Rumor has it that the Voivode of Moldavia has encouraged and supported these rebels."
- CE_hungary_expanded.17.OPT1: "Crush them in battle"
- CE_hungary_expanded.17.OPT2: "Aquiess to their demands."
- 
- CE_hungary_expanded.18.T: "Crushed the Estates"
- CE_hungary_expanded.18.D: "Having dealt with the military might of the Estates, now comes the time to deal with the troublemakers and their retinues."
- CE_hungary_expanded.18.OPT1: "Stake the traitors, their kin and take their land."
- CE_hungary_expanded.18.OPT2: "Execute the traitors and abolish their privileges."
- CE_hungary_expanded.18.OPT3: "Forgive them."
-
- CE_hungary_expanded.19.T: "Matyas is dead, justice is lost"
- CE_hungary_expanded.19.D: "The catholic estates of the Bohemian crown have, following King Matyas Corvinus's Death, reasserted themselves and wish to reunite with the Bohemian Crown, citing unfair treatment and a desire for stability as their goal. They have taken up arms and are trying to force our troops from their lands."
- CE_hungary_expanded.19.OPT1: "If only Matyas had lived."
- CE_hungary_expanded.19.OPT2: "We'll fight to protect his legacy, to the last man!"

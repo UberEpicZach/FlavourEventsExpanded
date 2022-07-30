@@ -1,3 +1,30 @@
-CE_hungarian_papal_subsidies = {
+fee_hun_papal_subsidies = {
 	global_tax_income = 24
+}
+fee_hun_young_janos = {
+	nobles_loyalty_modifier = -0.05
+	burghers_loyalty_modifier = -0.05
+	church_loyalty_modifier = -0.05
+}
+fee_hun_papal_subsidies = {
+	global_tax_income = 24
+}
+fee_hun_elected_king_bohemia = {
+	legitimacy = 0.5
+	republican_tradition = 0.3
+	devotion = 0.5
+	meritocracy = 0.5
+	horde_unity = 0.5
+}
+fee_hun_royal_prerogative = {
+	war_taxes_cost_modifier = -0.5
+	global_tax_modifier = 0.10
+}
+fee_hun_taxes_without_diet = {
+	global_tax_modifier = 0.10
+	global_unrest = 2
+}
+fee_hun_union_trium_nationum = {
+	local_autonomy = 0.10
+	local_unrest = -2
 }

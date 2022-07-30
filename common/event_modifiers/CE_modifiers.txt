@@ -6,10 +6,6 @@ CE_szekelys = {
 	local_manpower_modifier = 0.25
 	local_state_maintenance_modifier = -0.20
 }
-CE_union_of_nations = {
-	local_autonomy = 0.10
-	local_unrest = -2
-}
 CE_vlach_herders = {
 	trade_goods_size_modifier = 0.15
 	local_unrest = 1
@@ -19,24 +15,10 @@ CE_vlach_law = {
 	production_efficiency = 0.10
 	burghers_loyalty_modifier = -0.05
 }
-CE_elected_king_of_bohemia = {
-	legitimacy = 0.5
-}
-CE_royal_prerogative_tax = {
-	war_taxes_cost_modifier = -0.5
-	global_tax_modifier = 0.10
-}
-CE_taxes_without_diet = {
-	global_tax_modifier = 0.10
-	global_unrest = 2
-}
 CE_captain_general_silesia = {
 	local_autonomy = -0.05
 }
 CE_King_Elector_of_Bohemia = {
 	legitimacy = 0.5
 	diplomatic_reputation = 1
-}
-CE_hungarian_papal_subsidies = {
-	global_tax_income = 24
 }

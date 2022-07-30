@@ -1,0 +1,9 @@
+#BOH
+fee_boh_linked_thrones = {
+	opinion = 200
+	yearly_decay = 10
+}
+fee_boh_claiming_thrones = {
+	opinion = -200
+	yearly_decay = 10
+}
