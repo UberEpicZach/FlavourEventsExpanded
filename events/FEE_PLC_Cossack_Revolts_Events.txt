@@ -1,0 +1,1108 @@
+##########################################################
+# Lumisentius' second attempt in making Cossack Revolts.
+# Date: 11.07.2020
+# Latest update: 09.08.2020
+# Finished event chains:
+# 	- Cossack Raids Against Ottomans
+# 	- Kosinski Uprising
+# 	- Nalyvaiko Uprising
+#
+# Total amount of events: 25
+##########################################################
+
+namespace = FEE_PLC_Cossack_Revolts_Events
+
+# [COSSACK RAIDS AGAINST OTTOMANS CHAIN]
+# Cossack Raids
+country_event = {
+	id = FEE_PLC_Cossack_Revolts_Events.1
+	title = FEE_PLC_Cossack_Revolts_Events.1.T
+	desc = FEE_PLC_Cossack_Revolts_Events.1.D
+	picture = BARBARY_PIRATES_eventPicture
+	fire_only_once = yes
+	
+	trigger = {
+		is_year = 1580
+		tag = TUR
+		exists = PLC
+		is_neighbor_of = PLC
+		PLC = {
+			has_estate = estate_cossacks
+			NOT = { truce_with = TUR }
+		}
+		OR = {
+			is_rival = PLC
+			is_enemy = PLC
+		}
+	}
+	
+	mean_time_to_happen = { months = 60 }
+	
+	option = {
+		name = FEE_PLC_Cossack_Revolts_Events.1.OPT1
+		ai_chance = { factor = 85 }
+		
+		hidden_effect = {
+			PLC = {
+				country_event = {
+					id = FEE_PLC_Cossack_Revolts_Events.2
+					days = 30
+					random = 15
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = cr_1.OPT2
+		ai_chance = { factor = 15 }
+		
+		add_prestige = -15
+		add_legitimacy_equivalent = { amount = -20 republican_tradition = -12 }
+		add_stability = -1
+	}
+}
+
+# Threatened by Sultan
+country_event = {
+	id = FEE_PLC_Cossack_Revolts_Events.2
+	title = FEE_PLC_Cossack_Revolts_Events.2.T
+	desc = FEE_PLC_Cossack_Revolts_Events.2.D
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = FEE_PLC_Cossack_Revolts_Events.2.OPT1
+		ai_chance = { factor = 90 }
+		
+		add_country_modifier = {
+			name = "order_in_ukraine"
+			duration = 3652
+		}
+		
+		TUR = {
+			country_event = {
+				id = FEE_PLC_Cossack_Revolts_Events.3
+				days = 30
+				random = 15
+				tooltip = "cr_2_a_tooltip"
+			}
+		}
+	}
+	
+	option = {
+		name = cr_2.OPT2
+		ai_chance = { factor = 10 }
+		
+		add_prestige = 15
+		
+		TUR = {
+			country_event = {
+				id = FEE_PLC_Cossack_Revolts_Events.4
+				days = 30
+				random = 15
+				tooltip = "cr_2_b_tooltip"
+			}
+		}
+	}
+}
+
+# Commonwealth accepts our demands
+country_event = {
+	id = FEE_PLC_Cossack_Revolts_Events.3
+	title = FEE_PLC_Cossack_Revolts_Events.3.T
+	desc = FEE_PLC_Cossack_Revolts_Events.3.D
+	picture = DIPLOMACY_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = FEE_PLC_Cossack_Revolts_Events.3.OPT1
+		
+		add_stability_or_adm_power = yes
+		add_prestige = 15
+	}
+}
+
+# Commonwealth rejects our demands
+country_event = {
+	id = FEE_PLC_Cossack_Revolts_Events.4
+	title = FEE_PLC_Cossack_Revolts_Events.4.T
+	desc = FEE_PLC_Cossack_Revolts_Events.4.D
+	picture = BORDER_TENSION_eventPicture
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			PLC = {
+				declare_war_with_cb = {
+					who = TUR
+					casus_belli = cb_insult
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = FEE_PLC_Cossack_Revolts_Events.4.OPT1
+	}
+}
+
+# [KOSINSKI UPRISING EVENT CHAIN]
+# A Conflict between Ruthenian Nobility
+country_event = {
+	id = FEE_PLC_Cossack_Revolts_Events.5
+	title = FEE_PLC_Cossack_Revolts_Events.5.T
+	desc = FEE_PLC_Cossack_Revolts_Events.5.D
+	picture = BORDER_TENSION_eventPicture
+	fire_only_once = yes
+	
+	trigger = {
+		is_year = 1591
+		tag = PLC
+		has_estate = estate_cossacks
+		owns_core_province = 280
+		owns_core_province = 292
+		owns_core_province = 1944
+		owns_core_province = 2962
+		owns_core_province = 4539
+		owns_core_province = 4540
+	}
+	
+	mean_time_to_happen = { months = 12 }
+	
+	option = {
+		name = FEE_PLC_Cossack_Revolts_Events.5.OPT1
+		
+		280 = { add_devastation = 2 }
+		
+		hidden_effect = {
+			country_event = {
+				id = FEE_PLC_Cossack_Revolts_Events.6
+				days = 60
+				random = 15
+			}
+		}
+	}
+}
+
+# Ruthenian Noble names himself a Hetman
+country_event = {
+	id = FEE_PLC_Cossack_Revolts_Events.6
+	title = FEE_PLC_Cossack_Revolts_Events.6.T
+	desc = FEE_PLC_Cossack_Revolts_Events.6.D
+	picture = ANGRY_MOB_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = FEE_PLC_Cossack_Revolts_Events.6.OPT1
+		
+		hidden_effect = {
+			random_list = {
+				90 = {
+					country_event = {
+						id = FEE_PLC_Cossack_Revolts_Events.7
+						days = 120
+						random = 10
+					}
+				}
+				10 = {
+					country_event = {
+						id = FEE_PLC_Cossack_Revolts_Events.8
+						days = 120
+						random = 10
+					}
+				}
+			}
+		}
+	}
+}
+
+# End of Kosinski Uprising (Success)
+country_event = {
+	id = FEE_PLC_Cossack_Revolts_Events.7
+	title = FEE_PLC_Cossack_Revolts_Events.7.T
+	desc = FEE_PLC_Cossack_Revolts_Events.7.D
+	picture = CONQUEST_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = FEE_PLC_Cossack_Revolts_Events.7.OPT1
+		
+		# +Mission for ME and a mechanism preventing next event chain from firing before this one is over.
+		set_country_flag = PLC_dealt_with_kosinski_uprising
+	}
+}
+
+# Embarrassing Failure
+country_event = {
+	id = FEE_PLC_Cossack_Revolts_Events.8
+	title = FEE_PLC_Cossack_Revolts_Events.8.T
+	desc = FEE_PLC_Cossack_Revolts_Events.8.D
+	picture = BATTLE_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = FEE_PLC_Cossack_Revolts_Events.8.OPT1
+		
+		add_prestige = -10
+		
+		280 = {
+			spawn_rebels = {
+				type = cossack_rebels
+				size = 2
+				win = yes
+			}
+		}
+		
+		1944 = {
+			spawn_rebels = {
+				type = cossack_rebels
+				size = 1
+				win = yes
+			}
+		}
+		
+		hidden_effect = {
+			country_event = {
+				id = FEE_PLC_Cossack_Revolts_Events.1001
+				days = 120
+				random = 30
+			}
+		}
+	}
+}
+
+# Kosinski Uprising [Phase 1]
+country_event = {
+	id = FEE_PLC_Cossack_Revolts_Events.1001
+	title = FEE_PLC_Cossack_Revolts_Events.1001.T
+	desc = FEE_PLC_Cossack_Revolts_Events.1001.D
+	picture = BATTLE_eventPicture
+	is_triggered_only = yes
+	hidden = yes
+	
+	immediate = {
+		2962 = {
+			spawn_rebels = {
+				type = cossack_rebels
+				size = 1
+				win = yes
+			}
+		}
+		
+		4540 = {
+			spawn_rebels = {
+				type = cossack_rebels
+				size = 1
+				win = yes
+			}
+		}
+		
+		country_event = {
+			id = FEE_PLC_Cossack_Revolts_Events.1002
+			days = 120
+			random = 30
+		}
+	}
+	
+	option = {
+		
+	}
+}
+
+# Kosinski Uprising [Phase 2]
+country_event = {
+	id = FEE_PLC_Cossack_Revolts_Events.1002
+	title = FEE_PLC_Cossack_Revolts_Events.1002.T
+	desc = FEE_PLC_Cossack_Revolts_Events.1002.D
+	picture = BATTLE_eventPicture
+	is_triggered_only = yes
+	hidden = yes
+	
+	immediate = {
+		292 = {
+			spawn_rebels = {
+				type = cossack_rebels
+				size = 1
+				win = yes
+			}
+		}
+		
+		4539 = {
+			spawn_rebels = {
+				type = cossack_rebels
+				size = 1
+				win = yes
+			}
+		}
+		
+		country_event = {
+			id = FEE_PLC_Cossack_Revolts_Events.1003
+			days = 90
+		}
+	}
+	
+	option = {
+		
+	}
+}
+
+# Kosinski Uprising [Final Phase (Loop)]
+country_event = {
+	id = FEE_PLC_Cossack_Revolts_Events.1003
+	title = FEE_PLC_Cossack_Revolts_Events.1003.T
+	desc = FEE_PLC_Cossack_Revolts_Events.1003.D
+	picture = BATTLE_eventPicture
+	is_triggered_only = yes
+	hidden = yes
+	
+	immediate = {
+		if = {
+			limit = { has_spawned_rebels = cossack_rebels }
+			country_event = {
+				id = FEE_PLC_Cossack_Revolts_Events.1003
+				days = 90
+			}
+		}
+		else = {
+			country_event = { id = FEE_PLC_Cossack_Revolts_Events.9 }
+		}
+	}
+	
+	option = {
+		
+	}
+}
+
+# End of Kosinski Uprising (Intervention)
+country_event = {
+	id = FEE_PLC_Cossack_Revolts_Events.9
+	title = FEE_PLC_Cossack_Revolts_Events.9.T
+	desc = FEE_PLC_Cossack_Revolts_Events.9.D
+	picture = CONQUEST_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = FEE_PLC_Cossack_Revolts_Events.9.OPT1
+		
+		set_country_flag = PLC_dealt_with_kosinski_uprising
+	}
+}
+
+# [NALYVAIKO UPRISING EVENT CHAIN]
+# An influental Cossack demands changes
+country_event = {
+	id = FEE_PLC_Cossack_Revolts_Events.10
+	title = FEE_PLC_Cossack_Revolts_Events.10.T
+	desc = FEE_PLC_Cossack_Revolts_Events.10.D
+	picture = SEJM_eventPicture
+	fire_only_once = yes
+	
+	trigger = {
+		tag = PLC
+		has_estate = estate_cossacks
+		has_country_flag = PLC_dealt_with_kosinski_uprising
+		is_at_war = no
+		owns_core_province = 280
+		owns_core_province = 281
+		owns_core_province = 292
+		owns_core_province = 1942
+		owns_core_province = 1943
+		owns_core_province = 1944
+		owns_core_province = 2407
+		owns_core_province = 4247
+		owns_core_province = 4539
+		owns_core_province = 4540
+		owns_core_province = 4542
+	}
+	
+	mean_time_to_happen = { months = 64 }
+	
+	option = {
+		name = FEE_PLC_Cossack_Revolts_Events.10.OPT1
+		
+		trigger = {
+			NOT = {
+				OR = {
+					ruler_has_personality = just_personality
+					ruler_has_personality = righteous_personality
+					ruler_has_personality = kind_hearted_personality
+					ruler_has_personality = secretive_personality
+					ruler_has_personality = intricate_web_weaver_personality
+					ruler_has_personality = charismatic_negotiator_personality
+					ruler_has_personality = fierce_negotiator_personality
+					ruler_has_personality = silver_tongue_personality
+					ruler_has_personality = embezzler_personality
+					ruler_has_personality = greedy_personality
+					ruler_has_personality = cruel_personality
+					ruler_has_personality = malevolent_personality
+				}
+			}
+		}
+		
+		hidden_effect = {
+			random_list = {
+				90 = {
+					country_event = {
+						id = FEE_PLC_Cossack_Revolts_Events.12
+						days = 120
+						random = 30
+					}
+				}
+				10 = {
+					country_event = {
+						id = FEE_PLC_Cossack_Revolts_Events.11
+						days = 60
+						random = 15
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = EE_PLC_Cossack_Revolts_Events.10..OPT
+		
+		trigger = {
+			OR = {
+				ruler_has_personality = just_personality
+				ruler_has_personality = righteous_personality
+			}
+		}
+		
+		add_estate_loyalty = {
+			estate = estate_cossacks
+			loyalty = 10
+		}
+		add_country_modifier = {
+			name = grateful_cossacks
+			duration = 3650
+		}
+		
+		hidden_effect = {
+			country_event = {
+				id = FEE_PLC_Cossack_Revolts_Events.11
+				days = 60
+				random = 15
+			}
+		}
+	}
+	
+	option = {
+		name = FEE_PLC_Cossack_Revolts_Events.10.OPT3
+		
+		trigger = { ruler_has_personality = kind_hearted_personality }
+		
+		add_years_of_income = -0.5
+		add_country_modifier = {
+			name = grateful_cossacks
+			duration = 3650
+		}
+		
+		hidden_effect = {
+			country_event = {
+				id = FEE_PLC_Cossack_Revolts_Events.11
+				days = 60
+				random = 15
+			}
+		}
+	}
+	
+	option = {
+		name = FEE_PLC_Cossack_Revolts_Events.10.OPT4
+		
+		trigger = {
+			OR = {
+				ruler_has_personality = secretive_personality
+				ruler_has_personality = intricate_web_weaver_personality
+			}
+		}
+		
+		add_years_of_income = -0.25
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -5
+		}
+		
+		hidden_effect = {
+			country_event = {
+				id = FEE_PLC_Cossack_Revolts_Events.11
+				days = 60
+				random = 15
+			}
+		}
+	}
+	
+	option = {
+		name = FEE_PLC_Cossack_Revolts_Events.10.OPT5
+	
+		trigger = {
+			OR = {
+				ruler_has_personality = charismatic_negotiator_personality
+				ruler_has_personality = fierce_negotiator_personality
+				ruler_has_personality = silver_tongue_personality
+			}
+		}
+		
+		add_country_modifier = {
+			name = grateful_cossacks
+			duration = 3650
+		}
+		
+		hidden_effect = {
+			country_event = {
+				id = FEE_PLC_Cossack_Revolts_Events.11
+				days = 60
+				random = 15
+			}
+		}
+	}
+	
+	option = {
+		name = FEE_PLC_Cossack_Revolts_Events.10.OPT6
+	
+		trigger = {
+			OR = {
+				ruler_has_personality = embezzler_personality
+				ruler_has_personality = greedy_personality
+			}
+		}
+		
+		add_years_of_income = 0.5
+		add_country_modifier = {
+			name = despised_by_the_cossacks
+			duration = 3650
+		}
+		
+		hidden_effect = {
+			country_event = {
+				id = FEE_PLC_Cossack_Revolts_Events.12
+				days = 120
+				random = 30
+			}
+		}
+	}
+	
+	option = {
+		name = FEE_PLC_Cossack_Revolts_Events.10.OPT7
+		
+		trigger = {
+			OR = {
+				ruler_has_personality = cruel_personality
+				ruler_has_personality = malevolent_personality
+			}
+		}
+		
+		add_stability = -1
+		add_country_modifier = {
+			name = despised_by_the_cossacks
+			duration = 3650
+		}
+		
+		hidden_effect = {
+			country_event = {
+				id = FEE_PLC_Cossack_Revolts_Events.12
+				days = 120
+				random = 30
+			}
+		}
+	}
+}
+
+# Szlachta Agrees
+country_event = {
+	id = FEE_PLC_Cossack_Revolts_Events.11
+	title = FEE_PLC_Cossack_Revolts_Events.11.T
+	desc = FEE_PLC_Cossack_Revolts_Events.11.D
+	picture = SEJM_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = FEE_PLC_Cossack_Revolts_Events.11.OPT1
+
+		set_country_flag = PLC_dealt_with_nalyvaiko_uprising
+		set_country_flag = PLC_dealt_with_nalyvaiko_uprising_peacefully
+	}
+}
+
+# Szlachta Refuses
+country_event = {
+	id = FEE_PLC_Cossack_Revolts_Events.12
+	title = FEE_PLC_Cossack_Revolts_Events.12.T
+	desc = FEE_PLC_Cossack_Revolts_Events.12.D
+	picture = SEJM_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = FEE_PLC_Cossack_Revolts_Events.12.OPT1
+		
+		hidden_effect = {
+			country_event = {
+				id = FEE_PLC_Cossack_Revolts_Events.13
+				days = 150
+				random = 30
+			}
+		}
+	}
+}
+
+# Szlachta Requests our Help
+country_event = {
+	id = FEE_PLC_Cossack_Revolts_Events.13
+	title = FEE_PLC_Cossack_Revolts_Events.13.T
+	desc = FEE_PLC_Cossack_Revolts_Events.13.D
+	picture = NOBLE_ESTATE_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = FEE_PLC_Cossack_Revolts_Events.13.OPT1
+		
+		define_general = {
+			shock = 4
+			fire = 4
+			manuever = 3
+			name = "Stanislaw Zolkiewski"
+		}
+		
+		# Mohilew
+		292 = {
+			add_devastation = 20
+			spawn_rebels = {
+				type = cossack_rebels
+				size = 3
+				win = yes
+				leader = "Severyn Nalyvaiko"
+			}
+		}
+		
+		hidden_effect = {
+			# Bratslaw
+			1943 = {
+				add_devastation = 10
+				spawn_rebels = {
+					type = cossack_rebels
+					size = 0
+					win = yes
+				}
+				kill_units = { who = controller }
+			}
+			# Bar
+			4540 = {
+				add_devastation = 10
+				spawn_rebels = {
+					type = cossack_rebels
+					size = 0
+					win = yes
+				}
+				kill_units = { who = controller }
+			}
+			# Lutsk
+			279 = {
+				add_devastation = 10
+				spawn_rebels = {
+					type = cossack_rebels
+					size = 0
+					win = yes
+				}
+				kill_units = { who = controller }
+			}
+			# Ternopil
+			281 = {
+				add_devastation = 10
+				spawn_rebels = {
+					type = cossack_rebels
+					size = 0
+					win = yes
+				}
+				kill_units = { who = controller }
+			}
+			# Kaniv
+			1944 = {
+				add_devastation = 10
+				spawn_rebels = {
+					type = cossack_rebels
+					size = 0
+					win = yes
+				}
+				kill_units = { who = controller }
+			}
+			# Slutsk
+			4545 = {
+				add_devastation = 10
+				spawn_rebels = {
+					type = cossack_rebels
+					size = 0
+					win = yes
+				}
+				kill_units = { who = controller }
+			}
+			# Bobrujsk
+			4544 = {
+				add_devastation = 10
+				spawn_rebels = {
+					type = cossack_rebels
+					size = 0
+					win = yes
+				}
+				kill_units = { who = controller }
+			}
+			
+			country_event = {
+				id = FEE_PLC_Cossack_Revolts_Events.1004
+				days = 240
+			}
+		}
+	}
+	
+	option = {
+		name = FEE_PLC_Cossack_Revolts_Events.13.OPT2
+		
+		hidden_effect = {
+			country_event = {
+				id = FEE_PLC_Cossack_Revolts_Events.14
+				days = 30
+			}
+		}
+	}
+}
+
+# End of Nalyvaiko Uprising (Peacefully)
+country_event = {
+	id = FEE_PLC_Cossack_Revolts_Events.14
+	title = FEE_PLC_Cossack_Revolts_Events.14.T
+	desc = FEE_PLC_Cossack_Revolts_Events.14.D
+	picture = FAMINE_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = FEE_PLC_Cossack_Revolts_Events.14.OPT1
+		
+		set_country_flag = PLC_dealt_with_nalyvaiko_uprising
+		set_country_flag = PLC_dealt_with_nalyvaiko_uprising_peacefully_2
+		
+		disband_rebels = cossack_rebels
+		capital_scope = {
+			spawn_rebels = {
+				type = noble_rebels
+				size = 3
+			}
+		}
+		
+		add_country_modifier = {
+			name = nalyvaiko_peace_offer
+			duration = 3650
+		}
+		
+		292 = { add_devastation = 20 }
+		1943 = { add_devastation = 10 }
+		4540 = { add_devastation = 10 }
+		279 = { add_devastation = 10 }
+		281 = { add_devastation = 10 }
+		1944 = { add_devastation = 10 }
+		4545 = { add_devastation = 10 }
+		4544 = { add_devastation = 10 }
+	}
+}
+
+# Loop to check if there's any Cossack rebels in the country.
+country_event = {
+	id = FEE_PLC_Cossack_Revolts_Events.1004
+	title = FEE_PLC_Cossack_Revolts_Events.1004.T
+	desc = FEE_PLC_Cossack_Revolts_Events.1004.D
+	picture = BATTLE_eventPicture
+
+	is_triggered_only = yes
+	hidden = yes
+	
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = { has_spawned_rebels = cossack_rebels }
+				
+				country_event = {
+					id = FEE_PLC_Cossack_Revolts_Events.1004
+					days = 120
+				}
+			}
+			else_if = {
+				limit = { NOT = { has_spawned_rebels = cossack_rebels } }
+				
+				country_event = {
+					id = FEE_PLC_Cossack_Revolts_Events.15
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = FEE_PLC_Cossack_Revolts_Events.1004.OPT1
+	}
+}
+
+# Rebels Were Forced to Retreat
+country_event = {
+	id = FEE_PLC_Cossack_Revolts_Events.15
+	title = FEE_PLC_Cossack_Revolts_Events.15.T
+	desc = FEE_PLC_Cossack_Revolts_Events.15.D
+
+	picture = BATTLE_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = FEE_PLC_Cossack_Revolts_Events.15.OPT1
+		
+		hidden_effect = {
+			4542 = {
+				spawn_rebels = {
+					type = cossack_rebels
+					size = 0
+					win = yes
+				}
+				kill_units = { who = controller }
+				
+				if = {
+					limit = {
+						NOT = {
+							OR = {
+								has_building = fort_15th
+								has_building = fort_16th
+								has_building = fort_17th
+								has_building = fort_18th
+							}
+						}
+					}
+					
+					add_building = fort_15th
+					set_province_flag = PLC_tabor_lubnie
+				}
+			}
+			
+			set_country_flag = PLC_nalyvaiko_lubnie
+			
+			country_event = {
+				id = FEE_PLC_Cossack_Revolts_Events.1005
+				days = 180
+			}
+		}
+	}
+}
+
+# Another loop to check what player had decided.
+country_event = {
+	id = FEE_PLC_Cossack_Revolts_Events.1005
+	title = FEE_PLC_Cossack_Revolts_Events.1005.T
+	desc = FEE_PLC_Cossack_Revolts_Events.1005.D
+	picture = BATTLE_eventPicture
+	hidden = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = FEE_PLC_Cossack_Revolts_Events.1005.OPT1
+	}
+	
+	immediate = {
+		# Default outcome: Player sieges down Lubnie
+		if = {
+			limit = {
+				has_country_flag = PLC_nalyvaiko_lubnie
+				4542 = {
+					NOT = {
+						controlled_by = REB
+					}
+				}
+			}
+			
+			country_event = {
+				id = FEE_PLC_Cossack_Revolts_Events.16
+			}
+			
+			if = {
+				limit = {
+					4542 = { has_province_flag = PLC_tabor_lubnie }
+				}
+				
+				4542 = {
+					remove_building = fort_15th
+					clr_province_flag = PLC_tabor_lubnie
+				}
+			}
+		}
+		else = {
+			country_event = {
+				id = FEE_PLC_Cossack_Revolts_Events.1005
+				days = 120
+			}
+		}
+	}
+}
+
+# End of Nalyvaiko Uprising (Default)
+country_event = {
+	id = FEE_PLC_Cossack_Revolts_Events.16
+	title = FEE_PLC_Cossack_Revolts_Events.16.T
+	desc = FEE_PLC_Cossack_Revolts_Events.16.D
+	picture = VILLAGE_BURNING_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = FEE_PLC_Cossack_Revolts_Events.16.OPT1
+		
+		hidden_effect = {
+			if = {
+				limit = {
+					4542 = { has_province_flag = PLC_tabor_lubnie }
+				}
+				4542 = {
+					remove_building = fort_15th
+					clr_province_flag = PLC_tabor_lubnie
+				}
+			}
+		}
+		
+		add_country_modifier = {
+			name = nalyvaiko_cossack_lands_confiscated
+			duration = 3650
+		}
+		
+		clr_country_flag = PLC_nalyvaiko_lubnie
+		set_country_flag = PLC_dealt_with_nalyvaiko_uprising_default
+	}
+}
+
+# Negotiations with Rebels â„–1
+country_event = {
+	id = FEE_PLC_Cossack_Revolts_Events.17
+	title = FEE_PLC_Cossack_Revolts_Events.17.T
+	desc = FEE_PLC_Cossack_Revolts_Events.17.D
+	picture = GENERALS_DISCUSSING_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = FEE_PLC_Cossack_Revolts_Events.17.OPT1
+		
+		hidden_effect = {
+			random_list = {
+				60 = { country_event = { id = FEE_PLC_Cossack_Revolts_Events.19 } }
+				40 = { country_event = { id = FEE_PLC_Cossack_Revolts_Events.18 } }
+			}
+		}
+	}
+}
+
+# Negotiations with Rebels (Failure)
+country_event = {
+	id = FEE_PLC_Cossack_Revolts_Events.18
+	title = FEE_PLC_Cossack_Revolts_Events.18.T
+	desc = FEE_PLC_Cossack_Revolts_Events.18.D
+	picture = GENERALS_DISCUSSING_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = FEE_PLC_Cossack_Revolts_Events.18.OPT1
+	}
+}
+
+# Negotiations with Rebels â„–2
+country_event = {
+	id = FEE_PLC_Cossack_Revolts_Events.19
+	title = FEE_PLC_Cossack_Revolts_Events.19.T
+	desc = FEE_PLC_Cossack_Revolts_Events.19.D
+	picture = GENERALS_DISCUSSING_eventPicture
+	is_triggered_only = yes
+	
+	option = {
+		name = FEE_PLC_Cossack_Revolts_Events.19.OPT1
+		
+		hidden_effect = { country_event = { id = FEE_PLC_Cossack_Revolts_Events.20 } }
+	}
+	
+	option = {
+		name = FEE_PLC_Cossack_Revolts_Events.19.OPT2
+		
+		hidden_effect = { country_event = { id = FEE_PLC_Cossack_Revolts_Events.21 } }
+	}
+}
+
+# Negotiations with Rebels (Peacefully)
+country_event = {
+	id = FEE_PLC_Cossack_Revolts_Events.20
+	title = FEE_PLC_Cossack_Revolts_Events.20.T
+	desc = FEE_PLC_Cossack_Revolts_Events.20.D
+	picture = MILITARY_CAMP_eventPicture
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			if = {
+			limit = {
+				4542 = { has_province_flag = PLC_tabor_lubnie }
+			}
+			4542 = {
+				remove_building = fort_15th
+				clr_province_flag = PLC_tabor_lubnie
+			}
+		}
+		
+		4542 = { change_controller = ROOT }
+		
+		set_country_flag = PLC_dealt_with_nalyvaiko_uprising_peacefully_3
+		}
+	}
+	
+	option = {
+		name = FEE_PLC_Cossack_Revolts_Events.20.OPT1
+		
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -10
+		}
+		add_estate_loyalty = {
+			estate = estate_cossacks
+			loyalty = 10
+		}
+		add_stability = -1
+	}
+}
+
+# Negotiations with Rebels (Bloody)
+country_event = {
+	id = FEE_PLC_Cossack_Revolts_Events.21
+	title = FEE_PLC_Cossack_Revolts_Events.21.T
+	desc = FEE_PLC_Cossack_Revolts_Events.21.D
+	picture = VILLAGE_RAIDED_eventPicture
+	is_triggered_only = yes
+	
+	immediate = {
+		if = {
+			limit = {
+				4542 = { has_province_flag = PLC_tabor_lubnie }
+			}
+			4542 = {
+				remove_building = fort_15th
+				clr_province_flag = PLC_tabor_lubnie
+			}
+		}
+		
+		4542 = { change_controller = ROOT }
+		
+		set_country_flag = PLC_dealt_with_nalyvaiko_uprising_bloody
+	}
+	
+	option = {
+		name = FEE_PLC_Cossack_Revolts_Events.21.OPT1
+		
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 10
+		}
+		add_estate_loyalty = {
+			estate = estate_cossacks
+			loyalty = -10
+		}
+		
+		add_country_modifier = {
+			name = nalyvaiko_cossack_lands_confiscated
+			duration = 3650
+		}
+	}
+}

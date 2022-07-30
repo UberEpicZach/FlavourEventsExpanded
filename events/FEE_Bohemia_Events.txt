@@ -128,7 +128,7 @@ country_event = {
 		#	set_estate_privilege = estate_noble_baron_pensions
 		#	set_estate_privilege = estate_noble_baron_courts
 		#	set_estate_privilege = estate_noble_baron_courtier
-		#	set_estate_privilege = estate_noble_baron_titles
+		#	set_estate_privilege = estate_noble_baron.Ts
 		#}
 		if = {
 			limit = {
