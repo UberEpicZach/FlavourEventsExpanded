@@ -1,7 +1,6 @@
 namespace = FEE_Charles_V_Events
 
 #Sets up CharlesV as the heir to Spain, as a Habsburg
-
 country_event = {
 	id = FEE_Charles_V_Events.1
 	title = FEE_Charles_V_Events.1.T #FEE_Charles_V_Events.T.1:0 "The Habsburg dynasty in Castille"
@@ -9,7 +8,7 @@ country_event = {
 	fire_only_once = yes
 	picture = NEW_HEIR_eventPicture
 	is_triggered_only = yes		#Triggered on monarch or heir death, whichever comes first.
-	
+
 	trigger = {
 		OR = {		#Fires for Spain or Castille
 			tag = CAS
@@ -24,7 +23,7 @@ country_event = {
 		num_of_cities = 15
 		is_subject = no
 		government = monarchy
-		
+
 		#Won't replace an existing heir if the monarch dies and leaves a regency.
 		NOT = { has_regency = yes }
 		NOT = { has_heir = yes }
@@ -38,57 +37,42 @@ country_event = {
 		#	exists = CAS
 		#	exists = SPA
 		#}
-		OR = {							#Both Spain/Castille and Austria must have rivaled France...
-			AND = {
-				OR = {
-					CAS = {
-						is_rival = FRA
-					}
-					SPA = {
-						is_rival = FRA
-					}
+		#Both Spain/Castille and Austria must have rivaled France...
+		if = {
+			limit = {
+				FRA = {
+					is_free_or_tributary_trigger = no
+					num_of_cities = 15
+					NOT = { dynasty = ROOT }
 				}
-				HAB = {
+			}
+			OR = {
+				CAS = {
+					is_rival = FRA
+				}
+				SPA = {
 					is_rival = FRA
 				}
 			}
-			FRA = {		
-				OR = {
-					is_lesser_in_union = yes	#...Unless France is the junior in a union, or is a vassal (as can happen with the England PU)
-					AND = {
-						is_subject = yes		#However, if France is a subject it must still be a sizable one.
-						num_of_cities = 15
-					}	
-				}	
+			HAB = {
+				is_rival = FRA
 			}
 		}
 		NOT = {
 			OR = {
 				is_rival = HAB
 				war_with = HAB
-				HAB = {
-					is_rival = SPA
-				}
-				AND = {
-					HAB = {
-						is_rival = CAS
-					}
-					NOT = {
-						exists = SPA
-					}
-				}
+				is_enemy = HAB
 			}
 		}
-		NOT = {
-			dynasty = FRA
-		}
 	}
-	
+
 	option = {
 		name = FEE_Charles_V_Events.1.OPT1 #FEE_Charles_V_Events.1.OPT1:0 "Interesting..."
+
 		define_heir = {
-			dynasty = "von Habsburg"
 			name = "Charles V"
+			dynasty = "von Habsburg"
 		}
 		hidden_effect = {
 			set_country_flag = FEE_Charles_V_Events_born
@@ -105,23 +89,30 @@ country_event = {
 	title = FEE_Charles_V_Events.2.T 	#FEE_Charles_V_Events.T.2:0 "Charles V Ascends to the Throne"
 	desc = FEE_Charles_V_Events.2.D 		#FEE_Charles_V_Events.D.2:0 "With his father having died in 1506, when Charles V came of age in 1515 he aquired the title of Duke of Burgundy, which brought with it rulership over the Netherlands. A year later,the death of his grandfather Maximillian I made him ruler of all the Habsburg posessions in Germany, including the Archduchy of Austria.That same year, the death of Ferdinand II left the crowns of Aragon, Castille, and Leon to his mother Joanna. With Joanna being unsound of mind, Charles was declared co-ruler of each kingdom, and assumed de facto rulership over his mother's posessions. Finally, Charles was crowned Holy Roman Empire in 1530. Taken altogether, Charles V's dominion encompassed most of Iberia, large portions of Western and Central Europe, as well as the Spanish colonies in Asia and the Americas. This arrangement however, did not sit well with France, who felt cornered by their Habsburg enemies, and were eager to reverse their fortunes..."
 	fire_only_once = yes
-	major = yes
 	picture = HRE_eventPicture
+
 	is_triggered_only = yes		#triggered on new monarch
-	
+
 	trigger = {
-		OR = {		#Fires for Spain or Castille
-			tag = CAS
-			tag = SPA
-		}
+		has_country_flag = FEE_Charles_V_Events_born
 		HAB = {		#Austria must be Habsburg
 			dynasty = "von Habsburg"
 		}
+		hre_size = 1
 		NOT = { junior_union_with = HAB }	#Won't fire if already in a union with Austria.
 		NOT = { senior_union_with = HAB }
-		has_country_flag = FEE_Charles_V_Events_born
 		NOT = { has_country_flag = FEE_Charles_V_Events_dead } #Won't fire if Chalres died as an heir
 		NOT = { has_country_flag = FEE_Charles_V_Events_ruler } 
+	}
+
+	major = yes
+	major_trigger = {
+		OR = {
+			capital_scope = {
+				superregion = europe_superregion
+			}
+			is_part_of_hre = yes
+		}
 	}
 
 	option = {
@@ -147,12 +138,12 @@ country_event = {
    			mil = 3
 			age = 0
 		}
-		
-		#tooltip = chalresv.2.OPT1
+
+		#tooltip = fee_charles_v_union_under_austria
 		#Make Spain the Emperor:
 		ROOT = {
 			capital_scope = {	#Puts Spain in the Empire
-			set_in_empire = yes
+				set_in_empire = yes
 			}
 		}
 		if = {
@@ -175,26 +166,54 @@ country_event = {
 					limit = {
 						is_subject_of_type = personal_union
 					}
-					set_country_flag = austriaspersonalunions    
+					set_country_flag = fee_charles_v_pu_austria    
 				}
 			}
 		}
-		
+
 		create_union = HAB	#Once all that silliness is done, create the PU
 		custom_tooltip = "Charles V von Habsburg will become the Holy Roman Emperor"
-		set_government_rank = 2 #Putting Spain in the HRE makes it a duke, this fixes that.
-		
+		set_government_rank_force = 2 #Putting Spain in the HRE makes it a duke, this fixes that.
+
 		#Make all countries in Germany, France, Italy afraid of Spain (for 140 years)
-		every_country ={
-			limit = {
-				capital_scope = {
-					superregion = europe_superregion
+		custom_tooltip = fee_charles_v_fear_empire_tt
+		tooltip = {
+			random_country = {
+				limit = {
+					OR = {
+						is_part_of_hre = yes
+						capital_scope = {
+							superregion = europe_superregion
+						}
+					}
+					NOT = {
+						junior_union_with = ROOT
+					}
 				}
-				NOT = {
-					junior_union_with = ROOT
+				add_opinion = {
+					who = ROOT
+					modifier = fee_charles_v_fear_of_empire
 				}
 			}
-			add_opinion = { who = ROOT modifier = fear_of_empire }
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						is_part_of_hre = yes
+						capital_scope = {
+							superregion = europe_superregion
+						}
+					}
+					NOT = {
+						junior_union_with = ROOT
+					}
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = fee_charles_v_fear_of_empire
+				}
+			}
 		}
 	}
 }
@@ -204,32 +223,51 @@ country_event = {
 	id = FEE_Charles_V_Events.3
 	title = FEE_Charles_V_Events.3.T
 	desc = FEE_Charles_V_Events.3.D
-	fire_only_once = yes
-	major = yes
 	picture = COURT_eventPicture
-	
+
 	trigger = {
-		OR = {
-			tag = CAS
-			tag = SPA
-		}
-		NOT = { has_country_flag = abdicate_option }
-		has_country_flag = FEE_Charles_V_Events_born       #Charles V has been born (to prevent misfires)
-		has_country_flag = FEE_Charles_V_Events_ruler 	   #CharlesV is the ruler
-		HAB = {		                      #Austria must still be in the PU
+		has_country_flag = FEE_Charles_V_Events_born		#Charles V has been born (to prevent misfires)
+		has_country_flag = FEE_Charles_V_Events_ruler		#CharlesV is the ruler
+		NOT = { has_country_flag = fee_charles_v_abdicate_option }
+		HAB = {								 #Austria must still be in the PU
 			junior_union_with = ROOT
 		}
 	}
-	
+
+	fire_only_once = yes
+
 	mean_time_to_happen = {
 		months = 600 #50 Years
 	}
-	
+
+	major = yes
+	major_trigger = {
+		OR = {
+			capital_scope = {
+				superregion = europe_superregion
+			}
+			is_part_of_hre = yes
+		}
+	}
+
 	#Abdicate option
 	option = {
 		name = FEE_Charles_V_Events.3.OPT1
-		custom_tooltip = FEE_Charles_V_Events.10.OPT1.tt
+		ai_chance = {
+			factor = 100	#AI has a 100 to 1 chance of choosing the abdicate option
+		}
+
+		set_government_rank = 2
+		set_country_flag = fee_charles_v_abdicate_option
+
 		break_union = HAB			#Breaks the PU with Austria
+		custom_tooltip = fee_charles_v_abdication_charles_tt
+		if = {
+			limit = {
+				has_ruler = "Charles V"
+			}
+			kill_ruler = yes
+		}
 		hidden_effect = {
 			ROOT = {
 				if = {
@@ -239,7 +277,7 @@ country_event = {
 					every_subject_country = {
 						limit = {
 							is_subject_of_type = personal_union
-							has_country_flag = austriaspersonalunions
+							has_country_flag = fee_charles_v_pu_austria
 						}
 						HAB = {
 							create_union = PREV
@@ -309,59 +347,54 @@ country_event = {
 			}
 		}
 
-		if = {
-			limit = {
-				has_ruler = "Charles V"
-			}
-			kill_ruler = yes
-		}
-		
 		# #Makes Austria the Emperor
 		# HAB = {
 		# 	set_emperor = yes
 		# }
-		
-		set_country_flag = abdicate_option
-		
+
 		#Europe is no longer afraid
-		every_country = {
-			limit = {
-				has_opinion_modifier = {
-					modifier = fear_of_empire
+		custom_tooltip = fee_charles_v_europe_no_longer_afraid_tt
+		hidden_effect = {
+			every_country = {
+				limit = {
+					has_opinion_modifier = {
+						modifier = fee_charles_v_fear_of_empire
+						who = ROOT
+					}
+				}
+				remove_opinion = {
 					who = ROOT
+					modifier = fee_charles_v_fear_of_empire
 				}
 			}
-			remove_opinion = { who = ROOT modifier = fear_of_empire }
-		}
-		ROOT = {
-			set_government_rank = 2
-		}
-		ai_chance = {
-			factor = 100	#AI has a 100 to 1 chance of choosing the abdicate option
 		}
 	}
-	
+
 	#Don't Abdicate option (mostly just for the player). Will make things even harder for Charles.
 	option = {
 		name = FEE_Charles_V_Events.3.OPT2
-		set_country_flag = abdicate_option
-		add_ruler_modifier = {
-			name = charles_is_weak
+
+		ai_chance = {
+			factor = 1	#AI has a 100 to 1 chance of choosing the abdicate option
 		}
-		HAB = {
-			 add_ruler_modifier = {
-				name = charles_is_weak_c
-			}
+
+		set_country_flag = fee_charles_v_abdicate_option
+		add_ruler_modifier = {
+			name = fee_charles_v_charles_is_weak
 		}
 		add_stability = -2				#The nation will get testy
-		every_core_province = {			#The Lowcountries will be problematic
+		low_countries_region = {			#The Lowcountries will be problematic
 			limit = {
-				region = low_countries_region
+				owned_by = ROOT
+				is_core = ROOT
 			}
 			add_unrest = 7
 		}
 
 		HAB = {
+			add_ruler_modifier = {
+				name = fee_charles_v_charles_is_weak_c
+			}
 			capital_scope = {
 				spawn_rebels = {
 					type = pretender_rebels
@@ -391,46 +424,40 @@ country_event = {
 			}
 		}
 
-		ROOT = {
-			if = {
-				limit = {
-					has_subject_of_type = personal_union
-				}
+		if = {
+			limit = {
 				BOH = {
-					if = {
-						limit = {
-							is_subject_of_type = personal_union
-							has_country_flag = austriaspersonalunions
-						}
-						capital_scope = {
-							spawn_rebels = {
-								type = pretender_rebels
-								size = 2
-								leader = "Ferdinand von Habsburg"
-							}
-						}
-					}
+					is_subject_of_type = personal_union
+					has_country_flag = fee_charles_v_pu_austria
 				}
-				HUN = {
-					if = {
-						limit = {
-							is_subject_of_type = personal_union
-							has_country_flag = austriaspersonalunions
-						}
-						capital_scope = {
-							spawn_rebels = {
-								type = pretender_rebels
-								size = 1
-								leader = "Ferdinand von Habsburg"
-							}
-						}
+			}
+			BOH = {
+				capital_scope = {
+					spawn_rebels = {
+						type = pretender_rebels
+						size = 2
+						leader = "Ferdinand von Habsburg"
 					}
 				}
 			}
 		}
 
-		ai_chance = {
-			factor = 1	#AI has a 100 to 1 chance of choosing the abdicate option
+		if = {
+			limit = {
+				HUN = {
+					is_subject_of_type = personal_union
+					has_country_flag = fee_charles_v_pu_austria
+				}
+			}
+			HUN = {
+				capital_scope = {
+					spawn_rebels = {
+						type = pretender_rebels
+						size = 2
+						leader = "Ferdinand von Habsburg"
+					}
+				}
+			}
 		}
 	}
 }
@@ -440,10 +467,11 @@ country_event = {
 	id = FEE_Charles_V_Events.4
 	title = FEE_Charles_V_Events.4.T 
 	desc = FEE_Charles_V_Events.4.D #FEE_Charles_V_Events.D.1:0 
-	fire_only_once = yes
 	picture = NEW_HEIR_eventPicture
+
 	is_triggered_only = yes #Triggered by heir death
-	
+	fire_only_once = yes
+
 	trigger = {
 		OR = {		#Fires for Spain or Castille
 			tag = CAS
@@ -454,11 +482,18 @@ country_event = {
 			has_country_flag = FEE_Charles_V_Events_ruler	#But he isn't King yet
 		}
 	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = FEE_Charles_V_Events_dead	#Prevents chain from continuing
+		}
+	}
+
 	option = {
 		name = FEE_Charles_V_Events.4.OPT1
-		set_country_flag = FEE_Charles_V_Events_dead	#Prevents chain from continuing
 	}
 }
+
 ###################################################
 #Test events for Emperor-Making
 ####################################################
@@ -574,30 +609,46 @@ country_event = {
 	id = FEE_Charles_V_Events.10
 	title = FEE_Charles_V_Events.10.T
 	desc = FEE_Charles_V_Events.10.D
-	fire_only_once = yes
 	picture = COURT_eventPicture
-	major = yes
-	is_triggered_only = yes	#Fires on monarch death
-	
+
 	trigger = {
-		OR = {
-			tag = CAS
-			tag = SPA
-		}
-		NOT = { has_country_flag = abdicate_option }
-		has_country_flag = FEE_Charles_V_Events_born       #Charles V has been born (to prevent misfires)
-		has_country_flag = FEE_Charles_V_Events_ruler 	   #CharlesV is the ruler
-		HAB = {		                      #Austria must still be in the PU
+		has_country_flag = FEE_Charles_V_Events_born		#Charles V has been born (to prevent misfires)
+		has_country_flag = FEE_Charles_V_Events_ruler		#CharlesV is the ruler
+		NOT = { has_country_flag = fee_charles_v_abdicate_option }
+		HAB = {								 #Austria must still be in the PU
 			junior_union_with = ROOT
 		}
 	}
-	
+
+	fire_only_once = yes
+	is_triggered_only = yes	#Fires on monarch death
+
+	major = yes
+	major_trigger = {
+		OR = {
+			capital_scope = {
+				superregion = europe_superregion
+			}
+			is_part_of_hre = yes
+		}
+	}
+
 	#Abdicate option
 	option = {
 		name = FEE_Charles_V_Events.10.OPT1
+		ai_chance = {
+			factor = 100	#AI has a 100 to 1 chance of choosing the abdicate option
+		}
+
+		if = {
+			limit = {
+				has_ruler = "Charles V"
+			}
+			kill_ruler = yes
+		}
 		break_union = HAB			#Breaks the PU with Austria
-		
-		custom_tooltip = FEE_Charles_V_Events.10.OPT1.tt
+		custom_tooltip = fee_charles_v_abdication_charles_tt
+
 		hidden_effect = {
 			ROOT = {
 				if = {
@@ -607,7 +658,7 @@ country_event = {
 					every_subject_country = {
 						limit = {
 							is_subject_of_type = personal_union
-							has_country_flag = austriaspersonalunions
+							has_country_flag = fee_charles_v_pu_austria
 						}
 						HAB = {
 							create_union = PREV
@@ -615,7 +666,6 @@ country_event = {
 					}
 				}
 			}
-	
 			HAB = {					#Cedes the Austian Netherlands to Spain/Castille
 				every_core_province = {
 					limit = {
@@ -658,58 +708,74 @@ country_event = {
 					remove_core = ROOT
 				}
 			}
-			every_core_province = {		#Any provinces outside of Germany owned by Spain will be removed from the Empire. This should take Spain out of the Empire for good.
+			#Any provinces outside of Germany owned by Spain will be removed from the Empire. This should take Spain out of the Empire for good.
+			north_german_region = {
 				limit = {
-					NOT = {
-						OR = {
-							region = north_german_region
-							region = south_german_region
-							region = low_countries_region
-							region = france_region
-						}
-					}
-					is_part_of_hre = yes 
+					is_part_of_hre = yes
+					is_core = ROOT
+					owned_by = ROOT
+				}
+				set_in_empire = no
+			}
+			south_german_region = {
+				limit = {
+					is_part_of_hre = yes
+					is_core = ROOT
+					owned_by = ROOT
+				}
+				set_in_empire = no
+			}
+			low_countries_region = {
+				limit = {
+					is_part_of_hre = yes
+					is_core = ROOT
+					owned_by = ROOT
+				}
+				set_in_empire = no
+			}
+			france_region = {
+				limit = {
+					is_part_of_hre = yes
+					is_core = ROOT
+					owned_by = ROOT
 				}
 				set_in_empire = no
 			}
 		}
-		
-		if = {
-			limit = {
-				has_ruler = "Charles V"
-			}
-			kill_ruler = yes
-		}
-		
+
 		# #Makes Austria the Emperor
 		# HAB = {
 		# 	set_emperor = yes
 		# }
-		
-		set_country_flag = abdicate_option
-		
+
+		set_country_flag = fee_charles_v_abdicate_option
+
 		#Europe is no longer afraid
-		every_country ={
-			limit = {
-				has_opinion_modifier = {
-					modifier = fear_of_empire
+		custom_tooltip = fee_charles_v_europe_no_longer_afraid_tt
+		hidden_effect = {
+			every_country = {
+				limit = {
+					has_opinion_modifier = {
+						modifier = fee_charles_v_fear_of_empire
+						who = ROOT
+					}
+				}
+				remove_opinion = {
 					who = ROOT
+					modifier = fee_charles_v_fear_of_empire
 				}
 			}
-			remove_opinion = { who = ROOT modifier = fear_of_empire }
-		}
-		ROOT = {
-			set_government_rank = 2
-		}
-		ai_chance = {
-			factor = 100	#AI has a 100 to 1 chance of choosing the abdicate option
 		}
 	}
-	
+
 	#Don't Abdicate option (mostly just for the player)
 	option = {
 		name = FEE_Charles_V_Events.10.OPT2
-		set_country_flag = abdicate_option
+		ai_chance = {
+			factor = 1	#AI has a 100 to 1 chance of choosing the abdicate option
+		}
+
+		set_country_flag = fee_charles_v_abdicate_option
 		HAB = {
 			capital_scope = {
 				spawn_rebels = {
@@ -766,65 +832,62 @@ country_event = {
 				}
 			}
 
-			ROOT = {
-				if = {
-					limit = {
-						has_subject_of_type = personal_union
-					}
+			if = {
+				limit = {
 					BOH = {
-						if = {
-							limit = {
-								is_subject_of_type = personal_union
-								has_country_flag = austriaspersonalunions
-							}
-							capital_scope = {
-								spawn_rebels = {
-									type = pretender_rebels
-									size = 2
-									leader = "Ferdinand von Habsburg"
-								}
-							}
+						is_subject_of_type = personal_union
+						has_country_flag = fee_charles_v_pu_austria
+					}
+				}
+				BOH = {
+					capital_scope = {
+						spawn_rebels = {
+							type = pretender_rebels
+							size = 2
+							leader = "Ferdinand von Habsburg"
 						}
 					}
+				}
+			}
+	
+			if = {
+				limit = {
 					HUN = {
-						if = {
-							limit = {
-								is_subject_of_type = personal_union
-								has_country_flag = austriaspersonalunions
-							}
-							capital_scope = {
-								spawn_rebels = {
-									type = pretender_rebels
-									size = 1
-									leader = "Ferdinand von Habsburg"
-								}
-							}
+						is_subject_of_type = personal_union
+						has_country_flag = fee_charles_v_pu_austria
+					}
+				}
+				HUN = {
+					capital_scope = {
+						spawn_rebels = {
+							type = pretender_rebels
+							size = 2
+							leader = "Ferdinand von Habsburg"
 						}
 					}
 				}
 			}
 		}
-		ai_chance = {
-			factor = 1	#AI has a 100 to 1 chance of choosing the abdicate option
-		}
 	}
 }
 
+#The Habsburg dynasty in Iberia
 country_event = {
-	id = FEE_Charles_V_Events.1111
-	title = FEE_Charles_V_Events.1111.T #FEE_Charles_V_Events.T.1:0 "The Habsburg dynasty in Castille"
-	desc = FEE_Charles_V_Events.1111.D #FEE_Charles_V_Events.D.1:0 "The son of Maximillian I of Habsburg and Mary of Burgundy, Phillip I would succeed in winning the crown of Castille for the Habsburg dynasty. Already the ruler of the Austrian lowlands through his mother, in 1506 Phillip organized a coup and overthrew the acting king of Spain, Ferdinand II. Though he died mere months later, Philip's legacy would live on through his son Charles V, who would come to rule over one of the largest empires in history..."
-	fire_only_once = yes
+	id = FEE_Charles_V_Events.11
+	title = FEE_Charles_V_Events.11.T #FEE_Charles_V_Events.T.1:0 "The Habsburg dynasty in Iberia"
+	desc = FEE_Charles_V_Events.11.D #FEE_Charles_V_Events.D.1:0 "The son of Maximillian I of Habsburg and Mary of Burgundy, Phillip I would succeed in winning the crown of Castille for the Habsburg dynasty. Already the ruler of the Austrian lowlands through his mother, in 1506 Phillip organized a coup and overthrew the acting king of Spain, Ferdinand II. Though he died mere months later, Philip's legacy would live on through his son Charles V, who would come to rule over one of the largest empires in history..."
 	picture = NEW_HEIR_eventPicture
-	is_triggered_only = yes		#Triggered on monarch or heir death, whichever comes first.
-	
+
 	trigger = {
 		has_global_flag = burgundian_succession_crisis
 	}
-	
+
+	fire_only_once = yes
+	is_triggered_only = yes		#Triggered on monarch or heir death, whichever comes first.
+
 	option = {
-		name = FEE_Charles_V_Events.1.OPT1 #FEE_Charles_V_Events.1.OPT1:0 "Interesting..."
-		
+		name = FEE_Charles_V_Events.11.OPT1 #FEE_Charles_V_Events.1.OPT1:0 "Interesting..."
+
 		ROOT = {
 			capital_scope = {	#Puts Spain in the Empire
 				set_in_empire = yes
