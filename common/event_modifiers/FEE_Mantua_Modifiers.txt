@@ -1,17 +1,19 @@
 fee_mantua_sant_andrea = {
 	tolerance_own = 1
-	local_tax_modifier = 0.15
+	local_tax_modifier = 0.33
 }
 fee_mantua_castello_san_giorgio = {
 	local_defensiveness = 0.15
 	province_trade_power_value = 5
+	local_manpower_modifier = 0.15
 }
 fee_mantua_palazzo_ducale = {
-	nobles_loyalty_modifier = 0.10
-	local_development_cost = -0.05
+	all_estate_loyalty_equilibrium = 0.05
+	local_development_cost = -0.10
 }
 fee_mantua_celeste_galleria = {
 	tax_income = 12
+	local_institution_spread = 0.15
 }
 fee_mantua_condotte_militari = {
 	mercenary_discipline = 0.05

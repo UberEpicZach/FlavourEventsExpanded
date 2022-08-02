@@ -11,12 +11,9 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = VEN
-			AND = {
-				was_tag = VEN
-				tag = ITA
-			}
+			was_tag = VEN
 		}
-		is_year = 1453
+		NOT = { is_year = 1571 }
 		OR = {
 			NOT = { exists = BYZ }
 			151 = {
@@ -76,10 +73,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = VEN
-			AND = {
-				was_tag = VEN
-				tag = ITA
-			}
+			was_tag = VEN
 		}
 		is_year = 1545
 		owns_core_province = 112
@@ -111,10 +105,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = VEN
-			AND = {
-				was_tag = VEN
-				tag = ITA
-			}
+			was_tag = VEN
 		}
 		is_year = 1453
 		owns_core_province = 112
@@ -176,10 +167,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = VEN
-			AND = {
-				was_tag = VEN
-				tag = ITA
-			}
+			was_tag = VEN
 		}
 		is_year = 1500
 		navy_tradition = 50
@@ -210,10 +198,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = VEN
-			AND = {
-				was_tag = VEN
-				tag = ITA
-			}
+			was_tag = VEN
 		}
 		is_year = 1453
 		owns_core_province = 112
@@ -262,12 +247,10 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = VEN
-			AND = {
-				was_tag = VEN
-				tag = ITA
-			}
+			was_tag = VEN
 		}
 		is_year = 1473
+		NOT = { is_year = 1535 }
 		owns_core_province = 112
 		112 = {
 			OR = {
@@ -324,10 +307,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = VEN
-			AND = {
-				was_tag = VEN
-				tag = ITA
-			}
+			was_tag = VEN
 		}
 		is_year = 1535
 		owns_core_province = 112
@@ -386,10 +366,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = VEN
-			AND = {
-				was_tag = VEN
-				tag = ITA
-			}
+			was_tag = VEN
 		}
 		is_year = 1566
 		owns_core_province = 112
@@ -440,10 +417,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = VEN
-			AND = {
-				was_tag = VEN
-				tag = ITA
-			}
+			was_tag = VEN
 		}
 		is_year = 1550
 		any_owned_province = {
@@ -507,12 +481,8 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = VEN
-			AND = {
-				was_tag = VEN
-				tag = ITA
-			}
+			was_tag = VEN
 		}
-		is_year = 1453
 		151 = { owned_by = TUR }
 	}
 
@@ -619,10 +589,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = VEN
-			AND = {
-				was_tag = VEN
-				tag = ITA
-			}
+			was_tag = VEN
 		}
 		is_year = 1447
 	}
@@ -651,6 +618,7 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
 		is_year = 1509
+		NOT = { is_year = 1516 }
 		owns_core_province = 112
 	}
 
@@ -693,6 +661,7 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
 		is_year = 1516
+		NOT = { is_year = 1541 }
 		owns_core_province = 112
 		112 = { has_province_modifier = ven_jew_ghetto }
 	}
