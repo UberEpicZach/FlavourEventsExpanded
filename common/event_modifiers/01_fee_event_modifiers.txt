@@ -305,65 +305,6 @@ fee_aluma_reforms = {
 fee_general_ture = {
 }
 
-#Tuscany is either tolerant or not
-fee_tuscan_toleration = {
-	global_unrest = -1
-	idea_cost = -0.1
-}
-
-fee_tuscan_intoleration = {
-	global_missionary_strength = 0.02
-	legitimacy = 1
-}
-
-#Emperor has reacted to the elevation of Tuscany
-fee_grand_duchy_reaction = {
-}
-
-#Tuscany Develops Toll Roads
-fee_tuscan_toll_roads = {
-	local_tax_modifier = 0.1
-}
-
-#Tuscan Duke has made a choice about their finances
-fee_TUS_duke_treasury = {
-	prestige_decay = -0.01
-	development_cost = -0.05
-}
-
-fee_TUS_state_treasury = {
-	legitimacy = 1
-	global_tax_modifier = 0.05
-}
-
-#Accademia del Cimento
-fee_accademia_cimento = {
-	idea_cost = -0.1
-}
-
-fee_institution_cimento = {
-	technology_cost = -0.1
-}
-
-#Puritan Tuscany
-fee_puritan_tuscany = {
-	global_unrest = 2
-	global_tax_modifier = 0.05
-}
-
-#Peter Leopold's Reforms in Tuscany
-fee_tuscan_reforms = {
-	global_unrest = 1
-	global_tax_modifier = 0.1
-	adm_tech_cost_modifier = -0.05
-	global_autonomy = -0.02
-}
-
-#Medici Oriental Press
-fee_oriental_press = {
-	idea_cost = -0.05
-}
-
 #Treaty of Leipzig
 fee_treaty_of_leipzig = {
 	legitimacy = 0.5
