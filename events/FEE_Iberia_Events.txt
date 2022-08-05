@@ -1791,7 +1791,7 @@ country_event = {
 	}
 }
 
-#
+# Jesuit Plot Uncovered
 country_event = {
 	id = FEE_Iberia_Events.18
 	title = FEE_Iberia_Events.18.T
@@ -1931,5 +1931,46 @@ country_event = {
 				loyalty = 10
 			}
 		}
+	}
+}
+
+# Pedro Alvarez de Toledo
+country_event = {
+	id = FEE_Iberia_Events.20
+	title = FEE_Iberia_Events.20.T
+	desc = FEE_Iberia_Events.20.D
+	picture = ADVISOR_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = CAS
+			tag = ARA
+			tag = SPA
+		}
+		owns_core_province = 121
+		is_year = 1520
+		NOT = { is_year = 1560 }
+	}
+
+	mean_time_to_happen = {
+		months = 360
+	}
+
+	# His work in naples makes the crown proud.
+	option = {
+		name = FEE_Iberia_Events.20.OPT1
+
+		121 = { add_base_tax = 1 }
+		121 = { add_base_production = 1 }
+	}
+
+	# His talent should be used in other parts of our country.
+	option = {
+		name = FEE_Iberia_Events.20.OPT2
+
+		add_adm_power = 50
+		add_dip_power = 25
 	}
 }

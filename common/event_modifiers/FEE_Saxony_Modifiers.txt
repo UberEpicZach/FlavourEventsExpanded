@@ -1,0 +1,27 @@
+#Treaty of Leipzig
+fee_sax_treaty_of_leipzig = {
+	legitimacy = 0.5
+	diplomatic_upkeep = 1
+	diplomatic_reputation = 1
+}
+#University of Wittenberg
+fee_sax_university_wittenberg_ideas = {
+	idea_cost = -0.1
+}
+fee_sax_university_wittenberg_tech = {
+	technology_cost = -0.05
+}
+#Saxony hides reformer
+fee_sax_reformer_hiding = {
+	global_heretic_missionary_strength = 0.01
+	missionaries = 1
+}
+#Saxony has transferred religious responsibility to the privy council
+fee_sax_transfered_religious_responsibility = {
+	tolerance_own = 1
+}
+fee_sax_retained_religious_control = {
+	tolerance_heathen = 2
+	global_unrest = 2
+	global_tax_modifier = 0.1
+}

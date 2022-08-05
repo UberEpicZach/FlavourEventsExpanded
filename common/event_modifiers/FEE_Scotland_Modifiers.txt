@@ -154,3 +154,18 @@ FEE_INVADE_ANYWAYS = {
 FEE_Get_Fucked_English = {
 	local_unrest = 0.5
 }
+
+#Scotland's education act
+fee_sco_education_act = {
+	global_unrest = -1
+	global_autonomy = -0.05
+}
+#Anti-French sentiment in Scotland
+fee_sco_supression_anti_french_sentiment = {
+	global_unrest = 3
+}
+
+#Claim of rights
+fee_sco_claim_rights_supressed = {
+	global_unrest = 2
+}

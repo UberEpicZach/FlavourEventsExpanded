@@ -39,3 +39,15 @@ FEE_Scotland_innocent_clansmen_massacred = {
 	years = 5
 	yearly_decay = 2
 }
+
+# Scotland and France start arguing over religion
+fee_sco_scottish_anti_french_sentiment = {
+	opinion = -40
+	yearly_decay = 2
+}
+
+# Overlord rejects Scotland's claim of rights
+fee_sco_rejected_claim_rights = {
+	opinion = -50
+	yearly_decay = 1
+}

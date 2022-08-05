@@ -40,40 +40,6 @@ fee_hanseatic_legion_timer = {
 	manpower_recovery_speed = 0.1
 }
 
-#Scotland's education act
-fee_education_act = {
-	global_unrest = -1
-	global_autonomy = -0.05
-}
-
-#Anti-French sentiment in Scotland
-fee_scottish_french_supression = {
-	global_unrest = 3
-}
-
-#Claim of Rights
-fee_claim_suppressed = {
-	global_unrest = 5
-}
-
-
-#Savoy chooses between cheaper mercenaries or more expensive ones, but better army.
-fee_savoy_army = {
-	army_tradition_decay = -0.01
-	land_maintenance_modifier = -0.1
-	mercenary_cost = 0.2
-}
-
-fee_savoy_mercenaries = {
-	merc_maintenance_modifier = -0.1
-	mercenary_manpower= 0.1
-	mercenary_cost = -0.1
-}
-
-#Claim of rights
-fee_claim_supressed = {
-	global_unrest = 2
-}
 
 #Timer used in MOL/WAL-choice
 made_a_choice = {
@@ -91,7 +57,6 @@ fee_MOL_overlord = {
 
 fee_MOL_conquered = {
 }
-### Renaissance modifiers ###
 
 
 #Sebastianism in Portugal
@@ -108,43 +73,6 @@ fee_university_wurzburg = {
 #Toob Menadir for Ajuuraan or Mogadishu
 fee_toob_menadir = {
 	local_production_efficiency = 0.2
-}
-
-#Songhai has General Ture
-fee_general_ture = {
-}
-
-#Treaty of Leipzig
-fee_treaty_of_leipzig = {
-	legitimacy = 0.5
-	diplomatic_upkeep = 1
-	diplomatic_reputation = 1
-}
-
-#University of Wittenberg
-fee_wittenberg_ideas = {
-	idea_cost = -0.1
-}
-
-fee_wittenberg_tech = {
-	technology_cost = -0.05
-}
-
-#Saxony hides reformer
-fee_hidden_reformer = {
-	global_heretic_missionary_strength = 0.01
-	missionaries = 1
-}
-
-#Saxony has transferred religious responsibility to the privy council
-fee_religion_to_privy = {
-	tolerance_own = 1
-}
-
-fee_saxon_religious_control = {
-	tolerance_heathen = 2
-	global_unrest = 2
-	global_tax_modifier = 0.1
 }
 
 # Barbary Corsairs Event Chain

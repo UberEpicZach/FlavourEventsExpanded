@@ -1,0 +1,138 @@
+namespace = FEE_Songhai_Events
+
+#General Muhammad Ture
+country_event = {
+	id = FEE_Songhai_Events.1
+	title = FEE_Songhai_Events.1.T
+	desc = FEE_Songhai_Events.1.D
+	picture = BATTLE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SON
+		is_year = 1480
+		NOT = { is_year = 1490 }
+	}
+
+	mean_time_to_happen = {
+		months = 100
+	}
+
+	option = {
+		name = FEE_Songhai_Events.1.OPT1
+
+		define_general = {
+			name = "Muhammad Askia"
+			fire = 3
+			shock = 5
+			manuever = 4
+			siege = 2
+		}
+		hidden_effect = {
+			set_country_flag = fee_son_general_ture
+		}
+	}
+}
+
+#The Heretic Heir
+country_event = {
+	id = FEE_Songhai_Events.2
+	title = FEE_Songhai_Events.2.T
+	desc = FEE_Songhai_Events.2.D
+	picture = RELIGIOUS_CONVERSION_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SON
+		NOT = { is_year = 1510 }
+		is_year = 1485
+		religion = sunni
+		has_leader = "Muhammad Askia"
+		is_subject = no
+	}
+
+	mean_time_to_happen = {
+		months = 360
+		modifier = {
+			factor = 0.6
+			NOT = {
+				had_country_flag = {
+					flag = fee_son_general_ture
+					days = 7200
+				}
+			}
+		}
+		modifier = {
+			factor = 1.3
+			ADM = 5
+		}
+		modifier = {
+			factor = 1.2
+			DIP = 5
+		}
+		modifier = {
+			factor = 1.2
+			MIL = 5
+		}
+	}
+
+	immediate = {
+		hidden_effect = { set_country_flag = askia_dynasty_mission_flag }
+	}
+
+	option = {
+		name = FEE_Songhai_Events.2.OPT1
+		ai_chance = {
+			factor = 85
+		}
+
+		change_religious_influence_equivalent_fee = { add = 15 }
+		add_stability = -1
+		define_leader_to_ruler = {
+			type = general
+			name = "Askia Muhammad"
+			adm = 6
+			dip = 5
+			mil = 4
+			claim = 60
+			fixed = yes
+		}
+		kill_heir = {}
+		random_owned_province = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 2
+				leader = "Baru Sonni"
+			}
+		}
+		random_owned_province = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 1
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Songhai_Events.2.OPT2
+		ai_chance = {
+			factor = 15
+		}
+
+		add_stability = -2
+		kill_ruler = yes
+		if = {
+			limit = {
+				has_heir = no
+			}
+			define_ruler = {
+				name = "Baru"
+				dynasty = "Sonni"
+				age = 15
+			}
+		}
+		change_religion = animism
+	}
+}

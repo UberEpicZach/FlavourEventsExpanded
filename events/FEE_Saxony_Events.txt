@@ -1,0 +1,593 @@
+namespace = FEE_Saxony_Events
+
+#Treaty of Leipzig
+country_event = {
+	id = FEE_Saxony_Events.1
+	title = FEE_Saxony_Events.1.T
+	desc = FEE_Saxony_Events.1.D
+	picture = DIPLOMACY_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SAX
+		num_of_cities = 6
+		is_year = 1480
+		NOT = { is_year = 1500 }
+		NOT = { exists = THU }
+		is_free_or_tributary_trigger = yes
+		owns = 63
+		owns = 2965
+		owns = 59
+		dynasty = "von Wettin"
+		government = monarchy
+	}
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	option = {
+		name = FEE_Saxony_Events.1.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_country_modifier = {
+			name = fee_sax_treaty_of_leipzig
+			duration = 36500
+		}
+		63 = { add_core = THU }
+		2965 = { add_core = THU }
+		59 = { add_core = THU }
+		release = THU
+		THU = {
+			add_country_modifier = {
+				name = fee_sax_treaty_of_leipzig
+				duration = 36500
+			}
+			hidden_effect = {
+				change_primary_culture = ROOT
+				change_religion = ROOT
+			}
+		}
+		if = {
+			limit = {
+				valid_for_personal_unions_trigger = yes
+				THU = { valid_for_personal_unions_trigger = yes }
+			}
+			create_union = THU
+		}
+	}
+
+	option = {
+		name = FEE_Saxony_Events.1.OPT2
+		ai_chance = {
+			factor = 25
+		}
+
+		add_stability = -1
+		add_prestige = 10
+	}
+}
+
+#Rivalry with the Hohenzollerns
+country_event = {
+	id = FEE_Saxony_Events.2
+	title = FEE_Saxony_Events.2.T
+	desc = FEE_Saxony_Events.2.D
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SAX
+		BRA = { num_of_cities = 4 }
+		num_of_cities = BRA
+		is_free_or_tributary_trigger = yes
+		BRA = { is_free_or_tributary_trigger = yes }
+		NOT = {
+			has_opinion = {
+				who = BRA
+				value = 50
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 240
+	}
+
+	option = {
+		name = FEE_Saxony_Events.2.OPT1
+
+		reverse_add_opinion = {
+			who = BRA
+			modifier = fee_sax_dynastic_rivalries
+		}
+	}
+
+	option = {
+		name = FEE_Saxony_Events.2.OPT2
+
+		reverse_add_opinion = {
+			who = BRA
+			modifier = fee_sax_sought_reconcilation
+		}
+	}
+}
+
+#University of Wittenberg
+country_event = {
+	id = FEE_Saxony_Events.3
+	title = FEE_Saxony_Events.3.T
+	desc = FEE_Saxony_Events.3.D
+	picture = GREAT_BUILDING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SAX
+		NOT = { is_religion_enabled = protestant }
+		is_year = 1480
+		owns = 59
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = FEE_Saxony_Events.3.OPT1
+
+		add_reform_desire = 0.01
+		add_country_modifier = {
+			name = fee_sax_university_wittenberg_ideas
+			duration = 7300
+		}
+	}
+
+	option = {
+		name = FEE_Saxony_Events.3.OPT2
+
+		add_reform_desire = -0.01
+		add_country_modifier = {
+			name = fee_sax_university_wittenberg_tech
+			duration = 7300
+		}
+	}
+}
+
+# Religious Reformer Seeks Protection
+country_event = {
+	id = FEE_Saxony_Events.4
+	title = FEE_Saxony_Events.4.T
+	desc = FEE_Saxony_Events.4.D
+	picture = BORDER_TENSION_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SAX
+		reform_desire = 0.95
+		hre_size = 1
+		is_emperor = no
+		NOT = { is_year = 1525 }
+	}
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	option = {
+		name = FEE_Saxony_Events.4.OPT1
+		ai_chance = {
+			factor = 90
+		}
+
+		add_adm_power = 50
+		add_country_modifier = {
+			name = fee_sax_reformer_hiding
+			duration = 3650
+		}
+		add_opinion = {
+			who = emperor
+			modifier = fee_sax_hid_religious_reformer
+		}
+		reverse_add_opinion = {
+			who = emperor
+			modifier = fee_sax_hid_religious_reformer
+		}
+		if = {
+			limit = {
+				exists = PAP
+			}
+			add_opinion = {
+				who = PAP
+				modifier = fee_sax_hid_religious_reformer
+			}
+			reverse_add_opinion = {
+				who = PAP
+				modifier = fee_sax_hid_religious_reformer
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Saxony_Events.4.OPT2
+		ai_chance = {
+			factor = 10
+		}
+
+		add_dip_power = 25
+
+		random_owned_province = {
+			limit = {
+				is_part_of_hre = yes
+				is_reformation_center = no
+				OR = {
+					religion = protestant
+					religion = reformed
+				}
+			}
+			change_religion = catholic
+		}
+
+		add_opinion = {
+			who = emperor
+			modifier = fee_sax_gave_up_reformer
+		}
+		reverse_add_opinion = {
+			who = emperor
+			modifier = fee_sax_gave_up_reformer
+		}
+		if = {
+			limit = {
+				exists = PAP
+			}
+			add_opinion = {
+				who = PAP
+				modifier = fee_sax_gave_up_reformer
+			}
+			reverse_add_opinion = {
+				who = PAP
+				modifier = fee_sax_gave_up_reformer
+			}
+		}
+	}
+}
+
+# Crypto-Calvinism
+country_event = {
+	id = FEE_Saxony_Events.5
+	title = FEE_Saxony_Events.5.T
+	desc = FEE_Saxony_Events.5.D
+	picture = ACCUSATION_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SAX
+		religion = protestant
+		is_year = 1530
+		NOT = { is_year = 1560 }
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = FEE_Saxony_Events.5.OPT1
+
+		add_stability_or_adm_power = yes
+		if = {
+			limit = {
+				is_religion_enabled = reformed
+			}
+			random = {
+				chance = 50
+				random_owned_province = {
+					reformed_rebels = 1
+				}
+			}
+		}
+		change_religious_influence_equivalent_fee = { add = 25 }
+		add_adm_power = -15
+	}
+
+	option = {
+		name = FEE_Saxony_Events.5.OPT2
+
+		if = {
+			limit = {
+				is_religion_enabled = reformed
+			}
+			random_owned_province = {
+				limit = {
+					is_capital = no
+				}
+				change_religion = reformed
+				add_province_modifier = {
+					name = religious_zeal_at_conv
+					duration = 3650
+				}
+			}
+		}
+		add_adm_power = 30
+		change_religious_influence_equivalent_fee = { remove = 50 }
+	}
+}
+
+#Head of the Corpus Evangelicorum
+country_event = {
+	id = FEE_Saxony_Events.6
+	title = FEE_Saxony_Events.6.T
+	desc = FEE_Saxony_Events.6.D
+	picture = RELIGION_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SAX
+		hre_religion_treaty = yes
+		is_year = 1630
+		NOT = { is_year = 1690 }
+		religion = protestant
+		num_of_cities = 4
+	}
+
+	mean_time_to_happen = {
+		months = 360
+	}
+
+	option = {
+		name = FEE_Saxony_Events.6.OPT1
+
+		add_prestige = 15
+		add_stability_or_adm_power = yes
+	}
+}
+
+#Transfer Religious Responsibility to the Privy Council
+country_event = {
+	id = FEE_Saxony_Events.7
+	title = FEE_Saxony_Events.7.T
+	desc = FEE_Saxony_Events.7.D
+	picture = PRAYING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SAX
+		is_year = 1720
+		NOT = { is_year = 1760 }
+		any_country = {
+			is_subject_of = ROOT
+			religion = catholic
+		}
+		NOT = { months_of_ruling = 12 }
+		OR = {
+			religion = protestant
+			religion = reformed
+		}
+		NOT = { has_idea_group = humanist_ideas }
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Saxony_Events.7.OPT1
+		ai_chance = {
+			factor = 80
+		}
+
+		add_country_modifier = {
+			name = fee_sax_transfered_religious_responsibility
+			duration = -1
+		}
+	}
+
+	option = {
+		name = FEE_Saxony_Events.7.OPT2
+		ai_chance = {
+			factor = 20
+		}
+
+		add_church_power = -200
+		change_religious_influence_equivalent_fee = { remove = 100 }
+		add_stability = -1
+		add_country_modifier = {
+			name = fee_sax_retained_religious_control
+			duration = -1
+		}
+		every_country = {
+			limit = {
+				is_part_of_hre = yes
+				religion = ROOT
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = fee_sax_refused_transfer_religion_authority
+			}
+			reverse_add_opinion = {
+				who = ROOT
+				modifier = fee_sax_refused_transfer_religion_authority
+			}
+		}
+	}
+}
+
+#The Frauenkirche and the Hofkirche of Dresden
+country_event = {
+	id = FEE_Saxony_Events.8
+	title = FEE_Saxony_Events.8.T
+	desc = FEE_Saxony_Events.8.D
+	picture = CITY_VIEW_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SAX
+		owns = 61
+		is_year = 1730
+		NOT = { is_year = 1760 }
+		ADM = 4
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = FEE_Saxony_Events.8.OPT1
+
+		add_treasury = -15
+		add_prestige = 5
+		61 = { add_base_tax = 2 }
+	}
+
+	option = {
+		name = FEE_Saxony_Events.8.OPT2
+
+		add_adm_power = 10
+		add_stability_or_adm_power = yes
+	}
+}
+
+#Maria Josepha of Austria
+country_event = {
+	id = FEE_Saxony_Events.9
+	title = FEE_Saxony_Events.9.T
+	desc = FEE_Saxony_Events.9.D
+	picture = wihgfx_FEMALE_RULER_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SAX
+		is_year = 1730
+		NOT = { is_year = 1760 }
+		is_at_war = yes
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = FEE_Saxony_Events.9.OPT1
+
+		add_stability_or_adm_power = yes
+		add_adm_power = 25
+		add_dip_power = 25
+		add_war_exhaustion = -2
+		change_religious_influence_equivalent_fee = { remove = 50 }
+	}
+}
+
+#Martin Luther publishes theological treatise
+country_event = {
+	id = FEE_Saxony_Events.10
+	title = FEE_Saxony_Events.10.T
+	desc = FEE_Saxony_Events.10.D
+	picture = PRAYING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SAX
+		is_year = 1500
+		NOT = { is_religion_enabled = protestant }
+		owns = 59
+	}
+
+	mean_time_to_happen = {
+		months = 160
+		modifier = {
+			factor = 0.5
+			is_year = 1510
+		}
+	}
+
+	option = {
+		name = FEE_Saxony_Events.10.OPT1
+
+		add_adm_power = 50
+		change_religious_influence_equivalent_fee = { remove = 15 }
+		add_reform_desire = 0.01
+	}
+
+	option = {
+		name = FEE_Saxony_Events.10.OPT2
+
+		change_religious_influence_equivalent_fee = { add = 10 }
+		add_dip_power = 25
+	}
+}
+
+#Nikolaus Krell
+country_event = {
+	id = FEE_Saxony_Events.11
+	title = FEE_Saxony_Events.11.T
+	desc = FEE_Saxony_Events.11.D
+	picture = ACCUSATION_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SAX
+		religion = protestant
+		is_religion_enabled = reformed
+		is_year = 1580
+		NOT = { is_year = 1600 }
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = FEE_Saxony_Events.11.OPT1
+
+		add_adm_power = 25
+		change_religious_influence_equivalent_fee = { remove = 25 }
+		define_advisor = {
+			type = theologian
+			name = "Nikolaus Krell"
+			skill = 2
+			discount = yes
+		}
+		random_owned_province = {
+			limit = {
+					is_capital = no
+			}
+			change_religion = reformed
+			add_province_modifier = {
+				name = religious_zeal_at_conv
+				duration = 3650
+			}
+		}
+		random = {
+			chance = 50
+			capital_scope = {
+				noble_rebels = 2
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Saxony_Events.11.OPT2
+
+		change_religious_influence_equivalent_fee = { add = 50 }
+		add_dip_power = 25
+		random = {
+			chance = 50
+			random_owned_province = {
+				reformed_rebels = 1
+			}
+		}
+	}
+}

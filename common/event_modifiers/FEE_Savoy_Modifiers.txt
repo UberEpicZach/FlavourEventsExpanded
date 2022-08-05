@@ -1,0 +1,11 @@
+#Savoy chooses between cheaper mercenaries or more expensive ones, but better army.
+fee_savoy_army = {
+	army_tradition_decay = -0.01
+	land_maintenance_modifier = -0.1
+	mercenary_cost = 0.2
+}
+fee_savoy_mercenaries = {
+	merc_maintenance_modifier = -0.1
+	mercenary_manpower= 0.1
+	mercenary_cost = -0.1
+}

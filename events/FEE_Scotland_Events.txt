@@ -2453,3 +2453,214 @@ country_event = {
 		}
 	}
 }
+
+# The Education Act
+country_event = {
+	id = FEE_Scotland_Events.37
+	title = FEE_Scotland_Events.37.T
+	desc = FEE_Scotland_Events.37.D
+	picture = ADVISOR_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SCO
+		is_year = 1480
+		NOT = { is_year = 1520 }
+		is_subject = no
+		government = monarchy
+	}
+
+	mean_time_to_happen = {
+		months = 360
+		modifier = {
+			factor = 0.8
+			ADM = 4
+		}
+		modifier = {
+			factor = 0.8
+			advisor = statesman
+		}
+	}
+
+	# Every noble should be a skilled administrator
+	option = {
+		name = FEE_Scotland_Events.37.OPT1
+
+		add_adm_power = -50
+		add_country_modifier = {
+			name = fee_sco_education_act
+			duration = 18250
+		}
+	}
+
+	# It is better if they focus on military prowess.
+	option = {
+		name = FEE_Scotland_Events.37.OPT2
+
+		add_mil_power = 30
+	}
+}
+
+# Anti-French sentiment
+country_event = {
+	id = FEE_Scotland_Events.38
+	title = FEE_Scotland_Events.38.T
+	desc = FEE_Scotland_Events.38.D
+	picture = ANGRY_MOB_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SCO
+		alliance_with = FRA
+		is_at_war = no
+		OR = {
+			religion = protestant
+			religion = reformed
+		}
+		FRA = {
+			religion = catholic
+		}
+		NOT = { is_year = 1580 }
+	}
+
+	mean_time_to_happen = {
+		months = 360
+		modifier = {
+			factor = 0.75
+			FRA = {
+				is_defender_of_faith = yes
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Scotland_Events.38.OPT1
+
+		add_country_modifier = {
+			name = fee_sco_supression_anti_french_sentiment
+			duration = 3650
+		}
+	}
+
+	option = {
+		name = FEE_Scotland_Events.38.OPT2
+
+		add_opinion = {
+			who = FRA
+			modifier = fee_sco_scottish_anti_french_sentiment
+		}
+		reverse_add_opinion = {
+			who = FRA
+			modifier = fee_sco_scottish_anti_french_sentiment
+		}
+	}
+}
+
+# Claim of Rights
+country_event = {
+	id = FEE_Scotland_Events.39
+	title = FEE_Scotland_Events.39.T
+	desc = FEE_Scotland_Events.39.D
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_lesser_in_union = yes
+		OR = {
+			tag = SCO
+			AND = {
+				tag = GBR
+				OR = {
+					highlands_area = {
+						owned_by = ROOT
+					}
+					lowlands_area = {
+						owned_by = ROOT
+					}
+				}
+			}
+		}
+		is_year = 1600
+	}
+
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	option = {
+		name = FEE_Scotland_Events.39.OPT1
+
+		add_country_modifier = {
+			name = fee_sco_claim_rights_supressed
+			duration = 7200
+		}
+		overlord = {
+			add_opinion = {
+				who = ROOT
+				modifier = fee_sco_rejected_claim_rights
+			}
+			reverse_add_opinion = {
+				who = ROOT
+				modifier = fee_sco_rejected_claim_rights
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Scotland_Events.39.OPT2
+
+		overlord = {
+			country_event = {
+				id = FEE_Scotland_Events.40 days = 5 tooltip = FEE_Scotland_Events.39.OPT2.tt
+			}
+		}
+	}
+}
+
+# Scotland Presents its Claim of Right
+country_event = {
+	id = FEE_Scotland_Events.40
+	title = FEE_Scotland_Events.40.T
+	desc = FEE_Scotland_Events.40.D
+	picture = CONQUEST_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		SCO = {
+			is_subject_of = ROOT
+		}
+	}
+
+	option = {
+		name = FEE_Scotland_Events.40.OPT1
+
+		FROM = {
+			add_liberty_desire = 25
+			add_country_modifier = {
+				name = fee_sco_claim_rights_supressed
+				duration = 7200
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Scotland_Events.40.OPT2
+
+		lowlands_area = {
+			limit = {
+				owned_by = FROM
+			}
+			add_local_autonomy = 50
+		}
+		highlands_area = {
+			limit = {
+				owned_by = FROM
+			}
+			add_local_autonomy = 50
+		}
+	}
+}

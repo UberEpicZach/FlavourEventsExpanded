@@ -1,0 +1,23 @@
+#Rivalry or Reconciliation for Saxony and Brandenburg
+fee_sax_dynastic_rivalries = {
+	opinion = -30
+	yearly_decay = 1
+}
+fee_sax_sought_reconcilation = {
+	opinion = 15
+	yearly_decay = 1
+}
+#Saxony hides a religious reformer
+fee_sax_hid_religious_reformer = {
+	opinion = -20
+	yearly_decay = 0.5
+}
+fee_sax_gave_up_reformer = {
+	opinion = 20
+	yearly_decay = 1
+}
+#Saxony doesn't transfer religious authority
+fee_sax_refused_transfer_religion_authority = {
+	opinion = -25
+	yearly_decay = 0.5
+}

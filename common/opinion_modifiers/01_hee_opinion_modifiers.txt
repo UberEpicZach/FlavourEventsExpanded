@@ -7,18 +7,6 @@ fee_swiss_soldiers_denied = {
 	yearly_decay = 1
 }
 
-# Scotland and France start arguing over religion
-fee_scottish_anti_french = {
-	opinion = -40
-	yearly_decay = 2
-}
-
-# Overlord rejects Scotland's claim of rights
-fee_subject_claim_supressed = {
-	opinion = -50
-	yearly_decay = 1
-}
-
 #SWI or BAV choose to reconcile with the Swabian League
 fee_swabian_reconciliation = {
 	opinion = 25
@@ -71,34 +59,6 @@ fee_english_rejected = {
 fee_refused_league_aid = {
 	opinion = -20
 	yearly_decay = 2
-}
-
-#Rivalry or Reconciliation for Saxony and Brandenburg
-fee_against_hohenzollern = {
-	opinion = -30
-	yearly_decay = 1
-}
-
-fee_reconcile_hohenzollern = {
-	opinion = 15
-	yearly_decay = 1
-}
-
-#Saxony hides a religious reformer
-fee_reformer_saved = {
-	opinion = -20
-	yearly_decay = 0.5
-}
-
-fee_gave_up_reformer = {
-	opinion = 20
-	yearly_decay = 1
-}
-
-#Saxony doesn't transfer religious authority
-fee_refused_religion_transfer = {
-	opinion = -25
-	yearly_decay = 0.5
 }
 
 #Stockholm Bloodbath
