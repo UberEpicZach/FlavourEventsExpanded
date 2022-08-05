@@ -1,0 +1,98 @@
+#The Enlightenment modifiers
+fee_enlightenment_coffee_house = {
+	idea_cost = -0.05
+}
+
+fee_enlightenment_not_enlightened_ruler = {
+	stability_cost_modifier = -0.1
+	idea_cost = 0.05
+}
+fee_enlightenment_enlightened_ruler = {
+	stability_cost_modifier = 0.1
+	idea_cost = -0.05
+}
+
+fee_enlightenment_grand_work_adm = {
+	adm_tech_cost_modifier = -0.05
+	production_efficiency = 0.1
+}
+fee_enlightenment_grand_work_dip = {
+	dip_tech_cost_modifier = -0.05
+	trade_efficiency = 0.05
+}
+fee_enlightenment_grand_work_mil = {
+	mil_tech_cost_modifier = -0.05
+	army_tradition_decay = -0.01
+	navy_tradition_decay = -0.01
+}
+
+fee_enlightenment_suffering_military_thought = {
+	army_tradition_decay = 0.005
+	mil_tech_cost_modifier = 0.05
+}
+
+fee_enlightenment_rationalist_trade_practices = {
+	trade_efficiency = 0.01
+}
+
+fee_enlightenment_dubious_mercantilist_practices = {
+	global_foreign_trade_power = -0.10
+	trade_efficiency = -0.10
+}
+
+fee_enlightenment_war_criticism_circulating_province = {
+	local_unrest = 2
+	development_cost = 0.10
+}
+fee_enlightenment_war_criticism_circulating = {
+	war_exhaustion_cost = 0.05
+}
+fee_enlightenment_thinker_repressed = {
+	global_unrest = -1
+	stability_cost_modifier = 0.10
+	legitimacy = -0.025
+}
+
+fee_enlightenment_anti_government = {
+	global_unrest = 1
+	stability_cost_modifier = 0.10
+}
+
+fee_enlightenment_anti_religious_work_catholic = {
+	papal_influence = -1
+}
+fee_enlightenment_anti_religious_work_protestant = {
+	church_power_modifier = -0.25
+}
+fee_enlightenment_anti_religious_work_reformed = {
+	monthly_fervor_increase = -0.25
+}
+fee_enlightenment_anti_religious_work = {
+	prestige = -1
+}
+
+fee_enlightenment_literary_work_presented = {
+	global_unrest = -1
+	prestige_decay = -0.01
+}
+
+fee_enlightenment_academia_adm = {
+	adm_tech_cost_modifier = -0.1
+}
+fee_enlightenment_academia_dip = {
+	dip_tech_cost_modifier = -0.1
+}
+fee_enlightenment_academia_mil = {
+	mil_tech_cost_modifier = -0.1
+}
+
+#Scientific Revolution
+fee_enlightenment_technological_developments = {
+	technology_cost = -0.05
+}
+fee_enlightenment_development_empiricism = {
+	idea_cost = -0.05
+}
+fee_enlightenment_falling_behind = {
+	technology_cost = 0.05
+}
