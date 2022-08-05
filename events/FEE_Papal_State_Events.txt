@@ -1,0 +1,60 @@
+#Papal events
+namespace = FEE_Papal_State_Events
+
+#Great Indulgence Salesman
+country_event = {
+	id = FEE_Papal_State_Events.1
+	title = FEE_Papal_State_Events.1.T
+	desc = FEE_Papal_State_Events.1.D
+	picture = CORRUPTION_eventPicture
+
+	trigger = {
+		tag = PAP
+		papacy_active = yes
+		NOT = { is_religion_enabled = protestant }
+		OR = {
+			has_country_flag = FEE_Papal_State_Events_indulgence_salesman_timer
+			had_country_flag = {
+				flag = FEE_Papal_State_Events_indulgence_salesman_timer
+				days = 3650
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 360
+		modifier = {
+			factor = 0.8
+			advisor = statesman
+		}
+		modifier = {
+			factor = 0.8
+			ADM = 4
+		}
+		modifier = {
+			factor = 0.8
+			is_papal_controller = yes
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = FEE_Papal_State_Events_indulgence_salesman_timer
+			set_country_flag = FEE_Papal_State_Events_indulgence_salesman_timer
+		}
+	}
+
+	option = {
+		name = FEE_Papal_State_Events.1.OPT1
+
+		add_treasury = 50
+		add_reform_desire = 0.01
+	}
+
+	option = {
+		name = FEE_Papal_State_Events.1.OPT2
+
+		add_treasury = 10
+		add_reform_desire = -0.01
+	}
+}

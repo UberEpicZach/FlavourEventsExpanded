@@ -70,10 +70,6 @@ fee_savoy_mercenaries = {
 	mercenary_cost = -0.1
 }
 
-#Bugenhagen timer
-fee_johannes_bugenhagen = {
-}
-
 #Claim of rights
 fee_claim_supressed = {
 	global_unrest = 2
@@ -143,27 +139,6 @@ fee_ignore_falsification = {
 	ae_impact = 0.1
 }
 
-#Persia and the Qizilbash
-per_the_qizilbash = {
-	army_tradition_decay = -0.01
-	global_manpower_modifier = 0.1
-}
-
-per_end_qizilbash_influence = {
-}
-
-per_qizilbash_fight = {
-}
-
-per_qizilbash_support = {
-}
-
-per_resisted_qizilbash = {
-}
-
-per_the_third_force = {
-}
-
 #Sebastianism in Portugal
 fee_sebastianism = {
 	global_unrest = 1
@@ -173,10 +148,6 @@ fee_sebastianism = {
 fee_university_wurzburg = {
 	development_cost = -0.15
 	local_unrest = -1
-}
-
-#Timer for Great Indulgence Salesman with PAP
-fee_indulgence_salesman_timer = {
 }
 
 #Toob Menadir for Ajuuraan or Mogadishu
