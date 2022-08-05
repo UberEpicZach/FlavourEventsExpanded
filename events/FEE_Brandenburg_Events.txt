@@ -168,7 +168,7 @@ country_event = {
 						army_size = BOH
 					}
 				}
-			}	
+			}
 			modifier = {
 				factor = 0.25
 				NOT = {
@@ -329,7 +329,7 @@ country_event = {
 						army_size = BOH
 					}
 				}
-			}	
+			}
 			modifier = {
 				factor = 0.25
 				NOT = {
@@ -1056,14 +1056,14 @@ country_event = {
 		PAL = {
 			add_casus_belli = {
 				target = BRG
-				type = cb_restore_personal_union 
+				type = cb_restore_personal_union
 				months = 120
 			}
 		}
 		BRA = {
 			add_casus_belli = {
 				target = BRG
-				type = cb_restore_personal_union 
+				type = cb_restore_personal_union
 				months = 120
 			}
 		}
@@ -1201,7 +1201,7 @@ country_event = {
 			factor = 10
 			modifier = {
 				factor = 0.1
-				ROOT = { 
+				ROOT = {
 					any_ally = {
 						tag = HAB
 					}
@@ -1337,7 +1337,7 @@ country_event = {
 			factor = 1
 			modifier = {
 				factor = 0
-				ROOT = { 
+				ROOT = {
 					any_ally = {
 						tag = BRG
 					}
@@ -1357,7 +1357,7 @@ country_event = {
 
 		declare_war_with_cb = {
 			who = BRG
-			casus_belli = cb_vassalize_mission 
+			casus_belli = cb_vassalize_mission
 		}
 		FRA = {
 			country_event = {
@@ -1531,7 +1531,7 @@ country_event = {
 					OR = {
 						tag = BRA
 						tag = PRU
-						tag = PAL 
+						tag = PAL
 					}
 				}
 			}
@@ -1819,14 +1819,14 @@ country_event = {
 					add_core = PAL
 					if = {
 						limit = {
-							exists = BRA 
+							exists = BRA
 						}
 						add_permanent_claim = BRA
-						add_core = BRA 
+						add_core = BRA
 					}
 					else = {
 						add_permanent_claim = PRU
-						add_core = PRU 
+						add_core = PRU
 					}
 				}
 			}
@@ -1839,14 +1839,14 @@ country_event = {
 					add_core = PAL
 					if = {
 						limit = {
-							exists = BRA 
+							exists = BRA
 						}
 						add_permanent_claim = BRA
-						add_core = BRA 
+						add_core = BRA
 					}
 					else = {
 						add_permanent_claim = PRU
-						add_core = PRU 
+						add_core = PRU
 					}
 				}
 			}
@@ -1987,7 +1987,7 @@ country_event = {
 		# }
 		if = {
 			limit = {
-				exists = BRA 
+				exists = BRA
 			}
 			BRA = {
 				country_event = {
@@ -2103,7 +2103,7 @@ country_event = {
 
 		if = {
 			limit = {
-				exists = BRA 
+				exists = BRA
 			}
 			BRA = {
 				create_union = BRG
@@ -2845,7 +2845,7 @@ country_event = {
 
 	trigger = {
 		tag = BOH
-		is_year = 1516 
+		is_year = 1516
 		NOT = { is_year = 1530 }
 		has_global_flag = fee_bran_pawning_zollern
 		1763 = {
@@ -3042,7 +3042,7 @@ country_event = {
 				ai = no
 			}
 			add_treasury = -700
-		} 
+		}
 		add_ruler_modifier = {
 			name = fee_bran_lover_of_the_hunt #-25% State Maintenance, -5% estate Loyalty
 			duration = -1
@@ -3182,7 +3182,7 @@ country_event = {
 				}
 				NOT = { religion = protestant }
 			}
-		}		
+		}
 	}
 
 	fire_only_once = yes
@@ -3984,8 +3984,8 @@ country_event = {
 		num_of_owned_provinces_with = {
 			value = 4
 			OR = {
-				area = vorpommern_area 
-				area = hinter_pommern_area  
+				area = vorpommern_area
+				area = hinter_pommern_area 
 			}
 		}
 		is_at_war = yes
@@ -4032,8 +4032,8 @@ country_event = {
 			every_owned_province = {
 				limit = {
 					OR = {
-						area = vorpommern_area 
-						area = hinter_pommern_area  
+						area = vorpommern_area
+						area = hinter_pommern_area 
 					}
 				}
 				cede_province = POM

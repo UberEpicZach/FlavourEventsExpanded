@@ -28,7 +28,7 @@ country_event = {
 			}
 		}
 		is_year = 1500
-		NOT = { 
+		NOT = {
 			is_year = 1600
 		}
 		NOT = {
@@ -61,9 +61,9 @@ country_event = {
 	title = fee_ENG.2.T
 	desc = fee_ENG.2.D
 	picture = ADVISOR_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		OR = {
 			tag = ENG
@@ -76,7 +76,7 @@ country_event = {
 		}
 		is_year = 1770
 	}
-	
+
 	mean_time_to_happen = {
 		months = 480
 		modifier = {
@@ -86,7 +86,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = fee_ENG.2.OPT1
 		add_dip_power = 30
@@ -110,7 +110,7 @@ country_event = {
 	picture = ADVISOR_eventPicture
 
 	is_triggered_only = yes
-	
+
 	option = {
 		name = fee_ENG.3.OPT1
 		add_prestige = 20

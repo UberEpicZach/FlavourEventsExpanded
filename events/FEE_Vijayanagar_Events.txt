@@ -19,9 +19,9 @@ country_event = {
 	mean_time_to_happen = {
 		months = 12
 	}
+
 	
-	
-	option = { 
+	option = {
 		name = FEE_Vijayanagar_Events.1.OPT1	#What a fine king he is!
 		add_prestige = 20
 		change_adm = 1
@@ -29,5 +29,5 @@ country_event = {
 			name = vij_devaraya_literature
 			duration = 1875
 		}
-	}	
+	}
 }

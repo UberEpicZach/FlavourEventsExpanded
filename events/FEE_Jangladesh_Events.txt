@@ -1,14 +1,13 @@
-namespace = events_jan
-normal_or_historical_nations = yes
+namespace = FEE_Jangladesh_Events
 
 country_event = {
-	id = events_jan.1
-	title = "events_jan.1.tt"
-	desc = "events_jan.1.dd"
+	id = FEE_Jangladesh_Events.1
+	title = FEE_Jangladesh_Events.1.T
+	desc = FEE_Jangladesh_Events.1.D
 	picture = CITY_VIEW_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	
 	trigger = {
 		tag = JAN
@@ -16,15 +15,18 @@ country_event = {
 		is_year = 1470
 		NOT = { is_year = 1490 }
 	}
-	
+
 	mean_time_to_happen = {
 		months = 120
-	}	
-	
+	}
+
 	option = {
-		name = "events_jan.1.OPT1" #Splendid.
+		name = FEE_Jangladesh_Events.1.OPT1 #Splendid.
+
 		add_prestige = 10
 		512 = {
+			change_province_name = "Bikaner"
+			rename_capital = "Bikaner"
 			if = {
 				limit = {
 					NOT = {
@@ -33,7 +35,7 @@ country_event = {
 							has_building = fort_16th
 							has_building = fort_17th
 							has_building = fort_18th
-						}	
+						}
 					}
 				}
 				add_building_construction = {
@@ -41,9 +43,10 @@ country_event = {
 					speed = 0.75
 					cost = 0
 				}
-			}	
-			change_province_name = "Bikaner"
-			rename_capital = "Bikaner"
-		}	
+			}
+			else = {
+				add_base_manpower = 3
+			}
+		}
 	}
 }

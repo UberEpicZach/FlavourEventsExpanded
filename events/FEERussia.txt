@@ -9,11 +9,11 @@ country_event = {
 	desc = "fee_RUS_d_1"
 	picture = CITY_VIEW_eventPicture
 	fire_only_once = yes
-	
+
 	mean_time_to_happen = {
 		months = 300
 	}
-	
+
 	trigger = {
 		tag = RUS
 		has_country_flag = relocated_capital_st_petersburg
@@ -23,7 +23,7 @@ country_event = {
 			is_capital = yes
 		}
 	}
-	
+
 	option = {
 		name = "fee_RUS_1_1"
 		ai_chance = { factor = 70 }
@@ -133,7 +133,7 @@ country_event = {
 		
 		add_years_of_income = -0.75
 	}
-	
+
 	option = {
 		name = "fee_RUS_2_1"
 		ai_chance = { factor = 30 }
@@ -157,11 +157,11 @@ country_event = {
 	desc = "fee_RUS_d_2"
 	picture = COURT_eventPicture
 	fire_only_once = yes
-	
+
 	mean_time_to_happen = {
 		months = 1
 	}
-	
+
 	trigger = {
 		tag = RUS
 		
@@ -178,7 +178,7 @@ country_event = {
 		owns = 4113
 		owns = 4152
 	}
-	
+
 	after = {
 		hidden_effect = {
 			finland_area = {
@@ -207,7 +207,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "fee_RUS_1_2"
 		ai_chance = { factor = 30 }
@@ -254,7 +254,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "fee_RUS_2_2"
 		ai_chance = { factor = 10 }
@@ -301,7 +301,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = "fee_RUS_3_2"
 		ai_chance = { factor = 30 }
@@ -339,7 +339,7 @@ country_event = {
 			cede_province = FIN
 		}
 	}
-	
+
 	option = {
 		name = "fee_RUS_4_2"
 		ai_chance = { factor = 30 }

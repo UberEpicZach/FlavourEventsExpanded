@@ -66,7 +66,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		years = 1
 	}
@@ -97,7 +97,7 @@ country_event = {
 	option = {
 		name = FEE_Fairs_Events.2.OPT1
 	}
-	
+
 	after = {
 		hidden_effect = {
 			set_country_flag = fee_trading_fair_started
@@ -113,7 +113,7 @@ province_event = {
 	picture = CARAVAN_EVENT_Picture
 
 	goto = ROOT
-	
+
 	is_triggered_only = yes
 
 	immediate = {
@@ -687,7 +687,7 @@ province_event = {
 	title = FEE_Fairs_Events.3000.T
 	desc = FEE_Fairs_Events.3000.D
 	picture = CARAVAN_EVENT_Picture
-	
+
 	trigger = {
 		has_province_modifier = fee_trading_fair_province_modifier
 		NOT = { has_province_flag = fee_province_trading_fair_ruler_goes_to_fair }
@@ -695,7 +695,7 @@ province_event = {
 	}
 
 	goto = ROOT
-	
+
 	mean_time_to_happen = {
 		years = 1
 	}
@@ -754,7 +754,7 @@ province_event = {
 	}
 
 	goto = ROOT
-	
+
 	mean_time_to_happen = {
 		months = 12
 	}
@@ -806,7 +806,7 @@ province_event = {
 	}
 
 	goto = ROOT
-	
+
 	mean_time_to_happen = {
 		months = 6
 	}
@@ -871,7 +871,7 @@ province_event = {
 	}
 
 	goto = ROOT
-	
+
 	mean_time_to_happen = {
 		months = 6
 	}
@@ -1235,7 +1235,7 @@ province_event = {
 	}
 
 	goto = ROOT
-	
+
 	mean_time_to_happen = {
 		months = 12
 	}
@@ -1304,7 +1304,7 @@ province_event = {
 	}
 
 	goto = ROOT
-	
+
 	mean_time_to_happen = {
 		years = 2
 		modifier = {
@@ -1389,7 +1389,7 @@ province_event = {
 	}
 
 	goto = ROOT
-	
+
 	mean_time_to_happen = {
 		months = 9
 	}

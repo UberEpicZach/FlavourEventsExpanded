@@ -106,7 +106,7 @@ country_event = {
 			is_year = 1610
 		}
 	}
-	
+
 	immediate = {
 		hidden_effect = {
 			add_country_modifier = {
@@ -152,7 +152,7 @@ province_event = {
 			duration = 3650
 		}
 		}
-		owner = { 
+		owner = {
 			add_country_modifier = {
 				name = fee_renaissance_architecture_timer
 				duration = 3650
@@ -166,13 +166,13 @@ province_event = {
 	option = {
 		name = fee_renaissance.4.OPT2
 		add_base_production = 1
-		ROOT = { 
+		ROOT = {
 			add_province_modifier = {
 				name = fee_renaissance_architecture
 				duration = 3650
 			}
 		}
-		owner = { 
+		owner = {
 			add_country_modifier = {
 				name = fee_renaissance_architecture_timer
 				duration = 3650
@@ -192,7 +192,7 @@ province_event = {
 				duration = 3650
 		}
 		}
-		owner = { 
+		owner = {
 			add_country_modifier = {
 				name = fee_renaissance_architecture_timer
 				duration = 3650
@@ -288,7 +288,7 @@ country_event = {
 	picture = ECONOMY_eventPicture
 
 	trigger = {
-		has_country_modifier = fee_renaissance 
+		has_country_modifier = fee_renaissance
 	}
 
 	mean_time_to_happen = {
@@ -465,7 +465,7 @@ country_event = {
 	title = fee_renaissance.12.T
 	desc = fee_renaissance.12.D
 	picture = RELIGION_eventPicture
-	
+
 	trigger = {
 		ai = no
 		has_country_modifier = fee_renaissance
@@ -474,7 +474,7 @@ country_event = {
 		}
 		religion = catholic
 	}
-	
+
 	mean_time_to_happen = {
 		months = 1000
 		modifier = {
@@ -489,13 +489,13 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = fee_renaissance.12.OPT1
 		add_prestige = 10
 		add_reform_desire = -0.01
 	}
-	
+
 	option = {
 		name = fee_renaissance.12.OPT2
 		define_advisor = {

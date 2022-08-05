@@ -19,8 +19,7 @@ country_event = {
 		months = 72
 	}
 	
-	
-	option = { 
+	option = {
 		name = fee_malayalam.1.OPT1	#Invite him to court.
 		add_adm_power = 75
 		add_meritocracy_effect = yes
@@ -32,7 +31,7 @@ country_event = {
 			discount = yes
 			skill = 1
 		}
-	}	
+	}
 }
 
 #Thunchaththu Ezhuthachan
@@ -53,9 +52,9 @@ country_event = {
 	mean_time_to_happen = {
 		months = 72
 	}
+
 	
-	
-	option = { 
+	option = {
 		name = fee_malayalam.2.OPT1	#Invite him to court.
 		add_adm_power = 100
 		add_meritocracy_effect = yes
@@ -88,9 +87,9 @@ country_event = {
 	mean_time_to_happen = {
 		months = 72
 	}
+
 	
-	
-	option = { 
+	option = {
 		name = fee_malayalam.3.OPT1	#Invite him to court.
 		add_adm_power = 75
 		add_dip_power = 75
@@ -123,9 +122,9 @@ country_event = {
 	mean_time_to_happen = {
 		months = 72
 	}
+
 	
-	
-	option = { 
+	option = {
 		name = fee_malayalam.4.OPT1	#Invite him to court.
 		add_adm_power = 75
 		add_meritocracy_effect = yes
@@ -156,20 +155,20 @@ country_event = {
 	mean_time_to_happen = {
 		months = 720
 	}
+
 	
-	
-	option = { 
+	option = {
 		name = fee_malayalam.5.OPT1	#Fund it.
 		add_treasury = -200
 		add_country_modifier = {
 			name = fee_kerala_school
 			duration = 27375
-		}	
+		}
 	}
-	option = { 
+	option = {
 		name = fee_malayalam.5.OPT2	#Don't fund it.
 		add_prestige = -20	
-	}	
+	}
 }
 
 #Nilakanta Somayaji
@@ -184,7 +183,7 @@ country_event = {
 		OR = {
 			owns_core_province = 534
 			owns_core_province = 535
-		}	
+		}
 		is_year = 1500
 		NOT = { is_year = 1540 }
 	}
@@ -192,9 +191,9 @@ country_event = {
 	mean_time_to_happen = {
 		months = 72
 	}
+
 	
-	
-	option = { 
+	option = {
 		name = fee_malayalam.6.OPT1	#Invite him to court.
 		add_adm_power = 150
 		add_meritocracy_effect = yes
@@ -208,7 +207,7 @@ country_event = {
 		}
 		hidden_effect = {
 			set_country_flag = had_somayaji
-		}	
+		}
 	}
 }
 
@@ -224,7 +223,7 @@ country_event = {
 		OR = {
 			owns_core_province = 534
 			owns_core_province = 535
-		}	
+		}
 		is_year = 1530
 		NOT = { is_year = 1570 }
 		has_country_flag = had_somayaji
@@ -233,9 +232,9 @@ country_event = {
 	mean_time_to_happen = {
 		months = 72
 	}
+
 	
-	
-	option = { 
+	option = {
 		name = fee_malayalam.7.OPT1	#Invite him to court.
 		add_adm_power = 100
 		add_meritocracy_effect = yes
@@ -249,7 +248,7 @@ country_event = {
 		}
 		hidden_effect = {
 			set_country_flag = had_jyesthadeva
-		}		
+		}
 	}
 }
 
@@ -271,9 +270,9 @@ country_event = {
 	mean_time_to_happen = {
 		months = 72
 	}
+
 	
-	
-	option = { 
+	option = {
 		name = fee_malayalam.8.OPT1	#Invite him to court.
 		add_adm_power = 50
 		add_prestige = 20
@@ -305,9 +304,9 @@ country_event = {
 	mean_time_to_happen = {
 		months = 72
 	}
+
 	
-	
-	option = { 
+	option = {
 		name = fee_malayalam.9.OPT1	#A legend has passed.
 		add_prestige = 15
 	}
@@ -331,9 +330,9 @@ country_event = {
 	mean_time_to_happen = {
 		months = 72
 	}
+
 	
-	
-	option = { 
+	option = {
 		name = fee_malayalam.10.OPT1	#Invite him to court.
 		add_adm_power = 50
 		add_dip_power = 50
@@ -348,6 +347,6 @@ country_event = {
 		}
 		hidden_effect = {
 			set_country_flag = had_achyutha
-		}	
+		}
 	}
 }

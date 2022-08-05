@@ -181,7 +181,7 @@ country_event = {
 			culture = portugese
 			religion = catholic
 			cost_multiplier = 0.25
-		}		
+		}
 		hidden_effect = { country_event = {	id = FEE_Portugal_Events.100 } }
 	}
 
@@ -262,7 +262,7 @@ country_event = {
 			has_province_modifier = slaves_raided
 		}
 		4563 = {
-			NOT = { 
+			NOT = {
 				owner = {
 					ai = no
 				}
@@ -303,13 +303,13 @@ country_event = {
 			}
 		}
 		random_list = {
-			50 = { 
+			50 = {
 				country_event = {
 					id = FEE_Portugal_Events.7
 					days = 15
 				}
 			}
-			50 = { 
+			50 = {
 				country_event = {
 					id = FEE_Portugal_Events.8
 					days = 15
@@ -974,7 +974,7 @@ country_event = {
 					stability = 1
 					manpower = 3
 				}
-			}			
+			}		
 		}
 
 		add_stability = -1
@@ -1444,7 +1444,7 @@ country_event = {
 	}
 }
 
-#Ferdinand Magellan 
+#Ferdinand Magellan
 country_event = {
 	id = FEE_Portugal_Events.19
 	title = FEE_Portugal_Events.19.T

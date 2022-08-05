@@ -1,0 +1,9 @@
+#Fortifying Ngazaramu
+fee_kbo_fortress_city_ngazargamu = {
+	local_defensiveness = 0.25
+}
+#Administrative reforms of Idris Aluma in Kanem Borno
+fee_kbo_reforms_idris_aluma = {
+	global_unrest = -2
+	global_tax_modifier = 0.1
+}

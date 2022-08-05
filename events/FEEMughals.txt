@@ -8,9 +8,9 @@ country_event = {
 	title = fee_MUG.1.T
 	desc = fee_MUG.1.D
 	picture = FORT_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = MUG
 		owns = 522
@@ -19,7 +19,7 @@ country_event = {
 			is_year = 1670
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 240
 		modifier = {
@@ -27,7 +27,7 @@ country_event = {
 			is_at_war = yes
 		}
 	}
-	
+
 	option = {
 		name = fee_MUG.1.OPT1
 		ai_chance = {
@@ -48,7 +48,7 @@ country_event = {
 		}
 		add_prestige = 20
 	}
-	
+
 	option = {
 		name = fee_MUG.1.OPT2
 		ai_chance = {
@@ -65,9 +65,9 @@ country_event = {
 	title = fee_MUG.2.T
 	desc = fee_MUG.2.D
 	picture = FORT_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = MUG
 		num_of_owned_provinces_with = {
@@ -75,7 +75,7 @@ country_event = {
 			religion = hinduism
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 240
 		modifier = {
@@ -83,7 +83,7 @@ country_event = {
 			has_idea_group = humanist_ideas
 		}
 	}
-	
+
 	option = {
 		name = fee_MUG.2.OPT1
 		ai_chance = {
@@ -95,7 +95,7 @@ country_event = {
 			duration = 36500
 		}
 	}
-	
+
 	option = {
 		name = fee_MUG.2.OPT2
 		ai_chance = {
@@ -106,7 +106,7 @@ country_event = {
 			duration = 730
 		}
 	}
-	
+
 	option = {
 		name = fee_MUG.2.OPT3
 		ai_chance = {
@@ -122,7 +122,7 @@ country_event = {
 	title = fee_MUG.3.T
 	desc = fee_MUG.3.D
 	picture = CONQUEST_eventPicture
-	
+
 	trigger = {
 		tag = MUG
 		NOT = {
@@ -134,11 +134,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 120
 	}
-	
+
 	immediate = {
 		hidden_effect = {
 			add_country_modifier = {
@@ -148,7 +148,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = fee_MUG.3.OPT1
 		add_years_of_income = 0.2

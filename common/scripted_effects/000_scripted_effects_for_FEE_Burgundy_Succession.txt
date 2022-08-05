@@ -5,7 +5,7 @@ burgundian_inheritance_start_effect = {
 			tag = BUR
 			has_country_modifier = burgundian_succession_crisis
 			NOT = { has_country_flag = burgundian_succession_has_already_fired }
-			NOT = { 
+			NOT = {
 				BUR = {
 					is_subject = yes
 				}
@@ -66,7 +66,7 @@ burgundian_inheritance_start_effect = {
 			tag = BUR
 			has_regency = no
 			has_ruler_flag = is_charles_of_burg_flag #this flag is assigned in the history file of Burgundy
-			NOT = { has_country_modifier = burgundian_succession_crisis } 
+			NOT = { has_country_modifier = burgundian_succession_crisis }
 			NOT = { has_country_flag = burgundian_succession_has_already_fired }
 		}
 		clr_ruler_flag = is_charles_of_burg_flag

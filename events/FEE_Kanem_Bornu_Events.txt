@@ -1,0 +1,135 @@
+#Kanem Bornu events
+namespace = FEE_Kanem_Bornu_Events
+
+#The Fortress of Ngazargamu
+country_event = {
+	id = FEE_Kanem_Bornu_Events.1
+	title = FEE_Kanem_Bornu_Events.1.T
+	desc = FEE_Kanem_Bornu_Events.1.D
+	picture = FORT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = KBO
+		owns_core_province = 1157
+		NOT = { is_year = 1490 }
+		is_year = 1460
+	}
+
+	mean_time_to_happen = {
+		months = 120
+		modifier = {
+			factor = 0.5
+			has_truce = yes
+		}
+	}
+
+	option = {
+		name = FEE_Kanem_Bornu_Events.1.OPT1
+		ai_chance = {
+			factor = 90
+		}
+
+		set_capital = 1157
+		1157 = {
+			add_base_tax = 1
+			add_base_manpower = 1
+			add_province_modifier = {
+				name = fee_kbo_fortress_city_ngazargamu
+				duration = -1
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Kanem_Bornu_Events.1.OPT2
+		ai_chance = {
+			factor = 10
+		}
+
+		add_stability_or_adm_power = yes
+	}
+}
+
+#The Epic of Idris Aluma
+country_event = {
+	id = FEE_Kanem_Bornu_Events.2
+	title = FEE_Kanem_Bornu_Events.2.T
+	desc = FEE_Kanem_Bornu_Events.2.D
+	picture = BATTLE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = KBO
+		is_year = 1570
+		NOT = { is_year = 1600 }
+	}
+
+	mean_time_to_happen = {
+		months = 240
+		modifier = {
+			factor = 0.7
+			MIL = 4
+		}
+		modifier = {
+			factor = 0.7
+			prestige = 50
+		}
+	}
+
+	option = {
+		name = FEE_Kanem_Bornu_Events.2.OPT1
+
+		add_mil_power = 50
+		add_prestige = 10
+		change_religious_influence_equivalent_fee = { add = 10 }
+	}
+}
+
+#The Administrative Reforms of Idris Aluma
+country_event = {
+	id = FEE_Kanem_Bornu_Events.3
+	title = FEE_Kanem_Bornu_Events.3.T
+	desc = FEE_Kanem_Bornu_Events.3.D
+	picture = ECONOMY_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = KBO
+		is_year = 1560
+		NOT = { is_year = 1600 }
+		is_at_war = no
+	}
+
+	mean_time_to_happen = {
+		months = 240
+		modifier = {
+			factor = 0.8
+			ADM = 4
+		}
+		modifier = {
+			factor = 0.8
+			ADM = 5
+		}
+	}
+
+	option = {
+		name = FEE_Kanem_Bornu_Events.3.OPT1
+
+		add_adm_power = 50
+		add_country_modifier = {
+			name = fee_kbo_reforms_idris_aluma
+			duration = 18250
+		}
+	}
+
+	option = {
+		name = FEE_Kanem_Bornu_Events.3.OPT2
+
+		add_stability_or_adm_power = yes
+		add_treasury = 25
+	}
+}

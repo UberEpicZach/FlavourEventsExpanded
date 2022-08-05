@@ -1498,8 +1498,8 @@ country_event = {
 			}
 			add_dip_power = 100
 		}
-		else_if = { 
-			limit = { 
+		else_if = {
+			limit = {
 				heir_dip = 5
 			}
 			add_dip_power = 200

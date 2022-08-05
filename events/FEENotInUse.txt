@@ -5,9 +5,9 @@ country_event = {
 	title = fee_announce.1.T
 	desc = fee_announce.1.D
 	picture = BIG_BOOK_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = fee_announce.1.OPT1
 	}

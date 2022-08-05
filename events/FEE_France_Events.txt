@@ -161,7 +161,7 @@ country_event = {
 	title = FEE_France_Events.2.T
 	desc = FEE_France_Events.2.D
 	picture = UNIVERSITY_eventPicture
-	
+
 	fire_only_once = yes
 	trigger = {
 		has_country_flag = french_centralization
@@ -901,7 +901,7 @@ country_event = {
 
 	fire_only_once = yes
 	major = yes
-	
+
 	trigger = {
 		tag = FRA
 		current_age = age_of_discovery
@@ -1186,7 +1186,7 @@ country_event = {
 	}
 }
 
-#The Provencal Claims 
+#The Provencal Claims
 country_event = {
 	id = FEE_France_Events.15
 	title = FEE_France_Events.15.T
@@ -1201,7 +1201,7 @@ country_event = {
 		alliance_with = PRO
 		is_year = 1450
 	}
-	
+
 	major = yes
 
 	mean_time_to_happen = {
@@ -1385,7 +1385,7 @@ country_event = {
 	}
 }
 
-#Brittany Accepts 
+#Brittany Accepts
 country_event = {
 	id = FEE_France_Events.18
 	title = FEE_France_Events.18.T
@@ -1401,7 +1401,7 @@ country_event = {
 	}
 }
 
-#Brittany Refuses 
+#Brittany Refuses
 country_event = {
 	id = FEE_France_Events.19
 	title = FEE_France_Events.19.T
@@ -1427,7 +1427,7 @@ country_event = {
 	title = FEE_France_Events.20.T
 	desc = FEE_France_Events.20.D
 	picture = SCOTTISH_MERCENARIES_eventPicture
-	
+
 	is_triggered_only = yes
 
 	option = {
@@ -1455,7 +1455,7 @@ country_event = {
 	title = FEE_France_Events.21.T
 	desc = FEE_France_Events.21.D
 	picture = ADVISOR_eventPicture
-	
+
 	trigger = {
 		is_year = 1550
 		tag = FRA
@@ -1466,7 +1466,7 @@ country_event = {
 			owns_core_province = 1247
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 60
 		modifier = {
@@ -1476,7 +1476,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = FEE_France_Events.21.OPT1
 		add_claim = 1247
@@ -1491,9 +1491,9 @@ country_event = {
 country_event = {
 	id = FEE_France_Events.22
 	title = FEE_France_Events.22.T
-	desc = FEE_France_Events.22.D 
+	desc = FEE_France_Events.22.D
 	picture = HARBOUR_eventPicture
-	
+
 	trigger = {
 		is_year = 1600
 		tag = FRA
@@ -1504,7 +1504,7 @@ country_event = {
 		NOT = { has_country_modifier = fee_france_revamped_tolls }
 		NOT = { has_country_modifier = fee_france_bad_tolls_timer }
 	}
-	
+
 	mean_time_to_happen = {
 		months = 600
 		modifier = {
@@ -1512,7 +1512,7 @@ country_event = {
 			treasury = 100
 		}
 	}
-	
+
 	immediate = {
 		hidden_effect = {
 			add_country_modifier = {
@@ -1521,7 +1521,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = FEE_France_Events.22.OPT1
 		ai_chance = {

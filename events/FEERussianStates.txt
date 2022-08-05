@@ -8,7 +8,7 @@ country_event = {
 	title = fee_rst.1.T
 	desc = fee_rst.1.D
 	picture = CITY_VIEW_eventPicture
-	
+
 	
 
 	trigger = {
@@ -82,7 +82,7 @@ country_event = {
 	title = fee_rst.2.T
 	desc = fee_rst.2.D
 	picture = DIPLOMACY_eventPicture
-	
+
 	trigger = {
 		OR = {
 			tag = TVE
@@ -110,18 +110,18 @@ country_event = {
    mean_time_to_happen = {
 	months = 300
    }
-   
+  
    immediate = {
 	hidden_effect = {
 		set_country_flag = lithuanian_protection
 	}
    }
-   
+  
    option = {
 	name = fee_rst.2.OPT1
 		add_mil_power = 25
 	}
-		  
+		 
 	option = {
 		name = fee_rst.2.OPT2
 		add_years_of_income = -1
@@ -150,16 +150,16 @@ country_event = {
 	title = fee_rst.3.T
 	desc = fee_rst.3.D
 	picture = CONQUEST_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = fee_rst.3.OPT1
 		add_years_of_income = 0.5
 		create_alliance = FROM
 		add_dip_power = 10
 	}
-	
+
 	option = {
 		name = fee_rst.3.OPT2
 		FROM = {

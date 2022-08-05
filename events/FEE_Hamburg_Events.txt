@@ -8,9 +8,9 @@ country_event = {
 	title = FEE_Hamburg_Events.1.T
 	desc = FEE_Hamburg_Events.1.D
 	picture = DEBATE_REPUBLICAN_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		OR = {
 			tag = HAM
@@ -19,11 +19,11 @@ country_event = {
 		owns_core_province = 44
 		44 = { religion = protestant }
 	}
-	
+
 	mean_time_to_happen = {
 		months = 4
 	}
-	
+
 	option = {
 		name = FEE_Hamburg_Events.1.OPT1
 

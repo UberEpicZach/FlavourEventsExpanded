@@ -546,7 +546,7 @@ country_event = {
 		any_owned_province = {
 			any_neighbor_province = {
 				has_province_flag = fee_province_has_syphilis
-				has_province_flag = fee_province_has_syphilis_outbreak 
+				has_province_flag = fee_province_has_syphilis_outbreak
 				NOT = { has_province_modifier = fee_quarantined_syphilis_outbreak }
 			}
 		}
@@ -591,7 +591,7 @@ country_event = {
 				limit = {
 					any_neighbor_province = {
 						has_province_flag = fee_province_has_syphilis
-						has_province_flag = fee_province_has_syphilis_outbreak 
+						has_province_flag = fee_province_has_syphilis_outbreak
 						NOT = { has_province_modifier = quarantined_influenza }
 					}
 				}

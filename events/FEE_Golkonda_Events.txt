@@ -8,20 +8,20 @@ country_event = {
 	title = FEE_Golkonda_Events.1.T
 	desc = FEE_Golkonda_Events.1.D
 	picture = FORT_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = GOC
 		is_year = 1507
 		NOT = { is_year = 1590 }
 		NOT = { has_country_modifier = fee_moved_capital }
 	}
-	
+
 	mean_time_to_happen = {
 		months = 60
 	}
-	
+
 	option = {
 		name = FEE_Golkonda_Events.1.OPT1
 
@@ -34,7 +34,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = FEE_Golkonda_Events.1.OPT2
 
@@ -48,20 +48,20 @@ country_event = {
 	title = FEE_Golkonda_Events.2.T
 	desc = FEE_Golkonda_Events.2.D
 	picture = FORT_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = GOC
 		owns = 542
 		is_year = 1570
 		NOT = { is_year = 1620 }
 	}
-	
+
 	mean_time_to_happen = {
 		months = 30
 	}
-	
+
 	option = {
 		name = FEE_Golkonda_Events.2.OPT1
 		ai_chance = {
@@ -75,7 +75,7 @@ country_event = {
 		}
 		add_mil_power = 25
 	}
-	
+
 	option = {
 		name = FEE_Golkonda_Events.2.OPT2
 		ai_chance = {

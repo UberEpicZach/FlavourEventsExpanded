@@ -495,7 +495,7 @@ country_event = {
 	}
 }
 
-#Disaster at Flodden 
+#Disaster at Flodden
 country_event = {
 	id = FEE_Scotland_Events.7
 	title = FEE_Scotland_Events.7.T
@@ -509,11 +509,11 @@ country_event = {
 		}
 		war_with = ENG
 		alliance_with = FRA
-		FRA = { 
-			war_with = ENG  
-			NOT = { 
-				is_lesser_in_union = yes 
-			} 
+		FRA = {
+			war_with = ENG 
+			NOT = {
+				is_lesser_in_union = yes
+			}
 		}
 		NOT = {
 			war_score = -25
@@ -563,7 +563,7 @@ country_event = {
     desc = FEE_Scotland_Events.37.D
     picture = BATTLE_eventPicture
     is_triggered_only = yes
-    
+   
     option = {
         name = FEE_Scotland_Events.37.OPT1
         add_prestige = 5
@@ -574,7 +574,7 @@ country_event = {
         add_stability = -1
         add_country_modifier = {
             name = FEE_INVADE_ANYWAYS
-            duration = 1460 
+            duration = 1460
         }
         every_owned_province = {
             limit = {
@@ -589,7 +589,7 @@ country_event = {
             SCO = {
                 country_event = {
                     id = FEE_Scotland_Events.300
-                }            
+                }           
             }
         }
     }

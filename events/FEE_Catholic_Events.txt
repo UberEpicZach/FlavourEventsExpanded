@@ -8,12 +8,12 @@ country_event = {
 	title = FEE_Catholic_Events.1.T
 	desc = FEE_Catholic_Events.1.D
 	picture = IMPORTANT_STATUE_eventPicture
-	
+
 	trigger = {
 		NOT = { is_religion_enabled = protestant }
 		religion = catholic
 	}
-	
+
 	mean_time_to_happen = {
 		months = 840
 		modifier = {
@@ -21,7 +21,7 @@ country_event = {
 			advisor = artist
 		}
 	}
-	
+
 	#Display it for the entire Christian world to see
 	option = {
 		name = FEE_Catholic_Events.1.OPT1
@@ -29,7 +29,7 @@ country_event = {
 		change_religious_influence_equivalent_fee = { add = 10 }
 		add_prestige = 10
 	}
-	
+
 	#Perfect timing, I was just in need of some money
 	option = {
 		name = FEE_Catholic_Events.1.OPT2
@@ -41,7 +41,7 @@ country_event = {
 		add_reform_desire = 0.01
 		change_religious_influence_equivalent_fee = { remove = 5 }
 	}
-	
+
 	#This will show the people how pious I am
 	option = {
 		name = FEE_Catholic_Events.1.OPT3
@@ -57,7 +57,7 @@ country_event = {
 	title = FEE_Catholic_Events.2.T
 	desc = FEE_Catholic_Events.2.D
 	picture = RELIGION_eventPicture
-	
+
 	trigger = {
 		NOT = { is_religion_enabled = protestant }
 		religion = catholic
@@ -70,7 +70,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 600
 		modifier = {
@@ -82,14 +82,14 @@ country_event = {
 			advisor = theologian
 		}
 	}
-	
+
 	immediate = {
 		hidden_effect = {
 			clr_country_flag = fee_popular_piety_timer
 			set_country_flag = fee_popular_piety_timer
 		}
 	}
-	
+
 	# These people should listen to the pope
 	option = {
 		name = FEE_Catholic_Events.2.OPT1
@@ -104,7 +104,7 @@ country_event = {
 			duration = 3650
 		}
 	}
-	
+
 	# People should always strive for new ways to express their faith
 	option = {
 		name = FEE_Catholic_Events.2.OPT2

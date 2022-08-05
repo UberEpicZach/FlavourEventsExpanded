@@ -20,7 +20,7 @@ country_event = {
 	desc = FEE_PLC_Cossack_Revolts_Events.1.D
 	picture = BARBARY_PIRATES_eventPicture
 	fire_only_once = yes
-	
+
 	trigger = {
 		is_year = 1580
 		tag = TUR
@@ -35,9 +35,9 @@ country_event = {
 			is_enemy = PLC
 		}
 	}
-	
+
 	mean_time_to_happen = { months = 60 }
-	
+
 	option = {
 		name = FEE_PLC_Cossack_Revolts_Events.1.OPT1
 		ai_chance = { factor = 85 }
@@ -52,7 +52,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = cr_1.OPT2
 		ai_chance = { factor = 15 }
@@ -70,7 +70,7 @@ country_event = {
 	desc = FEE_PLC_Cossack_Revolts_Events.2.D
 	picture = DIPLOMACY_eventPicture
 	is_triggered_only = yes
-	
+
 	option = {
 		name = FEE_PLC_Cossack_Revolts_Events.2.OPT1
 		ai_chance = { factor = 90 }
@@ -89,7 +89,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = cr_2.OPT2
 		ai_chance = { factor = 10 }
@@ -114,7 +114,7 @@ country_event = {
 	desc = FEE_PLC_Cossack_Revolts_Events.3.D
 	picture = DIPLOMACY_eventPicture
 	is_triggered_only = yes
-	
+
 	option = {
 		name = FEE_PLC_Cossack_Revolts_Events.3.OPT1
 		
@@ -130,7 +130,7 @@ country_event = {
 	desc = FEE_PLC_Cossack_Revolts_Events.4.D
 	picture = BORDER_TENSION_eventPicture
 	is_triggered_only = yes
-	
+
 	immediate = {
 		hidden_effect = {
 			PLC = {
@@ -141,7 +141,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = FEE_PLC_Cossack_Revolts_Events.4.OPT1
 	}
@@ -155,7 +155,7 @@ country_event = {
 	desc = FEE_PLC_Cossack_Revolts_Events.5.D
 	picture = BORDER_TENSION_eventPicture
 	fire_only_once = yes
-	
+
 	trigger = {
 		is_year = 1591
 		tag = PLC
@@ -167,9 +167,9 @@ country_event = {
 		owns_core_province = 4539
 		owns_core_province = 4540
 	}
-	
+
 	mean_time_to_happen = { months = 12 }
-	
+
 	option = {
 		name = FEE_PLC_Cossack_Revolts_Events.5.OPT1
 		
@@ -192,7 +192,7 @@ country_event = {
 	desc = FEE_PLC_Cossack_Revolts_Events.6.D
 	picture = ANGRY_MOB_eventPicture
 	is_triggered_only = yes
-	
+
 	option = {
 		name = FEE_PLC_Cossack_Revolts_Events.6.OPT1
 		
@@ -224,7 +224,7 @@ country_event = {
 	desc = FEE_PLC_Cossack_Revolts_Events.7.D
 	picture = CONQUEST_eventPicture
 	is_triggered_only = yes
-	
+
 	option = {
 		name = FEE_PLC_Cossack_Revolts_Events.7.OPT1
 		
@@ -240,7 +240,7 @@ country_event = {
 	desc = FEE_PLC_Cossack_Revolts_Events.8.D
 	picture = BATTLE_eventPicture
 	is_triggered_only = yes
-	
+
 	option = {
 		name = FEE_PLC_Cossack_Revolts_Events.8.OPT1
 		
@@ -280,7 +280,7 @@ country_event = {
 	picture = BATTLE_eventPicture
 	is_triggered_only = yes
 	hidden = yes
-	
+
 	immediate = {
 		2962 = {
 			spawn_rebels = {
@@ -304,7 +304,7 @@ country_event = {
 			random = 30
 		}
 	}
-	
+
 	option = {
 		
 	}
@@ -318,7 +318,7 @@ country_event = {
 	picture = BATTLE_eventPicture
 	is_triggered_only = yes
 	hidden = yes
-	
+
 	immediate = {
 		292 = {
 			spawn_rebels = {
@@ -341,7 +341,7 @@ country_event = {
 			days = 90
 		}
 	}
-	
+
 	option = {
 		
 	}
@@ -355,7 +355,7 @@ country_event = {
 	picture = BATTLE_eventPicture
 	is_triggered_only = yes
 	hidden = yes
-	
+
 	immediate = {
 		if = {
 			limit = { has_spawned_rebels = cossack_rebels }
@@ -368,7 +368,7 @@ country_event = {
 			country_event = { id = FEE_PLC_Cossack_Revolts_Events.9 }
 		}
 	}
-	
+
 	option = {
 		
 	}
@@ -381,7 +381,7 @@ country_event = {
 	desc = FEE_PLC_Cossack_Revolts_Events.9.D
 	picture = CONQUEST_eventPicture
 	is_triggered_only = yes
-	
+
 	option = {
 		name = FEE_PLC_Cossack_Revolts_Events.9.OPT1
 		
@@ -397,7 +397,7 @@ country_event = {
 	desc = FEE_PLC_Cossack_Revolts_Events.10.D
 	picture = SEJM_eventPicture
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = PLC
 		has_estate = estate_cossacks
@@ -415,9 +415,9 @@ country_event = {
 		owns_core_province = 4540
 		owns_core_province = 4542
 	}
-	
+
 	mean_time_to_happen = { months = 64 }
-	
+
 	option = {
 		name = FEE_PLC_Cossack_Revolts_Events.10.OPT1
 		
@@ -459,7 +459,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = EE_PLC_Cossack_Revolts_Events.10..OPT
 		
@@ -487,7 +487,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = FEE_PLC_Cossack_Revolts_Events.10.OPT3
 		
@@ -507,7 +507,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = FEE_PLC_Cossack_Revolts_Events.10.OPT4
 		
@@ -532,10 +532,10 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = FEE_PLC_Cossack_Revolts_Events.10.OPT5
-	
+
 		trigger = {
 			OR = {
 				ruler_has_personality = charismatic_negotiator_personality
@@ -557,10 +557,10 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = FEE_PLC_Cossack_Revolts_Events.10.OPT6
-	
+
 		trigger = {
 			OR = {
 				ruler_has_personality = embezzler_personality
@@ -582,7 +582,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = FEE_PLC_Cossack_Revolts_Events.10.OPT7
 		
@@ -616,7 +616,7 @@ country_event = {
 	desc = FEE_PLC_Cossack_Revolts_Events.11.D
 	picture = SEJM_eventPicture
 	is_triggered_only = yes
-	
+
 	option = {
 		name = FEE_PLC_Cossack_Revolts_Events.11.OPT1
 
@@ -632,7 +632,7 @@ country_event = {
 	desc = FEE_PLC_Cossack_Revolts_Events.12.D
 	picture = SEJM_eventPicture
 	is_triggered_only = yes
-	
+
 	option = {
 		name = FEE_PLC_Cossack_Revolts_Events.12.OPT1
 		
@@ -653,7 +653,7 @@ country_event = {
 	desc = FEE_PLC_Cossack_Revolts_Events.13.D
 	picture = NOBLE_ESTATE_eventPicture
 	is_triggered_only = yes
-	
+
 	option = {
 		name = FEE_PLC_Cossack_Revolts_Events.13.OPT1
 		
@@ -753,7 +753,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = FEE_PLC_Cossack_Revolts_Events.13.OPT2
 		
@@ -773,7 +773,7 @@ country_event = {
 	desc = FEE_PLC_Cossack_Revolts_Events.14.D
 	picture = FAMINE_eventPicture
 	is_triggered_only = yes
-	
+
 	option = {
 		name = FEE_PLC_Cossack_Revolts_Events.14.OPT1
 		
@@ -813,7 +813,7 @@ country_event = {
 
 	is_triggered_only = yes
 	hidden = yes
-	
+
 	immediate = {
 		hidden_effect = {
 			if = {
@@ -833,7 +833,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = FEE_PLC_Cossack_Revolts_Events.1004.OPT1
 	}
@@ -847,7 +847,7 @@ country_event = {
 
 	picture = BATTLE_eventPicture
 	is_triggered_only = yes
-	
+
 	option = {
 		name = FEE_PLC_Cossack_Revolts_Events.15.OPT1
 		
@@ -895,11 +895,11 @@ country_event = {
 	picture = BATTLE_eventPicture
 	hidden = yes
 	is_triggered_only = yes
-	
+
 	option = {
 		name = FEE_PLC_Cossack_Revolts_Events.1005.OPT1
 	}
-	
+
 	immediate = {
 		# Default outcome: Player sieges down Lubnie
 		if = {
@@ -943,7 +943,7 @@ country_event = {
 	desc = FEE_PLC_Cossack_Revolts_Events.16.D
 	picture = VILLAGE_BURNING_eventPicture
 	is_triggered_only = yes
-	
+
 	option = {
 		name = FEE_PLC_Cossack_Revolts_Events.16.OPT1
 		
@@ -976,7 +976,7 @@ country_event = {
 	desc = FEE_PLC_Cossack_Revolts_Events.17.D
 	picture = GENERALS_DISCUSSING_eventPicture
 	is_triggered_only = yes
-	
+
 	option = {
 		name = FEE_PLC_Cossack_Revolts_Events.17.OPT1
 		
@@ -996,7 +996,7 @@ country_event = {
 	desc = FEE_PLC_Cossack_Revolts_Events.18.D
 	picture = GENERALS_DISCUSSING_eventPicture
 	is_triggered_only = yes
-	
+
 	option = {
 		name = FEE_PLC_Cossack_Revolts_Events.18.OPT1
 	}
@@ -1009,13 +1009,13 @@ country_event = {
 	desc = FEE_PLC_Cossack_Revolts_Events.19.D
 	picture = GENERALS_DISCUSSING_eventPicture
 	is_triggered_only = yes
-	
+
 	option = {
 		name = FEE_PLC_Cossack_Revolts_Events.19.OPT1
 		
 		hidden_effect = { country_event = { id = FEE_PLC_Cossack_Revolts_Events.20 } }
 	}
-	
+
 	option = {
 		name = FEE_PLC_Cossack_Revolts_Events.19.OPT2
 		
@@ -1030,7 +1030,7 @@ country_event = {
 	desc = FEE_PLC_Cossack_Revolts_Events.20.D
 	picture = MILITARY_CAMP_eventPicture
 	is_triggered_only = yes
-	
+
 	immediate = {
 		hidden_effect = {
 			if = {
@@ -1048,7 +1048,7 @@ country_event = {
 		set_country_flag = PLC_dealt_with_nalyvaiko_uprising_peacefully_3
 		}
 	}
-	
+
 	option = {
 		name = FEE_PLC_Cossack_Revolts_Events.20.OPT1
 		
@@ -1071,7 +1071,7 @@ country_event = {
 	desc = FEE_PLC_Cossack_Revolts_Events.21.D
 	picture = VILLAGE_RAIDED_eventPicture
 	is_triggered_only = yes
-	
+
 	immediate = {
 		if = {
 			limit = {
@@ -1087,7 +1087,7 @@ country_event = {
 		
 		set_country_flag = PLC_dealt_with_nalyvaiko_uprising_bloody
 	}
-	
+
 	option = {
 		name = FEE_PLC_Cossack_Revolts_Events.21.OPT1
 		

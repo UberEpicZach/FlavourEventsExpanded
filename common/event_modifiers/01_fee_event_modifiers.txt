@@ -118,7 +118,7 @@ fee_turkey_uses_our_wheat = {
 
 ### Renaissance modifiers ###
 # Renaissance trigger
-fee_renaissance = { innovativeness_gain = 0.005 
+fee_renaissance = { innovativeness_gain = 0.005
 }
 
 fee_had_renaissance = {
@@ -210,48 +210,9 @@ fee_indulgence_salesman_timer = {
 fee_first_diet = {
 }
 
-#Hangul introduced
-fee_hangul_introduced = {
-	adm_tech_cost_modifier = -0.1
-}
-
-#Sarim in Korea
-fee_sarim = {
-	idea_cost = -0.05
-}
-
-#Korean Office of Censors Timer
-fee_office_censor_timer = {
-}
-
-#Hyangyak
-fee_hyangyak = {
-	local_development_cost = -0.1
-}
-
-#Silhak
-fee_silhak = {
-	technology_cost = -0.1
-}
-
-fee_westernisation_replacement = { 	
-	institution_growth = 0.10
-}
-
 #Toob Menadir for Ajuuraan or Mogadishu
 fee_toob_menadir = {
 	local_production_efficiency = 0.2
-}
-
-#Fortifying Ngazaramu
-fee_borno_fortified = {
-	local_defensiveness = 0.25
-}
-
-#Administrative reforms of Idris Aluma in Kanem Borno
-fee_aluma_reforms = {
-	global_unrest = -2
-	global_tax_modifier = 0.1
 }
 
 #Songhai has General Ture
@@ -717,11 +678,9 @@ neglected_heir_education = {
 
 ### Compatability ###
 #Lex Talionis II
-ruler_deposed = {
-}
+ruler_deposed = { }
 
-is_usurper = {
-}
+is_usurper = { }
 
 # Advisor events
 fee_collecting_taxes = {

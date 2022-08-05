@@ -9,9 +9,9 @@ country_event = {
 	title = fee_SAX.1.T
 	desc = fee_SAX.1.D
 	picture = DIPLOMACY_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = SAX
 		num_of_cities = 6
@@ -29,11 +29,11 @@ country_event = {
 		dynasty = "von Wettin"
 		government = monarchy
 	}
-	
+
 	mean_time_to_happen = {
 		months = 60
 	}
-	
+
 	option = {
 		name = fee_SAX.1.OPT1
 		ai_chance = {
@@ -79,9 +79,9 @@ country_event = {
 	title = fee_SAX.2.T
 	desc = fee_SAX.2.D
 	picture = COURT_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = SAX
 		BRA = {
@@ -99,11 +99,11 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 240
 	}
-	
+
 	option = {
 		name = fee_SAX.2.OPT1
 		reverse_add_opinion = {
@@ -128,7 +128,7 @@ country_event = {
 	picture = GREAT_BUILDING_eventPicture
 
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = SAX
 		NOT = {
@@ -137,11 +137,11 @@ country_event = {
 		is_year = 1480
 		owns = 59
 	}
-	
+
 	mean_time_to_happen = {
 		months = 120
 	}
-	
+
 	option = {
 		name = fee_SAX.3.OPT1
 		add_country_modifier = {
@@ -166,9 +166,9 @@ country_event = {
 	title = fee_SAX.4.T
 	desc = fee_SAX.4.D
 	picture = BORDER_TENSION_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = SAX
 		reform_desire = 0.95
@@ -177,11 +177,11 @@ country_event = {
 			is_year = 1525
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 60
 	}
-	
+
 	option = {
 		name = fee_SAX.4.OPT1
 		ai_chance = {
@@ -208,8 +208,8 @@ country_event = {
 		}
 		add_dip_power = 25
 		random_owned_province = {
-			limit = { 
-				is_reformation_center = no 
+			limit = {
+				is_reformation_center = no
 				OR = {
 					religion = protestant
 					religion = reformed
@@ -236,7 +236,7 @@ country_event = {
 	picture = ACCUSATION_eventPicture
 
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = SAX
 		religion = protestant
@@ -245,11 +245,11 @@ country_event = {
 			is_year = 1560
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 120
 	}
-	
+
 	option = {
 		name = fee_SAX.5.OPT1
 		add_stability_or_adm_power = yes
@@ -295,9 +295,9 @@ country_event = {
 	title = fee_SAX.6.T
 	desc = fee_SAX.6.D
 	picture = RELIGION_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = SAX
 		hre_religion_treaty = yes
@@ -308,11 +308,11 @@ country_event = {
 		religion = protestant
 		num_of_cities = 4
 	}
-	
+
 	mean_time_to_happen = {
 		months = 360
 	}
-	
+
 	option = {
 		name = fee_SAX.6.OPT1
 		add_prestige = 15
@@ -328,7 +328,7 @@ country_event = {
 	picture = PRAYING_eventPicture
 
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = SAX
 		is_year = 1720
@@ -350,11 +350,11 @@ country_event = {
 			has_idea_group = humanist_ideas
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 6
 	}
-	
+
 	option = {
 		name = fee_SAX.7.OPT1
 		ai_chance = {
@@ -396,9 +396,9 @@ country_event = {
 	title = fee_SAX.8.T
 	desc = fee_SAX.8.D
 	picture = CITY_VIEW_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = SAX
 		is_year = 1730
@@ -408,11 +408,11 @@ country_event = {
 		}
 		ADM = 4
 	}
-	
+
 	mean_time_to_happen = {
 		months = 120
 	}
-	
+
 	option = {
 		name = fee_SAX.8.OPT1
 		61 = {
@@ -434,9 +434,9 @@ country_event = {
 	title = fee_SAX.9.T
 	desc = fee_SAX.9.D
 	picture = wihgfx_FEMALE_RULER_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = SAX
 		is_year = 1730
@@ -445,11 +445,11 @@ country_event = {
 		}
 		is_at_war = yes
 	}
-	
+
 	mean_time_to_happen = {
 		months = 12
 	}
-	
+
 	option = {
 		name = fee_SAX.9.OPT1
 		add_stability_or_adm_power = yes
@@ -466,9 +466,9 @@ country_event = {
 	title = fee_SAX.10.T
 	desc = fee_SAX.10.D
 	picture = PRAYING_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = SAX
 		is_year = 1500
@@ -477,7 +477,7 @@ country_event = {
 		}
 		owns = 59
 	}
-	
+
 	mean_time_to_happen = {
 		months = 160
 		modifier = {
@@ -485,14 +485,14 @@ country_event = {
 			is_year = 1510
 		}
 	}
-	
+
 	option = {
 		name = fee_SAX.10.OPT1
 		add_adm_power = 50
 		change_religious_influence_equivalent_fee = { remove = 15 }
 		add_reform_desire = 0.01
 	}
-	
+
 	option = {
 		name = fee_SAX.10.OPT2
 		change_religious_influence_equivalent_fee = { add = 10 }
@@ -506,9 +506,9 @@ country_event = {
 	title = fee_SAX.11.T
 	desc = fee_SAX.11.D
 	picture = ACCUSATION_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = SAX
 		is_year = 1580
@@ -518,11 +518,11 @@ country_event = {
 			is_year = 1600
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 120
 	}
-	
+
 	option = {
 		name = fee_SAX.11.OPT1
 		add_adm_power = 25

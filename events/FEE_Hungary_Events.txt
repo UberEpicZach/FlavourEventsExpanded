@@ -591,16 +591,16 @@ country_event = {
 	title = FEE_Hungary_Events.12.T
 	desc = FEE_Hungary_Events.12.D
 	picture = ELECTION_REPUBLICAN_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = HUN
 		offensive_war_with = BOH
 		NOT = { is_year = 1490 }
 		dynasty = "Hunyadi"
 	}
-	
+
 	mean_time_to_happen = {
 		days = 30
 	}
@@ -621,9 +621,9 @@ country_event = {
 	title = FEE_Hungary_Events.13.T
 	desc = FEE_Hungary_Events.13.D
 	picture = ELECTION_REPUBLICAN_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = HUN
 		offensive_war_with = BOH
@@ -631,7 +631,7 @@ country_event = {
 		dynasty = "Hunyadi"
 		has_country_modifier = fee_hun_royal_prerogative
 	}
-	
+
 	mean_time_to_happen = {
 		days = 730
 	}
@@ -694,15 +694,15 @@ country_event = {
 	title = FEE_Hungary_Events.14.T
 	desc = FEE_Hungary_Events.14.D
 	picture = ELECTION_REPUBLICAN_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = HUN
 		has_country_modifier = fee_hun_royal_prerogative
 		has_country_modifier = fee_hun_taxes_without_diet
 	}
-	
+
 	mean_time_to_happen = {
 		days = 365
 	}
@@ -762,14 +762,14 @@ country_event = {
 			limit = { culture = hungarian }
 			spawn_rebels = {
 				size = 2
-				type = noble_rebels  
+				type = noble_rebels 
 			}
 		}
 		random_owned_province = {
 			limit = { culture = hungarian }
 			spawn_rebels = {
 				size = 3
-				type = noble_rebels 
+				type = noble_rebels
 			}
 		}
 	}
@@ -847,14 +847,14 @@ country_event = {
 		add_stability = -2
 		random_owned_province = {
 			spawn_rebels = {
-				type = catholic_rebels 
+				type = catholic_rebels
 				size = 2
 				friend = HUN
 			}
 		}
 		random_owned_province = {
 			spawn_rebels = {
-				type = catholic_rebels 
+				type = catholic_rebels
 				size = 3
 				friend = HUN
 			}
@@ -1267,19 +1267,19 @@ country_event = {
 				}
 				set_country_flag = fee_hun_integrate_lusatia
 			}
-			if = { 
+			if = {
 				limit = {
 					has_country_flag = fee_hun_integrate_silesia
 				}
 				vassalize = SIL
 			}
-			if = { 
+			if = {
 				limit = {
 					has_country_flag = fee_hun_integrate_moravia
 				}
 				inherit = MVA
 			}
-			if = { 
+			if = {
 				limit = {
 					has_country_flag = fee_hun_integrate_lusatia
 				}

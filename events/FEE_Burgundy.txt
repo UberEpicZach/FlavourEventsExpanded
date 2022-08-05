@@ -144,11 +144,11 @@ country_event = {
 			limit = { has_dlc = "Mandate of Heaven" }
 			add_splendor = 100
 		}
-		else = { 
+		else = {
 			add_dip_power = 50
 		}
-	}	
-	
+	}
+
 	# Option B: We can wait...
 	option = {
 		name = fee_BUR.2.OPT2
@@ -174,7 +174,7 @@ country_event = {
 			tag = GEL
 			tag = SCO
 		}
-		is_year = 1451 
+		is_year = 1451
 	}
 
 	mean_time_to_happen = {
@@ -184,7 +184,7 @@ country_event = {
 			tag = BUR
 		}
 	}
-	
+
 	# Option A: She should be an advisor!
 	option = {
 		name = fee_BUR.3.OPT1
@@ -201,8 +201,8 @@ country_event = {
 			female = yes
 		}
 
-	}	
-	
+	}
+
 	# Option B: We can learn from her
 	option = {
 		name = fee_BUR.3.OPT2
@@ -236,7 +236,7 @@ country_event = {
 		months = 12
 	}
 	fire_only_once = yes
-	
+
     # Option A: His histories will record our deeds for our posterity forever
     option = {
         name = fee_BUR.4.OPT1
@@ -256,8 +256,8 @@ country_event = {
 			discount = yes
 			location = 1865 # Aalst in Ghent (Flanders)
 		}
-	}	
-	
+	}
+
 	# # Option B: # TO DO
     # option = {
     #     name = fee_BUR.4.OPT2
@@ -267,7 +267,7 @@ country_event = {
 	# 	# TO DO
 	# }
 
-}	
+}
 
 # #Jean Le Fèvre de Saint-Remy (reserved / in design phase)
 # country_event = {
@@ -291,7 +291,7 @@ country_event = {
 #         }
 
 # 	fire_only_once = yes
-	
+
 #     # Option A: He must lead our armies!
 #     option = {
 #         name = fee_BUR.6.OPT1
@@ -308,8 +308,8 @@ country_event = {
 # 	}
 # 	add_prestige = 10
 
-# 	}	
-	
+# 	}
+
 # 	# Option B: # This man shall serve our court!
 
 # 	option = {
@@ -352,7 +352,7 @@ country_event = {
 # 		months = 24
 # 	}
 # 	fire_only_once = yes
-	
+
 #     # Option A: Ok
 #     option = {
 #         name = fee_BUR.7.OPT1
@@ -372,7 +372,7 @@ country_event = {
 # 		name = fee_guns_of_burgundy
 # 		duration = 9125
 # 	}
-	
+
 # 	add_mil_power = 100	
 # 	}
 # }
@@ -387,7 +387,7 @@ country_event = {
 #     trigger = {
 # 		tag = BUR
 # 		is_year = 1447
-# 		has_ruler = "Philippe III" 
+# 		has_ruler = "Philippe III"
 # 		owns_or_subject_of = 1865 # Ghent
 # 	}
 
@@ -395,7 +395,7 @@ country_event = {
 # 		months = 6
 # 	}
 # 	fire_only_once = yes
-	
+
 #     # Option A: Propose the tax
 #     option = {
 #         name = fee_BUR.8.OPT1
@@ -435,7 +435,7 @@ country_event = {
 # 	picture = REVOLT_OF_GENT_eventPicture
 
 # 	is_triggered_only = yes
-	
+
 #     # Option A: Rally the Troops!
 #     option = {
 # 		name = fee_BUR.9.OPT1
@@ -444,7 +444,7 @@ country_event = {
 # 		# and Burghers Estate loses 20 loyalty
 
 # 		if = {
-# 			limit = { 
+# 			limit = {
 # 				1865 = {
 # 					owned_by = BUR }
 # 			}
@@ -481,7 +481,7 @@ country_event = {
 # 	picture = GENT_ACCEPTS_eventPicture
 
 # 	is_triggered_only = yes
-	
+
 #     # Option A: Excellent
 #     option = {
 #         name = fee_BUR.10.OPT1

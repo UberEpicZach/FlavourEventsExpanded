@@ -7,20 +7,20 @@ country_event = {
 	title = "events_pgs.1.tt"
 	desc = "events_pgs.1.dd"
 	picture = BARBARY_PIRATES_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		has_dlc = "Golden Century"
 		owns_core_province = 2698
 		is_year = 1560
 		NOT = { is_year = 1580 }
 	}
-	
+
 	mean_time_to_happen = {
 		months = 90
-	}	
-	
+	}
+
 	option = {
 		name = "events_pgs.1.OPT1" #Sure why not.
 		trigger = {
@@ -39,7 +39,7 @@ country_event = {
 		}
 		else = {
 			set_legacy_government = pirate_republic
-		}	
+		}
 		define_ruler = {
 			name = "Lim"
 			dynasty = "Hong"
@@ -57,8 +57,8 @@ country_event = {
 			OR = {
 				exists = PGS
 				capital = 2698
-			}	
-		}	
+			}
+		}
 		ai_chance = { factor = 95 }
 		2698 = {
 			spawn_rebels = {
@@ -66,7 +66,7 @@ country_event = {
 				size = 2
 				leader = "Lim Hong"
 			}
-		}	
+		}
 	}
 	option = {
 		name = "events_pgs.1.OPT3" #Refuse him the offer.
@@ -91,7 +91,7 @@ country_event = {
 			}
 			else = {
 				set_legacy_government = pirate_republic
-			}		
+			}
 			define_ruler = {
 				name = "Lim Hong"
 				culture = hakka
@@ -104,7 +104,7 @@ country_event = {
 			declare_war_with_cb = {
 				who = ROOT
 				casus_belli = cb_independence_war
-			}			
+			}		
 		}
 		hidden_effect = {
 			2698 = {
@@ -127,14 +127,14 @@ country_event = {
 				transport = PGS
 				transport = PGS
 			}
-		}	
+		}
 	}
 	option = {
 		name = "events_pgs.1.D" #Give the land to him.
 		trigger = {
 			NOT = { exists = PGS }
 			NOT = { capital = 2698 }
-		}	
+		}
 		ai_chance = { factor = 5 }
 		2698 = {
 			cede_province = PGS
@@ -156,8 +156,8 @@ country_event = {
 				culture = hakka
 				religion = confucianism
 				male = yes
-			}			
-		}	
+			}		
+		}
 		southern_luzon_area = {
 			limit = {
 				NOT = { is_core = PGS }
@@ -171,7 +171,7 @@ country_event = {
 				NOT = { is_claim = PGS }
 			}
 			add_claim = PGS
-		}		
+		}
 		hidden_effect = {
 			2698 = {
 				infantry = PGS
@@ -193,8 +193,8 @@ country_event = {
 				transport = PGS
 				transport = PGS
 			}
-		}			
-	}	
+		}		
+	}
 	option = {
 		name = "events_pgs.1.e" #Offer him a position in our court.	
 		trigger = {
@@ -206,6 +206,6 @@ country_event = {
 			skill = 1
 			culture = hakka
 			religion = confucianism
-		}		
-	}	
+		}
+	}
 }

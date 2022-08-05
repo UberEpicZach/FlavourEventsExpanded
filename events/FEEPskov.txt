@@ -8,9 +8,9 @@ country_event = {
 	title = fee_psk.1.T
 	desc = fee_psk.1.D
 	picture = ECONOMY_eventPicture
-	
-	fire_only_once = yes 
-	
+
+	fire_only_once = yes
+
 	trigger =  {
 	tag = PSK
 	is_year = 1450
@@ -19,20 +19,20 @@ country_event = {
 	mean_time_to_happen = {
 	  months = 60
 	}
-	  
-	option = { 
+	 
+	option = {
 	name = fee_psk.1.OPT1
-    274 = { change_trade_goods = fish }	
+    274 = { change_trade_goods = fish }
 	}
-	option = { 
+	option = {
 	name = fee_psk.1.OPT2
 	274 = { add_base_production = 1 }
 	}
-	option = { 
+	option = {
 	name = fee_psk.1.OPT3
 	274 = { add_base_tax = 1 }
 	}
-	option = { 
+	option = {
 	name = fee_psk.1.e
 	274 = { add_base_manpower = 1 }
 	}
@@ -45,9 +45,9 @@ country_event = {
 	title = fee_psk.2.T
 	desc = fee_psk.2.D
 	picture = BIG_BOOK_eventPicture
-	
-	fire_only_once = yes 
-	
+
+	fire_only_once = yes
+
 	trigger =  {
 		tag = PSK
 		is_year = 1445

@@ -8,9 +8,9 @@ country_event = {
 	title = fee_NAV.1.T
 	desc = fee_NAV.1.D
 	picture = GOOD_WITH_MONARCH_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = NAV
 		is_subject = no
@@ -50,11 +50,11 @@ country_event = {
 			is_year = 1510
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 90
 	}
-	
+
 	option = {
 		name = fee_NAV.1.OPT1
 		ai_chance = {
@@ -82,9 +82,9 @@ country_event = {
 	title = fee_NAV.2.T
 	desc = fee_NAV.2.D
 	picture = GOOD_WITH_MONARCH_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = fee_NAV.2.OPT1
 		ai_chance = {
@@ -127,9 +127,9 @@ country_event = {
 	title = fee_NAV.3.T
 	desc = fee_NAV.3.D
 	picture = COURT_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = fee_NAV.3.OPT1
 		add_opinion = {
@@ -145,9 +145,9 @@ country_event = {
 	title = fee_NAV.4.T
 	desc = fee_NAV.4.D
 	picture = CIVIL_WAR_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = NAV
 		is_lesser_in_union = yes
@@ -161,7 +161,7 @@ country_event = {
 			has_country_modifier = fee_navarran_civil_war
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 48
 		modifier = {
@@ -177,7 +177,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	immediate = {
 		hidden_effect = {
 			add_country_modifier = {
@@ -187,7 +187,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = fee_NAV.4.OPT1
 		random_owned_province = {
@@ -211,9 +211,9 @@ country_event = {
 	title = fee_NAV.5.T
 	desc = fee_NAV.5.D
 	picture = BATTLE_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = fee_NAV.5.OPT1
 	}
@@ -225,9 +225,9 @@ country_event = {
 	title = fee_NAV.6.T
 	desc = fee_NAV.6.D
 	picture = CIVIL_WAR_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = NAV
 		junior_union_with = ARA
@@ -241,7 +241,7 @@ country_event = {
 			has_country_modifier = fee_navarran_civil_war
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 60
 		modifier = {
@@ -257,7 +257,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	immediate = {
 		hidden_effect = {
 			add_country_modifier = {
@@ -267,7 +267,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = fee_NAV.6.OPT1
 		ARA = {
@@ -284,7 +284,7 @@ country_event = {
 	title = fee_NAV.7.T
 	desc = fee_NAV.7.D
 	picture = LIBERUM_VETO_eventPicture
-	
+
 	is_triggered_only = yes
 
 	option = {
@@ -359,9 +359,9 @@ country_event = {
 	title = fee_NAV.8.T
 	desc = fee_NAV.8.D
 	picture = COURT_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = fee_NAV.8.OPT1
 		add_legitimacy_equivalent = { amount = -15 republican_tradition = -8 }
@@ -374,9 +374,9 @@ country_event = {
 	title = fee_NAV.9.T
 	desc = fee_NAV.9.D
 	picture = DIPLOMACY_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = fee_NAV.9.OPT1
 		add_legitimacy_equivalent = { amount = 5 republican_tradition = 3 }
@@ -392,9 +392,9 @@ country_event = {
 	title = fee_NAV.10.T
 	desc = fee_NAV.10.D
 	picture = RELIGIOUS_CONVERSION_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		OR = {
 			tag = NAV
@@ -415,7 +415,7 @@ country_event = {
 			religion = reformed
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 360
 		modifier = {
@@ -423,7 +423,7 @@ country_event = {
 			has_idea_group = religious_ideas
 		}
 	}
-	
+
 	option = { #He should serve as a minister
 		name = fee_NAV.10.OPT1
 		ai_chance = {
@@ -436,7 +436,7 @@ country_event = {
 			discount = yes
 		}
 	}
-	
+
 	option = { #God leads his path
 		name = fee_NAV.10.OPT2
 		ai_chance = {
@@ -472,14 +472,14 @@ country_event = {
 }
 
 #Ciudadela de Pamplona
-country_event = { 
+country_event = {
 	id = fee_NAV.11
 	title = fee_NAV.11.T
 	desc = fee_NAV.11.D
 	picture = FORT_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		OR = {
 			tag = NAV
@@ -512,7 +512,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 420
 		modifier = {
@@ -530,7 +530,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = { #Build a great fort!
 		name = fee_NAV.11.OPT1
 		ai_chance = {
@@ -560,7 +560,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = { #Let's develop a different strategy
 		name = fee_NAV.11.OPT2
 		ai_chance = {
@@ -580,15 +580,15 @@ province_event = {
 	title = fee_NAV.12.T
 	desc = fee_NAV.12.D
 	picture = RELIGIOUS_CONVERSION_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = fee_NAV.12.OPT1
 		change_religion = FROM
 	}
 }
-	
+
 
 
 

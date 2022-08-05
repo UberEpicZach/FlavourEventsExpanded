@@ -3,7 +3,7 @@
 namespace = FEE_Irish_Events
 
 # Yorkists seek Irish support
-country_event = { 
+country_event = {
 	id = FEE_Irish_Events.1
 	title = FEE_Irish_Events.1.T
 	desc = FEE_Irish_Events.1.D
@@ -77,7 +77,7 @@ country_event = {
 }
 
 #Yorkists Grateful for Our Aid
-country_event = { 
+country_event = {
 	id = FEE_Irish_Events.2
 	title = FEE_Irish_Events.2.T
 	desc = FEE_Irish_Events.2.D
@@ -327,7 +327,7 @@ country_event = {
 					area = ulster_area
 				}
 				NOT = {
-					country_or_non_sovereign_subject_holds = ROOT 
+					country_or_non_sovereign_subject_holds = ROOT
 				}
 			}
 			add_core = ROOT

@@ -371,9 +371,9 @@ country_event = {
 		}
 		every_owned_province = {
 			limit = {
-				any_province_in_state = { 
+				any_province_in_state = {
 					is_capital = yes
-				}	
+				}
 			}
 			add_base_tax = 1
 		}
@@ -880,5 +880,5 @@ country_event = {
 
 		add_stability_or_adm_power = yes
 		add_adm_power = 50
-	}	
+	}
 }

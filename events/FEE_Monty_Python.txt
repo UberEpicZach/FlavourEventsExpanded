@@ -2,13 +2,13 @@ namespace = FEE_Monty_Python_Events
 
 #Designed by Brave Sir Chu, coded by Sir LordVarangian the Wise in the ways of science
 
-#The Complaining Peasant 
+#The Complaining Peasant
 country_event = {
 	id = FEE_Monty_Python_Events.1
 	title = FEE_Monty_Python_Events.1.tt
 	desc = FEE_Monty_Python_Events.1.dd
 	picture = WESTERNISATION_eventPicture
-	
+
 	trigger = {
 		has_global_flag = FEE_Meme_Active
 		NOT = { is_year = 1550 }
@@ -41,9 +41,9 @@ country_event = {
 	title = FEE_Monty_Python_Events.2.tt
 	desc = FEE_Monty_Python_Events.2.dd
 	picture = REFORM_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = FEE_Monty_Python_Events.2.OPT1
 		
@@ -51,15 +51,15 @@ country_event = {
 	}
 }
 
-#Well I didn’t vote for you… 
+#Well I didn’t vote for you…
 country_event = {
 	id = FEE_Monty_Python_Events.3
 	title = FEE_Monty_Python_Events.3.tt
 	desc = FEE_Monty_Python_Events.3.dd
 	picture = BAD_WITH_MONARCH_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = FEE_Monty_Python_Events.3.OPT1
 		
@@ -73,9 +73,9 @@ country_event = {
 	title = FEE_Monty_Python_Events.4.tt
 	desc = FEE_Monty_Python_Events.4.dd
 	picture = DEBATE_REPUBLICAN_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = FEE_Monty_Python_Events.4.OPT1
 		

@@ -12,7 +12,7 @@ namespace = fee_NOV
 #	
 #	trigger = {
 #		tag = NOV
-#		is_year = 1445 
+#		is_year = 1445
 #		}
 #	
 #	mean_time_to_happen = {
@@ -54,9 +54,9 @@ namespace = fee_NOV
 #   		
 #	trigger = {
 #		tag = NOV
-#		is_year = 1450 
+#		is_year = 1450
 #		has_country_flag = novgorodian_famine
-#		}	
+#		}
 #	mean_time_to_happen = {
 #		months = 48
 #	}
@@ -92,7 +92,7 @@ namespace = fee_NOV
 #		MOS = {
 #			#Gives MOS the option to vassalize NOV
 #			country_event = { id = fee_NOV.6 days = 10 }
-#		}		
+#		}
 #		clr_country_flag = novgorodian_famine
 #		custom_tooltip = fee_NOV.2.tt3
 #	}
@@ -120,7 +120,7 @@ namespace = fee_NOV
 #		tag = NOV
 #		is_year = 1455
 #		has_country_flag = novgorodian_latinism
-#		}	
+#		}
 #	mean_time_to_happen = {
 #		months = 48
 #	}
@@ -208,7 +208,7 @@ namespace = fee_NOV
 #		change_religion = catholic
 #		add_country_modifier = {
 #			name = fee_NOV_latinisation
-#			duration = -1 
+#			duration = -1
 #		}
 #		random_owned_province = {
 #			limit = {
@@ -255,7 +255,7 @@ namespace = fee_NOV
 #		change_religion = catholic
 #		add_country_modifier = {
 #			name = fee_NOV_latinisation
-#			duration = -1 
+#			duration = -1
 #		}
 #		random_owned_province = {
 #			spawn_rebels = {
@@ -288,14 +288,14 @@ country_event = {
 	title = fee_NOV.4.T
 	desc = fee_NOV.4.D
 	picture = REFORM_eventPicture
-	
+
 	
 
 	trigger = {
 		tag = NOV
 		NOT = {
 			has_country_modifier = fee_NOV_veche
-		}	
+		}
 		NOT = {
 			adm_tech = 16
 		}
@@ -356,9 +356,9 @@ country_event = {
 	title = fee_NOV.5.T
 	desc = fee_NOV.5.D
 	picture = DIPLOMACY_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = fee_NOV.5.OPT1
 		ai_chance = {
@@ -376,7 +376,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = fee_NOV.5.OPT2
 		ai_chance = {
@@ -398,9 +398,9 @@ country_event = {
 	title = fee_NOV.6.T
 	desc = fee_NOV.6.D
 	picture = CONQUEST_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = fee_NOV.6.OPT1
 		ai_chance = {
@@ -429,9 +429,9 @@ country_event = {
 	title = fee_NOV.7.T
 	desc = fee_NOV.7.D
 	picture = ACCUSATION_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	option = {
 		name = fee_NOV.7.OPT1
 		add_casus_belli = {

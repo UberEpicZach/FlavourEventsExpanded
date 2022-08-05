@@ -9,9 +9,9 @@ country_event = {
   title = fee_TUR.7.T
   desc = fee_TUR.7.D
   picture = FAMINE_eventPicture
-       
+      
     is_triggered_only = yes
-        
+       
     option = {
     name = fee_TUR.7.OPT1
     add_country_modifier = {
@@ -27,29 +27,29 @@ country_event = {
 	title = fee_TUR.8.T
 	desc = fee_TUR.8.D
 	picture = COUNTRY_COLLAPSE_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = TUR
-		OR = { 
+		OR = {
 			owns = 134
 			any_subject_country = { owns = 134 }
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 12
 	}
-	
+
 	option = {	#Let us reinforce our European gains.
 		name = fee_TUR.8.OPT1
-		134 = { 
+		134 = {
 			add_base_tax = 1
 			add_base_manpower = 1
 		}
-		134 = { 
-			add_province_modifier = { 
+		134 = {
+			add_province_modifier = {
 				name = fee_conquest_wien
 				duration = -1
 			}
@@ -72,9 +72,9 @@ country_event = {
 	title = fee_TUR.10.T
 	desc = fee_TUR.10.D
 	picture = COURT_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = TUR
 		has_ruler = "Mehmet II Fatih"
@@ -82,11 +82,11 @@ country_event = {
 		NOT = { stability = 2 }
 		is_subject = no
 	}
-	
+
 	mean_time_to_happen = {
 		months = 24
 	}
-	
+
 	immediate = {
 		hidden_effect = {
 			add_country_modifier = {
@@ -96,7 +96,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = fee_TUR.10.OPT1
 		ai_chance = {
@@ -153,26 +153,26 @@ country_event = {
 	title = fee_TUR.11.T
 	desc = fee_TUR.11.D
 	picture = KING_SICK_IN_BED_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		has_country_modifier = fee_murad_check
 		has_ruler = "Murad II"
 		has_heir = yes
 		tag = TUR
 	}
-	
+
 	mean_time_to_happen = {
 		months = 84
 	}
-	
+
 	immediate = {
 		hidden_effect = {
 			kill_ruler = yes
 		}
 	}
-	
+
 	option = {
 		name = fee_TUR.11.OPT1
 		add_adm_power = 25

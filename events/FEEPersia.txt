@@ -7,19 +7,19 @@ country_event = {
 	title = fee_PER.1.T
 	desc = fee_PER.1.D
 	picture = HORDE_ON_HORSEBACK_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = PER
 		NOT = { is_year = 1600 }
 		religion = shiite
 	}
-	
+
 	mean_time_to_happen = {
 		months = 4
 	}
-	
+
 	option = { #They are here for us now, that is all that matters.
 		name = fee_PER.1.OPT1
 
@@ -33,14 +33,14 @@ country_event = {
 		add_mil_power = 50
 	}
 }
-	
+
 # The Qizilbash Lend Their Support
 country_event = {
 	id = fee_PER.2
 	title = fee_PER.2.T
 	desc = fee_PER.2.D
 	picture = MILITARY_CAMP_eventPicture
-	
+
 	trigger = {
 		tag = PER
 		NOT = { has_country_modifier = per_end_qizilbash_influence }
@@ -53,11 +53,11 @@ country_event = {
 			war_with = PER
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 18
 	}
-	
+
 	immediate = {
 		hidden_effect = {
 			add_country_modifier = {
@@ -67,7 +67,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = { #United for the Shah!
 		name = fee_PER.2.OPT1
 
@@ -89,7 +89,7 @@ country_event = {
 	title = fee_PER.3.T
 	desc = fee_PER.3.D
 	picture = HORDE_ON_HORSEBACK_eventPicture
-	
+
 	trigger = {
 		tag = PER
 		has_country_modifier = per_the_qizilbash
@@ -97,11 +97,11 @@ country_event = {
 		NOT = { has_country_modifier = per_end_qizilbash_influence }
 		NOT = {	has_ruler_modifier = per_qizilbash_fight }
 	}
-	
+
 	mean_time_to_happen = {
 		months = 6
 	}
-	
+
 	
 	option = { # Long live the Shah!
 		name = fee_PER.3.OPT1
@@ -127,7 +127,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = { # Let us ensure the loyalty of the tribes.
 		name = fee_PER.3.OPT2
 
@@ -148,28 +148,28 @@ country_event = {
 	title = fee_PER.4.T
 	desc = fee_PER.4.D
 	picture = LIBERUM_VETO_eventPicture
-	
+
 	trigger = {
 		tag = PER
 		NOT = { has_country_modifier = per_end_qizilbash_influence }
 		has_country_modifier = per_the_qizilbash
 		has_advisor = yes
 	}
-	
+
 	mean_time_to_happen = {
 		months = 360
 	}
-	
+
 	immediate = {
 		kill_advisor = random
 	}
-	
+
 	option = { # The situation will only get worse if we interfere.
 		name = fee_PER.4.OPT1
 
 		add_stability = -1
 	}
-	
+
 	option = { # We will not be slaves to the whims of the tribes!
 		name = fee_PER.4.OPT2
 
@@ -188,14 +188,14 @@ country_event = {
 	title = fee_PER.5.T
 	desc = fee_PER.5.D
 	picture = ANGRY_MOB_eventPicture
-	
+
 	trigger = {
 		tag = PER
 		NOT = { has_country_modifier = per_end_qizilbash_influence }
 		has_country_modifier = per_the_qizilbash
 		NOT = { has_ruler_modifier = per_resisted_qizilbash }
 	}
-	
+
 	mean_time_to_happen = {
 		months = 360
 	}
@@ -247,9 +247,9 @@ country_event = {
 	title = fee_PER.6.T
 	desc = fee_PER.6.D
 	picture = FARMING_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = PER
 		NOT = { has_country_modifier = per_end_qizilbash_influence }
@@ -259,14 +259,14 @@ country_event = {
 		dip = 3
 		adm = 3
 		caucasia_region = {
-			owned_by = PER 
+			owned_by = PER
 		}
 	}
-	
+
 	mean_time_to_happen = {
 		months = 120
 	}
-	
+
 	option = { # We need them to reform our society!
 		name = fee_PER.6.OPT1
 
@@ -284,7 +284,7 @@ country_event = {
 			hidden = yes
 			}
 		}
-	
+
 	option = { # The Qizibash are no threat to the Shah.
 		name = fee_PER.6.OPT2
 
@@ -298,18 +298,18 @@ country_event = {
 	title = fee_PER.7.T
 	desc = fee_PER.7.D
 	picture = GOOD_WITH_MONARCH_eventPicture
-	
+
 	trigger = {
 		tag = PER
 		NOT = { has_country_modifier = per_end_qizilbash_influence }
 		has_country_modifier = per_the_qizilbash
 		has_country_modifier = per_the_third_force
 	}
-	
+
 	mean_time_to_happen = {
 		months = 180
 	}
-	
+
 	option = { # No one will ever hold Persia hostage again!
 		name = fee_PER.7.OPT1
 
@@ -337,18 +337,18 @@ country_event = {
 	title = fee_PER.8.T
 	desc = fee_PER.8.D
 	picture = REFORM_eventPicture
-	
+
 	trigger = {
 		tag = PER
 		is_year = 1610
 		NOT = { has_country_modifier = per_the_third_force }
 		has_country_modifier = per_the_qizilbash
 	}
-	
+
 	mean_time_to_happen = {
 		months = 240
 	}
-	
+
 	option = { # IT is time Persia looked to the future.
 		name = fee_PER.8.OPT1
 

@@ -435,7 +435,7 @@ country_event = {
 		name = FEE_Bohemia_Events.7.OPT1
 
 		add_casus_belli = {
-			type = cb_restore_personal_union 
+			type = cb_restore_personal_union
 			target = PREV
 		}
 		add_opinion = {

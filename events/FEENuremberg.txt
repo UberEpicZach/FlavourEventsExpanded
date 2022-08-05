@@ -9,7 +9,7 @@ country_event = {
 	title = fee_NUM.1.T
 	desc = fee_NUM.1.D
 	picture = LIBERUM_VETO_eventPicture
-	
+
 	trigger = {
 		tag = NUM
 		is_part_of_hre = yes
@@ -22,11 +22,11 @@ country_event = {
 		}
 		owns_core_province = 67
 	}
-	
+
 	mean_time_to_happen = {
 		months = 12
 	}
-	
+
 	immediate = {
 		hidden_effect = {
 			emperor = {
@@ -36,7 +36,7 @@ country_event = {
 			}
 		}
 	}
-	
+
 	option = {
 		name = fee_NUM.1.OPT1
 		add_prestige = 5

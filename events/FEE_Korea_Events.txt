@@ -1,0 +1,483 @@
+#Korean events
+
+namespace = FEE_Korea_Events
+
+#Hangul Introduced
+country_event = {
+	id = FEE_Korea_Events.1
+	title = FEE_Korea_Events.1.T
+	desc = FEE_Korea_Events.1.D
+	picture = BIG_BOOK_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = KOR
+		NOT = { is_year = 1560 }
+		is_at_war = no
+	}
+
+	mean_time_to_happen = {
+		months = 18
+		modifier = {
+			factor = 0.75
+			advisor = statesman
+		}
+	}
+
+	option = {
+		name = FEE_Korea_Events.1.OPT1
+
+		add_country_modifier = {
+			name = fee_kor_hangul_introduced
+			duration = 10950
+		}
+	}
+}
+
+#Usurped by Sejo!
+country_event = {
+	id = FEE_Korea_Events.2
+	title = FEE_Korea_Events.2.T
+	desc = FEE_Korea_Events.2.D
+	picture = ASSASSINATION_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = KOR
+		NOT = { is_year = 1480 }
+		has_regency = yes
+		is_subject = no
+		is_at_war = no
+		government = monarchy
+	}
+
+	mean_time_to_happen = {
+		months = 24
+		modifier = {
+			factor = 0.5
+			NOT = {
+				ADM = 3
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Korea_Events.2.OPT1
+
+		add_stability = -1
+		define_ruler = {
+			name = "Sejo"
+			dynasty = "Yi"
+			adm = 5
+			dip = 4
+			mil = 5
+			age = 28
+		}
+		kill_heir = {}
+		add_country_modifier = {
+			name = ruler_deposed
+			duration = -1
+			hidden = yes
+		}
+		add_country_modifier = {
+			name = is_usurper
+			duration = -1
+			hidden = yes
+		}
+	}
+
+	option = {
+		name = FEE_Korea_Events.2.OPT2
+
+		random_province = {
+			limit = {
+				culture = korean
+			}
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 2
+				leader = "Sejo Yi"
+			}
+		}
+		random_province = {
+			limit = {
+				culture = korean
+			}
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 1
+			}
+		}
+	}
+}
+
+#Forest of Scholars
+country_event = {
+	id = FEE_Korea_Events.3
+	title = FEE_Korea_Events.3.T
+	desc = FEE_Korea_Events.3.D
+	picture = ADVISOR_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = KOR
+		ADM = 3
+		is_year = 1470
+		NOT = { is_year = 1550 }
+	}
+
+	mean_time_to_happen = {
+		months = 240
+		modifier = {
+			factor = 0.8
+			ADM = 4
+		}
+		modifier = {
+			factor = 0.8
+			ADM = 5
+		}
+	}
+
+	option = {
+		name = FEE_Korea_Events.3.OPT1
+
+		add_country_modifier = {
+			name = fee_kor_sarim
+			duration = -1
+		}
+		capital_scope = {
+			add_base_tax = 1
+		}
+	}
+	option = {
+		name = FEE_Korea_Events.3.OPT2
+
+		add_stability_or_adm_power = yes
+	}
+}
+
+#The Office of Censors Reprimand the King
+country_event = {
+	id = FEE_Korea_Events.4
+	title = FEE_Korea_Events.4.T
+	desc = FEE_Korea_Events.4.D
+	picture = ACCUSATION_eventPicture
+
+	trigger = {
+		tag = KOR
+		NOT = { is_year = 1600 }
+		OR = {
+			NOT = { has_ruler_flag = fee_kor_office_censor_timer }
+			had_ruler_flag = {
+				flag = fee_kor_office_censor_timer
+				days = 3650
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 800
+		modifier = {
+			factor = 0.6
+			NOT = {
+				stability = 0
+			}
+		}
+		modifier = {
+			factor = 1.2
+			advisor = statesman
+		}
+		modifier = {
+			factor = 1.2
+			stability = 1
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			clr_ruler_flag = fee_kor_office_censor_timer
+			set_ruler_flag = fee_kor_office_censor_timer
+		}
+	}
+
+	option = {
+		name = FEE_Korea_Events.4.OPT1
+
+		add_adm_power = -50
+		add_dip_power = -50
+		add_prestige = -10
+	}
+
+	option = {
+		name = FEE_Korea_Events.4.OPT2
+
+		add_stability = -1
+	}
+}
+
+#Hyangyak
+country_event = {
+	id = FEE_Korea_Events.5
+	title = FEE_Korea_Events.5.T
+	desc = FEE_Korea_Events.5.D
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = KOR
+		stability = 1
+		government = monarchy
+		is_year = 1500
+		NOT = { is_year = 1550 }
+	}
+
+	mean_time_to_happen = {
+		months = 240
+	}
+
+	option = {
+		name = FEE_Korea_Events.5.OPT1
+
+		custom_tooltip = fee_kor_every_korean_province_kyangyak_tt
+		hidden_effect = {
+			every_province = {
+				limit = {
+					culture = korean
+				}
+				add_local_autonomy = 20
+				add_province_modifier = {
+					name = fee_kor_hyangyak
+					duration = -1
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Korea_Events.5.OPT2
+
+		add_adm_power = 25
+		add_treasury = 10
+	}
+}
+
+#Jo Gwang-jo
+country_event = {
+	id = FEE_Korea_Events.6
+	title = FEE_Korea_Events.6.T
+	desc = FEE_Korea_Events.6.D
+	picture = ADVISOR_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = KOR
+		is_year = 1480
+		NOT = { is_year = 1530 }
+	}
+
+	mean_time_to_happen = {
+		months = 360
+	}
+
+	option = {
+		name = FEE_Korea_Events.6.OPT1
+
+		add_stability_or_adm_power = yes
+		define_advisor = {
+			type = philosopher
+			name = "Jo Gwang-jo"
+			skill = 3
+			discount = yes
+		}
+	}
+
+	option = {
+		name = FEE_Korea_Events.6.OPT2
+
+		add_adm_power = 50
+		add_dip_power = 25
+		add_mil_power = 25
+	}
+}
+
+#Queen Jeongsun
+country_event = {
+	id = FEE_Korea_Events.7
+	title = FEE_Korea_Events.7.T
+	desc = FEE_Korea_Events.7.D
+	picture = wihgfx_FEMALE_RULER_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = KOR
+		is_year = 1780
+		has_regency = yes
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = FEE_Korea_Events.7.OPT1
+
+		define_advisor = {
+			female = yes
+			type = inquisitor
+			name = Jeongsun
+			skill = 2
+		}
+	}
+
+	option = {
+		name = FEE_Korea_Events.7.OPT2
+
+		add_prestige = 10
+	}
+}
+
+#Silhak Movement
+country_event = {
+	id = FEE_Korea_Events.8
+	title = FEE_Korea_Events.8.T
+	desc = FEE_Korea_Events.8.D
+	picture = DEBATE_REPUBLICAN_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = KOR
+		is_year = 1600
+		NOT = { is_year = 1700 }
+	}
+
+	mean_time_to_happen = {
+		months = 600
+	}
+
+	option = {
+		name = FEE_Korea_Events.8.OPT1
+
+		add_country_modifier = {
+			name = fee_kor_silhak
+			duration = -1
+		}
+	}
+}
+
+#Silhak Scholars Aid Westernisation
+country_event = {
+	id = FEE_Korea_Events.9
+	title = FEE_Korea_Events.9.T
+	desc = FEE_Korea_Events.9.D
+	picture = ADVISOR_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = KOR
+		has_institution = printing_press
+		NOT = { has_institution = global_trade }
+		has_country_modifier = fee_kor_silhak
+	}
+
+	mean_time_to_happen = {
+		months = 36
+	}
+
+	option = {
+		name = FEE_Korea_Events.9.OPT1
+
+		remove_country_modifier = fee_kor_silhak
+		add_country_modifier = {
+			name = fee_kor_westernisation
+			duration = 120
+		}
+	}
+}
+
+#Yi Sun-sin
+country_event = {
+	id = FEE_Korea_Events.10
+	title = FEE_Korea_Events.10.T
+	desc = FEE_Korea_Events.10.D
+	picture = SHIP_SAILING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = KOR
+		is_year = 1550
+		NOT = { is_year = 1600 }
+	}
+
+	mean_time_to_happen = {
+		months = 480
+		modifier = {
+			factor = 0.5
+			is_at_war = yes
+		}
+		modifier = {
+			factor = 0.7
+			advisor = naval_reformer
+		}
+	}
+
+	option = {
+		name = FEE_Korea_Events.10.OPT1
+
+		add_dip_power = 25
+		add_navy_tradition = 5
+		define_admiral = {
+			name = "Yi Sun-sin"
+			shock = 5
+			fire = 4
+			manuever = 5
+		}
+	}
+
+	option = {
+		name = FEE_Korea_Events.10.OPT2
+
+		add_navy_tradition = 10
+		add_dip_power = 50
+	}
+}
+
+#De Sperwer shipwrecks
+country_event = {
+	id = FEE_Korea_Events.11
+	title = FEE_Korea_Events.11.T
+	desc = FEE_Korea_Events.11.D
+	picture = SHIP_SAILING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = KOR
+		exists = NED
+		is_year = 1640
+		NOT = { is_year = 1670 }
+		technology_group = chinese
+	}
+
+	mean_time_to_happen = {
+		months = 180
+	}
+
+	option = {
+		name = FEE_Korea_Events.11.OPT1
+		add_dip_power = 50
+	}
+
+	option = {
+		name = FEE_Korea_Events.11.OPT2
+		add_mil_power = 50
+	}
+}

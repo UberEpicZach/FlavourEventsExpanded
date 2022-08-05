@@ -77,9 +77,9 @@ country_event = {
 		hidden_effect = {
 			set_country_flag = FEE_Charles_V_Events_born
 			HAB = {
-				country_event = { id = flavor_spa.14 }	#Gives Austria the generic notification of Habsburg on a foreign throne
+				country_event = { id = flavor_spa.14 }#Gives Austria the generic notification of Habsburg on a foreign throne
 			}
-		}	
+		}
 	}
 }
 
@@ -99,10 +99,10 @@ country_event = {
 			dynasty = "von Habsburg"
 		}
 		hre_size = 1
-		NOT = { junior_union_with = HAB }	#Won't fire if already in a union with Austria.
+		NOT = { junior_union_with = HAB }#Won't fire if already in a union with Austria.
 		NOT = { senior_union_with = HAB }
 		NOT = { has_country_flag = FEE_Charles_V_Events_dead } #Won't fire if Chalres died as an heir
-		NOT = { has_country_flag = FEE_Charles_V_Events_ruler } 
+		NOT = { has_country_flag = FEE_Charles_V_Events_ruler }
 	}
 
 	major = yes
@@ -119,7 +119,7 @@ country_event = {
 		name = FEE_Charles_V_Events.2.OPT1	#FEE_Charles_V_Events.2.OPT1:0 "Long may he reign!"
 		#Add 20 AE
 		hidden_effect = {
-			set_country_flag = FEE_Charles_V_Events_ruler 
+			set_country_flag = FEE_Charles_V_Events_ruler
 		}
 		#define_ruler = {
 		#	adm = 2
@@ -166,7 +166,7 @@ country_event = {
 					limit = {
 						is_subject_of_type = personal_union
 					}
-					set_country_flag = fee_charles_v_pu_austria    
+					set_country_flag = fee_charles_v_pu_austria   
 				}
 			}
 		}
@@ -219,7 +219,7 @@ country_event = {
 }
 
 #Charles V Abdicates
-country_event = { 
+country_event = {
 	id = FEE_Charles_V_Events.3
 	title = FEE_Charles_V_Events.3.T
 	desc = FEE_Charles_V_Events.3.D
@@ -290,7 +290,7 @@ country_event = {
 				every_core_province = {
 					limit = {
 						OR = {
-							region = low_countries_region 
+							region = low_countries_region
 							region = france_region
 						}
 					}
@@ -330,7 +330,7 @@ country_event = {
 							region = france_region
 						}
 					}
-					is_part_of_hre = yes 
+					is_part_of_hre = yes
 				}
 				set_in_empire = no
 			}
@@ -465,8 +465,8 @@ country_event = {
 #Hidden event that prevents chain from continuing if Charles V dies before ruling.
 country_event = {
 	id = FEE_Charles_V_Events.4
-	title = FEE_Charles_V_Events.4.T 
-	desc = FEE_Charles_V_Events.4.D #FEE_Charles_V_Events.D.1:0 
+	title = FEE_Charles_V_Events.4.T
+	desc = FEE_Charles_V_Events.4.D #FEE_Charles_V_Events.D.1:0
 	picture = NEW_HEIR_eventPicture
 
 	is_triggered_only = yes #Triggered by heir death
@@ -512,13 +512,13 @@ country_event = {
 #	}
 #	option = {
 #		name = FEE_Charles_V_Events.5.OPT1
-#		every_country = {	
+#		every_country = {
 #			limit = {
 #				is_elector = yes
 #			}
 #			set_country_flag = was_elector
 #			elector = no	#Briefly removes all the electors from the empire
-#		}	
+#		}
 #	}
 #}
 #country_event = {			#Puts ROOT in Empire, makes it an elector
@@ -669,7 +669,7 @@ country_event = {
 			HAB = {					#Cedes the Austian Netherlands to Spain/Castille
 				every_core_province = {
 					limit = {
-						region = low_countries_region 
+						region = low_countries_region
 					}
 					cede_province = ROOT
 					add_core = ROOT
@@ -849,7 +849,7 @@ country_event = {
 					}
 				}
 			}
-	
+
 			if = {
 				limit = {
 					HUN = {

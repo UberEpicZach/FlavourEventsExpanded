@@ -225,7 +225,7 @@ country_event = {
 	title = FEE_Jews_Events.1000.T
 	desc = FEE_Jews_Events.1000.D
 	picture = ADVISOR_eventPicture
-	
+
 	trigger = {
 		check_variable = {
 			which = FEE_JEW_APPROVE
