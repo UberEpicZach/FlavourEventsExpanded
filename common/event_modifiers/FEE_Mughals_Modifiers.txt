@@ -1,0 +1,20 @@
+#The Red Fort
+fee_mug_red_fort = {
+	local_build_cost = -0.1
+	local_defensiveness = 0.2
+}
+#Integration with Indian Culture for Mughals (or not)
+fee_mug_integration_hindu_culture = {
+	religious_unity = 0.15
+	num_accepted_cultures = 1
+	diplomatic_reputation = 1
+	vassal_income = 0.1
+	global_missionary_strength = -0.01
+}
+fee_mug_hindu_conversion_policy = {
+	tolerance_heathen = -2
+	global_missionary_strength = 0.01
+}
+
+fee_paid_MUG_tribute = {
+}

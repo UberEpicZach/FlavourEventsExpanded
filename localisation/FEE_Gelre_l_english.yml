@@ -1,0 +1,32 @@
+﻿l_english:
+ FEE_Gelre_Events.1.T: "The Revolt of Adolf van Egmond"
+ FEE_Gelre_Events.1.D: "In 1465, the first Egmond duke of Gelre, Alfred, suffered a rebellion from his son, Adolf. Adolf was supported by not only the fourmajor cities of Gelre, but also by the Duke of Burgundy.\n\nArnold was imprisoned, and his son seized power. His favour was short-lived, however, and the continued struggle for power would culminate in the sale of the right of succession in Gelre to the Dukes of Burgundy."
+ FEE_Gelre_Events.1.OPT1: "We will destroy Adolf's revolt!"
+ FEE_Gelre_Events.1.OPT2: "Let's ensure the Duke of Burgundy supports our side."
+
+ FEE_Gelre_Events.2.T: "Burgundy Demands a Compromise!"
+ FEE_Gelre_Events.2.D: "Following the turmoil in our country, our powerful neighbour the Duke of Burgundy has demanded that our power struggles cease bringing instability to the region.\n\nThings can certainly not continue as they have, but only one solution has been found to ensure the continued prosperity of our little duchy. The Duke of Burgundy might be willing to pay a significant amount of gold to receive the right of inheritance of $COUNTRY$. This would ensure that the nobles fighting over the right to rule would be bypassed. Although we would swear fealty under a foreign ruler, we would also be able to line our coffers quite handsomely."
+ FEE_Gelre_Events.2.OPT1: "Offer the ruler of Burgundy the right to rule."
+ FEE_Gelre_Events.2.OPT2: "We can sort these troubles ourselves!"
+
+ FEE_Gelre_Events.3.T: "The Compromise of Gelre"
+ FEE_Gelre_Events.3.D: "Following recent instabilities in their country, and the worry that a power struggle will spread across their borders, our diplomats have presented to the Gelreans an irresistible offer.\n\n To avoid further infighting, the [Root.Monarch.GetTitle] of Burgundy may buy the right to succession in Gelre, thus bypassing the fighting parties. This would require us to dig deep in our coffers, but would expand our influence in the Low Countries."
+ FEE_Gelre_Events.3.OPT1: "We will do everything in our power to solve the crisis of Gelre."
+ FEE_Gelre_Events.3.OPT2: "Let us only offer them diplomatic support, not protection."
+
+ FEE_Gelre_Events.4.T: "Burgundy Accepts the Compromise"
+ FEE_Gelre_Events.4.D: "The [From.Monarch.GetTitle] of Burgundy has accepted our offer of a political solution! They will now protect ourlands, and we now have an enormous ducal grant to develop our duchy."
+ FEE_Gelre_Events.4.OPT1: "Sweet, sweet gold!"
+
+ FEE_Gelre_Events.5.T: "Burgundy Refuses the Compromise!"
+ FEE_Gelre_Events.5.D: "Blaming a lack of funds, Burgundy has offended us with a move of diplomatic betrayal. They have refused our offer of union!"
+ FEE_Gelre_Events.5.OPT1: "We should stop fighting among ourselves and look to our enemies on the outside..."
+
+ #Modifiers:
+ fee_gel_adolfs_unrest: "Adolf's Unrest"
+ desc_fee_gel_adolfs_unrest: "Adolf van Egmond is wreaking havoc and attempting to recruit our people against us."
+ fee_gel_compromise_with_adolf: "Compromise With Adolf"
+ desc_fee_gel_compromise_with_adolf: "We negotiated a compromise with Adolf van Egmond, to stop the pointless fighting in our lands."
+
+# Tooltips
+ fee_gel_offer_ruler_gerle_burgundy_tt: "The ruler of Burgundy will be offered to rule Gelre for 3 ducats. They may decline."

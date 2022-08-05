@@ -264,31 +264,7 @@ fee_janissaries_against_ruler = {
 	global_unrest = 1
 }
 
-fee_ciudadela_pamplona = {
-	local_defensiveness = 0.25
-}
 
-# Dutch Generality Lands
-fee_generality_lands = {
-	local_tax_modifier = -0.4
-	local_autonomy = -0.01
-	local_development_cost = 0.2
-	local_build_cost = 0.15
-	local_unrest = -1
-}
-
-# Modifiers for Adolf van Egmond's revolt and the Burgundian compromise
-fee_adolf_revolted = {
-}
-
-fee_adolfs_unrest = {
-	local_autonomy = 0.05
-	local_unrest = 2
-}
-
-fee_adolf_compromise = {
-	global_unrest = -2
-}
 
 # Barbary Corsairs Event Chain
 fee_support_barbary = {
@@ -504,24 +480,6 @@ fee_scientific_revolution_malus = {
 	technology_cost = 0.05
 }
 
-#Maratha Uprising
-fee_marathi_enemy = {
-}
-
-fee_defected_once = {
-}
-
-fee_no_more_defections = {
-}
-
-fee_western_aid_marathan_enemy = {
-	siege_ability = 0.15
-}
-
-fee_maratha_western_arms = {
-	discipline = 0.05
-}
-
 #Enlightenment timers
 fee_enlightenment_coffee_house_timer = {
 }
@@ -552,41 +510,11 @@ fee_strong_censorship = {
 }
 
 
-#Navarran Civil War
-fee_navarran_civil_war = {
-}
-
 #Sake Dean Mahomed
 fee_travels_of_mahomed = {
 	diplomatic_reputation = 1
 }
 
-#The Red Fort
-fee_red_fort = {
-	local_build_cost = -0.1
-	local_defensiveness = 0.2
-}
-
-#Integration with Indian Culture for Mughals (or not)
-fee_hindu_integration = {
-	religious_unity = 0.15
-	num_accepted_cultures = 1
-	diplomatic_reputation = 1
-	vassal_income = 0.1
-	global_missionary_strength = -0.01
-}
-
-fee_hindu_conversion_policy = {
-	tolerance_heathen = -2
-	global_missionary_strength = 0.01
-}
-
-#Mughal tribute payment counter
-fee_MUG_received_tribute = {
-}
-
-fee_paid_MUG_tribute = {
-}
 
 # Golkonda Fort
 fee_golkonda_fort = {

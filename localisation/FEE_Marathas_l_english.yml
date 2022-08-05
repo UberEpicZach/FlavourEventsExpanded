@@ -1,0 +1,39 @@
+﻿l_english:
+ FEE_Marathas_Events.1.T: "Uprising of the Marathas!"
+ FEE_Marathas_Events.1.D: "For centuries, the Marathi people have been ruled by outsiders granting them their superior laws and customs. Despite our best efforts to make them understand how beneficial our rule has been for them, the dream of an independent Marathi kingdom is stronger than ever before. \n\nThis desire has allowed a Marathi warrior by the name of Shivaji to raise a small army. Some of our unprepared forts were quickly overrun, and he already dares claim the title of \"Raj\". \n\nWe must show this Marathi \"kingdom\" the price of disloyalty."
+ FEE_Marathas_Events.1.OPT1: "For all the lands of $COUNTRY$!"
+ FEE_Marathas_Events.2.T: "Fort Commanders Betray Us"
+ FEE_Marathas_Events.2.D: "Shivaji's campaign for Marathi independence and Hindu self-rule is extending across all our Marathi lands. Now, through bribery, negotiations, or false promises of a better kind of freedom he is attracting new loyalties. Several of our forts in $PROVINCE$ have sworn allegiance to him, letting the false raj extend his power there!"
+ FEE_Marathas_Events.2.OPT1: "It is time we put an end to this."
+
+ FEE_Marathas_Events.3.T: "Fort Defects to $MONARCH$"
+ FEE_Marathas_Events.3.D: "Following success after success in the lands of the Marathas, the dream of an independent kingdom is getting stronger. \nNow, thanks to the indomitable leadership displayed by [Root.Monarch.GetName], several forts have defected to us. With their garrisons by our side, we have seized the land surrounding them."
+ FEE_Marathas_Events.3.OPT1: "The strength of the Marathas is ever growing."
+
+ FEE_Marathas_Events.4.T: "Doing What Needs to be Done"
+ FEE_Marathas_Events.4.D: "[Root.Monarch.GetName] was called to negotiations by the enemy general. They would both appear with only one bodyguard, and no other weapons but a sword each. \nOf course, it is clear the general was not really looking for a peaceful solution, or he would not have set such an obvious trap.  \n\nWith metal tiger claws hidden underneath his armour, the [Root.Monarch.GetTitle] was ready when the general moved to strike. It is said that with blood pouring from his mouth, the general cursed the name of \"[Root.Monarch.GetName]\". To the Marathas storming over the hill to ambush the general's troops, it was a battlecry. \n\nThe enemy army shattered in moments."
+ FEE_Marathas_Events.4.OPT1: "[Root.Monarch.GetName], the warrior, the general, the [Root.Monarch.GetTitle]!"
+
+ FEE_Marathas_Events.5.T: "Negotiations and Betrayal!"
+ FEE_Marathas_Events.5.D: "In an attempt at reconciliation with the upstart Marathi kingdom, one of our greatest generals called for negotiations with \"[From.Monarch.GetTitle]\" [From.Monarch.GetName]. They were to meet with only one bodyguard, and no other weapons but a sword each. Thus they would find a solution to the war and stop the bloodshed. \n\nA peaceful solution appears not to interest our enemy, however. With metal tiger claws hidden underneath his armour, [From.Monarch.GetName] struck at our loyal general, murdering him in a holy place. \nTo make matters worse, an army of Marathas poured forth from hiding, slaying those of our soldiers who hoped for the war to end that day. \n\nSuch a betrayal must never be allowed to happen again."
+ FEE_Marathas_Events.5.OPT1: "The time for negotiation is over. This ends in blood."
+
+ FEE_Marathas_Events.6.T: "Western Aid"
+ FEE_Marathas_Events.6.D: "With the Marathas still resilient to our overwhelming force, severe action is required. With western countries establishing themselves in India, the opportunity to use their military expertise should not go unfeeded. \n\nAs they worry about stability and trade among the Indian states, we have been offered the use of their artillery to help siege the rebellious forts and cities."
+ FEE_Marathas_Events.6.OPT1: "With these weapons we'll bring the Marathas to feel."
+ FEE_Marathas_Events.6.OPT2: "[Root.GetAdjective] discipline will be enough."
+
+ FEE_Marathas_Events.7.T: "$FROM$ Relies on Foreign Weaponry"
+ FEE_Marathas_Events.7.D: "We have time and time again been denied trade with the westerners in India, and now the reason is clear. $FROM$ is attempting to monopolise European weaponry, and the Europeans are playing along. Not only has $FROM$ acquired new, trained artillery, they have also employed western soldiers still fighting under the banner of their home country! \n\nWith a raid on a European factory or trade store, we too could secure these tools of war."
+ FEE_Marathas_Events.7.OPT1: "Those who support $FROM$ deserve nothing less!"
+ FEE_Marathas_Events.7.OPT2: "We must focus on the real enemy."
+
+# Modifiers
+ fee_mar_western_aid_marathan_enemy: "Western Aid Against Marathas"
+ desc_fee_mar_western_aid_marathan_enemy: "We have acquired Western artillery in order to bring a final end to the Marathas uprising."
+ fee_mar_seized_western_arms: "Seized Western Arms"
+ desc_fee_mar_seized_western_arms: "We have seized Western weaponry to use against our enemies."
+
+# Opinion Modifiers
+ fee_mar_maratha_raided_stores: "Maratha-Raided Stores"
+ FEE_Marathas_Eventsatha_raided_western_stores: "Raided Weapon Stores"

@@ -132,24 +132,6 @@ fee_BUR_lotharingia_opinion2 = {
 	yearly_decay = 1
 }
 
-#Rejected Marriage
-fee_rejected_marriage = {
-	opinion = -15
-	yearly_decay = 1
-}
-
-#Marathas Raiding Western Stores
-fee_maratha_raided_stores = {
-	opinion = -25
-	yearly_decay = 1
-}
-
-#Grand tribute paid
-fee_MUG_tribute = {
-	opinion = 25
-	yearly_decay = 1
-}
-
 #Gift for protection
 fee_NOV_gift = {
 	opinion = 25

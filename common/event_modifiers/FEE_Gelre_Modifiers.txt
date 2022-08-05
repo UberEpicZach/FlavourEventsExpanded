@@ -1,0 +1,8 @@
+# Modifiers for Adolf van Egmond's revolt and the Burgundian compromise
+fee_gel_adolfs_unrest = {
+	local_autonomy = 0.05
+	local_unrest = 2
+}
+fee_gel_compromise_with_adolf = {
+	global_unrest = -2
+}

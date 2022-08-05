@@ -1,15 +1,13 @@
-namespace = events_mul
-normal_or_historical_nations = yes
+namespace = FEE_Multan_Events
 
 #A New Dynasty
 country_event = {
-	id = events_mul.1
-	title = "events_mul.1.tt"
-	desc = "events_mul.1.dd"
+	id = FEE_Multan_Events.1
+	title = FEE_Multan_Events.1.T
+	desc = FEE_Multan_Events.1.D
 	picture = COURT_eventPicture
 
 	fire_only_once = yes
-
 
 	trigger = {
 		tag = MUL
@@ -22,7 +20,8 @@ country_event = {
 	}
 
 	option = {
-		name = "events_mul.1.OPT1" #The time for them to accept their new sultans has not yet come.
+		name = FEE_Multan_Events.1.OPT1 #The time for them to accept their new sultans has not yet come.
+
 		add_legitimacy_equivalent = { amount = -25 republican_tradition = -12 }
 		add_stability = -1
 	}

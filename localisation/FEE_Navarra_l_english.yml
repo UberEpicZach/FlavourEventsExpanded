@@ -1,0 +1,64 @@
+﻿l_english:
+ FEE_Navarra_Events.1.T: "The Wedding of Navarra"
+ FEE_Navarra_Events.1.D: "The state of Navarra is small and vulnerable, but we have close bonds to the royal family of Aragon. If we were to enter into a marriage alliance with them, our countries can grow strong together, even if it means letting go of our independence."
+ FEE_Navarra_Events.1.OPT1: "It is the right thing for Navarra."
+ FEE_Navarra_Events.1.OPT2: "Navarra will grow strong on her own!"
+
+ FEE_Navarra_Events.2.T: "The Wedding of Navarra"
+ FEE_Navarra_Events.2.D: "It is a great day for Aragon. Seeing their exposed situation, wedged between great countries, [From.Monarch.GetTitle] [From.Monarch.GetName] of Navarra has offered to enter into a marriage alliance which would result in the throne of Navarra passing to us."
+ FEE_Navarra_Events.2.OPT1: "Let us enter this alliance, for the good of Aragon and Navarra."
+ FEE_Navarra_Events.2.OPT2: "Pah, what do we want with their worthless dukedom?"
+
+ FEE_Navarra_Events.3.T: "Aragon Rejects Our Offer of Marriage"
+ FEE_Navarra_Events.3.D: "The nerve! In a diplomatic betrayal, [From.Monarch.GetTitle] [From.Monarch.GetName] of Aragon has decided to reject our offer of marriage and allegiance!"
+ FEE_Navarra_Events.3.OPT1: "They will regret this day..."
+
+ FEE_Navarra_Events.4.T: "The Navarran Civil War!"
+ FEE_Navarra_Events.4.D: "The difficult order of succession agreed upon the union of Navarra and $OVERLORD$, by way of marriages and promises of inheritance, has collapsed. [Root.Monarch.GetTitle] [Root.Monarch.GetName] refuses to acknowledge the heir agreed upon by the establishment of the union, and now seeks to consolidate their own power instead. This has caused the rightful heir to rise up in arms, with support from the nobles of Navarra."
+ FEE_Navarra_Events.4.OPT1: "We fight for Navarra!"
+
+ FEE_Navarra_Events.5.T: "The Navarran Civil War!"
+ FEE_Navarra_Events.5.D: "The difficult order of succession agreed upon the union of Navarra and $COUNTRY$, by way of marriages and promises of inheritance, has collapsed. [Root.Monarch.GetTitle] [Root.Monarch.GetName] refuses to acknowledge the heir agreed upon by the establishment of the union, and now seeks to consolidate their own power instead. This has caused the rightful heir to rise up in arms, with support from the nobles of Navarra."
+ FEE_Navarra_Events.5.OPT1: "For [Root.Monarch.GetName], [Root.Monarch.GetTitle] of Navarra!"
+
+ FEE_Navarra_Events.6.T: "Civil War Brews in Navarra"
+ FEE_Navarra_Events.6.D: "The order of succession agreed upon with the dynastic union of Aragon and Navarra has broken down. In an attempt to consolidate [Root.Monarch.GetHerHis] power, [Root.Monarch.GetName] of Aragon has refused the rightful claim of Carlos de Trastamara to the throne of Navarra. The [Root.Monarch.GetTitle] has even attempted to pass the throne to another heir in order to prevent it from falling in the hands of the popular Carlos. \nNow the Trastamaran prince has gathered the support of the Navarrese nobles, and is preparing to rise up in revolt."
+ FEE_Navarra_Events.6.OPT1: "What will the king of Aragon do?"
+
+ FEE_Navarra_Events.7.T: "Navarra Brims With Dissent"
+ FEE_Navarra_Events.7.D: "The order of succession agreed upon with the dynastic union of Aragon and Navarra has broken down. In order to stabilise the two kingdoms, [Root.Monarch.GetTitle] [Root.Monarch.GetName] of Aragon has refused the claim of Carlos de Trastamara to the throne of Navarra. The [Root.Monarch.GetTitle] has even attempted to pass the throne to another heir in order to prevent it from falling in the hands of the overly popular Carlos. \nNow the Trastamaran prince has gathered the support of the Navarrese nobles, and is preparing to rise up in revolt. \n\nHow should we deal with this?"
+ FEE_Navarra_Events.7.OPT1: "We will cut the pretender down!"
+ FEE_Navarra_Events.7.OPT2: "Abdicate in favour of [Root.Heir.GetName] to secure both thrones."
+ FEE_Navarra_Events.7.OPT3: "If Carlos is willing to bleed for Navarra, then let him have it."
+
+ FEE_Navarra_Events.8.T: "The Monarch Abdicates!"
+ FEE_Navarra_Events.8.D: "In order to secure the succession of both thrones in a single person, the monarch of Aragon has abdicated in favor of [Root.Monarch.GetName]! \n\nThis unexpected turn means that [Root.Monarch.GetName]'s claim to the Navarrese throne is strengthened, bypassing Carlos in the line of succession. Never did we think the old monarch would lower themselves to such a desperat act."
+ FEE_Navarra_Events.8.OPT1: "Their claim is true, but it will take more to rule Navarra."
+
+ FEE_Navarra_Events.9.T: "Carlos Is Named Ruler of Navarra"
+ FEE_Navarra_Events.9.D: "Seeing the case laid forth by Carlos, and the immense support he has gathered in the kingdom, [From.Monarch.GetTitle] [From.Monarch.GetName] has wisely decided to acknowledge his rightful claim, and pass the throne of Navarra to him."
+ FEE_Navarra_Events.9.OPT1: "God is with Carlos!"
+
+ FEE_Navarra_Events.10.T: "Saint Francis Xavier"
+ FEE_Navarra_Events.10.D: "Francis Xavier was a missionary, and one of the seven jesuits who first took vows of poverty and chastity at Montmartre in 1543. /n/n Francis led an extensive missionary expedition into Asia, to many places never before visited by Christian missionaries, such as India, Japan and Borneo. While he died on his way to China, he was remembered as one of the greatest missionaries who ever lived, and was named one of the patron saints of Navarra. Later he would also become the patron saint of all missionaries in foreign lands."
+ FEE_Navarra_Events.10.OPT1: "He should serve as a minister at home."
+ FEE_Navarra_Events.10.OPT2: "Let him go to distant lands and spread the word of God!"
+
+ FEE_Navarra_Events.11.T: "The Ciudadela de Pamplona"
+ FEE_Navarra_Events.11.D: "The ever-present threat from France has drawn to our attention the need of a stronghold in Pamplona. The main city of Navarra is key to stopping an enemy from reaching the defenseless land in the Valley of Ebro, and so must be protected.\n\n Our military engineers have presented plans for a grand citadel."
+ FEE_Navarra_Events.11.OPT1: "We must protect our heartland."
+ FEE_Navarra_Events.11.OPT2: "Let's develop a different strategy instead."
+
+ FEE_Navarra_Events.12.T: "$PROVINCE$ visited by Francis Xavier"
+ FEE_Navarra_Events.12.D: "A foreigner by the name of Francis Xavier, claiming to be from the distant lands far to the west, has arrived in our lands. Clad in tattered robes and travelling with little of value, he has been visiting many places in our country. There he has been spreading the word of his god, attempting to convince people of his beliefs. \n\n Somehow, in $PROVINCE$ he has found people willing to listen. Though it is heresy, much of the population there now profess this foreign faith."
+ FEE_Navarra_Events.12.OPT1: "Gullible fools."
+
+# Modifiers
+ fee_nav_ciudadela_pamplona: "Ciudadela de Pamplona"
+ desc_fee_nav_ciudadela_pamplona: "We have built a mighty citadel here, a true monument to our power."
+
+# Opinion Modifiers
+ fee_nav_rejected_marriage_offer: "Rejected Marriage Offer"
+
+# Tooltips
+ fee_nav_francis_xavier_conversion: "Francis Xavier will visit foreign lands."

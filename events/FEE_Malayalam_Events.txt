@@ -1,0 +1,347 @@
+namespace = FEE_Malayalam_Events
+
+#Cherusseri Namboothiri
+country_event = {
+	id = FEE_Malayalam_Events.1
+	title = FEE_Malayalam_Events.1.T
+	desc = FEE_Malayalam_Events.1.D
+	picture = ADVISOR_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		owns_core_province = 4413
+		is_year = 1446
+		NOT = { is_year = 1470 }
+	}
+
+	mean_time_to_happen = {
+		months = 72
+	}
+
+	option = {
+		name = FEE_Malayalam_Events.1.OPT1	#Invite him to court.
+
+		add_adm_power = 75
+		add_meritocracy_effect = yes
+		define_advisor = {
+			type = theologian
+			name = "Cherusseri Namboothiri"
+			culture = malayalam
+			religion = hinduism
+			discount = yes
+			skill = 1
+		}
+	}
+}
+
+#Thunchaththu Ezhuthachan
+country_event = {
+	id = FEE_Malayalam_Events.2
+	title = FEE_Malayalam_Events.2.T
+	desc = FEE_Malayalam_Events.2.D
+	picture = PRAYING_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		owns_core_province = 534
+		is_year = 1535
+		NOT = { is_year = 1570 }
+		has_country_flag = had_somayaji
+	}
+
+	mean_time_to_happen = {
+		months = 72
+	}
+
+	option = {
+		name = FEE_Malayalam_Events.2.OPT1	#Invite him to court.
+
+		add_adm_power = 100
+		add_meritocracy_effect = yes
+		define_advisor = {
+			type = theologian
+			name = "Thunchaththu Ezhuthachan"
+			culture = malayalam
+			religion = hinduism
+			discount = yes
+			skill = 3
+		}
+	}
+}
+
+#Kunchan Nambiar
+country_event = {
+	id = FEE_Malayalam_Events.3
+	title = FEE_Malayalam_Events.3.T
+	desc = FEE_Malayalam_Events.3.D
+	picture = RELIGION_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		owns_core_province = 534
+		is_year = 1740
+		NOT = { is_year = 1765 }
+	}
+
+	mean_time_to_happen = {
+		months = 72
+	}
+
+	option = {
+		name = FEE_Malayalam_Events.3.OPT1	#Invite him to court.
+
+		add_adm_power = 75
+		add_dip_power = 75
+		add_meritocracy_effect = yes
+		define_advisor = {
+			type = artist
+			name = "Kunchan Nambiar"
+			culture = malayalam
+			religion = hinduism
+			discount = yes
+			skill = 3
+		}
+	}
+}
+
+#Poonthanam Nambudiri
+country_event = {
+	id = FEE_Malayalam_Events.4
+	title = FEE_Malayalam_Events.4.T
+	desc = FEE_Malayalam_Events.4.D
+	picture = PRAYING_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		owns_core_province = 534
+		is_year = 1580
+		NOT = { is_year = 1620 }
+	}
+
+	mean_time_to_happen = {
+		months = 72
+	}
+
+	option = {
+		name = FEE_Malayalam_Events.4.OPT1	#Invite him to court.
+
+		add_adm_power = 75
+		add_meritocracy_effect = yes
+		define_advisor = {
+			type = theologian
+			name = "Poonthanam Nambudiri"
+			culture = malayalam
+			religion = hinduism
+			discount = yes
+			skill = 2
+		}
+	}
+}
+
+#Kerala School of Astronomy and Mathematics
+country_event = {
+	id = FEE_Malayalam_Events.5
+	title = FEE_Malayalam_Events.5.T
+	desc = FEE_Malayalam_Events.5.D
+	picture = UNIVERSITY_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		owns_core_province = 535
+		NOT = { is_year = 1632 }
+	}
+
+	mean_time_to_happen = {
+		months = 720
+	}
+
+	option = {
+		name = FEE_Malayalam_Events.5.OPT1	#Fund it.
+
+		add_treasury = -200
+		add_country_modifier = {
+			name = fee_malayalam_kerala_school
+			duration = 27375
+		}
+	}
+
+	option = {
+		name = FEE_Malayalam_Events.5.OPT2	#Don't fund it.
+
+		add_prestige = -20	
+	}
+}
+
+#Nilakanta Somayaji
+country_event = {
+	id = FEE_Malayalam_Events.6
+	title = FEE_Malayalam_Events.6.T
+	desc = FEE_Malayalam_Events.6.D
+	picture = INVENTION_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			owns_core_province = 534
+			owns_core_province = 535
+		}
+		is_year = 1500
+		NOT = { is_year = 1540 }
+	}
+
+	mean_time_to_happen = {
+		months = 72
+	}
+
+	option = {
+		name = FEE_Malayalam_Events.6.OPT1	#Invite him to court.
+
+		hidden_effect = { set_country_flag = had_somayaji }
+		add_adm_power = 150
+		add_meritocracy_effect = yes
+		define_advisor = {
+			type = natural_scientist
+			name = "Nilakanta Somayaji"
+			culture = malayalam
+			religion = hinduism
+			discount = yes
+			skill = 3
+		}
+	}
+}
+
+#Jyesthadeva
+country_event = {
+	id = FEE_Malayalam_Events.7
+	title = FEE_Malayalam_Events.7.T
+	desc = FEE_Malayalam_Events.7.D
+	picture = RELIGION_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			owns_core_province = 534
+			owns_core_province = 535
+		}
+		is_year = 1530
+		NOT = { is_year = 1570 }
+		has_country_flag = had_somayaji
+	}
+
+	mean_time_to_happen = {
+		months = 72
+	}
+
+	option = {
+		name = FEE_Malayalam_Events.7.OPT1	#Invite him to court.
+
+		hidden_effect = { set_country_flag = had_jyesthadeva }
+		add_adm_power = 100
+		add_meritocracy_effect = yes
+		define_advisor = {
+			type = natural_scientist
+			name = "Jyesthadeva"
+			culture = malayalam
+			religion = hinduism
+			discount = yes
+			skill = 3
+		}
+	}
+}
+
+#Melpathur Narayana Bhattathiri
+country_event = {
+	id = FEE_Malayalam_Events.8
+	title = FEE_Malayalam_Events.8.T
+	desc = FEE_Malayalam_Events.8.D
+	picture = PRAYING_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		owns_core_province = 535
+		is_year = 1585
+		NOT = { is_year = 1630 }
+		has_country_flag = had_achyutha
+	}
+
+	mean_time_to_happen = {
+		months = 72
+	}
+
+	option = {
+		name = FEE_Malayalam_Events.8.OPT1	#Invite him to court.
+
+		add_adm_power = 50
+		add_prestige = 20
+		add_meritocracy_effect = yes
+		define_advisor = {
+			type = natural_scientist
+			name = "Melpathur Narayana Bhattathiri"
+			culture = malayalam
+			religion = hinduism
+			discount = yes
+			skill = 2
+		}
+	}
+}
+
+#Death of Vatasseri Parameshwara Nambudiri (Parameshwara)
+country_event = {
+	id = FEE_Malayalam_Events.9
+	title = FEE_Malayalam_Events.9.T
+	desc = FEE_Malayalam_Events.9.D
+	picture = DEATH_OF_HEIR_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		owns_core_province = 535
+		is_year = 1450
+	}
+
+	mean_time_to_happen = {
+		months = 72
+	}
+
+	option = {
+		name = FEE_Malayalam_Events.9.OPT1	#A legend has passed.
+
+		add_prestige = 15
+	}
+}
+
+#Achyutha Pisharadi
+country_event = {
+	id = FEE_Malayalam_Events.10
+	title = FEE_Malayalam_Events.10.T
+	desc = FEE_Malayalam_Events.10.D
+	picture = RELIGION_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		owns_core_province = 534
+		is_year = 1580
+		NOT = { is_year = 1610 }
+		has_country_flag = had_jyesthadeva
+	}
+
+	mean_time_to_happen = {
+		months = 72
+	}
+
+	option = {
+		name = FEE_Malayalam_Events.10.OPT1	#Invite him to court.
+
+		hidden_effect = { set_country_flag = had_achyutha }
+		add_adm_power = 50
+		add_dip_power = 50
+		add_meritocracy_effect = yes
+		define_advisor = {
+			type = natural_scientist
+			name = "Achyutha Pisharadi"
+			culture = malayalam
+			religion = hinduism
+			discount = yes
+			skill = 3
+		}
+	}
+}

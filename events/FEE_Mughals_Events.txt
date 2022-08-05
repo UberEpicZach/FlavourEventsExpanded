@@ -1,0 +1,168 @@
+#Mughal events
+
+namespace = FEE_Mughals_Events
+
+#The Red Fort
+country_event = {
+	id = FEE_Mughals_Events.1
+	title = FEE_Mughals_Events.1.T
+	desc = FEE_Mughals_Events.1.D
+	picture = FORT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = MUG
+		owns = 522
+		is_year = 1630
+		NOT = { is_year = 1670 }
+	}
+
+	mean_time_to_happen = {
+		months = 240
+		modifier = {
+			factor = 2
+			is_at_war = yes
+		}
+	}
+
+	option = {
+		name = FEE_Mughals_Events.1.OPT1
+		ai_chance = {
+			factor = 90
+			modifier = {
+				num_of_loans = 25
+				factor = 0
+			}
+		}
+
+		add_years_of_income = -0.2
+		add_dip_power = 20
+		add_mil_power = 30
+		522 = {
+			add_province_modifier = {
+				name = fee_mug_red_fort
+				duration = -1
+			}
+		}
+		add_prestige = 20
+	}
+
+	option = {
+		name = FEE_Mughals_Events.1.OPT2
+		ai_chance = {
+			factor = 10
+		}
+
+		add_adm_power = 10
+		add_prestige = -1
+	}
+}
+
+#Integration with Indian Culture
+country_event = {
+	id = FEE_Mughals_Events.2
+	title = FEE_Mughals_Events.2.T
+	desc = FEE_Mughals_Events.2.D
+	picture = FORT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = MUG
+		num_of_owned_provinces_with = {
+			value = 4
+			religion = hinduism
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 240
+		modifier = {
+			factor = 0.7
+			has_idea_group = humanist_ideas
+		}
+	}
+
+	option = {
+		name = FEE_Mughals_Events.2.OPT1
+		ai_chance = {
+			factor = 80
+		}
+
+		add_dip_power = 50
+		add_country_modifier = {
+			name = fee_mug_integration_hindu_culture
+			duration = 36500
+		}
+	}
+
+	option = {
+		name = FEE_Mughals_Events.2.OPT2
+		ai_chance = {
+			factor = 10
+		}
+
+		add_country_modifier = {
+			name = fee_mug_hindu_conversion_policy
+			duration = 730
+		}
+	}
+
+	option = {
+		name = FEE_Mughals_Events.2.OPT3
+		ai_chance = {
+			factor = 10
+		}
+
+		add_stability_or_adm_power = yes
+	}
+}
+
+#Payment from tributary
+country_event = {
+	id = FEE_Mughals_Events.3
+	title = FEE_Mughals_Events.3.T
+	desc = FEE_Mughals_Events.3.D
+	picture = CONQUEST_eventPicture
+
+	trigger = {
+		tag = MUG
+		NOT = { has_country_flag = fee_mug_received_tribute }
+		any_subject_country = {
+			OR = {
+				NOT = { has_country_flag = fee_mug_paid_tribute }
+				had_country_flag = {
+					flag = fee_mug_paid_tribute
+					days = 3650
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = fee_mug_received_tribute
+		}
+	}
+
+	option = {
+		name = FEE_Mughals_Events.3.OPT1
+
+		add_years_of_income = 0.2
+		random_subject_country = {
+			reverse_add_opinion = {
+				who = MUG
+				modifier = fee_mug_paid_tribute
+			}
+			add_opinion = {
+				who = MUG
+				modifier = fee_mug_paid_tribute
+			}
+		}
+	}
+}

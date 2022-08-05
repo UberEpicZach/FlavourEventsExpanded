@@ -1,0 +1,48 @@
+﻿l_english:
+ FEE_Netherlands_Events.1.T: "Province Named Generality Lands"
+ FEE_Netherlands_Events.1.D: "Due to the challenges of administrating the population of it, the States-General has decided to name the region Generaliteitslande, or \"Generality Lands.\" This means that instead of being subject to one of the seven United Provinces, it will be governed directly by the States-General itself. \nThese regions are not represented in the central government - which might be best, considering their beliefs - and have no States-Provincial of their own.\n\nOne day we might have reason to let them be represented and govern themselves, but for now holding them as a dependent territory is best."
+ FEE_Netherlands_Events.1.OPT1: "The States-General votes unanimously in favor."
+
+ FEE_Netherlands_Events.2.T: "Province Achieves Representation"
+ FEE_Netherlands_Events.2.D: "After showing signs of development and stability, the region of it has finally been granted the right to its own administration. This comes with the responsibility of sending representatives to the States-General, and in time the former Generality Lands might even earn its own States-Provincial!"
+ FEE_Netherlands_Events.2.OPT1: "We are all people of the Netherlands, after all."
+
+ FEE_Netherlands_Events.3.T: "Arrival in Indonesia"
+ FEE_Netherlands_Events.3.D: "Our expedition to the East Indies has finally arrived! This morning we received news that after careful negotiations with the Sultan of Banten that our brave merchants and explorers have established a trading post there. Our merchants have also received an offer from the Prince of Jayakarta to construct a warehouse nearby. Should we accept? "
+ FEE_Netherlands_Events.3.OPT1: "We shall take the good Prince up on his offer."
+ FEE_Netherlands_Events.3.OPT2: "We should steer clear of this. "
+
+ FEE_Netherlands_Events.4.T: "Founding of Batavia"
+ FEE_Netherlands_Events.4.D: "We have had many trading ports in Asia since the VOC were given a monopoly over trade in Asia. One of our biggest was the warehouse at Jayakarta, however after long tensions with the English and the Natives of the region, the natives attempted to destroy the warehouses. In retaliation, the brave troops of the East India Company razed Jayakarta to the ground! However, VOC officials are now proposing to construct an organised Dutch city upon its ruins called Batavia and are asking for a grant."
+ FEE_Netherlands_Events.4.OPT1: "Let us found this bastion of the Dutch."
+ FEE_Netherlands_Events.4.OPT2: "These acts are barbaric!"
+
+ FEE_Netherlands_Events.5.T: "Formosa"
+ FEE_Netherlands_Events.5.D: "With our expansion in the East Indies it is time to pose the ultimate challenge to our rivals, the Portuguese. We must begin trade with the Middle Kingdom and prove ourselves dominant in Asia. For this purpose, we need a base closer to China. The island of Formosa serves perfectly, being largely uninhabited and mere miles from China itself."
+ FEE_Netherlands_Events.5.OPT1: "Establish a colony."
+
+ FEE_Netherlands_Events.6.T: "Koxinga and Tungning"
+ FEE_Netherlands_Events.6.D: "With the imminent collapse of the Ming Dynasty, a young general called Koxinga has fled to Northern Formosa, seeking to use it as a base to retake the mainland and restore Ming rule to China. The problem, of course, is that of our own colony in Formosa. Koxinga has issued us a demand to cede it, either willingly or by force."
+ FEE_Netherlands_Events.6.OPT1: "A fractured China is worthless to us, concede the colony."
+ FEE_Netherlands_Events.6.OPT2: "Over my dead body!"
+
+ FEE_Netherlands_Events.7.T: "The Dutch Impede Us"
+ FEE_Netherlands_Events.7.D: "In order to fight the pretenders to the Mandate of Heaven, we must first secure our own borders. Expel the Dutch from Taiwan!"
+ FEE_Netherlands_Events.7.OPT1: "Lay Siege to Zeelandia!"
+ FEE_Netherlands_Events.7.OPT2: "The Dutch are too powerful."
+
+ #Modifiers:
+ fee_ned_generality_lands: "Generality Lands"
+ desc_fee_ned_generality_lands: "This province is governed directly by the estates general, as it lacks its own administrative organisation."
+ fee_ned_dutch_warehouses: "Dutch Warehouses"
+ fee_ned_structured_city: "Structured City"
+
+# Opinion Modifiers
+ fee_ned_stole_our_province: "Stole our Province"
+ fee_ned_didnt_steal_our_province: "Didn't steal our Province"
+
+#Trade Modifiers
+ fee_ned_esat_indian_trade_ports: "East Indian Trade Ports"
+
+# Tooltips
+ fee_ned_offer_ruler_gerle_burgundy_tt: "The ruler of Burgundy will be offered to rule Gelre for 3 ducats. They may decline."

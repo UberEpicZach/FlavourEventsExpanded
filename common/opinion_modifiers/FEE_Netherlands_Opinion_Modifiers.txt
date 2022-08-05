@@ -1,0 +1,8 @@
+fee_ned_stole_our_province = {
+	opinion = -100
+	yearly_decay = 2
+}
+fee_ned_didnt_steal_our_province = {
+	opinion = 100
+	yearly_decay = 2
+}
