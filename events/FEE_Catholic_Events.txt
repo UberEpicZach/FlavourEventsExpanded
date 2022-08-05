@@ -1,0 +1,118 @@
+# Catholic events
+
+namespace = FEE_Catholic_Events
+
+# Masterpiece of Religious Renaissance Art
+country_event = {
+	id = FEE_Catholic_Events.1
+	title = FEE_Catholic_Events.1.T
+	desc = FEE_Catholic_Events.1.D
+	picture = IMPORTANT_STATUE_eventPicture
+	
+	trigger = {
+		NOT = { is_religion_enabled = protestant }
+		religion = catholic
+	}
+	
+	mean_time_to_happen = {
+		months = 840
+		modifier = {
+			factor = 0.8
+			advisor = artist
+		}
+	}
+	
+	#Display it for the entire Christian world to see
+	option = {
+		name = FEE_Catholic_Events.1.OPT1
+
+		change_religious_influence_equivalent_fee = { add = 10 }
+		add_prestige = 10
+	}
+	
+	#Perfect timing, I was just in need of some money
+	option = {
+		name = FEE_Catholic_Events.1.OPT2
+		trigger = {
+			ai = no
+		}
+
+		add_years_of_income = 0.3
+		add_reform_desire = 0.01
+		change_religious_influence_equivalent_fee = { remove = 5 }
+	}
+	
+	#This will show the people how pious I am
+	option = {
+		name = FEE_Catholic_Events.1.OPT3
+
+		add_stability_or_adm_power = yes
+		change_religious_influence_equivalent_fee = { remove = 5 }
+	}
+}
+
+# Growth of Popular Piety
+country_event = {
+	id = FEE_Catholic_Events.2
+	title = FEE_Catholic_Events.2.T
+	desc = FEE_Catholic_Events.2.D
+	picture = RELIGION_eventPicture
+	
+	trigger = {
+		NOT = { is_religion_enabled = protestant }
+		religion = catholic
+		reform_desire = 0.02
+		OR = {
+			NOT = { has_country_flag = fee_popular_piety_timer }
+			had_country_flag = {
+				flag = fee_popular_piety_timer
+				days = 18250
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 600
+		modifier = {
+			factor = 1.2
+			advisor = inquisitor
+		}
+		modifier = {
+			factor = 0.9
+			advisor = theologian
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = fee_popular_piety_timer
+			set_country_flag = fee_popular_piety_timer
+		}
+	}
+	
+	# These people should listen to the pope
+	option = {
+		name = FEE_Catholic_Events.2.OPT1
+		trigger = {
+			ai = no
+		}
+
+		add_reform_desire = 0.01
+		change_religious_influence_equivalent_fee = { add = 15 }
+		add_country_modifier = {
+			name = fee_cath_piety_resisted
+			duration = 3650
+		}
+	}
+	
+	# People should always strive for new ways to express their faith
+	option = {
+		name = FEE_Catholic_Events.2.OPT2
+
+		change_religious_influence_equivalent_fee = { remove = 15 }
+		add_country_modifier = {
+			name = fee_cath_piety_supported
+			duration = 3650
+		}
+	}
+}

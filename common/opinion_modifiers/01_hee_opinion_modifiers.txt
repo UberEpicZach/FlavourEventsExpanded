@@ -1,17 +1,6 @@
 ########################################
 #	 Historical Events Extended
 ########################################
-# Bavaria chooses to reconcile with the Habsburgs or oppose them
-fee_bav_reconcile_habsburgs = {
-	opinion = 30
-	yearly_decay = 1
-}
-
-fee_bav_against_habsburgs = {
-	opinion = -10
-	yearly_decay = 1
-}
-
 # Switzerland condemns mercenaries
 fee_swiss_soldiers_denied = {
 	opinion = -25

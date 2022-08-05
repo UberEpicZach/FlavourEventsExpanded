@@ -1,0 +1,80 @@
+# Hamburg Events
+
+namespace = FEE_Hamburg_Events
+
+# The Long Compromise
+country_event = {
+	id = FEE_Hamburg_Events.1
+	title = FEE_Hamburg_Events.1.T
+	desc = FEE_Hamburg_Events.1.D
+	picture = DEBATE_REPUBLICAN_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		OR = {
+			tag = HAM
+			tag = HSA
+		}
+		owns_core_province = 44
+		44 = { religion = protestant }
+	}
+	
+	mean_time_to_happen = {
+		months = 4
+	}
+	
+	option = {
+		name = FEE_Hamburg_Events.1.OPT1
+
+		add_stability_or_adm_power = yes
+		44 = {
+			add_province_modifier = {
+				name = fee_ham_thornton_colonize
+				duration = 3650
+			}
+		}
+	}
+}
+
+# Hamburg Stock Market
+country_event = {
+	id = FEE_Hamburg_Events.2
+	title = FEE_Hamburg_Events.2.T
+	desc = FEE_Hamburg_Events.2.D
+	picture = GREAT_BUILDING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_year = 1550
+		NOT = { is_year = 1570 }
+		OR = {
+			tag = HAM
+			tag = HSA
+		}
+		owns_core_province = 44
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = FEE_Hamburg_Events.2.OPT1
+
+		add_country_modifier = {
+			name = fee_ham_expand_loan_market
+			duration = -1
+		}
+	}
+
+	option = {
+		name = FEE_Hamburg_Events.2.OPT2
+
+		add_country_modifier = {
+			name = fee_ham_strict_control_loan_market
+			duration = -1
+		}
+	}
+}

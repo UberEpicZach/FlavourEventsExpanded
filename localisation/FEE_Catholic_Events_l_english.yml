@@ -1,0 +1,16 @@
+﻿l_english:
+ FEE_Catholic_Events.1.T: "Renaissance Masterpiece of Religious Art"
+ FEE_Catholic_Events.1.D: "A famed artist in our country has produced a stunning piece of art that illustrates the supremacy of God over the world. It awes everyone who sees it, and beautifully confirms the order of existence. As the royal family patrons the artist, it is now up to us to decide what happens to it."
+ FEE_Catholic_Events.1.OPT1: "Display it for the entire Christian world to see."
+ FEE_Catholic_Events.1.OPT2: "Perfect timing, I was just in need of some money."
+ FEE_Catholic_Events.1.OPT3: "A perfect illustration of our royal piety."
+ FEE_Catholic_Events.2.T: "Growth of Popular Piety"
+ FEE_Catholic_Events.2.D: "As many peasants feel that the church is growing more and more distant from their lives, they seek new ways of confirming their devoutness to God. This has led to local development of new practices, such as reparations to Christ and wider use of rosaries and scapulars. To make matters even more disconcerting, many are inventing personal prayers, rather than using the ones taught them by the church. Now the Pope himself has expressed worry at these deviations from Church doctrine."
+ FEE_Catholic_Events.2.OPT1: "These maniacs should listen to the Pope!"
+ FEE_Catholic_Events.2.OPT2: "People should always strive for new ways to express their faith."
+
+ #Modifiers
+ fee_cath_piety_resisted: "Repressing Popular Piety"
+ desc_fee_cath_piety_resisted: "Our people fails to understand that the Pope's word is the only one that can guide religious practices."
+ fee_cath_piety_supported: "Supporting Popular Piety"
+ desc_fee_cath_piety_supported: "Our people is being encouraged to find any way of showing faith that brings them closer to God."

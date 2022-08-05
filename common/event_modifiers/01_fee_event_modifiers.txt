@@ -14,12 +14,6 @@ fee_rejected_swabian_league = {
 fee_league_aid = {
 }
 
-# Bavaria fought robber barons
-fee_fought_robber_barons = {
-	global_unrest = -1
-	global_autonomy = -0.05
-}
-
 #Switzerland has the bernoulli family
 fee_bernoullis = {
 	technology_cost = -0.05
@@ -30,10 +24,7 @@ fee_wettstein = {
 	diplomatic_reputation = 1
 }
 
-# Hamburg has the Long Compromise
-fee_long_compromise = {
-	local_unrest = -5
-}
+
 
 # Hansa lets the English stay in Hamburg, or drive them off
 fee_english_hamburg = {
@@ -79,18 +70,6 @@ fee_savoy_mercenaries = {
 	mercenary_cost = -0.1
 }
 
-# Timer for Popular piety event
-fee_popular_piety_timer = {
-}
-
-fee_piety_resisted = {
-	global_unrest = 1
-}
-
-fee_piety_supported = {
-	global_unrest = -1
-}
-
 #Bugenhagen timer
 fee_johannes_bugenhagen = {
 }
@@ -117,18 +96,6 @@ fee_MOL_overlord = {
 fee_MOL_conquered = {
 }
 
-#The Black Army for Hungary
-hungarian_mercenary_core = {
-	mercenary_cost = -0.3
-	mercenary_manpower= 0.1
-	army_tradition_decay = -0.01
-}
-
-# Bibliotheca Corvinia
-hungarian_renaissance = {
-	adm_tech_cost_modifier = -0.1
-	prestige = 1
-}
 
 #Ottomans seizing the wheat of WAL or MOL
 fee_feeding_the_army_using_WAL = {
@@ -269,20 +236,6 @@ fee_silhak = {
 
 fee_westernisation_replacement = { 	
 	institution_growth = 0.10
-}
-
-#Hamburg Stock Market
-fee_hamburg_loan_market = {
-	interest = -1
-}
-
-fee_hamburg_strict_control = {
-	inflation_reduction = 0.1
-}
-
-#Tuscany's Thonrton expedition
-fee_thornton_colonize = {
-	colonists = 1
 }
 
 #Toob Menadir for Ajuuraan or Mogadishu

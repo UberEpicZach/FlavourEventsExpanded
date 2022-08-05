@@ -28,3 +28,8 @@ fee_hun_union_trium_nationum = {
 	local_autonomy = 0.10
 	local_unrest = -2
 }
+# Bibliotheca Corvinia
+fee_hun_hungarian_renaissance = {
+	adm_tech_cost_modifier = -0.1
+	prestige = 1
+}

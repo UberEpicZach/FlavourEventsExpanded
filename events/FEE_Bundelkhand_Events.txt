@@ -1,14 +1,12 @@
-namespace = events_bnd
-normal_or_historical_nations = yes
+namespace = FEE_Bundelkhand_Events
 
 country_event = {
-	id = events_bnd.1
-	title = "events_bnd.1.tt"
-	desc = "events_bnd.1.dd"
+	id = FEE_Bundelkhand_Events.1
+	title = FEE_Bundelkhand_Events.1.T
+	desc = FEE_Bundelkhand_Events.1.D
 	picture = CITY_VIEW_eventPicture
-	
+
 	fire_only_once = yes
-	
 	
 	trigger = {
 		tag = BND
@@ -16,15 +14,18 @@ country_event = {
 		is_year = 1525
 		NOT = { is_year = 1550 }
 	}
-	
+
 	mean_time_to_happen = {
 		months = 60 
 	}	
-	
+
 	option = {
-		name = "events_bnd.1.OPT1" #Splendid.
+		name = FEE_Bundelkhand_Events.1.OPT1 #Splendid.
+
 		add_prestige = 10
 		559 = {
+			change_province_name = "Orchha"
+			rename_capital = "Orchha"
 			if = {
 				limit = {
 					NOT = {
@@ -41,9 +42,10 @@ country_event = {
 					speed = 0.75
 					cost = 0
 				}
-			}	
-			change_province_name = "Orchha"
-			rename_capital = "Orchha"
-		}	
+			}
+			else = {
+				add_base_manpower = 2
+			}
+		}
 	}
 }

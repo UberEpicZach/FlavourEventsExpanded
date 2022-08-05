@@ -1,0 +1,22 @@
+﻿l_english:
+ FEE_Bavaria_Events.1.T: "Duke Albert's Campaigns Against Robber Barons"
+ FEE_Bavaria_Events.1.D: "In the early fifteenth century, Bavaria was plagued by robber barons, nobles who would impose illegal tolls and payments on their land, as well as the lands of others. In 1444 and 1445, Albert III of Bavaria sent troops to campaign against these criminal nobles, and succeeded in reducing their influence."
+ FEE_Bavaria_Events.1.OPT1: "Send soldiers far and wide to stop this!"
+ FEE_Bavaria_Events.1.OPT2: "Nobles making money off peasants? That's a great idea!"
+
+ FEE_Bavaria_Events.2.T: "One Duchy, United"
+ FEE_Bavaria_Events.2.D: "For centuries, the different regions of Bavaria had been divided into duchies split between heirs. This practice left Bavaria with frequent internal struggles, and otherwise eroded her strength in face of the outside world. It was only with the edict of 1506, presented by Albert IV, that Bavaria once again became a single, united princedom in the Holy Roman Empire."
+ FEE_Bavaria_Events.2.OPT1: "Long have we waited for this day!"
+
+ FEE_Bavaria_Events.3.T: "Reconciliation With the Habsburgs"
+ FEE_Bavaria_Events.3.D: "Following a century and more of competing with the upstart Habsburgs for influence in the Empire, the Wittelsbachs would eventually settle on a policy of cooperation with the Austrian dynasty."
+ FEE_Bavaria_Events.3.OPT1: "Everyone just wants a friend."
+ FEE_Bavaria_Events.3.OPT2: "Pah! We will show them what a truly storied house can achieve on its own!"
+
+ #Modifiers
+ fee_bav_defeated_robber_barons: "Defeated the Robber Barons"
+ desc_fee_bav_defeated_robber_barons: "We have at last rid our lands of the menace of corrupt nobles stealing our tax and trade."
+
+ #Opinion Modifiers
+ fee_bav_reconcile_habsburgs: "Reconciliation between our dynasties"
+ fee_bav_against_habsburgs: "Rivalry between our dynasties"

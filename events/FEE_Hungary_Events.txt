@@ -1370,3 +1370,39 @@ country_event = {
 		}
 	}
 }
+
+# Bibliotheca Corvinia
+country_event = {
+	id = FEE_Hungary_Events.20
+	title = FEE_Hungary_Events.20.T
+	desc = FEE_Hungary_Events.20.D
+	picture = BIG_BOOK_eventPicture
+
+	trigger = {
+		tag = HUN
+		ADM = 3
+		NOT = { is_year = 1526 }
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 360
+	}
+
+	option = {
+		name = FEE_Hungary_Events.20.OPT1
+
+		add_country_modifier = {
+			name = fee_hun_hungarian_renaissance
+			duration = 9125
+		}
+	}
+
+	option = {
+		name = FEE_Hungary_Events.20.OPT2
+
+		add_adm_power = 100
+		add_prestige = 10
+	}
+}

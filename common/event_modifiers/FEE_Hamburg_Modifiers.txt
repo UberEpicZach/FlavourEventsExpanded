@@ -1,0 +1,12 @@
+# Hamburg has the Long Compromise
+fee_ham_thornton_colonize = {
+	local_unrest = -5
+}
+
+#Hamburg Stock Market
+fee_ham_expand_loan_market = {
+	interest = -1
+}
+fee_ham_strict_control_loan_market = {
+	inflation_reduction = 0.1
+}
