@@ -211,3 +211,350 @@ country_event = {
 		}
 	}
 }
+
+#The Guelders Wars Event Chain
+#Claims to the Duchy of Gelre
+country_event = {
+	id = FEE_Gelre_Events.5
+	title = FEE_Gelre_Events.5.T
+	desc = FEE_Gelre_Events.5.D
+	picture = BANKRUPTCY_eventPicture
+
+	fire_only_once = yes
+	trigger = {
+		tag = GEL
+		exists = BUR
+		has_ruler = "Arnold I"
+		dynasty = "van Egmond"
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = FEE_Gelre_Events.5.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		BUR = {
+			country_event = {
+				id = FEE_Gelre_Events.6
+				days = 3
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Gelre_Events.5.OPT2
+		ai_chance = {
+			factor = 50
+		}
+
+		add_legitimacy_equivalent = { amount = 20 republican_tradition = 10 }
+	}
+}
+
+#Gelre Requests Financial Aid
+country_event = {
+	id = FEE_Gelre_Events.6
+	title = FEE_Gelre_Events.6.T
+	desc = FEE_Gelre_Events.6.D
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Gelre_Events.6.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		GEL = {
+			country_event = {
+				id = FEE_Gelre_Events.7
+				days = 3
+			}
+		}
+	}
+}
+
+#Gelre Requests Financial Aid
+country_event = {
+	id = FEE_Gelre_Events.7
+	title = FEE_Gelre_Events.7.T
+	desc = FEE_Gelre_Events.7.D
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Gelre_Events.7.OPT1
+		ai_chance = {
+			factor = 100
+		}
+
+		add_treasury = 300
+		set_ruler_flag = fee__bill_ruler_ruler
+		set_country_flag = fee__bill_ruler_country
+		custom_tooltip = fee_gel_bill_ruler_death_tt
+	}
+
+	option = {
+		name = FEE_Gelre_Events.7.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
+		add_stability_or_adm_power = yes
+	}
+}
+
+#The Bill Comes Due
+country_event = {
+	id = FEE_Gelre_Events.8
+	title = FEE_Gelre_Events.8.T
+	desc = FEE_Gelre_Events.8.D
+	picture = OVEREXTENSION_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GEL
+		NOT = { has_ruler_flag = fee__bill_ruler_ruler }
+		has_country_flag = fee__bill_ruler_country
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = fee__bill_event_fired
+		}
+	}
+
+	option = {
+		name = FEE_Gelre_Events.8.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_treasury = -300
+		add_stability = -1
+		add_prestige = 15
+	}
+
+	option = {
+		name = FEE_Gelre_Events.8.OPT2
+		ai_chance = {
+			factor = 50
+		}
+
+		if = {
+			limit = { exists = BUR }
+			BUR = {
+				add_casus_belli = {
+					type = cb_vassalize_mission
+					target = ROOT
+				}
+			}
+		}
+		else = {
+			192 = {
+				if = {
+					limit = {
+						NOT = { owned_by = ROOT }
+					}
+					owner = {
+						add_casus_belli = {
+							type = cb_vassalize_mission
+							target = ROOT
+						}
+					}
+				}
+			}
+		}
+		add_stability = -1
+	}
+}
+
+#The Guelders Wars
+country_event = {
+	id = FEE_Gelre_Events.9
+	title = FEE_Gelre_Events.9.T
+	desc = FEE_Gelre_Events.9.D
+	picture = BATTLE_eventPicture
+
+	fire_only_once = yes
+	major = yes
+
+	trigger = {
+		tag = GEL
+		OR = {
+			any_neighbor_country = {
+				OR = {
+					primary_culture = dutch
+					primary_culture = flemish
+				}
+				war_with = ROOT
+			}
+			war_with = BUR
+			war_with = emperor
+		}
+		has_country_flag = fee__bill_event_fired
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = fee_gel_guelders_wars_start
+		}
+	}
+
+	option = {
+		name = FEE_Gelre_Events.9.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_country_modifier = {
+			name = fee_gel_loot_pay
+			duration = 18250
+		}
+	}
+}
+
+#Sack of Hague
+country_event = {
+	id = FEE_Gelre_Events.10
+	title = FEE_Gelre_Events.10.T
+	desc = FEE_Gelre_Events.10.D
+	picture = REVOLUTION_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GEL
+		4383 = {
+			owner = {
+				war_with = ROOT
+			}
+			controlled_by = ROOT
+		}
+	}
+
+	option = {
+		name = FEE_Gelre_Events.10.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_years_of_income = 0.5
+		4383 = {
+			add_base_tax = -2
+			add_base_production = -2
+			add_base_manpower = -2
+			add_devastation = 50
+		}
+	}
+}
+
+#Duke of Guelders Dies
+country_event = {
+	id = FEE_Gelre_Events.11
+	title = FEE_Gelre_Events.11.T
+	desc = FEE_Gelre_Events.11.D
+	picture = DEATH_OF_HEIR_eventPicture
+
+	fire_only_once = yes
+	trigger = {
+		tag = GEL
+		is_year = 1500
+		NOT = { is_year = 1550 }
+		has_heir = no
+		ruler_age = 60
+		exists = BRG
+		emperor = {
+			NOT = { tag = BRG }
+			NOT = { tag = GEL }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Gelre_Events.11.OPT1
+		ai_chance = {
+			factor = 33
+		}
+
+		kill_ruler = yes
+		emperor = {
+			add_casus_belli = {
+				type = cb_restore_personal_union
+				target = ROOT
+			}
+		}
+		BRG = {
+			add_casus_belli = {
+				type = cb_restore_personal_union
+				target = ROOT
+			}
+		}
+		add_country_modifier = {
+			name = fee_gel_defend_independence
+			duration = 7300
+		}
+	}
+
+	option = {
+		name = FEE_Gelre_Events.11.OPT2
+		ai_chance = {
+			factor = 33
+		}
+
+		kill_ruler = yes
+		if = {
+			limit = {
+				valid_for_personal_unions_trigger = yes
+				emperor = { valid_for_personal_unions_trigger = yes }
+			}
+			emperor = {
+				create_union = ROOT
+			}
+		}
+		every_owned_province = {
+			add_permanent_claim = BRG
+		}
+		remove_country_modifier = fee_gel_loot_pay
+		clr_global_flag = fee_gel_guelders_wars_start
+	}
+
+	option = {
+		name = FEE_Gelre_Events.11.OPT3
+		ai_chance = {
+			factor = 33
+		}
+
+		kill_ruler = yes
+		if = {
+			limit = {
+				BRG = { valid_for_personal_unions_trigger = yes }
+				valid_for_personal_unions_trigger = yes
+			}
+			BRG = {
+				create_union = ROOT
+			}
+		}
+		every_owned_province = {
+			add_permanent_claim = emperor
+		}
+		remove_country_modifier = fee_gel_loot_pay
+		clr_global_flag = fee_gel_guelders_wars_start
+	}
+}
+#End of Guelders Wars

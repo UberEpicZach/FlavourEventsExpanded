@@ -26,13 +26,47 @@
  FEE_Bohemia_Events.8.T: "The Kingdom of Hungary"
  FEE_Bohemia_Events.8.D: "The Kingdom of Hungary has elected a new monarch, [HUN.Monarch.GetName], who lacks the support of a huge part of the nobility. There can be expected to be a long internal struggle, a pit of chaos which would probably give the Sultan an excellent opportunity to expand north."
  FEE_Bohemia_Events.8.OPT1: "Chaos is not a pit, Chaos is a ladder."
+ FEE_Bohemia_Events.9.T: "Lessons of the Hussite Wars"
+ FEE_Bohemia_Events.9.D: "What was once the jewel of Central Europe was mercilessly torn apart as brother fought against brother, foreigners invaded Bohemian lands, and bitter religious struggle the like of which has never before been seen within Christian Europe came to our kingdom.\n\nHowever, there was some benefit to the extreme violence which engulfed our nation. Many of the most talented and educated Bohemians flocked to the Hussite cause, and their ingenuity allowed them to craft new weapons and fight against overwhelming odds.\n\nIn fact, many of the new weapons and tactics used would later grow to define early modern European warfare. The infamous Hussite wagon fort would be adopted by German, Hungarian, Russian, and even British armies. The Hussite armies also pioneered artillery pieces such as the howitzer and the houfnice, as well as new and more deadly hand cannons which served as thebasis for early modern pistols."
+ FEE_Bohemia_Events.9.OPT1: "Excellent!"
+
+ FEE_Bohemia_Events.10.T: "A Message of Peace"
+ FEE_Bohemia_Events.10.D: "Despite being condemned as a heretic by the Pope after a forcible seizure of power, Jiri Podebrad never ceased to reconcile with not only the Pope, but the hostile neighboring Catholicrulers of Austria, Hungary, and Poland.\n\nPerhaps ahead of his time, Podebrad proposed a 'Charter of a Universal Peace Union,' in which all Christian nations, starting with the member states of the Holy Roman Empire, would pledge to resolve all disputes peacefully, respect one anothers' national sovereignty, and create a common parliament and court, in which all members would get one vote, with the King of France having two. Additionally, he dreamed of uniting Christian nations against the rising threat of the Ottoman Empire.\n\nOne proponent of Podebrad's plan was a prominent nobleman who proved himself an able diplomat, representing Bohemia in the courts of Austria and Hungary. His work, while unsuccessful in establishing Podebrad's dream, did go a long way towards smoothing over the rift between Bohemia and her neighbors. \n\nPodebrad's Hussite beliefs prevented his ideas from being seriously considered, especially as the Pope, whose power was threatened by this Union, worked against him. However, his message of peace planted a seed in European politics that would never be wholly forgotten."
+ FEE_Bohemia_Events.10.OPT1: "Unfortunate, but we can make some good out of this."
+ FEE_Bohemia_Events.10.OPT2: "How naïve! Perhaps we should forget the whole thing."
+
+ FEE_Bohemia_Events.11.T: "Thaler Coinage"
+ FEE_Bohemia_Events.11.D: "Shortly after a rich deposit of silver was found in Joachimsthal, the Crown of Bohemia gave control of the mines to the wealthiest noble family in Bohemia, the Counts von Schlick. They began minting a new large silver coin, giving the name of the town to the new coin - the Thaler. This would go on to become the first truly standardized coinage across the Holy Roman Empire, and would become the ancestor of the British silver crown, the Dutch rijksdaalder, and even the US dollar.\n\nThis large, reliable coin filled the void as a reliable standard of exchange between the regions of Europe, especially in the prosperous but divided principalities of the Holy Roman Empire, where the coin received Imperial approval."
+ FEE_Bohemia_Events.11.OPT1: "Wonderful news!"
+ FEE_Bohemia_Events.11.OPT2: "Yes yes, very nice, but what's in it for me?"
+
+ FEE_Bohemia_Events.12.T: "The Defenestration of Prague"
+ FEE_Bohemia_Events.12.D: "If recent history has taught us one thing, it is that the Bohemian people are not to be trifled with in matters of religion and maintaining of their treasured religious unity.\n\nThis lesson seems to have been lost on those who would be our overlords. A delegation has arrived in Prague, demanding that we tear up our Letter of Majesty which guarantees religious tolerance and enforce Catholicism on our populace."
+ FEE_Bohemia_Events.12.OPT1: "Throw them out the window!"
+ FEE_Bohemia_Events.12.OPT2: "We have no choice but to submit."
+
+ FEE_Bohemia_Events.13.T: "Sack of Prague"
+ FEE_Bohemia_Events.13.D: "Disaster has befallen us! Prague, once one of the great cultural and economic centers, has fallen to the invading enemy! We can only curse the foolishness of our rulers who, scorning the example of past rulers, sought peace with enemies on the field rather than through a siege of their capital city. A full quarter of the city has been levelled and even the great cathedral has suffered damage."
+ FEE_Bohemia_Events.13.OPT1: "Will we ever recover?"
 
  #Modifiers
  fee_boh_infertility: "Infertility"
  fee_boh_noble_concesions: "Noble Concessions"
+ fee_boh_hussite_ingenuity: "Hussite Ingenuity"
+ boh_coinage_pioneer: "Coinage Pioneer"
+ fee_boh_thaler: "Thaler"
+ fee_boh_greedy_rulership: "Greedy Rulership"
+ fee_boh_religion_enforced: "Religion Enforced"
+
+ fee_boh_defenestration_prague: "Defenestration of Prague"
+ fee_boh_charter_universal_peace_union_rivals: "Charter of a Universal Peace Union"
+ fee_boh_charter_universal_peace_union: "Charter of a Universal Peace Union"
+ fee_boh_charter_universal_peace_union_france: "Charter of a Universal Peace Union"
 
  #Opinion
  fee_boh_linked_thrones: "Linked Thrones"
  fee_boh_claiming_thrones: "Claimed Thrones"
 
  #Tooltips
+
+ fee_boh_thaler_princes_tt: "§YAll princes in the Holy Roman Empire will receive a bonus of §!§G+5%§!§Y trade efficiency for 20 years.§!"

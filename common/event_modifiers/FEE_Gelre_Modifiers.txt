@@ -6,3 +6,10 @@ fee_gel_adolfs_unrest = {
 fee_gel_compromise_with_adolf = {
 	global_unrest = -2
 }
+fee_gel_loot_pay = {
+	merc_maintenance_modifier = -0.15
+}
+fee_gel_defend_independence = {
+	land_morale = 0.10
+	diplomatic_reputation = -1
+}

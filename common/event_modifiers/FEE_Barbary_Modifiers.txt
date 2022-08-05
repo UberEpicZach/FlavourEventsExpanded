@@ -1,0 +1,16 @@
+fee_berbers_support_barbary_pirates = {
+	privateer_efficiency = 0.2
+	global_own_trade_power = 0.1
+}
+
+fee_berbers_raided_by_pirates = {
+	local_development_cost = 0.2
+	local_tax_modifier = -0.2
+	local_manpower_modifier = -0.2
+	local_production_efficiency = -0.2
+}
+
+fee_berbers_sea_lanes_terrorised = {
+	trade_steering = -0.1
+	caravan_power = 0.1
+}

@@ -1,0 +1,10 @@
+#Friends in the Swabian League
+fee_swa_league_member = {
+	opinion = 30
+	yearly_decay = 0
+}
+# Refused togive League Aid
+fee_swa_refused_league_aid = {
+	opinion = -20
+	yearly_decay = 2
+}

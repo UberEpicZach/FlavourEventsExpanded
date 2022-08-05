@@ -1,0 +1,582 @@
+#Barbary Corsair Events
+
+namespace = FEE_Berbers_Events
+
+#Privateer Contracts
+country_event = {
+	id = FEE_Berbers_Events.1
+	title = FEE_Berbers_Events.1.T
+	desc = FEE_Berbers_Events.1.D
+	picture = SHIP_SAILING_eventPicture
+
+	trigger = {
+		capital_scope = {
+			region = maghreb_region
+		}
+		maghreb_region = {
+			has_port = yes
+			owned_by = ROOT
+		}
+		religion_group = muslim
+		is_year = 1490
+		NOT = { is_year = 1520 }
+		NOT = { has_country_modifier = fee_berbers_support_barbary_pirates }
+		NOT = { tag = MAM }
+		NOT = { tag = EGY }
+		OR = {
+			is_free_or_tributary_trigger = yes
+			overlord = {
+				OR = {
+					religion = sunni
+					religion = ibadi
+					religion = shiite
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 300
+		modifier = {
+			factor = 0.8
+			TUR = {
+				num_of_cities = 20
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Berbers_Events.1.OPT1
+		ai_chance = {
+			factor = 100
+		}
+
+		add_dip_power = -25
+		add_country_modifier = {
+			name = fee_berbers_support_barbary_pirates
+			duration = -1
+		}
+		custom_tooltip = fee_berbers_support_pirates_tt
+	}
+
+	option = {
+		name = FEE_Berbers_Events.1.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
+		add_stability_or_adm_power = yes
+	}
+}
+
+#Sponsor Barbary Raid
+country_event = {
+	id = FEE_Berbers_Events.2
+	title = FEE_Berbers_Events.2.T
+	desc = FEE_Berbers_Events.2.D
+	picture = NAVAL_MILITARY_eventPicture
+
+	trigger = {
+		has_country_modifier = fee_berbers_support_barbary_pirates
+		maghreb_region = {
+			owned_by = ROOT
+			has_port = yes
+		}
+		any_country = {
+			OR = {
+				religion = catholic
+				religion = protestant
+				religion = reformed
+			}
+			any_owned_province = {
+				OR = {
+					region = italy_region
+					area = languedoc_area
+					area = provence_area
+					area = catalonia_area
+					area = valencia_area
+					area = upper_andalucia_area
+					area = toledo_area
+					region = balkan_region
+				}
+				has_port = yes
+				NOT = {
+					has_province_modifier = fee_berbers_raided_by_pirates
+				}
+				is_capital = no
+			}
+			OR = {
+				NOT = { has_country_flag = fee_berbers_retaliation_flag }
+				had_country_flag = {
+					flag = fee_berbers_retaliation_flag
+					days = 5475
+				}
+			}
+			NOT = {
+				truce_with = ROOT
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 480
+	}
+
+	option = {
+		name = FEE_Berbers_Events.2.OPT1
+		ai_chance = {
+			factor = 80
+		}
+		add_treasury = -10
+		add_dip_power = -5
+		random_list = {
+			85 = {
+				country_event = {
+					id = FEE_Berbers_Events.5
+					days = 60
+				}
+				random_country = {
+					limit = {
+						OR = {
+							religion = catholic
+							religion = protestant
+							religion = reformed
+						}
+						OR = {
+							NOT = { has_country_flag = fee_berbers_retaliation_flag }
+							had_country_flag = {
+								flag = fee_berbers_retaliation_flag
+								days = 5475
+							}
+						}
+						any_owned_province = {
+							has_port = yes
+							OR = {
+								region = italy_region
+								area = languedoc_area
+								area = provence_area
+								area = catalonia_area
+								area = valencia_area
+								area = upper_andalucia_area
+								area = toledo_area
+								region = balkan_region
+							}
+							is_capital = no
+						}
+					}
+					random_owned_province = {
+						limit = {
+							has_port = yes
+							OR = {
+								region = italy_region
+								area = languedoc_area
+								area = provence_area
+								area = catalonia_area
+								area = valencia_area
+								area = upper_andalucia_area
+								area = toledo_area
+								region = balkan_region
+							}
+							NOT = {
+								has_province_modifier = fee_berbers_raided_by_pirates
+							}
+							is_capital = no
+						}
+						province_event = {
+							id = FEE_Berbers_Events.3
+							days = 30
+							random = 10
+						}
+					}
+				}
+			}
+			15 = {
+				country_event = {
+					id = FEE_Berbers_Events.6
+					days = 60
+				}
+				random_country = {
+					limit = {
+						OR = {
+							religion = catholic
+							religion = protestant
+							religion = reformed
+						}
+						OR = {
+							NOT = { has_country_flag = fee_berbers_retaliation_flag }
+							had_country_flag = {
+								flag = fee_berbers_retaliation_flag
+								days = 5475
+							}
+						}
+						any_owned_province = {
+							has_port = yes
+							OR = {
+								region = italy_region
+								area = languedoc_area
+								area = provence_area
+								area = catalonia_area
+								area = valencia_area
+								area = upper_andalucia_area
+								area = toledo_area
+								region = balkan_region
+							}
+							is_capital = no
+						}
+					}
+					random_owned_province = {
+						limit = {
+							has_port = yes
+							owner = {
+								OR = {
+									religion = catholic
+									religion = protestant
+									religion = reformed
+								}
+								OR = {
+									NOT = { has_country_flag = fee_berbers_retaliation_flag }
+									had_country_flag = {
+										flag = fee_berbers_retaliation_flag
+										days = 5475
+									}
+								}
+							}
+							OR = {
+								region = italy_region
+								area = languedoc_area
+								area = provence_area
+								area = catalonia_area
+								area = valencia_area
+								area = upper_andalucia_area
+								area = toledo_area
+								region = balkan_region
+							}
+							NOT = {
+								has_province_modifier = fee_berbers_raided_by_pirates
+							}
+						}
+						province_event = {
+							id = FEE_Berbers_Events.4 days = 30 random = 10
+						}
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Berbers_Events.2.OPT2
+		ai_chance = {
+			factor = 20
+		}
+
+		add_dip_power = 50
+	}
+}
+
+#$PROVINCE$ Raided
+province_event = {
+	id = FEE_Berbers_Events.3
+	title = FEE_Berbers_Events.3.T
+	desc = FEE_Berbers_Events.3.D
+	picture = BORDER_TENSION_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			owner = {
+				set_country_flag = fee_berbers_retaliation_flag
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Berbers_Events.3.OPT1
+
+		owner = {
+			add_prestige = -5
+		}
+		add_province_modifier = {
+			name = fee_berbers_raided_by_pirates
+			duration = 3650
+		}
+	}
+
+	option = {
+		name = FEE_Berbers_Events.3.OPT2
+
+		owner = {
+			add_adm_power = -25
+			add_treasury = -10
+		}
+		add_province_modifier = {
+			name = fee_berbers_raided_by_pirates
+			duration = 1825
+		}
+	}
+}
+
+#Raid repelled
+province_event = {
+	id = FEE_Berbers_Events.4
+	title = FEE_Berbers_Events.4.T
+	desc = FEE_Berbers_Events.4.D
+	picture = BATTLE_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Berbers_Events.4.OPT1
+
+		owner = {
+			add_prestige = 5
+			add_mil_power = 25
+		}
+	}
+}
+
+#Raid returns successful
+country_event = {
+	id = FEE_Berbers_Events.5
+	title = FEE_Berbers_Events.5.T
+	desc = FEE_Berbers_Events.5.D
+	picture = FEAST_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Berbers_Events.5.OPT1
+
+		add_years_of_income = 0.5
+		add_prestige = 5
+		add_mil_power = 20
+		add_navy_tradition = 5.0
+	}
+}
+
+#Raid returns in failure
+country_event = {
+	id = FEE_Berbers_Events.6
+	title = FEE_Berbers_Events.6.T
+	desc = FEE_Berbers_Events.6.D
+	picture = OVEREXTENSION_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Berbers_Events.6.OPT1
+
+		add_mil_power = -15
+		add_dip_power = -15
+		add_prestige = -10
+		add_navy_tradition = 5.0
+	}
+}
+
+#Retaliation
+country_event = {
+	id = FEE_Berbers_Events.7
+	title = FEE_Berbers_Events.7.T
+	desc = FEE_Berbers_Events.7.D
+	picture = NAVAL_MILITARY_eventPicture
+
+	trigger = {
+		OR = {
+			NOT = { has_country_flag = fee_berbers_retaliation_flag }
+			had_country_flag = {
+				flag = fee_berbers_retaliation_flag
+				days = 5475
+			}
+		}
+		num_of_owned_provinces_with = {
+			value = 2
+			has_province_modifier = fee_berbers_raided_by_pirates
+		}
+		is_at_war = no
+		any_country = {
+			has_country_modifier = fee_berbers_support_barbary_pirates
+			NOT = { truce_with = ROOT }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Berbers_Events.7.OPT1
+		ai_chance = {
+			factor = 60
+		}
+
+		add_manpower = -1
+		add_treasury = -10
+		add_mil_power = 25
+		random_country = {
+			limit = {
+				has_country_modifier = fee_berbers_support_barbary_pirates
+				NOT = { truce_with = ROOT }
+			}
+			country_event = {
+				id = FEE_Berbers_Events.8 days = 20
+			}
+		}
+		hidden_effect = {
+			clr_country_flag = fee_berbers_retaliation_flag
+			set_country_flag = fee_berbers_retaliation_flag
+		}
+	}
+
+	option = {
+		name = FEE_Berbers_Events.7.OPT2
+		ai_chance = {
+			factor = 20
+		}
+
+		random_country = {
+			limit = {
+				has_country_modifier = fee_berbers_support_barbary_pirates
+			}
+			reverse_add_casus_belli = {
+				target = ROOT
+				type = cb_trade_conflict
+				months = 120
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Berbers_Events.7.OPT2
+		ai_chance = {
+			factor = 20
+		}
+
+		add_dip_power = 15
+	}
+}
+
+#"Retaliation" for Barbary Raids
+country_event = {
+	id = FEE_Berbers_Events.8
+	title = FEE_Berbers_Events.8.T
+	desc = FEE_Berbers_Events.8.D
+	picture = COUNTRY_COLLAPSE_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					has_port = yes
+					NOT = {
+						has_province_modifier = fee_berbers_raided_by_pirates
+					}
+				}
+				add_province_modifier = {
+					name = fee_berbers_raided_by_pirates
+					duration = 3650
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Berbers_Events.8.OPT1
+
+		reverse_add_casus_belli = {
+			target = FROM
+			type = cb_trade_conflict
+			months = 120
+		}
+	}
+
+	option = {
+		name = FEE_Berbers_Events.8.OPT2
+
+		add_dip_power = 25
+	}
+}
+
+#Barbary Corsairs Plaguing Trade Route
+country_event = {
+	id = FEE_Berbers_Events.9
+	title = FEE_Berbers_Events.9.T
+	desc = FEE_Berbers_Events.9.D
+	picture = SHIP_SAILING_eventPicture
+
+	trigger = {
+		NOT = { dip_tech = 23 }
+		any_country = {
+			has_country_modifier = fee_berbers_support_barbary_pirates
+		}
+		is_year = 1490
+		any_owned_province = {
+			OR = {
+				region = italy_region
+				area = languedoc_area
+				area = provence_area
+				area = catalonia_area
+				area = valencia_area
+				area = upper_andalucia_area
+				area = toledo_area
+				region = balkan_region
+			}
+			has_port = yes
+		}
+		NOT = {
+			any_country = {
+				has_country_modifier = fee_berbers_support_barbary_pirates
+				truce_with = ROOT
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1100
+	}
+
+	option = {
+		name = FEE_Berbers_Events.9.OPT1
+
+		add_dip_power = -25
+		add_treasury = -10
+	}
+
+	option = {
+		name = FEE_Berbers_Events.9.OPT2
+
+		add_country_modifier = {
+			name = fee_berbers_sea_lanes_terrorised
+			duration = 1095
+		}
+	}
+}
+
+#Decline of the Barbary Corsairs
+country_event = {
+	id = FEE_Berbers_Events.10
+	title = FEE_Berbers_Events.10.T
+	desc = FEE_Berbers_Events.10.D
+	picture = SHIP_SAILING_eventPicture
+
+	trigger = {
+		has_country_modifier = fee_berbers_support_barbary_pirates
+		any_country = { dip_tech = 23 }
+	}
+
+	mean_time_to_happen = {
+		months = 120
+		modifier = {
+			factor = 0.1
+			is_year = 1715
+		}
+	}
+
+	option = {
+		name = FEE_Berbers_Events.10.OPT1
+
+		remove_country_modifier = fee_berbers_support_barbary_pirates
+	}
+}

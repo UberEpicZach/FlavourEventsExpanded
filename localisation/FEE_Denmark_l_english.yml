@@ -1,0 +1,161 @@
+﻿l_english:
+ FEE_Denmark_Events.1.T: "The Stockholm Bloodbath"
+ FEE_Denmark_Events.1.D: "The union of Sweden under Denmark was an unstable one, and only a strong Danish ruler could keep Sweden under their thumb. In 1520, King Christian went as far as to lead a military intervention in Sweden. Successful in his endeavour, Christian was anointed and swore the traditional oath to only appoint natural-born Swedes to the governing of the country. A great banquet was held in Stockholm in his honor, lasting several days. Then, on the 7th of November, the massacre began.\nThe king summoned many prominent Swedish officials and politicians to a private conference in the castle. Once there they were well received, but the king's hospitality only went so far. Soon Danish soldiers arrived with torches and axes and took them capture. Over the following day, more than 80 nobles, clergymen and politicians would be executed under the pretense of heresy. \n\nWhile intended to bring Sweden to its knees before Denmark, the executions had the opposite effect, and was the event that sparked the Swedish War of Liberation that permanently ended the union."
+ FEE_Denmark_Events.1.OPT1: "It is time to face disloyalty with violence."
+ FEE_Denmark_Events.1.OPT2: "We better not stir the hornet's nest."
+
+ FEE_Denmark_Events.2.T: "The Stockholm Bloodbath"
+ FEE_Denmark_Events.2.D: "Following perceived disloyalty, the Danish king led his army into Sweden. He took Stockholm to reassert his authority, and held a great feast in his own honor. Then on the 8th of November, he called the most prominent nobles, clergymen and politicians to the palace. They were called inside for a private conference. Then the massacre began. More than 80 men were executed on false charges of heresy over the course of a few days; the headsman's axe never stopped swinging.\nWe have lost many of our greatest, but we are still, and will forever remain a country of our own. We'll never be just a Danish holding."
+ FEE_Denmark_Events.2.OPT1: "Sweden will rise!"
+
+ FEE_Denmark_Events.3.T: "Hans Tausen"
+ FEE_Denmark_Events.3.D: "Born in 1494, Tausen became a priest on the eve of the Protestant Reformation. He went to Wittenberg in 1523, and was convinced by Lutheran principles. Upon his return to Denmark he started preaching the Lutheran faith, and he found many listening ears. He left the official church and made a practice of preaching from the church tower in Viborg. When he was denied the right to preach in the church, his followers broke in and forced a compromise where catholic priests would preach in the morning, and Tausen in the afternoon. The bishop has found this unacceptable, so he sent armed men to imprison the rogue priest. That hasn't helped, however, as large crowds now gather outside the window of his cell to hear him preach! \n\nIn time Hans Tausen would go on to become the foremost theologian of the Danish Reformation, but for now we must decide what to do with this heretic!"
+ FEE_Denmark_Events.3.OPT1: "Let him preach from his barred pulpit. No one will listen."
+ FEE_Denmark_Events.3.OPT2: "This is getting dangerous, shut him up."
+
+ FEE_Denmark_Events.4.T: "Name Tausen Bishop"
+ FEE_Denmark_Events.4.D: "Hans Tausen was a priest convinced by Lutheran ideas, who had become noticed for preaching in the church of Viborg before the country's official conversion. He was imprisoned, but King Frederick I saw an opportunity. Interested in Lutheran ideas himself, particularly the ones about rulers receiving the church's property, he placed Tausen under his protection and named him court chaplain. As the Danish Reformation continued to spread, Tausen was called to preach in Copenhagen. The protestants became more and more confrontational against the catholic priests, and once King Fredrik died and Tausen was tried for heresy, a mob rose to attack the bishop of Copenhagen, ensuring Tausen's safety, who in turn protected the bishop from murder by mob.\nOnce Denmark officially converted to Protestantism, Tausen was appointed bishop of Ribe. During his twenty years in that position, he continued to direct much of the still developing protestant faith in Denmark."
+ FEE_Denmark_Events.4.OPT1: "He will advise $MONARCH$ in all matters of religion."
+ FEE_Denmark_Events.4.OPT2: "Send him to preach to the clergy across our lands."
+
+ FEE_Denmark_Events.5.T: "Tausen Comes to Preach"
+ FEE_Denmark_Events.5.D: "Hans Tausen, one of the most significant theologians of the Danish reformation, has been sent by the Danish king to preach for us, and show us the true ways of our new faith."
+ FEE_Denmark_Events.5.OPT1: "Listen to what he has to say."
+
+ FEE_Denmark_Events.6.T: "Architect of the Danish Throne"
+ FEE_Denmark_Events.6.D: "Reigning from 1588 to 1648, King Christian IV of Denmark was one of the country's most celebrated monarchs. He was the force behind military, economic and social reforms, and despite having more misfortune than fortune in war, he is considered the king that brought Denmark into the modern era.\nIn addition to his many reforms, he was an avid city builder, and expanded not only Copenhagen, but many cities in Denmark as well as Norway."
+ FEE_Denmark_Events.6.OPT1: "$CAPITAL$ will shine!"
+
+ FEE_Denmark_Events.7.T: "Architect of the Danish Throne"
+ FEE_Denmark_Events.7.D: "Reigning from 1588 to 1648, King Christian IV of Denmark and Norway was the Danish monarch that spent the most time in Norway, putting in much effort to improve the state of the subject country. While reforming the two countries' armies and economy, he was also an avid builder, and founded no less than four Norwegian cities. In his honor Oslo, the capital of Norway, was renamed Christiania, which remained the city's name until 1925."
+ FEE_Denmark_Events.7.OPT1: "$CAPITAL$ will shine!"
+
+ FEE_Denmark_Events.8.T: "Election to the Danish Monarchy"
+ FEE_Denmark_Events.8.D: "While the Danish monarchy was elective until the institution of an absolute monarchy in 1660, the eldest son practically always inherited the throne, and would often be elected before the passing of the previous king.\nHowever, the idea of an election left a powerful tool in the hands of the Danish nobles, who still had to be placated to prevent them from causing issues with the succession.\nTo secure the recent [Root.Monarch.GetTitle]'s accession, we might want to ensure that most of the nobles get what they want."
+ FEE_Denmark_Events.8.OPT1: "Whether in the name of power or tradition, we do what we must."
+ FEE_Denmark_Events.8.OPT2: "No! I am the uncontested [Root.Monarch.GetTitle]!"
+
+ FEE_Denmark_Events.9.T: "Danish Absolutism"
+ FEE_Denmark_Events.9.D: "\"The Monarch shall from this day forth be revered and considered the most perfect and supreme person on the Earth by all his subjects, standing above all human laws and having no judge above his person, neither in spiritual nor temporal matters, except God alone\"\n\nThis text established absolute monarchy in Denmark, ensuring that the king had unrestricted authority over all offices in the country. This removed the traditional pretense of election in the Danish succession, but more importantly it allowed the king to abolish the \"Rigsraad,\" the group of nobles responsible for co-governing Denmark. Over centuries the council had become more and more difficult for the king, as it acted more in the interest of nobles than the monarch.\nNow it is finally time for the monarch to rule as they see necessary, just as God intended."
+ FEE_Denmark_Events.9.OPT1: "The [Root.Monarch.GetTitle] will rule undisputed."
+
+ FEE_Denmark_Events.10.T: "The End of Danish Absolutism"
+ FEE_Denmark_Events.10.D: "Following the recent tumult in our country, our people are happier and we are mightier than ever before. However, there is no denying that there were certain practicalities in having an absolute monarch that we now have to work through with our bureaucracy."
+ FEE_Denmark_Events.10.OPT1: "$COUNTRY$ will be ruled the way God intended."
+
+ FEE_Denmark_Events.11.T: "End of Elective Monarchy"
+ FEE_Denmark_Events.11.D: "With the assertion of the [Root.Monarch.GetTitle] as ruler of all $COUNTRY$, we can discard the pretense of an election to the throne. [Root.Monarch.GetName] is the [Root.Monarch.GetTitle] and [Root.Monarch.GetHerHis] heir will rule undisputed."
+ FEE_Denmark_Events.11.OPT1: "I am the [Root.Monarch.GetTitle]!"
+
+ FEE_Denmark_Events.12.T: "Johann Friedrich Struensee and the Sickness of the King"
+ FEE_Denmark_Events.12.D: "Johann Friedrich Struensee became the court doctor of the mentally ill King Christian VII. While initially disliked at court, he rose in power and used his influence to become the de facto regent of Denmark in 1771, when the king became too ill to govern at all. \nWhile in power, he attempted to institute extensive liberal reforms, issuing more than three cabinet orders a day. While his reforms were initially well-received, they soon became unpopular as they seemed to go against Danish values and traditions for the sake of abstract concepts of liberty. Struensee also had a relationship with the queen - herself a scandalous figure - who bore an illegitimate daughter. After just thirteen months of rule, Struensee was deposed and executed, and almost all of his reforms abolished."
+ FEE_Denmark_Events.12.OPT1: "Let him take power."
+ FEE_Denmark_Events.12.OPT2: "No foreigner will rule our lands!"
+
+ FEE_Denmark_Events.13.T: "Struensee Abolishes the Norwegian Governor-general"
+ FEE_Denmark_Events.13.D: "In order to improve the administration of Norway, Struensee has abolished the Norwegian Governor-general as a royal office. No longer will a Danish noble be placed in charge of the entire country, but rather Norwegian representatives loyal to the king will administer the Norwegian nation."
+ FEE_Denmark_Events.13.OPT1: "Couldn't he consult with us beforehand?"
+
+ FEE_Denmark_Events.14.T: "Struensee Abolishes the Norwegian Viceroyship"
+ FEE_Denmark_Events.14.D: "In order to improve the administration of Norway, Struensee has abolished the Norwegian Governor-general as a royal office. No longer will a Danish noble be placed in charge of the entire country, but rather Norwegian representatives loyal to the king will administer the Norwegian nation."
+ FEE_Denmark_Events.14.OPT1: "Couldn't he consult with us beforehand?"
+
+ FEE_Denmark_Events.15.T: "Struensee Restricts the Rights of Nobles"
+ FEE_Denmark_Events.15.D: "Struensee has now ordered the abolishing of many advantages held by nobles. Much of their land tax exemption has been removed, many offices previously restricted to nobles are now open to all, and nobles no longer have greater rights to protest laws than commoners do."
+ FEE_Denmark_Events.15.OPT1: "How dare he, a lowly doctor?!"
+
+ FEE_Denmark_Events.16.T: "Struensee Abolishes Slave Trade and Unfree Labor"
+ FEE_Denmark_Events.16.D: "Despite being a lucrative business, Struensee has made it illegal for Danish ships to participate in slave trade, and made all such activity illegal in Danish colonies.\nIn addition, no person, no matter their debt or crime or social status may be forced to do corvée, or unpaid, involuntary work, no matter how little or how rarely."
+ FEE_Denmark_Events.16.OPT1: "Humph, it's going to be harder to make money off human misery."
+
+ FEE_Denmark_Events.17.T: "Struensee Abolishes the Court Aristocracy"
+ FEE_Denmark_Events.17.D: "Struensee has signed in a new law that dictates that certain court positions are no longer restricted to nobles. In addition, the hierarchy of birth shall no longer be relevant to the naming of officials at court."
+ FEE_Denmark_Events.17.OPT1: "Who does he expect to administer $COUNTRY$? Ordinary people?"
+
+ FEE_Denmark_Events.18.T: "Struensee Reins in State Funding and Criminalizes Bribery"
+ FEE_Denmark_Events.18.D: "Struensee has brought his surgeon's knife to the state budget, ensuring that many \"lavish\" expenses are done away with. He doesn't seem to mind if the king and the nobles end up living in the smallest mansions in the country! \nIn addition, he has made bribes illegal, which means that a poor near-destitute noble cannot even spend the last slivers of his fortune on a lucrative court position with lots of taxation rights! It's all a travesty, does he mean to run everyone into the gutters?"
+ FEE_Denmark_Events.18.OPT1: "I guess nobility can't be bought, then."
+
+ FEE_Denmark_Events.19.T: "Struensee Reorganizes the Army"
+ FEE_Denmark_Events.19.D: "Oh dread! Struensee has settled on a model for reorganising the army, and the policy can be summed up as \"spend less money on it.\"\nThis is any truly great nation's nightmare."
+ FEE_Denmark_Events.19.OPT1: "But I like wars!"
+
+ FEE_Denmark_Events.20.T: "Struensee Reforms Universities and Hospitals"
+ FEE_Denmark_Events.20.D: "Johann Friedrich Struensee has turned his attention to the reform of public universities and made them open to... well, the public. No longer shall your background be relevant for whether you are able to receive a university education, as long as you have the intelligence to pass the entrance exams and the funds to pay for it. Similarly, state-run hospitals are now supposed to offer equal service to every person who comes to them in need. A subsidy program will also help the poor receive advanced treatment, despite the fact that healing the poor is strictly God's job."
+ FEE_Denmark_Events.20.OPT1: "Public education and medicine? What's next, FREE public education and medicine?"
+
+ FEE_Denmark_Events.21.T: "Struensee and the Queen"
+ FEE_Denmark_Events.21.D: "In addition to his wild and sweeping reforms, Struensee got wild and sweeping with Queen Caroline Matilda. While she initially disdained him when he first came to court, she grew to appreciate him, and even love him. Their affair while the king was incapacitated was no secret, but Caroline Matilda was never bothered by scandal, as she was used to wearing men's clothing in public and meddling in state affairs. Eventually she even bore Struensee as a child, even though Princess Louise Auguste was recognised as a child of the king."
+ FEE_Denmark_Events.21.OPT1: "Scandalous!"
+
+ FEE_Denmark_Events.22.T: "Struensee Establishes Freedom of the Press"
+ FEE_Denmark_Events.22.D: "Struensee has now removed every censorship law in the country, allowing anyone to print whatever they want. While announced as a noble deed, we can rest relieved knowing that the pamphlets in greatest circulation are the anti-Struensee ones."
+ FEE_Denmark_Events.22.OPT1: "Bet he didn't see that coming."
+
+ FEE_Denmark_Events.23.T: "Plot Against Struensee"
+ FEE_Denmark_Events.23.D: "Following his sweeping reforms, Struensee has attracted the enmity of many, noble and non-noble rich person alike! However, following his scandals and his unstoppable reform desire, even the commoners are starting to think he might be going too far, abandoning Danish ideals in favor of abstract German ideas.\nWith Struensee's support fraying, a conspiracy formed, and it has now imprisoned Struensee, and aims to undo all his work. This might be for the best, as the doctor would need a miracle or royal interference to save his life now."
+ FEE_Denmark_Events.23.OPT1: "About time we cut his head off, this was getting out of hand!"
+ FEE_Denmark_Events.23.OPT2: "That's enough! The people will free Struensee and abolish the entire monarchy!"
+ FEE_Denmark_Events.23.OPT3: "The Queen will capitalise on his reforms to seize power."
+
+ FEE_Denmark_Events.24.T: "The Riksråd of Denmark"
+ FEE_Denmark_Events.24.D: "Throughout the Middle Ages, Danish earls and other nobles sought to limit the power of the Kings of Denmark, who had been a very strong and sometimes outright tyrannical ruler during the early days of the Danish Kingdom. \nThe Riksråd, or Council of the Realm, was first mentioned in the 1320s. By the 1440s it had become known as main opponent of royal power. In general, they maintained a healthy balance of power, electing the kings of Denmark in exchange for giving certain lucrative revenues to the King. The nobles in turn generally protected the rights of the common people from excessive taxation, and took on much of the administration of the realm.\nWith the loss of the Kingdom of Sweden, however, came a break in the balance of power. The heavy losses suffered by royal armies and treasury as well as the loss of prestige gave them the opportunity to seize more power for themselves. They now demand that the King sign a haandfæstning, a document guaranteeing noble privileges as a condition of the nobility's acceptance of the King's continued rule. Among the new rights\nthey demand is the right to revolt against any King that does not keep all promises, written or spoken, to the noble estate. Failure to sign this document, they warn, will force the nobility to invoke Denmark's ancient elective monarchy, in which the de facto recognition of hereditary rule will be abolished and a new King sought from elsewhere…"
+ FEE_Denmark_Events.24.OPT1: "Attempt to Compromise with the Nobility"
+ FEE_Denmark_Events.24.OPT2: "These demands are preposterous!"
+ FEE_Denmark_Events.24.OPT3: "Give them what they want"
+
+ FEE_Denmark_Events.25.T: "The Riksråd of Norway"
+ FEE_Denmark_Events.25.D: "While the nobles have been more influential in Denmark, Norway's status as a junior partner has robbed their nobility of much of their power to restrain the king. Furthermore, Norway's status as a true hereditary monarchy, rather than Denmark's de jure elective monarchy, meant that the powers of the Norwegian Riksråd diminished over time rather than strengthened. Soon they served as little more than councils in the case of regency. \nIn 1536, King Christian III of Denmark-Norway, in response to a bishop-led rebellion against his efforts to convert Norway to Lutheranism, finally abolished the Norwegian Riksråd, which never assembled again."
+ FEE_Denmark_Events.25.OPT1: "Excellent"
+
+ FEE_Denmark_Events.26.T: "Danish Intervention in the Protestant League"
+ FEE_Denmark_Events.26.D: "By the 16th century, Denmark remained one of the most powerful, and crucially, most wealthy realms in Europe. In addition, it was one of the few realms outside the Holy Roman Empire to have adopted Lutheranism. As one of the leading Lutheran rulers, then, [Root.Monarch.GetName] of Denmark looked on anxiously as the clouds of religious war gathered over Germany, although he did not formally join the league. A victory for the Catholic Empire, he knew, could only spell disaster for Lutheranism in Europe and would upset the balance of Europe in a way very likely to endanger Danish sovereignty."
+ FEE_Denmark_Events.26.OPT1: "It is time we intervened in this war"
+ FEE_Denmark_Events.26.OPT2: "We should stay out of German affairs"
+
+ FEE_Denmark_Events.27.T: "Economic Reforms"
+ FEE_Denmark_Events.27.D: "Denmark's strategic location has brought it great wealth from North and Baltic Sea trade. However, Denmark is not a populous nation, nor one especially rich in natural resources. It's production depends chiefly on agriculture still, even as other nations rush to exploit more lucrative resources and industries. Even our agriculture risks falling behind, as nobles continue to use serfdom instead of free peasantry, lowering the quality (and therefore the prince) of our grain."
+ FEE_Denmark_Events.27.OPT1: "We must make all efforts to diversify our economy!"
+ FEE_Denmark_Events.27.OPT2: "We must expand our trade networks to bring in more wealth!"
+ FEE_Denmark_Events.27.OPT3: "We must reform the Agricultural sector!"
+
+ FEE_Denmark_Events.28.T: "Diversification Efforts Fail"
+ FEE_Denmark_Events.28.D: "Despite the best efforts of [Root.Monarch.GetName], the vested interests in agricultural serfdom were simply too strong to overcome. Additionally, the lack of mineral resources and the dependence on imports made any heavy industry or weapons manufacturing a non-starter. It seems Denmark is doomed to continue in the old ways as the rest of the world advances…"
+ FEE_Denmark_Events.28.OPT1: "Damn!"
+
+ fee_dan_stayed_out_german_affairs: "Stayed out of German Affairs"
+
+ fee_dan_reigned_in_norway: "Reigned in Norway"
+ fee_dan_danish_interventionism: "Danish Interventionism"
+ fee_dan_renewed_trade_investments: "Renewed Trade Investements"
+ fee_dan_agricultural_reforms: "Agricultural Reforms"
+ fee_dan_reforms_ignored: "Reforms Ignored"
+
+ EST_VAL_DENMARK_RENEWED_TRADE_INVESTEMENTS: "Renewed Trade Investements: §Y$VAL$%§!"
+
+# Modifiers
+ fee_dan_uproar_over_hans_tausen: "Uproar over Hans Tausen"
+ fee_dan_hans_tausen_preaching: "Hans Tausen Preaching"
+ desc_fee_dan_hans_tausen_preaching: "Hans Tausen is preaching the protestant faith in our country."
+ fee_dan_architect_danish_throne: "Architect of the Danish Throne"
+ desc_fee_dan_architect_danish_throne: "Christian IV was a great city builder."
+ fee_dan_danish_absolutism: "Danish Absolutism"
+ desc_fee_dan_danish_absolutism: "Danish absolutism has allowed our king to dismiss the oppositional privy council."
+
+ fee_dan_johann_friedrich_struensee: "Johann Friedrich Struensee"
+ desc_fee_dan_johann_friedrich_struensee: "Struensee is the de facto regent of Denmark."
+ fee_dan_norwegian_governor_abolished: "Norwegian Governor-general Abolished"
+ fee_dan_noble_rights_restricted: "Noble Rights Restricted by Struensee"
+ fee_dan_slavery_corvee_abolished: "Slavery and Corvée abolished by Struensee"
+ fee_dan_court_aristocracy_abolished: "Court Aristocracy Abolished by Struensee"
+ fee_dan_struensee_rudeces_spending: "Struensee Reduces Spending and Bribery"
+ fee_dan_struensee_resizes_army: "Struensee Resizes the Army"
+ fee_dan_struensee_allows_freedom_press: "Struensee Allows Freedom of the Press"
+ fee_dan_struensee_reforms_universities: "Struensee Reforms Universities and Hospitals"
+
+# Opinion
+ fee_dan_stockholm_bloodbath: "The Stockholm Bloodbath"
+
+# Tooltips
+ fee_dan_struense_develop_tt: "Struensee will certainly make things interesting."
+ fee_dan_change_trade_goods_tt: "For the capital and one other Danish province: 25% chance to change its trade good to cloth, 25% chance to change its trade good to salt, 50% chance for failure and consequences."

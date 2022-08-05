@@ -1,0 +1,1436 @@
+#Danish events
+namespace = FEE_Denmark_Events
+#The Stockholm Bloodbath
+country_event = {
+	id = FEE_Denmark_Events.1
+	title = FEE_Denmark_Events.1.T
+	desc = FEE_Denmark_Events.1.D
+	picture = CITY_VIEW_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = DAN
+		is_year = 1500
+		NOT = { is_year = 1540 }
+		overlord_of = SWE
+		SWE = {
+			liberty_desire = 50
+		}
+		is_at_war = no
+		NOT = {
+			reverse_has_opinion = {
+				who = SWE
+				value = 130
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 180
+		modifier = {
+			factor = 0.1
+			truce_with = SWE
+		}
+	}
+
+	option = {
+		name = FEE_Denmark_Events.1.OPT1
+
+		add_stability_or_adm_power = yes
+		add_prestige = -5
+		SWE = {
+			country_event = {
+				id = FEE_Denmark_Events.2
+				days = 2
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Denmark_Events.1.OPT2
+
+		add_stability = -1
+		add_legitimacy_equivalent = { amount = -10 republican_tradition = -5 }
+	}
+}
+
+#Stockholm Bloodbath for Sweden
+country_event = {
+	id = FEE_Denmark_Events.2
+	title = FEE_Denmark_Events.2.T
+	desc = FEE_Denmark_Events.2.D
+	picture = BORDER_TENSION_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Denmark_Events.2.OPT1
+
+		add_stability = -1
+		add_opinion = {
+			who = DAN
+			modifier = fee_dan_stockholm_bloodbath
+		}
+	}
+}
+
+#Hans Tausen
+country_event = {
+	id = FEE_Denmark_Events.3
+	title = FEE_Denmark_Events.3.T
+	desc = FEE_Denmark_Events.3.D
+	picture = PRAYING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = DAN
+			AND = {
+				tag = SCA
+				primary_culture = danish
+			}
+		}
+		is_religion_enabled = protestant
+		religion = catholic
+		NOT = { is_year = 1530 }
+	}
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_capital = no
+				}
+				set_province_flag = fee_dan_tausen
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Denmark_Events.3.OPT1
+
+		random_owned_province = {
+			limit = {
+				has_province_flag = fee_dan_tausen
+			}
+			change_religion = protestant
+			add_province_modifier = {
+				name = religious_zeal_at_conv #vanilla
+				duration = 3650
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Denmark_Events.3.OPT2
+
+		random_owned_province = {
+			limit = {
+				has_province_flag = fee_dan_tausen
+			}
+			add_province_modifier = {
+				name = fee_dan_uproar_over_hans_tausen
+				duration = 3650
+			}
+		}
+	}
+}
+
+#Tausen as advisor
+country_event = {
+	id = FEE_Denmark_Events.4
+	title = FEE_Denmark_Events.4.T
+	desc = FEE_Denmark_Events.4.D
+	picture = RELIGIOUS_CONVERSION_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = DAN
+		religion = protestant
+		is_year = 1515
+		NOT = { is_year = 1540 }
+	}
+
+	mean_time_to_happen = {
+		months = 96
+		modifier = {
+			factor = 0.8
+			any_owned_province = {
+				has_province_flag = fee_dan_tausen
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Denmark_Events.4.OPT1
+
+		define_advisor = {
+			name = "Hans Tausen"
+			skill = 2
+			type = theologian
+			discount = yes
+		}
+	}
+
+	option = {
+		name = FEE_Denmark_Events.4.OPT2
+
+		add_country_modifier = {
+			name = fee_dan_hans_tausen_preaching
+			duration = 3650
+		}
+		if = {
+			limit = {
+				senior_union_with = NOR
+			}
+			NOR = {
+				country_event = {
+					id = FEE_Denmark_Events.5
+					days = 30
+					random = 20
+				}
+			}
+		}
+		if = {
+			limit = {
+				senior_union_with = SWE
+			}
+			SWE = {
+				country_event = {
+					id = FEE_Denmark_Events.5
+					days = 30
+					random = 20
+				}
+			}
+		}
+	}
+}
+
+#Tausen preaching in subject countries
+country_event = {
+	id = FEE_Denmark_Events.5
+	title = FEE_Denmark_Events.5.T
+	desc = FEE_Denmark_Events.5.D
+	picture = RELIGIOUS_CONVERSION_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		junior_union_with = DAN
+	}
+
+	option = {
+		name = FEE_Denmark_Events.5.OPT1
+
+		add_country_modifier = {
+			name = fee_dan_hans_tausen_preaching
+			duration = 3650
+		}
+		if = {
+			limit = {
+				any_owned_province = {
+					religion = catholic
+				}
+			}
+			random_owned_province = {
+				limit = {
+					religion = catholic
+				}
+				change_religion = protestant
+			}
+		}
+	}
+}
+
+#Architecht of the Danish Throne
+country_event = {
+	id = FEE_Denmark_Events.6
+	title = FEE_Denmark_Events.6.T
+	desc = FEE_Denmark_Events.6.D
+	picture = GREAT_BUILDING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = DAN
+			AND = {
+				tag = SCA
+				primary_culture = danish
+			}
+		}
+		is_year = 1588
+		NOT = { is_year = 1648 }
+		ADM = 4
+		government = monarchy
+	}
+
+	mean_time_to_happen = {
+		months = 360
+		modifier = {
+			factor = 0.8
+			ADM = 5
+		}
+		modifier = {
+			factor = 0.8
+			treasury = 100
+		}
+	}
+
+	option = {
+		name = FEE_Denmark_Events.6.OPT1
+
+		add_country_modifier = {
+			name = fee_dan_architect_danish_throne
+			duration = 7300
+		}
+		capital_scope = {
+			add_base_tax = 1
+			add_base_production = 1
+		}
+		if = {
+			limit = {
+				tag = SCA
+				owns = 17
+			}
+			17 = {
+				add_base_tax = 1
+				add_base_production = 1
+			}
+		}
+		if = {
+			limit = {
+				tag = SCA
+				owns = 1
+			}
+			1 = {
+				add_base_tax = 1
+				add_base_production = 1
+			}
+		}
+		if = {
+			limit = {
+				senior_union_with = NOR
+			}
+			NOR = {
+				country_event = {
+					id = FEE_Denmark_Events.7
+					days = 30
+					random = 10
+				}
+			}
+		}
+		if = {
+			limit = {
+				senior_union_with = SWE
+			}
+			SWE = {
+				country_event = {
+					id = FEE_Denmark_Events.7
+					days = 30
+					random = 10
+				}
+			}
+		}
+	}
+}
+
+#Architect of the Danish Throne for subjects
+country_event = {
+	id = FEE_Denmark_Events.7
+	title = FEE_Denmark_Events.7.T
+	desc = FEE_Denmark_Events.7.D
+	picture = GREAT_BUILDING_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		junior_union_with = DAN
+	}
+
+	option = {
+		name = FEE_Denmark_Events.7.OPT1
+
+		add_country_modifier = {
+			name = fee_dan_architect_danish_throne
+			duration = 7300
+		}
+		capital_scope = {
+			add_base_tax = 1
+			add_base_production = 1
+		}
+		if = {
+			limit = {
+				owns_core_province = 24
+			}
+			24 = {
+				add_base_tax = 1
+			}
+		}
+		if = {
+			limit = {
+				owns_core_province = 6
+			}
+			6 = {
+				add_base_tax = 1
+			}
+		}
+	}
+}
+
+#The Danish Monarchy
+country_event = {
+	id = FEE_Denmark_Events.8
+	title = FEE_Denmark_Events.8.T
+	desc = FEE_Denmark_Events.8.D
+	picture = DIPLOMACY_eventPicture
+
+	trigger = {
+		tag = DAN
+		government = monarchy
+		NOT = { has_ruler_flag = fee_dan_danish_elective }
+		NOT = {
+			has_country_modifier = fee_dan_danish_absolutism
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 48
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_ruler_flag = fee_dan_danish_elective
+		}
+	}
+
+	option = {
+		name = FEE_Denmark_Events.8.OPT1
+		ai_chance = {
+			factor = 98
+		}
+
+		add_legitimacy_equivalent = { amount = 10 republican_tradition = 5 }
+		add_adm_power = -15
+		add_dip_power = -15
+		add_mil_power = -15
+		random_owned_province = {
+			limit = {
+				is_capital = no
+			}
+			add_local_autonomy = 15
+		}
+	}
+
+	option = {
+		name = FEE_Denmark_Events.8.OPT2
+		ai_chance = {
+			factor = 2
+		}
+
+		add_prestige = 10
+		random_owned_province = {
+			limit = {
+				is_capital = no
+			}
+			noble_rebels = 2
+		}
+	}
+}
+
+#Danish Absolutism
+country_event = {
+	id = FEE_Denmark_Events.9
+	title = FEE_Denmark_Events.9.T
+	desc = FEE_Denmark_Events.9.D
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = DAN
+			AND = {
+				tag = SCA
+				primary_culture = danish
+			}
+		}
+		is_year = 1660
+		government = monarchy
+	}
+
+	mean_time_to_happen = {
+		months = 180
+		modifier = {
+			factor = 0.7
+			truce_with = SWE
+		}
+		modifier = {
+			factor = 0.8
+			ADM = 5
+		}
+		modifier = {
+			factor = 0.8
+			stability = 2
+		}
+	}
+
+	option = {
+		name = FEE_Denmark_Events.9.OPT1
+
+		add_stability_or_adm_power = yes
+		add_country_modifier = {
+			name = fee_dan_danish_absolutism
+			duration = -1
+		}
+	}
+}
+
+#Remove Absolutism Bonus
+country_event = {
+	id = FEE_Denmark_Events.10
+	title = FEE_Denmark_Events.10.T
+	desc = FEE_Denmark_Events.10.D
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	fire_only_once = yes
+
+	hidden = yes
+
+	trigger = {
+		OR = {
+			tag = DAN
+			tag = SCA
+		}
+		has_country_modifier = fee_dan_danish_absolutism
+		NOT = {
+			government = monarchy
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 10
+	}
+
+	immediate = {
+		hidden_effect = {
+			remove_country_modifier = fee_dan_danish_absolutism
+		}
+	}
+
+	option = {
+		name = FEE_Denmark_Events.10.OPT1
+	}
+}
+
+#End of Elective Monarchy (for Scandinavia)
+country_event = {
+	id = FEE_Denmark_Events.11
+	title = FEE_Denmark_Events.11.T
+	desc = FEE_Denmark_Events.11.D
+	picture = LIBERUM_VETO_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = SCA
+		has_ruler_flag = fee_danish_elective
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = FEE_Denmark_Events.11.OPT1
+
+		add_stability_or_adm_power = yes
+		add_prestige = 10
+		add_adm_power = 10
+		add_dip_power = 10
+		add_mil_power = 10
+	}
+}
+
+#Struensee
+country_event = {
+	id = FEE_Denmark_Events.12
+	title = FEE_Denmark_Events.12.T
+	desc = FEE_Denmark_Events.12.D
+	picture = KING_SICK_IN_BED_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = DAN
+			AND = {
+				tag = SCA
+				primary_culture = danish
+			}
+		}
+		government = monarchy
+		is_subject = no
+		is_year = 1750
+		NOT = { is_year = 1790 }
+		OR = {
+			has_any_disaster = no
+			has_disaster = aspiration_for_liberty
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 360
+		modifier = {
+			factor = 0.8
+			NOT = {
+				ADM = 3
+			}
+		}
+		modifier = {
+			factor = 0.8
+			NOT = {
+				DIP = 3
+			}
+		}
+		modifier = {
+			factor = 0.8
+			NOT = {
+				MIL = 3
+			}
+		}
+		modifier = {
+			factor = 0.6
+			has_disaster = aspiration_for_liberty
+		}
+	}
+
+	option = {
+		name = FEE_Denmark_Events.12.OPT1
+		ai_chance = {
+			factor = 90
+		}
+
+		if = {
+			limit = {
+				has_heir = no
+			}
+			define_heir = {
+				dynasty = ROOT
+				age = 1
+			}
+		}
+		define_ruler = {
+			name = "(Regent) Johann Friedrich Struensee"
+			dynasty = "Struensee"
+			ADM = 5
+			DIP = 3
+			MIL = 2
+			regency = yes
+			age = 26
+		}
+
+		set_ruler_flag = fee_struensee_timer
+		add_country_modifier = {
+			name = fee_dan_johann_friedrich_struensee
+			duration = -1
+		}
+
+		add_ruler_modifier = {
+			#Compatability with Lex Talionis
+			name = is_usurper
+			duration = -1
+		}
+		custom_tooltip = fee_dan_struense_develop_tt
+	}
+
+	option = {
+		name = FEE_Denmark_Events.12.OPT2
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 100
+				OR = {
+					ADM = 5
+					DIP = 5
+					MIL = 5
+				}
+			}
+		}
+
+		add_stability = -1
+		add_dip_power = -20
+		add_mil_power = -20
+	}
+}
+
+#Struensee Abolishes the Norwegian Viceroyship (Personal Union)
+country_event = {
+	id = FEE_Denmark_Events.13
+	title = FEE_Denmark_Events.13.T
+	desc = FEE_Denmark_Events.13.D
+	picture = BAD_WITH_MONARCH_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = DAN
+			tag = SCA
+		}
+		dynasty = "Struensee"
+		senior_union_with = NOR
+		has_country_modifier = fee_dan_johann_friedrich_struensee
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	option = {
+		name = FEE_Denmark_Events.13.OPT1
+		add_country_modifier = {
+			name = fee_dan_norwegian_governor_abolished
+			duration = -1
+		}
+	}
+}
+
+#Struensee Abolishes the Norwegian Viceroyship (Integrated Norway)
+country_event = {
+	id = FEE_Denmark_Events.14
+	title = FEE_Denmark_Events.14.T
+	desc = FEE_Denmark_Events.14.D
+	picture = BAD_WITH_MONARCH_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = DAN
+			tag = SCA
+		}
+		dynasty = "Struensee"
+		has_country_modifier = fee_dan_johann_friedrich_struensee
+		NOT = {
+			exists = NOR
+		}
+		OR = {
+			northern_norway = {
+				owned_by = ROOT
+				culture = norwegian
+			}
+			eastern_norway = {
+				owned_by = ROOT
+				culture = norwegian
+			}
+			western_norway = {
+				owned_by = ROOT
+				culture = norwegian
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	option = {
+		name = FEE_Denmark_Events.14.OPT1
+
+		northern_norway = {
+			limit = {
+				owned_by = ROOT
+			}
+			add_local_autonomy = 30
+		}
+		eastern_norway = {
+			limit = {
+				owned_by = ROOT
+			}
+			add_local_autonomy = 30
+		}
+		western_norway = {
+			limit = {
+				owned_by = ROOT
+			}
+			add_local_autonomy = 30
+		}
+	}
+}
+
+#Struensee restricts noble rights
+country_event = {
+	id = FEE_Denmark_Events.15
+	title = FEE_Denmark_Events.15.T
+	desc = FEE_Denmark_Events.15.D
+	picture = DEBATE_REPUBLICAN_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = DAN
+			tag = SCA
+		}
+		dynasty = "Struensee"
+		has_country_modifier = fee_dan_johann_friedrich_struensee
+	}
+
+	mean_time_to_happen = {
+		months = 5
+	}
+
+	option = {
+		name = FEE_Denmark_Events.15.OPT1
+
+		add_country_modifier = {
+			name = fee_dan_noble_rights_restricted
+			duration = -1
+		}
+	}
+}
+
+#Struensee abolishes slave trade and unfree labor
+country_event = {
+	id = FEE_Denmark_Events.16
+	title = FEE_Denmark_Events.16.T
+	desc = FEE_Denmark_Events.16.D
+	picture = FARMING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = DAN
+			tag = SCA
+		}
+		dynasty = "Struensee"
+		has_country_modifier = fee_dan_johann_friedrich_struensee
+	}
+
+	mean_time_to_happen = {
+		months = 5
+	}
+
+	option = {
+		name = FEE_Denmark_Events.16.OPT1
+
+		add_country_modifier = {
+			name = fee_dan_slavery_corvee_abolished
+			duration = -1
+		}
+	}
+}
+
+#Struensee abolishes the court aristocracy
+country_event = {
+	id = FEE_Denmark_Events.17
+	title = FEE_Denmark_Events.17.T
+	desc = FEE_Denmark_Events.17.D
+	picture = LIBERUM_VETO_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = DAN
+			tag = SCA
+		}
+		dynasty = "Struensee"
+		has_country_modifier = fee_dan_johann_friedrich_struensee
+	}
+
+	mean_time_to_happen = {
+		months = 7
+	}
+
+	option = {
+		name = FEE_Denmark_Events.17.OPT1
+
+		add_country_modifier = {
+			name = fee_dan_court_aristocracy_abolished
+			duration = -1
+		}
+	}
+}
+
+#Struensee reins in state funding and abolishes bribery
+country_event = {
+	id = FEE_Denmark_Events.18
+	title = FEE_Denmark_Events.18.T
+	desc = FEE_Denmark_Events.18.D
+	picture = OVEREXTENSION_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = DAN
+			tag = SCA
+		}
+		dynasty = "Struensee"
+		has_country_modifier = fee_dan_johann_friedrich_struensee
+	}
+
+	mean_time_to_happen = {
+		months = 5
+	}
+
+	option = {
+		name = FEE_Denmark_Events.18.OPT1
+
+		add_country_modifier = {
+			name = fee_dan_struensee_rudeces_spending
+			duration = -1
+		}
+	}
+}
+
+#Struensee reorganizes the army
+country_event = {
+	id = FEE_Denmark_Events.19
+	title = FEE_Denmark_Events.19.T
+	desc = FEE_Denmark_Events.19.D
+	picture = ECONOMY_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = DAN
+			tag = SCA
+		}
+		dynasty = "Struensee"
+		has_country_modifier = fee_dan_johann_friedrich_struensee
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Denmark_Events.19.OPT1
+
+		add_country_modifier = {
+			name = fee_dan_struensee_resizes_army
+			duration = -1
+		}
+	}
+}
+
+#Struensee reforms universities and hospitals
+country_event = {
+	id = FEE_Denmark_Events.20
+	title = FEE_Denmark_Events.20.T
+	desc = FEE_Denmark_Events.20.D
+	picture = UNIVERSITY_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = DAN
+			tag = SCA
+		}
+		dynasty = "Struensee"
+		has_country_modifier = fee_dan_johann_friedrich_struensee
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Denmark_Events.20.OPT1
+
+		add_country_modifier = {
+			name = fee_dan_struensee_reforms_universities
+			duration = -1
+		}
+	}
+}
+
+#Struensee and the Queen
+country_event = {
+	id = FEE_Denmark_Events.21
+	title = FEE_Denmark_Events.21.T
+	desc = FEE_Denmark_Events.21.D
+	picture = THEATRE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = DAN
+			tag = SCA
+		}
+		dynasty = "Struensee"
+		has_country_modifier = fee_dan_johann_friedrich_struensee
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Denmark_Events.21.OPT1
+
+		add_prestige = -15
+		add_legitimacy_equivalent = { amount = -5 republican_tradition = -3 }
+	}
+}
+
+#Freedom of the Press
+country_event = {
+	id = FEE_Denmark_Events.22
+	title = FEE_Denmark_Events.22.T
+	desc = FEE_Denmark_Events.22.D
+	picture = COURT_eventPicture
+
+	trigger = {
+		OR = {
+			tag = DAN
+			tag = SCA
+		}
+		dynasty = "Struensee"
+		has_country_modifier = fee_dan_johann_friedrich_struensee
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Denmark_Events.22.OPT1
+
+		add_adm_power = 10
+		add_country_modifier = {
+			name = fee_dan_struensee_allows_freedom_press
+			duration = -1
+		}
+	}
+}
+
+#Plot against Struensee
+country_event = {
+	id = FEE_Denmark_Events.23
+	title = FEE_Denmark_Events.23.T
+	desc = FEE_Denmark_Events.23.D
+	picture = ANGRY_MOB_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = DAN
+			tag = SCA
+		}
+		dynasty = "Struensee"
+		is_subject = no
+		has_country_modifier = fee_dan_johann_friedrich_struensee
+		had_ruler_flag = {
+			flag = fee_struensee_timer
+			days = 300
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 3
+		modifier = {
+			factor = 0.3
+			had_ruler_flag = {
+				flag = fee_struensee_timer
+				days = 700
+			}
+		}
+	}
+	immediate = {
+		hidden_effect = {
+			remove_country_modifier = fee_dan_johann_friedrich_struensee
+			remove_country_modifier = fee_dan_struensee_allows_freedom_press
+			remove_country_modifier = fee_dan_struensee_reforms_universities
+			remove_country_modifier = fee_dan_struensee_resizes_army
+			remove_country_modifier = fee_dan_struensee_rudeces_spending
+			remove_country_modifier = fee_dan_court_aristocracy_abolished
+			remove_country_modifier = fee_dan_slavery_corvee_abolished
+			remove_country_modifier = fee_dan_noble_rights_restricted
+			remove_country_modifier = fee_dan_norwegian_governor_abolished
+			every_country = {
+				limit = {
+					marriage_with = DAN
+				}
+				set_country_flag = fee_dan_marriage
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Denmark_Events.23.OPT1
+		ai_chance = {
+			factor = 70
+		}
+
+		kill_ruler = yes
+	}
+
+	option = {
+		name = FEE_Denmark_Events.23.OPT2
+		ai_chance = {
+			factor = 5
+		}
+
+		define_ruler = {
+			name = "Johann Friedrich"
+			dynasty = "Struensee"
+			ADM = 5
+			DIP = 3
+			MIL = 2
+			age = 28
+		}
+		every_country = {
+			limit = {
+				is_subject = no
+				has_country_flag = fee_dan_marriage
+				NOT = {
+					had_country_flag = {
+						flag = fee_dan_marriage
+						days = 3650
+					}
+				}
+			}
+			add_casus_belli = {
+				target = DAN
+				type = cb_change_government
+				months = 120
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Denmark_Events.23.OPT3
+		ai_chance = {
+			factor = 25
+		}
+
+		define_ruler = {
+			name = "Caroline Matilda"
+			dynasty = "Oldenburg"
+			female = yes
+			age = 23
+		}
+		define_heir = {
+			name = "Frederick"
+			dynasty = "Oldenburg"
+			age = 3
+		}
+	}
+}
+
+# The Riksråd of Denmark
+country_event = {
+	id = FEE_Denmark_Events.24
+	title = FEE_Denmark_Events.24.T
+	desc = FEE_Denmark_Events.24.D
+	picture = CITY_VIEW_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = DAN
+		SWE = {
+			is_subject = no
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+		modifier = {
+			factor = 0.5
+			has_idea_group = aristocracy_ideas
+		}
+	}
+
+	option = {
+		name = FEE_Denmark_Events.24.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
+		add_stability_or_adm_power = yes
+		set_estate_privilege = estate_nobles_supremacy_over_crown
+		set_estate_privilege = estate_nobles_right_of_counsel
+		change_estate_land_share = {
+			estate = estate_nobles
+			share = 5
+		}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 10
+		}
+	}
+
+	option = {
+		name = FEE_Denmark_Events.24.OPT2
+
+		add_stability = -1
+		add_prestige = 15
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -10
+		}
+		random_owned_province = {
+			spawn_rebels = {
+				type = noble_rebels
+				size = 3
+			}
+		}
+		random_owned_province = {
+			spawn_rebels = {
+				type = noble_rebels
+				size = 3
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Denmark_Events.24.OPT3
+
+		add_stability_or_adm_power = yes
+		if = {
+			limit = {
+				is_expanded_mod_active = {
+					mod = governments
+				}
+			}
+			add_government_reform = elective_monarchy_reform
+		}
+	}
+}
+
+# The Riksråd of Norway
+country_event = {
+	id = FEE_Denmark_Events.25
+	title = FEE_Denmark_Events.25.T
+	desc = FEE_Denmark_Events.25.D
+	picture = CITY_VIEW_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = DAN
+		overlord_of = NOR
+		religion = protestant
+		is_year = 1500
+		NOT = { is_year = 1550 }
+	}
+
+	mean_time_to_happen = {
+		months = 200
+		modifier = {
+			factor = 0.6
+			has_idea_group = influence_ideas
+		}
+	}
+
+	option = {
+		name = FEE_Denmark_Events.25.OPT1
+
+		add_country_modifier = {
+			name = fee_dan_reigned_in_norway
+			duration = -1
+		}
+	}
+}
+
+# Danish Intervention in the Protestant League
+country_event = {
+	id = FEE_Denmark_Events.26
+	title = FEE_Denmark_Events.26.T
+	desc = FEE_Denmark_Events.26.D
+	picture = CITY_VIEW_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = DAN
+		is_at_war = no
+		religion = protestant
+		army_size = 20
+		hre_leagues_enabled = yes
+		is_in_league_war = no
+		emperor = {
+			is_in_league_war = yes
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 4
+	}
+
+	option = {
+		name = FEE_Denmark_Events.26.OPT1
+
+		join_league = protestant
+		add_country_modifier = {
+			name = fee_dan_danish_interventionism
+			duration = 7300
+		}
+	}
+
+	option = {
+		name = FEE_Denmark_Events.26.OPT2
+
+		add_opinion = {
+			who = emperor
+			modifier = fee_dan_stayed_out_german_affairs
+		}
+		reverse_add_opinion = {
+			who = emperor
+			modifier = fee_dan_stayed_out_german_affairs
+		}
+	}
+}
+
+# Economic Reforms
+country_event = {
+	id = FEE_Denmark_Events.27
+	title = FEE_Denmark_Events.27.T
+	desc = FEE_Denmark_Events.27.D
+	picture = CITY_VIEW_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = DAN
+		is_year = 1650
+	}
+
+	mean_time_to_happen = {
+		months = 400
+		modifier = {
+			factor = 0.5
+			has_idea_group = economic_ideas
+		}
+		modifier = {
+			factor = 0.5
+			has_idea_group = innovativeness_ideas
+		}
+	}
+
+	option = {
+		name = FEE_Denmark_Events.27.OPT1
+
+		add_adm_power = -100
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -15
+		}
+		custom_tooltip = fee_dan_change_trade_goods_tt
+		random_list = {
+			25 = {
+				capital_scope = {
+					change_trade_goods = cloth
+					add_base_production = 3
+				}
+				random_owned_province = {
+					limit = {
+						is_capital = no
+						culture = danish
+						or = {
+							trade_goods = grain
+							trade_goods = naval_supplies
+						}
+					}
+					change_trade_goods = cloth
+					add_base_production = 3
+				}
+			}
+			25 = {
+				capital_scope = {
+					change_trade_goods = salt
+					add_base_production = 4
+				}
+				random_owned_province = {
+					limit = {
+						is_capital = no
+						culture = danish
+						or = {
+							trade_goods = grain
+							trade_goods = naval_supplies
+						}
+					}
+					change_trade_goods = salt
+					add_base_production = 4
+				}
+			}
+			50 = {
+				country_event = {
+					id = FEE_Denmark_Events.28
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Denmark_Events.27.OPT2
+
+		add_dip_power = -100
+		add_country_modifier = {
+			name = fee_dan_renewed_trade_investments
+			duration = -1
+		}
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = 10
+		}
+		add_estate_influence_modifier = {
+			estate = estate_burghers
+			influence = 15
+			desc = EST_VAL_DENMARK_RENEWED_TRADE_INVESTEMENTS
+			duration = -1
+		}
+	}
+
+	option = {
+		name = FEE_Denmark_Events.27.OPT2
+
+		add_adm_power = -100
+		add_country_modifier = {
+			name = fee_dan_agricultural_reforms
+			duration = -1
+		}
+	}
+}
+
+# Diversification Efforts Fail
+country_event = {
+	id = FEE_Denmark_Events.28
+	title = FEE_Denmark_Events.28.T
+	desc = FEE_Denmark_Events.28.D
+	picture = CITY_VIEW_eventPicture
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Denmark_Events.28.OPT1
+
+		add_country_modifier = {
+			name = fee_dan_reforms_ignored
+			duration = 10950
+		}
+		change_estate_land_share = {
+			estate = estate_nobles
+			share = 2
+		}
+	}
+}

@@ -6,3 +6,20 @@ fee_boh_noble_concesions = {
 	nobles_influence_modifier = 0.25
 	nobles_loyalty_modifier = 0.05
 }
+
+fee_boh_hussite_ingenuity = {
+	mil_tech_cost_modifier = -0.1
+}
+boh_coinage_pioneer = {
+	global_tax_modifier = 0.1
+	inflation_reduction = 0.1
+}
+fee_boh_thaler = {
+	trade_efficiency = 0.05
+}
+fee_boh_greedy_rulership = {
+	development_cost = 0.05
+}
+fee_boh_religion_enforced = {
+	global_heretic_missionary_strength = 0.03
+}

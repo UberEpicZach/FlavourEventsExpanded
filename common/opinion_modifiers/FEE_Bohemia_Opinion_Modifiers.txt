@@ -1,4 +1,3 @@
-#BOH
 fee_boh_linked_thrones = {
 	opinion = 200
 	yearly_decay = 10
@@ -6,4 +5,24 @@ fee_boh_linked_thrones = {
 fee_boh_claiming_thrones = {
 	opinion = -200
 	yearly_decay = 10
+}
+
+fee_boh_charter_universal_peace_union_rivals = {
+	opinion = 100
+	yearly_decay = 2
+}
+
+fee_boh_charter_universal_peace_union = {
+	opinion = -100
+	yearly_decay = 2
+}
+
+fee_boh_charter_universal_peace_union_france = {
+	opinion = 50
+	yearly_decay = 2
+}
+
+fee_boh_defenestration_prague = {
+	opinion = 100
+	yearly_decay = 2
 }

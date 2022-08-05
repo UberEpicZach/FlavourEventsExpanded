@@ -13,12 +13,6 @@ fee_swabian_reconciliation = {
 	yearly_decay = 1
 }
 
-#Friends in the Swabian League
-fee_swabian_league_member = {
-	opinion = 30
-	yearly_decay = 0
-}
-
 #A country rejects joining the Swabian League
 fee_rejected_swabian_league = {
 	opinion = -10
@@ -54,20 +48,6 @@ fee_english_rejected = {
 	opinion = -30
 	yearly_decay = 2
 }
-
-# Refused togive League Aid
-fee_refused_league_aid = {
-	opinion = -20
-	yearly_decay = 2
-}
-
-#Stockholm Bloodbath
-fee_stockholm_bloodbath = {
-	opinion = -70
-	yearly_decay = 1
-}
-
-
 
 #Burgundy King of Loth
 fee_BUR_lotharingia_opinion1 = {
@@ -116,9 +96,4 @@ fee_lovemaking_statue_positive = {
 fee_lovemaking_statue_positive_small = {
 	opinion = 5
 	years = 5
-}
-
-FEE_Denmark_Out_of_German_Affairs_Opinion_Modifier = {
-	opinion = 50
-	yearly_decay = 2
 }
