@@ -1,0 +1,121 @@
+namespace = FEE_Norway_Events
+
+#Copper Mines on Røros
+country_event = {
+	id = FEE_Norway_Events.1
+	title = FEE_Norway_Events.1.T
+	desc = FEE_Norway_Events.1.D
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = NOR
+		owns = 20
+		is_year = 1640
+		NOT = { is_year = 1750 }
+	}
+
+	mean_time_to_happen = {
+		months = 360
+	}
+
+	option = {
+		name = FEE_Norway_Events.1.OPT1
+		20 = {
+			change_trade_goods = copper
+			add_base_production = 1
+		}
+	}
+	option = {
+		name = FEE_Norway_Events.1.OPT2
+
+		add_treasury = 50
+	}
+}
+
+#Saint Olav’s Shrine for Overlord
+country_event = {
+	id = FEE_Norway_Events.2
+	title = FEE_Norway_Events.2.T
+	desc = FEE_Norway_Events.2.D
+	picture = IMPORTANT_STATUE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		overlord_of = NOR
+		OR = {
+			religion = protestant
+			religion = reformed
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+		modifier = {
+			factor = 0.5
+			OR = {
+				NOR = {
+					religion = protestant
+				}
+				NOR = {
+					religion = reformed
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Norway_Events.2.OPT1
+		ai_chance = {
+			factor = 90
+		}
+
+		NOR = {
+			country_event = {
+				id = FEE_Norway_Events.3 days = 10 random = 5
+			}
+			add_treasury = 25
+			random_owned_province = {
+				limit = {
+					NOT = { has_owner_religion = yes }
+				}
+				change_religion = ROOT
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Norway_Events.2.OPT2
+		ai_chance = {
+			factor = 10
+		}
+
+		add_prestige = -5
+	}
+}
+
+#Saint Olav's Shrine Norway
+country_event = {
+	id = FEE_Norway_Events.3
+	title = FEE_Norway_Events.3.T
+	desc = FEE_Norway_Events.3.D
+	picture = RELIGIOUS_TURMOIL_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Norway_Events.3.OPT1
+
+		add_liberty_desire = 5
+		add_opinion = {
+			who = FROM
+			modifier = fee_nor_destroyed_saint_olav_shrine
+		}
+		reverse_add_opinion = {
+			who = FROM
+			modifier = fee_nor_destroyed_saint_olav_shrine
+		}
+	}
+}

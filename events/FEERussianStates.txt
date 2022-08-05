@@ -9,71 +9,49 @@ country_event = {
 	desc = fee_rst.1.D
 	picture = CITY_VIEW_eventPicture
 
-	
+	fire_only_once = yes
 
 	trigger = {
-		
 		OR = {
-		tag = RYA
-		tag = YAR
-		tag = PSK
-		tag = TVE
+			tag = RYA
+			tag = YAR
+			tag = PSK
+			tag = TVE
 		}
-		NOT = {
-			has_country_modifier = fee_NOV_veche
-		}
-		NOT = {
-			adm_tech = 16
-		}
-}
-   option = {
+		NOT = { adm_tech = 16 }
+	}
+
+	option = {
         name = fee_rst.1.OPT1
 		add_country_modifier = {
-		name = fee_NOV_veche_ADM
+		name = FEE_Novgorod_Events_veche_ADM
 		duration = 3650
 		}
-		add_country_modifier = {
-			name = fee_NOV_veche
-			duration = 3650
-			hidden = yes
-		}
-}
-option = {
+	}
+
+	option = {
         name = fee_rst.1.OPT2
 		add_country_modifier = {
-		name = fee_NOV_veche_DIP
+		name = FEE_Novgorod_Events_veche_DIP
 		duration = 3650
 		}
-		add_country_modifier = {
-			name = fee_NOV_veche
-			duration = 3650
-			hidden = yes
-		}
-}
-option = {
+	}
+
+	option = {
         name = fee_rst.1.OPT3
 		add_country_modifier = {
-		name = fee_NOV_veche_MIL
+		name = FEE_Novgorod_Events_veche_MIL
 		duration = 3650
 		}
-		add_country_modifier = {
-			name = fee_NOV_veche
-			duration = 3650
-			hidden = yes
-		}
-}
-option = {
+	}
+
+	option = {
         name = fee_rst.1.e
 		add_country_modifier = {
-		name = fee_NOV_veche_NOT
+		name = FEE_Novgorod_Events_veche_NOT
 		duration = 3650
 		}
-		add_country_modifier = {
-			name = fee_NOV_veche
-			duration = 3650
-			hidden = yes
-		}
-}
+	}
 }
 
 #Seek Lithuanian Protection

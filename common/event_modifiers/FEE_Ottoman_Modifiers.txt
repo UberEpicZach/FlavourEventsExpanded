@@ -1,0 +1,24 @@
+#Ottomans seizing the wheat of WAL or MOL
+fee_tur_feeding_the_army = {
+	manpower_recovery_speed = 0.05
+	reinforce_speed = 0.15
+	land_maintenance_modifier = -0.05
+}
+fee_tur_weath_stores_seized_ottomans = {
+	global_manpower_modifier = -0.15
+	land_maintenance_modifier = 0.15
+	global_unrest = 5
+	liberty_desire = 30
+}
+#Ottoman Conquest of Vienna
+fee_tur_european_stronghold = {
+	local_unrest = 1
+	local_defensiveness = 0.15
+}
+#Muhrad II seffects
+fee_tur_jannisariescalmed = {
+	global_unrest = -1
+}
+fee_tur_jannisariesagainst_ruler = {
+	global_unrest = 1
+}

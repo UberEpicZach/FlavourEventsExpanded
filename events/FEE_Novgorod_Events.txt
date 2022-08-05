@@ -1,0 +1,490 @@
+namespace = FEE_Novgorod_Events
+
+#The Great Famine
+country_event = {
+	id = FEE_Novgorod_Events.1
+	title = FEE_Novgorod_Events.1.T
+	desc = FEE_Novgorod_Events.1.D
+	picture = FAMINE_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		tag = NOV
+		had_recent_war = 5
+		is_year = 1445
+	}
+	
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = {
+		name = FEE_Novgorod_Events.1.OPT1
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 60
+				NOT = {
+					num_of_loans = 5
+				}
+			}
+		}
+
+		add_years_of_income = -1.5
+		add_dip_power = -15
+	}
+
+	option = {
+		name = FEE_Novgorod_Events.1.OPT2
+		ai_chance = {
+			factor = 50
+		}
+
+		add_manpower = -6
+		set_country_flag = fee_nov_novgorodian_famine
+		custom_tooltip = fee_nov_famine_tt
+	}
+}
+
+#Famine Causes Internal Disruption
+country_event = {
+	id = FEE_Novgorod_Events.2
+	title = FEE_Novgorod_Events.2.T
+	desc = FEE_Novgorod_Events.2.D
+	picture = RELIGIOUS_TURMOIL_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = NOV
+		is_year = 1450
+		has_country_flag = fee_nov_novgorodian_famine
+	}
+
+	mean_time_to_happen = {
+		months = 48
+	}
+
+	option = {
+		name = FEE_Novgorod_Events.2.OPT1
+
+		set_country_flag = fee_nov_novgorodian_latinism
+		clr_country_flag = fee_nov_novgorodian_famine
+		custom_tooltip = fee_nov_latinisation_novgorod
+	}
+
+	option = {
+		name = FEE_Novgorod_Events.2.OPT2
+		trigger = {
+			LIT = {
+				is_free_or_tributary_trigger = yes
+			}
+		}
+
+		add_years_of_income = -2
+		LIT = {
+			#Gives them an option to accept an alliance
+			country_event = { id = FEE_Novgorod_Events.5 days = 10 }
+		}
+		clr_country_flag = fee_nov_novgorodian_famine
+		custom_tooltip = fee_nov_vassalization_tt
+	}
+
+	option = {
+		name = FEE_Novgorod_Events.2.OPT3
+		trigger = {
+			MOS = {
+				is_free_or_tributary_trigger = yes
+			}
+		}
+
+		MOS = {
+			#Gives MOS the option to vassalize NOV
+			country_event = { id = FEE_Novgorod_Events.6 days = 10 }
+		}
+		clr_country_flag = fee_nov_novgorodian_famine
+		custom_tooltip = fee_nov_vassalization_tt
+	}
+	
+	option = {
+		name = FEE_Novgorod_Events.2.OPT4
+
+		add_country_modifier = {
+			name = fee_nov_great_famine
+			duration = 1825
+		}
+	}
+}
+
+#Novgorod Latinises
+country_event = {
+	id = FEE_Novgorod_Events.3
+	title = FEE_Novgorod_Events.3.T
+	desc = FEE_Novgorod_Events.3.D
+	picture = RELIGIOUS_CONVERSION_eventPicture
+	
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 48
+	}
+	
+	option = {
+		name = FEE_Novgorod_Events.3.OPT1
+		ai_chance = {
+			factor = 25
+		}
+
+		change_religion = catholic
+		capital_scope = {
+			change_religion = catholic
+		}
+		if = {
+			limit = {
+				exists = MOS
+			}
+			MOS = {
+				#MOS gains CB
+				country_event = {
+					id = FEE_Novgorod_Events.7
+				}
+			}
+		}
+		random_owned_province = {
+			limit = {
+				is_capital = no
+			}
+			spawn_rebels = {
+				type = orthodox_rebels
+				size = 2
+			}
+		}
+		random_owned_province = {
+			limit = {
+				is_capital = no
+			}
+			spawn_rebels = {
+				type = orthodox_rebels
+				size = 1
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Novgorod_Events.3.OPT2
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 25
+				treasury = 200
+			}
+		}
+
+		change_religion = catholic
+		capital_scope = {
+			change_religion = catholic
+		}
+		if = {
+			limit = {
+				exists = MOS
+			}
+			add_treasury = -200
+			MOS = {
+				#MOS is bought off
+				add_treasury = 200
+			}
+		}
+		random_owned_province = {
+			limit = {
+				is_capital = no
+			}
+			spawn_rebels = {
+				type = orthodox_rebels
+				size = 2
+			}
+		}
+		random_owned_province = {
+			limit = {
+				is_capital = no
+			}
+			spawn_rebels = {
+				type = orthodox_rebels
+				size = 1
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Novgorod_Events.3.OPT3
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 25
+				treasury = 200
+			}
+		}
+
+		change_religion = catholic
+		add_country_modifier = {
+			name = fee_nov_latinisation
+			duration = -1
+		}
+		if = {
+			limit = {
+				exists = MOS
+			}
+			MOS = {
+				country_event = {
+					id = FEE_Novgorod_Events.7
+				}
+			}
+		}
+		random_owned_province = {
+			limit = {
+				is_capital = no
+			}
+			spawn_rebels = {
+				type = orthodox_rebels
+				size = 2
+			}
+		}
+		random_owned_province = {
+			limit = {
+				is_capital = no
+			}
+			spawn_rebels = {
+				type = orthodox_rebels
+				size = 1
+			}
+		}
+		random_owned_province = {
+			limit = {
+				is_capital = no
+			}
+			spawn_rebels = {
+				type = orthodox_rebels
+				size = 1
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Novgorod_Events.3.OPT4
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 25
+				treasury = 200
+			}
+		}
+
+		change_religion = catholic
+		add_country_modifier = {
+			name = fee_nov_latinisation
+			duration = -1
+		}
+		if = {
+			limit = {
+				exists = MOS
+			}
+			add_treasury = -200
+			MOS = {
+				#MOS is bought off
+				add_treasury = 200
+			}
+		}
+		random_owned_province = {
+			spawn_rebels = {
+				type = orthodox_rebels
+				size = 2
+			}
+		}
+		random_owned_province = {
+			spawn_rebels = {
+				type = orthodox_rebels
+				size = 1
+			}
+		}
+		random_owned_province = {
+			spawn_rebels = {
+				type = orthodox_rebels
+				size = 1
+			}
+		}
+	}
+}
+
+# The Novgorodian Veche
+country_event = {
+	id = FEE_Novgorod_Events.4
+	title = FEE_Novgorod_Events.4.T
+	desc = FEE_Novgorod_Events.4.D
+	picture = REFORM_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = NOV
+		NOT = { adm_tech = 16 }
+	}
+
+	option = {
+        name = FEE_Novgorod_Events.4.OPT1
+
+		add_country_modifier = {
+			name = FEE_Novgorod_Events_veche_ADM
+			duration = 3650
+		}
+	}
+
+	option = {
+        name = FEE_Novgorod_Events.4.OPT2
+
+		add_country_modifier = {
+			name = FEE_Novgorod_Events_veche_DIP
+			duration = 3650
+		}
+	}
+
+	option = {
+        name = FEE_Novgorod_Events.4.OPT3
+
+		add_country_modifier = {
+			name = FEE_Novgorod_Events_veche_MIL
+			duration = 3650
+		}
+	}
+
+	option = {
+        name = FEE_Novgorod_Events.4.OPT4
+
+		add_country_modifier = {
+			name = FEE_Novgorod_Events_veche_NOT
+			duration = 3650
+		}
+	}
+}
+
+#Alliance oiffer to Lithuania
+country_event = {
+	id = FEE_Novgorod_Events.5
+	title = FEE_Novgorod_Events.5.T
+	desc = FEE_Novgorod_Events.5.D
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Novgorod_Events.5.OPT1
+		ai_chance = {
+			factor = 100
+		}
+
+		create_alliance = FROM
+		add_opinion = {
+			who = FROM
+			modifier = FEE_Novgorod_Events_gift
+		}
+		reverse_add_opinion = {
+			who = LIT
+			modifier = FEE_Novgorod_Events_gift
+		}
+	}
+
+	option = {
+		name = FEE_Novgorod_Events.5.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
+		NOV = {
+			add_casus_belli = {
+				target = LIT
+				type = cb_insult
+				months = 300
+			}
+		}
+	}
+}
+
+#MOS is offered the vassalisation of NOV
+country_event = {
+	id = FEE_Novgorod_Events.6
+	title = FEE_Novgorod_Events.6.T
+	desc = FEE_Novgorod_Events.6.D
+	picture = CONQUEST_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Novgorod_Events.6.OPT1
+		ai_chance = {
+			factor = 100
+		}
+
+		vassalize = NOV
+	}
+
+	option = {
+		name = FEE_Novgorod_Events.6.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
+		NOV = {
+			add_casus_belli = {
+				target = MOS
+				type = cb_insult
+				months = 30
+			}
+		}
+	}
+}
+
+#MOS gets a vassalise CB on NOV
+country_event = {
+	id = FEE_Novgorod_Events.7
+	title = FEE_Novgorod_Events.7.T
+	desc = FEE_Novgorod_Events.7.D
+	picture = ACCUSATION_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Novgorod_Events.7.OPT1
+		add_casus_belli = {
+			target = NOV
+			type = cb_vassalize_mission
+			months = 600
+		}
+	}
+}
+
+#The Final Steps of Latinisation
+country_event = {
+	id = FEE_Novgorod_Events.8
+	title = FEE_Novgorod_Events.8.T
+	desc = FEE_Novgorod_Events.8.D
+	picture = WESTERNISATION_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		has_country_modifier = fee_nov_latinisation
+		technology_group = western
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = FEE_Novgorod_Events.8.OPT1
+
+		remove_country_modifier = fee_nov_latinisation
+		add_prestige = 10
+		add_dip_power = 25
+		add_stability = 1
+	}
+}

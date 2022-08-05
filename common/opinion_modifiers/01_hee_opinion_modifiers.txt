@@ -73,12 +73,6 @@ fee_refused_league_aid = {
 	yearly_decay = 2
 }
 
-#Overlord destroy Norway’s Saint Olav Shrine
-fee_olav_shrine_destroyed = {
-	opinion = -30
-	yearly_decay = 0.5
-}
-
 #Rivalry or Reconciliation for Saxony and Brandenburg
 fee_against_hohenzollern = {
 	opinion = -30
@@ -129,12 +123,6 @@ fee_BUR_lotharingia_opinion1 = {
 #Burgundy King of Loth
 fee_BUR_lotharingia_opinion2 = {
 	opinion = 50
-	yearly_decay = 1
-}
-
-#Gift for protection
-fee_NOV_gift = {
-	opinion = 25
 	yearly_decay = 1
 }
 

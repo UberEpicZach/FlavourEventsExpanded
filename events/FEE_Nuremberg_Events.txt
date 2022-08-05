@@ -1,0 +1,43 @@
+#Nuremberg events
+
+namespace = FEE_Nuremberg_Events
+
+#The First Imperial Diet
+
+country_event = {
+	id = FEE_Nuremberg_Events.1
+	title = FEE_Nuremberg_Events.1.T
+	desc = FEE_Nuremberg_Events.1.D
+	picture = LIBERUM_VETO_eventPicture
+
+	trigger = {
+		tag = NUM
+		hre_size = 1
+		owns_core_province = 67
+		is_part_of_hre = yes
+		is_at_war = no
+		emperor = {
+			is_at_war = no
+			NOT = { has_country_flag = fee_emperor_first_diet }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	immediate = {
+		hidden_effect = {
+			emperor = {
+				set_country_flag = fee_emperor_first_diet
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Nuremberg_Events.1.OPT1
+
+		add_prestige = 5
+		add_treasury = 10
+	}
+}

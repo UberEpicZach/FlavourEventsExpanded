@@ -1,0 +1,25 @@
+#Novgorod does not seek help with famine
+fee_nov_great_famine = {
+	global_tax_modifier = -0.1
+	production_efficiency = -0.1
+	global_unrest = -2
+}
+#Novgorod latinises
+fee_nov_latinisation = {
+	technology_cost = -0.1
+}
+
+#Veche modifiers
+FEE_Novgorod_Events_veche_ADM = {
+	development_cost = -0.05
+}
+FEE_Novgorod_Events_veche_DIP = {
+	trade_efficiency = 0.1
+}
+FEE_Novgorod_Events_veche_MIL = {
+	manpower_recovery_speed = 0.15
+}
+FEE_Novgorod_Events_veche_NOT = {
+	stability_cost_modifier = -0.05
+	idea_cost = -0.05
+}

@@ -1,0 +1,36 @@
+﻿l_english:
+ FEE_Ottoman_Events.1.T: "The Ottomans Seize Our Wheat!"
+ FEE_Ottoman_Events.1.D: "To support their endless warfare, the Ottomans have decided to seize our wheat stores for use in the sultan's army. They claim it is their right as our overlord, despite our tributes never having been a day late! \nWhile our people suffer in destitution, the elite of Constantinople gorge themselves on enough food to feed the army twice over."
+ FEE_Ottoman_Events.1.OPT1: "Great is the suffering of $COUNTRY$!"
+
+ FEE_Ottoman_Events.2.T: "Storming the Gates of Europe"
+ FEE_Ottoman_Events.2.D: "After fierce resistance and long-standing rivalries, we are continuing our push into the heartland of Christendom. \nWien was a great obstacle in our path, but the fall of the fortress of Austria means that the rest of Europe will be quaking in its boots - rightfully so. \n\nWith the coming war for Europe, it would be beneficial if the might of Vienna was turned westwards. Of course, getting the population on our side might take a lot of... convincing."
+ FEE_Ottoman_Events.2.OPT1: "In our hands, Wien will be an even greater fortress than it was for our enemies!"
+ FEE_Ottoman_Events.2.OPT2: "It's just another border province. Let them reconstruct their city themselves."
+
+ FEE_Ottoman_Events.3.T: "Murad II's Return to the Throne"
+ FEE_Ottoman_Events.3.D: "Murad II had ruled the Ottoman Empire for more than twenty years, facing insurrection and disloyalty whilecontinuing the Empire's expansion, before retiring in favor of his son Mehmet in late 1444. \nThe transition was unclear however, as the 12-year old Mehmet made famous when calling his father to lead the Turkish armies at the battle of Varna: \"If you are the Sultan, come and lead your armies. If I am the Sultan, I command you to come and lead my armies.\" Murad led the armies and won a great victory over the Christian coalition on November 10th 1444, ending the Crusade of Varna.\n\nMurad was not free to return to retirement, however. While the young Sultan attempted to establish his authority, Çandarli Halil Pasha, grand vizier and true governor of the empire, opposed him. The grand vizier found Mehmed too strongly influenced by his teacher, who Çandarli considered a rival.\nÇandarli arranged for dissent among the janissaries, who threatened with revolt unless Murad were to return to the throne. Still mostly a child, Mehmet acquiesced and Murad returned to once again rule the empire.\nHe passed away five years later, and Mehmet could once again take the throne, this time unopposed. Two days after Mehmet's greatest achievement, the conquest of Constantinople in 1453, the Sultan had Çandarli put to death."
+ FEE_Ottoman_Events.3.OPT1: "Mehmet and the empire are not yet ready."
+ FEE_Ottoman_Events.3.OPT2: "Mehmet will guide the empire to glory."
+
+ FEE_Ottoman_Events.4.T: "The Passing of Murad II"
+ FEE_Ottoman_Events.4.D: "In 1450, Sultan Murad II fell ill, and early in 1451 he passed away. Mehmet II could finally take the throne without threat of insurrection, and as Murad left behind a vital and sprawling empire, the stage was set for Mehmet to become one of the greatest Ottoman sultans of all time."
+ FEE_Ottoman_Events.4.OPT1: "The Sultan is dead, long live the Sultan!"
+
+# Modifiers
+ fee_tur_feeding_the_army: "Feeding the Army"
+ fee_feeding_the_army_using_WAL_desc: "We have seized our subject's wheat stores for use in our wars."
+ fee_tur_weath_stores_seized_ottomans: "Wheat stores seized by Ottomans"
+ fee_tur_weath_stores_seized_ottomans_desc: "In pursuit of their endless wars, our overlord the Ottomans have seized most of our wheat stores! There is barely enough food left to feed our populace, much less our army."
+ fee_tur_european_stronghold: "A European Stronghold"
+ fee_tur_european_stronghold_desc: "We have reinforced the city of Vienna to secure our European gains."
+ fee_tur_jannisariescalmed: "Return of Murad II"
+ desc_fee_tur_jannisariescalmed: "Murad II has returned to the throne, calming worried about the influences the young Mehmet's teachers have on him."
+ fee_tur_jannisariesagainst_ruler: "Refused Recalling Murad II"
+ desc_fee_tur_jannisariesagainst_ruler: "Going against powerful figures at court, the young Mehmet has decided not to recall his father to the throne."
+
+# Decisions
+ feeding_the_army_using_MOL_title: "Seize Moldavian wheat to feed our army"
+ feeding_the_army_using_MOL_desc: "An army marches on its stomach, but in times of war such a truth can place a heavy burden on our people, especially on the fringes of our empire where conflict is likely to take place. However, Moldavia has fertile lands and a strategic location, and it's wheat stores could feed our army for months. Our vassal will be upset, but isn't it better if the infidels make this sacrifice, rather than our own people?"
+ feeding_the_army_using_WAL_title: "Seize Wallachian wheat to feed our army"
+ feeding_the_army_using_WAL_desc: "An army marches on its stomach, but in times of war such a truth can place a heavy burden on our people, especially on the fringes of our empire where conflict is likely to take place. However, Wallachia has fertile lands and a strategic location, and it's wheat stores could feed our army for months. Our vassal will be upset, but isn't it better if the infidels make this sacrifice, rather than our own people?"
