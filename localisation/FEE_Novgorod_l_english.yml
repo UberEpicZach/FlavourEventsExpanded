@@ -10,7 +10,7 @@
  FEE_Novgorod_Events.2.OPT2: "Buy an alliance with Lithuania."
 
  FEE_Novgorod_Events.2.OPT3: "Offer our country as a vassal to the ruler of Muscowy."
- FEE_Novgorod_Events.2.e: "$COUNTRY$ will live through this famine, alone!"
+ FEE_Novgorod_Events.2.OPT4: "$COUNTRY$ will live through this famine, alone!"
 
  FEE_Novgorod_Events.3.T: "The Latinisation of Novgorod"
  FEE_Novgorod_Events.3.D: "We have chosen to embrace Rome and the traditions of the Northern Crusades. Many of our people see it as our path to God's salvation, while many disagree./n/nThere are also those of our threatening neighbors who would rather see us remain Orthodox."
@@ -47,8 +47,8 @@
 # Modifiers
  fee_nov_great_famine: "Great Famine"
  desc_fee_nov_great_famine: "Our country is struggling alone with the effects of a great famine across our lands."
- fee_nov_latinisation: "Latinisation"
- desc_fee_nov_latinisation: "We have accepted the new faith"
+ fee_nov_latinisation: "Novgorodian Latinisation"
+ desc_nov_latinisation: "Novgorod is looking to Rome to see the future of its land."
  FEE_Novgorod_Events_veche_ADM: "Adminsitrative Focus for Veche"
  desc_FEE_Novgorod_Events_veche_ADM: "We have requested that the Veche focuses on administrative issues."
  FEE_Novgorod_Events_veche_DIP: "Diplomatic Focus for Veche"

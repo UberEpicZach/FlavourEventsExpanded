@@ -1,0 +1,29 @@
+#Renaissance building in province
+fee_renaissance_architecture = {
+	local_build_cost = -0.2
+}
+
+# Renaissance writer
+fee_renaissance_writer = {
+	stability_cost_modifier = -0.1
+	prestige = 0.5
+}
+
+#Polymath modifiers
+fee_polymath_adm = {
+	adm_tech_cost_modifier = -0.1
+}
+fee_polymath_dip = {
+	dip_tech_cost_modifier = -0.1
+}
+fee_polymath_mil = {
+	mil_tech_cost_modifier = -0.1
+}
+fee_polymath_ideas = {
+	idea_cost = -0.15
+}
+
+#Ignore the fact that your claims are illegitimate
+fee_renaissance_ignore_falsification = {
+	ae_impact = 0.1
+}

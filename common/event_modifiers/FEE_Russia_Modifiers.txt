@@ -1,0 +1,20 @@
+fee_rus_kronstadt_fortress = {
+	local_defensiveness = 0.15
+	garrison_size = 0.20
+	development_cost = 0.10
+}
+fee_rus_renovated_kremlin = {
+	local_defensiveness = 0.10
+	garrison_size = 0.15
+	development_cost = 0.05
+}
+
+fee_rus_rebellion_in_finland = {
+	local_unrest = 15
+}
+fee_rus_rights_guaranteed = {
+	min_local_autonomy = 75
+}
+fee_rus_sisu = {
+	liberty_desire = 40
+}

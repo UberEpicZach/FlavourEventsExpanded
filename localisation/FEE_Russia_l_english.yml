@@ -1,0 +1,19 @@
+﻿l_english:
+ FEE_Russia_Events.1.T: "Kronstadt Fortress"
+ FEE_Russia_Events.1.D: "The grand city of St. Petersburg has served as the capital of all Russia for years, being the gateway to the Baltic's riches for both our merchants and our admirals; through it has flowed Russian culture and influence for many years. Unfortunately, the capital lies in a dangerous strategic position, for as the riches of Scandinavia and Germany flow into St. Petersburg, so do their dangers. The Gulf of Finland is easily traversable by enemy fleets, and currently any aggressor against us may sail straight into the heart of our capital, into the heart of Russia itself. There is a way to defend the city, however. Kotlin Island stands between the mouth of the Neva and the Gulf proper, meaning all ships coming to harbour at the capital must pass it. Our engineers have proposed a large fortress, to be built on Kotlin Island, which would stand proudly amongst the sea, a great bastion which all enemies must defeat to negotiate safe passage to St. Petersburg! The costs of such a fortress will not be light, but it will surely be worth building."
+ FEE_Russia_Events.1.OPT1: "We shall christen this new fortress Kronstadt!"
+ FEE_Russia_Events.1.OPT2: "Let us use this money to renovate Moscow's defenses instead."
+
+ FEE_Russia_Events.2.T: "The Grand Duke"
+ FEE_Russia_Events.2.D: "We have claimed victory over Sweden and seized the provinces of Eastern Sweden, or to non-deluded people, Finland, and now comes the question of administration. In the past the Finns have reluctantly accepted the rule of the Swedes, but they see this as an opportunity to leverage our government into independence. We, of course, will not allow this, but the Finns are a fierce and proud people who will fight like no others when wronged. Perhaps we could grant them a certain degree of autonomy, to placate these nationalist sentiments."
+ FEE_Russia_Events.2.OPT1: "These lands are ours by right of conquest!"
+ FEE_Russia_Events.2.OPT2: "We could give them a notable degree of autonomy."
+ FEE_Russia_Events.2.OPT3: "Let us convene with the Diet of Finland to proclaim a personal union over Finland."
+ FEE_Russia_Events.2.OPT4: "Let us utilise this fighting spirit against our enemies!"
+
+# Modifiers
+ fee_rus_renovated_kremlin: "Renovated Kremlin"
+ fee_rus_kronstadt_fortress: "Kronstadt Fortress"
+ fee_rus_rebellion_in_finland: "Rebellion in Finland"
+ fee_rus_rights_guaranteed: "Rights Guaranteed"
+ fee_rus_sisu: "fee_rus_sisu"

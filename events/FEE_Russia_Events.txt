@@ -1,0 +1,355 @@
+# Vicryl's Russian Flavour
+
+namespace = FEE_Russia_Events
+
+# Kronstadt Fortress.
+country_event = {
+	id = FEE_Russia_Events.1
+	title = FEE_Russia_Events.1.T
+	desc = FEE_Russia_Events.1.D
+	picture = CITY_VIEW_eventPicture
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 300
+	}
+
+	trigger = {
+		tag = RUS
+		has_country_flag = relocated_capital_st_petersburg
+		owns = 295
+		owns = 33
+		33 = {
+			is_capital = yes
+		}
+	}
+
+	option = {
+		name = FEE_Russia_Events.1.OPT1
+		ai_chance = { factor = 70 }
+
+		add_years_of_income = -0.75
+		33 = {
+		}
+		33 = {
+			# Grand Shipyard check.
+			if = {
+				limit = {
+					NOT = { has_shipyard_building_trigger = yes }
+				}
+				add_building = grand_shipyard
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_building = grand_shipyard
+					}
+					has_building = shipyard
+				}
+				remove_building = shipyard
+				add_building = grand_shipyard
+			}
+			else = {
+				add_base_production = 1
+			}
+			# Naval Battery check.
+			if = {
+				limit = {
+					NOT = { has_building = coastal_defence }
+					NOT = { has_building = naval_battery }
+				}
+				add_building = naval_battery
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						has_building = naval_battery
+					}
+					has_building = coastal_defence
+				}
+				remove_building = coastal_defence
+				add_building = naval_battery
+			}
+			else = {
+				add_base_tax = 1
+			}
+			# Fort check.
+			if = {
+				limit = {
+					NOT = { has_building = fort_15th }
+				}
+				add_building = fort_15th
+			}
+			else_if = {
+				limit = {
+					NOT = { has_building = fort_16th }
+				}
+				add_building = fort_16th
+			}
+			else_if = {
+				limit = {
+					NOT = { has_building = fort_17th }
+				}
+				add_building = fort_17th
+			}
+			else_if = {
+				limit = {
+					NOT = { has_building = fort_18th }
+				}
+				add_building = fort_18th
+			}
+			else = {
+				add_base_manpower = 1
+			}
+			# Kronstadt Fortress modifier
+			add_province_modifier = {
+				name = fee_rus_kronstadt_fortress
+				duration = -1
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Russia_Events.1.OPT2
+		ai_chance = { factor = 30 }
+
+		add_years_of_income = -0.5
+		# Renovated Kremlin modifier
+		295 = {
+			add_province_modifier = {
+				name = fee_rus_renovated_kremlin
+				duration = -1
+			}
+		}
+	}
+}
+
+# The Grand Duke.
+country_event = {
+	id = FEE_Russia_Events.2
+	title = FEE_Russia_Events.2.T
+	desc = FEE_Russia_Events.2.D
+	picture = COURT_eventPicture
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	trigger = {
+		tag = RUS
+		owns = 30
+		owns = 32
+		owns = 4151
+		owns = 4124
+		owns = 27
+		owns = 28
+		owns = 29
+		owns = 31
+		owns = 4123
+		owns = 19
+		owns = 4113
+		owns = 4152
+	}
+
+	option = {
+		name = FEE_Russia_Events.2.OPT1
+		ai_chance = { factor = 30 }
+		
+		finland_area = {
+			add_province_modifier = {
+				name = fee_rus_rebellion_in_finland
+				duration = 36524
+			}
+		}
+		bothnia_area = {
+			add_province_modifier = {
+				name = fee_rus_rebellion_in_finland
+				duration = 36524
+			}
+		}
+		4151 = {
+			add_province_modifier = {
+				name = fee_rus_rebellion_in_finland
+				duration = 36524
+			}
+		}
+		4124 = {
+			add_province_modifier = {
+				name = fee_rus_rebellion_in_finland
+				duration = 36524
+			}
+		}
+		32 = {
+			add_province_modifier = {
+				name = fee_rus_rebellion_in_finland
+				duration = 36524
+			}
+		}
+		30 = {
+			add_province_modifier = {
+				name = fee_rus_rebellion_in_finland
+				duration = 36524
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Russia_Events.2.OPT2
+		ai_chance = { factor = 10 }
+		
+		finland_area = {
+			add_province_modifier = {
+				name = fee_rus_rights_guaranteed
+				duration = -1
+			}
+		}
+		bothnia_area = {
+			add_province_modifier = {
+				name = fee_rus_rights_guaranteed
+				duration = -1
+			}
+		}
+		4151 = {
+			add_province_modifier = {
+				name = fee_rus_rights_guaranteed
+				duration = -1
+			}
+		}
+		4124 = {
+			add_province_modifier = {
+				name = fee_rus_rights_guaranteed
+				duration = -1
+			}
+		}
+		32 = {
+			add_province_modifier = {
+				name = fee_rus_rights_guaranteed
+				duration = -1
+			}
+		}
+		30 = {
+			add_province_modifier = {
+				name = fee_rus_rights_guaranteed
+				duration = -1
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Russia_Events.2.OPT3
+		ai_chance = { factor = 30 }
+		
+		release	= FIN
+		hidden_effect = {
+			FIN = {
+				capital_scope = {
+					build_to_forcelimit = {
+						infantry = 0.8
+						cavalry = 0.1
+						artillery = 0.1
+					}
+				}
+				change_primary_culture = finnish
+				change_religion = ROOT
+			}
+		}
+		if = {
+			limit = {
+				valid_for_personal_unions_trigger = yes
+				FIN = { valid_for_personal_unions_trigger = yes }
+			}
+			create_union = FIN
+		}
+		finland_area = {
+			cede_province = FIN
+		}
+		bothnia_area = {
+			cede_province = FIN
+		}
+		4151 = {
+			cede_province = FIN
+		}
+		4124 = {
+			cede_province = FIN
+		}
+		32 = {
+			cede_province = FIN
+		}
+		30 = {
+			cede_province = FIN
+		}
+	}
+
+	option = {
+		name = FEE_Russia_Events.2.OPT4
+		ai_chance = { factor = 30 }
+		
+		release = FIN
+		create_march = FIN
+		finland_area = {
+			cede_province = FIN
+		}
+		bothnia_area = {
+			cede_province = FIN
+		}
+		4151 = {
+			cede_province = FIN
+		}
+		4124 = {
+			cede_province = FIN
+		}
+		32 = {
+			cede_province = FIN
+		}
+		30 = {
+			cede_province = FIN
+		}
+		FIN = {
+			add_country_modifier = {
+				name = fee_rus_sisu
+				duration = -1
+			}
+			hidden_effect = {
+				capital_scope = {
+					build_to_forcelimit = {
+						infantry = 0.8
+						cavalry = 0.1
+						artillery = 0.1
+					}
+				}
+				change_primary_culture = finnish
+				change_religion = ROOT
+			}
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			finland_area = {
+				change_culture = finnish
+				add_core = FIN
+			}
+			bothnia_area = {
+				change_culture = finnish
+				add_core = FIN
+			}
+			4151 = {
+				change_culture = finnish
+				add_core = FIN
+			}
+			4124 = {
+				change_culture = finnish
+				add_core = FIN
+			}
+			32 = {
+				change_culture = finnish
+				add_core = FIN
+			}
+			30 = {
+				change_culture = finnish
+				add_core = FIN
+			}
+		}
+	}
+}

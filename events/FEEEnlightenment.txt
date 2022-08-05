@@ -392,7 +392,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = fee_enlightenment.8.e
+		name = fee_enlightenment.8.OPT4
 		trigger = {
 			NOT = {
 					has_country_modifier = fee_great_work_check
@@ -406,7 +406,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = fee_enlightenment.8.f
+		name = fee_enlightenment.8.OPT5
 		trigger = {
 			NOT = {
 				has_country_modifier = fee_great_work_check
@@ -1034,7 +1034,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_enlightenment.18.e
+		name = fee_enlightenment.18.OPT4
 		trigger = {
 			NOT = {
 				OR = {
@@ -1051,7 +1051,7 @@ country_event = {
 	}
 
 	option = {
-		name = fee_enlightenment.18.f
+		name = fee_enlightenment.18.OPT5
 		add_stability = -1
 		add_legitimacy_equivalent = { amount = -5 republican_tradition = -3 }
 	}

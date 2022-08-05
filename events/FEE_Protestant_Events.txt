@@ -70,16 +70,16 @@ province_event = {
 	trigger = {
 		religion = catholic
 		is_religion_enabled = protestant
-		NOT = {
-			owner = { religion = catholic }
-		}
-		NOT = {
-			owner = { religion = reformed }
-		}
-		NOT = {
-			owner = { religion = protestant }
-		}
 		NOT = { is_year = 1650 }
+		NOT = {
+			owner = {
+				OR = {
+					religion = catholic
+					religion = reformed
+					religion = protestant
+				}
+			}
+		}
 	}
 
 	mean_time_to_happen = {

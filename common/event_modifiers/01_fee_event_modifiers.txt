@@ -92,52 +92,7 @@ fee_MOL_overlord = {
 fee_MOL_conquered = {
 }
 ### Renaissance modifiers ###
-# Renaissance trigger
-fee_renaissance = { innovativeness_gain = 0.005
-}
 
-fee_had_renaissance = {
-}
-
-#Renaissance building in province
-fee_renaissance_architecture = {
-	local_build_cost = -0.2
-}
-
-fee_renaissance_architecture_timer = {
-}
-
-# Renaissance writer
-fee_renaissance_writer = {
-	stability_cost_modifier = -0.1
-	prestige = 0.5
-}
-
-#Polymath modifiers
-fee_polymath_adm = {
-	adm_tech_cost_modifier = -0.1
-}
-
-fee_polymath_dip = {
-	dip_tech_cost_modifier = -0.1
-}
-
-fee_polymath_mil = {
-	mil_tech_cost_modifier = -0.1
-}
-
-fee_polymath_ideas = {
-	idea_cost = -0.15
-}
-
-#Discovery of a falsified claim timer
-fee_falsified_timer = {
-}
-
-#Ignore the fact that your claims are illegitimate
-fee_ignore_falsification = {
-	ae_impact = 0.1
-}
 
 #Sebastianism in Portugal
 fee_sebastianism = {
@@ -452,11 +407,6 @@ fee_golkonda_fort = {
 fee_moved_capital = { }
 
 #Modifiers among Russian states
-#Legal code of Pskov
-fee_legal_code_of_pskov = {
-	stability_cost_modifier = -0.1
-}
-
 #Track the state of Perm's freedom
 fee_perm_freed = {
 }
