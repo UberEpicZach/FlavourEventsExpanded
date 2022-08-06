@@ -54,3 +54,9 @@ ven_jew_ghetto_novo = {
 	trade_goods_size = 0.25
 	local_build_time = -0.15
 }
+
+fee_ven_prosperity_po_valley = {
+	local_development_cost = -0.10
+	local_manpower_modifier = 0.10
+	province_trade_power_modifier = 0.15
+}

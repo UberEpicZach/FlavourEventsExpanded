@@ -487,7 +487,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		days = 60
+		months = 6
 	}
 
 	option = {
@@ -623,7 +623,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		days = 60
+		months = 6
 	}
 
 	option = {
@@ -667,7 +667,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		days = 60
+		months = 6
 	}
 
 	option = {
@@ -727,7 +727,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		days = 60
+		months = 6
 	}
 
 	option = {
@@ -774,20 +774,234 @@ country_event = {
 	}
 }
 
+#########	Life of Doge Francesco Foscari from 1444 to 1457	####
+
+#Il Dogato di Francesco Foscari
+country_event = {
+	id = FEE_Venice_Events.17
+	title = FEE_Venice_Events.17.T
+	desc = FEE_Venice_Events.17.D
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VEN
+		is_year = 1423
+		NOT = { is_year = 1457 }
+		has_ruler = "Francesco Foscari"
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Venice_Events.17.OPT1
+
+		add_prestige = 5
+		add_legitimacy_equivalent = { amount = 5 republican_tradition = 3 }
+	}
+}
+
+# Bartolomeo Marcello
+country_event = {
+	id = FEE_Venice_Events.18
+	title = FEE_Venice_Events.18.T
+	desc = FEE_Venice_Events.18.D
+	picture = ADVISOR_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VEN
+		is_year = 1438
+		NOT = { is_year = 1459 }
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Venice_Events.18.OPT1
+
+		add_dip_power = 25
+		define_advisor = {
+			type = diplomat
+			name = "Bartolomeo Marcello"
+			skill = 1
+			discount = yes
+			culture = venetian
+			religion = catholic
+		}
+	}
+}
+
+# Salvaguardare gli interessi nel Bosforo
+country_event = {
+	id = FEE_Venice_Events.19
+	title = FEE_Venice_Events.19.T
+	desc = FEE_Venice_Events.19.D
+	picture = ADVISOR_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VEN
+		diplomat = 1
+		151 = {
+			NOT = { owned_by = ROOT }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Venice_Events.19.OPT1
+
+		add_mercantilism = 3
+		1320 = {
+			add_trade_modifier = {
+				who = ROOT
+				duration = 7300
+				power = 15
+				key = fee_ven_bartolomeo_marcello
+			}
+		}
+	}
+}
+
+# Possedimenti della Terraferma
+country_event = {
+	id = FEE_Venice_Events.20
+	title = FEE_Venice_Events.20.T
+	desc = FEE_Venice_Events.20.D
+	picture = ADVISOR_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VEN
+		is_year = 1423
+		NOT = { is_year = 1457 }
+		has_ruler = "Francesco Foscari"
+		po_valley_area = {
+			owned_by = ROOT
+			is_in_capital_area = yes
+		}
+		venetia_area = {
+			owned_by = ROOT
+			NOT = { province_is_on_an_island = yes }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Venice_Events.20.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_years_of_income = 0.5
+		add_yearly_manpower = 0.5
+		1298 = {
+			add_trade_modifier = {
+				who = ROOT
+				duration = 3650
+				power = 15
+				key = fee_ven_prosperity_po_valley
+			}
+		}
+		po_valley_area = {
+			add_devastation = -25
+			add_prosperity = 25
+			add_province_modifier = {
+				name = fee_ven_prosperity_po_valley
+				duration = 3650
+			}
+		}
+	}
+}
+
+# Treachery of Jacopo
+country_event = {
+	id = FEE_Venice_Events.21
+	title = FEE_Venice_Events.21.T
+	desc = FEE_Venice_Events.21.D
+	picture = BAD_WITH_MONARCH_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VEN
+		is_year = 1456
+		NOT = { is_year = 1457 }
+		has_ruler = "Francesco Foscari"
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Venice_Events.21.OPT1
+
+		add_adm_power = -25
+		add_legitimacy_equivalent = { amount = -5 republican_tradition = -3 }
+		add_prestige = -5
+	}
+}
+
+# Death of Francesco Foscari
+country_event = {
+	id = FEE_Venice_Events.22
+	title = FEE_Venice_Events.22.T
+	desc = FEE_Venice_Events.22.D
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VEN
+		is_year = 1457
+		NOT = { has_ruler = "Francesco Foscari" }
+		NOT = { is_year = 1460 }
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Venice_Events.22.OPT1
+
+		add_treasury = -25
+		add_splendor = 100
+		change_religious_influence_equivalent_fee = { add = 15 }
+	}
+}
+
 #
 #country_event = {
 #	id = FEE_Venice_Events.
 #	title = FEE_Venice_Events..T
 #	desc = FEE_Venice_Events..D
-#	picture = FARMING_eventPicture
+#	picture = GOOD_WITH_MONARCH_eventPicture
 #
 #	fire_only_once = yes
+#
 #	trigger = {
 #		tag = VEN
 #	}
 #
 #	mean_time_to_happen = {
-#		days = 60
+#		months = 6
 #	}
 #
 #	option = {

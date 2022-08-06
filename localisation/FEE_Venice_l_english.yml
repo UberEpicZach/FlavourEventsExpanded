@@ -70,6 +70,30 @@
  FEE_Venice_Events.16.D: "As the original European casino, Il Ridotto was a government-owned gambling house that formalised gambling and exessive money loss in Venice in 1638. It was established once the Great Council gave up on preventing people from playing for money during the Carnivale. Eventually, people from across Europe would come to Venice to test their luck, and hopefully make a quick fortune. While the wing of the San Moisè Palace was supposedly open to the public, only nobles could afford the high stakes played with there.\n\nWhile money flowed freely for more than a century, gambling was outlawed and Il Ridotto was closed in 1774."
  FEE_Venice_Events.16.OPT1: "Oh yes, let's fleece 'em!"
 
+ FEE_Venice_Events.17.T: "Il Dogato di Francesco Foscari"
+ FEE_Venice_Events.17.D: "Son of Nicolò di Giovanni Foscari and Caterina di Giovanni Michiel, Franesco was of the Foscari family, one of the "Case Nuove", the patricial venetian families which ascended during the Late Middle Age. In 1400 he joined the Quarantia, the following year the judges of his own; in 1403 the Saviours to the Orders and then became Avogador. When Tomasso Mocenigo died the 4th of April 1423 Francesco competed for the supreme magistracy against five other candidates, all more mature than himself, among whom Pietro Loredan excelled in the ballot. By exploiting his partisans within the electoral college, Foscari managed to bring his competitors into disrepute, all while Venice was at war with Milan in the Guerre di Lombardia."
+ FEE_Venice_Events.17.OPT1: "Our Illustrous Doge!"
+
+ FEE_Venice_Events.18.T: "Bartolomeo Marcello"
+ FEE_Venice_Events.18.D: "He was born in Venice in the second half of 1402, the eldest son of the patrician Benedetto di Bartolomeo and Maddalena di Bianco di Alvise da Riva. This branch of the family, which resided in the parish of S. Marina, was the most important of the household; he was orphaned of his father at a very early age, so he also had to take care of his younger brother Francesco. On 23 March 1437, he was one of the sages in the Ordini, which dealt with matters relating to the fleet and maritime trade."
+ FEE_Venice_Events.18.OPT1: "A fine Diplomat!"
+
+ FEE_Venice_Events.19.T: "Salvaguardare gli interessi nel Bosforo"
+ FEE_Venice_Events.19.D: "The Senate has legislated that our illustrous diplomat Bartolomeo Marcello shall be sent in the Bosphorus to secure part of our trading interest in the Aegean sea"
+ FEE_Venice_Events.19.OPT1: "Let's hope this won't anger them."
+
+ FEE_Venice_Events.20.T: "Possedimenti di Terraferma"
+ FEE_Venice_Events.20.D: "Francesco Foscari was able to give to the Lagoon Republic a territorial domani stretching from the river Isonzo to the Adda, prosperous and productive lands in which the Venetian Merchants could think of solid investments, less conspicous, perhaps, but more secure than those of maritime trade"
+ FEE_Venice_Events.20.OPT1: "Marvelous!"
+
+ FEE_Venice_Events.21.T: "Treachery of Jacopo?"
+ FEE_Venice_Events.21.D: "My son Jacopo, the only one that survived the Peste of 1430's has already been accused of treachery against the Republic when on 18 February 1445, the Council of Ten imprisoned him on the charge of colluding with foreign princes. Foscari, however, had managed to save himself by fleeing to Trieste. Two days later the Ten banished him from Venice in perpetuity, condemning him to exile in Nauplia. The super-command Marco Trevisan was then sent to Trieste to execute the sentence and on 3 March the Dogaressa was forbidden to travel to the Julian city to visit her son. In fact, according to historical documents, it seems that the Council had acted with a certain mildness perhaps due to pressure from the doge and his family. The Trevisan left for Trieste no earlier than 25 February and in any case did not succeed in capturing the Foscari since on 11 March the doge was asked to induce his son to turn himself in. In the following months, the Dieci were substantially inert and only on 28 November 1446 was the confinement at Nauplia converted with that at Zelarino, a Venetian locality very close to the Lagoon of which the Foscari were feudal lords. Finally, on 13 September 1447, the Dieci granted a pardon. \n\nA today the Ten came back to deal with him: he was now accused of entertaining correspondence with Francesco Sforza and even Muhammad II. On 12 June, therefore, the super-committee Lorenzo Loredan was sent to Chania. He brought Foscari back to Venice where, on 24 July, the Council gave him the mildest sentence, i.e. confirmation of his Cretan exile. The doge and the young man's family were also allowed to visit him in prison."
+ FEE_Venice_Events.21.OPT1: "Why can't they leave him be?"
+
+ FEE_Venice_Events.22.T: "Death of Francesco Foscari"
+ FEE_Venice_Events.22.D: "Francesco Foscari died a few days later, on 1 November (he had made his will on 29 October), at his home in Santa Margherita. A state funeral was arranged for him with an exhibition to the people in ducal vestments, despite the opposition of his widow, who saw it as a clumsy act of reparation by that power that had taken away her son and humiliated her husband. The body was accompanied by the new doge [ROOT.Monarch.GetName] who appeared in the simple guise of a senator. Francesco Foscari was buried in the presbytery of the basilica of the Frari, in the mausoleum made for him by Niccolò di Giovanni Fiorentino, in an urn supported by four graceful corbels adorned with the three theological virtues (Faith, Hope and Charity) in whose arrangement around the sarcophagus Niccolò modified the conventional and static arrangement of the personifications, transforming it into a drama inserted in the flow of time. The crowning figure of the Saviour changed the common motif of the Risen Christ into the image of the Ascension of Christ taken from the Venetian duchy, as an allusion to the true ruler of Venice, to whom alone his representative - the doge - was responsible."
+ FEE_Venice_Events.22.OPT1: "Let us not forget the greates of all our Doges!"
+
  #Estate Modifeirs
  ven_nobles_restrained: "Restrained the Barones"
  ven_nobles_happy: "Nobles are Happy"
@@ -95,8 +119,11 @@
  ven_jew_ghetto: "Jew Ghetto of Venice"
  ven_jew_ghetto_novo: "Ghetto Novo of Venice"
 
+ fee_ven_prosperity_po_valley: "Prosperity in the Po' Valley"
+
  #Trade Modifeirs
  ven_trade_deal_costantinople: "Venetian Trade Deal"
+ fee_ven_bartolomeo_marcello: "Bartolomeo Marcello"
 
  #Tooltips
- VEN_FANTI_MAR_TT: "Every owned §Ycoastal provinces§! will gain:"
+ VEN_FANTI_MAR_TT: "Every owned §YCoastal Provinces§! will gain:"
