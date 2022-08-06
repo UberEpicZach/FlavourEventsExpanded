@@ -823,7 +823,7 @@ country_event = {
 			}
 			add_opinion = {
 				who = SWI
-				modifier = fee_swabian_reconciliation
+				modifier = fee_swa_swabian_reconciliation
 			}
 		}
 		add_dip_power = 10
@@ -951,10 +951,10 @@ country_event = {
 			}
 			add_opinion = {
 				who = BAV
-				modifier = fee_swabian_reconciliation
+				modifier = fee_swa_swabian_reconciliation
 			}
 		}
-		set_country_flag = fee_swabian_reconciliation
+		set_country_flag = fee_swa_swabian_reconciliation
 	}
 }
 

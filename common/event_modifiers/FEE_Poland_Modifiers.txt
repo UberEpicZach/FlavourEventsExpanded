@@ -1,15 +1,41 @@
-pol_uniate_church = {
+fee_pol_uniate_church = {
 	tolerance_heretic = 2
 	stability_cost_modifier = -0.10
 	global_heretic_missionary_strength = -0.03
 	papal_influence = -2
 	religion = yes
 }
-pol_true_believers = {
+fee_pol_true_believers = {
 	local_missionary_strength = -0.05
 }
-pol_catholicism_entrenched = {
+fee_pol_catholicism_entrenched = {
 	tolerance_heretic = -1
 	papal_influence = 2
 	religion = yes
+}
+
+#Polish Flavor Events
+fee_pol_statuty_nieszawskie = {
+	stability_cost_modifier = -0.3
+	legitimacy = -0.25
+}
+
+fee_pol_statut_piotrkowski = {
+	global_unrest = 2
+}
+
+fee_pol_przywilej_mielnicki = {
+	stability_cost_modifier = -0.1
+	local_autonomy = 0.1
+	legitimacy = -0.5
+}
+
+fee_pol_przywilej_torunski = {
+	global_unrest = 2
+}
+
+fee_pol_statut_karnkowskiego = {
+	local_ship_repair = 0.25
+	ship_recruit_speed = -0.2
+	local_ship_cost = -0.1
 }

@@ -83,6 +83,18 @@
  FEE_England_Great_Britain_Events.19.OPT1: "Let us extend an offer to the French of a summit."
  FEE_England_Great_Britain_Events.19.OPT2: "The French are, and always shall be our enemies!"
 
+ FEE_England_Great_Britain_Events.20.T: "The Rough Wooing"
+ FEE_England_Great_Britain_Events.20.D: "In 1543, the king of Scotland had died, leaving the infant Mary, Queen of Scots, on the throne. In the same year, England and Scotland agreed in the Treaty of Greenwich that Prince Edward of England should marry the young Scottish queen. However, the treaty was rejected by the Scottish Parliament. \nHenry VIII of England still desired to see the two countries united, and used the rejection of the treaty as an excuse to renew the war against Scotland, with the goal of forcing Queen Mary to wed his son. \nThe resulting conflict lasted for eight years of terrible warfare, but saw Scotland retain its independence."
+ FEE_England_Great_Britain_Events.20.OPT1: "It is in our interest to unite the crowns."
+
+ FEE_England_Great_Britain_Events.21.T: "Sake Dean Mahomed"
+ FEE_England_Great_Britain_Events.21.D: "Sheikh Din Muhammad, or Sake Dean Mahomed, was born in 1759 in Bihar. His father worked for the East India Company, and upon his death, the ten year old Sake was adopted by a British Captain. He became a surgeon in the British Army, and fought in the war against the Marathas. When his foster father and closest friend resigned from the army, Mahomed accompanied him to Britain. \n\nThere he published his book, \"The Travels of Dean Mahomet\", which described several Indian cities, as well as the faded glories of the Mughal Empire. He went on to open Britain's first Indian restaurant, as well as introducing Indian soaps and the practice of \"shampoo\". This was how he went on to become the \"shampooing surgeon\" for both King George IV and William IV."
+ FEE_England_Great_Britain_Events.21.OPT1: "This smells quite nice. And healthy too, you say?"
+
+ FEE_England_Great_Britain_Events.22.T: "Sake Dean Mahomed"
+ FEE_England_Great_Britain_Events.22.D: "Sheikh Din Muhammad, or Sake Dean Mahomed, was born in 1759 in Bihar. His father worked for the East India Company, and upon his death, the ten year old Sake was adopted by a British Captain. He became a surgeon in the British Army, and fought in the war against the Marathas. When his foster father and closest friend resigned from the army, Mahomed accompanied him to Britain. \n\nHe would go on to open England's first Indian restaurant, introduce the Indian practice of shampoo to Britain, and become shampooing surgeon for two British Kings.\n\nPossibly his greatest work, however, was his book, \"The Travels of Sake Dean Mahomet\", in which he described the ancient glories of the Mughal Empire.\n\nIt has become quite popular in Europe, which in turn reflects well on us."
+ FEE_England_Great_Britain_Events.22.OPT1: "Yes, we do deserve this praise."
+
 # Modifiers
  fee_eng_gbr_scientific_method: "Scientific Method"
 
@@ -120,6 +132,9 @@
  fee_eng_gbr_wrens_london: "Wren's London"
  fee_eng_gbr_everlyns_london: "Everlyn's London"
  fee_eng_gbr_hookes_london: "Hooke's London"
+
+ fee_eng_gbr_travels_of_mahomed: "Travels of Mahomed"
+ desc_fee_travels_of_mahomed: ""
 
 # Opinion Modifiers
  fee_eng_gbr_field_of_the_cloth_of_gold: "Field of the Cloth of Gold"

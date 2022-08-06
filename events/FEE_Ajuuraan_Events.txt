@@ -36,12 +36,12 @@ country_event = {
 		name = FEE_Ajuuraan_Events.1.OPT1
 
 		add_country_modifier = {
-			name = fee_ajuuraan_mogadishu_currency
+			name = fee_aju_mogadishu_currency
 			duration = -1
 		}
 		1205 = {
 			add_province_modifier = {
-				name = fee_ajuuraan_mogadishu_administration
+				name = fee_aju_mogadishu_administration
 				duration = -1
 			}
 		}
@@ -86,7 +86,7 @@ country_event = {
 		1205 = {
 			add_base_production = 1
 			add_province_modifier = {
-				name = fee_toob_menadir
+				name = fee_aju_toob_menadir
 				duration = -1
 			}
 		}
@@ -140,7 +140,7 @@ country_event = {
 
 		add_opinion = {
 			who = FROM
-			modifier = fee_ajuuraan_toob_menadir_trade
+			modifier = fee_aju_toob_menadir_trade
 		}
 	}
 }
@@ -172,7 +172,7 @@ country_event = {
 		add_stability = -1
 		change_religious_influence_equivalent_fee = { add = 10 }
 		add_country_modifier = {
-			name = fee_ajuuraan_local_conscripts
+			name = fee_aju_local_conscripts
 			duration = -1
 		}
 	}
@@ -183,7 +183,7 @@ country_event = {
 		add_stability_or_adm_power = yes
 		add_years_of_income = -0.25
 		add_country_modifier = {
-			name = fee_ajuuraan_reliance_mercenaries
+			name = fee_aju_reliance_mercenaries
 			duration = -1
 		}
 	}

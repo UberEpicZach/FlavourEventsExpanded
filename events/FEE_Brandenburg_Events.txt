@@ -470,11 +470,11 @@ country_event = {
 		create_marriage = BRA
 		add_opinion = {
 			who = BRA
-			modifier = CE_barbara_marriage
+			modifier = fee_bra_barbara_marriage
 		}
 		reverse_add_opinion = {
 			who = BRA
-			modifier = CE_barbara_marriage
+			modifier = fee_bra_barbara_marriage
 		}
 	}
 
@@ -493,11 +493,11 @@ country_event = {
 		create_marriage = BRA
 		add_opinion = {
 			who = BRA
-			modifier = CE_barbara_marriage
+			modifier = fee_bra_barbara_marriage
 		}
 		reverse_add_opinion = {
 			who = BRA
-			modifier = CE_barbara_marriage
+			modifier = fee_bra_barbara_marriage
 		}
 		custom_tooltip = fee_brandenburg_abandon_barbara_tt
 		set_country_flag = CE_tricked_barbara

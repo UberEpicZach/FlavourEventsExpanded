@@ -1,0 +1,33 @@
+# Religious Statue
+fee_advisor_religious_statue = {
+	opinion = 25
+	yearly_decay = 1
+}
+# A Statue of the Devil
+fee_advisor_devil_statue = {
+	opinion = -25
+	yearly_decay = 1
+	years = 10
+}
+
+# Openly Lustful Ruler
+fee_advisor_openly_lustful_ruler = {
+	opinion = -25
+	yearly_decay = 10
+}
+# Openly Lustful Ruler
+fee_advisor_openly_lustful_ruler_small = {
+	opinion = -5
+	years = 5
+}
+
+# Pious Ruler
+fee_advisor_pious_ruler = {
+	opinion = 25
+	years = 5
+}
+# Pious Ruler
+fee_advisor_pious_ruler_small = {
+	opinion = 5
+	years = 5
+}

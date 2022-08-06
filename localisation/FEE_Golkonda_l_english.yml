@@ -7,3 +7,7 @@
  FEE_Golkonda_Events.2.D: "While Golkonda has served as an important town and fortification for centuries, our dynasty needs to follow the development of our people.\n\nHyderabad has emerged as a far more important center of political power and trade, and might be a better capital city. If our [Root.Monarch.GetTitle] resided there they would be far better prepared to exert their influence."
  FEE_Golkonda_Events.2.OPT1: "The royal court should move to Hyderabad."
  FEE_Golkonda_Events.2.OPT2: "Let's save some money. That is how [Root.Monarch.GetTitle] [Root.Monarch.GetName] should exert influence."
+
+# Modifiers
+ fee_goc_expansion_golkonda_fort: "Expansion of Golkonda Fort"
+ desc_fee_goc_expansion_golkonda_fort: "Golkonda Fort has been extensively developed and expanded over the years."

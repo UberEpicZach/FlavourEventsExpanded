@@ -77,11 +77,6 @@ country_event = {
 		}
 		kill_heir = {}
 		add_country_modifier = {
-			name = fee_ruler_deposed
-			duration = -1
-			hidden = yes
-		}
-		add_country_modifier = {
 			name = is_usurper
 			duration = -1
 			hidden = yes

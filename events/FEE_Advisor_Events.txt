@@ -211,7 +211,7 @@ country_event = {
 					}
 					add_opinion = {
 						who = ROOT
-						modifier = fee_religious_statue
+						modifier = fee_advisor_religious_statue
 					}
 				}
 			}
@@ -219,7 +219,7 @@ country_event = {
 				event_target:fee_statue_target = {
 					add_opinion = {
 						who = ROOT
-						modifier = fee_religious_statue
+						modifier = fee_advisor_religious_statue
 					}
 				}
 			}
@@ -256,7 +256,7 @@ country_event = {
 			}
 			add_opinion = {
 				who = ROOT
-				modifier = fee_devil_statue
+				modifier = fee_advisor_devil_statue
 			}
 		}
 	}
@@ -394,7 +394,7 @@ country_event = {
 			PAP = {
 				add_opinion = {
 					who = ROOT
-					modifier = fee_lovemaking_statue_negative
+					modifier = fee_advisor_openly_lustful_ruler
 				}
 			}
 		}
@@ -405,7 +405,7 @@ country_event = {
 				}
 				add_opinion = {
 					who = ROOT
-					modifier = fee_lovemaking_statue_negative_small
+					modifier = fee_advisor_openly_lustful_ruler_small
 				}
 			}
 		}
@@ -422,7 +422,7 @@ country_event = {
 			PAP = {
 				add_opinion = {
 					who = ROOT
-					modifier = fee_lovemaking_statue_positive
+					modifier = fee_advisor_pious_ruler
 				}
 			}
 		}
@@ -433,7 +433,7 @@ country_event = {
 				}
 				add_opinion = {
 					who = ROOT
-					modifier = fee_lovemaking_statue_positive_small
+					modifier = fee_advisor_pious_ruler_small
 				}
 			}
 		}
@@ -467,7 +467,7 @@ country_event = {
 
 		add_treasury = -100
 		add_country_modifier = {
-			name = fee_collecting_taxes
+			name = fee_advisor_collecting_taxes
 			duration = 1825
 		}
 	}
@@ -635,7 +635,7 @@ country_event = {
 		name = FEE_Advisor_Event13.EVTOPT2
 
 		add_ruler_modifier = {
-			name = fee_a_full_days_work
+			name = fee_advisor_full_day_work
 			duration = -1
 		}
 	}
@@ -679,7 +679,7 @@ country_event = {
 		name = FEE_Advisor_Event14.EVTOPT1
 
 		add_ruler_modifier = {
-			name = fee_student_of_language
+			name = fee_advisor_student_language
 			duration = -1
 		}
 		hidden_effect = {
@@ -699,7 +699,7 @@ country_event = {
 		name = FEE_Advisor_Event14.EVTOPT2
 
 		add_ruler_modifier = {
-			name = fee_ignorant_ruler
+			name = fee_advisor_ignorant_ruler
 			duration = -1
 		}
 		random_list = {
@@ -849,7 +849,7 @@ country_event = {
 		name = FEE_Advisor_Event17.EVTOPT1
 
 		add_ruler_modifier = {
-			name = fee_multilingual_ruler
+			name = fee_advisor_multilingual_ruler
 			duration = -1
 		}
 		clr_country_flag = fee_events_for_student_of_language_active
@@ -876,9 +876,9 @@ country_event = {
 
 		if = {
 			limit = {
-				has_ruler_modifier = fee_student_of_language
+				has_ruler_modifier = fee_advisor_student_language
 			}
-			remove_country_modifier = fee_student_of_language
+			remove_country_modifier = fee_advisor_student_language
 		}
 		clr_country_flag = fee_events_for_student_of_language_active
 		set_ruler_flag = fee_events_for_student_of_language_completed
@@ -916,7 +916,7 @@ country_event = {
 
 		add_treasury = 100
 		add_country_modifier = {
-			name = fee_excessive_bureaucracy
+			name = fee_advisor_excessive_bureaucracy
 			duration = 3650
 		}
 	}
@@ -939,7 +939,7 @@ country_event = {
 			advisor = quartermaster
 			advisor = recruitmaster
 		}
-		NOT = { has_country_modifier = fee_up_and_coming_commander }
+		NOT = { has_country_modifier = fee_advisor_young_skilled_commander }
 	}
 
 	mean_time_to_happen = {
@@ -951,7 +951,7 @@ country_event = {
 
 		create_general = { tradition = 60 }
 		add_country_modifier = {
-			name = fee_up_and_coming_commander
+			name = fee_advisor_young_skilled_commander
 			duration = 18250
 		}
 	}
@@ -981,7 +981,7 @@ country_event = {
 			advisor = recruitmaster
 		}
 		capital_scope = {
-			NOT = { has_province_modifier = fee_disloyal_peasantry }
+			NOT = { has_province_modifier = fee_advisor_disloyal_peasantry }
 		}
 	}
 
@@ -995,7 +995,7 @@ country_event = {
 		remove_advisor_by_category = MIL
 		capital_scope = {
 			add_province_modifier = {
-				name = fee_disloyal_peasantry
+				name = fee_advisor_disloyal_peasantry
 				duration = 1825
 			}
 		}
@@ -1006,7 +1006,7 @@ country_event = {
 
 		capital_scope = {
 			add_province_modifier = {
-				name = fee_disloyal_peasantry
+				name = fee_advisor_disloyal_peasantry
 				duration = 3650
 			}
 		}
@@ -1031,7 +1031,7 @@ country_event = {
 			advisor = recruitmaster
 		}
 		capital_scope = {
-			NOT = { has_province_modifier = fee_disloyal_peasantry }
+			NOT = { has_province_modifier = fee_advisor_disloyal_peasantry }
 		}
 	}
 
@@ -1046,7 +1046,7 @@ country_event = {
 		add_mil_power = 50
 		capital_scope = {
 			add_province_modifier = {
-				name = fee_disloyal_peasantry
+				name = fee_advisor_disloyal_peasantry
 				duration = 1825
 			}
 		}
@@ -1058,7 +1058,7 @@ country_event = {
 		add_treasury = 50
 		capital_scope = {
 			add_province_modifier = {
-				name = fee_disloyal_peasantry
+				name = fee_advisor_disloyal_peasantry
 				duration = 1825
 			}
 		}

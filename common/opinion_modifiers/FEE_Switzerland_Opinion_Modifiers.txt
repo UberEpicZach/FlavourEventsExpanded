@@ -1,0 +1,34 @@
+# Switzerland condemns mercenaries
+fee_swi_denied_troops_our_arm = {
+	opinion = -25
+	yearly_decay = 1
+}
+#Valtellina issue in the Bundner Wirren
+fee_swi_valtellina_issue = {
+	opinion = 50
+	yearly_decay = 1
+}
+#Switzerland
+fee_swi_denied_troops_our_army = {
+	opinion = 30
+	yearly_decay = 1
+}
+
+fee_swi_released_ulrich = {
+	opinion = -50
+	yearly_decay = 1
+}
+fee_swi_released_ulrich_PAP = {
+    opinion = -100
+    yearly_decay = 2
+}
+
+fee_swi_jailed_ulrich = {
+	opinion = 25
+	yearly_decay = 1
+}
+
+fee_swi_jailed_ulrich_PAP = {
+    opinion = 50
+    yearly_decay = 2
+}

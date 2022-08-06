@@ -1,0 +1,867 @@
+namespace = FEE_Poland_Events
+
+#The Union of Brest
+country_event = {
+	id = FEE_Poland_Events.1
+	title = FEE_Poland_Events.1.T
+	desc = FEE_Poland_Events.1.D
+	picture = RELIGIOUS_TURMOIL_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = POL
+			tag = PLC
+		}
+		religion = catholic
+		current_age = age_of_reformation
+		NOT = { is_defender_of_faith = yes }
+	}
+
+	mean_time_to_happen = {
+		months = 120
+		modifier = {
+			factor = 0.8
+			num_of_owned_provinces_with = {
+				value = 5
+				religion = orthodox
+			}
+		}
+		modifier = {
+			factor = 0.5
+			num_of_owned_provinces_with = {
+				value = 10
+				religion = orthodox
+			}
+		}
+		modifier = {
+			factor = 2
+			tag = POL
+			exists = PLC
+		}
+		modifier = {
+			factor = 0.8
+			tag = PLC
+		}
+	}
+
+	option = {
+		name = FEE_Poland_Events.1.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_stability_or_adm_power = yes
+		add_country_modifier = {
+			name = fee_pol_uniate_church
+			duration = -1
+		}
+		custom_tooltip = POLAND_RUTHENIA_TRUE_BELIEVERS_TT
+		tooltip = {
+			random_owned_province = {
+				limit = { culture = ruthenian }
+				add_province_modifier = {
+					name = fee_pol_true_believers
+					duration = -1
+				}
+			}
+		}
+		hidden_effect = {
+			every_owned_province = {
+				limit = { culture = ruthenian }
+				change_religion = orthodox
+				add_province_modifier = {
+					name = fee_pol_true_believers
+					duration = -1
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Poland_Events.1.OPT2
+		ai_chance = {
+			factor = 50
+		}
+
+		add_stability = -1
+		add_country_modifier = {
+			name = fee_pol_catholicism_entrenched
+			duration = -1
+		}
+		random_owned_province = {
+			limit = { culture = ruthenian }
+			spawn_rebels = {
+				size = 3
+				religion = orthodox
+				type = orthodox_rebels
+			}
+		}
+		random_owned_province = {
+			limit = { culture = ruthenian }
+			spawn_rebels = {
+				size = 3
+				religion = orthodox
+				type = orthodox_rebels
+			}
+		}
+	}
+}
+
+# Przywilej cerekwicko-nieszawski
+country_event = {
+	id = FEE_Poland_Events.9
+	title = FEE_Poland_Events.9.T
+	desc = FEE_Poland_Events.9.D
+	picture = LIBERUM_VETO_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			AND = {
+				tag = POL
+				NOT = { exists = PLC }
+			}
+			tag = PLC
+		}
+		is_year = 1450
+		NOT = { is_year = 1480 }
+		is_at_war = yes
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Poland_Events.9.OPT1 # Accept the Conventions (Road to nobility)
+
+		add_country_modifier = {
+			name = fee_pol_statuty_nieszawskie
+			duration = -1
+		}
+		every_owned_province = {
+			add_local_autonomy = 15
+		}
+	}
+
+	option = {
+		name = FEE_Poland_Events.9.OPT2 # Refuse to sign it and defy the Magnates (Road to absolutism)
+
+		add_manpower = -2.5
+		random_owned_province = {
+			limit = {
+				continent = europe
+			}
+			polish_noble_rebels = 2
+		}
+	}
+}
+
+# Konstytucje piotrkowskie
+country_event = {
+	id = FEE_Poland_Events.10
+	title = FEE_Poland_Events.10.T
+	desc = FEE_Poland_Events.10.D
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			AND = {
+				tag = POL
+				NOT = { exists = PLC }
+			}
+			tag = PLC
+		}
+		is_year = 1490
+		NOT = { is_year = 1520 }
+		is_at_war = yes
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Poland_Events.10.OPT1 # Enact
+
+		add_stability = 1
+		add_mercantilism = 0.025
+		add_country_modifier = {
+			name = fee_pol_statut_piotrkowski
+			duration = -1
+		}
+	}
+
+	option = {
+		name = FEE_Poland_Events.10.OPT2 # Refuse to enact
+
+		add_stability = -3
+		add_manpower = -2.5
+	}
+}
+
+# Unia krakowsko-wileńska
+country_event = {
+	id = FEE_Poland_Events.11
+	title = FEE_Poland_Events.11.T
+	desc = FEE_Poland_Events.11.D
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = POL
+		NOT = { is_year = 1540 }
+		is_year = 1490
+		exists = LIT
+		NOT = { exists = PLC }
+		NOT = { senior_union_with = LIT }
+		LIT = {
+			ai = yes
+			has_opinion = {
+				who = POL
+				value = 100
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 50
+	}
+
+	option = {
+		name = FEE_Poland_Events.11.OPT1 # Our countries should cooperate
+		trigger = {
+			valid_for_personal_unions_trigger = yes
+			LIT = { valid_for_personal_unions_trigger = yes }
+		}
+		ai_chance = {
+			factor = 70
+		}
+
+		create_union = LIT
+	}
+
+	option = {
+		name = FEE_Poland_Events.11.OPT2
+		ai_chance = {
+			factor = 30
+		}
+
+		add_prestige = 5
+	}
+}
+
+# Przywilej mielnicki
+country_event = {
+	id = FEE_Poland_Events.12
+	title = FEE_Poland_Events.12.T
+	desc = FEE_Poland_Events.12.D
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			AND = {
+				tag = POL
+				NOT = { exists = PLC }
+			}
+			tag = PLC
+		}
+		is_year = 1495
+		NOT = { is_year = 1530 }
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Poland_Events.12.OPT1 # Sign
+		ai_chance = {
+			factor = 90
+		}
+
+		add_country_modifier = {
+			name = fee_pol_przywilej_mielnicki
+			duration = -1
+		}
+		every_owned_province = {
+			add_local_autonomy = 15
+		}
+	}
+
+	option = {
+		name = FEE_Poland_Events.12.OPT2 # Reject
+		ai_chance = {
+			factor = 10
+		}
+
+		random_owned_province = {
+			limit = {
+				continent = europe
+			}
+			polish_noble_rebels = 2
+		}
+		random_owned_province = {
+			limit = {
+				continent = europe
+			}
+			polish_noble_rebels = 2
+		}
+		random_owned_province = {
+			limit = {
+				continent = europe
+			}
+			polish_noble_rebels = 2
+		}
+	}
+}
+
+# Unia mielnicka
+country_event = {
+	id = FEE_Poland_Events.13
+	title = FEE_Poland_Events.13.T
+	desc = FEE_Poland_Events.13.D
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = POL
+		senior_union_with = LIT
+		has_country_modifier = fee_pol_przywilej_mielnicki
+	}
+
+	mean_time_to_happen = {
+		months = 48
+	}
+
+	option = {
+		name = FEE_Poland_Events.13.OPT1 # Unite our countries under Poland(This will create massive rebellion in Lithuania)
+		ai_chance = {
+			factor = 5
+		}
+
+		inherit = LIT
+		add_stability_or_adm_power = yes
+		hidden_effect = {
+			set_country_flag = fee_pol_unia_mielnicka
+		}
+	}
+
+	option = {
+		name = FEE_Poland_Events.13.OPT2 # Do not push them to sign it
+		ai_chance = {
+			factor = 95
+		}
+
+		add_stability = -1
+	}
+}
+
+# Lithuanian reaction to incorporation
+country_event = {
+	id = FEE_Poland_Events.14
+	title = FEE_Poland_Events.14.T
+	desc = FEE_Poland_Events.14.D
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = POL
+		has_country_flag = fee_pol_unia_mielnicka
+		lithuania_area = {
+			owned_by = ROOT
+		}
+		ruthenia_region = {
+			owned_by = ROOT
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = {
+		name = FEE_Poland_Events.14.OPT1 # I told you so
+
+		random_owned_province = {
+			limit = {
+				area = lithuania_area
+			}
+			nationalist_rebels = 3
+		}
+		random_owned_province = {
+			limit = {
+				region = ruthenia_region
+			}
+			nationalist_rebels = 3
+		}
+		random_owned_province = {
+			limit = {
+				region = ruthenia_region
+			}
+			nationalist_rebels = 3
+		}
+		random_owned_province = {
+			limit = {
+				region = ruthenia_region
+			}
+			nationalist_rebels = 3
+		}
+	}
+}
+
+#Sejm piotrkowski
+country_event = {
+	id = FEE_Poland_Events.15
+	title = FEE_Poland_Events.15.T
+	desc = FEE_Poland_Events.15.D
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			AND = {
+				tag = POL
+				NOT = { exists = PLC }
+			}
+			tag = PLC
+		}
+		is_year = 1500
+		NOT = { is_year = 1520 }
+		has_country_modifier = fee_pol_przywilej_mielnicki
+	}
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	option = {
+		name = FEE_Poland_Events.15.OPT1 # Well, accept it
+
+		add_adm_power = 150
+	}
+}
+
+# Przywilej cerekwicko-nieszawski
+country_event = {
+	id = FEE_Poland_Events.16
+	title = FEE_Poland_Events.16.T
+	desc = FEE_Poland_Events.16.D
+	picture = LIBERUM_VETO_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			AND = {
+				tag = POL
+				NOT = { exists = PLC }
+			}
+			tag = PLC
+		}
+		is_year = 1505
+		NOT = { is_year = 1515 }
+		has_country_modifier = fee_pol_przywilej_mielnicki
+	}
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	option = {
+		name = FEE_Poland_Events.16.OPT1 # The beginning of noble rules
+
+		remove_country_modifier = fee_pol_przywilej_mielnicki
+		every_owned_province = {
+			add_local_autonomy = 15
+		}
+	}
+
+	option = {
+		name = FEE_Poland_Events.16.OPT2 # NO power to nobles!
+
+		remove_country_modifier = fee_pol_przywilej_mielnicki
+		remove_country_modifier = fee_pol_statut_piotrkowski
+		remove_country_modifier = fee_pol_statuty_nieszawskie
+		random_owned_province = {
+			limit = {
+				continent = europe
+			}
+			polish_noble_rebels = 2
+		}
+		random_owned_province = {
+			limit = {
+				continent = europe
+			}
+			polish_noble_rebels = 2
+		}
+		random_owned_province = {
+			limit = {
+				continent = europe
+			}
+			polish_noble_rebels = 2
+		}
+		random_owned_province = {
+			limit = {
+				continent = europe
+			}
+			polish_noble_rebels = 1
+		}
+		random_owned_province = {
+			limit = {
+				continent = europe
+			}
+			polish_noble_rebels = 1
+		}
+		random_owned_province = {
+			limit = {
+				continent = europe
+			}
+			polish_noble_rebels = 1
+		}
+	}
+}
+
+# Przywilej toruński
+country_event = {
+	id = FEE_Poland_Events.17
+	title = FEE_Poland_Events.17.T
+	desc = FEE_Poland_Events.17.D
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			AND = {
+				tag = POL
+				NOT = { exists = PLC }
+			}
+			tag = PLC
+		}
+		is_year = 1520
+		NOT = { is_year = 1550 }
+	}
+
+	mean_time_to_happen = {
+		months = 240
+	}
+
+	option = {
+		name = FEE_Poland_Events.17.OPT1 # Enact
+
+		add_stability_or_adm_power = yes
+		add_mercantilism = 3
+		add_country_modifier = {
+			name = fee_pol_przywilej_torunski
+			duration = -1
+		}
+	}
+
+	option = {
+		name = FEE_Poland_Events.17.OPT2 # Refuse to enact
+
+		add_stability = -3
+	}
+}
+
+#Hołd Pruski.1
+country_event = {
+	id = FEE_Poland_Events.18
+	title = FEE_Poland_Events.18.T
+	desc = FEE_Poland_Events.18.D
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		exists = TEU
+		TEU = {
+			ai = yes
+			is_subject_of = ROOT
+		}
+		OR = {
+			AND = {
+				tag = POL
+				NOT = { exists = PLC }
+			}
+			tag = PLC
+		}
+		NOT = { exists = PRU }
+		is_year = 1520
+		NOT = { is_year = 1540 }
+		is_religion_enabled = protestant
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = FEE_Poland_Events.18.OPT1 # Force them to create Prussia
+
+		TEU = { country_event = { id = FEE_Poland_Events.22 } }
+	}
+
+	option = {
+		name = FEE_Poland_Events.18.OPT2 # Do nothing
+
+		add_prestige = 5
+		TEU = {
+			add_prestige = 5
+		}
+	}
+}
+
+# Tumult gdański
+country_event = {
+	id = FEE_Poland_Events.19
+	title = FEE_Poland_Events.19.T
+	desc = FEE_Poland_Events.19.D
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_religion_enabled = protestant
+		OR = {
+			AND = {
+				tag = POL
+				NOT = { exists = PLC }
+			}
+			tag = PLC
+		}
+		owns = 43
+		is_neighbor_of = PRU
+		religion = catholic
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = FEE_Poland_Events.19.OPT1 # Catholicism is our main religion
+
+		43 = {
+			spawn_rebels = {
+				type = protestant_rebels
+				size = 2
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Poland_Events.19.OPT2 # Let them live
+
+		43 = { change_religion = protestant }
+	}
+}
+
+# Pakt wileński
+country_event = {
+	id = FEE_Poland_Events.20
+	title = FEE_Poland_Events.20.T
+	desc = FEE_Poland_Events.20.D
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			AND = {
+				tag = POL
+				NOT = { exists = PLC }
+			}
+			tag = PLC
+		}
+		is_neighbor_of = LIV
+		1842 = {
+			owner = {
+				OR = {
+					tag = MOS
+					tag = RUS
+				}
+			}
+		}
+		1834 = {
+			owner = {
+				OR = {
+					tag = MOS
+					tag = RUS
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = FEE_Poland_Events.20.OPT1 # Incoroporate Livonia
+
+		LIV = { country_event = { id = FEE_Poland_Events.23 } }
+	}
+
+	option = {
+		name = FEE_Poland_Events.20.OPT2 # Do nothing
+	}
+}
+
+# Statut karnkowskiego
+country_event = {
+	id = FEE_Poland_Events.21
+	title = FEE_Poland_Events.21.T
+	desc = FEE_Poland_Events.21.D
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			AND = {
+				tag = POL
+				NOT = { exists = PLC }
+			}
+			tag = PLC
+		}
+		owns = 43
+		is_year = 1560
+		NOT = { is_year = 1580 }
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = FEE_Poland_Events.21.OPT1 # Sign
+
+		add_dip_power = -150
+		43 = {
+			add_province_modifier = {
+				name = fee_pol_statut_karnkowskiego
+				duration = -1
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Poland_Events.21.OPT2 # It is unnecessary
+
+		add_mercantilism = -5
+	}
+}
+
+#Hold pruski.2
+#From FEE_Poland_Events.18
+country_event = {
+	id = FEE_Poland_Events.22
+	title = FEE_Poland_Events.22.T
+	desc = FEE_Poland_Events.22.D
+	picture = COURT_eventPicture
+
+	is_triggered_only = yes
+
+	option = {  	# Humble before Poland
+		name = FEE_Poland_Events.22.OPT1
+
+		change_tag = PRU
+		add_prestige = 25
+		change_religion = protestant
+		capital_scope = {
+			change_religion = protestant
+		}
+		restore_country_name_effect = yes
+		swap_non_generic_missions = yes
+		if =  {
+			limit = {
+				is_revolutionary = no
+				NOT = {
+					government = republic
+				}
+			}
+			change_government_to_monarchy = yes
+			add_government_reform = prussian_monarchy
+		}
+		else_if = {
+			limit = {
+				is_revolutionary = no
+			}
+			add_government_reform = prussian_republic_reform
+		}
+		if = {
+			limit = {
+				has_reform = states_general_reform
+			}
+			remove_government_reform = states_general_reform
+		}
+		every_neighbor_country = {
+			limit = { government = monarchy }
+			add_opinion = { who = ROOT modifier = secularized_monastic_order }
+		}
+		if = {
+			limit = {
+				has_custom_ideas = no
+				NOT = { has_idea_group = PRU_ideas }
+			}
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+		add_country_modifier = {
+			name = "centralization_modifier"
+			duration = 3650
+		}
+		east_prussia_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+			}
+			add_permanent_claim = PRU
+		}
+		west_prussia_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+			}
+			add_permanent_claim = PRU
+		}
+		set_country_flag = formed_prussia_flag
+	}
+}
+
+#From FEE_Poland_Events.20
+country_event = {
+	id = FEE_Poland_Events.23
+	title = FEE_Poland_Events.23.T
+	desc = FEE_Poland_Events.23.D
+	picture = COURT_eventPicture
+
+	is_triggered_only = yes
+
+	option = {	# Humble before Poland
+		name = FEE_Poland_Events.23.OPT1
+
+		FROM = { inherit = LIV}
+	}
+
+	option = {  	# We are too strong
+		name = FEE_Poland_Events.23.OPT2
+
+		FROM = {
+			declare_war_with_cb = {
+				who = LIV
+				casus_belli = cb_annex
+			}
+		}
+	}
+}

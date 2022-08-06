@@ -130,6 +130,24 @@
  FEE_Advisor_Event.EVTDESC27: "You receive a report on the outcome of the military experiments that your Marshal asked you to sponsor. Apparently, the experiments consisted of training a large force of musicians to blow their trumpets in unison, thus deafening and stunning the enemy army in preparation for an attack. Attempts were also made to make castle walls tumble by marching around them blowing the trumpets. \n\nUnfortunately, while quite expensive, none of these experiments were successful."
  FEE_Advisor_Event27.EVTOPT1: "Trumpets? How much did I pay for this again?"
 
+# Modifiers
+ fee_advisor_collecting_taxes: "Collecting Taxes"
+ fee_advisor_full_day_work: "A Full Days Work"
+ fee_advisor_student_language: "Student of Language"
+ fee_advisor_ignorant_ruler: "Ignorant Ruler"
+ fee_advisor_multilingual_ruler: "Multilingual"
+ fee_advisor_excessive_bureaucracy: "Excessive Bureaucracy"
+ fee_advisor_young_skilled_commander: "Young Skilled Commander"
+ fee_advisor_disloyal_peasantry: "Disloyal Peasantry"
+
+# Opinion
+ fee_advisor_religious_statue: "Religious Statue"
+ fee_advisor_devil_statue: "A Statue of the Devil"
+ fee_advisor_openly_lustful_ruler: "Openly Lustful Ruler"
+ fee_advisor_openly_lustful_ruler_small: "Openly Lustful Ruler"
+ fee_advisor_pious_ruler: "Pious Ruler"
+ fee_advisor_pious_ruler_small: "Pious Ruler"
+
  # Tooltips:
  EVERY_OWNED_CORE_PROVINCE_MINUS_2_UNREST: "Every owned core province loses §G-2§! unrest."
  EVERY_OWNED_CORE_PROVINCE_PLUS_1_UNREST: "Every owned core province gains §R+1§! unrest."

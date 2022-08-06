@@ -116,6 +116,9 @@
  FEE_Portugal_Events.101.OPT1: "and write +zach in the chat"
 
  #Modifiers
+ fee_por_sebastianism: "Sebastianism"
+ desc_fee_por_sebastianism: "Many of our people hope for the return of King Sebastian, who has been lost since his crusade in Morocco. They are not pleased that we exiled a man claiming to be him, even though his claim was certainly false."
+
  fee_por_spice_sail: "Set Sail for Spices"
  fee_por_henrique_naval_reforms: "Henrique's Naval Reforms"
  fee_por_francisco_de_almeida: "Legacy of Francisco de Almeida"
@@ -166,7 +169,7 @@
  #ToolTips
  fee_por_francisco_custom_tooltip_1: "Francisco will be allowed to follow his passion. We will hear from him again... (opens colonial events related to francisco)"
  fee_por_francisco_custom_tooltip_2: "Francisco's colonial ambitions will be forever crushed."
- fee_portugal_henrique_duration: "The following modifier will last until the end of the Age of Discovery"
+ fee_por_henrique_duration_tt: "The following modifier will last until the end of the Age of Discovery"
  fee_por_end_war_tt: "This modifier will last until the end of the war."
 
  fee_por_killed_1: "A replacement must be sent at once and Almeida must be arrested!\n"

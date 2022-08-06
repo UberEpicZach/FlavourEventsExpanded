@@ -27,7 +27,7 @@ on_battle_lost_unit = {
         limit = {
             unit_owner = {
                 tag = BUR
-                has_ruler_flag = fee_Charles_in_command
+                has_ruler_flag = fee_swi_charles_in_command
             }
             is_ruler_commanding_unit = yes
 			enemy_unit = {
@@ -37,7 +37,7 @@ on_battle_lost_unit = {
 			}
         }
         BUR = {
-            country_event = { id = fee_SWI.14 }
+            country_event = { id = FEE_Switzerland_Events.14 }
         }
 	}
 }
