@@ -440,93 +440,93 @@ country_event = {
 # 				}
 # 			}
 # 			add_estate_loyalty = {
-				estate = estate_burghers
-				loyalty = -20
-			}
-		}
-		else = {
-			1865 = {
-				spawn_rebels = {
-					size = 3
-					type = pretender_rebels
-				}
-			}
-		}
-	}
-}
+# 				estate = estate_burghers
+# 				loyalty = -20
+# 			}
+# 		}
+# 		else = {
+# 			1865 = {
+# 				spawn_rebels = {
+# 					size = 3
+# 					type = pretender_rebels
+# 				}
+# 			}
+# 		}
+# 	}
+# }
 
-#Gent accepts
-country_event = {
-	id = FEE_Burgundy_Events.10
-	title = FEE_Burgundy_Events.10.T
-	desc = FEE_Burgundy_Events.10.D
-	picture = GENT_ACCEPTS_eventPicture
+# #Gent accepts
+# country_event = {
+# 	id = FEE_Burgundy_Events.10
+# 	title = FEE_Burgundy_Events.10.T
+# 	desc = FEE_Burgundy_Events.10.D
+# 	picture = GENT_ACCEPTS_eventPicture
 
-	is_triggered_only = yes
+# 	is_triggered_only = yes
 
-	# Option A: Excellent
-	option = {
-		name = FEE_Burgundy_Events.10.OPT1
+# 	# Option A: Excellent
+# 	option = {
+# 		name = FEE_Burgundy_Events.10.OPT1
 
-		add_years_of_income = 0.2
-		add_ruler_modifier  = {
-			name = fee_burgundian_salt_tax
-			duration = -1
-		}
-	}
-}
+# 		add_years_of_income = 0.2
+# 		add_ruler_modifier  = {
+# 			name = fee_burgundian_salt_tax
+# 			duration = -1
+# 		}
+# 	}
+# }
 
-#Treaty of Peronne
-country_event = {
-	id = FEE_Burgundy_Events.11
-	title = FEE_Burgundy_Events.11.T
-	desc = FEE_Burgundy_Events.11.D
-	picture = TREATY_OF_PERONNE_eventPicture
+# #Treaty of Peronne
+# country_event = {
+# 	id = FEE_Burgundy_Events.11
+# 	title = FEE_Burgundy_Events.11.T
+# 	desc = FEE_Burgundy_Events.11.D
+# 	picture = TREATY_OF_PERONNE_eventPicture
 
-	fire_only_once = yes
+# 	fire_only_once = yes
 
-	trigger = {
-		tag = BUR
-		is_year = 1460
-		FRA = {
-			exists = yes
-		}
-		ROOT = {
-			is_at_war = no
-			has_ruler_flag = is_charles_of_burg_flag
-		}
-	}
-	mean_time_to_happen = {
-		months = 100
-	}
+# 	trigger = {
+# 		tag = BUR
+# 		is_year = 1460
+# 		FRA = {
+# 			exists = yes
+# 		}
+# 		ROOT = {
+# 			is_at_war = no
+# 			has_ruler_flag = is_charles_of_burg_flag
+# 		}
+# 	}
+# 	mean_time_to_happen = {
+# 		months = 100
+# 	}
 
-	# Option A: Peace in our time!
-	option = {
-		name = FEE_Burgundy_Events.11.OPT1
+# 	# Option A: Peace in our time!
+# 	option = {
+# 		name = FEE_Burgundy_Events.11.OPT1
 
-		add_legitimacy_equivalent = { amount = 20 republican_tradition = 10 }
-		add_opinion = {
-			who = FRA
-			modifier = fee_treaty_of_peronne
-		}
-		reverse_add_opinion = {
-			who = FRA
-			modifier = fee_treaty_of_peronne
-		}
+# 		add_legitimacy_equivalent = { amount = 20 republican_tradition = 10 }
+# 		add_opinion = {
+# 			who = FRA
+# 			modifier = fee_treaty_of_peronne
+# 		}
+# 		reverse_add_opinion = {
+# 			who = FRA
+# 			modifier = fee_treaty_of_peronne
+# 		}
 
-		every_province = {
-			limit = {
-				owned_by = BUR
-				is_claim = FRA
-			}
-			remove_claim = FRA
-		}
-		every_province = {
-			limit = {
-				owned_by = BUR
-				is_core = FRA
-			}
-			remove_core = FRA
-		}
-	}
-}
+# 		every_province = {
+# 			limit = {
+# 				owned_by = BUR
+# 				is_claim = FRA
+# 			}
+# 			remove_claim = FRA
+# 		}
+# 		every_province = {
+# 			limit = {
+# 				owned_by = BUR
+# 				is_core = FRA
+# 			}
+# 			remove_core = FRA
+# 		}
+# 	}
+# }

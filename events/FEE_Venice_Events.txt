@@ -34,7 +34,7 @@ country_event = {
 
 		add_dip_power = -50
 		add_country_modifier = {
-			name = ven_mercantile_fleet
+			name = fee_ven_mercantile_fleet
 			duration = 5475
 		}
 	}
@@ -47,7 +47,7 @@ country_event = {
 
 		add_mil_power = -50
 		add_country_modifier = {
-			name = ven_galley_fleet
+			name = fee_ven_galley_fleet
 			duration = 5475
 		}
 	}
@@ -87,7 +87,7 @@ country_event = {
 
 		112 = {
 			add_permanent_province_modifier = {
-				name = ven_magistrato_milizia_mar
+				name = fee_ven_magistrato_milizia_mar
 				duration = -1
 			}
 		}
@@ -119,7 +119,7 @@ country_event = {
 		}
 
 		add_country_modifier = {
-			name = ven_naval_reforms
+			name = fee_ven_naval_reforms
 			duration = 5475
 		}
 		if = {
@@ -181,7 +181,7 @@ country_event = {
 		name = FEE_Venice_Events.4.OPT1
 
 		add_country_modifier = {
-			name = ven_commander_convicts
+			name = fee_ven_commander_convicts
 			duration = -1
 		}
 	}
@@ -229,7 +229,7 @@ country_event = {
 				value = 24
 			}
 			add_permanent_province_modifier = {
-				name = ven_porta_magna
+				name = fee_ven_porta_magna
 				duration = -1
 			}
 		}
@@ -289,7 +289,7 @@ country_event = {
 
 		112 = {
 			add_permanent_province_modifier = {
-				name = ven_arsenal_expansion
+				name = fee_ven_arsenal_expansion
 				duration = 36500
 			}
 		}
@@ -346,9 +346,9 @@ country_event = {
 		}
 
 		112 = {
-			remove_province_modifier = ven_arsenal_expansion
+			remove_province_modifier = fee_ven_arsenal_expansion
 			add_permanent_province_modifier = {
-				name = ven_arsenal_expansion_1535
+				name = fee_ven_arsenal_expansion_1535
 				duration = -1
 			}
 		}
@@ -396,10 +396,10 @@ country_event = {
 		name = FEE_Venice_Events.8.OPT1
 
 		112 = {
-			remove_province_modifier = ven_arsenal_expansion
-			remove_province_modifier = ven_arsenal_expansion_1535
+			remove_province_modifier = fee_ven_arsenal_expansion
+			remove_province_modifier = fee_ven_arsenal_expansion_1535
 			add_permanent_province_modifier = {
-				name = ven_arsenal_expansion_final
+				name = fee_ven_arsenal_expansion_final
 				duration = -1
 			}
 		}
@@ -438,14 +438,14 @@ country_event = {
 		
 		add_mil_power = -100
 		add_years_of_income = -0.5
-		custom_tooltip = VEN_FANTI_MAR_TT
+		custom_tooltip = fee_ven_FANTI_MAR_TT
 		tooltip = {
 			random_owned_province = {
 				limit = {
 					has_port = yes
 				}
 				add_permanent_province_modifier = {
-					name = ven_fanti_mar
+					name = fee_ven_fanti_mar
 					duration = -1
 				}
 			}
@@ -456,7 +456,7 @@ country_event = {
 					has_port = yes
 				}
 				add_permanent_province_modifier = {
-					name = ven_fanti_mar
+					name = fee_ven_fanti_mar
 					duration = -1
 				}
 			}
@@ -552,7 +552,7 @@ country_event = {
 					who = FROM
 					duration = 7300
 					power = 15
-					key = ven_trade_deal_costantinople
+					key = fee_ven_trade_deal_costantinople
 				}
 			}
 		}
@@ -637,7 +637,7 @@ country_event = {
 		112 = {
 			add_base_production = 1
 			add_permanent_province_modifier = {
-				name = ven_jew_ghetto
+				name = fee_ven_jew_ghetto
 				duration = -1
 			}
 		}
@@ -663,7 +663,7 @@ country_event = {
 		is_year = 1516
 		NOT = { is_year = 1541 }
 		owns_core_province = 112
-		112 = { has_province_modifier = ven_jew_ghetto }
+		112 = { has_province_modifier = fee_ven_jew_ghetto }
 	}
 
 	mean_time_to_happen = {
@@ -678,9 +678,9 @@ country_event = {
 
 		112 = {
 			add_base_production = 2
-			remove_province_modifier = ven_jew_ghetto
+			remove_province_modifier = fee_ven_jew_ghetto
 			add_permanent_province_modifier = {
-				name = ven_jew_ghetto_novo
+				name = fee_ven_jew_ghetto_novo
 				duration = -1
 			}
 		}
@@ -723,7 +723,7 @@ country_event = {
 	trigger = {
 		is_year = 1541
 		owns_core_province = 112
-		112 = { has_province_modifier = ven_jew_ghetto_novo }
+		112 = { has_province_modifier = fee_ven_jew_ghetto_novo }
 	}
 
 	mean_time_to_happen = {
@@ -919,6 +919,7 @@ country_event = {
 			}
 		}
 		po_valley_area = {
+			limit = { owned_by = ROOT }
 			add_devastation = -25
 			add_prosperity = 25
 			add_province_modifier = {
@@ -984,6 +985,107 @@ country_event = {
 		add_treasury = -25
 		add_splendor = 100
 		change_religious_influence_equivalent_fee = { add = 15 }
+	}
+}
+
+#########	Life of Doge Pasquale Malipiero from 1444 to 1462	####
+
+# Pasquale Malipiero Avagodore di Comun
+country_event = {
+	id = FEE_Venice_Events.23
+	title = FEE_Venice_Events.23.T
+	desc = FEE_Venice_Events.23.D
+	picture = ADVISOR_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VEN
+		is_year = 1445
+		NOT = { has_ruler = "Pasquale Malipiero" }
+		has_estate = estate_nobles
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Venice_Events.23.OPT1
+
+		add_country_modifier = {
+			name = fee_ven_malipiero_avogadore_comun
+			duration = 5475
+		}
+	}
+}
+
+# Doge Pasquale Malipiero
+country_event = {
+	id = FEE_Venice_Events.24
+	title = FEE_Venice_Events.24.T
+	desc = FEE_Venice_Events.24.D
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VEN
+		is_year = 1445
+		has_ruler = "Francesco Foscari"
+		NOT = { is_year = 1457 }
+		has_country_modifier = fee_ven_malipiero_avogadore_comun
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Venice_Events.24.OPT1
+		ai_chance = {
+			factor = 1
+		}
+		highlight = yes
+
+		define_ruler = {
+			name = "Pasquale Malipiero"
+			culture = venetian
+			religion = catholic
+			adm = 2
+			dip = 2
+			mil = 4
+		}
+		remove_country_modifier = fee_ven_malipiero_avogadore_comun
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 5
+		}
+		add_estate_influence_modifier = {
+			influence = 15
+			duration = 5475
+			desc = fee_ven_malipiero_avogadore_comun
+		}
+		add_ruler_modifier = {
+			name = fee_ven_malipiero_avogadore_comun
+			duration = -1
+		}
+	}
+
+	option = {
+		name = FEE_Venice_Events.24.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -10
+		}
+		capital_scope = {
+			noble_rebels = 1
+		}
+		remove_country_modifier = fee_ven_malipiero_avogadore_comun
 	}
 }
 

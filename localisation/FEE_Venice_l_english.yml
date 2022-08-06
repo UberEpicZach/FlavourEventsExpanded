@@ -94,36 +94,65 @@
  FEE_Venice_Events.22.D: "Francesco Foscari died a few days later, on 1 November (he had made his will on 29 October), at his home in Santa Margherita. A state funeral was arranged for him with an exhibition to the people in ducal vestments, despite the opposition of his widow, who saw it as a clumsy act of reparation by that power that had taken away her son and humiliated her husband. The body was accompanied by the new doge [ROOT.Monarch.GetName] who appeared in the simple guise of a senator. Francesco Foscari was buried in the presbytery of the basilica of the Frari, in the mausoleum made for him by Niccolò di Giovanni Fiorentino, in an urn supported by four graceful corbels adorned with the three theological virtues (Faith, Hope and Charity) in whose arrangement around the sarcophagus Niccolò modified the conventional and static arrangement of the personifications, transforming it into a drama inserted in the flow of time. The crowning figure of the Saviour changed the common motif of the Risen Christ into the image of the Ascension of Christ taken from the Venetian duchy, as an allusion to the true ruler of Venice, to whom alone his representative - the doge - was responsible."
  FEE_Venice_Events.22.OPT1: "Let us not forget the greates of all our Doges!"
 
+ FEE_Venice_Events.23.T: "Pasquale Malipiero avogadore di Comun"
+ FEE_Venice_Events.23.D: "Nominated in 1429 as the sindico and provveditore of Albania, Dlamazia and Istria Malipiero has devolved part of his career investigating on the financial irregularities of some venecian governors against the common folk his carrer brought to light many irregularities perpetuated by the former Count of Zadar Alessandro Zorzi and the former bailiff and captain of Durrës Andrea Minio. Back in Venice at the beginning of 1439, he became one of the five Saviours to conzar la terra on 3 February of that year. He left his post a few months later, having been appointed ambassador to the Council of Florence. 12 June of 1445 was made Avogadore di Comune, where he had to attend matters related to the patricial families of Venice."
+ FEE_Venice_Events.23.OPT1: "May he mediate between the state and the families!"
+
+ FEE_Venice_Events.24.T: "Doge Pasquale Malipiero"
+ FEE_Venice_Events.24.D: "The last years haven't really been kind to Francesco Foscari, with the personal loss of his relatives and lately the voices of his treachery against the Republic have clearly shown that he may no longer be fit to guide us all."
+ FEE_Venice_Events.24.OPT1: "He shall guide us"
+ FEE_Venice_Events.24.OPT2: "Foscari is our Doge!"
+
  #Estate Modifeirs
- ven_nobles_restrained: "Restrained the Barones"
- ven_nobles_happy: "Nobles are Happy"
+ fee_ven_nobles_restrained: "Restrained the Barones"
+ desc_fee_ven_nobles_restrained: "Restrained the Barones"
+ fee_ven_nobles_happy: "Nobles are Happy"
+ desc_fee_ven_nobles_happy: "Nobles are Happy"
 
  #Event Modifiers
- ven_mercantile_fleet: "Mercantile Fleet"
- ven_galley_fleet: "Galley Fleet"
+ fee_ven_mercantile_fleet: "Mercantile Fleet"
+ desc_fee_ven_mercantile_fleet: "Mercantile Fleet"
+ fee_ven_galley_fleet: "Galley Fleet"
+ desc_fee_ven_galley_fleet: "Galley Fleet"
 
- ven_magistrato_milizia_mar: "Magistratura della Milizia Marina"
+ fee_ven_magistrato_milizia_mar: "Magistratura della Milizia Marina"
+ desc_fee_ven_magistrato_milizia_mar: "Magistratura della Milizia Marina"
 
- ven_naval_reforms: "Naval Reforms"
+ fee_ven_naval_reforms: "Naval Reforms"
+ desc_fee_ven_naval_reforms: "Naval Reforms"
 
- ven_commander_convicts: "Commander of Convicts"
+ fee_ven_commander_convicts: "Commander of Convicts"
+ desc_fee_ven_commander_convicts: "Commander of Convicts"
 
- ven_porta_magna: "Porta Magna"
+ fee_ven_porta_magna: "Porta Magna"
+ desc_fee_ven_porta_magna: "Porta Magna"
 
- ven_arsenal_expansion: "Espansione dell'Arsenale"
- ven_arsenal_expansion_1535: "Espansione dell'Arsenale del 1535"
- ven_arsenal_expansion_final: "Espansione Finale"
+ fee_ven_arsenal_expansion: "Espansione dell'Arsenale"
+ desc_fee_ven_arsenal_expansion: "Espansione dell'Arsenale"
+ fee_ven_arsenal_expansion_1535: "Espansione dell'Arsenale del 1535"
+ desc_fee_ven_arsenal_expansion_1535: "Espansione dell'Arsenale del 1535"
+ fee_ven_arsenal_expansion_final: "Espansione Finale"
+ desc_fee_ven_arsenal_expansion_final: "Espansione Finale"
 
- ven_fanti_mar: "Fanti di Mar"
+ fee_ven_fanti_mar: "Fanti di Mar"
+ desc_fee_ven_fanti_mar: "Fanti di Mar"
 
- ven_jew_ghetto: "Jew Ghetto of Venice"
- ven_jew_ghetto_novo: "Ghetto Novo of Venice"
+ fee_ven_jew_ghetto: "Jew Ghetto of Venice"
+ desc_fee_ven_jew_ghetto: "Jew Ghetto of Venice"
+ fee_ven_jew_ghetto_novo: "Ghetto Novo of Venice"
+ desc_fee_ven_jew_ghetto_novo: "Ghetto Novo of Venice"
 
  fee_ven_prosperity_po_valley: "Prosperity in the Po' Valley"
+ desc_fee_ven_prosperity_po_valley: "Prosperity in the Po' Valley"
+
+ fee_ven_malipiero_avogadore_comun: "Avogadore di Comun"
+ desc_fee_ven_malipiero_avogadore_comun: "Avogadore di Comun"
 
  #Trade Modifeirs
- ven_trade_deal_costantinople: "Venetian Trade Deal"
+ fee_ven_trade_deal_costantinople: "Venetian Trade Deal"
+ desc_fee_ven_trade_deal_costantinople: "Venetian Trade Deal"
  fee_ven_bartolomeo_marcello: "Bartolomeo Marcello"
+ desc_fee_ven_bartolomeo_marcello: "Bartolomeo Marcello"
 
  #Tooltips
  VEN_FANTI_MAR_TT: "Every owned §YCoastal Provinces§! will gain:"

@@ -532,7 +532,7 @@ country_event = {
 		hidden_effect = {
 			ENG = {
 				country_event = {
-					id = FEE_Scotland_Events.37
+					id = FEE_Scotland_Events.299
 				}
 			}
 		}
@@ -549,7 +549,7 @@ country_event = {
 		hidden_effect = {
 			ENG = {
 				country_event = {
-					id = FEE_Scotland_Events.38
+					id = FEE_Scotland_Events.301
 				}
 			}
 		}
@@ -558,41 +558,42 @@ country_event = {
 
 #Disaster at Flodden for England, option 1
 country_event = {
-    id = FEE_Scotland_Events.37
-    title = FEE_Scotland_Events.37.T
-    desc = FEE_Scotland_Events.37.D
-    picture = BATTLE_eventPicture
-    is_triggered_only = yes
-   
-    option = {
-        name = FEE_Scotland_Events.37.OPT1
-        add_prestige = 5
-        white_peace = SCO
-    }
-    option = {
-        name = FEE_Scotland_Events.37.OPT2
-        add_stability = -1
-        add_country_modifier = {
-            name = FEE_INVADE_ANYWAYS
-            duration = 1460
-        }
-        every_owned_province = {
-            limit = {
-                culture = scottish
-            }
-            add_province_modifier = {
-                name = FEE_Get_Fucked_English
-                duration = 10950
-            }
-        }
-        hidden_effect = {
-            SCO = {
-                country_event = {
-                    id = FEE_Scotland_Events.300
-                }           
-            }
-        }
-    }
+	id = FEE_Scotland_Events.299
+	title = FEE_Scotland_Events.299.T
+	desc = FEE_Scotland_Events.299.D
+	picture = BATTLE_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Scotland_Events.299.OPT1
+		add_prestige = 5
+		white_peace = SCO
+	}
+	option = {
+		name = FEE_Scotland_Events.299.OPT2
+		add_stability = -1
+		add_country_modifier = {
+			name = FEE_INVADE_ANYWAYS
+			duration = 1460
+		}
+		every_owned_province = {
+			limit = {
+				culture = scottish
+			}
+			add_province_modifier = {
+				name = FEE_Get_Fucked_English
+				duration = 10950
+			}
+		}
+		hidden_effect = {
+			SCO = {
+				country_event = {
+					id = FEE_Scotland_Events.300
+				}           
+			}
+		}
+	}
 }
 
 #England Starts Second War
@@ -611,13 +612,13 @@ country_event = {
 
 #Disaster at Flodden for England, option 2
 country_event = {
-	id = FEE_Scotland_Events.38
-	title = FEE_Scotland_Events.38.T
-	desc = FEE_Scotland_Events.38.D
+	id = FEE_Scotland_Events.301
+	title = FEE_Scotland_Events.301.T
+	desc = FEE_Scotland_Events.301.D
 	picture = BATTLE_eventPicture
 	is_triggered_only = yes
 	option = {
-		name = FEE_Scotland_Events.38.OPT1
+		name = FEE_Scotland_Events.301.OPT1
 		add_prestige = 5
 	}
 }
