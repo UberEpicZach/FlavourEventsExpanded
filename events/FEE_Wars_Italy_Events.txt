@@ -517,12 +517,13 @@ country_event = {
 		is_year = 1499
 		NOT = { is_year = 1504 }
 		tag = FRA
-		exists = FRA
 		is_free_or_tributary_trigger = yes
 		exists = MLO
-		MLO = { is_free_or_tributary_trigger = yes }
-		NOT = { war_with = MLO }
-		NOT = { truce_with = MLO }
+		MLO = {
+			is_free_or_tributary_trigger = yes
+			NOT = { war_with = ROOT }
+			NOT = { truce_with = ROOT }
+		}
 	}
 
 	mean_time_to_happen = {
@@ -1114,10 +1115,7 @@ country_event = {
 		}
 		else_if = {
 			limit = {
-				OR = {
-					tag = SPA
-					tag = CAS
-				}
+				tag = SPA
 			}
 			low_countries_region = {
 				owned_by = ROOT
@@ -1214,18 +1212,6 @@ country_event = {
 		}
 		if = {
 			limit = {
-				NOT = { tag = CAS }
-				exists = CAS
-				CAS = { is_free_or_tributary_trigger = yes }
-			}
-			CAS = {
-				country_event = {
-					id = FEE_Wars_Italy_Events.401
-				}
-			}
-		}
-		if = {
-			limit = {
 				exists = ENG
 				ENG = { is_free_or_tributary_trigger = yes }
 			}
@@ -1291,7 +1277,6 @@ country_event = {
 				factor = 25
 				OR = {
 					tag = SPA
-					tag = CAS
 					tag = ENG
 					tag = MAN
 					tag = PAP
@@ -1369,7 +1354,7 @@ country_event = {
 }
 
 
-#Fifth Italian War
+#Guerra della Lega di Cognac
 country_event = {
 	id = FEE_Wars_Italy_Events.500
 	title = FEE_Wars_Italy_Events.500.T
@@ -1382,18 +1367,9 @@ country_event = {
 		is_year = 1526
 		NOT = { is_year = 1530 }
 		tag = PAP
-		OR = {
-			exists = emperor
-			exists = SPA
-			exists = HAB
-		}
 		is_free_or_tributary_trigger = yes
-		any_country = {
-			OR = {
-				tag = emperor
-				tag = SPA
-				tag = HAB
-			}
+		SPA = {
+			is_emperor = yes
 			is_free_or_tributary_trigger = yes
 			NOT = { war_with = ROOT }
 			NOT = { truce_with = ROOT }
@@ -1422,29 +1398,9 @@ country_event = {
 			factor = 90
 		}
 
-		if = {
-			limit = {
-				hre_size = 1
-			}
-			declare_war_with_cb = {
-				who = emperor
-				casus_belli = cb_humiliate
-			}
-		}
-		else_if = {
-			limit = {
-				exists = HAB
-			}
-			declare_war_with_cb = {
-				who = HAB
-				casus_belli = cb_humiliate
-			}
-		}
-		else = {
-			declare_war_with_cb = {
-				who = SPA
-				casus_belli = cb_humiliate
-			}
+		declare_war_with_cb = {
+			who = emperor
+			casus_belli = cb_humiliate
 		}
 
 		#custom_tooltip = FIFFTH_ITALIAN_WARS_TT
@@ -1465,17 +1421,6 @@ country_event = {
 				FRA = { is_free_or_tributary_trigger = yes }
 			}
 			FRA = {
-				country_event = {
-					id = FEE_Wars_Italy_Events.501
-				}
-			}
-		}
-		if = {
-			limit = {
-				exists = SPA
-				SPA = { is_free_or_tributary_trigger = yes }
-			}
-			SPA = {
 				country_event = {
 					id = FEE_Wars_Italy_Events.501
 				}
@@ -1588,13 +1533,7 @@ country_event = {
 			factor = 10
 			modifier = {
 				factor = 100
-				any_country = {
-					OR = {
-						tag = emperor
-						tag = SPA
-						tag = HAB
-						tag = CAS
-					}
+				emperor = {
 					army_size = ROOT
 				}
 			}
@@ -1633,12 +1572,7 @@ country_event = {
 			}
 			modifier = {
 				factor = 25
-				any_country = {
-					OR = {
-						tag = emperor
-						tag = HAB
-						tag = SPA
-					}
+				emperor = {
 					OR = {
 						is_rival = ROOT
 						is_enemy = ROOT
@@ -1660,12 +1594,7 @@ country_event = {
 			factor = 40
 			modifier = {
 				factor = 25
-				any_country = {
-					OR = {
-						tag = emperor
-						tag = HAB
-						tag = SPA
-					}
+				emperor = {
 					alliance_with = ROOT
 				}
 			}
@@ -1679,7 +1608,6 @@ country_event = {
 			modifier = {
 				factor = 25
 				OR = {
-					tag = emperor
 					tag = HAB
 					tag = SPA
 					tag = FER
@@ -1741,19 +1669,9 @@ country_event = {
 		is_year = 1536
 		NOT = { is_year = 1538 }
 		tag = FRA
-		OR = {
-			exists = emperor
-			exists = SPA
-			exists = HAB
-			exists = CAS
-		}
 		is_free_or_tributary_trigger = yes
-		any_country = {
-			OR = {
-				tag = emperor
-				tag = SPA
-				tag = HAB
-			}
+		SPA = {
+			is_emperor = yes
 			is_free_or_tributary_trigger = yes
 			NOT = { war_with = ROOT }
 			NOT = { truce_with = ROOT }
@@ -1781,53 +1699,12 @@ country_event = {
 		ai_chance = {
 			factor = 90
 		}
-
-		if = {
-			limit = {
-				hre_size = 1
-			}
-			declare_war_with_cb = {
-				who = emperor
-				casus_belli = cb_humiliate
-			}
+		
+		declare_war_with_cb = {
+			who = emperor
+			casus_belli = cb_humiliate
 		}
-		else_if = {
-			limit = {
-				exists = HAB
-			}
-			declare_war_with_cb = {
-				who = HAB
-				casus_belli = cb_humiliate
-			}
-		}
-		else_if = {
-			limit = {
-				exists = SPA
-			}
-			declare_war_with_cb = {
-				who = SPA
-				casus_belli = cb_humiliate
-			}
-		}
-		else = {
-			declare_war_with_cb = {
-				who = CAS
-				casus_belli = cb_humiliate
-			}
-		}
-
 		#custom_tooltip = SIXTH_ITALIAN_WARS_TT
-		if = {
-			limit = {
-				exists = SPA
-				SPA = { is_free_or_tributary_trigger = yes }
-			}
-			SPA = {
-				country_event = {
-					id = FEE_Wars_Italy_Events.601
-				}
-			}
-		}
 		if = {
 			limit = {
 				exists = HAB
@@ -1847,12 +1724,7 @@ country_event = {
 			factor = 10
 			modifier = {
 				factor = 100
-				any_country = {
-					OR = {
-						tag = emperor
-						tag = SPA
-						tag = HAB
-					}
+				emperor = {
 					army_size = ROOT
 				}
 			}
@@ -1882,7 +1754,6 @@ country_event = {
 					OR = {
 						tag = emperor
 						tag = HAB
-						tag = SPA
 					}
 					OR = {
 						is_rival = ROOT
@@ -1909,7 +1780,6 @@ country_event = {
 					OR = {
 						tag = emperor
 						tag = HAB
-						tag = SPA
 					}
 					alliance_with = ROOT
 				}
@@ -1926,7 +1796,6 @@ country_event = {
 				OR = {
 					tag = emperor
 					tag = HAB
-					tag = SPA
 				}
 			}
 		}
@@ -2258,18 +2127,9 @@ country_event = {
 		is_year = 1551
 		NOT = { is_year = 1559 }
 		tag = FRA
-		OR = {
-			exists = emperor
-			exists = HAB
-			exists = SPA
-		}
 		is_free_or_tributary_trigger = yes
-		any_country = {
-			OR = {
-				tag = emperor
-				tag = HAB
-				tag = SPA
-			}
+		SPA = {
+			is_emperor = yes
 			is_free_or_tributary_trigger = yes
 			NOT = { war_with = ROOT }
 			NOT = { truce_with = ROOT }
@@ -2298,30 +2158,11 @@ country_event = {
 			factor = 90
 		}
 
-		if = {
-			limit = {
-				exists = SPA
-			}
-			declare_war_with_cb = {
-				who = SPA
-				casus_belli = cb_humiliate
-			}
+		declare_war_with_cb = {
+			who = SPA
+			casus_belli = cb_humiliate
 		}
 		#custom_tooltip = SEVENTH_ITALIAN_WARS_TT
-		if = {
-			limit = {
-				exists = SPA
-				SPA = {
-					is_free_or_tributary_trigger = yes
-					is_emperor = no
-				}
-			}
-			SPA = {
-				country_event = {
-					id = FEE_Wars_Italy_Events.801
-				}
-			}
-		}
 		if = {
 			limit = {
 				exists = HAB
