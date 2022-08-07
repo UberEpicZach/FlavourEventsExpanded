@@ -1,0 +1,56 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_disaster_fee_portuguese_succession_crisis"
+		texturefile = "gfx/interface/disasters/fee_portuguese_succession_crisis.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_disaster_fee_decline_of_the_ottomans"
+		texturefile = "gfx/interface/disasters/fee_decline_of_the_ottomans.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_disaster_fee_division_of_the_habsburg_monarchy"
+		texturefile = "gfx/interface/disasters/fee_division_of_the_habsburg_monarchy.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_disaster_fee_partition_of_poland"
+		texturefile = "gfx/interface/disasters/fee_partition_of_poland.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_disaster_fee_pashtun_uprising"
+		texturefile = "gfx/interface/disasters/fee_pashtun_uprising.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_disaster_fee_zemene_mesafint"
+		texturefile = "gfx/interface/disasters/fee_zemene_mesafint.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_disaster_fee_crisis_of_the_mughal_empire"
+		texturefile = "gfx/interface/disasters/fee_crisis_of_the_mughal_empire.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_disaster_fee_italy_republican_matter_disaster"
+		texturefile = "gfx//interface//disasters//civil_war.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_fee_netherlands_rampjaar"
+		texturefile = "gfx//interface//disasters//civil_war.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+}

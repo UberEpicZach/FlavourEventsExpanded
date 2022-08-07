@@ -1,0 +1,2263 @@
+namespace = disaster_fee_decline_of_the_ottomans
+
+country_event = {
+	id = disaster_fee_decline_of_the_ottomans.1
+	title = disaster_fee_decline_of_the_ottomans.EVTNAME1
+	desc = disaster_fee_decline_of_the_ottomans.EVTDESC1
+	picture = CIVIL_WAR_eventPicture
+
+	major = yes
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = had_fee_decline_of_the_ottomans
+		}
+	}
+
+	option = {
+		name = disaster_fee_decline_of_the_ottomans1.EVTOPT1
+
+		add_stability = -3
+		add_corruption = 5
+	}
+}
+
+country_event = {
+	id = disaster_fee_decline_of_the_ottomans.2
+	title = disaster_fee_decline_of_the_ottomans.EVTNAME2
+	desc = disaster_fee_decline_of_the_ottomans.EVTDESC2
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = disaster_fee_decline_of_the_ottomans2.EVTOPT1
+
+		if = {
+			limit = {
+				ADM = 6
+			}
+			add_adm_power = 200
+		}
+		else_if = {
+			limit = {
+				ADM = 5
+			}
+			change_adm = 1
+			add_adm_power = 100
+		}
+		else = {
+			change_adm = 2
+		}
+		add_country_modifier = {
+			name = fee_decline_of_the_ottomans_tanzimat
+			duration = -1
+		}
+	}
+}
+
+country_event = {
+	id = disaster_fee_decline_of_the_ottomans.3
+	title = disaster_fee_decline_of_the_ottomans.EVTNAME3
+	desc = disaster_fee_decline_of_the_ottomans.EVTDESC3
+	picture = CIVIL_WAR_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = disaster_fee_decline_of_the_ottomans3.EVTOPT1
+
+		add_inflation = 4
+	}
+}
+
+country_event = {
+	id = disaster_fee_decline_of_the_ottomans.4
+	title = disaster_fee_decline_of_the_ottomans.EVTNAME4
+	desc = disaster_fee_decline_of_the_ottomans.EVTDESC4
+	picture = CIVIL_WAR_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = disaster_fee_decline_of_the_ottomans4.EVTOPT1
+
+		add_disaster_modifier = {
+			name = fee_decline_of_the_ottomans_illiterate
+			duration = 10950
+			disaster = fee_decline_of_the_ottomans
+		}
+	}
+}
+
+country_event = {
+	id = disaster_fee_decline_of_the_ottomans.5
+	title = disaster_fee_decline_of_the_ottomans.EVTNAME5
+	desc = disaster_fee_decline_of_the_ottomans.EVTDESC5
+	picture = CIVIL_WAR_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					region = anatolia_region
+					base_tax = 2
+				}
+				save_event_target_as = target_province_1
+			}
+			if = {
+				limit = {
+					any_owned_province = {
+						region = anatolia_region
+						base_tax = 2
+						NOT = { province_id = event_target:target_province_1 }
+					}
+				}
+				random_owned_province = {
+					limit = {
+						region = anatolia_region
+						base_tax = 2
+						NOT = { province_id = event_target:target_province_1 }
+					}
+					save_event_target_as = target_province_2
+				}
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						region = anatolia_region
+						base_tax = 2
+					}
+					save_event_target_as = target_province_2
+				}
+			}
+			if = {
+				limit = {
+					any_owned_province = {
+						region = anatolia_region
+						base_tax = 2
+						NOT = { province_id = event_target:target_province_1 }
+						NOT = { province_id = event_target:target_province_2 }
+					}
+				}
+				random_owned_province = {
+					limit = {
+						region = anatolia_region
+						base_tax = 2
+						NOT = { province_id = event_target:target_province_1 }
+						NOT = { province_id = event_target:target_province_2 }
+					}
+					save_event_target_as = target_province_3
+				}
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						region = anatolia_region
+						base_tax = 2
+					}
+					save_event_target_as = target_province_3
+				}
+			}
+			if = {
+				limit = {
+					any_owned_province = {
+						region = anatolia_region
+						base_tax = 2
+						NOT = { province_id = event_target:target_province_1 }
+						NOT = { province_id = event_target:target_province_2 }
+						NOT = { province_id = event_target:target_province_3 }
+					}
+				}
+				random_owned_province = {
+					limit = {
+						region = anatolia_region
+						base_tax = 2
+						NOT = { province_id = event_target:target_province_1 }
+						NOT = { province_id = event_target:target_province_2 }
+						NOT = { province_id = event_target:target_province_3 }
+					}
+					save_event_target_as = target_province_4
+				}
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						region = anatolia_region
+						base_tax = 2
+					}
+					save_event_target_as = target_province_4
+				}
+			}
+			if = {
+				limit = {
+					any_owned_province = {
+						region = anatolia_region
+						base_tax = 2
+						NOT = { province_id = event_target:target_province_1 }
+						NOT = { province_id = event_target:target_province_2 }
+						NOT = { province_id = event_target:target_province_3 }
+						NOT = { province_id = event_target:target_province_4 }
+					}
+				}
+				random_owned_province = {
+					limit = {
+						region = anatolia_region
+						base_tax = 2
+						NOT = { province_id = event_target:target_province_1 }
+						NOT = { province_id = event_target:target_province_2 }
+						NOT = { province_id = event_target:target_province_3 }
+						NOT = { province_id = event_target:target_province_4 }
+					}
+					save_event_target_as = target_province_5
+				}
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						region = anatolia_region
+						base_tax = 2
+					}
+					save_event_target_as = target_province_5
+				}
+			}
+			if = {
+				limit = {
+					any_owned_province = {
+						region = anatolia_region
+						base_tax = 2
+						NOT = { province_id = event_target:target_province_1 }
+						NOT = { province_id = event_target:target_province_2 }
+						NOT = { province_id = event_target:target_province_3 }
+						NOT = { province_id = event_target:target_province_4 }
+						NOT = { province_id = event_target:target_province_5 }
+					}
+				}
+				random_owned_province = {
+					limit = {
+						region = anatolia_region
+						base_tax = 2
+						NOT = { province_id = event_target:target_province_1 }
+						NOT = { province_id = event_target:target_province_2 }
+						NOT = { province_id = event_target:target_province_3 }
+						NOT = { province_id = event_target:target_province_4 }
+						NOT = { province_id = event_target:target_province_5 }
+					}
+					save_event_target_as = target_province_6
+				}
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						region = anatolia_region
+						base_tax = 2
+					}
+					save_event_target_as = target_province_6
+				}
+			}
+			if = {
+				limit = {
+					any_owned_province = {
+						region = anatolia_region
+						base_tax = 2
+						NOT = { province_id = event_target:target_province_1 }
+						NOT = { province_id = event_target:target_province_2 }
+						NOT = { province_id = event_target:target_province_3 }
+						NOT = { province_id = event_target:target_province_4 }
+						NOT = { province_id = event_target:target_province_5 }
+						NOT = { province_id = event_target:target_province_6 }
+					}
+				}
+				random_owned_province = {
+					limit = {
+						region = anatolia_region
+						base_tax = 2
+						NOT = { province_id = event_target:target_province_1 }
+						NOT = { province_id = event_target:target_province_2 }
+						NOT = { province_id = event_target:target_province_3 }
+						NOT = { province_id = event_target:target_province_4 }
+						NOT = { province_id = event_target:target_province_5 }
+						NOT = { province_id = event_target:target_province_6 }
+					}
+					save_event_target_as = target_province_7
+				}
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						region = anatolia_region
+						base_tax = 2
+					}
+					save_event_target_as = target_province_7
+				}
+			}
+			if = {
+				limit = {
+					any_owned_province = {
+						region = anatolia_region
+						base_tax = 2
+						NOT = { province_id = event_target:target_province_1 }
+						NOT = { province_id = event_target:target_province_2 }
+						NOT = { province_id = event_target:target_province_3 }
+						NOT = { province_id = event_target:target_province_4 }
+						NOT = { province_id = event_target:target_province_5 }
+						NOT = { province_id = event_target:target_province_6 }
+						NOT = { province_id = event_target:target_province_7 }
+					}
+				}
+				random_owned_province = {
+					limit = {
+						region = anatolia_region
+						base_tax = 2
+						NOT = { province_id = event_target:target_province_1 }
+						NOT = { province_id = event_target:target_province_2 }
+						NOT = { province_id = event_target:target_province_3 }
+						NOT = { province_id = event_target:target_province_4 }
+						NOT = { province_id = event_target:target_province_5 }
+						NOT = { province_id = event_target:target_province_6 }
+						NOT = { province_id = event_target:target_province_7 }
+					}
+					save_event_target_as = target_province_8
+				}
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						region = anatolia_region
+						base_tax = 2
+					}
+					save_event_target_as = target_province_8
+				}
+			}
+			if = {
+				limit = {
+					any_owned_province = {
+						region = anatolia_region
+						base_tax = 2
+						NOT = { province_id = event_target:target_province_1 }
+						NOT = { province_id = event_target:target_province_2 }
+						NOT = { province_id = event_target:target_province_3 }
+						NOT = { province_id = event_target:target_province_4 }
+						NOT = { province_id = event_target:target_province_5 }
+						NOT = { province_id = event_target:target_province_6 }
+						NOT = { province_id = event_target:target_province_7 }
+						NOT = { province_id = event_target:target_province_8 }
+					}
+				}
+				random_owned_province = {
+					limit = {
+						region = anatolia_region
+						base_tax = 2
+						NOT = { province_id = event_target:target_province_1 }
+						NOT = { province_id = event_target:target_province_2 }
+						NOT = { province_id = event_target:target_province_3 }
+						NOT = { province_id = event_target:target_province_4 }
+						NOT = { province_id = event_target:target_province_5 }
+						NOT = { province_id = event_target:target_province_6 }
+						NOT = { province_id = event_target:target_province_7 }
+						NOT = { province_id = event_target:target_province_8 }
+					}
+					save_event_target_as = target_province_9
+				}
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						region = anatolia_region
+						base_tax = 2
+					}
+					save_event_target_as = target_province_9
+				}
+			}
+			if = {
+				limit = {
+					any_owned_province = {
+						region = anatolia_region
+						base_tax = 2
+						NOT = { province_id = event_target:target_province_1 }
+						NOT = { province_id = event_target:target_province_2 }
+						NOT = { province_id = event_target:target_province_3 }
+						NOT = { province_id = event_target:target_province_4 }
+						NOT = { province_id = event_target:target_province_5 }
+						NOT = { province_id = event_target:target_province_6 }
+						NOT = { province_id = event_target:target_province_7 }
+						NOT = { province_id = event_target:target_province_8 }
+						NOT = { province_id = event_target:target_province_9 }
+					}
+				}
+				random_owned_province = {
+					limit = {
+						region = anatolia_region
+						base_tax = 2
+						NOT = { province_id = event_target:target_province_1 }
+						NOT = { province_id = event_target:target_province_2 }
+						NOT = { province_id = event_target:target_province_3 }
+						NOT = { province_id = event_target:target_province_4 }
+						NOT = { province_id = event_target:target_province_5 }
+						NOT = { province_id = event_target:target_province_6 }
+						NOT = { province_id = event_target:target_province_7 }
+						NOT = { province_id = event_target:target_province_8 }
+						NOT = { province_id = event_target:target_province_9 }
+					}
+					save_event_target_as = target_province_10
+				}
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						region = anatolia_region
+						base_tax = 2
+					}
+					save_event_target_as = target_province_10
+				}
+			}
+		}
+	}
+
+	option = {
+		name = disaster_fee_decline_of_the_ottomans5.EVTOPT1
+
+		add_corruption = 2
+		add_disaster_modifier = {
+			name = fee_decline_of_the_ottomans_timar_system_failure
+			duration = -1
+			disaster = fee_decline_of_the_ottomans
+		}
+		capital_scope = {
+			add_base_tax = 3
+		}
+		event_target:target_province_1 = {
+			add_base_tax = -1
+		}
+		event_target:target_province_2 = {
+			add_base_tax = -1
+		}
+		event_target:target_province_3 = {
+			add_base_tax = -1
+		}
+		event_target:target_province_4 = {
+			add_base_tax = -1
+		}
+		event_target:target_province_5 = {
+			add_base_tax = -1
+		}
+		event_target:target_province_6 = {
+			add_base_tax = -1
+		}
+		event_target:target_province_7 = {
+			add_base_tax = -1
+		}
+		event_target:target_province_8 = {
+			add_base_tax = -1
+		}
+		event_target:target_province_9 = {
+			add_base_tax = -1
+		}
+		event_target:target_province_10 = {
+			add_base_tax = -1
+		}
+	}
+}
+
+country_event = {
+	id = disaster_fee_decline_of_the_ottomans.6
+	title = disaster_fee_decline_of_the_ottomans.EVTNAME6
+	desc = disaster_fee_decline_of_the_ottomans.EVTDESC6
+	picture = CIVIL_WAR_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = disaster_fee_decline_of_the_ottomans6.EVTOPT1
+
+		add_corruption = 1
+		add_inflation = 2
+	}
+}
+
+country_event = {
+	id = disaster_fee_decline_of_the_ottomans.7
+	title = disaster_fee_decline_of_the_ottomans.EVTNAME7
+	desc = disaster_fee_decline_of_the_ottomans.EVTDESC7
+	picture = CIVIL_WAR_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = disaster_fee_decline_of_the_ottomans7.EVTOPT1
+
+		add_stability = -1
+		add_disaster_modifier = {
+			name = fee_decline_of_the_ottomans_ottoman_trade_decline
+			duration = 18250
+			disaster = fee_decline_of_the_ottomans
+		}
+	}
+}
+
+country_event = {
+	id = disaster_fee_decline_of_the_ottomans.8
+	title = disaster_fee_decline_of_the_ottomans.EVTNAME8
+	desc = disaster_fee_decline_of_the_ottomans.EVTDESC8
+	picture = CIVIL_WAR_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = disaster_fee_decline_of_the_ottomans8.EVTOPT1
+
+		add_disaster_modifier = {
+			name = fee_decline_of_the_ottomans_economic_adjustments
+			duration = 18250
+			disaster = fee_decline_of_the_ottomans
+		}
+	}
+}
+
+country_event = {
+	id = disaster_fee_decline_of_the_ottomans.9
+	title = disaster_fee_decline_of_the_ottomans.EVTNAME9
+	desc = disaster_fee_decline_of_the_ottomans.EVTDESC9
+	picture = CIVIL_WAR_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					any_owned_province = {
+						OR = {
+							has_owner_culture = yes
+							culture = turkish
+						}
+					}
+				}
+				random_owned_province = {
+					limit = {
+						OR = {
+							has_owner_culture = yes
+							culture = turkish
+						}
+					}
+					save_event_target_as = target_shiite
+				}
+			}
+			else = {
+				random_owned_province = {
+					save_event_target_as = target_shiite
+				}
+			}
+			if = {
+				limit = {
+					any_owned_province = {
+						is_capital = no
+					}
+				}
+				random_owned_province = {
+					limit = {
+						is_capital = no
+					}
+					save_event_target_as = target_peasants_1
+				}
+			}
+			else = {
+				random_owned_province = {
+					save_event_target_as = target_peasants_1
+				}
+			}
+			if = {
+				limit = {
+					any_owned_province = {
+						is_capital = no
+						NOT = { province_id = event_target:target_peasants_1 }
+					}
+				}
+				random_owned_province = {
+					limit = {
+						is_capital = no
+						NOT = { province_id = event_target:target_peasants_1 }
+					}
+					save_event_target_as = target_peasants_2
+				}
+			}
+			else = {
+				random_owned_province = {
+					save_event_target_as = target_peasants_2
+				}
+			}
+			if = {
+				limit = {
+					any_owned_province = {
+						is_capital = no
+						NOT = { province_id = event_target:target_peasants_1 }
+						NOT = { province_id = event_target:target_peasants_2 }
+					}
+				}
+				random_owned_province = {
+					limit = {
+						is_capital = no
+						NOT = { province_id = event_target:target_peasants_1 }
+						NOT = { province_id = event_target:target_peasants_2 }
+					}
+					save_event_target_as = target_peasants_3
+				}
+			}
+			else = {
+				random_owned_province = {
+					save_event_target_as = target_peasants_3
+				}
+			}
+			random_owned_province = {
+				save_event_target_as = target_particularists_1
+			}
+			if = {
+				limit = {
+					any_owned_province = {
+						is_capital = no
+						NOT = { province_id = event_target:target_particularists_1 }
+					}
+				}
+				random_owned_province = {
+					limit = {
+						is_capital = no
+						NOT = { province_id = event_target:target_particularists_1 }
+					}
+					save_event_target_as = target_particularists_2
+				}
+			}
+			else = {
+				random_owned_province = {
+					save_event_target_as = target_particularists_2
+				}
+			}
+			if = {
+				limit = {
+					any_owned_province = {
+						is_capital = no
+						NOT = { province_id = event_target:target_particularists_1 }
+					}
+				}
+				random_owned_province = {
+					limit = {
+						is_capital = no
+						NOT = { province_id = event_target:target_particularists_1 }
+					}
+					save_event_target_as = target_particularists_2
+				}
+			}
+			else = {
+				random_owned_province = {
+					save_event_target_as = target_particularists_2
+				}
+			}
+			if = {
+				limit = {
+					any_owned_province = {
+						is_capital = no
+						NOT = { province_id = event_target:target_particularists_1 }
+						NOT = { province_id = event_target:target_particularists_2 }
+					}
+				}
+				random_owned_province = {
+					limit = {
+						is_capital = no
+						NOT = { province_id = event_target:target_particularists_1 }
+						NOT = { province_id = event_target:target_particularists_2 }
+					}
+					save_event_target_as = target_particularists_3
+				}
+			}
+			else = {
+				random_owned_province = {
+					save_event_target_as = target_particularists_3
+				}
+			}
+		}
+	}
+
+	option = {
+		name = disaster_fee_decline_of_the_ottomans9.EVTOPT1
+
+		add_stability = -1
+		event_target:target_shiite = {
+			shiite_rebels = 3
+		}
+		event_target:target_peasants_1 = {
+			anti_tax_rebels = 3
+		}
+		event_target:target_peasants_2 = {
+			anti_tax_rebels = 3
+		}
+		event_target:target_peasants_3 = {
+			anti_tax_rebels = 3
+		}
+		event_target:target_particularists_1 = {
+			particularist_rebels = 2
+		}
+		event_target:target_particularists_2 = {
+			particularist_rebels = 2
+		}
+		event_target:target_particularists_3 = {
+			particularist_rebels = 2
+		}
+	}
+}
+
+country_event = {
+	id = disaster_fee_decline_of_the_ottomans.10
+	title = disaster_fee_decline_of_the_ottomans.EVTNAME10
+	desc = disaster_fee_decline_of_the_ottomans.EVTDESC10
+	picture = CIVIL_WAR_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					any_owned_province = {
+						is_capital = no
+					}
+				}
+				random_owned_province = {
+					limit = {
+						is_capital = no
+					}
+					save_event_target_as = target_1
+				}
+			}
+			else = {
+				random_owned_province = {
+					save_event_target_as = target_1
+				}
+			}
+			if = {
+				limit = {
+					any_owned_province = {
+						is_capital = no
+						NOT = { province_id = event_target:target_1 }
+					}
+				}
+				random_owned_province = {
+					limit = {
+						is_capital = no
+						NOT = { province_id = event_target:target_1 }
+					}
+					save_event_target_as = target_2
+				}
+			}
+			else = {
+				random_owned_province = {
+					save_event_target_as = target_2
+				}
+			}
+		}
+	}
+
+	option = {
+		name = disaster_fee_decline_of_the_ottomans10.EVTOPT1
+
+		ai_chance = { factor = 0.25 }
+
+		add_stability = -1
+		add_inflation = 4
+		if = {
+			limit = {
+				has_estate = estate_burghers
+			}
+			add_estate_loyalty = {
+				estate = estate_burghers
+				loyalty = -10
+			}
+		}
+		add_disaster_modifier = {
+			name = fee_decline_of_the_ottomans_price_controls
+			duration = 9125
+			disaster = fee_decline_of_the_ottomans
+		}
+	}
+
+	option = {
+		name = disaster_fee_decline_of_the_ottomans10.EVTOPT2
+
+		ai_chance = { factor = 0.25 }
+
+		add_stability = -1
+		add_disaster_modifier = {
+			name = fee_decline_of_the_ottomans_starving_poor
+			duration = 9125
+			disaster = fee_decline_of_the_ottomans
+		}
+		event_target:target_1 = {
+			anti_tax_rebels = 3
+		}
+		event_target:target_2 = {
+			anti_tax_rebels = 3
+		}
+		capital_scope = {
+			anti_tax_rebels = 3
+		}
+	}
+
+	option = {
+		name = disaster_fee_decline_of_the_ottomans10.EVTOPT3
+
+		highlight = yes
+
+		trigger = {
+			OR = {
+				ruler_has_personality = kind_hearted_personality
+				ruler_has_personality = benevolent_personality
+				ruler_has_personality = just_personality
+			}
+		}
+
+		ai_chance = { factor = 0.5 }
+
+		add_stability = 1
+		add_years_of_income = -0.25
+	}
+}
+
+country_event = {
+	id = disaster_fee_decline_of_the_ottomans.11
+	title = disaster_fee_decline_of_the_ottomans.EVTNAME11
+	desc = disaster_fee_decline_of_the_ottomans.EVTDESC11
+	picture = CIVIL_WAR_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = disaster_fee_decline_of_the_ottomans11.EVTOPT1
+
+		add_corruption = 2
+		if = {
+			limit = {
+				has_estate = estate_nobles
+			}
+			change_estate_land_share = {
+				estate = estate_nobles
+				share = 3
+			}
+		}
+		if = {
+			limit = {
+				has_estate = estate_church
+			}
+			change_estate_land_share = {
+				estate = estate_church
+				share = 3
+			}
+		}
+	}
+
+	option = {
+		name = disaster_fee_decline_of_the_ottomans11.EVTOPT2
+
+		add_stability = -1
+		add_corruption = -1
+		if = {
+			limit = {
+				has_estate = estate_nobles
+			}
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = -15
+			}
+			change_estate_land_share = {
+				estate = estate_nobles
+				share = -1.5
+			}
+		}
+		if = {
+			limit = {
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = -15
+			}
+			change_estate_land_share = {
+				estate = estate_church
+				share = -1.5
+			}
+		}
+	}
+}
+
+country_event = {
+	id = disaster_fee_decline_of_the_ottomans.12
+	title = disaster_fee_decline_of_the_ottomans.EVTNAME12
+	desc = disaster_fee_decline_of_the_ottomans.EVTDESC12
+	picture = CIVIL_WAR_eventPicture
+
+	major = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = disaster_fee_decline_of_the_ottomans12.EVTOPT1
+
+		set_country_flag = disaster_fee_decline_of_the_ottomans_balkan_separatism
+	}
+}
+
+country_event = {
+	id = disaster_fee_decline_of_the_ottomans.13
+	title = disaster_fee_decline_of_the_ottomans.EVTNAME13
+	desc = disaster_fee_decline_of_the_ottomans.EVTDESC13
+	picture = CIVIL_WAR_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = disaster_fee_decline_of_the_ottomans_balkan_separatism
+		NOT = { culture_group = carpathian }
+		carpathia_region = {
+			owned_by = ROOT
+			culture_group = carpathian
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					culture_group = carpathian
+					region = carpathia_region
+				}
+				save_event_target_as = target_1
+			}
+			if = {
+				limit = {
+					any_owned_province = {
+						culture_group = carpathian
+						region = carpathia_region
+						NOT = { province_id = event_target:target_1 }
+					}
+				}
+				random_owned_province = {
+					limit = {
+						culture_group = carpathian
+						region = carpathia_region
+						NOT = { province_id = event_target:target_1 }
+					}
+					save_event_target_as = target_2
+				}
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						culture_group = carpathian
+						region = carpathia_region
+					}
+					save_event_target_as = target_2
+				}
+			}
+		}
+	}
+
+	option = {
+		name = disaster_fee_decline_of_the_ottomans13.EVTOPT1
+
+		every_owned_province = {
+			limit = {
+				culture_group = carpathian
+				region = carpathia_region
+			}
+			add_core = HUN
+			add_province_modifier = {
+				name = fee_decline_of_the_ottomans_hungarian_separatism
+				duration = 18250
+			}
+		}
+		event_target:target_1 = {
+			nationalist_rebels = 2
+		}
+		event_target:target_2 = {
+			nationalist_rebels = 2
+		}
+	}
+}
+
+country_event = {
+	id = disaster_fee_decline_of_the_ottomans.14
+	title = disaster_fee_decline_of_the_ottomans.EVTNAME14
+	desc = disaster_fee_decline_of_the_ottomans.EVTDESC14
+	picture = CIVIL_WAR_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = disaster_fee_decline_of_the_ottomans_balkan_separatism
+		num_of_owned_provinces_with = {
+			value = 3
+			culture = croatian
+		}
+	}
+
+	option = {
+		name = disaster_fee_decline_of_the_ottomans14.EVTOPT1
+
+		every_owned_province = {
+			limit = {
+				culture = croatian
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = { is_core = CRO }
+					}
+					add_core = CRO
+					nationalist_rebels = 1
+					remove_core = CRO
+				}
+				else = {
+					nationalist_rebels = 1
+				}
+			}
+			tooltip = {
+				nationalist_rebels = 1
+			}
+		}
+	}
+}
+
+country_event = {
+	id = disaster_fee_decline_of_the_ottomans.15
+	title = disaster_fee_decline_of_the_ottomans.EVTNAME15
+	desc = disaster_fee_decline_of_the_ottomans.EVTDESC15
+	picture = CIVIL_WAR_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = disaster_fee_decline_of_the_ottomans_balkan_separatism
+		num_of_owned_provinces_with = {
+			value = 3
+			culture = romanian
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					culture = romanian
+				}
+				save_event_target_as = target_1
+			}
+			random_owned_province = {
+				limit = {
+					culture = romanian
+					NOT = { province_id = event_target:target_1 }
+				}
+				save_event_target_as = target_2
+			}
+			random_owned_province = {
+				limit = {
+					culture = romanian
+					NOT = { province_id = event_target:target_1 }
+					NOT = { province_id = event_target:target_2 }
+				}
+				save_event_target_as = target_3
+			}
+		}
+	}
+
+	option = {
+		name = disaster_fee_decline_of_the_ottomans15.EVTOPT1
+
+		event_target:target_1 = {
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = { is_core = RMN }
+					}
+					add_core = RMN
+					nationalist_rebels = 2
+					remove_core = RMN
+				}
+				else = {
+					nationalist_rebels = 2
+				}
+			}
+			tooltip = {
+				nationalist_rebels = 2
+			}
+		}
+		event_target:target_2 = {
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = { is_core = RMN }
+					}
+					add_core = RMN
+					nationalist_rebels = 2
+					remove_core = RMN
+				}
+				else = {
+					nationalist_rebels = 2
+				}
+			}
+			tooltip = {
+				nationalist_rebels = 2
+			}
+		}
+		event_target:target_3 = {
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = { is_core = RMN }
+					}
+					add_core = RMN
+					nationalist_rebels = 2
+					remove_core = RMN
+				}
+				else = {
+					nationalist_rebels = 2
+				}
+			}
+			tooltip = {
+				nationalist_rebels = 2
+			}
+		}
+	}
+}
+
+country_event = {
+	id = disaster_fee_decline_of_the_ottomans.16
+	title = disaster_fee_decline_of_the_ottomans.EVTNAME16
+	desc = disaster_fee_decline_of_the_ottomans.EVTDESC16
+	picture = CIVIL_WAR_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = disaster_fee_decline_of_the_ottomans_balkan_separatism
+		num_of_owned_provinces_with = {
+			value = 5
+			culture = bulgarian
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					culture = bulgarian
+				}
+				save_event_target_as = target_1
+			}
+			random_owned_province = {
+				limit = {
+					culture = bulgarian
+					NOT = { province_id = event_target:target_1 }
+				}
+				save_event_target_as = target_2
+			}
+			random_owned_province = {
+				limit = {
+					culture = bulgarian
+					NOT = { province_id = event_target:target_1 }
+					NOT = { province_id = event_target:target_2 }
+				}
+				save_event_target_as = target_3
+			}
+		}
+	}
+
+	option = {
+		name = disaster_fee_decline_of_the_ottomans16.EVTOPT1
+
+		event_target:target_1 = {
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = { is_core = BUL }
+					}
+					add_core = BUL
+					nationalist_rebels = 2
+					remove_core = BUL
+				}
+				else = {
+					nationalist_rebels = 2
+				}
+			}
+			tooltip = {
+				nationalist_rebels = 2
+			}
+		}
+		event_target:target_2 = {
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = { is_core = BUL }
+					}
+					add_core = BUL
+					nationalist_rebels = 2
+					remove_core = BUL
+				}
+				else = {
+					nationalist_rebels = 2
+				}
+			}
+			tooltip = {
+				nationalist_rebels = 2
+			}
+		}
+		event_target:target_3 = {
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = { is_core = BUL }
+					}
+					add_core = BUL
+					nationalist_rebels = 2
+					remove_core = BUL
+				}
+				else = {
+					nationalist_rebels = 2
+				}
+			}
+			tooltip = {
+				nationalist_rebels = 2
+			}
+		}
+		bulgaria_area = {
+			limit = {
+				owned_by = ROOT
+			}
+			change_culture = bulgarian
+			change_religion = orthodox
+		}
+		every_owned_province = {
+			limit = {
+				culture = bulgarian
+			}
+			add_nationalism = 5
+		}
+	}
+}
+
+country_event = {
+	id = disaster_fee_decline_of_the_ottomans.17
+	title = disaster_fee_decline_of_the_ottomans.EVTNAME17
+	desc = disaster_fee_decline_of_the_ottomans.EVTDESC17
+	picture = CIVIL_WAR_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = disaster_fee_decline_of_the_ottomans_balkan_separatism
+		num_of_owned_provinces_with = {
+			value = 5
+			culture = bosnian
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					culture = bosnian
+				}
+				save_event_target_as = target_1
+			}
+			random_owned_province = {
+				limit = {
+					culture = bosnian
+					NOT = { province_id = event_target:target_1 }
+				}
+				save_event_target_as = target_2
+			}
+			random_owned_province = {
+				limit = {
+					culture = bosnian
+					NOT = { province_id = event_target:target_1 }
+					NOT = { province_id = event_target:target_2 }
+				}
+				save_event_target_as = target_3
+			}
+		}
+	}
+
+	option = {
+		name = disaster_fee_decline_of_the_ottomans17.EVTOPT1
+
+		event_target:target_1 = {
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = { is_core = BOS }
+					}
+					add_core = BOS
+					nationalist_rebels = 3
+					remove_core = BOS
+				}
+				else = {
+					nationalist_rebels = 3
+				}
+			}
+			tooltip = {
+				nationalist_rebels = 3
+			}
+		}
+		event_target:target_2 = {
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = { is_core = BOS }
+					}
+					add_core = BOS
+					nationalist_rebels = 3
+					remove_core = BOS
+				}
+				else = {
+					nationalist_rebels = 3
+				}
+			}
+			tooltip = {
+				nationalist_rebels = 3
+			}
+		}
+		event_target:target_3 = {
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = { is_core = BOS }
+					}
+					add_core = BOS
+					nationalist_rebels = 3
+					remove_core = BOS
+				}
+				else = {
+					nationalist_rebels = 3
+				}
+			}
+			tooltip = {
+				nationalist_rebels = 3
+			}
+		}
+	}
+}
+
+country_event = {
+	id = disaster_fee_decline_of_the_ottomans.18
+	title = disaster_fee_decline_of_the_ottomans.EVTNAME18
+	desc = disaster_fee_decline_of_the_ottomans.EVTDESC18
+	picture = CIVIL_WAR_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = disaster_fee_decline_of_the_ottomans_balkan_separatism
+		NOT = { exists = SER }
+		num_of_owned_provinces_with = {
+			value = 3
+			OR = {
+				area = serbia_area
+				area = rascia_area
+			}
+		}
+		num_of_owned_provinces_with = {
+			value = 10
+			region = balkan_region
+			controlled_by = REB
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						area = serbia_area
+						area = rascia_area
+						culture = serbian
+					}
+				}
+				add_core = SER
+				change_culture = serbian
+				kill_units = {
+					who = REB
+				}
+				change_controller = ROOT
+			}
+			release = SER
+			vassalize = SER
+			SER = {
+				change_religion = orthodox
+				change_primary_culture = serbian
+				change_government = republic
+				adopt_reform_progress = ROOT
+				every_owned_province = {
+					set_local_autonomy = 0
+				}
+			}
+		}
+	}
+
+	option = {
+		name = disaster_fee_decline_of_the_ottomans18.EVTOPT1
+
+		add_stability = -1
+		tooltip = { create_vassal = SER }
+		SER = {
+			hidden_effect = {
+				add_yearly_manpower = 15
+				add_years_of_income = 15
+				capital_scope = {
+					build_to_forcelimit = {
+						infantry = 0.7
+						artillery = 0.3
+					}
+				}
+				add_casus_belli = {
+					target = ROOT
+					type = cb_independence_war
+				}
+			}
+			declare_war_with_cb = {
+				who = ROOT
+				casus_belli = cb_independence_war
+			}
+		}
+		hidden_effect = {
+			every_country = {
+				limit = {
+					religion = orthodox
+					total_development = 100
+					OR = {
+						culture_group = east_slavic
+						culture_group = west_slavic
+						culture_group = south_slavic
+					}
+				}
+				country_event = {
+					id = disaster_fee_decline_of_the_ottomans.26
+					days = 2
+					random = 3
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = disaster_fee_decline_of_the_ottomans.19
+	title = disaster_fee_decline_of_the_ottomans.EVTNAME19
+	desc = disaster_fee_decline_of_the_ottomans.EVTDESC19
+	picture = CIVIL_WAR_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = disaster_fee_decline_of_the_ottomans19.EVTOPT1
+
+		ai_chance = { factor = 0.8 }
+
+		add_adm_power = -100
+		add_dip_power = -100
+		add_mil_power = -100
+		add_corruption = 2
+	}
+
+	option = {
+		name = disaster_fee_decline_of_the_ottomans19.EVTOPT2
+
+		ai_chance = { factor = 0.2 }
+
+		add_stability = -1
+		add_corruption = 2
+	}
+}
+
+country_event = {
+	id = disaster_fee_decline_of_the_ottomans.20
+	title = disaster_fee_decline_of_the_ottomans.EVTNAME20
+	desc = disaster_fee_decline_of_the_ottomans.EVTDESC20
+	picture = CIVIL_WAR_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					any_owned_province = {
+						OR = {
+							has_owner_culture = yes
+							culture = turkish
+						}
+					}
+				}
+				random_owned_province = {
+					limit = {
+						OR = {
+							has_owner_culture = yes
+							culture = turkish
+						}
+					}
+					save_event_target_as = target_1
+				}
+			}
+			else = {
+				random_owned_province = {
+					save_event_target_as = target_1
+				}
+			}
+			if = {
+				limit = {
+					any_owned_province = {
+						OR = {
+							has_owner_culture = yes
+							culture = turkish
+						}
+						NOT = { province_id = event_target:target_1 }
+					}
+				}
+				random_owned_province = {
+					limit = {
+						OR = {
+							has_owner_culture = yes
+							culture = turkish
+						}
+						NOT = { province_id = event_target:target_1 }
+					}
+					save_event_target_as = target_2
+				}
+			}
+			else = {
+				random_owned_province = {
+					save_event_target_as = target_2
+				}
+			}
+			if = {
+				limit = {
+					any_owned_province = {
+						OR = {
+							has_owner_culture = yes
+							culture = turkish
+						}
+						NOT = { province_id = event_target:target_1 }
+						NOT = { province_id = event_target:target_2 }
+					}
+				}
+				random_owned_province = {
+					limit = {
+						OR = {
+							has_owner_culture = yes
+							culture = turkish
+						}
+						NOT = { province_id = event_target:target_1 }
+						NOT = { province_id = event_target:target_2 }
+					}
+					save_event_target_as = target_3
+				}
+			}
+			else = {
+				random_owned_province = {
+					save_event_target_as = target_3
+				}
+			}
+		}
+	}
+
+	option = {
+		name = disaster_fee_decline_of_the_ottomans20.EVTOPT1
+
+		add_stability = -1
+		if = {
+			limit = {
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = -10
+			}
+		}
+		if = {
+			limit = {
+				religion_group = muslim
+			}
+			add_piety = 0.25
+		}
+		add_disaster_modifier = {
+			name = fee_decline_of_the_ottomans_increased_openness
+			duration = -1
+			disaster = fee_decline_of_the_ottomans
+		}
+		event_target:target_1 = {
+			sunni_rebels = 1
+		}
+		event_target:target_2 = {
+			sunni_rebels = 1
+		}
+		event_target:target_3 = {
+			sunni_rebels = 1
+		}
+	}
+
+	option = {
+		name = disaster_fee_decline_of_the_ottomans20.EVTOPT2
+
+		add_stability = 1
+		if = {
+			limit = {
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = 10
+			}
+		}
+		add_disaster_modifier = {
+			name = fee_decline_of_the_ottomans_closed_borders
+			duration = -1
+			disaster = fee_decline_of_the_ottomans
+		}
+	}
+}
+
+country_event = {
+	id = disaster_fee_decline_of_the_ottomans.21
+	title = disaster_fee_decline_of_the_ottomans.EVTNAME21
+	desc = disaster_fee_decline_of_the_ottomans.EVTDESC21
+	picture = CIVIL_WAR_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		num_of_rebel_controlled_provinces = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				save_event_target_as = target_1
+			}
+			if = {
+				limit = {
+					any_owned_province = {
+						NOT = { province_id = event_target:target_1 }
+					}
+				}
+				random_owned_province = {
+					limit = {
+						NOT = { province_id = event_target:target_1 }
+					}
+					save_event_target_as = target_2
+				}
+			}
+			else = {
+				random_owned_province = {
+					save_event_target_as = target_2
+				}
+			}
+			if = {
+				limit = {
+					any_owned_province = {
+						NOT = { province_id = event_target:target_1 }
+						NOT = { province_id = event_target:target_2 }
+					}
+				}
+				random_owned_province = {
+					limit = {
+						NOT = { province_id = event_target:target_1 }
+						NOT = { province_id = event_target:target_2 }
+					}
+					save_event_target_as = target_3
+				}
+			}
+			else = {
+				random_owned_province = {
+					save_event_target_as = target_3
+				}
+			}
+		}
+	}
+
+	option = {
+		name = disaster_fee_decline_of_the_ottomans21.EVTOPT1
+
+		add_war_exhaustion = 2
+		event_target:target_1 = {
+			anti_tax_rebels = 2
+		}
+		event_target:target_2 = {
+			anti_tax_rebels = 2
+		}
+		event_target:target_3 = {
+			anti_tax_rebels = 2
+		}
+		capital_scope = {
+			anti_tax_rebels = 3
+		}
+	}
+}
+
+country_event = {
+	id = disaster_fee_decline_of_the_ottomans.22
+	title = disaster_fee_decline_of_the_ottomans.EVTNAME22
+	desc = disaster_fee_decline_of_the_ottomans.EVTDESC22
+	picture = CIVIL_WAR_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				save_event_target_as = target_1
+			}
+			if = {
+				limit = {
+					any_owned_province = {
+						NOT = { province_id = event_target:target_1 }
+					}
+				}
+				random_owned_province = {
+					limit = {
+						NOT = { province_id = event_target:target_1 }
+					}
+					save_event_target_as = target_2
+				}
+			}
+			else = {
+				random_owned_province = {
+					save_event_target_as = target_2
+				}
+			}
+			if = {
+				limit = {
+					any_owned_province = {
+						NOT = { province_id = event_target:target_1 }
+						NOT = { province_id = event_target:target_2 }
+					}
+				}
+				random_owned_province = {
+					limit = {
+						NOT = { province_id = event_target:target_1 }
+						NOT = { province_id = event_target:target_2 }
+					}
+					save_event_target_as = target_3
+				}
+			}
+			else = {
+				random_owned_province = {
+					save_event_target_as = target_3
+				}
+			}
+			if = {
+				limit = {
+					any_owned_province = {
+						NOT = { province_id = event_target:target_1 }
+						NOT = { province_id = event_target:target_2 }
+						NOT = { province_id = event_target:target_3 }
+					}
+				}
+				random_owned_province = {
+					limit = {
+						NOT = { province_id = event_target:target_1 }
+						NOT = { province_id = event_target:target_2 }
+						NOT = { province_id = event_target:target_3 }
+					}
+					save_event_target_as = target_4
+				}
+			}
+			else = {
+				random_owned_province = {
+					save_event_target_as = target_4
+				}
+			}
+			if = {
+				limit = {
+					any_owned_province = {
+						NOT = { province_id = event_target:target_1 }
+						NOT = { province_id = event_target:target_2 }
+						NOT = { province_id = event_target:target_3 }
+						NOT = { province_id = event_target:target_4 }
+					}
+				}
+				random_owned_province = {
+					limit = {
+						NOT = { province_id = event_target:target_1 }
+						NOT = { province_id = event_target:target_2 }
+						NOT = { province_id = event_target:target_3 }
+						NOT = { province_id = event_target:target_4 }
+					}
+					save_event_target_as = target_5
+				}
+			}
+			else = {
+				random_owned_province = {
+					save_event_target_as = target_5
+				}
+			}
+			if = {
+				limit = {
+					any_owned_province = {
+						NOT = { province_id = event_target:target_1 }
+						NOT = { province_id = event_target:target_2 }
+						NOT = { province_id = event_target:target_3 }
+						NOT = { province_id = event_target:target_4 }
+						NOT = { province_id = event_target:target_5 }
+					}
+				}
+				random_owned_province = {
+					limit = {
+						NOT = { province_id = event_target:target_1 }
+						NOT = { province_id = event_target:target_2 }
+						NOT = { province_id = event_target:target_3 }
+						NOT = { province_id = event_target:target_4 }
+						NOT = { province_id = event_target:target_5 }
+					}
+					save_event_target_as = target_6
+				}
+			}
+			else = {
+				random_owned_province = {
+					save_event_target_as = target_6
+				}
+			}
+		}
+	}
+
+	option = {
+		name = disaster_fee_decline_of_the_ottomans22.EVTOPT1
+
+		if = {
+			limit = {
+				has_estate = estate_nobles
+			}
+			change_estate_land_share = {
+				estate = estate_nobles
+				share = 3
+			}
+		}
+		if = {
+			limit = {
+				has_estate = estate_church
+			}
+			change_estate_land_share = {
+				estate = estate_church
+				share = 3
+			}
+		}
+		event_target:target_1 = {
+			add_local_autonomy = 25
+		}
+		event_target:target_2 = {
+			add_local_autonomy = 25
+		}
+		event_target:target_3 = {
+			add_local_autonomy = 25
+		}
+		event_target:target_4 = {
+			add_local_autonomy = 25
+		}
+		event_target:target_5 = {
+			add_local_autonomy = 25
+		}
+	}
+
+	option = {
+		name = disaster_fee_decline_of_the_ottomans22.EVTOPT2
+
+		if = {
+			limit = {
+				has_estate = estate_nobles
+			}
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = -15
+			}
+		}
+		if = {
+			limit = {
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = -15
+			}
+		}
+		event_target:target_1 = {
+			noble_rebels = 1
+		}
+		event_target:target_2 = {
+			noble_rebels = 1
+		}
+		event_target:target_3 = {
+			noble_rebels = 1
+		}
+		event_target:target_4 = {
+			sunni_rebels = 1
+		}
+		event_target:target_5 = {
+			sunni_rebels = 1
+		}
+		event_target:target_6 = {
+			sunni_rebels = 1
+		}
+	}
+}
+
+country_event = {
+	id = disaster_fee_decline_of_the_ottomans.23
+	title = disaster_fee_decline_of_the_ottomans.EVTNAME23
+	desc = disaster_fee_decline_of_the_ottomans.EVTDESC23
+	picture = CIVIL_WAR_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = disaster_fee_decline_of_the_ottomans_balkan_separatism
+		balkan_region = {
+			owned_by = ROOT
+		}
+	}
+
+	option = {
+		name = disaster_fee_decline_of_the_ottomans23.EVTOPT1
+
+		balkan_region = {
+			limit = {
+				owned_by = ROOT
+			}
+			add_devastation = 8
+			add_province_modifier = {
+				name = fee_decline_of_the_ottomans_hayduks
+				duration = 18250
+			}
+		}
+	}
+}
+
+country_event = {
+	id = disaster_fee_decline_of_the_ottomans.24
+	title = disaster_fee_decline_of_the_ottomans.EVTNAME24
+	desc = disaster_fee_decline_of_the_ottomans.EVTDESC24
+	picture = CIVIL_WAR_eventPicture
+
+	major = yes
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_global_flag = greek_cores
+		NOT = { exists = GRE }
+		num_of_owned_provinces_with = {
+			value = 6
+			culture = greek
+			controlled_by = REB
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					culture = greek
+				}
+				add_core = GRE
+				kill_units = {
+					who = REB
+				}
+				change_controller = ROOT
+			}
+			release = GRE
+			vassalize = GRE
+			GRE = {
+				change_religion = orthodox
+				change_primary_culture = greek
+				change_government = republic
+				add_government_reform = merchants_reform
+				adopt_reform_progress = ROOT
+				define_ruler = {
+					name = "Ioannis Kapodistrias"
+					adm = 5
+					dip = 5
+					mil = 2
+					claim = 50
+				}
+				if = {
+					limit = {
+						has_dlc = "Rights of Man"
+					}
+					add_ruler_personality = law_giver_personality
+				}
+				define_general = {
+					name = "Theodores Koloktronis"
+					shock = 4
+					fire = 3
+					manuever = 6
+					siege = 1
+				}
+				define_admiral = {
+					name = "Andreas Miaoulis"
+					shock = 3
+					fire = 3
+					manuever = 5
+					siege = 0
+				}
+				add_country_modifier = {
+					name = fee_decline_of_the_ottomans_greek_freedom_fighters
+					duration = 5475
+				}
+				every_owned_province = {
+					set_local_autonomy = 0
+				}
+			}
+		}
+	}
+
+	option = {
+		name = disaster_fee_decline_of_the_ottomans24.EVTOPT1
+
+		add_stability = -1
+		tooltip = { create_vassal = GRE }
+		GRE = {
+			hidden_effect = {
+				add_yearly_manpower = 15
+				add_years_of_income = 15
+				capital_scope = {
+					build_to_forcelimit = {
+						infantry = 0.7
+						artillery = 0.3
+					}
+				}
+				add_casus_belli = {
+					target = ROOT
+					type = cb_independence_war
+				}
+			}
+			declare_war_with_cb = {
+				who = ROOT
+				casus_belli = cb_independence_war
+			}
+		}
+		every_enemy_country = {
+			country_event = { id = disaster_fee_decline_of_the_ottomans.25 days = 2 }
+		}
+	}
+}
+
+country_event = {
+	id = disaster_fee_decline_of_the_ottomans.25
+	title = disaster_fee_decline_of_the_ottomans.EVTNAME25
+	desc = disaster_fee_decline_of_the_ottomans.EVTDESC25
+	picture = CIVIL_WAR_eventPicture
+
+	major = yes
+	major_trigger = {
+		tag = GRE
+	}
+	is_triggered_only = yes
+
+	option = {
+		name = disaster_fee_decline_of_the_ottomans25.EVTOPT1
+
+		reverse_add_opinion = {
+			who = GRE
+			modifier = fee_decline_of_the_ottomans_greece_opinion
+		}
+		create_alliance = GRE
+		join_all_offensive_wars_of = GRE
+	}
+
+	option = {
+		name = disaster_fee_decline_of_the_ottomans25.EVTOPT2
+
+		add_prestige = -10
+	}
+}
+
+country_event = {
+	id = disaster_fee_decline_of_the_ottomans.26
+	title = disaster_fee_decline_of_the_ottomans.EVTNAME26
+	desc = disaster_fee_decline_of_the_ottomans.EVTDESC26
+	picture = CIVIL_WAR_eventPicture
+
+	major = yes
+	major_trigger = {
+		tag = TUR
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = disaster_fee_decline_of_the_ottomans26.EVTOPT1
+
+		create_alliance = SER
+		join_all_offensive_wars_of = SER
+		reverse_add_opinion = {
+			who = SER
+			modifier = fee_decline_of_the_ottomans_aided_us_opinion
+		}
+		add_opinion = {
+			who = SER
+			modifier = fee_decline_of_the_ottomans_aided_us_opinion
+		}
+	}
+
+	option = {
+		name = disaster_fee_decline_of_the_ottomans26.EVTOPT2
+
+		add_treasury = -500
+		add_manpower = -15
+		SER = {
+			add_treasury = 500
+			add_manpower = 15
+		}
+		reverse_add_opinion = {
+			who = SER
+			modifier = fee_decline_of_the_ottomans_sent_aid_opinion
+		}
+		add_opinion = {
+			who = SER
+			modifier = fee_decline_of_the_ottomans_sent_aid_opinion
+		}
+	}
+
+	option = {
+		name = disaster_fee_decline_of_the_ottomans26.EVTOPT3
+
+		add_prestige = -10
+	}
+}
+
+country_event = {
+	id = disaster_fee_decline_of_the_ottomans.27
+	title = disaster_fee_decline_of_the_ottomans.EVTNAME27
+	desc = disaster_fee_decline_of_the_ottomans.EVTDESC27
+	picture = CIVIL_WAR_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		corruption = 2
+	}
+
+	option = {
+		name = disaster_fee_decline_of_the_ottomans27.EVTOPT1
+
+		add_years_of_income = -0.5
+		add_adm_power = -100
+		add_corruption = -2
+	}
+
+	option = {
+		name = disaster_fee_decline_of_the_ottomans27.EVTOPT2
+
+		add_adm_power = 50
+	}
+}
+
+country_event = {
+	id = disaster_fee_decline_of_the_ottomans.28
+	title = disaster_fee_decline_of_the_ottomans.EVTNAME28
+	desc = disaster_fee_decline_of_the_ottomans.EVTDESC28
+	picture = CIVIL_WAR_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		NOT = { exists = EGY }
+		owns_core_province = 361
+		owns_core_province = 358
+		num_of_owned_provinces_with = {
+			value = 10
+			region = egypt_region
+			is_core = ROOT
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					culture = al_misr_arabic
+				}
+				add_core = EGY
+				kill_units = {
+					who = REB
+				}
+				change_controller = ROOT
+			}
+			release = EGY
+			vassalize = EGY
+			EGY = {
+				change_religion = orthodox
+				change_primary_culture = greek
+				change_government = monarchy
+				add_government_reform = mamluk_government
+				adopt_reform_progress = ROOT
+				add_adm_power = 100
+				add_dip_power = 100
+				add_mil_power = 100
+				every_owned_province = {
+					set_local_autonomy = 0
+				}
+				add_casus_belli = {
+					target = ROOT
+					type = cb_independence_war
+				}
+			}
+		}
+	}
+
+	option = {
+		name = disaster_fee_decline_of_the_ottomans28.EVTOPT1
+
+		create_march = EGY
+		if = {
+			limit = {
+				NOT = { stability = -2 }
+			}
+			add_stability = -2
+		}
+		else = {
+			add_adm_power = -200
+		}
+	}
+
+	option = {
+		name = disaster_fee_decline_of_the_ottomans28.EVTOPT2
+
+		EGY = {
+			hidden_effect = {
+				add_years_of_income = 15
+				add_yearly_manpower = 15
+				capital_scope = {
+					build_to_forcelimit = {
+						infantry = 0.50
+						cavalry = 0.20
+						artillery = 0.30
+					}
+				}
+			}
+			declare_war_with_cb = {
+				casus_belli = cb_independence_war
+				who = ROOT
+			}
+		}
+	}
+}

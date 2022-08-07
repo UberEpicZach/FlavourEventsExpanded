@@ -1,0 +1,58 @@
+fee_portuguese_succession_crisis_acceptance = {
+	opinion = 50
+	yearly_decay = 1
+	max = 50
+}
+
+fee_portuguese_succession_crisis_rejection = {
+	opinion = -50
+	yearly_decay = 1
+	min = -50
+}
+
+fee_portuguese_succession_crisis_involvement = {
+	opinion = -50
+	yearly_decay = 1
+	min = -50
+}
+
+fee_portuguese_succession_crisis_grateful = {
+	opinion = 50
+	yearly_decay = 1
+	max = 50
+}
+
+fee_decline_of_the_ottomans_greece_opinion = {
+	opinion = 100
+	yearly_decay = 1
+	max = 100
+}
+
+fee_decline_of_the_ottomans_aided_us_opinion = {
+	opinion = 50
+	yearly_decay = 2
+	max = 50
+}
+
+fee_decline_of_the_ottomans_sent_aid_opinion = {
+	opinion = 100
+	yearly_decay = 2
+	max = 100
+}
+
+fee_division_of_the_habsburg_monarchy_acceptance = {
+	opinion = 100
+	yearly_decay = 2
+	max = 100
+}
+
+fee_partition_of_poland_black_eagles_alliance_opinion = {
+	opinion = 50
+	yearly_decay = 1
+	max = 50
+}
+
+fee_disaster_netherlands_cannibals = {
+	opinion = -75
+	yearly_decay = 1
+}

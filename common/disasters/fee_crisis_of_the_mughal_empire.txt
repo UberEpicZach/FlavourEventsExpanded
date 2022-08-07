@@ -1,0 +1,220 @@
+fee_crisis_of_the_mughal_empire = {
+	potential = {
+		tag = MUG
+		NOT = { has_country_flag = had_fee_crisis_of_the_mughal_empire }
+		OR = {
+			current_age = age_of_absolutism
+			current_age = age_of_revolutions
+		}
+		is_free_or_tributary_trigger = yes
+		government = monarchy
+		religion_group = muslim
+		num_of_owned_provinces_with = {
+			value = 50
+			is_core = ROOT
+		}
+	}
+	can_start = {
+		OR = {
+			current_age = age_of_absolutism
+			current_age = age_of_revolutions
+		}
+		if = {
+			limit = {
+				has_dlc = "Rights of Man"
+			}
+			OR = {
+				ruler_has_personality = cruel_personality
+				overextension_percentage = 1
+				NOT = { legitimacy = 20 }
+				custom_trigger_tooltip = {
+					tooltip = FEE_CRISIS_OF_THE_MUGHAL_EMPIRE_LESS_THAN_0_TOLERANCE_OF_HEATHENS_TT
+					NOT = {
+						has_global_modifier_value = {
+							which = tolerance_heathen
+							value = 0
+						}
+					}
+				}
+				variable_arithmetic_trigger = {
+					custom_tooltip = FEE_CRISIS_OF_THE_MUGHAL_EMPIRE_RULER_STATS_LESS_THAN_6_TOTAL_TT
+					export_to_variable = {
+						which = ruler_adm_stats
+						value = ADM
+					}
+					export_to_variable = {
+						which = ruler_dip_stats
+						value = DIP
+					}
+					export_to_variable = {
+						which = ruler_mil_stats
+						value = MIL
+					}
+					change_variable = { which = ruler_adm_stats which = ruler_dip_stats }
+					change_variable = { which = ruler_adm_stats which = ruler_mil_stats }
+					NOT = { check_variable = { which = ruler_adm_stats value = 6 } }
+				}
+			}
+		}
+		else = {
+			OR = {
+				overextension_percentage = 1
+				NOT = { legitimacy = 20 }
+				custom_trigger_tooltip = {
+					tooltip = FEE_CRISIS_OF_THE_MUGHAL_EMPIRE_LESS_THAN_0_TOLERANCE_OF_HEATHENS_TT
+					NOT = {
+						has_global_modifier_value = {
+							which = tolerance_heathen
+							value = 0
+						}
+					}
+				}
+				variable_arithmetic_trigger = {
+					custom_tooltip = FEE_CRISIS_OF_THE_MUGHAL_EMPIRE_RULER_STATS_LESS_THAN_6_TOTAL_TT
+					export_to_variable = {
+						which = ruler_adm_stats
+						value = ADM
+					}
+					export_to_variable = {
+						which = ruler_dip_stats
+						value = DIP
+					}
+					export_to_variable = {
+						which = ruler_mil_stats
+						value = MIL
+					}
+					change_variable = { which = ruler_adm_stats which = ruler_dip_stats }
+					change_variable = { which = ruler_adm_stats which = ruler_mil_stats }
+					NOT = { check_variable = { which = ruler_adm_stats value = 6 } }
+				}
+			}
+		}
+	}
+	can_stop = {
+		OR = {
+			has_any_disaster = yes
+			all_province = {
+				NOT = { unrest = 0.01 }
+			}
+		}
+	}
+	progress = {
+		modifier = {
+			factor = 1
+			NOT = { ADM = 3 }
+		}
+		modifier = {
+			factor = 1
+			NOT = { DIP = 3 }
+		}
+		modifier = {
+			factor = 1
+			NOT = { MIL = 3 }
+		}
+		modifier = {
+			factor = 1
+			has_estate = estate_jains
+			NOT = {
+				estate_loyalty = {
+					estate = estate_jains
+					loyalty = 30
+				}
+			}
+		}
+		modifier = {
+			factor = 1
+			has_estate = estate_brahmins
+			NOT = {
+				estate_loyalty = {
+					estate = estate_brahmins
+					loyalty = 30
+				}
+			}
+		}
+		modifier = {
+			factor = 1
+			has_estate = estate_vaisyas
+			NOT = {
+				estate_loyalty = {
+					estate = estate_vaisyas
+					loyalty = 30
+				}
+			}
+		}
+		modifier = {
+			factor = 1
+			NOT = { legitimacy = 75 }
+		}
+		modifier = {
+			factor = 1
+			overextension_percentage = 0.01
+		}
+		modifier = {
+			factor = 2
+			has_estate = estate_rajput
+			NOT = {
+				estate_loyalty = {
+					estate = estate_rajput
+					loyalty = 30
+				}
+			}
+		}
+		modifier = {
+			factor = 3
+			NOT = { stability = 0 }
+		}
+		modifier = {
+			factor = 3
+			overextension_percentage = 1
+		}
+		modifier = {
+			factor = 3
+			governing_capacity_percentage = 1.1
+		}
+		modifier = {
+			factor = 5
+			has_heir = no
+		}
+	}
+	can_end = {
+		hidden_trigger = {
+			has_country_flag = had_fee_crisis_of_the_mughal_empire
+		}
+		legitimacy = 75
+		stability = 2
+		NOT = { num_of_loans = 5 }
+		NOT = { corruption = 2 }
+		is_bankrupt = no
+		NOT = { num_of_rebel_armies = 1 }
+		NOT = { num_of_rebel_controlled_provinces = 1 }
+	}
+	modifier = {
+		global_unrest = 6
+		stability_cost_modifier = 0.5
+		advisor_cost = 0.5
+	}
+
+	on_start = disaster_fee_crisis_of_the_mughal_empire.1
+	on_end = disaster_fee_crisis_of_the_mughal_empire.2
+
+	on_monthly = {
+		events = {
+		}
+		random_events = {
+			1000 = 0
+			200 = disaster_fee_crisis_of_the_mughal_empire.3
+			100 = disaster_fee_crisis_of_the_mughal_empire.4
+			100 = disaster_fee_crisis_of_the_mughal_empire.5
+			200 = disaster_fee_crisis_of_the_mughal_empire.6
+			100 = disaster_fee_crisis_of_the_mughal_empire.7
+			100 = disaster_fee_crisis_of_the_mughal_empire.8
+			200 = disaster_fee_crisis_of_the_mughal_empire.9
+			100 = disaster_fee_crisis_of_the_mughal_empire.10
+			250 = disaster_fee_crisis_of_the_mughal_empire.11
+			100 = disaster_fee_crisis_of_the_mughal_empire.12
+			100 = disaster_fee_crisis_of_the_mughal_empire.13
+			100 = disaster_fee_crisis_of_the_mughal_empire.14
+			100 = disaster_fee_crisis_of_the_mughal_empire.15
+		}
+	}
+}

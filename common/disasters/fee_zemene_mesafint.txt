@@ -1,0 +1,126 @@
+fee_zemene_mesafint = {
+	potential = {
+		OR = {
+			tag = ETH
+			tag = AKS
+			AND = {
+				NOT = { exists = ETH }
+				NOT = { exists = AKS }
+				OR = {
+					was_tag = ETH
+					was_tag = AKS
+				}
+			}
+		}
+		NOT = { has_country_flag = had_fee_zemene_mesafint }
+		OR = {
+			current_age = age_of_absolutism
+			current_age = age_of_revolutions
+		}
+		is_free_or_tributary_trigger = yes
+		num_of_owned_provinces_with = {
+			value = 50
+			is_core = ROOT
+		}
+	}
+	can_start = {
+		OR = {
+			current_age = age_of_absolutism
+			current_age = age_of_revolutions
+		}
+		OR = {
+			NOT = { legitimacy_equivalent = 50 }
+			has_regency = yes
+			NOT = { stability = -1 }
+			NOT = { government = monarchy }
+		}
+	}
+	can_stop = {
+		OR = {
+			has_any_disaster = yes
+			AND = {
+				government = monarchy
+				stability = 2
+				legitimacy_equivalent = 90
+			}
+		}
+	}
+	progress = {
+		modifier = {
+			factor = 1
+			NOT = { stability = 1 }
+		}
+		modifier = {
+			factor = 1
+			NOT = { legitimacy_equivalent = 80 }
+		}
+		modifier = {
+			factor = 1
+			war_exhaustion = 2
+		}
+		modifier = {
+			factor = 2
+			NOT = { stability = 0 }
+		}
+		modifier = {
+			factor = 2
+			is_bankrupt = yes
+		}
+		modifier = {
+			factor = 2
+			NOT = { ADM = 3 }
+		}
+		modifier = {
+			factor = 2
+			NOT = { DIP = 3 }
+		}
+		modifier = {
+			factor = 2
+			NOT = { MIL = 3 }
+		}
+		modifier = {
+			factor = 3
+			government = monarchy
+			has_heir = no
+		}
+		modifier = {
+			factor = 5
+			NOT = { government = monarchy }
+		}
+	}
+	can_end = {
+		hidden_trigger = {
+			has_country_flag = had_fee_zemene_mesafint
+		}
+		stability = 1
+		legitimacy_equivalent = 100
+		NOT = { num_of_rebel_armies = 1 }
+		NOT = { num_of_rebel_controlled_provinces = 1 }
+	}
+	modifier = {
+		global_unrest = 5
+		stability_cost_modifier = 0.5
+		global_autonomy = 0.03
+		tolerance_own = -3
+		technology_cost = 0.2
+		development_cost = 0.2
+	}
+
+	on_start = disaster_fee_zemene_mesafint.1
+	on_end = disaster_fee_zemene_mesafint.2
+
+	on_monthly = {
+		events = {
+		}
+		random_events = {
+			1000 = 0
+			100 = disaster_fee_zemene_mesafint.3
+			100 = disaster_fee_zemene_mesafint.4
+			200 = disaster_fee_zemene_mesafint.5
+			100 = disaster_fee_zemene_mesafint.6
+			75 = disaster_fee_zemene_mesafint.7
+			100 = disaster_fee_zemene_mesafint.8
+			200 = disaster_fee_zemene_mesafint.9
+		}
+	}
+}

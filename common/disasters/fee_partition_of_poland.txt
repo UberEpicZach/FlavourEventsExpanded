@@ -1,0 +1,154 @@
+fee_partition_of_poland = {
+	potential = {
+		OR = {
+			tag = PLC
+			AND = {
+				was_tag = PLC
+				NOT = { exists = PLC }
+			}
+			AND = {
+				tag = POL
+				NOT = { exists = PLC }
+			}
+			AND = {
+				was_tag = POL
+				NOT = { exists = POL }
+			}
+		}
+		NOT = { has_country_flag = had_fee_partition_of_poland }
+		OR = {
+			current_age = age_of_absolutism
+			current_age = age_of_revolutions
+		}
+		is_subject = no
+	}
+	can_start = {
+		has_any_disaster = no
+		calc_true_if = {
+			all_neighbor_country = {
+				fee_partition_of_poland_is_valid_neighbor_country = { disaster_target = ROOT }
+			}
+			amount = 2
+		}
+	}
+	can_stop = {
+		OR = {
+			has_any_disaster = yes
+			custom_trigger_tooltip = {
+				tooltip = FEE_PARTITION_OF_POLAND_NO_VALID_NEIGHBOR_COUNTRY_TT
+				NOT = {
+					any_neighbor_country = {
+						fee_partition_of_poland_is_valid_neighbor_country = { disaster_target = ROOT }
+					}
+				}
+			}
+		}
+	}
+	progress = {
+		modifier = {
+			factor = 1
+			custom_trigger_tooltip = {
+				tooltip = base_values
+				always = yes
+			}
+		}
+		modifier = {
+			factor = 1.5
+			custom_trigger_tooltip = {
+				tooltip = FEE_PARTITION_OF_POLAND_WAR_WITH_VALID_NEIGHBOR_COUNTRY_M10_WS_TT
+				any_neighbor_country = {
+					fee_partition_of_poland_is_valid_neighbor_country = { disaster_target = ROOT }
+					war_with = ROOT
+					is_in_war = {
+						participants = THIS
+						participants = ROOT
+						war_score = 10
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 3.5
+			custom_trigger_tooltip = {
+				tooltip = FEE_PARTITION_OF_POLAND_WAR_WITH_VALID_NEIGHBOR_COUNTRY_M25_WS_TT
+				any_neighbor_country = {
+					fee_partition_of_poland_is_valid_neighbor_country = { disaster_target = ROOT }
+					war_with = ROOT
+					is_in_war = {
+						participants = THIS
+						participants = ROOT
+						war_score = 25
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = -1
+			NOT = { has_reform = elective_monarchy }
+		}
+		modifier = {
+			factor = -2
+			custom_trigger_tooltip = {
+				tooltip = FEE_PARTITION_OF_POLAND_WAR_WITH_VALID_NEIGHBOR_COUNTRY_BETWEEN_25_WS_TT
+				any_neighbor_country = {
+					fee_partition_of_poland_is_valid_neighbor_country = { disaster_target = ROOT }
+					war_with = ROOT
+					NOT = {
+						is_in_war = {
+							participants = THIS
+							participants = ROOT
+							war_score = -24
+						}
+					}
+				}
+			}
+		}
+	}
+	can_end = {
+		custom_trigger_tooltip = {
+			tooltip = FEE_PARTITION_OF_POLAND_HAD_DISASTER_FOR_5_YEARS_TT
+			has_country_flag = had_fee_partition_of_poland
+			had_country_flag = { flag = had_fee_partition_of_poland days = 1825 }
+		}
+		stability = 2
+		is_bankrupt = no
+		NOT = { num_of_loans = 5 }
+		NOT = { corruption = 2 }
+		NOT = { num_of_rebel_armies = 1 }
+		NOT = { num_of_rebel_controlled_provinces = 1 }
+		custom_trigger_tooltip = {
+			tooltip = FEE_PARTITION_OF_POLAND_NO_VALID_NEIGHBOR_COUNTRY_TT
+			NOT = {
+				any_neighbor_country = {
+					fee_partition_of_poland_is_valid_neighbor_country = { disaster_target = ROOT }
+				}
+			}
+		}
+	}
+	modifier = {
+		discipline = -0.05
+		land_forcelimit_modifier = -0.25
+		all_power_cost = 0.1
+	}
+
+	on_start = disaster_fee_partition_of_poland.1
+	on_end = disaster_fee_partition_of_poland.2
+
+	on_monthly = {
+		events = {
+		}
+		random_events = {
+			1000 = 0
+			300 = disaster_fee_partition_of_poland.9
+			100 = disaster_fee_partition_of_poland.11
+			300 = disaster_fee_partition_of_poland.12
+			100 = disaster_fee_partition_of_poland.15
+			100 = disaster_fee_partition_of_poland.16
+			100 = disaster_fee_partition_of_poland.17
+			100 = disaster_fee_partition_of_poland.18
+			200 = disaster_fee_partition_of_poland.19
+			200 = disaster_fee_partition_of_poland.21
+			300 = disaster_fee_partition_of_poland.23
+		}
+	}
+}

@@ -1,0 +1,219 @@
+fee_division_of_the_habsburg_monarchy = {
+	potential = {
+		OR = {
+			tag = HAB
+			was_tag = HAB
+		}
+		NOT = { has_country_flag = had_fee_division_of_the_habsburg_monarchy }
+		OR = {
+			current_age = age_of_discovery
+			current_age = age_of_reformation
+		}
+		government = monarchy
+		is_free_or_tributary_trigger = yes
+		num_of_cities = 15
+		num_of_owned_provinces_with = {
+			value = 15
+			is_core = ROOT
+		}
+	}
+	can_start = {
+		current_age = age_of_reformation
+		has_any_disaster = no
+		NOT = { stability = 1 }
+		custom_trigger_tooltip = {
+			tooltip = FEE_DIVISION_OF_THE_HABSBURG_MONARCHY_RULING_HABSBURGS_TT
+			OR = {
+				dynasty = "von Habsburg"
+				AND = {
+					has_regency = yes
+					heir_dynasty = "von Habsburg"
+				}
+			}
+		}
+		OR = {
+			AND = {
+				ruler_age = 50
+				OR = {
+					has_heir = no
+					NOT = { heir_claim = 80 }
+				}
+			}
+			AND = {
+				NOT = { months_of_ruling = 60 }
+				calc_true_if = {
+					all_subject_country = {
+						OR = {
+							junior_union_with = ROOT
+							AND = {
+								is_expanded_mod_active = { mod = subjects }
+								is_subject_of_type = brother_kingdom
+							}
+						}
+					}
+					amount = 2
+					desc = FEE_DIVISION_OF_THE_HABSBURG_MONARCHY_HAS_PUS_TT
+				}
+			}
+			AND = {
+				has_regency = yes
+				OR = {
+					NOT = { legitimacy = 70 }
+					has_heir = no
+					AND = {
+						has_heir = yes
+						custom_trigger_tooltip = {
+							tooltip = FEE_DIVISION_OF_THE_HABSBURG_MONARCHY_HEIR_STATS_LESS_THAN_8_TT
+							OR = {
+								NOT = { heir_adm = 1 }
+								NOT = { heir_dip = 1 }
+								NOT = { heir_mil = 1 }
+								variable_arithmetic_trigger = {
+									export_to_variable = {
+										which = our_heir_stats
+										value = trigger_value:heir_adm
+									}
+									export_to_variable = {
+										which = our_heir_dip
+										value = trigger_value:heir_dip
+									}
+									export_to_variable = {
+										which = our_heir_mil
+										value = trigger_value:heir_mil
+									}
+									change_variable = { which = our_heir_stats which = our_heir_dip }
+									change_variable = { which = our_heir_stats which = our_heir_mil }
+									NOT = { check_variable = { which = our_heir_stats value = 8 } }
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	can_stop = {
+		OR = {
+			has_any_disaster = yes
+			NOT = { government = monarchy }
+			is_lesser_in_union = yes
+			custom_trigger_tooltip = {
+				tooltip = FEE_DIVISION_OF_THE_HABSBURG_MONARCHY_NOT_RULING_HABSBURGS_TT
+				NOT = { dynasty = "von Habsburg" }
+				OR = {
+					has_regency = no
+					NOT = { heir_dynasty = "von Habsburg" }
+				}
+			}
+		}
+	}
+	progress = {
+		modifier = {
+			factor = 3
+			NOT = { months_of_ruling = 60 }
+		}
+		modifier = {
+			factor = 2
+			NOT = { ADM = 3 }
+		}
+		modifier = {
+			factor = 2
+			NOT = { DIP = 3 }
+		}
+		modifier = {
+			factor = 2
+			NOT = { MIL = 3 }
+		}
+		modifier = {
+			factor = 1
+			NOT = { stability = 1 }
+		}
+		modifier = {
+			factor = 1
+			NOT = { stability = 0 }
+		}
+		modifier = {
+			factor = 1
+			NOT = { legitimacy = 90 }
+		}
+		modifier = {
+			factor = 1
+			has_heir = no
+		}
+	}
+	can_end = {
+		legitimacy = 100
+		is_bankrupt = no
+		NOT = { num_of_loans = 5 }
+		OR = {
+			AND = {
+				custom_trigger_tooltip = {
+					tooltip = HAD_FEE_DIVISION_OF_THE_HABSBURG_MONARCHY_FOR_15_YEARS_TT
+					has_country_flag = had_fee_division_of_the_habsburg_monarchy
+					had_country_flag = { flag = had_fee_division_of_the_habsburg_monarchy days = 5475 }
+				}
+				custom_trigger_tooltip = {
+					tooltip = FEE_DIVISION_OF_THE_HABSBURG_MONARCHY_OWNS_AUSTRIA_AND_OTHER_AREAS_TT
+					inner_austria_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					tirol_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					austria_proper_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					bohemia_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					transdanubia_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+			}
+			AND = {
+				custom_trigger_tooltip = {
+					tooltip = HAD_FEE_DIVISION_OF_THE_HABSBURG_MONARCHY_FOR_30_YEARS_TT
+					has_country_flag = had_fee_division_of_the_habsburg_monarchy
+					had_country_flag = { flag = had_fee_division_of_the_habsburg_monarchy days = 10950 }
+				}
+				custom_trigger_tooltip = {
+					tooltip = FEE_DIVISION_OF_THE_HABSBURG_MONARCHY_OWNS_AUSTRIA_TT
+					inner_austria_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					tirol_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+					austria_proper_area = {
+						type = all
+						country_or_non_sovereign_subject_holds = ROOT
+					}
+				}
+			}
+		}
+	}
+	modifier = {
+		imperial_authority_value = -0.1
+		land_morale = -0.1
+		stability_cost_modifier = 0.25
+		reduced_liberty_desire = -20
+	}
+
+	on_start = disaster_fee_division_of_the_habsburg_monarchy.1
+	on_end = disaster_fee_division_of_the_habsburg_monarchy.2
+
+	on_monthly = {
+		events = {
+		}
+		random_events = {
+		}
+	}
+}

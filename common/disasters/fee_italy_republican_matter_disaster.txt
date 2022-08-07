@@ -1,0 +1,119 @@
+fee_italy_republican_matter_disaster = {
+	potential = {
+		tag = ITA
+		italy_region = {
+			owned_by = ROOT
+		}
+		OR = {
+			is_year = 1600
+			current_age = age_of_absolutism
+			current_age = age_of_revolutions
+		}
+		NOT = { has_country_flag = fee_ita_republican_matter_subversed }
+	}
+	can_start = {
+		has_any_disaster = no
+	}
+	can_stop = {
+		has_any_disaster = yes
+		is_subject_other_than_tributary_trigger = yes
+	}
+	
+	down_progress = {
+		factor = 1
+	}
+	
+	progress = {
+		modifier = {
+			factor = -2
+			stability = 2
+		}
+		modifier = {
+			factor = -2
+			legitimacy_equivalent = 90
+		}
+		modifier = {
+			factor = 1
+			NOT = { stability = 1 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { has_parliament = yes }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { stability = -1 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { legitimacy_equivalent = 50 }
+		}
+		modifier = {
+			factor = 2
+			NOT = { government = monarchy }
+			NOT = { government = republic }
+		}
+		modifier = {
+			factor = 2
+			NOT = { stability = -2 }
+		}
+		modifier = {
+			factor = 2
+			war_exhaustion = 5
+		}
+		modifier = {
+			factor = 3
+			unrest = 3
+		}
+	}
+
+	can_end = {
+		stability = 1
+		is_at_war = no
+		NOT = {
+			italy_region = {
+				controlled_by = ita_republican_rebels
+			}
+		}
+		NOT = {
+			italy_region = {
+				controlled_by = ita_monarchy_rebels
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = ITA_DISASTER_REPUBLICAN_TT
+			OR = {
+				has_country_flag = fee_ita_republican_matter_subversed
+				had_country_flag = {
+					flag = ita_republican_matter
+					days = 5475
+				}
+			}
+		}
+	}
+	
+	modifier = {
+		reform_progress_growth = -0.50
+		stability_cost_modifier = 0.75
+		global_unrest = 5
+		prestige = -3
+		legitimacy = -2
+		republican_tradition = -1
+		devotion = -2
+		horde_unity = -2
+		meritocracy = -2
+	}
+
+	on_start = disaster_fee_italy_events.1
+	on_end = disaster_fee_italy_events.2
+	
+	on_monthly = {
+		events = {
+		}
+		random_events = {
+			1600 = 0
+			100 = disaster_fee_italy_events.3
+			100 = disaster_fee_italy_events.4 
+		}
+	}
+}

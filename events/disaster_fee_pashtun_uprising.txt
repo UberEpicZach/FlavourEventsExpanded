@@ -1,0 +1,511 @@
+namespace = disaster_fee_pashtun_uprising
+
+country_event = {
+	id = disaster_fee_pashtun_uprising.1
+	title = disaster_fee_pashtun_uprising.EVTNAME1
+	desc = disaster_fee_pashtun_uprising.EVTDESC1
+	picture = CIVIL_WAR_eventPicture
+
+	major = yes
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				save_event_target_as = rebel_province_1
+			}
+			random_owned_province = {
+				limit = {
+					is_capital = no
+				}
+				save_event_target_as = rebel_province_1
+			}
+			random_owned_province = {
+				limit = {
+					is_capital = no
+					is_island = no
+				}
+				save_event_target_as = rebel_province_1
+			}
+			random_owned_province = {
+				save_event_target_as = rebel_province_2
+			}
+			random_owned_province = {
+				save_event_target_as = rebel_province_3
+			}
+			random_owned_province = {
+				save_event_target_as = rebel_province_4
+			}
+			random_owned_province = {
+				limit = {
+					NOT = { province_id = event_target:rebel_province_1 }
+					NOT = { province_id = event_target:rebel_province_3 }
+					NOT = { province_id = event_target:rebel_province_4 }
+				}
+				save_event_target_as = rebel_province_2
+			}
+			random_owned_province = {
+				limit = {
+					NOT = { province_id = event_target:rebel_province_1 }
+					NOT = { province_id = event_target:rebel_province_2 }
+					NOT = { province_id = event_target:rebel_province_4 }
+				}
+				save_event_target_as = rebel_province_3
+			}
+			random_owned_province = {
+				limit = {
+					NOT = { province_id = event_target:rebel_province_1 }
+					NOT = { province_id = event_target:rebel_province_2 }
+					NOT = { province_id = event_target:rebel_province_3 }
+				}
+				save_event_target_as = rebel_province_4
+			}
+		}
+	}
+
+	option = {
+		name = disaster_fee_pashtun_uprising1.EVTOPT1
+
+		add_stability = -2
+		event_target:rebel_province_1 = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 3
+				leader = "Daulat Khan"
+				leader_dynasty = "Lodi"
+			}
+		}
+		event_target:rebel_province_2 = {
+			noble_rebels = 3
+		}
+		event_target:rebel_province_3 = {
+			noble_rebels = 3
+		}
+		event_target:rebel_province_4 = {
+			noble_rebels = 3
+		}
+		hidden_effect = {
+			set_country_flag = had_fee_pashtun_uprising
+		}
+	}
+}
+
+country_event = {
+	id = disaster_fee_pashtun_uprising.2
+	title = disaster_fee_pashtun_uprising.EVTNAME2
+	desc = disaster_fee_pashtun_uprising.EVTDESC2
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = disaster_fee_pashtun_uprising2.EVTOPT1
+
+		add_stability = 1
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+		add_legitimacy = 50
+		add_country_modifier = {
+			name = fee_pashtun_uprising_delhi_rule_confirmed
+			duration = 18250
+		}
+	}
+}
+
+country_event = {
+	id = disaster_fee_pashtun_uprising.3
+	title = disaster_fee_pashtun_uprising.EVTNAME3
+	desc = disaster_fee_pashtun_uprising.EVTDESC3
+	picture = TRADE_GOODS_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_country_modifier = fee_pashtun_uprising_abandoned_trade_routes }
+	}
+
+	option = {
+		name = disaster_fee_pashtun_uprising3.EVTOPT1
+
+		add_disaster_modifier = {
+			name = fee_pashtun_uprising_abandoned_trade_routes
+			duration = 3650
+			disaster = fee_pashtun_uprising
+		}
+	}
+}
+
+country_event = {
+	id = disaster_fee_pashtun_uprising.4
+	title = disaster_fee_pashtun_uprising.EVTNAME4
+	desc = disaster_fee_pashtun_uprising.EVTDESC4
+	picture = ANGRY_MOB_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				save_event_target_as = rebel_province_1
+			}
+			random_owned_province = {
+				save_event_target_as = rebel_province_2
+			}
+			random_owned_province = {
+				limit = {
+					NOT = { province_id = event_target:rebel_province_1 }
+				}
+				save_event_target_as = rebel_province_2
+			}
+		}
+	}
+
+	option = {
+		name = disaster_fee_pashtun_uprising4.EVTOPT1
+
+		event_target:rebel_province_1 = {
+			noble_rebels = 3
+		}
+		event_target:rebel_province_2 = {
+			noble_rebels = 3
+		}
+	}
+}
+
+country_event = {
+	id = disaster_fee_pashtun_uprising.5
+	title = disaster_fee_pashtun_uprising.EVTNAME5
+	desc = disaster_fee_pashtun_uprising.EVTDESC5
+	picture = OVEREXTENSION_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = disaster_fee_pashtun_uprising5.EVTOPT1
+
+		add_corruption = 2
+		add_inflation = 2
+	}
+}
+
+country_event = {
+	id = disaster_fee_pashtun_uprising.6
+	title = disaster_fee_pashtun_uprising.EVTNAME6
+	desc = disaster_fee_pashtun_uprising.EVTDESC6
+	picture = BAD_WITH_MONARCH_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = disaster_fee_pashtun_uprising6.EVTOPT1
+
+		add_stability = -2
+		if = {
+			limit = {
+				any_owned_province = {
+					has_owner_culture = no
+				}
+			}
+			every_owned_province = {
+				limit = {
+					has_owner_culture = no
+				}
+				add_nationalism = 10
+			}
+		}
+	}
+}
+
+country_event = {
+	id = disaster_fee_pashtun_uprising.7
+	title = disaster_fee_pashtun_uprising.EVTNAME7
+	desc = disaster_fee_pashtun_uprising.EVTDESC7
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				save_event_target_as = rebel_province_1
+			}
+			random_owned_province = {
+				save_event_target_as = rebel_province_2
+			}
+			random_owned_province = {
+				save_event_target_as = rebel_province_3
+			}
+			random_owned_province = {
+				limit = {
+					NOT = { province_id = event_target:rebel_province_1 }
+					NOT = { province_id = event_target:rebel_province_3 }
+				}
+				save_event_target_as = rebel_province_2
+			}
+			random_owned_province = {
+				limit = {
+					NOT = { province_id = event_target:rebel_province_1 }
+					NOT = { province_id = event_target:rebel_province_2 }
+				}
+				save_event_target_as = rebel_province_3
+			}
+		}
+	}
+
+	option = {
+		name = disaster_fee_pashtun_uprising7.EVTOPT1
+
+		add_stability = 1
+		add_legitimacy = -20
+		custom_tooltip = DISASTER_FEE_PASHTUN_UPRISING.7.TT
+		tooltip = {
+			add_province_modifier = {
+				name = fee_pashtun_uprising_pacified
+				duration = 7300
+			}
+		}
+		hidden_effect = {
+			every_owned_province = {
+				add_local_autonomy = 20
+				add_province_modifier = {
+					name = fee_pashtun_uprising_pacified
+					duration = 7300
+				}
+			}
+		}
+	}
+
+	option = {
+		name = disaster_fee_pashtun_uprising7.EVTOPT2
+
+		add_stability = -1
+		event_target:rebel_province_1 = {
+			noble_rebels = 2
+		}
+		event_target:rebel_province_2 = {
+			noble_rebels = 2
+		}
+		event_target:rebel_province_3 = {
+			noble_rebels = 2
+		}
+	}
+}
+
+country_event = {
+	id = disaster_fee_pashtun_uprising.8
+	title = disaster_fee_pashtun_uprising.EVTNAME8
+	desc = disaster_fee_pashtun_uprising.EVTDESC8
+	picture = ANGRY_MOB_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				save_event_target_as = rebel_province_1
+			}
+			random_owned_province = {
+				save_event_target_as = rebel_province_2
+			}
+			random_owned_province = {
+				save_event_target_as = rebel_province_3
+			}
+			random_owned_province = {
+				save_event_target_as = rebel_province_4
+			}
+			random_owned_province = {
+				limit = {
+					NOT = { province_id = event_target:rebel_province_1 }
+					NOT = { province_id = event_target:rebel_province_3 }
+					NOT = { province_id = event_target:rebel_province_4 }
+				}
+				save_event_target_as = rebel_province_2
+			}
+			random_owned_province = {
+				limit = {
+					NOT = { province_id = event_target:rebel_province_1 }
+					NOT = { province_id = event_target:rebel_province_2 }
+					NOT = { province_id = event_target:rebel_province_4 }
+				}
+				save_event_target_as = rebel_province_3
+			}
+			random_owned_province = {
+				limit = {
+					NOT = { province_id = event_target:rebel_province_1 }
+					NOT = { province_id = event_target:rebel_province_2 }
+					NOT = { province_id = event_target:rebel_province_3 }
+				}
+				save_event_target_as = rebel_province_4
+			}
+		}
+	}
+
+	option = {
+		name = disaster_fee_pashtun_uprising8.EVTOPT1
+
+		add_stability = -1
+		event_target:rebel_province_1 = {
+			anti_tax_rebels = 1
+		}
+		event_target:rebel_province_2 = {
+			anti_tax_rebels = 1
+		}
+		event_target:rebel_province_3 = {
+			hinduism_rebels = 1
+		}
+		event_target:rebel_province_4 = {
+			hinduism_rebels = 1
+		}
+	}
+}
+
+country_event = {
+	id = disaster_fee_pashtun_uprising.9
+	title = disaster_fee_pashtun_uprising.EVTNAME9
+	desc = disaster_fee_pashtun_uprising.EVTDESC9
+	picture = OVEREXTENSION_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = disaster_fee_pashtun_uprising9.EVTOPT1
+
+		add_corruption = 2
+	}
+}
+
+country_event = {
+	id = disaster_fee_pashtun_uprising.10
+	title = disaster_fee_pashtun_uprising.EVTNAME10
+	desc = disaster_fee_pashtun_uprising.EVTDESC10
+	picture = DIPLOMACY_eventPicture
+
+	fire_only_once = yes
+	hidden = yes
+	is_triggered_only = yes
+
+	trigger = {
+		owns = 522
+		exists = AFG
+		AFG = {
+			is_free_or_tributary_trigger = yes
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			AFG = {
+				country_event = { id = disaster_fee_pashtun_uprising.11 days = 1 }
+			}
+		}
+	}
+
+	option = {
+		name = disaster_fee_pashtun_uprising10.EVTOPT1
+
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = disaster_fee_pashtun_uprising.11
+	title = disaster_fee_pashtun_uprising.EVTNAME11
+	desc = disaster_fee_pashtun_uprising.EVTDESC11
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = disaster_fee_pashtun_uprising11.EVTOPT1
+
+		ai_chance = { factor = 0.8 }
+
+		add_country_modifier = {
+			name = fee_pashtun_uprising_invasion_of_india
+			duration = 1825
+		}
+		hidden_effect = {
+			522 = {
+				if = {
+					limit = {
+						NOT = { is_claim = ROOT }
+					}
+					add_claim = ROOT
+					set_province_flag = temp_claim_of_afg
+				}
+			}
+		}
+		declare_war_with_cb = {
+			who = FROM
+			casus_belli = cb_conquest
+			war_goal_province = 522
+		}
+		hidden_effect = {
+			522 = {
+				if = {
+					limit = {
+						has_province_flag = temp_claim_of_afg
+					}
+					clr_province_flag = temp_claim_of_afg
+					remove_claim = ROOT
+				}
+			}
+			FROM = {
+				country_event = { id = disaster_fee_pashtun_uprising.12 }
+			}
+		}
+	}
+
+	option = {
+		name = disaster_fee_pashtun_uprising11.EVTOPT2
+
+		ai_chance = { factor = 0.2 }
+
+		add_stability = 2
+		if = {
+			limit = {
+				has_estate = estate_nobles
+			}
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = -10
+			}
+		}
+	}
+}
+
+country_event = {
+	id = disaster_fee_pashtun_uprising.12
+	title = disaster_fee_pashtun_uprising.EVTNAME12
+	desc = disaster_fee_pashtun_uprising.EVTDESC12
+	picture = BATTLE_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = disaster_fee_pashtun_uprising12.EVTOPT1
+
+		tooltip = {
+			FROM = {
+				declare_war_with_cb = {
+					who = FROM
+					casus_belli = cb_conquest
+					war_goal_province = 522
+				}
+			}
+		}
+		if = {
+			limit = {
+				owns = 578
+				controls = 578
+			}
+			578 = {
+				change_controller = FROM
+			}
+		}
+	}
+}

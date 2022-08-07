@@ -1,0 +1,588 @@
+namespace = disaster_fee_crisis_of_the_mughal_empire
+
+country_event = {
+	id = disaster_fee_crisis_of_the_mughal_empire.1
+	title = disaster_fee_crisis_of_the_mughal_empire.EVTNAME1
+	desc = disaster_fee_crisis_of_the_mughal_empire.EVTDESC1
+	picture = BAD_WITH_MONARCH_eventPicture
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = disaster_fee_crisis_of_the_mughal_empire1.EVTOPT1
+
+		add_stability = -4
+		add_legitimacy = -30
+		set_country_flag = had_fee_crisis_of_the_mughal_empire
+	}
+}
+
+country_event = {
+	id = disaster_fee_crisis_of_the_mughal_empire.2
+	title = disaster_fee_crisis_of_the_mughal_empire.EVTNAME2
+	desc = disaster_fee_crisis_of_the_mughal_empire.EVTDESC2
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = disaster_fee_crisis_of_the_mughal_empire2.EVTOPT1
+
+		add_stability = 1
+		add_adm_power = 200
+		add_mil_power = 100
+	}
+}
+
+country_event = {
+	id = disaster_fee_crisis_of_the_mughal_empire.3
+	title = disaster_fee_crisis_of_the_mughal_empire.EVTNAME3
+	desc = disaster_fee_crisis_of_the_mughal_empire.EVTDESC3
+	picture = LAND_MILITARY_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = disaster_fee_crisis_of_the_mughal_empire3.EVTOPT1
+
+		add_disaster_modifier = {
+			name = fee_crisis_of_the_mughal_empire_weakened_army
+			duration = -1
+			disaster = fee_crisis_of_the_mughal_empire
+		}
+	}
+}
+
+country_event = {
+	id = disaster_fee_crisis_of_the_mughal_empire.4
+	title = disaster_fee_crisis_of_the_mughal_empire.EVTNAME4
+	desc = disaster_fee_crisis_of_the_mughal_empire.EVTDESC4
+	picture = ANGRY_MOB_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				save_event_target_as = rebel_province_1
+			}
+			random_owned_province = {
+				save_event_target_as = rebel_province_2
+			}
+			random_owned_province = {
+				save_event_target_as = rebel_province_3
+			}
+			random_owned_province = {
+				limit = {
+					NOT = { province_id = event_target:rebel_province_1 }
+					NOT = { province_id = event_target:rebel_province_3 }
+				}
+				save_event_target_as = rebel_province_2
+			}
+			random_owned_province = {
+				limit = {
+					NOT = { province_id = event_target:rebel_province_2 }
+					NOT = { province_id = event_target:rebel_province_3 }
+				}
+				save_event_target_as = rebel_province_1
+			}
+			random_owned_province = {
+				limit = {
+					culture = panjabi
+				}
+				save_event_target_as = sikh_rebel_province
+			}
+		}
+	}
+	option = {
+		name = disaster_fee_crisis_of_the_mughal_empire4.EVTOPT1
+
+		if = {
+			limit = {
+				has_estate = estate_brahmins
+			}
+			add_estate_loyalty = {
+				estate = estate_brahmins
+				loyalty = -10
+			}
+		}
+		event_target:rebel_province_1 = {
+			hinduism_rebels = 3
+		}
+		event_target:rebel_province_2 = {
+			hinduism_rebels = 3
+		}
+		event_target:rebel_province_3 = {
+			hinduism_rebels = 3
+		}
+		if = {
+			limit = {
+				has_saved_event_target = sikh_rebel_province
+			}
+			event_target:sikh_rebel_province = {
+				sikhism_rebels = 3
+			}
+		}
+	}
+}
+
+country_event = {
+	id = disaster_fee_crisis_of_the_mughal_empire.5
+	title = disaster_fee_crisis_of_the_mughal_empire.EVTNAME5
+	desc = disaster_fee_crisis_of_the_mughal_empire.EVTDESC5
+	picture = BATTLE_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = disaster_fee_crisis_of_the_mughal_empire5.EVTOPT1
+
+		add_army_tradition = -15
+		if = {
+			limit = {
+				has_estate = estate_rajput
+			}
+			add_estate_loyalty = {
+				estate = estate_rajput
+				loyalty = -10
+			}
+		}
+		else_if = {
+			limit = {
+				has_estate = estate_nobles
+			}
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = -10
+			}
+		}
+	}
+}
+
+country_event = {
+	id = disaster_fee_crisis_of_the_mughal_empire.6
+	title = disaster_fee_crisis_of_the_mughal_empire.EVTNAME6
+	desc = disaster_fee_crisis_of_the_mughal_empire.EVTDESC6
+	picture = OVEREXTENSION_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = disaster_fee_crisis_of_the_mughal_empire6.EVTOPT1
+
+		add_disaster_modifier = {
+			name = fee_crisis_of_the_mughal_empire_mughal_economic_collapse
+			duration = -1
+			disaster = fee_crisis_of_the_mughal_empire
+		}
+	}
+}
+
+country_event = {
+	id = disaster_fee_crisis_of_the_mughal_empire.7
+	title = disaster_fee_crisis_of_the_mughal_empire.EVTNAME7
+	desc = disaster_fee_crisis_of_the_mughal_empire.EVTDESC7
+	picture = ANGRY_MOB_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				save_event_target_as = rebel_province_1
+			}
+			random_owned_province = {
+				save_event_target_as = rebel_province_2
+			}
+			random_owned_province = {
+				save_event_target_as = rebel_province_3
+			}
+			random_owned_province = {
+				limit = {
+					NOT = { province_id = event_target:rebel_province_1 }
+					NOT = { province_id = event_target:rebel_province_3 }
+				}
+				save_event_target_as = rebel_province_2
+			}
+			random_owned_province = {
+				limit = {
+					NOT = { province_id = event_target:rebel_province_1 }
+					NOT = { province_id = event_target:rebel_province_2 }
+				}
+				save_event_target_as = rebel_province_3
+			}
+		}
+	}
+
+	option = {
+		name = disaster_fee_crisis_of_the_mughal_empire7.EVTOPT1
+
+		event_target:rebel_province_1 = {
+			anti_tax_rebels = 2
+		}
+		event_target:rebel_province_2 = {
+			anti_tax_rebels = 2
+		}
+		event_target:rebel_province_3 = {
+			anti_tax_rebels = 2
+		}
+	}
+}
+
+country_event = {
+	id = disaster_fee_crisis_of_the_mughal_empire.8
+	title = disaster_fee_crisis_of_the_mughal_empire.EVTNAME8
+	desc = disaster_fee_crisis_of_the_mughal_empire.EVTDESC8
+	picture = CORRUPTION_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = disaster_fee_crisis_of_the_mughal_empire8.EVTOPT1
+
+		add_years_of_income = -0.5
+		if = {
+			limit = {
+				has_estate = estate_jains
+			}
+			add_estate_loyalty = {
+				estate = estate_jains
+				loyalty = 10
+			}
+		}
+		else_if = {
+			limit = {
+				has_estate = estate_burghers
+			}
+			add_estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 10
+			}
+		}
+	}
+
+	option = {
+		name = disaster_fee_crisis_of_the_mughal_empire8.EVTOPT2
+
+		add_stability = -1
+		if = {
+			limit = {
+				has_estate = estate_jains
+			}
+			add_estate_loyalty = {
+				estate = estate_jains
+				loyalty = -10
+			}
+		}
+		else_if = {
+			limit = {
+				has_estate = estate_burghers
+			}
+			add_estate_loyalty = {
+				estate = estate_burghers
+				loyalty = -10
+			}
+		}
+	}
+}
+
+country_event = {
+	id = disaster_fee_crisis_of_the_mughal_empire.9
+	title = disaster_fee_crisis_of_the_mughal_empire.EVTNAME9
+	desc = disaster_fee_crisis_of_the_mughal_empire.EVTDESC9
+	picture = CONQUEST_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = disaster_fee_crisis_of_the_mughal_empire9.EVTOPT1
+
+		add_disaster_modifier = {
+			name = fee_crisis_of_the_mughal_empire_unpaid_army
+			duration = -1
+			disaster = fee_crisis_of_the_mughal_empire
+		}
+	}
+}
+
+country_event = {
+	id = disaster_fee_crisis_of_the_mughal_empire.10
+	title = disaster_fee_crisis_of_the_mughal_empire.EVTNAME10
+	desc = disaster_fee_crisis_of_the_mughal_empire.EVTDESC10
+	picture = BAD_WITH_MONARCH_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = disaster_fee_crisis_of_the_mughal_empire10.EVTOPT1
+
+		add_mil_power = -100
+	}
+}
+
+country_event = {
+	id = disaster_fee_crisis_of_the_mughal_empire.11
+	title = disaster_fee_crisis_of_the_mughal_empire.EVTNAME11
+	desc = disaster_fee_crisis_of_the_mughal_empire.EVTDESC11
+	picture = REVOLUTION_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { exists = RJP }
+		num_of_owned_provinces_with = {
+			value = 10
+			culture = rajput
+			is_capital = no
+			controlled_by = REB
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					culture = rajput
+					is_capital = no
+					controlled_by = REB
+				}
+				add_core = RJP
+				clear_rebels = yes
+			}
+			capital_scope = {
+				if = {
+					limit = {
+						is_core = RJP
+					}
+					remove_core = RJP
+				}
+			}
+			release = RJP
+			vassalize = RJP
+			RJP = {
+				capital_scope = {
+					build_to_forcelimit = {
+						infantry = 0.7
+						artillery = 0.3
+					}
+				}
+				add_treasury = 1000
+				add_manpower = 2
+				add_years_of_income = 15
+				add_yearly_manpower = 15
+				change_government = monarchy
+				adopt_reform_progress = ROOT
+				capital_scope = {
+					PREV = { change_religion = PREV }
+				}
+			}
+		}
+	}
+
+	option = {
+		name = disaster_fee_crisis_of_the_mughal_empire11.EVTOPT1
+
+		add_stability = -1
+		RJP = {
+			declare_war_with_cb = {
+				who = ROOT
+				casus_belli = cb_independence_war
+			}
+		}
+	}
+}
+
+country_event = {
+	id = disaster_fee_crisis_of_the_mughal_empire.12
+	title = disaster_fee_crisis_of_the_mughal_empire.EVTNAME12
+	desc = disaster_fee_crisis_of_the_mughal_empire.EVTDESC12
+	picture = RELIGIOUS_TURMOIL_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		religion_group = muslim
+	}
+
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				save_event_target_as = rebel_province_1
+			}
+			random_owned_province = {
+				limit = {
+					is_capital = no
+				}
+				save_event_target_as = rebel_province_1
+			}
+			random_owned_province = {
+				save_event_target_as = rebel_province_2
+			}
+			random_owned_province = {
+				limit = {
+					is_capital = no
+				}
+				save_event_target_as = rebel_province_2
+			}
+			random_owned_province = {
+				limit = {
+					is_capital = no
+					NOT = { province_id = event_target:rebel_province_1 }
+				}
+				save_event_target_as = rebel_province_2
+			}
+			random_owned_province = {
+				save_event_target_as = rebel_province_3
+			}
+			random_owned_province = {
+				limit = {
+					is_capital = no
+				}
+				save_event_target_as = rebel_province_3
+			}
+			random_owned_province = {
+				limit = {
+					is_capital = no
+					NOT = { province_id = event_target:rebel_province_2 }
+					NOT = { province_id = event_target:rebel_province_3 }
+				}
+				save_event_target_as = rebel_province_3
+			}
+		}
+	}
+
+	option = {
+		name = disaster_fee_crisis_of_the_mughal_empire12.EVTOPT1
+
+		add_stability_or_adm_power = yes
+		if = {
+			limit = {
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = -15
+			}
+		}
+		if = {
+			limit = {
+				has_estate = estate_brahmins
+			}
+			add_estate_loyalty = {
+				estate = estate_brahmins
+				loyalty = 15
+			}
+		}
+		capital_scope = {
+			sunni_rebels = 3
+		}
+	}
+
+	option = {
+		name = disaster_fee_crisis_of_the_mughal_empire12.EVTOPT2
+
+		add_stability = -1
+		if = {
+			limit = {
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = 10
+			}
+		}
+		if = {
+			limit = {
+				has_estate = estate_brahmins
+			}
+			add_estate_loyalty = {
+				estate = estate_brahmins
+				loyalty = -15
+			}
+		}
+		event_target:rebel_province_1 = {
+			particularist_rebels = 2
+		}
+		event_target:rebel_province_2 = {
+			particularist_rebels = 2
+		}
+		event_target:rebel_province_3 = {
+			particularist_rebels = 2
+		}
+	}
+}
+
+country_event = {
+	id = disaster_fee_crisis_of_the_mughal_empire.13
+	title = disaster_fee_crisis_of_the_mughal_empire.EVTNAME12
+	desc = disaster_fee_crisis_of_the_mughal_empire.EVTDESC13
+	picture = ANGRY_MOB_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				save_event_target_as = rebel_province_1
+			}
+			random_owned_province = {
+				save_event_target_as = rebel_province_2
+			}
+			random_owned_province = {
+				limit = {
+					NOT = { province_id = event_target:rebel_province_1 }
+				}
+				save_event_target_as = rebel_province_2
+			}
+		}
+	}
+
+	option = {
+		name = disaster_fee_crisis_of_the_mughal_empire13.EVTOPT1
+
+		event_target:rebel_province_1 = {
+			noble_rebels = 3
+		}
+		event_target:rebel_province_2 = {
+			noble_rebels = 3
+		}
+	}
+}
+
+country_event = {
+	id = disaster_fee_crisis_of_the_mughal_empire.14
+	title = disaster_fee_crisis_of_the_mughal_empire.EVTNAME14
+	desc = disaster_fee_crisis_of_the_mughal_empire.EVTDESC14
+	picture = BAD_WITH_MONARCH_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = disaster_fee_crisis_of_the_mughal_empire14.EVTOPT1
+
+		capital_scope = {
+			pretender_rebels = 3
+		}
+	}
+}
+
+country_event = {
+	id = disaster_fee_crisis_of_the_mughal_empire.15
+	title = disaster_fee_crisis_of_the_mughal_empire.EVTNAME15
+	desc = disaster_fee_crisis_of_the_mughal_empire.EVTDESC15
+	picture = CORRUPTION_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = disaster_fee_crisis_of_the_mughal_empire15.EVTOPT1
+
+		add_corruption = 2
+	}
+}

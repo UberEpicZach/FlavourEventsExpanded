@@ -1,0 +1,889 @@
+namespace = disaster_fee_zemene_mesafint
+
+country_event = {
+	id = disaster_fee_zemene_mesafint.1
+	title = disaster_fee_zemene_mesafint.EVTNAME1
+	desc = disaster_fee_zemene_mesafint.EVTDESC1
+	picture = CIVIL_WAR_eventPicture
+
+	major = yes
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				save_event_target_as = rebel_province_1
+			}
+			random_owned_province = {
+				save_event_target_as = rebel_province_2
+			}
+			random_owned_province = {
+				save_event_target_as = rebel_province_3
+			}
+			random_owned_province = {
+				save_event_target_as = rebel_province_4
+			}
+			random_owned_province = {
+				save_event_target_as = rebel_province_5
+			}
+			random_owned_province = {
+				save_event_target_as = rebel_province_6
+			}
+			random_owned_province = {
+				save_event_target_as = rebel_province_7
+			}
+			random_owned_province = {
+				save_event_target_as = rebel_province_8
+			}
+			random_owned_province = {
+				save_event_target_as = rebel_province_9
+			}
+			random_owned_province = {
+				save_event_target_as = rebel_province_10
+			}
+			random_owned_province = {
+				limit = {
+					NOT = { province_id = event_target:rebel_province_1 }
+					NOT = { province_id = event_target:rebel_province_3 }
+					NOT = { province_id = event_target:rebel_province_4 }
+					NOT = { province_id = event_target:rebel_province_5 }
+					NOT = { province_id = event_target:rebel_province_6 }
+					NOT = { province_id = event_target:rebel_province_7 }
+					NOT = { province_id = event_target:rebel_province_8 }
+					NOT = { province_id = event_target:rebel_province_9 }
+					NOT = { province_id = event_target:rebel_province_10 }
+				}
+				save_event_target_as = rebel_province_2
+			}
+			random_owned_province = {
+				limit = {
+					NOT = { province_id = event_target:rebel_province_1 }
+					NOT = { province_id = event_target:rebel_province_2 }
+					NOT = { province_id = event_target:rebel_province_4 }
+					NOT = { province_id = event_target:rebel_province_5 }
+					NOT = { province_id = event_target:rebel_province_6 }
+					NOT = { province_id = event_target:rebel_province_7 }
+					NOT = { province_id = event_target:rebel_province_8 }
+					NOT = { province_id = event_target:rebel_province_9 }
+					NOT = { province_id = event_target:rebel_province_10 }
+				}
+				save_event_target_as = rebel_province_3
+			}
+			random_owned_province = {
+				limit = {
+					NOT = { province_id = event_target:rebel_province_1 }
+					NOT = { province_id = event_target:rebel_province_2 }
+					NOT = { province_id = event_target:rebel_province_3 }
+					NOT = { province_id = event_target:rebel_province_5 }
+					NOT = { province_id = event_target:rebel_province_6 }
+					NOT = { province_id = event_target:rebel_province_7 }
+					NOT = { province_id = event_target:rebel_province_8 }
+					NOT = { province_id = event_target:rebel_province_9 }
+					NOT = { province_id = event_target:rebel_province_10 }
+				}
+				save_event_target_as = rebel_province_4
+			}
+			random_owned_province = {
+				limit = {
+					NOT = { province_id = event_target:rebel_province_1 }
+					NOT = { province_id = event_target:rebel_province_2 }
+					NOT = { province_id = event_target:rebel_province_3 }
+					NOT = { province_id = event_target:rebel_province_4 }
+					NOT = { province_id = event_target:rebel_province_6 }
+					NOT = { province_id = event_target:rebel_province_7 }
+					NOT = { province_id = event_target:rebel_province_8 }
+					NOT = { province_id = event_target:rebel_province_9 }
+					NOT = { province_id = event_target:rebel_province_10 }
+				}
+				save_event_target_as = rebel_province_5
+			}
+			random_owned_province = {
+				limit = {
+					NOT = { province_id = event_target:rebel_province_1 }
+					NOT = { province_id = event_target:rebel_province_2 }
+					NOT = { province_id = event_target:rebel_province_3 }
+					NOT = { province_id = event_target:rebel_province_4 }
+					NOT = { province_id = event_target:rebel_province_5 }
+					NOT = { province_id = event_target:rebel_province_7 }
+					NOT = { province_id = event_target:rebel_province_8 }
+					NOT = { province_id = event_target:rebel_province_9 }
+					NOT = { province_id = event_target:rebel_province_10 }
+				}
+				save_event_target_as = rebel_province_6
+			}
+			random_owned_province = {
+				limit = {
+					NOT = { province_id = event_target:rebel_province_1 }
+					NOT = { province_id = event_target:rebel_province_2 }
+					NOT = { province_id = event_target:rebel_province_3 }
+					NOT = { province_id = event_target:rebel_province_4 }
+					NOT = { province_id = event_target:rebel_province_5 }
+					NOT = { province_id = event_target:rebel_province_6 }
+					NOT = { province_id = event_target:rebel_province_8 }
+					NOT = { province_id = event_target:rebel_province_9 }
+					NOT = { province_id = event_target:rebel_province_10 }
+				}
+				save_event_target_as = rebel_province_7
+			}
+			random_owned_province = {
+				limit = {
+					NOT = { province_id = event_target:rebel_province_1 }
+					NOT = { province_id = event_target:rebel_province_2 }
+					NOT = { province_id = event_target:rebel_province_3 }
+					NOT = { province_id = event_target:rebel_province_4 }
+					NOT = { province_id = event_target:rebel_province_5 }
+					NOT = { province_id = event_target:rebel_province_6 }
+					NOT = { province_id = event_target:rebel_province_7 }
+					NOT = { province_id = event_target:rebel_province_9 }
+					NOT = { province_id = event_target:rebel_province_10 }
+				}
+				save_event_target_as = rebel_province_8
+			}
+			random_owned_province = {
+				limit = {
+					NOT = { province_id = event_target:rebel_province_1 }
+					NOT = { province_id = event_target:rebel_province_2 }
+					NOT = { province_id = event_target:rebel_province_3 }
+					NOT = { province_id = event_target:rebel_province_4 }
+					NOT = { province_id = event_target:rebel_province_5 }
+					NOT = { province_id = event_target:rebel_province_6 }
+					NOT = { province_id = event_target:rebel_province_7 }
+					NOT = { province_id = event_target:rebel_province_8 }
+					NOT = { province_id = event_target:rebel_province_10 }
+				}
+				save_event_target_as = rebel_province_9
+			}
+			random_owned_province = {
+				limit = {
+					NOT = { province_id = event_target:rebel_province_1 }
+					NOT = { province_id = event_target:rebel_province_2 }
+					NOT = { province_id = event_target:rebel_province_3 }
+					NOT = { province_id = event_target:rebel_province_4 }
+					NOT = { province_id = event_target:rebel_province_5 }
+					NOT = { province_id = event_target:rebel_province_6 }
+					NOT = { province_id = event_target:rebel_province_7 }
+					NOT = { province_id = event_target:rebel_province_8 }
+					NOT = { province_id = event_target:rebel_province_9 }
+				}
+				save_event_target_as = rebel_province_10
+			}
+		}
+	}
+
+	option = {
+		name = disaster_fee_zemene_mesafint1.EVTOPT1
+
+		set_country_flag = had_fee_zemene_mesafint
+		add_stability = -2
+		event_target:rebel_province_1 = {
+			noble_rebels = 2
+		}
+		event_target:rebel_province_2 = {
+			noble_rebels = 2
+		}
+		event_target:rebel_province_3 = {
+			noble_rebels = 2
+		}
+		event_target:rebel_province_4 = {
+			noble_rebels = 2
+		}
+		event_target:rebel_province_5 = {
+			noble_rebels = 2
+		}
+		event_target:rebel_province_6 = {
+			noble_rebels = 2
+		}
+		event_target:rebel_province_7 = {
+			noble_rebels = 2
+		}
+		event_target:rebel_province_8 = {
+			noble_rebels = 2
+		}
+		event_target:rebel_province_9 = {
+			noble_rebels = 2
+		}
+		event_target:rebel_province_10 = {
+			noble_rebels = 2
+		}
+	}
+}
+
+
+country_event = {
+	id = disaster_fee_zemene_mesafint.2
+	title = disaster_fee_zemene_mesafint.EVTNAME2
+	desc = disaster_fee_zemene_mesafint.EVTDESC2
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = disaster_fee_zemene_mesafint2.EVTOPT1
+
+		add_stability = 1
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+		add_country_modifier = {
+			name = fee_zemene_mesafint_modern_empire
+			duration = -1
+		}
+	}
+}
+
+country_event = {
+	id = disaster_fee_zemene_mesafint.3
+	title = disaster_fee_zemene_mesafint.EVTNAME3
+	desc = disaster_fee_zemene_mesafint.EVTDESC3
+	picture = ANGRY_MOB_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				save_event_target_as = rebel_province_1
+			}
+			random_owned_province = {
+				save_event_target_as = rebel_province_2
+			}
+			random_owned_province = {
+				save_event_target_as = rebel_province_3
+			}
+			random_owned_province = {
+				save_event_target_as = rebel_province_4
+			}
+			random_owned_province = {
+				save_event_target_as = rebel_province_5
+			}
+			random_owned_province = {
+				save_event_target_as = rebel_province_6
+			}
+			random_owned_province = {
+				save_event_target_as = rebel_province_7
+			}
+			random_owned_province = {
+				save_event_target_as = rebel_province_8
+			}
+			random_owned_province = {
+				save_event_target_as = rebel_province_9
+			}
+			random_owned_province = {
+				save_event_target_as = rebel_province_10
+			}
+			random_owned_province = {
+				limit = {
+					NOT = { province_id = event_target:rebel_province_1 }
+					NOT = { province_id = event_target:rebel_province_3 }
+					NOT = { province_id = event_target:rebel_province_4 }
+					NOT = { province_id = event_target:rebel_province_5 }
+					NOT = { province_id = event_target:rebel_province_6 }
+					NOT = { province_id = event_target:rebel_province_7 }
+					NOT = { province_id = event_target:rebel_province_8 }
+					NOT = { province_id = event_target:rebel_province_9 }
+					NOT = { province_id = event_target:rebel_province_10 }
+				}
+				save_event_target_as = rebel_province_2
+			}
+			random_owned_province = {
+				limit = {
+					NOT = { province_id = event_target:rebel_province_1 }
+					NOT = { province_id = event_target:rebel_province_2 }
+					NOT = { province_id = event_target:rebel_province_4 }
+					NOT = { province_id = event_target:rebel_province_5 }
+					NOT = { province_id = event_target:rebel_province_6 }
+					NOT = { province_id = event_target:rebel_province_7 }
+					NOT = { province_id = event_target:rebel_province_8 }
+					NOT = { province_id = event_target:rebel_province_9 }
+					NOT = { province_id = event_target:rebel_province_10 }
+				}
+				save_event_target_as = rebel_province_3
+			}
+			random_owned_province = {
+				limit = {
+					NOT = { province_id = event_target:rebel_province_1 }
+					NOT = { province_id = event_target:rebel_province_2 }
+					NOT = { province_id = event_target:rebel_province_3 }
+					NOT = { province_id = event_target:rebel_province_5 }
+					NOT = { province_id = event_target:rebel_province_6 }
+					NOT = { province_id = event_target:rebel_province_7 }
+					NOT = { province_id = event_target:rebel_province_8 }
+					NOT = { province_id = event_target:rebel_province_9 }
+					NOT = { province_id = event_target:rebel_province_10 }
+				}
+				save_event_target_as = rebel_province_4
+			}
+			random_owned_province = {
+				limit = {
+					NOT = { province_id = event_target:rebel_province_1 }
+					NOT = { province_id = event_target:rebel_province_2 }
+					NOT = { province_id = event_target:rebel_province_3 }
+					NOT = { province_id = event_target:rebel_province_4 }
+					NOT = { province_id = event_target:rebel_province_6 }
+					NOT = { province_id = event_target:rebel_province_7 }
+					NOT = { province_id = event_target:rebel_province_8 }
+					NOT = { province_id = event_target:rebel_province_9 }
+					NOT = { province_id = event_target:rebel_province_10 }
+				}
+				save_event_target_as = rebel_province_5
+			}
+			random_owned_province = {
+				limit = {
+					NOT = { province_id = event_target:rebel_province_1 }
+					NOT = { province_id = event_target:rebel_province_2 }
+					NOT = { province_id = event_target:rebel_province_3 }
+					NOT = { province_id = event_target:rebel_province_4 }
+					NOT = { province_id = event_target:rebel_province_5 }
+					NOT = { province_id = event_target:rebel_province_7 }
+					NOT = { province_id = event_target:rebel_province_8 }
+					NOT = { province_id = event_target:rebel_province_9 }
+					NOT = { province_id = event_target:rebel_province_10 }
+				}
+				save_event_target_as = rebel_province_6
+			}
+			random_owned_province = {
+				limit = {
+					NOT = { province_id = event_target:rebel_province_1 }
+					NOT = { province_id = event_target:rebel_province_2 }
+					NOT = { province_id = event_target:rebel_province_3 }
+					NOT = { province_id = event_target:rebel_province_4 }
+					NOT = { province_id = event_target:rebel_province_5 }
+					NOT = { province_id = event_target:rebel_province_6 }
+					NOT = { province_id = event_target:rebel_province_8 }
+					NOT = { province_id = event_target:rebel_province_9 }
+					NOT = { province_id = event_target:rebel_province_10 }
+				}
+				save_event_target_as = rebel_province_7
+			}
+			random_owned_province = {
+				limit = {
+					NOT = { province_id = event_target:rebel_province_1 }
+					NOT = { province_id = event_target:rebel_province_2 }
+					NOT = { province_id = event_target:rebel_province_3 }
+					NOT = { province_id = event_target:rebel_province_4 }
+					NOT = { province_id = event_target:rebel_province_5 }
+					NOT = { province_id = event_target:rebel_province_6 }
+					NOT = { province_id = event_target:rebel_province_7 }
+					NOT = { province_id = event_target:rebel_province_9 }
+					NOT = { province_id = event_target:rebel_province_10 }
+				}
+				save_event_target_as = rebel_province_8
+			}
+			random_owned_province = {
+				limit = {
+					NOT = { province_id = event_target:rebel_province_1 }
+					NOT = { province_id = event_target:rebel_province_2 }
+					NOT = { province_id = event_target:rebel_province_3 }
+					NOT = { province_id = event_target:rebel_province_4 }
+					NOT = { province_id = event_target:rebel_province_5 }
+					NOT = { province_id = event_target:rebel_province_6 }
+					NOT = { province_id = event_target:rebel_province_7 }
+					NOT = { province_id = event_target:rebel_province_8 }
+					NOT = { province_id = event_target:rebel_province_10 }
+				}
+				save_event_target_as = rebel_province_9
+			}
+			random_owned_province = {
+				limit = {
+					NOT = { province_id = event_target:rebel_province_1 }
+					NOT = { province_id = event_target:rebel_province_2 }
+					NOT = { province_id = event_target:rebel_province_3 }
+					NOT = { province_id = event_target:rebel_province_4 }
+					NOT = { province_id = event_target:rebel_province_5 }
+					NOT = { province_id = event_target:rebel_province_6 }
+					NOT = { province_id = event_target:rebel_province_7 }
+					NOT = { province_id = event_target:rebel_province_8 }
+					NOT = { province_id = event_target:rebel_province_9 }
+				}
+				save_event_target_as = rebel_province_10
+			}
+		}
+	}
+
+	option = {
+		name = disaster_fee_zemene_mesafint3.EVTOPT1
+
+		event_target:rebel_province_1 = {
+			noble_rebels = 2
+		}
+		event_target:rebel_province_2 = {
+			noble_rebels = 2
+		}
+		event_target:rebel_province_3 = {
+			noble_rebels = 2
+		}
+		event_target:rebel_province_4 = {
+			noble_rebels = 2
+		}
+		event_target:rebel_province_5 = {
+			noble_rebels = 2
+		}
+		event_target:rebel_province_6 = {
+			noble_rebels = 2
+		}
+		event_target:rebel_province_7 = {
+			noble_rebels = 2
+		}
+		event_target:rebel_province_8 = {
+			noble_rebels = 2
+		}
+		event_target:rebel_province_9 = {
+			noble_rebels = 2
+		}
+		event_target:rebel_province_10 = {
+			noble_rebels = 2
+		}
+		if = {
+			limit = {
+				has_estate = estate_nobles
+			}
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = -10
+			}
+			add_estate_influence_modifier = {
+				estate = estate_nobles
+				desc = EST_VAL_FEE_ZEMENE_MESAFINT_REFUSED_RIGHTS
+				influence = -5
+				duration = 7300
+			}
+		}
+	}
+
+	option = {
+		name = disaster_fee_zemene_mesafint3.EVTOPT2
+
+		add_dip_power = -100
+		if = {
+			limit = {
+				has_estate = estate_nobles
+			}
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 10
+			}
+			add_estate_influence_modifier = {
+				estate = estate_nobles
+				desc = EST_VAL_FEE_ZEMENE_MESAFINT_NEGOTIATIONS
+				influence = 5
+				duration = 7300
+			}
+		}
+		custom_tooltip = FEE_ZEMENE_MESAFINT_10_AUTONOMY_IN_EVERY_CORE_TT
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					is_core = ROOT
+				}
+				add_local_autonomy = 10
+			}
+		}
+	}
+
+	option = {
+		name = disaster_fee_zemene_mesafint3.EVTOPT3
+
+		if = {
+			limit = {
+				has_estate = estate_nobles
+			}
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 15
+			}
+			add_estate_influence_modifier = {
+				estate = estate_nobles
+				desc = EST_VAL_FEE_ZEMENE_MESAFINT_FULLFILLED_DEMANDS
+				influence = 10
+				duration = 7300
+			}
+		}
+		custom_tooltip = FEE_ZEMENE_MESAFINT_20_AUTONOMY_IN_EVERY_CORE_TT
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					is_core = ROOT
+				}
+				add_local_autonomy = 20
+			}
+		}
+	}
+}
+
+country_event = {
+	id = disaster_fee_zemene_mesafint.4
+	title = disaster_fee_zemene_mesafint.EVTNAME4
+	desc = disaster_fee_zemene_mesafint.EVTDESC4
+	picture = BAD_WITH_MONARCH_eventPictue
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				save_event_target_as = rebel_province
+			}
+			random_owned_province = {
+				limit = {
+					is_capital = no
+				}
+				save_event_target_as = rebel_province
+			}
+			random_owned_province = {
+				limit = {
+					is_capital = no
+					is_island = no
+				}
+				save_event_target_as = rebel_province
+			}
+		}
+	}
+
+	option = {
+		name = disaster_fee_zemene_mesafint4.EVTOPT1
+
+		event_target:rebel_province = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 3
+				leader_dynasty = "Solomonid"
+			}
+		}
+	}
+}
+
+country_event = {
+	id = disaster_fee_zemene_mesafint.5
+	title = disaster_fee_zemene_mesafint.EVTNAME5
+	desc = disaster_fee_zemene_mesafint.EVTDESC5
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = disaster_fee_zemene_mesafint5.EVTOPT1
+
+		define_ruler = {
+			name = "Mentewab"
+			dynasty = "Solomonid"
+			age = 24
+			ADM = 5
+			DIP = 5
+			MIL = 5
+			female = yes
+		}
+		set_ruler_flag = fee_zemene_mesafint_mentewab
+		if = {
+			limit = {
+				has_dlc = "Rights of Man"
+			}
+			add_ruler_personality = lawgiver_personality
+			add_ruler_personality = architectural_visionary_personality
+			add_ruler_personality = calm_personality
+		}
+		add_legitimacy_equivalent = { amount = -20 republican_tradition = -10 }
+	}
+
+	option = {
+		name = disaster_fee_zemene_mesafint5.EVTOPT2
+
+		add_legitimacy_equivalent = { amount = 20 republican_tradition = 10 }
+		add_prestige = 10
+	}
+}
+
+country_event = {
+	id = disaster_fee_zemene_mesafint.6
+	title = disaster_fee_zemene_mesafint.EVTNAME6
+	desc = disaster_fee_zemene_mesafint.EVTDESC6
+	picture = SIEGE_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		any_owned_province = {
+			has_owner_culture = no
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					has_owner_culture = no
+				}
+				save_event_target_as = target_province_1
+			}
+			random_owned_province = {
+				limit = {
+					has_owner_culture = no
+				}
+				save_event_target_as = target_province_2
+			}
+			random_owned_province = {
+				limit = {
+					has_owner_culture = no
+				}
+				save_event_target_as = target_province_3
+			}
+			random_owned_province = {
+				limit = {
+					has_owner_culture = no
+				}
+				save_event_target_as = target_province_4
+			}
+			random_owned_province = {
+				limit = {
+					has_owner_culture = no
+				}
+				save_event_target_as = target_province_5
+			}
+			random_owned_province = {
+				limit = {
+					has_owner_culture = no
+					NOT = { province_id = event_target:target_province_1 }
+					NOT = { province_id = event_target:target_province_3 }
+					NOT = { province_id = event_target:target_province_4 }
+					NOT = { province_id = event_target:target_province_5 }
+				}
+				save_event_target_as = target_province_2
+			}
+			random_owned_province = {
+				limit = {
+					has_owner_culture = no
+					NOT = { province_id = event_target:target_province_1 }
+					NOT = { province_id = event_target:target_province_2 }
+					NOT = { province_id = event_target:target_province_4 }
+					NOT = { province_id = event_target:target_province_5 }
+				}
+				save_event_target_as = target_province_3
+			}
+			random_owned_province = {
+				limit = {
+					has_owner_culture = no
+					NOT = { province_id = event_target:target_province_1 }
+					NOT = { province_id = event_target:target_province_2 }
+					NOT = { province_id = event_target:target_province_3 }
+					NOT = { province_id = event_target:target_province_5 }
+				}
+				save_event_target_as = target_province_4
+			}
+			random_owned_province = {
+				limit = {
+					has_owner_culture = no
+					NOT = { province_id = event_target:target_province_1 }
+					NOT = { province_id = event_target:target_province_2 }
+					NOT = { province_id = event_target:target_province_3 }
+					NOT = { province_id = event_target:target_province_4 }
+				}
+				save_event_target_as = target_province_5
+			}
+		}
+	}
+
+	option = {
+		name = disaster_fee_zemene_mesafint6.EVTOPT1
+
+		event_target:target_province_1 = {
+			add_nationalism = 10
+		}
+		event_target:target_province_2 = {
+			add_nationalism = 10
+		}
+		event_target:target_province_3 = {
+			add_nationalism = 10
+		}
+		event_target:target_province_4 = {
+			add_nationalism = 10
+		}
+		event_target:target_province_5 = {
+			add_nationalism = 10
+		}
+	}
+}
+
+country_event = {
+	id = disaster_fee_zemene_mesafint.7
+	title = disaster_fee_zemene_mesafint.7.t
+	desc = disaster_fee_zemene_mesafint.7.d
+	picture = ASSASSINATION_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_ruler_flag = fee_zemene_mesafint_mentewab }
+	}
+
+	option = {
+		name = disaster_fee_zemene_mesafint7.EVTOPT1
+
+		tooltip = {
+			kill_ruler = yes
+		}
+		hidden_effect = {
+			kill_heir = { allow_new_heir = no }
+		}
+		define_ruler = {
+			dynasty = Solomonid
+		}
+		add_stability = -1
+		add_legitimacy_equivalent = { amount = -20 republican_tradition = -10 }
+	}
+}
+
+country_event = {
+	id = disaster_fee_zemene_mesafint.8
+	title = disaster_fee_zemene_mesafint.EVTNAME8
+	desc = disaster_fee_zemene_mesafint.EVTDESC8
+	picture = COURT_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		absolutism = 10
+	}
+
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				save_event_target_as = rebel_province_1
+			}
+			random_owned_province = {
+				save_event_target_as = rebel_province_2
+			}
+			random_owned_province = {
+				limit = {
+					NOT = { province_id = event_target:rebel_province_1 }
+				}
+				save_event_target_as = rebel_province_2
+			}
+		}
+	}
+
+	option = {
+		name = disaster_fee_zemene_mesafint8.EVTOPT1
+
+		add_absolutism = -20
+	}
+
+	option = {
+		name = disaster_fee_zemene_mesafint8.EVTOPT2
+
+		add_stability = -1
+		event_target:rebel_province_1 = {
+			noble_rebels = 2
+		}
+		event_target:rebel_province_2 = {
+			noble_rebels = 2
+		}
+	}
+}
+
+country_event = {
+	id = disaster_fee_zemene_mesafint.9
+	title = disaster_fee_zemene_mesafint.EVTNAME9
+	desc = disaster_fee_zemene_mesafint.EVTDESC9
+	picture = BATTLE_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				save_event_target_as = rebel_province_1
+			}
+			random_owned_province = {
+				limit = {
+					is_capital = no
+				}
+				save_event_target_as = rebel_province_1
+			}
+			random_owned_province = {
+				limit = {
+					is_capital = no
+					is_island = no
+				}
+				save_event_target_as = rebel_province_1
+			}
+			random_owned_province = {
+				save_event_target_as = rebel_province_2
+			}
+			random_owned_province = {
+				limit = {
+					NOT = { province_id = event_target:rebel_province_1 }
+				}
+				save_event_target_as = rebel_province_2
+			}
+			random_owned_province = {
+				limit = {
+					NOT = { province_id = event_target:rebel_province_1 }
+					is_capital = no
+				}
+				save_event_target_as = rebel_province_2
+			}
+			random_owned_province = {
+				limit = {
+					NOT = { province_id = event_target:rebel_province_1 }
+					is_capital = no
+					is_island = no
+				}
+				save_event_target_as = rebel_province_2
+			}
+			random_owned_province = {
+				save_event_target_as = rebel_province_3
+			}
+			random_owned_province = {
+				limit = {
+					NOT = { province_id = event_target:rebel_province_1 }
+					NOT = { province_id = event_target:rebel_province_2 }
+				}
+				save_event_target_as = rebel_province_3
+			}
+			random_owned_province = {
+				limit = {
+					NOT = { province_id = event_target:rebel_province_1 }
+					NOT = { province_id = event_target:rebel_province_2 }
+					is_capital = no
+				}
+				save_event_target_as = rebel_province_3
+			}
+			random_owned_province = {
+				limit = {
+					NOT = { province_id = event_target:rebel_province_1 }
+					NOT = { province_id = event_target:rebel_province_2 }
+					is_capital = no
+					is_island = no
+				}
+				save_event_target_as = rebel_province_3
+			}
+		}
+	}
+
+	option = {
+		name = disaster_fee_zemene_mesafint9.EVTOPT1
+
+		add_legitimacy_equivalent = { amount = -20 republican_tradition = -10 }
+		add_disaster_modifier = {
+			name = fee_zemene_mesafint_wara_sheh_dynasty
+			duration = 18250
+			disaster = fee_zemene_mesafint
+		}
+	}
+
+	option = {
+		name = disaster_fee_zemene_mesafint9.EVTOPT2
+
+		event_target:rebel_province_pretender_1 = {
+			pretender_rebels = 2
+		}
+		event_target:rebel_province_pretender_2 = {
+			pretender_rebels = 2
+		}
+		event_target:rebel_province_pretender_3 = {
+			pretender_rebels = 2
+		}
+	}
+}
