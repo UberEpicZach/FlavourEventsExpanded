@@ -28,6 +28,18 @@ fee_decline_of_the_ottomans_greece_opinion = {
 	max = 100
 }
 
+fee_decline_of_the_ottomans_aided_us_opinion = {
+	opinion = 50
+	yearly_decay = 2
+	max = 50
+}
+
+fee_decline_of_the_ottomans_sent_aid_opinion = {
+	opinion = 100
+	yearly_decay = 2
+	max = 100
+}
+
 fee_division_of_the_habsburg_monarchy_acceptance = {
 	opinion = 100
 	yearly_decay = 2

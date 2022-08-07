@@ -10,9 +10,24 @@ fee_decline_of_the_ottomans = {
 		is_free_or_tributary_trigger = yes
 		has_reform = monarchy_mechanic
 		religion_group = muslim
-		NOT = { exists = MAM }
 		NOT = { exists = RUM }
 		NOT = { exists = BYZ }
+		delta_area = {
+			type = all
+			owned_by = ROOT
+		}
+		al_wahat_area = {
+			type = all
+			owned_by = ROOT
+		}
+		bahari_area = {
+			type = all
+			owned_by = ROOT
+		}
+		gulf_of_arabia_area = {
+			type = all
+			owned_by = ROOT
+		}
 	}
 	can_start = {
 		has_any_disaster = no
@@ -73,17 +88,29 @@ fee_decline_of_the_ottomans = {
 		}
 	}
 	can_end = {
-		custom_trigger_tooltip = {
-			tooltip = HAD_FEE_DECLINE_OF_THE_OTTOMANS_FOR_15_YEARS_TT
-			has_country_flag = had_fee_decline_of_the_ottomans
-			had_country_flag = { flag = had_fee_decline_of_the_ottomans days = 5475 }
+		OR = {
+			AND = {
+				custom_trigger_tooltip = {
+					tooltip = HAD_FEE_DECLINE_OF_THE_OTTOMANS_FOR_15_YEARS_TT
+					has_country_flag = had_fee_decline_of_the_ottomans
+					had_country_flag = { flag = had_fee_decline_of_the_ottomans days = 5475 }
+				}
+				stability = 3
+				NOT = { corruption = 2 }
+				NOT = { num_of_loans = 5 }
+				is_bankrupt = no
+				NOT = { num_of_rebel_armies = 1 }
+				NOT = { num_of_rebel_controlled_provinces = 1 }
+			}
+			NOT = {
+				any_owned_province = {
+					OR = {
+						region = anatolia_region
+						province_id = 151
+					}
+				}
+			}
 		}
-		stability = 3
-		NOT = { corruption = 2 }
-		NOT = { num_of_loans = 5 }
-		is_bankrupt = no
-		NOT = { num_of_rebel_armies = 1 }
-		NOT = { num_of_rebel_controlled_provinces = 1 }
 	}
 	modifier = {
 		stability_cost_modifier = 0.2
@@ -121,6 +148,8 @@ fee_decline_of_the_ottomans = {
 			100 = disaster_fee_decline_of_the_ottomans.20
 			50 = disaster_fee_decline_of_the_ottomans.21
 			50 = disaster_fee_decline_of_the_ottomans.22
+			100 = disaster_fee_decline_of_the_ottomans.27
+			50 = disaster_fee_decline_of_the_ottomans.28
 		}
 	}
 }
