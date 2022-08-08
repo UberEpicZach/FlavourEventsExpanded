@@ -1415,6 +1415,7 @@ country_event = {
 		add_country_modifier = {
 			name = fee_ven_turko_venetian_wars
 			duration = -1
+			desc = FEE_UNTIL_WARS_ENDS_TT
 		}
 		declare_war_with_cb = {
 			casus_belli = cb_crusade
@@ -1487,9 +1488,12 @@ country_event = {
 				limit = {
 					owned_by = TUR
 					has_port = yes
-					NOT = {
-						sea_zone = {
-							province_id = 1321
+					sea_zone = {
+						OR = {
+							province_id = 1310
+							province_id = 1311
+							province_id = 1312
+							province_id = 1319
 						}
 					}
 					NOT = { owned_by = ROOT }
@@ -1561,14 +1565,6 @@ country_event = {
 		add_years_of_income = 1
 		add_yearly_sailors = 1
 		add_mil_power = 50
-		if = {
-			limit = { religion = catholic }
-			add_papal_influence = 25
-		}
-		add_country_modifier = {
-			name = fee_ven_turko_venetian_wars
-			duration = -1
-		}
 	}
 
 	option = {
