@@ -1429,6 +1429,8 @@ country_event = {
 				PAP = {
 					country_event = {
 						id = FEE_Venice_Events.31
+						days = 10
+						random = 5
 					}
 				}
 			}
@@ -1439,6 +1441,8 @@ country_event = {
 				EPI = {
 					country_event = {
 						id = FEE_Venice_Events.31
+						days = 10
+						random = 5
 					}
 				}
 			}
@@ -1449,12 +1453,16 @@ country_event = {
 				MOE = {
 					country_event = {
 						id = FEE_Venice_Events.31
+						days = 10
+						random = 5
 					}
 				}
 			}
 			every_ally = {
 				country_event = {
 					id = FEE_Venice_Events.31
+					days = 10
+					random = 5
 				}
 			}
 			morea_area = {
@@ -1537,20 +1545,16 @@ country_event = {
 	desc = FEE_Venice_Events.31.D
 	picture = GENERALS_DISCUSSING_eventPicture
 
-	fire_only_once = yes
-
-	trigger = {
-		tag = VEN
-	}
-
-	mean_time_to_happen = {
-		months = 6
-	}
+	is_triggered_only = yes
 
 	option = {
 		name = FEE_Venice_Events.31.OPT1
 		ai_chance = {
 			factor = 50
+			modifier = {
+				factor = 20
+				ai = yes
+			}
 		}
 
 		add_yearly_manpower = 1
