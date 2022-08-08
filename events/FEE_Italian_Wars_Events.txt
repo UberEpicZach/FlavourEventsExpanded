@@ -241,15 +241,11 @@ country_event = {
 			factor = 2
 			modifier = {
 				factor = 50
-				NOT = {
-					manpower_percentage = 0.50
-				}
+				NOT = { manpower_percentage = 0.50 }
 			}
 			modifier = {
 				factor = 50
-				NOT = {
-					army_size_percentage = 0.50
-				}
+				NOT = { army_size_percentage = 0.50 }
 			}
 			modifier = {
 				factor = 50
@@ -719,16 +715,10 @@ country_event = {
 			factor = 2
 			modifier = {
 				factor = 50
-				NOT = {
-					manpower_percentage = 0.50
-				}
-			}
+				NOT = { } }
 			modifier = {
 				factor = 50
-				NOT = {
-					army_size_percentage = 0.50
-				}
-			}
+				NOT = { } }
 			modifier = {
 				factor = 50
 				war_exhaustion = 3
@@ -968,13 +958,7 @@ country_event = {
 			}
 			modifier = {
 				factor = 25
-				NOT = {
-					has_opinion = {
-						who = VEN
-						value = -50
-					}
-				}
-			}
+				NOT = { } }
 			modifier = {
 				factor = 25
 				has_opinion = {
@@ -1025,13 +1009,7 @@ country_event = {
 			}
 			modifier = {
 				factor = 50
-				NOT = {
-					has_opinion = {
-						who = FRA
-						value = -50
-					}
-				}
-			}
+				NOT = { } }
 			modifier = {
 				factor = 25
 				OR = {
@@ -1067,16 +1045,10 @@ country_event = {
 			factor = 2
 			modifier = {
 				factor = 50
-				NOT = {
-					manpower_percentage = 0.50
-				}
-			}
+				NOT = { } }
 			modifier = {
 				factor = 50
-				NOT = {
-					army_size_percentage = 0.50
-				}
-			}
+				NOT = { } }
 			modifier = {
 				factor = 50
 				war_exhaustion = 3
@@ -1332,16 +1304,10 @@ country_event = {
 			factor = 2
 			modifier = {
 				factor = 50
-				NOT = {
-					manpower_percentage = 0.50
-				}
-			}
+				NOT = { } }
 			modifier = {
 				factor = 50
-				NOT = {
-					army_size_percentage = 0.50
-				}
-			}
+				NOT = { } }
 			modifier = {
 				factor = 50
 				war_exhaustion = 3
@@ -1634,16 +1600,10 @@ country_event = {
 			factor = 2
 			modifier = {
 				factor = 50
-				NOT = {
-					manpower_percentage = 0.50
-				}
-			}
+				NOT = { } }
 			modifier = {
 				factor = 50
-				NOT = {
-					army_size_percentage = 0.50
-				}
-			}
+				NOT = { } }
 			modifier = {
 				factor = 50
 				war_exhaustion = 3
@@ -1817,16 +1777,10 @@ country_event = {
 			factor = 2
 			modifier = {
 				factor = 50
-				NOT = {
-					manpower_percentage = 0.50
-				}
-			}
+				NOT = { } }
 			modifier = {
 				factor = 50
-				NOT = {
-					army_size_percentage = 0.50
-				}
-			}
+				NOT = { } }
 			modifier = {
 				factor = 50
 				war_exhaustion = 3
@@ -2094,16 +2048,10 @@ country_event = {
 			factor = 2
 			modifier = {
 				factor = 50
-				NOT = {
-					manpower_percentage = 0.50
-				}
-			}
+				NOT = { } }
 			modifier = {
 				factor = 50
-				NOT = {
-					army_size_percentage = 0.50
-				}
-			}
+				NOT = { } }
 			modifier = {
 				factor = 50
 				war_exhaustion = 3
@@ -2381,16 +2329,10 @@ country_event = {
 			factor = 2
 			modifier = {
 				factor = 50
-				NOT = {
-					manpower_percentage = 0.50
-				}
-			}
+				NOT = { } }
 			modifier = {
 				factor = 50
-				NOT = {
-					army_size_percentage = 0.50
-				}
-			}
+				NOT = { } }
 			modifier = {
 				factor = 50
 				war_exhaustion = 3

@@ -774,7 +774,7 @@ country_event = {
 	}
 }
 
-#########	Life of Doge Francesco Foscari from 1444 to 1457	####
+#########	Life of Doge Francesco Foscari from 1444 to 1457	#########
 
 #Il Dogato di Francesco Foscari
 country_event = {
@@ -801,6 +801,10 @@ country_event = {
 
 		add_prestige = 5
 		add_legitimacy_equivalent = { amount = 5 republican_tradition = 3 }
+		add_ruler_modifier = {
+			name = fee_ven_doge_foscari
+			duration = -1
+		}
 	}
 }
 
@@ -830,7 +834,7 @@ country_event = {
 		define_advisor = {
 			type = diplomat
 			name = "Bartolomeo Marcello"
-			skill = 1
+			skill = 2
 			discount = yes
 			culture = venetian
 			religion = catholic
@@ -988,7 +992,7 @@ country_event = {
 	}
 }
 
-#########	Life of Doge Pasquale Malipiero from 1444 to 1462	####
+#########	Life of Doge Pasquale Malipiero from 1444 to 1462	#########
 
 # Pasquale Malipiero Avagodore di Comun
 country_event = {
@@ -1025,7 +1029,7 @@ country_event = {
 	id = FEE_Venice_Events.24
 	title = FEE_Venice_Events.24.T
 	desc = FEE_Venice_Events.24.D
-	picture = GOOD_WITH_MONARCH_eventPicture
+	picture = ELECTION_REPUBLICAN_eventPicture
 
 	fire_only_once = yes
 
@@ -1086,6 +1090,503 @@ country_event = {
 			noble_rebels = 1
 		}
 		remove_country_modifier = fee_ven_malipiero_avogadore_comun
+	}
+}
+
+#########	Life of Doge Cristoforo Moro from 1445 to 1471	#########
+
+#Cristoforo Moro
+country_event = {
+	id = FEE_Venice_Events.25
+	title = FEE_Venice_Events.25.T
+	desc = FEE_Venice_Events.25.D
+	picture = ADVISOR_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VEN
+		is_year = 1445
+		OR = {
+			owns = 4729
+			owns = 1774
+		}
+		NOT = { is_year = 1462 }
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Venice_Events.25.OPT1
+
+		if = {
+			limit = {
+				is_expanded_mod_active = { mod = advisor_types }
+			}
+			define_advisor = {
+				name = "Cristoforo Moro"
+				type = ate_advisor_state_administrator
+				culture = venetian
+				religion = ROOT
+				skill = 2
+				discount = yes
+			}
+		}
+		else = {
+			define_advisor = {
+				name = "Cristoforo Moro"
+				type = treasurer
+				culture = venetian
+				religion = ROOT
+				skill = 2
+				discount = yes
+			}
+		}
+		4729 = {
+			if = {
+				limit = { owned_by = ROOT }
+				add_base_tax = 1
+				set_local_autonomy = 0
+				add_prosperity = 25
+			}
+		}
+		1774 = {
+			if = {
+				limit = { owned_by = ROOT }
+				add_base_tax = 1
+				set_local_autonomy = 0
+				add_prosperity = 25
+			}
+		}
+	}
+}
+
+#Default of Banco di Soranzo
+country_event = {
+	id = FEE_Venice_Events.26
+	title = FEE_Venice_Events.26.T
+	desc = FEE_Venice_Events.26.D
+	picture = OVEREXTENSION_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VEN
+		owns = 112
+		is_year = 1453
+		NOT = { is_year = 1454 }
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Venice_Events.26.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_inflation = 2
+		add_treasury = -140
+		add_country_modifier = {
+			name = fee_ven_soranzo_default
+			duration = 5475
+		}
+	}
+
+	option = {
+		name = FEE_Venice_Events.26.OPT2
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				adm_power = 100
+			}
+		}
+
+		add_adm_power = -75
+		add_inflation = 1
+		add_treasury = -50
+		add_country_modifier = {
+			name = fee_ven_soranzo_default_minimal
+			duration = 3650
+		}
+	}
+}
+
+#Brankrupcy of Banco di Soranzo
+country_event = {
+	id = FEE_Venice_Events.27
+	title = FEE_Venice_Events.27.T
+	desc = FEE_Venice_Events.27.D
+	picture = BANKRUPTCY_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VEN
+		owns = 112
+		is_year = 1455
+		NOT = { is_year = 1456 }
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Venice_Events.27.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_inflation = 1
+		add_treasury = -18
+		112 = { add_base_tax = -2 }
+	}
+}
+
+#Moro Provveditore delle Pubbliche Entrate
+country_event = {
+	id = FEE_Venice_Events.28
+	title = FEE_Venice_Events.28.T
+	desc = FEE_Venice_Events.28.D
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VEN
+		owns = 112
+		is_year = 1455
+		NOT = { is_year = 1462 }
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Venice_Events.28.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_years_of_income = 0.5
+		112 = {
+			add_base_production = 1
+			add_prosperity = 25
+			add_province_modifier = {
+				name = fee_ven_moro_provveditore_pubbliche_entrate
+				duration = 3650
+			}
+		}
+	}
+}
+
+# Doge Cristoforo Moro
+country_event = {
+	id = FEE_Venice_Events.29
+	title = FEE_Venice_Events.29.T
+	desc = FEE_Venice_Events.29.D
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VEN
+		is_year = 1461
+		NOT = { is_year = 1471 }
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Venice_Events.29.OPT1
+		ai_chance = {
+			factor = 1
+		}
+		highlight = yes
+
+		define_ruler = {
+			name = "Cristoforo Moro"
+			culture = venetian
+			religion = catholic
+			adm = 2
+			dip = 2
+			mil = 4
+		}
+		remove_country_modifier = fee_ven_malipiero_avogadore_comun
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = 5
+		}
+		morea_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+				NOT = { is_empty = yes }
+				NOT = { is_wasteland = yes }
+			}
+			add_permanent_claim = ROOT
+		}
+		aegean_archipelago_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+				NOT = { is_empty = yes }
+				NOT = { is_wasteland = yes }
+			}
+			add_permanent_claim = ROOT
+		}
+	}
+
+	option = {
+		name = FEE_Venice_Events.29.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
+		add_stability_or_adm_power = yes
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = -15
+		}
+	}
+}
+
+#########	Start of the Turko-Venetian Wars	#########
+
+# Turkish Dominion in Aegean sea
+country_event = {
+	id = FEE_Venice_Events.30
+	title = FEE_Venice_Events.30.T
+	desc = FEE_Venice_Events.30.D
+	picture = BATTLE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VEN
+		is_year = 1453
+		NOT = { is_year = 1479 }
+		TUR = {
+			num_of_owned_provinces_with = {
+				value = 10
+				has_port = yes
+				sea_zone = {
+					area = eastern_mediterrenean_area
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Venice_Events.30.OPT1
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 20
+				ai = yes
+			}
+			modifier = {
+				factor = 20
+				151 = { owned_by = TUR }
+			}
+		}
+
+		add_yearly_manpower = 1
+		add_years_of_income = 1
+		add_yearly_sailors = 1
+		add_mil_power = 50
+		if = {
+			limit = { religion = catholic }
+			add_papal_influence = 25
+		}
+		add_country_modifier = {
+			name = fee_ven_turko_venetian_wars
+			duration = -1
+		}
+		declare_war_with_cb = {
+			casus_belli = cb_crusade
+			who = TUR
+		}
+		custom_tooltip = VEN_VENETIAN_WARS_BALKANS_CLAIMS_TT
+		hidden_effect = {
+			if = {
+				limit = {
+					PAP = { is_free_or_tributary_trigger = yes }
+				}
+				PAP = {
+					country_event = {
+						id = FEE_Venice_Events.31
+					}
+				}
+			}
+			if = {
+				limit = {
+					EPI = { is_free_or_tributary_trigger = yes }
+				}
+				EPI = {
+					country_event = {
+						id = FEE_Venice_Events.31
+					}
+				}
+			}
+			if = {
+				limit = {
+					MOE = { is_free_or_tributary_trigger = yes }
+				}
+				MOE = {
+					country_event = {
+						id = FEE_Venice_Events.31
+					}
+				}
+			}
+			every_ally = {
+				country_event = {
+					id = FEE_Venice_Events.31
+				}
+			}
+			morea_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+					NOT = { is_empty = yes }
+					NOT = { is_wasteland = yes }
+				}
+				add_core = ROOT
+			}
+			aegean_archipelago_area = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+					NOT = { is_empty = yes }
+					NOT = { is_wasteland = yes }
+				}
+				add_core = ROOT
+			}
+			balkan_region = {
+				limit = {
+					owned_by = TUR
+					has_port = yes
+					NOT = {
+						sea_zone = {
+							province_id = 1321
+						}
+					}
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+					NOT = { is_empty = yes }
+					NOT = { is_wasteland = yes }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Venice_Events.30.OPT2
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				war_exhaustion = 2
+			}
+			modifier = {
+				factor = 2
+				NOT = { manpower_percentage = 0.50 }
+			}
+			modifier = {
+				factor = 2
+				NOT = { sailors_percentage = 0.50 }
+			}
+			modifier = {
+				factor = 2
+				NOT = { navy_size_percentage = 0.50 }
+			}
+		}
+
+		add_stability_or_adm_power = yes
+		add_mercantilism = 5
+		add_dip_power = 50
+		add_opinion = {
+			who = TUR
+			modifier = opinion_eased_tension
+		}
+		reverse_add_opinion = {
+			who = TUR
+			modifier = opinion_eased_tension
+		}
+	}
+}
+
+# Crusade against the Turks
+country_event = {
+	id = FEE_Venice_Events.31
+	title = FEE_Venice_Events.31.T
+	desc = FEE_Venice_Events.31.D
+	picture = GENERALS_DISCUSSING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VEN
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Venice_Events.31.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_yearly_manpower = 1
+		add_years_of_income = 1
+		add_yearly_sailors = 1
+		add_mil_power = 50
+		if = {
+			limit = { religion = catholic }
+			add_papal_influence = 25
+		}
+		add_country_modifier = {
+			name = fee_ven_turko_venetian_wars
+			duration = -1
+		}
+	}
+
+	option = {
+		name = FEE_Venice_Events.31.OPT2
+		ai_chance = {
+			factor = 2
+			modifier = {
+				factor = 50
+				NOT = { manpower_percentage = 0.50 }
+			}
+			modifier = {
+				factor = 50
+				NOT = { army_size_percentage = 0.50 }
+			}
+			modifier = {
+				factor = 50
+				war_exhaustion = 3
+			}
+		}
+
+		add_stability = 2
+		add_prestige = -12
 	}
 }
 

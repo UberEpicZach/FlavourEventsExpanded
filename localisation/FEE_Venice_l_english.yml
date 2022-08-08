@@ -91,7 +91,7 @@
  FEE_Venice_Events.21.OPT1: "Why can't they leave him be?"
 
  FEE_Venice_Events.22.T: "Death of Francesco Foscari"
- FEE_Venice_Events.22.D: "Francesco Foscari died a few days later, on 1 November (he had made his will on 29 October), at his home in Santa Margherita. A state funeral was arranged for him with an exhibition to the people in ducal vestments, despite the opposition of his widow, who saw it as a clumsy act of reparation by that power that had taken away her son and humiliated her husband. The body was accompanied by the new doge [ROOT.Monarch.GetName] who appeared in the simple guise of a senator. Francesco Foscari was buried in the presbytery of the basilica of the Frari, in the mausoleum made for him by Niccolò di Giovanni Fiorentino, in an urn supported by four graceful corbels adorned with the three theological virtues (Faith, Hope and Charity) in whose arrangement around the sarcophagus Niccolò modified the conventional and static arrangement of the personifications, transforming it into a drama inserted in the flow of time. The crowning figure of the Saviour changed the common motif of the Risen Christ into the image of the Ascension of Christ taken from the Venetian duchy, as an allusion to the true ruler of Venice, to whom alone his representative - the doge - was responsible."
+ FEE_Venice_Events.22.D: "Francesco Foscari died a few days later, on 1 November (he had made his will on 29 October), at his home in Santa Margherita. A state funeral was arranged for him with an exhibition to the people in ducal vestments, despite the opposition of his widow, who saw it as a clumsy act of reparation by that power that had taken away her son and humiliated her husband. The body was accompanied by the new doge [Root.Monarch.GetName] who appeared in the simple guise of a senator. Francesco Foscari was buried in the presbytery of the basilica of the Frari, in the mausoleum made for him by Niccolò di Giovanni Fiorentino, in an urn supported by four graceful corbels adorned with the three theological virtues (Faith, Hope and Charity) in whose arrangement around the sarcophagus Niccolò modified the conventional and static arrangement of the personifications, transforming it into a drama inserted in the flow of time. The crowning figure of the Saviour changed the common motif of the Risen Christ into the image of the Ascension of Christ taken from the Venetian duchy, as an allusion to the true ruler of Venice, to whom alone his representative - the doge - was responsible."
  FEE_Venice_Events.22.OPT1: "Let us not forget the greates of all our Doges!"
 
  FEE_Venice_Events.23.T: "Pasquale Malipiero avogadore di Comun"
@@ -102,6 +102,38 @@
  FEE_Venice_Events.24.D: "The last years haven't really been kind to Francesco Foscari, with the personal loss of his relatives and lately the voices of his treachery against the Republic have clearly shown that he may no longer be fit to guide us all."
  FEE_Venice_Events.24.OPT1: "He shall guide us"
  FEE_Venice_Events.24.OPT2: "Foscari is our Doge!"
+
+ FEE_Venice_Events.25.T: "Cristoforo Moro avogador di Comun"
+ FEE_Venice_Events.25.D: "Born in 1390 from the Moro family, Cristoforo has risen up amongst the ranks of the Venetian family in the past years, firstly in the lobby of the Merchants, then in the city of Chioggià as the podestà to supervise the grain supplies to avoid any dearth for the army, now has been assigned to the venetian cities of Padova and Treviso as avogador di Comune, and seems like his uncompromisingness to make deals as the guardian of the laws has proven him to be the best in his field."
+ FEE_Venice_Events.25.OPT1: "May make the cities shine!"
+
+ FEE_Venice_Events.26.T: "Default of Banco di Soranzo"
+ FEE_Venice_Events.26.D: "Founded back in 1374 by Giovanni Soranzo of the Soranzo family, which traces back to the Gens Superanzia of Rome, the Bank of Soranzo is the oldest bank in Italy, born even before the de Medici's bank, it has brought prosperity and strength to Venice in the past 70 years but yesterday an unexpected scandal shook Venetian public life and the life of Benedetto Soranzo and his family. It seems like between 50 and 140 ducats of the Venetian treasury has been lost by the hend of the director Alvise Venier."
+ FEE_Venice_Events.26.OPT1: "We cannot stop it"
+ FEE_Venice_Events.26.OPT2: "We can't let this happen, find them!"
+
+ FEE_Venice_Events.27.T: "Bankruptcy of the Banco di Soranzo"
+ FEE_Venice_Events.27.D: "The previous default of the Bank caused tremendous spiral effects, the lack of liquidity for the payment of the crews and the consequent blocking of the muda of galleys for Alexandria, as well as the purchase of barley from Apulia; three liquidators were appointed alongside magistrates, Benedetto Soranzo and Alvise Venier were arrested and interrogated, even by torture, but later released. The resumption of business, managed by Benedetto and his brother Giovanni, was short-lived, however, and two years later, in September, at the time of the year's most acute shortage of cash due to the departure of the last of the women, the new Soranzo bank failed once more. Taking away the books and 18,000 ducats, by the weekend Benedetto Soranzo, with his ten sons, and Giovanni had fled abroad."
+ FEE_Venice_Events.27.OPT1: "CURSE THY NAMES!"
+
+ FEE_Venice_Events.28.T: "Moro the Provveditore delle Pubbliche Entrate"
+ FEE_Venice_Events.28.D: "Back in 6/09/1454, after the disastrous events behind the Bank of Soranzo when he tried to administrate, alongside Andrea Dona, after the default of 1453, Cristoforo Moro was appointed in a commission entrusted with the revision of the urban assessment of Venezia itself, and seeing is marvellous work he has been entrusted as the proveditor of the Public incomes of Venice itself!"
+ FEE_Venice_Events.28.OPT1: "He will bring prosperity to the city!"
+
+ FEE_Venice_Events.29.T: "Doge Cristoforo Moro"
+ FEE_Venice_Events.29.D: "He once again held the dual office of sage of the Council and provveditore sopra le Pubbliche entrate, when he was elected doge on 12 May 1462, a week after the death of Malipiero and with only a few ballots. With his Promission, which he himself had helped to reform a few days earlier as a member of the appropriate council, the name of Commune Veneciarum, which had in fact fallen into disuse, was formally replaced with that of Dominium or Signoria; thus the process of aristocratisation of the State, which had accelerated decisively after Doge Foscari in 1423, was completed."
+ FEE_Venice_Events.29.OPT1: "He shall lead us all!"
+ FEE_Venice_Events.29.OPT2: "No, we can't abandon [Root.Monarch.GetName]"
+
+ FEE_Venice_Events.30.T: "The Turko-Venetians relations in the Aegaen sea"
+ FEE_Venice_Events.30.D: "Since the siege of Constantinople and their relentless advance, the Ottoman Empire has clearly shown that their naval prowness is not to be ignored as well. They have destroyed our trade routes in the Aegean sea, they have constantly being a thorn in the side of our few trade outposts and islands in the Eastern Mediterranean Sea. Despite our best interest to try and migate the situation, and obviously protect our trade agreement in Constantinople, with even the use of our finest diplomaat Bartolomeo Marcello now the [TUR.GetName] have further deteriorated their position with the local greek population in the Southern Balkans so much that the various despotate have asked for our help, with the Pope backing us."
+ FEE_Venice_Events.30.OPT1: "Per la difesa dello Stato di Mare"
+ FEE_Venice_Events.30.OPT2: "We cannot risk this war."
+
+ FEE_Venice_Events.31.T: "Crusade against the Turks"
+ FEE_Venice_Events.31.D: "And so it was done, the rivarly between the Venetian republic and the Ottoman Empire sadly came down to war, should we help our brothers fighting against the tides of heathens?"
+ FEE_Venice_Events.31.OPT1: "Deus Vult!"
+ FEE_Venice_Events.31.OPT2: "We shall lay down the sword."
 
  #Estate Modifeirs
  fee_ven_nobles_restrained: "Restrained the Barones"
@@ -142,11 +174,20 @@
  fee_ven_jew_ghetto_novo: "Ghetto Novo of Venice"
  desc_fee_ven_jew_ghetto_novo: "Ghetto Novo of Venice"
 
+ fee_ven_doge_foscari: "Doge Francesco Foscari"
+
  fee_ven_prosperity_po_valley: "Prosperity in the Po' Valley"
  desc_fee_ven_prosperity_po_valley: "Prosperity in the Po' Valley"
 
  fee_ven_malipiero_avogadore_comun: "Avogadore di Comun"
  desc_fee_ven_malipiero_avogadore_comun: "Avogadore di Comun"
+
+ fee_ven_soranzo_default: "Banco di Soranzo in Default"
+ fee_ven_soranzo_default_minimal: "Banco di Soranzo in Default"
+
+ fee_ven_moro_provveditore_pubbliche_entrate: "Moro Provveditore delle Pubbliche Entrate"
+
+ fee_ven_turko_venetian_wars: "Turko-Venetian wars Preparation"
 
  #Trade Modifeirs
  fee_ven_trade_deal_costantinople: "Venetian Trade Deal"
@@ -156,3 +197,4 @@
 
  #Tooltips
  VEN_FANTI_MAR_TT: "Every owned §YCoastal Provinces§! will gain:"
+ VEN_VENETIAN_WARS_BALKANS_CLAIMS_TT: "§Y[Root.GetName]§! will gain §YPermanent Claim§! on all the §MCoastal§! provinces owned by §Y[TUR.GetName]§! in the §MBalkans Region§!. \n\nWe might be able to call our Christian brothers in the war!"
