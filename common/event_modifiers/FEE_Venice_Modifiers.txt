@@ -105,3 +105,27 @@ fee_ven_craine = {
 	regiment_recruit_speed = -0.15
 	local_development_cost = -0.10
 }
+
+fee_ven_treaty_constantinople = {
+	global_tax_income = -10
+	global_own_trade_power = -0.10
+	trade_steering = -0.10
+}
+fee_ven_treaty_constantinople_province = {
+	province_trade_power_modifier = -0.15
+	trade_value_modifier = -0.15
+	local_development_cost = 0.15
+}
+
+fee_ven_aegean_superiority = {
+	global_own_trade_power = 0.10
+	trade_steering = 0.10
+	republican_tradition = 1
+	prestige = 1
+	monthly_splendor = 4
+}
+fee_ven_aegean_superiority_province = {
+	province_trade_power_modifier = 0.15
+	trade_value_modifier = 0.15
+	local_development_cost = -0.15
+}

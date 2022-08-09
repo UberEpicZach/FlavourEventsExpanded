@@ -1378,7 +1378,6 @@ country_event = {
 		TUR = {
 			num_of_owned_provinces_with = {
 				value = 10
-				has_port = yes
 				sea_zone = {
 					OR = {
 						province_id = 1310
@@ -1409,7 +1408,6 @@ country_event = {
 			}
 		}
 
-		set_country_flag = fee_ven_joined_turko_venetian_wars_flag
 		add_yearly_manpower = 1
 		add_years_of_income = 1
 		add_yearly_sailors = 1
@@ -1517,7 +1515,6 @@ country_event = {
 			balkan_region = {
 				limit = {
 					owned_by = TUR
-					has_port = yes
 					sea_zone = {
 						OR = {
 							province_id = 1310
@@ -1591,7 +1588,6 @@ country_event = {
 			}
 		}
 
-		set_country_flag = fee_ven_joined_turko_venetian_wars_flag
 		add_yearly_manpower = 1
 		add_years_of_income = 1
 		add_yearly_sailors = 1
@@ -1637,7 +1633,7 @@ country_event = {
 			casus_belli = cb_crusade
 			defender_leader = TUR
 		}
-		has_country_flag = fee_ven_joined_turko_venetian_wars_flag
+		has_country_modifier = fee_ven_turko_venetian_wars
 		NOT = { exists = ALB }
 		is_year = 1463
 		NOT = { is_year = 1468 }
@@ -1695,7 +1691,7 @@ country_event = {
 			casus_belli = cb_crusade
 			defender_leader = TUR
 		}
-		has_country_flag = fee_ven_joined_turko_venetian_wars_flag
+		has_country_modifier = fee_ven_turko_venetian_wars
 		NOT = { exists = ALB }
 		is_year = 1463
 		NOT = { is_year = 1468 }
@@ -1780,7 +1776,7 @@ country_event = {
 			casus_belli = cb_crusade
 			defender_leader = TUR
 		}
-		has_country_flag = fee_ven_joined_turko_venetian_wars_flag
+		has_country_modifier = fee_ven_turko_venetian_wars
 		is_year = 1463
 		NOT = { is_year = 1479 }
 		3003 = {
@@ -1830,7 +1826,7 @@ country_event = {
 			casus_belli = cb_crusade
 			defender_leader = TUR
 		}
-		has_country_flag = fee_ven_joined_turko_venetian_wars_flag
+		has_country_modifier = fee_ven_turko_venetian_wars
 		is_year = 1463
 		NOT = { is_year = 1479 }
 	}
@@ -1887,7 +1883,7 @@ country_event = {
 			casus_belli = cb_crusade
 			defender_leader = TUR
 		}
-		has_country_flag = fee_ven_joined_turko_venetian_wars_flag
+		has_country_modifier = fee_ven_turko_venetian_wars
 		is_year = 1463
 		NOT = { is_year = 1479 }
 	}
@@ -1928,7 +1924,7 @@ country_event = {
 			casus_belli = cb_crusade
 			defender_leader = TUR
 		}
-		has_country_flag = fee_ven_joined_turko_venetian_wars_flag
+		has_country_modifier = fee_ven_turko_venetian_wars
 		is_year = 1463
 		NOT = { is_year = 1479 }
 		111 = {
@@ -2037,6 +2033,217 @@ country_event = {
 					add_province_modifier = {
 						name = fee_ven_craine
 						duration = -1
+					}
+				}
+			}
+		}
+	}
+}
+
+# Trattato di Constantinopoli
+country_event = {
+	id = FEE_Venice_Events.39
+	title = FEE_Venice_Events.39.T
+	desc = FEE_Venice_Events.39.D
+	picture = BAD_WITH_MONARCH_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VEN
+		is_year = 1463
+		is_at_war = no
+		has_country_modifier = fee_ven_turko_venetian_wars
+		TUR = {
+			has_won_war_against = {
+				who = VEN
+				max_years_since = 5
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Venice_Events.39.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
+		add_prestige = -25
+		add_legitimacy_equivalent = { amount = -20 republican_tradition = -10 }
+		add_mercantilism = -15
+		add_splendor = -200
+		remove_country_modifier = fee_ven_turko_venetian_wars
+		1320 = {
+			add_trade_modifier = {
+				who = ROOT
+				duration = 7300
+				power = -20
+				key = fee_ven_treaty_constantinople
+			}
+		}
+		add_country_modifier = {
+			name = fee_ven_treaty_constantinople
+			duration = 7300
+		}
+		if = {
+			limit = {
+				any_owned_province = {
+					sea_zone = {
+						OR = {
+							province_id = 1310
+							province_id = 1311
+							province_id = 1312
+							province_id = 1319
+						}
+					}
+				}
+			}
+			custom_tooltip = FEE_VEN_TREATY_CONSTANTINOPLE_TT
+			tooltip = {
+				random_owned_province = {
+					limit = {
+						sea_zone = {
+							OR = {
+								province_id = 1310
+								province_id = 1311
+								province_id = 1312
+								province_id = 1319
+							}
+						}
+					}
+					add_base_production = -1
+					add_province_modifier = {
+						name = fee_ven_treaty_constantinople_province
+						duration = 7300
+					}
+				}
+			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						sea_zone = {
+							OR = {
+								province_id = 1310
+								province_id = 1311
+								province_id = 1312
+								province_id = 1319
+							}
+						}
+					}
+					add_base_production = -1
+					add_province_modifier = {
+						name = fee_ven_treaty_constantinople_province
+						duration = 7300
+					}
+				}
+			}
+		}
+	}
+}
+
+# Il Leone Alato
+country_event = {
+	id = FEE_Venice_Events.40
+	title = FEE_Venice_Events.40.T
+	desc = FEE_Venice_Events.40.D
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VEN
+		is_year = 1463
+		is_at_war = no
+		has_country_modifier = fee_ven_turko_venetian_wars
+		has_won_war_against = {
+			who = TUR
+			max_years_since = 5
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Venice_Events.40.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
+		add_mercantilism = 25
+		remove_country_modifier = fee_ven_turko_venetian_wars
+		1320 = {
+			add_trade_modifier = {
+				who = ROOT
+				duration = 7300
+				power = 20
+				key = fee_ven_aegean_superiority
+			}
+			add_trade_modifier = {
+				who = TUR
+				duration = 7300
+				power = -20
+				key = fee_ven_aegean_superiority
+			}
+		}
+		add_country_modifier = {
+			name = fee_ven_aegean_superiority
+			duration = 7300
+		}
+		if = {
+			limit = {
+				any_owned_province = {
+					sea_zone = {
+						OR = {
+							province_id = 1310
+							province_id = 1311
+							province_id = 1312
+							province_id = 1319
+						}
+					}
+				}
+			}
+			custom_tooltip = FEE_VEN_TREATY_CONSTANTINOPLE_TT
+			tooltip = {
+				random_owned_province = {
+					limit = {
+						sea_zone = {
+							OR = {
+								province_id = 1310
+								province_id = 1311
+								province_id = 1312
+								province_id = 1319
+							}
+						}
+					}
+					add_base_production = 1
+					add_province_modifier = {
+						name = fee_ven_aegean_superiority_province
+						duration = 7300
+					}
+				}
+			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						sea_zone = {
+							OR = {
+								province_id = 1310
+								province_id = 1311
+								province_id = 1312
+								province_id = 1319
+							}
+						}
+					}
+					add_base_production = -1
+					add_province_modifier = {
+						name = fee_ven_aegean_superiority_province
+						duration = 7300
 					}
 				}
 			}
