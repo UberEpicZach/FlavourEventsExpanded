@@ -135,6 +135,35 @@
  FEE_Venice_Events.31.OPT1: "Deus Vult!"
  FEE_Venice_Events.31.OPT2: "We shall lay down the sword."
 
+ FEE_Venice_Events.32.T: "Athleta Christi et Defensor Fidei"
+ FEE_Venice_Events.32.D: "A handful of albanians have decided to rise up and take arms in the Albania, the old land of the Skanderbeg, the Defensor of Christianity against the Turkish tides have decided to help again to help the Christendom and shield Europe again against the Tides of Time."
+ FEE_Venice_Events.32.OPT1: "God be praised!"
+
+ FEE_Venice_Events.33.T: "Albanian Rebellions"
+ FEE_Venice_Events.33.D: "A handful of albanians have decided to rise up and take arms in the Albania, the old land of the Skanderbeg, the Defensor of Christianity against the Turkish tides have decided to help again to help the Christendom and shield Europe again against the Tides of Time. But after having heared from them, we have seen how they do need fund to strike with success against the Ottomans, should we help them my Doge?"
+ FEE_Venice_Events.33.OPT1: "Athleta Christi!"
+ FEE_Venice_Events.33.OPT2: "Haven't you seen the cost of the war already?"
+
+ FEE_Venice_Events.34.T: "Assedio di Negroponte"
+ FEE_Venice_Events.34.D: "[GetDateText], [3003.Province.GetName], the biggest Island in the Aegean Sea has fallen under the tides of 300 ships and 7 thousands man led by Mahamud Pascia. Our meager and weaker fleet, lead by Nicolo Canal wasn't able to match the bigger turkish fleet thus fleeing to Crete. The Venetian garrison on the island was concentrated in the city of Chalkida, under the command of Paolo Erizzo. Four furious attacks by the Turks were repulsed. Nicolò Canal, meanwhile, regained his courage, arrived from Crete with his fleet and attempted to break the siege. Two galleys, commanded by Antonio and, Stefano Ottoboni, crossed the Turkish line, but only the former reached the harbour, the other blew up an enemy ship with which it had collided. \nMuhammad, however, had a pontoon bridge built and thwarted the Canal's attempt and had Chalkidiki stormed again and thus the city fell, the population was massacred and the bailo Paolo Erizzo, once captured, was sawn alive in half, after having his body enclosed between two planks. Around 50.000 people were killed by the Turkish hands."
+ FEE_Venice_Events.34.OPT1: "No one was spared."
+
+ FEE_Venice_Events.35.T: "Nicolò Canale"
+ FEE_Venice_Events.35.D: "A learned man readier to read books rather to direct the affairs of the sea."
+ FEE_Venice_Events.35.OPT1: "A man of letters rather than a fighter"
+
+ FEE_Venice_Events.36.T: "Jacopo Loredan"
+ FEE_Venice_Events.36.D: "\"We, Jacopo Loredan, on behalf of the Most Illustrious Lordship of Venice, Captain General of the Sea, request the Reverend Grand Master to release, within the next three hours shown by this watch, all the captured and detained Moors who came to Rhodes with galleys under the protection of the commander and captains, to return all the goods of said Moors and Venetians that have been damaged, to return those intact and to repay any damages for this received.\" Thus the words used by G. Loredan in front of the Grand Master of Rhodes stopped the deteriorating of the turko-venetian relations and halted the further escalation of war."
+ FEE_Venice_Events.36.OPT1: "He is our commander!"
+
+ FEE_Venice_Events.37.T: "Turks in Friuli"
+ FEE_Venice_Events.37.D: "Taking advantage of the main battle ground being in Greece and in the Aegean Sea the turkish army has been able to snuck behind our lines and arrive in the wonderful province of Friuli and even laying their eyes on Venice itself!"
+ FEE_Venice_Events.37.OPT1: "They are at the gates of Venice!"
+
+ FEE_Venice_Events.38.T: "Craine of the Venetian Dalmatia"
+ FEE_Venice_Events.38.D: "After the Turko-Venetian wars the Venetian Republic has seen how our bordering provinces in the Balkans are not fit and secure enough to let us have a carefree sleep thus the provinces should be reinforced to protect our trade once more!"
+ FEE_Venice_Events.38.OPT1: "Let them guard our borders!"
+
  #Estate Modifeirs
  fee_ven_nobles_restrained: "Restrained the Barones"
  desc_fee_ven_nobles_restrained: "Restrained the Barones"
@@ -189,6 +218,8 @@
 
  fee_ven_turko_venetian_wars: "Turko-Venetian wars Preparation"
 
+ fee_ven_craine: "Venetian Craine"
+
  #Trade Modifeirs
  fee_ven_trade_deal_costantinople: "Venetian Trade Deal"
  desc_fee_ven_trade_deal_costantinople: "Venetian Trade Deal"
@@ -197,4 +228,5 @@
 
  #Tooltips
  VEN_FANTI_MAR_TT: "Every owned §YCoastal Provinces§! will gain:"
+ FEE_VEN_CRAINE_DALMATIA_TT: "Every owned §MCoastal Province§! that is either in the §YDalmatia Area§! or has §YSouth Slavic Culture§! in the §MRagusa Trade Node§! will gain:"
  VEN_VENETIAN_WARS_BALKANS_CLAIMS_TT: "§Y[Root.GetName]§! will gain §YPermanent Claim§! on all the §MCoastal§! provinces owned by §Y[TUR.GetName]§! in the §MBalkans Region§! that borders the §M[1310.Province.GetName]§! or §M[1311.Province.GetName]§! or §M[1312.Province.GetName]§! or §M[1319.Province.GetName]§!. \n\nWe might be able to call our Christian brothers in the war!"

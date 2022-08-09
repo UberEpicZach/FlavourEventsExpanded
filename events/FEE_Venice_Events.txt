@@ -1360,7 +1360,7 @@ country_event = {
 	}
 }
 
-#########	Start of the Turko-Venetian Wars	#########
+#########	The Turko-Venetian Wars	#########
 
 # Turkish Dominion in Aegean sea
 country_event = {
@@ -1373,14 +1373,19 @@ country_event = {
 
 	trigger = {
 		tag = VEN
-		is_year = 1453
+		is_year = 1463
 		NOT = { is_year = 1479 }
 		TUR = {
 			num_of_owned_provinces_with = {
 				value = 10
 				has_port = yes
 				sea_zone = {
-					area = eastern_mediterrenean_area
+					OR = {
+						province_id = 1310
+						province_id = 1311
+						province_id = 1312
+						province_id = 1319
+					}
 				}
 			}
 		}
@@ -1404,6 +1409,7 @@ country_event = {
 			}
 		}
 
+		set_country_flag = fee_ven_joined_turko_venetian_wars_flag
 		add_yearly_manpower = 1
 		add_years_of_income = 1
 		add_yearly_sailors = 1
@@ -1452,6 +1458,30 @@ country_event = {
 					MOE = { is_free_or_tributary_trigger = yes }
 				}
 				MOE = {
+					country_event = {
+						id = FEE_Venice_Events.31
+						days = 10
+						random = 5
+					}
+				}
+			}
+			if = {
+				limit = {
+					TRE = { is_free_or_tributary_trigger = yes }
+				}
+				TRE = {
+					country_event = {
+						id = FEE_Venice_Events.31
+						days = 10
+						random = 5
+					}
+				}
+			}
+			if = {
+				limit = {
+					ALB = { is_free_or_tributary_trigger = yes }
+				}
+				ALB = {
 					country_event = {
 						id = FEE_Venice_Events.31
 						days = 10
@@ -1561,6 +1591,7 @@ country_event = {
 			}
 		}
 
+		set_country_flag = fee_ven_joined_turko_venetian_wars_flag
 		add_yearly_manpower = 1
 		add_years_of_income = 1
 		add_yearly_sailors = 1
@@ -1590,7 +1621,430 @@ country_event = {
 	}
 }
 
-#
+# Athleta Christi et Defensor Fidei
+country_event = {
+	id = FEE_Venice_Events.32
+	title = FEE_Venice_Events.32.T
+	desc = FEE_Venice_Events.32.D
+	picture = CONQUEST_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VEN
+		is_in_war = {
+			attacker_leader = ROOT
+			casus_belli = cb_crusade
+			defender_leader = TUR
+		}
+		has_country_flag = fee_ven_joined_turko_venetian_wars_flag
+		NOT = { exists = ALB }
+		is_year = 1463
+		NOT = { is_year = 1468 }
+		any_owned_province = {
+			OR = {
+				area = albania_area
+				culture = albanian
+			}
+			controlled_by = TUR
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = FEE_Venice_Events.32.OPT1
+
+		random_owned_province = {
+			limit = {
+				OR = {
+					area = albania_area
+					culture = albanian
+				}
+				controlled_by = ROOT
+			}
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			ROOT = {
+				create_general = {
+					tradition = 50
+					culture = albanian
+				}
+			}
+			change_controller = ROOT
+		}
+	}
+}
+
+# Albanian Rebellions
+country_event = {
+	id = FEE_Venice_Events.33
+	title = FEE_Venice_Events.33.T
+	desc = FEE_Venice_Events.33.D
+	picture = BORDER_TENSION_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VEN
+		is_in_war = {
+			attacker_leader = ROOT
+			casus_belli = cb_crusade
+			defender_leader = TUR
+		}
+		has_country_flag = fee_ven_joined_turko_venetian_wars_flag
+		NOT = { exists = ALB }
+		is_year = 1463
+		NOT = { is_year = 1468 }
+		TUR = {
+			any_owned_province = {
+				OR = {
+					area = albania_area
+					culture = albanian
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Venice_Events.33.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
+		add_years_of_income = -0.5
+		TUR = {
+			random_owned_province = {
+				limit = {
+					OR = {
+						area = albania_area
+						culture = albanian
+					}
+					controlled_by = TUR
+				}
+				hidden_effect = {
+					if = {
+						limit = {
+							NOT = { is_core = ALB }
+						}
+						add_core = ALB
+						add_nationalism = 5
+					}
+				}
+				spawn_rebels = {
+					type = nationalist_rebels
+					size = 3
+					leader_dynasty = "Kastrioti"
+					friend = ROOT
+					separatists_target = ALB
+					win = yes
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Venice_Events.33.OPT2
+		ai_chance = {
+			factor = 2
+		}
+
+		add_prestige = -5
+		if = {
+			limit = { religion = catholic }
+			add_papal_influence = -15
+		}
+	}
+}
+
+# Siege of Negroponte
+country_event = {
+	id = FEE_Venice_Events.34
+	title = FEE_Venice_Events.34.T
+	desc = FEE_Venice_Events.34.D
+	picture = SIEGE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VEN
+		is_in_war = {
+			attacker_leader = ROOT
+			casus_belli = cb_crusade
+			defender_leader = TUR
+		}
+		has_country_flag = fee_ven_joined_turko_venetian_wars_flag
+		is_year = 1463
+		NOT = { is_year = 1479 }
+		3003 = {
+			owned_by = ROOT
+			controlled_by = TUR
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Venice_Events.34.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
+		add_treasury = -60
+		add_sailors = -360
+		add_manpower = -1
+		TUR = {
+			add_treasury = 60
+			add_sailors = 360
+			add_manpower = 1
+		}
+		3003 = {
+			add_base_tax = -1
+			add_base_manpower = -1
+		}
+	}
+}
+
+# Nicolò Canale
+country_event = {
+	id = FEE_Venice_Events.35
+	title = FEE_Venice_Events.35.T
+	desc = FEE_Venice_Events.35.D
+	picture = ADVISOR_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VEN
+		is_in_war = {
+			attacker_leader = ROOT
+			casus_belli = cb_crusade
+			defender_leader = TUR
+		}
+		has_country_flag = fee_ven_joined_turko_venetian_wars_flag
+		is_year = 1463
+		NOT = { is_year = 1479 }
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Venice_Events.35.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
+		if = {
+			limit = {
+				is_expanded_mod_active = { mod = advisor_types }
+			}
+			define_advisor = {
+				name = "Nicolo Canale"
+				type = ate_advisor_galley_captain
+				culture = venetian
+				religion = ROOT
+				skill = 2
+				discount = yes
+			}
+		}
+		else = {
+			define_advisor = {
+				name = "Nicolo Canale"
+				type = naval_reformer
+				culture = venetian
+				religion = ROOT
+				skill = 2
+				discount = yes
+			}
+		}
+	}
+}
+
+# Giacomo Loredan
+country_event = {
+	id = FEE_Venice_Events.36
+	title = FEE_Venice_Events.36.T
+	desc = FEE_Venice_Events.36.D
+	picture = GENERALS_DISCUSSING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VEN
+		is_in_war = {
+			attacker_leader = ROOT
+			casus_belli = cb_crusade
+			defender_leader = TUR
+		}
+		has_country_flag = fee_ven_joined_turko_venetian_wars_flag
+		is_year = 1463
+		NOT = { is_year = 1479 }
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Venice_Events.36.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
+		define_admiral = {
+			name = "Giacomo Loredan"
+			fire = 3
+			shock = 4
+			manuever = 4
+			siege = 0
+		}
+	}
+}
+
+# Turks in Friuli!
+country_event = {
+	id = FEE_Venice_Events.37
+	title = FEE_Venice_Events.37.T
+	desc = FEE_Venice_Events.37.D
+	picture = BAD_WITH_MONARCH_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VEN
+		is_in_war = {
+			attacker_leader = ROOT
+			casus_belli = cb_crusade
+			defender_leader = TUR
+		}
+		has_country_flag = fee_ven_joined_turko_venetian_wars_flag
+		is_year = 1463
+		NOT = { is_year = 1479 }
+		111 = {
+			owned_by = ROOT
+			OR = {
+				controlled_by = TUR
+				units_in_province = TUR
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = FEE_Venice_Events.37.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
+		set_country_flag = fee_ven_turko_venetian_wars_friuli_raided_flag
+		add_prestige = -5
+		add_legitimacy_equivalent = { amount = -5 republican_tradition = -3 }
+		111 = {
+			add_base_tax = -1
+			add_base_manpower = -1
+			add_base_production = -1
+		}
+	}
+}
+
+# Craine of the Venetian Dalmatia
+country_event = {
+	id = FEE_Venice_Events.38
+	title = FEE_Venice_Events.38.T
+	desc = FEE_Venice_Events.38.D
+	picture = MILITARY_CAMP_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VEN
+		is_at_war = no
+		has_country_flag = fee_ven_turko_venetian_wars_friuli_raided_flag
+		137 = {
+			any_trade_node_member_province = {
+				has_port = yes
+				OR = {
+					culture_group = south_slavic
+					area = east_adriatic_coast_area
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		years = 5
+	}
+
+	option = {
+		name = FEE_Venice_Events.38.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
+		add_mil_power = -75
+		137 = {
+			add_trade_modifier = {
+				who = ROOT
+				duration = 7300
+				power = 20
+				key = fee_ven_craine
+			}
+		}
+		custom_tooltip = FEE_VEN_CRAINE_DALMATIA_TT
+		tooltip = {
+			137 = {
+				random_trade_node_member_province = {
+					limit = {
+						has_port = yes
+						OR = {
+							culture_group = south_slavic
+							area = east_adriatic_coast_area
+						}
+					}
+					add_base_manpower = 1
+					add_province_modifier = {
+						name = fee_ven_craine
+						duration = -1
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			137 = {
+				every_trade_node_member_province = {
+					limit = {
+						has_port = yes
+						OR = {
+							culture_group = south_slavic
+							area = east_adriatic_coast_area
+						}
+					}
+					add_base_manpower = 1
+					add_province_modifier = {
+						name = fee_ven_craine
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+}
+
+# 
 #country_event = {
 #	id = FEE_Venice_Events.
 #	title = FEE_Venice_Events..T
@@ -1609,6 +2063,9 @@ country_event = {
 #
 #	option = {
 #		name = FEE_Venice_Events..OPT1
+#		ai_chance = {
+#			factor = 1
+#		}
 #
 #	}
 #}
