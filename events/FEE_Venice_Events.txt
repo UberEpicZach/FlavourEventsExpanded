@@ -1058,9 +1058,6 @@ country_event = {
 			age = 53
 			culture = venetian
 			religion = catholic
-			adm = 2
-			dip = 2
-			mil = 4
 		}
 		remove_country_modifier = fee_ven_malipiero_avogadore_comun
 		add_estate_loyalty = {
@@ -1320,9 +1317,6 @@ country_event = {
 			age = 71
 			culture = venetian
 			religion = catholic
-			adm = 2
-			dip = 2
-			mil = 4
 		}
 		remove_country_modifier = fee_ven_malipiero_avogadore_comun
 		add_estate_loyalty = {
@@ -2848,9 +2842,6 @@ country_event = {
 			age = 72
 			culture = venetian
 			religion = catholic
-			adm = 1
-			dip = 1
-			mil = 1
 		}
 		add_treasury = 90
 		add_mercantilism = 5
@@ -2858,6 +2849,235 @@ country_event = {
 
 	option = {
 		name = FEE_Venice_Events.49.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
+		add_stability_or_adm_power = yes
+	}
+}
+
+#########	Life of Doge Nicolò Marcello 1397-1474	#########
+
+# Nicolò Marcello Bailo di Trebisonda
+country_event = {
+	id = FEE_Venice_Events.50
+	title = FEE_Venice_Events.50.T
+	desc = FEE_Venice_Events.50.D
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VEN
+		is_year = 1441
+		NOT = { is_year = 1450 }
+		exists = TRE
+	}
+
+	mean_time_to_happen = {
+		years = 1
+	}
+
+	option = {
+		name = FEE_Venice_Events.50.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
+		TRE = {
+			country_event = {
+				id = FEE_Venice_Events.51
+				days = 180
+				random = 30
+			}
+		}
+	}
+}
+
+# Niccolò Marcello in Trebizond
+country_event = {
+	id = FEE_Venice_Events.51
+	title = FEE_Venice_Events.51.T
+	desc = FEE_Venice_Events.51.D
+	picture = DIPLOMACY_SIGNING_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		exists = VEN
+	}
+
+	major = yes
+	major_trigger = {
+		tag = VEN
+	}
+
+	option = {
+		name = FEE_Venice_Events.51.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_opinion = {
+			who = FROM
+			modifier = opinion_export_good
+		}
+		reverse_add_opinion = {
+			who = FROM
+			modifier = opinion_export_good
+		}
+		capital_scope = {
+			add_province_modifier = {
+				name = fee_ven_latin_trebizond_ties
+				duration = 7300
+			}
+		}
+		1322 = {
+			add_trade_modifier = {
+				who = ROOT
+				duration = 7300
+				power = 15
+				key = opinion_export_good
+			}
+			add_trade_modifier = {
+				who = FROM
+				duration = 7300
+				power = 15
+				key = opinion_export_good
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Venice_Events.51.OPT1
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				has_opinion = {
+					who = GEN
+					value = 25
+				}
+			}
+			modifier = {
+				factor = 2
+				reverse_has_opinion = {
+					who = GEN
+					value = 25
+				}
+			}
+		}
+		trigger = {
+			exists = GEN
+		}
+
+		add_opinion = {
+			who = GEN
+			modifier = opinion_export_good
+		}
+		reverse_add_opinion = {
+			who = GEN
+			modifier = opinion_export_good
+		}
+		capital_scope = {
+			add_province_modifier = {
+				name = fee_ven_latin_trebizond_ties
+				duration = 7300
+			}
+		}
+		1322 = {
+			add_trade_modifier = {
+				who = ROOT
+				duration = 7300
+				power = 15
+				key = opinion_export_good
+			}
+			add_trade_modifier = {
+				who = GEN
+				duration = 7300
+				power = 15
+				key = opinion_export_good
+			}
+		}
+	}
+}
+
+# Patria del Friuli
+country_event = {
+	id = FEE_Venice_Events.52
+	title = FEE_Venice_Events.52.T
+	desc = FEE_Venice_Events.52.D
+	picture = FORT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VEN
+		is_year = 1464
+		NOT = { is_year = 1473 }
+		owns = 111
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	goto = 111
+
+	option = {
+		name = FEE_Venice_Events.52.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		111 = {
+			add_base_manpower = 2
+			add_province_modifier = {
+				name = local_fortress
+				duration = 7300
+			}
+		}
+	}
+}
+
+# Doge Nicolò Marcello
+country_event = {
+	id = FEE_Venice_Events.53
+	title = FEE_Venice_Events.53.T
+	desc = FEE_Venice_Events.53.D
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VEN
+		is_year = 1473
+		NOT = { is_year = 1474 }
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Venice_Events.53.OPT1
+		ai_chance = {
+			factor = 1
+		}
+		highlight = yes
+
+		define_ruler = {
+			name = "Nicolò Marcello"
+			age = 72
+			culture = venetian
+			religion = catholic
+		}
+		add_inflation = -2
+	}
+
+	option = {
+		name = FEE_Venice_Events.53.OPT2
 		ai_chance = {
 			factor = 0
 		}
@@ -2886,7 +3106,7 @@ country_event = {
 #	option = {
 #		name = FEE_Venice_Events..OPT1
 #		ai_chance = {
-#			factor = 1
+#			factor = 50
 #		}
 #
 #	}

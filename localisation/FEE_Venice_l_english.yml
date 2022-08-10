@@ -217,6 +217,24 @@
  FEE_Venice_Events.49.OPT1: "He will make us rich!"
  FEE_Venice_Events.49.OPT2: "Absolutely not."
 
+ FEE_Venice_Events.50.T: "Nicolò Marcello Bailo di Trebisonda"
+ FEE_Venice_Events.50.D: "The empire of [TRE.GetName] has stood there since the fourth Crusade, when the true rulers and successors of Byzantium, the Komnenos have stood there fighting against the various tides of Arabs, Turks, Persians that have crashed on their strongholds. Diplomatic and trade wise they have always wanted to side with our rivals: The Genoese. \nWho would they choose this time?"
+ FEE_Venice_Events.50.OPT1: "We might negotaite with them?"
+
+ FEE_Venice_Events.51.T: "A Trade Offer from [VEN.GetName]"
+ FEE_Venice_Events.51.D: "The key to our survival has been our land, from our lush and fertile mountains to the safe havens of our natural harbors. And so, it would be a shame if we don't utilize this to its maximum potential. So we will use the mountains as a wall, and our harbors to make our name known around the world, who should we side with this time?"
+ FEE_Venice_Events.51.OPT1: "Those Venetians seem reasonable"
+ FEE_Venice_Events.51.OPT2: "We will still side with [GEN.GetName]"
+
+ FEE_Venice_Events.52.T: "Patria del Friuli"
+ FEE_Venice_Events.52.D: "The treaths on the Friuli province just outside our wonderful capital have become just too dearing lately with armies arriving just at our gates, we must increase the local barracks and fortification in the case of any imminent incursion."
+ FEE_Venice_Events.52.OPT1: "We must secure it"
+
+ FEE_Venice_Events.53.T: "Doge Nicolò Marcello"
+ FEE_Venice_Events.53.D: "Although a lover of glitz and luxuries, his public career was modest and wasteful, especially in the case of the Banco di Soranzo; in fact, many in the Venetian high council favoured his candidature as Doge of Venice given his cautiousness with spending."
+ FEE_Venice_Events.53.OPT1: "Betteer managment!"
+ FEE_Venice_Events.53.OPT2: "How could someone so old guide us?"
+
  #Estate Modifeirs
  fee_ven_nobles_restrained: "Restrained the Barones"
  desc_fee_ven_nobles_restrained: "Restrained the Barones"
@@ -277,6 +295,8 @@
  fee_ven_treaty_constantinople_province: "Treaty of Costantinople"
  fee_ven_aegean_superiority_province: "Aegean Superiority"
  fee_ven_aegean_superiority: "Aegean Superiority"
+
+ fee_ven_latin_trebizond_ties: "Latin-Trebizond Ties"
 
  #Trade Modifeirs
  fee_ven_trade_deal_costantinople: "Venetian Trade Deal"

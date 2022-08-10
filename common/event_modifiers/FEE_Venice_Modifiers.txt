@@ -129,3 +129,10 @@ fee_ven_aegean_superiority_province = {
 	trade_value_modifier = 0.15
 	local_development_cost = -0.15
 }
+
+fee_ven_latin_trebizond_ties = {
+	local_development_cost = -0.15
+	province_trade_power_modifier = 0.15
+	trade_value_modifier = 0.15
+	institution_growth = 4
+}
