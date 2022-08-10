@@ -172,6 +172,51 @@
  FEE_Venice_Events.40.D: "The bloody war started in 1463 between the Serenissima Republic of Venice lead by [VEN.Monarch.GetName] and the Mighty Ottoman Empire of Sultan [TUR.Monarch.GetName] has come to an end after the blood spillage of thousands on each side. Despite the superior number on the Turkish side the quality of our ships removed any possibility for the Turkish fleet to even slightly harm our trade, and in the end we stood superior."
  FEE_Venice_Events.40.OPT1: "Viva San Marco!"
 
+ FEE_Venice_Events.41.T: "Battaglia di Lepanto"
+ FEE_Venice_Events.41.D: "The crash of the Ottoman fleet and Venetian fleet during the battle was staggering, for the first time in the history of the known world cannons were used on top of boats and the effect was thundering, the clash of bronze on the wooden planks broke parts of the ships wiith fumes rising over the ocean like the ancient greek fire, splinters flied through the leather armour of the soldiers and the non-armoured sailors with blood splattering and tainting the blue sea."
+ FEE_Venice_Events.41.OPT1: "The fire was both terrific and terrifying!"
+
+ FEE_Venice_Events.42.T: "Voyages of Niccolò Tron"
+ FEE_Venice_Events.42.D: "The Patricial family of Tron from Ancona, the lesser Adriatic Maritime Republic, has always have a particular eye for trading within the benevolence of the Republic. Niccolò Tron, a merchant from the Tron family, with his skill and nose for business was able to pile up a wealth of nearly 90 ducats by himselves and has now proposed to the Republic to navigate in the Near East in search of fame and fortune."
+ FEE_Venice_Events.42.OPT1: "Might the Lion's wind be on your side!"
+ FEE_Venice_Events.42.OPT2: "This amount of ducats should suffice!"
+ FEE_Venice_Events.42.OPT3: "We can't finance this. He'll help home"
+
+ FEE_Venice_Events.43.T: "Arrival at [321.GetName]"
+ FEE_Venice_Events.43.D: "The voyage from my dear home in [VEN.Capital.GetName] to [321.GetName] has proceeded without any real problem, we stopped a while in [142.GetName] and then [163.GetName] to buy back some provvisions and we passed to [320.GetName] to pay a visit at the [320.Owner.GetName] and homage to the sacred house of the Master of the Hospitallier in the city, after that we set sail to [321.GetName] where we arrived in a few days of rowing, the island of Farmagosta is still as beautiful as ever and the city has still retained the majestic influx of the Knights that for decades lingered in this place after the First Crusade"
+ FEE_Venice_Events.43.OPT1: "The proposal will bring money!"
+ FEE_Venice_Events.43.OPT2: "We trade as we see fit"
+
+ FEE_Venice_Events.44.T: "Trading in [321.GetName]"
+ FEE_Venice_Events.44.D: "My [321.Owner.Monarch.GetTitle] [321.Owner.Monarch.GetName], an ambassador from [From.GetName] has requested a mutual trade agreement between our two countries, how should we reply?"
+ FEE_Venice_Events.44.OPT1: "Absolutely!"
+ FEE_Venice_Events.44.OPT2: "May damn be damned!"
+
+ FEE_Venice_Events.45.T: "Stopping in the Holy Land?"
+ FEE_Venice_Events.45.D: "After staying in the the island for nearly a year we decided to set sail again towards Egypt, but a few of our most zealot sailros have deemed that we should stop in the Holy land to pay homage to our Lord and Saviour in his house in [379.GetName], should we ask to [379.Owner.GetName] for safe passage until the Holy City to let us pray?"
+ FEE_Venice_Events.45.OPT1: "Ask them to let us pray at Jerusalem"
+ FEE_Venice_Events.45.OPT2: "We won't stop there, our voyages are purely for commerce!"
+
+ FEE_Venice_Events.46.T: "Safe Passage to Jerusalem"
+ FEE_Venice_Events.46.D: "My [379.Owner.Monarch.GetTitle] [379.Owner.Monarch.GetName], a convoy from [From.GetName] lead by Niccolò Tron, one of their trader, on his way to Egypt has asked us, the sacred owner of [379.GetName] safe passage to let them praty at the Holy City, what will be our reply?"
+ FEE_Venice_Events.46.OPT1: "A pilgrim shall always feel safe"
+ FEE_Venice_Events.46.OPT2: "No one enters OUR city!"
+
+ FEE_Venice_Events.47.T: "Arrival in Egypt"
+ FEE_Venice_Events.47.D: "And thus it stood infront of us the Lighthouse of Alexandria and its port, the biggest port of the Egypt and of the Eastern Mediterranean, second to no one, not even Costantinople itself, years of trading with the Italian maritime republic, such as the chestnut from Amalfi, in exchange of spices from the near east like the arabian coffe, or from the India. Maybe we should strike a trade deal with them?"
+ FEE_Venice_Events.47.OPT1: "Maybe we can export some glass of Murano?"
+ FEE_Venice_Events.47.OPT2: "We trade alone"
+
+ FEE_Venice_Events.48.T: "Veneto-Egyptian trade deal"
+ FEE_Venice_Events.48.D: "My [358.Owner.Monarch.GetTitle] [358.Owner.Monarch.GetName], a convoy from [From.GetName] lead by Niccolò Tron, one of their trader has just arrived in Alexandria and has settled in the old latin quarters reserved to the traders and navigators from the Italian peninsula, they want to create a trade agreement between the 2 nations and their pockets seem full of plenty money for us!"
+ FEE_Venice_Events.48.OPT1: "Money is money"
+ FEE_Venice_Events.48.OPT2: "Why should we share?"
+
+ FEE_Venice_Events.49.T: "Doge Niccolò Tron"
+ FEE_Venice_Events.49.D: "It was only in later life that he entered a public career where he distinguished himself for his skill and extreme care for the interests entrusted to him. He held numerous public offices: from ambassador to Pope Paul II, to advisor to Doge Cristoforo Moro, sage of the Maggior Consiglio and Podestà of Padua. On 12 April 1466 he was appointed Procurator of St Mark's and now he might ascend as the Doge of Venice itself!"
+ FEE_Venice_Events.49.OPT1: "He will make us rich!"
+ FEE_Venice_Events.49.OPT2: "Absolutely not."
+
  #Estate Modifeirs
  fee_ven_nobles_restrained: "Restrained the Barones"
  desc_fee_ven_nobles_restrained: "Restrained the Barones"
@@ -243,4 +288,5 @@
  VEN_FANTI_MAR_TT: "Every owned §YCoastal Provinces§! will get:"
  FEE_VEN_CRAINE_DALMATIA_TT: "Every owned §MCoastal Province§! that is either in the §YDalmatia Area§! or has §YSouth Slavic Culture§! in the §MRagusa Trade Node§! will get:"
  VEN_VENETIAN_WARS_BALKANS_CLAIMS_TT: "§Y[Root.GetName]§! will gain §YPermanent Claim§! on all the provinces owned by §Y[TUR.GetName]§! in the §MBalkans Region§! that borders the §M[1310.Province.GetName]§! or §M[1311.Province.GetName]§! or §M[1312.Province.GetName]§! or §M[1319.Province.GetName]§!. \n\nWe might be able to call our Christian brothers in the war!"
- FEE_VEN_TREATY_CONSTANTINOPLE_TT: "Every owned Province that borders the §M[1310.Province.GetName]§! or §M[1311.Province.GetName]§! or §M[1312.Province.GetName]§! or §M[1319.Province.GetName]§! will get:"
+ FEE_VEN_TREATY_CONSTANTINOPLE_TT: "Every Province, owned by [Root.GetName] or it's non Tributary Subjects, that borders the §M[1308.GetAreaName]§! will get:"
+ FEE_VEN_VOYAGES_NICCOLO_TRON_TT: "§MWe will finance the voyages of Niccolò Tron in the Eastern Mediterranean Sea, from Cyprus to Egypt, they might bring wealth and fame to the Republic, but trade has its price.§!"

@@ -414,6 +414,7 @@ country_event = {
 	picture = MILITARY_CAMP_eventPicture
 
 	fire_only_once = yes
+
 	trigger = {
 		OR = {
 			tag = VEN
@@ -426,7 +427,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 12
+		years = 10
 		modifier = {
 			factor = 0.5
 			army_reformer = 2
@@ -1054,6 +1055,7 @@ country_event = {
 
 		define_ruler = {
 			name = "Pasquale Malipiero"
+			age = 53
 			culture = venetian
 			religion = catholic
 			adm = 2
@@ -1315,6 +1317,7 @@ country_event = {
 
 		define_ruler = {
 			name = "Cristoforo Moro"
+			age = 71
 			culture = venetian
 			religion = catholic
 			adm = 2
@@ -2093,12 +2096,7 @@ country_event = {
 			limit = {
 				any_owned_province = {
 					sea_zone = {
-						OR = {
-							province_id = 1310
-							province_id = 1311
-							province_id = 1312
-							province_id = 1319
-						}
+						area = eastern_mediterrenean_area
 					}
 				}
 			}
@@ -2107,12 +2105,7 @@ country_event = {
 				random_owned_province = {
 					limit = {
 						sea_zone = {
-							OR = {
-								province_id = 1310
-								province_id = 1311
-								province_id = 1312
-								province_id = 1319
-							}
+							area = eastern_mediterrenean_area
 						}
 					}
 					add_base_production = -1
@@ -2123,15 +2116,11 @@ country_event = {
 				}
 			}
 			hidden_effect = {
-				every_owned_province = {
+				every_province = {
 					limit = {
+						country_or_non_sovereign_subject_holds = ROOT
 						sea_zone = {
-							OR = {
-								province_id = 1310
-								province_id = 1311
-								province_id = 1312
-								province_id = 1319
-							}
+							area = eastern_mediterrenean_area
 						}
 					}
 					add_base_production = -1
@@ -2199,13 +2188,8 @@ country_event = {
 			limit = {
 				any_owned_province = {
 					sea_zone = {
-						OR = {
-							province_id = 1310
-							province_id = 1311
-							province_id = 1312
-							province_id = 1319
-						}
-					}
+					area = eastern_mediterrenean_area
+				}
 				}
 			}
 			custom_tooltip = FEE_VEN_TREATY_CONSTANTINOPLE_TT
@@ -2213,13 +2197,8 @@ country_event = {
 				random_owned_province = {
 					limit = {
 						sea_zone = {
-							OR = {
-								province_id = 1310
-								province_id = 1311
-								province_id = 1312
-								province_id = 1319
-							}
-						}
+						area = eastern_mediterrenean_area
+					}
 					}
 					add_base_production = 1
 					add_province_modifier = {
@@ -2229,18 +2208,14 @@ country_event = {
 				}
 			}
 			hidden_effect = {
-				every_owned_province = {
+				every_province = {
 					limit = {
+						country_or_non_sovereign_subject_holds = ROOT
 						sea_zone = {
-							OR = {
-								province_id = 1310
-								province_id = 1311
-								province_id = 1312
-								province_id = 1319
-							}
-						}
+						area = eastern_mediterrenean_area
 					}
-					add_base_production = -1
+					}
+					add_base_production = 1
 					add_province_modifier = {
 						name = fee_ven_aegean_superiority_province
 						duration = 7300
@@ -2248,6 +2223,646 @@ country_event = {
 				}
 			}
 		}
+	}
+}
+
+# Battaglia di Lepanto
+country_event = {
+	id = FEE_Venice_Events.41
+	title = FEE_Venice_Events.41.T
+	desc = FEE_Venice_Events.41.D
+	picture = FLAGSHIP_SUNK_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VEN
+		is_year = 1499
+		NOT = { is_year = 1571 }
+		war_with = TUR
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	major = yes
+
+	major_trigger = {
+		OR = {
+			VEN = {
+				capital_scope = {
+					has_discovered = ROOT
+				}
+			}
+			TUR = {
+				capital_scope = {
+					has_discovered = ROOT
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Venice_Events.41.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
+		add_dip_power = 100
+		add_navy_tradition = 15
+		create_admiral = {
+			tradition = 100
+		}
+		TUR = {
+			add_dip_power = 100
+			add_navy_tradition = 15
+			create_admiral = {
+				tradition = 100
+			}
+		}
+	}
+}
+
+#########	Life of Doge Niccolò Tron 1399-1473	#########
+
+# Voyages of Niccolò Tron
+country_event = {
+	id = FEE_Venice_Events.42
+	title = FEE_Venice_Events.42.T
+	desc = FEE_Venice_Events.42.D
+	picture = SHIP_SAILING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VEN
+		is_year = 1399
+		NOT = { is_year = 1466 }
+	}
+
+	mean_time_to_happen = {
+		years = 5
+	}
+
+	option = {
+		name = FEE_Venice_Events.42.OPT1
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				ai = yes
+			}
+		}
+
+		add_dip_power = -50
+		custom_tooltip = FEE_VEN_VOYAGES_NICCOLO_TRON_TT
+		set_country_flag = fee_ven_voyages_niccolo_tron
+	}
+
+	option = {
+		name = FEE_Venice_Events.42.OPT2
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				ai = yes
+			}
+		}
+
+		add_treasury = -25
+		custom_tooltip = FEE_VEN_VOYAGES_NICCOLO_TRON_TT
+		set_country_flag = fee_ven_voyages_niccolo_tron
+	}
+
+	option = {
+		name = FEE_Venice_Events.42.OPT3
+		ai_chance = {
+			factor = 0
+		}
+
+		add_mercantilism = -3
+		define_advisor = {
+			type = trader
+			skill = 2
+			religion = ROOT
+			culture = venetian
+			cost_multiplier = 0.75
+		}
+	}
+}
+
+# Arrival at Cyprus
+country_event = {
+	id = FEE_Venice_Events.43
+	title = FEE_Venice_Events.43.T
+	desc = FEE_Venice_Events.43.D
+	picture = SHIP_SAILING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VEN
+		is_year = 1399
+		has_country_flag = fee_ven_voyages_niccolo_tron
+		NOT = { is_year = 1466 }
+	}
+
+	mean_time_to_happen = {
+		years = 1
+	}
+
+	goto = 321
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = fee_ven_voyages_niccolo_tron_cyprus
+		}
+	}
+
+	option = {
+		name = FEE_Venice_Events.43.OPT1
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				ai = yes
+			}
+		}
+		trigger = {
+			321 = {
+				NOT = { owned_by = ROOT }
+			}
+		}
+
+		add_treasury = -25
+		321 = {
+			owner = {
+				country_event = {
+					id = FEE_Venice_Events.44
+					days = 30
+					random = 15
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Venice_Events.43.OPT2
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				NOT = { treasury = 25 }
+			}
+		}
+
+		add_mercantilism = 5
+	}
+}
+
+# Trading in Cyprus
+country_event = {
+	id = FEE_Venice_Events.44
+	title = FEE_Venice_Events.44.T
+	desc = FEE_Venice_Events.44.D
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+
+	goto = 321
+
+	major = yes
+	major_trigger = {
+		tag = VEN
+	}
+
+	option = {
+		name = FEE_Venice_Events.44.OPT1
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				ai = yes
+			}
+		}
+
+		add_treasury = 25
+		add_dip_power = 15
+		add_opinion = {
+			who = FROM
+			modifier = opinion_export_good
+		}
+		reverse_add_opinion = {
+			who = FROM
+			modifier = opinion_export_good
+		}
+		FROM = {
+			add_mercantilism = 3
+			add_dip_power = 15
+		}
+		377 = {
+			add_trade_modifier = {
+				who = FROM
+				duration = 7300
+				power = 15
+				key = opinion_export_good
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Venice_Events.44.OPT2
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				NOT = {
+					has_opinion = {
+						who = FROM
+						value = 25
+					}
+				}
+			}
+		}
+
+		add_mercantilism = 5
+		add_opinion = {
+			who = FROM
+			modifier = opinion_export_bad
+		}
+		reverse_add_opinion = {
+			who = FROM
+			modifier = opinion_export_bad
+		}
+		377 = {
+			add_trade_modifier = {
+				who = FROM
+				duration = 7300
+				power = -15
+				key = opinion_export_bad
+			}
+		}
+	}
+}
+
+# Stopping in the Holy Land?
+country_event = {
+	id = FEE_Venice_Events.45
+	title = FEE_Venice_Events.45.T
+	desc = FEE_Venice_Events.45.D
+	picture = RELIGION_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VEN
+		is_year = 1399
+		has_country_flag = fee_ven_voyages_niccolo_tron_cyprus
+		NOT = { is_year = 1466 }
+		religion_group = christian
+	}
+
+	mean_time_to_happen = {
+		years = 3
+	}
+
+	goto = 379
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = fee_ven_voyages_niccolo_tron_jerusalem
+		}
+	}
+
+	option = {
+		name = FEE_Venice_Events.45.OPT1
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				ai = yes
+			}
+		}
+		trigger = {
+			379 = {
+				NOT = { owned_by = ROOT }
+			}
+		}
+
+		add_treasury = -10
+		379 = {
+			owner = {
+				country_event = {
+					id = FEE_Venice_Events.46
+					days = 30
+					random = 15
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Venice_Events.45.OPT2
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				NOT = { treasury = 25 }
+			}
+		}
+
+		add_prestige = -5
+	}
+}
+
+# Safe passage to Jerusalem
+country_event = {
+	id = FEE_Venice_Events.46
+	title = FEE_Venice_Events.46.T
+	desc = FEE_Venice_Events.46.D
+	picture = STREET_SPEECH_eventPicture
+
+	is_triggered_only = yes
+
+	goto = 321
+
+	major = yes
+	major_trigger = {
+		tag = VEN
+	}
+
+	option = {
+		name = FEE_Venice_Events.46.OPT1
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				ai = yes
+			}
+			modifier = {
+				factor = 2
+				religion_group = FROM
+			}
+		}
+
+		add_treasury = 10
+		add_dip_power = 15
+		add_opinion = {
+			who = FROM
+			modifier = che_conciliatory_views
+		}
+		reverse_add_opinion = {
+			who = FROM
+			modifier = che_conciliatory_views
+		}
+		FROM = {
+			change_religious_influence_equivalent_fee = { add = 25 }
+		}
+	}
+
+	option = {
+		name = FEE_Venice_Events.46.OPT2
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				NOT = {
+					has_opinion = {
+						who = FROM
+						value = 25
+					}
+				}
+			}
+			modifier = {
+				factor = 2
+				NOT = { religion_group = FROM }
+			}
+		}
+
+		add_mil_power = 15
+		change_religious_influence_equivalent_fee = { add = 25 }
+		add_opinion = {
+			who = FROM
+			modifier = opinion_betrayal
+		}
+		reverse_add_opinion = {
+			who = FROM
+			modifier = opinion_betrayal
+		}
+	}
+}
+
+# Arrival in Egypt
+country_event = {
+	id = FEE_Venice_Events.47
+	title = FEE_Venice_Events.47.T
+	desc = FEE_Venice_Events.47.D
+	picture = SHIP_SAILING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VEN
+		is_year = 1399
+		has_country_flag = fee_ven_voyages_niccolo_tron_jerusalem
+		NOT = { is_year = 1466 }
+		religion_group = christian
+	}
+
+	mean_time_to_happen = {
+		years = 3
+	}
+
+	goto = 358
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = fee_ven_voyages_niccolo_tron_egypt
+		}
+	}
+
+	option = {
+		name = FEE_Venice_Events.47.OPT1
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				ai = yes
+			}
+		}
+		trigger = {
+			379 = {
+				NOT = { owned_by = ROOT }
+			}
+		}
+
+		add_treasury = -50
+		358 = {
+			owner = {
+				country_event = {
+					id = FEE_Venice_Events.48
+					days = 30
+					random = 15
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Venice_Events.47.OPT2
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				NOT = { treasury = 50 }
+			}
+		}
+
+		add_dip_power = 25
+		add_mercantilism = 2
+	}
+}
+
+# Veneto-Egyptian trade deal
+country_event = {
+	id = FEE_Venice_Events.48
+	title = FEE_Venice_Events.48.T
+	desc = FEE_Venice_Events.48.D
+	picture = PORTUGUESE_MERCHANTS_eventPicture
+
+	is_triggered_only = yes
+
+	goto = 358
+
+	major = yes
+	major_trigger = {
+		tag = VEN
+	}
+
+	option = {
+		name = FEE_Venice_Events.48.OPT1
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				ai = yes
+			}
+		}
+
+		add_treasury = 50
+		add_opinion = {
+			who = FROM
+			modifier = opinion_export_good
+		}
+		reverse_add_opinion = {
+			who = FROM
+			modifier = opinion_export_good
+		}
+		358 = {
+			add_base_production = 1
+			add_trade_modifier = {
+				who = FROM
+				duration = 7300
+				power = 25
+				key = opinion_export_good
+			}
+		}
+		FROM = {
+			add_mercantilism = 5
+		}
+	}
+
+	option = {
+		name = FEE_Venice_Events.48.OPT2
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				NOT = {
+					has_opinion = {
+						who = FROM
+						value = 25
+					}
+				}
+			}
+		}
+
+		add_mercantilism = 3
+		add_mil_power = 25
+		add_casus_belli = {
+			target = FROM
+			type = cb_trade_war
+		}
+		add_opinion = {
+			who = FROM
+			modifier = opinion_export_bad
+		}
+		reverse_add_opinion = {
+			who = FROM
+			modifier = opinion_export_bad
+		}
+		358 = {
+			add_trade_modifier = {
+				who = FROM
+				duration = 7300
+				power = -25
+				key = opinion_export_bad
+			}
+		}
+		FROM = {
+			add_mercantilism = -3
+		}
+	}
+}
+
+# Doge Niccolò Tron
+country_event = {
+	id = FEE_Venice_Events.49
+	title = FEE_Venice_Events.49.T
+	desc = FEE_Venice_Events.49.D
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VEN
+		is_year = 1471
+		has_country_flag = fee_ven_voyages_niccolo_tron_egypt
+		NOT = { is_year = 1473 }
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Venice_Events.49.OPT1
+		ai_chance = {
+			factor = 1
+		}
+		highlight = yes
+
+		define_ruler = {
+			name = "Nicolò Tron"
+			age = 72
+			culture = venetian
+			religion = catholic
+			adm = 1
+			dip = 1
+			mil = 1
+		}
+		add_treasury = 90
+		add_mercantilism = 5
+	}
+
+	option = {
+		name = FEE_Venice_Events.49.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
+		add_stability_or_adm_power = yes
 	}
 }
 
