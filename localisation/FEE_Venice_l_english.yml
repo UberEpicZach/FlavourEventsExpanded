@@ -235,13 +235,44 @@
  FEE_Venice_Events.53.OPT1: "Betteer managment!"
  FEE_Venice_Events.53.OPT2: "How could someone so old guide us?"
 
- #Estate Modifeirs
+ FEE_Venice_Events.54.T: "Pietro Mocenigo sopracomito dell'Adriatico"
+ FEE_Venice_Events.54.D: "First of 8 sons of the Mocenigo family, Pietro, born in 1406 in our beautiful Venice, has renown hismelf as the giudice del Proprio and ufficiale di Notte for San Marco, but after the death of his father he entered the marine of our Republic rising to the rank of sopracomito of the Adriatic fleet!"
+ FEE_Venice_Events.54.OPT1: "May he protect our seas!"
+
+ FEE_Venice_Events.55.T: "Catalan Pirates?"
+ FEE_Venice_Events.55.D: "Chasing Catalan pirates, Pietro Mocenigo was shipwrecked on the beach at Brindisi, near [122.GetName] and was imprisoned by the local authorities of [122.Owner.GetName], should we send our diplomat in [122.Owner.Capital.GetName] and try to negotiate his liberty or should we just accept his fate and living it in their hands?"
+ FEE_Venice_Events.55.OPT1: "Send our finest!"
+ FEE_Venice_Events.55.OPT2: "We will mourn him"
+
+ FEE_Venice_Events.56.T: "Mocenigo in Bari"
+ FEE_Venice_Events.56.D: "The wonderful Pietro Mocenigo admiral has washed on our shores at [122.GetName] and been brought to our [Capital.GetName], a few weeks after the Venetian delegation arrived in the capital to negotiate his release"
+ FEE_Venice_Events.56.OPT1: "You can bring him back"
+ FEE_Venice_Events.56.OPT2: "We will be forced to serve us"
+
+ FEE_Venice_Events.57.T: "Captain of the Muda di Beirut"
+ FEE_Venice_Events.57.D: "The commercial route that from Beirut brings goods through venice passing nearby Candia in Crete has lately been under rought times due to the usual incursion and further loss of control by the traders, the Council has appointed our Pietro Mocenigo, already successfull in the Adriatic, as the new captain of the Muda di Beirut."
+ FEE_Venice_Events.57.OPT1: "Here comes the money!"
+
+ FEE_Venice_Events.58.T: "Admiral Pietro Mocenigo"
+ FEE_Venice_Events.58.D: "In the past years, the growing threat to the Armada, our highest navy, has brought the council to appoint Pietro Mocenigo as admiral and supreme leader of our navies."
+ FEE_Venice_Events.58.OPT1: "Death!"
+
+ FEE_Venice_Events.59.T: "Doge Pietro Mocenigo"
+ FEE_Venice_Events.59.D: "His succsefful naval career inside the republic and his wonderful mercantile success in the Eastern Mediterranean has brought our Admiral to the eyes of the Council for the next Doge, should he be elected?"
+ FEE_Venice_Events.59.OPT1: "He shall guide us like a ship"
+ FEE_Venice_Events.59.OPT2: "No, we can't abandon [Root.Monarch.GetName]"
+
+ FEE_Venice_Events.60.T: "Malaria Kills Pietro Mocenigo"
+ FEE_Venice_Events.60.D: "Despite our best efforts, Pietro Mocenigo has died to Malaria which attacked it during a military campaign, a sad day for the Republic."
+ FEE_Venice_Events.60.OPT1: "Short but a strong reign"
+
+# Estate Modifeirs
  fee_ven_nobles_restrained: "Restrained the Barones"
  desc_fee_ven_nobles_restrained: "Restrained the Barones"
  fee_ven_nobles_happy: "Nobles are Happy"
  desc_fee_ven_nobles_happy: "Nobles are Happy"
 
- #Event Modifiers
+# Event Modifiers
  fee_ven_mercantile_fleet: "Mercantile Fleet"
  desc_fee_ven_mercantile_fleet: "Mercantile Fleet"
  fee_ven_galley_fleet: "Galley Fleet"
@@ -298,13 +329,14 @@
 
  fee_ven_latin_trebizond_ties: "Latin-Trebizond Ties"
 
- #Trade Modifeirs
+# Trade Modifeirs
  fee_ven_trade_deal_costantinople: "Venetian Trade Deal"
  desc_fee_ven_trade_deal_costantinople: "Venetian Trade Deal"
  fee_ven_bartolomeo_marcello: "Bartolomeo Marcello"
  desc_fee_ven_bartolomeo_marcello: "Bartolomeo Marcello"
+ fee_ven_pietro_mocenigo: "Pietro Mocenigo"
 
- #Tooltips
+# Tooltips
  VEN_FANTI_MAR_TT: "Every owned §YCoastal Provinces§! will get:"
  FEE_VEN_CRAINE_DALMATIA_TT: "Every owned §MCoastal Province§! that is either in the §YDalmatia Area§! or has §YSouth Slavic Culture§! in the §MRagusa Trade Node§! will get:"
  VEN_VENETIAN_WARS_BALKANS_CLAIMS_TT: "§Y[Root.GetName]§! will gain §YPermanent Claim§! on all the provinces owned by §Y[TUR.GetName]§! in the §MBalkans Region§! that borders the §M[1310.Province.GetName]§! or §M[1311.Province.GetName]§! or §M[1312.Province.GetName]§! or §M[1319.Province.GetName]§!. \n\nWe might be able to call our Christian brothers in the war!"

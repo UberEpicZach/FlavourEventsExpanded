@@ -1349,7 +1349,7 @@ country_event = {
 			factor = 0
 		}
 
-		add_stability_or_adm_power = yes
+		add_legitimacy_equivalent = { amount = 5 republican_tradition = 3 }
 		add_estate_loyalty = {
 			estate = estate_church
 			loyalty = -15
@@ -2394,8 +2394,8 @@ country_event = {
 			owner = {
 				country_event = {
 					id = FEE_Venice_Events.44
-					days = 30
-					random = 15
+					days = 60
+					random = 30
 				}
 			}
 		}
@@ -2549,8 +2549,8 @@ country_event = {
 			owner = {
 				country_event = {
 					id = FEE_Venice_Events.46
-					days = 30
-					random = 15
+					days = 60
+					random = 30
 				}
 			}
 		}
@@ -2696,8 +2696,8 @@ country_event = {
 			owner = {
 				country_event = {
 					id = FEE_Venice_Events.48
-					days = 30
-					random = 15
+					days = 60
+					random = 30
 				}
 			}
 		}
@@ -2853,7 +2853,7 @@ country_event = {
 			factor = 0
 		}
 
-		add_stability_or_adm_power = yes
+		add_legitimacy_equivalent = { amount = 5 republican_tradition = 3 }
 	}
 }
 
@@ -3082,7 +3082,365 @@ country_event = {
 			factor = 0
 		}
 
-		add_stability_or_adm_power = yes
+		add_legitimacy_equivalent = { amount = 5 republican_tradition = 3 }
+	}
+}
+
+#########	Life of Doge Pietro Mocenigo 1406-1476	#########
+
+# Pietro Mocenigo sopracomito Adriatic
+country_event = {
+	id = FEE_Venice_Events.54
+	title = FEE_Venice_Events.54.T
+	desc = FEE_Venice_Events.54.D
+	picture = NAVAL_MILITARY_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VEN
+		is_year = 1442
+		NOT = { is_year = 1449 }
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Venice_Events.54.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		define_admiral = {
+			name = "Pietro Mocenigo"
+			fire = 1
+			shock = 2
+			manuever = 5
+			siege = 0
+			trait = extortioner_personality
+		}
+		137 = {
+			add_trade_modifier = {
+				who = ROOT
+				duration = 1825
+				power = 10
+				key = fee_ven_pietro_mocenigo
+			}
+		}
+	}
+}
+
+# Catalan Pirates?
+country_event = {
+	id = FEE_Venice_Events.55
+	title = FEE_Venice_Events.55.T
+	desc = FEE_Venice_Events.55.D
+	picture = BARBARY_PIRATES_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VEN
+		general_with_name = "Pietro Mocenigo"
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	goto = 1933
+
+	option = {
+		name = FEE_Venice_Events.55.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_dip_power = -50
+		122 = {
+			owner = {
+				country_event = {
+					id = FEE_Venice_Events.56
+					days = 30
+					random = 15
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Venice_Events.55.OPT2
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+			}
+		}
+
+		kill_leader = admiral
+		137 = {
+			remove_trade_modifier = {
+				who = ROOT
+				key = fee_ven_pietro_mocenigo
+			}
+		}
+	}
+}
+
+# Mocenigo in Bari
+country_event = {
+	id = FEE_Venice_Events.56
+	title = FEE_Venice_Events.56.T
+	desc = FEE_Venice_Events.56.D
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Venice_Events.56.OPT1
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				ai = yes
+			}
+		}
+
+		add_dip_power = 50
+		add_opinion = {
+			who = FROM
+			modifier = opinion_eased_tension
+		}
+		reverse_add_opinion = {
+			who = FROM
+			modifier = opinion_eased_tension
+		}
+	}
+
+	major = yes
+	major_trigger = {
+		tag = VEN
+	}
+
+	option = {
+		name = FEE_Venice_Events.56.OPT1
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				NOT = {
+					has_opinion = {
+						who = ROOT
+						value = 0
+					}
+				}
+			}
+		}
+
+		define_admiral = {
+			name = "Pietro Mocenigo"
+			fire = 1
+			shock = 2
+			manuever = 5
+			siege = 0
+			trait = extortioner_personality
+		}
+		137 = {
+			add_trade_modifier = {
+				who = ROOT
+				duration = 3650
+				power = 10
+				key = fee_ven_pietro_mocenigo
+			}
+		}
+	}
+}
+
+# Captain of the Muda of Beirut
+country_event = {
+	id = FEE_Venice_Events.57
+	title = FEE_Venice_Events.57.T
+	desc = FEE_Venice_Events.57.D
+	picture = NAVAL_MILITARY_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VEN
+		general_with_name = "Pietro Mocenigo"
+		is_year = 1449
+		NOT = { is_year = 1470 }
+	}
+
+	mean_time_to_happen = {
+		years = 1
+	}
+
+	option = {
+		name = FEE_Venice_Events.57.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		377 = {
+			add_trade_modifier = {
+				who = ROOT
+				duration = 7300
+				power = 10
+				key = fee_ven_pietro_mocenigo
+			}
+		}
+	}
+}
+
+# Admiral Pietro Mocenigo
+country_event = {
+	id = FEE_Venice_Events.58
+	title = FEE_Venice_Events.58.T
+	desc = FEE_Venice_Events.58.D
+	picture = NAVAL_MILITARY_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VEN
+		is_year = 1470
+		NOT = { is_year = 1474 }
+	}
+
+	mean_time_to_happen = {
+		years = 1
+		modifier = {
+			factor = 0.5
+			had_recent_war = 5
+		}
+		modifier = {
+			factor = 0.1
+			had_recent_war = 10
+		}
+	}
+
+	option = {
+		name = FEE_Venice_Events.58.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		define_admiral = {
+			name = "Pietro Mocenigo"
+			fire = 5
+			shock = 4
+			manuever = 5
+			siege = 0
+			trait = ram_raider_personality
+		}
+		if = {
+			limit = {
+				capital_scope = {
+					has_port = yes
+				}
+			}
+			add_sailors = 730
+			capital_scope = {
+				galley = ROOT
+				galley = ROOT
+				galley = ROOT
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_province = {
+					has_port = yes
+				}
+			}
+			add_sailors = 730
+			random_owned_province = {
+				limit = {
+					has_port = yes
+				}
+				galley = ROOT
+				galley = ROOT
+				galley = ROOT
+			}
+		}
+	}
+}
+
+# Doge Nicolò Marcello
+country_event = {
+	id = FEE_Venice_Events.59
+	title = FEE_Venice_Events.59.T
+	desc = FEE_Venice_Events.59.D
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VEN
+		is_year = 1474
+		NOT = { is_year = 1476 }
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Venice_Events.59.OPT1
+		ai_chance = {
+			factor = 1
+		}
+		highlight = yes
+
+		define_ruler = {
+			name = "Pietro Mocenigo"
+			age = 68
+			culture = venetian
+			religion = catholic
+		}
+		add_navy_tradition = 5
+		add_corruption = -1
+	}
+
+	option = {
+		name = FEE_Venice_Events.59.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
+		add_legitimacy_equivalent = { amount = 5 republican_tradition = 3 }
+	}
+}
+
+# Malaria kills Pietro Mocenigo
+country_event = {
+	id = FEE_Venice_Events.60
+	title = FEE_Venice_Events.60.T
+	desc = FEE_Venice_Events.60.D
+	picture = PLAGUE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VEN
+		is_year = 1476
+		has_ruler = "Pietro Mocenigo"
+		NOT = { is_year = 1477 }
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Venice_Events.60.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		kill_ruler = yes
 	}
 }
 
