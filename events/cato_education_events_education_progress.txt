@@ -78,7 +78,7 @@ country_event = {
 			factor = 0.5
 			modifier = {
 				factor = 0
-				has_ruler_flag = started_admin_education
+				has_heir_flag = started_adm_education
 				heir_adm = 3
 			}
 			modifier = {
@@ -93,7 +93,7 @@ country_event = {
 			}
 			modifier = {
 				factor = 4
-				has_ruler_flag = started_admin_education
+				has_heir_flag = started_adm_education
 				NOT = { heir_adm = 1 }
 			}
 			modifier = {
@@ -692,7 +692,7 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_education_progress.0002.OPT1
+		name = cato_education_events_education_progress.0002.a
 		random_ally = {
 			limit = {
 				NOT = {
@@ -732,14 +732,14 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_education_progress.0003.OPT1
+		name = cato_education_events_education_progress.0003.a
 		subtract_education_progress_small = yes
 		ai_chance = {
 			factor = 1
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.0003.OPT2
+		name = cato_education_events_education_progress.0003.b
 		random = {
 			chance = 50
 			subtract_education_progress_medium = yes
@@ -762,7 +762,7 @@ country_event = {
 		is_lesser_in_union = no
 		if = {
 			limit = {
-				has_ruler_flag = started_admin_education
+				has_heir_flag = started_adm_education
 			}
 			NOT = {
 				heir_adm = 3
@@ -788,14 +788,14 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_education_progress.0004.OPT1 ### He'll figure it out, I'm sure...
+		name = cato_education_events_education_progress.0004.a ### He'll figure it out, I'm sure...
 		subtract_education_progress_small = yes
 		ai_chance = {
 			factor = 1
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.0004.OPT2 ### Buy more material
+		name = cato_education_events_education_progress.0004.b ### Buy more material
 		if = {
 			limit = {
 				NOT = {
@@ -808,7 +808,7 @@ country_event = {
 			limit = {
 				monthly_income = 4
 				NOT = {
-					monthly_income = 41
+					monthly_income = 42
 				}
 			}
 			add_years_of_income = -1
@@ -821,12 +821,12 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.0004.OPT3 ### I shall personally tutor him
+		name = cato_education_events_education_progress.0004.c ### I shall personally tutor him
 		highlight = yes
 		trigger = {
 			if = {
 				limit = {
-					has_ruler_flag = started_admin_education
+					has_heir_flag = started_adm_education
 				}
 				OR = {
 					adm = 4
@@ -871,7 +871,7 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_education_progress.0005.OPT1
+		name = cato_education_events_education_progress.0005.a
 		add_education_progress_tiny = yes
 		ai_chance = {
 			factor = 1
@@ -892,7 +892,7 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_education_progress.0006.OPT1 ###Support the Tutor
+		name = cato_education_events_education_progress.0006.a ###Support the Tutor
 		add_heir_claim = -10
 		add_mandate = -3
 		add_meritocracy = 5
@@ -901,7 +901,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.0006.OPT2 ###Support the Heir
+		name = cato_education_events_education_progress.0006.b ###Support the Heir
 		subtract_education_progress_tiny = yes
 		add_meritocracy = -5
 		ai_chance = {
@@ -909,10 +909,10 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.0006.OPT3 ###Find a compromise
+		name = cato_education_events_education_progress.0006.c ###Find a compromise
 		if = {
 			limit = {
-				has_ruler_flag = started_admin_education
+				has_heir_flag = started_adm_education
 			}
 			add_adm_power = -50
 		}
@@ -949,7 +949,7 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_education_progress.0007.OPT1
+		name = cato_education_events_education_progress.0007.a
 		add_education_progress_small = yes
 		ai_chance = {
 			factor = 1
@@ -971,7 +971,7 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_education_progress.0008.OPT1
+		name = cato_education_events_education_progress.0008.a
 		subtract_education_progress_tiny = yes	
 		ai_chance = {
 			factor = 1
@@ -992,10 +992,10 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_education_progress.0009.OPT1
+		name = cato_education_events_education_progress.0009.a
 		if = {
 			limit = {
-				has_ruler_flag = started_admin_education
+				has_heir_flag = started_adm_education
 			}
 			add_adm_power = -15
 		}
@@ -1023,7 +1023,7 @@ country_event = {
 			limit = {
 				monthly_income = 1
 				NOT = {
-					monthly_income = 416667
+					monthly_income = 42
 				}
 			}
 			add_years_of_income = -0.5
@@ -1038,7 +1038,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.0009.OPT2
+		name = cato_education_events_education_progress.0009.b
 		subtract_education_progress_large = yes
 		set_heir_flag = tutor_fraud
 		ai_chance = {
@@ -1060,12 +1060,12 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_education_progress.0010.OPT1
+		name = cato_education_events_education_progress.0010.a
 		add_education_progress_medium = yes
 		if = {
 			limit = {
 				NOT = {
-					monthly_income = 20
+					monthly_income = 21
 				}
 			}
 			add_years_of_income = -1
@@ -1079,7 +1079,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.0010.OPT2
+		name = cato_education_events_education_progress.0010.b
 		set_heir_flag = tutored_by_rulers_tutor
 		ai_chance = {
 			factor = 1
@@ -1101,7 +1101,7 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_education_progress.0011.OPT1
+		name = cato_education_events_education_progress.0011.a
 		subtract_education_progress_medium = yes
 		add_heir_claim = -10
 		set_heir_flag = decadent_heir
@@ -1124,14 +1124,14 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_education_progress.0012.OPT1
+		name = cato_education_events_education_progress.0012.a
 		subtract_education_progress_huge = yes
 		ai_chance = {
 			factor = 0
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.0012.OPT2
+		name = cato_education_events_education_progress.0012.b
 		subtract_education_progress_small = yes
 		custom_tooltip = HEIR_CHANGE_EDUCATION_SUBCATEGORY
 		hidden_effect = {
@@ -1171,7 +1171,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.0012.OPT3
+		name = cato_education_events_education_progress.0012.c
 		custom_tooltip = HEIR_CHANGE_EDUCATION_CATEGORY
 		hidden_effect = {
 			clr_heir_flag = heir_chose_education_subcategory
@@ -1200,7 +1200,7 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_setup_hereditary.1.OPT1
+		name = cato_education_events_setup_hereditary.1.a
 		trigger = {
 			NOT = { has_heir_flag = clerical_education }
 		}
@@ -1220,7 +1220,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_setup_hereditary.1.OPT2
+		name = cato_education_events_setup_hereditary.1.b
 		trigger = {
 			NOT = { has_heir_flag = administrative_education }
 		}
@@ -1244,7 +1244,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_setup_hereditary.1.OPT3
+		name = cato_education_events_setup_hereditary.1.c
 		trigger = {
 			NOT = { has_heir_flag = scholastic_education }
 		}
@@ -1260,7 +1260,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_setup_hereditary.1.OPT1
+		name = cato_education_events_setup_hereditary.1.a
 		trigger = {
 			NOT = { has_heir_flag = diplomacy_education }
 		}
@@ -1280,7 +1280,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_setup_hereditary.1.OPT2
+		name = cato_education_events_setup_hereditary.1.b
 		trigger = {
 			NOT = { has_heir_flag = intrigue_education }
 		}
@@ -1296,7 +1296,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_setup_hereditary.1.OPT3
+		name = cato_education_events_setup_hereditary.1.c
 		trigger = {
 			NOT = { has_heir_flag = trade_education }
 		}
@@ -1316,7 +1316,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.1.OPT1
+		name = cato_education_events_education_progress.1.a
 		trigger = {
 			NOT = { has_heir_flag = martial_education }
 		}
@@ -1336,7 +1336,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.1.OPT2
+		name = cato_education_events_education_progress.1.b
 		trigger = {
 			NOT = { has_heir_flag = naval_education }
 		}
@@ -1356,7 +1356,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.1.OPT3
+		name = cato_education_events_education_progress.1.c
 		trigger = {
 			NOT = { has_heir_flag = logistics_education }
 		}
@@ -1390,7 +1390,7 @@ country_event = {
 	}
 	
 	option = {
-		name = cato_education_events_education_progress.1.OPT1
+		name = cato_education_events_education_progress.1.a
 		trigger = {
 			NOT = { has_heir_flag = clerical_education }
 		}
@@ -1409,7 +1409,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.1.OPT2
+		name = cato_education_events_education_progress.1.b
 		trigger = {
 			NOT = { has_heir_flag = administrative_education }
 		}
@@ -1432,7 +1432,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.1.OPT3
+		name = cato_education_events_education_progress.1.c
 		trigger = {
 			NOT = { has_heir_flag = scholastic_education }
 		}
@@ -1461,7 +1461,7 @@ country_event = {
 	}
 	
 	option = {
-		name = cato_education_events_setup_hereditary.1.OPT1
+		name = cato_education_events_setup_hereditary.1.a
 		trigger = {
 			NOT = { has_heir_flag = diplomacy_education }
 		}
@@ -1480,7 +1480,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_setup_hereditary.1.OPT2
+		name = cato_education_events_setup_hereditary.1.b
 		trigger = {
 			NOT = { has_heir_flag = intrigue_education }
 		}
@@ -1495,7 +1495,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_setup_hereditary.1.OPT3
+		name = cato_education_events_setup_hereditary.1.c
 		trigger = {
 			NOT = { has_heir_flag = trade_education }
 		}
@@ -1528,7 +1528,7 @@ country_event = {
 	}
 	
 	option = {
-		name = cato_education_events_education_progress.1.OPT1
+		name = cato_education_events_education_progress.1.a
 		trigger = {
 			NOT = { has_heir_flag = martial_education }
 		}
@@ -1547,7 +1547,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.1.OPT2
+		name = cato_education_events_education_progress.1.b
 		trigger = {
 			NOT = { has_heir_flag = naval_education }
 		}
@@ -1566,7 +1566,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.1.OPT3
+		name = cato_education_events_education_progress.1.c
 		trigger = {
 			NOT = { has_heir_flag = logistics_education }
 		}
@@ -1609,7 +1609,7 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_education_progress.1000.OPT1
+		name = cato_education_events_education_progress.1000.a
 		add_education_progress_medium = yes
 		ai_chance = {
 			factor = 1
@@ -1638,7 +1638,7 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_education_progress.1001.OPT1
+		name = cato_education_events_education_progress.1001.a
 		if = {
 			limit = {
 				capital_scope = {
@@ -1676,7 +1676,7 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_education_progress.1002.OPT1
+		name = cato_education_events_education_progress.1002.a
 		
 		add_education_progress_medium = yes
 		ai_chance = {
@@ -1713,7 +1713,7 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_education_progress.1003.OPT1
+		name = cato_education_events_education_progress.1003.a
 		country_event = {
 			id = cato_education_events_education_progress.1004
 		}
@@ -1722,7 +1722,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.1003.OPT2
+		name = cato_education_events_education_progress.1003.b
 		ai_chance = {
 			factor = 1
 		}
@@ -1741,7 +1741,7 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_education_progress.1003.OPT1
+		name = cato_education_events_education_progress.1003.a
 		set_heir_flag = he_critical_success
 		country_event = {
 			id = cato_education_events_education_progress.1005
@@ -1751,7 +1751,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.1003.OPT1
+		name = cato_education_events_education_progress.1003.a
 		set_heir_flag = he_success
 		country_event = {
 			id = cato_education_events_education_progress.1005
@@ -1761,7 +1761,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.1003.OPT1
+		name = cato_education_events_education_progress.1003.a
 		set_heir_flag = he_neutral
 		country_event = {
 			id = cato_education_events_education_progress.1005
@@ -1771,7 +1771,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.1003.OPT1
+		name = cato_education_events_education_progress.1003.a
 		set_heir_flag = he_fail
 		country_event = {
 			id = cato_education_events_education_progress.1005
@@ -1828,7 +1828,7 @@ country_event = {
 	trigger = {
 	}
 	option = {
-		name = cato_education_events_education_progress.1005.OPT1
+		name = cato_education_events_education_progress.1005.a
 		trigger = {
 			has_heir_flag = he_critical_success
 		}
@@ -1851,7 +1851,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.1005.OPT2
+		name = cato_education_events_education_progress.1005.b
 		trigger = {
 			has_heir_flag = he_success
 		}
@@ -1868,7 +1868,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.1005.OPT3
+		name = cato_education_events_education_progress.1005.c
 		trigger = {
 			has_heir_flag = he_neutral
 		}
@@ -1879,7 +1879,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.1005.D
+		name = cato_education_events_education_progress.1005.d
 		trigger = {
 			has_heir_flag = he_fail
 		}
@@ -1926,7 +1926,7 @@ country_event = {
 	}
 	
 	option = {
-		name = cato_education_events_education_progress.1006.OPT1 ###Allow
+		name = cato_education_events_education_progress.1006.a ###Allow
 		country_event = {
 			id = cato_education_events_education_progress.1007
 		}
@@ -1935,7 +1935,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.1006.OPT2 ###They'll be better at home
+		name = cato_education_events_education_progress.1006.b ###They'll be better at home
 		ai_chance = {
 			factor = 1
 		}
@@ -1954,7 +1954,7 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_education_progress.1003.OPT1
+		name = cato_education_events_education_progress.1003.a
 		set_heir_flag = he_critical_success
 		country_event = {
 			id = cato_education_events_education_progress.1008
@@ -1964,7 +1964,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.1003.OPT1
+		name = cato_education_events_education_progress.1003.a
 		set_heir_flag = he_success
 		country_event = {
 			id = cato_education_events_education_progress.1008
@@ -1974,7 +1974,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.1003.OPT1
+		name = cato_education_events_education_progress.1003.a
 		set_heir_flag = he_neutral
 		country_event = {
 			id = cato_education_events_education_progress.1008
@@ -1984,7 +1984,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.1003.OPT1
+		name = cato_education_events_education_progress.1003.a
 		set_heir_flag = he_fail
 		country_event = {
 			id = cato_education_events_education_progress.1008
@@ -2045,7 +2045,7 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_education_progress.1008.OPT1
+		name = cato_education_events_education_progress.1008.a
 		trigger = {
 			has_heir_flag = he_critical_success
 		}
@@ -2069,7 +2069,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.1008.OPT2
+		name = cato_education_events_education_progress.1008.b
 		trigger = {
 			has_heir_flag = he_success
 		}
@@ -2086,7 +2086,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.1008.OPT3
+		name = cato_education_events_education_progress.1008.c
 		trigger = {
 			has_heir_flag = he_neutral
 		}
@@ -2097,7 +2097,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.1008.D
+		name = cato_education_events_education_progress.1008.d
 		trigger = {
 			has_heir_flag = he_fail
 		}
@@ -2126,7 +2126,7 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_education_progress.1009.OPT1
+		name = cato_education_events_education_progress.1009.a
 		set_heir_flag = got_trait_education
 		add_heir_personality = zealot_personality
 		ai_chance = {
@@ -2146,7 +2146,7 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_education_progress.1010.OPT1
+		name = cato_education_events_education_progress.1010.a
 		set_heir_flag = got_trait_education
 		add_heir_personality = tolerant_personality
 		ai_chance = {
@@ -2179,7 +2179,7 @@ country_event = {
 	}
 	
 	option = {
-		name = cato_education_events_education_progress.1011.OPT1 ###Allow
+		name = cato_education_events_education_progress.1011.a ###Allow
 		country_event = {
 			id = cato_education_events_education_progress.1012
 		}
@@ -2188,7 +2188,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.1011.OPT2 ###They'll be better at home
+		name = cato_education_events_education_progress.1011.b ###They'll be better at home
 		ai_chance = {
 			factor = 1
 		}
@@ -2207,7 +2207,7 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_education_progress.1012.OPT1
+		name = cato_education_events_education_progress.1012.a
 		set_heir_flag = he_critical_success
 		country_event = {
 			id = cato_education_events_education_progress.1013
@@ -2217,7 +2217,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.1012.OPT1
+		name = cato_education_events_education_progress.1012.a
 		set_heir_flag = he_success
 		country_event = {
 			id = cato_education_events_education_progress.1013
@@ -2227,7 +2227,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.1012.OPT1
+		name = cato_education_events_education_progress.1012.a
 		set_heir_flag = he_neutral_1
 		country_event = {
 			id = cato_education_events_education_progress.1013
@@ -2237,7 +2237,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.1012.OPT1
+		name = cato_education_events_education_progress.1012.a
 		set_heir_flag = he_neutral_2
 		country_event = {
 			id = cato_education_events_education_progress.1013
@@ -2247,7 +2247,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.1012.OPT1
+		name = cato_education_events_education_progress.1012.a
 		set_heir_flag = he_fail
 		country_event = {
 			id = cato_education_events_education_progress.1013
@@ -2257,7 +2257,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.1012.OPT1
+		name = cato_education_events_education_progress.1012.a
 		set_heir_flag = he_critical_fail
 		country_event = {
 			id = cato_education_events_education_progress.1013
@@ -2334,7 +2334,7 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_education_progress.10013.OPT1
+		name = cato_education_events_education_progress.10013.a
 		trigger = {
 			has_heir_flag = he_critical_success
 		}
@@ -2348,7 +2348,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.1013.OPT2
+		name = cato_education_events_education_progress.1013.b
 		trigger = {
 			has_heir_flag = he_success
 		}
@@ -2365,7 +2365,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.1013.OPT3
+		name = cato_education_events_education_progress.1013.c
 		trigger = {
 			has_heir_flag = he_neutral_1
 		}
@@ -2376,7 +2376,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.1013.OPT3
+		name = cato_education_events_education_progress.1013.c
 		trigger = {
 			has_heir_flag = he_neutral_2
 		}
@@ -2388,7 +2388,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.1013.D
+		name = cato_education_events_education_progress.1013.d
 		trigger = {
 			has_heir_flag = he_fail
 		}
@@ -2405,7 +2405,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.1013.D
+		name = cato_education_events_education_progress.1013.d
 		trigger = {
 			has_heir_flag = he_critical_fail
 		}
@@ -2439,7 +2439,7 @@ country_event = {
 	}
 	
 	option = {
-		name = cato_education_events_education_progress.1014.OPT1 ###Allow
+		name = cato_education_events_education_progress.1014.a ###Allow
 		country_event = {
 			id = cato_education_events_education_progress.1015
 		}
@@ -2448,7 +2448,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.1014.OPT2 ###They'll be better at court
+		name = cato_education_events_education_progress.1014.b ###They'll be better at court
 		ai_chance = {
 			factor = 1
 		}
@@ -2463,11 +2463,16 @@ country_event = {
 	is_triggered_only = yes
 	hidden = yes
 	immediate = {
+		clr_heir_flag = he_critical_fail
+		clr_heir_flag = he_critical_success
+		clr_heir_flag = he_success
+		clr_heir_flag = he_neutral
+		clr_heir_flag = he_fail
 	}
 	
 	
 	option = {
-		name = cato_education_events_education_progress.1012.OPT1
+		name = cato_education_events_education_progress.1012.a
 		set_heir_flag = he_critical_success
 		country_event = {
 			id = cato_education_events_education_progress.1016
@@ -2477,7 +2482,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.1012.OPT1
+		name = cato_education_events_education_progress.1012.a
 		set_heir_flag = he_success
 		country_event = {
 			id = cato_education_events_education_progress.1016
@@ -2487,7 +2492,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.1012.OPT1
+		name = cato_education_events_education_progress.1012.a
 		set_heir_flag = he_neutral
 		country_event = {
 			id = cato_education_events_education_progress.1016
@@ -2497,7 +2502,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.1012.OPT1
+		name = cato_education_events_education_progress.1012.a
 		set_heir_flag = he_fail
 		country_event = {
 			id = cato_education_events_education_progress.1016
@@ -2507,7 +2512,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.1012.OPT1
+		name = cato_education_events_education_progress.1012.a
 		set_heir_flag = he_critical_fail
 		country_event = {
 			id = cato_education_events_education_progress.1016
@@ -2577,7 +2582,7 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_education_progress.1016.OPT1
+		name = cato_education_events_education_progress.1016.a
 		trigger = {
 			has_heir_flag = he_critical_success
 		}
@@ -2588,7 +2593,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.1016.OPT2
+		name = cato_education_events_education_progress.1016.b
 		trigger = {
 			has_heir_flag = he_success
 		}
@@ -2599,7 +2604,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.1016.OPT3
+		name = cato_education_events_education_progress.1016.c
 		trigger = {
 			has_heir_flag = he_neutral
 		}
@@ -2613,7 +2618,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.1016.D
+		name = cato_education_events_education_progress.1016.d
 		trigger = {
 			has_heir_flag = he_fail
 		}
@@ -2632,7 +2637,7 @@ country_event = {
 		trigger = {
 			has_heir_flag = he_critical_fail
 		}
-		kill_heir = {}
+		remove_heir = {}
 		add_estate_loyalty = {
 			estate = estate_church
 			loyalty = 10
@@ -2675,7 +2680,7 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_education_progress.1017.OPT1
+		name = cato_education_events_education_progress.1017.a
 		if = {
 			limit = {
 				religion = hinduism
@@ -2791,7 +2796,7 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_education_progress.1018.OPT1
+		name = cato_education_events_education_progress.1018.a
 		trigger = {
 			any_owned_province = {
 				NOT = { religion_group = ROOT }
@@ -2806,7 +2811,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.1018.OPT2
+		name = cato_education_events_education_progress.1018.b
 		trigger = {
 			any_owned_province = {
 				NOT = { religion_group = ROOT }
@@ -2821,7 +2826,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.1018.OPT3
+		name = cato_education_events_education_progress.1018.c
 		trigger = {
 			any_owned_province = {
 				religion_group = ROOT
@@ -2837,7 +2842,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.1018.D
+		name = cato_education_events_education_progress.1018.d
 		trigger = {
 			any_owned_province = {
 				religion_group = ROOT
@@ -2913,7 +2918,7 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_education_progress.1019.OPT1
+		name = cato_education_events_education_progress.1019.a
 		trigger = {
 			has_heir_flag = heir_appease_heathen
 		}
@@ -2927,7 +2932,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.1019.OPT2
+		name = cato_education_events_education_progress.1019.b
 		trigger = {
 			has_heir_flag = heir_offend_heathen
 		}
@@ -2941,7 +2946,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.1019.OPT1
+		name = cato_education_events_education_progress.1019.a
 		trigger = {
 			has_heir_flag = heir_appease_heretic
 		}
@@ -2955,7 +2960,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.1019.OPT2
+		name = cato_education_events_education_progress.1019.b
 		trigger = {
 			has_heir_flag = heir_offend_heretic
 		}
@@ -2993,7 +2998,7 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_education_progress.2000.OPT1
+		name = cato_education_events_education_progress.2000.a
 		add_education_progress_small = yes
 		ai_chance = {
 			factor = 1
@@ -3023,7 +3028,7 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_education_progress.2001.OPT1
+		name = cato_education_events_education_progress.2001.a
 		if = {
 			limit = {
 				capital_scope = {
@@ -3061,7 +3066,7 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_education_progress.2002.OPT1
+		name = cato_education_events_education_progress.2002.a
 		add_education_progress_medium = yes
 		ai_chance = {
 			factor = 1
@@ -3085,7 +3090,7 @@ country_event = {
 	}
 	
 	option = {
-		name = cato_education_events_education_progress.2003.OPT1 ###Be Ambitious
+		name = cato_education_events_education_progress.2003.a ###Be Ambitious
 		country_event = {
 			id = cato_education_events_education_progress.2004
 		}
@@ -3094,7 +3099,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.2003.OPT2 ###Suggest Minor Changes
+		name = cato_education_events_education_progress.2003.b ###Suggest Minor Changes
 		if = {
 			limit = {
 				check_variable = {
@@ -3102,7 +3107,7 @@ country_event = {
 					value = 50
 				}
 			}
-			capital_scope = {
+			capital = {
 				add_base_tax = 1
 			}
 		}
@@ -3130,7 +3135,7 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_education_progress.2003.OPT1 ###Capital gains +500% tax modifier for 5 years
+		name = cato_education_events_education_progress.2003.a ###Capital gains +500% tax modifier for 5 years
 		set_heir_flag = HE_capital_tax_boost
 		country_event = {
 			id = cato_education_events_education_progress.2005
@@ -3140,7 +3145,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.2003.OPT1 ###Capital gains +50% tax modifier for 5 years
+		name = cato_education_events_education_progress.2003.a ###Capital gains +50% tax modifier for 5 years
 		set_heir_flag = HE_capital_tax_boost
 		country_event = {
 			id = cato_education_events_education_progress.2005
@@ -3150,7 +3155,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.2003.OPT1 ###+3 base tax in capital
+		name = cato_education_events_education_progress.2003.a ###+3 base tax in capital
 		set_heir_flag = HE_Base_Tax_Boost_large
 		country_event = {
 			id = cato_education_events_education_progress.2005
@@ -3160,7 +3165,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.2003.OPT1 ###+2 base tax in capital
+		name = cato_education_events_education_progress.2003.a ###+2 base tax in capital
 		set_heir_flag = HE_Base_Tax_Boost_medium
 		country_event = {
 			id = cato_education_events_education_progress.2005
@@ -3170,7 +3175,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.2003.OPT1 ###+1 base tax in capital
+		name = cato_education_events_education_progress.2003.a ###+1 base tax in capital
 		set_heir_flag = HE_Base_Tax_Boost_small
 		country_event = {
 			id = cato_education_events_education_progress.2005
@@ -3180,7 +3185,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.2003.OPT1 ###-75% local tax modifier in capital for 5 years
+		name = cato_education_events_education_progress.2003.a ###-75% local tax modifier in capital for 5 years
 		set_heir_flag = HE_capital_tax_malus
 		country_event = {
 			id = cato_education_events_education_progress.2005
@@ -3224,7 +3229,7 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_education_progress.2005.OPT1
+		name = cato_education_events_education_progress.2005.a
 		trigger = {
 			has_heir_flag = HE_capital_tax_boost
 		}
@@ -3241,7 +3246,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.2005.OPT1
+		name = cato_education_events_education_progress.2005.a
 		trigger = {
 			has_heir_flag = HE_Base_Tax_Boost_large
 		}
@@ -3255,7 +3260,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.2005.OPT1
+		name = cato_education_events_education_progress.2005.a
 		trigger = {
 			has_heir_flag = HE_Base_Tax_Boost_medium
 		}
@@ -3269,7 +3274,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.2005.OPT1
+		name = cato_education_events_education_progress.2005.a
 		trigger = {
 			has_heir_flag = HE_Base_Tax_Boost_small
 		}
@@ -3283,7 +3288,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.2005.OPT2
+		name = cato_education_events_education_progress.2005.b
 		trigger = {
 			has_heir_flag = HE_capital_tax_malus
 		}
@@ -3300,11 +3305,11 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.2005.OPT3
+		name = cato_education_events_education_progress.2005.c
 		highlight = yes
 		trigger = {
 			hidden_trigger = { has_heir_flag = HE_capital_tax_malus }
-			has_ruler_modifier = best_administration_education
+			has_ruler_modifier = best_administrative_education
 		}
 		subtract_education_progress_medium = yes
 		clr_heir_flag = HE_capital_tax_malus
@@ -3313,7 +3318,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.2005.D
+		name = cato_education_events_education_progress.2005.d
 		highlight = yes
 		trigger = {
 			hidden_trigger = { has_heir_flag = HE_capital_tax_malus }
@@ -3338,7 +3343,7 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_education_progress.2006.OPT1
+		name = cato_education_events_education_progress.2006.a
 		set_heir_flag = got_trait_education
 		add_heir_personality = midas_touched_personality
 		ai_chance = {
@@ -3358,7 +3363,7 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_education_progress.2007.OPT1
+		name = cato_education_events_education_progress.2007.a
 		set_heir_flag = got_trait_education
 		add_heir_personality = greedy_personality
 		ai_chance = {
@@ -3378,7 +3383,7 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_education_progress.2008.OPT1
+		name = cato_education_events_education_progress.2008.a
 		set_heir_flag = got_trait_education
 		add_heir_personality = lawgiver_personality
 		ai_chance = {
@@ -3398,7 +3403,7 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_education_progress.2008.OPT1
+		name = cato_education_events_education_progress.2008.a
 		add_country_modifier = {
 			name = HE_administrative_global_tax_boost
 			duration = 1825
@@ -3421,7 +3426,7 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_education_progress.2010.OPT1
+		name = cato_education_events_education_progress.2010.a
 		add_country_modifier = {
 			name = HE_administrative_global_tax_malus
 			duration = 1825
@@ -3444,7 +3449,7 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_education_progress.2011.OPT1
+		name = cato_education_events_education_progress.2011.a
 		add_country_modifier = {
 			name = HE_efficient_state_management
 			duration = 1825
@@ -3467,7 +3472,7 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_education_progress.2012.OPT1
+		name = cato_education_events_education_progress.2012.a
 		add_country_modifier = {
 			name = HE_inefficient_state_management
 			duration = 1825
@@ -3542,7 +3547,7 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_education_progress.2013.OPT1
+		name = cato_education_events_education_progress.2013.a
 		add_country_modifier = {
 			name = HE_administrative_looking_to_the_past
 			duration = 1825
@@ -3574,7 +3579,7 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_education_progress.3000.OPT1
+		name = cato_education_events_education_progress.3000.a
 		add_education_progress_small = yes
 		ai_chance = {
 			factor = 1
@@ -3600,7 +3605,7 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_education_progress.3001.OPT1
+		name = cato_education_events_education_progress.3001.a
 		add_education_progress_small = yes
 		ai_chance = {
 			factor = 1
@@ -3628,7 +3633,7 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_education_progress.3002.OPT1
+		name = cato_education_events_education_progress.3002.a
 		
 		add_education_progress_medium = yes
 		ai_chance = {
@@ -3659,7 +3664,7 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_education_progress.4000.OPT1
+		name = cato_education_events_education_progress.4000.a
 		add_education_progress_small = yes
 		ai_chance = {
 			factor = 1
@@ -3687,7 +3692,7 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_education_progress.4001.OPT1
+		name = cato_education_events_education_progress.4001.a
 		
 		add_education_progress_medium = yes
 		ai_chance = {
@@ -3715,7 +3720,7 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_education_progress.5000.OPT1
+		name = cato_education_events_education_progress.5000.a
 		add_education_progress_small = yes
 		ai_chance = {
 			factor = 1
@@ -3739,7 +3744,7 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_education_progress.5001.OPT1
+		name = cato_education_events_education_progress.5001.a
 		
 		add_education_progress_medium = yes
 		ai_chance = {
@@ -3771,7 +3776,7 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_education_progress.6000.OPT1
+		name = cato_education_events_education_progress.6000.a
 		add_education_progress_small = yes
 		ai_chance = {
 			factor = 1
@@ -3801,7 +3806,7 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_education_progress.6001.OPT1
+		name = cato_education_events_education_progress.6001.a
 		add_education_progress_small = yes
 		ai_chance = {
 			factor = 1
@@ -3825,7 +3830,7 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_education_progress.6002.OPT1
+		name = cato_education_events_education_progress.6002.a
 		add_education_progress_medium = yes
 		ai_chance = {
 			factor = 1
@@ -3864,7 +3869,7 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_education_progress.7000.OPT1
+		name = cato_education_events_education_progress.7000.a
 		add_education_progress_small = yes
 		ai_chance = {
 			factor = 1
@@ -3903,7 +3908,7 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_education_progress.7001.OPT1
+		name = cato_education_events_education_progress.7001.a
 		add_education_progress_small = yes
 		ai_chance = {
 			factor = 1
@@ -3931,7 +3936,7 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_education_progress.7002.OPT1
+		name = cato_education_events_education_progress.7002.a
 		add_education_progress_medium = yes
 		ai_chance = {
 			factor = 1
@@ -3963,7 +3968,7 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_education_progress.7003.OPT1
+		name = cato_education_events_education_progress.7003.a
 		
 		add_education_progress_medium = yes
 		ai_chance = {
@@ -3999,7 +4004,7 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_education_progress.9000.OPT1
+		name = cato_education_events_education_progress.9000.a
 		add_education_progress_small = yes
 		ai_chance = {
 			factor = 1
@@ -4032,7 +4037,7 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_education_progress.9001.OPT1
+		name = cato_education_events_education_progress.9001.a
 		add_education_progress_small = yes
 		ai_chance = {
 			factor = 1
@@ -4059,7 +4064,7 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_education_progress.9002.OPT1
+		name = cato_education_events_education_progress.9002.a
 		
 		add_education_progress_medium = yes
 		ai_chance = {

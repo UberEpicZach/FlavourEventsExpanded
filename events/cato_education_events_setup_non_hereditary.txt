@@ -24,7 +24,7 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_setup_non_hereditary.1.OPT1
+		name = cato_education_events_setup_non_hereditary.1.a
 		country_event = {
 			id = cato_education_events_setup_non_hereditary.2
 		}
@@ -44,7 +44,7 @@ country_event = {
 	}
 	
 	option = {
-		name = cato_education_events_setup_non_hereditary.2.OPT1
+		name = cato_education_events_setup_non_hereditary.2.a
 		set_ruler_flag = started_admin_education
 		country_event = {
 			id = cato_education_events_setup_non_hereditary.3
@@ -102,7 +102,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_setup_non_hereditary.1.OPT2
+		name = cato_education_events_setup_non_hereditary.1.b
 		set_ruler_flag = started_dip_education
 		country_event = {
 			id = cato_education_events_setup_non_hereditary.4
@@ -148,7 +148,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_setup_non_hereditary.1.OPT3
+		name = cato_education_events_setup_non_hereditary.1.c
 		set_ruler_flag = started_mil_education
 		country_event = {
 			id = cato_education_events_setup_non_hereditary.5
@@ -218,7 +218,7 @@ country_event = {
 	}
 	
 	option = {
-		name = cato_education_events_setup_non_hereditary.1.OPT1
+		name = cato_education_events_setup_non_hereditary.1.a
 		set_ruler_flag = clerical_education
 		country_event = {
 			id = cato_education_events_setup_non_hereditary.6
@@ -236,7 +236,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_setup_non_hereditary.1.OPT2
+		name = cato_education_events_setup_non_hereditary.1.b
 		set_ruler_flag = administrative_education
 		country_event = {
 			id = cato_education_events_setup_non_hereditary.6
@@ -250,7 +250,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_setup_non_hereditary.1.OPT3
+		name = cato_education_events_setup_non_hereditary.1.c
 		set_ruler_flag = scholastic_education
 		country_event = {
 			id = cato_education_events_setup_non_hereditary.6
@@ -264,7 +264,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_setup_non_hereditary.1.D
+		name = cato_education_events_setup_non_hereditary.1.d
 		set_ruler_flag = industrial_education
 		country_event = {
 			id = cato_education_events_setup_non_hereditary.6
@@ -290,7 +290,7 @@ country_event = {
 	}
 	
 	option = {
-		name = cato_education_events_setup_non_hereditary.1.OPT1
+		name = cato_education_events_setup_non_hereditary.1.a
 		set_ruler_flag = diplomacy_education
 		country_event = {
 			id = cato_education_events_setup_non_hereditary.6
@@ -308,7 +308,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_setup_non_hereditary.1.OPT2
+		name = cato_education_events_setup_non_hereditary.1.b
 		set_ruler_flag = intrigue_education
 		country_event = {
 			id = cato_education_events_setup_non_hereditary.6
@@ -322,7 +322,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_setup_non_hereditary.1.OPT3
+		name = cato_education_events_setup_non_hereditary.1.c
 		set_ruler_flag = trade_education
 		country_event = {
 			id = cato_education_events_setup_non_hereditary.6
@@ -340,7 +340,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_setup_non_hereditary.1.D
+		name = cato_education_events_setup_non_hereditary.1.d
 		set_ruler_flag = colonial_education
 		country_event = {
 			id = cato_education_events_setup_non_hereditary.6
@@ -370,7 +370,7 @@ country_event = {
 	}
 	
 	option = {
-		name = cato_education_events_setup_non_hereditary.1.OPT1
+		name = cato_education_events_setup_non_hereditary.1.a
 		set_ruler_flag = martial_education
 		country_event = {
 			id = cato_education_events_setup_non_hereditary.6
@@ -388,7 +388,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_setup_non_hereditary.1.OPT2
+		name = cato_education_events_setup_non_hereditary.1.b
 		set_ruler_flag = naval_education
 		country_event = {
 			id = cato_education_events_setup_non_hereditary.6
@@ -406,7 +406,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_setup_non_hereditary.1.OPT3
+		name = cato_education_events_setup_non_hereditary.1.c
 		set_ruler_flag = logistics_education
 		country_event = {
 			id = cato_education_events_setup_non_hereditary.6
@@ -424,7 +424,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_setup_non_hereditary.1.D
+		name = cato_education_events_setup_non_hereditary.1.d
 		set_ruler_flag = modern_army_education
 		country_event = {
 			id = cato_education_events_setup_non_hereditary.6
@@ -450,7 +450,7 @@ country_event = {
 	}
 	
 	option = {
-		name = cato_education_events_setup_non_hereditary.1.OPT1
+		name = cato_education_events_setup_non_hereditary.1.a
 		set_ruler_flag = poor_education
 		country_event = {
 			id = cato_education_events_setup_non_hereditary.7
@@ -540,7 +540,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_setup_non_hereditary.1.OPT2
+		name = cato_education_events_setup_non_hereditary.1.b
 		set_ruler_flag = okay_education
 		country_event = {
 			id = cato_education_events_setup_non_hereditary.7
@@ -630,7 +630,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_setup_non_hereditary.1.OPT3
+		name = cato_education_events_setup_non_hereditary.1.c
 		set_ruler_flag = good_education
 		country_event = {
 			id = cato_education_events_setup_non_hereditary.7
@@ -786,7 +786,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_setup_non_hereditary.1.D
+		name = cato_education_events_setup_non_hereditary.1.d
 		set_ruler_flag = best_education
 		country_event = {
 			id = cato_education_events_setup_non_hereditary.7
@@ -985,7 +985,7 @@ country_event = {
 	trigger = {
 	}
 	option = {
-		name = cato_education_events_setup_non_hereditary.1.OPT1
+		name = cato_education_events_setup_non_hereditary.1.a
 		if = {
 			limit = {
 				has_ruler_flag = clerical_education
