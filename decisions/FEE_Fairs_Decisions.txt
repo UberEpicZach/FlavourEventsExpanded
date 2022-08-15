@@ -35,7 +35,7 @@ country_decisions = {
 				limit = {
 					has_global_flag = fee_trading_fairs_enabled
 				}
-				custom_tooltip = MELVA_FAIRS_DISABLE_TT
+				custom_tooltip = FEE_FAIRS_DISABLE_TT
 				clr_global_flag = fee_trading_fairs_enabled
 				hidden_effect = {
 					every_country = {

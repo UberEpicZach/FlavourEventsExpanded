@@ -3368,7 +3368,7 @@ country_event = {
 	}
 }
 
-# Doge Nicolò Marcello
+# Doge Pietro Mocenigo
 country_event = {
 	id = FEE_Venice_Events.59
 	title = FEE_Venice_Events.59.T
@@ -3441,6 +3441,116 @@ country_event = {
 		}
 
 		kill_ruler = yes
+	}
+}
+
+#########	The 3 burnings of the Palazzo Ducale	#########
+
+# The burning of the Doge's Palace of [GetDateText]
+country_event = {
+	id = FEE_Venice_Events.61
+	title = FEE_Venice_Events.61.T
+	desc = FEE_Venice_Events.61.D
+	picture = COUNTRY_COLLAPSE_eventPicture
+
+	trigger = {
+		owns = 112
+		OR = {
+			AND = {
+				is_year = 1483
+				NOT = { is_year = 1485 }
+			}
+			AND = {
+				is_year = 1574
+				NOT = { is_year = 1575 }
+			}
+			AND = {
+				is_year = 1577
+				NOT = { is_year = 1578 }
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	goto = 112
+
+	option = {
+		name = FEE_Venice_Events.61.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_prestige = -10
+		change_innovativeness = -5
+		kill_advisor_by_category_effect = { ADM = yes }
+		if = {
+			limit = {
+				has_dlc = "Leviathan"
+				112 = {
+					OR = {
+						has_great_project = {
+							type = doges_palace
+							tier = 1
+						}
+						has_great_project = {
+							type = doges_palace
+							tier = 2
+						}
+						has_great_project = {
+							type = doges_palace
+							tier = 3
+						}
+					}
+				}
+			}
+			add_years_of_income = -1
+		}
+		112 = {
+			add_base_tax = -3
+			add_devastation = 25
+		}
+	}
+
+	option = {
+		name = FEE_Venice_Events.61.OPT2
+		ai_chance = {
+			factor = 50
+		}
+		trigger = {
+			has_dlc = "Leviathan"
+			112 = {
+				OR = {
+					has_great_project = {
+						type = doges_palace
+						tier = 1
+					}
+					has_great_project = {
+						type = doges_palace
+						tier = 2
+					}
+					has_great_project = {
+						type = doges_palace
+						tier = 3
+					}
+				}
+			}
+		}
+
+		add_legitimacy_equivalent = { amount = -5 republican_tradition = -3 }
+		kill_advisor_by_category_effect = { ADM = yes }
+		change_innovativeness = -5
+		add_years_of_income = -0.5
+		112 = {
+			add_base_tax = -3
+			add_devastation = 25
+			add_great_project_tier = {
+				type = doges_palace
+				tier = -1
+			}
+		}
 	}
 }
 

@@ -1,6 +1,6 @@
 namespace = FEE_Italian_Wars_Events
 
-#First Italian War
+# Guerra del Gesso
 country_event = {
 	id = FEE_Italian_Wars_Events.100
 	title = FEE_Italian_Wars_Events.100.T
@@ -166,7 +166,7 @@ country_event = {
 	}
 }
 
-#Chiamata alle Armi
+# French Claim on Naples
 country_event = {
 	id = FEE_Italian_Wars_Events.101
 	title = FEE_Italian_Wars_Events.101.T
@@ -258,7 +258,7 @@ country_event = {
 	}
 }
 
-#Battle of Fornovo
+# Battaglia di Fornovo
 country_event = {
 	id = FEE_Italian_Wars_Events.102
 	title = FEE_Italian_Wars_Events.102.T
@@ -415,7 +415,7 @@ country_event = {
 	}
 }
 
-#Louis de la Trémoille
+# Louis de la Trémoille
 country_event = {
 	id = FEE_Italian_Wars_Events.103
 	title = FEE_Italian_Wars_Events.103.T
@@ -441,7 +441,7 @@ country_event = {
 	}
 }
 
-#Ferrante d'Este
+# Ferrante d'Este
 country_event = {
 	id = FEE_Italian_Wars_Events.104
 	title = FEE_Italian_Wars_Events.104.T
@@ -470,7 +470,7 @@ country_event = {
 	}
 }
 
-#Galeazzo Sanseverino
+# Galeazzo Sanseverino
 country_event = {
 	id = FEE_Italian_Wars_Events.105
 	title = FEE_Italian_Wars_Events.105.T
@@ -500,7 +500,7 @@ country_event = {
 }
 
 
-#Second Italian War
+# Guerra su Napoli
 country_event = {
 	id = FEE_Italian_Wars_Events.200
 	title = FEE_Italian_Wars_Events.200.T
@@ -644,7 +644,7 @@ country_event = {
 	}
 }
 
-#Chiamata alle Armi
+# Defense of Milan
 country_event = {
 	id = FEE_Italian_Wars_Events.201
 	title = FEE_Italian_Wars_Events.201.T
@@ -715,12 +715,6 @@ country_event = {
 			factor = 2
 			modifier = {
 				factor = 50
-				NOT = { } }
-			modifier = {
-				factor = 50
-				NOT = { } }
-			modifier = {
-				factor = 50
 				war_exhaustion = 3
 			}
 		}
@@ -731,7 +725,7 @@ country_event = {
 }
 
 
-#Third Italian War
+# Guerra della Lega Santa
 country_event = {
 	id = FEE_Italian_Wars_Events.300
 	title = FEE_Italian_Wars_Events.300.T
@@ -745,10 +739,9 @@ country_event = {
 		NOT = { is_year = 1516 }
 		tag = FRA
 		is_free_or_tributary_trigger = yes
-		exists = VEN
-		NOT = { war_with = VEN }
-		NOT = { truce_with = VEN }
 		VEN = {
+			NOT = { war_with = ROOT }
+			NOT = { truce_with = ROOT }
 			is_free_or_tributary_trigger = yes
 			num_of_owned_provinces_with = {
 				value = 8
@@ -784,7 +777,7 @@ country_event = {
 			casus_belli = cb_humiliate
 			who = VEN
 		}
-		
+
 		if = {
 			limit = {
 				exists = FER
@@ -932,7 +925,7 @@ country_event = {
 	}
 }
 
-#Chiamata alle Armi
+# The Holy League
 country_event = {
 	id = FEE_Italian_Wars_Events.301
 	title = FEE_Italian_Wars_Events.301.T
@@ -956,9 +949,6 @@ country_event = {
 					is_enemy = VEN
 				}
 			}
-			modifier = {
-				factor = 25
-				NOT = { } }
 			modifier = {
 				factor = 25
 				has_opinion = {
@@ -1008,9 +998,6 @@ country_event = {
 				alliance_with = VEN
 			}
 			modifier = {
-				factor = 50
-				NOT = { } }
-			modifier = {
 				factor = 25
 				OR = {
 					is_rival = FRA
@@ -1045,12 +1032,6 @@ country_event = {
 			factor = 2
 			modifier = {
 				factor = 50
-				NOT = { } }
-			modifier = {
-				factor = 50
-				NOT = { } }
-			modifier = {
-				factor = 50
 				war_exhaustion = 3
 			}
 		}
@@ -1061,7 +1042,7 @@ country_event = {
 }
 
 
-#Fourth Italian War
+# Guerra dei Quattro Anni
 country_event = {
 	id = FEE_Italian_Wars_Events.400
 	title = FEE_Italian_Wars_Events.400.T
@@ -1232,7 +1213,7 @@ country_event = {
 	}
 }
 
-#Chiamata alle Armi
+# League of Cambrais
 country_event = {
 	id = FEE_Italian_Wars_Events.401
 	title = FEE_Italian_Wars_Events.401.T
@@ -1304,12 +1285,6 @@ country_event = {
 			factor = 2
 			modifier = {
 				factor = 50
-				NOT = { } }
-			modifier = {
-				factor = 50
-				NOT = { } }
-			modifier = {
-				factor = 50
 				war_exhaustion = 3
 			}
 		}
@@ -1320,7 +1295,7 @@ country_event = {
 }
 
 
-#Guerra della Lega di Cognac
+# Guerra della Lega di Cognac
 country_event = {
 	id = FEE_Italian_Wars_Events.500
 	title = FEE_Italian_Wars_Events.500.T
@@ -1511,7 +1486,7 @@ country_event = {
 	}
 }
 
-#Chiamata alle Armi
+# Answer the League of Cognac
 country_event = {
 	id = FEE_Italian_Wars_Events.501
 	title = FEE_Italian_Wars_Events.501.T
@@ -1600,12 +1575,6 @@ country_event = {
 			factor = 2
 			modifier = {
 				factor = 50
-				NOT = { } }
-			modifier = {
-				factor = 50
-				NOT = { } }
-			modifier = {
-				factor = 50
 				war_exhaustion = 3
 			}
 		}
@@ -1616,7 +1585,7 @@ country_event = {
 }
 
 
-#Sixth Italian War
+# Sesta Guerra d'Italia
 country_event = {
 	id = FEE_Italian_Wars_Events.600
 	title = FEE_Italian_Wars_Events.600.T
@@ -1695,7 +1664,7 @@ country_event = {
 	}
 }
 
-#Chiamata alle Armi
+# War on the Imperial Throne
 country_event = {
 	id = FEE_Italian_Wars_Events.601
 	title = FEE_Italian_Wars_Events.601.T
@@ -1777,12 +1746,6 @@ country_event = {
 			factor = 2
 			modifier = {
 				factor = 50
-				NOT = { } }
-			modifier = {
-				factor = 50
-				NOT = { } }
-			modifier = {
-				factor = 50
 				war_exhaustion = 3
 			}
 		}
@@ -1793,7 +1756,7 @@ country_event = {
 }
 
 
-#Seventh Italian War
+# Settima Guerra d'Italia
 country_event = {
 	id = FEE_Italian_Wars_Events.700
 	title = FEE_Italian_Wars_Events.700.T
@@ -1959,7 +1922,7 @@ country_event = {
 	}
 }
 
-#Chiamata alle Armi
+# Treaty of Crépy
 country_event = {
 	id = FEE_Italian_Wars_Events.701
 	title = FEE_Italian_Wars_Events.701.T
@@ -2048,12 +2011,6 @@ country_event = {
 			factor = 2
 			modifier = {
 				factor = 50
-				NOT = { } }
-			modifier = {
-				factor = 50
-				NOT = { } }
-			modifier = {
-				factor = 50
 				war_exhaustion = 3
 			}
 		}
@@ -2064,7 +2021,7 @@ country_event = {
 }
 
 
-#Eight Italian War
+# Guerra Asburgo-Valois
 country_event = {
 	id = FEE_Italian_Wars_Events.800
 	title = FEE_Italian_Wars_Events.800.T
@@ -2233,7 +2190,7 @@ country_event = {
 	}
 }
 
-#Chiamata alle Armi
+# Chiamata alle Armi
 country_event = {
 	id = FEE_Italian_Wars_Events.801
 	title = FEE_Italian_Wars_Events.801.T
@@ -2327,12 +2284,6 @@ country_event = {
 		name = FEE_Italian_Wars_Events.801.OPT3
 		ai_chance = {
 			factor = 2
-			modifier = {
-				factor = 50
-				NOT = { } }
-			modifier = {
-				factor = 50
-				NOT = { } }
 			modifier = {
 				factor = 50
 				war_exhaustion = 3
