@@ -1053,6 +1053,7 @@ country_event = {
 		}
 		highlight = yes
 
+		add_legitimacy_equivalent = { amount = -25 republican_tradition = -12 }
 		define_ruler = {
 			name = "Pasquale Malipiero"
 			age = 53
@@ -1312,6 +1313,7 @@ country_event = {
 		}
 		highlight = yes
 
+		add_legitimacy_equivalent = { amount = -25 republican_tradition = -12 }
 		define_ruler = {
 			name = "Cristoforo Moro"
 			age = 71
@@ -2838,6 +2840,7 @@ country_event = {
 		}
 		highlight = yes
 
+		add_legitimacy_equivalent = { amount = -25 republican_tradition = -12 }
 		define_ruler = {
 			name = "Nicolò Tron"
 			age = 72
@@ -3068,6 +3071,7 @@ country_event = {
 		}
 		highlight = yes
 
+		add_legitimacy_equivalent = { amount = -25 republican_tradition = -12 }
 		define_ruler = {
 			name = "Nicolò Marcello"
 			age = 72
@@ -3395,6 +3399,7 @@ country_event = {
 		}
 		highlight = yes
 
+		add_legitimacy_equivalent = { amount = -25 republican_tradition = -12 }
 		define_ruler = {
 			name = "Pietro Mocenigo"
 			age = 68
@@ -4130,7 +4135,6 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = VEN
 		is_year = 1483
 		has_country_flag = fee_ven_voyages_antonio_grimani
 	}
@@ -4148,7 +4152,8 @@ country_event = {
 		add_treasury = 100
 		add_mercantilism = 5
 		capital_scope = {
-			add_trade_node_income = 10
+			add_base_tax = 1
+			add_base_production = 1
 		}
 	}
 }
