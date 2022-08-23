@@ -271,6 +271,52 @@
  FEE_Venice_Events.61.OPT1: "Try to save as much as possible!"
  FEE_Venice_Events.61.OPT2: "We cannot risk further lives."
 
+ FEE_Venice_Events.62.T: "Plague of [GetDateText] in [112.GetName]"
+ FEE_Venice_Events.62.D: "Despite our best efforts and the experience with the previous plague from  1348 to 1351, despite our Lazzaretto built on the island Santa Maria di Nazaraeth a plague has struck our beautiful city fo [112.GetName], let us pray for the best outcome. "
+ FEE_Venice_Events.62.OPT1: "May god protect us."
+
+ FEE_Venice_Events.63.T: "Voyages of Antonio Grimani"
+ FEE_Venice_Events.63.D: "Born in a meagre noble family Antonio Grimani seems to have found his place inside our society by leading our merchantile galleys in the Eastern Mediterranean Sea and in the Middle East itself."
+ FEE_Venice_Events.63.OPT1: "Might the Lion's wind be on your side!"
+ FEE_Venice_Events.63.OPT2: "This amount of ducats should suffice!"
+ FEE_Venice_Events.63.OPT3: "We can't finance this. He'll help home."
+
+ FEE_Venice_Events.64.T: "Arrival in Syria"
+ FEE_Venice_Events.64.D: "During the peak of the the Republic our goods were famous in all the East Mediterranean, many cities had our colonies within, from Constantinople to Jerusalem. We must seek to expand our influence into the trade in the Asia Minor and restore our colonies there to protect our merchants and christian brothers."
+ FEE_Venice_Events.64.OPT1: "The old crusader lands!"
+
+ FEE_Venice_Events.65.T: "Arrival in Egypt"
+ FEE_Venice_Events.65.D: "By virtue of its access to the Red Sea trade routes leading to Arabia and beyond, Alexandria was the chief entrepot between East and West, the point where fine luxuries such as silks, perfumes, gems, and, above all, spices arrived from the most remote parts of Asia. For the Venetian merchant courageous or lucky enough, Alexandria was the gateway to riches."
+ FEE_Venice_Events.65.OPT1: "Our emporii!"
+
+ FEE_Venice_Events.66.T: "Continuing the Voyages"
+ FEE_Venice_Events.66.D: "Our staying in Egypt has been really prosperous, but purely for commerce we should move on and visit the rest of Africa, should we proceed on the seashore and see the marvels of the gulf or go into the hearthlands of the Horn of Africa?"
+ FEE_Venice_Events.66.OPT1: "Let us marvel at Arabia!"
+ FEE_Venice_Events.66.OPT2: "We will try to visit the beautyf of [1224.GetName]"
+
+ FEE_Venice_Events.67.T: "Arabian Coffee"
+ FEE_Venice_Events.67.D: "Europe has always been impressed by the foreign goods the Islamic world produces. One of them is coffee, which is mainly produced in our Yemeni land and in Ethiopia. We must create a monopoly on this good."
+ FEE_Venice_Events.67.OPT1: "Send our diplomats!"
+
+ FEE_Venice_Events.68.T: "Veneto-Arabian coffee"
+ FEE_Venice_Events.68.D: "Europe has always been impressed by the foreign goods the Islamic world produces. One of them is coffee, which is mainly produced in our Yemeni land and in Ethiopia. We must create a monopoly on this good."
+ FEE_Venice_Events.68.OPT1: "Let us use the expertise of the Venetians!"
+ FEE_Venice_Events.68.OPT2: "We stand alone."
+
+ FEE_Venice_Events.69.T: "Arrival at [1224.GetName]"
+ FEE_Venice_Events.69.D: "Many trade routes have flown through the Horn of Africa bringing slaves, gold, ivory, coffee and other wonderful goods, should we try to rich the major powers in the Horn or try to grab the merchants for ourselves?"
+ FEE_Venice_Events.69.OPT1: "Bring forth the negotiations."
+ FEE_Venice_Events.69.OPT2: "We will take the trade ourselves."
+
+ FEE_Venice_Events.70.T: "Venetians in Ethiopia!"
+ FEE_Venice_Events.70.D: "The empire of our ancestors might have fallen, but its legacy lives on in us - and thanks to that, we have the strength to not only restore, which has been destroyed so long ago, but also to surpass it! Why should we listen to them?"
+ FEE_Venice_Events.70.OPT1: "Purely for commerce!"
+ FEE_Venice_Events.70.OPT1: "For [Root.Monarch.GetName]!"
+
+ FEE_Venice_Events.71.T: "End of the Voyages"
+ FEE_Venice_Events.71.D: "So many riches have been brought back from Antonio Grimani from his voyages in the Middle East, all for the riches of our capital!"
+ FEE_Venice_Events.71.OPT1: "May he be praised"
+
 # Estate Modifeirs
  fee_ven_nobles_restrained: "Restrained the Barones"
  desc_fee_ven_nobles_restrained: "Restrained the Barones"
@@ -334,12 +380,15 @@
 
  fee_ven_latin_trebizond_ties: "Latin-Trebizond Ties"
 
+ fee_ven_arabo_venetian_coffee: "Arabo-Venetian Coffee"
+
 # Trade Modifeirs
  fee_ven_trade_deal_costantinople: "Venetian Trade Deal"
  desc_fee_ven_trade_deal_costantinople: "Venetian Trade Deal"
  fee_ven_bartolomeo_marcello: "Bartolomeo Marcello"
  desc_fee_ven_bartolomeo_marcello: "Bartolomeo Marcello"
  fee_ven_pietro_mocenigo: "Pietro Mocenigo"
+ fee_ven_antonio_grimani: "Antonio Grimani"
 
 # Tooltips
  VEN_FANTI_MAR_TT: "Every owned §YCoastal Provinces§! will get:"
@@ -347,3 +396,7 @@
  VEN_VENETIAN_WARS_BALKANS_CLAIMS_TT: "§Y[Root.GetName]§! will gain §YPermanent Claim§! on all the provinces owned by §Y[TUR.GetName]§! in the §MBalkans Region§! that borders the §M[1310.Province.GetName]§! or §M[1311.Province.GetName]§! or §M[1312.Province.GetName]§! or §M[1319.Province.GetName]§!. \n\nWe might be able to call our Christian brothers in the war!"
  FEE_VEN_TREATY_CONSTANTINOPLE_TT: "Every Province, owned by [Root.GetName] or it's non Tributary Subjects, that borders the §M[1308.GetAreaName]§! will get:"
  FEE_VEN_VOYAGES_NICCOLO_TRON_TT: "§MWe will finance the voyages of Niccolò Tron in the Eastern Mediterranean Sea, from Cyprus to Egypt, they might bring wealth and fame to the Republic, but trade has its price.§!"
+ FEE_VEN_VOYAGES_ANTONIO_GRIMANI_TT: "§MWe will finance the voyages of Antonio Grimani in the Eastern Mediterranean Sea and in the Middle East, they might bring wealth and fame to the Republic, but trade has its price.§!"
+ FEE_VEN_VOYAGES_ANTONIO_GRIMANI_SEASIDE_TT: "§MTravelling in Africa is not safe, we will go around the seashore of the gulf§!"
+ FEE_VEN_VOYAGES_ANTONIO_GRIMANI_INTRA_TT: "§MWe will try to go into the hinterland of Africa§!"
+ FEE_VEN_ARABIAN_COFFEE_TT: "The owner of §Mcoastal coffee§! provinces in Arabia will receive our envoy for trading with us"

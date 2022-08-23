@@ -2337,6 +2337,7 @@ country_event = {
 
 		add_mercantilism = -3
 		define_advisor = {
+			name = "Niccolò Tron"
 			type = trader
 			skill = 2
 			religion = ROOT
@@ -3550,6 +3551,604 @@ country_event = {
 				type = doges_palace
 				tier = -1
 			}
+		}
+	}
+}
+
+# Plague of 1485
+country_event = {
+	id = FEE_Venice_Events.62
+	title = FEE_Venice_Events.62.T
+	desc = FEE_Venice_Events.62.D
+	picture = PLAGUE_eventPicture
+
+	trigger = {
+		owns = 112
+		is_year = 1485
+		NOT = { is_year = 1489 }
+	}
+
+	mean_time_to_happen = {
+		years = 1
+		modifier = {
+			factor = 3
+			has_country_flag = has_competent_doctors
+		}
+	}
+
+	goto = 112
+
+	major = yes
+	major_trigger = {
+		112 = {
+			any_neighbor_province = {
+				owned_by = ROOT
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Venice_Events.62.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		random_list = {
+			25 = { kill_ruler = yes }
+			75 = { }
+		}
+		add_yearly_sailors = -2
+		add_yearly_manpower = -1
+		add_mercantilism = -3
+		112 = {
+			set_province_flag = fee_ven_plague_1485
+			add_base_tax = -1
+			add_base_production = -1
+			add_base_manpower = -1
+			add_devastation = 75
+			every_neighbor_province = {
+				random_list = {
+					33 = {
+						add_base_tax = -1
+						add_base_production = -1
+						add_base_manpower = -1
+						add_devastation = 25
+					}
+					66 = { }
+				}
+			}
+		}
+	}
+}
+
+#########	Life of Doge Antonio Grimani 1434-1523	#########
+
+# Voyages of Antonio Grimani
+country_event = {
+	id = FEE_Venice_Events.63
+	title = FEE_Venice_Events.63.T
+	desc = FEE_Venice_Events.63.D
+	picture = SHIP_SAILING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VEN
+		is_year = 1458
+		NOT = { is_year = 1483 }
+	}
+
+	mean_time_to_happen = {
+		years = 5
+	}
+
+	option = {
+		name = FEE_Venice_Events.63.OPT1
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				ai = yes
+			}
+		}
+
+		add_dip_power = -50
+		custom_tooltip = FEE_VEN_VOYAGES_ANTONIO_GRIMANI_TT
+		set_country_flag = fee_ven_voyages_antonio_grimani
+	}
+
+	option = {
+		name = FEE_Venice_Events.63.OPT2
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				ai = yes
+			}
+		}
+
+		add_treasury = -25
+		custom_tooltip = FEE_VEN_VOYAGES_ANTONIO_GRIMANI_TT
+		set_country_flag = fee_ven_voyages_antonio_grimani
+	}
+
+	option = {
+		name = FEE_Venice_Events.63.OPT3
+		ai_chance = {
+			factor = 0
+		}
+
+		add_mercantilism = -3
+		define_advisor = {
+			name = "Antonio Grimani"
+			type = trader
+			skill = 2
+			religion = ROOT
+			culture = venetian
+			cost_multiplier = 0.75
+		}
+	}
+}
+
+# Arrival in Syria
+country_event = {
+	id = FEE_Venice_Events.64
+	title = FEE_Venice_Events.64.T
+	desc = FEE_Venice_Events.64.D
+	picture = SHIP_SAILING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VEN
+		is_year = 1460
+		has_country_flag = fee_ven_voyages_antonio_grimani
+		NOT = { is_year = 1483 }
+	}
+
+	mean_time_to_happen = {
+		years = 1
+	}
+
+	goto = 321
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = fee_ven_voyages_antonio_grimani_syria
+		}
+	}
+
+	option = {
+		name = FEE_Venice_Events.64.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_mercantilism = 3
+		377 = {
+			add_trade_modifier = {
+				who = ROOT
+				duration = 7300
+				power = 10
+				key = fee_ven_antonio_grimani
+			}
+			random_trade_node_member_province = {
+				limit = {
+					has_port = yes
+					sea_zone = {
+						area = eastern_mediterrenean_area
+					}
+				}
+				add_base_production = 1
+				owner = {
+					add_opinion = {
+						who = ROOT
+						modifier = opinion_improved_relations
+					}
+					reverse_add_opinion = {
+						who = ROOT
+						modifier = opinion_improved_relations
+					}
+				}
+			}
+		}
+	}
+}
+
+# Arrival in Egypt
+country_event = {
+	id = FEE_Venice_Events.65
+	title = FEE_Venice_Events.65.T
+	desc = FEE_Venice_Events.65.D
+	picture = SHIP_SAILING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VEN
+		is_year = 1460
+		has_country_flag = fee_ven_voyages_antonio_grimani_syria
+		NOT = { is_year = 1483 }
+	}
+
+	mean_time_to_happen = {
+		years = 2
+	}
+
+	goto = 358
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = fee_ven_voyages_antonio_grimani_egypt
+		}
+	}
+
+	option = {
+		name = FEE_Venice_Events.65.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		358 = {
+			add_base_production = 1
+			add_trade_modifier = {
+				who = ROOT
+				duration = 3650
+				power = 5
+				key = fee_ven_antonio_grimani
+			}
+		}
+	}
+}
+
+# Continuing the Voyages
+country_event = {
+	id = FEE_Venice_Events.66
+	title = FEE_Venice_Events.66.T
+	desc = FEE_Venice_Events.66.D
+	picture = SHIP_SAILING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VEN
+		is_year = 1460
+		has_country_flag = fee_ven_voyages_antonio_grimani_egypt
+		NOT = { is_year = 1483 }
+	}
+
+	mean_time_to_happen = {
+		years = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = fee_ven_voyages_antonio_grimani_egypt
+		}
+	}
+
+	option = {
+		name = FEE_Venice_Events.66.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		custom_tooltip = FEE_VEN_VOYAGES_ANTONIO_GRIMANI_SEASIDE_TT
+		set_country_flag = fee_ven_voyages_antonio_grimani_seaside
+		arabia_region = {
+			discover_country = ROOT
+		}
+	}
+
+	option = {
+		name = FEE_Venice_Events.66.OPT2
+		ai_chance = {
+			factor = 50
+		}
+		highlight = yes
+
+		custom_tooltip = FEE_VEN_VOYAGES_ANTONIO_GRIMANI_INTRA_TT
+		set_country_flag = fee_ven_voyages_antonio_grimani_hearthland
+		horn_of_africa_region = {
+			discover_country = ROOT
+		}
+	}
+}
+
+# Arabian Coffee
+country_event = {
+	id = FEE_Venice_Events.67
+	title = FEE_Venice_Events.67.T
+	desc = FEE_Venice_Events.67.D
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VEN
+		is_year = 1461
+		has_country_flag = fee_ven_voyages_antonio_grimani_seaside
+		NOT = { is_year = 1483 }
+	}
+
+	mean_time_to_happen = {
+		years = 3
+	}
+
+	option = {
+		name = FEE_Venice_Events.67.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_dip_power = -25
+		custom_tooltip = FEE_VEN_ARABIAN_COFFEE_TT
+		hidden_effect = {
+			arabia_region = {
+				limit = {
+					trade_goods = coffee
+					has_port = yes
+				}
+				owner = {
+					country_event = {
+						id = FEE_Venice_Events.68
+						days = 180
+						random = 60
+					}
+				}
+			}
+		}
+	}
+}
+
+# Veneto-Arabian coffee
+country_event = {
+	id = FEE_Venice_Events.68
+	title = FEE_Venice_Events.68.T
+	desc = FEE_Venice_Events.68.D
+	picture = DIPLOMACY_SIGNING_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_country_flag = fee_ven_arabo_venetian_coffee }
+	}
+
+	major = yes
+	major_trigger = {
+		has_country_flag = fee_ven_voyages_antonio_grimani_seaside
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = fee_ven_arabo_venetian_coffee
+		}
+	}
+
+	option = {
+		name = FEE_Venice_Events.68.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		every_owned_province = {
+			limit = {
+				trade_goods = coffee
+			}
+			add_base_production = 1
+			add_province_modifier = {
+				name = fee_ven_arabo_venetian_coffee
+				duration = 18250
+			}
+		}
+		add_opinion = {
+			who = FROM
+			modifier = opinion_export_good
+		}
+		reverse_add_opinion = {
+			who = FROM
+			modifier = opinion_export_good
+		}
+		FROM = {
+			capital_scope = {
+				add_base_production = 2
+				add_province_modifier = {
+					name = fee_ven_arabo_venetian_coffee
+					duration = 18250
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Venice_Events.68.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
+		add_mil_power = 100
+		add_prestige = 15
+		add_opinion = {
+			who = FROM
+			modifier = border_friction_from_event
+		}
+		reverse_add_opinion = {
+			who = FROM
+			modifier = border_friction_from_event
+		}
+	}
+}
+
+# Arrival at [1224.GetName]
+country_event = {
+	id = FEE_Venice_Events.69
+	title = FEE_Venice_Events.69.T
+	desc = FEE_Venice_Events.69.D
+	picture = CARAVAN_EVENT_Picture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VEN
+		is_year = 1461
+		has_country_flag = fee_ven_voyages_antonio_grimani_hearthland
+		NOT = { is_year = 1483 }
+	}
+
+	mean_time_to_happen = {
+		years = 3
+	}
+
+	goto = 1224
+
+	option = {
+		name = FEE_Venice_Events.69.OPT1
+		ai_chance = {
+			factor = 50
+		}
+		trigger = {
+			NOT = { owns = 1224 }
+		}
+			
+		if = {
+			limit = { exists = ETH }
+			ETH = {
+				country_event = {
+					id = FEE_Venice_Events.70
+				}
+			}
+		}
+		else = {
+			1224 = {
+				owner = {
+					country_event = {
+						id = FEE_Venice_Events.70
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Venice_Events.69.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
+		add_dip_power = 50
+		2772 = {
+			add_trade_modifier = {
+				who = ROOT
+				duration = 7300
+				power = 10
+				key = fee_ven_antonio_grimani
+			}
+		}
+	}
+}
+
+# Venetian in Ethiopia!
+country_event = {
+	id = FEE_Venice_Events.70
+	title = FEE_Venice_Events.70.T
+	desc = FEE_Venice_Events.70.D
+	picture = DIPLOMACY_SIGNING_eventPicture
+
+	is_triggered_only = yes
+
+	major = yes
+	major_trigger = {
+		has_country_flag = fee_ven_voyages_antonio_grimani_hearthland
+	}
+
+	option = {
+		name = FEE_Venice_Events.70.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		create_admiral = {
+			tradition = 50
+			culture = FROM
+		}
+		define_advisor = {
+			type = trader
+			skill = 2
+			discount = yes
+			culture = FROM
+			religion = FROM
+		}
+		add_opinion = {
+			who = FROM
+			modifier = opinion_eased_tension
+		}
+		reverse_add_opinion = {
+			who = FROM
+			modifier = opinion_eased_tension
+		}
+		FROM = {
+			create_general = {
+				tradition = 50
+				culture = ROOT
+			}
+			define_advisor = {
+				type = commandant
+				skill = 2
+				discount = yes
+				culture = ROOT
+				religion = ROOT
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Venice_Events.70.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_prestige = 15
+		add_legitimacy_equivalent = { amount = 15 republican_tradition = 7 }
+		add_opinion = {
+			who = FROM
+			modifier = border_friction_from_event
+		}
+		reverse_add_opinion = {
+			who = FROM
+			modifier = border_friction_from_event
+		}
+	}
+}
+
+# End of the Voyages
+country_event = {
+	id = FEE_Venice_Events.71
+	title = FEE_Venice_Events.71.T
+	desc = FEE_Venice_Events.71.D
+	picture = MERCHANTS_TALKING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VEN
+		is_year = 1483
+		has_country_flag = fee_ven_voyages_antonio_grimani
+	}
+
+	mean_time_to_happen = {
+		years = 1
+	}
+
+	option = {
+		name = FEE_Venice_Events.71.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_treasury = 100
+		add_mercantilism = 5
+		capital_scope = {
+			add_trade_node_income = 10
 		}
 	}
 }
