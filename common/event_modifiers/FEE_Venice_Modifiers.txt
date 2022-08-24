@@ -144,3 +144,12 @@ fee_ven_arabo_venetian_coffee = {
 	province_trade_power_modifier = 0.15
 	province_trade_power_value = 0.15
 }
+
+fee_ven_cardinal_domenico_grimani = {
+	local_institution_spread = 0.25
+	local_missionary_strength = 0.03
+	local_missionary_maintenance_cost = -0.25
+	local_tax_modifier = 0.25
+	local_unrest = -2
+	papal_influence = 0.5
+}

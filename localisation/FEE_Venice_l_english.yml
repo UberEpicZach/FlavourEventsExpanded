@@ -317,6 +317,30 @@
  FEE_Venice_Events.71.D: "So many riches have been brought back from Antonio Grimani from his voyages in the Middle East, all for the riches of our capital!"
  FEE_Venice_Events.71.OPT1: "May he be praised"
 
+ FEE_Venice_Events.72.T: "Oratore for the Hungarian King"
+ FEE_Venice_Events.72.D: "The Hungarian [HUN.Monarch.GetTitle] [HUN.Monarch.GetName] has shown clear interest in our prodigee priest Domenico Grimani, in return he has offered himself to be sent to the Hungarian throne to educate and assist the king, the mutual assistance might bring both nations closer."
+ FEE_Venice_Events.72.OPT1: "Absolutely, a friend in need!"
+ FEE_Venice_Events.72.OPT2: "He will stay home."
+
+ FEE_Venice_Events.73.T: "Grimani alla corte Ungherese"
+ FEE_Venice_Events.73.D: "Grimani has shown since early years a strong interest for culture and humanist studies, which he mastered later at the Florentine Court of Lorenzo il Magnifico as well as the University of Padova. Lately, in our court, he has come along with interesting discoveries of humanitarian studies, should we share this with [VEN.GetName]?"
+ FEE_Venice_Events.73.OPT1: "Yes, for our brethern!"
+ FEE_Venice_Events.73.OPT2: "No, all the knowledge is mine."
+
+ FEE_Venice_Events.74.T: "Elevazione alla porpora cardinalizia"
+ FEE_Venice_Events.74.D: "In the past years the actions of Domenico Grimani has created further interest from the Pope which, in exchange for a good sum of ducats, he might appoint him as a cardinal for us!"
+ FEE_Venice_Events.74.OPT1: "We are not shy of money!"
+ FEE_Venice_Events.74.OPT2: "We cannot afford this."
+
+ FEE_Venice_Events.75.T: "Antonio Grimani Capitano da Mar"
+ FEE_Venice_Events.75.D: "The recent threats to the Venetian territories have shown the need of a new Capitano da Mar!"
+ FEE_Venice_Events.75.OPT1: "He shall lead us!"
+
+ FEE_Venice_Events.76.T: "Doge Antonio Grimani"
+ FEE_Venice_Events.76.D: "The death of the past doge and the asbence of any proper list for substitute has brought the council to think that maybe our estimated Capitano da Mar and Trader Antonio Grimani should be our lead!"
+ FEE_Venice_Events.76.OPT1: "He will be a fine Doge."
+ FEE_Venice_Events.76.OPT2: "Isn't him 87 already?"
+
 # Estate Modifeirs
  fee_ven_nobles_restrained: "Restrained the Barones"
  desc_fee_ven_nobles_restrained: "Restrained the Barones"
@@ -381,6 +405,8 @@
  fee_ven_latin_trebizond_ties: "Latin-Trebizond Ties"
 
  fee_ven_arabo_venetian_coffee: "Arabo-Venetian Coffee"
+
+ fee_ven_cardinal_domenico_grimani: "Cardinal Domenico Grimani"
 
 # Trade Modifeirs
  fee_ven_trade_deal_costantinople: "Venetian Trade Deal"

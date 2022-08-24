@@ -4158,6 +4158,341 @@ country_event = {
 	}
 }
 
+# Oratore for the Hungarian King
+country_event = {
+	id = FEE_Venice_Events.72
+	title = FEE_Venice_Events.72.T
+	desc = FEE_Venice_Events.72.D
+	picture = DIPLOMACY_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VEN
+		exists = HUN
+		is_year = 1489
+		NOT = { is_year = 1493 }
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	major = yes
+	major_trigger = {
+		tag = HUN
+	}
+
+	option = {
+		name = FEE_Venice_Events.72.OPT1
+		ai_chance = {
+			factor = 50
+		}
+		highlight = yes
+
+		add_opinion = {
+			who = HUN
+			modifier = opinion_improved_relations
+		}
+		reverse_add_opinion = {
+			who = HUN
+			modifier = opinion_improved_relations
+		}
+		HUN = {
+			define_advisor = {
+				type = diplomat
+				name = "Domenico Grimani"
+				skill = 2
+				discount = yes
+				religion = ROOT
+				culture = venetian
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Venice_Events.72.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
+		add_dip_power = -25
+		define_advisor = {
+			type = diplomat
+			name = "Domenico Grimani"
+			skill = 2
+			religion = ROOT
+			culture = venetian
+		}
+	}
+}
+
+# Grimani alla corte Ungherese
+country_event = {
+	id = FEE_Venice_Events.73
+	title = FEE_Venice_Events.73.T
+	desc = FEE_Venice_Events.73.D
+	picture = ADVISOR_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = HUN
+		exists =VEN
+		is_year = 1489
+		NOT = { is_year = 1493 }
+		diplomat = 2
+	}
+
+	major = yes
+	major_trigger = {
+		tag = VEN
+	}
+
+	mean_time_to_happen = {
+		years = 1
+	}
+
+	option = {
+		name = FEE_Venice_Events.73.OPT1
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				OR = {
+					has_opinion = {
+						who = VEN
+						value = 50
+					}
+					reverse_has_opinion = {
+						who = VEN
+						value = 50
+					}
+				}
+			}
+		}
+
+		add_adm_power = 25
+		if = {
+			limit = { religion = catholic }
+			add_papal_influence = 5
+		}
+		add_opinion = {
+			who = VEN
+			modifier = opinion_improved_relations
+		}
+		reverse_add_opinion = {
+			who = VEN
+			modifier = opinion_improved_relations
+		}
+	}
+
+	option = {
+		name = FEE_Venice_Events.73.OPT2
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				OR = {
+					NOT = {
+						has_opinion = {
+							who = VEN
+							value = 0
+						}
+					}
+					NOT = {
+						reverse_has_opinion = {
+							who = VEN
+							value = 0
+						}
+					}
+				}
+			}
+		}
+
+		add_adm_power = 50
+		add_opinion = {
+			who = VEN
+			modifier = opinion_disappointed
+		}
+		reverse_add_opinion = {
+			who = VEN
+			modifier = opinion_disappointed
+		}
+	}
+}
+
+# Elevazione alla porpora cardinalizia
+country_event = {
+	id = FEE_Venice_Events.74
+	title = FEE_Venice_Events.74.T
+	desc = FEE_Venice_Events.74.D
+	picture = POPE_PREACHING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VEN
+		is_year = 1493
+		religion = catholic
+		NOT = { is_year = 1523 }
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Venice_Events.74.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_treasury = -30
+		random_owned_province = {
+			limit = { has_cardinal = no }
+			add_cardinal = yes
+			add_province_modifier = {
+				name = fee_ven_cardinal_domenico_grimani
+				duration = 10950
+			}
+		}
+		if = {
+			limit = { exists = HUN }
+			add_opinion = {
+				who = HUN
+				modifier = opinion_disgruntled
+			}
+			reverse_add_opinion = {
+				who = HUN
+				modifier = opinion_disgruntled
+			}
+			reverse_add_casus_belli = {
+				type = cb_insult
+				target = HUN
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Venice_Events.74.OPT2
+		ai_chance = {
+			factor = 50
+		}
+
+		add_papal_influence = -10
+		if = {
+			limit = { exists = HUN }
+			add_opinion = {
+				who = HUN
+				modifier = opinion_improved_relations
+			}
+			reverse_add_opinion = {
+				who = HUN
+				modifier = opinion_improved_relations
+			}
+		}
+	}
+}
+
+# Antonio Grmiani Capitano da Mar
+country_event = {
+	id = FEE_Venice_Events.75
+	title = FEE_Venice_Events.75.T
+	desc = FEE_Venice_Events.75.D
+	picture = GENERALS_DISCUSSING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VEN
+		is_year = 1499
+		NOT = { is_year = 1523 }
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Venice_Events.75.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_navy_tradition = 3
+		define_admiral = {
+			fire = 4
+			shock = 4
+			manuever = 4
+			siege = 0
+			name = "Antonio Grimani"
+			trait = naval_showman_personality
+		}
+	}
+}
+
+# Doge Antonio Grimani
+country_event = {
+	id = FEE_Venice_Events.76
+	title = FEE_Venice_Events.76.T
+	desc = FEE_Venice_Events.76.D
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = VEN
+		is_year = 1521
+		NOT = { is_year = 1523 }
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Venice_Events.76.OPT1
+		ai_chance = {
+			factor = 1
+		}
+		highlight = yes
+
+		add_legitimacy_equivalent = { amount = -25 republican_tradition = -12 }
+		define_ruler = {
+			name = "Antonio Grimani"
+			age = 87
+			culture = venetian
+			religion = catholic
+		}
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = 5
+		}
+		capital_scope = {
+			add_base_tax = 1
+		}
+	}
+
+	option = {
+		name = FEE_Venice_Events.76.OPT2
+		ai_chance = {
+			factor = 0
+		}
+		
+		if = {
+			limit = { has_estate = estate_burghers }
+			add_estate_loyalty = {
+				estate = estate_burghers
+				loyalty = -10
+			}
+		}
+		else = {
+			add_dip_power = -50
+		}
+	}
+}
+
 # 
 #country_event = {
 #	id = FEE_Venice_Events.
