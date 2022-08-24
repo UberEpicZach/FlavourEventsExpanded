@@ -341,6 +341,38 @@
  FEE_Venice_Events.76.OPT1: "He will be a fine Doge."
  FEE_Venice_Events.76.OPT2: "Isn't him 87 already?"
 
+ FEE_Venice_Events.77.T: "Gritti's arrival at [151.GetName]"
+ FEE_Venice_Events.77.D: "Seems like the ex ambassador Andrea Gritti after travelling many european countries in France, Spain and England has laid his eyes on our marvellous city of [151.GetName] to expand his commercial routes, he has even bought one house in the district of Pera!"
+ FEE_Venice_Events.77.OPT1: "Let him in."
+ FEE_Venice_Events.77.OPT2: "No, he would be a spy!"
+
+ FEE_Venice_Events.78.T: "Doni del Gritti"
+ FEE_Venice_Events.78.D: "Supported by the huge profits that rewarded his commercial ventures, Andrea Gritti assumed a growing prominence that saw him at the head of the Venetian community, influential among the Italians of Galata and in a privileged relationship with the governor of [151.GetName]."
+ FEE_Venice_Events.78.OPT1: "What a prosperous gif!"
+
+ FEE_Venice_Events.79.T: "Espulsione del Gritti"
+ FEE_Venice_Events.79.D: "The bigger the strength of the Gritti in [151.GetName] the higher the concern of him spying on us has grown both on a province and up to hour court itself, how should we react to him?"
+ FEE_Venice_Events.79.OPT1: "Expel him, that spy bastard!"
+ FEE_Venice_Events.79.OPT2: "Let us try to mediate."
+
+ FEE_Venice_Events.80.T: "Fortificazioni nel Trentino"
+ FEE_Venice_Events.80.D: "The recent wars and increasing of raiding around the area of the Trentino has brought the council to nominate Andrea Gritti provveditore generale alongside Giorgio Corner to increae the fortifications in the Trentino and around areas"
+ FEE_Venice_Events.80.OPT1: "Increase the garrison!"
+
+ FEE_Venice_Events.81.T: "Provveditore generale in campo Andrea Gritti"
+ FEE_Venice_Events.81.D: "A fine nobleman and merchant has proved himself to be capable of leading our armies alongside Bartolomeo d'Alviano and Niccolò Orsini."
+ FEE_Venice_Events.81.OPT1: "To victory!"
+
+ FEE_Venice_Events.82.T: "Il Gritti presso il Sultano"
+ FEE_Venice_Events.82.D: "In Korone a bad accident seems to have enraged the [TUR.Monarch.GetTitle] [TUR.Monarch.GetName], we should immediately send our diplomats there to not endager our profits there."
+ FEE_Venice_Events.82.OPT1: "Send a gift to the [TUR.Monarch.GetTitle]!"
+ FEE_Venice_Events.82.OPT2: "It won't matter anyway..."
+
+ FEE_Venice_Events.83.T: "Doge Andrea Gritti"
+ FEE_Venice_Events.83.D: "After leading our merchantile fortune in Constantinople and our armies in Northern Italy the strength of Andrea Gritti has been outstanding and the council has thought about making him one of our estimated Doges!"
+ FEE_Venice_Events.83.OPT1: "Obviously."
+ FEE_Venice_Events.83.OPT2: "We are happy as we are."
+
 # Estate Modifeirs
  fee_ven_nobles_restrained: "Restrained the Barones"
  desc_fee_ven_nobles_restrained: "Restrained the Barones"
@@ -407,6 +439,8 @@
  fee_ven_arabo_venetian_coffee: "Arabo-Venetian Coffee"
 
  fee_ven_cardinal_domenico_grimani: "Cardinal Domenico Grimani"
+
+ fee_ven_andrea_gritti: "Andrea Gritti"
 
 # Trade Modifeirs
  fee_ven_trade_deal_costantinople: "Venetian Trade Deal"

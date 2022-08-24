@@ -153,3 +153,9 @@ fee_ven_cardinal_domenico_grimani = {
 	local_unrest = -2
 	papal_influence = 0.5
 }
+
+fee_ven_andrea_gritti = {
+	province_trade_power_modifier = 0.15
+	province_trade_power_value = 0.15
+	local_development_cost = -0.15
+}
