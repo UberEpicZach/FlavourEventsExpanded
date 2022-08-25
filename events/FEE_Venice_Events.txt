@@ -5671,6 +5671,517 @@ country_event = {
 	}
 }
 
+#########	Life of Doge Francesco Venier 1489-1556	#########
+
+# Francesco Venier?
+country_event = {
+	id = FEE_Venice_Events.93
+	title = FEE_Venice_Events.93.T
+	desc = FEE_Venice_Events.93.D
+	picture = MERCHANTS_TALKING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
+		is_year = 1508
+		NOT = { is_year = 1515 }
+	}
+
+	mean_time_to_happen = {
+		years = 1
+	}
+
+	option = {
+		name = FEE_Venice_Events.93.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		set_country_flag = fee_ven_francesco_venier_merchant
+		if = {
+			limit = { has_estate = estate_burghers }
+			add_estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 5
+			}
+		}
+		else = {
+			add_mercantilism = 3
+		}
+	}
+}
+
+# Francesco Venier in Savoy
+country_event = {
+	id = FEE_Venice_Events.94
+	title = FEE_Venice_Events.94.T
+	desc = FEE_Venice_Events.94.D
+	picture = MERCHANTS_TALKING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_year = 1508
+		owns = 205
+		any_country = {
+			has_country_flag = fee_ven_francesco_venier_merchant
+		}
+		NOT = { is_year = 1515 }
+	}
+
+	mean_time_to_happen = {
+		years = 1
+	}
+
+	major = yes
+	major_trigger = {
+		has_country_flag = fee_ven_francesco_venier_merchant
+	}
+
+	goto = 205
+
+	immediate = {
+		hidden_effect = {
+			random_country = {
+				limit = { has_country_flag = fee_ven_francesco_venier_merchant }
+				set_country_flag = fee_ven_francesco_venier_merchant_savoy
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Venice_Events.94.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_treasury = -25
+		205 = {
+			add_base_production = 1
+			add_province_modifier = {
+				name = fee_ven_francesco_venier_merchant
+				duration = 5475
+			}
+			random_country = {
+				limit = { has_country_flag = fee_ven_francesco_venier_merchant }
+				PREV = {
+					add_trade_modifier = {
+						who = THIS
+						duration = 5475
+						power = 10
+						key = fee_ven_francesco_venier_merchant
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = { has_country_flag = fee_ven_francesco_venier_merchant }
+			add_opinion = {
+				who = ROOT
+				modifier = opinion_export_good
+			}
+			reverse_add_opinion = {
+				who = ROOT
+				modifier = opinion_export_good
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Venice_Events.94.OPT2
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 2
+				NOT = { treasury = 25 }
+			}
+			modifier = {
+				factor = 2
+				any_country = {
+					has_country_flag = fee_ven_francesco_venier_merchant
+					NOT = {
+						has_opinion = {
+							who = ROOT
+							value = 50
+						}
+					}
+				}
+			}
+		}
+
+		add_mil_power = 25
+		add_mercantilism = 3
+		random_country = {
+			limit = { has_country_flag = fee_ven_francesco_venier_merchant }
+			add_opinion = {
+				who = ROOT
+				modifier = opinion_export_bad
+			}
+			reverse_add_opinion = {
+				who = ROOT
+				modifier = opinion_export_bad
+			}
+		}
+	}
+}
+
+# Francesco Venier in France
+country_event = {
+	id = FEE_Venice_Events.95
+	title = FEE_Venice_Events.95.T
+	desc = FEE_Venice_Events.95.D
+	picture = MERCHANTS_TALKING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_year = 1508
+		owns = 183
+		any_country = {
+			has_country_flag = fee_ven_francesco_venier_merchant_savoy
+		}
+		NOT = { is_year = 1515 }
+	}
+
+	mean_time_to_happen = {
+		years = 1
+	}
+
+	major = yes
+	major_trigger = {
+		has_country_flag = fee_ven_francesco_venier_merchant
+	}
+
+	goto = 183
+
+	immediate = {
+		hidden_effect = {
+			random_country = {
+				limit = { has_country_flag = fee_ven_francesco_venier_merchant_savoy }
+				set_country_flag = fee_ven_francesco_venier_merchant_france
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Venice_Events.95.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_treasury = -25
+		183 = {
+			add_base_production = 1
+			add_province_modifier = {
+				name = fee_ven_francesco_venier_merchant
+				duration = 5475
+			}
+			random_country = {
+				limit = { has_country_flag = fee_ven_francesco_venier_merchant }
+				PREV = {
+					add_trade_modifier = {
+						who = THIS
+						duration = 5475
+						power = 10
+						key = fee_ven_francesco_venier_merchant
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = { has_country_flag = fee_ven_francesco_venier_merchant }
+			add_opinion = {
+				who = ROOT
+				modifier = opinion_export_good
+			}
+			reverse_add_opinion = {
+				who = ROOT
+				modifier = opinion_export_good
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Venice_Events.95.OPT2
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 2
+				NOT = { treasury = 25 }
+			}
+			modifier = {
+				factor = 2
+				any_country = {
+					has_country_flag = fee_ven_francesco_venier_merchant
+					NOT = {
+						has_opinion = {
+							who = ROOT
+							value = 50
+						}
+					}
+				}
+			}
+		}
+
+		add_mil_power = 25
+		add_mercantilism = 3
+		random_country = {
+			limit = { has_country_flag = fee_ven_francesco_venier_merchant }
+			add_opinion = {
+				who = ROOT
+				modifier = opinion_export_bad
+			}
+			reverse_add_opinion = {
+				who = ROOT
+				modifier = opinion_export_bad
+			}
+		}
+	}
+}
+
+# Francesco Venier in London
+country_event = {
+	id = FEE_Venice_Events.96
+	title = FEE_Venice_Events.96.T
+	desc = FEE_Venice_Events.96.D
+	picture = MERCHANTS_TALKING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_year = 1508
+		owns = 236
+		any_country = {
+			has_country_flag = fee_ven_francesco_venier_merchant_france
+		}
+		NOT = { is_year = 1515 }
+	}
+
+	mean_time_to_happen = {
+		years = 1
+	}
+
+	major = yes
+	major_trigger = {
+		has_country_flag = fee_ven_francesco_venier_merchant
+	}
+
+	goto = 236
+
+	immediate = {
+		hidden_effect = {
+			random_country = {
+				limit = { has_country_flag = fee_ven_francesco_venier_merchant_france }
+				set_country_flag = fee_ven_francesco_venier_merchant_london
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Venice_Events.96.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_treasury = -25
+		236 = {
+			add_base_production = 1
+			add_province_modifier = {
+				name = fee_ven_francesco_venier_merchant
+				duration = 5475
+			}
+			random_country = {
+				limit = { has_country_flag = fee_ven_francesco_venier_merchant }
+				PREV = {
+					add_trade_modifier = {
+						who = THIS
+						duration = 5475
+						power = 10
+						key = fee_ven_francesco_venier_merchant
+					}
+				}
+			}
+		}
+		random_country = {
+			limit = { has_country_flag = fee_ven_francesco_venier_merchant }
+			add_opinion = {
+				who = ROOT
+				modifier = opinion_export_good
+			}
+			reverse_add_opinion = {
+				who = ROOT
+				modifier = opinion_export_good
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Venice_Events.96.OPT2
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 2
+				NOT = { treasury = 25 }
+			}
+			modifier = {
+				factor = 2
+				any_country = {
+					has_country_flag = fee_ven_francesco_venier_merchant
+					NOT = {
+						has_opinion = {
+							who = ROOT
+							value = 50
+						}
+					}
+				}
+			}
+		}
+
+		add_mil_power = 25
+		add_mercantilism = 3
+		random_country = {
+			limit = { has_country_flag = fee_ven_francesco_venier_merchant }
+			add_opinion = {
+				who = ROOT
+				modifier = opinion_export_bad
+			}
+			reverse_add_opinion = {
+				who = ROOT
+				modifier = opinion_export_bad
+			}
+		}
+	}
+}
+
+# Un prestito dal Venier
+country_event = {
+	id = FEE_Venice_Events.97
+	title = FEE_Venice_Events.97.T
+	desc = FEE_Venice_Events.97.D
+	picture = BANKRUPTCY_eventPicture
+
+	trigger = {
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
+		is_year = 1515
+		NOT = { is_year = 1556 }
+		has_country_flag = fee_ven_francesco_venier_merchant_london
+	}
+
+	mean_time_to_happen = {
+		years = 10
+		modifier = {
+			factor = 0.5
+			had_recent_war = 5
+		}
+	}
+
+	option = {
+		name = FEE_Venice_Events.97.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_treasury = 100
+	}
+}
+
+# Cavalleria Dalmata
+country_event = {
+	id = FEE_Venice_Events.98
+	title = FEE_Venice_Events.98.T
+	desc = FEE_Venice_Events.98.D
+	picture = TOURNAMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
+		is_year = 1528
+		NOT = { is_year = 1530 }
+		any_owned_province = {
+			OR = {
+				culture = dalmatian
+				area = east_adriatic_coast_area
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Venice_Events.98.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_treasury = -50
+		add_mil_power = -50
+		add_country_modifier = {
+			name = cavalry_companions
+			duration = -1
+		}
+		random_owned_province = {
+			limit = {
+				OR = {
+					culture = dalmatian
+					area = east_adriatic_coast_area
+				}
+			}
+			if = {
+				limit = { has_building = conscription_center }
+				add_base_manpower = 1
+			}
+			else_if = {
+				limit = { has_building = regimental_camp }
+				add_building = conscription_center
+			}
+			else = {
+				add_building = regimental_camp
+			}
+			if = {
+				limit = { has_building = training_fields }
+				add_base_manpower = 1
+			}
+			else_if = {
+				limit = { has_building = barracks }
+				add_building = training_fields
+			}
+			else = {
+				add_building = barracks
+			}
+			add_province_modifier = {
+				name = military_reinforcement
+				duration = -1
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Venice_Events.98.OPT2
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 2
+				NOT = { treasury = 50 }
+			}
+		}
+
+		add_army_tradition = -5
+	}
+}
+
 # 
 #country_event = {
 #	id = FEE_Venice_Events.

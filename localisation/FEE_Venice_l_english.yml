@@ -413,6 +413,34 @@
  FEE_Venice_Events.92.OPT1: "Absolutely, the Clergy will love it!"
  FEE_Venice_Events.92.OPT2: "He's too pious for us."
 
+ FEE_Venice_Events.93.T: "Francesco Venier?"
+ FEE_Venice_Events.93.D: "This boy is not even 20 years old, but yet he has proposed to go on a long trip passing through Savoy, France and up to London itself, he is the grandchild of our beloved previous Doge Leonardo Loredan."
+ FEE_Venice_Events.93.OPT1: "May he bring us fortune!"
+
+ FEE_Venice_Events.94.T: "Francesco Venier in Savoy"
+ FEE_Venice_Events.94.D: "This venetian merchant called Francesco Venier has arrived in our wonderful city of [205.GetName] and will most likely depart in the next days for France, unless we are going to bribe him into staying in our wonderful city..."
+ FEE_Venice_Events.94.OPT1: "Our city will prosper under him."
+ FEE_Venice_Events.94.OPT2: "He can pass through."
+
+ FEE_Venice_Events.95.T: "Francesco Venier in France"
+ FEE_Venice_Events.95.D: "After spending a few months in the wonderful [205.Owner.GetAdjective] ]lands of [205.GetName] Francesco Venier, this latin merchant has arrived in our wonderful [183.GetName] with the intention to go north in [236.GetName] unless we might convince him to stay here for a while."
+ FEE_Venice_Events.95.OPT1: "Let him stay!"
+ FEE_Venice_Events.95.OPT2: "If he wants to go there, he shall."
+
+ FEE_Venice_Events.96.T: "Francesco Venier in [236.GetName]"
+ FEE_Venice_Events.96.D: "After nearly a year since he left his home in Venice, Francesco Venier, an italian merchant, has arrived in our wonderful city of [236.GetName] where he will most likely stay for a few months before going back home, unless we want to send him back immediately."
+ FEE_Venice_Events.96.OPT1: "He will help [236.GetName] shine!"
+ FEE_Venice_Events.96.OPT2: "We don't need him."
+
+ FEE_Venice_Events.97.T: "Un prestito dal Venier"
+ FEE_Venice_Events.97.D: "The riches accumulated during his travels from Venice to London has paid off the entire republic, a lump sum of gold has reached our hands now."
+ FEE_Venice_Events.97.OPT1: "Marvellous!"
+
+ FEE_Venice_Events.98.T: "Cavalleria Dalmata"
+ FEE_Venice_Events.98.D: "Our recruits from the Dalmatia provinces have proven to be of great use once more especially to lead the charge of our cavalry, should we let them be true part of our standing army?"
+ FEE_Venice_Events.98.OPT1: "Create a center of conscription!"
+ FEE_Venice_Events.98.OPT2: "What a waste of money"
+
 # Estate Modifeirs
  fee_ven_nobles_restrained: "Restrained the Barones"
  desc_fee_ven_nobles_restrained: "Restrained the Barones"
@@ -483,6 +511,8 @@
  fee_ven_andrea_gritti: "Andrea Gritti"
 
  fee_ven_doge_marcantonio_trevisan: "Doge Marcantonio Trevisan"
+
+ fee_ven_francesco_venier_merchant: "Francesco Venier"
 
 # Trade Modifeirs
  fee_ven_trade_deal_costantinople: "Venetian Trade Deal"
