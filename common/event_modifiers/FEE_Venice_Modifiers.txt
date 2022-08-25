@@ -159,3 +159,10 @@ fee_ven_andrea_gritti = {
 	province_trade_power_value = 0.15
 	local_development_cost = -0.15
 }
+
+fee_ven_doge_marcantonio_trevisan = {
+	global_unrest = 1
+	papal_influence = 1
+	church_power_modifier = 0.05
+	monthly_fervor_increase = 0.5
+}

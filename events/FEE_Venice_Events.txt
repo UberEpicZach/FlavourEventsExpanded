@@ -126,31 +126,41 @@ country_event = {
 			limit = {
 				has_dlc = "Golden Century"
 				has_flagship = no
+			}
+			if = {
+				limit = {
+					capital_scope = {
+						has_port = yes
+					}
+				}
 				capital_scope = {
-					has_port = yes
+					create_flagship = {
+						name = "Leone Alato"
+						type = galley
+					}
 				}
 			}
-			capital_scope = {
-				create_flagship = {
-					name = "Leone Alato"
-					type = galley
+			else_if = {
+				limit = {
+					any_owned_province = {
+						has_port = yes
+					}
+				}
+				random_owned_province = {
+					limit = {
+						has_port = yes
+					}
+					create_flagship = {
+						name = "Leone Alato"
+						type = galley
+					}
 				}
 			}
 		}
-		else_if = {
-			limit = {
-				any_owned_province = {
-					has_port = yes
-				}
-			}
-			random_owned_province = {
-				limit = {
-					has_port = yes
-				}
-				create_flagship = {
-					name = "Leone Alato"
-					type = galley
-				}
+		else = {
+			add_navy_tradition = 15
+			create_admiral = {
+				tradition = 75
 			}
 		}
 	}
@@ -531,7 +541,10 @@ country_event = {
 
 	major = yes
 	major_trigger = {
-		tag = VEN
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
 	}
 
 	option = {
@@ -753,7 +766,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = VEN
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
 		owns_core_province = 112
 		is_year = 1630
 		NOT = { is_year = 1680 }
@@ -787,7 +803,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = VEN
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
 		is_year = 1423
 		NOT = { is_year = 1457 }
 		has_ruler = "Francesco Foscari"
@@ -819,7 +838,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = VEN
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
 		is_year = 1438
 		NOT = { is_year = 1459 }
 	}
@@ -853,7 +875,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = VEN
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
 		diplomat = 1
 		151 = {
 			NOT = { owned_by = ROOT }
@@ -889,7 +914,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = VEN
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
 		is_year = 1423
 		NOT = { is_year = 1457 }
 		has_ruler = "Francesco Foscari"
@@ -945,7 +973,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = VEN
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
 		is_year = 1456
 		NOT = { is_year = 1457 }
 		has_ruler = "Francesco Foscari"
@@ -974,7 +1005,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = VEN
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
 		is_year = 1457
 		NOT = { has_ruler = "Francesco Foscari" }
 		NOT = { is_year = 1460 }
@@ -1005,7 +1039,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = VEN
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
 		is_year = 1445
 		NOT = { has_ruler = "Pasquale Malipiero" }
 		has_estate = estate_nobles
@@ -1035,7 +1072,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = VEN
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
 		is_year = 1445
 		has_ruler = "Francesco Foscari"
 		NOT = { is_year = 1457 }
@@ -1105,7 +1145,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = VEN
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
 		is_year = 1445
 		OR = {
 			owns = 4729
@@ -1173,7 +1216,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = VEN
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
 		owns = 112
 		is_year = 1453
 		NOT = { is_year = 1454 }
@@ -1227,7 +1273,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = VEN
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
 		owns = 112
 		is_year = 1455
 		NOT = { is_year = 1456 }
@@ -1259,7 +1308,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = VEN
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
 		owns = 112
 		is_year = 1455
 		NOT = { is_year = 1462 }
@@ -1297,7 +1349,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = VEN
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
 		is_year = 1461
 		NOT = { is_year = 1471 }
 	}
@@ -1371,7 +1426,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = VEN
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
 		is_year = 1463
 		NOT = { is_year = 1479 }
 		TUR = {
@@ -1626,7 +1684,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = VEN
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
 		is_in_war = {
 			attacker_leader = ROOT
 			casus_belli = cb_crusade
@@ -1684,7 +1745,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = VEN
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
 		is_in_war = {
 			attacker_leader = ROOT
 			casus_belli = cb_crusade
@@ -1769,7 +1833,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = VEN
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
 		is_in_war = {
 			attacker_leader = ROOT
 			casus_belli = cb_crusade
@@ -1819,7 +1886,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = VEN
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
 		is_in_war = {
 			attacker_leader = ROOT
 			casus_belli = cb_crusade
@@ -1876,7 +1946,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = VEN
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
 		is_in_war = {
 			attacker_leader = ROOT
 			casus_belli = cb_crusade
@@ -1917,7 +1990,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = VEN
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
 		is_in_war = {
 			attacker_leader = ROOT
 			casus_belli = cb_crusade
@@ -1966,7 +2042,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = VEN
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
 		is_at_war = no
 		has_country_flag = fee_ven_turko_venetian_wars_friuli_raided_flag
 		137 = {
@@ -2049,7 +2128,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = VEN
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
 		is_year = 1463
 		is_at_war = no
 		has_country_modifier = fee_ven_turko_venetian_wars
@@ -2140,7 +2222,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = VEN
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
 		is_year = 1463
 		is_at_war = no
 		has_country_modifier = fee_ven_turko_venetian_wars
@@ -2232,7 +2317,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = VEN
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
 		is_year = 1499
 		NOT = { is_year = 1571 }
 		war_with = TUR
@@ -2292,7 +2380,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = VEN
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
 		is_year = 1399
 		NOT = { is_year = 1466 }
 	}
@@ -2359,7 +2450,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = VEN
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
 		is_year = 1399
 		has_country_flag = fee_ven_voyages_niccolo_tron
 		NOT = { is_year = 1466 }
@@ -2431,7 +2525,10 @@ country_event = {
 
 	major = yes
 	major_trigger = {
-		tag = VEN
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
 	}
 
 	option = {
@@ -2513,7 +2610,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = VEN
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
 		is_year = 1399
 		has_country_flag = fee_ven_voyages_niccolo_tron_cyprus
 		NOT = { is_year = 1466 }
@@ -2586,7 +2686,10 @@ country_event = {
 
 	major = yes
 	major_trigger = {
-		tag = VEN
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
 	}
 
 	option = {
@@ -2660,7 +2763,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = VEN
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
 		is_year = 1399
 		has_country_flag = fee_ven_voyages_niccolo_tron_jerusalem
 		NOT = { is_year = 1466 }
@@ -2734,7 +2840,10 @@ country_event = {
 
 	major = yes
 	major_trigger = {
-		tag = VEN
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
 	}
 
 	option = {
@@ -2823,7 +2932,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = VEN
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
 		is_year = 1471
 		has_country_flag = fee_ven_voyages_niccolo_tron_egypt
 		NOT = { is_year = 1473 }
@@ -2873,7 +2985,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = VEN
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
 		is_year = 1441
 		NOT = { is_year = 1450 }
 		exists = TRE
@@ -2914,7 +3029,10 @@ country_event = {
 
 	major = yes
 	major_trigger = {
-		tag = VEN
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
 	}
 
 	option = {
@@ -3017,7 +3135,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = VEN
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
 		is_year = 1464
 		NOT = { is_year = 1473 }
 		owns = 111
@@ -3055,7 +3176,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = VEN
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
 		is_year = 1473
 		NOT = { is_year = 1474 }
 	}
@@ -3103,7 +3227,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = VEN
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
 		is_year = 1442
 		NOT = { is_year = 1449 }
 	}
@@ -3147,7 +3274,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = VEN
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
 		general_with_name = "Pietro Mocenigo"
 	}
 
@@ -3226,7 +3356,10 @@ country_event = {
 
 	major = yes
 	major_trigger = {
-		tag = VEN
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
 	}
 
 	option = {
@@ -3273,7 +3406,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = VEN
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
 		general_with_name = "Pietro Mocenigo"
 		is_year = 1449
 		NOT = { is_year = 1470 }
@@ -3310,7 +3446,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = VEN
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
 		is_year = 1470
 		NOT = { is_year = 1474 }
 	}
@@ -3383,7 +3522,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = VEN
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
 		is_year = 1474
 		NOT = { is_year = 1476 }
 	}
@@ -3430,7 +3572,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = VEN
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
 		is_year = 1476
 		has_ruler = "Pietro Mocenigo"
 		NOT = { is_year = 1477 }
@@ -3638,7 +3783,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = VEN
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
 		is_year = 1458
 		NOT = { is_year = 1483 }
 	}
@@ -3705,7 +3853,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = VEN
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
 		is_year = 1460
 		has_country_flag = fee_ven_voyages_antonio_grimani
 		NOT = { is_year = 1483 }
@@ -3770,7 +3921,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = VEN
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
 		is_year = 1460
 		has_country_flag = fee_ven_voyages_antonio_grimani_syria
 		NOT = { is_year = 1483 }
@@ -3816,7 +3970,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = VEN
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
 		is_year = 1460
 		has_country_flag = fee_ven_voyages_antonio_grimani_egypt
 		NOT = { is_year = 1483 }
@@ -3870,7 +4027,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = VEN
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
 		is_year = 1461
 		has_country_flag = fee_ven_voyages_antonio_grimani_seaside
 		NOT = { is_year = 1483 }
@@ -3994,7 +4154,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = VEN
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
 		is_year = 1461
 		has_country_flag = fee_ven_voyages_antonio_grimani_hearthland
 		NOT = { is_year = 1483 }
@@ -4168,7 +4331,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = VEN
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
 		exists = HUN
 		is_year = 1489
 		NOT = { is_year = 1493 }
@@ -4246,7 +4412,10 @@ country_event = {
 
 	major = yes
 	major_trigger = {
-		tag = VEN
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
 	}
 
 	mean_time_to_happen = {
@@ -4332,7 +4501,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = VEN
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
 		is_year = 1493
 		religion = catholic
 		NOT = { is_year = 1523 }
@@ -4405,7 +4577,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = VEN
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
 		is_year = 1499
 		NOT = { is_year = 1523 }
 	}
@@ -4442,7 +4617,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = VEN
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
 		is_year = 1521
 		NOT = { is_year = 1523 }
 	}
@@ -4690,7 +4868,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = VEN
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
 		is_year = 1509
 		OR = {
 			owns = 110
@@ -4749,7 +4930,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = VEN
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
 		is_year = 1511
 		NOT = { is_year = 1514 }
 	}
@@ -4785,7 +4969,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = VEN
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
 		is_year = 1520
 		NOT = { is_year = 1523 }
 		exists = TUR
@@ -4840,7 +5027,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = VEN
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
 		is_year = 1523
 		NOT = { is_year = 1538 }
 	}
@@ -4904,6 +5094,583 @@ country_event = {
 
 #########	Life of Doge Marcantonio Trevisan 1475-1554	#########
 
+# Venezia ed il Sultanato d'Egitto
+country_event = {
+	id = FEE_Venice_Events.84
+	title = FEE_Venice_Events.84.T
+	desc = FEE_Venice_Events.84.D
+	picture = DIPLOMACY_SIGNING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
+		is_year = 1512
+		exists = MAM
+		NOT = { is_year = 1524 }
+		egypt_region = {
+			NOT = { owned_by = ROOT }
+		}
+		MAM = {
+			OR = {
+				owns = 358
+				owns = 361
+			}
+			num_of_owned_provinces_with = {
+				value = 10
+				region = egypt_region
+			}
+		}
+		NOT = { alliance_with = MAM }
+	}
+
+	mean_time_to_happen = {
+		years = 1
+	}
+
+	option = {
+		name = FEE_Venice_Events.84.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_treasury = -25
+		add_dip_power = -25
+		MAM = {
+			country_event = {
+				id = FEE_Venice_Events.85
+			}
+		}
+		tooltip = {
+			358 = {
+				add_trade_modifier = {
+					who = ROOT
+					duration = 3650
+					power = 15
+					key = opinion_export_good
+				}
+			}
+			377 = {
+				add_trade_modifier = {
+					who = ROOT
+					duration = 3650
+					power = 15
+					key = opinion_export_good
+				}
+			}
+			create_alliance = MAM
+			MAM = {
+				add_country_modifier = {
+					name = western_reforms
+					duration = 3650
+				}
+			}
+			add_opinion = {
+				who = MAM
+				modifier = opinion_money_sent
+			}
+			reverse_add_opinion = {
+				who = MAM
+				modifier = opinion_money_sent
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Venice_Events.84.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
+		add_prestige = 3
+	}
+}
+
+# Venetians in Egypt?
+country_event = {
+	id = FEE_Venice_Events.85
+	title = FEE_Venice_Events.85.T
+	desc = FEE_Venice_Events.85.D
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	is_triggered_only = yes
+
+	major = yes
+	major_trigger = {
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
+	}
+
+	option = {
+		name = FEE_Venice_Events.85.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		create_alliance = FROM
+		add_country_modifier = {
+			name = western_reforms
+			duration = 3650
+		}
+		add_opinion = {
+			who = FROM
+			modifier = opinion_money_sent
+		}
+		reverse_add_opinion = {
+			who = FROM
+			modifier = opinion_money_sent
+		}
+		358 = {
+			add_trade_modifier = {
+				who = FROM
+				duration = 3650
+				power = 15
+				key = opinion_export_good
+			}
+		}
+		377 = {
+			add_trade_modifier = {
+				who = FROM
+				duration = 3650
+				power = 15
+				key = opinion_export_good
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Venice_Events.85.OPT2
+		ai_chance = {
+			factor = 50
+		}
+
+		add_mil_power = 25
+		add_prestige = 10
+		add_opinion = {
+			who = FROM
+			modifier = opinion_export_bad
+		}
+		reverse_add_opinion = {
+			who = FROM
+			modifier = opinion_export_bad
+		}
+	}
+}
+
+# Pellegrini Veneziani al Santo Sepolcro
+country_event = {
+	id = FEE_Venice_Events.86
+	title = FEE_Venice_Events.86.T
+	desc = FEE_Venice_Events.86.D
+	picture = JERUSALEM_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
+		is_year = 1512
+		exists = MAM
+		alliance_with = MAM
+		religion_group = christian
+		397 = { owned_by = MAM }
+		NOT = { is_year = 1524 }
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Venice_Events.86.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_treasury = -5
+		MAM = {
+			country_event = {
+				id = FEE_Venice_Events.87
+				days = 30
+			}
+		}
+	}
+}
+
+# Pius request from [FROM.GetName]
+country_event = {
+	id = FEE_Venice_Events.87
+	title = FEE_Venice_Events.87.T
+	desc = FEE_Venice_Events.87.D
+	picture = JERUSALEM_eventPicture
+
+	is_triggered_only = yes
+
+	major = yes
+	major_trigger = {
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
+	}
+
+	option = {
+		name = FEE_Venice_Events.87.OPT1
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				alliance_with = FROM
+			}
+			modifier = {
+				factor = 2
+				religion_group = FROM
+			}
+			modifier = {
+				factor = 2
+				has_opinion = {
+					who = FROM
+					value = 75
+				}
+			}
+		}
+
+		add_treasury = 5
+		change_religious_influence_equivalent_fee = { add = 10 }
+		add_opinion = {
+			who = FROM
+			modifier = christian_brotherhood
+		}
+		reverse_add_opinion = {
+			who = FROM
+			modifier = christian_brotherhood
+		}
+		FROM = {
+			change_religious_influence_equivalent_fee = { add = 10 }
+		}
+	}
+
+	option = {
+		name = FEE_Venice_Events.87.OPT2
+		ai_chance = {
+			factor = 25
+			modifier = {
+				factor = 2
+				NOT = { alliance_with = FROM }
+			}
+			modifier = {
+				factor = 2
+				NOT = { religion_group = FROM }
+			}
+			modifier = {
+				factor = 2
+				NOT = {
+					has_opinion = {
+						who = FROM
+						value = -25
+					}
+				}
+			}
+		}
+
+		add_mil_power = 50
+		add_prestige = 10
+		add_legitimacy_equivalent = { amount = 10 republican_tradition = 5 }
+	}
+}
+
+# Island of Farmagosta
+country_event = {
+	id = FEE_Venice_Events.88
+	title = FEE_Venice_Events.88.T
+	desc = FEE_Venice_Events.88.D
+	picture = SHIP_SAILING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
+		owns = 321
+	}
+
+	mean_time_to_happen = {
+		years = 1
+	}
+
+	goto = 321
+
+	option = {
+		name = FEE_Venice_Events.88.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		321 = {
+			add_base_production = 3
+			add_base_tax = -2
+			if = {
+				limit = {
+					has_building = grand_shipyard
+				}
+				add_base_manpower = 1
+			}
+			else_if = {
+				limit = {
+					has_building = shipyard
+				}
+				add_building = grand_shipyard
+			}
+			else = {
+				add_building = shipyard
+			}
+			if = {
+				limit = {
+					has_building = counting_house
+				}
+				add_base_production = 1
+			}
+			else_if = {
+				limit = {
+					has_building = workshop
+				}
+				add_building = counting_house
+			}
+			else = {
+				add_building = workshop
+			}
+		}
+	}
+}
+
+# Fortificazioni di Nicosia
+country_event = {
+	id = FEE_Venice_Events.89
+	title = FEE_Venice_Events.89.T
+	desc = FEE_Venice_Events.89.D
+	picture = FORT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
+		owns = 321
+		is_year = 1530
+		NOT = { is_year = 1554 }
+	}
+
+	mean_time_to_happen = {
+		years = 3
+	}
+
+	goto = 321
+
+	option = {
+		name = FEE_Venice_Events.89.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_treasury = -100
+		321 = {
+			if = {
+				limit = { has_building = fort_18th }
+				add_base_manpower = 3
+			}
+			else_if = {
+				limit = { has_building = fort_17th }
+				add_building = fort_18th
+			}
+			else_if = {
+				limit = { has_building = fort_16th }
+				add_building = fort_17th
+			}
+			else_if = {
+				limit = { has_building = fort_15th }
+				add_building = fort_16th
+			}
+			else = {
+				add_building = fort_15th
+			}
+			add_province_modifier = {
+				name = local_fortress
+				duration = 18250
+			}
+		}
+	}
+}
+
+# Siccità del 1533
+country_event = {
+	id = FEE_Venice_Events.90
+	title = FEE_Venice_Events.90.T
+	desc = FEE_Venice_Events.90.D
+	picture = FAMINE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
+		is_year = 1533
+		NOT = { is_year = 1550 }
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Venice_Events.90.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_country_modifier = {
+			name = fighting_famine
+			duration = 3650
+		}
+		add_country_modifier = {
+			name = tot_great_famine
+			duration = 1825
+		}
+	}
+}
+
+# Plague from Siria?
+country_event = {
+	id = FEE_Venice_Events.91
+	title = FEE_Venice_Events.91.T
+	desc = FEE_Venice_Events.91.D
+	picture = PLAGUE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
+		owns = 321
+		is_year = 1533
+		NOT = { is_year = 1550 }
+	}
+
+	mean_time_to_happen = {
+		years = 5
+	}
+
+	goto = 321
+
+	option = {
+		name = FEE_Venice_Events.91.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		377 = {
+			add_trade_modifier = {
+				who = ROOT
+				duration = 1825
+				power = -10
+				key = plague
+			}
+		}
+		321 = {
+			add_base_tax = -1
+			add_base_production = -1
+			add_base_manpower = -1
+			add_province_modifier = {
+				name = severe_plague_local
+				duration = 1825
+			}
+		}
+	}
+}
+
+# Doge Marcantonio Trevisan
+country_event = {
+	id = FEE_Venice_Events.92
+	title = FEE_Venice_Events.92.T
+	desc = FEE_Venice_Events.92.D
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
+		is_year = 1553
+		NOT = { is_year = 1554 }
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Venice_Events.92.OPT1
+		ai_chance = {
+			factor = 1
+		}
+		highlight = yes
+
+		add_legitimacy_equivalent = { amount = -25 republican_tradition = -12 }
+		define_ruler = {
+			name = "Marcantonio Trevisan"
+			age = 78
+			culture = venetian
+			religion = catholic
+		}
+		change_religious_influence_equivalent_fee = { add = 10 }
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = 10
+		}
+		add_ruler_modifier = {
+			name = fee_ven_doge_marcantonio_trevisan
+			duration = -1
+		}
+	}
+
+	option = {
+		name = FEE_Venice_Events.92.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
+		change_religious_influence_equivalent_fee = { remove = 10 }
+		if = {
+			limit = {
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = -5
+			}
+		}
+		else = {
+			add_adm_power = -50
+		}
+	}
+}
+
 # 
 #country_event = {
 #	id = FEE_Venice_Events.
@@ -4914,7 +5681,10 @@ country_event = {
 #	fire_only_once = yes
 #
 #	trigger = {
-#		tag = VEN
+#		OR = {
+#			tag = VEN
+#			was_tag = VEN
+#		}
 #	}
 #
 #	mean_time_to_happen = {

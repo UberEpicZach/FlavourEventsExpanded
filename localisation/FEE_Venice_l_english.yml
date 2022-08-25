@@ -373,6 +373,41 @@
  FEE_Venice_Events.83.OPT1: "Obviously."
  FEE_Venice_Events.83.OPT2: "We are happy as we are."
 
+ FEE_Venice_Events.84.T: "Venezia ed il Sultanato d'Egitto"
+ FEE_Venice_Events.84.D: "Our current partnership with [MAM.Monarch.GetTitle] [MAM.Monarch.GetName] of [MAM.GetName] [MAM.GetAdjective] has been at an all time low, and our presence in the Egypt region has diminished as well, we could send a missive to the [MAM.Monarch.GetTitle] [MAM.Monarch.GetName] and try to achieve a trade deal between the two nations."
+ FEE_Venice_Events.84.OPT1: "Send Domenico and Marcantonio Trevisan!"
+ FEE_Venice_Events.84.OPT2: "Why should we waste our diplomats?"
+
+ FEE_Venice_Events.85.T: "Venetians in Egypt?"
+ FEE_Venice_Events.85.D: "Already a few decades ago the Venetians with their travellers and merchants such as Niccolò Tron and Antonio Grimani have created small emporium in the marvellous cities of [358.GetName] and [361.GetName], a few days ago Domenico and Marcantonio Trevisan, 2 venetian nobleman, have reached our splendid capital proposing a sorta of deal between the two nations"
+ FEE_Venice_Events.85.OPT1: "We shall accept their proposal."
+ FEE_Venice_Events.85.OPT2: "The mighty [MAM.GetName] [MAM.GetAdjective] will need no help!"
+
+ FEE_Venice_Events.86.T: "Pellegrini Veneziani al Santo Sepolcro"
+ FEE_Venice_Events.86.D: "Pilgrimage to the Jerusalem and the tomb of our beloved Jesus Christ have been prohibited for a long time and our holy brothers have been assaulted on the way to Holy land, let us send our preachers to [379.Owner.GetTitle] of [379.GetName] and ask them for safe passage."
+ FEE_Venice_Events.86.OPT1: "Let's hope for a peaceful recoincilation."
+
+ FEE_Venice_Events.87.T: "Pius request from [FROM.GetName]"
+ FEE_Venice_Events.87.D: "Some preachers from [VEN.GetName] have requested safe passage to visit the Holy Sepulcher in [379.GetName] and pray to the tomb of Christ, should we allow all those pilgrims to march in our territories freely?"
+ FEE_Venice_Events.87.OPT1: "Absolutely, my friend."
+ FEE_Venice_Events.87.OPT2: "We won't allow spy in our country."
+
+ FEE_Venice_Events.88.T: "Island of Farmagosta"
+ FEE_Venice_Events.88.D: "Throughout the Venetian period, the population of Cyprus experienced a constant increase; the vast crops of wheat and barley allowed a rather regular exportation to Venice and its other possessions, and on some occasions were even enough to save the metropolis from famine, the production of sugar was gradually replaced by that of cotton, which in the course of the sixteenth century became a substantial source of income for local landowners"
+ FEE_Venice_Events.88.OPT1: "Marvellous!"
+
+ FEE_Venice_Events.89.T: "Fortificazioni di Nicosia"
+ FEE_Venice_Events.89.D: "In November of the same year, by virtue of his previous experience as an advisor in Cyprus, he was elected by the Great Council as lieutenant of the island in place of Augustine of Mula. He left at the end of March the following year with three ships and arrived there in July. He gave a detailed account of the poor state of the fortifications of Nicosia, the adjustment of which would have required years of work and the expenditure of thousands of ducats."
+ FEE_Venice_Events.89.OPT1: "We can't waste time!"
+
+ FEE_Venice_Events.90.T: "Siccità del 1533"
+ FEE_Venice_Events.90.D: "Our crops have been destroyed by locust and drought!"
+ FEE_Venice_Events.90.OPT1: "How will we survive?"
+
+ FEE_Venice_Events.91.T: "Plague from Syria?"
+ FEE_Venice_Events.91.D: "Seems like few ships from Syria who arrived at [321.GetName] have brought infected goods and people while trading, Trevisan and the rectors succeeded in preventing the contagion from spreading throughout the island, but in the city and its immediate surroundings more than 800 inhabitants (including several Venetian officials) died in a few months and thousands became infected."
+ FEE_Venice_Events.91.OPT1: "Damn it!"
+
 # Estate Modifeirs
  fee_ven_nobles_restrained: "Restrained the Barones"
  desc_fee_ven_nobles_restrained: "Restrained the Barones"
@@ -441,6 +476,8 @@
  fee_ven_cardinal_domenico_grimani: "Cardinal Domenico Grimani"
 
  fee_ven_andrea_gritti: "Andrea Gritti"
+
+ fee_ven_doge_marcantonio_trevisan: "Doge Marcantonio Trevisan"
 
 # Trade Modifeirs
  fee_ven_trade_deal_costantinople: "Venetian Trade Deal"
