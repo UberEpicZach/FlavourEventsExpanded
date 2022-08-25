@@ -5545,7 +5545,7 @@ country_event = {
 			duration = 3650
 		}
 		add_country_modifier = {
-			name = tot_great_famine
+			name = contained_plague
 			duration = 1825
 		}
 	}
