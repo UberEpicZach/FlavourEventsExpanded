@@ -1,6 +1,6 @@
 namespace = FEE_Venice_Events
 
-#The Venetian Fleet
+# The Venetian Fleet
 country_event = {
 	id = FEE_Venice_Events.1
 	title = FEE_Venice_Events.1.T
@@ -62,7 +62,7 @@ country_event = {
 	}
 }
 
-#Magistrato alla Milizia da Mar
+# Magistrato alla Milizia da Mar
 country_event = {
 	id = FEE_Venice_Events.2
 	title = FEE_Venice_Events.2.T
@@ -77,8 +77,10 @@ country_event = {
 		}
 		is_year = 1545
 		owns_core_province = 112
+		NOT = { is_year = 1687 }
 		112 = {
-			num_of_times_improved = 3
+			base_production = 10
+			base_manpower = 10
 		}
 	}
 
@@ -94,7 +96,7 @@ country_event = {
 	}
 }
 
-#Naval Reforms #1
+# Naval Reforms #1
 country_event = {
 	id = FEE_Venice_Events.3
 	title = FEE_Venice_Events.3.T
@@ -108,6 +110,7 @@ country_event = {
 			was_tag = VEN
 		}
 		is_year = 1453
+		NOT = { is_year = 1500 }
 		owns_core_province = 112
 		navy_size_percentage = 0.75
 	}
@@ -166,7 +169,7 @@ country_event = {
 	}
 }
 
-#Governator de' Condannati
+# Governator de' Condannati
 country_event = {
 	id = FEE_Venice_Events.4
 	title = FEE_Venice_Events.4.T
@@ -179,12 +182,13 @@ country_event = {
 			tag = VEN
 			was_tag = VEN
 		}
-		is_year = 1500
+		is_year = 1542
+		NOT = { is_year = 1721 }
 		navy_tradition = 50
 	}
 
 	mean_time_to_happen = {
-		months = 12
+		years = 10
 	}
 
 	option = {
@@ -197,7 +201,7 @@ country_event = {
 	}
 }
 
-#Porta di Terra
+# Porta di Terra
 country_event = {
 	id = FEE_Venice_Events.5
 	title = FEE_Venice_Events.5.T
@@ -211,6 +215,7 @@ country_event = {
 			was_tag = VEN
 		}
 		is_year = 1453
+		NOT = { is_year = 1523 }
 		owns_core_province = 112
 		112 = { development = 30 }
 	}
@@ -246,7 +251,7 @@ country_event = {
 	}
 }
 
-#Arsenal Expansion 1473
+# Arsenal Expansion 1473
 country_event = {
 	id = FEE_Venice_Events.6
 	title = FEE_Venice_Events.6.T
@@ -287,7 +292,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 12
+		years = 5
 		modifier = {
 			factor = 0.5
 			naval_reformer = 2
@@ -306,7 +311,7 @@ country_event = {
 	}
 }
 
-#Espansione dell'Arsenale del 1535
+# Espansione dell'Arsenale del 1535
 country_event = {
 	id = FEE_Venice_Events.7
 	title = FEE_Venice_Events.7.T
@@ -321,6 +326,7 @@ country_event = {
 		}
 		is_year = 1535
 		owns_core_province = 112
+		NOT = { is_year = 1566 }
 		112 = {
 			OR = {
 				development = 40
@@ -365,7 +371,7 @@ country_event = {
 	}
 }
 
-#Espansione finale dell'Arsenale
+# Espansione finale dell'Arsenale
 country_event = {
 	id = FEE_Venice_Events.8
 	title = FEE_Venice_Events.8.T
@@ -380,6 +386,7 @@ country_event = {
 		}
 		is_year = 1566
 		owns_core_province = 112
+		NOT = { is_year = 1573 }
 		112 = {
 			OR = {
 				development = 50
@@ -416,7 +423,7 @@ country_event = {
 	}
 }
 
-#Fanti di Mar
+# Fanti di Mar
 country_event = {
 	id = FEE_Venice_Events.9
 	title = FEE_Venice_Events.9.T
@@ -431,6 +438,7 @@ country_event = {
 			was_tag = VEN
 		}
 		is_year = 1550
+		NOT = { is_year = 1687 }
 		any_owned_province = {
 			has_port = yes
 		}
@@ -481,7 +489,7 @@ country_event = {
 	}
 }
 
-#Trade Expansion in Costantinople
+# Trade Expansion in Costantinople
 country_event = {
 	id = FEE_Venice_Events.10
 	title = FEE_Venice_Events.10.T
@@ -530,7 +538,7 @@ country_event = {
 	}
 }
 
-#Venetian Trade Deal
+# Venetian Trade Deal
 country_event = {
 	id = FEE_Venice_Events.11
 	title = FEE_Venice_Events.11.T
@@ -592,7 +600,7 @@ country_event = {
 	}
 }
 
-#The arrival of Michele Attendolo
+# The arrival of Michele Attendolo
 country_event = {
 	id = FEE_Venice_Events.12
 	title = FEE_Venice_Events.12.T
@@ -606,6 +614,7 @@ country_event = {
 			was_tag = VEN
 		}
 		is_year = 1447
+		NOT = { is_year = 1463 }
 	}
 
 	option = {
@@ -622,7 +631,7 @@ country_event = {
 	}
 }
 
-#Jews of 1509
+# Jews of 1509
 country_event = {
 	id = FEE_Venice_Events.13
 	title = FEE_Venice_Events.13.T
@@ -665,7 +674,7 @@ country_event = {
 	}
 }
 
-#Ghetto Novo
+# Ghetto Novo
 country_event = {
 	id = FEE_Venice_Events.14
 	title = FEE_Venice_Events.14.T
@@ -726,7 +735,7 @@ country_event = {
 	}
 }
 
-#The Levantini Family
+# The Levantini Family
 country_event = {
 	id = FEE_Venice_Events.15
 	title = FEE_Venice_Events.15.T
@@ -737,6 +746,7 @@ country_event = {
 	trigger = {
 		is_year = 1541
 		owns_core_province = 112
+		NOT = { is_year = 1589 }
 		112 = { has_province_modifier = fee_ven_jew_ghetto_novo }
 	}
 
@@ -756,7 +766,7 @@ country_event = {
 	}
 }
 
-#Establishment of the casino in Venezia
+# Establishment of the casino in Venezia
 country_event = {
 	id = FEE_Venice_Events.16
 	title = FEE_Venice_Events.16.T
@@ -793,7 +803,7 @@ country_event = {
 
 #########	Life of Doge Francesco Foscari from 1444 to 1457	#########
 
-#Il Dogato di Francesco Foscari
+# Il Dogato di Francesco Foscari
 country_event = {
 	id = FEE_Venice_Events.17
 	title = FEE_Venice_Events.17.T
@@ -1044,6 +1054,7 @@ country_event = {
 			was_tag = VEN
 		}
 		is_year = 1445
+		NOT = { is_year = 1457 }
 		NOT = { has_ruler = "Pasquale Malipiero" }
 		has_estate = estate_nobles
 	}
@@ -2133,6 +2144,7 @@ country_event = {
 			was_tag = VEN
 		}
 		is_year = 1463
+		NOT = { is_year = 1479 }
 		is_at_war = no
 		has_country_modifier = fee_ven_turko_venetian_wars
 		TUR = {
@@ -2227,6 +2239,7 @@ country_event = {
 			was_tag = VEN
 		}
 		is_year = 1463
+		NOT = { is_year = 1479 }
 		is_at_war = no
 		has_country_modifier = fee_ven_turko_venetian_wars
 		has_won_war_against = {
@@ -4299,6 +4312,7 @@ country_event = {
 
 	trigger = {
 		is_year = 1483
+		NOT = { is_year = 1493 }
 		has_country_flag = fee_ven_voyages_antonio_grimani
 	}
 
@@ -4801,7 +4815,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		NOT = { is_year = 1492 }
+		is_year = 1492
 		151 = {
 			owned_by = ROOT
 			NOT = { owned_by = VEN }
