@@ -3327,7 +3327,7 @@ country_event = {
 			}
 		}
 
-		kill_leader = admiral
+		kill_leader = { type = admiral }
 		137 = {
 			remove_trade_modifier = {
 				who = ROOT
@@ -3345,6 +3345,14 @@ country_event = {
 	picture = DIPLOMACY_eventPicture
 
 	is_triggered_only = yes
+
+	major = yes
+	major_trigger = {
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
+	}
 
 	option = {
 		name = FEE_Venice_Events.56.OPT1
@@ -3367,16 +3375,8 @@ country_event = {
 		}
 	}
 
-	major = yes
-	major_trigger = {
-		OR = {
-			tag = VEN
-			was_tag = VEN
-		}
-	}
-
 	option = {
-		name = FEE_Venice_Events.56.OPT1
+		name = FEE_Venice_Events.56.OPT2
 		ai_chance = {
 			factor = 50
 			modifier = {
@@ -5784,7 +5784,7 @@ country_event = {
 				limit = { has_country_flag = fee_ven_francesco_venier_merchant }
 				PREV = {
 					add_trade_modifier = {
-						who = THIS
+						who = PREV
 						duration = 5475
 						power = 10
 						key = fee_ven_francesco_venier_merchant
@@ -5898,7 +5898,7 @@ country_event = {
 				limit = { has_country_flag = fee_ven_francesco_venier_merchant }
 				PREV = {
 					add_trade_modifier = {
-						who = THIS
+						who = PREV
 						duration = 5475
 						power = 10
 						key = fee_ven_francesco_venier_merchant
@@ -6012,7 +6012,7 @@ country_event = {
 				limit = { has_country_flag = fee_ven_francesco_venier_merchant }
 				PREV = {
 					add_trade_modifier = {
-						who = THIS
+						who = PREV
 						duration = 5475
 						power = 10
 						key = fee_ven_francesco_venier_merchant
@@ -6193,6 +6193,104 @@ country_event = {
 		}
 
 		add_army_tradition = -5
+	}
+}
+
+# Johann Matthias von der Schulenburg
+country_event = {
+	id = FEE_Venice_Events.99
+	title = FEE_Venice_Events.99.T
+	desc = FEE_Venice_Events.99.D
+	picture = GENERALS_DISCUSSING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
+		is_year = 1716
+		NOT = { is_year = 1729 }
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Venice_Events.99.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		define_advisor = {
+			name = "Johann Matthias von der Schulenburg"
+			culture = saxon
+			religion = SAX
+			type = commandant
+			skill = 3
+			cost_multiplier = 0.75
+		}
+	}
+}
+
+# Riforma Schulenburg
+country_event = {
+	id = FEE_Venice_Events.100
+	title = FEE_Venice_Events.100.T
+	desc = FEE_Venice_Events.100.D
+	picture = GENERALS_DISCUSSING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = VEN
+			was_tag = VEN
+		}
+		is_year = 1729
+		NOT = { is_year = 1747 }
+	}
+
+	mean_time_to_happen = {
+		years = 1
+	}
+
+	option = {
+		name = FEE_Venice_Events.100.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_mil_power = -100
+		add_yearly_manpower = -1
+		add_country_modifier = {
+			name = fee_ven_standing_army
+			duration = -1
+		}
+		add_country_modifier = {
+			name = mng_militry_incompetence
+			duration = 3650
+		}
+	}
+
+	option = {
+		name = FEE_Venice_Events.100.OPT2
+		ai_chance = {
+			factor = 25
+		}
+
+		add_army_professionalism = -0.10
+		add_army_tradition = -15
+		add_country_modifier = {
+			name = fee_ven_mercenary_army
+			duration = -1
+		}
+		add_country_modifier = {
+			name = mng_militry_incompetence
+			duration = 3650
+		}
 	}
 }
 

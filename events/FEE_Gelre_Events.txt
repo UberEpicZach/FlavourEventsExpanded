@@ -215,9 +215,9 @@ country_event = {
 #The Guelders Wars Event Chain
 #Claims to the Duchy of Gelre
 country_event = {
-	id = FEE_Gelre_Events.5
-	title = FEE_Gelre_Events.5.T
-	desc = FEE_Gelre_Events.5.D
+	id = FEE_Gelre_Events.6
+	title = FEE_Gelre_Events.6.T
+	desc = FEE_Gelre_Events.6.D
 	picture = BANKRUPTCY_eventPicture
 
 	fire_only_once = yes
@@ -233,50 +233,26 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Gelre_Events.5.OPT1
+		name = FEE_Gelre_Events.6.OPT1
 		ai_chance = {
 			factor = 50
 		}
 
 		BUR = {
 			country_event = {
-				id = FEE_Gelre_Events.6
+				id = FEE_Gelre_Events.7
 				days = 3
 			}
 		}
 	}
 
 	option = {
-		name = FEE_Gelre_Events.5.OPT2
+		name = FEE_Gelre_Events.6.OPT2
 		ai_chance = {
 			factor = 50
 		}
 
 		add_legitimacy_equivalent = { amount = 20 republican_tradition = 10 }
-	}
-}
-
-#Gelre Requests Financial Aid
-country_event = {
-	id = FEE_Gelre_Events.6
-	title = FEE_Gelre_Events.6.T
-	desc = FEE_Gelre_Events.6.D
-	picture = DIPLOMACY_eventPicture
-
-	is_triggered_only = yes
-
-	option = {
-		name = FEE_Gelre_Events.6.OPT1
-		ai_chance = {
-			factor = 50
-		}
-
-		GEL = {
-			country_event = {
-				id = FEE_Gelre_Events.7
-				days = 3
-			}
-		}
 	}
 }
 
@@ -292,6 +268,30 @@ country_event = {
 	option = {
 		name = FEE_Gelre_Events.7.OPT1
 		ai_chance = {
+			factor = 50
+		}
+
+		GEL = {
+			country_event = {
+				id = FEE_Gelre_Events.8
+				days = 3
+			}
+		}
+	}
+}
+
+#Gelre Requests Financial Aid
+country_event = {
+	id = FEE_Gelre_Events.8
+	title = FEE_Gelre_Events.8.T
+	desc = FEE_Gelre_Events.8.D
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Gelre_Events.8.OPT1
+		ai_chance = {
 			factor = 100
 		}
 
@@ -302,7 +302,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Gelre_Events.7.OPT2
+		name = FEE_Gelre_Events.8.OPT2
 		ai_chance = {
 			factor = 0
 		}
@@ -313,9 +313,9 @@ country_event = {
 
 #The Bill Comes Due
 country_event = {
-	id = FEE_Gelre_Events.8
-	title = FEE_Gelre_Events.8.T
-	desc = FEE_Gelre_Events.8.D
+	id = FEE_Gelre_Events.9
+	title = FEE_Gelre_Events.9.T
+	desc = FEE_Gelre_Events.9.D
 	picture = OVEREXTENSION_eventPicture
 
 	fire_only_once = yes
@@ -333,7 +333,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Gelre_Events.8.OPT1
+		name = FEE_Gelre_Events.9.OPT1
 		ai_chance = {
 			factor = 50
 		}
@@ -344,7 +344,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Gelre_Events.8.OPT2
+		name = FEE_Gelre_Events.9.OPT2
 		ai_chance = {
 			factor = 50
 		}
@@ -379,9 +379,9 @@ country_event = {
 
 #The Guelders Wars
 country_event = {
-	id = FEE_Gelre_Events.9
-	title = FEE_Gelre_Events.9.T
-	desc = FEE_Gelre_Events.9.D
+	id = FEE_Gelre_Events.10
+	title = FEE_Gelre_Events.10.T
+	desc = FEE_Gelre_Events.10.D
 	picture = BATTLE_eventPicture
 
 	fire_only_once = yes
@@ -414,7 +414,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Gelre_Events.9.OPT1
+		name = FEE_Gelre_Events.10.OPT1
 		ai_chance = {
 			factor = 50
 		}
@@ -428,9 +428,9 @@ country_event = {
 
 #Sack of Hague
 country_event = {
-	id = FEE_Gelre_Events.10
-	title = FEE_Gelre_Events.10.T
-	desc = FEE_Gelre_Events.10.D
+	id = FEE_Gelre_Events.11
+	title = FEE_Gelre_Events.11.T
+	desc = FEE_Gelre_Events.11.D
 	picture = REVOLUTION_eventPicture
 
 	fire_only_once = yes
@@ -446,7 +446,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Gelre_Events.10.OPT1
+		name = FEE_Gelre_Events.11.OPT1
 		ai_chance = {
 			factor = 50
 		}
@@ -463,9 +463,9 @@ country_event = {
 
 #Duke of Guelders Dies
 country_event = {
-	id = FEE_Gelre_Events.11
-	title = FEE_Gelre_Events.11.T
-	desc = FEE_Gelre_Events.11.D
+	id = FEE_Gelre_Events.12
+	title = FEE_Gelre_Events.12.T
+	desc = FEE_Gelre_Events.12.D
 	picture = DEATH_OF_HEIR_eventPicture
 
 	fire_only_once = yes
@@ -487,7 +487,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Gelre_Events.11.OPT1
+		name = FEE_Gelre_Events.12.OPT1
 		ai_chance = {
 			factor = 33
 		}
@@ -512,7 +512,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Gelre_Events.11.OPT2
+		name = FEE_Gelre_Events.12.OPT2
 		ai_chance = {
 			factor = 33
 		}
@@ -535,7 +535,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Gelre_Events.11.OPT3
+		name = FEE_Gelre_Events.12.OPT3
 		ai_chance = {
 			factor = 33
 		}

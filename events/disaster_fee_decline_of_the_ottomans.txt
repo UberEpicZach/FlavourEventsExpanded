@@ -2001,7 +2001,7 @@ country_event = {
 					limit = {
 						has_dlc = "Rights of Man"
 					}
-					add_ruler_personality = law_giver_personality
+					add_ruler_personality = lawgiver_personality
 				}
 				define_general = {
 					name = "Theodores Koloktronis"
