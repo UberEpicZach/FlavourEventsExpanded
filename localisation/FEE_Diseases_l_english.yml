@@ -11,32 +11,36 @@
  FEE_Diseases_Events.101.OPT1: "We should lock absteen and isolate the whores!"
  FEE_Diseases_Events.101.OPT2: "In times likes these a bit of fun might ease the tension"
 
- FEE_Diseases_Events.102.T: "Syphilis spread to [event_target_fee_province_syphilis_spread.GetName]"
+ FEE_Diseases_Events.102.T: "Syphilis spreads to [event_target_fee_province_syphilis_spread.GetName]"
  FEE_Diseases_Events.102.D: "The local population has shown chancroid on their genitalia as well as exantthema on their whole body and reddish papules on their back, might this be the sign of God's punishment upon us?"
  FEE_Diseases_Events.102.OPT1: "We should lock, absteen and isolate the whores!"
  FEE_Diseases_Events.102.OPT2: "In times likes these a bit of fun might ease the tension"
 
- FEE_Diseases_Events.103.T: "Army spreading the syphilis in [event_target_fee_province_syphilis_spread_army.GetName]"
+ FEE_Diseases_Events.103.T: "Army spreading Syphilis in [event_target_fee_province_syphilis_spread_army.GetName]"
  FEE_Diseases_Events.103.D: "The marching of our troops in our beloved territories has brought with it both a plethora of prostitute to keep our men happy and occupied between battles as well as the God's punishment on the cities."
  FEE_Diseases_Events.103.OPT1: "We should lock, absteen and isolate the whores!"
  FEE_Diseases_Events.103.OPT2: "In times likes these a bit of fun might ease the tension"
 
  FEE_Diseases_Events.105.T: "Dealing with the Soldiers"
- FEE_Diseases_Events.105.D: "Our soldiers have been spreading the French disease all over the army encampment and now they are bringing as well in the cities, shouldn't we keep them in check to furtherly lower the chance of a plague?"
+ FEE_Diseases_Events.105.D: "Our soldiers have been spreading The New Disease all over the army encampment and now they are bringing as well in the cities, shouldn't we keep them in check to furtherly lower the chance of a plague?"
  FEE_Diseases_Events.105.OPT1: "Remove all the bad apples"
  FEE_Diseases_Events.105.OPT2: "Keep them in check, but no sex!"
  FEE_Diseases_Events.105.OPT3: "We can't lose our army"
 
+ FEE_Diseases_Events.106.T: "Army in infected province!"
+ FEE_Diseases_Events.106.D: "Our armies have stood far too long in a province with the New Disease and have therefore infected themselves, the spread to nearby provinces will be very likely."
+ FEE_Diseases_Events.106.OPT1: "Damned them!"
+
 # Modifiers
  fee_quarantined_syphilis_outbreak: "Quarantined Syphilis Outbreak"
- desc_fee_quarantined_syphilis_outbreak: "It's not hard to be a celibate!"
+ desc_fee_quarantined_syphilis_outbreak: "It's not hard to be a celibate!\nCurrent Syphilis Outbreak Level is §R[Root.fee_syphilis_counter.GetValue]§!"
  fee_syphilis_outbreak: "Syphilis Outbreak"
- desc_fee_syphilis_outbreak: "Can someone stop fuck those prostitute?"
+ desc_fee_syphilis_outbreak: "Can someone stop fuck those prostitute?\nCurrent Syphilis Outbreak Level is §R[Root.fee_syphilis_counter.GetValue]§!"
 
  fee_syphilis_troops_contained: "Keeping the Army in Check"
  desc_fee_syphilis_troops_contained: "By supervising the whole army a bigger spread of syphilis will most likely not be devastating"
 
 # Tooltip
- FEE_FRENCH_DISEASE_TT: "The new disease might spread to nearby owned or controlled provinces. Army marching on those provinces might bring the siphilis back to their homeland"
- FEE_SPREAD_SYPHILIS_TT: "§RThe French Disease might spread to nearby provinces§!"
- FEE_SYPHILIS_SLACKING_MANPOWER_TT: "By removing the worst part of our troops, for the next §Y5 years§! we will be able to contain Syphilis more."
+ FEE_SYPHILIS_DISEASE_TT: "The new disease might spread to nearby owned or controlled provinces. Army marching on those provinces might bring the siphilis back to their homeland"
+ FEE_SPREAD_SYPHILIS_TT: "§RThe New Disease might spread to nearby provinces§!"
+ FEE_SYPHILIS_SLACKING_MANPOWER_TT: "By removing the worst part of our troops, for the next §Y5 years§! we will be able to contain Syphilis better."
