@@ -7,7 +7,7 @@
  fee_pashtun_uprising: "Pashtun Uprising"
  fee_zemene_mesafint: "Zemene Mesafint"
  fee_crisis_of_the_mughal_empire: "Crisis of the Mughal Empire"
-  fee_italy_republican_matter_disaster: "The Republican Matter"
+ fee_italy_republican_matter: "Italian Republican Matter"
  fee_netherlands_rampjaar: "Rampjaar"
 
  # Events:
@@ -523,24 +523,24 @@
  disaster_fee_crisis_of_the_mughal_empire.EVTDESC15: "Once a beacon of efficient and loyal administration, the bureaucrats of our nation now take bribes on the regular and work not for us but for themselves."
  disaster_fee_crisis_of_the_mughal_empire15.EVTOPT1: "Disgusting!"
 
- #Italy
-  disaster_fee_italy_events.2.T: "A New State"
-  disaster_fee_italy_events.2.D: "There they stood who fought valiantly for their ideals. There they stood who fought heroically for a new day. Their last breath was clear \"Will we feel the power of freedom with the dawn of a new day?\". \nThis decision is now ours to take."
-  disaster_fee_italy_events.2.OPT1: "A new Constitution"
-  disaster_fee_italy_events.2.OPT2: "The king reigns but does not rule"
-  disaster_fee_italy_events.2.OPT3: "Why should we change?"
+ #Italy 
+  disaster_fee_italy_republican_matter.1.T: "A Republican Matter"
+  disaster_fee_italy_republican_matter.1.D: "The newly founded state has been struggling with the government organization and trying to meet the demand of its citizen with the authority given by the tradition of old."
+  disaster_fee_italy_republican_matter.1.OPT1: "We must be careful"
+
+  disaster_fee_italy_republican_matter.2.T: "A New State"
+  disaster_fee_italy_republican_matter.2.D: "There they stood who fought valiantly for their ideals. There they stood who fought heroically for a new day. Their last breath was clear \"Will we feel the power of freedom with the dawn of a new day?\". \nThis decision is now ours to take."
+  disaster_fee_italy_republican_matter.2.OPT1: "A new Constitution"
+  disaster_fee_italy_republican_matter.2.OPT2: "The king reigns but does not rule"
+  disaster_fee_italy_republican_matter.2.OPT3: "Why should we change?"
  
-  disaster_fee_italy_events.1.T: "A Republican Matter"
-  disaster_fee_italy_events.1.D: "The newly founded state has been struggling with the government organization and trying to meet the demand of its citizen with the authority given by the tradition of old."
-  disaster_fee_italy_events.1.OPT1: "We must be careful"
+  disaster_fee_italy_republican_matter.3.T: "Giovine Italia"
+  disaster_fee_italy_republican_matter.3.D: "The goal of these revolutionaries is to transform Italy into a unitary democratic republic, according to the principles of freedom, independence and unity, by dismissing the governments of the previous pre-unification states."
+  disaster_fee_italy_republican_matter.3.OPT1: "They won't win"
  
-  disaster_fee_italy_events.3.T: "Giovine Italia"
-  disaster_fee_italy_events.3.D: "The goal of these revolutionaries is to transform Italy into a unitary democratic republic, according to the principles of freedom, independence and unity, by dismissing the governments of the previous pre-unification states."
-  disaster_fee_italy_events.3.OPT1: "They won't win"
- 
-  disaster_fee_italy_events.4.T: "King's Aider"
-  disaster_fee_italy_events.4.D: "A republic in our land? I think not. We have dismissed so many other republic when they rose against the Viceroys, and we will defy this one as well."
-  disaster_fee_italy_events.4.OPT1: "They won't win"
+  disaster_fee_italy_republican_matter.4.T: "King's Aider"
+  disaster_fee_italy_republican_matter.4.D: "A republic in our land? I think not. We have dismissed so many other republic when they rose against the Viceroys, and we will defy this one as well."
+  disaster_fee_italy_republican_matter.4.OPT1: "They won't win"
 
  #Dutch
   disaster_fee_netherlands_rampjaar.1.T: "Rampjaar"

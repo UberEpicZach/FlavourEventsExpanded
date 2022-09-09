@@ -1,4 +1,4 @@
-fee_italy_republican_matter_disaster = {
+fee_italy_republican_matter = {
 	potential = {
 		tag = ITA
 		italy_region = {
@@ -104,16 +104,16 @@ fee_italy_republican_matter_disaster = {
 		meritocracy = -2
 	}
 
-	on_start = disaster_fee_italy_events.1
-	on_end = disaster_fee_italy_events.2
+	on_start = disaster_fee_italy_republican_matter.1
+	on_end = disaster_fee_italy_republican_matter.2
 	
 	on_monthly = {
 		events = {
 		}
 		random_events = {
 			1600 = 0
-			100 = disaster_fee_italy_events.3
-			100 = disaster_fee_italy_events.4 
+			100 = disaster_fee_italy_republican_matter.3
+			100 = disaster_fee_italy_republican_matter.4 
 		}
 	}
 }
