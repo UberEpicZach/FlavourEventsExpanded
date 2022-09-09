@@ -51,7 +51,7 @@ country_event = {
 		OR = {
 			had_country_flag = {
 				flag = fee_trading_fair_started
-				days = 3650
+				days = 5475
 			}
 			NOT = { has_country_flag = fee_trading_fair_started }
 		}
@@ -61,7 +61,7 @@ country_event = {
 				NOT = { has_province_flag = fee_province_trading_fair_started }
 				had_province_flag = {
 					flag = fee_province_trading_fair_started
-					days = 5475
+					days = 7300
 				}
 			}
 		}
