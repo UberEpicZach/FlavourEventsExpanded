@@ -243,9 +243,16 @@ country_event = {
 
 		custom_tooltip = FEE_ORIGIN_TRADING_FAIRS_TT
 		tooltip = {
-			add_permanent_province_modifier = {
-				name = fee_trading_fair_origin
-				duration = -1
+			every_province = {
+				limit = {
+					has_province_flag = fee_first_trading_fair
+					owner = { has_country_flag = fee_first_trading_fair_country }
+					NOT = { has_province_modifier = fee_trading_fair_origin }
+				}
+				add_permanent_province_modifier = {
+					name = fee_trading_fair_origin
+					duration = -1
+				}
 			}
 		}
 		hidden_effect = {
