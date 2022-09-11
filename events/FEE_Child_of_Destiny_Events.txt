@@ -357,3 +357,43 @@ country_event = {
 		}
 	}
 }
+
+# Hidden Event to set the child of destiny
+country_event = {
+	id = FEE_Child_of_Destiny_Events.100
+	title = FEE_Child_of_Destiny_Events.100.T
+	desc = FEE_Child_of_Destiny_Events.100.D
+	picture = NEW_HEIR_eventPicture
+
+	trigger = {
+		NOT = { heir_age = 1 }
+		NOT = { total_development = 150 }
+		all_countries_including_self = {
+			NOT = { has_heir_flag = child_of_destiny }
+			NOT = { has_ruler_flag = child_of_destiny }
+		}
+	}
+
+	mean_time_to_happen = {
+		years = 1
+	}
+
+	hidden = yes
+
+	immediate = {
+		hidden_effect = {
+			random = {
+				chance = 1
+				set_heir_flag = child_of_destiny
+				set_ruler_flag = child_of_destiny 
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Child_of_Destiny_Events.100.OPT1
+		ai_chance = {
+			factor = 1
+		}
+	}
+}

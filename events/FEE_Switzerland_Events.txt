@@ -587,10 +587,28 @@ country_event = {
 
 	fire_only_once = yes
 
-	is_triggered_only = yes
+	trigger = {
+		tag = BUR
+		has_ruler_flag = fee_swi_charles_in_command
+		exists = SWI
+		BUR = {
+			OR = {
+				is_in_war = { attacker_leader = SWI }
+				is_in_war = { defender_leader = SWI }
+			}
+		}
+		NOT = { war_score = 0 }
+		any_army = {
+			is_ruler_commanding_unit = yes
+		}
+	}
 
-	immediate = {
+	option = {
+		name = FEE_Switzerland_Events.14.OPT1
+
 		kill_ruler = yes
+		add_stability = -1
+		add_war_exhaustion = 5
 		random = {
 			chance = 50
 			country_event = {
@@ -599,7 +617,12 @@ country_event = {
 			}
 		}
 		193 = {
-			change_controller = SWI
+			if = {
+				limit = {
+					owned_by = ROOT
+				}
+				change_controller = SWI
+			}
 		}
 		SWI = {
 			country_event = {
@@ -607,13 +630,6 @@ country_event = {
 				days = 0
 			}
 		}
-	}
-
-	option = {
-		name = FEE_Switzerland_Events.14.OPT1
-
-		add_stability = -1
-		add_war_exhaustion = 5
 	}
 }
 
