@@ -8,7 +8,7 @@ fee_italian_wars_cavalry = {
 	mil_tech_cost_modifier = -0.05
 }
 fee_italian_wars_artillery = {
-	artillery_bonus_vs_fort = 1
+	artillery_levels_available_vs_fort = 1
 	backrow_artillery_damage = 0.10
 	mil_tech_cost_modifier = -0.05
 }
