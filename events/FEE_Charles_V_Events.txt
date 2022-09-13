@@ -26,7 +26,6 @@ country_event = {
 
 		#Won't replace an existing heir if the monarch dies and leaves a regency.
 		NOT = { has_regency = yes }
-		NOT = { has_heir = yes }
 		capital_scope = {
 			continent = europe
 		}
@@ -493,6 +492,8 @@ country_event = {
 		NOT = { has_heir = "Charles V" }
 		NOT = { has_ruler = "Charles V" }
 	}
+
+	hidden = yes
 
 	immediate = {
 		hidden_effect = {

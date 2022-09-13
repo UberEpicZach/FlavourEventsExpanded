@@ -41,6 +41,17 @@ country_event = {
 		name = FEE_Italian_Wars_Events.100.OPT1
 		ai_chance = {
 			factor = 90
+			modifier = {
+				factor = 2
+				OR = {
+					is_rival = NAP
+					is_enemy = NAP
+				}
+			}
+			modifier = {
+				factor = 0
+				alliance_with = NAP
+			}
 		}
 
 		#custom_tooltip = FIRST_ITALIAN_WARS_TT
@@ -144,6 +155,18 @@ country_event = {
 		ai_chance = {
 			factor = 10
 			modifier = {
+				factor = 50
+				NOT = { stability = 1 }
+			}
+			modifier = {
+				factor = 50
+				NOT = { manpower_percentage = 0.50 }
+			}
+			modifier = {
+				factor = 50
+				NOT = { war_exhaustion = 3 }
+			}
+			modifier = {
 				factor = 100
 				NOT = { army_size = NAP }
 			}
@@ -158,6 +181,10 @@ country_event = {
 			modifier = {
 				factor = 100
 				NOT = { army_size = SPA }
+			}
+			modifier = {
+				factor = 1000
+				alliance_with = NAP
 			}
 		}
 
@@ -542,6 +569,17 @@ country_event = {
 		name = FEE_Italian_Wars_Events.200.OPT1
 		ai_chance = {
 			factor = 90
+			modifier = {
+				factor = 0
+				alliance_with = MLO
+			}
+			modifier = {
+				factor = 10
+				OR = {
+					is_rival = MLO
+					is_enemy = MLO
+				}
+			}
 		}
 
 		#custom_tooltip = SECOND_ITALIAN_WARS_TT
@@ -622,6 +660,18 @@ country_event = {
 		ai_chance = {
 			factor = 10
 			modifier = {
+				factor = 50
+				NOT = { stability = 1 }
+			}
+			modifier = {
+				factor = 50
+				NOT = { manpower_percentage = 0.50 }
+			}
+			modifier = {
+				factor = 50
+				NOT = { war_exhaustion = 3 }
+			}
+			modifier = {
 				factor = 100
 				NOT = { army_size = MLO }
 			}
@@ -636,6 +686,10 @@ country_event = {
 			modifier = {
 				factor = 100
 				NOT = { army_size = SPA }
+			}
+			modifier = {
+				factor = 100
+				alliance_with = MLO
 			}
 		}
 
@@ -770,6 +824,17 @@ country_event = {
 		name = FEE_Italian_Wars_Events.300.OPT1
 		ai_chance = {
 			factor = 1
+			modifier = {
+				factor = 0
+				alliance_with = VEN
+			}
+			modifier = {
+				factor = 100
+				OR = {
+					is_rival = VEN
+					is_enemy = VEN
+				}
+			}
 		}
 
 		#custom_tooltip = THIRD_ITALIAN_WARS_TT
@@ -918,7 +983,27 @@ country_event = {
 	option = {
 		name = FEE_Italian_Wars_Events.300.OPT2
 		ai_chance = {
-			factor = 1
+			factor = 10
+			modifier = {
+				factor = 50
+				NOT = { stability = 1 }
+			}
+			modifier = {
+				factor = 50
+				NOT = { manpower_percentage = 0.50 }
+			}
+			modifier = {
+				factor = 50
+				NOT = { war_exhaustion = 3 }
+			}
+			modifier = {
+				factor = 100
+				NOT = { army_size = VEN }
+			}
+			modifier = {
+				factor = 100
+				alliance_with = VEN
+			}
 		}
 
 		add_prestige = -30
@@ -1109,6 +1194,17 @@ country_event = {
 		name = FEE_Italian_Wars_Events.400.OPT1
 		ai_chance = {
 			factor = 90
+			modifier = {
+				factor = 100
+				OR = {
+					is_rival = FRA
+					is_enemy = FRA
+				}
+			}
+			modifier = {
+				factor = 0
+				alliance_with = FRA
+			}
 		}
 
 		declare_war_with_cb = {
@@ -1203,8 +1299,24 @@ country_event = {
 		ai_chance = {
 			factor = 10
 			modifier = {
+				factor = 50
+				NOT = { stability = 1 }
+			}
+			modifier = {
+				factor = 50
+				NOT = { manpower_percentage = 0.50 }
+			}
+			modifier = {
+				factor = 50
+				NOT = { war_exhaustion = 3 }
+			}
+			modifier = {
 				factor = 100
 				NOT = { army_size = FRA }
+			}
+			modifier = {
+				factor = 100
+				alliance_with = FRA
 			}
 		}
 
@@ -1337,6 +1449,17 @@ country_event = {
 		name = FEE_Italian_Wars_Events.500.OPT1
 		ai_chance = {
 			factor = 90
+			modifier = {
+				factor = 0
+				alliance_with = emperor
+			}
+			modifier = {
+				factor = 100
+				OR = {
+					is_rival = emperor
+					is_enemy = emperor
+				}
+			}
 		}
 
 		declare_war_with_cb = {
@@ -1473,10 +1596,26 @@ country_event = {
 		ai_chance = {
 			factor = 10
 			modifier = {
+				factor = 50
+				NOT = { stability = 1 }
+			}
+			modifier = {
+				factor = 50
+				NOT = { manpower_percentage = 0.50 }
+			}
+			modifier = {
+				factor = 50
+				NOT = { war_exhaustion = 3 }
+			}
+			modifier = {
 				factor = 100
 				emperor = {
 					army_size = ROOT
 				}
+			}
+			modifier = {
+				factor = 100
+				alliance_with = emperor
 			}
 		}
 
@@ -1627,6 +1766,17 @@ country_event = {
 		name = FEE_Italian_Wars_Events.600.OPT1
 		ai_chance = {
 			factor = 90
+			modifier = {
+				factor = 0
+				alliance_with = emperor
+			}
+			modifier = {
+				factor = 100
+				OR = {
+					is_rival = emperor
+					is_enemy = emperor
+				}
+			}
 		}
 		
 		declare_war_with_cb = {
@@ -1652,10 +1802,26 @@ country_event = {
 		ai_chance = {
 			factor = 10
 			modifier = {
+				factor = 50
+				NOT = { stability = 1 }
+			}
+			modifier = {
+				factor = 50
+				NOT = { manpower_percentage = 0.50 }
+			}
+			modifier = {
+				factor = 50
+				NOT = { war_exhaustion = 3 }
+			}
+			modifier = {
 				factor = 100
 				emperor = {
 					army_size = ROOT
 				}
+			}
+			modifier = {
+				factor = 100
+				alliance_with = emperor
 			}
 		}
 
@@ -1799,6 +1965,25 @@ country_event = {
 		name = FEE_Italian_Wars_Events.700.OPT1
 		ai_chance = {
 			factor = 90
+			modifier = {
+				factor = 100
+				102 = {
+					owner = {
+						OR = {
+							is_rival = ROOT
+							is_enemy = ROOT
+						}
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				102 = {
+					owner = {
+						alliance_with = ROOT
+					}
+				}
+			}
 		}
 
 		random_country = {
@@ -1909,10 +2094,30 @@ country_event = {
 		ai_chance = {
 			factor = 10
 			modifier = {
+				factor = 50
+				NOT = { stability = 1 }
+			}
+			modifier = {
+				factor = 50
+				NOT = { manpower_percentage = 0.50 }
+			}
+			modifier = {
+				factor = 50
+				NOT = { war_exhaustion = 3 }
+			}
+			modifier = {
 				factor = 100
 				any_country = {
 					owns = 102
 					army_size = ROOT
+				}
+			}
+			modifier = {
+				factor = 100
+				102 = {
+					owner = {
+						alliance_with = ROOT
+					}
 				}
 			}
 		}
@@ -2061,6 +2266,17 @@ country_event = {
 		name = FEE_Italian_Wars_Events.800.OPT1
 		ai_chance = {
 			factor = 90
+			modifier = {
+				factor = 0
+				alliance_with = SPA
+			}
+			modifier = {
+				factor = 100
+				OR = {
+					is_enemy = SPA
+					is_rival = SPA
+				}
+			}
 		}
 
 		declare_war_with_cb = {
@@ -2177,11 +2393,27 @@ country_event = {
 		ai_chance = {
 			factor = 10
 			modifier = {
+				factor = 50
+				NOT = { stability = 1 }
+			}
+			modifier = {
+				factor = 50
+				NOT = { manpower_percentage = 0.50 }
+			}
+			modifier = {
+				factor = 50
+				NOT = { war_exhaustion = 3 }
+			}
+			modifier = {
 				factor = 100
 				any_country = {
 					owns = 102
 					army_size = ROOT
 				}
+			}
+			modifier = {
+				factor = 0
+				alliance_with = SPA
 			}
 		}
 
