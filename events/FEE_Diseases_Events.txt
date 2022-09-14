@@ -161,7 +161,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		years = 2
+		months = 24
 		modifier = {
 			factor = 1.50
 			is_year = 1500
@@ -628,7 +628,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		years = 2
+		months = 24
 		modifier = {
 			factor = 1.50
 			is_year = 1500
@@ -1104,7 +1104,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		years = 2
+		months = 24
 		modifier = {
 			factor = 1.50
 			is_year = 1500
