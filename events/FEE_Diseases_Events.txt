@@ -157,6 +157,7 @@ country_event = {
 			}
 			NOT = { has_province_modifier = fee_syphilis_outbreak }
 			NOT = { has_province_modifier = fee_quarantined_syphilis_outbreak }
+			NOT = { has_province_flag = fee_province_quarantined }
 		}
 	}
 
@@ -200,6 +201,7 @@ country_event = {
 					}
 				}
 				save_event_target_as = event_target_fee_province_syphilis
+				clr_province_flag = fee_province_has_syphilis_outbreak
 				set_province_flag = fee_province_has_syphilis_outbreak
 				set_variable = {
 					which = fee_syphilis_counter
@@ -406,6 +408,8 @@ country_event = {
 
 		add_adm_power = -50
 		event_target:event_target_fee_province_syphilis = {
+			clr_province_flag = fee_province_quarantined
+			set_province_flag = fee_province_quarantined
 			if = {
 				limit = {
 					check_variable = {
@@ -617,12 +621,14 @@ country_event = {
 		any_owned_province = {
 			NOT = { has_province_modifier = fee_syphilis_outbreak }
 			NOT = { has_province_modifier = fee_quarantined_syphilis_outbreak }
+			NOT = { has_province_flag = fee_province_quarantined }
 			any_neighbor_province = {
 				OR = {
 					has_province_flag = fee_province_has_syphilis
 					has_province_flag = fee_province_has_syphilis_outbreak
 				}
 				NOT = { has_province_modifier = fee_quarantined_syphilis_outbreak }
+				NOT = { has_province_flag = fee_province_quarantined }
 			}
 		}
 	}
@@ -666,9 +672,11 @@ country_event = {
 							has_province_flag = fee_province_has_syphilis_outbreak
 						}
 						NOT = { has_province_modifier = fee_quarantined_syphilis_outbreak }
+						NOT = { has_province_flag = fee_province_quarantined }
 					}
 				}
 				save_event_target_as = event_target_fee_province_syphilis_spread
+				clr_province_flag = fee_province_has_syphilis_outbreak
 				set_province_flag = fee_province_has_syphilis_outbreak
 				set_variable = {
 					which = fee_syphilis_counter
@@ -875,6 +883,8 @@ country_event = {
 
 		add_adm_power = -50
 		event_target:event_target_fee_province_syphilis_spread = {
+			clr_province_flag = fee_province_quarantined
+			set_province_flag = fee_province_quarantined
 			if = {
 				limit = {
 					check_variable = {
@@ -1086,6 +1096,7 @@ country_event = {
 		any_owned_province = {
 			NOT = { has_province_modifier = fee_syphilis_outbreak }
 			NOT = { has_province_modifier = fee_quarantined_syphilis_outbreak }
+			NOT = { has_province_flag = fee_province_quarantined }
 			OR = {
 				AND = {
 					ROOT = {
@@ -1141,6 +1152,7 @@ country_event = {
 					units_in_province = PREV
 				}
 				save_event_target_as = event_target_fee_province_syphilis_spread_army
+				clr_province_flag = fee_province_has_syphilis_outbreak
 				set_province_flag = fee_province_has_syphilis_outbreak
 				set_variable = {
 					which = fee_syphilis_counter
@@ -1347,6 +1359,8 @@ country_event = {
 
 		add_adm_power = -50
 		event_target:event_target_fee_province_syphilis_spread_army = {
+			clr_province_flag = fee_province_quarantined
+			set_province_flag = fee_province_quarantined
 			if = {
 				limit = {
 					check_variable = {
@@ -1637,8 +1651,27 @@ country_event = {
 		}
 	}
 
+	immediate = {
+		hidden_effect = {
+			random_province = {
+				limit = {
+					OR = {
+						has_province_flag = fee_province_has_syphilis
+						has_province_flag = fee_province_has_syphilis_outbreak
+						has_province_modifier = fee_syphilis_outbreak
+						has_province_modifier = fee_quarantined_syphilis_outbreak
+					}
+					units_in_province = ROOT
+				}
+				save_event_target_as = event_target_fee_army_province_syphilis_spread
+			}
+		}
+	}
+
+	goto = event_target_fee_army_province_syphilis_spread
+
 	mean_time_to_happen = {
-		months = 6
+		months = 12
 	}
 
 	option = {
