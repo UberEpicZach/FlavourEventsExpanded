@@ -151,10 +151,7 @@ country_event = {
 		NOT = { is_year = 1750 }
 		any_owned_province = {
 			has_province_flag = fee_province_has_syphilis
-			OR = {
-				NOT = { has_province_flag = fee_province_has_syphilis_outbreak }
-				had_province_flag = { flag = fee_province_has_syphilis_outbreak days = 10950 }
-			}
+			NOT = { has_province_flag = fee_province_has_syphilis_outbreak}
 			NOT = { has_province_modifier = fee_syphilis_outbreak }
 			NOT = { has_province_modifier = fee_quarantined_syphilis_outbreak }
 			NOT = { has_province_flag = fee_province_quarantined }
@@ -162,7 +159,11 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 24
+		months = 120
+		modifier = {
+			factor = 0.50
+			NOT = { is_year = 1500 }
+		}
 		modifier = {
 			factor = 1.50
 			is_year = 1500
@@ -201,7 +202,6 @@ country_event = {
 					}
 				}
 				save_event_target_as = event_target_fee_province_syphilis
-				clr_province_flag = fee_province_has_syphilis_outbreak
 				set_province_flag = fee_province_has_syphilis_outbreak
 				set_variable = {
 					which = fee_syphilis_counter
@@ -622,6 +622,7 @@ country_event = {
 			NOT = { has_province_modifier = fee_syphilis_outbreak }
 			NOT = { has_province_modifier = fee_quarantined_syphilis_outbreak }
 			NOT = { has_province_flag = fee_province_quarantined }
+			NOT = { has_province_flag = fee_province_has_syphilis_outbreak}
 			any_neighbor_province = {
 				OR = {
 					has_province_flag = fee_province_has_syphilis
@@ -634,7 +635,11 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 24
+		months = 120
+		modifier = {
+			factor = 0.50
+			NOT = { is_year = 1500 }
+		}
 		modifier = {
 			factor = 1.50
 			is_year = 1500
@@ -676,7 +681,6 @@ country_event = {
 					}
 				}
 				save_event_target_as = event_target_fee_province_syphilis_spread
-				clr_province_flag = fee_province_has_syphilis_outbreak
 				set_province_flag = fee_province_has_syphilis_outbreak
 				set_variable = {
 					which = fee_syphilis_counter
@@ -1097,6 +1101,7 @@ country_event = {
 			NOT = { has_province_modifier = fee_syphilis_outbreak }
 			NOT = { has_province_modifier = fee_quarantined_syphilis_outbreak }
 			NOT = { has_province_flag = fee_province_quarantined }
+			NOT = { has_province_flag = fee_province_has_syphilis_outbreak}
 			OR = {
 				AND = {
 					ROOT = {
@@ -1115,7 +1120,11 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 24
+		months = 120
+		modifier = {
+			factor = 0.50
+			NOT = { is_year = 1500 }
+		}
 		modifier = {
 			factor = 1.50
 			is_year = 1500
@@ -1152,7 +1161,6 @@ country_event = {
 					units_in_province = PREV
 				}
 				save_event_target_as = event_target_fee_province_syphilis_spread_army
-				clr_province_flag = fee_province_has_syphilis_outbreak
 				set_province_flag = fee_province_has_syphilis_outbreak
 				set_variable = {
 					which = fee_syphilis_counter
