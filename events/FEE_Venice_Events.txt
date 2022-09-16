@@ -3623,20 +3623,57 @@ country_event = {
 			AND = {
 				is_year = 1483
 				NOT = { is_year = 1485 }
+				112 = {
+					NOT = { has_province_flag = fee_ven_first_burning }
+				}
 			}
 			AND = {
 				is_year = 1574
 				NOT = { is_year = 1575 }
+				112 = {
+					NOT = { has_province_flag = fee_ven_second_burning }
+				}
 			}
 			AND = {
 				is_year = 1577
 				NOT = { is_year = 1578 }
+				112 = {
+					NOT = { has_province_flag = fee_ven_third_burning }
+				}
 			}
 		}
 	}
 
 	mean_time_to_happen = {
-		months = 6
+		months = 12
+	}
+
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					is_year = 1483
+					NOT = { is_year = 1485 }
+				}
+				112 = {
+					set_province_flag = fee_ven_first_burning
+				}
+			}
+			else_if = {
+				limit = {
+					is_year = 1574
+					NOT = { is_year = 1575 }
+				}
+				112 = {
+					set_province_flag = fee_ven_second_burning
+				}
+			}
+			else = {
+				112 = {
+					set_province_flag = fee_ven_third_burning
+				}
+			}
+		}
 	}
 
 	goto = 112
