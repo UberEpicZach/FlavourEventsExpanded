@@ -243,7 +243,7 @@ country_event = {
 
 		custom_tooltip = FEE_ORIGIN_TRADING_FAIRS_TT
 		tooltip = {
-			every_province = {
+			random_province = {
 				limit = {
 					has_province_flag = fee_first_trading_fair
 					owner = { has_country_flag = fee_first_trading_fair_country }
