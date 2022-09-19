@@ -1359,7 +1359,7 @@ country_event = {
 				}
 			}
 			else = {
-				add_center_of_trade_level = 1
+				create_or_add_center_of_trade_level_fee = { level = 1 }
 			}
 		}
 		add_estate_burghers_loyalty_effect = yes
