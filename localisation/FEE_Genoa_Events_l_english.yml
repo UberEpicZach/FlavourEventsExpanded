@@ -1,8 +1,7 @@
 ﻿l_english:
- FEE_Genoa_Events.1.T: "Construction of the Lanterna"
- FEE_Genoa_Events.1.D: "A lighthouse had kept watch over Genoa for centuries, but it wasn't until 1543 construction finished on what would become known as the Lanterna, the tallest lighthouse in the world for more than 350 years. Standing at the edge of the city, overlooking the entrance to the harbour, the lighthouse guided ships safely to land. Thanks to the relative safety of Genoese waters, many foreign traders made the city their port of choice, and so helped Genoa prosper through the ages."
+ FEE_Genoa_Events.1.T: "Lanterna di Genova"
+ FEE_Genoa_Events.1.D: "The highest lighthouse that has ever been built in Europe has protected our navies and coasts since its first construction of 1128, the pro igne facendo in capite fari tax has flown countless ducats in the republican coffers."
  FEE_Genoa_Events.1.OPT1: "Let us make our lighthouse shine to the far reaches of the Mediterranean!"
- FEE_Genoa_Events.1.OPT2: "The lighthouse we have now is more than good enough."
 
  FEE_Genoa_Events.2.T: "Sampiero Corso"
  FEE_Genoa_Events.2.D: "Living from 1498 to 1567, Sampiero Corso was a Corsican lower noble and soldier. He grew up to become a condottieri, and fought for several paymasters in Italy. Eventually he came into the service of the French king, where his familiarity with Corsica became an advantage to the French efforts in Italy. \nNow it seems that our ruthless enemies in France has chosen to send Sampiero Corso in an attempt to free Corsica for later French occupation!"
@@ -24,6 +23,10 @@
  FEE_Genoa_Events.6.T: "Balilla Uprising in Genoa"
  FEE_Genoa_Events.6.D: "Something terrible has happened. Under the [Root.GetAdjective] occupation of Genoa, the people have been made to aid the occupying forces, as appropriate. \nThis morning, however, an artillery piece got stuck in a moat, and the soldiers transporting it forced onlookers to drag it out, cursing and lashing them as they worked far slower than they should.\n\nOne onlooker however, just a young boy, picked a stone from the road. With the accursed words \"Am I to begin?\" he threw it at one of the soldiers. The crowd instantly turned on the occupying force.\n\nOver the course of just a few days, the [Root.GetAdjective] soldiers were evicted from the city. The young boy who started it all would become known as Balilla, a symbol of Italian impertinence and rudeness."
  FEE_Genoa_Events.6.OPT1: "Once we retake the city they will all pay!"
+
+ FEE_Genoa_Events.7.T: "Forte Briglia"
+ FEE_Genoa_Events.7.D: "After the capture of the city and the capitulation of the local troops, we found that the city lacked a proper barracks to station the garrison from possible attacks by land and assaults by sea; the construction of Fort Briglia should make up for this lack."
+ FEE_Genoa_Events.7.OPT1: "Protect the troops!"
 
  #Modifiers
  fee_genoa_lanterna: "The Lanterna"
