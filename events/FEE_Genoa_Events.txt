@@ -398,10 +398,10 @@ country_event = {
 						}
 					}
 				}
-			}
-			add_great_project_tier = {
-				type = gme_lanterna_genova
-				tier = 1
+				add_great_project_tier = {
+					type = gme_lanterna_genova
+					tier = 1
+				}
 			}
 		}
 	}
