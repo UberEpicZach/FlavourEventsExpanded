@@ -277,6 +277,158 @@ country_event = {
 	}
 }
 
+# Friendly Fire on the Lanterna
+country_event = {
+	id = FEE_Genoa_Events.8
+	title = FEE_Genoa_Events.8.T
+	desc = FEE_Genoa_Events.8.D
+	picture = FLAGSHIP_SUNK_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_year = 1128
+		NOT = { is_year = 1543 }
+		owns = 101
+		101 = {
+			owned_by = ROOT
+			OR = {
+				AND = {
+					NOT = { controlled_by = ROOT }
+					sieged_by = ROOT
+				}
+				AND = {
+					controlled_by = ROOT
+					has_siege = yes
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	goto = 101
+
+	option = {
+		name = FEE_Genoa_Events.8.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_dip_power = -50
+		add_prestige = -25
+		101 = {
+			add_base_production = -3
+			if = {
+				limit = {
+					has_dlc = Leviathan
+					is_expanded_mod_active = { mod = great_monuments }
+					OR = {
+						has_great_project = {
+							type = gme_lanterna_genova
+							tier = 1
+						}
+						has_great_project = {
+							type = gme_lanterna_genova
+							tier = 2
+						}
+						has_great_project = {
+							type = gme_lanterna_genova
+							tier = 3
+						}
+					}
+				}
+				add_great_project_tier = {
+					type = gme_lanterna_genova
+					tier = -1
+				}
+			}
+		}
+	}
+}
+
+# Expansion of the Lanterna
+country_event = {
+	id = FEE_Genoa_Events.9
+	title = FEE_Genoa_Events.9.T
+	desc = FEE_Genoa_Events.9.D
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 101
+		is_year = 1543
+	}
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	goto = 101
+
+	option = {
+		name = FEE_Genoa_Events.9.OPT1
+		trigger = {
+			has_dlc = Leviathan
+			is_expanded_mod_active = { mod = great_monuments }
+		}
+		ai_chance = {
+			factor = 50
+		}
+
+		add_years_of_income = -1
+		101 = {
+			if = {
+				limit = {
+					OR = {
+						has_great_project = {
+							type = gme_lanterna_genova
+							tier = 0
+						}
+						has_great_project = {
+							type = gme_lanterna_genova
+							tier = 1
+						}
+						has_great_project = {
+							type = gme_lanterna_genova
+							tier = 2
+						}
+					}
+				}
+			}
+			add_great_project_tier = {
+				type = gme_lanterna_genova
+				tier = 1
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Genoa_Events.9.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		101 = {
+			add_base_tax = 2
+			add_base_production = 3
+			if = {
+				limit = {
+					NOT = { has_dlc = Leviathan }
+				}
+				remove_province_modifier = fee_genoa_lanterna
+				add_permanent_province_modifier = {
+					name = fee_gen_lanterna_genova
+					duration = -1
+				}
+			}
+		}
+	}
+}
+
 # 
 #country_event = {
 #	id = FEE_Genoa_Events.
@@ -288,8 +440,8 @@ country_event = {
 #
 #	trigger = {
 #		OR = {
-#			tag = VEN
-#			was_tag = VEN
+#			tag = GEN
+#			was_tag = GEN
 #		}
 #	}
 #

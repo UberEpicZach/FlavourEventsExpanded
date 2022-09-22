@@ -28,9 +28,20 @@
  FEE_Genoa_Events.7.D: "After the capture of the city and the capitulation of the local troops, we found that the city lacked a proper barracks to station the garrison from possible attacks by land and assaults by sea; the construction of Fort Briglia should make up for this lack."
  FEE_Genoa_Events.7.OPT1: "Protect the troops!"
 
+ FEE_Genoa_Events.8.T: "Friendly Fire on the Lanterna"
+ FEE_Genoa_Events.8.D: "Sadly, during the siege of [101.GetName] some of our firepower attacked and heavily damaged the wonderful Lanterna di Genova!"
+ FEE_Genoa_Events.8.OPT1: "Dannazione!"
+
+ FEE_Genoa_Events.9.T: "Expansion of the Lanterna"
+ FEE_Genoa_Events.9.D: "The new extension work on the Lanterna is proceeding as planned but will certainly be more costly than expected, should we stop here or continue as far as we can?"
+ FEE_Genoa_Events.9.OPT1: "Proceed at all costs"
+ FEE_Genoa_Events.9.OPT1: "The bank cannot fund this"
+
  #Modifiers
  fee_genoa_lanterna: "The Lanterna"
  desc_fee_genoa_lanterna: "The great tower looking out across the Mediterranean, beckoning traders to our shore."
  fee_genoa_casa_san_giorgio: "Casa San Giorgio"
  desc_fee_genoa_casa_san_giorgio: "The Bank of the House of San Giorgio has been given charge of a number of administrative tasks on the island."
+ fee_gen_lanterna_genova: "The Lanterna"
+ desc_fee_gen_lanterna_genova: "The great tower looking out across the Mediterranean, beckoning traders to our shore."
  
