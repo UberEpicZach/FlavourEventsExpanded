@@ -590,7 +590,7 @@ country_event = {
 		name = disaster_fee_zemene_mesafint5.EVTOPT2
 
 		add_legitimacy_equivalent = { amount = 20 republican_tradition = 10 }
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 	}
 }
 

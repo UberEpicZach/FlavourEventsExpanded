@@ -66,7 +66,7 @@ country_event = {
 
 		set_country_flag = french_centralization
 		add_adm_power = -100
-		add_prestige = 20
+		add_prestige_or_monarch_power = { amount = 20 }
 		add_country_modifier = {
 			name = fee_france_administrative_unificaiton
 			duration = 18250
@@ -926,7 +926,7 @@ country_event = {
 	option = {
 		name = FEE_France_Events.11.OPT1
 
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 		ENG = {
 			add_prestige = -10
 		}
@@ -1081,7 +1081,7 @@ country_event = {
 		name = FEE_France_Events.13.OPT2
 		
 		reduce_estate_burghers_loyalty_effect = yes
-		add_prestige = 15
+		add_prestige_or_monarch_power = { amount = 15 }
 		add_liberty_desire = 10
 		hidden_effect = {
 			FROM = { clr_country_flag = bourgeoisie_oppose_king }
@@ -1309,7 +1309,7 @@ country_event = {
 			factor = 20
 		}
 
-		add_prestige = 15
+		add_prestige_or_monarch_power = { amount = 15 }
 		add_opinion = {
 			who = BRI
 			modifier = fee_france_claims_waived

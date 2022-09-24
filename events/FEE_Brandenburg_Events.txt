@@ -47,7 +47,7 @@ country_event = {
 			factor = 0
 		}
 
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 	}
 }
 
@@ -181,7 +181,7 @@ country_event = {
 			}
 		}
 
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 		BRA = {
 			country_event = {
 				id = FEE_Brandenburg_Events.4
@@ -513,7 +513,7 @@ country_event = {
 			factor = 1
 		}
 
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 	}
 }
 
@@ -561,7 +561,7 @@ country_event = {
 	}
 	option = {
 		name = FEE_Brandenburg_Events.9.OPT2
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 		ai_chance = {
 			factor = 1
 		}
@@ -909,7 +909,7 @@ country_event = {
 			}
 		}
 
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 	}
 }
 
@@ -944,7 +944,7 @@ country_event = {
 			factor = 0
 		}
 
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 	}
 }
 
@@ -1424,7 +1424,7 @@ country_event = {
 			}
 		}
 
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 	}
 }
 
@@ -3800,7 +3800,7 @@ country_event = {
 			factor = 0
 		}
 
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 	}
 }
 

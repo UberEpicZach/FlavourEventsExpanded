@@ -35,7 +35,7 @@ country_event = {
 			factor = 1
 		}
 
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 		if = {
 			limit = {
 				has_country_modifier = edict_de_nantes
@@ -469,7 +469,7 @@ country_event = {
 			factor = 75
 		}
 
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 		add_years_of_income = -0.05
 		capital_scope = {
 			if = {

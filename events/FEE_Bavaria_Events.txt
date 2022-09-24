@@ -118,7 +118,7 @@ country_event = {
 		name = FEE_Bavaria_Events.3.OPT2	
 
 		add_legitimacy_equivalent = { amount = 5 republican_tradition = 3 }
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 		HAB = {
 			add_opinion = {
 				who = ROOT

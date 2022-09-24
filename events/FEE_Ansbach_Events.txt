@@ -469,7 +469,7 @@ country_event = {
 			factor = 1
 		}
 
-		add_prestige = 50
+		add_prestige_or_monarch_power = { amount = 50 }
 		clr_country_flag = fee_ansbanch_country_franconian_ambition
 		every_province = {
 			limit = {

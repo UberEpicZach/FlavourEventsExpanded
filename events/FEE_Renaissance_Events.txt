@@ -182,7 +182,7 @@ country_event = {
 		name = FEE_Renaissance_Events.5.OPT1
 
 		add_adm_power = 25
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 	}
 }
 
@@ -357,7 +357,7 @@ country_event = {
 	option = {
 		name = FEE_Renaissance_Events.10.OPT2
 
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 		change_religious_influence_equivalent_fee = { remove = 5 }
 	}
 }
@@ -459,7 +459,7 @@ country_event = {
 	option = {
 		name = FEE_Renaissance_Events.12.OPT1
 
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 		add_reform_desire = -0.01
 	}
 

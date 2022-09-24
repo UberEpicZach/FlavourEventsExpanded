@@ -28,7 +28,7 @@ country_event = {
 
 		add_army_tradition = 10
 		add_years_of_income = 0.25
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 	}
 
 	option = {
@@ -38,7 +38,7 @@ country_event = {
 		add_years_of_income = 0.5
 		add_mil_power = 25
 		add_yearly_manpower = -2
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 	}
 }
 
@@ -733,7 +733,7 @@ country_event = {
 			}
 		}
 
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 		add_country_modifier = {
 			name = fee_swi_countryside_preaching
 			duration = 7300
@@ -932,7 +932,7 @@ country_event = {
 			factor = 100
 		}
 
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 	}
 
 	option = {

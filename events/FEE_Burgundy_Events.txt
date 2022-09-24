@@ -139,7 +139,7 @@ country_event = {
 		}
 
 		add_years_of_income = -0.2
-		add_prestige = 20
+		add_prestige_or_monarch_power = { amount = 20 }
 		if = {
 			limit = { has_dlc = "Mandate of Heaven" }
 			add_splendor = 100
@@ -221,7 +221,7 @@ country_event = {
 			factor = 20
 		}
 
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 	}
 }
 
@@ -293,7 +293,7 @@ country_event = {
 # 			factor = 50
 # 		}
 
-# 		add_prestige = 10
+# 		add_prestige_or_monarch_power = { amount = 10 }
 # 		create_general = {
 # 			name = "Jacques de Lalaing"
 # 			tradition = 100

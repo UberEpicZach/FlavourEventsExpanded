@@ -21,7 +21,7 @@ country_event = {
 	option = {
 		name = FEE_Portugal_Events.1.OPT1
 
-		add_prestige = 15
+		add_prestige_or_monarch_power = { amount = 15 }
 		add_stability_or_adm_power = yes
 		add_navy_tradition = 5
 	}
@@ -242,7 +242,7 @@ country_event = {
 	option = {
 		name = FEE_Portugal_Events.5.OPT3
 
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 		change_religious_influence_equivalent_fee = { add = 10 }
 	}
 }
@@ -328,7 +328,7 @@ country_event = {
 			factor = 50
 		}
 		
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 		4563 = {
 			owner = {
 				add_opinion = {
@@ -610,7 +610,7 @@ country_event = {
 			factor = 33
 		}
 		
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 	}
 }
 
@@ -1444,7 +1444,7 @@ country_event = {
 			factor = 50
 		}
 		
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 	}
 }
 

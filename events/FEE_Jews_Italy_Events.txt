@@ -208,7 +208,7 @@ country_event = {
 			}
 		}
 
-		add_prestige = 3
+		add_prestige_or_monarch_power = { amount = 3 }
 		change_religious_influence_equivalent_fee = { add = 10 }
 		add_mil_power = 10
 		change_variable = {
@@ -780,7 +780,7 @@ country_event = {
 			}
 		}
 
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 		change_religious_influence_equivalent_fee = { add = 15 }
 		add_mil_power = 25
 		change_variable = {
@@ -937,7 +937,7 @@ country_event = {
 		}
 		custom_tooltip = REJECT_JEWS_TT
 
-		add_prestige = 3
+		add_prestige_or_monarch_power = { amount = 3 }
 		change_religious_influence_equivalent_fee = { add = 10 }
 		add_mil_power = 10
 		change_variable = {
@@ -1115,7 +1115,7 @@ country_event = {
 			}
 		}
 
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 		change_religious_influence_equivalent_fee = { add = 15 }
 		add_mil_power = 25
 		change_variable = {

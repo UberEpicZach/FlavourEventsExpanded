@@ -164,7 +164,7 @@ country_event = {
 				}
 			}
 		}
-		add_prestige = 20
+		add_prestige_or_monarch_power = { amount = 20 }
 		ENG = {
 			add_opinion = {
 				who = PREV
@@ -384,7 +384,7 @@ country_event = {
 		ai_chance = {
 			factor = 1
 		}
-		add_prestige = 50
+		add_prestige_or_monarch_power = { amount = 50 }
 		add_years_of_income = -0.5
 		custom_tooltip = FEE_Scotland_Events.6.OPT1.tooltip1
 		if = {
@@ -567,7 +567,7 @@ country_event = {
 
 	option = {
 		name = FEE_Scotland_Events.299.OPT1
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 		white_peace = SCO
 	}
 	option = {
@@ -619,7 +619,7 @@ country_event = {
 	is_triggered_only = yes
 	option = {
 		name = FEE_Scotland_Events.301.OPT1
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 	}
 }
 
@@ -989,7 +989,7 @@ country_event = {
 				reformed_rebels = 1
 			}
 		}
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 		SCO = {
 			add_opinion = {
 				who = PREV
@@ -1513,7 +1513,7 @@ country_event = {
 				has_country_flag = FEE_Scotland_covenanter_lost
 			}
 			custom_tooltip = FEE_Scotland_Events.24.OPT1.tooltip2
-			add_prestige = 50
+			add_prestige_or_monarch_power = { amount = 50 }
 		}
 	}
 }
@@ -2113,7 +2113,7 @@ country_event = {
 	option = {
 		name = FEE_Scotland_Events.30.OPT2
 		add_stability_or_adm_power = yes
-		add_prestige = 20
+		add_prestige_or_monarch_power = { amount = 20 }
 		add_estate_loyalty = {
 			estate = estate_burghers
 			loyalty = -15
@@ -2249,7 +2249,7 @@ country_event = {
 		name = FEE_Scotland_Events.32.OPT2
 		add_stability = -1
 		add_legitimacy_equivalent = { amount = 20 republican_tradition = 10 }
-		add_prestige = 20
+		add_prestige_or_monarch_power = { amount = 20 }
 		add_country_modifier = {
 			name = FEE_Scotland_heavy_hand
 			duration = -1
@@ -2329,7 +2329,7 @@ country_event = {
 			factor = 1
 		}
 		add_years_of_income = -0.25
-		add_prestige = 20
+		add_prestige_or_monarch_power = { amount = 20 }
 		add_country_modifier = {
 			name = FEE_Scotland_encyclopedia_brittanica
 			duration = 36500
@@ -2359,7 +2359,7 @@ country_event = {
 	}
 	option = {
 		name = FEE_Scotland_Events.35.OPT1
-		add_prestige = 50
+		add_prestige_or_monarch_power = { amount = 50 }
 		add_years_of_income = -0.25
 		add_country_modifier = {
 			name = FEE_Scotland_pride_of_scotland
@@ -2382,7 +2382,7 @@ country_event = {
 	}
 	option = {
 		name = FEE_Scotland_Events.35.OPT2
-		add_prestige = 30
+		add_prestige_or_monarch_power = { amount = 30 }
 	}
 	option = {
 		name = FEE_Scotland_Events.35.OPT3

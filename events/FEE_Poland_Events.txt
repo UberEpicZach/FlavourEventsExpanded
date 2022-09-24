@@ -253,7 +253,7 @@ country_event = {
 			factor = 30
 		}
 
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 	}
 }
 
@@ -617,9 +617,9 @@ country_event = {
 	option = {
 		name = FEE_Poland_Events.18.OPT2 # Do nothing
 
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 		TEU = {
-			add_prestige = 5
+			add_prestige_or_monarch_power = { amount = 5 }
 		}
 	}
 }
@@ -779,7 +779,7 @@ country_event = {
 		name = FEE_Poland_Events.22.OPT1
 
 		change_tag = PRU
-		add_prestige = 25
+		add_prestige_or_monarch_power = { amount = 25 }
 		change_religion = protestant
 		capital_scope = {
 			change_religion = protestant

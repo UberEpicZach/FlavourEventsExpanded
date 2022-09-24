@@ -48,14 +48,14 @@ country_event = {
 
 		set_global_flag = fee_swa_swabian_league_established
 		set_country_flag = fee_swa_member_swabia_league
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 	}
 
 	option = {
 		name = FEE_Swabia_Events.1.OPT2		# We fight on our own.
 
 		add_mil_power = 10
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 	}
 }
 
@@ -120,7 +120,7 @@ country_event = {
 		name = FEE_Swabia_Events.2.OPT2		# We stand alone.
 		ai_chance = { factor = 25 }
 
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 		set_country_flag = fee_swa_rejected_swabian_league
 	}
 }

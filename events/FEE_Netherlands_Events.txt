@@ -224,7 +224,7 @@ country_event = {
 
 		ai_chance = { factor = 0 }
 
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 		630 = {
 			owner = {
 				add_opinion = {
@@ -335,7 +335,7 @@ country_event = {
 		name = FEE_Netherlands_Events.7.OPT1
 		ai_chance = { factor = 100 }
 
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 		declare_war_with_cb = {
 			who = PREV
 			casus_belli = cb_core
@@ -685,7 +685,7 @@ country_event = {
 
 		add_stability_or_adm_power = yes
 		add_war_exhaustion = -2
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 		if = {
 			limit = {
 				capital_scope = { has_port = yes }
@@ -1030,7 +1030,7 @@ country_event = {
 			religion = root
 			cost_multiplier = 0.50
 		}
-		add_prestige = 20
+		add_prestige_or_monarch_power = { amount = 20 }
 	}
 }
 

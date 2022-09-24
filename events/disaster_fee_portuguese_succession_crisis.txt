@@ -177,7 +177,7 @@ country_event = {
 	option = {
 		name = disaster_fee_portuguese_succession_crisis2.EVTOPT1
 
-		add_prestige = 20
+		add_prestige_or_monarch_power = { amount = 20 }
 		add_legitimacy = 20
 		add_country_modifier = {
 			name = fee_portuguese_succession_crisis_resolved
@@ -385,7 +385,7 @@ country_event = {
 			}
 		}
 
-		add_prestige = 20
+		add_prestige_or_monarch_power = { amount = 20 }
 		if = {
 			limit = {
 				NOT = { tag = PAP }
@@ -414,7 +414,7 @@ country_event = {
 		name = disaster_fee_portuguese_succession_crisis7.EVTOPT1
 
 		add_stability_or_adm_power = yes
-		add_prestige = 20
+		add_prestige_or_monarch_power = { amount = 20 }
 		add_papal_influence = 30
 	}
 }
@@ -574,7 +574,7 @@ country_event = {
 
 		ai_chance = { factor = 25 }
 
-		add_prestige = 20
+		add_prestige_or_monarch_power = { amount = 20 }
 		reverse_add_opinion = {
 			who = FROM
 			modifier = fee_portuguese_succession_crisis_grateful

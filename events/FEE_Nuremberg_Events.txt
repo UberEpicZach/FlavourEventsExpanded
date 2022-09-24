@@ -37,7 +37,7 @@ country_event = {
 	option = {
 		name = FEE_Nuremberg_Events.1.OPT1
 
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 		add_treasury = 10
 	}
 }

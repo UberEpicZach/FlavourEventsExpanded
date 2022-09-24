@@ -721,7 +721,7 @@ province_event = {
 		}
 		
 		owner = {
-			add_prestige = 5
+			add_prestige_or_monarch_power = { amount = 5 }
 		}
 		set_province_flag = fee_province_trading_fair_ruler_goes_to_fair
 		change_variable = {
@@ -835,7 +835,7 @@ province_event = {
 			factor = 50
 		}
 
-		owner = { add_prestige = 5 }
+		owner = { add_prestige_or_monarch_power = { amount = 5 } }
 		change_variable = {
 			which = feeTradingFairLevel
 			value = 3
@@ -1414,7 +1414,7 @@ province_event = {
 		set_province_flag = fee_province_trading_fair_famous_artist_accepted
 		owner = { add_years_of_income = 0.0416 } #half month of income
 		owner = {
-			add_prestige = 5
+			add_prestige_or_monarch_power = { amount = 5 }
 			random_list = {
 				50 = { change_innovativeness = 3 }
 				50 = { }
@@ -1524,7 +1524,7 @@ country_event = {
 	option = {
 		name = FEE_Fairs_Events.7001.OPT1
 
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 		random_owned_province = {
 			limit = { has_province_flag = fee_province_trading_fair_started }
 			change_variable = {

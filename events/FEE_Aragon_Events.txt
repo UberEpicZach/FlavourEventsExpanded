@@ -181,7 +181,7 @@ country_event = {
 	option = {
 		name = FEE_Aragon_Events.2.OPT1
 
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 		add_legitimacy_equivalent = { amount = 5 republican_tradition = 3 }
 		211 = {
 			noble_rebels = 2
@@ -363,7 +363,7 @@ country_event = {
 	option = {
 		name = FEE_Aragon_Events.5.OPT2
 
-		add_prestige = 15
+		add_prestige_or_monarch_power = { amount = 15 }
 		add_adm_power = 50
 		add_dip_power = 50
 		add_mil_power = 50
@@ -430,7 +430,7 @@ country_event = {
 	option = {
 		name = FEE_Aragon_Events.6.OPT1
 
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 		change_religious_influence_equivalent_fee = { add = 15 }
 		add_country_modifier = {
 			name = fee_aragon_pillar_miracle
@@ -561,7 +561,7 @@ country_event = {
 	option = {
 		name = FEE_Aragon_Events.8.OPT1
 
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 		add_country_modifier = {
 			name = fee_aragon_imperial_canal
 			duration = -1
@@ -940,13 +940,13 @@ country_event = {
 			name = "Baltasar Gracián"
 			discount = yes
 		}
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 	}
 	option = {
 		name = FEE_Aragon_Events.14.OPT2
 
 		add_stability_or_adm_power = yes
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 	}
 }
 
@@ -1068,7 +1068,7 @@ country_event = {
 	option = {
 		name = FEE_Aragon_Events.16.OPT1
 		add_years_of_income = -0.2
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 	}
 
 	option = {

@@ -272,7 +272,7 @@ country_event = {
 		name = FEE_Malayalam_Events.8.OPT1	#Invite him to court.
 
 		add_adm_power = 50
-		add_prestige = 20
+		add_prestige_or_monarch_power = { amount = 20 }
 		add_meritocracy_effect = yes
 		define_advisor = {
 			type = natural_scientist
@@ -305,7 +305,7 @@ country_event = {
 	option = {
 		name = FEE_Malayalam_Events.9.OPT1	#A legend has passed.
 
-		add_prestige = 15
+		add_prestige_or_monarch_power = { amount = 15 }
 	}
 }
 

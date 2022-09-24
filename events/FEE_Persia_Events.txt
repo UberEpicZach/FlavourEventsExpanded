@@ -311,7 +311,7 @@ country_event = {
 		hidden_effect = {
 			set_country_flag = fee_per_end_qizilbash_influence
 		}
-		add_prestige = 20
+		add_prestige_or_monarch_power = { amount = 20 }
 		add_stability_or_adm_power = yes
 		capital_scope = {
 			add_base_tax = 1

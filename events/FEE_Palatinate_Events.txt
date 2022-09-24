@@ -319,7 +319,7 @@ country_event = {
 		}
 
 		add_years_of_income = -1
-		add_prestige = 25
+		add_prestige_or_monarch_power = { amount = 25 }
 		add_country_modifier = {
 			name = pal_hortus_palatinus
 			duration = -1
@@ -389,7 +389,7 @@ country_event = {
 
 		add_years_of_income = -1
 		add_stability_or_adm_power = yes
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 	}
 
 	option = {

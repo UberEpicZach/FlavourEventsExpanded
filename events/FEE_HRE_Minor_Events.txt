@@ -297,7 +297,7 @@ country_event = {
 			name = FEE_HRE_Minors_Imperial_Patronage
 			duration = -1
 		}
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 	}
 	option = {
 		name = FEE_HRE_Minors.7.OPT2
@@ -393,7 +393,7 @@ country_event = {
 	}
 	option = {
 		name = FEE_HRE_Minors.8.D
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 		add_stability_or_adm_power = yes
 	}
 }
