@@ -34,14 +34,23 @@
 
  FEE_Genoa_Events.9.T: "Expansion of the Lanterna"
  FEE_Genoa_Events.9.D: "The new extension work on the Lanterna is proceeding as planned but will certainly be more costly than expected, should we stop here or continue as far as we can?"
- FEE_Genoa_Events.9.OPT1: "Proceed at all costs"
- FEE_Genoa_Events.9.OPT1: "The bank cannot fund this"
+ FEE_Genoa_Events.9.OPT1: "Proceed at all costs."
+ FEE_Genoa_Events.9.OPT1: "The bank cannot fund this!"
+
+ FEE_Genoa_Events.10.T: "Genoese-Byzantine Relations"
+ FEE_Genoa_Events.10.D: "Since the 1261 and the treaty of Ninfeo the diplomatic relations with Byzantium has flown infinite treasury in the Republics and while the profits haven't diminished in the past years the strength of the Byzantine empire seems to be fading a little bit. Should we pursue the profit all for ourselves or should we honour the century lasting trade?"
+ FEE_Genoa_Events.10.OPT1: "Our word is sacred."
+ FEE_Genoa_Events.10.OPT1: "Nothin personal, it's purely for commerce!"
 
  #Modifiers
- fee_genoa_lanterna: "The Lanterna"
- desc_fee_genoa_lanterna: "The great tower looking out across the Mediterranean, beckoning traders to our shore."
- fee_genoa_casa_san_giorgio: "Casa San Giorgio"
- desc_fee_genoa_casa_san_giorgio: "The Bank of the House of San Giorgio has been given charge of a number of administrative tasks on the island."
+ fee_gen_lanterna: "The Lanterna"
+ desc_fee_gen_lanterna: "The great tower looking out across the Mediterranean, beckoning traders to our shore."
+ fee_gen_casa_san_giorgio: "Casa San Giorgio"
+ desc_fee_gen_casa_san_giorgio: "The Bank of the House of San Giorgio has been given charge of a number of administrative tasks on the island."
  fee_gen_lanterna_genova: "The Lanterna"
  desc_fee_gen_lanterna_genova: "The great tower looking out across the Mediterranean, beckoning traders to our shore."
- 
+ fee_gen_treaty_byzantium: "Treaty with Byzantium"
+ desc_fee_gen_treaty_byzantium: "Since the 1261 and the treaty of Ninfeo the diplomatic relations with Byzantium has flown infinite treasury in the Republics."
+
+# Tooltips
+ FEE_GEN_TREATY_CONSTANTINOPLE_TT: "Every Province owned by [ROOT.GetName] in the [1320.GetName] Trade Node, will gain: "

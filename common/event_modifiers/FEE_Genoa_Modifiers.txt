@@ -1,13 +1,13 @@
 # Genoa has built the Lanterna
-fee_genoa_lanterna = {
+fee_gen_lanterna = {
 	global_own_trade_power = 0.1
 	local_own_coast_naval_combat_bonus = 1
 }
 
 # San Giorgio on Corsica
-fee_genoa_san_giorgio_timer = {
+fee_gen_san_giorgio_timer = {
 }
-fee_genoa_casa_san_giorgio = {
+fee_gen_casa_san_giorgio = {
 	local_development_cost = -0.1
 }
 
@@ -20,4 +20,10 @@ fee_gen_lanterna_genova = {
 	global_ship_trade_power = 0.15
 	naval_tradition_from_trade = 0.15
 	trade_range_modifier = 0.15
+}
+
+fee_gen_treaty_byzantium = {
+	province_trade_power_modifier = 0.25
+	trade_value_modifier = 0.33
+	local_development_cost = -0.10
 }
