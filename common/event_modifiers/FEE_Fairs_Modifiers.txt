@@ -4,10 +4,11 @@ fee_trading_fair_province_modifier = {
 	local_development_cost = -0.10
 }
 fee_trading_fair_origin = {
-	trade_value_modifier = 0.10
-	trade_goods_size_modifier = 0.10
-	local_development_cost = -0.10
+	trade_value_modifier = 0.20
+	trade_goods_size_modifier = 0.20
+	local_development_cost = -0.20
 }
+
 fee_almighty_protection = {
 	global_missionary_strength = 0.01
 	stability_cost_modifier = -0.10

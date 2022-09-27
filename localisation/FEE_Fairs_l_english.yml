@@ -8,7 +8,7 @@
  FEE_Fairs_Events.2.D: "You should not read this event, so if you do something went wrong, although it might have been just enabled only for debugging reason still, please, report it to Melvasul/Dr.Pizza of the Expanded Mod Family. \n\nThe sole reason of existance of this event is choosing which (owned) province will host the next trading fair."
  FEE_Fairs_Events.2.OPT1: "Report the error :T."
 
- FEE_Fairs_Events.3.T: "Trading Fair of [Root.GetName]"
+ FEE_Fairs_Events.3.T: "Trading Fair of [event_target_fee_fair_province.GetName]"
  FEE_Fairs_Events.3.D: "Finally a trading fair has reached this wonderful city and will stay here for 5 years attracting even more people both to trade and stay here!"
  FEE_Fairs_Events.3.OPT1: "Welcome them all."
 
@@ -26,14 +26,18 @@
  FEE_Fairs_Events.6.D: "As the trading fairs ends and we look forward to a world were trade is no longer local but global, the provinces on which the first trading fairs were hosted will still attract people from all over the regions to trade in them, and proudly we may announce that they were glorious cities."
  FEE_Fairs_Events.6.OPT1: "Echoes of trading fairs will last forever."
 
+ FEE_Fairs_Events.7.T: "Fair Ended in [event_target_fee_fair_province.GetName]"
+ FEE_Fairs_Events.7.D: "You should not read this event, so if you do something went wrong, although it might have been just enabled only for debugging reason still, please, report it to Melvasul/Dr.Pizza of the Expanded Mod Family."
+ FEE_Fairs_Events.7.OPT1: "Report the error, please."
+
+ FEE_Fairs_Events.2000.T: "Hidden Event to Cycle through events"
+ FEE_Fairs_Events.2000.D: "Once the Trading Fair has started many have suggested that you, my liege should go and take part of the fair to both show your interest and be seen by the commoners who would revere you, what should you do my lord?"
+ FEE_Fairs_Events.2000.OPT1: "I will attend it."
+
  FEE_Fairs_Events.3000.T: "Invitation to the trading Fair"
  FEE_Fairs_Events.3000.D: "Once the Trading Fair has started many have suggested that you, my liege should go and take part of the fair to both show your interest and be seen by the commoners who would revere you, what should you do my lord?"
- FEE_Fairs_Events.3000.OPT1: "I will go."
+ FEE_Fairs_Events.3000.OPT1: "I will attend it."
  FEE_Fairs_Events.3000.OPT2: "I have sadly more important things to attend."
-
- FEE_Fairs_Events.7.T: "Fair Ended in [Root.GetName]"
- FEE_Fairs_Events.7.D: "Sadly everything must come to an end, and while we loved the time spent with them the current trading fair must travel to another city to host there another fair, until our next time!"
- FEE_Fairs_Events.7.OPT1: "Let us see the report."
 
  FEE_Fairs_Events.5000.T: "Nomad Caravan"
  FEE_Fairs_Events.5000.D: "A caravan of nomads has entered the fair bringing many new people with fire-eaters knifethrowers, jugglers and what else, their singing can be heard in all the squares of the cities, and while some don't approve of them, it is clear how some of them would benefit the entire fair and what not, the city itself!"
@@ -95,7 +99,7 @@
  FEE_Fairs_Events.5020.OPT2: "Banish em."
  FEE_Fairs_Events.5020.OPT1: "Let them stay, we will gladly use their workforce."
 
- FEE_Fairs_Events.5021.T: "Revolt in [Root.GetName]"
+ FEE_Fairs_Events.5021.T: "Revolt in [event_target_fee_fair_province.GetName]"
  FEE_Fairs_Events.5021.D: "The Nomad that we accustomed in the town have revolted againt us, this is an act of treachery and revolt against our central government, next time they try to stay in the city we should just send them off!"
  FEE_Fairs_Events.5021.OPT1: "We should have never brought them in."
 
@@ -163,8 +167,8 @@
  #Tooltips
  FEE_FAIRS_STARTING_TT: "Up to once every §Y15 Years§! a §GTrading Fair§! will be hosted in an owned province with a §MCenter of Trade§! of any level. \nA fair can return in the same province only once every §Y20 years.§!\n\nTrading Fairs will spawn until §RGlobal Trade§!."
  FAIRS_ENABLE_TT: "You will §GEnable§! the Trading Fairs."
- FEE_FAIRS_DISABLE_TT: "You will §RDisable§! the §GTrading Fairs§! thus saving some performance in the game, but losing a ton of flavor."
- FEE_FAIRS_CHOSE_PROVINCE_TT: "The Trading Caravans and Fairs have chosen [Root.GetName] to host the next fair!"
+ FEE_FAIRS_DISABLE_TT: "You will §RDisable§! the §GTrading Fairs§! thus saving some performance in the game, in exchange of the loss of favour."
+ FEE_FAIRS_CHOSE_PROVINCE_TT: "The Trading Caravans and Fairs have chosen [event_target_fee_fair_province.GetName] to host the next fair!"
  FEE_ORIGIN_TRADING_FAIRS_TT: "Every Province that was the §YSTARTING§! holder of §MTrading Fair§! will gain:"
 
  FEE_FAIR_STARTED_CHANGED_OWNER_TT: "This Fair started in a province after it changed owner, this can cause some bugs, that's why you are reading this. \nIf you are 100% sure this was not the case {the province still had the modifier related to the fair} report it to Melvasul of the Expanded Mod Family discord server."
