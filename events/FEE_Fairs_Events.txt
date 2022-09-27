@@ -898,6 +898,14 @@ country_event = {
 
 	is_triggered_only = yes
 
+	trigger = {
+		event_target:event_target_fee_fair_province = {
+			has_province_modifier = fee_trading_fair_province_modifier
+			NOT = { has_province_flag = fee_province_trading_fair_ruler_goes_to_fair }
+			NOT = { has_province_flag = fee_province_trading_fair_ruler_does_not_go_to_fair }
+		}
+	}
+
 	goto = event_target_fee_fair_province
 
 	option = {
