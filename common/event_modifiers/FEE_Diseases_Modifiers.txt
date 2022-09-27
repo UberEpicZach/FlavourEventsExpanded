@@ -16,3 +16,7 @@ fee_syphilis_outbreak = {
 fee_syphilis_troops_contained = {
 	land_morale = -0.05
 }
+
+fee_army_can_spread_syphilis = {
+	manpower_recovery_speed = 0.005
+}

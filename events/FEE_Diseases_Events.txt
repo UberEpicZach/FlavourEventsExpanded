@@ -125,7 +125,10 @@ country_event = {
 						units_in_province = PREV
 					}
 				}
-				set_country_flag = fee_country_can_spread_syphilis
+				add_country_modifier = {
+					name = fee_army_can_spread_syphilis
+					duration = 1825
+				}
 			}
 		}
 	}
@@ -514,7 +517,10 @@ country_event = {
 					units_in_province = PREV
 				}
 			}
-			set_country_flag = fee_country_can_spread_syphilis
+			add_country_modifier = {
+				name = fee_army_can_spread_syphilis
+				duration = 1825
+			}
 		}
 		event_target:event_target_fee_province_syphilis = {
 			if = {
@@ -993,7 +999,10 @@ country_event = {
 					units_in_province = PREV
 				}
 			}
-			set_country_flag = fee_country_can_spread_syphilis
+			add_country_modifier = {
+				name = fee_army_can_spread_syphilis
+				duration = 1825
+			}
 		}
 		event_target:event_target_fee_province_syphilis_spread = {
 			if = {
@@ -1105,12 +1114,12 @@ country_event = {
 			OR = {
 				AND = {
 					ROOT = {
-						has_country_flag = fee_country_can_spread_syphilis
+						has_country_modifier = fee_army_can_spread_syphilis
 					}
 					units_in_province = ROOT
 				}
 				any_country = {
-					has_country_flag = fee_country_can_spread_syphilis
+					has_country_modifier = fee_army_can_spread_syphilis
 					PREV = {
 						units_in_province = PREV
 					}
@@ -1473,7 +1482,10 @@ country_event = {
 					units_in_province = PREV
 				}
 			}
-			set_country_flag = fee_country_can_spread_syphilis
+			add_country_modifier = {
+				name = fee_army_can_spread_syphilis
+				duration = 1825
+			}
 		}
 		event_target:event_target_fee_province_syphilis_spread_army = {
 			if = {
@@ -1688,7 +1700,10 @@ country_event = {
 			factor = 50
 		}
 
-		set_country_flag = fee_country_can_spread_syphilis
+		add_country_modifier = {
+			name = fee_army_can_spread_syphilis
+			duration = 1825
+		}
 	}
 }
 
