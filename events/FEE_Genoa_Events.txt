@@ -167,7 +167,7 @@ country_event = {
 	}
 }
 
-#B alilla and the Genoese Revolt
+#Balilla and the Genoese Revolt
 country_event = {
 	id = FEE_Genoa_Events.5
 	title = FEE_Genoa_Events.5.T
@@ -460,16 +460,21 @@ country_event = {
 			factor = 50
 		}
 
-		add_prestige_or_monarch_power = { amount = 10 }
+		custom_tooltip = FEE_GEN_BYZANTINE_RELATIONS_TT
+		force_remove_rival = BYZ
 		add_historical_friend = BYZ
-		BYZ = { add_historical_friend = ROOT }
+		BYZ = {
+			add_historical_friend = ROOT
+			force_remove_rival = ROOT
+		}
+		create_alliance = BYZ
 		add_opinion = {
 			who = BYZ
-			modifier = gen_trade_given
+			modifier = opinion_export_good
 		}
 		reverse_add_opinion = {
 			who = BYZ
-			modifier = gen_trade_given
+			modifier = opinion_export_good
 		}
 		if = {
 			limit = {
@@ -483,23 +488,25 @@ country_event = {
 				who = ROOT
 				duration = 7300
 				power = 15
-				key = gen_trade_given
+				key = opinion_export_good
 			}
 			add_trade_modifier = {
 				who = BYZ
 				duration = 7300
 				power = 15
-				key = gen_trade_given
+				key = opinion_export_good
 			}
 		}
 	}
 
 	option = {
-		name = FEE_Genoa_Events.10.OPT1
+		name = FEE_Genoa_Events.10.OPT2
 		ai_chance = {
 			factor = 50
 		}
 
+		add_historical_rival = BYZ
+		BYZ = { add_historical_rival = ROOT }
 		add_mercantilism = 5
 		add_mil_power = 50
 		add_opinion = {
@@ -520,7 +527,7 @@ country_event = {
 					add_base_production = 1
 					add_province_modifier = {
 						name = fee_gen_treaty_byzantium
-						duration = 73000
+						duration = 7300
 					}
 				}
 			}
@@ -534,8 +541,311 @@ country_event = {
 						add_base_production = 1
 						add_province_modifier = {
 						name = fee_gen_treaty_byzantium
-						duration = 73000
+						duration = 7300
 					}
+				}
+			}
+		}
+	}
+}
+
+# [BYZ.GetName] requests for aid!
+country_event = {
+	id = FEE_Genoa_Events.11
+	title = FEE_Genoa_Events.11.T
+	desc = FEE_Genoa_Events.11.D
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = GEN
+			was_tag = GEN
+		}
+		BYZ = {
+			is_in_war = {
+				attacker_leader = TUR
+				defender_leader = BYZ
+			}
+			OR = {
+				alliance_with = GEN
+				has_opinion = {
+					who = ROOT
+					value = 50
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Genoa_Events.11.OPT1
+		ai_chance = {
+			factor = 33
+		}
+
+		add_estate_nobles_loyalty_effect = yes
+		add_opinion = {
+			who = BYZ
+			modifier = opinion_supported_war
+		}
+		reverse_add_opinion = {
+			who = BYZ
+			modifier = opinion_supported_war
+		}
+		BYZ = {
+			define_general = {
+				name = "Giovanni Giustiniani"
+				fire = 2
+				shock = 2
+				manuever = 3
+				siege = 0
+				trait = hardy_warrior_personality
+			}
+		}
+		TUR = {
+			add_opinion = {
+				who = ROOT
+				modifier = opinion_supported_war_enemy
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Genoa_Events.11.OPT2
+		ai_chance = {
+			factor = 33
+		}
+
+		add_opinion = {
+			who = BYZ
+			modifier = opinion_supported_war
+		}
+		reverse_add_opinion = {
+			who = BYZ
+			modifier = opinion_supported_war
+		}
+		BYZ = {
+			capital_scope = {
+				add_province_modifier = {
+					name = roman_garisson
+					duration = 1825
+				}
+			}
+		}
+		TUR = {
+			add_opinion = {
+				who = ROOT
+				modifier = opinion_supported_war_enemy
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Genoa_Events.11.OPT3
+		ai_chance = {
+			factor = 33
+		}
+
+		add_prestige = -5
+		add_dip_power = -25
+		add_mil_power = -25
+		add_estate_burghers_loyalty_effect = yes
+		add_mercantilism = 3
+		if = {
+			limit = {
+				has_opinion_modifier = {
+					who = BYZ
+					modifier = gen_trade_given
+				}
+			}
+			remove_opinion = {
+				who = BYZ
+				modifier = gen_trade_given
+			}
+			BYZ = {
+				remove_opinion = {
+					who = BYZ
+					modifier = gen_trade_given
+				}
+			}
+		}
+		if = {
+			limit = {
+				1320 = {
+					has_trade_modifier = {
+						who = ROOT
+						key = gen_trade_given
+					}
+				}
+			}
+			1320 = {
+				remove_trade_modifier = {
+					who = ROOT
+					key = gen_trade_given
+				}
+				remove_trade_modifier = {
+					who = BYZ
+					key = gen_trade_given
+				}
+			}
+		}
+	}
+}
+
+# A Byzantine envoy
+country_event = {
+	id = FEE_Genoa_Events.12
+	title = FEE_Genoa_Events.12.T
+	desc = FEE_Genoa_Events.12.D
+	picture = DIPLOMACY_eventPicture
+
+	trigger = {
+		OR = {
+			tag = GEN
+			was_tag = GEN
+		}
+		OR = {
+			alliance_with = BYZ
+			has_opinion = {
+				who = BYZ
+				value = 125
+			}
+			reverse_has_opinion = {
+				who = BYZ
+				value = 125
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = FEE_Genoa_Events.12.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		random_list = {
+			33 = {
+				define_advisor = {
+					type = philosopher
+					skill = 2
+					culture = BYZ
+					religion = BYZ
+					cost_multiplier = 0.50
+				}
+			}
+			33 = {
+				define_advisor = {
+					type = trader
+					skill = 2
+					culture = BYZ
+					religion = BYZ
+					cost_multiplier = 0.50
+				}
+			}
+			33 = {
+				define_advisor = {
+					type = army_reformer
+					skill = 2
+					culture = BYZ
+					religion = BYZ
+					cost_multiplier = 0.50
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Genoa_Events.12.OPT2
+		ai_chance = {
+			factor = 50
+		}
+
+		create_general = {
+			tradition = 50
+			culture = BYZ
+		}
+	}
+}
+
+# Genoese Traders at court
+country_event = {
+	id = FEE_Genoa_Events.13
+	title = FEE_Genoa_Events.13.T
+	desc = FEE_Genoa_Events.13.D
+	picture = TRADEGOODS_eventPicture
+
+	trigger = {
+		tag = BYZ
+		any_country = {
+			OR = {
+				tag = GEN
+				was_tag = GEN
+			}
+			OR = {
+				alliance_with = ROOT
+				has_opinion = {
+					who = ROOT
+					value = 125
+				}
+				reverse_has_opinion = {
+					who = ROOT
+					value = 125
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = FEE_Genoa_Events.13.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		define_advisor = {
+			type = trader
+			skill = 2
+			culture = ligurian
+			religion = catholic
+			cost_multiplier = 0.50
+		}
+	}
+
+	option = {
+		name = FEE_Genoa_Events.13.OPT2
+		ai_chance = {
+			factor = 50
+		}
+		trigger = {
+			1320 = {
+				any_trade_node_member_province = {
+					owned_by = ROOT
+					NOT = { has_province_modifier = fee_gen_treaty_byzantium }
+				}
+			}
+		}
+
+		1320 = {
+			random_trade_node_member_province = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_base_production = 1
+				add_province_modifier = {
+					name = fee_gen_treaty_byzantium
+					duration = 3650
 				}
 			}
 		}
