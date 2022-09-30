@@ -20,6 +20,10 @@ country_event = {
 				which = heirEducationalLevel
 				value = 0
 			}
+			set_variable = {
+				which = heir_education_event_number
+				value = 0
+			}
 			set_heir_flag = heir_started_education
 		}
 	}
@@ -1545,10 +1549,6 @@ country_event = {
 	}
 	immediate = {
 		set_ruler_flag = assigned_education
-		set_variable = {
-			which = heir_education_event_number
-			value = 0
-		}
 	}
 	
 	option = {
