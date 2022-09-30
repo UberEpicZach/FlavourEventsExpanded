@@ -17,17 +17,31 @@ country_event = {
 	desc = cato_education_events_education_progress.0001.desc
 	picture = ECONOMY_eventPicture
 	
-	is_triggered_only = yes
 	hidden = yes
 	trigger = {
 		is_lesser_in_union = no
 		heir_can_recieve_education_events = yes
+		NOT = {
+			check_variable = {
+				which = heir_education_event_number
+				value = 16
+			}
+		}
+		OR = {
+			NOT = { has_country_flag = recent_education_event }
+			had_country_flag = {
+				flag = recent_education_event
+				days = 180
+			}
+		}
 	}
 	immediate = {
-		country_event = {
-			id = cato_education_events_education_progress.0001
-			days = 180
+		change_variable = {
+			which = heir_education_event_number
+			value = 1
 		}
+		clr_country_flag = recent_education_event
+		set_country_flag = recent_education_event
 	}
 	option = {
 		name = cato_education_events_education_progress.0002.title
@@ -472,6 +486,28 @@ country_event = {
 			}
 		}
 		country_event = { id = cato_education_events_education_progress.3002 }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = cato_education_events_education_progress.3003.title
+		trigger = {
+			has_heir_flag = scholastic_education
+			NOT = {
+				has_heir_flag = literacy_choice
+			}
+		}
+		country_event = { id = cato_education_events_education_progress.3003 }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = cato_education_events_education_progress.3004.title
+		trigger = {
+			has_heir_flag = scholastic_education
+			NOT = {
+				has_heir_flag = glasses_choice
+			}
+		}
+		country_event = { id = cato_education_events_education_progress.3004 }
 		ai_chance = { factor = 1 }
 	}
 	option = {
@@ -1091,7 +1127,6 @@ country_event = {
 	title = cato_education_events_education_progress.0011.title
 	desc = cato_education_events_education_progress.0011.desc
 	picture = ECONOMY_eventPicture
-	hidden = yes
 	is_triggered_only = yes
 	
 	trigger = {
@@ -3636,6 +3671,76 @@ country_event = {
 		name = cato_education_events_education_progress.3002.a
 		
 		add_education_progress_medium = yes
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {
+	id = cato_education_events_education_progress.3003 ###Heir Illterate
+	title = cato_education_events_education_progress.3003.title
+	desc = cato_education_events_education_progress.3003.desc
+	picture = ECONOMY_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_heir_flag = scholastic_education
+		is_lesser_in_union = no
+		heir_can_recieve_education_events = yes
+	}
+	immediate = {
+		set_heir_flag = literacy_choice
+	}
+	
+	
+	option = {
+		name = cato_education_events_education_progress.3003.a
+		
+		add_education_progress_medium = yes
+		add_adm_power = -50
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = cato_education_events_education_progress.3003.b
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {
+	id = cato_education_events_education_progress.3004 ###Heir Needs Glasses
+	title = cato_education_events_education_progress.3004.title
+	desc = cato_education_events_education_progress.3004.desc
+	picture = ECONOMY_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_heir_flag = scholastic_education
+		is_lesser_in_union = no
+		heir_can_recieve_education_events = yes
+	}
+	immediate = {
+		set_heir_flag = glasses_choice
+	}
+	
+	option = {
+		name = cato_education_events_education_progress.3004.a
+		
+		add_education_progress_medium = yes
+		add_treasury = -75
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = cato_education_events_education_progress.3004.b
+		
+		subtract_education_progress_medium = yes
+		add_treasury = 75
 		ai_chance = {
 			factor = 1
 		}

@@ -749,9 +749,9 @@ country_event = {
 	title = cato_education_events_setup_hereditary.10.title
 	desc = {
 		trigger = {
-			had_heir_flag = {
-				flag = heir_started_education
-				days = 2920 ###8 years
+			check_variable = {
+				which = heir_education_event_number
+				value = 16
 			}
 		}
 		desc = "cato_education_events_setup_hereditary.10.desc.a"###Description for if the heir completes their education successfully.
@@ -766,9 +766,9 @@ country_event = {
 	trigger = {
 		OR = {
 			AND = {
-				had_heir_flag = {
-					flag = heir_started_education
-					days = 2920###2920 8 years
+				check_variable = {
+					which = heir_education_event_number
+					value = 16
 				}
 				heir_available = yes
 			}
@@ -1545,6 +1545,10 @@ country_event = {
 	}
 	immediate = {
 		set_ruler_flag = assigned_education
+		set_variable = {
+			which = heir_education_event_number
+			value = 0
+		}
 	}
 	
 	option = {
