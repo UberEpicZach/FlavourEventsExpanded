@@ -332,7 +332,6 @@ country_event = {
 	trigger = {
 		tag = PER
 		is_year = 1610
-		NOT = { has_country_modifier = per_the_third_force }
 		has_country_flag = fee_per_the_third_force
 	}
 
