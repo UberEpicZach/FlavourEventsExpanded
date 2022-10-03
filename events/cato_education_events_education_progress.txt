@@ -256,8 +256,7 @@ country_event = {
 		name = cato_education_events_education_progress.1009.title
 		trigger = {
 			has_heir_flag = clerical_education
-			NOT = { heir_has_personality = zealot_personality }
-			NOT = { heir_has_personality = tolerant_personality }
+			heir_has_personality_trait = no
 			NOT = { has_idea_group = humanist_ideas }
 		}
 		country_event = { id = cato_education_events_education_progress.1009 }
@@ -267,8 +266,7 @@ country_event = {
 		name = cato_education_events_education_progress.1010.title
 		trigger = {
 			has_heir_flag = clerical_education
-			NOT = { heir_has_personality = zealot_personality }
-			NOT = { heir_has_personality = tolerant_personality }
+			heir_has_personality_trait = no
 			NOT = { has_idea_group = religious_ideas }
 		}
 		country_event = { id = cato_education_events_education_progress.1010 }
@@ -391,8 +389,7 @@ country_event = {
 		name = cato_education_events_education_progress.2006.title
 		trigger = {
 			has_heir_flag = administrative_education
-			NOT = { heir_has_personality = midas_touched_personality }
-			NOT = { heir_has_personality = greedy_personality }
+			heir_has_personality_trait = no
 		}
 		country_event = { id = cato_education_events_education_progress.2006 }
 		ai_chance = { factor = 1 }
@@ -401,8 +398,7 @@ country_event = {
 		name = cato_education_events_education_progress.2007.title
 		trigger = {
 			has_heir_flag = administrative_education
-			NOT = { heir_has_personality = midas_touched_personality }
-			NOT = { heir_has_personality = greedy_personality }
+			heir_has_personality_trait = no
 		}
 		country_event = { id = cato_education_events_education_progress.2007 }
 		ai_chance = { factor = 1 }
@@ -411,7 +407,7 @@ country_event = {
 		name = cato_education_events_education_progress.2008.title
 		trigger = {
 			has_heir_flag = administrative_education
-			NOT = { heir_has_personality = lawgiver_personality }
+			heir_has_personality_trait = no
 		}
 		country_event = { id = cato_education_events_education_progress.2008 }
 		ai_chance = { factor = 1 }
