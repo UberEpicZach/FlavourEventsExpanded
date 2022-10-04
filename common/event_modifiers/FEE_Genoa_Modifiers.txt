@@ -27,3 +27,9 @@ fee_gen_treaty_byzantium = {
 	trade_value_modifier = 0.33
 	local_development_cost = -0.10
 }
+
+fee_gen_refugees_crimean_colonies = {
+	local_development_cost = -0.25
+	province_trade_power_modifier = 0.25
+	trade_value_modifier = 0.25
+}

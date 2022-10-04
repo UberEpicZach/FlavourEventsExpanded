@@ -58,6 +58,11 @@
  FEE_Genoa_Events.13.OPT1: "He will make us rich."
  FEE_Genoa_Events.13.OPT2: "Purely for commerce!"
 
+ FEE_Genoa_Events.14.T: "The Crimean Colonies"
+ FEE_Genoa_Events.14.D: "In the peninsula of Crimea, Caffa and other nearby towns in the hands of the Republic of Genoa were the points of contact between the Mongol-Tatar world and that of Western Europe. For over two centuries the Genoese colonies of the Black Sea prospered and enriched Genoa. But recently, with the rising of the various Mongol hordes and other foreign powers, it is clear that these distant provinces are too vulnerable and expensive to defend."
+ FEE_Genoa_Events.14.OPT1: "We will leave Crimea and concentrate in our Capital."
+ FEE_Genoa_Events.14.OPT2: "Expansion is the key to prosperity!"
+
  #Modifiers
  fee_gen_lanterna: "The Lanterna"
  desc_fee_gen_lanterna: "The great tower looking out across the Mediterranean, beckoning traders to our shore."
@@ -65,9 +70,15 @@
  desc_fee_gen_casa_san_giorgio: "The Bank of the House of San Giorgio has been given charge of several administrative tasks on the island."
  fee_gen_lanterna_genova: "The Lanterna"
  desc_fee_gen_lanterna_genova: "The great tower looking out across the Mediterranean, beckoning traders to our shore."
+
  fee_gen_treaty_byzantium: "Treaty with Byzantium"
  desc_fee_gen_treaty_byzantium: "Since the 1261 and the treaty of Ninfeo the diplomatic relations with Byzantium have flown infinite treasury in the Republics."
+
+ fee_gen_refugees_crimean_colonies: "Refugees from Crimean Colonies"
+ desc_fee_gen_refugees_crimean_colonies: "The return of our population from the Crimean colonies will boost our capital for the years to come."
 
 # Tooltips
  FEE_GEN_BYZANTINE_RELATIONS_TT: "The blossoming of our Alliance will be felt over time as long as we stay allied or have §G125+§! Relation."
  FEE_GEN_TREATY_CONSTANTINOPLE_TT: "Every Province owned by §Y[Root.GetName]§! in the §M[1320.GetName] Trade Node§!, will gain: "
+
+ FEE_GEN_CRIMEAN_POSSESSIONS_LIBERATED_TT: "§RWe will leave our Crimean possessions for the neighboring countries to take.§!"

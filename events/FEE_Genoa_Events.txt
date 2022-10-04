@@ -429,7 +429,7 @@ country_event = {
 	}
 }
 
-#########	Genoses-Byzantine Relations	#########
+#########	Genoese-Byzantine Relations	#########
 
 # Genoese-Byzantine Relations
 country_event = {
@@ -847,6 +847,203 @@ country_event = {
 					name = fee_gen_treaty_byzantium
 					duration = 3650
 				}
+			}
+		}
+	}
+}
+
+#########	Genoa in Crimea	#########
+
+# The Crimean Colonies
+country_event = {
+	id = FEE_Genoa_Events.14
+	title = FEE_Genoa_Events.14.T
+	desc = FEE_Genoa_Events.14.D
+	picture = FORTIFIED_CITY_WITH_CARAVAN_OUTSIDE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_year = 1266
+		NOT = { is_year = 1475 }
+		OR = {
+			tag = GEN
+			was_tag = GEN
+		}
+		OR = {
+			crimea_area = {
+				owned_by = ROOT
+			}
+			azov_area = {
+				owned_by = ROOT
+			}
+		}
+		NOT = {
+			capital_scope = {
+				region = crimea_region
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		years = 1
+	}
+
+	option = {
+		name = FEE_Genoa_Events.14.OPT1
+		ai_chance = {
+			factor = 50
+		}
+		trigger = {
+			OR = {
+				crimea_area = {
+					NOT = { owned_by = ROOT }
+				}
+				azov_area = {
+					NOT = { owned_by = ROOT }
+				}
+			}
+		}
+
+		custom_tooltip = FEE_GEN_CRIMEAN_POSSESSIONS_LIBERATED_TT
+		capital_scope = {
+			area = {
+				limit = { owned_by = ROOT }
+				add_province_modifier = {
+					name = fee_gen_refugees_crimean_colonies
+					duration = 18250
+				}
+				random_list = {
+					33 = { add_base_tax = 1 }
+					33 = { add_base_production = 1 }
+					33 = { add_base_manpower = 1 }
+				}
+			}
+		}
+		hidden_effect = {
+			azov_area = {
+				limit = {
+					owned_by = ROOT
+				}
+				random_neighbor_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+					}
+					owner = {
+						save_event_target_as = event_target_gen_crimean_colony
+					}
+				}
+				add_core = event_target:event_target_gen_crimean_colony
+				cede_province = event_target:event_target_gen_crimean_colony				
+			}
+			crimea_area = {
+				limit = {
+					owned_by = ROOT
+				}
+				random_neighbor_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+					}
+					owner = {
+						save_event_target_as = event_target_gen_crimean_colony
+					}
+				}
+				add_core = event_target:event_target_gen_crimean_colony
+				cede_province = event_target:event_target_gen_crimean_colony				
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Genoa_Events.14.OPT2
+		ai_chance = {
+			factor = 50
+		}
+
+		add_adm_power = -50
+		add_dip_power = -50
+		add_mil_power = -50
+		add_mercantilism = 3
+		add_estate_burghers_loyalty_effect = yes
+		1322 = {
+			add_trade_modifier = {
+				who = ROOT
+				duration = 9125
+				power = 15
+				key = careful_trade_expansion
+			}
+		}
+		crimea_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+				NOT = { is_empty = yes }
+				NOT = { is_wasteland = yes }
+			}
+			add_permanent_claim = ROOT
+		}
+		azov_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+				NOT = { is_empty = yes }
+				NOT = { is_wasteland = yes }
+			}
+			add_permanent_claim = ROOT
+		}
+		330 = {
+			if = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+					NOT = { is_empty = yes }
+					NOT = { is_wasteland = yes }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+		4706 = {
+			if = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+					NOT = { is_empty = yes }
+					NOT = { is_wasteland = yes }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+		1756 = {
+			if = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+					NOT = { is_empty = yes }
+					NOT = { is_wasteland = yes }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+		328 = {
+			if = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+					NOT = { is_empty = yes }
+					NOT = { is_wasteland = yes }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+		325 = {
+			if = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+					NOT = { is_empty = yes }
+					NOT = { is_wasteland = yes }
+				}
+				add_permanent_claim = ROOT
 			}
 		}
 	}

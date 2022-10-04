@@ -529,8 +529,10 @@ country_event = {
 		151 = {
 			if = {
 				limit = {
-					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+					NOT = { is_empty = yes }
+					NOT = { is_wasteland = yes }
 				}
 				add_permanent_claim = ROOT
 			}
