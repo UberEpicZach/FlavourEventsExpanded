@@ -911,7 +911,7 @@ country_event = {
 				limit = { owned_by = ROOT }
 				add_province_modifier = {
 					name = fee_gen_refugees_crimean_colonies
-					duration = 18250
+					duration = 10950
 				}
 				random_list = {
 					33 = { add_base_tax = 1 }

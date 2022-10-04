@@ -1,10 +1,10 @@
 fee_fairs_accepted_invitation = {
 	opinion = 25
-	yearly_decay = 1
+	years = 10
 }
 fee_fairs_declined_invitation = {
 	opinion = -25
-	yearly_decay = 1
+	years = 10
 }
 #name_of_modifier = {
 #	opinion = 1
