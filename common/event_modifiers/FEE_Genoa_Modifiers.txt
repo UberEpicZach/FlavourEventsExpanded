@@ -33,3 +33,22 @@ fee_gen_refugees_crimean_colonies = {
 	province_trade_power_modifier = 0.25
 	trade_value_modifier = 0.25
 }
+
+fee_gen_khan_subversion = {
+	trade_steering = 0.10
+	caravan_power = 0.15
+}
+fee_gen_help_steppe_lords = {
+	manpower_recovery_speed = 0.10
+	cavalry_cost = -0.10
+}
+fee_gen_crimean_trading_rights = {
+	caravan_power = 0.10
+	global_trade_power = 0.10
+}
+
+fee_gen_queen_black_sea = {
+	province_trade_power_modifier = 0.33
+	local_development_cost = -0.15
+	local_defensiveness = 0.15
+}
