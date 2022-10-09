@@ -25,7 +25,7 @@
  FEE_Genoa_Events.6.OPT1: "Once we retake the city they will all pay!"
 
  FEE_Genoa_Events.7.T: "Forte Briglia"
- FEE_Genoa_Events.7.D: "After the capture of the city and the capitulation of the local troops, we found that the city lacked a proper barracks to station the garrison from possible attacks by land and assaults by sea; the construction of Fort Briglia should make up for this lack."
+ FEE_Genoa_Events.7.D: "After the capture of the city and the capitulation of the local troops, we found that the city lacked proper barracks to station the garrison from possible attacks by land and assaults by sea; the construction of Fort Briglia should make up for this lack."
  FEE_Genoa_Events.7.OPT1: "Protect the troops!"
 
  FEE_Genoa_Events.8.T: "Friendly Fire on the Lanterna"
@@ -58,28 +58,42 @@
  FEE_Genoa_Events.13.OPT1: "He will make us rich."
  FEE_Genoa_Events.13.OPT2: "Purely for commerce!"
 
- FEE_Genoa_Events.14.T: "The Crimean Colonies"
- FEE_Genoa_Events.14.D: "In the peninsula of Crimea, Caffa and other nearby towns in the hands of the Republic of Genoa were the points of contact between the Mongol-Tatar world and that of Western Europe. For over two centuries the Genoese colonies of the Black Sea prospered and enriched Genoa. But recently, with the rising of the various Mongol hordes and other foreign powers, it is clear that these distant provinces are too vulnerable and expensive to defend."
- FEE_Genoa_Events.14.OPT1: "We will leave Crimea and concentrate in our Capital."
- FEE_Genoa_Events.14.OPT2: "Expansion is the key to prosperity!"
+ FEE_Genoa_Events.14.T: "Umanesimo o Rinascimento?"
+ FEE_Genoa_Events.14.D: "Scholastic Aristotelianism dominated between Venice, Padua and Bologna: Petrarch opposed his spiritualist Christianity, tinged with Platonism and Stoicism, and his morality based on a careful, secular reading of the classics and fusing it with Christianity and Latin culture. The influence of the Byzantine scholars in Italy and the Latin scholars at the Imperial court elevated the search for the man in a new Rebirth."
+ FEE_Genoa_Events.14.OPT1: "The Renaissance!"
 
- FEE_Genoa_Events.15.T: "Gazaria"
- FEE_Genoa_Events.15.D: "With the Treaty of Nymphaeum of 1261 the old emperor of Nicaea granted us, in exchange for our support in their reconquest of Constantinople in exchange of every commercial and maritime privilege in the streets of the Black Sea, thus the colony of Gazaria was created."
- FEE_Genoa_Events.15.OPT1: "The Compagna Communis will administrate the cities."
+ FEE_Genoa_Events.15.T: "The Crimean Colonies"
+ FEE_Genoa_Events.15.D: "In the peninsula of Crimea, Caffa and other nearby towns in the hands of the Republic of Genoa were the points of contact between the Mongol-Tatar world and that of Western Europe. For over two centuries the Genoese colonies of the Black Sea prospered and enriched Genoa. But recently, with the rising of the various Mongol hordes and other foreign powers, it is clear that these distant provinces are too vulnerable and expensive to defend."
+ FEE_Genoa_Events.15.OPT1: "We will leave Crimea and concentrate in our Capital."
+ FEE_Genoa_Events.15.OPT2: "Expansion is the key to prosperity!"
 
- FEE_Genoa_Events.16.T: "The Steppe Lords"
- FEE_Genoa_Events.16.D: "While our first colony of Caffa in 1308 was sieged and captured by the invading Golden Horde under Toqtai the subsequent hordes such as the horde of Uzbek, Nogai and the latter Khans of the Golden Horde have been far more interested in trading agreements between our nations rather than endless war, how should we decide?"
- FEE_Genoa_Events.16.OPT1: "We must stand alone."
- FEE_Genoa_Events.16.OPT2: "Ask support from the Steppe Lords."
+ FEE_Genoa_Events.16.T: "Gazaria"
+ FEE_Genoa_Events.16.D: "With the Treaty of Nymphaeum of 1261 the old emperor of Nicaea granted us, in exchange for our support in their reconquest of Constantinople in exchange for every commercial and maritime privilege in the streets of the Black Sea, thus the colony of Gazaria was created."
+ FEE_Genoa_Events.16.OPT1: "The Compagna Communis will administrate the cities."
 
- FEE_Genoa_Events.17.T: "A Genoese Request"
- FEE_Genoa_Events.17.D: "An embassy from [event_target_fee_genoa.GetName] has approached our capital: [Capital.Getname] the splendid, to discuss trade in the Crimeans lands."
- FEE_Genoa_Events.17.OPT1: "Help from the western traders should be profitable."
- FEE_Genoa_Events.17.OPT2: "Never bend."
+ FEE_Genoa_Events.17.T: "The Steppe Lords"
+ FEE_Genoa_Events.17.D: "While our first colony of Caffa in 1308 was sieged and captured by the invading Golden Horde under Toqtai the subsequent hordes such as the horde of Uzbek, Nogai and the latter Khans of the Golden Horde have been far more interested in trading agreements between our nations rather than endless war, how should we decide?"
+ FEE_Genoa_Events.17.OPT1: "We must stand alone."
+ FEE_Genoa_Events.17.OPT2: "Ask support from the Steppe Lords."
 
- FEE_Genoa_Events.18.T: "Regina del Mar Grande"
- FEE_Genoa_Events.18.D: "Called also Queen of the Grand Sea, the splendid city of Caffa has seen in its life wonderful prosperity as well as sieges, plague and devastation."
- FEE_Genoa_Events.18.OPT1: "Marvellous."
+ FEE_Genoa_Events.18.T: "A Genoese Request"
+ FEE_Genoa_Events.18.D: "An embassy from [event_target_fee_genoa.GetName] has approached our capital: [Capital.Getname] the splendid, to discuss trade in the Crimeans lands."
+ FEE_Genoa_Events.18.OPT1: "Help from the western traders should be profitable."
+ FEE_Genoa_Events.18.OPT2: "Never bend."
+
+ FEE_Genoa_Events.19.T: "Regina del Mar Grande"
+ FEE_Genoa_Events.19.D: "Called also Queen of the Grand Sea, the splendid city of Caffa has seen in its life wonderful prosperity as well as sieges, plague and devastation."
+ FEE_Genoa_Events.19.OPT1: "Marvellous."
+
+ FEE_Genoa_Events.20.T: "A Crimean Tsar?"
+ FEE_Genoa_Events.20.D: "The Russian tsar has landed his vicious hands on the beloved Crimean region which has always been protected by us, pious and righteous [Root.GetAdjective], while war might not be the only option, it sure does look like the most lucrative one."
+ FEE_Genoa_Events.20.OPT1: "Send an embassy."
+ FEE_Genoa_Events.20.OPT2: "War, purely for commerce."
+
+ FEE_Genoa_Events.21.T: "[FROM.GetAdjective] Embassy"
+ FEE_Genoa_Events.21.D: "A convoy of [FROM.GetAdjective] merchants, traders and diplomats have reached our capital for an agreement between our two nations for cooperation in the Crimea, or we could just attack them."
+ FEE_Genoa_Events.21.OPT1: "Sounds reasonable."
+ FEE_Genoa_Events.21.OPT2: "To war!"
 
  #Modifiers
  fee_gen_lanterna: "The Lanterna"
@@ -90,7 +104,7 @@
  desc_fee_gen_lanterna_genova: "The great tower looking out across the Mediterranean, beckoning traders to our shore."
 
  fee_gen_treaty_byzantium: "Treaty with Byzantium"
- desc_fee_gen_treaty_byzantium: "Since the 1261 and the treaty of Ninfeo the diplomatic relations with Byzantium have flown infinite treasury in the Republics."
+ desc_fee_gen_treaty_byzantium: "Since 1261 and the treaty of Ninfeo the diplomatic relations with Byzantium have flown infinite treasury in the Republics."
 
  fee_gen_refugees_crimean_colonies: "Refugees from Crimean Colonies"
  desc_fee_gen_refugees_crimean_colonies: "The return of our population from the Crimean colonies will boost our capital for the years to come."
@@ -104,6 +118,9 @@
 
  fee_gen_queen_black_sea: "Queen of the Black Sea"
  desc_fee_gen_queen_black_sea: "Called also Queen of the Grand Sea, the splendid city of Caffa has seen in its life wonderful prosperity as well as sieges, plague and devastation."
+
+ fee_gen_russian_genoese_trade_agreement: "Russian-Genoese Agreement"
+ fee_gen_genoese_russian_trade_agreement: "Genoese-Russian Agreement"
 
 # Tooltips
  FEE_GEN_BYZANTINE_RELATIONS_TT: "The blossoming of our Alliance will be felt over time as long as we stay allied or have §G125+§! Relation."

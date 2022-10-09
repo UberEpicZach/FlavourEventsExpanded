@@ -852,13 +852,90 @@ country_event = {
 	}
 }
 
-#########	Genoa in Crimea	#########
-
-# The Crimean Colonies
+# Umanesimo o rinascimento?
 country_event = {
 	id = FEE_Genoa_Events.14
 	title = FEE_Genoa_Events.14.T
 	desc = FEE_Genoa_Events.14.D
+	picture = BIG_BOOK_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = GEN
+			was_tag = GEN
+		}
+		OR = {
+			alliance_with = BYZ
+			has_opinion = {
+				who = BYZ
+				value = 125
+			}
+			reverse_has_opinion = {
+				who = BYZ
+				value = 125
+			}
+		}
+		is_institution_enabled = renaissance
+		capital_scope = {
+			NOT = { renaissance = 100 }
+		}
+		BYZ = {
+			capital_scope = {
+				NOT = { renaissance = 100 }
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Genoa_Events.14.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		define_advisor = {
+			type = philosopher
+			culture = BYZ
+			religion = BYZ
+			skill = 2
+			discount = yes
+		}
+		capital_scope = {
+			add_institution_embracement = {
+				which = renaissance
+				value = 25
+			}
+		}
+		BYZ = {
+			define_advisor = {
+				type = philosopher
+				culture = ROOT
+				religion = ROOT
+				skill = 2
+				discount = yes
+			}
+			capital_scope = {
+				add_institution_embracement = {
+					which = renaissance
+					value = 25
+				}
+			}
+		}
+	}
+}
+
+#########	Genoa in Crimea	#########
+
+# The Crimean Colonies
+country_event = {
+	id = FEE_Genoa_Events.15
+	title = FEE_Genoa_Events.15.T
+	desc = FEE_Genoa_Events.15.D
 	picture = FORTIFIED_CITY_WITH_CARAVAN_OUTSIDE_eventPicture
 
 	fire_only_once = yes
@@ -890,7 +967,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Genoa_Events.14.OPT1
+		name = FEE_Genoa_Events.15.OPT1
 		ai_chance = {
 			factor = 50
 		}
@@ -955,7 +1032,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Genoa_Events.14.OPT2
+		name = FEE_Genoa_Events.15.OPT2
 		ai_chance = {
 			factor = 50
 		}
@@ -1051,9 +1128,9 @@ country_event = {
 
 # Gazaria
 country_event = {
-	id = FEE_Genoa_Events.15
-	title = FEE_Genoa_Events.15.T
-	desc = FEE_Genoa_Events.15.D
+	id = FEE_Genoa_Events.16
+	title = FEE_Genoa_Events.16.T
+	desc = FEE_Genoa_Events.16.D
 	picture = CARAVAN_EVENT_Picture
 
 	fire_only_once = yes
@@ -1080,7 +1157,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Genoa_Events.15.OPT1
+		name = FEE_Genoa_Events.16.OPT1
 		ai_chance = {
 			factor = 50
 		}
@@ -1110,9 +1187,9 @@ country_event = {
 
 # The Steppe Lords
 country_event = {
-	id = FEE_Genoa_Events.16
-	title = FEE_Genoa_Events.16.T
-	desc = FEE_Genoa_Events.16.D
+	id = FEE_Genoa_Events.17
+	title = FEE_Genoa_Events.17.T
+	desc = FEE_Genoa_Events.17.D
 	picture = MERCHANTS_IN_SIBERIA_eventPicture
 
 	fire_only_once = yes
@@ -1150,7 +1227,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Genoa_Events.16.OPT1
+		name = FEE_Genoa_Events.17.OPT1
 		ai_chance = {
 			factor = 50
 		}
@@ -1169,7 +1246,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Genoa_Events.16.OPT2
+		name = FEE_Genoa_Events.17.OPT2
 		trigger = {
 			OR = {
 				exists = GOL
@@ -1184,7 +1261,7 @@ country_event = {
 			limit = { exists = GLH }
 			GLH = {
 				country_event = {
-					id = FEE_Genoa_Events.17
+					id = FEE_Genoa_Events.18
 					days = 30
 					random = 15
 				}
@@ -1193,7 +1270,7 @@ country_event = {
 		else = {
 			GOL = {
 				country_event = {
-					id = FEE_Genoa_Events.17
+					id = FEE_Genoa_Events.18
 					days = 30
 					random = 15
 				}
@@ -1204,9 +1281,9 @@ country_event = {
 
 # A Genoese Request
 country_event = {
-	id = FEE_Genoa_Events.17
-	title = FEE_Genoa_Events.17.T
-	desc = FEE_Genoa_Events.17.D
+	id = FEE_Genoa_Events.18
+	title = FEE_Genoa_Events.18.T
+	desc = FEE_Genoa_Events.18.D
 	picture = MERCHANTS_TALKING_eventPicture
 
 	is_triggered_only = yes
@@ -1217,7 +1294,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Genoa_Events.17.OPT1
+		name = FEE_Genoa_Events.18.OPT1
 		ai_chance = {
 			factor = 50
 			modifier = {
@@ -1247,7 +1324,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Genoa_Events.17.OPT2
+		name = FEE_Genoa_Events.18.OPT2
 		ai_chance = {
 			factor = 50
 			modifier = {
@@ -1271,9 +1348,9 @@ country_event = {
 
 # Regina del Mar Grande
 country_event = {
-	id = FEE_Genoa_Events.18
-	title = FEE_Genoa_Events.18.T
-	desc = FEE_Genoa_Events.18.D
+	id = FEE_Genoa_Events.19
+	title = FEE_Genoa_Events.19.T
+	desc = FEE_Genoa_Events.19.D
 	picture = FORTIFIED_CITY_WITH_CARAVAN_OUTSIDE_eventPicture
 
 	fire_only_once = yes
@@ -1293,7 +1370,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Genoa_Events.18.OPT1
+		name = FEE_Genoa_Events.19.OPT1
 		ai_chance = {
 			factor = 50
 		}
@@ -1306,6 +1383,188 @@ country_event = {
 				name = fee_gen_queen_black_sea
 				duration = -1
 			}
+		}
+	}
+}
+
+# A Crimean Tsar?
+country_event = {
+	id = FEE_Genoa_Events.20
+	title = FEE_Genoa_Events.20.T
+	desc = FEE_Genoa_Events.20.D
+	picture = DIPLOMACY_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = GEN
+			was_tag = GEN
+		}
+		crimea_region = {
+			owned_by = ROOT
+			any_neighbor_province = {
+				OR = {
+					owned_by = MOS
+					owned_by = RUS
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		years = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			save_event_target_as = event_target_fee_genoa
+		}
+	}
+
+	option = {
+		name = FEE_Genoa_Events.20.OPT1
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				ai = yes
+			}
+		}
+
+		add_dip_power = -25
+		add_treasury = -25
+		if = {
+			limit = {
+				exists = RUS
+			}
+			RUS = {
+				country_event = {
+					id = FEE_Genoa_Events.21
+					days = 1
+				}
+			}
+		}
+		else = {
+			MOS = {
+				country_event = {
+					id = FEE_Genoa_Events.21
+					days = 1
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Genoa_Events.20.OPT2
+		ai_chance = {
+			factor = 50
+		}
+
+		add_mercantilism = 5
+		if = {
+			limit = {
+				exists = RUS
+			}
+			add_casus_belli = {
+				type = cb_border_war
+				target = RUS
+				months = 120
+			}
+			add_opinion = {
+				who = RUS
+				modifier = opinion_export_bad
+			}
+			reverse_add_opinion = {
+				who = RUS
+				modifier = opinion_export_bad
+			}
+		}
+		else = {
+			add_casus_belli = {
+				type = cb_border_war
+				target = MOS
+				months = 120
+			}
+			add_opinion = {
+				who = MOS
+				modifier = opinion_export_bad
+			}
+			reverse_add_opinion = {
+				who = MOS
+				modifier = opinion_export_bad
+			}
+		}
+	}
+}
+
+# [FROM.GetAdjective] Embassy
+country_event = {
+	id = FEE_Genoa_Events.21
+	title = FEE_Genoa_Events.21.T
+	desc = FEE_Genoa_Events.21.D
+	picture = DIPLOMACY_SIGNING_eventPicture
+
+	is_triggered_only = yes
+	
+	major = yes
+
+	major_trigger = {
+		tag = event_target:event_target_fee_genoa
+	}
+
+	option = {
+		name = FEE_Genoa_Events.21.OPT1
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				ai = yes
+			}
+		}
+
+		capital_scope = {
+			add_province_modifier = {
+				name = fee_gen_russian_genoese_trade_agreement
+				duration = 3650
+			}
+		}
+		FROM = {
+			capital_scope = {
+				add_province_modifier = {
+					name = fee_gen_genoese_russian_trade_agreement
+					duration = 3650
+				}
+			}
+		}
+		add_opinion = {
+			who = FROM
+			modifier = opinion_export_good
+		}
+		reverse_add_opinion = {
+			who = FROM
+			modifier = opinion_export_good
+		}
+	}
+
+	option = {
+		name = FEE_Genoa_Events.21.OPT2
+		ai_chance = {
+			factor = 50
+		}
+
+		add_casus_belli = {
+			type = cb_border_war
+			target = FROM
+			months = 120
+		}
+		add_opinion = {
+			who = FROM
+			modifier = opinion_export_bad
+		}
+		reverse_add_opinion = {
+			who = FROM
+			modifier = opinion_export_bad
 		}
 	}
 }

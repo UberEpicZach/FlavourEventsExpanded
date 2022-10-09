@@ -52,3 +52,14 @@ fee_gen_queen_black_sea = {
 	local_development_cost = -0.15
 	local_defensiveness = 0.15
 }
+
+fee_gen_russian_genoese_trade_agreement = {
+	province_trade_power_modifier = 0.33
+	local_institution_spread = 0.33
+	local_development_cost = -0.15
+}
+fee_gen_genoese_russian_trade_agreement = {
+	local_manpower_modifier = 0.33
+	local_regiment_cost = -0.33
+	local_development_cost = -0.15
+}
