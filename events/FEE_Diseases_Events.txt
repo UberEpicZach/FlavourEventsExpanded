@@ -3,7 +3,7 @@ namespace = FEE_Diseases_Events
 #########	SYPHILIS	#########
 #########	SYPHILIS	#########
 #########	SYPHILIS	#########
-#Syphilis outbreak in Italy due to the french/coloniser
+#Syphilis outbreak in Italy due to the french/colonizer
 
 # A New Disease?
 country_event = {
@@ -1580,34 +1580,14 @@ country_event = {
 	}
 }
 
-# Slacking the Recruitment
+# Dealing with the Soldiers
 country_event = {
 	id = FEE_Diseases_Events.105
 	title = FEE_Diseases_Events.105.T
 	desc = FEE_Diseases_Events.105.D
 	picture = GENERALS_DISCUSSING_eventPicture
 
-	trigger = {
-		any_owned_province = {
-			OR = {
-				has_province_flag = fee_province_has_syphilis
-				has_province_flag = fee_province_has_syphilis_outbreak
-				has_province_modifier = fee_syphilis_outbreak
-				has_province_modifier = fee_quarantined_syphilis_outbreak
-			}
-		}
-		OR = {
-			NOT = { has_country_flag = fee_syphilis_dealing_troops }
-			had_country_flag = {
-				flag = fee_syphilis_dealing_troops
-				days = 1825
-			}
-		}
-	}
-
-	mean_time_to_happen = {
-		years = 1
-	}
+	is_triggered_only = yes
 
 	immediate = {
 		hidden_effect = {
@@ -1634,11 +1614,11 @@ country_event = {
 			factor = 33
 		}
 
-		custom_tooltip = FEE_SYPHILIS_SLACKING_MANPOWER_TT
 		add_country_modifier = {
 			name = fee_syphilis_troops_contained
-			duration = 1825
+			duration = 3650
 		}
+		custom_tooltip = FEE_SYPHILIS_SLACKING_MANPOWER_TT
 	}
 
 	option = {
@@ -1651,7 +1631,7 @@ country_event = {
 	}
 }
 
-# Army in infected province!
+# Army contracts Syphilis in [event_target_fee_army_province_syphilis_spread.GetName]!
 country_event = {
 	id = FEE_Diseases_Events.106
 	title = FEE_Diseases_Events.106.T
@@ -1659,7 +1639,7 @@ country_event = {
 	picture = PLAGUE_eventPicture
 
 	trigger = {
-		NOT = { has_country_flag = fee_country_can_spread_syphilis }
+		NOT = { has_country_modifier = fee_army_can_spread_syphilis }
 		any_province = {
 			OR = {
 				has_province_flag = fee_province_has_syphilis
