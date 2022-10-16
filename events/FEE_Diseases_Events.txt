@@ -1651,6 +1651,39 @@ country_event = {
 		}
 	}
 
+	mean_time_to_happen = {
+		months = 240
+		modifier = {
+			factor = 0.50
+			NOT = { is_year = 1500 }
+		}
+		modifier = {
+			factor = 1.50
+			is_year = 1500
+			NOT = { is_year = 1550 }
+		}
+		modifier = {
+			factor = 2
+			is_year = 1550
+			NOT = { is_year = 1600 }
+		}
+		modifier = {
+			factor = 3
+			is_year = 1600
+			NOT = { is_year = 1650 }
+		}
+		modifier = {
+			factor = 4
+			is_year = 1650
+			NOT = { is_year = 1700 }
+		}
+		modifier = {
+			factor = 5
+			is_year = 1750
+			NOT = { is_year = 1750 }
+		}
+	}
+
 	immediate = {
 		hidden_effect = {
 			random_province = {
@@ -1669,10 +1702,6 @@ country_event = {
 	}
 
 	goto = event_target_fee_army_province_syphilis_spread
-
-	mean_time_to_happen = {
-		months = 12
-	}
 
 	option = {
 		name = FEE_Diseases_Events.106.OPT1
