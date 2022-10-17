@@ -20,7 +20,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			mil_power = -25
+			mil_power = 25
 		}
 		effect = {
 			country_event = {
