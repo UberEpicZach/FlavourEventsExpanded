@@ -1474,6 +1474,15 @@ country_event = {
 				factor = 20
 				151 = { owned_by = TUR }
 			}
+			modifier = {
+				factor = 20
+				NOT = {
+					army_strength = {
+						who = TUR
+						value = 1
+					}
+				}
+			}
 		}
 
 		add_yearly_manpower = 1
@@ -1620,6 +1629,15 @@ country_event = {
 			modifier = {
 				factor = 2
 				NOT = { navy_size_percentage = 0.50 }
+			}
+			modifier = {
+				factor = 200
+				NOT = {
+					army_strength = {
+						who = TUR
+						value = 0.66
+					}
+				}
 			}
 		}
 
