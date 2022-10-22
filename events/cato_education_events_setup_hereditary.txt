@@ -775,6 +775,7 @@ country_event = {
 					value = 16
 				}
 				heir_available = yes
+				has_heir_flag = heir_started_education
 			}
 			has_ruler_flag = heir_started_education
 		}
