@@ -5,8 +5,8 @@
  FEE_Fairs_Events.1.OPT2: "I want to save Game Performance."
 
  FEE_Fairs_Events.2.T: "Hidden Event to Select the Trading Fair"
- FEE_Fairs_Events.2.D: "You should not read this event, so if you do something went wrong, although it might have been just enabled only for debugging reason still, please, report it to Melvasul/Dr.Pizza of the Expanded Mod Family. \n\nThe sole reason for the existence of this event is choosing which (owned) province will host the next trading fair."
- FEE_Fairs_Events.2.OPT1: "Report the error :T."
+ FEE_Fairs_Events.2.D: "You should not read this event, so if you do something went wrong, although it might have been just enabled only for debugging reasons still, please, report it to Melvasul/Dr.Pizza of the Expanded Mod Family. \n\nThe sole reason for the existence of this event is choosing which (owned) province will host the next trading fair."
+ FEE_Fairs_Events.2.OPT1: "Report the error, please."
 
  FEE_Fairs_Events.3.T: "Trading Fair of [event_target_fee_fair_province.GetName]"
  FEE_Fairs_Events.3.D: "Finally a trading fair has reached this wonderful city and will stay here for 5 years attracting even more people both to trade and stay here!"
@@ -31,7 +31,7 @@
  FEE_Fairs_Events.7.OPT1: "Let us see the report."
 
  FEE_Fairs_Events.2000.T: "Hidden Event to Cycle through events"
- FEE_Fairs_Events.2000.D: "You should not read this event, so if you do something went wrong, although it might have been just enabled only for debugging reason still, please, report it to Melvasul/Dr.Pizza of the Expanded Mod Family."
+ FEE_Fairs_Events.2000.D: "You should not read this event, so if you do something went wrong, although it might have been just enabled only for debugging reasons still, please, report it to Melvasul/Dr.Pizza of the Expanded Mod Family."
  FEE_Fairs_Events.2000.OPT1: "I will attend it."
 
  FEE_Fairs_Events.3000.T: "Invitation to the trading Fair"
@@ -121,16 +121,16 @@
  FEE_Fairs_Events.7001.OPT2: "The more the merrier."
 
  FEE_Fairs_Events.7002.T: "Invitation from [From.GetName]"
- FEE_Fairs_Events.7002.D: "Sire, I'm a humble servant of [From.GetName] which is hosting a wonderful banquet at his city while a trading caravan has arrived in the beloved square of the city, will you come?"
+ FEE_Fairs_Events.7002.D: "Sire, I'm a humble servant of [From.GetName] which is hosting a wonderful banquet in his city while a trading caravan has arrived in the beloved square of the city, will you come?"
  FEE_Fairs_Events.7002.OPT1: "Marvellous, let us celebrate."
  FEE_Fairs_Events.7002.OPT2: "It might be a trap, never."
 
  FEE_Fairs_Events.7003.T: "[From.GetName] has accepted our invitation"
- FEE_Fairs_Events.7003.D: "The dark gates were swung open. The horsemen entered, walking in file behind their guide. They found a broad path, paved with hewn stones, now winding upward, now climbing in short flights of well-laid steps. Many houses were built of elegant bricks and many dark doors passed. Besides the way in a stone channel, a stream of clear water flowed, sparkling and chattering. The great host of the numerous servants escorting [From.owner.GetName] now opened in the great square outside our palace while our men have prepared their accommodation in the palace."
+ FEE_Fairs_Events.7003.D: "The dark gates were swung open. The horsemen entered, walking in file behind their guide. They found a broad path, paved with hewn stones, now winding upward, now climbing in short flights of well-laid steps. Many houses were built of elegant bricks and many dark doors passed. Besides the way in a stone channel, a stream of clear water flowed, sparkling and chattering. The great host of the numerous servants escorting [From.Owner.GetName] now opened in the great square outside our palace while our men have prepared their accommodation in the palace."
  FEE_Fairs_Events.7003.OPT1: "Marvellous, let them come in."
 
  FEE_Fairs_Events.7004.T: "[From.GetName] has declined our invitation"
- FEE_Fairs_Events.7004.D: "Sadly [From.GetName] has decided to no join our banquet, in fear of it being an excuse for a trap like a red wedding."
+ FEE_Fairs_Events.7004.D: "Sadly [From.GetName] has decided to not join our banquet, in fear of it being an excuse for a trap like a red wedding."
  FEE_Fairs_Events.7004.OPT1: "A treachery?"
 
  #Estate Modifiers
@@ -165,7 +165,7 @@
  feeTradingFairLevel: "Trading Fair Level"
 
  #Tooltips
- FEE_FAIRS_STARTING_TT: "Up to once every §Y15 Years§! a §GTrading Fair§! will be hosted in an owned province with a §MCenter of Trade§! of any level. \nA fair can return in the same province only once every §Y20 years.§!\n\nTrading Fairs will spawn until §RGlobal Trade§!."
+ FEE_FAIRS_STARTING_TT: "Up to once every §Y15 Years§! a §GTrading Fair§! will be hosted in an owned province with a §MCenter of Trade§! of any level. \nA fair can return to the same province only once every §Y20 years.§!\n\nTrading Fairs will spawn until §RGlobal Trade§!."
  FAIRS_ENABLE_TT: "You will §GEnable§! the Trading Fairs."
  FEE_FAIRS_DISABLE_TT: "You will §RDisable§! the §GTrading Fairs§! thus saving some performance in the game, in exchange for the loss of favour."
  FEE_FAIRS_CHOSE_PROVINCE_TT: "The Trading Caravans and Fairs have chosen [event_target_fee_fair_province.GetName] to host the next fair!"
