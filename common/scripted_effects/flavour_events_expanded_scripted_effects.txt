@@ -7,11 +7,33 @@ change_religious_influence_equivalent_fee = {
 		add_papal_influence = $add$
 		add_church_power = $add$
 		add_fervor = $add$
-		add_patriarch_authority = 0.$add$
 		add_doom = $add$
 		add_karma = $add$
 		add_authority = $add$
-		add_piety = 0.$add$
+		if = {
+			limit = {
+				variable_arithmetic_trigger = {
+					export_to_variable = { which = temp value = $add$ }
+					check_variable = { which = temp value = 100 }
+				}
+			}
+			add_patriarch_authority = 1
+			add_piety = 1
+		}
+		else_if = {
+			limit = {
+				variable_arithmetic_trigger = {
+					export_to_variable = { which = temp value = $add$ }
+					check_variable = { which = temp value = 10 }
+				}
+			}
+			add_patriarch_authority = 0.$add$
+			add_piety = 0.$add$
+		}
+		else = {
+			add_patriarch_authority = 0.0$add$
+			add_piety = 0.0$add$
+		}
 		if = {
 			limit = {
 				religion = confucianism
@@ -28,11 +50,33 @@ change_religious_influence_equivalent_fee = {
 		add_papal_influence = -$remove$
 		add_church_power = -$remove$
 		add_fervor = -$remove$
-		add_patriarch_authority = -0.$remove$
 		add_doom = -$remove$
 		add_karma = -$remove$
 		add_authority = -$remove$
-		add_piety = -0.$remove$
+		if = {
+			limit = {
+				variable_arithmetic_trigger = {
+					export_to_variable = { which = temp value = $remove$ }
+					check_variable = { which = temp value = 100 }
+				}
+			}
+			add_patriarch_authority = -1
+			add_piety = -1
+		}
+		else_if = {
+			limit = {
+				variable_arithmetic_trigger = {
+					export_to_variable = { which = temp value = $remove$ }
+					check_variable = { which = temp value = 10 }
+				}
+			}
+			add_patriarch_authority = -0.$remove$
+			add_piety = -0.$remove$
+		}
+		else = {
+			add_patriarch_authority = -0.0$remove$
+			add_piety = -0.0$remove$
+		}
 		if = {
 			limit = {
 				religion = confucianism
