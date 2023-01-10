@@ -3791,7 +3791,7 @@ country_event = {
 	mean_time_to_happen = {
 		years = 2
 		modifier = {
-			factor = 3
+			factor = 5
 			has_country_flag = has_competent_doctors
 		}
 	}
@@ -3813,19 +3813,32 @@ country_event = {
 			factor = 50
 		}
 
-		random_list = {
-			25 = { kill_ruler = yes }
-			75 = { }
+		if = {
+			limit = {
+				uses_republican_tradition = yes
+				culture_group = latin
+				112 = {
+					is_capital_of = ROOT
+				}
+			}
+			random_list = {
+				50 = { kill_ruler = yes }
+				50 = { }
+			}
+			add_mercantilism = -3
 		}
 		add_yearly_sailors = -2
 		add_yearly_manpower = -1
-		add_mercantilism = -3
 		112 = {
 			set_province_flag = fee_ven_plague_1485
 			add_base_tax = -1
 			add_base_production = -1
 			add_base_manpower = -1
 			add_devastation = 75
+			add_province_modifier = {
+				name = influenza
+				duration = 1825
+			}
 			every_neighbor_province = {
 				random_list = {
 					33 = {
@@ -3833,6 +3846,10 @@ country_event = {
 						add_base_production = -1
 						add_base_manpower = -1
 						add_devastation = 25
+						add_province_modifier = {
+							name = influenza
+							duration = 365
+						}
 					}
 					66 = { }
 				}
