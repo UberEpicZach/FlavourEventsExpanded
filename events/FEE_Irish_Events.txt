@@ -222,7 +222,6 @@ country_event = {
 
 	option = {
 		name = FEE_Irish_Events.4.OPT1
-
 		ai_chance = {
 			factor = 25
 		}
@@ -257,9 +256,9 @@ country_event = {
 			}
 		}
 	}
+
 	option = {
 		name = FEE_Irish_Events.4.OPT2
-
 		ai_chance = {
 			factor = 25
 		}
@@ -295,13 +294,21 @@ country_event = {
 			}
 		}
 	}
+
 	option = {
 		name = FEE_Irish_Events.4.OPT3
-
+		trigger = {
+			is_at_war = no
+		}
 		ai_chance = {
 			factor = 25
 		}
 
+		add_treasury = 200
+		add_country_modifier = {
+			name = irish_french_overlordship
+			duration = 9125
+		}
 		random_country = {
 			limit = {
 				capital_scope = {
@@ -318,27 +325,32 @@ country_event = {
 			}
 			create_march = ROOT
 		}
-		every_province = {
+		munster_area = {
 			limit = {
-				OR = {
-					area = munster_area
-					area = connacht_area
-					area = leinster_area
-					area = ulster_area
-				}
-				NOT = {
-					country_or_non_sovereign_subject_holds = ROOT
-				}
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 			add_core = ROOT
 		}
-		add_treasury = 200
-
-		add_country_modifier = {
-			name = irish_french_overlordship
-			duration = 9125
+		connacht_area = {
+			limit = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			add_core = ROOT
+		}
+		leinster_area = {
+			limit = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			add_core = ROOT
+		}
+		ulster_area = {
+			limit = {
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			add_core = ROOT
 		}
 	}
+
 	option = {
 		name = FEE_Irish_Events.4.OPT4
 
@@ -346,10 +358,10 @@ country_event = {
 			factor = 25
 		}
 
+		add_prestige = 15
 		add_country_modifier = {
 			name = irish_fierce_independence
 			duration = 9125
 		}
-		add_prestige = 15
 	}
 }
