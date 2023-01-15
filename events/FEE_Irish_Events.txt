@@ -192,6 +192,7 @@ country_event = {
 
 	trigger = {
 		primary_culture = irish
+		is_free_or_tributary_trigger = yes
 		capital_scope = {
 			OR = {
 				area = munster_area
@@ -300,6 +301,14 @@ country_event = {
 		trigger = {
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
+			any_country = {
+				limit = {
+					capital_scope = {
+						region = france_region
+					}
+					is_free_or_tributary_trigger = yes
+				}
+			}
 		}
 		ai_chance = {
 			factor = 25
@@ -315,6 +324,7 @@ country_event = {
 				capital_scope = {
 					region = france_region
 				}
+				is_free_or_tributary_trigger = yes
 				NOT = {
 					any_country = {
 						capital_scope = {
