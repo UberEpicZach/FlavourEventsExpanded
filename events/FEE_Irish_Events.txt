@@ -299,6 +299,7 @@ country_event = {
 		name = FEE_Irish_Events.4.OPT3
 		trigger = {
 			is_at_war = no
+			is_free_or_tributary_trigger = yes
 		}
 		ai_chance = {
 			factor = 25
