@@ -2,7 +2,7 @@
 
 namespace = FEE_Renaissance_Events
 
-# Start renaissance in countries that should have it
+#The Italian Renaissance
 country_event = {
 	id = FEE_Renaissance_Events.1
 	title = FEE_Renaissance_Events.1.T
@@ -12,7 +12,8 @@ country_event = {
 	trigger = {
 		culture_group = latin
 		NOT = { has_country_flag = fee_renaissance_flag }
-		NOT = { is_year = 1610 }
+		is_year = 1400
+		NOT = { is_year = 1560 }
 		NOT = { has_country_flag = fee_had_renaissance_flag }
 	}
 
@@ -24,7 +25,7 @@ country_event = {
 	}
 }
 
-#Renaissance spreads
+#Renaissance Influences in $COUNTRY$
 country_event = {
 	id = FEE_Renaissance_Events.2
 	title = FEE_Renaissance_Events.2.T
@@ -32,14 +33,15 @@ country_event = {
 	picture = IMPORTANT_STATUE_eventPicture
 
 	trigger = {
-		NOT = { is_year = 1590 }
-		NOT = { has_country_flag = fee_renaissance_flag}
+		is_year = 1400
+		NOT = { is_year = 1560 }
+		NOT = { has_country_flag = fee_renaissance_flag }
 		has_institution = renaissance
 		NOT = { has_country_flag = fee_had_renaissance_flag }
 	}
 
 	mean_time_to_happen = {
-		days = 1
+		months = 1
 	}
 
 	option = {
@@ -50,7 +52,7 @@ country_event = {
 	}
 }
 
-# End of renaissance influences
+#End of Renaissance Culture
 country_event = {
 	id = FEE_Renaissance_Events.3
 	title = FEE_Renaissance_Events.3.T
@@ -59,7 +61,7 @@ country_event = {
 
 	trigger = {
 		has_country_flag = fee_renaissance_flag
-		is_year = 1580
+		is_year = 1560
 	}
 
 	mean_time_to_happen = {
@@ -86,7 +88,7 @@ country_event = {
 	}
 }
 
-# Great Building Constructed in the Renaissance Style
+#A Public Building Raised in the Renaissance Style
 province_event = {
 	id = FEE_Renaissance_Events.4
 	title = FEE_Renaissance_Events.4.T
@@ -162,7 +164,7 @@ province_event = {
 	}
 }
 
-# Great renaissance library
+#Large Renaissance Library
 country_event = {
 	id = FEE_Renaissance_Events.5
 	title = FEE_Renaissance_Events.5.T
@@ -186,7 +188,7 @@ country_event = {
 	}
 }
 
-# Renaissance cartographer
+#Renaissance Cartographer
 country_event = {
 	id = FEE_Renaissance_Events.6
 	title = FEE_Renaissance_Events.6.T
@@ -213,7 +215,7 @@ country_event = {
 	}
 }
 
-# Writing of a military manual in our language
+#Military Manual Written in the Vernacular
 country_event = {
 	id = FEE_Renaissance_Events.7
 	title = FEE_Renaissance_Events.7.T
@@ -240,7 +242,7 @@ country_event = {
 	}
 }
 
-# Renaissance writer
+#National Writer Produces Renaissance Masterpiece
 country_event = {
 	id = FEE_Renaissance_Events.8
 	title = FEE_Renaissance_Events.8.T
@@ -265,7 +267,7 @@ country_event = {
 	}
 }
 
-# Renaissance polymath
+#A Renaissance Genius
 country_event = {
 	id = FEE_Renaissance_Events.9
 	title = FEE_Renaissance_Events.9.T
@@ -327,7 +329,7 @@ country_event = {
 	}
 }
 
-# Renaissance writer produces theological treatise
+#Renaissance Writer Produces Theological Treatise
 country_event = {
 	id = FEE_Renaissance_Events.10
 	title = FEE_Renaissance_Events.10.T
@@ -362,7 +364,7 @@ country_event = {
 	}
 }
 
-# Claim discovered to be false!
+#Ancient Claim Revealed as False!
 country_event = {
 	id = FEE_Renaissance_Events.11
 	title = FEE_Renaissance_Events.11.T
@@ -427,7 +429,7 @@ country_event = {
 }
 
 
-# Papal Legate Concedes to Humanist
+#Papal Legate Concedes to Leading Humanist
 country_event = {
 	id = FEE_Renaissance_Events.12
 	title = FEE_Renaissance_Events.12.T
