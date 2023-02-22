@@ -19,6 +19,7 @@ country_event = {
 		NAP = { valid_for_personal_unions_trigger = yes }
 		NOT = { war_with = NAP }
 		NOT = { truce_with = NAP }
+		NOT = { alliance_with = NAP }
 	}
 
 	mean_time_to_happen = {
@@ -537,6 +538,7 @@ country_event = {
 			is_free_or_tributary_trigger = yes
 			NOT = { war_with = ROOT }
 			NOT = { truce_with = ROOT }
+			NOT = { alliance_with = ROOT }
 		}
 	}
 
@@ -778,6 +780,7 @@ country_event = {
 		VEN = {
 			NOT = { war_with = ROOT }
 			NOT = { truce_with = ROOT }
+			NOT = { alliance_with = ROOT }
 			is_free_or_tributary_trigger = yes
 			num_of_owned_provinces_with = {
 				value = 8
@@ -1160,6 +1163,7 @@ country_event = {
 			is_free_or_tributary_trigger = yes
 			NOT = { war_with = ROOT }
 			NOT = { truce_with = ROOT }
+			NOT = { alliance_with = ROOT }
 		}
 	}
 
@@ -1418,6 +1422,7 @@ country_event = {
 			is_free_or_tributary_trigger = yes
 			NOT = { war_with = ROOT }
 			NOT = { truce_with = ROOT }
+			NOT = { alliance_with = ROOT }
 		}
 	}
 
@@ -1738,6 +1743,7 @@ country_event = {
 			is_free_or_tributary_trigger = yes
 			NOT = { war_with = ROOT }
 			NOT = { truce_with = ROOT }
+			NOT = { alliance_with = ROOT }
 		}
 	}
 
@@ -1942,6 +1948,7 @@ country_event = {
 			is_free_or_tributary_trigger = yes
 			NOT = { war_with = ROOT }
 			NOT = { truce_with = ROOT }
+			NOT = { alliance_with = ROOT }
 		}
 	}
 
@@ -2246,6 +2253,7 @@ country_event = {
 			is_free_or_tributary_trigger = yes
 			NOT = { war_with = ROOT }
 			NOT = { truce_with = ROOT }
+			NOT = { alliance_with = ROOT }
 		}
 	}
 
