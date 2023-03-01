@@ -101,11 +101,11 @@ country_event = {
 		add_years_of_income = 0.5
 		add_opinion = {
 			who = FRA
-			modifier = fee_swi_denied_troops_our_army
+			modifier = fee_swi_allowed_troops_our_army
 		}
 		reverse_add_opinion = {
 			who = FRA
-			modifier = fee_swi_denied_troops_our_army
+			modifier = fee_swi_allowed_troops_our_army
 		}
 	}
 
