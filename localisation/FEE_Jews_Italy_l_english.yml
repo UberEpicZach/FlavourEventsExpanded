@@ -47,14 +47,10 @@
  #Estate Modifiers
 
  #Event Modifiers
- fee_jews_value: "Jewish Country Level"
- desc_fee_jews_value: "The country level of Jewish Acceptance is: §G[Root.FEE_JEW_APPROVE.GetValue]§! \nThe country level of Jewish Opposition is: §R[Root.FEE_JEW_OPPOSE.GetValue]§!"
- italian_jew_province: "Jewish Community"
- desc_italian_jew_province: "The current level of Jewish Acceptance is: §G[Root.FEE_JEW_CITY_APPROVE.GetValue]§! \nThe city level of Jewish Opposition is: §R[Root.FEE_JEW_CITY_OPPOSE.GetValue]§!"
  italian_jew_allowed_stay: "Jewish-Italian Community"
- desc_italian_jew_allowed_stay: "The current level of Jewish Acceptance is: §G[Root.FEE_JEW_CITY_APPROVE.GetValue]§! \nThe city level of Jewish Opposition is: §R[Root.FEE_JEW_CITY_OPPOSE.GetValue]§!"
+ desc_italian_jew_allowed_stay: "A local jewish community has settled into the city and helped it grow"
  italian_jew_allowed_stay_2: "Reneewed Jewish-Italian Community"
- desc_italian_jew_allowed_stay_2: "The current level of Jewish Acceptance is: §G[Root.FEE_JEW_CITY_APPROVE.GetValue]§! \nThe city level of Jewish Opposition is: §R[Root.FEE_JEW_CITY_OPPOSE.GetValue]§!"
+ desc_italian_jew_allowed_stay_2: "A local jewish community has settled into the city and helped it grow"
  italian_jew_stamperia_naples: "Stamperia di Napoli"
  desc_italian_jew_stamperia_naples: "Founded in 1473 it has been since then the first of its kind in the whole Kingdom of Sicily"
 
