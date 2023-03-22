@@ -15,3 +15,14 @@ fee_partition_of_poland_is_valid_neighbor_country = {
 	NOT = { alliance_with = $disaster_target$ }
 	NOT = { truce_with = $disaster_target$ }
 }
+
+fee_is_was_nap_sic = {
+	OR = {
+		tag = NAP
+		tag = TTS
+		tag = SIC
+		was_tag = NAP
+		was_tag = SIC
+		was_tag = TTS
+	}
+}

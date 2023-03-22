@@ -9,11 +9,9 @@ country_event = {
 
 	fire_only_once = yes
 	trigger = {
-		OR = {
-			tag = NAP
-			tag = TTS
-			was_tag = NAP
-		}
+		is_year = 1412
+		NOT = { is_year = 1458 }
+		fee_is_was_nap_sic = yes
 		has_ruler = "Alfons V"
 	}
 
@@ -58,7 +56,7 @@ country_event = {
 			religion = catholic
 			cost_multiplier = 0.33
 		}
-		custom_tooltip = Accademia_NAP_TT
+		custom_tooltip = NAP_ACCADEMY_BECCADELLI_TT
 		set_country_flag = nap_antonio_beccadelli
 	}
 
@@ -81,21 +79,17 @@ country_event = {
 			who = BYZ
 			modifier = fee_nap_recoinciliation
 		}
+		reverse_add_opinion = {
+			who = BYZ
+			modifier = fee_nap_recoinciliation
+		}
 		add_opinion = {
 			who = PAP
 			modifier = fee_nap_recoinciliation
 		}
-		BYZ = {
-			add_opinion = {
-				who = ROOT
-				modifier = fee_nap_recoinciliation
-			}
-		}
-		PAP = {
-			add_opinion = {
-				who = ROOT
-				modifier = fee_nap_recoinciliation
-			}
+		reverse_add_opinion = {
+			who = PAP
+			modifier = fee_nap_recoinciliation
 		}
 	}
 }
@@ -110,11 +104,7 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
 		is_year = 1447
-		OR = {
-			tag = NAP
-			tag = TTS
-			was_tag = NAP
-		}
+		fee_is_was_nap_sic = yes
 		development_in_provinces = {
 			value = 75
 			OR = {
@@ -123,22 +113,18 @@ country_event = {
 				area = western_sicily_area
 				area = apulia_area
 				area = central_italy_area
+				area = calabria_area
 			}
 		}
-		OR = {
-			any_owned_province = {
+		any_owned_province = {
+			OR = {
 				area = central_italy_area
-				OR = {
-					num_of_times_improved = 3
-					base_production = 7
-				}
-			}
-			any_owned_province = {
 				area = apulia_area
-				OR = {
-					num_of_times_improved = 3
-					base_production = 7
-				}
+				area = calabria_area
+			}
+			OR = {
+				num_of_times_improved = 3
+				base_production = 7
 			}
 		}
 	}
@@ -147,7 +133,7 @@ country_event = {
 		name = FEE_Naples_Events.2.OPT1
 
 		add_years_of_owned_provinces_production_income = {
-			years = 5
+			years = 10
 			trigger = {
 				OR = {
 					area = naples_area
@@ -155,31 +141,12 @@ country_event = {
 					area = western_sicily_area
 					area = apulia_area
 					area = central_italy_area
+					area = calabria_area
 				}
 			}
 		}
-		naples_area = {
-			add_base_production = 1
-			add_permanent_province_modifier = {
-				name = fee_nap_transumanza
-				duration = -1
-			}
-		}
-		sicily_area = {
-			add_base_production = 1
-			add_permanent_province_modifier = {
-				name = fee_nap_transumanza
-				duration = -1
-			}
-		}
-		western_sicily_area = {
-			add_base_production = 1
-			add_permanent_province_modifier = {
-				name = fee_nap_transumanza
-				duration = -1
-			}
-		}
 		apulia_area = {
+			limit = { country_or_non_sovereign_subject_holds = ROOT }
 			add_base_production = 1
 			add_permanent_province_modifier = {
 				name = fee_nap_transumanza
@@ -187,6 +154,7 @@ country_event = {
 			}
 		}
 		central_italy_area = {
+			limit = { country_or_non_sovereign_subject_holds = ROOT }
 			add_base_production = 1
 			add_permanent_province_modifier = {
 				name = fee_nap_transumanza
@@ -209,16 +177,16 @@ country_event = {
 		exists = ALB
 		OR = {
 			AND = {
-				OR = {
-					tag = NAP
-					tag = TTS
-					was_tag = NAP
-				}
+				fee_is_was_nap_sic = yes
 				is_free_or_tributary_trigger = yes
 			}
 			AND = {
 				tag = ARA
-				overlord_of = NAP
+				OR = {
+					overlord_of = NAP
+					overlord_of = SIC
+					overlord_of = TTS
+				}
 			}
 		}
 	}
@@ -325,12 +293,8 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
 		is_year = 1458
-		OR = {
-			tag = NAP
-			tag = TTS
-			was_tag = NAP
-		}
-		owns_core_province = 121
+		fee_is_was_nap_sic = yes
+		owns = 121
 		121 = { num_of_times_improved = 2 }
 		OR = {
 			theologian = 2
@@ -376,7 +340,7 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
 		is_year = 1484
-		owns_core_province = 121
+		owns = 121
 		121 = {
 			base_manpower = 10
 		}
@@ -414,14 +378,11 @@ country_event = {
 
 	fire_only_once = yes
 	trigger = {
-		is_year = 1424
-		OR = {
-			tag = NAP
-			tag = TTS
-			was_tag = NAP
-		}
+		is_year = 1440
+		fee_is_was_nap_sic = yes
 		NOT = { has_ruler = "Alfons V" }
 		has_ruler = yes
+		NOT = { is_year = 1465 }
 	}
 
 	mean_time_to_happen = {
@@ -449,9 +410,7 @@ country_event = {
 		}
 
 		if = {
-			limit = {
-				has_consort = yes
-			}
+			limit = { has_consort = yes }
 			remove_consort = yes
 		}
 		define_consort = {
@@ -479,11 +438,7 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
 		is_year = 1416
-		OR = {
-			tag = NAP
-			tag = TTS
-			was_tag = NAP
-		}
+		fee_is_was_nap_sic = yes
 		NOT = { has_ruler = "Alfons V" }
 		NOT = { is_year = 1459 }
 		has_estate = estate_nobles
@@ -492,11 +447,11 @@ country_event = {
 	option = {
 		name = FEE_Naples_Events.8.OPT1
 
-		custom_tooltip = nap_pre_conjury_tt
+		custom_tooltip = NAP_PRE_CONJURY_TT
 	}
 }
 
-#Barony Conjury 1
+#Congiura dei baroni
 country_event = {
 	id = FEE_Naples_Events.9
 	title = FEE_Naples_Events.9.T
@@ -505,11 +460,7 @@ country_event = {
 
 	fire_only_once = yes
 	trigger = {
-		OR = {
-			tag = NAP
-			tag = TTS
-			was_tag = NAP
-		}
+		fee_is_was_nap_sic = yes
 		has_estate = estate_nobles
 		NOT = {
 			estate_loyalty = {
@@ -539,6 +490,20 @@ country_event = {
 		name = FEE_Naples_Events.9.OPT1
 
 		add_stability = -1
+		add_country_modifier = {
+			name = fee_nap_nobles_control
+			duration = -1
+		}
+		add_estate_influence_modifier = {
+			estate = estate_nobles
+			influence = 35
+			duration = 7300
+		}
+		change_estate_land_share = {
+			estate = estate_nobles
+			share = 25
+		}
+		change_mil = -1
 		if = {
 			limit = {
 				NOT = {
@@ -695,11 +660,7 @@ country_event = {
 
 	fire_only_once = yes
 	trigger = {
-		OR = {
-			tag = NAP
-			tag = TTS
-			was_tag = NAP
-		}
+		fee_is_was_nap_sic = yes
 		has_country_flag = nap_barony_first_risen
 		NOT = { num_of_rebel_controlled_provinces = 1 }
 		NOT = { num_of_rebel_armies = 1 }
@@ -713,13 +674,18 @@ country_event = {
 		name = FEE_Naples_Events.10.OPT1
 
 		add_stability_or_adm_power = yes
+		change_mil = 2
+		add_ruler_modifier = {
+			name = fee_nap_ruled_over_barons
+			duration = -1
+		}
 		add_country_modifier = {
 			name = fee_nap_twenty_years_prosperity
 			duration = 7300
 		}
 		add_estate_loyalty_modifier = {
 			estate = estate_nobles
-			loyalty = -30
+			loyalty = -35
 			desc = nap_nobles_restrained
 			duration = 7300
 		}
@@ -733,21 +699,6 @@ country_event = {
 			estate = estate_nobles
 			share = -33
 		}
-		custom_tooltip = NAPLES_TWENTY_YEARS_PROSPERITY
-		hidden_effect = {
-			every_owned_province = {
-				if = {
-					limit = {
-						has_dlc = "Mandate of Heaven"
-					}
-					add_devastation = -50
-					add_prosperity = 15
-				}
-				else = {
-					add_devastation = -50
-				}
-			}
-		}
 	}
 }
 
@@ -760,11 +711,7 @@ country_event = {
 
 	fire_only_once = yes
 	trigger = {
-		OR = {
-			tag = NAP
-			tag = TTS
-			was_tag = NAP
-		}
+		fee_is_was_nap_sic = yes
 		is_year = 1465
 		NOT = { has_country_flag = nap_barony_first_risen }
 	}
@@ -773,33 +720,31 @@ country_event = {
 		name = FEE_Naples_Events.11.OPT1
 
 		add_stability_or_adm_power = yes
+		change_adm = 1
+		change_dip = 1
+		add_ruler_modifier = {
+			name = fee_nap_ruled_over_barons
+			duration = -1
+		}
 		add_country_modifier = {
 			name = fee_nap_twenty_years_prosperity
 			duration = 7300
 		}
 		add_estate_loyalty_modifier = {
 			estate = estate_nobles
-			desc = nap_nobles_happy
-			loyalty = 20
+			loyalty = 30
+			desc = nap_nobles_restrained
 			duration = 7300
 		}
-		custom_tooltip = NAPLES_TWENTY_YEARS_PROSPERITY
-		hidden_effect = {
-			every_owned_province = {
-				limit = {
-					devastation = 1
-				}
-				if = {
-					limit = {
-						has_dlc = "Mandate of Heaven"
-					}
-					add_devastation = -50
-					add_prosperity = 15
-				}
-				else = {
-					add_devastation = -50
-				}
-			}
+		add_estate_influence_modifier = {
+			estate = estate_nobles
+			desc = nap_nobles_restrained
+			influence = -25
+			duration = 7300
+		}
+		change_estate_land_share = {
+			estate = estate_nobles
+			share = -50
 		}
 	}
 }
@@ -813,12 +758,10 @@ country_event = {
 
 	fire_only_once = yes
 	trigger = {
-		OR = {
-			tag = NAP
-			tag = TTS
-			was_tag = NAP
-		}
+		fee_is_was_nap_sic = yes
+		is_year = 1459
 		has_country_flag = nap_barony_first_risen
+		NOT = { is_year = 1464 }
 	}
 
 	mean_time_to_happen = {
@@ -856,11 +799,7 @@ country_event = {
 
 	fire_only_once = yes
 	trigger = {
-		OR = {
-			tag = NAP
-			tag = TTS
-			was_tag = NAP
-		}
+		fee_is_was_nap_sic = yes
 		is_year = 1466
 		NOT = { is_year = 1486 }
 		has_estate = estate_nobles
@@ -873,18 +812,7 @@ country_event = {
 	option = {
 		name = FEE_Naples_Events.13.OPT1
 
-		custom_tooltip = nap_pre_conjury_2_tt
-		#hidden_effect = {
-		#	country_event = {
-		#		id = FEE_Naples_Events.14
-		#	}
-		#	country_event = {
-		#		id = FEE_Naples_Events.15
-		#	}
-		#	country_event = {
-		#		id = FEE_Naples_Events.16
-		#	}
-		#}
+		custom_tooltip = NAP_PRE_CONJURY_TT
 	}
 }
 
@@ -897,11 +825,7 @@ country_event = {
 
 	fire_only_once = yes
 	trigger = {
-		OR = {
-			tag = NAP
-			tag = TTS
-			was_tag = NAP
-		}
+		fee_is_was_nap_sic = yes
 		has_estate = estate_nobles
 		NOT = {
 			estate_loyalty = {
@@ -920,7 +844,11 @@ country_event = {
 	option = {
 		name = FEE_Naples_Events.14.OPT1
 
-		add_stability = -1
+		add_stability = -2
+		add_country_modifier = {
+			name = fee_nap_nobles_control
+			duration = -1
+		}
 		if = {
 			limit = {
 				owns = 2983
@@ -1283,11 +1211,7 @@ country_event = {
 
 	fire_only_once = yes
 	trigger = {
-		OR = {
-			tag = NAP
-			tag = TTS
-			was_tag = NAP
-		}
+		fee_is_was_nap_sic = yes
 		has_country_flag = nap_barony_second_risen
 		NOT = { num_of_rebel_controlled_provinces = 1 }
 		NOT = { num_of_rebel_armies = 1 }
@@ -1304,11 +1228,15 @@ country_event = {
 		}
 
 		add_stability_or_adm_power = yes
-		add_splendor = 50
-		add_adm_power = 50
+		add_prestige_or_monarch_power = { amount = 50 }
+		change_mil = 2
 		change_estate_land_share = {
 			estate = estate_nobles
 			share = -100
+		}
+		add_ruler_modifier = {
+			name = fee_nap_ruled_over_barons
+			duration = -1
 		}
 	}
 }
@@ -1322,11 +1250,7 @@ country_event = {
 
 	fire_only_once = yes
 	trigger = {
-		OR = {
-			tag = NAP
-			tag = TTS
-			was_tag = NAP
-		}
+		fee_is_was_nap_sic = yes
 		is_year = 1487
 		NOT = { has_country_flag = nap_barony_second_risen }
 	}
@@ -1339,34 +1263,23 @@ country_event = {
 		name = FEE_Naples_Events.16.OPT1
 
 		add_stability_or_adm_power = yes
-		custom_tooltip = NAPLES_TWENTY_YEARS_PROSPERITY
+		change_adm = 1
+		change_dip = 1
+		add_prestige_or_monarch_power = { amount = 50 }
 		add_estate_loyalty_modifier = {
 			estate = estate_nobles
 			desc = nap_nobles_happy
 			loyalty = 20
 			duration = 7300
 		}
-		hidden_effect = {
-			every_owned_province = {
-				limit = {
-					devastation = 25
-				}
-				if = {
-					limit = {
-						has_dlc = "Mandate of Heaven"
-					}
-					add_devastation = -50
-					add_prosperity = 15
-				}
-				else = {
-					add_devastation = 50
-				}
-			}
+		add_ruler_modifier = {
+			name = fee_nap_ruled_over_barons
+			duration = -1
 		}
 	}
 }
 
-#The Dream of Ladislao I
+#Dream of Ladislao I
 country_event = {
 	id = FEE_Naples_Events.17
 	title = FEE_Naples_Events.17.T
@@ -1376,11 +1289,7 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
 		is_year = 1377
-		OR = {
-			tag = NAP
-			tag = TTS
-			was_tag = NAP
-		}
+		fee_is_was_nap_sic = yes
 		is_free_or_tributary_trigger = yes
 	}
 
@@ -1396,16 +1305,20 @@ country_event = {
 
 		tuscany_area = {
 			limit = {
-					NOT = { owned_by = ROOT }
-					NOT = { is_core = ROOT }
-				}
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+				NOT = { is_empty = yes }
+				NOT = { is_wasteland = yes }
+			}
 			add_permanent_claim = ROOT
 		}
 		lazio_area = {
 			limit = {
-					NOT = { owned_by = ROOT }
-					NOT = { is_core = ROOT }
-				}
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+				NOT = { is_empty = yes }
+				NOT = { is_wasteland = yes }
+			}
 			add_permanent_claim = ROOT
 		}
 	}
@@ -1433,11 +1346,7 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
 		is_year = 1492
-		OR = {
-			tag = NAP
-			tag = SIC
-			tag = TTS
-		}
+		fee_is_was_nap_sic = yes
 		is_free_or_tributary_trigger = yes
 		NOT = { has_country_flag = formed_italy_flag }
 		adm_tech = 7
@@ -1525,10 +1434,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		OR = {
-			tag = NAP
-			was_tag = NAP
-		}
+		fee_is_was_nap_sic = yes
 		is_year = 1520
 		NOT = { is_year = 1560 }
 	}
@@ -1575,13 +1481,10 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		OR = {
-			tag = NAP
-			was_tag = NAP
-		}
+		fee_is_was_nap_sic = yes
 		is_year = 1530
 		NOT = { is_year = 1570 }
-		owns_core_province = 121
+		owns = 121
 	}
 
 	mean_time_to_happen = {
@@ -1637,11 +1540,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		OR = {
-			tag = NAP
-			was_tag = NAP
-		}
-		owns_core_province = 121
+		owns = 121
 		is_year = 1750
 	}
 
@@ -1667,11 +1566,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		OR = {
-			tag = NAP
-			was_tag = NAP
-		}
-		owns_core_province = 121
+		owns = 121
 		is_year = 1650
 		NOT = { is_year = 1700 }
 		is_at_war = no
@@ -1719,12 +1614,8 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		OR = {
-			tag = NAP
-			was_tag = NAP
-		}
 		is_year = 1750
-		owns_core_province = 121
+		owns = 121
 	}
 
 	mean_time_to_happen = {
@@ -1761,10 +1652,6 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		OR = {
-			tag = NAP
-			was_tag = NAP
-		}
 		is_year = 1670
 		NOT = { is_year = 1750 }
 	}

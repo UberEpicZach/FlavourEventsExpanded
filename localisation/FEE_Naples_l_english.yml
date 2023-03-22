@@ -112,12 +112,19 @@
 
  #Event Modifiers
  fee_nap_magnanimo: "Il Magnanimo"
+ desc_fee_nap_magnanimo: ""
  fee_nap_transumanza: "Transumanza"
- nap_transumanza_ge: "Transumanza"
+ desc_fee_nap_transumanza: ""
  fee_nap_porta_capuana: "Porta Capuana"
+ desc_fee_nap_porta_capuana: ""
+ fee_nap_nobles_control: "The Nobels are in Control"
+ desc_fee_nap_nobles_control: ""
+ fee_nap_ruled_over_barons: "Ruled Over the Barons"
+ desc_fee_nap_ruled_over_barons: ""
  fee_nap_twenty_years_prosperity: "Twenty Years of Prosperity"
- fee_pedro_alvarez: "Pedro Alvarez de Toledo"
- desc_fee_pedro_alvarez: "While a harsh ruler, de Toledo did much to centralise the Neapolitan state."
+ desc_fee_nap_twenty_years_prosperity: ""
+ fee_nap_pedro_alvarez: "Pedro Alvarez de Toledo"
+ desc_fee_nap_pedro_alvarez: "While a harsh ruler, de Toledo did much to centralise the Neapolitan state."
  fee_nap_gennaro_poveri: "San Gennaro dei Poveri"
  desc_fee_nap_gennaro_poveri: "We have invested in Naples' long tradition of poor houses."
  fee_nap_albergo_reale: "Ospedale L'Albergo Reale dei Poveri"
@@ -130,8 +137,7 @@
  fee_nap_helps_skanderberg: "Helping the Albanians"
 
  #Tooltips
- Accademia_NAP_TT: "\nHe has a proposal about a new accademy he wants to bring further"
- nap_pre_conjury_tt: "If we fail to maintain the Nobles loyal (§G65§!) before the next years, they may revolt"
- nap_pre_conjury_2_tt: "If we fail to maintain the Nobles loyal (§G65§!) before the next years, they may revolt once again"
+ NAP_ACCADEMY_BECCADELLI_TT: "\nHe has a proposal about a new accademy he wants to bring further"
+ NAP_PRE_CONJURY_TT: "If we fail to maintain the Nobles loyal (§G65§!) before the next years, they might rise in arms against us."
  NAPLES_TWENTY_YEARS_PROSPERITY: "§YEvery Owned Province§! will gain §G15 Prosperity§!"
  ALB_HELP_TT: "The Albanians will come to help us in our time of need"
