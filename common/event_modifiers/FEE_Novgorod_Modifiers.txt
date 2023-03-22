@@ -10,16 +10,16 @@ fee_nov_latinisation = {
 }
 
 #Veche modifiers
-FEE_Novgorod_Events_veche_ADM = {
+fee_nov_administrative_focus_veche = {
 	development_cost = -0.05
 }
-FEE_Novgorod_Events_veche_DIP = {
+fee_nov_diplomatic_focus_veche = {
 	trade_efficiency = 0.1
 }
-FEE_Novgorod_Events_veche_MIL = {
+fee_nov_military_focus_veche = {
 	manpower_recovery_speed = 0.15
 }
-FEE_Novgorod_Events_veche_NOT = {
+fee_nov_no_focus_veche = {
 	stability_cost_modifier = -0.05
 	idea_cost = -0.05
 }

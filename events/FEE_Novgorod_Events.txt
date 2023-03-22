@@ -1,6 +1,6 @@
 namespace = FEE_Novgorod_Events
 
-#The Great Famine
+#The great famine
 country_event = {
 	id = FEE_Novgorod_Events.1
 	title = FEE_Novgorod_Events.1.T
@@ -117,7 +117,7 @@ country_event = {
 	}
 }
 
-#Novgorod Latinises
+#The Latinisation of Novgorod
 country_event = {
 	id = FEE_Novgorod_Events.3
 	title = FEE_Novgorod_Events.3.T
@@ -316,7 +316,7 @@ country_event = {
 	}
 }
 
-# The Novgorodian Veche
+#The Novgorodian Veche
 country_event = {
 	id = FEE_Novgorod_Events.4
 	title = FEE_Novgorod_Events.4.T
@@ -334,7 +334,7 @@ country_event = {
         name = FEE_Novgorod_Events.4.OPT1
 
 		add_country_modifier = {
-			name = FEE_Novgorod_Events_veche_ADM
+			name = fee_nov_administrative_focus_veche
 			duration = 3650
 		}
 	}
@@ -343,7 +343,7 @@ country_event = {
         name = FEE_Novgorod_Events.4.OPT2
 
 		add_country_modifier = {
-			name = FEE_Novgorod_Events_veche_DIP
+			name = fee_nov_diplomatic_focus_veche
 			duration = 3650
 		}
 	}
@@ -352,7 +352,7 @@ country_event = {
         name = FEE_Novgorod_Events.4.OPT3
 
 		add_country_modifier = {
-			name = FEE_Novgorod_Events_veche_MIL
+			name = fee_nov_military_focus_veche
 			duration = 3650
 		}
 	}
@@ -361,13 +361,13 @@ country_event = {
         name = FEE_Novgorod_Events.4.OPT4
 
 		add_country_modifier = {
-			name = FEE_Novgorod_Events_veche_NOT
+			name = fee_nov_no_focus_veche
 			duration = 3650
 		}
 	}
 }
 
-#Alliance offer to Lithuania
+#$FROM$ Requests an Alliance
 country_event = {
 	id = FEE_Novgorod_Events.5
 	title = FEE_Novgorod_Events.5.T
@@ -409,7 +409,7 @@ country_event = {
 	}
 }
 
-#MOS is offered the vassalisation of NOV
+#$FROM$ Asks to Become Our Vassal
 country_event = {
 	id = FEE_Novgorod_Events.6
 	title = FEE_Novgorod_Events.6.T
@@ -443,7 +443,7 @@ country_event = {
 	}
 }
 
-#MOS gets a vassalise CB on NOV
+#Novgorod Has Turned Towards Rome
 country_event = {
 	id = FEE_Novgorod_Events.7
 	title = FEE_Novgorod_Events.7.T

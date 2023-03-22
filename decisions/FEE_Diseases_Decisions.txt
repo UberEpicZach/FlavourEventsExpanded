@@ -1,0 +1,34 @@
+# country_decisions = {
+# 	fee_syphilis_slacking_decisions = {
+# 		major = yes
+# 		potential = {
+# 			ai = no
+# 			any_owned_province = {
+# 				OR = {
+# 					has_province_flag = fee_province_has_syphilis
+# 					has_province_flag = fee_province_has_syphilis_outbreak
+# 					has_province_modifier = fee_syphilis_outbreak
+# 					has_province_modifier = fee_quarantined_syphilis_outbreak
+# 				}
+# 			}
+# 			OR = {
+# 				NOT = { has_country_flag = fee_syphilis_dealing_troops }
+# 				had_country_flag = {
+# 					flag = fee_syphilis_dealing_troops
+# 					days = 3650
+# 				}
+# 			}
+# 		}
+# 		allow = {
+# 			mil_power = 25
+# 		}
+# 		effect = {
+# 			country_event = {
+# 				id = FEE_Diseases_Events.105
+# 			}
+# 		}
+# 		ai_will_do = {
+# 			factor = 0
+# 		}
+# 	}
+# }

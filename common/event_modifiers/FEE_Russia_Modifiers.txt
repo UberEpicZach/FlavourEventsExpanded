@@ -1,12 +1,12 @@
 fee_rus_kronstadt_fortress = {
 	local_defensiveness = 0.15
-	garrison_size = 0.20
-	development_cost = 0.10
+	local_garrison_size = 0.20
+	local_development_cost = 0.10
 }
 fee_rus_renovated_kremlin = {
 	local_defensiveness = 0.10
-	garrison_size = 0.15
-	development_cost = 0.05
+	local_garrison_size = 0.15
+	local_development_cost = 0.05
 }
 
 fee_rus_rebellion_in_finland = {

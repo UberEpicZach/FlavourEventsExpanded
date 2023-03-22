@@ -457,7 +457,7 @@ country_event = {
 		
 		add_mil_power = -100
 		add_years_of_income = -0.5
-		custom_tooltip = fee_ven_FANTI_MAR_TT
+		custom_tooltip = FEE_VEN_FANTI_MAR_TT
 		tooltip = {
 			random_owned_province = {
 				limit = {
@@ -1476,6 +1476,15 @@ country_event = {
 				factor = 20
 				151 = { owned_by = TUR }
 			}
+			modifier = {
+				factor = 20
+				NOT = {
+					army_strength = {
+						who = TUR
+						value = 1
+					}
+				}
+			}
 		}
 
 		add_yearly_manpower = 1
@@ -1623,6 +1632,15 @@ country_event = {
 				factor = 2
 				NOT = { navy_size_percentage = 0.50 }
 			}
+			modifier = {
+				factor = 200
+				NOT = {
+					army_strength = {
+						who = TUR
+						value = 0.66
+					}
+				}
+			}
 		}
 
 		add_stability_or_adm_power = yes
@@ -1658,6 +1676,7 @@ country_event = {
 			}
 		}
 
+		join_all_offensive_wars_of = FROM
 		add_yearly_manpower = 1
 		add_years_of_income = 1
 		add_yearly_sailors = 1
@@ -3775,7 +3794,7 @@ country_event = {
 	mean_time_to_happen = {
 		years = 2
 		modifier = {
-			factor = 3
+			factor = 5
 			has_country_flag = has_competent_doctors
 		}
 	}
@@ -3797,19 +3816,32 @@ country_event = {
 			factor = 50
 		}
 
-		random_list = {
-			25 = { kill_ruler = yes }
-			75 = { }
+		if = {
+			limit = {
+				uses_republican_tradition = yes
+				culture_group = latin
+				112 = {
+					is_capital_of = ROOT
+				}
+			}
+			random_list = {
+				50 = { kill_ruler = yes }
+				50 = { }
+			}
+			add_mercantilism = -3
 		}
 		add_yearly_sailors = -2
 		add_yearly_manpower = -1
-		add_mercantilism = -3
 		112 = {
 			set_province_flag = fee_ven_plague_1485
 			add_base_tax = -1
 			add_base_production = -1
 			add_base_manpower = -1
 			add_devastation = 75
+			add_province_modifier = {
+				name = influenza
+				duration = 1825
+			}
 			every_neighbor_province = {
 				random_list = {
 					33 = {
@@ -3817,6 +3849,10 @@ country_event = {
 						add_base_production = -1
 						add_base_manpower = -1
 						add_devastation = 25
+						add_province_modifier = {
+							name = influenza
+							duration = 365
+						}
 					}
 					66 = { }
 				}

@@ -490,6 +490,7 @@
  desc_fee_ven_jew_ghetto_novo: ""
 
  fee_ven_doge_foscari: "Doge Francesco Foscari"
+ desc_fee_ven_doge_foscari: ""
 
  fee_ven_prosperity_po_valley: "Prosperity in the Po' Valley"
  desc_fee_ven_prosperity_po_valley: ""
@@ -498,33 +499,50 @@
  desc_fee_ven_malipiero_avogadore_comun: ""
 
  fee_ven_soranzo_default: "Banco di Soranzo in Default"
+ desc_fee_ven_soranzo_default: ""
  fee_ven_soranzo_default_minimal: "Banco di Soranzo in Default"
+ desc_fee_ven_soranzo_default_minimal: ""
 
  fee_ven_moro_provveditore_pubbliche_entrate: "Moro Provveditore delle Pubbliche Entrate"
+ desc_fee_ven_moro_provveditore_pubbliche_entrate: ""
 
  fee_ven_turko_venetian_wars: "Turko-Venetian Wars"
+ desc_fee_ven_turko_venetian_wars: ""
 
  fee_ven_craine: "Venetian Craine"
+ desc_fee_ven_craine: ""
 
  fee_ven_treaty_constantinople: "Treaty of Costantinople"
+ desc_fee_ven_treaty_constantinople: ""
  fee_ven_treaty_constantinople_province: "Treaty of Costantinople"
+ desc_fee_ven_treaty_constantinople_province: ""
  fee_ven_aegean_superiority_province: "Aegean Superiority"
+ desc_fee_ven_aegean_superiority_province: ""
  fee_ven_aegean_superiority: "Aegean Superiority"
+ desc_fee_ven_aegean_superiority: ""
 
  fee_ven_latin_trebizond_ties: "Latin-Trebizond Ties"
+ desc_fee_ven_latin_trebizond_ties: ""
 
  fee_ven_arabo_venetian_coffee: "Arabo-Venetian Coffee"
+ desc_fee_ven_arabo_venetian_coffee: ""
 
  fee_ven_cardinal_domenico_grimani: "Cardinal Domenico Grimani"
+ desc_fee_ven_cardinal_domenico_grimani: ""
 
  fee_ven_andrea_gritti: "Andrea Gritti"
+ desc_fee_ven_andrea_gritti: ""
 
  fee_ven_doge_marcantonio_trevisan: "Doge Marcantonio Trevisan"
+ desc_fee_ven_doge_marcantonio_trevisan: ""
 
  fee_ven_francesco_venier_merchant: "Francesco Venier"
+ desc_fee_ven_francesco_venier_merchant: ""
 
  fee_ven_standing_army: "Venetian Standing Army"
+ desc_fee_ven_standing_army: ""
  fee_ven_mercenary_army: "Venetian Mercenary Army"
+ desc_fee_ven_mercenary_army: ""
 
 # Trade Modifeirs
  fee_ven_trade_deal_costantinople: "Venetian Trade Deal"
@@ -535,7 +553,7 @@
  fee_ven_antonio_grimani: "Antonio Grimani"
 
 # Tooltips
- VEN_FANTI_MAR_TT: "Every owned §YCoastal Provinces§! will get:"
+ FEE_VEN_FANTI_MAR_TT: "Every owned §YCoastal Provinces§! will get:"
  FEE_VEN_CRAINE_DALMATIA_TT: "Every owned §MCoastal Province§! that is either in the §YDalmatia Area§! or has §YSouth Slavic Culture§! in the §MRagusa Trade Node§! will get:"
  VEN_VENETIAN_WARS_BALKANS_CLAIMS_TT: "§Y[Root.GetName]§! will gain §YPermanent Claim§! on all the provinces owned by §Y[TUR.GetName]§! in the §MBalkans Region§! that borders the §M[1310.Province.GetName]§! or §M[1311.Province.GetName]§! or §M[1312.Province.GetName]§! or §M[1319.Province.GetName]§!. \n\nWe might be able to call our Christian brothers in the war!"
  FEE_VEN_TREATY_CONSTANTINOPLE_TT: "Every Province, owned by [Root.GetName] or it's non Tributary Subjects, that borders the §M[1308.GetAreaName]§! will get:"
