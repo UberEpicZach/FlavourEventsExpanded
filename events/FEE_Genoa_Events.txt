@@ -116,9 +116,7 @@ country_event = {
 			tag = COR
 		}
 		NOT = { is_year = 1470 }
-		NOT = {
-			has_country_modifier = fee_gen_san_giorgio_timer
-		}
+		NOT = { has_country_modifier = fee_gen_san_giorgio_timer }
 		owns = 1247
 	}
 
@@ -317,7 +315,7 @@ country_event = {
 			factor = 50
 		}
 
-		add_dip_power = -50
+		add_mercantilism = -10
 		add_prestige = -25
 		101 = {
 			add_base_production = -3
@@ -533,13 +531,13 @@ country_event = {
 			}
 		}
 		hidden_effect = {
-				1320 = {
-					every_trade_node_member_province = {
-						limit = {
-							owned_by = ROOT
-						}
-						add_base_production = 1
-						add_province_modifier = {
+			1320 = {
+				every_trade_node_member_province = {
+					limit = {
+						owned_by = ROOT
+					}
+					add_base_production = 1
+					add_province_modifier = {
 						name = fee_gen_treaty_byzantium
 						duration = 7300
 					}
