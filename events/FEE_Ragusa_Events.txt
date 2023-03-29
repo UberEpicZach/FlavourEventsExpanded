@@ -28,7 +28,7 @@ country_event = {
 		ai_chance = {
 			factor = 33
 		}
-		
+
 		if = {
 			limit = {
 				is_expanded_mod_active = { mod = great_monuments }

@@ -18,11 +18,11 @@ fee_italy_republican_matter = {
 		has_any_disaster = yes
 		is_subject_other_than_tributary_trigger = yes
 	}
-	
+
 	down_progress = {
 		factor = 1
 	}
-	
+
 	progress = {
 		modifier = {
 			factor = -2
@@ -91,7 +91,7 @@ fee_italy_republican_matter = {
 			}
 		}
 	}
-	
+
 	modifier = {
 		reform_progress_growth = -0.50
 		stability_cost_modifier = 0.75
@@ -106,7 +106,7 @@ fee_italy_republican_matter = {
 
 	on_start = disaster_fee_italy_republican_matter.1
 	on_end = disaster_fee_italy_republican_matter.2
-	
+
 	on_monthly = {
 		events = {
 		}

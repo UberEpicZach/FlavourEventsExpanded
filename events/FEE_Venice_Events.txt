@@ -234,7 +234,7 @@ country_event = {
 		add_dip_power = 25
 		if = {
 			limit = {
-				has_dlc =  "Rule Britannia"	
+				has_dlc =  "Rule Britannia"
 			}
 			add_innovativeness_small_effect = yes
 		}
@@ -454,7 +454,7 @@ country_event = {
 
 	option = {
 		name = FEE_Venice_Events.9.OPT1
-		
+
 		add_mil_power = -100
 		add_years_of_income = -0.5
 		custom_tooltip = FEE_VEN_FANTI_MAR_TT
@@ -484,7 +484,7 @@ country_event = {
 
 	option = {
 		name = FEE_Venice_Events.9.OPT2
-		
+
 		add_prestige = -5
 	}
 }
@@ -511,7 +511,7 @@ country_event = {
 
 	option = {
 		name = FEE_Venice_Events.10.OPT1
-		
+
 		add_legitimacy_equivalent = { amount = 10 republican_tradition = 5 }
 		add_dip_power = 25
 		TUR = {
@@ -524,7 +524,7 @@ country_event = {
 
 	option = {
 		name = FEE_Venice_Events.10.OPT2
-		
+
 		add_mil_power = 150
 		151 = {
 			if = {
@@ -4267,7 +4267,7 @@ country_event = {
 		trigger = {
 			NOT = { owns = 1224 }
 		}
-			
+
 		if = {
 			limit = { exists = ETH }
 			ETH = {
@@ -4748,7 +4748,7 @@ country_event = {
 		ai_chance = {
 			factor = 0
 		}
-		
+
 		if = {
 			limit = { has_estate = estate_burghers }
 			add_estate_loyalty = {
@@ -4978,7 +4978,7 @@ country_event = {
 	mean_time_to_happen = {
 		months = 6
 	}
-	
+
 	goto = 110
 
 	option = {

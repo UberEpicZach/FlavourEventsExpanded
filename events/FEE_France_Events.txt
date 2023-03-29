@@ -176,7 +176,7 @@ country_event = {
 		ai_chance = {
 			factor = 33
 		}
-		
+
 		random_list = {
 			40 = {
 				random_owned_province = {
@@ -226,7 +226,7 @@ country_event = {
 		ai_chance = {
 			factor = 33
 		}
-		
+
 		random_list = {
 			40 = {
 				add_country_modifier = {
@@ -508,20 +508,12 @@ country_event = {
 					}
 				}
 				random_core_province = {
-					limit = {
-						NOT = {
-							
-						}
-					}
 					spawn_rebels = {
 						size = 2
 						type = noble_rebels
 					}
 				}
 				random_core_province = {
-					limit = {
-
-					}
 					spawn_rebels = {
 						size = 2
 						type = noble_rebels
@@ -787,7 +779,7 @@ country_event = {
 
 	option = {
 		name = FEE_France_Events.9.OPT1
-		
+
 		set_country_flag = france_clergy_oppose_king
 		if = {
 			limit = {
@@ -980,7 +972,7 @@ country_event = {
 		ai_chance = {
 			factor = 80
 		}
-		
+
 		set_country_flag = bourgeoisie_oppose_king
 		add_stability = -1
 		change_estate_land_share = {
@@ -1058,7 +1050,7 @@ country_event = {
 
 	option = {
 		name = FEE_France_Events.13.OPT1
-		
+
 		add_years_of_income = 0.5
 		add_country_modifier = {
 			name = fee_bourgeoisie_support
@@ -1079,7 +1071,7 @@ country_event = {
 
 	option = {
 		name = FEE_France_Events.13.OPT2
-		
+
 		reduce_estate_burghers_loyalty_effect = yes
 		add_prestige_or_monarch_power = { amount = 15 }
 		add_liberty_desire = 10

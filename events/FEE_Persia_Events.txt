@@ -240,7 +240,7 @@ country_event = {
 	}
 }
 
-# The Third Force	
+# The Third Force
 country_event = {
 	id = FEE_Persia_Events.6
 	title = FEE_Persia_Events.6.T
@@ -252,7 +252,7 @@ country_event = {
 	trigger = {
 		tag = PER
 		NOT = { has_country_flag = fee_per_end_qizilbash_influence }
-		has_country_modifier = fee_per_the_qizilbash	
+		has_country_modifier = fee_per_the_qizilbash
 		is_year = 1580
 		mil = 3
 		dip = 3
@@ -322,7 +322,7 @@ country_event = {
 	}
 }
 
-#Decline of the Qizilbash	
+#Decline of the Qizilbash
 country_event = {
 	id = FEE_Persia_Events.8
 	title = FEE_Persia_Events.8.T

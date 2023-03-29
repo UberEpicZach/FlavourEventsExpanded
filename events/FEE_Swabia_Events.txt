@@ -360,7 +360,7 @@ country_event = {
 						has_country_flag = fee_swa_member_swabia_league
 						religion = catholic
 				}
-				OR = {		
+				OR = {
 					any_country = {
 							has_country_flag = fee_swa_member_swabia_league
 							religion = protestant
@@ -771,7 +771,7 @@ country_event = {
 	picture = DEBATE_REPUBLICAN_eventPicture
 
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = SWI
 		has_global_flag = fee_swa_swabian_league_established
@@ -929,7 +929,7 @@ country_event = {
 			factor = 0.8
 			any_country = {
 				has_country_flag = fee_swa_member_swabia_league
-				truce_with = ROOT			
+				truce_with = ROOT
 			}
 		}
 	}

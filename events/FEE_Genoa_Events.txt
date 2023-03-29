@@ -1009,7 +1009,7 @@ country_event = {
 					}
 				}
 				add_core = event_target:event_target_gen_crimean_colony
-				cede_province = event_target:event_target_gen_crimean_colony				
+				cede_province = event_target:event_target_gen_crimean_colony
 			}
 			crimea_area = {
 				limit = {
@@ -1024,7 +1024,7 @@ country_event = {
 					}
 				}
 				add_core = event_target:event_target_gen_crimean_colony
-				cede_province = event_target:event_target_gen_crimean_colony				
+				cede_province = event_target:event_target_gen_crimean_colony
 			}
 		}
 	}
@@ -1504,7 +1504,7 @@ country_event = {
 	picture = DIPLOMACY_SIGNING_eventPicture
 
 	is_triggered_only = yes
-	
+
 	major = yes
 
 	major_trigger = {

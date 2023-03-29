@@ -104,7 +104,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Bavaria_Events.3.OPT1	
+		name = FEE_Bavaria_Events.3.OPT1
 
 		HAB = {
 			add_opinion = {
@@ -115,7 +115,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Bavaria_Events.3.OPT2	
+		name = FEE_Bavaria_Events.3.OPT2
 
 		add_legitimacy_equivalent = { amount = 5 republican_tradition = 3 }
 		add_prestige_or_monarch_power = { amount = 5 }

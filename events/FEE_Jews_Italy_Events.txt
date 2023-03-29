@@ -156,7 +156,7 @@ country_event = {
 		ai_chance = {
 			factor = 50
 		}
-		
+
 		add_legitimacy_equivalent = { amount = 3 republican_tradition = 3 }
 		change_religious_influence_equivalent_fee = { add = -10 }
 		event_target:event_target_fee_jews_italy_giudecca = {
@@ -501,7 +501,7 @@ country_event = {
 		}
 
 		custom_tooltip = FEE_JEW_START_APPROVE_TT
-		
+
 		add_dip_power = 25
 	}
 }
@@ -846,7 +846,7 @@ country_event = {
 #
 #	fire_only_once = yes
 #	trigger = {
-#		
+#
 #	}
 #
 #

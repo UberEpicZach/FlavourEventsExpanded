@@ -172,7 +172,7 @@ country_event = {
 	option = {
 		name = FEE_Portugal_Events.4.OPT1
 		add_years_of_income = -0.5
-		
+
 		custom_tooltip = fee_por_henrique_duration_tt
 		add_country_modifier = {
 			name = fee_por_henrique_naval_reforms
@@ -216,7 +216,7 @@ country_event = {
 
 	option = {
 		name = FEE_Portugal_Events.5.OPT1
-		
+
 		add_years_of_income = -0.25
 		add_country_modifier = {
 			name = fee_por_francisco_de_almeida
@@ -288,7 +288,7 @@ country_event = {
 		ai_chance = {
 			factor = 50
 		}
-		
+
 		add_mil_power = -100
 		4563 = {
 			owner = {
@@ -327,7 +327,7 @@ country_event = {
 		ai_chance = {
 			factor = 50
 		}
-		
+
 		add_prestige_or_monarch_power = { amount = 10 }
 		4563 = {
 			owner = {
@@ -609,7 +609,7 @@ country_event = {
 		ai_chance = {
 			factor = 33
 		}
-		
+
 		add_prestige_or_monarch_power = { amount = 5 }
 	}
 }
@@ -978,7 +978,7 @@ country_event = {
 					stability = 1
 					manpower = 3
 				}
-			}		
+			}
 		}
 
 		add_stability = -1
@@ -1127,7 +1127,7 @@ country_event = {
 
 	option = {
 		name = FEE_Portugal_Events.14.OPT2
-		
+
 		add_estate_loyalty = {
 			estate = estate_burghers
 			loyalty = -15
@@ -1443,7 +1443,7 @@ country_event = {
 		ai_chance = {
 			factor = 50
 		}
-		
+
 		add_prestige_or_monarch_power = { amount = 10 }
 	}
 }
