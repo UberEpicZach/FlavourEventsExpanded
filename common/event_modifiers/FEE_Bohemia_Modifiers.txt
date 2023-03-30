@@ -23,3 +23,9 @@ fee_boh_greedy_rulership = {
 fee_boh_religion_enforced = {
 	global_heretic_missionary_strength = 0.03
 }
+
+fee_boh_religious_peace_kutna_ora = {
+	tolerance_own = 1
+	tolerance_heretic = 1
+	tolerance_of_heretics_capacity = 1
+}

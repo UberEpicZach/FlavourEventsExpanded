@@ -57,6 +57,14 @@
  FEE_Bohemia_Events.14.OPT1: "He is the chosen one."
  FEE_Bohemia_Events.14.OPT2: "He is just a harmless old fool. Send him back with some money."
 
+ FEE_Bohemia_Events.15.T: "The Second Defenestration of Prague"
+ FEE_Bohemia_Events.15.D: "In 1480, several townspeople and 4 Hussite priests were arrested and tortured, resulting in one of the priests dying. The tension between Hussites and Catholics came to a head in 1483. Radical Hussites used alleged information that Catholics would disrupt the Hussite festival as a pretext for a coup d'état. One morning, the radical Hussites invaded the Old Town Hall and threw the burgomaster from a window, while at the New Town Hall, they killed several councillors and threw them from windows. They imprisoned the remaining councillors who confessed that they planned to kill several Hussites and expel Hussite priests from Prague."
+ FEE_Bohemia_Events.15.OPT1: "God be with us, the light is between us, and our faithful are without underwear."
+
+ FEE_Bohemia_Events.16.T: "Religious Peace of Kutná Hora"
+ FEE_Bohemia_Events.16.D: "After the Second Defenestration of Prague, the religious situation was slowly developing towards religious reconciliation. The Religious Peace of Kutná Hora concluded two years after the defenestration at the Czech lands Diet in Kutná Hora between Hussites and Catholics. They declared the Council of Basel as the base law of the land. Finally, Hussites and Catholics were equal in the eyes of the law, thus achieving religious peace."
+ FEE_Bohemia_Events.16.OPT1: "The definitive end of the Hussite Wars."
+
  #Modifiers
  fee_boh_infertility: "Infertility"
  desc_fee_boh_infertility: ""
@@ -78,6 +86,9 @@
  fee_boh_charter_universal_peace_union: "Charter of a Universal Peace Union"
  fee_boh_charter_universal_peace_union_france: "Charter of a Universal Peace Union"
 
+ fee_boh_religious_peace_kutna_ora: "Religious Peace of Kutná Hora"
+ desc_fee_boh_religious_peace_kutna_ora: ""
+
  #Opinion
  fee_boh_linked_thrones: "Linked Thrones"
  fee_boh_claiming_thrones: "Claimed Thrones"
@@ -86,6 +97,6 @@
  fee_boh_thaler_princes_tt: "§YAll princes in the Holy Roman Empire will receive a bonus of §!§G+5%§!§Y trade efficiency for 20 years.§!"
 
  #Personalities
- peasant_king_personality: "The Peasant King"
- desc_peasant_king_personality: "According to legend, the founder of the Přemyslid dynasty was a peasant from Stadice village. Now the rightful heir of Bohemia has returned to one of the same origin as Přemysl the Ploughman."
- peasant_king_personality_die_desc: ""
+ fee_boh_peasant_king_personality: "The Peasant King"
+ desc_fee_boh_peasant_king_personality: "According to legend, the founder of the Přemyslid dynasty was a peasant from Stadice village. Now the rightful heir of Bohemia has returned to one of the same origin as Přemysl the Ploughman."
+ fee_boh_peasant_king_personality_die_desc: "Our people mourn the passing of the most virtuous [Root.Monarch.GetTitle] in our lifetime."

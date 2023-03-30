@@ -776,7 +776,7 @@ country_event = {
 	id = FEE_Bohemia_Events.14
 	title = FEE_Bohemia_Events.14.T
 	desc = FEE_Bohemia_Events.14.D
-	# picture = 
+	picture = BOHEMIA_CROWN_eventPicture
 
 	fire_only_once = yes
 
@@ -789,7 +789,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		years = 1
+		years = 5
 	}
 
 	option = {
@@ -805,16 +805,90 @@ country_event = {
 			mil = 6
 			male = yes
 			culture = czech
-			religion = catholic
+			religion = hussite
 		}
 
 		add_ruler_personality = charismatic_negotiator_personality
-		add_ruler_personality = peasant_king_personality
+		add_ruler_personality = fee_boh_peasant_king_personality
 	}
 
 	option = {
 		name = FEE_Bohemia_Events.14.OPT2 #He is just a harmless old fool. Send him back with some money.
 
 		add_treasury = -10
+	}
+}
+
+# The Second Defenestration of Prague
+country_event = {
+	id = FEE_Bohemia_Events.15
+	title = FEE_Bohemia_Events.15.T
+	desc = FEE_Bohemia_Events.15.D
+	picture = SECOND_PRAGUE_DEFENESTRATION_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = BOH
+		owns = 266
+		if = {
+			limit = { religion = hussite }
+			ruler_religion = catholic
+		}
+		is_year = 1480
+ 	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = FEE_Bohemia_Events.15.OPT1 #God be with us, the light is between us, and our faithful are without underwear.
+
+		set_country_flag = fee_boh_second_defenestration
+		add_stability = -1
+		random = {
+			chance = 50
+			kill_advisor_by_category_effect = { ADM = yes}
+		}
+		random = {
+			chance = 50
+			kill_advisor_by_category_effect = { DIP = yes}
+		}
+		random = {
+			chance = 50
+			kill_advisor_by_category_effect = { MIL = yes}
+		}
+	}
+}
+
+# Religious Peace of Kutná Hora
+country_event = {
+	id = FEE_Bohemia_Events.16
+	title = FEE_Bohemia_Events.16.T
+	desc = FEE_Bohemia_Events.16.D
+	picture = REFORM_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = BOH
+		has_country_flag = fee_boh_second_defenestration
+		is_year = 1480
+ 	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = FEE_Bohemia_Events.16.OPT1 #The definitive end of the Hussite Wars.
+
+		clr_country_flag = fee_boh_second_defenestration
+		add_stability = 1
+		add_country_modifier = {
+			name = fee_boh_religious_peace_kutna_ora
+			duration = -1
+		}
 	}
 }
