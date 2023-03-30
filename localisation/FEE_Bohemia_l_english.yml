@@ -1,4 +1,7 @@
 ﻿l_english:
+ FEE_Bohemia_Events.1.OPT1: ""
+ FEE_Bohemia_Events.2.OPT1: ""
+
  FEE_Bohemia_Events.3.T: "Death of Jiri Podebrad"
  FEE_Bohemia_Events.3.D: "Jiri Podebrad died in 1471, in the middle of his struggle with Mathias Corvinus of Hungary whonheaded a 'crusade' against Bohemia and claimed its throne. Since his supporters were in a precarious military situation, having lost all lands of the Bohemian Crown to the King of Hungary, Podebrad had shortly before his death, despite being the father of several adult sons himself, asked prince Vladislav of Poland to succeed him in order to save Hussitism and Bohemian independence, already experienced in war over in his days in Poland.. Vladislav indeed succeeded him and initiated a half-century of Jagiellon rule in Bohemia which proved to be backwards, intolerant in religious matters, devastating for Bohemia's economy and eventually resulted in the disaster of 1526. However had Podebrad been in a better situation, he might very well have used the opportunity to establish his dynasty as hereditary national Kings of Bohemia."
  FEE_Bohemia_Events.3.OPT1: "Elect Vladislav Jagiello!"
@@ -49,14 +52,26 @@
  FEE_Bohemia_Events.13.D: "Disaster has befallen us! Prague, once one of the great cultural and economic centers, has fallen to the invading enemy! We can only curse the foolishness of our rulers who, scorning the example of past rulers, sought peace with enemies on the field rather than through a siege of their capital city. A full quarter of the city has been levelled and even the great cathedral has suffered damage."
  FEE_Bohemia_Events.13.OPT1: "Will we ever recover?"
 
+ FEE_Bohemia_Events.14.T: "The Peasant King Jakub"
+ FEE_Bohemia_Events.14.D: "In 1445, a tall peasant with greying hair, dressed in a poor regal robe, appeared in Stadice. He settled in the middle of the village green and began to tell passers-by that he was the peasant king Jakub and he was of the Přemyslid dynasty. He is said to be sent by Wenceslas I to restore order in the kingdom. He had a natural authority and spoke of Bohemia's future so eloquently that thousands of people came to listen to his words. Later he established a council of four elders and a scribe who published his manifestos and letters.\n\nWhen the nobility learned of him, they sent guards to arrest him. Jakub went without resistance as he wished for them to take him to Prague. They granted his wish and took him and a handful of his closest relatives to Prague. There he was received by the burgomasters and revealed that he was the chosen one who would become the new king."
+ FEE_Bohemia_Events.14.OPT1: "He is the chosen one."
+ FEE_Bohemia_Events.14.OPT2: "He is just a harmless old fool. Send him back with some money."
+
  #Modifiers
  fee_boh_infertility: "Infertility"
+ desc_fee_boh_infertility: ""
  fee_boh_noble_concesions: "Noble Concessions"
+ desc_fee_boh_noble_concesions: ""
  fee_boh_hussite_ingenuity: "Hussite Ingenuity"
+ desc_fee_boh_hussite_ingenuity: ""
  boh_coinage_pioneer: "Coinage Pioneer"
+ desc_boh_coinage_pioneer: ""
  fee_boh_thaler: "Thaler"
+ desc_fee_boh_thaler: ""
  fee_boh_greedy_rulership: "Greedy Rulership"
+ desc_fee_boh_greedy_rulership: ""
  fee_boh_religion_enforced: "Religion Enforced"
+ desc_fee_boh_religion_enforced: ""
 
  fee_boh_defenestration_prague: "Defenestration of Prague"
  fee_boh_charter_universal_peace_union_rivals: "Charter of a Universal Peace Union"
@@ -68,5 +83,9 @@
  fee_boh_claiming_thrones: "Claimed Thrones"
 
  #Tooltips
-
  fee_boh_thaler_princes_tt: "§YAll princes in the Holy Roman Empire will receive a bonus of §!§G+5%§!§Y trade efficiency for 20 years.§!"
+
+ #Personalities
+ peasant_king_personality: "The Peasant King"
+ desc_peasant_king_personality: "According to legend, the founder of the Přemyslid dynasty was a peasant from Stadice village. Now the rightful heir of Bohemia has returned to one of the same origin as Přemysl the Ploughman."
+ peasant_king_personality_die_desc: ""

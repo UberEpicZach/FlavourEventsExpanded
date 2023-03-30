@@ -1,0 +1,10 @@
+peasant_king_personality = {
+	allow = { always = no }
+	chance = { }
+
+	legitimacy = 1
+	global_unrest = -2
+	land_morale = 0.10
+
+	nation_designer_cost = 1
+}

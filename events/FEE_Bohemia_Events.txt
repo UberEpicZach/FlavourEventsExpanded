@@ -768,3 +768,53 @@ country_event = {
 		}
 	}
 }
+
+### Hanybal's Events ###
+
+# The Peasant King Jakub
+country_event = {
+	id = FEE_Bohemia_Events.14
+	title = FEE_Bohemia_Events.14.T
+	desc = FEE_Bohemia_Events.14.D
+	# picture = 
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = BOH
+		NOT = { is_lesser_in_union = yes }
+		government = monarchy
+		is_year = 1444
+		NOT = { is_year = 1450 }
+	}
+
+	mean_time_to_happen = {
+		years = 1
+	}
+
+	option = {
+		name = FEE_Bohemia_Events.14.OPT1 #He is the chosen one.
+
+		define_ruler = {
+			name = "Jakub"
+			dynasty = "Přemyslid"
+			age = 45
+			claim = 80
+			adm = 6
+			dip = 6
+			mil = 6
+			male = yes
+			culture = czech
+			religion = catholic
+		}
+
+		add_ruler_personality = charismatic_negotiator_personality
+		add_ruler_personality = peasant_king_personality
+	}
+
+	option = {
+		name = FEE_Bohemia_Events.14.OPT2 #He is just a harmless old fool. Send him back with some money.
+
+		add_treasury = -10
+	}
+}
