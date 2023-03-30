@@ -6,7 +6,6 @@ fee_boh_noble_concesions = {
 	nobles_influence_modifier = 0.25
 	nobles_loyalty_modifier = 0.05
 }
-
 fee_boh_hussite_ingenuity = {
 	mil_tech_cost_modifier = -0.1
 }
@@ -23,9 +22,26 @@ fee_boh_greedy_rulership = {
 fee_boh_religion_enforced = {
 	global_heretic_missionary_strength = 0.03
 }
-
-fee_boh_religious_peace_kutna_ora = {
+fee_boh_religious_peace_kutna_hora = {
 	tolerance_own = 1
 	tolerance_heretic = 1
 	tolerance_of_heretics_capacity = 1
+}
+fee_boh_recatholization = {
+	global_missionary_strength = 0.02
+	tolerance_heretic = -2
+}
+fee_boh_unified_prague = {
+	local_development_cost = -0.15
+	province_trade_power_modifier = 0.10
+	trade_goods_size_modifier = 0.10
+	local_manpower_modifier = 0.10
+	local_tax_modifier = 0.10
+	local_build_time = -0.10
+}
+fee_boh_divided_prague = {
+	local_governing_cost = 0.30
+	local_development_cost = 0.15
+	local_build_time = 0.10
+	local_tax_modifier = -0.10
 }

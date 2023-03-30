@@ -65,6 +65,16 @@
  FEE_Bohemia_Events.16.D: "After the Second Defenestration of Prague, the religious situation was slowly developing towards religious reconciliation. The Religious Peace of Kutná Hora concluded two years after the defenestration at the Czech lands Diet in Kutná Hora between Hussites and Catholics. They declared the Council of Basel as the base law of the land. Finally, Hussites and Catholics were equal in the eyes of the law, thus achieving religious peace."
  FEE_Bohemia_Events.16.OPT1: "The definitive end of the Hussite Wars."
 
+ FEE_Bohemia_Events.17.T: "Olomoucká Univerzita"
+ FEE_Bohemia_Events.17.D: "Olomouc had a long history in education before the Jesuit College was elevated to a university. In 1249, the Bishop of Olomouc, Bruno ze Šamberka, established a school. In 1566, the Bishop of Olomouc Vilém Prusinovský invited the Jesuits to establish a college as he planned to recatholize Moravia. Vilém was following the policy of the Council of Trent and forcing Hussites to accept his authority, but he died in 1572. In 1573 Holy Roman Emperor Maximilian II elevated the college to a university, thus becoming the second university in the Kingdom of Bohemia."
+ FEE_Bohemia_Events.17.OPT1: "This is one of many steps in reforming the Kingdom."
+ FEE_Bohemia_Events.17.OPT2: "We should not provoke the Hussites and others."
+
+ FEE_Bohemia_Events.18.T: "The Royal Capital of Prague"
+ FEE_Bohemia_Events.18.D: "Since earlier times, several monarchs have tried to unify the city of Prague. However, they were either unsuccessful or the unification only lasted for a short time. The burgomasters and councillors of the separate cities (Old Town of Prague, Malá Strana, Hradčany, and the New Town of Prague) carefully protected their privileges and independence. Now, the situation is an anachronism hindering the development of the city. Recently, [Root.Monarch.GetName] has been passing several reforms, one of them being the unification of Prague. If unified, Prague will become a more important political, cultural, economic, and social centre in Bohemia."
+ FEE_Bohemia_Events.18.OPT1: "Prague has been united."
+ FEE_Bohemia_Events.18.OPT2: "Perhaps for the right price, they can keep their independence."
+
  #Modifiers
  fee_boh_infertility: "Infertility"
  desc_fee_boh_infertility: ""
@@ -86,8 +96,14 @@
  fee_boh_charter_universal_peace_union: "Charter of a Universal Peace Union"
  fee_boh_charter_universal_peace_union_france: "Charter of a Universal Peace Union"
 
- fee_boh_religious_peace_kutna_ora: "Religious Peace of Kutná Hora"
- desc_fee_boh_religious_peace_kutna_ora: ""
+ fee_boh_religious_peace_kutna_hora: "Religious Peace of Kutná Hora"
+ desc_fee_boh_religious_peace_kutna_hora: ""
+ fee_boh_recatholization: "Recatholization"
+ desc_fee_boh_recatholization: ""
+ fee_boh_unified_prague: "Unified Prague"
+ desc_fee_boh_unified_prague: ""
+ fee_boh_divided_prague: "Divided Prague"
+ desc_fee_boh_divided_prague: ""
 
  #Opinion
  fee_boh_linked_thrones: "Linked Thrones"
