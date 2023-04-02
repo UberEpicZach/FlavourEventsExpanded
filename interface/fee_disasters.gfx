@@ -48,8 +48,14 @@ spriteTypes = {
 		loadType = "INGAME"
 	}
 	spriteType = {
-		name = "GFX_fee_netherlands_rampjaar"
+		name = "GFX_disaster_fee_netherlands_rampjaar"
 		texturefile = "gfx//interface//disasters//civil_war.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
+	spriteType = {
+		name = "GFX_disaster_fee_naples_baronian_revolt"
+		texturefile = "gfx//interface//disasters//estate_nobility_disaster.dds"
 		noOfFrames = 3
 		loadType = "INGAME"
 	}

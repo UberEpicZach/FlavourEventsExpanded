@@ -8,6 +8,7 @@ country_event = {
 	picture = ADVISOR_eventPicture
 
 	fire_only_once = yes
+
 	trigger = {
 		is_year = 1412
 		NOT = { is_year = 1458 }
@@ -102,6 +103,7 @@ country_event = {
 	picture = FARMING_eventPicture
 
 	fire_only_once = yes
+
 	trigger = {
 		is_year = 1447
 		fee_is_was_nap_sic = yes
@@ -172,6 +174,7 @@ country_event = {
 	picture = DIPLOMACY_eventPicture
 
 	fire_only_once = yes
+
 	trigger = {
 		is_year = 1451
 		exists = ALB
@@ -291,6 +294,7 @@ country_event = {
 	picture = UNIVERSITY_eventPicture
 
 	fire_only_once = yes
+
 	trigger = {
 		is_year = 1458
 		fee_is_was_nap_sic = yes
@@ -338,6 +342,7 @@ country_event = {
 	picture = FORTIFIED_CITY_WITH_CARAVAN_OUTSIDE_eventPicture
 
 	fire_only_once = yes
+
 	trigger = {
 		is_year = 1484
 		owns = 121
@@ -377,6 +382,7 @@ country_event = {
 	picture = QUEEN_AT_COUNCIL_TABLE_eventPicture
 
 	fire_only_once = yes
+
 	trigger = {
 		is_year = 1440
 		fee_is_was_nap_sic = yes
@@ -428,376 +434,39 @@ country_event = {
 	}
 }
 
-#Pre-Conjury
-country_event = {
-	id = FEE_Naples_Events.8
-	title = FEE_Naples_Events.8.T
-	desc = FEE_Naples_Events.8.D
-	picture = BAD_WITH_MONARCH_eventPicture
+#Black clouds lie aheads
+# country_event = {
+# 	id = FEE_Naples_Events.8
+# 	title = FEE_Naples_Events.8.T
+# 	desc = FEE_Naples_Events.8.D
+# 	picture = BAD_WITH_MONARCH_eventPicture
 
-	fire_only_once = yes
-	trigger = {
-		is_year = 1416
-		fee_is_was_nap_sic = yes
-		NOT = { has_ruler = "Alfons V" }
-		NOT = { is_year = 1459 }
-		has_estate = estate_nobles
-	}
+# 	fire_only_once = yes
 
-	option = {
-		name = FEE_Naples_Events.8.OPT1
+# 	trigger = {
+# 		is_year = 1416
+# 		fee_is_was_nap_sic = yes
+# 		NOT = { has_ruler = "Alfons V" }
+# 		NOT = { is_year = 1459 }
+# 		has_estate = estate_nobles
+# 	}
 
-		custom_tooltip = NAP_PRE_CONJURY_TT
-	}
-}
+# 	option = {
+# 		name = FEE_Naples_Events.8.OPT1
 
-#Congiura dei baroni
+# 		custom_tooltip = NAP_PRE_CONJURY_TT
+# 	}
+# }
+
+#Black clouds lie aheads
 country_event = {
 	id = FEE_Naples_Events.9
 	title = FEE_Naples_Events.9.T
 	desc = FEE_Naples_Events.9.D
-	picture = NOBLE_ESTATE_DEMANDS_eventPicture
-
-	fire_only_once = yes
-	trigger = {
-		fee_is_was_nap_sic = yes
-		has_estate = estate_nobles
-		NOT = {
-			estate_loyalty = {
-				estate = estate_nobles
-				loyalty = 65
-			}
-		}
-		is_year = 1459
-		NOT = { is_year = 1464 }
-		apulia_area = {
-			owned_by = ROOT
-		}
-		calabria_area = {
-			owned_by = ROOT
-		}
-	}
-
-	mean_time_to_happen = {
-		days = 60
-	}
-
-	immediate = {
-		set_country_flag = nap_barony_first_risen
-	}
-
-	option = {
-		name = FEE_Naples_Events.9.OPT1
-
-		add_stability = -1
-		add_country_modifier = {
-			name = fee_nap_nobles_control
-			duration = -1
-		}
-		add_estate_influence_modifier = {
-			estate = estate_nobles
-			influence = 35
-			duration = 7300
-		}
-		change_estate_land_share = {
-			estate = estate_nobles
-			share = 25
-		}
-		change_mil = -1
-		if = {
-			limit = {
-				NOT = {
-					estate_influence = {
-						estate = estate_nobles
-						influence = 65
-					}
-				}
-			}
-			random_owned_province = {
-				limit = {
-					area = apulia_area
-				}
-				spawn_rebels = {
-					size = 1
-					type = noble_rebels
-				}
-			}
-			random_owned_province = {
-				limit = {
-					area = calabria_area
-				}
-				spawn_rebels = {
-					size = 1
-					type = noble_rebels
-				}
-			}
-		}
-		else_if = {
-			limit = {
-				NOT = {
-					estate_influence = {
-						estate = estate_nobles
-						influence = 75
-					}
-				}
-				estate_influence = {
-					estate = estate_nobles
-					influence = 65
-				}
-			}
-			random_owned_province = {
-				limit = {
-					area = apulia_area
-				}
-				spawn_rebels = {
-					size = 2
-					type = noble_rebels
-				}
-			}
-			random_owned_province = {
-				limit = {
-					area = calabria_area
-				}
-				spawn_rebels = {
-					size = 1
-					type = noble_rebels
-				}
-			}
-		}
-		else_if = {
-			limit = {
-				NOT = {
-					estate_influence = {
-						estate = estate_nobles
-						influence = 85
-					}
-				}
-				estate_influence = {
-					estate = estate_nobles
-					influence = 75
-				}
-			}
-			random_owned_province = {
-				limit = {
-					area = apulia_area
-				}
-				spawn_rebels = {
-					size = 2
-					type = noble_rebels
-				}
-			}
-			random_owned_province = {
-				limit = {
-					area = calabria_area
-				}
-				spawn_rebels = {
-					size = 2
-					type = noble_rebels
-				}
-			}
-		}
-		else_if = {
-			limit = {
-				NOT = {
-					estate_influence = {
-						estate = estate_nobles
-						influence = 95
-					}
-				}
-				estate_influence = {
-					estate = estate_nobles
-					influence = 85
-				}
-			}
-			random_owned_province = {
-				limit = {
-					area = apulia_area
-				}
-				spawn_rebels = {
-					size = 3
-					type = noble_rebels
-				}
-			}
-			random_owned_province = {
-				limit = {
-					area = calabria_area
-				}
-				spawn_rebels = {
-					size = 2
-					type = noble_rebels
-				}
-			}
-		}
-		else = {
-			random_owned_province = {
-				limit = {
-					area = apulia_area
-				}
-				spawn_rebels = {
-					size = 3
-					type = noble_rebels
-				}
-			}
-			random_owned_province = {
-				limit = {
-					area = calabria_area
-				}
-				spawn_rebels = {
-					size = 3
-					type = noble_rebels
-				}
-			}
-		}
-	}
-}
-
-#Congiura dei baroni sedata
-country_event = {
-	id = FEE_Naples_Events.10
-	title = FEE_Naples_Events.10.T
-	desc = FEE_Naples_Events.10.D
-	picture = GOOD_WITH_MONARCH_eventPicture
-
-	fire_only_once = yes
-	trigger = {
-		fee_is_was_nap_sic = yes
-		has_country_flag = nap_barony_first_risen
-		NOT = { num_of_rebel_controlled_provinces = 1 }
-		NOT = { num_of_rebel_armies = 1 }
-	}
-
-	mean_time_to_happen = {
-		days = 60
-	}
-
-	option = {
-		name = FEE_Naples_Events.10.OPT1
-
-		add_stability_or_adm_power = yes
-		change_mil = 2
-		add_ruler_modifier = {
-			name = fee_nap_ruled_over_barons
-			duration = -1
-		}
-		add_country_modifier = {
-			name = fee_nap_twenty_years_prosperity
-			duration = 7300
-		}
-		add_estate_loyalty_modifier = {
-			estate = estate_nobles
-			loyalty = -35
-			desc = nap_nobles_restrained
-			duration = 7300
-		}
-		add_estate_influence_modifier = {
-			estate = estate_nobles
-			desc = nap_nobles_restrained
-			influence = -50
-			duration = 7300
-		}
-		change_estate_land_share = {
-			estate = estate_nobles
-			share = -33
-		}
-	}
-}
-
-#First Revolt sventata
-country_event = {
-	id = FEE_Naples_Events.11
-	title = FEE_Naples_Events.11.T
-	desc = FEE_Naples_Events.11.D
-	picture = NOBLE_ESTATE_eventPicture
-
-	fire_only_once = yes
-	trigger = {
-		fee_is_was_nap_sic = yes
-		is_year = 1465
-		NOT = { has_country_flag = nap_barony_first_risen }
-	}
-
-	option = {
-		name = FEE_Naples_Events.11.OPT1
-
-		add_stability_or_adm_power = yes
-		change_adm = 1
-		change_dip = 1
-		add_ruler_modifier = {
-			name = fee_nap_ruled_over_barons
-			duration = -1
-		}
-		add_country_modifier = {
-			name = fee_nap_twenty_years_prosperity
-			duration = 7300
-		}
-		add_estate_loyalty_modifier = {
-			estate = estate_nobles
-			loyalty = 30
-			desc = nap_nobles_restrained
-			duration = 7300
-		}
-		add_estate_influence_modifier = {
-			estate = estate_nobles
-			desc = nap_nobles_restrained
-			influence = -25
-			duration = 7300
-		}
-		change_estate_land_share = {
-			estate = estate_nobles
-			share = -50
-		}
-	}
-}
-
-#The arrival of Kastrioty
-country_event = {
-	id = FEE_Naples_Events.12
-	title = FEE_Naples_Events.12.T
-	desc = FEE_Naples_Events.12.D
-	picture = MILITARY_CAMP_eventPicture
-
-	fire_only_once = yes
-	trigger = {
-		fee_is_was_nap_sic = yes
-		is_year = 1459
-		has_country_flag = nap_barony_first_risen
-		NOT = { is_year = 1464 }
-	}
-
-	mean_time_to_happen = {
-		days = 60
-	}
-
-	option = {
-		name = FEE_Naples_Events.12.OPT1
-		random_owned_province = {
-			limit = {
-				controlled_by = ROOT
-				has_siege = no
-			}
-			infantry = ROOT
-			infantry = ROOT
-			cavalry = ROOT
-		}
-		define_general = {
-			fire = 3
-			shock = 2
-			manuever = 4
-			siege = 1
-			name = "Giorgio Castriota Scanderbeg"
-			trait = goal_oriented_personality
-		}
-	}
-}
-
-#Second Barony Conjury, before
-country_event = {
-	id = FEE_Naples_Events.13
-	title = FEE_Naples_Events.13.T
-	desc = FEE_Naples_Events.13.D
 	picture = BAD_WITH_MONARCH_eventPicture
 
 	fire_only_once = yes
+
 	trigger = {
 		fee_is_was_nap_sic = yes
 		is_year = 1466
@@ -810,7 +479,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Naples_Events.13.OPT1
+		name = FEE_Naples_Events.9.OPT1
 
 		custom_tooltip = NAP_PRE_CONJURY_TT
 	}
@@ -818,19 +487,20 @@ country_event = {
 
 #Second Barony Conjury
 country_event = {
-	id = FEE_Naples_Events.14
-	title = FEE_Naples_Events.14.T
-	desc = FEE_Naples_Events.14.D
+	id = FEE_Naples_Events.10
+	title = FEE_Naples_Events.10.T
+	desc = FEE_Naples_Events.10.D
 	picture = NOBLE_ESTATE_DEMANDS_eventPicture
 
 	fire_only_once = yes
+
 	trigger = {
 		fee_is_was_nap_sic = yes
 		has_estate = estate_nobles
 		NOT = {
 			estate_loyalty = {
 				estate = estate_nobles
-				loyalty = 60
+				loyalty = 70
 			}
 		}
 		is_year = 1485
@@ -842,10 +512,10 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Naples_Events.14.OPT1
+		name = FEE_Naples_Events.10.OPT1
 
 		add_stability = -2
-		add_country_modifier = {
+		add_ruler_modifier = {
 			name = fee_nap_nobles_control
 			duration = -1
 		}
@@ -1204,12 +874,13 @@ country_event = {
 
 #The Barons have been defeated
 country_event = {
-	id = FEE_Naples_Events.15
-	title = FEE_Naples_Events.15.T
-	desc = FEE_Naples_Events.15.D
+	id = FEE_Naples_Events.11
+	title = FEE_Naples_Events.11.T
+	desc = FEE_Naples_Events.11.D
 	picture = GOOD_WITH_MONARCH_eventPicture
 
 	fire_only_once = yes
+
 	trigger = {
 		fee_is_was_nap_sic = yes
 		has_country_flag = nap_barony_second_risen
@@ -1222,7 +893,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Naples_Events.15.OPT1
+		name = FEE_Naples_Events.11.OPT1
 		ai_chance = {
 			factor = 1
 		}
@@ -1238,17 +909,19 @@ country_event = {
 			name = fee_nap_ruled_over_barons
 			duration = -1
 		}
+		remove_country_modifier = fee_nap_nobles_control
 	}
 }
 
 #Second Conjury evaded
 country_event = {
-	id = FEE_Naples_Events.16
-	title = FEE_Naples_Events.16.T
-	desc = FEE_Naples_Events.16.D
+	id = FEE_Naples_Events.12
+	title = FEE_Naples_Events.12.T
+	desc = FEE_Naples_Events.12.D
 	picture = NOBLE_ESTATE_eventPicture
 
 	fire_only_once = yes
+
 	trigger = {
 		fee_is_was_nap_sic = yes
 		is_year = 1487
@@ -1260,7 +933,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Naples_Events.16.OPT1
+		name = FEE_Naples_Events.12.OPT1
 
 		add_stability_or_adm_power = yes
 		change_adm = 1
@@ -1276,17 +949,19 @@ country_event = {
 			name = fee_nap_ruled_over_barons
 			duration = -1
 		}
+		remove_country_modifier = fee_nap_nobles_control
 	}
 }
 
 #Dream of Ladislao I
 country_event = {
-	id = FEE_Naples_Events.17
-	title = FEE_Naples_Events.17.T
-	desc = FEE_Naples_Events.17.D
+	id = FEE_Naples_Events.13
+	title = FEE_Naples_Events.13.T
+	desc = FEE_Naples_Events.13.D
 	picture = GOOD_WITH_MONARCH_eventPicture
 
 	fire_only_once = yes
+
 	trigger = {
 		is_year = 1377
 		fee_is_was_nap_sic = yes
@@ -1298,7 +973,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Naples_Events.17.OPT1
+		name = FEE_Naples_Events.13.OPT1
 		ai_chance = {
 			factor = 50
 		}
@@ -1324,7 +999,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Naples_Events.17.OPT2
+		name = FEE_Naples_Events.13.OPT2
 		ai_chance = {
 			factor = 50
 		}
@@ -1338,12 +1013,13 @@ country_event = {
 
 #Legacy of Ladislao I
 country_event = {
-	id = FEE_Naples_Events.18
-	title = FEE_Naples_Events.18.T
-	desc = FEE_Naples_Events.18.D
+	id = FEE_Naples_Events.14
+	title = FEE_Naples_Events.14.T
+	desc = FEE_Naples_Events.14.D
 	picture = GOOD_WITH_MONARCH_eventPicture
 
 	fire_only_once = yes
+
 	trigger = {
 		is_year = 1492
 		fee_is_was_nap_sic = yes
@@ -1369,7 +1045,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Naples_Events.18.OPT1
+		name = FEE_Naples_Events.14.OPT1
 		ai_chance = {
 			factor = 90
 		}
@@ -1412,7 +1088,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Naples_Events.18.OPT2
+		name = FEE_Naples_Events.14.OPT2
 		ai_chance = {
 			factor = 10
 		}
@@ -1426,9 +1102,9 @@ country_event = {
 
 # Pedro Alvarez de Toledo
 country_event = {
-	id = FEE_Naples_Events.19
-	title = FEE_Naples_Events.19.T
-	desc = FEE_Naples_Events.19.D
+	id = FEE_Naples_Events.15
+	title = FEE_Naples_Events.15.T
+	desc = FEE_Naples_Events.15.D
 	picture = ADVISOR_eventPicture
 
 	fire_only_once = yes
@@ -1453,7 +1129,7 @@ country_event = {
 
 	#We need to centralise our state.
 	option = {
-		name = FEE_Naples_Events.19.OPT1
+		name = FEE_Naples_Events.15.OPT1
 
 		add_adm_power = -50
 		add_dip_power = -50
@@ -1465,7 +1141,7 @@ country_event = {
 
 	#Naples must become a military power to rival any in Europe.
 	option = {
-		name = FEE_Naples_Events.19.OPT2
+		name = FEE_Naples_Events.15.OPT2
 
 		add_mil_power = 75
 	}
@@ -1473,9 +1149,9 @@ country_event = {
 
 # The Construction Projects of Pedro Alvarez de Toledo
 country_event = {
-	id = FEE_Naples_Events.20
-	title = FEE_Naples_Events.20.T
-	desc = FEE_Naples_Events.20.D
+	id = FEE_Naples_Events.16
+	title = FEE_Naples_Events.16.T
+	desc = FEE_Naples_Events.16.D
 	picture = GREAT_BUILDING_eventPicture
 
 	fire_only_once = yes
@@ -1504,7 +1180,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Naples_Events.20.OPT1
+		name = FEE_Naples_Events.16.OPT1
 
 		121 = {
 			add_base_tax = 1
@@ -1517,7 +1193,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Naples_Events.20.OPT2
+		name = FEE_Naples_Events.16.OPT2
 
 		121 = {
 			add_base_tax = 1
@@ -1532,9 +1208,9 @@ country_event = {
 
 # The Flood of Bones
 country_event = {
-	id = FEE_Naples_Events.21
-	title = FEE_Naples_Events.21.T
-	desc = FEE_Naples_Events.21.D
+	id = FEE_Naples_Events.17
+	title = FEE_Naples_Events.17.T
+	desc = FEE_Naples_Events.17.D
 	picture = BIG_BOOK_eventPicture
 
 	fire_only_once = yes
@@ -1549,7 +1225,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Naples_Events.21.OPT1
+		name = FEE_Naples_Events.17.OPT1
 
 		121 = { add_base_tax = 1 }
 	}
@@ -1558,9 +1234,9 @@ country_event = {
 
 # San Gennaro dei Poveri
 country_event = {
-	id = FEE_Naples_Events.22
-	title = FEE_Naples_Events.22.T
-	desc = FEE_Naples_Events.22.D
+	id = FEE_Naples_Events.18
+	title = FEE_Naples_Events.18.T
+	desc = FEE_Naples_Events.18.D
 	picture = GREAT_BUILDING_eventPicture
 
 	fire_only_once = yes
@@ -1586,7 +1262,7 @@ country_event = {
 
 	#We need this, for the good of the pour
 	option = {
-		name = FEE_Naples_Events.22.OPT1
+		name = FEE_Naples_Events.18.OPT1
 
 		121 = {
 			add_province_modifier = {
@@ -1598,7 +1274,7 @@ country_event = {
 
 	#Our resources are better spent elsewhere
 	option = {
-		name = FEE_Naples_Events.22.OPT2
+		name = FEE_Naples_Events.18.OPT2
 
 		add_adm_power = 25
 	}
@@ -1606,9 +1282,9 @@ country_event = {
 
 # Ospedale L'Albergo Reale dei Poveri
 country_event = {
-	id = FEE_Naples_Events.23
-	title = FEE_Naples_Events.23.T
-	desc = FEE_Naples_Events.23.D
+	id = FEE_Naples_Events.19
+	title = FEE_Naples_Events.19.T
+	desc = FEE_Naples_Events.19.D
 	picture = GREAT_BUILDING_eventPicture
 
 	fire_only_once = yes
@@ -1624,7 +1300,7 @@ country_event = {
 
 	#Let us show the world we care!
 	option = {
-		name = FEE_Naples_Events.23.OPT1
+		name = FEE_Naples_Events.19.OPT1
 
 		add_years_of_income = -0.08
 		add_country_modifier = {
@@ -1636,7 +1312,7 @@ country_event = {
 
 	#Who can afford to spend money on the poor?
 	option = {
-		name = FEE_Naples_Events.23.OPT2
+		name = FEE_Naples_Events.19.OPT2
 
 		add_adm_power = 10
 	}
@@ -1644,9 +1320,9 @@ country_event = {
 
 # Francesco Solimena
 country_event = {
-	id = FEE_Naples_Events.24
-	title = FEE_Naples_Events.24.T
-	desc = FEE_Naples_Events.24.D
+	id = FEE_Naples_Events.20
+	title = FEE_Naples_Events.20.T
+	desc = FEE_Naples_Events.20.D
 	picture = IMPORTANT_STATUE_eventPicture
 
 	fire_only_once = yes
@@ -1662,7 +1338,7 @@ country_event = {
 
 	#Let him show what baroque art truly means!
 	option = {
-		name = FEE_Naples_Events.24.OPT1
+		name = FEE_Naples_Events.20.OPT1
 
 		add_prestige_or_monarch_power = { amount = 10 }
 		add_stability_or_adm_power = yes
