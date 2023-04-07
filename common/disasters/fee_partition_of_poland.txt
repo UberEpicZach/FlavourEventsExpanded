@@ -59,10 +59,19 @@ fee_partition_of_poland = {
 				any_neighbor_country = {
 					fee_partition_of_poland_is_valid_neighbor_country = { disaster_target = ROOT }
 					war_with = ROOT
-					is_in_war = {
-						participants = THIS
-						participants = ROOT
-						war_score = 10
+					OR = {
+						is_in_war = {
+							attacker_leader = THIS
+							defenders = ROOT
+						}
+						is_in_war = {
+							defender_leader = THIS
+							attackers = ROOT
+						}
+					}
+					war_score_against = {
+						who = ROOT
+						value = 10
 					}
 				}
 			}
@@ -74,10 +83,19 @@ fee_partition_of_poland = {
 				any_neighbor_country = {
 					fee_partition_of_poland_is_valid_neighbor_country = { disaster_target = ROOT }
 					war_with = ROOT
-					is_in_war = {
-						participants = THIS
-						participants = ROOT
-						war_score = 25
+					OR = {
+						is_in_war = {
+							attacker_leader = THIS
+							defenders = ROOT
+						}
+						is_in_war = {
+							defender_leader = THIS
+							attackers = ROOT
+						}
+					}
+					war_score_against = {
+						who = ROOT
+						value = 25
 					}
 				}
 			}
@@ -93,11 +111,20 @@ fee_partition_of_poland = {
 				any_neighbor_country = {
 					fee_partition_of_poland_is_valid_neighbor_country = { disaster_target = ROOT }
 					war_with = ROOT
-					NOT = {
+					OR = {
 						is_in_war = {
-							participants = THIS
-							participants = ROOT
-							war_score = -24
+							attacker_leader = THIS
+							defenders = ROOT
+						}
+						is_in_war = {
+							defender_leader = THIS
+							attackers = ROOT
+						}
+					}
+					ROOT = {
+						war_score_against = {
+							who = PREV
+							value = 25
 						}
 					}
 				}
