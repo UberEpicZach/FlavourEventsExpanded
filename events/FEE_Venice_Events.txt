@@ -1493,11 +1493,6 @@ country_event = {
 			limit = { religion = catholic }
 			add_papal_influence = 25
 		}
-		add_country_modifier = {
-			name = fee_ven_turko_venetian_wars
-			duration = -1
-			desc = FEE_UNTIL_WARS_ENDS_TT
-		}
 		declare_war_with_cb = {
 			casus_belli = cb_crusade
 			who = TUR
@@ -2188,7 +2183,6 @@ country_event = {
 		add_legitimacy_equivalent = { amount = -20 republican_tradition = -10 }
 		add_mercantilism = -15
 		add_splendor = -200
-		remove_country_modifier = fee_ven_turko_venetian_wars
 		1320 = {
 			add_trade_modifier = {
 				who = ROOT
@@ -2278,7 +2272,6 @@ country_event = {
 		}
 
 		add_mercantilism = 25
-		remove_country_modifier = fee_ven_turko_venetian_wars
 		1320 = {
 			add_trade_modifier = {
 				who = ROOT
