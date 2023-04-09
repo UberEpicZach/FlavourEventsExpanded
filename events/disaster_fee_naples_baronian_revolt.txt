@@ -186,8 +186,7 @@ country_event = {
 	option = {
 		name = disaster_fee_naples_baronian_revolt.2.OPT1
 
-		add_stability_or_adm_power = yes
-		change_mil = 2
+		change_mil = 1
 		add_ruler_modifier = {
 			name = fee_nap_ruled_over_barons
 			duration = -1

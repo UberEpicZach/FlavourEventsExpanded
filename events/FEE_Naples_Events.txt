@@ -435,30 +435,6 @@ country_event = {
 }
 
 #Black clouds lie aheads
-# country_event = {
-# 	id = FEE_Naples_Events.8
-# 	title = FEE_Naples_Events.8.T
-# 	desc = FEE_Naples_Events.8.D
-# 	picture = BAD_WITH_MONARCH_eventPicture
-
-# 	fire_only_once = yes
-
-# 	trigger = {
-# 		is_year = 1416
-# 		fee_is_was_nap_sic = yes
-# 		NOT = { has_ruler = "Alfons V" }
-# 		NOT = { is_year = 1459 }
-# 		has_estate = estate_nobles
-# 	}
-
-# 	option = {
-# 		name = FEE_Naples_Events.8.OPT1
-
-# 		custom_tooltip = NAP_PRE_CONJURY_TT
-# 	}
-# }
-
-#Black clouds lie aheads
 country_event = {
 	id = FEE_Naples_Events.9
 	title = FEE_Naples_Events.9.T
@@ -898,16 +874,11 @@ country_event = {
 			factor = 1
 		}
 
-		add_stability_or_adm_power = yes
 		add_prestige_or_monarch_power = { amount = 50 }
-		change_mil = 2
+		add_stability_or_adm_power = yes
 		change_estate_land_share = {
 			estate = estate_nobles
 			share = -100
-		}
-		add_ruler_modifier = {
-			name = fee_nap_ruled_over_barons
-			duration = -1
 		}
 		remove_country_modifier = fee_nap_nobles_control
 	}
