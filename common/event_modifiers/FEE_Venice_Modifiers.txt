@@ -87,18 +87,6 @@ fee_ven_moro_provveditore_pubbliche_entrate = {
 	local_build_time = -0.10
 }
 
-fee_ven_turko_venetian_wars = {
-	land_morale = 0.05
-	naval_morale = 0.05
-	naval_maintenance_modifier = -0.15
-	land_maintenance_modifier = -0.15
-	war_exhaustion = -0.015
-	global_tax_modifier = -0.15
-	global_trade_power = -0.15
-	production_efficiency = -0.15
-	trade_efficiency = -0.15
-}
-
 fee_ven_craine = {
 	local_manpower_modifier = 0.10
 	local_regiment_cost = -0.15

@@ -1,0 +1,17 @@
+fee_ven_turko_venetian_wars = {
+	potential = {
+		is_year = 1463
+		NOT = { is_year = 1479 }
+	}
+	
+	trigger = {
+		war_with = TUR
+	}
+
+	land_morale = 0.05
+	naval_morale = 0.05
+	naval_maintenance_modifier = -0.15
+	land_maintenance_modifier = -0.15
+	war_exhaustion = -0.015
+	global_tax_modifier = -0.25
+}

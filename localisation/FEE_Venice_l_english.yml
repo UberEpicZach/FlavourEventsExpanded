@@ -506,9 +506,6 @@
  fee_ven_moro_provveditore_pubbliche_entrate: "Moro Provveditore delle Pubbliche Entrate"
  desc_fee_ven_moro_provveditore_pubbliche_entrate: ""
 
- fee_ven_turko_venetian_wars: "Turko-Venetian Wars"
- desc_fee_ven_turko_venetian_wars: ""
-
  fee_ven_craine: "Venetian Craine"
  desc_fee_ven_craine: ""
 
@@ -544,13 +541,17 @@
  fee_ven_mercenary_army: "Venetian Mercenary Army"
  desc_fee_ven_mercenary_army: ""
 
-# Trade Modifeirs
+# Trade Modifiers
  fee_ven_trade_deal_costantinople: "Venetian Trade Deal"
  desc_fee_ven_trade_deal_costantinople: ""
  fee_ven_bartolomeo_marcello: "Bartolomeo Marcello"
  desc_fee_ven_bartolomeo_marcello: ""
  fee_ven_pietro_mocenigo: "Pietro Mocenigo"
  fee_ven_antonio_grimani: "Antonio Grimani"
+
+# Triggered Modifiers
+ fee_ven_turko_venetian_wars: "Turko-Venetian Wars"
+ desc_fee_ven_turko_venetian_wars: ""
 
 # Tooltips
  FEE_VEN_FANTI_MAR_TT: "Every owned §YCoastal Provinces§! will get:"
