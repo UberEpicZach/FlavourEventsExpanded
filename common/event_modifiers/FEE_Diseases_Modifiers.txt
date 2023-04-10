@@ -1,22 +1,7 @@
-# fee_quarantined_syphilis_outbreak = {
-# 	local_development_cost = 0.10
-# 	local_manpower_modifier = -0.25
-# 	local_tax_modifier = -0.25
-# 	province_trade_power_modifier = -0.25
-# 	trade_goods_size_modifier = -0.25
-# }
-# fee_syphilis_outbreak = {
-# 	local_development_cost = 0.10
-# 	local_manpower_modifier = -0.25
-# 	local_tax_modifier = -0.25
-# 	province_trade_power_modifier = -0.25
-# 	trade_goods_size_modifier = -0.25
-# }
-
-# fee_syphilis_troops_contained = {
-# 	land_morale = -0.05
-# }
-
-# fee_army_can_spread_syphilis = {
-# 	manpower_recovery_speed = 0.05
-# }
+fee_syphilis_outbreak = {
+	local_development_cost = 0.25
+	local_manpower_modifier = -0.33
+	local_tax_modifier = -0.33
+	province_trade_power_modifier = -0.33
+	trade_goods_size_modifier = -0.33
+}
