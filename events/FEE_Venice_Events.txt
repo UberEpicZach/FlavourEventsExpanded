@@ -130,33 +130,10 @@ country_event = {
 				has_dlc = "Golden Century"
 				has_flagship = no
 			}
-			if = {
-				limit = {
-					capital_scope = {
-						has_port = yes
-					}
-				}
-				capital_scope = {
-					create_flagship = {
-						name = "Leone Alato"
-						type = galley
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					any_owned_province = {
-						has_port = yes
-					}
-				}
-				random_owned_province = {
-					limit = {
-						has_port = yes
-					}
-					create_flagship = {
-						name = "Leone Alato"
-						type = galley
-					}
+			112 = {
+				create_flagship = {
+					name = "Leone Alato"
+					type = galley
 				}
 			}
 		}
