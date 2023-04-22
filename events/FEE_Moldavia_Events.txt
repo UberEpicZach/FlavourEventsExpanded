@@ -11,9 +11,9 @@ country_event = {
 
 	trigger = {
 		tag = MOL
-		NOT = { is_subject_of = TUR  }
+		NOT = { is_subject_of = TUR }
 		is_year = 1475
-		NOT = {  is_year = 1600  }
+		NOT = { is_year = 1600 }
 		owns = 1756
 		owns = 2405
 		owns = 268

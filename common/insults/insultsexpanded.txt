@@ -1,26 +1,26 @@
 insult_cossaks = {
-    trigger = {
-        FROM = { tag = ZAZ }
-        tag = TUR
-    }
+	trigger = {
+		FROM = { tag = ZAZ }
+		tag = TUR
+	}
 }
 
 insult_2_families = {
-    trigger = {
-        FROM = { tag = BAH }
-        tag = VIJ
-    }
+	trigger = {
+		FROM = { tag = BAH }
+		tag = VIJ
+	}
 }
 
 insult_mewhat = {
-    trigger = {
-        tag = MEW
-    }
+	trigger = {
+		tag = MEW
+	}
 }
 
 insult_habsburgs = {
-    trigger = {
-        FROM = { tag = HAB }
+	trigger = {
+		FROM = { tag = HAB }
 		OR = {
 			tag = TUR
 			tag = FRA
@@ -28,7 +28,7 @@ insult_habsburgs = {
 			tag = POL
 			tag = PLC
 		}
-    }
+	}
 }
 
 insult_inquisition = {
@@ -139,7 +139,7 @@ insult_waterloo = {
 		trigger = {
 			has_dlc = "Golden Century"
 			FROM = {
-				ai =  yes
+				ai = yes
 			}
 			ai = no
 			num_of_loans = 1

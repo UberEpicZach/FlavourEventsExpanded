@@ -1,7 +1,4 @@
 version="2.0"
-dependencies={
-    "Missions Expanded"
-}
 tags={
 	"Events"
 	"Converted From CKII"

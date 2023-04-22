@@ -6,15 +6,15 @@ country_event = {
 	title = FEE_Novgorod_Events.1.T
 	desc = FEE_Novgorod_Events.1.D
 	picture = FAMINE_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = NOV
 		had_recent_war = 5
 		is_year = 1445
 	}
-	
+
 	mean_time_to_happen = {
 		months = 24
 	}
@@ -106,7 +106,7 @@ country_event = {
 		clr_country_flag = fee_nov_novgorodian_famine
 		custom_tooltip = fee_nov_vassalization_tt
 	}
-	
+
 	option = {
 		name = FEE_Novgorod_Events.2.OPT4
 
@@ -123,14 +123,14 @@ country_event = {
 	title = FEE_Novgorod_Events.3.T
 	desc = FEE_Novgorod_Events.3.D
 	picture = RELIGIOUS_CONVERSION_eventPicture
-	
+
 	fire_only_once = yes
 
 	mean_time_to_happen = {
 		tag = NOV
 		months = 48
 	}
-	
+
 	option = {
 		name = FEE_Novgorod_Events.3.OPT1
 		ai_chance = {
@@ -331,7 +331,7 @@ country_event = {
 	}
 
 	option = {
-        name = FEE_Novgorod_Events.4.OPT1
+		name = FEE_Novgorod_Events.4.OPT1
 
 		add_country_modifier = {
 			name = fee_nov_administrative_focus_veche
@@ -340,7 +340,7 @@ country_event = {
 	}
 
 	option = {
-        name = FEE_Novgorod_Events.4.OPT2
+		name = FEE_Novgorod_Events.4.OPT2
 
 		add_country_modifier = {
 			name = fee_nov_diplomatic_focus_veche
@@ -349,7 +349,7 @@ country_event = {
 	}
 
 	option = {
-        name = FEE_Novgorod_Events.4.OPT3
+		name = FEE_Novgorod_Events.4.OPT3
 
 		add_country_modifier = {
 			name = fee_nov_military_focus_veche
@@ -358,7 +358,7 @@ country_event = {
 	}
 
 	option = {
-        name = FEE_Novgorod_Events.4.OPT4
+		name = FEE_Novgorod_Events.4.OPT4
 
 		add_country_modifier = {
 			name = fee_nov_no_focus_veche

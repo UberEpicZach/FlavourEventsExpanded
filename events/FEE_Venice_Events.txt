@@ -211,7 +211,7 @@ country_event = {
 		add_dip_power = 25
 		if = {
 			limit = {
-				has_dlc =  "Rule Britannia"	
+				has_dlc = "Rule Britannia"	
 			}
 			add_innovativeness_small_effect = yes
 		}
@@ -4946,7 +4946,7 @@ country_event = {
 	mean_time_to_happen = {
 		months = 6
 	}
-	
+
 	goto = 110
 
 	option = {

@@ -9,7 +9,7 @@ country_event = {
 
 	fire_only_once = yes
 
-	trigger =  {
+	trigger = {
 		tag = PSK
 		is_year = 1450
 		owns = 274
@@ -53,13 +53,13 @@ country_event = {
 
 	fire_only_once = yes
 
-	trigger =  {
+	trigger = {
 		tag = PSK
 		is_year = 1445
 	}
 
 	mean_time_to_happen = {
-	  months = 24
+	 months = 24
 	}
 	option = {
 		name = FEE_Pskov_Events.2.OPT1

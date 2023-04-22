@@ -771,7 +771,7 @@ country_event = {
 	picture = DEBATE_REPUBLICAN_eventPicture
 
 	fire_only_once = yes
-	
+
 	trigger = {
 		tag = SWI
 		has_global_flag = fee_swa_swabian_league_established

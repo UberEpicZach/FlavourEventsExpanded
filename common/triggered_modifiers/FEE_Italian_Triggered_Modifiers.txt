@@ -3,7 +3,7 @@ fee_ven_turko_venetian_wars = {
 		is_year = 1463
 		NOT = { is_year = 1479 }
 	}
-	
+
 	trigger = {
 		war_with = TUR
 	}
