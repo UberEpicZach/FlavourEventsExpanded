@@ -1,5 +1,6 @@
 fee_decline_of_the_ottomans = {
 	potential = {
+		NOT = { has_dlc = "Domination" }
 		tag = TUR
 		NOT = { has_country_flag = had_fee_decline_of_the_ottomans }
 		OR = {
