@@ -132,8 +132,8 @@ country_event = {
 		}
 		#define_ruler = {
 		#	adm = 2
-  		#	dip = 2
-    	#	mil = 2
+		#	dip = 2
+		#	mil = 2
 		#	dynasty = "von Habsburg"
 		#	name = "Charles V"
 		#	age = 15
@@ -143,8 +143,8 @@ country_event = {
 			dynasty = "von Habsburg"
 			name = "Phillip II"
 			adm = 3
-    		dip = 3
-   			mil = 3
+			dip = 3
+			mil = 3
 			age = 0
 		}
 
@@ -175,7 +175,7 @@ country_event = {
 					limit = {
 						is_subject_of_type = personal_union
 					}
-					set_country_flag = fee_charles_v_pu_austria   
+					set_country_flag = fee_charles_v_pu_austria
 				}
 			}
 		}

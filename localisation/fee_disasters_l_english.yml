@@ -535,7 +535,7 @@
   disaster_fee_crisis_of_the_mughal_empire.EVTDESC15: "Once a beacon of efficient and loyal administration, the bureaucrats of our nation now take bribes on the regular and work not for us but for themselves."
   disaster_fee_crisis_of_the_mughal_empire15.EVTOPT1: "Disgusting!"
 
-#Italy 
+#Italy
   disaster_fee_italy_republican_matter.1.T: "A Republican Matter"
   disaster_fee_italy_republican_matter.1.D: "The newly founded state has been struggling with the government organization and trying to meet the demand of its citizen with the authority given by the tradition of old."
   disaster_fee_italy_republican_matter.1.OPT1: "We must be careful"
@@ -545,11 +545,11 @@
   disaster_fee_italy_republican_matter.2.OPT1: "A new Constitution"
   disaster_fee_italy_republican_matter.2.OPT2: "The king reigns but does not rule"
   disaster_fee_italy_republican_matter.2.OPT3: "Why should we change?"
- 
+
   disaster_fee_italy_republican_matter.3.T: "Giovine Italia"
   disaster_fee_italy_republican_matter.3.D: "The goal of these revolutionaries is to transform Italy into a unitary democratic republic, according to the principles of freedom, independence and unity, by dismissing the governments of the previous pre-unification states."
   disaster_fee_italy_republican_matter.3.OPT1: "They won't win"
- 
+
   disaster_fee_italy_republican_matter.4.T: "King's Aider"
   disaster_fee_italy_republican_matter.4.D: "A republic in our land? I think not. We have dismissed so many other republic when they rose against the Viceroys, and we will defy this one as well."
   disaster_fee_italy_republican_matter.4.OPT1: "They won't win"
@@ -707,7 +707,7 @@
   ita_republican_rebels_demand: "Install a Constitutional Republic"
   ita_republican_rebels_demand_desc: "These Republican rebels fight to overthrow the government and install a constitutional republic where the citiziens will be protected by any oppression."
   ita_republican_rebels_army: "Armata di Giovine Italia"
- 
+
   ita_monarchy_rebels_title: "Monarchici"
   ita_monarchy_rebels_name: "Monarch Aider"
   ita_monarchy_rebels_desc: "A republic in our land? I think not. We have dismissed so many other republic when they rose against the Viceroys, and we will defy this one as well."
@@ -769,5 +769,5 @@
  FEE_CRISIS_OF_THE_MUGHAL_EMPIRE_LESS_THAN_0_TOLERANCE_OF_HEATHENS_TT: "Our §YTolerance of Heathens§! is less than §Y0§!"
  FEE_CRISIS_OF_THE_MUGHAL_EMPIRE_RULER_STATS_LESS_THAN_6_TOTAL_TT: "The combined amount of the ruler skills of §Y[This.Monarch.GetName]§! is less than §Y6§!"
 
- ITA_DISASTER_REPUBLICAN_TT: "One of the followign must be true:\n    §YRepublican§! or §YMonarchist§! rebels enforce their demand\n    The disaster has been going for at least §Y15 years§!"
+ ITA_DISASTER_REPUBLICAN_TT: "One of the followign must be true:\n	§YRepublican§! or §YMonarchist§! rebels enforce their demand\n	The disaster has been going for at least §Y15 years§!"
  ITA_REPUBLICAN_MATTER_TT: "In the next years Republicans in the North and Monarchist in the South of Italy will rise to try impose their view. One of them might calm down only if we decide to become either: \nAny Monarchy with a §YParliament§! \n§YConstitutional Republic§!"

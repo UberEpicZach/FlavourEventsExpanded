@@ -762,7 +762,7 @@ country_event = {
 			limit = { culture = hungarian }
 			spawn_rebels = {
 				size = 2
-				type = noble_rebels 
+				type = noble_rebels
 			}
 		}
 		random_owned_province = {

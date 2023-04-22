@@ -446,7 +446,7 @@ country_event = {
 			limit = { region = low_countries_region }
 			add_permanent_province_modifier = {
 				name = fee_ned_corneliszoon_sawmill
-				duration = -1 
+				duration = -1
 			}
 		}
 	}
@@ -1206,7 +1206,7 @@ country_event = {
 		97 = {
 			add_permanent_province_modifier = {
 				name = fee_ned_financial_hub
-				duration = -1 
+				duration = -1
 			}
 		}
 

@@ -1,7 +1,4 @@
-#Bavarian Events
-
 namespace = FEE_Bavaria_Events
-
 
 # Dealing With the Robber Barons
 country_event = {
@@ -39,7 +36,6 @@ country_event = {
 		add_treasury = 25
 	}
 }
-
 
 #One Duchy, United
 country_event = {
@@ -99,7 +95,7 @@ country_event = {
 		HAB = {
 			exists = yes
 			is_emperor = yes
-			dynasty =  "von Habsburg"
+			dynasty = "von Habsburg"
 		}
 	}
 

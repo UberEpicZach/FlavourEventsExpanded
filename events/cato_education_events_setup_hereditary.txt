@@ -7,7 +7,7 @@ country_event = {
 	title = cato_education_events_setup_hereditary.1.title
 	desc = cato_education_events_setup_hereditary.1.desc
 	picture = ECONOMY_eventPicture
-	
+
 	is_triggered_only = yes
 	trigger = {
 		has_heir = yes
@@ -80,13 +80,12 @@ country_event = {
 	title = cato_education_events_setup_hereditary.2.title
 	desc = cato_education_events_setup_hereditary.2.desc
 	picture = ECONOMY_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	trigger = {
 	}
-	
-	
+
 	option = {
 		name = cato_education_events_setup_hereditary.2.a
 		set_heir_flag = clerical_education
@@ -161,13 +160,12 @@ country_event = {
 	title = cato_education_events_setup_hereditary.3.title
 	desc = cato_education_events_setup_hereditary.3.desc
 	picture = ECONOMY_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	trigger = {
 	}
-	
-	
+
 	option = {
 		name = cato_education_events_setup_hereditary.3.a
 		set_heir_flag = diplomacy_education
@@ -242,13 +240,12 @@ country_event = {
 	title = cato_education_events_setup_hereditary.4.title
 	desc = cato_education_events_setup_hereditary.4.desc
 	picture = ECONOMY_eventPicture
-	
+
 	is_triggered_only = yes
-	
+
 	trigger = {
 	}
-	
-	
+
 	option = {
 		name = cato_education_events_setup_hereditary.4.a
 		set_heir_flag = martial_education
@@ -479,14 +476,14 @@ country_event = {
 	title = cato_education_events_setup_hereditary.0.title
 	desc = cato_education_events_setup_hereditary.0.desc
 	picture = ECONOMY_eventPicture
-	
+
 	is_triggered_only = yes
 	hidden = yes
 	trigger = {
 		has_heir = yes
 		is_lesser_in_union = no
 	}
-	
+
 	option = {
 		name = cato_education_events_setup_hereditary.1.a
 		set_heir_flag = clerical_education
@@ -565,14 +562,14 @@ country_event = {
 	title = cato_education_events_setup_hereditary.0.title
 	desc = cato_education_events_setup_hereditary.0.desc
 	picture = ECONOMY_eventPicture
-	
+
 	is_triggered_only = yes
 	hidden = yes
 	trigger = {
 		has_heir = yes
 		is_lesser_in_union = no
 	}
-	
+
 	option = {
 		name = cato_education_events_setup_hereditary.1.a
 		set_heir_flag = diplomacy_education
@@ -659,14 +656,14 @@ country_event = {
 	title = cato_education_events_setup_hereditary.0.title
 	desc = cato_education_events_setup_hereditary.0.desc
 	picture = ECONOMY_eventPicture
-	
+
 	is_triggered_only = yes
 	hidden = yes
 	trigger = {
 		has_heir = yes
 		is_lesser_in_union = no
 	}
-	
+
 	option = {
 		name = cato_education_events_setup_hereditary.1.a
 		set_heir_flag = martial_education
@@ -761,7 +758,7 @@ country_event = {
 		desc = "cato_education_events_setup_hereditary.10.desc.a"###Description for if the heir completes their education successfully.
 	}
 	desc = {
-		trigger = { 
+		trigger = {
 			has_ruler_flag = heir_started_education
 		}
 		desc = "cato_education_events_setup_hereditary.10.desc.b"###Description for if the heir is forced to the throne before they complete it.
@@ -1522,8 +1519,8 @@ country_event = {
 				set_ruler_flag = best_modern_army_education
 			}
 			clear_country_education_quality_flags = yes
-            set_ruler_flag = heir_finished_education
-            clr_ruler_flag = heir_started_education
+			set_ruler_flag = heir_finished_education
+			clr_ruler_flag = heir_started_education
 		}
 		ai_chance = {
 			factor = 1
@@ -1535,7 +1532,7 @@ country_event = {
 	title = cato_education_events_setup_hereditary.11.title
 	desc = cato_education_events_setup_hereditary.11.desc
 	picture = ECONOMY_eventPicture
-	
+
 	trigger = {
 		NOT = {
 			government = theocracy
@@ -1551,7 +1548,7 @@ country_event = {
 	immediate = {
 		set_ruler_flag = assigned_education
 	}
-	
+
 	option = {
 		name = cato_education_events_setup_hereditary.11.a
 		if = {

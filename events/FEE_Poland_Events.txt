@@ -775,7 +775,7 @@ country_event = {
 
 	is_triggered_only = yes
 
-	option = {  	# Humble before Poland
+	option = {	# Humble before Poland
 		name = FEE_Poland_Events.22.OPT1
 
 		change_tag = PRU
@@ -786,7 +786,7 @@ country_event = {
 		}
 		restore_country_name_effect = yes
 		swap_non_generic_missions = yes
-		if =  {
+		if = {
 			limit = {
 				is_revolutionary = no
 				NOT = {
@@ -854,7 +854,7 @@ country_event = {
 		FROM = { inherit = LIV}
 	}
 
-	option = {  	# We are too strong
+	option = {	# We are too strong
 		name = FEE_Poland_Events.23.OPT2
 
 		FROM = {

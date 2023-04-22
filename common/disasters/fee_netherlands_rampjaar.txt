@@ -13,9 +13,9 @@ fee_netherlands_rampjaar = {
 		OR = {
 			war_exhaustion = 10
 			AND = {
-				NOT = { ADM =  5 }
-				NOT = { DIP =  5 }
-				NOT = { MIL =  5 }
+				NOT = { ADM = 5 }
+				NOT = { DIP = 5 }
+				NOT = { MIL = 5 }
 			}
 		}
 	}

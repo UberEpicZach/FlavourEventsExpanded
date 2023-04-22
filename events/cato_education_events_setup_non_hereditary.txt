@@ -9,7 +9,7 @@ country_event = {
 	title = cato_education_events_setup_non_hereditary.1.title
 	desc = cato_education_events_setup_non_hereditary.1.desc
 	picture = ECONOMY_eventPicture
-	
+
 	hidden = yes
 	trigger = {
 		government_does_not_use_hereditary_heir = yes
@@ -21,8 +21,7 @@ country_event = {
 	immediate = {
 		set_ruler_flag = heir_finished_education
 	}
-	
-	
+
 	option = {
 		name = cato_education_events_setup_non_hereditary.1.a
 		country_event = {
@@ -42,7 +41,7 @@ country_event = {
 	hidden = yes
 	trigger = {
 	}
-	
+
 	option = {
 		name = cato_education_events_setup_non_hereditary.2.a
 		set_ruler_flag = started_admin_education
@@ -211,12 +210,12 @@ country_event = {
 	title = cato_education_events_setup_non_hereditary.3.title
 	desc = cato_education_events_setup_non_hereditary.3.desc
 	picture = ECONOMY_eventPicture
-	
+
 	is_triggered_only = yes
 	hidden = yes
 	trigger = {
 	}
-	
+
 	option = {
 		name = cato_education_events_setup_non_hereditary.1.a
 		set_ruler_flag = clerical_education
@@ -283,12 +282,12 @@ country_event = {
 	title = cato_education_events_setup_non_hereditary.4.title
 	desc = cato_education_events_setup_non_hereditary.4.desc
 	picture = ECONOMY_eventPicture
-	
+
 	is_triggered_only = yes
 	hidden = yes
 	trigger = {
 	}
-	
+
 	option = {
 		name = cato_education_events_setup_non_hereditary.1.a
 		set_ruler_flag = diplomacy_education
@@ -363,12 +362,12 @@ country_event = {
 	title = cato_education_events_setup_non_hereditary.5.title
 	desc = cato_education_events_setup_non_hereditary.5.desc
 	picture = ECONOMY_eventPicture
-	
+
 	is_triggered_only = yes
 	hidden = yes
 	trigger = {
 	}
-	
+
 	option = {
 		name = cato_education_events_setup_non_hereditary.1.a
 		set_ruler_flag = martial_education
@@ -443,12 +442,12 @@ country_event = {
 	title = cato_education_events_setup_non_hereditary.6.title
 	desc = cato_education_events_setup_non_hereditary.6.desc
 	picture = ECONOMY_eventPicture
-	
+
 	is_triggered_only = yes
 	hidden = yes
 	trigger = {
 	}
-	
+
 	option = {
 		name = cato_education_events_setup_non_hereditary.1.a
 		set_ruler_flag = poor_education
@@ -979,7 +978,7 @@ country_event = {
 	title = cato_education_events_setup_non_hereditary.7.title
 	desc = cato_education_events_setup_non_hereditary.7.desc
 	picture = ECONOMY_eventPicture
-	
+
 	is_triggered_only = yes
 	hidden = yes
 	trigger = {

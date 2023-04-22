@@ -3985,7 +3985,7 @@ country_event = {
 			value = 4
 			OR = {
 				area = vorpommern_area
-				area = hinter_pommern_area 
+				area = hinter_pommern_area
 			}
 		}
 		is_at_war = yes
@@ -4033,7 +4033,7 @@ country_event = {
 				limit = {
 					OR = {
 						area = vorpommern_area
-						area = hinter_pommern_area 
+						area = hinter_pommern_area
 					}
 				}
 				cede_province = POM

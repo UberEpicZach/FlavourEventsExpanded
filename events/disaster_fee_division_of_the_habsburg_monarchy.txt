@@ -1904,7 +1904,7 @@ country_event = {
 		has_saved_event_target = vassal_to_support
 		event_target:vassal_to_support = {
 			is_at_war = yes
-			is_in_war =  {
+			is_in_war ={
 				defender_leader = THIS
 				attacker_leader = FROM
 			}

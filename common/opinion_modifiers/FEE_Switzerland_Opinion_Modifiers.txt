@@ -19,8 +19,8 @@ fee_swi_released_ulrich = {
 	yearly_decay = 1
 }
 fee_swi_released_ulrich_PAP = {
-    opinion = -100
-    yearly_decay = 2
+	opinion = -100
+	yearly_decay = 2
 }
 
 fee_swi_jailed_ulrich = {
@@ -29,6 +29,6 @@ fee_swi_jailed_ulrich = {
 }
 
 fee_swi_jailed_ulrich_PAP = {
-    opinion = 50
-    yearly_decay = 2
+	opinion = 50
+	yearly_decay = 2
 }

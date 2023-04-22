@@ -510,7 +510,7 @@ country_event = {
 		war_with = ENG
 		alliance_with = FRA
 		FRA = {
-			war_with = ENG 
+			war_with = ENG
 			NOT = {
 				is_lesser_in_union = yes
 			}
@@ -590,7 +590,7 @@ country_event = {
 			SCO = {
 				country_event = {
 					id = FEE_Scotland_Events.300
-				}           
+				}
 			}
 		}
 	}
@@ -608,7 +608,6 @@ country_event = {
 		name = FEE_Scotland_Events.300.OPT1
 	}
 }
-
 
 #Disaster at Flodden for England, option 2
 country_event = {

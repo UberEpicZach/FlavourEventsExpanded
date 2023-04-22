@@ -10,13 +10,13 @@ country_event = {
 	title = FEE_Diseases_Events.1.T
 	desc = {
 		trigger = {
-			italy_region = {
+			121 = {
 				OR = {
 					controller = {
-						num_of_colonies = 1
+						culture_group = french
 					}
 					owner = {
-						num_of_colonies = 1
+						culture_group = french
 					}
 				}
 			}
@@ -25,7 +25,7 @@ country_event = {
 	}
 	desc = {
 		trigger = {
-			italy_region = {
+			121 = {
 				OR = {
 					controller = {
 						num_of_colonies = 1
@@ -47,18 +47,17 @@ country_event = {
 		NOT = { is_year = 1750 }
 		121 = {
 			owned_by = ROOT
+		}
+		any_country = {
 			OR = {
-				controller = {
-					OR = {
-						culture_group = french
-						num_of_colonies = 1
-					}
-				}
-				owner = {
-					OR = {
-						culture_group = french
-						num_of_colonies = 1
-					}
+				culture_group = french
+				num_of_colonies = 1
+			}
+			OR = {
+				controls = 121
+				owns = 121
+				121 = {
+					sieged_by = PREV
 				}
 			}
 		}
@@ -162,7 +161,6 @@ province_event = {
 #
 #	fire_only_once = yes
 #	trigger = {
-#		
 #	}
 #
 #
