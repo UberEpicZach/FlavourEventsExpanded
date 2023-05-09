@@ -16,8 +16,7 @@ country_event = {
 	title = cato_education_events_education_progress.0001.title
 	desc = cato_education_events_education_progress.0001.desc
 	picture = ECONOMY_eventPicture
-
-	is_triggered_only = yes
+	
 	hidden = yes
 	trigger = {
 		is_lesser_in_union = no
@@ -673,9 +672,9 @@ country_event = {
 	title = cato_education_events_education_progress.0002.title
 	desc = cato_education_events_education_progress.0002.desc
 	picture = ECONOMY_eventPicture
-
+	
 	is_triggered_only = yes
-
+	
 	trigger = {
 		heir_can_recieve_education_events = yes
 		is_lesser_in_union = no
@@ -689,7 +688,7 @@ country_event = {
 			}
 		}
 	}
-
+	
 	
 	option = {
 		name = cato_education_events_education_progress.0002.a
@@ -719,9 +718,9 @@ country_event = {
 	title = cato_education_events_education_progress.0003.title
 	desc = cato_education_events_education_progress.0003.desc
 	picture = ECONOMY_eventPicture
-
+	
 	is_triggered_only = yes
-
+	
 	trigger = {
 		heir_can_recieve_education_events = yes
 		NOT = {
@@ -729,7 +728,7 @@ country_event = {
 		}
 		is_lesser_in_union = no
 	}
-
+	
 	
 	option = {
 		name = cato_education_events_education_progress.0003.a
@@ -754,9 +753,9 @@ country_event = {
 	title = cato_education_events_education_progress.0004.title
 	desc = cato_education_events_education_progress.0004.desc
 	picture = ECONOMY_eventPicture
-
+	
 	is_triggered_only = yes
-
+	
 	trigger = {
 		heir_can_recieve_education_events = yes
 		is_lesser_in_union = no
@@ -785,7 +784,7 @@ country_event = {
 			}
 		}
 	}
-
+	
 	
 	option = {
 		name = cato_education_events_education_progress.0004.a ### He'll figure it out, I'm sure...
@@ -868,7 +867,7 @@ country_event = {
 		heir_can_recieve_education_events = yes
 		is_lesser_in_union = no
 	}
-
+	
 	
 	option = {
 		name = cato_education_events_education_progress.0005.a
@@ -884,12 +883,12 @@ country_event = {
 	desc = cato_education_events_education_progress.0006.desc
 	picture = ECONOMY_eventPicture
 	is_triggered_only = yes
-
+	
 	trigger = {
 		heir_can_recieve_education_events = yes
 		is_lesser_in_union = no
 	}
-
+	
 	
 	option = {
 		name = cato_education_events_education_progress.0006.a ###Support the Tutor
@@ -938,15 +937,15 @@ country_event = {
 	title = cato_education_events_education_progress.0007.title
 	desc = cato_education_events_education_progress.0007.desc
 	picture = ECONOMY_eventPicture
-
+	
 	is_triggered_only = yes
 	###hidden = yes
-
+	
 	trigger = {
 		heir_can_recieve_education_events = yes
 		is_lesser_in_union = no
 	}
-
+	
 	
 	option = {
 		name = cato_education_events_education_progress.0007.a
@@ -963,12 +962,12 @@ country_event = {
 	picture = ECONOMY_eventPicture
 	hidden = yes
 	is_triggered_only = yes
-
+	
 	trigger = {
 		heir_can_recieve_education_events = yes
 		is_lesser_in_union = no
 	}
-
+	
 	
 	option = {
 		name = cato_education_events_education_progress.0008.a
@@ -984,12 +983,12 @@ country_event = {
 	desc = cato_education_events_education_progress.0009.desc
 	picture = ECONOMY_eventPicture
 	is_triggered_only = yes
-
+	
 	trigger = {
 		heir_can_recieve_education_events = yes
 		is_lesser_in_union = no
 	}
-
+	
 	
 	option = {
 		name = cato_education_events_education_progress.0009.a
@@ -1052,12 +1051,12 @@ country_event = {
 	desc = cato_education_events_education_progress.0010.desc
 	picture = ECONOMY_eventPicture
 	is_triggered_only = yes
-
+	
 	trigger = {
 		heir_can_recieve_education_events = yes
 		is_lesser_in_union = no
 	}
-
+	
 	
 	option = {
 		name = cato_education_events_education_progress.0010.a
@@ -1093,12 +1092,12 @@ country_event = {
 	picture = ECONOMY_eventPicture
 	hidden = yes
 	is_triggered_only = yes
-
+	
 	trigger = {
 		heir_can_recieve_education_events = yes
 		is_lesser_in_union = no
 	}
-
+	
 	
 	option = {
 		name = cato_education_events_education_progress.0011.a
@@ -1116,12 +1115,12 @@ country_event = {
 	desc = cato_education_events_education_progress.0012.desc
 	picture = ECONOMY_eventPicture
 	is_triggered_only = yes
-
+	
 	trigger = {
 		heir_can_recieve_education_events = yes
 		is_lesser_in_union = no
 	}
-
+	
 	
 	option = {
 		name = cato_education_events_education_progress.0012.a
@@ -1192,12 +1191,12 @@ country_event = {
 	picture = ECONOMY_eventPicture
 	hidden = yes
 	is_triggered_only = yes
-
+	
 	trigger = {
 		heir_can_recieve_education_events = yes
 		is_lesser_in_union = no
 	}
-
+	
 	
 	option = {
 		name = cato_education_events_setup_hereditary.1.a
@@ -1381,14 +1380,14 @@ country_event = {
 	title = cato_education_events_education_progress.0.title
 	desc = cato_education_events_education_progress.0.desc
 	picture = ECONOMY_eventPicture
-
+	
 	is_triggered_only = yes
 	hidden = yes
 	trigger = {
 		has_heir = yes
 		is_lesser_in_union = no
 	}
-
+	
 	option = {
 		name = cato_education_events_education_progress.1.a
 		trigger = {
@@ -1452,14 +1451,14 @@ country_event = {
 	title = cato_education_events_setup_hereditary.0.title
 	desc = cato_education_events_setup_hereditary.0.desc
 	picture = ECONOMY_eventPicture
-
+	
 	is_triggered_only = yes
 	hidden = yes
 	trigger = {
 		has_heir = yes
 		is_lesser_in_union = no
 	}
-
+	
 	option = {
 		name = cato_education_events_setup_hereditary.1.a
 		trigger = {
@@ -1519,14 +1518,14 @@ country_event = {
 	title = cato_education_events_education_progress.0.title
 	desc = cato_education_events_education_progress.0.desc
 	picture = ECONOMY_eventPicture
-
+	
 	is_triggered_only = yes
 	hidden = yes
 	trigger = {
 		has_heir = yes
 		is_lesser_in_union = no
 	}
-
+	
 	option = {
 		name = cato_education_events_education_progress.1.a
 		trigger = {
@@ -1593,9 +1592,9 @@ country_event = {
 	title = cato_education_events_education_progress.1000.title
 	desc = cato_education_events_education_progress.1000.desc
 	picture = ECONOMY_eventPicture
-
+	
 	is_triggered_only = yes
-
+	
 	trigger = {
 		has_heir_flag = clerical_education
 		is_lesser_in_union = no
@@ -1606,7 +1605,7 @@ country_event = {
 			has_idea_group = humanist_ideas
 		}
 	}
-
+	
 	
 	option = {
 		name = cato_education_events_education_progress.1000.a
@@ -1621,9 +1620,9 @@ country_event = {
 	title = cato_education_events_education_progress.1001.title
 	desc = cato_education_events_education_progress.1001.desc
 	picture = ECONOMY_eventPicture
-
+	
 	is_triggered_only = yes
-
+	
 	trigger = {
 		has_heir_flag = clerical_education
 		is_lesser_in_union = no
@@ -1635,7 +1634,7 @@ country_event = {
 			}
 		}
 	}
-
+	
 	
 	option = {
 		name = cato_education_events_education_progress.1001.a
@@ -1660,9 +1659,9 @@ country_event = {
 	title = cato_education_events_education_progress.1002.title
 	desc = cato_education_events_education_progress.1002.desc
 	picture = ECONOMY_eventPicture
-
+	
 	is_triggered_only = yes
-
+	
 	trigger = {
 		has_heir_flag = clerical_education
 		is_lesser_in_union = no
@@ -1673,7 +1672,7 @@ country_event = {
 			advisor = inquisitor
 		}
 	}
-
+	
 	
 	option = {
 		name = cato_education_events_education_progress.1002.a
@@ -1689,7 +1688,7 @@ country_event = {
 	title = cato_education_events_education_progress.1003.title
 	desc = cato_education_events_education_progress.1003.desc
 	picture = RELIGION_eventPicture
-
+	
 	is_triggered_only = yes
 	trigger = {
 		has_heir_flag = clerical_education
@@ -1710,7 +1709,7 @@ country_event = {
 			}
 		}
 	}
-
+	
 	
 	option = {
 		name = cato_education_events_education_progress.1003.a
@@ -1733,12 +1732,12 @@ country_event = {
 	title = cato_education_events_education_progress.1004.title
 	desc = cato_education_events_education_progress.1004.desc
 	picture = ECONOMY_eventPicture
-
+	
 	is_triggered_only = yes
 	hidden = yes
 	immediate = {
 	}
-
+	
 	
 	option = {
 		name = cato_education_events_education_progress.1003.a
@@ -1837,7 +1836,7 @@ country_event = {
 			type = theologian
 			culture = event_target:same_religion_neighbor
 			skill = 2
-			cost_multiplier = 0.5
+			cost_multiplier  = 0.5
 		}
 		event_target:same_religion_neighbor = {
 			add_opinion = {
@@ -1901,9 +1900,9 @@ country_event = {
 	title = cato_education_events_education_progress.1006.title
 	desc = cato_education_events_education_progress.1006.desc
 	picture = ECONOMY_eventPicture
-
+	
 	is_triggered_only = yes
-
+	
 	trigger = {
 		has_heir_flag = clerical_education
 		is_lesser_in_union = no
@@ -1924,7 +1923,7 @@ country_event = {
 			}
 		}
 	}
-
+	
 	option = {
 		name = cato_education_events_education_progress.1006.a ###Allow
 		country_event = {
@@ -1946,12 +1945,12 @@ country_event = {
 	title = cato_education_events_education_progress.1007.title
 	desc = cato_education_events_education_progress.1007.desc
 	picture = ECONOMY_eventPicture
-
+	
 	is_triggered_only = yes
 	hidden = yes
 	immediate = {
 	}
-
+	
 	
 	option = {
 		name = cato_education_events_education_progress.1003.a
@@ -2037,12 +2036,12 @@ country_event = {
 		}
 		picture = RELIGIOUS_TURMOIL_eventPicture
 	}
-
+	
 	is_triggered_only = yes
-
+	
 	trigger = {
 	}
-
+	
 	
 	option = {
 		name = cato_education_events_education_progress.1008.a
@@ -2055,7 +2054,7 @@ country_event = {
 			culture = event_target:different_religion_ally
 			religion = event_target:different_religion_ally
 			skill = 2
-			cost_multiplier = 0.5
+			cost_multiplier  = 0.5
 		}
 		event_target:different_religion_ally = {
 			add_opinion = {
@@ -2119,11 +2118,11 @@ country_event = {
 	title = cato_education_events_education_progress.1009.title
 	desc = cato_education_events_education_progress.1009.desc
 	picture = ECONOMY_eventPicture
-
+	
 	is_triggered_only = yes
 	immediate = {
 	}
-
+	
 	
 	option = {
 		name = cato_education_events_education_progress.1009.a
@@ -2139,11 +2138,11 @@ country_event = {
 	title = cato_education_events_education_progress.1010.title
 	desc = cato_education_events_education_progress.1010.desc
 	picture = ECONOMY_eventPicture
-
+	
 	is_triggered_only = yes
 	immediate = {
 	}
-
+	
 	
 	option = {
 		name = cato_education_events_education_progress.1010.a
@@ -2159,9 +2158,9 @@ country_event = {
 	title = cato_education_events_education_progress.1011.title
 	desc = cato_education_events_education_progress.1011.desc
 	picture = ECONOMY_eventPicture
-
+	
 	is_triggered_only = yes
-
+	
 	trigger = {
 		has_heir_flag = clerical_education
 		is_lesser_in_union = no
@@ -2177,7 +2176,7 @@ country_event = {
 			}
 		}
 	}
-
+	
 	option = {
 		name = cato_education_events_education_progress.1011.a ###Allow
 		country_event = {
@@ -2199,12 +2198,12 @@ country_event = {
 	title = cato_education_events_education_progress.1012.title
 	desc = cato_education_events_education_progress.1012.desc
 	picture = ECONOMY_eventPicture
-
+	
 	is_triggered_only = yes
 	hidden = yes
 	immediate = {
 	}
-
+	
 	
 	option = {
 		name = cato_education_events_education_progress.1012.a
@@ -2326,12 +2325,12 @@ country_event = {
 		}
 		picture = RELIGIOUS_TURMOIL_eventPicture
 	}
-
+	
 	is_triggered_only = yes
-
+	
 	trigger = {
 	}
-
+	
 	
 	option = {
 		name = cato_education_events_education_progress.10013.a
@@ -2427,9 +2426,9 @@ country_event = {
 	title = cato_education_events_education_progress.1014.title
 	desc = cato_education_events_education_progress.1014.desc
 	picture = ECONOMY_eventPicture
-
+	
 	is_triggered_only = yes
-
+	
 	trigger = {
 		has_heir_flag = clerical_education
 		is_lesser_in_union = no
@@ -2437,7 +2436,7 @@ country_event = {
 	}
 	immediate = {
 	}
-
+	
 	option = {
 		name = cato_education_events_education_progress.1014.a ###Allow
 		country_event = {
@@ -2459,7 +2458,7 @@ country_event = {
 	title = cato_education_events_education_progress.1015.title
 	desc = cato_education_events_education_progress.1015.desc
 	picture = ECONOMY_eventPicture
-
+	
 	is_triggered_only = yes
 	hidden = yes
 	immediate = {
@@ -2469,7 +2468,7 @@ country_event = {
 		clr_heir_flag = he_neutral
 		clr_heir_flag = he_fail
 	}
-
+	
 	
 	option = {
 		name = cato_education_events_education_progress.1012.a
@@ -2574,12 +2573,12 @@ country_event = {
 		}
 		picture = RELIGIOUS_TURMOIL_eventPicture
 	}
-
+	
 	is_triggered_only = yes
-
+	
 	trigger = {
 	}
-
+	
 	
 	option = {
 		name = cato_education_events_education_progress.1016.a
@@ -2653,9 +2652,9 @@ country_event = {
 	title = cato_education_events_education_progress.1017.title
 	desc = cato_education_events_education_progress.1017.desc
 	picture = ECONOMY_eventPicture
-
+	
 	is_triggered_only = yes
-
+	
 	trigger = {
 		has_heir_flag = clerical_education
 		is_lesser_in_union = no
@@ -2677,7 +2676,7 @@ country_event = {
 			}
 		}
 	}
-
+	
 	
 	option = {
 		name = cato_education_events_education_progress.1017.a
@@ -2780,7 +2779,7 @@ country_event = {
 	title = cato_education_events_education_progress.1018.title
 	desc = cato_education_events_education_progress.1018.desc
 	picture = ECONOMY_eventPicture
-
+	
 	is_triggered_only = yes
 	hidden = yes
 	trigger = {
@@ -2793,7 +2792,7 @@ country_event = {
 			}
 		}
 	}
-
+	
 	
 	option = {
 		name = cato_education_events_education_progress.1018.a
@@ -2903,7 +2902,7 @@ country_event = {
 		}
 		picture = RELIGIOUS_TURMOIL_eventPicture
 	}
-
+	
 	is_triggered_only = yes
 	trigger = {
 		has_heir_flag = clerical_education
@@ -2915,7 +2914,7 @@ country_event = {
 			}
 		}
 	}
-
+	
 	
 	option = {
 		name = cato_education_events_education_progress.1019.a
@@ -2982,9 +2981,9 @@ country_event = {
 	title = cato_education_events_education_progress.2000.title
 	desc = cato_education_events_education_progress.2000.desc
 	picture = ECONOMY_eventPicture
-
+	
 	is_triggered_only = yes
-
+	
 	trigger = {
 		has_heir_flag = administrative_education
 		is_lesser_in_union = no
@@ -2995,7 +2994,7 @@ country_event = {
 			has_idea_group = expansion_ideas
 		}
 	}
-
+	
 	
 	option = {
 		name = cato_education_events_education_progress.2000.a
@@ -3010,9 +3009,9 @@ country_event = {
 	title = cato_education_events_education_progress.2001.title
 	desc = cato_education_events_education_progress.2001.desc
 	picture = ECONOMY_eventPicture
-
+	
 	is_triggered_only = yes
-
+	
 	trigger = {
 		has_heir_flag = administrative_education
 		is_lesser_in_union = no
@@ -3025,7 +3024,7 @@ country_event = {
 			}
 		}
 	}
-
+	
 	
 	option = {
 		name = cato_education_events_education_progress.2001.a
@@ -3050,9 +3049,9 @@ country_event = {
 	title = cato_education_events_education_progress.2002.title
 	desc = cato_education_events_education_progress.2002.desc
 	picture = ECONOMY_eventPicture
-
+	
 	is_triggered_only = yes
-
+	
 	trigger = {
 		has_heir_flag = administrative_education
 		is_lesser_in_union = no
@@ -3063,7 +3062,7 @@ country_event = {
 			advisor = master_of_mint
 		}
 	}
-
+	
 	
 	option = {
 		name = cato_education_events_education_progress.2002.a
@@ -3078,9 +3077,9 @@ country_event = {
 	title = cato_education_events_education_progress.2003.title
 	desc = cato_education_events_education_progress.2003.desc
 	picture = ECONOMY_eventPicture
-
+	
 	is_triggered_only = yes
-
+	
 	trigger = {
 		has_heir_flag = administrative_education
 		is_lesser_in_union = no
@@ -3088,7 +3087,7 @@ country_event = {
 	}
 	immediate = {
 	}
-
+	
 	option = {
 		name = cato_education_events_education_progress.2003.a ###Be Ambitious
 		country_event = {
@@ -3127,12 +3126,12 @@ country_event = {
 	title = cato_education_events_education_progress.2005.title
 	desc = cato_education_events_education_progress.2004.desc
 	picture = ECONOMY_eventPicture
-
+	
 	is_triggered_only = yes
 	hidden = yes
 	immediate = {
 	}
-
+	
 	
 	option = {
 		name = cato_education_events_education_progress.2003.a ###Capital gains +500% tax modifier for 5 years
@@ -3221,12 +3220,12 @@ country_event = {
 		desc = cato_education_events_education_progress.2005.desc_capital_tax_malus
 	}
 	picture = ECONOMY_eventPicture
-
+	
 	is_triggered_only = yes
 	immediate = {
 		set_heir_flag = rewrote_capital_tax_code
 	}
-
+	
 	
 	option = {
 		name = cato_education_events_education_progress.2005.a
@@ -3336,11 +3335,11 @@ country_event = {
 	title = cato_education_events_education_progress.2006.title
 	desc = cato_education_events_education_progress.2006.desc
 	picture = ECONOMY_eventPicture
-
+	
 	is_triggered_only = yes
 	immediate = {
 	}
-
+	
 	
 	option = {
 		name = cato_education_events_education_progress.2006.a
@@ -3356,11 +3355,11 @@ country_event = {
 	title = cato_education_events_education_progress.2007.title
 	desc = cato_education_events_education_progress.2007.desc
 	picture = ECONOMY_eventPicture
-
+	
 	is_triggered_only = yes
 	immediate = {
 	}
-
+	
 	
 	option = {
 		name = cato_education_events_education_progress.2007.a
@@ -3376,11 +3375,11 @@ country_event = {
 	title = cato_education_events_education_progress.2008.title
 	desc = cato_education_events_education_progress.2008.desc
 	picture = ECONOMY_eventPicture
-
+	
 	is_triggered_only = yes
 	immediate = {
 	}
-
+	
 	
 	option = {
 		name = cato_education_events_education_progress.2008.a
@@ -3396,11 +3395,11 @@ country_event = {
 	title = cato_education_events_education_progress.2009.title
 	desc = cato_education_events_education_progress.2009.desc
 	picture = ECONOMY_eventPicture
-
+	
 	is_triggered_only = yes
 	immediate = {
 	}
-
+	
 	
 	option = {
 		name = cato_education_events_education_progress.2008.a
@@ -3419,11 +3418,11 @@ country_event = {
 	title = cato_education_events_education_progress.2010.title
 	desc = cato_education_events_education_progress.2010.desc
 	picture = ECONOMY_eventPicture
-
+	
 	is_triggered_only = yes
 	immediate = {
 	}
-
+	
 	
 	option = {
 		name = cato_education_events_education_progress.2010.a
@@ -3442,11 +3441,11 @@ country_event = {
 	title = cato_education_events_education_progress.2011.title
 	desc = cato_education_events_education_progress.2011.desc
 	picture = ECONOMY_eventPicture
-
+	
 	is_triggered_only = yes
 	immediate = {
 	}
-
+	
 	
 	option = {
 		name = cato_education_events_education_progress.2011.a
@@ -3465,11 +3464,11 @@ country_event = {
 	title = cato_education_events_education_progress.2012.title
 	desc = cato_education_events_education_progress.2012.desc
 	picture = ECONOMY_eventPicture
-
+	
 	is_triggered_only = yes
 	immediate = {
 	}
-
+	
 	
 	option = {
 		name = cato_education_events_education_progress.2012.a
@@ -3540,11 +3539,11 @@ country_event = {
 		desc = cato_education_events_education_progress.2013.desc_generic_old_law
 	}
 	picture = ECONOMY_eventPicture
-
+	
 	is_triggered_only = yes
 	immediate = {
 	}
-
+	
 	
 	option = {
 		name = cato_education_events_education_progress.2013.a
@@ -3567,16 +3566,16 @@ country_event = {
 	title = cato_education_events_education_progress.3000.title
 	desc = cato_education_events_education_progress.3000.desc
 	picture = ECONOMY_eventPicture
-
+	
 	is_triggered_only = yes
-
+	
 	trigger = {
 		has_heir_flag = scholastic_education
 		is_lesser_in_union = no
 		heir_can_recieve_education_events = yes
 		has_idea_group = innovativeness_ideas
 	}
-
+	
 	
 	option = {
 		name = cato_education_events_education_progress.3000.a
@@ -3591,9 +3590,9 @@ country_event = {
 	title = cato_education_events_education_progress.3001.title
 	desc = cato_education_events_education_progress.3001.desc
 	picture = ECONOMY_eventPicture
-
+	
 	is_triggered_only = yes
-
+	
 	trigger = {
 		has_heir_flag = scholastic_education
 		is_lesser_in_union = no
@@ -3602,7 +3601,7 @@ country_event = {
 			has_building = university
 		}
 	}
-
+	
 	
 	option = {
 		name = cato_education_events_education_progress.3001.a
@@ -3617,9 +3616,9 @@ country_event = {
 	title = cato_education_events_education_progress.3002.title
 	desc = cato_education_events_education_progress.3002.desc
 	picture = ECONOMY_eventPicture
-
+	
 	is_triggered_only = yes
-
+	
 	trigger = {
 		has_heir_flag = scholastic_education
 		is_lesser_in_union = no
@@ -3630,12 +3629,82 @@ country_event = {
 			advisor = philosopher
 		}
 	}
-
+	
 	
 	option = {
 		name = cato_education_events_education_progress.3002.a
 		
 		add_education_progress_medium = yes
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {
+	id = cato_education_events_education_progress.3003 ###Heir Illterate
+	title = cato_education_events_education_progress.3003.title
+	desc = cato_education_events_education_progress.3003.desc
+	picture = ECONOMY_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_heir_flag = scholastic_education
+		is_lesser_in_union = no
+		heir_can_recieve_education_events = yes
+	}
+	immediate = {
+		set_heir_flag = literacy_choice
+	}
+	
+	
+	option = {
+		name = cato_education_events_education_progress.3003.a
+		
+		add_education_progress_medium = yes
+		add_adm_power = -50
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = cato_education_events_education_progress.3003.b
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+country_event = {
+	id = cato_education_events_education_progress.3004 ###Heir Needs Glasses
+	title = cato_education_events_education_progress.3004.title
+	desc = cato_education_events_education_progress.3004.desc
+	picture = ECONOMY_eventPicture
+	
+	is_triggered_only = yes
+	
+	trigger = {
+		has_heir_flag = scholastic_education
+		is_lesser_in_union = no
+		heir_can_recieve_education_events = yes
+	}
+	immediate = {
+		set_heir_flag = glasses_choice
+	}
+	
+	option = {
+		name = cato_education_events_education_progress.3004.a
+		
+		add_education_progress_medium = yes
+		add_treasury = -75
+		ai_chance = {
+			factor = 1
+		}
+	}
+	option = {
+		name = cato_education_events_education_progress.3004.b
+		
+		subtract_education_progress_medium = yes
+		add_treasury = 75
 		ai_chance = {
 			factor = 1
 		}
@@ -3649,9 +3718,9 @@ country_event = {
 	title = cato_education_events_education_progress.4000.title
 	desc = cato_education_events_education_progress.4000.desc
 	picture = ECONOMY_eventPicture
-
+	
 	is_triggered_only = yes
-
+	
 	trigger = {
 		has_heir_flag = diplomacy_education
 		is_lesser_in_union = no
@@ -3661,7 +3730,7 @@ country_event = {
 			has_idea_group = influence_ideas
 		}
 	}
-
+	
 	
 	option = {
 		name = cato_education_events_education_progress.4000.a
@@ -3676,9 +3745,9 @@ country_event = {
 	title = cato_education_events_education_progress.4001.title
 	desc = cato_education_events_education_progress.4001.desc
 	picture = ECONOMY_eventPicture
-
+	
 	is_triggered_only = yes
-
+	
 	trigger = {
 		has_heir_flag = diplomacy_education
 		is_lesser_in_union = no
@@ -3689,7 +3758,7 @@ country_event = {
 			advisor = statesman
 		}
 	}
-
+	
 	
 	option = {
 		name = cato_education_events_education_progress.4001.a
@@ -3708,16 +3777,16 @@ country_event = {
 	title = cato_education_events_education_progress.5000.title
 	desc = cato_education_events_education_progress.5000.desc
 	picture = ECONOMY_eventPicture
-
+	
 	is_triggered_only = yes
-
+	
 	trigger = {
 		has_heir_flag = intrigue_education
 		is_lesser_in_union = no
 		heir_can_recieve_education_events = yes
 		has_idea_group = spy_ideas
 	}
-
+	
 	
 	option = {
 		name = cato_education_events_education_progress.5000.a
@@ -3732,16 +3801,16 @@ country_event = {
 	title = cato_education_events_education_progress.5001.title
 	desc = cato_education_events_education_progress.5001.desc
 	picture = ECONOMY_eventPicture
-
+	
 	is_triggered_only = yes
-
+	
 	trigger = {
 		has_heir_flag = intrigue_education
 		is_lesser_in_union = no
 		heir_can_recieve_education_events = yes
 		advisor = spymaster
 	}
-
+	
 	
 	option = {
 		name = cato_education_events_education_progress.5001.a
@@ -3760,9 +3829,9 @@ country_event = {
 	title = cato_education_events_education_progress.6000.title
 	desc = cato_education_events_education_progress.6000.desc
 	picture = ECONOMY_eventPicture
-
+	
 	is_triggered_only = yes
-
+	
 	trigger = {
 		has_heir_flag = trade_education
 		is_lesser_in_union = no
@@ -3773,7 +3842,7 @@ country_event = {
 			has_idea_group = maritime_ideas
 		}
 	}
-
+	
 	
 	option = {
 		name = cato_education_events_education_progress.6000.a
@@ -3788,9 +3857,9 @@ country_event = {
 	title = cato_education_events_education_progress.6001.title
 	desc = cato_education_events_education_progress.6001.desc
 	picture = ECONOMY_eventPicture
-
+	
 	is_triggered_only = yes
-
+	
 	trigger = {
 		has_heir_flag = trade_education
 		is_lesser_in_union = no
@@ -3803,7 +3872,7 @@ country_event = {
 			}
 		}
 	}
-
+	
 	
 	option = {
 		name = cato_education_events_education_progress.6001.a
@@ -3818,16 +3887,16 @@ country_event = {
 	title = cato_education_events_education_progress.6002.title
 	desc = cato_education_events_education_progress.6002.desc
 	picture = ECONOMY_eventPicture
-
+	
 	is_triggered_only = yes
-
+	
 	trigger = {
 		has_heir_flag = trade_education
 		is_lesser_in_union = no
 		heir_can_recieve_education_events = yes
 		advisor = trader
 	}
-
+	
 	
 	option = {
 		name = cato_education_events_education_progress.6002.a
@@ -3845,9 +3914,9 @@ country_event = {
 	title = cato_education_events_education_progress.7000.title
 	desc = cato_education_events_education_progress.7000.desc
 	picture = ECONOMY_eventPicture
-
+	
 	is_triggered_only = yes
-
+	
 	trigger = {
 		OR = {
 			has_heir_flag = martial_education
@@ -3866,7 +3935,7 @@ country_event = {
 			has_idea_group = theocracy_gov_ideas
 		}
 	}
-
+	
 	
 	option = {
 		name = cato_education_events_education_progress.7000.a
@@ -3881,9 +3950,9 @@ country_event = {
 	title = cato_education_events_education_progress.7001.title
 	desc = cato_education_events_education_progress.7001.desc
 	picture = ECONOMY_eventPicture
-
+	
 	is_triggered_only = yes
-
+	
 	trigger = {
 		OR = {
 			has_heir_flag = martial_education
@@ -3905,7 +3974,7 @@ country_event = {
 			}
 		}
 	}
-
+	
 	
 	option = {
 		name = cato_education_events_education_progress.7001.a
@@ -3920,9 +3989,9 @@ country_event = {
 	title = cato_education_events_education_progress.7002.title
 	desc = cato_education_events_education_progress.7002.desc
 	picture = ECONOMY_eventPicture
-
+	
 	is_triggered_only = yes
-
+	
 	trigger = {
 		has_heir_flag = martial_education
 		is_lesser_in_union = no
@@ -3933,7 +4002,7 @@ country_event = {
 			advisor = recruitmaster
 		}
 	}
-
+	
 	
 	option = {
 		name = cato_education_events_education_progress.7002.a
@@ -3951,9 +4020,9 @@ country_event = {
 	title = cato_education_events_education_progress.8003.title
 	desc = cato_education_events_education_progress.8003.desc
 	picture = ECONOMY_eventPicture
-
+	
 	is_triggered_only = yes
-
+	
 	trigger = {
 		has_heir_flag = logistics_education
 		is_lesser_in_union = no
@@ -3965,7 +4034,7 @@ country_event = {
 			advisor = fortification_expert
 		}
 	}
-
+	
 	
 	option = {
 		name = cato_education_events_education_progress.7003.a
@@ -3984,9 +4053,9 @@ country_event = {
 	title = cato_education_events_education_progress.9000.title
 	desc = cato_education_events_education_progress.9000.desc
 	picture = ECONOMY_eventPicture
-
+	
 	is_triggered_only = yes
-
+	
 	trigger = {
 		has_heir_flag = naval_education
 		is_lesser_in_union = no
@@ -4001,7 +4070,7 @@ country_event = {
 			has_idea_group = theocracy_gov_ideas
 		}
 	}
-
+	
 	
 	option = {
 		name = cato_education_events_education_progress.9000.a
@@ -4012,13 +4081,13 @@ country_event = {
 	}
 }
 country_event = {
-	id = cato_education_events_education_progress.9001 ###Has a shipyard, dock, in capital
+	id = cato_education_events_education_progress.9001 ###Has a shipyard, dock,  in capital
 	title = cato_education_events_education_progress.9001.title
 	desc = cato_education_events_education_progress.9001.desc
 	picture = ECONOMY_eventPicture
-
+	
 	is_triggered_only = yes
-
+	
 	trigger = {
 		has_heir_flag = naval_education
 		is_lesser_in_union = no
@@ -4034,7 +4103,7 @@ country_event = {
 			}
 		}
 	}
-
+	
 	
 	option = {
 		name = cato_education_events_education_progress.9001.a
@@ -4049,9 +4118,9 @@ country_event = {
 	title = cato_education_events_education_progress.9002.title
 	desc = cato_education_events_education_progress.9002.desc
 	picture = ECONOMY_eventPicture
-
+	
 	is_triggered_only = yes
-
+	
 	trigger = {
 		has_heir_flag = naval_education
 		is_lesser_in_union = no
@@ -4061,7 +4130,7 @@ country_event = {
 			advisor = naval_reformer
 		}
 	}
-
+	
 	
 	option = {
 		name = cato_education_events_education_progress.9002.a
