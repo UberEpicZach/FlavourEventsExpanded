@@ -34,7 +34,7 @@
  FEE_England_Great_Britain_Events.7.D: "Despite the relative religious peace enjoyed by our island, in marked contrast to the religious strife on the continent, not everyone here is satisfied with our religious state of affairs. A number of more radical sects have found a receptive audience.\n\nThe most prominent of these are a sect of radical reformers who have come to be called Puritans due to their belief that our church is impure and must be radically purged and purified to be acceptable to God. Their biggest grievances with us include our toleration of Catholics and other heretics, as well as what they view as materialism and hedonism within the church.\n\nTheir influence is magnified by the fact that many of their followers come from within the emerging middle and merchant classes."
  FEE_England_Great_Britain_Events.7.OPT1: "I suppose they have some valid points. Allow them to speak freely."
  FEE_England_Great_Britain_Events.7.OPT2: "What a bunch of complainers! Enforce religious uniformity and silence them."
- FEE_England_Great_Britain_Events.7: "Let them build their Utopia – somewhere else."
+ FEE_England_Great_Britain_Events.7: "Let them build their Utopia - somewhere else."
 
  FEE_England_Great_Britain_Events.8.T: "The South Sea Company"
  FEE_England_Great_Britain_Events.8.D: "With wars and unrest always taxing on the national economy, a few ambitious and pragmatic bankers have approached us with a way out our current financial straits. Not only would this rid us of our national debt, they say, but would also stand to make not only us, but anyone who invests in their plan a healthy profit.\n\nTheir plan? Turn our debt into payable securities to be sold in exchange for stock in their new trading company, dubbed the South Seas Company, which would receive a crown monopoly on all trade in the “South Seas.” What exactly the South Seas are was never really defined anywhere, but the agents of the Company assure us that our share of Company stock would make us more money than we could dream of needing to pay off our debt.\n\nIt all seems rather confusing, and nothing has been specified or promised on paper. Our bankers strongly advise against this, but it could yet solve our problems."
@@ -50,13 +50,21 @@
  FEE_England_Great_Britain_Events.10.OPT1: "Great!"
 
  FEE_England_Great_Britain_Events.11.T: "Jenkins' Ear"
- FEE_England_Great_Britain_Events.11.D: "Relations have never been good between the [fee_eng_gbr_iberian_rival_country.GetAdjective] and ourselves in our competition for New World and African trade. Now, however, has come yet another increase in tensions due to the barbarous conduct of the [fee_eng_gbr_iberian_rival_country.GetAdjective]!\n\nIt seems that a ship of the [fee_eng_gbr_iberian_rival_country.GetAdjective] coast guard – a fine title for a glorified pirate! – stopped and boarded a British merchant vessel. Robert Jenkins, the ship's master mariner, was accused of smuggling. Without trial or hesitation, the [fee_eng_gbr_iberian_rival_country.GetAdjective] captain simply drew his sword and cut off Jenkins' Ear! Worse, he threatened to do the same to our monarch if he should come.\n\nThis gravest indignity weighs not only on Jenkins but on the honor of our entire nation!"
+ FEE_England_Great_Britain_Events.11.D: "Relations have never been good between the [fee_eng_gbr_iberian_rival_country.GetAdjective] and ourselves in our competition for New World and African trade. Now, however, has come yet another increase in tensions due to the barbarous conduct of the [fee_eng_gbr_iberian_rival_country.GetAdjective]!\n\nIt seems that a ship of the [fee_eng_gbr_iberian_rival_country.GetAdjective] coast guard - a fine title for a glorified pirate! - stopped and boarded a British merchant vessel. Robert Jenkins, the ship's master mariner, was accused of smuggling. Without trial or hesitation, the [fee_eng_gbr_iberian_rival_country.GetAdjective] captain simply drew his sword and cut off Jenkins' Ear! Worse, he threatened to do the same to our monarch if he should come.\n\nThis gravest indignity weighs not only on Jenkins but on the honor of our entire nation!"
  FEE_England_Great_Britain_Events.11.OPT1: "This is cause for war!"
  FEE_England_Great_Britain_Events.11.OPT2: "This is not important enough for war."
 
  FEE_England_Great_Britain_Events.12.T: "George Frederic Handel"
  FEE_England_Great_Britain_Events.12.D: "While originally from Prussia, George Frederic Handel was a Baroque composer who spent the bulk of his career in London. Often considered one of the greatest composers of the Baroque era, and indeed of Western Civilization generally, Handel was known for his choral compositions, sinfonias including “Arrival of the Queen of Sheba,” and coronation anthems for the British crown.\n\nHis greatest achievement, “The Messiah,” was an opera showcasing the Christmas and Easter stories, whose chorus so impressed $MONARCH$ that it caused [Root.Monarch.GetHerHim] to rise from [Root.Monarch.GetHerHis] seat in respect, an honor that no British monarch had ever given a composer."
  FEE_England_Great_Britain_Events.12.OPT1: "Hallelujah!"
+
+ FEE_England_Great_Britain_Events.13.T: "Statute of Icolmkill"
+ FEE_England_Great_Britain_Events.13.D: "You shouldn't be able to see this hidden event."
+ FEE_England_Great_Britain_Events.13.OPT1: "Please report it to the team if you see it."
+
+ FEE_England_Great_Britain_Events.14.T: "Removal of the Statute of Icolmkill"
+ FEE_England_Great_Britain_Events.14.D: "You shouldn't be able to see this hidden event."
+ FEE_England_Great_Britain_Events.14.OPT1: "Please report it to the team if you see it."
 
  FEE_England_Great_Britain_Events.15.T: "Sir Francis Drake"
  FEE_England_Great_Britain_Events.15.D: "Francis Drake was a renowned English Explorer, famous for his naval exploits, discovery of what we have now called New Albion and his Circumnavigation of the world from 1577 to 1580. Beloved by our people and our [Root.Monarch.GetName], he has just been awarded a knighthood and made Mayor of Plymouth. Fortunately for us, he has no intentions of ending his days quietly, having approached the [Root.Monarch.GetName] asking for a purpose once again. What shall we do with the man?"
@@ -97,41 +105,68 @@
 
 # Modifiers
  fee_eng_gbr_scientific_method: "Scientific Method"
+ desc_fee_eng_gbr_scientific_method: ""
 
  fee_eng_gbr_king_james_bible: "King James Bible"
+ desc_fee_eng_gbr_king_james_bible: ""
  fee_eng_gbr_authorized_version: "Authorized Version"
+ desc_fee_eng_gbr_authorized_version: ""
  fee_eng_gbr_god_now_speaks_english: "God now speaks English"
+ desc_fee_eng_gbr_god_now_speaks_english: ""
 
  fee_eng_gbr_united_kingdom: "United Kingdom"
+ desc_fee_eng_gbr_united_kingdom: ""
  fee_eng_gbr_union_of_britain: "Union of Britain"
+ desc_fee_eng_gbr_union_of_britain: ""
  fee_eng_gbr_unequal_status: "Unequal Status"
+ desc_fee_eng_gbr_unequal_status: ""
  fee_eng_gbr_english_empire: "English Empire"
+ desc_fee_eng_gbr_english_empire: ""
 
  statutes_of_icolmkill: "Statutes of Icolmkill"
+ desc_statutes_of_icolmkill: ""
  fee_eng_gbr_centralization_monarchy: "Centralization of Monarchy"
+ desc_fee_eng_gbr_centralization_monarchy: ""
  fee_eng_gbr_statute: "Statutes of Icolmkill"
+ desc_fee_eng_gbr_statute: ""
 
  fee_eng_gbr_puritan_dissent_tolerated: "Puritan Dissent Tolerated"
+ desc_fee_eng_gbr_puritan_dissent_tolerated: ""
  fee_eng_gbr_puritans_crushed: "Puritans Crushed"
+ desc_fee_eng_gbr_puritans_crushed: ""
  fee_eng_gbr_puritans_persecuted: "Puritans Persecuted"
+ desc_fee_eng_gbr_puritans_persecuted: ""
  fee_eng_gbr_puritans_flee_to_the_new_world: "Puritans Flee to the New World"
+ desc_fee_eng_gbr_puritans_flee_to_the_new_world: ""
  fee_eng_gbr_puritans_utopia: "Purtian Utopia"
+ desc_fee_eng_gbr_puritans_utopia: ""
 
  fee_eng_gbr_preparation_defend_honor: "Preperation to defend honor"
+ desc_fee_eng_gbr_preparation_defend_honor: ""
  fee_eng_gbr_abuses_tolerated: "Abuses tolerated"
+ desc_fee_eng_gbr_abuses_tolerated: ""
 
  fee_eng_gbr_el_draque: "El Draque"
+ desc_fee_eng_gbr_el_draque: ""
  fee_eng_gbr_legacy_drake: "Legacy of Drake"
+ desc_fee_eng_gbr_legacy_drake: ""
  El_Draque_modifier: "El Draque"
+ desc_El_Draque_modifier: ""
  Sea_Dog_modifier: "Sea Dog"
+ desc_Sea_Dog_modifier: ""
 
  fee_eng_gbr_great_plague: "Great Plague"
+ desc_fee_eng_gbr_great_plague: ""
 
  fee_eng_gbr_destruction_of_the_capital: "Destruction of the Capital"
+ desc_fee_eng_gbr_destruction_of_the_capital: ""
 
  fee_eng_gbr_wrens_london: "Wren's London"
+ desc_fee_eng_gbr_wrens_london: ""
  fee_eng_gbr_everlyns_london: "Everlyn's London"
+ desc_fee_eng_gbr_everlyns_london: ""
  fee_eng_gbr_hookes_london: "Hooke's London"
+ desc_fee_eng_gbr_hookes_london: ""
 
  fee_eng_gbr_travels_of_mahomed: "Travels of Mahomed"
  desc_fee_travels_of_mahomed: ""
