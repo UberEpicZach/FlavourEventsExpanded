@@ -54,7 +54,7 @@ country_event = {
 	}
 
 	option = {
-		name = cr_1.OPT2
+		name = FEE_PLC_Cossack_Revolts_Events.1.OPT2
 		ai_chance = { factor = 15 }
 		
 		add_prestige = -15
@@ -91,7 +91,7 @@ country_event = {
 	}
 
 	option = {
-		name = cr_2.OPT2
+		name = FEE_PLC_Cossack_Revolts_Events.2.OPT2
 		ai_chance = { factor = 10 }
 		
 		add_prestige = 15
