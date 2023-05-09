@@ -2,8 +2,8 @@ namespace = disaster_fee_zemene_mesafint
 
 country_event = {
 	id = disaster_fee_zemene_mesafint.1
-	title = disaster_fee_zemene_mesafint.EVTNAME1
-	desc = disaster_fee_zemene_mesafint.EVTDESC1
+	title = disaster_fee_zemene_mesafint.1.T
+	desc = disaster_fee_zemene_mesafint.1.D
 	picture = CIVIL_WAR_eventPicture
 
 	major = yes
@@ -171,7 +171,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_zemene_mesafint1.EVTOPT1
+		name = disaster_fee_zemene_mesafint.1.OPT1
 
 		set_country_flag = had_fee_zemene_mesafint
 		add_stability = -2
@@ -211,15 +211,15 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_zemene_mesafint.2
-	title = disaster_fee_zemene_mesafint.EVTNAME2
-	desc = disaster_fee_zemene_mesafint.EVTDESC2
+	title = disaster_fee_zemene_mesafint.2.T
+	desc = disaster_fee_zemene_mesafint.2.D
 	picture = GOOD_WITH_MONARCH_eventPicture
 
 	major = yes
 	is_triggered_only = yes
 
 	option = {
-		name = disaster_fee_zemene_mesafint2.EVTOPT1
+		name = disaster_fee_zemene_mesafint.2.OPT1
 
 		add_stability = 1
 		add_adm_power = 100
@@ -234,8 +234,8 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_zemene_mesafint.3
-	title = disaster_fee_zemene_mesafint.EVTNAME3
-	desc = disaster_fee_zemene_mesafint.EVTDESC3
+	title = disaster_fee_zemene_mesafint.3.T
+	desc = disaster_fee_zemene_mesafint.3.D
 	picture = ANGRY_MOB_eventPicture
 
 	is_triggered_only = yes
@@ -402,7 +402,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_zemene_mesafint3.EVTOPT1
+		name = disaster_fee_zemene_mesafint.3.OPT1
 
 		event_target:rebel_province_1 = {
 			noble_rebels = 2
@@ -452,7 +452,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_zemene_mesafint3.EVTOPT2
+		name = disaster_fee_zemene_mesafint.3.OPT2
 
 		add_dip_power = -100
 		if = {
@@ -482,7 +482,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_zemene_mesafint3.EVTOPT3
+		name = disaster_fee_zemene_mesafint.3.OPT3
 
 		if = {
 			limit = {
@@ -513,8 +513,8 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_zemene_mesafint.4
-	title = disaster_fee_zemene_mesafint.EVTNAME4
-	desc = disaster_fee_zemene_mesafint.EVTDESC4
+	title = disaster_fee_zemene_mesafint.4.T
+	desc = disaster_fee_zemene_mesafint.4.D
 	picture = BAD_WITH_MONARCH_eventPictue
 
 	is_triggered_only = yes
@@ -541,7 +541,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_zemene_mesafint4.EVTOPT1
+		name = disaster_fee_zemene_mesafint.4.OPT1
 
 		event_target:rebel_province = {
 			spawn_rebels = {
@@ -555,15 +555,15 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_zemene_mesafint.5
-	title = disaster_fee_zemene_mesafint.EVTNAME5
-	desc = disaster_fee_zemene_mesafint.EVTDESC5
+	title = disaster_fee_zemene_mesafint.5.T
+	desc = disaster_fee_zemene_mesafint.5.D
 	picture = COURT_eventPicture
 
 	fire_only_once = yes
 	is_triggered_only = yes
 
 	option = {
-		name = disaster_fee_zemene_mesafint5.EVTOPT1
+		name = disaster_fee_zemene_mesafint.5.OPT1
 
 		define_ruler = {
 			name = "Mentewab"
@@ -587,7 +587,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_zemene_mesafint5.EVTOPT2
+		name = disaster_fee_zemene_mesafint.5.OPT2
 
 		add_legitimacy_equivalent = { amount = 20 republican_tradition = 10 }
 		add_prestige = 10
@@ -596,8 +596,8 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_zemene_mesafint.6
-	title = disaster_fee_zemene_mesafint.EVTNAME6
-	desc = disaster_fee_zemene_mesafint.EVTDESC6
+	title = disaster_fee_zemene_mesafint.6.T
+	desc = disaster_fee_zemene_mesafint.6.D
 	picture = SIEGE_eventPicture
 
 	is_triggered_only = yes
@@ -684,7 +684,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_zemene_mesafint6.EVTOPT1
+		name = disaster_fee_zemene_mesafint.6.OPT1
 
 		event_target:target_province_1 = {
 			add_nationalism = 10
@@ -706,8 +706,8 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_zemene_mesafint.7
-	title = disaster_fee_zemene_mesafint.7.t
-	desc = disaster_fee_zemene_mesafint.7.d
+	title = disaster_fee_zemene_mesafint.7.T
+	desc = disaster_fee_zemene_mesafint.7.D
 	picture = ASSASSINATION_eventPicture
 
 	is_triggered_only = yes
@@ -717,7 +717,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_zemene_mesafint7.EVTOPT1
+		name = disaster_fee_zemene_mesafint.7.OPT1
 
 		tooltip = {
 			kill_ruler = yes
@@ -735,8 +735,8 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_zemene_mesafint.8
-	title = disaster_fee_zemene_mesafint.EVTNAME8
-	desc = disaster_fee_zemene_mesafint.EVTDESC8
+	title = disaster_fee_zemene_mesafint.8.T
+	desc = disaster_fee_zemene_mesafint.8.D
 	picture = COURT_eventPicture
 
 	is_triggered_only = yes
@@ -763,13 +763,13 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_zemene_mesafint8.EVTOPT1
+		name = disaster_fee_zemene_mesafint.8.OPT1
 
 		add_absolutism = -20
 	}
 
 	option = {
-		name = disaster_fee_zemene_mesafint8.EVTOPT2
+		name = disaster_fee_zemene_mesafint.8.OPT2
 
 		add_stability = -1
 		event_target:rebel_province_1 = {
@@ -783,8 +783,8 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_zemene_mesafint.9
-	title = disaster_fee_zemene_mesafint.EVTNAME9
-	desc = disaster_fee_zemene_mesafint.EVTDESC9
+	title = disaster_fee_zemene_mesafint.9.T
+	desc = disaster_fee_zemene_mesafint.9.D
 	picture = BATTLE_eventPicture
 
 	fire_only_once = yes
@@ -863,7 +863,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_zemene_mesafint9.EVTOPT1
+		name = disaster_fee_zemene_mesafint.9.OPT1
 
 		add_legitimacy_equivalent = { amount = -20 republican_tradition = -10 }
 		add_disaster_modifier = {
@@ -874,7 +874,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_zemene_mesafint9.EVTOPT2
+		name = disaster_fee_zemene_mesafint.9.OPT2
 
 		event_target:rebel_province_pretender_1 = {
 			pretender_rebels = 2

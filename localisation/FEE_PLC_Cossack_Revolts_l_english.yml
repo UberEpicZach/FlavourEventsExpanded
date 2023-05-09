@@ -41,19 +41,19 @@
 
  FEE_PLC_Cossack_Revolts_Events.10.T: "An influental Cossack demands changes"
  FEE_PLC_Cossack_Revolts_Events.10.D: "Severyn Nalyvaiko, after leaving our service have sent the list of demands to the Szlachta. This list contained demands for the changes to the upkeep of the Cossack regiments which served in their armies. This included respect for the Cossack customs. He is justifying his demands with Cossack's active involvements against infidels from the south.\n\nAlthough it's hard to deny that, the Szlachta is not willing to sway towards accepting the demands. Considering the recent uprising, rejecting them might lead to unpredictable concequences."
- FEE_PLC_Cossack_Revolts_Events.1.OPT1a: "They will have to decide..."
+ FEE_PLC_Cossack_Revolts_Events.10.OPT1: "They will have to decide..."
  # Just or Righteous
- FEE_PLC_Cossack_Revolts_Events.1.OPT2: "His demands are justified, Szlachta should acknowledge that!"
+ FEE_PLC_Cossack_Revolts_Events.10.OPT2: "His demands are justified, Szlachta should acknowledge that!"
  # Kind-Hearted
- cr_10_c: "Cossacks deserve better for their service. We will pay for it."
+ FEE_PLC_Cossack_Revolts_Events.10.OPT3: "Cossacks deserve better for their service. We will pay for it."
  # Secretive or Intricate Webweaver
- cr_10_d: "A few bribes and blackmails will help them to take right decision."
+ FEE_PLC_Cossack_Revolts_Events.10.OPT4: "A few bribes and blackmails will help them to take right decision."
  # Charismatic Negotiator, Fierce Negotiator or Silver Tongue
- cr_10_e: "Szlachta will be convinced that this is necessary."
+ FEE_PLC_Cossack_Revolts_Events.10.OPT5: "Szlachta will be convinced that this is necessary."
  # Embezzler or Greedy
- cr_10_f: "Better? I think he meant worse, I am sure!"
+ FEE_PLC_Cossack_Revolts_Events.10.OPT6: "Better? I think he meant worse, I am sure!"
  # Cruel or Malevolent
- cr_10_g: "Off with the head of this upstart!"
+ FEE_PLC_Cossack_Revolts_Events.10.OPT7: "Off with the head of this upstart!"
 
  grateful_cossacks: "Grateful Cossacks"
  despised_by_the_cossacks: "Despised by the Cossacks"

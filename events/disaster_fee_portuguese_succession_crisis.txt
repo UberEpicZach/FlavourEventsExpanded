@@ -2,8 +2,8 @@ namespace = disaster_fee_portuguese_succession_crisis
 
 country_event = {
 	id = disaster_fee_portuguese_succession_crisis.1
-	title = disaster_fee_portuguese_succession_crisis.EVTNAME1
-	desc = disaster_fee_portuguese_succession_crisis.EVTDESC1
+	title = disaster_fee_portuguese_succession_crisis.1.T
+	desc = disaster_fee_portuguese_succession_crisis.1.D
 	picture = CIVIL_WAR_eventPicture
 
 	major = yes
@@ -83,7 +83,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_portuguese_succession_crisis1.EVTOPT1
+		name = disaster_fee_portuguese_succession_crisis.1.OPT1
 
 		add_stability = -2
 		event_target:rebels_prov_1 = {
@@ -110,7 +110,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_portuguese_succession_crisis1.EVTOPT2
+		name = disaster_fee_portuguese_succession_crisis.1.OPT2
 
 		add_stability = -2
 		tooltip = {
@@ -167,15 +167,15 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_portuguese_succession_crisis.2
-	title = disaster_fee_portuguese_succession_crisis.EVTNAME2
-	desc = disaster_fee_portuguese_succession_crisis.EVTDESC2
+	title = disaster_fee_portuguese_succession_crisis.2.T
+	desc = disaster_fee_portuguese_succession_crisis.2.D
 	picture = GOOD_WITH_MONARCH_eventPicture
 
 	major = yes
 	is_triggered_only = yes
 
 	option = {
-		name = disaster_fee_portuguese_succession_crisis2.EVTOPT1
+		name = disaster_fee_portuguese_succession_crisis.2.OPT1
 
 		add_prestige = 20
 		add_legitimacy = 20
@@ -188,8 +188,8 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_portuguese_succession_crisis.3
-	title = disaster_fee_portuguese_succession_crisis.EVTNAME3
-	desc = disaster_fee_portuguese_succession_crisis.EVTDESC3
+	title = disaster_fee_portuguese_succession_crisis.3.T
+	desc = disaster_fee_portuguese_succession_crisis.3.D
 	picture = CIVIL_WAR_eventPicture
 
 	is_triggered_only = yes
@@ -203,7 +203,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_portuguese_succession_crisis3.EVTOPT1
+		name = disaster_fee_portuguese_succession_crisis.3.OPT1
 
 		random_owned_province = {
 			limit = {
@@ -218,8 +218,8 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_portuguese_succession_crisis.4
-	title = disaster_fee_portuguese_succession_crisis.EVTNAME4
-	desc = disaster_fee_portuguese_succession_crisis.EVTDESC4
+	title = disaster_fee_portuguese_succession_crisis.4.T
+	desc = disaster_fee_portuguese_succession_crisis.4.D
 	picture = CIVIL_WAR_eventPicture
 
 	is_triggered_only = yes
@@ -234,7 +234,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_portuguese_succession_crisis4.EVTOPT1
+		name = disaster_fee_portuguese_succession_crisis.4.OPT1
 
 		random_owned_province = {
 			limit = {
@@ -257,8 +257,8 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_portuguese_succession_crisis.5
-	title = disaster_fee_portuguese_succession_crisis.EVTNAME5
-	desc = disaster_fee_portuguese_succession_crisis.EVTDESC5
+	title = disaster_fee_portuguese_succession_crisis.5.T
+	desc = disaster_fee_portuguese_succession_crisis.5.D
 	picture = GOOD_WITH_MONARCH_eventPicture
 
 	fire_only_once = yes
@@ -270,7 +270,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_portuguese_succession_crisis5.EVTOPT1
+		name = disaster_fee_portuguese_succession_crisis.5.OPT1
 
 		tooltip = {
 			if = {
@@ -330,7 +330,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_portuguese_succession_crisis3.EVTOPT2
+		name = disaster_fee_portuguese_succession_crisis.5.OPT2
 
 		add_legitimacy = -20
 	}
@@ -338,14 +338,14 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_portuguese_succession_crisis.6
-	title = disaster_fee_portuguese_succession_crisis.EVTNAME6
-	desc = disaster_fee_portuguese_succession_crisis.EVTDESC6
+	title = disaster_fee_portuguese_succession_crisis.6.T
+	desc = disaster_fee_portuguese_succession_crisis.6.D
 	picture = DIPLOMACY_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = disaster_fee_portuguese_succession_crisis6.EVTOPT1
+		name = disaster_fee_portuguese_succession_crisis.6.OPT1
 
 		ai_chance = {
 			factor = 100
@@ -371,7 +371,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_portuguese_succession_crisis6.EVTOPT2
+		name = disaster_fee_portuguese_succession_crisis.6.OPT2
 
 		ai_chance = {
 			factor = 100
@@ -404,14 +404,14 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_portuguese_succession_crisis.7
-	title = disaster_fee_portuguese_succession_crisis.EVTNAME7
-	desc = disaster_fee_portuguese_succession_crisis.EVTDESC7
+	title = disaster_fee_portuguese_succession_crisis.7.T
+	desc = disaster_fee_portuguese_succession_crisis.7.D
 	picture = GOOD_WITH_MONARCH_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = disaster_fee_portuguese_succession_crisis7.EVTOPT1
+		name = disaster_fee_portuguese_succession_crisis.7.OPT1
 
 		add_stability_or_adm_power = yes
 		add_prestige = 20
@@ -421,14 +421,14 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_portuguese_succession_crisis.8
-	title = disaster_fee_portuguese_succession_crisis.EVTNAME8
-	desc = disaster_fee_portuguese_succession_crisis.EVTDESC8
+	title = disaster_fee_portuguese_succession_crisis.8.T
+	desc = disaster_fee_portuguese_succession_crisis.8.D
 	picture = GOOD_WITH_MONARCH_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = disaster_fee_portuguese_succession_crisis8.EVTOPT1
+		name = disaster_fee_portuguese_succession_crisis.8.OPT1
 
 		add_legitimacy = -15
 		add_ruler_modifier = {
@@ -440,8 +440,8 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_portuguese_succession_crisis.9
-	title = disaster_fee_portuguese_succession_crisis.EVTNAME9
-	desc = disaster_fee_portuguese_succession_crisis.EVTDESC9
+	title = disaster_fee_portuguese_succession_crisis.9.T
+	desc = disaster_fee_portuguese_succession_crisis.9.D
 	picture = CIVIL_WAR_eventPicture
 
 	is_triggered_only = yes
@@ -458,7 +458,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_portuguese_succession_crisis9.EVTOPT1
+		name = disaster_fee_portuguese_succession_crisis.9.OPT1
 
 		add_stability = -1
 		random_owned_province = {
@@ -474,8 +474,8 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_portuguese_succession_crisis.10
-	title = disaster_fee_portuguese_succession_crisis.EVTNAME10
-	desc = disaster_fee_portuguese_succession_crisis.EVTDESC10
+	title = disaster_fee_portuguese_succession_crisis.10.T
+	desc = disaster_fee_portuguese_succession_crisis.10.D
 	picture = CIVIL_WAR_eventPicture
 
 	hidden = yes
@@ -520,7 +520,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_portuguese_succession_crisis10.EVTOPT1
+		name = disaster_fee_portuguese_succession_crisis.10.OPT1
 
 		ai_chance = { factor = 100 }
 	}
@@ -528,8 +528,8 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_portuguese_succession_crisis.11
-	title = disaster_fee_portuguese_succession_crisis.EVTNAME11
-	desc = disaster_fee_portuguese_succession_crisis.EVTDESC11
+	title = disaster_fee_portuguese_succession_crisis.11.T
+	desc = disaster_fee_portuguese_succession_crisis.11.D
 	picture = CIVIL_WAR_eventPicture
 
 	major = yes
@@ -539,7 +539,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = disaster_fee_portuguese_succession_crisis11.EVTOPT1
+		name = disaster_fee_portuguese_succession_crisis.11.OPT1
 
 		ai_chance = { factor = 75 }
 
@@ -570,7 +570,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_portuguese_succession_crisis11.EVTOPT2
+		name = disaster_fee_portuguese_succession_crisis.11.OPT2
 
 		ai_chance = { factor = 25 }
 
@@ -584,14 +584,14 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_portuguese_succession_crisis.12
-	title = disaster_fee_portuguese_succession_crisis.EVTNAME12
-	desc = disaster_fee_portuguese_succession_crisis.EVTDESC12
+	title = disaster_fee_portuguese_succession_crisis.12.T
+	desc = disaster_fee_portuguese_succession_crisis.12.D
 	picture = CIVIL_WAR_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = disaster_fee_portuguese_succession_crisis12.EVTOPT1
+		name = disaster_fee_portuguese_succession_crisis.12.OPT1
 
 		add_mil_power = 50
 		add_country_modifier = {
