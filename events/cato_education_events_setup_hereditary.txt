@@ -20,6 +20,10 @@ country_event = {
 				which = heirEducationalLevel
 				value = 0
 			}
+			set_variable = {
+				which = heir_education_event_number
+				value = 0
+			}
 			set_heir_flag = heir_started_education
 		}
 	}
@@ -82,7 +86,6 @@ country_event = {
 	trigger = {
 	}
 
-	
 	option = {
 		name = cato_education_events_setup_hereditary.2.a
 		set_heir_flag = clerical_education
@@ -163,7 +166,6 @@ country_event = {
 	trigger = {
 	}
 
-	
 	option = {
 		name = cato_education_events_setup_hereditary.3.a
 		set_heir_flag = diplomacy_education
@@ -244,7 +246,6 @@ country_event = {
 	trigger = {
 	}
 
-	
 	option = {
 		name = cato_education_events_setup_hereditary.4.a
 		set_heir_flag = martial_education
@@ -749,15 +750,15 @@ country_event = {
 	title = cato_education_events_setup_hereditary.10.title
 	desc = {
 		trigger = {
-			had_heir_flag = {
-				flag = heir_started_education
-				days = 2920 ###8 years
+			check_variable = {
+				which = heir_education_event_number
+				value = 16
 			}
 		}
 		desc = "cato_education_events_setup_hereditary.10.desc.a"###Description for if the heir completes their education successfully.
 	}
 	desc = {
-		trigger = { 
+		trigger = {
 			has_ruler_flag = heir_started_education
 		}
 		desc = "cato_education_events_setup_hereditary.10.desc.b"###Description for if the heir is forced to the throne before they complete it.
@@ -766,11 +767,12 @@ country_event = {
 	trigger = {
 		OR = {
 			AND = {
-				had_heir_flag = {
-					flag = heir_started_education
-					days = 2920###2920 8 years
+				check_variable = {
+					which = heir_education_event_number
+					value = 16
 				}
 				heir_available = yes
+				has_heir_flag = heir_started_education
 			}
 			has_ruler_flag = heir_started_education
 		}

@@ -324,7 +324,7 @@ country_event = {
 		}
 
 		add_adm_power = 100
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 		add_country_modifier = {
 			name = fee_enlightenment_grand_work_adm
 			duration = 3650
@@ -340,7 +340,7 @@ country_event = {
 			has_country_flag = fee_enlightenment_great_work
 		}
 		add_dip_power = 100
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 		add_country_modifier = {
 			name = fee_enlightenment_grand_work_dip
 			duration = 3650
@@ -357,7 +357,7 @@ country_event = {
 		}
 
 		add_mil_power = 100
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 		add_country_modifier = {
 			name = fee_enlightenment_grand_work_mil
 			duration = 3650
@@ -374,7 +374,7 @@ country_event = {
 		}
 
 		add_adm_power = 100
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 		add_country_modifier = {
 			name = fee_enlightenment_grand_work_adm
 			duration = 3650
@@ -388,7 +388,7 @@ country_event = {
 		}
 
 		add_dip_power = 100
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 		add_country_modifier = {
 			name = fee_enlightenment_grand_work_dip
 			duration = 3650
@@ -402,7 +402,7 @@ country_event = {
 		}
 
 		add_mil_power = 100
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 		add_country_modifier = {
 			name = fee_enlightenment_grand_work_mil
 			duration = 3650
@@ -1158,7 +1158,7 @@ country_event = {
 			name = fee_enlightenment_literary_work_presented
 			duration = 1825
 		}
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 	}
 }
 

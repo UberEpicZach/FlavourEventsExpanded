@@ -105,7 +105,7 @@ country_event = {
 
 	option = {
 		name = FEE_Burgundy_Events.1.OPT2
-		
+
 		add_opinion = {
 			who = HAB
 			modifier = fee_bur_king_of_loth_hab
@@ -139,7 +139,7 @@ country_event = {
 		}
 
 		add_years_of_income = -0.2
-		add_prestige = 20
+		add_prestige_or_monarch_power = { amount = 20 }
 		if = {
 			limit = { has_dlc = "Mandate of Heaven" }
 			add_splendor = 100
@@ -221,7 +221,7 @@ country_event = {
 			factor = 20
 		}
 
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 	}
 }
 
@@ -271,7 +271,6 @@ country_event = {
 # 	picture = event_test
 # }
 
-
 # # Jacques de Lalaing
 # country_event = {
 # 	id = FEE_Burgundy_Events.6
@@ -293,7 +292,7 @@ country_event = {
 # 			factor = 50
 # 		}
 
-# 		add_prestige = 10
+# 		add_prestige_or_monarch_power = { amount = 10 }
 # 		create_general = {
 # 			name = "Jacques de Lalaing"
 # 			tradition = 100
@@ -346,7 +345,7 @@ country_event = {
 # 			factor = 100
 # 		}
 
-# 		add_mil_power = 100	
+# 		add_mil_power = 100
 # 		add_country_modifier = {
 # 			name = fee_guns_of_burgundy
 # 			duration = 9125

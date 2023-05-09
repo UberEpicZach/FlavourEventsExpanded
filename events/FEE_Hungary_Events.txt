@@ -397,7 +397,7 @@ country_event = {
 			factor = 0
 		}
 
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 	}
 }
 
@@ -425,7 +425,7 @@ country_event = {
 			factor = 0
 		}
 
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 	}
 }
 
@@ -762,7 +762,7 @@ country_event = {
 			limit = { culture = hungarian }
 			spawn_rebels = {
 				size = 2
-				type = noble_rebels 
+				type = noble_rebels
 			}
 		}
 		random_owned_province = {
@@ -1403,6 +1403,6 @@ country_event = {
 		name = FEE_Hungary_Events.20.OPT2
 
 		add_adm_power = 100
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 	}
 }

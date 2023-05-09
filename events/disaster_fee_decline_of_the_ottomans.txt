@@ -20,6 +20,17 @@ country_event = {
 
 		add_stability = -3
 		add_corruption = 5
+		every_owned_province = {
+			limit = {
+				OR = {
+					area = delta_area
+					area = al_wahat_area
+					area = bahari_area
+					area = gulf_of_arabia_area
+				}
+			}
+			add_local_autonomy = 25
+		}
 	}
 }
 
@@ -69,7 +80,7 @@ country_event = {
 	option = {
 		name = disaster_fee_decline_of_the_ottomans.3.OPT1
 
-		add_inflation = 4
+		add_inflation = 3
 	}
 }
 
@@ -770,7 +781,7 @@ country_event = {
 		ai_chance = { factor = 0.25 }
 
 		add_stability = -1
-		add_inflation = 4
+		add_inflation = 3
 		if = {
 			limit = {
 				has_estate = estate_burghers

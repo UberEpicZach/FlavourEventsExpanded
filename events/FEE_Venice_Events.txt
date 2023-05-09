@@ -211,7 +211,7 @@ country_event = {
 		add_dip_power = 25
 		if = {
 			limit = {
-				has_dlc = "Rule Britannia"	
+				has_dlc = "Rule Britannia"
 			}
 			add_innovativeness_small_effect = yes
 		}
@@ -431,7 +431,7 @@ country_event = {
 
 	option = {
 		name = FEE_Venice_Events.9.OPT1
-		
+
 		add_mil_power = -100
 		add_years_of_income = -0.5
 		custom_tooltip = FEE_VEN_FANTI_MAR_TT
@@ -461,7 +461,7 @@ country_event = {
 
 	option = {
 		name = FEE_Venice_Events.9.OPT2
-		
+
 		add_prestige = -5
 	}
 }
@@ -488,7 +488,7 @@ country_event = {
 
 	option = {
 		name = FEE_Venice_Events.10.OPT1
-		
+
 		add_legitimacy_equivalent = { amount = 10 republican_tradition = 5 }
 		add_dip_power = 25
 		TUR = {
@@ -501,13 +501,15 @@ country_event = {
 
 	option = {
 		name = FEE_Venice_Events.10.OPT2
-		
+
 		add_mil_power = 150
 		151 = {
 			if = {
 				limit = {
-					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+					NOT = { is_empty = yes }
+					NOT = { is_wasteland = yes }
 				}
 				add_permanent_claim = ROOT
 			}
@@ -771,7 +773,7 @@ country_event = {
 		name = FEE_Venice_Events.16.OPT1
 
 		add_years_of_income = 0.5
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 		112 = {
 			add_base_tax = 2
 		}
@@ -806,7 +808,7 @@ country_event = {
 	option = {
 		name = FEE_Venice_Events.17.OPT1
 
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 		add_legitimacy_equivalent = { amount = 5 republican_tradition = 3 }
 		add_ruler_modifier = {
 			name = fee_ven_doge_foscari
@@ -4190,7 +4192,7 @@ country_event = {
 		}
 
 		add_mil_power = 100
-		add_prestige = 15
+		add_prestige_or_monarch_power = { amount = 15 }
 		add_opinion = {
 			who = FROM
 			modifier = border_friction_from_event
@@ -4235,7 +4237,7 @@ country_event = {
 		trigger = {
 			NOT = { owns = 1224 }
 		}
-			
+
 		if = {
 			limit = { exists = ETH }
 			ETH = {
@@ -4333,7 +4335,7 @@ country_event = {
 			factor = 50
 		}
 
-		add_prestige = 15
+		add_prestige_or_monarch_power = { amount = 15 }
 		add_legitimacy_equivalent = { amount = 15 republican_tradition = 7 }
 		add_opinion = {
 			who = FROM
@@ -4716,7 +4718,7 @@ country_event = {
 		ai_chance = {
 			factor = 0
 		}
-		
+
 		if = {
 			limit = { has_estate = estate_burghers }
 			add_estate_loyalty = {
@@ -5244,7 +5246,7 @@ country_event = {
 			factor = 0
 		}
 
-		add_prestige = 3
+		add_prestige_or_monarch_power = { amount = 3 }
 	}
 }
 
@@ -5309,7 +5311,7 @@ country_event = {
 		}
 
 		add_mil_power = 25
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 		add_opinion = {
 			who = FROM
 			modifier = opinion_export_bad
@@ -5440,7 +5442,7 @@ country_event = {
 		}
 
 		add_mil_power = 50
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 		add_legitimacy_equivalent = { amount = 10 republican_tradition = 5 }
 	}
 }
@@ -6339,7 +6341,7 @@ country_event = {
 	}
 }
 
-# 
+#
 #country_event = {
 #	id = FEE_Venice_Events.
 #	title = FEE_Venice_Events..T

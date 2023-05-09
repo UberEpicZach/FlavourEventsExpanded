@@ -259,7 +259,7 @@ country_event = {
 		}
 
 		add_treasury = -50
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 		random_owned_province = {
 			limit = {
 				is_in_capital_area = yes
@@ -335,7 +335,7 @@ country_event = {
 		}
 
 		add_treasury = -50
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 		random_owned_province = {
 			limit = {
 				is_in_capital_area = yes
@@ -410,7 +410,7 @@ country_event = {
 		}
 
 		add_treasury = -50
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 		hidden_effect = {
 			add_country_modifier = {
 				name = fee_hab_baroque_building_timer

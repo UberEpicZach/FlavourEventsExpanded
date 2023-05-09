@@ -82,24 +82,15 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			random_owned_province = {
-				limit = {
-					
-					is_state = yes
-				}
+				limit = { is_state = yes }
 				save_event_target_as = rebel_province_1
 			}
 			random_owned_province = {
-				limit = {
-					
-					is_state = yes
-				}
+				limit = { is_state = yes }
 				save_event_target_as = rebel_province_2
 			}
 			random_owned_province = {
-				limit = {
-					
-					is_state = yes
-				}
+				limit = { is_state = yes }
 				save_event_target_as = rebel_province_3
 			}
 			random_owned_province = {

@@ -21,12 +21,27 @@ country_event = {
 	trigger = {
 		is_lesser_in_union = no
 		heir_can_recieve_education_events = yes
+		NOT = {
+			check_variable = {
+				which = heir_education_event_number
+				value = 16
+			}
+		}
+		OR = {
+			NOT = { has_country_flag = recent_education_event }
+			had_country_flag = {
+				flag = recent_education_event
+				days = 180
+			}
+		}
 	}
 	immediate = {
-		country_event = {
-			id = cato_education_events_education_progress.0001
-			days = 180
+		change_variable = {
+			which = heir_education_event_number
+			value = 1
 		}
+		clr_country_flag = recent_education_event
+		set_country_flag = recent_education_event
 	}
 	option = {
 		name = cato_education_events_education_progress.0002.title
@@ -241,8 +256,7 @@ country_event = {
 		name = cato_education_events_education_progress.1009.title
 		trigger = {
 			has_heir_flag = clerical_education
-			NOT = { heir_has_personality = zealot_personality }
-			NOT = { heir_has_personality = tolerant_personality }
+			heir_has_personality_trait = no
 			NOT = { has_idea_group = humanist_ideas }
 		}
 		country_event = { id = cato_education_events_education_progress.1009 }
@@ -252,8 +266,7 @@ country_event = {
 		name = cato_education_events_education_progress.1010.title
 		trigger = {
 			has_heir_flag = clerical_education
-			NOT = { heir_has_personality = zealot_personality }
-			NOT = { heir_has_personality = tolerant_personality }
+			heir_has_personality_trait = no
 			NOT = { has_idea_group = religious_ideas }
 		}
 		country_event = { id = cato_education_events_education_progress.1010 }
@@ -376,8 +389,7 @@ country_event = {
 		name = cato_education_events_education_progress.2006.title
 		trigger = {
 			has_heir_flag = administrative_education
-			NOT = { heir_has_personality = midas_touched_personality }
-			NOT = { heir_has_personality = greedy_personality }
+			heir_has_personality_trait = no
 		}
 		country_event = { id = cato_education_events_education_progress.2006 }
 		ai_chance = { factor = 1 }
@@ -386,8 +398,7 @@ country_event = {
 		name = cato_education_events_education_progress.2007.title
 		trigger = {
 			has_heir_flag = administrative_education
-			NOT = { heir_has_personality = midas_touched_personality }
-			NOT = { heir_has_personality = greedy_personality }
+			heir_has_personality_trait = no
 		}
 		country_event = { id = cato_education_events_education_progress.2007 }
 		ai_chance = { factor = 1 }
@@ -396,7 +407,7 @@ country_event = {
 		name = cato_education_events_education_progress.2008.title
 		trigger = {
 			has_heir_flag = administrative_education
-			NOT = { heir_has_personality = lawgiver_personality }
+			heir_has_personality_trait = no
 		}
 		country_event = { id = cato_education_events_education_progress.2008 }
 		ai_chance = { factor = 1 }
@@ -471,6 +482,28 @@ country_event = {
 			}
 		}
 		country_event = { id = cato_education_events_education_progress.3002 }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = cato_education_events_education_progress.3003.title
+		trigger = {
+			has_heir_flag = scholastic_education
+			NOT = {
+				has_heir_flag = literacy_choice
+			}
+		}
+		country_event = { id = cato_education_events_education_progress.3003 }
+		ai_chance = { factor = 1 }
+	}
+	option = {
+		name = cato_education_events_education_progress.3004.title
+		trigger = {
+			has_heir_flag = scholastic_education
+			NOT = {
+				has_heir_flag = glasses_choice
+			}
+		}
+		country_event = { id = cato_education_events_education_progress.3004 }
 		ai_chance = { factor = 1 }
 	}
 	option = {
@@ -1090,7 +1123,6 @@ country_event = {
 	title = cato_education_events_education_progress.0011.title
 	desc = cato_education_events_education_progress.0011.desc
 	picture = ECONOMY_eventPicture
-	hidden = yes
 	is_triggered_only = yes
 	
 	trigger = {
@@ -2333,7 +2365,7 @@ country_event = {
 	
 	
 	option = {
-		name = cato_education_events_education_progress.10013.a
+		name = cato_education_events_education_progress.1013.a
 		trigger = {
 			has_heir_flag = he_critical_success
 		}
@@ -2347,7 +2379,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.1013.b
+		name = cato_education_events_education_progress.1013.a
 		trigger = {
 			has_heir_flag = he_success
 		}
@@ -2364,7 +2396,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = cato_education_events_education_progress.1013.c
+		name = cato_education_events_education_progress.1013.b
 		trigger = {
 			has_heir_flag = he_neutral_1
 		}

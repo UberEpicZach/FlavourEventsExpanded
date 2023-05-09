@@ -153,7 +153,7 @@ country_event = {
 	option = {
 		name = FEE_Russia_Events.2.OPT1
 		ai_chance = { factor = 30 }
-		
+
 		finland_area = {
 			add_province_modifier = {
 				name = fee_rus_rebellion_in_finland
@@ -195,7 +195,7 @@ country_event = {
 	option = {
 		name = FEE_Russia_Events.2.OPT2
 		ai_chance = { factor = 10 }
-		
+
 		finland_area = {
 			add_province_modifier = {
 				name = fee_rus_rights_guaranteed
@@ -237,7 +237,7 @@ country_event = {
 	option = {
 		name = FEE_Russia_Events.2.OPT3
 		ai_chance = { factor = 30 }
-		
+
 		release	= FIN
 		hidden_effect = {
 			FIN = {
@@ -282,7 +282,7 @@ country_event = {
 	option = {
 		name = FEE_Russia_Events.2.OPT4
 		ai_chance = { factor = 30 }
-		
+
 		release = FIN
 		create_march = FIN
 		finland_area = {

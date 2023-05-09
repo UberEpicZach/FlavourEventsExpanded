@@ -47,7 +47,7 @@ country_event = {
 			factor = 0
 		}
 
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 	}
 }
 
@@ -181,7 +181,7 @@ country_event = {
 			}
 		}
 
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 		BRA = {
 			country_event = {
 				id = FEE_Brandenburg_Events.4
@@ -200,7 +200,7 @@ country_event = {
 
 	fire_only_once = yes
 
-	is_triggered_only = yes 	
+	is_triggered_only = yes
 
 	option = {
 		name = FEE_Brandenburg_Events.3.OPT1
@@ -382,7 +382,7 @@ country_event = {
 
 	fire_only_once = yes
 
-	is_triggered_only = yes 	
+	is_triggered_only = yes
 
 	option = {
 		name = FEE_Brandenburg_Events.6.OPT1
@@ -513,7 +513,7 @@ country_event = {
 			factor = 1
 		}
 
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 	}
 }
 
@@ -561,7 +561,7 @@ country_event = {
 	}
 	option = {
 		name = FEE_Brandenburg_Events.9.OPT2
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 		ai_chance = {
 			factor = 1
 		}
@@ -909,7 +909,7 @@ country_event = {
 			}
 		}
 
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 	}
 }
 
@@ -944,7 +944,7 @@ country_event = {
 			factor = 0
 		}
 
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 	}
 }
 
@@ -1424,7 +1424,7 @@ country_event = {
 			}
 		}
 
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 	}
 }
 
@@ -1978,7 +1978,7 @@ country_event = {
 						diplomatic_reputation = PRU
 					}
 				}
-				
+
 			}
 		}
 
@@ -3800,7 +3800,7 @@ country_event = {
 			factor = 0
 		}
 
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 	}
 }
 
@@ -3985,7 +3985,7 @@ country_event = {
 			value = 4
 			OR = {
 				area = vorpommern_area
-				area = hinter_pommern_area 
+				area = hinter_pommern_area
 			}
 		}
 		is_at_war = yes
@@ -4033,7 +4033,7 @@ country_event = {
 				limit = {
 					OR = {
 						area = vorpommern_area
-						area = hinter_pommern_area 
+						area = hinter_pommern_area
 					}
 				}
 				cede_province = POM

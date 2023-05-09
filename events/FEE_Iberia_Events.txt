@@ -32,7 +32,7 @@ country_event = {
 
 	option = {
 		name = FEE_Iberia_Events.1.OPT1
-		
+
 		ai_chance = {
 			factor = 33
 		}
@@ -120,7 +120,7 @@ country_event = {
 
 	option = {
 		name = FEE_Iberia_Events.1.OPT2
-		
+
 		ai_chance = {
 			factor = 33
 		}
@@ -142,7 +142,7 @@ country_event = {
 
 	option = {
 		name = FEE_Iberia_Events.1.OPT3
-		
+
 		ai_chance = {
 			factor = 33
 		}
@@ -186,11 +186,11 @@ country_event = {
 
 	option = {
 		name = FEE_Iberia_Events.2.OPT1
-		
+
 		ai_chance = {
 			factor = 33
 		}
-		
+
 		define_advisor = {
 			type = army_reformer
 			name = "Pedro Madruga"
@@ -203,7 +203,7 @@ country_event = {
 
 	option = {
 		name = FEE_Iberia_Events.2.OPT2
-		
+
 		ai_chance = {
 			factor = 33
 		}
@@ -220,11 +220,11 @@ country_event = {
 
 	option = {
 		name = FEE_Iberia_Events.2.OPT3
-		
+
 		ai_chance = {
 			factor = 33
 		}
-		
+
 		define_admiral = {
 			name = "Pedro Madruga"
 			fire = 4
@@ -314,13 +314,13 @@ country_event = {
 			add_permanent_province_modifier = {
 				name = iberia_autonomous_regions
 				duration = -1
-			}		
+			}
 		}
 		basque_country = {
 			add_permanent_province_modifier = {
 				name = iberia_autonomous_regions
 				duration = -1
-			}		
+			}
 		}
 	}
 
@@ -342,13 +342,13 @@ country_event = {
 			add_permanent_province_modifier = {
 				name = iberia_restricted_autonomy
 				duration = -1
-			}		
+			}
 		}
 		basque_country = {
 			add_permanent_province_modifier = {
 				name = iberia_restricted_autonomy
 				duration = -1
-			}		
+			}
 		}
 	}
 
@@ -443,7 +443,7 @@ country_event = {
 		ai_chance = {
 			factor = 25
 		}
-		
+
 		add_stability = -1
 		add_years_of_income = 1.5
 		add_country_modifier = {
@@ -460,13 +460,13 @@ country_event = {
 			add_permanent_province_modifier = {
 				name = iberia_abolished_local_privileges
 				duration = -1
-			}		
+			}
 		}
 		basque_country = {
 			add_permanent_province_modifier = {
 				name = iberia_abolished_local_privileges
 				duration = -1
-			}		
+			}
 		}
 
 		random_province = {
@@ -945,7 +945,7 @@ country_event = {
 			factor = 50
 		}
 
-		add_prestige = -10		
+		add_prestige = -10
 	}
 }
 
@@ -1183,7 +1183,7 @@ country_event = {
 		}
 		add_reform_desire = 0.02
 		add_stability_or_adm_power = yes
-		add_corruption = 1		
+		add_corruption = 1
 		add_country_modifier = {
 			name = iberia_reforms_rejected
 			duration = -1
@@ -1304,7 +1304,7 @@ country_event = {
 		ai_chance = {
 			factor = 33
 		}
-		add_prestige = 15
+		add_prestige_or_monarch_power = { amount = 15 }
 		add_reform_desire = 0.05
 		PAP = {
 			add_opinion = {
@@ -1363,7 +1363,7 @@ country_event = {
 		ai_chance = {
 			factor = 33
 		}
-		
+
 		add_reform_desire = 0.03
 		add_stability_or_adm_power = yes
 		define_advisor = {
@@ -1386,7 +1386,7 @@ country_event = {
 		ai_chance = {
 			factor = 33
 		}
-		
+
 		add_reform_desire = -0.01
 		add_stability = -1
 		add_country_modifier = {
@@ -1534,7 +1534,7 @@ country_event = {
 		ai_chance = {
 			factor = 33
 		}
-		
+
 		add_reform_desire = 0.01
 		add_country_modifier = {
 			name = iberia_recogimiento
@@ -1726,7 +1726,7 @@ country_event = {
 		ai_chance = {
 			factor = 50
 		}
-		add_prestige = 25
+		add_prestige_or_monarch_power = { amount = 25 }
 	}
 }
 
@@ -1778,7 +1778,7 @@ country_event = {
 			factor = 33
 		}
 		change_religious_influence_equivalent_fee = { add = 10 }
-		add_prestige = 15
+		add_prestige_or_monarch_power = { amount = 15 }
 	}
 
 	option = {
@@ -1825,7 +1825,7 @@ country_event = {
 			factor = 50
 		}
 		add_stability_or_adm_power = yes
-		add_prestige = 25
+		add_prestige_or_monarch_power = { amount = 25 }
 		add_years_of_income = 1
 		remove_country_modifier = iberia_jesuit_education
 		random_owned_province = {

@@ -67,7 +67,7 @@ country_event = {
 		}
 
 		add_stability = -1
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 	}
 }
 
@@ -344,7 +344,7 @@ country_event = {
 	option = {
 		name = FEE_Saxony_Events.6.OPT1
 
-		add_prestige = 15
+		add_prestige_or_monarch_power = { amount = 15 }
 		add_stability_or_adm_power = yes
 	}
 }
@@ -445,7 +445,7 @@ country_event = {
 		name = FEE_Saxony_Events.8.OPT1
 
 		add_treasury = -15
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 		61 = { add_base_tax = 2 }
 	}
 

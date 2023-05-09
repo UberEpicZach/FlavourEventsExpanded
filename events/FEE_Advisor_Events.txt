@@ -225,7 +225,7 @@ country_event = {
 			}
 		}
 		else = {
-			add_prestige = 5
+			add_prestige_or_monarch_power = { amount = 5 }
 		}
 	}
 
@@ -307,7 +307,7 @@ country_event = {
 	option = {
 		name = FEE_Advisor_Event6.EVTOPT2
 
-		add_prestige = 35
+		add_prestige_or_monarch_power = { amount = 35 }
 		random = {
 			chance = 25
 			add_ruler_modifier = {

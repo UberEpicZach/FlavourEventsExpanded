@@ -208,7 +208,6 @@ country_event = {
 	}
 }
 
-
 country_event = {
 	id = disaster_fee_zemene_mesafint.2
 	title = disaster_fee_zemene_mesafint.2.T
@@ -590,7 +589,7 @@ country_event = {
 		name = disaster_fee_zemene_mesafint.5.OPT2
 
 		add_legitimacy_equivalent = { amount = 20 republican_tradition = 10 }
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 	}
 }
 

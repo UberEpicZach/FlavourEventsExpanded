@@ -22,11 +22,13 @@ country_event = {
 
 	option = {
 		name = FEE_Vijayanagar_Events.1.OPT1	#What a fine king he is!
-		add_prestige = 20
+
+		add_stability_or_adm_power = yes
+		add_prestige_or_monarch_power = { amount = 20 }
 		change_adm = 1
-		add_country_modifier = {
+		add_ruler_modifier = {
 			name = vij_devaraya_literature
-			duration = 1875
+			duration = -1
 		}
 	}
 }

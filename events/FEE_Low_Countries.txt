@@ -55,7 +55,7 @@ country_event = {
 			factor = 50
 		}
 
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 		if = {
 			limit = {
 				calc_true_if = {
@@ -359,7 +359,7 @@ country_event = {
 
 		add_years_of_income = 0.1
 		add_army_professionalism = 0.05
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 		add_mil_power = -35
 		add_country_modifier = {
 			name = fee_lw_discipline_restored

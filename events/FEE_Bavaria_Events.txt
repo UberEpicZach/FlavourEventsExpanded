@@ -1,7 +1,4 @@
-#Bavarian Events
-
 namespace = FEE_Bavaria_Events
-
 
 # Dealing With the Robber Barons
 country_event = {
@@ -39,7 +36,6 @@ country_event = {
 		add_treasury = 25
 	}
 }
-
 
 #One Duchy, United
 country_event = {
@@ -104,7 +100,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Bavaria_Events.3.OPT1	
+		name = FEE_Bavaria_Events.3.OPT1
 
 		HAB = {
 			add_opinion = {
@@ -115,10 +111,10 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Bavaria_Events.3.OPT2	
+		name = FEE_Bavaria_Events.3.OPT2
 
 		add_legitimacy_equivalent = { amount = 5 republican_tradition = 3 }
-		add_prestige = 5
+		add_prestige_or_monarch_power = { amount = 5 }
 		HAB = {
 			add_opinion = {
 				who = ROOT

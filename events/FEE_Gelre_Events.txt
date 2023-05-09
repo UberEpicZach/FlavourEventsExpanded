@@ -340,7 +340,7 @@ country_event = {
 
 		add_treasury = -300
 		add_stability = -1
-		add_prestige = 15
+		add_prestige_or_monarch_power = { amount = 15 }
 	}
 
 	option = {

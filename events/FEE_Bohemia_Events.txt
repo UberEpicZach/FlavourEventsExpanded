@@ -552,8 +552,8 @@ country_event = {
 
 	option = {
 		name = FEE_Bohemia_Events.10.OPT1 #Unfortunate, but we can make some good out of this.
-		
-		add_prestige = 15
+
+		add_prestige_or_monarch_power = { amount = 15 }
 		define_advisor = {
 			type = statesman
 			name = "Zdenek Lev of Rozmital"

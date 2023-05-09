@@ -7,7 +7,6 @@
 # Note that ai_will_do calculates a priority.
 # An advisor may be chosen over another if its random priority exceeds it. RandomPriority(advisor) := rand[1, 2[ * Priority(advisor).
 
-
 ######################################################
 # Administrative Advisors
 ######################################################
@@ -31,4 +30,3 @@ court_jew = {
 		factor = 1
 	}
 }
-
