@@ -5,8 +5,8 @@ namespace = FEE_Monty_Python_Events
 #The Complaining Peasant
 country_event = {
 	id = FEE_Monty_Python_Events.1
-	title = FEE_Monty_Python_Events.1.tt
-	desc = FEE_Monty_Python_Events.1.dd
+	title = FEE_Monty_Python_Events.1.T
+	desc = FEE_Monty_Python_Events.1.D
 	picture = WESTERNISATION_eventPicture
 
 	trigger = {
@@ -38,8 +38,8 @@ country_event = {
 #An anarcho-syndicalist commune
 country_event = {
 	id = FEE_Monty_Python_Events.2
-	title = FEE_Monty_Python_Events.2.tt
-	desc = FEE_Monty_Python_Events.2.dd
+	title = FEE_Monty_Python_Events.2.T
+	desc = FEE_Monty_Python_Events.2.D
 	picture = REFORM_eventPicture
 
 	is_triggered_only = yes
@@ -54,8 +54,8 @@ country_event = {
 #Well I didn't vote for you…
 country_event = {
 	id = FEE_Monty_Python_Events.3
-	title = FEE_Monty_Python_Events.3.tt
-	desc = FEE_Monty_Python_Events.3.dd
+	title = FEE_Monty_Python_Events.3.T
+	desc = FEE_Monty_Python_Events.3.D
 	picture = BAD_WITH_MONARCH_eventPicture
 
 	is_triggered_only = yes
@@ -70,8 +70,8 @@ country_event = {
 #Strange Women
 country_event = {
 	id = FEE_Monty_Python_Events.4
-	title = FEE_Monty_Python_Events.4.tt
-	desc = FEE_Monty_Python_Events.4.dd
+	title = FEE_Monty_Python_Events.4.T
+	desc = FEE_Monty_Python_Events.4.D
 	picture = DEBATE_REPUBLICAN_eventPicture
 
 	is_triggered_only = yes
