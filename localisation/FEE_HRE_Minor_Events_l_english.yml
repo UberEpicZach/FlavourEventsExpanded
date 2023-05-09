@@ -25,6 +25,7 @@
 	FEE_HRE_Minors.6.T: "Martin Luther in Hiding"
 	FEE_HRE_Minors.6.D: "Despite Luther's ringing defense of his faith in the Bible, the Diet of Worms proclaimed him a heretic. A price was laid on his head, giving any Imperial citizen free license to kill Luther. Elector [Root.Monarch.GetName], however, was not about to let this happen. Determined to save the fledgling Reformation while he/she still could, [Root.Monarch.GetName] had him “ambushed” by masked men and spirited away to one of his castles, where no one would find him.\nLuther used the time well, translating the Bible into German directly from the original Greek, writing hymns, and coining the five key tenets of the Reformation: Sola Scriptura, Sola Gratia, Sola Fide, Solus Christus, and Soli Deo Gloria. These five “Sola's” would become the rallying cry of the reformation all over Europe."
 	FEE_HRE_Minors.6.OPT1: "God has willed it."
+	FEE_HRE_Minors.6.OPT2: "Protect him!"
 
 	FEE_HRE_Minors.7.T: "The Question of the Imperial Navy"
 	FEE_HRE_Minors.7.D: "The Holy Roman Empire has always been defined by two things: its decentralization and independence of princes, and its focus on internal, mainly German, affairs. As such, the Empire has never had the need or the resources to develop an Imperial Navy.\nHowever, when [Root.GetName] began to invest its own meager resources into a competitive navy, the Emperor did not take long to take note of the development. Now, a diplomat from the Emperor's court has arrived in [Root.GetName] with an interesting proposal.\nPointing out the obvious truth, the Imperial diplomat argued that, since we have invested into expensive warships, our defensive capabilities on land may be sadly lacking in comparison to our neighbors. At the same time, the Emperor has a strong land army but little in the way of a navy. If we were to join forces with the Emperor and place our navy at his disposal should he need it, he would be more than willing to protect us on land in return."
@@ -38,15 +39,19 @@
 	FEE_HRE_Minors.8.OPT3: "A nation that cannot defend itself is destined for the ash heap of history"
 	FEE_HRE_Minors.8.D: "The ways of our forefathers have held true thus far; there is no pressing need"
 
-# modifiers
+ # modifiers
 	FEE_HRE_Minor_Durer: "Albrecht Durer"
 	FEE_HRE_Minor_Tolerance_of_Jews: "Tolerated Jews"
 	FEE_HRE_Minor_Expulsion_of_Jews: "Expelled Jews"
 	FEE_HRE_Minor_Jewish_Refuge: "Jewish Refuge"
 	FEE_HRE_Minors_German_Economic_Depression: "German Economic Depression"
 	FEE_HRE_Minors_Martin_Luther_in_Hiding: "Martin Luther in Hiding"
+  FEE_HRE_Minors_Imperial_Patronage: "Imperial Patronage"
 	FEE_HRE_Minors_Independent_Navy: "Independent Navy"
+  FEE_HRE_Minor_Economic_Ambition: "Economic Ambition"
+  FEE_HRE_Minor_Technological_Leadership: "Technological Leadership"
+  FEE_HRE_Minor_Military_Reforms: "Military Reforms"
 
-# opinion modifiers
+ # opinion modifiers
 	FEE_HRE_Minor_Imperial_Navy_Opinion_Modifier: "Imperial Navy"
 	FEE_HRE_Minor_Imperial_Navy_Malus_Opinion_Modifier: "Imperial Navy Rejected"

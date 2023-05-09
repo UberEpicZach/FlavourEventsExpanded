@@ -60,60 +60,60 @@
 
  FEE_PLC_Cossack_Revolts_Events.11.T: "Szlachta Agrees"
  FEE_PLC_Cossack_Revolts_Events.11.D: "Despite the opposition to the demands, majority of the Szlachta had decided that it will be better to improve conditions of the upkeep for the Cossack regiments rather than risk provoking yet another devastating revolt in Ruthenia."
- FEE_PLC_Cossack_Revolts_Events.1.OPT1a: "They gotta be grateful to us for this!"
+ FEE_PLC_Cossack_Revolts_Events.11.OPT1: "They gotta be grateful to us for this!"
 
  FEE_PLC_Cossack_Revolts_Events.12.T: "Szlachta Refuses"
  FEE_PLC_Cossack_Revolts_Events.12.D: "As we had anticipated, majority of Szlachta refused to agree to the demands, in fact, some of the nobles tried to knock Nalyvaiko out of his residence in Braclaw, which resulted in a total failure and left us with no opportunities for any further negotiations for now."
- FEE_PLC_Cossack_Revolts_Events.1.OPT1a: "This doesn't look good, but let's hold crown troops for now."
+ FEE_PLC_Cossack_Revolts_Events.12.OPT1: "This doesn't look good, but let's hold crown troops for now."
 
  FEE_PLC_Cossack_Revolts_Events.13.T: "Szlachta Requests our Help"
  FEE_PLC_Cossack_Revolts_Events.13.D: "Not being able to deal with the Cossacks, Szlachta from Ruthenia sent us a delegation. They have asked for out help, complaining that the Cossacks are even more annoying than Tatars. They've also reported about atrocities that rebels had committed against Polish nobility and Catholic clergy in Mahilyow.\n\nAt the same time, we have received a peace offer from Nalyvaiko in which he requires us to cede some of the lands in exchange for their military service and loyalty to the Commonwealth. Now, we have a choice how to end this. Either we accept peace offer and bring an end to this quickly. Or we can drown Ruthenian lands in blood once again."
- FEE_PLC_Cossack_Revolts_Events.1.OPT1a: "Recall our Field Crown Hetman and order him to deal with this!"
- FEE_PLC_Cossack_Revolts_Events.1.OPT2: "This went way too far, the peace must be reached!"
+ FEE_PLC_Cossack_Revolts_Events.13.OPT1: "Recall our Field Crown Hetman and order him to deal with this!"
+ FEE_PLC_Cossack_Revolts_Events.13.OPT2: "This went way too far, the peace must be reached!"
 
  FEE_PLC_Cossack_Revolts_Events.14.T: "End of Nalyvaiko Uprising"
  FEE_PLC_Cossack_Revolts_Events.14.D: "Having agreed to the peace offer, we have brought an end to the uprising. The captured cities were ceded to us and prisoners freed. Unfortunately, due to the contraditcory nature of this peace offer, some of the Nobility desperately took up arms against us, trying to revert that.\n\nUnlike previous rebellion, this one due to the usage of scorched earth tactics severely devastated left-bank Ukraine."
- FEE_PLC_Cossack_Revolts_Events.1.OPT1a: "Is this truly over?"
+ FEE_PLC_Cossack_Revolts_Events.14.OPT1: "Is this truly over?"
 
  nalyvaiko_peace_offer: "Accepted Nalyvaiko's Peace Offer"
 
  FEE_PLC_Cossack_Revolts_Events.15.T: "Rebels Were Forced to Retreat"
  FEE_PLC_Cossack_Revolts_Events.15.D: "After bloody clashes with the rebels, we have forced Nalyvaiko and the rest of his army to retreat to the left-bank Ukraine, to the village Solonystsy near the town of Lubnie. There he organized a tabor."
- FEE_PLC_Cossack_Revolts_Events.1.OPT1a: "Chase after them!"
+ FEE_PLC_Cossack_Revolts_Events.15.OPT1: "Chase after them!"
 
  fee_plc_negotiate_with_the_rebels_title: "Negotiate with the rebels"
  fee_plc_negotiate_with_the_rebels_desc: "Try to negotiate with the rebels in Solonytsy."
 
  FEE_PLC_Cossack_Revolts_Events.16.T: "End of Nalyvaiko Uprising"
  FEE_PLC_Cossack_Revolts_Events.16.D: "Storming the tabor, our army slaughtered everyone related to the Cossacks, including their families. Only a small pack of survivors have managed to break free. Nalyvaiko fell in the battle among his troops. With the fall of its leader, the uprising is realistically over."
- FEE_PLC_Cossack_Revolts_Events.1.OPT1a: "Confiscation of their lands will serve them a good punishment!"
+ FEE_PLC_Cossack_Revolts_Events.16.OPT1: "Confiscation of their lands will serve them a good punishment!"
 
  nalyvaiko_cossack_lands_confiscated: "Cossack lands confiscated"
 
  FEE_PLC_Cossack_Revolts_Events.17.T: "Negotiations with Rebels"
  FEE_PLC_Cossack_Revolts_Events.17.D: "Surrounded in Solonytsy for already quite a while, the rebels are sure to run out of food and water soon.\n\nIf we were to offer them appealing conditions of surrender, we could end the uprising fast and perhaps without any further bloodshed."
- FEE_PLC_Cossack_Revolts_Events.1.OPT1a: "Offer them to surrender in exchange for the amnesty"
+ FEE_PLC_Cossack_Revolts_Events.17.OPT1: "Offer them to surrender in exchange for the amnesty"
 
  FEE_PLC_Cossack_Revolts_Events.18.T: "Negotiations with Rebels"
  FEE_PLC_Cossack_Revolts_Events.18.D: "It seems that these rebels are either hard nuts to crack or just crazy. The terms that we have offered them were rejected, so that leaves us with no other choice but to siege their tabor down."
- FEE_PLC_Cossack_Revolts_Events.1.OPT1a: "Cannot be helped."
+ FEE_PLC_Cossack_Revolts_Events.18.OPT1: "Cannot be helped."
 
  FEE_PLC_Cossack_Revolts_Events.19.T: "Negotiations with Rebels"
  FEE_PLC_Cossack_Revolts_Events.19.D: "Although the rebels have accepted our proposal to negotiate, everything went not as we expected, but even better. One of the negotiators from the Cossack side, Hryhory Loboda was suspected of treason by the rebels and murdered. Later, the rebels offered to hand over the leaders of the rebellion, including Nalyvaiko on the same terms.\n\nOf course we can agree to this, but considering the havoc and destructions the had caused, our Nobility is expecting from us to deal with every single one of them accordingly."
- FEE_PLC_Cossack_Revolts_Events.1.OPT1a: "We should keep this as civil as possible."
- FEE_PLC_Cossack_Revolts_Events.1.OPT2: "Storm the tabor during final negotiations and kill them all."
+ FEE_PLC_Cossack_Revolts_Events.19.OPT1: "We should keep this as civil as possible."
+ FEE_PLC_Cossack_Revolts_Events.19.OPT2: "Storm the tabor during final negotiations and kill them all."
 
  FEE_PLC_Cossack_Revolts_Events.20.T: "End of Nalyvaiko Uprising"
  FEE_PLC_Cossack_Revolts_Events.20.D: "Allowing the rebels to go to their homes safely after they have ceded the leaders of the uprising, we have finally brought an end to it. Though the uprising is over, there was still a question how should we punish the captured leaders."
- FEE_PLC_Cossack_Revolts_Events.2.OPT1a: "Make a public example out them in the capital!"
+ FEE_PLC_Cossack_Revolts_Events.20.OPT1: "Make a public example out them in the capital!"
 
  FEE_PLC_Cossack_Revolts_Events.21.T: "End of Nalyvaiko Uprising"
  FEE_PLC_Cossack_Revolts_Events.21.D: "Storming the tabor, our army slaughtered everyone related to the Cossacks, including their families. Only a small amount of the Cossacks was able to break out. With their leaders in our hands, we have brought an end to the uprising. Due to scale of the damage suffered by the Nobility, the lands of the Cossacks are going to be confiscated in favour of them. As for Nalyvaiko and the rest of the leader, their punishment will be severe and cruel."
- FEE_PLC_Cossack_Revolts_Events.2.OPT1a: "Good riddance."
+ FEE_PLC_Cossack_Revolts_Events.21.OPT1: "Good riddance."
 
  FEE_PLC_Cossack_Revolts_Events.22.T: "Suspicious Cossack"
  FEE_PLC_Cossack_Revolts_Events.22.D: "Well-respected among his friends and subordinates, Registered Cossack Bohdan Khmelnytsky, after receiving no support from the Polish officials in his land dispute against Daniel Czaplinski who, on behalf of Magnate Aleksander Koniecpolski, had tried to force him off the land by committing raids to Subotiv, his residence, is suspiciously traveling from one Cossack regiment to another and thus seems to be plotting another Cossack revolt."
- FEE_PLC_Cossack_Revolts_Events.2.OPT1a: "Order his arrest immediately."
+ FEE_PLC_Cossack_Revolts_Events.22.OPT1: "Order his arrest immediately."
 
  FEE_PLC_Cossack_Revolts_Events.1001.T: "Kosinski Uprising - Phase 1"
  FEE_PLC_Cossack_Revolts_Events.1001.D: "You shouldn't be able to see this hidden event."

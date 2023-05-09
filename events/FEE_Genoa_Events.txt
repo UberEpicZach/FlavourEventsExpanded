@@ -115,7 +115,7 @@ country_event = {
 		}
 		NOT = { is_year = 1470 }
 		NOT = {
-			has_country_modifier = fee_genoa_san_giorgio_timer
+			has_country_flag = fee_genoa_san_giorgio_timer
 		}
 		owns = 1247
 	}
@@ -133,11 +133,7 @@ country_event = {
 	}
 
 	immediate = {
-		add_country_modifier = {
-			name = fee_genoa_san_giorgio_timer
-			duration = -1
-			hidden = yes
-		}
+		set_country_flag = fee_genoa_san_giorgio_timer
 	}
 
 	option = {

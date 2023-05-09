@@ -144,7 +144,7 @@ country_event = {
 			tag = TUS
 		}
 		is_part_of_hre = yes
-		NOT = { has_country_modifier = fee_grand_duchy_reaction }
+		NOT = { has_country_flag = fee_grand_duchy_reaction }
 		government = monarchy
 		OR = {
 			NOT = {
@@ -162,23 +162,15 @@ country_event = {
 	mean_time_to_happen = {
 		months = 6
 	}
-
-	immediate = {
-		hidden_effect = {
-			add_country_modifier = {
-				name = fee_grand_duchy_reaction
-				duration = -1
-			}
-		}
-	}
-
+	
 	option = {
 		name = FEE_Tuscany_Events.3.OPT1
-
+		
 		add_dip_power = -25
 		add_adm_power = 25
 		change_religious_influence_equivalent_fee = { add = 15 }
 		add_prestige = 10
+		set_country_flag = fee_grand_duchy_reaction
 	}
 }
 
@@ -197,7 +189,7 @@ country_event = {
 			tag = TUS
 		}
 		is_part_of_hre = yes
-		NOT = { has_country_modifier = fee_grand_duchy_reaction }
+		NOT = { has_country_flag = fee_grand_duchy_reaction }
 		government = monarchy
 		reverse_has_opinion = {
 			who = emperor
@@ -209,23 +201,15 @@ country_event = {
 	mean_time_to_happen = {
 		months = 6
 	}
-
-	immediate = {
-		hidden_effect = {
-			add_country_modifier = {
-				name = fee_grand_duchy_reaction
-				duration = -1
-			}
-		}
-	}
-
+	
 	option = {
 		name = FEE_Tuscany_Events.4.OPT1
-
+		
 		add_dip_power = 25
 		add_adm_power = 25
 		change_religious_influence_equivalent_fee = { add = 5 }
 		add_prestige = 15
+		set_country_flag = fee_grand_duchy_reaction
 	}
 }
 

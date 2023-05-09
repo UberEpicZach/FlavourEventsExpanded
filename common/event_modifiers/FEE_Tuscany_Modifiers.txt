@@ -7,8 +7,6 @@ fee_tus_one_duchy_one_religion = {
 	global_missionary_strength = 0.02
 	legitimacy = 1
 }
-#Emperor has reacted to the elevation of Tuscany
-fee_grand_duchy_reaction = { }
 #Tuscany Develops Toll Roads
 fee_tus_toll_roads = {
 	local_tax_modifier = 0.1

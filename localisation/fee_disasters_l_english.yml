@@ -207,6 +207,10 @@
   disaster_fee_division_of_the_habsburg_monarchy.4.OPT1: "The throne belongs to §Y[STY.GetName]§!!"
   disaster_fee_division_of_the_habsburg_monarchy.4.OPT2: "We need no new King!"
 
+  disaster_fee_division_of_the_habsburg_monarchy.5.T: "Styria becomes the Emperor"
+  disaster_fee_division_of_the_habsburg_monarchy.5.D: "You shouldn't be able to see this hidden event."
+  disaster_fee_division_of_the_habsburg_monarchy.5.OPT1: "Please report it to the team if you see it."
+
   disaster_fee_division_of_the_habsburg_monarchy.6.T: "The Will of the Electors"
   disaster_fee_division_of_the_habsburg_monarchy.6.D: "The majority of the Electors have chosen to support §Y[STY.GetName]§!. Not only did they in war, but also the Empire. [Root.Monarch.GetName] has been overthrown and is no longer the Holy Roman Emperor!"
   disaster_fee_division_of_the_habsburg_monarchy.6.OPT1: "How dare they?!"
@@ -808,5 +812,5 @@
  FEE_CRISIS_OF_THE_MUGHAL_EMPIRE_LESS_THAN_0_TOLERANCE_OF_HEATHENS_TT: "Our §YTolerance of Heathens§! is less than §Y0§!"
  FEE_CRISIS_OF_THE_MUGHAL_EMPIRE_RULER_STATS_LESS_THAN_6_TOTAL_TT: "The combined amount of the ruler skills of §Y[This.Monarch.GetName]§! is less than §Y6§!"
 
- ITA_DISASTER_REPUBLICAN_TT: "One of the followign must be true:\n	§YRepublican§! or §YMonarchist§! rebels enforce their demand\n	The disaster has been going for at least §Y15 years§!"
  ITA_REPUBLICAN_MATTER_TT: "In the next years Republicans in the North and Monarchist in the South of Italy will rise to try impose their view. One of them might calm down only if we decide to become either: \nAny Monarchy with a §YParliament§! \n§YConstitutional Republic§!"
+ ITA_DISASTER_REPUBLICAN_TT: "One of the followign must be true:\n	§YRepublican§! or §YMonarchist§! rebels enforce their demand\n	The disaster has been going for at least §Y15 years§!"

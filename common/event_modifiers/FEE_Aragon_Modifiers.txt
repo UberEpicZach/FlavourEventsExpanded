@@ -27,21 +27,6 @@ fee_aragon_building_imperial_canal = {
 	build_cost = -0.05
 }
 
-fee_aragon_channel_step_one = { }
-fee_aragon_channel_step_two = { }
-fee_aragon_channel_step_three = { }
-fee_aragon_channel_step_four = { }
-fee_aragon_channel_step_five = { }
-
-fee_aragon_channel_major_delay = { }
-
-fee_aragon_channel_slow_one = { }
-fee_aragon_channel_slow_two = { }
-fee_aragon_channel_slow_three = { }
-fee_aragon_channel_slow_four = { }
-fee_aragon_channel_slow_five = { }
-
-fee_aragon_imperial_canal_event_timer = { }
 fee_aragon_imperial_canal = {
 	global_tax_modifier = 0.05
 }
@@ -67,8 +52,6 @@ fee_aragon_religious_acceptance = {
 fee_aragon_defend_zaragoza = {
 	local_defensiveness = 0.25
 }
-
-fee_aragon_pignatelli = { }
 
 # Citadel of Jaca
 fee_aragon_ciudadela_jaca = {
