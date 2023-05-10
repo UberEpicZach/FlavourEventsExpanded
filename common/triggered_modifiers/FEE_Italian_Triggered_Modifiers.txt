@@ -2,15 +2,20 @@ fee_ven_turko_venetian_wars = {
 	potential = {
 		is_year = 1463
 		NOT = { is_year = 1479 }
+		OR = {
+			tag = VEN
+			was_tag = VEN
+			AND = {
+				alliance_with = VEN
+				VEN = {
+					war_with = TUR
+				}
+			}
+		}
 	}
 
 	trigger = {
 		war_with = TUR
-		OR = {
-			tag = VEN
-			was_tag = VEN
-			alliance_with = VEN
-		}
 	}
 
 	land_morale = 0.05
