@@ -6,6 +6,11 @@ fee_ven_turko_venetian_wars = {
 
 	trigger = {
 		war_with = TUR
+		OR = {
+			tag = VEN
+			was_tag = VEN
+			alliance_with = VEN
+		}
 	}
 
 	land_morale = 0.05
