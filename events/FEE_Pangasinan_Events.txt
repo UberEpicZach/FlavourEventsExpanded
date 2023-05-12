@@ -3,8 +3,8 @@ namespace = FEE_Pangasinan_Events
 #Lim Hong's Invasion
 country_event = {
 	id = FEE_Pangasinan_Events.1
-	title = FEE_Pangasinan_Events.1.tt
-	desc = FEE_Pangasinan_Events.1.dd
+	title = FEE_Pangasinan_Events.1.T
+	desc = FEE_Pangasinan_Events.1.D
 	picture = BARBARY_PIRATES_eventPicture
 
 	fire_only_once = yes

@@ -2,8 +2,8 @@ namespace = disaster_fee_decline_of_the_ottomans
 
 country_event = {
 	id = disaster_fee_decline_of_the_ottomans.1
-	title = disaster_fee_decline_of_the_ottomans.EVTNAME1
-	desc = disaster_fee_decline_of_the_ottomans.EVTDESC1
+	title = disaster_fee_decline_of_the_ottomans.1.T
+	desc = disaster_fee_decline_of_the_ottomans.1.D
 	picture = CIVIL_WAR_eventPicture
 
 	major = yes
@@ -16,7 +16,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_decline_of_the_ottomans1.EVTOPT1
+		name = disaster_fee_decline_of_the_ottomans.1.OPT1
 
 		add_stability = -3
 		add_corruption = 5
@@ -36,15 +36,15 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_decline_of_the_ottomans.2
-	title = disaster_fee_decline_of_the_ottomans.EVTNAME2
-	desc = disaster_fee_decline_of_the_ottomans.EVTDESC2
+	title = disaster_fee_decline_of_the_ottomans.2.T
+	desc = disaster_fee_decline_of_the_ottomans.2.D
 	picture = GOOD_WITH_MONARCH_eventPicture
 
 	major = yes
 	is_triggered_only = yes
 
 	option = {
-		name = disaster_fee_decline_of_the_ottomans2.EVTOPT1
+		name = disaster_fee_decline_of_the_ottomans.2.OPT1
 
 		if = {
 			limit = {
@@ -71,14 +71,14 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_decline_of_the_ottomans.3
-	title = disaster_fee_decline_of_the_ottomans.EVTNAME3
-	desc = disaster_fee_decline_of_the_ottomans.EVTDESC3
+	title = disaster_fee_decline_of_the_ottomans.3.T
+	desc = disaster_fee_decline_of_the_ottomans.3.D
 	picture = CIVIL_WAR_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = disaster_fee_decline_of_the_ottomans3.EVTOPT1
+		name = disaster_fee_decline_of_the_ottomans.3.OPT1
 
 		add_inflation = 3
 	}
@@ -86,15 +86,15 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_decline_of_the_ottomans.4
-	title = disaster_fee_decline_of_the_ottomans.EVTNAME4
-	desc = disaster_fee_decline_of_the_ottomans.EVTDESC4
+	title = disaster_fee_decline_of_the_ottomans.4.T
+	desc = disaster_fee_decline_of_the_ottomans.4.D
 	picture = CIVIL_WAR_eventPicture
 
 	fire_only_once = yes
 	is_triggered_only = yes
 
 	option = {
-		name = disaster_fee_decline_of_the_ottomans4.EVTOPT1
+		name = disaster_fee_decline_of_the_ottomans.4.OPT1
 
 		add_disaster_modifier = {
 			name = fee_decline_of_the_ottomans_illiterate
@@ -106,8 +106,8 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_decline_of_the_ottomans.5
-	title = disaster_fee_decline_of_the_ottomans.EVTNAME5
-	desc = disaster_fee_decline_of_the_ottomans.EVTDESC5
+	title = disaster_fee_decline_of_the_ottomans.5.T
+	desc = disaster_fee_decline_of_the_ottomans.5.D
 	picture = CIVIL_WAR_eventPicture
 
 	fire_only_once = yes
@@ -432,7 +432,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_decline_of_the_ottomans5.EVTOPT1
+		name = disaster_fee_decline_of_the_ottomans.5.OPT1
 
 		add_corruption = 2
 		add_disaster_modifier = {
@@ -478,14 +478,14 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_decline_of_the_ottomans.6
-	title = disaster_fee_decline_of_the_ottomans.EVTNAME6
-	desc = disaster_fee_decline_of_the_ottomans.EVTDESC6
+	title = disaster_fee_decline_of_the_ottomans.6.T
+	desc = disaster_fee_decline_of_the_ottomans.6.D
 	picture = CIVIL_WAR_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = disaster_fee_decline_of_the_ottomans6.EVTOPT1
+		name = disaster_fee_decline_of_the_ottomans.6.OPT1
 
 		add_corruption = 1
 		add_inflation = 2
@@ -494,15 +494,15 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_decline_of_the_ottomans.7
-	title = disaster_fee_decline_of_the_ottomans.EVTNAME7
-	desc = disaster_fee_decline_of_the_ottomans.EVTDESC7
+	title = disaster_fee_decline_of_the_ottomans.7.T
+	desc = disaster_fee_decline_of_the_ottomans.7.D
 	picture = CIVIL_WAR_eventPicture
 
 	fire_only_once = yes
 	is_triggered_only = yes
 
 	option = {
-		name = disaster_fee_decline_of_the_ottomans7.EVTOPT1
+		name = disaster_fee_decline_of_the_ottomans.7.OPT1
 
 		add_stability = -1
 		add_disaster_modifier = {
@@ -515,15 +515,15 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_decline_of_the_ottomans.8
-	title = disaster_fee_decline_of_the_ottomans.EVTNAME8
-	desc = disaster_fee_decline_of_the_ottomans.EVTDESC8
+	title = disaster_fee_decline_of_the_ottomans.8.T
+	desc = disaster_fee_decline_of_the_ottomans.8.D
 	picture = CIVIL_WAR_eventPicture
 
 	fire_only_once = yes
 	is_triggered_only = yes
 
 	option = {
-		name = disaster_fee_decline_of_the_ottomans8.EVTOPT1
+		name = disaster_fee_decline_of_the_ottomans.8.OPT1
 
 		add_disaster_modifier = {
 			name = fee_decline_of_the_ottomans_economic_adjustments
@@ -535,8 +535,8 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_decline_of_the_ottomans.9
-	title = disaster_fee_decline_of_the_ottomans.EVTNAME9
-	desc = disaster_fee_decline_of_the_ottomans.EVTDESC9
+	title = disaster_fee_decline_of_the_ottomans.9.T
+	desc = disaster_fee_decline_of_the_ottomans.9.D
 	picture = CIVIL_WAR_eventPicture
 
 	is_triggered_only = yes
@@ -696,7 +696,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_decline_of_the_ottomans9.EVTOPT1
+		name = disaster_fee_decline_of_the_ottomans.9.OPT1
 
 		add_stability = -1
 		event_target:target_shiite = {
@@ -725,8 +725,8 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_decline_of_the_ottomans.10
-	title = disaster_fee_decline_of_the_ottomans.EVTNAME10
-	desc = disaster_fee_decline_of_the_ottomans.EVTDESC10
+	title = disaster_fee_decline_of_the_ottomans.10.T
+	desc = disaster_fee_decline_of_the_ottomans.10.D
 	picture = CIVIL_WAR_eventPicture
 
 	fire_only_once = yes
@@ -776,7 +776,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_decline_of_the_ottomans10.EVTOPT1
+		name = disaster_fee_decline_of_the_ottomans.10.OPT1
 
 		ai_chance = { factor = 0.25 }
 
@@ -799,7 +799,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_decline_of_the_ottomans10.EVTOPT2
+		name = disaster_fee_decline_of_the_ottomans.10.OPT2
 
 		ai_chance = { factor = 0.25 }
 
@@ -821,7 +821,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_decline_of_the_ottomans10.EVTOPT3
+		name = disaster_fee_decline_of_the_ottomans.10.OPT3
 
 		highlight = yes
 
@@ -842,14 +842,14 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_decline_of_the_ottomans.11
-	title = disaster_fee_decline_of_the_ottomans.EVTNAME11
-	desc = disaster_fee_decline_of_the_ottomans.EVTDESC11
+	title = disaster_fee_decline_of_the_ottomans.11.T
+	desc = disaster_fee_decline_of_the_ottomans.11.D
 	picture = CIVIL_WAR_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = disaster_fee_decline_of_the_ottomans11.EVTOPT1
+		name = disaster_fee_decline_of_the_ottomans.11.OPT1
 
 		add_corruption = 2
 		if = {
@@ -873,7 +873,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_decline_of_the_ottomans11.EVTOPT2
+		name = disaster_fee_decline_of_the_ottomans.11.OPT2
 
 		add_stability = -1
 		add_corruption = -1
@@ -908,8 +908,8 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_decline_of_the_ottomans.12
-	title = disaster_fee_decline_of_the_ottomans.EVTNAME12
-	desc = disaster_fee_decline_of_the_ottomans.EVTDESC12
+	title = disaster_fee_decline_of_the_ottomans.12.T
+	desc = disaster_fee_decline_of_the_ottomans.12.D
 	picture = CIVIL_WAR_eventPicture
 
 	major = yes
@@ -917,7 +917,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = disaster_fee_decline_of_the_ottomans12.EVTOPT1
+		name = disaster_fee_decline_of_the_ottomans.12.OPT1
 
 		set_country_flag = disaster_fee_decline_of_the_ottomans_balkan_separatism
 	}
@@ -925,8 +925,8 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_decline_of_the_ottomans.13
-	title = disaster_fee_decline_of_the_ottomans.EVTNAME13
-	desc = disaster_fee_decline_of_the_ottomans.EVTDESC13
+	title = disaster_fee_decline_of_the_ottomans.13.T
+	desc = disaster_fee_decline_of_the_ottomans.13.D
 	picture = CIVIL_WAR_eventPicture
 
 	fire_only_once = yes
@@ -980,7 +980,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_decline_of_the_ottomans13.EVTOPT1
+		name = disaster_fee_decline_of_the_ottomans.13.OPT1
 
 		every_owned_province = {
 			limit = {
@@ -1004,8 +1004,8 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_decline_of_the_ottomans.14
-	title = disaster_fee_decline_of_the_ottomans.EVTNAME14
-	desc = disaster_fee_decline_of_the_ottomans.EVTDESC14
+	title = disaster_fee_decline_of_the_ottomans.14.T
+	desc = disaster_fee_decline_of_the_ottomans.14.D
 	picture = CIVIL_WAR_eventPicture
 
 	is_triggered_only = yes
@@ -1019,7 +1019,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_decline_of_the_ottomans14.EVTOPT1
+		name = disaster_fee_decline_of_the_ottomans.14.OPT1
 
 		every_owned_province = {
 			limit = {
@@ -1047,8 +1047,8 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_decline_of_the_ottomans.15
-	title = disaster_fee_decline_of_the_ottomans.EVTNAME15
-	desc = disaster_fee_decline_of_the_ottomans.EVTDESC15
+	title = disaster_fee_decline_of_the_ottomans.15.T
+	desc = disaster_fee_decline_of_the_ottomans.15.D
 	picture = CIVIL_WAR_eventPicture
 
 	is_triggered_only = yes
@@ -1088,7 +1088,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_decline_of_the_ottomans15.EVTOPT1
+		name = disaster_fee_decline_of_the_ottomans.15.OPT1
 
 		event_target:target_1 = {
 			hidden_effect = {
@@ -1149,8 +1149,8 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_decline_of_the_ottomans.16
-	title = disaster_fee_decline_of_the_ottomans.EVTNAME16
-	desc = disaster_fee_decline_of_the_ottomans.EVTDESC16
+	title = disaster_fee_decline_of_the_ottomans.16.T
+	desc = disaster_fee_decline_of_the_ottomans.16.D
 	picture = CIVIL_WAR_eventPicture
 
 	fire_only_once = yes
@@ -1191,7 +1191,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_decline_of_the_ottomans16.EVTOPT1
+		name = disaster_fee_decline_of_the_ottomans.16.OPT1
 
 		event_target:target_1 = {
 			hidden_effect = {
@@ -1265,8 +1265,8 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_decline_of_the_ottomans.17
-	title = disaster_fee_decline_of_the_ottomans.EVTNAME17
-	desc = disaster_fee_decline_of_the_ottomans.EVTDESC17
+	title = disaster_fee_decline_of_the_ottomans.17.T
+	desc = disaster_fee_decline_of_the_ottomans.17.D
 	picture = CIVIL_WAR_eventPicture
 
 	fire_only_once = yes
@@ -1307,7 +1307,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_decline_of_the_ottomans17.EVTOPT1
+		name = disaster_fee_decline_of_the_ottomans.17.OPT1
 
 		event_target:target_1 = {
 			hidden_effect = {
@@ -1368,8 +1368,8 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_decline_of_the_ottomans.18
-	title = disaster_fee_decline_of_the_ottomans.EVTNAME18
-	desc = disaster_fee_decline_of_the_ottomans.EVTDESC18
+	title = disaster_fee_decline_of_the_ottomans.18.T
+	desc = disaster_fee_decline_of_the_ottomans.18.D
 	picture = CIVIL_WAR_eventPicture
 
 	fire_only_once = yes
@@ -1424,7 +1424,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_decline_of_the_ottomans18.EVTOPT1
+		name = disaster_fee_decline_of_the_ottomans.18.OPT1
 
 		add_stability = -1
 		tooltip = { create_vassal = SER }
@@ -1471,14 +1471,14 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_decline_of_the_ottomans.19
-	title = disaster_fee_decline_of_the_ottomans.EVTNAME19
-	desc = disaster_fee_decline_of_the_ottomans.EVTDESC19
+	title = disaster_fee_decline_of_the_ottomans.19.T
+	desc = disaster_fee_decline_of_the_ottomans.19.D
 	picture = CIVIL_WAR_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = disaster_fee_decline_of_the_ottomans19.EVTOPT1
+		name = disaster_fee_decline_of_the_ottomans.19.OPT1
 
 		ai_chance = { factor = 0.8 }
 
@@ -1489,7 +1489,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_decline_of_the_ottomans19.EVTOPT2
+		name = disaster_fee_decline_of_the_ottomans.19.OPT2
 
 		ai_chance = { factor = 0.2 }
 
@@ -1500,8 +1500,8 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_decline_of_the_ottomans.20
-	title = disaster_fee_decline_of_the_ottomans.EVTNAME20
-	desc = disaster_fee_decline_of_the_ottomans.EVTDESC20
+	title = disaster_fee_decline_of_the_ottomans.20.T
+	desc = disaster_fee_decline_of_the_ottomans.20.D
 	picture = CIVIL_WAR_eventPicture
 
 	fire_only_once = yes
@@ -1591,7 +1591,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_decline_of_the_ottomans20.EVTOPT1
+		name = disaster_fee_decline_of_the_ottomans.20.OPT1
 
 		add_stability = -1
 		if = {
@@ -1626,7 +1626,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_decline_of_the_ottomans20.EVTOPT2
+		name = disaster_fee_decline_of_the_ottomans.20.OPT2
 
 		add_stability = 1
 		if = {
@@ -1648,8 +1648,8 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_decline_of_the_ottomans.21
-	title = disaster_fee_decline_of_the_ottomans.EVTNAME21
-	desc = disaster_fee_decline_of_the_ottomans.EVTDESC21
+	title = disaster_fee_decline_of_the_ottomans.21.T
+	desc = disaster_fee_decline_of_the_ottomans.21.D
 	picture = CIVIL_WAR_eventPicture
 
 	is_triggered_only = yes
@@ -1705,7 +1705,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_decline_of_the_ottomans21.EVTOPT1
+		name = disaster_fee_decline_of_the_ottomans.21.OPT1
 
 		add_war_exhaustion = 2
 		event_target:target_1 = {
@@ -1725,8 +1725,8 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_decline_of_the_ottomans.22
-	title = disaster_fee_decline_of_the_ottomans.EVTNAME22
-	desc = disaster_fee_decline_of_the_ottomans.EVTDESC22
+	title = disaster_fee_decline_of_the_ottomans.22.T
+	desc = disaster_fee_decline_of_the_ottomans.22.D
 	picture = CIVIL_WAR_eventPicture
 
 	is_triggered_only = yes
@@ -1850,7 +1850,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_decline_of_the_ottomans22.EVTOPT1
+		name = disaster_fee_decline_of_the_ottomans.22.OPT1
 
 		if = {
 			limit = {
@@ -1888,7 +1888,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_decline_of_the_ottomans22.EVTOPT2
+		name = disaster_fee_decline_of_the_ottomans.22.OPT2
 
 		if = {
 			limit = {
@@ -1931,8 +1931,8 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_decline_of_the_ottomans.23
-	title = disaster_fee_decline_of_the_ottomans.EVTNAME23
-	desc = disaster_fee_decline_of_the_ottomans.EVTDESC23
+	title = disaster_fee_decline_of_the_ottomans.23.T
+	desc = disaster_fee_decline_of_the_ottomans.23.D
 	picture = CIVIL_WAR_eventPicture
 
 	fire_only_once = yes
@@ -1946,7 +1946,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_decline_of_the_ottomans23.EVTOPT1
+		name = disaster_fee_decline_of_the_ottomans.23.OPT1
 
 		balkan_region = {
 			limit = {
@@ -1963,8 +1963,8 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_decline_of_the_ottomans.24
-	title = disaster_fee_decline_of_the_ottomans.EVTNAME24
-	desc = disaster_fee_decline_of_the_ottomans.EVTDESC24
+	title = disaster_fee_decline_of_the_ottomans.24.T
+	desc = disaster_fee_decline_of_the_ottomans.24.D
 	picture = CIVIL_WAR_eventPicture
 
 	major = yes
@@ -2040,7 +2040,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_decline_of_the_ottomans24.EVTOPT1
+		name = disaster_fee_decline_of_the_ottomans.24.OPT1
 
 		add_stability = -1
 		tooltip = { create_vassal = GRE }
@@ -2072,8 +2072,8 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_decline_of_the_ottomans.25
-	title = disaster_fee_decline_of_the_ottomans.EVTNAME25
-	desc = disaster_fee_decline_of_the_ottomans.EVTDESC25
+	title = disaster_fee_decline_of_the_ottomans.25.T
+	desc = disaster_fee_decline_of_the_ottomans.25.D
 	picture = CIVIL_WAR_eventPicture
 
 	major = yes
@@ -2083,7 +2083,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = disaster_fee_decline_of_the_ottomans25.EVTOPT1
+		name = disaster_fee_decline_of_the_ottomans.25.OPT1
 
 		reverse_add_opinion = {
 			who = GRE
@@ -2094,7 +2094,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_decline_of_the_ottomans25.EVTOPT2
+		name = disaster_fee_decline_of_the_ottomans.25.OPT2
 
 		add_prestige = -10
 	}
@@ -2102,8 +2102,8 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_decline_of_the_ottomans.26
-	title = disaster_fee_decline_of_the_ottomans.EVTNAME26
-	desc = disaster_fee_decline_of_the_ottomans.EVTDESC26
+	title = disaster_fee_decline_of_the_ottomans.26.T
+	desc = disaster_fee_decline_of_the_ottomans.26.D
 	picture = CIVIL_WAR_eventPicture
 
 	major = yes
@@ -2114,7 +2114,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = disaster_fee_decline_of_the_ottomans26.EVTOPT1
+		name = disaster_fee_decline_of_the_ottomans.26.OPT1
 
 		create_alliance = SER
 		join_all_offensive_wars_of = SER
@@ -2129,7 +2129,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_decline_of_the_ottomans26.EVTOPT2
+		name = disaster_fee_decline_of_the_ottomans.26.OPT2
 
 		add_treasury = -500
 		add_manpower = -15
@@ -2148,7 +2148,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_decline_of_the_ottomans26.EVTOPT3
+		name = disaster_fee_decline_of_the_ottomans.26.OPT3
 
 		add_prestige = -10
 	}
@@ -2156,8 +2156,8 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_decline_of_the_ottomans.27
-	title = disaster_fee_decline_of_the_ottomans.EVTNAME27
-	desc = disaster_fee_decline_of_the_ottomans.EVTDESC27
+	title = disaster_fee_decline_of_the_ottomans.27.T
+	desc = disaster_fee_decline_of_the_ottomans.27.D
 	picture = CIVIL_WAR_eventPicture
 
 	is_triggered_only = yes
@@ -2167,7 +2167,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_decline_of_the_ottomans27.EVTOPT1
+		name = disaster_fee_decline_of_the_ottomans.27.OPT1
 
 		add_years_of_income = -0.5
 		add_adm_power = -100
@@ -2175,7 +2175,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_decline_of_the_ottomans27.EVTOPT2
+		name = disaster_fee_decline_of_the_ottomans.27.OPT2
 
 		add_adm_power = 50
 	}
@@ -2183,8 +2183,8 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_decline_of_the_ottomans.28
-	title = disaster_fee_decline_of_the_ottomans.EVTNAME28
-	desc = disaster_fee_decline_of_the_ottomans.EVTDESC28
+	title = disaster_fee_decline_of_the_ottomans.28.T
+	desc = disaster_fee_decline_of_the_ottomans.28.D
 	picture = CIVIL_WAR_eventPicture
 
 	is_triggered_only = yes
@@ -2236,7 +2236,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_decline_of_the_ottomans28.EVTOPT1
+		name = disaster_fee_decline_of_the_ottomans.28.OPT1
 
 		create_march = EGY
 		if = {
@@ -2251,7 +2251,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_decline_of_the_ottomans28.EVTOPT2
+		name = disaster_fee_decline_of_the_ottomans.28.OPT2
 
 		EGY = {
 			hidden_effect = {

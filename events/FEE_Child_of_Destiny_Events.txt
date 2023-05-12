@@ -261,9 +261,6 @@ country_event = {
 		has_heir_flag = child_of_destiny
 	}
 
-	immediate = {
-	}
-
 	option = {
 		name = FEE_Child_of_Destiny_Events.9.OPT1
 
@@ -274,13 +271,12 @@ country_event = {
 	}
 }
 
+# Child of Destiny
 country_event = {
 	id = FEE_Child_of_Destiny_Events.10
 	title = FEE_Child_of_Destiny_Events.10.T
 	desc = FEE_Child_of_Destiny_Events.10.D
-	picture = DEATH_OF_HEIR_eventPicture
-
-	hidden = yes
+	picture = HEIR_EDUCATION_eventPicture
 
 	trigger = {
 		has_dlc = "Rights of Man"
@@ -290,12 +286,6 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
-	}
-
-	immediate = {
-		hidden_effect = {
-			add_heir_personality = child_of_destiny_personality
-		}
 	}
 
 	option = {

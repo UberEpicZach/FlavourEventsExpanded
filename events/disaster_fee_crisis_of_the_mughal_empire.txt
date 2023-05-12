@@ -2,15 +2,15 @@ namespace = disaster_fee_crisis_of_the_mughal_empire
 
 country_event = {
 	id = disaster_fee_crisis_of_the_mughal_empire.1
-	title = disaster_fee_crisis_of_the_mughal_empire.EVTNAME1
-	desc = disaster_fee_crisis_of_the_mughal_empire.EVTDESC1
+	title = disaster_fee_crisis_of_the_mughal_empire.1.T
+	desc = disaster_fee_crisis_of_the_mughal_empire.1.D
 	picture = BAD_WITH_MONARCH_eventPicture
 
 	major = yes
 	is_triggered_only = yes
 
 	option = {
-		name = disaster_fee_crisis_of_the_mughal_empire1.EVTOPT1
+		name = disaster_fee_crisis_of_the_mughal_empire.1.OPT1
 
 		add_stability = -4
 		add_legitimacy = -30
@@ -20,15 +20,15 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_crisis_of_the_mughal_empire.2
-	title = disaster_fee_crisis_of_the_mughal_empire.EVTNAME2
-	desc = disaster_fee_crisis_of_the_mughal_empire.EVTDESC2
+	title = disaster_fee_crisis_of_the_mughal_empire.2.T
+	desc = disaster_fee_crisis_of_the_mughal_empire.2.D
 	picture = GOOD_WITH_MONARCH_eventPicture
 
 	major = yes
 	is_triggered_only = yes
 
 	option = {
-		name = disaster_fee_crisis_of_the_mughal_empire2.EVTOPT1
+		name = disaster_fee_crisis_of_the_mughal_empire.2.OPT1
 
 		add_stability = 1
 		add_adm_power = 200
@@ -38,15 +38,15 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_crisis_of_the_mughal_empire.3
-	title = disaster_fee_crisis_of_the_mughal_empire.EVTNAME3
-	desc = disaster_fee_crisis_of_the_mughal_empire.EVTDESC3
+	title = disaster_fee_crisis_of_the_mughal_empire.3.T
+	desc = disaster_fee_crisis_of_the_mughal_empire.3.D
 	picture = LAND_MILITARY_eventPicture
 
 	fire_only_once = yes
 	is_triggered_only = yes
 
 	option = {
-		name = disaster_fee_crisis_of_the_mughal_empire3.EVTOPT1
+		name = disaster_fee_crisis_of_the_mughal_empire.3.OPT1
 
 		add_disaster_modifier = {
 			name = fee_crisis_of_the_mughal_empire_weakened_army
@@ -58,8 +58,8 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_crisis_of_the_mughal_empire.4
-	title = disaster_fee_crisis_of_the_mughal_empire.EVTNAME4
-	desc = disaster_fee_crisis_of_the_mughal_empire.EVTDESC4
+	title = disaster_fee_crisis_of_the_mughal_empire.4.T
+	desc = disaster_fee_crisis_of_the_mughal_empire.4.D
 	picture = ANGRY_MOB_eventPicture
 
 	is_triggered_only = yes
@@ -98,7 +98,7 @@ country_event = {
 		}
 	}
 	option = {
-		name = disaster_fee_crisis_of_the_mughal_empire4.EVTOPT1
+		name = disaster_fee_crisis_of_the_mughal_empire.4.OPT1
 
 		if = {
 			limit = {
@@ -131,14 +131,14 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_crisis_of_the_mughal_empire.5
-	title = disaster_fee_crisis_of_the_mughal_empire.EVTNAME5
-	desc = disaster_fee_crisis_of_the_mughal_empire.EVTDESC5
+	title = disaster_fee_crisis_of_the_mughal_empire.5.T
+	desc = disaster_fee_crisis_of_the_mughal_empire.5.D
 	picture = BATTLE_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = disaster_fee_crisis_of_the_mughal_empire5.EVTOPT1
+		name = disaster_fee_crisis_of_the_mughal_empire.5.OPT1
 
 		add_army_tradition = -15
 		if = {
@@ -164,15 +164,15 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_crisis_of_the_mughal_empire.6
-	title = disaster_fee_crisis_of_the_mughal_empire.EVTNAME6
-	desc = disaster_fee_crisis_of_the_mughal_empire.EVTDESC6
+	title = disaster_fee_crisis_of_the_mughal_empire.6.T
+	desc = disaster_fee_crisis_of_the_mughal_empire.6.D
 	picture = OVEREXTENSION_eventPicture
 
 	fire_only_once = yes
 	is_triggered_only = yes
 
 	option = {
-		name = disaster_fee_crisis_of_the_mughal_empire6.EVTOPT1
+		name = disaster_fee_crisis_of_the_mughal_empire.6.OPT1
 
 		add_disaster_modifier = {
 			name = fee_crisis_of_the_mughal_empire_mughal_economic_collapse
@@ -184,8 +184,8 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_crisis_of_the_mughal_empire.7
-	title = disaster_fee_crisis_of_the_mughal_empire.EVTNAME7
-	desc = disaster_fee_crisis_of_the_mughal_empire.EVTDESC7
+	title = disaster_fee_crisis_of_the_mughal_empire.7.T
+	desc = disaster_fee_crisis_of_the_mughal_empire.7.D
 	picture = ANGRY_MOB_eventPicture
 
 	is_triggered_only = yes
@@ -219,7 +219,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_crisis_of_the_mughal_empire7.EVTOPT1
+		name = disaster_fee_crisis_of_the_mughal_empire.7.OPT1
 
 		event_target:rebel_province_1 = {
 			anti_tax_rebels = 2
@@ -235,14 +235,14 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_crisis_of_the_mughal_empire.8
-	title = disaster_fee_crisis_of_the_mughal_empire.EVTNAME8
-	desc = disaster_fee_crisis_of_the_mughal_empire.EVTDESC8
+	title = disaster_fee_crisis_of_the_mughal_empire.8.T
+	desc = disaster_fee_crisis_of_the_mughal_empire.8.D
 	picture = CORRUPTION_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = disaster_fee_crisis_of_the_mughal_empire8.EVTOPT1
+		name = disaster_fee_crisis_of_the_mughal_empire.8.OPT1
 
 		add_years_of_income = -0.5
 		if = {
@@ -266,7 +266,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_crisis_of_the_mughal_empire8.EVTOPT2
+		name = disaster_fee_crisis_of_the_mughal_empire.8.OPT2
 
 		add_stability = -1
 		if = {
@@ -292,15 +292,15 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_crisis_of_the_mughal_empire.9
-	title = disaster_fee_crisis_of_the_mughal_empire.EVTNAME9
-	desc = disaster_fee_crisis_of_the_mughal_empire.EVTDESC9
+	title = disaster_fee_crisis_of_the_mughal_empire.9.T
+	desc = disaster_fee_crisis_of_the_mughal_empire.9.D
 	picture = CONQUEST_eventPicture
 
 	fire_only_once = yes
 	is_triggered_only = yes
 
 	option = {
-		name = disaster_fee_crisis_of_the_mughal_empire9.EVTOPT1
+		name = disaster_fee_crisis_of_the_mughal_empire.9.OPT1
 
 		add_disaster_modifier = {
 			name = fee_crisis_of_the_mughal_empire_unpaid_army
@@ -312,14 +312,14 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_crisis_of_the_mughal_empire.10
-	title = disaster_fee_crisis_of_the_mughal_empire.EVTNAME10
-	desc = disaster_fee_crisis_of_the_mughal_empire.EVTDESC10
+	title = disaster_fee_crisis_of_the_mughal_empire.10.T
+	desc = disaster_fee_crisis_of_the_mughal_empire.10.D
 	picture = BAD_WITH_MONARCH_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = disaster_fee_crisis_of_the_mughal_empire10.EVTOPT1
+		name = disaster_fee_crisis_of_the_mughal_empire.10.OPT1
 
 		add_mil_power = -100
 	}
@@ -327,8 +327,8 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_crisis_of_the_mughal_empire.11
-	title = disaster_fee_crisis_of_the_mughal_empire.EVTNAME11
-	desc = disaster_fee_crisis_of_the_mughal_empire.EVTDESC11
+	title = disaster_fee_crisis_of_the_mughal_empire.11.T
+	desc = disaster_fee_crisis_of_the_mughal_empire.11.D
 	picture = REVOLUTION_eventPicture
 
 	fire_only_once = yes
@@ -386,7 +386,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_crisis_of_the_mughal_empire11.EVTOPT1
+		name = disaster_fee_crisis_of_the_mughal_empire.11.OPT1
 
 		add_stability = -1
 		RJP = {
@@ -400,8 +400,8 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_crisis_of_the_mughal_empire.12
-	title = disaster_fee_crisis_of_the_mughal_empire.EVTNAME12
-	desc = disaster_fee_crisis_of_the_mughal_empire.EVTDESC12
+	title = disaster_fee_crisis_of_the_mughal_empire.12.T
+	desc = disaster_fee_crisis_of_the_mughal_empire.12.D
 	picture = RELIGIOUS_TURMOIL_eventPicture
 
 	is_triggered_only = yes
@@ -458,7 +458,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_crisis_of_the_mughal_empire12.EVTOPT1
+		name = disaster_fee_crisis_of_the_mughal_empire.12.OPT1
 
 		add_stability_or_adm_power = yes
 		if = {
@@ -485,7 +485,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_crisis_of_the_mughal_empire12.EVTOPT2
+		name = disaster_fee_crisis_of_the_mughal_empire.12.OPT2
 
 		add_stability = -1
 		if = {
@@ -520,8 +520,8 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_crisis_of_the_mughal_empire.13
-	title = disaster_fee_crisis_of_the_mughal_empire.EVTNAME12
-	desc = disaster_fee_crisis_of_the_mughal_empire.EVTDESC13
+	title = disaster_fee_crisis_of_the_mughal_empire.12.T
+	desc = disaster_fee_crisis_of_the_mughal_empire.13.D
 	picture = ANGRY_MOB_eventPicture
 
 	is_triggered_only = yes
@@ -544,7 +544,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_crisis_of_the_mughal_empire13.EVTOPT1
+		name = disaster_fee_crisis_of_the_mughal_empire.13.OPT1
 
 		event_target:rebel_province_1 = {
 			noble_rebels = 3
@@ -557,14 +557,14 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_crisis_of_the_mughal_empire.14
-	title = disaster_fee_crisis_of_the_mughal_empire.EVTNAME14
-	desc = disaster_fee_crisis_of_the_mughal_empire.EVTDESC14
+	title = disaster_fee_crisis_of_the_mughal_empire.14.T
+	desc = disaster_fee_crisis_of_the_mughal_empire.14.D
 	picture = BAD_WITH_MONARCH_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = disaster_fee_crisis_of_the_mughal_empire14.EVTOPT1
+		name = disaster_fee_crisis_of_the_mughal_empire.14.OPT1
 
 		capital_scope = {
 			pretender_rebels = 3
@@ -574,14 +574,14 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_crisis_of_the_mughal_empire.15
-	title = disaster_fee_crisis_of_the_mughal_empire.EVTNAME15
-	desc = disaster_fee_crisis_of_the_mughal_empire.EVTDESC15
+	title = disaster_fee_crisis_of_the_mughal_empire.15.T
+	desc = disaster_fee_crisis_of_the_mughal_empire.15.D
 	picture = CORRUPTION_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = disaster_fee_crisis_of_the_mughal_empire15.EVTOPT1
+		name = disaster_fee_crisis_of_the_mughal_empire.15.OPT1
 
 		add_corruption = 2
 	}

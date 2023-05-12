@@ -2,10 +2,12 @@ namespace = FEE_Bulgaria_Events
 # Designed by a(stolfo)_sassy_carrot, coded by babysnake
 country_event = {
 	id = FEE_Bulgaria_Events.1
-	title = FEE_Bulgaria_Events.1.tt
-	desc = FEE_Bulgaria_Events.1.dd
+	title = FEE_Bulgaria_Events.1.T
+	desc = FEE_Bulgaria_Events.1.D
 	picture = ADVISOR_eventPicture
+
 	fire_only_once = yes
+
 	trigger = {
 		is_subject = no
 		tag = BUL
@@ -17,12 +19,17 @@ country_event = {
 			development = 12
 		}
 	}
+
 	mean_time_to_happen = {
 		months = 24
 	}
+
 	option = {
+		ai_chance = {
+			factor = 100
+		}
+
 		add_years_of_income = -0.25
-		# build fort
 		name = FEE_Bulgaria_Events.1.OPT1
 		4704 = {
 			add_province_modifier = {
@@ -39,13 +46,11 @@ country_event = {
 				add_building = fort_15th
 			}
 		}
-		ai_chance = {
-			factor = 100
-		}
 	}
+
 	option = {
-		# encourage recruitment into army
 		name = FEE_Bulgaria_Events.1.OPT2
+
 		4704 = {
 			add_base_manpower = 2
 		}
@@ -55,9 +60,10 @@ country_event = {
 		}
 		add_years_of_income = -0.25
 	}
+
 	option = {
-		# Put the money towards the administration in the city
 		name = FEE_Bulgaria_Events.1.OPT3
+
 		4704 = {
 			add_base_tax = 1
 		}
@@ -67,9 +73,10 @@ country_event = {
 		}
 		add_years_of_income = -0.25
 	}
+
 	option = {
-		# Put the money improving the farms
 		name = FEE_Bulgaria_Events.1.D
+
 		4704 = {
 			add_base_production = 2
 			add_province_modifier = {
@@ -83,48 +90,46 @@ country_event = {
 
 country_event = {
 	id = FEE_Bulgaria_Events.2
-	title = FEE_Bulgaria_Events.2.tt
-	desc = FEE_Bulgaria_Events.2.dd
+	title = FEE_Bulgaria_Events.2.T
+	desc = FEE_Bulgaria_Events.2.D
 	picture = ADVISOR_eventPicture
+
 	fire_only_once = yes
+
 	trigger = {
 		is_subject = no
 		tag = BUL
 		owns_core_province = 151
 		is_at_war = no
 	}
+
 	mean_time_to_happen = {
 		months = 2
 	}
+
 	option = {
 		name = FEE_Bulgaria_Events.2.OPT1
-		151 = {
-			if = {
-				limit = {
-					ROOT = {
-						NOT = {
-							has_country_flag = use_missions_expanded_missions_instead_of_paradox
-						}
-					}
-				}
-				change_province_name = "Tsargrad"
-				rename_capital = "Tsargrad"
-			}
-			add_devastation = -10
-		}
+
 		add_country_modifier = {
 			name = FEE_Bulgarian_Parades_Through_Tsargrad
 			duration = 3650
+		}
+		151 = {
+			rename_capital = "Tsargrad"
+			add_devastation = -10
+			change_province_name = "Tsargrad"
 		}
 	}
 }
 
 country_event = {
 	id = FEE_Bulgaria_Events.3
-	title = FEE_Bulgaria_Events.3.tt
-	desc = FEE_Bulgaria_Events.3.dd
+	title = FEE_Bulgaria_Events.3.T
+	desc = FEE_Bulgaria_Events.3.D
 	picture = ADVISOR_eventPicture
+
 	fire_only_once = yes
+
 	trigger = {
 		is_subject = no
 		tag = BUL
@@ -135,35 +140,30 @@ country_event = {
 		}
 		uses_patriarch_authority = yes
 	}
+
 	option = {
 		name = FEE_Bulgaria_Events.3.OPT1
-		add_prestige_or_monarch_power = { amount = 20 }
-		add_years_of_income = -0.5
-		if = {
-			limit = {
-				patriarch_authority = 0.8
-			}
-			add_prestige_or_monarch_power = { amount = 10 }
+		ai_chance = {
+			factor = 100
 		}
+
+		add_prestige = 20
+		add_years_of_income = -0.5
 		change_religious_influence_equivalent_fee = { add = 20 }
 		add_country_modifier = {
 			name = FEE_Bulgarian_Statue_Military
 			duration = -1
 		}
+	}
+
+	option = {
+		name = FEE_Bulgaria_Events.3.OPT2
 		ai_chance = {
 			factor = 100
 		}
-	}
-	option = {
-		name = FEE_Bulgaria_Events.3.OPT2
+
 		add_years_of_income = -0.5
-		add_prestige_or_monarch_power = { amount = 20 }
-		if = {
-			limit = {
-				patriarch_authority = 0.8
-			}
-			add_prestige_or_monarch_power = { amount = 10 }
-		}
+		add_prestige = 20
 		change_religious_influence_equivalent_fee = { add = 20 }
 		add_country_modifier = {
 			name = FEE_Bulgarian_Statue_Trade
@@ -175,30 +175,31 @@ country_event = {
 				duration = -1
 			}
 		}
-		ai_chance = {
-			factor = 100
-		}
 	}
+
 	option = {
 		name = FEE_Bulgaria_Events.3.OPT3
+		ai_chance = {
+			factor = 0
+		}
+
 		add_prestige = -5
 		set_country_flag = FEE_Bulgaria_Statue_Later
 		country_event = {
 			id = FEE_Bulgaria_Events.3
 			days = 1825
 		}
+	}
+
+	option = {
+		name = FEE_Bulgaria_Events.3.OPT4
 		ai_chance = {
 			factor = 0
 		}
-	}
-	option = {
 		trigger = {
 			has_country_flag = FEE_Bulgaria_Statue_Later
 		}
-		name = FEE_Bulgaria_Events.3.D
+
 		add_prestige = -10
-		ai_chance = {
-			factor = 0
-		}
 	}
 }

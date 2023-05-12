@@ -2,8 +2,8 @@ namespace = disaster_fee_partition_of_poland
 
 country_event = {
 	id = disaster_fee_partition_of_poland.1
-	title = disaster_fee_partition_of_poland.EVTNAME1
-	desc = disaster_fee_partition_of_poland.EVTDESC1
+	title = disaster_fee_partition_of_poland.1.T
+	desc = disaster_fee_partition_of_poland.1.D
 	picture = BAD_WITH_MONARCH_eventPicture
 
 	major = yes
@@ -18,7 +18,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_partition_of_poland1.EVTOPT1
+		name = disaster_fee_partition_of_poland.1.OPT1
 
 		add_stability = -2
 		add_prestige = -50
@@ -32,8 +32,8 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_partition_of_poland.2
-	title = disaster_fee_partition_of_poland.EVTNAME2
-	desc = disaster_fee_partition_of_poland.EVTDESC2
+	title = disaster_fee_partition_of_poland.2.T
+	desc = disaster_fee_partition_of_poland.2.D
 	picture = GOOD_WITH_MONARCH_eventPicture
 
 	major = yes
@@ -46,7 +46,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_partition_of_poland2.EVTOPT1
+		name = disaster_fee_partition_of_poland.2.OPT1
 
 		add_stability_or_adm_power = yes
 		add_legitimacy_equivalent = { amount = 20 republican_tradition = 20 }
@@ -59,8 +59,8 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_partition_of_poland.3
-	title = disaster_fee_partition_of_poland.EVTNAME3
-	desc = disaster_fee_partition_of_poland.EVTDESC3
+	title = disaster_fee_partition_of_poland.3.T
+	desc = disaster_fee_partition_of_poland.3.D
 	picture = DIPLOMACY_eventPicture
 
 	hidden = yes
@@ -96,7 +96,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_partition_of_poland3.EVTOPT1
+		name = disaster_fee_partition_of_poland.3.OPT1
 
 		ai_chance = { factor = 100 }
 	}
@@ -104,14 +104,14 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_partition_of_poland.4
-	title = disaster_fee_partition_of_poland.EVTNAME4
-	desc = disaster_fee_partition_of_poland.EVTDESC4
+	title = disaster_fee_partition_of_poland.4.T
+	desc = disaster_fee_partition_of_poland.4.D
 	picture = DIPLOMACY_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = disaster_fee_partition_of_poland4.EVTOPT1
+		name = disaster_fee_partition_of_poland.4.OPT1
 
 		ai_chance = { factor = 100 }
 	}
@@ -119,8 +119,8 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_partition_of_poland.5
-	title = disaster_fee_partition_of_poland.EVTNAME5
-	desc = disaster_fee_partition_of_poland.EVTDESC5
+	title = disaster_fee_partition_of_poland.5.T
+	desc = disaster_fee_partition_of_poland.5.D
 	picture = DIPLOMACY_eventPicture
 
 	hidden = yes
@@ -151,7 +151,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_partition_of_poland5.EVTOPT1
+		name = disaster_fee_partition_of_poland.5.OPT1
 
 		ai_chance = { factor = 100 }
 	}
@@ -159,14 +159,14 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_partition_of_poland.6
-	title = disaster_fee_partition_of_poland.EVTNAME6
-	desc = disaster_fee_partition_of_poland.EVTDESC6
+	title = disaster_fee_partition_of_poland.6.T
+	desc = disaster_fee_partition_of_poland.6.D
 	picture = DIPLOMACY_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = disaster_fee_partition_of_poland6.EVTOPT1
+		name = disaster_fee_partition_of_poland.6.OPT1
 
 		ai_chance = { factor = 100 }
 	}
@@ -174,8 +174,8 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_partition_of_poland.7
-	title = disaster_fee_partition_of_poland.EVTNAME7
-	desc = disaster_fee_partition_of_poland.EVTDESC7
+	title = disaster_fee_partition_of_poland.7.T
+	desc = disaster_fee_partition_of_poland.7.D
 	picture = DIPLOMACY_eventPicture
 
 	hidden = yes
@@ -212,7 +212,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_partition_of_poland7.EVTOPT1
+		name = disaster_fee_partition_of_poland.7.OPT1
 
 		ai_chance = { factor = 100 }
 	}
@@ -220,14 +220,14 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_partition_of_poland.8
-	title = disaster_fee_partition_of_poland.EVTNAME8
-	desc = disaster_fee_partition_of_poland.EVTDESC8
+	title = disaster_fee_partition_of_poland.8.T
+	desc = disaster_fee_partition_of_poland.8.D
 	picture = DIPLOMACY_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = disaster_fee_partition_of_poland8.EVTOPT1
+		name = disaster_fee_partition_of_poland.8.OPT1
 
 		ai_chance = { factor = 100 }
 	}
@@ -235,8 +235,8 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_partition_of_poland.9
-	title = disaster_fee_partition_of_poland.EVTNAME9
-	desc = disaster_fee_partition_of_poland.EVTDESC9
+	title = disaster_fee_partition_of_poland.9.T
+	desc = disaster_fee_partition_of_poland.9.D
 	picture = DIPLOMACY_eventPicture
 
 	hidden = yes
@@ -336,7 +336,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_partition_of_poland9.EVTOPT1
+		name = disaster_fee_partition_of_poland.9.OPT1
 
 		ai_chance = { factor = 100 }
 	}
@@ -344,8 +344,8 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_partition_of_poland.10
-	title = disaster_fee_partition_of_poland.EVTNAME10
-	desc = disaster_fee_partition_of_poland.EVTDESC10
+	title = disaster_fee_partition_of_poland.10.T
+	desc = disaster_fee_partition_of_poland.10.D
 	picture = HRE_eventPicture
 
 	major = yes
@@ -360,7 +360,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = disaster_fee_partition_of_poland10.EVTOPT1
+		name = disaster_fee_partition_of_poland.10.OPT1
 
 		tooltip = {
 			PRU = {
@@ -408,8 +408,8 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_partition_of_poland.11
-	title = disaster_fee_partition_of_poland.EVTNAME11
-	desc = disaster_fee_partition_of_poland.EVTDESC11
+	title = disaster_fee_partition_of_poland.11.T
+	desc = disaster_fee_partition_of_poland.11.D
 	picture = ECONOMY_eventPicture
 
 	is_triggered_only = yes
@@ -432,7 +432,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_partition_of_poland11.EVTOPT1
+		name = disaster_fee_partition_of_poland.11.OPT1
 
 		add_inflation = 5
 	}
@@ -440,8 +440,8 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_partition_of_poland.12
-	title = disaster_fee_partition_of_poland.EVTNAME12
-	desc = disaster_fee_partition_of_poland.EVTDESC12
+	title = disaster_fee_partition_of_poland.12.T
+	desc = disaster_fee_partition_of_poland.12.D
 	picture = ECONOMY_eventPicture
 
 	goto = 43
@@ -480,7 +480,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_partition_of_poland12.EVTOPT1
+		name = disaster_fee_partition_of_poland.12.OPT1
 
 		add_stability = -1
 		43 = {
@@ -496,7 +496,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_partition_of_poland12.EVTOPT2
+		name = disaster_fee_partition_of_poland.12.OPT2
 
 		43 = {
 			add_core = event_target:danzig_or_war_enemy
@@ -509,8 +509,8 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_partition_of_poland.13
-	title = disaster_fee_partition_of_poland.EVTNAME13
-	desc = disaster_fee_partition_of_poland.EVTDESC13
+	title = disaster_fee_partition_of_poland.13.T
+	desc = disaster_fee_partition_of_poland.13.D
 	picture = CITY_VIEW_eventPicture
 
 	goto = 43
@@ -518,7 +518,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = disaster_fee_partition_of_poland13.EVTOPT1
+		name = disaster_fee_partition_of_poland.13.OPT1
 
 		tooltip = {
 			43 = {
@@ -532,14 +532,14 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_partition_of_poland.14
-	title = disaster_fee_partition_of_poland.EVTNAME14
-	desc = disaster_fee_partition_of_poland.EVTDESC14
+	title = disaster_fee_partition_of_poland.14.T
+	desc = disaster_fee_partition_of_poland.14.D
 	picture = CITY_VIEW_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = disaster_fee_partition_of_poland14.EVTOPT1
+		name = disaster_fee_partition_of_poland.14.OPT1
 
 		ai_chance = {
 			factor = 0.7
@@ -570,7 +570,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_partition_of_poland14.EVTOPT2
+		name = disaster_fee_partition_of_poland.14.OPT2
 
 		ai_chance = {
 			factor = 0.3
@@ -586,8 +586,8 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_partition_of_poland.15
-	title = disaster_fee_partition_of_poland.EVTNAME15
-	desc = disaster_fee_partition_of_poland.EVTDESC15
+	title = disaster_fee_partition_of_poland.15.T
+	desc = disaster_fee_partition_of_poland.15.D
 	picture = COURT_eventPicture
 
 	is_triggered_only = yes
@@ -651,7 +651,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_partition_of_poland15.EVTOPT1
+		name = disaster_fee_partition_of_poland.15.OPT1
 
 		ai_chance = {
 			factor = 0.25
@@ -669,7 +669,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_partition_of_poland15.EVTOPT2
+		name = disaster_fee_partition_of_poland.15.OPT2
 
 		ai_chance = {
 			factor = 0.75
@@ -690,8 +690,8 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_partition_of_poland.16
-	title = disaster_fee_partition_of_poland.EVTNAME16
-	desc = disaster_fee_partition_of_poland.EVTDESC16
+	title = disaster_fee_partition_of_poland.16.T
+	desc = disaster_fee_partition_of_poland.16.D
 	picture = ANGRY_MOB_eventPicture
 
 	is_triggered_only = yes
@@ -757,7 +757,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_partition_of_poland16.EVTOPT1
+		name = disaster_fee_partition_of_poland.16.OPT1
 
 		ai_chance = {
 			factor = 0.25
@@ -778,7 +778,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_partition_of_poland16.EVTOPT2
+		name = disaster_fee_partition_of_poland.16.OPT2
 
 		ai_chance = {
 			factor = 0.75
@@ -799,8 +799,8 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_partition_of_poland.17
-	title = disaster_fee_partition_of_poland.EVTNAME17
-	desc = disaster_fee_partition_of_poland.EVTDESC17
+	title = disaster_fee_partition_of_poland.17.T
+	desc = disaster_fee_partition_of_poland.17.D
 	picture = ANGRY_MOB_eventPicture
 
 	is_triggered_only = yes
@@ -878,7 +878,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_partition_of_poland17.EVTOPT1
+		name = disaster_fee_partition_of_poland.17.OPT1
 
 		add_stability = -1
 		event_target:rebel_province_1 = {
@@ -895,8 +895,8 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_partition_of_poland.18
-	title = disaster_fee_partition_of_poland.EVTNAME18
-	desc = disaster_fee_partition_of_poland.EVTDESC18
+	title = disaster_fee_partition_of_poland.18.T
+	desc = disaster_fee_partition_of_poland.18.D
 	picture = CITY_VIEW_eventPicture
 
 	goto = target_province
@@ -940,7 +940,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_partition_of_poland18.EVTOPT1
+		name = disaster_fee_partition_of_poland.18.OPT1
 
 		ai_chance = {
 			factor = 0.25
@@ -1010,7 +1010,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_partition_of_poland18.EVTOPT2
+		name = disaster_fee_partition_of_poland.18.OPT2
 
 		ai_chance = {
 			factor = 0.75
@@ -1048,8 +1048,8 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_partition_of_poland.19
-	title = disaster_fee_partition_of_poland.EVTNAME19
-	desc = disaster_fee_partition_of_poland.EVTDESC19
+	title = disaster_fee_partition_of_poland.19.T
+	desc = disaster_fee_partition_of_poland.19.D
 	picture = TRADE_GOODS_eventPicture
 
 	fire_only_once = yes
@@ -1068,7 +1068,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_partition_of_poland19.EVTOPT1
+		name = disaster_fee_partition_of_poland.19.OPT1
 
 		add_stability = -1
 		add_disaster_modifier = {
@@ -1081,8 +1081,8 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_partition_of_poland.20
-	title = disaster_fee_partition_of_poland.EVTNAME20
-	desc = disaster_fee_partition_of_poland.EVTDESC20
+	title = disaster_fee_partition_of_poland.20.T
+	desc = disaster_fee_partition_of_poland.20.D
 	picture = TRADE_GOODS_eventPicture
 
 	fire_only_once = yes
@@ -1112,7 +1112,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_partition_of_poland20.EVTOPT1
+		name = disaster_fee_partition_of_poland.20.OPT1
 
 		ai_chance = { factor = 100 }
 	}
@@ -1120,8 +1120,8 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_partition_of_poland.21
-	title = disaster_fee_partition_of_poland.EVTNAME21
-	desc = disaster_fee_partition_of_poland.EVTDESC21
+	title = disaster_fee_partition_of_poland.21.T
+	desc = disaster_fee_partition_of_poland.21.D
 	picture = COURT_eventPicture
 
 	fire_only_once = yes
@@ -1186,7 +1186,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_partition_of_poland21.EVTOPT1
+		name = disaster_fee_partition_of_poland.21.OPT1
 
 		ai_chance = {
 			factor = 0.1
@@ -1248,7 +1248,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_partition_of_poland21.EVTOPT2
+		name = disaster_fee_partition_of_poland.21.OPT2
 
 		ai_chance = {
 			factor = 0.9
@@ -1270,14 +1270,14 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_partition_of_poland.22
-	title = disaster_fee_partition_of_poland.EVTNAME22
-	desc = disaster_fee_partition_of_poland.EVTDESC22
+	title = disaster_fee_partition_of_poland.22.T
+	desc = disaster_fee_partition_of_poland.22.D
 	picture = DIPLOMACY_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = disaster_fee_partition_of_poland22.EVTOPT1
+		name = disaster_fee_partition_of_poland.22.OPT1
 
 		add_casus_belli = {
 			target = FROM
@@ -1288,8 +1288,8 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_partition_of_poland.23
-	title = disaster_fee_partition_of_poland.EVTNAME23
-	desc = disaster_fee_partition_of_poland.EVTDESC23
+	title = disaster_fee_partition_of_poland.23.T
+	desc = disaster_fee_partition_of_poland.23.D
 	picture = GOOD_WITH_MONARCH_eventPicture
 
 	hidden = yes
@@ -1327,7 +1327,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_partition_of_poland23.EVTOPT1
+		name = disaster_fee_partition_of_poland.23.OPT1
 
 		ai_chance = { factor = 100 }
 	}
@@ -1335,8 +1335,8 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_partition_of_poland.24
-	title = disaster_fee_partition_of_poland.EVTNAME24
-	desc = disaster_fee_partition_of_poland.EVTDESC24
+	title = disaster_fee_partition_of_poland.24.T
+	desc = disaster_fee_partition_of_poland.24.D
 	picture = ANGRY_MOB_eventPicture
 
 	major = yes
@@ -1375,7 +1375,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_partition_of_poland24.EVTOPT1
+		name = disaster_fee_partition_of_poland.24.OPT1
 
 		event_target:rebel_province_1 = {
 			nationalist_rebels = 3

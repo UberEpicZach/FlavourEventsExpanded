@@ -3,8 +3,8 @@ namespace = disaster_fee_division_of_the_habsburg_monarchy
 # Start of Disaster
 country_event = {
 	id = disaster_fee_division_of_the_habsburg_monarchy.1
-	title = disaster_fee_division_of_the_habsburg_monarchy.EVTNAME1
-	desc = disaster_fee_division_of_the_habsburg_monarchy.EVTDESC1
+	title = disaster_fee_division_of_the_habsburg_monarchy.1.T
+	desc = disaster_fee_division_of_the_habsburg_monarchy.1.D
 	picture = CIVIL_WAR_eventPicture
 
 	major = yes
@@ -18,7 +18,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_division_of_the_habsburg_monarchy1.EVTOPT1
+		name = disaster_fee_division_of_the_habsburg_monarchy.1.OPT1
 
 		add_stability = -1
 		add_legitimacy = -50
@@ -28,15 +28,15 @@ country_event = {
 # End of Disaster
 country_event = {
 	id = disaster_fee_division_of_the_habsburg_monarchy.2
-	title = disaster_fee_division_of_the_habsburg_monarchy.EVTNAME2
-	desc = disaster_fee_division_of_the_habsburg_monarchy.EVTDESC2
+	title = disaster_fee_division_of_the_habsburg_monarchy.2.T
+	desc = disaster_fee_division_of_the_habsburg_monarchy.2.D
 	picture = GOOD_WITH_MONARCH_eventPicture
 
 	major = yes
 	is_triggered_only = yes
 
 	option = {
-		name = disaster_fee_division_of_the_habsburg_monarchy2.EVTOPT1
+		name = disaster_fee_division_of_the_habsburg_monarchy.2.OPT1
 
 		add_stability = 2
 		change_government_reform_progress = 100
@@ -80,8 +80,8 @@ country_event = {
 # Release Styria
 country_event = {
 	id = disaster_fee_division_of_the_habsburg_monarchy.3
-	title = disaster_fee_division_of_the_habsburg_monarchy.EVTNAME3
-	desc = disaster_fee_division_of_the_habsburg_monarchy.EVTDESC3
+	title = disaster_fee_division_of_the_habsburg_monarchy.3.T
+	desc = disaster_fee_division_of_the_habsburg_monarchy.3.D
 	picture = CIVIL_WAR_eventPicture
 
 	fire_only_once = yes
@@ -174,7 +174,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_division_of_the_habsburg_monarchy3.EVTOPT1
+		name = disaster_fee_division_of_the_habsburg_monarchy.3.OPT1
 
 		tooltip = {
 			STY = {
@@ -210,7 +210,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_division_of_the_habsburg_monarchy3.EVTOPT2
+		name = disaster_fee_division_of_the_habsburg_monarchy.3.OPT2
 
 		add_stability = -1
 		tooltip = {
@@ -263,8 +263,8 @@ country_event = {
 # The Return of the King
 country_event = {
 	id = disaster_fee_division_of_the_habsburg_monarchy.4
-	title = disaster_fee_division_of_the_habsburg_monarchy.EVTNAME4
-	desc = disaster_fee_division_of_the_habsburg_monarchy.EVTDESC4
+	title = disaster_fee_division_of_the_habsburg_monarchy.4.T
+	desc = disaster_fee_division_of_the_habsburg_monarchy.4.D
 	picture = HRE_eventPicture
 
 	major = yes
@@ -280,7 +280,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_division_of_the_habsburg_monarchy4.EVTOPT1
+		name = disaster_fee_division_of_the_habsburg_monarchy.4.OPT1
 
 		ai_chance = {
 			factor = 0.4
@@ -354,7 +354,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_division_of_the_habsburg_monarchy4.EVTOPT2
+		name = disaster_fee_division_of_the_habsburg_monarchy.4.OPT2
 
 		ai_chance = {
 			factor = 0.6
@@ -394,8 +394,8 @@ country_event = {
 # Hidden Event to trigger the Styria becomes Emperor Event
 country_event = {
 	id = disaster_fee_division_of_the_habsburg_monarchy.5
-	title = disaster_fee_division_of_the_habsburg_monarchy.EVTNAME5
-	desc = disaster_fee_division_of_the_habsburg_monarchy.EVTDESC5
+	title = disaster_fee_division_of_the_habsburg_monarchy.5.T
+	desc = disaster_fee_division_of_the_habsburg_monarchy.5.D
 	picture = HRE_eventPicture
 
 	hidden = yes
@@ -458,7 +458,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_division_of_the_habsburg_monarchy5.EVTOPT1
+		name = disaster_fee_division_of_the_habsburg_monarchy.5.OPT1
 
 		ai_chance = { factor = 100 }
 	}
@@ -467,15 +467,15 @@ country_event = {
 # Styria becomes Emperor
 country_event = {
 	id = disaster_fee_division_of_the_habsburg_monarchy.6
-	title = disaster_fee_division_of_the_habsburg_monarchy.EVTNAME6
-	desc = disaster_fee_division_of_the_habsburg_monarchy.EVTDESC6
+	title = disaster_fee_division_of_the_habsburg_monarchy.6.T
+	desc = disaster_fee_division_of_the_habsburg_monarchy.6.D
 	picture = HRE_eventPicture
 
 	major = yes
 	is_triggered_only = yes
 
 	option = {
-		name = disaster_fee_division_of_the_habsburg_monarchy6.EVTOPT1
+		name = disaster_fee_division_of_the_habsburg_monarchy.6.OPT1
 
 		tooltip = {
 			set_emperor = no
@@ -492,8 +492,8 @@ country_event = {
 # Release Tirol
 country_event = {
 	id = disaster_fee_division_of_the_habsburg_monarchy.7
-	title = disaster_fee_division_of_the_habsburg_monarchy.EVTNAME7
-	desc = disaster_fee_division_of_the_habsburg_monarchy.EVTDESC7
+	title = disaster_fee_division_of_the_habsburg_monarchy.7.T
+	desc = disaster_fee_division_of_the_habsburg_monarchy.7.D
 	picture = CIVIL_WAR_eventPicture
 
 	fire_only_once = yes
@@ -586,7 +586,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_division_of_the_habsburg_monarchy7.EVTOPT1
+		name = disaster_fee_division_of_the_habsburg_monarchy.7.OPT1
 
 		tooltip = {
 			TIR = {
@@ -601,7 +601,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_division_of_the_habsburg_monarchy7.EVTOPT2
+		name = disaster_fee_division_of_the_habsburg_monarchy.7.OPT2
 
 		add_stability = -1
 		tooltip = {
@@ -650,8 +650,8 @@ country_event = {
 # Release Hungary (for Austria)
 country_event = {
 	id = disaster_fee_division_of_the_habsburg_monarchy.8
-	title = disaster_fee_division_of_the_habsburg_monarchy.EVTNAME8
-	desc = disaster_fee_division_of_the_habsburg_monarchy.EVTDESC8
+	title = disaster_fee_division_of_the_habsburg_monarchy.8.T
+	desc = disaster_fee_division_of_the_habsburg_monarchy.8.D
 	picture = CIVIL_WAR_eventPicture
 
 	major = yes
@@ -682,7 +682,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_division_of_the_habsburg_monarchy8.EVTOPT1
+		name = disaster_fee_division_of_the_habsburg_monarchy.8.OPT1
 
 		tooltip = {
 			HUN = {
@@ -698,7 +698,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_division_of_the_habsburg_monarchy8.EVTOPT2
+		name = disaster_fee_division_of_the_habsburg_monarchy.8.OPT2
 
 		add_legitimacy = -20
 		HUN = {
@@ -710,14 +710,14 @@ country_event = {
 # Release Hungary (for Hungary)
 country_event = {
 	id = disaster_fee_division_of_the_habsburg_monarchy.9
-	title = disaster_fee_division_of_the_habsburg_monarchy.EVTNAME9
-	desc = disaster_fee_division_of_the_habsburg_monarchy.EVTDESC9
+	title = disaster_fee_division_of_the_habsburg_monarchy.9.T
+	desc = disaster_fee_division_of_the_habsburg_monarchy.9.D
 	picture = DIPLOMACY_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = disaster_fee_division_of_the_habsburg_monarchy9.EVTOPT1
+		name = disaster_fee_division_of_the_habsburg_monarchy.9.OPT1
 
 		add_truce_with = FROM
 		tooltip = {
@@ -756,8 +756,8 @@ country_event = {
 # Release Bohemia (for Austria)
 country_event = {
 	id = disaster_fee_division_of_the_habsburg_monarchy.10
-	title = disaster_fee_division_of_the_habsburg_monarchy.EVTNAME10
-	desc = disaster_fee_division_of_the_habsburg_monarchy.EVTDESC10
+	title = disaster_fee_division_of_the_habsburg_monarchy.10.T
+	desc = disaster_fee_division_of_the_habsburg_monarchy.10.D
 	picture = CIVIL_WAR_eventPicture
 
 	major = yes
@@ -788,7 +788,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_division_of_the_habsburg_monarchy10.EVTOPT1
+		name = disaster_fee_division_of_the_habsburg_monarchy.10.OPT1
 
 		tooltip = {
 			BOH = {
@@ -804,7 +804,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_division_of_the_habsburg_monarchy10.EVTOPT2
+		name = disaster_fee_division_of_the_habsburg_monarchy.10.OPT2
 
 		add_legitimacy = -20
 		BOH = {
@@ -816,14 +816,14 @@ country_event = {
 # Release Bohemia (for Bohemia)
 country_event = {
 	id = disaster_fee_division_of_the_habsburg_monarchy.11
-	title = disaster_fee_division_of_the_habsburg_monarchy.EVTNAME11
-	desc = disaster_fee_division_of_the_habsburg_monarchy.EVTDESC11
+	title = disaster_fee_division_of_the_habsburg_monarchy.11.T
+	desc = disaster_fee_division_of_the_habsburg_monarchy.11.D
 	picture = DIPLOMACY_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = disaster_fee_division_of_the_habsburg_monarchy11.EVTOPT1
+		name = disaster_fee_division_of_the_habsburg_monarchy.11.OPT1
 
 		add_truce_with = FROM
 		tooltip = {
@@ -857,8 +857,8 @@ country_event = {
 # Release Swabia
 country_event = {
 	id = disaster_fee_division_of_the_habsburg_monarchy.12
-	title = disaster_fee_division_of_the_habsburg_monarchy.EVTNAME12
-	desc = disaster_fee_division_of_the_habsburg_monarchy.EVTDESC12
+	title = disaster_fee_division_of_the_habsburg_monarchy.12.T
+	desc = disaster_fee_division_of_the_habsburg_monarchy.12.D
 	picture = CIVIL_WAR_eventPicture
 
 	fire_only_once = yes
@@ -951,7 +951,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_division_of_the_habsburg_monarchy12.EVTOPT1
+		name = disaster_fee_division_of_the_habsburg_monarchy.12.OPT1
 
 		tooltip = {
 			SWA = {
@@ -966,7 +966,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_division_of_the_habsburg_monarchy12.EVTOPT2
+		name = disaster_fee_division_of_the_habsburg_monarchy.12.OPT2
 
 		add_stability = -1
 		tooltip = {
@@ -1027,8 +1027,8 @@ country_event = {
 # Reunification?
 country_event = {
 	id = disaster_fee_division_of_the_habsburg_monarchy.13
-	title = disaster_fee_division_of_the_habsburg_monarchy.EVTNAME13
-	desc = disaster_fee_division_of_the_habsburg_monarchy.EVTDESC13
+	title = disaster_fee_division_of_the_habsburg_monarchy.13.T
+	desc = disaster_fee_division_of_the_habsburg_monarchy.13.D
 	picture = COURT_eventPicture
 
 	fire_only_once = yes
@@ -1048,7 +1048,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_division_of_the_habsburg_monarchy13.EVTOPT1
+		name = disaster_fee_division_of_the_habsburg_monarchy.13.OPT1
 
 		add_country_modifier = {
 			name = fee_division_of_the_habsburg_monarchy_diplomatic_efforts
@@ -1058,7 +1058,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_division_of_the_habsburg_monarchy13.EVTOPT2
+		name = disaster_fee_division_of_the_habsburg_monarchy.13.OPT2
 
 		add_country_modifier = {
 			name = fee_division_of_the_habsburg_monarchy_reunification_wars
@@ -1121,14 +1121,14 @@ country_event = {
 # Proposal from [From.Capital.GetName]
 country_event = {
 	id = disaster_fee_division_of_the_habsburg_monarchy.14
-	title = disaster_fee_division_of_the_habsburg_monarchy.EVTNAME14
-	desc = disaster_fee_division_of_the_habsburg_monarchy.EVTDESC14
+	title = disaster_fee_division_of_the_habsburg_monarchy.14.T
+	desc = disaster_fee_division_of_the_habsburg_monarchy.14.D
 	picture = DIPLOMACY_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = disaster_fee_division_of_the_habsburg_monarchy14.EVTOPT1
+		name = disaster_fee_division_of_the_habsburg_monarchy.14.OPT1
 
 		ai_chance = {
 			factor = 0.5
@@ -1181,7 +1181,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_division_of_the_habsburg_monarchy14.EVTOPT2
+		name = disaster_fee_division_of_the_habsburg_monarchy.14.OPT2
 
 		ai_chance = {
 			factor = 0.5
@@ -1236,14 +1236,14 @@ country_event = {
 # [From.GetName] Accepts!
 country_event = {
 	id = disaster_fee_division_of_the_habsburg_monarchy.15
-	title = disaster_fee_division_of_the_habsburg_monarchy.EVTNAME15
-	desc = disaster_fee_division_of_the_habsburg_monarchy.EVTDESC15
+	title = disaster_fee_division_of_the_habsburg_monarchy.15.T
+	desc = disaster_fee_division_of_the_habsburg_monarchy.15.D
 	picture = GOOD_WITH_MONARCH_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = disaster_fee_division_of_the_habsburg_monarchy15.EVTOPT1
+		name = disaster_fee_division_of_the_habsburg_monarchy.15.OPT1
 
 		if = {
 			limit = {
@@ -1290,14 +1290,14 @@ country_event = {
 # [From.GetName] Refuses!
 country_event = {
 	id = disaster_fee_division_of_the_habsburg_monarchy.16
-	title = disaster_fee_division_of_the_habsburg_monarchy.EVTNAME16
-	desc = disaster_fee_division_of_the_habsburg_monarchy.EVTDESC16
+	title = disaster_fee_division_of_the_habsburg_monarchy.16.T
+	desc = disaster_fee_division_of_the_habsburg_monarchy.16.D
 	picture = BAD_WITH_MONARCH_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = disaster_fee_division_of_the_habsburg_monarchy16.EVTOPT1
+		name = disaster_fee_division_of_the_habsburg_monarchy.16.OPT1
 
 		add_casus_belli = {
 			target = FROM
@@ -1333,8 +1333,8 @@ country_event = {
 # Proposal to Styria [deleted]
 #	country_event = {
 #		id = disaster_fee_division_of_the_habsburg_monarchy.17
-#		title = disaster_fee_division_of_the_habsburg_monarchy.EVTNAME17
-#		desc = disaster_fee_division_of_the_habsburg_monarchy.EVTDESC17
+#		title = disaster_fee_division_of_the_habsburg_monarchy.17.T
+#		desc = disaster_fee_division_of_the_habsburg_monarchy.17.D
 #		picture = DIPLOMACY_eventPicture
 #
 #		fire_only_once = yes
@@ -1370,7 +1370,7 @@ country_event = {
 #		}
 #
 #		option = {
-#			name = disaster_fee_division_of_the_habsburg_monarchy17.EVTOPT1
+#			name = disaster_fee_division_of_the_habsburg_monarchy.17.OPT1
 #
 #			STY = {
 #				country_event = { id = disaster_fee_division_of_the_habsburg_monarchy.14 days = 3 }
@@ -1378,7 +1378,7 @@ country_event = {
 #		}
 #
 #		option = {
-#			name = disaster_fee_division_of_the_habsburg_monarchy17.EVTOPT2
+#			name = disaster_fee_division_of_the_habsburg_monarchy.17.OPT2
 #
 #			add_legitimacy = 10
 #		}
@@ -1387,8 +1387,8 @@ country_event = {
 # Proposal to Tirol
 country_event = {
 	id = disaster_fee_division_of_the_habsburg_monarchy.18
-	title = disaster_fee_division_of_the_habsburg_monarchy.EVTNAME18
-	desc = disaster_fee_division_of_the_habsburg_monarchy.EVTDESC18
+	title = disaster_fee_division_of_the_habsburg_monarchy.18.T
+	desc = disaster_fee_division_of_the_habsburg_monarchy.18.D
 	picture = DIPLOMACY_eventPicture
 
 	fire_only_once = yes
@@ -1424,7 +1424,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_division_of_the_habsburg_monarchy18.EVTOPT1
+		name = disaster_fee_division_of_the_habsburg_monarchy.18.OPT1
 
 		TIR = {
 			country_event = { id = disaster_fee_division_of_the_habsburg_monarchy.14 days = 3 }
@@ -1432,7 +1432,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_division_of_the_habsburg_monarchy18.EVTOPT2
+		name = disaster_fee_division_of_the_habsburg_monarchy.18.OPT2
 
 		add_legitimacy = 10
 	}
@@ -1441,8 +1441,8 @@ country_event = {
 # Proposal to Swabia
 country_event = {
 	id = disaster_fee_division_of_the_habsburg_monarchy.19
-	title = disaster_fee_division_of_the_habsburg_monarchy.EVTNAME19
-	desc = disaster_fee_division_of_the_habsburg_monarchy.EVTDESC19
+	title = disaster_fee_division_of_the_habsburg_monarchy.19.T
+	desc = disaster_fee_division_of_the_habsburg_monarchy.19.D
 	picture = DIPLOMACY_eventPicture
 
 	fire_only_once = yes
@@ -1478,7 +1478,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_division_of_the_habsburg_monarchy19.EVTOPT1
+		name = disaster_fee_division_of_the_habsburg_monarchy.19.OPT1
 
 		SWA = {
 			country_event = { id = disaster_fee_division_of_the_habsburg_monarchy.14 days = 3 }
@@ -1486,7 +1486,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_division_of_the_habsburg_monarchy19.EVTOPT2
+		name = disaster_fee_division_of_the_habsburg_monarchy.19.OPT2
 
 		add_legitimacy = 10
 	}
@@ -1495,8 +1495,8 @@ country_event = {
 # Proposal to Hungary
 country_event = {
 	id = disaster_fee_division_of_the_habsburg_monarchy.20
-	title = disaster_fee_division_of_the_habsburg_monarchy.EVTNAME20
-	desc = disaster_fee_division_of_the_habsburg_monarchy.EVTDESC20
+	title = disaster_fee_division_of_the_habsburg_monarchy.20.T
+	desc = disaster_fee_division_of_the_habsburg_monarchy.20.D
 	picture = DIPLOMACY_eventPicture
 
 	fire_only_once = yes
@@ -1522,7 +1522,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_division_of_the_habsburg_monarchy20.EVTOPT1
+		name = disaster_fee_division_of_the_habsburg_monarchy.20.OPT1
 
 		HUN = {
 			country_event = { id = disaster_fee_division_of_the_habsburg_monarchy.14 days = 3 }
@@ -1530,7 +1530,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_division_of_the_habsburg_monarchy20.EVTOPT2
+		name = disaster_fee_division_of_the_habsburg_monarchy.20.OPT2
 
 		add_legitimacy = 10
 	}
@@ -1539,8 +1539,8 @@ country_event = {
 # Proposal to Bohemia
 country_event = {
 	id = disaster_fee_division_of_the_habsburg_monarchy.21
-	title = disaster_fee_division_of_the_habsburg_monarchy.EVTNAME21
-	desc = disaster_fee_division_of_the_habsburg_monarchy.EVTDESC21
+	title = disaster_fee_division_of_the_habsburg_monarchy.21.T
+	desc = disaster_fee_division_of_the_habsburg_monarchy.21.D
 	picture = DIPLOMACY_eventPicture
 
 	fire_only_once = yes
@@ -1566,7 +1566,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_division_of_the_habsburg_monarchy21.EVTOPT1
+		name = disaster_fee_division_of_the_habsburg_monarchy.21.OPT1
 
 		BOH = {
 			country_event = { id = disaster_fee_division_of_the_habsburg_monarchy.14 days = 3 }
@@ -1574,7 +1574,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_division_of_the_habsburg_monarchy21.EVTOPT2
+		name = disaster_fee_division_of_the_habsburg_monarchy.21.OPT2
 
 		add_legitimacy = 10
 	}
@@ -1583,8 +1583,8 @@ country_event = {
 # Nobility Protest
 country_event = {
 	id = disaster_fee_division_of_the_habsburg_monarchy.22
-	title = disaster_fee_division_of_the_habsburg_monarchy.EVTNAME22
-	desc = disaster_fee_division_of_the_habsburg_monarchy.EVTDESC22
+	title = disaster_fee_division_of_the_habsburg_monarchy.22.T
+	desc = disaster_fee_division_of_the_habsburg_monarchy.22.D
 	picture = DIPLOMACY_eventPicture
 
 	fire_only_once = yes
@@ -1691,7 +1691,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_division_of_the_habsburg_monarchy22.EVTOPT1
+		name = disaster_fee_division_of_the_habsburg_monarchy.22.OPT1
 
 		event_target:target_province_1 = {
 			noble_rebels = 3
@@ -1705,8 +1705,8 @@ country_event = {
 # Order Restored in Styria
 country_event = {
 	id = disaster_fee_division_of_the_habsburg_monarchy.23
-	title = disaster_fee_division_of_the_habsburg_monarchy.EVTNAME23
-	desc = disaster_fee_division_of_the_habsburg_monarchy.EVTDESC23
+	title = disaster_fee_division_of_the_habsburg_monarchy.23.T
+	desc = disaster_fee_division_of_the_habsburg_monarchy.23.D
 	picture = COURT_eventPicture
 
 	fire_only_once = yes
@@ -1731,7 +1731,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_division_of_the_habsburg_monarchy23.EVTOPT1
+		name = disaster_fee_division_of_the_habsburg_monarchy.23.OPT1
 
 		ai_chance = {
 			factor = 0.5
@@ -1755,7 +1755,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_division_of_the_habsburg_monarchy23.EVTOPT2
+		name = disaster_fee_division_of_the_habsburg_monarchy.23.OPT2
 
 		ai_chance = {
 			factor = 0.5
@@ -1775,8 +1775,8 @@ country_event = {
 # Order Restored in Tirol
 country_event = {
 	id = disaster_fee_division_of_the_habsburg_monarchy.24
-	title = disaster_fee_division_of_the_habsburg_monarchy.EVTNAME24
-	desc = disaster_fee_division_of_the_habsburg_monarchy.EVTDESC24
+	title = disaster_fee_division_of_the_habsburg_monarchy.24.T
+	desc = disaster_fee_division_of_the_habsburg_monarchy.24.D
 	picture = COURT_eventPicture
 
 	fire_only_once = yes
@@ -1801,7 +1801,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_division_of_the_habsburg_monarchy24.EVTOPT1
+		name = disaster_fee_division_of_the_habsburg_monarchy.24.OPT1
 
 		add_years_of_income = 0.5
 		add_country_modifier = {
@@ -1814,7 +1814,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_division_of_the_habsburg_monarchy24.EVTOPT2
+		name = disaster_fee_division_of_the_habsburg_monarchy.24.OPT2
 
 		add_stability_or_adm_power = yes
 		add_country_modifier = {
@@ -1830,8 +1830,8 @@ country_event = {
 # Order Restored in Bohemia
 country_event = {
 	id = disaster_fee_division_of_the_habsburg_monarchy.25
-	title = disaster_fee_division_of_the_habsburg_monarchy.EVTNAME25
-	desc = disaster_fee_division_of_the_habsburg_monarchy.EVTDESC25
+	title = disaster_fee_division_of_the_habsburg_monarchy.25.T
+	desc = disaster_fee_division_of_the_habsburg_monarchy.25.D
 	picture = COURT_eventPicture
 
 	fire_only_once = yes
@@ -1853,7 +1853,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_division_of_the_habsburg_monarchy25.EVTOPT1
+		name = disaster_fee_division_of_the_habsburg_monarchy.25.OPT1
 
 		add_stability = -1
 		add_country_modifier = {
@@ -1878,7 +1878,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_division_of_the_habsburg_monarchy25.EVTOPT2
+		name = disaster_fee_division_of_the_habsburg_monarchy.25.OPT2
 
 		add_stability_or_adm_power = yes
 		add_country_modifier = {
@@ -1894,8 +1894,8 @@ country_event = {
 # [vassal_to_support.GetName] in Trouble!
 country_event = {
 	id = disaster_fee_division_of_the_habsburg_monarchy.26
-	title = disaster_fee_division_of_the_habsburg_monarchy.EVTNAME26
-	desc = disaster_fee_division_of_the_habsburg_monarchy.EVTDESC26
+	title = disaster_fee_division_of_the_habsburg_monarchy.26.T
+	desc = disaster_fee_division_of_the_habsburg_monarchy.26.D
 	picture = DIPLOMACY_eventPicture
 
 	is_triggered_only = yes
@@ -1912,7 +1912,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_division_of_the_habsburg_monarchy26.EVTOPT1
+		name = disaster_fee_division_of_the_habsburg_monarchy.26.OPT1
 
 		ai_chance = {
 			factor = 0.33
@@ -1964,7 +1964,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_division_of_the_habsburg_monarchy26.EVTOPT2
+		name = disaster_fee_division_of_the_habsburg_monarchy.26.OPT2
 
 		ai_chance = {
 			factor = 0.66

@@ -54,7 +54,7 @@ country_event = {
 	}
 
 	option = {
-		name = cr_1.OPT2
+		name = FEE_PLC_Cossack_Revolts_Events.1.OPT2
 		ai_chance = { factor = 15 }
 
 		add_prestige = -15
@@ -91,7 +91,7 @@ country_event = {
 	}
 
 	option = {
-		name = cr_2.OPT2
+		name = FEE_PLC_Cossack_Revolts_Events.2.OPT2
 		ai_chance = { factor = 10 }
 
 		add_prestige_or_monarch_power = { amount = 15 }
@@ -245,7 +245,6 @@ country_event = {
 		name = FEE_PLC_Cossack_Revolts_Events.8.OPT1
 
 		add_prestige = -10
-
 		280 = {
 			spawn_rebels = {
 				type = cossack_rebels
@@ -253,7 +252,6 @@ country_event = {
 				win = yes
 			}
 		}
-
 		1944 = {
 			spawn_rebels = {
 				type = cossack_rebels
@@ -261,7 +259,6 @@ country_event = {
 				win = yes
 			}
 		}
-
 		hidden_effect = {
 			country_event = {
 				id = FEE_PLC_Cossack_Revolts_Events.1001
@@ -278,10 +275,16 @@ country_event = {
 	title = FEE_PLC_Cossack_Revolts_Events.1001.T
 	desc = FEE_PLC_Cossack_Revolts_Events.1001.D
 	picture = BATTLE_eventPicture
+
 	is_triggered_only = yes
 	hidden = yes
 
 	immediate = {
+		country_event = {
+			id = FEE_PLC_Cossack_Revolts_Events.1002
+			days = 120
+			random = 30
+		}
 		2962 = {
 			spawn_rebels = {
 				type = cossack_rebels
@@ -289,7 +292,6 @@ country_event = {
 				win = yes
 			}
 		}
-
 		4540 = {
 			spawn_rebels = {
 				type = cossack_rebels
@@ -306,7 +308,7 @@ country_event = {
 	}
 
 	option = {
-
+		name = FEE_PLC_Cossack_Revolts_Events.1001.OPT1
 	}
 }
 
@@ -343,7 +345,7 @@ country_event = {
 	}
 
 	option = {
-
+		name = FEE_PLC_Cossack_Revolts_Events.1002.OPT1
 	}
 }
 
@@ -353,7 +355,9 @@ country_event = {
 	title = FEE_PLC_Cossack_Revolts_Events.1003.T
 	desc = FEE_PLC_Cossack_Revolts_Events.1003.D
 	picture = BATTLE_eventPicture
+
 	is_triggered_only = yes
+
 	hidden = yes
 
 	immediate = {
@@ -370,7 +374,7 @@ country_event = {
 	}
 
 	option = {
-
+		name = FEE_PLC_Cossack_Revolts_Events.1003.OPT1
 	}
 }
 
@@ -461,8 +465,8 @@ country_event = {
 	}
 
 	option = {
-		name = EE_PLC_Cossack_Revolts_Events.10..OPT
-
+		name = FEE_PLC_Cossack_Revolts_Events.10.OPT2
+		
 		trigger = {
 			OR = {
 				ruler_has_personality = just_personality
@@ -896,10 +900,6 @@ country_event = {
 	hidden = yes
 	is_triggered_only = yes
 
-	option = {
-		name = FEE_PLC_Cossack_Revolts_Events.1005.OPT1
-	}
-
 	immediate = {
 		# Default outcome: Player sieges down Lubnie
 		if = {
@@ -933,6 +933,10 @@ country_event = {
 				days = 120
 			}
 		}
+	}
+
+	option = {
+		name = FEE_PLC_Cossack_Revolts_Events.1005.OPT1
 	}
 }
 

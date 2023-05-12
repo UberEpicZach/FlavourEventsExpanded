@@ -2,8 +2,8 @@ namespace = disaster_fee_pashtun_uprising
 
 country_event = {
 	id = disaster_fee_pashtun_uprising.1
-	title = disaster_fee_pashtun_uprising.EVTNAME1
-	desc = disaster_fee_pashtun_uprising.EVTDESC1
+	title = disaster_fee_pashtun_uprising.1.T
+	desc = disaster_fee_pashtun_uprising.1.D
 	picture = CIVIL_WAR_eventPicture
 
 	major = yes
@@ -64,7 +64,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_pashtun_uprising1.EVTOPT1
+		name = disaster_fee_pashtun_uprising.1.OPT1
 
 		add_stability = -2
 		event_target:rebel_province_1 = {
@@ -92,15 +92,15 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_pashtun_uprising.2
-	title = disaster_fee_pashtun_uprising.EVTNAME2
-	desc = disaster_fee_pashtun_uprising.EVTDESC2
+	title = disaster_fee_pashtun_uprising.2.T
+	desc = disaster_fee_pashtun_uprising.2.D
 	picture = GOOD_WITH_MONARCH_eventPicture
 
 	major = yes
 	is_triggered_only = yes
 
 	option = {
-		name = disaster_fee_pashtun_uprising2.EVTOPT1
+		name = disaster_fee_pashtun_uprising.2.OPT1
 
 		add_stability = 1
 		add_adm_power = 100
@@ -116,8 +116,8 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_pashtun_uprising.3
-	title = disaster_fee_pashtun_uprising.EVTNAME3
-	desc = disaster_fee_pashtun_uprising.EVTDESC3
+	title = disaster_fee_pashtun_uprising.3.T
+	desc = disaster_fee_pashtun_uprising.3.D
 	picture = TRADE_GOODS_eventPicture
 
 	is_triggered_only = yes
@@ -127,7 +127,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_pashtun_uprising3.EVTOPT1
+		name = disaster_fee_pashtun_uprising.3.OPT1
 
 		add_disaster_modifier = {
 			name = fee_pashtun_uprising_abandoned_trade_routes
@@ -139,8 +139,8 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_pashtun_uprising.4
-	title = disaster_fee_pashtun_uprising.EVTNAME4
-	desc = disaster_fee_pashtun_uprising.EVTDESC4
+	title = disaster_fee_pashtun_uprising.4.T
+	desc = disaster_fee_pashtun_uprising.4.D
 	picture = ANGRY_MOB_eventPicture
 
 	is_triggered_only = yes
@@ -163,7 +163,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_pashtun_uprising4.EVTOPT1
+		name = disaster_fee_pashtun_uprising.4.OPT1
 
 		event_target:rebel_province_1 = {
 			noble_rebels = 3
@@ -176,14 +176,14 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_pashtun_uprising.5
-	title = disaster_fee_pashtun_uprising.EVTNAME5
-	desc = disaster_fee_pashtun_uprising.EVTDESC5
+	title = disaster_fee_pashtun_uprising.5.T
+	desc = disaster_fee_pashtun_uprising.5.D
 	picture = OVEREXTENSION_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = disaster_fee_pashtun_uprising5.EVTOPT1
+		name = disaster_fee_pashtun_uprising.5.OPT1
 
 		add_corruption = 2
 		add_inflation = 2
@@ -192,15 +192,15 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_pashtun_uprising.6
-	title = disaster_fee_pashtun_uprising.EVTNAME6
-	desc = disaster_fee_pashtun_uprising.EVTDESC6
+	title = disaster_fee_pashtun_uprising.6.T
+	desc = disaster_fee_pashtun_uprising.6.D
 	picture = BAD_WITH_MONARCH_eventPicture
 
 	fire_only_once = yes
 	is_triggered_only = yes
 
 	option = {
-		name = disaster_fee_pashtun_uprising6.EVTOPT1
+		name = disaster_fee_pashtun_uprising.6.OPT1
 
 		add_stability = -2
 		if = {
@@ -221,8 +221,8 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_pashtun_uprising.7
-	title = disaster_fee_pashtun_uprising.EVTNAME7
-	desc = disaster_fee_pashtun_uprising.EVTDESC7
+	title = disaster_fee_pashtun_uprising.7.T
+	desc = disaster_fee_pashtun_uprising.7.D
 	picture = COURT_eventPicture
 
 	fire_only_once = yes
@@ -257,7 +257,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_pashtun_uprising7.EVTOPT1
+		name = disaster_fee_pashtun_uprising.7.OPT1
 
 		add_stability = 1
 		add_legitimacy = -20
@@ -280,7 +280,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_pashtun_uprising7.EVTOPT2
+		name = disaster_fee_pashtun_uprising.7.OPT2
 
 		add_stability = -1
 		event_target:rebel_province_1 = {
@@ -297,8 +297,8 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_pashtun_uprising.8
-	title = disaster_fee_pashtun_uprising.EVTNAME8
-	desc = disaster_fee_pashtun_uprising.EVTDESC8
+	title = disaster_fee_pashtun_uprising.8.T
+	desc = disaster_fee_pashtun_uprising.8.D
 	picture = ANGRY_MOB_eventPicture
 
 	is_triggered_only = yes
@@ -345,7 +345,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_pashtun_uprising8.EVTOPT1
+		name = disaster_fee_pashtun_uprising.8.OPT1
 
 		add_stability = -1
 		event_target:rebel_province_1 = {
@@ -365,14 +365,14 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_pashtun_uprising.9
-	title = disaster_fee_pashtun_uprising.EVTNAME9
-	desc = disaster_fee_pashtun_uprising.EVTDESC9
+	title = disaster_fee_pashtun_uprising.9.T
+	desc = disaster_fee_pashtun_uprising.9.D
 	picture = OVEREXTENSION_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = disaster_fee_pashtun_uprising9.EVTOPT1
+		name = disaster_fee_pashtun_uprising.9.OPT1
 
 		add_corruption = 2
 	}
@@ -380,8 +380,8 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_pashtun_uprising.10
-	title = disaster_fee_pashtun_uprising.EVTNAME10
-	desc = disaster_fee_pashtun_uprising.EVTDESC10
+	title = disaster_fee_pashtun_uprising.10.T
+	desc = disaster_fee_pashtun_uprising.10.D
 	picture = DIPLOMACY_eventPicture
 
 	fire_only_once = yes
@@ -405,7 +405,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_pashtun_uprising10.EVTOPT1
+		name = disaster_fee_pashtun_uprising.10.OPT1
 
 		ai_chance = { factor = 100 }
 	}
@@ -413,14 +413,14 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_pashtun_uprising.11
-	title = disaster_fee_pashtun_uprising.EVTNAME11
-	desc = disaster_fee_pashtun_uprising.EVTDESC11
+	title = disaster_fee_pashtun_uprising.11.T
+	desc = disaster_fee_pashtun_uprising.11.D
 	picture = DIPLOMACY_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = disaster_fee_pashtun_uprising11.EVTOPT1
+		name = disaster_fee_pashtun_uprising.11.OPT1
 
 		ai_chance = { factor = 0.8 }
 
@@ -461,7 +461,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_pashtun_uprising11.EVTOPT2
+		name = disaster_fee_pashtun_uprising.11.OPT2
 
 		ai_chance = { factor = 0.2 }
 
@@ -480,14 +480,14 @@ country_event = {
 
 country_event = {
 	id = disaster_fee_pashtun_uprising.12
-	title = disaster_fee_pashtun_uprising.EVTNAME12
-	desc = disaster_fee_pashtun_uprising.EVTDESC12
+	title = disaster_fee_pashtun_uprising.12.T
+	desc = disaster_fee_pashtun_uprising.12.D
 	picture = BATTLE_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = disaster_fee_pashtun_uprising12.EVTOPT1
+		name = disaster_fee_pashtun_uprising.12.OPT1
 
 		tooltip = {
 			FROM = {

@@ -515,46 +515,44 @@ country_event = {
 
 	trigger = {
 		has_country_modifier = fee_aragon_building_imperial_canal
-		has_country_modifier = fee_aragon_channel_step_four
+		has_country_flag = fee_aragon_channel_step_four
 	}
 
 	mean_time_to_happen = {
 		months = 24
 		modifier = {
 			factor = 1.2
-			has_country_modifier = fee_aragon_channel_slow_one
+			has_country_flag = fee_aragon_channel_slow_one
 		}
 		modifier = {
 			factor = 1.1
-			has_country_modifier = fee_aragon_channel_slow_two
+			has_country_flag = fee_aragon_channel_slow_two
 		}
 		modifier = {
 			factor = 1.1
-			has_country_modifier = fee_aragon_channel_slow_three
+			has_country_flag = fee_aragon_channel_slow_three
 		}
 		modifier = {
 			factor = 1.1
-			has_country_modifier = fee_aragon_channel_slow_four
+			has_country_flag = fee_aragon_channel_slow_four
 		}
 		modifier = {
 			factor = 2
-			has_country_modifier = fee_aragon_channel_major_delay
+			has_country_flag = fee_aragon_channel_major_delay
 		}
 	}
 
 	immediate = {
 		hidden_effect = {
 			remove_country_modifier = fee_aragon_building_imperial_canal
-			remove_country_modifier = fee_aragon_channel_step_one
-			remove_country_modifier = fee_aragon_channel_step_two
-			remove_country_modifier = fee_aragon_channel_step_three
-			remove_country_modifier = fee_aragon_channel_step_four
-			remove_country_modifier = fee_aragon_channel_step_five
-			remove_country_modifier = fee_aragon_channel_slow_one
-			remove_country_modifier = fee_aragon_channel_slow_two
-			remove_country_modifier = fee_aragon_channel_slow_three
-			remove_country_modifier = fee_aragon_channel_slow_four
-			remove_country_modifier = fee_aragon_channel_major_delay
+			clr_country_flag = fee_aragon_channel_step_one
+			clr_country_flag = fee_aragon_channel_step_two
+			clr_country_flag = fee_aragon_channel_step_four
+			clr_country_flag = fee_aragon_channel_slow_one
+			clr_country_flag = fee_aragon_channel_slow_two
+			clr_country_flag = fee_aragon_channel_slow_three
+			clr_country_flag = fee_aragon_channel_slow_four
+			clr_country_flag = fee_aragon_channel_major_delay
 		}
 	}
 
@@ -1041,9 +1039,7 @@ country_event = {
 
 	trigger = {
 		has_country_modifier = fee_aragon_building_imperial_canal
-		NOT = {
-			has_country_modifier = fee_aragon_imperial_canal_event_timer
-		}
+		NOT = { has_country_flag = fee_aragon_imperial_canal_event_timer }
 	}
 
 	mean_time_to_happen = {
@@ -1052,16 +1048,8 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
-			add_country_modifier = {
-				name = fee_aragon_imperial_canal_event_timer
-				duration = 365
-				hidden = yes
-			}
-			add_country_modifier = {
-				name = fee_aragon_channel_step_one
-				duration = -1
-				hidden = yes
-			}
+			set_country_flag = fee_aragon_imperial_canal_event_timer
+			set_country_flag = fee_aragon_channel_step_one
 		}
 	}
 
@@ -1074,11 +1062,7 @@ country_event = {
 	option = {
 		name = FEE_Aragon_Events.16.OPT2
 		add_adm_power = -10
-		add_country_modifier = {
-				name = fee_aragon_channel_slow_one
-				duration = -1
-				hidden = yes
-		}
+		set_country_flag = fee_aragon_channel_slow_one
 		custom_tooltip = FEE_Aragon_Events.16.TT
 	}
 }
@@ -1093,43 +1077,29 @@ country_event = {
 
 	trigger = {
 		has_country_modifier = fee_aragon_building_imperial_canal
-		has_country_modifier = fee_aragon_channel_step_one
-		NOT = {
-			has_country_modifier = fee_aragon_imperial_canal_event_timer
-		}
+		has_country_flag = fee_aragon_channel_step_one
+		NOT = { has_country_flag = fee_aragon_imperial_canal_event_timer }
 	}
 
 	mean_time_to_happen = {
 		months = 18
 		modifier = {
 			factor = 1.2
-			has_country_modifier = fee_aragon_channel_slow_one
+			has_country_flag = fee_aragon_channel_slow_one
 		}
 	}
 
 	immediate = {
 		hidden_effect = {
-			add_country_modifier = {
-				name = fee_aragon_imperial_canal_event_timer
-				duration = 365
-				hidden = yes
-			}
-			add_country_modifier = {
-				name = fee_aragon_channel_step_two
-				duration = -1
-				hidden = yes
-			}
+			set_country_flag = fee_aragon_imperial_canal_event_timer
+			set_country_flag = fee_aragon_channel_step_two
 		}
 	}
 
 	option = {
 		name = FEE_Aragon_Events.17.OPT1
 		hidden_effect = {
-			add_country_modifier = {
-				name = fee_aragon_pignatelli
-				duration = -1
-				hidden = yes
-			}
+			set_country_flag = fee_aragon_pignatelli
 		}
 
 		add_adm_power = -50
@@ -1146,11 +1116,7 @@ country_event = {
 
 		add_adm_power = 25
 		custom_tooltip = FEE_Aragon_Events.16.TT
-		add_country_modifier = {
-			name = fee_aragon_channel_slow_two
-			duration = -1
-			hidden = yes
-		}
+		set_country_flag = fee_aragon_channel_slow_two
 	}
 }
 
@@ -1165,11 +1131,9 @@ country_event = {
 	trigger = {
 		owns = 214
 		has_country_modifier = fee_aragon_building_imperial_canal
-		has_country_modifier = fee_aragon_channel_step_two
-		has_country_modifier = fee_aragon_pignatelli
-		NOT = {
-			has_country_modifier = fee_aragon_imperial_canal_event_timer
-		}
+		has_country_flag = fee_aragon_channel_step_two
+		has_country_flag = fee_aragon_pignatelli
+		NOT = { has_country_flag = fee_aragon_imperial_canal_event_timer }
 	}
 
 	mean_time_to_happen = {
@@ -1178,11 +1142,7 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
-			add_country_modifier = {
-				name = fee_aragon_imperial_canal_event_timer
-				duration = 365
-				hidden = yes
-			}
+			set_country_flag = fee_aragon_imperial_canal_event_timer
 		}
 	}
 
@@ -1199,11 +1159,7 @@ country_event = {
 
 		change_religious_influence_equivalent_fee = { add = 15 }
 		custom_tooltip = FEE_Aragon_Events.16.TT
-		add_country_modifier = {
-			name = fee_aragon_channel_slow_three
-			duration = -1
-			hidden = yes
-		}
+		set_country_flag = fee_aragon_channel_slow_three
 	}
 }
 
@@ -1217,10 +1173,8 @@ country_event = {
 
 	trigger = {
 		has_country_modifier = fee_aragon_building_imperial_canal
-		has_country_modifier = fee_aragon_channel_step_two
-		NOT = {
-			has_country_modifier = fee_aragon_imperial_canal_event_timer
-		}
+		has_country_flag = fee_aragon_channel_step_two
+		NOT = { has_country_flag = fee_aragon_imperial_canal_event_timer }
 	}
 
 	mean_time_to_happen = {
@@ -1229,16 +1183,8 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
-			add_country_modifier = {
-				name = fee_aragon_imperial_canal_event_timer
-				duration = 365
-				hidden = yes
-			}
-			add_country_modifier = {
-				name = fee_aragon_channel_step_four
-				duration = -1
-				hidden = yes
-			}
+			set_country_flag = fee_aragon_imperial_canal_event_timer
+			set_country_flag = fee_aragon_channel_step_four
 		}
 	}
 
@@ -1254,11 +1200,7 @@ country_event = {
 		custom_tooltip = FEE_Aragon_Events.16.TT
 		add_years_of_income = -0.2
 		hidden_effect = {
-			add_country_modifier = {
-				name = fee_aragon_channel_slow_four
-				duration = -1
-				hidden = yes
-			}
+			set_country_flag = fee_aragon_channel_slow_four
 		}
 	}
 
@@ -1268,16 +1210,8 @@ country_event = {
 		add_adm_power = -50
 		custom_tooltip = FEE_Aragon_Events.19.TT
 		hidden_effect = {
-			add_country_modifier = {
-				name = fee_aragon_channel_slow_four
-				duration = -1
-				hidden = yes
-			}
-			add_country_modifier = {
-				name = fee_aragon_channel_major_delay
-				duration = -1
-				hidden = yes
-			}
+			set_country_flag = fee_aragon_channel_slow_four
+			set_country_flag = fee_aragon_channel_major_delay
 		}
 	}
 }
