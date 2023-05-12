@@ -22,6 +22,9 @@ country_event = {
 
 	option = {
 		name = FEE_Albania_Events.1.OPT1
-		add_ruler_modifier = { name = athleta_christi }
+		add_ruler_modifier = {
+			name = athleta_christi
+			duration = -1
+		}
 	}
 }
