@@ -1465,26 +1465,13 @@ country_event = {
 		}
 	}
 }
-
-#The end of the Nomad Caravan?
-country_event = {
+thsi should fix it country_event = {
 	id = FEE_Fairs_Events.5020
 	title = FEE_Fairs_Events.5020.T
 	desc = FEE_Fairs_Events.5020.D
 	picture = CARAVAN_EVENT_Picture
 
-	is_triggered_only = yes
-
-	trigger = {
-		event_target:event_target_fee_fair_province = {
-			has_province_modifier = fee_trading_fair_province_modifier
-			had_province_flag = {
-				flag = fee_province_trading_fair_nomad_accepted
-				days = 365
-			}
-			NOT = { has_province_flag = fee_province_trading_fair_dealed_nomad }
-		}
-	}
+	is_triggered_only = yes 
 
 	goto = event_target_fee_fair_province
 
