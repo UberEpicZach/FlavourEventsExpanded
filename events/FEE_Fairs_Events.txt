@@ -1508,7 +1508,7 @@ country_event = {
 				}
 				country_event = {
 					id = FEE_Fairs_Events.5021
-					days = 730
+					days = 365
 					random = 30
 				}
 				set_province_flag = fee_nomad_caravan_in
