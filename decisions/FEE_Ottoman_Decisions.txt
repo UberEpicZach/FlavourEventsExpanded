@@ -1,5 +1,6 @@
 country_decisions = {
 	feeding_the_army_using_MOL = {
+		color = { 230 126 34 }
 		potential = {
 			tag = TUR
 			NOT = { has_country_modifier = fee_tur_feeding_the_army }
@@ -30,6 +31,7 @@ country_decisions = {
 	}
 
 	feeding_the_army_using_WAL = {
+		color = { 230 126 34 }
 		potential = {
 			tag = TUR
 			NOT = { has_country_modifier = fee_tur_feeding_the_army }

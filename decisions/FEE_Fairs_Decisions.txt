@@ -1,5 +1,6 @@
 country_decisions = {
 	fee_fair_decisions = {
+		color = { 230 126 34 }
 		major = yes
 		potential = {
 			ai = no
@@ -24,6 +25,7 @@ country_decisions = {
 		}
 	}
 	fee_fair_disable_enabled = {
+		color = { 230 126 34 }
 		major = yes
 		potential = {
 			ai = no

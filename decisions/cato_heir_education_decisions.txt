@@ -1,5 +1,6 @@
 country_decisions = {
 	educate_heir = {
+		color = { 230 126 34 }
 		major = yes
 		potential = {
 			NOT = { government = theocracy }
@@ -37,6 +38,7 @@ country_decisions = {
 		}
 	}
 	view_heir_education = {
+		color = { 230 126 34 }
 		major = yes
 		potential = {
 			OR = {
