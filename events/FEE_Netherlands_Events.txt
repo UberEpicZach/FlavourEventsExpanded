@@ -188,6 +188,11 @@ country_event = {
 		months = 120
 	}
 
+	major = yes
+	major_trigger = {
+		owns = 630
+	}
+
 	immediate = {
 		hidden_effect = {
 			set_country_flag = fee_allow_for_formusa
@@ -197,17 +202,34 @@ country_event = {
 	option = {
 		name = FEE_Netherlands_Events.4.OPT1
 		ai_chance = { factor = 100 }
+		trigger = {
+			NOT = { owns = 630 }
+		}
+
+		add_years_of_income = -0.25
+		hidden_effect = {
+			export_to_variable = { which = money_to_give value = years_of_income who = ROOT }
+		}
+		630 = {
+			owner = {
+				country_event = {
+					id = FEE_Netherlands_Events.5
+					tooltip = fee_ned_acquire_batavia_tt
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Netherlands_Events.4.OPT2
+		ai_chance = { factor = 100 }
+		trigger = {
+			owns = 630
+		}
 
 		add_years_of_income = -0.25
 		630 = {
-			owner = {
-				add_opinion = {
-					who = ROOT
-					modifier = fee_ned_stole_our_province
-				}
-			}
-			cede_province = ROOT
-			add_core = ROOT
+			add_core = NED
 			change_province_name = "Batavia"
 			rename_capital = "Batavia"
 			add_province_modifier = {
@@ -219,18 +241,77 @@ country_event = {
 			add_base_manpower = 3
 		}
 	}
+
 	option = {
 		name = FEE_Netherlands_Events.4.OPT2
-
 		ai_chance = { factor = 0 }
+		trigger = {
+			NOT = { owns = 630 }
+		}
 
-		add_prestige_or_monarch_power = { amount = 5 }
+		add_mil_power = 25
+		add_permanent_claim_province = {
+			province = 630
+		}
+	}
+}
+
+#Founding of Batavia
+country_event = {
+	id = FEE_Netherlands_Events.5
+	title = FEE_Netherlands_Events.5.T
+	desc = FEE_Netherlands_Events.5.D
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+	trigger = {
+		owns = 630
+	}
+
+	major = yes
+	major_trigger = {
+		tag = NED
+	}
+
+	option = {
+		name = FEE_Netherlands_Events.5.OPT1
+		ai_chance = { factor = 100 }
+
+		while = {
+			limit = {
+				check_variable = { which = money_to_give value = 0.25 }
+			}
+			subtract_variable = { which = money_to_give value = 1 }
+			ROOT = { add_treasury = 1 }
+		}
 		630 = {
-			owner = {
-				add_opinion = {
-					who = ROOT
-					modifier = fee_ned_didnt_steal_our_province
-				}
+			cede_province = FROM
+			add_core = FROM
+			change_province_name = "Batavia"
+			rename_capital = "Batavia"
+			add_province_modifier = {
+				name = fee_ned_structured_city
+				duration = -1
+			}
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 3
+		}
+	}
+
+	option = {
+		name = FEE_Netherlands_Events.5.OPT2
+		ai_chance = { factor = 0 }
+		trigger = {
+			ai = no
+		}
+
+		add_army_tradition = 5
+		add_mil_power = 25
+		FROM = {
+			add_prestige = -5
+			add_permanent_claim_province = {
+				province = 630
 			}
 		}
 	}
@@ -238,9 +319,9 @@ country_event = {
 
 #Formosa
 country_event = {
-	id = FEE_Netherlands_Events.5
-	title = FEE_Netherlands_Events.5.T
-	desc = FEE_Netherlands_Events.5.D
+	id = FEE_Netherlands_Events.6
+	title = FEE_Netherlands_Events.6.T
+	desc = FEE_Netherlands_Events.6.D
 	picture = LIBERUM_VETO_eventPicture
 
 	fire_only_once = yes
@@ -268,7 +349,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Netherlands_Events.5.OPT1
+		name = FEE_Netherlands_Events.6.OPT1
 		ai_chance = { factor = 100 }
 
 		738 = {
@@ -282,9 +363,9 @@ country_event = {
 
 #Koxinga and Tungning
 country_event = {
-	id = FEE_Netherlands_Events.6
-	title = FEE_Netherlands_Events.6.T
-	desc = FEE_Netherlands_Events.6.D
+	id = FEE_Netherlands_Events.7
+	title = FEE_Netherlands_Events.7.T
+	desc = FEE_Netherlands_Events.7.D
 	picture = LIBERUM_VETO_eventPicture
 
 	fire_only_once = yes
@@ -298,7 +379,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Netherlands_Events.6.OPT1
+		name = FEE_Netherlands_Events.7.OPT1
 		ai_chance = { factor = 0 }
 
 		738 = {
@@ -310,29 +391,29 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Netherlands_Events.6.OPT2
+		name = FEE_Netherlands_Events.7.OPT2
 		ai_chance = { factor = 100 }
 
 		738 = {
 			add_core = FRM
 		}
 		FRM = {
-			country_event = { id = FEE_Netherlands_Events.7 }
+			country_event = { id = FEE_Netherlands_Events.8 }
 		}
 	}
 }
 
 #The Dutch impede us
 country_event = {
-	id = FEE_Netherlands_Events.7
-	title = FEE_Netherlands_Events.7.T
-	desc = FEE_Netherlands_Events.7.D
+	id = FEE_Netherlands_Events.8
+	title = FEE_Netherlands_Events.8.T
+	desc = FEE_Netherlands_Events.8.D
 	picture = LIBERUM_VETO_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = FEE_Netherlands_Events.7.OPT1
+		name = FEE_Netherlands_Events.8.OPT1
 		ai_chance = { factor = 100 }
 
 		add_prestige_or_monarch_power = { amount = 5 }
@@ -344,7 +425,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Netherlands_Events.7.OPT2
+		name = FEE_Netherlands_Events.8.OPT2
 		ai_chance = { factor = 0 }
 
 		add_prestige = -5
@@ -353,9 +434,9 @@ country_event = {
 
 #The Supreme Court of Holland
 country_event = {
-	id = FEE_Netherlands_Events.8
-	title = FEE_Netherlands_Events.8.T
-	desc = FEE_Netherlands_Events.8.D
+	id = FEE_Netherlands_Events.9
+	title = FEE_Netherlands_Events.9.T
+	desc = FEE_Netherlands_Events.9.D
 	picture = GREAT_BUILDING_eventPicture
 
 	fire_only_once = yes
@@ -379,7 +460,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Netherlands_Events.8.OPT1
+		name = FEE_Netherlands_Events.9.OPT1
 		ai_chance = {
 			factor = 50
 		}
@@ -416,9 +497,9 @@ country_event = {
 
 #The Corneliszoon Sawmill
 country_event = {
-	id = FEE_Netherlands_Events.9
-	title = FEE_Netherlands_Events.9.T
-	desc = FEE_Netherlands_Events.9.D
+	id = FEE_Netherlands_Events.10
+	title = FEE_Netherlands_Events.10.T
+	desc = FEE_Netherlands_Events.10.D
 	picture = HARBOUR_eventPicture
 
 	fire_only_once = yes
@@ -437,7 +518,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Netherlands_Events.9.OPT1
+		name = FEE_Netherlands_Events.10.OPT1
 		ai_chance = {
 			factor = 50
 		}
@@ -454,9 +535,9 @@ country_event = {
 
 #Defensive Reforms
 country_event = {
-	id = FEE_Netherlands_Events.10
-	title = FEE_Netherlands_Events.10.T
-	desc = FEE_Netherlands_Events.10.D
+	id = FEE_Netherlands_Events.11
+	title = FEE_Netherlands_Events.11.T
+	desc = FEE_Netherlands_Events.11.D
 	picture = FORT_eventPicture
 
 	fire_only_once = yes
@@ -471,7 +552,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Netherlands_Events.10.OPT1
+		name = FEE_Netherlands_Events.11.OPT1
 		ai_chance = {
 			factor = 50
 		}
@@ -494,7 +575,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Netherlands_Events.10.OPT2
+		name = FEE_Netherlands_Events.11.OPT2
 		ai_chance = {
 			factor = 50
 		}
@@ -505,9 +586,9 @@ country_event = {
 
 #Michiel de Ruyter
 country_event = {
-	id = FEE_Netherlands_Events.11
-	title = FEE_Netherlands_Events.11.T
-	desc = FEE_Netherlands_Events.11.D
+	id = FEE_Netherlands_Events.12
+	title = FEE_Netherlands_Events.12.T
+	desc = FEE_Netherlands_Events.12.D
 	picture = SHIP_SAILING_eventPicture
 
 	fire_only_once = yes
@@ -539,7 +620,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Netherlands_Events.11.OPT1
+		name = FEE_Netherlands_Events.12.OPT1
 		ai_chance = {
 			factor = 50
 		}
@@ -559,7 +640,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Netherlands_Events.11.OPT2
+		name = FEE_Netherlands_Events.12.OPT2
 		ai_chance = {
 			factor = 50
 		}
@@ -580,9 +661,9 @@ country_event = {
 
 #A Daring Attack
 country_event = {
-	id = FEE_Netherlands_Events.12
-	title = FEE_Netherlands_Events.12.T
-	desc = FEE_Netherlands_Events.12.D
+	id = FEE_Netherlands_Events.13
+	title = FEE_Netherlands_Events.13.T
+	desc = FEE_Netherlands_Events.13.D
 	picture = LAND_MILITARY_eventPicture
 
 	fire_only_once = yes
@@ -607,20 +688,20 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Netherlands_Events.12.OPT1
+		name = FEE_Netherlands_Events.13.OPT1
 		ai_chance = {
 			factor = 50
 		}
 
 		country_event = {
-			id = FEE_Netherlands_Events.14
+			id = FEE_Netherlands_Events.15
 			days = 3
 		}
 		if = {
 			limit = { exists = GBR }
 			GBR = {
 				country_event = {
-					id = FEE_Netherlands_Events.13
+					id = FEE_Netherlands_Events.14
 					days = 3
 				}
 			}
@@ -628,7 +709,7 @@ country_event = {
 		else = {
 			ENG = {
 				country_event = {
-					id = FEE_Netherlands_Events.13
+					id = FEE_Netherlands_Events.14
 					days = 3
 				}
 			}
@@ -638,15 +719,15 @@ country_event = {
 
 #Raid on the Medway (England)
 country_event = {
-	id = FEE_Netherlands_Events.13
-	title = FEE_Netherlands_Events.13.T
-	desc = FEE_Netherlands_Events.13.D
+	id = FEE_Netherlands_Events.14
+	title = FEE_Netherlands_Events.14.T
+	desc = FEE_Netherlands_Events.14.D
 	picture = SIEGE_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = FEE_Netherlands_Events.13.OPT1
+		name = FEE_Netherlands_Events.14.OPT1
 		ai_chance = {
 			factor = 50
 		}
@@ -670,15 +751,15 @@ country_event = {
 
 #Raid on the Medway (NED)
 country_event = {
-	id = FEE_Netherlands_Events.14
-	title = FEE_Netherlands_Events.14.T
-	desc = FEE_Netherlands_Events.14.D
+	id = FEE_Netherlands_Events.15
+	title = FEE_Netherlands_Events.15.T
+	desc = FEE_Netherlands_Events.15.D
 	picture = SIEGE_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = FEE_Netherlands_Events.14.OPT1
+		name = FEE_Netherlands_Events.15.OPT1
 		ai_chance = {
 			factor = 50
 		}
@@ -707,9 +788,9 @@ country_event = {
 
 #Dutch Settlers at the Cape
 country_event = {
-	id = FEE_Netherlands_Events.15
-	title = FEE_Netherlands_Events.15.T
-	desc = FEE_Netherlands_Events.15.D
+	id = FEE_Netherlands_Events.16
+	title = FEE_Netherlands_Events.16.T
+	desc = FEE_Netherlands_Events.16.D
 	picture = EXPLORERS_eventPicture
 
 	fire_only_once = yes
@@ -726,7 +807,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Netherlands_Events.15.OPT1
+		name = FEE_Netherlands_Events.16.OPT1
 		ai_chance = {
 			factor = 33
 		}
@@ -883,7 +964,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Netherlands_Events.15.OPT2
+		name = FEE_Netherlands_Events.16.OPT2
 		ai_chance = {
 			factor = 33
 		}
@@ -901,7 +982,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Netherlands_Events.15.OPT3
+		name = FEE_Netherlands_Events.16.OPT3
 		ai_chance = {
 			factor = 33
 		}
@@ -918,9 +999,9 @@ country_event = {
 
 #The Grand Alliance
 country_event = {
-	id = FEE_Netherlands_Events.16
-	title = FEE_Netherlands_Events.16.T
-	desc = FEE_Netherlands_Events.16.D
+	id = FEE_Netherlands_Events.17
+	title = FEE_Netherlands_Events.17.T
+	desc = FEE_Netherlands_Events.17.D
 	picture = DIPLOMACY_eventPicture
 
 	fire_only_once = yes
@@ -940,7 +1021,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Netherlands_Events.16.OPT1
+		name = FEE_Netherlands_Events.17.OPT1
 		ai_chance = {
 			factor = 50
 		}
@@ -969,7 +1050,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Netherlands_Events.16.OPT2
+		name = FEE_Netherlands_Events.17.OPT2
 		ai_chance = {
 			factor = 50
 		}
@@ -999,9 +1080,9 @@ country_event = {
 
 #Rembrandt
 country_event = {
-	id = FEE_Netherlands_Events.17
-	title = FEE_Netherlands_Events.17.T
-	desc = FEE_Netherlands_Events.17.D
+	id = FEE_Netherlands_Events.18
+	title = FEE_Netherlands_Events.18.T
+	desc = FEE_Netherlands_Events.18.D
 	picture = PAINTER_ARTIST_eventPicture
 
 	fire_only_once = yes
@@ -1017,7 +1098,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Netherlands_Events.17.OPT1
+		name = FEE_Netherlands_Events.18.OPT1
 		ai_chance = {
 			factor = 50
 		}
@@ -1036,9 +1117,9 @@ country_event = {
 
 #Huguenot Refugees
 country_event = {
-	id = FEE_Netherlands_Events.18
-	title = FEE_Netherlands_Events.18.T
-	desc = FEE_Netherlands_Events.18.D
+	id = FEE_Netherlands_Events.19
+	title = FEE_Netherlands_Events.19.T
+	desc = FEE_Netherlands_Events.19.D
 	picture = RELIGIOUS_WARS_eventPicture
 
 	fire_only_once = yes
@@ -1057,7 +1138,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Netherlands_Events.18.OPT1
+		name = FEE_Netherlands_Events.19.OPT1
 		ai_chance = {
 			factor = 50
 		}
@@ -1089,7 +1170,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Netherlands_Events.18.OPT2
+		name = FEE_Netherlands_Events.19.OPT2
 		ai_chance = {
 			factor = 50
 		}
@@ -1110,9 +1191,9 @@ country_event = {
 
 #Dike Piercing
 country_event = {
-	id = FEE_Netherlands_Events.19
-	title = FEE_Netherlands_Events.19.T
-	desc = FEE_Netherlands_Events.19.D
+	id = FEE_Netherlands_Events.20
+	title = FEE_Netherlands_Events.20.T
+	desc = FEE_Netherlands_Events.20.D
 	picture = WOUNDED_SOLDIERS_eventPicture
 
 	trigger = {
@@ -1130,7 +1211,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Netherlands_Events.19.OPT1
+		name = FEE_Netherlands_Events.20.OPT1
 		ai_chance = {
 			factor = 50
 		}
@@ -1147,7 +1228,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Netherlands_Events.19.OPT2
+		name = FEE_Netherlands_Events.20.OPT2
 		ai_chance = {
 			factor = 50
 		}
@@ -1162,9 +1243,9 @@ country_event = {
 
 #Lack of Investment in Manufacturing
 country_event = {
-	id = FEE_Netherlands_Events.20
-	title = FEE_Netherlands_Events.20.T
-	desc = FEE_Netherlands_Events.20.D
+	id = FEE_Netherlands_Events.21
+	title = FEE_Netherlands_Events.21.T
+	desc = FEE_Netherlands_Events.21.D
 	picture = DIPLOMACY_eventPicture
 
 	fire_only_once = yes
@@ -1184,7 +1265,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Netherlands_Events.20.OPT1
+		name = FEE_Netherlands_Events.21.OPT1
 		ai_chance = {
 			factor = 33
 		}
@@ -1197,7 +1278,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Netherlands_Events.20.OPT2
+		name = FEE_Netherlands_Events.21.OPT2
 		ai_chance = {
 			factor = 33
 		}
@@ -1217,7 +1298,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Netherlands_Events.20.OPT2
+		name = FEE_Netherlands_Events.21.OPT2
 		ai_chance = {
 			factor = 33
 		}
