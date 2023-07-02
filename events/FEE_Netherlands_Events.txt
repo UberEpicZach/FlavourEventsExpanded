@@ -206,10 +206,7 @@ country_event = {
 			NOT = { owns = 630 }
 		}
 
-		add_years_of_income = -0.25
-		hidden_effect = {
-			export_to_variable = { which = money_to_give value = years_of_income who = ROOT }
-		}
+		add_treasury = -250
 		630 = {
 			owner = {
 				country_event = {
@@ -227,7 +224,7 @@ country_event = {
 			owns = 630
 		}
 
-		add_years_of_income = -0.25
+		add_treasury = 250
 		630 = {
 			add_core = NED
 			change_province_name = "Batavia"
