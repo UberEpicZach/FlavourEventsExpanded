@@ -4,7 +4,7 @@ namespace = FEE_Charles_V_Events
 country_event = {
 	id = FEE_Charles_V_Events.1
 	title = FEE_Charles_V_Events.1.T #FEE_Charles_V_Events.T.1:0 "The Habsburg dynasty in Castille"
-	desc = FEE_Charles_V_Events.1.D #FEE_Charles_V_Events.D.1:0 "The son of Maximillian I of Habsburg and Mary of Burgundy, Phillip I would succeed in winning the crown of Castille for the Habsburg dynasty. Already the ruler of the Austrian lowlands through his mother, in 1506 Phillip organized a coup and overthrew the acting king of Spain, Ferdinand II. Though he died mere months later, Philip's legacy would live on through his son Charles V, who would come to rule over one of the largest empires in history..."
+	desc = FEE_Charles_V_Events.1.D #FEE_Charles_V_Events.D.1:0 "The son of Maximillian I of Habsburg and Mary of Burgundy, Phillip I would succeed in winning the crown of Castille for the Habsburg dynasty. Already the ruler of the Austrian lowlands through his mother, in 1506 Phillip organized a coup and overthrew the acting king of Spain, Ferdinand II. Though he died mere months later, Philip's legacy would live on through his son Charles, who would come to rule over one of the largest empires in history..."
 	picture = NEW_HEIR_eventPicture
 
 	fire_only_once = yes
@@ -70,7 +70,7 @@ country_event = {
 		name = FEE_Charles_V_Events.1.OPT1 #FEE_Charles_V_Events.1.OPT1:0 "Interesting..."
 
 		define_heir = {
-			name = "Charles V"
+			name = "Charles"
 			dynasty = "von Habsburg"
 		}
 		hidden_effect = {
@@ -82,7 +82,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Charles_V_Events.1.OPT2 #Not allowing Charles V as heir
+		name = FEE_Charles_V_Events.1.OPT2 #Not allowing Charles as heir
 		ai_chance = {
 			factor = 0
 		}
@@ -94,8 +94,8 @@ country_event = {
 #Gives Spain PU on Austria, makes Spain the emperor
 country_event = {
 	id = FEE_Charles_V_Events.2
-	title = FEE_Charles_V_Events.2.T 	#FEE_Charles_V_Events.T.2:0 "Charles V Ascends to the Throne"
-	desc = FEE_Charles_V_Events.2.D 		#FEE_Charles_V_Events.D.2:0 "With his father having died in 1506, when Charles V came of age in 1515 he aquired the title of Duke of Burgundy, which brought with it rulership over the Netherlands. A year later,the death of his grandfather Maximillian I made him ruler of all the Habsburg posessions in Germany, including the Archduchy of Austria.That same year, the death of Ferdinand II left the crowns of Aragon, Castille, and Leon to his mother Joanna. With Joanna being unsound of mind, Charles was declared co-ruler of each kingdom, and assumed de facto rulership over his mother's posessions. Finally, Charles was crowned Holy Roman Empire in 1530. Taken altogether, Charles V's dominion encompassed most of Iberia, large portions of Western and Central Europe, as well as the Spanish colonies in Asia and the Americas. This arrangement however, did not sit well with France, who felt cornered by their Habsburg enemies, and were eager to reverse their fortunes..."
+	title = FEE_Charles_V_Events.2.T 	#FEE_Charles_V_Events.T.2:0 "Charles Ascends to the Throne"
+	desc = FEE_Charles_V_Events.2.D 		#FEE_Charles_V_Events.D.2:0 "With his father having died in 1506, when Charles came of age in 1515 he aquired the title of Duke of Burgundy, which brought with it rulership over the Netherlands. A year later,the death of his grandfather Maximillian I made him ruler of all the Habsburg posessions in Germany, including the Archduchy of Austria.That same year, the death of Ferdinand II left the crowns of Aragon, Castille, and Leon to his mother Joanna. With Joanna being unsound of mind, Charles was declared co-ruler of each kingdom, and assumed de facto rulership over his mother's posessions. Finally, Charles was crowned Holy Roman Empire in 1530. Taken altogether, Charles's dominion encompassed most of Iberia, large portions of Western and Central Europe, as well as the Spanish colonies in Asia and the Americas. This arrangement however, did not sit well with France, who felt cornered by their Habsburg enemies, and were eager to reverse their fortunes..."
 	fire_only_once = yes
 	picture = HRE_eventPicture
 
@@ -106,7 +106,7 @@ country_event = {
 		HAB = {		#Austria must be Habsburg
 			dynasty = "von Habsburg"
 		}
-		has_ruler = "Charles V"
+		has_ruler = "Charles"
 		hre_size = 1
 		NOT = { junior_union_with = HAB }#Won't fire if already in a union with Austria.
 		NOT = { senior_union_with = HAB }
@@ -135,10 +135,10 @@ country_event = {
 		#	dip = 2
 		#	mil = 2
 		#	dynasty = "von Habsburg"
-		#	name = "Charles V"
+		#	name = "Charles"
 		#	age = 15
 		#}
-		custom_tooltip = "Charles V von Habsburg will become ruler."
+		custom_tooltip = "Charles von Habsburg will become ruler."
 		define_heir = {
 			dynasty = "von Habsburg"
 			name = "Phillip II"
@@ -181,7 +181,7 @@ country_event = {
 		}
 
 		create_union = HAB	#Once all that silliness is done, create the PU
-		custom_tooltip = "Charles V von Habsburg will become the Holy Roman Emperor"
+		custom_tooltip = "Charles von Habsburg will become the Holy Roman Emperor"
 		set_government_rank_force = 2 #Putting Spain in the HRE makes it a duke, this fixes that.
 
 		#Make all countries in Germany, France, Italy afraid of Spain (for 140 years)
@@ -227,7 +227,7 @@ country_event = {
 	}
 }
 
-#Charles V Abdicates
+#Charles Abdicates
 country_event = {
 	id = FEE_Charles_V_Events.3
 	title = FEE_Charles_V_Events.3.T
@@ -235,7 +235,7 @@ country_event = {
 	picture = COURT_eventPicture
 
 	trigger = {
-		has_country_flag = FEE_Charles_V_Events_born		#Charles V has been born (to prevent misfires)
+		has_country_flag = FEE_Charles_V_Events_born		#Charles has been born (to prevent misfires)
 		has_country_flag = FEE_Charles_V_Events_ruler		#CharlesV is the ruler
 		NOT = { has_country_flag = fee_charles_v_abdicate_option }
 		HAB = {								 #Austria must still be in the PU
@@ -273,7 +273,7 @@ country_event = {
 		custom_tooltip = fee_charles_v_abdication_charles_tt
 		if = {
 			limit = {
-				has_ruler = "Charles V"
+				has_ruler = "Charles"
 			}
 			kill_ruler = yes
 		}
@@ -471,7 +471,7 @@ country_event = {
 	}
 }
 
-#Hidden event that prevents chain from continuing if Charles V dies before ruling.
+#Hidden event that prevents chain from continuing if Charles dies before ruling.
 country_event = {
 	id = FEE_Charles_V_Events.4
 	title = FEE_Charles_V_Events.4.T
@@ -485,8 +485,8 @@ country_event = {
 		NOT = {
 			has_country_flag = FEE_Charles_V_Events_ruler	#But he isn't King yet
 		}
-		NOT = { has_heir = "Charles V" }
-		NOT = { has_ruler = "Charles V" }
+		NOT = { has_heir = "Charles" }
+		NOT = { has_ruler = "Charles" }
 	}
 
 	immediate = {
@@ -510,8 +510,8 @@ country_event = {
 
 #country_event = {			#Remove Electors
 #	id = FEE_Charles_V_Events.5
-#	title = FEE_Charles_V_Events.5.T 	#FEE_Charles_V_Events.T.5:0 "Charles V Ascends to the Throne"
-#	desc = FEE_Charles_V_Events.1.D 		#FEE_Charles_V_Events.D.5:0 "With his father having died in 1506, when Charles V came of age in 1515 he aquired the title of Duke of Burgundy, which brought with it rulership over the Netherlands. A year later,the death of his grandfather Maximillian I made him ruler of all the Habsburg posessions in Germany, including the Archduchy of Austria.That same year, the death of Ferdinand II left the crowns of Aragon, Castille, and Leon to his mother Joanna. With Joanna being unsound of mind, Charles was declared co-ruler of each kingdom, and assumed de facto rulership over his mother's posessions. Finally, Charles was crowned Holy Roman Empire in 1530. Taken altogether, Charles V's dominion encompassed most of Iberia, large portions of Western and Central Europe, as well as the Spanish colonies in Asia and the Americas. This arrangement however, did not sit well with France, who felt cornered by their Habsburg enemies, and were eager to reverse their fortunes..."
+#	title = FEE_Charles_V_Events.5.T 	#FEE_Charles_V_Events.T.5:0 "Charles Ascends to the Throne"
+#	desc = FEE_Charles_V_Events.1.D 		#FEE_Charles_V_Events.D.5:0 "With his father having died in 1506, when Charles came of age in 1515 he aquired the title of Duke of Burgundy, which brought with it rulership over the Netherlands. A year later,the death of his grandfather Maximillian I made him ruler of all the Habsburg posessions in Germany, including the Archduchy of Austria.That same year, the death of Ferdinand II left the crowns of Aragon, Castille, and Leon to his mother Joanna. With Joanna being unsound of mind, Charles was declared co-ruler of each kingdom, and assumed de facto rulership over his mother's posessions. Finally, Charles was crowned Holy Roman Empire in 1530. Taken altogether, Charles's dominion encompassed most of Iberia, large portions of Western and Central Europe, as well as the Spanish colonies in Asia and the Americas. This arrangement however, did not sit well with France, who felt cornered by their Habsburg enemies, and were eager to reverse their fortunes..."
 #	fire_only_once = yes
 #	major = yes
 #	picture = HRE_eventPicture
@@ -533,8 +533,8 @@ country_event = {
 #}
 #country_event = {			#Puts ROOT in Empire, makes it an elector
 #	id = FEE_Charles_V_Events.6
-#	title = FEE_Charles_V_Events.6.T 	#FEE_Charles_V_Events.T.6:0 "Charles V Ascends to the Throne"
-#	desc = FEE_Charles_V_Events.1.D 		#FEE_Charles_V_Events.D.6:0 "With his father having died in 1606, when Charles V came of age in 1616 he aquired the title of Duke of Burgundy, which brought with it rulership over the Netherlands. A year later,the death of his grandfather Maximillian I made him ruler of all the Habsburg posessions in Germany, including the Archduchy of Austria.That same year, the death of Ferdinand II left the crowns of Aragon, Castille, and Leon to his mother Joanna. With Joanna being unsound of mind, Charles was declared co-ruler of each kingdom, and assumed de facto rulership over his mother's posessions. Finally, Charles was crowned Holy Roman Empire in 1630. Taken altogether, Charles V's dominion encompassed most of Iberia, large portions of Western and Central Europe, as well as the Spanish colonies in Asia and the Americas. This arrangement however, did not sit well with France, who felt cornered by their Habsburg enemies, and were eager to reverse their fortunes..."
+#	title = FEE_Charles_V_Events.6.T 	#FEE_Charles_V_Events.T.6:0 "Charles Ascends to the Throne"
+#	desc = FEE_Charles_V_Events.1.D 		#FEE_Charles_V_Events.D.6:0 "With his father having died in 1606, when Charles came of age in 1616 he aquired the title of Duke of Burgundy, which brought with it rulership over the Netherlands. A year later,the death of his grandfather Maximillian I made him ruler of all the Habsburg posessions in Germany, including the Archduchy of Austria.That same year, the death of Ferdinand II left the crowns of Aragon, Castille, and Leon to his mother Joanna. With Joanna being unsound of mind, Charles was declared co-ruler of each kingdom, and assumed de facto rulership over his mother's posessions. Finally, Charles was crowned Holy Roman Empire in 1630. Taken altogether, Charles's dominion encompassed most of Iberia, large portions of Western and Central Europe, as well as the Spanish colonies in Asia and the Americas. This arrangement however, did not sit well with France, who felt cornered by their Habsburg enemies, and were eager to reverse their fortunes..."
 #	fire_only_once = yes
 #	major = yes
 #	picture = HRE_eventPicture
@@ -555,8 +555,8 @@ country_event = {
 #}
 #country_event = {			#Kills the elector, triggering an election.
 #	id = FEE_Charles_V_Events.7
-#	title = FEE_Charles_V_Events.7.T 	#FEE_Charles_V_Events.T.7:0 "Charles V Ascends to the Throne"
-#	desc = FEE_Charles_V_Events.1.D 		#FEE_Charles_V_Events.D.7:0 "With his father having died in 1706, when Charles V came of age in 1717 he aquired the title of Duke of Burgundy, which brought with it rulership over the Netherlands. A year later,the death of his grandfather Maximillian I made him ruler of all the Habsburg posessions in Germany, including the Archduchy of Austria.That same year, the death of Ferdinand II left the crowns of Aragon, Castille, and Leon to his mother Joanna. With Joanna being unsound of mind, Charles was declared co-ruler of each kingdom, and assumed de facto rulership over his mother's posessions. Finally, Charles was crowned Holy Roman Empire in 1730. Taken altogether, Charles V's dominion encompassed most of Iberia, large portions of Western and Central Europe, as well as the Spanish colonies in Asia and the Americas. This arrangement however, did not sit well with France, who felt cornered by their Habsburg enemies, and were eager to reverse their fortunes..."
+#	title = FEE_Charles_V_Events.7.T 	#FEE_Charles_V_Events.T.7:0 "Charles Ascends to the Throne"
+#	desc = FEE_Charles_V_Events.1.D 		#FEE_Charles_V_Events.D.7:0 "With his father having died in 1706, when Charles came of age in 1717 he aquired the title of Duke of Burgundy, which brought with it rulership over the Netherlands. A year later,the death of his grandfather Maximillian I made him ruler of all the Habsburg posessions in Germany, including the Archduchy of Austria.That same year, the death of Ferdinand II left the crowns of Aragon, Castille, and Leon to his mother Joanna. With Joanna being unsound of mind, Charles was declared co-ruler of each kingdom, and assumed de facto rulership over his mother's posessions. Finally, Charles was crowned Holy Roman Empire in 1730. Taken altogether, Charles's dominion encompassed most of Iberia, large portions of Western and Central Europe, as well as the Spanish colonies in Asia and the Americas. This arrangement however, did not sit well with France, who felt cornered by their Habsburg enemies, and were eager to reverse their fortunes..."
 #	fire_only_once = yes
 #	major = yes
 #	picture = HRE_eventPicture
@@ -576,8 +576,8 @@ country_event = {
 #}
 #country_event = {			#Adds Electors back, makes them part of the empire again.
 #	id = FEE_Charles_V_Events.8
-#	title = FEE_Charles_V_Events.8.T 	#FEE_Charles_V_Events.T.8:0 "Charles V Ascends to the Throne"
-#	desc = FEE_Charles_V_Events.1.D 		#FEE_Charles_V_Events.D.8:0 "With his father having died in 1806, when Charles V came of age in 1818 he aquired the title of Duke of Burgundy, which brought with it rulership over the Netherlands. A year later,the death of his grandfather Maximillian I made him ruler of all the Habsburg posessions in Germany, including the Archduchy of Austria.That same year, the death of Ferdinand II left the crowns of Aragon, Castille, and Leon to his mother Joanna. With Joanna being unsound of mind, Charles was declared co-ruler of each kingdom, and assumed de facto rulership over his mother's posessions. Finally, Charles was crowned Holy Roman Empire in 1830. Taken altogether, Charles V's dominion encompassed most of Iberia, large portions of Western and Central Europe, as well as the Spanish colonies in Asia and the Americas. This arrangement however, did not sit well with France, who felt cornered by their Habsburg enemies, and were eager to reverse their fortunes..."
+#	title = FEE_Charles_V_Events.8.T 	#FEE_Charles_V_Events.T.8:0 "Charles Ascends to the Throne"
+#	desc = FEE_Charles_V_Events.1.D 		#FEE_Charles_V_Events.D.8:0 "With his father having died in 1806, when Charles came of age in 1818 he aquired the title of Duke of Burgundy, which brought with it rulership over the Netherlands. A year later,the death of his grandfather Maximillian I made him ruler of all the Habsburg posessions in Germany, including the Archduchy of Austria.That same year, the death of Ferdinand II left the crowns of Aragon, Castille, and Leon to his mother Joanna. With Joanna being unsound of mind, Charles was declared co-ruler of each kingdom, and assumed de facto rulership over his mother's posessions. Finally, Charles was crowned Holy Roman Empire in 1830. Taken altogether, Charles's dominion encompassed most of Iberia, large portions of Western and Central Europe, as well as the Spanish colonies in Asia and the Americas. This arrangement however, did not sit well with France, who felt cornered by their Habsburg enemies, and were eager to reverse their fortunes..."
 #	fire_only_once = yes
 #	major = yes
 #	picture = HRE_eventPicture
@@ -598,8 +598,8 @@ country_event = {
 #}
 #country_event = {			#Removes Spain's electorship
 #	id = FEE_Charles_V_Events.9
-#	title = FEE_Charles_V_Events.9.T 	#FEE_Charles_V_Events.T.9:0 "Charles V Ascends to the Throne"
-#	desc = FEE_Charles_V_Events.1.D 		#FEE_Charles_V_Events.D.9:0 "With his father having died in 1906, when Charles V came of age in 1919 he aquired the title of Duke of Burgundy, which brought with it rulership over the Netherlands. A year later,the death of his grandfather Maximillian I made him ruler of all the Habsburg posessions in Germany, including the Archduchy of Austria.That same year, the death of Ferdinand II left the crowns of Aragon, Castille, and Leon to his mother Joanna. With Joanna being unsound of mind, Charles was declared co-ruler of each kingdom, and assumed de facto rulership over his mother's posessions. Finally, Charles was crowned Holy Roman Empire in 1930. Taken altogether, Charles V's dominion encompassed most of Iberia, large portions of Western and Central Europe, as well as the Spanish colonies in Asia and the Americas. This arrangement however, did not sit well with France, who felt cornered by their Habsburg enemies, and were eager to reverse their fortunes..."
+#	title = FEE_Charles_V_Events.9.T 	#FEE_Charles_V_Events.T.9:0 "Charles Ascends to the Throne"
+#	desc = FEE_Charles_V_Events.1.D 		#FEE_Charles_V_Events.D.9:0 "With his father having died in 1906, when Charles came of age in 1919 he aquired the title of Duke of Burgundy, which brought with it rulership over the Netherlands. A year later,the death of his grandfather Maximillian I made him ruler of all the Habsburg posessions in Germany, including the Archduchy of Austria.That same year, the death of Ferdinand II left the crowns of Aragon, Castille, and Leon to his mother Joanna. With Joanna being unsound of mind, Charles was declared co-ruler of each kingdom, and assumed de facto rulership over his mother's posessions. Finally, Charles was crowned Holy Roman Empire in 1930. Taken altogether, Charles's dominion encompassed most of Iberia, large portions of Western and Central Europe, as well as the Spanish colonies in Asia and the Americas. This arrangement however, did not sit well with France, who felt cornered by their Habsburg enemies, and were eager to reverse their fortunes..."
 #	fire_only_once = yes
 #	major = yes
 #	picture = HRE_eventPicture
@@ -614,7 +614,7 @@ country_event = {
 #	}
 #}
 
-#Charles V dies before Abdicating
+#Charles dies before Abdicating
 country_event = {
 	id = FEE_Charles_V_Events.10
 	title = FEE_Charles_V_Events.10.T
@@ -624,11 +624,11 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		has_country_flag = FEE_Charles_V_Events_born		#Charles V has been born (to prevent misfires)
+		has_country_flag = FEE_Charles_V_Events_born		#Charles has been born (to prevent misfires)
 		has_country_flag = FEE_Charles_V_Events_ruler		#CharlesV is the ruler
 		NOT = { has_country_flag = fee_charles_v_abdicate_option }
-		NOT = { has_ruler = "Charles V" }
-		NOT = { has_heir = "Charles V" }
+		NOT = { has_ruler = "Charles" }
+		NOT = { has_heir = "Charles" }
 		HAB = {								 #Austria must still be in the PU
 			junior_union_with = ROOT
 		}
@@ -653,7 +653,7 @@ country_event = {
 
 		if = {
 			limit = {
-				has_ruler = "Charles V"
+				has_ruler = "Charles"
 			}
 			kill_ruler = yes
 		}
@@ -886,7 +886,7 @@ country_event = {
 country_event = {
 	id = FEE_Charles_V_Events.11
 	title = FEE_Charles_V_Events.11.T #FEE_Charles_V_Events.T.1:0 "The Habsburg dynasty in Iberia"
-	desc = FEE_Charles_V_Events.11.D #FEE_Charles_V_Events.D.1:0 "The son of Maximillian I of Habsburg and Mary of Burgundy, Phillip I would succeed in winning the crown of Castille for the Habsburg dynasty. Already the ruler of the Austrian lowlands through his mother, in 1506 Phillip organized a coup and overthrew the acting king of Spain, Ferdinand II. Though he died mere months later, Philip's legacy would live on through his son Charles V, who would come to rule over one of the largest empires in history..."
+	desc = FEE_Charles_V_Events.11.D #FEE_Charles_V_Events.D.1:0 "The son of Maximillian I of Habsburg and Mary of Burgundy, Phillip I would succeed in winning the crown of Castille for the Habsburg dynasty. Already the ruler of the Austrian lowlands through his mother, in 1506 Phillip organized a coup and overthrew the acting king of Spain, Ferdinand II. Though he died mere months later, Philip's legacy would live on through his son Charles, who would come to rule over one of the largest empires in history..."
 	picture = NEW_HEIR_eventPicture
 
 	trigger = {
