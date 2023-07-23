@@ -16,32 +16,8 @@ fee_ruler_trait_lustful = {
 	papal_influence = -0.02
 }
 
-fee_ruler_trait_honest = {
-	diplomatic_reputation = 1
-	global_spy_defence = -0.1
-}
-
-fee_ruler_trait_kind = {
-}
-
-fee_ruler_trait_slothful = {
-}
-
 fee_ruler_trait_chaste = {
 	heir_chance = -15
-}
-
-fee_ruler_trait_temperate = {
-	global_tax_modifier = 5
-}
-
-fee_ruler_trait_charitable = {
-	diplomatic_reputation = 1
-}
-
-fee_ruler_trait_diligent = {
-	global_missionary_strength = 2
-	discipline = 3
 }
 
 fee_ruler_trait_Chaste = {
