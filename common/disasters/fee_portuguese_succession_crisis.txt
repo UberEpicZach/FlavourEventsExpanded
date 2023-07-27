@@ -54,7 +54,7 @@ fee_portuguese_succession_crisis = {
 		OR = {
 			is_lesser_in_union = yes
 			AND = {
-				stability = 3
+				stability = 2
 				NOT = { num_of_rebel_armies = 1 }
 				NOT = { num_of_rebel_controlled_provinces = 1 }
 			}
