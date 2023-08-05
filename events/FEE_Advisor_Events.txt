@@ -3,8 +3,8 @@ namespace = FEE_Advisor_Event
 # A Pouch of Gold?
 country_event = {
 	id = FEE_Advisor_Event.1
-	title = FEE_Advisor_Event.EVTNAME1
-	desc = FEE_Advisor_Event.EVTDESC1
+	title = FEE_Advisor_Event.1.T
+	desc = FEE_Advisor_Event.1.D
 	picture = CITY_VIEW_eventPicture
 
 	trigger = {
@@ -19,7 +19,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Advisor_Event1.EVTOPT1
+		name = FEE_Advisor_Event.1.OPT1
 
 		add_treasury = 300
 	}
@@ -28,8 +28,8 @@ country_event = {
 # Monumental Suggestions
 country_event = {
 	id = FEE_Advisor_Event.2
-	title = FEE_Advisor_Event.EVTNAME2
-	desc = FEE_Advisor_Event.EVTDESC2
+	title = FEE_Advisor_Event.2.T
+	desc = FEE_Advisor_Event.2.D
 	picture = ADVISOR_eventPicture
 
 	trigger = {
@@ -45,7 +45,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Advisor_Event2.EVTOPT1
+		name = FEE_Advisor_Event.2.OPT1
 
 		add_treasury = -320
 		custom_tooltip = EVERY_OWNED_CORE_PROVINCE_MINUS_2_UNREST
@@ -81,7 +81,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Advisor_Event2.EVTOPT2
+		name = FEE_Advisor_Event.2.OPT2
 
 		custom_tooltip = EVERY_OWNED_CORE_PROVINCE_PLUS_1_UNREST
 		hidden_effect = {
@@ -98,8 +98,8 @@ country_event = {
 # A Monumental Reveal (I)
 country_event = {
 	id = FEE_Advisor_Event.3
-	title = FEE_Advisor_Event.EVTNAME3
-	desc = FEE_Advisor_Event.EVTDESC3
+	title = FEE_Advisor_Event.3.T
+	desc = FEE_Advisor_Event.3.D
 	picture = CITY_VIEW
 
 	is_triggered_only = yes
@@ -109,7 +109,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Advisor_Event3.EVTOPT1
+		name = FEE_Advisor_Event.3.OPT1
 
 		custom_tooltip = EVERY_OWNED_CORE_PROVINCE_PLUS_1_UNREST
 		hidden_effect = {
@@ -123,7 +123,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Advisor_Event3.EVTOPT2
+		name = FEE_Advisor_Event.3.OPT2
 
 		add_adm_power = -50
 	}
@@ -136,8 +136,8 @@ country_event = {
 # A Monumental Reveal (II)
 country_event = {
 	id = FEE_Advisor_Event.4
-	title = FEE_Advisor_Event.EVTNAME4
-	desc = FEE_Advisor_Event.EVTDESC4
+	title = FEE_Advisor_Event.4.T
+	desc = FEE_Advisor_Event.4.D
 	picture = CITY_VIEW
 
 	is_triggered_only = yes
@@ -191,7 +191,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Advisor_Event4.EVTOPT1
+		name = FEE_Advisor_Event.4.OPT1
 
 		if = {
 			limit = {
@@ -237,8 +237,8 @@ country_event = {
 # A Monumental Reveal (III)
 country_event = {
 	id = FEE_Advisor_Event.5
-	title = FEE_Advisor_Event.EVTNAME5
-	desc = FEE_Advisor_Event.EVTDESC5
+	title = FEE_Advisor_Event.5.T
+	desc = FEE_Advisor_Event.5.D
 	picture = CITY_VIEW
 
 	is_triggered_only = yes
@@ -248,7 +248,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Advisor_Event5.EVTOPT1
+		name = FEE_Advisor_Event.5.OPT1
 
 		every_country = {
 			limit = {
@@ -262,7 +262,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Advisor_Event5.EVTOPT2
+		name = FEE_Advisor_Event.5.OPT2
 
 		random = {
 			chance = 30
@@ -281,8 +281,8 @@ country_event = {
 # A Monumental Reveal (IV)
 country_event = {
 	id = FEE_Advisor_Event.6
-	title = FEE_Advisor_Event.EVTNAME6
-	desc = FEE_Advisor_Event.EVTDESC6
+	title = FEE_Advisor_Event.6.T
+	desc = FEE_Advisor_Event.6.D
 	picture = CITY_VIEW
 
 	is_triggered_only = yes
@@ -292,7 +292,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Advisor_Event6.EVTOPT1
+		name = FEE_Advisor_Event.6.OPT1
 
 		add_legitimacy_equivalent = { amount = 75 republican_tradition = 30 }
 		random = {
@@ -305,7 +305,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Advisor_Event6.EVTOPT2
+		name = FEE_Advisor_Event.6.OPT2
 
 		add_prestige_or_monarch_power = { amount = 35 }
 		random = {
@@ -325,8 +325,8 @@ country_event = {
 # A Monumental Reveal (V)
 country_event = {
 	id = FEE_Advisor_Event.7
-	title = FEE_Advisor_Event.EVTNAME7
-	desc = FEE_Advisor_Event.EVTDESC7
+	title = FEE_Advisor_Event.7.T
+	desc = FEE_Advisor_Event.7.D
 	picture = CITY_VIEW
 
 	is_triggered_only = yes
@@ -336,14 +336,14 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Advisor_Event7.EVTOPT1
+		name = FEE_Advisor_Event.7.OPT1
 
 		add_legitimacy_equivalent = { amount = -15 republican_tradition = -8 }
 		add_prestige = -15
 	}
 
 	option = {
-		name = FEE_Advisor_Event7.EVTOPT2
+		name = FEE_Advisor_Event.7.OPT2
 
 		add_legitimacy_equivalent = { amount = -10 republican_tradition = -5 }
 		add_prestige = -10
@@ -369,8 +369,8 @@ country_event = {
 # A Monumental Reveal (VI)
 country_event = {
 	id = FEE_Advisor_Event.8
-	title = FEE_Advisor_Event.EVTNAME8
-	desc = FEE_Advisor_Event.EVTDESC8
+	title = FEE_Advisor_Event.8.T
+	desc = FEE_Advisor_Event.8.D
 	picture = CITY_VIEW
 
 	is_triggered_only = yes
@@ -380,7 +380,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Advisor_Event8.EVTOPT1
+		name = FEE_Advisor_Event.8.OPT1
 
 		add_ruler_modifier = {
 			name = fee_ruler_trait_lustful
@@ -412,7 +412,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Advisor_Event8.EVTOPT2
+		name = FEE_Advisor_Event.8.OPT2
 
 		if = {
 			limit = {
@@ -447,8 +447,8 @@ country_event = {
 # Courtly Loans
 country_event = {
 	id = FEE_Advisor_Event.9
-	title = FEE_Advisor_Event.EVTNAME9
-	desc = FEE_Advisor_Event.EVTDESC9
+	title = FEE_Advisor_Event.9.T
+	desc = FEE_Advisor_Event.9.D
 	picture = NEW_HEIR_eventPicture
 
 	trigger = {
@@ -463,7 +463,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Advisor_Event9.EVTOPT1
+		name = FEE_Advisor_Event.9.OPT1
 
 		add_treasury = -100
 		add_country_modifier = {
@@ -473,7 +473,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Advisor_Event9.EVTOPT2
+		name = FEE_Advisor_Event.9.OPT2
 
 		if = {
 			limit = {
@@ -493,8 +493,8 @@ country_event = {
 # A Full Days Work (I)
 country_event = {
 	id = FEE_Advisor_Event.10
-	title = FEE_Advisor_Event.EVTNAME10
-	desc = FEE_Advisor_Event.EVTDESC10
+	title = FEE_Advisor_Event.10.T
+	desc = FEE_Advisor_Event.10.D
 	picture = CITY_VIEW_eventPicture
 
 	trigger = {
@@ -510,7 +510,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Advisor_Event10.EVTOPT1
+		name = FEE_Advisor_Event.10.OPT1
 
 		hidden_effect = {
 			set_country_flag = fee_events_for_a_full_days_work_active
@@ -519,7 +519,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Advisor_Event10.EVTOPT2
+		name = FEE_Advisor_Event.10.OPT2
 
 	}
 }
@@ -527,8 +527,8 @@ country_event = {
 # A Full Days Work (II)
 country_event = {
 	id = FEE_Advisor_Event.11
-	title = FEE_Advisor_Event.EVTNAME11
-	desc = FEE_Advisor_Event.EVTDESC11
+	title = FEE_Advisor_Event.11.T
+	desc = FEE_Advisor_Event.11.D
 	picture = CITY_VIEW_eventPicture
 
 	is_triggered_only = yes
@@ -538,7 +538,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Advisor_Event11.EVTOPT1
+		name = FEE_Advisor_Event.11.OPT1
 
 		add_ruler_modifier = {
 			name = fee_ruler_trait_honest
@@ -547,7 +547,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Advisor_Event11.EVTOPT2
+		name = FEE_Advisor_Event.11.OPT2
 
 		random = {
 			chance = 50
@@ -565,8 +565,8 @@ country_event = {
 # A Full Days Work (III)
 country_event = {
 	id = FEE_Advisor_Event.12
-	title = FEE_Advisor_Event.EVTNAME12
-	desc = FEE_Advisor_Event.EVTDESC12
+	title = FEE_Advisor_Event.12.T
+	desc = FEE_Advisor_Event.12.D
 	picture = CITY_VIEW_eventPicture
 
 	is_triggered_only = yes
@@ -576,12 +576,12 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Advisor_Event12.EVTOPT1
+		name = FEE_Advisor_Event.12.OPT1
 
 	}
 
 	option = {
-		name = FEE_Advisor_Event12.EVTOPT2
+		name = FEE_Advisor_Event.12.OPT2
 
 		add_treasury = -60
 		add_ruler_modifier = {
@@ -591,7 +591,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Advisor_Event12.EVTOPT3
+		name = FEE_Advisor_Event.12.OPT3
 
 		if = {
 			limit = {
@@ -615,8 +615,8 @@ country_event = {
 # A Full Days Work (IV)
 country_event = {
 	id = FEE_Advisor_Event.13
-	title = FEE_Advisor_Event.EVTNAME13
-	desc = FEE_Advisor_Event.EVTDESC13
+	title = FEE_Advisor_Event.13.T
+	desc = FEE_Advisor_Event.13.D
 	picture = CITY_VIEW_eventPicture
 
 	is_triggered_only = yes
@@ -626,13 +626,13 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Advisor_Event13.EVTOPT1
+		name = FEE_Advisor_Event.13.OPT1
 
 		change_adm = 1
 	}
 
 	option = {
-		name = FEE_Advisor_Event13.EVTOPT2
+		name = FEE_Advisor_Event.13.OPT2
 
 		add_ruler_modifier = {
 			name = fee_advisor_full_day_work
@@ -641,7 +641,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Advisor_Event13.EVTOPT3
+		name = FEE_Advisor_Event.13.OPT3
 
 		add_ruler_modifier = {
 			name = fee_ruler_trait_slothful
@@ -657,8 +657,8 @@ country_event = {
 # Student of Language? (I)
 country_event = {
 	id = FEE_Advisor_Event.14
-	title = FEE_Advisor_Event.EVTNAME14
-	desc = FEE_Advisor_Event.EVTDESC14
+	title = FEE_Advisor_Event.14.T
+	desc = FEE_Advisor_Event.14.D
 	picture = CITY_VIEW_eventPicture
 
 	trigger = {
@@ -676,7 +676,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Advisor_Event14.EVTOPT1
+		name = FEE_Advisor_Event.14.OPT1
 
 		add_ruler_modifier = {
 			name = fee_advisor_student_language
@@ -696,7 +696,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Advisor_Event14.EVTOPT2
+		name = FEE_Advisor_Event.14.OPT2
 
 		add_ruler_modifier = {
 			name = fee_advisor_ignorant_ruler
@@ -725,8 +725,8 @@ country_event = {
 # Student of Language? (II)
 country_event = {
 	id = FEE_Advisor_Event.15
-	title = FEE_Advisor_Event.EVTNAME15
-	desc = FEE_Advisor_Event.EVTDESC15
+	title = FEE_Advisor_Event.15.T
+	desc = FEE_Advisor_Event.15.D
 	picture = CITY_VIEW_eventPicture
 
 	is_triggered_only = yes
@@ -736,7 +736,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Advisor_Event15.EVTOPT1
+		name = FEE_Advisor_Event.15.OPT1
 
 		random = {
 			chance = 15
@@ -758,7 +758,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Advisor_Event15.EVTOPT2
+		name = FEE_Advisor_Event.15.OPT2
 
 		random = {
 			chance = 15
@@ -774,8 +774,8 @@ country_event = {
 # Student of Language? (III)
 country_event = {
 	id = FEE_Advisor_Event.16
-	title = FEE_Advisor_Event.EVTNAME16
-	desc = FEE_Advisor_Event.EVTDESC16
+	title = FEE_Advisor_Event.16.T
+	desc = FEE_Advisor_Event.16.D
 	picture = CITY_VIEW_eventPicture
 
 	is_triggered_only = yes
@@ -785,7 +785,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Advisor_Event16.EVTOPT1
+		name = FEE_Advisor_Event.16.OPT1
 
 		random = {
 			chance = 35
@@ -797,7 +797,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Advisor_Event16.EVTOPT2
+		name = FEE_Advisor_Event.16.OPT2
 
 		random = {
 			chance = 35
@@ -824,18 +824,18 @@ country_event = {
 # Student of Language? (IV)
 country_event = {
 	id = FEE_Advisor_Event.17
-	title = FEE_Advisor_Event.EVTNAME17
+	title = FEE_Advisor_Event.17.T
 	desc = {
 		trigger = {
 			NOT = { has_country_flag = fee_events_for_student_of_language_alone }
 		}
-		desc = FEE_Advisor_Event.EVTDESC17.1
+		desc = FEE_Advisor_Event.17.1.D
 	}
 	desc = {
 		trigger = {
 			has_country_flag = fee_events_for_student_of_language_alone
 		}
-		desc = FEE_Advisor_Event.EVTDESC17.2
+		desc = FEE_Advisor_Event.17.2.D
 	}
 	picture = CITY_VIEW_eventPicture
 
@@ -846,7 +846,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Advisor_Event17.EVTOPT1
+		name = FEE_Advisor_Event.17.OPT1
 
 		add_ruler_modifier = {
 			name = fee_advisor_multilingual_ruler
@@ -861,8 +861,8 @@ country_event = {
 # Student of Language? (V)
 country_event = {
 	id = FEE_Advisor_Event.18
-	title = FEE_Advisor_Event.EVTNAME18
-	desc = FEE_Advisor_Event.EVTDESC18
+	title = FEE_Advisor_Event.18.T
+	desc = FEE_Advisor_Event.18.D
 	picture = CITY_VIEW_eventPicture
 
 	is_triggered_only = yes
@@ -872,7 +872,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Advisor_Event18.EVTOPT1
+		name = FEE_Advisor_Event.18.OPT1
 
 		if = {
 			limit = {
@@ -888,8 +888,8 @@ country_event = {
 # Excessive Bureaucracy
 country_event = {
 	id = FEE_Advisor_Event.19
-	title = FEE_Advisor_Event.EVTNAME19
-	desc = FEE_Advisor_Event.EVTDESC19
+	title = FEE_Advisor_Event.19.T
+	desc = FEE_Advisor_Event.19.D
 	picture = CITY_VIEW_eventPicture
 
 	trigger = {
@@ -905,14 +905,14 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Advisor_Event19.EVTOPT1
+		name = FEE_Advisor_Event.19.OPT1
 
 		add_treasury = 50
 		remove_advisor_by_category = DIP
 	}
 
 	option = {
-		name = FEE_Advisor_Event19.EVTOPT2
+		name = FEE_Advisor_Event.19.OPT2
 
 		add_treasury = 100
 		add_country_modifier = {
@@ -925,8 +925,8 @@ country_event = {
 # Up and Coming Commander
 country_event = {
 	id = FEE_Advisor_Event.20
-	title = FEE_Advisor_Event.EVTNAME20
-	desc = FEE_Advisor_Event.EVTDESC20
+	title = FEE_Advisor_Event.20.T
+	desc = FEE_Advisor_Event.20.D
 	picture = CITY_VIEW_eventPicture
 
 	trigger = {
@@ -947,7 +947,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Advisor_Event20.EVTOPT1
+		name = FEE_Advisor_Event.20.OPT1
 
 		create_general = { tradition = 60 }
 		add_country_modifier = {
@@ -957,7 +957,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Advisor_Event20.EVTOPT2
+		name = FEE_Advisor_Event.20.OPT2
 
 		add_mil_power = 100
 	}
@@ -966,8 +966,8 @@ country_event = {
 # Untrustworthy Assistants
 country_event = {
 	id = FEE_Advisor_Event.21
-	title = FEE_Advisor_Event.EVTNAME21
-	desc = FEE_Advisor_Event.EVTDESC21
+	title = FEE_Advisor_Event.21.T
+	desc = FEE_Advisor_Event.21.D
 	picture = CITY_VIEW_eventPicture
 
 	trigger = {
@@ -990,7 +990,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Advisor_Event21.EVTOPT1
+		name = FEE_Advisor_Event.21.OPT1
 
 		remove_advisor_by_category = MIL
 		capital_scope = {
@@ -1002,7 +1002,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Advisor_Event21.EVTOPT2
+		name = FEE_Advisor_Event.21.OPT2
 
 		capital_scope = {
 			add_province_modifier = {
@@ -1016,8 +1016,8 @@ country_event = {
 # Abuse of Power
 country_event = {
 	id = FEE_Advisor_Event.22
-	title = FEE_Advisor_Event.EVTNAME22
-	desc = FEE_Advisor_Event.EVTDESC22
+	title = FEE_Advisor_Event.22.T
+	desc = FEE_Advisor_Event.22.D
 	picture = CITY_VIEW_eventPicture
 
 	trigger = {
@@ -1040,7 +1040,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Advisor_Event22.EVTOPT1
+		name = FEE_Advisor_Event.22.OPT1
 
 		remove_advisor_by_category = MIL
 		add_mil_power = 50
@@ -1053,7 +1053,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Advisor_Event22.EVTOPT2
+		name = FEE_Advisor_Event.22.OPT2
 
 		add_treasury = 50
 		capital_scope = {
@@ -1068,8 +1068,8 @@ country_event = {
 # The Brilliant Inventor
 country_event = {
 	id = FEE_Advisor_Event.23
-	title = FEE_Advisor_Event.EVTNAME23
-	desc = FEE_Advisor_Event.EVTDESC23
+	title = FEE_Advisor_Event.23.T
+	desc = FEE_Advisor_Event.23.D
 	picture = CITY_VIEW_eventPicture
 
 	trigger = {
@@ -1090,7 +1090,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Advisor_Event23.EVTOPT1
+		name = FEE_Advisor_Event.23.OPT1
 
 		add_treasury = -50
 		hidden_effect = {
@@ -1113,7 +1113,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Advisor_Event23.EVTOPT2
+		name = FEE_Advisor_Event.23.OPT2
 
 	}
 }
@@ -1121,8 +1121,8 @@ country_event = {
 # The Armoured Chariot
 country_event = {
 	id = FEE_Advisor_Event.24
-	title = FEE_Advisor_Event.EVTNAME24
-	desc = FEE_Advisor_Event.EVTDESC24
+	title = FEE_Advisor_Event.24.T
+	desc = FEE_Advisor_Event.24.D
 	picture = CITY_VIEW_eventPicture
 
 	is_triggered_only = yes
@@ -1132,7 +1132,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Advisor_Event24.EVTOPT1
+		name = FEE_Advisor_Event.24.OPT1
 
 		add_mil_power = -75
 		clr_country_flag = fee_events_for_the_brilliant_inventor_active
@@ -1142,8 +1142,8 @@ country_event = {
 # Screaming Arrows
 country_event = {
 	id = FEE_Advisor_Event.25
-	title = FEE_Advisor_Event.EVTNAME25
-	desc = FEE_Advisor_Event.EVTDESC25
+	title = FEE_Advisor_Event.25.T
+	desc = FEE_Advisor_Event.25.D
 	picture = CITY_VIEW_eventPicture
 
 	is_triggered_only = yes
@@ -1153,7 +1153,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Advisor_Event25.EVTOPT1
+		name = FEE_Advisor_Event.25.OPT1
 
 		add_mil_power = 100
 		clr_country_flag = fee_events_for_the_brilliant_inventor_active
@@ -1163,8 +1163,8 @@ country_event = {
 # Burning Sheep
 country_event = {
 	id = FEE_Advisor_Event.26
-	title = FEE_Advisor_Event.EVTNAME26
-	desc = FEE_Advisor_Event.EVTDESC26
+	title = FEE_Advisor_Event.26.T
+	desc = FEE_Advisor_Event.26.D
 	picture = CITY_VIEW_eventPicture
 
 	is_triggered_only = yes
@@ -1174,7 +1174,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Advisor_Event26.EVTOPT1
+		name = FEE_Advisor_Event.26.OPT1
 
 		add_mil_power = -30
 		if = {
@@ -1242,8 +1242,8 @@ country_event = {
 # Burning Sheep
 country_event = {
 	id = FEE_Advisor_Event.27
-	title = FEE_Advisor_Event.EVTNAME27
-	desc = FEE_Advisor_Event.EVTDESC27
+	title = FEE_Advisor_Event.27.T
+	desc = FEE_Advisor_Event.27.D
 	picture = CITY_VIEW_eventPicture
 
 	is_triggered_only = yes
@@ -1253,7 +1253,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Advisor_Event27.EVTOPT1
+		name = FEE_Advisor_Event.27.OPT1
 
 		add_prestige = -20
 		add_mil_power = -75
