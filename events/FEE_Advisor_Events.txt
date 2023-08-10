@@ -703,19 +703,19 @@ country_event = {
 			duration = -1
 		}
 		random_list = {
-			40 = {
+			45 = {
 				add_ruler_modifier = {
 					name = fee_ruler_trait_shy
 					duration = -1
 				}
 			}
-			30 = {
+			35 = {
 				add_ruler_modifier = {
 					name = fee_ruler_trait_proud
 					duration = -1
 				}
 			}
-			40 = {
+			20 = {
 				# No Effect
 			}
 		}
