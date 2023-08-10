@@ -86,7 +86,7 @@ country_event = {
 		}
 
 		add_mana_scaled_on_monarch_skill_fee = yes
-		change_religious_influence_equivalent_fee = { add = -25 }
+		change_religious_influence_equivalent_fee = { remove = 25 }
 	}
 }
 
@@ -158,7 +158,7 @@ country_event = {
 		}
 
 		add_legitimacy_equivalent = { amount = 3 republican_tradition = 3 }
-		change_religious_influence_equivalent_fee = { add = -10 }
+		change_religious_influence_equivalent_fee = { remove = 10 }
 		event_target:event_target_fee_jews_italy_giudecca = {
 			if = {
 				limit = {
@@ -279,7 +279,7 @@ country_event = {
 		custom_tooltip = ACCEPT_JEWS_TT
 
 		add_years_of_income = -0.083
-		change_religious_influence_equivalent_fee = { add = -10 }
+		change_religious_influence_equivalent_fee = { remove = 10 }
 		event_target:event_target_fee_jews_italy = {
 			add_permanent_province_modifier = {
 				name = italian_jew_allowed_stay
@@ -419,7 +419,7 @@ country_event = {
 		}
 
 		add_dip_power = 10
-		change_religious_influence_equivalent_fee = { add = -5 }
+		change_religious_influence_equivalent_fee = { remove = 5 }
 
 		event_target:event_target_fee_jews_italy_expulsion_1492 = {
 			if = {
@@ -583,7 +583,7 @@ country_event = {
 		}
 
 		add_legitimacy_equivalent = { amount = 3 republican_tradition = 3 }
-		change_religious_influence_equivalent_fee = { add = -15 }
+		change_religious_influence_equivalent_fee = { remove = 15 }
 		add_treasury = -100
 
 		if = {
@@ -680,7 +680,7 @@ country_event = {
 		}
 		custom_tooltip = ACCEPT_JEWS_TT
 
-		change_religious_influence_equivalent_fee = { add = -10 }
+		change_religious_influence_equivalent_fee = { remove = 10 }
 		event_target:event_target_fee_jews_italy_refugees_1492 = {
 			if = {
 				limit = {
@@ -815,7 +815,7 @@ country_event = {
 		}
 
 		add_legitimacy_equivalent = { amount = 3 republican_tradition = 3 }
-		change_religious_influence_equivalent_fee = { add = -15 }
+		change_religious_influence_equivalent_fee = { remove = 15 }
 		add_treasury = -100
 
 		event_target:event_target_fee_jews_italy_expulsion_1540 = {
