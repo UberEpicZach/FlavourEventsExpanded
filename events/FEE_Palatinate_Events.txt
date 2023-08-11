@@ -823,7 +823,7 @@ country_event = {
 
 		add_stability = -1
 		random_list = {
-			50 = {
+			55 = {
 				break_union = BOH
 				if = {
 					limit = {
@@ -833,7 +833,7 @@ country_event = {
 					emperor = { create_union = BOH }
 				}
 			}
-			50 = { }
+			45 = { add_legitimacy_equivalent = { amount = -10 republican_tradition = -5 } }
 		}
 		emperor = {
 			add_opinion = {

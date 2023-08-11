@@ -980,8 +980,8 @@ country_event = {
 			share = -5
 		}
 		random_list = {
-			50 = { }
-			50 = {
+			45 = { add_prestige = -5 }
+			55 = {
 				random_owned_province = {
 					spawn_rebels = {
 						size = 2

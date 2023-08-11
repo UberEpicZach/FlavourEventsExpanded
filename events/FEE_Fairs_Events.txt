@@ -1050,8 +1050,8 @@ country_event = {
 				value = 5
 			}
 			random_list = {
-				33 = { add_devastation = 3 }
-				67 = {  }
+				15 = { add_base_tax = 1 }
+				85 = { add_devastation = 3 }
 			}
 			set_province_flag = fee_province_trading_fair_nomad_fire
 		}
@@ -1662,8 +1662,8 @@ country_event = {
 		name = FEE_Fairs_Events.6000.OPT1
 
 		random_list = {
-			40 = { add_adm_power = 25 }
-			60 = { }
+			15 = { change_innovativeness = 2 }
+			85 = { add_adm_power = 25 }
 		}
 		event_target:event_target_fee_fair_province = {
 			set_province_flag = fee_province_trading_fair_famous_artist_accepted

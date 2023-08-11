@@ -306,7 +306,7 @@ country_event = {
 						country_event = { id = FEE_Low_Countries_Events.5 }
 						set_country_flag = fee_lw_sacked_antwerp_flag
 					}
-					75 = { }
+					75 = { add_prestige = -5 }
 				}
 			}
 			else_if = {
