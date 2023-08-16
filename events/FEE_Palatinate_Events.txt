@@ -822,18 +822,16 @@ country_event = {
 		}
 
 		add_stability = -1
-		random_list = {
-			55 = {
-				break_union = BOH
-				if = {
-					limit = {
-						emperor = { valid_for_personal_unions_trigger = yes }
-						BOH = { valid_for_personal_unions_trigger = yes }
-					}
-					emperor = { create_union = BOH }
+		random = {
+			chance = 50
+			break_union = BOH
+			if = {
+				limit = {
+					emperor = { valid_for_personal_unions_trigger = yes }
+					BOH = { valid_for_personal_unions_trigger = yes }
 				}
+				emperor = { create_union = BOH }
 			}
-			45 = { add_legitimacy_equivalent = { amount = -10 republican_tradition = -5 } }
 		}
 		emperor = {
 			add_opinion = {

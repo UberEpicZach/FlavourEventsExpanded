@@ -301,12 +301,10 @@ country_event = {
 				limit = {
 					is_bankrupt = no
 				}
-				random_list = {
-					25 = {
-						country_event = { id = FEE_Low_Countries_Events.5 }
-						set_country_flag = fee_lw_sacked_antwerp_flag
-					}
-					75 = { add_prestige = -5 }
+				random = {
+					chance = 25
+					country_event = { id = FEE_Low_Countries_Events.5 }
+					set_country_flag = fee_lw_sacked_antwerp_flag
 				}
 			}
 			else_if = {

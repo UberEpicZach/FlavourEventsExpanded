@@ -2296,15 +2296,11 @@ country_event = {
 				owns = 2964
 			}
 			2964 = {
-				random_list = {
-					75 = {
-						add_base_tax = -1
-					}
-					25 = {
-						spawn_rebels = {
-							size = 1
-							type = anti_tax_rebels
-						}
+				random = {
+					chance = 25
+					spawn_rebels = {
+						size = 1
+						type = anti_tax_rebels
 					}
 				}
 			}
@@ -2604,21 +2600,13 @@ country_event = {
 		}
 
 		tooltip = {
-			random_list = {
-				75 = {
-					capital_scope = {
-						add_base_tax = -1
-						add_base_production = -1
-						add_base_manpower = -1
-					}
-				}
-				25 = {
-					kill_ruler = yes
-					capital_scope = {
-						add_base_tax = -3
-						add_base_production = -3
-						add_base_manpower = -3
-					}
+			random = {
+				chance = 25
+				kill_ruler = yes
+				capital_scope = {
+					add_base_tax = -3
+					add_base_production = -3
+					add_base_manpower = -3
 				}
 			}
 		}

@@ -5,5 +5,5 @@ tags={
 	"Gameplay"
 	"Historical"
 }
-name="Flavour and Events Expanded Git"
+name="FEE Git"
 supported_version="1.34.2"

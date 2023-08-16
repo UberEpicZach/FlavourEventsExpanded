@@ -979,25 +979,23 @@ country_event = {
 			estate = estate_burghers
 			share = -5
 		}
-		random_list = {
-			45 = { add_prestige = -5 }
-			55 = {
-				random_owned_province = {
-					spawn_rebels = {
-						size = 2
-						type = particularist_rebels
-					}
+		random = {
+			chance = 50
+			random_owned_province = {
+				spawn_rebels = {
+					size = 2
+					type = particularist_rebels
 				}
-				random_owned_province = {
-					spawn_rebels = {
-						size = 2
-						type = particularist_rebels
-					}
+			}
+			random_owned_province = {
+				spawn_rebels = {
+					size = 2
+					type = particularist_rebels
 				}
-				every_subject_country = {
-					country_event = {
-						id = FEE_France_Events.13
-					}
+			}
+			every_subject_country = {
+				country_event = {
+					id = FEE_France_Events.13
 				}
 			}
 		}

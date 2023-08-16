@@ -690,15 +690,14 @@ country_event = {
 			limit = {
 				area = venetia_area
 			}
-			random_list = {
-				55 = {
-					change_religion = jewish
-					add_base_production = 2
-					add_devastation = 10
-				}
-				45 = {
-					add_base_production = 1
-				}
+			add_base_tax = 1
+			random = {
+				chance = 50
+				change_religion = jewish
+			}
+			add_province_modifier = {
+				name = birth_of_a_new_city_adm
+				duration = 3650
 			}
 		}
 	}
@@ -3796,9 +3795,9 @@ country_event = {
 					is_capital_of = ROOT
 				}
 			}
-			random_list = {
-				55 = { kill_ruler = yes }
-				45 = { add_legitimacy_equivalent = { amount = -10 republican_tradition = -5 } }
+			random = {
+				chance = 50
+				kill_ruler = yes
 			}
 			add_mercantilism = -3
 		}
@@ -3815,19 +3814,15 @@ country_event = {
 				duration = 1825
 			}
 			every_neighbor_province = {
-				random_list = {
-					33 = {
-						add_base_tax = -1
-						add_base_production = -1
-						add_base_manpower = -1
-						add_devastation = 25
-						add_province_modifier = {
-							name = influenza
-							duration = 365
-						}
-					}
-					66 = {
-						add_devastation = 15
+				random = {
+					chance = 33
+					add_base_tax = -1
+					add_base_production = -1
+					add_base_manpower = -1
+					add_devastation = 25
+					add_province_modifier = {
+						name = influenza
+						duration = 365
 					}
 				}
 			}
