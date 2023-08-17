@@ -1,0 +1,30 @@
+﻿﻿l_spanish:
+
+ FEE_Edict_Of_Potsdam_Events.1.T: "Edict de Fontainebleau" # (For France)
+ FEE_Edict_Of_Potsdam_Events.1.D: "The disloyal and heretical Huguenots can no longer be tolerated, their presence is offensive to all godfearing men of France, and the idea of maintaining the Edict of Nantes has become a burden shackling our nation to the Huguenots, let us end this vile and destructive force, and throw on the yoke they imposed on us in 1598!"
+ FEE_Edict_Of_Potsdam_Events.1.OPT1: "I have a vision, its clear to me now, and oh what has to be done."
+ FEE_Edict_Of_Potsdam_Events.1.OPT2: "I suppose we can suffer them to live."
+
+ FEE_Edict_Of_Potsdam_Events.2.T: "Edict de Fontainebleau" # (For Prussia/Brandenburg)
+ FEE_Edict_Of_Potsdam_Events.2.D: "The king of France has gone mad and is declaring open season on his own subjects. After decades of abuse and mistreatement, sad that it has come to this. However, this could be an opportune moment to invite them over to repopulate our lands."
+ FEE_Edict_Of_Potsdam_Events.2.OPT1: "Start the presses and prepare the couriers, invite them all!"
+ FEE_Edict_Of_Potsdam_Events.2.OPT2: "Perhaps a later opportunity..."
+
+ FEE_Edict_Of_Potsdam_Events.3.T: "French Exodus"
+ FEE_Edict_Of_Potsdam_Events.3.D: "Sounds of 'The king has betrayed us' and 'flee for your lives' appears to be commonplace amongst the huguenots, and many of our pious citizens have taken it upon themselves to 'encourage' to expell their treasonous kin."
+ FEE_Edict_Of_Potsdam_Events.3.OPT1: "Good riddance!"
+
+ FEE_Edict_Of_Potsdam_Events.4.T: "The Edict of Potsdam"
+ FEE_Edict_Of_Potsdam_Events.4.D: "The French Exodus has not gone unnoticed, and many of the people that now lack a place to call home are looking for a new start. If grant them generous offers of 'Two Horses, a Cow, and fifty Thalers' in addition to a farmstead, we can ensure many will look for a better life in our realm!"
+ FEE_Edict_Of_Potsdam_Events.4.OPT1: "Issue it!"
+ FEE_Edict_Of_Potsdam_Events.4.OPT2: "We can't afford that. Let them go somewhere else..."
+
+ FEE_Edict_Of_Potsdam_Events.5.T: "Huguenot Dissidents"
+ FEE_Edict_Of_Potsdam_Events.5.D: "For some reasons Huguenot dissidents from France have decided to choose our capital for their safe heaven. We should incporporate them to our society and make them work for the greater glory of our state. It may cost a bit but outcomes might be even greater than the price."
+ FEE_Edict_Of_Potsdam_Events.5.OPT1: "Of course!"
+ FEE_Edict_Of_Potsdam_Events.5.OPT2: "We can't really afford that..."
+
+ #Tooltips
+ fee_edict_potsdam_hugenots_outside_tt: "It might as well happen that these traitors will find some place to stay abroad..."
+ fee_edict_potsdam_loses_5_percent_development_for_France_tt: "§Y[Root.GetName]§! loses §R-5%§! (Exactly §R-[Root.5_percent_of_development_truncated.GetValue]§! development) of the current total development, distributed randomly between random provinces in §YFrench Region§!."
+ fee_edict_potsdam_arrival_hugenots_tt: "Huguenots from §Y[FRA.GetName]§! have arrived! §Y[Root.GetName]§! gets §G+[Root.huguenots_arrived_in_capital.GetValue]§! development in the capital province of §Y[Root.Capital.GetCapitalName]§!."

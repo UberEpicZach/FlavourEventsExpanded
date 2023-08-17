@@ -1,0 +1,178 @@
+﻿﻿l_german:
+ FEE_Fairs_Events.1.T: "The Trading Fairs"
+ FEE_Fairs_Events.1.D: "In the Middle Ages, many fairs were transformed into temporary markets of special importance for international and long-distance trade, as many traders made journeys of up to days to reach places where they were sure they could do business. The fairs were usually connected to religious celebrations, such as the day of the patron saint of the locality. On these occasions, the rulers granted exemption from duties and taxes thus making the prices of the goods sold cheaper. The privilege of the Fair, in Latin nundinas, was granted or confirmed to a town or city using a special royal diploma or of the reigning feudal lord written on parchment and was fitted with a leaden seal inside which the heraldic coat of arms of who he had released him. The diploma describes the motivation, the place and date where the fair was held each year, the duration (generally eight consecutive days) and the relative exemptions (taxes, duties, etc.). This privilege stimulated the influx of buyers from outside, attracted by the possibility of saving and concluding deals more conveniently. Important was the function of the \"mastromercato\" or \"master of the fair\" which, in addition to regulating the exchange of goods, had control of the criminal jurisdiction of the city limited to the period of the fair. Modern trade fairs have their roots in European business fairs of the late Middle Ages in the period of development of mercantile capitalism: an example is the Champagne fairs, active since the 12th century. "
+ FEE_Fairs_Events.1.OPT1: "So many cities will host them."
+ FEE_Fairs_Events.1.OPT2: "I want to save Game Performance."
+
+ FEE_Fairs_Events.2.T: "Hidden Event to Select the Trading Fair"
+ FEE_Fairs_Events.2.D: "You should not read this event, so if you do something went wrong, although it might have been just enabled only for debugging reasons still, please, report it to Melvasul/Dr.Pizza of the Expanded Mod Family. \n\nThe sole reason for the existence of this event is choosing which (owned) province will host the next trading fair."
+ FEE_Fairs_Events.2.OPT1: "Report the error, please."
+
+ FEE_Fairs_Events.3.T: "Trading Fair of [event_target_fee_fair_province.GetName]"
+ FEE_Fairs_Events.3.D: "Finally a trading fair has reached this wonderful city and will stay here for 5 years attracting even more people both to trade and stay here!"
+ FEE_Fairs_Events.3.OPT1: "Welcome them all."
+
+ FEE_Fairs_Events.4.T: "Trading Fair Explanation Progress"
+ FEE_Fairs_Events.4.D: "Thes effects are calculated on the go and added to the fair's level in the modifier once the last Ending event is called.\n§Ylvl 2 COT§!: §G+10§! §BProgress§! \n§Y1 Trade Idea§!: §G+5§! §BProgress§! \n§Y3 Trade Idea§!: §G+10§! §BProgress§! \n§YFull Trade Idea§!: §G+20§! §BProgress§! \n§YRuler's DIP§! is at least §Y5§!: §G+10§! §BProgress§! \n§YRuler's DIP§! is lower than §Y1§!: §R-10§! §BProgress§! \nGain at least §Y12 Diplomatic Power§!: §G+15§! §BProgress§! \nGain less than §Y6 Diplomatic Power§!: §R-15§! §BProgress§! \nAt least §Y50 Prosperity§!: §G+5§! §BProgress§! \nAt Least §Y25 Devastation§!: §R-5§! §BProgress§! \n§Ylvl 1 Trader§!: §G+3§! §BProgress§! \n§Ylvl 2 Trader§!: §G+6§! §BProgress§! \n§Ylvl 3 Trader§!: §G+10§! §BProgress§!"
+ FEE_Fairs_Events.4.OPT1: "Let's see the Result Explanation."
+ FEE_Fairs_Events.4.OPT2: "Return to the game."
+
+ FEE_Fairs_Events.5.T: "Trading Fair Explanation Result"
+ FEE_Fairs_Events.5.D: "§BProgress <-95§!: §R-1 or -2§! §Y Production §!\n§B-95 < Progress < -65§!: §R+33§! §Y Devastation §!\n§B-65 < Progress < -35§!: §R-3§! §Y Mercantilism §!\n§B-35 < Progress < -15§!: §R-1§! §Y Month of Income §!\n§B-15 < Progress < 0§!: §R-25 or -50§! §Y Dip Power §!\n§B0 < Progress < 15§!: §G+25 or 50§! §Y Dip Power §!\n§B15 < Progress < 35§!: §G+3§! §Y Mercantilism §!\n§B35 < Progress < 65§!: §G+1§! §Y Month of Income §!\n§B65 < Progress < 95§!: §GLvl 2§! §Y Trader §!\n§BProgress > 95§!: §G+1 or +2§! §Y Production §!"
+ FEE_Fairs_Events.5.OPT1: "Let's see the Explanation Progress."
+ FEE_Fairs_Events.5.OPT2: "Return to the game."
+
+ FEE_Fairs_Events.6.T: "Origins of Trading Fairs"
+ FEE_Fairs_Events.6.D: "As the trading fairs end and we look forward to a world where trade is no longer local but global, the provinces in which the first trading fairs were hosted will still attract people from all over the regions to trade in them, and proudly we may announce that they were glorious cities."
+ FEE_Fairs_Events.6.OPT1: "Echoes of trading fairs will last forever."
+
+ FEE_Fairs_Events.7.T: "Fair Ended in [event_target_fee_fair_province.GetName]"
+ FEE_Fairs_Events.7.D: "Sadly everything must come to an end, and while we loved the time spent with them the current trading fair must travel to another city to host there another fair, until our next time!"
+ FEE_Fairs_Events.7.OPT1: "Let us see the report."
+
+ FEE_Fairs_Events.2000.T: "Hidden Event to Cycle through events"
+ FEE_Fairs_Events.2000.D: "You should not read this event, so if you do something went wrong, although it might have been just enabled only for debugging reasons still, please, report it to Melvasul/Dr.Pizza of the Expanded Mod Family."
+ FEE_Fairs_Events.2000.OPT1: "I will attend it."
+
+ FEE_Fairs_Events.3000.T: "Invitation to the trading Fair"
+ FEE_Fairs_Events.3000.D: "Once the Trading Fair has started many have suggested that you, my liege should go and take part in the fair to both show your interest and be seen by the commoners who would revere you, what should you do my lord?"
+ FEE_Fairs_Events.3000.OPT1: "I will attend it."
+ FEE_Fairs_Events.3000.OPT2: "I have sadly more important things to attend."
+
+ FEE_Fairs_Events.5000.T: "Nomad Caravan"
+ FEE_Fairs_Events.5000.D: "A caravan of nomads has entered the fair bringing many new people with fire-eaters knife throwers, jugglers and what else, their singing can be heard in all the squares of the cities, and while some don't approve of them, it is clear how some of them would benefit the entire fair and what not, the city itself!"
+ FEE_Fairs_Events.5000.OPT1: "Welcome them, the more the merrier."
+ FEE_Fairs_Events.5000.OPT2: "We don't want them."
+
+ FEE_Fairs_Events.5001.T: "Fire Eater"
+ FEE_Fairs_Events.5001.D: "Even as they spoke there came a blare of trumpets. Then there was a crash and a flash and smoke. The waters of the Deeping stream poured out hissing and foaming: they were choked no longer, and a gaping was blasted in the wall. A host of dark shapes poured in."
+ FEE_Fairs_Events.5001.OPT1: "The fire is magnificent."
+ FEE_Fairs_Events.5001.OPT2: "Stop the fire before it burns the city."
+
+ FEE_Fairs_Events.5002.T: "Future Teller"
+ FEE_Fairs_Events.5002.D: "My dear lord, this must be a dream, a fortune teller is here! She wants to look at our lines and see what the future holds for us, we should surely ask for such knowledge and see where it's going to guide us!"
+ FEE_Fairs_Events.5002.OPT1: "Let's see what awaits in the future."
+ FEE_Fairs_Events.5002.OPT2: "Who would ever believe in this?"
+
+ FEE_Fairs_Events.5003.T: "Luck?"
+ FEE_Fairs_Events.5003.D: "Marvellous news my liege, what she told was true and we have finally been able to unleash our pure strength and luck, no one dares to block us now!"
+ FEE_Fairs_Events.5003.OPT1: "Our future holds against no one."
+
+ FEE_Fairs_Events.5004.T: "Almighty Protection"
+ FEE_Fairs_Events.5004.D: "Why Angel, can you tell me, will you lead us to the place? Full of heat, in the fire, for we only brought disgrace? I am the one. If they only knew!"
+ FEE_Fairs_Events.5004.OPT1: "Our future holds against no one."
+
+ FEE_Fairs_Events.5005.T: "Solemn Hymn"
+ FEE_Fairs_Events.5005.D: "Why Angel, can you tell me, will you lead us to the place? Full of heat, in the fire, for we only brought disgrace? I am the one. If they only knew!"
+ FEE_Fairs_Events.5005.OPT1: "Our future holds against no one."
+
+ FEE_Fairs_Events.5006.T: "Angelic Blessing"
+ FEE_Fairs_Events.5006.D: "Why Angel, can you tell me, will you lead us to the place? Full of heat, in the fire, for we only brought disgrace? I am the one. If they only knew!"
+ FEE_Fairs_Events.5006.OPT1: "Our future holds against no one."
+
+ FEE_Fairs_Events.5007.T: "Kiss of Luck"
+ FEE_Fairs_Events.5007.D: "Why Angel, can you tell me, will you lead us to the place? Full of heat, in the fire, for we only brought disgrace? I am the one. If they only knew!"
+ FEE_Fairs_Events.5007.OPT1: "Our future holds against no one."
+
+ FEE_Fairs_Events.5010.T: "Misfortune?"
+ FEE_Fairs_Events.5010.D: "All the old women in the fair watch us as if it was our fault what that damned which saw in our hands? We should just go and pray for the Lord is the true decider of this world, not some destiny."
+ FEE_Fairs_Events.5010.OPT1: "Black clouds lie ahead."
+
+ FEE_Fairs_Events.5011.T: "Ruinous Powers"
+ FEE_Fairs_Events.5011.D: "May she is cursed, she who damned my pride! How will I forgive her who wouldn't forgive? I, who just valued the power. How should I live in peace with the one? Outshining me and then have me devoured"
+ FEE_Fairs_Events.5011.OPT1: "A small Misfortune."
+
+ FEE_Fairs_Events.5012.T: "Demonic Embrace"
+ FEE_Fairs_Events.5012.D: "May she is cursed, she who damned my pride! How will I forgive her who wouldn't forgive? I, who just valued the power. How should I live in peace with the one? Outshining me and then have me devoured"
+ FEE_Fairs_Events.5012.OPT1: "This is something to be considered."
+
+ FEE_Fairs_Events.5013.T: "Ancient Cursing"
+ FEE_Fairs_Events.5013.D: "May she is cursed, she who damned my pride! How will I forgive her who wouldn't forgive? I, who just valued the power. How should I live in peace with the one? Outshining me and then have me devoured"
+ FEE_Fairs_Events.5013.OPT1: "Our country is going to be ruined."
+
+ FEE_Fairs_Events.5014.T: "Witch's Eyes"
+ FEE_Fairs_Events.5014.D: "May she is cursed, she who damned my pride! How will I forgive her who wouldn't forgive? I, who just valued the power. How should I live in peace with the one? Outshining me and then have me devoured"
+ FEE_Fairs_Events.5014.OPT1: "I shall hide and die in shame."
+
+ FEE_Fairs_Events.5020.T: "The end of the Nomad Caravan?"
+ FEE_Fairs_Events.5020.D: "As the trading fair goes to an end the nomad caravan has started setting up their charts to move away to the next fair, or should we bribe them to stay in?"
+ FEE_Fairs_Events.5020.OPT2: "Banish 'em."
+ FEE_Fairs_Events.5020.OPT1: "Let them stay, we will gladly use their workforce."
+
+ FEE_Fairs_Events.5021.T: "Revolt in [event_target_fee_fair_province.GetName]"
+ FEE_Fairs_Events.5021.D: "The nomads that we are accustomed to in the town have revolted against us, this is an act of treachery and revolt against our central government, next time they try to stay in the city we should just send them off!"
+ FEE_Fairs_Events.5021.OPT1: "We should have never brought them in."
+
+ FEE_Fairs_Events.6000.T: "Famous Artist"
+ FEE_Fairs_Events.6000.D: "A famous artist has reached the fair seeing trying to show his work around and gather even more fame to be accepted everywhere. At first glance his work seems interesting enough to think we might want to hire him, should we, my liege?"
+ FEE_Fairs_Events.6000.OPT1: "We should just celebrate his work and fund it."
+ FEE_Fairs_Events.6000.OPT2: "We should bribe it into our court."
+
+ FEE_Fairs_Events.7000.T: "Banquet Preparation"
+ FEE_Fairs_Events.7000.D: "What great celebration does not hold a banquet worth of Emperors? While our Trading Fair has attracted many merchants, caravans, and nomads into our city, it is time that we prepare to accustom more important people into our humble court and create a banquet that won't be forgotten!"
+ FEE_Fairs_Events.7000.OPT1: "Go forth with the preparation."
+ FEE_Fairs_Events.7000.OPT2: "More Gold Needed."
+
+ FEE_Fairs_Events.7001.T: "Banquet Invitation"
+ FEE_Fairs_Events.7001.D: "We have thought my liege about it, and while the royal coffers do have the preparation to host more than one excellent guest we could also only invite the famous person from our city to attract the local population."
+ FEE_Fairs_Events.7001.OPT1: "We should prefer our population."
+ FEE_Fairs_Events.7001.OPT2: "The more the merrier."
+
+ FEE_Fairs_Events.7002.T: "Invitation from [From.GetName]"
+ FEE_Fairs_Events.7002.D: "Sire, I'm a humble servant of [From.GetName] which is hosting a wonderful banquet in his city while a trading caravan has arrived in the beloved square of the city, will you come?"
+ FEE_Fairs_Events.7002.OPT1: "Marvellous, let us celebrate."
+ FEE_Fairs_Events.7002.OPT2: "It might be a trap, never."
+
+ FEE_Fairs_Events.7003.T: "[From.GetName] has accepted our invitation"
+ FEE_Fairs_Events.7003.D: "The dark gates were swung open. The horsemen entered, walking in file behind their guide. They found a broad path, paved with hewn stones, now winding upward, now climbing in short flights of well-laid steps. Many houses were built of elegant bricks and many dark doors passed. Besides the way in a stone channel, a stream of clear water flowed, sparkling and chattering. The great host of the numerous servants escorting [From.Owner.GetName] now opened in the great square outside our palace while our men have prepared their accommodation in the palace."
+ FEE_Fairs_Events.7003.OPT1: "Marvellous, let them come in."
+
+ FEE_Fairs_Events.7004.T: "[From.GetName] has declined our invitation"
+ FEE_Fairs_Events.7004.D: "Sadly [From.GetName] has decided to not join our banquet, in fear of it being an excuse for a trap like a red wedding."
+ FEE_Fairs_Events.7004.OPT1: "A treachery?"
+
+ #Estate Modifiers
+
+ #Event Modifiers
+ fee_trading_fair_province_modifier: "Trading Fair!"
+ desc_fee_trading_fair_province_modifier: "The current level of the trading fair is: §Y[Root.feeTradingFairLevel.GetValue]§!"
+ fee_trading_fair_origin: "Origin of The Trading Fair"
+ desc_fee_trading_fair_origin: " The first of the Trading Fairs will bless their history forever."
+ fee_almighty_protection: "Almighty Protection"
+ desc_fee_almighty_protection: "A blessing from the Gods!"
+ fee_solemn_hymn: "Solemn Hymn"
+ desc_fee_solemn_hymn: "A blessing from the Gods!"
+ fee_angelic_blessing: "Angelic Blessing"
+ desc_fee_angelic_blessing: "A blessing from the Gods!"
+ fee_kiss_luck: "Kiss of Luck"
+ desc_fee_kiss_luck: "A blessing from the Gods!"
+ fee_ruinous_powers: "Ruinous Powers"
+ desc_fee_ruinous_powers: "A Curse from the Hells!"
+ fee_demonic_embrace: "Demonic Embrace"
+ desc_fee_demonic_embrace: "A Curse from the Hells!"
+ fee_ancient_curse: "Ancient Curse"
+ desc_fee_ancient_curse: "A Curse from the Hells!"
+ fee_witch_eye: "Witch's Eyes"
+ desc_fee_witch_eye: "A Curse from the Hells!"
+
+ #Opinion Modifiers
+ fee_fairs_accepted_invitation: "Accepted Invitation"
+ fee_fairs_declined_invitation: "Declined Invitation"
+
+ #Variable
+ feeTradingFairLevel: "Trading Fair Level"
+
+ #Tooltips
+ FEE_FAIRS_STARTING_TT: "Up to once every §Y15 Years§! a §GTrading Fair§! will be hosted in an owned province with a §MCenter of Trade§! of any level. \nA fair can return to the same province only once every §Y20 years.§!\n\nTrading Fairs will spawn until §RGlobal Trade§!."
+ FAIRS_ENABLE_TT: "You will §GEnable§! the Trading Fairs."
+ FEE_FAIRS_DISABLE_TT: "You will §RDisable§! the §GTrading Fairs§! thus saving some performance in the game, in exchange for the loss of favour."
+ FEE_FAIRS_CHOSE_PROVINCE_TT: "The Trading Caravans and Fairs have chosen [event_target_fee_fair_province.GetName] to host the next fair!"
+ FEE_ORIGIN_TRADING_FAIRS_TT: "Every Province that was the §YSTARTING§! holder of §MTrading Fair§! will gain:"
+
+ FEE_FAIR_STARTED_CHANGED_OWNER_TT: "This Fair started in a province after it changed ownership, this can cause some bugs, that's why you are reading this. \n If you are 100% sure this was not the case {the province still had the modifier related to the fair} report it to Melvasul of the Expanded Mod Family discord server."
+
+ #
+ fee_fair_decisions_title: "£icon_trade_power£ §MTrading Fair Explanation§!"
+ fee_fair_decisions_desc: "Click on the Decision to see a few Explanation on the Progress level of a Trading Fair and what could be the outcomes."
+ fee_fair_disable_enabled_title: "£icon_trade_power£ §MTrading Fair: Enable/Disable§!"
+ fee_fair_disable_enabled_desc: "If you no longer wish to have the Trading Fairs or if you wish to enable them, click on the decision. \n\nFurther conditions (such as before Global Trade) will still be applied."

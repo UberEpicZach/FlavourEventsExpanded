@@ -1,0 +1,21 @@
+﻿﻿l_german:
+
+# Siphilis
+
+ FEE_Diseases_Events.1.T: "A New Disease?"
+ FEE_Diseases_Events.1.D_French: "The descent of the french army on the italian soil has brought, alongside death and destruction, a new disease that has never been seen before, apparently enlarged by the prostitution presence within the army itself, thus the Catholic Church has identified this new \"French Disease\" as a curse from God against mankind for their licentious customs and the immorality of their conduct."
+ FEE_Diseases_Events.1.D_Colonial: "The return home of the colonial expeditions from the new world has brought, alongside wealth and adventures, a new disease that has never been seen before, apparently enlarged by the prostitution presence within the army itself, thus the Catholic Church has identified this new \"French Disease\" as a curse from God against mankind for their licentious customs and the immorality of their conduct."
+ FEE_Diseases_Events.1.OPT1: "This is a catastrophe!"
+
+ FEE_Diseases_Events.2.T: "Syphilis outbreaks in [Root.GetName]"
+ FEE_Diseases_Events.2.D: "The local population has shown chancroid on their genitalia as well as exantthema on their whole body and reddish papules on their back, might this be the sign of God's punishment upon us?"
+ FEE_Diseases_Events.2.OPT1: "We should lock absteen and isolate the whores!"
+
+# Modifiers
+ fee_syphilis_outbreak: "Syphilis Outbreak"
+ desc_fee_syphilis_outbreak: "Can someone stop fuck those prostitute?"
+
+# Tooltip
+ FEE_SYPHILIS_DISEASE_TT: "The new disease might spread to nearby provinces. Army marching on those provinces might bring the siphilis back to their homeland"
+ FEE_SPREAD_SYPHILIS_TT: "§RThe New Disease might spread to nearby provinces§!"
+ FEE_SYPHILIS_SLACKING_MANPOWER_TT: "By removing the worst part of our troops, for the next §Y5 years§! we will be able to contain Syphilis better."

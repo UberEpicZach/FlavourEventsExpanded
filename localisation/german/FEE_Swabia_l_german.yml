@@ -1,0 +1,109 @@
+﻿﻿l_german:
+ FEE_Swabia_Events.1.T: "Establish a Swabian League"
+ FEE_Swabia_Events.1.D: "In 1488, the imperial princes and Free Cities of the stem duchy of Swabia formed a defensive pact to counter the growing threat of the Bavarian Dukes and the Swiss Confederacy. This was the Swabian League, a mutual agreement of support in the case of enemy aggression. Its purpose was to bring stability to the region, but it also became one of the emperor's most important military forces in South Germany. The League achieved its goal, and with Switzerland and Bavaria pacified, it grew weaker over time. In 1534, after years of infighting because of the Protestant Reformation, the League was finally disbanded."
+ FEE_Swabia_Events.1.OPT1: "We must establish such a league, for the good of all Swabia!"
+ FEE_Swabia_Events.1.OPT2: "$COUNTRY$ stands on its own."
+
+ FEE_Swabia_Events.2.T: "Founding a Swabian League"
+ FEE_Swabia_Events.2.D: "In 1488, the imperial princes and Free Cities of the stem duchy of Swabia formed a defensive pact to counter the growing threats on their borders. This was the Swabian League, a mutual agreement of support in the case of enemy aggression. The League achieved its goal, but with no new enemies, it grew weaker over time. In 1534, after years of infighting because of the Protestant Reformation, the League was finally disbanded. $FROM$ has called on us to be a founding member in just such a League! How do we answer their call?"
+ FEE_Swabia_Events.2.OPT1: "We will join, for the defense of Swabia!"
+ FEE_Swabia_Events.2.OPT2: "$COUNTRY$ will not grow reliant on the \"aid\" of others."
+
+ FEE_Swabia_Events.3.T: "The Founding"
+ FEE_Swabia_Events.3.D: "\"And it shall be known, that the wisest and most benevolent princes of Swabia have joined together in the Swabian League, and sworn to protect each other herefrom, until the end of time!\""
+ FEE_Swabia_Events.3.OPT1: "$COUNTRY$ shall forever stay loyal to the League!"
+
+ FEE_Swabia_Events.4.T: "An Invitation to Join the Swabian League"
+ FEE_Swabia_Events.4.D: "Some of our neighbors in Swabia have banded together to form a defensive league against outside aggressors. Due to our proximity to the region of Swabia, we have been requested to join them, and pledge ourselves to the League."
+ FEE_Swabia_Events.4.OPT1: "This is an excellent chance to ensure the safety of our lands."
+ FEE_Swabia_Events.4.OPT2: "They only seek to bind us because they fear us!"
+
+ FEE_Swabia_Events.3.T: "A New Member of the League"
+ FEE_Swabia_Events.3.D: "With the success of the League's diplomats, another ruler has chosen to swear themselves to our banners. Together with $FROM$, Swabia stands stronger than ever."
+ FEE_Swabia_Events.3.OPT1: "For the defense of the realm!"
+
+ FEE_Swabia_Events.4.T: "A Member Turned Away"
+ FEE_Swabia_Events.4.D: "At the most recent diet of the League, the other princes turned [From.Monarch.GetTitle] [From.Monarch.GetName] of $FROM$ away at the door. [From.Monarch.GetHerHis] acts of aggression have earned the [From.Monarch.GetTitle] this, and the rejection is tantamount to the banishment of $COUNTRY$ from the League."
+ FEE_Swabia_Events.4.OPT1: "The Swabian League is stronger without them."
+
+ FEE_Swabia_Events.5.T: "We Have Been Banished From The League!"
+ FEE_Swabia_Events.5.D: "The other princes of the League of Swabia claim that we have somehow broken our vows of protection, when we have merely been defending our rightful claims! Nevertheless we have been banished from all meetings of the League! We are better off without their scheming politics."
+ FEE_Swabia_Events.5.OPT1: "How dare they!"
+
+ FEE_Swabia_Events.6.T: "Disbanding the League"
+ FEE_Swabia_Events.6.D: "With the fading relevance of the League, it's power to act is dissipating, and every League diet is smaller than the last. At present, the League can barely muster an army to match the regional powers surrounding it. The time has finally come to acknowledge its fall."
+ FEE_Swabia_Events.6.OPT1: "Swabia is once again divided."
+
+ FEE_Swabia_Events.7.T: "The Swabian League Disbands!"
+ FEE_Swabia_Events.7.D: "The League is no longer a power of any influence or might. It is nothing but an abandoned dream, soon forgotten. This diet, with barely any princes in attendance, is its last."
+ FEE_Swabia_Events.7.OPT1: "We will find other allies. It is time to move on."
+
+ FEE_Swabia_Events.8.T: "Religious Infighting Brings the League to Its Knees"
+ FEE_Swabia_Events.8.D: "After years of religious conflict, the Swabian League is unable to muster its forces, or even gather civilly in a diet. In the end, the Reformation has torn Swabia asunder, leaving each prince to once again fend for themselves."
+ FEE_Swabia_Events.8.OPT1: "There is nothing to be done."
+
+ FEE_Swabia_Events.9.T: "The Swabian League Disbands!"
+ FEE_Swabia_Events.9.D: "Due to the religious conflicts plaguing the land, the League is nothing but a shell of its former self. No two princes can agree on anything, and war is as likely to be called within as without. It will never form a united front again."
+ FEE_Swabia_Events.9.OPT1: "And so falls the League. Let us hope the Empire can still be salvaged."
+
+ FEE_Swabia_Events.10.T: "Seek Aid From the League"
+ FEE_Swabia_Events.10.D: "The Swabian League has sworn to protect each other against foreign aggression. We should call upon the other member's aid us!"
+ FEE_Swabia_Events.10.OPT1: "It is their duty to support us!"
+ FEE_Swabia_Events.10.OPT2: "$COUNTRY$ calling for aid? The very thought is laughable!"
+
+ FEE_Swabia_Events.11.T: "$FROM$ Needs Our Aid"
+ FEE_Swabia_Events.11.D: "As members of the Swabian League, it is our duty to do what we can to support $FROM$ in their recent war. How will we help them?"
+ FEE_Swabia_Events.11.OPT1: "Send them military aid!"
+ FEE_Swabia_Events.11.OPT2: "Send them some money."
+ FEE_Swabia_Events.11.OPT3: "Our ally will get all the help we can muster!"
+ FEE_Swabia_Events.11.OPT4: "This is hardly a league matter."
+
+ FEE_Swabia_Events.12.T: "$FROM$ Sends Military Aid!"
+ FEE_Swabia_Events.12.D: "$FROM$ has answered our call for aid by sending soldiers, ready to join our armies!"
+ FEE_Swabia_Events.12.OPT1: "Bless them and send them to our generals!"
+
+ FEE_Swabia_Events.13.T: "$FROM$ Sends Financial Aid!"
+ FEE_Swabia_Events.13.D: "Honoring the call of the League in their way, $FROM$ has sent us funds to support our quickly dwindling treasury!"
+ FEE_Swabia_Events.13.OPT1: "We need everything we can get!"
+
+ FEE_Swabia_Events.14.T: "By the Grace of God, $FROM$ Pledges Aid!"
+ FEE_Swabia_Events.14.D: "A contingent of soldiers, sent by the [From.Monarch.GetTitle] of $FROM$ [From.Monarch.GetHerselfHimself] has arrived, bringing with them a chest of gold!"
+ FEE_Swabia_Events.14.OPT1: "Thank the Lord, and bless $FROM$!"
+
+ FEE_Swabia_Events.15.T: "$FROM$ Refuses to Send Aid!"
+ FEE_Swabia_Events.15.D: "Thinking they can renege on the oath they swore to the League, $FROM$ has refused to support us in our defenisve efforts!"
+ FEE_Swabia_Events.15.OPT1: "Unbelievable!"
+
+ FEE_Swabia_Events.16.T: "The League Aids Stability in Swabia!"
+ FEE_Swabia_Events.16.D: "Thanks to the efforts of the League, the lands of Swabia are enjoying a stability they have not seen since the days of the ancient duchy itself!"
+ FEE_Swabia_Events.16.OPT1: "The perfect time to consolidate our power!"
+ FEE_Swabia_Events.16.OPT2: "This is a golden age for all of Swabia!"
+ FEE_Swabia_Events.16.OPT3: "Let's not forget to collect our league taxes!"
+
+ FEE_Swabia_Events.17.T: "The Swabian League is a Threat to the Confederation!"
+ FEE_Swabia_Events.17.D: "The princely states and cities to our north have found new strength in their new Swabian League. Most of them are old enemies of the Swiss Confederacy, and will surely act to constrict Swiss freedoms."
+ FEE_Swabia_Events.17.OPT1: "Develop a strategic defense plan."
+ FEE_Swabia_Events.17.OPT2: "There is safety in reconciliation."
+
+ FEE_Swabia_Events.18.T: "We Have Been Offered a Place in the Swabian League!"
+ FEE_Swabia_Events.18.D: "Acknowledging our power, the princes of the Swabian League have decided that it is far better to stand with us than against us. They have requested that we join their league, for the sake of Swabian safety."
+ FEE_Swabia_Events.18.OPT1: "We will join this defensive league."
+ FEE_Swabia_Events.18.OPT2: "We have no need for their pitiful league."
+
+ FEE_Swabia_Events.19.T: "A Shadow Rising in the West"
+ FEE_Swabia_Events.19.D: "An ominous threat is gathering to our west. No, not France, look closer. The other princes of Swabia have been plotting in their little Swabian League for long enough without us taking action."
+ FEE_Swabia_Events.19.OPT1: "They are right to be afraid. One day we will crush them!"
+ FEE_Swabia_Events.19.OPT2: "Maybe it is time for a more… diplomatic solution."
+
+ FEE_Swabia_Events.20.T: "The Swabian League Has Disbanded!"
+ FEE_Swabia_Events.20.D: "After years of infighting, the defensive pact known as the Swabian League has at last come to an end."
+ FEE_Swabia_Events.20.OPT1: "What is a defensive pact when the greatest threat comes from inside?"
+
+ FEE_Swabia_Events.23.T: "The Founding of the Swabian League"
+ FEE_Swabia_Events.23.D: "A number of states in southern Germany, in the area of the ancient duchy of Swabia, have seen it necessary to form a Swabian League, to fend off aggressors on their borders. They hope that it will bring peace and prosperity to the region, and see the dawn of a new golden era for Swabia."
+ FEE_Swabia_Events.23.OPT1: "May they grow strong together! Just not too strong…"
+
+# Opinionoo Modifiers
+ fee_swa_league_member: "League Member"
+ fee_swa_refused_league_aid: "Refused to give League Aid"
+ fee_swa_swabian_reconciliation: "Swabian Reconciliation"

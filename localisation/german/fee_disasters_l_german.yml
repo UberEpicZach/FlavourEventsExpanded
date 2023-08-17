@@ -1,0 +1,816 @@
+﻿﻿l_german:
+ # Disasters:
+ fee_portuguese_succession_crisis: "Portuguese Succession Crisis"
+ fee_decline_of_the_ottomans: "Decline of the Ottomans"
+ fee_division_of_the_habsburg_monarchy: "Division of the Habsburg Monarchy"
+ fee_partition_of_poland: "Partition of Poland?"
+ fee_pashtun_uprising: "Pashtun Uprising"
+ fee_zemene_mesafint: "Zemene Mesafint"
+ fee_crisis_of_the_mughal_empire: "Crisis of the Mughal Empire"
+ fee_italy_republican_matter: "Italian Republican Matter"
+ fee_netherlands_rampjaar: "Rampjaar"
+
+# Events:
+ #Portugal
+  disaster_fee_portuguese_succession_crisis.1.T: "Portuguese Succession Crisis"
+  disaster_fee_portuguese_succession_crisis.1.D: "As a result of [Root.Monarch.GetHerHis] shaky claim to the [Root.GetAdjective] throne, [Root.Monarch.GetName]'s ascension to the [Root.GetAdjective] throne prompted a dynastic crisis. Several claimants have gathered supporters and declared themselves the rightful kings of [Root.GetName]. The confusion has led to a breakdown of law and order within the Kingdom as various pretenders fight each other as well as the central government in [Root.Capital.GetName]."
+  disaster_fee_portuguese_succession_crisis.1.OPT1: "Support the Monarch!"
+  disaster_fee_portuguese_succession_crisis.1.OPT2: "Support a New King!"
+
+  disaster_fee_portuguese_succession_crisis.2.T: "The Succession is Secure"
+  disaster_fee_portuguese_succession_crisis.2.D: "After a long and bitter struggle, the last rebelling army has laid down their arms. Regardless of whether the new king is lawful or even legitimate, the fact is that he has enforced his rule and none are left who can now challenge him. In any case, few would wish to return to the chaos and anarchy of the previous years. As the crown manages to regain control over the kingdom, the [Root.GetAdjective] people breathe a sigh of relief as they look for recovery of prosperity in the future."
+  disaster_fee_portuguese_succession_crisis.2.OPT1: "At least the fighting is over..."
+
+  disaster_fee_portuguese_succession_crisis.3.T: "Spread of Civil War"
+  disaster_fee_portuguese_succession_crisis.3.D: "Prominent nobles in [Root.GetName] have joined the revolt and taken up arms against us."
+  disaster_fee_portuguese_succession_crisis.3.OPT1: "No Loyalty..."
+
+  disaster_fee_portuguese_succession_crisis.4.T: "Chaos Engulfs the Provinces"
+  disaster_fee_portuguese_succession_crisis.4.D: "Protesting their new king, widely seen as illegitimate, as well as the breakdown of central control and the rule of law, peasants and burghers alike have taken up arms themselves. Seeking to overthrow the nobility, they ironically rebel to demand a return to order."
+  disaster_fee_portuguese_succession_crisis.4.OPT1: "How strange..."
+
+  disaster_fee_portuguese_succession_crisis.5.T: "The Cardinal who would be King"
+  disaster_fee_portuguese_succession_crisis.5.D: "In addition to the royal and noble claimants to the throne, the uncle of the late king, a Cardinal, has also sought to become ruler, and rather successfully. In seeking to revive the fortunes of the Avis dynasty, he also plans to petition the Pope to revoke his clerical position and take a royal bride."
+  disaster_fee_portuguese_succession_crisis.5.OPT1: "Support him as the true King."
+  disaster_fee_portuguese_succession_crisis.5.OPT2: "We don't need him."
+
+  disaster_fee_portuguese_succession_crisis.6.T: "A Special Request"
+  disaster_fee_portuguese_succession_crisis.6.D: "To curtail the unrest in [From.GetName], a Cardinal has used his position as the uncle of the late king to seize the throne. To secure his family line, he asks us to release him from his clerical vow of celibacy."
+  disaster_fee_portuguese_succession_crisis.6.OPT1: "Accept his request."
+  disaster_fee_portuguese_succession_crisis.6.OPT2: "It is against the Church!"
+
+  disaster_fee_portuguese_succession_crisis.7.T: "Holy Father Accepts"
+  disaster_fee_portuguese_succession_crisis.7.D: "With a heart full of love for his flock in [Root.GetName], the Holy Father has granted our request to put aside [Root.Monarch.GetName]'s vows for the good of the country."
+  disaster_fee_portuguese_succession_crisis.7.OPT1: "The throne grows more secure!"
+
+  disaster_fee_portuguese_succession_crisis.8.T: "Holy Father Refuses"
+  disaster_fee_portuguese_succession_crisis.8.D: "Undoubtedly influenced by those who wish us harm, the Pope has refused our reasonable request."
+  disaster_fee_portuguese_succession_crisis.8.OPT1: "There is nothing to be done..."
+
+  disaster_fee_portuguese_succession_crisis.9.T: "Nobility Worried"
+  disaster_fee_portuguese_succession_crisis.9.D: "Concerned that the ongoing succession crisis threatens to undermine their independence, the [Root.GetAdjective] nobility have sought to get rid of pretenders... themselves."
+  disaster_fee_portuguese_succession_crisis.9.OPT1: "This is fine..."
+
+  disaster_fee_portuguese_succession_crisis.10.T: "Spanish Intervention"
+  disaster_fee_portuguese_succession_crisis.10.D: "You shouldn't be able to see this hidden event."
+  disaster_fee_portuguese_succession_crisis.10.OPT1: "Please report it to the team if you see it."
+
+  disaster_fee_portuguese_succession_crisis.11.T: "Portuguese Succession Crisis"
+  disaster_fee_portuguese_succession_crisis.11.D: "While for centuries being the most stable of the Iberian crowns, recent years have seen [From.GetName] fall into disarray due to the succession crisis. This would be a perfect opportunity for us, as the rightful rulers of all of Hispania, should we choose to risk involvement."
+  disaster_fee_portuguese_succession_crisis.11.OPT1: "Interfere in [From.GetName]."
+  disaster_fee_portuguese_succession_crisis.11.OPT2: "[From.GetName] is our friend and ally!"
+
+  disaster_fee_portuguese_succession_crisis.12.T: "Spanish Involvement"
+  disaster_fee_portuguese_succession_crisis.12.D: "Having not forgotten their claims to the whole peninsula, the self-proclaimed King of "Spain" has decided to pursue his claim on our throne."
+  disaster_fee_portuguese_succession_crisis.12.OPT1: "We must prepare for invasion!"
+
+ # Ottomans
+  disaster_fee_decline_of_the_ottomans.1.T: "The Decline of the Ottomans"
+  disaster_fee_decline_of_the_ottomans.1.D: "While the rest of the world changed and entered modernity, the Ottoman Empire did not. Their strength in earlier ages left them complacent and strongly opposed to change. The Sultans themselves largely withdrew from governance and enjoyed their harems while corrupt nobles, radical clergymen, the decadent, outmoded officer corps, and others vied for true control over the empire. In addition, control by the central government, known as the Sublime Porte, is rapidly waning in the face of this decadence, as provincial governors often function more and more independently. The Ottomans were still feared throughout Europe for their mighty armies, but if the system is not reformed quickly, the Turkish weakness will not long continue to go unnoticed..."
+  disaster_fee_decline_of_the_ottomans.1.OPT1: "The Empire must endure!"
+
+  disaster_fee_decline_of_the_ottomans.2.T: "Tanzimat"
+  disaster_fee_decline_of_the_ottomans.2.D: "After the long years of decay, [Root.Monarch.GetName] has finally managed to right the ship of state and begin the long period of recovery. His vision, known as Tanzimat (Reform), intends to reshape the Ottoman state into a functioning modern society. By curtailing the ruling classes, ensuring equal protection of the laws for all, and reforming institutions from top to bottom, the Sultanate may yet survive into the modern era as a Great Power, or at least as a respectable state."
+  disaster_fee_decline_of_the_ottomans.2.OPT1: "One can only hope it is not too late..."
+
+  disaster_fee_decline_of_the_ottomans.3.T: "Stagnating Economy"
+  disaster_fee_decline_of_the_ottomans.3.D: "While the Ottoman Empire grew rich on trade and production of luxury goods, the timar system by which they governed their vast empire proved an obstacle to further economic development. This semi-feudal system led to an increasingly strong focus on agricultural productivity at the expense of investing in the industry, which in any case was stifled by the inflexible land divisions. This results in weak economic growth and increasing difficulty keeping up with the industrial powers of Europe."
+  disaster_fee_decline_of_the_ottomans.3.OPT1: "I'm not seeing the problem..."
+
+  disaster_fee_decline_of_the_ottomans.4.T: "Illiterate Populace"
+  disaster_fee_decline_of_the_ottomans.4.D: "Due to a variety of factors, including an emphasis on war and the officer class, Ottoman society began to lack greatly behind the Western Powers in terms of education. Hovering between 5% and 10% total literacy, the Ottomans increasingly became unable to keep up with the rest of Europe in technological innovation and business methods."
+  disaster_fee_decline_of_the_ottomans.4.OPT1: "We need to educate the kids who can't read well..."
+
+  disaster_fee_decline_of_the_ottomans.5.T: "Failures of the Timar System"
+  disaster_fee_decline_of_the_ottomans.5.D: "The Timar system served the Ottoman Empire well in its initial years of expansion when taxation was the primary source of income for most governments and recruiting soldiers for war was the Ottomans' top priority. Now, this system is rapidly becoming outmoded. Worse, the declining control of the Sublime Porte has allowed the Timars to begin exploiting the land for their short-term gain rather than effectively managing it. This deprived the Ottoman state of a stable, long-term revenue source. In addition, this also forced peasants off their lands and into cities, simultaneously reducing the number of productive rural workers while increasing the dependency of the city for food."
+  disaster_fee_decline_of_the_ottomans.5.OPT1: "Unfortunate..."
+
+  disaster_fee_decline_of_the_ottomans.6.T: "Debasing Currency"
+  disaster_fee_decline_of_the_ottomans.6.D: "As the economic situation of the empire continued to deteriorate, the Sultanate began to devalue its currency to pay its armies and bureaucracy. However, even worse were the provincial governors doing the same thing. Free from any personal consequences to themselves from the general decline in value, they freely printed and minted worthless coinage to enrich themselves at the expense of the Empire."
+  disaster_fee_decline_of_the_ottomans.6.OPT1: "These Jackals will be the end of us!"
+
+  disaster_fee_decline_of_the_ottomans.7.T: "The Decline of Ottoman Trade Dominance"
+  disaster_fee_decline_of_the_ottomans.7.D: "Once the sole arbiter of trade between Asia, Africa, and Europe, the Ottomans grew wealthy on monopolizing trade. However, the rise of colonialism has rendered most of the ancient overland trade routes to Asia obsolete, and even the vaunted Red Sea route has begun to decline as new routes to India, along with trade from the New World, leave Ottoman traders behind. What was once a geographically advantageous position, dominating the Mediterranean, has become a geographic prison."
+  disaster_fee_decline_of_the_ottomans.7.OPT1: "We shall recover... eventually!"
+
+  disaster_fee_decline_of_the_ottomans.8.T: "More Economic Downturn"
+  disaster_fee_decline_of_the_ottomans.8.D: "From its inception, the Ottoman Sultanate was a warlike state with its priority firmly on a strong army and expansionism rather than the development of a home economy. In the era when spoils were more common, the armies could often be paid by such spoils. As the Ottomans ran out of easy expansion routes, however, the lack of economic growth began to snowball as the army became more expensive. Now that we are on the back foot militarily, the situation has only gotten worse. We must either invest in our industry or find new conquests... or both."
+  disaster_fee_decline_of_the_ottomans.8.OPT1: "If a shark does not swim, it sinks..."
+
+  disaster_fee_decline_of_the_ottomans.9.T: "Celali Revolts"
+  disaster_fee_decline_of_the_ottomans.9.D: "The increasing instability and economic decline have led to anarchy in much of the countryside nominally part of the empire. The discontent with the lack of adequate food, the failure to maintain law and order, and the resentment against the Sultan and his lords alike, have led to simmering anger for quite some time. \n\nNow, a radical traveling Shi'ite cleric, known only as Celal, has whipped the already angry people into a fury. The Celali revolts, as they came to be called, were ostensibly a religious uprising but were more an expression of general discontent."
+  disaster_fee_decline_of_the_ottomans.9.OPT1: "Dispatch the Army and crush them!"
+
+  disaster_fee_decline_of_the_ottomans.10.T: "Price Controls"
+  disaster_fee_decline_of_the_ottomans.10.D: "As food becomes scarcer, merchants often feel as if they have no choice but to gouge the starving peasants clamoring to buy their bread. A debate among the viziers has broken out about how to address this. Some insist that the only morally right option is to put in price controls to alleviate the poor's suffering, while others say that the potential ruin of the traders helps no one. While price controls may alleviate poverty and starvation, the ripple effect on the economy at large could theoretically be catastrophic."
+  disaster_fee_decline_of_the_ottomans.10.OPT1: "Bread must be at a fair price!"
+  disaster_fee_decline_of_the_ottomans.10.OPT2: "We must not interfere with the merchants!"
+  disaster_fee_decline_of_the_ottomans.10.OPT3: "We will buy the bread ourselves and distribute it to the people!"
+
+  disaster_fee_decline_of_the_ottomans.11.T: "Corrupt Landholding"
+  disaster_fee_decline_of_the_ottomans.11.D: "As part of the Sublime Porte's method of governing its vast domains, large... tracts of land were handed off to various noble houses and mosques as theirs to govern on behalf of the Sultan. The greed that inevitably resulted in reduced incomes and increased privatization of land taxes has plagued the empire since its inception. Now, however, as other problems come to the forefront, this problem has become more prominent, as well as getting worse in the confusion."
+  disaster_fee_decline_of_the_ottomans.11.OPT1: "There was nothing to be done..."
+  disaster_fee_decline_of_the_ottomans.11.OPT2: "We must arrest those responsible!"
+
+  disaster_fee_decline_of_the_ottomans.12.T: "Balkan Separatism"
+  disaster_fee_decline_of_the_ottomans.12.D: "The Sublime Porte has always ruled over an uneasy mixture of peoples, religions, and subject nations. Despite claims by the Sultans and their supporters both here and abroad, the relationship of our Balkan subjects to us in particular has always been one of master and servant. Tired of religious discrimination, foreign high taxes, and forced conscription into the Sultanate's army, many have grown to bitterly resent their second-class citizen status. \n\nIn our moment of weakness, these diverse populations have begun to set wheels in motion to bring about their independence and our downfall..."
+  disaster_fee_decline_of_the_ottomans.12.OPT1: "Only time will tell what this may bring..."
+
+  disaster_fee_decline_of_the_ottomans.13.T: "Hungarian Separatism"
+  disaster_fee_decline_of_the_ottomans.13.D: "More than just simply one of the many ethnicities of our empire, Hungarians under our rule remember the days when they were a powerful rival to the Ottomans in their own right. Our rivals have taken advantage of this, sowing separatist sentiment in old Hungarian lands..."
+  disaster_fee_decline_of_the_ottomans.13.OPT1: "Okay."
+
+  disaster_fee_decline_of_the_ottomans.14.T: "Croat Resistance"
+  disaster_fee_decline_of_the_ottomans.14.D: "When the Ottoman Empire made its initial rapid advance across the Balkans, the small but old and proud Christian kingdom of Croatia made a stubborn stand which halted the empire's progress for years. Now, the memory of these "heroes," combined with our current weakness, has encouraged a new generation of Croats to take up arms against us..."
+  disaster_fee_decline_of_the_ottomans.14.OPT1: "That's all we needed..."
+
+  disaster_fee_decline_of_the_ottomans.15.T: "Romanian Uprising"
+  disaster_fee_decline_of_the_ottomans.15.D: "Although a nation known as "Rumania" has never existed, and did not exist when we conquered the people now known as Romanians, that has not stopped them from dreaming of a nation-state of their own."
+  disaster_fee_decline_of_the_ottomans.15.OPT1: "How dare they..."
+
+  disaster_fee_decline_of_the_ottomans.16.T: "Bulgarian Awakening"
+  disaster_fee_decline_of_the_ottomans.16.D: "Since the HRE-backed revolts of 1408, Bulgaria has long been one of the most tranquil parts of the empire. Thankfully so, its proximity to Konstantiniyye made it especially critical to the empire's infrastructure and military. \n\nIn this new age, however, the wave of national consciousness sweeping the Balkans has awakened long-dormant separatism in Bulgaria once again. An illicit book by an Orthodox monk titled the Istoriya Slavyabolgarskaya (The Slavonic Bulgarian History) has sparked a "National Awakening." The most radical of these have already begun taking up arms against us, but more are sure to follow..."
+  disaster_fee_decline_of_the_ottomans.16.OPT1: "Crush them!"
+
+  disaster_fee_decline_of_the_ottomans.17.T: "Great Bosnian Uprising"
+  disaster_fee_decline_of_the_ottomans.17.D: "Although efforts to Turkify and convert the Bosnian population to Islam have met with greater success than elsewhere in the Balkans, this has done little to dim the nationalism and independence fervor sweeping the region. Several prominent nobles have raised armies demanding independence."
+  disaster_fee_decline_of_the_ottomans.17.OPT1: "Fools! They will be dealt with..."
+
+  disaster_fee_decline_of_the_ottomans.18.T: "Serbian Revolution"
+  disaster_fee_decline_of_the_ottomans.18.D: "The Serbs, long poised on the frontier between the Ottomans and their rivals, enjoyed a particular degree of autonomy. This, however, has not endeared them to us. Far from it, in fact! The autonomy they enjoy has only given them a taste of full independence. In addition, new ideas of constitutionalism and equal rights have taken root here more than in many places in the empire. Combined with separatist, religious, and local elites' forces, we have a perfect storm brewing..."
+  disaster_fee_decline_of_the_ottomans.18.OPT1: "No one can remove us!"
+
+  disaster_fee_decline_of_the_ottomans.19.T: "Ottoman Superiority Questioned"
+  disaster_fee_decline_of_the_ottomans.19.D: "In the earlier ages, when Ottoman superiority over both the kafirs in Europe and our enemies elsewhere was undeniable, there was little reason to question our ways. Now that the rest of the world has caught up, with some rumors even saying we have fallen behind, murmurs among the elite threaten to depose this image of superiority. If we decide to heed these seditious voices, we may be able to learn from our enemies and reverse our defeats. However, this could threaten the already-teetering structure of the empire..."
+  disaster_fee_decline_of_the_ottomans.19.OPT1: "Nothing an infidel can come up with can match our glorious empire!"
+  disaster_fee_decline_of_the_ottomans.19.OPT2: "We can learn from our enemies as well as inevitably defeat them."
+
+  disaster_fee_decline_of_the_ottomans.20.T: "Contacts with the West"
+  disaster_fee_decline_of_the_ottomans.20.D: "As the Ottoman Empire is in decline, a small sector of the elites have chosen to send their children to study in Europe rather than immersing them in our ways. Now, these young men are returning to the Sublime Porte filled with marvelous tales about technological advancements, new cultural achievements, and new ideas of governance from the West. For now, they are few and pose no threat, should we determine these notions are, in fact, threatening. We may choose to risk these ideas to create a more flexible, and thus durable, society. Alternatively, the clergy warns against these infidel ideas, and after all the new politics that come with them may undermine our Islamic Empire..."
+  disaster_fee_decline_of_the_ottomans.20.OPT1: "Encourage more openness with the West!"
+  disaster_fee_decline_of_the_ottomans.20.OPT2: "We must not allow these heathen ideas to disturb the Caliphate."
+
+  disaster_fee_decline_of_the_ottomans.21.T: "Famine in the Cities"
+  disaster_fee_decline_of_the_ottomans.21.D: "The ongoing revolts have had multiple deleterious effects on the Sublime Porte's ability to feed its people. While peasants fleeing the violence and corrupt landlords are flooding into our cities, those same events are preventing us from bringing in enough food to even feed those already residing there. The grim reaper of urban famine, with its close companion, plague, has followed the peasants into the cities. Soon the promised safety of the walls became a prison. Despairing of their lot in life, these peasants have now turned violent..."
+  disaster_fee_decline_of_the_ottomans.21.OPT1: "Alas that these evil days should be mine!"
+
+  disaster_fee_decline_of_the_ottomans.22.T: "Decadent Ruling Classes"
+  disaster_fee_decline_of_the_ottomans.22.D: "Even in its hour of need, it is becoming clear that the Sublime Porte cannot rely on its ruling classes for help. Indeed, their decadence has in large part contributed to our decline. With each passing year nobility and clergy alike become less loyal to the Sultan. Many have carved out private fiefdoms for themselves and pay next to no tribute to the capital."
+  disaster_fee_decline_of_the_ottomans.22.OPT1: "We have no choice but to give them free rein."
+  disaster_fee_decline_of_the_ottomans.22.OPT2: "We must stop this!"
+
+  disaster_fee_decline_of_the_ottomans.23.T: "Rise of the Hayduks"
+  disaster_fee_decline_of_the_ottomans.23.D: "Taking advantage of the chaos in the Balkans, a sharp increase in the number of armed bandits has plagued commerce and troop movements. Hailed by our enemies as "freedom fighters", we who have to deal with them know they are nothing more than brigands."
+  disaster_fee_decline_of_the_ottomans.23.OPT1: "Unbelievable..."
+
+  disaster_fee_decline_of_the_ottomans.24.T: "Greek Revolts!"
+  disaster_fee_decline_of_the_ottomans.24.D: "Ever since the dawn of Greek separatism, there have been sporadic claims made to restore a Greek nation-state. Although centuries of plotting have been kept from boiling over by various means, the new-found weakness of the Ottoman state has given Greek revolutionaries the perfect opportunity. Rising under the leadership of Ioannis Kapodistrias, a Greek diplomat in the service of Venice, the Greeks claim to be reclaiming their ancient freedoms and democracy from our supposed "tyranny.\""
+  disaster_fee_decline_of_the_ottomans.24.OPT1: "Let them fight for their "freedom" and see how much it costs them..."
+
+  disaster_fee_decline_of_the_ottomans.25.T: "Greece Declares Independence!"
+  disaster_fee_decline_of_the_ottomans.25.D: "After centuries of domination by the Ottomans, the Greeks have finally struck out to reclaim their place as an independent nation. Should we ally with this new state and help them to secure their freedom?"
+  disaster_fee_decline_of_the_ottomans.25.OPT1: "The Greeks must be liberated!"
+  disaster_fee_decline_of_the_ottomans.25.OPT2: "Let the Turks handle their affairs."
+
+  disaster_fee_decline_of_the_ottomans.26.T: "Serbia Declares Independence!"
+  disaster_fee_decline_of_the_ottomans.26.D: "Tired of foreign rule and yearning for self-governance and liberty, our Serbian Orthodox brethren have thrown off the Ottoman yoke and are attempting to win their independence. As our little Slavic brethren as well as fellow Orthodox Christians, some say we must help in any way we can. Should we help them secure their freedom?"
+  disaster_fee_decline_of_the_ottomans.26.OPT1: "We must help them remove Ottomans."
+  disaster_fee_decline_of_the_ottomans.26.OPT2: "We cannot get involved directly, but they have our support in men and equipment."
+  disaster_fee_decline_of_the_ottomans.26.OPT3: "This is not our problem."
+
+  disaster_fee_decline_of_the_ottomans.27.T: "Rampant Corruption"
+  disaster_fee_decline_of_the_ottomans.27.D: "As the Sublime Porte continues to weaken in its grip over its subjects, more and more people turn to unofficial channels to conduct their affairs. Increasingly they turn to bribery, nepotism, and crime to get what they need. While this greases the wheels in the short run, the current avalanche of corruption will prove crippling to the empire in the long term. While other matters demand our attention, this too must become a priority if we are to save the ship of state."
+  disaster_fee_decline_of_the_ottomans.27.OPT1: "Devote as many resources as possible to stop this!"
+  disaster_fee_decline_of_the_ottomans.27.OPT2: "We cannot focus on this right now."
+
+  disaster_fee_decline_of_the_ottomans.28.T: "Egypt Demands Autonomy"
+  disaster_fee_decline_of_the_ottomans.28.D: "While the Ottomans conquered Egypt at lightning speed in the 16th century, this meant that many of the local power holders there still held onto power, simply under new management. While the Empire remained strong, the Egyptians remained loyal, if by fear more than anything else. In the process, they became an integral part of the empire's economic base. The outsized wealth wielded by Egyptian pashas, as well as the region never being as fully integrated under Ottoman rule, proved a recipe for instability when the rest of the empire began ailing. \nNow, the heads of the most powerful old Mamluk families, along with the governing Pashas, have approached the Sultan himself demanding self-governance in internal affairs and economic autonomy. While this bold request was unthinkable a generation ago, this may be unavoidable in the current state of the empire."
+  disaster_fee_decline_of_the_ottomans.28.OPT1: "We have no choice..."
+  disaster_fee_decline_of_the_ottomans.28.OPT2: "We will not back down!"
+
+ # Hasburg Monarchy
+  disaster_fee_division_of_the_habsburg_monarchy.1.T: "Division of the Habsburg Monarchy"
+  disaster_fee_division_of_the_habsburg_monarchy.1.D: "Starting in the 1400s, the Habsburg family sought to cement their rise to power by moving away from their tradition of dividing up their realm among multiple heirs and towards a primogeniture system. However, the ancient inheritance laws are still legally enforceable. Ensuring that the ever-increasing Habsburg possessions remained united has taken astute management and a firm grip. [Root.Monarch.GetName] has not been blessed with such an ability, and thus other branches of House von Habsburg have begun to assert their old rights. While this would, of course, benefit them, it threatens the fledgling Habsburg empire with division and ultimately dissolution."
+  disaster_fee_division_of_the_habsburg_monarchy.1.OPT1: "All in the family..."
+
+  disaster_fee_division_of_the_habsburg_monarchy.2.T: "Reunification!"
+  disaster_fee_division_of_the_habsburg_monarchy.2.D: "At long last, the dream of reuniting the Habsburg monarchy has been achieved. The antiquated laws that threatened to leave the realm in tatters have been finally quashed. Now, we emerge from the chaos stronger for it. A modernized nation-state rather than the feudal monarchy we were."
+  disaster_fee_division_of_the_habsburg_monarchy.2.OPT1: "A.E.I.O.U."
+
+  disaster_fee_division_of_the_habsburg_monarchy.3.T: "The Stem Duchy of [STY.GetName]"
+  disaster_fee_division_of_the_habsburg_monarchy.3.D: "Long the heart of the Habsburg domain, the title of Duke of [STY.GetName] has often been the most important stepping stone to the headship of the Habsburg dynasty, and lately to the title of Holy Roman Emperor itself. Contrary to EU4's usual representation of a united Austria in 1444, it was the ruler from Steiermark, not Vienna, who was Holy Roman Emperor in 1444 and would remain so through 1457."
+  disaster_fee_division_of_the_habsburg_monarchy.3.OPT1: "It is our law..."
+  disaster_fee_division_of_the_habsburg_monarchy.3.OPT2: "If he wants to claim his throne he shall have to fight for it!"
+
+  disaster_fee_division_of_the_habsburg_monarchy.4.T: "The Return of the King"
+  disaster_fee_division_of_the_habsburg_monarchy.4.D: "The long-absent Lords of [STY.GetName], believed by many to be the rightful ruler of the Holy Roman Empire, has now thrown off rule from [From.Capital.GetName]. Shall we support their claim to the Imperial Throne?"
+  disaster_fee_division_of_the_habsburg_monarchy.4.OPT1: "The throne belongs to §Y[STY.GetName]§!!"
+  disaster_fee_division_of_the_habsburg_monarchy.4.OPT2: "We need no new King!"
+
+  disaster_fee_division_of_the_habsburg_monarchy.5.T: "Styria becomes the Emperor"
+  disaster_fee_division_of_the_habsburg_monarchy.5.D: "You shouldn't be able to see this hidden event."
+  disaster_fee_division_of_the_habsburg_monarchy.5.OPT1: "Please report it to the team if you see it."
+
+  disaster_fee_division_of_the_habsburg_monarchy.6.T: "The Will of the Electors"
+  disaster_fee_division_of_the_habsburg_monarchy.6.D: "The majority of the Electors have chosen to support §Y[STY.GetName]§!. Not only did they in war, but also the Empire. [Root.Monarch.GetName] has been overthrown and is no longer the Holy Roman Emperor!"
+  disaster_fee_division_of_the_habsburg_monarchy.6.OPT1: "How dare they?!"
+
+  disaster_fee_division_of_the_habsburg_monarchy.7.T: "[TIR.GetAdjective] Inheritance"
+  disaster_fee_division_of_the_habsburg_monarchy.7.D: "The lands of the [TIR.GetAdjective] branch of House von Habsburg were largely independent from Vienna from 1379 onwards, only being fully reintegrated by Maximilian I in 1490. As the dynasty begins to crumble, one of our late Archduke's sons has come forward demanding the [TIR.GetAdjective] lands as his inheritance right."
+  disaster_fee_division_of_the_habsburg_monarchy.7.OPT1: "Give him his right."
+  disaster_fee_division_of_the_habsburg_monarchy.7.OPT2: "Never!"
+
+  disaster_fee_division_of_the_habsburg_monarchy.8.T: "Last Testament Concerning [HUN.GetName]"
+  disaster_fee_division_of_the_habsburg_monarchy.8.D: "Our late Archduke's sons, having laid their claims to other parts of the realm, now eye the yet semi-independent kingdom of [HUN.GetName]. It's powerful armies, wealthy mines, and rich lands offer perhaps the most tempting prize of all. Our late ruler, however, ruled that his youngest son Maximilian should be the one to inherit it. This keeps it out of the hands of the more grasping brothers, but leaves the Hungarian throne in the hands of a child ruler, and therefore vulnerable. His "Last Testament Concerning Hungary" was impeccably drafted according to Habsburg succession law, despite being inconvenient to the family."
+  disaster_fee_division_of_the_habsburg_monarchy.8.OPT1: "We shall follow the last testament."
+  disaster_fee_division_of_the_habsburg_monarchy.8.OPT2: "The throne of §Y[HUN.GetName]§! is MINE! And no others!"
+
+  disaster_fee_division_of_the_habsburg_monarchy.9.T: "[Root.GetAdjective] Succession"
+  disaster_fee_division_of_the_habsburg_monarchy.9.D: "The [From.GetAdjective] monarchy has followed its late monarch's decree and invested his youngest son with the throne of [Root.GetName]."
+  disaster_fee_division_of_the_habsburg_monarchy.9.OPT1: "Ok."
+
+  disaster_fee_division_of_the_habsburg_monarchy.10.T: "The [BOH.GetAdjective] Kingship Question"
+  disaster_fee_division_of_the_habsburg_monarchy.10.D: "Like other personal unions of the Habsburg crown, [BOH.GetName] remains more separately administered than other of our possessions. It's well-fortified cities would be a tempting prize for any of the potential heirs but were we to allow its independence it may irreparably weaken the crown."
+  disaster_fee_division_of_the_habsburg_monarchy.10.OPT1: "This candidate looks like a good choice..."
+  disaster_fee_division_of_the_habsburg_monarchy.10.OPT2: "§Y[BOH.GetName]§! is mine!"
+
+  disaster_fee_division_of_the_habsburg_monarchy.11.T: "[Root.GetAdjective] Succession"
+  disaster_fee_division_of_the_habsburg_monarchy.11.D: "The [From.GetAdjective] monarchy has respected the wishes of both its late Archduke and the [Root.GetAdjective] estates and crowned a new ruler as King of [Root.GetName], dissociated from [From.Capital.GetName]."
+  disaster_fee_division_of_the_habsburg_monarchy.11.OPT1: "Ok."
+
+  disaster_fee_division_of_the_habsburg_monarchy.12.T: "Further Austria"
+  disaster_fee_division_of_the_habsburg_monarchy.12.D: "The ancestral home of the Habsburg dynasty, large tracts of the southern regions of Germany have once again come under the possession of House von Habsburg. However, a prince claiming a right of inheritance has made a claim to this, like in so many other regions of the empire..."
+  disaster_fee_division_of_the_habsburg_monarchy.12.OPT1: "It is his right..."
+  disaster_fee_division_of_the_habsburg_monarchy.12.OPT2: "Never!"
+
+  disaster_fee_division_of_the_habsburg_monarchy.13.T: "Reunification?"
+  disaster_fee_division_of_the_habsburg_monarchy.13.D: "A.E.I.O.U. First coined by Frederick III while not yet ruler of Austria, its simple and yet elegant meaning has expressed the common purpose of the Habsburgs, to unite the Austrian lands and the Habsburg monarchy, and then from there to extend its influence throughout the world. However, the antiquated succession law's have left Frederick's beloved Austria a pale shadow of its former self. Now, the shattered Archduchy must rally to fulfill its goal. A choice remains. Do we attempt to take back these lands by force or shall we let Austria's ever-able diplomacy guide the path to reunification?"
+  disaster_fee_division_of_the_habsburg_monarchy.13.OPT1: "Let others wage war, but thou, happy [Root.GetName], marry."
+  disaster_fee_division_of_the_habsburg_monarchy.13.OPT2: "The realm was broken by diplomacy, it must be reforged in blood!"
+
+  disaster_fee_division_of_the_habsburg_monarchy.14.T: "Proposal from [From.Capital.GetName]"
+  disaster_fee_division_of_the_habsburg_monarchy.14.D: "Emissaries arrived from [From.Capital.GetName], from where the main claimants to the headship of House von Habsburg send us a proposal. They offer reunification under their headship but with enough sovereignty over our own affairs to honor our inheritance rights. This unity would additionally make House von Habsburg less vulnerable to foreign aggressors and ensure our dynasty's future."
+  disaster_fee_division_of_the_habsburg_monarchy.14.OPT1: "Agree."
+  disaster_fee_division_of_the_habsburg_monarchy.14.OPT2: "This is only a silver-tongued ploy! Refuse!"
+
+  disaster_fee_division_of_the_habsburg_monarchy.15.T: "[From.GetName] Accepts!"
+  disaster_fee_division_of_the_habsburg_monarchy.15.D: "The delegates have returned from [From.GetName] accepting our offer of diplomatic reunification!"
+  disaster_fee_division_of_the_habsburg_monarchy.15.OPT1: "Excellent!"
+
+  disaster_fee_division_of_the_habsburg_monarchy.16.T: "[From.GetName] Refuses!"
+  disaster_fee_division_of_the_habsburg_monarchy.16.D: "The delegates have returned from [From.GetName] refusing our offer of diplomatic reunification!"
+  disaster_fee_division_of_the_habsburg_monarchy.16.OPT1: "Unity must be Restored!"
+
+  disaster_fee_division_of_the_habsburg_monarchy.17.T: "Proposal to the [STY.GetAdjective] Habsburgs"
+  disaster_fee_division_of_the_habsburg_monarchy.17.D: "Despite their jealously-guarded right of succession under our law, our decision to take the diplomatic route has allowed our delegates to make a proposal to the [STY.GetAdjective]s. By making certain concessions, we can convince them of the need for strength in unity. With the promise of enough gain for both sides, this cadet branch of house von Habsburg might agree to compromise their rights for a mutually beneficial future."
+  disaster_fee_division_of_the_habsburg_monarchy.17.OPT1: "Send them the proposal with our compliments..."
+  disaster_fee_division_of_the_habsburg_monarchy.17.OPT2: "Never mind..."
+
+  disaster_fee_division_of_the_habsburg_monarchy.18.T: "Proposal to the [TIR.GetAdjective] Habsburgs"
+  disaster_fee_division_of_the_habsburg_monarchy.18.D: "Despite their jealously-guarded right of succession under our law, our decision to take the diplomatic route has allowed our delegates to make a proposal to the [TIR.GetAdjective]s. By making certain concessions, we can convince them of the need for strength in unity. With the promise of enough gain for both sides, this cadet branch of house von Habsburg might agree to compromise their rights for a mutually beneficial future."
+  disaster_fee_division_of_the_habsburg_monarchy.18.OPT1: "Send them the proposal with our compliments..."
+  disaster_fee_division_of_the_habsburg_monarchy.18.OPT2: "Never mind..."
+
+  disaster_fee_division_of_the_habsburg_monarchy.19.T: "The [SWA.GetAdjective] Question"
+  disaster_fee_division_of_the_habsburg_monarchy.19.D: "Despite their jealously-guarded right of succession under our law, our decision to take the diplomatic route has allowed our delegates to make a proposal to the [SWA.GetAdjective] Habsburgs. By making certain concessions, we can convince them of the need for strength in unity. With the promise of enough gain for both sides, this cadet branch of house von Habsburg might agree to compromise their rights for a mutually beneficial future."
+  disaster_fee_division_of_the_habsburg_monarchy.19.OPT1: "Send them the proposal with our compliments..."
+  disaster_fee_division_of_the_habsburg_monarchy.19.OPT2: "Never mind..."
+
+  disaster_fee_division_of_the_habsburg_monarchy.20.T: "The [HUN.GetAdjective] Inheritance"
+  disaster_fee_division_of_the_habsburg_monarchy.20.D: "Despite their jealously-guarded right of succession under our law, our decision to take the diplomatic route has allowed our delegates to make a proposal to [HUN.Monarch.GetName] of [HUN.GetName]. By making certain concessions, we can convince them of the need for strength in unity. With the promise of enough gain for both sides, this cadet branch of house von Habsburg might agree to compromise their rights for a mutually beneficial future."
+  disaster_fee_division_of_the_habsburg_monarchy.20.OPT1: "Send them the proposal with our compliments..."
+  disaster_fee_division_of_the_habsburg_monarchy.20.OPT2: "Never mind..."
+
+  disaster_fee_division_of_the_habsburg_monarchy.21.T: "Election in [BOH.GetName]"
+  disaster_fee_division_of_the_habsburg_monarchy.22.D: "After regaining full independence from the [Root.Capital.GetName] Habsburgs, the Kingdom of [BOH.GetName] resumed its ancient practice of electoral monarchy. While this robbed us of rulership over the kingdom, it also gives us an opening not present elsewhere in the fractured Habsburg domain. Should the rulers accept a proposal similar to the one offered to the other Habsburg domains it would make for an even stronger grip on [BOH.GetName] than elsewhere."
+  disaster_fee_division_of_the_habsburg_monarchy.21.OPT1: "Send them the proposal with our compliments..."
+  disaster_fee_division_of_the_habsburg_monarchy.21.OPT2: "Never mind..."
+
+  disaster_fee_division_of_the_habsburg_monarchy.22.T: "Nobility Protest"
+  disaster_fee_division_of_the_habsburg_monarchy.22.D: "Appalled at our moves to use force to override the rule of law, and feeling their own inheritance rights threatened, several of the most prominent nobility have risen up against us!"
+  disaster_fee_division_of_the_habsburg_monarchy.22.OPT1: "Then we shall crush them too!"
+
+  disaster_fee_division_of_the_habsburg_monarchy.23.T: "Order Restored in [STY.GetName]"
+  disaster_fee_division_of_the_habsburg_monarchy.23.D: "The greatest of the cadet lines of House von Habsburg to defy us, the Lords of [STY.GetName] even grasped for the emperorship in their attempts to take control of the [Root.GetAdjective] lands. Now, however, they are once again subordinate to [Root.Capital.GetName]. What shall we do with them?"
+  disaster_fee_division_of_the_habsburg_monarchy.23.OPT1: "[STY.GetName] must be fully [Root.GetAdjective]!"
+  disaster_fee_division_of_the_habsburg_monarchy.23.OPT2: "Even in defeat we must respect their sovereignty."
+
+  disaster_fee_division_of_the_habsburg_monarchy.24.T: "Order Restored in [TIR.GetName]"
+  disaster_fee_division_of_the_habsburg_monarchy.24.D: "Despite the wealth of [TIR.GetAdjective] silver and the ancestral mountain forces of the Habsburgs, the [TIR.GetAdjective]s have at least surrendered to us. It remains to be seen how we proceed with them."
+  disaster_fee_division_of_the_habsburg_monarchy.24.OPT1: "Bring the [TIR.GetAdjective]s to heel!"
+  disaster_fee_division_of_the_habsburg_monarchy.24.OPT2: "Even in defeat we must respect their rights."
+
+  disaster_fee_division_of_the_habsburg_monarchy.25.T: "Order Restored in [BOH.GetName]"
+  disaster_fee_division_of_the_habsburg_monarchy.25.D: "The crown jewel of the Habsburg Monarchy, the King-Electorate of [BOH.GetName] now lies in our hands. However, taking full advantage of this will anger the fiercely independent [BOH.GetAdjective]s. How shall we proceed?"
+  disaster_fee_division_of_the_habsburg_monarchy.25.OPT1: "We must clamp down!"
+  disaster_fee_division_of_the_habsburg_monarchy.25.OPT2: "Reaffirm the [BOH.GetAdjective]s' Ancient Rights and Privileges."
+
+  disaster_fee_division_of_the_habsburg_monarchy.26.T: "[vassal_to_support.GetName] in Trouble!"
+  disaster_fee_division_of_the_habsburg_monarchy.26.D: "The nation of [vassal_to_support.GetName] is in trouble. [From.GetName] oppressed them for decades and they finally have risen up against their cruel overlords! However they are weak and may not be able to withstand their force. We need to help them in their fight..."
+  disaster_fee_division_of_the_habsburg_monarchy.26.OPT1: "We must help §Y[vassal_to_support.GetName]§!!"
+  disaster_fee_division_of_the_habsburg_monarchy.26.OPT2: "I don't see where this is my problem?"
+
+ # Poland
+  disaster_fee_partition_of_poland.1.T: "Threats of Partition"
+  disaster_fee_partition_of_poland.1.D: "The geographic condition of [Root.GetName] has never been a good one. With few natural borders and surrounded by potential enemies, some might say it was only a matter of time before they were taken advantage of. However, others contrast [Root.GetName]'s past strength with their present condition, and say the greed and avarice of the nobility are solely, or at least mostly, to blame. The question of blame, for now however, is irrelevant. We are threatened with imminent invasion and, despite our handicaps, must do what we can."
+  disaster_fee_partition_of_poland.1.OPT1: "Ride out and meet them! For Death and Glory!"
+
+  disaster_fee_partition_of_poland.2.T: "Future Secured"
+  disaster_fee_partition_of_poland.2.D: "Although the perfect storm of internal and external threats threatened to undo us, we have, against all odds, survived. Now we must begin the process of rebuilding."
+  disaster_fee_partition_of_poland.2.OPT1: "[Root.GetName] is not yet lost!"
+
+  disaster_fee_partition_of_poland.3.T: "First Neighbour"
+  disaster_fee_partition_of_poland.3.D: "You shouldn't be able to see this hidden event."
+  disaster_fee_partition_of_poland.3.OPT1: "Please report it to the team if you see it."
+
+  disaster_fee_partition_of_poland.4.T: "Falling Behind"
+  disaster_fee_partition_of_poland.4.D: "The geopolitical landscape has changed, and while [From.GetName] remained stagnant, other powers have grown up all around it. Once the hegemon of Eastern Europe, the citizens of [From.GetName] can no longer rest assured that they are safe from outside invasion. The old ways that made the kingdom great may no longer be enough, and murmurs are only growing louder that soon the realm may even fall completely..."
+  disaster_fee_partition_of_poland.4.OPT1: "We must act quickly before others take advantage first!"
+
+  disaster_fee_partition_of_poland.5.T: "Second Neighobur"
+  disaster_fee_partition_of_poland.5.D: "You shouldn't be able to see this hidden event."
+  disaster_fee_partition_of_poland.5.OPT1: "Please report it to the team if you see it."
+
+  disaster_fee_partition_of_poland.6.T: "Paralysis in [From.GetName]"
+  disaster_fee_partition_of_poland.6.D: "The central government of [From.GetName] has long been one which operated by the consent of its governed. In practice, this gave the nobles essentially unlimited power over [From.GetName]. This system, which worked in a more feudal age and when Poland dominated the continent, is now clearly outmoded as more capable states rise up around it. Faced with the threat of invasion by stronger nations, [From.GetName] can only sit and wait for the axe to fall as the nobility fails to come to an agreement."
+  disaster_fee_partition_of_poland.6.OPT1: "It is an opportunity waiting to be taken."
+
+  disaster_fee_partition_of_poland.7.T: "Third Neighbour"
+  disaster_fee_partition_of_poland.7.D: "You shouldn't be able to see this hidden event."
+  disaster_fee_partition_of_poland.7.OPT1: "Please report it to the team if you see it."
+
+  disaster_fee_partition_of_poland.8.T: "Worries Abate"
+  disaster_fee_partition_of_poland.8.D: "The vulnerability of [From.GetName] has subsided, at least for now."
+  disaster_fee_partition_of_poland.8.OPT1: "Fortunate... at least for them."
+
+  disaster_fee_partition_of_poland.9.T: "Black Eagles"
+  disaster_fee_partition_of_poland.9.D: "You shouldn't be able to see this hidden event."
+  disaster_fee_partition_of_poland.9.OPT1: "Please report it to the team if you see it."
+
+  disaster_fee_partition_of_poland.10.T: "Alliance of the Three Black Eagles"
+  disaster_fee_partition_of_poland.10.D: "Called as such in Poland, which was represented by a white eagle, this refers to the three powers which partitioned them and signed secret pacts to do so. Prussia, Austria, and Russia, in contrast to Poland's white eagle, all flew black eagles in their flags."
+  disaster_fee_partition_of_poland.10.OPT1: "Fate has decreed it."
+
+  disaster_fee_partition_of_poland.11.T: "Debased Currency"
+  disaster_fee_partition_of_poland.11.D: "As part of its plan to weaken [Root.GetName] in preparation for invasion, [inflation_country.Monarch.GetName] of [inflation_country.GetName] ordered a massive quantity of counterfeit [Root.GetAdjective] złoty to be made and pumped into [Root.GetName]. So massive was this undertaking that it severely weakened the [Root.GetAdjective] economy and, crucially, it's ability to fund any military resistance."
+  disaster_fee_partition_of_poland.11.OPT1: "Bastards!"
+
+  disaster_fee_partition_of_poland.12.T: "Danzig or War"
+  disaster_fee_partition_of_poland.12.D: "Seeking to unite the Germanic territories under a Germanic flag, the bastard ruler of [danzig_or_war_enemy.GetName] has demanded we hand over [43.GetName], or Danzig as they call it, to them, thus depriving us of one of our few useful ports."
+  disaster_fee_partition_of_poland.12.OPT1: "We have no choice but to accept."
+  disaster_fee_partition_of_poland.12.OPT2: "They can come and take it!"
+
+  disaster_fee_partition_of_poland.13.T: "A [Root.GetAdjective] [43.GetName]"
+  disaster_fee_partition_of_poland.13.D: "[From.GetName] has given in to our diplomatic pressure and accepted our demand to cede [43.GetName] to its legitimate owner, us."
+  disaster_fee_partition_of_poland.13.OPT1: "A glorious day for [Root.GetName] and [43.GetName]!"
+
+  disaster_fee_partition_of_poland.14.T: "The Poles Refuse"
+  disaster_fee_partition_of_poland.14.D: "Despite our reasonable request, the Poles have refused to give up the rightful German port of [43.GetName] to us."
+  disaster_fee_partition_of_poland.14.OPT1: "War it is then!"
+  disaster_fee_partition_of_poland.14.OPT2: "So be it..."
+
+  disaster_fee_partition_of_poland.15.T: "A New Constitution?"
+  disaster_fee_partition_of_poland.15.D: "The Struggle for Royal Power was a dark chapter in [Root.GetAdjective] history. Out of it came reforms that went a long way towards reforming [Root.GetName] into a modern monarchy. However, a new generation of nobles, combining Enlightenment thought with fond memories of their ancestor's privileges (along with persuasive funding from Russian enemies of [Root.GetName]), are once again demanding the Liberum Veto. Drawing up a new constitution with many of the characteristics of old [Root.GetName], they call it the Cardinal Laws and demand we pass it."
+  disaster_fee_partition_of_poland.15.OPT1: "We have no choice but to accept."
+  disaster_fee_partition_of_poland.15.OPT2: "We didn't ride through fire and water to bandy crooked word!"
+
+  disaster_fee_partition_of_poland.16.T: "Demands for Peasant Autonomy"
+  disaster_fee_partition_of_poland.16.D: "Traditionally, the life of a [Root.GetAdjective] peasant was meager but at least relatively safe. With the threats on our border, vocal parties within the court have begun demanding increased concessions for the peasantry. Rumors swirl that the Russians are instigating this to deliberately weaken us but we may never know for sure..."
+  disaster_fee_partition_of_poland.16.OPT1: "Grant the Concessions."
+  disaster_fee_partition_of_poland.16.OPT2: "Refuse the rabble!"
+
+  disaster_fee_partition_of_poland.17.T: "Cossacks Restless"
+  disaster_fee_partition_of_poland.17.D: "Adding to our grief, the Cossacks of the steppe, ever jealous of their own liberty, have seized the opportunity to rise up against us!"
+  disaster_fee_partition_of_poland.17.OPT1: "Ingrates!"
+
+  disaster_fee_partition_of_poland.18.T: "Confederation of Bar"
+  disaster_fee_partition_of_poland.18.D: "Although many of the nobility are bought and paid for by foreign actors, some of them still remain loyal to the ideals of the old [Root.GetName]. However, in return for their help in expelling foreign incursions, they of course demand their old rights."
+  disaster_fee_partition_of_poland.18.OPT1: "We need their help."
+  disaster_fee_partition_of_poland.18.OPT2: "We can do it without them."
+
+  disaster_fee_partition_of_poland.19.T: "Foreign Trade Dries Up"
+  disaster_fee_partition_of_poland.19.D: "Despite being neither ethnically [Root.GetAdjective] nor a majority of the [Root.GetAdjective] population, the Baltic Prussian coast served as the backbone of the [Root.GetAdjective] economy, due to its rich estuaries and trading cities. The loss of this territory in the Partition broke this backbone, leading to a nearly 80% reduction in trade revenue. The enormous trade fees placed on [Root.GetAdjective] merchants by the new owners of those cities further punished the [Root.GetAdjective] economy."
+  disaster_fee_partition_of_poland.19.OPT1: "Will we survive?"
+
+  disaster_fee_partition_of_poland.20.T: "Trade Dried Up"
+  disaster_fee_partition_of_poland.20.D: "You shouldn't be able to see this hidden event."
+  disaster_fee_partition_of_poland.20.OPT1: "Please report it to the team if you see it."
+
+  disaster_fee_partition_of_poland.21.T: "The May Constitution"
+  disaster_fee_partition_of_poland.21.D: "In a desperate bid to curtail the power of the nobility, some in the court have suggested that we bring together the battered and beleaguered Polish burgher class and grant them enough rights to balance out noble power. These old city rights, once called the Magdeburg Laws, would be restored and enshrined in a new constitution, dubbed the May Constitution. Understandably, however, the nobles strongly prefer the current constitution..."
+  disaster_fee_partition_of_poland.21.OPT1: "Enact the May Constitution!"
+  disaster_fee_partition_of_poland.21.OPT2: "Keep the Old Ways."
+
+  disaster_fee_partition_of_poland.22.T: "Partition of [From.GetName]"
+  disaster_fee_partition_of_poland.22.D: "The inability of the Poles to maintain a strong defense against us, combined with the promise of fertile and profitable land ripe for the taking, has created a golden opportunity for us. We must act quickly to take what we can. While we may find such an easy conquest distasteful, others will surely take advantage if we do not."
+  disaster_fee_partition_of_poland.22.OPT1: "Call Out the Troops!"
+
+  disaster_fee_partition_of_poland.23.T: "Polish Rebels"
+  disaster_fee_partition_of_poland.23.D: "You shouldn't be able to see this hidden event."
+  disaster_fee_partition_of_poland.23.OPT1: "Please report it to the team if you see it."
+
+  disaster_fee_partition_of_poland.24.T: "Kosciuszko Uprising"
+  disaster_fee_partition_of_poland.24.D: "In a last-ditch attempt to rid [From.GetName] of foreign invaders, a ragtag group of loyalists has banded together to take matters into their own hands and regain [From.GetName]'s territory."
+  disaster_fee_partition_of_poland.24.OPT1: "Crush Them!"
+
+ # Pasthun
+  disaster_fee_pashtun_uprising.1.T: "Pashtun Uprising"
+  disaster_fee_pashtun_uprising.1.D: "Since its founding in 1206, the [Root.GetName] [Root.GovernmentName] has been an often-precarious state. Built upon a Turkic invading force and based on a Sunni minority ruling a Hindu majority, the empire has always depended on maintaining a delicate balance between Turkic and Hindustani. While the Turco-Mongol invaders themselves are no longer the ruling dynasty, a class of foreign Pashtun nobles has never fully lost its influence. With the failure of [Root.Monarch.GetName] to either pacify or curtail these nobles, they have begun to mobilize their influence to once again take control of [Root.GetName] for themselves. Their chosen [Root.Monarch.GetTitle], a brother of the current, now leads men in open revolt. \n\n[Root.GetName] has weathered much instability in its past and always recovered, but this may prove its greatest test. Only time will tell if the current regime can survive as [Root.GetName] once again sees its land engulfed in turmoil..."
+  disaster_fee_pashtun_uprising.1.OPT1: "The more things change..."
+
+  disaster_fee_pashtun_uprising.2.T: "The [Root.GovernmentName] is Victorious"
+  disaster_fee_pashtun_uprising.2.D: "Although uprisings threatened to tear the [Root.GovernmentName] apart, [Root.Monarch.GetName] has managed to gather enough of both military strength and governmental capital to hold it together. While many inherent weaknesses remain, the [Root.Monarch.GetTitle] has secured [Root.Monarch.GetHerHis] rightful place as hegemon of Hindustan, and none now remain who can or will oppose him. Many of them have been killed, while the others, whether through fear, loyalty, or belief, now look to a brighter future for [Root.GetName]."
+  disaster_fee_pashtun_uprising.2.OPT1: "The worst is behind us."
+
+  disaster_fee_pashtun_uprising.3.T: "Trade Routes Abandoned"
+  disaster_fee_pashtun_uprising.3.D: "The instability sweeping the [Root.GovernmentName], as well as the diversion of the state treasury to deal with constant revolts, has led to a breakdown of the overland trade routes that are the lifeblood of [Root.GetName]'s economy. Plagued by bandits, many of its famous trade highways lie all but desolate, while merchants ply coasts further south in search of better profits. The traders of the Deccan, adept at caravanning, have encroached from the south, cutting further into profits to [Root.GetAdjective] coffers. With fewer and fewer sources of revenue, the [Root.GovernmentName] had better resolve its conflicts soon or face collapse."
+  disaster_fee_pashtun_uprising.3.OPT1: "This can't be good..."
+
+  disaster_fee_pashtun_uprising.4.T: "Rajput Revolts"
+  disaster_fee_pashtun_uprising.4.D: "Seizing the opportunity given by their Pashtun counterparts, the more southerly nobles of the Rajasthani plains have also decided to rise up against us!"
+  disaster_fee_pashtun_uprising.4.OPT1: "We will crush them!"
+
+  disaster_fee_pashtun_uprising.5.T: "Shortage of Gold and Silver"
+  disaster_fee_pashtun_uprising.5.D: "Traditionally, most of India's silver and gold bullion was imported from Burma and China. The collapse of trade resulting from the instability in [Root.GetName] has cut off this supply. In desperation to fund its army, the Sultans resorted to devaluation of their coinage, issuing the Billon Tanga instead of it's previous silver coins."
+  disaster_fee_pashtun_uprising.5.OPT1: "What could possibly go wrong?"
+
+  disaster_fee_pashtun_uprising.6.T: "Anarchy Spreads"
+  disaster_fee_pashtun_uprising.6.D: "With our inability to keep our own ruling class in check, the perception has spread that the [Root.Monarch.GetTitle] is unable to effectively rule [Root.Monarch.GetHerHis] diverse Indian subjects. Because of this, a willingness to revolt that was previously unknown has spread throughout the realm. This is especially strong in the border provinces of the Empire, with far less affinity for the [Root.Monarch.GetTitle] than peoples closer to the Imperial City itself have had."
+  disaster_fee_pashtun_uprising.6.OPT1: "Ingrates! I brought peace, justice, and freedom to my empire!"
+
+  disaster_fee_pashtun_uprising.7.T: "Autocracy Rejected"
+  disaster_fee_pashtun_uprising.7.D: "As one of the many grievances listed for the revolt, [Root.Monarch.GetName]'s autocratic tendencies and attempts to increase centralized control were especially prominent in [Root.Monarch.GetHerHis] rejection by the nobles. While those already in open revolt must either be surrendered to or put down by force, those still considering rebellion might be pacified if the [Root.Monarch.GetTitle] reverses course."
+  disaster_fee_pashtun_uprising.7.OPT1: "Appease them!"
+  disaster_fee_pashtun_uprising.7.OPT2: "I am [Root.Monarch.GetTitle], not them!"
+
+  disaster_fee_pashtun_uprising.8.T: "Popular Uprising"
+  disaster_fee_pashtun_uprising.8.D: "Since its birth in 1206, the [Root.GetName] [Root.GovernmentName], from succession to tax collection, has been founded primarily on military strength rather than either popular support, religious legitimacy, or any other more traditional means. Of course, in situations like our current disaster when the military strength of the [Root.GovernmentName] is sapped, the discontented people now take their opportunity to attempt their own overthrow. Some wish simply to bring down the regime, but some even attempt to bring about religious regime change. Taking advantage of the chaos, they have managed to raise an army against us."
+  disaster_fee_pashtun_uprising.8.OPT1: "Crush them!"
+
+  disaster_fee_pashtun_uprising.9.T: "Bureaucracy Collapses"
+  disaster_fee_pashtun_uprising.9.D: "The administration of [Root.GetName] was never a paragon of efficiency, but without a strong ruler or during times of crisis, it utterly collapsed. Taxes were left unpaid, censuses unconducted, and the court became ever more nepotistic as the societal structure broke down."
+  disaster_fee_pashtun_uprising.9.OPT1: "Meet the new boss, same as the old boss..."
+
+  disaster_fee_pashtun_uprising.10.T: "Afghani Problems"
+  disaster_fee_pashtun_uprising.10.D: "You shouldn't be able to see this hidden event."
+  disaster_fee_pashtun_uprising.10.OPT1: "Please report it to the team if you see it."
+
+  disaster_fee_pashtun_uprising.11.T: "Pashtun Nobles Request Aid"
+  disaster_fee_pashtun_uprising.11.D: "Spearheading the civil war in [From.GetName] are our distant cousins the Pashtun nobles of Hindustan. The ties of kinship run deep, and many in the court lent a sympathetic ear when a delegation of these nobles arrived in [Root.Capital.GetName] to beseech our aid. Despite our ties, mobilizing in their support is risky, and after all we owe them nothing... However, this could present an opportunity..."
+  disaster_fee_pashtun_uprising.11.OPT1: "We ride to war!"
+  disaster_fee_pashtun_uprising.11.OPT2: "Where were they when we needed their help?"
+
+  disaster_fee_pashtun_uprising.12.T: "[From.GetAdjective] Intervention"
+  disaster_fee_pashtun_uprising.12.D: "As a culturally [From.GetAdjective] class living among Hindustanis, the Pasthun nobility have never forgotten their roots. Because of this, they found a sympathetic ear in the [From.Monarch.GetTitle] of [From.GetName] for their rebellion. So sympathetic, in fact, that [From.GetName] now marches to war against us on their behalf!"
+  disaster_fee_pashtun_uprising.12.OPT1: "Let them come!"
+
+ #Zemene
+  disaster_fee_zemene_mesafint.1.T: "Zemene Mesafint"
+  disaster_fee_zemene_mesafint.1.D: "In the 18th century, the Empire of Ethiopia went through a period of numerous conflicts within its own borders. Having defeated it's rivals, the Empire was helpless against factions led by various princes of the realm as each sought to fight each other for power while the Emperor increasingly had little authority outside the capital. \n\nThe development of both culture and society stagnated during this period; additionally, it was time of increased religious strife both within the Coptic Orthodox Ethiopian Church as well as between Chrstians and Muslims in the realm."
+  disaster_fee_zemene_mesafint.1.OPT1: "We must preserve the empire!"
+
+  disaster_fee_zemene_mesafint.2.T: "The End of an Era"
+  disaster_fee_zemene_mesafint.2.D: "At long last, the Era of the Princes is over. A new and reformed monarchy is back in power, and [Root.GetName] can finally enter the modern age and leave behind its inner struggles."
+  disaster_fee_zemene_mesafint.2.OPT1: "Let us rebuild this land..."
+
+  disaster_fee_zemene_mesafint.3.T: "Princes Demand the Right to Rule"
+  disaster_fee_zemene_mesafint.3.D: "Even at the worst, the ruling dynasty of [Root.GetName] maintained a near-legendary status, being chosen directly by God in the minds of both commoner and noble. While the integrity of the dynasty was never questioned, many of the local princes claimed divine ordination in their own right, and were willing to seize such right to rule by force during this period."
+  disaster_fee_zemene_mesafint.3.OPT1: "Crush them!"
+  disaster_fee_zemene_mesafint.3.OPT2: "Attempt Negotiations."
+  disaster_fee_zemene_mesafint.3.OPT3: "Give in to their demands."
+
+  disaster_fee_zemene_mesafint.4.T: "Succession Crisis"
+  disaster_fee_zemene_mesafint.4.D: "While none seriously questioned the right of the ruling dynasty to rule, [Root.GetName]'s complex succession system was prey to there being numerous contenders from within the same royal house. In a period of instability, noble factions often supported one contender over another with the implicit promise, that, once in power, they would be favorites."
+  disaster_fee_zemene_mesafint.4.OPT1: "How dare they?"
+
+  disaster_fee_zemene_mesafint.5.T: "Rise of Empress Mentewab"
+  disaster_fee_zemene_mesafint.5.D: "Faced with the lack of imperial authority, the Queen Mother of the latest Emperor has risen to prominence in [Root.Capital.GetName]. In an unprecedented move, she has requested the Patriarch to be crowned Empress to ensure the continuing stability of the empire. Historically, Mentewab was the first female ruler of Ethiopia's long history, and an able ruler who helped Ethiopia recover from years of decline."
+  disaster_fee_zemene_mesafint.5.OPT1: "Crown her Itege at once!"
+  disaster_fee_zemene_mesafint.5.OPT2: "Refuse this upstart!"
+
+  disaster_fee_zemene_mesafint.6.T: "Regional Conflicts"
+  disaster_fee_zemene_mesafint.6.D: "As centralized authority continues to decay, the diverse nationalities that make up the empire have become increasingly disloyal. Areas that have accepted imperial rule for centuries are now seeking to claim their own independence..."
+  disaster_fee_zemene_mesafint.6.OPT1: "A minor inconvenience..."
+
+  disaster_fee_zemene_mesafint.7.T: "[Root.Monarch.GetTitle] Assasinated!"
+  disaster_fee_zemene_mesafint.7.D: "In a stunning turn of events that rocked not only the capital but sent shock-waves throughout East Africa, the [Root.Monarch.GetTitle] was brutally killed in the palace today. Prior to this period of conflict, this was unheard of in the empire. News of the first killings, indeed, sparked a national outcry that anyone would raise a hand against the Lord's Annointed. Now, however, with different factions vying for the throne this only opens the floodgates to further killings and unrest."
+  disaster_fee_zemene_mesafint.7.OPT1: "Dark Times are ahead of us."
+
+  disaster_fee_zemene_mesafint.8.T: "The End of Absolute Monarchy?"
+  disaster_fee_zemene_mesafint.8.D: "With their belief that the [Root.Monarch.GetTitle] was God's Chosen, it was only natural that the European philosophy of absolutism found open ears in [Root.GetName]. However, this theory seems increasingly unworkable during the current conflict."
+  disaster_fee_zemene_mesafint.8.OPT1: "The Age of Kings is over..."
+  disaster_fee_zemene_mesafint.8.OPT2: "I am the Senate!"
+
+  disaster_fee_zemene_mesafint.9.T: "Rise of the Wara Sheh Dynasty"
+  disaster_fee_zemene_mesafint.9.D: "While none aspired to seize the formal title of Emperor, there were families who wished to rule in all but name. One of the more prominent from the province of Yejju was the Wara Sheh. Due to their influence wielded in [Root.GetName] for a period of over 70 years, they are often called the Wara Sheh dynasty."
+  disaster_fee_zemene_mesafint.9.OPT1: "Accept their rule and influence."
+  disaster_fee_zemene_mesafint.9.OPT2: "Crush these upstarts!"
+
+ #Mughal
+  disaster_fee_crisis_of_the_mughal_empire.1.T: "Crisis of the Mughal Empire"
+  disaster_fee_crisis_of_the_mughal_empire.1.D: "Not since the days of Chandragupta has any empire laid such a legitimate claim to Master of India. However, the Great Mughal Empire now faces a crisis. The actions of [Root.Monarch.GetName] have been inadequate and indeed outright harmful to the rule over India. Discontent has spread like wildfire, and the decay of the once-peerless Mughal administration has undermined the very foundations of the empire. Without strong leadership, none can claim to rule India."
+  disaster_fee_crisis_of_the_mughal_empire.1.OPT1: "Can we survive?"
+
+  disaster_fee_crisis_of_the_mughal_empire.2.T: "The Empire Victorious"
+  disaster_fee_crisis_of_the_mughal_empire.2.D: "We have survived the greatest challenge yet to our rule, and we have come out stronger for it!"
+  disaster_fee_crisis_of_the_mughal_empire.2.OPT1: "Order is Restored at Last!"
+
+  disaster_fee_crisis_of_the_mughal_empire.3.T: "Disloyalty in the Army"
+  disaster_fee_crisis_of_the_mughal_empire.3.D: "Once a disciplined and awe-inspiring force, the [Root.GetAdjective] armies have become weak and defective. The old levy system, which inspired fierce loyalty and made organization easy in the early days of the empire, proved inadequate to face the challenges of large-scale imperial rule. The nobles who once proved capable leaders have become decadent and selfish, the distance between the capital and the front weakened the bonds that once united soldier and emperor, and scheming nobles began to use their contingents as personal retinues at the expense of Imperial effectiveness."
+  disaster_fee_crisis_of_the_mughal_empire.3.OPT1: "We don't have time for this..."
+
+  disaster_fee_crisis_of_the_mughal_empire.4.T: "Discontent Among the Hindu"
+  disaster_fee_crisis_of_the_mughal_empire.4.D: "The [Root.GetAdjective] [Root.GovernmentName] was founded on religious tolerance of the Dharmic faiths. It would not, in fact, be unfair to say that the empire could never have even began without the generous privileges granted to the Hindu and Sikh faiths by Akbar and other early emperor. Later rulers, however, seemed to have forgotten that most of their population were not followers of Islam. Reimposing the hated jizya tax, barring Hindus from coveted court positions, attempting forcible conversion, and even burning temples, they quickly turned the people against them."
+  disaster_fee_crisis_of_the_mughal_empire.4.OPT1: "They are only kafir..."
+
+  disaster_fee_crisis_of_the_mughal_empire.5.T: "Degeneration of the Nobility"
+  disaster_fee_crisis_of_the_mughal_empire.5.D: "The original military ruling class of the empire were hardened Afghani warriors. Their descendants are shadows of that former glory. Lulled by the wealth and leisure of India, they became slothful, and debauched. Many spent more time in their harems than anywhere else, and felt no need nor loyalty to aid the empire as a whole."
+  disaster_fee_crisis_of_the_mughal_empire.5.OPT1: "Disgraceful!"
+
+  disaster_fee_crisis_of_the_mughal_empire.6.T: "Economic Collapse"
+  disaster_fee_crisis_of_the_mughal_empire.6.D: "While the peace and stability of the early empire brought relative prosperity, the [Root.GetAdjective] [Root.GovernmentName] had never truly encouraged economic growth. Focusing on the urban centers that made and sold luxury goods abroad, the administration mostly ignored the rest of the country, treating it as a source of quick tax revenue. This caused a wider economic stagnation, but recent tax increases by an increasingly desperate imperial treasury have instigated full-on economic collapse. Demanding as much as one-half of the harvest, tax collectors caused farmers to overwork the land leading to soil depletion, and the [Root.GetAdjective] treasury began for the first time in its history to consider bankruptcy."
+  disaster_fee_crisis_of_the_mughal_empire.6.OPT1: "What else could we do?"
+
+  disaster_fee_crisis_of_the_mughal_empire.7.T: "[Root.GetAdjective] Peasants Rise Up"
+  disaster_fee_crisis_of_the_mughal_empire.7.D: "The [Root.GetAdjective] dynasty relied heavily on the taxation of harvests directly from the farming castes. Not only did this disproportionately affect and impoverish the farmers, but also was subject to the whims of climate and weather. The instability of the empire combined with poverty from these taxes has finally pushed the peasantry passed the breaking point. Forming into roving bands of robbers, they react against the law and order of the empire."
+  disaster_fee_crisis_of_the_mughal_empire.7.OPT1: "The Peasants are Revolting!"
+
+  disaster_fee_crisis_of_the_mughal_empire.8.T: "Jains Demand Support"
+  disaster_fee_crisis_of_the_mughal_empire.8.D: "The Jains, although a small religious minority, proved a vital part of the [Root.GetAdjective]'s extensive administration. As money managers, loan offerors, and bankers, their support was needed more than ever in hard times. \n\nFeeling insecure in their positions and our ability to pay as instability engulfs the empire, the Jains have confronted us demanding that we pay them upfront for their services."
+  disaster_fee_crisis_of_the_mughal_empire.8.OPT1: "We must accept."
+  disaster_fee_crisis_of_the_mughal_empire.8.OPT2: "Refuse!"
+
+  disaster_fee_crisis_of_the_mughal_empire.9.T: "Mutiny in the Army"
+  disaster_fee_crisis_of_the_mughal_empire.9.D: "In addition to creating fragmentation and competing loyalties, the overgrown levy system has resulted in the soldiery, many of whom are essentially mercenaries, to not be paid. Because of this, the army increasingly lacks fighting morale as well as discipline."
+  disaster_fee_crisis_of_the_mughal_empire.9.OPT1: "Dogs!"
+
+  disaster_fee_crisis_of_the_mughal_empire.10.T: "Lack of Officers"
+  disaster_fee_crisis_of_the_mughal_empire.10.D: "The decadence of the nobility has resulted in a shortage of good officers. In addition, many of those who were capable have been killed, either on the battlefield or as the result of vile plots from jealous rivals."
+  disaster_fee_crisis_of_the_mughal_empire.10.OPT1: "Who now will lead our forces?"
+
+  disaster_fee_crisis_of_the_mughal_empire.11.T: "Rajput Rebellion"
+  disaster_fee_crisis_of_the_mughal_empire.11.D: "One of the more astute moves of the early emperors, in addition to tolerance of the Hindus, was their respect for and working relationship with the Rajputs. Later rulers, however, sought to reduce the Rajputs' independence. A foolish move, for the Rajputs still controlled much of the Indian armed forces. Now, they seek full independence for themselves!"
+  disaster_fee_crisis_of_the_mughal_empire.11.OPT1: "The Mughals, and they alone, Rule India!"
+
+  disaster_fee_crisis_of_the_mughal_empire.12.T: "Sharia Restrictions Backfire"
+  disaster_fee_crisis_of_the_mughal_empire.12.D: "The hard-line Islamic rule of [Root.Monarch.GetName] has not only angered the non-Muslims of the realm, of which there are plenty. In fact, the harsh rules supported by radical clerics go so far as to ban many cultural activities. The use of musical instruments, the performance of theater, and even the musical recitation of Islamic poetry has all been attacked by the clergy, and [Root.Monarch.GetName]'s actions to ban these things have made even most Muslims rebel against the harsh new way of life."
+  disaster_fee_crisis_of_the_mughal_empire.12.OPT1: "Let them enjoy their worldly pleasures."
+  disaster_fee_crisis_of_the_mughal_empire.12.OPT2: "Kill all who defy Allah!"
+
+  disaster_fee_crisis_of_the_mughal_empire.13.T: "Nobles Revolt!"
+  disaster_fee_crisis_of_the_mughal_empire.13.D: "Tired of the inability of the empire to provide for them in the way in which they are accustomed, nobles have mustered their own forces to revolt against us!"
+  disaster_fee_crisis_of_the_mughal_empire.13.OPT1: "They will swear allegiance or be destroyed!"
+
+  disaster_fee_crisis_of_the_mughal_empire.14.T: "Succession Problems"
+  disaster_fee_crisis_of_the_mughal_empire.14.D: "Unlike other older states, the [Root.GetAdjective] [Root.GovernmentName] lacked a set rule of succession and ignored primogeniture. While this could result in more capable rulers overall, it also risked succession crises and disputes. During times like this of instability, pretenders are more rife than ever."
+  disaster_fee_crisis_of_the_mughal_empire.14.OPT1: "I will show them who is Emperor!"
+
+  disaster_fee_crisis_of_the_mughal_empire.15.T: "Corruption in Administration"
+  disaster_fee_crisis_of_the_mughal_empire.15.D: "Once a beacon of efficient and loyal administration, the bureaucrats of our nation now take bribes on the regular and work not for us but for themselves."
+  disaster_fee_crisis_of_the_mughal_empire.15.OPT1: "Disgusting!"
+
+ #Italy 
+  disaster_fee_italy_republican_matter.1.T: "A Republican Matter"
+  disaster_fee_italy_republican_matter.1.D: "The newly founded state has been struggling with the government organization and trying to meet the demand of its citizen with the authority given by the tradition of old."
+  disaster_fee_italy_republican_matter.1.OPT1: "We must be careful"
+
+  disaster_fee_italy_republican_matter.2.T: "A New State"
+  disaster_fee_italy_republican_matter.2.D: "There they stood who fought valiantly for their ideals. There they stood who fought heroically for a new day. Their last breath was clear \"Will we feel the power of freedom with the dawn of a new day?\". \nThis decision is now ours to take."
+  disaster_fee_italy_republican_matter.2.OPT1: "A new Constitution"
+  disaster_fee_italy_republican_matter.2.OPT2: "The king reigns but does not rule"
+  disaster_fee_italy_republican_matter.2.OPT3: "Why should we change?"
+
+  disaster_fee_italy_republican_matter.3.T: "Giovine Italia"
+  disaster_fee_italy_republican_matter.3.D: "The goal of these revolutionaries is to transform Italy into a unitary democratic republic, according to the principles of freedom, independence and unity, by dismissing the governments of the previous pre-unification states."
+  disaster_fee_italy_republican_matter.3.OPT1: "They won't win"
+
+  disaster_fee_italy_republican_matter.4.T: "King's Aider"
+  disaster_fee_italy_republican_matter.4.D: "A republic in our land? I think not. We have dismissed so many other republic when they rose against the Viceroys, and we will defy this one as well."
+  disaster_fee_italy_republican_matter.4.OPT1: "They won't win"
+
+ #Dutch
+  disaster_fee_netherlands_rampjaar.1.T: "Rampjaar"
+  disaster_fee_netherlands_rampjaar.1.D: "A combination of external threats, internal strife, and incompetent leadership has created a perfect storm in the Netherlands. The very survival of the Dutch nation is at risk, and parties lamenting the end of our independence and prosperity have labelled it thusly: the Dutch people are redeloos ("irrational"), our government is radeloos ("distraught"), and the country is reddeloos ("beyond salvation")."
+  disaster_fee_netherlands_rampjaar.1.OPT1: "Disastrous!"
+
+  disaster_fee_netherlands_rampjaar.2.T: "The Rampjaar has Ended"
+  disaster_fee_netherlands_rampjaar.2.D: "Much damage has been done, but the perfect storm that threatened the downfall of our nation itself has dissipated. Now the work of rebuilding must begin."
+  disaster_fee_netherlands_rampjaar.2.OPT1: "Now thank we all our God!"
+
+  disaster_fee_netherlands_rampjaar.3.T: "[Root.Monarch.GetName] and the Mob"
+  disaster_fee_netherlands_rampjaar.3.D: "Discontent with the dire situation of the Netherlands has led to a search for scapegoat among the populace. The incompetent rule of [Root.Monarch.GetName] made both him and his cabinet a natural target of the people's anger. A plot was quickly devised to rid the nation of their influence. Using a staged peasant revolt as a diversion to distract the Stadtholder's guards, [Root.Monarch.GetName] as well as his brother were seized by a gathered crowd in [Root.Capital.GetName], including the town militia. \nFollowing their seizure by the mob, an unanticipated and truly ghastly scene unfolded, as the brothers were brutally murdered by the mob. Their naked, mutilated bodies were then strung up and paraded by the crowd, and their livers were even eaten by the mob in a cannibalistic frenzy. Through it all, the mob remained remarkably organized and disciplined, leading many to doubt that such a scene, horrid as it was, could have been unplanned. This realization prompted the entire cabinet to flee the country in fear for their own lives. This event would be remembered as one of the darkest hours in Dutch history."
+  disaster_fee_netherlands_rampjaar.3.OPT1: "A black day in our history!"
+
+  disaster_fee_netherlands_rampjaar.4.T: "Panic in the Netherlands"
+  disaster_fee_netherlands_rampjaar.4.D: "The turmoil our nation is experiencing has undermined the certainty and stability that provided the Netherlands with one of it's main economic advantages for decades. Especially, it gave Dutch ports the reputation of being safe ports where commercial and property rights were protected. Merchants have begun to shy away from our ports because of this loss of stability, leading to a widespread concern among citizens of an economic downturn. These concerns have rapidly turned into complete panic, and in several cities rioting and looting has broken out."
+  disaster_fee_netherlands_rampjaar.4.OPT1: "Order must be restored!"
+
+  disaster_fee_netherlands_rampjaar.5.T: "Orangist Coup"
+  disaster_fee_netherlands_rampjaar.5.D: "Taking advantage of the chaos caused by this disaster, the house of Oranje, having long been jealous of competing political forces, seek to scapegoat their political enemies and secure their own power."
+  disaster_fee_netherlands_rampjaar.5.OPT1: "Heed the Orangists!"
+  disaster_fee_netherlands_rampjaar.5.OPT2: "Ignore these rabble-rousers!"
+
+  disaster_fee_netherlands_rampjaar.6.T: "Imperial Intervention"
+  disaster_fee_netherlands_rampjaar.6.D: "Although the Netherlands seceded from the Holy Roman Empire upon its formation, the Emperor has never forgotten his claim on our lands. However, ever has the Empire favored diplomacy over direct confrontation, and our current predicament has presented the opportunity of a lifetime for Imperial diplomacy. \nThe Emperor has approached us offering his protection in exchange for our commitment to aid him in the future against his own enemies. While this may result in a valuable alliance and military aid in a desperate situation, this also compromises our own diplomatic independence."
+  disaster_fee_netherlands_rampjaar.6.OPT1: "Accept this deal!"
+  disaster_fee_netherlands_rampjaar.6.OPT2: "We have never needed the Empire!"
+
+  disaster_fee_netherlands_rampjaar.7.T: "Disloyalty in the Army"
+  disaster_fee_netherlands_rampjaar.7.D: "Discouraged by our inability to maintain order, many in the army are deserting, and the ones that remain are demoralized and fail to even maintain even basic order in their ranks. Their officers mostly do not attempt to remedy this, being demoralized themselves, and even those who do are unable to break the apathy that has descended on the army like a dark cloud."
+  disaster_fee_netherlands_rampjaar.7.OPT1: "Something must be done!"
+
+  disaster_fee_netherlands_rampjaar.8.T: "Economic Downturn"
+  disaster_fee_netherlands_rampjaar.8.D: "The turmoil our nation is experiencing has undermined the certainty and stability that provided the Netherlands with one of it's main economic advantages for decades. Especially, it gave Dutch ports the reputation of being safe ports where commercial and property rights were protected. \nWith foreign trade being the very life-blood of our economy, this withdrawal has undermined our entire economic base. As the effect of this ripples throughout our economy, it will inevitably do severe and possibly irreversible damage to us."
+  disaster_fee_netherlands_rampjaar.8.OPT1: "There is nothing we can do"
+
+  disaster_fee_netherlands_rampjaar.9.T: "More Economic Downturn"
+  disaster_fee_netherlands_rampjaar.9.D: "The chaos caused by our inner turmoil has reduced our ability to compete in trade. This, as well as the instability itself, has had catastrophic effects on our production of goods as well, for both domestic and foreign trade."
+  disaster_fee_netherlands_rampjaar.9.OPT1: "What else could go wrong?"
+
+ # Modifiers:
+ fee_portuguese_succession_crisis_chaste_king: "Chaste King"
+ desc_fee_portuguese_succession_crisis_chaste_king: ""
+ fee_portuguese_succession_crisis_invasion_imminent: "Spanish Invasion Imminent"
+ desc_fee_portuguese_succession_crisis_invasion_imminent: ""
+ fee_portuguese_succession_crisis_resolved: "Succession Crisis Resolved"
+ desc_fee_portuguese_succession_crisis_resolved: ""
+
+ fee_decline_of_the_ottomans_tanzimat: "Tanzimat"
+ desc_fee_decline_of_the_ottomans_tanzimat: ""
+ fee_decline_of_the_ottomans_illiterate: "Illiterate"
+ desc_fee_decline_of_the_ottomans_illiterate: ""
+ fee_decline_of_the_ottomans_timar_system_failure: "Timar System Failure"
+ desc_fee_decline_of_the_ottomans_timar_system_failure: ""
+ fee_decline_of_the_ottomans_ottoman_trade_decline: "Ottoman Trade Decline"
+ desc_fee_decline_of_the_ottomans_ottoman_trade_decline: ""
+ fee_decline_of_the_ottomans_economic_adjustments: "Economic Adjustments"
+ desc_fee_decline_of_the_ottomans_economic_adjustments: ""
+ fee_decline_of_the_ottomans_price_controls: "Price Controls"
+ desc_fee_decline_of_the_ottomans_price_controls: ""
+ fee_decline_of_the_ottomans_starving_poor: "Starving Poor"
+ desc_fee_decline_of_the_ottomans_starving_poor: ""
+ fee_decline_of_the_ottomans_increased_openness: "Increased Openness"
+ desc_fee_decline_of_the_ottomans_increased_openness: ""
+ fee_decline_of_the_ottomans_closed_borders: "Closed Borders"
+ desc_fee_decline_of_the_ottomans_closed_borders: ""
+ fee_decline_of_the_ottomans_hungarian_separatism: "Hungarian Separatism"
+ desc_fee_decline_of_the_ottomans_hungarian_separatism: ""
+ fee_decline_of_the_ottomans_hayduks: "Hayduks"
+ desc_fee_decline_of_the_ottomans_hayduks: ""
+ fee_decline_of_the_ottomans_greek_freedom_fighters: "Greek Freedom Fighters"
+ desc_fee_decline_of_the_ottomans_greek_freedom_fighters: ""
+
+ fee_division_of_the_habsburg_monarchy_new_habsburg_monarchy: "New Habsburg Monarchy"
+ desc_fee_division_of_the_habsburg_monarchy_new_habsburg_monarchy: ""
+ fee_division_of_the_habsburg_monarchy_restored_habsburg_monarchy: "Restored Habsburg Monarchy"
+ desc_fee_division_of_the_habsburg_monarchy_restored_habsburg_monarchy: ""
+ fee_division_of_the_habsburg_monarchy_diplomatic_efforts: "Diplomatic Efforts"
+ desc_fee_division_of_the_habsburg_monarchy_diplomatic_efforts: ""
+ fee_division_of_the_habsburg_monarchy_reunification_wars: "Reunification Wars"
+ desc_fee_division_of_the_habsburg_monarchy_reunification_wars: ""
+ fee_division_of_the_habsburg_monarchy_forcible_annexation: "Forcible Annexation"
+ desc_fee_division_of_the_habsburg_monarchy_forcible_annexation: ""
+ fee_division_of_the_habsburg_monarchy_generous_peace: "Generous Peace"
+ desc_fee_division_of_the_habsburg_monarchy_generous_peace: ""
+ fee_division_of_the_habsburg_monarchy_accelerated_reintegration: "Accelerated Reintegration"
+ desc_fee_division_of_the_habsburg_monarchy_accelerated_reintegration: ""
+ fee_division_of_the_habsburg_monarchy_fair_treatment: "Fair Treatment"
+ desc_fee_division_of_the_habsburg_monarchy_fair_treatment: ""
+ fee_division_of_the_habsburg_monarchy_bohemian_crown_hab: "The Bohemian Crown"
+ desc_fee_division_of_the_habsburg_monarchy_bohemian_crown_hab: ""
+ fee_division_of_the_habsburg_monarchy_bohemian_crown_boh: "The Bohemian Crown"
+ desc_fee_division_of_the_habsburg_monarchy_bohemian_crown_boh: ""
+ fee_division_of_the_habsburg_monarchy_benevolent_rulership: "Bevevolent Rulership"
+ desc_fee_division_of_the_habsburg_monarchy_benevolent_rulership: ""
+
+ fee_partition_of_poland_survived_partition: "Survived Partition"
+ desc_fee_partition_of_poland_survived_partition: ""
+ fee_partition_of_poland_fight_for_danzig: "Fight for Danzig"
+ desc_fee_partition_of_poland_fight_for_danzig: ""
+ fee_partition_of_poland_liberty_of_the_peasantry: "Liberty of the Peasantry"
+ desc_fee_partition_of_poland_liberty_of_the_peasantry: ""
+ fee_partition_of_poland_trade_dried_up: "Trade Dried Up"
+ desc_fee_partition_of_poland_trade_dried_up: ""
+ fee_partition_of_poland_support_from_the_burghers: "Support from the Burghers"
+ desc_fee_partition_of_poland_support_from_the_burghers: ""
+
+ fee_pashtun_uprising_delhi_rule_confirmed: "Delhi Rule Confirmed"
+ desc_fee_pashtun_uprising_delhi_rule_confirmed: ""
+ fee_pashtun_uprising_abandoned_trade_routes: "Abandoned Trade Routes"
+ desc_fee_pashtun_uprising_abandoned_trade_routes: ""
+ fee_pashtun_uprising_pacified: "Pacified"
+ desc_fee_pashtun_uprising_pacified: ""
+ fee_pashtun_uprising_invasion_of_india: "Invasion of India"
+ desc_fee_pashtun_uprising_invasion_of_india: ""
+
+ fee_zemene_mesafint_modern_empire: "Modern Empire"
+ desc_fee_zemene_mesafint_modern_empire: ""
+ fee_zemene_mesafint_wara_sheh_dynasty: "Wara Sheh Dynasty"
+ desc_fee_zemene_mesafint_wara_sheh_dynasty: ""
+
+ fee_crisis_of_the_mughal_empire_weakened_army: "Weakened Army"
+ desc_fee_crisis_of_the_mughal_empire_weakened_army: ""
+ fee_crisis_of_the_mughal_empire_mughal_economic_collapse: "Mughal Economic Collapse"
+ desc_fee_crisis_of_the_mughal_empire_mughal_economic_collapse: ""
+ fee_crisis_of_the_mughal_empire_unpaid_army: "Unpaid Army"
+ desc_fee_crisis_of_the_mughal_empire_unpaid_army: ""
+
+ fee_disaster_netherlands_survived_rampjaar: "Survived Rampjaar"
+ desc_fee_disaster_netherlands_survived_rampjaar: ""
+ fee_disaster_netherlands_paralyzed_army: "Paralyzed Army"
+ desc_fee_disaster_netherlands_paralyzed_army: ""
+ fee_disaster_netherlands_trade_advantage_lost: "Trade Advantage Lost"
+ desc_fee_disaster_netherlands_trade_advantage_lost: ""
+ fee_disaster_netherlands_more_economic_downturn: "More Economic Downturns"
+ desc_fee_disaster_netherlands_more_economic_downturn: ""
+
+ # Opinion Modifiers:
+ fee_portuguese_succession_crisis_acceptance: "Holy Father Accepted"
+ fee_portuguese_succession_crisis_rejection: "Holy Father Refused"
+ fee_portuguese_succession_crisis_involvement: "Spanish Involvement"
+ fee_portuguese_succession_crisis_grateful: "Grateful"
+
+ fee_decline_of_the_ottomans_greece_opinion: "Supported Our Independence"
+ fee_decline_of_the_ottomans_aided_us_opinion: "Aided Us"
+ fee_decline_of_the_ottomans_sent_aid_opinion: "Sent Aid"
+
+ fee_division_of_the_habsburg_monarchy_acceptance: "Accepted Proposal"
+
+ fee_partition_of_poland_black_eagles_alliance_opinion: "Black Eagles"
+
+ fee_disaster_netherlands_cannibals: "Cannibals"
+
+ # Flags
+  had_fee_netherlands_rampjaar: "Rampjaar"
+
+ # Rebels
+  ita_republican_rebels_title: "Giovine Italia"
+  ita_republican_rebels_name: "Giovine Italia"
+  ita_republican_rebels_desc: "The goal of these revolutionaries is to transform Italy into a unitary democratic republic, according to the principles of freedom, independence and unity, by dismissing the governments of the previous pre-unification states."
+  ita_republican_rebels_demand: "Install a Constitutional Republic"
+  ita_republican_rebels_demand_desc: "These Republican rebels fight to overthrow the government and install a constitutional republic where the citiziens will be protected by any oppression."
+  ita_republican_rebels_army: "Armata di Giovine Italia"
+
+  ita_monarchy_rebels_title: "Monarchici"
+  ita_monarchy_rebels_name: "Monarch Aider"
+  ita_monarchy_rebels_desc: "A republic in our land? I think not. We have dismissed so many other republic when they rose against the Viceroys, and we will defy this one as well."
+  ita_monarchy_rebels_demand: "Install a Parliamentary Monarchy"
+  ita_monarchy_rebels_demand_desc: "These Monarchy rebels fight to overthrow the government and install a parliamentary monarchy where the rule will reign supreme."
+  ita_monarchy_rebels_army: "Armata dei Monarchici"
+
+ # Estate Modifiers:
+ EST_VAL_FEE_PARTITION_OF_POLAND_CONFEDERATION_OF_BAR: "Confederation of Bar: §Y$VAL$%§!"
+ EST_VAL_FEE_PARTITION_OF_POLAND_THE_MAY_CONSTITUTION: "May Constitution: §Y$VAL$%§!"
+ EST_VAL_FEE_ZEMENE_MESAFINT_REFUSED_RIGHTS: "Demand for Rights Refused: §Y$VAL$%§!"
+ EST_VAL_FEE_ZEMENE_MESAFINT_NEGOTIATIONS: "Demand for Rights Negotiated: §Y$VAL$%§!"
+ EST_VAL_FEE_ZEMENE_MESAFINT_FULLFILLED_DEMANDS: "Demands for Rights Fulfilled: §Y$VAL$%§!"
+
+ # Casus Bellis:
+ cb_fee_partition_of_poland: "Partition of Poland"
+ cb_fee_partition_of_poland_desc: "They are weak, we must strike and partition them between us and their other neighbors now."
+
+ # War Goals:
+ fee_partition_of_poland_war_goal: "Take Capital"
+ fee_partition_of_poland_war_goal_desc: "The war goal is to conquer their capital."
+ FEE_PARTITION_OF_POLAND_WAR_NAME: "$ORDER$ $FIRST$ War of $SECOND$ Partition"
+
+ # Tooltips:
+ PORTUGUESE_SUCCESSION_CRISIS_BREAK_ALLIANCE_WITH_POR_TT: "§Y[Root.GetName]§! breaks their alliance with §Y[From.GetName]§!."
+ PORTUGUESE_SUCCESSION_CRISIS_NEW_RULER_WILL_GAIN_INFERTILE_TRAIT_TT: "He will gain the §YInfertile§! trait.\n"
+
+ HAD_FEE_DECLINE_OF_THE_OTTOMANS_FOR_15_YEARS_TT: "Had the '§YDecline of the Ottomans§!' disaster for at least §Y15 years§!"
+
+ FEE_DIVISION_OF_THE_HABSBURG_MONARCHY_RULING_HABSBURGS_TT: "The ruling dynasty is '§Yvon Habsburg§!'"
+ FEE_DIVISION_OF_THE_HABSBURG_MONARCHY_NOT_RULING_HABSBURGS_TT: "The ruling dynasty is NOT '§Yvon Habsburg§!'"
+ FEE_DIVISION_OF_THE_HABSBURG_MONARCHY_HEIR_STATS_LESS_THAN_8_TT: "Heir has either less than §Y1§! in any skill or all skills combined are less than §Y8§!"
+ FEE_DIVISION_OF_THE_HABSBURG_MONARCHY_HAS_PUS_TT: " §YPersonal Unions§! (or a similar subject type)"
+ HAD_FEE_DIVISION_OF_THE_HABSBURG_MONARCHY_FOR_15_YEARS_TT: "Had the '§YDivision of the Habsburg Monarchy§!' disaster for at least §Y15 years§!"
+ HAD_FEE_DIVISION_OF_THE_HABSBURG_MONARCHY_FOR_30_YEARS_TT: "Had the '§YDivision of the Habsburg Monarchy§!' disaster for at least §Y30 years§!"
+ FEE_DIVISION_OF_THE_HABSBURG_MONARCHY_OWNS_AUSTRIA_AND_OTHER_AREAS_TT: "All provinces in the following areas are owned by §Y[Root.GetName]§! or its non-tributary subjects: §YInner Austria§!, §YAustria Proper§!, §YTirol§!, §YBohemia§! and §YTransdanubia§!"
+ FEE_DIVISION_OF_THE_HABSBURG_MONARCHY_OWNS_AUSTRIA_TT: "All provinces in the following areas are owned by §Y[Root.GetName]§! or its non-tributary subjects: §YInner Austria§!, §YAustria Proper§! and §YTirol§!"
+ FEE_DIVISION_OF_THE_HABSBURG_MONARCHY_THIS_IS_RELEASED_AS_FREE_TT: "@[This.GetTag] §Y[This.GetName]§! is released as a free nation."
+ FEE_DIVISION_OF_THE_HABSBURG_MONARCHY_THIS_IS_RELEASED_AS_VASSAL_TT: "@[This.GetTag] §Y[This.GetName]§! is released as our vassal."
+ FEE_DIVISION_OF_THE_HABSBURG_MONARCHY_ELECTOR_BACKS_STY_FOR_EMPEROR_TT: "We will support @STY §Y[STY.GetName]§! as the Emperor. \n@STY §Y[STY.GetName]§! will become Emperor soon, if they are eligible for the Emperor title and at least §Y3§! other Electors supported them. \nOtherwise @[From.GetTag] §Y[From.GetName]§! will stay Emperor."
+ FEE_DIVISION_OF_THE_HABSBURG_MONARCHY_STY_BECOMES_EMPEROR_TT: "@STY §Y[STY.GetName]§! becomes the §YHoly Roman Emperor§!."
+ FEE_DIVISION_OF_THE_HABSBURG_MONARCHY_RIVALS_MAY_JOIN_VASSAL_IN_WAR_TT: "Our §Yrivals§! may join them in their §YIndependence War§!."
+ FEE_DIVISION_OF_THE_HABSBURG_MONARCHY_SOUTH_GERMANS_MAY_JOIN_VASSAL_IN_WAR_TT: "Independent countries in §YSouth Germany§! may join them in their §YIndependence War§!."
+
+ FEE_PARTITION_OF_POLAND_NO_VALID_NEIGHBOR_COUNTRY_TT: "There is no strong enough independent neighbor country that is neither allied to nor has a truce with §Y[Root.GetName]§!"
+ FEE_PARTITION_OF_POLAND_WAR_WITH_VALID_NEIGHBOR_COUNTRY_M10_WS_TT: "Losing a war against a strong and independent neighbor country (less than §Y-10%§! war score)"
+ FEE_PARTITION_OF_POLAND_WAR_WITH_VALID_NEIGHBOR_COUNTRY_M25_WS_TT: "Heavily losing a war against a strong and independent neighbor country (less than §Y-25%§! war score)"
+ FEE_PARTITION_OF_POLAND_WAR_WITH_VALID_NEIGHBOR_COUNTRY_BETWEEN_25_WS_TT: "Winning a war against a strong and independent neighbor country (at least §Y25%§! war score)"
+ FEE_PARTITION_OF_POLAND_HAD_DISASTER_FOR_5_YEARS_TT: "Had the '§YPartition of Poland?§!' disaster for at least §Y5 years§!"
+ FEE_PARTITION_OF_POLAND_BLACK_EAGLES_ALLIANCE_REMOVE_RIVALS_TT: "\nAny potential rivalries between @PRU §Y[PRU.GetName]§!, @HAB §Y[HAB.GetName]§! and @RUS §Y[RUS.GetName]§! are removed."
+ FEE_PARTITION_OF_POLAND_BLACK_EAGLES_ALLIANCE_TT: "@PRU §Y[PRU.GetName]§!, @HAB §Y[HAB.GetName]§! and @RUS §Y[RUS.GetName]§! enter an alliance with each other."
+
+ HAD_FEE_PASHTUN_UPRISING_FOR_2_YEARS_TT: "Had the '§YPashtun Uprising§!' disaster for at least §Y2 years§!"
+ DISASTER_FEE_PASHTUN_UPRISING.7.TT: "\nEvery owned province: \nGain §R+20.00%§! Local Autonomy."
+
+ FEE_ZEMENE_MESAFINT_10_AUTONOMY_IN_EVERY_CORE_TT: "Every owned core province gains §R+10%§! autonomy."
+ FEE_ZEMENE_MESAFINT_20_AUTONOMY_IN_EVERY_CORE_TT: "Every owned core province gains §R+20%§! autonomy."
+
+ FEE_CRISIS_OF_THE_MUGHAL_EMPIRE_LESS_THAN_0_TOLERANCE_OF_HEATHENS_TT: "Our §YTolerance of Heathens§! is less than §Y0§!"
+ FEE_CRISIS_OF_THE_MUGHAL_EMPIRE_RULER_STATS_LESS_THAN_6_TOTAL_TT: "The combined amount of the ruler skills of §Y[This.Monarch.GetName]§! is less than §Y6§!"
+
+ ITA_REPUBLICAN_MATTER_TT: "In the next years Republicans in the North and Monarchist in the South of Italy will rise to try impose their view. One of them might calm down only if we decide to become either: \nAny Monarchy with a §YParliament§! \n§YConstitutional Republic§!"
+ ITA_DISASTER_REPUBLICAN_TT: "One of the followign must be true:\n	§YRepublican§! or §YMonarchist§! rebels enforce their demand\n	The disaster has been going for at least §Y15 years§!"

@@ -1,0 +1,67 @@
+﻿﻿l_spanish:
+ FEE_Novgorod_Events.1.T: "The great famine"
+ FEE_Novgorod_Events.1.D: "Following wars over our eastern territories, our armies have depleted our stocks of grain, and food is becoming scarce. This winter has been particularly harsh, and our people are starving. \nOur old enemy Muscovy is looking at us with eyes as hungry as our peasants, while tales of the rich lands of Lithuania make people wonder if God favors them over us.\n\nIf we do not put in every effort to ease the famine, our country might be facing great changes."
+ FEE_Novgorod_Events.1.OPT1: "The people of $COUNTRY$ will persevere, whatever the cost!"
+ FEE_Novgorod_Events.1.OPT2: "There is nothing to be done, for now."
+
+ FEE_Novgorod_Events.2.T: "Famine Causes Internal Disruption"
+ FEE_Novgorod_Events.2.D: "The great famine has weakened $COUNTRY$, both economically and militarily. Looking abroad for solutions, many see the Latinisation of Lithuania as aspirational, even if it means abandoning many of our ancient practices. Lithuania might also be willing to support us against the growing threat of Muscovy. Then again, perhaps all hope is lost, and the best way of preserving $COUNTRY$ would be to submit diplomatically, rather than being taken by conquest."
+ FEE_Novgorod_Events.2.OPT1: "We will ask to be returned to the fold of Rome. Europe will no longer be able to ignore our plight."
+ FEE_Novgorod_Events.2.OPT2: "Buy an alliance with Lithuania."
+
+ FEE_Novgorod_Events.2.OPT3: "Offer our country as a vassal to the ruler of Muscovy."
+ FEE_Novgorod_Events.2.OPT4: "$COUNTRY$ will live through this famine, alone!"
+
+ FEE_Novgorod_Events.3.T: "The Latinisation of Novgorod"
+ FEE_Novgorod_Events.3.D: "We have chosen to embrace Rome and the traditions of the Northern Crusades. Many of our people see it as our path to God's salvation, while many disagree.\n\nThere are also those of our threatening neighbors who would rather see us remain Orthodox."
+ FEE_Novgorod_Events.3.OPT1: "We should hold back a little, even if our enemies might still seize the chance to attack."
+ FEE_Novgorod_Events.3.OPT2: "We should make a show of friendship to illustrate that we're only changing direction slightly."
+ FEE_Novgorod_Events.3.OPT3: "We need to stand for what we believe in, whatever the cost!"
+ FEE_Novgorod_Events.3.OPT4: "We pay off Muscovy, then head as far as we can away from them."
+
+ FEE_Novgorod_Events.4.T: "The Novgorodian Veche"
+ FEE_Novgorod_Events.4.D: "The Veche was a council of the most prominent people in the city of Novgorod, and served as the highest legislative and judicial body in the state. They would discuss matters publicly, and any citizen could call the Veche by ringing the Veche Bell placed in the city square."
+ FEE_Novgorod_Events.4.OPT1: "Call upon the Veche to improve our tax collection."
+ FEE_Novgorod_Events.4.OPT2: "Call upon the Veche to aid our merchants."
+ FEE_Novgorod_Events.4.OPT3: "Call upon the Veche to prepare our military."
+ FEE_Novgorod_Events.4.OPT4: "Allow the Veche to guide $COUNTRY$ as it sees fit."
+
+ FEE_Novgorod_Events.5.T: "$FROM$ Requests an Alliance"
+ FEE_Novgorod_Events.5.D: "With the growing threat from the princes of Muscovy, $FROM$ has come to us seeking aid. They have requested an alliance, and are willing to pay a hefty sum to smooth over any old disagreements."
+ FEE_Novgorod_Events.5.OPT1: "Of course, we will aid them in their time of need!"
+ FEE_Novgorod_Events.5.OPT2: "We have too many troubles of our own."
+
+ FEE_Novgorod_Events.6.T: "$FROM$ Asks to Become Our Vassal"
+ FEE_Novgorod_Events.6.D: "Recognising our great superiority in military discipline and way of life, $FROM$ has finally realized that there is no future but subjugation to our throne. Now they come before us, humbled, begging to be brought into the Muscovite fold."
+ FEE_Novgorod_Events.6.OPT1: "Of course, I will let you serve me, brother."
+ FEE_Novgorod_Events.6.OPT2: "Your groveling does not interest us. Leave us, until we come for you."
+
+ FEE_Novgorod_Events.7.T: "Novgorod Has Turned Towards Rome"
+ FEE_Novgorod_Events.7.D: "Abandoning everything that makes them who they are, $FROM$ has turned to the Pope - rather than us - in their time of need. Everything we have fought for in the land of Rus could fall to nothing if the Catholic kings turned their attention to aiding their fellow heretics.\n\nWe will have to act, and act soon. All to protect the true faith, of course."
+ FEE_Novgorod_Events.7.OPT1: "We will show them what happens to heretics."
+
+ FEE_Novgorod_Events.8.T: "The Final Steps of Latinisation"
+ FEE_Novgorod_Events.8.D: "It has been a long and arduous process, but we have finally fallen in line with the cultural expectations of the Latin kings. We now fully count ourselves among the ranks of faithful servants of Rome."
+ FEE_Novgorod_Events.8.OPT1: "Novgorod under God."
+
+# Modifiers
+ fee_nov_great_famine: "Great Famine"
+ desc_fee_nov_great_famine: "Our country is struggling alone with the effects of a great famine across our lands."
+ fee_nov_latinisation: "Novgorodian Latinisation"
+ desc_fee_nov_latinisation: "Novgorod is looking to Rome to see the future of its land."
+ fee_nov_administrative_focus_veche: "Administrative Focus for Veche"
+ desc_fee_nov_administrative_focus_veche: "We have requested that the Veche focuses on administrative issues."
+ fee_nov_diplomatic_focus_veche: "Diplomatic Focus for Veche"
+ desc_fee_nov_diplomatic_focus_veche: "We have requested that the Veche focuses on diplomatic issues."
+ fee_nov_military_focus_veche: "Military Focus for Veche"
+ desc_fee_nov_military_focus_veche: "We have requested that the Veche focuses on military issues."
+ fee_nov_no_focus_veche: "No Focus for Veche"
+ desc_fee_nov_no_focus_veche: "We have requested no specific focuses for the Veche."
+
+# Opinion Modifiers
+ FEE_Novgorod_Events_gift: "Gift of Friendship"
+
+# Tooltips
+ fee_nov_famine_tt: "This choice will send your country down a path of change. It may result in a religious revolution or even war."
+ fee_nov_latinisation_novgorod: "This will result in the Latinisation of Novgorod. Abandoning your Orthodox faith will give you enemies, both abroad and at home."
+ fee_nov_vassalization_tt: "This might lead to our vassalization."
