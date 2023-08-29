@@ -12,17 +12,22 @@ fee_netherlands_rampjaar = {
 		is_at_war = yes
 		OR = {
 			war_exhaustion = 10
-			AND = {
-				NOT = { ADM = 5 }
-				NOT = { DIP = 5 }
-				NOT = { MIL = 5 }
+			NOT = { war_score = -25 }
+			num_of_owned_provinces_with = {
+				value = 3
+				NOT = { controlled_by = ROOT }
 			}
 		}
 	}
 	can_stop = {
 		OR = {
 			has_any_disaster = yes
-			revanchism = 0
+			AND = {
+				is_at_war = no
+				stability = 1
+				NOT = { war_exhaustion = 0.01 }
+				NOT = { num_of_rebel_controlled_provinces = 1 }
+			}
 		}
 	}
 	progress = {
@@ -32,39 +37,75 @@ fee_netherlands_rampjaar = {
 		}
 		modifier = {
 			factor = 1
+			NOT = { stability = -1 }
+		}
+		modifier = {
+			factor = 2
+			NOT = { stability = -2 }
+		}
+		modifier = {
+			factor = 0.5
 			war_exhaustion = 5
 		}
 		modifier = {
-			factor = 2
-			NOT = { is_great_power = yes }
+			factor = 0.5
+			war_exhaustion = 10
+		}
+		modifier = {
+			factor = 1
+			war_exhaustion = 15
 		}
 		modifier = {
 			factor = 2
-			NOT = { ADM = 3 }
+			war_exhaustion = 20
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { war_score = -10 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { war_score = -25 }
+		}
+		modifier = {
+			factor = 1
+			NOT = { war_score = -35 }
 		}
 		modifier = {
 			factor = 2
-			NOT = { DIP = 3 }
+			NOT = { war_score = -50 }
 		}
 		modifier = {
 			factor = 2
-			NOT = { MIL = 3 }
+			NOT = { war_score = -75 }
+		}
+		modifier = {
+			factor = 0.5
+			num_of_owned_provinces_with = {
+				value = 1
+				NOT = { controlled_by = ROOT }
+			}
+		}
+		modifier = {
+			factor = 0.5
+			num_of_owned_provinces_with = {
+				value = 3
+				NOT = { controlled_by = ROOT }
+			}
+		}
+		modifier = {
+			factor = 1
+			num_of_owned_provinces_with = {
+				value = 5
+				NOT = { controlled_by = ROOT }
+			}
 		}
 		modifier = {
 			factor = 2
-			is_bankrupt = yes
-		}
-		modifier = {
-			factor = 5
-			NOT = { ADM = 1 }
-		}
-		modifier = {
-			factor = 5
-			NOT = { DIP = 1 }
-		}
-		modifier = {
-			factor = 5
-			NOT = { MIL = 1 }
+			num_of_owned_provinces_with = {
+				value = 10
+				NOT = { controlled_by = ROOT }
+			}
 		}
 		modifier = {
 			factor = 8
@@ -73,12 +114,16 @@ fee_netherlands_rampjaar = {
 	}
 	can_end = {
 		NOT = { num_of_rebel_armies = 1 }
+		NOT = { num_of_rebel_controlled_provinces = 1 }
 		stability = 2
 		is_at_war = no
-		NOT = { war_exhaustion = 1}
-		had_country_flag = {
-			flag = had_fee_netherlands_rampjaar
-			days = 365
+		NOT = { war_exhaustion = 0.01 }
+		custom_trigger_tooltip = {
+			tooltip = HAD_FEE_NETHERLANDS_RAMPJAAR_FOR_1_YEAR_TT
+			had_country_flag = {
+				flag = had_fee_netherlands_rampjaar
+				days = 365
+			}
 		}
 	}
 	modifier = {
