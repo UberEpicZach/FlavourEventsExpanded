@@ -255,11 +255,6 @@ country_event = {
 
 	fire_only_once = yes
 	trigger = {
-		OR = {
-			tag = MAN
-			was_tag = MAN
-			owns = 109
-		}
 		is_year = 1262
 		NOT = { is_year = 1800 }
 		109 = {
@@ -414,11 +409,7 @@ country_event = {
 
 	fire_only_once = yes
 	trigger = {
-		OR = {
-			tag = MAN
-			was_tag = MAN
-			owns = 109
-		}
+		owns = 109
 		is_year = 1470
 		NOT = { is_year = 1610 }
 		109 = { num_of_times_improved = 5 }
@@ -449,11 +440,7 @@ country_event = {
 
 	fire_only_once = yes
 	trigger = {
-		OR = {
-			tag = MAN
-			was_tag = MAN
-			owns = 109
-		}
+		owns = 109
 		is_year = 1610
 		109 = { has_province_modifier = fee_mantua_comunita_ebraica }
 	}

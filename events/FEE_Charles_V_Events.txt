@@ -17,8 +17,10 @@ country_event = {
 		is_year = 1500
 		NOT = { is_year = 1550 } #Fairly wide window, to give Spain time to realize she hates France
 		NOT = { has_country_flag = FEE_Charles_V_Events_born }
-		OR = {
 			has_global_flag = burgundian_succession_crisis
+			has_global_flag = burgundian_succession_crisis
+		}
+		has_global_flag = burgundian_succession_crisis
 		}
 		num_of_cities = 15
 		is_subject = no
@@ -150,11 +152,6 @@ country_event = {
 
 		#tooltip = fee_charles_v_union_under_austria
 		#Make Spain the Emperor:
-		ROOT = {
-			capital_scope = {	#Puts Spain in the Empire
-				set_in_empire = yes
-			}
-		}
 		if = {
 			limit = {
 				HAB = {
@@ -341,7 +338,6 @@ country_event = {
 					}
 					is_part_of_hre = yes
 				}
-				set_in_empire = no
 			}
 			if = {					#Castille/Spain gets France Compte too.
 				limit = {
@@ -883,26 +879,26 @@ country_event = {
 }
 
 #The Habsburg dynasty in Iberia
-country_event = {
-	id = FEE_Charles_V_Events.11
-	title = FEE_Charles_V_Events.11.T #FEE_Charles_V_Events.T.1:0 "The Habsburg dynasty in Iberia"
-	desc = FEE_Charles_V_Events.11.D #FEE_Charles_V_Events.D.1:0 "The son of Maximillian I of Habsburg and Mary of Burgundy, Phillip I would succeed in winning the crown of Castille for the Habsburg dynasty. Already the ruler of the Austrian lowlands through his mother, in 1506 Phillip organized a coup and overthrew the acting king of Spain, Ferdinand II. Though he died mere months later, Philip's legacy would live on through his son Charles, who would come to rule over one of the largest empires in history..."
-	picture = NEW_HEIR_eventPicture
+# country_event = {
+# 	id = FEE_Charles_V_Events.11
+# 	title = FEE_Charles_V_Events.11.T #FEE_Charles_V_Events.T.1:0 "The Habsburg dynasty in Iberia"
+# 	desc = FEE_Charles_V_Events.11.D #FEE_Charles_V_Events.D.1:0 "The son of Maximillian I of Habsburg and Mary of Burgundy, Phillip I would succeed in winning the crown of Castille for the Habsburg dynasty. Already the ruler of the Austrian lowlands through his mother, in 1506 Phillip organized a coup and overthrew the acting king of Spain, Ferdinand II. Though he died mere months later, Philip's legacy would live on through his son Charles, who would come to rule over one of the largest empires in history..."
+# 	picture = NEW_HEIR_eventPicture
 
-	trigger = {
-		has_global_flag = burgundian_succession_crisis
-	}
+# 	trigger = {
+# 		has_global_flag = burgundian_succession_crisis
+# 	}
 
-	fire_only_once = yes
-	is_triggered_only = yes		#Triggered on monarch or heir death, whichever comes first.
+# 	fire_only_once = yes
+# 	is_triggered_only = yes		#Triggered on monarch or heir death, whichever comes first.
 
-	option = {
-		name = FEE_Charles_V_Events.11.OPT1 #FEE_Charles_V_Events.1.OPT1:0 "Interesting..."
+# 	option = {
+# 		name = FEE_Charles_V_Events.11.OPT1 #FEE_Charles_V_Events.1.OPT1:0 "Interesting..."
 
-		ROOT = {
-			capital_scope = {	#Puts Spain in the Empire
-				set_in_empire = yes
-			}
-		}
-	}
-}
+# 		ROOT = {
+# 			capital_scope = {	#Puts Spain in the Empire
+# 				set_in_empire = yes
+# 			}
+# 		}
+# 	}
+# }
