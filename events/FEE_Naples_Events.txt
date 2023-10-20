@@ -785,6 +785,182 @@ country_event = {
 	}
 }
 
+# Fasto della Seta
+country_event = {
+	id = FEE_Naples_Events.13
+	title = FEE_Naples_Events.13.T
+	desc = FEE_Naples_Events.13.D
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		121 = {
+			owned_by = ROOT
+			OR = {
+				trade_goods = cloth
+				trade_goods = silk
+			}
+			if = {
+				limit = {
+					has_dlc = "Leviathan"
+				}
+				OR = {
+					has_great_project = {
+						type = royal_palace_caserta
+						tier = 1
+					}
+					has_great_project = {
+						type = royal_palace_caserta
+						tier = 2
+					}
+					has_great_project = {
+						type = royal_palace_caserta
+						tier = 3
+					}
+				}
+			}
+			else = {
+				is_capital = yes
+				development = 40
+			}
+		}
+		is_year = 1600
+		NOT = { is_year = 1650 }
+	}
+
+	mean_time_to_happen = {
+		years = 1
+	}
+
+	option = {
+		name = FEE_Naples_Events.13.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_years_of_income = -0.5
+		if = {
+			limit = {
+				has_dlc = "Mandate of Heaven"
+			}
+			add_splendor = 200
+		}
+		add_prestige_or_monarch_power = { amount = 25 }
+	}
+
+	option = {
+		name = FEE_Naples_Events.13.OPT2
+		ai_chance = {
+			factor = 25
+		}
+
+		add_prestige = -15
+		add_legitimacy_equivalent = { amount = -15 republican_tradition = -7 }
+		reduce_estate_nobles_loyalty_effect = yes
+	}
+}
+
+# Meccanizzazione dei Processi Produttivi?
+country_event = {
+	id = FEE_Naples_Events.14
+	title = FEE_Naples_Events.14.T
+	desc = FEE_Naples_Events.14.D
+	picture = TRADE_GOODS_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		121 = {
+			owned_by = ROOT
+			OR = {
+				trade_goods = cloth
+				trade_goods = silk
+			}
+		}
+		is_institution_enabled = manufactories
+		is_year = 1650
+		NOT = { is_year = 1750 }
+	}
+
+	mean_time_to_happen = {
+		years = 1
+	}
+
+	option = {
+		name = FEE_Naples_Events.14.OPT1
+		trigger = {
+			121 = {
+				is_institution_origin = manufactories
+			}
+		}
+
+		121 = {
+			random_list = {
+				50 = {
+					add_base_tax = -2
+				}
+				50 = {
+					add_base_production = -2
+				}
+			}
+			add_province_modifier = {
+				name = urbanites_chastised
+				duration = 3650
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Naples_Events.14.OPT2
+		trigger = {
+			121 = {
+				manufactories = 50
+			}
+		}
+		ai_chance = {
+			factor = 75
+		}
+
+		add_years_of_income = -2.5
+		add_mercantilism = -5
+		121 = {
+			random_list = {
+				50 = {
+					add_base_tax = -5
+				}
+				50 = {
+					add_base_production = -5
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Naples_Events.14.OPT3
+		ai_chance = {
+			factor = 25
+		}
+
+		add_prestige = -15
+		add_mercantilism = -10
+		if = {
+			limit = {
+				has_dlc = "Mandate of Heaven"
+			}
+			add_splendor = -50
+		}
+		121 = {
+			add_base_tax = -5
+			add_base_production = -5
+			remove_province_modifier = fee_nap_silk_foreign_craftsman
+			remove_province_modifier = fee_nap_silk_consolato_seta
+			remove_province_modifier = fee_nap_silk_new_world
+			remove_province_modifier = fee_nap_neapolitan_black
+		}
+	}
+}
+
 #Dream of Ladislao I
 country_event = {
 	id = FEE_Naples_Events.93
