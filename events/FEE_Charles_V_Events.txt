@@ -17,11 +17,7 @@ country_event = {
 		is_year = 1500
 		NOT = { is_year = 1550 } #Fairly wide window, to give Spain time to realize she hates France
 		NOT = { has_country_flag = FEE_Charles_V_Events_born }
-			has_global_flag = burgundian_succession_crisis
-			has_global_flag = burgundian_succession_crisis
-		}
 		has_global_flag = burgundian_succession_crisis
-		}
 		num_of_cities = 15
 		is_subject = no
 		government = monarchy
