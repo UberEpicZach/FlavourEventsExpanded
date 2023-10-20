@@ -657,11 +657,139 @@ country_event = {
 	}
 }
 
+# Nero di Napoli
+country_event = {
+	id = FEE_Naples_Events.12
+	title = FEE_Naples_Events.12.T
+	desc = FEE_Naples_Events.12.D
+	picture = TRADE_GOODS_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		121 = {
+			base_production = 20
+			owned_by = ROOT
+			OR = {
+				trade_goods = cloth
+				trade_goods = silk
+			}
+			has_province_modifier = fee_nap_silk_new_world
+		}
+		is_year = 1500
+		NOT = { is_year = 1600 }
+	}
+
+	mean_time_to_happen = {
+		years = 1
+	}
+
+	option = {
+		name = FEE_Naples_Events.12.OPT1
+
+		add_mercantilism = 6
+		if = {
+			limit = {
+				121 = {
+					trade_goods = silk
+				}
+			}
+			change_price = {
+				trade_goods = silk
+				key = fee_nap_neapolitan_black
+				value = 0.33
+				duration = 36500
+			}
+		}
+		else = {
+			change_price = {
+				trade_goods = cloth
+				key = fee_nap_neapolitan_black
+				value = 0.25
+				duration = 36500
+			}
+		}
+		121 = {
+			remove_province_modifier = fee_nap_silk_foreign_craftsman
+			remove_province_modifier = fee_nap_silk_consolato_seta
+			remove_province_modifier = fee_nap_silk_new_world
+			add_province_modifier = {
+				name = fee_nap_neapolitan_black
+				duration = -1
+			}
+		}
+	}
+}
+
+# Nero di Napoli
+country_event = {
+	id = FEE_Naples_Events.12
+	title = FEE_Naples_Events.12.T
+	desc = FEE_Naples_Events.12.D
+	picture = TRADE_GOODS_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		121 = {
+			base_production = 20
+			owned_by = ROOT
+			OR = {
+				trade_goods = cloth
+				trade_goods = silk
+			}
+			has_province_modifier = fee_nap_silk_new_world
+		}
+		is_year = 1500
+		NOT = { is_year = 1600 }
+	}
+
+	mean_time_to_happen = {
+		years = 1
+	}
+
+	option = {
+		name = FEE_Naples_Events.12.OPT1
+
+		add_mercantilism = 6
+		if = {
+			limit = {
+				121 = {
+					trade_goods = silk
+				}
+			}
+			change_price = {
+				trade_goods = silk
+				key = fee_nap_neapolitan_black
+				value = 0.33
+				duration = 36500
+			}
+		}
+		else = {
+			change_price = {
+				trade_goods = cloth
+				key = fee_nap_neapolitan_black
+				value = 0.25
+				duration = 36500
+			}
+		}
+		121 = {
+			remove_province_modifier = fee_nap_silk_foreign_craftsman
+			remove_province_modifier = fee_nap_silk_consolato_seta
+			remove_province_modifier = fee_nap_silk_new_world
+			add_province_modifier = {
+				name = fee_nap_neapolitan_black
+				duration = -1
+			}
+		}
+	}
+}
+
 #Dream of Ladislao I
 country_event = {
-	id = FEE_Naples_Events.13
-	title = FEE_Naples_Events.13.T
-	desc = FEE_Naples_Events.13.D
+	id = FEE_Naples_Events.93
+	title = FEE_Naples_Events.93.T
+	desc = FEE_Naples_Events.93.D
 	picture = GOOD_WITH_MONARCH_eventPicture
 
 	fire_only_once = yes
@@ -677,7 +805,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Naples_Events.13.OPT1
+		name = FEE_Naples_Events.93.OPT1
 		ai_chance = {
 			factor = 50
 		}
@@ -703,7 +831,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Naples_Events.13.OPT2
+		name = FEE_Naples_Events.93.OPT2
 		ai_chance = {
 			factor = 50
 		}
@@ -717,9 +845,9 @@ country_event = {
 
 #Legacy of Ladislao I
 country_event = {
-	id = FEE_Naples_Events.14
-	title = FEE_Naples_Events.14.T
-	desc = FEE_Naples_Events.14.D
+	id = FEE_Naples_Events.94
+	title = FEE_Naples_Events.94.T
+	desc = FEE_Naples_Events.94.D
 	picture = GOOD_WITH_MONARCH_eventPicture
 
 	fire_only_once = yes
@@ -749,7 +877,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Naples_Events.14.OPT1
+		name = FEE_Naples_Events.94.OPT1
 		ai_chance = {
 			factor = 90
 		}
@@ -792,7 +920,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Naples_Events.14.OPT2
+		name = FEE_Naples_Events.94.OPT2
 		ai_chance = {
 			factor = 10
 		}
@@ -806,9 +934,9 @@ country_event = {
 
 # Pedro Alvarez de Toledo
 country_event = {
-	id = FEE_Naples_Events.15
-	title = FEE_Naples_Events.15.T
-	desc = FEE_Naples_Events.15.D
+	id = FEE_Naples_Events.95
+	title = FEE_Naples_Events.95.T
+	desc = FEE_Naples_Events.95.D
 	picture = ADVISOR_eventPicture
 
 	fire_only_once = yes
@@ -833,7 +961,7 @@ country_event = {
 
 	#We need to centralise our state.
 	option = {
-		name = FEE_Naples_Events.15.OPT1
+		name = FEE_Naples_Events.95.OPT1
 
 		add_adm_power = -50
 		add_dip_power = -50
@@ -847,7 +975,7 @@ country_event = {
 
 	#Naples must become a military power to rival any in Europe.
 	option = {
-		name = FEE_Naples_Events.15.OPT2
+		name = FEE_Naples_Events.95.OPT2
 
 		add_mil_power = 75
 	}
@@ -855,9 +983,9 @@ country_event = {
 
 # The Construction Projects of Pedro Alvarez de Toledo
 country_event = {
-	id = FEE_Naples_Events.16
-	title = FEE_Naples_Events.16.T
-	desc = FEE_Naples_Events.16.D
+	id = FEE_Naples_Events.96
+	title = FEE_Naples_Events.96.T
+	desc = FEE_Naples_Events.96.D
 	picture = GREAT_BUILDING_eventPicture
 
 	fire_only_once = yes
@@ -886,7 +1014,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Naples_Events.16.OPT1
+		name = FEE_Naples_Events.96.OPT1
 
 		121 = {
 			add_base_tax = 1
@@ -899,7 +1027,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Naples_Events.16.OPT2
+		name = FEE_Naples_Events.96.OPT2
 
 		121 = {
 			add_base_tax = 1
@@ -914,9 +1042,9 @@ country_event = {
 
 # The Flood of Bones
 country_event = {
-	id = FEE_Naples_Events.17
-	title = FEE_Naples_Events.17.T
-	desc = FEE_Naples_Events.17.D
+	id = FEE_Naples_Events.97
+	title = FEE_Naples_Events.97.T
+	desc = FEE_Naples_Events.97.D
 	picture = BIG_BOOK_eventPicture
 
 	fire_only_once = yes
@@ -931,7 +1059,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Naples_Events.17.OPT1
+		name = FEE_Naples_Events.97.OPT1
 
 		121 = { add_base_tax = 1 }
 	}
@@ -939,9 +1067,9 @@ country_event = {
 
 # San Gennaro dei Poveri
 country_event = {
-	id = FEE_Naples_Events.18
-	title = FEE_Naples_Events.18.T
-	desc = FEE_Naples_Events.18.D
+	id = FEE_Naples_Events.98
+	title = FEE_Naples_Events.98.T
+	desc = FEE_Naples_Events.98.D
 	picture = GREAT_BUILDING_eventPicture
 
 	fire_only_once = yes
@@ -967,7 +1095,7 @@ country_event = {
 
 	#We need this, for the good of the pour
 	option = {
-		name = FEE_Naples_Events.18.OPT1
+		name = FEE_Naples_Events.98.OPT1
 
 		121 = {
 			add_province_modifier = {
@@ -979,7 +1107,7 @@ country_event = {
 
 	#Our resources are better spent elsewhere
 	option = {
-		name = FEE_Naples_Events.18.OPT2
+		name = FEE_Naples_Events.98.OPT2
 
 		add_adm_power = 25
 	}
@@ -987,9 +1115,9 @@ country_event = {
 
 # Ospedale L'Albergo Reale dei Poveri
 country_event = {
-	id = FEE_Naples_Events.19
-	title = FEE_Naples_Events.19.T
-	desc = FEE_Naples_Events.19.D
+	id = FEE_Naples_Events.99
+	title = FEE_Naples_Events.99.T
+	desc = FEE_Naples_Events.99.D
 	picture = GREAT_BUILDING_eventPicture
 
 	fire_only_once = yes
@@ -1005,7 +1133,7 @@ country_event = {
 
 	#Let us show the world we care!
 	option = {
-		name = FEE_Naples_Events.19.OPT1
+		name = FEE_Naples_Events.99.OPT1
 
 		add_years_of_income = -0.08
 		add_country_modifier = {
@@ -1016,7 +1144,7 @@ country_event = {
 
 	#Who can afford to spend money on the poor?
 	option = {
-		name = FEE_Naples_Events.19.OPT2
+		name = FEE_Naples_Events.99.OPT2
 
 		add_prestige = -5
 	}
@@ -1024,9 +1152,9 @@ country_event = {
 
 # Francesco Solimena
 country_event = {
-	id = FEE_Naples_Events.20
-	title = FEE_Naples_Events.20.T
-	desc = FEE_Naples_Events.20.D
+	id = FEE_Naples_Events.100
+	title = FEE_Naples_Events.100.T
+	desc = FEE_Naples_Events.100.D
 	picture = IMPORTANT_STATUE_eventPicture
 
 	fire_only_once = yes
@@ -1042,7 +1170,7 @@ country_event = {
 
 	#Let him show what baroque art truly means!
 	option = {
-		name = FEE_Naples_Events.20.OPT1
+		name = FEE_Naples_Events.100.OPT1
 
 		add_prestige_or_monarch_power = { amount = 10 }
 		add_stability_or_adm_power = yes

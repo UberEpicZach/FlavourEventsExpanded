@@ -25,6 +25,13 @@ fee_nap_silk_consolato_seta = {
 fee_nap_silk_new_world = {
 	trade_value = 1.5
 	trade_value_modifier = 0.50
+	local_build_cost = -0.05
+}
+fee_nap_neapolitan_black = {
+	trade_value = 1.5
+	trade_value_modifier = 0.50
+	local_development_cost_modifier = -0.05
+	local_build_cost = -0.10
 }
 
 fee_nap_nobles_control = {
