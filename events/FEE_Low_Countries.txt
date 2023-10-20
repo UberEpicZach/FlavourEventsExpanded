@@ -264,6 +264,33 @@ country_event = {
 			}
 		}
 		release = FRI
+		FRI = {
+			change_religion = catholic
+			change_primary_culture = frisian
+			hidden_effect = {
+				add_years_of_income = 1
+				add_yearly_manpower = 1
+				define_ruler = {
+					name = "Pier Gerlofs Donia"
+					culture = frisian
+					religion = catholic
+					adm = 2
+					dip = 4
+					mil = 3
+				}
+				capital_scope = {
+					build_to_forcelimit = {
+						infantry = 0.7
+						cavalry = 0.2
+						artillery = 0.1
+					}
+				}
+				every_owned_province = {
+					change_religion = catholic
+					change_culture = frisian
+				}
+			}
+		}
 		create_march = FRI
 	}
 }
