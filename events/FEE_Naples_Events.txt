@@ -528,9 +528,10 @@ country_event = {
 				trade_goods = cloth
 				trade_goods = silk
 			}
+			num_of_times_improved = 1
 		}
 		is_year = 1458
-		NOT = { is_year = 1459 }
+		NOT = { is_year = 1465 }
 	}
 
 	mean_time_to_happen = {
@@ -600,6 +601,7 @@ country_event = {
 				trade_goods = cloth
 				trade_goods = silk
 			}
+			base_tax = 10
 		}
 		is_year = 1465
 		NOT = { is_year = 1477 }
@@ -649,7 +651,7 @@ country_event = {
 			new_world_i = 100
 		}
 		is_year = 1477
-		NOT = { is_year = 1600 }
+		NOT = { is_year = 1500 }
 	}
 
 	mean_time_to_happen = {
@@ -1090,8 +1092,6 @@ country_event = {
 	desc = FEE_Naples_Events.17.D
 	picture = TRADE_GOODS_eventPicture
 
-	fire_only_once = yes
-
 	trigger = {
 		OR = {
 			124 = {
@@ -1195,15 +1195,12 @@ country_event = {
 	}
 }
 
-
-# Manifattura Forestiera
+# A Jewish Dilemma...
 country_event = {
 	id = FEE_Naples_Events.18
 	title = FEE_Naples_Events.18.T
 	desc = FEE_Naples_Events.18.D
 	picture = TRADE_GOODS_eventPicture
-
-	fire_only_once = yes
 
 	trigger = {
 		OR = {
@@ -1238,6 +1235,7 @@ country_event = {
 			factor = 50
 		}
 
+		add_years_of_income = -0.5
 		add_papal_influence = -15
 		reduce_estate_church_loyalty_effect = yes
 		if = {
@@ -1358,6 +1356,185 @@ country_event = {
 					name = fee_nap_catanzaro_seta_jews_messina
 					duration = 7300
 				}
+			}
+		}
+	}
+}
+
+# Ashes on our Silk?
+country_event = {
+	id = FEE_Naples_Events.19
+	title = FEE_Naples_Events.19.T
+	desc = FEE_Naples_Events.19.D
+	picture = TRADE_GOODS_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			124 = {
+				owned_by = ROOT
+				has_province_modifier = fee_nap_silk_foreign_craftsman_messina
+				OR = {
+					trade_goods = cloth
+					trade_goods = silk
+				}
+			}
+		}
+		is_year = 1516
+		NOT = { is_year = 1693 }
+	}
+
+	mean_time_to_happen = {
+		years = 2
+	}
+
+	option = {
+		name = FEE_Naples_Events.19.OPT1
+		ai_chance = {
+			factor = 19
+		}
+
+		124 = {
+			add_base_production = -3
+			add_trade_modifier = {
+				who = ROOT
+				duration = 7300
+				power = -15
+				key = opinion_export_bad
+			}
+			remove_province_modifier = fee_nap_silk_foreign_craftsman_palermo
+			if = {
+				limit = {
+					is_expanded_mod_active = { mod = trade_goods }
+				}
+				change_trade_goods = olive_oil
+			}
+			else = {
+				change_trade_goods = fish
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Naples_Events.19.OPT2
+		ai_chance = {
+			factor = 27
+		}
+
+		add_years_of_income = -0.5
+		124 = {
+			add_base_tax = 1
+			add_province_modifier = {
+				name = monopoly_enforced
+				duration = 3650
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Naples_Events.19.OPT3
+		ai_chance = {
+			factor = 27
+		}
+
+		add_years_of_income = -0.5
+		124 = {
+			add_base_production = 1
+			add_province_modifier = {
+				name = company_mint
+				duration = 3650
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Naples_Events.19.OPT4
+		ai_chance = {
+			factor = 27
+		}
+
+		add_years_of_income = -0.5
+		124 = {
+			add_base_production = 1
+			add_province_modifier = {
+				name = developing_company_settlement
+				duration = 3650
+			}
+		}
+	}
+}
+
+# the Messina Earthquake?
+country_event = {
+	id = FEE_Naples_Events.20
+	title = FEE_Naples_Events.20.T
+	desc = FEE_Naples_Events.20.D
+	picture = COUNTRY_COLLAPSE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			124 = {
+				owned_by = ROOT
+				has_province_modifier = fee_nap_silk_foreign_craftsman_messina
+				OR = {
+					trade_goods = cloth
+					trade_goods = silk
+				}
+			}
+		}
+		is_year = 1693
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = FEE_Naples_Events.20.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_years_of_income = -1
+		124 = {
+			add_base_tax = -3
+			add_base_production = -3
+			add_base_manpower = -3
+			add_devastation = 100
+			add_province_modifier = {
+				name = earthquake
+				duration = 3650
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Naples_Events.20.OPT2
+		ai_chance = {
+			factor = 50
+		}
+
+		124 = {
+			add_base_tax = -3
+			add_base_production = -3
+			add_base_manpower = -3
+			add_devastation = 100
+			add_province_modifier = {
+				name = earthquake
+				duration = 3650
+			}
+			remove_province_modifier = fee_nap_silk_foreign_craftsman_palermo
+			if = {
+				limit = {
+					is_expanded_mod_active = { mod = trade_goods }
+				}
+				change_trade_goods = olive_oil
+			}
+			else = {
+				change_trade_goods = fish
 			}
 		}
 	}
