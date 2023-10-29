@@ -2,12 +2,13 @@ fee_naples_conspiracy_barons_1 = {
 	potential = {
 		fee_is_was_nap_sic = yes
 		has_estate = estate_nobles
-		NOT = { has_country_flag = nap_barony_first_risen }
+		NOT = { has_country_flag = fee_nap_first_barony_risen }
 	}
 	can_start = {
 		has_any_disaster = no
 		is_year = 1459
 		NOT = { is_year = 1464 }
+		NOT = { is_subject_of = FRA }
 		NOT = {
 			estate_loyalty = {
 				estate = estate_nobles
@@ -15,19 +16,17 @@ fee_naples_conspiracy_barons_1 = {
 			}
 		}
 		OR = {
-			apulia_area = {
-				owned_by = ROOT
-			}
-			naples_area = {
-				owned_by = ROOT
-			}
-			calabria_area = {
-				owned_by = ROOT
-			}
+			apulia_area = { owned_by = ROOT }
+			naples_area = { owned_by = ROOT }
+			calabria_area = { owned_by = ROOT }
 		}
 	}
 	can_stop = {
 		has_any_disaster = yes
+		custom_trigger_tooltip = {
+			tooltip = FEE_NAP_FIRST_BARONY_SKIPPED_TT
+			NOT = { has_country_flag = fee_nap_first_barony_skipped }
+		}
 	}
 
 	down_progress = {
@@ -125,12 +124,13 @@ fee_naples_conspiracy_barons_2 = {
 	potential = {
 		fee_is_was_nap_sic = yes
 		has_estate = estate_nobles
-		NOT = { has_country_flag = nap_barony_second_risen }
+		NOT = { has_country_flag = fee_nap_second_barony_risen }
 	}
 	can_start = {
 		has_any_disaster = no
 		is_year = 1485
 		NOT = { is_year = 1486 }
+		NOT = { is_subject_of = FRA }
 		NOT = {
 			estate_loyalty = {
 				estate = estate_nobles
@@ -138,15 +138,9 @@ fee_naples_conspiracy_barons_2 = {
 			}
 		}
 		OR = {
-			apulia_area = {
-				owned_by = ROOT
-			}
-			naples_area = {
-				owned_by = ROOT
-			}
-			calabria_area = {
-				owned_by = ROOT
-			}
+			apulia_area = { owned_by = ROOT }
+			naples_area = { owned_by = ROOT }
+			calabria_area = { owned_by = ROOT }
 		}
 	}
 	can_stop = {

@@ -20,6 +20,9 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			set_global_flag = flavour_and_events_expanded_mod_active
+			NAP = {
+				set_country_flag = naples_submits_to_the_pope
+			}
 		}
 	}
 
