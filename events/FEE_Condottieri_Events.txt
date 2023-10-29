@@ -1,0 +1,531 @@
+namespace = FEE_Condottieri_Events
+
+### Alessandro Sforza 1409 - 1473
+
+#Alessandro Sforza
+country_event = {
+	id = FEE_Condottieri_Events.1
+	title = FEE_Condottieri_Events.1.T
+	desc = FEE_Condottieri_Events.1.D
+	picture = GENERALS_DISCUSSING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_year = 1433
+		NOT = { is_year = 1446 }
+		owns = 2977
+	}
+
+	goto = 2977
+
+	option = {
+		name = FEE_Condottieri_Events.1.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
+		set_country_flag = fee_condottiero_alessandro_sforza
+		create_general = {
+			tradition = 50
+			name = "Alessandro Sforza"
+			culture = romagnan
+			add_shock = 1
+		}
+		2977 = {
+			add_province_modifier = {
+				name = regimental_town
+				duration = 730
+			}
+		}
+	}
+}
+
+# Alessandro, Signore di Pesaro
+country_event = {
+	id = FEE_Condottieri_Events.2
+	title = FEE_Condottieri_Events.2.T
+	desc = FEE_Condottieri_Events.2.D
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_year = 1445
+		NOT = { is_year = 1473 }
+		owns = 2977
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	goto = 2977
+
+	option = {
+		name = FEE_Condottieri_Events.2.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
+		2977 = {
+			add_province_modifier = {
+				name = fee_condottieri_alessandro_signore
+				duration = 10950
+			}
+		}
+	}
+}
+
+# The Ducal Palace of Pesaro
+country_event = {
+	id = FEE_Condottieri_Events.3
+	title = FEE_Condottieri_Events.3.T
+	desc = FEE_Condottieri_Events.3.D
+	picture = GREAT_BUILDING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_year = 1450
+		NOT = { is_year = 1473 }
+		owns = 2977
+	}
+
+	mean_time_to_happen = {
+		years = 3
+	}
+
+	goto = 2977
+
+	option = {
+		name = FEE_Condottieri_Events.3.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
+		add_treasury = -25
+		if = {
+			limit = { has_dlc = "Mandate of Heaven" }
+			add_splendor = 50
+		}
+		add_prestige_or_monarch_power = { amount = 15 }
+		define_advisor = {
+			type = philosopher
+			skill = 2
+			cost_multiplier = 0.50
+			culture = umbrian
+			religion = catholic
+		}
+		2977 = {
+			add_institution_embracement = {
+				which = renaissance
+				value = 25
+			}
+		}
+	}
+}
+
+# The Shield of Pesaro
+country_event = {
+	id = FEE_Condottieri_Events.4
+	title = FEE_Condottieri_Events.4.T
+	desc = FEE_Condottieri_Events.4.D
+	picture = FORTIFIED_CITY_WITH_CARAVAN_OUTSIDE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_year = 1450
+		NOT = { is_year = 1473 }
+		owns = 2977
+	}
+
+	mean_time_to_happen = {
+		years = 3
+	}
+
+	goto = 2977
+
+	option = {
+		name = FEE_Condottieri_Events.4.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
+		add_army_tradition = 5
+		2977 = {
+			add_base_manpower = 1
+			add_province_modifier = {
+				name = local_fortress
+				duration = 7300
+			}
+		}
+	}
+}
+
+# Alessandro al soldo Milanese
+country_event = {
+	id = FEE_Condottieri_Events.5
+	title = FEE_Condottieri_Events.5.T
+	desc = FEE_Condottieri_Events.5.D
+	picture = GENERALS_DISCUSSING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		exists = MLO
+		has_country_flag = fee_condottiero_alessandro_sforza
+		is_year = 1448
+		NOT = { is_year = 1473 }
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	major = yes
+	major_trigger = {
+		tag = MLO
+	}
+
+	option = {
+		name = FEE_Condottieri_Events.5.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_treasury = 25
+		MLO = {
+			set_country_flag = fee_condottiero_alessandro_sforza
+			create_general = {
+				tradition = 50
+				name = "Alessandro Sforza"
+				culture = romagnan
+				add_manuever = 1
+				add_fire = 1
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = opinion_sent_help
+			}
+			reverse_add_opinion = {
+				who = ROOT
+				modifier = opinion_sent_help
+			}
+		}
+		clr_country_flag = fee_condottiero_alessandro_sforza
+		if = {
+			limit = { has_leader = "Alessandro Sforza" }
+			kill_leader = { type = "Alessandro Sforza" }
+		}
+	}
+
+	option = {
+		name = FEE_Condottieri_Events.5.OPT2
+		ai_chance = {
+			factor = 25
+		}
+
+		add_treasury = -25
+		add_prestige_or_monarch_power = { amount = 10 }
+		MLO = {
+			add_opinion = {
+				who = ROOT
+				modifier = hau_refused_to_help
+			}
+			reverse_add_opinion = {
+				who = ROOT
+				modifier = hau_refused_to_help
+			}
+			add_casus_belli = {
+				type = cb_insult
+				target = ROOT
+				months = 24
+			}
+		}
+	}
+}
+
+# Alessandro Padrone di Parma
+country_event = {
+	id = FEE_Condottieri_Events.6
+	title = FEE_Condottieri_Events.6.T
+	desc = FEE_Condottieri_Events.6.D
+	picture = GREAT_BUILDING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 105
+		is_year = 1449
+		NOT = { is_year = 1473 }
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	goto = 105
+
+	option = {
+		name = FEE_Condottieri_Events.6.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
+		105 = {
+			add_base_tax = 1
+			add_province_modifier = {
+				name = fee_condottieri_alessandro_signore
+				duration = 1460
+			}
+		}
+	}
+}
+
+# Il Soldo Aragonese
+country_event = {
+	id = FEE_Condottieri_Events.7
+	title = FEE_Condottieri_Events.7.T
+	desc = FEE_Condottieri_Events.7.D
+	picture = GREAT_BUILDING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			has_leader = "Alessandro Sforza"
+			has_country_flag = fee_condottiero_alessandro_sforza
+		}
+		121 = { 
+			OR = {
+				owned_by = ARA
+				owned_by = NAP
+			}
+		}
+		is_year = 1462
+		NOT = { is_year = 1473 }
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	major = yes
+	major_trigger = {
+		any_country = {
+			owns = 121
+		}
+	}
+
+	goto = 121
+
+	option = {
+		name = FEE_Condottieri_Events.7.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_treasury = 25
+		clr_country_flag = fee_condottiero_alessandro_sforza
+		kill_leader = { type = "Alessandro Sforza" }
+		121 = {
+			owner = {
+				set_country_flag = fee_condottiero_alessandro_sforza
+				add_opinion = {
+					who = ROOT
+					modifier = opinion_sent_help
+				}
+				reverse_add_opinion = {
+					who = ROOT
+					modifier = opinion_sent_help
+				}
+				create_general = {
+					tradition = 50
+					name = "Alessandro Sforza"
+					culture = romagnan
+					add_shock = 1
+					add_siege = 1
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Condottieri_Events.7.OPT2
+		trigger = {
+			NOT = {
+				any_country = {
+					OR = {
+						has_leader = "Alessandro Sforza"
+						has_country_flag = fee_condottiero_alessandro_sforza
+					}
+				}
+			}
+		}
+		ai_chance = {
+			factor = 75
+		}
+
+		add_treasury = -25
+		add_prestige_or_monarch_power = { amount = 10 }
+		121 = {
+			owner = {
+				add_opinion = {
+					who = ROOT
+					modifier = hau_refused_to_help
+				}
+				reverse_add_opinion = {
+					who = ROOT
+					modifier = hau_refused_to_help
+				}
+				add_casus_belli = {
+					type = cb_insult
+					target = ROOT
+					months = 24
+				}
+			}
+		}
+	}
+}
+
+# Alessandro: The Lion of Naples
+country_event = {
+	id = FEE_Condottieri_Events.8
+	title = FEE_Condottieri_Events.8.T
+	desc = FEE_Condottieri_Events.8.D
+	picture = GENERALS_DISCUSSING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		NOT = { exists = MLO }
+		tag = NAP
+		is_year = 1462
+		NOT = { is_year = 1464 }
+	}
+
+	mean_time_to_happen = {
+		years = 1
+	}
+
+	option = {
+		name = FEE_Condottieri_Events.8.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		set_country_flag = fee_condottiero_alessandro_sforza
+		create_general = {
+			tradition = 50
+			name = "Alessandro Sforza"
+			culture = romagnan
+			add_shock = 1
+			add_siege = 1
+		}
+		if = {
+			limit = { owns = 121 }
+			121 = {
+				add_province_modifier = {
+					name = fee_condottieri_alessandro_signore
+					duration = 3650
+				}
+			}
+		}
+	}
+}
+
+# Alessandro Granconnestabile di Napoli
+country_event = {
+	id = FEE_Condottieri_Events.9
+	title = FEE_Condottieri_Events.9.T
+	desc = FEE_Condottieri_Events.9.D
+	picture = GENERALS_DISCUSSING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			has_leader = "Alessandro Sforza"
+			has_country_flag = fee_condottiero_alessandro_sforza
+		}
+		owns = 121
+		is_year = 1463
+		NOT = { is_year = 1473 }
+	}
+
+	goto = 121
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Condottieri_Events.9.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_mil_power = 50
+		121 = {
+			add_province_modifier = {
+				name = fee_condottieri_alessandro_connestabile
+				duration = 3650
+			}
+		}
+	}
+}
+
+# Alessandro Sforza: The Lion of Pesaro
+country_event = {
+	id = FEE_Condottieri_Events.10
+	title = FEE_Condottieri_Events.10.T
+	desc = FEE_Condottieri_Events.10.D
+	picture = DEATH_OF_HEIR_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			has_leader = "Alessandro Sforza"
+			has_country_flag = fee_condottiero_alessandro_sforza
+		}
+		is_year = 1473
+	}
+
+	mean_time_to_happen = {
+		years = 1
+	}
+
+	option = {
+		name = FEE_Condottieri_Events.10.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		if = {
+			limit = { has_dlc = "Mandate of Heaven" }
+			add_splendor = 25
+		}
+		add_prestige_or_monarch_power = { amount = 10 }
+		clr_country_flag = fee_condottiero_alessandro_sforza
+		kill_leader = { type = "Alessandro Sforza" }
+		121 = {
+			if = {
+				limit = { has_province_modifier = fee_condottieri_alessandro_signore }
+				remove_province_modifier = fee_condottieri_alessandro_signore
+			}
+			if = {
+				limit = { has_province_modifier = fee_condottieri_alessandro_connestabile }
+				remove_province_modifier = fee_condottieri_alessandro_connestabile
+			}
+		}
+		2977 = {
+			if = {
+				limit = { has_province_modifier = fee_condottieri_alessandro_connestabile }
+				remove_province_modifier = fee_condottieri_alessandro_connestabile
+			}
+		}
+	}
+}

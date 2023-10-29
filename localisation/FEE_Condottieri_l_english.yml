@@ -1,0 +1,54 @@
+﻿l_english:
+# Events
+ FEE_Condottieri_Events.1.T: "Alessandro Sforza"
+ FEE_Condottieri_Events.1.D: "In the heart of Italy, where heroes rise, lived Alessandro Sforza, bold and wise. \nFrom humble beginnings he did spring, a warrior's son, destined for great things. \nIn battle's din, his blade did gleam, a force of nature, it did seem. \nFrom north to south, his name was known, a condottiero, second to none. \nWith courage and with skill so rare, he carved his path, beyond compare.\nHis enemies trembled at his might, as he rose to heights, bathed in light."
+ FEE_Condottieri_Events.1.OPT1: "Only the finest to lead our troops!"
+
+ FEE_Condottieri_Events.2.T: "Alessandro, Signore di Pesaro"
+ FEE_Condottieri_Events.2.D: "But Alessandro's reign was not without its challenges, for he had many enemies, both within and outside of [2977.GetName], who sought to overthrow his rise. \nBut Alessandro was a shrewd and cunning politician, and he always managed to outmaneuver his foes. he also had the support of his loyal subjects, who were willing to fight for him to the close. \nThrough many trials and tribulations, alessandro Sforza emerged victorious, and his reign continued to flourish, bringing peace and prosperity to all of [2977.GetName]."
+ FEE_Condottieri_Events.2.OPT1: "A really fine man"
+
+ FEE_Condottieri_Events.3.T: "The Ducal Palace of Pesaro"
+ FEE_Condottieri_Events.3.D: "The Ducal Palace of [2977.GetName] rose majestically in the heart of the city, a testament to the power and wealth of Alessandro Sforza, its lord. Its imposing facade, with its grand portico and arched windows, cast a long shadow over the cobbled square below. \nInside, the palace was a labyrinth of lavishly decorated rooms, each one more opulent than the last. The walls were adorned with frescoes by renowned Renaissance artists, depicting scenes from mythology, history, and religion. The floors were covered in intricate mosaics, and the ceilings were adorned with gilded chandeliers. \nThe Sala del Trono, or Throne Room, was the most impressive room in the palace. It was here that Alessandro Sforza held court and received dignitaries from all over Italy. The room was dominated by a massive throne, carved from a single block of marble. The walls were covered in frescoes depicting the Sforza dynasty's triumphs, and the ceiling was adorned with a giant fresco of the heavens."
+ FEE_Condottieri_Events.3.OPT1: "A symbol of the Sforza dynasty's greatness and the city of [2977.GetName]'s prosperity."
+
+ FEE_Condottieri_Events.4.T: "The Shield of Pesaro"
+ FEE_Condottieri_Events.4.D: "Alessandro Sforza knew that the city of [2977.GetName] was a prize worth fighting for. It was a wealthy port city with a strategic location on the Adriatic Sea. Many powerful lords coveted [2977.GetName], and Alessandro knew that he had to be prepared to defend it. \nAlessandro began by strengthening the city's fortifications. He built new towers and walls, and he repaired and reinforced existing ones. He also installed a new system of gates and drawbridges to make it more difficult for enemies to enter the city. \nNext, Alessandro trained and equipped a well-armed and well-disciplined army. He recruited soldiers from all over Italy and Europe, and he paid them handsomely. He also invested in new weapons and armor for his army."
+ FEE_Condottieri_Events.4.OPT1: "I will defend this city to my last breath."
+
+ FEE_Condottieri_Events.5.T: "Alessandro al soldo Milanese"
+ FEE_Condottieri_Events.5.D: "In the fair land of Italy, there stood a city called Milan. It was a city of great wealth and power, and it was ruled by the wise and benevolent Duke Francesco Sforza. Duke Francesco had a loyal friend and ally in Alessandro Sforza, a skilled condottiero and a courageous warrior. Alessandro had served Duke Francesco faithfully for many years, and he had helped him to expand and strengthen the Duchy of Milan. \nNow more than ever the Duchy of Milan was in dire need of help, as a great alliance had formed and the large army of Venice led by Michele Attendolo and Ludovico III Gonzaga threathened the security of the Duchy."
+ FEE_Condottieri_Events.5.OPT1: "I am a soldier, not a courtier. I will go and serve the Duke of Milan."
+ FEE_Condottieri_Events.5.OPT2: "I will stay here with you my lord."
+
+ FEE_Condottieri_Events.6.T: "Alessandro Padrone di Parma"
+ FEE_Condottieri_Events.6.D: "For his courage and help during the past wars we have granted the keys to the beautiful city of [105.GetName]."
+ FEE_Condottieri_Events.6.OPT1: "Long may he guide it."
+
+ FEE_Condottieri_Events.7.T: "Il Soldo Aragonese"
+ FEE_Condottieri_Events.7.D: "The Kingdom of [121.Owner.GetName] is in danger, they have sent a fast letter to us wishing to acquire the services of Alessandro Sforza. He has helped us a lot in the past years, and thanks to him we are able to be one again and not fear from imminent invasions, he may be of our same dynasty, but he is a condottiero, not a general."
+ FEE_Condottieri_Events.7.OPT1: "Send him to Naples!"
+ FEE_Condottieri_Events.7.OPT2: "No, our enemies are far from defeated."
+
+ FEE_Condottieri_Events.8.T: "Alessandro: The Lion of Naples"
+ FEE_Condottieri_Events.8.D: "One day, Alessandro Sforza was invited to Naples by King [121.Owner.Monarch.GetName]. King [Monarch.GetName] was a wise and benevolent ruler, but he was also facing a number of challenges. His kingdom was threatened by enemies from both within and without, and he needed the help of a skilled condottiero like Alessandro Sforza. \nAlessandro Sforza accepted King Ferrante's invitation and traveled to Naples. He was immediately impressed by the city's beauty and grandeur. Naples was one of the richest and most powerful cities in Italy, and it was a center of culture and learning."
+ FEE_Condottieri_Events.8.OPT1: "The finest for our armies!"
+
+ FEE_Condottieri_Events.9.T: "Alessandro Granconnestabile di Napoli"
+ FEE_Condottieri_Events.9.D: "One day, King Ferrante's enemies invaded the kingdom of Naples. Our King led his army out to meet the invaders in battle. Alessandro Sforza rode at the forefront of the Neapolitan cavalry. The two armies clashed on the battlefield, and a fierce battle raged. Alessandro Sforza and his cavalry charged into the enemy lines, breaking their formations and sending them into retreat. The Neapolitan army won a decisive victory in the battle, and our King was overjoyed. He thanked Alessandro Sforza for his bravery and his leadership. \nDue to his gestures in the wars agaisnt the Barons, who wished for the throne of Naples to fall under the Angevin rule, we have appoint Alessandro as the Granconnestabile of [121.GetName]!"
+ FEE_Condottieri_Events.9.OPT1: "May he take care of Naples as much as he took care of our lands."
+
+ FEE_Condottieri_Events.10.T: "Alessandro Sforza: The Lion of Pesaro"
+ FEE_Condottieri_Events.10.D: "Sing, one and all, of Alessandro Sforza, the Lion of Pesaro, bold and brave, whose deeds of valor and of daring echoed through the Italian wave.\nThe lords of Milan, Rome, and Naples all sought his sword and might, he led their armies with his skill, and won them many a fight. \nIn Pesaro, he found his home, a lord wise and just, he ruled with fairness and with strength, and brought his people trust. \nBut time does take its toll on all, and Alessandro's reign did end, he passed away in peace and grace, a true friend to all his friends."
+ FEE_Condottieri_Events.10.OPT1: "So let us raise a glass to him, whose memory shall ever renew."
+
+# Estate Modifiers
+
+# Event Modifiers
+ fee_condottieri_alessandro_signore: "Alessandro Sforza"
+ desc_fee_condottieri_alessandro_signore: ""
+ fee_condottieri_alessandro_connestabile: "Gran Connestabile Alessandro"
+ desc_fee_condottieri_alessandro_connestabile: ""
+# Opinion Modifiers
+
+# Tooltips
