@@ -22,10 +22,12 @@ fee_naples_conspiracy_barons_1 = {
 		}
 	}
 	can_stop = {
-		has_any_disaster = yes
-		custom_trigger_tooltip = {
-			tooltip = FEE_NAP_FIRST_BARONY_SKIPPED_TT
-			NOT = { has_country_flag = fee_nap_first_barony_skipped }
+		OR = {
+			has_any_disaster = yes
+			custom_trigger_tooltip = {
+				tooltip = FEE_NAP_FIRST_BARONY_SKIPPED_TT
+				has_country_flag = fee_nap_first_barony_skipped
+			}
 		}
 	}
 
@@ -144,7 +146,13 @@ fee_naples_conspiracy_barons_2 = {
 		}
 	}
 	can_stop = {
-		has_any_disaster = yes
+		OR = {
+			has_any_disaster = yes
+			custom_trigger_tooltip = {
+				tooltip = FEE_NAP_FIRST_BARONY_SKIPPED_TT
+				has_country_flag = fee_nap_second_barony_skipped
+			}
+		}
 	}
 
 	down_progress = {
