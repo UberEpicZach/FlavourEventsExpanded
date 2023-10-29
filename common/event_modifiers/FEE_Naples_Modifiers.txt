@@ -50,23 +50,15 @@ fee_nap_catanzaro_seta_jews_messina = {
 	local_build_time = -0.15
 }
 
-fee_nap_nobles_control = {
-	legitimacy = -1
-	reform_progress_growth = -0.25
-	global_manpower_modifier = -0.15
-	manpower_recovery_speed = -0.15
+fee_nap_taranto_del_balzo = {
+	province_trade_power_modifier = 5
 }
-fee_nap_ruled_over_barons = {
-	legitimacy = 1
-	reform_progress_growth = 0.50
+fee_nap_commissioni_del_balzo = {
+	province_trade_power_modifier = 5
+	province_trade_power_value = 0.15
+	ship_trade_power_modifier = 0.05
 }
-fee_nap_twenty_years_prosperity = {
-	development_cost = -0.10
-	global_prosperity_growth = 1
-	global_manpower_modifier = 0.30
-	manpower_recovery_speed = 0.30
-	global_monthly_devastation = -0.1
-}
+
 fee_nap_pedro_alvarez = {
 	local_autonomy = -0.05
 	global_unrest = 1

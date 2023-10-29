@@ -39,21 +39,19 @@ country_event = {
 				}
 			}
 			random_owned_province = {
-				limit = {
-					area = apulia_area
-				}
+				limit = { area = apulia_area }
 				spawn_rebels = {
 					size = 1
 					type = noble_rebels
+					friend = FRA
 				}
 			}
 			random_owned_province = {
-				limit = {
-					area = calabria_area
-				}
+				limit = { area = calabria_area }
 				spawn_rebels = {
 					size = 1
 					type = noble_rebels
+					friend = FRA
 				}
 			}
 		}
@@ -67,21 +65,19 @@ country_event = {
 				}
 			}
 			random_owned_province = {
-				limit = {
-					area = apulia_area
-				}
+				limit = { area = apulia_area }
 				spawn_rebels = {
 					size = 2
 					type = noble_rebels
+					friend = FRA
 				}
 			}
 			random_owned_province = {
-				limit = {
-					area = calabria_area
-				}
+				limit = { area = calabria_area }
 				spawn_rebels = {
 					size = 1
 					type = noble_rebels
+					friend = FRA
 				}
 			}
 		}
@@ -95,21 +91,19 @@ country_event = {
 				}
 			}
 			random_owned_province = {
-				limit = {
-					area = apulia_area
-				}
+				limit = { area = apulia_area }
 				spawn_rebels = {
 					size = 2
 					type = noble_rebels
+					friend = FRA
 				}
 			}
 			random_owned_province = {
-				limit = {
-					area = calabria_area
-				}
+				limit = { area = calabria_area }
 				spawn_rebels = {
 					size = 2
 					type = noble_rebels
+					friend = FRA
 				}
 			}
 		}
@@ -123,41 +117,37 @@ country_event = {
 				}
 			}
 			random_owned_province = {
-				limit = {
-					area = apulia_area
-				}
+				limit = { area = apulia_area }
 				spawn_rebels = {
 					size = 3
 					type = noble_rebels
+					friend = FRA
 				}
 			}
 			random_owned_province = {
-				limit = {
-					area = calabria_area
-				}
+				limit = { area = calabria_area }
 				spawn_rebels = {
 					size = 2
 					type = noble_rebels
+					friend = FRA
 				}
 			}
 		}
 		else = {
 			random_owned_province = {
-				limit = {
-					area = apulia_area
-				}
+				limit = { area = apulia_area }
 				spawn_rebels = {
 					size = 3
 					type = noble_rebels
+					friend = FRA
 				}
 			}
 			random_owned_province = {
-				limit = {
-					area = calabria_area
-				}
+				limit = { area = calabria_area }
 				spawn_rebels = {
 					size = 3
 					type = noble_rebels
+					friend = FRA
 				}
 			}
 		}
@@ -189,11 +179,11 @@ country_event = {
 		set_country_flag = fee_nap_first_barony_skipped
 		change_mil = 1
 		add_ruler_modifier = {
-			name = fee_nap_ruled_over_barons
+			name = fee_disaster_naples_ruled_over_barons
 			duration = -1
 		}
 		add_country_modifier = {
-			name = fee_nap_twenty_years_prosperity
+			name = fee_disaster_naples_twenty_years_prosperity
 			duration = 7300
 		}
 		add_estate_loyalty = {
@@ -225,6 +215,15 @@ country_event = {
 
 	option = {
 		name = disaster_fee_naples_conspiracy_barons.4.OPT1
+
+		define_general = {
+			name = "Giorgio Castriota Scanderbeg"
+			fire = 3
+			shock = 2
+			manuever = 4
+			siege = 1
+			trait = goal_oriented_personality
+		}
 		random_owned_province = {
 			limit = {
 				controlled_by = ROOT
@@ -233,14 +232,6 @@ country_event = {
 			infantry = ROOT
 			infantry = ROOT
 			cavalry = ROOT
-		}
-		define_general = {
-			fire = 3
-			shock = 2
-			manuever = 4
-			siege = 1
-			name = "Giorgio Castriota Scanderbeg"
-			trait = goal_oriented_personality
 		}
 	}
 }
@@ -265,6 +256,7 @@ country_event = {
 			spawn_rebels = {
 				size = 1
 				type = noble_rebels
+				friend = FRA
 			}
 		}
 	}
@@ -356,12 +348,12 @@ country_event = {
 		if = {
 			limit = { has_regency = no }
 			add_ruler_modifier = {
-				name = fee_nap_ruled_over_barons
+				name = fee_disaster_naples_ruled_over_barons
 				duration = -1
 			}
 		}
 		add_country_modifier = {
-			name = fee_nap_twenty_years_prosperity
+			name = fee_disaster_naples_twenty_years_prosperity
 			duration = 7300
 		}
 		add_estate_loyalty = {
@@ -399,7 +391,7 @@ country_event = {
 
 		add_stability = -2
 		add_ruler_modifier = {
-			name = fee_nap_nobles_control
+			name = fee_disaster_naples_nobles_control
 			duration = -1
 		}
 		if = {
@@ -421,6 +413,7 @@ country_event = {
 					spawn_rebels = {
 						size = 1
 						type = noble_rebels
+						friend = FRA
 					}
 					owner = {
 						random_owned_province = {
@@ -434,6 +427,7 @@ country_event = {
 							spawn_rebels = {
 								size = 1
 								type = noble_rebels
+								friend = FRA
 							}
 						}
 					}
@@ -456,6 +450,7 @@ country_event = {
 					spawn_rebels = {
 						size = 2
 						type = noble_rebels
+						friend = FRA
 					}
 					owner = {
 						random_owned_province = {
@@ -469,6 +464,7 @@ country_event = {
 							spawn_rebels = {
 								size = 1
 								type = noble_rebels
+								friend = FRA
 							}
 						}
 					}
@@ -491,6 +487,7 @@ country_event = {
 					spawn_rebels = {
 						size = 2
 						type = noble_rebels
+						friend = FRA
 					}
 					owner = {
 						random_owned_province = {
@@ -504,6 +501,7 @@ country_event = {
 							spawn_rebels = {
 								size = 2
 								type = noble_rebels
+								friend = FRA
 							}
 						}
 					}
@@ -526,6 +524,7 @@ country_event = {
 					spawn_rebels = {
 						size = 3
 						type = noble_rebels
+						friend = FRA
 					}
 					owner = {
 						random_owned_province = {
@@ -539,6 +538,7 @@ country_event = {
 							spawn_rebels = {
 								size = 2
 								type = noble_rebels
+								friend = FRA
 							}
 						}
 					}
@@ -547,6 +547,7 @@ country_event = {
 					spawn_rebels = {
 						size = 3
 						type = noble_rebels
+						friend = FRA
 					}
 					owner = {
 						random_owned_province = {
@@ -560,6 +561,7 @@ country_event = {
 							spawn_rebels = {
 								size = 3
 								type = noble_rebels
+								friend = FRA
 							}
 						}
 					}
@@ -587,6 +589,7 @@ country_event = {
 					spawn_rebels = {
 						size = 1
 						type = noble_rebels
+						friend = FRA
 					}
 				}
 				random_owned_province = {
@@ -600,6 +603,7 @@ country_event = {
 					spawn_rebels = {
 						size = 1
 						type = noble_rebels
+						friend = FRA
 					}
 				}
 			}
@@ -627,6 +631,7 @@ country_event = {
 					spawn_rebels = {
 						size = 2
 						type = noble_rebels
+						friend = FRA
 					}
 				}
 				random_owned_province = {
@@ -640,6 +645,7 @@ country_event = {
 					spawn_rebels = {
 						size = 1
 						type = noble_rebels
+						friend = FRA
 					}
 				}
 			}
@@ -667,6 +673,7 @@ country_event = {
 					spawn_rebels = {
 						size = 2
 						type = noble_rebels
+						friend = FRA
 					}
 				}
 				random_owned_province = {
@@ -680,6 +687,7 @@ country_event = {
 					spawn_rebels = {
 						size = 2
 						type = noble_rebels
+						friend = FRA
 					}
 				}
 			}
@@ -707,6 +715,7 @@ country_event = {
 					spawn_rebels = {
 						size = 3
 						type = noble_rebels
+						friend = FRA
 					}
 				}
 				random_owned_province = {
@@ -720,6 +729,7 @@ country_event = {
 					spawn_rebels = {
 						size = 2
 						type = noble_rebels
+						friend = FRA
 					}
 				}
 			}
@@ -735,6 +745,7 @@ country_event = {
 					spawn_rebels = {
 						size = 3
 						type = noble_rebels
+						friend = FRA
 					}
 				}
 				random_owned_province = {
@@ -748,6 +759,7 @@ country_event = {
 					spawn_rebels = {
 						size = 3
 						type = noble_rebels
+						friend = FRA
 					}
 				}
 			}
@@ -780,7 +792,7 @@ country_event = {
 			estate = estate_nobles
 			share = -100
 		}
-		remove_country_modifier = fee_nap_nobles_control
+		remove_country_modifier = fee_disaster_naples_nobles_control
 	}
 }
 
@@ -816,9 +828,9 @@ country_event = {
 			loyalty = -35
 		}
 		add_ruler_modifier = {
-			name = fee_nap_ruled_over_barons
+			name = fee_disaster_naples_ruled_over_barons
 			duration = -1
 		}
-		remove_country_modifier = fee_nap_nobles_control
+		remove_country_modifier = fee_disaster_naples_nobles_control
 	}
 }

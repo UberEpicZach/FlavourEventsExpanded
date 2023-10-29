@@ -110,9 +110,35 @@
  FEE_Naples_Events.22.OPT1: "This will be renown as a Story of Survival and Strength"
  FEE_Naples_Events.22.OPT2: "Rebuilding the city has its topmost priority."
 
+ FEE_Naples_Events.25.T: "Giovanni Antonio Orsini"
+ FEE_Naples_Events.25.D: "As a member of the esteemed Orsini family, he was a central figure in the intricate tapestry of Italian politics during the Renaissance era. His rule in Taranto was marked by both political maneuvering and significant territorial influence, making him a notable character in the history of southern Italy."
+ FEE_Naples_Events.25.OPT1: "The lord of Taranto!"
+
+ FEE_Naples_Events.26.T: "Commissioni Marittime dei del Balzo"
+ FEE_Naples_Events.26.D: "One of the first things that Giovanni Antonio did was to improve the infrastructure of Apulia. He built new roads and bridges, and he repaired and maintained existing ones. He also dredged the harbors of Taranto and other coastal cities, making them more accessible to merchant ships. As a result of Giovanni Antonio's efforts, Apulia became a prosperous and productive region. The cities of Apulia, especially Taranto, became important centers of commerce and trade. Merchants from all over the Mediterranean came to Apulia to buy and sell goods. "
+ FEE_Naples_Events.26.OPT1: "A careful investement."
+ FEE_Naples_Events.26.OPT2: "No, it would bring too much power."
+
+ FEE_Naples_Events.27.T: "The Enrichment of Taranto: A Maritime Odyssey"
+ FEE_Naples_Events.27.D: "The De Balzo family had ruled Apulia for many generations. They were wise and benevolent rulers, and they cared deeply for their people. Under the leadership of the De Balzo family, Apulia became increasingly prosperous. The fields were well-tended, and the crops were bountiful. The cities were bustling with activity, and the people were content. The De Balzo family also invested in trade and commerce. They built a fleet of merchant ships, which sailed to ports all over the Mediterranean. The ships carried Apulian goods to Ragusa, Constantinople, Cyprus, and other far-off lands. In return, the ships brought back exotic goods from all over the world. The people of Apulia were able to enjoy spices from the Orient, silks from China, and perfumes from Arabia. The De Balzo family's ships also helped to spread the fame of Apulian goods. Apulian grain, olive oil, and wine were prized all over the Mediterranean. Apulian merchants became wealthy and powerful, and the cities of Apulia grew and flourished."
+ FEE_Naples_Events.27.OPT1: "Purely for commerce"
+
+ FEE_Naples_Events.28.T: "The reclusion of Giovanni Antonio Orsini"
+ FEE_Naples_Events.28.D: "With the passing of Alfonso V, the lordship of Taranto found itself in a state of uncertainty. Giovanni Antonio Orsini, a noble known for his strong-willed spirit and aspirations for Taranto's prosperity, had concerns about the new ruler and the changing tides of power. Discontent with the shifting political landscape, he chose to withdraw and seclude himself in the familiar embrace of his beloved land. The people of Taranto, who had thrived under his rule, watched as their lord retreated to the comforts of his land. Giovanni Antonio's presence had brought prosperity and ambition to the city, and his absence was keenly felt. The nobility and the common folk alike wondered about the future of Taranto and the fate of the De Balzo family."
+ FEE_Naples_Events.28.OPT1: "Giovanni Antonio pondered the path ahead."
+
+ FEE_Naples_Events.29.T: "The Orsini Conundrum"
+ FEE_Naples_Events.29.D: "The revelation sent shockwaves through the kingdom. The once-beloved lord, Giovanni Antonio Orsini, who had presided over Taranto and Apulia, had been the hidden hand behind the uprising of the Barons against the reigning power. Betrayal was a bitter pill to swallow, and the people were left to grapple with the complexity of the situation. Giovanni Antonio, known for his vision and ambition, had seemingly turned against the ruling authority. The forces he had led into battle were not just any forces; they were the rallying cry of the disenchanted nobility, the Barons who had sought to alter the course of the kingdom's history."
+ FEE_Naples_Events.29.OPT1: "Shadows of Betrayal"
+
+ FEE_Naples_Events.30.T: "End of del Balzo?"
+ FEE_Naples_Events.30.D: "The city of Taranto, which had once flourished under his rule, was now caught in a tangled web of intrigue. The De Balzo family, long celebrated for their contributions to Taranto and Apulia, now stood at the center of a storm of political turmoil. Should the family be exiled?"
+ FEE_Naples_Events.30.OPT1: "We must separate their bads from their deeds."
+ FEE_Naples_Events.30.OPT2: "We will never forgive them!"
+
  FEE_Naples_Events.93.T: "Dream of Ladislao I"
  FEE_Naples_Events.93.D: "Tamed the internal pitfalls, Ladislao soon turned his attention outside the borders of his kingdom. It was in these years that the dream of building a great state reality that included the entire Italian peninsula, unified under the crown of Naples and the insignia of the Durazzo was born in him. The idea of the Kingdom of Italy that precedes the Risorgimento enterprise by more than four hundred years and to which Ladislao will dedicate all his efforts during his short life. In the years to come, in fact, he would take advantage of the crisis situation in which the composite Italian political reality was pouring to considerably expand his kingdom and his power above all to the detriment of the papal dominions, appropriating and disposing of many of the papal territories as he pleased. \nShould we reclaim the dream of Ladislao and focus on the creation of an Italian state?"
- FEE_Naples_Events.93.OPT1: "We will continue his work."
+ FEE_Naples_Events.93.OPT1: "A dream of United Italy?"
  FEE_Naples_Events.93.OPT2: "We must focus on internal affair."
 
  FEE_Naples_Events.94.T: "Legacy of Ladislao I"
@@ -180,12 +206,11 @@
  fee_nap_catanzaro_seta_jews_messina: "Refugees from [124.GetName]"
  desc_fee_nap_catanzaro_seta_jews_messina: ""
 
- fee_nap_nobles_control: "Nobles in Control"
- desc_fee_nap_nobles_control: ""
- fee_nap_ruled_over_barons: "Ruled Over the Barons"
- desc_fee_nap_ruled_over_barons: ""
- fee_nap_twenty_years_prosperity: "Twenty Years of Prosperity"
- desc_fee_nap_twenty_years_prosperity: ""
+ fee_nap_taranto_del_balzo: "Del Balzo"
+ desc_fee_nap_taranto_del_balzo: ""
+ fee_nap_commissioni_del_balzo: "Commissioni Marittime dei Del Balzo"
+ desc_fee_nap_commissioni_del_balzo: ""
+
  fee_nap_pedro_alvarez: "Pedro Alvarez de Toledo"
  desc_fee_nap_pedro_alvarez: "While a harsh ruler, de Toledo did much to centralise the Neapolitan state."
  fee_nap_gennaro_poveri: "San Gennaro dei Poveri"
@@ -207,3 +232,4 @@
  FEE_NAPLES_SILK_FOREIGN_CRAFTSMAN_PALERMO_TUSCAN_TT: "Every §YTuscan§! country will be welcomed to hear about our mutal help!"
  FEE_NAPLES_SILK_FOREIGN_CRAFTSMAN_PALERMO_MOORISH_TT: "§YMoors§! from North Africa will be back in Sicily!"
  FEE_NAPLES_SILK_FOREIGN_CRAFTSMAN_PALERMO_DUTCH_TT: "The §YDutch§! will be delighted by this!"
+ FEE_NAP_FOLLOWED_DREAM_LADISLAO_TT: "Following the Dream of King Ladislao I of Naples we might §GUnite Italy§! for the first time in history."
