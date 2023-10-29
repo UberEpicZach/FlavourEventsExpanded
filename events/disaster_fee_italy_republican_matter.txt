@@ -75,7 +75,7 @@ country_event = {
 		add_prestige = -20
 		add_legitimacy_equivalent = { amount = -20 republican_tradition = -10 }
 
-		custom_tooltip = ITA_REPUBLICAN_MATTER_TT
+		custom_tooltip = FEE_ITA_REPUBLICAN_MATTER_TT
 		set_country_flag = ita_republican_matter
 	}
 }

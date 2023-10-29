@@ -81,7 +81,7 @@ fee_italy_republican_matter = {
 			}
 		}
 		custom_trigger_tooltip = {
-			tooltip = ITA_DISASTER_REPUBLICAN_TT
+			tooltip = FEE_ITA_DISASTER_REPUBLICAN_TT
 			OR = {
 				has_country_flag = fee_ita_republican_matter_subversed
 				had_country_flag = {
