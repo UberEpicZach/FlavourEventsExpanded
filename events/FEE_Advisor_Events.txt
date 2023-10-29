@@ -829,13 +829,13 @@ country_event = {
 		trigger = {
 			NOT = { has_country_flag = fee_events_for_student_of_language_alone }
 		}
-		desc = FEE_Advisor_Event.17.1.D
+		desc = FEE_Advisor_Event.17.D.1
 	}
 	desc = {
 		trigger = {
 			has_country_flag = fee_events_for_student_of_language_alone
 		}
-		desc = FEE_Advisor_Event.17.2.D
+		desc = FEE_Advisor_Event.17.D.2
 	}
 	picture = CITY_VIEW_eventPicture
 
