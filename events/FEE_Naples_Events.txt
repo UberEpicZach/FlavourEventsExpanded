@@ -386,8 +386,9 @@ country_event = {
 		is_year = 1440
 		fee_is_was_nap_sic = yes
 		NOT = { has_ruler = "Alfons V" }
-		has_ruler = yes
+		has_regency = no
 		NOT = { is_year = 1465 }
+		is_lesser_in_union = no
 	}
 
 	mean_time_to_happen = {
@@ -405,7 +406,7 @@ country_event = {
 			}
 		}
 
-		add_stability_or_adm_power = yes
+		add_legitimacy_equivalent = { amount = 10 republican_tradition = 5 }
 	}
 
 	option = {
@@ -418,6 +419,7 @@ country_event = {
 			limit = { has_consort = yes }
 			remove_consort = yes
 		}
+		add_legitimacy_equivalent = { amount = -5 republican_tradition = -3 }
 		define_consort = {
 			name = "Isabella Chiaromonte"
 			culture = neapolitan
@@ -428,7 +430,10 @@ country_event = {
 			mil = 2
 		}
 		apulia_area = {
-			add_unrest = -3
+			add_province_modifier = {
+				name = domain_of_spouses_family
+				duration = 9125
+			}
 		}
 	}
 }
