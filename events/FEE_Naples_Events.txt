@@ -653,7 +653,21 @@ country_event = {
 				trade_goods = cloth
 				trade_goods = silk
 			}
-			new_world_i = 100
+		}
+		OR = {
+			121 = { new_world_i = 100 }
+			224 = {
+				trade_share = {
+					country = ROOT
+					share = 10
+				}
+			}
+			1295 = {
+				trade_share = {
+					country = ROOT
+					share = 10
+				}
+			}
 		}
 		is_year = 1477
 		NOT = { is_year = 1500 }
@@ -2282,7 +2296,7 @@ country_event = {
 		months = 360
 		modifier = {
 			factor = 0.6
-			has_country_modifier = fee_nap_pedro_alvarez
+			capital_scope = { has_province_modifier = fee_nap_pedro_alvarez }
 		}
 		modifier = {
 			factor = 0.8
