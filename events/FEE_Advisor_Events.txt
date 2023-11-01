@@ -628,7 +628,11 @@ country_event = {
 	option = {
 		name = FEE_Advisor_Event.13.OPT1
 
-		change_adm = 1
+		if = {
+			limit = { ADM = 6 }
+			add_adm_power = 120
+		}
+		else = { change_adm = 1 }
 	}
 
 	option = {
