@@ -431,7 +431,7 @@ country_event = {
 		}
 		apulia_area = {
 			add_province_modifier = {
-				name = domain_of_spouses_family
+				name = home_of_consort
 				duration = 9125
 			}
 		}
@@ -2040,6 +2040,8 @@ country_event = {
 				size = 1
 				type = noble_rebels
 				friend = FRA
+				leader = "Giovanni Antonio Orsini"
+				leader_dynasty = "del Balzo"
 			}
 		}
 	}
@@ -2057,7 +2059,10 @@ country_event = {
 	trigger = {
 		fee_is_was_nap_sic = yes
 		NOT = { has_disaster = fee_naples_conspiracy_barons_1 }
-		owns = 122
+		122 = {
+			owned_by = ROOT
+			has_province_modifier = fee_nap_commissioni_del_balzo
+		}
 		has_country_flag = fee_nap_conjury_orsini
 	}
 
@@ -2068,7 +2073,7 @@ country_event = {
 		}
 
 		add_years_of_income = -0.25
-		add_legitimacy_equivalent = { amount = -10 republican_tradition = -5 }
+		add_legitimacy_equivalent = { amount = -5 republican_tradition = -3 }
 	}
 
 	option = {
@@ -2077,9 +2082,7 @@ country_event = {
 			factor = 25
 		}
 
-		122 = {
-			remove_province_modifier = fee_nap_commissioni_del_balzo
-		}
+		122 = { remove_province_modifier = fee_nap_commissioni_del_balzo }
 	}
 }
 

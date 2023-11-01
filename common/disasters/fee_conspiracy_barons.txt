@@ -3,6 +3,7 @@ fee_naples_conspiracy_barons_1 = {
 		fee_is_was_nap_sic = yes
 		has_estate = estate_nobles
 		NOT = { has_country_flag = fee_nap_first_barony_risen }
+		NOT = { has_country_flag = fee_nap_first_barony_skipped }
 	}
 	can_start = {
 		has_any_disaster = no
@@ -92,13 +93,19 @@ fee_naples_conspiracy_barons_1 = {
 	}
 
 	can_end = {
+		stability = 1
 		NOT = {
 			italy_region = {
 				owned_by = ROOT
 				controlled_by = noble_rebels
 			}
 		}
-		NOT = { num_of_rebel_armies = 1 }
+		NOT = {
+			italy_region = {
+				owned_by = ROOT
+				units_in_province = REB
+			}
+		}
 	}
 
 	modifier = {
@@ -216,13 +223,19 @@ fee_naples_conspiracy_barons_2 = {
 	}
 
 	can_end = {
+		stability = 1
 		NOT = {
 			italy_region = {
 				owned_by = ROOT
 				controlled_by = noble_rebels
 			}
 		}
-		NOT = { num_of_rebel_armies = 1 }
+		NOT = {
+			italy_region = {
+				owned_by = ROOT
+				units_in_province = REB
+			}
+		}
 	}
 
 	modifier = {
