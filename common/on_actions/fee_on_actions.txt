@@ -1,3 +1,66 @@
 on_startup = {
 	country_event = { id = flavour_and_events_expanded_events.1 } # set flag
 }
+# #Unit Scope OnAction for Battle Lost
+on_battle_lost_unit = {
+	if = {
+		limit = {
+			unit_owner = {
+				tag = BUR
+				has_ruler_flag = fee_swi_charles_in_command
+			}
+			is_ruler_commanding_unit = yes
+			enemy_unit = {
+				unit_owner = {
+					tag = SWI
+				}
+			}
+		}
+		BUR = {
+			country_event = { id = FEE_Switzerland_Events.14 }  # kills the Ruler of Burgundy
+		}
+	}
+}
+
+# # country
+# on_heir_death = { #updated to orgifns
+# 	events = {
+# 		FEE_Charles_V_Events.4 #
+# 		FEE_Charles_V_Events.1
+# 	}
+# }
+
+# # country
+# on_monarch_death = {
+# 	events = {
+# 		FEE_Charles_V_Events.1 ##You get a new heir on monarch death, so Charles V could be that new heir
+# 		FEE_Charles_V_Events.10 #Charles Dies
+# 	}
+# }
+
+# country
+on_new_heir = {
+	if = {
+		limit = {
+			NOT = { heir_age = 1 }
+			NOT = { total_development = 150 }
+			all_countries_including_self = {
+				NOT = { has_heir_flag = child_of_destiny }
+				NOT = { has_ruler_flag = child_of_destiny }
+			}
+		}
+		random = {
+			chance = 1
+			set_heir_flag = child_of_destiny
+			set_ruler_flag = child_of_destiny
+		}
+	}
+}
+
+# OBS: Consider that the following on_actions can be called for Personal Union juniors as well.
+# country
+# on_new_monarch = {
+# 	events = {
+# 		FEE_Charles_V_Events.2
+# 	}
+# }
