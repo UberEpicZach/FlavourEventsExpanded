@@ -1128,7 +1128,7 @@ country_event = {
 		50 = {
 			owner = {
 				country_event = {
-					id = FEE_Fairs_Events.5014
+					id = FEE_Fairs_Events.5004
 					days = 30
 				}
 			}
@@ -1173,224 +1173,117 @@ country_event = {
 
 	is_triggered_only = yes
 
+	immediate = {
+		hidden_effect = {
+			random_list = {
+				10 = { set_ruler_flag = fee_almighty_protection_flag }
+				20 = { set_ruler_flag = fee_solemn_hymn_flag }
+				30 = { set_ruler_flag = fee_angelic_blessing_flag }
+				40 = { set_ruler_flag = fee_kiss_luck_flag }
+			}
+		}
+	}
+
 	option = {
 		name = FEE_Fairs_Events.5003.OPT1
+		trigger = {
+			total_development = 300
+		}
 		ai_chance = {
-			factor = 50
+			factor = 1
 		}
 
-		if = {
-			limit = { total_development = 300 }
-			add_mana_scaled_on_monarch_skill_fee = yes
-		}
-		else = {
-			random_list = {
-				10 = {
-					country_event = {
-						id = FEE_Fairs_Events.5004
-						days = 10
-					}
-				}
-				20 = {
-					country_event = {
-						id = FEE_Fairs_Events.5005
-						days = 10
-					}
-				}
-				30 = {
-					country_event = {
-						id = FEE_Fairs_Events.5006
-						days = 10
-					}
-				}
-				40 = {
-					country_event = {
-						id = FEE_Fairs_Events.5007
-						days = 10
-					}
-				}
-			}
-		}
+		add_mana_scaled_on_monarch_skill_fee = yes
 	}
-}
-
-#Almighty Protection
-country_event = {
-	id = FEE_Fairs_Events.5004
-	title = FEE_Fairs_Events.5004.T
-	desc = FEE_Fairs_Events.5004.D
-	picture = GOOD_WITH_MONARCH_eventPicture
-
-	is_triggered_only = yes
 
 	option = {
-		name = FEE_Fairs_Events.5004.OPT1
+		name = FEE_Fairs_Events.5003.OPT2
+		trigger = {
+			has_ruler_flag = fee_almighty_protection_flag
+		}
 		ai_chance = {
-			factor = 50
+			factor = 1
 		}
 
-		if = {
-			limit = {
-				total_development = 300
-			}
-			add_mana_scaled_on_monarch_skill_fee = yes
-		}
-		else = {
-			add_ruler_modifier = {
-				name = fee_almighty_protection
-				duration = -1
-			}
+		add_ruler_modifier = {
+			name = fee_almighty_protection
+			duration = -1
 		}
 	}
-}
-
-#Solemn Hymn
-country_event = {
-	id = FEE_Fairs_Events.5005
-	title = FEE_Fairs_Events.5005.T
-	desc = FEE_Fairs_Events.5005.D
-	picture = GOOD_WITH_MONARCH_eventPicture
-
-	is_triggered_only = yes
 
 	option = {
-		name = FEE_Fairs_Events.5005.OPT1
+		name = FEE_Fairs_Events.5003.OPT3
+		trigger = {
+			has_ruler_flag = fee_solemn_hymn_flag
+		}
 		ai_chance = {
-			factor = 50
+			factor = 1
 		}
 
-		if = {
-			limit = {
-				total_development = 300
-			}
-			add_mana_scaled_on_monarch_skill_fee = yes
-		}
-		else = {
-			add_ruler_modifier = {
-				name = fee_solemn_hymn
-				duration = -1
-			}
+		add_ruler_modifier = {
+			name = fee_solemn_hymn
+			duration = -1
 		}
 	}
-}
-
-#Angelic Blessing
-country_event = {
-	id = FEE_Fairs_Events.5006
-	title = FEE_Fairs_Events.5006.T
-	desc = FEE_Fairs_Events.5006.D
-	picture = GOOD_WITH_MONARCH_eventPicture
-
-	is_triggered_only = yes
 
 	option = {
-		name = FEE_Fairs_Events.5006.OPT1
+		name = FEE_Fairs_Events.5003.OPT4
+		trigger = {
+			has_ruler_flag = fee_angelic_blessing_flag
+		}
 		ai_chance = {
-			factor = 50
+			factor = 1
 		}
 
-		if = {
-			limit = {
-				total_development = 300
-			}
-			add_mana_scaled_on_monarch_skill_fee = yes
-		}
-		else = {
-			add_ruler_modifier = {
-				name = fee_angelic_blessing
-				duration = -1
-			}
+		add_ruler_modifier = {
+			name = fee_angelic_blessing
+			duration = -1
 		}
 	}
-}
-
-#Kiss of Luck
-country_event = {
-	id = FEE_Fairs_Events.5007
-	title = FEE_Fairs_Events.5007.T
-	desc = FEE_Fairs_Events.5007.D
-	picture = GOOD_WITH_MONARCH_eventPicture
-
-	is_triggered_only = yes
 
 	option = {
-		name = FEE_Fairs_Events.5007.OPT1
+		name = FEE_Fairs_Events.5003.OPT35
+		trigger = {
+			has_ruler_flag = fee_kiss_luck_flag
+		}
 		ai_chance = {
-			factor = 50
+			factor = 1
 		}
 
-		if = {
-			limit = {
-				total_development = 300
-			}
-			add_mana_scaled_on_monarch_skill_fee = yes
-		}
-		else = {
-			add_ruler_modifier = {
-				name = fee_angelic_blessing
-				duration = -1
-			}
+		add_ruler_modifier = {
+			name = fee_kiss_luck
+			duration = -1
 		}
 	}
 }
 
 #Misfortune
 country_event = {
-	id = FEE_Fairs_Events.5010
-	title = FEE_Fairs_Events.5010.T
-	desc = FEE_Fairs_Events.5010.D
+	id = FEE_Fairs_Events.5004
+	title = FEE_Fairs_Events.5004.T
+	desc = FEE_Fairs_Events.5004.D
 	picture = BAD_WITH_MONARCH_eventPicture
 
 	is_triggered_only = yes
 
-	option = {
-		name = FEE_Fairs_Events.5010.OPT1
-		ai_chance = {
-			factor = 50
-		}
-
-		random_list = {
-			10 = {
-				country_event = {
-					id = FEE_Fairs_Events.5011
-					days = 10
-				}
-			}
-			20 = {
-				country_event = {
-					id = FEE_Fairs_Events.5012
-					days = 10
-				}
-			}
-			30 = {
-				country_event = {
-					id = FEE_Fairs_Events.5013
-					days = 10
-				}
-			}
-			40 = {
-				country_event = {
-					id = FEE_Fairs_Events.5014
-					days = 10
-				}
+	immediate = {
+		hidden_effect = {
+			random_list = {
+				10 = { set_ruler_flag = fee_ruinous_powers_flag }
+				20 = { set_ruler_flag = fee_demonic_embrace_flag }
+				30 = { set_ruler_flag = fee_ancient_curse_flag }
+				40 = { set_ruler_flag = fee_witch_eye_flag }
 			}
 		}
 	}
-}
-
-#Ruinous Powers
-country_event = {
-	id = FEE_Fairs_Events.5011
-	title = FEE_Fairs_Events.5011.T
-	desc = FEE_Fairs_Events.5011.D
-	picture = BAD_WITH_MONARCH_eventPicture
-
-	is_triggered_only = yes
 
 	option = {
-		name = FEE_Fairs_Events.5011.OPT1
+		name = FEE_Fairs_Events.5004.OPT1
+		trigger = {
+			has_ruler_flag = fee_ruinous_powers_flag
+		}
 		ai_chance = {
-			factor = 50
+			factor = 1
 		}
 
 		add_ruler_modifier = {
@@ -1398,21 +1291,14 @@ country_event = {
 			duration = -1
 		}
 	}
-}
-
-#Demonic Embrace
-country_event = {
-	id = FEE_Fairs_Events.5012
-	title = FEE_Fairs_Events.5012.T
-	desc = FEE_Fairs_Events.5012.D
-	picture = BAD_WITH_MONARCH_eventPicture
-
-	is_triggered_only = yes
 
 	option = {
-		name = FEE_Fairs_Events.5012.OPT1
+		name = FEE_Fairs_Events.5004.OPT2
+		trigger = {
+			has_ruler_flag = fee_demonic_embrace_flag
+		}
 		ai_chance = {
-			factor = 50
+			factor = 1
 		}
 
 		add_ruler_modifier = {
@@ -1420,21 +1306,14 @@ country_event = {
 			duration = -1
 		}
 	}
-}
-
-#Ancient Cursing
-country_event = {
-	id = FEE_Fairs_Events.5013
-	title = FEE_Fairs_Events.5013.T
-	desc = FEE_Fairs_Events.5013.D
-	picture = BAD_WITH_MONARCH_eventPicture
-
-	is_triggered_only = yes
 
 	option = {
-		name = FEE_Fairs_Events.5013.OPT1
+		name = FEE_Fairs_Events.5004.OPT3
+		trigger = {
+			has_ruler_flag = fee_ancient_curse_flag
+		}
 		ai_chance = {
-			factor = 50
+			factor = 1
 		}
 
 		add_ruler_modifier = {
@@ -1442,21 +1321,14 @@ country_event = {
 			duration = -1
 		}
 	}
-}
-
-#Witch's Eyes
-country_event = {
-	id = FEE_Fairs_Events.5014
-	title = FEE_Fairs_Events.5014.T
-	desc = FEE_Fairs_Events.5014.D
-	picture = BAD_WITH_MONARCH_eventPicture
-
-	is_triggered_only = yes
 
 	option = {
-		name = FEE_Fairs_Events.5014.OPT1
+		name = FEE_Fairs_Events.5004.OPT4
+		trigger = {
+			has_ruler_flag = fee_witch_eye_flag
+		}
 		ai_chance = {
-			factor = 50
+			factor = 1
 		}
 
 		add_ruler_modifier = {
