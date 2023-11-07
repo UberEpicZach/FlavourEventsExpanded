@@ -1,6 +1,7 @@
 on_startup = {
 	country_event = { id = flavour_and_events_expanded_events.1 } # set flag
 }
+
 # #Unit Scope OnAction for Battle Lost
 on_battle_lost_unit = {
 	if = {
@@ -22,21 +23,21 @@ on_battle_lost_unit = {
 	}
 }
 
-# # country
-# on_heir_death = { #updated to orgifns
-# 	events = {
-# 		FEE_Charles_V_Events.4 #
-# 		FEE_Charles_V_Events.1
-# 	}
-# }
+# country
+on_heir_death = {
+	events = {
+		FEE_Charles_V_Events.4 #
+		FEE_Charles_V_Events.1 #Charles V becomes the heir
+	}
+}
 
-# # country
-# on_monarch_death = {
-# 	events = {
-# 		FEE_Charles_V_Events.1 ##You get a new heir on monarch death, so Charles V could be that new heir
-# 		FEE_Charles_V_Events.10 #Charles Dies
-# 	}
-# }
+# country
+on_monarch_death = {
+	events = {
+		FEE_Charles_V_Events.1 #Charles V becomes the heir
+		FEE_Charles_V_Events.10 #Charles Dies
+	}
+}
 
 # country
 on_new_heir = {
@@ -58,9 +59,9 @@ on_new_heir = {
 }
 
 # OBS: Consider that the following on_actions can be called for Personal Union juniors as well.
-# country
-# on_new_monarch = {
-# 	events = {
-# 		FEE_Charles_V_Events.2
-# 	}
-# }
+country
+on_new_monarch = {
+	events = {
+		FEE_Charles_V_Events.2
+	}
+}

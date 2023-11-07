@@ -8,6 +8,7 @@ country_event = {
 	picture = NEW_HEIR_eventPicture
 
 	fire_only_once = yes
+	is_triggered_only = yes
 
 	trigger = {
 		OR = {		#Fires for Spain or Castille
@@ -24,16 +25,8 @@ country_event = {
 
 		#Won't replace an existing heir if the monarch dies and leaves a regency.
 		NOT = { has_regency = yes }
-		capital_scope = {
-			continent = europe
-		}
-		HAB = {		#Austria must be Habsburg
-			dynasty = "von Habsburg"
-		}
-		#NOT = {	#The whole thing would be weird if there were both Spain and Castille existing.
-		#	exists = CAS
-		#	exists = SPA
-		#}
+		capital_scope = { continent = europe }
+		HAB = { dynasty = "von Habsburg" }
 		#Both Spain/Castille and Austria must have rivaled France...
 		if = {
 			limit = {
@@ -65,7 +58,8 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Charles_V_Events.1.OPT1 #FEE_Charles_V_Events.1.OPT1:0 "Interesting..."
+		#FEE_Charles_V_Events.1.OPT1:0 "Interesting..."
+		name = FEE_Charles_V_Events.1.OPT1
 
 		define_heir = {
 			name = "Charles"
@@ -73,8 +67,9 @@ country_event = {
 		}
 		hidden_effect = {
 			set_country_flag = FEE_Charles_V_Events_born
+			#Gives Austria the generic notification of Habsburg on a foreign throne
 			HAB = {
-				country_event = { id = flavor_spa.14 }#Gives Austria the generic notification of Habsburg on a foreign throne
+				country_event = { id = flavor_spa.14 }
 			}
 		}
 	}
@@ -101,13 +96,8 @@ country_event = {
 
 	trigger = {
 		has_country_flag = FEE_Charles_V_Events_born
-		HAB = {		#Austria must be Habsburg
-			dynasty = "von Habsburg"
-		}
+		HAB = { dynasty = "von Habsburg" }
 		has_ruler = "Charles"
-		hre_size = 1
-		NOT = { junior_union_with = HAB }#Won't fire if already in a union with Austria.
-		NOT = { senior_union_with = HAB }
 		NOT = { has_country_flag = FEE_Charles_V_Events_dead } #Won't fire if Chalres died as an heir
 		NOT = { has_country_flag = FEE_Charles_V_Events_ruler }
 	}
@@ -115,9 +105,7 @@ country_event = {
 	major = yes
 	major_trigger = {
 		OR = {
-			capital_scope = {
-				superregion = europe_superregion
-			}
+			capital_scope = { superregion = europe_superregion }
 			is_part_of_hre = yes
 		}
 	}
@@ -150,10 +138,9 @@ country_event = {
 		#Make Spain the Emperor:
 		if = {
 			limit = {
+				hre_size = 1
 				HAB = {
-					#Austria must be Habsburg
 					dynasty = "von Habsburg"
-					#AND must be emperor
 					is_emperor = yes
 				}
 			}
@@ -175,7 +162,7 @@ country_event = {
 
 		create_union = HAB	#Once all that silliness is done, create the PU
 		custom_tooltip = "Charles von Habsburg will become the Holy Roman Emperor"
-		set_government_rank_force = 2 #Putting Spain in the HRE makes it a duke, this fixes that.
+		# set_government_rank_force = 2 #Putting Spain in the HRE makes it a duke, this fixes that.
 
 		#Make all countries in Germany, France, Italy afraid of Spain (for 140 years)
 		custom_tooltip = fee_charles_v_fear_empire_tt
@@ -463,7 +450,7 @@ country_event = {
 	}
 }
 
-#Hidden event that prevents chain from continuing if Charles dies before ruling.
+#Charles V's death
 country_event = {
 	id = FEE_Charles_V_Events.4
 	title = FEE_Charles_V_Events.4.T
@@ -471,6 +458,7 @@ country_event = {
 	picture = NEW_HEIR_eventPicture
 
 	fire_only_once = yes
+	is_triggered_only = yes
 
 	trigger = {
 		has_country_flag = FEE_Charles_V_Events_born		#Charles has been born
@@ -621,17 +609,13 @@ country_event = {
 		NOT = { has_country_flag = fee_charles_v_abdicate_option }
 		NOT = { has_ruler = "Charles" }
 		NOT = { has_heir = "Charles" }
-		HAB = {								 #Austria must still be in the PU
-			junior_union_with = ROOT
-		}
+		
 	}
 
 	major = yes
 	major_trigger = {
 		OR = {
-			capital_scope = {
-				superregion = europe_superregion
-			}
+			capital_scope = { superregion = europe_superregion }
 			is_part_of_hre = yes
 		}
 	}
@@ -644,14 +628,11 @@ country_event = {
 		}
 
 		if = {
-			limit = {
-				has_ruler = "Charles"
-			}
-			kill_ruler = yes
+			limit = { senior_union_with = HAB }
+			break_union = HAB			#Breaks the PU with Austria
 		}
-		break_union = HAB			#Breaks the PU with Austria
-		custom_tooltip = fee_charles_v_abdication_charles_tt
 
+		custom_tooltip = fee_charles_v_abdication_charles_tt
 		hidden_effect = {
 			ROOT = {
 				if = {
@@ -779,93 +760,81 @@ country_event = {
 		}
 
 		set_country_flag = fee_charles_v_abdicate_option
-		HAB = {
-			capital_scope = {
-				spawn_rebels = {
-					type = pretender_rebels
-					size = 3
-					leader = "Ferdinand von Habsburg"
-				}
-			}
-			capital_scope = {
-				spawn_rebels = {
-					type = pretender_rebels
-					size = 1
-					leader = "Ferdinand von Habsburg"
-				}
-			}
-			random_core_province = {
-				limit = {
-					region = south_german_region
-				}
-				spawn_rebels = {
-					type = pretender_rebels
-					size = 1
-					leader = "Ferdinand von Habsburg"
-				}
-			}
-			random_core_province = {
-				limit = {
-					region = south_german_region
-				}
-				spawn_rebels = {
-					type = pretender_rebels
-					size = 3
-					leader = "Ferdinand von Habsburg"
-				}
-			}
-			random_core_province = {
-				limit = {
-					region = south_german_region
-				}
-				spawn_rebels = {
-					type = pretender_rebels
-					size = 1
-					leader = "Ferdinand von Habsburg"
-				}
-			}
-			random_core_province = {
-				limit = {
-					region = south_german_region
-				}
-				spawn_rebels = {
-					type = pretender_rebels
-					size = 1
-					leader = "Ferdinand von Habsburg"
-				}
-			}
-
-			if = {
-				limit = {
-					BOH = {
-						is_subject_of_type = personal_union
-						has_country_flag = fee_charles_v_pu_austria
+		if = {
+			limit = { senior_union_with = HAB }
+			HAB = {
+				capital_scope = {
+					spawn_rebels = {
+						type = pretender_rebels
+						size = 3
+						leader = "Ferdinand von Habsburg"
 					}
 				}
-				BOH = {
-					capital_scope = {
-						spawn_rebels = {
-							type = pretender_rebels
-							size = 2
-							leader = "Ferdinand von Habsburg"
+				random_core_province = {
+					limit = { region = south_german_region }
+					spawn_rebels = {
+						type = pretender_rebels
+						size = 1
+						leader = "Ferdinand von Habsburg"
+					}
+				}
+				random_core_province = {
+					limit = { region = south_german_region }
+					spawn_rebels = {
+						type = pretender_rebels
+						size = 3
+						leader = "Ferdinand von Habsburg"
+					}
+				}
+				random_core_province = {
+					limit = { region = south_german_region }
+					spawn_rebels = {
+						type = pretender_rebels
+						size = 1
+						leader = "Ferdinand von Habsburg"
+					}
+				}
+				random_core_province = {
+					limit = { region = south_german_region }
+					spawn_rebels = {
+						type = pretender_rebels
+						size = 1
+						leader = "Ferdinand von Habsburg"
+					}
+				}
+
+				if = {
+					limit = {
+						BOH = {
+							is_subject_of_type = personal_union
+							has_country_flag = fee_charles_v_pu_austria
+						}
+					}
+					BOH = {
+						capital_scope = {
+							spawn_rebels = {
+								type = pretender_rebels
+								size = 2
+								leader = "Ferdinand von Habsburg"
+							}
 						}
 					}
 				}
-			}
 
-			if = {
-				limit = {
-					HUN = {
-						is_subject_of_type = personal_union
-						has_country_flag = fee_charles_v_pu_austria
+				if = {
+					limit = {
+						HUN = {
+							is_subject_of_type = personal_union
+							has_country_flag = fee_charles_v_pu_austria
+						}
 					}
-				}
-				HUN = {
-					capital_scope = {
-						spawn_rebels = {
-							type = pretender_rebels
-							size = 2
-							leader = "Ferdinand von Habsburg"
+					HUN = {
+						capital_scope = {
+							spawn_rebels = {
+								type = pretender_rebels
+								size = 2
+								leader = "Ferdinand von Habsburg"
+							}
 						}
 					}
 				}
