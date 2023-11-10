@@ -1,5 +1,15 @@
 on_startup = {
 	country_event = { id = flavour_and_events_expanded_events.1 } # set flag
+	country_event = { #set the meme flag
+		id = FEE_Meme_Events.1
+		days = 10
+		random = 5
+	}
+	country_event = { #set the Fair flag
+		id = FEE_Fairs_Events.1
+		days = 30
+		random = 15
+	}
 }
 
 # #Unit Scope OnAction for Battle Lost

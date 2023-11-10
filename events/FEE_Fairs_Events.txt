@@ -8,12 +8,11 @@ country_event = {
 	picture = CARAVAN_EVENT_Picture
 
 	fire_only_once = yes
+	is_triggered_only = yes
 
 	trigger = {
-		ai = no
 		NOT = { has_global_flag = fee_trading_fairs_enabled }
 		NOT = { is_institution_enabled = global_trade }
-		NOT = { is_year = 1446 }
 	}
 
 	major = yes
