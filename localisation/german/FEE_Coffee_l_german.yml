@@ -1,0 +1,34 @@
+﻿l_german:
+ # Events:
+ FEE_Coffee_Events.EVTNAME1: "Coffee Plant smuggled into Italy"
+ FEE_Coffee_Events.EVTDESC1: "PENGU WHERE LOC?!"
+ FEE_Coffee_Events1.EVTOPT1: "We can make a fine buck off of it."
+ FEE_Coffee_Events1.EVTOPT2: "This would be a fine way to start an exotic garden."
+
+ FEE_Coffee_Events.EVTNAME2: "The Birth of the Coffee Italica"
+ FEE_Coffee_Events.EVTDESC2: "PENGU WHERE LOC?!"
+ FEE_Coffee_Events2.EVTOPT1: "PENGU WHERE LOC?!"
+ FEE_Coffee_Events2.EVTOPT2: "PENGU WHERE LOC?!"
+
+ # Decisions:
+ fee_import_coffee_seeds_decision_title: "Import Coffee Seeds"
+ fee_import_coffee_seeds_decision_desc: "PENGU WHERE LOC?!"
+ fee_expand_coffee_cultivation_decision_title: "Expand Coffee Cultivation"
+ fee_expand_coffee_cultivation_decision_desc: "PENGU WHERE LOC?!"
+ fee_institute_coffee_italica_decision_title: "Institute Coffee Italica"
+ fee_institute_coffee_italica_decision_desc: "PENGU WHERE LOC?!"
+
+ fee_import_coffee_seeds_decision_trigger_tt_1: "Have Expanded Infratructure at least §Y1§! time in each of the following provinces: §Y[104.GetName]§!, §Y[4728.GetName]§!, §Y[1862.GetName]§!, §Y[109.GetName]§!, §Y[106.GetName]§!, §Y[2979.GetName]§!, §Y[1875.GetName]§!, §Y[103.GetName]§! and §Y[2981.GetName]§!"
+ fee_import_coffee_seeds_decision_trigger_tt_2: "Have at least §Y20§! development in each of the following provinces: §Y[104.GetName]§!, §Y[4728.GetName]§!, §Y[1862.GetName]§!, §Y[109.GetName]§!, §Y[106.GetName]§!, §Y[2979.GetName]§!, §Y[1875.GetName]§!, §Y[103.GetName]§! and §Y[2981.GetName]§!"
+ fee_expand_coffee_cultivation_decision_trigger_tt: "§Y[104.GetName]§!, §Y[4728.GetName]§!, §Y[1862.GetName]§!, §Y[109.GetName]§!, §Y[106.GetName]§!, §Y[2979.GetName]§!, §Y[1875.GetName]§!, §Y[103.GetName]§! and §Y[2981.GetName]§! do NOT have the modifier '§YFirst Italian Coffee Plantation§!' or '§YPo Valley Coffee Growth'§!"
+ fee_institute_coffee_italica_decision_trigger_tt: "Have a §YManufactory§! and the trade good be §YCoffee§! in each of the following provinces: §Y[104.GetName]§!, §Y[4728.GetName]§!, §Y[1862.GetName]§!, §Y[109.GetName]§!, §Y[106.GetName]§!, §Y[2979.GetName]§!, §Y[1875.GetName]§!, §Y[103.GetName]§! and §Y[2981.GetName]§!"
+ fee_coffee_catastrophical_monoculture_failure_modifier_duration_tt: "until we enact the '§YInstitute Coffee Italica§!' decision"
+
+ # Modifiers:
+ fee_coffee_exotic_garden_modifier: "Exotic Garden"
+ fee_coffee_first_italian_coffee_plantation_modifier: "First Italian Coffee Plantation"
+ fee_coffee_failing_coffee_plantation_modifier: "Failing Coffee Plantation"
+ fee_coffee_catastrophical_monoculture_failure_modifier: "Catastrophic Monoculture Failure"
+ fee_coffee_po_valley_coffee_growth_modifier: "Po Valley Coffee Growth"
+ fee_coffee_coffee_italica_modifier_1: "Coffee Italica"
+ fee_coffee_coffee_italica_modifier_2: "Coffee Italica"
