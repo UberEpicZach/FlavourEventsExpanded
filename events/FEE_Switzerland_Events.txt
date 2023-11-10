@@ -586,22 +586,8 @@ country_event = {
 	picture = ADVISOR_eventPicture
 
 	fire_only_once = yes
-
-	trigger = {
-		tag = BUR
-		has_ruler_flag = fee_swi_charles_in_command
-		exists = SWI
-		BUR = {
-			OR = {
-				is_in_war = { attacker_leader = SWI }
-				is_in_war = { defender_leader = SWI }
-			}
-		}
-		NOT = { war_score = 0 }
-		any_army = {
-			is_ruler_commanding_unit = yes
-		}
-	}
+	
+	is_triggered_only = yes
 
 	option = {
 		name = FEE_Switzerland_Events.14.OPT1
@@ -618,9 +604,7 @@ country_event = {
 		}
 		193 = {
 			if = {
-				limit = {
-					owned_by = ROOT
-				}
+				limit = { owned_by = ROOT }
 				change_controller = SWI
 			}
 		}

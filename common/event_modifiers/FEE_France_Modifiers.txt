@@ -31,7 +31,7 @@ fee_france_legal_reform = {
 }
 fee_france_friendly_legal_class = {
 	global_autonomy = -0.05
-	liberty_desire = -5
+	reduced_liberty_desire = 5
 }
 fee_france_cultural_unification_effort = {
 	culture_conversion_cost = -0.10
