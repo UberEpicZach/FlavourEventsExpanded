@@ -1,6 +1,6 @@
 fee_lw_estates_general = {
 	diplomatic_annexation_cost = 0.15
-	liberty_desire = -0.15
+	reduced_liberty_desire = 15
 }
 fee_lw_rights_privileges = {
 	min_local_autonomy = 25
