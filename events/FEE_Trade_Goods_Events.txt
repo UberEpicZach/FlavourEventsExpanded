@@ -1,0 +1,223 @@
+namespace = FEE_Trade_Goods_Events
+
+###########################
+### Chocolate Events
+###########################
+
+# Chocolate!
+country_event = {
+	id = FEE_Trade_Goods_Events.1
+	title = FEE_Trade_Goods_Events.1.T
+	desc = FEE_Trade_Goods_Events.1.D
+	picture = TRADE_GOODS_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns_core_province = 90
+		is_year = 1600
+		### columbian exchange
+	}
+
+	goto = 90
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	option = {
+		name = FEE_Trade_Goods_Events.1.OPT1
+		trigger = {
+			NOT = {
+				121 = { trade_goods = cloth }
+			}
+		}
+
+	}
+
+	option = {
+		name = FEE_Trade_Goods_Events.1.OPT2
+		trigger = {
+			NOT = {
+				121 = { trade_goods = silk }
+			}
+		}
+
+	}
+
+	option = {
+		name = FEE_Trade_Goods_Events.1.OPT3
+
+		add_stability_or_adm_power = yes
+		90 = {
+			add_base_production = 2
+		}
+	}
+}
+
+###########################
+### Tobacco Events
+###########################
+
+# Tobacco Production in [92.GetName]
+country_event = {
+	id = FEE_Trade_Goods_Events.100
+	title = FEE_Trade_Goods_Events.100.T
+	desc = FEE_Trade_Goods_Events.100.D
+	picture = TRADE_GOODS_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns_core_province = 90
+		is_year = 1600
+		### columbian exchange
+	}
+
+	goto = 90
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	option = {
+		name = FEE_Trade_Goods_Events.100.OPT1
+		trigger = {
+			NOT = {
+				121 = { trade_goods = cloth }
+			}
+		}
+
+	}
+
+	option = {
+		name = FEE_Trade_Goods_Events.100.OPT2
+		trigger = {
+			NOT = {
+				121 = { trade_goods = silk }
+			}
+		}
+
+	}
+
+	option = {
+		name = FEE_Trade_Goods_Events.100.OPT3
+
+		add_stability_or_adm_power = yes
+		90 = {
+			add_base_production = 2
+		}
+	}
+}
+
+###########################
+### Weapon Events
+###########################
+
+# Growth of the Weapon Industry in [93.GetName]
+country_event = {
+	id = FEE_Trade_Goods_Events.200
+	title = FEE_Trade_Goods_Events.200.T
+	desc = FEE_Trade_Goods_Events.200.D
+	picture = TRADE_GOODS_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns_core_province = 90
+		is_year = 1600
+		### columbian exchange
+	}
+
+	goto = 90
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	option = {
+		name = FEE_Trade_Goods_Events.200.OPT1
+		trigger = {
+			NOT = {
+				121 = { trade_goods = cloth }
+			}
+		}
+
+	}
+
+	option = {
+		name = FEE_Trade_Goods_Events.200.OPT2
+		trigger = {
+			NOT = {
+				121 = { trade_goods = silk }
+			}
+		}
+
+	}
+
+	option = {
+		name = FEE_Trade_Goods_Events.200.OPT3
+
+		add_stability_or_adm_power = yes
+		90 = {
+			add_base_production = 2
+		}
+	}
+}
+
+###########################
+### Silk and Cloth Events
+###########################
+
+# Growth of the Business of Batiste in [1743.GetName]
+country_event = {
+	id = FEE_Trade_Goods_Events.300
+	title = FEE_Trade_Goods_Events.300.T
+	desc = FEE_Trade_Goods_Events.300.D
+	picture = TRADE_GOODS_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns_core_province = 90
+		is_year = 1600
+		### columbian exchange
+	}
+
+	goto = 90
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	option = {
+		name = FEE_Trade_Goods_Events.300.OPT1
+		trigger = {
+			NOT = {
+				121 = { trade_goods = cloth }
+			}
+		}
+
+	}
+
+	option = {
+		name = FEE_Trade_Goods_Events.300.OPT2
+		trigger = {
+			NOT = {
+				121 = { trade_goods = silk }
+			}
+		}
+
+	}
+
+	option = {
+		name = FEE_Trade_Goods_Events.300.OPT3
+
+		add_stability_or_adm_power = yes
+		90 = {
+			add_base_production = 2
+		}
+	}
+}
+
+### I will append the Neapolitan/Sicilian silk-cloth events here after
