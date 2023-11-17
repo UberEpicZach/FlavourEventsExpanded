@@ -4,17 +4,18 @@ country_decisions = {
 			NOT = { has_global_flag = fee_imported_coffee_seeds }
 			has_global_flag = fee_coffee_plant_smuggled_into_italy
 			OR = {
-				po_valley_area = {
+				naples_area = {
 					owned_by = ROOT
 				}
-				lombardy_area = {
+				apulia_area = {
 					owned_by = ROOT
 				}
-				piedmont_area = {
+				western_sicily_area = {
 					owned_by = ROOT
 				}
-				emilia_romagna_area = {
+				sicily_area = {
 					owned_by = ROOT
+					NOT = { province_id = 126 }
 				}
 			}
 		}
@@ -22,10 +23,13 @@ country_decisions = {
 			OR = {
 				AND = {
 					OR = {
-						area = po_valley_area
-						area = lombardy_area
-						area = piedmont_area
-						area = emilia_romagna_area
+						area = naples_area
+						area = apulia_area
+						area = western_sicily_area
+						AND = {
+							area = sicily_area
+							NOT = { province_id = 126 }
+						}
 					}
 					OR = {
 						NOT = { owned_by = ROOT }
@@ -34,15 +38,18 @@ country_decisions = {
 				}
 				AND = {
 					OR = {
-						province_id = 104
-						province_id = 4728
-						province_id = 1862
-						province_id = 109
-						province_id = 106
-						province_id = 2979
-						province_id = 1875
-						province_id = 103
-						province_id = 2981
+						province_id = 2983
+						province_id = 1934
+						province_id = 2984
+						province_id = 123
+						province_id = 121
+						province_id = 124
+						province_id = 125
+						province_id = 4736
+						province_id = 4737
+						province_id = 2982
+						province_id = 4734
+						province_id = 4733
 					}
 					OR = {
 						AND = {
@@ -96,25 +103,30 @@ country_decisions = {
 			else = {
 				treasury = 4000
 			}
-			po_valley_area = {
+			naples_area = {
 				type = all
 				owned_by = ROOT
 				is_core = ROOT
 			}
-			lombardy_area = {
+			apulia_area = {
 				type = all
 				owned_by = ROOT
 				is_core = ROOT
 			}
-			piedmont_area = {
+			western_sicily_area = {
 				type = all
 				owned_by = ROOT
 				is_core = ROOT
 			}
-			emilia_romagna_area = {
+			sicily_area = {
 				type = all
-				owned_by = ROOT
-				is_core = ROOT
+				OR = {
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+					province_id = 126
+				}
 			}
 			if = {
 				limit = {
@@ -122,31 +134,40 @@ country_decisions = {
 				}
 				custom_trigger_tooltip = {
 					tooltip = fee_import_coffee_seeds_decision_trigger_tt_1
-					104 = {
+					2983 = {
 						num_of_times_expanded_infrastructure = 1
 					}
-					4728 = {
+					1934 = {
 						num_of_times_expanded_infrastructure = 1
 					}
-					1862 = {
+					2984 = {
 						num_of_times_expanded_infrastructure = 1
 					}
-					109 = {
+					123 = {
 						num_of_times_expanded_infrastructure = 1
 					}
-					106 = {
+					121 = {
 						num_of_times_expanded_infrastructure = 1
 					}
-					2979 = {
+					124 = {
 						num_of_times_expanded_infrastructure = 1
 					}
-					1875 = {
+					125 = {
 						num_of_times_expanded_infrastructure = 1
 					}
-					103 = {
+					4736 = {
 						num_of_times_expanded_infrastructure = 1
 					}
-					2981 = {
+					4737 = {
+						num_of_times_expanded_infrastructure = 1
+					}
+					2982 = {
+						num_of_times_expanded_infrastructure = 1
+					}
+					4734 = {
+						num_of_times_expanded_infrastructure = 1
+					}
+					4733 = {
 						num_of_times_expanded_infrastructure = 1
 					}
 				}
@@ -154,31 +175,40 @@ country_decisions = {
 			else = {
 				custom_trigger_tooltip = {
 					tooltip = fee_import_coffee_seeds_decision_trigger_tt_2
-					104 = {
+					2983 = {
 						development = 20
 					}
-					4728 = {
+					1934 = {
 						development = 20
 					}
-					1862 = {
+					2984 = {
 						development = 20
 					}
-					109 = {
+					123 = {
 						development = 20
 					}
-					106 = {
+					121 = {
 						development = 20
 					}
-					2979 = {
+					124 = {
 						development = 20
 					}
-					1875 = {
+					125 = {
 						development = 20
 					}
-					103 = {
+					4736 = {
 						development = 20
 					}
-					2981 = {
+					4737 = {
+						development = 20
+					}
+					2982 = {
+						development = 20
+					}
+					4734 = {
+						development = 20
+					}
+					4733 = {
 						development = 20
 					}
 				}
@@ -224,15 +254,18 @@ country_decisions = {
 			random_owned_province = {
 				limit = {
 					OR = {
-						province_id = 104
-						province_id = 4728
-						province_id = 1862
-						province_id = 109
-						province_id = 106
-						province_id = 2979
-						province_id = 1875
-						province_id = 103
-						province_id = 2981
+						province_id = 2983
+						province_id = 1934
+						province_id = 2984
+						province_id = 123
+						province_id = 121
+						province_id = 124
+						province_id = 125
+						province_id = 4736
+						province_id = 4737
+						province_id = 2982
+						province_id = 4734
+						province_id = 4733
 					}
 				}
 				change_trade_goods = coffee
@@ -264,45 +297,55 @@ country_decisions = {
 		potential = {
 			has_global_flag = fee_imported_coffee_seeds
 			OR = {
-				po_valley_area = {
+				naples_area = {
 					owned_by = ROOT
 				}
-				lombardy_area = {
+				apulia_area = {
 					owned_by = ROOT
 				}
-				piedmont_area = {
+				western_sicily_area = {
 					owned_by = ROOT
 				}
-				emilia_romagna_area = {
+				sicily_area = {
 					owned_by = ROOT
+					NOT = { province_id = 126 }
 				}
 			}
 			OR = {
-				104 = {
+				2983 = {
 					NOT = { trade_goods = coffee }
 				}
-				4728 = {
+				1934 = {
 					NOT = { trade_goods = coffee }
 				}
-				1862 = {
+				2984 = {
 					NOT = { trade_goods = coffee }
 				}
-				109 = {
+				123 = {
 					NOT = { trade_goods = coffee }
 				}
-				106 = {
+				121 = {
 					NOT = { trade_goods = coffee }
 				}
-				2979 = {
+				124 = {
 					NOT = { trade_goods = coffee }
 				}
-				1875 = {
+				125 = {
 					NOT = { trade_goods = coffee }
 				}
-				103 = {
+				4736 = {
 					NOT = { trade_goods = coffee }
 				}
-				2981 = {
+				4737 = {
+					NOT = { trade_goods = coffee }
+				}
+				2982 = {
+					NOT = { trade_goods = coffee }
+				}
+				4734 = {
+					NOT = { trade_goods = coffee }
+				}
+				4733 = {
 					NOT = { trade_goods = coffee }
 				}
 			}
@@ -311,10 +354,13 @@ country_decisions = {
 			OR = {
 				AND = {
 					OR = {
-						area = po_valley_area
-						area = lombardy_area
-						area = piedmont_area
-						area = emilia_romagna_area
+						area = naples_area
+						area = apulia_area
+						area = western_sicily_area
+						AND = {
+							area = sicily_area
+							NOT = { province_id = 126 }
+						}
 					}
 					OR = {
 						NOT = { owned_by = ROOT }
@@ -323,15 +369,18 @@ country_decisions = {
 				}
 				AND = {
 					OR = {
-						province_id = 104
-						province_id = 4728
-						province_id = 1862
-						province_id = 109
-						province_id = 106
-						province_id = 2979
-						province_id = 1875
-						province_id = 103
-						province_id = 2981
+						province_id = 2983
+						province_id = 1934
+						province_id = 2984
+						province_id = 123
+						province_id = 121
+						province_id = 124
+						province_id = 125
+						province_id = 4736
+						province_id = 4737
+						province_id = 2982
+						province_id = 4734
+						province_id = 4733
 					}
 					OR = {
 						has_province_modifier = fee_coffee_first_italian_coffee_plantation_modifier
@@ -349,15 +398,18 @@ country_decisions = {
 					num_of_owned_provinces_with = {
 						value = 9
 						OR = {
-							province_id = 104
-							province_id = 4728
-							province_id = 1862
-							province_id = 109
-							province_id = 106
-							province_id = 2979
-							province_id = 1875
-							province_id = 103
-							province_id = 2981
+							province_id = 2983
+							province_id = 1934
+							province_id = 2984
+							province_id = 123
+							province_id = 121
+							province_id = 124
+							province_id = 125
+							province_id = 4736
+							province_id = 4737
+							province_id = 2982
+							province_id = 4734
+							province_id = 4733
 						}
 						trade_goods = coffee
 					}
@@ -369,15 +421,18 @@ country_decisions = {
 					num_of_owned_provinces_with = {
 						value = 8
 						OR = {
-							province_id = 104
-							province_id = 4728
-							province_id = 1862
-							province_id = 109
-							province_id = 106
-							province_id = 2979
-							province_id = 1875
-							province_id = 103
-							province_id = 2981
+							province_id = 2983
+							province_id = 1934
+							province_id = 2984
+							province_id = 123
+							province_id = 121
+							province_id = 124
+							province_id = 125
+							province_id = 4736
+							province_id = 4737
+							province_id = 2982
+							province_id = 4734
+							province_id = 4733
 						}
 						trade_goods = coffee
 					}
@@ -389,15 +444,18 @@ country_decisions = {
 					num_of_owned_provinces_with = {
 						value = 7
 						OR = {
-							province_id = 104
-							province_id = 4728
-							province_id = 1862
-							province_id = 109
-							province_id = 106
-							province_id = 2979
-							province_id = 1875
-							province_id = 103
-							province_id = 2981
+							province_id = 2983
+							province_id = 1934
+							province_id = 2984
+							province_id = 123
+							province_id = 121
+							province_id = 124
+							province_id = 125
+							province_id = 4736
+							province_id = 4737
+							province_id = 2982
+							province_id = 4734
+							province_id = 4733
 						}
 						trade_goods = coffee
 					}
@@ -409,15 +467,18 @@ country_decisions = {
 					num_of_owned_provinces_with = {
 						value = 6
 						OR = {
-							province_id = 104
-							province_id = 4728
-							province_id = 1862
-							province_id = 109
-							province_id = 106
-							province_id = 2979
-							province_id = 1875
-							province_id = 103
-							province_id = 2981
+							province_id = 2983
+							province_id = 1934
+							province_id = 2984
+							province_id = 123
+							province_id = 121
+							province_id = 124
+							province_id = 125
+							province_id = 4736
+							province_id = 4737
+							province_id = 2982
+							province_id = 4734
+							province_id = 4733
 						}
 						trade_goods = coffee
 					}
@@ -429,15 +490,18 @@ country_decisions = {
 					num_of_owned_provinces_with = {
 						value = 5
 						OR = {
-							province_id = 104
-							province_id = 4728
-							province_id = 1862
-							province_id = 109
-							province_id = 106
-							province_id = 2979
-							province_id = 1875
-							province_id = 103
-							province_id = 2981
+							province_id = 2983
+							province_id = 1934
+							province_id = 2984
+							province_id = 123
+							province_id = 121
+							province_id = 124
+							province_id = 125
+							province_id = 4736
+							province_id = 4737
+							province_id = 2982
+							province_id = 4734
+							province_id = 4733
 						}
 						trade_goods = coffee
 					}
@@ -449,15 +513,18 @@ country_decisions = {
 					num_of_owned_provinces_with = {
 						value = 4
 						OR = {
-							province_id = 104
-							province_id = 4728
-							province_id = 1862
-							province_id = 109
-							province_id = 106
-							province_id = 2979
-							province_id = 1875
-							province_id = 103
-							province_id = 2981
+							province_id = 2983
+							province_id = 1934
+							province_id = 2984
+							province_id = 123
+							province_id = 121
+							province_id = 124
+							province_id = 125
+							province_id = 4736
+							province_id = 4737
+							province_id = 2982
+							province_id = 4734
+							province_id = 4733
 						}
 						trade_goods = coffee
 					}
@@ -469,15 +536,18 @@ country_decisions = {
 					num_of_owned_provinces_with = {
 						value = 3
 						OR = {
-							province_id = 104
-							province_id = 4728
-							province_id = 1862
-							province_id = 109
-							province_id = 106
-							province_id = 2979
-							province_id = 1875
-							province_id = 103
-							province_id = 2981
+							province_id = 2983
+							province_id = 1934
+							province_id = 2984
+							province_id = 123
+							province_id = 121
+							province_id = 124
+							province_id = 125
+							province_id = 4736
+							province_id = 4737
+							province_id = 2982
+							province_id = 4734
+							province_id = 4733
 						}
 						trade_goods = coffee
 					}
@@ -489,15 +559,18 @@ country_decisions = {
 					num_of_owned_provinces_with = {
 						value = 2
 						OR = {
-							province_id = 104
-							province_id = 4728
-							province_id = 1862
-							province_id = 109
-							province_id = 106
-							province_id = 2979
-							province_id = 1875
-							province_id = 103
-							province_id = 2981
+							province_id = 2983
+							province_id = 1934
+							province_id = 2984
+							province_id = 123
+							province_id = 121
+							province_id = 124
+							province_id = 125
+							province_id = 4736
+							province_id = 4737
+							province_id = 2982
+							province_id = 4734
+							province_id = 4733
 						}
 						trade_goods = coffee
 					}
@@ -509,62 +582,79 @@ country_decisions = {
 			}
 			custom_trigger_tooltip = {
 				tooltip = fee_expand_coffee_cultivation_decision_trigger_tt
-				104 = {
+				2983 = {
 					NOT = { has_province_modifier = fee_coffee_first_italian_coffee_plantation_modifier }
 					NOT = { has_province_modifier = fee_coffee_po_valley_coffee_growth_modifier }
 				}
-				4728 = {
+				1934 = {
 					NOT = { has_province_modifier = fee_coffee_first_italian_coffee_plantation_modifier }
 					NOT = { has_province_modifier = fee_coffee_po_valley_coffee_growth_modifier }
 				}
-				1862 = {
+				2984 = {
 					NOT = { has_province_modifier = fee_coffee_first_italian_coffee_plantation_modifier }
 					NOT = { has_province_modifier = fee_coffee_po_valley_coffee_growth_modifier }
 				}
-				109 = {
+				123 = {
 					NOT = { has_province_modifier = fee_coffee_first_italian_coffee_plantation_modifier }
 					NOT = { has_province_modifier = fee_coffee_po_valley_coffee_growth_modifier }
 				}
-				106 = {
+				121 = {
 					NOT = { has_province_modifier = fee_coffee_first_italian_coffee_plantation_modifier }
 					NOT = { has_province_modifier = fee_coffee_po_valley_coffee_growth_modifier }
 				}
-				2979 = {
+				124 = {
 					NOT = { has_province_modifier = fee_coffee_first_italian_coffee_plantation_modifier }
 					NOT = { has_province_modifier = fee_coffee_po_valley_coffee_growth_modifier }
 				}
-				1875 = {
+				125 = {
 					NOT = { has_province_modifier = fee_coffee_first_italian_coffee_plantation_modifier }
 					NOT = { has_province_modifier = fee_coffee_po_valley_coffee_growth_modifier }
 				}
-				103 = {
+				4736 = {
 					NOT = { has_province_modifier = fee_coffee_first_italian_coffee_plantation_modifier }
 					NOT = { has_province_modifier = fee_coffee_po_valley_coffee_growth_modifier }
 				}
-				2981 = {
+				4737 = {
+					NOT = { has_province_modifier = fee_coffee_first_italian_coffee_plantation_modifier }
+					NOT = { has_province_modifier = fee_coffee_po_valley_coffee_growth_modifier }
+				}
+				2982 = {
+					NOT = { has_province_modifier = fee_coffee_first_italian_coffee_plantation_modifier }
+					NOT = { has_province_modifier = fee_coffee_po_valley_coffee_growth_modifier }
+				}
+				4734 = {
+					NOT = { has_province_modifier = fee_coffee_first_italian_coffee_plantation_modifier }
+					NOT = { has_province_modifier = fee_coffee_po_valley_coffee_growth_modifier }
+				}
+				4733 = {
 					NOT = { has_province_modifier = fee_coffee_first_italian_coffee_plantation_modifier }
 					NOT = { has_province_modifier = fee_coffee_po_valley_coffee_growth_modifier }
 				}
 			}
-			po_valley_area = {
+			naples_area = {
 				type = all
 				owned_by = ROOT
 				is_core = ROOT
 			}
-			lombardy_area = {
+			apulia_area = {
 				type = all
 				owned_by = ROOT
 				is_core = ROOT
 			}
-			piedmont_area = {
+			western_sicily_area = {
 				type = all
 				owned_by = ROOT
 				is_core = ROOT
 			}
-			emilia_romagna_area = {
+			sicily_area = {
 				type = all
-				owned_by = ROOT
-				is_core = ROOT
+				OR = {
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+					province_id = 126
+				}
 			}
 		}
 		effect = {
@@ -573,15 +663,18 @@ country_decisions = {
 					num_of_owned_provinces_with = {
 						value = 9
 						OR = {
-							province_id = 104
-							province_id = 4728
-							province_id = 1862
-							province_id = 109
-							province_id = 106
-							province_id = 2979
-							province_id = 1875
-							province_id = 103
-							province_id = 2981
+							province_id = 2983
+							province_id = 1934
+							province_id = 2984
+							province_id = 123
+							province_id = 121
+							province_id = 124
+							province_id = 125
+							province_id = 4736
+							province_id = 4737
+							province_id = 2982
+							province_id = 4734
+							province_id = 4733
 						}
 						trade_goods = coffee
 					}
@@ -593,15 +686,18 @@ country_decisions = {
 					num_of_owned_provinces_with = {
 						value = 8
 						OR = {
-							province_id = 104
-							province_id = 4728
-							province_id = 1862
-							province_id = 109
-							province_id = 106
-							province_id = 2979
-							province_id = 1875
-							province_id = 103
-							province_id = 2981
+							province_id = 2983
+							province_id = 1934
+							province_id = 2984
+							province_id = 123
+							province_id = 121
+							province_id = 124
+							province_id = 125
+							province_id = 4736
+							province_id = 4737
+							province_id = 2982
+							province_id = 4734
+							province_id = 4733
 						}
 						trade_goods = coffee
 					}
@@ -613,15 +709,18 @@ country_decisions = {
 					num_of_owned_provinces_with = {
 						value = 7
 						OR = {
-							province_id = 104
-							province_id = 4728
-							province_id = 1862
-							province_id = 109
-							province_id = 106
-							province_id = 2979
-							province_id = 1875
-							province_id = 103
-							province_id = 2981
+							province_id = 2983
+							province_id = 1934
+							province_id = 2984
+							province_id = 123
+							province_id = 121
+							province_id = 124
+							province_id = 125
+							province_id = 4736
+							province_id = 4737
+							province_id = 2982
+							province_id = 4734
+							province_id = 4733
 						}
 						trade_goods = coffee
 					}
@@ -633,15 +732,18 @@ country_decisions = {
 					num_of_owned_provinces_with = {
 						value = 6
 						OR = {
-							province_id = 104
-							province_id = 4728
-							province_id = 1862
-							province_id = 109
-							province_id = 106
-							province_id = 2979
-							province_id = 1875
-							province_id = 103
-							province_id = 2981
+							province_id = 2983
+							province_id = 1934
+							province_id = 2984
+							province_id = 123
+							province_id = 121
+							province_id = 124
+							province_id = 125
+							province_id = 4736
+							province_id = 4737
+							province_id = 2982
+							province_id = 4734
+							province_id = 4733
 						}
 						trade_goods = coffee
 					}
@@ -653,15 +755,18 @@ country_decisions = {
 					num_of_owned_provinces_with = {
 						value = 5
 						OR = {
-							province_id = 104
-							province_id = 4728
-							province_id = 1862
-							province_id = 109
-							province_id = 106
-							province_id = 2979
-							province_id = 1875
-							province_id = 103
-							province_id = 2981
+							province_id = 2983
+							province_id = 1934
+							province_id = 2984
+							province_id = 123
+							province_id = 121
+							province_id = 124
+							province_id = 125
+							province_id = 4736
+							province_id = 4737
+							province_id = 2982
+							province_id = 4734
+							province_id = 4733
 						}
 						trade_goods = coffee
 					}
@@ -673,15 +778,18 @@ country_decisions = {
 					num_of_owned_provinces_with = {
 						value = 4
 						OR = {
-							province_id = 104
-							province_id = 4728
-							province_id = 1862
-							province_id = 109
-							province_id = 106
-							province_id = 2979
-							province_id = 1875
-							province_id = 103
-							province_id = 2981
+							province_id = 2983
+							province_id = 1934
+							province_id = 2984
+							province_id = 123
+							province_id = 121
+							province_id = 124
+							province_id = 125
+							province_id = 4736
+							province_id = 4737
+							province_id = 2982
+							province_id = 4734
+							province_id = 4733
 						}
 						trade_goods = coffee
 					}
@@ -693,15 +801,18 @@ country_decisions = {
 					num_of_owned_provinces_with = {
 						value = 3
 						OR = {
-							province_id = 104
-							province_id = 4728
-							province_id = 1862
-							province_id = 109
-							province_id = 106
-							province_id = 2979
-							province_id = 1875
-							province_id = 103
-							province_id = 2981
+							province_id = 2983
+							province_id = 1934
+							province_id = 2984
+							province_id = 123
+							province_id = 121
+							province_id = 124
+							province_id = 125
+							province_id = 4736
+							province_id = 4737
+							province_id = 2982
+							province_id = 4734
+							province_id = 4733
 						}
 						trade_goods = coffee
 					}
@@ -713,15 +824,18 @@ country_decisions = {
 					num_of_owned_provinces_with = {
 						value = 2
 						OR = {
-							province_id = 104
-							province_id = 4728
-							province_id = 1862
-							province_id = 109
-							province_id = 106
-							province_id = 2979
-							province_id = 1875
-							province_id = 103
-							province_id = 2981
+							province_id = 2983
+							province_id = 1934
+							province_id = 2984
+							province_id = 123
+							province_id = 121
+							province_id = 124
+							province_id = 125
+							province_id = 4736
+							province_id = 4737
+							province_id = 2982
+							province_id = 4734
+							province_id = 4733
 						}
 						trade_goods = coffee
 					}
@@ -734,15 +848,18 @@ country_decisions = {
 			random_owned_province = {
 				limit = {
 					OR = {
-						province_id = 104
-						province_id = 4728
-						province_id = 1862
-						province_id = 109
-						province_id = 106
-						province_id = 2979
-						province_id = 1875
-						province_id = 103
-						province_id = 2981
+						province_id = 2983
+						province_id = 1934
+						province_id = 2984
+						province_id = 123
+						province_id = 121
+						province_id = 124
+						province_id = 125
+						province_id = 4736
+						province_id = 4737
+						province_id = 2982
+						province_id = 4734
+						province_id = 4733
 					}
 					NOT = { trade_goods = coffee }
 				}
@@ -761,45 +878,55 @@ country_decisions = {
 			NOT = { has_global_flag = fee_instituted_coffee_italica }
 			has_global_flag = fee_imported_coffee_seeds
 			OR = {
-				po_valley_area = {
+				naples_area = {
 					owned_by = ROOT
 				}
-				lombardy_area = {
+				apulia_area = {
 					owned_by = ROOT
 				}
-				piedmont_area = {
+				western_sicily_area = {
 					owned_by = ROOT
 				}
-				emilia_romagna_area = {
+				sicily_area = {
 					owned_by = ROOT
+					NOT = { province_id = 126 }
 				}
 			}
 			OR = {
-				104 = {
+				2983 = {
 					trade_goods = coffee
 				}
-				4728 = {
+				1934 = {
 					trade_goods = coffee
 				}
-				1862 = {
+				2984 = {
 					trade_goods = coffee
 				}
-				109 = {
+				123 = {
 					trade_goods = coffee
 				}
-				106 = {
+				121 = {
 					trade_goods = coffee
 				}
-				2979 = {
+				124 = {
 					trade_goods = coffee
 				}
-				1875 = {
+				125 = {
 					trade_goods = coffee
 				}
-				103 = {
+				4736 = {
 					trade_goods = coffee
 				}
-				2981 = {
+				4737 = {
+					trade_goods = coffee
+				}
+				2982 = {
+					trade_goods = coffee
+				}
+				4734 = {
+					trade_goods = coffee
+				}
+				4733 = {
 					trade_goods = coffee
 				}
 			}
@@ -808,10 +935,13 @@ country_decisions = {
 			OR = {
 				AND = {
 					OR = {
-						area = po_valley_area
-						area = lombardy_area
-						area = piedmont_area
-						area = emilia_romagna_area
+						area = naples_area
+						area = apulia_area
+						area = western_sicily_area
+						AND = {
+							area = sicily_area
+							NOT = { province_id = 126 }
+						}
 					}
 					OR = {
 						NOT = { owned_by = ROOT }
@@ -820,15 +950,18 @@ country_decisions = {
 				}
 				AND = {
 					OR = {
-						province_id = 104
-						province_id = 4728
-						province_id = 1862
-						province_id = 109
-						province_id = 106
-						province_id = 2979
-						province_id = 1875
-						province_id = 103
-						province_id = 2981
+						province_id = 2983
+						province_id = 1934
+						province_id = 2984
+						province_id = 123
+						province_id = 121
+						province_id = 124
+						province_id = 125
+						province_id = 4736
+						province_id = 4737
+						province_id = 2982
+						province_id = 4734
+						province_id = 4733
 					}
 					OR = {
 						NOT = { trade_goods = coffee }
@@ -844,62 +977,79 @@ country_decisions = {
 			}
 			custom_trigger_tooltip = {
 				tooltip = fee_institute_coffee_italica_decision_trigger_tt
-				104 = {
+				2983 = {
 					trade_goods = coffee
 					has_manufactory_trigger = yes
 				}
-				4728 = {
+				1934 = {
 					trade_goods = coffee
 					has_manufactory_trigger = yes
 				}
-				1862 = {
+				2984 = {
 					trade_goods = coffee
 					has_manufactory_trigger = yes
 				}
-				109 = {
+				123 = {
 					trade_goods = coffee
 					has_manufactory_trigger = yes
 				}
-				106 = {
+				121 = {
 					trade_goods = coffee
 					has_manufactory_trigger = yes
 				}
-				2979 = {
+				124 = {
 					trade_goods = coffee
 					has_manufactory_trigger = yes
 				}
-				1875 = {
+				125 = {
 					trade_goods = coffee
 					has_manufactory_trigger = yes
 				}
-				103 = {
+				4736 = {
 					trade_goods = coffee
 					has_manufactory_trigger = yes
 				}
-				2981 = {
+				4737 = {
+					trade_goods = coffee
+					has_manufactory_trigger = yes
+				}
+				2982 = {
+					trade_goods = coffee
+					has_manufactory_trigger = yes
+				}
+				4734 = {
+					trade_goods = coffee
+					has_manufactory_trigger = yes
+				}
+				4733 = {
 					trade_goods = coffee
 					has_manufactory_trigger = yes
 				}
 			}
-			po_valley_area = {
+			naples_area = {
 				type = all
 				owned_by = ROOT
 				is_core = ROOT
 			}
-			lombardy_area = {
+			apulia_area = {
 				type = all
 				owned_by = ROOT
 				is_core = ROOT
 			}
-			piedmont_area = {
+			western_sicily_area = {
 				type = all
 				owned_by = ROOT
 				is_core = ROOT
 			}
-			emilia_romagna_area = {
+			sicily_area = {
 				type = all
-				owned_by = ROOT
-				is_core = ROOT
+				OR = {
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+					province_id = 126
+				}
 			}
 		}
 		effect = {
