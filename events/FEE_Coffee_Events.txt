@@ -97,13 +97,16 @@ country_event = {
 			factor = 0.5
 		}
 
-		every_owned_province = {
-			limit = {
-				trade_goods = coffee
-			}
-			add_province_modifier = {
-				name = fee_coffee_coffee_italica_modifier_1
-				duration = -1
+		custom_tooltip = FEE_Coffee_Events.2.tt.1
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					trade_goods = coffee
+				}
+				add_province_modifier = {
+					name = fee_coffee_coffee_italica_modifier_1
+					duration = -1
+				}
 			}
 		}
 	}
@@ -115,19 +118,22 @@ country_event = {
 			factor = 0.5
 		}
 
+		custom_tooltip = FEE_Coffee_Events.2.tt.2
 		change_price = {
 			trade_goods = coffee
 			key = fee_coffee_coffee_italica_modifier_2
 			value = 0.2
 			duration = -1
 		}
-		every_owned_province = {
-			limit = {
-				trade_goods = coffee
-			}
-			add_province_modifier = {
-				name = fee_coffee_coffee_italica_modifier_2
-				duration = -1
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					trade_goods = coffee
+				}
+				add_province_modifier = {
+					name = fee_coffee_coffee_italica_modifier_2
+					duration = -1
+				}
 			}
 		}
 	}

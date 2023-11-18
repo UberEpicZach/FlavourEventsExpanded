@@ -10,6 +10,9 @@
  FEE_Coffee_Events2.EVTOPT1: "As the Arabs before we should guard the secret closely."
  FEE_Coffee_Events2.EVTOPT2: "We should share our Secrets for the sake of Coffee."
 
+ FEE_Coffee_Events.2.tt.1: "Every owned province producing §YCoffee§! gets '§YCoffee Italica§!' until the end of the game, giving the following effects: \nLocal Goods Produced: §G+3.00§!\n"
+ FEE_Coffee_Events.2.tt.2: "Every owned province producing §YCoffee§! gets '§YCoffee Italica§!' until the end of the game, giving the following effects: \nLocal Goods Produced: §G+1.00§!\n"
+
  # Decisions:
  fee_import_coffee_seeds_decision_title: "Import Coffee Seeds"
  fee_import_coffee_seeds_decision_desc: "By importing Coffee Seeds we can lay the foundations of a domestic Coffee Economy, but this path won't be cheap or easy."
@@ -20,7 +23,7 @@
 
  fee_import_coffee_seeds_decision_trigger_tt_1: "Have Expanded Infratructure at least §Y1§! time in each of the following provinces: §Y[2983.GetName]§!, §Y[1934.GetName]§!, §Y[2984.GetName]§!, §Y[123.GetName]§!, §Y[121.GetName]§!, §Y[124.GetName]§!, §Y[125.GetName]§!, §Y[4736.GetName]§!, §Y[4737.GetName]§!, §Y[2982.GetName]§!, §Y[4734.GetName]§! and §Y[4733.GetName]§!"
  fee_import_coffee_seeds_decision_trigger_tt_2: "Have at least §Y20§! development in each of the following provinces: §Y[2983.GetName]§!, §Y[1934.GetName]§!, §Y[2984.GetName]§!, §Y[123.GetName]§!, §Y[121.GetName]§!, §Y[124.GetName]§!, §Y[125.GetName]§!, §Y[4736.GetName]§!, §Y[4737.GetName]§!, §Y[2982.GetName]§!, §Y[4734.GetName]§! and §Y[4733.GetName]§!"
- fee_expand_coffee_cultivation_decision_trigger_tt: "§Y[2983.GetName]§!, §Y[1934.GetName]§!, §Y[2984.GetName]§!, §Y[123.GetName]§!, §Y[121.GetName]§!, §Y[124.GetName]§!, §Y[125.GetName]§!, §Y[4736.GetName]§!, §Y[4737.GetName]§!, §Y[2982.GetName]§!, §Y[4734.GetName]§! and §Y[4733.GetName]§! do NOT have the modifier '§YFirst Italian Coffee Plantation§!' or '§YPo Valley Coffee Growth'§!"
+ fee_expand_coffee_cultivation_decision_trigger_tt: "§Y[2983.GetName]§!, §Y[1934.GetName]§!, §Y[2984.GetName]§!, §Y[123.GetName]§!, §Y[121.GetName]§!, §Y[124.GetName]§!, §Y[125.GetName]§!, §Y[4736.GetName]§!, §Y[4737.GetName]§!, §Y[2982.GetName]§!, §Y[4734.GetName]§! and §Y[4733.GetName]§! do NOT have the modifier '§YFirst Italian Coffee Plantation§!' or '§YItalian Coffee Growth'§!"
  fee_institute_coffee_italica_decision_trigger_tt: "Have a §YManufactory§! and the trade good be §YCoffee§! in each of the following provinces: §Y[2983.GetName]§!, §Y[1934.GetName]§!, §Y[2984.GetName]§!, §Y[123.GetName]§!, §Y[121.GetName]§!, §Y[124.GetName]§!, §Y[125.GetName]§!, §Y[4736.GetName]§!, §Y[4737.GetName]§!, §Y[2982.GetName]§!, §Y[4734.GetName]§! and §Y[4733.GetName]§!"
  fee_coffee_catastrophical_monoculture_failure_modifier_duration_tt: "until we enact the '§YInstitute Coffee Italica§!' decision"
 
