@@ -3,7 +3,7 @@ namespace = FEE_Charles_V_Events
 #Sets up CharlesV as the heir to Spain, as a Habsburg
 country_event = {
 	id = FEE_Charles_V_Events.1
-	title = FEE_Charles_V_Events.1.T #FEE_Charles_V_Events.T.1:0 "The Habsburg dynasty in Castille"
+	title = FEE_Charles_V_Events.1.T #FEE_Charles_V_Events.T.1:0 "The Habsburg dynasty in Iberia"
 	desc = FEE_Charles_V_Events.1.D #FEE_Charles_V_Events.D.1:0 "The son of Maximillian I of Habsburg and Mary of Burgundy, Phillip I would succeed in winning the crown of Castille for the Habsburg dynasty. Already the ruler of the Austrian lowlands through his mother, in 1506 Phillip organized a coup and overthrew the acting king of Spain, Ferdinand II. Though he died mere months later, Philip's legacy would live on through his son Charles, who would come to rule over one of the largest empires in history..."
 	picture = NEW_HEIR_eventPicture
 
