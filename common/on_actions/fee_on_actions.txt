@@ -1,3 +1,24 @@
+on_colony_finished = {
+	if = {
+		limit = { province_id = 1096 }
+		province_event = {
+			id = FEE_Genoa_Events.34
+			days = 90
+		}
+	}
+}
+
+# FROM = old owner
+on_province_owner_change = {
+	if = {
+		limit = { province_id = 1096 }
+		province_event = {
+			id = FEE_Genoa_Events.34
+			days = 90
+		}
+	}
+}
+
 on_startup = {
 	country_event = { id = flavour_and_events_expanded_events.1 } # set flag
 	country_event = { #set the meme flag
@@ -22,9 +43,7 @@ on_battle_lost_unit = {
 			}
 			is_ruler_commanding_unit = yes
 			enemy_unit = {
-				unit_owner = {
-					tag = SWI
-				}
+				unit_owner = { tag = SWI }
 			}
 		}
 		BUR = {

@@ -62,10 +62,14 @@ fee_gen_genoese_russian_trade_agreement = {
 	local_development_cost = -0.15
 }
 
-# Malfante
+# Noli, Malfante and other explorers
 fee_gen_antonio_malfante = {
 	local_development_cost = -0.25
 	province_trade_power_modifier = 0.25
 	ship_recruit_speed = -0.25
 	local_ship_cost = -0.25
+}
+fee_gen_antonio_noli = {
+	local_development_cost = -0.25
+	province_trade_power_value = 25
 }
