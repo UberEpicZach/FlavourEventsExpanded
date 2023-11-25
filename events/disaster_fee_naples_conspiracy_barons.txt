@@ -338,7 +338,7 @@ country_event = {
 
 		set_country_flag = fee_nap_first_barony_skipped
 		add_stability_or_adm_power = yes
-		add_legitimacy_equivalent = { amount = 20, republican_tradition = 10 }
+		add_legitimacy_equivalent = { amount = 20 republican_tradition = 10 }
 		change_adm = 1
 		change_dip = 1
 		if = {
