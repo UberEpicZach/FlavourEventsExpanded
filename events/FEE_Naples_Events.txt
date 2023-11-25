@@ -191,6 +191,7 @@ country_event = {
 				}
 			}
 		}
+		NOT = { war_with = ALB }
 	}
 
 	option = {
@@ -215,11 +216,6 @@ country_event = {
 			modifier = fee_nap_helps_skanderberg
 		}
 		custom_tooltip = ALB_HELP_TT
-		hidden_effect = {
-			country_event = {
-				id = FEE_Naples_Events.12
-			}
-		}
 	}
 
 	option = {
@@ -236,7 +232,7 @@ country_event = {
 	}
 }
 
-#Aragorn Helps Skanderberg
+#Helps from Naples
 country_event = {
 	id = FEE_Naples_Events.4
 	title = FEE_Naples_Events.4.T
@@ -247,6 +243,12 @@ country_event = {
 
 	option = {
 		name = FEE_Naples_Events.4.OPT1
+		trigger = {
+			is_free_or_tributary_trigger = yes
+		}
+		ai_chance = {
+			factor = 50
+		}
 
 		add_yearly_manpower = 2
 		add_years_of_income = 3
