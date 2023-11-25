@@ -110,7 +110,7 @@ country_event = {
 	}
 }
 
-#Trading Fair of [event_target_fee_fair_province.GetName]
+#The start of a the fair
 country_event = {
 	id = FEE_Fairs_Events.3
 	title = FEE_Fairs_Events.3.T
@@ -294,7 +294,7 @@ country_event = {
 	}
 }
 
-#Fair Ended in [event_target_fee_fair_province.GetName]
+#The end of a the fair
 country_event = {
 	id = FEE_Fairs_Events.7
 	title = FEE_Fairs_Events.7.T
