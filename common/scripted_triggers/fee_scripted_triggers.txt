@@ -1,0 +1,24 @@
+fee_is_was_nap_sic = {
+	OR = {
+		tag = NAP
+		tag = TTS
+		tag = SIC
+		was_tag = NAP
+		was_tag = SIC
+		was_tag = TTS
+	}
+}
+
+fee_is_was_ven = {
+	OR = {
+		tag = VEN
+		was_tag = VEN
+	}
+}
+
+fee_is_was_gen = {
+	OR = {
+		tag = GEN
+		was_tag = GEN
+	}
+}

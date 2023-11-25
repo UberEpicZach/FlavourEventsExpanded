@@ -1,5 +1,15 @@
 on_startup = {
 	country_event = { id = flavour_and_events_expanded_events.1 } # set flag
+	country_event = { #set the meme flag
+		id = FEE_Meme_Events.1
+		days = 10
+		random = 5
+	}
+	country_event = { #set the Fair flag
+		id = FEE_Fairs_Events.1
+		days = 30
+		random = 15
+	}
 }
 
 # #Unit Scope OnAction for Battle Lost
@@ -39,6 +49,17 @@ on_monarch_death = {
 	}
 }
 
+on_new_age = {
+	if = {
+		limit = { has_country_modifier = fee_por_henrique_naval_reforms }
+		remove_country_modifier = fee_por_henrique_naval_reforms
+	}
+	if = {
+		limit = { has_country_modifier = fee_france_scots_mercenaries }
+		remove_country_modifier = fee_france_scots_mercenaries
+	}
+}
+
 # country
 on_new_heir = {
 	if = {
@@ -59,9 +80,59 @@ on_new_heir = {
 }
 
 # OBS: Consider that the following on_actions can be called for Personal Union juniors as well.
-country
+# country
 on_new_monarch = {
 	events = {
 		FEE_Charles_V_Events.2
+	}
+}
+
+#ROOT - Winer
+#FROM - Loser
+on_war_ended = {
+	if = {
+		limit = {
+			OR = {
+				tag = POR
+				FROM = { tag = POR }
+			}
+			POR = {
+				has_country_modifier = fee_por_avenge_betrayal
+				has_country_modifier = fee_por_francisco_de_almeida
+				NOT = {
+					is_in_war = {
+						attacker_leader = POR
+						casus_belli = cb_vassalize_mission
+					}
+				}
+			}
+		}
+		POR = { remove_country_modifier = fee_por_avenge_betrayal }
+	}
+}
+
+# root = loser country, from = winner country
+on_war_lost = {
+	if = {
+		limit = {
+			tag = VEN
+			FROM = { tag = TUR }
+		}
+		country_event = {
+			id = FEE_Venice_Events.39
+		}
+	}
+}
+
+# root = winning country, from = loser country
+on_war_won = {
+	if = {
+		limit = {
+			tag = VEN
+			FROM = { tag = TUR }
+		}
+		country_event = {
+			id = FEE_Venice_Events.40
+		}
 	}
 }

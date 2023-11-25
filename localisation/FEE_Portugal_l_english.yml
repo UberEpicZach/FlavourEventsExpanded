@@ -108,13 +108,6 @@
  FEE_Portugal_Events.21.D: "Once a luxury only imported over harsh land routes from the East, sugarcane has found a favorable climate in our new colonies and is proving to be more profitable than anyone could have imagined as it becomes accessible to the public for the first time. \nOur colony in Brazil especially is beginning to find great success in growing this crop. Let's hope no one steals our success..."
  FEE_Portugal_Events.21.OPT1: "Sweet!"
 
- FEE_Portugal_Events.100.T: "End of Henrique's Naval Reforms"
- FEE_Portugal_Events.100.D: "You shouldn't be able to see this hidden event."
- FEE_Portugal_Events.100.OPT1: "Please report it to the team if you see it."
-
- FEE_Portugal_Events.101.T: "End of Avenge Betrayal"
- FEE_Portugal_Events.101.D: "You shouldn't be able to see this hidden event."
- FEE_Portugal_Events.101.OPT1: "Please report it to the team if you see it."
 
  #Modifiers
  fee_por_sebastianism: "Sebastianism"
@@ -170,7 +163,6 @@
  #ToolTips
  fee_por_francisco_custom_tooltip_1: "Francisco will be allowed to follow his passion. We will hear from him again... (opens colonial events related to francisco)"
  fee_por_francisco_custom_tooltip_2: "Francisco's colonial ambitions will be forever crushed."
- fee_por_henrique_duration_tt: "The following modifier will last until the end of the Age of Discovery"
  fee_por_end_war_tt: "This modifier will last until the end of the war."
 
  fee_por_killed_1: "A replacement must be sent at once and Almeida must be arrested!\n"
