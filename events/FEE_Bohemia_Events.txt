@@ -101,7 +101,7 @@ country_event = {
 			factor = 1
 		}
 
-		add_stability = 2
+		add_stability_or_adm_power_per_stab = { amount = 2 }
 		define_ruler = {
 			name = "Vladislav"
 			dynasty = "Jagiellon"
@@ -261,7 +261,7 @@ country_event = {
 			}
 		}
 		kill_heir = {}
-		add_stability = 2
+		add_stability_or_adm_power_per_stab = { amount = 2 }
 		if = {
 			limit = {
 				has_estate = estate_nobles

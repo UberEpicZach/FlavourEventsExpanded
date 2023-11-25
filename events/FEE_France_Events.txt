@@ -845,7 +845,7 @@ country_event = {
 	option = {
 		name = FEE_France_Events.10.OPT1
 
-		add_stability = 1
+		add_stability_or_adm_power_per_stab = { amount = 1 }
 		add_country_modifier = {
 			name = fee_france_church_state
 			duration = 10950

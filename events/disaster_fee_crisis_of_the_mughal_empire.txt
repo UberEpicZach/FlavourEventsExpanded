@@ -30,7 +30,7 @@ country_event = {
 	option = {
 		name = disaster_fee_crisis_of_the_mughal_empire.2.OPT1
 
-		add_stability = 1
+		add_stability_or_adm_power_per_stab = { amount = 1 }
 		add_adm_power = 200
 		add_mil_power = 100
 	}

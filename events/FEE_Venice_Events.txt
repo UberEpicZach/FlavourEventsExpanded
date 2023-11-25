@@ -1594,7 +1594,7 @@ country_event = {
 			}
 		}
 
-		add_stability = 2
+		add_stability_or_adm_power_per_stab = { amount = 2 }
 		add_prestige = -12
 	}
 }

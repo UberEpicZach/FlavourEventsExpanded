@@ -114,7 +114,7 @@ country_event = {
 	option = {
 		name = FEE_Moldavia_Events.3.OPT2
 
-		add_stability = 2
+		add_stability_or_adm_power_per_stab = { amount = 2 }
 		define_heir = {
 			name = "George"
 			dynasty = "Ceaur"

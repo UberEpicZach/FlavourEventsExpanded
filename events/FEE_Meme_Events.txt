@@ -63,7 +63,7 @@ country_event = {
 			tradition = 75
 		}
 		add_war_exhaustion = -5
-		add_stability = 1
+		add_stability_or_adm_power_per_stab = { amount = 1 }
 		add_mil_power = 50
 	}
 }

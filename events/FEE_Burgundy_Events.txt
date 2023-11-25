@@ -404,7 +404,7 @@ country_event = {
 # 			factor = 25
 # 		}
 
-# 		add_stability = 1
+# 		add_stability_or_adm_power_per_stab = { amount = 1 }
 # 		add_country_modifier = {
 # 			name = fee_respected_independence
 # 			duration = 10950 # 30 years

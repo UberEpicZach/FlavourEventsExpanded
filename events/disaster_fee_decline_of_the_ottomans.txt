@@ -835,7 +835,7 @@ country_event = {
 
 		ai_chance = { factor = 0.5 }
 
-		add_stability = 1
+		add_stability_or_adm_power_per_stab = { amount = 1 }
 		add_years_of_income = -0.25
 	}
 }
@@ -1628,7 +1628,7 @@ country_event = {
 	option = {
 		name = disaster_fee_decline_of_the_ottomans.20.OPT2
 
-		add_stability = 1
+		add_stability_or_adm_power_per_stab = { amount = 1 }
 		if = {
 			limit = {
 				has_estate = estate_church

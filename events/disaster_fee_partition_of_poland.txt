@@ -1254,7 +1254,7 @@ country_event = {
 			factor = 0.9
 		}
 
-		add_stability = 1
+		add_stability_or_adm_power_per_stab = { amount = 1 }
 		add_estate_loyalty = {
 			estate = estate_burghers
 			loyalty = -10
