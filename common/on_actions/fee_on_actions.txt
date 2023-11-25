@@ -110,3 +110,29 @@ on_war_ended = {
 		POR = { remove_country_modifier = fee_por_avenge_betrayal }
 	}
 }
+
+# root = loser country, from = winner country
+on_war_lost = {
+	if = {
+		limit = {
+			tag = VEN
+			FROM = { tag = TUR }
+		}
+		country_event = {
+			id = FEE_Venice_Events.39
+		}
+	}
+}
+
+# root = winning country, from = loser country
+on_war_won = {
+	if = {
+		limit = {
+			tag = VEN
+			FROM = { tag = TUR }
+		}
+		country_event = {
+			id = FEE_Venice_Events.40
+		}
+	}
+}
