@@ -8,6 +8,7 @@ country_event = {
 	picture = NAVAL_MILITARY_eventPicture
 
 	fire_only_once = yes
+
 	trigger = {
 		fee_is_was_ven = yes
 		NOT = { is_year = 1571 }
@@ -834,7 +835,7 @@ country_event = {
 	option = {
 		name = FEE_Venice_Events.19.OPT1
 
-		add_mercantilism = 3
+		add_mercantilism_or_monarch_power = { amount = 3 }
 		1320 = {
 			add_trade_modifier = {
 				who = ROOT
@@ -1536,7 +1537,7 @@ country_event = {
 		}
 
 		add_stability_or_adm_power = yes
-		add_mercantilism = 5
+		add_mercantilism_or_monarch_power = { amount = 5 }
 		add_dip_power = 50
 		add_opinion = {
 			who = TUR
@@ -2379,7 +2380,7 @@ country_event = {
 			}
 		}
 
-		add_mercantilism = 5
+		add_mercantilism_or_monarch_power = { amount = 5 }
 	}
 }
 
@@ -2420,7 +2421,7 @@ country_event = {
 			modifier = opinion_export_good
 		}
 		FROM = {
-			add_mercantilism = 3
+			add_mercantilism_or_monarch_power = { amount = 3 }
 			add_dip_power = 15
 		}
 		377 = {
@@ -2448,7 +2449,7 @@ country_event = {
 			}
 		}
 
-		add_mercantilism = 5
+		add_mercantilism_or_monarch_power = { amount = 5 }
 		add_opinion = {
 			who = FROM
 			modifier = opinion_export_bad
@@ -2682,7 +2683,7 @@ country_event = {
 		}
 
 		add_dip_power = 25
-		add_mercantilism = 2
+		add_mercantilism_or_monarch_power = { amount = 2 }
 	}
 }
 
@@ -2731,7 +2732,7 @@ country_event = {
 			}
 		}
 		FROM = {
-			add_mercantilism = 5
+			add_mercantilism_or_monarch_power = { amount = 5 }
 		}
 	}
 
@@ -2750,7 +2751,7 @@ country_event = {
 			}
 		}
 
-		add_mercantilism = 3
+		add_mercantilism_or_monarch_power = { amount = 3 }
 		add_mil_power = 25
 		add_casus_belli = {
 			target = FROM
@@ -2813,7 +2814,7 @@ country_event = {
 			religion = catholic
 		}
 		add_treasury = 90
-		add_mercantilism = 5
+		add_mercantilism_or_monarch_power = { amount = 5 }
 	}
 
 	option = {
@@ -3748,7 +3749,7 @@ country_event = {
 			factor = 50
 		}
 
-		add_mercantilism = 3
+		add_mercantilism_or_monarch_power = { amount = 3 }
 		377 = {
 			add_trade_modifier = {
 				who = ROOT
@@ -4170,7 +4171,7 @@ country_event = {
 		}
 
 		add_treasury = 100
-		add_mercantilism = 5
+		add_mercantilism_or_monarch_power = { amount = 5 }
 		capital_scope = {
 			add_base_tax = 1
 			add_base_production = 1
@@ -4580,7 +4581,7 @@ country_event = {
 			}
 		}
 
-		add_mercantilism = 5
+		add_mercantilism_or_monarch_power = { amount = 5 }
 		add_opinion = {
 			who = VEN
 			modifier = opinion_export_bad
@@ -5510,7 +5511,7 @@ country_event = {
 			}
 		}
 		else = {
-			add_mercantilism = 3
+			add_mercantilism_or_monarch_power = { amount = 3 }
 		}
 	}
 }
@@ -5614,7 +5615,7 @@ country_event = {
 		}
 
 		add_mil_power = 25
-		add_mercantilism = 3
+		add_mercantilism_or_monarch_power = { amount = 3 }
 		random_country = {
 			limit = { has_country_flag = fee_ven_francesco_venier_merchant }
 			add_opinion = {
@@ -5728,7 +5729,7 @@ country_event = {
 		}
 
 		add_mil_power = 25
-		add_mercantilism = 3
+		add_mercantilism_or_monarch_power = { amount = 3 }
 		random_country = {
 			limit = { has_country_flag = fee_ven_francesco_venier_merchant }
 			add_opinion = {
@@ -5842,7 +5843,7 @@ country_event = {
 		}
 
 		add_mil_power = 25
-		add_mercantilism = 3
+		add_mercantilism_or_monarch_power = { amount = 3 }
 		random_country = {
 			limit = { has_country_flag = fee_ven_francesco_venier_merchant }
 			add_opinion = {

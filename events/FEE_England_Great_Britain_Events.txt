@@ -292,7 +292,7 @@ country_event = {
 
 		add_stability = -1
 		add_mil_power = 100
-		add_mercantilism = 1
+		add_mercantilism_or_monarch_power = { amount = 1 }
 		add_country_modifier = {
 			name = fee_eng_gbr_english_empire
 			duration = -1

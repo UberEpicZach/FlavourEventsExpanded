@@ -636,7 +636,7 @@ country_event = {
 					}
 				}
 				owner = {
-					add_mercantilism = 3
+					add_mercantilism_or_monarch_power = { amount = 3 }
 				}
 			}
 			else_if = { #Gain Income

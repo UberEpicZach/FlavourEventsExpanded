@@ -990,7 +990,7 @@ country_event = {
 			}
 			add_estate_burghers_loyalty_effect = yes
 		}
-		else = { add_mercantilism = 2 }
+		else = { add_mercantilism_or_monarch_power = { amount = 2 } }
 	}
 }
 

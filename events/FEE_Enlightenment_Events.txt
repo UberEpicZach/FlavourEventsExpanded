@@ -718,7 +718,7 @@ country_event = {
 		}
 
 		add_dip_power = -200
-		add_mercantilism = 5
+		add_mercantilism_or_monarch_power = { amount = 5 }
 	}
 }
 
