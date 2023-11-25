@@ -18,7 +18,14 @@ court_jew = {
 	# Bonus
 	interest = -1.5
 
-	skill_scaled_modifier = { meritocracy = 0.25 }
+	skill_scaled_modifier = {
+		trigger = { 
+			owner = {  
+				is_emperor_of_china = yes 
+			}
+		}
+		modifier = { meritocracy = 0.25 }
+	}
 
 	allow_only_male = yes
 
