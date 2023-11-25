@@ -54,6 +54,10 @@ on_new_age = {
 		limit = { has_country_modifier = fee_por_henrique_naval_reforms }
 		remove_country_modifier = fee_por_henrique_naval_reforms
 	}
+	if = {
+		limit = { has_country_modifier = fee_france_scots_mercenaries }
+		remove_country_modifier = fee_france_scots_mercenaries
+	}
 }
 
 # country
@@ -86,23 +90,23 @@ on_new_monarch = {
 #ROOT - Winer
 #FROM - Loser
 on_war_ended = {
-    if = {
-        limit = {
-            OR = {
-                tag = POR
-                FROM = { tag = POR }
-            }
-            POR = {
-                has_country_modifier = fee_por_avenge_betrayal
-                has_country_modifier = fee_por_francisco_de_almeida
-                NOT = {
-                    is_in_war = {
-                        attacker_leader = POR
-                        casus_belli = cb_vassalize_mission
-                    }
-                }
-            }
-        }
-        POR = { remove_country_modifier = fee_por_avenge_betrayal }
-    }
+	if = {
+		limit = {
+			OR = {
+				tag = POR
+				FROM = { tag = POR }
+			}
+			POR = {
+				has_country_modifier = fee_por_avenge_betrayal
+				has_country_modifier = fee_por_francisco_de_almeida
+				NOT = {
+					is_in_war = {
+						attacker_leader = POR
+						casus_belli = cb_vassalize_mission
+					}
+				}
+			}
+		}
+		POR = { remove_country_modifier = fee_por_avenge_betrayal }
+	}
 }
