@@ -396,12 +396,6 @@ country_event = {
 			name = fee_por_avenge_betrayal
 			duration = -1
 		}
-
-		hidden_effect = {
-			country_event = {
-				id = FEE_Portugal_Events.101
-			}
-		}
 	}
 
 	option = {
@@ -1650,63 +1644,5 @@ country_event = {
 			add_base_production = 1
 			change_trade_goods = sugar
 		}
-	}
-}
-
-#Remove Naval Reforms
-country_event = {
-	id = FEE_Portugal_Events.100
-	title = FEE_Portugal_Events.100.T
-	desc = FEE_Portugal_Events.100.D
-	picture = UNIVERSITY_eventPicture
-
-	hidden = yes
-	is_triggered_only = yes
-
-	trigger = {
-		tag = POR
-		NOT = { current_age = age_of_discovery }
-		has_country_modifier = fee_por_henrique_naval_reforms
-	}
-
-	immediate = {
-		hidden_effect = {
-			remove_country_modifier = fee_por_henrique_naval_reforms
-		}
-	}
-
-	option = {
-		name = FEE_Portugal_Events.100.OPT1
-	}
-}
-
-#Remove Naval Reforms
-country_event = {
-	id = FEE_Portugal_Events.101
-	title = FEE_Portugal_Events.101.T
-	desc = FEE_Portugal_Events.101.D
-	picture = UNIVERSITY_eventPicture
-
-	hidden = yes
-	is_triggered_only = yes
-
-	trigger = {
-		tag = POR
-		4563 = {
-			owner = {
-				NOT = { war_with = ROOT }
-			}
-		}
-		has_country_modifier = fee_por_avenge_betrayal
-	}
-
-	immediate = {
-		hidden_effect = {
-			remove_country_modifier = fee_por_avenge_betrayal
-		}
-	}
-
-	option = {
-		name = FEE_Portugal_Events.101.OPT1
 	}
 }
