@@ -8,3 +8,10 @@ fee_is_was_nap_sic = {
 		was_tag = TTS
 	}
 }
+
+fee_is_was_gen = {
+	OR = {
+		tag = GEN
+		was_tag = GEN
+	}
+}

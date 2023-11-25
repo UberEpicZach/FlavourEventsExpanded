@@ -10,10 +10,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		OR = {
-			tag = GEN
-			was_tag = GEN
-		}
+		fee_is_was_gen = yes
 		is_year = 1128
 		NOT = { is_year = 1543 }
 		101 = {
@@ -173,10 +170,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		OR = {
-			tag = GEN
-			was_tag = GEN
-		}
+		fee_is_was_gen = yes
 		is_year = 1700
 		owns = 101
 		101 = {
@@ -437,10 +431,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		OR = {
-			tag = GEN
-			was_tag = GEN
-		}
+		fee_is_was_gen = yes
 		is_year = 1261
 		NOT = { is_year = 1453 }
 		exists = BYZ
@@ -545,7 +536,7 @@ country_event = {
 	}
 }
 
-# [BYZ.GetName] requests for aid!
+# The Romans requests for aid!
 country_event = {
 	id = FEE_Genoa_Events.11
 	title = FEE_Genoa_Events.11.T
@@ -555,10 +546,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		OR = {
-			tag = GEN
-			was_tag = GEN
-		}
+		fee_is_was_gen = yes
 		BYZ = {
 			is_in_war = {
 				attacker_leader = TUR
@@ -701,10 +689,7 @@ country_event = {
 	picture = DIPLOMACY_eventPicture
 
 	trigger = {
-		OR = {
-			tag = GEN
-			was_tag = GEN
-		}
+		fee_is_was_gen = yes
 		OR = {
 			alliance_with = BYZ
 			has_opinion = {
@@ -858,10 +843,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		OR = {
-			tag = GEN
-			was_tag = GEN
-		}
+		fee_is_was_gen = yes
 		OR = {
 			alliance_with = BYZ
 			has_opinion = {
@@ -939,10 +921,7 @@ country_event = {
 	trigger = {
 		is_year = 1266
 		NOT = { is_year = 1475 }
-		OR = {
-			tag = GEN
-			was_tag = GEN
-		}
+		fee_is_was_gen = yes
 		OR = {
 			crimea_area = {
 				owned_by = ROOT
@@ -1134,10 +1113,7 @@ country_event = {
 	trigger = {
 		is_year = 1266
 		NOT = { is_year = 1475 }
-		OR = {
-			tag = GEN
-			was_tag = GEN
-		}
+		fee_is_was_gen = yes
 		OR = {
 			crimea_area = {
 				owned_by = ROOT
@@ -1191,10 +1167,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		OR = {
-			tag = GEN
-			was_tag = GEN
-		}
+		fee_is_was_gen = yes
 		crimea_region = {
 			owned_by = ROOT
 		}
@@ -1293,10 +1266,6 @@ country_event = {
 		name = FEE_Genoa_Events.18.OPT1
 		ai_chance = {
 			factor = 50
-			modifier = {
-				factor = 2
-				ai = yes
-			}
 		}
 
 		add_opinion = {
@@ -1322,11 +1291,7 @@ country_event = {
 	option = {
 		name = FEE_Genoa_Events.18.OPT2
 		ai_chance = {
-			factor = 50
-			modifier = {
-				factor = 0
-				ai = yes
-			}
+			factor = 0
 		}
 
 		add_opinion = {
@@ -1354,10 +1319,7 @@ country_event = {
 	trigger = {
 		is_year = 1249
 		NOT = { is_year = 1475 }
-		OR = {
-			tag = GEN
-			was_tag = GEN
-		}
+		fee_is_was_gen = yes
 		owns = 285
 	}
 
@@ -1393,10 +1355,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		OR = {
-			tag = GEN
-			was_tag = GEN
-		}
+		fee_is_was_gen = yes
 		crimea_region = {
 			owned_by = ROOT
 			any_neighbor_province = {
@@ -1422,10 +1381,6 @@ country_event = {
 		name = FEE_Genoa_Events.20.OPT1
 		ai_chance = {
 			factor = 50
-			modifier = {
-				factor = 2
-				ai = yes
-			}
 		}
 
 		add_dip_power = -25
@@ -1454,7 +1409,7 @@ country_event = {
 	option = {
 		name = FEE_Genoa_Events.20.OPT2
 		ai_chance = {
-			factor = 50
+			factor = 0
 		}
 
 		add_mercantilism = 5
@@ -1494,7 +1449,7 @@ country_event = {
 	}
 }
 
-# [FROM.GetAdjective] Embassy
+# Genovese Embassy
 country_event = {
 	id = FEE_Genoa_Events.21
 	title = FEE_Genoa_Events.21.T
@@ -1513,10 +1468,6 @@ country_event = {
 		name = FEE_Genoa_Events.21.OPT1
 		ai_chance = {
 			factor = 50
-			modifier = {
-				factor = 2
-				ai = yes
-			}
 		}
 
 		capital_scope = {
@@ -1546,7 +1497,7 @@ country_event = {
 	option = {
 		name = FEE_Genoa_Events.21.OPT2
 		ai_chance = {
-			factor = 50
+			factor = 0
 		}
 
 		add_casus_belli = {
@@ -1561,6 +1512,269 @@ country_event = {
 		reverse_add_opinion = {
 			who = FROM
 			modifier = opinion_export_bad
+		}
+	}
+}
+
+#########	Genovese Explorers	#########
+
+# Antonio Malfante
+country_event = {
+	id = FEE_Genoa_Events.22
+	title = FEE_Genoa_Events.22.T
+	desc = FEE_Genoa_Events.22.D
+	picture = MERCHANTS_TALKING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		fee_is_was_gen = yes
+		is_year = 1445
+		NOT = { is_year = 1446 }
+	}
+
+	mean_time_to_happen = {
+		days = 90
+	}
+
+	option = {
+		name = FEE_Genoa_Events.22.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_treasury = 25
+		add_estate_burghers_loyalty_effect = yes
+		add_mercantilism = 3
+		4562 = {
+			province_event = {
+				id = FEE_Genoa_Events.23
+				days = 180
+			}
+		}
+	}
+}
+
+# Malfante in Honaine
+province_event = {
+	id = FEE_Genoa_Events.23
+	title = FEE_Genoa_Events.23.T
+	desc = FEE_Genoa_Events.23.D
+	picture = MERCHANTS_TALKING_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	goto = 4652
+
+	option = {
+		name = FEE_Genoa_Events.23.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_base_tax = 1
+		add_base_production = 1
+		add_province_modifier = {
+			name = fee_gen_antonio_malfante
+			duration = 3650
+		}
+		add_trade_modifier = {
+			who = FROM
+			duration = 3650
+			power = 20
+			key = fee_gen_antonio_malfante
+		}
+		owner = {
+			add_spy_network_from = {
+				who = FROM
+				value = 25
+			}
+			add_opinion = {
+				who = FROM
+				modifier = opinion_export_good
+			}
+			reverse_add_opinion = {
+				who = FROM
+				modifier = opinion_export_good
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Genoa_Events.23.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
+		owner = {
+			reverse_add_casus_belli = {
+				type = cb_trade_conflict
+				target = FROM
+			}
+			add_opinion = {
+				who = FROM
+				modifier = opinion_export_bad
+			}
+			reverse_add_opinion = {
+				who = FROM
+				modifier = opinion_export_bad
+			}
+		}
+	}
+
+	after = {
+		FROM = {
+			country_event = {
+				id = FEE_Genoa_Events.24
+				days = 180
+			}
+		}
+	}
+}
+
+# Golden Sahara?
+country_event = {
+	id = FEE_Genoa_Events.24
+	title = FEE_Genoa_Events.24.T
+	desc = FEE_Genoa_Events.24.D
+	picture = FORTIFIED_CITY_WITH_CARAVAN_OUTSIDE_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = FEE_Genoa_Events.24.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_treasury = -15
+		country_event = {
+			id = FEE_Genoa_Events.25
+			days = 180
+		}
+	}
+
+	option = {
+		name = FEE_Genoa_Events.24.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
+		reduce_estate_burghers_loyalty_effect = yes
+	}
+}
+
+# Malfante in Sijilmāsa
+country_event = {
+	id = FEE_Genoa_Events.25
+	title = FEE_Genoa_Events.25.T
+	desc = FEE_Genoa_Events.25.D
+	picture = SULTAN_AND_MERCHANT_eventPicture
+
+	is_triggered_only = yes
+
+	goto = 346
+
+	major = yes
+	major_trigger = {
+		owns = 346
+	}
+
+	option = {
+		name = FEE_Genoa_Events.25.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_treasury = -25
+		346 = {
+			add_base_production = 2
+		}
+		country_event = {
+			id = FEE_Genoa_Events.26
+			days = 180
+		}
+	}
+
+	option = {
+		name = FEE_Genoa_Events.25.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
+		
+	}
+}
+
+# Malfante nel Subshara
+country_event = {
+	id = FEE_Genoa_Events.26
+	title = FEE_Genoa_Events.26.T
+	desc = FEE_Genoa_Events.26.D
+	picture = FORTIFIED_CITY_WITH_CARAVAN_OUTSIDE_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	goto = 1127
+
+	option = {
+		name = FEE_Genoa_Events.26.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_mercantilism = 5
+		1127 = { add_base_tax = 2 }
+		capital_scope = { add_base_tax = 1 }
+		custom_tooltip = FEE_GEN_DISCOVER_TIMBUKTU_TT
+		hidden_effect = {
+			discover_province = 1127
+			1132 = {
+				every_trade_node_member_province = {
+					limit = {
+						NOT = { is_wasteland = yes }
+						is_city = yes
+					}
+					discover_country = ROOT
+				}
+			}
+		}
+		333 = {
+			province_event = {
+				id = FEE_Genoa_Events.27
+				days = 180
+			}
+		}
+	}
+}
+
+# Malfante in Mallorca
+province_event = {
+	id = FEE_Genoa_Events.27
+	title = FEE_Genoa_Events.27.T
+	desc = FEE_Genoa_Events.27.D
+	picture = MERCHANTS_TALKING_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	goto = 333
+
+	option = {
+		name = FEE_Genoa_Events.27.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_trade_node_income = 10
+		add_base_tax = 1
+		add_base_production = 1
+		add_province_modifier = {
+			name = fee_gen_antonio_malfante
+			duration = 1825
 		}
 	}
 }

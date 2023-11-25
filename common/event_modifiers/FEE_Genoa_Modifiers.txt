@@ -5,7 +5,7 @@ fee_gen_lanterna = {
 }
 
 # San Giorgio on Corsica
-fee_genoa_casa_san_giorgio = {
+fee_gen_casa_san_giorgio = {
 	local_development_cost = -0.1
 }
 
@@ -60,4 +60,12 @@ fee_gen_genoese_russian_trade_agreement = {
 	local_manpower_modifier = 0.33
 	local_regiment_cost = -0.33
 	local_development_cost = -0.15
+}
+
+# Malfante
+fee_gen_antonio_malfante = {
+	local_development_cost = -0.25
+	province_trade_power_modifier = 0.25
+	ship_recruit_speed = -0.25
+	local_ship_cost = -0.25
 }

@@ -42,7 +42,7 @@
  FEE_Genoa_Events.10.OPT1: "Our word is sacred."
  FEE_Genoa_Events.10.OPT2: "Nothin personal, it's purely for commerce!"
 
- FEE_Genoa_Events.11.T: "[BYZ.GetName] requests for aid!"
+ FEE_Genoa_Events.11.T: "The Romans requests for aid!"
  FEE_Genoa_Events.11.D: "A tired diplomat has reached our court and informed that [TUR.GetName] has started the invasion of their land thus requesting our aid against the heathen invasion based on century-lasting trade relations and help of the Christendom, how should we act?"
  FEE_Genoa_Events.11.OPT1: "Send our nobleman Giovanni Giustiniani."
  FEE_Genoa_Events.11.OPT2: "Send a defensive company to their capital"
@@ -90,10 +90,37 @@
  FEE_Genoa_Events.20.OPT1: "Send an embassy."
  FEE_Genoa_Events.20.OPT2: "War, purely for commerce."
 
- FEE_Genoa_Events.21.T: "[FROM.GetAdjective] Embassy"
+ FEE_Genoa_Events.21.T: "Genovese Embassy"
  FEE_Genoa_Events.21.D: "A convoy of [FROM.GetAdjective] merchants, traders, diplomats have reached our capital for an agreement between our two nations for cooperation in the Crimea, or we could just attack them."
  FEE_Genoa_Events.21.OPT1: "Sounds reasonable."
  FEE_Genoa_Events.21.OPT2: "To war!"
+
+ FEE_Genoa_Events.22.T: "Antonio Malfante"
+ FEE_Genoa_Events.22.D: "Antonio Malfante was a Genoese businessman who dreamed of traveling the world and learning about different cultures. He moved to the East, where he worked for some bankers of the Centurione family, and made a fortune trading spices and fabrics. He wanted to return to his homeland, where he hoped to be welcomed with honor and respect. In 1443, he asked the doge of Genoa for permission to come back, after paying his taxes. The doge agreed, thanks to the intervention of Percivalle Marchione, a powerful politician and diplomat. Antonio prepared to leave, but before sailing, he wanted to visit Honaïne, a port of the kingdom of Tlemcen, where he had many friends and business."
+ FEE_Genoa_Events.22.OPT1: "Ianuensis ergo Mercator."
+
+ FEE_Genoa_Events.23.T: "Malfante in Honaine"
+ FEE_Genoa_Events.23.D: "In the sultry summer of 1445, the bustling port of Honaine was abuzz with maritime activity. The distant echoes of merchants haggling, sailors mending sails, and the creaking of wooden ships against the gentle waves created a symphony that danced along the quaysides. Among the myriad vessels that docked in Honaine, one ship stood out—a sturdy Genoese merchant ship guided by the seasoned hands of Captain Antonio Malfante. With salted air in his lungs and the glint of adventure in his eyes, Antonio stood on the weathered deck, gazing at the vibrant cityscape that sprawled before him. As the sun dipped below the horizon, casting a golden glow over Honaine's minarets and rooftops, Antonio Malfante knew that this city held the promise of prosperity and adventure."
+ FEE_Genoa_Events.23.OPT1: "Let him stay and theach us the Genoese ways."
+ FEE_Genoa_Events.23.OPT2: "What if he spied on us?"
+
+ FEE_Genoa_Events.24.T: "Golden Sahara?"
+ FEE_Genoa_Events.24.D: "In the year 1445, Antonio Malfante found himself captivated by the allure of Honaine, the bustling port on the Mediterranean's edge. Enveloped in the rich mosaic of cultures, he uncovered whispers of the Saharan and Subsaharan gold that seemed to shimmer like a mirage in the vast desert. Compelled by an adventurous spirit, Antonio dispatched a missive to the Genoese council, beseeching their support for a grand exploration into the heart of the Sahara. In his letter, he painted a vivid tapestry of untold riches and uncharted territories. The promise of golden treasures, veiled by the shifting sands, fueled his imagination. Antonio's missive was a plea for patronage, an appeal to the council's vision for expanding Genoa's reach and prosperity. He envisioned a journey beyond the known horizons, navigating the vast dunes and caravanserais of the Sahara in pursuit of the source of coveted gold. As the parchment carried the weight of Antonio's dreams across the Mediterranean, the Genoese council deliberated. The fate of an expedition into the unknown hung in the balance, a gamble that could either yield immeasurable wealth or be swallowed by the arid expanse of the desert's secrets."
+ FEE_Genoa_Events.24.OPT1: "Finance it, the gold will be ours."
+ FEE_Genoa_Events.24.OPT2: "Money doesn't come from sand, you idiot."
+
+ FEE_Genoa_Events.25.T: "Malfante in Sijilmasa"
+ FEE_Genoa_Events.25.D: "Six moons had completed their celestial dance since Antonio Malfante, gripped by the allure of undiscovered realms, assembled his worldly possessions and marshaled a caravan destined for the heart of the desert. The undulating waves of golden sand bore witness to the determined expedition. Amidst the timeless dunes, the caravan found solace at the magnificent Sijilmasa. The ancient city, a jewel of the Saharan trade routes, unfolded its tales like parchment unfurling in the breeze. Antonio, amidst the labyrinthine alleys and sun-kissed adobe walls, sensed the pulse of history and the whispers of merchants long gone. In the shadow of Sijilmasa, Antonio glimpsed the elusive Saharan gold. Its glimmer, traded in bustling markets, spoke of wealth hidden beneath the shifting sands. An ember of realization sparked within him—there must be more, a southern treasure trove waiting to be unveiled. As the caravan rested under the Saharan stars, Antonio contemplated the journey ahead. The allure of gold, a siren's call, beckoned him southward, beyond the known realms of the desert. Sijilmasa, with its tales of trade and treasures, became a stepping stone—a threshold to a realm where the sands held secrets yet untold."
+ FEE_Genoa_Events.25.OPT1: "Continue, we are getting closer!"
+ FEE_Genoa_Events.25.OPT2: "Return home Malfante, it's a waste of time."
+
+ FEE_Genoa_Events.26.T: "Malfante nel Subshara"
+ FEE_Genoa_Events.26.D: "Beyond the vast expanse of Touat, Antonio Malfante's desert caravan, fueled by the patronage of Shaykh Sidi Yahia ben-Idir, reached the ancient oasis of Tamantit in the heart of the Central Sahara. The whispered tales of the desert winds spoke of the shaykh's benevolence, guiding the intrepid explorer through the labyrinth of dunes. Under the sheltering palms of Tamantit, Antonio found not only respite but a treasury of knowledge. Merchants, their faces weathered by the sands, and Shaykh Sidi Yahia ben-Idir himself, a sage of the desert, unveiled the secrets of the Sahel and the enigmatic lands of Black Africa. The merchants' tales painted a vibrant mosaic of cultures—the rhythmic beats of drums in Sahelian villages, the intricate weaving of kente cloth in the hands of skilled artisans, and the vibrant marketplaces where colors and scents intertwined. The sheikh's wisdom narrated the customs and rituals of diverse peoples, each a thread in the intricate tapestry of Saharan and sub-Saharan life. Antonio, beneath the celestial dome of the Sahara, absorbed the wealth of information like the sands that shifted beneath his feet. Tamantit, a crossroads of trade and knowledge, became a sanctuary of enlightenment. With each tale, Antonio's vision extended beyond the dunes, reaching toward the unknown realms of the Sahel and the mysteries of Black Africa—a horizon where cultures intermingled like ripples in an oasis pool. The desert, once a sea of uncertainty, now bore the footprints of Antonio Malfante, an intrepid merchant charting the unexplored depths of Africa."
+ FEE_Genoa_Events.26.OPT1: "So it wasn't a waste in the end."
+
+ FEE_Genoa_Events.27.T: "Malfante in Mallorca"
+ FEE_Genoa_Events.27.D: "Having ventured into the heart of the Sahara, Antonio Malfante, now laden with the treasures of knowledge and tales from Africa, retraced his steps to the welcoming shores of Mallorca. The sea breeze carried whispers of distant lands, and the azure waters embraced him like an old friend. In the shadow of Mallorca's rugged cliffs, Antonio found solace. The vibrant markets and bustling ports of the island welcomed him back, and the familiar sights and scents of the Mediterranean filled his senses. The tales of the Sahara, the Sahel, and Black Africa echoed in his heart. As the sun dipped below the horizon, casting hues of gold and crimson over the Balearic Sea, Antonio Malfante chose to spend the remainder of his days on the beloved island of Mallorca. Amidst vineyards and olive groves, he wove the tapestry of his experiences into the fabric of the local culture. The island, with its serenity and timeless charm, became a haven for the weary explorer. Antonio, surrounded by the warmth of Mallorcan hospitality, shared the stories of his desert odyssey with those who gathered in the shaded squares and under the starlit skies. Mallorca, cradled by the Mediterranean, became the final chapter of Antonio Malfante's extraordinary journey. The sands of the Sahara might have whispered secrets, but it was the gentle lull of Mallorca's waves that serenaded him into the tranquil embrace of a well-earned rest. In the heart of the Balearic isle, Antonio found not only a home but a sanctuary to anchor his storied wanderlust."
+ FEE_Genoa_Events.27.OPT1: "He will stay were money is."
 
  #Modifiers
  fee_gen_lanterna: "The Lanterna"
@@ -124,8 +151,13 @@
  fee_gen_genoese_russian_trade_agreement: "Genoese-Russian Agreement"
  desc_fee_gen_genoese_russian_trade_agreement: ""
 
+ fee_gen_antonio_malfante: "Antonio Malfante"
+ desc_fee_gen_antonio_malfante: ""
+
 # Tooltips
  FEE_GEN_BYZANTINE_RELATIONS_TT: "The blossoming of our Alliance will be felt over time as long as we stay allied or have §G125+§! Relation."
  FEE_GEN_TREATY_CONSTANTINOPLE_TT: "Every Province owned by §Y[Root.GetName]§! in the §M[1320.GetName] Trade Node§!, will gain: "
 
  FEE_GEN_CRIMEAN_POSSESSIONS_LIBERATED_TT: "§RWe will leave our Crimean possessions for the neighboring countries to take.§!"
+
+ FEE_GEN_DISCOVER_TIMBUKTU_TT: "§GWe will discover all provinces in the Timbuktu Trade Node§!"
