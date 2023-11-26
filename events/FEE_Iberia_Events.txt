@@ -1207,11 +1207,11 @@ country_event = {
 			factor = 50
 		}
 		add_years_of_income = -0.5
-		if = {
-			limit = {
-				has_dlc = "Rule Britannia"
-			}
-			change_innovativeness = 3
+		add_innovativeness_or_monarch_power = {
+			amount = 3
+			adm = 30
+			dip = 30
+			mil = 30
 		}
 		add_country_modifier = {
 			name = iberia_school_alcala

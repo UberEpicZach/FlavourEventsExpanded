@@ -25,7 +25,12 @@ country_event = {
 			name = FEE_Scotland_compulsory_education
 			duration = -1
 		}
-		change_innovativeness = 5
+		add_innovativeness_or_monarch_power = {
+			amount = 5
+			adm = 50
+			dip = 50
+			mil = 50
+		}
 		add_estate_loyalty = {
 			estate = estate_nobles
 			loyalty = -15
@@ -53,7 +58,12 @@ country_event = {
 	}
 	option = {
 		name = FEE_Scotland_Events.1.OPT2
-		change_innovativeness = 3
+		add_innovativeness_or_monarch_power = {
+			amount = 3
+			adm = 30
+			dip = 30
+			mil = 30
+		}
 		if = {
 			limit = {
 				owns_core_province = 251
@@ -2155,7 +2165,12 @@ country_event = {
 			factor = 1
 		}
 		add_years_of_income = -1
-		change_innovativeness = 10
+		add_innovativeness_or_monarch_power = {
+			amount = 10
+			adm = 100
+			dip = 100
+			mil = 100
+		}
 		lowlands_area = {
 			if = {
 				limit = {
@@ -2226,8 +2241,13 @@ country_event = {
 		ai_chance = {
 			factor = 1
 		}
-		add_stability_or_adm_power = yes
-		change_innovativeness = 10
+		add_stability_or_adm_power
+		add_innovativeness_or_monarch_power = {
+			amount = 10
+			adm = 100
+			dip = 100
+			mil = 100
+		}
 		add_adm_power = 100
 		add_dip_power = 100
 		add_prestige = -20
@@ -2280,8 +2300,13 @@ country_event = {
 		months = 200
 	}
 	option = {
-		name = FEE_Scotland_Events.33.OPT1
-		change_innovativeness = 10
+		name = FEE_Scotland_Events
+		add_innovativeness_or_monarch_power = {
+			amount = 10
+			adm = 100
+			dip = 100
+			mil = 100
+		}
 		add_country_modifier = {
 			name = FEE_Scotland_industrial_pioneer
 			duration = 27375

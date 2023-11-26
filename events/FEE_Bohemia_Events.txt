@@ -637,11 +637,11 @@ country_event = {
 			add_base_production = 2
 		}
 		give_estate_land_share_large = { estate = estate_nobles }
-		if = {
-			limit = {
-				has_dlc = "Rule Britannia"
-			}
-			change_innovativeness = 3
+		add_innovativeness_or_monarch_power = {
+			amount = 3
+			adm = 30
+			dip = 30
+			mil = 30
 		}
 		add_country_modifier = {
 			name = boh_coinage_pioneer

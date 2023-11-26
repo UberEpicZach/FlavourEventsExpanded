@@ -770,7 +770,12 @@ country_event = {
 
 		add_adm_power = 100
 		add_prestige_or_monarch_power = { amount = 15 }
-		change_innovativeness = 1
+		add_innovativeness_or_monarch_power = {
+			amount = 1
+			adm = 10
+			dip = 10
+			mil = 10
+		}
 		define_advisor = {
 			type = artist
 			culture = saxon

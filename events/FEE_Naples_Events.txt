@@ -325,7 +325,12 @@ country_event = {
 	option = {
 		name = FEE_Naples_Events.5.OPT1
 		add_adm_power = 25
-		add_innovativeness_small_effect = yes
+		add_innovativeness_or_monarch_power = {
+			amount = 2
+			adm = 20
+			dip = 20
+			mil = 20
+		}
 		121 = {
 			add_institution_embracement = {
 				which = renaissance

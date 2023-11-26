@@ -191,7 +191,12 @@ country_event = {
 			culture = hessian
 			cost_multiplier = 0.5
 		}
-		change_innovativeness = 5
+		add_innovativeness_or_monarch_power = {
+			amount = 5
+			adm = 50
+			dip = 50
+			mil = 50
+		}
 		add_adm_power = 100
 	}
 }
