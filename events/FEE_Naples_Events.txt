@@ -1967,10 +1967,9 @@ country_event = {
 	picture = REVOLT_eventPicture
 
 	fire_only_once = yes
+	is_triggered_only = yes
 
 	trigger = {
-		fee_is_was_nap_sic = yes
-		has_disaster = fee_naples_conspiracy_barons_1
 		owns = 122
 		controls = 122
 	}
@@ -2006,10 +2005,9 @@ country_event = {
 	picture = GOOD_WITH_MONARCH_eventPicture
 
 	fire_only_once = yes
+	is_triggered_only = yes
 
 	trigger = {
-		fee_is_was_nap_sic = yes
-		NOT = { has_disaster = fee_naples_conspiracy_barons_1 }
 		122 = {
 			owned_by = ROOT
 			has_province_modifier = fee_nap_commissioni_del_balzo
@@ -2024,7 +2022,6 @@ country_event = {
 		}
 
 		add_years_of_income = -0.25
-		add_legitimacy_equivalent = { amount = -5 republican_tradition = -3 }
 	}
 
 	option = {
@@ -2033,6 +2030,7 @@ country_event = {
 			factor = 25
 		}
 
+		add_legitimacy_equivalent = { amount = -5 republican_tradition = -3 }
 		122 = { remove_province_modifier = fee_nap_commissioni_del_balzo }
 	}
 }

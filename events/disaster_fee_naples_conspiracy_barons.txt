@@ -200,6 +200,16 @@ country_event = {
 			share = -33
 		}
 	}
+
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = FEE_Naples_Events.30
+				days = 60
+				random = 15
+			}
+		}
+	}
 }
 
 #The arrival of the Skanderberg
