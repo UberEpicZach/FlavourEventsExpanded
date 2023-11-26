@@ -1,6 +1,7 @@
 #Designed by Chu
 #Codded by ScorpenenZeronen
 namespace = FEE_Scotland_Events
+
 #The Renaissance in Scotland
 country_event = {
 	id = FEE_Scotland_Events.1
@@ -1655,7 +1656,9 @@ country_event = {
 	title = FEE_Scotland_Events.27.T
 	desc = FEE_Scotland_Events.27.D
 	picture = COLONIZATION_eventPicture
+
 	is_triggered_only = yes
+
 	immediate = {
 		hidden_effect = {
 			colombia_region = {
@@ -1875,8 +1878,10 @@ country_event = {
 			}
 		}
 	}
+
 	option = {
 		name = FEE_Scotland_Events.27.OPT1
+
 		tooltip = {
 			colombia_region = {
 				discover_country = ROOT
@@ -1966,9 +1971,12 @@ country_event = {
 	title = FEE_Scotland_Events.28.T
 	desc = FEE_Scotland_Events.28.D
 	picture = COLONIZATION_eventPicture
+
 	is_triggered_only = yes
+
 	option = {
 		name = FEE_Scotland_Events.28.OPT1
+
 		add_stability = -1
 		add_prestige = -20
 	}
@@ -1980,7 +1988,9 @@ country_event = {
 	title = FEE_Scotland_Events.29.T
 	desc = FEE_Scotland_Events.29.D
 	picture = WESTERNISATION_eventPicture
+
 	fire_only_once = yes
+
 	trigger = {
 		OR = {
 			tag = SCO
@@ -1996,11 +2006,13 @@ country_event = {
 		}
 		is_year = 1700
 	}
+
 	option = {
 		name = FEE_Scotland_Events.29.OPT1
 		ai_chance = {
 			factor = 1
 		}
+
 		kingdom_of_the_isles_area = {
 			add_base_manpower = -1
 		}
@@ -2027,9 +2039,16 @@ country_event = {
 			name = FEE_Scotland_crofters_displaced
 			duration = 7300
 		}
+
+		country_event = {
+			id = FEE_Scotland_Events.41
+			days = 180
+		}
 	}
+
 	option = {
 		name = FEE_Scotland_Events.29.OPT2
+
 		kingdom_of_the_isles_area = {
 			add_base_manpower = 1
 		}
@@ -2686,6 +2705,43 @@ country_event = {
 				owned_by = FROM
 			}
 			add_local_autonomy = 50
+		}
+	}
+}
+
+# Aftermath of the Clearances
+country_event = {
+	id = FEE_Scotland_Events.41
+	title = FEE_Scotland_Events.41.T
+	desc = FEE_Scotland_Events.41.D
+	picture = CONQUEST_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		any_owned_province = {
+			OR = {
+				area = kingdom_of_the_isles_area
+				area = highlands_area
+				area = lowlands_area
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Scotland_Events.41.OPT1
+
+		every_owned_province = {
+			limit = {
+				area = kingdom_of_the_isles_area
+				area = highlands_area
+				area = lowlands_area
+			}
+			change_trade_goods = wool
+			if = {
+				limit = { has_manufactory_no_custom_tooltip_trigger = yes }
+				add_building = textile
+			}
 		}
 	}
 }

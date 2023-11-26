@@ -111,6 +111,14 @@
  FEE_France_Events.22.OPT1: "Administrating a country is no easy task."
  FEE_France_Events.22.OPT2: "We need to reform our toll system!"
 
+ FEE_France_Events.23.T: "Introduction of the High-Temperature Forge"
+ FEE_France_Events.23.D: "While France relies heavily on imports to fill its needs for metals, technological improvements make domestic metals production increasingly important to the economy. Newly crafted forges from Italy, capable of withstanding much higher temperatures than traditional forges, have made it possible to mine iron more efficiently in Troyes. With this, we have taken one step closer to military and economic independence, a boon to our mercantilist economic system."
+ FEE_France_Events.23.OPT1: "Excellent!"
+
+ FEE_France_Events.24.T: "Foundation of the Port of La Havre"
+ FEE_France_Events.24.D: "The great river Seine is one of France’s most important arteries. In earlier times, the port of Harfleur, long hard-fought over by English and French, had been the main port on the mouth of the Seine. With the destruction of the port city, and the silting of the river, the location is now unviable as a port. {ROOT_monarch_get.name} views the naval prowess of the English, now evicted from Normandy, with jealousy, and wishes to restore the prominence of the Seine and create a new vital port city. This is become all the more important with the discovery of the New World, necessitating more Atlantic trade capacity as colonial trade provides opportunities for Atlantic ports rather than France’s traditional Mediterranean ports. A suitable natural harbor has been identified, christened “La Havre-de-Grace” (Harbor of Grace) by the royal surveyors. Initially, {His/Her} Majesty wanted to name France’s newest city after {himself/herself}, but the name La Havre would come to be the name by which the city would be known. Later, it would come to dominate much of France’s Atlantic trade, true to its promise."
+ FEE_France_Events.24.OPT1: "Vive La Havre!"
+
  FEE_France_Events.101.T: "Surrender of Maine Setup"
  FEE_France_Events.101.D: "You shouldn't be able to see this hidden event."
  FEE_France_Events.101.OPT1: "Please report it to the team if you see it."
@@ -187,6 +195,9 @@
  desc_fee_france_bad_tolls_timer: ""
  fee_france_revamped_tolls: "Reformed Internal Toll System"
  desc_fee_france_revamped_tolls: "We have reformed our internal toll system to make payments easier for traders and more lucrative for us."
+
+ fee_france_la_havre: "La Havre"
+ desc_fee_france_la_havre: ""
 
  #Opinion Modifiers
  fee_france_interfered: "Interfered with Local Custom"
