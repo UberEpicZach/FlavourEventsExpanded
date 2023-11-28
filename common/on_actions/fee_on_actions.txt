@@ -46,6 +46,7 @@ on_battle_lost_unit = {
 				unit_owner = { tag = SWI }
 			}
 		}
+		SWI = { clr_ruler_flag = fee_swi_charles_in_command }
 		BUR = {
 			country_event = { id = FEE_Switzerland_Events.14 }  # kills the Ruler of Burgundy
 		}
