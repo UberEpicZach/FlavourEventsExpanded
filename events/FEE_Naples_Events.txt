@@ -338,6 +338,12 @@ country_event = {
 			}
 		}
 	}
+
+	after = {
+		hidden_effect = {
+			clr_country_flag = nap_antonio_beccadelli
+		}
+	}
 }
 
 #Porta Capuana
@@ -2038,6 +2044,12 @@ country_event = {
 		add_legitimacy_equivalent = { amount = -5 republican_tradition = -3 }
 		122 = { remove_province_modifier = fee_nap_commissioni_del_balzo }
 	}
+
+	after = {
+		hidden_effect = {
+			clr_country_flag = fee_nap_conjury_orsini
+		} 
+	}
 }
 
 #########	On the Ottoman Invasion	#########
@@ -2184,6 +2196,7 @@ country_event = {
 		}
 
 		hidden_effect = {
+			clr_country_flag = fee_nap_followed_dream_ladislao
 			if = {
 				limit = {
 					is_part_of_hre = yes

@@ -9,11 +9,12 @@ fee_mantua_castello_san_giorgio = {
 }
 fee_mantua_palazzo_ducale = {
 	all_estate_loyalty_equilibrium = 0.05
-	local_development_cost = -0.10
+	local_development_cost_modifier = -0.05
+	monthly_splendor = 1
 }
 fee_mantua_celeste_galleria = {
 	tax_income = 12
-	local_institution_spread = 0.15
+	local_institution_spread = 0.33
 }
 fee_mantua_condotte_militari = {
 	mercenary_discipline = 0.05

@@ -1950,7 +1950,6 @@ country_event = {
 	trigger = {
 		fee_is_was_ven = yes
 		is_at_war = no
-		has_country_flag = fee_ven_turko_venetian_wars_friuli_raided_flag
 		137 = {
 			any_trade_node_member_province = {
 				has_port = yes
@@ -1964,6 +1963,10 @@ country_event = {
 
 	mean_time_to_happen = {
 		years = 5
+		modifier = {
+			factor = 0.5
+			has_country_flag = fee_ven_turko_venetian_wars_friuli_raided_flag
+		}
 	}
 
 	option = {
@@ -2017,6 +2020,12 @@ country_event = {
 					}
 				}
 			}
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			clr_country_flag = fee_ven_turko_venetian_wars_friuli_raided_flag
 		}
 	}
 }
@@ -2278,7 +2287,13 @@ country_event = {
 
 		add_dip_power = -50
 		custom_tooltip = FEE_VEN_VOYAGES_NICCOLO_TRON_TT
-		set_country_flag = fee_ven_voyages_niccolo_tron
+		hidden_effect = {
+			country_event = {
+				id = FEE_venice_Events.43
+				days = 180
+				random = 60
+			}
+		}
 	}
 
 	option = {
@@ -2293,7 +2308,13 @@ country_event = {
 
 		add_treasury = -25
 		custom_tooltip = FEE_VEN_VOYAGES_NICCOLO_TRON_TT
-		set_country_flag = fee_ven_voyages_niccolo_tron
+		hidden_effect = {
+			country_event = {
+				id = FEE_venice_Events.43
+				days = 180
+				random = 60
+			}
+		}
 	}
 
 	option = {
@@ -2321,26 +2342,9 @@ country_event = {
 	desc = FEE_Venice_Events.43.D
 	picture = SHIP_SAILING_eventPicture
 
-	fire_only_once = yes
-
-	trigger = {
-		fee_is_was_ven = yes
-		is_year = 1399
-		has_country_flag = fee_ven_voyages_niccolo_tron
-		NOT = { is_year = 1466 }
-	}
-
-	mean_time_to_happen = {
-		years = 1
-	}
+	is_triggered_only = yes
 
 	goto = 321
-
-	immediate = {
-		hidden_effect = {
-			set_country_flag = fee_ven_voyages_niccolo_tron_cyprus
-		}
-	}
 
 	option = {
 		name = FEE_Venice_Events.43.OPT1
@@ -2380,6 +2384,16 @@ country_event = {
 		}
 
 		add_mercantilism_or_monarch_power = { amount = 5 }
+	}
+
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = FEE_Venice_Events.45
+				days = 180
+				random = 60
+			}
+		}
 	}
 }
 
@@ -2475,27 +2489,16 @@ country_event = {
 	desc = FEE_Venice_Events.45.D
 	picture = RELIGION_eventPicture
 
+	is_triggered_only = yes
 	fire_only_once = yes
 
 	trigger = {
 		fee_is_was_ven = yes
 		is_year = 1399
-		has_country_flag = fee_ven_voyages_niccolo_tron_cyprus
 		NOT = { is_year = 1466 }
-		religion_group = christian
-	}
-
-	mean_time_to_happen = {
-		years = 3
 	}
 
 	goto = 379
-
-	immediate = {
-		hidden_effect = {
-			set_country_flag = fee_ven_voyages_niccolo_tron_jerusalem
-		}
-	}
 
 	option = {
 		name = FEE_Venice_Events.45.OPT1
@@ -2504,6 +2507,14 @@ country_event = {
 			modifier = {
 				factor = 2
 				ai = yes
+			}
+			modifier = {
+				factor = 2
+				OR = {
+					religion_group = christian
+					religion_group = muslim
+					religion = jewish
+				}
 			}
 		}
 		trigger = {
@@ -2534,7 +2545,26 @@ country_event = {
 			}
 		}
 
-		add_prestige = -5
+		if = {
+			limit = {
+				OR = {
+					religion_group = christian
+					religion_group = muslim
+					religion = jewish
+				}
+			}
+			add_prestige = -5
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = FEE_venice_Events.47
+				days = 180
+				random = 60
+			}
+		}
 	}
 }
 
@@ -2623,26 +2653,15 @@ country_event = {
 	picture = SHIP_SAILING_eventPicture
 
 	fire_only_once = yes
+	is_triggered_only = yes
 
 	trigger = {
 		fee_is_was_ven = yes
 		is_year = 1399
-		has_country_flag = fee_ven_voyages_niccolo_tron_jerusalem
 		NOT = { is_year = 1466 }
-		religion_group = christian
-	}
-
-	mean_time_to_happen = {
-		years = 3
 	}
 
 	goto = 358
-
-	immediate = {
-		hidden_effect = {
-			set_country_flag = fee_ven_voyages_niccolo_tron_egypt
-		}
-	}
 
 	option = {
 		name = FEE_Venice_Events.47.OPT1
@@ -2790,7 +2809,6 @@ country_event = {
 	trigger = {
 		fee_is_was_ven = yes
 		is_year = 1471
-		has_country_flag = fee_ven_voyages_niccolo_tron_egypt
 		NOT = { is_year = 1473 }
 	}
 
@@ -3560,6 +3578,19 @@ country_event = {
 			}
 		}
 	}
+
+	after = {
+		hidden_effect = {
+			if = {
+				limit = { is_year = 1577 }
+				112 = {
+					clr_province_flag = fee_ven_first_burning
+					clr_province_flag = fee_ven_second_burning
+					clr_province_flag = fee_ven_third_burning
+				}
+			}
+		}
+	}
 }
 
 # Plague of 1485
@@ -3619,7 +3650,6 @@ country_event = {
 		add_yearly_sailors = -2
 		add_yearly_manpower = -1
 		112 = {
-			set_province_flag = fee_ven_plague_1485
 			add_base_tax = -1
 			add_base_production = -1
 			add_base_manpower = -1
@@ -3678,7 +3708,11 @@ country_event = {
 
 		add_dip_power = -50
 		custom_tooltip = FEE_VEN_VOYAGES_ANTONIO_GRIMANI_TT
-		set_country_flag = fee_ven_voyages_antonio_grimani
+		country_event = {
+			id = FEE_Venice_Events.64
+			days = 180
+			random = 30
+		}
 	}
 
 	option = {
@@ -3693,7 +3727,11 @@ country_event = {
 
 		add_treasury = -25
 		custom_tooltip = FEE_VEN_VOYAGES_ANTONIO_GRIMANI_TT
-		set_country_flag = fee_ven_voyages_antonio_grimani
+		country_event = {
+			id = FEE_Venice_Events.64
+			days = 180
+			random = 30
+		}
 	}
 
 	option = {
@@ -3721,26 +3759,16 @@ country_event = {
 	desc = FEE_Venice_Events.64.D
 	picture = SHIP_SAILING_eventPicture
 
+	is_triggered_only = yes
 	fire_only_once = yes
 
 	trigger = {
 		fee_is_was_ven = yes
 		is_year = 1460
-		has_country_flag = fee_ven_voyages_antonio_grimani
 		NOT = { is_year = 1483 }
 	}
 
-	mean_time_to_happen = {
-		years = 1
-	}
-
 	goto = 321
-
-	immediate = {
-		hidden_effect = {
-			set_country_flag = fee_ven_voyages_antonio_grimani_syria
-		}
-	}
 
 	option = {
 		name = FEE_Venice_Events.64.OPT1
@@ -3776,6 +3804,12 @@ country_event = {
 				}
 			}
 		}
+		hidden_effect = {
+			country_event = {
+				id = FEE_Venice_Events.65
+				days = 180
+			}
+		}
 	}
 }
 
@@ -3786,26 +3820,16 @@ country_event = {
 	desc = FEE_Venice_Events.65.D
 	picture = SHIP_SAILING_eventPicture
 
+	is_triggered_only = yes
 	fire_only_once = yes
 
 	trigger = {
 		fee_is_was_ven = yes
 		is_year = 1460
-		has_country_flag = fee_ven_voyages_antonio_grimani_syria
 		NOT = { is_year = 1483 }
 	}
 
-	mean_time_to_happen = {
-		years = 2
-	}
-
 	goto = 358
-
-	immediate = {
-		hidden_effect = {
-			set_country_flag = fee_ven_voyages_antonio_grimani_egypt
-		}
-	}
 
 	option = {
 		name = FEE_Venice_Events.65.OPT1
@@ -3823,6 +3847,16 @@ country_event = {
 			}
 		}
 	}
+
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = FEE_Venice_Events.66
+				days = 180
+				random = 15
+			}
+		}
+	}
 }
 
 # Continuing the Voyages
@@ -3837,18 +3871,11 @@ country_event = {
 	trigger = {
 		fee_is_was_ven = yes
 		is_year = 1460
-		has_country_flag = fee_ven_voyages_antonio_grimani_egypt
 		NOT = { is_year = 1483 }
 	}
 
 	mean_time_to_happen = {
 		years = 1
-	}
-
-	immediate = {
-		hidden_effect = {
-			set_country_flag = fee_ven_voyages_antonio_grimani_egypt
-		}
 	}
 
 	option = {
@@ -3858,9 +3885,15 @@ country_event = {
 		}
 
 		custom_tooltip = FEE_VEN_VOYAGES_ANTONIO_GRIMANI_SEASIDE_TT
-		set_country_flag = fee_ven_voyages_antonio_grimani_seaside
 		arabia_region = {
 			discover_country = ROOT
+		}
+		hidden_effect = {
+			country_event = {
+				id = FEE_Venice_Events.67
+				days = 180
+				random = 30
+			}
 		}
 	}
 
@@ -3872,9 +3905,15 @@ country_event = {
 		highlight = yes
 
 		custom_tooltip = FEE_VEN_VOYAGES_ANTONIO_GRIMANI_INTRA_TT
-		set_country_flag = fee_ven_voyages_antonio_grimani_hearthland
 		horn_of_africa_region = {
 			discover_country = ROOT
+		}
+		hidden_effect = {
+			country_event = {
+				id = FEE_Venice_Events.69
+				days = 180
+				random = 30
+			}
 		}
 	}
 }
@@ -3891,7 +3930,6 @@ country_event = {
 	trigger = {
 		fee_is_was_ven = yes
 		is_year = 1461
-		has_country_flag = fee_ven_voyages_antonio_grimani_seaside
 		NOT = { is_year = 1483 }
 	}
 
@@ -3934,19 +3972,9 @@ country_event = {
 
 	is_triggered_only = yes
 
-	trigger = {
-		NOT = { has_country_flag = fee_ven_arabo_venetian_coffee }
-	}
-
 	major = yes
 	major_trigger = {
-		has_country_flag = fee_ven_voyages_antonio_grimani_seaside
-	}
-
-	immediate = {
-		hidden_effect = {
-			set_country_flag = fee_ven_arabo_venetian_coffee
-		}
+		fee_is_was_ven = yes
 	}
 
 	option = {
@@ -4010,17 +4038,13 @@ country_event = {
 	desc = FEE_Venice_Events.69.D
 	picture = CARAVAN_EVENT_Picture
 
+	is_triggered_only = yes
 	fire_only_once = yes
 
 	trigger = {
 		fee_is_was_ven = yes
 		is_year = 1461
-		has_country_flag = fee_ven_voyages_antonio_grimani_hearthland
 		NOT = { is_year = 1483 }
-	}
-
-	mean_time_to_happen = {
-		years = 3
 	}
 
 	goto = 1224
@@ -4082,7 +4106,7 @@ country_event = {
 
 	major = yes
 	major_trigger = {
-		has_country_flag = fee_ven_voyages_antonio_grimani_hearthland
+		fee_is_was_ven = yes
 	}
 
 	option = {
@@ -4156,11 +4180,10 @@ country_event = {
 	trigger = {
 		is_year = 1483
 		NOT = { is_year = 1493 }
-		has_country_flag = fee_ven_voyages_antonio_grimani
 	}
 
 	mean_time_to_happen = {
-		years = 1
+		years = 2
 	}
 
 	option = {
@@ -5501,7 +5524,6 @@ country_event = {
 			factor = 50
 		}
 
-		set_country_flag = fee_ven_francesco_venier_merchant
 		if = {
 			limit = { has_estate = estate_burghers }
 			add_estate_loyalty = {
@@ -5511,6 +5533,16 @@ country_event = {
 		}
 		else = {
 			add_mercantilism_or_monarch_power = { amount = 3 }
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = FEE_Venice_Events.94
+				days = 180
+				random = 90
+			}
 		}
 	}
 }
@@ -5526,10 +5558,6 @@ country_event = {
 
 	trigger = {
 		is_year = 1508
-		owns = 205
-		any_country = {
-			has_country_flag = fee_ven_francesco_venier_merchant
-		}
 		NOT = { is_year = 1515 }
 	}
 
@@ -5539,19 +5567,10 @@ country_event = {
 
 	major = yes
 	major_trigger = {
-		has_country_flag = fee_ven_francesco_venier_merchant
+		owns = 205
 	}
 
 	goto = 205
-
-	immediate = {
-		hidden_effect = {
-			random_country = {
-				limit = { has_country_flag = fee_ven_francesco_venier_merchant }
-				set_country_flag = fee_ven_francesco_venier_merchant_savoy
-			}
-		}
-	}
 
 	option = {
 		name = FEE_Venice_Events.94.OPT1
@@ -5561,32 +5580,26 @@ country_event = {
 
 		add_treasury = -25
 		205 = {
+			owner = {
+				add_opinion = {
+					who = ROOT
+					modifier = opinion_export_good
+				}
+				reverse_add_opinion = {
+					who = ROOT
+					modifier = opinion_export_good
+				}
+			}
 			add_base_production = 1
 			add_province_modifier = {
 				name = fee_ven_francesco_venier_merchant
 				duration = 5475
 			}
-			random_country = {
-				limit = { has_country_flag = fee_ven_francesco_venier_merchant }
-				PREV = {
-					add_trade_modifier = {
-						who = PREV
-						duration = 5475
-						power = 10
-						key = fee_ven_francesco_venier_merchant
-					}
-				}
-			}
-		}
-		random_country = {
-			limit = { has_country_flag = fee_ven_francesco_venier_merchant }
-			add_opinion = {
+			add_trade_modifier = {
 				who = ROOT
-				modifier = opinion_export_good
-			}
-			reverse_add_opinion = {
-				who = ROOT
-				modifier = opinion_export_good
+				duration = 5475
+				power = 10
+				key = fee_ven_francesco_venier_merchant
 			}
 		}
 	}
@@ -5602,7 +5615,7 @@ country_event = {
 			modifier = {
 				factor = 2
 				any_country = {
-					has_country_flag = fee_ven_francesco_venier_merchant
+					owns = 205
 					NOT = {
 						has_opinion = {
 							who = ROOT
@@ -5616,7 +5629,7 @@ country_event = {
 		add_mil_power = 25
 		add_mercantilism_or_monarch_power = { amount = 3 }
 		random_country = {
-			limit = { has_country_flag = fee_ven_francesco_venier_merchant }
+			limit = { owns = 205 }
 			add_opinion = {
 				who = ROOT
 				modifier = opinion_export_bad
@@ -5624,6 +5637,16 @@ country_event = {
 			reverse_add_opinion = {
 				who = ROOT
 				modifier = opinion_export_bad
+			}
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = FEE_Venice_Events.95
+				days = 180
+				random = 120
 			}
 		}
 	}
@@ -5636,14 +5659,11 @@ country_event = {
 	desc = FEE_Venice_Events.95.D
 	picture = MERCHANTS_TALKING_eventPicture
 
+	is_triggered_only = yes
 	fire_only_once = yes
 
 	trigger = {
 		is_year = 1508
-		owns = 183
-		any_country = {
-			has_country_flag = fee_ven_francesco_venier_merchant_savoy
-		}
 		NOT = { is_year = 1515 }
 	}
 
@@ -5653,19 +5673,10 @@ country_event = {
 
 	major = yes
 	major_trigger = {
-		has_country_flag = fee_ven_francesco_venier_merchant
+		owns = 183
 	}
 
 	goto = 183
-
-	immediate = {
-		hidden_effect = {
-			random_country = {
-				limit = { has_country_flag = fee_ven_francesco_venier_merchant_savoy }
-				set_country_flag = fee_ven_francesco_venier_merchant_france
-			}
-		}
-	}
 
 	option = {
 		name = FEE_Venice_Events.95.OPT1
@@ -5675,32 +5686,26 @@ country_event = {
 
 		add_treasury = -25
 		183 = {
+			owner = {
+				add_opinion = {
+					who = ROOT
+					modifier = opinion_export_good
+				}
+				reverse_add_opinion = {
+					who = ROOT
+					modifier = opinion_export_good
+				}
+			}
 			add_base_production = 1
 			add_province_modifier = {
 				name = fee_ven_francesco_venier_merchant
 				duration = 5475
 			}
-			random_country = {
-				limit = { has_country_flag = fee_ven_francesco_venier_merchant }
-				PREV = {
-					add_trade_modifier = {
-						who = PREV
-						duration = 5475
-						power = 10
-						key = fee_ven_francesco_venier_merchant
-					}
-				}
-			}
-		}
-		random_country = {
-			limit = { has_country_flag = fee_ven_francesco_venier_merchant }
-			add_opinion = {
+			add_trade_modifier = {
 				who = ROOT
-				modifier = opinion_export_good
-			}
-			reverse_add_opinion = {
-				who = ROOT
-				modifier = opinion_export_good
+				duration = 5475
+				power = 10
+				key = fee_ven_francesco_venier_merchant
 			}
 		}
 	}
@@ -5716,7 +5721,7 @@ country_event = {
 			modifier = {
 				factor = 2
 				any_country = {
-					has_country_flag = fee_ven_francesco_venier_merchant
+					owns = 183
 					NOT = {
 						has_opinion = {
 							who = ROOT
@@ -5730,7 +5735,7 @@ country_event = {
 		add_mil_power = 25
 		add_mercantilism_or_monarch_power = { amount = 3 }
 		random_country = {
-			limit = { has_country_flag = fee_ven_francesco_venier_merchant }
+			limit = { owns = 183 }
 			add_opinion = {
 				who = ROOT
 				modifier = opinion_export_bad
@@ -5738,6 +5743,16 @@ country_event = {
 			reverse_add_opinion = {
 				who = ROOT
 				modifier = opinion_export_bad
+			}
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = FEE_Venice_Events.96
+				days = 180
+				random = 75
 			}
 		}
 	}
@@ -5750,36 +5765,20 @@ country_event = {
 	desc = FEE_Venice_Events.96.D
 	picture = MERCHANTS_TALKING_eventPicture
 
+	is_triggered_only = yes
 	fire_only_once = yes
 
 	trigger = {
 		is_year = 1508
-		owns = 236
-		any_country = {
-			has_country_flag = fee_ven_francesco_venier_merchant_france
-		}
 		NOT = { is_year = 1515 }
-	}
-
-	mean_time_to_happen = {
-		years = 1
 	}
 
 	major = yes
 	major_trigger = {
-		has_country_flag = fee_ven_francesco_venier_merchant
+		owns = 236
 	}
 
 	goto = 236
-
-	immediate = {
-		hidden_effect = {
-			random_country = {
-				limit = { has_country_flag = fee_ven_francesco_venier_merchant_france }
-				set_country_flag = fee_ven_francesco_venier_merchant_london
-			}
-		}
-	}
 
 	option = {
 		name = FEE_Venice_Events.96.OPT1
@@ -5789,32 +5788,26 @@ country_event = {
 
 		add_treasury = -25
 		236 = {
+			owner = {
+				add_opinion = {
+					who = ROOT
+					modifier = opinion_export_good
+				}
+				reverse_add_opinion = {
+					who = ROOT
+					modifier = opinion_export_good
+				}
+			}
 			add_base_production = 1
 			add_province_modifier = {
 				name = fee_ven_francesco_venier_merchant
 				duration = 5475
 			}
-			random_country = {
-				limit = { has_country_flag = fee_ven_francesco_venier_merchant }
-				PREV = {
-					add_trade_modifier = {
-						who = PREV
-						duration = 5475
-						power = 10
-						key = fee_ven_francesco_venier_merchant
-					}
-				}
-			}
-		}
-		random_country = {
-			limit = { has_country_flag = fee_ven_francesco_venier_merchant }
-			add_opinion = {
+			add_trade_modifier = {
 				who = ROOT
-				modifier = opinion_export_good
-			}
-			reverse_add_opinion = {
-				who = ROOT
-				modifier = opinion_export_good
+				duration = 5475
+				power = 10
+				key = fee_ven_francesco_venier_merchant
 			}
 		}
 	}
@@ -5830,7 +5823,7 @@ country_event = {
 			modifier = {
 				factor = 2
 				any_country = {
-					has_country_flag = fee_ven_francesco_venier_merchant
+					owns = 236
 					NOT = {
 						has_opinion = {
 							who = ROOT
@@ -5844,7 +5837,7 @@ country_event = {
 		add_mil_power = 25
 		add_mercantilism_or_monarch_power = { amount = 3 }
 		random_country = {
-			limit = { has_country_flag = fee_ven_francesco_venier_merchant }
+			limit = { owns = 236 }
 			add_opinion = {
 				who = ROOT
 				modifier = opinion_export_bad
@@ -5868,7 +5861,6 @@ country_event = {
 		fee_is_was_ven = yes
 		is_year = 1515
 		NOT = { is_year = 1556 }
-		has_country_flag = fee_ven_francesco_venier_merchant_london
 	}
 
 	mean_time_to_happen = {
@@ -5885,7 +5877,7 @@ country_event = {
 			factor = 50
 		}
 
-		add_treasury = 100
+		add_treasury = 150
 	}
 }
 

@@ -109,13 +109,10 @@ country_event = {
 	trigger = {
 		is_year = 1450
 		OR = {
-			tag = GEN
+			fee_is_was_gen = yes
 			tag = COR
 		}
 		NOT = { is_year = 1470 }
-		NOT = {
-			has_country_flag = fee_genoa_san_giorgio_timer
-		}
 		owns = 1247
 	}
 
@@ -129,10 +126,6 @@ country_event = {
 			factor = 0.8
 			has_idea_group = economic_ideas
 		}
-	}
-
-	immediate = {
-		set_country_flag = fee_genoa_san_giorgio_timer
 	}
 
 	option = {
@@ -243,8 +236,6 @@ country_event = {
 
 	trigger = {
 		owns = 101
-		NOT = { tag = GEN }
-		NOT = { was_tag = GEN }
 	}
 
 	mean_time_to_happen = {
@@ -767,10 +758,7 @@ country_event = {
 	trigger = {
 		tag = BYZ
 		any_country = {
-			OR = {
-				tag = GEN
-				was_tag = GEN
-			}
+			fee_is_was_gen = yes
 			OR = {
 				alliance_with = ROOT
 				has_opinion = {
@@ -1876,9 +1864,7 @@ country_event = {
 	}
 	desc = {
 		trigger = {
-			POR = {
-				has_country_flag = fee_gen_por_refused_antonio
-			}
+			POR = { has_country_flag = fee_gen_por_refused_antonio }
 		}
 		desc = FEE_Genoa_Events.29.D_POR_REFUSED
 	}
@@ -1928,6 +1914,12 @@ country_event = {
 		}
 
 		reduce_estate_burghers_loyalty_effect = yes
+	}
+
+	after = {
+		hidden_effect = {
+			POR = { clr_country_flag = fee_gen_por_refused_antonio }
+		}
 	}
 }
 
@@ -2303,10 +2295,7 @@ country_event = {
 #	fire_only_once = yes
 #
 #	trigger = {
-#		OR = {
-#			tag = GEN
-#			was_tag = GEN
-#		}
+#		fee_is_was_gen = yes
 #	}
 #
 #	mean_time_to_happen = {
