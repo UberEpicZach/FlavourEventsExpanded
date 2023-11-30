@@ -25,7 +25,6 @@ on_siege_lost_country = {
 		limit = {
 			NOT = { has_global_flag = fee_surrender_main }
 			FROM = {
-				province_id = 177
 				controlled_by = FRA
 			}
 			is_in_war = {

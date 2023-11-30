@@ -26,7 +26,7 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
-			set_global_flag = fee_french_feudalism_hundred_years_war
+			set_country_flag = fee_french_feudalism_hundred_years_war
 		}
 	}
 	mean_time_to_happen = {
@@ -266,7 +266,7 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
 		tag = FRA
-		has_global_flag = fee_french_feudalism_hundred_years_war
+		has_country_flag = fee_french_feudalism_hundred_years_war
 		NOT = { is_year = 1500 }
 	}
 
@@ -323,6 +323,12 @@ country_event = {
 				who = ROOT
 				modifier = fee_france_provincialism_opinion
 			}
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			clr_country_flag = fee_french_feudalism_hundred_years_war
 		}
 	}
 }
