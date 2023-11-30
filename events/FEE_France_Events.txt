@@ -1600,29 +1600,3 @@ country_event = {
 		}
 	}
 }
-
-country_event = {
-	id = FEE_France_Events.101
-	title = FEE_France_Events.101.T
-	desc = FEE_France_Events.101.D
-	picture = GOOD_WITH_MONARCH_eventPicture
-
-	fire_only_once = yes
-	hidden = yes
-
-	trigger = {
-		is_in_war = {
-			attacker_leader = ENG
-			defender_leader = FRA
-			casus_belli = cb_hundred_years_war
-		}
-	}
-
-	immediate = {
-		set_global_flag = fee_surrender_main
-	}
-
-	option = {
-		name = FEE_France_Events.101.OPT1
-	}
-}

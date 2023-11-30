@@ -19,6 +19,24 @@ on_province_owner_change = {
 	}
 }
 
+# root = losing country, from = location
+on_siege_lost_country = {
+	if = {
+		limit = {
+			FROM = {
+				province_id = 177
+				controlled_by = FRA
+			}
+			is_in_war = {
+				attacker_leader = ENG
+				defender_leader = FRA
+				casus_belli = cb_hundred_years_war
+			}
+		}
+		set_global_flag = fee_surrender_main
+	}
+}
+
 on_startup = {
 	country_event = { id = flavour_and_events_expanded_events.1 } # set flag
 	country_event = { #set the meme flag
