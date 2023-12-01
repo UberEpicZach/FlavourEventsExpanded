@@ -37,6 +37,12 @@ on_siege_lost_country = {
 	}
 }
 
+on_siege_won_country = {
+	events = {
+		FEE_Condottieri_Events.13
+	}
+}
+
 on_startup = {
 	country_event = { id = flavour_and_events_expanded_events.1 } # set flag
 	country_event = { #set the meme flag

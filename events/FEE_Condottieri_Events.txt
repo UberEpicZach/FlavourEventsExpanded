@@ -529,3 +529,319 @@ country_event = {
 		}
 	}
 }
+
+### Michele Attendolo 1370 - 1463
+# The arrival of Michele Attendolo
+country_event = {
+	id = FEE_Condottieri_Events.11
+	title = FEE_Condottieri_Events.11.T
+	desc = FEE_Condottieri_Events.11.D
+	picture = GENERALS_DISCUSSING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		fee_is_was_ven = yes
+		is_year = 1442
+		NOT = { is_year = 1446 }
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	option = {
+		name = FEE_Condottieri_Events.11.OPT1
+		ai_chance = {
+			factor = 75
+		}
+		
+		set_country_flag = fee_condottiero_michele_attendolo
+
+		add_manpower = 2
+		add_permanent_claim_province = {
+			province = 1862
+		}
+		create_general = {
+			tradition = 50
+			name = "Michele Attendolo"
+			culture = romagnan
+			add_shock = 1
+			add_manuever = 1
+		}
+		capital_scope = {
+			cavalry = ROOT
+		}
+
+		custom_tooltip = FEE_CONDOTTIERI_ATTENDOLO_CREMONA_TT
+	}
+}
+
+### L'Attendolo a Cremona
+country_event = {
+	id = FEE_Condottieri_Events.12
+	title = FEE_Condottieri_Events.12.T
+	desc = FEE_Condottieri_Events.12.D
+	picture = GENERALS_DISCUSSING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		fee_is_was_ven = yes
+		1862 = {
+			owner = {
+				war_with = ROOT
+			}
+		}
+		is_year = 1442
+		NOT = { is_year = 1452 }
+	}
+
+	mean_time_to_happen = {
+		days = 15
+	}
+
+	goto = 1862
+
+	major = yes
+	major_trigger = {
+		owns = 1862
+	}
+
+	option = {
+		name = FEE_Condottieri_Events.12.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		1862 = {
+			add_base_manpower = 1
+			add_province_modifier = {
+				name = raided_by_cavalry
+				duration = 730
+			}
+		}
+	}
+}
+
+### La Presa di Cremona
+country_event = {
+	id = FEE_Condottieri_Events.13
+	title = FEE_Condottieri_Events.13.T
+	desc = FEE_Condottieri_Events.13.D
+	picture = SIEGE_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		fee_is_was_ven = yes
+		1862 = {
+			controlled_by = ROOT
+			owner = { war_with = ROOT }
+		}
+		is_year = 1442
+		NOT = { is_year = 1452 }
+	}
+
+	goto = 1862
+
+	major = yes
+	major_trigger = {
+		owns = 1862
+	}
+
+	option = {
+		name = FEE_Condottieri_Events.13.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_army_tradition = 5
+		add_prestige_or_monarch_power = { amount = 5 }
+		104 = {
+			if = {
+				limit = {
+					owner = {
+						owns = 1862
+						war_with = ROOT
+					}
+				}
+				add_province_modifier = {
+					name = BYZ_enemy_fortifications
+					duration = 1095
+				}
+				if = {
+					limit = {
+						sieged_by = ROOT
+					}
+					change_siege = -5
+				}
+			}
+		}
+	}
+}
+
+### L'Attendolo in Toscana
+country_event = {
+	id = FEE_Condottieri_Events.14
+	title = FEE_Condottieri_Events.14.T
+	desc = FEE_Condottieri_Events.14.D
+	picture = SIEGE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		fee_is_was_ven = yes
+		exists = FLO
+		is_year = 1452
+		NOT = { is_year = 1454 }
+	}
+
+	mean_time_to_happen = {
+		days = 45
+	}
+
+	option = {
+		name = FEE_Condottieri_Events.14.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		clr_country_flag = fee_condottiero_michele_attendolo
+		if = {
+			limit = { has_leader = "Michele Attendolo" }
+			kill_leader = { type = "Michele Attendolo" }
+		}
+		FLO = {
+			set_country_flag = fee_condottiero_michele_attendolo
+			create_general = {
+				tradition = 50
+				name = "Michele Attendolo"
+				culture = romagnan
+				add_shock = 1
+				add_manuever = 1
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = opinion_sent_help
+			}
+			reverse_add_opinion = {
+				who = ROOT
+				modifier = opinion_sent_help
+			}
+			capital_scope = {
+				random_province_in_state = {
+					limit = { owned_by = ROOT }
+				}
+				add_province_modifier = {
+					name = regimental_town
+					duration = 3285
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Condottieri_Events.14.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
+		add_treasury = -25
+		add_prestige_or_monarch_power = { amount = 10 }
+		FLO = {
+			add_opinion = {
+				who = ROOT
+				modifier = hau_refused_to_help
+			}
+			reverse_add_opinion = {
+				who = ROOT
+				modifier = hau_refused_to_help
+			}
+		}
+	}
+}
+
+### L'Arrivo in Lombardia
+country_event = {
+	id = FEE_Condottieri_Events.15
+	title = FEE_Condottieri_Events.15.T
+	desc = FEE_Condottieri_Events.15.D
+	picture = SIEGE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			has_leader = "Alessandro Sforza"
+			has_country_flag = fee_condottiero_alessandro_sforza
+		}
+		is_year = 1454
+		NOT = { is_year = 1463 }
+	}
+
+	mean_time_to_happen = {
+		days = 45
+	}
+
+	option = {
+		name = FEE_Condottieri_Events.15.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		clr_country_flag = fee_condottiero_michele_attendolo
+		if = {
+			limit = { has_leader = "Michele Attendolo" }
+			kill_leader = { type = "Michele Attendolo" }
+		}
+		MLO = {
+			set_country_flag = fee_condottiero_michele_attendolo
+			create_general = {
+				tradition = 50
+				name = "Michele Attendolo"
+				culture = romagnan
+				add_shock = 1
+				add_manuever = 1
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = opinion_sent_help
+			}
+			reverse_add_opinion = {
+				who = ROOT
+				modifier = opinion_sent_help
+			}
+			capital_scope = {
+				random_province_in_state = {
+					limit = { owned_by = ROOT }
+				}
+				add_province_modifier = {
+					name = regimental_town
+					duration = 3285
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Condottieri_Events.15.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
+		add_treasury = -25
+		add_prestige_or_monarch_power = { amount = 10 }
+		MLO = {
+			add_opinion = {
+				who = ROOT
+				modifier = hau_refused_to_help
+			}
+			reverse_add_opinion = {
+				who = ROOT
+				modifier = hau_refused_to_help
+			}
+		}
+	}
+}

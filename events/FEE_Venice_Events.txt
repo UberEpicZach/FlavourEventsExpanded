@@ -547,32 +547,6 @@ country_event = {
 }
 
 # The arrival of Michele Attendolo
-country_event = {
-	id = FEE_Venice_Events.12
-	title = FEE_Venice_Events.12.T
-	desc = FEE_Venice_Events.12.D
-	picture = GENERALS_DISCUSSING_eventPicture
-
-	fire_only_once = yes
-	trigger = {
-		fee_is_was_ven = yes
-		is_year = 1447
-		NOT = { is_year = 1463 }
-	}
-
-	option = {
-		name = FEE_Venice_Events.12.OPT1
-
-		add_mil_power = 25
-		define_general = {
-			name = "Michele Attendolo"
-			fire = 3
-			shock = 1
-			manuever = 2
-			siege = 2
-		}
-	}
-}
 
 # Jews of 1509
 country_event = {
@@ -880,8 +854,11 @@ country_event = {
 			factor = 50
 		}
 
-		add_years_of_income = 0.5
+		add_years_of_income = 0.25
 		add_yearly_manpower = 0.5
+		add_permanent_claim_multi_provinces = {
+			target = po_valley_area
+		}
 		1298 = {
 			add_trade_modifier = {
 				who = ROOT
