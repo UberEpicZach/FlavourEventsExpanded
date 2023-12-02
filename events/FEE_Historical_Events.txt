@@ -40,7 +40,7 @@ country_event = {
 			value = 0.5
 			duration = 24
 		}
-		custom_tooltip = YEAR_WITHOUT_SUMMER_TT
+		custom_tooltip = FEE_YEAR_WITHOUT_SUMMER_TT
 		tooltip = {
 			add_country_modifier = {
 				name = fee_year_without_summer_country
