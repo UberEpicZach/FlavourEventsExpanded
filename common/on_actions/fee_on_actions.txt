@@ -111,14 +111,14 @@ on_new_heir = {
 			NOT = { heir_age = 1 }
 			NOT = { total_development = 150 }
 			all_countries_including_self = {
-				NOT = { has_heir_flag = child_of_destiny }
-				NOT = { has_ruler_flag = child_of_destiny }
+				NOT = { has_heir_flag = fee_child_of_destiny }
+				NOT = { has_ruler_flag = fee_child_of_destiny }
 			}
 		}
 		random = {
 			chance = 1
-			set_heir_flag = child_of_destiny
-			set_ruler_flag = child_of_destiny
+			set_heir_flag = fee_child_of_destiny
+			set_ruler_flag = fee_child_of_destiny
 		}
 	}
 }

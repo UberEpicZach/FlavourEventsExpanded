@@ -72,12 +72,12 @@ fee_italy_republican_matter = {
 		is_at_war = no
 		NOT = {
 			italy_region = {
-				controlled_by = ita_republican_rebels
+				controlled_by = fee_ita_republican_rebels
 			}
 		}
 		NOT = {
 			italy_region = {
-				controlled_by = ita_monarchy_rebels
+				controlled_by = fee_ita_monarchy_rebels
 			}
 		}
 		custom_trigger_tooltip = {
@@ -85,7 +85,7 @@ fee_italy_republican_matter = {
 			OR = {
 				has_country_flag = fee_ita_republican_matter_subversed
 				had_country_flag = {
-					flag = ita_republican_matter
+					flag = fee_ita_republican_matter
 					days = 5475
 				}
 			}

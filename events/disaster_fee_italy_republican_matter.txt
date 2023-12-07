@@ -11,7 +11,7 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
-			clr_country_flag = ita_republican_matter
+			clr_country_flag = fee_ita_republican_matter
 			set_country_flag = fee_ita_republican_matter_subversed
 		}
 	}
@@ -76,7 +76,7 @@ country_event = {
 		add_legitimacy_equivalent = { amount = -20 republican_tradition = -10 }
 
 		custom_tooltip = FEE_ITA_REPUBLICAN_MATTER_TT
-		set_country_flag = ita_republican_matter
+		set_country_flag = fee_ita_republican_matter
 	}
 }
 
@@ -107,7 +107,7 @@ country_event = {
 			NOT = { area = lazio_area }
 			NOT = { area = corsica_sardinia_area }
 			NOT = { area = central_italy_area }
-			NOT = { has_province_flag = ita_republican_rebellion_3 }
+			NOT = { has_province_flag = fee_ita_rebellion_republic_3 }
 		}
 	}
 
@@ -127,7 +127,7 @@ country_event = {
 				NOT = { area = central_italy_area }
 			}
 			hidden_effect = {
-				set_province_flag = ita_republican_rebellion_3
+				set_province_flag = fee_ita_rebellion_republic_3
 			}
 			if = {
 				limit = {
@@ -135,13 +135,13 @@ country_event = {
 				}
 				spawn_rebels = {
 					size = 2
-					type = ita_republican_rebels
+					type = fee_ita_republican_rebels
 				}
 			}
 			else = {
 				spawn_rebels = {
 					size = 3
-					type = ita_republican_rebels
+					type = fee_ita_republican_rebels
 				}
 			}
 		}
@@ -177,7 +177,7 @@ country_event = {
 				area = corsica_sardinia_area
 				area = central_italy_area
 			}
-			NOT = { has_province_flag = ita_monarchy_rebellion_3 }
+			NOT = { has_province_flag = fee_ita_rebellion_monarchy_3 }
 		}
 	}
 
@@ -197,10 +197,10 @@ country_event = {
 					area = corsica_sardinia_area
 					area = central_italy_area
 				}
-				NOT = { has_province_flag = ita_monarchy_rebellion_3 }
+				NOT = { has_province_flag = fee_ita_rebellion_monarchy_3 }
 			}
 			hidden_effect = {
-				set_province_flag = ita_monarchy_rebellion_3
+				set_province_flag = fee_ita_rebellion_monarchy_3
 			}
 			if = {
 				limit = {
@@ -208,13 +208,13 @@ country_event = {
 				}
 				spawn_rebels = {
 					size = 2
-					type = ita_monarchy_rebels
+					type = fee_ita_monarchy_rebels
 				}
 			}
 			else = {
 				spawn_rebels = {
 					size = 3
-					type = ita_monarchy_rebels
+					type = fee_ita_monarchy_rebels
 				}
 			}
 		}
