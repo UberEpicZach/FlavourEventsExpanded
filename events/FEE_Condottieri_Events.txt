@@ -1048,10 +1048,9 @@ country_event = {
 				infantry = ROOT
 				random_province_in_state = {
 					limit = { owned_by = ROOT }
-						add_province_modifier = {
-							name = fee_condottier_bartolomeo_colleoni
-							duration = -1
-						}
+					add_province_modifier = {
+						name = fee_condottier_bartolomeo_colleoni
+						duration = -1
 					}
 				}
 			}
