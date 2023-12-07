@@ -46,7 +46,7 @@
 
 ### Michele Attendolo 1370 - 1463
 
- FEE_Condottieri_Events.11.T: "The arrival of Michele Attendolo"
+ FEE_Condottieri_Events.11.T: "Michele Attendolo"
  FEE_Condottieri_Events.11.D: "Born in the humble town of Cotignola, Attendolo's early life was far from the gilded halls of power he would later grace. Yet, within him burned an indomitable spirit, a thirst for glory and a tactical mind as sharp as a honed blade. His rise to prominence was as swift and decisive as a lightning strike. From the smoke-filled battlefields of Florence to the sun-scorched plains of Lombardy, Attendolo's name echoed like a war cry, a testament to his prowess and cunning. \nAt Anghiari, he faced his former ally, Francesco Sforza, a man as formidable as he was ambitious. Though outnumbered, Attendolo's brilliance shone through the chaos, his strategic maneuvers turning the tide of battle and securing a hard-won triumph."
  FEE_Condottieri_Events.11.OPT1: "May he be blessed!"
 
@@ -68,6 +68,36 @@
  FEE_Condottieri_Events.15.OPT1: "A feudo for a lord."
  FEE_Condottieri_Events.15.OPT2: "He should lead armies, not cattle."
 
+### Bartolomeo Colleoni 1395 - 1475
+
+ FEE_Condottieri_Events.16.T: "Bartolomeo Colleoni"
+ FEE_Condottieri_Events.16.D: "He was born in Solza, a village by the river A noble son of Paolo, who was slain by a traitor He grew up as a soldier, brave and skilled in war He served many masters, near and far. He fought for Naples first, against the French invader He joined the great Braccio, a renowned condottiero He followed Carmagnola, who led the Venetian army He conquered many lands, from Brescia to Verona. He switched to Milan next, under the Visconti’s banner He sided with Sforza, who became the new ruler He faced the Venetians, his former allies He won at Caravaggio, a glorious prize. He was Bartolomeo Colleoni, a captain of renown He fought for fame and fortune, in Italy and beyond He was a loyal servant, but also a proud lord He was a legend of his time, a master of the sword."
+ FEE_Condottieri_Events.16.OPT1: "The lord is with us!"
+
+ FEE_Condottieri_Events.17.T: "Bartolomeo Colleoni al soldo Veneziano"
+ FEE_Condottieri_Events.17.D: "A missive has reached us from Venice itself, the Doge has requested to buy our esteemed general Bartolomeo Colleoni. While we "
+ FEE_Condottieri_Events.17.OPT1: "A traitor, that's what's him!"
+ FEE_Condottieri_Events.17.OPT2: "The Doge can kiss our asses."
+
+ FEE_Condottieri_Events.18.T: "Bartolomeo Colleoni in Borgogna"
+ FEE_Condottieri_Events.18.D: "The estimeed [BUR.Monarch.GetTitle] [BUR.Monarch.GetName] of [BUR.GetName] has requested the aid of Bartolomeo Colleoni for his current campaigns, while the offer might be beneficiary for us to strengthen the relations with them it might leave us unguarded against the crescent threat of our enemies and neighbours."
+ FEE_Condottieri_Events.18.OPT1: "Absolutely, they are our friends!"
+ FEE_Condottieri_Events.18.OPT2: "No, we need Bartolomeo for our campaigns."
+
+ FEE_Condottieri_Events.19.T: "Casa della pietà di Bartolomeo Colleoni"
+ FEE_Condottieri_Events.19.D: "I am Bartolomeo Colleoni, one of the most renowned captains that Italy has ever seen, I have served with loyalty every lord that has brought my sword and never have I broken a contract. While waging war and campaigning all over Italy I've found myself many times at the sight of families destroyed by war with boys and girls left forever scarred. Let me built a House of Piety that will take care of them, please, let me help whoever has never had the chance to rise for themselves and be destined to every possibility that the most fortunate can."
+ FEE_Condottieri_Events.19.OPT1: "Build it, the population will love it!"
+ FEE_Condottieri_Events.19.OPT2: "Not enough gold sire."
+
+ FEE_Condottieri_Events.20.T: "Il Colleoni a Bergamo"
+ FEE_Condottieri_Events.20.D: "Bartolomeo Colleoni was also a promoter of a far-sighted policy of water management in the province of Bergamo. First of all, he wanted to improve the irrigation of the countryside in the middle plain of Bergamo, mainly those included in his feudal possessions. To this end, the plan was to enlarge the existing canals and build new ones, creating a dense irrigation network that ensured the water supply to the fields of the entire plain, longitudinally between the Brembo and the Oglio rivers, and latitudinally between the foothills and the limit of the springs."
+ FEE_Condottieri_Events.20.OPT1: "Absolutely, Bergamo will love this!"
+ FEE_Condottieri_Events.20.OPT2: "Not enough gold sire."
+
+ FEE_Condottieri_Events.21.T: "Bartolomeo Colleoni: The Sir of Bergamo"
+ FEE_Condottieri_Events.21.D: "Bartolomeo Colleoni, the warrior, \nWho fought for many lords and many lands, \nWho served the Sforza, Venice and the king, \nWho led his men with courage and commands. \n\nHe won them fame and fortune with his deeds, \nHe built a chapel and a statue too, \nHe died in Malpaga, his castle, \nHe left a legacy of honor and virtue."
+ FEE_Condottieri_Events.21.OPT1: "Let us drink!"
+
 # Estate Modifiers
 
 # Event Modifiers
@@ -75,6 +105,14 @@
  desc_fee_condottieri_alessandro_signore: ""
  fee_condottieri_alessandro_connestabile: "Gran Connestabile Alessandro"
  desc_fee_condottieri_alessandro_connestabile: ""
+
+ fee_condottier_bartolomeo_colleoni: "Sir Bartolomeo Colleoni"
+ desc_fee_condottier_bartolomeo_colleoni: "Bartolomeo Colleoni, the brave and bold, Who fought for glory, honor and renown, Who led his troops with skill and discipline, Who served the Sforza, Venice and the crown."
+ fee_condottieri_casa_pietà_bartolomeo_colleoni: "Casa della Pietà di Bartolomeo Colleoni"
+ desc_fee_condottieri_casa_pietà_bartolomeo_colleoni: "The Casa della Pietà di Bartolomeo Colleoni is a historic building in Bergamo, Italy, that was the residence of the famous condottiero and captain-general, Bartolomeo Colleoni. He donated the palace to a charitable institution called Luogo Pio della Pietà, with the aim of providing dowries to poor girls who wanted to marry or enter a convent."
+ fee_condottieri_lavori_colleoni: "Lavori del Colleoni"
+ desc_fee_condottieri_lavori_colleoni: "One of the first interventions in chronological order was the enlargement of the mouths of the Serio river near Seriate: the waters were channeled into a ditch called Colleonesca, used for the irrigation of the countryside around Cavernago, a village where the headquarters of the condottiero was located."
+
 # Opinion Modifiers
 
 # Tooltips
