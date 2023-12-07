@@ -22,3 +22,10 @@ fee_is_was_gen = {
 		was_tag = GEN
 	}
 }
+
+fee_is_was_mlo = {
+	OR = {
+		tag = MLO
+		was_tag = MLO
+	}
+}
