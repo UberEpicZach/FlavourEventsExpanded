@@ -53,17 +53,8 @@ country_event = {
 	desc = FEE_Condottieri_Events.2.D
 	picture = GOOD_WITH_MONARCH_eventPicture
 
+	is_triggered_only = yes
 	fire_only_once = yes
-
-	trigger = {
-		is_year = 1445
-		NOT = { is_year = 1473 }
-		owns = 2977
-	}
-
-	mean_time_to_happen = {
-		months = 6
-	}
 
 	goto = 2977
 
@@ -180,7 +171,10 @@ country_event = {
 
 	trigger = {
 		exists = MLO
-		has_country_flag = fee_condottiero_alessandro_sforza
+		OR = {
+			has_country_flag = fee_condottiero_alessandro_sforza
+			has_leader = "Alessandro Sforza"
+		}
 		is_year = 1448
 		NOT = { is_year = 1473 }
 	}
@@ -201,6 +195,11 @@ country_event = {
 		}
 
 		add_treasury = 25
+		clr_country_flag = fee_condottiero_alessandro_sforza
+		if = {
+			limit = { has_leader = "Alessandro Sforza" }
+			kill_leader = { type = "Alessandro Sforza" }
+		}
 		MLO = {
 			set_country_flag = fee_condottiero_alessandro_sforza
 			create_general = {
@@ -217,11 +216,6 @@ country_event = {
 				who = ROOT
 				modifier = opinion_sent_help
 			}
-		}
-		clr_country_flag = fee_condottiero_alessandro_sforza
-		if = {
-			limit = { has_leader = "Alessandro Sforza" }
-			kill_leader = { type = "Alessandro Sforza" }
 		}
 	}
 
@@ -332,8 +326,11 @@ country_event = {
 		}
 
 		add_treasury = 25
+		if = {
+			limit = { has_leader = "Alessandro Sforza" }
+			kill_leader = { type = "Alessandro Sforza" }
+		}
 		clr_country_flag = fee_condottiero_alessandro_sforza
-		kill_leader = { type = "Alessandro Sforza" }
 		121 = {
 			owner = {
 				set_country_flag = fee_condottiero_alessandro_sforza
@@ -516,8 +513,11 @@ country_event = {
 			add_splendor = 25
 		}
 		add_prestige_or_monarch_power = { amount = 5 }
+		if = {
+			limit = { has_leader = "Alessandro Sforza" }
+			kill_leader = { type = "Alessandro Sforza" }
+		}
 		clr_country_flag = fee_condottiero_alessandro_sforza
-		kill_leader = { type = "Alessandro Sforza" }
 		121 = {
 			if = {
 				limit = { has_province_modifier = fee_condottieri_alessandro_signore }
