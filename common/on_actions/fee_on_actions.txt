@@ -81,15 +81,16 @@ on_battle_lost_unit = {
 on_heir_death = {
 	events = {
 		FEE_Charles_V_Events.4 #
-		FEE_Charles_V_Events.1 #Charles V becomes the heir
+		FEE_Charles_V_Events.1 # Charles V becomes the heir
 	}
 }
 
 # country
 on_monarch_death = {
 	events = {
-		FEE_Charles_V_Events.1 #Charles V becomes the heir
-		FEE_Charles_V_Events.10 #Charles Dies
+		FEE_Charles_V_Events.1 # Charles V becomes the heir
+		FEE_Charles_V_Events.10 # Charles Dies
+		FEE_Bohemia_Events.3 # Death of Jiri Podebrad
 	}
 }
 
