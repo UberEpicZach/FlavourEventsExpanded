@@ -9,7 +9,7 @@ fee_condottieri_alessandro_connestabile = {
 	cavalry_cost = -0.15
 }
 
-fee_condottier_bartolomeo_colleoni = {
+fee_condottieri_bartolomeo_colleoni = {
 	local_defensiveness = 0.15
 	local_development_cost = -0.10
 	local_manpower_modifier = 0.15
@@ -21,4 +21,11 @@ fee_condottieri_casa_pietà_bartolomeo_colleoni = {
 fee_condottieri_lavori_colleoni = {
 	local_development_cost = -0.10
 	local_manpower_modifier = 0.10
+}
+
+fee_condottieri_roberto_sanseverino = {
+	land_morale = 0.05
+	local_development_cost = -0.10
+	local_manpower_modifier = 0.15
+	nobles_loyalty_modifier = 0.05
 }

@@ -19,13 +19,18 @@ country_event = {
 
 	goto = 2977
 
+	immediate = {
+		hidden_effect = {
+			set_country_flag = fee_condottiero_alessandro_sforza
+		}
+	}
+
 	option = {
 		name = FEE_Condottieri_Events.1.OPT1
 		ai_chance = {
 			factor = 1
 		}
 
-		set_country_flag = fee_condottiero_alessandro_sforza
 		create_general = {
 			tradition = 50
 			name = "Alessandro Sforza"
@@ -408,13 +413,18 @@ country_event = {
 		years = 1
 	}
 
+	immediate = {
+		hidden_effect = {
+			set_country_flag = fee_condottiero_alessandro_sforza
+		}
+	}
+
 	option = {
 		name = FEE_Condottieri_Events.8.OPT1
 		ai_chance = {
 			factor = 75
 		}
 
-		set_country_flag = fee_condottiero_alessandro_sforza
 		create_general = {
 			tradition = 50
 			name = "Alessandro Sforza"
@@ -548,13 +558,17 @@ country_event = {
 		days = 30
 	}
 
+	immediate = {
+		hidden_effect = {
+			set_country_flag = fee_condottiero_michele_attendolo
+		}
+	}
+
 	option = {
 		name = FEE_Condottieri_Events.11.OPT1
 		ai_chance = {
 			factor = 75
 		}
-		
-		set_country_flag = fee_condottiero_michele_attendolo
 
 		add_manpower = 2
 		add_permanent_claim_province = {
@@ -865,13 +879,17 @@ country_event = {
 		days = 30
 	}
 
+	immediate = {
+		hidden_effect = {
+			set_country_flag = fee_condottiero_bartolomeo_colleoni
+		}
+	}
+
 	option = {
 		name = FEE_Condottieri_Events.16.OPT1
 		ai_chance = {
 			factor = 75
 		}
-		
-		set_country_flag = fee_condottiero_bartolomeo_colleoni
 
 		add_manpower = 1.5
 		create_general = {
@@ -897,7 +915,7 @@ country_event = {
 				limit = { owned_by = ROOT }
 				add_base_manpower = 1
 				add_province_modifier = {
-					name = fee_condottier_bartolomeo_colleoni
+					name = fee_condottieri_bartolomeo_colleoni
 					duration = -1
 				}
 			}
@@ -957,8 +975,8 @@ country_event = {
 			}
 			4728 = {
 				if = {
-					limit = { has_province_modifier = fee_condottier_bartolomeo_colleoni }
-					remove_province_modifier = fee_condottier_bartolomeo_colleoni
+					limit = { has_province_modifier = fee_condottieri_bartolomeo_colleoni }
+					remove_province_modifier = fee_condottieri_bartolomeo_colleoni
 				}
 			}
 			4739 = {
@@ -966,7 +984,7 @@ country_event = {
 					limit = { owned_by = VEN }
 					add_base_manpower = 1
 					add_province_modifier = {
-						name = fee_condottier_bartolomeo_colleoni
+						name = fee_condottieri_bartolomeo_colleoni
 						duration = -1
 					}
 				}
@@ -1048,8 +1066,8 @@ country_event = {
 			}
 			4728 = {
 				if = {
-					limit = { has_province_modifier = fee_condottier_bartolomeo_colleoni }
-					remove_province_modifier = fee_condottier_bartolomeo_colleoni
+					limit = { has_province_modifier = fee_condottieri_bartolomeo_colleoni }
+					remove_province_modifier = fee_condottieri_bartolomeo_colleoni
 				}
 			}
 			capital_scope = {
@@ -1057,7 +1075,7 @@ country_event = {
 				random_province_in_state = {
 					limit = { owned_by = ROOT }
 					add_province_modifier = {
-						name = fee_condottier_bartolomeo_colleoni
+						name = fee_condottieri_bartolomeo_colleoni
 						duration = -1
 					}
 				}
@@ -1217,8 +1235,940 @@ country_event = {
 		clr_country_flag = fee_condottiero_bartolomeo_colleoni
 		kill_leader = { type = "Bartolomeo Colleoni" }
 		random_province = {
-			limit = { has_province_modifier = fee_condottier_bartolomeo_colleoni }
-			remove_province_modifier = fee_condottier_bartolomeo_colleoni
+			limit = { has_province_modifier = fee_condottieri_bartolomeo_colleoni }
+			remove_province_modifier = fee_condottieri_bartolomeo_colleoni
+		}
+	}
+}
+
+
+### Roberto Sanseverino d'Aragona 1395 - 1475
+
+# Roberto Sanseverino
+country_event = {
+	id = FEE_Condottieri_Events.22
+	title = FEE_Condottieri_Events.22.T
+	desc = FEE_Condottieri_Events.22.D
+	picture = GENERALS_DISCUSSING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 121
+		is_year = 1447
+		NOT = { is_year = 1448 }
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = fee_condottiero_roberto_sanseverino
+		}
+	}
+
+	option = {
+		name = FEE_Condottieri_Events.22.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		create_general = {
+			tradition = 50
+			name = "Roberto Sanseverino"
+			culture = neapolitan
+			add_manuever = 1
+		}
+		if = {
+			limit = { exists = ARA }
+			add_opinion = {
+				who = ARA
+				modifier = opinion_supported_war
+			}
+			reverse_add_opinion = {
+				who = ARA
+				modifier = opinion_supported_war
+			}
+		}
+		capital_scope = {
+			add_province_modifier = {
+				name = fee_condottieri_roberto_sanseverino
+				duration = -1
+			}
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = FEE_Condottieri_Events.23
+				days = 3650
+				random = 182
+			}
+		}
+	}
+}
+
+# Il Sanseverino in Pellegrinaggio
+country_event = {
+	id = FEE_Condottieri_Events.23
+	title = FEE_Condottieri_Events.23.T
+	desc = FEE_Condottieri_Events.23.D
+	picture = GENERALS_DISCUSSING_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		days = 45
+	}
+
+	option = {
+		name = FEE_Condottieri_Events.23.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		kill_leader = { type = "Roberto Sanseverino" }
+		clr_country_flag = fee_condottiero_roberto_sanseverino
+		random_province = {
+			limit = { has_province_modifier = fee_condottieri_alessandro_connestabile }
+			remove_province_modifier = fee_condottieri_alessandro_connestabile
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = FEE_Condottieri_Events.24
+				days = 730
+				random = 45
+			}
+		}
+	}
+}
+
+# Roberto Sanseverino
+country_event = {
+	id = FEE_Condottieri_Events.24
+	title = FEE_Condottieri_Events.24.T
+	desc = FEE_Condottieri_Events.24.D
+	picture = GENERALS_DISCUSSING_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = fee_condottiero_roberto_sanseverino
+		}
+	}
+
+	option = {
+		name = FEE_Condottieri_Events.24.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_papal_influence = 25
+		create_general = {
+			tradition = 50
+			name = "Roberto Sanseverino"
+			culture = neapolitan
+			add_manuever = 1
+		}
+		capital_scope = {
+			cavalry = ROOT
+			cavalry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			add_province_modifier = {
+				name = fee_condottieri_roberto_sanseverino
+				duration = -1
+			}
+		}
+		custom_tooltip = FEE_CONDOTTIERI_ROBERTO_SANSEVERINO_PILGRIMAGE_TT
+		hidden_effect = {
+			ALB = {
+				add_opinion = {
+					who = ROOT
+					modifier = fee_pilgrimage_holy_land
+				}
+				reverse_add_opinion = {
+					who = ROOT
+					modifier = fee_pilgrimage_holy_land
+				}
+			}
+			PAP = {
+				if = {
+					limit = {
+						NOT = { is_papal_controller = yes }
+					}
+					add_opinion = {
+						who = ROOT
+						modifier = fee_pilgrimage_holy_land
+					}
+					reverse_add_opinion = {
+						who = ROOT
+						modifier = fee_pilgrimage_holy_land
+					}
+				}
+			}
+			random_country = {
+				limit = { is_papal_controller = yes }
+				add_opinion = {
+					who = ROOT
+					modifier = fee_pilgrimage_holy_land
+				}
+				reverse_add_opinion = {
+					who = ROOT
+					modifier = fee_pilgrimage_holy_land
+				}
+			}
+			112 = {
+				owner = {
+					add_opinion = {
+						who = ROOT
+						modifier = fee_pilgrimage_holy_land
+					}
+					reverse_add_opinion = {
+						who = ROOT
+						modifier = fee_pilgrimage_holy_land
+					}
+				}
+			}
+			320 = {
+				owner = {
+					add_opinion = {
+						who = ROOT
+						modifier = fee_pilgrimage_holy_land
+					}
+					reverse_add_opinion = {
+						who = ROOT
+						modifier = fee_pilgrimage_holy_land
+					}
+				}
+			}
+			361 = {
+				owner = {
+					add_opinion = {
+						who = ROOT
+						modifier = fee_pilgrimage_holy_land
+					}
+					reverse_add_opinion = {
+						who = ROOT
+						modifier = fee_pilgrimage_holy_land
+					}
+				}
+			}
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = FEE_Condottieri_Events.25
+				days = 2555
+			}
+		}
+	}
+}
+
+# Roberto al soldo Fiorentino # 1467
+country_event = {
+	id = FEE_Condottieri_Events.25
+	title = FEE_Condottieri_Events.25.T
+	desc = FEE_Condottieri_Events.25.D
+	picture = GENERALS_DISCUSSING_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		NOT = { owns = 116 }
+	}
+
+	major = yes
+	major_trigger = {
+		owns = 116
+	}
+
+	option = {
+		name = FEE_Condottieri_Events.25.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_treasury = 25
+		clr_country_flag = fee_condottiero_roberto_sanseverino
+		if = {
+			limit = { has_leader = "Roberto Sanseverino" }
+			kill_leader = { type = "Roberto Sanseverino" }
+		}
+		random_owned_province = {
+			limit = { has_province_modifier = fee_condottieri_roberto_sanseverino }
+			remove_province_modifier = fee_condottieri_roberto_sanseverino
+		}
+		116 = {
+			owner = {
+				set_country_flag = fee_condottiero_roberto_sanseverino
+				create_general = {
+					tradition = 50
+					name = "Roberto Sanseverino"
+					culture = neapolitan
+					add_manuever = 1
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = opinion_sent_help
+				}
+				reverse_add_opinion = {
+					who = ROOT
+					modifier = opinion_sent_help
+				}
+				if = {
+					limit = { owns = 115 }
+					115 = {
+						cavalry = PREV
+						cavalry = PREV
+						add_province_modifier = {
+							name = fee_condottieri_roberto_sanseverino
+							duration = -1
+						}
+					}
+				}
+				else = {
+					capital_scope = {
+						cavalry = PREV
+						cavalry = PREV
+						add_province_modifier = {
+							name = fee_condottieri_roberto_sanseverino
+							duration = -1
+						}
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Condottieri_Events.25.OPT2
+		trigger = {
+			exists = LAN
+		}
+		ai_chance = {
+			factor = 25
+		}
+
+		add_treasury = -25
+		add_prestige_or_monarch_power = { amount = 5 }
+		116 = {
+			owner = {
+				add_opinion = {
+					who = ROOT
+					modifier = hau_refused_to_help
+				}
+				reverse_add_opinion = {
+					who = ROOT
+					modifier = hau_refused_to_help
+				}
+				add_casus_belli = {
+					type = cb_insult
+					target = ROOT
+					months = 24
+				}
+			}
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			random_country = {
+				limit = {
+					OR = {
+						has_country_flag = fee_condottiero_roberto_sanseverino
+						has_leader = "Roberto Sanseverino"
+					}
+				}
+				country_event = {
+					id = FEE_Condottieri_Events.26
+					days = 1460
+					random = 180
+				}
+			}
+		}
+	}
+}
+
+# Roberto al soldo Milanese # 1471
+country_event = {
+	id = FEE_Condottieri_Events.26
+	title = FEE_Condottieri_Events.26.T
+	desc = FEE_Condottieri_Events.26.D
+	picture = GENERALS_DISCUSSING_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		NOT = { owns = 104 }
+	}
+
+	major = yes
+	major_trigger = {
+		owns = 104
+	}
+
+	option = {
+		name = FEE_Condottieri_Events.26.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_treasury = 25
+		clr_country_flag = fee_condottiero_roberto_sanseverino
+		if = {
+			limit = { has_leader = "Roberto Sanseverino" }
+			kill_leader = { type = "Roberto Sanseverino" }
+		}
+		random_owned_province = {
+			limit = { has_province_modifier = fee_condottieri_roberto_sanseverino }
+			remove_province_modifier = fee_condottieri_roberto_sanseverino
+		}
+		104 = {
+			owner = {
+				set_country_flag = fee_condottiero_roberto_sanseverino
+				create_general = {
+					tradition = 50
+					name = "Roberto Sanseverino"
+					culture = neapolitan
+					add_manuever = 1
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = opinion_sent_help
+				}
+				reverse_add_opinion = {
+					who = ROOT
+					modifier = opinion_sent_help
+				}
+				capital_scope = {
+					add_province_modifier = {
+						name = fee_condottieri_roberto_sanseverino
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Condottieri_Events.26.OPT2
+		ai_chance = {
+			factor = 25
+		}
+
+		add_treasury = -25
+		add_prestige_or_monarch_power = { amount = 5 }
+		104 = {
+			owner = {
+				add_opinion = {
+					who = ROOT
+					modifier = hau_refused_to_help
+				}
+				reverse_add_opinion = {
+					who = ROOT
+					modifier = hau_refused_to_help
+				}
+				add_casus_belli = {
+					type = cb_insult
+					target = ROOT
+					months = 24
+				}
+			}
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			random_country = {
+				limit = {
+					OR = {
+						has_country_flag = fee_condottiero_roberto_sanseverino
+						has_leader = "Roberto Sanseverino"
+					}
+				}
+				country_event = {
+					id = FEE_Condottieri_Events.27
+					days = 1825
+					random = 180
+				}
+			}
+		}
+	}
+}
+
+# Roberto al soldo Piemontese # 1476
+country_event = {
+	id = FEE_Condottieri_Events.27
+	title = FEE_Condottieri_Events.27.T
+	desc = FEE_Condottieri_Events.27.D
+	picture = GENERALS_DISCUSSING_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		NOT = { owns = 103 }
+	}
+
+	major = yes
+	major_trigger = {
+		owns = 103
+	}
+
+	option = {
+		name = FEE_Condottieri_Events.27.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_treasury = 25
+		clr_country_flag = fee_condottiero_roberto_sanseverino
+		if = {
+			limit = { has_leader = "Roberto Sanseverino" }
+			kill_leader = { type = "Roberto Sanseverino" }
+		}
+		random_owned_province = {
+			limit = { has_province_modifier = fee_condottieri_roberto_sanseverino }
+			remove_province_modifier = fee_condottieri_roberto_sanseverino
+		}
+		103 = {
+			owner = {
+				set_country_flag = fee_condottiero_roberto_sanseverino
+				create_general = {
+					tradition = 50
+					name = "Roberto Sanseverino"
+					culture = neapolitan
+					add_manuever = 1
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = opinion_sent_help
+				}
+				reverse_add_opinion = {
+					who = ROOT
+					modifier = opinion_sent_help
+				}
+				capital_scope = {
+					add_province_modifier = {
+						name = fee_condottieri_roberto_sanseverino
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Condottieri_Events.27.OPT2
+		ai_chance = {
+			factor = 25
+		}
+
+		add_treasury = -25
+		add_prestige_or_monarch_power = { amount = 5 }
+		103 = {
+			owner = {
+				add_opinion = {
+					who = ROOT
+					modifier = hau_refused_to_help
+				}
+				reverse_add_opinion = {
+					who = ROOT
+					modifier = hau_refused_to_help
+				}
+				add_casus_belli = {
+					type = cb_insult
+					target = ROOT
+					months = 24
+				}
+			}
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			random_country = {
+				limit = {
+					OR = {
+						has_country_flag = fee_condottiero_roberto_sanseverino
+						has_leader = "Roberto Sanseverino"
+					}
+				}
+				country_event = {
+					id = FEE_Condottieri_Events.28
+					days = 730
+					random = 45
+				}
+			}
+		}
+	}
+}
+
+# Roberto al soldo Genovese # 1478
+country_event = {
+	id = FEE_Condottieri_Events.28
+	title = FEE_Condottieri_Events.28.T
+	desc = FEE_Condottieri_Events.28.D
+	picture = GENERALS_DISCUSSING_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		NOT = { owns = 101 }
+	}
+
+	major = yes
+	major_trigger = {
+		owns = 101
+	}
+
+	option = {
+		name = FEE_Condottieri_Events.28.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_treasury = 25
+		clr_country_flag = fee_condottiero_roberto_sanseverino
+		if = {
+			limit = { has_leader = "Roberto Sanseverino" }
+			kill_leader = { type = "Roberto Sanseverino" }
+		}
+		random_owned_province = {
+			limit = { has_province_modifier = fee_condottieri_roberto_sanseverino }
+			remove_province_modifier = fee_condottieri_roberto_sanseverino
+		}
+		101 = {
+			owner = {
+				set_country_flag = fee_condottiero_roberto_sanseverino
+				create_general = {
+					tradition = 50
+					name = "Roberto Sanseverino"
+					culture = neapolitan
+					add_manuever = 1
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = opinion_sent_help
+				}
+				reverse_add_opinion = {
+					who = ROOT
+					modifier = opinion_sent_help
+				}
+				capital_scope = {
+					add_province_modifier = {
+						name = fee_condottieri_roberto_sanseverino
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Condottieri_Events.28.OPT2
+		ai_chance = {
+			factor = 25
+		}
+
+		add_treasury = -25
+		add_prestige_or_monarch_power = { amount = 5 }
+		101 = {
+			owner = {
+				add_opinion = {
+					who = ROOT
+					modifier = hau_refused_to_help
+				}
+				reverse_add_opinion = {
+					who = ROOT
+					modifier = hau_refused_to_help
+				}
+				add_casus_belli = {
+					type = cb_insult
+					target = ROOT
+					months = 24
+				}
+			}
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			random_country = {
+				limit = {
+					OR = {
+						has_country_flag = fee_condottiero_roberto_sanseverino
+						has_leader = "Roberto Sanseverino"
+					}
+				}
+				country_event = {
+					id = FEE_Condottieri_Events.29
+					days = 1460
+					random = 45
+				}
+			}
+		}
+	}
+}
+
+# Roberto al soldo Veneziano # 1482
+country_event = {
+	id = FEE_Condottieri_Events.29
+	title = FEE_Condottieri_Events.29.T
+	desc = FEE_Condottieri_Events.29.D
+	picture = GENERALS_DISCUSSING_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		NOT = { owns = 112 }
+	}
+
+	major = yes
+	major_trigger = {
+		owns = 112
+	}
+
+	option = {
+		name = FEE_Condottieri_Events.29.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_treasury = 25
+		clr_country_flag = fee_condottiero_roberto_sanseverino
+		if = {
+			limit = { has_leader = "Roberto Sanseverino" }
+			kill_leader = { type = "Roberto Sanseverino" }
+		}
+		random_owned_province = {
+			limit = { has_province_modifier = fee_condottieri_roberto_sanseverino }
+			remove_province_modifier = fee_condottieri_roberto_sanseverino
+		}
+		112 = {
+			owner = {
+				set_country_flag = fee_condottiero_roberto_sanseverino
+				create_general = {
+					tradition = 50
+					name = "Roberto Sanseverino"
+					culture = neapolitan
+					add_manuever = 1
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = opinion_sent_help
+				}
+				reverse_add_opinion = {
+					who = ROOT
+					modifier = opinion_sent_help
+				}
+				capital_scope = {
+					add_province_modifier = {
+						name = fee_condottieri_roberto_sanseverino
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Condottieri_Events.29.OPT2
+		ai_chance = {
+			factor = 25
+		}
+
+		add_treasury = -25
+		add_prestige_or_monarch_power = { amount = 5 }
+		112 = {
+			owner = {
+				add_opinion = {
+					who = ROOT
+					modifier = hau_refused_to_help
+				}
+				reverse_add_opinion = {
+					who = ROOT
+					modifier = hau_refused_to_help
+				}
+				add_casus_belli = {
+					type = cb_insult
+					target = ROOT
+					months = 24
+				}
+			}
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			random_country = {
+				limit = {
+					OR = {
+						has_country_flag = fee_condottiero_roberto_sanseverino
+						has_leader = "Roberto Sanseverino"
+					}
+				}
+				country_event = {
+					id = FEE_Condottieri_Events.30
+					days = 1095
+					random = 45
+				}
+			}
+		}
+	}
+}
+
+# Roberto al soldo Papale # 1485
+country_event = {
+	id = FEE_Condottieri_Events.30
+	title = FEE_Condottieri_Events.30.T
+	desc = FEE_Condottieri_Events.30.D
+	picture = GENERALS_DISCUSSING_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		NOT = { owns = 118 }
+	}
+
+	major = yes
+	major_trigger = {
+		owns = 118
+	}
+
+	option = {
+		name = FEE_Condottieri_Events.30.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_treasury = 25
+		clr_country_flag = fee_condottiero_roberto_sanseverino
+		if = {
+			limit = { has_leader = "Roberto Sanseverino" }
+			kill_leader = { type = "Roberto Sanseverino" }
+		}
+		random_owned_province = {
+			limit = { has_province_modifier = fee_condottieri_roberto_sanseverino }
+			remove_province_modifier = fee_condottieri_roberto_sanseverino
+		}
+		118 = {
+			owner = {
+				set_country_flag = fee_condottiero_roberto_sanseverino
+				create_general = {
+					tradition = 50
+					name = "Roberto Sanseverino"
+					culture = neapolitan
+					add_manuever = 1
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = opinion_sent_help
+				}
+				reverse_add_opinion = {
+					who = ROOT
+					modifier = opinion_sent_help
+				}
+				capital_scope = {
+					add_province_modifier = {
+						name = fee_condottieri_roberto_sanseverino
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Condottieri_Events.30.OPT2
+		ai_chance = {
+			factor = 25
+		}
+
+		add_treasury = -25
+		add_prestige_or_monarch_power = { amount = 5 }
+		118 = {
+			owner = {
+				add_opinion = {
+					who = ROOT
+					modifier = hau_refused_to_help
+				}
+				reverse_add_opinion = {
+					who = ROOT
+					modifier = hau_refused_to_help
+				}
+				add_casus_belli = {
+					type = cb_insult
+					target = ROOT
+					months = 24
+				}
+			}
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			random_country = {
+				limit = {
+					OR = {
+						has_country_flag = fee_condottiero_roberto_sanseverino
+						has_leader = "Roberto Sanseverino"
+					}
+				}
+				country_event = {
+					id = FEE_Condottieri_Events.31
+					days = 730
+					random = 45
+				}
+			}
+		}
+	}
+}
+
+# Roberto Sanseverino: The Champion of Naples
+country_event = {
+	id = FEE_Condottieri_Events.31
+	title = FEE_Condottieri_Events.31.T
+	desc = FEE_Condottieri_Events.31.D
+	picture = DEATH_OF_HEIR_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = FEE_Condottieri_Events.31.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		if = {
+			limit = { has_dlc = "Mandate of Heaven" }
+			add_splendor = 25
+		}
+		add_prestige_or_monarch_power = { amount = 5 }
+		clr_country_flag = fee_condottiero_alessandro_sforza
+		kill_leader = { type = "Roberto Sanseverino" }
+		random_province = {
+			limit = { has_province_modifier = fee_condottieri_roberto_sanseverino }
+			remove_province_modifier = fee_condottieri_roberto_sanseverino
 		}
 	}
 }

@@ -98,22 +98,75 @@
  FEE_Condottieri_Events.21.D: "Bartolomeo Colleoni, the warrior, \nWho fought for many lords and many lands, \nWho served the Sforza, Venice and the king, \nWho led his men with courage and commands. \n\nHe won them fame and fortune with his deeds, \nHe built a chapel and a statue too, \nHe died in Malpaga, his castle, \nHe left a legacy of honor and virtue."
  FEE_Condottieri_Events.21.OPT1: "Let us drink!"
 
+### Roberto Sanseverino d'Aragona 1395 - 1475
+
+ FEE_Condottieri_Events.22.T: "Roberto Sanseverino"
+ FEE_Condottieri_Events.22.D: "San Severino began his career in the service of Niccolò Piccinino, a powerful condottiere who fought for the Visconti of Milan. In 1440, he took part in the Battle of Anghiari, a famous battle between the Visconti and the Florentines. San Severino was captured by the Florentines during the battle, but he was soon released. In 1442, San Severino switched sides and began fighting for Francesco Sforza, a rival of Piccinino. "
+ FEE_Condottieri_Events.22.OPT1: "Let us drink!"
+
+ FEE_Condottieri_Events.23.T: "Il Sanseverino in Pellegrinaggio"
+ FEE_Condottieri_Events.23.D: "In the year of our Lord 1458, the nobleman Roberto da San Severino would conceive the idea of a pilgrimage to the Holy Land. He would travel to Venice, where he would be welcomed with great honor, including a ride on the Bucintoro, the Doge’s ceremonial barge. In the city, he would meet with Alessandro Sforza and the Doge himself. Then he would set sail, sailing along the coast of Dalmatia until he would reach Ragusa (Dubrovnik), where he would be hosted by the city’s secretary, Bartolomeo Sfondrati. He would also sail along the coast of Albania, and in early June he would visit Durazzo. He would then set course for Rhodes, avoiding the snares laid for him by a Genoese pirate ship. \nIn Rhodes, he would stay at the Italian inn and meet with the Grand Master of the Order of Saint John and the Patriarch. He would then continue his journey to the Holy Land, landing at Jaffa. Along the way, he would visit Lydda, Jerusalem, and other holy sites. In August, he would leave Gaza and enter Egypt, eventually reaching Cairo, where he would pay homage to the Sultan through the ambassador from Rhodes. \nIn September, he would begin his journey home. He would encounter considerable difficulties in obtaining the necessary permits, but after bribing some officials, he would be able to resume his voyage. He would leave Jerusalem, where some of his companions would have remained, and only in mid-October, with the arrival of favorable winds, he would leave Acre. He would travel without escort, despite the danger of encountering pirate ships."
+ FEE_Condottieri_Events.23.OPT1: "May the God guide thee."
+
+ FEE_Condottieri_Events.24.T: "Il Ritorno a Napoli"
+ FEE_Condottieri_Events.24.D: "News of Roberto da San Severino's homecoming echoed through the streets of Naples, stirring a mix of anticipation and apprehension. The nobleman, having completed his pilgrimage to the Holy Land, had spent the intervening years traversing the Mediterranean, acting as an ambassador for the Neapolitan court and forging alliances with neighboring kingdoms. His return was welcomed amidst a backdrop of growing unrest among the Neapolitan barons, who were discontent with recent changes in the governance of their lands. Roberto's diplomatic prowess and strategic acumen were sorely needed to navigate the complex political landscape and address the grievances of the nobility. The arrival of the seasoned ambassador brought a sense of hope to the kingdom. His experiences abroad had broadened his perspective and honed his diplomatic skills, making him a valuable asset in resolving the escalating tensions."
+ FEE_Condottieri_Events.24.OPT1: "Kill the barons!"
+
+ FEE_Condottieri_Events.25.T: "Roberto al soldo Fiorentino"
+ FEE_Condottieri_Events.25.D: "The supreme [116.Owner.Monarch.GetTitle] [116.Owner.Monarch.GetName] of [116.Owner.GetName] is requesting the aid of Roberto to restruct and rework their Bande Toscane for the dream of an united Tuscany."
+ FEE_Condottieri_Events.25.OPT1: "Send help to the Lord of Florence!"
+ FEE_Condottieri_Events.25.OPT2: "No, we will not risk to be vulnerable once again."
+
+ FEE_Condottieri_Events.26.T: "Roberto al soldo Milanese"
+ FEE_Condottieri_Events.26.D: "The campaigns lead by [104.Owner.Monarch.GetTitle] [104.Owner.Monarch.GetName] lately have been prosperous and with the extra funds looted during the Italian Wars now they are requesting the experience of Roberto San Severino to aid them furtherly, would this be considered treason?"
+ FEE_Condottieri_Events.26.OPT1: "Send help to the Milanese snake."
+ FEE_Condottieri_Events.26.OPT2: "Not enough soldiers my lord."
+
+ FEE_Condottieri_Events.27.T: "Roberto al soldo Piemontese"
+ FEE_Condottieri_Events.27.D: "The alps surrounding [103.GetName] has been breached in the past years, and the valleys of Montferrat and their vineyards in Piedmont are now under threat, once again. Surely the lord of [103.GetName] will love the championships of Roberto to strengthen the defenses of their cities."
+ FEE_Condottieri_Events.27.OPT1: "Help those biscuits!"
+ FEE_Condottieri_Events.27.OPT2: "It's too cold in Savoy."
+
+ FEE_Condottieri_Events.28.T: "Roberto al soldo Genovese"
+ FEE_Condottieri_Events.28.D: "In one of the sieges of [101.GetName] those idiots even dared to tear down the beautiful Lanterna di Genoa, the tallest and most prestigious ligthouse of the entire Mediterranean sea thus the protector of [101.GetName] is requesting the access to the knowledge of the San Severino in helping with the foundations of a more modern fort in the city."
+ FEE_Condottieri_Events.28.OPT1: "The lanterna is lovely these days!"
+ FEE_Condottieri_Events.28.OPT2: "Pesto ain't better than our foods."
+
+ FEE_Condottieri_Events.29.T: "Roberto al soldo Veneziano"
+ FEE_Condottieri_Events.29.D: "The eastern threat has been evergrowing, the lagoon won't save the city forever and the galleys are slowly being replaced the republican army needs someone to lead the citizens from the Stati de Tera against any opposing enemy of the Republic."
+ FEE_Condottieri_Events.29.OPT1: "A ship for a captain?"
+ FEE_Condottieri_Events.29.OPT2: "The lagoon stinks."
+
+ FEE_Condottieri_Events.30.T: "Roberto al soldo Papale"
+ FEE_Condottieri_Events.30.D: "Have you ever been to the eternal city my king? The churches and the old Roman monuments standing tall in the skies and reflecting on the Tiber river are a sight to behold, but the rioni, no my lord, the rioni of Romes are districts that have their own law and life sometimes the papal guard needs your help Roberto, please come here."
+ FEE_Condottieri_Events.30.OPT1: "For his holiness!"
+ FEE_Condottieri_Events.30.OPT2: "Rome isn't lovely in this time of year."
+
+ FEE_Condottieri_Events.31.T: "Roberto Sanseverino: The Champion of Naples"
+ FEE_Condottieri_Events.31.D: "Ruberto Sanseverino, abandoned by his men, remained among the enemy, proving himself to be an excellent captain and a brave soldier. Although he was severely wounded, he continued to fight valiantly with his sword, which had brought him victory so many times in Italy and among barbarian armies. He killed many of his enemies, but finally, the loss of blood from his wounds sapped his strength, and he died gloriously in the midst of the enemy forces, at the age of seventy."
+ FEE_Condottieri_Events.31.OPT1: "He fought, he won, and now he rest."
+
 # Estate Modifiers
 
 # Event Modifiers
  fee_condottieri_alessandro_signore: "Alessandro Sforza"
- desc_fee_condottieri_alessandro_signore: ""
+ desc_fee_condottieri_alessandro_signore: "Alessandro Sforza was a skilled and experienced soldier who fought in many of the major battles of the Italian Wars. He was known for his bravery and his ability to inspire his troops. He also had a reputation for being a cunning and ruthless leader."
  fee_condottieri_alessandro_connestabile: "Gran Connestabile Alessandro"
  desc_fee_condottieri_alessandro_connestabile: ""
 
- fee_condottier_bartolomeo_colleoni: "Sir Bartolomeo Colleoni"
- desc_fee_condottier_bartolomeo_colleoni: "Bartolomeo Colleoni, the brave and bold, Who fought for glory, honor and renown, Who led his troops with skill and discipline, Who served the Sforza, Venice and the crown."
+ fee_condottieri_bartolomeo_colleoni: "Sir Bartolomeo Colleoni"
+ desc_fee_condottieri_bartolomeo_colleoni: "Bartolomeo Colleoni, the brave and bold, Who fought for glory, honor and renown, Who led his troops with skill and discipline, Who served the Sforza, Venice and the crown."
  fee_condottieri_casa_pietà_bartolomeo_colleoni: "Casa della Pietà di Bartolomeo Colleoni"
  desc_fee_condottieri_casa_pietà_bartolomeo_colleoni: "The Casa della Pietà di Bartolomeo Colleoni is a historic building in Bergamo, Italy, that was the residence of the famous condottiero and captain-general, Bartolomeo Colleoni. He donated the palace to a charitable institution called Luogo Pio della Pietà, with the aim of providing dowries to poor girls who wanted to marry or enter a convent."
  fee_condottieri_lavori_colleoni: "Lavori del Colleoni"
  desc_fee_condottieri_lavori_colleoni: "One of the first interventions in chronological order was the enlargement of the mouths of the Serio river near Seriate: the waters were channeled into a ditch called Colleonesca, used for the irrigation of the countryside around Cavernago, a village where the headquarters of the condottiero was located."
 
+ fee_condottieri_roberto_sanseverino: "Roberto da San Severino"
+ desc_fee_condottieri_roberto_sanseverino: "He was the son of Leonetto Sanseverino, a condottiere who fought for the Neapolitan kings. \nHe was a member of the Sanseverino family, a powerful noble family in Southern Italy. \nHe was known for his bravery, his tactical skill, and his ability to inspire his troops."
+
 # Opinion Modifiers
+ fee_condottieri_sent_captain: ""
 
 # Tooltips
  FEE_CONDOTTIERI_ATTENDOLO_CREMONA_TT: "We should declare and start the conquest of [1862.GetName] before the next winter."
+ FEE_CONDOTTIERI_ROBERTO_SANSEVERINO_PILGRIMAGE_TT: "The Sanseverino will tell us everything about his pilgrimage and how he strengthened the relations with all the courts he visited, from Venice to Rhodes passing in Albania, from Jerusalem to Cairo returning home."
