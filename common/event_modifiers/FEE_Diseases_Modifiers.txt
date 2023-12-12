@@ -1,7 +1,24 @@
-fee_syphilis_outbreak = {
+# Bubonic Plague
+fee_diseases_small_bubonic_outbreak = {
 	local_development_cost = 0.25
 	local_manpower_modifier = -0.33
 	local_tax_modifier = -0.33
 	province_trade_power_modifier = -0.33
 	trade_goods_size_modifier = -0.33
+}
+fee_diseases_small_bubonic_recovery = {
+	local_build_cost = -0.125
+	local_build_time = -0.125
+	local_development_cost = -0.125
+	local_monthly_devastation = -0.1
+	local_prosperity_growth = 1.5
+}
+
+# Syphilis
+fee_diseases_syphilis_outbreak = {
+	local_development_cost = 0.125
+	local_manpower_modifier = -0.175
+	local_tax_modifier = -0.175
+	province_trade_power_modifier = -0.175
+	trade_goods_size_modifier = -0.175
 }
