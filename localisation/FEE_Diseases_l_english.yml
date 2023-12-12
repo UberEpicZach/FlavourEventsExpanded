@@ -37,6 +37,6 @@
 
 # Tooltip
  FEE_DISEASES_BUBONIC_PLAGUE_RETURN_MILAN_START_TT: "\"The black Death is Returning, gather all your §MCompetent Doctors§! to try and stop it!\""
- FEE_DISEASES_BUBONIC_PLAGUE_EPIDEMIA_MAGNA_TT: "[104.GetName] will lose §R1/3§! of its development. \nEvery Nearby Province will be afflicted as well."
+ FEE_DISEASES_BUBONIC_PLAGUE_EPIDEMIA_MAGNA_TT: "[104.GetName] will lose §R[This.fee_diseases_epidemia_magna_milan_tax.GetValue] tax§!, §R[This.fee_diseases_epidemia_magna_milan_production.GetValue] production§! and §R[This.fee_diseases_epidemia_magna_milan_manpower.GetValue] manpower§!,  of its development. \nEvery Nearby Province will be afflicted as well."
 
  FEE_DISEASES_SYPHILIS_DISEASE_TT: "The new disease might spread to nearby provinces. Army marching on those provinces might bring it back to their homeland..."

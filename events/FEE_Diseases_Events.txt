@@ -104,6 +104,49 @@ country_event = {
 		}
 	}
 
+	immediate = {
+		hidden_effect = {
+			104 = {
+				export_to_variable = {
+					variable_name = fee_diseases_epidemia_magna_milan_tax
+					value = trigger_value:base_tax
+				}
+				export_to_variable = {
+					variable_name = fee_diseases_epidemia_magna_milan_production
+					value = trigger_value:base_production
+				}
+				export_to_variable = {
+					variable_name = fee_diseases_epidemia_magna_milan_manpower
+					value = trigger_value:base_manpower
+				}
+				multiply_variable = {
+					which = fee_diseases_epidemia_magna_milan_tax
+					value = 0.33
+				}
+				multiply_variable = {
+					which = fee_diseases_epidemia_magna_milan_production
+					value = 0.33
+				}
+				multiply_variable = {
+					which = fee_diseases_epidemia_magna_milan_manpower
+					value = 0.33
+				}
+				multiply_variable = {
+					which = fee_diseases_epidemia_magna_milan_tax
+					value = 1000
+				}
+				multiply_variable = {
+					which = fee_diseases_epidemia_magna_milan_production
+					value = 1000
+				}
+				multiply_variable = {
+					which = fee_diseases_epidemia_magna_milan_manpower
+					value = 1000
+				}
+			}
+		}
+	}
+
 	option = {
 		name = FEE_Diseases_Events.2.OPT1
 		ai_chance = {
@@ -111,79 +154,53 @@ country_event = {
 		}
 
 		104 = {
-			variable_arithmetic_trigger = {
-				custom_tooltip = FEE_DISEASES_BUBONIC_PLAGUE_EPIDEMIA_MAGNA_TT
-				hidden_effect = {
-					export_to_variable = {
-						variable_name = fee_diseases_epidemia_magna_milan_tax
-						value = trigger_value:base_tax
-					}
-					export_to_variable = {
-						variable_name = fee_diseases_epidemia_magna_milan_production
-						value = trigger_value:base_production
-					}
-					export_to_variable = {
-						variable_name = fee_diseases_epidemia_magna_milan_manpower
-						value = trigger_value:base_manpower
-					}
-					multiply_variable = {
-						which = fee_diseases_epidemia_magna_milan_tax
-						value = 0.33
-					}
-					multiply_variable = {
-						which = fee_diseases_epidemia_magna_milan_production
-						value = 0.33
-					}
-					multiply_variable = {
-						which = fee_diseases_epidemia_magna_milan_manpower
-						value = 0.33
-					}
-					while = {
-						limit = {
-							check_variable = {
-								which = fee_diseases_epidemia_magna_milan_tax
-								value = 0.1
-							}
-						}
-						add_base_tax = -1
-						subtract_variable = {
+			custom_tooltip = FEE_DISEASES_BUBONIC_PLAGUE_EPIDEMIA_MAGNA_TT
+			hidden_effect = {
+				while = {
+					limit = {
+						check_variable = {
 							which = fee_diseases_epidemia_magna_milan_tax
-							value = 1
+							value = 0.1
 						}
 					}
-					while = {
-						limit = {
-							check_variable = {
-								which = fee_diseases_epidemia_magna_milan_production
-								value = 0.1
-							}
-						}
-						add_base_production = -1
-						subtract_variable = {
+					add_base_tax = -1
+					subtract_variable = {
+						which = fee_diseases_epidemia_magna_milan_tax
+						value = 1
+					}
+				}
+				while = {
+					limit = {
+						check_variable = {
 							which = fee_diseases_epidemia_magna_milan_production
-							value = 1
+							value = 0.1
 						}
 					}
-					while = {
-						limit = {
-							check_variable = {
-								which = fee_diseases_epidemia_magna_milan_manpower
-								value = 0.1
-							}
-						}
-						add_base_manpower = -1
-						subtract_variable = {
+					add_base_production = -1
+					subtract_variable = {
+						which = fee_diseases_epidemia_magna_milan_production
+						value = 1
+					}
+				}
+				while = {
+					limit = {
+						check_variable = {
 							which = fee_diseases_epidemia_magna_milan_manpower
-							value = 1
+							value = 0.1
 						}
 					}
-					every_neighbor_province = {
-						random = {
-							chance = 33
-							add_base_tax = -1
-							add_base_production = -1
-							add_base_manpower = -1
-						}
+					add_base_manpower = -1
+					subtract_variable = {
+						which = fee_diseases_epidemia_magna_milan_manpower
+						value = 1
+					}
+				}
+				every_neighbor_province = {
+					random = {
+						chance = 33
+						add_base_tax = -1
+						add_base_production = -1
+						add_base_manpower = -1
 					}
 				}
 			}
