@@ -1,17 +1,19 @@
 ﻿l_english:
 
 # Bubonic Plague
- FEE_Diseases_Events.1.T: "Death's Return"
- FEE_Diseases_Events.1.D: "My Lord, the situation in Italy is dire with war and now we have heard of the possibility of the return of the Black Death itself. The plague has already taken so many lives and left us in a state of despair. The Renaissance, which was once a beacon of hope, now seems like a distant memory. The streets are empty, and the once-bustling markets are now silent. The people are afraid, and they have every right to be. The Black Death is a terrible omen of doom, and it threatens to destroy everything we hold dear. We must prepare ourselves for the worst and pray that we will survive this terrible ordeal."
- FEE_Diseases_Events.1.OPT1: "May God have mercy on us all."
 
- FEE_Diseases_Events.2.T: "Epidemia Magna"
- FEE_Diseases_Events.2.D: "My Lord, despite our greatest attempts we were not able to stop the spread of Death in the city of Milan and the outskirt..."
- FEE_Diseases_Events.2.OPT1: "Prepare for the worst."
+  ### Plague of Milan 1448-1452 ###
+   FEE_Diseases_Events.1.T: "Death's Return"
+   FEE_Diseases_Events.1.D: "My Lord, the situation in Italy is dire with war and now we have heard of the possibility of the return of the Black Death itself. The plague has already taken so many lives and left us in a state of despair. The Renaissance, which was once a beacon of hope, now seems like a distant memory. The streets are empty, and the once-bustling markets are now silent. The people are afraid, and they have every right to be. The Black Death is a terrible omen of doom, and it threatens to destroy everything we hold dear. We must prepare ourselves for the worst and pray that we will survive this terrible ordeal."
+   FEE_Diseases_Events.1.OPT1: "May God have mercy on us all."
 
- FEE_Diseases_Events.3.T: "End of the Epidemia Magna"
- FEE_Diseases_Events.3.D: "We have suffered, we have lost, a lot, everyone has suffered and had to say goodbye to the good life we once had, but the beauty of the Renaissance is still here and we will see brighter days."
- FEE_Diseases_Events.3.OPT1: "White clouds lies ahead."
+   FEE_Diseases_Events.2.T: "Epidemia Magna"
+   FEE_Diseases_Events.2.D: "My Lord, despite our greatest attempts we were not able to stop the spread of Death in the city of Milan and the outskirt..."
+   FEE_Diseases_Events.2.OPT1: "Prepare for the worst."
+
+   FEE_Diseases_Events.3.T: "End of the Epidemia Magna"
+   FEE_Diseases_Events.3.D: "We have suffered, we have lost, a lot, everyone has suffered and had to say goodbye to the good life we once had, but the beauty of the Renaissance is still here and we will see brighter days."
+   FEE_Diseases_Events.3.OPT1: "White clouds lies ahead."
 
 # Syphilis
 
@@ -37,4 +39,4 @@
  FEE_DISEASES_BUBONIC_PLAGUE_RETURN_MILAN_START_TT: "\"The black Death is Returning, gather all your §MCompetent Doctors§! to try and stop it!\""
  FEE_DISEASES_BUBONIC_PLAGUE_EPIDEMIA_MAGNA_TT: "[104.GetName] will lose §R1/3§! of its development. \nEvery Nearby Province will be afflicted as well."
 
- FEE_DISEASES_SYPHILIS_DISEASE_TT: "The new disease might spread to nearby provinces. Army marching on those provinces might bring the siphilis back to their homeland"
+ FEE_DISEASES_SYPHILIS_DISEASE_TT: "The new disease might spread to nearby provinces. Army marching on those provinces might bring it back to their homeland..."

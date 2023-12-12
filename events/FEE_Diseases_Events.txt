@@ -4,6 +4,8 @@ namespace = FEE_Diseases_Events
 #########	BUBONIC PLAGUE	#########
 #########	BUBONIC PLAGUE	#########
 
+### Plague of Milan 1448-1452 ###
+
 # Death's Return
 country_event = {
 	id = FEE_Diseases_Events.1
@@ -156,7 +158,7 @@ country_event = {
 								value = 0.1
 							}
 						}
-						add_base_tax = -1
+						add_base_production = -1
 						subtract_variable = {
 							which = fee_diseases_epidemia_magna_milan_production
 							value = 1
@@ -169,7 +171,7 @@ country_event = {
 								value = 0.1
 							}
 						}
-						add_base_tax = -1
+						add_base_manpower = -1
 						subtract_variable = {
 							which = fee_diseases_epidemia_magna_milan_manpower
 							value = 1
