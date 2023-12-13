@@ -30,75 +30,9 @@ country_event = {
 
 		add_years_of_income = -0.75
 		33 = {
-			# Grand Shipyard check.
-			if = {
-				limit = {
-					NOT = { has_shipyard_building_trigger = yes }
-				}
-				add_building = grand_shipyard
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_building = grand_shipyard
-					}
-					has_building = shipyard
-				}
-				remove_building = shipyard
-				add_building = grand_shipyard
-			}
-			else = {
-				add_base_production = 1
-			}
-			# Naval Battery check.
-			if = {
-				limit = {
-					NOT = { has_building = coastal_defence }
-					NOT = { has_building = naval_battery }
-				}
-				add_building = naval_battery
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						has_building = naval_battery
-					}
-					has_building = coastal_defence
-				}
-				remove_building = coastal_defence
-				add_building = naval_battery
-			}
-			else = {
-				add_base_tax = 1
-			}
-			# Fort check.
-			if = {
-				limit = {
-					NOT = { has_building = fort_15th }
-				}
-				add_building = fort_15th
-			}
-			else_if = {
-				limit = {
-					NOT = { has_building = fort_16th }
-				}
-				add_building = fort_16th
-			}
-			else_if = {
-				limit = {
-					NOT = { has_building = fort_17th }
-				}
-				add_building = fort_17th
-			}
-			else_if = {
-				limit = {
-					NOT = { has_building = fort_18th }
-				}
-				add_building = fort_18th
-			}
-			else = {
-				add_base_manpower = 1
-			}
+			add_or_upgrade_shipyard_building = yes
+			add_or_upgrade_naval_defense_building = yes
+			add_or_upgrade_fort_building = yes
 			# Kronstadt Fortress modifier
 			add_province_modifier = {
 				name = fee_rus_kronstadt_fortress

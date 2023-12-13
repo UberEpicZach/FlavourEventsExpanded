@@ -813,6 +813,8 @@ country_event = {
 		1177 = {
 			add_base_production = 3
 			add_base_manpower = 4
+			change_culture = ROOT
+			change_religion = ROOT
 			if = {
 				limit = {
 					owner = {
@@ -949,14 +951,7 @@ country_event = {
 					}
 				}
 			}
-			if = {
-				limit = {
-					NOT = { has_building = workshop }
-				}
-				add_building = workshop
-			}
-			change_culture = ROOT
-			change_religion = ROOT
+			add_or_upgrade_courthouse_building = yes
 		}
 	}
 

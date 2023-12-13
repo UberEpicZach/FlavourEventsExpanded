@@ -36,15 +36,7 @@ country_event = {
 				name = FEE_Tarnovo_Great_Fort
 				duration = -1
 			}
-			if = {
-				limit = {
-					NOT = {
-						has_building = fort_15th
-					}
-				}
-				owner = { add_treasury = -100 }
-				add_building = fort_15th
-			}
+			add_or_upgrade_fort_building = yes
 		}
 	}
 

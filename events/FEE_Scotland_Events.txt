@@ -329,18 +329,7 @@ country_event = {
 			}
 			add_base_production = 1
 			add_base_manpower = 1
-			if = {
-				limit = {
-					NOT = {
-						AND = {
-							has_building = shipyard
-							has_building = grand_shipyard
-						}
-					}
-					num_free_building_slots = 1
-				}
-				add_building = shipyard
-			}
+			add_or_upgrade_shipyard_building = yes
 		}
 		add_estate_loyalty = {
 			estate = estate_nobles
@@ -915,26 +904,7 @@ country_event = {
 				religion = reformed
 				cost_multiplier = 0.25
 			}
-			random_owned_province = {
-				if = {
-					limit = {
-						NOT = {
-							OR = {
-								has_building = temple
-								has_building = cathedral
-							}
-						}
-						num_free_building_slots = 1
-					}
-					add_building = temple
-				}
-				else = {
-					PREV = {
-						add_years_of_income = 0.1
-					}
-				}
-				add_base_tax = 4
-			}
+			add_or_upgrade_tax_building = yes
 		}
 	}
 }
@@ -1739,7 +1709,7 @@ country_event = {
 							add_core = ROOT
 							change_culture = ROOT
 							change_religion = ROOT
-							add_building = fort_15th
+							add_or_upgrade_fort_building = yes
 							add_base_tax = 4
 							add_base_production = 4
 							add_base_manpower = 4
@@ -1753,7 +1723,7 @@ country_event = {
 					add_core = ROOT
 					change_culture = ROOT
 					change_religion = ROOT
-					add_building = fort_15th
+					add_or_upgrade_fort_building = yes
 					add_base_tax = 4
 					add_base_production = 4
 					add_base_manpower = 4
@@ -1917,7 +1887,7 @@ country_event = {
 			}
 			event_target:FEE_Scotland_second_colony = {
 				custom_tooltip = FEE_Scotland_Events.27.OPT1.tooltip1
-				add_building = fort_15th
+				add_or_upgrade_fort_building = yes
 				add_base_tax = 4
 				add_base_production = 4
 				add_base_manpower = 4
@@ -2191,14 +2161,7 @@ country_event = {
 			mil = 100
 		}
 		lowlands_area = {
-			if = {
-				limit = {
-					NOT = {
-						has_building = university
-					}
-				}
-				add_building = university
-			}
+			add_or_upgrade_university_building = yes
 			add_institution_embracement = {
 				which = enlightenment
 				value = 100

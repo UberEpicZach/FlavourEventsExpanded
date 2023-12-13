@@ -981,15 +981,7 @@ country_event = {
 			duration = 9125
 		}
 		event_target:target_province = {
-			if = {
-				limit = {
-					OR = {
-						has_building = fort_15th
-						NOT = { has_fort_building_trigger = yes }
-					}
-				}
-				add_building = fort_16th
-			}
+			add_or_upgrade_fort_building = yes
 			infantry = ROOT
 			infantry = ROOT
 			infantry = ROOT
@@ -1028,15 +1020,7 @@ country_event = {
 			duration = 9125
 		}
 		event_target:target_province = {
-			if = {
-				limit = {
-					OR = {
-						has_building = fort_15th
-						NOT = { has_fort_building_trigger = yes }
-					}
-				}
-				add_building = fort_16th
-			}
+			add_or_upgrade_fort_building = yes
 			spawn_rebels = {
 				type = polish_noble_rebels
 				size = 3

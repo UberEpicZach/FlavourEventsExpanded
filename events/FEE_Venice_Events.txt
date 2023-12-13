@@ -5233,36 +5233,8 @@ country_event = {
 		321 = {
 			add_base_production = 3
 			add_base_tax = -2
-			if = {
-				limit = {
-					has_building = grand_shipyard
-				}
-				add_base_manpower = 1
-			}
-			else_if = {
-				limit = {
-					has_building = shipyard
-				}
-				add_building = grand_shipyard
-			}
-			else = {
-				add_building = shipyard
-			}
-			if = {
-				limit = {
-					has_building = counting_house
-				}
-				add_base_production = 1
-			}
-			else_if = {
-				limit = {
-					has_building = workshop
-				}
-				add_building = counting_house
-			}
-			else = {
-				add_building = workshop
-			}
+			add_or_upgrade_shipyard_building = yes
+			add_or_upgrade_courthouse_building = yes
 		}
 	}
 }
@@ -5297,25 +5269,7 @@ country_event = {
 
 		add_treasury = -100
 		321 = {
-			if = {
-				limit = { has_building = fort_18th }
-				add_base_manpower = 3
-			}
-			else_if = {
-				limit = { has_building = fort_17th }
-				add_building = fort_18th
-			}
-			else_if = {
-				limit = { has_building = fort_16th }
-				add_building = fort_17th
-			}
-			else_if = {
-				limit = { has_building = fort_15th }
-				add_building = fort_16th
-			}
-			else = {
-				add_building = fort_15th
-			}
+			add_or_upgrade_fort_building = yes
 			add_province_modifier = {
 				name = local_fortress
 				duration = 18250
@@ -5902,28 +5856,8 @@ country_event = {
 					area = east_adriatic_coast_area
 				}
 			}
-			if = {
-				limit = { has_building = conscription_center }
-				add_base_manpower = 1
-			}
-			else_if = {
-				limit = { has_building = regimental_camp }
-				add_building = conscription_center
-			}
-			else = {
-				add_building = regimental_camp
-			}
-			if = {
-				limit = { has_building = training_fields }
-				add_base_manpower = 1
-			}
-			else_if = {
-				limit = { has_building = barracks }
-				add_building = training_fields
-			}
-			else = {
-				add_building = barracks
-			}
+			add_or_upgrade_forcelimit_building = yes
+			add_or_upgrade_manpower_building = yes
 			add_province_modifier = {
 				name = military_reinforcement
 				duration = -1
