@@ -4500,16 +4500,8 @@ country_event = {
 			factor = 0
 		}
 
-		if = {
-			limit = { has_estate = estate_burghers }
-			add_estate_loyalty = {
-				estate = estate_burghers
-				loyalty = -10
-			}
-		}
-		else = {
-			add_dip_power = -50
-		}
+		reduce_estate_burghers_loyalty_effect = yes
+		add_dip_power = -50
 	}
 }
 
@@ -4883,14 +4875,8 @@ country_event = {
 			culture = venetian
 			religion = catholic
 		}
-		add_estate_loyalty = {
-			estate = estate_burghers
-			loyalty = 5
-		}
-		add_estate_loyalty = {
-			estate = estate_nobles
-			loyalty = 5
-		}
+		add_estate_burghers_loyalty_effect = yes
+		add_estate_nobles_loyalty_effect = yes
 	}
 
 	option = {
@@ -4899,26 +4885,10 @@ country_event = {
 			factor = 0
 		}
 
-		if = {
-			limit = { has_estate = estate_burghers }
-			add_estate_loyalty = {
-				estate = estate_burghers
-				loyalty = -10
-			}
-		}
-		else = {
-			add_dip_power = -50
-		}
-		if = {
-			limit = { has_estate = estate_nobles }
-			add_estate_loyalty = {
-				estate = estate_nobles
-				loyalty = -10
-			}
-		}
-		else = {
-			add_mil_power = -50
-		}
+		reduce_estate_burghers_loyalty_effect = yes
+		reduce_estate_nobles_loyalty_effect = yes
+		add_dip_power = -50
+		add_mil_power = -50
 	}
 }
 
@@ -5396,10 +5366,7 @@ country_event = {
 			religion = catholic
 		}
 		change_religious_influence_equivalent_fee = { add = 10 }
-		add_estate_loyalty = {
-			estate = estate_church
-			loyalty = 10
-		}
+		add_estate_church_loyalty_effect = yes
 		add_ruler_modifier = {
 			name = fee_ven_doge_marcantonio_trevisan
 			duration = -1
@@ -5413,18 +5380,8 @@ country_event = {
 		}
 
 		change_religious_influence_equivalent_fee = { remove = 10 }
-		if = {
-			limit = {
-				has_estate = estate_church
-			}
-			add_estate_loyalty = {
-				estate = estate_church
-				loyalty = -5
-			}
-		}
-		else = {
-			add_adm_power = -50
-		}
+		reduce_estate_church_loyalty_effect = yes
+		add_adm_power = -50
 	}
 }
 
@@ -5455,16 +5412,8 @@ country_event = {
 			factor = 50
 		}
 
-		if = {
-			limit = { has_estate = estate_burghers }
-			add_estate_loyalty = {
-				estate = estate_burghers
-				loyalty = 5
-			}
-		}
-		else = {
-			add_mercantilism_or_monarch_power = { amount = 3 }
-		}
+		add_estate_burghers_loyalty_effect = yes
+		add_mercantilism_or_monarch_power = { amount = 3 }
 	}
 
 	after = {

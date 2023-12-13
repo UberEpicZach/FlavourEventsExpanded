@@ -979,13 +979,8 @@ country_event = {
 			factor = 33
 		}
 
-		if = {
-			limit = {
-				has_estate = estate_burghers
-			}
-			add_estate_burghers_loyalty_effect = yes
-		}
-		else = { add_mercantilism_or_monarch_power = { amount = 2 } }
+		add_estate_burghers_loyalty_effect = yes
+		add_mercantilism_or_monarch_power = { amount = 2 }
 	}
 }
 

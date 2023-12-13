@@ -100,15 +100,7 @@ country_event = {
 	option = {
 		name = disaster_fee_crisis_of_the_mughal_empire.4.OPT1
 
-		if = {
-			limit = {
-				has_estate = estate_brahmins
-			}
-			add_estate_loyalty = {
-				estate = estate_brahmins
-				loyalty = -10
-			}
-		}
+		reduce_estate_dhimmi_loyalty_effect = yes
 		event_target:rebel_province_1 = {
 			hinduism_rebels = 3
 		}
@@ -141,24 +133,7 @@ country_event = {
 		name = disaster_fee_crisis_of_the_mughal_empire.5.OPT1
 
 		add_army_tradition = -15
-		if = {
-			limit = {
-				has_estate = estate_rajput
-			}
-			add_estate_loyalty = {
-				estate = estate_rajput
-				loyalty = -10
-			}
-		}
-		else_if = {
-			limit = {
-				has_estate = estate_nobles
-			}
-			add_estate_loyalty = {
-				estate = estate_nobles
-				loyalty = -10
-			}
-		}
+		reduce_estate_nobles_loyalty_effect = yes
 	}
 }
 
@@ -245,48 +220,14 @@ country_event = {
 		name = disaster_fee_crisis_of_the_mughal_empire.8.OPT1
 
 		add_years_of_income = -0.5
-		if = {
-			limit = {
-				has_estate = estate_jains
-			}
-			add_estate_loyalty = {
-				estate = estate_jains
-				loyalty = 10
-			}
-		}
-		else_if = {
-			limit = {
-				has_estate = estate_burghers
-			}
-			add_estate_loyalty = {
-				estate = estate_burghers
-				loyalty = 10
-			}
-		}
+		add_estate_burghers_loyalty_effect = yes
 	}
 
 	option = {
 		name = disaster_fee_crisis_of_the_mughal_empire.8.OPT2
 
 		add_stability = -1
-		if = {
-			limit = {
-				has_estate = estate_jains
-			}
-			add_estate_loyalty = {
-				estate = estate_jains
-				loyalty = -10
-			}
-		}
-		else_if = {
-			limit = {
-				has_estate = estate_burghers
-			}
-			add_estate_loyalty = {
-				estate = estate_burghers
-				loyalty = -10
-			}
-		}
+		reduce_estate_burghers_loyalty_effect = yes
 	}
 }
 
@@ -461,24 +402,8 @@ country_event = {
 		name = disaster_fee_crisis_of_the_mughal_empire.12.OPT1
 
 		add_stability_or_adm_power = yes
-		if = {
-			limit = {
-				has_estate = estate_church
-			}
-			add_estate_loyalty = {
-				estate = estate_church
-				loyalty = -15
-			}
-		}
-		if = {
-			limit = {
-				has_estate = estate_brahmins
-			}
-			add_estate_loyalty = {
-				estate = estate_brahmins
-				loyalty = 15
-			}
-		}
+		fee_reduce_estate_church_loyalty_effect_big = yes
+		add_estate_dhimmi_loyalty_effect = yes
 		capital_scope = {
 			sunni_rebels = 3
 		}
@@ -488,24 +413,8 @@ country_event = {
 		name = disaster_fee_crisis_of_the_mughal_empire.12.OPT2
 
 		add_stability = -1
-		if = {
-			limit = {
-				has_estate = estate_church
-			}
-			add_estate_loyalty = {
-				estate = estate_church
-				loyalty = 10
-			}
-		}
-		if = {
-			limit = {
-				has_estate = estate_brahmins
-			}
-			add_estate_loyalty = {
-				estate = estate_brahmins
-				loyalty = -15
-			}
-		}
+		add_estate_church_loyalty_effect = yes
+		fee_reduce_estate_dhimmi_loyalty_effect_big = yes
 		event_target:rebel_province_1 = {
 			particularist_rebels = 2
 		}

@@ -782,15 +782,7 @@ country_event = {
 
 		add_stability = -1
 		add_inflation = 3
-		if = {
-			limit = {
-				has_estate = estate_burghers
-			}
-			add_estate_loyalty = {
-				estate = estate_burghers
-				loyalty = -10
-			}
-		}
+		reduce_estate_burghers_loyalty_effect = yes
 		add_disaster_modifier = {
 			name = fee_decline_of_the_ottomans_price_controls
 			duration = 9125
@@ -1594,15 +1586,7 @@ country_event = {
 		name = disaster_fee_decline_of_the_ottomans.20.OPT1
 
 		add_stability = -1
-		if = {
-			limit = {
-				has_estate = estate_church
-			}
-			add_estate_loyalty = {
-				estate = estate_church
-				loyalty = -10
-			}
-		}
+		reduce_estate_church_loyalty_effect = yes
 		if = {
 			limit = {
 				religion_group = muslim
@@ -1629,15 +1613,7 @@ country_event = {
 		name = disaster_fee_decline_of_the_ottomans.20.OPT2
 
 		add_stability_or_adm_power_per_stab = { amount = 1 }
-		if = {
-			limit = {
-				has_estate = estate_church
-			}
-			add_estate_loyalty = {
-				estate = estate_church
-				loyalty = 10
-			}
-		}
+		add_estate_church_loyalty_effect = yes
 		add_disaster_modifier = {
 			name = fee_decline_of_the_ottomans_closed_borders
 			duration = -1
@@ -1890,24 +1866,8 @@ country_event = {
 	option = {
 		name = disaster_fee_decline_of_the_ottomans.22.OPT2
 
-		if = {
-			limit = {
-				has_estate = estate_nobles
-			}
-			add_estate_loyalty = {
-				estate = estate_nobles
-				loyalty = -15
-			}
-		}
-		if = {
-			limit = {
-				has_estate = estate_church
-			}
-			add_estate_loyalty = {
-				estate = estate_church
-				loyalty = -15
-			}
-		}
+		fee_reduce_estate_nobles_loyalty_effect_big = yes
+		fee_reduce_estate_church_loyalty_effect_big = yes
 		event_target:target_1 = {
 			noble_rebels = 1
 		}
