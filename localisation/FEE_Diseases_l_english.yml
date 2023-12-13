@@ -1,21 +1,42 @@
 ﻿l_english:
 
-# Siphilis
+# Bubonic Plague
 
- FEE_Diseases_Events.1.T: "A New Disease?"
- FEE_Diseases_Events.1.D_French: "The descent of the french army on the italian soil has brought, alongside death and destruction, a new disease that has never been seen before, apparently enlarged by the prostitution presence within the army itself, thus the Catholic Church has identified this new \"French Disease\" as a curse from God against mankind for their licentious customs and the immorality of their conduct."
- FEE_Diseases_Events.1.D_Colonial: "The return home of the colonial expeditions from the new world has brought, alongside wealth and adventures, a new disease that has never been seen before, apparently enlarged by the prostitution presence within the army itself, thus the Catholic Church has identified this new \"French Disease\" as a curse from God against mankind for their licentious customs and the immorality of their conduct."
- FEE_Diseases_Events.1.OPT1: "This is a catastrophe!"
+  ### Plague of Milan 1448-1452 ###
+   FEE_Diseases_Events.1.T: "Death's Return"
+   FEE_Diseases_Events.1.D: "My Lord, the situation in Italy is dire with war and now we have heard of the possibility of the return of the Black Death itself. The plague has already taken so many lives and left us in a state of despair. The Renaissance, which was once a beacon of hope, now seems like a distant memory. The streets are empty, and the once-bustling markets are now silent. The people are afraid, and they have every right to be. The Black Death is a terrible omen of doom, and it threatens to destroy everything we hold dear. We must prepare ourselves for the worst and pray that we will survive this terrible ordeal."
+   FEE_Diseases_Events.1.OPT1: "May God have mercy on us all."
 
- FEE_Diseases_Events.2.T: "Syphilis outbreaks in Italy"
- FEE_Diseases_Events.2.D: "The local population has shown chancroid on their genitalia as well as exantthema on their whole body and reddish papules on their back, might this be the sign of God's punishment upon us?"
- FEE_Diseases_Events.2.OPT1: "We should lock absteen and isolate the whores!"
+   FEE_Diseases_Events.2.T: "Epidemia Magna"
+   FEE_Diseases_Events.2.D: "My Lord, despite our greatest attempts we were not able to stop the spread of Death in the city of Milan and the outskirt..."
+   FEE_Diseases_Events.2.OPT1: "Prepare for the worst."
+
+   FEE_Diseases_Events.3.T: "End of the Epidemia Magna"
+   FEE_Diseases_Events.3.D: "We have suffered, we have lost, a lot, everyone has suffered and had to say goodbye to the good life we once had, but the beauty of the Renaissance is still here and we will see brighter days."
+   FEE_Diseases_Events.3.OPT1: "White clouds lies ahead."
+
+# Syphilis
+
+ FEE_Diseases_Events.1000.T: "A New Disease?"
+ FEE_Diseases_Events.1000.D_French: "The descent of the french army on the italian soil has brought, alongside death and destruction, a new disease that has never been seen before, apparently enlarged by the prostitution presence within the army itself, thus the Catholic Church has identified this new \"French Disease\" as a curse from God against mankind for their licentious customs and the immorality of their conduct."
+ FEE_Diseases_Events.1000.D_Colonial: "The return home of the colonial expeditions from the new world has brought, alongside wealth and adventures, a new disease that has never been seen before, apparently enlarged by the prostitution presence within the army itself, thus the Catholic Church has identified this new \"French Disease\" as a curse from God against mankind for their licentious customs and the immorality of their conduct."
+ FEE_Diseases_Events.1000.OPT1: "This is a catastrophe!"
+
+ FEE_Diseases_Events.1001.T: "Syphilis outbreaks in Italy"
+ FEE_Diseases_Events.1001.D: "The local population has shown chancroid on their genitalia as well as exantthema on their whole body and reddish papules on their back, might this be the sign of God's punishment upon us?"
+ FEE_Diseases_Events.1001.OPT1: "We should lock absteen and isolate the whores!"
 
 # Modifiers
- fee_syphilis_outbreak: "Syphilis Outbreak"
- desc_fee_syphilis_outbreak: "Can someone stop fuck those prostitute?"
+ fee_diseases_small_bubonic_outbreak: "Small Bubonic Outbreak"
+ desc_fee_diseases_small_bubonic_outbreak: "Deaths' Return"
+ fee_diseases_small_bubonic_recovery: "Gradual Recovery"
+ desc_fee_diseases_small_bubonic_recovery: "Will life ever return back to what it was?"
+
+ fee_diseases_syphilis_outbreak: "Syphilis Outbreak"
+ desc_fee_diseases_syphilis_outbreak: "Can someone stop fuck those prostitute?"
 
 # Tooltip
- FEE_SYPHILIS_DISEASE_TT: "The new disease might spread to nearby provinces. Army marching on those provinces might bring the siphilis back to their homeland"
- FEE_SPREAD_SYPHILIS_TT: "§RThe New Disease might spread to nearby provinces§!"
- FEE_SYPHILIS_SLACKING_MANPOWER_TT: "By removing the worst part of our troops, for the next §Y5 years§! we will be able to contain Syphilis better."
+ FEE_DISEASES_BUBONIC_PLAGUE_RETURN_MILAN_START_TT: "\"The black Death is Returning, gather all your §MCompetent Doctors§! to try and stop it!\""
+ FEE_DISEASES_BUBONIC_PLAGUE_EPIDEMIA_MAGNA_TT: "[104.GetName] will lose §R[This.fee_diseases_epidemia_magna_milan_tax.GetValue] tax§!, §R[This.fee_diseases_epidemia_magna_milan_production.GetValue] production§! and §R[This.fee_diseases_epidemia_magna_milan_manpower.GetValue] manpower§!,  of its development. \nEvery Nearby Province will be afflicted as well."
+
+ FEE_DISEASES_SYPHILIS_DISEASE_TT: "The new disease might spread to nearby provinces. Army marching on those provinces might bring it back to their homeland..."
