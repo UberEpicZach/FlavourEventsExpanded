@@ -63,7 +63,7 @@
  desc_fee_diseases_syphilis_outbreak: "Can someone stop fuck those prostitute?"
 
 # Tooltip
- FEE_DISEASES_BUBONIC_PLAGUE_RETURN_MILAN_START_TT: "\"The black Death is Returning, gather all your §MCompetent Doctors§! to try and stop it!\""
- FEE_DISEASES_BUBONIC_PLAGUE_EPIDEMIA_MAGNA_TT: "[104.GetName] will lose §R[This.fee_diseases_epidemia_magna_milan_tax.GetValue] tax§!, §R[This.fee_diseases_epidemia_magna_milan_production.GetValue] production§! and §R[This.fee_diseases_epidemia_magna_milan_manpower.GetValue] manpower§!,  of its development. \nEvery Nearby Province will be afflicted as well."
+ FEE_DISEASES_BUBONIC_PLAGUE_RETURN_MILAN_START_TT: "The black Death is Returning, gather all your §MCompetent Doctors§! to try and stop it! \n\n[104.GetName] and all its §YNeighbor Provinces§! will gain '§YSmall Bubonic Outbreak§!' until the eradication, of the plague giving the following effects:\n"
+ FEE_DISEASES_BUBONIC_PLAGUE_EPIDEMIA_MAGNA_TT: "Lose §R[This.fee_diseases_epidemia_magna_milan_tax.GetValue]§! Base Tax \n   Lose §R[This.fee_diseases_epidemia_magna_milan_production.GetValue]§! Base Production \n   Lose §R[This.fee_diseases_epidemia_magna_milan_manpower.GetValue]§! Base Manpower. \n\n   Every §YNearby Province§! will have a §Y33% chance§! to: \n      Lose §R1§! Base Tax \n      Lose §R1§! Base Production \n      Lose §R1§! Base Manpower."
 
  FEE_DISEASES_SYPHILIS_DISEASE_TT: "The new disease might spread to nearby provinces. Army marching on those provinces might bring it back to their homeland..."

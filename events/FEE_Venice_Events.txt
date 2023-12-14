@@ -2266,7 +2266,7 @@ country_event = {
 		custom_tooltip = FEE_VEN_VOYAGES_NICCOLO_TRON_TT
 		hidden_effect = {
 			country_event = {
-				id = FEE_venice_Events.43
+				id = FEE_Venice_Events.43
 				days = 180
 				random = 60
 			}
@@ -2287,7 +2287,7 @@ country_event = {
 		custom_tooltip = FEE_VEN_VOYAGES_NICCOLO_TRON_TT
 		hidden_effect = {
 			country_event = {
-				id = FEE_venice_Events.43
+				id = FEE_Venice_Events.43
 				days = 180
 				random = 60
 			}
@@ -2537,7 +2537,7 @@ country_event = {
 	after = {
 		hidden_effect = {
 			country_event = {
-				id = FEE_venice_Events.47
+				id = FEE_Venice_Events.47
 				days = 180
 				random = 60
 			}
@@ -5545,10 +5545,6 @@ country_event = {
 	trigger = {
 		is_year = 1508
 		NOT = { is_year = 1515 }
-	}
-
-	mean_time_to_happen = {
-		years = 1
 	}
 
 	major = yes

@@ -2223,7 +2223,7 @@ country_event = {
 		ai_chance = {
 			factor = 1
 		}
-		add_stability_or_adm_power
+		add_stability_or_adm_power = yes
 		add_innovativeness_or_monarch_power = {
 			amount = 10
 			adm = 100
