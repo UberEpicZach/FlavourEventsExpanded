@@ -1,3 +1,10 @@
+# Random Events
+fee_diseases_damaged_goods = {
+	local_development_cost = 0.125
+	province_trade_power_modifier = -0.125
+	trade_goods_size_modifier = -0.125
+}
+
 # Bubonic Plague
 fee_diseases_small_bubonic_outbreak = {
 	local_development_cost = 0.25

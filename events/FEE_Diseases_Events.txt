@@ -1,5 +1,252 @@
 namespace = FEE_Diseases_Events
 
+#########	GENERIC PLAGUE EVENTS	#########
+#########	GENERIC PLAGUE EVENTS	#########
+#########	GENERIC PLAGUE EVENTS	#########
+
+# A Plague Tale: Blood Ties
+country_event = {
+	id = FEE_Diseases_Events.1
+	title = FEE_Diseases_Events.1.T
+	desc = FEE_Diseases_Events.1.D
+	picture = PLAGUE_eventPicture
+
+	is_triggered_only = yes # from bi-yearly on action
+
+	trigger = {
+		any_owned_province = {
+			is_capital_of = ROOT
+			has_province_modifier = fee_diseases_small_bubonic_outbreak
+		}
+		has_heir = yes
+		NOT = { has_heir_flag = fee_diseases_bubonic_heir_killed }
+	}
+
+	immediate = {
+		hidden_effect = { set_heir_flag = fee_diseases_bubonic_heir_killed }
+	}
+
+	option = {
+		name = FEE_Diseases_Events.1.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_treasury = -25
+		random = {
+			chance = 50
+			kill_heir = { }
+		}
+	}
+
+	option = {
+		name = FEE_Diseases_Events.1.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
+		add_prestige = -15
+		random = {
+			chance = 75
+			kill_heir = { }
+		}
+	}
+}
+
+# A Plague Tale: Our Home
+country_event = {
+	id = FEE_Diseases_Events.2
+	title = FEE_Diseases_Events.2.T
+	desc = FEE_Diseases_Events.2.D
+	picture = PLAGUE_eventPicture
+
+	is_triggered_only = yes # from bi-yearly on action
+
+	trigger = {
+		any_owned_province = {
+			is_capital_of = ROOT
+			has_province_modifier = fee_diseases_small_bubonic_outbreak
+		}
+		has_consort = yes
+		NOT = { has_consort_flag = fee_diseases_bubonic_consort_killed }
+	}
+
+	immediate = {
+		hidden_effect = { set_consort_flag = fee_diseases_bubonic_consort_killed }
+	}
+
+	option = {
+		name = FEE_Diseases_Events.2.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_treasury = -25
+		random = {
+			chance = 50
+			kill_consort = yes
+		}
+	}
+
+	option = {
+		name = FEE_Diseases_Events.2.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
+		add_legitimacy_equivalent = {amount = -10 republican_tradition = -3 }
+		random = {
+			chance = 75
+			remove_consort = yes
+		}
+	}
+}
+
+# A Plague Tale: Requiem
+country_event = {
+	id = FEE_Diseases_Events.3
+	title = FEE_Diseases_Events.3.T
+	desc = FEE_Diseases_Events.3.D
+	picture = PLAGUE_eventPicture
+
+	is_triggered_only = yes # from bi-yearly on action
+
+	trigger = {
+		any_owned_province = {
+			is_capital_of = ROOT
+			has_province_modifier = fee_diseases_small_bubonic_outbreak
+		}
+		has_ruler = yes
+		NOT = { has_ruler_flag = fee_diseases_bubonic_ruler_killed }
+	}
+
+	immediate = {
+		hidden_effect = { set_ruler_flag = fee_diseases_bubonic_ruler_killed }
+	}
+
+	option = {
+		name = FEE_Diseases_Events.3.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_treasury = -25
+		random = {
+			chance = 50
+			kill_ruler = yes
+		}
+	}
+
+	option = {
+		name = FEE_Diseases_Events.3.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
+		random = {
+			chance = 75
+			kill_ruler = yes
+		}
+		if = {
+			limit = { has_dlc = "Mandate of Heaven" }
+			add_splendor = -250
+		}
+	}
+}
+
+# A Plague Tale: Damaged Goods
+province_event = {
+	id = FEE_Diseases_Events.4
+	title = FEE_Diseases_Events.4.T
+	desc = FEE_Diseases_Events.4.D
+	picture = PLAGUE_eventPicture
+
+	is_triggered_only = yes # from bi-yearly on action
+
+	trigger = {
+		has_port = yes
+		has_province_modifier = fee_diseases_small_bubonic_outbreak
+		NOT = { has_province_flag = fee_diseases_bubonic_damaged_goods }
+	}
+
+	major = yes
+	major_trigger = {
+		any_country = {
+			any_owned_province = { is_neighbor_of = ROOT }
+		}
+	}
+
+	immediate = {
+		hidden_effect = { set_province_flag = fee_diseases_bubonic_damaged_goods }
+	}
+
+	option = {
+		name = FEE_Diseases_Events.4.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_mercantilism = -2
+		random_neighbor_province = {
+			random = {
+				chance = 66
+				add_province_modifier = {
+					name = fee_diseases_damaged_goods
+					duration = 1825
+				}
+			}
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			clr_province_flag = fee_diseases_bubonic_damaged_goods
+		}
+	}
+}
+
+# A Plague Tale: The Ravens' Spoils
+province_event = {
+	id = FEE_Diseases_Events.5
+	title = FEE_Diseases_Events.5.T
+	desc = FEE_Diseases_Events.5.D
+	picture = PLAGUE_eventPicture
+
+	is_triggered_only = yes # from bi-yearly on action
+
+	trigger = {
+		has_province_modifier = fee_diseases_small_bubonic_outbreak
+		units_in_province = owner
+		NOT = { has_province_flag = fee_diseases_bubonic_ravens_spoil }
+	}
+
+	immediate = {
+		hidden_effect = { set_province_flag = fee_diseases_bubonic_ravens_spoil }
+	}
+
+	option = {
+		name = FEE_Diseases_Events.5.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_manpower = -0.5
+		if = {
+			limit = { unit_has_leader = yes }
+			random = {
+				chance = 50
+				kill_leader = general
+			}
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			clr_province_flag = fee_diseases_bubonic_ravens_spoil
+		}
+	}
+}
+
 #########	BUBONIC PLAGUE	#########
 #########	BUBONIC PLAGUE	#########
 #########	BUBONIC PLAGUE	#########
@@ -8,9 +255,9 @@ namespace = FEE_Diseases_Events
 
 # Death's Return
 country_event = {
-	id = FEE_Diseases_Events.1
-	title = FEE_Diseases_Events.1.T
-	desc = FEE_Diseases_Events.1.D
+	id = FEE_Diseases_Events.10
+	title = FEE_Diseases_Events.10.T
+	desc = FEE_Diseases_Events.10.D
 	picture = PLAGUE_eventPicture
 
 	fire_only_once = yes
@@ -35,7 +282,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Diseases_Events.1.OPT1
+		name = FEE_Diseases_Events.10.OPT1
 		ai_chance = {
 			factor = 75
 		}
@@ -62,7 +309,7 @@ country_event = {
 		hidden_effect = {
 			104 = {
 				province_event = {
-					name = FEE_Diseases_Events.3
+					name = FEE_Diseases_Events.14
 					days = 2555 # roughly 3 years after the end
 				}
 			}
@@ -72,9 +319,9 @@ country_event = {
 
 # Epidemia Magna
 country_event = {
-	id = FEE_Diseases_Events.2
-	title = FEE_Diseases_Events.2.T
-	desc = FEE_Diseases_Events.2.D
+	id = FEE_Diseases_Events.11
+	title = FEE_Diseases_Events.11.T
+	desc = FEE_Diseases_Events.11.D
 	picture = PLAGUE_eventPicture
 
 	fire_only_once = yes
@@ -148,7 +395,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Diseases_Events.2.OPT1
+		name = FEE_Diseases_Events.11.OPT1
 		ai_chance = {
 			factor = 75
 		}
@@ -210,9 +457,9 @@ country_event = {
 
 # End of the Epidemia Magna
 province_event = {
-	id = FEE_Diseases_Events.3
-	title = FEE_Diseases_Events.3.T
-	desc = FEE_Diseases_Events.3.D
+	id = FEE_Diseases_Events.14
+	title = FEE_Diseases_Events.14.T
+	desc = FEE_Diseases_Events.14.D
 	picture = PLAGUE_eventPicture
 
     is_triggered_only = yes
@@ -230,7 +477,7 @@ province_event = {
 	}
 
 	option = {
-		name = FEE_Diseases_Events.3.OPT1
+		name = FEE_Diseases_Events.14.OPT1
 		ai_chance = {
 			factor = 75
 		}
