@@ -173,8 +173,10 @@ province_event = {
 
 	major = yes
 	major_trigger = {
-		any_country = {
-			any_owned_province = { is_neighbor_of = PREV }
+		any_neighbor_province = {
+			any_country = {
+				owns = PREV
+			}
 		}
 	}
 
@@ -188,15 +190,19 @@ province_event = {
 			factor = 75
 		}
 
-		owner = {
-			add_mercantilism = -2
+		add_base_production = -1
+		add_permanent_province_modifier = {
+			name = fee_diseases_damaged_goods
+			duration = -1
+			desc = fee_diseases_until_end_of_plague
 		}
 		random_neighbor_province = {
 			random = {
 				chance = 66
-				add_province_modifier = {
+				add_permanent_province_modifier = {
 					name = fee_diseases_damaged_goods
-					duration = 1825
+					duration = -1
+					desc = fee_diseases_until_end_of_plague
 				}
 			}
 		}
@@ -234,8 +240,11 @@ province_event = {
 			factor = 75
 		}
 
-		owner = {
-			add_manpower = -0.5
+		add_base_manpower = -1
+		add_permanent_province_modifier = {
+			name = fee_diseases_ravens_spoil
+			duration = -1
+			desc = fee_diseases_until_end_of_plague
 		}
 		if = {
 			limit = { unit_has_leader = yes }
@@ -251,6 +260,45 @@ province_event = {
 	after = {
 		hidden_effect = {
 			clr_province_flag = fee_diseases_bubonic_ravens_spoil
+		}
+	}
+}
+
+# A Plague Tale: Shadow of Ramparts
+province_event = {
+	id = FEE_Diseases_Events.6
+	title = FEE_Diseases_Events.6.T
+	desc = FEE_Diseases_Events.6.D
+	picture = PLAGUE_eventPicture
+
+	is_triggered_only = yes # from bi-yearly on action
+
+	trigger = {
+		has_province_modifier = fee_diseases_small_bubonic_outbreak
+		fort_level = 1
+		NOT = { has_province_flag = fee_diseases_bubonic_shadow_ramparts }
+	}
+
+	immediate = {
+		hidden_effect = { set_province_flag = fee_diseases_bubonic_shadow_ramparts }
+	}
+
+	option = {
+		name = FEE_Diseases_Events.6.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_permanent_province_modifier = {
+			name = fee_diseases_shadow_ramparts
+			duration = -1
+			desc = fee_diseases_until_end_of_plague
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			clr_province_flag = fee_diseases_bubonic_shadow_ramparts
 		}
 	}
 }
@@ -364,7 +412,9 @@ country_event = {
 	major_trigger = {
 		104 = {
 			any_neighbor_province = {
-				owned_by = ROOT
+				any_country = {
+					owns = PREV
+				}
 			}
 		}
 	}
@@ -499,9 +549,9 @@ province_event = {
 
 	major = yes
 	major_trigger = {
-		104 = {
-			any_neighbor_province = {
-				owned_by = ROOT
+		any_neighbor_province = {
+			any_country = {
+				owns = PREV
 			}
 		}
 	}
@@ -518,13 +568,50 @@ province_event = {
 			duration = 3650
 		}
         every_neighbor_province = {
-            limit = { has_province_modifier = fee_diseases_small_bubonic_outbreak }
-            remove_province_modifier = fee_diseases_small_bubonic_outbreak
+			limit = { has_province_modifier = fee_diseases_small_bubonic_outbreak }
+			remove_province_modifier = fee_diseases_small_bubonic_outbreak
 			add_permanent_province_modifier = {
 				name = fee_diseases_small_bubonic_recovery
 				duration = 3650
 			}
         }
+	}
+
+	after = {
+		hidden_effect = {
+			if = {
+				limit = { has_province_flag = fee_diseases_bubonic_damaged_goods }
+				clr_province_flag = fee_diseases_bubonic_damaged_goods
+				remove_province_modifier = fee_diseases_damaged_goods
+			}
+			if = {
+				limit = { has_province_flag = fee_diseases_bubonic_ravens_spoil }
+				clr_province_flag = fee_diseases_bubonic_ravens_spoil
+				remove_province_modifier = fee_diseases_ravens_spoil
+			}
+			if = {
+				limit = { has_province_flag = fee_diseases_bubonic_shadow_ramparts }
+				clr_province_flag = fee_diseases_bubonic_shadow_ramparts
+				remove_province_modifier = fee_diseases_shadow_ramparts
+			}
+			every_neighbor_province = {
+				if = {
+					limit = { has_province_flag = fee_diseases_bubonic_damaged_goods }
+					clr_province_flag = fee_diseases_bubonic_damaged_goods
+					remove_province_modifier = fee_diseases_damaged_goods
+				}
+				if = {
+					limit = { has_province_flag = fee_diseases_bubonic_ravens_spoil }
+					clr_province_flag = fee_diseases_bubonic_ravens_spoil
+					remove_province_modifier = fee_diseases_ravens_spoil
+				}
+				if = {
+					limit = { has_province_flag = fee_diseases_bubonic_shadow_ramparts }
+					clr_province_flag = fee_diseases_bubonic_shadow_ramparts
+					remove_province_modifier = fee_diseases_shadow_ramparts
+				}
+			}
+		}
 	}
 }
 

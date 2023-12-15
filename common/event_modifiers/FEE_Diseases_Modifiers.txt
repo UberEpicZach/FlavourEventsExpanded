@@ -4,10 +4,22 @@ fee_diseases_damaged_goods = {
 	province_trade_power_modifier = -0.125
 	trade_goods_size_modifier = -0.125
 }
+fee_diseases_ravens_spoil = {
+	local_manpower_modifier = -0.125
+	local_regiment_cost = 0.125
+	regiment_recruit_speed = 0.125
+}
+fee_diseases_shadow_ramparts = {
+	garrison_growth = -0.125
+	local_assault_fort_ability = 0.125
+	local_assault_fort_cost_modifier = -0.125
+	local_defensiveness = -0.125
+}
 
 # Bubonic Plague
 fee_diseases_small_bubonic_outbreak = {
 	local_development_cost = 0.25
+	local_institution_spread = -0.33
 	local_manpower_modifier = -0.33
 	local_tax_modifier = -0.33
 	province_trade_power_modifier = -0.33

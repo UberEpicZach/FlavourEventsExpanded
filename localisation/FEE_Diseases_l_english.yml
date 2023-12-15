@@ -24,6 +24,10 @@
  FEE_Diseases_Events.5.D: "Alas, the fates have turned against us, for our troops, lacking due caution, lingered too long in an afflicted province. The toll is grievous, with hundreds succumbing to the insidious contagion. Whispers now speak of our leader, perhaps plagued, and as the casualties mount, the ominous cawing of ravens signals the impending harvest of sorrow."
  FEE_Diseases_Events.5.OPT1: "Couldn't them be more careful?"
 
+ FEE_Diseases_Events.6.T: "A Plague Tale: Shadow of Ramparts"
+ FEE_Diseases_Events.6.D: "Behold, the once-impregnable ramparts now crumble under the malevolent caress of the plague. The pestilence, relentless in its assault, corrodes not only our valiant soldiers but also the very stones that form our mighty castles. These formidable fortifications, now weakened, stand on the precipice of ruin. A breach, swift and inevitable, awaits, as our bastions, tainted by both malady and time, bow before the specter of decay. An enemy's assault would find little resistance, for our defenses, once stalwart, now teeter on the brink of vulnerability."
+ FEE_Diseases_Events.6.OPT1: "But here we will stand."
+
 # Bubonic Plague
 
   ### Plague of Milan 1448-1452 ###
@@ -51,8 +55,14 @@
  FEE_Diseases_Events.1001.OPT1: "We should lock absteen and isolate the whores!"
 
 # Modifiers
+ fee_diseases_until_end_of_plague: "Until the end of the Plague."
+
  fee_diseases_damaged_goods: "Damaged Goods"
  desc_fee_diseases_damaged_goods: "Fucking rats, stop it!"
+ fee_diseases_ravens_spoil: "Raven's Spoil"
+ desc_fee_diseases_ravens_spoil: "It's not a field, it's a cemetery"
+ fee_diseases_shadow_ramparts: "Shadow of Ramparts"
+ desc_fee_diseases_shadow_ramparts: "Crumble like sands..."
 
  fee_diseases_small_bubonic_outbreak: "Small Bubonic Outbreak"
  desc_fee_diseases_small_bubonic_outbreak: "Deaths' Return"
