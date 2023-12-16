@@ -1245,22 +1245,22 @@ country_event = {
 		PAP = {
 			add_opinion = {
 				who = ROOT
-				modifier = iberia_papal_fraud_uncovered
+				modifier = iberia_papal_fraud_uncovered_opinion
 			}
 		}
 		add_opinion = {
 			who = PAP
-			modifier = iberia_papal_fraud_uncovered
+			modifier = iberia_papal_fraud_uncovered_opinion
 		}
 		emperor = {
 			add_opinion = {
 				who = ROOT
-				modifier = iberia_papal_fraud_uncovered
+				modifier = iberia_papal_fraud_uncovered_opinion
 			}
 		}
 		add_opinion = {
 			who = emperor
-			modifier = iberia_papal_fraud_uncovered
+			modifier = iberia_papal_fraud_uncovered_opinion
 		}
 		custom_tooltip = FEE_Iberia_Events.12.tt
 		hidden_effect = {
@@ -1271,11 +1271,11 @@ country_event = {
 				}
 				add_opinion = {
 					who = PAP
-					modifier = iberia_papal_fraud_uncovered
+					modifier = iberia_papal_fraud_uncovered_opinion
 				}
 				reverse_add_opinion = {
 					who = PAP
-					modifier = iberia_papal_fraud_uncovered
+					modifier = iberia_papal_fraud_uncovered_opinion
 				}
 			}
 		}

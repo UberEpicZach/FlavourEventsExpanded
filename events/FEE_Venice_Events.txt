@@ -985,6 +985,7 @@ country_event = {
 		has_ruler = "Francesco Foscari"
 		NOT = { is_year = 1457 }
 		has_country_modifier = fee_ven_malipiero_avogadore_comun
+		has_estate = estate_nobles
 	}
 
 	mean_time_to_happen = {
@@ -1011,6 +1012,7 @@ country_event = {
 			loyalty = 5
 		}
 		add_estate_influence_modifier = {
+			estate = estate_nobles
 			influence = 15
 			duration = 5475
 			desc = fee_ven_malipiero_avogadore_comun
