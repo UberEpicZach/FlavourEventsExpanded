@@ -2505,6 +2505,10 @@ country_event = {
 			factor = 0
 		}
 
+		add_opinion = {
+			who = BOH
+			modifier = fee_bran_conceeded_territory
+		}
 		reverse_add_opinion = {
 			who = BOH
 			modifier = fee_bran_conceeded_territory
