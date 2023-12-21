@@ -14,10 +14,7 @@ country_event = {
 	is_triggered_only = yes # from bi-yearly on action
 
 	trigger = {
-		any_owned_province = {
-			is_capital_of = ROOT
-			has_province_modifier = fee_diseases_small_bubonic_outbreak
-		}
+		capital_scope = { has_province_modifier = fee_diseases_small_bubonic_outbreak }
 		has_heir = yes
 		NOT = { has_heir_flag = fee_diseases_plague_blood_ties }
 	}
@@ -63,10 +60,7 @@ country_event = {
 	is_triggered_only = yes # from bi-yearly on action
 
 	trigger = {
-		any_owned_province = {
-			is_capital_of = ROOT
-			has_province_modifier = fee_diseases_small_bubonic_outbreak
-		}
+		capital_scope = { has_province_modifier = fee_diseases_small_bubonic_outbreak }
 		has_consort = yes
 		NOT = { has_consort_flag = fee_diseases_bubonic_consort_killed }
 	}
@@ -112,11 +106,8 @@ country_event = {
 	is_triggered_only = yes # from bi-yearly on action
 
 	trigger = {
-		any_owned_province = {
-			is_capital_of = ROOT
-			has_province_modifier = fee_diseases_small_bubonic_outbreak
-		}
-		has_ruler = yes
+		capital_scope = { has_province_modifier = fee_diseases_small_bubonic_outbreak }
+		has_regency = no
 		NOT = { has_ruler_flag = fee_diseases_bubonic_ruler_killed }
 	}
 
@@ -165,13 +156,13 @@ province_event = {
 
 	trigger = {
 		has_province_modifier = fee_diseases_small_bubonic_outbreak
+		any_neighbor_province = {
+			NOT = { has_province_modifier = fee_diseases_damaged_goods }
+		}
 		NOT = {
 			owner = {
 				any_owned_province = { has_province_modifier = fee_diseases_damaged_goods }
 			}
-		}
-		any_neighbor_province = {
-			NOT = { has_province_modifier = fee_diseases_small_bubonic_outbreak }
 		}
 	}
 
@@ -302,16 +293,13 @@ country_event = {
 	desc = FEE_Diseases_Events.10.D
 	picture = PLAGUE_eventPicture
 
+	is_triggered_only = yes # on_yearly_pulse_5
 	fire_only_once = yes
 
 	trigger = {
 		is_year = 1448
 		NOT = { is_year = 1452 }
 		owns = 104
-	}
-
-	mean_time_to_happen = {
-		days = 180
 	}
 
 	goto = 104
@@ -376,20 +364,13 @@ country_event = {
 	desc = FEE_Diseases_Events.11.D
 	picture = PLAGUE_eventPicture
 
+	is_triggered_only = yes # on_yearly_pulse_5
 	fire_only_once = yes
 
 	trigger = {
 		is_year = 1450
 		NOT = { is_year = 1452 }
 		owns = 104
-	}
-
-	mean_time_to_happen = {
-		days = 180
-		modifier = {
-			factor = 2
-			has_country_flag = has_competent_doctors
-		}
 	}
 
 	goto = 104
@@ -528,7 +509,7 @@ province_event = {
 	desc = FEE_Diseases_Events.14.D
 	picture = PLAGUE_eventPicture
 
-    is_triggered_only = yes
+	is_triggered_only = yes
 	fire_only_once = yes
 
 	goto = ROOT
@@ -548,19 +529,22 @@ province_event = {
 			factor = 75
 		}
 
-        remove_province_modifier = fee_diseases_small_bubonic_outbreak
+		custom_tooltip = FEE_DISEASES_BUBONIC_PLAGUE_END_EPIDEMIA_MAGNA_TT
+		remove_province_modifier = fee_diseases_small_bubonic_outbreak
 		add_permanent_province_modifier = {
 			name = fee_diseases_small_bubonic_recovery
 			duration = 3650
 		}
-        every_neighbor_province = {
-			limit = { has_province_modifier = fee_diseases_small_bubonic_outbreak }
-			remove_province_modifier = fee_diseases_small_bubonic_outbreak
-			add_permanent_province_modifier = {
-				name = fee_diseases_small_bubonic_recovery
-				duration = 3650
+		hidden_effect = {
+			every_neighbor_province = {
+				limit = { has_province_modifier = fee_diseases_small_bubonic_outbreak }
+				remove_province_modifier = fee_diseases_small_bubonic_outbreak
+				add_permanent_province_modifier = {
+					name = fee_diseases_small_bubonic_recovery
+					duration = 3650
+				}
 			}
-        }
+		}
 	}
 
 	after = {
@@ -623,6 +607,7 @@ country_event = {
 	}
 	picture = PLAGUE_eventPicture
 
+	is_triggered_only = yes
 	fire_only_once = yes
 
 	trigger = {
@@ -642,10 +627,6 @@ country_event = {
 				}
 			}
 		}
-	}
-
-	mean_time_to_happen = {
-		years = 1
 	}
 
 	goto = 121
