@@ -2055,44 +2055,44 @@ country_event = {
 #########	On the Ottoman Invasion	#########
 
 # The Turkish threat
-country_event = {
-	id = FEE_Naples_Events.31
-	title = FEE_Naples_Events.31.T
-	desc = FEE_Naples_Events.31.D
-	picture = SHIP_SAILING_eventPicture
+# country_event = {
+# 	id = FEE_Naples_Events.31
+# 	title = FEE_Naples_Events.31.T
+# 	desc = FEE_Naples_Events.31.D
+# 	picture = SHIP_SAILING_eventPicture
 
-	fire_only_once = yes
+# 	fire_only_once = yes
 
-	trigger = {
-		owns = 122
-		1310 = {
-			any_neighbor_province = {
-				owned_by = TUR
-			}
-		}
-	}
+# 	trigger = {
+# 		owns = 122
+# 		1310 = {
+# 			any_neighbor_province = {
+# 				owned_by = TUR
+# 			}
+# 		}
+# 	}
 
-	option = {
-		name = FEE_Naples_Events.31.OPT1
-		ai_chance = {
-			factor = 75
-		}
+# 	option = {
+# 		name = FEE_Naples_Events.31.OPT1
+# 		ai_chance = {
+# 			factor = 75
+# 		}
 
-		add_years_of_income = -0.25
-		122 = {
-			add_base_manpower = 2
-		}
-	}
+# 		add_years_of_income = -0.25
+# 		122 = {
+# 			add_base_manpower = 2
+# 		}
+# 	}
 
-	option = {
-		name = FEE_Naples_Events.31.OPT2
-		ai_chance = {
-			factor = 25
-		}
+# 	option = {
+# 		name = FEE_Naples_Events.31.OPT2
+# 		ai_chance = {
+# 			factor = 25
+# 		}
 
 		
-	}
-}
+# 	}
+# }
 
 #Dream of Ladislao I
 country_event = {
