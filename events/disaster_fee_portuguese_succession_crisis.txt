@@ -178,7 +178,7 @@ country_event = {
 		name = disaster_fee_portuguese_succession_crisis.2.OPT1
 
 		add_prestige_or_monarch_power = { amount = 20 }
-		add_legitimacy = 20
+		add_legitimacy_equivalent = { amount = 20 republican_tradition = 10 }
 		add_country_modifier = {
 			name = fee_portuguese_succession_crisis_resolved
 			duration = 18250
@@ -332,7 +332,7 @@ country_event = {
 	option = {
 		name = disaster_fee_portuguese_succession_crisis.5.OPT2
 
-		add_legitimacy = -20
+		add_legitimacy_equivalent = { amount = -20 republican_tradition = -10 }
 	}
 }
 
@@ -430,7 +430,7 @@ country_event = {
 	option = {
 		name = disaster_fee_portuguese_succession_crisis.8.OPT1
 
-		add_legitimacy = -15
+		add_legitimacy_equivalent = { amount = -15 republican_tradition = -7 }
 		add_ruler_modifier = {
 			name = fee_portuguese_succession_crisis_chaste_king
 			duration = -1

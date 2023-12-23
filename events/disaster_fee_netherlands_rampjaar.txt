@@ -168,7 +168,7 @@ country_event = {
 			}
 		}
 		else = {
-			add_legitimacy = -30
+			add_legitimacy_equivalent = { amount = -30 republican_tradition = -15 }
 			define_ruler = {
 				name = "Willem"
 				dynasty = "van Oranje"

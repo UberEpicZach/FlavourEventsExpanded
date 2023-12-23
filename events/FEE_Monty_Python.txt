@@ -10,7 +10,7 @@ country_event = {
 	picture = WESTERNISATION_eventPicture
 
 	trigger = {
-		has_global_flag = FEE_Meme_Active
+		has_global_flag = fee_meme_active
 		NOT = { is_year = 1550 }
 		NOT = { legitimacy = 40 }
 		is_female = yes

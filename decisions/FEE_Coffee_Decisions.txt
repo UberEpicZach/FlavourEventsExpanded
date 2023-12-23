@@ -1,0 +1,1068 @@
+country_decisions = {
+	fee_import_coffee_seeds_decision = {
+		potential = {
+			NOT = { has_global_flag = fee_imported_coffee_seeds }
+			has_global_flag = fee_coffee_plant_smuggled_into_italy
+			OR = {
+				naples_area = {
+					owned_by = ROOT
+				}
+				apulia_area = {
+					owned_by = ROOT
+				}
+				western_sicily_area = {
+					owned_by = ROOT
+				}
+				sicily_area = {
+					owned_by = ROOT
+					NOT = { province_id = 126 }
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					OR = {
+						area = naples_area
+						area = apulia_area
+						area = western_sicily_area
+						AND = {
+							area = sicily_area
+							NOT = { province_id = 126 }
+						}
+					}
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+				}
+				AND = {
+					OR = {
+						province_id = 2983
+						province_id = 1934
+						province_id = 2984
+						province_id = 123
+						province_id = 121
+						province_id = 124
+						province_id = 125
+						province_id = 4736
+						province_id = 4737
+						province_id = 2982
+						province_id = 4734
+						province_id = 4733
+					}
+					OR = {
+						AND = {
+							has_dlc = "Leviathan"
+							NOT = { num_of_times_expanded_infrastructure = 1 }
+						}
+						AND = {
+							NOT = { has_dlc = "Leviathan" }
+							NOT = { development = 20 }
+						}
+					}
+				}
+			}
+		}
+		allow = {
+			capital_scope = {
+				region = italy_region
+			}
+			if = {
+				limit = {
+					coffee = 1
+				}
+				treasury = 1000
+			}
+			else_if = {
+				limit = {
+					OR = {
+						any_subject_country = {
+							is_colonial_nation = yes
+							coffee = 1
+						}
+						any_ally = {
+							any_subject_country = {
+								is_colonial_nation = yes
+								coffee = 1
+							}
+						}
+					}
+				}
+				treasury = 2000
+			}
+			else_if = {
+				limit = {
+					any_ally = {
+						is_colonial_nation = yes
+						coffee = 1
+					}
+				}
+				treasury = 3000
+			}
+			else = {
+				treasury = 4000
+			}
+			naples_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			apulia_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			western_sicily_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			sicily_area = {
+				type = all
+				OR = {
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+					province_id = 126
+				}
+			}
+			if = {
+				limit = {
+					has_dlc = "Leviathan"
+				}
+				custom_trigger_tooltip = {
+					tooltip = fee_import_coffee_seeds_decision_trigger_tt_1
+					2983 = {
+						num_of_times_expanded_infrastructure = 1
+					}
+					1934 = {
+						num_of_times_expanded_infrastructure = 1
+					}
+					2984 = {
+						num_of_times_expanded_infrastructure = 1
+					}
+					123 = {
+						num_of_times_expanded_infrastructure = 1
+					}
+					121 = {
+						num_of_times_expanded_infrastructure = 1
+					}
+					124 = {
+						num_of_times_expanded_infrastructure = 1
+					}
+					125 = {
+						num_of_times_expanded_infrastructure = 1
+					}
+					4736 = {
+						num_of_times_expanded_infrastructure = 1
+					}
+					4737 = {
+						num_of_times_expanded_infrastructure = 1
+					}
+					2982 = {
+						num_of_times_expanded_infrastructure = 1
+					}
+					4734 = {
+						num_of_times_expanded_infrastructure = 1
+					}
+					4733 = {
+						num_of_times_expanded_infrastructure = 1
+					}
+				}
+			}
+			else = {
+				custom_trigger_tooltip = {
+					tooltip = fee_import_coffee_seeds_decision_trigger_tt_2
+					2983 = {
+						development = 20
+					}
+					1934 = {
+						development = 20
+					}
+					2984 = {
+						development = 20
+					}
+					123 = {
+						development = 20
+					}
+					121 = {
+						development = 20
+					}
+					124 = {
+						development = 20
+					}
+					125 = {
+						development = 20
+					}
+					4736 = {
+						development = 20
+					}
+					4737 = {
+						development = 20
+					}
+					2982 = {
+						development = 20
+					}
+					4734 = {
+						development = 20
+					}
+					4733 = {
+						development = 20
+					}
+				}
+			}
+		}
+		effect = {
+			set_global_flag = fee_imported_coffee_seeds
+			if = {
+				limit = {
+					coffee = 1
+				}
+				add_treasury = -1000
+			}
+			else_if = {
+				limit = {
+					OR = {
+						any_subject_country = {
+							is_colonial_nation = yes
+							coffee = 1
+						}
+						any_ally = {
+							any_subject_country = {
+								is_colonial_nation = yes
+								coffee = 1
+							}
+						}
+					}
+				}
+				add_treasury = -2000
+			}
+			else_if = {
+				limit = {
+					any_ally = {
+						is_colonial_nation = yes
+						coffee = 1
+					}
+				}
+				add_treasury = -3000
+			}
+			else = {
+				add_treasury = -4000
+			}
+			random_owned_province = {
+				limit = {
+					OR = {
+						province_id = 2983
+						province_id = 1934
+						province_id = 2984
+						province_id = 123
+						province_id = 121
+						province_id = 124
+						province_id = 125
+						province_id = 4736
+						province_id = 4737
+						province_id = 2982
+						province_id = 4734
+						province_id = 4733
+					}
+				}
+				change_trade_goods = coffee
+				add_base_production = 3
+				add_province_modifier = {
+					name = fee_coffee_first_italian_coffee_plantation_modifier
+					duration = 5475
+				}
+				random = {
+					chance = 25
+					add_province_modifier = {
+						name = fee_coffee_failing_coffee_plantation_modifier
+						duration = 5475
+					}
+					add_province_modifier = {
+						name = fee_coffee_catastrophical_monoculture_failure_modifier
+						duration = -1
+						desc = fee_coffee_catastrophical_monoculture_failure_modifier_duration_tt
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+	fee_expand_coffee_cultivation_decision = {
+		potential = {
+			has_global_flag = fee_imported_coffee_seeds
+			OR = {
+				naples_area = {
+					owned_by = ROOT
+				}
+				apulia_area = {
+					owned_by = ROOT
+				}
+				western_sicily_area = {
+					owned_by = ROOT
+				}
+				sicily_area = {
+					owned_by = ROOT
+					NOT = { province_id = 126 }
+				}
+			}
+			OR = {
+				2983 = {
+					NOT = { trade_goods = coffee }
+				}
+				1934 = {
+					NOT = { trade_goods = coffee }
+				}
+				2984 = {
+					NOT = { trade_goods = coffee }
+				}
+				123 = {
+					NOT = { trade_goods = coffee }
+				}
+				121 = {
+					NOT = { trade_goods = coffee }
+				}
+				124 = {
+					NOT = { trade_goods = coffee }
+				}
+				125 = {
+					NOT = { trade_goods = coffee }
+				}
+				4736 = {
+					NOT = { trade_goods = coffee }
+				}
+				4737 = {
+					NOT = { trade_goods = coffee }
+				}
+				2982 = {
+					NOT = { trade_goods = coffee }
+				}
+				4734 = {
+					NOT = { trade_goods = coffee }
+				}
+				4733 = {
+					NOT = { trade_goods = coffee }
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					OR = {
+						area = naples_area
+						area = apulia_area
+						area = western_sicily_area
+						AND = {
+							area = sicily_area
+							NOT = { province_id = 126 }
+						}
+					}
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+				}
+				AND = {
+					OR = {
+						province_id = 2983
+						province_id = 1934
+						province_id = 2984
+						province_id = 123
+						province_id = 121
+						province_id = 124
+						province_id = 125
+						province_id = 4736
+						province_id = 4737
+						province_id = 2982
+						province_id = 4734
+						province_id = 4733
+					}
+					OR = {
+						has_province_modifier = fee_coffee_first_italian_coffee_plantation_modifier
+						has_province_modifier = fee_coffee_po_valley_coffee_growth_modifier
+					}
+				}
+			}
+		}
+		allow = {
+			capital_scope = {
+				region = italy_region
+			}
+			if = {
+				limit = {
+					num_of_owned_provinces_with = {
+						value = 9
+						OR = {
+							province_id = 2983
+							province_id = 1934
+							province_id = 2984
+							province_id = 123
+							province_id = 121
+							province_id = 124
+							province_id = 125
+							province_id = 4736
+							province_id = 4737
+							province_id = 2982
+							province_id = 4734
+							province_id = 4733
+						}
+						trade_goods = coffee
+					}
+				}
+				treasury = 1500
+			}
+			else_if = {
+				limit = {
+					num_of_owned_provinces_with = {
+						value = 8
+						OR = {
+							province_id = 2983
+							province_id = 1934
+							province_id = 2984
+							province_id = 123
+							province_id = 121
+							province_id = 124
+							province_id = 125
+							province_id = 4736
+							province_id = 4737
+							province_id = 2982
+							province_id = 4734
+							province_id = 4733
+						}
+						trade_goods = coffee
+					}
+				}
+				treasury = 1400
+			}
+			else_if = {
+				limit = {
+					num_of_owned_provinces_with = {
+						value = 7
+						OR = {
+							province_id = 2983
+							province_id = 1934
+							province_id = 2984
+							province_id = 123
+							province_id = 121
+							province_id = 124
+							province_id = 125
+							province_id = 4736
+							province_id = 4737
+							province_id = 2982
+							province_id = 4734
+							province_id = 4733
+						}
+						trade_goods = coffee
+					}
+				}
+				treasury = 1300
+			}
+			else_if = {
+				limit = {
+					num_of_owned_provinces_with = {
+						value = 6
+						OR = {
+							province_id = 2983
+							province_id = 1934
+							province_id = 2984
+							province_id = 123
+							province_id = 121
+							province_id = 124
+							province_id = 125
+							province_id = 4736
+							province_id = 4737
+							province_id = 2982
+							province_id = 4734
+							province_id = 4733
+						}
+						trade_goods = coffee
+					}
+				}
+				treasury = 1200
+			}
+			else_if = {
+				limit = {
+					num_of_owned_provinces_with = {
+						value = 5
+						OR = {
+							province_id = 2983
+							province_id = 1934
+							province_id = 2984
+							province_id = 123
+							province_id = 121
+							province_id = 124
+							province_id = 125
+							province_id = 4736
+							province_id = 4737
+							province_id = 2982
+							province_id = 4734
+							province_id = 4733
+						}
+						trade_goods = coffee
+					}
+				}
+				treasury = 1100
+			}
+			else_if = {
+				limit = {
+					num_of_owned_provinces_with = {
+						value = 4
+						OR = {
+							province_id = 2983
+							province_id = 1934
+							province_id = 2984
+							province_id = 123
+							province_id = 121
+							province_id = 124
+							province_id = 125
+							province_id = 4736
+							province_id = 4737
+							province_id = 2982
+							province_id = 4734
+							province_id = 4733
+						}
+						trade_goods = coffee
+					}
+				}
+				treasury = 1000
+			}
+			else_if = {
+				limit = {
+					num_of_owned_provinces_with = {
+						value = 3
+						OR = {
+							province_id = 2983
+							province_id = 1934
+							province_id = 2984
+							province_id = 123
+							province_id = 121
+							province_id = 124
+							province_id = 125
+							province_id = 4736
+							province_id = 4737
+							province_id = 2982
+							province_id = 4734
+							province_id = 4733
+						}
+						trade_goods = coffee
+					}
+				}
+				treasury = 900
+			}
+			else_if = {
+				limit = {
+					num_of_owned_provinces_with = {
+						value = 2
+						OR = {
+							province_id = 2983
+							province_id = 1934
+							province_id = 2984
+							province_id = 123
+							province_id = 121
+							province_id = 124
+							province_id = 125
+							province_id = 4736
+							province_id = 4737
+							province_id = 2982
+							province_id = 4734
+							province_id = 4733
+						}
+						trade_goods = coffee
+					}
+				}
+				treasury = 800
+			}
+			else = {
+				treasury = 700
+			}
+			custom_trigger_tooltip = {
+				tooltip = fee_expand_coffee_cultivation_decision_trigger_tt
+				2983 = {
+					NOT = { has_province_modifier = fee_coffee_first_italian_coffee_plantation_modifier }
+					NOT = { has_province_modifier = fee_coffee_po_valley_coffee_growth_modifier }
+				}
+				1934 = {
+					NOT = { has_province_modifier = fee_coffee_first_italian_coffee_plantation_modifier }
+					NOT = { has_province_modifier = fee_coffee_po_valley_coffee_growth_modifier }
+				}
+				2984 = {
+					NOT = { has_province_modifier = fee_coffee_first_italian_coffee_plantation_modifier }
+					NOT = { has_province_modifier = fee_coffee_po_valley_coffee_growth_modifier }
+				}
+				123 = {
+					NOT = { has_province_modifier = fee_coffee_first_italian_coffee_plantation_modifier }
+					NOT = { has_province_modifier = fee_coffee_po_valley_coffee_growth_modifier }
+				}
+				121 = {
+					NOT = { has_province_modifier = fee_coffee_first_italian_coffee_plantation_modifier }
+					NOT = { has_province_modifier = fee_coffee_po_valley_coffee_growth_modifier }
+				}
+				124 = {
+					NOT = { has_province_modifier = fee_coffee_first_italian_coffee_plantation_modifier }
+					NOT = { has_province_modifier = fee_coffee_po_valley_coffee_growth_modifier }
+				}
+				125 = {
+					NOT = { has_province_modifier = fee_coffee_first_italian_coffee_plantation_modifier }
+					NOT = { has_province_modifier = fee_coffee_po_valley_coffee_growth_modifier }
+				}
+				4736 = {
+					NOT = { has_province_modifier = fee_coffee_first_italian_coffee_plantation_modifier }
+					NOT = { has_province_modifier = fee_coffee_po_valley_coffee_growth_modifier }
+				}
+				4737 = {
+					NOT = { has_province_modifier = fee_coffee_first_italian_coffee_plantation_modifier }
+					NOT = { has_province_modifier = fee_coffee_po_valley_coffee_growth_modifier }
+				}
+				2982 = {
+					NOT = { has_province_modifier = fee_coffee_first_italian_coffee_plantation_modifier }
+					NOT = { has_province_modifier = fee_coffee_po_valley_coffee_growth_modifier }
+				}
+				4734 = {
+					NOT = { has_province_modifier = fee_coffee_first_italian_coffee_plantation_modifier }
+					NOT = { has_province_modifier = fee_coffee_po_valley_coffee_growth_modifier }
+				}
+				4733 = {
+					NOT = { has_province_modifier = fee_coffee_first_italian_coffee_plantation_modifier }
+					NOT = { has_province_modifier = fee_coffee_po_valley_coffee_growth_modifier }
+				}
+			}
+			naples_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			apulia_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			western_sicily_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			sicily_area = {
+				type = all
+				OR = {
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+					province_id = 126
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					num_of_owned_provinces_with = {
+						value = 9
+						OR = {
+							province_id = 2983
+							province_id = 1934
+							province_id = 2984
+							province_id = 123
+							province_id = 121
+							province_id = 124
+							province_id = 125
+							province_id = 4736
+							province_id = 4737
+							province_id = 2982
+							province_id = 4734
+							province_id = 4733
+						}
+						trade_goods = coffee
+					}
+				}
+				add_treasury = -1500
+			}
+			else_if = {
+				limit = {
+					num_of_owned_provinces_with = {
+						value = 8
+						OR = {
+							province_id = 2983
+							province_id = 1934
+							province_id = 2984
+							province_id = 123
+							province_id = 121
+							province_id = 124
+							province_id = 125
+							province_id = 4736
+							province_id = 4737
+							province_id = 2982
+							province_id = 4734
+							province_id = 4733
+						}
+						trade_goods = coffee
+					}
+				}
+				add_treasury = -1400
+			}
+			else_if = {
+				limit = {
+					num_of_owned_provinces_with = {
+						value = 7
+						OR = {
+							province_id = 2983
+							province_id = 1934
+							province_id = 2984
+							province_id = 123
+							province_id = 121
+							province_id = 124
+							province_id = 125
+							province_id = 4736
+							province_id = 4737
+							province_id = 2982
+							province_id = 4734
+							province_id = 4733
+						}
+						trade_goods = coffee
+					}
+				}
+				add_treasury = -1300
+			}
+			else_if = {
+				limit = {
+					num_of_owned_provinces_with = {
+						value = 6
+						OR = {
+							province_id = 2983
+							province_id = 1934
+							province_id = 2984
+							province_id = 123
+							province_id = 121
+							province_id = 124
+							province_id = 125
+							province_id = 4736
+							province_id = 4737
+							province_id = 2982
+							province_id = 4734
+							province_id = 4733
+						}
+						trade_goods = coffee
+					}
+				}
+				add_treasury = -1200
+			}
+			else_if = {
+				limit = {
+					num_of_owned_provinces_with = {
+						value = 5
+						OR = {
+							province_id = 2983
+							province_id = 1934
+							province_id = 2984
+							province_id = 123
+							province_id = 121
+							province_id = 124
+							province_id = 125
+							province_id = 4736
+							province_id = 4737
+							province_id = 2982
+							province_id = 4734
+							province_id = 4733
+						}
+						trade_goods = coffee
+					}
+				}
+				add_treasury = -1100
+			}
+			else_if = {
+				limit = {
+					num_of_owned_provinces_with = {
+						value = 4
+						OR = {
+							province_id = 2983
+							province_id = 1934
+							province_id = 2984
+							province_id = 123
+							province_id = 121
+							province_id = 124
+							province_id = 125
+							province_id = 4736
+							province_id = 4737
+							province_id = 2982
+							province_id = 4734
+							province_id = 4733
+						}
+						trade_goods = coffee
+					}
+				}
+				add_treasury = -1000
+			}
+			else_if = {
+				limit = {
+					num_of_owned_provinces_with = {
+						value = 3
+						OR = {
+							province_id = 2983
+							province_id = 1934
+							province_id = 2984
+							province_id = 123
+							province_id = 121
+							province_id = 124
+							province_id = 125
+							province_id = 4736
+							province_id = 4737
+							province_id = 2982
+							province_id = 4734
+							province_id = 4733
+						}
+						trade_goods = coffee
+					}
+				}
+				add_treasury = -900
+			}
+			else_if = {
+				limit = {
+					num_of_owned_provinces_with = {
+						value = 2
+						OR = {
+							province_id = 2983
+							province_id = 1934
+							province_id = 2984
+							province_id = 123
+							province_id = 121
+							province_id = 124
+							province_id = 125
+							province_id = 4736
+							province_id = 4737
+							province_id = 2982
+							province_id = 4734
+							province_id = 4733
+						}
+						trade_goods = coffee
+					}
+				}
+				add_treasury = -800
+			}
+			else = {
+				add_treasury = -700
+			}
+			random_owned_province = {
+				limit = {
+					OR = {
+						province_id = 2983
+						province_id = 1934
+						province_id = 2984
+						province_id = 123
+						province_id = 121
+						province_id = 124
+						province_id = 125
+						province_id = 4736
+						province_id = 4737
+						province_id = 2982
+						province_id = 4734
+						province_id = 4733
+					}
+					NOT = { trade_goods = coffee }
+				}
+				change_trade_goods = coffee
+				add_base_production = 2
+				add_province_modifier = {
+					name = fee_coffee_po_valley_coffee_growth_modifier
+					duration = 5475
+				}
+			}
+		}
+	}
+
+	fee_institute_coffee_italica_decision = {
+		potential = {
+			NOT = { has_global_flag = fee_instituted_coffee_italica }
+			has_global_flag = fee_imported_coffee_seeds
+			OR = {
+				naples_area = {
+					owned_by = ROOT
+				}
+				apulia_area = {
+					owned_by = ROOT
+				}
+				western_sicily_area = {
+					owned_by = ROOT
+				}
+				sicily_area = {
+					owned_by = ROOT
+					NOT = { province_id = 126 }
+				}
+			}
+			OR = {
+				2983 = {
+					trade_goods = coffee
+				}
+				1934 = {
+					trade_goods = coffee
+				}
+				2984 = {
+					trade_goods = coffee
+				}
+				123 = {
+					trade_goods = coffee
+				}
+				121 = {
+					trade_goods = coffee
+				}
+				124 = {
+					trade_goods = coffee
+				}
+				125 = {
+					trade_goods = coffee
+				}
+				4736 = {
+					trade_goods = coffee
+				}
+				4737 = {
+					trade_goods = coffee
+				}
+				2982 = {
+					trade_goods = coffee
+				}
+				4734 = {
+					trade_goods = coffee
+				}
+				4733 = {
+					trade_goods = coffee
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					OR = {
+						area = naples_area
+						area = apulia_area
+						area = western_sicily_area
+						AND = {
+							area = sicily_area
+							NOT = { province_id = 126 }
+						}
+					}
+					OR = {
+						NOT = { owned_by = ROOT }
+						NOT = { is_core = ROOT }
+					}
+				}
+				AND = {
+					OR = {
+						province_id = 2983
+						province_id = 1934
+						province_id = 2984
+						province_id = 123
+						province_id = 121
+						province_id = 124
+						province_id = 125
+						province_id = 4736
+						province_id = 4737
+						province_id = 2982
+						province_id = 4734
+						province_id = 4733
+					}
+					OR = {
+						NOT = { trade_goods = coffee }
+						NOT = { has_manufactory_trigger = yes }
+					}
+				}
+			}
+		}
+		allow = {
+			natural_scientist = 3
+			capital_scope = {
+				region = italy_region
+			}
+			custom_trigger_tooltip = {
+				tooltip = fee_institute_coffee_italica_decision_trigger_tt
+				2983 = {
+					trade_goods = coffee
+					has_manufactory_trigger = yes
+				}
+				1934 = {
+					trade_goods = coffee
+					has_manufactory_trigger = yes
+				}
+				2984 = {
+					trade_goods = coffee
+					has_manufactory_trigger = yes
+				}
+				123 = {
+					trade_goods = coffee
+					has_manufactory_trigger = yes
+				}
+				121 = {
+					trade_goods = coffee
+					has_manufactory_trigger = yes
+				}
+				124 = {
+					trade_goods = coffee
+					has_manufactory_trigger = yes
+				}
+				125 = {
+					trade_goods = coffee
+					has_manufactory_trigger = yes
+				}
+				4736 = {
+					trade_goods = coffee
+					has_manufactory_trigger = yes
+				}
+				4737 = {
+					trade_goods = coffee
+					has_manufactory_trigger = yes
+				}
+				2982 = {
+					trade_goods = coffee
+					has_manufactory_trigger = yes
+				}
+				4734 = {
+					trade_goods = coffee
+					has_manufactory_trigger = yes
+				}
+				4733 = {
+					trade_goods = coffee
+					has_manufactory_trigger = yes
+				}
+			}
+			naples_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			apulia_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			western_sicily_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			sicily_area = {
+				type = all
+				OR = {
+					AND = {
+						owned_by = ROOT
+						is_core = ROOT
+					}
+					province_id = 126
+				}
+			}
+		}
+		effect = {
+			set_global_flag = fee_instituted_coffee_italica
+			country_event = { id = FEE_Coffee_Events.2 }
+			hidden_effect = {
+				every_province = {
+					limit = {
+						has_province_modifier = fee_coffee_catastrophical_monoculture_failure_modifier
+					}
+					remove_province_modifier = fee_coffee_catastrophical_monoculture_failure_modifier
+				}
+			}
+		}
+	}
+}

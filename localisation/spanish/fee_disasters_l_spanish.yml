@@ -744,19 +744,19 @@
   had_fee_netherlands_rampjaar: "Rampjaar"
 
  # Rebels
-  ita_republican_rebels_title: "Giovine Italia"
-  ita_republican_rebels_name: "Giovine Italia"
-  ita_republican_rebels_desc: "The goal of these revolutionaries is to transform Italy into a unitary democratic republic, according to the principles of freedom, independence and unity, by dismissing the governments of the previous pre-unification states."
-  ita_republican_rebels_demand: "Install a Constitutional Republic"
-  ita_republican_rebels_demand_desc: "These Republican rebels fight to overthrow the government and install a constitutional republic where the citiziens will be protected by any oppression."
-  ita_republican_rebels_army: "Armata di Giovine Italia"
+  fee_ita_republican_rebels_title: "Giovine Italia"
+  fee_ita_republican_rebels_name: "Giovine Italia"
+  fee_ita_republican_rebels_desc: "The goal of these revolutionaries is to transform Italy into a unitary democratic republic, according to the principles of freedom, independence and unity, by dismissing the governments of the previous pre-unification states."
+  fee_ita_republican_rebels_demand: "Install a Constitutional Republic"
+  fee_ita_republican_rebels_demand_desc: "These Republican rebels fight to overthrow the government and install a constitutional republic where the citiziens will be protected by any oppression."
+  fee_ita_republican_rebels_army: "Armata di Giovine Italia"
 
-  ita_monarchy_rebels_title: "Monarchici"
-  ita_monarchy_rebels_name: "Monarch Aider"
-  ita_monarchy_rebels_desc: "A republic in our land? I think not. We have dismissed so many other republic when they rose against the Viceroys, and we will defy this one as well."
-  ita_monarchy_rebels_demand: "Install a Parliamentary Monarchy"
-  ita_monarchy_rebels_demand_desc: "These Monarchy rebels fight to overthrow the government and install a parliamentary monarchy where the rule will reign supreme."
-  ita_monarchy_rebels_army: "Armata dei Monarchici"
+  fee_ita_monarchy_rebels_title: "Monarchici"
+  fee_ita_monarchy_rebels_name: "Monarch Aider"
+  fee_ita_monarchy_rebels_desc: "A republic in our land? I think not. We have dismissed so many other republic when they rose against the Viceroys, and we will defy this one as well."
+  fee_ita_monarchy_rebels_demand: "Install a Parliamentary Monarchy"
+  fee_ita_monarchy_rebels_demand_desc: "These Monarchy rebels fight to overthrow the government and install a parliamentary monarchy where the rule will reign supreme."
+  fee_ita_monarchy_rebels_army: "Armata dei Monarchici"
 
  # Estate Modifiers:
  EST_VAL_FEE_PARTITION_OF_POLAND_CONFEDERATION_OF_BAR: "Confederation of Bar: §Y$VAL$%§!"
@@ -814,5 +814,5 @@
  FEE_CRISIS_OF_THE_MUGHAL_EMPIRE_LESS_THAN_0_TOLERANCE_OF_HEATHENS_TT: "Our §YTolerance of Heathens§! is less than §Y0§!"
  FEE_CRISIS_OF_THE_MUGHAL_EMPIRE_RULER_STATS_LESS_THAN_6_TOTAL_TT: "The combined amount of the ruler skills of §Y[This.Monarch.GetName]§! is less than §Y6§!"
 
- ITA_REPUBLICAN_MATTER_TT: "In the next years Republicans in the North and Monarchist in the South of Italy will rise to try impose their view. One of them might calm down only if we decide to become either: \nAny Monarchy with a §YParliament§! \n§YConstitutional Republic§!"
- ITA_DISASTER_REPUBLICAN_TT: "One of the followign must be true:\n	§YRepublican§! or §YMonarchist§! rebels enforce their demand\n	The disaster has been going for at least §Y15 years§!"
+ FEE_ITA_REPUBLICAN_MATTER_TT: "In the next years Republicans in the North and Monarchist in the South of Italy will rise to try impose their view. One of them might calm down only if we decide to become either: \nAny Monarchy with a §YParliament§! \n§YConstitutional Republic§!"
+ FEE_ITA_DISASTER_REPUBLICAN_TT: "One of the following must be true:\n	§YRepublican§! or §YMonarchist§! rebels enforce their demand\n	The disaster has been going for at least §Y15 years§!"

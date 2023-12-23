@@ -1,0 +1,846 @@
+namespace = disaster_fee_naples_conspiracy_barons
+
+#Prima Congiura dei baroni
+country_event = {
+	id = disaster_fee_naples_conspiracy_barons.1
+	title = disaster_fee_naples_conspiracy_barons.1.T
+	desc = disaster_fee_naples_conspiracy_barons.1.D
+	picture = NOBLE_ESTATE_DEMANDS_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = fee_nap_first_barony_risen
+		}
+	}
+
+	option = {
+		name = disaster_fee_naples_conspiracy_barons.1.OPT1
+
+		add_stability = -1
+		add_estate_influence_modifier = {
+			estate = estate_nobles
+			influence = 35
+			duration = 7300
+		}
+		change_estate_land_share = {
+			estate = estate_nobles
+			share = 25
+		}
+		change_mil = -1
+		if = {
+			limit = {
+				NOT = {
+					estate_influence = {
+						estate = estate_nobles
+						influence = 65
+					}
+				}
+			}
+			random_owned_province = {
+				limit = { area = apulia_area }
+				spawn_rebels = {
+					size = 1
+					type = noble_rebels
+					friend = FRA
+				}
+			}
+			random_owned_province = {
+				limit = { area = calabria_area }
+				spawn_rebels = {
+					size = 1
+					type = noble_rebels
+					friend = FRA
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					estate_influence = {
+						estate = estate_nobles
+						influence = 75
+					}
+				}
+			}
+			random_owned_province = {
+				limit = { area = apulia_area }
+				spawn_rebels = {
+					size = 2
+					type = noble_rebels
+					friend = FRA
+				}
+			}
+			random_owned_province = {
+				limit = { area = calabria_area }
+				spawn_rebels = {
+					size = 1
+					type = noble_rebels
+					friend = FRA
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					estate_influence = {
+						estate = estate_nobles
+						influence = 85
+					}
+				}
+			}
+			random_owned_province = {
+				limit = { area = apulia_area }
+				spawn_rebels = {
+					size = 2
+					type = noble_rebels
+					friend = FRA
+				}
+			}
+			random_owned_province = {
+				limit = { area = calabria_area }
+				spawn_rebels = {
+					size = 2
+					type = noble_rebels
+					friend = FRA
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				NOT = {
+					estate_influence = {
+						estate = estate_nobles
+						influence = 95
+					}
+				}
+			}
+			random_owned_province = {
+				limit = { area = apulia_area }
+				spawn_rebels = {
+					size = 3
+					type = noble_rebels
+					friend = FRA
+				}
+			}
+			random_owned_province = {
+				limit = { area = calabria_area }
+				spawn_rebels = {
+					size = 2
+					type = noble_rebels
+					friend = FRA
+				}
+			}
+		}
+		else = {
+			random_owned_province = {
+				limit = { area = apulia_area }
+				spawn_rebels = {
+					size = 3
+					type = noble_rebels
+					friend = FRA
+				}
+			}
+			random_owned_province = {
+				limit = { area = calabria_area }
+				spawn_rebels = {
+					size = 3
+					type = noble_rebels
+					friend = FRA
+				}
+			}
+		}
+	}
+}
+
+#Prima Congiura dei baroni sedata
+country_event = {
+	id = disaster_fee_naples_conspiracy_barons.2
+	title = disaster_fee_naples_conspiracy_barons.2.T
+	desc = disaster_fee_naples_conspiracy_barons.2.D
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			italy_region = {
+				owned_by = ROOT
+				controlled_by = noble_rebels
+			}
+		}
+		NOT = { num_of_rebel_armies = 1 }
+	}
+
+	option = {
+		name = disaster_fee_naples_conspiracy_barons.2.OPT1
+
+		change_mil = 1
+		add_ruler_modifier = {
+			name = fee_disaster_naples_ruled_over_barons
+			duration = -1
+		}
+		add_country_modifier = {
+			name = fee_disaster_naples_twenty_years_prosperity
+			duration = 7300
+		}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -35
+		}
+		add_estate_influence_modifier = {
+			estate = estate_nobles
+			desc = nap_nobles_restrained
+			influence = -50
+			duration = 7300
+		}
+		change_estate_land_share = {
+			estate = estate_nobles
+			share = -33
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = FEE_Naples_Events.30
+				days = 60
+				random = 15
+			}
+		}
+	}
+}
+
+#The arrival of the Skanderberg
+country_event = {
+	id = disaster_fee_naples_conspiracy_barons.4
+	title = disaster_fee_naples_conspiracy_barons.4.T
+	desc = disaster_fee_naples_conspiracy_barons.4.D
+	picture = MILITARY_CAMP_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = disaster_fee_naples_conspiracy_barons.4.OPT1
+
+		define_general = {
+			name = "Giorgio Castriota Scanderbeg"
+			fire = 3
+			shock = 2
+			manuever = 4
+			siege = 1
+			trait = goal_oriented_personality
+		}
+		random_owned_province = {
+			limit = {
+				controlled_by = ROOT
+				has_siege = no
+			}
+			infantry = ROOT
+			infantry = ROOT
+			cavalry = ROOT
+		}
+	}
+}
+
+#Nobles Rally Support
+country_event = {
+	id = disaster_fee_naples_conspiracy_barons.5
+	title = disaster_fee_naples_conspiracy_barons.5.T
+	desc = disaster_fee_naples_conspiracy_barons.5.D
+	picture = REVOLT_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = disaster_fee_naples_conspiracy_barons.5.OPT1
+
+		random_owned_province = {
+			limit = {
+				controlled_by = noble_rebels
+				has_siege = no
+			}
+			spawn_rebels = {
+				size = 1
+				type = noble_rebels
+				friend = FRA
+			}
+		}
+	}
+}
+
+#Fall of the King
+country_event = {
+	id = disaster_fee_naples_conspiracy_barons.6
+	title = disaster_fee_naples_conspiracy_barons.6.T
+	desc = disaster_fee_naples_conspiracy_barons.6.D
+	picture = NOBLE_ESTATE_TAKE_OVER_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		capital_scope = {
+			controlled_by = noble_rebels
+		}
+	}
+
+	option = {
+		name = disaster_fee_naples_conspiracy_barons.6.OPT1
+
+		add_prestige = -20
+		add_legitimacy_equivalent = { amount = -25 republican_tradition = -13 }
+		if = {
+			limit = { has_heir = yes }
+			kill_heir = { allow_new_heir = no }
+		}
+		if = {
+			limit = { has_consort = yes }
+			kill_consort = yes
+		}
+		kill_ruler = yes
+		capital_scope = {
+			add_base_tax = -2
+			add_base_production = -2
+			add_base_manpower = -2
+		}
+		if = {
+			limit = {
+				NOT = { is_year = 1485 }
+				exists = FRA
+				FRA = { valid_for_personal_unions_trigger = yes }
+				valid_for_personal_unions_trigger = yes
+			}
+			define_ruler = {
+				name = "John"
+				dynasty = FRA
+			}
+			FRA = { create_union = NAP }
+			end_disaster = fee_naples_conspiracy_barons_1
+			end_disaster = fee_naples_conspiracy_barons_2
+		}
+	}
+}
+
+#Prima Revolta Sventata
+country_event = {
+	id = disaster_fee_naples_conspiracy_barons.9
+	title = disaster_fee_naples_conspiracy_barons.9.T
+	desc = disaster_fee_naples_conspiracy_barons.9.D
+	picture = NOBLE_ESTATE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		fee_is_was_nap_sic = yes
+		is_year = 1465
+		NOT = { has_country_flag = fee_nap_first_barony_risen }
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = disaster_fee_naples_conspiracy_barons.9.OPT1
+
+		set_country_flag = fee_nap_first_barony_skipped
+		add_stability_or_adm_power = yes
+		add_legitimacy_equivalent = { amount = 20 republican_tradition = 10 }
+		change_adm = 1
+		change_dip = 1
+		if = {
+			limit = { has_heir = yes }
+			add_heir_claim = 15
+		}
+		if = {
+			limit = { has_regency = no }
+			add_ruler_modifier = {
+				name = fee_disaster_naples_ruled_over_barons
+				duration = -1
+			}
+		}
+		add_country_modifier = {
+			name = fee_disaster_naples_twenty_years_prosperity
+			duration = 7300
+		}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 30
+		}
+		add_estate_influence_modifier = {
+			estate = estate_nobles
+			desc = nap_nobles_restrained
+			influence = -25
+			duration = 7300
+		}
+		change_estate_land_share = {
+			estate = estate_nobles
+			share = -50
+		}
+	}
+}
+
+#Second Barony Conjury
+country_event = {
+	id = disaster_fee_naples_conspiracy_barons.10
+	title = disaster_fee_naples_conspiracy_barons.10.T
+	desc = disaster_fee_naples_conspiracy_barons.10.D
+	picture = NOBLE_ESTATE_DEMANDS_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+		set_country_flag = fee_nap_second_barony_risen
+	}
+
+	option = {
+		name = disaster_fee_naples_conspiracy_barons.10.OPT1
+
+		add_stability = -2
+		add_ruler_modifier = {
+			name = fee_disaster_naples_nobles_control
+			duration = -1
+		}
+		if = {
+			limit = {
+				owns = 2983
+			}
+			2983 = {
+				if = {
+					limit = {
+						owner = {
+							NOT = {
+								estate_influence = {
+									estate = estate_nobles
+									influence = 65
+								}
+							}
+						}
+					}
+					spawn_rebels = {
+						size = 1
+						type = noble_rebels
+						friend = FRA
+					}
+					owner = {
+						random_owned_province = {
+							limit = {
+								OR = {
+									area = calabria_area
+									area = naples_area
+									area = apulia_area
+								}
+							}
+							spawn_rebels = {
+								size = 1
+								type = noble_rebels
+								friend = FRA
+							}
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						owner = {
+							NOT = {
+								estate_influence = {
+									estate = estate_nobles
+									influence = 75
+								}
+							}
+							estate_influence = {
+								estate = estate_nobles
+								influence = 65
+							}
+						}
+					}
+					spawn_rebels = {
+						size = 2
+						type = noble_rebels
+						friend = FRA
+					}
+					owner = {
+						random_owned_province = {
+							limit = {
+								OR = {
+									area = calabria_area
+									area = naples_area
+									area = apulia_area
+								}
+							}
+							spawn_rebels = {
+								size = 1
+								type = noble_rebels
+								friend = FRA
+							}
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						owner = {
+							NOT = {
+								estate_influence = {
+									estate = estate_nobles
+									influence = 85
+								}
+							}
+							estate_influence = {
+								estate = estate_nobles
+								influence = 75
+							}
+						}
+					}
+					spawn_rebels = {
+						size = 2
+						type = noble_rebels
+						friend = FRA
+					}
+					owner = {
+						random_owned_province = {
+							limit = {
+								OR = {
+									area = calabria_area
+									area = naples_area
+									area = apulia_area
+								}
+							}
+							spawn_rebels = {
+								size = 2
+								type = noble_rebels
+								friend = FRA
+							}
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						owner = {
+							NOT = {
+								estate_influence = {
+									estate = estate_nobles
+									influence = 95
+								}
+							}
+							estate_influence = {
+								estate = estate_nobles
+								influence = 85
+							}
+						}
+					}
+					spawn_rebels = {
+						size = 3
+						type = noble_rebels
+						friend = FRA
+					}
+					owner = {
+						random_owned_province = {
+							limit = {
+								OR = {
+									area = calabria_area
+									area = naples_area
+									area = apulia_area
+								}
+							}
+							spawn_rebels = {
+								size = 2
+								type = noble_rebels
+								friend = FRA
+							}
+						}
+					}
+				}
+				else = {
+					spawn_rebels = {
+						size = 3
+						type = noble_rebels
+						friend = FRA
+					}
+					owner = {
+						random_owned_province = {
+							limit = {
+								OR = {
+									area = calabria_area
+									area = naples_area
+									area = apulia_area
+								}
+							}
+							spawn_rebels = {
+								size = 3
+								type = noble_rebels
+								friend = FRA
+							}
+						}
+					}
+				}
+			}
+		}
+		else = {
+			if = {
+				limit = {
+					NOT = {
+						estate_influence = {
+							estate = estate_nobles
+							influence = 65
+						}
+					}
+				}
+				random_owned_province = {
+					limit = {
+						OR = {
+							area = calabria_area
+							area = naples_area
+							area = apulia_area
+						}
+					}
+					spawn_rebels = {
+						size = 1
+						type = noble_rebels
+						friend = FRA
+					}
+				}
+				random_owned_province = {
+					limit = {
+						OR = {
+							area = calabria_area
+							area = naples_area
+							area = apulia_area
+						}
+					}
+					spawn_rebels = {
+						size = 1
+						type = noble_rebels
+						friend = FRA
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						estate_influence = {
+							estate = estate_nobles
+							influence = 75
+						}
+					}
+					estate_influence = {
+						estate = estate_nobles
+						influence = 65
+					}
+				}
+				random_owned_province = {
+					limit = {
+						OR = {
+							area = calabria_area
+							area = naples_area
+							area = apulia_area
+						}
+					}
+					spawn_rebels = {
+						size = 2
+						type = noble_rebels
+						friend = FRA
+					}
+				}
+				random_owned_province = {
+					limit = {
+						OR = {
+							area = calabria_area
+							area = naples_area
+							area = apulia_area
+						}
+					}
+					spawn_rebels = {
+						size = 1
+						type = noble_rebels
+						friend = FRA
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						estate_influence = {
+							estate = estate_nobles
+							influence = 85
+						}
+					}
+					estate_influence = {
+						estate = estate_nobles
+						influence = 75
+					}
+				}
+				random_owned_province = {
+					limit = {
+						OR = {
+							area = calabria_area
+							area = naples_area
+							area = apulia_area
+						}
+					}
+					spawn_rebels = {
+						size = 2
+						type = noble_rebels
+						friend = FRA
+					}
+				}
+				random_owned_province = {
+					limit = {
+						OR = {
+							area = calabria_area
+							area = naples_area
+							area = apulia_area
+						}
+					}
+					spawn_rebels = {
+						size = 2
+						type = noble_rebels
+						friend = FRA
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						estate_influence = {
+							estate = estate_nobles
+							influence = 95
+						}
+					}
+					estate_influence = {
+						estate = estate_nobles
+						influence = 85
+					}
+				}
+				random_owned_province = {
+					limit = {
+						OR = {
+							area = calabria_area
+							area = naples_area
+							area = apulia_area
+						}
+					}
+					spawn_rebels = {
+						size = 3
+						type = noble_rebels
+						friend = FRA
+					}
+				}
+				random_owned_province = {
+					limit = {
+						OR = {
+							area = calabria_area
+							area = naples_area
+							area = apulia_area
+						}
+					}
+					spawn_rebels = {
+						size = 2
+						type = noble_rebels
+						friend = FRA
+					}
+				}
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						OR = {
+							area = calabria_area
+							area = naples_area
+							area = apulia_area
+						}
+					}
+					spawn_rebels = {
+						size = 3
+						type = noble_rebels
+						friend = FRA
+					}
+				}
+				random_owned_province = {
+					limit = {
+						OR = {
+							area = calabria_area
+							area = naples_area
+							area = apulia_area
+						}
+					}
+					spawn_rebels = {
+						size = 3
+						type = noble_rebels
+						friend = FRA
+					}
+				}
+			}
+		}
+	}
+}
+
+######### Second Baronial Revolt #########
+######### Second Baronial Revolt #########
+######### Second Baronial Revolt #########
+
+#The Barons have been defeated
+country_event = {
+	id = disaster_fee_naples_conspiracy_barons.11
+	title = disaster_fee_naples_conspiracy_barons.11.T
+	desc = disaster_fee_naples_conspiracy_barons.11.D
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = disaster_fee_naples_conspiracy_barons.11.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
+		add_prestige_or_monarch_power = { amount = 50 }
+		add_stability_or_adm_power = yes
+		change_estate_land_share = {
+			estate = estate_nobles
+			share = -100
+		}
+		remove_country_modifier = fee_disaster_naples_nobles_control
+	}
+}
+
+#Second Conjury evaded
+country_event = {
+	id = disaster_fee_naples_conspiracy_barons.19
+	title = disaster_fee_naples_conspiracy_barons.19.T
+	desc = disaster_fee_naples_conspiracy_barons.19.D
+	picture = NOBLE_ESTATE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		fee_is_was_nap_sic = yes
+		is_year = 1487
+		NOT = { has_country_flag = fee_nap_second_barony_risen }
+	}
+
+	mean_time_to_happen = {
+		days = 60
+	}
+
+	option = {
+		name = disaster_fee_naples_conspiracy_barons.19.OPT1
+
+		add_stability_or_adm_power = yes
+		set_country_flag = fee_nap_second_barony_skipped
+		change_adm = 1
+		change_dip = 1
+		add_prestige_or_monarch_power = { amount = 50 }
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = -35
+		}
+		add_ruler_modifier = {
+			name = fee_disaster_naples_ruled_over_barons
+			duration = -1
+		}
+		remove_country_modifier = fee_disaster_naples_nobles_control
+	}
+}

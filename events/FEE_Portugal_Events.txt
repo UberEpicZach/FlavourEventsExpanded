@@ -186,7 +186,6 @@ country_event = {
 			religion = catholic
 			cost_multiplier = 0.25
 		}
-		hidden_effect = { country_event = {	id = FEE_Portugal_Events.100 } }
 	}
 
 	option = {
@@ -1605,7 +1604,7 @@ country_event = {
 			factor = 33
 		}
 
-		add_stability = 1
+		add_stability_or_adm_power_per_stab = { amount = 1 }
 		change_religious_influence_equivalent_fee = { remove = 10 }
 		add_country_modifier = {
 			name = fee_por_rejected_jesuits

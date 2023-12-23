@@ -189,8 +189,8 @@ country_event = {
 	option = {
 		name = FEE_Poland_Events.10.OPT1 # Enact
 
-		add_stability = 1
-		add_mercantilism = 0.025
+		add_stability_or_adm_power_per_stab = { amount = 1 }
+		add_mercantilism_or_monarch_power = { amount = 2 }
 		add_country_modifier = {
 			name = fee_pol_statut_piotrkowski
 			duration = -1
@@ -562,7 +562,7 @@ country_event = {
 		name = FEE_Poland_Events.17.OPT1 # Enact
 
 		add_stability_or_adm_power = yes
-		add_mercantilism = 3
+		add_mercantilism_or_monarch_power = { amount = 3 }
 		add_country_modifier = {
 			name = fee_pol_przywilej_torunski
 			duration = -1

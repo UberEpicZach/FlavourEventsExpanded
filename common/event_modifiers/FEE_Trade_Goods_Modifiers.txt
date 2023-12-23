@@ -1,0 +1,73 @@
+# Cocoa
+fee_trade_goods_cocoa_trade = {
+	local_unrest = -2
+	province_trade_power_value = 25
+}
+
+# Tobacco
+fee_trade_goods_declining_cloth_industry = {
+	local_development_cost = 0.15
+	province_trade_power_modifier = 0.25
+	trade_goods_size_modifier = -0.10
+}
+
+# Weapon
+fee_trade_goods_stifled_new_industry = {
+	local_development_cost = 0.20
+	province_trade_power_modifier = -0.50
+}
+
+# Chinaware
+fee_trade_goods_delfaware = {
+	local_development_cost_modifier = -0.05
+	prestige = 0.5
+	trade_value_modifier = 0.20
+}
+
+# Grain events
+fee_trade_goods_grain_surplus = {
+	global_manpower_modifier = 0.10
+	global_unrest = -2
+}
+fee_trade_goods_grain_expanded = {
+	local_build_cost = -0.10
+	local_development_cost = -0.10
+	trade_goods_size = 2
+}
+
+# Paper
+fee_trade_goods_new_paper_industry = {
+	local_unrest = 5
+	local_manpower_modifier = -0.10
+}
+fee_trade_goods_local_economy_undisturbed = {
+	province_trade_power_value = 20
+	local_unrest = -2
+}
+
+# Silk
+fee_trade_goods_new_employment = {
+	local_production_efficiency = 0.10
+	local_manpower_modifier = -0.15
+	local_unrest = 3
+}
+fee_trade_goods_agrarian_economy_protected = {
+	local_manpower_modifier = 0.20
+	local_unrest = -3
+}
+
+fee_trade_goods_increasing_grain_production = {
+	local_development_cost = -0.10
+	local_unrest = -2
+}
+fee_trade_goods_uncompetitive_cloth_industry = {
+	local_development_cost = 0.15
+	trade_goods_size_modifier = -0.20
+}
+
+fee_trade_goods_french_silk_monopoly = {
+	local_development_cost = 0.10
+}
+fee_trade_goods_reliance_silk_imports = {
+	trade_efficiency = -0.05
+}

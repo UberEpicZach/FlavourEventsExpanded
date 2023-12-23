@@ -37,24 +37,8 @@ country_event = {
 			factor = 33
 		}
 
-		if = {
-			limit = {
-				has_estate = estate_nobles
-			}
-			add_estate_loyalty = {
-				estate = estate_nobles
-				loyalty = 15
-			}
-		}
-		if = {
-			limit = {
-				has_estate = estate_church
-			}
-			add_estate_loyalty = {
-				estate = estate_church
-				loyalty = 15
-			}
-		}
+		fee_add_estate_church_loyalty_effect_big = yes
+		fee_add_estate_nobles_loyalty_effect_big = yes
 		add_stability = -1
 		4555 = { #Pontevedra
 			spawn_rebels = {
@@ -126,15 +110,7 @@ country_event = {
 		}
 
 		add_stability_or_adm_power = yes
-		if = {
-			limit = {
-				has_estate = estate_nobles
-			}
-			add_estate_loyalty = {
-				estate = estate_nobles
-				loyalty = -15
-			}
-		}
+		fee_reduce_estate_nobles_loyalty_effect_big = yes
 		galicia_area = {
 			add_local_autonomy = 15
 		}
@@ -291,15 +267,7 @@ country_event = {
 		}
 
 		add_stability_or_adm_power = yes
-		if = {
-			limit = {
-				has_estate = estate_burghers
-			}
-			add_estate_loyalty = {
-				estate = estate_burghers
-				loyalty = 10
-			}
-		}
+		add_estate_nobles_loyalty_effect = yes
 		add_country_modifier = {
 			name = iberia_spanish_cortes
 			duration = -1
@@ -363,11 +331,11 @@ country_event = {
 			limit = {
 				stability = 2
 			}
-			add_stability = 1
+			add_stability_or_adm_power_per_stab = { amount = 1 }
 			add_adm_power = 25
 		}
 		else = {
-			add_stability = 2
+			add_stability_or_adm_power_per_stab = { amount = 2 }
 		}
 		if = {
 			limit = {
@@ -631,24 +599,8 @@ country_event = {
 				duration = -1
 			}
 		}
-		if = {
-			limit = {
-				has_estate = estate_nobles
-			}
-			add_estate_loyalty = {
-				estate = estate_nobles
-				loyalty = 15
-			}
-		}
-		if = {
-			limit = {
-				has_estate = estate_burghers
-			}
-			add_estate_loyalty = {
-				estate = estate_burghers
-				loyalty = 15
-			}
-		}
+		fee_add_estate_church_loyalty_effect_big = yes
+		fee_add_estate_nobles_loyalty_effect_big = yes
 	}
 	option = {
 		name = FEE_Iberia_Events.5.OPT2
@@ -1144,15 +1096,7 @@ country_event = {
 			name = iberia_lay_piety
 			duration = -1
 		}
-		if = {
-			limit = {
-				has_estate = estate_church
-			}
-			add_estate_loyalty = {
-				estate = estate_church
-				loyalty = -10
-			}
-		}
+		reduce_estate_church_loyalty_effect = yes
 	}
 
 	option = {
@@ -1164,15 +1108,7 @@ country_event = {
 		add_reform_desire = -0.01
 		add_stability_or_adm_power = yes
 		add_corruption = -1
-		if = {
-			limit = {
-				has_estate = estate_church
-			}
-			add_estate_loyalty = {
-				estate = estate_church
-				loyalty = 10
-			}
-		}
+		add_estate_church_loyalty_effect = yes
 	}
 
 	option = {
@@ -1207,11 +1143,11 @@ country_event = {
 			factor = 50
 		}
 		add_years_of_income = -0.5
-		if = {
-			limit = {
-				has_dlc = "Rule Britannia"
-			}
-			change_innovativeness = 3
+		add_innovativeness_or_monarch_power = {
+			amount = 3
+			adm = 30
+			dip = 30
+			mil = 30
 		}
 		add_country_modifier = {
 			name = iberia_school_alcala
@@ -1309,22 +1245,22 @@ country_event = {
 		PAP = {
 			add_opinion = {
 				who = ROOT
-				modifier = iberia_papal_fraud_uncovered
+				modifier = iberia_papal_fraud_uncovered_opinion
 			}
 		}
 		add_opinion = {
 			who = PAP
-			modifier = iberia_papal_fraud_uncovered
+			modifier = iberia_papal_fraud_uncovered_opinion
 		}
 		emperor = {
 			add_opinion = {
 				who = ROOT
-				modifier = iberia_papal_fraud_uncovered
+				modifier = iberia_papal_fraud_uncovered_opinion
 			}
 		}
 		add_opinion = {
 			who = emperor
-			modifier = iberia_papal_fraud_uncovered
+			modifier = iberia_papal_fraud_uncovered_opinion
 		}
 		custom_tooltip = FEE_Iberia_Events.12.tt
 		hidden_effect = {
@@ -1335,11 +1271,11 @@ country_event = {
 				}
 				add_opinion = {
 					who = PAP
-					modifier = iberia_papal_fraud_uncovered
+					modifier = iberia_papal_fraud_uncovered_opinion
 				}
 				reverse_add_opinion = {
 					who = PAP
-					modifier = iberia_papal_fraud_uncovered
+					modifier = iberia_papal_fraud_uncovered_opinion
 				}
 			}
 		}
@@ -1540,24 +1476,8 @@ country_event = {
 			name = iberia_recogimiento
 			duration = -1
 		}
-		if = {
-			limit = {
-				has_estate = estate_church
-			}
-			add_estate_loyalty = {
-				estate = estate_church
-				loyalty = 10
-			}
-		}
-		if = {
-			limit = {
-				has_estate = estate_nobles
-			}
-			add_estate_loyalty = {
-				estate = estate_nobles
-				loyalty = 10
-			}
-		}
+		add_estate_church_loyalty_effect = yes
+		add_estate_nobles_loyalty_effect = yes
 		every_owned_province = {
 			limit = {
 				culture = andalucian
@@ -1922,15 +1842,7 @@ country_event = {
 			name = iberia_poor_laws_church_support
 			duration = -1
 		}
-		if = {
-			limit = {
-				has_estate = estate_church
-			}
-			add_estate_loyalty = {
-				estate = estate_church
-				loyalty = 10
-			}
-		}
+		add_estate_church_loyalty_effect = yes
 	}
 }
 

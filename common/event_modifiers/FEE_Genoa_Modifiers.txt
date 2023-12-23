@@ -1,9 +1,75 @@
 # Genoa has built the Lanterna
-fee_genoa_lanterna = {
+fee_gen_lanterna = {
 	global_own_trade_power = 0.1
+	local_own_coast_naval_combat_bonus = 1
 }
 
 # San Giorgio on Corsica
-fee_genoa_casa_san_giorgio = {
+fee_gen_casa_san_giorgio = {
 	local_development_cost = -0.1
+}
+
+fee_gen_lanterna_genova = {
+	province_trade_power_value = 25
+	naval_forcelimit = 8
+	global_own_trade_power = 0.1
+	local_own_coast_naval_combat_bonus = 1
+	range = 0.25
+	global_ship_trade_power = 0.15
+	naval_tradition_from_trade = 0.15
+	trade_range_modifier = 0.15
+}
+
+fee_gen_treaty_byzantium = {
+	province_trade_power_modifier = 0.25
+	trade_value_modifier = 0.33
+	local_development_cost = -0.10
+}
+
+fee_gen_refugees_crimean_colonies = {
+	local_development_cost = -0.25
+	province_trade_power_modifier = 0.25
+	trade_value_modifier = 0.25
+}
+
+fee_gen_khan_subversion = {
+	trade_steering = 0.10
+	caravan_power = 0.15
+}
+fee_gen_help_steppe_lords = {
+	manpower_recovery_speed = 0.10
+	cavalry_cost = -0.10
+}
+fee_gen_crimean_trading_rights = {
+	caravan_power = 0.10
+	global_trade_power = 0.10
+}
+
+fee_gen_queen_black_sea = {
+	province_trade_power_modifier = 0.33
+	local_development_cost = -0.15
+	local_defensiveness = 0.15
+}
+
+fee_gen_russian_genoese_trade_agreement = {
+	province_trade_power_modifier = 0.33
+	local_institution_spread = 0.33
+	local_development_cost = -0.15
+}
+fee_gen_genoese_russian_trade_agreement = {
+	local_manpower_modifier = 0.33
+	local_regiment_cost = -0.33
+	local_development_cost = -0.15
+}
+
+# Noli, Malfante and other explorers
+fee_gen_antonio_malfante = {
+	local_development_cost = -0.25
+	province_trade_power_modifier = 0.25
+	ship_recruit_speed = -0.25
+	local_ship_cost = -0.25
+}
+fee_gen_antonio_noli = {
+	local_development_cost = -0.25
+	province_trade_power_value = 25
 }

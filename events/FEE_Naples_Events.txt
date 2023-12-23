@@ -8,13 +8,11 @@ country_event = {
 	picture = ADVISOR_eventPicture
 
 	fire_only_once = yes
+
 	trigger = {
-		OR = {
-			tag = NAP
-			tag = TTS
-			was_tag = NAP
-		}
-		has_ruler = "Alfons V"
+		is_year = 1412
+		NOT = { is_year = 1458 }
+		fee_is_was_nap_sic = yes
 	}
 
 	mean_time_to_happen = {
@@ -58,7 +56,7 @@ country_event = {
 			religion = catholic
 			cost_multiplier = 0.33
 		}
-		custom_tooltip = Accademia_NAP_TT
+		custom_tooltip = NAP_ACCADEMY_BECCADELLI_TT
 		set_country_flag = nap_antonio_beccadelli
 	}
 
@@ -81,21 +79,17 @@ country_event = {
 			who = BYZ
 			modifier = fee_nap_recoinciliation
 		}
+		reverse_add_opinion = {
+			who = BYZ
+			modifier = fee_nap_recoinciliation
+		}
 		add_opinion = {
 			who = PAP
 			modifier = fee_nap_recoinciliation
 		}
-		BYZ = {
-			add_opinion = {
-				who = ROOT
-				modifier = fee_nap_recoinciliation
-			}
-		}
-		PAP = {
-			add_opinion = {
-				who = ROOT
-				modifier = fee_nap_recoinciliation
-			}
+		reverse_add_opinion = {
+			who = PAP
+			modifier = fee_nap_recoinciliation
 		}
 	}
 }
@@ -108,13 +102,10 @@ country_event = {
 	picture = FARMING_eventPicture
 
 	fire_only_once = yes
+
 	trigger = {
 		is_year = 1447
-		OR = {
-			tag = NAP
-			tag = TTS
-			was_tag = NAP
-		}
+		fee_is_was_nap_sic = yes
 		development_in_provinces = {
 			value = 75
 			OR = {
@@ -123,22 +114,18 @@ country_event = {
 				area = western_sicily_area
 				area = apulia_area
 				area = central_italy_area
+				area = calabria_area
 			}
 		}
-		OR = {
-			any_owned_province = {
+		any_owned_province = {
+			OR = {
 				area = central_italy_area
-				OR = {
-					num_of_times_improved = 3
-					base_production = 7
-				}
-			}
-			any_owned_province = {
 				area = apulia_area
-				OR = {
-					num_of_times_improved = 3
-					base_production = 7
-				}
+				area = calabria_area
+			}
+			OR = {
+				num_of_times_improved = 3
+				base_production = 7
 			}
 		}
 	}
@@ -147,7 +134,7 @@ country_event = {
 		name = FEE_Naples_Events.2.OPT1
 
 		add_years_of_owned_provinces_production_income = {
-			years = 5
+			years = 10
 			trigger = {
 				OR = {
 					area = naples_area
@@ -155,31 +142,12 @@ country_event = {
 					area = western_sicily_area
 					area = apulia_area
 					area = central_italy_area
+					area = calabria_area
 				}
 			}
 		}
-		naples_area = {
-			add_base_production = 1
-			add_permanent_province_modifier = {
-				name = fee_nap_transumanza
-				duration = -1
-			}
-		}
-		sicily_area = {
-			add_base_production = 1
-			add_permanent_province_modifier = {
-				name = fee_nap_transumanza
-				duration = -1
-			}
-		}
-		western_sicily_area = {
-			add_base_production = 1
-			add_permanent_province_modifier = {
-				name = fee_nap_transumanza
-				duration = -1
-			}
-		}
 		apulia_area = {
+			limit = { country_or_non_sovereign_subject_holds = ROOT }
 			add_base_production = 1
 			add_permanent_province_modifier = {
 				name = fee_nap_transumanza
@@ -187,6 +155,7 @@ country_event = {
 			}
 		}
 		central_italy_area = {
+			limit = { country_or_non_sovereign_subject_holds = ROOT }
 			add_base_production = 1
 			add_permanent_province_modifier = {
 				name = fee_nap_transumanza
@@ -204,23 +173,25 @@ country_event = {
 	picture = DIPLOMACY_eventPicture
 
 	fire_only_once = yes
+
 	trigger = {
 		is_year = 1451
 		exists = ALB
 		OR = {
 			AND = {
-				OR = {
-					tag = NAP
-					tag = TTS
-					was_tag = NAP
-				}
-				is_subject = no
+				fee_is_was_nap_sic = yes
+				is_free_or_tributary_trigger = yes
 			}
 			AND = {
 				tag = ARA
-				overlord_of = NAP
+				OR = {
+					overlord_of = NAP
+					overlord_of = SIC
+					overlord_of = TTS
+				}
 			}
 		}
+		NOT = { war_with = ALB }
 	}
 
 	option = {
@@ -245,11 +216,6 @@ country_event = {
 			modifier = fee_nap_helps_skanderberg
 		}
 		custom_tooltip = ALB_HELP_TT
-		hidden_effect = {
-			country_event = {
-				id = FEE_Naples_Events.12
-			}
-		}
 	}
 
 	option = {
@@ -266,7 +232,7 @@ country_event = {
 	}
 }
 
-#Aragorn Helps Skanderberg
+#Helps from Naples
 country_event = {
 	id = FEE_Naples_Events.4
 	title = FEE_Naples_Events.4.T
@@ -277,6 +243,12 @@ country_event = {
 
 	option = {
 		name = FEE_Naples_Events.4.OPT1
+		trigger = {
+			is_free_or_tributary_trigger = yes
+		}
+		ai_chance = {
+			factor = 50
+		}
 
 		add_yearly_manpower = 2
 		add_years_of_income = 3
@@ -303,7 +275,7 @@ country_event = {
 				is_at_war = yes
 			}
 		}
-		
+
 		add_yearly_manpower = 2
 		add_years_of_income = 3
 		if = {
@@ -323,14 +295,11 @@ country_event = {
 	picture = UNIVERSITY_eventPicture
 
 	fire_only_once = yes
+
 	trigger = {
 		is_year = 1458
-		OR = {
-			tag = NAP
-			tag = TTS
-			was_tag = NAP
-		}
-		owns_core_province = 121
+		fee_is_was_nap_sic = yes
+		owns = 121
 		121 = { num_of_times_improved = 2 }
 		OR = {
 			theologian = 2
@@ -356,12 +325,23 @@ country_event = {
 	option = {
 		name = FEE_Naples_Events.5.OPT1
 		add_adm_power = 25
-		add_innovativeness_small_effect = yes
+		add_innovativeness_or_monarch_power = {
+			amount = 2
+			adm = 20
+			dip = 20
+			mil = 20
+		}
 		121 = {
 			add_institution_embracement = {
 				which = renaissance
 				value = 24
 			}
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			clr_country_flag = nap_antonio_beccadelli
 		}
 	}
 }
@@ -374,9 +354,10 @@ country_event = {
 	picture = FORTIFIED_CITY_WITH_CARAVAN_OUTSIDE_eventPicture
 
 	fire_only_once = yes
+
 	trigger = {
 		is_year = 1484
-		owns_core_province = 121
+		owns = 121
 		121 = {
 			base_manpower = 10
 		}
@@ -413,15 +394,14 @@ country_event = {
 	picture = QUEEN_AT_COUNCIL_TABLE_eventPicture
 
 	fire_only_once = yes
+
 	trigger = {
-		is_year = 1424
-		OR = {
-			tag = NAP
-			tag = TTS
-			was_tag = NAP
-		}
+		is_year = 1440
+		fee_is_was_nap_sic = yes
 		NOT = { has_ruler = "Alfons V" }
-		has_ruler = yes
+		has_regency = no
+		NOT = { is_year = 1465 }
+		is_lesser_in_union = no
 	}
 
 	mean_time_to_happen = {
@@ -439,7 +419,7 @@ country_event = {
 			}
 		}
 
-		add_stability_or_adm_power = yes
+		add_legitimacy_equivalent = { amount = 10 republican_tradition = 5 }
 	}
 
 	option = {
@@ -449,11 +429,10 @@ country_event = {
 		}
 
 		if = {
-			limit = {
-				has_consort = yes
-			}
+			limit = { has_consort = yes }
 			remove_consort = yes
 		}
+		add_legitimacy_equivalent = { amount = -5 republican_tradition = -3 }
 		define_consort = {
 			name = "Isabella Chiaromonte"
 			culture = neapolitan
@@ -464,924 +443,1670 @@ country_event = {
 			mil = 2
 		}
 		apulia_area = {
-			add_unrest = -3
+			add_province_modifier = {
+				name = home_of_consort
+				duration = 9125
+			}
 		}
 	}
 }
 
-#Pre-Conjury
+# Manifattura Napoletana
 country_event = {
 	id = FEE_Naples_Events.8
 	title = FEE_Naples_Events.8.T
 	desc = FEE_Naples_Events.8.D
-	picture = BAD_WITH_MONARCH_eventPicture
+	picture = TRADE_GOODS_eventPicture
 
 	fire_only_once = yes
+
 	trigger = {
-		is_year = 1416
-		OR = {
-			tag = NAP
-			tag = TTS
-			was_tag = NAP
-		}
-		NOT = { has_ruler = "Alfons V" }
-		NOT = { is_year = 1459 }
-		has_estate = estate_nobles
+		owns = 121
+		is_year = 1445
+		NOT = { is_year = 1477 }
+	}
+
+	goto = 121
+
+	mean_time_to_happen = {
+		months = 3
 	}
 
 	option = {
 		name = FEE_Naples_Events.8.OPT1
+		trigger = {
+			NOT = {
+				121 = { trade_goods = cloth }
+			}
+		}
 
-		custom_tooltip = nap_pre_conjury_tt
+		add_years_of_income = -0.5
+		add_estate_burghers_loyalty_effect = yes
+		121 = {
+			change_trade_goods = cloth
+			add_province_modifier = {
+				name = impoverished_artisans
+				duration = 730
+			}
+		}
+		123 = {
+			add_base_production = 1
+			add_permanent_province_modifier = {
+				name = fee_nap_catanzaro_seta
+				duration = -1
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Naples_Events.8.OPT2
+		trigger = {
+			NOT = {
+				121 = { trade_goods = silk }
+			}
+		}
+
+		add_years_of_income = -0.5
+		add_estate_burghers_loyalty_effect = yes
+		121 = {
+			change_trade_goods = silk
+			add_province_modifier = {
+				name = impoverished_artisans
+				duration = 730
+			}
+		}
+		123 = {
+			add_base_production = 1
+			add_permanent_province_modifier = {
+				name = fee_nap_catanzaro_seta
+				duration = -1
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Naples_Events.8.OPT3
+
+		reduce_estate_burghers_loyalty_effect = yes
 	}
 }
 
-#Barony Conjury 1
+# Artefici Forestieri
 country_event = {
 	id = FEE_Naples_Events.9
 	title = FEE_Naples_Events.9.T
 	desc = FEE_Naples_Events.9.D
-	picture = NOBLE_ESTATE_DEMANDS_eventPicture
+	picture = TRADE_GOODS_eventPicture
 
 	fire_only_once = yes
+
 	trigger = {
-		OR = {
-			tag = NAP
-			tag = TTS
-			was_tag = NAP
-		}
-		has_estate = estate_nobles
-		NOT = {
-			estate_loyalty = {
-				estate = estate_nobles
-				loyalty = 65
+		121 = {
+			owned_by = ROOT
+			OR = {
+				trade_goods = cloth
+				trade_goods = silk
 			}
+			num_of_times_improved = 1
 		}
-		is_year = 1459
-		NOT = { is_year = 1464 }
-		apulia_area = {
-			owned_by = ROOT
-		}
-		calabria_area = {
-			owned_by = ROOT
-		}
+		is_year = 1458
+		NOT = { is_year = 1465 }
 	}
+
+	goto = 121
 
 	mean_time_to_happen = {
-		days = 60
-	}
-
-	immediate = {
-		set_country_flag = nap_barony_first_risen
+		years = 1
 	}
 
 	option = {
 		name = FEE_Naples_Events.9.OPT1
 
-		add_stability = -1
-		if = {
-			limit = {
-				NOT = {
-					estate_influence = {
-						estate = estate_nobles
-						influence = 65
-					}
+		random_list = {
+			33 = {
+				define_advisor = {
+					type = trader
+					skill = 2
+					cost_multiplier = 0.50
+					culture = tuscan
+					religion = catholic
 				}
 			}
-			random_owned_province = {
-				limit = {
-					area = apulia_area
-				}
-				spawn_rebels = {
-					size = 1
-					type = noble_rebels
-				}
-			}
-			random_owned_province = {
-				limit = {
-					area = calabria_area
-				}
-				spawn_rebels = {
-					size = 1
-					type = noble_rebels
+			33 = {
+				define_advisor = {
+					type = trader
+					skill = 2
+					cost_multiplier = 0.50
+					culture = dutch
+					religion = catholic
 				}
 			}
-		}
-		else_if = {
-			limit = {
-				NOT = {
-					estate_influence = {
-						estate = estate_nobles
-						influence = 75
-					}
-				}
-				estate_influence = {
-					estate = estate_nobles
-					influence = 65
-				}
-			}
-			random_owned_province = {
-				limit = {
-					area = apulia_area
-				}
-				spawn_rebels = {
-					size = 2
-					type = noble_rebels
-				}
-			}
-			random_owned_province = {
-				limit = {
-					area = calabria_area
-				}
-				spawn_rebels = {
-					size = 1
-					type = noble_rebels
+			33 = {
+				define_advisor = {
+					type = trader
+					skill = 2
+					cost_multiplier = 0.50
+					culture = aragonese
+					religion = catholic
 				}
 			}
 		}
-		else_if = {
-			limit = {
-				NOT = {
-					estate_influence = {
-						estate = estate_nobles
-						influence = 85
-					}
-				}
-				estate_influence = {
-					estate = estate_nobles
-					influence = 75
-				}
+		121 = {
+			add_permanent_province_modifier = {
+				name = fee_nap_silk_foreign_craftsman
+				duration = -1
 			}
-			random_owned_province = {
-				limit = {
-					area = apulia_area
-				}
-				spawn_rebels = {
-					size = 2
-					type = noble_rebels
-				}
-			}
-			random_owned_province = {
-				limit = {
-					area = calabria_area
-				}
-				spawn_rebels = {
-					size = 2
-					type = noble_rebels
-				}
-			}
-		}
-		else_if = {
-			limit = {
-				NOT = {
-					estate_influence = {
-						estate = estate_nobles
-						influence = 95
-					}
-				}
-				estate_influence = {
-					estate = estate_nobles
-					influence = 85
-				}
-			}
-			random_owned_province = {
-				limit = {
-					area = apulia_area
-				}
-				spawn_rebels = {
-					size = 3
-					type = noble_rebels
-				}
-			}
-			random_owned_province = {
-				limit = {
-					area = calabria_area
-				}
-				spawn_rebels = {
-					size = 2
-					type = noble_rebels
-				}
-			}
-		}
-		else = {
-			random_owned_province = {
-				limit = {
-					area = apulia_area
-				}
-				spawn_rebels = {
-					size = 3
-					type = noble_rebels
-				}
-			}
-			random_owned_province = {
-				limit = {
-					area = calabria_area
-				}
-				spawn_rebels = {
-					size = 3
-					type = noble_rebels
-				}
+			add_trade_modifier = {
+				who = ROOT
+				duration = 3650
+				power = 10
+				key = fee_nap_silk_foreign_craftsman
 			}
 		}
 	}
 }
 
-#Congiura dei baroni sedata
+# Consolato dell'Arte della Seta
 country_event = {
 	id = FEE_Naples_Events.10
 	title = FEE_Naples_Events.10.T
 	desc = FEE_Naples_Events.10.D
-	picture = GOOD_WITH_MONARCH_eventPicture
+	picture = TRADE_GOODS_eventPicture
 
 	fire_only_once = yes
+
 	trigger = {
-		OR = {
-			tag = NAP
-			tag = TTS
-			was_tag = NAP
+		121 = {
+			owned_by = ROOT
+			OR = {
+				trade_goods = cloth
+				trade_goods = silk
+			}
+			base_tax = 10
 		}
-		has_country_flag = nap_barony_first_risen
-		NOT = { num_of_rebel_controlled_provinces = 1 }
-		NOT = { num_of_rebel_armies = 1 }
+		is_year = 1465
+		NOT = { is_year = 1477 }
 	}
 
+	goto = 121
+
 	mean_time_to_happen = {
-		days = 60
+		years = 1
 	}
 
 	option = {
 		name = FEE_Naples_Events.10.OPT1
 
-		add_stability_or_adm_power = yes
-		add_country_modifier = {
-			name = fee_nap_twenty_years_prosperity
-			duration = 7300
+		add_years_of_owned_provinces_production_income = {
+			years = 10
+			trigger = {
+				province_id = 121
+			}
 		}
-		add_estate_loyalty_modifier = {
-			estate = estate_nobles
-			loyalty = -30
-			desc = nap_nobles_restrained
-			duration = 7300
-		}
-		add_estate_influence_modifier = {
-			estate = estate_nobles
-			desc = nap_nobles_restrained
-			influence = -50
-			duration = 7300
-		}
-		change_estate_land_share = {
-			estate = estate_nobles
-			share = -33
-		}
-		custom_tooltip = NAPLES_TWENTY_YEARS_PROSPERITY
-		hidden_effect = {
-			every_owned_province = {
-				if = {
-					limit = {
-						has_dlc = "Mandate of Heaven"
-					}
-					add_devastation = -50
-					add_prosperity = 15
-				}
-				else = {
-					add_devastation = -50
-				}
+		add_mercantilism_or_monarch_power = { amount = 3 }
+		121 = {
+			add_base_production = 2
+			remove_province_modifier = fee_nap_silk_foreign_craftsman
+			add_permanent_province_modifier = {
+				name = fee_nap_silk_consolato_seta
+				duration = -1
 			}
 		}
 	}
 }
 
-#First Revolt sventata
+# Seta per il Nuovo Mondo
 country_event = {
 	id = FEE_Naples_Events.11
 	title = FEE_Naples_Events.11.T
 	desc = FEE_Naples_Events.11.D
-	picture = NOBLE_ESTATE_eventPicture
+	picture = TRADE_GOODS_eventPicture
 
 	fire_only_once = yes
+
 	trigger = {
-		OR = {
-			tag = NAP
-			tag = TTS
-			was_tag = NAP
+		121 = {
+			owned_by = ROOT
+			OR = {
+				trade_goods = cloth
+				trade_goods = silk
+			}
 		}
-		is_year = 1465
-		NOT = { has_country_flag = nap_barony_first_risen }
+		OR = {
+			121 = { new_world_i = 100 }
+			224 = {
+				trade_share = {
+					country = ROOT
+					share = 10
+				}
+			}
+			1295 = {
+				trade_share = {
+					country = ROOT
+					share = 10
+				}
+			}
+		}
+		is_year = 1477
+		NOT = { is_year = 1500 }
+	}
+
+	goto = 121
+
+	mean_time_to_happen = {
+		years = 1
 	}
 
 	option = {
 		name = FEE_Naples_Events.11.OPT1
 
-		add_stability_or_adm_power = yes
-		add_country_modifier = {
-			name = fee_nap_twenty_years_prosperity
-			duration = 7300
+		add_dip_power = 25
+		121 = {
+			add_base_tax = 2
+			remove_province_modifier = fee_nap_silk_foreign_craftsman
+			remove_province_modifier = fee_nap_silk_consolato_seta
+			add_permanent_province_modifier = {
+				name = fee_nap_silk_new_world
+				duration = -1
+			}
 		}
-		add_estate_loyalty_modifier = {
-			estate = estate_nobles
-			desc = nap_nobles_happy
-			loyalty = 20
-			duration = 7300
+		1293 = {
+			add_trade_node_income = 10
+			add_trade_modifier = {
+				who = ROOT
+				duration = 7300
+				power = 10
+				key = trade_boost
+			}
 		}
-		custom_tooltip = NAPLES_TWENTY_YEARS_PROSPERITY
-		hidden_effect = {
-			every_owned_province = {
-				limit = {
-					devastation = 1
-				}
-				if = {
-					limit = {
-						has_dlc = "Mandate of Heaven"
-					}
-					add_devastation = -50
-					add_prosperity = 15
-				}
-				else = {
-					add_devastation = -50
-				}
+		1295 = {
+			add_trade_node_income = 10
+			add_trade_modifier = {
+				who = ROOT
+				duration = 7300
+				power = 10
+				key = trade_boost
+			}
+		}
+		1298 = {
+			add_trade_node_income = 10
+			add_trade_modifier = {
+				who = ROOT
+				duration = 7300
+				power = 10
+				key = trade_boost
 			}
 		}
 	}
 }
 
-#The arrival of Kastrioty
+# Nero di Napoli
 country_event = {
 	id = FEE_Naples_Events.12
 	title = FEE_Naples_Events.12.T
 	desc = FEE_Naples_Events.12.D
-	picture = MILITARY_CAMP_eventPicture
+	picture = TRADE_GOODS_eventPicture
 
 	fire_only_once = yes
+
 	trigger = {
-		OR = {
-			tag = NAP
-			tag = TTS
-			was_tag = NAP
+		121 = {
+			base_production = 20
+			owned_by = ROOT
+			OR = {
+				trade_goods = cloth
+				trade_goods = silk
+			}
+			has_province_modifier = fee_nap_silk_new_world
 		}
-		has_country_flag = nap_barony_first_risen
+		is_year = 1500
+		NOT = { is_year = 1600 }
 	}
 
+	goto = 121
+
 	mean_time_to_happen = {
-		days = 60
+		years = 1
 	}
 
 	option = {
 		name = FEE_Naples_Events.12.OPT1
-		random_owned_province = {
+
+		add_mercantilism_or_monarch_power = { amount = 6 }
+		if = {
 			limit = {
-				controlled_by = ROOT
-				has_siege = no
+				121 = {
+					trade_goods = silk
+				}
 			}
-			infantry = ROOT
-			infantry = ROOT
-			cavalry = ROOT
+			change_price = {
+				trade_goods = silk
+				key = fee_nap_neapolitan_black
+				value = 0.33
+				duration = 36500
+			}
 		}
-		define_general = {
-			fire = 3
-			shock = 2
-			manuever = 4
-			siege = 1
-			name = "Giorgio Castriota Scanderbeg"
-			trait = goal_oriented_personality
+		else = {
+			change_price = {
+				trade_goods = cloth
+				key = fee_nap_neapolitan_black
+				value = 0.25
+				duration = 36500
+			}
+		}
+		121 = {
+			remove_province_modifier = fee_nap_silk_foreign_craftsman
+			remove_province_modifier = fee_nap_silk_consolato_seta
+			remove_province_modifier = fee_nap_silk_new_world
+			add_permanent_province_modifier = {
+				name = fee_nap_neapolitan_black
+				duration = -1
+			}
 		}
 	}
 }
 
-#Second Barony Conjury, before
+# Fasto della Seta
 country_event = {
 	id = FEE_Naples_Events.13
 	title = FEE_Naples_Events.13.T
 	desc = FEE_Naples_Events.13.D
-	picture = BAD_WITH_MONARCH_eventPicture
+	picture = COURT_eventPicture
 
 	fire_only_once = yes
+
 	trigger = {
-		OR = {
-			tag = NAP
-			tag = TTS
-			was_tag = NAP
-		}
-		is_year = 1466
-		NOT = { is_year = 1486 }
-		has_estate = estate_nobles
-	}
-
-	mean_time_to_happen = {
-		days = 60
-	}
-
-	option = {
-		name = FEE_Naples_Events.13.OPT1
-
-		custom_tooltip = nap_pre_conjury_2_tt
-		#hidden_effect = {
-		#	country_event = {
-		#		id = FEE_Naples_Events.14
-		#	}
-		#	country_event = {
-		#		id = FEE_Naples_Events.15
-		#	}
-		#	country_event = {
-		#		id = FEE_Naples_Events.16
-		#	}
-		#}
-	}
-}
-
-#Second Barony Conjury
-country_event = {
-	id = FEE_Naples_Events.14
-	title = FEE_Naples_Events.14.T
-	desc = FEE_Naples_Events.14.D
-	picture = NOBLE_ESTATE_DEMANDS_eventPicture
-
-	fire_only_once = yes
-	trigger = {
-		OR = {
-			tag = NAP
-			tag = TTS
-			was_tag = NAP
-		}
-		has_estate = estate_nobles
-		NOT = {
-			estate_loyalty = {
-				estate = estate_nobles
-				loyalty = 60
+		121 = {
+			owned_by = ROOT
+			OR = {
+				trade_goods = cloth
+				trade_goods = silk
 			}
-		}
-		is_year = 1485
-		NOT = { is_year = 1486 }
-	}
-
-	immediate = {
-		set_country_flag = nap_barony_second_risen
-	}
-
-	option = {
-		name = FEE_Naples_Events.14.OPT1
-
-		add_stability = -1
-		if = {
-			limit = {
-				owns = 2983
-			}
-			2983 = {
-				if = {
-					limit = {
-						owner = {
-							NOT = {
-								estate_influence = {
-									estate = estate_nobles
-									influence = 65
-								}
-							}
-						}
-					}
-					spawn_rebels = {
-						size = 1
-						type = noble_rebels
-					}
-					owner = {
-						random_owned_province = {
-							limit = {
-								OR = {
-									area = calabria_area
-									area = naples_area
-									area = apulia_area
-								}
-							}
-							spawn_rebels = {
-								size = 1
-								type = noble_rebels
-							}
-						}
-					}
-				}
-				else_if = {
-					limit = {
-						owner = {
-							NOT = {
-								estate_influence = {
-									estate = estate_nobles
-									influence = 75
-								}
-							}
-							estate_influence = {
-								estate = estate_nobles
-								influence = 65
-							}
-						}
-					}
-					spawn_rebels = {
-						size = 2
-						type = noble_rebels
-					}
-					owner = {
-						random_owned_province = {
-							limit = {
-								OR = {
-									area = calabria_area
-									area = naples_area
-									area = apulia_area
-								}
-							}
-							spawn_rebels = {
-								size = 1
-								type = noble_rebels
-							}
-						}
-					}
-				}
-				else_if = {
-					limit = {
-						owner = {
-							NOT = {
-								estate_influence = {
-									estate = estate_nobles
-									influence = 85
-								}
-							}
-							estate_influence = {
-								estate = estate_nobles
-								influence = 75
-							}
-						}
-					}
-					spawn_rebels = {
-						size = 2
-						type = noble_rebels
-					}
-					owner = {
-						random_owned_province = {
-							limit = {
-								OR = {
-									area = calabria_area
-									area = naples_area
-									area = apulia_area
-								}
-							}
-							spawn_rebels = {
-								size = 2
-								type = noble_rebels
-							}
-						}
-					}
-				}
-				else_if = {
-					limit = {
-						owner = {
-							NOT = {
-								estate_influence = {
-									estate = estate_nobles
-									influence = 95
-								}
-							}
-							estate_influence = {
-								estate = estate_nobles
-								influence = 85
-							}
-						}
-					}
-					spawn_rebels = {
-						size = 3
-						type = noble_rebels
-					}
-					owner = {
-						random_owned_province = {
-							limit = {
-								OR = {
-									area = calabria_area
-									area = naples_area
-									area = apulia_area
-								}
-							}
-							spawn_rebels = {
-								size = 2
-								type = noble_rebels
-							}
-						}
-					}
-				}
-				else = {
-					spawn_rebels = {
-						size = 3
-						type = noble_rebels
-					}
-					owner = {
-						random_owned_province = {
-							limit = {
-								OR = {
-									area = calabria_area
-									area = naples_area
-									area = apulia_area
-								}
-							}
-							spawn_rebels = {
-								size = 3
-								type = noble_rebels
-							}
-						}
-					}
-				}
-			}
-		}
-		else = {
 			if = {
 				limit = {
-					NOT = {
-						estate_influence = {
-							estate = estate_nobles
-							influence = 65
-						}
-					}
+					has_dlc = "Leviathan"
 				}
-				random_owned_province = {
-					limit = {
-						OR = {
-							area = calabria_area
-							area = naples_area
-							area = apulia_area
-						}
+				OR = {
+					has_great_project = {
+						type = royal_palace_caserta
+						tier = 1
 					}
-					spawn_rebels = {
-						size = 1
-						type = noble_rebels
+					has_great_project = {
+						type = royal_palace_caserta
+						tier = 2
 					}
-				}
-				random_owned_province = {
-					limit = {
-						OR = {
-							area = calabria_area
-							area = naples_area
-							area = apulia_area
-						}
-					}
-					spawn_rebels = {
-						size = 1
-						type = noble_rebels
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						estate_influence = {
-							estate = estate_nobles
-							influence = 75
-						}
-					}
-					estate_influence = {
-						estate = estate_nobles
-						influence = 65
-					}
-				}
-				random_owned_province = {
-					limit = {
-						OR = {
-							area = calabria_area
-							area = naples_area
-							area = apulia_area
-						}
-					}
-					spawn_rebels = {
-						size = 2
-						type = noble_rebels
-					}
-				}
-				random_owned_province = {
-					limit = {
-						OR = {
-							area = calabria_area
-							area = naples_area
-							area = apulia_area
-						}
-					}
-					spawn_rebels = {
-						size = 1
-						type = noble_rebels
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						estate_influence = {
-							estate = estate_nobles
-							influence = 85
-						}
-					}
-					estate_influence = {
-						estate = estate_nobles
-						influence = 75
-					}
-				}
-				random_owned_province = {
-					limit = {
-						OR = {
-							area = calabria_area
-							area = naples_area
-							area = apulia_area
-						}
-					}
-					spawn_rebels = {
-						size = 2
-						type = noble_rebels
-					}
-				}
-				random_owned_province = {
-					limit = {
-						OR = {
-							area = calabria_area
-							area = naples_area
-							area = apulia_area
-						}
-					}
-					spawn_rebels = {
-						size = 2
-						type = noble_rebels
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					NOT = {
-						estate_influence = {
-							estate = estate_nobles
-							influence = 95
-						}
-					}
-					estate_influence = {
-						estate = estate_nobles
-						influence = 85
-					}
-				}
-				random_owned_province = {
-					limit = {
-						OR = {
-							area = calabria_area
-							area = naples_area
-							area = apulia_area
-						}
-					}
-					spawn_rebels = {
-						size = 3
-						type = noble_rebels
-					}
-				}
-				random_owned_province = {
-					limit = {
-						OR = {
-							area = calabria_area
-							area = naples_area
-							area = apulia_area
-						}
-					}
-					spawn_rebels = {
-						size = 2
-						type = noble_rebels
+					has_great_project = {
+						type = royal_palace_caserta
+						tier = 3
 					}
 				}
 			}
 			else = {
-				random_owned_province = {
-					limit = {
-						OR = {
-							area = calabria_area
-							area = naples_area
-							area = apulia_area
-						}
-					}
-					spawn_rebels = {
-						size = 3
-						type = noble_rebels
-					}
+				is_capital = yes
+				development = 40
+			}
+		}
+		is_year = 1600
+		NOT = { is_year = 1650 }
+	}
+
+	goto = 121
+
+	mean_time_to_happen = {
+		years = 1
+	}
+
+	option = {
+		name = FEE_Naples_Events.13.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_years_of_income = -0.5
+		if = {
+			limit = {
+				has_dlc = "Mandate of Heaven"
+			}
+			add_splendor = 200
+		}
+		add_prestige_or_monarch_power = { amount = 25 }
+	}
+
+	option = {
+		name = FEE_Naples_Events.13.OPT2
+		ai_chance = {
+			factor = 25
+		}
+
+		add_prestige = -15
+		add_legitimacy_equivalent = { amount = -15 republican_tradition = -7 }
+		reduce_estate_nobles_loyalty_effect = yes
+	}
+}
+
+# Meccanizzazione dei Processi Produttivi?
+country_event = {
+	id = FEE_Naples_Events.14
+	title = FEE_Naples_Events.14.T
+	desc = FEE_Naples_Events.14.D
+	picture = TRADE_GOODS_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		121 = {
+			owned_by = ROOT
+			OR = {
+				trade_goods = cloth
+				trade_goods = silk
+			}
+		}
+		is_institution_enabled = manufactories
+		is_year = 1650
+		NOT = { is_year = 1750 }
+	}
+
+	goto = 121
+
+	mean_time_to_happen = {
+		years = 1
+	}
+
+	option = {
+		name = FEE_Naples_Events.14.OPT1
+		trigger = {
+			121 = {
+				is_institution_origin = manufactories
+			}
+		}
+
+		121 = {
+			random_list = {
+				50 = {
+					add_base_tax = -2
 				}
-				random_owned_province = {
-					limit = {
-						OR = {
-							area = calabria_area
-							area = naples_area
-							area = apulia_area
-						}
-					}
-					spawn_rebels = {
-						size = 3
-						type = noble_rebels
-					}
+				50 = {
+					add_base_production = -2
+				}
+			}
+			add_permanent_province_modifier = {
+				name = urbanites_chastised
+				duration = 3650
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Naples_Events.14.OPT2
+		trigger = {
+			121 = {
+				manufactories = 50
+			}
+		}
+		ai_chance = {
+			factor = 75
+		}
+
+		add_years_of_income = -2.5
+		add_mercantilism = -5
+		121 = {
+			random_list = {
+				50 = {
+					add_base_tax = -5
+				}
+				50 = {
+					add_base_production = -5
 				}
 			}
 		}
 	}
+
+	option = {
+		name = FEE_Naples_Events.14.OPT3
+		ai_chance = {
+			factor = 25
+		}
+
+		add_prestige = -15
+		add_mercantilism = -10
+		if = {
+			limit = {
+				has_dlc = "Mandate of Heaven"
+			}
+			add_splendor = -50
+		}
+		121 = {
+			add_base_tax = -5
+			add_base_production = -5
+			remove_province_modifier = fee_nap_silk_foreign_craftsman
+			remove_province_modifier = fee_nap_silk_consolato_seta
+			remove_province_modifier = fee_nap_silk_new_world
+			remove_province_modifier = fee_nap_neapolitan_black
+		}
+	}
 }
 
-#The Barons have been defeated
+# Seta di Palermo
 country_event = {
 	id = FEE_Naples_Events.15
 	title = FEE_Naples_Events.15.T
 	desc = FEE_Naples_Events.15.D
-	picture = GOOD_WITH_MONARCH_eventPicture
+	picture = TRADE_GOODS_eventPicture
 
 	fire_only_once = yes
+
 	trigger = {
-		OR = {
-			tag = NAP
-			tag = TTS
-			was_tag = NAP
-		}
-		has_country_flag = nap_barony_second_risen
-		NOT = { num_of_rebel_controlled_provinces = 1 }
-		NOT = { num_of_rebel_armies = 1 }
+		owns = 125
+		is_year = 1445
+		NOT = { is_year = 1492 }
 	}
 
+	goto = 125
+
 	mean_time_to_happen = {
-		days = 60
+		months = 3
 	}
 
 	option = {
 		name = FEE_Naples_Events.15.OPT1
-		ai_chance = {
-			factor = 1
+		trigger = {
+			NOT = {
+				125 = { trade_goods = cloth }
+			}
 		}
 
-		add_stability_or_adm_power = yes
-		add_splendor = 50
-		add_adm_power = 50
-		change_estate_land_share = {
-			estate = estate_nobles
-			share = -100
+		add_years_of_income = -0.5
+		add_estate_burghers_loyalty_effect = yes
+		125 = {
+			change_trade_goods = cloth
+			add_province_modifier = {
+				name = impoverished_artisans
+				duration = 730
+			}
 		}
+		if = {
+			limit = { owns = 124 }
+			124 = { add_base_production = 1 }	
+		}
+	}
+
+	option = {
+		name = FEE_Naples_Events.15.OPT2
+		trigger = {
+			NOT = {
+				125 = { trade_goods = silk }
+			}
+		}
+
+		add_years_of_income = -0.5
+		add_estate_burghers_loyalty_effect = yes
+		125 = {
+			change_trade_goods = silk
+			add_province_modifier = {
+				name = impoverished_artisans
+				duration = 730
+			}
+		}
+		if = {
+			limit = { owns = 124 }
+			124 = { add_base_production = 1 }	
+		}
+	}
+
+	option = {
+		name = FEE_Naples_Events.15.OPT3
+
+		reduce_estate_burghers_loyalty_effect = yes
 	}
 }
 
-#Second Conjury evaded
+# Il baco di Messina
 country_event = {
 	id = FEE_Naples_Events.16
 	title = FEE_Naples_Events.16.T
 	desc = FEE_Naples_Events.16.D
-	picture = NOBLE_ESTATE_eventPicture
+	picture = TRADE_GOODS_eventPicture
 
 	fire_only_once = yes
+
 	trigger = {
-		OR = {
-			tag = NAP
-			tag = TTS
-			was_tag = NAP
-		}
-		is_year = 1487
-		NOT = { has_country_flag = nap_barony_second_risen }
+		owns = 124
+		is_year = 1445
+		NOT = { is_year = 1492 }
 	}
 
+	goto = 124
+
 	mean_time_to_happen = {
-		days = 60
+		months = 3
 	}
 
 	option = {
 		name = FEE_Naples_Events.16.OPT1
-
-		add_stability_or_adm_power = yes
-		custom_tooltip = NAPLES_TWENTY_YEARS_PROSPERITY
-		add_estate_loyalty_modifier = {
-			estate = estate_nobles
-			desc = nap_nobles_happy
-			loyalty = 20
-			duration = 7300
+		trigger = {
+			NOT = {
+				124 = { trade_goods = cloth }
+			}
 		}
-		hidden_effect = {
-			every_owned_province = {
-				limit = {
-					devastation = 25
-				}
-				if = {
-					limit = {
-						has_dlc = "Mandate of Heaven"
-					}
-					add_devastation = -50
-					add_prosperity = 15
-				}
-				else = {
-					add_devastation = 50
-				}
+
+		add_years_of_income = -0.5
+		add_estate_burghers_loyalty_effect = yes
+		124 = {
+			change_trade_goods = cloth
+			add_province_modifier = {
+				name = impoverished_artisans
+				duration = 730
+			}
+		}
+		if = {
+			limit = { owns = 125 }
+			125 = { add_base_production = 1 }	
+		}
+	}
+
+	option = {
+		name = FEE_Naples_Events.16.OPT2
+		trigger = {
+			NOT = {
+				124 = { trade_goods = silk }
+			}
+		}
+
+		add_years_of_income = -0.5
+		add_estate_burghers_loyalty_effect = yes
+		124 = {
+			change_trade_goods = silk
+			add_province_modifier = {
+				name = impoverished_artisans
+				duration = 730
+			}
+		}
+		if = {
+			limit = { owns = 125 }
+			125 = { add_base_production = 1 }	
+		}
+	}
+
+	option = {
+		name = FEE_Naples_Events.16.OPT3
+
+		reduce_estate_burghers_loyalty_effect = yes
+	}
+}
+
+# Manifattura Ebraica
+country_event = {
+	id = FEE_Naples_Events.17
+	title = FEE_Naples_Events.17.T
+	desc = FEE_Naples_Events.17.D
+	picture = TRADE_GOODS_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		124 = {
+			owned_by = ROOT
+			num_of_times_improved = 3
+			NOT = { has_province_modifier = fee_nap_silk_jewish_craftsman_messina }
+			OR = {
+				trade_goods = cloth
+				trade_goods = silk
+			}
+		}
+		NOT = { is_year = 1492 }
+	}
+
+	goto = 124
+
+	mean_time_to_happen = {
+		years = 1
+	}
+
+	option = {
+		name = FEE_Naples_Events.17.OPT1
+
+		if = {
+			limit = { owns = 125 }
+			add_mercantilism_or_monarch_power = { amount = 3 }
+		}
+		define_advisor = {
+			type = trader
+			skill = 2
+			cost_multiplier = 0.50
+			culture = sicilian
+			religion = jewish
+		}
+		124 = {
+			add_permanent_province_modifier = {
+				name = fee_nap_silk_jewish_craftsman_messina
+				duration = -1
+			}
+			add_trade_modifier = {
+				who = ROOT
+				duration = 3650
+				power = 10
+				key = fee_nap_silk_foreign_craftsman
 			}
 		}
 	}
 }
 
-#The Dream of Ladislao I
+# Manifattura Forestiera
 country_event = {
-	id = FEE_Naples_Events.17
-	title = FEE_Naples_Events.17.T
-	desc = FEE_Naples_Events.17.D
+	id = FEE_Naples_Events.18
+	title = FEE_Naples_Events.18.T
+	desc = FEE_Naples_Events.18.D
+	picture = TRADE_GOODS_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		125 = {
+			owned_by = ROOT
+			num_of_times_improved = 3
+			NOT = { has_province_modifier = fee_nap_silk_foreign_craftsman_palermo }
+			OR = {
+				trade_goods = cloth
+				trade_goods = silk
+			}
+		}
+		NOT = { is_year = 1492 }
+	}
+
+	goto = 125
+
+	mean_time_to_happen = {
+		years = 1
+	}
+
+	option = {
+		name = FEE_Naples_Events.18.OPT1
+		ai_chance = {
+			factor = 33
+		}
+
+		if = {
+			limit = { owns = 125 }
+			add_dip_power = 50
+		}
+		define_advisor = {
+			type = trader
+			skill = 2
+			cost_multiplier = 0.50
+			culture = tuscan
+			religion = catholic
+		}
+		custom_tooltip = FEE_NAPLES_SILK_FOREIGN_CRAFTSMAN_PALERMO_TUSCAN_TT
+		hidden_effect = {
+			every_country = {
+				limit = {
+					culture = tuscan
+					capital_scope = {
+						region = italy_region
+					}
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = opinion_export_good
+				}
+				reverse_add_opinion = {
+					who = ROOT
+					modifier = opinion_export_good
+				}
+			}
+		}
+		125 = {
+			add_permanent_province_modifier = {
+				name = fee_nap_silk_foreign_craftsman_palermo
+				duration = -1
+			}
+		}
+		116 = {
+			add_trade_modifier = {
+				who = ROOT
+				duration = 3650
+				power = 10
+				key = fee_nap_silk_foreign_craftsman
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Naples_Events.18.OPT2
+		ai_chance = {
+			factor = 33
+		}
+
+		if = {
+			limit = { owns = 125 }
+			add_dip_power = 50
+		}
+		define_advisor = {
+			type = trader
+			skill = 2
+			cost_multiplier = 0.50
+			culture = aragonese
+			religion = catholic
+		}
+		custom_tooltip = FEE_NAPLES_SILK_FOREIGN_CRAFTSMAN_PALERMO_MOORISH_TT
+		hidden_effect = {
+			every_country = {
+				limit = { culture_group = maghrebi }
+				add_opinion = {
+					who = ROOT
+					modifier = opinion_export_good
+				}
+				reverse_add_opinion = {
+					who = ROOT
+					modifier = opinion_export_good
+				}
+			}
+		}
+		125 = {
+			add_permanent_province_modifier = {
+				name = fee_nap_silk_foreign_craftsman_palermo
+				duration = -1
+			}
+		}
+		224 = {
+			add_trade_modifier = {
+				who = ROOT
+				duration = 3650
+				power = 10
+				key = fee_nap_silk_foreign_craftsman
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Naples_Events.18.OPT3
+		ai_chance = {
+			factor = 33
+		}
+
+		if = {
+			limit = { owns = 125 }
+			add_dip_power = 50
+		}
+		define_advisor = {
+			type = trader
+			skill = 2
+			cost_multiplier = 0.50
+			culture = dutch
+			religion = catholic
+		}
+		custom_tooltip = FEE_NAPLES_SILK_FOREIGN_CRAFTSMAN_PALERMO_DUTCH_TT
+		hidden_effect = {
+			every_country = {
+				limit = { 
+					OR = {
+						culture = dutch
+						culture = flemish
+						culture = frisian
+					}
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = opinion_export_good
+				}
+				reverse_add_opinion = {
+					who = ROOT
+					modifier = opinion_export_good
+				}
+			}
+		}
+		125 = {
+			add_permanent_province_modifier = {
+				name = fee_nap_silk_foreign_craftsman_palermo
+				duration = -1
+			}
+		}
+		97 = {
+			add_trade_modifier = {
+				who = ROOT
+				duration = 3650
+				power = 15
+				key = fee_nap_silk_foreign_craftsman
+			}
+		}
+	}
+}
+
+# A Jewish Dilemma...
+country_event = {
+	id = FEE_Naples_Events.19
+	title = FEE_Naples_Events.19.T
+	desc = FEE_Naples_Events.19.D
+	picture = TRADE_GOODS_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		125 = {
+			owned_by = ROOT
+			has_province_modifier = fee_nap_silk_foreign_craftsman_palermo
+			OR = {
+				trade_goods = cloth
+				trade_goods = silk
+			}
+		}
+		is_year = 1492
+		NOT = { is_year = 1550 }
+	}
+
+	goto = 125
+
+	mean_time_to_happen = {
+		days = 180
+	}
+
+	option = {
+		name = FEE_Naples_Events.19.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_papal_influence = -15
+		reduce_estate_church_loyalty_effect = yes
+		if = {
+			limit = {
+				religion = catholic
+			}
+			PAP = {
+				add_opinion = {
+					who = ROOT
+					modifier = opinion_rejected_papal_demand_advisor
+				}
+				reverse_add_opinion = {
+					who = ROOT
+					modifier = opinion_rejected_papal_demand_advisor
+				}
+			}
+		}
+		if = {
+			limit = {
+				vassal_of = SPA
+			}
+			SPA = {
+				add_opinion = {
+					who = ROOT
+					modifier = opinion_rejected_papal_demand_advisor
+				}
+				reverse_add_opinion = {
+					who = ROOT
+					modifier = opinion_rejected_papal_demand_advisor
+				}
+			}
+		}
+		else_if = {
+			limit = { vassal_of = CAS }
+			CAS = {
+				add_opinion = {
+					who = ROOT
+					modifier = opinion_rejected_papal_demand_advisor
+				}
+				reverse_add_opinion = {
+					who = ROOT
+					modifier = opinion_rejected_papal_demand_advisor
+				}
+			}
+		}
+		else_if = {
+			limit = { vassal_of = ARA }
+			ARA = {
+				add_opinion = {
+					who = ROOT
+					modifier = opinion_rejected_papal_demand_advisor
+				}
+				reverse_add_opinion = {
+					who = ROOT
+					modifier = opinion_rejected_papal_demand_advisor
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Naples_Events.19.OPT2
+		ai_chance = {
+			factor = 50
+		}
+
+		add_prestige = -15
+		add_papal_influence = 15
+		125 = { add_base_tax = -3 }
+		123 = {
+			add_base_tax = 1
+			add_permanent_province_modifier = {
+				name = fee_nap_catanzaro_seta_jews_messina
+				duration = 7300
+			}
+		}
+	}
+}
+
+# End of the Giudecca?...
+country_event = {
+	id = FEE_Naples_Events.20
+	title = FEE_Naples_Events.20.T
+	desc = FEE_Naples_Events.20.D
+	picture = TRADE_GOODS_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		124 = {
+			owned_by = ROOT
+			has_province_modifier = fee_nap_silk_jewish_craftsman_messina
+			OR = {
+				trade_goods = cloth
+				trade_goods = silk
+			}
+		}
+		is_year = 1492
+		NOT = { is_year = 1550 }
+	}
+
+	goto = 124
+
+	mean_time_to_happen = {
+		days = 180
+	}
+
+	option = {
+		name = FEE_Naples_Events.20.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_papal_influence = -15
+		reduce_estate_church_loyalty_effect = yes
+		if = {
+			limit = {
+				religion = catholic
+			}
+			PAP = {
+				add_opinion = {
+					who = ROOT
+					modifier = opinion_rejected_papal_demand_advisor
+				}
+				reverse_add_opinion = {
+					who = ROOT
+					modifier = opinion_rejected_papal_demand_advisor
+				}
+			}
+		}
+		if = {
+			limit = {
+				vassal_of = SPA
+			}
+			SPA = {
+				add_opinion = {
+					who = ROOT
+					modifier = opinion_rejected_papal_demand_advisor
+				}
+				reverse_add_opinion = {
+					who = ROOT
+					modifier = opinion_rejected_papal_demand_advisor
+				}
+			}
+		}
+		else_if = {
+			limit = { vassal_of = CAS }
+			CAS = {
+				add_opinion = {
+					who = ROOT
+					modifier = opinion_rejected_papal_demand_advisor
+				}
+				reverse_add_opinion = {
+					who = ROOT
+					modifier = opinion_rejected_papal_demand_advisor
+				}
+			}
+		}
+		else_if = {
+			limit = { vassal_of = ARA }
+			ARA = {
+				add_opinion = {
+					who = ROOT
+					modifier = opinion_rejected_papal_demand_advisor
+				}
+				reverse_add_opinion = {
+					who = ROOT
+					modifier = opinion_rejected_papal_demand_advisor
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Naples_Events.20.OPT2
+		ai_chance = {
+			factor = 50
+		}
+
+		add_prestige = -15
+		add_papal_influence = 15
+		124 = { add_base_production = -3 }
+		123 = {
+			add_base_tax = 1
+			add_permanent_province_modifier = {
+				name = fee_nap_catanzaro_seta_jews_messina
+				duration = 7300
+			}
+		}
+	}
+}
+
+# Ashes on our Silk?
+country_event = {
+	id = FEE_Naples_Events.21
+	title = FEE_Naples_Events.21.T
+	desc = FEE_Naples_Events.21.D
+	picture = TRADE_GOODS_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			124 = {
+				owned_by = ROOT
+				has_province_modifier = fee_nap_silk_jewish_craftsman_messina
+				OR = {
+					trade_goods = cloth
+					trade_goods = silk
+				}
+			}
+		}
+		is_year = 1516
+		NOT = { is_year = 1693 }
+	}
+
+	goto = 124
+
+	mean_time_to_happen = {
+		years = 2
+	}
+
+	option = {
+		name = FEE_Naples_Events.21.OPT1
+		ai_chance = {
+			factor = 19
+		}
+
+		124 = {
+			add_base_production = -3
+			add_trade_modifier = {
+				who = ROOT
+				duration = 7300
+				power = -15
+				key = opinion_export_bad
+			}
+			remove_province_modifier = fee_nap_silk_foreign_craftsman_palermo
+			if = {
+				limit = {
+					is_expanded_mod_active = { mod = trade_goods }
+				}
+				change_trade_goods = olive_oil
+			}
+			else = {
+				change_trade_goods = fish
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Naples_Events.21.OPT2
+		ai_chance = {
+			factor = 27
+		}
+
+		add_years_of_income = -0.5
+		124 = {
+			add_base_tax = 1
+			add_province_modifier = {
+				name = monopoly_enforced
+				duration = 3650
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Naples_Events.21.OPT3
+		ai_chance = {
+			factor = 27
+		}
+
+		add_years_of_income = -0.5
+		124 = {
+			add_base_production = 1
+			add_province_modifier = {
+				name = company_mint
+				duration = 3650
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Naples_Events.21.OPT4
+		ai_chance = {
+			factor = 27
+		}
+
+		add_years_of_income = -0.5
+		124 = {
+			add_base_production = 1
+			add_province_modifier = {
+				name = developing_company_settlement
+				duration = 3650
+			}
+		}
+	}
+}
+
+# the Messina Earthquake?
+country_event = {
+	id = FEE_Naples_Events.22
+	title = FEE_Naples_Events.22.T
+	desc = FEE_Naples_Events.22.D
+	picture = COUNTRY_COLLAPSE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			124 = {
+				owned_by = ROOT
+				has_province_modifier = fee_nap_silk_jewish_craftsman_messina
+				OR = {
+					trade_goods = cloth
+					trade_goods = silk
+				}
+			}
+		}
+		is_year = 1693
+	}
+
+	goto = 124
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = FEE_Naples_Events.22.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_years_of_income = -1
+		124 = {
+			add_base_tax = -3
+			add_base_production = -3
+			add_base_manpower = -3
+			add_devastation = 100
+			add_province_modifier = {
+				name = earthquake
+				duration = 3650
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Naples_Events.22.OPT2
+		ai_chance = {
+			factor = 50
+		}
+
+		124 = {
+			add_base_tax = -3
+			add_base_production = -3
+			add_base_manpower = -3
+			add_devastation = 100
+			add_province_modifier = {
+				name = earthquake
+				duration = 3650
+			}
+			remove_province_modifier = fee_nap_silk_foreign_craftsman_palermo
+			if = {
+				limit = {
+					is_expanded_mod_active = { mod = trade_goods }
+				}
+				change_trade_goods = olive_oil
+			}
+			else = {
+				change_trade_goods = fish
+			}
+		}
+	}
+}
+
+### History of Naples under the rule of Ferdinando I di Napoli 1458 - 1494 and or a bit before
+
+# Giovanni Antonio Orsini 
+country_event = {
+	id = FEE_Naples_Events.25
+	title = FEE_Naples_Events.25.T
+	desc = FEE_Naples_Events.25.D
+	picture = ADVISOR_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		fee_is_was_nap_sic = yes
+		owns = 122
+		is_year = 1401
+		NOT = { is_year = 1463 }
+	}
+
+	goto = 122
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Naples_Events.25.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		define_advisor = {
+			type = trader
+			age = 43
+			skill = 2
+			cost_multiplier = 0.75
+			religion = catholic
+			culture = neapolitan
+			name = "Giovanni Antonio Orsini"
+		}
+		122 = {
+			add_base_production = 1
+			add_permanent_province_modifier = {
+				name = fee_nap_taranto_del_balzo
+				duration = -1
+			}
+			province_event = {
+				id = FEE_Naples_Events.26
+				days = 1825
+				random = 547
+			}
+		}
+	}
+}
+
+# Commissioni Marittime dei del Balzo
+province_event = {
+	id = FEE_Naples_Events.26
+	title = FEE_Naples_Events.26.T
+	desc = FEE_Naples_Events.26.D
+	picture = SHIP_SAILING_eventPicture
+
+	is_triggered_only = yes
+
+	goto = 122
+
+	immediate = {
+		hidden_effect = {
+			122 = {
+				owner = { save_event_target_as = fee_nap_owner_122 }
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Naples_Events.26.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		owner = { add_treasury = -25 }
+		add_prosperity = 50
+		add_trade_modifier = {
+			who = event_target:fee_nap_owner_122
+			duration = 5475
+			power = 15
+			key = fee_nap_commissioni_del_balzo
+		}
+		remove_province_modifier = fee_nap_taranto_del_balzo
+		add_permanent_province_modifier = {
+			name = fee_nap_commissioni_del_balzo
+			duration = -1
+		}
+		every_neighbor_province = {
+			limit = { owned_by = event_target:fee_nap_owner_122 }
+			random = {
+				chance = 50
+				add_base_production = 1
+			}
+		}
+		province_event = {
+			id = FEE_Naples_Events.27
+			days = 1825
+			random = 547
+		}
+	}
+
+	option = {
+		name = FEE_Naples_Events.26.OPT2
+		ai_chance = {
+			factor = 25
+		}
+
+		122 = { remove_province_modifier = fee_nap_taranto_del_balzo }
+		reduce_estate_burghers_loyalty_effect = yes
+	}
+}
+
+# Espansione Marittima dei del Balzo
+province_event = {
+	id = FEE_Naples_Events.27
+	title = FEE_Naples_Events.27.T
+	desc = FEE_Naples_Events.27.D
+	picture = SHIP_SAILING_eventPicture
+
+	is_triggered_only = yes
+
+	goto = 122
+
+	option = {
+		name = FEE_Naples_Events.27.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		owner = { add_mercantilism_or_monarch_power = { amount = 3 } }
+		151 = {
+			add_trade_modifier = {
+				who = ROOT
+				duration = 3650
+				power = 15
+				key = fee_nap_commissioni_del_balzo
+			}
+		}
+		321 = {
+			add_trade_modifier = {
+				who = ROOT
+				duration = 3650
+				power = 15
+				key = fee_nap_commissioni_del_balzo
+			}
+		}
+		137 = {
+			add_trade_modifier = {
+				who = ROOT
+				duration = 3650
+				power = 15
+				key = fee_nap_commissioni_del_balzo
+			}
+		}
+	}
+}
+
+# The reclusion of Giovanni Antonio Orsini
+country_event = {
+	id = FEE_Naples_Events.28
+	title = FEE_Naples_Events.28.T
+	desc = FEE_Naples_Events.28.D
+	picture = ADVISOR_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		fee_is_was_nap_sic = yes
+		NOT = { has_ruler = "Alfons V" }
+		NOT = { is_year = 1463 }
+	}
+
+	goto = 122
+
+	option = {
+		name = FEE_Naples_Events.28.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_legitimacy_equivalent = { amount = -5 republican_tradition = -3 }
+	}
+}
+
+# The Orsini Conundrum
+country_event = {
+	id = FEE_Naples_Events.29
+	title = FEE_Naples_Events.29.T
+	desc = FEE_Naples_Events.29.D
+	picture = REVOLT_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		owns = 122
+		controls = 122
+	}
+
+	option = {
+		name = FEE_Naples_Events.29.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		set_country_flag = fee_nap_conjury_orsini
+		122 = {
+			add_devastation = 100
+			add_base_tax = -1
+			add_base_production = -1
+			add_base_manpower = -1
+			spawn_rebels = {
+				size = 1
+				type = noble_rebels
+				friend = FRA
+				leader = "Giovanni Antonio Orsini"
+				leader_dynasty = "del Balzo"
+			}
+		}
+	}
+}
+
+# End of del Balzo?
+country_event = {
+	id = FEE_Naples_Events.30
+	title = FEE_Naples_Events.30.T
+	desc = FEE_Naples_Events.30.D
 	picture = GOOD_WITH_MONARCH_eventPicture
 
 	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		122 = {
+			owned_by = ROOT
+			has_province_modifier = fee_nap_commissioni_del_balzo
+		}
+		has_country_flag = fee_nap_conjury_orsini
+	}
+
+	option = {
+		name = FEE_Naples_Events.30.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_years_of_income = -0.25
+	}
+
+	option = {
+		name = FEE_Naples_Events.30.OPT2
+		ai_chance = {
+			factor = 25
+		}
+
+		add_legitimacy_equivalent = { amount = -5 republican_tradition = -3 }
+		122 = { remove_province_modifier = fee_nap_commissioni_del_balzo }
+	}
+
+	after = {
+		hidden_effect = {
+			clr_country_flag = fee_nap_conjury_orsini
+		} 
+	}
+}
+
+#########	On the Ottoman Invasion	#########
+
+# The Turkish threat
+# country_event = {
+# 	id = FEE_Naples_Events.31
+# 	title = FEE_Naples_Events.31.T
+# 	desc = FEE_Naples_Events.31.D
+# 	picture = SHIP_SAILING_eventPicture
+
+# 	fire_only_once = yes
+
+# 	trigger = {
+# 		owns = 122
+# 		1310 = {
+# 			any_neighbor_province = {
+# 				owned_by = TUR
+# 			}
+# 		}
+# 	}
+
+# 	option = {
+# 		name = FEE_Naples_Events.31.OPT1
+# 		ai_chance = {
+# 			factor = 75
+# 		}
+
+# 		add_years_of_income = -0.25
+# 		122 = {
+# 			add_base_manpower = 2
+# 		}
+# 	}
+
+# 	option = {
+# 		name = FEE_Naples_Events.31.OPT2
+# 		ai_chance = {
+# 			factor = 25
+# 		}
+
+		
+# 	}
+# }
+
+#Dream of Ladislao I
+country_event = {
+	id = FEE_Naples_Events.93
+	title = FEE_Naples_Events.93.T
+	desc = FEE_Naples_Events.93.D
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	fire_only_once = yes
+
 	trigger = {
 		is_year = 1377
-		OR = {
-			tag = NAP
-			tag = TTS
-			was_tag = NAP
-		}
-		is_subject = no
+		fee_is_was_nap_sic = yes
+		is_free_or_tributary_trigger = yes
 	}
 
 	mean_time_to_happen = {
@@ -1389,58 +2114,63 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Naples_Events.17.OPT1
+		name = FEE_Naples_Events.93.OPT1
 		ai_chance = {
 			factor = 50
 		}
 
 		tuscany_area = {
 			limit = {
-					NOT = { owned_by = ROOT }
-					NOT = { is_core = ROOT }
-				}
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+				NOT = { is_empty = yes }
+				NOT = { is_wasteland = yes }
+			}
 			add_permanent_claim = ROOT
 		}
 		lazio_area = {
 			limit = {
-					NOT = { owned_by = ROOT }
-					NOT = { is_core = ROOT }
-				}
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+				NOT = { is_empty = yes }
+				NOT = { is_wasteland = yes }
+			}
 			add_permanent_claim = ROOT
 		}
+		set_country_flag = fee_nap_followed_dream_ladislao
+		custom_tooltip = FEE_NAP_FOLLOWED_DREAM_LADISLAO_TT
 	}
 
 	option = {
-		name = FEE_Naples_Events.17.OPT2
+		name = FEE_Naples_Events.93.OPT2
 		ai_chance = {
 			factor = 50
 		}
 
-		add_adm_power = 100
-		add_dip_power = 100
-		add_mil_power = 100
-		add_stability = 1
+		add_adm_power = 50
+		add_dip_power = 50
+		add_mil_power = 50
 	}
 }
 
 #Legacy of Ladislao I
 country_event = {
-	id = FEE_Naples_Events.18
-	title = FEE_Naples_Events.18.T
-	desc = FEE_Naples_Events.18.D
+	id = FEE_Naples_Events.94
+	title = FEE_Naples_Events.94.T
+	desc = FEE_Naples_Events.94.D
 	picture = GOOD_WITH_MONARCH_eventPicture
 
 	fire_only_once = yes
+
 	trigger = {
-		is_year = 1492
 		OR = {
-			tag = NAP
-			tag = SIC
-			tag = TTS
+			is_year = 1492
+			adm_tech = 7
 		}
-		is_subject = no
+		has_country_flag = fee_nap_followed_dream_ladislao
+		fee_is_was_nap_sic = yes
+		is_free_or_tributary_trigger = yes
 		NOT = { has_country_flag = formed_italy_flag }
-		adm_tech = 7
 		tuscany_area = {
 			type = all
 			owned_by = ROOT
@@ -1460,13 +2190,13 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Naples_Events.18.OPT1
+		name = FEE_Naples_Events.94.OPT1
 		ai_chance = {
 			factor = 90
 		}
 
 		hidden_effect = {
-			set_country_flag = TTS_without_tts
+			clr_country_flag = fee_nap_followed_dream_ladislao
 			if = {
 				limit = {
 					is_part_of_hre = yes
@@ -1503,32 +2233,28 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Naples_Events.18.OPT2
+		name = FEE_Naples_Events.94.OPT2
 		ai_chance = {
 			factor = 10
 		}
 
-		add_adm_power = 100
-		add_dip_power = 100
-		add_mil_power = 100
-		add_stability = 1
+		add_adm_power = 50
+		add_dip_power = 50
+		add_mil_power = 50
 	}
 }
 
 # Pedro Alvarez de Toledo
 country_event = {
-	id = FEE_Naples_Events.19
-	title = FEE_Naples_Events.19.T
-	desc = FEE_Naples_Events.19.D
+	id = FEE_Naples_Events.95
+	title = FEE_Naples_Events.95.T
+	desc = FEE_Naples_Events.95.D
 	picture = ADVISOR_eventPicture
 
 	fire_only_once = yes
 
 	trigger = {
-		OR = {
-			tag = NAP
-			was_tag = NAP
-		}
+		fee_is_was_nap_sic = yes
 		is_year = 1520
 		NOT = { is_year = 1560 }
 	}
@@ -1547,19 +2273,21 @@ country_event = {
 
 	#We need to centralise our state.
 	option = {
-		name = FEE_Naples_Events.19.OPT1
+		name = FEE_Naples_Events.95.OPT1
 
 		add_adm_power = -50
 		add_dip_power = -50
-		add_country_modifier = {
-			name = fee_nap_pedro_alvarez
-			duration = 7300
+		capital_scope = {
+			add_permanent_province_modifier = {
+				name = fee_nap_pedro_alvarez
+				duration = 7300
+			}
 		}
 	}
 
 	#Naples must become a military power to rival any in Europe.
 	option = {
-		name = FEE_Naples_Events.19.OPT2
+		name = FEE_Naples_Events.95.OPT2
 
 		add_mil_power = 75
 	}
@@ -1567,28 +2295,25 @@ country_event = {
 
 # The Construction Projects of Pedro Alvarez de Toledo
 country_event = {
-	id = FEE_Naples_Events.20
-	title = FEE_Naples_Events.20.T
-	desc = FEE_Naples_Events.20.D
+	id = FEE_Naples_Events.96
+	title = FEE_Naples_Events.96.T
+	desc = FEE_Naples_Events.96.D
 	picture = GREAT_BUILDING_eventPicture
 
 	fire_only_once = yes
 
 	trigger = {
-		OR = {
-			tag = NAP
-			was_tag = NAP
-		}
+		fee_is_was_nap_sic = yes
 		is_year = 1530
 		NOT = { is_year = 1570 }
-		owns_core_province = 121
+		owns = 121
 	}
 
 	mean_time_to_happen = {
 		months = 360
 		modifier = {
 			factor = 0.6
-			has_country_modifier = fee_nap_pedro_alvarez
+			capital_scope = { has_province_modifier = fee_nap_pedro_alvarez }
 		}
 		modifier = {
 			factor = 0.8
@@ -1601,12 +2326,12 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Naples_Events.20.OPT1
+		name = FEE_Naples_Events.96.OPT1
 
 		121 = {
 			add_base_tax = 1
 			add_base_production = 1
-			add_province_modifier = {
+			add_permanent_province_modifier = {
 				name = fee_nap_de_toledo_naples
 				duration = 3650
 			}
@@ -1614,12 +2339,12 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Naples_Events.20.OPT2
+		name = FEE_Naples_Events.96.OPT2
 
 		121 = {
 			add_base_tax = 1
 			add_base_manpower = 1
-			add_province_modifier = {
+			add_permanent_province_modifier = {
 				name = fee_nap_de_toledo_naples
 				duration = 3650
 			}
@@ -1629,19 +2354,15 @@ country_event = {
 
 # The Flood of Bones
 country_event = {
-	id = FEE_Naples_Events.21
-	title = FEE_Naples_Events.21.T
-	desc = FEE_Naples_Events.21.D
+	id = FEE_Naples_Events.97
+	title = FEE_Naples_Events.97.T
+	desc = FEE_Naples_Events.97.D
 	picture = BIG_BOOK_eventPicture
 
 	fire_only_once = yes
 
 	trigger = {
-		OR = {
-			tag = NAP
-			was_tag = NAP
-		}
-		owns_core_province = 121
+		owns = 121
 		is_year = 1750
 	}
 
@@ -1650,28 +2371,23 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Naples_Events.21.OPT1
+		name = FEE_Naples_Events.97.OPT1
 
 		121 = { add_base_tax = 1 }
 	}
 }
 
-
 # San Gennaro dei Poveri
 country_event = {
-	id = FEE_Naples_Events.22
-	title = FEE_Naples_Events.22.T
-	desc = FEE_Naples_Events.22.D
+	id = FEE_Naples_Events.98
+	title = FEE_Naples_Events.98.T
+	desc = FEE_Naples_Events.98.D
 	picture = GREAT_BUILDING_eventPicture
 
 	fire_only_once = yes
 
 	trigger = {
-		OR = {
-			tag = NAP
-			was_tag = NAP
-		}
-		owns_core_province = 121
+		owns = 121
 		is_year = 1650
 		NOT = { is_year = 1700 }
 		is_at_war = no
@@ -1691,10 +2407,10 @@ country_event = {
 
 	#We need this, for the good of the pour
 	option = {
-		name = FEE_Naples_Events.22.OPT1
+		name = FEE_Naples_Events.98.OPT1
 
 		121 = {
-			add_province_modifier = {
+			add_permanent_province_modifier = {
 				name = fee_nap_gennaro_poveri
 				duration = -1
 			}
@@ -1703,7 +2419,7 @@ country_event = {
 
 	#Our resources are better spent elsewhere
 	option = {
-		name = FEE_Naples_Events.22.OPT2
+		name = FEE_Naples_Events.98.OPT2
 
 		add_adm_power = 25
 	}
@@ -1711,20 +2427,16 @@ country_event = {
 
 # Ospedale L'Albergo Reale dei Poveri
 country_event = {
-	id = FEE_Naples_Events.23
-	title = FEE_Naples_Events.23.T
-	desc = FEE_Naples_Events.23.D
+	id = FEE_Naples_Events.99
+	title = FEE_Naples_Events.99.T
+	desc = FEE_Naples_Events.99.D
 	picture = GREAT_BUILDING_eventPicture
 
 	fire_only_once = yes
 
 	trigger = {
-		OR = {
-			tag = NAP
-			was_tag = NAP
-		}
 		is_year = 1750
-		owns_core_province = 121
+		owns = 121
 	}
 
 	mean_time_to_happen = {
@@ -1733,38 +2445,33 @@ country_event = {
 
 	#Let us show the world we care!
 	option = {
-		name = FEE_Naples_Events.23.OPT1
+		name = FEE_Naples_Events.99.OPT1
 
 		add_years_of_income = -0.08
 		add_country_modifier = {
 			name = fee_nap_albergo_reale
 			duration = -1
 		}
-		add_prestige = 5
 	}
 
 	#Who can afford to spend money on the poor?
 	option = {
-		name = FEE_Naples_Events.23.OPT2
+		name = FEE_Naples_Events.99.OPT2
 
-		add_adm_power = 10
+		add_prestige = -5
 	}
 }
 
 # Francesco Solimena
 country_event = {
-	id = FEE_Naples_Events.24
-	title = FEE_Naples_Events.24.T
-	desc = FEE_Naples_Events.24.D
+	id = FEE_Naples_Events.100
+	title = FEE_Naples_Events.100.T
+	desc = FEE_Naples_Events.100.D
 	picture = IMPORTANT_STATUE_eventPicture
 
 	fire_only_once = yes
 
 	trigger = {
-		OR = {
-			tag = NAP
-			was_tag = NAP
-		}
 		is_year = 1670
 		NOT = { is_year = 1750 }
 	}
@@ -1775,9 +2482,9 @@ country_event = {
 
 	#Let him show what baroque art truly means!
 	option = {
-		name = FEE_Naples_Events.24.OPT1
+		name = FEE_Naples_Events.100.OPT1
 
-		add_prestige = 10
+		add_prestige_or_monarch_power = { amount = 10 }
 		add_stability_or_adm_power = yes
 		add_treasury = 50
 	}

@@ -1,3 +1,68 @@
+on_colony_finished = {
+	if = {
+		limit = { province_id = 1096 }
+		province_event = {
+			id = FEE_Genoa_Events.34
+			days = 90
+		}
+	}
+}
+
+on_institution_embracement = {
+	if = {
+		limit = {
+			is_institution_enabled = global_trade
+			has_global_flag = fee_trading_fairs_enabled
+			has_institution = global_trade
+			any_owned_province = {
+				has_province_flag = fee_first_trading_fair
+				NOT = { has_province_modifier = fee_trading_fair_origin }
+			}
+		}
+		clr_global_flag = fee_trading_fairs_enabled
+		country_event = {
+			id = FEE_Fairs_Events.6
+			days = 365
+			random = 90
+		}
+	}
+}
+
+# FROM = old owner
+on_province_owner_change = {
+	if = {
+		limit = { province_id = 1096 }
+		province_event = {
+			id = FEE_Genoa_Events.34
+			days = 90
+		}
+	}
+}
+
+# root = losing country, from = location
+on_siege_lost_country = {
+	if = {
+		limit = {
+			NOT = { has_global_flag = fee_surrender_main }
+			FROM = {
+				controlled_by = FRA
+			}
+			is_in_war = {
+				attacker_leader = ENG
+				defender_leader = FRA
+				casus_belli = cb_hundred_years_war
+			}
+		}
+		set_global_flag = fee_surrender_main
+	}
+}
+
+on_siege_won_country = {
+	events = {
+		FEE_Condottieri_Events.13
+	}
+}
+
 on_startup = {
 	country_event = { id = flavour_and_events_expanded_events.1 } # set flag
 	country_event = { #set the meme flag
@@ -22,11 +87,10 @@ on_battle_lost_unit = {
 			}
 			is_ruler_commanding_unit = yes
 			enemy_unit = {
-				unit_owner = {
-					tag = SWI
-				}
+				unit_owner = { tag = SWI }
 			}
 		}
+		SWI = { clr_ruler_flag = fee_swi_charles_in_command }
 		BUR = {
 			country_event = { id = FEE_Switzerland_Events.14 }  # kills the Ruler of Burgundy
 		}
@@ -37,15 +101,16 @@ on_battle_lost_unit = {
 on_heir_death = {
 	events = {
 		FEE_Charles_V_Events.4 #
-		FEE_Charles_V_Events.1 #Charles V becomes the heir
+		FEE_Charles_V_Events.1 # Charles V becomes the heir
 	}
 }
 
 # country
 on_monarch_death = {
 	events = {
-		FEE_Charles_V_Events.1 #Charles V becomes the heir
-		FEE_Charles_V_Events.10 #Charles Dies
+		FEE_Charles_V_Events.1 # Charles V becomes the heir
+		FEE_Charles_V_Events.10 # Charles Dies
+		FEE_Bohemia_Events.3 # Death of Jiri Podebrad
 	}
 }
 
@@ -67,14 +132,14 @@ on_new_heir = {
 			NOT = { heir_age = 1 }
 			NOT = { total_development = 150 }
 			all_countries_including_self = {
-				NOT = { has_heir_flag = child_of_destiny }
-				NOT = { has_ruler_flag = child_of_destiny }
+				NOT = { has_heir_flag = fee_child_of_destiny }
+				NOT = { has_ruler_flag = fee_child_of_destiny }
 			}
 		}
 		random = {
 			chance = 1
-			set_heir_flag = child_of_destiny
-			set_ruler_flag = child_of_destiny
+			set_heir_flag = fee_child_of_destiny
+			set_ruler_flag = fee_child_of_destiny
 		}
 	}
 }
@@ -133,6 +198,314 @@ on_war_won = {
 		}
 		country_event = {
 			id = FEE_Venice_Events.40
+		}
+	}
+}
+
+on_monthly_pulse = {
+	if = {
+		limit = {
+			check_variable = {
+				which = fee_trading_fair_event_months
+				value = 6
+			}
+		}
+		set_variable = {
+			which = fee_trading_fair_event_months
+			value = 0
+		}
+		random_list = {
+			4 = { }
+			12 = {
+				trigger = {
+					event_target:event_target_fee_fair_province = {
+						has_province_modifier = fee_trading_fair_province_modifier
+						NOT = { has_province_flag = fee_province_trading_fair_ruler_goes_to_fair }
+						NOT = { has_province_flag = fee_province_trading_fair_ruler_does_not_go_to_fair }
+					}
+				}
+				country_event = {
+					id = FEE_Fairs_Events.3000
+					days = 365
+					random = 30
+				}
+			}
+			12 = {
+				trigger = {
+					event_target:event_target_fee_fair_province = {
+						has_province_modifier = fee_trading_fair_province_modifier
+						has_province_flag = fee_province_trading_fair_started
+						had_province_flag = {
+							flag = fee_province_trading_fair_started
+							days = 1095
+						}
+						NOT = { has_province_flag = fee_province_trading_fair_nomad_accepted }
+						NOT = { has_province_flag = fee_province_trading_fair_nomad_repulsed }
+					}
+				}
+				country_event = {
+					id = FEE_Fairs_Events.5000
+					days = 365
+					random = 30
+				}
+			}
+			12 = {
+				trigger = {
+					event_target:event_target_fee_fair_province = {
+						has_province_modifier = fee_trading_fair_province_modifier
+						had_province_flag = {
+							flag = fee_province_trading_fair_started
+							days = 90
+						}
+						has_province_flag = fee_province_trading_fair_nomad_accepted
+						NOT = { has_province_flag = fee_province_trading_fair_nomad_fire }
+					}
+				}
+				country_event = {
+					id = FEE_Fairs_Events.5001
+					days = 180
+					random = 30
+				}
+			}
+			12 = {
+				trigger = {
+					NOT = { has_ruler_modifier = fee_almighty_protection }
+					NOT = { has_ruler_modifier = fee_solemn_hymn }
+					NOT = { has_ruler_modifier = fee_angelic_blessing }
+					NOT = { has_ruler_modifier = fee_kiss_luck }
+					NOT = { has_ruler_modifier = fee_ruinous_powers }
+					NOT = { has_ruler_modifier = fee_demonic_embrace }
+					NOT = { has_ruler_modifier = fee_ancient_curse }
+					NOT = { has_ruler_modifier = fee_witch_eye }
+					event_target:event_target_fee_fair_province = {
+						has_province_modifier = fee_trading_fair_province_modifier
+						has_province_flag = fee_province_trading_fair_nomad_accepted
+						has_province_flag = fee_province_trading_fair_ruler_goes_to_fair
+						NOT = { has_province_flag = fee_province_trading_fair_furtune_teller }
+					}
+				}
+				country_event = {
+					id = FEE_Fairs_Events.5002
+					days = 180
+					random = 30
+				}
+			}
+			12 = {
+				trigger = {
+					event_target:event_target_fee_fair_province = {
+						has_province_modifier = fee_trading_fair_province_modifier
+						had_province_flag = {
+							flag = fee_province_trading_fair_nomad_accepted
+							days = 365
+						}
+						NOT = { has_province_flag = fee_province_trading_fair_dealed_nomad }
+					}
+				}
+				country_event = {
+					id = FEE_Fairs_Events.5020
+					days = 365
+					random = 30
+				}
+			}
+			12 = {
+				trigger = {
+					event_target:event_target_fee_fair_province = {
+						has_province_modifier = fee_trading_fair_province_modifier
+						NOT = { has_province_flag = fee_province_trading_fair_famous_artist_accepted }
+						NOT = { has_province_flag = fee_province_trading_fair_famous_artist_refused }
+					}
+				}
+				country_event = {
+					id = FEE_Fairs_Events.6000
+					days = 270
+					random = 30
+				}
+			}
+			12 = {
+				trigger = {
+					event_target:event_target_fee_fair_province = {
+						has_province_modifier = fee_trading_fair_province_modifier
+						NOT = { current_age = age_of_revolutions }
+						NOT = { current_age = age_of_absolutism }
+						NOT = { current_age = age_of_reformation }
+						had_province_flag = {
+							flag = fee_province_trading_fair_started
+							days = 1095
+						}
+						NOT = { has_province_flag = fee_trading_fair_banquet_preparation }
+					}
+				}
+				country_event = {
+					id = FEE_Fairs_Events.7000
+					days = 90
+					random = 15
+				}
+			}
+			12 = {
+				trigger = {
+					event_target:event_target_fee_fair_province = {
+						has_province_flag = fee_trading_fair_banquet_preparation
+					}
+					NOT = { has_country_flag = fee_trading_fair_banquet_invitation }
+				}
+				country_event = {
+					id = FEE_Fairs_Events.7001
+					days = 270
+					random = 30
+				}
+			}
+		}
+	}
+	else = {
+		change_variable = {
+			which = fee_trading_fair_event_months
+			value = 1
+		}
+	}
+}
+
+on_bi_yearly_pulse_5 = {
+	random_list = {
+		1 = { }
+		33 = {
+			trigger = {
+				capital_scope = { has_province_modifier = fee_diseases_small_bubonic_outbreak }
+				has_heir = yes
+				NOT = { has_heir_flag = fee_diseases_plague_blood_ties }
+			}
+			country_event = {
+				id = FEE_Diseases_Events.1
+				days = 180
+				random = 45
+			}
+		}
+		33 = {
+			trigger = {
+				capital_scope = { has_province_modifier = fee_diseases_small_bubonic_outbreak }
+				has_consort = yes
+				NOT = { has_consort_flag = fee_diseases_bubonic_consort_killed }
+			}
+			country_event = {
+				id = FEE_Diseases_Events.2
+				days = 180
+				random = 45
+			}
+		}
+		33 = {
+			trigger = {
+				capital_scope = { has_province_modifier = fee_diseases_small_bubonic_outbreak }
+				has_regency = no
+				NOT = { has_ruler_flag = fee_diseases_bubonic_ruler_killed }
+			}
+			country_event = {
+				id = FEE_Diseases_Events.3
+				days = 180
+				random = 45
+			}
+		}
+	}
+}
+
+on_yearly_pulse_5 = {
+	random_list = {
+		1 = { }
+		50 = {
+			modifier = {
+				factor = 0.5
+				has_country_flag = has_competent_doctors
+			}
+			country_event = { id = FEE_Diseases_Events.10 } # Death's Return
+		}
+	}
+	random_list = {
+		1 = { }
+		50 = {
+			modifier = {
+				factor = 0.5
+				has_country_flag = has_competent_doctors
+			}
+			country_event = { id = FEE_Diseases_Events.11 } # Epidemia Magna
+		}
+	}
+	random_list = {
+		1 = { }
+		50 = {
+			modifier = {
+				factor = 0.5
+				has_country_flag = has_competent_doctors
+			}
+			country_event = { id = FEE_Diseases_Events.1000 } # Syphilis
+		}
+	}
+	random_list = {
+		1 = { }
+		33 = {
+			trigger = {
+				NOT = {
+					any_owned_province = { has_province_modifier = fee_diseases_damaged_goods }
+				}
+				any_owned_province = {
+					has_province_modifier = fee_diseases_small_bubonic_outbreak
+					any_neighbor_province = {
+						NOT = { has_province_modifier = fee_diseases_damaged_goods }
+					}
+				}
+			}
+			random_owned_province = {
+				limit = {
+					has_province_modifier = fee_diseases_small_bubonic_outbreak
+					any_neighbor_province = {
+						NOT = { has_province_modifier = fee_diseases_damaged_goods }
+					}
+				}
+				province_event = {
+					id = FEE_Diseases_Events.4
+					days = 180
+					random = 45
+				}
+			}
+		}
+		33 = {
+			trigger = {
+				NOT = {
+					any_owned_province = { has_province_modifier = fee_diseases_damaged_goods }
+				}
+				any_owned_province = {
+					has_province_modifier = fee_diseases_small_bubonic_outbreak
+					units_in_province = owner
+				}
+			}
+			random_owned_province = {
+				limit = {
+					has_province_modifier = fee_diseases_small_bubonic_outbreak
+					units_in_province = owner
+				}
+				province_event = {
+					id = FEE_Diseases_Events.5
+					days = 180
+					random = 45
+				}
+			}
+		}
+		33 = {
+			trigger = {
+				NOT = {
+					any_owned_province = { has_province_modifier = fee_diseases_small_bubonic_outbreak }
+				}
+				has_province_modifier = fee_diseases_small_bubonic_outbreak
+				fort_level = 1
+			}
+			random_owned_province = {
+				limit = {
+					has_province_modifier = fee_diseases_small_bubonic_outbreak
+					fort_level = 1
+				}
+				province_event = {
+					id = FEE_Diseases_Events.6
+					days = 180
+					random = 45
+				}
+			}
 		}
 	}
 }

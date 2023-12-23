@@ -4,17 +4,61 @@ fee_nap_magnanimo = {
 }
 fee_nap_transumanza = {
 	trade_goods_size_modifier = 0.10
-	local_development_cost = -0.05
+	local_development_cost = -0.10
 }
 fee_nap_porta_capuana = {
-	local_defensiveness = 0.05
+	local_defensiveness = 0.10
 	province_trade_power_value = 5
 }
-fee_nap_twenty_years_prosperity = {
-	global_unrest = -2
-	development_cost = -0.10
-	global_tax_modifier = 0.05
+fee_nap_catanzaro_seta = {
+	trade_value_modifier = 0.10
+	local_development_cost = -0.05
 }
+fee_nap_silk_foreign_craftsman = {
+	trade_value = 0.5
+	trade_value_modifier = 0.15
+}
+fee_nap_silk_consolato_seta = {
+	trade_value = 1
+	trade_value_modifier = 0.33
+}
+fee_nap_silk_new_world = {
+	trade_value = 1.5
+	trade_value_modifier = 0.50
+	local_build_cost = -0.05
+}
+fee_nap_neapolitan_black = {
+	trade_value = 1.5
+	trade_value_modifier = 0.50
+	local_development_cost_modifier = -0.05
+	local_build_cost = -0.10
+}
+fee_nap_silk_foreign_craftsman_palermo = {
+	trade_value = 0.5
+	trade_value_modifier = 0.15
+}
+fee_nap_silk_jewish_craftsman_messina = {
+	trade_goods_size = 0.5
+	trade_goods_size_modifier = 0.15
+}
+fee_nap_catanzaro_seta_jews_palermo = {
+	trade_value = 0.5
+	local_build_cost = -0.15
+}
+fee_nap_catanzaro_seta_jews_messina = {
+	trade_goods_size = 0.5
+	local_build_time = -0.15
+}
+
+fee_nap_taranto_del_balzo = {
+	province_trade_power_modifier = 5
+}
+fee_nap_commissioni_del_balzo = {
+	province_trade_power_modifier = 5
+	province_trade_power_value = 0.15
+	ship_trade_power_modifier = 0.05
+}
+
 fee_nap_pedro_alvarez = {
 	local_autonomy = -0.05
 	global_unrest = 1
@@ -26,5 +70,5 @@ fee_nap_gennaro_poveri = {
 	local_unrest = -1
 }
 fee_nap_albergo_reale = {
-	global_unrest = -1
+	manpower_recovery_speed = 0.10
 }

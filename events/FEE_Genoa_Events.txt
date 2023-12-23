@@ -10,37 +10,36 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = GEN
-		owns_core_province = 101
-		is_year = 1535
-		NOT = { is_year = 1580 }
-		NOT = {
-			has_country_modifier = fee_genoa_lanterna
+		fee_is_was_gen = yes
+		is_year = 1128
+		NOT = { is_year = 1543 }
+		101 = {
+			owned_by = ROOT
+			NOT = { has_province_modifier = fee_gen_lanterna }
 		}
 	}
 
 	mean_time_to_happen = {
-		months = 130
+		months = 60
 	}
 
 	option = {
 		name = FEE_Genoa_Events.1.OPT1
-
-		add_country_modifier = {
-			name = fee_genoa_lanterna
-			duration = -1
+		ai_chance = {
+			factor = 1
 		}
-		add_years_of_income = -1
-	}
-
-	option = {
-		name = FEE_Genoa_Events.1.OPT2
 
 		add_dip_power = 50
+		101 = {
+			add_permanent_province_modifier = {
+				name = fee_gen_lanterna
+				duration = -1
+			}
+		}
 	}
 }
 
-# Sampieru Corsu
+# Sampiero Corso
 country_event = {
 	id = FEE_Genoa_Events.2
 	title = FEE_Genoa_Events.2.T
@@ -62,7 +61,7 @@ country_event = {
 	}
 }
 
-# Corsican Constitution
+# The Corsican Constitution
 country_event = {
 	id = FEE_Genoa_Events.3
 	title = FEE_Genoa_Events.3.T
@@ -98,7 +97,7 @@ country_event = {
 	}
 }
 
-# Casa San Giorgi settles on Corsica
+# Casa San Giorgio on Corsica
 country_event = {
 	id = FEE_Genoa_Events.4
 	title = FEE_Genoa_Events.4.T
@@ -110,13 +109,10 @@ country_event = {
 	trigger = {
 		is_year = 1450
 		OR = {
-			tag = GEN
+			fee_is_was_gen = yes
 			tag = COR
 		}
 		NOT = { is_year = 1470 }
-		NOT = {
-			has_country_flag = fee_genoa_san_giorgio_timer
-		}
 		owns = 1247
 	}
 
@@ -132,10 +128,6 @@ country_event = {
 		}
 	}
 
-	immediate = {
-		set_country_flag = fee_genoa_san_giorgio_timer
-	}
-
 	option = {
 		name = FEE_Genoa_Events.4.OPT1
 
@@ -145,7 +137,7 @@ country_event = {
 			add_base_production = 2
 			add_local_autonomy = 25
 			add_province_modifier = {
-				name = fee_genoa_casa_san_giorgio
+				name = fee_gen_casa_san_giorgio
 				duration = -1
 			}
 		}
@@ -161,7 +153,7 @@ country_event = {
 	}
 }
 
-#Balilla
+#Balilla and the Genoese Revolt
 country_event = {
 	id = FEE_Genoa_Events.5
 	title = FEE_Genoa_Events.5.T
@@ -171,7 +163,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = GEN
+		fee_is_was_gen = yes
 		is_year = 1700
 		owns = 101
 		101 = {
@@ -208,7 +200,7 @@ country_event = {
 	}
 }
 
-#Balilla for Controller
+# Balilla Uprising in Genoa
 country_event = {
 	id = FEE_Genoa_Events.6
 	title = FEE_Genoa_Events.6.T
@@ -230,3 +222,2091 @@ country_event = {
 		}
 	}
 }
+
+#########	Life of the Lanterna di Genova 1507-1800	#########
+
+# Forte Briglia
+country_event = {
+	id = FEE_Genoa_Events.7
+	title = FEE_Genoa_Events.7.T
+	desc = FEE_Genoa_Events.7.D
+	picture = FORTIFIED_CITY_WITH_CARAVAN_OUTSIDE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 101
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = FEE_Genoa_Events.7.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		101 = {
+			add_base_manpower = 1
+			add_province_modifier = {
+				name = local_fortress
+				duration = 7300
+			}
+		}
+	}
+}
+
+# Friendly Fire on the Lanterna
+country_event = {
+	id = FEE_Genoa_Events.8
+	title = FEE_Genoa_Events.8.T
+	desc = FEE_Genoa_Events.8.D
+	picture = FLAGSHIP_SUNK_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_year = 1128
+		NOT = { is_year = 1543 }
+		owns = 101
+		101 = {
+			owned_by = ROOT
+			OR = {
+				AND = {
+					NOT = { controlled_by = ROOT }
+					sieged_by = ROOT
+				}
+				AND = {
+					controlled_by = ROOT
+					has_siege = yes
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	goto = 101
+
+	option = {
+		name = FEE_Genoa_Events.8.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_mercantilism = -10
+		add_prestige = -25
+		101 = {
+			add_base_production = -3
+			if = {
+				limit = {
+					has_dlc = Leviathan
+					is_expanded_mod_active = { mod = great_monuments }
+					OR = {
+						has_great_project = {
+							type = gme_lanterna_genova
+							tier = 1
+						}
+						has_great_project = {
+							type = gme_lanterna_genova
+							tier = 2
+						}
+						has_great_project = {
+							type = gme_lanterna_genova
+							tier = 3
+						}
+					}
+				}
+				add_great_project_tier = {
+					type = gme_lanterna_genova
+					tier = -1
+				}
+			}
+		}
+	}
+}
+
+# Expansion of the Lanterna
+country_event = {
+	id = FEE_Genoa_Events.9
+	title = FEE_Genoa_Events.9.T
+	desc = FEE_Genoa_Events.9.D
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 101
+		is_year = 1543
+	}
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	goto = 101
+
+	option = {
+		name = FEE_Genoa_Events.9.OPT1
+		trigger = {
+			has_dlc = Leviathan
+			is_expanded_mod_active = { mod = great_monuments }
+		}
+		ai_chance = {
+			factor = 50
+		}
+
+		add_years_of_income = -1
+		101 = {
+			if = {
+				limit = {
+					OR = {
+						has_great_project = {
+							type = gme_lanterna_genova
+							tier = 0
+						}
+						has_great_project = {
+							type = gme_lanterna_genova
+							tier = 1
+						}
+						has_great_project = {
+							type = gme_lanterna_genova
+							tier = 2
+						}
+					}
+				}
+				add_great_project_tier = {
+					type = gme_lanterna_genova
+					tier = 1
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Genoa_Events.9.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		101 = {
+			add_base_tax = 2
+			add_base_production = 3
+			if = {
+				limit = {
+					NOT = { has_dlc = Leviathan }
+				}
+				remove_province_modifier = fee_gen_lanterna
+				add_permanent_province_modifier = {
+					name = fee_gen_lanterna_genova
+					duration = -1
+				}
+			}
+		}
+	}
+}
+
+#########	Genoese-Byzantine Relations	#########
+
+# Genoese-Byzantine Relations
+country_event = {
+	id = FEE_Genoa_Events.10
+	title = FEE_Genoa_Events.10.T
+	desc = FEE_Genoa_Events.10.D
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		fee_is_was_gen = yes
+		is_year = 1261
+		NOT = { is_year = 1453 }
+		exists = BYZ
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Genoa_Events.10.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		custom_tooltip = FEE_GEN_BYZANTINE_RELATIONS_TT
+		force_remove_rival = BYZ
+		add_historical_friend = BYZ
+		BYZ = {
+			add_historical_friend = ROOT
+			force_remove_rival = ROOT
+		}
+		create_alliance = BYZ
+		add_opinion = {
+			who = BYZ
+			modifier = opinion_export_good
+		}
+		reverse_add_opinion = {
+			who = BYZ
+			modifier = opinion_export_good
+		}
+		if = {
+			limit = {
+				exists = VEN
+			}
+			add_historical_rival = VEN
+			VEN = { add_historical_rival = ROOT }
+		}
+		1320 = {
+			add_trade_modifier = {
+				who = ROOT
+				duration = 7300
+				power = 15
+				key = opinion_export_good
+			}
+			add_trade_modifier = {
+				who = BYZ
+				duration = 7300
+				power = 15
+				key = opinion_export_good
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Genoa_Events.10.OPT2
+		ai_chance = {
+			factor = 50
+		}
+
+		add_historical_rival = BYZ
+		BYZ = { add_historical_rival = ROOT }
+		add_mercantilism_or_monarch_power = { amount = 5 }
+		add_mil_power = 50
+		add_opinion = {
+			who = BYZ
+			modifier = gen_trade_access_denied
+		}
+		reverse_add_opinion = {
+			who = BYZ
+			modifier = gen_trade_access_denied
+		}
+		custom_tooltip = FEE_GEN_TREATY_CONSTANTINOPLE_TT
+		tooltip = {
+			1320 = {
+				random_trade_node_member_province = {
+					limit = {
+						owned_by = ROOT
+					}
+					add_base_production = 1
+					add_province_modifier = {
+						name = fee_gen_treaty_byzantium
+						duration = 7300
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			1320 = {
+				every_trade_node_member_province = {
+					limit = {
+						owned_by = ROOT
+					}
+					add_base_production = 1
+					add_province_modifier = {
+						name = fee_gen_treaty_byzantium
+						duration = 7300
+					}
+				}
+			}
+		}
+	}
+}
+
+# The Romans requests for aid!
+country_event = {
+	id = FEE_Genoa_Events.11
+	title = FEE_Genoa_Events.11.T
+	desc = FEE_Genoa_Events.11.D
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		fee_is_was_gen = yes
+		BYZ = {
+			is_in_war = {
+				attacker_leader = TUR
+				defender_leader = BYZ
+			}
+			OR = {
+				alliance_with = GEN
+				has_opinion = {
+					who = ROOT
+					value = 50
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Genoa_Events.11.OPT1
+		ai_chance = {
+			factor = 33
+		}
+
+		add_estate_nobles_loyalty_effect = yes
+		add_opinion = {
+			who = BYZ
+			modifier = opinion_supported_war
+		}
+		reverse_add_opinion = {
+			who = BYZ
+			modifier = opinion_supported_war
+		}
+		BYZ = {
+			define_general = {
+				name = "Giovanni Giustiniani"
+				fire = 2
+				shock = 2
+				manuever = 3
+				siege = 0
+				trait = hardy_warrior_personality
+			}
+		}
+		TUR = {
+			add_opinion = {
+				who = ROOT
+				modifier = opinion_supported_war_enemy
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Genoa_Events.11.OPT2
+		ai_chance = {
+			factor = 33
+		}
+
+		add_opinion = {
+			who = BYZ
+			modifier = opinion_supported_war
+		}
+		reverse_add_opinion = {
+			who = BYZ
+			modifier = opinion_supported_war
+		}
+		BYZ = {
+			capital_scope = {
+				add_province_modifier = {
+					name = roman_garisson
+					duration = 1825
+				}
+			}
+		}
+		TUR = {
+			add_opinion = {
+				who = ROOT
+				modifier = opinion_supported_war_enemy
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Genoa_Events.11.OPT3
+		ai_chance = {
+			factor = 33
+		}
+
+		add_prestige = -5
+		add_dip_power = -25
+		add_mil_power = -25
+		add_estate_burghers_loyalty_effect = yes
+		add_mercantilism_or_monarch_power = { amount = 3 }
+		if = {
+			limit = {
+				has_opinion_modifier = {
+					who = BYZ
+					modifier = gen_trade_given
+				}
+			}
+			remove_opinion = {
+				who = BYZ
+				modifier = gen_trade_given
+			}
+			BYZ = {
+				remove_opinion = {
+					who = BYZ
+					modifier = gen_trade_given
+				}
+			}
+		}
+		if = {
+			limit = {
+				1320 = {
+					has_trade_modifier = {
+						who = ROOT
+						key = gen_trade_given
+					}
+				}
+			}
+			1320 = {
+				remove_trade_modifier = {
+					who = ROOT
+					key = gen_trade_given
+				}
+				remove_trade_modifier = {
+					who = BYZ
+					key = gen_trade_given
+				}
+			}
+		}
+	}
+}
+
+# A Byzantine envoy
+country_event = {
+	id = FEE_Genoa_Events.12
+	title = FEE_Genoa_Events.12.T
+	desc = FEE_Genoa_Events.12.D
+	picture = DIPLOMACY_eventPicture
+
+	trigger = {
+		fee_is_was_gen = yes
+		OR = {
+			alliance_with = BYZ
+			has_opinion = {
+				who = BYZ
+				value = 125
+			}
+			reverse_has_opinion = {
+				who = BYZ
+				value = 125
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = FEE_Genoa_Events.12.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		random_list = {
+			33 = {
+				define_advisor = {
+					type = philosopher
+					skill = 2
+					culture = BYZ
+					religion = BYZ
+					cost_multiplier = 0.50
+				}
+			}
+			33 = {
+				define_advisor = {
+					type = trader
+					skill = 2
+					culture = BYZ
+					religion = BYZ
+					cost_multiplier = 0.50
+				}
+			}
+			33 = {
+				define_advisor = {
+					type = army_reformer
+					skill = 2
+					culture = BYZ
+					religion = BYZ
+					cost_multiplier = 0.50
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Genoa_Events.12.OPT2
+		ai_chance = {
+			factor = 50
+		}
+
+		create_general = {
+			tradition = 50
+			culture = BYZ
+		}
+	}
+}
+
+# Genoese Traders at court
+country_event = {
+	id = FEE_Genoa_Events.13
+	title = FEE_Genoa_Events.13.T
+	desc = FEE_Genoa_Events.13.D
+	picture = TRADEGOODS_eventPicture
+
+	trigger = {
+		tag = BYZ
+		any_country = {
+			fee_is_was_gen = yes
+			OR = {
+				alliance_with = ROOT
+				has_opinion = {
+					who = ROOT
+					value = 125
+				}
+				reverse_has_opinion = {
+					who = ROOT
+					value = 125
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = FEE_Genoa_Events.13.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		define_advisor = {
+			type = trader
+			skill = 2
+			culture = ligurian
+			religion = catholic
+			cost_multiplier = 0.50
+		}
+	}
+
+	option = {
+		name = FEE_Genoa_Events.13.OPT2
+		ai_chance = {
+			factor = 50
+		}
+		trigger = {
+			1320 = {
+				any_trade_node_member_province = {
+					owned_by = ROOT
+					NOT = { has_province_modifier = fee_gen_treaty_byzantium }
+				}
+			}
+		}
+
+		1320 = {
+			random_trade_node_member_province = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_base_production = 1
+				add_province_modifier = {
+					name = fee_gen_treaty_byzantium
+					duration = 3650
+				}
+			}
+		}
+	}
+}
+
+# Umanesimo o rinascimento?
+country_event = {
+	id = FEE_Genoa_Events.14
+	title = FEE_Genoa_Events.14.T
+	desc = FEE_Genoa_Events.14.D
+	picture = BIG_BOOK_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		fee_is_was_gen = yes
+		OR = {
+			alliance_with = BYZ
+			has_opinion = {
+				who = BYZ
+				value = 125
+			}
+			reverse_has_opinion = {
+				who = BYZ
+				value = 125
+			}
+		}
+		is_institution_enabled = renaissance
+		capital_scope = {
+			NOT = { renaissance = 100 }
+		}
+		BYZ = {
+			capital_scope = {
+				NOT = { renaissance = 100 }
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Genoa_Events.14.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		define_advisor = {
+			type = philosopher
+			culture = BYZ
+			religion = BYZ
+			skill = 2
+			discount = yes
+		}
+		capital_scope = {
+			add_institution_embracement = {
+				which = renaissance
+				value = 25
+			}
+		}
+		BYZ = {
+			define_advisor = {
+				type = philosopher
+				culture = ROOT
+				religion = ROOT
+				skill = 2
+				discount = yes
+			}
+			capital_scope = {
+				add_institution_embracement = {
+					which = renaissance
+					value = 25
+				}
+			}
+		}
+	}
+}
+
+#########	Genoa in Crimea	#########
+
+# The Crimean Colonies
+country_event = {
+	id = FEE_Genoa_Events.15
+	title = FEE_Genoa_Events.15.T
+	desc = FEE_Genoa_Events.15.D
+	picture = FORTIFIED_CITY_WITH_CARAVAN_OUTSIDE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_year = 1266
+		NOT = { is_year = 1475 }
+		fee_is_was_gen = yes
+		OR = {
+			crimea_area = {
+				owned_by = ROOT
+			}
+			azov_area = {
+				owned_by = ROOT
+			}
+		}
+		NOT = {
+			capital_scope = {
+				region = crimea_region
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		years = 1
+	}
+
+	option = {
+		name = FEE_Genoa_Events.15.OPT1
+		ai_chance = {
+			factor = 50
+		}
+		trigger = {
+			OR = {
+				crimea_area = {
+					NOT = { owned_by = ROOT }
+				}
+				azov_area = {
+					NOT = { owned_by = ROOT }
+				}
+			}
+		}
+
+		custom_tooltip = FEE_GEN_CRIMEAN_POSSESSIONS_LIBERATED_TT
+		capital_scope = {
+			area = {
+				limit = { owned_by = ROOT }
+				add_province_modifier = {
+					name = fee_gen_refugees_crimean_colonies
+					duration = 10950
+				}
+				random_list = {
+					33 = { add_base_tax = 1 }
+					33 = { add_base_production = 1 }
+					33 = { add_base_manpower = 1 }
+				}
+			}
+		}
+		hidden_effect = {
+			azov_area = {
+				limit = { owned_by = ROOT }
+				random_neighbor_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+					}
+					owner = { save_event_target_as = event_target_gen_crimean_colony }
+				}
+				add_core = event_target:event_target_gen_crimean_colony
+				cede_province = event_target:event_target_gen_crimean_colony
+			}
+			crimea_area = {
+				limit = { owned_by = ROOT }
+				random_neighbor_province = {
+					limit = {
+						NOT = { owned_by = ROOT }
+					}
+					owner = { save_event_target_as = event_target_gen_crimean_colony }
+				}
+				add_core = event_target:event_target_gen_crimean_colony
+				cede_province = event_target:event_target_gen_crimean_colony
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Genoa_Events.15.OPT2
+		ai_chance = {
+			factor = 50
+		}
+
+		add_adm_power = -50
+		add_dip_power = -50
+		add_mil_power = -50
+		add_mercantilism_or_monarch_power = { amount = 3 }
+		add_estate_burghers_loyalty_effect = yes
+		1322 = {
+			add_trade_modifier = {
+				who = ROOT
+				duration = 9125
+				power = 15
+				key = careful_trade_expansion
+			}
+		}
+		crimea_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+				NOT = { is_empty = yes }
+				NOT = { is_wasteland = yes }
+			}
+			add_permanent_claim = ROOT
+		}
+		azov_area = {
+			limit = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+				NOT = { is_empty = yes }
+				NOT = { is_wasteland = yes }
+			}
+			add_permanent_claim = ROOT
+		}
+		330 = {
+			if = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+					NOT = { is_empty = yes }
+					NOT = { is_wasteland = yes }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+		4706 = {
+			if = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+					NOT = { is_empty = yes }
+					NOT = { is_wasteland = yes }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+		1756 = {
+			if = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+					NOT = { is_empty = yes }
+					NOT = { is_wasteland = yes }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+		328 = {
+			if = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+					NOT = { is_empty = yes }
+					NOT = { is_wasteland = yes }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+		325 = {
+			if = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					NOT = { is_core = ROOT }
+					NOT = { is_empty = yes }
+					NOT = { is_wasteland = yes }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+}
+
+# Gazaria
+country_event = {
+	id = FEE_Genoa_Events.16
+	title = FEE_Genoa_Events.16.T
+	desc = FEE_Genoa_Events.16.D
+	picture = CARAVAN_EVENT_Picture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_year = 1266
+		NOT = { is_year = 1475 }
+		fee_is_was_gen = yes
+		OR = {
+			crimea_area = {
+				owned_by = ROOT
+			}
+			azov_area = {
+				owned_by = ROOT
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		years = 1
+	}
+
+	option = {
+		name = FEE_Genoa_Events.16.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		azov_area = {
+			limit = { owned_by = ROOT }
+			add_base_production = 1
+			add_province_modifier = {
+				name = regimental_town
+				duration = 10950
+			}
+		}
+		crimea_area = {
+			limit = { owned_by = ROOT }
+			add_base_production = 1
+			add_province_modifier = {
+				name = regimental_town
+				duration = 10950
+			}
+		}
+	}
+}
+
+# The Steppe Lords
+country_event = {
+	id = FEE_Genoa_Events.17
+	title = FEE_Genoa_Events.17.T
+	desc = FEE_Genoa_Events.17.D
+	picture = MERCHANTS_IN_SIBERIA_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		fee_is_was_gen = yes
+		crimea_region = { owned_by = ROOT }
+		crimea_region = {
+			OR = {
+				NOT = {
+					owner = {
+						government = tribal
+						army_size = ROOT
+					}
+				}
+				owned_by = GOL
+				owned_by = GLH
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		years = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			save_event_target_as = event_target_fee_genoa
+		}
+	}
+
+	option = {
+		name = FEE_Genoa_Events.17.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		if = {
+			limit = {
+				NOT = { exists = GOL }
+				NOT = { exists = GLH }
+			}
+			add_prestige_or_monarch_power = { amount = 20 }
+		}
+		add_country_modifier = {
+			name = fee_gen_khan_subversion
+			duration = -1
+		}
+	}
+
+	option = {
+		name = FEE_Genoa_Events.17.OPT2
+		trigger = {
+			OR = {
+				exists = GOL
+				exists = GLH
+			}
+		}
+		ai_chance = {
+			factor = 50
+		}
+
+		if = {
+			limit = { exists = GLH }
+			GLH = {
+				country_event = {
+					id = FEE_Genoa_Events.18
+					days = 30
+					random = 15
+				}
+			}
+		}
+		else = {
+			GOL = {
+				country_event = {
+					id = FEE_Genoa_Events.18
+					days = 30
+					random = 15
+				}
+			}
+		}
+	}
+}
+
+# A Genoese Request
+country_event = {
+	id = FEE_Genoa_Events.18
+	title = FEE_Genoa_Events.18.T
+	desc = FEE_Genoa_Events.18.D
+	picture = MERCHANTS_TALKING_eventPicture
+
+	is_triggered_only = yes
+
+	major = yes
+	major_trigger = {
+		tag = event_target:event_target_fee_genoa
+	}
+
+	option = {
+		name = FEE_Genoa_Events.18.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_opinion = {
+			who = FROM
+			modifier = opinion_export_good
+		}
+		reverse_add_opinion = {
+			who = FROM
+			modifier = opinion_export_good
+		}
+		FROM = {
+			add_country_modifier = {
+				name = fee_gen_help_steppe_lords
+				duration = 5475
+			}
+		}
+		add_country_modifier = {
+			name = fee_gen_crimean_trading_rights
+			duration = 5475
+		}
+	}
+
+	option = {
+		name = FEE_Genoa_Events.18.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
+		add_opinion = {
+			who = FROM
+			modifier = opinion_export_bad
+		}
+		reverse_add_opinion = {
+			who = FROM
+			modifier = opinion_export_bad
+		}
+		add_prestige_or_monarch_power = { amount = 10 }
+		add_mil_power = 25
+	}
+}
+
+# Regina del Mar Grande
+country_event = {
+	id = FEE_Genoa_Events.19
+	title = FEE_Genoa_Events.19.T
+	desc = FEE_Genoa_Events.19.D
+	picture = FORTIFIED_CITY_WITH_CARAVAN_OUTSIDE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_year = 1249
+		NOT = { is_year = 1475 }
+		fee_is_was_gen = yes
+		owns = 285
+	}
+
+	mean_time_to_happen = {
+		years = 1
+	}
+
+	option = {
+		name = FEE_Genoa_Events.19.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		285 = {
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+			add_permanent_province_modifier = {
+				name = fee_gen_queen_black_sea
+				duration = -1
+			}
+		}
+	}
+}
+
+# A Crimean Tsar?
+country_event = {
+	id = FEE_Genoa_Events.20
+	title = FEE_Genoa_Events.20.T
+	desc = FEE_Genoa_Events.20.D
+	picture = DIPLOMACY_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		fee_is_was_gen = yes
+		crimea_region = {
+			owned_by = ROOT
+			any_neighbor_province = {
+				OR = {
+					owned_by = MOS
+					owned_by = RUS
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		years = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			save_event_target_as = event_target_fee_genoa
+		}
+	}
+
+	option = {
+		name = FEE_Genoa_Events.20.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_dip_power = -25
+		add_treasury = -25
+		if = {
+			limit = {
+				exists = RUS
+			}
+			RUS = {
+				country_event = {
+					id = FEE_Genoa_Events.21
+					days = 1
+				}
+			}
+		}
+		else = {
+			MOS = {
+				country_event = {
+					id = FEE_Genoa_Events.21
+					days = 1
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Genoa_Events.20.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
+		add_mercantilism_or_monarch_power = { amount = 5 }
+		if = {
+			limit = {
+				exists = RUS
+			}
+			add_casus_belli = {
+				type = cb_border_war
+				target = RUS
+				months = 120
+			}
+			add_opinion = {
+				who = RUS
+				modifier = opinion_export_bad
+			}
+			reverse_add_opinion = {
+				who = RUS
+				modifier = opinion_export_bad
+			}
+		}
+		else = {
+			add_casus_belli = {
+				type = cb_border_war
+				target = MOS
+				months = 120
+			}
+			add_opinion = {
+				who = MOS
+				modifier = opinion_export_bad
+			}
+			reverse_add_opinion = {
+				who = MOS
+				modifier = opinion_export_bad
+			}
+		}
+	}
+}
+
+# Genovese Embassy
+country_event = {
+	id = FEE_Genoa_Events.21
+	title = FEE_Genoa_Events.21.T
+	desc = FEE_Genoa_Events.21.D
+	picture = DIPLOMACY_SIGNING_eventPicture
+
+	is_triggered_only = yes
+
+	major = yes
+
+	major_trigger = {
+		tag = event_target:event_target_fee_genoa
+	}
+
+	option = {
+		name = FEE_Genoa_Events.21.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		capital_scope = {
+			add_province_modifier = {
+				name = fee_gen_russian_genoese_trade_agreement
+				duration = 3650
+			}
+		}
+		FROM = {
+			capital_scope = {
+				add_province_modifier = {
+					name = fee_gen_genoese_russian_trade_agreement
+					duration = 3650
+				}
+			}
+		}
+		add_opinion = {
+			who = FROM
+			modifier = opinion_export_good
+		}
+		reverse_add_opinion = {
+			who = FROM
+			modifier = opinion_export_good
+		}
+	}
+
+	option = {
+		name = FEE_Genoa_Events.21.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
+		add_casus_belli = {
+			type = cb_border_war
+			target = FROM
+			months = 120
+		}
+		add_opinion = {
+			who = FROM
+			modifier = opinion_export_bad
+		}
+		reverse_add_opinion = {
+			who = FROM
+			modifier = opinion_export_bad
+		}
+	}
+}
+
+#########	Genovese Explorers	#########
+
+# Antonio Malfante
+country_event = {
+	id = FEE_Genoa_Events.22
+	title = FEE_Genoa_Events.22.T
+	desc = FEE_Genoa_Events.22.D
+	picture = MERCHANTS_TALKING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		fee_is_was_gen = yes
+		is_year = 1445
+		NOT = { is_year = 1446 }
+	}
+
+	mean_time_to_happen = {
+		days = 90
+	}
+
+	option = {
+		name = FEE_Genoa_Events.22.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_treasury = 25
+		add_estate_burghers_loyalty_effect = yes
+		add_mercantilism_or_monarch_power = { amount = 3 }
+		4562 = {
+			province_event = {
+				id = FEE_Genoa_Events.23
+				days = 180
+			}
+		}
+	}
+}
+
+# Malfante in Honaine
+province_event = {
+	id = FEE_Genoa_Events.23
+	title = FEE_Genoa_Events.23.T
+	desc = FEE_Genoa_Events.23.D
+	picture = MERCHANTS_TALKING_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	goto = 4652
+
+	option = {
+		name = FEE_Genoa_Events.23.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_base_tax = 1
+		add_base_production = 1
+		add_province_modifier = {
+			name = fee_gen_antonio_malfante
+			duration = 3650
+		}
+		add_trade_modifier = {
+			who = FROM
+			duration = 3650
+			power = 20
+			key = fee_gen_antonio_malfante
+		}
+		owner = {
+			add_spy_network_from = {
+				who = FROM
+				value = 25
+			}
+			add_opinion = {
+				who = FROM
+				modifier = opinion_export_good
+			}
+			reverse_add_opinion = {
+				who = FROM
+				modifier = opinion_export_good
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Genoa_Events.23.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
+		owner = {
+			reverse_add_casus_belli = {
+				type = cb_trade_conflict
+				target = FROM
+			}
+			add_opinion = {
+				who = FROM
+				modifier = opinion_export_bad
+			}
+			reverse_add_opinion = {
+				who = FROM
+				modifier = opinion_export_bad
+			}
+		}
+	}
+
+	after = {
+		FROM = {
+			country_event = {
+				id = FEE_Genoa_Events.24
+				days = 180
+			}
+		}
+	}
+}
+
+# Golden Sahara?
+country_event = {
+	id = FEE_Genoa_Events.24
+	title = FEE_Genoa_Events.24.T
+	desc = FEE_Genoa_Events.24.D
+	picture = FORTIFIED_CITY_WITH_CARAVAN_OUTSIDE_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = FEE_Genoa_Events.24.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_treasury = -15
+		country_event = {
+			id = FEE_Genoa_Events.25
+			days = 180
+		}
+	}
+
+	option = {
+		name = FEE_Genoa_Events.24.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
+		reduce_estate_burghers_loyalty_effect = yes
+	}
+}
+
+# Malfante in Sijilmāsa
+country_event = {
+	id = FEE_Genoa_Events.25
+	title = FEE_Genoa_Events.25.T
+	desc = FEE_Genoa_Events.25.D
+	picture = SULTAN_AND_MERCHANT_eventPicture
+
+	is_triggered_only = yes
+
+	goto = 346
+
+	major = yes
+	major_trigger = {
+		owns = 346
+	}
+
+	option = {
+		name = FEE_Genoa_Events.25.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_treasury = -25
+		346 = {
+			add_base_production = 2
+		}
+		country_event = {
+			id = FEE_Genoa_Events.26
+			days = 180
+		}
+	}
+
+	option = {
+		name = FEE_Genoa_Events.25.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
+		
+	}
+}
+
+# Malfante nel Subshara
+country_event = {
+	id = FEE_Genoa_Events.26
+	title = FEE_Genoa_Events.26.T
+	desc = FEE_Genoa_Events.26.D
+	picture = FORTIFIED_CITY_WITH_CARAVAN_OUTSIDE_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	goto = 1127
+
+	option = {
+		name = FEE_Genoa_Events.26.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_mercantilism_or_monarch_power = { amount = 5 }
+		1127 = { add_base_tax = 2 }
+		capital_scope = { add_base_tax = 1 }
+		custom_tooltip = FEE_GEN_DISCOVER_TIMBUKTU_TT
+		hidden_effect = {
+			discover_province = 1127
+			1132 = {
+				every_trade_node_member_province = {
+					limit = {
+						NOT = { is_wasteland = yes }
+						is_city = yes
+					}
+					discover_country = ROOT
+				}
+			}
+		}
+		333 = {
+			province_event = {
+				id = FEE_Genoa_Events.27
+				days = 180
+			}
+		}
+	}
+}
+
+# Malfante in Mallorca
+province_event = {
+	id = FEE_Genoa_Events.27
+	title = FEE_Genoa_Events.27.T
+	desc = FEE_Genoa_Events.27.D
+	picture = MERCHANTS_TALKING_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	goto = 333
+
+	option = {
+		name = FEE_Genoa_Events.27.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_trade_node_income = 10
+		add_base_tax = 1
+		add_base_production = 1
+		add_province_modifier = {
+			name = fee_gen_antonio_malfante
+			duration = 1825
+		}
+	}
+}
+
+#########	Antonio de Noli	#########
+
+# Antonio de Noli
+country_event = {
+	id = FEE_Genoa_Events.28
+	title = FEE_Genoa_Events.28.T
+	desc = FEE_Genoa_Events.28.D
+	picture = MERCHANTS_TALKING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = POR
+		is_year = 1449
+		NOT = { is_year = 1456 }
+	}
+
+	mean_time_to_happen = {
+		days = 180
+	}
+
+	option = {
+		name = FEE_Genoa_Events.28.OPT1
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 0
+				exploration_ideas = 1
+			}
+			modifier = {
+				factor = 0
+				num_of_explorers = 1
+			}
+			modifier = {
+				factor = 0
+				has_country_modifier = fee_por_francisco_de_almeida
+			}
+			modifier = {
+				factor = 0
+				owns = 1096
+			}
+		}
+
+		add_treasury = -15
+		custom_tooltip = FEE_GEN_ANTONIO_DE_NOLI_TT
+		create_explorer = {
+			tradition = 35
+			name = "Antonio de Noli"
+			culture = ligurian
+		}
+		country_event = {
+			id = FEE_Genoa_Events.30
+			days = 180
+		}
+	}
+
+	option = {
+		name = FEE_Genoa_Events.28.OPT2
+		trigger = {
+			exists = GEN
+		}
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 20
+				exploration_ideas = 1
+			}
+			modifier = {
+				factor = 20
+				num_of_explorers = 1
+			}
+			modifier = {
+				factor = 20
+				has_country_modifier = fee_por_francisco_de_almeida
+			}
+			modifier = {
+				factor = 20
+				owns = 1096
+			}
+		}
+
+		add_opinion = {
+			who = GEN
+			modifier = opinion_export_good
+		}
+		reverse_add_opinion = {
+			who = GEN
+			modifier = opinion_export_good
+		}
+		GEN = {
+			country_event = {
+				id = FEE_Genoa_Events.29
+				days = 30
+			}
+		}
+		set_country_flag = fee_gen_por_refused_antonio
+	}
+}
+
+# Il Noli in Genoa
+country_event = {
+	id = FEE_Genoa_Events.29
+	title = FEE_Genoa_Events.29.T
+	desc = {
+		trigger = {
+			NOT = { exists = POR }
+		}
+		desc = FEE_Genoa_Events.29.D_NO_POR
+	}
+	desc = {
+		trigger = {
+			POR = { has_country_flag = fee_gen_por_refused_antonio }
+		}
+		desc = FEE_Genoa_Events.29.D_POR_REFUSED
+	}
+	picture = MERCHANTS_TALKING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		fee_is_was_gen = yes
+		OR = {
+			NOT = { exists = POR }
+			POR = {
+				has_country_flag = fee_gen_por_refused_antonio
+			}
+		}
+		is_year = 1450
+		NOT = { is_year = 1456 }
+	}
+
+	mean_time_to_happen = {
+		days = 180
+	}
+
+	option = {
+		name = FEE_Genoa_Events.29.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_treasury = -15
+		custom_tooltip = FEE_GEN_ANTONIO_DE_NOLI_TT
+		create_explorer = {
+			tradition = 35
+			name = "Antonio de Noli"
+			culture = ligurian
+		}
+		country_event = {
+			id = FEE_Genoa_Events.30
+			days = 180
+		}
+	}
+
+	option = {
+		name = FEE_Genoa_Events.29.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
+		reduce_estate_burghers_loyalty_effect = yes
+	}
+
+	after = {
+		hidden_effect = {
+			POR = { clr_country_flag = fee_gen_por_refused_antonio }
+		}
+	}
+}
+
+# Noli at the coast of Atlantic Africa
+country_event = {
+	id = FEE_Genoa_Events.30
+	title = FEE_Genoa_Events.30.T
+	desc = FEE_Genoa_Events.30.D
+	picture = SHIP_SAILING_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Genoa_Events.30.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_treasury = -20
+		1110 = {
+			add_trade_modifier = {
+				who = ROOT
+				duration = 15
+				power = 15
+				key = fee_gen_antonio_noli
+			}
+			add_trade_node_income = 5
+		}
+		custom_tooltip = FEE_NOLI_ARRIVAL_AFRICAN_COAST_TT
+		hidden_effect = {
+			macaronesia_area = { discover_country = ROOT }
+			1111 = { discover_country = ROOT }
+			1470 = { discover_country = ROOT }
+			1471 = { discover_country = ROOT }
+			1110 = {
+				every_trade_node_member_province = { discover_country = ROOT }
+			}
+			country_event = {
+				id = FEE_Genoa_Events.31
+				days = 180
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Genoa_Events.30.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
+		add_prestige = -5
+	}
+}
+
+# The arrival of Noli at the Bijagos islands
+country_event = {
+	id = FEE_Genoa_Events.31
+	title = FEE_Genoa_Events.31.T
+	desc = FEE_Genoa_Events.31.D
+	picture = SHIP_SAILING_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Genoa_Events.31.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		capital_scope = { add_trade_node_income = 1 }
+		add_mercantilism_or_monarch_power = { amount = 2 }
+		custom_tooltip = FEE_NOLI_ARRIVAL_ISLANDS_BIJAGOS_TT
+		hidden_effect = {
+			1469 = { discover_country = ROOT }
+			country_event = {
+				id = FEE_Genoa_Events.32
+				days = 180
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Genoa_Events.31.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
+		add_prestige = -10
+	}
+}
+
+# Sailing up the Gambia river
+country_event = {
+	id = FEE_Genoa_Events.32
+	title = FEE_Genoa_Events.32.T
+	desc = FEE_Genoa_Events.32.D
+	picture = SHIP_SAILING_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Genoa_Events.32.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_estate_burghers_loyalty_effect = yes
+		add_dip_power = 50
+		custom_tooltip = FEE_NOLI_ARRIVAL_GAMBIA_RIVER_TT
+		hidden_effect = {
+			jolof_area = { discover_country = ROOT }
+			futa_jallon_area = { discover_country = ROOT }
+			tekrur_area = { discover_country = ROOT }
+			manding_area = { discover_country = ROOT }
+			country_event = {
+				id = FEE_Genoa_Events.33
+				days = 180
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Genoa_Events.32.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
+		add_prestige = -15
+	}
+}
+
+# The Island of Antonio
+country_event = {
+	id = FEE_Genoa_Events.33
+	title = FEE_Genoa_Events.33.T
+	desc = FEE_Genoa_Events.33.D
+	picture = SHIP_SAILING_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	goto = 1096
+
+	option = {
+		name = FEE_Genoa_Events.33.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		create_colony_mission_reward = {
+			province = 1096
+		}
+	}
+
+	option = {
+		name = FEE_Genoa_Events.33.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
+		add_mercantilism = -3
+	}
+}
+
+# Ribeira Grande
+province_event = {
+	id = FEE_Genoa_Events.34
+	title = FEE_Genoa_Events.34.T
+	desc = FEE_Genoa_Events.34.D
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	goto = ROOT
+
+	option = {
+		name = FEE_Genoa_Events.34.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		owner = {
+			add_mercantilism_or_monarch_power = { amount = 5 }
+		}
+		rename_capital = "Ribeira Grande"
+		add_base_production = 2
+		add_or_upgrade_shipyard_building = yes
+		add_or_upgrade_trade_building = yes
+		add_or_upgrade_dock_building = yes
+		add_trade_node_income = 10
+		add_trade_modifier = {
+			who = owner
+			duration = 7300
+			power = 15
+			key = fee_gen_antonio_noli
+		}
+		add_permanent_province_modifier = {
+			name = fee_gen_antonio_noli
+			duration = -1
+		}
+	}
+}
+
+# Tratta degli Schiavi
+country_event = {
+	id = FEE_Genoa_Events.35
+	title = FEE_Genoa_Events.35.T
+	desc = FEE_Genoa_Events.35.D
+	picture = TRADE_GOODS_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+		is_year = 1466
+		OR = {
+			owns = 1096
+			any_owned_province = {
+				has_port = yes
+				continent = africa
+			}
+		}
+	}
+
+	goto = capital
+
+	mean_time_to_happen = {
+		days = 180
+	}
+
+	option = {
+		name = FEE_Genoa_Events.35.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		1466 = {
+			add_trade_modifier = {
+				who = ROOT
+				duration = 18250
+				power = 15
+				key = fee_gen_antonio_noli
+			}
+		}
+		1293 = {
+			add_trade_modifier = {
+				who = ROOT
+				duration = 18250
+				power = 15
+				key = fee_gen_antonio_noli
+			}
+		}
+		1295 = {
+			add_trade_modifier = {
+				who = ROOT
+				duration = 18250
+				power = 15
+				key = fee_gen_antonio_noli
+			}
+		}
+		1298 = {
+			add_trade_modifier = {
+				who = ROOT
+				duration = 18250
+				power = 15
+				key = fee_gen_antonio_noli
+			}
+		}
+		if = {
+			limit = {
+				any_owned_province = {
+					has_port = yes
+					continent = africa
+				}
+			}
+			random_owned_province = {
+				limit = {
+					has_port = yes
+					continent = africa
+				}
+				add_base_production = 2
+				change_trade_goods = slaves
+				add_permanent_province_modifier = {
+					name = major_slave_market
+					duration = -1
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				any_owned_province = {
+					has_port = yes
+				}
+			}
+			random_owned_province = {
+				limit = { has_port = yes }
+				if = {
+					limit = { is_capital = no }
+					add_base_production = 2
+					change_trade_goods = slaves
+					add_permanent_province_modifier = {
+						name = major_slave_market
+						duration = -1
+					}
+				}
+				else = {
+					add_base_tax = 1
+					add_base_production = 2
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Genoa_Events.35.OPT2
+		ai_chance = {
+			factor = 50
+		}
+
+		add_stability_or_adm_power_per_stab = { amount = 2 }
+		add_prestige_or_monarch_power = { amount = 10 }
+		add_legitimacy_equivalent = { amount = 10 republican_tradition = 5 }
+	}
+}
+
+# Noli governatore di Capo Verde
+country_event = {
+	id = FEE_Genoa_Events.36
+	title = FEE_Genoa_Events.36.T
+	desc = FEE_Genoa_Events.36.D
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	goto = 1096
+
+	trigger = {
+		is_year = 1472
+		owns = 1096
+	}
+
+	mean_time_to_happen = {
+		days = 180
+	}
+
+	option = {
+		name = FEE_Genoa_Events.36.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		1096 = {
+			add_base_tax = 3
+			add_or_upgrade_courthouse_building = yes
+			add_permanent_province_modifier = {
+				name = economic_urbanization_modifier
+				duration = -1
+			}
+		}
+	}
+}
+
+#
+#country_event = {
+#	id = FEE_Genoa_Events.
+#	title = FEE_Genoa_Events..T
+#	desc = FEE_Genoa_Events..D
+#	picture = GOOD_WITH_MONARCH_eventPicture
+#
+#	fire_only_once = yes
+#
+#	trigger = {
+#		fee_is_was_gen = yes
+#	}
+#
+#	mean_time_to_happen = {
+#		months = 6
+#	}
+#
+#	option = {
+#		name = FEE_Genoa_Events..OPT1
+#		ai_chance = {
+#			factor = 50
+#		}
+#
+#	}
+#}

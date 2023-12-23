@@ -542,7 +542,7 @@ country_event = {
 				}
 			}
 			210 = {
-				add_building = fort_15th
+				add_or_upgrade_fort_building = yes
 			}
 		}
 	}

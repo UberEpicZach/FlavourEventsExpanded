@@ -54,10 +54,6 @@ country_event = {
 
 	fire_only_once = yes
 
-	mean_time_to_happen = {
-		days = 1
-	}
-
 	immediate = {
 		hidden_effect = {
 			set_country_flag = FEE_Podebrad
@@ -80,19 +76,14 @@ country_event = {
 	desc = FEE_Bohemia_Events.3.D
 	picture = CITY_VIEW_eventPicture
 
+	fire_only_once = yes
+	is_triggered_only = yes
+
 	trigger = {
 		tag = BOH
 		NOT = { has_ruler_modifier = fee_boh_infertility }
 		has_country_flag = FEE_Podebrad
-		is_year = 1471
 		is_free_or_tributary_trigger = yes
-		has_regency = yes
-	}
-
-	fire_only_once = yes
-
-	mean_time_to_happen = {
-		months = 60
 	}
 
 	option = {
@@ -101,7 +92,7 @@ country_event = {
 			factor = 1
 		}
 
-		add_stability = 2
+		add_stability_or_adm_power_per_stab = { amount = 2 }
 		define_ruler = {
 			name = "Vladislav"
 			dynasty = "Jagiellon"
@@ -123,13 +114,6 @@ country_event = {
 				duration = -1
 			}
 		}
-		#custom_tooltip = FEE_BOH_Privilege_Hell
-		#hidden_effect = {
-		#	set_estate_privilege = estate_noble_baron_pensions
-		#	set_estate_privilege = estate_noble_baron_courts
-		#	set_estate_privilege = estate_noble_baron_courtier
-		#	set_estate_privilege = estate_noble_baron.Ts
-		#}
 		if = {
 			limit = {
 				exists = POL
@@ -197,7 +181,12 @@ country_event = {
 				leader = "Vladislav"
 			}
 		}
-		set_country_flag = fee_bohemia_brothers
+	}
+
+	after = {
+		hidden_effect = {
+			clr_country_flag = FEE_Podebrad
+		}
 	}
 }
 
@@ -261,7 +250,7 @@ country_event = {
 			}
 		}
 		kill_heir = {}
-		add_stability = 2
+		add_stability_or_adm_power_per_stab = { amount = 2 }
 		if = {
 			limit = {
 				has_estate = estate_nobles
@@ -637,11 +626,11 @@ country_event = {
 			add_base_production = 2
 		}
 		give_estate_land_share_large = { estate = estate_nobles }
-		if = {
-			limit = {
-				has_dlc = "Rule Britannia"
-			}
-			change_innovativeness = 3
+		add_innovativeness_or_monarch_power = {
+			amount = 3
+			adm = 30
+			dip = 30
+			mil = 30
 		}
 		add_country_modifier = {
 			name = boh_coinage_pioneer

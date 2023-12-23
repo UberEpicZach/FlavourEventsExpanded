@@ -8,8 +8,8 @@ country_event = {
 	picture = NEW_HEIR_eventPicture
 
 	trigger = {
-		has_heir_flag = child_of_destiny
-		NOT = { has_country_flag = child_of_destiny_event_1 }
+		has_heir_flag = fee_child_of_destiny
+		NOT = { has_country_flag = fee_child_of_destiny_event_1 }
 	}
 
 	mean_time_to_happen = {
@@ -18,7 +18,7 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
-			set_country_flag = child_of_destiny_event_1
+			set_country_flag = fee_child_of_destiny_event_1
 			country_event = {
 				id = FEE_Child_of_Destiny_Events.2
 				days = 730
@@ -43,7 +43,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_heir_flag = child_of_destiny
+		has_heir_flag = fee_child_of_destiny
 	}
 
 	immediate = {
@@ -74,7 +74,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_heir_flag = child_of_destiny
+		has_heir_flag = fee_child_of_destiny
 	}
 
 	immediate = {
@@ -105,7 +105,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_heir_flag = child_of_destiny
+		has_heir_flag = fee_child_of_destiny
 	}
 
 	immediate = {
@@ -136,7 +136,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_heir_flag = child_of_destiny
+		has_heir_flag = fee_child_of_destiny
 	}
 
 	immediate = {
@@ -196,7 +196,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_heir_flag = child_of_destiny
+		has_heir_flag = fee_child_of_destiny
 	}
 
 	immediate = {
@@ -227,7 +227,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_heir_flag = child_of_destiny
+		has_heir_flag = fee_child_of_destiny
 	}
 
 	immediate = {
@@ -258,7 +258,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		has_heir_flag = child_of_destiny
+		has_heir_flag = fee_child_of_destiny
 	}
 
 	option = {
@@ -280,7 +280,7 @@ country_event = {
 
 	trigger = {
 		has_dlc = "Rights of Man"
-		has_heir_flag = child_of_destiny
+		has_heir_flag = fee_child_of_destiny
 		heir_age = 14
 	}
 
@@ -294,7 +294,7 @@ country_event = {
 		ai_chance = { factor = 100 }
 
 		tooltip = {
-			add_heir_personality = child_of_destiny_personality
+			add_heir_personality = fee_child_of_destiny_personality
 		}
 	}
 }
@@ -307,8 +307,8 @@ country_event = {
 	picture = HORDE_ON_HORSEBACK_eventPicture
 
 	trigger = {
-		has_ruler_flag = child_of_destiny
-		NOT = { has_ruler_flag = child_of_destiny_event_2 }
+		has_ruler_flag = fee_child_of_destiny
+		NOT = { has_ruler_flag = fee_child_of_destiny_event_2 }
 	}
 
 	mean_time_to_happen = {
@@ -317,7 +317,7 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
-			set_ruler_flag = child_of_destiny_event_2
+			set_ruler_flag = fee_child_of_destiny_event_2
 		}
 	}
 
@@ -342,7 +342,7 @@ country_event = {
 				shock = 6
 				manuever = 6
 				siege = 6
-			#	trait = child_of_destiny_general_modifier not allowed I think
+			#	trait = fee_child_of_destiny_general_modifier not allowed I think
 			}
 		}
 	}
@@ -359,8 +359,8 @@ country_event = {
 # 		NOT = { heir_age = 1 }
 # 		NOT = { total_development = 150 }
 # 		all_countries_including_self = {
-# 			NOT = { has_heir_flag = child_of_destiny }
-# 			NOT = { has_ruler_flag = child_of_destiny }
+# 			NOT = { has_heir_flag = fee_child_of_destiny }
+# 			NOT = { has_ruler_flag = fee_child_of_destiny }
 # 		}
 # 	}
 
@@ -374,8 +374,8 @@ country_event = {
 # 		hidden_effect = {
 # 			random = {
 # 				chance = 1
-# 				set_heir_flag = child_of_destiny
-# 				set_ruler_flag = child_of_destiny
+# 				set_heir_flag = fee_child_of_destiny
+# 				set_ruler_flag = fee_child_of_destiny
 # 			}
 # 		}
 # 	}

@@ -1,0 +1,260 @@
+fee_naples_conspiracy_barons_1 = {
+	potential = {
+		fee_is_was_nap_sic = yes
+		has_estate = estate_nobles
+		NOT = { has_country_flag = fee_nap_first_barony_risen }
+		NOT = { has_country_flag = fee_nap_first_barony_skipped }
+	}
+	can_start = {
+		has_any_disaster = no
+		is_year = 1459
+		NOT = { is_year = 1464 }
+		NOT = { is_subject_of = FRA }
+		NOT = {
+			estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 70
+			}
+		}
+		OR = {
+			apulia_area = { owned_by = ROOT }
+			naples_area = { owned_by = ROOT }
+			calabria_area = { owned_by = ROOT }
+		}
+	}
+	can_stop = {
+		OR = {
+			has_any_disaster = yes
+			custom_trigger_tooltip = {
+				tooltip = FEE_NAP_FIRST_BARONY_SKIPPED_TT
+				has_country_flag = fee_nap_first_barony_skipped
+			}
+		}
+	}
+
+	down_progress = {
+		factor = 1
+	}
+
+	progress = {
+		modifier = {
+			factor = -1
+			stability = 2
+		}
+		modifier = {
+			factor = -1
+			legitimacy_equivalent = 90
+		}
+		modifier = {
+			factor = 1
+			NOT = { stability = 1 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { stability = -1 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { legitimacy_equivalent = 50 }
+		}
+		modifier = {
+			factor = 2
+			NOT = { stability = -2 }
+		}
+		modifier = {
+			factor = 1.5
+			estate_influence = {
+				influence = 90
+				estate = estate_nobles
+			}
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { crown_land_share = estate_nobles }
+		}
+		modifier = {
+			factor = 1
+			NOT = {
+				estate_loyalty = {
+					estate = estate_nobles
+					loyalty = 60
+				}
+			}
+		}
+		modifier = {
+			factor = 1.5
+			NOT = {
+				estate_loyalty = {
+					estate = estate_nobles
+					loyalty = 50
+				}
+			}
+		}
+	}
+
+	can_end = {
+		stability = 1
+		NOT = {
+			italy_region = {
+				owned_by = ROOT
+				controlled_by = noble_rebels
+			}
+		}
+		NOT = {
+			italy_region = {
+				owned_by = ROOT
+				units_in_province = REB
+			}
+		}
+	}
+
+	modifier = {
+		legitimacy = -1
+		reform_progress_growth = -0.25
+		global_manpower_modifier = -0.15
+		manpower_recovery_speed = -0.15
+	}
+
+	on_start = disaster_fee_naples_conspiracy_barons.1
+	on_end = disaster_fee_naples_conspiracy_barons.2
+
+	on_monthly = {
+		events = { }
+		random_events = {
+			1600 = 0
+			100 = disaster_fee_naples_conspiracy_barons.4
+			100 = disaster_fee_naples_conspiracy_barons.5
+			100 = disaster_fee_naples_conspiracy_barons.6
+			75 = FEE_Naples_Events.29
+		}
+	}
+}
+
+fee_naples_conspiracy_barons_2 = {
+	potential = {
+		fee_is_was_nap_sic = yes
+		has_estate = estate_nobles
+		NOT = { has_country_flag = fee_nap_second_barony_risen }
+	}
+	can_start = {
+		has_any_disaster = no
+		is_year = 1485
+		NOT = { is_year = 1486 }
+		NOT = { is_subject_of = FRA }
+		NOT = {
+			estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 70
+			}
+		}
+		OR = {
+			apulia_area = { owned_by = ROOT }
+			naples_area = { owned_by = ROOT }
+			calabria_area = { owned_by = ROOT }
+		}
+	}
+	can_stop = {
+		OR = {
+			has_any_disaster = yes
+			custom_trigger_tooltip = {
+				tooltip = FEE_NAP_FIRST_BARONY_SKIPPED_TT
+				has_country_flag = fee_nap_second_barony_skipped
+			}
+		}
+	}
+
+	down_progress = {
+		factor = 1
+	}
+
+	progress = {
+		modifier = {
+			factor = -1
+			stability = 2
+		}
+		modifier = {
+			factor = -1
+			legitimacy_equivalent = 90
+		}
+		modifier = {
+			factor = 1
+			NOT = { stability = 1 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { stability = -1 }
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { legitimacy_equivalent = 50 }
+		}
+		modifier = {
+			factor = 2
+			NOT = { stability = -2 }
+		}
+		modifier = {
+			factor = 1.5
+			estate_influence = {
+				influence = 90
+				estate = estate_nobles
+			}
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { crown_land_share = estate_nobles }
+		}
+		modifier = {
+			factor = 1
+			NOT = {
+				estate_loyalty = {
+					estate = estate_nobles
+					loyalty = 60
+				}
+			}
+		}
+		modifier = {
+			factor = 1.5
+			NOT = {
+				estate_loyalty = {
+					estate = estate_nobles
+					loyalty = 50
+				}
+			}
+		}
+	}
+
+	can_end = {
+		stability = 1
+		NOT = {
+			italy_region = {
+				owned_by = ROOT
+				controlled_by = noble_rebels
+			}
+		}
+		NOT = {
+			italy_region = {
+				owned_by = ROOT
+				units_in_province = REB
+			}
+		}
+	}
+
+	modifier = {
+		legitimacy = -1
+		reform_progress_growth = -0.25
+		global_manpower_modifier = -0.15
+		manpower_recovery_speed = -0.15
+	}
+
+	on_start = disaster_fee_naples_conspiracy_barons.10
+	on_end = disaster_fee_naples_conspiracy_barons.11
+
+	on_monthly = {
+		events = { }
+		random_events = {
+			1600 = 0
+			100 = disaster_fee_naples_conspiracy_barons.5
+			100 = disaster_fee_naples_conspiracy_barons.6
+		}
+	}
+}

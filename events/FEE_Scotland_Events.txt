@@ -1,6 +1,7 @@
 #Designed by Chu
 #Codded by ScorpenenZeronen
 namespace = FEE_Scotland_Events
+
 #The Renaissance in Scotland
 country_event = {
 	id = FEE_Scotland_Events.1
@@ -25,7 +26,12 @@ country_event = {
 			name = FEE_Scotland_compulsory_education
 			duration = -1
 		}
-		change_innovativeness = 5
+		add_innovativeness_or_monarch_power = {
+			amount = 5
+			adm = 50
+			dip = 50
+			mil = 50
+		}
 		add_estate_loyalty = {
 			estate = estate_nobles
 			loyalty = -15
@@ -53,7 +59,12 @@ country_event = {
 	}
 	option = {
 		name = FEE_Scotland_Events.1.OPT2
-		change_innovativeness = 3
+		add_innovativeness_or_monarch_power = {
+			amount = 3
+			adm = 30
+			dip = 30
+			mil = 30
+		}
 		if = {
 			limit = {
 				owns_core_province = 251
@@ -318,18 +329,7 @@ country_event = {
 			}
 			add_base_production = 1
 			add_base_manpower = 1
-			if = {
-				limit = {
-					NOT = {
-						AND = {
-							has_building = shipyard
-							has_building = grand_shipyard
-						}
-					}
-					num_free_building_slots = 1
-				}
-				add_building = shipyard
-			}
+			add_or_upgrade_shipyard_building = yes
 		}
 		add_estate_loyalty = {
 			estate = estate_nobles
@@ -341,7 +341,7 @@ country_event = {
 		ai_chance = {
 			factor = 1
 		}
-		add_stability = 2
+		add_stability_or_adm_power_per_stab = { amount = 2 }
 		highlands_area = {
 			add_province_modifier = {
 				name = FEE_Scotland_chieftans_pleased
@@ -895,7 +895,7 @@ country_event = {
 				name = FEE_Scotland_john_knox_global_missionary
 				duration = 10950
 			}
-			add_stability = 2
+			add_stability_or_adm_power_per_stab = { amount = 2 }
 			define_advisor = {
 				type = theologian
 				name = "John Knox"
@@ -904,26 +904,7 @@ country_event = {
 				religion = reformed
 				cost_multiplier = 0.25
 			}
-			random_owned_province = {
-				if = {
-					limit = {
-						NOT = {
-							OR = {
-								has_building = temple
-								has_building = cathedral
-							}
-						}
-						num_free_building_slots = 1
-					}
-					add_building = temple
-				}
-				else = {
-					PREV = {
-						add_years_of_income = 0.1
-					}
-				}
-				add_base_tax = 4
-			}
+			add_or_upgrade_tax_building = yes
 		}
 	}
 }
@@ -1128,7 +1109,7 @@ country_event = {
 		ai_chance = {
 			factor = 1
 		}
-		add_stability = 3
+		add_stability_or_adm_power_per_stab = { amount = 3 }
 		add_estate_loyalty = {
 			estate = estate_church
 			loyalty = 20
@@ -1499,7 +1480,7 @@ country_event = {
 	}
 	option = {
 		name = FEE_Scotland_Events.24.OPT1
-		add_stability = 2
+		add_stability_or_adm_power_per_stab = { amount = 2 }
 		if = {
 			limit = {
 				has_country_flag = FEE_Scotland_covenanter_won
@@ -1645,7 +1626,9 @@ country_event = {
 	title = FEE_Scotland_Events.27.T
 	desc = FEE_Scotland_Events.27.D
 	picture = COLONIZATION_eventPicture
+
 	is_triggered_only = yes
+
 	immediate = {
 		hidden_effect = {
 			colombia_region = {
@@ -1726,7 +1709,7 @@ country_event = {
 							add_core = ROOT
 							change_culture = ROOT
 							change_religion = ROOT
-							add_building = fort_15th
+							add_or_upgrade_fort_building = yes
 							add_base_tax = 4
 							add_base_production = 4
 							add_base_manpower = 4
@@ -1740,7 +1723,7 @@ country_event = {
 					add_core = ROOT
 					change_culture = ROOT
 					change_religion = ROOT
-					add_building = fort_15th
+					add_or_upgrade_fort_building = yes
 					add_base_tax = 4
 					add_base_production = 4
 					add_base_manpower = 4
@@ -1865,8 +1848,10 @@ country_event = {
 			}
 		}
 	}
+
 	option = {
 		name = FEE_Scotland_Events.27.OPT1
+
 		tooltip = {
 			colombia_region = {
 				discover_country = ROOT
@@ -1902,7 +1887,7 @@ country_event = {
 			}
 			event_target:FEE_Scotland_second_colony = {
 				custom_tooltip = FEE_Scotland_Events.27.OPT1.tooltip1
-				add_building = fort_15th
+				add_or_upgrade_fort_building = yes
 				add_base_tax = 4
 				add_base_production = 4
 				add_base_manpower = 4
@@ -1956,9 +1941,12 @@ country_event = {
 	title = FEE_Scotland_Events.28.T
 	desc = FEE_Scotland_Events.28.D
 	picture = COLONIZATION_eventPicture
+
 	is_triggered_only = yes
+
 	option = {
 		name = FEE_Scotland_Events.28.OPT1
+
 		add_stability = -1
 		add_prestige = -20
 	}
@@ -1970,7 +1958,9 @@ country_event = {
 	title = FEE_Scotland_Events.29.T
 	desc = FEE_Scotland_Events.29.D
 	picture = WESTERNISATION_eventPicture
+
 	fire_only_once = yes
+
 	trigger = {
 		OR = {
 			tag = SCO
@@ -1986,11 +1976,13 @@ country_event = {
 		}
 		is_year = 1700
 	}
+
 	option = {
 		name = FEE_Scotland_Events.29.OPT1
 		ai_chance = {
 			factor = 1
 		}
+
 		kingdom_of_the_isles_area = {
 			add_base_manpower = -1
 		}
@@ -2017,9 +2009,16 @@ country_event = {
 			name = FEE_Scotland_crofters_displaced
 			duration = 7300
 		}
+
+		country_event = {
+			id = FEE_Scotland_Events.41
+			days = 180
+		}
 	}
+
 	option = {
 		name = FEE_Scotland_Events.29.OPT2
+
 		kingdom_of_the_isles_area = {
 			add_base_manpower = 1
 		}
@@ -2155,16 +2154,14 @@ country_event = {
 			factor = 1
 		}
 		add_years_of_income = -1
-		change_innovativeness = 10
+		add_innovativeness_or_monarch_power = {
+			amount = 10
+			adm = 100
+			dip = 100
+			mil = 100
+		}
 		lowlands_area = {
-			if = {
-				limit = {
-					NOT = {
-						has_building = university
-					}
-				}
-				add_building = university
-			}
+			add_or_upgrade_university_building = yes
 			add_institution_embracement = {
 				which = enlightenment
 				value = 100
@@ -2227,7 +2224,12 @@ country_event = {
 			factor = 1
 		}
 		add_stability_or_adm_power = yes
-		change_innovativeness = 10
+		add_innovativeness_or_monarch_power = {
+			amount = 10
+			adm = 100
+			dip = 100
+			mil = 100
+		}
 		add_adm_power = 100
 		add_dip_power = 100
 		add_prestige = -20
@@ -2280,8 +2282,13 @@ country_event = {
 		months = 200
 	}
 	option = {
-		name = FEE_Scotland_Events.33.OPT1
-		change_innovativeness = 10
+		name = FEE_Scotland_Events
+		add_innovativeness_or_monarch_power = {
+			amount = 10
+			adm = 100
+			dip = 100
+			mil = 100
+		}
 		add_country_modifier = {
 			name = FEE_Scotland_industrial_pioneer
 			duration = 27375
@@ -2661,6 +2668,43 @@ country_event = {
 				owned_by = FROM
 			}
 			add_local_autonomy = 50
+		}
+	}
+}
+
+# Aftermath of the Clearances
+country_event = {
+	id = FEE_Scotland_Events.41
+	title = FEE_Scotland_Events.41.T
+	desc = FEE_Scotland_Events.41.D
+	picture = CONQUEST_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		any_owned_province = {
+			OR = {
+				area = kingdom_of_the_isles_area
+				area = highlands_area
+				area = lowlands_area
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Scotland_Events.41.OPT1
+
+		every_owned_province = {
+			limit = {
+				area = kingdom_of_the_isles_area
+				area = highlands_area
+				area = lowlands_area
+			}
+			change_trade_goods = wool
+			if = {
+				limit = { has_manufactory_no_custom_tooltip_trigger = yes }
+				add_building = textile
+			}
 		}
 	}
 }

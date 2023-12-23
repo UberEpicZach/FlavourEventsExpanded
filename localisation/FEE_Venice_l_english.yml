@@ -48,10 +48,6 @@
  FEE_Venice_Events.11.OPT1: "Money is money."
  FEE_Venice_Events.11.OPT2: "Screw damn!"
 
- FEE_Venice_Events.12.T: "The arrival of the Michele Attendolo"
- FEE_Venice_Events.12.D: "Gattamelata was succeeded by the leader Michele Attandolo, already in the service of the Republic of Florence against Milan. During his command the mercenary captain Scaramuccia da Forlì also operated under the Venetian insignia, distinguished in 1436 in the liberation of Brescia from the Visconti siege."
- FEE_Venice_Events.12.OPT1: "May he be blessed!"
-
  FEE_Venice_Events.13.T: "Jewish Community"
  FEE_Venice_Events.13.D: "With the battle of Agnadello numerous Jews from the hinterland (there were various communities between Vicenza and Conegliano) poured into the city to escape the abuses of the army of the League of Cambrai. In increasing numbers, they settled in all the Venetian districts, creating not a few frictions with the local population (often fomented by the Friars Minor). \n§YIf we allow them in§! new problems might arise if the other countries show intolerance with them"
  FEE_Venice_Events.13.OPT1: "They are our brothers."
@@ -164,7 +160,7 @@
  FEE_Venice_Events.38.D: "After the Turko-Venetian wars the Venetian Republic has seen how our bordering provinces in the Balkans are not fit and secure enough to let us have a carefree sleep thus the provinces should be reinforced to protect our trade once more!"
  FEE_Venice_Events.38.OPT1: "Let them guard our borders!"
 
- FEE_Venice_Events.39.T: "Trattato di [TUR.Capital.GetName]"
+ FEE_Venice_Events.39.T: "Trattato di Constantinopoli"
  FEE_Venice_Events.39.D: "The bloody war started in 1463 between the Serenissima Republic of Venice lead by [VEN.Monarch.GetName] and the Mighty Ottoman Empire of Sultan [TUR.Monarch.GetName] has come to an end after the blood spillage of thousands on each side. Sadly the bravery of our soldiers and the might of our navy wasn't enough to match the strength of the Turkish tide."
  FEE_Venice_Events.39.OPT1: "We are defeated."
 
@@ -182,12 +178,12 @@
  FEE_Venice_Events.42.OPT2: "This amount of ducats should suffice!"
  FEE_Venice_Events.42.OPT3: "We can't finance this. He'll help home."
 
- FEE_Venice_Events.43.T: "Arrival at [321.GetName]"
+ FEE_Venice_Events.43.T: "Arrival at Cyprus"
  FEE_Venice_Events.43.D: "The voyage from my dear home in [VEN.Capital.GetName] to [321.GetName] has proceeded without any real problem, we stopped a while in [142.GetName] and then [163.GetName] to buy back some provisions and we passed to [320.GetName] to pay a visit at the [320.Owner.GetName] and homage to the sacred house of the Master of the Hospitalier in the city, after that we set sail to [321.GetName] where we arrived in a few days of rowing, the island of Farmagosta is still as beautiful as ever and the city has still retained the majestic influx of the Knights that for decades lingered in this place after the First Crusade"
  FEE_Venice_Events.43.OPT1: "The proposal will bring money!"
  FEE_Venice_Events.43.OPT2: "We trade as we see fit."
 
- FEE_Venice_Events.44.T: "Trading in [321.GetName]"
+ FEE_Venice_Events.44.T: "Trading in Cyprus"
  FEE_Venice_Events.44.D: "My [321.Owner.Monarch.GetTitle] [321.Owner.Monarch.GetName], an ambassador from [From.GetName] has requested a mutual trade agreement between our two countries, how should we reply?"
  FEE_Venice_Events.44.OPT1: "Absolutely!"
  FEE_Venice_Events.44.OPT2: "May damn be damned!"
@@ -221,7 +217,7 @@
  FEE_Venice_Events.50.D: "The empire of [TRE.GetName] has stood there since the Fourth Crusade, when the true rulers and successors of Byzantium, the Komnenos have stood there fighting against the various tides of Arabs, Turks, and Persians that have crashed on their strongholds. Diplomatic and trade-wise they have always wanted to side with our rivals: The Genoese. \n Who would they choose this time?"
  FEE_Venice_Events.50.OPT1: "We might negotiate with them?"
 
- FEE_Venice_Events.51.T: "A Trade Offer from [VEN.GetName]"
+ FEE_Venice_Events.51.T: "A Trade Offer from the Venetians"
  FEE_Venice_Events.51.D: "The key to our survival has been our land, from our lush and fertile mountains to the safe havens of our natural harbors. And so, it would be a shame if we don't utilize this to its maximum potential. So we will use the mountains as a wall, and our harbors to make our name known around the world, who should we side with this time?"
  FEE_Venice_Events.51.OPT1: "Those Venetians seem reasonable."
  FEE_Venice_Events.51.OPT2: "We will still side with [GEN.GetName]."
@@ -271,7 +267,7 @@
  FEE_Venice_Events.61.OPT1: "Try to save as much as possible!"
  FEE_Venice_Events.61.OPT2: "We cannot risk further lives."
 
- FEE_Venice_Events.62.T: "Plague of [GetDateText] in [112.GetName]"
+ FEE_Venice_Events.62.T: "Plague of Venice"
  FEE_Venice_Events.62.D: "Despite our best efforts and the experience with the previous plague from 1348 to 1351, despite our Lazzaretto built on the island Santa Maria di Nazareth a plague has struck our beautiful city fo [112.GetName], let us pray for the best outcome. "
  FEE_Venice_Events.62.OPT1: "May god protect us."
 
@@ -303,7 +299,7 @@
  FEE_Venice_Events.68.OPT1: "Let us use the expertise of the Venetians!"
  FEE_Venice_Events.68.OPT2: "We stand alone."
 
- FEE_Venice_Events.69.T: "Arrival at [1224.GetName]"
+ FEE_Venice_Events.69.T: "Arrival at Gonder"
  FEE_Venice_Events.69.D: "Many trade routes have flown through the Horn of Africa bringing slaves, gold, ivory, coffee and other wonderful goods, should we try to rich the major powers in the Horn or try to grab the merchants for ourselves?"
  FEE_Venice_Events.69.OPT1: "Bring forth the negotiations."
  FEE_Venice_Events.69.OPT2: "We will take the trade ourselves."
@@ -341,7 +337,7 @@
  FEE_Venice_Events.76.OPT1: "He will be a fine Doge."
  FEE_Venice_Events.76.OPT2: "Isn't he 87 already?"
 
- FEE_Venice_Events.77.T: "Gritti's arrival at [151.GetName]"
+ FEE_Venice_Events.77.T: "Gritti's arrival at Constantinople"
  FEE_Venice_Events.77.D: "Seems like the ex-ambassador Andrea Gritti after traveling many European countries in France, Spain and England has laid his eyes on our marvelous city of [151.GetName] to expand his commercial routes, he has even bought one house in the district of Pera!"
  FEE_Venice_Events.77.OPT1: "Let him in."
  FEE_Venice_Events.77.OPT2: "No, he would be a spy!"
@@ -387,8 +383,8 @@
  FEE_Venice_Events.86.D: "Pilgrimage to the Jerusalem and the tomb of our beloved Jesus Christ have been prohibited for a long time and our holy brothers have been assaulted on the way to Holy land, let us send our preachers to [379.Owner.GetTitle] of [379.GetName] and ask them for safe passage."
  FEE_Venice_Events.86.OPT1: "Let's hope for a peaceful reconciliation."
 
- FEE_Venice_Events.87.T: "Pius request from [FROM.GetName]"
- FEE_Venice_Events.87.D: "Some preachers from [VEN.GetName] have requested safe passage to visit the Holy Sepulcher in [379.GetName] and pray to the tomb of Christ, should we allow all those pilgrims to march in our territories freely?"
+ FEE_Venice_Events.87.T: "Pious request from Venice"
+ FEE_Venice_Events.87.D: "Some preachers from [FROM.GetName] have requested safe passage to visit the Holy Sepulcher in [379.GetName] and pray to the tomb of Christ, should we allow all those pilgrims to march in our territories freely?"
  FEE_Venice_Events.87.OPT1: "Absolutely, my friend."
  FEE_Venice_Events.87.OPT2: "We won't allow spies in our country."
 

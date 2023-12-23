@@ -813,6 +813,8 @@ country_event = {
 		1177 = {
 			add_base_production = 3
 			add_base_manpower = 4
+			change_culture = ROOT
+			change_religion = ROOT
 			if = {
 				limit = {
 					owner = {
@@ -949,14 +951,7 @@ country_event = {
 					}
 				}
 			}
-			if = {
-				limit = {
-					NOT = { has_building = workshop }
-				}
-				add_building = workshop
-			}
-			change_culture = ROOT
-			change_religion = ROOT
+			add_or_upgrade_courthouse_building = yes
 		}
 	}
 
@@ -984,13 +979,8 @@ country_event = {
 			factor = 33
 		}
 
-		if = {
-			limit = {
-				has_estate = estate_burghers
-			}
-			add_estate_burghers_loyalty_effect = yes
-		}
-		else = { add_mercantilism = 2 }
+		add_estate_burghers_loyalty_effect = yes
+		add_mercantilism_or_monarch_power = { amount = 2 }
 	}
 }
 

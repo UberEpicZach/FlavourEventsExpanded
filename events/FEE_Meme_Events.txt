@@ -19,7 +19,7 @@ country_event = {
 
 	option = {
 		name = FEE_Meme_Events.1.OPT1
-		set_global_flag = FEE_Meme_Active
+		set_global_flag = fee_meme_active
 	}
 
 	option = {
@@ -35,7 +35,7 @@ country_event = {
 	picture = MILITARY_CAMP_eventPicture
 
 	trigger = {
-		has_global_flag = FEE_Meme_Active
+		has_global_flag = fee_meme_active
 		NOT = { has_country_flag = fee_meme_hero_fired }
 		NOT = { total_development = 100 }
 		OR = {
@@ -63,7 +63,7 @@ country_event = {
 			tradition = 75
 		}
 		add_war_exhaustion = -5
-		add_stability = 1
+		add_stability_or_adm_power_per_stab = { amount = 1 }
 		add_mil_power = 50
 	}
 }

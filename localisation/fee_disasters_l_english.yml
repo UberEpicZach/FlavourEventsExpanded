@@ -1,5 +1,5 @@
 ﻿l_english:
- # Disasters:
+# Disasters:
  fee_portuguese_succession_crisis: "Portuguese Succession Crisis"
  fee_decline_of_the_ottomans: "Decline of the Ottomans"
  fee_division_of_the_habsburg_monarchy: "Division of the Habsburg Monarchy"
@@ -9,6 +9,8 @@
  fee_crisis_of_the_mughal_empire: "Crisis of the Mughal Empire"
  fee_italy_republican_matter: "Italian Republican Matter"
  fee_netherlands_rampjaar: "Rampjaar"
+ fee_naples_conspiracy_barons_1: "First Conspirancy Of the Barons"
+ fee_naples_conspiracy_barons_2: "Second Conspirancy Of the Barons"
 
 # Events:
  #Portugal
@@ -627,7 +629,44 @@
   disaster_fee_netherlands_rampjaar.9.D: "The chaos caused by our inner turmoil has reduced our ability to compete in trade. This, as well as the instability itself, has had catastrophic effects on our production of goods as well, for both domestic and foreign trade."
   disaster_fee_netherlands_rampjaar.9.OPT1: "What else could go wrong?"
 
- # Modifiers:
+ # Naples
+  disaster_fee_naples_conspiracy_barons.1.T: "Prima Congiura dei baroni"
+  disaster_fee_naples_conspiracy_barons.1.D: "In the land of Naples, the king sought to bring about a great change. He wished to dissolve the feudal ways and make his royal power the sole force in the land. But the barons, proud and powerful, stood in his way. They opposed the king's plans for an "organic reform of the state", which sought to reduce their power and promote new entrepreneurs to the ruling class. The king sought to use fiscal reform to break free from the feudal weight, but it was a difficult task. For out of 1550 inhabited centers, only a little more than 100 were under the direct control of the king and the court. The rest were controlled by the barons, who held the resources and finances of the kingdom. The king favored the extension of state-owned cities, but the barons were organized into powerful dynasties that controlled more lands than the king. The Orsini Del Balzo, the Sanseverinos, the Acquaviva, the Caldora, the Caracciolos, the Guevara, and the Senerchia were the elite in power, suffocating the kingdom. The clash between the king and the barons was inevitable, for they stood in opposition to the very soul of his vision."
+  disaster_fee_naples_conspiracy_barons.1.OPT1: "We will never compromise, the time of diplomacy is over!"
+
+  disaster_fee_naples_conspiracy_barons.2.T: "Prima Congiura dei baroni sedata"
+  disaster_fee_naples_conspiracy_barons.2.D: "In days of yore, a great war raged within the kingdom, a war that lasted from 1459 to [GetYear]. The barons, proud and fierce, clashed with King Ferrante, seeking to hold onto their power and lands. But the king was not alone, for he had called upon many Italian captains to aid him in his struggle. And among them was Gjergj Kastrioti Skënderbeu, a hero of the Albanian people, who led a contingent of 1000 infantry and 700 knights across the Adriatic to fight for the king. In this war, there were great losses and bitter defeats. Giovanni Antonio Orsini Del Balzo, the last prince of Taranto, met his end in Altamura in [GetYear], some say at the hands of the king himself. And Antonio Caldora, duke of Bari, was captured during the siege of Vasto and stripped of all his possessions. The Orsini del Balzo lost their vast territory, which was confiscated by the court. And the Caldora, who had lost all their lands and possessions, never rose again. The barons were humbled, and the king was victorious. With his power secured, King Ferrante set about enacting new laws to weaken the baronial class and strengthen the state. The state-owned cities grew, and the king reorganized the economic and commercial life of the kingdom. For a time, the barons were subject to the royal initiative. Thus ended the war of 1459-[GetYear], a hard-fought battle that left many scars. But in the end, the king emerged triumphant, and the kingdom was forever changed."
+  disaster_fee_naples_conspiracy_barons.2.OPT1: "We will pardon but control them."
+
+  disaster_fee_naples_conspiracy_barons.4.T: "The arrival of the Skanderberg"
+  disaster_fee_naples_conspiracy_barons.4.D: "The barons have risen and bear arms against us but white clouds lies at the horizon! When all seems so lost the will can change your hope, a warrior I know from the east now is coming, he'll help us 'cause I spared his life. Like earthquake and storm we will scorch all this earth and together we'll push deep the knife. The barons tonight surely die."
+  disaster_fee_naples_conspiracy_barons.4.OPT1: "May he be blessed!"
+
+  disaster_fee_naples_conspiracy_barons.5.T: "Nobles rally support"
+  disaster_fee_naples_conspiracy_barons.5.D: "Thus the campaign of the bastards has endured and another province has fallen under their grip and other recruits join their threacherous ranks."
+  disaster_fee_naples_conspiracy_barons.5.OPT1: "You will burn hordes of hell!"
+
+  disaster_fee_naples_conspiracy_barons.6.T: "Fall of the King"
+  disaster_fee_naples_conspiracy_barons.6.D: "My court why must I assist at your death? I can't endure this tragic pain, I'll now close my eyes while the thunder strikes the sky, I cry to see any other innocent die. They are at my door."
+  disaster_fee_naples_conspiracy_barons.6.OPT1: "Thus he died."
+
+  disaster_fee_naples_conspiracy_barons.9.T: "Prima Rivolta Sventata"
+  disaster_fee_naples_conspiracy_barons.9.D: "After years of careful diplomacy and agreements with the leader of the nobility like Orsini del Bazo, principe of Taranto and Antonio Caldora, duke of Bari, our good king [Root.Monarch.GetName] has managed to create a peaceful and prosperous ruling that will last for many years."
+  disaster_fee_naples_conspiracy_barons.9.OPT1: "Long live the king!"
+
+  disaster_fee_naples_conspiracy_barons.10.T: "Seconda Congiura dei Baroni"
+  disaster_fee_naples_conspiracy_barons.10.D: "In 1485, a secretive conspiracy unfolded in the realm of Salerno, led by Prince Antonello Sanseverino. Advised by Antonello Petrucci, Francesco Coppola, and Luigi Gesualdo da Caggiano, they united various feudal families and barons of the Guelph faction, loyal to the Angevins. These nobles included the Caracciolo, Gesualdo, Del Balzo, Guevara, Senerchia, Caldora, and Sienese barons. \nThe barons gathered in Melfi expressed discontent but were cautious, not willing to act against Alfonso immediately due to the painful memory of a previous defeat. Girolamo Sanseverino was assigned to explore possible alliances and negotiate with the king. Meanwhile, Coppola played a double game, offering himself as an intermediary to King Ferrante while secretly aligning with the conspirators. His strategy aimed to secure a prominent position among the barons if they decided to dethrone the current dynasty. \nIn this intricate political landscape, alliances shifted, loyalties wavered, and the fate of the realm hung in the balance."
+  disaster_fee_naples_conspiracy_barons.10.OPT1: "We will meet again, on the battlefield."
+
+  disaster_fee_naples_conspiracy_barons.11.T: "The Barons have been defeated"
+  disaster_fee_naples_conspiracy_barons.11.D: "In a twist of fate, King [Root.Monarch.GetName] thwarted the plans of Coppola and Petrucci, who had underestimated his cunning. The king pretended to support Coppola's proposal while secretly using him as an agent within the conspiracy. He rewarded Coppola with honors and positions but continued to pursue his own agenda alongside his son Alfonso. \nThe conspirators' scheme involved barring the king from traveling through territories near the capital, isolating Naples. They hoped to bring in Papal and other reinforcements from the border between the Papal State and the Abruzzi. This plot also involved allies like John II of Lorraine and Roberto Sanseverino. \nThe climax unfolded in the [GetYear], within the Castel of [Root.Capital.GetName]. King [Root.Monarch.GetName] lured the conspirators into a trap, inviting them under the pretense of celebrating his niece's wedding. Instead, they were arrested and met their end."
+  disaster_fee_naples_conspiracy_barons.11.OPT1: "Kill them all."
+
+  disaster_fee_naples_conspiracy_barons.19.T: "The barons are happy"
+  disaster_fee_naples_conspiracy_barons.19.D: "After years of careful diplomacy and agreements with the leader of the nobility like Antonello Sanseverino prince of Salerno, our beloved king [Root.Monarch.GetName] has managed to create a peaceful and prosperous ruling that will last for many years."
+  disaster_fee_naples_conspiracy_barons.19.OPT1: "Long live the king!"
+
+# Modifiers:
  fee_portuguese_succession_crisis_chaste_king: "Chaste King"
  desc_fee_portuguese_succession_crisis_chaste_king: ""
  fee_portuguese_succession_crisis_invasion_imminent: "Spanish Invasion Imminent"
@@ -724,7 +763,14 @@
  fee_disaster_netherlands_more_economic_downturn: "More Economic Downturns"
  desc_fee_disaster_netherlands_more_economic_downturn: ""
 
- # Opinion Modifiers:
+ fee_disaster_naples_nobles_control: "Nobles in Control"
+ desc_fee_disaster_naples_nobles_control: ""
+ fee_disaster_naples_ruled_over_barons: "Ruled Over the Barons"
+ desc_fee_disaster_naples_ruled_over_barons: ""
+ fee_disaster_naples_twenty_years_prosperity: "Twenty Years of Prosperity"
+ desc_fee_disaster_naples_twenty_years_prosperity: ""
+
+# Opinion Modifiers:
  fee_portuguese_succession_crisis_acceptance: "Holy Father Accepted"
  fee_portuguese_succession_crisis_rejection: "Holy Father Refused"
  fee_portuguese_succession_crisis_involvement: "Spanish Involvement"
@@ -740,41 +786,41 @@
 
  fee_disaster_netherlands_cannibals: "Cannibals"
 
- # Flags
+# Flags
   had_fee_netherlands_rampjaar: "Rampjaar"
 
- # Rebels
-  ita_republican_rebels_title: "Giovine Italia"
-  ita_republican_rebels_name: "Giovine Italia"
-  ita_republican_rebels_desc: "The goal of these revolutionaries is to transform Italy into a unitary democratic republic, according to the principles of freedom, independence and unity, by dismissing the governments of the previous pre-unification states."
-  ita_republican_rebels_demand: "Install a Constitutional Republic"
-  ita_republican_rebels_demand_desc: "These Republican rebels fight to overthrow the government and install a constitutional republic where the citiziens will be protected by any oppression."
-  ita_republican_rebels_army: "Armata di Giovine Italia"
+# Rebels
+  fee_ita_republican_rebels_title: "Giovine Italia"
+  fee_ita_republican_rebels_name: "Giovine Italia"
+  fee_ita_republican_rebels_desc: "The goal of these revolutionaries is to transform Italy into a unitary democratic republic, according to the principles of freedom, independence and unity, by dismissing the governments of the previous pre-unification states."
+  fee_ita_republican_rebels_demand: "Install a Constitutional Republic"
+  fee_ita_republican_rebels_demand_desc: "These Republican rebels fight to overthrow the government and install a constitutional republic where the citiziens will be protected by any oppression."
+  fee_ita_republican_rebels_army: "Armata di Giovine Italia"
 
-  ita_monarchy_rebels_title: "Monarchici"
-  ita_monarchy_rebels_name: "Monarch Aider"
-  ita_monarchy_rebels_desc: "A republic in our land? I think not. We have dismissed so many other republic when they rose against the Viceroys, and we will defy this one as well."
-  ita_monarchy_rebels_demand: "Install a Parliamentary Monarchy"
-  ita_monarchy_rebels_demand_desc: "These Monarchy rebels fight to overthrow the government and install a parliamentary monarchy where the rule will reign supreme."
-  ita_monarchy_rebels_army: "Armata dei Monarchici"
+  fee_ita_monarchy_rebels_title: "Monarchici"
+  fee_ita_monarchy_rebels_name: "Monarch Aider"
+  fee_ita_monarchy_rebels_desc: "A republic in our land? I think not. We have dismissed so many other republic when they rose against the Viceroys, and we will defy this one as well."
+  fee_ita_monarchy_rebels_demand: "Install a Parliamentary Monarchy"
+  fee_ita_monarchy_rebels_demand_desc: "These Monarchy rebels fight to overthrow the government and install a parliamentary monarchy where the rule will reign supreme."
+  fee_ita_monarchy_rebels_army: "Armata dei Monarchici"
 
- # Estate Modifiers:
+# Estate Modifiers:
  EST_VAL_FEE_PARTITION_OF_POLAND_CONFEDERATION_OF_BAR: "Confederation of Bar: §Y$VAL$%§!"
  EST_VAL_FEE_PARTITION_OF_POLAND_THE_MAY_CONSTITUTION: "May Constitution: §Y$VAL$%§!"
  EST_VAL_FEE_ZEMENE_MESAFINT_REFUSED_RIGHTS: "Demand for Rights Refused: §Y$VAL$%§!"
  EST_VAL_FEE_ZEMENE_MESAFINT_NEGOTIATIONS: "Demand for Rights Negotiated: §Y$VAL$%§!"
  EST_VAL_FEE_ZEMENE_MESAFINT_FULLFILLED_DEMANDS: "Demands for Rights Fulfilled: §Y$VAL$%§!"
 
- # Casus Bellis:
+# Casus Bellis:
  cb_fee_partition_of_poland: "Partition of Poland"
  cb_fee_partition_of_poland_desc: "They are weak, we must strike and partition them between us and their other neighbors now."
 
- # War Goals:
+# War Goals:
  fee_partition_of_poland_war_goal: "Take Capital"
  fee_partition_of_poland_war_goal_desc: "The war goal is to conquer their capital."
  FEE_PARTITION_OF_POLAND_WAR_NAME: "$ORDER$ $FIRST$ War of $SECOND$ Partition"
 
- # Tooltips:
+# Tooltips:
  PORTUGUESE_SUCCESSION_CRISIS_BREAK_ALLIANCE_WITH_POR_TT: "§Y[Root.GetName]§! breaks their alliance with §Y[From.GetName]§!."
  PORTUGUESE_SUCCESSION_CRISIS_NEW_RULER_WILL_GAIN_INFERTILE_TRAIT_TT: "He will gain the §YInfertile§! trait.\n"
 
@@ -814,5 +860,7 @@
  FEE_CRISIS_OF_THE_MUGHAL_EMPIRE_LESS_THAN_0_TOLERANCE_OF_HEATHENS_TT: "Our §YTolerance of Heathens§! is less than §Y0§!"
  FEE_CRISIS_OF_THE_MUGHAL_EMPIRE_RULER_STATS_LESS_THAN_6_TOTAL_TT: "The combined amount of the ruler skills of §Y[This.Monarch.GetName]§! is less than §Y6§!"
 
- ITA_REPUBLICAN_MATTER_TT: "In the next years Republicans in the North and Monarchist in the South of Italy will rise to try impose their view. One of them might calm down only if we decide to become either: \nAny Monarchy with a §YParliament§! \n§YConstitutional Republic§!"
- ITA_DISASTER_REPUBLICAN_TT: "One of the followign must be true:\n	§YRepublican§! or §YMonarchist§! rebels enforce their demand\n	The disaster has been going for at least §Y15 years§!"
+ FEE_ITA_REPUBLICAN_MATTER_TT: "In the next years Republicans in the North and Monarchist in the South of Italy will rise to try impose their view. One of them might calm down only if we decide to become either: \nAny Monarchy with a §YParliament§! \n§YConstitutional Republic§!"
+ FEE_ITA_DISASTER_REPUBLICAN_TT: "One of the following must be true:\n\t§YRepublican§! or §YMonarchist§! rebels enforce their demand\n\tThe disaster has been going for at least §Y15 years§!"
+
+ FEE_NAP_FIRST_BARONY_SKIPPED_TT: "We were able to keep the Barons at ease."

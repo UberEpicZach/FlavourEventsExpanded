@@ -26,7 +26,7 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
-			set_global_flag = fee_french_feudalism_hundred_years_war
+			set_country_flag = fee_french_feudalism_hundred_years_war
 		}
 	}
 	mean_time_to_happen = {
@@ -266,7 +266,7 @@ country_event = {
 	fire_only_once = yes
 	trigger = {
 		tag = FRA
-		has_global_flag = fee_french_feudalism_hundred_years_war
+		has_country_flag = fee_french_feudalism_hundred_years_war
 		NOT = { is_year = 1500 }
 	}
 
@@ -323,6 +323,12 @@ country_event = {
 				who = ROOT
 				modifier = fee_france_provincialism_opinion
 			}
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			clr_country_flag = fee_french_feudalism_hundred_years_war
 		}
 	}
 }
@@ -845,7 +851,7 @@ country_event = {
 	option = {
 		name = FEE_France_Events.10.OPT1
 
-		add_stability = 1
+		add_stability_or_adm_power_per_stab = { amount = 1 }
 		add_country_modifier = {
 			name = fee_france_church_state
 			duration = 10950
@@ -1520,28 +1526,83 @@ country_event = {
 	}
 }
 
+# Introduction of the High-Temperature Forge
 country_event = {
-	id = FEE_France_Events.101
-	title = FEE_France_Events.101.T
-	desc = FEE_France_Events.101.D
-	picture = GOOD_WITH_MONARCH_eventPicture
-
-	fire_only_once = yes
-	hidden = yes
+	id = FEE_France_Events.23
+	title = FEE_France_Events.23.T
+	desc = FEE_France_Events.23.D
+	picture = TRADE_GOODS_eventPicture
 
 	trigger = {
-		is_in_war = {
-			attacker_leader = ENG
-			defender_leader = FRA
-			casus_belli = cb_hundred_years_war
-		}
+		tag = FRA
+		is_year = 1470
+		owns = 4390
 	}
 
-	immediate = {
-		set_global_flag = fee_surrender_main
+	goto = 4390
+
+	mean_time_to_happen = {
+		months = 120
 	}
 
 	option = {
-		name = FEE_France_Events.101.OPT1
+		name = FEE_France_Events.23.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		4390 = { add_base_production = 2 }
+	}
+}
+
+# Foundation of the Port of La Havre
+country_event = {
+	id = FEE_France_Events.24
+	title = FEE_France_Events.24.T
+	desc = FEE_France_Events.24.D
+	picture = SHIP_SAILING_eventPicture
+
+	trigger = {
+		tag = FRA
+		is_year = 1517
+		normandy_area = {
+			type = all
+			owned_by = ROOT
+		}
+		167 = {
+			OR = {
+				has_trade_building_trigger = yes
+				has_shipyard_building_trigger = yes
+				has_dock_building_trigger = yes
+			}
+		}
+	}
+
+	goto = 167
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_France_Events.24.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		167 = {
+			rename_capital = "La Havre"
+			create_or_add_center_of_trade_level_fee = { level = 1 }
+			add_base_tax = 2
+			add_base_production = 2
+			add_base_manpower = 2
+			add_or_upgrade_dock_building = yes
+			add_or_upgrade_trade_building = yes
+			add_or_upgrade_shipyard_building = yes
+			add_permanent_province_modifier = {
+				name = fee_france_la_havre
+				duration = -1
+			}
+		}
 	}
 }

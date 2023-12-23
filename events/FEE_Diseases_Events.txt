@@ -1,13 +1,580 @@
 namespace = FEE_Diseases_Events
 
+#########	GENERIC PLAGUE EVENTS	#########
+#########	GENERIC PLAGUE EVENTS	#########
+#########	GENERIC PLAGUE EVENTS	#########
+
+# Blood Ties
+country_event = {
+	id = FEE_Diseases_Events.1
+	title = FEE_Diseases_Events.1.T
+	desc = FEE_Diseases_Events.1.D
+	picture = PLAGUE_eventPicture
+
+	is_triggered_only = yes # from bi-yearly on action
+
+	trigger = {
+		capital_scope = { has_province_modifier = fee_diseases_small_bubonic_outbreak }
+		has_heir = yes
+		NOT = { has_heir_flag = fee_diseases_plague_blood_ties }
+	}
+
+	immediate = {
+		hidden_effect = { set_heir_flag = fee_diseases_plague_blood_ties }
+	}
+
+	option = {
+		name = FEE_Diseases_Events.1.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_treasury = -25
+		random = {
+			chance = 50
+			kill_heir = { }
+		}
+	}
+
+	option = {
+		name = FEE_Diseases_Events.1.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
+		add_prestige = -15
+		random = {
+			chance = 75
+			kill_heir = { }
+		}
+	}
+}
+
+# Our Home
+country_event = {
+	id = FEE_Diseases_Events.2
+	title = FEE_Diseases_Events.2.T
+	desc = FEE_Diseases_Events.2.D
+	picture = PLAGUE_eventPicture
+
+	is_triggered_only = yes # from bi-yearly on action
+
+	trigger = {
+		capital_scope = { has_province_modifier = fee_diseases_small_bubonic_outbreak }
+		has_consort = yes
+		NOT = { has_consort_flag = fee_diseases_bubonic_consort_killed }
+	}
+
+	immediate = {
+		hidden_effect = { set_consort_flag = fee_diseases_bubonic_consort_killed }
+	}
+
+	option = {
+		name = FEE_Diseases_Events.2.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_treasury = -25
+		random = {
+			chance = 50
+			kill_consort = yes
+		}
+	}
+
+	option = {
+		name = FEE_Diseases_Events.2.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
+		add_legitimacy_equivalent = {amount = -10 republican_tradition = -3 }
+		random = {
+			chance = 75
+			kill_consort = yes
+		}
+	}
+}
+
+# Requiem
+country_event = {
+	id = FEE_Diseases_Events.3
+	title = FEE_Diseases_Events.3.T
+	desc = FEE_Diseases_Events.3.D
+	picture = PLAGUE_eventPicture
+
+	is_triggered_only = yes # from bi-yearly on action
+
+	trigger = {
+		capital_scope = { has_province_modifier = fee_diseases_small_bubonic_outbreak }
+		has_regency = no
+		NOT = { has_ruler_flag = fee_diseases_bubonic_ruler_killed }
+	}
+
+	immediate = {
+		hidden_effect = { set_ruler_flag = fee_diseases_bubonic_ruler_killed }
+	}
+
+	option = {
+		name = FEE_Diseases_Events.3.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_treasury = -25
+		random = {
+			chance = 50
+			kill_ruler = yes
+		}
+	}
+
+	option = {
+		name = FEE_Diseases_Events.3.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
+		random = {
+			chance = 75
+			kill_ruler = yes
+		}
+		if = {
+			limit = { has_dlc = "Mandate of Heaven" }
+			add_splendor = -250
+		}
+	}
+}
+
+# Damaged Goods
+province_event = {
+	id = FEE_Diseases_Events.4
+	title = FEE_Diseases_Events.4.T
+	desc = FEE_Diseases_Events.4.D
+	picture = PLAGUE_eventPicture
+
+	is_triggered_only = yes # from bi-yearly on action
+
+	trigger = {
+		has_province_modifier = fee_diseases_small_bubonic_outbreak
+		any_neighbor_province = {
+			NOT = { has_province_modifier = fee_diseases_damaged_goods }
+		}
+		NOT = {
+			owner = {
+				any_owned_province = { has_province_modifier = fee_diseases_damaged_goods }
+			}
+		}
+	}
+
+	major = yes
+	major_trigger = {
+		FROM = {
+			any_neighbor_province = {
+				owned_by = ROOT
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Diseases_Events.4.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_base_production = -1
+		add_permanent_province_modifier = {
+			name = fee_diseases_damaged_goods
+			duration = -1
+			desc = fee_diseases_until_end_of_plague
+		}
+		random_neighbor_province = {
+			random = {
+				chance = 66
+				add_permanent_province_modifier = {
+					name = fee_diseases_damaged_goods
+					duration = -1
+					desc = fee_diseases_until_end_of_plague
+				}
+			}
+		}
+	}
+}
+
+# The Ravens' Spoils
+province_event = {
+	id = FEE_Diseases_Events.5
+	title = FEE_Diseases_Events.5.T
+	desc = FEE_Diseases_Events.5.D
+	picture = PLAGUE_eventPicture
+
+	is_triggered_only = yes # from bi-yearly on action
+
+	trigger = {
+		has_province_modifier = fee_diseases_small_bubonic_outbreak
+		units_in_province = owner
+		NOT = {
+			owner = {
+				any_owned_province = { has_province_modifier = fee_diseases_ravens_spoil }
+			}
+		}
+	}
+
+	immediate = {
+		hidden_effect = { set_province_flag = fee_diseases_bubonic_ravens_spoil }
+	}
+
+	option = {
+		name = FEE_Diseases_Events.5.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_base_manpower = -1
+		add_permanent_province_modifier = {
+			name = fee_diseases_ravens_spoil
+			duration = -1
+			desc = fee_diseases_until_end_of_plague
+		}
+		if = {
+			limit = { unit_has_leader = yes }
+			random = {
+				chance = 50
+				kill_leader = {
+					type = general
+				}
+			}
+		}
+	}
+}
+
+# Shadow of Ramparts
+province_event = {
+	id = FEE_Diseases_Events.6
+	title = FEE_Diseases_Events.6.T
+	desc = FEE_Diseases_Events.6.D
+	picture = PLAGUE_eventPicture
+
+	is_triggered_only = yes # from bi-yearly on action
+
+	trigger = {
+		has_province_modifier = fee_diseases_small_bubonic_outbreak
+		fort_level = 1
+		NOT = {
+			owner = {
+				any_owned_province = { has_province_modifier = fee_diseases_shadow_ramparts }
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Diseases_Events.6.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_permanent_province_modifier = {
+			name = fee_diseases_shadow_ramparts
+			duration = -1
+			desc = fee_diseases_until_end_of_plague
+		}
+	}
+}
+
+#########	BUBONIC PLAGUE	#########
+#########	BUBONIC PLAGUE	#########
+#########	BUBONIC PLAGUE	#########
+
+### Plague of Milan 1448-1452 ###
+
+# Death's Return
+country_event = {
+	id = FEE_Diseases_Events.10
+	title = FEE_Diseases_Events.10.T
+	desc = FEE_Diseases_Events.10.D
+	picture = PLAGUE_eventPicture
+
+	is_triggered_only = yes # on_yearly_pulse_5
+	fire_only_once = yes
+
+	trigger = {
+		is_year = 1448
+		NOT = { is_year = 1452 }
+		owns = 104
+	}
+
+	goto = 104
+
+	major = yes
+	major_trigger = {
+		capital_scope = {
+			continent = europe
+		}
+	}
+
+	option = {
+		name = FEE_Diseases_Events.10.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		custom_tooltip = FEE_DISEASES_BUBONIC_PLAGUE_RETURN_MILAN_START_TT
+		tooltip = {
+			104 = {
+				add_permanent_province_modifier = {
+					name = fee_diseases_small_bubonic_outbreak
+					duration = -1
+				}
+			}
+		}
+		hidden_effect = {
+			104 = {
+				add_permanent_province_modifier = {
+					name = fee_diseases_small_bubonic_outbreak
+					duration = -1
+				}
+				every_neighbor_province = {
+					random = {
+						chance = 33
+						add_permanent_province_modifier = {
+							name = fee_diseases_small_bubonic_outbreak
+							duration = -1
+						}
+					}
+				}
+			}
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			104 = {
+				province_event = {
+					id = FEE_Diseases_Events.14
+					days = 2555 # roughly 3 years after the end
+				}
+			}
+		}
+	}
+}
+
+# Epidemia Magna
+country_event = {
+	id = FEE_Diseases_Events.11
+	title = FEE_Diseases_Events.11.T
+	desc = FEE_Diseases_Events.11.D
+	picture = PLAGUE_eventPicture
+
+	is_triggered_only = yes # on_yearly_pulse_5
+	fire_only_once = yes
+
+	trigger = {
+		is_year = 1450
+		NOT = { is_year = 1452 }
+		owns = 104
+	}
+
+	goto = 104
+
+	major = yes
+	major_trigger = {
+		104 = {
+			any_neighbor_province = {
+				any_country = {
+					owns = PREV
+				}
+			}
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			104 = {
+				export_to_variable = {
+					variable_name = fee_diseases_epidemia_magna_milan_tax
+					value = trigger_value:base_tax
+				}
+				export_to_variable = {
+					variable_name = fee_diseases_epidemia_magna_milan_production
+					value = trigger_value:base_production
+				}
+				export_to_variable = {
+					variable_name = fee_diseases_epidemia_magna_milan_manpower
+					value = trigger_value:base_manpower
+				}
+				divide_variable = {
+					which = fee_diseases_epidemia_magna_milan_tax
+					value = 3
+				}
+				divide_variable = {
+					which = fee_diseases_epidemia_magna_milan_production
+					value = 3
+				}
+				divide_variable = {
+					which = fee_diseases_epidemia_magna_milan_manpower
+					value = 3
+				}
+				divide_variable = {
+					which = fee_diseases_epidemia_magna_milan_tax
+					value = 1000
+				}
+				divide_variable = {
+					which = fee_diseases_epidemia_magna_milan_production
+					value = 1000
+				}
+				divide_variable = {
+					which = fee_diseases_epidemia_magna_milan_manpower
+					value = 1000
+				}
+				multiply_variable = {
+					which = fee_diseases_epidemia_magna_milan_tax
+					value = 1000
+				}
+				multiply_variable = {
+					which = fee_diseases_epidemia_magna_milan_production
+					value = 1000
+				}
+				multiply_variable = {
+					which = fee_diseases_epidemia_magna_milan_manpower
+					value = 1000
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Diseases_Events.11.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		104 = {
+			custom_tooltip = FEE_DISEASES_BUBONIC_PLAGUE_EPIDEMIA_MAGNA_TT
+			hidden_effect = {
+				while = {
+					limit = {
+						check_variable = {
+							which = fee_diseases_epidemia_magna_milan_tax
+							value = 0.1
+						}
+					}
+					add_base_tax = -1
+					subtract_variable = {
+						which = fee_diseases_epidemia_magna_milan_tax
+						value = 1
+					}
+				}
+				while = {
+					limit = {
+						check_variable = {
+							which = fee_diseases_epidemia_magna_milan_production
+							value = 0.1
+						}
+					}
+					add_base_production = -1
+					subtract_variable = {
+						which = fee_diseases_epidemia_magna_milan_production
+						value = 1
+					}
+				}
+				while = {
+					limit = {
+						check_variable = {
+							which = fee_diseases_epidemia_magna_milan_manpower
+							value = 0.1
+						}
+					}
+					add_base_manpower = -1
+					subtract_variable = {
+						which = fee_diseases_epidemia_magna_milan_manpower
+						value = 1
+					}
+				}
+				every_neighbor_province = {
+					random = {
+						chance = 33
+						add_base_tax = -1
+						add_base_production = -1
+						add_base_manpower = -1
+					}
+				}
+			}
+		}
+	}
+}
+
+# End of the Epidemia Magna
+province_event = {
+	id = FEE_Diseases_Events.14
+	title = FEE_Diseases_Events.14.T
+	desc = FEE_Diseases_Events.14.D
+	picture = PLAGUE_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	goto = ROOT
+
+	major = yes
+	major_trigger = {
+		any_neighbor_province = {
+			any_country = {
+				owns = PREV
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Diseases_Events.14.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		custom_tooltip = FEE_DISEASES_BUBONIC_PLAGUE_END_EPIDEMIA_MAGNA_TT
+		remove_province_modifier = fee_diseases_small_bubonic_outbreak
+		add_permanent_province_modifier = {
+			name = fee_diseases_small_bubonic_recovery
+			duration = 3650
+		}
+		hidden_effect = {
+			every_neighbor_province = {
+				limit = { has_province_modifier = fee_diseases_small_bubonic_outbreak }
+				remove_province_modifier = fee_diseases_small_bubonic_outbreak
+				add_permanent_province_modifier = {
+					name = fee_diseases_small_bubonic_recovery
+					duration = 3650
+				}
+			}
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			every_province = {
+				if = {
+					limit = { has_province_modifier = fee_diseases_damaged_goods }
+					remove_province_modifier = fee_diseases_damaged_goods
+				}
+				if = {
+					limit = { has_province_modifier = fee_diseases_ravens_spoil }
+					remove_province_modifier = fee_diseases_ravens_spoil
+				}
+				if = {
+					limit = { has_province_modifier = fee_diseases_shadow_ramparts }
+					remove_province_modifier = fee_diseases_shadow_ramparts
+				}
+			}
+		}
+	}
+}
+
 #########	SYPHILIS	#########
 #########	SYPHILIS	#########
 #########	SYPHILIS	#########
 
 # A New Disease
 country_event = {
-	id = FEE_Diseases_Events.1
-	title = FEE_Diseases_Events.1.T
+	id = FEE_Diseases_Events.1000
+	title = FEE_Diseases_Events.1000.T
 	desc = {
 		trigger = {
 			121 = {
@@ -21,7 +588,7 @@ country_event = {
 				}
 			}
 		}
-		desc = FEE_Diseases_Events.1.D_French
+		desc = FEE_Diseases_Events.1000.D_French
 	}
 	desc = {
 		trigger = {
@@ -36,18 +603,17 @@ country_event = {
 				}
 			}
 		}
-		desc = FEE_Diseases_Events.1.D_Colonial
+		desc = FEE_Diseases_Events.1000.D_Colonial
 	}
 	picture = PLAGUE_eventPicture
 
+	is_triggered_only = yes
 	fire_only_once = yes
 
 	trigger = {
 		is_year = 1440
 		NOT = { is_year = 1750 }
-		121 = {
-			owned_by = ROOT
-		}
+		owns = 121
 		any_country = {
 			OR = {
 				culture_group = french
@@ -63,10 +629,6 @@ country_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		years = 1
-	}
-
 	goto = 121
 
 	major = yes
@@ -77,7 +639,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Diseases_Events.1.OPT1
+		name = FEE_Diseases_Events.1000.OPT1
 		ai_chance = {
 			factor = 50
 		}
@@ -86,37 +648,37 @@ country_event = {
 			add_base_tax = -2
 			add_base_production = -2
 			add_base_manpower = -2
-			add_province_modifier = {
-				name = fee_syphilis_outbreak
+			add_permanent_province_modifier = {
+				name = fee_diseases_syphilis_outbreak
 				duration = 3650
 			}
 		}
-		custom_tooltip = FEE_SYPHILIS_DISEASE_TT
+		custom_tooltip = FEE_DISEASES_SYPHILIS_DISEASE_TT
 		hidden_effect = {
 			116 = {
 				province_event = {
-					id = FEE_Diseases_Events.2
+					id = FEE_Diseases_Events.1001
 					days = 60
 					random = 15
 				}
 			}
 			4730 = {
 				province_event = {
-					id = FEE_Diseases_Events.2
+					id = FEE_Diseases_Events.1001
 					days = 60
 					random = 15
 				}
 			}
 			115 = {
 				province_event = {
-					id = FEE_Diseases_Events.2
+					id = FEE_Diseases_Events.1001
 					days = 60
 					random = 15
 				}
 			}
 			113 = {
 				province_event = {
-					id = FEE_Diseases_Events.2
+					id = FEE_Diseases_Events.1001
 					days = 60
 					random = 15
 				}
@@ -127,9 +689,9 @@ country_event = {
 
 # Syphilis outbreaks in Italy
 province_event = {
-	id = FEE_Diseases_Events.2
-	title = FEE_Diseases_Events.2.T
-	desc = FEE_Diseases_Events.2.D
+	id = FEE_Diseases_Events.1001
+	title = FEE_Diseases_Events.1001.T
+	desc = FEE_Diseases_Events.1001.D
 	picture = PLAGUE_eventPicture
 
 	is_triggered_only = yes
@@ -137,7 +699,7 @@ province_event = {
 	goto = ROOT
 
 	option = {
-		name = FEE_Diseases_Events.2.OPT1
+		name = FEE_Diseases_Events.1001.OPT1
 		ai_chance = {
 			factor = 50
 		}
@@ -145,8 +707,8 @@ province_event = {
 		add_base_tax = -1
 		add_base_production = -1
 		add_base_manpower = -1
-		add_province_modifier = {
-			name = fee_syphilis_outbreak
+		add_permanent_province_modifier = {
+			name = fee_diseases_syphilis_outbreak
 			duration = 3650
 		}
 	}

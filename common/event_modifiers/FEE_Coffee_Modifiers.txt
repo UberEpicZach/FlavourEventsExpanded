@@ -1,0 +1,27 @@
+fee_coffee_exotic_garden_modifier = {
+	prestige = 1
+}
+
+fee_coffee_first_italian_coffee_plantation_modifier = {
+	trade_goods_size = -3
+}
+
+fee_coffee_failing_coffee_plantation_modifier = {
+	local_unrest = 4
+}
+
+fee_coffee_catastrophical_monoculture_failure_modifier = {
+	trade_goods_size_modifier = -0.9
+}
+
+fee_coffee_po_valley_coffee_growth_modifier = {
+	trade_goods_size = -2
+}
+
+fee_coffee_coffee_italica_modifier_1 = {
+	trade_goods_size = 3
+}
+
+fee_coffee_coffee_italica_modifier_2 = {
+	trade_goods_size = 1
+}

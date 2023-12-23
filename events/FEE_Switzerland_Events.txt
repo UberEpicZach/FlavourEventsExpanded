@@ -945,7 +945,16 @@ country_event = {
 			}
 		}
 	}
+
+	after = {
+		hidden_effect = {
+			clr_country_flag = fee_swi_reforms_switzerland
+			clr_country_flag = fee_swi_sausage_affair
+		}
+		
+	}
 }
+
 # Zwingli's triumph
 country_event = {
 	id = FEE_Switzerland_Events.19

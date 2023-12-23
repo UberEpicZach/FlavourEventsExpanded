@@ -6,4 +6,4 @@ tags={
 	"Historical"
 }
 name="FEE Git"
-supported_version="1.34.2"
+supported_version="1.36.*"
