@@ -4,7 +4,7 @@ namespace = FEE_Diseases_Events
 #########	GENERIC PLAGUE EVENTS	#########
 #########	GENERIC PLAGUE EVENTS	#########
 
-# A Plague Tale: Blood Ties
+# Blood Ties
 country_event = {
 	id = FEE_Diseases_Events.1
 	title = FEE_Diseases_Events.1.T
@@ -50,7 +50,7 @@ country_event = {
 	}
 }
 
-# A Plague Tale: Our Home
+# Our Home
 country_event = {
 	id = FEE_Diseases_Events.2
 	title = FEE_Diseases_Events.2.T
@@ -96,7 +96,7 @@ country_event = {
 	}
 }
 
-# A Plague Tale: Requiem
+# Requiem
 country_event = {
 	id = FEE_Diseases_Events.3
 	title = FEE_Diseases_Events.3.T
@@ -145,7 +145,7 @@ country_event = {
 	}
 }
 
-# A Plague Tale: Damaged Goods
+# Damaged Goods
 province_event = {
 	id = FEE_Diseases_Events.4
 	title = FEE_Diseases_Events.4.T
@@ -200,7 +200,7 @@ province_event = {
 	}
 }
 
-# A Plague Tale: The Ravens' Spoils
+# The Ravens' Spoils
 province_event = {
 	id = FEE_Diseases_Events.5
 	title = FEE_Diseases_Events.5.T
@@ -247,7 +247,7 @@ province_event = {
 	}
 }
 
-# A Plague Tale: Shadow of Ramparts
+# Shadow of Ramparts
 province_event = {
 	id = FEE_Diseases_Events.6
 	title = FEE_Diseases_Events.6.T
