@@ -1,0 +1,307 @@
+fee_diseases_bi_yearly = {
+	random_list = {
+		1 = { }
+		33 = {
+			trigger = {
+				capital_scope = { has_province_modifier = fee_diseases_small_bubonic_outbreak }
+				has_heir = yes
+				NOT = { has_heir_flag = fee_diseases_plague_blood_ties }
+			}
+			country_event = {
+				id = FEE_Diseases_Events.1
+				days = 180
+				random = 45
+			}
+		}
+		33 = {
+			trigger = {
+				capital_scope = { has_province_modifier = fee_diseases_small_bubonic_outbreak }
+				has_consort = yes
+				NOT = { has_consort_flag = fee_diseases_bubonic_consort_killed }
+			}
+			country_event = {
+				id = FEE_Diseases_Events.2
+				days = 180
+				random = 45
+			}
+		}
+		33 = {
+			trigger = {
+				capital_scope = { has_province_modifier = fee_diseases_small_bubonic_outbreak }
+				has_regency = no
+				NOT = { has_ruler_flag = fee_diseases_bubonic_ruler_killed }
+			}
+			country_event = {
+				id = FEE_Diseases_Events.3
+				days = 180
+				random = 45
+			}
+		}
+	}
+}
+
+fee_diseases_yearly = {
+	random_list = {
+		1 = { }
+		50 = {
+			modifier = {
+				factor = 0.5
+				has_country_flag = has_competent_doctors
+			}
+			country_event = { id = FEE_Diseases_Events.10 } # Death's Return
+		}
+	}
+	random_list = {
+		1 = { }
+		50 = {
+			modifier = {
+				factor = 0.5
+				has_country_flag = has_competent_doctors
+			}
+			country_event = { id = FEE_Diseases_Events.11 } # Epidemia Magna
+		}
+	}
+	random_list = {
+		1 = { }
+		50 = {
+			modifier = {
+				factor = 0.5
+				has_country_flag = has_competent_doctors
+			}
+			country_event = { id = FEE_Diseases_Events.1000 } # Syphilis
+		}
+	}
+	random_list = {
+		1 = { }
+		33 = {
+			trigger = {
+				NOT = {
+					any_owned_province = { has_province_modifier = fee_diseases_damaged_goods }
+				}
+				any_owned_province = {
+					has_province_modifier = fee_diseases_small_bubonic_outbreak
+					any_neighbor_province = {
+						NOT = { has_province_modifier = fee_diseases_damaged_goods }
+					}
+				}
+			}
+			random_owned_province = {
+				limit = {
+					has_province_modifier = fee_diseases_small_bubonic_outbreak
+					any_neighbor_province = {
+						NOT = { has_province_modifier = fee_diseases_damaged_goods }
+					}
+				}
+				province_event = {
+					id = FEE_Diseases_Events.4
+					days = 180
+					random = 45
+				}
+			}
+		}
+		33 = {
+			trigger = {
+				NOT = {
+					any_owned_province = { has_province_modifier = fee_diseases_damaged_goods }
+				}
+				any_owned_province = {
+					has_province_modifier = fee_diseases_small_bubonic_outbreak
+					units_in_province = owner
+				}
+			}
+			random_owned_province = {
+				limit = {
+					has_province_modifier = fee_diseases_small_bubonic_outbreak
+					units_in_province = owner
+				}
+				province_event = {
+					id = FEE_Diseases_Events.5
+					days = 180
+					random = 45
+				}
+			}
+		}
+		33 = {
+			trigger = {
+				NOT = {
+					any_owned_province = { has_province_modifier = fee_diseases_small_bubonic_outbreak }
+				}
+				has_province_modifier = fee_diseases_small_bubonic_outbreak
+				fort_level = 1
+			}
+			random_owned_province = {
+				limit = {
+					has_province_modifier = fee_diseases_small_bubonic_outbreak
+					fort_level = 1
+				}
+				province_event = {
+					id = FEE_Diseases_Events.6
+					days = 180
+					random = 45
+				}
+			}
+		}
+	}
+}
+
+fee_trade_fair_events = {
+	if = {
+		limit = {
+			check_variable = {
+				which = fee_trading_fair_event_months
+				value = 6
+			}
+		}
+		set_variable = {
+			which = fee_trading_fair_event_months
+			value = 0
+		}
+		random_list = {
+			4 = { }
+			12 = {
+				trigger = {
+					event_target:event_target_fee_fair_province = {
+						has_province_modifier = fee_trading_fair_province_modifier
+						NOT = { has_province_flag = fee_province_trading_fair_ruler_goes_to_fair }
+						NOT = { has_province_flag = fee_province_trading_fair_ruler_does_not_go_to_fair }
+					}
+				}
+				country_event = {
+					id = FEE_Fairs_Events.3000
+					days = 365
+					random = 30
+				}
+			}
+			12 = {
+				trigger = {
+					event_target:event_target_fee_fair_province = {
+						has_province_modifier = fee_trading_fair_province_modifier
+						has_province_flag = fee_province_trading_fair_started
+						had_province_flag = {
+							flag = fee_province_trading_fair_started
+							days = 1095
+						}
+						NOT = { has_province_flag = fee_province_trading_fair_nomad_accepted }
+						NOT = { has_province_flag = fee_province_trading_fair_nomad_repulsed }
+					}
+				}
+				country_event = {
+					id = FEE_Fairs_Events.5000
+					days = 365
+					random = 30
+				}
+			}
+			12 = {
+				trigger = {
+					event_target:event_target_fee_fair_province = {
+						has_province_modifier = fee_trading_fair_province_modifier
+						had_province_flag = {
+							flag = fee_province_trading_fair_started
+							days = 90
+						}
+						has_province_flag = fee_province_trading_fair_nomad_accepted
+						NOT = { has_province_flag = fee_province_trading_fair_nomad_fire }
+					}
+				}
+				country_event = {
+					id = FEE_Fairs_Events.5001
+					days = 180
+					random = 30
+				}
+			}
+			12 = {
+				trigger = {
+					NOT = { has_ruler_modifier = fee_almighty_protection }
+					NOT = { has_ruler_modifier = fee_solemn_hymn }
+					NOT = { has_ruler_modifier = fee_angelic_blessing }
+					NOT = { has_ruler_modifier = fee_kiss_luck }
+					NOT = { has_ruler_modifier = fee_ruinous_powers }
+					NOT = { has_ruler_modifier = fee_demonic_embrace }
+					NOT = { has_ruler_modifier = fee_ancient_curse }
+					NOT = { has_ruler_modifier = fee_witch_eye }
+					event_target:event_target_fee_fair_province = {
+						has_province_modifier = fee_trading_fair_province_modifier
+						has_province_flag = fee_province_trading_fair_nomad_accepted
+						has_province_flag = fee_province_trading_fair_ruler_goes_to_fair
+						NOT = { has_province_flag = fee_province_trading_fair_furtune_teller }
+					}
+				}
+				country_event = {
+					id = FEE_Fairs_Events.5002
+					days = 180
+					random = 30
+				}
+			}
+			12 = {
+				trigger = {
+					event_target:event_target_fee_fair_province = {
+						has_province_modifier = fee_trading_fair_province_modifier
+						had_province_flag = {
+							flag = fee_province_trading_fair_nomad_accepted
+							days = 365
+						}
+						NOT = { has_province_flag = fee_province_trading_fair_dealed_nomad }
+					}
+				}
+				country_event = {
+					id = FEE_Fairs_Events.5020
+					days = 365
+					random = 30
+				}
+			}
+			12 = {
+				trigger = {
+					event_target:event_target_fee_fair_province = {
+						has_province_modifier = fee_trading_fair_province_modifier
+						NOT = { has_province_flag = fee_province_trading_fair_famous_artist_accepted }
+						NOT = { has_province_flag = fee_province_trading_fair_famous_artist_refused }
+					}
+				}
+				country_event = {
+					id = FEE_Fairs_Events.6000
+					days = 270
+					random = 30
+				}
+			}
+			12 = {
+				trigger = {
+					event_target:event_target_fee_fair_province = {
+						has_province_modifier = fee_trading_fair_province_modifier
+						NOT = { current_age = age_of_revolutions }
+						NOT = { current_age = age_of_absolutism }
+						NOT = { current_age = age_of_reformation }
+						had_province_flag = {
+							flag = fee_province_trading_fair_started
+							days = 1095
+						}
+						NOT = { has_province_flag = fee_trading_fair_banquet_preparation }
+					}
+				}
+				country_event = {
+					id = FEE_Fairs_Events.7000
+					days = 90
+					random = 15
+				}
+			}
+			12 = {
+				trigger = {
+					event_target:event_target_fee_fair_province = {
+						has_province_flag = fee_trading_fair_banquet_preparation
+					}
+					NOT = { has_country_flag = fee_trading_fair_banquet_invitation }
+				}
+				country_event = {
+					id = FEE_Fairs_Events.7001
+					days = 270
+					random = 30
+				}
+			}
+		}
+	}
+	else = {
+		change_variable = {
+			which = fee_trading_fair_event_months
+			value = 1
+		}
+	}
+}
