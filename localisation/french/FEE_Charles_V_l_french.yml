@@ -19,7 +19,7 @@
 
  FEE_Charles_V_Events.10.T: "The Death of Charles V"
  FEE_Charles_V_Events.10.D: "With Charles V dead, the future of his empire has been the subject of great contention, both at home and abroad. While nearly everyone agrees that his son Phillip II should inherit the thrones of Castile, Aragon, and the Lowlands, there is disagreement regarding his claim to the crown of Austria, and his father's other titles in Germany. There, it is said, the local nobles are more inclined to view Charles's brother Ferdinand von Habsburg as their rightful ruler, a notion which Ferdinand seems in no hurry to correct. Whatever the legality of this claim, the court in Spain seems apprehensive towards a conflict with the German wing of the family, and Phillip's closest advisors have even suggested that a conflict with Austria could do more harm than good…"
- FEE_Charles_V_Events.10.OPT1: "His Empire shall be divided between [Root.GetName] and Austria"
+ FEE_Charles_V_Events.10.OPT1: "His Empire shall be divided between Iberia and Austria"
  FEE_Charles_V_Events.10.OPT2: "His Empire shall live on"
 
  FEE_Charles_V_Events.11.T: "The Habsburg dynasty in Iberia"
@@ -33,7 +33,7 @@
  desc_fee_charles_v_charles_is_weak_c: "With his health declining, Charles V is becoming less and less effective as a monarch. This is obvious to his subjects, who are beginning to resent his weakness.."
 
  #Tooltips
- fee_charles_v_union_under_austria: "§Y[Root.GetName]§! will form a personal union with §YAustria§! under §Y[Root.Monarch.GetName]§!. \n §Y[Root.Monarch.GetName]§! will become the Holy Roman Emperor."
+ fee_charles_v_union_under_austria: "§YIberia§! will form a personal union with §YAustria§! under §Y[Root.Monarch.GetName]§!. \n§Y[Root.Monarch.GetName]§! will become the Holy Roman Emperor."
  fee_charles_v_fear_empire_tt: "Every Country with either their capital in the §YEurope Super Region§! or that are §Ypart of the HRE§! will"
  fee_charles_v_abdication_charles_tt: "In the division of the Habsburg lands, it has been decided that due to the origin of Charles V and his cadet house of Von Habsburg in Spain's ancestry in the Burgundian lands, that in return for the surrender of the Personal Union's gained from Austria, back to Austria, The Austrian Netherlands and France Compte shall be transfered to Spainish domain, although any other Holy Roman Terrority held by the Spainish were to be transfered back to Austria. \nWith this Iberia would leave the Holy Roman Empire for good."
- fee_charles_v_europe_no_longer_afraid_tt: "Europe will no longer be afraid of [Root.GetName]"
+ fee_charles_v_europe_no_longer_afraid_tt: "Europe will no longer be afraid of Iberia"

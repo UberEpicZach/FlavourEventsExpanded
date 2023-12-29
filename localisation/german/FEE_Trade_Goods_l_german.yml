@@ -1,0 +1,100 @@
+﻿l_german:
+# Events
+ FEE_Trade_Goods_Events.1.T: "Chocolate!"
+ FEE_Trade_Goods_Events.1.D: "The word “chocolate” is not new. A heated mixture of cacao and water called “cacahuatl” had been drunk by the Mesoamericans for millennia. It was first brought over to Europe by Spanish conquistadors in 1528, but due to its popularity in the royal court, its spread was initially limited. It was in Spain where the first addition of sugar to the beverage occurred. At first used only by the court, it spread from there to nunneries where it was deemed as medicine as well as an aid to fasting since it was not considered food. It quickly boomed in popularity among Spanish nobility as well. While hot chocolate never really took hold in the Low Countries the way it did elsewhere, Flemish and Dutch trading companies began smuggling their own supply of cacao into Europe to profit off the growing demand. \nA breakthrough for chocolate came in [ROOT_YEAR], when a group of Flemish traders created their own company to import cacao to [localization_brugge]. That company first developed the process of roasting and fermenting cocoa beans in discarded beer brewing vats to make solid cocoa butter. While not yet an edible candy, it made for easier transport, use in medicine, and shelf life, and made Brugge the center of cocoa trade in Europe"
+ FEE_Trade_Goods_Events.1.OPT1: "[90.GetName] shall be the City of Chocolate!"
+ FEE_Trade_Goods_Events.1.OPT2: "The cloth trade has always sustained this city, and God willing it always will"
+
+ FEE_Trade_Goods_Events.100.T: "Tobacco Production in Brussels"
+ FEE_Trade_Goods_Events.100.D: "Among the many exciting new commodities brought from the New World was a new stimulant. First known to Europeans as tabaco by Caribbean natives, it was soon found to have been used all across North America, and quickly spread like wildfire in Europe. \nOne requirement of tobacco cultivation is a temperate climate and fertile, wet soil. The eastern coast of North America proved ideal for it, making merchants who take the risky Atlantic journey incredibly wealthy. The first attempts to grow tobacco in Europe itself in 1558 failed due to poor planning and conditions. However, another group of entrepreneurs has identified the seasonal and wet climate of the southern Low Countries as a potentially ideal location for tobacco cultivation, and a perfect opportunity has opened up: the cloth trade in Flanders has been in decline for decades, as other centers of production outcompete them. Cities further from the coast were the worst hit due to lack of access to easy shipping, and the city of Brussels has gone into prolonged depression as its cloth industry closes down. Repurposing the land to this new cash crop may yet be the salvation of the city, yet some are concerned about the potentially noxious nature of this new crop…"
+ FEE_Trade_Goods_Events.100.OPT1: "Support the Tobacco Planters"
+ FEE_Trade_Goods_Events.100.OPT2: "Reject this vile exploitation"
+
+ FEE_Trade_Goods_Events.200.T: "Growth of the Weapon Industry in Liege"
+ FEE_Trade_Goods_Events.200.D: "Since the early Middle Ages, [province name 93] has been a center of weaponry production, thanks to the deposits of iron in the area. As improved blast furnace and mining techniques spread through Western Europe in the later Middle Ages, the industries began to grow exponentially, and the increased use of gunpowder weapons has made weapons-making more important than ever. The traditional glass-making guilds, of course, oppose the growing influence of the gunsmiths in local trade and politics. Now the competing artisans come to us with a demand to take a side. Do we limit the growth of this industry to preserve the glassmaking guilds or do we stand by and watch as the glass industry declines into obscurity?"
+ FEE_Trade_Goods_Events.200.OPT1: "The old world must burn in the fires of industry. A new power must rise."
+ FEE_Trade_Goods_Events.200.OPT2: "Not enough weapons, my lord!"
+
+ FEE_Trade_Goods_Events.300.T: "Delftware!"
+ FEE_Trade_Goods_Events.300.D: "Pottery is a universal human craft, and one of the oldest known to man. Because of its ubiquity, however, it is not exactly lucrative in trade. What has proven to me much more profitable, however, is the sub-type of pottery commonly known as chinaware. Porcelain was initially made only in China, but when its manufacture spread to Europe in the 16th century it proved an immediate hit. The unique process whereby white clay is glazed with tin and painted designs are baked in creates earthenware that is prized throughout the world. While many argue Chinese porcelain is superior, regular interruptions in trade with the East inflate its price. Using a combination of imitating Chinese techniques, and a unique blend of clays from Holland, the Rhineland, and Tournai, the artisans of Delft have begun making porcelain in equal if not better quality en masse. Influenced by Japanese designs due to the Dutch monopoly on trade with Japan, Delftware soon became synonymous with the iconic blue paint on white backgrounds depicting everything from complex landscapes to portraits. This industry quickly grew to become the center of European chinaware, becoming known as “Delftware” in its own right, and becoming a feature of the Dutch Golden Age."
+ FEE_Trade_Goods_Events.300.OPT1: "A true Age of Wonders!"
+
+ FEE_Trade_Goods_Events.400.T: "Salt Running Out in Zeeland"
+ FEE_Trade_Goods_Events.400.D: "For most of the Middle Ages, Zeeland had been a producer of salt due to the land being predominantly salty marshland due to the swampy Rhine estuary. As polders gradually eliminated the marshland and solidified the coastline, the rich salt deposits dried up along with the land. Harvesting salt from seawater is a time-honored practice, but harvesting solely from seawater is far more expensive without natural marshlands making processing easier, as processing would necessitate man-made drying beds. As more and more of the land is reclaimed and made arable and fertile, agriculture, especially dairy farming, gradually displaced salt as the main source of revenue in Zeeland."
+ FEE_Trade_Goods_Events.400.OPT1: "Salt stocks are too low sire..."
+
+ FEE_Trade_Goods_Events.500.T: "Increased French Grain Production"
+ FEE_Trade_Goods_Events.500.D: "The economy of France during the Renaissance period was marked by a dramatic increase in output from the most fertile parts of France. The end of the Hundred Years’ War, the clearing of additional land for farming, and gradual improvements in farming techniques made the traditional breadbaskets of France able to support an even greater population than before, and even produce a surplus for export, a rarity in Europe during this period."
+ FEE_Trade_Goods_Events.500.OPT1: "Let them eat bread"
+
+ FEE_Trade_Goods_Events.600.T: "Growth of Papermaking in Aberdeenshire"
+ FEE_Trade_Goods_Events.600.D: "The fishing trade has sustained the coastal villages of Aberdeenshire since it was first inhabited by humans, unknown millennia ago. As the villages and towns have transformed into cities, however, overfishing and the need for other employment have made other trades increasingly more important. The growth of the printing industry, with presses throughout the Scottish Lowlands, makes paper in ever high demand. The extortive prices demanded by Dutch, French, or German paper-makers puts a real strain on local printers, and the port city of Aberdeen would be a natural choice to establish a paper industry. However, it risks upsetting the current balance of power between various guilds in the city, who object to an industry they see as smelly and pretentious."
+ FEE_Trade_Goods_Events.600.OPT1: "Establish the Paper Industry!"
+ FEE_Trade_Goods_Events.600.OPT2: "Keep the Balance of Power in the City"
+
+ FEE_Trade_Goods_Events.700.T: "Coal Discovered in Loon"
+ FEE_Trade_Goods_Events.700.D: "As the steam engine and demand for coal made landfall in mainland Europe from Britain, the southern Low Countries were the first after Britain to make heavy use of coal. Shallow, easy-to-mine deposits were quickly uncovered in [localized name of province 91], [localized name of province 1866], and [localized name of province 1743]. Such a rich deposit sparked speculation and prospecting for deeper deposits elsewhere, although that would require more advanced and potentially dangerous mining techniques. Most prospecting came back without success, but a large deposit was struck in [2974.GetName]."
+ FEE_Trade_Goods_Events.700.OPT1: "Let’s make this happening!"
+ FEE_Trade_Goods_Events.700.OPT2: "We’d better not"
+
+ FEE_Trade_Goods_Events.1000.T: "Growth of the Business of Batiste in Cambrais"
+ FEE_Trade_Goods_Events.1000.D: "During the Middle Ages, [1743.GetName] became well-known for its woolen cloth products. This production declined in the 14th and 15th centuries and was overtaken in its importance by grain production. The cloth producers of the city gradually shifted to a more specialized production of batiste, a fine and lightweight but dense linen fabric which is often glazed after production. This business then boomed in the 17th century, so much so that the fabric became known as cambric. This rescued the city’s cloth industry and paved the way for further industrial development in later years."
+ FEE_Trade_Goods_Events.1000.OPT1: "Encourage this new industry"
+ FEE_Trade_Goods_Events.1000.OPT2: "There is nothing wrong with grain!"
+
+ FEE_Trade_Goods_Events.1001.T: "Declining Cloth Production in Breda"
+ FEE_Trade_Goods_Events.1001.D: "Once, the whole Lowlands were a bustling cloth manufacturing hub, supplying woolens from France to Russia. With the saturation of the market with Flemish and Dutch cloth, the rise of Castilian wool, Italian silk, and English cloth manufacturing, the Lowlands cloth industry declined throughout the 15th century. Inland provinces had it the worst. Where once the swampy coastlands made coastal trading less practical and boosted the importance of riverside cities, the reclamation of the coast in Holland and Flanders, along with the silting in of rivers, made inland city trade less and less lucrative. Breda became a prime example of this, with the local cloth industry collapsing in [GetYear]. Many urge switching to more local food production, as continuing to prop up the failing industry risks starvation for the inhabitants."
+ FEE_Trade_Goods_Events.1001.OPT1: "Ensure the people have bread!"
+ FEE_Trade_Goods_Events.1001.OPT2: "Subsidize the clothmakers."
+
+ FEE_Trade_Goods_Events.1002.T: "Silk in Ghent?"
+ FEE_Trade_Goods_Events.1002.D: "The woolen cloth industry in Flanders in the Middle Ages was far ahead of its time. It created the first truly industrialized region and made the city of Ghent in particular the wealthiest city in Late medieval Europe, with the power to bring dukes, kings, and bishops alike to their knees. However, all golden ages must come to an end, and eventually, like elsewhere in the Low Countries, the cloth industry declined. Compounding the issue was the gradual silting of the rivers Scheldt and Leie, which caused Ghent to lose its status as an entrepot. However, word has reached the Gentenaars of a way to regain some former glory. \nWord has reached us that the production of silk, long held secret by distant Cathay and the Greek Roman Empire, has now been unlocked in Naples. From there, the knowledge of its manufacture quickly spread throughout Europe, but the Italians still sell it for dear prices as if they still held the secret! The Gentenaars have come to us, requesting permission to establish a silk-making guild in the city. Of course, allowing silk production will lower the current prices, but it may still be worth a look…"
+ FEE_Trade_Goods_Events.1002.OPT1: "Let us beat the Italians at their own game!"
+ FEE_Trade_Goods_Events.1002.OPT2: "Wool is the soul of Ghent!"
+
+ FEE_Trade_Goods_Events.1003.T: "Growth of Silk Production in Touraine"
+ FEE_Trade_Goods_Events.1003.D: "During the tumult of the Hundred Years War, areas of southeastern France were the last affected by the ravages of war, giving them precious breathing room for a region previously devastated by the Albigensian Crusades. A cultural and economic revival of the region occurred during this period, nowhere more so than in Touraine, the seat of the French kings being at Chinon during the 1420s. The demands of courtly life led to an increase in luxury goods production, with the secret of silk being smuggled out of Italy in 1470. The province, already known for its cloth, has the potential to become the major silk supplier of France with royal patronage. This would be a boon to the French court because it would reduce dependence on Italian and Aragonese merchants. Plus, mais bien sur, French silks can’t help but be superior to Italian silks…. right?"
+ FEE_Trade_Goods_Events.1003.OPT1: "Let there be silk!"
+ FEE_Trade_Goods_Events.1003.OPT2: "Pssh! This is not worth our time!"
+
+# Modifiers
+ fee_trade_goods_cocoa_trade: "Cocoa trade"
+ desc_fee_trade_goods_cocoa_trade: ""
+
+ fee_trade_goods_declining_cloth_industry: "Declining Cloth Industry"
+ desc_fee_trade_goods_declining_cloth_industry: ""
+
+ fee_trade_goods_stifled_new_industry: "Stifled New Industry"
+ desc_fee_trade_goods_stifled_new_industry: ""
+
+ fee_trade_goods_delfaware: "Delfaware"
+ desc_fee_trade_goods_delfaware: "Delfaware"
+
+ fee_trade_goods_grain_surplus: "Grain Surplus"
+ desc_fee_trade_goods_grain_surplus: ""
+ fee_trade_goods_grain_expanded: "Grain Expanded"
+ desc_fee_trade_goods_grain_expanded: ""
+
+ fee_trade_goods_new_paper_industry: "New Paper Industry"
+ desc_fee_trade_goods_new_paper_industry: ""
+ fee_trade_goods_local_economy_undisturbed: "Local Economy Undisturbed"
+ desc_fee_trade_goods_local_economy_undisturbed: ""
+
+ fee_trade_goods_new_employment: "New Employment"
+ desc_fee_trade_goods_new_employment: ""
+ fee_trade_goods_agrarian_economy_protected: "Agrarian Economy Protected"
+ desc_fee_trade_goods_agrarian_economy_protected: ""
+
+ fee_trade_goods_increasing_grain_production: "Increasing Grain Production"
+ desc_fee_trade_goods_increasing_grain_production: ""
+ fee_trade_goods_uncompetitive_cloth_industry: "Uncompetitive Cloth Industry"
+ desc_fee_trade_goods_uncompetitive_cloth_industry: ""
+ fee_trade_goods_french_silk_monopoly: "French Silk Monopoly"
+ desc_fee_trade_goods_french_silk_monopoly: ""
+ fee_trade_goods_reliance_silk_imports: "Reliance on Silk Imports"
+ desc_fee_trade_goods_reliance_silk_imports: ""
+
+
+ fee_trade_goods_silk_ghent: "Silk of Ghent"
+
+# Tooltips

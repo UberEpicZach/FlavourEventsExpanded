@@ -1,0 +1,172 @@
+﻿l_german:
+# Events
+### Alessandro Sforza 1409 - 1473
+
+ FEE_Condottieri_Events.1.T: "Alessandro Sforza"
+ FEE_Condottieri_Events.1.D: "In the heart of Italy, where heroes rise, lived Alessandro Sforza, bold and wise. \nFrom humble beginnings he did spring, a warrior's son, destined for great things. \nIn battle's din, his blade did gleam, a force of nature, it did seem. \nFrom north to south, his name was known, a condottiero, second to none. \nWith courage and with skill so rare, he carved his path, beyond compare.\nHis enemies trembled at his might, as he rose to heights, bathed in light."
+ FEE_Condottieri_Events.1.OPT1: "Only the finest to lead our troops!"
+
+ FEE_Condottieri_Events.2.T: "Alessandro, Signore di Pesaro"
+ FEE_Condottieri_Events.2.D: "But Alessandro's reign was not without its challenges, for he had many enemies, both within and outside of [2977.GetName], who sought to overthrow his rise. \nBut Alessandro was a shrewd and cunning politician, and he always managed to outmaneuver his foes. he also had the support of his loyal subjects, who were willing to fight for him to the close. \nThrough many trials and tribulations, alessandro Sforza emerged victorious, and his reign continued to flourish, bringing peace and prosperity to all of [2977.GetName]."
+ FEE_Condottieri_Events.2.OPT1: "A really fine man"
+
+ FEE_Condottieri_Events.3.T: "The Ducal Palace of Pesaro"
+ FEE_Condottieri_Events.3.D: "The Ducal Palace of [2977.GetName] rose majestically in the heart of the city, a testament to the power and wealth of Alessandro Sforza, its lord. Its imposing facade, with its grand portico and arched windows, cast a long shadow over the cobbled square below. \nInside, the palace was a labyrinth of lavishly decorated rooms, each one more opulent than the last. The walls were adorned with frescoes by renowned Renaissance artists, depicting scenes from mythology, history, and religion. The floors were covered in intricate mosaics, and the ceilings were adorned with gilded chandeliers. \nThe Sala del Trono, or Throne Room, was the most impressive room in the palace. It was here that Alessandro Sforza held court and received dignitaries from all over Italy. The room was dominated by a massive throne, carved from a single block of marble. The walls were covered in frescoes depicting the Sforza dynasty's triumphs, and the ceiling was adorned with a giant fresco of the heavens."
+ FEE_Condottieri_Events.3.OPT1: "A symbol of the Sforza dynasty's greatness and the city of [2977.GetName]'s prosperity."
+
+ FEE_Condottieri_Events.4.T: "The Shield of Pesaro"
+ FEE_Condottieri_Events.4.D: "Alessandro Sforza knew that the city of [2977.GetName] was a prize worth fighting for. It was a wealthy port city with a strategic location on the Adriatic Sea. Many powerful lords coveted [2977.GetName], and Alessandro knew that he had to be prepared to defend it. \nAlessandro began by strengthening the city's fortifications. He built new towers and walls, and he repaired and reinforced existing ones. He also installed a new system of gates and drawbridges to make it more difficult for enemies to enter the city. \nNext, Alessandro trained and equipped a well-armed and well-disciplined army. He recruited soldiers from all over Italy and Europe, and he paid them handsomely. He also invested in new weapons and armor for his army."
+ FEE_Condottieri_Events.4.OPT1: "I will defend this city to my last breath."
+
+ FEE_Condottieri_Events.5.T: "Alessandro al soldo Milanese"
+ FEE_Condottieri_Events.5.D: "In the fair land of Italy, there stood a city called Milan. It was a city of great wealth and power, and it was ruled by the wise and benevolent Duke Francesco Sforza. Duke Francesco had a loyal friend and ally in Alessandro Sforza, a skilled condottiero and a courageous warrior. Alessandro had served Duke Francesco faithfully for many years, and he had helped him to expand and strengthen the Duchy of Milan. \nNow more than ever the Duchy of Milan was in dire need of help, as a great alliance had formed and the large army of Venice led by Michele Attendolo and Ludovico III Gonzaga threathened the security of the Duchy."
+ FEE_Condottieri_Events.5.OPT1: "I am a soldier, not a courtier. I will go and serve the Duke of Milan."
+ FEE_Condottieri_Events.5.OPT2: "I will stay here with you my lord."
+
+ FEE_Condottieri_Events.6.T: "Alessandro Padrone di Parma"
+ FEE_Condottieri_Events.6.D: "For his courage and help during the past wars we have granted the keys to the beautiful city of [105.GetName]."
+ FEE_Condottieri_Events.6.OPT1: "Long may he guide it."
+
+ FEE_Condottieri_Events.7.T: "Il Soldo Aragonese"
+ FEE_Condottieri_Events.7.D: "The Kingdom of [121.Owner.GetName] is in danger, they have sent a fast letter to us wishing to acquire the services of Alessandro Sforza. He has helped us a lot in the past years, and thanks to him we are able to be one again and not fear from imminent invasions, he may be of our same dynasty, but he is a condottiero, not a general."
+ FEE_Condottieri_Events.7.OPT1: "Send him to Naples!"
+ FEE_Condottieri_Events.7.OPT2: "No, our enemies are far from defeated."
+
+ FEE_Condottieri_Events.8.T: "Alessandro: The Lion of Naples"
+ FEE_Condottieri_Events.8.D: "One day, Alessandro Sforza was invited to Naples by King [121.Owner.Monarch.GetName]. King [Monarch.GetName] was a wise and benevolent ruler, but he was also facing a number of challenges. His kingdom was threatened by enemies from both within and without, and he needed the help of a skilled condottiero like Alessandro Sforza. \nAlessandro Sforza accepted King Ferrante's invitation and traveled to Naples. He was immediately impressed by the city's beauty and grandeur. Naples was one of the richest and most powerful cities in Italy, and it was a center of culture and learning."
+ FEE_Condottieri_Events.8.OPT1: "The finest for our armies!"
+
+ FEE_Condottieri_Events.9.T: "Alessandro Granconnestabile di Napoli"
+ FEE_Condottieri_Events.9.D: "One day, King Ferrante's enemies invaded the kingdom of Naples. Our King led his army out to meet the invaders in battle. Alessandro Sforza rode at the forefront of the Neapolitan cavalry. The two armies clashed on the battlefield, and a fierce battle raged. Alessandro Sforza and his cavalry charged into the enemy lines, breaking their formations and sending them into retreat. The Neapolitan army won a decisive victory in the battle, and our King was overjoyed. He thanked Alessandro Sforza for his bravery and his leadership. \nDue to his gestures in the wars agaisnt the Barons, who wished for the throne of Naples to fall under the Angevin rule, we have appoint Alessandro as the Granconnestabile of [121.GetName]!"
+ FEE_Condottieri_Events.9.OPT1: "May he take care of Naples as much as he took care of our lands."
+
+ FEE_Condottieri_Events.10.T: "Alessandro Sforza: The Lion of Pesaro"
+ FEE_Condottieri_Events.10.D: "Sing, one and all, of Alessandro Sforza, the Lion of Pesaro, bold and brave, whose deeds of valor and of daring echoed through the Italian wave.\nThe lords of Milan, Rome, and Naples all sought his sword and might, he led their armies with his skill, and won them many a fight. \nIn Pesaro, he found his home, a lord wise and just, he ruled with fairness and with strength, and brought his people trust. \nBut time does take its toll on all, and Alessandro's reign did end, he passed away in peace and grace, a true friend to all his friends."
+ FEE_Condottieri_Events.10.OPT1: "So let us raise a glass to him, whose memory shall ever renew."
+
+### Michele Attendolo 1370 - 1463
+
+ FEE_Condottieri_Events.11.T: "Michele Attendolo"
+ FEE_Condottieri_Events.11.D: "Born in the humble town of Cotignola, Attendolo's early life was far from the gilded halls of power he would later grace. Yet, within him burned an indomitable spirit, a thirst for glory and a tactical mind as sharp as a honed blade. His rise to prominence was as swift and decisive as a lightning strike. From the smoke-filled battlefields of Florence to the sun-scorched plains of Lombardy, Attendolo's name echoed like a war cry, a testament to his prowess and cunning. \nAt Anghiari, he faced his former ally, Francesco Sforza, a man as formidable as he was ambitious. Though outnumbered, Attendolo's brilliance shone through the chaos, his strategic maneuvers turning the tide of battle and securing a hard-won triumph."
+ FEE_Condottieri_Events.11.OPT1: "May he be blessed!"
+
+ FEE_Condottieri_Events.12.T: "L'Attendolo a Cremona"
+ FEE_Condottieri_Events.12.D: "The spring of 1446 was a time of great upheaval in Italy. The Republic of Venice and the Duchy of Milan were locked in a bitter struggle for dominance, and the fate of the peninsula hung in the balance. \nIn March, the Venetian forces, led by the renowned condottiere Michele Attendolo, marched on the city of Casalmaggiore, which was held by the Milanese. Attendolo knew that the battle would be a difficult one, as the Milanese army was led by Niccolò Piccinino, another legendary condottiere."
+ FEE_Condottieri_Events.12.OPT1: "Onward, conquer the city!"
+
+ FEE_Condottieri_Events.13.T: "La Presa di Cremona"
+ FEE_Condottieri_Events.13.D: "In the tumultuous landscape of 15th-century Italy, the city of Cremona stood as a strategic stronghold, coveted by rival powers vying for control of the region. In 1446, the forces of the Republic of Venice, led by the esteemed condottiere Michele Attendolo, embarked on a daring campaign to capture Cremona from the hands of the Visconti of Milan. \nUnder the command of Attendolo, a seasoned veteran of countless battles, the Venetian army marched towards Cremona, their resolve unwavering. The city's defenses were formidable, but Attendolo's strategic brilliance and the unwavering determination of his troops proved unstoppable. \nThe siege of Cremona commenced, and the Venetian forces relentlessly pressed their advantage. The city's walls, once thought impenetrable, began to crumble under the relentless assault. Supplies dwindled, and the morale of the Milanese garrison faltered. \nAfter days of intense fighting, the Venetian forces, under Attendolo's masterful leadership, breached the city's walls. The Milanese garrison, overwhelmed and demoralized, surrendered, handing Cremona over to Venetian control."
+ FEE_Condottieri_Events.13.OPT1: "Milano and I Navigli awaits us."
+
+ FEE_Condottieri_Events.14.T: "L'Attendolo in Toscana"
+ FEE_Condottieri_Events.14.D: "As the Doge of Venice, I found myself at a crossroads. The Grand Dukes of Tuscany, beset by escalating conflicts and a dwindling military, had sought our assistance, specifically requesting the services of our esteemed condottiere, Michele Attendolo. While the prospect of bolstering our Tuscan allies and gaining their favor was enticing, the potential loss of Attendolo's expertise and leadership weighed heavily on my mind. \nAttendolo was a formidable asset, a seasoned veteran whose strategic brilliance had secured countless victories for Venice. His presence in the Tuscan ranks could undoubtedly alter the balance of power in the region, potentially tipping the scales in favor of our allies. \nYet, Attendolo's departure would leave a void in our own military structure, potentially exposing us to threats from rival powers. His absence would be deeply felt, not only for his tactical acumen but also for his ability to inspire and lead our troops. \nThe decision was further complicated by the potential for unintended consequences. Lending Attendolo to Tuscany could embroil us in conflicts that we may not wish to engage in, drawing us into the turmoil of the Tuscan peninsula."
+ FEE_Condottieri_Events.14.OPT1: "The Grandukes will be forver grateful to us."
+ FEE_Condottieri_Events.14.OPT2: "No, we need him for our wars!"
+
+ FEE_Condottieri_Events.15.T: "L'Arrivo in Lombardia"
+ FEE_Condottieri_Events.15.D: "The year is 1454, and the political landscape of Italy is once again shifting. The lords of Milan, seeking to bolster their military might, have turned to the renowned condottiere Michele Attendolo, offering him a tempting proposition: the lordship of Pozzolo Formigaro in exchange for his services. Attendolo, a seasoned veteran of countless battles, is renowned for his strategic brilliance and unwavering leadership. His expertise on the battlefield is coveted by powers across the region, and the lords of Milan recognize that his presence in their ranks could significantly strengthen their position. The offer of Pozzolo Formigaro, a fertile and strategically located territory, is not without its appeal. It would provide Attendolo with a secure home for himself and his wife, Isabella, a place where they could enjoy the fruits of his labors in peace and prosperity. However, Attendolo is not merely a mercenary seeking personal gain. He is a man of honor and loyalty, deeply committed to the cause of his current employer. To abandon his current allegiance for the sake of Pozzolo Formigaro would be a betrayal of his principles, a decision that would tarnish his reputation and weigh heavily on his conscience."
+ FEE_Condottieri_Events.15.OPT1: "A feudo for a lord."
+ FEE_Condottieri_Events.15.OPT2: "He should lead armies, not cattle."
+
+### Bartolomeo Colleoni 1395 - 1475
+
+ FEE_Condottieri_Events.16.T: "Bartolomeo Colleoni"
+ FEE_Condottieri_Events.16.D: "He was born in Solza, a village by the river A noble son of Paolo, who was slain by a traitor He grew up as a soldier, brave and skilled in war He served many masters, near and far. He fought for Naples first, against the French invader He joined the great Braccio, a renowned condottiero He followed Carmagnola, who led the Venetian army He conquered many lands, from Brescia to Verona. He switched to Milan next, under the Visconti’s banner He sided with Sforza, who became the new ruler He faced the Venetians, his former allies He won at Caravaggio, a glorious prize. He was Bartolomeo Colleoni, a captain of renown He fought for fame and fortune, in Italy and beyond He was a loyal servant, but also a proud lord He was a legend of his time, a master of the sword."
+ FEE_Condottieri_Events.16.OPT1: "The lord is with us!"
+
+ FEE_Condottieri_Events.17.T: "Bartolomeo Colleoni al soldo Veneziano"
+ FEE_Condottieri_Events.17.D: "A missive has reached us from Venice itself, the Doge has requested to buy our esteemed general Bartolomeo Colleoni. While we "
+ FEE_Condottieri_Events.17.OPT1: "A traitor, that's what's him!"
+ FEE_Condottieri_Events.17.OPT2: "The Doge can kiss our asses."
+
+ FEE_Condottieri_Events.18.T: "Bartolomeo Colleoni in Borgogna"
+ FEE_Condottieri_Events.18.D: "The estimeed [BUR.Monarch.GetTitle] [BUR.Monarch.GetName] of [BUR.GetName] has requested the aid of Bartolomeo Colleoni for his current campaigns, while the offer might be beneficiary for us to strengthen the relations with them it might leave us unguarded against the crescent threat of our enemies and neighbours."
+ FEE_Condottieri_Events.18.OPT1: "Absolutely, they are our friends!"
+ FEE_Condottieri_Events.18.OPT2: "No, we need Bartolomeo for our campaigns."
+
+ FEE_Condottieri_Events.19.T: "Casa della pietà di Bartolomeo Colleoni"
+ FEE_Condottieri_Events.19.D: "I am Bartolomeo Colleoni, one of the most renowned captains that Italy has ever seen, I have served with loyalty every lord that has brought my sword and never have I broken a contract. While waging war and campaigning all over Italy I've found myself many times at the sight of families destroyed by war with boys and girls left forever scarred. Let me built a House of Piety that will take care of them, please, let me help whoever has never had the chance to rise for themselves and be destined to every possibility that the most fortunate can."
+ FEE_Condottieri_Events.19.OPT1: "Build it, the population will love it!"
+ FEE_Condottieri_Events.19.OPT2: "Not enough gold sire."
+
+ FEE_Condottieri_Events.20.T: "Il Colleoni a Bergamo"
+ FEE_Condottieri_Events.20.D: "Bartolomeo Colleoni was also a promoter of a far-sighted policy of water management in the province of Bergamo. First of all, he wanted to improve the irrigation of the countryside in the middle plain of Bergamo, mainly those included in his feudal possessions. To this end, the plan was to enlarge the existing canals and build new ones, creating a dense irrigation network that ensured the water supply to the fields of the entire plain, longitudinally between the Brembo and the Oglio rivers, and latitudinally between the foothills and the limit of the springs."
+ FEE_Condottieri_Events.20.OPT1: "Absolutely, Bergamo will love this!"
+ FEE_Condottieri_Events.20.OPT2: "Not enough gold sire."
+
+ FEE_Condottieri_Events.21.T: "Bartolomeo Colleoni: The Sir of Bergamo"
+ FEE_Condottieri_Events.21.D: "Bartolomeo Colleoni, the warrior, \nWho fought for many lords and many lands, \nWho served the Sforza, Venice and the king, \nWho led his men with courage and commands. \n\nHe won them fame and fortune with his deeds, \nHe built a chapel and a statue too, \nHe died in Malpaga, his castle, \nHe left a legacy of honor and virtue."
+ FEE_Condottieri_Events.21.OPT1: "Let us drink!"
+
+### Roberto Sanseverino d'Aragona 1395 - 1475
+
+ FEE_Condottieri_Events.22.T: "Roberto Sanseverino"
+ FEE_Condottieri_Events.22.D: "San Severino began his career in the service of Niccolò Piccinino, a powerful condottiere who fought for the Visconti of Milan. In 1440, he took part in the Battle of Anghiari, a famous battle between the Visconti and the Florentines. San Severino was captured by the Florentines during the battle, but he was soon released. In 1442, San Severino switched sides and began fighting for Francesco Sforza, a rival of Piccinino. "
+ FEE_Condottieri_Events.22.OPT1: "Let us drink!"
+
+ FEE_Condottieri_Events.23.T: "Il Sanseverino in Pellegrinaggio"
+ FEE_Condottieri_Events.23.D: "In the year of our Lord 1458, the nobleman Roberto da San Severino would conceive the idea of a pilgrimage to the Holy Land. He would travel to Venice, where he would be welcomed with great honor, including a ride on the Bucintoro, the Doge’s ceremonial barge. In the city, he would meet with Alessandro Sforza and the Doge himself. Then he would set sail, sailing along the coast of Dalmatia until he would reach Ragusa (Dubrovnik), where he would be hosted by the city’s secretary, Bartolomeo Sfondrati. He would also sail along the coast of Albania, and in early June he would visit Durazzo. He would then set course for Rhodes, avoiding the snares laid for him by a Genoese pirate ship. \nIn Rhodes, he would stay at the Italian inn and meet with the Grand Master of the Order of Saint John and the Patriarch. He would then continue his journey to the Holy Land, landing at Jaffa. Along the way, he would visit Lydda, Jerusalem, and other holy sites. In August, he would leave Gaza and enter Egypt, eventually reaching Cairo, where he would pay homage to the Sultan through the ambassador from Rhodes. \nIn September, he would begin his journey home. He would encounter considerable difficulties in obtaining the necessary permits, but after bribing some officials, he would be able to resume his voyage. He would leave Jerusalem, where some of his companions would have remained, and only in mid-October, with the arrival of favorable winds, he would leave Acre. He would travel without escort, despite the danger of encountering pirate ships."
+ FEE_Condottieri_Events.23.OPT1: "May the God guide thee."
+
+ FEE_Condottieri_Events.24.T: "Il Ritorno a Napoli"
+ FEE_Condottieri_Events.24.D: "News of Roberto da San Severino's homecoming echoed through the streets of Naples, stirring a mix of anticipation and apprehension. The nobleman, having completed his pilgrimage to the Holy Land, had spent the intervening years traversing the Mediterranean, acting as an ambassador for the Neapolitan court and forging alliances with neighboring kingdoms. His return was welcomed amidst a backdrop of growing unrest among the Neapolitan barons, who were discontent with recent changes in the governance of their lands. Roberto's diplomatic prowess and strategic acumen were sorely needed to navigate the complex political landscape and address the grievances of the nobility. The arrival of the seasoned ambassador brought a sense of hope to the kingdom. His experiences abroad had broadened his perspective and honed his diplomatic skills, making him a valuable asset in resolving the escalating tensions."
+ FEE_Condottieri_Events.24.OPT1: "Kill the barons!"
+
+ FEE_Condottieri_Events.25.T: "Roberto al soldo Fiorentino"
+ FEE_Condottieri_Events.25.D: "The supreme [116.Owner.Monarch.GetTitle] [116.Owner.Monarch.GetName] of [116.Owner.GetName] is requesting the aid of Roberto to restruct and rework their Bande Toscane for the dream of an united Tuscany."
+ FEE_Condottieri_Events.25.OPT1: "Send help to the Lord of Florence!"
+ FEE_Condottieri_Events.25.OPT2: "No, we will not risk to be vulnerable once again."
+
+ FEE_Condottieri_Events.26.T: "Roberto al soldo Milanese"
+ FEE_Condottieri_Events.26.D: "The campaigns lead by [104.Owner.Monarch.GetTitle] [104.Owner.Monarch.GetName] lately have been prosperous and with the extra funds looted during the Italian Wars now they are requesting the experience of Roberto San Severino to aid them furtherly, would this be considered treason?"
+ FEE_Condottieri_Events.26.OPT1: "Send help to the Milanese snake."
+ FEE_Condottieri_Events.26.OPT2: "Not enough soldiers my lord."
+
+ FEE_Condottieri_Events.27.T: "Roberto al soldo Piemontese"
+ FEE_Condottieri_Events.27.D: "The alps surrounding [103.GetName] has been breached in the past years, and the valleys of Montferrat and their vineyards in Piedmont are now under threat, once again. Surely the lord of [103.GetName] will love the championships of Roberto to strengthen the defenses of their cities."
+ FEE_Condottieri_Events.27.OPT1: "Help those biscuits!"
+ FEE_Condottieri_Events.27.OPT2: "It's too cold in Savoy."
+
+ FEE_Condottieri_Events.28.T: "Roberto al soldo Genovese"
+ FEE_Condottieri_Events.28.D: "In one of the sieges of [101.GetName] those idiots even dared to tear down the beautiful Lanterna di Genoa, the tallest and most prestigious ligthouse of the entire Mediterranean sea thus the protector of [101.GetName] is requesting the access to the knowledge of the San Severino in helping with the foundations of a more modern fort in the city."
+ FEE_Condottieri_Events.28.OPT1: "The lanterna is lovely these days!"
+ FEE_Condottieri_Events.28.OPT2: "Pesto ain't better than our foods."
+
+ FEE_Condottieri_Events.29.T: "Roberto al soldo Veneziano"
+ FEE_Condottieri_Events.29.D: "The eastern threat has been evergrowing, the lagoon won't save the city forever and the galleys are slowly being replaced the republican army needs someone to lead the citizens from the Stati de Tera against any opposing enemy of the Republic."
+ FEE_Condottieri_Events.29.OPT1: "A ship for a captain?"
+ FEE_Condottieri_Events.29.OPT2: "The lagoon stinks."
+
+ FEE_Condottieri_Events.30.T: "Roberto al soldo Papale"
+ FEE_Condottieri_Events.30.D: "Have you ever been to the eternal city my king? The churches and the old Roman monuments standing tall in the skies and reflecting on the Tiber river are a sight to behold, but the rioni, no my lord, the rioni of Romes are districts that have their own law and life sometimes the papal guard needs your help Roberto, please come here."
+ FEE_Condottieri_Events.30.OPT1: "For his holiness!"
+ FEE_Condottieri_Events.30.OPT2: "Rome isn't lovely in this time of year."
+
+ FEE_Condottieri_Events.31.T: "Roberto Sanseverino: The Champion of Naples"
+ FEE_Condottieri_Events.31.D: "Ruberto Sanseverino, abandoned by his men, remained among the enemy, proving himself to be an excellent captain and a brave soldier. Although he was severely wounded, he continued to fight valiantly with his sword, which had brought him victory so many times in Italy and among barbarian armies. He killed many of his enemies, but finally, the loss of blood from his wounds sapped his strength, and he died gloriously in the midst of the enemy forces, at the age of seventy."
+ FEE_Condottieri_Events.31.OPT1: "He fought, he won, and now he rest."
+
+# Estate Modifiers
+
+# Event Modifiers
+ fee_condottieri_alessandro_signore: "Alessandro Sforza"
+ desc_fee_condottieri_alessandro_signore: "Alessandro Sforza was a skilled and experienced soldier who fought in many of the major battles of the Italian Wars. He was known for his bravery and his ability to inspire his troops. He also had a reputation for being a cunning and ruthless leader."
+ fee_condottieri_alessandro_connestabile: "Gran Connestabile Alessandro"
+ desc_fee_condottieri_alessandro_connestabile: ""
+
+ fee_condottieri_bartolomeo_colleoni: "Sir Bartolomeo Colleoni"
+ desc_fee_condottieri_bartolomeo_colleoni: "Bartolomeo Colleoni, the brave and bold, Who fought for glory, honor and renown, Who led his troops with skill and discipline, Who served the Sforza, Venice and the crown."
+ fee_condottieri_casa_pieta_bartolomeo_colleoni: "Casa della Pietà di Bartolomeo Colleoni"
+ desc_fee_condottieri_casa_pieta_bartolomeo_colleoni: "The Casa della Pietà di Bartolomeo Colleoni is a historic building in Bergamo, Italy, that was the residence of the famous condottiero and captain-general, Bartolomeo Colleoni. He donated the palace to a charitable institution called Luogo Pio della Pietà, with the aim of providing dowries to poor girls who wanted to marry or enter a convent."
+ fee_condottieri_lavori_colleoni: "Lavori del Colleoni"
+ desc_fee_condottieri_lavori_colleoni: "One of the first interventions in chronological order was the enlargement of the mouths of the Serio river near Seriate: the waters were channeled into a ditch called Colleonesca, used for the irrigation of the countryside around Cavernago, a village where the headquarters of the condottiero was located."
+
+ fee_condottieri_roberto_sanseverino: "Roberto da San Severino"
+ desc_fee_condottieri_roberto_sanseverino: "He was the son of Leonetto Sanseverino, a condottiere who fought for the Neapolitan kings. \nHe was a member of the Sanseverino family, a powerful noble family in Southern Italy. \nHe was known for his bravery, his tactical skill, and his ability to inspire his troops."
+
+# Opinion Modifiers
+ fee_condottieri_sent_captain: ""
+
+# Tooltips
+ FEE_CONDOTTIERI_ATTENDOLO_CREMONA_TT: "We should declare and start the conquest of [1862.GetName] before the next winter."
+ FEE_CONDOTTIERI_ROBERTO_SANSEVERINO_PILGRIMAGE_TT: "The Sanseverino will tell us everything about his pilgrimage and how he strengthened the relations with all the courts he visited, from Venice to Rhodes passing in Albania, from Jerusalem to Cairo returning home."

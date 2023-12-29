@@ -1,33 +1,215 @@
 ﻿l_spanish:
- FEE_Genoa_Events.1.T: "Construction of the Lanterna"
- FEE_Genoa_Events.1.D: "A lighthouse had kept watch over Genoa for centuries, but it wasn't until 1543 construction finished on what would become known as the Lanterna, the tallest lighthouse in the world for more than 350 years. Standing at the edge of the city, overlooking the entrance to the harbour, the lighthouse guided ships safely to land. Thanks to the relative safety of Genoese waters, many foreign traders made the city their port of choice, and so helped Genoa prosper through the ages."
+ FEE_Genoa_Events.1.T: "Lanterna di Genova"
+ FEE_Genoa_Events.1.D: "The highest lighthouse that has ever been built in Europe has protected our navies and coasts since its first construction of 1128, the pro igne facendo in capite fari tax has flown countless ducats in the republican coffers."
  FEE_Genoa_Events.1.OPT1: "Let us make our lighthouse shine to the far reaches of the Mediterranean!"
- FEE_Genoa_Events.1.OPT2: "The lighthouse we have now is more than good enough."
 
  FEE_Genoa_Events.2.T: "Sampiero Corso"
- FEE_Genoa_Events.2.D: "Living from 1498 to 1567, Sampiero Corso was a Corsican lower noble and soldier. He grew up to become a condottieri, and fought for several paymasters in Italy. Eventually he came into the service of the French king, where his familiarity with Corsica became an advantage to the French efforts in Italy. \nNow it seems that our ruthless enemies in France has chosen to send Sampiero Corso in an attempt to free Corsica for later French occupation!"
+ FEE_Genoa_Events.2.D: "Living from 1498 to 1567, Sampiero Corso was a Corsican lower noble and soldier. He grew up to become a condottieri and fought for several paymasters in Italy. Eventually, he came into the service of the French king, where his familiarity with Corsica became an advantage to the French efforts in Italy. \n Now it seems that our ruthless enemies in France have chosen to send Sampiero Corso in an attempt to free Corsica for later French occupation!"
  FEE_Genoa_Events.2.OPT1: "Curse that man, and curse all the kings of France!"
 
  FEE_Genoa_Events.3.T: "The Corsican Constitution"
- FEE_Genoa_Events.3.D: "Inspired by Enlightenment thinkers, Pasquale Paoli drafted a constitution for the independent Republic of Corsica in 1755. Sponsored by Great Britain, Paoli not only managed to drive the Genoese off the island, but also reorganised the government into a functioning state, complete with a university and its own mint. Although the republic would fall to France in 1769, Paolis reforms advanced the island significantly, and international recognition of the Corsican people as a distinct culture."
+ FEE_Genoa_Events.3.D: "Inspired by Enlightenment thinkers, Pasquale Paoli drafted a constitution for the independent Republic of Corsica in 1755. Sponsored by Great Britain, Paoli not only managed to drive the Genoese off the island but also reorganized the government into a functioning state, complete with a university and its mint. Although the republic would fall to France in 1769, Paoli's reforms advanced the island significantly, and international recognition of the Corsican people as a distinct culture."
  FEE_Genoa_Events.3.OPT1: "Of course, none of this will happen if we can help it."
 
  FEE_Genoa_Events.4.T: "Casa San Giorgio on Corsica"
- FEE_Genoa_Events.4.D: "The distance from Genoa to Corsica was an administrative challenge, and war or local dissent could make it impossible for the doge to exert any political power on the island. As the Bank of Saint George became a major creditor for Genoa, they acquired the right to collect taxes on Corsica, provided they also protected the island. \nWhile the bank treated Genoese settlers preferentially over locals, it did much to develop the island, especially the towns and fortifications along the coast. However, the bank's taxation would eventually grow to wear as heavily on the locals as the republic's had, and provided the driving force of the Corsican movement to replace Genoese authority with French."
+ FEE_Genoa_Events.4.D: "The distance from Genoa to Corsica was an administrative challenge, and war or local dissent could make it impossible for the doge to exert any political power on the island. As the Bank of Saint George became a major creditor for Genoa, they acquired the right to collect taxes on Corsica, provided they also protected the island. \n While the bank treated Genoese settlers preferentially over locals, it did much to develop the island, especially the towns and fortifications along the coast. However, the bank's taxation would eventually grow to wear as heavily on the locals as the republic's had, and provided the driving force of the Corsican movement to replace Genoese authority with French."
  FEE_Genoa_Events.4.OPT1: "The Casa San Giorgio should administer Corsica."
  FEE_Genoa_Events.4.OPT2: "Genoa needs to reassert its control."
 
  FEE_Genoa_Events.5.T: "Balilla and the Genoese Revolt"
- FEE_Genoa_Events.5.D: "Something incredible has happened. Under the military occupation of Genoa, the people have been suffering and forced to aid the occupying forces. \nThis morning, an artillery piece got stuck in a moat, and the soldiers transporting it forced onlookers to drag it out, cursing and lashing them as they worked under threat of death.\n\nOne onlooker, however, just a young boy, picked a stone from the road. With the words \"Am I to begin?\" he threw it at one of the soldiers. The crowd instantly turned on the occupying force.\n\nOver the course of just a few days, the foreign soldiers were evicted from the city, and Genoa was once again free. The young boy who started it all would become known as Balilla, a symbol of the struggle for Italian independence."
+ FEE_Genoa_Events.5.D: "Something incredible has happened. Under the military occupation of Genoa, the people have been suffering and forced to aid the occupying forces. \n This morning, an artillery piece got stuck in a moat, and the soldiers transporting it forced onlookers to drag it out, cursing and lashing them as they worked under the threat of death.\n\nOne onlooker, however, just a young boy, picked a stone from the road. With the words \"Am I to begin?\" he threw it at one of the soldiers. The crowd instantly turned on the occupying force.\n\nOver the course of just a few days, the foreign soldiers were evicted from the city, and Genoa was once again free. The young boy who started it all would become known as Balilla, a symbol of the struggle for Italian independence."
  FEE_Genoa_Events.5.OPT1: "For Genoa!"
 
  FEE_Genoa_Events.6.T: "Balilla Uprising in Genoa"
- FEE_Genoa_Events.6.D: "Something terrible has happened. Under the [Root.GetAdjective] occupation of Genoa, the people have been made to aid the occupying forces, as appropriate. \nThis morning, however, an artillery piece got stuck in a moat, and the soldiers transporting it forced onlookers to drag it out, cursing and lashing them as they worked far slower than they should.\n\nOne onlooker however, just a young boy, picked a stone from the road. With the accursed words \"Am I to begin?\" he threw it at one of the soldiers. The crowd instantly turned on the occupying force.\n\nOver the course of just a few days, the [Root.GetAdjective] soldiers were evicted from the city. The young boy who started it all would become known as Balilla, a symbol of Italian impertinence and rudeness."
+ FEE_Genoa_Events.6.D: "Something terrible has happened. Under the [Root.GetAdjective] occupation of Genoa, the people have been made to aid the occupying forces, as appropriate. \n This morning, however, an artillery piece got stuck in a moat, and the soldiers transporting it forced onlookers to drag it out, cursing and lashing them as they worked far slower than they should.\n\nOne onlooker, however, just a young boy, picked a stone from the road. With the accursed words \"Am I to begin?\" he threw it at one of the soldiers. The crowd instantly turned on the occupying force.\n\nOver the course of just a few days, the [Root.GetAdjective] soldiers were evicted from the city. The young boy who started it all would become known as Balilla, a symbol of Italian impertinence and rudeness."
  FEE_Genoa_Events.6.OPT1: "Once we retake the city they will all pay!"
 
+ FEE_Genoa_Events.7.T: "Forte Briglia"
+ FEE_Genoa_Events.7.D: "After the capture of the city and the capitulation of the local troops, we found that the city lacked proper barracks to station the garrison from possible attacks by land and assaults by sea; the construction of Fort Briglia should make up for this lack."
+ FEE_Genoa_Events.7.OPT1: "Protect the troops!"
+
+ FEE_Genoa_Events.8.T: "Friendly Fire on the Lanterna"
+ FEE_Genoa_Events.8.D: "Sadly, during the siege of [101.GetName] some of our firepowers attacked and heavily damaged the wonderful Lanterna di Genova!"
+ FEE_Genoa_Events.8.OPT1: "Dannazione!"
+
+ FEE_Genoa_Events.9.T: "Expansion of the Lanterna"
+ FEE_Genoa_Events.9.D: "The new extension work on the Lanterna is proceeding as planned but will certainly be more costly than expected, should we stop here or continue as far as we can?"
+ FEE_Genoa_Events.9.OPT1: "Proceed at all costs."
+ FEE_Genoa_Events.9.OPT1: "The bank cannot fund this!"
+
+ FEE_Genoa_Events.10.T: "Genoese-Byzantine Relations"
+ FEE_Genoa_Events.10.D: "Since 1261 and the treaty of Ninfeo the diplomatic relations with Byzantium has flown infinite treasury in the Republics and while the profits haven't diminished in the past years the strength of the Byzantine empire seems to be fading a little bit. Should we pursue the profit all for ourselves or should we honor the century-lasting trade?"
+ FEE_Genoa_Events.10.OPT1: "Our word is sacred."
+ FEE_Genoa_Events.10.OPT2: "Nothin personal, it's purely for commerce!"
+
+ FEE_Genoa_Events.11.T: "The Romans requests for aid!"
+ FEE_Genoa_Events.11.D: "A tired diplomat has reached our court and informed that [TUR.GetName] has started the invasion of their land thus requesting our aid against the heathen invasion based on century-lasting trade relations and help of the Christendom, how should we act?"
+ FEE_Genoa_Events.11.OPT1: "Send our nobleman Giovanni Giustiniani."
+ FEE_Genoa_Events.11.OPT2: "Send a defensive company to their capital"
+ FEE_Genoa_Events.11.OPT3: "We can't anger the [TUR.GetName]."
+
+ FEE_Genoa_Events.12.T: "A Byzantine envoy"
+ FEE_Genoa_Events.12.D: "Our [BYZ.GetAdjective] friends have sent one of their most prestigious men of knowledge in the state of our relations, who will welcome our court?"
+ FEE_Genoa_Events.12.OPT1: "A helper for our country!"
+ FEE_Genoa_Events.12.OPT2: "A leader for our armies."
+
+ FEE_Genoa_Events.13.T: "Genoese traders at court"
+ FEE_Genoa_Events.13.D: "A few Genoese men have reached our court and want to settle down in one of our provinces in the [1320.GetName] or join our court, what should we choose?"
+ FEE_Genoa_Events.13.OPT1: "He will make us rich."
+ FEE_Genoa_Events.13.OPT2: "Purely for commerce!"
+
+ FEE_Genoa_Events.14.T: "Umanesimo o Rinascimento?"
+ FEE_Genoa_Events.14.D: "Scholastic Aristotelianism dominated between Venice, Padua, Bologna; Petrarch opposed his spiritualist Christianity, tinged with Platonism and Stoicism, and his morality based on a careful, secular reading of the classics and fusing it with Christianity and Latin culture. The influence of the Byzantine scholars in Italy and the Latin scholars at the Imperial court elevated the search for the man in a new Rebirth."
+ FEE_Genoa_Events.14.OPT1: "The Renaissance!"
+
+ FEE_Genoa_Events.15.T: "The Crimean Colonies"
+ FEE_Genoa_Events.15.D: "In the peninsula of Crimea, Caffa and other nearby towns in the hands of the Republic of Genoa were the points of contact between the Mongol-Tatar world and that of Western Europe. For over two centuries the Genoese colonies of the Black Sea prospered and enriched Genoa. But recently, with the rising of the various Mongol hordes and other foreign powers, it is clear that these distant provinces are too vulnerable and expensive to defend."
+ FEE_Genoa_Events.15.OPT1: "We will leave Crimea and concentrate in our Capital."
+ FEE_Genoa_Events.15.OPT2: "Expansion is the key to prosperity!"
+
+ FEE_Genoa_Events.16.T: "Gazaria"
+ FEE_Genoa_Events.16.D: "With the Treaty of Nymphaeum of 1261 the old emperor of Nicaea granted us, in exchange for our support in their reconquest of Constantinople in exchange for every commercial and maritime privilege in the streets of the Black Sea, thus the colony of Gazaria was created."
+ FEE_Genoa_Events.16.OPT1: "The Compagna Communis will administrate the cities."
+
+ FEE_Genoa_Events.17.T: "The Steppe Lords"
+ FEE_Genoa_Events.17.D: "While our first colony of Caffa in 1308 was sieged and captured by the invading Golden Horde under Toqtai the subsequent hordes such as the horde of Uzbek, Nogai, the latter Khans of the Golden Horde have been far more interested in trading agreements between our nations rather than endless war, how should we decide?"
+ FEE_Genoa_Events.17.OPT1: "We must stand alone."
+ FEE_Genoa_Events.17.OPT2: "Ask support from the Steppe Lords."
+
+ FEE_Genoa_Events.18.T: "A Genoese Request"
+ FEE_Genoa_Events.18.D: "An embassy from [event_target_fee_genoa.GetName] has approached our capital [Capital.Getname] - the splendid - to discuss trade in the Crimeans lands."
+ FEE_Genoa_Events.18.OPT1: "Help from the western traders should be profitable."
+ FEE_Genoa_Events.18.OPT2: "Never bend."
+
+ FEE_Genoa_Events.19.T: "Regina del Mar Grande"
+ FEE_Genoa_Events.19.D: "Called also Queen of the Grand Sea, the splendid city of Caffa has seen in its life wonderful prosperity as well as sieges, plague, and devastation."
+ FEE_Genoa_Events.19.OPT1: "Marvellous."
+
+ FEE_Genoa_Events.20.T: "A Crimean Tsar?"
+ FEE_Genoa_Events.20.D: "The Russian tsar has landed his vicious hands on the beloved Crimean region which has always been protected by us, pious and righteous [Root.GetAdjective], while war might not be the only option, it sure does look like the most lucrative one."
+ FEE_Genoa_Events.20.OPT1: "Send an embassy."
+ FEE_Genoa_Events.20.OPT2: "War, purely for commerce."
+
+ FEE_Genoa_Events.21.T: "Genovese Embassy"
+ FEE_Genoa_Events.21.D: "A convoy of [FROM.GetAdjective] merchants, traders, diplomats have reached our capital for an agreement between our two nations for cooperation in the Crimea, or we could just attack them."
+ FEE_Genoa_Events.21.OPT1: "Sounds reasonable."
+ FEE_Genoa_Events.21.OPT2: "To war!"
+
+ FEE_Genoa_Events.22.T: "Antonio Malfante"
+ FEE_Genoa_Events.22.D: "Antonio Malfante was a Genoese businessman who dreamed of traveling the world and learning about different cultures. He moved to the East, where he worked for some bankers of the Centurione family, and made a fortune trading spices and fabrics. He wanted to return to his homeland, where he hoped to be welcomed with honor and respect. In 1443, he asked the doge of Genoa for permission to come back, after paying his taxes. The doge agreed, thanks to the intervention of Percivalle Marchione, a powerful politician and diplomat. Antonio prepared to leave, but before sailing, he wanted to visit Honaïne, a port of the kingdom of Tlemcen, where he had many friends and business."
+ FEE_Genoa_Events.22.OPT1: "Ianuensis ergo Mercator."
+
+ FEE_Genoa_Events.23.T: "Malfante in Honaine"
+ FEE_Genoa_Events.23.D: "In the sultry summer of 1445, the bustling port of Honaine was abuzz with maritime activity. The distant echoes of merchants haggling, sailors mending sails, and the creaking of wooden ships against the gentle waves created a symphony that danced along the quaysides. Among the myriad vessels that docked in Honaine, one ship stood out—a sturdy Genoese merchant ship guided by the seasoned hands of Captain Antonio Malfante. With salted air in his lungs and the glint of adventure in his eyes, Antonio stood on the weathered deck, gazing at the vibrant cityscape that sprawled before him. As the sun dipped below the horizon, casting a golden glow over Honaine's minarets and rooftops, Antonio Malfante knew that this city held the promise of prosperity and adventure."
+ FEE_Genoa_Events.23.OPT1: "Let him stay and theach us the Genoese ways."
+ FEE_Genoa_Events.23.OPT2: "What if he spied on us?"
+
+ FEE_Genoa_Events.24.T: "Golden Sahara?"
+ FEE_Genoa_Events.24.D: "In the year 1445, Antonio Malfante found himself captivated by the allure of Honaine, the bustling port on the Mediterranean's edge. Enveloped in the rich mosaic of cultures, he uncovered whispers of the Saharan and Subsaharan gold that seemed to shimmer like a mirage in the vast desert. Compelled by an adventurous spirit, Antonio dispatched a missive to the Genoese council, beseeching their support for a grand exploration into the heart of the Sahara. In his letter, he painted a vivid tapestry of untold riches and uncharted territories. The promise of golden treasures, veiled by the shifting sands, fueled his imagination. Antonio's missive was a plea for patronage, an appeal to the council's vision for expanding Genoa's reach and prosperity. He envisioned a journey beyond the known horizons, navigating the vast dunes and caravanserais of the Sahara in pursuit of the source of coveted gold. As the parchment carried the weight of Antonio's dreams across the Mediterranean, the Genoese council deliberated. The fate of an expedition into the unknown hung in the balance, a gamble that could either yield immeasurable wealth or be swallowed by the arid expanse of the desert's secrets."
+ FEE_Genoa_Events.24.OPT1: "Finance it, the gold will be ours."
+ FEE_Genoa_Events.24.OPT2: "Money doesn't come from sand, you idiot."
+
+ FEE_Genoa_Events.25.T: "Malfante in Sijilmasa"
+ FEE_Genoa_Events.25.D: "Six moons had completed their celestial dance since Antonio Malfante, gripped by the allure of undiscovered realms, assembled his worldly possessions and marshaled a caravan destined for the heart of the desert. The undulating waves of golden sand bore witness to the determined expedition. Amidst the timeless dunes, the caravan found solace at the magnificent Sijilmasa. The ancient city, a jewel of the Saharan trade routes, unfolded its tales like parchment unfurling in the breeze. Antonio, amidst the labyrinthine alleys and sun-kissed adobe walls, sensed the pulse of history and the whispers of merchants long gone. In the shadow of Sijilmasa, Antonio glimpsed the elusive Saharan gold. Its glimmer, traded in bustling markets, spoke of wealth hidden beneath the shifting sands. An ember of realization sparked within him—there must be more, a southern treasure trove waiting to be unveiled. As the caravan rested under the Saharan stars, Antonio contemplated the journey ahead. The allure of gold, a siren's call, beckoned him southward, beyond the known realms of the desert. Sijilmasa, with its tales of trade and treasures, became a stepping stone—a threshold to a realm where the sands held secrets yet untold."
+ FEE_Genoa_Events.25.OPT1: "Continue, we are getting closer!"
+ FEE_Genoa_Events.25.OPT2: "Return home Malfante, it's a waste of time."
+
+ FEE_Genoa_Events.26.T: "Malfante nel Subshara"
+ FEE_Genoa_Events.26.D: "Beyond the vast expanse of Touat, Antonio Malfante's desert caravan, fueled by the patronage of Shaykh Sidi Yahia ben-Idir, reached the ancient oasis of Tamantit in the heart of the Central Sahara. The whispered tales of the desert winds spoke of the shaykh's benevolence, guiding the intrepid explorer through the labyrinth of dunes. Under the sheltering palms of Tamantit, Antonio found not only respite but a treasury of knowledge. Merchants, their faces weathered by the sands, and Shaykh Sidi Yahia ben-Idir himself, a sage of the desert, unveiled the secrets of the Sahel and the enigmatic lands of Black Africa. The merchants' tales painted a vibrant mosaic of cultures—the rhythmic beats of drums in Sahelian villages, the intricate weaving of kente cloth in the hands of skilled artisans, and the vibrant marketplaces where colors and scents intertwined. The sheikh's wisdom narrated the customs and rituals of diverse peoples, each a thread in the intricate tapestry of Saharan and sub-Saharan life. Antonio, beneath the celestial dome of the Sahara, absorbed the wealth of information like the sands that shifted beneath his feet. Tamantit, a crossroads of trade and knowledge, became a sanctuary of enlightenment. With each tale, Antonio's vision extended beyond the dunes, reaching toward the unknown realms of the Sahel and the mysteries of Black Africa—a horizon where cultures intermingled like ripples in an oasis pool. The desert, once a sea of uncertainty, now bore the footprints of Antonio Malfante, an intrepid merchant charting the unexplored depths of Africa."
+ FEE_Genoa_Events.26.OPT1: "So it wasn't a waste in the end."
+
+ FEE_Genoa_Events.27.T: "Malfante in Mallorca"
+ FEE_Genoa_Events.27.D: "Having ventured into the heart of the Sahara, Antonio Malfante, now laden with the treasures of knowledge and tales from Africa, retraced his steps to the welcoming shores of Mallorca. The sea breeze carried whispers of distant lands, and the azure waters embraced him like an old friend. In the shadow of Mallorca's rugged cliffs, Antonio found solace. The vibrant markets and bustling ports of the island welcomed him back, and the familiar sights and scents of the Mediterranean filled his senses. The tales of the Sahara, the Sahel, and Black Africa echoed in his heart. As the sun dipped below the horizon, casting hues of gold and crimson over the Balearic Sea, Antonio Malfante chose to spend the remainder of his days on the beloved island of Mallorca. Amidst vineyards and olive groves, he wove the tapestry of his experiences into the fabric of the local culture. The island, with its serenity and timeless charm, became a haven for the weary explorer. Antonio, surrounded by the warmth of Mallorcan hospitality, shared the stories of his desert odyssey with those who gathered in the shaded squares and under the starlit skies. Mallorca, cradled by the Mediterranean, became the final chapter of Antonio Malfante's extraordinary journey. The sands of the Sahara might have whispered secrets, but it was the gentle lull of Mallorca's waves that serenaded him into the tranquil embrace of a well-earned rest. In the heart of the Balearic isle, Antonio found not only a home but a sanctuary to anchor his storied wanderlust."
+ FEE_Genoa_Events.27.OPT1: "He will stay were money is."
+
+ FEE_Genoa_Events.28.T: "Antonio de Noli"
+ FEE_Genoa_Events.28.D: "In the year 1449, Antonio de Noli, driven by the spirit of exploration, arrived at the illustrious court of Portugal. With tales of distant horizons and uncharted territories, he stood before the monarch and council, a man with a vision that extended beyond the known seas. With a fervent plea, Antonio de Noli requested the financial backing of Portugal's court for daring expeditions into the unexplored realms. His words painted a canvas of undiscovered lands, potential riches, and the promise of glory for Portugal. In the opulent halls of the court, surrounded by nobles and advisors, Antonio unfolded maps and charts, tracing routes that ventured into the vast unknown. The allure of spices, treasures, and territories awaiting discovery danced in the air, kindling the imaginations of those who listened."
+ FEE_Genoa_Events.28.OPT1: "Purely for profit!"
+ FEE_Genoa_Events.28.OPT2: "What can a Genoese know about the oceans?"
+
+ FEE_Genoa_Events.29.T: "Il Noli in Genoa"
+ FEE_Genoa_Events.29.D_NO_POR: "Embarking on a voyage of ambition, Antonio de Noli arrived in the bustling heart of Genoa. Eager to secure support for his grand undertaking, he stood before the Genovese council, outlining his visionary quest—the exploration of uncharted oceans and the extension of Genoa's maritime dominion beyond the familiar shores of the Mediterranean. In the grand halls resonating with the echoes of maritime legacy, Noli painted a tapestry of untold riches and prestige awaiting the republic that dared to navigate the vast unknown. The council, stirred by the call of uncharted territories, deliberated on the potential rewards and risks, their decisions carrying the weight of Genoa's maritime destiny."
+ FEE_Genoa_Events.29.D_POR_REFUSED: "Having faced a polite but firm refusal from the Portuguese court, Antonio de Noli set his sights on Genoa, the maritime powerhouse of the Mediterranean. In the bustling Genovese capital, he presented his ambitious vision—a quest to explore the vast unknown expanses of the Ocean and extend Genoa's maritime influence far beyond familiar Mediterranean waters. With fervor in his voice, Noli addressed the Genovese council, invoking the spirit of exploration that had defined Genoa's maritime legacy. He painted a vivid tapestry of uncharted territories, promising riches and prestige for the republic that dared to venture into the Ocean's mysteries."
+ FEE_Genoa_Events.29.OPT1: "The sea breeze whispered tales of adventures."
+ FEE_Genoa_Events.29.OPT2: "There's nothing outside the Pillars or Ercules."
+
+ FEE_Genoa_Events.30.T: "Noli at the coast of Atlantic Africa"
+ FEE_Genoa_Events.30.D: "Months adrift from our capital, Antonio de Noli's vessel now graces the coasts of Atlantic Africa. The air is rich with the scent of spices, and the bustling trade of rugs and even gold unfolds along the shores. Long caravans, guided by camels, traverse the arid landscapes, converging upon the enchanting cities of Marrakech, Fez, and the resplendent Aït Benhaddou. In these cities, the markets thrum with vitality, merchants hawking their wares in a vibrant tapestry of colors and scents. Marrakech, with its bustling souks and ornate palaces, beckons travelers with promises of exotic treasures. In Fez, the labyrinthine medina unfolds, a living testament to centuries of trade and culture. And against the backdrop of Aït Benhaddou, caravanserais stand as silent witnesses to the ebb and flow of commerce. Antonio de Noli, amidst the splendors of Atlantic Africa, witnesses the harmonious dance of trade and culture. The camels' silhouettes against the desert sun signal the arrival of prosperity, as spices, rugs, and gold intertwine in a symphony of commerce. The shores echo with tales of distant lands, and Antonio, a navigator of uncharted seas, stands poised to inscribe his name in the annals of maritime adventure."
+ FEE_Genoa_Events.30.OPT1: "Continue the exploration, the Bijagos awaits you!"
+ FEE_Genoa_Events.30.OPT2: "Return home, this is too expensive."
+
+ FEE_Genoa_Events.31.T: "The arrival of Noli at the Bijagos islands"
+ FEE_Genoa_Events.31.D: "Antonio de Noli's arrival at the Bijagós Islands marked a perfect juncture in his maritime odyssey. From this vantage point, he beheld the entirety of the African coast, a panorama teeming with a profusion of wildlife not witnessed in the Mediterranean for centuries. Elephants roamed freely, their majestic forms a testament to the untamed beauty of the African landscape. Rhinos, with their robust silhouettes, added to the awe-inspiring spectacle. The islands served as a natural observatory, offering Noli a front-row seat to the diversity of creatures inhabiting the vast African continent. Amidst this abundance, ivory—a long-cherished treasure in the Mediterranean—seemed to beckon, promising prosperity to those who could navigate the intricate channels of trade. As Antonio de Noli gazed upon this wilderness from the Bijagós Islands, the possibilities unfolded like the unfurling waves beneath his vessel. The call of uncharted territories echoed, and the prospect of trading in the treasures of Africa ignited the flame of maritime ambition. The Bijagós Islands, with their untouched beauty, became a stepping stone in Noli's quest to navigate the seas, connecting the Mediterranean with the wild wonders of the African coast."
+ FEE_Genoa_Events.31.OPT1: "Continue, we are getting richer!"
+ FEE_Genoa_Events.31.OPT2: "Not enough gold to pay for your voyages!"
+
+ FEE_Genoa_Events.32.T: "Sailing up the Gambia river"
+ FEE_Genoa_Events.32.D: "Navigating upstream along the sinuous curves of the Gambia River, Antonio de Noli's vessel penetrated the heart of West Africa. The dense foliage lining the banks whispered tales of unexplored territories, and the air was thick with the fragrance of exotic flora. As the vessel advanced, the river unveiled its secrets—a sanctuary of diverse ecosystems and vibrant wildlife. Antonio marveled at the verdant landscapes that stretched along the Gambia's embrace. The rhythmic hum of life echoed in the calls of unseen creatures, the symphony of the wild enveloping the vessel like an ancient melody. Monkeys swung from tree to tree, their agile forms adding a playful touch to the journey. As the vessel ventured deeper, the riverbanks unveiled glimpses of hidden villages, their inhabitants curious about the maritime visitors. The Gambia River, a lifeline for those dwelling along its shores, bore witness to the ebb and flow of daily life."
+ FEE_Genoa_Events.32.OPT1: "It's time to return home!"
+ FEE_Genoa_Events.32.OPT2: "Come home, but faster."
+
+ FEE_Genoa_Events.33.T: "The Island of Antonio"
+ FEE_Genoa_Events.33.D: "Having explored the origins of the Gambia River, Antonio de Noli, on his homeward journey, set sail back into the vast expanse of the ocean. Yet, fortune played a capricious hand, steering his vessel towards the archipelago of Cape Verde. Unlucky winds, like fickle spirits, guided his course to these Atlantic islands. Cape Verde, with its volcanic landscapes and azure waters, welcomed the unexpected visitor. Antonio, amidst the isles scattered like gems upon the ocean, found respite. The vibrant culture and warm hospitality of the Cape Verdeans painted a contrasting picture against the untamed wilderness he had recently traversed. In the shelter of Cape Verde, Antonio de Noli reflected on the unpredictability of the seas and the whims of maritime destiny. The archipelago, once an unintended stop, became a temporary haven—a pause in his grand narrative of exploration. As he lingered amidst the beauty of Cape Verde, the ocean winds whispered tales of both challenges and unexpected discoveries, reminding him that every voyage, no matter how meticulously planned, held the potential for unforeseen detours and newfound treasures."
+ FEE_Genoa_Events.33.OPT1: "Let us settle here!"
+ FEE_Genoa_Events.33.OPT2: "Leave that damn island Noli!"
+
+ FEE_Genoa_Events.34.T: "Ribeira Grande"
+ FEE_Genoa_Events.34.D: "With determination and foresight, Antonio de Noli embarked on the ambitious task of finalizing the construction of the colony in Cape Verde. Ports emerged along the rugged coastline, their structures standing as sentinels against the relentless Atlantic waves. Docks extended like welcoming arms, ready to embrace the vessels that would soon ply their trade in these newfound waters. Trading stations, strategically positioned, became hubs of commerce and cultural exchange. The vibrant pulse of industry echoed in the construction of warehouses and marketplaces, each brick and beam laying the foundation for prosperity. Antonio's vision extended beyond mere colonization—Cape Verde was to become a flourishing province, a testament to the synergy between maritime enterprise and fertile land. As the finishing touches adorned this nascent settlement, Antonio de Noli envisioned a future where the colony would contribute to the wealth of the Mediterranean, its ports becoming gateways to the riches of the Atlantic. The endeavor, a testament to his maritime legacy, promised not only economic prosperity but also the melding of cultures across distant shores. Cape Verde, now transformed by the hands of visionaries, awaited the dawn of a new era—a chapter in the annals of maritime exploration and trade."
+ FEE_Genoa_Events.34.OPT1: "The Birth of a New City!"
+
+ FEE_Genoa_Events.35.T: "Noli the Slave Trader"
+ FEE_Genoa_Events.35.D: "In the year of our Lord 1466, Antonio Noli, an astute maritime entrepreneur, surveyed the burgeoning trade of slaves from Africa into the Mediterranean Sea. Recognizing the economic potential and the demand for this labor force, he conceived a proposal to monopolize this trade. Gathering before the Genovese council, Antonio unfolded his vision—a monopolistic venture that would consolidate the trade of African slaves under Genoa's control. With calculated persuasion, he detailed the potential profits and strategic advantages this monopoly could bring. The economic landscape of the Mediterranean, he argued, could be shaped by Genoa's dominance in this lucrative enterprise. As the council deliberated, the notion of monopolizing the slave trade stirred ethical and pragmatic considerations. Antonio, however, envisioned the venture not merely as a means of financial gain but as a strategic move that would elevate Genoa's influence in the Mediterranean and beyond. The outcome of this proposal hung in the balance—a decision that would shape not only the economic destiny of Genoa but also the moral compass of a city at the crossroads of commerce and conscience. Antonio Noli's proposition, a daring play in the game of trade and power, awaited its verdict in the grand chambers of Genoa's council."
+ FEE_Genoa_Events.35.OPT1: "The ships to guide them will be ours."
+ FEE_Genoa_Events.35.OPT2: "In God's name remove him from my sight!"
+
+ FEE_Genoa_Events.36.T: "Noli governatore di Capo Verde"
+ FEE_Genoa_Events.36.D: "In recognition of his unwavering dedication, explorations, and the prosperity he ushered into the country, Antonio Noli was nominated as the Governor of Cape Verde. The honor bestowed upon him marked a culmination of his maritime endeavors and the indelible impact he had made on the newfound colony. The appointment as Governor brought with it not only administrative responsibilities but also a mandate to steer Cape Verde into a future of sustainable growth and cultural exchange. Antonio, now entrusted with the governance of this burgeoning settlement, embraced the role with the same spirit of adventure that had characterized his explorations. Under his guidance, Cape Verde flourished, with ports bustling, trading stations thriving, and the province becoming a vital link between the Atlantic and the Mediterranean. As Governor, Antonio Noli sought to ensure that the legacy of Cape Verde was one of prosperity, unity, and a harmonious blend of cultures from across distant shores. The isles, once touched by the unexpected winds of Antonio's voyages, now stood as a testament to his enduring commitment. The appointment as Governor heralded a new chapter, where the visionaries of the sea could also be the architects of a thriving society. Antonio Noli, now at the helm of Cape Verde, embarked on a new expedition—a journey of governance, stewardship, and the continued pursuit of prosperity for the lands he had come to cherish."
+ FEE_Genoa_Events.36.OPT1: "Rule the islands, and the oceans."
+
  #Modifiers
- fee_genoa_lanterna: "The Lanterna"
- desc_fee_genoa_lanterna: "The great tower looking out across the Mediterranean, beckoning traders to our shore."
- fee_genoa_casa_san_giorgio: "Casa San Giorgio"
- desc_fee_genoa_casa_san_giorgio: "The Bank of the House of San Giorgio has been given charge of a number of administrative tasks on the island."
- 
+ fee_gen_lanterna: "The Lanterna"
+ desc_fee_gen_lanterna: "The great tower looking out across the Mediterranean, beckoning traders to our shore."
+ fee_gen_casa_san_giorgio: "Casa San Giorgio"
+ desc_fee_gen_casa_san_giorgio: "The Bank of the House of San Giorgio has been given charge of several administrative tasks on the island."
+ fee_gen_lanterna_genova: "The Lanterna"
+ desc_fee_gen_lanterna_genova: "The great tower looking out across the Mediterranean, beckoning traders to our shore."
+
+ fee_gen_treaty_byzantium: "Treaty with Byzantium"
+ desc_fee_gen_treaty_byzantium: "Since 1261 and the treaty of Ninfeo the diplomatic relations with Byzantium have flown infinite treasury in the Republics."
+
+ fee_gen_refugees_crimean_colonies: "Refugees from Crimean Colonies"
+ desc_fee_gen_refugees_crimean_colonies: "The return of our population from the Crimean colonies will boost our capital for the years to come."
+
+ fee_gen_khan_subversion: "Khan's Subversion"
+ desc_fee_gen_khan_subversion: ""
+ fee_gen_help_steppe_lords: "Help from the Steppe Lords"
+ desc_fee_gen_help_steppe_lords: ""
+ fee_gen_crimean_trading_rights: "Crimean Trading RIghts"
+ desc_fee_gen_crimean_trading_rights: ""
+
+ fee_gen_queen_black_sea: "Queen of the Black Sea"
+ desc_fee_gen_queen_black_sea: "Called also Queen of the Grand Sea, the splendid city of Caffa has seen in its life wonderful prosperity as well as sieges, plague, and devastation."
+
+ fee_gen_russian_genoese_trade_agreement: "Russian-Genoese Agreement"
+ desc_fee_gen_russian_genoese_trade_agreement: ""
+ fee_gen_genoese_russian_trade_agreement: "Genoese-Russian Agreement"
+ desc_fee_gen_genoese_russian_trade_agreement: ""
+
+ fee_gen_antonio_malfante: "Antonio Malfante"
+ desc_fee_gen_antonio_malfante: ""
+
+ fee_gen_antonio_noli: "Antonio de Noli"
+ desc_fee_gen_antonio_noli: "fee_gen_antonio_noli"
+
+# Tooltips
+ FEE_GEN_BYZANTINE_RELATIONS_TT: "The blossoming of our Alliance will be felt over time as long as we stay allied or have §G125+§! Relation."
+ FEE_GEN_TREATY_CONSTANTINOPLE_TT: "Every Province owned by §Y[Root.GetName]§! in the §M[1320.GetName] Trade Node§!, will gain: "
+
+ FEE_GEN_CRIMEAN_POSSESSIONS_LIBERATED_TT: "§RWe will leave our Crimean possessions for the neighboring countries to take.§!"
+
+ FEE_GEN_DISCOVER_TIMBUKTU_TT: "§GWe will discover all provinces in the Timbuktu Trade Node§!"
+
+ FEE_GEN_ANTONIO_DE_NOLI_TT: "§YHe will travel in search of new lands for the court in Africa and the Ocean.§!"
+ FEE_NOLI_ARRIVAL_AFRICAN_COAST_TT: "His arrival at the Atlantic Coast of Africa has unveiled many new riches to discover. \nHe will continue his travelling south.."
+ FEE_NOLI_ARRIVAL_ISLANDS_BIJAGOS_TT: "The Bijagos islands have shown potential new lands in Africa to conquer. \nMaybe it's time to sail in the river..."
+ FEE_NOLI_ARRIVAL_GAMBIA_RIVER_TT: "Sailing the river opened so many new trade posts for us to monopolize. \nRow row row your boat gently to the sea..."

@@ -1,6 +1,49 @@
 ﻿l_german:
 
-# Siphilis
+# Generic Plague Events
+ FEE_Diseases_Events.1.T: "Blood Ties"
+ FEE_Diseases_Events.1.D: "I regret to inform you that your beloved heir has fallen ill with a dreadful disease. I fear it is the same plague that has been ravaging the lands and claiming countless lives. \nI have seen the signs with my own eyes: the fever, the chills, the coughing, the vomiting, the swollen glands, the black spots on his skin. They are in great pain and agony, and no medicine or prayer can ease his suffering. They are isolated in his chamber, guarded by your loyal knights, but I doubt they will last much longer. \nYou must prepare yourself for the worst, sire. The plague is merciless and cruel, and it spares no one, not even the royal blood. You may lose your heir, your hope, your legacy. You may lose your kingdom, your power, your glory. You may lose everything you have worked so hard to build and protect. \nI beg you, sire, do not let grief cloud your judgment. You still have a duty to your people, to your realm, to your God. You must act swiftly and decisively, before the plague spreads further and consumes us all. You must order a quarantine, a lockdown, a curfew. You must burn the corpses, the clothes, the bedding. You must enforce the hygiene, the sanitation, the cleanliness. You must seek the help, the advice, the guidance of the doctors, the priests, the scholars."
+ FEE_Diseases_Events.1.OPT1: "Send a medic, now!"
+ FEE_Diseases_Events.1.OPT2: "Confine him in his chamber, may the heavens spare them."
+
+ FEE_Diseases_Events.2.T: "Our Home"
+ FEE_Diseases_Events.2.D: "One fateful evening, while partaking in the consummation of my marital duties, I noticed a change in the body of my beloved. Her once radiant beauty was marred by a swelling and the appearance of ominous black spots. My heart sank as I realized that the black plague, that dreaded scourge, had infiltrated even the sanctity of our wedding chamber. \nFear gripped my soul as I contemplated the implications of this dire discovery. The black plague, with its merciless grip on humanity, spared no one, not even the noblest of lords. In that moment, I was faced with the harsh reality that my power and wealth could not shield me from the ravages of this merciless disease."
+ FEE_Diseases_Events.2.OPT1: "My dear, I hope we can survive this."
+ FEE_Diseases_Events.2.OPT2: "You we no more than a tool."
+
+ FEE_Diseases_Events.3.T: "Requiem"
+ FEE_Diseases_Events.3.D: "Within the majestic confines of my ancestral palazzo, a sinister affliction has seized my once-vigorous frame—the ominous resurgence of the black plague. As the shadows of morbidity dance upon the grand tapestries and my beloved gazes upon me with trepidation, I beseech the divine grace of this Renaissance era for deliverance. \nIn these halls adorned with quattrocento masterpieces, the plague's insidious grip tightens, casting a somber hue upon the visages of noble forebears immortalized in oil. O, merciful God, whose hand has guided the Renaissance spirit, I implore thee to quell this maleficent contagion and restore vitality to my beleaguered existence. \nIn the twilight of my Renaissance life, let thy grace descend and lift the encroaching darkness. I, a lord of this once-indomitable lineage, find solace only in the hope of divine providence interceding to restore the vibrant hues of my existence."
+ FEE_Diseases_Events.3.OPT1: "I'll fight till my last breath."
+ FEE_Diseases_Events.3.OPT2: "Please welcome me forefathers."
+
+ FEE_Diseases_Events.4.T: "Damaged Goods"
+ FEE_Diseases_Events.4.D: "In the bustling realm of local trade, whispers emerge of rats frolicking and nesting in the proximity of our granaries and storehouses of precious goods. My heart sinks with apprehension, for I dread the specter of disease that may accompany these vermin. Pray, let swift action be taken to avert the peril that looms, lest our prosperous enclave falls prey to the scourge that scurries in the shadows."
+ FEE_Diseases_Events.4.OPT1: "I hope there won't be new fires."
+
+ FEE_Diseases_Events.5.T: "The Ravens' Spoils"
+ FEE_Diseases_Events.5.D: "Alas, the fates have turned against us, for our troops, lacking due caution, lingered too long in an afflicted province. The toll is grievous, with hundreds succumbing to the insidious contagion. Whispers now speak of our leader, perhaps plagued, and as the casualties mount, the ominous cawing of ravens signals the impending harvest of sorrow."
+ FEE_Diseases_Events.5.OPT1: "Couldn't them be more careful?"
+
+ FEE_Diseases_Events.6.T: "Shadow of Ramparts"
+ FEE_Diseases_Events.6.D: "Behold, the once-impregnable ramparts now crumble under the malevolent caress of the plague. The pestilence, relentless in its assault, corrodes not only our valiant soldiers but also the very stones that form our mighty castles. These formidable fortifications, now weakened, stand on the precipice of ruin. A breach, swift and inevitable, awaits, as our bastions, tainted by both malady and time, bow before the specter of decay. An enemy's assault would find little resistance, for our defenses, once stalwart, now teeter on the brink of vulnerability."
+ FEE_Diseases_Events.6.OPT1: "But here we will stand."
+
+# Bubonic Plague
+
+  ### Plague of Milan 1448-1452 ###
+   FEE_Diseases_Events.10.T: "Death's Return"
+   FEE_Diseases_Events.10.D: "My Lord, the situation in Italy is dire with war and now we have heard of the possibility of the return of the Black Death itself. The plague has already taken so many lives and left us in a state of despair. The Renaissance, which was once a beacon of hope, now seems like a distant memory. The streets are empty, and the once-bustling markets are now silent. The people are afraid, and they have every right to be. The Black Death is a terrible omen of doom, and it threatens to destroy everything we hold dear. We must prepare ourselves for the worst and pray that we will survive this terrible ordeal."
+   FEE_Diseases_Events.10.OPT1: "May God have mercy on us all."
+
+   FEE_Diseases_Events.11.T: "Epidemia Magna"
+   FEE_Diseases_Events.11.D: "My Lord, despite our greatest attempts we were not able to stop the spread of Death in the city of Milan and the outskirt..."
+   FEE_Diseases_Events.11.OPT1: "Prepare for the worst."
+
+   FEE_Diseases_Events.14.T: "End of the Epidemia Magna"
+   FEE_Diseases_Events.14.D: "We have suffered, we have lost, a lot, everyone has suffered and had to say goodbye to the good life we once had, but the beauty of the Renaissance is still here and we will see brighter days."
+   FEE_Diseases_Events.14.OPT1: "White clouds lies ahead."
+
+# Syphilis
 
  FEE_Diseases_Events.1000.T: "A New Disease?"
  FEE_Diseases_Events.1000.D_French: "The descent of the french army on the italian soil has brought, alongside death and destruction, a new disease that has never been seen before, apparently enlarged by the prostitution presence within the army itself, thus the Catholic Church has identified this new \"French Disease\" as a curse from God against mankind for their licentious customs and the immorality of their conduct."
@@ -12,10 +55,26 @@
  FEE_Diseases_Events.1001.OPT1: "We should lock absteen and isolate the whores!"
 
 # Modifiers
+ fee_diseases_until_end_of_plague: "Until the end of the Plague."
+
+ fee_diseases_damaged_goods: "Damaged Goods"
+ desc_fee_diseases_damaged_goods: "Fucking rats, stop it!"
+ fee_diseases_ravens_spoil: "Raven's Spoil"
+ desc_fee_diseases_ravens_spoil: "It's not a field, it's a cemetery"
+ fee_diseases_shadow_ramparts: "Shadow of Ramparts"
+ desc_fee_diseases_shadow_ramparts: "Crumble like sands..."
+
+ fee_diseases_small_bubonic_outbreak: "Small Bubonic Outbreak"
+ desc_fee_diseases_small_bubonic_outbreak: "Deaths' Return"
+ fee_diseases_small_bubonic_recovery: "Gradual Recovery"
+ desc_fee_diseases_small_bubonic_recovery: "Will life ever return back to what it was?"
+
  fee_diseases_syphilis_outbreak: "Syphilis Outbreak"
- desc_fee_diseases_syphilis_outbreak: "Can someone stop fuck those prostitute?"
+ desc_fee_diseases_syphilis_outbreak: "Can someone stop fucking those prostitutes?"
 
 # Tooltip
- FEE_DISEASES_SYPHILIS_DISEASE_TT: "The new disease might spread to nearby provinces. Army marching on those provinces might bring the siphilis back to their homeland"
- FEE_SPREAD_SYPHILIS_TT: "§RThe New Disease might spread to nearby provinces§!"
- FEE_SYPHILIS_SLACKING_MANPOWER_TT: "By removing the worst part of our troops, for the next §Y5 years§! we will be able to contain Syphilis better."
+ FEE_DISEASES_BUBONIC_PLAGUE_RETURN_MILAN_START_TT: "The black Death is Returning, gather all your §MCompetent Doctors§! to try and stop it! \n\n[104.GetName] and all its §YNeighbor Provinces§! will gain '§YSmall Bubonic Outbreak§!' until the eradication of the plague giving the following effects:\n"
+ FEE_DISEASES_BUBONIC_PLAGUE_EPIDEMIA_MAGNA_TT: "Lose §R[This.fee_diseases_epidemia_magna_milan_tax.GetValue]§! Base Tax \n   Lose §R[This.fee_diseases_epidemia_magna_milan_production.GetValue]§! Base Production \n   Lose §R[This.fee_diseases_epidemia_magna_milan_manpower.GetValue]§! Base Manpower. \n\n   Every §YNearby Province§! will have a §Y33% chance§! to: \n      Lose §R1§! Base Tax \n      Lose §R1§! Base Production \n      Lose §R1§! Base Manpower."
+ FEE_DISEASES_BUBONIC_PLAGUE_END_EPIDEMIA_MAGNA_TT: "[104.GetName] and all its §YNeighbor Provinces§! will:"
+
+ FEE_DISEASES_SYPHILIS_DISEASE_TT: "The new disease might spread to nearby provinces. Army marching on those provinces might bring it back to their homeland..."
