@@ -1,0 +1,194 @@
+namespace = FEE_Kotte_Events
+
+# The Legend of Sigiriya
+country_event = {
+	id = FEE_Kotte_Events.1
+	title = FEE_Kotte_Events.1.T
+	desc = FEE_Kotte_Events.1.D
+	picture = BUDDHISM_MONASTERY_eventPicture
+
+	fire_only_once = yes # from bi-yearly on action
+
+	trigger = {
+		owns_or_non_sovereign_subject_of = 2099
+		primary_culture = sinhala
+		OR = {
+			religion = buddhism
+			religion = vajrayana
+			religion = mahayana
+		}
+		current_age = age_of_discovery
+	}
+
+	mean_time_to_happen = {
+		months = 24
+		modifier = {
+			factor = 0.5
+			NOT = { legitimacy = 50 }
+		}
+		modifier = {
+			factor = 2
+			legitimacy = 75
+		}
+	}
+
+	option = {
+		name = FEE_Kotte_Events.1.OPT1
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				NOT = { legitimacy = 50 }
+			}
+			modifier = {
+				factor = 1.25
+				NOT = { ADM = 2 }
+			}
+			modifier = {
+				factor = 1.25
+				NOT = { DIP = 2 }
+			}
+			modifier = {
+				factor = 1.25
+				NOT = { MIL = 2 }
+			}
+		}
+
+		add_years_of_income = -0.25
+		random_list = {
+			50 = {
+				country_event = {
+					id = FEE_Kotte_Events.2
+					days = 30
+				}
+			}
+			50 = {
+				country_event = {
+					id = FEE_Kotte_Events.3
+					days = 30
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Kotte_Events.1.OPT2
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				legitimacy = 75
+			}
+			modifier = {
+				factor = 1.25
+				ADM = 3
+			}
+			modifier = {
+				factor = 1.25
+				DIP = 3
+			}
+			modifier = {
+				factor = 1.25
+				MIL = 3
+			}
+		}
+
+		add_legitimacy_equivalent = { amount = 15 republican_tradition = 7 }
+		add_prestige_or_monarch_power = { amount = 25 }
+		add_heir_claim = 25
+	}
+}
+
+# The Epic of Sigiriya
+country_event = {
+	id = FEE_Kotte_Events.2
+	title = FEE_Kotte_Events.2.T
+	desc = FEE_Kotte_Events.2.D
+	picture = BUDDHISM_GOOD_eventPicture
+
+	fire_only_once = yes # from bi-yearly on action
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Kotte_Events.2.OPT1
+		trigger = {
+			has_heir = no
+		}
+		ai_chance = {
+			factor = 75
+		}
+
+		add_legitimacy_equivalent = { amount = 50 republican_tradition = 25 }
+		add_prestige_or_monarch_power = { amount = 25 }
+		add_ruler_modifier = {
+			name = fee_kotte_heir_lion_rock
+			duration = -1
+		}
+		define_heir = {
+			culture = sinhala
+			religion = ROOT
+			change_adm = 3
+			change_dip = 4
+			change_mil = 2
+		}
+	}
+
+	option = {
+		name = FEE_Kotte_Events.2.OPT2
+		trigger = {
+			has_heir = yes
+		}
+		ai_chance = {
+			factor = 0
+		}
+
+		add_legitimacy_equivalent = { amount = 50 republican_tradition = 25 }
+		add_prestige_or_monarch_power = { amount = 25 }
+		add_ruler_modifier = {
+			name = fee_kotte_heir_lion_rock
+			duration = -1
+		}
+		change_heir_adm = 1
+		change_heir_dip = 2
+		change_heir_mil = 1
+	}
+}
+
+# A false Dynasty
+country_event = {
+	id = FEE_Kotte_Events.3
+	title = FEE_Kotte_Events.3.T
+	desc = FEE_Kotte_Events.3.D
+	picture = BUDDHISM_BAD_eventPicture
+
+	fire_only_once = yes # from bi-yearly on action
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Kotte_Events.3.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_prestige = -15
+		add_legitimacy_equivalent = { amount = -25 republican_tradition = -12 }
+		add_karma = -15
+		every_country = {
+			limit = {
+				OR = {
+					religion = buddhism
+					religion = vajrayana
+					religion = mahayana
+				}
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = border_friction_from_event
+			}
+			reverse_add_opinion = {
+				who = ROOT
+				modifier = border_friction_from_event
+			}
+		}
+	}
+}
