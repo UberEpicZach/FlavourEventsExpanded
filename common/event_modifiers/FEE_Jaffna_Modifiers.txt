@@ -1,0 +1,26 @@
+fee_jfn_kalinga_freedom = {
+	liberty_desire = 25
+}
+
+fee_jfn_reconciliation = {
+	local_unrest = -2
+	years_of_nationalism = -10
+}
+fee_jfn_local_oppression = {
+	local_unrest = 2
+	local_missionary_strength = 0.02
+}
+
+fee_jfn_tamil_trade_adventures = {
+	global_own_trade_power = 0.20
+	global_ship_trade_power = 0.20
+	trade_range_modifier = 0.20
+}
+fee_jfn_golden_age_aryacakravarti = {
+	allowed_num_of_buildings = 1
+	local_build_cost = -0.15
+	local_build_time = -0.15
+	local_development_cost = -0.15
+	province_trade_power_modifier = 0.25
+	trade_value_modifier = 0.25
+}
