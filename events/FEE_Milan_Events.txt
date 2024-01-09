@@ -1,0 +1,301 @@
+namespace = FEE_Milan_Events
+
+#Sforza’s Loyalty Questioned
+country_event = {
+	id = FEE_Milan_Events.1
+	title = FEE_Milan_Events.1.T
+	desc = FEE_Milan_Events.1.D
+	picture = BATTLE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		fee_is_was_mlo = yes
+		is_at_war = yes
+		has_leader = "Francesco Sforza"
+		has_country_flag = sforza_hired
+		NOT = {
+			had_country_flag = { flag = sforza_hired days = 700 }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	major = yes
+	major_trigger = {
+		war_with = ROOT
+	}
+
+	option = {
+		name = FEE_Milan_Events.1.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_treasury = -80
+	}
+
+	option = {
+		name = FEE_Milan_Events.1.OPT2
+		ai_chance = {
+			factor = 50
+		}
+
+		random_list = {
+			50 = { }
+			50 = {
+				random_country = {
+					limit = { war_with = ROOT }
+					define_general = {
+						fire = 5
+						shock = 3
+						manuever = 4
+						siege = 2
+						name = "Francesco Sforza"
+					}
+				}
+			}
+		}
+	}
+}
+
+# Niccolò Piccinino
+country_event = {
+	id = FEE_Milan_Events.2
+	title = FEE_Milan_Events.2.T
+	desc = FEE_Milan_Events.2.D
+	picture = DEBATE_REPUBLICAN_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		fee_is_was_mlo = yes
+		has_leader = "Francesco Sforza"
+		is_at_war = yes
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	major = yes
+	major_trigger = {
+		war_with = ROOT
+	}
+
+	option = {
+		name = FEE_Milan_Events.2.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
+		add_country_modifier = {
+			name = fee_mlo_condottieri_rivalry
+			duration = -1
+		}
+		random_country = {
+			add_country_modifier = {
+				name = fee_mlo_condottieri_rivalry
+				duration = -1
+			}
+			limit = { war_with = ROOT }
+			define_general = {
+				fire = 3
+				shock = 4
+				manuever = 4
+				siege = 2
+				name = "Niccolo Piccinino"
+			}
+		}
+	}
+}
+
+# Death of Piccinino
+country_event = {
+	id = FEE_Milan_Events.3
+	title = FEE_Milan_Events.3.T
+	desc = FEE_Milan_Events.3.D
+	picture = GREAT_BUILDING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		fee_is_was_mlo = yes
+		has_country_modifier = fee_mlo_condottieri_rivalry
+		any_country = {
+			has_country_modifier = fee_mlo_condottieri_rivalry
+			NOT = { has_leader = "Niccolo Piccinino" }
+			NOT = { war_with = ROOT }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	major = yes
+	major_trigger = {
+		has_country_modifier = fee_mlo_condottieri_rivalry
+	}
+
+	option = {
+		name = FEE_Milan_Events.3.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
+		remove_country_modifier = fee_mlo_condottieri_rivalry
+		random_country = {
+			limit = { has_country_modifier = fee_mlo_condottieri_rivalry }
+			remove_country_modifier = fee_mlo_condottieri_rivalry
+		}
+	}
+}
+
+# Sforza Comes with an Offer
+country_event = {
+	id = FEE_Milan_Events.4
+	title = FEE_Milan_Events.4.T
+	desc = FEE_Milan_Events.4.D
+	picture = DEBATE_REPUBLICAN_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		fee_is_was_ven = yes
+		exists = SAV
+		NOT = { alliance_with = MLO }
+		MLO = {
+			had_country_flag = { flag = sforza_hired days = 700 }   # this is required for event ambrosian_republic.6 
+			NOT = { has_country_flag = mlo_military_rule } # this mean that you have not chosen the first option... although it might fire too fast [like first, so we could just increase the first days]			
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	goto = 2977
+
+	option = {
+		name = FEE_Milan_Events.4.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_treasury = -100
+		add_casus_belli = {
+			type = cb_support_rebels
+			target = MLO
+		}
+		declare_war_with_cb = {
+			casus_belli = cb_support_rebels
+			who = MLO
+		}
+		MLO = {
+			country_event = {
+				id = FEE_Milan_Events.5
+				days = 1
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Milan_Events.4.OPT2
+		ai_chance = {
+			factor = 50
+		}
+
+		add_prestige_or_monarch_power = { amount = 10 }
+		add_truce_with = MLO
+	}
+}
+
+# Venice Intervenes
+country_event = {
+	id = FEE_Milan_Events.5
+	title = FEE_Milan_Events.5.T
+	desc = FEE_Milan_Events.5.D
+	picture = DIPLOMACY_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Milan_Events.5.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_country_modifier = {
+			name = fee_mlo_fight_republic
+			duration = 1825
+		}
+		random_owned_province = {
+			limit = {
+				controlled_by = ROOT
+				has_siege = no
+			}
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+			infantry = ROOT
+		}
+	}
+
+	option = {
+		name = FEE_Milan_Events.5.OPT2
+		trigger = {
+			exists = SAV
+		}
+		ai_chance = {
+			factor = 25
+		}
+
+		SAV = {
+			country_event = {
+				id = FEE_Milan_Events.6
+			}
+		}
+	}
+}
+
+# Milan Calls for Aid
+country_event = {
+	id = FEE_Milan_Events.6
+	title = FEE_Milan_Events.6.T
+	desc = FEE_Milan_Events.6.D
+	picture = GREAT_BUILDING_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Milan_Events.6.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		join_all_defensive_wars_of = MLO
+		add_country_modifier = {
+			name = fee_mlo_savoy_marches
+			duration = 1825
+		}
+	}
+
+	option = {
+		name = FEE_Milan_Events.6.OPT2
+		ai_chance = {
+			factor = 50
+		}
+
+		add_prestige_or_monarch_power = { amount = 10 }
+		add_country_modifier = {
+			name = fee_mlo_left_milan_fate
+			duration = 1825
+		}
+	}
+}

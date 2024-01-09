@@ -1,0 +1,42 @@
+﻿l_spanish: 
+
+# Events
+ FEE_Milan_Events.1.T: "Sforza’s Loyalty Questioned"
+ FEE_Milan_Events.1.D: "Like any other Italian condottiero, Sforza fights for us because we pay him to. He fights for the highest bidder, and would not hesitate to change sides if someone came along with a bigger purse than our own. Honor, for a condottiero, is often cheaper than silver…"
+ FEE_Milan_Events.1.OPT1: "We must make sure we pay him well, he is worth it"
+ FEE_Milan_Events.1.OPT2: "If Sforza is such a fool, let him leave!"
+
+ FEE_Milan_Events.2.T: "Niccolò Piccinino"
+ FEE_Milan_Events.2.D: "Sforza was far from the only condottiero to make a name for himself fighting up and down the Italian peninsula. A man of great furbizia (cunning), some say he got his first condottiero command by murdering his own captain... \nDuring the Aragonese wars in Naples, Piccinino and Sforza, fighting on opposite sides, grew an intense personal enmity between them, a thing unusual for condottieri, who placed profit above personal squabbles. However, perhaps Piccinino and Sforza were destined to be enemies, as two competing dogs for the same scrap of meat. In many ways they were kindred spirits: both had within them a burning desire for personal glory, unusually for condottieri, and both were virtually unmatched on the battlefield. For year, Sforza and Piccinino fought up and down the Italian peninsula, their rivalry influencing battle after battle. \nWhen Sforza was first employed by Duke Visconti of Milan, a furious Piccinino tore up his own contract with Visconti and swore that he would destroy Sforza for his “betrayal.”"
+ FEE_Milan_Events.2.OPT1: "So be it"
+
+ FEE_Milan_Events.3.T: "Death of Piccinino"
+ FEE_Milan_Events.3.D: "The last war of their infamous and long-time rivalry was a bitter disappointment for Niccolo Piccinino. Although winning an initial skirmish against Sforza, he was called away on what turned out to the eve of the crucial battle of the war. His army beaten in his absence, Piccinino was fired by his employers and disgraced, while Sforza was hailed in Milan as a war hero. With his dreams of triumph over his life-long rival crushed, Piccinino died of grief and his battle wounds."
+ FEE_Milan_Events.3.OPT1: "So ends a great leader among men, beaten at the last"
+
+ FEE_Milan_Events.4.T: "Sforza Comes with an Offer"
+ FEE_Milan_Events.4.D: "Sforza, fighting in the name of Milan, has thwarted our ambitions more times than we can count! Now, however, in a dark tent over a barrel of wine, our military commander, and old contact of Sforza’s has met with him in secret. As Milan has ejected him, rather than moving on to another employer like a sensible condottiero he has chosen to engage in civil war to claim Milan for his own. He now offers us a golden opportunity. While he besieges and takes the city itself, we shall be free to take back all that we have lost against the Milanese. Of course, he also requests our financial support for what will surely be a long and expensive siege."
+ FEE_Milan_Events.4.OPT1: "Sforza cannot be trusted, but this opportunity is too good to pass up"
+ FEE_Milan_Events.4.OPT2: "Let the Milanese kill each other rather than risk betrayal for ourselves."
+
+ FEE_Milan_Events.5.T: "Venice Intervenes"
+ FEE_Milan_Events.5.D: "While the Milanese rush to defend their fledging Republic, Sforza has not been idle. Knowing that wars can often be decided at the table as well as on the battlefield, he has arranged meetings with some of the contacts gained through a lifetime of fighting in Italy. In a dark tent over a barrel of wine, one such contact is none other than the commander of the Venetian armies. Seeing their opportunity to strike at a weakened Milan, the Venetians have now joined Sforza in his attack on us!"
+ FEE_Milan_Events.5.OPT1: "We must call all who can bear arms to fight for the Republic!"
+ FEE_Milan_Events.5.OPT2: "A pact between Sforza and Venice threatens all of Italy, we must ask for help!"
+
+ FEE_Milan_Events.6.T: "Milan Calls for Aid"
+ FEE_Milan_Events.6.D: "“Our city is under attack!” cry the breathless emissaries from Milan. Sforza’s rebellion against Milan comes as no surprise to us; we saw the ambition and lack of honor leading up to this point for a long time now. However, the news that Venice has intervened on Sforza’s side sends shock waves through our court. The unbridled ambition of both the Venetians and of Sforza himself threatens to upset the delicate balance of power in Italy, if left unchallenged."
+ FEE_Milan_Events.6.OPT1: "And Savoy will answer!"
+ FEE_Milan_Events.6.OPT2: "Where was Milan when our enemies closed in around us!?"
+
+# Modifiers
+ fee_mlo_condottieri_rivalry: ""
+ desc_fee_mlo_condottieri_rivalry: ""
+
+ fee_mlo_fight_republic: ""
+ desc_fee_mlo_fight_republic: ""
+
+ fee_mlo_left_milan_fate: ""
+ desc_fee_mlo_left_milan_fate: ""
+ fee_mlo_savoy_marches: ""
+ desc_fee_mlo_savoy_marches: ""
