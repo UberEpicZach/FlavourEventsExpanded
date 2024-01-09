@@ -2,6 +2,9 @@ fee_nap_magnanimo = {
 	reform_progress_growth = 0.10
 	global_unrest = -1
 }
+fee_nap_transumanza_ge = {
+	rural_goods_produced_modifier = 0.05
+}
 fee_nap_transumanza = {
 	trade_goods_size_modifier = 0.10
 	local_development_cost = -0.10
