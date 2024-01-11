@@ -19,6 +19,24 @@
  FEE_Jaffna_Events.4.D: "Once a tapestry of diverse cultures and traditions, the island of Ceylon had undergone a remarkable transformation. United under a single faith, the island stood poised to embrace a future of unparalleled prosperity and influence. Under the wise leadership of [Root.Monarch.GetTitle] [Root.Monarch.GetName], Ceylon's gaze turned towards the vast expanse of the Indian Ocean, its vibrant ports ready to embark on a grand odyssey of trade and adventure. \nThe spirit of the ancient Tamil kings, known for their daring seafaring voyages and their mastery of trade routes, echoed through the hearts of Ceylon's people. The bustling ports of the island, once hubs of regional exchange, were now poised to connect Ceylon to the far corners of the world. Merchants and explorers from distant lands, drawn by Ceylon's reputation for unity and prosperity, eagerly sought to establish trade partnerships and embark on joint ventures. \nCeylon's strategic location on the Coromandel Coast, once a source of contention, had become a springboard for global trade dominance. Ships laden with exotic spices, precious silks, and rare gems set sail from Ceylon's ports, their sails billowing with the promise of untold riches. The island's merchants, guided by centuries of accumulated knowledge and expertise, navigated the treacherous waters of the Indian Ocean, forging new trade routes and establishing Ceylon as a leading maritime power."
  FEE_Jaffna_Events.4.OPT1: "Purely for Profit"
 
+ FEE_Jaffna_Events.5.T: "Muslim Arrival in Jaffna"
+ FEE_Jaffna_Events.5.D: "A group of Muslim merchants, seeking to settle in the beautiful Ceylon, approached our shores. Their presence promises to enhance the commercial reach of our provinces. Now, we face a decision: shall we welcome them, embracing the potential economic benefits they bring, or shall we proceed with caution, considering the potential implications of their settlement on the island's dynamics and our existing interests? The choice rests in our hands, balancing the prospect of prosperity with the need for strategic foresight."
+ FEE_Jaffna_Events.5.OPT1: "Strengthen the Muslim presence"
+
+ FEE_Jaffna_Events.6.T: "Growing Muslim Community"
+ FEE_Jaffna_Events.6.D: "The situation presents a delicate balance between mutual benefit and potential challenges. While the Muslim merchants have contributed significantly to the prosperity of our trade, their request for increased self-governance raises valid concerns. To navigate this, we may consider a carefully negotiated compromise. \nEngaging in open dialogue with the Muslim merchants to understand their aspirations and concerns is crucial. A tailored arrangement that acknowledges their contributions while preserving the overall governance structure could be sought. Striking a balance that safeguards our interests and maintains stability in Jaffna should be the paramount goal. A diplomatic approach, fostering collaboration and addressing concerns through negotiation, could pave the way for a harmonious resolution."
+ FEE_Jaffna_Events.6.OPT1: "Grow the Muslim Community"
+ FEE_Jaffna_Events.6.OPT2: "Hinder the Muslim Community"
+
+ FEE_Jaffna_Events.7.T: "Flourishing Muslim Community"
+ FEE_Jaffna_Events.7.D: "The flourishing of the Muslim community on the island is undoubtedly a testament to their contributions and success. However, as they seek additional rights, it's essential to assess the situation judiciously. Evaluating the requests in the context of maintaining overall societal harmony is crucial. \nWhile recognizing and valuing their contributions, it's essential to consider the broader implications of granting additional rights. A measured approach involves engaging in open dialogue, understanding their perspectives, and finding a balanced solution that fosters inclusivity without compromising the stability and cohesion of the broader community. \nThe key lies in achieving a harmonious coexistence where diverse communities thrive while respecting the established social fabric. Balancing the aspirations of the Muslim community with the broader societal interests will guide the decision-making process."
+ FEE_Jaffna_Events.7.OPT1: "Improve Muslim’s acceptance"
+ FEE_Jaffna_Events.7.OPT2: "Destroy the Muslim Community"
+
+ FEE_Jaffna_Events.8.T: "Imposing Muslim Community"
+ FEE_Jaffna_Events.8.D: "The consequences of our unbridled pursuit of commerce have revealed themselves in unexpected ways, my lord. The once-thriving Muslim community, nurtured for the sake of trade, has now burgeoned to a point where they wield influence over laws and religion in our cherished Jaffna. The insatiable appetite for wealth and commerce has unwittingly led to a shift in the power dynamics, and we find ourselves questioning why we did not exercise restraint sooner. \nIn our fervour for prosperity, we may have overlooked the potential ramifications on the social and political fabric of Jaffna. Now, we face the challenging task of recalibrating the balance, and restoring a sense of order that aligns with our original intentions for the region. This serves as a stark reminder of the importance of temperance and foresight in matters of expansion and influence."
+ FEE_Jaffna_Events.8.OPT1: "Muslim Dominion"
+
 # Modifiers
  fee_jfn_kalinga_freedom: "Kalinga’s Freedom"
  desc_fee_jfn_kalinga_freedom: ""
@@ -32,5 +50,12 @@
  desc_fee_jfn_tamil_trade_adventures: ""
  fee_jfn_golden_age_aryacakravarti: "The Golden Age of Aryacakravarti"
  desc_fee_jfn_golden_age_aryacakravarti: ""
+
+ fee_jfn_muslim_minority: "Muslim Minority"
+ desc_fee_jfn_muslim_minority: ""
+ fee_jfn_flourishing_muslim_community: "Flourishin Muslim Community"
+ desc_fee_jfn_flourishing_muslim_community: ""
+ fee_jfn_strong_muslim_community: "Strong Muslim Community"
+ desc_fee_jfn_strong_muslim_community: ""
 
 # Tooltip

@@ -24,3 +24,16 @@ fee_jfn_golden_age_aryacakravarti = {
 	province_trade_power_modifier = 0.25
 	trade_value_modifier = 0.25
 }
+
+fee_jfn_muslim_minority = {
+	local_production_efficiency = 0.15
+}
+fee_jfn_flourishing_muslim_community = {
+	local_production_efficiency = 0.15
+	trade_goods_size_modifier = 0.15
+}
+fee_jfn_strong_muslim_community = {
+	local_production_efficiency = 0.25
+	trade_goods_size_modifier = 0.25
+	local_missionary_strength = -1.00
+}
