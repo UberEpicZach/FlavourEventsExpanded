@@ -10,7 +10,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_mlo = yes
+		is_or_was_tag = { tag = MLO }
 		is_at_war = yes
 		has_leader = "Francesco Sforza"
 		has_country_flag = sforza_hired
@@ -71,7 +71,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_mlo = yes
+		is_or_was_tag = { tag = MLO }
 		has_leader = "Francesco Sforza"
 		is_at_war = yes
 	}
@@ -122,7 +122,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_mlo = yes
+		is_or_was_tag = { tag = MLO }
 		has_country_modifier = fee_mlo_condottieri_rivalry
 		any_country = {
 			has_country_modifier = fee_mlo_condottieri_rivalry
@@ -164,7 +164,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		exists = SAV
 		NOT = { alliance_with = MLO }
 		MLO = {
