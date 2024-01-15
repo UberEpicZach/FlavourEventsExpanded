@@ -11,6 +11,7 @@
  fee_netherlands_rampjaar: "Rampjaar"
  fee_naples_conspiracy_barons_1: "First Conspirancy Of the Barons"
  fee_naples_conspiracy_barons_2: "Second Conspirancy Of the Barons"
+ fee_decline_vijayanagar: "Decline of Vijayanagar"
 
 # Events:
  #Portugal
@@ -666,6 +667,15 @@
   disaster_fee_naples_conspiracy_barons.19.D: "After years of careful diplomacy and agreements with the leader of the nobility like Antonello Sanseverino prince of Salerno, our beloved king [Root.Monarch.GetName] has managed to create a peaceful and prosperous ruling that will last for many years."
   disaster_fee_naples_conspiracy_barons.19.OPT1: "Long live the king!"
 
+ # Vijayanagar
+  disaster_fee_vij_decline_vijayanagar.1.T: "Administrative Inefficiency"
+  disaster_fee_vij_decline_vijayanagar.1.D: "Despite the best effort of our splendid king our Capital has been ransacked and put to ruin and the constant warfare with our neighbours has hindered the state far too deep leading to failure to even celebrate the Heaven themselves that for long had blessed the splendid Hampi, may our ancestors protect us."
+  disaster_fee_vij_decline_vijayanagar.1.OPT1: "Black Clouds Lies Ahead..."
+
+  disaster_fee_vij_decline_vijayanagar.2.T: "The Glory of Vijayanagar"
+  disaster_fee_vij_decline_vijayanagar.2.D: "The worst period that our empire has ever seen has finally ended, the jewel of our capital [Capital.GetName] is forever casting its light upon the whole continent and the sea on which we rule, our dynasty has never been stronger and even the names of our old kings like Harihara, Bukka Raya, and Deva Raja II pale at the sight of our King [Root.Monarch.GetName] [Root.Monarch.Dynasty.GetName]."
+  disaster_fee_vij_decline_vijayanagar.2.OPT1: "We are victorious!"
+
 # Modifiers:
  fee_portuguese_succession_crisis_chaste_king: "Chaste King"
  desc_fee_portuguese_succession_crisis_chaste_king: ""
@@ -770,6 +780,11 @@
  fee_disaster_naples_twenty_years_prosperity: "Twenty Years of Prosperity"
  desc_fee_disaster_naples_twenty_years_prosperity: ""
 
+ fee_disaster_vij_political_instability: "Political Instability"
+ desc_fee_disaster_vij_political_instability: ""
+ fee_disaster_vij_prosperity_southern_india: "Prosperity Southern India"
+ desc_fee_disaster_vij_prosperity_southern_india: ""
+
 # Opinion Modifiers:
  fee_portuguese_succession_crisis_acceptance: "Holy Father Accepted"
  fee_portuguese_succession_crisis_rejection: "Holy Father Refused"
@@ -864,3 +879,12 @@
  FEE_ITA_DISASTER_REPUBLICAN_TT: "One of the following must be true:\n\t§YRepublican§! or §YMonarchist§! rebels enforce their demand\n\tThe disaster has been going for at least §Y15 years§!"
 
  FEE_NAP_FIRST_BARONY_SKIPPED_TT: "We were able to keep the Barons at ease."
+
+ FEE_VIJ_DISASTER_DURATION_TT: "Been in the Disaster for §Y15 Years§!."
+ FEE_VIJ_DISASTER_CAPITAL_REBEL_TT: "No Province in your §YCapital's Region§! is controlled by §YRebels§! or has §YRebels' Armies§!."
+ FEE_VIJ_DISASTER_COROMANDEL_OWNS_ALL_PROVINCES_TT: "Owns all §YCoastal§! Provinces in the §Y[1340.GetName] Trade Node§!."
+ FEE_VIJ_DISASTER_COROMANDEL_NOT_OWNS_17_PROVINCES_TT: "Owns less than 17 §YCoastal§! Provinces in the §Y[1340.GetName] Trade Node§!."
+ FEE_VIJ_DISASTER_WON_RECENT_WAR_VS_EUROPEAN_TT: "Won a war against an §YEuropean§! Country in the past §Y10§! Years."
+ FEE_VIJ_DISASTER_WON_RECENT_WAR_VS_MUSLIM_TT: "Won a war against a §YMuslim§! Country in the past §Y10§! Years."
+ FEE_VIJ_DISASTER_LOST_RECENT_WAR_VS_MUSLIM_TT: "Lost a war against an §YEuropean§! Country in the past §Y10§! Years."
+ FEE_VIJ_DISASTER_LOST_RECENT_WAR_VS_EUROPEAN_TT: "Lost a war against a §YMuslim§! Country in the past §Y10§! Years."

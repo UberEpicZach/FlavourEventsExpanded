@@ -1,0 +1,216 @@
+fee_decline_vijayanagar = {
+	potential = {
+		is_or_was_tag = { tag = VIJ }
+		NOT = { has_country_flag = fee_vij_decline_stopped }
+	}
+	can_start = {
+		has_any_disaster = no
+		calc_true_if = {
+			amount = 3
+			OR = {
+				NOT = { owns = 541 }
+				num_of_loans = 5
+				any_country = {
+					religion_group = muslim
+					has_won_war_against = {
+						who = ROOT
+						max_years_since = 10
+					}
+				}
+				any_country = {
+					capital_scope = { continent = europe }
+					has_won_war_against = {
+						who = ROOT
+						max_years_since = 10
+					}
+				}
+				NOT = { total_development = 130 }
+			}
+		}
+	}
+	can_stop = {
+		has_any_disaster = yes
+	}
+
+	down_progress = {
+		factor = 1
+	}
+
+	progress = {
+		modifier = {
+			factor = -0.5
+			total_development = BAH
+		}
+		modifier = {
+			factor = -1
+			stability = 2
+		}
+		modifier = {
+			factor = -0.5
+			custom_trigger_tooltip = {
+				tooltip = FEE_VIJ_DISASTER_WON_RECENT_WAR_VS_MUSLIM_TT
+				any_country = {
+					religion_group = muslim
+					ROOT = {
+						has_won_war_against = {
+							who = PREV
+							max_years_since = 10
+						}
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = -1
+			custom_trigger_tooltip = {
+				tooltip = FEE_VIJ_DISASTER_WON_RECENT_WAR_VS_EUROPEAN_TT
+				any_country = {
+					capital_scope = { continent = europe }
+					ROOT = {
+						has_won_war_against = {
+							who = PREV
+							max_years_since = 10
+						}
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = -1
+			custom_trigger_tooltip = {
+				tooltip = FEE_VIJ_DISASTER_COROMANDEL_OWNS_ALL_PROVINCES_TT
+				1340 = {
+					all_trade_node_member_province = {
+						OR = {
+							NOT = { has_port = yes }
+							owned_by = ROOT
+						}
+					}
+				}
+			}
+		}
+
+		modifier = {
+			factor = 1.0
+			NOT = { legitimacy_equivalent = 50 }
+		}
+		modifier = {
+			factor = 1.0
+			NOT = { prestige = 50 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { stability = 0 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { stability = -1 }
+		}
+		modifier = {
+			factor = 0.5
+			NOT = { stability = -2 }
+		}
+		modifier = {
+			factor = 2
+			custom_trigger_tooltip = {
+				tooltip = FEE_VIJ_DISASTER_COROMANDEL_NOT_OWNS_17_PROVINCES_TT
+				NOT = {
+					num_of_owned_provinces_with = {
+						value = 17
+						has_port = yes
+						any_trade_node_member_province = { province_id = 1340 }
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 1
+			custom_trigger_tooltip = {
+				tooltip = FEE_VIJ_DISASTER_LOST_RECENT_WAR_VS_MUSLIM_TT
+				any_country = {
+					religion_group = muslim
+					has_won_war_against = {
+						who = ROOT
+						max_years_since = 10
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 1
+			custom_trigger_tooltip = {
+				tooltip = FEE_VIJ_DISASTER_LOST_RECENT_WAR_VS_EUROPEAN_TT
+				any_country = {
+					capital_scope = { continent = europe }
+					has_won_war_against = {
+						who = ROOT
+						max_years_since = 10
+					}
+				}
+			}
+		}
+	}
+
+	can_end = {
+		legitimacy_equivalent = 90
+		stability = 1
+		custom_trigger_tooltip = {
+			tooltip = FEE_VIJ_DISASTER_CAPITAL_REBEL_TT
+			capital_scope = {
+				region_for_scope_province = {
+					type = all
+					OR = {
+						NOT = { owned_by = ROOT }
+						AND = {
+							NOT = { controlled_by = REB }
+							NOT = { units_in_province = REB }
+						}
+					}
+				}
+			}
+		}
+		capital_scope = {
+			province_id = 541
+			NOT = { devastation = 1 }
+		}
+		custom_trigger_tooltip = {
+			tooltip = FEE_VIJ_DISASTER_DURATION_TT
+			had_country_flag = {
+				flag = fee_ita_republican_matter
+				days = 5475
+			}
+		}
+	}
+
+	modifier = {
+		legitimacy = -1
+		prestige = -2
+		monthly_splendor = -2
+	}
+
+	on_start = disaster_fee_vij_decline_vijayanagar.1	# Administrative Inefficiency
+	on_end = disaster_fee_vij_decline_vijayanagar.2		# The Glory of Vijayanagar
+
+	on_monthly = {
+		events = { }
+		random_events = {
+			1000 = 0
+			# Bad ones
+			# 300 = disaster_fee_vij_decline_vijayanagar.3	# Social and Religious Conflicts
+			# 300 = disaster_fee_vij_decline_vijayanagar.4	# Prolonged War
+			# 300 = disaster_fee_vij_decline_vijayanagar.5	# Betrayal by Nayakas
+			# 300 = disaster_fee_vij_decline_vijayanagar.6	# Caste Division
+			# 300 = disaster_fee_vij_decline_vijayanagar.7	# Loss of Coromandel
+			# 300 = disaster_fee_vij_decline_vijayanagar.8	# Loss of the 300 ports
+			# Revolts
+			# 200 = disaster_fee_vij_decline_vijayanagar.9	# Loss of Overseas business
+			# 200 = disaster_fee_vij_decline_vijayanagar.10	# Thanjavur
+			# 200 = disaster_fee_vij_decline_vijayanagar.11	# Golkonda invasion
+			# 200 = disaster_fee_vij_decline_vijayanagar.12	# Bjiapur rebellion
+			# Positive/Helpful ones
+			# 100 = disaster_fee_vij_decline_vijayanagar.13	# Restore the Amaranayaka Sainya
+			# 100 = disaster_fee_vij_decline_vijayanagar.14	# Capital Centralisation
+			# 100 = disaster_fee_vij_decline_vijayanagar.15	# Reinforce internal land trade
+		}
+	}
+}

@@ -32,6 +32,7 @@ fee_italy_republican_matter = {
 			factor = -2
 			legitimacy_equivalent = 90
 		}
+
 		modifier = {
 			factor = 1
 			NOT = { stability = 1 }
