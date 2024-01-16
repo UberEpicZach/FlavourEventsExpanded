@@ -183,9 +183,10 @@ fee_decline_vijayanagar = {
 	}
 
 	modifier = {
+		global_unrest = 2
 		legitimacy = -1
-		prestige = -2
 		monthly_splendor = -2
+		prestige = -2
 	}
 
 	on_start = disaster_fee_vij_decline_vijayanagar.1	# Administrative Inefficiency
@@ -196,21 +197,23 @@ fee_decline_vijayanagar = {
 		random_events = {
 			1000 = 0
 			# Bad ones
-			# 300 = disaster_fee_vij_decline_vijayanagar.3	# Social and Religious Conflicts
-			# 300 = disaster_fee_vij_decline_vijayanagar.4	# Prolonged War
-			# 300 = disaster_fee_vij_decline_vijayanagar.5	# Betrayal by Nayakas
-			# 300 = disaster_fee_vij_decline_vijayanagar.6	# Caste Division
-			# 300 = disaster_fee_vij_decline_vijayanagar.7	# Loss of Coromandel
-			# 300 = disaster_fee_vij_decline_vijayanagar.8	# Loss of the 300 ports
+			300 = disaster_fee_vij_decline_vijayanagar.3	# Social and Religious Conflicts
+			300 = disaster_fee_vij_decline_vijayanagar.4	# Prolonged War
+			300 = disaster_fee_vij_decline_vijayanagar.5	# Betrayal by Nayakas
+			300 = disaster_fee_vij_decline_vijayanagar.6	# Caste Division
+			300 = disaster_fee_vij_decline_vijayanagar.7	# Loss of Coromandel
+			300 = disaster_fee_vij_decline_vijayanagar.8	# Loss of the 300 ports
 			# Revolts
-			# 200 = disaster_fee_vij_decline_vijayanagar.9	# Loss of Overseas business
-			# 200 = disaster_fee_vij_decline_vijayanagar.10	# Thanjavur
-			# 200 = disaster_fee_vij_decline_vijayanagar.11	# Golkonda invasion
-			# 200 = disaster_fee_vij_decline_vijayanagar.12	# Bjiapur rebellion
+			200 = disaster_fee_vij_decline_vijayanagar.9	# Loss of Overseas business
+			200 = disaster_fee_vij_decline_vijayanagar.10	# Tamilakam
+			200 = disaster_fee_vij_decline_vijayanagar.11	# Thanjavur
+			200 = disaster_fee_vij_decline_vijayanagar.12	# Tiger of Mysore
+			200 = disaster_fee_vij_decline_vijayanagar.13	# Golkonda invasion
+			200 = disaster_fee_vij_decline_vijayanagar.14	# Bijapur rebellion
 			# Positive/Helpful ones
-			# 100 = disaster_fee_vij_decline_vijayanagar.13	# Restore the Amaranayaka Sainya
-			# 100 = disaster_fee_vij_decline_vijayanagar.14	# Capital Centralisation
-			# 100 = disaster_fee_vij_decline_vijayanagar.15	# Reinforce internal land trade
+			100 = disaster_fee_vij_decline_vijayanagar.15	# Restore the Amaranayaka Sainya
+			100 = disaster_fee_vij_decline_vijayanagar.16	# Capital Centralisation
+			100 = disaster_fee_vij_decline_vijayanagar.17	# Reinforce internal land trade
 		}
 	}
 }

@@ -5,10 +5,11 @@ country_event = {
 	id = disaster_fee_vij_decline_vijayanagar.1
 	title = disaster_fee_vij_decline_vijayanagar.1.T
 	desc = disaster_fee_vij_decline_vijayanagar.1.D
-	picture = CIVIL_WAR_eventPicture
+	picture = RELIGIOUS_TURMOIL_eventPicture
+
+	is_triggered_only = yes
 
 	major = yes
-	is_triggered_only = yes
 
 	option = {
 		name = disaster_fee_vij_decline_vijayanagar.1.OPT1
@@ -34,8 +35,9 @@ country_event = {
 	desc = disaster_fee_vij_decline_vijayanagar.2.D
 	picture = GOOD_WITH_MONARCH_eventPicture
 
-	major = yes
 	is_triggered_only = yes
+
+	major = yes
 
 	immediate = {
 		hidden_effect = { set_country_flag = fee_vij_decline_stopped }
@@ -62,5 +64,821 @@ country_event = {
 			name = fee_disaster_vij_prosperity_southern_india
 			duration = 18250
 		}
+		hidden_effect = {
+			every_owned_province = {
+				if = {
+					limit = { has_province_modifier = fee_disaster_vij_internal_division }
+					remove_province_modifier = fee_disaster_vij_internal_division
+				}
+				if = {
+					limit = { has_province_modifier = fee_disaster_vij_bandaya_naykaru }
+					remove_province_modifier = fee_disaster_vij_bandaya_naykaru
+				}
+				if = {
+					limit = { has_province_modifier = fee_disaster_vij_protected_tamil_autonomy }
+					remove_province_modifier = fee_disaster_vij_protected_tamil_autonomy
+				}
+				if = {
+					limit = { has_province_modifier = fee_disaster_vij_protected_mysorean_autonomy }
+					remove_province_modifier = fee_disaster_vij_protected_mysorean_autonomy
+				}
+			}
+		}
+	}
+}
+
+### Negative Events
+
+# Social and Religious Conflicts
+country_event = {
+	id = disaster_fee_vij_decline_vijayanagar.3
+	title = disaster_fee_vij_decline_vijayanagar.3.T
+	desc = disaster_fee_vij_decline_vijayanagar.3.D
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		any_owned_province = {
+			religion_group = muslim
+		}
+	}
+
+	option = {
+		name = disaster_fee_vij_decline_vijayanagar.3.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		custom_tooltip = FEE_VIJ_SOCIAL_RELIGIOUS_CONFLICT_TT
+		tooltip = {
+			random_owned_province = {
+				limit = { religion_group = muslim }
+				random = {
+					chance = 15
+					heretic_rebels = 1
+				}
+				add_province_modifier = {
+					name = fee_disaster_vij_internal_division
+					duration = -1
+					desc = FEE_VIJ_UNTIL_END_DISASTER_TT
+				}
+			}
+		}
+		hidden_effect = {
+			every_owned_province = {
+				limit = { religion_group = muslim }
+				random = {
+					chance = 15
+					heretic_rebels = 1
+				}
+				add_province_modifier = {
+					name = fee_disaster_vij_internal_division
+					duration = -1
+					desc = FEE_VIJ_UNTIL_END_DISASTER_TT
+				}
+			}
+		}
+	}
+}
+
+# Prolonged War
+country_event = {
+	id = disaster_fee_vij_decline_vijayanagar.4
+	title = disaster_fee_vij_decline_vijayanagar.4.T
+	desc = disaster_fee_vij_decline_vijayanagar.4.D
+	picture = MILITARY_CAMP_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		had_recent_war = 5
+	}
+
+	option = {
+		name = disaster_fee_vij_decline_vijayanagar.4.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_disaster_modifier = {
+			name = fee_disaster_vij_agagge_akramanagalu
+			duration = -1
+			disaster = fee_decline_vijayanagar
+		}
+	}
+}
+
+# Betrayal by Nayakas
+country_event = {
+	id = disaster_fee_vij_decline_vijayanagar.5
+	title = disaster_fee_vij_decline_vijayanagar.5.T
+	desc = disaster_fee_vij_decline_vijayanagar.5.D
+	picture = BORDER_TENSION_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		any_neighbor_country = {
+			OR = {
+				capital_scope = { continent = europe }
+				AND = {
+					religion_group = muslim
+					capital_scope = { region = deccan_region }
+					has_reform = indian_sultanate_reform
+				}
+			}
+		}
+	}
+
+	option = {
+		name = disaster_fee_vij_decline_vijayanagar.5.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		custom_tooltip = FEE_VIJ_BETRAYAL_NAYAKS_TT
+		tooltip = {
+			random_owned_province = {
+				limit = {
+					any_neighbor_province = {
+						owner = {
+							OR = {
+								capital_scope = { continent = europe }
+								AND = {
+									religion_group = muslim
+									capital_scope = { region = deccan_region }
+									has_reform = indian_sultanate_reform
+								}
+							}
+						}
+					}
+				}
+				add_province_modifier = {
+					name = fee_disaster_vij_bandaya_naykaru
+					duration = -1
+					desc = FEE_VIJ_UNTIL_END_DISASTER_TT
+				}
+			}
+		}
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					any_neighbor_province = {
+						owner = {
+							OR = {
+								capital_scope = { continent = europe }
+								AND = {
+									religion_group = muslim
+									capital_scope = { region = deccan_region }
+									has_reform = indian_sultanate_reform
+								}
+							}
+						}
+					}
+				}
+				add_province_modifier = {
+					name = fee_disaster_vij_bandaya_naykaru
+					duration = -1
+					desc = FEE_VIJ_UNTIL_END_DISASTER_TT
+				}
+			}
+		}
+	}
+}
+
+# Caste Division
+country_event = {
+	id = disaster_fee_vij_decline_vijayanagar.6
+	title = disaster_fee_vij_decline_vijayanagar.6.T
+	desc = disaster_fee_vij_decline_vijayanagar.6.D
+	picture = NOBLE_ESTATE_DEMANDS_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = disaster_fee_vij_decline_vijayanagar.6.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_disaster_modifier = {
+			name = fee_disaster_vij_parinamakari_nayakatvada_korate
+			duration = -1
+			disaster = fee_decline_vijayanagar
+		}
+	}
+}
+
+# Loss of Coromandel
+country_event = {
+	id = disaster_fee_vij_decline_vijayanagar.7
+	title = disaster_fee_vij_decline_vijayanagar.7.T
+	desc = disaster_fee_vij_decline_vijayanagar.7.D
+	picture = PORT_BLOCKADED_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		NOT = {
+			num_of_owned_provinces_with = {
+				value = 5
+				region = coromandel_region
+				has_port = yes
+				any_trade_node_member_province = { province_id = 1340 }
+			}
+		}
+	}
+
+	option = {
+		name = disaster_fee_vij_decline_vijayanagar.7.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_disaster_modifier = {
+			name = fee_disaster_vij_purvavyaparada_nasta
+			duration = -1
+			disaster = fee_decline_vijayanagar
+		}
+		every_owned_province = {
+			limit = {
+				region = coromandel_region
+				has_port = yes
+				any_trade_node_member_province = { province_id = 1340 }
+			}
+			add_base_production = -1
+		}
+	}
+}
+
+# Loss of the 300 ports
+country_event = {
+	id = disaster_fee_vij_decline_vijayanagar.8
+	title = disaster_fee_vij_decline_vijayanagar.8.T
+	desc = disaster_fee_vij_decline_vijayanagar.8.D
+	picture = PORT_BLOCKADED_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		NOT = {
+			num_of_owned_provinces_with = {
+				value = 5
+				region = deccan_region
+				has_port = yes
+				any_trade_node_member_province = { province_id = 1948 }
+			}
+		}
+	}
+
+	option = {
+		name = disaster_fee_vij_decline_vijayanagar.8.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_disaster_modifier = {
+			name = fee_disaster_vij_300_bandarugala_nasta
+			duration = -1
+			disaster = fee_decline_vijayanagar
+		}
+		every_owned_province = {
+			limit = {
+				region = deccan_region
+				has_port = yes
+				any_trade_node_member_province = { province_id = 1948 }
+			}
+			add_base_production = -1
+		}
+	}
+}
+
+# Loss of Overseas business
+country_event = {
+	id = disaster_fee_vij_decline_vijayanagar.9
+	title = disaster_fee_vij_decline_vijayanagar.9.T
+	desc = disaster_fee_vij_decline_vijayanagar.9.D
+	picture = SAD_MERCHANT_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		has_country_modifier = fee_disaster_vij_purvavyaparada_nasta
+		has_country_modifier = fee_disaster_vij_300_bandarugala_nasta
+	}
+
+	option = {
+		name = disaster_fee_vij_decline_vijayanagar.9.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_mercantilism = -5
+		remove_country_modifier = fee_disaster_vij_purvavyaparada_nasta
+		remove_country_modifier = fee_disaster_vij_300_bandarugala_nasta
+		add_disaster_modifier = {
+			name = fee_disaster_vij_sagarottara_vyaparadalli_nasta
+			duration = -1
+			disaster = fee_decline_vijayanagar
+		}
+		every_owned_province = {
+			limit = {
+				has_port = yes
+				superregion = india_superregion
+				province_has_center_of_trade_of_level = 1
+			}
+			add_base_production = -2
+			if = {
+				limit = {
+					province_has_center_of_trade_of_level = 2
+				}
+				add_center_of_trade_level = -1
+			}
+		}
+	}
+}
+
+
+### Revolt Events
+
+# Tamilakam
+country_event = {
+	id = disaster_fee_vij_decline_vijayanagar.10
+	title = disaster_fee_vij_decline_vijayanagar.10.T
+	desc = disaster_fee_vij_decline_vijayanagar.10.D
+	picture = ANGRY_MOB_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		any_owned_province = {
+			OR = {
+				region = deccan_region
+				region = coromandel_region
+			}
+			culture = tamil
+		}
+	}
+
+	option = {
+		name = disaster_fee_vij_decline_vijayanagar.10.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_adm_power = -100
+		custom_tooltip = FEE_VIJ_PROTECTED_TAMIL_AUTONOMY_TT
+		tooltip = {
+			random_owned_province = {
+				limit = {
+					OR = {
+						region = deccan_region
+						region = coromandel_region
+					}
+					culture = tamil
+				}
+				add_province_modifier = {
+					name = fee_disaster_vij_protected_tamil_autonomy
+					duration = -1
+					desc = FEE_VIJ_UNTIL_END_DISASTER_TT
+				}
+			}
+		}
+		hidden_effect = {
+			deccan_region = {
+				limit = {
+					owned_by = ROOT
+					culture = tamil
+				}
+				add_province_modifier = {
+					name = fee_disaster_vij_protected_tamil_autonomy
+					duration = -1
+					desc = FEE_VIJ_UNTIL_END_DISASTER_TT
+				}
+			}
+			coromandel_region = {
+				limit = {
+					owned_by = ROOT
+					culture = tamil
+				}
+				add_province_modifier = {
+					name = fee_disaster_vij_protected_tamil_autonomy
+					duration = -1
+					desc = FEE_VIJ_UNTIL_END_DISASTER_TT
+				}
+			}
+		}
+	}
+
+	option = {
+		name = disaster_fee_vij_decline_vijayanagar.10.OPT2
+		ai_chance = {
+			factor = 25
+		}
+
+		custom_tooltip = FEE_VIJ_TAMILS_MIGHT_RISE_TT
+		hidden_effect = {
+			deccan_region = {
+				limit = {
+					owned_by = ROOT
+					culture = tamil
+				}
+				random = {
+					chance = 50
+					independence_rebels = 1
+				}
+			}
+			coromandel_region = {
+				limit = {
+					owned_by = ROOT
+					culture = tamil
+				}
+				random = {
+					chance = 50
+					independence_rebels = 1
+				}
+			}
+		}
+	}
+}
+
+# Thanjavur
+country_event = {
+	id = disaster_fee_vij_decline_vijayanagar.11
+	title = disaster_fee_vij_decline_vijayanagar.11.T
+	desc = disaster_fee_vij_decline_vijayanagar.11.D
+	picture = INDIAN_WARS_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		NOT = { exists = TNJ }
+		tanjore_area = { owned_by = ROOT }
+		madura_area = { owned_by = ROOT }
+		south_carnatic_area = { owned_by = ROOT }
+	}
+
+	option = {
+		name = disaster_fee_vij_decline_vijayanagar.11.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		change_adm = -1
+		every_owned_province = {
+			limit = {
+				OR = {
+					area = tanjore_area
+					area = madura_area
+					area = south_carnatic_area
+				}
+			}
+			add_core = TNJ
+			change_religion = hinduism
+			change_culture = tamil
+		}
+		release = TNJ
+		hidden_effect = {
+			TNJ = {
+				add_treasury = 25
+				add_manpower = 10
+				change_primary_culture = tamil
+				change_religion = hinduism
+				capital_scope = {
+					build_to_forcelimit = {
+						infantry = 0.8
+						cavalry = 0.2
+					}
+				}
+			}
+		}
+	}
+}
+
+# Tiger of Mysore
+country_event = {
+	id = disaster_fee_vij_decline_vijayanagar.12
+	title = disaster_fee_vij_decline_vijayanagar.12.T
+	desc = disaster_fee_vij_decline_vijayanagar.12.D
+	picture = ANGRY_MOB_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		NOT = { exists = MYS }
+		mysore_area = { owned_by = ROOT }
+		kongu_area = { owned_by = ROOT }
+	}
+
+	option = {
+		name = disaster_fee_vij_decline_vijayanagar.12.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_adm_power = -100
+		every_owned_province = {
+			limit = {
+				OR = {
+					area = mysore_area
+					area = kongu_area
+				}
+			}
+			add_core = MYS
+			add_province_modifier = {
+				name = fee_disaster_vij_protected_mysorean_autonomy
+				duration = -1
+				desc = FEE_VIJ_UNTIL_END_DISASTER_TT
+			}
+		}
+	}
+
+	option = {
+		name = disaster_fee_vij_decline_vijayanagar.12.OPT2
+		ai_chance = {
+			factor = 35
+		}
+
+		add_dip_power = -100
+		custom_tooltip = FEE_VIJ_TIGER_WILL_ROAR_ONE_LAST_TIME_TT
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						area = mysore_area
+						area = kongu_area
+					}
+				}
+				add_core = MYS
+				random = {
+					chance = 50
+					independence_rebels = 2
+				}
+			}
+		}
+	}
+
+	option = {
+		name = disaster_fee_vij_decline_vijayanagar.12.OPT3
+		ai_chance = {
+			factor = 15
+		}
+
+		add_stability = -1
+		every_owned_province = {
+			limit = {
+				OR = {
+					area = mysore_area
+					area = kongu_area
+				}
+			}
+			add_core = MYS
+			change_religion = hinduism
+			change_culture = kannada
+		}
+		release = MYS
+		hidden_effect = {
+			MYS = {
+				add_treasury = 25
+				add_manpower = 10
+				change_primary_culture = kannada
+				change_religion = hinduism
+				capital_scope = {
+					build_to_forcelimit = {
+						infantry = 0.6
+						cavalry = 0.2
+						artillery = 0.2
+					}
+				}
+			}
+		}
+	}
+}
+
+# Golkonda invasion
+country_event = {
+	id = disaster_fee_vij_decline_vijayanagar.13
+	title = disaster_fee_vij_decline_vijayanagar.13.T
+	desc = disaster_fee_vij_decline_vijayanagar.13.D
+	picture = GENERALS_DISCUSSING_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		exists = GOC
+		telingana_area = { owned_by = GOC }
+		andhra_area = { owned_by = ROOT }
+	}
+
+	option = {
+		name = disaster_fee_vij_decline_vijayanagar.13.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		GOC = {
+			add_years_of_income = 1
+			add_yearly_manpower = 2
+			add_casus_belli = {
+				type = cb_border_war
+				target = ROOT
+			}
+		}
+		telingana_area = { add_permanent_claim = GOC }
+		andhra_area = { add_permanent_claim = GOC }
+	}
+}
+
+# Bijapur rebellion
+country_event = {
+	id = disaster_fee_vij_decline_vijayanagar.14
+	title = disaster_fee_vij_decline_vijayanagar.14.T
+	desc = disaster_fee_vij_decline_vijayanagar.14.D
+	picture = GENERALS_DISCUSSING_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		exists = BIJ
+		OR = {
+			maidan_area = { owned_by = BIJ }
+			desh_area = { owned_by = BIJ }
+			raichur_doab_area = { owned_by = BIJ }
+		}
+		any_owned_province = {
+			OR = {
+				area = raichur_doab_area
+				area = kanara_area
+			}
+		}
+	}
+
+	option = {
+		name = disaster_fee_vij_decline_vijayanagar.14.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		BIJ = {
+			add_yearly_manpower = 3
+			add_mil_power = 100
+			if = {
+				limit = { vassal_of = ROOT }
+				add_liberty_desire = 50
+			}
+			add_casus_belli = {
+				type = cb_border_war
+				target = ROOT
+			}
+		}
+		maidan_area = { add_permanent_claim = BIJ }
+		desh_area = { add_permanent_claim = BIJ }
+		raichur_doab_area = { add_permanent_claim = BIJ }
+		kanara_area = { add_permanent_claim = BIJ }
+	}
+}
+
+### Positive/Helpful ones
+
+# Restore teh Amaranayaka Sainya
+country_event = {
+	id = disaster_fee_vij_decline_vijayanagar.15
+	title = disaster_fee_vij_decline_vijayanagar.15.T
+	desc = disaster_fee_vij_decline_vijayanagar.15.D
+	picture = MILITARISTICALLY_TALENTED_RULER_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		has_country_modifier = fee_disaster_vij_agagge_akramanagalu
+	}
+
+	option = {
+		name = disaster_fee_vij_decline_vijayanagar.15.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		remove_country_modifier = fee_disaster_vij_agagge_akramanagalu
+		add_yearly_manpower = -1
+		add_army_professionalism = -0.05
+		add_army_tradition = -10
+	}
+
+	option = {
+		name = disaster_fee_vij_decline_vijayanagar.15.OPT2
+		ai_chance = {
+			factor = 25
+		}
+
+		add_mil_power = -100
+		add_disaster_modifier = {
+			name = fee_disaster_vij_militari_sudharanegalu
+			duration = -1
+			disaster = fee_decline_vijayanagar
+		}
+	}
+}
+
+# Capital Centralisation
+country_event = {
+	id = disaster_fee_vij_decline_vijayanagar.16
+	title = disaster_fee_vij_decline_vijayanagar.16.T
+	desc = disaster_fee_vij_decline_vijayanagar.16.D
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		has_country_modifier = fee_disaster_vij_political_instability
+		any_owned_province = { has_province_modifier = fee_disaster_vij_bandaya_naykaru }
+	}
+
+	option = {
+		name = disaster_fee_vij_decline_vijayanagar.16.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_stability = -1
+		remove_country_modifier = fee_disaster_vij_political_instability
+		add_disaster_modifier = {
+			name = fee_disaster_vij_kendrikaranada_prayatna
+			duration = -1
+			disaster = fee_decline_vijayanagar
+		}
+		every_owned_province = {
+			limit = { has_province_modifier = fee_disaster_vij_bandaya_naykaru }
+			remove_province_modifier = fee_disaster_vij_bandaya_naykaru
+			random = {
+				chance = 50
+				particularist_rebels = 1
+			}
+		}
+	}
+
+	option = {
+		name = disaster_fee_vij_decline_vijayanagar.16.OPT2
+		ai_chance = {
+			factor = 25
+		}
+
+		every_owned_province = {
+			limit = { has_province_modifier = fee_disaster_vij_bandaya_naykaru }
+			add_local_autonomy = 50
+		}
+	}
+}
+
+# Capital Centralisation
+country_event = {
+	id = disaster_fee_vij_decline_vijayanagar.17
+	title = disaster_fee_vij_decline_vijayanagar.17.T
+	desc = disaster_fee_vij_decline_vijayanagar.17.D
+	picture = MERCHANTS_TALKING_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		has_country_modifier = fee_disaster_vij_sagarottara_vyaparadalli_nasta
+	}
+
+	option = {
+		name = disaster_fee_vij_decline_vijayanagar.17.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_years_of_income = -1
+		add_disaster_modifier = {
+			name = fee_disaster_vij_antarika_bhu_vyaparavannu_alapadisi
+			duration = -1
+			disaster = fee_decline_vijayanagar
+		}
+	}
+
+	option = {
+		name = disaster_fee_vij_decline_vijayanagar.17.OPT2
+		ai_chance = {
+			factor = 25
+		}
+
+		add_mercantilism = -5
 	}
 }
