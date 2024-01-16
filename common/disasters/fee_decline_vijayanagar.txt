@@ -10,21 +10,28 @@ fee_decline_vijayanagar = {
 			OR = {
 				NOT = { owns = 541 }
 				num_of_loans = 5
-				any_country = {
-					religion_group = muslim
-					has_won_war_against = {
-						who = ROOT
-						max_years_since = 10
-					}
-				}
-				any_country = {
-					capital_scope = { continent = europe }
-					has_won_war_against = {
-						who = ROOT
-						max_years_since = 10
-					}
-				}
 				NOT = { total_development = 130 }
+				custom_trigger_tooltip = {
+					tooltip = FEE_VIJ_DISASTER_LOST_RECENT_WAR_VS_MUSLIM_TT
+					any_country = {
+						religion_group = muslim
+						has_won_war_against = {
+							who = ROOT
+							max_years_since = 10
+						}
+					}
+				}
+	
+				custom_trigger_tooltip = {
+					tooltip = FEE_VIJ_DISASTER_LOST_RECENT_WAR_VS_EUROPEAN_TT
+					any_country = {
+						capital_scope = { continent = europe }
+						has_won_war_against = {
+							who = ROOT
+							max_years_since = 10
+						}
+					}
+				}
 			}
 		}
 	}

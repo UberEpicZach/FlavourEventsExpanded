@@ -333,7 +333,6 @@ country_event = {
 				value = 5
 				region = deccan_region
 				has_port = yes
-				any_trade_node_member_province = { province_id = 1948 }
 			}
 		}
 	}
@@ -353,7 +352,6 @@ country_event = {
 			limit = {
 				region = deccan_region
 				has_port = yes
-				any_trade_node_member_province = { province_id = 1948 }
 			}
 			add_base_production = -1
 		}
