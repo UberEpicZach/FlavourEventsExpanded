@@ -1562,6 +1562,8 @@ country_event = {
 	desc = FEE_France_Events.24.D
 	picture = SHIP_SAILING_eventPicture
 
+	fire_only_once = yes
+
 	trigger = {
 		tag = FRA
 		is_year = 1517
