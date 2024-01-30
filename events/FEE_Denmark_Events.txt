@@ -1206,9 +1206,7 @@ country_event = {
 		add_stability_or_adm_power = yes
 		if = {
 			limit = {
-				is_expanded_mod_active = {
-					mod = governments
-				}
+				is_expanded_mod_active = { mod = governments }
 			}
 			add_government_reform = elective_monarchy_reform
 		}
