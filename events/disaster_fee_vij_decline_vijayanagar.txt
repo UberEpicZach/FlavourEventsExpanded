@@ -11,6 +11,12 @@ country_event = {
 
 	major = yes
 
+	immediate = {
+		hidden_effect = {
+			set_country_flag = fee_vij_disaster_start_flag
+		}
+	}
+
 	option = {
 		name = disaster_fee_vij_decline_vijayanagar.1.OPT1
 		ai_chance = {

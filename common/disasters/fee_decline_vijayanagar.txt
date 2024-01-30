@@ -181,7 +181,7 @@ fee_decline_vijayanagar = {
 		custom_trigger_tooltip = {
 			tooltip = FEE_VIJ_DISASTER_DURATION_TT
 			had_country_flag = {
-				flag = fee_ita_republican_matter
+				flag = fee_vij_disaster_start_flag
 				days = 5475
 			}
 		}
