@@ -28,24 +28,18 @@ country_event = {
 		capital_scope = { continent = europe }
 		HAB = { dynasty = "von Habsburg" }
 		#Both Spain/Castille and Austria must have rivaled France...
-		if = {
-			limit = {
-				FRA = {
+		FRA = {
+			if = {
+				limit = {
 					is_free_or_tributary_trigger = no
 					num_of_cities = 15
 					NOT = { dynasty = ROOT }
 				}
-			}
-			OR = {
-				CAS = {
-					is_rival = FRA
+				OR = {
+					is_enemy = CAS
+					is_enemy = SPA
 				}
-				SPA = {
-					is_rival = FRA
-				}
-			}
-			HAB = {
-				is_rival = FRA
+				is_enemy = HAB
 			}
 		}
 		NOT = {
@@ -89,14 +83,16 @@ country_event = {
 	id = FEE_Charles_V_Events.2
 	title = FEE_Charles_V_Events.2.T 	#FEE_Charles_V_Events.T.2:0 "Charles Ascends to the Throne"
 	desc = FEE_Charles_V_Events.2.D 		#FEE_Charles_V_Events.D.2:0 "With his father having died in 1506, when Charles came of age in 1515 he aquired the title of Duke of Burgundy, which brought with it rulership over the Netherlands. A year later,the death of his grandfather Maximillian I made him ruler of all the Habsburg posessions in Germany, including the Archduchy of Austria.That same year, the death of Ferdinand II left the crowns of Aragon, Castille, and Leon to his mother Joanna. With Joanna being unsound of mind, Charles was declared co-ruler of each kingdom, and assumed de facto rulership over his mother's posessions. Finally, Charles was crowned Holy Roman Empire in 1530. Taken altogether, Charles's dominion encompassed most of Iberia, large portions of Western and Central Europe, as well as the Spanish colonies in Asia and the Americas. This arrangement however, did not sit well with France, who felt cornered by their Habsburg enemies, and were eager to reverse their fortunes..."
-	fire_only_once = yes
 	picture = HRE_eventPicture
 
 	fire_only_once = yes		#triggered on new monarch
 
 	trigger = {
 		has_country_flag = FEE_Charles_V_Events_born
-		HAB = { dynasty = "von Habsburg" }
+		HAB = {
+			dynasty = "von Habsburg"
+			is_free_or_tributary_trigger = yes
+		}
 		has_ruler = "Charles"
 		NOT = { has_country_flag = FEE_Charles_V_Events_dead } #Won't fire if Chalres died as an heir
 		NOT = { has_country_flag = FEE_Charles_V_Events_ruler }
