@@ -120,7 +120,7 @@ country_event = {
 		#	name = "Charles"
 		#	age = 15
 		#}
-		custom_tooltip = "Charles von Habsburg will become ruler."
+		custom_tooltip = FEE_CHARLES_V_BECOME_RULER_TT
 		define_heir = {
 			dynasty = "von Habsburg"
 			name = "Phillip II"
@@ -130,7 +130,7 @@ country_event = {
 			age = 0
 		}
 
-		#tooltip = fee_charles_v_union_under_austria
+		# custom_tooltip = FEE_CHARLES_V_UNION_UNDER_AUSTRIA
 		#Make Spain the Emperor:
 		if = {
 			limit = {
@@ -157,11 +157,11 @@ country_event = {
 		}
 
 		create_union = HAB	#Once all that silliness is done, create the PU
-		custom_tooltip = "Charles von Habsburg will become the Holy Roman Emperor"
+		custom_tooltip = FEE_CHARLES_V_BECOME_EMPEROR_TT
 		# set_government_rank_force = 2 #Putting Spain in the HRE makes it a duke, this fixes that.
 
 		#Make all countries in Germany, France, Italy afraid of Spain (for 140 years)
-		custom_tooltip = fee_charles_v_fear_empire_tt
+		custom_tooltip = FEE_CHARLES_V_FEAR_EMPIRE_TT
 		tooltip = {
 			random_country = {
 				limit = {
@@ -246,7 +246,7 @@ country_event = {
 		set_country_flag = fee_charles_v_abdicate_option
 
 		break_union = HAB			#Breaks the PU with Austria
-		custom_tooltip = fee_charles_v_abdication_charles_tt
+		custom_tooltip = FEE_CHARLES_V_ABDICATION_CHARLES_TT
 		if = {
 			limit = {
 				has_ruler = "Charles"
@@ -337,7 +337,7 @@ country_event = {
 		# }
 
 		#Europe is no longer afraid
-		custom_tooltip = fee_charles_v_europe_no_longer_afraid_tt
+		custom_tooltip = FEE_CHARLES_V_EUROPE_NO_LONGER_AFRAID_TT
 		hidden_effect = {
 			every_country = {
 				limit = {
@@ -628,7 +628,7 @@ country_event = {
 			break_union = HAB			#Breaks the PU with Austria
 		}
 
-		custom_tooltip = fee_charles_v_abdication_charles_tt
+		custom_tooltip = FEE_CHARLES_V_ABDICATION_CHARLES_TT
 		hidden_effect = {
 			ROOT = {
 				if = {
@@ -731,7 +731,7 @@ country_event = {
 		set_country_flag = fee_charles_v_abdicate_option
 
 		#Europe is no longer afraid
-		custom_tooltip = fee_charles_v_europe_no_longer_afraid_tt
+		custom_tooltip = FEE_CHARLES_V_EUROPE_NO_LONGER_AFRAID_TT
 		hidden_effect = {
 			every_country = {
 				limit = {
