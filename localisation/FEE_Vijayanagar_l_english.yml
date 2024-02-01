@@ -1,7 +1,28 @@
 ﻿l_english:
- FEE_Vijayanagar_Events.1.T: "Deva Raya Sangama, a Patron of Literature"
+ FEE_Vijayanagar_Events.1.T: "Deva Raya II, a Patron of Literature"
  FEE_Vijayanagar_Events.1.D: "While being best known for his military prowess and success in establishing ties with the Reddy Nayaks, Devaraya Sangama's military merit has largely been brushed over. With a title meaning 'killer of elephants', it's no surprise that he's brought our empire to a new zenith. Despite his title and reputation, he is most notable for his extensive patronage of literature and the arts. Within his court, many famous poets the likes of Kumara Vyasa or Narayanappan and Chamarasa flourished, and many new great Kannada works were authored. The legendary epic of the Mahabharata was translated into Kannada, and Devaraya himself wrote many Sanskrit and Kannada texts. Even scholars and Telugu poets also called this Raja's court home."
  FEE_Vijayanagar_Events.1.OPT1: "What a fine king he is!"
 
+ FEE_Vijayanagar_Events.2.T: "Vaishnava and Veerashaiva"
+ FEE_Vijayanagar_Events.2.D: "In the vibrant literary tapestry of the mid-15th century at the illustrious court of the Vijayanagar Empire, two remarkable authors, Chamarasa and Kumara Vyasa, emerged as luminaries, contributing significantly to Kannada literature. Chamarasa, a staunch advocate of the Veerashaiva faith, penned the celebrated "Prabhulinga Leele" in 1430 AD, portraying Allama Prabhu as an early apostle of Veerashaivism. His work, rich in Yogic and vairagya themes, intertwines the journey of Allama Prabhu with allegorical elements, offering a unique perspective on faith. \nKumara Vyasa, on the other hand, showcased his literary prowess with "Gadugina Bharata," an adaptation of the first ten parvas of the Mahabharata. A devotee of Krishna, Kumara Vyasa's magnum opus explores diverse human emotions, values, and intricate metaphors, setting a benchmark in Kannada literature. Both authors flourished under the patronage of King Deva Raya II, who played a pivotal role in promoting the cultural and literary landscape of the Vijayanagar court. \nChamarasa and Kumara Vyasa's works not only reflected the cultural ethos of the Vijayanagar Empire but also resonated beyond its borders. King Deva Raya II's support allowed these literary luminaries to delve into profound themes, contributing to the rich literary heritage of the Kannada language."
+ FEE_Vijayanagar_Events.2.OPT1: "Favour the Virashaiva."
+ FEE_Vijayanagar_Events.2.OPT2: "Protect Vaishnava."
+
+ FEE_Vijayanagar_Events.3.T: "Vatasseri Parameshvara Nambudiri" 
+ FEE_Vijayanagar_Events.3.D: "Vatasseri Parameshvara Nambudiri, a prominent Indian mathematician and astronomer from the renowned Kerala school, founded by Madhava of Sangamagrama, was a significant figure in medieval India. Alongside his mathematical pursuits, Parameshvara excelled as an astrologer and advocate of observational astronomy. He conducted a series of eclipse observations to enhance the precision of existing computational methods, proposing corrections to astronomical parameters established since Aryabhata's time. His revised computational scheme, known as the Drgganita or Drig system, gained recognition. Residing in Alathiyur, Kerala, Parameshvara, belonging to the Bhrgugotra lineage, followed the Ashvalayanasutra of the Rigveda. A student of Rudra, Narayana, and Madhava of Sangamagrama, he later became a revered teacher himself, instructing prominent figures like Nilakantha Somayaji."
+ FEE_Vijayanagar_Events.3.OPT1: "Science for the State"
+ FEE_Vijayanagar_Events.3.OPT2: "Let him keep studying"
+ FEE_Vijayanagar_Events.3.OPT3: "Improve the battle tactics"
+
  # Modifiers
- vij_devaraya_literature: "Deva Raya Literature"
+ vij_kavisarvabhauma: "Kavisarvabhauma"
+ desc_vij_kavisarvabhauma: "Emperor Among Poets."
+
+ vij_parameshvara_adm_focus: "Parameshvara's Mean Value"
+ desc_vij_parameshvara_adm_focus: ""
+ vij_parameshvara_dip_focus: "Parameshvara Astronomy"
+ desc_vij_parameshvara_dip_focus: ""
+ vij_parameshvara_mil_focus: "Parameshvara Mathematics"
+ desc_vij_parameshvara_mil_focus: ""
+
+ # Tooltips

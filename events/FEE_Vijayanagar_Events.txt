@@ -1,17 +1,17 @@
 namespace = FEE_Vijayanagar_Events
 
-#Deva Raya Sangama, a Patron of Literature
+#Deva Raya II, a Patron of Literature
 country_event = {
 	id = FEE_Vijayanagar_Events.1
 	title = FEE_Vijayanagar_Events.1.T
 	desc = FEE_Vijayanagar_Events.1.D
 	picture = GOOD_WITH_MONARCH_eventPicture
+
 	fire_only_once = yes
 
 	trigger = {
-		tag = VIJ
+		is_or_was_tag = { tag = VIJ }
 		has_ruler = "Devaraya II"
-		NOT = {	adm = 5 }
 		religion = hinduism
 		primary_culture = kannada
 	}
@@ -22,13 +22,156 @@ country_event = {
 
 	option = {
 		name = FEE_Vijayanagar_Events.1.OPT1	#What a fine king he is!
+		ai_chance = {
+			factor = 75
+		}
 
 		add_stability_or_adm_power = yes
 		add_prestige_or_monarch_power = { amount = 20 }
-		change_adm = 1
 		add_ruler_modifier = {
-			name = vij_devaraya_literature
+			name = vij_kavisarvabhauma
 			duration = -1
 		}
 	}
 }
+
+
+# Vaishnava and Veerashaiva
+country_event = {
+	id = FEE_Vijayanagar_Events.2
+	title = FEE_Vijayanagar_Events.2.T
+	desc = FEE_Vijayanagar_Events.2.D
+	picture = ADVISOR_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_or_was_tag = { tag = VIJ }
+		is_year = 1425
+		NOT = { is_year = 1446 }
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = { # Chamarasa
+		name = FEE_Vijayanagar_Events.2.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_adm_power = 15
+		define_advisor = {
+			type = philosopher
+			skill = 2
+			discount = yes
+			religion = hinduism
+			name = "Chamarasa"
+			culture = kannada
+		}
+	}
+
+	option = { # Kumara Vyasa
+		name = FEE_Vijayanagar_Events.2.OPT2
+		ai_chance = {
+			factor = 50
+		}
+
+		add_dip_power = 15
+		define_advisor = {
+			type = philosopher
+			skill = 2
+			discount = yes
+			religion = hinduism
+			name = "Kumara Vyasa"
+			culture = kannada
+		}
+	}
+}
+
+# Vatasseri Parameshvara Nambudiri
+country_event = {
+	id = FEE_Vijayanagar_Events.3
+	title = FEE_Vijayanagar_Events.3.T
+	desc = FEE_Vijayanagar_Events.3.D
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_or_was_tag = { tag = VIJ }
+		is_year = 1380
+		NOT = { is_year = 1460 }
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = FEE_Vijayanagar_Events.3.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_adm_power = 25
+		add_ruler_modifier = {
+			name = vij_parameshvara_adm_focus
+			duration = -1
+		}
+	}
+
+	option = {
+		name = FEE_Vijayanagar_Events.3.OPT2
+		ai_chance = {
+			factor = 75
+		}
+
+		add_dip_power = 25
+		add_ruler_modifier = {
+			name = vij_parameshvara_dip_focus
+			duration = -1
+		}
+	}
+
+	option = {
+		name = FEE_Vijayanagar_Events.3.OPT3
+		ai_chance = {
+			factor = 75
+		}
+
+		add_mil_power = 25
+		add_ruler_modifier = {
+			name = vij_parameshvara_mil_focus
+			duration = -1
+		}
+	}
+}
+
+
+# 
+# country_event = {
+# 	id = FEE_Vijayanagar_Events.
+# 	title = FEE_Vijayanagar_Events..T
+# 	desc = FEE_Vijayanagar_Events..D
+# 	picture = GOOD_WITH_MONARCH_eventPicture
+#
+# 	fire_only_once = yes
+#
+# 	trigger = {
+# 		is_or_was_tag = { tag = VIJ }
+# 	}
+#
+# 	mean_time_to_happen = {
+# 		months = 12
+# 	}
+#
+# 	option = {
+# 		name = FEE_Vijayanagar_Events..OPT1
+# 		ai_chance = {
+# 			factor = 75
+# 		}
+#
+# 	}
+# }
