@@ -2,8 +2,8 @@ namespace = FEE_Coffee_Events
 
 country_event = {
 	id = FEE_Coffee_Events.1
-	title = FEE_Coffee_Events.EVTNAME1
-	desc = FEE_Coffee_Events.EVTDESC1
+	title = FEE_Coffee_Events.1.T
+	desc = FEE_Coffee_Events.1.D
 	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
 
 	major = yes
@@ -26,7 +26,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Coffee_Events1.EVTOPT1
+		name = FEE_Coffee_Events.1.OPT1
 
 		ai_chance = {
 			factor = 0.75
@@ -48,7 +48,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Coffee_Events1.EVTOPT2
+		name = FEE_Coffee_Events.1.OPT2
 
 		ai_chance = {
 			factor = 0.25
@@ -83,15 +83,15 @@ country_event = {
 
 country_event = {
 	id = FEE_Coffee_Events.2
-	title = FEE_Coffee_Events.EVTNAME2
-	desc = FEE_Coffee_Events.EVTDESC2
+	title = FEE_Coffee_Events.2.T
+	desc = FEE_Coffee_Events.2.D
 	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
 
 	major = yes
 	is_triggered_only = yes
 
 	option = {
-		name = FEE_Coffee_Events2.EVTOPT1
+		name = FEE_Coffee_Events.2.OPT1
 
 		ai_chance = {
 			factor = 0.5
@@ -112,7 +112,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Coffee_Events2.EVTOPT2
+		name = FEE_Coffee_Events.2.OPT2
 
 		ai_chance = {
 			factor = 0.5
