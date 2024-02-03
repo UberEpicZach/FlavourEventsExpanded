@@ -1,17 +1,17 @@
-namespace = FEE_Ottoman_Events
+namespace = FEE_Ottomans_Events
 
 #The Ottomans seize wheat from MOL or WAL
 
 country_event = {
-	id = FEE_Ottoman_Events.1
-	title = FEE_Ottoman_Events.1.T
-	desc = FEE_Ottoman_Events.1.D
+	id = FEE_Ottomans_Events.1
+	title = FEE_Ottomans_Events.1.T
+	desc = FEE_Ottomans_Events.1.D
 	picture = FAMINE_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = FEE_Ottoman_Events.1.OPT1
+		name = FEE_Ottomans_Events.1.OPT1
 
 		add_country_modifier = {
 			name = fee_tur_weath_stores_seized_ottomans
@@ -22,9 +22,9 @@ country_event = {
 
 #Storming the Gates of Europe
 country_event = {
-	id = FEE_Ottoman_Events.2
-	title = FEE_Ottoman_Events.2.T
-	desc = FEE_Ottoman_Events.2.D
+	id = FEE_Ottomans_Events.2
+	title = FEE_Ottomans_Events.2.T
+	desc = FEE_Ottomans_Events.2.D
 	picture = COUNTRY_COLLAPSE_eventPicture
 
 	fire_only_once = yes
@@ -39,7 +39,7 @@ country_event = {
 	}
 
 	option = {	#Let us reinforce our European gains.
-		name = FEE_Ottoman_Events.2.OPT1
+		name = FEE_Ottomans_Events.2.OPT1
 
 		134 = {
 			add_base_manpower = 1
@@ -51,7 +51,7 @@ country_event = {
 	}
 
 	option = { #Tis but another border province. Let them rebuild.
-		name = FEE_Ottoman_Events.2.OPT2
+		name = FEE_Ottomans_Events.2.OPT2
 
 		134 = {
 			add_base_production = 1
@@ -61,9 +61,9 @@ country_event = {
 
 #Murad II's Return to the Throne
 country_event = {
-	id = FEE_Ottoman_Events.3
-	title = FEE_Ottoman_Events.3.T
-	desc = FEE_Ottoman_Events.3.D
+	id = FEE_Ottomans_Events.3
+	title = FEE_Ottomans_Events.3.T
+	desc = FEE_Ottomans_Events.3.D
 	picture = COURT_eventPicture
 
 	fire_only_once = yes
@@ -87,7 +87,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Ottoman_Events.3.OPT1
+		name = FEE_Ottomans_Events.3.OPT1
 		ai_chance = {
 			factor = 100
 		}
@@ -116,7 +116,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Ottoman_Events.3.OPT2
+		name = FEE_Ottomans_Events.3.OPT2
 		ai_chance = {
 			factor = 0
 		}
@@ -134,9 +134,9 @@ country_event = {
 
 #Murad's Passing
 country_event = {
-	id = FEE_Ottoman_Events.4
-	title = FEE_Ottoman_Events.4.T
-	desc = FEE_Ottoman_Events.4.D
+	id = FEE_Ottomans_Events.4
+	title = FEE_Ottomans_Events.4.T
+	desc = FEE_Ottomans_Events.4.D
 	picture = KING_SICK_IN_BED_eventPicture
 
 	fire_only_once = yes
@@ -160,7 +160,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Ottoman_Events.4.OPT1
+		name = FEE_Ottomans_Events.4.OPT1
 
 		add_adm_power = 25
 		add_dip_power = 25
