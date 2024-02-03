@@ -1533,6 +1533,8 @@ country_event = {
 	desc = FEE_France_Events.23.D
 	picture = TRADE_GOODS_eventPicture
 
+	fire_only_once = yes
+
 	trigger = {
 		tag = FRA
 		is_year = 1470
