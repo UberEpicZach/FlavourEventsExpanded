@@ -840,19 +840,9 @@ country_event = {
 				limit = {
 					has_dlc = "Leviathan"
 				}
-				OR = {
-					has_great_project = {
-						type = royal_palace_caserta
-						tier = 1
-					}
-					has_great_project = {
-						type = royal_palace_caserta
-						tier = 2
-					}
-					has_great_project = {
-						type = royal_palace_caserta
-						tier = 3
-					}
+				has_great_project = {
+					type = royal_palace_caserta
+					tier = 1
 				}
 			}
 			else = {
