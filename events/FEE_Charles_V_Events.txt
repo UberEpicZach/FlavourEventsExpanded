@@ -92,6 +92,7 @@ country_event = {
 		HAB = {
 			dynasty = "von Habsburg"
 			is_free_or_tributary_trigger = yes
+			ai = yes
 		}
 		has_ruler = "Charles"
 		NOT = { has_country_flag = FEE_Charles_V_Events_dead } #Won't fire if Chalres died as an heir
