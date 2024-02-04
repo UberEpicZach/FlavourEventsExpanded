@@ -174,14 +174,20 @@ country_event = {
 			factor = 75
 		}
 
+		add_years_of_income = -1
+		add_country_modifier = {
+			name = vij_parameshvara_adm_focus
+			duration = 1825
+		}
 	}
 
 	option = {
 		name = FEE_Vijayanagar_Events.4.OPT2
 		ai_chance = {
-			factor = 75
+			factor = 25
 		}
 
+		add_adm_power = -15
 	}
 }
 
@@ -202,14 +208,20 @@ country_event = {
 			factor = 75
 		}
 
+		add_years_of_income = -1
+		add_country_modifier = {
+			name = vij_parameshvara_dip_focus
+			duration = 1825
+		}
 	}
 
 	option = {
 		name = FEE_Vijayanagar_Events.5.OPT2
 		ai_chance = {
-			factor = 75
+			factor = 25
 		}
 
+		add_dip_power = -15
 	}
 }
 # 
@@ -229,14 +241,20 @@ country_event = {
 			factor = 75
 		}
 
+		add_years_of_income = -1
+		add_country_modifier = {
+			name = vij_parameshvara_mil_focus
+			duration = 1825
+		}
 	}
 
 	option = {
 		name = FEE_Vijayanagar_Events.6.OPT2
 		ai_chance = {
-			factor = 75
+			factor = 25
 		}
 
+		add_mil_power = -15
 	}
 }
 
