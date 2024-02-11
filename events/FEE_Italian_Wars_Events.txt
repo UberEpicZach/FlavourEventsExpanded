@@ -133,6 +133,21 @@ country_event = {
 				factor = 0
 				alliance_with = NAP
 			}
+			modifier = {
+				factor = 5
+				army_size = NAP
+			}
+			modifier = {
+				factor = 2.5
+				manpower_percentage = 0.50
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					NOT = { army_size = ARA }
+					NOT = { army_size = CAS }
+				}
+			}
 		}
 
 		set_country_flag = fee_first_italian_war_flag
@@ -142,90 +157,66 @@ country_event = {
 		}
 		if = {
 			limit = {
-				exists = MLO
 				MLO = { is_free_or_tributary_trigger = yes }
 			}
 			MLO = {
-				country_event = {
-					id = FEE_Italian_Wars_Events.101
-				}
+				country_event = { id = FEE_Italian_Wars_Events.101 }
 			}
 		}
 		if = {
 			limit = {
-				exists = FER
 				FER = { is_free_or_tributary_trigger = yes }
 			}
 			FER = {
-				country_event = {
-					id = FEE_Italian_Wars_Events.101
-				}
+				country_event = { id = FEE_Italian_Wars_Events.101 }
 			}
 		}
 		if = {
 			limit = {
-				exists = PAP
 				PAP = { is_free_or_tributary_trigger = yes }
 			}
 			PAP = {
-				country_event = {
-					id = FEE_Italian_Wars_Events.101
-				}
+				country_event = { id = FEE_Italian_Wars_Events.101 }
 			}
 		}
 		if = {
 			limit = {
-				exists = VEN
 				VEN = { is_free_or_tributary_trigger = yes }
 			}
 			VEN = {
-				country_event = {
-					id = FEE_Italian_Wars_Events.101
-				}
+				country_event = { id = FEE_Italian_Wars_Events.101 }
 			}
 		}
 		if = {
 			limit = {
-				exists = MAN
 				MAN = { is_free_or_tributary_trigger = yes }
 			}
 			MAN = {
-				country_event = {
-					id = FEE_Italian_Wars_Events.101
-				}
+				country_event = { id = FEE_Italian_Wars_Events.101 }
 			}
 		}
 		if = {
 			limit = {
-				exists = GEN
 				GEN = { is_free_or_tributary_trigger = yes }
 			}
 			GEN = {
-				country_event = {
-					id = FEE_Italian_Wars_Events.101
-				}
+				country_event = { id = FEE_Italian_Wars_Events.101 }
 			}
 		}
 		if = {
 			limit = {
-				exists = ARA
 				ARA = { is_free_or_tributary_trigger = yes }
 			}
 			ARA = {
-				country_event = {
-					id = FEE_Italian_Wars_Events.101
-				}
+				country_event = { id = FEE_Italian_Wars_Events.101 }
 			}
 		}
 		if = {
 			limit = {
-				exists = CAS
 				CAS = { is_free_or_tributary_trigger = yes }
 			}
 			CAS = {
-				country_event = {
-					id = FEE_Italian_Wars_Events.101
-				}
+				country_event = { id = FEE_Italian_Wars_Events.101 }
 			}
 		}
 	}
@@ -652,6 +643,21 @@ country_event = {
 					is_enemy = MLO
 				}
 			}
+			modifier = {
+				factor = 5
+				army_size = MLO
+			}
+			modifier = {
+				factor = 2.5
+				manpower_percentage = 0.50
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					NOT = { army_size = ARA }
+					NOT = { army_size = CAS }
+				}
+			}
 		}
 
 		declare_war_with_cb = {
@@ -660,68 +666,50 @@ country_event = {
 		}
 		if = {
 			limit = {
-				exists = PAP
 				PAP = { is_free_or_tributary_trigger = yes }
 			}
 			PAP = {
-				country_event = {
-					id = FEE_Italian_Wars_Events.201
-				}
+				country_event = { id = FEE_Italian_Wars_Events.201 }
 			}
 		}
 		if = {
 			limit = {
-				exists = VEN
 				VEN = { is_free_or_tributary_trigger = yes }
 			}
 			VEN = {
-				country_event = {
-					id = FEE_Italian_Wars_Events.201
-				}
+				country_event = { id = FEE_Italian_Wars_Events.201 }
 			}
 		}
 		if = {
 			limit = {
-				exists = SWI
 				SWI = { is_free_or_tributary_trigger = yes }
 			}
 			SWI = {
-				country_event = {
-					id = FEE_Italian_Wars_Events.201
-				}
+				country_event = { id = FEE_Italian_Wars_Events.201 }
 			}
 		}
 		if = {
 			limit = {
-				exists = NAP
 				NAP = { is_free_or_tributary_trigger = yes }
 			}
 			NAP = {
-				country_event = {
-					id = FEE_Italian_Wars_Events.201
-				}
+				country_event = { id = FEE_Italian_Wars_Events.201 }
 			}
 		}
 		if = {
 			limit = {
-				exists = ARA
 				ARA = { is_free_or_tributary_trigger = yes }
 			}
 			ARA = {
-				country_event = {
-					id = FEE_Italian_Wars_Events.201
-				}
+				country_event = { id = FEE_Italian_Wars_Events.201 }
 			}
 		}
 		if = {
 			limit = {
-				exists = CAS
 				CAS = { is_free_or_tributary_trigger = yes }
 			}
 			CAS = {
-				country_event = {
-					id = FEE_Italian_Wars_Events.201
-				}
+				country_event = { id = FEE_Italian_Wars_Events.201 }
 			}
 		}
 	}
@@ -902,6 +890,19 @@ country_event = {
 					is_enemy = VEN
 				}
 			}
+			modifier = {
+				factor = 2.5
+				manpower_percentage = 0.50
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					NOT = { army_size = ARA }
+					NOT = { army_size = CAS }
+					NOT = { army_size = SPA }
+					NOT = { army_size = emperor }
+				}
+			}
 		}
 
 		declare_war_with_cb = {
@@ -911,137 +912,101 @@ country_event = {
 
 		if = {
 			limit = {
-				exists = FER
 				FER = { is_free_or_tributary_trigger = yes }
 			}
 			FER = {
-				country_event = {
-					id = FEE_Italian_Wars_Events.301
-				}
+				country_event = { id = FEE_Italian_Wars_Events.301 }
 			}
 		}
 		if = {
 			limit = {
-				exists = MAN
 				MAN = { is_free_or_tributary_trigger = yes }
 			}
 			MAN = {
-				country_event = {
-					id = FEE_Italian_Wars_Events.301
-				}
+				country_event = { id = FEE_Italian_Wars_Events.301 }
 			}
 		}
 		if = {
 			limit = {
-				exists = MLO
 				MLO = { is_free_or_tributary_trigger = yes }
 			}
 			MLO = {
-				country_event = {
-					id = FEE_Italian_Wars_Events.301
-				}
+				country_event = { id = FEE_Italian_Wars_Events.301 }
 			}
 		}
 		if = {
 			limit = {
-				exists = URB
 				URB = { is_free_or_tributary_trigger = yes }
 			}
 			URB = {
-				country_event = {
-					id = FEE_Italian_Wars_Events.301
-				}
+				country_event = { id = FEE_Italian_Wars_Events.301 }
 			}
 		}
 		if = {
 			limit = {
-				exists = ENG
 				ENG = { is_free_or_tributary_trigger = yes }
 			}
 			ENG = {
-				country_event = {
-					id = FEE_Italian_Wars_Events.301
-				}
+				country_event = { id = FEE_Italian_Wars_Events.301 }
 			}
 		}
 		if = {
 			limit = {
-				exists = SCO
 				SCO = { is_free_or_tributary_trigger = yes }
 			}
 			SCO = {
-				country_event = {
-					id = FEE_Italian_Wars_Events.301
-				}
+				country_event = { id = FEE_Italian_Wars_Events.301 }
 			}
 		}
 		if = {
 			limit = {
-				exists = SWI
 				SWI = { is_free_or_tributary_trigger = yes }
 			}
 			SWI = {
-				country_event = {
-					id = FEE_Italian_Wars_Events.301
-				}
+				country_event = { id = FEE_Italian_Wars_Events.301 }
 			}
 		}
 		if = {
 			limit = {
-				exists = emperor
 				emperor = { is_free_or_tributary_trigger = yes }
 			}
 			emperor = {
-				country_event = {
-					id = FEE_Italian_Wars_Events.301
-				}
+				country_event = { id = FEE_Italian_Wars_Events.301 }
 			}
 		}
 		if = {
 			limit = {
-				exists = PAP
 				PAP = { is_free_or_tributary_trigger = yes }
 			}
 			PAP = {
-				country_event = {
-					id = FEE_Italian_Wars_Events.301
-				}
+				country_event = { id = FEE_Italian_Wars_Events.301 }
 			}
 		}
 		if = {
 			limit = {
-				exists = ARA
 				ARA = { is_free_or_tributary_trigger = yes }
 			}
 			ARA = {
-				country_event = {
-					id = FEE_Italian_Wars_Events.301
-				}
+				country_event = { id = FEE_Italian_Wars_Events.301 }
 			}
 		}
 		if = {
 			limit = {
-				exists = CAS
 				CAS = { is_free_or_tributary_trigger = yes }
 			}
 			CAS = {
-				country_event = {
-					id = FEE_Italian_Wars_Events.301
-				}
+				country_event = { id = FEE_Italian_Wars_Events.301 }
 			}
 		}
 		if = {
 			limit = {
-				exists = SPA
 				SPA = {
 					is_free_or_tributary_trigger = yes
 					is_emperor = no
 				}
 			}
 			SPA = {
-				country_event = {
-					id = FEE_Italian_Wars_Events.301
-				}
+				country_event = { id = FEE_Italian_Wars_Events.301 }
 			}
 		}
 	}
@@ -1275,6 +1240,14 @@ country_event = {
 				factor = 0
 				alliance_with = FRA
 			}
+			modifier = {
+				factor = 2.5
+				manpower_percentage = 0.50
+			}
+			modifier = {
+				factor = 0
+				NOT = { army_size = FRA }
+			}
 		}
 
 		declare_war_with_cb = {
@@ -1284,81 +1257,60 @@ country_event = {
 
 		if = {
 			limit = {
-				exists = NAV
 				NAV = { is_free_or_tributary_trigger = yes }
 			}
 			NAV = {
-				country_event = {
-					id = FEE_Italian_Wars_Events.401
-				}
+				country_event = { id = FEE_Italian_Wars_Events.401 }
 			}
 		}
 		if = {
 			limit = {
-				exists = VEN
 				VEN = { is_free_or_tributary_trigger = yes }
 			}
 			VEN = {
-				country_event = {
-					id = FEE_Italian_Wars_Events.401
-				}
+				country_event = { id = FEE_Italian_Wars_Events.401 }
 			}
 		}
 		if = {
 			limit = {
 				NOT = { tag = SPA }
-				exists = SPA
 				SPA = { is_free_or_tributary_trigger = yes }
 			}
 			SPA = {
-				country_event = {
-					id = FEE_Italian_Wars_Events.401
-				}
+				country_event = { id = FEE_Italian_Wars_Events.401 }
 			}
 		}
 		if = {
 			limit = {
 				NOT = { tag = HAB }
-				exists = HAB
 				HAB = { is_free_or_tributary_trigger = yes }
 			}
 			HAB = {
-				country_event = {
-					id = FEE_Italian_Wars_Events.401
-				}
+				country_event = { id = FEE_Italian_Wars_Events.401 }
 			}
 		}
 		if = {
 			limit = {
-				exists = ENG
 				ENG = { is_free_or_tributary_trigger = yes }
 			}
 			ENG = {
-				country_event = {
-					id = FEE_Italian_Wars_Events.401
-				}
+				country_event = { id = FEE_Italian_Wars_Events.401 }
 			}
 		}
 		if = {
 			limit = {
-				exists = MAN
 				MAN = { is_free_or_tributary_trigger = yes }
 			}
 			MAN = {
-				country_event = {
-					id = FEE_Italian_Wars_Events.401
-				}
+				country_event = { id = FEE_Italian_Wars_Events.401 }
 			}
 		}
 		if = {
 			limit = {
-				exists = PAP
 				PAP = { is_free_or_tributary_trigger = yes }
 			}
 			PAP = {
-				country_event = {
-					id = FEE_Italian_Wars_Events.401
-				}
+				country_event = { id = FEE_Italian_Wars_Events.401 }
 			}
 		}
 	}
@@ -1533,6 +1485,18 @@ country_event = {
 					is_enemy = emperor
 				}
 			}
+			modifier = {
+				factor = 2.5
+				manpower_percentage = 0.50
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					NOT = { army_size = emperor }
+					NOT = { army_size = HAB }
+					NOT = { army_size = SPA }
+				}
+			}
 		}
 
 		declare_war_with_cb = {
@@ -1542,123 +1506,90 @@ country_event = {
 
 		if = {
 			limit = {
-				exists = VEN
 				VEN = { is_free_or_tributary_trigger = yes }
 			}
 			VEN = {
-				country_event = {
-					id = FEE_Italian_Wars_Events.501
-				}
+				country_event = { id = FEE_Italian_Wars_Events.501 }
 			}
 		}
 		if = {
 			limit = {
-				exists = FRA
 				FRA = { is_free_or_tributary_trigger = yes }
 			}
 			FRA = {
-				country_event = {
-					id = FEE_Italian_Wars_Events.501
-				}
+				country_event = { id = FEE_Italian_Wars_Events.501 }
 			}
 		}
 		if = {
 			limit = {
-				exists = HAB
 				HAB = { is_free_or_tributary_trigger = yes }
 			}
 			HAB = {
-				country_event = {
-					id = FEE_Italian_Wars_Events.501
-				}
+				country_event = { id = FEE_Italian_Wars_Events.501 }
 			}
 		}
 		if = {
 			limit = {
-				exists = LAN
 				LAN = { is_free_or_tributary_trigger = yes }
 			}
 			LAN = {
-				country_event = {
-					id = FEE_Italian_Wars_Events.501
-				}
+				country_event = { id = FEE_Italian_Wars_Events.501 }
 			}
 		}
 		if = {
 			limit = {
-				exists = TUS
 				TUS = { is_free_or_tributary_trigger = yes }
 			}
 			TUS = {
-				country_event = {
-					id = FEE_Italian_Wars_Events.501
-				}
+				country_event = { id = FEE_Italian_Wars_Events.501 }
 			}
 		}
 		if = {
 			limit = {
-				exists = MLO
 				MLO = { is_free_or_tributary_trigger = yes }
 			}
 			MLO = {
-				country_event = {
-					id = FEE_Italian_Wars_Events.501
-				}
+				country_event = { id = FEE_Italian_Wars_Events.501 }
 			}
 		}
 		if = {
 			limit = {
-				exists = GEN
 				GEN = { is_free_or_tributary_trigger = yes }
 			}
 			GEN = {
-				country_event = {
-					id = FEE_Italian_Wars_Events.501
-				}
+				country_event = { id = FEE_Italian_Wars_Events.501 }
 			}
 		}
 		if = {
 			limit = {
-				exists = NAV
 				NAV = { is_free_or_tributary_trigger = yes }
 			}
 			NAV = {
-				country_event = {
-					id = FEE_Italian_Wars_Events.501
-				}
+				country_event = { id = FEE_Italian_Wars_Events.501 }
 			}
 		}
 		if = {
 			limit = {
-				exists = FER
 				FER = { is_free_or_tributary_trigger = yes }
 			}
 			FER = {
-				country_event = {
-					id = FEE_Italian_Wars_Events.501
-				}
+				country_event = { id = FEE_Italian_Wars_Events.501 }
 			}
 		}
 		if = {
 			limit = {
-				exists = SIE
 				SIE = { is_free_or_tributary_trigger = yes }
 			}
 			SIE = {
-				country_event = {
-					id = FEE_Italian_Wars_Events.501
-				}
+				country_event = { id = FEE_Italian_Wars_Events.501 }
 			}
 		}
 		if = {
 			limit = {
-				exists = MAN
 				MAN = { is_free_or_tributary_trigger = yes }
 			}
 			MAN = {
-				country_event = {
-					id = FEE_Italian_Wars_Events.501
-				}
+				country_event = { id = FEE_Italian_Wars_Events.501 }
 			}
 		}
 	}
@@ -1853,6 +1784,15 @@ country_event = {
 					is_enemy = emperor
 				}
 			}
+			modifier = {
+				factor = 2.5
+				manpower_percentage = 0.50
+			}
+			modifier = {
+				factor = 0
+				NOT = { army_size = HAB }
+				NOT = { army_size = emperor }
+			}
 		}
 
 		declare_war_with_cb = {
@@ -1861,13 +1801,10 @@ country_event = {
 		}
 		if = {
 			limit = {
-				exists = HAB
 				HAB = { is_free_or_tributary_trigger = yes }
 			}
 			HAB = {
-				country_event = {
-					id = FEE_Italian_Wars_Events.601
-				}
+				country_event = { id = FEE_Italian_Wars_Events.601 }
 			}
 		}
 	}
@@ -2011,9 +1948,7 @@ country_event = {
 		tag = FRA
 		is_free_or_tributary_trigger = yes
 		any_country = {
-			NOT = {
-				tag = FRA
-			}
+			NOT = { tag = FRA }
 			owns = 102
 			is_free_or_tributary_trigger = yes
 			NOT = { war_with = ROOT }
@@ -2060,9 +1995,20 @@ country_event = {
 			modifier = {
 				factor = 0
 				102 = {
-					owner = {
-						alliance_with = ROOT
-					}
+					owner = { alliance_with = ROOT }
+				}
+			}
+			modifier = {
+				factor = 2.5
+				manpower_percentage = 0.50
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					NOT = { army_size = emperor }
+					NOT = { army_size = HAB }
+					NOT = { army_size = SPA }
+					NOT = { army_size = ENG }
 				}
 			}
 		}
@@ -2081,90 +2027,66 @@ country_event = {
 
 		if = {
 			limit = {
-				exists = SPA
 				SPA = { is_free_or_tributary_trigger = yes }
 			}
 			SPA = {
-				country_event = {
-					id = FEE_Italian_Wars_Events.701
-				}
+				country_event = { id = FEE_Italian_Wars_Events.701 }
 			}
 		}
 		if = {
 			limit = {
-				exists = HAB
 				HAB = { is_free_or_tributary_trigger = yes }
 			}
 			HAB = {
-				country_event = {
-					id = FEE_Italian_Wars_Events.701
-				}
+				country_event = { id = FEE_Italian_Wars_Events.701 }
 			}
 		}
 		if = {
 			limit = {
-				exists = SAX
 				SAX = { is_free_or_tributary_trigger = yes }
 			}
 			SAX = {
-				country_event = {
-					id = FEE_Italian_Wars_Events.701
-				}
+				country_event = { id = FEE_Italian_Wars_Events.701 }
 			}
 		}
 		if = {
 			limit = {
-				exists = BRA
 				BRA = { is_free_or_tributary_trigger = yes }
 			}
 			BRA = {
-				country_event = {
-					id = FEE_Italian_Wars_Events.701
-				}
+				country_event = { id = FEE_Italian_Wars_Events.701 }
 			}
 		}
 		if = {
 			limit = {
-				exists = ENG
 				ENG = { is_free_or_tributary_trigger = yes }
 			}
 			ENG = {
-				country_event = {
-					id = FEE_Italian_Wars_Events.701
-				}
+				country_event = { id = FEE_Italian_Wars_Events.701 }
 			}
 		}
 		if = {
 			limit = {
-				exists = TUR
 				TUR = { is_free_or_tributary_trigger = yes }
 			}
 			TUR = {
-				country_event = {
-					id = FEE_Italian_Wars_Events.701
-				}
+				country_event = { id = FEE_Italian_Wars_Events.701 }
 			}
 		}
 		if = {
 			limit = {
-				exists = BRG
 				BRG = { is_free_or_tributary_trigger = yes }
 			}
 			BRG = {
-				country_event = {
-					id = FEE_Italian_Wars_Events.701
-				}
+				country_event = { id = FEE_Italian_Wars_Events.701 }
 			}
 		}
 		if = {
 			limit = {
-				exists = KLE
 				KLE = { is_free_or_tributary_trigger = yes }
 			}
 			KLE = {
-				country_event = {
-					id = FEE_Italian_Wars_Events.701
-				}
+				country_event = { id = FEE_Italian_Wars_Events.701 }
 			}
 		}
 	}
@@ -2361,6 +2283,18 @@ country_event = {
 					is_rival = SPA
 				}
 			}
+			modifier = {
+				factor = 2.5
+				manpower_percentage = 0.50
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					NOT = { army_size = emperor }
+					NOT = { army_size = HAB }
+					NOT = { army_size = SPA }
+				}
+			}
 		}
 
 		declare_war_with_cb = {
@@ -2376,97 +2310,71 @@ country_event = {
 				}
 			}
 			HAB = {
-				country_event = {
-					id = FEE_Italian_Wars_Events.801
-				}
+				country_event = { id = FEE_Italian_Wars_Events.801 }
 			}
 		}
 		if = {
 			limit = {
-				exists = ENG
 				ENG = { is_free_or_tributary_trigger = yes }
 			}
 			ENG = {
-				country_event = {
-					id = FEE_Italian_Wars_Events.801
-				}
+				country_event = { id = FEE_Italian_Wars_Events.801 }
 			}
 		}
 		if = {
 			limit = {
-				exists = LAN
 				LAN = { is_free_or_tributary_trigger = yes }
 			}
 			LAN = {
-				country_event = {
-					id = FEE_Italian_Wars_Events.801
-				}
+				country_event = { id = FEE_Italian_Wars_Events.801 }
 			}
 		}
 		if = {
 			limit = {
-				exists = TUS
 				TUS = { is_free_or_tributary_trigger = yes }
 			}
 			TUS = {
-				country_event = {
-					id = FEE_Italian_Wars_Events.801
-				}
+				country_event = { id = FEE_Italian_Wars_Events.801 }
 			}
 		}
 		if = {
 			limit = {
-				exists = TUR
 				TUR = { is_free_or_tributary_trigger = yes }
 			}
 			TUR = {
-				country_event = {
-					id = FEE_Italian_Wars_Events.801
-				}
+				country_event = { id = FEE_Italian_Wars_Events.801 }
 			}
 		}
 		if = {
 			limit = {
-				exists = SAV
 				SAV = { is_free_or_tributary_trigger = yes }
 			}
 			SAV = {
-				country_event = {
-					id = FEE_Italian_Wars_Events.801
-				}
+				country_event = { id = FEE_Italian_Wars_Events.801 }
 			}
 		}
 		if = {
 			limit = {
-				exists = SPI
 				SPI = { is_free_or_tributary_trigger = yes }
 			}
 			SPI = {
-				country_event = {
-					id = FEE_Italian_Wars_Events.801
-				}
+				country_event = { id = FEE_Italian_Wars_Events.801 }
 			}
 		}
 		if = {
 			limit = {
-				exists = PAP
 				PAP = { is_free_or_tributary_trigger = yes }
 			}
 			PAP = {
-				country_event = {
-					id = FEE_Italian_Wars_Events.801
-				}
+				country_event = { id = FEE_Italian_Wars_Events.801 }
 			}
 		}
 		if = {
 			limit = {
-				exists = SIE
 				SIE = { is_free_or_tributary_trigger = yes }
 			}
 			SIE = {
-				country_event = {
-					id = FEE_Italian_Wars_Events.801
-				}
+				country_event = { id = FEE_Italian_Wars_Events.801 }
 			}
 		}
 	}
