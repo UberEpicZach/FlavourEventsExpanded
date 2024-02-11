@@ -95,6 +95,7 @@ country_event = {
 			ai = yes
 		}
 		has_ruler = "Charles"
+		dynasty = "von Habsburg"
 		NOT = { has_country_flag = FEE_Charles_V_Events_dead } #Won't fire if Chalres died as an heir
 		NOT = { has_country_flag = FEE_Charles_V_Events_ruler }
 	}
