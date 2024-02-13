@@ -1,5 +1,72 @@
 namespace = disaster_fee_italy_republican_matter
 
+#Republican Matter
+country_event = {
+	id = disaster_fee_italy_republican_matter.1
+	title = disaster_fee_italy_republican_matter.1.T
+	desc = disaster_fee_italy_republican_matter.1.D
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = disaster_fee_italy_republican_matter.1.OPT1
+
+		add_stability = -3
+		add_prestige = -50
+		add_legitimacy_equivalent = { amount = -50 republican_tradition = -25 }
+
+		custom_tooltip = FEE_ITA_REPUBLICAN_MATTER_TT
+		set_country_flag = fee_ita_republican_matter
+
+		hidden_effect = {
+			italy_region = {
+				limit = { owned_by = ROOT }
+				random = {
+					chance = 25
+					random_list = {
+						20 = { }
+						40 = {
+							if = {
+								limit = {
+									owner = { government = republic }
+								}
+								spawn_rebels = {
+									size = 2
+									type = fee_ita_republican_rebels
+								}
+							}
+							else = {
+								spawn_rebels = {
+									size = 3
+									type = fee_ita_republican_rebels
+								}
+							}
+						}
+						40 = {
+							if = {
+								limit = {
+									owner = { government = monarchy }
+								}
+								spawn_rebels = {
+									size = 2
+									type = fee_ita_monarchy_rebels
+								}
+							}
+							else = {
+								spawn_rebels = {
+									size = 3
+									type = fee_ita_monarchy_rebels
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
 #A New State
 country_event = {
 	id = disaster_fee_italy_republican_matter.2
@@ -59,27 +126,6 @@ country_event = {
 	}
 }
 
-#Republican Matter
-country_event = {
-	id = disaster_fee_italy_republican_matter.1
-	title = disaster_fee_italy_republican_matter.1.T
-	desc = disaster_fee_italy_republican_matter.1.D
-	picture = GOOD_WITH_MONARCH_eventPicture
-
-	is_triggered_only = yes
-
-	option = {
-		name = disaster_fee_italy_republican_matter.1.OPT1
-
-		add_stability = -1
-		add_prestige = -20
-		add_legitimacy_equivalent = { amount = -20 republican_tradition = -10 }
-
-		custom_tooltip = FEE_ITA_REPUBLICAN_MATTER_TT
-		set_country_flag = fee_ita_republican_matter
-	}
-}
-
 #Giovine Italia
 country_event = {
 	id = disaster_fee_italy_republican_matter.3
@@ -90,23 +136,10 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		OR = {
-			NOT = { government = republic }
-			AND = {
-				government = republic
-				NOT = { has_reform = constitutional_republic_reform }
-			}
-		}
+		government = republic
+		NOT = { has_reform = constitutional_republic_reform }
 		italy_region = {
 			owned_by = ROOT
-			NOT = { area = western_sicily_area }
-			NOT = { area = sicily_area }
-			NOT = { area = calabria_area }
-			NOT = { area = apulia_area }
-			NOT = { area = naples_area }
-			NOT = { area = lazio_area }
-			NOT = { area = corsica_sardinia_area }
-			NOT = { area = central_italy_area }
 			NOT = { has_province_flag = fee_ita_rebellion_republic_3 }
 		}
 	}
@@ -117,18 +150,8 @@ country_event = {
 		random_owned_province = {
 			limit = {
 				region = italy_region
-				NOT = { area = western_sicily_area }
-				NOT = { area = sicily_area }
-				NOT = { area = calabria_area }
-				NOT = { area = apulia_area }
-				NOT = { area = naples_area }
-				NOT = { area = lazio_area }
-				NOT = { area = corsica_sardinia_area }
-				NOT = { area = central_italy_area }
 			}
-			hidden_effect = {
-				set_province_flag = fee_ita_rebellion_republic_3
-			}
+			hidden_effect = { set_province_flag = fee_ita_rebellion_republic_3 }
 			if = {
 				limit = {
 					owner = { government = republic }
@@ -158,25 +181,10 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		OR = {
-			NOT = { government = monarchy }
-			AND = {
-				government = monarchy
-				NOT = { has_parliament = yes }
-			}
-		}
+		government = monarchy
+		NOT = { has_parliament = yes }
 		italy_region = {
 			owned_by = ROOT
-			OR = {
-				area = western_sicily_area
-				area = sicily_area
-				area = calabria_area
-				area = apulia_area
-				area = naples_area
-				area = lazio_area
-				area = corsica_sardinia_area
-				area = central_italy_area
-			}
 			NOT = { has_province_flag = fee_ita_rebellion_monarchy_3 }
 		}
 	}
@@ -187,21 +195,9 @@ country_event = {
 		random_owned_province = {
 			limit = {
 				region = italy_region
-				OR = {
-					area = western_sicily_area
-					area = sicily_area
-					area = calabria_area
-					area = apulia_area
-					area = naples_area
-					area = lazio_area
-					area = corsica_sardinia_area
-					area = central_italy_area
-				}
 				NOT = { has_province_flag = fee_ita_rebellion_monarchy_3 }
 			}
-			hidden_effect = {
-				set_province_flag = fee_ita_rebellion_monarchy_3
-			}
+			hidden_effect = { set_province_flag = fee_ita_rebellion_monarchy_3 }
 			if = {
 				limit = {
 					owner = { government = monarchy }
