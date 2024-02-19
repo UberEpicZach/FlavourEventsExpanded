@@ -1,10 +1,10 @@
-namespace = disaster_fee_vij_decline_vijayanagar
+namespace = disaster_fee_decline_of_vijayanagar
 
 # Administrative Inefficiency
 country_event = {
-	id = disaster_fee_vij_decline_vijayanagar.1
-	title = disaster_fee_vij_decline_vijayanagar.1.T
-	desc = disaster_fee_vij_decline_vijayanagar.1.D
+	id = disaster_fee_decline_of_vijayanagar.1
+	title = disaster_fee_decline_of_vijayanagar.1.T
+	desc = disaster_fee_decline_of_vijayanagar.1.D
 	picture = RELIGIOUS_TURMOIL_eventPicture
 
 	is_triggered_only = yes
@@ -18,7 +18,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_vij_decline_vijayanagar.1.OPT1
+		name = disaster_fee_decline_of_vijayanagar.1.OPT1
 		ai_chance = {
 			factor = 75
 		}
@@ -36,9 +36,9 @@ country_event = {
 
 # The Glory of Vijayanagar
 country_event = {
-	id = disaster_fee_vij_decline_vijayanagar.2
-	title = disaster_fee_vij_decline_vijayanagar.2.T
-	desc = disaster_fee_vij_decline_vijayanagar.2.D
+	id = disaster_fee_decline_of_vijayanagar.2
+	title = disaster_fee_decline_of_vijayanagar.2.T
+	desc = disaster_fee_decline_of_vijayanagar.2.D
 	picture = GOOD_WITH_MONARCH_eventPicture
 
 	is_triggered_only = yes
@@ -50,7 +50,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_vij_decline_vijayanagar.2.OPT1
+		name = disaster_fee_decline_of_vijayanagar.2.OPT1
 		ai_chance = {
 			factor = 75
 		}
@@ -97,9 +97,9 @@ country_event = {
 
 # Social and Religious Conflicts
 country_event = {
-	id = disaster_fee_vij_decline_vijayanagar.3
-	title = disaster_fee_vij_decline_vijayanagar.3.T
-	desc = disaster_fee_vij_decline_vijayanagar.3.D
+	id = disaster_fee_decline_of_vijayanagar.3
+	title = disaster_fee_decline_of_vijayanagar.3.T
+	desc = disaster_fee_decline_of_vijayanagar.3.D
 	picture = GOOD_WITH_MONARCH_eventPicture
 
 	is_triggered_only = yes
@@ -112,7 +112,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_vij_decline_vijayanagar.3.OPT1
+		name = disaster_fee_decline_of_vijayanagar.3.OPT1
 		ai_chance = {
 			factor = 75
 		}
@@ -151,9 +151,9 @@ country_event = {
 
 # Prolonged War
 country_event = {
-	id = disaster_fee_vij_decline_vijayanagar.4
-	title = disaster_fee_vij_decline_vijayanagar.4.T
-	desc = disaster_fee_vij_decline_vijayanagar.4.D
+	id = disaster_fee_decline_of_vijayanagar.4
+	title = disaster_fee_decline_of_vijayanagar.4.T
+	desc = disaster_fee_decline_of_vijayanagar.4.D
 	picture = MILITARY_CAMP_eventPicture
 
 	is_triggered_only = yes
@@ -164,7 +164,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_vij_decline_vijayanagar.4.OPT1
+		name = disaster_fee_decline_of_vijayanagar.4.OPT1
 		ai_chance = {
 			factor = 75
 		}
@@ -179,9 +179,9 @@ country_event = {
 
 # Betrayal by Nayakas
 country_event = {
-	id = disaster_fee_vij_decline_vijayanagar.5
-	title = disaster_fee_vij_decline_vijayanagar.5.T
-	desc = disaster_fee_vij_decline_vijayanagar.5.D
+	id = disaster_fee_decline_of_vijayanagar.5
+	title = disaster_fee_decline_of_vijayanagar.5.T
+	desc = disaster_fee_decline_of_vijayanagar.5.D
 	picture = BORDER_TENSION_eventPicture
 
 	is_triggered_only = yes
@@ -201,7 +201,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_vij_decline_vijayanagar.5.OPT1
+		name = disaster_fee_decline_of_vijayanagar.5.OPT1
 		ai_chance = {
 			factor = 75
 		}
@@ -258,16 +258,16 @@ country_event = {
 
 # Caste Division
 country_event = {
-	id = disaster_fee_vij_decline_vijayanagar.6
-	title = disaster_fee_vij_decline_vijayanagar.6.T
-	desc = disaster_fee_vij_decline_vijayanagar.6.D
+	id = disaster_fee_decline_of_vijayanagar.6
+	title = disaster_fee_decline_of_vijayanagar.6.T
+	desc = disaster_fee_decline_of_vijayanagar.6.D
 	picture = NOBLE_ESTATE_DEMANDS_eventPicture
 
 	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
-		name = disaster_fee_vij_decline_vijayanagar.6.OPT1
+		name = disaster_fee_decline_of_vijayanagar.6.OPT1
 		ai_chance = {
 			factor = 75
 		}
@@ -282,9 +282,9 @@ country_event = {
 
 # Loss of Coromandel
 country_event = {
-	id = disaster_fee_vij_decline_vijayanagar.7
-	title = disaster_fee_vij_decline_vijayanagar.7.T
-	desc = disaster_fee_vij_decline_vijayanagar.7.D
+	id = disaster_fee_decline_of_vijayanagar.7
+	title = disaster_fee_decline_of_vijayanagar.7.T
+	desc = disaster_fee_decline_of_vijayanagar.7.D
 	picture = PORT_BLOCKADED_eventPicture
 
 	is_triggered_only = yes
@@ -302,7 +302,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_vij_decline_vijayanagar.7.OPT1
+		name = disaster_fee_decline_of_vijayanagar.7.OPT1
 		ai_chance = {
 			factor = 75
 		}
@@ -325,9 +325,9 @@ country_event = {
 
 # Loss of the 300 ports
 country_event = {
-	id = disaster_fee_vij_decline_vijayanagar.8
-	title = disaster_fee_vij_decline_vijayanagar.8.T
-	desc = disaster_fee_vij_decline_vijayanagar.8.D
+	id = disaster_fee_decline_of_vijayanagar.8
+	title = disaster_fee_decline_of_vijayanagar.8.T
+	desc = disaster_fee_decline_of_vijayanagar.8.D
 	picture = PORT_BLOCKADED_eventPicture
 
 	is_triggered_only = yes
@@ -344,7 +344,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_vij_decline_vijayanagar.8.OPT1
+		name = disaster_fee_decline_of_vijayanagar.8.OPT1
 		ai_chance = {
 			factor = 75
 		}
@@ -366,9 +366,9 @@ country_event = {
 
 # Loss of Overseas business
 country_event = {
-	id = disaster_fee_vij_decline_vijayanagar.9
-	title = disaster_fee_vij_decline_vijayanagar.9.T
-	desc = disaster_fee_vij_decline_vijayanagar.9.D
+	id = disaster_fee_decline_of_vijayanagar.9
+	title = disaster_fee_decline_of_vijayanagar.9.T
+	desc = disaster_fee_decline_of_vijayanagar.9.D
 	picture = SAD_MERCHANT_eventPicture
 
 	is_triggered_only = yes
@@ -380,7 +380,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_vij_decline_vijayanagar.9.OPT1
+		name = disaster_fee_decline_of_vijayanagar.9.OPT1
 		ai_chance = {
 			factor = 75
 		}
@@ -415,9 +415,9 @@ country_event = {
 
 # Tamilakam
 country_event = {
-	id = disaster_fee_vij_decline_vijayanagar.10
-	title = disaster_fee_vij_decline_vijayanagar.10.T
-	desc = disaster_fee_vij_decline_vijayanagar.10.D
+	id = disaster_fee_decline_of_vijayanagar.10
+	title = disaster_fee_decline_of_vijayanagar.10.T
+	desc = disaster_fee_decline_of_vijayanagar.10.D
 	picture = ANGRY_MOB_eventPicture
 
 	is_triggered_only = yes
@@ -434,7 +434,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_vij_decline_vijayanagar.10.OPT1
+		name = disaster_fee_decline_of_vijayanagar.10.OPT1
 		ai_chance = {
 			factor = 75
 		}
@@ -484,7 +484,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_vij_decline_vijayanagar.10.OPT2
+		name = disaster_fee_decline_of_vijayanagar.10.OPT2
 		ai_chance = {
 			factor = 25
 		}
@@ -517,9 +517,9 @@ country_event = {
 
 # Thanjavur
 country_event = {
-	id = disaster_fee_vij_decline_vijayanagar.11
-	title = disaster_fee_vij_decline_vijayanagar.11.T
-	desc = disaster_fee_vij_decline_vijayanagar.11.D
+	id = disaster_fee_decline_of_vijayanagar.11
+	title = disaster_fee_decline_of_vijayanagar.11.T
+	desc = disaster_fee_decline_of_vijayanagar.11.D
 	picture = INDIAN_WARS_eventPicture
 
 	is_triggered_only = yes
@@ -533,7 +533,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_vij_decline_vijayanagar.11.OPT1
+		name = disaster_fee_decline_of_vijayanagar.11.OPT1
 		ai_chance = {
 			factor = 75
 		}
@@ -571,9 +571,9 @@ country_event = {
 
 # Tiger of Mysore
 country_event = {
-	id = disaster_fee_vij_decline_vijayanagar.12
-	title = disaster_fee_vij_decline_vijayanagar.12.T
-	desc = disaster_fee_vij_decline_vijayanagar.12.D
+	id = disaster_fee_decline_of_vijayanagar.12
+	title = disaster_fee_decline_of_vijayanagar.12.T
+	desc = disaster_fee_decline_of_vijayanagar.12.D
 	picture = ANGRY_MOB_eventPicture
 
 	is_triggered_only = yes
@@ -586,7 +586,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_vij_decline_vijayanagar.12.OPT1
+		name = disaster_fee_decline_of_vijayanagar.12.OPT1
 		ai_chance = {
 			factor = 50
 		}
@@ -609,7 +609,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_vij_decline_vijayanagar.12.OPT2
+		name = disaster_fee_decline_of_vijayanagar.12.OPT2
 		ai_chance = {
 			factor = 35
 		}
@@ -634,7 +634,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_vij_decline_vijayanagar.12.OPT3
+		name = disaster_fee_decline_of_vijayanagar.12.OPT3
 		ai_chance = {
 			factor = 15
 		}
@@ -672,9 +672,9 @@ country_event = {
 
 # Golkonda invasion
 country_event = {
-	id = disaster_fee_vij_decline_vijayanagar.13
-	title = disaster_fee_vij_decline_vijayanagar.13.T
-	desc = disaster_fee_vij_decline_vijayanagar.13.D
+	id = disaster_fee_decline_of_vijayanagar.13
+	title = disaster_fee_decline_of_vijayanagar.13.T
+	desc = disaster_fee_decline_of_vijayanagar.13.D
 	picture = GENERALS_DISCUSSING_eventPicture
 
 	is_triggered_only = yes
@@ -687,7 +687,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_vij_decline_vijayanagar.13.OPT1
+		name = disaster_fee_decline_of_vijayanagar.13.OPT1
 		ai_chance = {
 			factor = 50
 		}
@@ -707,9 +707,9 @@ country_event = {
 
 # Bijapur rebellion
 country_event = {
-	id = disaster_fee_vij_decline_vijayanagar.14
-	title = disaster_fee_vij_decline_vijayanagar.14.T
-	desc = disaster_fee_vij_decline_vijayanagar.14.D
+	id = disaster_fee_decline_of_vijayanagar.14
+	title = disaster_fee_decline_of_vijayanagar.14.T
+	desc = disaster_fee_decline_of_vijayanagar.14.D
 	picture = GENERALS_DISCUSSING_eventPicture
 
 	is_triggered_only = yes
@@ -731,7 +731,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_vij_decline_vijayanagar.14.OPT1
+		name = disaster_fee_decline_of_vijayanagar.14.OPT1
 		ai_chance = {
 			factor = 50
 		}
@@ -759,9 +759,9 @@ country_event = {
 
 # Restore teh Amaranayaka Sainya
 country_event = {
-	id = disaster_fee_vij_decline_vijayanagar.15
-	title = disaster_fee_vij_decline_vijayanagar.15.T
-	desc = disaster_fee_vij_decline_vijayanagar.15.D
+	id = disaster_fee_decline_of_vijayanagar.15
+	title = disaster_fee_decline_of_vijayanagar.15.T
+	desc = disaster_fee_decline_of_vijayanagar.15.D
 	picture = MILITARISTICALLY_TALENTED_RULER_eventPicture
 
 	is_triggered_only = yes
@@ -772,7 +772,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_vij_decline_vijayanagar.15.OPT1
+		name = disaster_fee_decline_of_vijayanagar.15.OPT1
 		ai_chance = {
 			factor = 75
 		}
@@ -784,7 +784,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_vij_decline_vijayanagar.15.OPT2
+		name = disaster_fee_decline_of_vijayanagar.15.OPT2
 		ai_chance = {
 			factor = 25
 		}
@@ -800,9 +800,9 @@ country_event = {
 
 # Capital Centralisation
 country_event = {
-	id = disaster_fee_vij_decline_vijayanagar.16
-	title = disaster_fee_vij_decline_vijayanagar.16.T
-	desc = disaster_fee_vij_decline_vijayanagar.16.D
+	id = disaster_fee_decline_of_vijayanagar.16
+	title = disaster_fee_decline_of_vijayanagar.16.T
+	desc = disaster_fee_decline_of_vijayanagar.16.D
 	picture = GOOD_WITH_MONARCH_eventPicture
 
 	is_triggered_only = yes
@@ -814,7 +814,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_vij_decline_vijayanagar.16.OPT1
+		name = disaster_fee_decline_of_vijayanagar.16.OPT1
 		ai_chance = {
 			factor = 75
 		}
@@ -837,7 +837,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_vij_decline_vijayanagar.16.OPT2
+		name = disaster_fee_decline_of_vijayanagar.16.OPT2
 		ai_chance = {
 			factor = 25
 		}
@@ -851,9 +851,9 @@ country_event = {
 
 # Capital Centralisation
 country_event = {
-	id = disaster_fee_vij_decline_vijayanagar.17
-	title = disaster_fee_vij_decline_vijayanagar.17.T
-	desc = disaster_fee_vij_decline_vijayanagar.17.D
+	id = disaster_fee_decline_of_vijayanagar.17
+	title = disaster_fee_decline_of_vijayanagar.17.T
+	desc = disaster_fee_decline_of_vijayanagar.17.D
 	picture = MERCHANTS_TALKING_eventPicture
 
 	is_triggered_only = yes
@@ -864,7 +864,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_vij_decline_vijayanagar.17.OPT1
+		name = disaster_fee_decline_of_vijayanagar.17.OPT1
 		ai_chance = {
 			factor = 75
 		}
@@ -878,7 +878,7 @@ country_event = {
 	}
 
 	option = {
-		name = disaster_fee_vij_decline_vijayanagar.17.OPT2
+		name = disaster_fee_decline_of_vijayanagar.17.OPT2
 		ai_chance = {
 			factor = 25
 		}
