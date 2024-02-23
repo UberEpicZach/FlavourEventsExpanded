@@ -10,7 +10,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_gen = yes
+		is_or_was_tag = { tag = GEN }
 		is_year = 1128
 		NOT = { is_year = 1543 }
 		101 = {
@@ -109,7 +109,7 @@ country_event = {
 	trigger = {
 		is_year = 1450
 		OR = {
-			fee_is_was_gen = yes
+			is_or_was_tag = { tag = GEN }
 			tag = COR
 		}
 		NOT = { is_year = 1470 }
@@ -163,7 +163,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_gen = yes
+		is_or_was_tag = { tag = GEN }
 		is_year = 1700
 		owns = 101
 		101 = {
@@ -422,7 +422,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_gen = yes
+		is_or_was_tag = { tag = GEN }
 		is_year = 1261
 		NOT = { is_year = 1453 }
 		exists = BYZ
@@ -537,7 +537,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_gen = yes
+		is_or_was_tag = { tag = GEN }
 		BYZ = {
 			is_in_war = {
 				attacker_leader = TUR
@@ -680,7 +680,7 @@ country_event = {
 	picture = DIPLOMACY_eventPicture
 
 	trigger = {
-		fee_is_was_gen = yes
+		is_or_was_tag = { tag = GEN }
 		OR = {
 			alliance_with = BYZ
 			has_opinion = {
@@ -758,7 +758,7 @@ country_event = {
 	trigger = {
 		tag = BYZ
 		any_country = {
-			fee_is_was_gen = yes
+			is_or_was_tag = { tag = GEN }
 			OR = {
 				alliance_with = ROOT
 				has_opinion = {
@@ -831,7 +831,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_gen = yes
+		is_or_was_tag = { tag = GEN }
 		OR = {
 			alliance_with = BYZ
 			has_opinion = {
@@ -909,7 +909,7 @@ country_event = {
 	trigger = {
 		is_year = 1266
 		NOT = { is_year = 1475 }
-		fee_is_was_gen = yes
+		is_or_was_tag = { tag = GEN }
 		OR = {
 			crimea_area = {
 				owned_by = ROOT
@@ -1093,7 +1093,7 @@ country_event = {
 	trigger = {
 		is_year = 1266
 		NOT = { is_year = 1475 }
-		fee_is_was_gen = yes
+		is_or_was_tag = { tag = GEN }
 		OR = {
 			crimea_area = {
 				owned_by = ROOT
@@ -1143,7 +1143,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_gen = yes
+		is_or_was_tag = { tag = GEN }
 		crimea_region = { owned_by = ROOT }
 		crimea_region = {
 			OR = {
@@ -1293,7 +1293,7 @@ country_event = {
 	trigger = {
 		is_year = 1249
 		NOT = { is_year = 1475 }
-		fee_is_was_gen = yes
+		is_or_was_tag = { tag = GEN }
 		owns = 285
 	}
 
@@ -1329,7 +1329,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_gen = yes
+		is_or_was_tag = { tag = GEN }
 		crimea_region = {
 			owned_by = ROOT
 			any_neighbor_province = {
@@ -1502,7 +1502,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_gen = yes
+		is_or_was_tag = { tag = GEN }
 		is_year = 1445
 		NOT = { is_year = 1446 }
 	}
@@ -1873,7 +1873,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_gen = yes
+		is_or_was_tag = { tag = GEN }
 		OR = {
 			NOT = { exists = POR }
 			POR = {
@@ -2295,7 +2295,7 @@ country_event = {
 #	fire_only_once = yes
 #
 #	trigger = {
-#		fee_is_was_gen = yes
+#		is_or_was_tag = { tag = GEN }
 #	}
 #
 #	mean_time_to_happen = {

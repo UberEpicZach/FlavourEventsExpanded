@@ -10,7 +10,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		NOT = { is_year = 1571 }
 		OR = {
 			NOT = { exists = BYZ }
@@ -69,7 +69,7 @@ country_event = {
 
 	fire_only_once = yes
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		is_year = 1545
 		owns_core_province = 112
 		NOT = { is_year = 1687 }
@@ -100,7 +100,7 @@ country_event = {
 
 	fire_only_once = yes
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		is_year = 1453
 		NOT = { is_year = 1500 }
 		owns_core_province = 112
@@ -147,7 +147,7 @@ country_event = {
 
 	fire_only_once = yes
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		is_year = 1542
 		NOT = { is_year = 1721 }
 		navy_tradition = 50
@@ -176,7 +176,7 @@ country_event = {
 
 	fire_only_once = yes
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		is_year = 1453
 		NOT = { is_year = 1523 }
 		owns_core_province = 112
@@ -222,7 +222,7 @@ country_event = {
 
 	fire_only_once = yes
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		is_year = 1473
 		NOT = { is_year = 1535 }
 		owns_core_province = 112
@@ -279,7 +279,7 @@ country_event = {
 
 	fire_only_once = yes
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		is_year = 1535
 		owns_core_province = 112
 		NOT = { is_year = 1566 }
@@ -336,7 +336,7 @@ country_event = {
 
 	fire_only_once = yes
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		is_year = 1566
 		owns_core_province = 112
 		NOT = { is_year = 1573 }
@@ -386,7 +386,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		is_year = 1550
 		NOT = { is_year = 1687 }
 		any_owned_province = {
@@ -448,7 +448,7 @@ country_event = {
 
 	fire_only_once = yes
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		151 = { owned_by = TUR }
 	}
 
@@ -498,7 +498,7 @@ country_event = {
 
 	major = yes
 	major_trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 	}
 
 	option = {
@@ -694,7 +694,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		owns_core_province = 112
 		is_year = 1630
 		NOT = { is_year = 1680 }
@@ -728,7 +728,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		is_year = 1423
 		NOT = { is_year = 1457 }
 		has_ruler = "Francesco Foscari"
@@ -760,7 +760,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		is_year = 1438
 		NOT = { is_year = 1459 }
 	}
@@ -794,7 +794,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		diplomat = 1
 		151 = {
 			NOT = { owned_by = ROOT }
@@ -830,7 +830,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		is_year = 1423
 		NOT = { is_year = 1457 }
 		has_ruler = "Francesco Foscari"
@@ -889,7 +889,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		is_year = 1456
 		NOT = { is_year = 1457 }
 		has_ruler = "Francesco Foscari"
@@ -918,7 +918,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		is_year = 1457
 		NOT = { has_ruler = "Francesco Foscari" }
 		NOT = { is_year = 1460 }
@@ -949,7 +949,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		is_year = 1445
 		NOT = { is_year = 1457 }
 		NOT = { has_ruler = "Pasquale Malipiero" }
@@ -980,7 +980,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		is_year = 1445
 		has_ruler = "Francesco Foscari"
 		NOT = { is_year = 1457 }
@@ -1052,7 +1052,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		is_year = 1445
 		OR = {
 			owns = 4729
@@ -1120,7 +1120,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		owns = 112
 		is_year = 1453
 		NOT = { is_year = 1454 }
@@ -1174,7 +1174,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		owns = 112
 		is_year = 1455
 		NOT = { is_year = 1456 }
@@ -1206,7 +1206,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		owns = 112
 		is_year = 1455
 		NOT = { is_year = 1462 }
@@ -1244,7 +1244,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		is_year = 1461
 		NOT = { is_year = 1471 }
 	}
@@ -1318,7 +1318,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		is_year = 1463
 		NOT = { is_year = 1479 }
 		TUR = {
@@ -1587,7 +1587,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		is_in_war = {
 			attacker_leader = ROOT
 			casus_belli = cb_crusade
@@ -1645,7 +1645,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		is_in_war = {
 			attacker_leader = ROOT
 			casus_belli = cb_crusade
@@ -1730,7 +1730,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		is_in_war = {
 			attacker_leader = ROOT
 			casus_belli = cb_crusade
@@ -1780,7 +1780,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		is_in_war = {
 			attacker_leader = ROOT
 			casus_belli = cb_crusade
@@ -1837,7 +1837,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		is_in_war = {
 			attacker_leader = ROOT
 			casus_belli = cb_crusade
@@ -1878,7 +1878,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		is_in_war = {
 			attacker_leader = ROOT
 			casus_belli = cb_crusade
@@ -1927,7 +1927,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		is_at_war = no
 		137 = {
 			any_trade_node_member_province = {
@@ -2020,7 +2020,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		is_year = 1463
 		NOT = { is_year = 1479 }
 		is_at_war = no
@@ -2102,7 +2102,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		is_year = 1463
 		NOT = { is_year = 1479 }
 		has_country_modifier = fee_ven_turko_venetian_wars
@@ -2185,7 +2185,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		is_year = 1499
 		NOT = { is_year = 1571 }
 		war_with = TUR
@@ -2245,7 +2245,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		is_year = 1399
 		NOT = { is_year = 1466 }
 	}
@@ -2389,7 +2389,7 @@ country_event = {
 
 	major = yes
 	major_trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 	}
 
 	option = {
@@ -2472,7 +2472,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		is_year = 1399
 		NOT = { is_year = 1466 }
 	}
@@ -2560,7 +2560,7 @@ country_event = {
 
 	major = yes
 	major_trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 	}
 
 	option = {
@@ -2635,7 +2635,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		is_year = 1399
 		NOT = { is_year = 1466 }
 	}
@@ -2697,7 +2697,7 @@ country_event = {
 
 	major = yes
 	major_trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 	}
 
 	option = {
@@ -2786,7 +2786,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		is_year = 1471
 		NOT = { is_year = 1473 }
 	}
@@ -2835,7 +2835,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		is_year = 1441
 		NOT = { is_year = 1450 }
 		exists = TRE
@@ -2876,7 +2876,7 @@ country_event = {
 
 	major = yes
 	major_trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 	}
 
 	option = {
@@ -2979,7 +2979,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		is_year = 1464
 		NOT = { is_year = 1473 }
 		owns = 111
@@ -3017,7 +3017,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		is_year = 1473
 		NOT = { is_year = 1474 }
 	}
@@ -3065,7 +3065,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		is_year = 1442
 		NOT = { is_year = 1449 }
 	}
@@ -3109,7 +3109,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		general_with_name = "Pietro Mocenigo"
 	}
 
@@ -3167,7 +3167,7 @@ country_event = {
 
 	major = yes
 	major_trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 	}
 
 	option = {
@@ -3235,7 +3235,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		general_with_name = "Pietro Mocenigo"
 		is_year = 1449
 		NOT = { is_year = 1470 }
@@ -3272,7 +3272,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		is_year = 1470
 		NOT = { is_year = 1474 }
 	}
@@ -3345,7 +3345,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		is_year = 1474
 		NOT = { is_year = 1476 }
 	}
@@ -3392,7 +3392,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		is_year = 1476
 		has_ruler = "Pietro Mocenigo"
 		NOT = { is_year = 1477 }
@@ -3666,7 +3666,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		is_year = 1458
 		NOT = { is_year = 1483 }
 	}
@@ -3742,7 +3742,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		is_year = 1460
 		NOT = { is_year = 1483 }
 	}
@@ -3803,7 +3803,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		is_year = 1460
 		NOT = { is_year = 1483 }
 	}
@@ -3848,7 +3848,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		is_year = 1460
 		NOT = { is_year = 1483 }
 	}
@@ -3907,7 +3907,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		is_year = 1461
 		NOT = { is_year = 1483 }
 	}
@@ -3953,7 +3953,7 @@ country_event = {
 
 	major = yes
 	major_trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 	}
 
 	option = {
@@ -4021,7 +4021,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		is_year = 1461
 		NOT = { is_year = 1483 }
 	}
@@ -4085,7 +4085,7 @@ country_event = {
 
 	major = yes
 	major_trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 	}
 
 	option = {
@@ -4190,7 +4190,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		exists = HUN
 		is_year = 1489
 		NOT = { is_year = 1493 }
@@ -4268,7 +4268,7 @@ country_event = {
 
 	major = yes
 	major_trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 	}
 
 	mean_time_to_happen = {
@@ -4354,7 +4354,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		is_year = 1493
 		religion = catholic
 		NOT = { is_year = 1523 }
@@ -4427,7 +4427,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		is_year = 1499
 		NOT = { is_year = 1523 }
 	}
@@ -4464,7 +4464,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		is_year = 1521
 		NOT = { is_year = 1523 }
 	}
@@ -4704,7 +4704,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		is_year = 1509
 		OR = {
 			owns = 110
@@ -4763,7 +4763,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		is_year = 1511
 		NOT = { is_year = 1514 }
 	}
@@ -4799,7 +4799,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		is_year = 1520
 		NOT = { is_year = 1523 }
 		exists = TUR
@@ -4854,7 +4854,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		is_year = 1523
 		NOT = { is_year = 1538 }
 	}
@@ -4906,7 +4906,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		is_year = 1512
 		exists = MAM
 		NOT = { is_year = 1524 }
@@ -4999,7 +4999,7 @@ country_event = {
 
 	major = yes
 	major_trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 	}
 
 	option = {
@@ -5068,7 +5068,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		is_year = 1512
 		exists = MAM
 		alliance_with = MAM
@@ -5108,7 +5108,7 @@ country_event = {
 
 	major = yes
 	major_trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 	}
 
 	option = {
@@ -5186,7 +5186,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		owns = 321
 	}
 
@@ -5221,7 +5221,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		owns = 321
 		is_year = 1530
 		NOT = { is_year = 1554 }
@@ -5260,7 +5260,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		is_year = 1533
 		NOT = { is_year = 1550 }
 	}
@@ -5296,7 +5296,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		owns = 321
 		is_year = 1533
 		NOT = { is_year = 1550 }
@@ -5344,7 +5344,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		is_year = 1553
 		NOT = { is_year = 1554 }
 	}
@@ -5399,7 +5399,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		is_year = 1508
 		NOT = { is_year = 1515 }
 	}
@@ -5736,7 +5736,7 @@ country_event = {
 	picture = BANKRUPTCY_eventPicture
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		is_year = 1515
 		NOT = { is_year = 1556 }
 	}
@@ -5769,7 +5769,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		is_year = 1528
 		NOT = { is_year = 1530 }
 		any_owned_province = {
@@ -5836,7 +5836,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		is_year = 1716
 		NOT = { is_year = 1729 }
 	}
@@ -5872,7 +5872,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		is_year = 1729
 		NOT = { is_year = 1747 }
 	}

@@ -549,7 +549,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		is_year = 1442
 		NOT = { is_year = 1446 }
 	}
@@ -599,7 +599,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		1862 = {
 			owner = {
 				war_with = ROOT
@@ -647,7 +647,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		1862 = {
 			controlled_by = ROOT
 			owner = { war_with = ROOT }
@@ -704,7 +704,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_ven = yes
+		is_or_was_tag = { tag = VEN }
 		exists = FLO
 		is_year = 1452
 		NOT = { is_year = 1454 }
@@ -870,7 +870,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		fee_is_was_mlo = yes
+		is_or_was_tag = { tag = MLO }
 		is_year = 1443
 		NOT = { is_year = 1448 }
 	}

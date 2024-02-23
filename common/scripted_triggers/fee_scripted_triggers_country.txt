@@ -8,31 +8,3 @@ fee_is_was_nap_sic = {
 		was_tag = TTS
 	}
 }
-
-fee_is_was_ven = {
-	OR = {
-		tag = VEN
-		was_tag = VEN
-	}
-}
-
-fee_is_was_gen = {
-	OR = {
-		tag = GEN
-		was_tag = GEN
-	}
-}
-
-fee_is_was_mlo = {
-	OR = {
-		tag = MLO
-		was_tag = MLO
-	}
-}
-
-fee_is_was_jfn = {
-	OR = {
-		tag = JFN
-		was_tag = JFN
-	}
-}

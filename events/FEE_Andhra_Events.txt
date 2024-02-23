@@ -1,0 +1,349 @@
+namespace = FEE_Andhra_Events
+
+# Crossroads of Andhra
+country_event = {
+	id = FEE_Andhra_Events.1
+	title = FEE_Andhra_Events.1.T
+	desc = FEE_Andhra_Events.1.D
+	picture = GOOD_WITH_MONARCH_EVENTPICTURE
+
+	fire_only_once = yes
+
+	trigger = {
+		is_or_was_tag = { tag = YOR }
+		current_age = age_of_discovery
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = {
+		name = FEE_Andhra_Events.1.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_mil_power = -50
+		add_ruler_modifier = {
+			name = fee_yor_rebuilding_amaravathi
+			duration = -1
+		}
+	}
+
+	option = {
+		name = FEE_Andhra_Events.1.OPT2
+		ai_chance = {
+			factor = 50
+		}
+
+		add_adm_power = -50
+		add_ruler_modifier = {
+			name = fee_yor_quest_for_glory
+			duration = -1
+		}
+	}
+}
+
+# Harmony in Amaravathi
+country_event = {
+	id = FEE_Andhra_Events.2
+	title = FEE_Andhra_Events.2.T
+	desc = FEE_Andhra_Events.2.D
+	picture = RELIGION_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_or_was_tag = { tag = YOR }
+		owns = 543
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	goto = 543
+
+	option = {
+		name = FEE_Andhra_Events.2.OPT1
+		ai_chance = {
+			factor = 0
+		}
+
+		add_treasury = -25
+		custom_tooltip = FEE_ANDHRA_HARMONY_AMARAVATHI_TT
+		hidden_effect = {
+			every_country = {
+				limit = {
+					religion = buddhism
+				}
+				country_event = {
+					id = FEE_Andhra_Events.3
+					days = 30
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Andhra_Events.2.OPT2
+		ai_chance = {
+			factor = 1
+		}
+
+		add_treasury = -15
+		set_capital = 543
+		543 = {
+			rename_capital = "Amaravathi"
+			add_permanent_province_modifier = {
+				name = fee_yor_testament_tolerance
+				duration = -1
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Andhra_Events.2.OPT3
+		trigger = {
+			NOT = { capital = 543 }
+		}
+		ai_chance = {
+			factor = 0
+		}
+
+		capital_scope = {
+			random_list = {
+				33 = { add_base_tax = 1 }
+				33 = { add_base_production = 1 }
+				33 = { add_base_manpower = 1 }
+			}
+		}
+	}
+}
+
+# Rebuilding Amaravathi
+country_event = {
+	id = FEE_Andhra_Events.3
+	title = FEE_Andhra_Events.3.T
+	desc = FEE_Andhra_Events.3.D
+	picture = BUDDHISM_GOOD_eventPicture
+
+	is_triggered_only = yes
+
+	major = yes
+	major_trigger = {
+		owns = 543
+	}
+
+	option = {
+		name = FEE_Andhra_Events.3.OPT1
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				has_opinion = {
+					who = FROM
+					value = 50
+				}
+			}
+		}
+
+		add_treasury = -5
+		add_opinion = {
+			who = FROM
+			modifier = fee_yor_aided_reconstruction
+		}
+		reverse_add_opinion = {
+			who = FROM
+			modifier = fee_yor_aided_reconstruction
+		}
+		FROM = { add_treasury = 5 }
+	}
+
+	option = {
+		name = FEE_Andhra_Events.3.OPT2
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				NOT = {
+					has_opinion = {
+						who = FROM
+						value = 50
+					}
+				}
+			}
+		}
+
+		add_opinion = {
+			who = FROM
+			modifier = fee_yor_blocked_reconstruction
+		}
+		reverse_add_opinion = {
+			who = FROM
+			modifier = fee_yor_blocked_reconstruction
+		}
+	}
+}
+
+# The Satavahana Legacy
+country_event = {
+	id = FEE_Andhra_Events.4
+	title = FEE_Andhra_Events.4.T
+	desc = FEE_Andhra_Events.4.D
+	picture = GOOD_WITH_MONARCH_EVENTPICTURE
+
+	fire_only_once = yes
+
+	trigger = {
+		is_or_was_tag = { tag = YOR }
+		current_age = age_of_discovery
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = {
+		name = FEE_Andhra_Events.4.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
+		add_adm_power = -100
+		if = {
+			limit = { has_heir = yes }
+			kill_heir = { allow_new_heir = no }
+		}
+		define_heir = {
+			dynasty = "Satavahana"
+			culture = telegu
+			religion = hinduism
+			male = yes
+			claim = 50
+			change_adm = 3
+			max_random_adm = 5
+			change_dip = 2
+			max_random_dip = 4
+			change_mil = 4
+			max_random_mil = 6
+		}
+		custom_tooltip = FEE_ANDHRA_SATAVAHANA_DYNASTY_CONQUEST_TT
+		hidden_effect = {
+			andhra_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+				}
+				add_core = ROOT
+			}
+			north_carnatic_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			rayalaseema_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			golconda_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+				}
+				add_core = ROOT
+			}
+			garjat_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			orissa_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Andhra_Events.4.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
+		add_legitimacy_or_mil_power = { amount = 25 republican_tradition = 12 }
+		add_prestige_or_monarch_power = { amount = 15 }
+		capital_scope = {
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+		}
+	}
+}
+
+# Embracing Ancient Roots
+country_event = {
+	id = FEE_Andhra_Events.5
+	title = FEE_Andhra_Events.5.T
+	desc = FEE_Andhra_Events.5.D
+	picture = RELIGION_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_or_was_tag = { tag = YOR }
+		dynasty = "Satavahana"
+		543 = {
+			owned_by = ROOT
+			has_province_modifier = fee_yor_testament_tolerance
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = FEE_Andhra_Events.5.OPT1
+		ai_chance = {
+			factor = 0
+		}
+
+		add_adm_power = 25
+	}
+
+	option = {
+		name = FEE_Andhra_Events.5.OPT2
+		trigger = {
+			NOT = { religion = hinduism }
+		}
+		ai_chance = {
+			factor = 33
+		}
+
+		change_religion = hinduism
+		capital_scope = { change_religion = hinduism }
+	}
+
+	option = {
+		name = FEE_Andhra_Events.5.OPT3
+		trigger = {
+			NOT = { religion = buddhism }
+		}
+		ai_chance = {
+			factor = 33
+		}
+
+		change_religion = buddhism
+		capital_scope = { change_religion = buddhism }
+	}
+}
