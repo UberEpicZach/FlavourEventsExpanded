@@ -14,15 +14,30 @@
  FEE_Vijayanagar_Events.3.OPT2: "Let him keep studying"
  FEE_Vijayanagar_Events.3.OPT3: "Improve the battle tactics"
 
- # Modifiers
- vij_kavisarvabhauma: "Kavisarvabhauma"
- desc_vij_kavisarvabhauma: "Emperor Among Poets."
+ FEE_Vijayanagar_Events.4.T: "Parameshvara's Landcraft"
+ FEE_Vijayanagar_Events.4.D: "Vatasseri Parameshvara Nambudiri, renowned for his mathematical prowess, has been enlisted to enhance land administration. His mathematical insights promise to streamline taxation, optimize resource allocation, and ensure efficient governance. This initiative could significantly bolster the economic foundation of Vijayanagara."
+ FEE_Vijayanagar_Events.4.OPT1: "Invest in Prosperity"
+ FEE_Vijayanagar_Events.4.OPT2: "Budgetary Prudence"
 
- vij_parameshvara_adm_focus: "Parameshvara's Mean Value"
- desc_vij_parameshvara_adm_focus: ""
- vij_parameshvara_dip_focus: "Parameshvara's Astronomy"
- desc_vij_parameshvara_dip_focus: ""
- vij_parameshvara_mil_focus: "Parameshvara's Mathematics"
- desc_vij_parameshvara_mil_focus: ""
+ FEE_Vijayanagar_Events.5.T: "Mathematical Reverie"
+ FEE_Vijayanagar_Events.5.D: "Parameshvara continues his scholarly pursuits, delving into the theoretical realms of mathematics. This knowledge has the potential to influence various fields, from philosophy to science. However, this endeavor demands sustained financial support to enable the pursuit of pure mathematical understanding."
+ FEE_Vijayanagar_Events.5.OPT1: "Intellectual Investment"
+ FEE_Vijayanagar_Events.5.OPT2: "Pragmatic Reallocation"
+
+ FEE_Vijayanagar_Events.6.T: "Warfare by Numbers"
+ FEE_Vijayanagar_Events.6.D: "The military of Vijayanagara seeks to harness Parameshvara's mathematical skills to refine its strategies. By applying mathematical principles to tactics and logistics, the army aims for greater precision and effectiveness on the battlefield. This venture requires ongoing financial backing."
+ FEE_Vijayanagar_Events.6.OPT1: "Strategic Funding"
+ FEE_Vijayanagar_Events.6.OPT2: "Military Budget Trim"
+
+ # Modifiers
+ fee_vij_kavisarvabhauma: "Kavisarvabhauma"
+ desc_fee_vij_kavisarvabhauma: "Emperor Among Poets."
+
+ fee_vij_parameshvara_adm_focus: "Parameshvara's Land Administration"
+ desc_fee_vij_parameshvara_adm_focus: ""
+ fee_vij_parameshvara_dip_focus: "Parameshvara's Theoretical Studies"
+ desc_fee_vij_parameshvara_dip_focus: ""
+ fee_vij_parameshvara_mil_focus: "Parameshvara's Military Mathematics"
+ desc_fee_vij_parameshvara_mil_focus: ""
 
  # Tooltips

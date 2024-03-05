@@ -29,7 +29,7 @@ country_event = {
 		add_stability_or_adm_power = yes
 		add_prestige_or_monarch_power = { amount = 20 }
 		add_ruler_modifier = {
-			name = vij_kavisarvabhauma
+			name = fee_vij_kavisarvabhauma
 			duration = -1
 		}
 	}
@@ -114,7 +114,7 @@ country_event = {
 			factor = 75
 		}
 
-		add_adm_power = 25
+		add_adm_power = 15
 		hidden_effect = {
 			country_event = {
 				id = FEE_Vijayanagar_Events.4
@@ -130,7 +130,7 @@ country_event = {
 			factor = 75
 		}
 
-		add_dip_power = 25
+		add_dip_power = 15
 		hidden_effect = {
 			country_event = {
 				id = FEE_Vijayanagar_Events.5
@@ -146,7 +146,7 @@ country_event = {
 			factor = 75
 		}
 
-		add_mil_power = 25
+		add_mil_power = 15
 		hidden_effect = {
 			country_event = {
 				id = FEE_Vijayanagar_Events.6
@@ -157,7 +157,7 @@ country_event = {
 	}
 }
 
-# 
+# Parameshvara's Landcraft
 country_event = {
 	id = FEE_Vijayanagar_Events.4
 	title = FEE_Vijayanagar_Events.4.T
@@ -176,7 +176,7 @@ country_event = {
 
 		add_years_of_income = -1
 		add_country_modifier = {
-			name = vij_parameshvara_adm_focus
+			name = fee_vij_parameshvara_adm_focus
 			duration = 1825
 		}
 	}
@@ -191,7 +191,7 @@ country_event = {
 	}
 }
 
-# 
+# Mathematical Reverie
 country_event = {
 	id = FEE_Vijayanagar_Events.5
 	title = FEE_Vijayanagar_Events.5.T
@@ -210,7 +210,7 @@ country_event = {
 
 		add_years_of_income = -1
 		add_country_modifier = {
-			name = vij_parameshvara_dip_focus
+			name = fee_vij_parameshvara_dip_focus
 			duration = 1825
 		}
 	}
@@ -224,7 +224,8 @@ country_event = {
 		add_dip_power = -15
 	}
 }
-# 
+
+# Warfare by Numbers
 country_event = {
 	id = FEE_Vijayanagar_Events.6
 	title = FEE_Vijayanagar_Events.6.T
@@ -243,7 +244,7 @@ country_event = {
 
 		add_years_of_income = -1
 		add_country_modifier = {
-			name = vij_parameshvara_mil_focus
+			name = fee_vij_parameshvara_mil_focus
 			duration = 1825
 		}
 	}

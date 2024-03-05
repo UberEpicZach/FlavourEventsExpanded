@@ -1,16 +1,16 @@
-vij_kavisarvabhauma = {
+fee_vij_kavisarvabhauma = {
 	advisor_cost = -0.10
 	adm_tech_cost_modifier = -0.05
 	reform_progress_growth = 0.10
 	tolerance_own = 1
 }
 
-vij_parameshvara_adm_focus = {
+fee_vij_parameshvara_adm_focus = {
 	development_cost_modifier = -0.05
 }
-vij_parameshvara_dip_focus = {
+fee_vij_parameshvara_dip_focus = {
 	technology_cost = -0.075
 }
-vij_parameshvara_mil_focus = {
+fee_vij_parameshvara_mil_focus = {
 	military_tactics = 0.15
 }
