@@ -357,46 +357,282 @@ country_event = {
 }
 
 # Dandanayaka brothers
-# country_event = {
-# 	id = FEE_Vijayanagar_Events.
-# 	title = FEE_Vijayanagar_Events..T
-# 	desc = FEE_Vijayanagar_Events..D
-# 	picture = GENERALS_DISCUSSING_eventPicture
+country_event = {
+	id = FEE_Vijayanagar_Events.9
+	title = FEE_Vijayanagar_Events.9.T
+	desc = FEE_Vijayanagar_Events.9.D
+	picture = GENERALS_DISCUSSING_eventPicture
 
-# 	fire_only_once = yes
+	fire_only_once = yes
 
-# 	trigger = {
-# 		is_or_was_tag = { tag = VIJ }
-# 	}
+	trigger = {
+		is_or_was_tag = { tag = VIJ }
+		is_year = 1424
+		NOT = { is_year = 1460 }
+		NOT = { has_leader = "Lakkanna Dandanayaka" }
+	}
 
-# 	mean_time_to_happen = {
-# 		months = 6
-# 	}
+	mean_time_to_happen = {
+		months = 6
+	}
 
-# 	option = {
-# 		name = FEE_Vijayanagar_Events..OPT1
-# 		ai_chance = {
-# 			factor = 75
-# 		}
+	option = {
+		name = FEE_Vijayanagar_Events.9.OPT1
+		ai_chance = {
+			factor = 75
+		}
 
-# 		define_general = {
-# 			name = "Lakshmana Dandanayaka"
-# 			fire = 3
-# 			shock = 2
-# 			manuever = 4
-# 			siege = 1
-# 			trait = defensive_planner_personality
-# 		}
-# 		define_advisor = {
-# 			type = diplomat
-# 			skill = 2
-# 			cost_multiplier = 0.5
-# 			culture = ROOT
-# 			religion = ROOT
-# 			name = "Madanna Dandanayaka"
-# 		}
-# 	}
-# }
+		define_general = {
+			name = "Lakkanna Dandanayaka"
+			fire = 3
+			shock = 2
+			manuever = 4
+			siege = 1
+			trait = defensive_planner_personality
+		}
+		define_advisor = {
+			type = diplomat
+			skill = 2
+			cost_multiplier = 0.5
+			culture = ROOT
+			religion = ROOT
+			name = "Madanna Dandanayaka"
+		}
+	}
+}
+
+# Lord of the Southern Ocean
+country_event = {
+	id = FEE_Vijayanagar_Events.10
+	title = FEE_Vijayanagar_Events.10.T
+	desc = FEE_Vijayanagar_Events.10.D
+	picture = DIPLOMACY_SIGNING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_or_was_tag = { tag = VIJ }
+		has_leader = "Lakkanna Dandanayaka"
+		lanka_area = {
+			type = all
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+		south_lanka_area = {
+			type = all
+			country_or_non_sovereign_subject_holds = ROOT
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Vijayanagar_Events.10.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_years_of_income = 0.25
+		lanka_area = {
+			add_province_modifier = {
+				name = fee_vij_lord_southern_ocean
+				duration = 3650
+			}
+			add_province_modifier = {
+				name = fee_vij_improved_cinnamon_trade
+				duration = 3650
+			}
+		}
+		south_lanka_area = {
+			add_province_modifier = {
+				name = fee_vij_lord_southern_ocean
+				duration = 3650
+			}
+			add_province_modifier = {
+				name = fee_vij_improved_cinnamon_trade
+				duration = 3650
+			}
+		}
+	}
+}
+
+# The voyages of Madanna
+country_event = {
+	id = FEE_Vijayanagar_Events.11
+	title = FEE_Vijayanagar_Events.11.T
+	desc = FEE_Vijayanagar_Events.11.D
+	picture = SHIP_SAILING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_or_was_tag = { tag = VIJ }
+		has_dip_advisor_of_level = { level = 2 }
+		employed_advisor = {
+			category = DIP
+			name = "Madanna Dandanayaka"
+			skill = 2
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Vijayanagar_Events.11.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_years_of_income = -0.1
+		country_event = {
+			id = FEE_Vijayanagar_Events.12
+			days = 180
+			random = 45
+		}
+	}
+
+	option = {
+		name = FEE_Vijayanagar_Events.11.OPT2
+		ai_chance = {
+			factor = 25
+		}
+
+		add_dip_power = -15
+		reduce_estate_burghers_loyalty_effect = yes
+	}
+}
+
+# Madanna's return
+country_event = {
+	id = FEE_Vijayanagar_Events.12
+	title = FEE_Vijayanagar_Events.12.T
+	desc = FEE_Vijayanagar_Events.12.D
+	picture = ADVISOR_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			random_list = {
+				50 = { set_country_flag = fee_random_0 }
+				50 = { set_country_flag = fee_random_1 }
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Vijayanagar_Events.12.OPT1
+		trigger = { has_country_flag = fee_random_0 }
+		ai_chance = {
+			factor = 75
+		}
+
+		add_mercantilism_or_monarch_power = { amount = 2 }
+		custom_tooltip = FEE_VIJ_DISCOVER_SEA_PROVINCES_GOOD_TT
+		hidden_effect = {
+			east_indian_ocean_region = { discover_country = ROOT }
+			east_china_sea_area = { discover_country = ROOT }
+			586 = {
+				owner = {
+					add_opinion = {
+						who = ROOT
+						modifier = opinion_export_good
+					}
+					reverse_add_opinion = {
+						who = ROOT
+						modifier = opinion_export_good
+					}
+				}
+			}
+			596 = {
+				owner = {
+					add_opinion = {
+						who = ROOT
+						modifier = opinion_export_good
+					}
+					reverse_add_opinion = {
+						who = ROOT
+						modifier = opinion_export_good
+					}
+				}
+			}
+			667 = {
+				owner = {
+					add_opinion = {
+						who = ROOT
+						modifier = opinion_export_good
+					}
+					reverse_add_opinion = {
+						who = ROOT
+						modifier = opinion_export_good
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Vijayanagar_Events.12.OPT1
+		trigger = { has_country_flag = fee_random_1 }
+		ai_chance = {
+			factor = 75
+		}
+
+		add_mercantilism = -1
+		custom_tooltip = FEE_VIJ_DISCOVER_SEA_PROVINCES_BAD_TT
+		hidden_effect = {
+			east_indian_ocean_region = { discover_country = ROOT }
+			south_china_sea_area = { discover_country = ROOT }
+			586 = {
+				owner = {
+					add_opinion = {
+						who = ROOT
+						modifier = opinion_export_bad
+					}
+					reverse_add_opinion = {
+						who = ROOT
+						modifier = opinion_export_bad
+					}
+				}
+			}
+			596 = {
+				owner = {
+					add_opinion = {
+						who = ROOT
+						modifier = opinion_export_bad
+					}
+					reverse_add_opinion = {
+						who = ROOT
+						modifier = opinion_export_bad
+					}
+				}
+			}
+			667 = {
+				owner = {
+					add_opinion = {
+						who = ROOT
+						modifier = opinion_export_bad
+					}
+					reverse_add_opinion = {
+						who = ROOT
+						modifier = opinion_export_bad
+					}
+				}
+			}
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			clr_country_flag = fee_random_0
+			clr_country_flag = fee_random_1
+		}
+	}
+}
 
 # 
 # country_event = {

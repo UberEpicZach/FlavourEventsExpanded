@@ -38,6 +38,24 @@
  FEE_Vijayanagar_Events.8.OPT1: "Prosperity's Reservoir"
  FEE_Vijayanagar_Events.8.OPT2: "Fiscal Prudence"
 
+ FEE_Vijayanagar_Events.9.T: "Dandanayaka brothers"
+ FEE_Vijayanagar_Events.9.D: "Lakkanna and his brother Madanna were born to Heggadedeva and Vommayamma. Despite being a Virasaiva, Lakkanna claimed affiliation with Vishnuvardhana-gotra. Among the Virasaiva officers, Lakkanna Dandanayaka stands out prominently. Referred to as Lakkanna Odeya, Lakkanna Nayaka, Lakkanna Dandesa, Lakkanna Dannayaka, and Lakkanamatya, he held distinguished positions as a renowned minister, brilliant general, and a patron of architectural endeavors. Beyond his official roles, he emerged as a fervent supporter of Virasaivism. His brother, Madanna, a versatile advisor, possesses the ability to shape the opinions of kings and queens, making him instrumental in achieving our diplomatic goals."
+ FEE_Vijayanagar_Events.9.OPT1: "Welcome to the court brothers."
+
+ FEE_Vijayanagar_Events.10.T: "Lord of the Southern Ocean"
+ FEE_Vijayanagar_Events.10.D: "Lakkana, fueled by ambition and strategic vision, set forth on a daring expedition to conquer Ilankai, the famed cinnamon island of Sri Lanka. The campaign, marked by meticulous planning and military prowess, unfolded seamlessly, leading to the swift submission of the kings of Ceylon. In recognition of his triumphant leadership, Lakkana was bestowed with the prestigious titles of the Lord of the Southern Ocean and Governor of the provinces of Ilankai. As he assumed his new roles, Lakkana's administrative acumen and governance skills came to the forefront. Under his watchful eye, the provinces thrived, and the lucrative cinnamon trade experienced unprecedented prosperity. Lakkana's dual role as a military commander and statesman proved instrumental in not only securing the conquered territories but also fostering economic growth and stability in the region."
+ FEE_Vijayanagar_Events.10.OPT1: "To glory!"
+
+ FEE_Vijayanagar_Events.11.T: "The voyages of Madanna"
+ FEE_Vijayanagar_Events.11.D: "Madanna, the skilled advisor and diplomat, embarked on an ambitious mission to explore and establish trade routes in the vast expanses of the east. His journey took him to diverse destinations, from Pegu to the distant reaches of Beijing, in an endeavor to forge new economic ties and enrich our kingdom. The potential success of this venture hinges on the support and resources we allocate. \nCommitting additional resources to finance Madanna's expedition would likely enhance its prospects for success. By providing the necessary funding, we can ensure that the journey is well-equipped and facilitated, increasing the likelihood of securing lucrative trade routes and fostering diplomatic relations. \nAlternatively, we may decide to withhold financial support and prioritize pressing matters within our realm. This approach acknowledges that limited resources must be allocated judiciously, and focusing on internal affairs might be the more prudent course of action at this time."
+ FEE_Vijayanagar_Events.11.OPT1: "Finance the Expedition"
+ FEE_Vijayanagar_Events.11.OPT2: "Prioritize Other Matters"
+
+ FEE_Vijayanagar_Events.12.T: "Madanna's return"
+ FEE_Vijayanagar_Events.12.D: "After his long voyages the brave Madanna has return and his reports are clearer than ever."
+ FEE_Vijayanagar_Events.12.OPT1: "New horizon awaits us."
+ FEE_Vijayanagar_Events.12.OPT1: "Our waters are better."
+
  # Modifiers
  fee_vij_kavisarvabhauma: "Kavisarvabhauma"
  desc_fee_vij_kavisarvabhauma: "Emperor Among Poets."
@@ -54,4 +72,11 @@
  fee_vij_daroji_tank_neighbor: "Daroji Tank"
  desc_fee_vij_daroji_tank_neighbor: ""
 
+ fee_vij_lord_southern_ocean: "Lord of the Southern Ocean"
+ desc_fee_vij_lord_southern_ocean: ""
+ fee_vij_improved_cinnamon_trade: "Improved Cinnamon Trade"
+ desc_fee_vij_improved_cinnamon_trade: ""
+
  # Tooltips
+ FEE_VIJ_DISCOVER_SEA_PROVINCES_GOOD_TT: "We have created a new trade route from §YPegu§!, through, §YMalacca§! to §YCanton°! and increase our relations with their owners."
+ FEE_VIJ_DISCOVER_SEA_PROVINCES_BAD_TT: "We have created a new trade route from §YPegu§!, through, §YMalacca§! to §YCanton°! but decreased our relations with their owners."

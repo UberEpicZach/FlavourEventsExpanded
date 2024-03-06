@@ -23,3 +23,13 @@ fee_vij_daroji_tank_neighbor = {
 	local_development_cost = -0.05
 	supply_limit_modifier = 0.10
 }
+
+fee_vij_lord_southern_ocean = {
+	local_unrest = -2
+	local_autonomy = -0.33
+	years_of_nationalism = -3
+}
+fee_vij_improved_cinnamon_trade = {
+	province_trade_power_value = 1
+	trade_value = 1
+}
