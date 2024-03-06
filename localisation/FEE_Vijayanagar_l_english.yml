@@ -29,6 +29,15 @@
  FEE_Vijayanagar_Events.6.OPT1: "Strategic Funding"
  FEE_Vijayanagar_Events.6.OPT2: "Military Budget Trim"
 
+ FEE_Vijayanagar_Events.7.T: "Bahmani's Plunder"
+ FEE_Vijayanagar_Events.7.D: "After our formidable forces ravaged the once-mighty capital of the infamous Bahmanis Sultan, the grandeur of the royal palace now rests securely in our possession. Alongside this conquest, the treasuries of the Sultanate have yielded their long-held riches into the coffers of Vijayanagara, marking a significant turning point in our campaign. The Sultan's capital, once a symbol of unassailable power, now stands humbled in the wake of our triumphant siege."
+ FEE_Vijayanagar_Events.7.OPT1: "Seven Iakh Varaha"
+
+ FEE_Vijayanagar_Events.8.T: "Daroji Tank"
+ FEE_Vijayanagar_Events.8.D: "In the arid expanse of the Tungabhadra Valley, where water is a precious commodity, the rulers of Vijayanagara face a pivotal decision that could redefine the region's fate—whether to channel resources into the creation of the Daroji tank. Confronting the challenges of a rocky terrain, the state contemplates the strategic significance of water control in asserting dominance. This initiative extends beyond mere agricultural needs, encompassing domestic use, urban development, and the grandeur of the Royal Centre. A prime example of this potential transformation is the ambitious Daroji tank project, situated 30 kilometers east of Hospet. In this crossroads of decision-making, the Vijayanagara kings consider the profound impact of creating the Daroji tank. The reservoir promises to be a testament to their mastery of water control, addressing the diverse needs of both urban and agricultural populations. The intricate network of interlinked reservoirs and canals, especially the Daroji tank, could redefine the landscape and usher in an era of prosperity."
+ FEE_Vijayanagar_Events.8.OPT1: "Prosperity's Reservoir"
+ FEE_Vijayanagar_Events.8.OPT2: "Fiscal Prudence"
+
  # Modifiers
  fee_vij_kavisarvabhauma: "Kavisarvabhauma"
  desc_fee_vij_kavisarvabhauma: "Emperor Among Poets."
@@ -39,5 +48,10 @@
  desc_fee_vij_parameshvara_dip_focus: ""
  fee_vij_parameshvara_mil_focus: "Parameshvara's Military Mathematics"
  desc_fee_vij_parameshvara_mil_focus: ""
+
+ fee_vij_daroji_tank: "Daroji Tank"
+ desc_fee_vij_daroji_tank: ""
+ fee_vij_daroji_tank_neighbor: "Daroji Tank"
+ desc_fee_vij_daroji_tank_neighbor: ""
 
  # Tooltips

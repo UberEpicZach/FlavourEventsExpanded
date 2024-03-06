@@ -14,3 +14,12 @@ fee_vij_parameshvara_dip_focus = {
 fee_vij_parameshvara_mil_focus = {
 	military_tactics = 0.15
 }
+
+fee_vij_daroji_tank = {
+	local_development_cost_modifier = -0.05
+	supply_limit_modifier = 0.10
+}
+fee_vij_daroji_tank_neighbor = {
+	local_development_cost = -0.05
+	supply_limit_modifier = 0.10
+}
