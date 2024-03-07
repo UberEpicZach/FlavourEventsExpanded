@@ -634,6 +634,221 @@ country_event = {
 	}
 }
 
+# Vijayanagara Artillery
+country_event = {
+	id = FEE_Vijayanagar_Events.13
+	title = FEE_Vijayanagar_Events.13.T
+	desc = FEE_Vijayanagar_Events.13.D
+	picture = ARTILLERY_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_or_was_tag = { tag = VIJ }
+		mil_tech = 7
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = FEE_Vijayanagar_Events.13.OPT1
+		ai_chance = {
+			factor = 45
+		}
+
+		add_mil_power = -50
+		add_country_modifier = {
+			name = fee_vij_field_artillery
+			duration = 3650
+		}
+	}
+
+	option = {
+		name = FEE_Vijayanagar_Events.13.OPT2
+		ai_chance = {
+			factor = 45
+		}
+
+		add_mil_power = -50
+		add_country_modifier = {
+			name = fee_vij_siege_cannons
+			duration = 3650
+		}
+	}
+
+	option = {
+		name = FEE_Vijayanagar_Events.13.OPT3
+		ai_chance = {
+			factor = 10
+		}
+
+		add_prestige = -15
+	}
+}
+
+# Militari nemakati
+country_event = {
+	id = FEE_Vijayanagar_Events.14
+	title = FEE_Vijayanagar_Events.14.T
+	desc = FEE_Vijayanagar_Events.14.D
+	picture = MILITARY_CAMP_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_or_was_tag = { tag = VIJ }
+	}
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	option = {
+		name = FEE_Vijayanagar_Events.14.OPT1
+		ai_chance = {
+			factor = 33
+		}
+
+		add_army_tradition = -10
+		add_country_modifier = {
+			name = fee_vij_branch_focus
+			duration = -1
+		}
+	}
+
+	option = {
+		name = FEE_Vijayanagar_Events.14.OPT2
+		ai_chance = {
+			factor = 33
+		}
+
+		add_army_tradition = -10
+		add_country_modifier = {
+			name = fee_vij_inclusive_recruitment
+			duration = 3650
+		}
+	}
+
+	option = {
+		name = FEE_Vijayanagar_Events.14.OPT3
+		ai_chance = {
+			factor = 33
+		}
+
+		add_army_tradition = -10
+		add_country_modifier = {
+			name = fee_vij_interfaith_inclusion
+			duration = 3650
+		}
+	}
+}
+
+# Patronage of Wootz Steel
+country_event = {
+	id = FEE_Vijayanagar_Events.15
+	title = FEE_Vijayanagar_Events.15.T
+	desc = FEE_Vijayanagar_Events.15.D
+	picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_or_was_tag = { tag = VIJ }
+		development_in_provinces = {
+			value = 50
+			OR = {
+				trade_goods = iron
+				trade_goods = copper
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = FEE_Vijayanagar_Events.15.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_years_of_income = -1
+		custom_tooltip = FEE_VIJ_FINANCING_WOOTZ_STEEL_TT
+		hidden_effect = {
+			country_event = {
+				id = FEE_Vijayanagar_Events.16
+				days = 1460
+				random = 365
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Vijayanagar_Events.15.OPT2
+		ai_chance = {
+			factor = 25
+		}
+
+		reduce_estate_burghers_loyalty_effect = yes
+	}
+}
+
+# Wootz Steel Investment
+country_event = {
+	id = FEE_Vijayanagar_Events.16
+	title = FEE_Vijayanagar_Events.16.T
+	desc = FEE_Vijayanagar_Events.16.D
+	picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
+
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Vijayanagar_Events.16.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		change_price = {
+			trade_goods = iron
+			key = fee_vij_center_wootz_steel_prodcution
+			value = 0.10
+			duration = -1
+		}
+		change_price = {
+			trade_goods = copper
+			key = fee_vij_center_wootz_steel_prodcution
+			value = 0.10
+			duration = -1
+		}
+		random_owned_province = {
+			limit = {
+				OR = {
+					trade_goods = iron
+					trade_goods = copper
+				}
+			}
+			add_base_tax = 2
+			add_base_production = 3
+			add_base_manpower = 1
+			add_permanent_province_modifier = {
+				name = fee_vij_center_wootz_steel_prodcution
+				duration = -1
+			}
+			add_manufactory = yes
+		}
+	}
+}
+
+# Vitthala temple, expanded in early-mid 16th century
+# Balakrishna Temple, built in 1515 by Krhysna Deva Raya
+# Achyutaraya Temple, built in 1534 Salakaraju Tirumaladeva
+# Lakshmi Narasimha monolit, consacrated in 1528
+
 # 
 # country_event = {
 # 	id = FEE_Vijayanagar_Events.

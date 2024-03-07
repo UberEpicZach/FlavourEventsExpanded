@@ -33,3 +33,28 @@ fee_vij_improved_cinnamon_trade = {
 	province_trade_power_value = 1
 	trade_value = 1
 }
+
+fee_vij_field_artillery = {
+	artillery_cost = -0.10
+	artillery_fire = 0.15
+}
+fee_vij_siege_cannons = {
+	artillery_cost = -0.10
+	artillery_level_modifier = 0.15
+}
+
+fee_vij_branch_focus = {
+	manpower_in_own_culture_provinces = 0.15
+}
+fee_vij_inclusive_recruitment = {
+	manpower_in_accepted_culture_provinces = 0.10
+}
+fee_vij_interfaith_inclusion = {
+	global_manpower_modifier = 0.05
+}
+
+fee_vij_center_wootz_steel_prodcution = {
+	infantry_cost = -0.10
+	trade_goods_size_modifier = 0.50
+	province_trade_power_modifier = 0.50
+}

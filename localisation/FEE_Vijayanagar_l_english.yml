@@ -56,6 +56,27 @@
  FEE_Vijayanagar_Events.12.OPT1: "New horizon awaits us."
  FEE_Vijayanagar_Events.12.OPT1: "Our waters are better."
 
+ FEE_Vijayanagar_Events.13.T: "Vijayanagara phirangi"
+ FEE_Vijayanagar_Events.13.D: "The integration of Turkic engineers and artillery into our military infrastructure is deemed essential for the survival and efficacy of our forces, particularly in the face of potential threats posed by the Sultanates to the North. This strategic move aims to bolster our military capabilities and introduce advanced weaponry and expertise, ensuring a formidable defense against external adversaries."
+ FEE_Vijayanagar_Events.13.OPT1: "Devastate the battlefields."
+ FEE_Vijayanagar_Events.13.OPT2: "Crumble their defense."
+ FEE_Vijayanagar_Events.13.OPT3: "Continue the research..."
+
+ FEE_Vijayanagar_Events.14.T: "Militari nemakati"
+ FEE_Vijayanagar_Events.14.D: "Our esteemed Emperor initiated a widespread recruitment drive, drawing soldiers from diverse backgrounds such as Tulu, Beary, Kabbali, and members of the Morasa State clan. Enthusiastic participation extended to forest tribes, including Chenchu, Koya, and Boya, reflecting a broad representation in the military ranks. The empire's commitment to enhancing training facilities, fostering courage, cultivating martial skills, and building physical strength contributed to the overall preparedness of the recruits. \nAcross the nation, traditional practices like samu garidi (a dance performance featuring knives and fire) and well-equipped training gyms played a crucial role in honing the abilities of the soldiers. Hontakaras, skilled trainers, dedicatedly worked with the fighters to refine their combat skills. Notably, in the spirit of Vijayanagara's inclusivity as a multi-faith nation, Muslims were also welcomed to actively participate in the imperial army. This diverse recruitment strategy aimed to create a unified and formidable military force."
+ FEE_Vijayanagar_Events.14.OPT1: "Recruit mainly from existing branches for unity."
+ FEE_Vijayanagar_Events.14.OPT2: "Expand recruitment to diverse populations."
+ FEE_Vijayanagar_Events.14.OPT3: "Actively recruit soldiers from different faiths, fostering religious inclusivity."
+
+ FEE_Vijayanagar_Events.15.T: "Patronage of Wootz Steel"
+ FEE_Vijayanagar_Events.15.D: "Investing in the production of Ucha Kabbina, the renowned "Superior Steel," could significantly enhance our regional standing. Though its production has been hindered by our swift and chaotic conquests, focusing on revitalizing local foundries will not only bolster our prestige but also reinforce trade, as Ucha Kabbina is highly sought after for its durability and quality. The strategic stimulation of these foundries can position us as a leading supplier of this exceptional metal in the international market."
+ FEE_Vijayanagar_Events.15.OPT1: "Fund the investement"
+ FEE_Vijayanagar_Events.15.OPT2: "Don't waste any money..."
+
+ FEE_Vijayanagar_Events.16.T: "Wootz Steel Investment"
+ FEE_Vijayanagar_Events.16.D: "Thankfully our investment paid off and now our country can display the whole world what the production of Wootz steel should actually be."
+ FEE_Vijayanagar_Events.16.OPT1: "Purely for profit!"
+
  # Modifiers
  fee_vij_kavisarvabhauma: "Kavisarvabhauma"
  desc_fee_vij_kavisarvabhauma: "Emperor Among Poets."
@@ -77,6 +98,23 @@
  fee_vij_improved_cinnamon_trade: "Improved Cinnamon Trade"
  desc_fee_vij_improved_cinnamon_trade: ""
 
+ fee_vij_field_artillery: "Field Artillery"
+ desc_fee_vij_field_artillery: ""
+ fee_vij_siege_cannons: "Siege Cannons"
+ desc_fee_vij_siege_cannons: ""
+
+ fee_vij_branch_focus: "Branch Focus"
+ desc_fee_vij_branch_focus: ""
+ fee_vij_inclusive_recruitment: "Inclusive Recruitment"
+ desc_fee_vij_inclusive_recruitment: ""
+ fee_vij_interfaith_inclusion: "Interfaith Inclusion"
+ desc_fee_vij_interfaith_inclusion: ""
+
+ fee_vij_center_wootz_steel_prodcution: "Center of Wootz Steel Production"
+ desc_fee_vij_center_wootz_steel_prodcution: ""
+
  # Tooltips
  FEE_VIJ_DISCOVER_SEA_PROVINCES_GOOD_TT: "We have created a new trade route from §YPegu§!, through, §YMalacca§! to §YCanton°! and increase our relations with their owners."
  FEE_VIJ_DISCOVER_SEA_PROVINCES_BAD_TT: "We have created a new trade route from §YPegu§!, through, §YMalacca§! to §YCanton°! but decreased our relations with their owners."
+
+ FEE_VIJ_FINANCING_WOOTZ_STEEL_TT: "In a few years we might see the results of this investment..."
