@@ -77,6 +77,21 @@
  FEE_Vijayanagar_Events.16.D: "Thankfully our investment paid off and now our country can display the whole world what the production of Wootz steel should actually be."
  FEE_Vijayanagar_Events.16.OPT1: "Purely for profit!"
 
+ FEE_Vijayanagar_Events.17.T: "The Age of Gunpowder"
+ FEE_Vijayanagar_Events.17.D: "Gunpowder, a revolutionary force in warfare, has infiltrated the battlefield, presenting new possibilities and challenges. From two-handed weapons to mighty cannons capable of breaching stone fortresses, the soldiers of Vijayanagar stand at the threshold of a new era in warfare. The question now arises: should we embrace this technological leap or adhere steadfastly to traditional methods?"
+ FEE_Vijayanagar_Events.17.OPT1: "Forge Ahead into the Future"
+ FEE_Vijayanagar_Events.17.OPT2: "Preserve the Warrior's Way"
+
+ FEE_Vijayanagar_Events.18.T: "Enhancing the Port of Goa"
+ FEE_Vijayanagar_Events.18.D: "Situated within the fertile lands of the Konkan, the port of Goa stands as a vital conduit for regional trade. Notably, it serves as a key hub for the import of horses from Iran and Iraq, crucial for meeting the demand for quality steeds in the southern states. Recognizing the strategic significance of this trade route, a decision must be made to either fortify and improve the port or maintain the status quo."
+ FEE_Vijayanagar_Events.18.OPT1: "Invest in Port Infrastructure"
+ FEE_Vijayanagar_Events.18.OPT2: "Steady Course, Steady Trade"
+
+ FEE_Vijayanagar_Events.19.T: "Arabian Horses Investment"
+ FEE_Vijayanagar_Events.19.D: "In the past years we have tried to secure a better and more stable import of the famous arabian horses through the port of Goa... It is time to gather what we have cultivated."
+ FEE_Vijayanagar_Events.19.OPT1: "We are victorious!"
+ FEE_Vijayanagar_Events.19.OPT2: "Not enough horses my lord."
+
  # Modifiers
  fee_vij_kavisarvabhauma: "Kavisarvabhauma"
  desc_fee_vij_kavisarvabhauma: "Emperor Among Poets."
@@ -113,8 +128,24 @@
  fee_vij_center_wootz_steel_prodcution: "Center of Wootz Steel Production"
  desc_fee_vij_center_wootz_steel_prodcution: ""
 
+ fee_vij_introduction_matchlock: "Introduction of Matchlock"
+ desc_fee_vij_introduction_matchlock: ""
+ fee_vij_traditional_training: "Traditional Training"
+ desc_fee_vij_traditional_training: ""
+
+ fee_vij_improved_goa: "Improved the Port of Goa"
+ desc_fee_vij_improved_goa: ""
+
+ fee_vij_arabian_horses_influx: "Improved Arabian Horse Import"
+ desc_fee_vij_arabian_horses_influx: ""
+ fee_vij_arabian_horses_deflux: "Decreased Arabian Horse Import"
+ desc_fee_vij_arabian_horses_deflux: ""
+
  # Tooltips
  FEE_VIJ_DISCOVER_SEA_PROVINCES_GOOD_TT: "We have created a new trade route from §YPegu§!, through, §YMalacca§! to §YCanton°! and increase our relations with their owners."
  FEE_VIJ_DISCOVER_SEA_PROVINCES_BAD_TT: "We have created a new trade route from §YPegu§!, through, §YMalacca§! to §YCanton°! but decreased our relations with their owners."
 
  FEE_VIJ_FINANCING_WOOTZ_STEEL_TT: "In a few years we might see the results of this investment..."
+
+ FEE_VIJ_IMPROVE_GOA_TT: "Allocate resources to enhance the facilities and infrastructure of the Port of Goa. Alternatively we can try to gather more trade penetration in the §YAden§! or §YHormuz§! trade nodes."
+ FEE_VIJ_NOT_IMPROVE_GOA_TT: "Choose to maintain the current operations at the Port of Goa without significant investment. While it might save resources in the short term, the risk of disruptions and inefficiencies in the import of horses remains."

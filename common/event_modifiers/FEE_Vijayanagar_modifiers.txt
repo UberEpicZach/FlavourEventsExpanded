@@ -58,3 +58,23 @@ fee_vij_center_wootz_steel_prodcution = {
 	trade_goods_size_modifier = 0.50
 	province_trade_power_modifier = 0.50
 }
+
+fee_vij_introduction_matchlock = {
+	fire_damage = 0.10
+}
+fee_vij_traditional_training = {
+	shock_damage = 0.10
+}
+
+fee_vij_improved_goa = {
+	local_development_cost = -0.10
+	local_ship_cost = -0.15
+	ship_recruit_speed = -0.20
+}
+
+fee_vij_arabian_horses_influx = {
+	cavalry_cost = -0.15
+}
+fee_vij_arabian_horses_deflux = {
+	cavalry_cost = 0.15
+}
