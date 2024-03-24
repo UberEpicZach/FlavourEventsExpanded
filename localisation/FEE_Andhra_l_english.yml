@@ -26,6 +26,22 @@
  FEE_Andhra_Events.5.OPT2: "Embrace the Old Roots of Hinduism"
  FEE_Andhra_Events.5.OPT3: "Follow the way of the Buddha"
 
+ FEE_Andhra_Events.6.T: "The Triumph of Golkonda"
+ FEE_Andhra_Events.6.D: "The provinces of Golkonda have fallen into your hands, and with them, the coveted Diamond Monopoly. But the true jewel in your crown now lies within the Golkonda Citadel. Here, amidst the towering ramparts and majestic battlements, stands one of the most magnificent palaces the Deccan has ever beheld. Its opulent halls and resplendent chambers, adorned with the finest gold and diamonds, speak of a grandeur befitting a dynasty reborn. \nBut the splendor of the palace is not the only wonder housed within the citadel's walls. Golkonda's artisans are renowned throughout the subcontinent for their mastery of the loom. With deft hands and keen eyes, they weave fabrics that seem to breathe with life. Animals and figures dance across the silk, their movements so lifelike that they appear to leap from the fabric itself. The patterns, intricate and mesmerizing, transcend mere cloth, becoming works of art in their own right. \nIndeed, the fabrics of Golkonda are not merely sought after; they are revered. Their exquisite beauty captivates all who behold them, earning admiration and envy in equal measure. And now, as Golkonda's rightful ruler, you hold the power to harness the wealth of both diamonds and silk, solidifying your seat of power and ensuring that all who gaze upon your domain do so with awe and reverence."
+ FEE_Andhra_Events.6.OPT1: "Reclaiming the Jewel"
+
+ FEE_Andhra_Events.7.T: "Berar Beckons"
+ FEE_Andhra_Events.7.D: "Andhra, nestled amidst rugged mountains, dense forests, and winding river valleys, boasts a natural landscape that serves as a formidable defense against external threats. Recognizing the strategic importance of our terrain, our king fortified the region's forts and fortified major mountains and hills, drawing inspiration from the grand defensive structures of the Persian lands. Under his rule, these forts became bastions of our cultural pride, their robust design and incorporation of cannons setting a precedent for defensive architecture in India. Moreover, Berari admiration for Persian culture extends beyond defense; they emulated their societal structure and governance, fostering a society that reveres the Indo-Persian language and literature in Urdu."
+ FEE_Andhra_Events.7.OPT1: "Conquering the Verdant North"
+
+ FEE_Andhra_Events.8.T: "The Jewel of Malwa"
+ FEE_Andhra_Events.8.D: "Triumph in Mandu"
+ FEE_Andhra_Events.8.OPT1: "Mandu, the ancient and majestic capital of Malwa, now stands under the banner of the Satavahana dynasty. Renowned for its breathtaking beauty, Mandu boasts sprawling parks, magnificent palaces, ornate pavilions, and monuments that echo the grandeur of both past and present civilizations. This opulent city not only serves as a dazzling spectacle for foreign dignitaries but also stands as a testament to the immense wealth and prosperity of our illustrious state and its people. The architectural marvels of Mandu symbolize the ingenuity and accomplishments of our citizens, reflecting their unparalleled brilliance and creativity. However, the governance of Malwa presents a unique dichotomy. While the northern and central regions are firmly under the control of Rajput clans, the southern territories are administered by the Maratha clans. This division, though posing both challenges and opportunities, serves as a strategic balance of power within the kingdom. Following the system established by the Paramara dynasty, the state is organized into districts, each entrusted to a specific clan. This equitable distribution of authority ensures internal harmony while maximizing the loyalty and efficacy of both Rajput and Maratha clans."
+
+ FEE_Andhra_Events.9.T: "Conquest at the Vijay Stamba"
+ FEE_Andhra_Events.9.D: "The Vijay Stamba, or Victory Tower, stands tall within the formidable walls of the Chittorgarh fort in the state of Rajasthan. Constructed between 1442 and 1449 by King Rana Kumbha, this monumental tower serves as a lasting tribute to his triumphant victory over the armies of Malwa and Gujarat, led by Mahmud Khilji. Rising proudly against the sky, the Vijay Stamba has become an enduring symbol of courage and resilience for the people and rulers of Mewar. \nFor generations, the Victory Tower has stood as a poignant reminder of the unwavering resolve and indomitable spirit of our ancestors. Their courage in the face of adversity and their determination to emerge victorious against overwhelming odds continue to inspire future generations. The towering structure serves as a beacon of hope and strength, urging us to emulate the valor of our forefathers and to honor their sacrifices. With each passing day, the Vijay Stamba stands as a testament to the enduring legacy of triumph and perseverance that defines the spirit of our kingdom."
+ FEE_Andhra_Events.9.OPT1: "Symbol of Triumph"
+
 # Modifiers
  fee_yor_rebuilding_amaravathi: "Rebuilding Amaravathi"
  desc_fee_yor_rebuilding_amaravathi: ""
@@ -35,6 +51,22 @@
  fee_yor_testament_tolerance: "Testament of Tolerance"
  desc_fee_yor_testament_tolerance: ""
 
+ fee_yor_golkonda_leadership: "Golkonda Leadership"
+ desc_fee_yor_golkonda_leadership: ""
+ fee_yor_persianate_society: "Persianate Society"
+ desc_fee_yor_persianate_society: ""
+
+ fee_yor_berari_lands: "Submission of Berari Lands"
+ desc_fee_yor_berari_lands: ""
+ fee_yor_berari_citadels: "Berari Citadels"
+ desc_fee_yor_berari_citadels: ""
+
+ fee_yor_city_mandu: "City of Mandu"
+ desc_fee_yor_city_mandu: ""
+
+ fee_yor_vijay_stambah: "Vijay Stamba"
+ desc_fee_yor_vijay_stambah: ""
+
 # Opinion Modifiers
  fee_yor_aided_reconstruction: "Aided Reconstruction"
  fee_yor_blocked_reconstruction: "Blocked Reconstruction"
@@ -42,3 +74,5 @@
 # Tooltips
  FEE_ANDHRA_HARMONY_AMARAVATHI_TT: "We will ask every §YBuddhist§! country to help restore the glory of Amaravathi!"
  FEE_ANDHRA_SATAVAHANA_DYNASTY_CONQUEST_TT: "We will lay our claim on the ancient holdings of the §YSatavahana§! from south in §YCarnatic§! to the Northern §YOrissa§!"
+ FEE_ANDHRA_SATAVAHANA_CONQUEST_BAHMANIS_TT: "We will continue expading towards the western borders of our Empire."
+ FEE_ANDHRA_SATAVAHANA_CONQUEST_NORTH_TT: "We will continue expading towards the northern borders of our Empire."
