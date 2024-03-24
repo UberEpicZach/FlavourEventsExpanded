@@ -212,12 +212,16 @@ country_event = {
 		}
 
 		add_adm_power = -100
-		if = {
-			limit = { has_heir = yes }
-			kill_heir = { allow_new_heir = no }
+		hidden_effect = {
+			if = {
+				limit = { has_heir = yes }
+				kill_heir = { allow_new_heir = no }
+			}
+			kill_ruler = yes
+			add_stability = 1
 		}
-		define_heir = {
-			dynasty = "Satavahana"
+		define_ruler = {
+			dynasty = "Satavahanas"
 			culture = telegu
 			religion = hinduism
 			male = yes
@@ -229,48 +233,14 @@ country_event = {
 			change_mil = 4
 			max_random_mil = 6
 		}
+		override_country_name = YOR_SAT
 		custom_tooltip = FEE_ANDHRA_SATAVAHANA_DYNASTY_CONQUEST_TT
 		hidden_effect = {
-			andhra_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-				}
-				add_core = ROOT
-			}
-			north_carnatic_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			rayalaseema_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			golconda_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-				}
-				add_core = ROOT
-			}
-			garjat_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			orissa_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
+			andhra_area = { add_core = ROOT }
+			north_carnatic_area = { add_core = ROOT }
+			rayalaseema_area = { add_core = ROOT }
+			golconda_area = { add_core = ROOT }
+			raichur_doab_area = { add_permanent_claim = ROOT }
 		}
 	}
 
@@ -301,7 +271,6 @@ country_event = {
 
 	trigger = {
 		is_or_was_tag = { tag = YOR }
-		dynasty = "Satavahana"
 		543 = {
 			owned_by = ROOT
 			has_province_modifier = fee_yor_testament_tolerance
@@ -359,7 +328,6 @@ country_event = {
 
 	trigger = {
 		is_or_was_tag = { tag = YOR }
-		dynasty = "Satavahana"
 		golconda_area = {
 			type = all
 			owned_by = ROOT
@@ -393,6 +361,7 @@ country_event = {
 			desh_area = { add_permanent_claim = ROOT }
 			maidan_area = { add_permanent_claim = ROOT }
 			telingana_area = { add_permanent_claim = ROOT }
+			konkan_area = { add_permanent_claim = ROOT }
 		}
 	}
 }
@@ -408,7 +377,6 @@ country_event = {
 
 	trigger = {
 		is_or_was_tag = { tag = YOR }
-		dynasty = "Satavahana"
 		berar_area = {
 			type = all
 			owned_by = ROOT
@@ -437,11 +405,15 @@ country_event = {
 		}
 		custom_tooltip = FEE_ANDHRA_SATAVAHANA_CONQUEST_NORTH_TT
 		hidden_effect = {
-			gondwana_area = { add_permanent_claim = ROOT }
 			khandesh_area = { add_permanent_claim = ROOT }
 			malwa_area = { add_permanent_claim = ROOT }
 			mewar_area = { add_permanent_claim = ROOT }
-			gird_area = { add_permanent_claim = ROOT }
+			4464 = { add_permanent_claim = ROOT }
+			528 = { add_permanent_claim = ROOT }
+			740 = { add_permanent_claim = ROOT }
+			4460 = { add_permanent_claim = ROOT }
+			2092 = { add_permanent_claim = ROOT }
+			4458 = { add_permanent_claim = ROOT }
 		}
 	}
 }
@@ -457,7 +429,6 @@ country_event = {
 
 	trigger = {
 		is_or_was_tag = { tag = YOR }
-		dynasty = "Satavahana"
 		malwa_area = {
 			type = all
 			owned_by = ROOT
@@ -486,7 +457,7 @@ country_event = {
 	}
 }
 
-# The Jewel of Malwa
+# Conquest at the Vijay Stamba
 country_event = {
 	id = FEE_Andhra_Events.9
 	title = FEE_Andhra_Events.9.T
@@ -497,7 +468,6 @@ country_event = {
 
 	trigger = {
 		is_or_was_tag = { tag = YOR }
-		dynasty = "Satavahana"
 		mewar_area = {
 			type = all
 			owned_by = ROOT
@@ -519,6 +489,131 @@ country_event = {
 				name = fee_yor_vijay_stambah
 				duration = 3650
 			}
+		}
+	}
+}
+
+# Conquest of the Koli Dominion
+country_event = {
+	id = FEE_Andhra_Events.10
+	title = FEE_Andhra_Events.10.T
+	desc = FEE_Andhra_Events.10.D
+	picture = CONQUEST_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_or_was_tag = { tag = YOR }
+		ahmednagar_area = {
+			type = all
+			owned_by = ROOT
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Andhra_Events.10.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_country_modifier = {
+			name = fee_yor_koli_military
+			duration = 3650
+		}
+		custom_tooltip = FEE_ANDHRA_SATAVAHANA_CONQUEST_WEST_TT
+		hidden_effect = {
+			tapti_area = { add_permanent_claim = ROOT }
+			ahmedabad_area = { add_permanent_claim = ROOT }
+			saurashtra_area = { add_permanent_claim = ROOT }
+			4480 = { add_permanent_claim = ROOT }
+			2053 = { add_permanent_claim = ROOT }
+			4456 = { add_permanent_claim = ROOT }
+		}
+	}
+}
+
+# Conquest of the Gulf and Coast of Gujarat
+country_event = {
+	id = FEE_Andhra_Events.11
+	title = FEE_Andhra_Events.11.T
+	desc = FEE_Andhra_Events.11.D
+	picture = CONQUEST_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_or_was_tag = { tag = YOR }
+		ahmedabad_area = {
+			type = all
+			OR = {
+				NOT = { has_port = yes }
+				owned_by = ROOT
+			}
+		}
+		saurashtra_area = {
+			type = all
+			OR = {
+				NOT = { has_port = yes }
+				owned_by = ROOT
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Andhra_Events.11.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_mercantilism_or_monarch_power = { amount = 5 }
+		add_country_modifier = {
+			name = fee_yor_vanya_merchants
+			duration = 3650
+		}
+		4457 = {
+			create_or_add_center_of_trade_level_fee = { level = 3 }
+		}
+	}
+}
+
+# Fall of Hampi
+country_event = {
+	id = FEE_Andhra_Events.12
+	title = FEE_Andhra_Events.12.T
+	desc = FEE_Andhra_Events.12.D
+	picture = CONQUEST_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_or_was_tag = { tag = YOR }
+		rayalaseema_area = {
+			type = all
+			owned_by = ROOT
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Andhra_Events.12.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_country_modifier = {
+			name = fee_yor_vijayanagar
+			duration = 18250
 		}
 	}
 }
