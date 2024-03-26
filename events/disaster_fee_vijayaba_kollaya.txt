@@ -1,0 +1,526 @@
+namespace = disaster_fee_vijayaba_kollaya
+
+country_event = {
+	id = disaster_fee_vijayaba_kollaya.1
+	title = disaster_fee_vijayaba_kollaya.1.T
+	desc = disaster_fee_vijayaba_kollaya.1.D
+	picture = CIVIL_WAR_eventPicture
+
+	major = yes
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					has_heir = no
+				}
+				define_heir = {
+					dynasty = ROOT
+				}
+			}
+			random_owned_province = {
+				save_event_target_as = rebel_province_1
+			}
+			random_owned_province = {
+				limit = {
+					is_capital = no
+				}
+				save_event_target_as = rebel_province_1
+			}
+			random_owned_province = {
+				limit = {
+					is_capital = no
+					is_island = no
+				}
+				save_event_target_as = rebel_province_1
+			}
+			random_owned_province = {
+				limit = {
+					is_capital = no
+					NOT = { province_id = event_target:rebel_province_1 }
+				}
+				save_event_target_as = rebel_province_2
+			}
+			random_owned_province = {
+				limit = {
+					is_capital = no
+					is_island = no
+					NOT = { province_id = event_target:rebel_province_1 }
+				}
+				save_event_target_as = rebel_province_2
+			}
+		}
+	}
+
+	option = {
+		name = disaster_fee_vijayaba_kollaya.1.OPT1
+
+		kill_ruler = yes
+		add_stability = -2
+		add_legitimacy = -50
+		event_target:rebel_province_1 = {
+			pretender_rebels = 3
+		}
+		if = {
+			limit = {
+				has_saved_event_target = rebel_province_2
+			}
+			event_target:rebel_province_2 = {
+				pretender_rebels = 3
+			}
+		}
+		custom_tooltip = disaster_fee_vijayaba_kollaya.1.tt
+		set_country_flag = had_fee_vijayaba_kollaya
+	}
+}
+
+country_event = {
+	id = disaster_fee_vijayaba_kollaya.2
+	title = disaster_fee_vijayaba_kollaya.2.T
+	desc = disaster_fee_vijayaba_kollaya.2.D
+	picture = DIPLOMACY_eventPicture
+
+	hidden = yes
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = disaster_fee_vijayaba_kollaya_5_happened
+			clr_country_flag = disaster_fee_vijayaba_kollaya_6_happened
+			clr_country_flag = disaster_fee_vijayaba_kollaya_7_happened
+			clr_country_flag = disaster_fee_vijayaba_kollaya_8_happened
+			if = {
+				limit = {
+					has_country_flag = fee_vijayaba_kollaya_ended_by_pretenders
+				}
+				clr_country_flag = fee_vijayaba_kollaya_ended_by_pretenders
+				country_event = { id = disaster_fee_vijayaba_kollaya.3 }
+			}
+			else = {
+				country_event = { id = disaster_fee_vijayaba_kollaya.4 }
+			}
+		}
+	}
+
+	option = {
+		name = disaster_fee_vijayaba_kollaya.2.OPT1
+
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = disaster_fee_vijayaba_kollaya.3
+	title = disaster_fee_vijayaba_kollaya.3.T
+	desc = disaster_fee_vijayaba_kollaya.3.D
+	picture = BAD_WITH_MONARCH_eventPicture
+
+	major = yes
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					is_capital = no
+					OR = {
+						area = lanka_area
+						area = south_lanka_area
+					}
+					any_core_country = {
+						exists = no
+					}
+				}
+				set_province_flag = disaster_fee_vijayaba_kollaya_provinces_to_be_released
+				random_core_country = {
+					limit = {
+						exists = no
+					}
+					PREV = { set_province_flag = disaster_fee_vijayaba_kollaya_provinces_to_be_ceded_to_@PREV }
+				}
+			}
+		}
+	}
+
+	option = {
+		name = disaster_fee_vijayaba_kollaya.3.OPT1
+
+		define_ruler = {
+			dynasty = "Siri Sanga Bo"
+			culture = sinhala
+			religion = buddhism
+		}
+		if = {
+			limit = {
+				any_owned_province = {
+					has_province_flag = disaster_fee_vijayaba_kollaya_provinces_to_be_released
+				}
+			}
+			every_owned_province = {
+				limit = {
+					has_province_flag = disaster_fee_vijayaba_kollaya_provinces_to_be_released
+				}
+				custom_tooltip = disaster_fee_vijayaba_kollaya.3.tt.1
+				hidden_effect = {
+					clr_province_flag = disaster_fee_vijayaba_kollaya_provinces_to_be_released
+					random_core_country = {
+						limit = {
+							PREV = { has_province_flag = disaster_fee_vijayaba_kollaya_provinces_to_be_ceded_to_@PREV }
+						}
+						set_country_flag = disaster_fee_vijayaba_kollaya_released_country
+						PREV = {
+							cede_province = PREV
+							clr_province_flag = disaster_fee_vijayaba_kollaya_provinces_to_be_ceded_to_@PREV
+						}
+					}
+				}
+			}
+			custom_tooltip = disaster_fee_vijayaba_kollaya.3.tt.2
+			hidden_effect = {
+				every_country = {
+					limit = {
+						has_country_flag = disaster_fee_vijayaba_kollaya_released_country
+					}
+					clr_country_flag = disaster_fee_vijayaba_kollaya_released_country
+					change_government = monarchy
+					adopt_reform_progress = ROOT
+					capital_scope = {
+						PREV = {
+							change_primary_culture = PREV
+							change_religion = PREV
+						}
+					}
+					define_ruler = {
+						dynasty = "Siri Sanga Bo"
+						culture = sinhala
+						religion = buddhism
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = disaster_fee_vijayaba_kollaya.4
+	title = disaster_fee_vijayaba_kollaya.4.T
+	desc = disaster_fee_vijayaba_kollaya.4.D
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = disaster_fee_vijayaba_kollaya.4.OPT1
+
+		add_stability = 3
+		add_prestige = 20
+		if = {
+			limit = {
+				has_estate = estate_nobles
+			}
+			change_estate_land_share = { estate = estate_nobles share = -10 }
+			add_country_modifier = {
+				name = fee_vijayaba_kollaya_punished_nobles
+				duration = 7300
+			}
+		}
+		add_country_modifier = {
+			name = fee_vijayaba_kollaya_stabilized_realm
+			duration = -1
+		}
+	}
+}
+
+country_event = {
+	id = disaster_fee_vijayaba_kollaya.5
+	title = disaster_fee_vijayaba_kollaya.5.T
+	desc = disaster_fee_vijayaba_kollaya.5.D
+	picture = CIVIL_WAR_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_country_flag = disaster_fee_vijayaba_kollaya_5_happened }
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = disaster_fee_vijayaba_kollaya_5_happened
+		}
+	}
+
+	option = {
+		name = disaster_fee_vijayaba_kollaya.5.OPT1
+
+		add_yearly_manpower = -1
+		add_disaster_modifier = {
+			name = fee_vijayaba_kollaya_army_disloyalty
+			duration = -1
+			disaster = fee_vijayaba_kollaya
+		}
+	}
+}
+
+country_event = {
+	id = disaster_fee_vijayaba_kollaya.6
+	title = disaster_fee_vijayaba_kollaya.6.T
+	desc = {
+		trigger = {
+			has_country_flag = disaster_fee_vijayaba_kollaya_adm_advisor
+		}
+		desc = disaster_fee_vijayaba_kollaya.6.D.1
+	}
+	desc = {
+		trigger = {
+			has_country_flag = disaster_fee_vijayaba_kollaya_dip_advisor
+		}
+		desc = disaster_fee_vijayaba_kollaya.6.D.2
+	}
+	picture = ADVISOR_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		OR = {
+			has_adm_advisor = yes
+			has_dip_advisor = yes
+		}
+		NOT = { has_country_flag = disaster_fee_vijayaba_kollaya_6_happened }
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = disaster_fee_vijayaba_kollaya_6_happened
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			random_list = {
+				50 = {
+					trigger = {
+						has_adm_advisor = yes
+					}
+					set_country_flag = disaster_fee_vijayaba_kollaya_adm_advisor
+				}
+				50 = {
+					trigger = {
+						has_dip_advisor = yes
+					}
+					set_country_flag = disaster_fee_vijayaba_kollaya_dip_advisor
+				}
+			}
+		}
+	}
+
+	option = {
+		name = disaster_fee_vijayaba_kollaya.6.OPT1
+
+		if = {
+			limit = {
+				has_country_flag = disaster_fee_vijayaba_kollaya_adm_advisor
+			}
+			custom_tooltip = disaster_fee_vijayaba_kollaya.6.tt.1
+			hidden_effect = {
+				remove_advisor_by_category = ADM
+			}
+		}
+		else = {
+			custom_tooltip = disaster_fee_vijayaba_kollaya.6.tt.2
+			hidden_effect = {
+				remove_advisor_by_category = DIP
+			}
+		}
+		add_stability = -1
+		add_prestige = -20
+		add_mil_power = -5
+		add_karma = -10
+	}
+
+	option = {
+		name = disaster_fee_vijayaba_kollaya.6.OPT2
+
+		if = {
+			limit = {
+				has_country_flag = disaster_fee_vijayaba_kollaya_adm_advisor
+			}
+			remove_advisor_by_category = ADM
+		}
+		else = {
+			remove_advisor_by_category = DIP
+		}
+		add_stability = -1
+		add_legitimacy = -20
+		add_adm_power = -5
+		add_karma = 10
+	}
+
+	after = {
+		clr_country_flag = disaster_fee_vijayaba_kollaya_adm_advisor
+		clr_country_flag = disaster_fee_vijayaba_kollaya_dip_advisor
+	}
+}
+
+country_event = {
+	id = disaster_fee_vijayaba_kollaya.7
+	title = disaster_fee_vijayaba_kollaya.7.T
+	desc = disaster_fee_vijayaba_kollaya.7.D
+	picture = BATTLE_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		any_owned_province = {
+			controlled_by = ROOT
+			has_siege = no
+		}
+		NOT = { has_country_flag = disaster_fee_vijayaba_kollaya_7_happened }
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = disaster_fee_vijayaba_kollaya_7_happened
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					controlled_by = ROOT
+					has_siege = no
+				}
+				save_event_target_as = rebel_province
+			}
+			random_owned_province = {
+				limit = {
+					controlled_by = ROOT
+					has_siege = no
+					is_island = no
+				}
+				save_event_target_as = rebel_province
+			}
+		}
+	}
+
+	option = {
+		name = disaster_fee_vijayaba_kollaya.7.OPT1
+
+		event_target:rebel_province = {
+			pretender_rebels = 2
+		}
+		add_disaster_modifier = {
+			name = fee_vijayaba_kollaya_master_of_the_horse_defects
+			duration = -1
+			disaster = fee_vijayaba_kollaya
+		}
+	}
+}
+
+country_event = {
+	id = disaster_fee_vijayaba_kollaya.8
+	title = disaster_fee_vijayaba_kollaya.8.T
+	desc = disaster_fee_vijayaba_kollaya.8.D
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_country_flag = disaster_fee_vijayaba_kollaya_8_happened }
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = disaster_fee_vijayaba_kollaya_8_happened
+		}
+	}
+
+	option = {
+		name = disaster_fee_vijayaba_kollaya.8.OPT1
+
+		random_list = {
+			50 = {
+				country_event = { id = disaster_fee_vijayaba_kollaya.9 days = 1 }
+			}
+			50 = {
+				country_event = { id = disaster_fee_vijayaba_kollaya.10 days = 1 }
+			}
+		}
+		custom_tooltip = disaster_fee_vijayaba_kollaya.8.tt
+	}
+
+	option = {
+		name = disaster_fee_vijayaba_kollaya.8.OPT2
+
+		add_prestige = -25
+	}
+}
+
+country_event = {
+	id = disaster_fee_vijayaba_kollaya.9
+	title = disaster_fee_vijayaba_kollaya.9.T
+	desc = disaster_fee_vijayaba_kollaya.9.D
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = disaster_fee_vijayaba_kollaya.9.OPT1
+
+		add_stability = 1
+		disband_rebels = pretender_rebels
+	}
+}
+
+country_event = {
+	id = disaster_fee_vijayaba_kollaya.10
+	title = disaster_fee_vijayaba_kollaya.10.T
+	desc = disaster_fee_vijayaba_kollaya.10.D
+	picture = BAD_WITH_MONARCH_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = disaster_fee_vijayaba_kollaya.10.OPT1
+
+		add_stability = -1
+		add_legitimacy = -25
+		set_country_flag = disaster_fee_vijayaba_kollaya_11_will_happen
+		capital_scope = {
+			spawn_rebels = {
+				type = pretender_rebels
+				size = 3
+				win = yes
+			}
+		}
+		clr_country_flag = disaster_fee_vijayaba_kollaya_11_will_happen
+		country_event = { id = disaster_fee_vijayaba_kollaya.11 days = 1 }
+	}
+}
+
+country_event = {
+	id = disaster_fee_vijayaba_kollaya.11
+	title = disaster_fee_vijayaba_kollaya.11.T
+	desc = disaster_fee_vijayaba_kollaya.11.D
+	picture = BAD_WITH_MONARCH_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = disaster_fee_vijayaba_kollaya.11.OPT1
+
+		tooltip = { kill_ruler = yes }
+		define_ruler = {
+			regency = yes
+			adm = 2
+			dip = 2
+			mil = 2
+		}
+		capital_scope = {
+			add_base_production = -2
+			add_devastation = 100
+		}
+	}
+}

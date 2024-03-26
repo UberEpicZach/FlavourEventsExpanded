@@ -1,0 +1,96 @@
+fee_vijayaba_kollaya = {
+	ended_by_country_breaking_to_rebels = no
+	potential = {
+		NOT = { has_country_flag = had_fee_vijayaba_kollaya }
+		primary_culture = sinhala
+		current_age = age_of_reformation
+		num_of_cities = 3
+		government = monarchy
+		is_free_or_tributary_trigger = yes
+	}
+	can_start = {
+		has_any_disaster = no
+		OR = {
+			NOT = { legitimacy = 85 }
+			NOT = { stability = 0 }
+			is_bankrupt = yes
+		}
+	}
+	can_stop = {
+		OR = {
+			has_any_disaster = yes
+			NOT = { government = monarchy }
+			is_subject_other_than_tributary_trigger = yes
+		}
+	}
+	progress = {
+		modifier = {
+			factor = 3
+			NOT = { stability = 0 }
+		}
+		modifier = {
+			factor = 2
+			NOT = { legitimacy = 80 }
+		}
+		modifier = {
+			factor = 3
+			NOT = { legitimacy = 50 }
+		}
+		modifier = {
+			factor = 3
+			NOT = { ADM = 3 }
+		}
+		modifier = {
+			factor = 3
+			NOT = { DIP = 3 }
+		}
+		modifier = {
+			factor = 3
+			NOT = { MIL = 2 }
+		}
+		modifier = {
+			factor = 1
+			num_of_royal_marriages = 2
+		}
+		modifier = {
+			factor = 5
+			is_bankrupt = yes
+		}
+	}
+	can_end = {
+		hidden_trigger = {
+			has_country_flag = had_fee_vijayaba_kollaya
+		}
+		OR = {
+			custom_trigger_tooltip = {
+				tooltip = FEE_VIJAYABA_KOLLAYA_ENDED_BY_PRETENDER_REBELS_TT
+				has_country_flag = fee_vijayaba_kollaya_ended_by_pretenders
+			}
+			AND = {
+				legitimacy = 90
+				NOT = { num_of_rebel_armies = 1 }
+				NOT = { num_of_rebel_controlled_provinces = 1 }
+			}
+		}
+	}
+	modifier = {
+		administrative_efficiency = -0.1
+		global_manpower_modifier = -0.15
+		advisor_cost = 0.25
+	}
+
+	on_start = disaster_fee_vijayaba_kollaya.1
+	on_end = disaster_fee_vijayaba_kollaya.2
+
+	on_monthly = {
+		events = {
+		}
+		random_events = {
+			1000 = 0
+			100 = disaster_fee_vijayaba_kollaya.5
+			100 = disaster_fee_vijayaba_kollaya.6
+			100 = disaster_fee_vijayaba_kollaya.7
+			100 = disaster_fee_vijayaba_kollaya.8
+		}
+	}
+}
