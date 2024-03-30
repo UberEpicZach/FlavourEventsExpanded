@@ -1,5 +1,6 @@
 fee_jfn_kalinga_freedom = {
 	liberty_desire = 25
+	land_morale = 0.05
 }
 
 fee_jfn_reconciliation = {
@@ -36,4 +37,9 @@ fee_jfn_strong_muslim_community = {
 	local_production_efficiency = 0.25
 	trade_goods_size_modifier = 0.25
 	local_missionary_strength = -1.00
+}
+
+fee_jfn_fighting_aliens = {
+	morale_damage = 0.10
+	morale_damage_received = -0.10
 }

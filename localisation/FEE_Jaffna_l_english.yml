@@ -37,6 +37,11 @@
  FEE_Jaffna_Events.8.D: "The consequences of our unbridled pursuit of commerce have revealed themselves in unexpected ways, my lord. The once-thriving Muslim community, nurtured for the sake of trade, has now burgeoned to a point where they wield influence over laws and religion in our cherished Jaffna. The insatiable appetite for wealth and commerce has unwittingly led to a shift in the power dynamics, and we find ourselves questioning why we did not exercise restraint sooner. \nIn our fervour for prosperity, we may have overlooked the potential ramifications on the social and political fabric of Jaffna. Now, we face the challenging task of recalibrating the balance, and restoring a sense of order that aligns with our original intentions for the region. This serves as a stark reminder of the importance of temperance and foresight in matters of expansion and influence."
  FEE_Jaffna_Events.8.OPT1: "Muslim Dominion"
 
+ FEE_Jaffna_Events.9.T: "The Arrival of the Aliens"
+ FEE_Jaffna_Events.9.D: "The arrival of foreign ships bearing unfamiliar wood and tales of distant lands ignited a flurry of excitement and apprehension within the royal court of Ceylon. [Root.Monarch.GetTitle] [Root.Monarch.GetName], renowned for his wisdom and diplomacy, faced a critical decision: how to approach these enigmatic strangers from across the vast expanse of the world. \nThe decision was a challenging one. On the one hand, meeting these foreign visitors could open up new avenues for trade, cultural exchange, and knowledge acquisition. The arrival of these ships could signal the beginning of a prosperous era for Ceylon, expanding its horizons and connecting it to the wider world. \nHowever, there were also risks involved. The intentions of these strangers remained unknown, and their presence could pose a potential threat to Ceylon's security and stability. The introduction of new customs and beliefs could disrupt the harmonious balance of Ceylon's society, and the influx of foreign goods could undermine the island's self-sufficiency."
+ FEE_Jaffna_Events.9.OPT1: "Try To appease the Aliens."
+ FEE_Jaffna_Events.9.OPT2: "Repel the invasors!"
+
 # Modifiers
  fee_jfn_kalinga_freedom: "Kalinga’s Freedom"
  desc_fee_jfn_kalinga_freedom: ""
@@ -58,4 +63,11 @@
  fee_jfn_strong_muslim_community: "Strong Muslim Community"
  desc_fee_jfn_strong_muslim_community: ""
 
+ fee_jfn_fighting_aliens: "Fighting the Aliens"
+ desc_fee_jfn_fighting_aliens: ""
+
+# Opinion Modifiers
+ fee_jfn_diplomatic_meddling: "Diplomatic Meddling"
+
 # Tooltip
+ FEE_JFN_ALIENS_TT: "The Aliens will still try to increase its reach in our precious trade. We need to resist for the next years."

@@ -35,9 +35,7 @@ country_event = {
 			factor = 50
 		}
 
-		add_mercantilism = 5
-		change_dip = 1
-		change_mil = -1
+		add_mercantilism_or_monarch_power = { amount = 3 }
 		lanka_area = {
 			remove_core = ROOT
 			remove_claim = ROOT
@@ -54,7 +52,6 @@ country_event = {
 			factor = 50
 		}
 
-		change_dip = -1
 		add_ruler_modifier = {
 			name = fee_jfn_kalinga_freedom
 			duration = -1
@@ -515,5 +512,74 @@ province_event = {
 		}
 
 		change_religion = ibadi
+	}
+}
+
+#The Arrival of the Aliens
+country_event = {
+	id = FEE_Jaffna_Events.9
+	title = FEE_Jaffna_Events.9.T
+	desc = FEE_Jaffna_Events.9.D
+	picture = EXPLORERS_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Jaffna_Events.9.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		change_dip = 1
+		add_treasury = -25
+		event_target:fee_jfn_discovered_ceylon = {
+			add_opinion = {
+				who = ROOT
+				modifier = fee_jfn_diplomatic_meddling
+			}
+			reverse_add_opinion = {
+				who = ROOT
+				modifier = fee_jfn_diplomatic_meddling
+			}
+			random_province = {
+				limit = {
+					owned_by = ROOT
+					OR = {
+						area = lanka_area
+						area = south_lanka_area
+					}
+				}
+				add_trade_modifier = {
+					who = THIS
+					duration = 18250
+					power = 10
+					key = fee_jfn_diplomatic_meddling
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Jaffna_Events.9.OPT2
+		ai_chance = {
+			factor = 25
+		}
+
+		change_mil = 1
+		add_country_modifier = {
+			name = fee_jfn_fighting_aliens
+			duration = 7300
+		}
+		custom_tooltip = FEE_JFN_ALIENS_TT
+	}
+
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = FEE_Jaffna_Events.10
+				days = 90
+			}
+		}
 	}
 }

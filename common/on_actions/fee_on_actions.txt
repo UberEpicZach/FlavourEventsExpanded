@@ -8,6 +8,36 @@ on_colony_finished = {
 	}
 }
 
+on_explore_coast = {
+	if = {
+		limit = {
+			OR = {
+				area = lanka_area
+				area = south_lanka_area
+			}
+			any_country = {
+				is_or_was_tag = { tag = JFN }
+				any_owned_province = {
+					OR = {
+						area = lanka_area
+						area = south_lanka_area
+					}
+				}
+			}
+		}
+		save_event_target_as = fee_jfn_discovered_ceylon
+		random_country = {
+			limit = {
+				is_or_was_tag = { tag = JFN }
+			}
+			country_event = {
+				id = FEE_Jaffna_Events.9
+				days = 30
+			}
+		}
+	}
+}
+
 on_institution_embracement = {
 	if = {
 		limit = {
