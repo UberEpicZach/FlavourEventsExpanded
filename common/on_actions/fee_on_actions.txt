@@ -55,6 +55,18 @@ on_siege_lost_country = {
 		}
 		set_global_flag = fee_surrender_main
 	}
+	if = {
+		limit = {
+			has_disaster = fee_vijayaba_kollaya
+			NOT = { has_country_flag = disaster_fee_vijayaba_kollaya_11_will_happen }
+			FROM = {
+				is_capital = yes
+				controlled_by = REB
+				has_rebel_faction = pretender_rebels
+			}
+		}
+		country_event = { id = disaster_fee_vijayaba_kollaya.11 }
+	}
 }
 
 on_siege_won_country = {
@@ -149,6 +161,15 @@ on_new_heir = {
 on_new_monarch = {
 	events = {
 		FEE_Charles_V_Events.2
+	}
+
+	if = {
+		limit = {
+			has_disaster = fee_vijayaba_kollaya
+			has_country_flag = no_new_succession_crisis_if_pretender_rebels
+			NOT = { has_country_flag = fee_vijayaba_kollaya_ended_by_pretenders }
+		}
+		set_country_flag = fee_vijayaba_kollaya_ended_by_pretenders
 	}
 }
 
