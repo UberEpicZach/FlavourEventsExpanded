@@ -823,18 +823,8 @@ country_event = {
 			name = "centralization_modifier"
 			duration = 3650
 		}
-		east_prussia_area = {
-			limit = {
-				NOT = { owned_by = ROOT }
-			}
-			add_permanent_claim = PRU
-		}
-		west_prussia_area = {
-			limit = {
-				NOT = { owned_by = ROOT }
-			}
-			add_permanent_claim = PRU
-		}
+		east_prussia_area = { add_permanent_claim = PRU }
+		west_prussia_area = { add_permanent_claim = PRU }
 		set_country_flag = formed_prussia_flag
 	}
 }

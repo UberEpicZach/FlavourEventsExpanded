@@ -502,20 +502,8 @@ country_event = {
 			}
 			change_tag = FKN
 			restore_country_name_effect = yes
-			franconia_area = {
-				limit = {
-					NOT = { owned_by = root }
-					NOT = { is_permanent_claim = root }
-				}
-				add_permanent_claim = root
-			}
-			upper_franconia_area = {
-				limit = {
-					NOT = { owned_by = root }
-					NOT = { is_permanent_claim = root }
-				}
-				add_permanent_claim = root
-			}
+			franconia_area = { add_permanent_claim = ROOT }
+			upper_franconia_area = { add_permanent_claim = ROOT }
 			add_country_modifier = {
 				name = "centralization_modifier"
 				duration = 7300

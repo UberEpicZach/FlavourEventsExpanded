@@ -446,33 +446,9 @@ country_event = {
 		create_explorer = {
 			tradition = 60
 		}
-		1196 = {
-			if = {
-				limit = {
-					NOT = { owned_by = ROOT }
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-		1201 = {
-			if = {
-				limit = {
-					NOT = { owned_by = ROOT }
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-		1186 = {
-			if = {
-				limit = {
-					NOT = { owned_by = ROOT }
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
+		1196 = { add_permanent_claim = ROOT }
+		1201 = { add_permanent_claim = ROOT }
+		1186 = { add_permanent_claim = ROOT }
 		if = {
 			limit = {
 				capital_scope = {
@@ -540,33 +516,9 @@ country_event = {
 			}
 		}
 
-		1196 = {
-			if = {
-				limit = {
-					NOT = { owned_by = ROOT }
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-		1201 = {
-			if = {
-				limit = {
-					NOT = { owned_by = ROOT }
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-		1186 = {
-			if = {
-				limit = {
-					NOT = { owned_by = ROOT }
-					NOT = { is_core = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
+		1196 = { add_permanent_claim = ROOT }
+		1201 = { add_permanent_claim = ROOT }
+		1186 = { add_permanent_claim = ROOT }
 		if = {
 			limit = {
 				capital_scope = {

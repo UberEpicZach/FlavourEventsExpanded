@@ -466,24 +466,8 @@ country_event = {
 	option = {
 		name = FEE_Bohemia_Events.8.OPT1
 
-		transylvania_area = {
-			limit = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
-				NOT = { is_empty = yes }
-				NOT = { is_wasteland = yes }
-			}
-			add_permanent_claim = ROOT
-		}
-		southern_transylvania_area = {
-			limit = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
-				NOT = { is_empty = yes }
-				NOT = { is_wasteland = yes }
-			}
-			add_permanent_claim = ROOT
-		}
+		transylvania_area = { add_permanent_claim = ROOT }
+		southern_transylvania_area = { add_permanent_claim = ROOT }
 	}
 }
 
