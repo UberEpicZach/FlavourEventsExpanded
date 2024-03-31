@@ -42,6 +42,22 @@
  FEE_Jaffna_Events.9.OPT1: "Try To appease the Aliens."
  FEE_Jaffna_Events.9.OPT2: "Repel the invasors!"
 
+ FEE_Jaffna_Events.10.T: "European Trade Request"
+ FEE_Jaffna_Events.10.D: "As the wealthy monarch of a European kingdom, faced with the allure of the spice-laden shores of Ceylon, I find myself at a strategic crossroads. The conventional approach might involve direct conquest, securing the land and its riches under our dominion. However, a more nuanced path presents itself: to deftly navigate the intricacies of the various states on the island. \nBy skillfully meddling in the affairs of these states, we could exploit existing rivalries, form alliances, and potentially establish ourselves as a diplomatic force rather than a conquering power. This approach, while requiring finesse and political acumen, may yield long-term benefits, allowing us to harness the wealth of Ceylon without the immediate costs and challenges of outright conquest. The delicate dance of diplomacy could prove just as effective as the might of our armies in securing the riches we seek."
+ FEE_Jaffna_Events.10.OPT1: "The Spice trade is ours!"
+ FEE_Jaffna_Events.10.OPT2: "Scheme with their enemies"
+
+ FEE_Jaffna_Events.11.T: "Euro-Ceylon ruling"
+ FEE_Jaffna_Events.11.D: "In our pursuit to meddle in the affairs of Ceylon, we now set our sights on diplomatic endeavours. Let us strive to sway one of the states in our favour through astute negotiations and alliances. By fostering a diplomatic allegiance, we aim to secure a foothold in the riches of Ceylon without the upheaval of outright conquest. May our diplomatic overtures pave the way for a strategic alliance that serves our kingdom's interests in these distant and spice-laden lands."
+ FEE_Jaffna_Events.11.OPT1: "Unite the Island"
+ FEE_Jaffna_Events.11.OPT2: "Request European help"
+
+ FEE_Jaffna_Events.12.T: "Ceylon Supremacy"
+ FEE_Jaffna_Events.12.D_GOOD: "The Ceylonese people celebrated their victory over foreign invaders who had tried to conquer their land for decades. They fought bravely and wisely, resisting the enemy’s domination and defending their freedom and culture. They finally drove the foreign powers away, leaving behind a proud and resilient Ceylon. Their victory was a symbol of their unbreakable spirit and a source of inspiration for other oppressed nations."
+ FEE_Jaffna_Events.12.D_BAD: "In the wake of fifty years since the initial sighting of the aliens' arrival in India, a sombre truth prevails - we have failed to safeguard our sacred shores from the encroachment of those gold-blooded invaders. The once unyielding defence of our homeland has crumbled, leaving us to face the harsh reality of defeat. Our collective efforts hopes, and resilience have succumbed to the relentless advance of the extraterrestrial menace. A lament echoes through the annals of history, marking an era of loss and the bitter taste of unfulfilled resistance against the invaders from the stars."
+ FEE_Jaffna_Events.12.OPT1: "Glory to our Dynasty!"
+ FEE_Jaffna_Events.12.OPT2: "Alien’s Supremacy"
+
 # Modifiers
  fee_jfn_kalinga_freedom: "Kalinga’s Freedom"
  desc_fee_jfn_kalinga_freedom: ""
@@ -65,6 +81,11 @@
 
  fee_jfn_fighting_aliens: "Fighting the Aliens"
  desc_fee_jfn_fighting_aliens: ""
+
+ fee_jfn_drive_off_invaders: "Drive off the Invaders"
+ desc_fee_jfn_drive_off_invaders: ""
+ fee_jfn_euro_ceylon_cooperation: "Euro-Ceylon Cooperation"
+ desc_fee_jfn_euro_ceylon_cooperation: ""
 
 # Opinion Modifiers
  fee_jfn_diplomatic_meddling: "Diplomatic Meddling"

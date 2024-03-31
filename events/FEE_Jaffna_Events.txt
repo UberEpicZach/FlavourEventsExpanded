@@ -5,7 +5,7 @@ country_event = {
 	id = FEE_Jaffna_Events.1
 	title = FEE_Jaffna_Events.1.T
 	desc = FEE_Jaffna_Events.1.D
-	picture = GOOD_WITH_MONARCH_EVENTPICTURE
+	picture = GOOD_WITH_MONARCH_eventPicture
 
 	fire_only_once = yes
 
@@ -572,14 +572,272 @@ country_event = {
 			duration = 7300
 		}
 		custom_tooltip = FEE_JFN_ALIENS_TT
-	}
-
-	after = {
-		hidden_effect = {
+		event_target:fee_jfn_discovered_ceylon = {
 			country_event = {
 				id = FEE_Jaffna_Events.10
 				days = 90
 			}
+		}
+	}
+
+}
+
+#European Trade Request
+country_event = {
+	id = FEE_Jaffna_Events.10
+	title = FEE_Jaffna_Events.10.T
+	desc = FEE_Jaffna_Events.10.D
+	picture = DIPLOMACY_SIGNING_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	major = yes
+	major_trigger = {
+		is_or_was_tag = { tag = JFN }
+	}
+
+	option = {
+		name = FEE_Jaffna_Events.10.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		lanka_area = { add_permanent_claim = ROOT }
+		south_lanka_area = { add_permanent_claim = ROOT }
+	}
+
+	option = {
+		name = FEE_Jaffna_Events.10.OPT2
+		trigger = {
+			OR = {
+				lanka_area = {
+					owner = {
+						NOT = {
+							is_or_was_tag = { tag = JFN }
+						}
+					}
+				}
+				south_lanka_area = {
+					owner = {
+						NOT = {
+							is_or_was_tag = { tag = JFN }
+						}
+					}
+				}
+			}
+		}
+		ai_chance = {
+			factor = 25
+		}
+
+		random_country = {
+			limit = {
+				NOT = {
+					is_or_was_tag = { tag = JFN }
+				}
+				any_owned_province = {
+					area = lanka_area
+					area = south_lanka_area
+				}
+			}
+			country_event = {
+				id = FEE_Jaffna_Events.11
+				days = 90
+			}
+		}
+	}
+}
+
+#Euro-Ceylon ruling
+country_event = {
+	id = FEE_Jaffna_Events.11
+	title = FEE_Jaffna_Events.11.T
+	desc = FEE_Jaffna_Events.11.D
+	picture = DIPLOMACY_SIGNING_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	major = yes
+	major_trigger = {
+		is_or_was_tag = { tag = JFN }
+	}
+
+	option = {
+		name = FEE_Jaffna_Events.11.OPT1
+		trigger = {
+			OR = {
+				lanka_area = {
+					NOT = { owned_by = ROOT }
+				}
+				south_lanka_area = {
+					NOT = { owned_by = ROOT }
+				}
+			}
+		}
+		ai_chance = {
+			factor = 75
+		}
+
+		lanka_area = { add_permanent_claim = ROOT }
+		south_lanka_area = { add_permanent_claim = ROOT }
+		add_country_modifier = {
+			name = fee_jfn_drive_off_invaders
+			duration = 3650
+		}
+		event_target:fee_jfn_discovered_ceylon = {
+			add_casus_belli = {
+				type = cb_vassalize_mission
+				target = ROOT
+			}
+		}
+		random_country = {
+			limit = { has_country_modifier = fee_jfn_fighting_aliens }
+			country_event = {
+				id = FEE_Jaffna_Events.12
+				days = 18250
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Jaffna_Events.11.OPT2
+		trigger = {
+			is_free_or_tributary_trigger = yes
+		}
+		ai_chance = {
+			factor = 25
+		}
+
+		add_country_modifier = {
+			name = fee_jfn_euro_ceylon_cooperation
+			duration = 3650
+		}
+		event_target:fee_jfn_discovered_ceylon = {
+			vassalize = ROOT
+			add_trust = {
+				who = ROOT
+				value = 100
+				mutual = yes
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = opinion_eased_tension
+			}
+			reverse_add_opinion = {
+				who = ROOT
+				modifier = opinion_eased_tension
+			}
+		}
+	}
+}
+
+#Euro-Ceylon ruling
+country_event = {
+	id = FEE_Jaffna_Events.12
+	title = FEE_Jaffna_Events.12.T
+	desc = {
+		desc = FEE_Jaffna_Events.12.D_GOOD
+		trigger = {
+			NOT = {
+				any_country = {
+					capital_scope = { superregion = europe_superregion }
+					any_owned_province = { superregion = india_superregion }
+				}
+			}
+		}
+	}
+	desc = {
+		desc = FEE_Jaffna_Events.12.D_BAD
+		trigger = {
+			any_country = {
+				capital_scope = { superregion = europe_superregion }
+				any_owned_province = { superregion = india_superregion }
+			}
+		}
+	}
+	picture = {
+		picture = GOOD_WITH_MONARCH_eventPicture
+		trigger = {
+			NOT = {
+				any_country = {
+					capital_scope = { superregion = europe_superregion }
+					any_owned_province = { superregion = india_superregion }
+				}
+			}
+		}
+	}
+	picture = {
+		picture = BAD_WITH_MONARCH_EVENTPICTURE
+		trigger = {
+			any_country = {
+				capital_scope = { superregion = europe_superregion }
+				any_owned_province = { superregion = india_superregion }
+			}
+		}
+	}
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Jaffna_Events.12.OPT1
+		trigger = {
+			NOT = {
+				any_country = {
+					capital_scope = { superregion = europe_superregion }
+					any_owned_province = { superregion = india_superregion }
+				}
+			}
+		}
+		ai_chance = {
+			factor = 75
+		}
+
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+		add_power_projection = {
+			type = mission_rewards_power_projection
+			amount = 25
+		}
+		change_adm = 1
+		change_dip = 1
+		change_mil = 1
+		capital_scope = {
+			add_base_tax = 3
+			add_base_production = 3
+			add_base_manpower = 3
+		}
+	}
+
+	option = {
+		name = FEE_Jaffna_Events.12.OPT2
+		trigger = {
+			any_country = {
+				capital_scope = { superregion = europe_superregion }
+				any_owned_province = { superregion = india_superregion }
+			}
+		}
+		ai_chance = {
+			factor = 25
+		}
+
+		add_adm_power = -100
+		add_dip_power = -100
+		add_mil_power = -100
+		add_power_projection = {
+			type = mission_rewards_power_projection
+			amount = -25
+		}
+		change_adm = -1
+		change_dip = -1
+		change_mil = -1
+		capital_scope = {
+			add_base_tax = -3
+			add_base_production = -3
+			add_base_manpower = -3
 		}
 	}
 }

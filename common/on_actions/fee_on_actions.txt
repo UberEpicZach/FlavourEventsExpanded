@@ -11,6 +11,7 @@ on_colony_finished = {
 on_explore_coast = {
 	if = {
 		limit = {
+			NOT = { has_saved_global_event_target = fee_jfn_discovered_ceylon }
 			OR = {
 				area = lanka_area
 				area = south_lanka_area
@@ -25,7 +26,7 @@ on_explore_coast = {
 				}
 			}
 		}
-		save_event_target_as = fee_jfn_discovered_ceylon
+		save_global_event_target_as = fee_jfn_discovered_ceylon
 		random_country = {
 			limit = {
 				is_or_was_tag = { tag = JFN }

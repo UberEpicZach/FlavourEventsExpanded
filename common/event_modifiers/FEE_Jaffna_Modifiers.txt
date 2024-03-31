@@ -43,3 +43,10 @@ fee_jfn_fighting_aliens = {
 	morale_damage = 0.10
 	morale_damage_received = -0.10
 }
+
+fee_jfn_drive_off_invaders = {
+	morale_damage = 0.10
+}
+fee_jfn_euro_ceylon_cooperation = {
+	mil_tech_cost_modifier = -0.10
+}
