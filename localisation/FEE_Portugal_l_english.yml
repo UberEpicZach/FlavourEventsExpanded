@@ -108,6 +108,27 @@
  FEE_Portugal_Events.21.D: "Once a luxury only imported over harsh land routes from the East, sugarcane has found a favorable climate in our new colonies and is proving to be more profitable than anyone could have imagined as it becomes accessible to the public for the first time. \nOur colony in Brazil especially is beginning to find great success in growing this crop. Let's hope no one steals our success..."
  FEE_Portugal_Events.21.OPT1: "Sweet!"
 
+ FEE_Portugal_Events.22.T: "Discovery of Ceylon"
+ FEE_Portugal_Events.22.D: "PLACEHOLDER"
+ FEE_Portugal_Events.22.OPT1: "Cinnamon trade must be ours!"
+
+ FEE_Portugal_Events.23.T: "Portuguese Proposal"
+ FEE_Portugal_Events.23.D: "PLACEHOLDER"
+ FEE_Portugal_Events.23.OPT1: "Pay the tribute to the Portuguese."
+ FEE_Portugal_Events.23.OPT2: "We will not submit!"
+
+ FEE_Portugal_Events.24.T: "Colombo Fort"
+ FEE_Portugal_Events.24.D: "PLACEHOLDER"
+ FEE_Portugal_Events.24.OPT1: "Do not disturb them."
+
+ FEE_Portugal_Events.25.T: "Ceylon's Refusal"
+ FEE_Portugal_Events.25.D: "PLACEHOLDER"
+ FEE_Portugal_Events.25.OPT1: "We will get the connamon one way or another!"
+ FEE_Portugal_Events.25.OPT2: "We can get cinnamon elsewhere."
+
+ FEE_Portugal_Events.26.T: "Colombo Trade Port"
+ FEE_Portugal_Events.26.D: "PLACEHOLDER"
+ FEE_Portugal_Events.26.OPT1: "The spice must flow."
 
  #Modifiers
  fee_por_sebastianism: "Sebastianism"
@@ -142,6 +163,9 @@
 
  fee_por_sugar_rush: "Sugar Rush"
 
+ fee_por_portuguese_protection: "Portuguese Protection"
+ fee_por_colombo_fort: "Colombo Fort"
+
  #Opinion Modifiers
  fee_por_portuguese_weaponry: "Portuguese Weaponry"
  fee_por_failed_diplomacy: "Failed Diplomacy"
@@ -160,6 +184,11 @@
  fee_por_magellan_portuguese: "Portuguese Magellan"
  fee_por_magellan_spanish: "Spanish Magellan"
 
+ fee_por_portuguese_proposal_refused: "Refused Proposal"
+
+ # Trade Modifiers
+ fee_por_kotte_trade_modifier: "Increased Production Through Export"
+
  #ToolTips
  fee_por_francisco_custom_tooltip_1: "Francisco will be allowed to follow his passion. We will hear from him again... (opens colonial events related to francisco)"
  fee_por_francisco_custom_tooltip_2: "Francisco's colonial ambitions will be forever crushed."
@@ -172,3 +201,5 @@
  fee_por_king: "Henceforth he and anyone who follow him are outlaws!\n"
 
  securing_african_interest_TT: "We will build the §Ycurrent level fort§! in every province in the §MIvocry Coast§! trade node"
+
+ FEE_Portugal_Events.23.TT: "§Y[Root.GetName]§! becomes a §YTributary State§! under §Y[proposal_initiator.GetName]§!."

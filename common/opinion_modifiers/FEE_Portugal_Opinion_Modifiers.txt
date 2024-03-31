@@ -42,6 +42,10 @@ fee_por_magellan_spanish = {
 	opinion = 50
 	yearly_decay = 1
 }
+fee_por_portuguese_proposal_refused = {
+	opinion = -100
+	yearly_decay = 2
+}
 #name_of_modifier = {
 #	opinion = 1
 #	min = -15			# optional
