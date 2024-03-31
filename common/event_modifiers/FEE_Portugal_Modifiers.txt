@@ -86,3 +86,10 @@ fee_por_rejected_jesuits = {
 fee_por_sugar_rush = {
 	global_unrest = -1
 }
+
+fee_por_portuguese_protection = {
+	block_slave_raid = yes
+}
+fee_por_colombo_fort = {
+	local_defensiveness = 0.1
+}

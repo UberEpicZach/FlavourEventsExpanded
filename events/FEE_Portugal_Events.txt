@@ -1597,3 +1597,247 @@ country_event = {
 		}
 	}
 }
+
+# Discovery of Ceylon
+country_event = {
+	id = FEE_Portugal_Events.22
+	title = FEE_Portugal_Events.22.T
+	desc = FEE_Portugal_Events.22.D
+	picture = EXPLORERS_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = POR
+		OR = {
+			current_age = age_of_discovery
+			current_age = age_of_reformation
+		}
+		is_subject = no
+		has_discovered = 572
+		NOT = { owns_or_subject_of = 572 }
+		572 = {
+			owner = {
+				primary_culture = sinhala
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	immediate = {
+		hidden_effect = {
+			save_event_target_as = proposal_initiator
+			572 = {
+				owner = {
+					save_event_target_as = current_owner
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Portugal_Events.22.OPT1
+
+		event_target:current_owner = {
+			country_event = { id = FEE_Portugal_Events.23 days = 365 }
+		}
+	}
+}
+
+# Portuguese Proposal
+country_event = {
+	id = FEE_Portugal_Events.23
+	title = FEE_Portugal_Events.23.T
+	desc = FEE_Portugal_Events.23.D
+	picture = DIPLOMACY_eventPicture
+
+	major = yes
+	major_trigger = {
+		tag = event_target:proposal_initiator
+	}
+
+	is_triggered_only = yes
+
+	trigger = {
+		owns = 572
+		event_target:proposal_initiator = {
+			exists = yes
+		}
+	}
+
+	option = {
+		name = FEE_Portugal_Events.23.OPT1
+
+		trigger = {
+			is_subject = no
+			event_target:proposal_initiator = {
+				is_subject = no
+			}
+		}
+
+		ai_chance = {
+			factor = 0.8
+		}
+
+		add_years_of_income = -1
+		custom_tooltip = FEE_Portugal_Events.23.TT
+		hidden_effect = {
+			event_target:proposal_initiator = {
+				set_country_flag = forced_tributary_state
+				create_subject = {
+					subject = ROOT
+					subject_type = tributary_state
+				}
+				clr_country_flag = forced_tributary_state
+			}
+		}
+		every_owned_province = {
+			limit = {
+				OR = {
+					area = lanka_area
+					area = south_lanka_area
+				}
+				has_port = yes
+			}
+			add_province_modifier = {
+				name = fee_por_portuguese_protection
+				duration = -1
+			}
+		}
+		hidden_effect = {
+			country_event = { id = FEE_Portugal_Events.24 days = 3650 }
+		}
+	}
+
+	option = {
+		name = FEE_Portugal_Events.23.OPT2
+
+		ai_chance = {
+			factor = 0.2
+			modifier = {
+				factor = 4
+				ruler_total_stats = { amount = 12 }
+			}
+		}
+
+		add_prestige_or_monarch_power = { amount = 25 }
+		reverse_add_opinion = {
+			who = event_target:proposal_initiator
+			modifier = fee_por_portuguese_proposal_refused
+		}
+		hidden_effect = {
+			event_target:proposal_initiator = {
+				country_event = { id = FEE_Portugal_Events.25 }
+			}
+		}
+	}
+}
+
+# Colombo Fort
+country_event = {
+	id = FEE_Portugal_Events.24
+	title = FEE_Portugal_Events.24.T
+	desc = FEE_Portugal_Events.24.D
+	picture = FORT_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		owns = 572
+	}
+
+	option = {
+		name = FEE_Portugal_Events.24.OPT1
+
+		572 = {
+			add_base_manpower = 1
+			if = {
+				limit = {
+					NOT = { has_fort_building_trigger = yes }
+				}
+				add_building = fort_15th
+			}
+			add_permanent_province_modifier = {
+				name = fee_por_colombo_fort
+				duration = -1
+			}
+		}
+		hidden_effect = {
+			event_target:proposal_initiator = {
+				country_event = { id = FEE_Portugal_Events.26 }
+			}
+		}
+	}
+}
+
+# Ceylon's Refusal
+country_event = {
+	id = FEE_Portugal_Events.25
+	title = FEE_Portugal_Events.25.T
+	desc = FEE_Portugal_Events.25.D
+	picture = BAD_WITH_MONARCH_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Portugal_Events.25.OPT1
+
+		ai_chance = {
+			factor = 0.5
+			modifier = {
+				factor = 2
+				army_size = event_target:current_owner
+			}
+			modifier = {
+				factor = 3
+				event_target:current_owner = { is_subject = no }
+			}
+		}
+
+		add_casus_belli = {
+			target = event_target:current_owner
+			type = cb_vassalize_mission
+			months = 360
+		}
+	}
+
+	option = {
+		name = FEE_Portugal_Events.25.OPT2
+
+		ai_chance = {
+			factor = 0.5
+			modifier = {
+				factor = 5
+				event_target:current_owner = { is_subject = yes }
+			}
+		}
+
+		add_prestige = -10
+	}
+}
+
+# Colombo Trade Port
+country_event = {
+	id = FEE_Portugal_Events.26
+	title = FEE_Portugal_Events.26.T
+	desc = FEE_Portugal_Events.26.D
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Portugal_Events.26.OPT1
+
+		572 = {
+			add_trade_modifier = {
+				who = ROOT
+				key = fee_por_kotte_trade_modifier
+				duration = -1
+				power = 10
+			}
+		}
+	}
+}
