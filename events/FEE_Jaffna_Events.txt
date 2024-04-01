@@ -523,7 +523,55 @@ country_event = {
 	picture = EXPLORERS_eventPicture
 
 	fire_only_once = yes
-	is_triggered_only = yes
+
+	trigger = {
+		is_or_was_tag = { tag = JFN }
+		any_country = {
+			capital_scope = { continent = europe }
+			OR = {
+				lanka_area = {
+					has_discovered = PREV
+					owned_by = ROOT
+				}
+				south_lanka_area = {
+					has_discovered = PREV
+					owned_by = ROOT
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 30
+	}
+
+	major = yes
+	major_trigger = {
+		any_country = {
+			has_country_flag = fee_jfn_discovered_ceylon_flag
+		}
+	}
+	
+	immediate = {
+		hidden_effect = {
+			random_country = {
+				limit = {
+					capital_scope = { continent = europe }
+					OR = {
+						lanka_area = {
+							has_discovered = PREV
+							owned_by = ROOT
+						}
+						south_lanka_area = {
+							has_discovered = PREV
+							owned_by = ROOT
+						}
+					}
+				}
+				set_country_flag = fee_jfn_discovered_ceylon_flag
+			}
+		}
+	}
 
 	option = {
 		name = FEE_Jaffna_Events.9.OPT1
@@ -533,7 +581,8 @@ country_event = {
 
 		change_dip = 1
 		add_treasury = -25
-		event_target:fee_jfn_discovered_ceylon = {
+		random_country = {
+			limit = { has_country_flag = fee_jfn_discovered_ceylon_flag }
 			add_opinion = {
 				who = ROOT
 				modifier = fee_jfn_diplomatic_meddling
@@ -542,16 +591,9 @@ country_event = {
 				who = ROOT
 				modifier = fee_jfn_diplomatic_meddling
 			}
-			random_province = {
-				limit = {
-					owned_by = ROOT
-					OR = {
-						area = lanka_area
-						area = south_lanka_area
-					}
-				}
+			2100 = {
 				add_trade_modifier = {
-					who = THIS
+					who = PREV
 					duration = 18250
 					power = 10
 					key = fee_jfn_diplomatic_meddling
@@ -572,7 +614,8 @@ country_event = {
 			duration = 7300
 		}
 		custom_tooltip = FEE_JFN_ALIENS_TT
-		event_target:fee_jfn_discovered_ceylon = {
+		random_country = {
+			limit = { has_country_flag = fee_jfn_discovered_ceylon_flag }
 			country_event = {
 				id = FEE_Jaffna_Events.10
 				days = 90
@@ -686,7 +729,8 @@ country_event = {
 			name = fee_jfn_drive_off_invaders
 			duration = 3650
 		}
-		event_target:fee_jfn_discovered_ceylon = {
+		random_country = {
+			limit = { has_country_flag = fee_jfn_discovered_ceylon_flag }
 			add_casus_belli = {
 				type = cb_vassalize_mission
 				target = ROOT
@@ -714,7 +758,8 @@ country_event = {
 			name = fee_jfn_euro_ceylon_cooperation
 			duration = 3650
 		}
-		event_target:fee_jfn_discovered_ceylon = {
+		random_country = {
+			limit = { has_country_flag = fee_jfn_discovered_ceylon_flag }
 			vassalize = ROOT
 			add_trust = {
 				who = ROOT
