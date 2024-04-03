@@ -1083,6 +1083,190 @@ country_event = {
 	}
 }
 
+### History of Vijayanagar after the death of Deva Raja II
+
+# Death of Deva Raja II
+country_event = {
+	id = FEE_Vijayanagar_Events.20
+	title = FEE_Vijayanagar_Events.20.T
+	desc = FEE_Vijayanagar_Events.20.D
+	picture = BAD_WITH_MONARCH_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_or_was_tag = { tag = VIJ }
+		NOT = { has_ruler = "Devaraya II" }
+		is_year = 1446
+		NOT = { is_year = 1465 }
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = FEE_Vijayanagar_Events.20.OPT1
+		trigger = {
+			NOT = { has_ruler = "Mallikarjuna" } 
+		}
+		ai_chance = {
+			factor = 75
+		}
+
+		if = {
+			limit = { has_heir = yes }
+			kill_heir = { allow_new_heir = no }
+		}
+		kill_ruler = yes
+		define_ruler = {
+			name = "Mallikarjuna"
+			dynasty = "Sangama"
+			ADM = 2
+			DIP = 2
+			MIL = 1
+		}
+		clear_scripted_personalities = yes
+		add_ruler_personality = naive_personality
+		define_heir = {
+			name = "Virupaksha"
+			monarch_name = "Virupaksha II"
+			dynasty = "Sangama"
+			birth_date = 1447.1.1
+			claim = 65
+			ADM = 3
+			DIP = 3
+			MIL = 2
+		}
+	}
+
+	option = {
+		name = FEE_Vijayanagar_Events.20.OPT2
+		ai_chance = {
+			factor = 25
+		}
+
+		add_prestige_or_monarch_power = { amount = 3 }
+	}
+}
+
+# The Gajapatis' Threat.
+country_event = {
+	id = FEE_Vijayanagar_Events.21
+	title = FEE_Vijayanagar_Events.21.T
+	desc = FEE_Vijayanagar_Events.21.D
+	picture = BORDER_TENSION_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_or_was_tag = { tag = VIJ }
+		NOT = {
+			orissa_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		NOT = {
+			jharkhand_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		any_owned_province = {
+			any_neighbor_province = {
+				OR = {
+					area = orissa_area
+					area = jharkhand_area
+				}
+				NOT = { owned_by = ROOT }
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Vijayanagar_Events.21.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_mil_power = -25
+		orissa_area = { add_permanent_claim = ROOT }
+		jharkhand_area = { add_permanent_claim = ROOT }
+	}
+
+	option = {
+		name = FEE_Vijayanagar_Events.21.OPT2
+		ai_chance = {
+			factor = 25
+		}
+
+		add_treasury = -250
+		random_owned_province = {
+			limit = {
+				any_neighbor_province = {
+					OR = {
+						area = orissa_area
+						area = jharkhand_area
+					}
+					NOT = { owned_by = ROOT }
+				}
+			}
+			add_province_modifier = {
+				name = city_protected
+				duration = 3650
+			}
+			add_or_upgrade_manpower_building = yes
+		}
+	}
+}
+
+# The Sultanate of Bahmanis.
+country_event = {
+	id = FEE_Vijayanagar_Events.22
+	title = FEE_Vijayanagar_Events.22.T
+	desc = FEE_Vijayanagar_Events.22.D
+	picture = BAD_WITH_MONARCH_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_or_was_tag = { tag = VIJ }
+		NOT = { has_ruler = "Devaraya II" }
+		is_year = 1446
+		is_neighbor_of = BAH
+		NOT = {
+			raichur_doab_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Vijayanagar_Events.22.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_prestige = -25
+		if = {
+			limit = {
+				NOT = { total_development = BAH }
+			}
+			add_splendor = -100
+		}
+	}
+}
+
 # Vitthala temple, expanded in early-mid 16th century
 # Balakrishna Temple, built in 1515 by Krhysna Deva Raya
 # Achyutaraya Temple, built in 1534 Salakaraju Tirumaladeva
