@@ -1085,7 +1085,7 @@ country_event = {
 
 ### History of Vijayanagar after the death of Deva Raja II
 
-# Death of Deva Raja II
+# Succession of Deva Raja II
 country_event = {
 	id = FEE_Vijayanagar_Events.20
 	title = FEE_Vijayanagar_Events.20.T
@@ -1262,7 +1262,11 @@ country_event = {
 			limit = {
 				NOT = { total_development = BAH }
 			}
-			add_splendor = -100
+			add_legitimacy = -25
+			if = {
+				limit = { has_dlc = "Mandate of Heaven" }
+				add_splendor = -100
+			}
 		}
 	}
 }
