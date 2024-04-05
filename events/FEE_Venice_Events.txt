@@ -457,17 +457,7 @@ country_event = {
 		name = FEE_Venice_Events.10.OPT2
 
 		add_mil_power = 150
-		151 = {
-			if = {
-				limit = {
-					NOT = { owned_by = ROOT }
-					NOT = { is_core = ROOT }
-					NOT = { is_empty = yes }
-					NOT = { is_wasteland = yes }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
+		151 = { add_permanent_claim = ROOT }
 	}
 }
 
@@ -1256,24 +1246,8 @@ country_event = {
 			estate = estate_church
 			loyalty = 5
 		}
-		morea_area = {
-			limit = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
-				NOT = { is_empty = yes }
-				NOT = { is_wasteland = yes }
-			}
-			add_permanent_claim = ROOT
-		}
-		aegean_archipelago_area = {
-			limit = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
-				NOT = { is_empty = yes }
-				NOT = { is_wasteland = yes }
-			}
-			add_permanent_claim = ROOT
-		}
+		morea_area = { add_permanent_claim = ROOT }
+		aegean_archipelago_area = { add_permanent_claim = ROOT }
 	}
 
 	option = {

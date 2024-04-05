@@ -11,6 +11,7 @@
  fee_netherlands_rampjaar: "Rampjaar"
  fee_naples_conspiracy_barons_1: "First Conspirancy Of the Barons"
  fee_naples_conspiracy_barons_2: "Second Conspirancy Of the Barons"
+ fee_vijayaba_kollaya: "Vijayaba Kollaya"
 
 # Events:
  #Portugal
@@ -571,7 +572,7 @@
   disaster_fee_crisis_of_the_mughal_empire.15.D: "Once a beacon of efficient and loyal administration, the bureaucrats of our nation now take bribes on the regular and work not for us but for themselves."
   disaster_fee_crisis_of_the_mughal_empire.15.OPT1: "Disgusting!"
 
- #Italy 
+ #Italy
   disaster_fee_italy_republican_matter.1.T: "A Republican Matter"
   disaster_fee_italy_republican_matter.1.D: "The newly founded state has been struggling with the government organization and trying to meet the demand of its citizen with the authority given by the tradition of old."
   disaster_fee_italy_republican_matter.1.OPT1: "We must be careful"
@@ -665,6 +666,50 @@
   disaster_fee_naples_conspiracy_barons.19.T: "The barons are happy"
   disaster_fee_naples_conspiracy_barons.19.D: "After years of careful diplomacy and agreements with the leader of the nobility like Antonello Sanseverino prince of Salerno, our beloved king [Root.Monarch.GetName] has managed to create a peaceful and prosperous ruling that will last for many years."
   disaster_fee_naples_conspiracy_barons.19.OPT1: "Long live the king!"
+
+ # Vijayaba Kollaya
+ disaster_fee_vijayaba_kollaya.1.T: "Palace Coup!"
+ disaster_fee_vijayaba_kollaya.1.D: "While the decision to place [Root.Heir.GetName] as next in line to the throne was an essential part of royal life in the court of [Root.GetName], there were a number of other heirs who sensed weakness in [Root.Monarch.GetName] and seek to stake their own claim to the throne. Each of them supported by their own mother, as each are sons of different royal wives and concubines, the lesser princes have conspired to murder the current [Root.Monarch.GetTitle]. Needless to say, simply removing the [Root.Monarch.GetTitle] does not secure one's own claim, and each prince secretly mustered mercenaries and levies to prepare for the war they committed to bringing about. Now, the [Root.Monarch.GetTitle] is dead, slain by the hand of mercenary assassins, and civil war is upon us."
+ disaster_fee_vijayaba_kollaya.1.OPT1: "Death to Traitors!"
+
+ disaster_fee_vijayaba_kollaya.3.T: "Collapse of [Root.GetName]"
+ disaster_fee_vijayaba_kollaya.3.D: "With the death of the last [Root.Monarch.GetTitle] of [Root.GetName] and the triumph of the rebellious princes, the nation was thoroughly devastated by war. Because of that, while the princes had initially fought one another for control of the whole realm, none now wanted further bloodshed to deal with each other now that their common enemy lay dead. Because of that, it was decided amongst the pretenders to divide the kingdom amongst themselves, with each of them getting roughly equal lands."
+ disaster_fee_vijayaba_kollaya.3.OPT1: "We went quietly into that night..."
+
+ disaster_fee_vijayaba_kollaya.4.T: "Kingdom Triumphant"
+ disaster_fee_vijayaba_kollaya.4.D: "Despite all adversities, the power of [Root.Monarch.GetName] has prevailed over the rebellious princes and their supporters. The pretender princes were all stripped of their personal estates and banished forever, saved solely because royal blood could not be spilled by any loyal servant of the crown. The most prominent government ministers and nobles who supported them, however, had no such rights. The highest-ranking ones were publicly executed, and many mid-tier nobles who provided the most support in money and manpower were stripped of their castes and relegated to the lowly occupation of cutting grass for elephants' food."
+ disaster_fee_vijayaba_kollaya.4.OPT1: "Peace at last!"
+
+ disaster_fee_vijayaba_kollaya.5.T: "Soldiers defect to Princes!"
+ disaster_fee_vijayaba_kollaya.5.D: "While the minor princes contending for the throne against [Root.Monarch.GetName] have thus far largely relied on foreign mercenaries, they have also not been idle seeking support among the ranks of the royal army. Now, a sizable fraction of those troops have not shown up for duty, conveying to the [Root.Monarch.GetTitle] that they are refusing to take up arms against the princes. Citing a long-standing aversion to shed royal blood, the reality is clear: they either support one prince or another outright, or they simply do not want to risk the repercussions of fighting against a potentially winning side. Either way, they are gone, and with our limited resources, we have no choice but to let them go."
+ disaster_fee_vijayaba_kollaya.5.OPT1: "Curses!"
+
+ disaster_fee_vijayaba_kollaya.6.T: "Minister Plot Uncovered!"
+ disaster_fee_vijayaba_kollaya.6.D.1: "Just as the princes who started this war started it by palace intrigue, so the ministers of our government have engaged in intrigue of their own. Recently, it has come to light that the assassination of our late [Root.Monarch.GetTitle] was aided by none other than [Root.Adm_Advisor.GetName]. Not only was [Root.Adm_Advisor.GetSheHe] aware of the plot and failed to assist the [Root.Monarch.GetTitle], as is [Root.Adm_Advisor.GetHerHis] duty, but actively gave hidden support to the princes behind it."
+ disaster_fee_vijayaba_kollaya.6.D.2: "Just as the princes who started this war started it by palace intrigue, so the ministers of our government have engaged in intrigue of their own. Recently, it has come to light that the assassination of our late [Root.Monarch.GetTitle] was aided by none other than [Root.Dip_Advisor.GetName]. Not only was [Root.Dip_Advisor.GetSheHe] aware of the plot and failed to assist the [Root.Monarch.GetTitle], as is [Root.Dip_Advisor.GetHerHis] duty, but actively gave hidden support to the princes behind it."
+ disaster_fee_vijayaba_kollaya.6.OPT1: "Death by flogging is the only reward for traitors!"
+ disaster_fee_vijayaba_kollaya.6.OPT2: "Banish them!"
+
+ disaster_fee_vijayaba_kollaya.7.T: "Ministers name a Pretender"
+ disaster_fee_vijayaba_kollaya.7.D: "In addition to the princes who have taken up arms against the current [Root.Monarch.GetTitle], other potential candidates for the throne exist. One of them, a nephew of the late [Root.Monarch.GetTitle], was a personal favorite of several of the current [Root.Monarch.GetTitle]'s ministers and advisors. One of them, the [Root.Monarch.GetTitle]'s Master of the Horse, has not been idle, mustering an army of his own in a peripheral province far from the [Root.Monarch.GetTitle]'s distracted eye. In the dead of night, he and his supporters took the prince, galloped into the night and raised the banner of rebellion for their own claim to the royal throne."
+ disaster_fee_vijayaba_kollaya.7.OPT1: "How dare they?!"
+
+ disaster_fee_vijayaba_kollaya.8.T: "A Counter Plot is Hatched"
+ disaster_fee_vijayaba_kollaya.8.D: "In the aftermath of the death of the late [Root.Monarch.GetTitle] and the subsequent revolt of the princes, the current [Root.Monarch.GetTitle] has learned much of the ways of court intrigue. In an attempt to try and end the civil war the other princes have brought about, the [Root.Monarch.GetTitle] has hatched a counter-plot. In essence, the plan is to lure the princes into the royal palace with the prospect of peace negotiations, have a set of chosen loyal soldiers bar the doors, and simply massacre all the princes involved in the rebellion. Without the head, the snake dies..."
+ disaster_fee_vijayaba_kollaya.8.OPT1: "Go through with the plot."
+ disaster_fee_vijayaba_kollaya.8.OPT2: "It's too risky..."
+
+ disaster_fee_vijayaba_kollaya.9.T: "Success!"
+ disaster_fee_vijayaba_kollaya.9.D: "It was a plot worthy of the cunningness of the tiger. The princes never suspected a thing as the wooden bars of the palace doors slid into place behind them. The soldiers then rushed in upon them and brutally stabbed and slashed them all to death, leaving a gory scene in their wake. When the heads of the traitors were displayed on pikes on the palace walls, their stunned troops surrounding the city had no idea what to do next. Without a cause, the generals attempted to retreat their armies and determine whether to continue the struggle, but as they marched through the jungle, their ranks quickly thinned from desertions until the armies were no more. The civil war has been won in one swift stroke."
+ disaster_fee_vijayaba_kollaya.9.OPT1: "Excellent!"
+
+ disaster_fee_vijayaba_kollaya.10.T: "Counter-Plot Backfires!"
+ disaster_fee_vijayaba_kollaya.10.D: "Rather than being cunning like the tiger, our plan turned out to have been foolish beyond all comprehension. As the princes entered the palace with a large portion of their armies just outside, one of the youngest princes, only 6 years of age, innocently told the rebellious princes his brothers about the soldiers stationed at the doors. Alarmed, they rushed out and alerted their forces of our supposed treachery. Enraged, their troops stormed the palace, while the princes addressed the populace, stirring them up against their rightful ruler."
+ disaster_fee_vijayaba_kollaya.10.OPT1: "Disastrous!"
+
+ disaster_fee_vijayaba_kollaya.11.T: "Vijayaba Kollaya"
+ disaster_fee_vijayaba_kollaya.11.D: "The armies of the pretenders, combined with aggrieved peasants and disloyal rabble, have breached the capital defenses and overrun the city. As the enemy soldiers storm through the palace, [Root.Monarch.GetName] has locked [Root.Monarch.GetHerselfHimself] in an upper palace room with only a few concubines. Meanwhile out in the city, order was eventually restored amongst the soldiery, but the peasantry proved less controllable. Rampaging through the streets, all the priceless treasures of the capital were pilfered, broken, scattered through the streets, and thoroughly pillaged. \n\nEventually, the princes decided that the king, who they labeled as a dishonorable traitor, was to die. None of their troops would dare shed royal blood, until a foreign mercenary volunteered for the task. With the head of the last [Root.Monarch.GetTitle] displayed to the troops, it seems the civil war might finally be drawing to an end..."
+ disaster_fee_vijayaba_kollaya.11.OPT1: "There was nothing more to be done..."
 
 # Modifiers:
  fee_portuguese_succession_crisis_chaste_king: "Chaste King"
@@ -770,6 +815,11 @@
  fee_disaster_naples_twenty_years_prosperity: "Twenty Years of Prosperity"
  desc_fee_disaster_naples_twenty_years_prosperity: ""
 
+ fee_vijayaba_kollaya_army_disloyalty: "Army Disloyalty"
+ fee_vijayaba_kollaya_master_of_the_horse_defects: "Master of the Horse Defects"
+ fee_vijayaba_kollaya_punished_nobles: "Punished Nobles"
+ fee_vijayaba_kollaya_stabilized_realm: "Stabilized Realm"
+
 # Opinion Modifiers:
  fee_portuguese_succession_crisis_acceptance: "Holy Father Accepted"
  fee_portuguese_succession_crisis_rejection: "Holy Father Refused"
@@ -864,3 +914,11 @@
  FEE_ITA_DISASTER_REPUBLICAN_TT: "One of the following must be true:\n\t§YRepublican§! or §YMonarchist§! rebels enforce their demand\n\tThe disaster has been going for at least §Y15 years§!"
 
  FEE_NAP_FIRST_BARONY_SKIPPED_TT: "We were able to keep the Barons at ease."
+
+ FEE_VIJAYABA_KOLLAYA_ENDED_BY_PRETENDER_REBELS_TT: "The §YPretender Rebels§! have enforced their demands"
+ disaster_fee_vijayaba_kollaya.1.tt: "\nShould the rebels manage to break through the capital's defenses, dire consequences will result..."
+ disaster_fee_vijayaba_kollaya.3.tt.1: "§Y[This.GetName]§! is ceded to a non-existing core nation."
+ disaster_fee_vijayaba_kollaya.3.tt.2: "\nThe released nations will become monarchies with a ruler of the §YSiri Sanga Bo§! dynasty."
+ disaster_fee_vijayaba_kollaya.6.tt.1: "Our administrative advisor §Y[Root.Adm_Advisor.GetName]§! will die."
+ disaster_fee_vijayaba_kollaya.6.tt.2: "Our diplomatic advisor §Y[Root.Adm_Advisor.GetName]§! will die."
+ disaster_fee_vijayaba_kollaya.8.tt: "\nFailure will have extremely dire consequences..."

@@ -65,4 +65,10 @@ spriteTypes = {
 		noOfFrames = 3
 		loadType = "INGAME"
 	}
+	spriteType = {
+		name = "GFX_disaster_fee_vijayaba_kollaya"
+		texturefile = "gfx//interface//disasters//estate_nobility_disaster.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
 }

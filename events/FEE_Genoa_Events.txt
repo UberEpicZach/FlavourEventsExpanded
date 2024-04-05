@@ -987,79 +987,13 @@ country_event = {
 				key = careful_trade_expansion
 			}
 		}
-		crimea_area = {
-			limit = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
-				NOT = { is_empty = yes }
-				NOT = { is_wasteland = yes }
-			}
-			add_permanent_claim = ROOT
-		}
-		azov_area = {
-			limit = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
-				NOT = { is_empty = yes }
-				NOT = { is_wasteland = yes }
-			}
-			add_permanent_claim = ROOT
-		}
-		330 = {
-			if = {
-				limit = {
-					NOT = { owned_by = ROOT }
-					NOT = { is_core = ROOT }
-					NOT = { is_empty = yes }
-					NOT = { is_wasteland = yes }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-		4706 = {
-			if = {
-				limit = {
-					NOT = { owned_by = ROOT }
-					NOT = { is_core = ROOT }
-					NOT = { is_empty = yes }
-					NOT = { is_wasteland = yes }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-		1756 = {
-			if = {
-				limit = {
-					NOT = { owned_by = ROOT }
-					NOT = { is_core = ROOT }
-					NOT = { is_empty = yes }
-					NOT = { is_wasteland = yes }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-		328 = {
-			if = {
-				limit = {
-					NOT = { owned_by = ROOT }
-					NOT = { is_core = ROOT }
-					NOT = { is_empty = yes }
-					NOT = { is_wasteland = yes }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-		325 = {
-			if = {
-				limit = {
-					NOT = { owned_by = ROOT }
-					NOT = { is_core = ROOT }
-					NOT = { is_empty = yes }
-					NOT = { is_wasteland = yes }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
+		crimea_area = { add_permanent_claim = ROOT }
+		azov_area = { add_permanent_claim = ROOT }
+		330 = { add_permanent_claim = ROOT }
+		4706 = { add_permanent_claim = ROOT }
+		1756 = { add_permanent_claim = ROOT }
+		328 = { add_permanent_claim = ROOT }
+		325 = { add_permanent_claim = ROOT }
 	}
 }
 

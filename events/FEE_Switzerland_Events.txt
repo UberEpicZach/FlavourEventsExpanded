@@ -476,24 +476,8 @@ country_event = {
 			name = fee_swi_swiss_expansionism
 			duration = -1
 		}
-		upper_swabia_area = {
-			limit = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
-				NOT = { is_empty = yes }
-				NOT = { is_wasteland = yes }
-			}
-			add_permanent_claim = ROOT
-		}
-		lower_swabia_area = {
-			limit = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
-				NOT = { is_empty = yes }
-				NOT = { is_wasteland = yes }
-			}
-			add_permanent_claim = ROOT
-		}
+		upper_swabia_area = { add_permanent_claim = ROOT }
+		lower_swabia_area = { add_permanent_claim = ROOT }
 	}
 
 	option = {

@@ -1,10 +1,35 @@
-fee_is_was_nap_sic = {
-	OR = {
-		tag = NAP
-		tag = TTS
-		tag = SIC
-		was_tag = NAP
-		was_tag = SIC
-		was_tag = TTS
+# fee_province_does_not_lack_any_institution = yes
+# in province scope
+fee_province_does_not_lack_any_institution = {
+	if = {
+		limit = { is_institution_enabled = industrialization }
+		industrialization = 100
+	}
+	else_if = {
+		limit = { is_institution_enabled = enlightenment }
+		enlightenment = 100
+	}
+	else_if = {
+		limit = { is_institution_enabled = manufactories }
+		manufactories = 100
+	}
+	else_if = {
+		limit = { is_institution_enabled = global_trade }
+		global_trade = 100
+	}
+	else_if = {
+		limit = { is_institution_enabled = printing_press }
+		printing_press = 100
+	}
+	else_if = {
+		limit = { is_institution_enabled = new_world_i }
+		new_world_i = 100
+	}
+	else_if = {
+		limit = { is_institution_enabled = renaissance }
+		renaissance = 100
+	}
+	else = {
+		feudalism = 100
 	}
 }

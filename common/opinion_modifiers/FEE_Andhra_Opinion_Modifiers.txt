@@ -1,0 +1,8 @@
+fee_yor_aided_reconstruction = {
+	opinion = 50
+	yearly_decay = 1
+}
+fee_yor_blocked_reconstruction = {
+	opinion = -50
+	yearly_decay = 1
+}

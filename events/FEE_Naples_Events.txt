@@ -2123,24 +2123,8 @@ country_event = {
 			factor = 50
 		}
 
-		tuscany_area = {
-			limit = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
-				NOT = { is_empty = yes }
-				NOT = { is_wasteland = yes }
-			}
-			add_permanent_claim = ROOT
-		}
-		lazio_area = {
-			limit = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
-				NOT = { is_empty = yes }
-				NOT = { is_wasteland = yes }
-			}
-			add_permanent_claim = ROOT
-		}
+		tuscany_area = { add_permanent_claim = ROOT }
+		lazio_area = { add_permanent_claim = ROOT }
 		set_country_flag = fee_nap_followed_dream_ladislao
 		custom_tooltip = FEE_NAP_FOLLOWED_DREAM_LADISLAO_TT
 	}

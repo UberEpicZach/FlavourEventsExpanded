@@ -1,0 +1,619 @@
+namespace = FEE_Andhra_Events
+
+# Crossroads of Andhra
+country_event = {
+	id = FEE_Andhra_Events.1
+	title = FEE_Andhra_Events.1.T
+	desc = FEE_Andhra_Events.1.D
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_or_was_tag = { tag = YOR }
+		current_age = age_of_discovery
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = {
+		name = FEE_Andhra_Events.1.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_mil_power = -50
+		add_ruler_modifier = {
+			name = fee_yor_rebuilding_amaravathi
+			duration = -1
+		}
+	}
+
+	option = {
+		name = FEE_Andhra_Events.1.OPT2
+		ai_chance = {
+			factor = 50
+		}
+
+		add_adm_power = -50
+		add_ruler_modifier = {
+			name = fee_yor_quest_for_glory
+			duration = -1
+		}
+	}
+}
+
+# Harmony in Amaravathi
+country_event = {
+	id = FEE_Andhra_Events.2
+	title = FEE_Andhra_Events.2.T
+	desc = FEE_Andhra_Events.2.D
+	picture = RELIGION_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_or_was_tag = { tag = YOR }
+		owns = 543
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	goto = 543
+
+	option = {
+		name = FEE_Andhra_Events.2.OPT1
+		ai_chance = {
+			factor = 0
+		}
+
+		add_treasury = -25
+		custom_tooltip = FEE_ANDHRA_HARMONY_AMARAVATHI_TT
+		hidden_effect = {
+			every_country = {
+				limit = {
+					religion = buddhism
+				}
+				country_event = {
+					id = FEE_Andhra_Events.3
+					days = 30
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Andhra_Events.2.OPT2
+		ai_chance = {
+			factor = 1
+		}
+
+		add_treasury = -15
+		set_capital = 543
+		543 = {
+			rename_capital = "Amaravathi"
+			add_permanent_province_modifier = {
+				name = fee_yor_testament_tolerance
+				duration = -1
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Andhra_Events.2.OPT3
+		trigger = {
+			NOT = { capital = 543 }
+		}
+		ai_chance = {
+			factor = 0
+		}
+
+		capital_scope = {
+			random_list = {
+				33 = { add_base_tax = 1 }
+				33 = { add_base_production = 1 }
+				33 = { add_base_manpower = 1 }
+			}
+		}
+	}
+}
+
+# Rebuilding Amaravathi
+country_event = {
+	id = FEE_Andhra_Events.3
+	title = FEE_Andhra_Events.3.T
+	desc = FEE_Andhra_Events.3.D
+	picture = BUDDHISM_GOOD_eventPicture
+
+	is_triggered_only = yes
+
+	major = yes
+	major_trigger = {
+		owns = 543
+	}
+
+	option = {
+		name = FEE_Andhra_Events.3.OPT1
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				has_opinion = {
+					who = FROM
+					value = 50
+				}
+			}
+		}
+
+		add_treasury = -5
+		add_opinion = {
+			who = FROM
+			modifier = fee_yor_aided_reconstruction
+		}
+		reverse_add_opinion = {
+			who = FROM
+			modifier = fee_yor_aided_reconstruction
+		}
+		FROM = { add_treasury = 5 }
+	}
+
+	option = {
+		name = FEE_Andhra_Events.3.OPT2
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 2
+				NOT = {
+					has_opinion = {
+						who = FROM
+						value = 50
+					}
+				}
+			}
+		}
+
+		add_opinion = {
+			who = FROM
+			modifier = fee_yor_blocked_reconstruction
+		}
+		reverse_add_opinion = {
+			who = FROM
+			modifier = fee_yor_blocked_reconstruction
+		}
+	}
+}
+
+# The Satavahana Legacy
+country_event = {
+	id = FEE_Andhra_Events.4
+	title = FEE_Andhra_Events.4.T
+	desc = FEE_Andhra_Events.4.D
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_or_was_tag = { tag = YOR }
+		current_age = age_of_discovery
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = {
+		name = FEE_Andhra_Events.4.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
+		add_adm_power = -100
+		hidden_effect = {
+			if = {
+				limit = { has_heir = yes }
+				kill_heir = { allow_new_heir = no }
+			}
+			kill_ruler = yes
+			add_stability = 1
+		}
+		define_ruler = {
+			dynasty = "Satavahanas"
+			culture = telegu
+			religion = hinduism
+			male = yes
+			claim = 50
+			change_adm = 3
+			max_random_adm = 5
+			change_dip = 2
+			max_random_dip = 4
+			change_mil = 4
+			max_random_mil = 6
+		}
+		override_country_name = YOR_SAT
+		custom_tooltip = FEE_ANDHRA_SATAVAHANA_DYNASTY_CONQUEST_TT
+		hidden_effect = {
+			andhra_area = { add_core = ROOT }
+			north_carnatic_area = { add_core = ROOT }
+			rayalaseema_area = { add_core = ROOT }
+			golconda_area = { add_core = ROOT }
+			raichur_doab_area = { add_permanent_claim = ROOT }
+		}
+	}
+
+	option = {
+		name = FEE_Andhra_Events.4.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
+		add_legitimacy_or_mil_power = { amount = 25 republican_tradition = 12 }
+		add_prestige_or_monarch_power = { amount = 15 }
+		capital_scope = {
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+		}
+	}
+}
+
+# Embracing Ancient Roots
+country_event = {
+	id = FEE_Andhra_Events.5
+	title = FEE_Andhra_Events.5.T
+	desc = FEE_Andhra_Events.5.D
+	picture = RELIGION_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_or_was_tag = { tag = YOR }
+		543 = {
+			owned_by = ROOT
+			has_province_modifier = fee_yor_testament_tolerance
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = FEE_Andhra_Events.5.OPT1
+		ai_chance = {
+			factor = 0
+		}
+
+		add_adm_power = 25
+	}
+
+	option = {
+		name = FEE_Andhra_Events.5.OPT2
+		trigger = {
+			NOT = { religion = hinduism }
+		}
+		ai_chance = {
+			factor = 33
+		}
+
+		change_religion = hinduism
+		capital_scope = { change_religion = hinduism }
+	}
+
+	option = {
+		name = FEE_Andhra_Events.5.OPT3
+		trigger = {
+			NOT = { religion = buddhism }
+		}
+		ai_chance = {
+			factor = 33
+		}
+
+		change_religion = buddhism
+		capital_scope = { change_religion = buddhism }
+	}
+}
+
+# Embracing Ancient Roots
+country_event = {
+	id = FEE_Andhra_Events.6
+	title = FEE_Andhra_Events.6.T
+	desc = FEE_Andhra_Events.6.D
+	picture = CONQUEST_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_or_was_tag = { tag = YOR }
+		golconda_area = {
+			type = all
+			owned_by = ROOT
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Andhra_Events.6.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_country_modifier = {
+			name = fee_yor_persianate_society
+			duration = 3650
+		}
+		golconda_area = {
+			add_province_modifier = {
+				name = fee_yor_golkonda_leadership
+				duration = -1
+			}
+		}
+		custom_tooltip = FEE_ANDHRA_SATAVAHANA_CONQUEST_BAHMANIS_TT
+		hidden_effect = {
+			ahmednagar_area = { add_permanent_claim = ROOT }
+			berar_area = { add_permanent_claim = ROOT }
+			desh_area = { add_permanent_claim = ROOT }
+			maidan_area = { add_permanent_claim = ROOT }
+			telingana_area = { add_permanent_claim = ROOT }
+			konkan_area = { add_permanent_claim = ROOT }
+		}
+	}
+}
+
+# Berar Beckons
+country_event = {
+	id = FEE_Andhra_Events.7
+	title = FEE_Andhra_Events.7.T
+	desc = FEE_Andhra_Events.7.D
+	picture = CONQUEST_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_or_was_tag = { tag = YOR }
+		berar_area = {
+			type = all
+			owned_by = ROOT
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Andhra_Events.7.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_country_modifier = {
+			name = fee_yor_berari_lands
+			duration = 3650
+		}
+		berar_area = {
+			add_province_modifier = {
+				name = fee_yor_berari_citadels
+				duration = -1
+			}
+		}
+		custom_tooltip = FEE_ANDHRA_SATAVAHANA_CONQUEST_NORTH_TT
+		hidden_effect = {
+			khandesh_area = { add_permanent_claim = ROOT }
+			malwa_area = { add_permanent_claim = ROOT }
+			mewar_area = { add_permanent_claim = ROOT }
+			4464 = { add_permanent_claim = ROOT }
+			528 = { add_permanent_claim = ROOT }
+			740 = { add_permanent_claim = ROOT }
+			4460 = { add_permanent_claim = ROOT }
+			2092 = { add_permanent_claim = ROOT }
+			4458 = { add_permanent_claim = ROOT }
+		}
+	}
+}
+
+# The Jewel of Malwa
+country_event = {
+	id = FEE_Andhra_Events.8
+	title = FEE_Andhra_Events.8.T
+	desc = FEE_Andhra_Events.8.D
+	picture = CONQUEST_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_or_was_tag = { tag = YOR }
+		malwa_area = {
+			type = all
+			owned_by = ROOT
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Andhra_Events.8.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		526 = {
+			add_province_modifier = {
+				name = fee_yor_city_mandu
+				duration = 3650
+			}
+		}
+		malwa_area = {
+			add_base_manpower = 1
+		}
+	}
+}
+
+# Conquest at the Vijay Stamba
+country_event = {
+	id = FEE_Andhra_Events.9
+	title = FEE_Andhra_Events.9.T
+	desc = FEE_Andhra_Events.9.D
+	picture = CONQUEST_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_or_was_tag = { tag = YOR }
+		mewar_area = {
+			type = all
+			owned_by = ROOT
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Andhra_Events.9.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		518 = {
+			add_province_modifier = {
+				name = fee_yor_vijay_stambah
+				duration = 3650
+			}
+		}
+	}
+}
+
+# Conquest of the Koli Dominion
+country_event = {
+	id = FEE_Andhra_Events.10
+	title = FEE_Andhra_Events.10.T
+	desc = FEE_Andhra_Events.10.D
+	picture = CONQUEST_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_or_was_tag = { tag = YOR }
+		ahmednagar_area = {
+			type = all
+			owned_by = ROOT
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Andhra_Events.10.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_country_modifier = {
+			name = fee_yor_koli_military
+			duration = 3650
+		}
+		custom_tooltip = FEE_ANDHRA_SATAVAHANA_CONQUEST_WEST_TT
+		hidden_effect = {
+			tapti_area = { add_permanent_claim = ROOT }
+			ahmedabad_area = { add_permanent_claim = ROOT }
+			saurashtra_area = { add_permanent_claim = ROOT }
+			4480 = { add_permanent_claim = ROOT }
+			2053 = { add_permanent_claim = ROOT }
+			4456 = { add_permanent_claim = ROOT }
+		}
+	}
+}
+
+# Conquest of the Gulf and Coast of Gujarat
+country_event = {
+	id = FEE_Andhra_Events.11
+	title = FEE_Andhra_Events.11.T
+	desc = FEE_Andhra_Events.11.D
+	picture = CONQUEST_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_or_was_tag = { tag = YOR }
+		ahmedabad_area = {
+			type = all
+			OR = {
+				NOT = { has_port = yes }
+				owned_by = ROOT
+			}
+		}
+		saurashtra_area = {
+			type = all
+			OR = {
+				NOT = { has_port = yes }
+				owned_by = ROOT
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Andhra_Events.11.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_mercantilism_or_monarch_power = { amount = 5 }
+		add_country_modifier = {
+			name = fee_yor_vanya_merchants
+			duration = 3650
+		}
+		4457 = {
+			create_or_add_center_of_trade_level_fee = { level = 3 }
+		}
+	}
+}
+
+# Fall of Hampi
+country_event = {
+	id = FEE_Andhra_Events.12
+	title = FEE_Andhra_Events.12.T
+	desc = FEE_Andhra_Events.12.D
+	picture = CONQUEST_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_or_was_tag = { tag = YOR }
+		rayalaseema_area = {
+			type = all
+			owned_by = ROOT
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Andhra_Events.12.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_country_modifier = {
+			name = fee_yor_vijayanagar
+			duration = 18250
+		}
+	}
+}
