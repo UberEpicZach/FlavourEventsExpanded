@@ -213,6 +213,12 @@ country_event = {
 			name = vij_parameshvara_dip_focus
 			duration = 1825
 		}
+		capital_scope = {
+			add_institution_embracement = {
+				which = renaissance
+				value = 33
+			}
+		}
 	}
 
 	option = {
