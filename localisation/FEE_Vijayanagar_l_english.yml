@@ -14,15 +14,154 @@
  FEE_Vijayanagar_Events.3.OPT2: "Let him keep studying"
  FEE_Vijayanagar_Events.3.OPT3: "Improve the battle tactics"
 
- # Modifiers
- vij_kavisarvabhauma: "Kavisarvabhauma"
- desc_vij_kavisarvabhauma: "Emperor Among Poets."
+ FEE_Vijayanagar_Events.4.T: "Parameshvara's Landcraft"
+ FEE_Vijayanagar_Events.4.D: "Vatasseri Parameshvara Nambudiri, renowned for his mathematical prowess, has been enlisted to enhance land administration. His mathematical insights promise to streamline taxation, optimize resource allocation, and ensure efficient governance. This initiative could significantly bolster the economic foundation of Vijayanagara."
+ FEE_Vijayanagar_Events.4.OPT1: "Invest in Prosperity"
+ FEE_Vijayanagar_Events.4.OPT2: "Budgetary Prudence"
 
- vij_parameshvara_adm_focus: "Parameshvara's Mean Value"
- desc_vij_parameshvara_adm_focus: ""
- vij_parameshvara_dip_focus: "Parameshvara's Astronomy"
- desc_vij_parameshvara_dip_focus: ""
- vij_parameshvara_mil_focus: "Parameshvara's Mathematics"
- desc_vij_parameshvara_mil_focus: ""
+ FEE_Vijayanagar_Events.5.T: "Mathematical Reverie"
+ FEE_Vijayanagar_Events.5.D: "Parameshvara continues his scholarly pursuits, delving into the theoretical realms of mathematics. This knowledge has the potential to influence various fields, from philosophy to science. However, this endeavor demands sustained financial support to enable the pursuit of pure mathematical understanding."
+ FEE_Vijayanagar_Events.5.OPT1: "Intellectual Investment"
+ FEE_Vijayanagar_Events.5.OPT2: "Pragmatic Reallocation"
+
+ FEE_Vijayanagar_Events.6.T: "Warfare by Numbers"
+ FEE_Vijayanagar_Events.6.D: "The military of Vijayanagara seeks to harness Parameshvara's mathematical skills to refine its strategies. By applying mathematical principles to tactics and logistics, the army aims for greater precision and effectiveness on the battlefield. This venture requires ongoing financial backing."
+ FEE_Vijayanagar_Events.6.OPT1: "Strategic Funding"
+ FEE_Vijayanagar_Events.6.OPT2: "Military Budget Trim"
+
+ FEE_Vijayanagar_Events.7.T: "Bahmani's Plunder"
+ FEE_Vijayanagar_Events.7.D: "After our formidable forces ravaged the once-mighty capital of the infamous Bahmanis Sultan, the grandeur of the royal palace now rests securely in our possession. Alongside this conquest, the treasuries of the Sultanate have yielded their long-held riches into the coffers of Vijayanagara, marking a significant turning point in our campaign. The Sultan's capital, once a symbol of unassailable power, now stands humbled in the wake of our triumphant siege."
+ FEE_Vijayanagar_Events.7.OPT1: "Seven Iakh Varaha"
+
+ FEE_Vijayanagar_Events.8.T: "Daroji Tank"
+ FEE_Vijayanagar_Events.8.D: "In the arid expanse of the Tungabhadra Valley, where water is a precious commodity, the rulers of Vijayanagara face a pivotal decision that could redefine the region's fate—whether to channel resources into the creation of the Daroji tank. Confronting the challenges of a rocky terrain, the state contemplates the strategic significance of water control in asserting dominance. This initiative extends beyond mere agricultural needs, encompassing domestic use, urban development, and the grandeur of the Royal Centre. A prime example of this potential transformation is the ambitious Daroji tank project, situated 30 kilometers east of Hospet. In this crossroads of decision-making, the Vijayanagara kings consider the profound impact of creating the Daroji tank. The reservoir promises to be a testament to their mastery of water control, addressing the diverse needs of both urban and agricultural populations. The intricate network of interlinked reservoirs and canals, especially the Daroji tank, could redefine the landscape and usher in an era of prosperity."
+ FEE_Vijayanagar_Events.8.OPT1: "Prosperity's Reservoir"
+ FEE_Vijayanagar_Events.8.OPT2: "Fiscal Prudence"
+
+ FEE_Vijayanagar_Events.9.T: "Dandanayaka brothers"
+ FEE_Vijayanagar_Events.9.D: "Lakkanna and his brother Madanna were born to Heggadedeva and Vommayamma. Despite being a Virasaiva, Lakkanna claimed affiliation with Vishnuvardhana-gotra. Among the Virasaiva officers, Lakkanna Dandanayaka stands out prominently. Referred to as Lakkanna Odeya, Lakkanna Nayaka, Lakkanna Dandesa, Lakkanna Dannayaka, and Lakkanamatya, he held distinguished positions as a renowned minister, brilliant general, and a patron of architectural endeavors. Beyond his official roles, he emerged as a fervent supporter of Virasaivism. His brother, Madanna, a versatile advisor, possesses the ability to shape the opinions of kings and queens, making him instrumental in achieving our diplomatic goals."
+ FEE_Vijayanagar_Events.9.OPT1: "Welcome to the court brothers."
+
+ FEE_Vijayanagar_Events.10.T: "Lord of the Southern Ocean"
+ FEE_Vijayanagar_Events.10.D: "Lakkana, fueled by ambition and strategic vision, set forth on a daring expedition to conquer Ilankai, the famed cinnamon island of Sri Lanka. The campaign, marked by meticulous planning and military prowess, unfolded seamlessly, leading to the swift submission of the kings of Ceylon. In recognition of his triumphant leadership, Lakkana was bestowed with the prestigious titles of the Lord of the Southern Ocean and Governor of the provinces of Ilankai. As he assumed his new roles, Lakkana's administrative acumen and governance skills came to the forefront. Under his watchful eye, the provinces thrived, and the lucrative cinnamon trade experienced unprecedented prosperity. Lakkana's dual role as a military commander and statesman proved instrumental in not only securing the conquered territories but also fostering economic growth and stability in the region."
+ FEE_Vijayanagar_Events.10.OPT1: "To glory!"
+
+ FEE_Vijayanagar_Events.11.T: "The voyages of Madanna"
+ FEE_Vijayanagar_Events.11.D: "Madanna, the skilled advisor and diplomat, embarked on an ambitious mission to explore and establish trade routes in the vast expanses of the east. His journey took him to diverse destinations, from Pegu to the distant reaches of Beijing, in an endeavor to forge new economic ties and enrich our kingdom. The potential success of this venture hinges on the support and resources we allocate. \nCommitting additional resources to finance Madanna's expedition would likely enhance its prospects for success. By providing the necessary funding, we can ensure that the journey is well-equipped and facilitated, increasing the likelihood of securing lucrative trade routes and fostering diplomatic relations. \nAlternatively, we may decide to withhold financial support and prioritize pressing matters within our realm. This approach acknowledges that limited resources must be allocated judiciously, and focusing on internal affairs might be the more prudent course of action at this time."
+ FEE_Vijayanagar_Events.11.OPT1: "Finance the Expedition"
+ FEE_Vijayanagar_Events.11.OPT2: "Prioritize Other Matters"
+
+ FEE_Vijayanagar_Events.12.T: "Madanna's return"
+ FEE_Vijayanagar_Events.12.D: "After his long voyages the brave Madanna has return and his reports are clearer than ever."
+ FEE_Vijayanagar_Events.12.OPT1: "New horizon awaits us."
+ FEE_Vijayanagar_Events.12.OPT1: "Our waters are better."
+
+ FEE_Vijayanagar_Events.13.T: "Vijayanagara phirangi"
+ FEE_Vijayanagar_Events.13.D: "The integration of Turkic engineers and artillery into our military infrastructure is deemed essential for the survival and efficacy of our forces, particularly in the face of potential threats posed by the Sultanates to the North. This strategic move aims to bolster our military capabilities and introduce advanced weaponry and expertise, ensuring a formidable defense against external adversaries."
+ FEE_Vijayanagar_Events.13.OPT1: "Devastate the battlefields."
+ FEE_Vijayanagar_Events.13.OPT2: "Crumble their defense."
+ FEE_Vijayanagar_Events.13.OPT3: "Continue the research..."
+
+ FEE_Vijayanagar_Events.14.T: "Militari nemakati"
+ FEE_Vijayanagar_Events.14.D: "Our esteemed Emperor initiated a widespread recruitment drive, drawing soldiers from diverse backgrounds such as Tulu, Beary, Kabbali, and members of the Morasa State clan. Enthusiastic participation extended to forest tribes, including Chenchu, Koya, and Boya, reflecting a broad representation in the military ranks. The empire's commitment to enhancing training facilities, fostering courage, cultivating martial skills, and building physical strength contributed to the overall preparedness of the recruits. \nAcross the nation, traditional practices like samu garidi (a dance performance featuring knives and fire) and well-equipped training gyms played a crucial role in honing the abilities of the soldiers. Hontakaras, skilled trainers, dedicatedly worked with the fighters to refine their combat skills. Notably, in the spirit of Vijayanagara's inclusivity as a multi-faith nation, Muslims were also welcomed to actively participate in the imperial army. This diverse recruitment strategy aimed to create a unified and formidable military force."
+ FEE_Vijayanagar_Events.14.OPT1: "Recruit mainly from existing branches for unity."
+ FEE_Vijayanagar_Events.14.OPT2: "Expand recruitment to diverse populations."
+ FEE_Vijayanagar_Events.14.OPT3: "Actively recruit soldiers from different faiths, fostering religious inclusivity."
+
+ FEE_Vijayanagar_Events.15.T: "Patronage of Wootz Steel"
+ FEE_Vijayanagar_Events.15.D: "Investing in the production of Ucha Kabbina, the renowned "Superior Steel," could significantly enhance our regional standing. Though its production has been hindered by our swift and chaotic conquests, focusing on revitalizing local foundries will not only bolster our prestige but also reinforce trade, as Ucha Kabbina is highly sought after for its durability and quality. The strategic stimulation of these foundries can position us as a leading supplier of this exceptional metal in the international market."
+ FEE_Vijayanagar_Events.15.OPT1: "Fund the investement"
+ FEE_Vijayanagar_Events.15.OPT2: "Don't waste any money..."
+
+ FEE_Vijayanagar_Events.16.T: "Wootz Steel Investment"
+ FEE_Vijayanagar_Events.16.D: "Thankfully our investment paid off and now our country can display the whole world what the production of Wootz steel should actually be."
+ FEE_Vijayanagar_Events.16.OPT1: "Purely for profit!"
+
+ FEE_Vijayanagar_Events.17.T: "The Age of Gunpowder"
+ FEE_Vijayanagar_Events.17.D: "Gunpowder, a revolutionary force in warfare, has infiltrated the battlefield, presenting new possibilities and challenges. From two-handed weapons to mighty cannons capable of breaching stone fortresses, the soldiers of Vijayanagar stand at the threshold of a new era in warfare. The question now arises: should we embrace this technological leap or adhere steadfastly to traditional methods?"
+ FEE_Vijayanagar_Events.17.OPT1: "Forge Ahead into the Future"
+ FEE_Vijayanagar_Events.17.OPT2: "Preserve the Warrior's Way"
+
+ FEE_Vijayanagar_Events.18.T: "Enhancing the Port of Goa"
+ FEE_Vijayanagar_Events.18.D: "Situated within the fertile lands of the Konkan, the port of Goa stands as a vital conduit for regional trade. Notably, it serves as a key hub for the import of horses from Iran and Iraq, crucial for meeting the demand for quality steeds in the southern states. Recognizing the strategic significance of this trade route, a decision must be made to either fortify and improve the port or maintain the status quo."
+ FEE_Vijayanagar_Events.18.OPT1: "Invest in Port Infrastructure"
+ FEE_Vijayanagar_Events.18.OPT2: "Steady Course, Steady Trade"
+
+ FEE_Vijayanagar_Events.19.T: "Arabian Horses Investment"
+ FEE_Vijayanagar_Events.19.D: "In the past years we have tried to secure a better and more stable import of the famous arabian horses through the port of Goa... It is time to gather what we have cultivated."
+ FEE_Vijayanagar_Events.19.OPT1: "We are victorious!"
+ FEE_Vijayanagar_Events.19.OPT2: "Not enough horses my lord."
+
+ FEE_Vijayanagar_Events.20.T: "Succession of Deva Raja II"
+ FEE_Vijayanagar_Events.20.D: "With the passing of Deva Raja II, the realm finds itself at a critical juncture, grappling with the uncertainty of succession. The heir apparent, Mallikarjuna, lays claim to the throne, yet whispers of dissent echo through the court, casting doubt on the legitimacy of his ascension. As the custodian of the realm's stability, you must navigate this delicate balance between honoring the lineage and ensuring a seamless transition of power. Will you throw your support behind Mallikarjuna, the rightful heir by blood, or opt for a more traditional succession method, one that may better align with the expectations of the court and the people?"
+ FEE_Vijayanagar_Events.20.OPT1: "Support Mallikarjuna's Claim."
+ FEE_Vijayanagar_Events.20.OPT2: "Pursue a Natural Succession."
+
+ FEE_Vijayanagar_Events.21.T: "The Gajapatis' Threat."
+ FEE_Vijayanagar_Events.21.D: "The looming presence of the formidable Gajapati Kingdom casts a shadow over our bordering provinces, exerting influence and instilling a sense of unease among neighboring rulers. As descendants of the great kingdom, we possess a unique advantage in navigating this delicate geopolitical landscape. With our heritage affording us a position of prominence among the feudatories, we stand poised to chart a course that will shape the destiny of our realm."
+ FEE_Vijayanagar_Events.21.OPT1: "To war!"
+ FEE_Vijayanagar_Events.21.OPT2: "Defence is the best offence, my lord."
+
+ FEE_Vijayanagar_Events.22.T: "The Sultanate of Bahmanis."
+ FEE_Vijayanagar_Events.22.D: "Following the passing of Deva Raja II, the Southern Central regions of our realm have faced an escalating encroachment by the Sultanate of Bahmanis. Their advances, particularly in the Raichur Doab, now bring them uncomfortably close to our capital of Ampi, posing a significant threat to our sovereignty. The relentless expansion of these Persian-influenced forces from the north has left our borders vulnerable and our defences strained."
+ FEE_Vijayanagar_Events.22.OPT1: "They are advancing, Vijayanagar is near..."
+
+ # Modifiers
+ fee_vij_kavisarvabhauma: "Kavisarvabhauma"
+ desc_fee_vij_kavisarvabhauma: "Emperor Among Poets."
+
+ fee_vij_parameshvara_adm_focus: "Parameshvara's Land Administration"
+ desc_fee_vij_parameshvara_adm_focus: ""
+ fee_vij_parameshvara_dip_focus: "Parameshvara's Theoretical Studies"
+ desc_fee_vij_parameshvara_dip_focus: ""
+ fee_vij_parameshvara_mil_focus: "Parameshvara's Military Mathematics"
+ desc_fee_vij_parameshvara_mil_focus: ""
+
+ fee_vij_daroji_tank: "Daroji Tank"
+ desc_fee_vij_daroji_tank: ""
+ fee_vij_daroji_tank_neighbor: "Daroji Tank"
+ desc_fee_vij_daroji_tank_neighbor: ""
+
+ fee_vij_lord_southern_ocean: "Lord of the Southern Ocean"
+ desc_fee_vij_lord_southern_ocean: ""
+ fee_vij_improved_cinnamon_trade: "Improved Cinnamon Trade"
+ desc_fee_vij_improved_cinnamon_trade: ""
+
+ fee_vij_field_artillery: "Field Artillery"
+ desc_fee_vij_field_artillery: ""
+ fee_vij_siege_cannons: "Siege Cannons"
+ desc_fee_vij_siege_cannons: ""
+
+ fee_vij_branch_focus: "Branch Focus"
+ desc_fee_vij_branch_focus: ""
+ fee_vij_inclusive_recruitment: "Inclusive Recruitment"
+ desc_fee_vij_inclusive_recruitment: ""
+ fee_vij_interfaith_inclusion: "Interfaith Inclusion"
+ desc_fee_vij_interfaith_inclusion: ""
+
+ fee_vij_center_wootz_steel_prodcution: "Center of Wootz Steel Production"
+ desc_fee_vij_center_wootz_steel_prodcution: ""
+
+ fee_vij_introduction_matchlock: "Introduction of Matchlock"
+ desc_fee_vij_introduction_matchlock: ""
+ fee_vij_traditional_training: "Traditional Training"
+ desc_fee_vij_traditional_training: ""
+
+ fee_vij_improved_goa: "Improved the Port of Goa"
+ desc_fee_vij_improved_goa: ""
+
+ fee_vij_arabian_horses_influx: "Improved Arabian Horse Import"
+ desc_fee_vij_arabian_horses_influx: ""
+ fee_vij_arabian_horses_deflux: "Decreased Arabian Horse Import"
+ desc_fee_vij_arabian_horses_deflux: ""
 
  # Tooltips
+ FEE_VIJ_DISCOVER_SEA_PROVINCES_GOOD_TT: "We have created a new trade route from §YPegu§!, through, §YMalacca§! to §YCanton°! and increase our relations with their owners."
+ FEE_VIJ_DISCOVER_SEA_PROVINCES_BAD_TT: "We have created a new trade route from §YPegu§!, through, §YMalacca§! to §YCanton°! but decreased our relations with their owners."
+
+ FEE_VIJ_FINANCING_WOOTZ_STEEL_TT: "In a few years we might see the results of this investment..."
+
+ FEE_VIJ_IMPROVE_GOA_TT: "Allocate resources to enhance the facilities and infrastructure of the Port of Goa. Alternatively we can try to gather more trade penetration in the §YAden§! or §YHormuz§! trade nodes."
+ FEE_VIJ_NOT_IMPROVE_GOA_TT: "Choose to maintain the current operations at the Port of Goa without significant investment. While it might save resources in the short term, the risk of disruptions and inefficiencies in the import of horses remains."
+
+ FEE_VIJ_CLAIM_GUJ_TT: "We will press claim on any bordering province owned by Gujarat."
