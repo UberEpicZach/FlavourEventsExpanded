@@ -774,7 +774,7 @@ country_event = {
 		name = cato_education_events_education_progress.0003.b
 		random = {
 			chance = 50
-			subtract_education_progress_medium = yes
+			subtract_education_progress_large = yes
 		}
 		ai_chance = {
 			factor = 1
