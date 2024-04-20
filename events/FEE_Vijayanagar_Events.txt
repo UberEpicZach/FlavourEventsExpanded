@@ -51,7 +51,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 6
+		months = 12
 	}
 
 	option = { # Chamarasa
@@ -165,7 +165,6 @@ country_event = {
 	picture = ADVISOR_eventPicture
 
 	fire_only_once = yes
-
 	is_triggered_only = yes
 
 	option = {
@@ -199,7 +198,6 @@ country_event = {
 	picture = ADVISOR_eventPicture
 
 	fire_only_once = yes
-
 	is_triggered_only = yes
 
 	option = {
@@ -239,7 +237,6 @@ country_event = {
 	picture = ADVISOR_eventPicture
 
 	fire_only_once = yes
-
 	is_triggered_only = yes
 
 	option = {
@@ -378,7 +375,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 6
+		months = 12
 	}
 
 	option = {
@@ -429,7 +426,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 6
+		months = 12
 	}
 
 	option = {
@@ -482,7 +479,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 6
+		months = 12
 	}
 
 	option = {
@@ -707,7 +704,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 60
+		months = 120
 	}
 
 	option = {
@@ -809,7 +806,6 @@ country_event = {
 	picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
 
 	fire_only_once = yes
-
 	is_triggered_only = yes
 
 	option = {
@@ -875,6 +871,10 @@ country_event = {
 		}
 	}
 
+	mean_time_to_happen = {
+		months = 12
+	}
+
 	option = {
 		name = FEE_Vijayanagar_Events.17.OPT1
 		ai_chance = {
@@ -914,6 +914,10 @@ country_event = {
 	trigger = {
 		is_or_was_tag = { tag = VIJ }
 		owns = 2030
+	}
+
+	mean_time_to_happen = {
+		months = 12
 	}
 
 	goto = 2030
@@ -1165,6 +1169,10 @@ country_event = {
 
 	fire_only_once = yes
 
+	mean_time_to_happen = {
+		months = 12
+	}
+
 	trigger = {
 		is_or_was_tag = { tag = VIJ }
 		NOT = {
@@ -1191,7 +1199,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 6
+		months = 12
 	}
 
 	option = {
@@ -1254,7 +1262,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 6
+		months = 12
 	}
 
 	option = {
