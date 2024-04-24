@@ -12,8 +12,11 @@ country_event = {
 
 	trigger = {
 		OR = {		#Fires for Spain or Castille
-			tag = CAS
 			tag = SPA
+			AND = {
+				tag = CAS
+				NOT = { exists = SPA }
+			}
 		}
 		is_year = 1500
 		NOT = { is_year = 1550 } #Fairly wide window, to give Spain time to realize she hates France
@@ -35,10 +38,7 @@ country_event = {
 					num_of_cities = 15
 					NOT = { dynasty = ROOT }
 				}
-				OR = {
-					is_enemy = CAS
-					is_enemy = SPA
-				}
+				is_enemy = ROOT
 				is_enemy = HAB
 			}
 		}
@@ -98,6 +98,7 @@ country_event = {
 		dynasty = "von Habsburg"
 		NOT = { has_country_flag = FEE_Charles_V_Events_dead } #Won't fire if Chalres died as an heir
 		NOT = { has_country_flag = FEE_Charles_V_Events_ruler }
+		hre_leagues_enabled = no
 	}
 
 	major = yes
@@ -607,7 +608,7 @@ country_event = {
 		NOT = { has_country_flag = fee_charles_v_abdicate_option }
 		NOT = { has_ruler = "Charles" }
 		NOT = { has_heir = "Charles" }
-		
+
 	}
 
 	major = yes
