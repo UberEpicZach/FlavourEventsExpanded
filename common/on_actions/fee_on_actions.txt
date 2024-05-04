@@ -140,6 +140,12 @@ on_new_age = {
 		limit = { has_country_modifier = fee_france_scots_mercenaries }
 		remove_country_modifier = fee_france_scots_mercenaries
 	}
+	846 = {
+		if = {
+			limit = { has_province_modifier = fee_may_city_of_light }
+			remove_province_modifier = fee_may_city_of_light
+		}
+	}
 }
 
 # country

@@ -1,0 +1,199 @@
+namespace = FEE_Maya_Events
+
+# Toltèk k'ayibal
+country_event = {
+	id = FEE_Maya_Events.1
+	title = FEE_Maya_Events.1.T
+	desc = FEE_Maya_Events.1.D
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = ITZ
+		owns = 846
+		primary_culture = mayan
+		religion = mesoamerican_religion
+	}
+
+	goto = 846
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = FEE_Maya_Events.1.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_country_modifier = {
+			name = fee_may_strife_conquest
+			duration = 5475
+		}
+		mexico_area = { add_permanent_claim = ROOT }
+		guanajuato_area = { add_permanent_claim = ROOT }
+		puebla_area = { add_permanent_claim = ROOT }
+		mixteca_area = { add_permanent_claim = ROOT }
+		guerrero_area = { add_permanent_claim = ROOT }
+		huasteca_area = { add_permanent_claim = ROOT }
+		michoacan_area = { add_permanent_claim = ROOT }
+	}
+
+	option = {
+		name = FEE_Maya_Events.1.OPT2
+		ai_chance = {
+			factor = 50
+		}
+
+		east_yucatan_area = { add_permanent_claim = ROOT }
+		yucatan_area = { add_permanent_claim = ROOT }
+		campeche_area = { add_permanent_claim = ROOT }
+		guatemala_lowlands_area = { add_permanent_claim = ROOT }
+		846 = {
+			add_province_modifier = {
+				name = fee_may_multepal
+				duration = -1
+			}
+		}
+	}
+}
+
+# Mythical Great City
+country_event = {
+	id = FEE_Maya_Events.2
+	title = FEE_Maya_Events.2.T
+	desc = FEE_Maya_Events.2.D
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		primary_culture = mayan
+		religion = mesoamerican_religion
+		NOT = {
+			capital_scope = {
+				region_for_scope_province = {
+					higher_development_than = PREV
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = FEE_Maya_Events.2.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_prestige_or_monarch_power = { amount = 25 }
+		add_splendor = 200
+		capital_scope = {
+			add_permanent_province_modifier = {
+				name = fee_may_mightiest_tolla
+				duration = -1
+			}
+		}
+	}
+}
+
+# Mythical Great City
+country_event = {
+	id = FEE_Maya_Events.3
+	title = FEE_Maya_Events.3.T
+	desc = FEE_Maya_Events.3.D
+	picture = ASTRONOMER_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		primary_culture = mayan
+		religion = mesoamerican_religion
+		846 = {
+			owned_by = ROOT
+			development = 25
+			fee_province_does_not_lack_any_institution = yes
+		}
+	}
+
+	goto = 846
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = FEE_Maya_Events.3.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_innovativeness_or_monarch_power = {
+			amount = 15
+			adm = 150
+			dip = 150
+			mil = 150
+		}
+		846 = {
+			add_province_modifier = {
+				name = fee_may_city_of_light
+				duration = -1
+				desc = until_end_of_age_desc
+			}
+		}
+	}
+}
+
+# Mythical Great City
+country_event = {
+	id = FEE_Maya_Events.4
+	title = FEE_Maya_Events.4.T
+	desc = FEE_Maya_Events.4.D
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		primary_culture = mayan
+		religion = mesoamerican_religion
+		owns = 2633
+	}
+
+	goto = 2633
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = FEE_Maya_Events.4.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_years_of_income = -0.5
+		add_mercantilism_or_monarch_power = { amount = 3 }
+		2633 = {
+			add_permanent_province_modifier = {
+				name = fee_may_isla_cerritos
+				duration = -1
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Maya_Events.4.OPT2
+		ai_chance = {
+			factor = 25
+		}
+
+		capital_scope = {
+			create_or_add_center_of_trade_level_fee = { level = 1 }
+		}
+	}
+}
