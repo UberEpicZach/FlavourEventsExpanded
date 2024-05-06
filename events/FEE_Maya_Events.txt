@@ -73,7 +73,14 @@ country_event = {
 		primary_culture = mayan
 		religion = mesoamerican_religion
 		NOT = {
-			capital_scope = {
+			any_province = { has_province_modifier = fee_may_mightiest_tolla }
+		}
+		NOT = {
+			any_province = {
+				OR = {
+					region = mexico_region
+					region = central_america_region
+				}
 				region_for_scope_province = {
 					higher_development_than = PREV
 				}
@@ -134,10 +141,10 @@ country_event = {
 		}
 
 		add_innovativeness_or_monarch_power = {
-			amount = 15
-			adm = 150
-			dip = 150
-			mil = 150
+			amount = 5
+			adm = 50
+			dip = 50
+			mil = 50
 		}
 		846 = {
 			add_province_modifier = {

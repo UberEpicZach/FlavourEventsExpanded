@@ -9,14 +9,13 @@ fee_may_multepal = {
 
 fee_may_mightiest_tolla = {
 	local_development_cost_modifier = -0.10
-	prestige = .05
-	local_unrest = -1
+	prestige = 1
+	global_unrest = -1
 }
 
 fee_may_city_of_light = {
 	adm_advisor_cost = -0.10
 	technology_cost = -0.05
-	embracement_cost = -0.10
 }
 
 fee_may_isla_cerritos = {
