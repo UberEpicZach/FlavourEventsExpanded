@@ -107,7 +107,8 @@ country_event = {
 		capital_scope = {
 			add_permanent_province_modifier = {
 				name = fee_may_mightiest_tolla
-				duration = until_end_of_age_desc
+				duration = -1
+				desc = until_end_of_age_desc
 			}
 		}
 	}
