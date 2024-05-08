@@ -42,6 +42,20 @@ on_province_owner_change = {
 			days = 90
 		}
 	}
+	if = {
+		limit = {
+			has_province_modifier = fee_may_mightiest_tolla
+			NOT = {
+				owner = {
+					OR = {
+						primary_culture = mayan
+						religion = mesoamerican_religion
+					}
+				}
+			}
+		}
+		remove_province_modifier = fee_may_mightiest_tolla
+	}
 }
 
 # root = losing country, from = location
@@ -144,6 +158,15 @@ on_new_age = {
 		if = {
 			limit = { has_province_modifier = fee_may_city_of_light }
 			remove_province_modifier = fee_may_city_of_light
+		}
+	}
+	if = {
+		limit = {
+			any_province = { has_province_modifier = fee_may_mightiest_tolla }
+		}
+		random_province = {
+			limit = { has_province_modifier = fee_may_mightiest_tolla }
+			remove_province_modifier = fee_may_mightiest_tolla
 		}
 	}
 }
