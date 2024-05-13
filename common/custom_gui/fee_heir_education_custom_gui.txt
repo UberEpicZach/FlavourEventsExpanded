@@ -15,8 +15,19 @@ custom_text_box = {
 custom_button = {
 	name = fee_heir_education_progress_open_button
 	effect = {
-		set_country_flag = fee_heir_education_info_window_open
-		set_country_flag = fee_heir_education_info_window_adm
+		if = {
+			limit = {
+				has_country_flag = fee_heir_education_info_window_open
+			}
+			clr_country_flag = fee_heir_education_info_window_open
+			clr_country_flag = fee_heir_education_info_window_adm
+			clr_country_flag = fee_heir_education_info_window_dip
+			clr_country_flag = fee_heir_education_info_window_mil
+		}
+		else = {
+			set_country_flag = fee_heir_education_info_window_open
+			set_country_flag = fee_heir_education_info_window_adm
+		}
 	}
 	tooltip = fee_heir_education_progress_open_button_tt
 }
@@ -29,6 +40,10 @@ custom_icon = {
 custom_icon = {
 	name = fee_heir_education_progress_bar_green
 	potential = {
+		OR = {
+			has_heir_flag = heir_started_education
+			has_heir_flag = heir_finished_education
+		}
 		check_variable = { which = heirEducationalLevel value = 66 }
 	}
 	frame_variable = heirEducationalLevel
@@ -36,6 +51,10 @@ custom_icon = {
 custom_icon = {
 	name = fee_heir_education_progress_bar_yellow
 	potential = {
+		OR = {
+			has_heir_flag = heir_started_education
+			has_heir_flag = heir_finished_education
+		}
 		NOT = { check_variable = { which = heirEducationalLevel value = 66 } }
 		check_variable = { which = heirEducationalLevel value = 33 }
 	}
@@ -44,6 +63,10 @@ custom_icon = {
 custom_icon = {
 	name = fee_heir_education_progress_bar_red
 	potential = {
+		OR = {
+			has_heir_flag = heir_started_education
+			has_heir_flag = heir_finished_education
+		}
 		NOT = { check_variable = { which = heirEducationalLevel value = 33 } }
 		check_variable = { which = heirEducationalLevel value = 1 }
 	}
