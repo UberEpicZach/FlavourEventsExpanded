@@ -1,0 +1,517 @@
+defined_text = {
+	name = GetFeeHeirEducationProgressTooltip
+	random = no
+
+	text = {
+		trigger = {
+			OR = {
+				has_heir_flag = heir_started_education
+				has_heir_flag = heir_finished_education
+			}
+		}
+		localisation_key = string_fee_heir_education_progress_gui_tooltip
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = string_fee_heir_education_progress_gui_tooltip_not_started
+	}
+}
+
+defined_text = {
+	name = GetFeeHeirEducationProgressValueTooltip
+	random = no
+
+	text = {
+		trigger = {
+			check_variable = { which = heirEducationalLevel value = 66 }
+		}
+		localisation_key = HEIR_EDUCATION_PROGRESS_HIGH
+	}
+	text = {
+		trigger = {
+			check_variable = { which = heirEducationalLevel value = 33 }
+		}
+		localisation_key = HEIR_EDUCATION_PROGRESS_MEDIUM
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = HEIR_EDUCATION_PROGRESS_LOW
+	}
+}
+
+defined_text = {
+	name = GetFeeHeirEducationCurrentEducationType
+	random = no
+
+	# Adm
+	text = {
+		trigger = {
+			has_heir_flag = clerical_education
+		}
+		localisation_key = string_fee_heir_education_type_clerical
+	}
+	text = {
+		trigger = {
+			has_heir_flag = administrative_education
+		}
+		localisation_key = string_fee_heir_education_type_administrative
+	}
+	text = {
+		trigger = {
+			has_heir_flag = scholastic_education
+		}
+		localisation_key = string_fee_heir_education_type_scholastic
+	}
+	text = {
+		trigger = {
+			has_heir_flag = industrial_education
+		}
+		localisation_key = string_fee_heir_education_type_industrial
+	}
+	# Dip
+	text = {
+		trigger = {
+			has_heir_flag = diplomacy_education
+		}
+		localisation_key = string_fee_heir_education_type_diplomacy
+	}
+	text = {
+		trigger = {
+			has_heir_flag = intrigue_education
+		}
+		localisation_key = string_fee_heir_education_type_intrigue
+	}
+	text = {
+		trigger = {
+			has_heir_flag = trade_education
+		}
+		localisation_key = string_fee_heir_education_type_trade
+	}
+	text = {
+		trigger = {
+			has_heir_flag = colonial_education
+		}
+		localisation_key = string_fee_heir_education_type_colonial
+	}
+	# Mil
+	text = {
+		trigger = {
+			has_heir_flag = martial_education
+		}
+		localisation_key = string_fee_heir_education_type_martial
+	}
+	text = {
+		trigger = {
+			has_heir_flag = logistics_education
+		}
+		localisation_key = string_fee_heir_education_type_logistics
+	}
+	text = {
+		trigger = {
+			has_heir_flag = naval_education
+		}
+		localisation_key = string_fee_heir_education_type_naval
+	}
+	text = {
+		trigger = {
+			has_heir_flag = modern_army_education
+		}
+		localisation_key = string_fee_heir_education_type_modern_army
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+
+defined_text = {
+	name = GetFeeHeirEducationViewedSkillType
+	random = no
+
+	text = {
+		trigger = {
+			has_country_flag = fee_heir_education_info_window_adm
+		}
+		localisation_key = string_fee_heir_education_viewed_skill_type_adm
+	}
+	text = {
+		trigger = {
+			has_country_flag = fee_heir_education_info_window_dip
+		}
+		localisation_key = string_fee_heir_education_viewed_skill_type_dip
+	}
+	text = {
+		trigger = {
+			has_country_flag = fee_heir_education_info_window_mil
+		}
+		localisation_key = string_fee_heir_education_viewed_skill_type_mil
+	}
+}
+
+defined_text = {
+	name = GetFeeHeirEducationViewedSkillTypeCategoryName1
+	random = no
+
+	text = {
+		trigger = {
+			has_country_flag = fee_heir_education_info_window_adm
+		}
+		localisation_key = string_fee_heir_education_type_clerical
+	}
+	text = {
+		trigger = {
+			has_country_flag = fee_heir_education_info_window_dip
+		}
+		localisation_key = string_fee_heir_education_type_diplomacy
+	}
+	text = {
+		trigger = {
+			has_country_flag = fee_heir_education_info_window_mil
+		}
+		localisation_key = string_fee_heir_education_type_martial
+	}
+}
+defined_text = {
+	name = GetFeeHeirEducationViewedSkillTypeCategoryDesc1
+	random = no
+
+	text = {
+		trigger = {
+			has_country_flag = fee_heir_education_info_window_adm
+		}
+		localisation_key = string_fee_heir_education_type_clerical_desc
+	}
+	text = {
+		trigger = {
+			has_country_flag = fee_heir_education_info_window_dip
+		}
+		localisation_key = string_fee_heir_education_type_diplomacy_desc
+	}
+	text = {
+		trigger = {
+			has_country_flag = fee_heir_education_info_window_mil
+		}
+		localisation_key = string_fee_heir_education_type_martial_desc
+	}
+}
+defined_text = {
+	name = GetFeeHeirEducationViewedSkillTypeCategory1CurrentTooltip
+	random = no
+
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					has_country_flag = fee_heir_education_info_window_adm
+					has_heir_flag = clerical_education
+				}
+				AND = {
+					has_country_flag = fee_heir_education_info_window_dip
+					has_heir_flag = diplomacy_education
+				}
+				AND = {
+					has_country_flag = fee_heir_education_info_window_mil
+					has_heir_flag = martial_education
+				}
+			}
+		}
+		localisation_key = string_fee_heir_education_viewed_skill_type_category_current_tooltip
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+
+defined_text = {
+	name = GetFeeHeirEducationViewedSkillTypeCategoryName2
+	random = no
+
+	text = {
+		trigger = {
+			has_country_flag = fee_heir_education_info_window_adm
+		}
+		localisation_key = string_fee_heir_education_type_administrative
+	}
+	text = {
+		trigger = {
+			has_country_flag = fee_heir_education_info_window_dip
+		}
+		localisation_key = string_fee_heir_education_type_intrigue
+	}
+	text = {
+		trigger = {
+			has_country_flag = fee_heir_education_info_window_mil
+		}
+		localisation_key = string_fee_heir_education_type_logistics
+	}
+}
+defined_text = {
+	name = GetFeeHeirEducationViewedSkillTypeCategoryDesc2
+	random = no
+
+	text = {
+		trigger = {
+			has_country_flag = fee_heir_education_info_window_adm
+		}
+		localisation_key = string_fee_heir_education_type_administrative_desc
+	}
+	text = {
+		trigger = {
+			has_country_flag = fee_heir_education_info_window_dip
+		}
+		localisation_key = string_fee_heir_education_type_intrigue_desc
+	}
+	text = {
+		trigger = {
+			has_country_flag = fee_heir_education_info_window_mil
+		}
+		localisation_key = string_fee_heir_education_type_logistics_desc
+	}
+}
+defined_text = {
+	name = GetFeeHeirEducationViewedSkillTypeCategory2CurrentTooltip
+	random = no
+
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					has_country_flag = fee_heir_education_info_window_adm
+					has_heir_flag = administrative_education
+				}
+				AND = {
+					has_country_flag = fee_heir_education_info_window_dip
+					has_heir_flag = intrigue_education
+				}
+				AND = {
+					has_country_flag = fee_heir_education_info_window_mil
+					has_heir_flag = logistics_education
+				}
+			}
+		}
+		localisation_key = string_fee_heir_education_viewed_skill_type_category_current_tooltip
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+
+defined_text = {
+	name = GetFeeHeirEducationViewedSkillTypeCategoryName3
+	random = no
+
+	text = {
+		trigger = {
+			has_country_flag = fee_heir_education_info_window_adm
+		}
+		localisation_key = string_fee_heir_education_type_scholastic
+	}
+	text = {
+		trigger = {
+			has_country_flag = fee_heir_education_info_window_dip
+		}
+		localisation_key = string_fee_heir_education_type_trade
+	}
+	text = {
+		trigger = {
+			has_country_flag = fee_heir_education_info_window_mil
+		}
+		localisation_key = string_fee_heir_education_type_naval
+	}
+}
+defined_text = {
+	name = GetFeeHeirEducationViewedSkillTypeCategoryDesc3
+	random = no
+
+	text = {
+		trigger = {
+			has_country_flag = fee_heir_education_info_window_adm
+		}
+		localisation_key = string_fee_heir_education_type_scholastic_desc
+	}
+	text = {
+		trigger = {
+			has_country_flag = fee_heir_education_info_window_dip
+		}
+		localisation_key = string_fee_heir_education_type_trade_desc
+	}
+	text = {
+		trigger = {
+			has_country_flag = fee_heir_education_info_window_mil
+		}
+		localisation_key = string_fee_heir_education_type_naval_desc
+	}
+}
+defined_text = {
+	name = GetFeeHeirEducationViewedSkillTypeCategory3CurrentTooltip
+	random = no
+
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					has_country_flag = fee_heir_education_info_window_adm
+					has_heir_flag = scholastic_education
+				}
+				AND = {
+					has_country_flag = fee_heir_education_info_window_dip
+					has_heir_flag = trade_education
+				}
+				AND = {
+					has_country_flag = fee_heir_education_info_window_mil
+					has_heir_flag = naval_education
+				}
+			}
+		}
+		localisation_key = string_fee_heir_education_viewed_skill_type_category_current_tooltip
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+
+defined_text = {
+	name = GetFeeHeirEducationViewedSkillTypeCategoryName4
+	random = no
+
+	text = {
+		trigger = {
+			has_country_flag = fee_heir_education_info_window_adm
+		}
+		localisation_key = string_fee_heir_education_type_industrial
+	}
+	text = {
+		trigger = {
+			has_country_flag = fee_heir_education_info_window_dip
+		}
+		localisation_key = string_fee_heir_education_type_colonial
+	}
+	text = {
+		trigger = {
+			has_country_flag = fee_heir_education_info_window_mil
+		}
+		localisation_key = string_fee_heir_education_type_modern_army
+	}
+}
+defined_text = {
+	name = GetFeeHeirEducationViewedSkillTypeCategoryDesc4
+	random = no
+
+	text = {
+		trigger = {
+			has_country_flag = fee_heir_education_info_window_adm
+		}
+		localisation_key = string_fee_heir_education_type_industrial_desc
+	}
+	text = {
+		trigger = {
+			has_country_flag = fee_heir_education_info_window_dip
+		}
+		localisation_key = string_fee_heir_education_type_colonial_desc
+	}
+	text = {
+		trigger = {
+			has_country_flag = fee_heir_education_info_window_mil
+		}
+		localisation_key = string_fee_heir_education_type_modern_army_desc
+	}
+}
+defined_text = {
+	name = GetFeeHeirEducationViewedSkillTypeCategory4CurrentTooltip
+	random = no
+
+	text = {
+		trigger = {
+			OR = {
+				AND = {
+					has_country_flag = fee_heir_education_info_window_adm
+					has_heir_flag = industrial_education
+				}
+				AND = {
+					has_country_flag = fee_heir_education_info_window_dip
+					has_heir_flag = colonial_education
+				}
+				AND = {
+					has_country_flag = fee_heir_education_info_window_mil
+					has_heir_flag = modern_army_education
+				}
+			}
+		}
+		localisation_key = string_fee_heir_education_viewed_skill_type_category_current_tooltip
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = ""
+	}
+}
+
+defined_text = {
+	name = GetFeeHeirEducationInfoAdmButtonTooltip
+	random = no
+
+	text = {
+		trigger = {
+			has_country_flag = fee_heir_education_info_window_adm
+		}
+		localisation_key = string_fee_heir_education_info_adm_button_tooltip_selected
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = string_fee_heir_education_info_adm_button_tooltip
+	}
+}
+
+defined_text = {
+	name = GetFeeHeirEducationInfoDipButtonTooltip
+	random = no
+
+	text = {
+		trigger = {
+			has_country_flag = fee_heir_education_info_window_dip
+		}
+		localisation_key = string_fee_heir_education_info_dip_button_tooltip_selected
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = string_fee_heir_education_info_dip_button_tooltip
+	}
+}
+
+defined_text = {
+	name = GetFeeHeirEducationInfoMilButtonTooltip
+	random = no
+
+	text = {
+		trigger = {
+			has_country_flag = fee_heir_education_info_window_mil
+		}
+		localisation_key = string_fee_heir_education_info_mil_button_tooltip_selected
+	}
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = string_fee_heir_education_info_mil_button_tooltip
+	}
+}

@@ -1,0 +1,457 @@
+defined_text = {
+	name = sailors_recovery_speed
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = SAILORS_RECOVERY
+	}
+}
+
+defined_text = {
+	name = naval_morale
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = NAVAL_MORALE
+	}
+}
+
+defined_text = {
+	name = movement_speed
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_MOVEMENT_SPEED
+	}
+}
+
+defined_text = {
+	name = manpower_recovery_speed
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MANPOWER_RECOVERY
+	}
+}
+
+defined_text = {
+	name = defensiveness
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = DEFENSIVENESS
+	}
+}
+
+defined_text = {
+	name = global_trade_goods_size_modifier
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_GLOBAL_TRADE_GOODS_SIZE_MODIFIER
+	}
+}
+
+defined_text = {
+	name = production_efficiency
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = PRODUCTION_EFFICIENCY
+	}
+}
+
+defined_text = {
+	name = build_cost
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = BUILD_COST
+	}
+}
+
+defined_text = {
+	name = global_missionary_strength
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = GLOBAL_MISSIONARY_STRENGTH
+	}
+}
+
+defined_text = {
+	name = land_morale
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = LAND_MORALE
+	}
+}
+
+defined_text = {
+	name = yearly_army_tradition
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = YEARLY_ARMY_TRADITION
+	}
+}
+
+defined_text = {
+	name = yearly_navy_tradition
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = YEARLY_NAVY_TRADITION
+	}
+}
+
+defined_text = {
+	name = siege_ability
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_SIEGE_ABILITY
+	}
+}
+
+defined_text = {
+	name = global_unrest
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = GLOBAL_UNREST
+	}
+}
+
+defined_text = {
+	name = trade_efficiency
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = TRADE_EFFICIENCY
+	}
+}
+
+defined_text = {
+	name = improve_relation_modifier
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = IMPROVE_RELATION_MODIFIER
+	}
+}
+
+defined_text = {
+	name = tolerance_own
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_TOLERANCE_OWN
+	}
+}
+
+defined_text = {
+	name = global_tax_modifier
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = GLOBAL_TAX_MODIFIER
+	}
+}
+
+defined_text = {
+	name = core_creation
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_CORE_CREATION
+	}
+}
+
+defined_text = {
+	name = reform_progress_growth
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_REFORM_PROGRESS_GROWTH
+	}
+}
+
+defined_text = {
+	name = global_institution_spread
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_GLOBAL_INSTITUTION_SPREAD
+	}
+}
+
+defined_text = {
+	name = innovativeness_gain
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_INNOVATIVENESS_GAIN
+	}
+}
+
+defined_text = {
+	name = technology_cost
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_TECHNOLOGY_COST
+	}
+}
+
+defined_text = {
+	name = diplomatic_reputation
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_DIPLO_SKILL
+	}
+}
+
+defined_text = {
+	name = reduced_liberty_desire
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_REDUCED_LIBERTY_DESIRE
+	}
+}
+
+defined_text = {
+	name = spy_offence
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = SPY_OFFENCE
+	}
+}
+
+defined_text = {
+	name = global_spy_defence
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = SPY_GLOBAL_DEFENCE
+	}
+}
+
+defined_text = {
+	name = rebel_support_efficiency
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_REBEL_SUPPORT_EFFICIENCY
+	}
+}
+
+defined_text = {
+	name = global_trade_power
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_GLOBAL_TRADE_POWER
+	}
+}
+
+defined_text = {
+	name = placed_merchant_power
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_PLACED_MERCHANT_POWER
+	}
+}
+
+defined_text = {
+	name = global_colonial_growth
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_COLONIAL_GROWTH
+	}
+}
+
+defined_text = {
+	name = range
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_COLONIAL_RANGE
+	}
+}
+
+defined_text = {
+	name = native_assimilation
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_NATIVE_ASSIMILATION
+	}
+}
+
+defined_text = {
+	name = infantry_power
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = INFANTRY_POWER
+	}
+}
+
+defined_text = {
+	name = drill_gain_modifier
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_DRILL_GAIN_MODIFIER
+	}
+}
+
+defined_text = {
+	name = yearly_army_professionalism
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_YEARLY_ARMY_PROFESSIONALISM
+	}
+}
+
+defined_text = {
+	name = country_admin_power
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_COUNTRY_ADMIN_POWER
+	}
+}
+
+defined_text = {
+	name = country_diplomatic_power
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_COUNTRY_DIPLOMATIC_POWER
+	}
+}
+
+defined_text = {
+	name = country_military_power
+	random = no
+
+	text = {
+		trigger = {
+			always = yes
+		}
+		localisation_key = MODIFIER_COUNTRY_MILITARY_POWER
+	}
+}

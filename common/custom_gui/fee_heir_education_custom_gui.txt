@@ -1,0 +1,241 @@
+custom_window = {
+	name = fee_heir_education_progress_window
+	potential = {
+		ai = no
+		has_heir = yes
+	}
+}
+custom_text_box = {
+	name = fee_heir_education_progress_title
+	potential = {
+		always = yes
+	}
+	tooltip = fee_heir_education_progress_bar_frame_tt
+}
+custom_button = {
+	name = fee_heir_education_progress_open_button
+	effect = {
+		set_country_flag = fee_heir_education_info_window_open
+		set_country_flag = fee_heir_education_info_window_adm
+	}
+	tooltip = fee_heir_education_progress_open_button_tt
+}
+custom_icon = {
+	name = fee_heir_education_progress_bar_bg
+	potential = {
+		always = yes
+	}
+}
+custom_icon = {
+	name = fee_heir_education_progress_bar
+	potential = {
+		check_variable = { which = heirEducationalLevel value = 1 }
+	}
+	frame_variable = heirEducationalLevel
+}
+custom_icon = {
+	name = fee_heir_education_progress_bar_frame
+	potential = {
+		always = yes
+	}
+	tooltip = fee_heir_education_progress_bar_frame_tt
+}
+
+custom_window = {
+	name = fee_heir_education_info_window
+	potential = {
+		ai = no
+		has_heir = yes
+		has_country_flag = fee_heir_education_info_window_open
+	}
+}
+custom_text_box = {
+	name = fee_heir_education_info_title
+	potential = {
+		always = yes
+	}
+	tooltip = fee_heir_education_info_title_tt
+}
+custom_icon = {
+	name = fee_heir_education_info_type_1_selected_icon
+	potential = {
+		OR = {
+			AND = {
+				has_country_flag = fee_heir_education_info_window_adm
+				has_heir_flag = clerical_education
+			}
+			AND = {
+				has_country_flag = fee_heir_education_info_window_dip
+				has_heir_flag = diplomacy_education
+			}
+			AND = {
+				has_country_flag = fee_heir_education_info_window_mil
+				has_heir_flag = martial_education
+			}
+		}
+	}
+}
+custom_text_box = {
+	name = fee_heir_education_info_type_1_title
+	potential = {
+		always = yes
+	}
+	tooltip = fee_heir_education_info_type_1_tt
+}
+custom_text_box = {
+	name = fee_heir_education_info_type_1_desc
+	potential = {
+		always = yes
+	}
+	tooltip = fee_heir_education_info_type_1_tt
+}
+custom_icon = {
+	name = fee_heir_education_info_type_2_selected_icon
+	potential = {
+		OR = {
+			AND = {
+				has_country_flag = fee_heir_education_info_window_adm
+				has_heir_flag = administrative_education
+			}
+			AND = {
+				has_country_flag = fee_heir_education_info_window_dip
+				has_heir_flag = intrigue_education
+			}
+			AND = {
+				has_country_flag = fee_heir_education_info_window_mil
+				has_heir_flag = logistics_education
+			}
+		}
+	}
+}
+custom_text_box = {
+	name = fee_heir_education_info_type_2_title
+	potential = {
+		always = yes
+	}
+	tooltip = fee_heir_education_info_type_2_tt
+}
+custom_text_box = {
+	name = fee_heir_education_info_type_2_desc
+	potential = {
+		always = yes
+	}
+	tooltip = fee_heir_education_info_type_2_tt
+}
+custom_icon = {
+	name = fee_heir_education_info_type_3_selected_icon
+	potential = {
+		OR = {
+			AND = {
+				has_country_flag = fee_heir_education_info_window_adm
+				has_heir_flag = scholastic_education
+			}
+			AND = {
+				has_country_flag = fee_heir_education_info_window_dip
+				has_heir_flag = trade_education
+			}
+			AND = {
+				has_country_flag = fee_heir_education_info_window_mil
+				has_heir_flag = naval_education
+			}
+		}
+	}
+}
+custom_text_box = {
+	name = fee_heir_education_info_type_3_title
+	potential = {
+		always = yes
+	}
+	tooltip = fee_heir_education_info_type_3_tt
+}
+custom_text_box = {
+	name = fee_heir_education_info_type_3_desc
+	potential = {
+		always = yes
+	}
+	tooltip = fee_heir_education_info_type_3_tt
+}
+custom_icon = {
+	name = fee_heir_education_info_type_4_selected_icon
+	potential = {
+		OR = {
+			AND = {
+				has_country_flag = fee_heir_education_info_window_adm
+				has_heir_flag = industrial_education
+			}
+			AND = {
+				has_country_flag = fee_heir_education_info_window_dip
+				has_heir_flag = colonial_education
+			}
+			AND = {
+				has_country_flag = fee_heir_education_info_window_mil
+				has_heir_flag = modern_army_education
+			}
+		}
+	}
+}
+custom_text_box = {
+	name = fee_heir_education_info_type_4_title
+	potential = {
+		always = yes
+	}
+	tooltip = fee_heir_education_info_type_4_tt
+}
+custom_text_box = {
+	name = fee_heir_education_info_type_4_desc
+	potential = {
+		always = yes
+	}
+	tooltip = fee_heir_education_info_type_4_tt
+}
+custom_button = {
+	name = fee_heir_education_info_adm_button
+	trigger = {
+		hidden_trigger = {
+			NOT = { has_country_flag = fee_heir_education_info_window_adm }
+		}
+	}
+	effect = {
+		clr_country_flag = fee_heir_education_info_window_dip
+		clr_country_flag = fee_heir_education_info_window_mil
+		set_country_flag = fee_heir_education_info_window_adm
+	}
+	tooltip = fee_heir_education_info_adm_button_tt
+}
+custom_button = {
+	name = fee_heir_education_info_dip_button
+	trigger = {
+		hidden_trigger = {
+			NOT = { has_country_flag = fee_heir_education_info_window_dip }
+		}
+	}
+	effect = {
+		clr_country_flag = fee_heir_education_info_window_adm
+		clr_country_flag = fee_heir_education_info_window_mil
+		set_country_flag = fee_heir_education_info_window_dip
+	}
+	tooltip = fee_heir_education_info_dip_button_tt
+}
+custom_button = {
+	name = fee_heir_education_info_mil_button
+	trigger = {
+		hidden_trigger = {
+			NOT = { has_country_flag = fee_heir_education_info_window_mil }
+		}
+	}
+	effect = {
+		clr_country_flag = fee_heir_education_info_window_adm
+		clr_country_flag = fee_heir_education_info_window_dip
+		set_country_flag = fee_heir_education_info_window_mil
+	}
+	tooltip = fee_heir_education_info_mil_button_tt
+}
+custom_button = {
+	name = fee_heir_education_info_close_button
+	effect = {
+		clr_country_flag = fee_heir_education_info_window_open
+		clr_country_flag = fee_heir_education_info_window_adm
+		clr_country_flag = fee_heir_education_info_window_dip
+		clr_country_flag = fee_heir_education_info_window_mil
+	}
+}

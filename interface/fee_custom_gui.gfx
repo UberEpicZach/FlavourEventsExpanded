@@ -1,0 +1,43 @@
+spriteTypes = {
+	progressbartype = {
+		name = "GFX_fee_heir_education_progress_bar"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		textureFile1 = "gfx/interface/fee_heir_education_progress_bar.dds"
+		textureFile2 = "gfx/interface/fee_heir_education_progress_bar_bg.dds"
+		size = { x = 70 y = 12 }
+		effectFile = "gfx/FX/progress.lua"
+	}
+	spriteType = {
+		name = "GFX_fee_heir_education_progress_bar_bg"
+		textureFile = "gfx/interface/fee_heir_education_progress_bar_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_fee_heir_education_progress_bar_frame"
+		textureFile = "gfx/interface/fee_heir_education_progress_bar_frame.dds"
+	}
+
+	spriteType = {
+		name = "GFX_fee_heir_education_info_bg"
+		textureFile = "gfx/interface/fee_heir_education_info_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_fee_heir_education_info_entry_selected_bg"
+		textureFile = "gfx/interface/fee_heir_education_info_entry_selected_bg.dds"
+	}
+	spriteType = {
+		name = "GFX_fee_heir_education_info_adm_button"
+		textureFile = "gfx/interface/fee_heir_education_info_adm_button.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_fee_heir_education_info_dip_button"
+		textureFile = "gfx/interface/fee_heir_education_info_dip_button.dds"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_fee_heir_education_info_mil_button"
+		textureFile = "gfx/interface/fee_heir_education_info_mil_button.dds"
+		transparencecheck = yes
+	}
+}
