@@ -27,8 +27,24 @@ custom_icon = {
 	}
 }
 custom_icon = {
-	name = fee_heir_education_progress_bar
+	name = fee_heir_education_progress_bar_green
 	potential = {
+		check_variable = { which = heirEducationalLevel value = 66 }
+	}
+	frame_variable = heirEducationalLevel
+}
+custom_icon = {
+	name = fee_heir_education_progress_bar_yellow
+	potential = {
+		NOT = { check_variable = { which = heirEducationalLevel value = 66 } }
+		check_variable = { which = heirEducationalLevel value = 33 }
+	}
+	frame_variable = heirEducationalLevel
+}
+custom_icon = {
+	name = fee_heir_education_progress_bar_red
+	potential = {
+		NOT = { check_variable = { which = heirEducationalLevel value = 33 } }
 		check_variable = { which = heirEducationalLevel value = 1 }
 	}
 	frame_variable = heirEducationalLevel

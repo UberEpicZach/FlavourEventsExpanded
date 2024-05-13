@@ -1,9 +1,27 @@
 spriteTypes = {
 	progressbartype = {
-		name = "GFX_fee_heir_education_progress_bar"
+		name = "GFX_fee_heir_education_progress_bar_green"
 		color = { 0.0 0.0 0.0 }
 		colortwo = { 0.0 0.0 0.0 }
-		textureFile1 = "gfx/interface/fee_heir_education_progress_bar.dds"
+		textureFile1 = "gfx/interface/fee_heir_education_progress_bar_green.dds"
+		textureFile2 = "gfx/interface/fee_heir_education_progress_bar_bg.dds"
+		size = { x = 70 y = 12 }
+		effectFile = "gfx/FX/progress.lua"
+	}
+	progressbartype = {
+		name = "GFX_fee_heir_education_progress_bar_yellow"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		textureFile1 = "gfx/interface/fee_heir_education_progress_bar_yellow.dds"
+		textureFile2 = "gfx/interface/fee_heir_education_progress_bar_bg.dds"
+		size = { x = 70 y = 12 }
+		effectFile = "gfx/FX/progress.lua"
+	}
+	progressbartype = {
+		name = "GFX_fee_heir_education_progress_bar_red"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		textureFile1 = "gfx/interface/fee_heir_education_progress_bar_red.dds"
 		textureFile2 = "gfx/interface/fee_heir_education_progress_bar_bg.dds"
 		size = { x = 70 y = 12 }
 		effectFile = "gfx/FX/progress.lua"

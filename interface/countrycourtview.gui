@@ -406,15 +406,29 @@ guiTypes = {
 
 				iconType = {
 					name = "fee_heir_education_progress_bar_bg"
-					position = { x = 6 y = 3 }
+					position = { x = 6 y = 2 }
 					spriteType = "GFX_fee_heir_education_progress_bar_bg"
 					alwaystransparent = yes
 					scripted = yes
 				}
 				iconType = {
-					name = "fee_heir_education_progress_bar"
-					position = { x = 6 y = 3 }
-					spriteType = "GFX_fee_heir_education_progress_bar"
+					name = "fee_heir_education_progress_bar_green"
+					position = { x = 6 y = 2 }
+					spriteType = "GFX_fee_heir_education_progress_bar_green"
+					alwaystransparent = yes
+					scripted = yes
+				}
+				iconType = {
+					name = "fee_heir_education_progress_bar_yellow"
+					position = { x = 6 y = 2 }
+					spriteType = "GFX_fee_heir_education_progress_bar_yellow"
+					alwaystransparent = yes
+					scripted = yes
+				}
+				iconType = {
+					name = "fee_heir_education_progress_bar_red"
+					position = { x = 6 y = 2 }
+					spriteType = "GFX_fee_heir_education_progress_bar_red"
 					alwaystransparent = yes
 					scripted = yes
 				}
