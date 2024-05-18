@@ -741,3 +741,255 @@ country_event = {
 		}
 	}
 }
+
+### Hanybal's Events ###
+
+# The Peasant King Jakub
+country_event = {
+	id = FEE_Bohemia_Events.14
+	title = FEE_Bohemia_Events.14.T
+	desc = FEE_Bohemia_Events.14.D
+	picture = BOHEMIA_CROWN_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = BOH
+		NOT = { is_lesser_in_union = yes }
+		government = monarchy
+		is_year = 1444
+		NOT = { is_year = 1450 }
+	}
+
+	mean_time_to_happen = {
+		years = 5
+	}
+
+	option = {
+		name = FEE_Bohemia_Events.14.OPT1  # He is the chosen one.
+
+		define_ruler = {
+			name = "Jakub"
+			dynasty = "Přemyslid"
+			age = 45
+			claim = 80
+			adm = 6
+			dip = 6
+			mil = 6
+			male = yes
+			culture = czech
+			religion = hussite
+		}
+
+		add_ruler_personality = charismatic_negotiator_personality
+		add_ruler_personality = fee_boh_peasant_king_personality
+	}
+
+	option = {
+		name = FEE_Bohemia_Events.14.OPT2  # He is just a harmless old fool. Send him back with some money.
+
+		add_treasury = -10
+	}
+}
+
+# The Second Defenestration of Prague
+country_event = {
+	id = FEE_Bohemia_Events.15
+	title = FEE_Bohemia_Events.15.T
+	desc = FEE_Bohemia_Events.15.D
+	picture = SECOND_PRAGUE_DEFENESTRATION_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = BOH
+		owns = 266
+		if = {
+			limit = { religion = hussite }
+			ruler_religion = catholic
+		}
+		is_year = 1480
+ 	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = FEE_Bohemia_Events.15.OPT1  # God be with us, the light is between us, and our faithful are without underwear.
+
+		set_country_flag = fee_boh_second_defenestration
+		add_stability = -1
+		random = {
+			chance = 50
+			kill_advisor_by_category_effect = { ADM = yes}
+		}
+		random = {
+			chance = 50
+			kill_advisor_by_category_effect = { DIP = yes}
+		}
+		random = {
+			chance = 50
+			kill_advisor_by_category_effect = { MIL = yes}
+		}
+	}
+}
+
+# Religious Peace of Kutná Hora
+country_event = {
+	id = FEE_Bohemia_Events.16
+	title = FEE_Bohemia_Events.16.T
+	desc = FEE_Bohemia_Events.16.D
+	picture = REFORM_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = BOH
+		has_country_flag = fee_boh_second_defenestration
+		is_year = 1480
+ 	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = FEE_Bohemia_Events.16.OPT1  # The definitive end of the Hussite Wars.
+
+		clr_country_flag = fee_boh_second_defenestration
+		add_stability_or_adm_power = yes
+		add_country_modifier = {
+			name = fee_boh_religious_peace_kutna_hora
+			duration = -1
+		}
+	}
+}
+
+# Olomoucká Univerzita
+country_event = {
+	id = FEE_Bohemia_Events.17
+	title = FEE_Bohemia_Events.17.T
+	desc = FEE_Bohemia_Events.17.D
+	picture = UNIVERSITY_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = BOH
+		owns = 4237
+		4237 = { NOT = { has_building = university } }
+		religion = catholic
+		OR = {
+			is_emperor = yes
+			reverse_has_opinion = {
+				who = emperor
+				value = 100
+			}
+			government_rank = 3
+		}
+		is_year = 1550
+ 	}
+
+	mean_time_to_happen = {
+		years = 10
+	}
+
+	option = {
+		name = FEE_Bohemia_Events.17.OPT1  # This is one of many steps in reforming the Kingdom.
+		add_prestige = 50
+		remove_country_modifier = fee_boh_religious_peace_kutna_hora
+		add_country_modifier = {
+			name = fee_boh_recatholization
+			duration = 18250
+		}
+		4237 = { add_building = university }
+	}
+
+	option = {
+		name = FEE_Bohemia_Events.17.OPT2  # We should not provoke the Hussites and others.
+		add_stability_or_adm_power = yes
+	}
+}
+
+# The Royal Capital of Prague
+country_event = {
+	id = FEE_Bohemia_Events.18
+	title = FEE_Bohemia_Events.18.T
+	desc = FEE_Bohemia_Events.18.D
+	picture = PRAGUE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = BOH
+		owns = 266
+		OR = {
+			current_age = age_of_absolutism
+			current_age = age_of_revolutions
+		}
+ 	}
+
+	mean_time_to_happen = {
+		years = 50
+
+		modifier = {
+			factor = 1.5
+			current_age = age_of_absolutism
+		}
+
+		modifier = {
+			factor = 0.5
+			current_age = age_of_revolutions
+		}
+
+		modifier = {
+			factor = 0.5
+			has_institution = enlightenment
+		}
+
+		modifier = {
+			factor = 0.5
+			adm = 5
+			dip = 5
+			mil = 5
+		}
+	}
+
+	option = {
+		name = FEE_Bohemia_Events.18.OPT1  # Prague has been united.
+		ai_chance = { factor = 50 }
+		add_adm_power = -100
+		266 = {
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+			add_province_modifier = {
+				name = fee_boh_unified_prague
+				duration = -1
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Bohemia_Events.18.OPT2  # We should not provoke the Hussites and others.
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 100
+				OR = {
+					ruler_has_personality = greedy_personality
+					num_of_loans = 1
+				}
+			}
+		}
+		add_years_of_income = 1.5
+		add_absolutism = -25
+		266 = {
+			add_province_modifier = {
+				name = fee_boh_divided_prague
+				duration = -1
+			}
+		}
+	}
+}
