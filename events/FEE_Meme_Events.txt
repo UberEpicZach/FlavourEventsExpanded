@@ -1,8 +1,526 @@
 namespace = FEE_Meme_Events
+
+#Designed by Chu_Ko_Noob, coded by babysnake
+
+#Ma-ja-pa-hit. Got it
 country_event = {
 	id = FEE_Meme_Events.1
 	title = FEE_Meme_Events.1.T
 	desc = FEE_Meme_Events.1.D
+	picture = SHIP_SAILING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		has_global_flag = fee_meme_active
+		capital_scope = {
+			continent = europe
+		}
+		exists = MAJ
+		OR = {
+			east_java_area = {
+				has_discovered = ROOT
+			}
+			central_java_area = {
+				has_discovered = ROOT
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = FEE_Meme_Events.1.OPT1
+
+		add_prestige_or_monarch_power = { amount = 10 }
+		if = {
+			limit = {
+				exists = MAJ
+			}
+			MAJ = {
+				capital_scope = {
+					discover_country = ROOT
+				}
+			}
+		}
+	}
+}
+
+# Japan now with guns
+country_event = {
+	id = FEE_Meme_Events.2
+	title = FEE_Meme_Events.2.T
+	desc = FEE_Meme_Events.2.D
+	picture = SHIP_SAILING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		has_global_flag = fee_meme_active
+		capital_scope = {
+			region = japan_region
+		}
+		any_owned_province = {
+			has_province_modifier = nanban_port
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = FEE_Meme_Events.2.OPT1
+
+		every_country = {
+			limit = {
+				capital_scope = {
+					region = japan_region
+				}
+			}
+			add_country_modifier = {
+				name = fee_bill_wurtz_now_with_guns
+				duration = 10950
+			}
+		}
+	}
+}
+
+# Indulgences are a scam
+country_event = {
+	id = FEE_Meme_Events.3
+	title = FEE_Meme_Events.3.T
+	desc = FEE_Meme_Events.3.D
+	picture = REFORM_eventPicture
+
+	trigger = {
+		has_global_flag = fee_meme_active
+		religion = catholic
+		capital_scope = {
+			continent = europe
+		}
+		is_year = 1510
+		NOT = { has_country_flag = fee_bill_wurtz_indulgences }
+		NOT = { has_country_flag = counter_reformation }
+	}
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = fee_bill_wurtz_indulgences
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	option = {
+		name = FEE_Meme_Events.3.OPT1
+
+		add_reform_desire = 0.03
+		add_treasury = 400
+	}
+
+	option = {
+		name = FEE_Meme_Events.3.OPT2
+
+		add_reform_desire = 0.03
+		add_stability_or_adm_power = yes
+	}
+}
+
+# Portugal's dream
+country_event = {
+	id = FEE_Meme_Events.4
+	title = FEE_Meme_Events.4.T
+	desc = FEE_Meme_Events.4.D
+	picture = SHIP_SAILING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		has_global_flag = fee_meme_active
+		tag = POR
+		# coromandel
+		1340 = {
+			has_merchant = ROOT
+		}
+		# malacca
+		1361 = {
+			has_merchant = ROOT
+		}
+		# zanzibar
+		1448 = {
+			has_merchant = ROOT
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = FEE_Meme_Events.4.OPT1
+
+		add_country_modifier = {
+			name = fee_bill_wurtz_spice_trade_monopoly
+			duration = 10950
+		}
+	}
+}
+
+# Damn we gotta start pillaging some stuff
+country_event = {
+	id = FEE_Meme_Events.5
+	title = FEE_Meme_Events.5.T
+	desc = FEE_Meme_Events.5.D
+	picture = HORDE_ON_HORSEBACK_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		has_global_flag = fee_meme_active
+		capital_scope = { continent = europe }
+		is_year = 1501
+		owns_or_non_sovereign_subject_of = 852
+		is_subject = no
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = {
+		name = FEE_Meme_Events.5.OPT1
+
+		add_country_modifier = {
+			name = fee_bill_wurtz_quest_for_pillaging
+			duration = 5475
+		}
+	}
+}
+
+# Question 1 beaver
+country_event = {
+	id = FEE_Meme_Events.6
+	title = FEE_Meme_Events.6.T
+	desc = FEE_Meme_Events.6.D
+	picture = TRADE_GOODS_FURS_FISH_AND_SALT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		has_global_flag = fee_meme_active
+		capital_scope = { continent = europe }
+		colonial_canada = { has_discovered = ROOT }
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = FEE_Meme_Events.6.OPT1
+
+		add_prestige_or_monarch_power = { amount = 10 }
+
+		change_price = {
+			trade_goods = fur
+			key = FEE_Bill_Wurtz_Fur_Modifier
+			value = 0.1
+			duration = 7300	# a perma increase to furs stacks a bit too much, might to be temporary later
+		}
+	}
+}
+
+# Question 2 steal
+country_event = {
+	id = FEE_Meme_Events.7
+	title = FEE_Meme_Events.7.T
+	desc = FEE_Meme_Events.7.D
+	picture = SHIP_SAILING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		has_global_flag = fee_meme_active
+		tag = NED
+		OR = {
+			trade_company_indonesia = {
+				has_discovered = ROOT
+			}
+			trade_company_moluccas = {
+				has_discovered = ROOT
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = FEE_Meme_Events.7.OPT1
+
+		add_country_modifier = {
+			name = fee_bill_wurtz_stolen_spice_trade
+			duration = 7300
+		}
+	}
+}
+# sugar slaves
+country_event = {
+	id = FEE_Meme_Events.8
+	title = FEE_Meme_Events.8.T
+	desc = FEE_Meme_Events.8.D
+	picture = TRADE_GOODS_PLANTATION_GOODS_IN_WAREHOUSE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		has_global_flag = fee_meme_active
+		NOT = { has_country_flag = fee_bill_wurtz_sugar_slaves }
+		any_subject_country = {
+			capital_scope = {
+				colonial_region = colonial_the_carribean
+			}
+		}
+		OR = {
+			any_subject_country = {
+				any_owned_province = {
+					trade_goods = slaves
+				}
+			}
+			any_owned_province = {
+				trade_goods = slaves
+			}
+		}
+	}
+
+	immediate = {
+		hidden_effect = { set_country_flag = fee_bill_wurtz_sugar_slaves }
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = FEE_Meme_Events.8.OPT1
+
+		add_years_of_income = 1
+	}
+}
+
+# France is broke
+country_event = {
+	id = FEE_Meme_Events.9
+	title = FEE_Meme_Events.9.T
+	desc = FEE_Meme_Events.9.D
+	picture = BAD_WITH_MONARCH_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		has_global_flag = fee_meme_active
+		tag = FRA
+		current_age = age_of_revolutions
+		has_disaster_progress = {
+			disaster = revolution
+			value = 90
+		}
+		num_of_loans = 1
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = FEE_Meme_Events.9.OPT1
+
+		add_disaster_progress = {
+			disaster = revolution
+			value = 10
+		}
+	}
+}
+
+# haitian (not actually haiti) revolution
+country_event = {
+	id = FEE_Meme_Events.10
+	title = FEE_Meme_Events.10.T
+	desc = FEE_Meme_Events.10.D
+	picture = REVOLT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		has_global_flag = fee_meme_active
+		is_subject = yes
+		capital_scope = { colonial_region = colonial_the_carribean }
+		current_age = age_of_revolutions
+		has_first_revolution_started = yes
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = FEE_Meme_Events.10.OPT1
+
+		add_stability = -1
+		add_liberty_desire = 60
+		random_owned_province = {
+			spawn_rebels = {
+				type = revolutionary_rebels
+				size = 3
+			}
+		}
+		random_owned_province = {
+			spawn_rebels = {
+				type = revolutionary_rebels
+				size = 3
+			}
+		}
+		random_owned_province = {
+			spawn_rebels = {
+				type = revolutionary_rebels
+				size = 3
+			}
+		}
+	}
+}
+
+# steam powered
+country_event = {
+	id = FEE_Meme_Events.11
+	title = FEE_Meme_Events.11.T
+	desc = FEE_Meme_Events.11.D
+	picture = TRADE_GOODS_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		has_global_flag = fee_meme_active
+		has_institution = industrialization
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = FEE_Meme_Events.11.OPT1
+
+		add_country_modifier = {
+			name = fee_bill_wurtz_first_to_steam
+			duration = 1825
+		}
+	}
+}
+
+
+#Designed by Brave Sir Chu, coded by Sir LordVarangian the Wise in the ways of science
+
+#The Complaining Peasant
+country_event = {
+	id = FEE_Meme_Events.100
+	title = FEE_Meme_Events.100.T
+	desc = FEE_Meme_Events.100.D
+	picture = WESTERNISATION_eventPicture
+
+	trigger = {
+		has_global_flag = fee_meme_active
+		NOT = { is_year = 1550 }
+		NOT = { legitimacy = 40 }
+		is_female = yes
+		NOT = { has_country_flag = complaining_peasant }
+	}
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	immediate = {
+		hidden_effect = { set_country_flag = complaining_peasant }
+	}
+
+	option = {
+		name = FEE_Meme_Events.100.OPT1
+
+	}
+
+	option = {
+		name = FEE_Meme_Events.100.OPT2
+
+		country_event = { id = FEE_Meme_Events.101 }
+	}
+}
+
+#An anarcho-syndicalist commune
+country_event = {
+	id = FEE_Meme_Events.101
+	title = FEE_Meme_Events.101.T
+	desc = FEE_Meme_Events.101.D
+	picture = REFORM_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Meme_Events.101.OPT1
+
+		country_event = { id = FEE_Meme_Events.102 }
+	}
+}
+
+#Well I didn't vote for you…
+country_event = {
+	id = FEE_Meme_Events.102
+	title = FEE_Meme_Events.102.T
+	desc = FEE_Meme_Events.102.D
+	picture = BAD_WITH_MONARCH_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Meme_Events.102.OPT1
+
+		country_event = { id = FEE_Meme_Events.103 }
+	}
+}
+
+#Strange Women
+country_event = {
+	id = FEE_Meme_Events.103
+	title = FEE_Meme_Events.103.T
+	desc = FEE_Meme_Events.103.D
+	picture = DEBATE_REPUBLICAN_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Meme_Events.103.OPT1
+
+		add_stability = -1
+		change_government_reform_progress = -50
+	}
+	option = {
+		name = FEE_Meme_Events.103.OPT2
+
+		add_stability = -3
+		change_government = republic
+		add_government_reform = peasants_republic
+	}
+}
+
+# Start Event
+country_event = {
+	id = FEE_Meme_Events.1000
+	title = FEE_Meme_Events.1000.T
+	desc = FEE_Meme_Events.1000.D
 	picture = DIPLOMACY_eventPicture
 
 	fire_only_once = yes
@@ -18,20 +536,20 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Meme_Events.1.OPT1
+		name = FEE_Meme_Events.1000.OPT1
 		set_global_flag = fee_meme_active
 	}
 
 	option = {
-		name = FEE_Meme_Events.1.OPT2
+		name = FEE_Meme_Events.1000.OPT2
 	}
 }
 
 #Holding out for a Hero
 country_event = {
-	id = FEE_Meme_Events.2
-	title = FEE_Meme_Events.2.T
-	desc = FEE_Meme_Events.2.D
+	id = FEE_Meme_Events.2000
+	title = FEE_Meme_Events.2000.T
+	desc = FEE_Meme_Events.2000.D
 	picture = MILITARY_CAMP_eventPicture
 
 	trigger = {
@@ -57,7 +575,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Meme_Events.2.OPT1
+		name = FEE_Meme_Events.2000.OPT1
 
 		create_general = {
 			tradition = 75

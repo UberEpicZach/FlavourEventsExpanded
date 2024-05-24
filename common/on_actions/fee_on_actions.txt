@@ -97,7 +97,7 @@ on_siege_won_country = {
 on_startup = {
 	country_event = { id = flavour_and_events_expanded_events.1 } # set flag
 	country_event = { #set the meme flag
-		id = FEE_Meme_Events.1
+		id = FEE_Meme_Events.1000
 		days = 10
 		random = 5
 	}
