@@ -79,14 +79,16 @@ country_event = {
 		NOT = {
 			any_province = { has_province_modifier = fee_may_mightiest_tolla }
 		}
-		NOT = {
-			any_province = {
-				OR = {
-					region = mexico_region
-					region = central_america_region
-				}
-				region_for_scope_province = {
-					higher_development_than = PREV
+		capital_scope = {
+			NOT = {
+				any_province = {
+					OR = {
+						region = mexico_region
+						region = central_america_region
+					}
+					region_for_scope_province = {
+						higher_development_than = PREV
+					}
 				}
 			}
 		}
