@@ -57,24 +57,67 @@
  FEE_Bohemia_Events.13.D: "Disaster has befallen us! Prague, once one of the great cultural and economic centers, has fallen to the invading enemy! We can only curse the foolishness of our rulers who, scorning the example of past rulers, sought peace with enemies on the field rather than through a siege of their capital city. A full quarter of the city has been levelled and even the great cathedral has suffered damage."
  FEE_Bohemia_Events.13.OPT1: "Will we ever recover?"
 
+ FEE_Bohemia_Events.14.T: "The Peasant King Jakub"
+ FEE_Bohemia_Events.14.D: "In 1445, a tall peasant with greying hair, dressed in a poor regal robe, appeared in Stadice. He settled in the middle of the village green and began to tell passers-by that he was the peasant king Jakub and he was of the Přemyslid dynasty. He is said to be sent by Wenceslas I to restore order in the kingdom. He had a natural authority and spoke of Bohemia's future so eloquently that thousands of people came to listen to his words. Later he established a council of four elders and a scribe who published his manifestos and letters.\n\nWhen the nobility learned of him, they sent guards to arrest him. Jakub went without resistance as he wished for them to take him to Prague. They granted his wish and took him and a handful of his closest relatives to Prague. There he was received by the burgomasters and revealed that he was the chosen one who would become the new king."
+ FEE_Bohemia_Events.14.OPT1: "He is the chosen one."
+ FEE_Bohemia_Events.14.OPT2: "He is just a harmless old fool. Send him back with some money."
+
+ FEE_Bohemia_Events.15.T: "The Second Defenestration of Prague"
+ FEE_Bohemia_Events.15.D: "In 1480, several townspeople and 4 Hussite priests were arrested and tortured, resulting in one of the priests dying. The tension between Hussites and Catholics came to a head in 1483. Radical Hussites used alleged information that Catholics would disrupt the Hussite festival as a pretext for a coup d'état. One morning, the radical Hussites invaded the Old Town Hall and threw the burgomaster from a window, while at the New Town Hall, they killed several councillors and threw them from windows. They imprisoned the remaining councillors who confessed that they planned to kill several Hussites and expel Hussite priests from Prague."
+ FEE_Bohemia_Events.15.OPT1: "God be with us, the light is between us, and our faithful are without underwear."
+
+ FEE_Bohemia_Events.16.T: "Religious Peace of Kutná Hora"
+ FEE_Bohemia_Events.16.D: "After the Second Defenestration of Prague, the religious situation was slowly developing towards religious reconciliation. The Religious Peace of Kutná Hora concluded two years after the defenestration at the Czech lands Diet in Kutná Hora between Hussites and Catholics. They declared the Council of Basel as the base law of the land. Finally, Hussites and Catholics were equal in the eyes of the law, thus achieving religious peace."
+ FEE_Bohemia_Events.16.OPT1: "The definitive end of the Hussite Wars."
+
+ FEE_Bohemia_Events.17.T: "Olomoucká Univerzita"
+ FEE_Bohemia_Events.17.D: "Olomouc had a long history in education before the Jesuit College was elevated to a university. In 1249, the Bishop of Olomouc, Bruno ze Šamberka, established a school. In 1566, the Bishop of Olomouc Vilém Prusinovský invited the Jesuits to establish a college as he planned to recatholize Moravia. Vilém was following the policy of the Council of Trent and forcing Hussites to accept his authority, but he died in 1572. In 1573 Holy Roman Emperor Maximilian II elevated the college to a university, thus becoming the second university in the Kingdom of Bohemia."
+ FEE_Bohemia_Events.17.OPT1: "This is one of many steps in reforming the Kingdom."
+ FEE_Bohemia_Events.17.OPT2: "We should not provoke the Hussites and others."
+
+ FEE_Bohemia_Events.18.T: "The Royal Capital of Prague"
+ FEE_Bohemia_Events.18.D: "Since earlier times, several monarchs have tried to unify the city of Prague. However, they were either unsuccessful or the unification only lasted for a short time. The burgomasters and councillors of the separate cities (Old Town of Prague, Malá Strana, Hradčany, and the New Town of Prague) carefully protected their privileges and independence. Now, the situation is an anachronism hindering the development of the city. Recently, [Root.Monarch.GetName] has been passing several reforms, one of them being the unification of Prague. If unified, Prague will become a more important political, cultural, economic, and social centre in Bohemia."
+ FEE_Bohemia_Events.18.OPT1: "Prague has been united."
+ FEE_Bohemia_Events.18.OPT2: "Perhaps for the right price, they can keep their independence."
+
  #Modifiers
  fee_boh_infertility: "Infertility"
+ desc_fee_boh_infertility: ""
  fee_boh_noble_concesions: "Noble Concessions"
+ desc_fee_boh_noble_concesions: ""
  fee_boh_hussite_ingenuity: "Hussite Ingenuity"
+ desc_fee_boh_hussite_ingenuity: ""
  boh_coinage_pioneer: "Coinage Pioneer"
+ desc_boh_coinage_pioneer: ""
  fee_boh_thaler: "Thaler"
+ desc_fee_boh_thaler: ""
  fee_boh_greedy_rulership: "Greedy Rulership"
+ desc_fee_boh_greedy_rulership: ""
  fee_boh_religion_enforced: "Religion Enforced"
+ desc_fee_boh_religion_enforced: ""
 
  fee_boh_defenestration_prague: "Defenestration of Prague"
  fee_boh_charter_universal_peace_union_rivals: "Charter of a Universal Peace Union"
  fee_boh_charter_universal_peace_union: "Charter of a Universal Peace Union"
  fee_boh_charter_universal_peace_union_france: "Charter of a Universal Peace Union"
 
+ fee_boh_religious_peace_kutna_hora: "Religious Peace of Kutná Hora"
+ desc_fee_boh_religious_peace_kutna_hora: ""
+ fee_boh_recatholization: "Recatholization"
+ desc_fee_boh_recatholization: ""
+ fee_boh_unified_prague: "Unified Prague"
+ desc_fee_boh_unified_prague: ""
+ fee_boh_divided_prague: "Divided Prague"
+ desc_fee_boh_divided_prague: ""
+
  #Opinion
  fee_boh_linked_thrones: "Linked Thrones"
  fee_boh_claiming_thrones: "Claimed Thrones"
 
  #Tooltips
-
  fee_boh_thaler_princes_tt: "§YAll princes in the Holy Roman Empire will receive a bonus of §!§G+5%§!§Y trade efficiency for 20 years.§!"
+
+ #Personalities
+ fee_boh_peasant_king_personality: "The Peasant King"
+ desc_fee_boh_peasant_king_personality: "According to legend, the founder of the Přemyslid dynasty was a peasant from Stadice village. Now the rightful heir of Bohemia has returned to one of the same origin as Přemysl the Ploughman."
+ fee_boh_peasant_king_personality_die_desc: "Our people mourn the passing of the most virtuous [Root.Monarch.GetTitle] in our lifetime."

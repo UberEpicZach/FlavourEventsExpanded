@@ -99,11 +99,15 @@
  FEE_Swabia_Events.20.D: "After years of infighting, the defensive pact known as the Swabian League has at last come to an end."
  FEE_Swabia_Events.20.OPT1: "What is a defensive pact when the greatest threat comes from inside?"
 
- FEE_Swabia_Events.23.T: "The Founding of the Swabian League"
- FEE_Swabia_Events.23.D: "A number of states in southern Germany, in the area of the ancient duchy of Swabia, have seen it necessary to form a Swabian League, to fend off aggressors on their borders. They hope that it will bring peace and prosperity to the region, and see the dawn of a new golden era for Swabia."
- FEE_Swabia_Events.23.OPT1: "May they grow strong together! Just not too strong…"
+ FEE_Swabia_Events.21.T: "The Refounding of the University of Wurzburg"
+ FEE_Swabia_Events.21.D: "The University of Wurzburg had originally been founded in 1402 as one of the earliest universities in Germany. However, due to lack of financial security and the lack of discipline among the student body led to the university closing down. Indeed, in addition to gambling, drinking and general chaos, the first chancellor of the school was stabbed by a scholar's assistant. \n\nIn 1545, Prince Bishop Julius Echter von Mespelbrunn deemed it prudent to reopen the university through a new founding, letting the school reestablish itself with a new charter guaranteeing its existence as an independent body. In its first centuries it served as a \"bastion of Catholicism in the face of Protestantism\" as stated by its charter, but eventually non-catholics would be allowed to study there. Despite the centuries filled with political chaos that would follow for Wurzburg, the second founding lasted, and the University of Wurzburg is a respected academic institution to this day."
+ FEE_Swabia_Events.21.OPT1: "We must refound it for the future of our city."
 
-# Opinionoo Modifiers
+# Opinion Modifiers
  fee_swa_league_member: "League Member"
  fee_swa_refused_league_aid: "Refused to give League Aid"
  fee_swa_swabian_reconciliation: "Swabian Reconciliation"
+
+# Modifiers
+ fee_swa_university_wurzburg: "The University of Wurzburg"
+ desc_fee_swa_university_wurzburg: "We have refounded the University of Wurzburg, leading the way for the development and prestige of our grand city!"
