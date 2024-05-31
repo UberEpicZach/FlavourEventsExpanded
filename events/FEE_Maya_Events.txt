@@ -86,9 +86,7 @@ country_event = {
 						region = mexico_region
 						region = central_america_region
 					}
-					region_for_scope_province = {
-						higher_development_than = PREV
-					}
+					higher_development_than = PREV
 				}
 			}
 		}
