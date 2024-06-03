@@ -36,7 +36,8 @@ fee_jfn_flourishing_muslim_community = {
 fee_jfn_strong_muslim_community = {
 	local_production_efficiency = 0.25
 	trade_goods_size_modifier = 0.25
-	local_missionary_strength = -1.00
+	local_missionary_strength = -0.10
+	religion = yes
 }
 
 fee_jfn_fighting_aliens = {
