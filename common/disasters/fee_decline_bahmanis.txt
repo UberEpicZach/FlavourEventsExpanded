@@ -1,14 +1,12 @@
 fee_decline_bahmanis = {
 	potential = {
 		tag = BAH
-		is_year = 1494
-		NOT = {
-			OR = {
-				current_age = age_of_absolutism
-				current_age = age_of_revolutions
-			}
-		}
 		NOT = { has_country_flag = fee_had_decline_bahmanis }
+		is_year = 1494
+		OR = {
+			current_age = age_of_discovery
+			current_age = age_of_reformation
+		}
 		is_free_or_tributary_trigger = yes
 		num_of_cities = 25
 		religion_group = muslim
@@ -134,7 +132,7 @@ fee_decline_bahmanis = {
 			AND = {
 				custom_trigger_tooltip = {
 					tooltip = FEE_BAH_DISASTER_DURATION_TT
-					has_country_flag = fee_had_decline_bahmanis 
+					has_country_flag = fee_had_decline_bahmanis
 					had_country_flag = {
 						flag = fee_had_decline_bahmanis
 						days = 1825
@@ -159,11 +157,11 @@ fee_decline_bahmanis = {
 		events = { disaster_fee_decline_of_the_bahmani_sultanate.8 }
 		random_events = {
 			1000 = 0
-			#disaster_fee_decline_of_the_bahmani_sultanate.3 - Decadence in Bahmanis
-			#disaster_fee_decline_of_the_bahmani_sultanate.4 - Peasant Discontent
-			#disaster_fee_decline_of_the_bahmani_sultanate.5 - War Exhaustion
-			#disaster_fee_decline_of_the_bahmani_sultanate.6 - Court Intrigue Abounds
-			#disaster_fee_decline_of_the_bahmani_sultanate.7 - Disloyalty in the Provinces
+			100 = disaster_fee_decline_of_the_bahmani_sultanate.3 # Decadence in Bahmanis
+			100 = disaster_fee_decline_of_the_bahmani_sultanate.4 # Peasant Discontent
+			100 = disaster_fee_decline_of_the_bahmani_sultanate.5 # War Exhaustion
+			100 = disaster_fee_decline_of_the_bahmani_sultanate.6 # Court Intrigue Abounds
+			100 = disaster_fee_decline_of_the_bahmani_sultanate.7 # Disloyalty in the Provinces
 		}
 	}
 }

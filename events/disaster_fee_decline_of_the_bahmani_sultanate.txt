@@ -4,8 +4,9 @@ country_event = {
 	id = disaster_fee_decline_of_the_bahmani_sultanate.1 #Decline of the Bahmani Sultanate
 	title = disaster_fee_decline_of_the_bahmani_sultanate.1.T
 	desc = disaster_fee_decline_of_the_bahmani_sultanate.1.D
-	major = yes
+	picture = BAD_WITH_MONARCH_eventPicture
 
+	major = yes
 	is_triggered_only = yes
 
 	immediate = {
@@ -24,8 +25,9 @@ country_event = {
 	id = disaster_fee_decline_of_the_bahmani_sultanate.2 #The Sultanate Triumphs
 	title = disaster_fee_decline_of_the_bahmani_sultanate.2.T
 	desc = disaster_fee_decline_of_the_bahmani_sultanate.2.D
-	major = yes
+	picture = GOOD_WITH_MONARCH_eventPicture
 
+	major = yes
 	is_triggered_only = yes
 
 	immediate = {
@@ -69,9 +71,14 @@ country_event = {
 	id = disaster_fee_decline_of_the_bahmani_sultanate.3 #Decadence in Bahmanis
 	title = disaster_fee_decline_of_the_bahmani_sultanate.3.T
 	desc = disaster_fee_decline_of_the_bahmani_sultanate.3.D
-	major = yes
+	picture = BANKRUPTCY_eventPicture
 
+	major = yes
 	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_country_modifier = fee_disaster_bah_decadence }
+	}
 
 	option = {
 		name = disaster_fee_decline_of_the_bahmani_sultanate.3.OPT1
@@ -93,8 +100,15 @@ country_event = {
 	id = disaster_fee_decline_of_the_bahmani_sultanate.4 #Peasant Discontent
 	title = disaster_fee_decline_of_the_bahmani_sultanate.4.T
 	desc = disaster_fee_decline_of_the_bahmani_sultanate.4.D
+	picture = ANGRY_MOB_eventPicture
 
 	is_triggered_only = yes
+
+	trigger = {
+		any_owned_province = {
+			controlled_by = ROOT
+		}
+	}
 
 	immediate = {
 		hidden_effect = {
@@ -103,17 +117,13 @@ country_event = {
 					controlled_by = ROOT
 				}
 				save_event_target_as = fee_bah_peasant_1
-				set_province_flag = fee_bah_temp
 			}
 			random_owned_province = {
 				limit = {
 					controlled_by = ROOT
-					NOT = { has_province_flag = fee_bah_temp }
+					NOT = { province_id = event_target:fee_bah_peasant_1 }
 				}
 				save_event_target_as = fee_bah_peasant_2
-			}
-			every_owned_province = {
-				clr_province_flag = fee_bah_temp
 			}
 		}
 	}
@@ -121,13 +131,18 @@ country_event = {
 	option = {
 		name = disaster_fee_decline_of_the_bahmani_sultanate.4.OPT1
 
+		add_stability = -1
 		event_target:fee_bah_peasant_1 = {
 			anti_tax_rebels = 2
 		}
-		event_target:fee_bah_peasant_2 = {
-			anti_tax_rebels = 2
+		if = {
+			limit = {
+				has_saved_event_target = fee_bah_peasant_2
+			}
+			event_target:fee_bah_peasant_2 = {
+				anti_tax_rebels = 2
+			}
 		}
-		add_stability = -1
 	}
 
 	option = {
@@ -142,6 +157,7 @@ country_event = {
 	id = disaster_fee_decline_of_the_bahmani_sultanate.5 #War Exhaustion
 	title = disaster_fee_decline_of_the_bahmani_sultanate.5.T
 	desc = disaster_fee_decline_of_the_bahmani_sultanate.5.D
+	picture = WOUNDED_SOLDIERS_eventPicture
 
 	is_triggered_only = yes
 
@@ -172,13 +188,12 @@ country_event = {
 	id = disaster_fee_decline_of_the_bahmani_sultanate.6 #Court Intrigue Abounds
 	title = disaster_fee_decline_of_the_bahmani_sultanate.6.T
 	desc = disaster_fee_decline_of_the_bahmani_sultanate.6.D
+	picture = COURT_eventPicture
 
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = {
-			has_ruler_flag = fee_bah_court_intrigue
-		}
+		NOT = { has_ruler_flag = fee_bah_court_intrigue }
 	}
 
 	immediate = {
@@ -191,6 +206,7 @@ country_event = {
 		name = disaster_fee_decline_of_the_bahmani_sultanate.6.OPT1
 
 		trigger = {
+			NOT = { has_country_modifier = fee_disaster_bah_noble_unrest }
 			OR = {
 				has_estate = estate_maratha
 				has_estate = estate_rajput
@@ -268,6 +284,10 @@ country_event = {
 
 		ai_chance = { factor = 30 }
 
+		trigger = {
+			NOT = { has_country_modifier = fee_disaster_bah_hostile_court }
+		}
+
 		if = {
 			limit = {
 				stability = -2
@@ -304,6 +324,7 @@ country_event = {
 		name = disaster_fee_decline_of_the_bahmani_sultanate.6.OPT3
 
 		trigger = {
+			NOT = { has_country_modifier = fee_disaster_bah_disloyal_brahmins }
 			OR = {
 				has_estate = estate_church
 				has_estate = estate_brahmins
@@ -363,23 +384,21 @@ country_event = {
 
 		ai_chance = { factor = 10 }
 
-		tooltip = {
+		if = {
+			limit = {
+				stability = -1
+			}
 			add_stability = -2
 		}
-		custom_tooltip = FEE_BAH_LOSE_STABILITY_TT
-		hidden_effect = {
-			for = {
-				amount = 2
-				effect = "
-					if = {
-						limit = {
-							stability = -2
-						}
-						add_stability = -1
-					}
-					else = { add_adm_power = -100 }
-				"
+		else_if = {
+			limit = {
+				stability = -2
 			}
+			add_stability = -1
+			add_adm_power = -100
+		}
+		else = {
+			add_adm_power = -200
 		}
 		random = {
 			chance = 33
@@ -396,6 +415,7 @@ country_event = {
 	id = disaster_fee_decline_of_the_bahmani_sultanate.7 #Disloyalty in the Provinces
 	title = disaster_fee_decline_of_the_bahmani_sultanate.7.T
 	desc = disaster_fee_decline_of_the_bahmani_sultanate.7.D
+	picture = ANGRY_MOB_eventPicture
 
 	is_triggered_only = yes
 
@@ -442,7 +462,7 @@ country_event = {
 		ai_chance = {
 			factor = 0
 		}
-		
+
 		custom_tooltip = FEE_BAH_AUTONOMY_TT
 		event_target:fee_bah_disloyal_1 = {
 			set_local_autonomy = 100
@@ -469,6 +489,7 @@ country_event = {
 	id = disaster_fee_decline_of_the_bahmani_sultanate.8 #Rise of the Deccani Sultanates (removed "Five" as there are only 4 and not all of them will spawn every time)
 	title = disaster_fee_decline_of_the_bahmani_sultanate.8.T
 	desc = disaster_fee_decline_of_the_bahmani_sultanate.8.D
+	picture = CIVIL_WAR_eventPicture
 
 	fire_only_once = yes
 	major = yes
@@ -478,8 +499,41 @@ country_event = {
 		num_of_owned_provinces_with = {
 			value = 10
 			OR = {
-				local_autonomy = 1
+				local_autonomy_above_min = 1
 				controlled_by = REB
+			}
+		}
+		OR = {
+			AND = {
+				NOT = { exists = AHM }
+				AHM = {
+					any_core_province = { owned_by = ROOT }
+				}
+			}
+			AND = {
+				NOT = { exists = BRR }
+				BRR = {
+					any_core_province = { owned_by = ROOT }
+				}
+			}
+			AND = {
+				NOT = { exists = BIJ }
+				BIJ = {
+					any_core_province = { owned_by = ROOT }
+				}
+			}
+			AND = {
+				NOT = { exists = GOC }
+				GOC = {
+					any_core_province = { owned_by = ROOT }
+				}
+			}
+			AND = {
+				num_of_subjects = 1
+				any_subject_country = {
+					is_colonial_nation = no
+					is_subject_other_than_tributary_trigger = yes
+				}
 			}
 		}
 	}
@@ -489,34 +543,89 @@ country_event = {
 			if = {
 				limit = {
 					NOT = { exists = AHM } #Ahmednagar
-					any_owned_province = { is_core = AHM }
+					AHM = {
+						any_core_province = { owned_by = ROOT }
+					}
 				}
 				create_vassal = AHM
-				AHM = { change_religion = shiite }
+				AHM = {
+					adopt_reform_progress = ROOT
+					change_government = monarchy
+					change_religion = shiite
+					save_event_target_as = rebel_leader
+				}
 			}
 			if = {
 				limit = {
 					NOT = { exists = BRR } #Berar
-					any_owned_province = { is_core = BRR }
+					BRR = {
+						any_core_province = { owned_by = ROOT }
+					}
 				}
 				create_vassal = BRR
-				BRR = { change_religion = shiite }
+				BRR = {
+					adopt_reform_progress = ROOT
+					change_government = monarchy
+					change_religion = shiite
+					if = {
+						limit = {
+							NOT = { has_saved_event_target = rebel_leader }
+						}
+						save_event_target_as = rebel_leader
+					}
+				}
 			}
 			if = {
 				limit = {
 					NOT = { exists = BIJ } #Bijapur
-					any_owned_province = { is_core = BIJ }
+					BIJ = {
+						any_core_province = { owned_by = ROOT }
+					}
 				}
 				create_vassal = BIJ
-				BIJ = { change_religion = shiite }
+				BIJ = {
+					adopt_reform_progress = ROOT
+					change_government = monarchy
+					change_religion = shiite
+					if = {
+						limit = {
+							NOT = { has_saved_event_target = rebel_leader }
+						}
+						save_event_target_as = rebel_leader
+					}
+				}
 			}
 			if = {
 				limit = {
 					NOT = { exists = GOC } #Golconda
-					any_owned_province = { is_core = GOC }
+					GOC = {
+						any_core_province = { owned_by = ROOT }
+					}
 				}
 				create_vassal = GOC
-				GOC = { change_religion = shiite }
+				GOC = {
+					adopt_reform_progress = ROOT
+					change_government = monarchy
+					change_religion = shiite
+					if = {
+						limit = {
+							NOT = { has_saved_event_target = rebel_leader }
+						}
+						save_event_target_as = rebel_leader
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_saved_event_target = rebel_leader }
+				}
+				random_subject_country = {
+					limit = {
+						is_colonial_nation = no
+						is_subject_other_than_tributary_trigger = yes
+					}
+					save_event_target_as = rebel_leader
+				}
 			}
 		}
 	}
@@ -530,7 +639,16 @@ country_event = {
 				days = 1
 			}
 			every_subject_country = {
-				set_government_rank = 2
+				limit = {
+					is_colonial_nation = no
+					is_subject_other_than_tributary_trigger = yes
+				}
+				if = {
+					limit = {
+						NOT = { government_rank = 2 }
+					}
+					set_government_rank_force = 2
+				}
 				every_owned_province = {
 					set_local_autonomy = 0
 				}
@@ -540,16 +658,17 @@ country_event = {
 				}
 			}
 		}
-		AHM = { #defaults to Ahmednagar since loc refers to them as the leader, otherwise will use the player tag as the leader
-			every_country = {
-				limit = {
-					is_subject_of = BAH
-				}
-				create_alliance = PREV
+		every_subject_country = {
+			limit = {
+				is_colonial_nation = no
+				is_subject_other_than_tributary_trigger = yes
 			}
+			create_alliance = event_target:rebel_leader
+		}
+		event_target:rebel_leader = {
 			declare_war_with_cb = {
 				casus_belli = cb_independence_war
-				who = BAH
+				who = ROOT
 			}
 		}
 	}
@@ -559,7 +678,11 @@ country_event = {
 
 		trigger = {
 			ai = no
-			AHM = { is_subject_of = BAH }
+			AHM = {
+				is_subject_of = ROOT
+				is_colonial_nation = no
+				is_subject_other_than_tributary_trigger = yes
+			}
 		}
 
 		hidden_effect = {
@@ -568,30 +691,39 @@ country_event = {
 				days = 1
 			}
 			every_subject_country = {
-				set_government_rank = 2
+				limit = {
+					is_colonial_nation = no
+					is_subject_other_than_tributary_trigger = yes
+				}
+				if = {
+					limit = {
+						NOT = { government_rank = 2 }
+					}
+					set_government_rank_force = 2
+				}
 				every_owned_province = {
 					set_local_autonomy = 0
 				}
 				country_event = {
 					id = disaster_fee_decline_of_the_bahmani_sultanate.9
-					days = 2
+					days = 2 #if fired after 1 day, uses vassal fl to determine how many units should be spawned
 				}
+			}
+		}
+		every_subject_country = {
+			limit = {
+				is_colonial_nation = no
+				is_subject_other_than_tributary_trigger = yes
+			}
+			create_alliance = event_target:rebel_leader
+		}
+		event_target:rebel_leader = {
+			declare_war_with_cb = {
+				casus_belli = cb_independence_war
+				who = ROOT
 			}
 		}
 		switch_tag = AHM
-		AHM = {
-			every_country = {
-				limit = {
-					is_subject_of = BAH
-				}
-				create_alliance = PREV
-			}
-			declare_war_with_cb = {
-				casus_belli = cb_independence_war
-				who = BAH
-			}
-		}
-		
 	}
 
 	option = {
@@ -599,7 +731,11 @@ country_event = {
 
 		trigger = {
 			ai = no
-			BRR = { is_subject_of = BAH }
+			BRR = {
+				is_subject_of = ROOT
+				is_colonial_nation = no
+				is_subject_other_than_tributary_trigger = yes
+			}
 		}
 
 		hidden_effect = {
@@ -608,29 +744,39 @@ country_event = {
 				days = 1
 			}
 			every_subject_country = {
-				set_government_rank = 2
+				limit = {
+					is_colonial_nation = no
+					is_subject_other_than_tributary_trigger = yes
+				}
+				if = {
+					limit = {
+						NOT = { government_rank = 2 }
+					}
+					set_government_rank_force = 2
+				}
 				every_owned_province = {
 					set_local_autonomy = 0
 				}
 				country_event = {
 					id = disaster_fee_decline_of_the_bahmani_sultanate.9
-					days = 2
+					days = 2 #if fired after 1 day, uses vassal fl to determine how many units should be spawned
 				}
+			}
+		}
+		every_subject_country = {
+			limit = {
+				is_colonial_nation = no
+				is_subject_other_than_tributary_trigger = yes
+			}
+			create_alliance = event_target:rebel_leader
+		}
+		event_target:rebel_leader = {
+			declare_war_with_cb = {
+				casus_belli = cb_independence_war
+				who = ROOT
 			}
 		}
 		switch_tag = BRR
-		BRR = {
-			every_country = {
-				limit = {
-					is_subject_of = BAH
-				}
-				create_alliance = PREV
-			}
-			declare_war_with_cb = {
-				casus_belli = cb_independence_war
-				who = BAH
-			}
-		}
 	}
 
 	option = {
@@ -638,7 +784,11 @@ country_event = {
 
 		trigger = {
 			ai = no
-			BIJ = { is_subject_of = BAH }
+			BIJ = {
+				is_subject_of = ROOT
+				is_colonial_nation = no
+				is_subject_other_than_tributary_trigger = yes
+			}
 		}
 
 		hidden_effect = {
@@ -647,29 +797,39 @@ country_event = {
 				days = 1
 			}
 			every_subject_country = {
-				set_government_rank = 2
+				limit = {
+					is_colonial_nation = no
+					is_subject_other_than_tributary_trigger = yes
+				}
+				if = {
+					limit = {
+						NOT = { government_rank = 2 }
+					}
+					set_government_rank_force = 2
+				}
 				every_owned_province = {
 					set_local_autonomy = 0
 				}
 				country_event = {
 					id = disaster_fee_decline_of_the_bahmani_sultanate.9
-					days = 2
+					days = 2 #if fired after 1 day, uses vassal fl to determine how many units should be spawned
 				}
+			}
+		}
+		every_subject_country = {
+			limit = {
+				is_colonial_nation = no
+				is_subject_other_than_tributary_trigger = yes
+			}
+			create_alliance = event_target:rebel_leader
+		}
+		event_target:rebel_leader = {
+			declare_war_with_cb = {
+				casus_belli = cb_independence_war
+				who = ROOT
 			}
 		}
 		switch_tag = BIJ
-		BIJ = {
-			every_country = {
-				limit = {
-					is_subject_of = BAH
-				}
-				create_alliance = PREV
-			}
-			declare_war_with_cb = {
-				casus_belli = cb_independence_war
-				who = BAH
-			}
-		}
 	}
 
 	option = {
@@ -677,7 +837,11 @@ country_event = {
 
 		trigger = {
 			ai = no
-			GOC = { is_subject_of = BAH }
+			GOC = {
+				is_subject_of = ROOT
+				is_colonial_nation = no
+				is_subject_other_than_tributary_trigger = yes
+			}
 		}
 
 		hidden_effect = {
@@ -686,29 +850,39 @@ country_event = {
 				days = 1
 			}
 			every_subject_country = {
-				set_government_rank = 2
+				limit = {
+					is_colonial_nation = no
+					is_subject_other_than_tributary_trigger = yes
+				}
+				if = {
+					limit = {
+						NOT = { government_rank = 2 }
+					}
+					set_government_rank_force = 2
+				}
 				every_owned_province = {
 					set_local_autonomy = 0
 				}
 				country_event = {
 					id = disaster_fee_decline_of_the_bahmani_sultanate.9
-					days = 2
+					days = 2 #if fired after 1 day, uses vassal fl to determine how many units should be spawned
 				}
+			}
+		}
+		every_subject_country = {
+			limit = {
+				is_colonial_nation = no
+				is_subject_other_than_tributary_trigger = yes
+			}
+			create_alliance = event_target:rebel_leader
+		}
+		event_target:rebel_leader = {
+			declare_war_with_cb = {
+				casus_belli = cb_independence_war
+				who = ROOT
 			}
 		}
 		switch_tag = GOC
-		GOC = {
-			every_country = {
-				limit = {
-					is_subject_of = BAH
-				}
-				create_alliance = PREV
-			}
-			declare_war_with_cb = {
-				casus_belli = cb_independence_war
-				who = BAH
-			}
-		}
 	}
 }
 
@@ -716,6 +890,7 @@ country_event = {
 	id = disaster_fee_decline_of_the_bahmani_sultanate.9 #Deccani Mobilization
 	title = disaster_fee_decline_of_the_bahmani_sultanate.9.T
 	desc = disaster_fee_decline_of_the_bahmani_sultanate.9.D
+	picture = BATTLE_eventPicture
 
 	is_triggered_only = yes
 
@@ -743,12 +918,12 @@ country_event = {
 	id = disaster_fee_decline_of_the_bahmani_sultanate.10 #Collapse of the Bahmani Sultanate
 	title = disaster_fee_decline_of_the_bahmani_sultanate.10.T
 	desc = disaster_fee_decline_of_the_bahmani_sultanate.10.D
+	picture = BAD_WITH_MONARCH_eventPicture
 
 	major = yes
 	is_triggered_only = yes
 
 	trigger = {
-		tag = BAH
 		has_disaster = fee_decline_bahmanis
 	}
 
