@@ -71,4 +71,10 @@ spriteTypes = {
 		noOfFrames = 3
 		loadType = "INGAME"
 	}
+	spriteType = {
+		name = "GFX_disaster_fee_decline_bahmanis"
+		texturefile = "gfx//interface//disasters//civil_war.dds"
+		noOfFrames = 3
+		loadType = "INGAME"
+	}
 }

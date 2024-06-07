@@ -12,6 +12,7 @@
  fee_naples_conspiracy_barons_1: "First Conspirancy Of the Barons"
  fee_naples_conspiracy_barons_2: "Second Conspirancy Of the Barons"
  fee_decline_vijayanagar: "Decline of Vijayanagar"
+ fee_decline_bahmanis: "Decline of the Bahmani Sultanate"
 
 # Events:
  # Portugal
@@ -742,6 +743,58 @@
   disaster_fee_decline_of_vijayanagar.17.OPT1: "Elu heddarigalannu punar nirmisi"
   disaster_fee_decline_of_vijayanagar.17.OPT2: "Vyaparavannu nasavagi bidi"
 
+ #Bahmanis
+
+  disaster_fee_decline_of_the_bahmani_sultanate.1.T: "Decline of the Bahmani Sultanate"
+  disaster_fee_decline_of_the_bahmani_sultanate.1.D: "The Bahmani Sultanate has presided over a brilliant cultural flowing in the hitherto backwater region of the Deccani plateau in central India. However, like the Hindu god Shiva, the history of the Bahmani  Sultanate is a delicate balance of creation and destruction. As defining to its success as its culture was, it's long enmity with the Vijayanagara Empire, where neither side could ever truly defeat the other, ultimately exhausting both powers. In addition, the state's relative youth and rapid early expansion meant that little attention had been paid to securing proper succession laws and balancing the power of the estates. Only a strong ruler, such as Ahmad Shah Wali was, could maintain the delicate balance of life and death, of creation and destruction, of Shia and Hindu, and of external and internal threats.\n\nThe current Sultan [Root.Monarch.GetName], however, is not like his forefathers. Under his rule, the Bahmani Sultanate has entered an era of instability. His ineptitude has not only presented a target to his enemies abroad, but the ever-ambitious local Rajas and Emirs as well. Seeing their opportunity, they have began laying plans that, if not thwarted, will ultimately result in the fall of the Bahmani Sultanate itself."
+  disaster_fee_decline_of_the_bahmani_sultanate.1.OPT1: "Disastrous!"
+
+  disaster_fee_decline_of_the_bahmani_sultanate.2.T: "The Sultanate Triumphs"
+  disaster_fee_decline_of_the_bahmani_sultanate.2.D: "Like the great banyan tree, the Sultanate's strong core and massive branches held millions in its sway, providing shelter and security to all. The great cyclone that lashed at our Bahmani state has passed, and though battered, the great tree has survived. Against all odds, we have fought back the invaders, curbed internal conflicts, and reformed our state to enter a new golden age. This period shall always be a cautionary tale evermore. Our generations shall learn that even the greatest tree can only survive with continual renewal and nourishment by each generation, and we will never forget the pain of loss and the importance of never taking our wealth and power for granted again."
+  disaster_fee_decline_of_the_bahmani_sultanate.2.OPT1: "Peace!"
+
+  disaster_fee_decline_of_the_bahmani_sultanate.3.T: "Decadence in Bahmanis"
+  disaster_fee_decline_of_the_bahmani_sultanate.3.D: "With the great wealth of the Bahmani Sultanate came glorious cultural achievements and a powerful state which revolutionized governance and language in central India. But, as happens with many wealthy nations, the descendants of great and wealthy men often are wealthy and not-so-great men. So it is that vigor has given way to decadence at almost every level of society. The fighting castes, once hardened horse-lords of the Deccani plains, have become indolent and weak. The merchant castes, once working in their place in society without question, have become impertinent and arrogant. Even the clergy, often given to vows of poverty and purity, have in many places abandoned their calling for more earthly pursuits. It seems none can reverse the tide of decadence sweeping across the lands."
+  disaster_fee_decline_of_the_bahmani_sultanate.3.OPT1: "Disgraceful!"
+
+  disaster_fee_decline_of_the_bahmani_sultanate.4.T: "Peasant Discontent"
+  disaster_fee_decline_of_the_bahmani_sultanate.4.D: "Centralized authority in our realm is in a state of continual deterioration. Local magistrates and governors focus on gathering wealth for themselves and their own selfish ends, while our armies are often engaged in foreign conflicts or putting down rebellions at home. Because of this, large parts of the countryside have been left to their own devices, causing brigandage, abuse of authority, and plague spread by soldiers and refugees alike. The pale demon of famine stalks the land as conditions worsen, and unrest among the peasantry only grows each day…"
+  disaster_fee_decline_of_the_bahmani_sultanate.4.OPT1: "Ignore the peasant rabble"
+  disaster_fee_decline_of_the_bahmani_sultanate.4.OPT2: "We must organize a relief effort"
+
+  disaster_fee_decline_of_the_bahmani_sultanate.5.T: "War Exhaustion"
+  disaster_fee_decline_of_the_bahmani_sultanate.5.D: "The constant wars needed to keep our borders intact and keep our rivals in check, paired with the growing domestic insecurities, have taken a massive toll on both our population and our soldiers. The few loyal followers we have left report growing discontent on both fronts, with many begging the Sultan to end the wars and try and restore order at home."
+  disaster_fee_decline_of_the_bahmani_sultanate.5.OPT1: "Ignore their pleas"
+  disaster_fee_decline_of_the_bahmani_sultanate.5.OPT2: "Allow the men to return to their families"
+
+  disaster_fee_decline_of_the_bahmani_sultanate.6.T: "Court Intrigue Abounds"
+  disaster_fee_decline_of_the_bahmani_sultanate.6.D: "As the Bahmani Sultanate navigates its time of crisis, various factions within the royal court itself have sought to take advantage of the instability and carve out power for themselves. From the false piety of the scheming Brahmins, to the nobles who maintain a facade of loyalty while inciting rebellion in the provinces, to even the Sultan's own advisors, it seems none are genuinely loyal, and the air is thick with plots by the factions against the Sultan and even against each other."
+  disaster_fee_decline_of_the_bahmani_sultanate.6.OPT1: "Oppose the Nobles"
+  disaster_fee_decline_of_the_bahmani_sultanate.6.OPT2: "Oppose the Courtiers"
+  disaster_fee_decline_of_the_bahmani_sultanate.6.OPT3: "Will no one rid me of these turbulent priests?"
+  disaster_fee_decline_of_the_bahmani_sultanate.6.OPT4: "Just ignore the problems and pray they go away"
+
+  disaster_fee_decline_of_the_bahmani_sultanate.7.T: "Disloyalty in the Provinces"
+  disaster_fee_decline_of_the_bahmani_sultanate.7.D: "The Bahmanis established themselves as an independent Sultanate from the increasingly cruel and oppressive Delhi Sultanate. Filling the power vacuum left by the collapsing empire, they rapidly expanded throughout the Deccan, with their Persianate administrative system serving them well in incorporating their new conquests.\n\nPerhaps it is a great irony, then, that in their moment of weakness, local rulers now make their own designs on independence from the Bahmani Sultanate, grown decadent in its turn. Many of these local rulers still send representatives to the Sultan's court, putting on smiles and empty gestures while they stoke rebellions and riots, killing local garrisons and melting away again."
+  disaster_fee_decline_of_the_bahmani_sultanate.7.OPT1: "Give concessions to the separatists"
+  disaster_fee_decline_of_the_bahmani_sultanate.7.OPT2: "All rebellions must be crushed!"
+
+  disaster_fee_decline_of_the_bahmani_sultanate.8.T: "Rise of the Deccani Sultanates"
+  disaster_fee_decline_of_the_bahmani_sultanate.8.D: "Having had ample time to amass wealth, loyal followers, and legitimacy, the local Muslim rulers of the Deccan have finally made their move. These regional power blocs, once loyal to the Sultan at [Root.Capital.GetName], have raised their own banners and challenged the Bahmanid right to rule. Their end goal is the fragmentation of the Sultanate and an end to its decades-long hegemony over the Deccan.\n\nAt their head are the Sultanates of Ahmednagar, Berar, Bijapur, and Golconda. With the Sultan of Ahmednagar in the lead, they raised their banners of defiance and proclaimed their own right to the turquoise throne."
+  disaster_fee_decline_of_the_bahmani_sultanate.8.OPT1: "How dare they?!?"
+  disaster_fee_decline_of_the_bahmani_sultanate.8.OPT2: "For the Ahmednagar Sultanate!"
+  disaster_fee_decline_of_the_bahmani_sultanate.8.OPT3: "For the Berari Sultanate!"
+  disaster_fee_decline_of_the_bahmani_sultanate.8.OPT4: "For the Bijapur Sultanate!"
+  disaster_fee_decline_of_the_bahmani_sultanate.8.OPT5: "For the Golconda Sultanate!"
+
+  disaster_fee_decline_of_the_bahmani_sultanate.9.T: "Deccani Mobilization"
+  disaster_fee_decline_of_the_bahmani_sultanate.9.D: "Having long prepared in secret for this day of independence, the local lords of [Root.GetName], now independent Sultans in their own right, have put their resources into play. The fight for independence must be won now, or never!"
+  disaster_fee_decline_of_the_bahmani_sultanate.9.OPT1: "Ok"
+
+  disaster_fee_decline_of_the_bahmani_sultanate.10.T: "Collapse of the Bahmani Sultanate"
+  disaster_fee_decline_of_the_bahmani_sultanate.10.D: "The great Bahmani Sultanate that once loomed large over Central India has fallen. Like a majestic banyan tree, its strong core and massive branches held millions in its sway, providing shelter and security to all. Now, that has ended… The rot that ate away at the very core of the great tree has finally run its deadly course, and great was the falling of it. As the remnants of the Bahmani Sultanate crash to the ground, the only small comfort is that the death and bloodshed are finally slowing, if only because everyone involved is too exhausted to fight any more…"
+  disaster_fee_decline_of_the_bahmani_sultanate.10.OPT1: "And so, another age passes, and a new one begins"
+
 # Modifiers:
  # Portugal
   fee_portuguese_succession_crisis_chaste_king: "Chaste King"
@@ -889,6 +942,23 @@
   fee_disaster_vij_antarika_bhu_vyaparavannu_alapadisi: "Antarika bhu vyaparavannu balapadisi"
   desc_fee_disaster_vij_antarika_bhu_vyaparavannu_alapadisi: ""
 
+ # Bahmanis
+  fee_disaster_bah_decadence: "Decadence"
+  desc_fee_disaster_bah_decadence: ""
+  fee_disaster_bah_disloyal_brahmins: "Disloyal Brahmins"
+  desc_fee_disaster_bah_disloyal_brahmins: ""
+  fee_disaster_bah_demoralized_army: "Demoralized Army"
+  desc_fee_disaster_bah_demoralized_army: ""
+  fee_disaster_bah_noble_unrest: "Noble Unrest"
+  desc_fee_disaster_bah_noble_unrest: ""
+  fee_disaster_bah_new_era: "Dawn of a New Era"
+  desc_fee_disaster_bah_new_era: ""
+  fee_disaster_bah_hostile_court: "Hostile Court"
+  desc_fee_disaster_bah_hostile_court: ""
+  fee_disaster_bah_mobilized_treasury: "Mobilized Treasury"
+  desc_fee_disaster_bah_mobilized_treasury: ""
+  
+
 # Opinion Modifiers:
  fee_portuguese_succession_crisis_acceptance: "Holy Father Accepted"
  fee_portuguese_succession_crisis_rejection: "Holy Father Refused"
@@ -929,6 +999,8 @@
  EST_VAL_FEE_ZEMENE_MESAFINT_REFUSED_RIGHTS: "Demand for Rights Refused: §Y$VAL$%§!"
  EST_VAL_FEE_ZEMENE_MESAFINT_NEGOTIATIONS: "Demand for Rights Negotiated: §Y$VAL$%§!"
  EST_VAL_FEE_ZEMENE_MESAFINT_FULLFILLED_DEMANDS: "Demands for Rights Fulfilled: §Y$VAL$%§!"
+ EST_VAL_FEE_BAH_OPPOSED_NOBLES: "Opposed Nobles: §Y$VAL$%§!"
+ EST_VAL_FEE_BAH_DISLOYAL_BRAHMINS: "Disloyal Brahmins: §Y$VAL$%§!"
 
 # Casus Bellis:
  cb_fee_partition_of_poland: "Partition of Poland"
@@ -998,3 +1070,13 @@
  FEE_VIJ_PROTECTED_TAMIL_AUTONOMY_TT: "Every owned §YTamil province§! in the §YDeccan§! or §YCoromandel§! regions:"
  FEE_VIJ_TAMILS_MIGHT_RISE_TT: "The Tamils might rise against us and meet on the battlefield..."
  FEE_VIJ_TIGER_WILL_ROAR_ONE_LAST_TIME_TT: "The Tiger will roar for the last time..."
+
+ FEE_BAH_LESS_THAN_7_TOTAL_STATS_TT: "[Root.Monarch.GetName]'s £adm£ £dip£ & £mil£ DO NOT add up to at least §Y7§!"
+ FEE_BAH_LESS_THAN_5_TOTAL_STATS_TT: "[Root.Monarch.GetName]'s £adm£ £dip£ & £mil£ DO NOT add up to at least §Y5§!"
+ FEE_BAH_LESS_THAN_3_TOTAL_STATS_TT: "[Root.Monarch.GetName]'s £adm£ £dip£ & £mil£ DO NOT add up to at least §Y3§!"
+ FEE_BAH_BROKE_TO_REBELS_TT: "Rebels have broken the country\n§YOR§!\nThe Deccani Sultanates have declared independence\n"
+ FEE_BAH_DISASTER_DURATION_TT: "Disaster has been active for §Y5 Years§!."
+ FEE_BAH_LOSE_STABILITY_TT: "Excess stability lost will be turned into §R-100§! Administrative Power."
+ FEE_BAH_NO_UNREST_TT: "None of our provinces have any unrest"
+ FEE_BAH_AUTONOMY_TT: "Two provinces that have §Yforeign cores§! will become autonomous."
+ FEE_BAH_REVOLT_TT: "Two provinces that have §Yforeign cores§! will revolt."

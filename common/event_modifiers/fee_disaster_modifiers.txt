@@ -296,3 +296,31 @@ fee_disaster_vij_antarika_bhu_vyaparavannu_alapadisi = {
 	global_own_trade_power = 0.15
 	trade_efficiency = 0.05
 }
+
+
+#Bahmanis
+fee_disaster_bah_decadence = {
+	all_power_cost = 0.05
+	land_morale = -0.1
+}
+fee_disaster_bah_disloyal_brahmins = {
+	tolerance_heathen = -1
+}
+fee_disaster_bah_hostile_court = {
+	advisor_cost = 0.5
+}
+fee_disaster_bah_demoralized_army = {
+	land_morale = -0.1
+	assault_fort_ability = -0.5
+}
+fee_disaster_bah_noble_unrest = {
+	global_unrest = 1
+}
+fee_disaster_bah_mobilized_treasury = {
+	global_tax_income = 24
+}
+fee_disaster_bah_new_era = {
+	land_morale = 0.1
+	stability_cost_modifier = -0.15
+	monthly_reform_progress_modifier = 0.33
+}

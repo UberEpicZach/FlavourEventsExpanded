@@ -203,6 +203,12 @@ on_war_won = {
 	}
 }
 
+on_rebels_break_country = {
+	events = {
+		disaster_fee_decline_of_the_bahmani_sultanate.10
+	}
+}
+
 on_monthly_pulse = {
 	fee_trade_fair_events = yes
 }
