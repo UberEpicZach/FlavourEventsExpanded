@@ -31,11 +31,19 @@ fee_decline_bahmanis = {
 	can_stop = {
 		OR = {
 			has_any_disaster = yes
-			custom_trigger_tooltip = {
-				tooltip = FEE_BAH_NO_UNREST_TT
-				NOT = {
-					any_owned_province = {
-						unrest = 0.1
+			AND = {
+				NOT = { num_of_loans = 10 }
+				stability = 0
+				NOT = { average_autonomy = 50 }
+				ruler_total_stats = {
+					amount = 7
+				}
+				custom_trigger_tooltip = {
+					tooltip = FEE_BAH_NO_UNREST_TT
+					NOT = {
+						any_owned_province = {
+							unrest = 0.1
+						}
 					}
 				}
 			}
