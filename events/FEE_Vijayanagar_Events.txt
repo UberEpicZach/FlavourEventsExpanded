@@ -319,7 +319,10 @@ country_event = {
 
 	trigger = {
 		is_or_was_tag = { tag = VIJ }
-		owns = 541
+		541 = {
+			owned_by = ROOT
+			all_neighbor_province = { owned_by = ROOT }
+		}
 	}
 
 	mean_time_to_happen = {
