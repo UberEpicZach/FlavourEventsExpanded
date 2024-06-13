@@ -192,10 +192,10 @@ fee_decline_vijayanagar = {
 	}
 
 	modifier = {
-		global_unrest = 2
-		legitimacy = -1
-		monthly_splendor = -2
-		prestige = -2
+		global_unrest = 5
+		legitimacy = -2
+		monthly_splendor = -3
+		prestige = -2.5
 	}
 
 	on_start = disaster_fee_decline_of_vijayanagar.1	# Administrative Inefficiency
