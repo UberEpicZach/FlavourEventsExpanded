@@ -118,206 +118,205 @@ country_event = {
 }
 
 #The Latinisation of Novgorod
-country_event = {
-	id = FEE_Novgorod_Events.3
-	title = FEE_Novgorod_Events.3.T
-	desc = FEE_Novgorod_Events.3.D
-	picture = RELIGIOUS_CONVERSION_eventPicture
+# country_event = {
+# 	id = FEE_Novgorod_Events.3
+# 	title = FEE_Novgorod_Events.3.T
+# 	desc = FEE_Novgorod_Events.3.D
+# 	picture = RELIGIOUS_CONVERSION_eventPicture
 
-	fire_only_once = yes
+# 	fire_only_once = yes
 
-	trigger = {
-		tag = NOV
-	}
+# 	trigger = {
+# 		tag = NOV
+# 	}
 
-	mean_time_to_happen = {
-		months = 48
-	}
+# 	mean_time_to_happen = {
+# 		months = 48
+# 	}
 
-	option = {
-		name = FEE_Novgorod_Events.3.OPT1
-		ai_chance = {
-			factor = 25
-		}
+# 	option = {
+# 		name = FEE_Novgorod_Events.3.OPT1
+# 		ai_chance = {
+# 			factor = 25
+# 		}
 
-		change_religion = catholic
-		capital_scope = {
-			change_religion = catholic
-		}
-		if = {
-			limit = {
-				exists = MOS
-			}
-			MOS = {
-				#MOS gains CB
-				country_event = {
-					id = FEE_Novgorod_Events.7
-				}
-			}
-		}
-		random_owned_province = {
-			limit = {
-				is_capital = no
-			}
-			spawn_rebels = {
-				type = orthodox_rebels
-				size = 2
-			}
-		}
-		random_owned_province = {
-			limit = {
-				is_capital = no
-			}
-			spawn_rebels = {
-				type = orthodox_rebels
-				size = 1
-			}
-		}
-	}
+# 		change_religion = catholic
+# 		capital_scope = {
+# 			change_religion = catholic
+# 		}
+# 		if = {
+# 			limit = {
+# 				exists = MOS
+# 			}
+# 			MOS = {
+# 				#MOS gains CB
+# 				country_event = {
+# 					id = FEE_Novgorod_Events.7
+# 				}
+# 			}
+# 		}
+# 		random_owned_province = {
+# 			limit = {
+# 				is_capital = no
+# 			}
+# 			spawn_rebels = {
+# 				type = orthodox_rebels
+# 				size = 2
+# 			}
+# 		}
+# 		random_owned_province = {
+# 			limit = {
+# 				is_capital = no
+# 			}
+# 			spawn_rebels = {
+# 				type = orthodox_rebels
+# 				size = 1
+# 			}
+# 		}
+# 	}
 
-	option = {
-		name = FEE_Novgorod_Events.3.OPT2
-		ai_chance = {
-			factor = 0
-			modifier = {
-				factor = 25
-				treasury = 200
-			}
-		}
+# 	option = {
+# 		name = FEE_Novgorod_Events.3.OPT2
+# 		ai_chance = {
+# 			factor = 0
+# 			modifier = {
+# 				factor = 25
+# 				treasury = 200
+# 			}
+# 		}
 
-		change_religion = catholic
-		capital_scope = {
-			change_religion = catholic
-		}
-		if = {
-			limit = {
-				exists = MOS
-			}
-			add_treasury = -200
-			MOS = {
-				#MOS is bought off
-				add_treasury = 200
-			}
-		}
-		random_owned_province = {
-			limit = {
-				is_capital = no
-			}
-			spawn_rebels = {
-				type = orthodox_rebels
-				size = 2
-			}
-		}
-		random_owned_province = {
-			limit = {
-				is_capital = no
-			}
-			spawn_rebels = {
-				type = orthodox_rebels
-				size = 1
-			}
-		}
-	}
+# 		change_religion = catholic
+# 		capital_scope = {
+# 			change_religion = catholic
+# 		}
+# 		if = {
+# 			limit = {
+# 				exists = MOS
+# 			}
+# 			add_treasury = -200
+# 			MOS = {
+# 				#MOS is bought off
+# 				add_treasury = 200
+# 			}
+# 		}
+# 		random_owned_province = {
+# 			limit = {
+# 				is_capital = no
+# 			}
+# 			spawn_rebels = {
+# 				type = orthodox_rebels
+# 				size = 2
+# 			}
+# 		}
+# 		random_owned_province = {
+# 			limit = {
+# 				is_capital = no
+# 			}
+# 			spawn_rebels = {
+# 				type = orthodox_rebels
+# 				size = 1
+# 			}
+# 		}
+# 	}
 
-	option = {
-		name = FEE_Novgorod_Events.3.OPT3
-		ai_chance = {
-			factor = 75
-			modifier = {
-				factor = 25
-				treasury = 200
-			}
-		}
+# 	option = {
+# 		name = FEE_Novgorod_Events.3.OPT3
+# 		ai_chance = {
+# 			factor = 75
+# 			modifier = {
+# 				factor = 25
+# 				treasury = 200
+# 			}
+# 		}
 
-		change_religion = catholic
-		add_country_modifier = {
-			name = fee_nov_latinisation
-			duration = -1
-		}
-		if = {
-			limit = {
-				exists = MOS
-			}
-			MOS = {
-				country_event = {
-					id = FEE_Novgorod_Events.7
-				}
-			}
-		}
-		random_owned_province = {
-			limit = {
-				is_capital = no
-			}
-			spawn_rebels = {
-				type = orthodox_rebels
-				size = 2
-			}
-		}
-		random_owned_province = {
-			limit = {
-				is_capital = no
-			}
-			spawn_rebels = {
-				type = orthodox_rebels
-				size = 1
-			}
-		}
-		random_owned_province = {
-			limit = {
-				is_capital = no
-			}
-			spawn_rebels = {
-				type = orthodox_rebels
-				size = 1
-			}
-		}
-	}
+# 		change_religion = catholic
+# 		add_country_modifier = {
+# 			name = fee_nov_latinisation
+# 			duration = -1
+# 		}
+# 		if = {
+# 			limit = {
+# 				exists = MOS
+# 			}
+# 			MOS = {
+# 				country_event = {
+# 					id = FEE_Novgorod_Events.7
+# 				}
+# 			}
+# 		}
+# 		random_owned_province = {
+# 			limit = {
+# 				is_capital = no
+# 			}
+# 			spawn_rebels = {
+# 				type = orthodox_rebels
+# 				size = 2
+# 			}
+# 		}
+# 		random_owned_province = {
+# 			limit = {
+# 				is_capital = no
+# 			}
+# 			spawn_rebels = {
+# 				type = orthodox_rebels
+# 				size = 1
+# 			}
+# 		}
+# 		random_owned_province = {
+# 			limit = {
+# 				is_capital = no
+# 			}
+# 			spawn_rebels = {
+# 				type = orthodox_rebels
+# 				size = 1
+# 			}
+# 		}
+# 	}
 
-	option = {
-		name = FEE_Novgorod_Events.3.OPT4
-		ai_chance = {
-			factor = 0
-			modifier = {
-				factor = 25
-				treasury = 200
-			}
-		}
+# 	option = {
+# 		name = FEE_Novgorod_Events.3.OPT4
+# 		ai_chance = {
+# 			factor = 0
+# 			modifier = {
+# 				factor = 25
+# 				treasury = 200
+# 			}
+# 		}
 
-		change_religion = catholic
-		add_country_modifier = {
-			name = fee_nov_latinisation
-			duration = -1
-		}
-		if = {
-			limit = {
-				exists = MOS
-			}
-			add_treasury = -200
-			MOS = {
-				#MOS is bought off
-				add_treasury = 200
-			}
-		}
-		random_owned_province = {
-			spawn_rebels = {
-				type = orthodox_rebels
-				size = 2
-			}
-		}
-		random_owned_province = {
-			spawn_rebels = {
-				type = orthodox_rebels
-				size = 1
-			}
-		}
-		random_owned_province = {
-			spawn_rebels = {
-				type = orthodox_rebels
-				size = 1
-			}
-		}
-	}
-}
+# 		change_religion = catholic
+# 		add_country_modifier = {
+# 			name = fee_nov_latinisation
+# 			duration = -1
+# 		}
+# 		if = {
+# 			limit = {
+# 				exists = MOS
+# 			}
+# 			add_treasury = -200
+# 			MOS = { #MOS is bought off
+# 				add_treasury = 200
+# 			}
+# 		}
+# 		random_owned_province = {
+# 			spawn_rebels = {
+# 				type = orthodox_rebels
+# 				size = 2
+# 			}
+# 		}
+# 		random_owned_province = {
+# 			spawn_rebels = {
+# 				type = orthodox_rebels
+# 				size = 1
+# 			}
+# 		}
+# 		random_owned_province = {
+# 			spawn_rebels = {
+# 				type = orthodox_rebels
+# 				size = 1
+# 			}
+# 		}
+# 	}
+# }
 
 #The Novgorodian Veche
 country_event = {
