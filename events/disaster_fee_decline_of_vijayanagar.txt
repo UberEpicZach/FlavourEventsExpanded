@@ -377,6 +377,21 @@ country_event = {
 	trigger = {
 		has_country_modifier = fee_disaster_vij_purvavyaparada_nasta
 		has_country_modifier = fee_disaster_vij_300_bandarugala_nasta
+		NOT = {
+			num_of_owned_provinces_with = {
+				value = 5
+				region = coromandel_region
+				has_port = yes
+				any_trade_node_member_province = { province_id = 1340 }
+			}
+		}
+		NOT = {
+			num_of_owned_provinces_with = {
+				value = 5
+				region = deccan_region
+				has_port = yes
+			}
+		}
 	}
 
 	option = {
@@ -539,17 +554,34 @@ country_event = {
 		}
 
 		change_adm = -1
-		every_owned_province = {
-			limit = {
-				OR = {
-					area = tanjore_area
-					area = madura_area
-					area = south_carnatic_area
+		custom_tooltip = FEE_VIJ_TANJAVUR_TT
+		tooltip = {
+			random_owned_province = {
+				limit = {
+					OR = {
+						area = tanjore_area
+						area = madura_area
+						area = south_carnatic_area
+					}
 				}
+				add_core = TNJ
+				change_religion = hinduism
+				change_culture = tamil
 			}
-			add_core = TNJ
-			change_religion = hinduism
-			change_culture = tamil
+		}
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						area = tanjore_area
+						area = madura_area
+						area = south_carnatic_area
+					}
+				}
+				add_core = TNJ
+				change_religion = hinduism
+				change_culture = tamil
+			}
 		}
 		release = TNJ
 		hidden_effect = {
@@ -592,18 +624,37 @@ country_event = {
 		}
 
 		add_adm_power = -100
-		every_owned_province = {
-			limit = {
-				OR = {
-					area = mysore_area
-					area = kongu_area
+		custom_tooltip = FEE_VIJ_THE_BALANCING_ACT_TT
+		tooltip = {
+			random_owned_province = {
+				limit = {
+					OR = {
+						area = mysore_area
+						area = kongu_area
+					}
+				}
+				add_core = MYS
+				add_province_modifier = {
+					name = fee_disaster_vij_protected_mysorean_autonomy
+					duration = -1
+					desc = FEE_VIJ_UNTIL_END_DISASTER_TT
 				}
 			}
-			add_core = MYS
-			add_province_modifier = {
-				name = fee_disaster_vij_protected_mysorean_autonomy
-				duration = -1
-				desc = FEE_VIJ_UNTIL_END_DISASTER_TT
+		}
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						area = mysore_area
+						area = kongu_area
+					}
+				}
+				add_core = MYS
+				add_province_modifier = {
+					name = fee_disaster_vij_protected_mysorean_autonomy
+					duration = -1
+					desc = FEE_VIJ_UNTIL_END_DISASTER_TT
+				}
 			}
 		}
 	}
@@ -778,9 +829,9 @@ country_event = {
 		}
 
 		remove_country_modifier = fee_disaster_vij_agagge_akramanagalu
-		add_yearly_manpower = -1
-		add_army_professionalism = -0.05
-		add_army_tradition = -10
+		add_yearly_manpower = -2.5
+		add_army_professionalism = -0.15
+		add_army_tradition = -25
 	}
 
 	option = {
@@ -826,12 +877,15 @@ country_event = {
 			duration = -1
 			disaster = fee_decline_vijayanagar
 		}
-		every_owned_province = {
-			limit = { has_province_modifier = fee_disaster_vij_bandaya_naykaru }
-			remove_province_modifier = fee_disaster_vij_bandaya_naykaru
-			random = {
-				chance = 50
-				particularist_rebels = 1
+		custom_tooltip = FEE_VIJ_CAPITAL_CENTRALISATION_TT
+		hidden_effect = {
+			every_owned_province = {
+				limit = { has_province_modifier = fee_disaster_vij_bandaya_naykaru }
+				remove_province_modifier = fee_disaster_vij_bandaya_naykaru
+				random = {
+					chance = 50
+					particularist_rebels = 1
+				}
 			}
 		}
 	}
@@ -849,7 +903,7 @@ country_event = {
 	}
 }
 
-# Capital Centralisation
+# Reinforce internal land trade
 country_event = {
 	id = disaster_fee_decline_of_vijayanagar.17
 	title = disaster_fee_decline_of_vijayanagar.17.T
@@ -860,7 +914,13 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		has_country_modifier = fee_disaster_vij_sagarottara_vyaparadalli_nasta
+		OR = {
+			has_country_modifier = fee_disaster_vij_sagarottara_vyaparadalli_nasta
+			AND = {
+				has_country_modifier = fee_disaster_vij_purvavyaparada_nasta
+				has_country_modifier = fee_disaster_vij_300_bandarugala_nasta
+			}
+		}
 	}
 
 	option = {
