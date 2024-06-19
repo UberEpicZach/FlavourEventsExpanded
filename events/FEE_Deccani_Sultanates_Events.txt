@@ -1,0 +1,499 @@
+namespace = FEE_Deccani_Sultanates_Events
+
+# A New Capital
+country_event = {
+	id = FEE_Deccani_Sultanates_Events.1
+	title = FEE_Deccani_Sultanates_Events.1.T
+	desc = FEE_Deccani_Sultanates_Events.1.D
+	picture = CITY_VIEW_EventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_or_was_tag = { tag = AHM }
+		is_year = 1494
+		owns = 544
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = FEE_Deccani_Sultanates_Events.1.OPT1
+
+		ai_chance = {
+			factor = 0.5
+		}
+
+		if = {
+			limit = {
+				NOT = { capital = 544 }
+			}
+			set_capital = 544
+		}
+		544 = {
+			add_province_modifier = {
+				name = fee_deccani_sultanates_a_new_capital
+				duration = -1
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Deccani_Sultanates_Events.1.OPT2
+
+		ai_chance = {
+			factor = 0.25
+		}
+
+		add_treasury = -25
+		if = {
+			limit = {
+				NOT = { capital = 544 }
+			}
+			set_capital = 544
+		}
+		544 = {
+			random_list = {
+				33 = {
+					add_base_tax = 3
+				}
+				33 = {
+					add_base_production = 3
+				}
+				33 = {
+					add_base_manpower = 3
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Deccani_Sultanates_Events.1.OPT3
+
+		trigger = {
+			NOT = { capital = 544 }
+		}
+
+		ai_chance = {
+			factor = 0.25
+		}
+
+		add_adm_power = 50
+	}
+}
+
+# Public Water Network
+country_event = {
+	id = FEE_Deccani_Sultanates_Events.2
+	title = FEE_Deccani_Sultanates_Events.2.T
+	desc = FEE_Deccani_Sultanates_Events.2.D
+	picture = CITY_DEVELOPMENT_EventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 569
+		569 = {
+			development = 15
+			num_of_buildings_in_province = 4
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = FEE_Deccani_Sultanates_Events.2.OPT1
+
+		ai_chance = {
+			factor = 0.5
+			modifier = {
+				factor = 0.5
+				NOT = { years_of_income = 0.5 }
+			}
+		}
+
+		add_years_of_income = -0.5
+		569 = {
+			add_base_tax = 2
+			add_province_modifier = {
+				name = fee_deccani_sultanates_public_waterworks_of_bijapur
+				duration = -1
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Deccani_Sultanates_Events.2.OPT2
+
+		ai_chance = {
+			factor = 0.35
+			modifier = {
+				factor = 0.5
+				NOT = { years_of_income = 0.25 }
+			}
+		}
+
+		add_years_of_income = -0.25
+		569 = {
+			add_province_modifier = {
+				name = fee_deccani_sultanates_mediocre_public_waterworks_of_bijapur
+				duration = -1
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Deccani_Sultanates_Events.2.OPT3
+
+		ai_chance = {
+			factor = 0.15
+		}
+
+		add_years_of_income = 0.1
+		569 = {
+			add_base_tax = -2
+			add_province_modifier = {
+				name = fee_deccani_sultanates_not_enough_water
+				duration = 3650
+			}
+			particularist_rebels = 3
+		}
+	}
+}
+
+# The Hundred Bazaars
+country_event = {
+	id = FEE_Deccani_Sultanates_Events.3
+	title = FEE_Deccani_Sultanates_Events.3.T
+	desc = FEE_Deccani_Sultanates_Events.3.D
+	picture = MERCHANTS_TALKING_EventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		DIP = 4
+		owns = 569
+		569 = {
+			has_trade_building_trigger = yes
+			has_production_building_trigger = yes
+			base_production = 7
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = fee_the_hundred_bazaars_event
+		}
+	}
+
+	option = {
+		name = FEE_Deccani_Sultanates_Events.3.OPT1
+
+		ai_chance = {
+			factor = 0.9
+			modifier = {
+				factor = 0.5
+				NOT = { years_of_income = 1 }
+			}
+		}
+
+		add_years_of_income = -1
+		add_country_modifier = {
+			name = fee_deccani_sultanates_bijapuri_mint
+			duration = 18250
+		}
+		569 = {
+			add_or_upgrade_trade_building = yes
+			add_province_modifier = {
+				name = fee_deccani_sultanates_hundred_bazaars
+				duration = -1
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Deccani_Sultanates_Events.3.OPT2
+
+		ai_chance = {
+			factor = 0.1
+		}
+
+		add_years_of_income = 0.25
+		add_corruption = 3
+		add_country_modifier = {
+			name = fee_deccani_sultanates_unrestricted_free_market
+			duration = 18250
+		}
+		569 = {
+			add_province_modifier = {
+				name = fee_deccani_sultanates_unregulated_trade
+				duration = -1
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Deccani_Sultanates_Events.3.OPT3
+
+		highlight = yes
+		trigger = {
+			is_or_was_tag = { tag = MUG }
+		}
+
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0.5
+				NOT = { years_of_income = 1.25 }
+			}
+		}
+
+		add_years_of_income = -1.25
+		add_country_modifier = {
+			name = fee_deccani_sultanates_bijapuri_mint
+			duration = 18250
+		}
+		if = {
+			limit = {
+				NOT = { capital = 569 }
+			}
+			set_capital = 569
+		}
+		569 = {
+			add_or_upgrade_trade_building = yes
+			add_province_modifier = {
+				name = fee_deccani_sultanates_hundred_bazaars
+				duration = -1
+			}
+			add_province_modifier = {
+				name = fee_deccani_sultanates_winter_capital_of_the_mughals
+				duration = -1
+			}
+			deccan_region = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = fee_deccani_sultanates_winter_capital_of_the_mughals_region
+					duration = -1
+				}
+			}
+		}
+	}
+}
+
+# Cultural Center for the Deccan
+country_event = {
+	id = FEE_Deccani_Sultanates_Events.4
+	title = FEE_Deccani_Sultanates_Events.4.T
+	desc = FEE_Deccani_Sultanates_Events.4.D
+	picture = GOOD_WITH_MONARCH_EventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			is_or_was_tag = { tag = MUG }
+			is_or_was_tag = { tag = BIJ }
+		}
+		has_global_flag = fee_the_hundred_bazaars_event
+		is_year = 1600
+		religion_group = muslim
+		owns = 569
+		569 = {
+			is_capital_of = ROOT
+			OR = {
+				NOT = { has_dlc = "Mandate of Heaven" }
+				is_prosperous = yes
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = FEE_Deccani_Sultanates_Events.4.OPT1
+
+		569 = {
+			add_province_modifier = {
+				name = fee_deccani_sultanates_deccani_cultural_center
+				duration = -1
+			}
+		}
+	}
+}
+
+# The Darush-Shafa
+country_event = {
+	id = FEE_Deccani_Sultanates_Events.5
+	title = FEE_Deccani_Sultanates_Events.5.T
+	desc = FEE_Deccani_Sultanates_Events.5.D
+	picture = COLONIZATION_EventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 569
+		religion_group = muslim
+		is_year = 1540
+		OR = {
+			full_idea_group = innovativeness_ideas
+			full_idea_group = infrastructure_ideas
+			AND = {
+				has_dlc = "Rule Britannia"
+				innovativeness = 100
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = FEE_Deccani_Sultanates_Events.5.OPT1
+
+		ai_chance = {
+			factor = 0.5
+			modifier = {
+				factor = 0.5
+				NOT = { years_of_income = 0.5 }
+			}
+		}
+
+		add_years_of_income = -0.5
+		if = {
+			limit = {
+				has_dlc = "Rule Britannia"
+			}
+			change_innovativeness = 5
+		}
+		add_country_modifier = {
+			name = fee_deccani_sultanates_hospitals_of_bijapur
+			duration = -1
+		}
+	}
+
+	option = {
+		name = FEE_Deccani_Sultanates_Events.5.OPT1
+
+		ai_chance = {
+			factor = 0.5
+		}
+
+		add_prestige = 3
+		add_years_of_income = 0.2
+	}
+}
+
+# Ratirahasya - How to please a King
+country_event = {
+	id = FEE_Deccani_Sultanates_Events.6
+	title = FEE_Deccani_Sultanates_Events.6.T
+	desc = FEE_Deccani_Sultanates_Events.6.D
+	picture = COLONIZATION_EventPicture
+
+	trigger = {
+		capital_scope = {
+			region = deccan_region
+		}
+		DIP = 3
+		has_idea_group = court_ideas
+		has_regency = no
+		NOT = { has_ruler_flag = fee_has_had_ratirahasya }
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_ruler_flag = fee_has_had_ratirahasya
+		}
+	}
+
+	option = {
+		name = FEE_Deccani_Sultanates_Events.6.OPT1
+
+		ai_chance = { factor = 0.5 }
+
+		add_adm_power = -100
+		if = {
+			limit = {
+				uses_piety = yes
+			}
+			add_piety = -15
+			add_prestige = 25
+			add_ruler_modifier = {
+				name = fee_deccani_sultanates_institutionalized_ratirahasya
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				religion = hinduism
+			}
+			add_prestige = 25
+			add_ruler_modifier = {
+				name = fee_deccani_sultanates_blessings_of_kamadeva
+				duration = -1
+			}
+		}
+		else = {
+			add_adm_power = -25
+			add_prestige = -10
+			add_ruler_modifier = {
+				name = fee_deccani_sultanates_ratirahasya_in_the_court
+				duration = -1
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Deccani_Sultanates_Events.6.OPT2
+
+		ai_chance = { factor = 0.5 }
+
+		if = {
+			limit = {
+				uses_piety = yes
+			}
+			add_piety = -15
+			add_prestige = -10
+			add_ruler_modifier = {
+				name = fee_deccani_sultanates_throw_this_smut_out
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				religion = hinduism
+			}
+			add_prestige = -10
+			add_adm_power = 100
+			add_ruler_modifier = {
+				name = fee_deccani_sultanates_sensualism_censored
+				duration = -1
+			}
+		}
+		else = {
+			add_adm_power = 25
+			add_prestige = 10
+			add_ruler_modifier = {
+				name = fee_deccani_hindu_rituals_censored
+				duration = -1
+			}
+		}
+	}
+}
