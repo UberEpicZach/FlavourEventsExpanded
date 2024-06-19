@@ -3,13 +3,12 @@ fee_decline_vijayanagar = {
 		is_or_was_tag = { tag = VIJ }
 		NOT = { has_country_flag = fee_vij_decline_stopped }
 		NOT = { is_year = 1650 }
+		is_year = 1447
 	}
 	can_start = {
 		has_any_disaster = no
-		calc_true_if = {
-			amount = 2
+		OR = {
 			NOT = { owns = 541 }
-			num_of_loans = 5
 			NOT = { total_development = 130 }
 			custom_trigger_tooltip = {
 				tooltip = FEE_VIJ_DISASTER_LOST_RECENT_WAR_VS_MUSLIM_TT
