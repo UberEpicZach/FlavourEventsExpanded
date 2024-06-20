@@ -5,7 +5,7 @@ country_event = {
 	id = FEE_Deccani_Sultanates_Events.1
 	title = FEE_Deccani_Sultanates_Events.1.T
 	desc = FEE_Deccani_Sultanates_Events.1.D
-	picture = CITY_VIEW_EventPicture
+	picture = CITY_VIEW_eventPicture
 
 	fire_only_once = yes
 
@@ -89,7 +89,7 @@ country_event = {
 	id = FEE_Deccani_Sultanates_Events.2
 	title = FEE_Deccani_Sultanates_Events.2.T
 	desc = FEE_Deccani_Sultanates_Events.2.D
-	picture = CITY_DEVELOPMENT_EventPicture
+	picture = CITY_DEVELOPMENT_eventPicture
 
 	fire_only_once = yes
 
@@ -170,7 +170,7 @@ country_event = {
 	id = FEE_Deccani_Sultanates_Events.3
 	title = FEE_Deccani_Sultanates_Events.3.T
 	desc = FEE_Deccani_Sultanates_Events.3.D
-	picture = MERCHANTS_TALKING_EventPicture
+	picture = MERCHANTS_TALKING_eventPicture
 
 	fire_only_once = yes
 
@@ -349,7 +349,7 @@ country_event = {
 	id = FEE_Deccani_Sultanates_Events.4
 	title = FEE_Deccani_Sultanates_Events.4.T
 	desc = FEE_Deccani_Sultanates_Events.4.D
-	picture = GOOD_WITH_MONARCH_EventPicture
+	picture = GOOD_WITH_MONARCH_eventPicture
 
 	fire_only_once = yes
 
@@ -395,7 +395,7 @@ country_event = {
 	id = FEE_Deccani_Sultanates_Events.5
 	title = FEE_Deccani_Sultanates_Events.5.T
 	desc = FEE_Deccani_Sultanates_Events.5.D
-	picture = COLONIZATION_EventPicture
+	picture = COLONIZATION_eventPicture
 
 	fire_only_once = yes
 
@@ -458,7 +458,7 @@ country_event = {
 	id = FEE_Deccani_Sultanates_Events.6
 	title = FEE_Deccani_Sultanates_Events.6.T
 	desc = FEE_Deccani_Sultanates_Events.6.D
-	picture = COLONIZATION_EventPicture
+	picture = COLONIZATION_eventPicture
 
 	trigger = {
 		capital_scope = {
