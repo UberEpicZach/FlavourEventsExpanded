@@ -490,7 +490,7 @@ country_event = {
 			limit = {
 				uses_piety = yes
 			}
-			add_piety = -15
+			add_piety = -0.15
 			add_prestige_or_monarch_power = { amount = 25 }
 			add_ruler_modifier = {
 				name = fee_deccani_sultanates_institutionalized_ratirahasya
@@ -526,7 +526,7 @@ country_event = {
 			limit = {
 				uses_piety = yes
 			}
-			add_piety = -15
+			add_piety = 0.15
 			add_prestige = -10
 			add_ruler_modifier = {
 				name = fee_deccani_sultanates_throw_this_smut_out
