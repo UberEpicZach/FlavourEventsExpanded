@@ -39,6 +39,51 @@ on_province_owner_change = {
 	}
 	if = {
 		limit = {
+			NOT = { has_province_modifier = fee_deccani_sultanates_new_imperial_capital_region }
+			OR = {
+				region = deccan_region
+				region = coromandel_region
+			}
+			owner = {
+				owns = 569
+				capital = 569
+			}
+			569 = {
+				has_province_modifier = fee_deccani_sultanates_new_imperial_capital
+			}
+		}
+		add_province_modifier = {
+			name = fee_deccani_sultanates_new_imperial_capital_region
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			province_id = 569
+			OR = {
+				deccan_region = {
+					has_province_modifier = fee_deccani_sultanates_new_imperial_capital_region
+				}
+				coromandel_region = {
+					has_province_modifier = fee_deccani_sultanates_new_imperial_capital_region
+				}
+			}
+		}
+		deccan_region = {
+			limit = {
+				has_province_modifier = fee_deccani_sultanates_new_imperial_capital_region
+			}
+			remove_province_modifier = fee_deccani_sultanates_new_imperial_capital_region
+		}
+		coromandel_region = {
+			limit = {
+				has_province_modifier = fee_deccani_sultanates_new_imperial_capital_region
+			}
+			remove_province_modifier = fee_deccani_sultanates_new_imperial_capital_region
+		}
+	}
+	if = {
+		limit = {
 			NOT = { has_province_modifier = fee_deccani_sultanates_winter_capital_of_the_mughals_region }
 			region = deccan_region
 			owner = {
@@ -53,7 +98,7 @@ on_province_owner_change = {
 			duration = -1
 		}
 	}
-	else_if = {
+	if = {
 		limit = {
 			province_id = 569
 			deccan_region = {
@@ -74,18 +119,58 @@ on_capital_moved = {
 		limit = {
 			FROM = {
 				province_id = 569
-				has_province_modifier = fee_deccani_sultanates_winter_capital_of_the_mughals
+				has_province_modifier = fee_deccani_sultanates_new_imperial_capital
 				is_capital = no
 			}
 		}
 		FROM = {
-			remove_province_modifier = fee_deccani_sultanates_winter_capital_of_the_mughals
+			remove_province_modifier = fee_deccani_sultanates_new_imperial_capital
 		}
 		deccan_region = {
 			limit = {
-				has_province_modifier = fee_deccani_sultanates_winter_capital_of_the_mughals_region
+				has_province_modifier = fee_deccani_sultanates_new_imperial_capital_region
 			}
-			remove_province_modifier = fee_deccani_sultanates_winter_capital_of_the_mughals_region
+			remove_province_modifier = fee_deccani_sultanates_new_imperial_capital_region
+		}
+		coromandel_region = {
+			limit = {
+				has_province_modifier = fee_deccani_sultanates_new_imperial_capital_region
+			}
+			remove_province_modifier = fee_deccani_sultanates_new_imperial_capital_region
+		}
+	}
+	else_if = {
+		limit = {
+			province_id = 569
+			NOT = { has_province_modifier = fee_deccani_sultanates_new_imperial_capital }
+			owner = {
+				has_country_flag = fee_deccani_sultanates_southern_capital
+			}
+		}
+		add_province_modifier = {
+			name = fee_deccani_sultanates_new_imperial_capital
+			duration = -1
+			hidden = yes
+		}
+		owner = {
+			deccan_region = {
+				limit = {
+					owned_by = PREV
+				}
+				add_province_modifier = {
+					name = fee_deccani_sultanates_new_imperial_capital_region
+					duration = -1
+				}
+			}
+			coromandel_region = {
+				limit = {
+					owned_by = PREV
+				}
+				add_province_modifier = {
+					name = fee_deccani_sultanates_new_imperial_capital_region
+					duration = -1
+				}
+			}
 		}
 	}
 }
