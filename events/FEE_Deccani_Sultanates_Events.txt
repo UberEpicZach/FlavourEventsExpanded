@@ -429,11 +429,11 @@ country_event = {
 		}
 
 		add_years_of_income = -0.5
-		if = {
-			limit = {
-				has_dlc = "Rule Britannia"
-			}
-			change_innovativeness = 5
+		add_innovativeness_or_monarch_power = {
+			amount = 5
+			adm = 50
+			dip = 50
+			mil = 50
 		}
 		add_country_modifier = {
 			name = fee_deccani_sultanates_hospitals_of_bijapur
@@ -442,13 +442,13 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Deccani_Sultanates_Events.5.OPT1
+		name = FEE_Deccani_Sultanates_Events.5.OPT2
 
 		ai_chance = {
 			factor = 0.5
 		}
 
-		add_prestige = 3
+		add_prestige_or_monarch_power = { amount = 3 }
 		add_years_of_income = 0.2
 	}
 }
@@ -491,7 +491,7 @@ country_event = {
 				uses_piety = yes
 			}
 			add_piety = -15
-			add_prestige = 25
+			add_prestige_or_monarch_power = { amount = 25 }
 			add_ruler_modifier = {
 				name = fee_deccani_sultanates_institutionalized_ratirahasya
 				duration = -1
@@ -501,7 +501,7 @@ country_event = {
 			limit = {
 				religion = hinduism
 			}
-			add_prestige = 25
+			add_prestige_or_monarch_power = { amount = 25 }
 			add_ruler_modifier = {
 				name = fee_deccani_sultanates_blessings_of_kamadeva
 				duration = -1
@@ -546,7 +546,7 @@ country_event = {
 		}
 		else = {
 			add_adm_power = 25
-			add_prestige = 10
+			add_prestige_or_monarch_power = { amount = 25 }
 			add_ruler_modifier = {
 				name = fee_deccani_sultanates_hindu_rituals_censored
 				duration = -1
