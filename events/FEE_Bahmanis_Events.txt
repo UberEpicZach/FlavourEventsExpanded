@@ -291,9 +291,10 @@ country_event = {
 	desc = FEE_Bahmanis_Events.4.D
 	picture = RELIGIOUS_TURMOIL_eventPicture
 
-	fire_only_once = yes
+	is_triggered_only = yes
 
 	trigger = {
+		NOT = { has_ruler_flag = fee_bahmanis_hindu_question }
 		religion_group = muslim
 		capital_scope = {
 			OR = {
@@ -313,10 +314,20 @@ country_event = {
 			religion_group = muslim
 			NOT = { has_province_flag = fee_intolerance }
 		}
+		any_owned_province = {
+			OR = {
+				region = deccan_region
+				region = hindusthan_region
+				region = coromandel_region
+			}
+			religion = hinduism
+		}
 	}
 
-	mean_time_to_happen = {
-		months = 1
+	immediate = {
+		hidden_effect = {
+			set_ruler_flag = fee_bahmanis_hindu_question
+		}
 	}
 
 	option = {
