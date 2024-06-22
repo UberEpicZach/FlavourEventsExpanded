@@ -1,0 +1,289 @@
+namespace = FEE_Calicut_Events
+
+# Arrival of Vasco da Gama
+country_event = {
+	id = FEE_Calicut_Events.1
+	title = FEE_Calicut_Events.1.T
+	desc = FEE_Calicut_Events.1.D
+	picture = EXPLORERS_eventPicture
+
+	major = yes
+	fire_only_once = yes
+
+	trigger = {
+		owns = 534
+		exists = POR
+		534 = {
+			has_discovered = POR
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = FEE_Calicut_Events.1.OPT1
+
+		add_dip_power = 100
+		add_years_of_trade_income = {
+			years = 2
+			custom_tooltip = YEARS_OF_TRADE_INCOME_2
+		}
+		add_innovativeness_or_monarch_power = {
+			amount = 2
+			adm = 20
+			dip = 20
+			mil = 20
+		}
+		add_country_modifier = {
+			name = fee_calicut_calicut_connections
+			duration = 18250
+		}
+		add_opinion = {
+			who = POR
+			modifier = fee_calicut_connections_opinion
+		}
+		reverse_add_opinion = {
+			who = POR
+			modifier = fee_calicut_connections_opinion
+		}
+		534 = {
+			add_province_modifier = {
+				name = fee_calicut_european_quarter
+				duration = 18250
+			}
+			add_trade_modifier = {
+				who = ROOT
+				duration = 18250
+				power = 50
+				key = fee_calicut_trade_modifier_calicut_connections
+			}
+		}
+	}
+}
+
+# Arrival of European Missionaries
+country_event = {
+	id = FEE_Calicut_Events.2
+	title = FEE_Calicut_Events.2.T
+	desc = FEE_Calicut_Events.2.D
+	picture = RELIGION_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 534
+		capital_scope = {
+			superregion = india_superregion
+		}
+		any_known_country = {
+			capital_scope = {
+				superregion = europe_superregion
+			}
+			religion_group = christian
+			has_opinion = {
+				who = ROOT
+				value = 100
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	immediate = {
+		hidden_effect = {
+			random_known_country = {
+				limit = {
+					capital_scope = {
+						superregion = europe_superregion
+					}
+					religion_group = christian
+					has_opinion = {
+						who = ROOT
+						value = 100
+					}
+				}
+				save_event_target_as = fee_european_christian_even_target
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Calicut_Events.2.OPT1
+
+		ai_chance = { factor = 0.75 }
+
+		add_country_modifier = {
+			name = fee_calicut_christian_arrival
+			duration = 18250
+		}
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					religion = hinduism
+				}
+				province_event = { id = FEE_Calicut_Events.3 days = 120 }
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Calicut_Events.2.OPT2
+
+		ai_chance = {
+			factor = 0.25
+			modifier = {
+				factor = 0
+				any_ally = {
+					capital_scope = {
+						continent = europe
+					}
+				}
+			}
+		}
+
+		if = {
+			limit = {
+				any_ally = {
+					capital_scope = {
+						continent = europe
+					}
+				}
+			}
+			every_ally = {
+				limit = {
+					capital_scope = {
+						continent = europe
+					}
+				}
+				ROOT = { break_alliance = PREV }
+			}
+		}
+		custom_tooltip = FEE_Calicut_Events.2.tt
+		hidden_effect = {
+			every_known_country = {
+				limit = {
+					religion_group = christian
+					capital_scope = {
+						continent = europe
+					}
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = fee_calicut_closed_borders_opinion
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Calicut_Events.2.OPT3
+
+		trigger = {
+			has_global_flag = fee_meme_active
+			ai = no
+		}
+
+		ai_chance = { factor = 0 }
+
+		change_religion = event_target:fee_european_christian_even_target
+		add_country_modifier = {
+			name = fee_calicut_indian_desquisition
+			duration = 7300
+		}
+	}
+}
+
+# European Missionaries Gain Proselytes
+province_event = {
+	id = FEE_Calicut_Events.3
+	title = FEE_Calicut_Events.3.T
+	desc = FEE_Calicut_Events.3.D
+	picture = RELIGIOUS_CONVERSION_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Calicut_Events.3.OPT1
+
+		ai_chance = { factor = 0.33 }
+
+		change_religion = event_target:fee_european_christian_even_target
+		hinduism_rebels = 3
+	}
+
+	option = {
+		name = FEE_Calicut_Events.3.OPT2
+
+		ai_chance = { factor = 0.66 }
+
+		random = {
+			chance = 10
+			change_religion = event_target:fee_european_christian_even_target
+		}
+		if = {
+			limit = {
+				event_target:fee_european_christian_even_target = {
+					religion = catholic
+				}
+			}
+			catholic_rebels = 3
+		}
+		else_if = {
+			limit = {
+				event_target:fee_european_christian_even_target = {
+					religion = protestant
+				}
+			}
+			protestant_rebels = 3
+		}
+		else_if = {
+			limit = {
+				event_target:fee_european_christian_even_target = {
+					religion = reformed
+				}
+			}
+			reformed_rebels = 3
+		}
+		else_if = {
+			limit = {
+				event_target:fee_european_christian_even_target = {
+					religion = hussite
+				}
+			}
+			hussite_rebels = 3
+		}
+		else_if = {
+			limit = {
+				event_target:fee_european_christian_even_target = {
+					religion = orthodox
+				}
+			}
+			orthodox_rebels = 3
+		}
+		else = {
+			heretic_rebels = 3
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					any_country = {
+						has_country_modifier = fee_calicut_christian_arrival
+					}
+					any_neighbor_province = {
+						religion = hinduism
+					}
+				}
+				random_neighbor_province = {
+					limit = {
+						religion = hinduism
+					}
+					province_event = { id = FEE_Calicut_Events.3 days = 120 }
+				}
+			}
+		}
+	}
+}
