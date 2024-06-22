@@ -176,7 +176,7 @@ country_event = {
 ### Chinaware Events
 ###########################
 
-# Delftware! 
+# Delftware!
 country_event = {
 	id = FEE_Trade_Goods_Events.300
 	title = FEE_Trade_Goods_Events.300.T
@@ -716,6 +716,86 @@ country_event = {
 		add_country_modifier = {
 			name = fee_trade_goods_reliance_silk_imports
 			duration = 7300
+		}
+	}
+}
+
+###########################
+### Cotton Events
+###########################
+
+# Booming Cotton Industry
+country_event = {
+	id = FEE_Trade_Goods_Events.1100
+	title = FEE_Trade_Goods_Events.1100.T
+	desc = FEE_Trade_Goods_Events.1100.D
+	picture = TRADE_GOODS_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_year = 1600
+		owns = 542
+	}
+
+	goto = 542
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	option = {
+		name = FEE_Trade_Goods_Events.1100.OPT1
+
+		ai_chance = { factor = 0.7 }
+
+		add_treasury = -400
+		if = {
+			limit = {
+				has_estate = estate_burghers
+			}
+			add_estate_loyalty = {
+				estate = estate_burghers
+				loyalty = 10
+			}
+		}
+		else_if = {
+			limit = {
+				has_estate = estate_jains
+			}
+			add_estate_loyalty = {
+				estate = estate_jains
+				loyalty = 10
+			}
+		}
+		542 = {
+			if = {
+				limit = {
+					has_manufactory_no_custom_tooltip_trigger = yes
+				}
+				change_trade_goods = cotton
+				add_building = plantations
+			}
+			else = {
+				change_trade_goods = cotton
+			}
+			add_base_production = 3
+		}
+	}
+
+	option = {
+		name = FEE_Trade_Goods_Events.1100.OPT2
+
+		ai_chance = { factor = 0.3 }
+
+		add_prestige_or_monarch_power = { amount = 20 }
+		add_stability_or_adm_power = yes
+		add_mercantilism = 2
+		542 = {
+			add_province_modifier = {
+				name = fee_trade_goods_dependence_on_diamonds
+				duration = -1
+			}
 		}
 	}
 }

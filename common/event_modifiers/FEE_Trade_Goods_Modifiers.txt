@@ -71,3 +71,8 @@ fee_trade_goods_french_silk_monopoly = {
 fee_trade_goods_reliance_silk_imports = {
 	trade_efficiency = -0.05
 }
+
+# Cotton
+fee_trade_goods_dependence_on_diamonds = {
+	local_development_cost = 0.25
+}
