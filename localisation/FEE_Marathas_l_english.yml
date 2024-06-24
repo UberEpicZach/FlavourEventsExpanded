@@ -29,11 +29,20 @@
  FEE_Marathas_Events.7.OPT1: "Those who support $FROM$ deserve nothing less!"
  FEE_Marathas_Events.7.OPT2: "We must focus on the real enemy."
 
+ FEE_Marathas_Events.8.T: "Birth of Nagpur"
+ FEE_Marathas_Events.8.D: "In their grand mission to unite the Vedic peoples under one Hindu state, the Marathas faced the inevitable challenges that accompany the expansion of any vast empire. India, with its immense diversity, presented a unique set of obstacles. The Marathas, despite their strength and determination, found that controlling such a multifaceted land was a daunting task. The multitude of interpretations of the same faith, combined with significant cultural blocks each vying for dominance, added to the complexity of governance. One of the most formidable challenges arose as the Marathas ventured into the Bengal delta and the lower Ganges valley. This region, traditionally influenced by the Bengal Sultanate, had a substantial Muslim population, the largest concentration of Muslims the Marathas had encountered thus far. The intricacies of managing a diverse population with different religious and cultural backgrounds made the task of control even more difficult. To address these challenges, the Marathas established a military government in the form of a kingdom specifically designed to govern this region. They entrusted the leadership of this new kingdom to a minor branch of the Bhonsale dynasty. This branch of the family would play a crucial role in integrating the region into the Maratha Empire and later serve as a buffer state against the encroaching British forces. To ensure loyalty and effective administration, the entire Bhonsale clan relocated to this region. They established a dynastic administration, with the head of the clan also serving as the military leader. This structure was intended to maintain a strong connection to the greater Maratha Empire and ensure that the region remained under firm control. The Bhonsale dynasty, through their governance and military oversight, worked tirelessly to integrate the diverse populace and maintain stability. Their presence and leadership became the cornerstone of the Maratha strategy to hold onto this critical part of their empire. This arrangement was designed to last as long as the empire needed it to, providing a resilient framework for managing the region's complexities. In this way, the Marathas endeavoured to overcome the formidable challenges of empire-building in a land as diverse as India, using the Bhonsale dynasty's leadership and military prowess to solidify their control over the Bengal delta and the lower Ganges valley."
+ FEE_Marathas_Events.8.OPT1: "The Kingdom of Nagpur!"
+ FEE_Marathas_Events.8.OPT2: "No need."
+
 # Modifiers
  fee_mar_western_aid_marathan_enemy: "Western Aid Against Marathas"
  desc_fee_mar_western_aid_marathan_enemy: "We have acquired Western artillery in order to bring a final end to the Marathas uprising."
  fee_mar_seized_western_arms: "Seized Western Arms"
  desc_fee_mar_seized_western_arms: "We have seized Western weaponry to use against our enemies."
+ fee_marathas_loyal_buffer_state: "Loyal Buffer State"
 
 # Opinion Modifiers
  fee_mar_maratha_raided_stores: "Maratha-Raided Stores"
+
+ # Tooltips:
+ fee_marathas_loyal_buffer_state_duration_tt: "for as long as they are our subject"

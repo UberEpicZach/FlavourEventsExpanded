@@ -236,6 +236,8 @@ country_event = {
 	major = yes
 	fire_only_once = yes
 
+	goto = 1948
+
 	trigger = {
 		prestige = 50
 		owns = 1948
@@ -327,11 +329,28 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			set_ruler_flag = fee_bahmanis_hindu_question
+			random_owned_province = {
+				limit = {
+					OR = {
+						region = deccan_region
+						region = hindusthan_region
+						region = coromandel_region
+					}
+					religion_group = muslim
+					NOT = { has_province_flag = fee_intolerance }
+				}
+				save_event_target_as = target_province
+			}
+			capital_scope = {
+				save_event_target_as = capital_target
+			}
 		}
 	}
 
 	option = {
 		name = FEE_Bahmanis_Events.4.OPT1
+
+		goto = target_province
 
 		ai_chance = { factor = 100 }
 
@@ -340,22 +359,15 @@ country_event = {
 			name = fee_bahmanis_hindu_concessions
 			duration = -1
 		}
-		random_owned_province = {
-			limit = {
-				OR = {
-					region = deccan_region
-					region = hindusthan_region
-					region = coromandel_region
-				}
-				religion_group = muslim
-				NOT = { has_province_flag = fee_intolerance }
-			}
+		event_target:target_province = {
 			change_religion = hinduism
 		}
 	}
 
 	option = {
 		name = FEE_Bahmanis_Events.4.OPT2
+
+		goto = capital_target
 
 		ai_chance = { factor = 0 }
 
