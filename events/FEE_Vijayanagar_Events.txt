@@ -1287,10 +1287,177 @@ country_event = {
 	}
 }
 
-# Vitthala temple, expanded in early-mid 16th century
-# Balakrishna Temple, built in 1515 by Krhysna Deva Raya
-# Achyutaraya Temple, built in 1534 Salakaraju Tirumaladeva
-# Lakshmi Narasimha monolit, consacrated in 1528
+# Vitthala Temple
+country_event = {
+	id = FEE_Vijayanagar_Events.23
+	title = FEE_Vijayanagar_Events.23.T
+	desc = FEE_Vijayanagar_Events.23.D
+	picture = CITY_VIEW_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		religion = hinduism
+		is_year = 1565
+		541 = {
+			owned_by = ROOT
+			has_owner_religion = yes
+		}
+	}
+
+	goto = 541
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = FEE_Vijayanagar_Events.23.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_years_of_income = -0.25
+		add_mercantilism_or_monarch_power = { amount = 3 }
+		add_ruler_modifier = {
+			name = fee_vij_expansion_vitthala_temple
+			duration = 7300
+		}
+		541 = {
+			add_or_upgrade_trade_building = yes
+			add_permanent_province_modifier = {
+				name = fee_vij_vitthala_temple
+				duration = -1
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Vijayanagar_Events.24.OPT2
+		ai_chance = {
+			factor = 25
+		}
+
+		add_dip_power = -25
+		reduce_estate_burghers_loyalty_effect = yes
+	}
+}
+
+# Balakrishna Temple
+country_event = {
+	id = FEE_Vijayanagar_Events.24
+	title = FEE_Vijayanagar_Events.24.T
+	desc = FEE_Vijayanagar_Events.24.D
+	picture = CITY_VIEW_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		religion = hinduism
+		is_year = 1515
+		541 = {
+			owned_by = ROOT
+			has_owner_religion = yes
+		}
+	}
+
+	goto = 541
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = FEE_Vijayanagar_Events.24.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_years_of_income = -0.25
+		add_army_tradition_or_mil_power = { amount = 10 }
+		add_ruler_modifier = {
+			name = fee_vij_construction_balakrishna_temple
+			duration = -1
+		}
+		541 = {
+			add_permanent_province_modifier = {
+				name = fee_vij_balakrishna_temple
+				duration = -1
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Vijayanagar_Events.24.OPT2
+		ai_chance = {
+			factor = 25
+		}
+
+		add_mil_power = -25
+		reduce_estate_nobles_loyalty_effect = yes
+	}
+}
+
+# Achyutaraya Temple
+country_event = {
+	id = FEE_Vijayanagar_Events.25
+	title = FEE_Vijayanagar_Events.25.T
+	desc = FEE_Vijayanagar_Events.25.D
+	picture = CITY_VIEW_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		religion = hinduism
+		is_year = 1534
+		541 = {
+			owned_by = ROOT
+			has_owner_religion = yes
+		}
+	}
+
+	goto = 541
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = FEE_Vijayanagar_Events.25.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_years_of_income = -0.25
+		define_advisor = {
+			type = trader
+			skill = 2
+			discount = yes
+			culture = tamil
+			religion = hinduism
+		}
+		add_ruler_modifier = {
+			name = fee_vij_construction_achyutaraya_temple
+			duration = -1
+		}
+		541 = {
+			add_permanent_province_modifier = {
+				name = fee_vij_achyutaraya_temple
+				duration = -1
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Vijayanagar_Events.25.OPT2
+		ai_chance = {
+			factor = 25
+		}
+
+		add_adm_power = -25
+		reduce_estate_church_loyalty_effect = yes
+	}
+}
 
 # 
 # country_event = {

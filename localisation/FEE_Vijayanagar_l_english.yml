@@ -106,6 +106,21 @@
  FEE_Vijayanagar_Events.22.D: "Following the passing of Deva Raja II, the Southern Central regions of our realm have faced an escalating encroachment by the Sultanate of Bahmanis. Their advances, particularly in the Raichur Doab, now bring them uncomfortably close to our capital of Ampi, posing a significant threat to our sovereignty. The relentless expansion of these Persian-influenced forces from the north has left our borders vulnerable and our defences strained."
  FEE_Vijayanagar_Events.22.OPT1: "They are advancing, Vijayanagar is near..."
 
+ FEE_Vijayanagar_Events.23.T: "Vitthala Temple"
+ FEE_Vijayanagar_Events.23.D: "The Vitthala temple and market complex lies over 3 kilometers to the northeast of the revered Virupaksha temple, near the banks of the sacred Tungabhadra River. This artistically sophisticated Hindu temple in Hampi forms an integral part of the sacred center of Vijayanagara. Dedicated to Vitthala, a form of Krishna also known as Vithoba, the temple faces east and is designed with a square plan featuring an imposing entrance gopuram flanked by two side gopurams. At the heart of a paved courtyard stands the main temple, surrounded by several subsidiary shrines, all oriented to the east. Encompassing a courtyard measuring 500 by 300 feet, the temple is encircled by a triple row of pillars, standing at an average height of 25 feet. The temple is divided into three distinct compartments: a garbhagriha, an ardhamandapa, and a mahamandapa. \nA prominent feature of the Vitthala temple is the Garuda shrine, crafted in the form of a stone chariot situated within the courtyard; this chariot has become an iconic symbol of Hampi. Atop the chariot rises a tower, and in front of it stands a large, open-pillared axial sabha mandapa, or community hall. This mandapa comprises four sections, two of which align with the temple sanctum. The hall boasts 56 intricately carved stone beams of varying diameters, shapes, lengths, and surface finishes that produce musical sounds when struck; local tradition holds that this hall was used for public celebrations of music and dance. It is classified as a Karakkoil, a temple styled after the temple chariots paraded during festivals. \nThe mandapa connects to an enclosed pradakshina patha, designed for circumambulation around the sanctum. Surrounding this axial mandapa are the Garuda shrine, the Kalyana mandapa, the 100-columned mandapa, the Amman shrine, and the Utsav mandapa. The walled enclosure spans about 1.3 hectares, with colonnaded verandahs lining the compound walls. In the southeast corner, one finds a kitchen with a roof window. \nBeyond the temple compound, to its east-southeast, lies a colonnaded market street nearly one kilometer long, now in ruins. To the north is another market and a south-facing shrine adorned with reliefs depicting scenes from the Ramayana, the Mahabharata, and the lives of Vaishnava saints. The northern street culminates in a temple dedicated to the Hindu philosopher Ramanuja. The area around the Vitthala temple, known as Vitthalapura, was a vibrant center for Vaishnavite worship, housing a Vaishnava matha that served as a pilgrimage site centered around the Alvar tradition. Inscriptions reveal that it was also a hub for craft production."
+ FEE_Vijayanagar_Events.23.OPT1: "Glory to Khrisna"
+ FEE_Vijayanagar_Events.23.OPT2: "More Gold needed"
+
+ FEE_Vijayanagar_Events.24.T: "Balakrishna Temple"
+ FEE_Vijayanagar_Events.24.D: "The Krishna temple, also known as the Balakrishna temple, lies on the other side of Hemakuta Hill, about 1 kos to the south of the revered Virupaksha temple. According to inscriptions, it is part of the Hampi complex known as Krishnapura. Before the temple stretches a long market street, locally referred to as the bazaar. This colonnaded stone marketplace features a broad road, allowing chariots to transport goods to and from the market, and also serves as a venue for ceremonial functions and festive celebrations. In the midst of the market to the north of this road lies a large Pushkarani, a public utility stepped water tank with an artistic pavilion at its center. Adjacent to the tank is a mandapa for people to sit and gather. \nThe temple opens to the east and boasts a gateway adorned with reliefs depicting all ten avatars of Vishnu, starting with Matsya at the bottom. Within the temple complex lie the ruins of the main Krishna temple and smaller, ruined shrines dedicated to goddesses. The temple compound is structured with multiple mandapas, including an outer and an inner enclosure, and features two gopuram entrances. Inside, a 25-bay open mandapa leads to a 9-bay enclosed mandapa. The western gopuram is decorated with friezes depicting battle formations and soldiers. \nTo the south of the Krishna temple's exterior stand two adjacent shrines, one housing the largest monolithic Shiva Linga and the other enshrining the largest monolithic Yoga-Narasimha avatar of Vishnu in Hampi. The 3-meter Shiva Linga stands in water within a cubical chamber and is marked with three eyes on its top. Further south is the shrine for the 6.7-meter high Narasimha—the man-lion avatar of Vishnu—seated in a yoga position."
+ FEE_Vijayanagar_Events.24.OPT1: "Glory to Khrisna"
+ FEE_Vijayanagar_Events.24.OPT2: "Not enough gold my lord."
+
+ FEE_Vijayanagar_Events.25.T: "Achyutaraya Temple"
+ FEE_Vijayanagar_Events.25.D: "The Achyutaraya temple, also known as the Tiruvengalanatha temple, lies about 1 kos to the east of the revered Virupaksha temple, near the sacred Tungabhadra River. It is one of the four largest complexes in Hampi. Notably, the temple faces north, a unique orientation, and is dedicated to Lord Vishnu. The temple is approached from the river, passing first a ceremonial tank and then along a broad market street. The temple complex features an outer gopuram that leads into a courtyard with a 100-column hall, and an inner gopuram that provides entry to the Vishnu temple. Each pillar in the 100-column hall is adorned with reliefs depicting Vishnu's avatars, other deities such as Shiva, Surya, and Durga, scenes of daily life including rishis, amorous couples, jesters, people performing yoga asanas, people in namaste poses, and Vijayanagara emblems. \nThe temple gateway prominently displays the emblems of the Vijayanagara dynasty: a boar symbolizing Varaha, a sword, the sun, and the moon."
+ FEE_Vijayanagar_Events.25.OPT1: "Glory to Vishnu!"
+ FEE_Vijayanagar_Events.25.OPT2: "Gold stocks are too low"
+
  # Modifiers
  fee_vij_kavisarvabhauma: "Kavisarvabhauma"
  desc_fee_vij_kavisarvabhauma: "Emperor Among Poets."
@@ -154,6 +169,21 @@
  desc_fee_vij_arabian_horses_influx: ""
  fee_vij_arabian_horses_deflux: "Decreased Arabian Horse Import"
  desc_fee_vij_arabian_horses_deflux: ""
+
+ fee_vij_expansion_vitthala_temple: "Expansion of the Vitthala Temple"
+ desc_fee_vij_expansion_vitthala_temple: ""
+ fee_vij_vitthala_temple: "Cerimony for the Vitthala Temple"
+ desc_fee_vij_vitthala_temple: ""
+
+ fee_vij_construction_balakrishna_temple: "Construction of the Balakrishna Temple"
+ desc_fee_vij_construction_balakrishna_temple: ""
+ fee_vij_balakrishna_temple: "Balakrishna Temple"
+ desc_fee_vij_balakrishna_temple: ""
+
+ fee_vij_construction_achyutaraya_temple: "Construction of the Achyutaraya Temple"
+ desc_fee_vij_construction_achyutaraya_temple: ""
+ fee_vij_achyutaraya_temple: "Achyutaraya Temple"
+ desc_fee_vij_achyutaraya_temple: ""
 
  # Tooltips
  FEE_VIJ_DISCOVER_SEA_PROVINCES_GOOD_TT: "We have created a new trade route from §YPegu§!, through, §YMalacca§! to §YCanton§! and increase our relations with their owners."

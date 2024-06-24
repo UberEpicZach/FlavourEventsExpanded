@@ -78,3 +78,34 @@ fee_vij_arabian_horses_influx = {
 fee_vij_arabian_horses_deflux = {
 	cavalry_cost = 0.15
 }
+
+fee_vij_expansion_vitthala_temple = {
+	tolerance_own = 0.5
+	burghers_loyalty_modifier = 0.05
+	jains_loyalty_modifier = 0.05
+	vaisyas_loyalty_modifier = 0.05
+	religion = yes
+}
+fee_vij_vitthala_temple = {
+	province_trade_power_value = 25
+	religion = yes
+}
+
+fee_vij_construction_balakrishna_temple = {
+	prestige = 0.5
+	monthly_splendor = 1
+	religion = yes
+}
+fee_vij_balakrishna_temple = {
+	army_tradition_decay = -0.0025
+	religion = yes
+}
+
+fee_vij_construction_achyutaraya_temple = {
+	legitimacy = 0.5
+	religion = yes
+}
+fee_vij_achyutaraya_temple = {
+	local_development_cost = -0.10
+	religion = yes
+}
