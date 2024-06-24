@@ -5,3 +5,8 @@ fee_mar_western_aid_marathan_enemy = {
 fee_mar_seized_western_arms = {
 	discipline = 0.05
 }
+
+fee_marathas_loyal_buffer_state = {
+	liberty_desire = -100
+	defensiveness = 0.1
+}
