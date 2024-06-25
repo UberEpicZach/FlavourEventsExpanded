@@ -398,33 +398,6 @@ on_province_religion_converted = {
 	}
 }
 
-on_province_religion_changed = {
-	if = {
-		limit = {
-			has_global_flag = fee_saint_thomas_christians_event
-			has_province_modifier = fee_indian_christianity_thomist_christian_communities_coptic
-			NOT = { religion = coptic }
-		}
-		remove_province_modifier = fee_indian_christianity_thomist_christian_communities_coptic
-		add_province_modifier = {
-			name = fee_indian_christianity_thomist_christian_communities_not_coptic
-			duration = -1
-		}
-	}
-	else_if = {
-		limit = {
-			has_global_flag = fee_saint_thomas_christians_event
-			has_province_modifier = fee_indian_christianity_thomist_christian_communities_not_coptic
-			religion = coptic
-		}
-		remove_province_modifier = fee_indian_christianity_thomist_christian_communities_not_coptic
-		add_province_modifier = {
-			name = fee_indian_christianity_thomist_christian_communities_coptic
-			duration = -1
-		}
-	}
-}
-
 on_religion_change = {
 	if = {
 		limit = {

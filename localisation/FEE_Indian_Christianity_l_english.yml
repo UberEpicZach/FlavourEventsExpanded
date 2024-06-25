@@ -16,8 +16,6 @@
 
  # Modifiers:
  fee_indian_christianity_basilica_of_thomas_the_apostle: "Basilica of Thomas the Apostle"
- fee_indian_christianity_thomist_christian_communities_coptic: "Thomist Chrisitan Communities"
- fee_indian_christianity_thomist_christian_communities_not_coptic: "Thomist Chrisitan Communities"
  fee_indian_christianity_christian_ghetto_christian: "Christian Ghetto"
  fee_indian_christianity_christian_ghetto_not_christian: "Christian Ghetto"
  fee_indian_christianity_ezharappallikal: "Resurrection of the Ezharappallikal"
@@ -26,12 +24,12 @@
  fee_indian_christianity_nestorian_religious_center_not_coptic: "Nestorian Religious Center"
 
  # Tooltips:
- FEE_Indian_Christianity_Events.2.tt.1: "The provinces §Y[535.GetName]§!, §Y[534.GetName]§!, §Y[4412.GetName]§!, §Y[537.GetName]§!, §Y[529.GetName]§!, §Y[539.GetName]§!, §Y[4416.GetName]§! and §Y[2100.GetName]§!: \nConvert to the §YCoptic§! faith. \n\nIf the province follows the §YCoptic§! faith:"
- FEE_Indian_Christianity_Events.2.tt.2: "If the province does NOT follow the §YCoptic§! faith:"
- FEE_Indian_Christianity_Events.2.tt.3: "Whenever the province religion changes, the right modifier will be applied."
+ FEE_Indian_Christianity_Events.2.tt.1: "The provinces §Y[535.GetName]§!, §Y[534.GetName]§!, §Y[4412.GetName]§!, §Y[537.GetName]§!, §Y[529.GetName]§!, §Y[539.GetName]§!, §Y[4416.GetName]§! and §Y[2100.GetName]§!: \nConvert to the §YCoptic§! faith. \n \nIf §Y[Root.GetName]§! follows the §YCoptic§! faith:"
+ FEE_Indian_Christianity_Events.2.tt.2: "If §Y[Root.GetName]§! does NOT follow the §YCoptic§! faith:"
+ FEE_Indian_Christianity_Events.2.tt.3: "Whenever our religion changes, the right modifier will be applied."
  FEE_Indian_Christianity_Events.2.tt.4: "The provinces §Y[535.GetName]§!, §Y[534.GetName]§!, §Y[4412.GetName]§!, §Y[537.GetName]§!, §Y[529.GetName]§!, §Y[539.GetName]§!, §Y[4416.GetName]§! and §Y[2100.GetName]§!: \nIf §Y[Root.GetName]§! follows a §YChristian§! faith:"
  FEE_Indian_Christianity_Events.2.tt.5: "If §Y[Root.GetName]§! does NOT follow a §YChristian§! faith:"
  FEE_Indian_Christianity_Events.2.tt.6: "Whenever our religion changes, the right modifier will be applied."
  FEE_Indian_Christianity_Events.3.tt.1: "\nThe provinces §Y[535.GetName]§!, §Y[529.GetName]§! and §Y[539.GetName]§!: \nIf §Y[Root.GetName]§! follows the §YCoptic§! faith:"
  FEE_Indian_Christianity_Events.3.tt.2: "If §Y[Root.GetName]§! does NOT follow the §YCoptic§! faith:"
- FEE_Indian_Christianity_Events.3.tt.3: "Whenever our religion changes, the right modifier will be applied."
+ FEE_Indian_Christianity_Events.3.tt.3: "Whenever our religion changes, the right modifier will be applied. \n\nIf the modifier was already applied in the '§YSaint Thomas Christians§!' event, it will not stack."
