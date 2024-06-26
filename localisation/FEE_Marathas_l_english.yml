@@ -34,15 +34,52 @@
  FEE_Marathas_Events.8.OPT1: "The Kingdom of Nagpur!"
  FEE_Marathas_Events.8.OPT2: "No need."
 
+ FEE_Marathas_Events.9.T: "Birth of Shivaji Shahaji Bhonsale"
+ FEE_Marathas_Events.9.D: "The birth of a new scion of a noble house is always an event worth visiting, with celebrations often ongoing for days on end. [Root.Monarch.GetName], as honoured guest, certainly enjoyed the festivities as much as anyone else. And yet, there was something different about this birth. Already, the midwife who helped his passage into the land of men had prophesied that he was destined for great things... Now, to be sure, how often did that come true? But even now, looking from across the room at the newborn, there was indeed something different here. Although only days old, the infant’s eyes were already sharp and alert, darting around the room here and there, taking in what was happening. Surely he didn’t already understand the adult conversations around him... did he? With an ever-so-slight shudder, [Root.Monarch.GetName] waved off the strange feeling, but made a mental note. Perhaps this newborn was worth keeping as close as possible..."
+ FEE_Marathas_Events.9.OPT1: "Adopt him as my own."
+ FEE_Marathas_Events.9.OPT2: "We will watch your career with great interest"
+
+ FEE_Marathas_Events.10.T: "Coming of Age"
+ FEE_Marathas_Events.10.D: "The young man lovingly referred to as Shivaji had impressed all who he met since he was a baby. With age, it only became clearer how intelligent and capable this man would become. From the age of 12 he would put our master tacticians to shame and out-duel most of our professional soldiers. Starting at age 13, he would gain his first military command, although locally as a guard captain. He's become more of a tactician and military man at 15 then most of our old scruffy generals ever were. He as of late during his 15th birthday has shown greater interest in the court and the state. While his military intellect would be slightly wasted at court his capabilities could prove vital for the future of our state. What to do, what to do..."
+ FEE_Marathas_Events.10.OPT1: "He should lead our armies!"
+ FEE_Marathas_Events.10.OPT2: "I proclaim him our new heir!"
+ FEE_Marathas_Events.10.OPT3: "We have no need of this boy"
+
+ FEE_Marathas_Events.11.T: "A Change of Course?"
+ FEE_Marathas_Events.11.D: "The enthronement of Shivaji upon the throne of our great [Root.GetAdjective] [Root.GovernmentName] has proven to enact the winds of change. The incompetence of both the Muslim Sultanates, the Christian European and even the ever divided Hindus became clear to Shivaji. Upon his ascension to the throne he declared this age of division and incompetence would come to an end for the subcontinent and its people. “We have suffered long enough” he decreed. Thus he swore to bring about the birth not of not only a new realm, one that stood above religious drabble and infighting that had divided us for so long. This could go either of two ways. All depending on the lower nobility Shivaji needed the support of. They would either cheer on in great support and swear fealty to this new realm abandoning the ideals of [Root.GetAdjective] [Root.GovernmentName]. Or they would stick to their old ways and seize power for themselves, only time will tell."
+ FEE_Marathas_Events.11.OPT1: "We will reorganise into the First Maratha Empire!"
+ FEE_Marathas_Events.11.OPT2: "Out with the new in with the old!"
+
+ FEE_Marathas_Events.12.T: "Shivaji’s Loyalty Questioned"
+ FEE_Marathas_Events.12.D: "As [Root.Monarch.GetName] invited his war ministry and his independent generals to court. This included Shivaji who would be placed among the generals and military leaders of the war ministry. After a while it became clear he was not only uncomfortable, but seemed rather furious. When asked by [Root.Monarch.GetName] if he was dissatisfied with what was being discussed, Shivaji exclaimed that this was an insult to his capabilities. The question then soon came as to what he meant by this. Shivaji exclaimed once more: you have me posted up here by lesser men I have already defeated in open or personal combat. Per military tradition this is a disservice to my rank as supreme victor in the court and your military ministry. Shivaji would then storm out with a few supporters. With [Root.Monarch.GetName] and his court baffled, the hindu priest did come to Shivaji's defence that it is indeed tradition that a man shall not share a table with those whom he has defeated in combat. Upon this revelation the ministry looked at [Root.Monarch.GetName] to see his response to the act of disrespect on Shivaji's side. One does not leave court without being dismissed. How shall you rule on this my liege?"
+ FEE_Marathas_Events.12.OPT1: "He makes a good point however."
+ FEE_Marathas_Events.12.OPT2: "So treason it is!"
+
+ FEE_Marathas_Events.13.T: "Rogue General Loots the Countryside"
+ FEE_Marathas_Events.13.D: "It's been months since one of the greatest generals in Deccani history was declared a traitor for standing up for his rights. We have been plagued with a rogue army pillaging and destroying vital military infrastructure ever since. After months of chasing ghosts, we have finally identified this army as the disgraced band of soldiers led by Shivaji in revenge against [Root.Monarch.GetName]. His army is made up from his former veterans and minor nobility that stood by his side when he was declared a traitor and want justice for their great leader. A message got back to [Root.Monarch.GetName] that Shivaji would continue to seek support and create havoc in [Root.GetName] until he would have [Root.Monarch.GetName] head on a pike, his name cleared and all forms of injustices be undone."
+ FEE_Marathas_Events.13.OPT1: "Curses!"
+
+ FEE_Marathas_Events.14.T: "Rise of Shivaji"
+ FEE_Marathas_Events.14.D: "Dissatisfied with the dealing and rule of the muslims and the Hindus alike in the Deccan, Shivaji vowed to end this incompetence. Assembling by his side a small number of Noble clans, priests and high ranking ministers, Shivaji would declare a  new state. This state also had the backing from the existing bureaucracy; crucially, this also included many from the royal accounts and treasury, who spent months secretly funnelling the state revenues to him. would be structured based on the clan system of the Marathas Shivaji himself hailed from. The state also had the Carving out his own realm on the backs of not only his military and diplomatic expertise, but the military expertise of all the Maratha clans. They would erect a state meant to maintain Hindu traditions and religion that were banned by some Muslim rulers, while adhering to virtues of tolerance and meritocracy. Thus was born the Maratha movement that would historically lead to the great revolt not 3 months later."
+ FEE_Marathas_Events.14.OPT1: "Hunt him down!"
+
 # Modifiers
  fee_mar_western_aid_marathan_enemy: "Western Aid Against Marathas"
  desc_fee_mar_western_aid_marathan_enemy: "We have acquired Western artillery in order to bring a final end to the Marathas uprising."
  fee_mar_seized_western_arms: "Seized Western Arms"
  desc_fee_mar_seized_western_arms: "We have seized Western weaponry to use against our enemies."
+ 
  fee_marathas_loyal_buffer_state: "Loyal Buffer State"
+ desc_fee_marathas_loyal_buffer_state: ""
+
+ fee_mar_raided_shivaji: "Raided by Shivaji"
+ desc_fee_mar_raided_shivaji: ""
 
 # Opinion Modifiers
  fee_mar_maratha_raided_stores: "Maratha-Raided Stores"
 
  # Tooltips:
  fee_marathas_loyal_buffer_state_duration_tt: "for as long as they are our subject"
+ FEE_MARATHAS_NOTHING_HAPPENS_FOR_NOW_TT: "Nothing happens... for now"
+ FEE_MAR_KEEP_HIM_CLOSE_TT: "Keep him close..."
+ FEE_MAR_UNLOCKS_DISASTER_TT: "Unlocks disaster 'Rise of the Marathas' which may result in the revolt and rise of the independent Maratha Empire”"
