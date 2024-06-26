@@ -400,3 +400,469 @@ country_event = {
 		add_prestige_or_monarch_power = { amount = 10 }
 	}
 }
+
+# Birth of Nagpur
+country_event = {
+	id = FEE_Marathas_Events.8
+	title = FEE_Marathas_Events.8.T
+	desc = FEE_Marathas_Events.8.D
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_or_was_tag = { tag = MAR }
+		NOT = { exists = NAG }
+		owns_core_province = 552
+		owns_core_province = 2049
+		owns_core_province = 4441
+		upper_mahanadi_area = {
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+		}
+		berar_area = {
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+		}
+		garjat_area = {
+			type = all
+			owned_by = ROOT
+			is_core = ROOT
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = FEE_Marathas_Events.8.OPT1
+
+		ai_chance = { factor = 0.2 }
+
+		552 = {
+			add_core = NAG
+		}
+		2049 = {
+			add_core = NAG
+		}
+		4441 = {
+			add_core = NAG
+		}
+		upper_mahanadi_area = {
+			add_core = NAG
+		}
+		berar_area = {
+			add_core = NAG
+		}
+		garjat_area = {
+			add_core = NAG
+		}
+		release = NAG
+		hidden_effect = {
+			NAG = {
+				adopt_reform_progress = ROOT
+				change_government = monarchy
+				change_religion = ROOT
+				change_primary_culture = ROOT
+				every_owned_province = {
+					limit = {
+						NOT = { is_core = ROOT }
+					}
+					add_core = ROOT
+				}
+			}
+		}
+		create_subject = {
+			subject = NAG
+			subject_type = march
+		}
+		NAG = {
+			set_capital = 546
+			define_ruler = {
+				dynasty = Bhonsale
+			}
+			add_country_modifier = {
+				name = fee_marathas_loyal_buffer_state
+				duration = -1
+				desc = fee_marathas_loyal_buffer_state_duration_tt
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Marathas_Events.8.OPT2
+
+		ai_chance = { factor = 0.8 }
+
+		add_prestige_or_monarch_power = { amount = 25 }
+		if = {
+			limit = {
+				any_owned_province = {
+					culture_group = eastern_aryan
+				}
+			}
+			every_owned_province = {
+				limit = {
+					culture_group = eastern_aryan
+				}
+				add_local_autonomy = 25
+			}
+		}
+	}
+}
+
+#Birth of Shivaji Shahaji Bhonsale
+country_event = {
+	id = FEE_Marathas_Events.9
+	title = FEE_Marathas_Events.9.T
+	desc = FEE_Marathas_Events.9.D
+	picture = HEIR_AND_FOREIGN_ADVISOR_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 4432
+		is_year = 1630
+		NOT = { is_year = 1680 }
+		capital_scope = {
+			superregion = india_superregion
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	option = {
+		name = FEE_Marathas_Events.9.OPT1
+		ai_chance = { factor = 0.75 }
+
+		kill_heir = { allow_new_heir = no }
+		define_heir = {
+			name = "Shivaji Shahaji"
+			dynasty = "Bhonsale"
+			religion = hinduism
+			culture = marathi
+			age = 0
+			adm = 4
+			dip = 5
+			mil = 6
+		}
+
+		hidden_effect = { set_country_flag = fee_mar_shivaji_heir }
+	}
+
+	option = {
+		name = FEE_Marathas_Events.9.OPT2
+		ai_chance = { factor = 0.25 }
+
+		hidden_effect = {
+			country_event = {
+				id = FEE_Marathas_Events.10
+				days = 5400
+			}
+		}
+	}
+}
+
+#Coming of Age
+country_event = {
+	id = FEE_Marathas_Events.10
+	title = FEE_Marathas_Events.10.T
+	desc = FEE_Marathas_Events.10.D
+	picture = HEIR_AND_FOREIGN_ADVISOR_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Marathas_Events.10.OPT1
+		ai_chance = { factor = 0.50 }
+
+		define_general = {
+			name = "Shivaji Shahji Bhonsale"
+			fire = 5
+			shock = 6
+			manuever = 4
+			siege = 4
+			trait = inspirational_leader_general_personality
+		}
+		hidden_effect = {
+			random = {
+				chance = 75
+				country_event = {
+					id = FEE_Marathas_Events.12
+					days = 1080
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Marathas_Events.10.OPT2
+		ai_chance = { factor = 0.25 }
+		trigger = {
+			OR = {
+				capital_scope = {
+					superregion = india_superregion
+				}
+				AND = {
+					ai = no
+					has_global_flag = fee_meme_active
+				}
+			}
+		}
+
+		kill_heir = { allow_new_heir = no }
+		define_heir = {
+			name = "Shivaji Shahaji"
+			dynasty = "Bhonsale"
+			religion = hinduism
+			culture = marathi
+			age = 15
+			adm = 4
+			dip = 5
+			mil = 6
+		}
+		add_heir_personality = inspiring_leader_personality
+		add_heir_personality = lawgiver_personality
+	}
+
+	option = {
+		name = FEE_Marathas_Events.10.OPT3
+		ai_chance = { factor = 0.25 }
+		trigger = {
+			OR = {
+				capital_scope = {
+					superregion = india_superregion
+				}
+				AND = {
+					ai = no
+					has_global_flag = fee_meme_active
+				}
+			}
+		}
+
+		custom_tooltip = FEE_MARATHAS_NOTHING_HAPPENS_FOR_NOW_TT
+		add_prestige_or_monarch_power = { amount = 15 }
+		hidden_effect = {
+			set_country_flag = fee_mar_shivaji_loose
+
+		}
+	}
+}
+
+#A Change of Course?
+country_event = {
+	id = FEE_Marathas_Events.11
+	title = FEE_Marathas_Events.11.T
+	desc = FEE_Marathas_Events.11.D
+	picture = NEW_HEIR_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = fee_mar_shivaji_heir
+	}
+
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = fee_mar_shivaji_heir
+		}
+	}
+
+	option = {
+		name = FEE_Marathas_Events.11.OPT1
+		ai_chance = { factor = 0.50 }
+	
+		change_tag = MAR
+		set_government_rank_force = 3
+		change_primary_culture = marathi
+		if = {
+			limit = { 
+				NOT = { religion = hinduism }
+			}
+			change_religion = hinduism
+		}
+		change_government = monarchy
+		add_government_reform = the_maratha_army_reform
+		add_government_reform = permanent_marathas_council_reform
+		if = {
+			limit = {
+				NOT = { has_estate_privilege = estate_maratha_special_privilege }
+			}
+			set_estate_privilege = estate_maratha_special_privilege
+		}
+		if = {
+			limit = {
+				NOT = { has_idea_group = MAR_ideas }
+			}
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+		hidden_effect = {
+			set_country_flag = formed_maratha_flag
+			on_change_tag_effect = yes
+			deccan_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = MAR
+			}
+			west_india_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = MAR
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Marathas_Events.11.OPT2
+		ai_chance = { factor = 0.25 }
+
+		add_stability = -2
+		set_ruler_religion = hinduism
+		random = {
+			chance = 75
+			kill_heir = { allow_new_heir = no }
+		}
+	}
+}
+
+#Shivaji’s Loyalty Questioned
+country_event = {
+	id = FEE_Marathas_Events.12
+	title = FEE_Marathas_Events.12.T
+	desc = FEE_Marathas_Events.12.D
+	picture = REVOLT_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		has_country_flag = fee_mar_shivaji_heir
+	}
+
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = fee_mar_shivaji_heir
+		}
+	}
+
+	option = {
+		name = FEE_Marathas_Events.12.OPT1
+		ai_chance = { factor = 0.20 }
+
+		custom_tooltip = FEE_MAR_KEEP_HIM_CLOSE_TT
+		define_advisor = {
+			type = army_reformer
+			name = "Shivaji Shahaji Bhonsale"
+			skill = 3
+			religion = hinduism
+			culture = marathi
+			discount = yes
+		}
+
+		hidden_effect = {
+			random = {
+				chance = 50
+				country_event = {
+					id = FEE_Marathas_Events.14
+					days = 365
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Marathas_Events.12.OPT2
+		ai_chance = { factor = 0.80 }
+
+		custom_tooltip = FEE_MAR_BANISH_HIM_TT
+		hidden_effect = {
+			country_event = {
+				id = FEE_Marathas_Events.14
+				days = 365
+			}
+		}
+	}
+}
+
+#Rogue General Loots the Countryside
+country_event = {
+	id = FEE_Marathas_Events.13
+	title = FEE_Marathas_Events.13.T
+	desc = FEE_Marathas_Events.13.D
+	picture = VILLAGE_RAIDED_eventPicture
+
+	trigger = {
+		has_country_flag = fee_mar_shivaji_loose
+	}
+
+	mean_time_to_happen = {
+		days = 180
+	}
+
+	option = {
+		name = FEE_Marathas_Events.13.OPT1
+		ai_chance = { factor = 0.20 }
+
+		random_owned_province = {
+			limit = {
+				NOT = { is_capital_of = ROOT }
+				NOT = { has_province_modifier = fee_mar_raided_shivaji }
+			}
+			add_devastation = 15
+			add_province_modifier = {
+				name = fee_mar_raided_shivaji
+				duration = 365
+			}
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			country_event = {
+				id = FEE_Marathas_Events.14
+				days = 730
+			}
+		}
+	}
+}
+
+#Rise of Shivaji
+country_event = {
+	id = FEE_Marathas_Events.14
+	title = FEE_Marathas_Events.14.T
+	desc = FEE_Marathas_Events.14.D
+	picture = BAD_WITH_MONARCH_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = fee_mar_shivaji_loose
+		}
+	}
+
+	option = {
+		name = FEE_Marathas_Events.14.OPT1
+		ai_chance = { factor = 0.20 }
+
+		add_years_of_income = 0.5
+		add_stability = -2
+		custom_tooltip = FEE_MAR_UNLOCKS_DISASTER_TT
+	}
+
+	after = {
+		hidden_effect = {
+			set_country_flag = fee_mar_marathas_rise
+		}
+	}
+}

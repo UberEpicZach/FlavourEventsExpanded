@@ -1,0 +1,175 @@
+fee_decline_bahmanis = {
+	potential = {
+		tag = BAH
+		NOT = { has_country_flag = fee_had_decline_bahmanis }
+		is_year = 1494
+		OR = {
+			current_age = age_of_discovery
+			current_age = age_of_reformation
+		}
+		is_free_or_tributary_trigger = yes
+		num_of_cities = 25
+		religion_group = muslim
+	}
+	can_start = {
+		has_any_disaster = no
+		exists = VIJ
+		OR = {
+			num_of_loans = 10
+			NOT = { stability = 0 }
+			average_autonomy = 50
+			custom_trigger_tooltip = {
+				tooltip = FEE_BAH_LESS_THAN_7_TOTAL_STATS_TT
+				NOT = {
+					ruler_total_stats = {
+						amount = 7
+					}
+				}
+			}
+		}
+	}
+	can_stop = {
+		OR = {
+			has_any_disaster = yes
+			AND = {
+				NOT = { num_of_loans = 10 }
+				stability = 0
+				NOT = { average_autonomy = 50 }
+				ruler_total_stats = {
+					amount = 7
+				}
+				custom_trigger_tooltip = {
+					tooltip = FEE_BAH_NO_UNREST_TT
+					NOT = {
+						any_owned_province = {
+							unrest = 0.1
+						}
+					}
+				}
+			}
+		}
+	}
+	ended_by_country_breaking_to_rebels = no
+	progress = {
+		modifier = {
+			factor = 1
+			custom_trigger_tooltip = {
+				tooltip = FEE_BAH_LESS_THAN_7_TOTAL_STATS_TT
+				NOT = {
+					ruler_total_stats = {
+						amount = 7
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 3
+			custom_trigger_tooltip = {
+				tooltip = FEE_BAH_LESS_THAN_5_TOTAL_STATS_TT
+				NOT = {
+					ruler_total_stats = {
+						amount = 5
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 5
+			custom_trigger_tooltip = {
+				tooltip = FEE_BAH_LESS_THAN_3_TOTAL_STATS_TT
+				NOT = {
+					ruler_total_stats = {
+						amount = 3
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			num_of_loans = 10
+		}
+		modifier = {
+			factor = 2
+			num_of_loans = 15
+		}
+		modifier = {
+			factor = 2
+			num_of_loans = 20
+		}
+		modifier = {
+			factor = 2
+			NOT = { stability = 0 }
+		}
+		modifier = {
+			factor = 2
+			NOT = { stability = -1 }
+		}
+		modifier = {
+			factor = 10
+			average_autonomy = 51
+		}
+		modifier = {
+			factor = 2
+			NOT = { legitimacy_equivalent = 80 } #changed to equivalent as monarchy is no longer required
+		}
+		modifier = {
+			factor = 2
+			NOT = { religious_unity = 1 }
+		}
+		modifier = {
+			factor = 2
+			revolt_percentage = 0.1
+		}
+		modifier = {
+			factor = 1
+			NOT = { land_maintenance = 1 }
+		}
+	}
+	modifier = {
+		global_unrest = 5
+		stability_cost_modifier = 0.5
+		global_trade_goods_size_modifier = -0.33
+		all_estate_loyalty_equilibrium = -0.15
+	}
+	can_end = {
+		OR = {
+			custom_trigger_tooltip = {
+				tooltip = FEE_BAH_BROKE_TO_REBELS_TT
+				always = no #ended via sultanate revolt event or on_action
+			}
+			AND = {
+				custom_trigger_tooltip = {
+					tooltip = FEE_BAH_DISASTER_DURATION_TT
+					has_country_flag = fee_had_decline_bahmanis
+					had_country_flag = {
+						flag = fee_had_decline_bahmanis
+						days = 1825
+					}
+				}
+				stability = 1
+				NOT = { num_of_rebel_controlled_provinces = 1 }
+				NOT = { num_of_rebel_armies = 1 } #added bc it seemed appropriate
+				is_at_war = no
+				estate_loyalty = {
+					estate = all
+					loyalty = 50
+				}
+			}
+		}
+	}
+
+	on_start = disaster_fee_decline_of_the_bahmani_sultanate.1
+	on_end = disaster_fee_decline_of_the_bahmani_sultanate.2
+
+	on_monthly = {
+		events = { disaster_fee_decline_of_the_bahmani_sultanate.8 }
+		random_events = {
+			1000 = 0
+			100 = disaster_fee_decline_of_the_bahmani_sultanate.3 # Decadence in Bahmanis
+			100 = disaster_fee_decline_of_the_bahmani_sultanate.4 # Peasant Discontent
+			100 = disaster_fee_decline_of_the_bahmani_sultanate.5 # War Exhaustion
+			100 = disaster_fee_decline_of_the_bahmani_sultanate.6 # Court Intrigue Abounds
+			100 = disaster_fee_decline_of_the_bahmani_sultanate.7 # Disloyalty in the Provinces
+		}
+	}
+}

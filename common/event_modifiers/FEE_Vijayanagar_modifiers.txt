@@ -1,4 +1,111 @@
-vij_devaraya_literature = {
+fee_vij_kavisarvabhauma = {
+	advisor_cost = -0.10
 	adm_tech_cost_modifier = -0.05
+	reform_progress_growth = 0.10
 	tolerance_own = 1
+}
+
+fee_vij_parameshvara_adm_focus = {
+	development_cost_modifier = -0.05
+}
+fee_vij_parameshvara_dip_focus = {
+	technology_cost = -0.075
+}
+fee_vij_parameshvara_mil_focus = {
+	military_tactics = 0.075
+}
+
+fee_vij_daroji_tank = {
+	local_development_cost_modifier = -0.05
+	supply_limit_modifier = 0.10
+}
+fee_vij_daroji_tank_neighbor = {
+	local_development_cost = -0.05
+	supply_limit_modifier = 0.10
+}
+
+fee_vij_lord_southern_ocean = {
+	local_unrest = -2
+	local_autonomy = -0.33
+	years_of_nationalism = -3
+}
+fee_vij_improved_cinnamon_trade = {
+	province_trade_power_value = 1
+	trade_value = 1
+}
+
+fee_vij_field_artillery = {
+	artillery_cost = -0.10
+	artillery_fire = 0.15
+}
+fee_vij_siege_cannons = {
+	artillery_cost = -0.10
+	artillery_level_modifier = 0.25
+}
+
+fee_vij_branch_focus = {
+	manpower_in_own_culture_provinces = 0.15
+}
+fee_vij_inclusive_recruitment = {
+	manpower_in_accepted_culture_provinces = 0.10
+}
+fee_vij_interfaith_inclusion = {
+	global_manpower_modifier = 0.05
+}
+
+fee_vij_center_wootz_steel_prodcution = {
+	infantry_cost = -0.10
+	trade_goods_size_modifier = 0.50
+	province_trade_power_modifier = 0.50
+}
+
+fee_vij_introduction_matchlock = {
+	fire_damage = 0.10
+}
+fee_vij_traditional_training = {
+	shock_damage = 0.10
+}
+
+fee_vij_improved_goa = {
+	local_development_cost = -0.10
+	local_ship_cost = -0.15
+	ship_recruit_speed = -0.20
+}
+
+fee_vij_arabian_horses_influx = {
+	cavalry_cost = -0.15
+}
+fee_vij_arabian_horses_deflux = {
+	cavalry_cost = 0.15
+}
+
+fee_vij_expansion_vitthala_temple = {
+	tolerance_own = 0.5
+	burghers_loyalty_modifier = 0.05
+	jains_loyalty_modifier = 0.05
+	vaisyas_loyalty_modifier = 0.05
+	religion = yes
+}
+fee_vij_vitthala_temple = {
+	province_trade_power_value = 25
+	religion = yes
+}
+
+fee_vij_construction_balakrishna_temple = {
+	prestige = 0.5
+	monthly_splendor = 1
+	religion = yes
+}
+fee_vij_balakrishna_temple = {
+	army_tradition_decay = -0.0025
+	religion = yes
+}
+
+fee_vij_construction_achyutaraya_temple = {
+	legitimacy = 0.5
+	religion = yes
+}
+fee_vij_achyutaraya_temple = {
+	local_development_cost = -0.10
+	religion = yes
 }

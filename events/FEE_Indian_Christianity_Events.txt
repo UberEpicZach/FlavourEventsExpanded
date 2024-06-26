@@ -1,0 +1,328 @@
+namespace = FEE_Indian_Christianity_Events
+
+# Apostle Intombed
+country_event = {
+	id = FEE_Indian_Christianity_Events.1
+	title = FEE_Indian_Christianity_Events.1.T
+	desc = FEE_Indian_Christianity_Events.1.D
+	picture = RELIGION_eventPicture
+
+	major = yes
+	fire_only_once = yes
+
+	goto = 539
+
+	trigger = {
+		owns = 539
+		has_global_modifier_value = {
+			which = tolerance_heathen
+			value = 0
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = fee_apostle_intombed_event
+		}
+	}
+
+	option = {
+		name = FEE_Indian_Christianity_Events.1.OPT1
+
+		ai_chance = { factor = 0.6 }
+
+		539 = {
+			change_religion = coptic
+			add_base_tax = 3
+			add_or_upgrade_tax_building = yes
+			add_province_modifier = {
+				name = fee_indian_christianity_basilica_of_thomas_the_apostle
+				duration = -1
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Indian_Christianity_Events.1.OPT2
+
+		ai_chance = { factor = 0.4 }
+
+		add_prestige_or_monarch_power = { amount = 25 }
+		539 = {
+			change_religion = coptic
+			add_base_tax = -1
+		}
+	}
+}
+
+# Saint Thomas Christians
+country_event = {
+	id = FEE_Indian_Christianity_Events.2
+	title = FEE_Indian_Christianity_Events.2.T
+	desc = FEE_Indian_Christianity_Events.2.D
+	picture = RELIGION_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		has_global_flag = fee_apostle_intombed_event
+		owns = 535
+		owns = 534
+		owns = 4412
+		owns = 537
+		owns = 529
+		owns = 4416
+		owns = 2100
+		owns = 539
+		539 = {
+			religion_group = christian
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = fee_saint_thomas_christians_event
+		}
+	}
+
+	option = {
+		name = FEE_Indian_Christianity_Events.2.OPT1
+
+		ai_chance = { factor = 0.5 }
+
+		custom_tooltip = FEE_Indian_Christianity_Events.2.tt.1
+		tooltip = {
+			add_province_modifier = {
+				name = fee_indian_christianity_nestorian_religious_center_coptic
+				duration = -1
+			}
+		}
+		custom_tooltip = FEE_Indian_Christianity_Events.2.tt.2
+		tooltip = {
+			add_province_modifier = {
+				name = fee_indian_christianity_nestorian_religious_center_not_coptic
+				duration = -1
+			}
+		}
+		custom_tooltip = FEE_Indian_Christianity_Events.2.tt.3
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						province_id = 535
+						province_id = 534
+						province_id = 4412
+						province_id = 537
+						province_id = 529
+						province_id = 4416
+						province_id = 2100
+						province_id = 539
+					}
+				}
+				change_religion = coptic
+				if = {
+					limit = {
+						ROOT = { religion = coptic }
+					}
+					add_province_modifier = {
+						name = fee_indian_christianity_nestorian_religious_center_coptic
+						duration = -1
+					}
+				}
+				else = {
+					add_province_modifier = {
+						name = fee_indian_christianity_nestorian_religious_center_not_coptic
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Indian_Christianity_Events.2.OPT2
+
+		ai_chance = { factor = 0.5 }
+
+		custom_tooltip = FEE_Indian_Christianity_Events.2.tt.4
+		tooltip = {
+			add_province_modifier = {
+				name = fee_indian_christianity_christian_ghetto_christian
+				duration = -1
+			}
+		}
+		custom_tooltip = FEE_Indian_Christianity_Events.2.tt.5
+		tooltip = {
+			add_province_modifier = {
+				name = fee_indian_christianity_christian_ghetto_not_christian
+				duration = -1
+			}
+		}
+		custom_tooltip = FEE_Indian_Christianity_Events.2.tt.6
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					OR = {
+						province_id = 535
+						province_id = 534
+						province_id = 4412
+						province_id = 537
+						province_id = 529
+						province_id = 4416
+						province_id = 2100
+						province_id = 539
+					}
+				}
+				if = {
+					limit = {
+						ROOT = { religion_group = christian }
+					}
+					add_province_modifier = {
+						name = fee_indian_christianity_christian_ghetto_christian
+						duration = -1
+					}
+				}
+				else = {
+					add_province_modifier = {
+						name = fee_indian_christianity_christian_ghetto_not_christian
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+}
+
+# The Ezharappallikal
+country_event = {
+	id = FEE_Indian_Christianity_Events.3
+	title = FEE_Indian_Christianity_Events.3.T
+	desc = FEE_Indian_Christianity_Events.3.D
+	picture = RELIGION_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		has_global_flag = fee_saint_thomas_christians_event
+		owns = 535
+		owns = 529
+		owns = 539
+		coptic = 1
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = fee_the_ezharappallikal_event
+		}
+	}
+
+	option = {
+		name = FEE_Indian_Christianity_Events.3.OPT1
+
+		ai_chance = { factor = 0.95 }
+
+		add_prestige_or_monarch_power = { amount = 25 }
+		if = {
+			limit = {
+				has_estate = estate_brahmins
+			}
+			add_estate_loyalty = {
+				estate = estate_brahmins
+				loyalty = 15
+			}
+		}
+		else_if = {
+			limit = {
+				has_estate = estate_church
+			}
+			add_estate_loyalty = {
+				estate = estate_church
+				loyalty = 15
+			}
+		}
+		every_owned_province = {
+			limit = {
+				OR = {
+					province_id = 535
+					province_id = 529
+					province_id = 539
+					religion = coptic
+				}
+			}
+			add_local_autonomy = -30
+			add_province_modifier = {
+				name = fee_indian_christianity_ezharappallikal
+				duration = 18250
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Indian_Christianity_Events.3.OPT2
+
+		ai_chance = { factor = 0.05 }
+
+		change_religion = coptic
+		add_country_modifier = {
+			name = fee_indian_christianity_thomist_christian_bastion
+			duration = 5475
+		}
+		535 = {
+			change_religion = coptic
+			add_or_upgrade_tax_building = yes
+			hidden_effect = {
+				add_province_modifier = {
+					name = fee_indian_christianity_nestorian_religious_center_coptic
+					duration = -1
+				}
+			}
+		}
+		529 = {
+			change_religion = coptic
+			add_or_upgrade_tax_building = yes
+			hidden_effect = {
+				add_province_modifier = {
+					name = fee_indian_christianity_nestorian_religious_center_coptic
+					duration = -1
+				}
+			}
+		}
+		539 = {
+			change_religion = coptic
+			add_or_upgrade_tax_building = yes
+			hidden_effect = {
+				add_province_modifier = {
+					name = fee_indian_christianity_nestorian_religious_center_coptic
+					duration = -1
+				}
+			}
+		}
+		custom_tooltip = FEE_Indian_Christianity_Events.3.tt.1
+		tooltip = {
+			add_province_modifier = {
+				name = fee_indian_christianity_nestorian_religious_center_coptic
+				duration = -1
+			}
+		}
+		custom_tooltip = FEE_Indian_Christianity_Events.3.tt.2
+		tooltip = {
+			add_province_modifier = {
+				name = fee_indian_christianity_nestorian_religious_center_not_coptic
+				duration = -1
+			}
+		}
+		custom_tooltip = FEE_Indian_Christianity_Events.3.tt.3
+	}
+}

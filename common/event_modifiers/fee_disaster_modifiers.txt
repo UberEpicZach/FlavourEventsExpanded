@@ -211,7 +211,9 @@ fee_disaster_netherlands_more_economic_downturn = {
 	global_trade_goods_size_modifier = -0.10
 }
 
-# Naples
+###################
+###    NAPLES   ###
+###################
 fee_disaster_naples_nobles_control = {
 	legitimacy = -1
 	reform_progress_growth = -0.25
@@ -230,21 +232,97 @@ fee_disaster_naples_twenty_years_prosperity = {
 	global_monthly_devastation = -0.1
 }
 
-# Vijayaba Kollaya
-fee_vijayaba_kollaya_army_disloyalty = {
+###################
+###	VIJAYANAGAR	###
+###################
+fee_disaster_vij_political_instability = {
+	global_autonomy = 0.05
+	stability_cost_modifier = 0.25
+}
+fee_disaster_vij_prosperity_southern_india = {
+	prestige = 0.50
+	legitimacy = 0.50
+	republican_tradition = 0.15
+	horde_unity = 0.50
+	meritocracy = 0.50
+	devotion = 0.50
+	global_prosperity_growth = 1
+	monthly_splendor = 1
+}
+
+fee_disaster_vij_internal_division = {
+	local_unrest = 3
+	min_local_autonomy = 15
+}
+fee_disaster_vij_agagge_akramanagalu = {
+	manpower_recovery_speed = -0.15
+	global_manpower_modifier = -0.33
+}
+fee_disaster_vij_bandaya_naykaru = {
+	min_local_autonomy = 50
+}
+fee_disaster_vij_parinamakari_nayakatvada_korate = {
+	all_estate_loyalty_equilibrium = -0.10
+	advisor_cost = 0.15
+}
+fee_disaster_vij_purvavyaparada_nasta = {
+	ship_trade_power_modifier = -0.15
+}
+fee_disaster_vij_300_bandarugala_nasta = {
+	naval_forcelimit_modifier = -0.15
+}
+fee_disaster_vij_sagarottara_vyaparadalli_nasta = {
+	global_trade_power = -0.15
+	naval_forcelimit_modifier = -0.15
+	ship_trade_power_modifier = -0.15
+}
+fee_disaster_vij_protected_tamil_autonomy = {
+	min_local_autonomy = 75
+	local_unrest = -2
+}
+fee_disaster_vij_protected_mysorean_autonomy = {
+	min_local_autonomy = 50
+	local_unrest = -1
+}
+
+fee_disaster_vij_militari_sudharanegalu = {
+	mil_tech_cost_modifier = -0.05
+	global_regiment_cost = -0.10
+}
+fee_disaster_vij_kendrikaranada_prayatna = {
+	global_autonomy = -0.025
+	reform_progress_growth = -0.80
+	stability_cost_modifier = 0.50
+}
+fee_disaster_vij_antarika_bhu_vyaparavannu_alapadisi = {
+	global_own_trade_power = 0.15
+	trade_efficiency = 0.05
+}
+
+
+#Bahmanis
+fee_disaster_bah_decadence = {
+	all_power_cost = 0.05
 	land_morale = -0.1
-	manpower_recovery_speed = -0.2
 }
-fee_vijayaba_kollaya_master_of_the_horse_defects = {
-	cavalry_cost = 0.2
-	cavalry_power = -0.15
+fee_disaster_bah_disloyal_brahmins = {
+	tolerance_heathen = -1
 }
-fee_vijayaba_kollaya_punished_nobles = {
-	nobles_influence_modifier = -0.15
-	nobles_loyalty_modifier = 0.1
+fee_disaster_bah_hostile_court = {
+	advisor_cost = 0.5
 }
-fee_vijayaba_kollaya_stabilized_realm = {
-	global_unrest = -2
-	stability_cost_modifier = -0.1
-	global_monthly_devastation = -0.08
+fee_disaster_bah_demoralized_army = {
+	land_morale = -0.1
+	assault_fort_ability = -0.5
+}
+fee_disaster_bah_noble_unrest = {
+	global_unrest = 1
+}
+fee_disaster_bah_mobilized_treasury = {
+	global_tax_income = 24
+}
+fee_disaster_bah_new_era = {
+	land_morale = 0.1
+	stability_cost_modifier = -0.15
+	monthly_reform_progress_modifier = 0.33
 }

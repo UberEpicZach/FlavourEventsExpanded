@@ -1,0 +1,127 @@
+name = FEE_Kochin_Events
+
+# New Arrivals, New Opportunities?
+country_event = {
+	id = FEE_Kochin_Events.1
+	title = FEE_Kochin_Events.1.T
+	desc = FEE_Kochin_Events.1.D
+	picture = EXPLORERS_eventPicture
+
+	major = yes
+	fire_only_once = yes
+
+	trigger = {
+		owns = 535
+		has_global_flag = fee_calicut_arrival_of_vasco_da_gama
+		NOT = { owns = 534 }
+		exists = POR
+		535 = {
+			has_discovered = POR
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 18
+	}
+
+	immediate = {
+		hidden_effect = {
+			534 = {
+				owner = {
+					save_event_target_as = calicut_owner
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Kochin_Events.1.OPT1
+
+		goto = 535
+
+		ai_chance = { factor = 1 }
+
+		535 = {
+			add_province_modifier = {
+				name = fee_kochin_european_factories
+				duration = 18250
+			}
+		}
+		event_target:calicut_owner = {
+			add_opinion = {
+				who = ROOT
+				modifier = fee_kochin_european_factories_negative_opinion
+			}
+			reverse_add_opinion = {
+				who = ROOT
+				modifier = fee_kochin_european_factories_negative_opinion
+			}
+		}
+		POR = {
+			add_opinion = {
+				who = ROOT
+				modifier = fee_kochin_european_factories_positive_opinion
+			}
+			reverse_add_opinion = {
+				who = ROOT
+				modifier = fee_kochin_european_factories_positive_opinion
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Kochin_Events.1.OPT2
+
+		ai_chance = { factor = 0 }
+
+		add_mercantilism = 3
+	}
+
+	option = {
+		name = FEE_Kochin_Events.1.OPT3
+
+		goto = 535
+
+		highlight = yes
+
+		trigger = {
+			tag = KOC
+			hidden_trigger = {
+				is_expanded_mod_active = { mod = historical_ideas }
+			}
+		}
+
+		ai_chance = { factor = 100 }
+
+		535 = {
+			add_province_modifier = {
+				name = fee_kochin_european_factories
+				duration = 18250
+			}
+		}
+		event_target:calicut_owner = {
+			add_opinion = {
+				who = ROOT
+				modifier = fee_kochin_european_factories_negative_opinion
+			}
+			reverse_add_opinion = {
+				who = ROOT
+				modifier = fee_kochin_european_factories_negative_opinion
+			}
+		}
+		POR = {
+			add_opinion = {
+				who = ROOT
+				modifier = fee_kochin_european_factories_positive_opinion
+			}
+			reverse_add_opinion = {
+				who = ROOT
+				modifier = fee_kochin_european_factories_positive_opinion
+			}
+		}
+		add_country_modifier = {
+			name = fee_kochin_a_european_factory
+			duration = -1
+		}
+	}
+}

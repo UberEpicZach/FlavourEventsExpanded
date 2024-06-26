@@ -1,0 +1,29 @@
+fee_indian_christianity_basilica_of_thomas_the_apostle = {
+	local_missionary_strength = -0.03
+	local_unrest = -2
+}
+fee_indian_christianity_christian_ghetto_christian = {
+	local_autonomy = -0.05
+	local_unrest = -1
+	local_governing_cost = -0.1
+}
+fee_indian_christianity_christian_ghetto_not_christian = {
+	local_institution_spread = 0.33
+	local_unrest = 2
+}
+fee_indian_christianity_ezharappallikal = {
+	local_unrest = 8
+	local_missionary_strength = 0.02
+}
+fee_indian_christianity_thomist_christian_bastion = {
+	global_missionary_strength = 0.03
+	missionaries = 1
+}
+fee_indian_christianity_nestorian_religious_center_coptic = {
+	global_tax_income = 2
+	local_unrest = -2
+}
+fee_indian_christianity_nestorian_religious_center_not_coptic = {
+	local_missionary_strength = -0.05
+	local_religious_unity_contribution = -1
+}

@@ -1,0 +1,397 @@
+namespace = FEE_Bahmanis_Events
+
+# The First Gunpowder Empire!
+country_event = {
+	id = FEE_Bahmanis_Events.1
+	title = FEE_Bahmanis_Events.1.T
+	desc = FEE_Bahmanis_Events.1.D
+	picture = INVENTION_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_or_was_tag = { tag = BAH }
+		is_year = 1444
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Bahmanis_Events.1.OPT1
+
+		ai_chance = { factor = 100 }
+
+		add_treasury = -100
+		if = {
+			limit = {
+				has_estate = estate_nobles
+			}
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = 10
+			}
+		}
+		else_if = {
+			limit = {
+				has_estate = estate_maratha
+			}
+			add_estate_loyalty = {
+				estate = estate_maratha
+				loyalty = 10
+			}
+		}
+		else_if = {
+			limit = {
+				has_estate = estate_rajput
+			}
+			add_estate_loyalty = {
+				estate = estate_rajput
+				loyalty = 10
+			}
+		}
+		add_country_modifier = {
+			name = fee_bahmanis_return_to_cavalry_roots
+			duration = 18250
+		}
+		if = {
+			limit = {
+				mil_tech = 6
+			}
+			capital_scope = {
+				artillery = ROOT
+				artillery = ROOT
+				artillery = ROOT
+				artillery = ROOT
+			}
+		}
+		else = {
+			capital_scope = {
+				large_cast_bronze_mortar = ROOT
+				large_cast_bronze_mortar = ROOT
+				large_cast_bronze_mortar = ROOT
+				large_cast_bronze_mortar = ROOT
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Bahmanis_Events.1.OPT2
+
+		ai_chance = { factor = 0 }
+
+		add_mil_power = -100
+		if = {
+			limit = {
+				has_estate = estate_nobles
+			}
+			add_estate_loyalty = {
+				estate = estate_nobles
+				loyalty = -15
+			}
+		}
+		else_if = {
+			limit = {
+				has_estate = estate_maratha
+			}
+			add_estate_loyalty = {
+				estate = estate_maratha
+				loyalty = -15
+			}
+		}
+		else_if = {
+			limit = {
+				has_estate = estate_rajput
+			}
+			add_estate_loyalty = {
+				estate = estate_rajput
+				loyalty = -15
+			}
+		}
+		add_country_modifier = {
+			name = fee_bahmanis_early_field_artillery
+			duration = -1
+		}
+		if = {
+			limit = {
+				has_dlc = "Cradle of Civilization"
+			}
+			add_country_modifier = {
+				name = fee_bahmanis_first_gunpowder_army_of_india_dlc
+				duration = 29200
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = fee_bahmanis_first_gunpowder_army_of_india
+				duration = 29200
+			}
+		}
+		if = {
+			limit = {
+				mil_tech = 6
+			}
+			capital_scope = {
+				artillery = ROOT
+				artillery = ROOT
+				artillery = ROOT
+				artillery = ROOT
+			}
+		}
+		else = {
+			capital_scope = {
+				large_cast_bronze_mortar = ROOT
+				large_cast_bronze_mortar = ROOT
+				large_cast_bronze_mortar = ROOT
+				large_cast_bronze_mortar = ROOT
+			}
+		}
+	}
+}
+
+# Legacy of Bahmanid Field Artillery
+country_event = {
+	id = FEE_Bahmanis_Events.2
+	title = FEE_Bahmanis_Events.2.T
+	desc = FEE_Bahmanis_Events.2.D
+	picture = LAND_MILITARY_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			has_country_modifier = fee_bahmanis_first_gunpowder_army_of_india_dlc
+			has_country_modifier = fee_bahmanis_first_gunpowder_army_of_india
+		}
+		mil_tech = 7
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = FEE_Bahmanis_Events.2.OPT1
+
+		ai_chance = { factor = 0.75 }
+
+		if = {
+			limit = {
+				has_country_modifier = fee_bahmanis_early_field_artillery
+			}
+			remove_country_modifier = fee_bahmanis_early_field_artillery
+		}
+		add_country_modifier = {
+			name = fee_bahmanis_bahmani_gunpowder_embracement
+			duration = 36500
+		}
+	}
+
+	option = {
+		name = FEE_Bahmanis_Events.2.OPT2
+
+		ai_chance = { factor = 0.25 }
+
+		if = {
+			limit = {
+				has_country_modifier = fee_bahmanis_early_field_artillery
+			}
+			remove_country_modifier = fee_bahmanis_early_field_artillery
+		}
+		add_stability_or_adm_power = yes
+		add_prestige_or_monarch_power = { amount = 10 }
+		add_army_tradition_or_mil_power = { amount = 15 }
+	}
+
+	option = {
+		name = FEE_Bahmanis_Events.2.OPT3
+
+		trigger = {
+			has_global_flag = fee_meme_active
+		}
+
+		ai_chance = { factor = 0 }
+
+		if = {
+			limit = {
+				has_country_modifier = fee_bahmanis_early_field_artillery
+			}
+			remove_country_modifier = fee_bahmanis_early_field_artillery
+		}
+		add_country_modifier = {
+			name = fee_bahmanis_outmoded_tactics
+			duration = 3650
+		}
+	}
+}
+
+# Bidriware
+country_event = {
+	id = FEE_Bahmanis_Events.3
+	title = FEE_Bahmanis_Events.3.T
+	desc = FEE_Bahmanis_Events.3.D
+	picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
+
+	major = yes
+	fire_only_once = yes
+
+	goto = 1948
+
+	trigger = {
+		prestige = 50
+		owns = 1948
+		1948 = {
+			development = 15
+			OR = {
+				has_owner_culture = yes
+				has_owner_accepted_culture = yes
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = FEE_Bahmanis_Events.3.OPT1
+
+		ai_chance = { factor = 0.99 }
+
+		change_price = {
+			trade_goods = copper
+			key = fee_bahmanis_copper_price_bidir
+			value = 0.25
+			duration = -1
+		}
+		1948 = {
+			change_trade_goods = copper
+			add_permanent_province_modifier = {
+				name = fee_bahmanis_bidir_district
+				duration = -1
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Bahmanis_Events.3.OPT2
+
+		ai_chance = { factor = 0.01 }
+
+		add_prestige = -2
+		1948 = {
+			add_base_production = 1
+		}
+	}
+}
+
+# Alienation of the Hindus
+country_event = {
+	id = FEE_Bahmanis_Events.4
+	title = FEE_Bahmanis_Events.4.T
+	desc = FEE_Bahmanis_Events.4.D
+	picture = RELIGIOUS_TURMOIL_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_ruler_flag = fee_bahmanis_hindu_question }
+		religion_group = muslim
+		capital_scope = {
+			OR = {
+				region = deccan_region
+				region = hindusthan_region
+				region = coromandel_region
+			}
+		}
+		check_variable = { which = num_converted_religion value = 1 }
+		has_regency = no
+		any_owned_province = {
+			OR = {
+				region = deccan_region
+				region = hindusthan_region
+				region = coromandel_region
+			}
+			religion_group = muslim
+			NOT = { has_province_flag = fee_intolerance }
+		}
+		any_owned_province = {
+			OR = {
+				region = deccan_region
+				region = hindusthan_region
+				region = coromandel_region
+			}
+			religion = hinduism
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_ruler_flag = fee_bahmanis_hindu_question
+			random_owned_province = {
+				limit = {
+					OR = {
+						region = deccan_region
+						region = hindusthan_region
+						region = coromandel_region
+					}
+					religion_group = muslim
+					NOT = { has_province_flag = fee_intolerance }
+				}
+				save_event_target_as = target_province
+			}
+			capital_scope = {
+				save_event_target_as = capital_target
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Bahmanis_Events.4.OPT1
+
+		goto = target_province
+
+		ai_chance = { factor = 100 }
+
+		add_stability_or_adm_power = yes
+		add_ruler_modifier = {
+			name = fee_bahmanis_hindu_concessions
+			duration = -1
+		}
+		event_target:target_province = {
+			change_religion = hinduism
+		}
+	}
+
+	option = {
+		name = FEE_Bahmanis_Events.4.OPT2
+
+		goto = capital_target
+
+		ai_chance = { factor = 0 }
+
+		add_stability = -2
+		capital_scope = {
+			hinduism_rebels = 3
+		}
+		add_ruler_modifier = {
+			name = fee_bahmanis_islamization_efforts
+			duration = -1
+		}
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					OR = {
+						region = deccan_region
+						region = hindusthan_region
+						region = coromandel_region
+					}
+					religion_group = muslim
+					NOT = { has_province_flag = fee_intolerance }
+				}
+				set_province_flag = fee_intolerance
+			}
+		}
+	}
+}

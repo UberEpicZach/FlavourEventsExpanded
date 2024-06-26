@@ -1,0 +1,95 @@
+fee_deccani_sultanates_a_new_capital = {
+	local_development_cost = -0.2
+}
+
+fee_deccani_sultanates_public_waterworks_of_bijapur = {
+	local_development_cost = -0.1
+	allowed_num_of_buildings = 1
+	local_unrest = -2
+}
+
+fee_deccani_sultanates_mediocre_public_waterworks_of_bijapur = {
+	local_development_cost = -0.05
+	local_unrest = -1
+}
+
+fee_deccani_sultanates_not_enough_water = {
+	local_development_cost = 0.15
+	local_unrest = 5
+}
+
+fee_deccani_sultanates_bijapuri_mint = {
+	global_trade_power = 0.1
+	inflation_reduction = -0.05
+}
+
+fee_deccani_sultanates_hundred_bazaars = {
+	allowed_num_of_manufactories = 1
+	province_trade_power_value = 20
+}
+
+fee_deccani_sultanates_unrestricted_free_market = {
+	trade_efficiency = 0.1
+}
+
+fee_deccani_sultanates_unregulated_trade = {
+	local_development_cost = 0.1
+	province_trade_power_value = 10
+}
+
+fee_deccani_sultanates_new_imperial_capital = {
+}
+
+fee_deccani_sultanates_new_imperial_capital_region = {
+	local_unrest = -3
+	local_autonomy = -0.05
+}
+
+fee_deccani_sultanates_winter_capital_of_the_mughals = {
+	local_governing_cost_increase = -20
+}
+
+fee_deccani_sultanates_winter_capital_of_the_mughals_region = {
+	min_local_autonomy = -10
+}
+
+fee_deccani_sultanates_deccani_cultural_center = {
+	diplomatic_upkeep = 1
+	prestige = 1
+	advisor_pool = 1
+}
+
+fee_deccani_sultanates_hospitals_of_bijapur = {
+	local_development_cost = -0.15
+	local_unrest = -2
+}
+
+fee_deccani_sultanates_institutionalized_ratirahasya = {
+	diplomatic_reputation = 1
+	estate_interaction_cooldown_modifier = -0.25
+}
+
+fee_deccani_sultanates_blessings_of_kamadeva = {
+	all_estate_loyalty_equilibrium = 0.05
+	loyalty_change_on_revoked = 0.05
+}
+
+fee_deccani_sultanates_ratirahasya_in_the_court = {
+	manpower_recovery_speed = 0.05
+	prestige = -0.5
+}
+
+fee_deccani_sultanates_throw_this_smut_out = {
+	relation_with_same_religion = 15
+	reverse_relation_with_same_religion = 15
+}
+
+fee_deccani_sultanates_sensualism_censored = {
+	tolerance_own = -1
+	country_diplomatic_power = -1
+}
+
+fee_deccani_sultanates_hindu_rituals_censored = {
+	tolerance_own = 2
+	tolerance_heathen = -2
+}

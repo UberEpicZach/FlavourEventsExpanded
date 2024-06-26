@@ -44,6 +44,81 @@ on_province_owner_change = {
 	}
 	if = {
 		limit = {
+			NOT = { has_province_modifier = fee_deccani_sultanates_new_imperial_capital_region }
+			OR = {
+				region = deccan_region
+				region = coromandel_region
+			}
+			owner = {
+				owns = 569
+				capital = 569
+			}
+			569 = {
+				has_province_modifier = fee_deccani_sultanates_new_imperial_capital
+			}
+		}
+		add_province_modifier = {
+			name = fee_deccani_sultanates_new_imperial_capital_region
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			province_id = 569
+			OR = {
+				deccan_region = {
+					has_province_modifier = fee_deccani_sultanates_new_imperial_capital_region
+				}
+				coromandel_region = {
+					has_province_modifier = fee_deccani_sultanates_new_imperial_capital_region
+				}
+			}
+		}
+		deccan_region = {
+			limit = {
+				has_province_modifier = fee_deccani_sultanates_new_imperial_capital_region
+			}
+			remove_province_modifier = fee_deccani_sultanates_new_imperial_capital_region
+		}
+		coromandel_region = {
+			limit = {
+				has_province_modifier = fee_deccani_sultanates_new_imperial_capital_region
+			}
+			remove_province_modifier = fee_deccani_sultanates_new_imperial_capital_region
+		}
+	}
+	if = {
+		limit = {
+			NOT = { has_province_modifier = fee_deccani_sultanates_winter_capital_of_the_mughals_region }
+			region = deccan_region
+			owner = {
+				owns = 569
+			}
+			569 = {
+				has_province_modifier = fee_deccani_sultanates_winter_capital_of_the_mughals
+			}
+		}
+		add_province_modifier = {
+			name = fee_deccani_sultanates_winter_capital_of_the_mughals_region
+			duration = -1
+		}
+	}
+	if = {
+		limit = {
+			province_id = 569
+			deccan_region = {
+				has_province_modifier = fee_deccani_sultanates_winter_capital_of_the_mughals_region
+			}
+		}
+		deccan_region = {
+			limit = {
+				has_province_modifier = fee_deccani_sultanates_winter_capital_of_the_mughals_region
+			}
+			remove_province_modifier = fee_deccani_sultanates_winter_capital_of_the_mughals_region
+		}
+	}
+	if = {
+		limit = {
 			has_province_modifier = fee_may_mightiest_tolla
 			NOT = {
 				owner = {
@@ -55,6 +130,67 @@ on_province_owner_change = {
 			}
 		}
 		remove_province_modifier = fee_may_mightiest_tolla
+	}
+}
+
+on_capital_moved = {
+	if = {
+		limit = {
+			FROM = {
+				province_id = 569
+				has_province_modifier = fee_deccani_sultanates_new_imperial_capital
+				is_capital = no
+			}
+		}
+		FROM = {
+			remove_province_modifier = fee_deccani_sultanates_new_imperial_capital
+		}
+		deccan_region = {
+			limit = {
+				has_province_modifier = fee_deccani_sultanates_new_imperial_capital_region
+			}
+			remove_province_modifier = fee_deccani_sultanates_new_imperial_capital_region
+		}
+		coromandel_region = {
+			limit = {
+				has_province_modifier = fee_deccani_sultanates_new_imperial_capital_region
+			}
+			remove_province_modifier = fee_deccani_sultanates_new_imperial_capital_region
+		}
+	}
+	else_if = {
+		limit = {
+			province_id = 569
+			NOT = { has_province_modifier = fee_deccani_sultanates_new_imperial_capital }
+			owner = {
+				has_country_flag = fee_deccani_sultanates_southern_capital
+			}
+		}
+		add_province_modifier = {
+			name = fee_deccani_sultanates_new_imperial_capital
+			duration = -1
+			hidden = yes
+		}
+		owner = {
+			deccan_region = {
+				limit = {
+					owned_by = PREV
+				}
+				add_province_modifier = {
+					name = fee_deccani_sultanates_new_imperial_capital_region
+					duration = -1
+				}
+			}
+			coromandel_region = {
+				limit = {
+					owned_by = PREV
+				}
+				add_province_modifier = {
+					name = fee_deccani_sultanates_new_imperial_capital_region
+					duration = -1
+				}
+			}
+		}
 	}
 }
 
@@ -91,6 +227,7 @@ on_siege_lost_country = {
 on_siege_won_country = {
 	events = {
 		FEE_Condottieri_Events.13
+		FEE_Vijayanagar_Events.7
 	}
 }
 
@@ -195,6 +332,8 @@ on_new_heir = {
 on_new_monarch = {
 	events = {
 		FEE_Charles_V_Events.2
+		FEE_Bahmanis_Events.4
+		FEE_Marathas_Events.11
 	}
 
 	if = {
@@ -256,6 +395,12 @@ on_war_won = {
 	}
 }
 
+on_rebels_break_country = {
+	events = {
+		disaster_fee_decline_of_the_bahmani_sultanate.10
+	}
+}
+
 on_monthly_pulse = {
 	fee_trade_fair_events = yes
 }
@@ -266,4 +411,140 @@ on_bi_yearly_pulse_5 = {
 
 on_yearly_pulse_5 = {
 	fee_diseases_yearly = yes
+}
+
+on_province_religion_converted = {
+	if = {
+		limit = {
+			owner = {
+				NOT = { has_country_flag = fee_bahmanis_hindu_question_first_happened }
+				NOT = { has_ruler_flag = fee_bahmanis_hindu_question }
+				religion_group = muslim
+				capital_scope = {
+					OR = {
+						region = deccan_region
+						region = hindusthan_region
+						region = coromandel_region
+					}
+				}
+				has_regency = no
+			}
+			OR = {
+				region = deccan_region
+				region = hindusthan_region
+				region = coromandel_region
+			}
+			religion_group = muslim
+			owner = {
+				any_owned_province = {
+					OR = {
+						region = deccan_region
+						region = hindusthan_region
+						region = coromandel_region
+					}
+					religion = hinduism
+				}
+			}
+		}
+		owner = {
+			set_country_flag = fee_bahmanis_hindu_question_first_happened
+			country_event = { id = FEE_Bahmanis_Events.4 }
+		}
+	}
+}
+
+on_religion_change = {
+	if = {
+		limit = {
+			has_global_flag = fee_saint_thomas_christians_event
+			any_owned_province = {
+				OR = {
+					has_province_modifier = fee_indian_christianity_christian_ghetto_christian
+					has_province_modifier = fee_indian_christianity_christian_ghetto_not_christian
+				}
+			}
+		}
+		every_owned_province = {
+			limit = {
+				OR = {
+					has_province_modifier = fee_indian_christianity_christian_ghetto_christian
+					has_province_modifier = fee_indian_christianity_christian_ghetto_not_christian
+				}
+			}
+			remove_province_modifier = fee_indian_christianity_christian_ghetto_christian
+			remove_province_modifier = fee_indian_christianity_christian_ghetto_not_christian
+			if = {
+				limit = {
+					ROOT = { religion_group = christian }
+				}
+				add_province_modifier = {
+					name = fee_indian_christianity_christian_ghetto_christian
+					duration = -1
+				}
+			}
+			else = {
+				add_province_modifier = {
+					name = fee_indian_christianity_christian_ghetto_not_christian
+					duration = -1
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_global_flag = fee_the_ezharappallikal_event
+			any_owned_province = {
+				OR = {
+					has_province_modifier = fee_indian_christianity_nestorian_religious_center_coptic
+					has_province_modifier = fee_indian_christianity_nestorian_religious_center_not_coptic
+				}
+			}
+		}
+		every_owned_province = {
+			limit = {
+				OR = {
+					has_province_modifier = fee_indian_christianity_nestorian_religious_center_coptic
+					has_province_modifier = fee_indian_christianity_nestorian_religious_center_not_coptic
+				}
+			}
+			remove_province_modifier = fee_indian_christianity_nestorian_religious_center_coptic
+			remove_province_modifier = fee_indian_christianity_nestorian_religious_center_not_coptic
+			if = {
+				limit = {
+					ROOT = { religion = coptic }
+				}
+				add_province_modifier = {
+					name = fee_indian_christianity_nestorian_religious_center_coptic
+					duration = -1
+				}
+			}
+			else = {
+				add_province_modifier = {
+					name = fee_indian_christianity_nestorian_religious_center_not_coptic
+					duration = -1
+				}
+			}
+		}
+	}
+}
+
+# ROOT = Overlord, FROM = Minor
+on_dependency_lost = {
+	FROM = {
+		if = {
+			limit = {
+				has_country_modifier = fee_marathas_loyal_buffer_state
+				OR = {
+					is_subject = no
+					AND = {
+						is_subject = yes
+						overlord = {
+							NOT = { is_or_was_tag = { tag = MAR } }
+						}
+					}
+				}
+			}
+			remove_country_modifier = fee_marathas_loyal_buffer_state
+		}
+	}
 }
