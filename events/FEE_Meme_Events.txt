@@ -81,7 +81,7 @@ country_event = {
 				}
 			}
 			add_country_modifier = {
-				name = fee_bill_wurtz_now_with_guns
+				name = fee_meme_now_with_guns
 				duration = 10950
 			}
 		}
@@ -102,13 +102,13 @@ country_event = {
 			continent = europe
 		}
 		is_year = 1510
-		NOT = { has_country_flag = fee_bill_wurtz_indulgences }
+		NOT = { has_country_flag = fee_meme_indulgences }
 		NOT = { has_country_flag = counter_reformation }
 	}
 	
 	immediate = {
 		hidden_effect = {
-			set_country_flag = fee_bill_wurtz_indulgences
+			set_country_flag = fee_meme_indulgences
 		}
 	}
 
@@ -165,7 +165,7 @@ country_event = {
 		name = FEE_Meme_Events.4.OPT1
 
 		add_country_modifier = {
-			name = fee_bill_wurtz_spice_trade_monopoly
+			name = fee_meme_spice_trade_monopoly
 			duration = 10950
 		}
 	}
@@ -196,7 +196,7 @@ country_event = {
 		name = FEE_Meme_Events.5.OPT1
 
 		add_country_modifier = {
-			name = fee_bill_wurtz_quest_for_pillaging
+			name = fee_meme_quest_for_pillaging
 			duration = 5475
 		}
 	}
@@ -228,7 +228,7 @@ country_event = {
 
 		change_price = {
 			trade_goods = fur
-			key = FEE_Bill_Wurtz_Fur_Modifier
+			key = fee_meme_Fur_Modifier
 			value = 0.1
 			duration = 7300	# a perma increase to furs stacks a bit too much, might to be temporary later
 		}
@@ -265,7 +265,7 @@ country_event = {
 		name = FEE_Meme_Events.7.OPT1
 
 		add_country_modifier = {
-			name = fee_bill_wurtz_stolen_spice_trade
+			name = fee_meme_stolen_spice_trade
 			duration = 7300
 		}
 	}
@@ -281,7 +281,7 @@ country_event = {
 
 	trigger = {
 		has_global_flag = fee_meme_active
-		NOT = { has_country_flag = fee_bill_wurtz_sugar_slaves }
+		NOT = { has_country_flag = fee_meme_sugar_slaves }
 		any_subject_country = {
 			capital_scope = {
 				colonial_region = colonial_the_carribean
@@ -300,7 +300,7 @@ country_event = {
 	}
 
 	immediate = {
-		hidden_effect = { set_country_flag = fee_bill_wurtz_sugar_slaves }
+		hidden_effect = { set_country_flag = fee_meme_sugar_slaves }
 	}
 
 	mean_time_to_happen = {
@@ -417,7 +417,7 @@ country_event = {
 		name = FEE_Meme_Events.11.OPT1
 
 		add_country_modifier = {
-			name = fee_bill_wurtz_first_to_steam
+			name = fee_meme_first_to_steam
 			duration = 1825
 		}
 	}
