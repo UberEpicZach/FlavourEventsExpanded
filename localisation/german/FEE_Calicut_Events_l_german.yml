@@ -1,0 +1,31 @@
+﻿l_german:
+ FEE_Calicut_Events.1.T: "Arrival of Vasco da Gama"
+ FEE_Calicut_Events.1.D: "In the late 15th century, an extraordinary journey was about to change the course of history. Vasco da Gama, a bold and ambitious Portuguese explorer, set sail from Lisbon in 1497 with a fleet of four ships. His mission was to find a direct sea route to India, driven by the lucrative prospects of the spice trade. The voyage was perilous, taking Vasco da Gama and his crew around the southern tip of Africa, the treacherous Cape of Good Hope, and into the uncharted waters of the Indian Ocean. After months of navigating through storms, unfamiliar seas, and the threat of scurvy, they finally sighted the coast of India in May 1498. Their destination was the fabled city of Calicut, known for its bustling markets and rich trade in spices, silk, and precious stones. As the Portuguese fleet approached, the sight of the thriving port city filled the crew with awe. Calicut, with its myriad of ships from many corners of the world, was vibrant with cultures and commerce. Upon arrival, Vasco da Gama was greeted by curious locals and traders. News of their arrival quickly reached the Samoothiri, the ruler of Calicut, who agreed to meet the foreign visitors. Vasco da Gama and his men were led through the bustling streets to the palace, a journey that showcased the city's wealth and diversity. The first meeting between Vasco da Gama and the Zamorin was a blend of diplomacy and cultural exchange. Vasco da Gama presented gifts from Portugal, trinkets, clothes, and corals which, although modest compared to the opulence of Calicut, were received with interest. The Samoothiri, intrigued by the prospect of establishing direct trade links with Europe, granted Vasco da Gama permission to trade in his city. However, the initial interactions were not without challenges. The Portuguese quickly realised that their offerings were considered insignificant compared to the riches of the East. Furthermore, the established Arab and Indian merchants viewed the new European traders with suspicion and concern, fearing competition. Despite these hurdles, Vasco da Gama managed to secure a modest cargo of spices, cinnamon, cloves, and pepper, which would prove immensely valuable upon his return to Portugal. After spending several months in Calicut, navigating both the opportunities and the complexities of this new trade relationship, Vasco da Gama set sail for home in August 1498. The journey back was arduous, and many lives were lost to scurvy and other hardships. Yet, Vasco da Gama's successful return to Portugal in 1499 marked a monumental achievement. His arrival in Calicut had established the first direct sea route from Europe to India, paving the way for an era of global exploration and the rise of the Portuguese colonial empire in the East."
+ FEE_Calicut_Events.1.OPT1: "The birth of a new trade route!"
+
+ FEE_Calicut_Events.2.T: "Arrival of European Missionaries"
+ FEE_Calicut_Events.2.D: "Thanks to our efforts of creating and maintaining a good relationship with the Europeans, we have managed to show them that we are also good and reasonable people. Thus, we have become very attractive to these same europeans traders and adventurers alike. As of late, however, we have received more and more word that the Europeans have started to bring their priests along. They claim their so-called “church” wants to set up missions, from what we understand is that it's their goal to educate people and spread the word of their god via this education. While we are indeed a land of many gods and religions, adding another haphazardly may not have the effects we intended it to have. However, refusing would surely serve our diplomatic connections into Europe, making us lose our exclusivity among European traders."
+ FEE_Calicut_Events.2.OPT1: "Welcome them with open arms!"
+ FEE_Calicut_Events.2.OPT2: "Get rid of these balding men!"
+ FEE_Calicut_Events.2.OPT3: "No one expected the Indian Inquisition!"
+
+ FEE_Calicut_Events.3.T: "European Missionaries Gain Proselytes"
+ FEE_Calicut_Events.3.D: "Where is the localisation, Chu?"
+ FEE_Calicut_Events.3.OPT1: "Allow them to preach their God."
+ FEE_Calicut_Events.3.OPT2: "Away with these offensive tales!"
+
+ # Tooltips:
+ FEE_Calicut_Events.2.tt: "Every Christian European country's opinion of us is changed by §R-100§!."
+
+ # Modifiers:
+ fee_calicut_calicut_connections: "Calicut Connections"
+ fee_calicut_european_quarter: "European Quarter"
+ fee_calicut_christian_arrival: "Christian Arrival"
+ fee_calicut_indian_desquisition: "Indian Desquisition"
+
+ # Opinion Modifiers:
+ fee_calicut_connections_opinion: "Calicut Connections"
+ fee_calicut_closed_borders_opinion: "Closed Borders"
+
+ # Trade Modifiers:
+ fee_calicut_trade_modifier_calicut_connections: "Calicut Connections"

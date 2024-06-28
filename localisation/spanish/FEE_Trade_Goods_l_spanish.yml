@@ -57,6 +57,11 @@
  FEE_Trade_Goods_Events.1003.OPT1: "Let there be silk!"
  FEE_Trade_Goods_Events.1003.OPT2: "Pssh! This is not worth our time!"
 
+ FEE_Trade_Goods_Events.1100.T: "Booming Cotton Industry"
+ FEE_Trade_Goods_Events.1100.D: "Golkonda relies on its diamonds for 90% of its economy, this used to work just fine while part of a larger realm like during the time of the Bahmani and Delhi sultanates. Now that we find ourselves independent we can no longer rely on one thing alone that dictates and controls our entire economy. Thus [Root.Monarch.GetName] has tasked his steward to find something Golkonda is rich in and something we can rely on. After doing an extensive dive in the country of our rather young state it was remarked there is yet hope for the economy of Golkonda. In a report given by the esteemed steward of [Root.Monarch.GetName], it states how there is no crop that grows and flourishes in golconda as well as cotton. This created an opening and a lifeline for our economy. With the Persianate incline for weaving and production of clothes, this shift would compliment the state greatly. The plan was henceforth to produce an exorbitant amount of cotton; what we don't need we will sell in export. What we do need for cloth, clothes and other forms of weaving shall be worked by artisans. Shifting our economy from diamonds to cloth clothing and rugs."
+ FEE_Trade_Goods_Events.1100.OPT1: "Cotton is King!"
+ FEE_Trade_Goods_Events.1100.OPT2: "Diamonds are forever!"
+
 # Modifiers
  fee_trade_goods_cocoa_trade: "Cocoa trade"
  desc_fee_trade_goods_cocoa_trade: ""
@@ -96,5 +101,7 @@
 
 
  fee_trade_goods_silk_ghent: "Silk of Ghent"
+
+ fee_trade_goods_dependence_on_diamonds: "Dependence on Diamonds"
 
 # Tooltips
