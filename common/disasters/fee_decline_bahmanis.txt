@@ -162,7 +162,9 @@ fee_decline_bahmanis = {
 	on_end = disaster_fee_decline_of_the_bahmani_sultanate.2
 
 	on_monthly = {
-		events = { disaster_fee_decline_of_the_bahmani_sultanate.8 }
+		events = {
+			disaster_fee_decline_of_the_bahmani_sultanate.8
+		}
 		random_events = {
 			1000 = 0
 			100 = disaster_fee_decline_of_the_bahmani_sultanate.3 # Decadence in Bahmanis
