@@ -1,0 +1,304 @@
+namespace = FEE_Gujarat_Events
+
+# The Northern Frontier
+country_event = {
+	id = FEE_Gujarat_Events.1
+	title = FEE_Gujarat_Events.1.t
+	desc = FEE_Gujarat_Events.1.d
+	picture = BAD_WITH_MONARCH_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_or_was_tag = { tag = GUJ }
+		is_neighbor_of = MER
+		NOT = {
+			army_strength = {
+				who = MER
+				value = 1
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = FEE_Gujarat_Events.1.a
+
+		add_stability = -1
+		add_legitimacy_equivalent = { amount = -25 republican_tradition = -15 }
+		add_country_modifier = {
+			name = fee_gujarat_eleven
+			duration = 5475
+		}
+	}
+}
+
+# Subdue the Rajputs
+country_event = {
+	id = FEE_Gujarat_Events.2
+	title = FEE_Gujarat_Events.2.t
+	desc = FEE_Gujarat_Events.2.d
+	picture = NOBLE_ESTATE_TAKE_OVER_eventPicture
+
+	trigger = {
+		is_or_was_tag = { tag = GUJ }
+		NOT = { has_country_flag = fee_gujarat_dealt_with_the_rajputs }
+		has_estate = estate_rajput
+		estate_influence = {
+			estate = estate_rajput
+			influence = 60
+		}
+		religion_group = muslim
+		hinduism = 1
+		any_owned_province = {
+			region = west_india_region
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Gujarat_Events.2.a
+
+		ai_chance = { factor = 100 }
+
+		set_country_flag = fee_gujarat_dealt_with_the_rajputs
+		add_legitimacy_equivalent = { amount = 15 republican_tradition = 5 }
+		add_estate_loyalty = {
+			estate = estate_rajput
+			loyalty = -40
+		}
+		add_country_modifier = {
+			name = fee_gujarat_revenge_of_the_rajputs
+			duration = -1
+		}
+	}
+
+	option = {
+		name = FEE_Gujarat_Events.2.b
+
+		ai_chance = { factor = 0 }
+
+		add_estate_loyalty = {
+			estate = estate_rajput
+			loyalty = 25
+		}
+		hidden_effect = {
+			add_estate_influence_modifier = {
+				estate = estate_rajput
+				influence = 25
+				duration = 3650
+				desc = EST_VAL_ESTATE_RAJPUT_FEE_GUJARAT_LET_THEM_BE
+			}
+		}
+	}
+}
+
+# Revenge of the Rajputs
+country_event = {
+	id = FEE_Gujarat_Events.3
+	title = FEE_Gujarat_Events.3.t
+	desc = FEE_Gujarat_Events.3.d
+	picture = ANGRY_MOB_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		has_country_modifier = fee_gujarat_revenge_of_the_rajputs
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				save_event_target_as = target_province_1
+			}
+			random_owned_province = {
+				limit = {
+					NOT = { province_id = event_target:target_province_1 }
+				}
+				save_event_target_as = target_province_2
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Gujarat_Events.3.a
+
+		goto = target_province_1
+
+		ai_chance = { factor = 0.9 }
+
+		remove_country_modifier = fee_gujarat_revenge_of_the_rajputs
+		add_stability = -1
+		add_legitimacy_equivalent = { amount = -15 republican_tradition = -5 }
+		add_country_modifier = {
+			name = fee_gujarat_fight_the_rajputs
+			duration = -1
+		}
+		event_target:target_province_1 = {
+			noble_rebels = 1
+		}
+		if = {
+			limit = {
+				has_saved_event_target = target_province_2
+			}
+			event_target:target_province_2 = {
+				anti_tax_rebels = 2
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Gujarat_Events.3.b
+
+		ai_chance = { factor = 0.1 }
+
+		remove_country_modifier = fee_gujarat_revenge_of_the_rajputs
+		add_stability = -3
+		if = {
+			limit = {
+				has_heir = yes
+			}
+			tooltip = { kill_heir = { } }
+		}
+		if = {
+			limit = {
+				employed_advisor = { category = ADM }
+			}
+			remove_advisor_by_category = ADM
+		}
+		if = {
+			limit = {
+				employed_advisor = { category = DIP }
+			}
+			remove_advisor_by_category = DIP
+		}
+		if = {
+			limit = {
+				employed_advisor = { category = MIL }
+			}
+			remove_advisor_by_category = MIL
+		}
+		if = {
+			limit = {
+				has_government_attribute = heir
+			}
+			define_heir = {
+				culture = rajput
+				religion = hinduism
+				age = 15
+			}
+		}
+		kill_ruler = yes
+	}
+}
+
+# Shahr-i-Mu'azzam
+country_event = {
+	id = FEE_Gujarat_Events.4
+	title = FEE_Gujarat_Events.4.t
+	desc = FEE_Gujarat_Events.4.d
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	fire_only_once = yes
+
+	goto = 2054
+
+	trigger = {
+		is_or_was_tag = { tag = GUJ }
+		prestige = 50
+		owns = 2054
+		2054 = {
+			development = 15
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = FEE_Gujarat_Events.4.a
+
+		2054 = {
+			add_province_modifier = {
+				name = fee_gujarat_shar_i_muazzam
+				duration = -1
+			}
+		}
+	}
+}
+
+# The Battle of Diu and its Aftermath
+country_event = {
+	id = FEE_Gujarat_Events.5
+	title = FEE_Gujarat_Events.5.t
+	desc = FEE_Gujarat_Events.5.d
+	picture = BATTLE_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		is_or_was_tag = { tag = GUJ }
+		NOT = { has_country_flag = fee_gujarat_battle_of_diu_done }
+		owns = 4455
+		OR = {
+			AND = {
+				NOT = { has_country_flag = fee_gujarati_consequences }
+				war_with = POR
+				POR = { ai = yes } # for now
+			}
+			has_country_flag = fee_gujarat_battle_of_diu_getting_triggered_by_war_lost
+		}
+	}
+
+	option = {
+		name = FEE_Gujarat_Events.5.a
+
+		goto = 4455
+
+		ai_chance = { factor = 0.75 }
+
+		white_peace = POR
+		4455 = {
+			cede_province = POR
+		}
+		504 = {
+			add_trade_modifier = {
+				who = ROOT
+				duration = 9125
+				power = -50
+				key = fee_gujarati_battle_of_diu_trade_modifier
+			}
+			add_trade_modifier = {
+				who = POR
+				duration = 9125
+				power = 50
+				key = fee_gujarati_battle_of_diu_por_trade_modifier
+			}
+		}
+		set_country_flag = fee_gujarat_battle_of_diu_done
+		clr_country_flag = fee_gujarat_battle_of_diu_getting_triggered_by_war_lost
+	}
+
+	option = {
+		name = FEE_Gujarat_Events.5.b
+
+		trigger = {
+			NOT = { has_country_flag = fee_gujarat_battle_of_diu_getting_triggered_by_war_lost }
+		}
+
+		ai_chance = { factor = 0.25 }
+
+		set_country_flag = fee_gujarati_consequences
+	}
+}

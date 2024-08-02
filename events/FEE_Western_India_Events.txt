@@ -1,0 +1,269 @@
+namespace = FEE_Western_India_Events
+
+# Berserker Elephants
+country_event = {
+	id = FEE_Western_India_Events.1
+	title = FEE_Western_India_Events.1.t
+	desc = FEE_Western_India_Events.1.d
+	picture = {
+		trigger = {
+			has_dlc = "Dharma"
+		}
+		picture = 3_Rajput_Estate__eventPicture
+	}
+	picture = {
+		trigger = {
+			NOT = { has_dlc = "Dharma" }
+		}
+		picture = MILITARY_CAMP_eventPicture
+	}
+
+	fire_only_once = yes
+
+	trigger = {
+		culture_group = western_aryan
+		technology_group = indian
+		has_idea_group = offensive_ideas
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = FEE_Western_India_Events.1.a
+
+		ai_chance = { factor = 0.25 }
+
+		add_prestige_or_monarch_power = { amount = 25 }
+		add_legitimacy_equivalent = { amount = 25 republican_tradition = 15 }
+	}
+
+	option = {
+		name = FEE_Western_India_Events.1.b
+
+		ai_chance = { factor = 0.75 }
+
+		add_country_modifier = {
+			name = fee_berserker_elephants
+			duration = 36500
+		}
+	}
+}
+
+# Accept or Resist?
+country_event = {
+	id = FEE_Western_India_Events.2
+	title = FEE_Western_India_Events.2.t
+	desc = FEE_Western_India_Events.2.d
+	picture = RELIGION_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		religion = hinduism
+		culture_group = western_aryan
+		capital_scope = {
+			region = west_india_region
+		}
+		is_year = 1500
+		any_neighbor_country = {
+			religion_group = muslim
+			government_rank = 3
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = FEE_Western_India_Events.2.a
+
+		ai_chance = { factor = 0.5 }
+
+		add_country_modifier = {
+			name = fee_western_india_seeing_things_for_what_they_are
+			duration = 36500
+		}
+	}
+
+	option = {
+		name = FEE_Western_India_Events.2.b
+
+		ai_chance = { factor = 0.5 }
+
+		if = {
+			limit = {
+				has_country_modifier = muslim_resistance
+			}
+			add_country_modifier = {
+				name = fee_western_india_anti_muslim_resistance
+				duration = 36500
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = fee_western_india_declarations_of_resistance
+				duration = 36500
+			}
+		}
+	}
+}
+
+# Depose Incompetence
+country_event = {
+	id = FEE_Western_India_Events.3
+	title = FEE_Western_India_Events.3.t
+	desc = FEE_Western_India_Events.3.d
+	picture = MILITARY_CAMP_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		has_estate = estate_rajput
+		OR = {
+			religion_group = dharmic
+			religion = buddhism
+		}
+		government = monarchy
+		NOT = { has_ruler_flag = fee_western_india_no_depose_incompetence }
+		has_regency = no
+		months_of_ruling = 60
+		OR = {
+			NOT = { ruler_total_stats = { amount = 6 } }
+			calc_true_if = {
+				amount = 2
+				ruler_has_personality = embezzler_personality
+				ruler_has_personality = sinner_personality
+				ruler_has_personality = greedy_personality
+				ruler_has_personality = obsessive_perfectionist_personality
+				ruler_has_personality = drunkard_personality
+				ruler_has_personality = babbling_buffoon_personality
+				ruler_has_personality = cruel_personality
+				ruler_has_personality = naive_personality
+				ruler_has_personality = malevolent_personality
+				ruler_has_personality = loose_lips_personality
+				ruler_has_personality = craven_personality
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				save_event_target_as = target_province_1
+			}
+			random_owned_province = {
+				limit = {
+					NOT = { province_id = event_target:target_province_1 }
+				}
+				save_event_target_as = target_province_2
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Western_India_Events.3.a
+
+		trigger = {
+			has_heir = yes
+			heir_age = 15
+		}
+
+		ai_chance = { factor = 0.66 }
+
+		kill_ruler = yes
+		add_stability = 2
+		add_prestige_or_monarch_power = { amount = 25 }
+		add_legitimacy = 25
+		add_estate_loyalty = {
+			estate = estate_rajput
+			loyalty = 15
+		}
+	}
+
+	option = {
+		name = FEE_Western_India_Events.3.b
+
+		trigger = {
+			has_heir = yes
+			NOT = { heir_age = 15 }
+		}
+
+		ai_chance = { factor = 0.66 }
+
+		tooltip = { kill_ruler = yes }
+		add_stability = 2
+		define_ruler = {
+			regency = {
+				estate = estate_rajput
+			}
+		}
+		add_heir_claim = 15
+	}
+
+	option = {
+		name = FEE_Western_India_Events.3.c
+
+		trigger = {
+			has_heir = no
+		}
+
+		ai_chance = { factor = 0.66 }
+
+		add_stability = -1
+		define_ruler = {
+			culture = rajput
+			adm = 2
+			dip = 2
+			mil = 2
+		}
+		set_ruler_flag = fee_western_india_no_depose_incompetence
+		add_legitimacy = -5
+		add_prestige_or_monarch_power = { amount = 25 }
+		add_estate_influence_modifier = {
+			estate = estate_rajput
+			influence = 15
+			duration = 1825
+			desc = EST_VAL_ESTATE_RAJPUT_FEE_WESTERN_INDIA_DEPOSED_INCOMPETENCE
+		}
+	}
+
+	option = {
+		name = FEE_Western_India_Events.3.e
+
+		goto = target_province_1
+
+		ai_chance = { factor = 0.33 }
+
+		set_country_flag = fee_Rajput_revolt_incoming
+		add_stability = -2
+		add_legitimacy = 5
+		add_estate_loyalty = {
+			estate = estate_rajput
+			loyalty = -20
+		}
+		add_estate_influence_modifier = {
+			estate = estate_rajput
+			influence = -20
+			duration = 3650
+			desc = EST_VAL_ESTATE_RAJPUT_FEE_WESTERN_INDIA_NOT_DEPOSED_INCOMPETENCE
+		}
+		event_target:target_province_1 = {
+			noble_rebels = 2
+		}
+		if = {
+			limit = {
+				has_saved_event_target = target_province_2
+			}
+			event_target:target_province_2 = {
+				noble_rebels = 2
+			}
+		}
+	}
+}

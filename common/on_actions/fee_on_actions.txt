@@ -245,6 +245,21 @@ on_startup = {
 	}
 }
 
+# root = loser country, from = winner country
+on_battle_lost_country = {
+	if = {
+		limit = {
+			is_or_was_tag = { tag = GUJ }
+			FROM = {
+				tag = POR
+			}
+			NOT = { has_country_flag = fee_gujarat_battle_of_diu_done }
+			NOT = { has_country_flag = fee_gujarati_consequences }
+		}
+		country_event = { id = FEE_Gujarat_Events.5 }
+	}
+}
+
 # #Unit Scope OnAction for Battle Lost
 on_battle_lost_unit = {
 	if = {
@@ -304,6 +319,12 @@ on_new_age = {
 		random_province = {
 			limit = { has_province_modifier = fee_may_mightiest_tolla }
 			remove_province_modifier = fee_may_mightiest_tolla
+		}
+	}
+	519 = {
+		if = {
+			limit = { has_province_modifier = fee_dhundar_natural_philosophy }
+			remove_province_modifier = fee_dhundar_natural_philosophy
 		}
 	}
 }
@@ -380,6 +401,17 @@ on_war_lost = {
 			id = FEE_Venice_Events.39
 		}
 	}
+	if = {
+		limit = {
+			is_or_was_tag = { tag = GUJ }
+			FROM = {
+				tag = POR
+			}
+			NOT = { has_country_flag = fee_gujarat_battle_of_diu_done }
+		}
+		set_country_flag = fee_gujarat_battle_of_diu_getting_triggered_by_war_lost
+		country_event = { id = FEE_Gujarat_Events.5 }
+	}
 }
 
 # root = winning country, from = loser country
@@ -392,6 +424,17 @@ on_war_won = {
 		country_event = {
 			id = FEE_Venice_Events.40
 		}
+	}
+	if = {
+		limit = {
+			is_or_was_tag = { tag = GUJ }
+			FROM = {
+				tag = POR
+			}
+			NOT = { has_country_flag = fee_gujarat_battle_of_diu_done }
+			has_country_flag = fee_gujarati_consequences
+		}
+		set_country_flag = fee_gujarat_battle_of_diu_done
 	}
 }
 

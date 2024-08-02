@@ -1,0 +1,21 @@
+fee_berserker_elephants = {
+	siege_ability = 0.1
+}
+fee_western_india_seeing_things_for_what_they_are = {
+	tolerance_own = 2
+	reverse_relation_with_heathen_religion = 25
+	diplomatic_reputation = 2
+	improve_relation_modifier = 0.3
+	reduced_stab_impacts = yes
+}
+fee_western_india_anti_muslim_resistance = {
+	extra_manpower_at_religious_war = yes
+	reverse_relation_with_same_religion = 25
+	rajput_loyalty_modifier = 0.1
+	global_missionary_strength = 0.005
+}
+fee_western_india_declarations_of_resistance = {
+	extra_manpower_at_religious_war = yes
+	reverse_relation_with_same_religion = 25
+	rajput_loyalty_modifier = 0.1
+}
