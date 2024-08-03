@@ -3,8 +3,8 @@ namespace = FEE_Gujarat_Events
 # The Northern Frontier
 country_event = {
 	id = FEE_Gujarat_Events.1
-	title = FEE_Gujarat_Events.1.t
-	desc = FEE_Gujarat_Events.1.d
+	title = FEE_Gujarat_Events.1.T
+	desc = FEE_Gujarat_Events.1.D
 	picture = BAD_WITH_MONARCH_eventPicture
 
 	fire_only_once = yes
@@ -25,7 +25,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Gujarat_Events.1.a
+		name = FEE_Gujarat_Events.1.OPT1
 
 		add_stability = -1
 		add_legitimacy_equivalent = { amount = -25 republican_tradition = -15 }
@@ -39,8 +39,8 @@ country_event = {
 # Subdue the Rajputs
 country_event = {
 	id = FEE_Gujarat_Events.2
-	title = FEE_Gujarat_Events.2.t
-	desc = FEE_Gujarat_Events.2.d
+	title = FEE_Gujarat_Events.2.T
+	desc = FEE_Gujarat_Events.2.D
 	picture = NOBLE_ESTATE_TAKE_OVER_eventPicture
 
 	trigger = {
@@ -63,7 +63,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Gujarat_Events.2.a
+		name = FEE_Gujarat_Events.2.OPT1
 
 		ai_chance = { factor = 100 }
 
@@ -80,7 +80,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Gujarat_Events.2.b
+		name = FEE_Gujarat_Events.2.OPT2
 
 		ai_chance = { factor = 0 }
 
@@ -102,8 +102,8 @@ country_event = {
 # Revenge of the Rajputs
 country_event = {
 	id = FEE_Gujarat_Events.3
-	title = FEE_Gujarat_Events.3.t
-	desc = FEE_Gujarat_Events.3.d
+	title = FEE_Gujarat_Events.3.T
+	desc = FEE_Gujarat_Events.3.D
 	picture = ANGRY_MOB_eventPicture
 
 	fire_only_once = yes
@@ -131,7 +131,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Gujarat_Events.3.a
+		name = FEE_Gujarat_Events.3.OPT1
 
 		goto = target_province_1
 
@@ -158,7 +158,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Gujarat_Events.3.b
+		name = FEE_Gujarat_Events.3.OPT2
 
 		ai_chance = { factor = 0.1 }
 
@@ -205,8 +205,8 @@ country_event = {
 # Shahr-i-Mu'azzam
 country_event = {
 	id = FEE_Gujarat_Events.4
-	title = FEE_Gujarat_Events.4.t
-	desc = FEE_Gujarat_Events.4.d
+	title = FEE_Gujarat_Events.4.T
+	desc = FEE_Gujarat_Events.4.D
 	picture = GOOD_WITH_MONARCH_eventPicture
 
 	fire_only_once = yes
@@ -227,7 +227,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Gujarat_Events.4.a
+		name = FEE_Gujarat_Events.4.OPT1
 
 		2054 = {
 			add_province_modifier = {
@@ -241,8 +241,8 @@ country_event = {
 # The Battle of Diu and its Aftermath
 country_event = {
 	id = FEE_Gujarat_Events.5
-	title = FEE_Gujarat_Events.5.t
-	desc = FEE_Gujarat_Events.5.d
+	title = FEE_Gujarat_Events.5.T
+	desc = FEE_Gujarat_Events.5.D
 	picture = BATTLE_eventPicture
 
 	is_triggered_only = yes
@@ -262,7 +262,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Gujarat_Events.5.a
+		name = FEE_Gujarat_Events.5.OPT1
 
 		goto = 4455
 
@@ -291,7 +291,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Gujarat_Events.5.b
+		name = FEE_Gujarat_Events.5.OPT2
 
 		trigger = {
 			NOT = { has_country_flag = fee_gujarat_battle_of_diu_getting_triggered_by_war_lost }
