@@ -4,7 +4,7 @@ namespace = FEE_Western_India_Events
 country_event = {
 	id = FEE_Western_India_Events.1
 	title = FEE_Western_India_Events.1.T
-	desc = FEE_Western_India_Events.1.OPT4
+	desc = FEE_Western_India_Events.1.D
 	picture = {
 		trigger = {
 			has_dlc = "Dharma"
@@ -55,7 +55,7 @@ country_event = {
 country_event = {
 	id = FEE_Western_India_Events.2
 	title = FEE_Western_India_Events.2.T
-	desc = FEE_Western_India_Events.2.OPT4
+	desc = FEE_Western_India_Events.2.D
 	picture = RELIGION_eventPicture
 
 	fire_only_once = yes
@@ -115,7 +115,7 @@ country_event = {
 country_event = {
 	id = FEE_Western_India_Events.3
 	title = FEE_Western_India_Events.3.T
-	desc = FEE_Western_India_Events.3.OPT4
+	desc = FEE_Western_India_Events.3.D
 	picture = MILITARY_CAMP_eventPicture
 
 	fire_only_once = yes

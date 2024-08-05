@@ -255,7 +255,6 @@ country_event = {
 			AND = {
 				NOT = { has_country_flag = fee_gujarati_consequences }
 				war_with = POR
-				POR = { ai = yes } # for now
 			}
 			has_country_flag = fee_gujarat_battle_of_diu_getting_triggered_by_war_lost
 		}
@@ -268,26 +267,68 @@ country_event = {
 
 		ai_chance = { factor = 0.75 }
 
-		white_peace = POR
-		4455 = {
-			cede_province = POR
-		}
-		504 = {
-			add_trade_modifier = {
-				who = ROOT
-				duration = 9125
-				power = -50
-				key = fee_gujarati_battle_of_diu_trade_modifier
-			}
-			add_trade_modifier = {
-				who = POR
-				duration = 9125
-				power = 50
-				key = fee_gujarati_battle_of_diu_por_trade_modifier
-			}
-		}
 		set_country_flag = fee_gujarat_battle_of_diu_done
 		clr_country_flag = fee_gujarat_battle_of_diu_getting_triggered_by_war_lost
+		if = {
+			limit = {
+				POR = { ai = yes }
+			}
+			if = {
+				limit = {
+					war_with = POR
+				}
+				white_peace = POR
+				tooltip = { add_truce_with = POR }
+			}
+			4455 = {
+				cede_province = POR
+			}
+			504 = {
+				add_trade_modifier = {
+					who = ROOT
+					duration = 9125
+					power = -50
+					key = fee_gujarati_battle_of_diu_trade_modifier
+				}
+				add_trade_modifier = {
+					who = POR
+					duration = 9125
+					power = 50
+					key = fee_gujarati_battle_of_diu_por_trade_modifier
+				}
+			}
+		}
+		else = {
+			POR = {
+				country_event = { id = FEE_Gujarat_Events.6 tooltip = FEE_Gujarat_Events.t.tt }
+			}
+			tooltip = {
+				if = {
+					limit = {
+						war_with = POR
+					}
+					white_peace = POR
+					add_truce_with = POR
+				}
+				4455 = {
+					cede_province = POR
+				}
+				504 = {
+					add_trade_modifier = {
+						who = ROOT
+						duration = 9125
+						power = -50
+						key = fee_gujarati_battle_of_diu_trade_modifier
+					}
+					add_trade_modifier = {
+						who = POR
+						duration = 9125
+						power = 50
+						key = fee_gujarati_battle_of_diu_por_trade_modifier
+					}
+				}
+			}
+		}
 	}
 
 	option = {
@@ -300,5 +341,56 @@ country_event = {
 		ai_chance = { factor = 0.25 }
 
 		set_country_flag = fee_gujarati_consequences
+	}
+}
+
+# The Battle of Diu and [From.GetName]'s Surrender
+country_event = {
+	id = FEE_Gujarat_Events.6
+	title = FEE_Gujarat_Events.6.T
+	desc = FEE_Gujarat_Events.6.D
+	picture = DIPLOMACY_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Gujarat_Events.6.OPT1
+
+		goto = 4455
+
+		ai_chance = { factor = 100 }
+
+		if = {
+			limit = {
+				war_with = FROM
+			}
+			white_peace = FROM
+			tooltip = { add_truce_with = FROM }
+		}
+		4455 = {
+			cede_province = ROOT
+		}
+		504 = {
+			add_trade_modifier = {
+				who = FROM
+				duration = 9125
+				power = -50
+				key = fee_gujarati_battle_of_diu_trade_modifier
+			}
+			add_trade_modifier = {
+				who = ROOT
+				duration = 9125
+				power = 50
+				key = fee_gujarati_battle_of_diu_por_trade_modifier
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Gujarat_Events.6.OPT2
+
+		ai_chance = { factor = 0 }
+
+		add_prestige = 10
 	}
 }
