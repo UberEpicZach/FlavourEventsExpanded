@@ -1,0 +1,62 @@
+namespace = FEE_Mewar_Events
+
+#Erection of the Vijah Stambah
+country_event = {
+	id = FEE_Mewar_Events.1
+	title = FEE_Mewar_Events.1.T
+	desc = FEE_Mewar_Events.1.D
+	picture = GREAT_BUILDING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = MER
+			was_tag = MER
+			dynasty = "Sisodiya"
+		}
+		religion = hinduism
+		owns = 518
+		is_expanded_mod_active = { mod = great_monuments }
+		has_dlc = Leviathan
+	}
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	option = {
+		name = FEE_Mewar_Events.1.OPT1
+		add_treasury = -100
+		add_country_modifier = {
+			name = fee_mewar_monument_boost
+			duration = 18250
+		}
+		set_global_flag = chittor_fort_unrest
+		custom_tooltip = fee_chittor_fort_unrest_option_tt
+	}
+
+	option = {
+		name = FEE_Mewar_Events.1.OPT2
+		highlight = yes
+		trigger = {
+			OR = {
+				ruler_has_personality = conqueror_personality
+				ruler_has_personality = architectural_visionary_personality
+				ruler_has_personality = inspiring_leader_personality
+			}
+		}
+		add_treasury = -100
+		add_country_modifier = {
+			name = fee_mewar_monument_boost_extra
+			duration = 18250
+		}
+		set_global_flag = chittor_fort_morale
+		custom_tooltip = fee_chittor_fort_morale_option_tt
+	}
+
+	option = {
+		name = FEE_Mewar_Events.1.OPT3
+		add_prestige = -25
+	}
+}

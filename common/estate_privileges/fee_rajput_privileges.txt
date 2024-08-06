@@ -1,0 +1,20 @@
+fee_estate_rajput_rathore_code_privilege = {
+	icon = privilege_promote_rajput_nobility
+    max_absolutism = -5
+    loyalty = 0.1
+    influence  = 0.1
+ 	is_valid = {
+		has_country_flag = fee_integrated_rathore_rajputs
+		owns = 514
+	}
+	penalties = {}
+    benefits = {
+		allowed_rajput_fraction = 0.15
+		army_Tradition = 0.5
+		discipline = 0.05
+		is_rajput_modifier = yes
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}

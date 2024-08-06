@@ -1,0 +1,8 @@
+fee_mlw_claimed_delhi = {
+	opinion = -100
+	yearly_decay = 1
+}
+fee_mlw_refused_claim_delhi = {
+	opinion = 50
+	yearly_decay = 1
+}
