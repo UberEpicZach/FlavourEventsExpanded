@@ -839,3 +839,178 @@ country_event = {
 		add_prestige = 15
 	}
 }
+
+# The Rajput Rebellion
+country_event = {
+	id = FEE_Western_India_Events.15
+	title = FEE_Western_India_Events.15.T
+	desc = FEE_Western_India_Events.15.D
+	picture = ANGRY_MOB_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		has_country_flag = fee_Rajput_revolt_incoming
+		has_estate = estate_rajput
+		religion_group = muslim
+		NOT = { stability = 1 }
+		NOT = { legitimacy_equivalent = 80 }
+		num_of_owned_provinces_with = {
+			value = 20
+			region = west_india_region
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = fee_Rajput_revolt_incoming
+			random_owned_province = {
+				limit = {
+					is_capital = no
+				}
+				save_event_target_as = target_province
+			}
+			random_owned_province = {
+				limit = {
+					is_capital = no
+					island = no
+				}
+				save_event_target_as = target_province
+			}
+			random_owned_province = {
+				limit = {
+					is_capital = no
+					island = no
+					is_island = no
+				}
+				save_event_target_as = target_province
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Western_India_Events.15.OPT1
+
+		ai_chance = {
+			factor = 0.7
+			modifier = {
+				factor = 0
+				estate_influence = {
+					estate = estate_rajput
+					influence = 75
+				}
+			}
+		}
+
+		change_estate_land_share = { estate = estate_rajput share = 10 }
+		add_estate_influence_modifier = {
+			estate = estate_rajput
+			influence = 25
+			duration = 14600
+			desc = EST_VAL_ESTATE_RAJPUT_FEE_RAJPUTS_ENFORCED_FURTHER_RIGHTS
+		}
+		change_government_reform_progress = -50
+		custom_tooltip = FEE_Western_India_Events.15.tt
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					religion = hinduism
+				}
+				add_local_autonomy = 25
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Western_India_Events.15.OPT2
+
+		goto = target_province
+
+		ai_chance = {
+			factor = 0.3
+		}
+
+		if = {
+			limit = {
+				NOT = { stability = -2 }
+			}
+			add_adm_power = -100
+		}
+		else = {
+			add_stability = -1
+		}
+		add_estate_loyalty = {
+			estate = estate_rajput
+			loyalty = -15
+		}
+		add_estate_influence_modifier = {
+			estate = estate_rajput
+			influence = -25
+			duration = 14600
+			desc = EST_VAL_ESTATE_RAJPUT_FEE_CURBED_RAJPUTS
+		}
+		event_target:target_province = {
+			noble_rebels = 3
+		}
+	}
+
+	option = {
+		name = FEE_Western_India_Events.15.OPT3
+
+		trigger = {
+			OR = {
+				ruler_has_personality = tolerant_personality
+				ruler_has_personality = free_thinker_personality
+			}
+		}
+
+		highlight = yes
+
+		ai_chance = {
+			factor = 1
+			modifier = {
+				factor = 0
+				NOT = { dominant_religion = hinduism }
+			}
+		}
+
+		if = {
+			limit = {
+				NOT = { stability = -2 }
+			}
+			add_adm_power = -200
+		}
+		else_if = {
+			limit = {
+				NOT = { stability = -1 }
+			}
+			add_adm_power = -100
+			add_stability = -1
+		}
+		else = {
+			add_stability = -2
+		}
+		change_religion = hinduism
+		if = {
+			limit = {
+				has_dlc = "Dharma"
+				OR = {
+					culture_group = western_aryan
+					primary_culture = vindhyan
+				}
+				NOT = { primary_culture = marathi }
+				technology_group = indian
+			}
+			if = {
+				limit = {
+					NOT = { government = monarchy }
+				}
+				add_government_reform = rajput_kingdom
+			}
+		}
+	}
+}

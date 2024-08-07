@@ -55,6 +55,13 @@
  FEE_Western_India_Events.14.OPT2: "Administration is but the work of Brahmins, raise the banner!"
  FEE_Western_India_Events.14.OPT3: "Leave it as is"
 
+ FEE_Western_India_Events.15.T: "The Rajput Rebellion"
+ FEE_Western_India_Events.15.D: "Relations between the Sultanate and the Rajput warrior class could hardly be worse than at the present time. The struggles of our government to maintain order and legitimacy have not gone unnoticed by the ever-restless princes, and their sense of our weakness further inflames the already-existing tension between their predominantly Hindu nobility and our Muslim elite. Their status in our realm has long been guaranteed by a series of compromises, privileges, and implicit understandings made at a time when Islam was newly arrived in the subcontinent. Now, they seek to exploit these arrangements to increase their power to ever greater heights, threatening our own sovereignty. Unless we act against them soon our authority will soon deteriorate beyond our ability to recover."
+ FEE_Western_India_Events.15.OPT1: "We have no choice but to accept their demands."
+ FEE_Western_India_Events.15.OPT2: "We must meet them, sword in hand!"
+ FEE_Western_India_Events.15.OPT3: "Well, if you can’t beat them..."
+ FEE_Western_India_Events.15.tt: "Every owned province following the §YHindu§! faith gains §R25§! local autonomy."
+
  # Modifiers:
  fee_berserker_elephants: "Berserker Elephants"
  fee_western_india_seeing_things_for_what_they_are: "Seeing Things for What They Are"
@@ -73,6 +80,8 @@
  # Estate Influence Modifiers:
  EST_VAL_ESTATE_RAJPUT_FEE_WESTERN_INDIA_DEPOSED_INCOMPETENCE: "Installed Rajput Ruler: §Y$VAL$%§!"
  EST_VAL_ESTATE_RAJPUT_FEE_WESTERN_INDIA_NOT_DEPOSED_INCOMPETENCE: "Kept the Crown: §Y$VAL$%§!"
+ EST_VAL_ESTATE_RAJPUT_FEE_RAJPUTS_ENFORCED_FURTHER_RIGHTS: "Rajputs Enforced Further Rights: §Y$VAL$%§!"
+ EST_VAL_ESTATE_RAJPUT_FEE_CURBED_RAJPUTS: "Curbed the Rajputs: §Y$VAL$%§!"
 
  # Estate Privileges
  fee_estate_rajput_rathore_code_privilege: "Code of the Rathore Rajputs"
