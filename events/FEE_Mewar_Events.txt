@@ -10,15 +10,15 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
+		has_dlc = Leviathan
+		is_expanded_mod_active = { mod = great_monuments }
 		OR = {
 			tag = MER
 			was_tag = MER
 			dynasty = "Sisodiya"
 		}
-		religion = hinduism
 		owns = 518
-		is_expanded_mod_active = { mod = great_monuments }
-		has_dlc = Leviathan
+		religion = hinduism
 	}
 
 	mean_time_to_happen = {
