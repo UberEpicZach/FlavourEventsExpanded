@@ -256,6 +256,11 @@ on_battle_lost_country = {
 			}
 			NOT = { has_country_flag = fee_gujarat_battle_of_diu_done }
 			NOT = { has_country_flag = fee_gujarati_consequences }
+			# check that it was a naval battle:
+			OR = {
+				check_variable = { which = naval_units_killed value = 1 }
+				check_variable = { which = naval_units_lost value = 1 }
+			}
 		}
 		country_event = { id = FEE_Gujarat_Events.5 }
 	}

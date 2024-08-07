@@ -243,7 +243,18 @@ country_event = {
 	id = FEE_Gujarat_Events.5
 	title = FEE_Gujarat_Events.5.T
 	desc = FEE_Gujarat_Events.5.D
-	picture = BATTLE_eventPicture
+	picture = {
+		trigger = {
+			has_dlc = "Golden Century"
+		}
+		picture = BARBARY_PIRATES_eventPicture
+	}
+	picture = {
+		trigger = {
+			NOT = { has_dlc = "Golden Century" }
+		}
+		picture = NAVAL_MILITARY_eventPicture
+	}
 
 	is_triggered_only = yes
 
