@@ -118,8 +118,6 @@ country_event = {
 	desc = FEE_Western_India_Events.3.D
 	picture = MILITARY_CAMP_eventPicture
 
-	fire_only_once = yes
-
 	trigger = {
 		has_estate = estate_rajput
 		OR = {
@@ -242,6 +240,7 @@ country_event = {
 		ai_chance = { factor = 0.33 }
 
 		set_country_flag = fee_Rajput_revolt_incoming
+		set_ruler_flag = fee_western_india_no_depose_incompetence
 		add_stability = -2
 		add_legitimacy = 5
 		add_estate_loyalty = {
@@ -847,11 +846,15 @@ country_event = {
 	desc = FEE_Western_India_Events.15.D
 	picture = ANGRY_MOB_eventPicture
 
-	fire_only_once = yes
-
 	trigger = {
 		has_country_flag = fee_Rajput_revolt_incoming
 		has_estate = estate_rajput
+		NOT = {
+			estate_loyalty = {
+				estate = estate_rajput
+				loyalty = 30
+			}
+		}
 		religion_group = muslim
 		NOT = { stability = 1 }
 		NOT = { legitimacy_equivalent = 80 }
