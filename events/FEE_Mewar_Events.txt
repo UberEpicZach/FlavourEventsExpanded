@@ -241,3 +241,34 @@ country_event = {
 		add_prestige = 5
 	}
 }
+
+# hidden event setting flag for the vanilla event "The return of Rana Jodha Rathore"
+country_event = {
+	id = FEE_Mewar_Events.100
+	title = FEE_Mewar_Events.100.T
+	desc = FEE_Mewar_Events.100.D
+	picture = DIPLOMACY_eventPicture
+
+	hidden = yes
+	fire_only_once = yes
+
+	trigger = {
+		tag = MAW
+		has_ruler = "Jodha"
+		dynasty = "Rathore"
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		set_global_flag = fee_return_of_rana_jodha_rathore
+	}
+
+	option = {
+		name = FEE_Mewar_Events.100.OPT1
+
+		ai_chance = { factor = 100 }
+	}
+}
