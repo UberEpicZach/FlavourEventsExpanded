@@ -267,7 +267,7 @@ country_event = {
 	}
 }
 
-#The Bhati Empire
+# The Bhati Empire
 country_event = {
 	id = FEE_Western_India_Events.4
 	title = FEE_Western_India_Events.4.T
@@ -319,137 +319,11 @@ country_event = {
 	}
 }
 
-#The Khalji Dynasty
+# hidden event setting flag for the vanilla event "The return of Rana Jodha Rathore"
 country_event = {
 	id = FEE_Western_India_Events.5
 	title = FEE_Western_India_Events.5.T
 	desc = FEE_Western_India_Events.5.D
-	picture = DIPLOMACY_eventPicture
-
-	fire_only_once = yes
-
-	trigger = {
-		tag = MLW
-		dynasty = "Kahlji"
-	}
-
-	mean_time_to_happen = {
-		months = 12
-	}
-
-	option = {
-		name = FEE_Western_India_Events.5.OPT1
-		reverse_add_opinion = {
-			who = DLH
-			modifier = fee_mlw_claimed_delhi
-		}
-		hidden_effect = {
-			DLH = {
-				every_core_province = {
-					add_core = MLW
-				}
-			}
-			country_event = {
-				id = FEE_Western_India_Events.6
-				days = 54750
-			}
-		}
-		custom_tooltip = fee_malwa_150_years_tt
-	}
-
-	option = {
-		name = FEE_Western_India_Events.5.OPT2
-		reverse_add_opinion = {
-			who = DLH
-			modifier = fee_mlw_refused_claim_delhi
-		}
-		add_prestige_or_monarch_power = { amount = 25 }
-		set_country_flag = fee_malwa_refused_cores
-		custom_tooltip = fee_malwa_dynasty_modifier_tt
-		hidden_effect = {
-			add_ruler_modifier = {
-				name = fee_malwa_khalji_dynasty
-				duration = -1
-			}
-		}
-	}
-}
-
-#hidden event after 150 years
-country_event = {
-	id = FEE_Western_India_Events.6
-	title = FEE_Western_India_Events.6.T
-	desc = FEE_Western_India_Events.6.D
-	picture = BAD_WITH_MONARCH_eventPicture
-
-	hidden = yes
-	is_triggered_only = yes
-
-	trigger = {
-		NOT = { owns = 522 }
-	}
-
-	immediate = {
-		hidden_effect = {
-			every_province = {
-				limit = {
-					NOT = { owned_by = ROOT }
-					OR = {
-						owned_by = DLH
-						is_core = DLH
-						owner = { is_subject_of = DLH }
-					}
-				}
-				remove_claim = ROOT
-				remove_core = ROOT
-			}
-			add_prestige = -50
-		}
-	}
-
-	option = {
-		name = FEE_Western_India_Events.6.OPT1
-
-		ai_chance = { factor = 100 }
-	}
-}
-
-#hidden event applying ruler modifier
-country_event = {
-	id = FEE_Western_India_Events.7
-	title = FEE_Western_India_Events.7.T
-	desc = FEE_Western_India_Events.7.D
-	picture = GOOD_WITH_MONARCH_eventPicture
-
-	hidden = yes
-	is_triggered_only = yes
-
-	trigger = {
-		dynasty = "Khalji"
-		has_country_flag = fee_malwa_refused_cores
-	}
-
-	immediate = {
-		hidden_effect = {
-			add_ruler_modifier = {
-				name = fee_malwa_khalji_dynasty
-				duration = -1
-			}
-		}
-	}
-
-	option = {
-		name = FEE_Western_India_Events.7.OPT1
-
-		ai_chance = { factor = 100 }
-	}
-}
-
-#hidden event setting flag for the vanilla event "The return of Rana Jodha Rathore"
-country_event = {
-	id = FEE_Western_India_Events.8
-	title = FEE_Western_India_Events.8.T
-	desc = FEE_Western_India_Events.8.D
 	picture = DIPLOMACY_eventPicture
 
 	hidden = yes
@@ -470,92 +344,17 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Western_India_Events.8.OPT1
+		name = FEE_Western_India_Events.5.OPT1
 
 		ai_chance = { factor = 100 }
 	}
 }
 
-#Desert Diplomacy
+# The Battle of Nagaur
 country_event = {
-	id = FEE_Western_India_Events.9
-	title = FEE_Western_India_Events.9.T
-	desc = FEE_Western_India_Events.9.D
-	picture = CULTURE_eventPicture
-
-	fire_only_once = yes
-
-	trigger = {
-		owns = 514
-		has_global_flag = fee_return_of_rana_jodha_rathore
-		NOT = { tag = MAW }
-		primary_culture = rajput
-		dip = 5
-	}
-
-	mean_time_to_happen = {
-		days = 20
-	}
-
-	option = {
-		name = FEE_Western_India_Events.9.OPT1
-		add_country_modifier = {
-			name = fee_western_india_desert_diplomacy
-			duration = -1
-		}
-	}
-}
-
-#The Rathore Rajputs
-country_event = {
-	id = FEE_Western_India_Events.10
-	title = FEE_Western_India_Events.10.T
-	desc = FEE_Western_India_Events.10.D
-	picture = {
-		trigger = {
-			has_dlc = "Dharma"
-		}
-		picture = 4_Rajput_Estate__eventPicture
-	}
-	picture = {
-		trigger = {
-			NOT = { has_dlc = "Dharma" }
-		}
-		picture = LAND_MILITARY_eventPicture
-	}
-
-	fire_only_once = yes
-
-	trigger = {
-		owns = 514
-		has_global_flag = fee_return_of_rana_jodha_rathore
-		has_estate = estate_rajput
-		primary_culture = rajput
-		mil = 5
-		exists = MER
-	}
-
-	mean_time_to_happen = {
-		days = 20
-	}
-
-	option = {
-		name = FEE_Western_India_Events.10.OPT1
-		custom_tooltip = fee_rathore_privilege_tt
-		set_country_flag = fee_integrated_rathore_rajputs
-	}
-
-	option = {
-		name = FEE_Western_India_Events.10.OPT2
-		add_prestige = 5
-	}
-}
-
-#The Battle of Nagaur
-country_event = {
-	id = FEE_Western_India_Events.11
-	title = FEE_Western_India_Events.11.T
-	desc = FEE_Western_India_Events.11.D
+	id = FEE_Western_India_Events.6
+	title = FEE_Western_India_Events.6.T
+	desc = FEE_Western_India_Events.6.D
 	picture = BATTLE_eventPicture
 
 	fire_only_once = yes
@@ -572,7 +371,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Western_India_Events.11.OPT1
+		name = FEE_Western_India_Events.6.OPT1
 		kill_ruler = yes
 		define_ruler = {
 			name = "Mujahid Khan"
@@ -586,7 +385,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Western_India_Events.11.OPT2
+		name = FEE_Western_India_Events.6.OPT2
 		declare_war_with_cb = {
 			casus_belli = cb_insult
 			who = MER
@@ -615,115 +414,11 @@ country_event = {
 	}
 }
 
-#The Siege of Chittorgarh
+# Reconstruction of the Gop Temple
 country_event = {
-	id = FEE_Western_India_Events.12
-	title = FEE_Western_India_Events.12.T
-	desc = FEE_Western_India_Events.12.D
-	picture = SIEGE_eventPicture
-
-	fire_only_once = yes
-	is_triggered_only = yes
-
-	immediate = {
-		hidden_effect = {
-			export_to_variable = {
-				which = fee_chittor_tradition_var
-				value = trigger_value:base_manpower
-				who = FROM
-			}
-			export_to_variable = {
-				which = fee_chittor_months_var
-				value = trigger_value:base_manpower
-				who = FROM
-			}
-		}
-	}
-
-	trigger = {
-		tag = MUG
-		FROM = {
-			province_id = 518
-			owner = { primary_culture = rajput }
-		}
-	}
-
-	option = {
-		name = FEE_Western_India_Events.12.OPT1
-		custom_tooltip = fee_siege_of_chittor_tt
-		while = {
-			limit = {
-				check_variable = {
-					which = fee_chittor_tradition_var
-					value = 1
-				}
-			}
-			add_army_tradition_or_mil_power = { amount = 1 }
-			change_variable = {
-				which = fee_chittor_tradition_var
-				value = -1
-			}
-		}
-		while = {
-			limit = {
-				check_variable = {
-					which = fee_chittor_months_var
-					value = 1
-				}
-			}
-			add_years_of_income = 0.083
-			change_variable = {
-				which = fee_chittor_months_var
-				value = -1
-			}
-		}
-		if = {
-			limit = {
-				ruler_has_personality = bold_fighter_personality
-			}
-			add_ruler_modifier = {
-				name = fee_conqueror_of_chittor
-			}
-		}
-		hidden_effect = {
-			set_variable = { which = fee_chittor_tradition_var value = 0 }
-			set_variable = { which = fee_chittor_months_var value = 0 }
-			every_owned_province = {
-				limit = {
-					culture = rajput
-				}
-				add_province_modifier = {
-					name = fee_mughal_rajput_resistance
-					duration = 9125
-				}
-			}
-		}
-		518 = {
-			add_base_manpower = -3
-			add_province_modifier = {
-				name = fee_western_india_assaulted_ramparts
-				duration = 9125
-			}
-			if = {
-				limit = {
-					has_dlc = Leviathan
-					is_expanded_mod_active = { mod = great_monuments }
-					has_great_project = { type = gme_chittor_fort }
-				}
-				add_great_project_tier = {
-					type = gme_chittor_fort
-					tier = -3
-				}
-			}
-		}
-	}
-}
-
-#Reconstruction of the Gop Temple
-country_event = {
-	id = FEE_Western_India_Events.13
-	title = FEE_Western_India_Events.13.T
-	desc = FEE_Western_India_Events.13.D
+	id = FEE_Western_India_Events.7
+	title = FEE_Western_India_Events.7.T
+	desc = FEE_Western_India_Events.7.D
 	picture = GREAT_BUILDING_eventPicture
 
 	fire_only_once = yes
@@ -741,7 +436,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Western_India_Events.13.OPT1
+		name = FEE_Western_India_Events.7.OPT1
 		add_treasury = -150
 		if = {
 			limit = {
@@ -771,7 +466,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Western_India_Events.13.OPT2
+		name = FEE_Western_India_Events.7.OPT2
 		add_prestige = -10
 		add_legitimacy_equivalent = { amount = -5 republican_tradition = -3 }
 		if = {
@@ -795,11 +490,11 @@ country_event = {
 	}
 }
 
-#The Unification of Rajputana
+# The Unification of Rajputana
 country_event = {
-	id = FEE_Western_India_Events.14
-	title = FEE_Western_India_Events.14.T
-	desc = FEE_Western_India_Events.14.D
+	id = FEE_Western_India_Events.8
+	title = FEE_Western_India_Events.8.T
+	desc = FEE_Western_India_Events.8.D
 	picture = COURT_eventPicture
 
 	fire_only_once = yes
@@ -816,7 +511,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Western_India_Events.14.OPT1
+		name = FEE_Western_India_Events.8.OPT1
 		change_government_reform_progress = 100
 		add_country_modifier = {
 			name = fee_western_india_advanced_administration
@@ -825,7 +520,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Western_India_Events.14.OPT2
+		name = FEE_Western_India_Events.8.OPT2
 		add_stability_or_adm_power = { amount = 1 }
 		add_country_modifier = {
 			name = fee_western_india_brahmins_entrenched
@@ -834,16 +529,16 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Western_India_Events.14.OPT3
+		name = FEE_Western_India_Events.8.OPT3
 		add_prestige = 15
 	}
 }
 
 # The Rajput Rebellion
 country_event = {
-	id = FEE_Western_India_Events.15
-	title = FEE_Western_India_Events.15.T
-	desc = FEE_Western_India_Events.15.D
+	id = FEE_Western_India_Events.9
+	title = FEE_Western_India_Events.9.T
+	desc = FEE_Western_India_Events.9.D
 	picture = ANGRY_MOB_eventPicture
 
 	trigger = {
@@ -890,7 +585,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Western_India_Events.15.OPT1
+		name = FEE_Western_India_Events.9.OPT1
 
 		ai_chance = {
 			factor = 0.7
@@ -911,7 +606,7 @@ country_event = {
 			desc = EST_VAL_ESTATE_RAJPUT_FEE_RAJPUTS_ENFORCED_FURTHER_RIGHTS
 		}
 		change_government_reform_progress = -50
-		custom_tooltip = FEE_Western_India_Events.15.tt
+		custom_tooltip = FEE_Western_India_Events.9.tt
 		hidden_effect = {
 			every_owned_province = {
 				limit = {
@@ -923,7 +618,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Western_India_Events.15.OPT2
+		name = FEE_Western_India_Events.9.OPT2
 
 		goto = target_province
 
@@ -956,7 +651,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Western_India_Events.15.OPT3
+		name = FEE_Western_India_Events.9.OPT3
 
 		trigger = {
 			OR = {

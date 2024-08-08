@@ -1,0 +1,102 @@
+namespace = FEE_Malwa_Events
+
+# The Khalji Dynasty
+country_event = {
+	id = FEE_Malwa_Events.1
+	title = FEE_Malwa_Events.1.T
+	desc = FEE_Malwa_Events.1.D
+	picture = DIPLOMACY_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_or_was_tag = { tag = MLW }
+		dynasty = "Kahlji"
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = FEE_Malwa_Events.1.OPT1
+		reverse_add_opinion = {
+			who = DLH
+			modifier = fee_mlw_claimed_delhi
+		}
+		hidden_effect = {
+			DLH = {
+				every_core_province = {
+					add_core = MLW
+				}
+			}
+			country_event = {
+				id = FEE_Malwa_Events.2
+				days = 54750
+			}
+			set_country_flag = fee_mal_promises
+		}
+		custom_tooltip = FEE_MALWA_150_YEARS_TT
+	}
+
+	option = {
+		name = FEE_Malwa_Events.1.OPT2
+		reverse_add_opinion = {
+			who = DLH
+			modifier = fee_mlw_refused_claim_delhi
+		}
+		add_prestige_or_monarch_power = { amount = 25 }
+		set_country_flag = fee_malwa_refused_cores
+		custom_tooltip = FEE_MALWA_DYNASTY_MODIFIER_TT
+		hidden_effect = {
+			add_ruler_modifier = {
+				name = fee_mal_khalji_dynasty
+				duration = -1
+			}
+		}
+	}
+}
+
+# The Fateful Oath
+country_event = {
+	id = FEE_Malwa_Events.2
+	title = FEE_Malwa_Events.2.T
+	desc = FEE_Malwa_Events.2.D
+	picture = BAD_WITH_MONARCH_eventPicture
+
+	trigger = {
+		NOT = { owns = 522 }
+	}
+
+	is_triggered_only = yes
+
+	hidden = yes
+
+	immediate = {
+		hidden_effect = {
+		}
+	}
+
+	option = {
+		name = FEE_Malwa_Events.2.OPT1
+		ai_chance = { factor = 75 }
+
+		add_stability = -2
+		add_prestige = -50
+		custom_tooltip = FEE_MLW_LOST_ALL_CORES_CLAIMS_TT
+		hidden_effect = {
+			every_province = {
+				limit = {
+					NOT = { owned_by = ROOT }
+					OR = {
+						owned_by = DLH
+						is_core = DLH
+						owner = { is_subject_of = DLH }
+					}
+				}
+				remove_claim = ROOT
+				remove_core = ROOT
+			}
+		}
+	}
+}

@@ -1,6 +1,16 @@
-fee_mewar_monument_boost = {
+fee_mer_monument_boost = {
 	great_project_upgrade_cost = -0.15
 }
-fee_mewar_monument_boost_extra = {
+fee_mer_monument_boost_extra = {
 	great_project_upgrade_cost = -0.25
+}
+
+fee_mer_mughal_rajput_resistance = {
+	local_autonomy = 0.05
+	local_unrest = 3
+}
+
+fee_mer_desert_diplomacy = {
+	diplomatic_reputation = 1
+	diplomatic_upkeep = 1
 }
