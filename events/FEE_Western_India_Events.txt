@@ -849,12 +849,6 @@ country_event = {
 	trigger = {
 		has_country_flag = fee_Rajput_revolt_incoming
 		has_estate = estate_rajput
-		NOT = {
-			estate_loyalty = {
-				estate = estate_rajput
-				loyalty = 30
-			}
-		}
 		religion_group = muslim
 		NOT = { stability = 1 }
 		NOT = { legitimacy_equivalent = 80 }
