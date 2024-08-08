@@ -39,3 +39,24 @@ fee_pol_statut_karnkowskiego = {
 	ship_recruit_speed = -0.2
 	local_ship_cost = -0.1
 }
+
+fee_pol_order_in_ukraine = {
+	cossacks_loyalty_modifier = -0.10
+}
+fee_pol_grateful_cossacks = {
+	cossacks_loyalty_modifier = 0.10
+	cavalry_power = 0.05
+}
+fee_pol_despised_by_the_cossacks = {
+	cossacks_loyalty_modifier = -0.10
+	cavalry_power = -0.05
+}
+fee_pol_nalyvaiko_peace_offer = {
+	cossacks_loyalty_modifier = 0.05
+	cossacks_influence_modifier = 0.20
+}
+fee_pol_nalyvaiko_cossack_lands_confiscated = {
+	cossacks_influence_modifier = -1
+	cossacks_loyalty_modifier = -0.10
+	nobles_influence_modifier = 0.20
+}
