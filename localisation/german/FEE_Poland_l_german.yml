@@ -75,6 +75,129 @@
  FEE_Poland_Events.23.D: "The Pakt wileñski was concluded between the Polish-Lithuanian Commonwealth and the Livonian Confederation in 1561, during the Livonian War. With the exception of the Free Imperial City of Riga, the Treaty brought all the Livonian states that were not occupied by Denmark or Sweden under the suzerainty of the Commonwealth. It also secularised the Livonian Order into the Duchy of Courland and Semigalla and the Duchy of Livonia. \nWhile the treaty finally lost Livonia its independence, in the eyes of the Polish state it rescued the Livonian lands from Russian aggression and inevitable conquest."
  FEE_Poland_Events.23.OPT1: "Poland can protect us."
  FEE_Poland_Events.23.OPT2: "We are stronger on our own!"
+ FEE_Poland_Events.24.T: "Zaporozhian Cossack Raids"
+ FEE_Poland_Events.24.D: "Since second half of XVI century, they have been devastatingly raiding our territories, including our wealthy merchant port cities. Although Commonwealth crown cannot control their actions directly, they are still responsible for this.\n\nWe could threaten their king with war if they won't tame these annoying vermins. Yet there is a chance that they won't back off, and in that case we would have to talk reason into them with fire and sword."
+ FEE_Poland_Events.24.OPT1: "Send an ultimatum!"
+ FEE_Poland_Events.24.OPT2: "We should not jump into any rash decisions."
+
+ FEE_Poland_Events.25.T: "Threatened by the Ottomans"
+ FEE_Poland_Events.25.D: "Ruler of the Ottomans, [TUR.Monarch.GetName] threatens our country with war if the Zaporozhian Cossacks continue their raids.\n\nKnowing that raids is one of the main sources of income for the Cossacks, taking any restrictive action against them would severely damage their loyalty towards us.\n\nOn the other hand, war with Ottomans and their allies could turn into an unspeakable catastrophe for us, unless we are absolutely sure that we can take them on."
+ FEE_Poland_Events.25.OPT1: "We certainly should do something about that."
+ FEE_Poland_Events.25.OPT2: "We don't take orders from the devilish infidel! Bring them on!"
+
+ FEE_Poland_Events.26.T: "Commonwealth accepts our demands"
+ FEE_Poland_Events.26.D: "[PLC.Monarch.GetTitle] [PLC.Monarch.GetName] assured us that they will take actions against the Cossacks which will be sufficient enough to stop their raids."
+ FEE_Poland_Events.26.OPT1: "They better do so!"
+
+ FEE_Poland_Events.27.T: "Commonwealth rejects our demands"
+ FEE_Poland_Events.27.D: "How despicable! [PLC.Monarch.GetTitle] dared to reject our demands! This means only one thing..."
+ FEE_Poland_Events.27.OPT1: "...War it is, then!"
+
+ FEE_Poland_Events.28.T: "A Conflict between Ruthenian Nobility"
+ FEE_Poland_Events.28.D: "Krzysztof Kosinski, a colonel of the Registered Cossacks in Kiev Voivodship captured Bila Tserkva in the retaliation against Janusz Ostrogski, who deprived of his estate in the villages of Rokitno and Olsznice earlier.\n\n This conflict doesn't seem one that we should be bothered about."
+ FEE_Poland_Events.28.OPT1: "This is a private matter of these nobles. Do not intrude."
+
+ FEE_Poland_Events.29.T: "Ruthenian Noble names himself a Hetman"
+ FEE_Poland_Events.29.D: "After Kosinski captured Bila Tserkva, he named himself a Hetman of the Cossacks and with that kindled a full-scale revolt against the rule of the Polish crown and the local Ruthenian Nobility.\n\nAlthough it looks bad, our chancellor assures us that it's just yet another struggle for power in this unruly region so we shouldn't mobilize our troops for intervention and Ostrogski family, perhaps the most powerful noble family in Ruthenia is more than capable of dealing with that themselves."
+ FEE_Poland_Events.29.OPT1: "Let's keep a close eye on it."
+
+ FEE_Poland_Events.30.T: "End of Kosinski Uprising"
+ FEE_Poland_Events.30.D: "After a week of fierce fighting near the village of Piatek, the Cossacks, as expected, have been defeated by Duke Kostanty Wasyl Ostrogski. The leader of revolt was forced sign an agreement in which the Cossacks were obliged to be loyal to the crown, deprive Kosinski of his Hetman status and remove from the Cossack Register everyone who had been added to it during the revolt."
+ FEE_Poland_Events.30.OPT1: "One less issue to worry about."
+
+ FEE_Poland_Events.31.T: "Embarrassing Failure"
+ FEE_Poland_Events.31.D: "What seemed like an usual rebellion that would've been an easy prey for Ruthenian Nobility couldn't have been handled by them. Their combined forces got completely outmaneuvered and crushed by the Cossacks!\n\nConsidering how poorly equipped this rebellion is, this defeat will become an embarrassment for the entire country!"
+ FEE_Poland_Events.31.OPT1: "We must put them down ourselves before it's too late!"
+
+ FEE_Poland_Events.32.T: "End of Kosinski Uprising"
+ FEE_Poland_Events.32.D: "After short clashes between our army and the rebels, we have managed to deliver a decisive blow to the rebellion and capture Kosinski himself in one of the battles. He was forced to sign an agreement in which the Cossacks were obliged to be loyal to the crown, deprive Kosinski of his Hetman status and remove from the Cossack Register everyone who had been added to it during the revolt."
+ FEE_Poland_Events.32.OPT1: "That was surely a close call!"
+
+ FEE_Poland_Events.33.T: "An influental Cossack demands changes"
+ FEE_Poland_Events.33.D: "Severyn Nalyvaiko, after leaving our service have sent the list of demands to the Szlachta. This list contained demands for the changes to the upkeep of the Cossack regiments which served in their armies. This included respect for the Cossack customs. He is justifying his demands with Cossack's active involvements against infidels from the south.\n\nAlthough it's hard to deny that, the Szlachta is not willing to sway towards accepting the demands. Considering the recent uprising, rejecting them might lead to unpredictable concequences."
+ FEE_Poland_Events.33.OPT1: "They will have to decide..."
+ # Just or Righteous
+ FEE_Poland_Events.33.OPT2: "His demands are justified, Szlachta should acknowledge that!"
+ # Kind-Hearted
+ FEE_Poland_Events.33.OPT3: "Cossacks deserve better for their service. We will pay for it."
+ # Secretive or Intricate Webweaver
+ FEE_Poland_Events.33.OPT4: "A few bribes and blackmails will help them to take right decision."
+ # Charismatic Negotiator, Fierce Negotiator or Silver Tongue
+ FEE_Poland_Events.33.OPT5: "Szlachta will be convinced that this is necessary."
+ # Embezzler or Greedy
+ FEE_Poland_Events.33.OPT6: "Better? I think he meant worse, I am sure!"
+ # Cruel or Malevolent
+ FEE_Poland_Events.33.OPT7: "Off with the head of this upstart!"
+
+ FEE_Poland_Events.34.T: "Szlachta Agrees"
+ FEE_Poland_Events.34.D: "Despite the opposition to the demands, majority of the Szlachta had decided that it will be better to improve conditions of the upkeep for the Cossack regiments rather than risk provoking yet another devastating revolt in Ruthenia."
+ FEE_Poland_Events.34.OPT1: "They gotta be grateful to us for this!"
+
+ FEE_Poland_Events.35.T: "Szlachta Refuses"
+ FEE_Poland_Events.35.D: "As we had anticipated, majority of Szlachta refused to agree to the demands, in fact, some of the nobles tried to knock Nalyvaiko out of his residence in Braclaw, which resulted in a total failure and left us with no opportunities for any further negotiations for now."
+ FEE_Poland_Events.35.OPT1: "This doesn't look good, but let's hold crown troops for now."
+
+ FEE_Poland_Events.36.T: "Szlachta Requests our Help"
+ FEE_Poland_Events.36.D: "Not being able to deal with the Cossacks, Szlachta from Ruthenia sent us a delegation. They have asked for out help, complaining that the Cossacks are even more annoying than Tatars. They've also reported about atrocities that rebels had committed against Polish nobility and Catholic clergy in Mahilyow.\n\nAt the same time, we have received a peace offer from Nalyvaiko in which he requires us to cede some of the lands in exchange for their military service and loyalty to the Commonwealth. Now, we have a choice how to end this. Either we accept peace offer and bring an end to this quickly. Or we can drown Ruthenian lands in blood once again."
+ FEE_Poland_Events.36.OPT1: "Recall our Field Crown Hetman and order him to deal with this!"
+ FEE_Poland_Events.36.OPT2: "This went way too far, the peace must be reached!"
+
+ FEE_Poland_Events.37.T: "End of Nalyvaiko Uprising"
+ FEE_Poland_Events.37.D: "Having agreed to the peace offer, we have brought an end to the uprising. The captured cities were ceded to us and prisoners freed. Unfortunately, due to the contraditcory nature of this peace offer, some of the Nobility desperately took up arms against us, trying to revert that.\n\nUnlike previous rebellion, this one due to the usage of scorched earth tactics severely devastated left-bank Ukraine."
+ FEE_Poland_Events.37.OPT1: "Is this truly over?"
+
+ FEE_Poland_Events.38.T: "Rebels Were Forced to Retreat"
+ FEE_Poland_Events.38.D: "After bloody clashes with the rebels, we have forced Nalyvaiko and the rest of his army to retreat to the left-bank Ukraine, to the village Solonystsy near the town of Lubnie. There he organized a tabor."
+ FEE_Poland_Events.38.OPT1: "Chase after them!"
+
+ FEE_Poland_Events.39.T: "End of Nalyvaiko Uprising"
+ FEE_Poland_Events.39.D: "Storming the tabor, our army slaughtered everyone related to the Cossacks, including their families. Only a small pack of survivors have managed to break free. Nalyvaiko fell in the battle among his troops. With the fall of its leader, the uprising is realistically over."
+ FEE_Poland_Events.39.OPT1: "Confiscation of their lands will serve them a good punishment!"
+
+ FEE_Poland_Events.40.T: "Negotiations with Rebels"
+ FEE_Poland_Events.40.D: "Surrounded in Solonytsy for already quite a while, the rebels are sure to run out of food and water soon.\n\nIf we were to offer them appealing conditions of surrender, we could end the uprising fast and perhaps without any further bloodshed."
+ FEE_Poland_Events.40.OPT1: "Offer them to surrender in exchange for the amnesty"
+
+ FEE_Poland_Events.41.T: "Negotiations with Rebels"
+ FEE_Poland_Events.41.D: "It seems that these rebels are either hard nuts to crack or just crazy. The terms that we have offered them were rejected, so that leaves us with no other choice but to siege their tabor down."
+ FEE_Poland_Events.41.OPT1: "Cannot be helped."
+
+ FEE_Poland_Events.42.T: "Negotiations with Rebels"
+ FEE_Poland_Events.42.D: "Although the rebels have accepted our proposal to negotiate, everything went not as we expected, but even better. One of the negotiators from the Cossack side, Hryhory Loboda was suspected of treason by the rebels and murdered. Later, the rebels offered to hand over the leaders of the rebellion, including Nalyvaiko on the same terms.\n\nOf course we can agree to this, but considering the havoc and destructions the had caused, our Nobility is expecting from us to deal with every single one of them accordingly."
+ FEE_Poland_Events.42.OPT1: "We should keep this as civil as possible."
+ FEE_Poland_Events.42.OPT2: "Storm the tabor during final negotiations and kill them all."
+
+ FEE_Poland_Events.43.T: "End of Nalyvaiko Uprising"
+ FEE_Poland_Events.43.D: "Allowing the rebels to go to their homes safely after they have ceded the leaders of the uprising, we have finally brought an end to it. Though the uprising is over, there was still a question how should we punish the captured leaders."
+ FEE_Poland_Events.43.OPT1: "Make a public example out them in the capital!"
+
+ FEE_Poland_Events.44.T: "End of Nalyvaiko Uprising"
+ FEE_Poland_Events.44.D: "Storming the tabor, our army slaughtered everyone related to the Cossacks, including their families. Only a small amount of the Cossacks was able to break out. With their leaders in our hands, we have brought an end to the uprising. Due to scale of the damage suffered by the Nobility, the lands of the Cossacks are going to be confiscated in favour of them. As for Nalyvaiko and the rest of the leader, their punishment will be severe and cruel."
+ FEE_Poland_Events.44.OPT1: "Good riddance."
+
+ FEE_Poland_Events.45.T: "Suspicious Cossack"
+ FEE_Poland_Events.45.D: "Well-respected among his friends and subordinates, Registered Cossack Bohdan Khmelnytsky, after receiving no support from the Polish officials in his land dispute against Daniel Czaplinski who, on behalf of Magnate Aleksander Koniecpolski, had tried to force him off the land by committing raids to Subotiv, his residence, is suspiciously traveling from one Cossack regiment to another and thus seems to be plotting another Cossack revolt."
+ FEE_Poland_Events.45.OPT1: "Order his arrest immediately."
+
+ FEE_Poland_Events.1001.T: "Kosinski Uprising - Phase 1"
+ FEE_Poland_Events.1001.D: "You shouldn't be able to see this hidden event."
+ FEE_Poland_Events.1001.OPT1: "Please report it to the team if you see it."
+
+ FEE_Poland_Events.1002.T: "Kosinski Uprising - Phase 2"
+ FEE_Poland_Events.1002.D: "You shouldn't be able to see this hidden event."
+ FEE_Poland_Events.1002.OPT1: "Please report it to the team if you see it."
+
+ FEE_Poland_Events.1003.T: "Kosinski Uprising - Final Phase"
+ FEE_Poland_Events.1003.D: "You shouldn't be able to see this hidden event."
+ FEE_Poland_Events.1003.OPT1: "Please report it to the team if you see it."
+
+ FEE_Poland_Events.1004.T: "Cossack rebels in the country."
+ FEE_Poland_Events.1004.D: "You shouldn't be able to see this hidden event."
+ FEE_Poland_Events.1004.OPT1: "Please report it to the team if you see it."
+
+ FEE_Poland_Events.1005.T: "Check player decision"
+ FEE_Poland_Events.1005.D: "You shouldn't be able to see this hidden event."
+ FEE_Poland_Events.1005.OPT1: "Please report it to the team if you see it."
 
  #Event Modifiers
  fee_pol_uniate_church: "Uniate Church"
@@ -87,4 +210,18 @@
  fee_pol_przywilej_torunski: "The Privilege of Torun"
  fee_pol_statut_karnkowskiego: "Karnkowski's Statute"
 
+ fee_pol_order_in_ukraine: "Order in Ukraine"
+ fee_pol_grateful_cossacks: "Grateful Cossacks"
+ fee_pol_despised_by_the_cossacks: "Despised by the Cossacks"
+ fee_pol_nalyvaiko_peace_offer: "Accepted Nalyvaiko's Peace Offer"
+ fee_pol_nalyvaiko_cossack_lands_confiscated: "Cossack lands confiscated"
+
+ # Decisions
+ fee_pol_negotiate_with_the_rebels_title: "Negotiate with the rebels"
+ fee_pol_negotiate_with_the_rebels_desc: "Try to negotiate with the rebels in Solonytsy."
+
+ # Tooltips
  POLAND_RUTHENIA_TRUE_BELIEVERS_TT: "§YEvery Owned Province§! with §MRuthenian§! culture and that follows the §MOrthodox§! faith will gain:"
+
+ cr_2_a_tooltip: "We shall limit the freedom of the Cossacks regarding the raids."
+ cr_2_b_tooltip: "This surely would lead to an armed confrontation with Turks."
