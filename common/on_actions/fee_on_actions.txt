@@ -359,7 +359,7 @@ on_new_heir = {
 on_new_monarch = {
 	events = {
 		FEE_Charles_V_Events.2
-		FEE_Bahmanis_Events.4
+		FEE_Bahmanis_Events.3
 		FEE_Marathas_Events.11
 	}
 
@@ -502,7 +502,7 @@ on_province_religion_converted = {
 		}
 		owner = {
 			set_country_flag = fee_bahmanis_hindu_question_first_happened
-			country_event = { id = FEE_Bahmanis_Events.4 }
+			country_event = { id = FEE_Bahmanis_Events.3 }
 		}
 	}
 }
@@ -600,5 +600,47 @@ on_dependency_lost = {
 			}
 			remove_country_modifier = fee_marathas_loyal_buffer_state
 		}
+	}
+}
+
+# ROOT = province, FROM = country
+on_trade_good_changed = {
+	if = {
+		limit = {
+			NOT = { trade_goods = cloth }
+			NOT = { trade_goods = silk }
+		}
+		remove_province_modifier = fee_trade_goods_catanzaro_seta
+		remove_province_modifier = fee_trade_goods_foreign_craftsman
+		remove_province_modifier = fee_trade_goods_consolato_seta
+		remove_province_modifier = fee_trade_goods_silk_new_world
+		remove_province_modifier = fee_trade_goods_neapolitan_black
+		remove_province_modifier = fee_trade_goods_jewish_craftsman_messina
+		remove_province_modifier = fee_trade_goods_foreign_craftsman_palermo
+		remove_province_modifier = fee_trade_goods_french_silk_monopoly
+	}
+	if = {
+		limit = {
+			NOT = { trade_goods = gems }
+		}
+		remove_province_modifier = fee_trade_goods_dependence_on_diamonds
+	}
+	if = {
+		limit = {
+			NOT = { trade_goods = cocoa }
+		}
+		remove_province_modifier = fee_trade_goods_cocoa_trade
+	}
+	if = {
+		limit = {
+			NOT = { trade_goods = chinaware }
+		}
+		remove_province_modifier = fee_trade_goods_delfaware
+	}
+	if = {
+		limit = {
+			NOT = { trade_goods = copper }
+		}
+		remove_province_modifier = fee_bahmanis_bidir_district
 	}
 }

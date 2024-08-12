@@ -1565,44 +1565,11 @@ country_event = {
 	}
 }
 
-#Sugar Cultivation in Brazil
+# Discovery of Ceylon
 country_event = {
 	id = FEE_Portugal_Events.21
 	title = FEE_Portugal_Events.21.T
 	desc = FEE_Portugal_Events.21.D
-	picture = TRADEGOODS_eventPicture
-
-	fire_only_once = yes
-	trigger = {
-		tag = POR
-		pernambuco_area = {
-			country_or_non_sovereign_subject_holds = ROOT
-		}
-	}
-
-	mean_time_to_happen = {
-		months = 60
-	}
-
-	option = {
-		name = FEE_Portugal_Events.21.OPT1
-
-		add_country_modifier = {
-			name = fee_por_sugar_rush
-			duration = 5475
-		}
-		pernambuco_area = {
-			add_base_production = 1
-			change_trade_goods = sugar
-		}
-	}
-}
-
-# Discovery of Ceylon
-country_event = {
-	id = FEE_Portugal_Events.22
-	title = FEE_Portugal_Events.22.T
-	desc = FEE_Portugal_Events.22.D
 	picture = EXPLORERS_eventPicture
 
 	fire_only_once = yes
@@ -1639,19 +1606,19 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Portugal_Events.22.OPT1
+		name = FEE_Portugal_Events.21.OPT1
 
 		event_target:current_owner = {
-			country_event = { id = FEE_Portugal_Events.23 days = 365 }
+			country_event = { id = FEE_Portugal_Events.22 days = 365 }
 		}
 	}
 }
 
 # Portuguese Proposal
 country_event = {
-	id = FEE_Portugal_Events.23
-	title = FEE_Portugal_Events.23.T
-	desc = FEE_Portugal_Events.23.D
+	id = FEE_Portugal_Events.22
+	title = FEE_Portugal_Events.22.T
+	desc = FEE_Portugal_Events.22.D
 	picture = DIPLOMACY_eventPicture
 
 	major = yes
@@ -1669,7 +1636,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Portugal_Events.23.OPT1
+		name = FEE_Portugal_Events.22.OPT1
 
 		trigger = {
 			is_subject = no
@@ -1683,7 +1650,7 @@ country_event = {
 		}
 
 		add_years_of_income = -1
-		custom_tooltip = FEE_Portugal_Events.23.TT
+		custom_tooltip = FEE_Portugal_Events.22.TT
 		hidden_effect = {
 			event_target:proposal_initiator = {
 				set_country_flag = forced_tributary_state
@@ -1708,12 +1675,12 @@ country_event = {
 			}
 		}
 		hidden_effect = {
-			country_event = { id = FEE_Portugal_Events.24 days = 3650 }
+			country_event = { id = FEE_Portugal_Events.23 days = 3650 }
 		}
 	}
 
 	option = {
-		name = FEE_Portugal_Events.23.OPT2
+		name = FEE_Portugal_Events.22.OPT2
 
 		ai_chance = {
 			factor = 0.2
@@ -1730,7 +1697,7 @@ country_event = {
 		}
 		hidden_effect = {
 			event_target:proposal_initiator = {
-				country_event = { id = FEE_Portugal_Events.25 }
+				country_event = { id = FEE_Portugal_Events.24 }
 			}
 		}
 	}
@@ -1738,9 +1705,9 @@ country_event = {
 
 # Colombo Fort
 country_event = {
-	id = FEE_Portugal_Events.24
-	title = FEE_Portugal_Events.24.T
-	desc = FEE_Portugal_Events.24.D
+	id = FEE_Portugal_Events.23
+	title = FEE_Portugal_Events.23.T
+	desc = FEE_Portugal_Events.23.D
 	picture = FORT_eventPicture
 
 	is_triggered_only = yes
@@ -1750,7 +1717,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Portugal_Events.24.OPT1
+		name = FEE_Portugal_Events.23.OPT1
 
 		572 = {
 			add_base_manpower = 1
@@ -1767,7 +1734,7 @@ country_event = {
 		}
 		hidden_effect = {
 			event_target:proposal_initiator = {
-				country_event = { id = FEE_Portugal_Events.26 }
+				country_event = { id = FEE_Portugal_Events.25 }
 			}
 		}
 	}
@@ -1775,15 +1742,15 @@ country_event = {
 
 # Ceylon's Refusal
 country_event = {
-	id = FEE_Portugal_Events.25
-	title = FEE_Portugal_Events.25.T
-	desc = FEE_Portugal_Events.25.D
+	id = FEE_Portugal_Events.24
+	title = FEE_Portugal_Events.24.T
+	desc = FEE_Portugal_Events.24.D
 	picture = BAD_WITH_MONARCH_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = FEE_Portugal_Events.25.OPT1
+		name = FEE_Portugal_Events.24.OPT1
 
 		ai_chance = {
 			factor = 0.5
@@ -1805,7 +1772,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Portugal_Events.25.OPT2
+		name = FEE_Portugal_Events.24.OPT2
 
 		ai_chance = {
 			factor = 0.5
@@ -1821,15 +1788,15 @@ country_event = {
 
 # Colombo Trade Port
 country_event = {
-	id = FEE_Portugal_Events.26
-	title = FEE_Portugal_Events.26.T
-	desc = FEE_Portugal_Events.26.D
+	id = FEE_Portugal_Events.25
+	title = FEE_Portugal_Events.25.T
+	desc = FEE_Portugal_Events.25.D
 	picture = TRADEGOODS_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = FEE_Portugal_Events.26.OPT1
+		name = FEE_Portugal_Events.25.OPT1
 
 		572 = {
 			add_trade_modifier = {

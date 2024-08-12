@@ -226,71 +226,11 @@ country_event = {
 	}
 }
 
-# Bidriware
+# Alienation of the Hindus
 country_event = {
 	id = FEE_Bahmanis_Events.3
 	title = FEE_Bahmanis_Events.3.T
 	desc = FEE_Bahmanis_Events.3.D
-	picture = TRADE_GOODS_METALS_AND_MINING_EQUIPENT_eventPicture
-
-	major = yes
-	fire_only_once = yes
-
-	goto = 1948
-
-	trigger = {
-		prestige = 50
-		owns = 1948
-		1948 = {
-			development = 15
-			OR = {
-				has_owner_culture = yes
-				has_owner_accepted_culture = yes
-			}
-		}
-	}
-
-	mean_time_to_happen = {
-		months = 1
-	}
-
-	option = {
-		name = FEE_Bahmanis_Events.3.OPT1
-
-		ai_chance = { factor = 0.99 }
-
-		change_price = {
-			trade_goods = copper
-			key = fee_bahmanis_copper_price_bidir
-			value = 0.25
-			duration = -1
-		}
-		1948 = {
-			change_trade_goods = copper
-			add_permanent_province_modifier = {
-				name = fee_bahmanis_bidir_district
-				duration = -1
-			}
-		}
-	}
-
-	option = {
-		name = FEE_Bahmanis_Events.3.OPT2
-
-		ai_chance = { factor = 0.01 }
-
-		add_prestige = -2
-		1948 = {
-			add_base_production = 1
-		}
-	}
-}
-
-# Alienation of the Hindus
-country_event = {
-	id = FEE_Bahmanis_Events.4
-	title = FEE_Bahmanis_Events.4.T
-	desc = FEE_Bahmanis_Events.4.D
 	picture = RELIGIOUS_TURMOIL_eventPicture
 
 	is_triggered_only = yes
@@ -348,7 +288,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Bahmanis_Events.4.OPT1
+		name = FEE_Bahmanis_Events.3.OPT1
 
 		goto = target_province
 
@@ -365,7 +305,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Bahmanis_Events.4.OPT2
+		name = FEE_Bahmanis_Events.3.OPT2
 
 		goto = capital_target
 
