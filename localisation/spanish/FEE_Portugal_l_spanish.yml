@@ -104,31 +104,27 @@
  FEE_Portugal_Events.20.OPT2: "Allow the Jesuits to pursue their missionary efforts unmolested."
  FEE_Portugal_Events.20.OPT3: "Keep them out of our trading posts, we don't need them stirring up trouble."
 
- FEE_Portugal_Events.21.T: "Sugar Cultivation in Brazil"
- FEE_Portugal_Events.21.D: "Once a luxury only imported over harsh land routes from the East, sugarcane has found a favorable climate in our new colonies and is proving to be more profitable than anyone could have imagined as it becomes accessible to the public for the first time. \nOur colony in Brazil especially is beginning to find great success in growing this crop. Let's hope no one steals our success..."
- FEE_Portugal_Events.21.OPT1: "Sweet!"
+ FEE_Portugal_Events.21.T: "Discovery of Ceylon"
+ FEE_Portugal_Events.21.D: "From the tales narrated by Niccolò de Conti and the lands detailed on the map of Fra Mauro in Lisbon we have ever more eager to find a way to India, then other explorers such as the Genoese Noli narrated of a way around Africa, but it wasn't after our proudest Vasco who lead our navy through a new way for the Indian spices. There lies Ceylon, an island filled with cinnamon and other spices as well as pearls and other riches for us to grab."
+ FEE_Portugal_Events.21.OPT1: "Cinnamon trade must be ours!"
 
- FEE_Portugal_Events.22.T: "Discovery of Ceylon"
- FEE_Portugal_Events.22.D: "From the tales narrated by Niccolò de Conti and the lands detailed on the map of Fra Mauro in Lisbon we have ever more eager to find a way to India, then other explorers such as the Genoese Noli narrated of a way around Africa, but it wasn't after our proudest Vasco who lead our navy through a new way for the Indian spices. There lies Ceylon, an island filled with cinnamon and other spices as well as pearls and other riches for us to grab."
- FEE_Portugal_Events.22.OPT1: "Cinnamon trade must be ours!"
+ FEE_Portugal_Events.22.T: "Portuguese Proposal"
+ FEE_Portugal_Events.22.D: "Explorers and merchants from a distant land called Portugal have arrived at our court; their greed and thirst for profit have led them towards the shores of India and are asking for the annual tribute paid in spices and permission to build a fort in Colombo in exchange for their protection. While our shores have been hit a few times by pirates from the Arabian and Gujarati coasts, can we really trust them?"
+ FEE_Portugal_Events.22.OPT1: "Pay the tribute to the Portuguese."
+ FEE_Portugal_Events.22.OPT2: "We will not submit!"
 
- FEE_Portugal_Events.23.T: "Portuguese Proposal"
- FEE_Portugal_Events.23.D: "Explorers and merchants from a distant land called Portugal have arrived at our court; their greed and thirst for profit have led them towards the shores of India and are asking for the annual tribute paid in spices and permission to build a fort in Colombo in exchange for their protection. While our shores have been hit a few times by pirates from the Arabian and Gujarati coasts, can we really trust them?"
- FEE_Portugal_Events.23.OPT1: "Pay the tribute to the Portuguese."
- FEE_Portugal_Events.23.OPT2: "We will not submit!"
+ FEE_Portugal_Events.23.T: "Colombo Fort"
+ FEE_Portugal_Events.23.D: "As per the agreement we have with the Portuguese, they are allowed to build a fort in Colombo, the city where they first arrived. They were also allowed to establish trading posts in the city, in exchange they promised to protect our coastlines from any invaders. There have already been some conflicts between Portuguese merchants and Muslim ones, but it's better to not interfere."
+ FEE_Portugal_Events.23.OPT1: "Do not disturb them."
 
- FEE_Portugal_Events.24.T: "Colombo Fort"
- FEE_Portugal_Events.24.D: "As per the agreement we have with the Portuguese, they are allowed to build a fort in Colombo, the city where they first arrived. They were also allowed to establish trading posts in the city, in exchange they promised to protect our coastlines from any invaders. There have already been some conflicts between Portuguese merchants and Muslim ones, but it's better to not interfere."
- FEE_Portugal_Events.24.OPT1: "Do not disturb them."
+ FEE_Portugal_Events.24.T: "Ceylon's Refusal"
+ FEE_Portugal_Events.24.D: "Are they idiots? We have come a long way to be stopped by some egoistic and proud King of distant land, we have sailed the seas and oceans to reach India and we will not stop until we can beat the Venetian and Genoese to dominate the spice trade in Europe, especially since after our discovery a few voices have reached the Dutch and British lands, we will get our hands on them, with any means necessary."
+ FEE_Portugal_Events.24.OPT1: "We will get the connamon one way or another!"
+ FEE_Portugal_Events.24.OPT2: "We can get cinnamon elsewhere."
 
- FEE_Portugal_Events.25.T: "Ceylon's Refusal"
- FEE_Portugal_Events.25.D: "Are they idiots? We have come a long way to be stopped by some egoistic and proud King of distant land, we have sailed the seas and oceans to reach India and we will not stop until we can beat the Venetian and Genoese to dominate the spice trade in Europe, especially since after our discovery a few voices have reached the Dutch and British lands, we will get our hands on them, with any means necessary."
- FEE_Portugal_Events.25.OPT1: "We will get the connamon one way or another!"
- FEE_Portugal_Events.25.OPT2: "We can get cinnamon elsewhere."
-
- FEE_Portugal_Events.26.T: "Colombo Trade Port"
- FEE_Portugal_Events.26.D: "We have been lucky that the storm carried our ships to Ceylon and that our explorers were able to secure excellent trade deals and allowance to build a fort at the city of Colombo all just for protecting their coastlines. With this fort, we quickly establish control over the whole of Ceylon. It is in our best interest to manipulate the royal family of Kotte to gain more control over the area and to protect our other settlements in India. Let the spice flow."
- FEE_Portugal_Events.26.OPT1: "The spice must flow."
+ FEE_Portugal_Events.25.T: "Colombo Trade Port"
+ FEE_Portugal_Events.25.D: "We have been lucky that the storm carried our ships to Ceylon and that our explorers were able to secure excellent trade deals and allowance to build a fort at the city of Colombo all just for protecting their coastlines. With this fort, we quickly establish control over the whole of Ceylon. It is in our best interest to manipulate the royal family of Kotte to gain more control over the area and to protect our other settlements in India. Let the spice flow."
+ FEE_Portugal_Events.25.OPT1: "The spice must flow."
 
  #Modifiers
  fee_por_sebastianism: "Sebastianism"
@@ -160,8 +156,6 @@
  fee_por_asian_inquisition: "Asian Inquisition"
  fee_por_portuguese_jesuits: "Portuguese Jesuits"
  fee_por_rejected_jesuits: "Rejected Jesuits"
-
- fee_por_sugar_rush: "Sugar Rush"
 
  fee_por_portuguese_protection: "Portuguese Protection"
  fee_por_colombo_fort: "Colombo Fort"
@@ -202,4 +196,4 @@
 
  securing_african_interest_TT: "We will build the §Ycurrent level fort§! in every province in the §MIvocry Coast§! trade node"
 
- FEE_Portugal_Events.23.TT: "§Y[Root.GetName]§! becomes a §YTributary State§! under §Y[proposal_initiator.GetName]§!."
+ FEE_Portugal_Events.22.TT: "§Y[Root.GetName]§! becomes a §YTributary State§! under §Y[proposal_initiator.GetName]§!."

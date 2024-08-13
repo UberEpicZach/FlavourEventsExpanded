@@ -1,42 +1,50 @@
 ﻿l_french:
-# Events
- FEE_Trade_Goods_Events.1.T: "Chocolate!"
- FEE_Trade_Goods_Events.1.D: "The word “chocolate” is not new. A heated mixture of cacao and water called “cacahuatl” had been drunk by the Mesoamericans for millennia. It was first brought over to Europe by Spanish conquistadors in 1528, but due to its popularity in the royal court, its spread was initially limited. It was in Spain where the first addition of sugar to the beverage occurred. At first used only by the court, it spread from there to nunneries where it was deemed as medicine as well as an aid to fasting since it was not considered food. It quickly boomed in popularity among Spanish nobility as well. While hot chocolate never really took hold in the Low Countries the way it did elsewhere, Flemish and Dutch trading companies began smuggling their own supply of cacao into Europe to profit off the growing demand. \nA breakthrough for chocolate came in [ROOT_YEAR], when a group of Flemish traders created their own company to import cacao to [localization_brugge]. That company first developed the process of roasting and fermenting cocoa beans in discarded beer brewing vats to make solid cocoa butter. While not yet an edible candy, it made for easier transport, use in medicine, and shelf life, and made Brugge the center of cocoa trade in Europe"
+### Chocolate Events
+FEE_Trade_Goods_Events.1.T: "Chocolate!"
+ FEE_Trade_Goods_Events.1.D: "The word “chocolate” is not new. A heated mixture of cacao and water called “cacahuatl” had been drunk by the Mesoamericans for millennia. It was first brought over to Europe by Spanish conquistadors in 1528, but due to its popularity in the royal court, its spread was initially limited. It was in Spain where the first addition of sugar to the beverage occurred. At first used only by the court, it spread from there to nunneries where it was deemed as medicine as well as an aid to fasting since it was not considered food. It quickly boomed in popularity among Spanish nobility as well. While hot chocolate never really took hold in the Low Countries the way it did elsewhere, Flemish and Dutch trading companies began smuggling their own supply of cacao into Europe to profit off the growing demand. \nA breakthrough for chocolate came in [GetYear], when a group of Flemish traders created their own company to import cacao to [90.GetName]. That company first developed the process of roasting and fermenting cocoa beans in discarded beer brewing vats to make solid cocoa butter. While not yet an edible candy, it made for easier transport, use in medicine, and shelf life, and made Brugge the center of cocoa trade in Europe"
  FEE_Trade_Goods_Events.1.OPT1: "[90.GetName] shall be the City of Chocolate!"
  FEE_Trade_Goods_Events.1.OPT2: "The cloth trade has always sustained this city, and God willing it always will"
 
+### Tobacco Events
  FEE_Trade_Goods_Events.100.T: "Tobacco Production in Brussels"
  FEE_Trade_Goods_Events.100.D: "Among the many exciting new commodities brought from the New World was a new stimulant. First known to Europeans as tabaco by Caribbean natives, it was soon found to have been used all across North America, and quickly spread like wildfire in Europe. \nOne requirement of tobacco cultivation is a temperate climate and fertile, wet soil. The eastern coast of North America proved ideal for it, making merchants who take the risky Atlantic journey incredibly wealthy. The first attempts to grow tobacco in Europe itself in 1558 failed due to poor planning and conditions. However, another group of entrepreneurs has identified the seasonal and wet climate of the southern Low Countries as a potentially ideal location for tobacco cultivation, and a perfect opportunity has opened up: the cloth trade in Flanders has been in decline for decades, as other centers of production outcompete them. Cities further from the coast were the worst hit due to lack of access to easy shipping, and the city of Brussels has gone into prolonged depression as its cloth industry closes down. Repurposing the land to this new cash crop may yet be the salvation of the city, yet some are concerned about the potentially noxious nature of this new crop…"
  FEE_Trade_Goods_Events.100.OPT1: "Support the Tobacco Planters"
  FEE_Trade_Goods_Events.100.OPT2: "Reject this vile exploitation"
 
+### Weapon Events
  FEE_Trade_Goods_Events.200.T: "Growth of the Weapon Industry in Liege"
- FEE_Trade_Goods_Events.200.D: "Since the early Middle Ages, [province name 93] has been a center of weaponry production, thanks to the deposits of iron in the area. As improved blast furnace and mining techniques spread through Western Europe in the later Middle Ages, the industries began to grow exponentially, and the increased use of gunpowder weapons has made weapons-making more important than ever. The traditional glass-making guilds, of course, oppose the growing influence of the gunsmiths in local trade and politics. Now the competing artisans come to us with a demand to take a side. Do we limit the growth of this industry to preserve the glassmaking guilds or do we stand by and watch as the glass industry declines into obscurity?"
+ FEE_Trade_Goods_Events.200.D: "Since the early Middle Ages, [93.GetName] has been a center of weaponry production, thanks to the deposits of iron in the area. As improved blast furnace and mining techniques spread through Western Europe in the later Middle Ages, the industries began to grow exponentially, and the increased use of gunpowder weapons has made weapons-making more important than ever. The traditional glass-making guilds, of course, oppose the growing influence of the gunsmiths in local trade and politics. Now the competing artisans come to us with a demand to take a side. Do we limit the growth of this industry to preserve the glassmaking guilds or do we stand by and watch as the glass industry declines into obscurity?"
  FEE_Trade_Goods_Events.200.OPT1: "The old world must burn in the fires of industry. A new power must rise."
  FEE_Trade_Goods_Events.200.OPT2: "Not enough weapons, my lord!"
 
+### Chinaware Events
  FEE_Trade_Goods_Events.300.T: "Delftware!"
  FEE_Trade_Goods_Events.300.D: "Pottery is a universal human craft, and one of the oldest known to man. Because of its ubiquity, however, it is not exactly lucrative in trade. What has proven to me much more profitable, however, is the sub-type of pottery commonly known as chinaware. Porcelain was initially made only in China, but when its manufacture spread to Europe in the 16th century it proved an immediate hit. The unique process whereby white clay is glazed with tin and painted designs are baked in creates earthenware that is prized throughout the world. While many argue Chinese porcelain is superior, regular interruptions in trade with the East inflate its price. Using a combination of imitating Chinese techniques, and a unique blend of clays from Holland, the Rhineland, and Tournai, the artisans of Delft have begun making porcelain in equal if not better quality en masse. Influenced by Japanese designs due to the Dutch monopoly on trade with Japan, Delftware soon became synonymous with the iconic blue paint on white backgrounds depicting everything from complex landscapes to portraits. This industry quickly grew to become the center of European chinaware, becoming known as “Delftware” in its own right, and becoming a feature of the Dutch Golden Age."
  FEE_Trade_Goods_Events.300.OPT1: "A true Age of Wonders!"
 
+### Salt Events
  FEE_Trade_Goods_Events.400.T: "Salt Running Out in Zeeland"
  FEE_Trade_Goods_Events.400.D: "For most of the Middle Ages, Zeeland had been a producer of salt due to the land being predominantly salty marshland due to the swampy Rhine estuary. As polders gradually eliminated the marshland and solidified the coastline, the rich salt deposits dried up along with the land. Harvesting salt from seawater is a time-honored practice, but harvesting solely from seawater is far more expensive without natural marshlands making processing easier, as processing would necessitate man-made drying beds. As more and more of the land is reclaimed and made arable and fertile, agriculture, especially dairy farming, gradually displaced salt as the main source of revenue in Zeeland."
  FEE_Trade_Goods_Events.400.OPT1: "Salt stocks are too low sire..."
 
+### Grain Events
  FEE_Trade_Goods_Events.500.T: "Increased French Grain Production"
  FEE_Trade_Goods_Events.500.D: "The economy of France during the Renaissance period was marked by a dramatic increase in output from the most fertile parts of France. The end of the Hundred Years’ War, the clearing of additional land for farming, and gradual improvements in farming techniques made the traditional breadbaskets of France able to support an even greater population than before, and even produce a surplus for export, a rarity in Europe during this period."
  FEE_Trade_Goods_Events.500.OPT1: "Let them eat bread"
 
+### Paper Events
  FEE_Trade_Goods_Events.600.T: "Growth of Papermaking in Aberdeenshire"
  FEE_Trade_Goods_Events.600.D: "The fishing trade has sustained the coastal villages of Aberdeenshire since it was first inhabited by humans, unknown millennia ago. As the villages and towns have transformed into cities, however, overfishing and the need for other employment have made other trades increasingly more important. The growth of the printing industry, with presses throughout the Scottish Lowlands, makes paper in ever high demand. The extortive prices demanded by Dutch, French, or German paper-makers puts a real strain on local printers, and the port city of Aberdeen would be a natural choice to establish a paper industry. However, it risks upsetting the current balance of power between various guilds in the city, who object to an industry they see as smelly and pretentious."
  FEE_Trade_Goods_Events.600.OPT1: "Establish the Paper Industry!"
  FEE_Trade_Goods_Events.600.OPT2: "Keep the Balance of Power in the City"
 
+### Coal Events
  FEE_Trade_Goods_Events.700.T: "Coal Discovered in Loon"
- FEE_Trade_Goods_Events.700.D: "As the steam engine and demand for coal made landfall in mainland Europe from Britain, the southern Low Countries were the first after Britain to make heavy use of coal. Shallow, easy-to-mine deposits were quickly uncovered in [localized name of province 91], [localized name of province 1866], and [localized name of province 1743]. Such a rich deposit sparked speculation and prospecting for deeper deposits elsewhere, although that would require more advanced and potentially dangerous mining techniques. Most prospecting came back without success, but a large deposit was struck in [2974.GetName]."
+ FEE_Trade_Goods_Events.700.D: "As the steam engine and demand for coal made landfall in mainland Europe from Britain, the southern Low Countries were the first after Britain to make heavy use of coal. Shallow, easy-to-mine deposits were quickly uncovered in [91.GetName], [1866.GetName], and [1743.GetName]. Such a rich deposit sparked speculation and prospecting for deeper deposits elsewhere, although that would require more advanced and potentially dangerous mining techniques. Most prospecting came back without success, but a large deposit was struck in [2974.GetName]."
  FEE_Trade_Goods_Events.700.OPT1: "Let’s make this happening!"
  FEE_Trade_Goods_Events.700.OPT2: "We’d better not"
 
+### Silk and Cloth Events
  FEE_Trade_Goods_Events.1000.T: "Growth of the Business of Batiste in Cambrais"
  FEE_Trade_Goods_Events.1000.D: "During the Middle Ages, [1743.GetName] became well-known for its woolen cloth products. This production declined in the 14th and 15th centuries and was overtaken in its importance by grain production. The cloth producers of the city gradually shifted to a more specialized production of batiste, a fine and lightweight but dense linen fabric which is often glazed after production. This business then boomed in the 17th century, so much so that the fabric became known as cambric. This rescued the city’s cloth industry and paved the way for further industrial development in later years."
  FEE_Trade_Goods_Events.1000.OPT1: "Encourage this new industry"
@@ -57,10 +65,113 @@
  FEE_Trade_Goods_Events.1003.OPT1: "Let there be silk!"
  FEE_Trade_Goods_Events.1003.OPT2: "Pssh! This is not worth our time!"
 
- FEE_Trade_Goods_Events.1100.T: "Booming Cotton Industry"
- FEE_Trade_Goods_Events.1100.D: "Golkonda relies on its diamonds for 90% of its economy, this used to work just fine while part of a larger realm like during the time of the Bahmani and Delhi sultanates. Now that we find ourselves independent we can no longer rely on one thing alone that dictates and controls our entire economy. Thus [Root.Monarch.GetName] has tasked his steward to find something Golkonda is rich in and something we can rely on. After doing an extensive dive in the country of our rather young state it was remarked there is yet hope for the economy of Golkonda. In a report given by the esteemed steward of [Root.Monarch.GetName], it states how there is no crop that grows and flourishes in golconda as well as cotton. This created an opening and a lifeline for our economy. With the Persianate incline for weaving and production of clothes, this shift would compliment the state greatly. The plan was henceforth to produce an exorbitant amount of cotton; what we don't need we will sell in export. What we do need for cloth, clothes and other forms of weaving shall be worked by artisans. Shifting our economy from diamonds to cloth clothing and rugs."
- FEE_Trade_Goods_Events.1100.OPT1: "Cotton is King!"
- FEE_Trade_Goods_Events.1100.OPT2: "Diamonds are forever!"
+### Sicilian and Neapolitan Silk
+ FEE_Trade_Goods_Events.1100.T: "Manifattura Napoletana"
+ FEE_Trade_Goods_Events.1100.D: "Our beloved king [Root.Monarch.GetName] has been evermore fascinated by the production of Silk since their marvels have reached the shores of the Mediterranean sea. While important center of production are present in Florence and in Valencia, with their Lonja De La Seda, we should aim to create a local manufactory for our own use."
+ FEE_Trade_Goods_Events.1100.OPT1: "We should improve cloth production!"
+ FEE_Trade_Goods_Events.1100.OPT2: "Silk is the new gold."
+ FEE_Trade_Goods_Events.1100.OPT3: "Changes are too expensive..."
+
+ FEE_Trade_Goods_Events.1101.T: "Artefici Forestieri"
+ FEE_Trade_Goods_Events.1101.D: "The manufactory concessions that was made in the previous years have brought their first fruits, foreign silk producer have reached Naples to learn and improve."
+ FEE_Trade_Goods_Events.1101.OPT1: "We should improve it even more!"
+
+ FEE_Trade_Goods_Events.1102.T: "Consolato dell'Arte della Seta"
+ FEE_Trade_Goods_Events.1102.D: "We royal decree [121.Owner.Monarch.GetName] has created the Consulate of the Art of Silk which aim will be to represent and guide manufacturing, controlling and ensuring its functioning through its most direct administrators. The Guild was governed by three Consuls, a merchant of the kingdom, a foreign merchant and a weaver, a Neapolitan citizen, chosen by a majority of representatives of the merchant class and the artisan class."
+ FEE_Trade_Goods_Events.1102.OPT1: "Long live the Consulate!"
+
+ FEE_Trade_Goods_Events.1103.T: "Seta per il Nuovo Mondo"
+ FEE_Trade_Goods_Events.1103.D: "With the arrival of the goods from the New World [121.GetName] has seen one of its biggest boost ever registered, we have changed the law about our Consulate such as one of the three consules must be "a foreigner". This professional "citizenship" responds to the massive presence in the city, for business related to silk, of Genoese, Florentines, Bergamo, Spaniards, Dutch, Germans, French, often dedicated to multi-sectoral activities (finance, commerce, manufacturing)."
+ FEE_Trade_Goods_Events.1103.OPT1: "Welcome them all!"
+
+ FEE_Trade_Goods_Events.1104.T: "Nero di Napoli"
+ FEE_Trade_Goods_Events.1104.D: "During the start of the 16th century our lovely city of [121.GetName] has been able to outshine the production of Silk in the rest of Europe with our peculiar 'Neapolitan Black' silk, our own colour, highly valued and searched in the rest of the European market for its stability and brightness. Moreover our production has not only focused on heavy drapes made of thin thread and precious auroseric fabrics, instead we have specialised far before eveyrone else in light silk products made with less valuable raw materials and intended for consumption by the middle segments of the population "
+ FEE_Trade_Goods_Events.1104.OPT1: "We will surclass even the sun."
+
+ FEE_Trade_Goods_Events.1105.T: "Fasto della Seta"
+ FEE_Trade_Goods_Events.1105.D: "The Royal Palace of Caserta, a majestic testament to opulence and grandeur, served as the epicenter of power and prestige, a beacon of civilization in the Southern Italian realm. The realm's prosperity was deeply intertwined with the delicate threads of silk, a cherished commodity coveted by monarchs and nobles alike. Silk was not merely a fabric but a symbol of luxury, a mark of regal distinction. The silkworms, nurtured in the sun-kissed lands of Naples, produced threads of exquisite quality, sought far and wide. The grandeur of the Royal Palace's halls served as a backdrop for the nobility's ceaseless pursuit of ever-more sumptuous silk. They demanded silk of the most delicate and exquisite quality, adorned with patterns that rivaled the heavens. It was a competition of vanity, where each aristocrat sought to outshine the other, their ensembles dazzling in their extravagance. In the Royal Palace of Caserta, the nobility reveled in their silken opulence, oblivious to the strain it placed on the kingdom. The noble quest for more and more silk cast a shadow over the realm, one that would eventually lead to challenges and reckonings in the grand tapestry of Naples' history. The quest for silk became a symbol of the nobility's insatiable desires, their indulgence and extravagance echoing through the annals of time."
+ FEE_Trade_Goods_Events.1105.OPT1: "We will invite every Noble to fast of our Silk!"
+ FEE_Trade_Goods_Events.1105.OPT2: "Keep it modest, my friends."
+
+ FEE_Trade_Goods_Events.1106.T: "Manufactories?"
+ FEE_Trade_Goods_Events.1106.D: "In the latter half of the 17th century, the Kingdom of Naples found itself perched on the precipice of a pivotal decision regarding its cherished silk industry. The emergence of merchant capitalists and their innovative manufactories was not merely a local shift in production but a global transformation that carried far-reaching consequences. Firstly, the new means of production that these merchant capitalists championed posed a direct challenge to Naples' traditional methods. If the kingdom failed to adapt, it risked falling behind as other countries seized upon these new techniques. As the industrial revolution gathered steam, more and more nations were quick to embrace mass production, rapidly increasing their silk output. Naples, mired in tradition, faced the real danger of becoming an antiquated relic in a swiftly changing world.\n Secondly, the consequences of clinging to traditional silk production in the face of the global tide of change could be dire. While Neapolitan silk had long been celebrated for its exceptional quality, it now faced a double-edged sword. Even if it continued to produce silk of the highest caliber, it might find itself outmatched by a flood of cheaper, mass-produced silk entering the market. This influx of silk from more industrially advanced nations could lead to a glut of silk on the international market, driving down prices and undermining the economic foundation of Naples' silk industry. \nThe once-storied Neapolitan silk, renowned for its quality and craftsmanship, teetered on the brink of uncertainty. The decisions made in the coming days would define the kingdom's silk legacy and shape its future. Would Naples embrace innovation and adapt to the changing landscape of global silk production, or would it stubbornly adhere to tradition, risking its very place in the world market? The fate of Neapolitan silk hung in the balance, swaying with the winds of progress and economic survival."
+ FEE_Trade_Goods_Events.1106.OPT1: "Thankfully we are the ones to bring those means to Europe."
+ FEE_Trade_Goods_Events.1106.OPT2: "We will adapt, change is needed..."
+ FEE_Trade_Goods_Events.1106.OPT3: "No, tradition is everything!"
+
+ FEE_Trade_Goods_Events.1107.T: "Seta Seta di Palermo"
+ FEE_Trade_Goods_Events.1107.D: "In [125.GetName], a city bathed in the golden light of the 15th century, a tale of rediscovery was poised to emerge. This noble city, under the rule of the Crown of Aragon, stood on the threshold of a new era. Here, amid the echoes of its silk-laden past, an ancient craft was rekindled. Silk, a delicate treasure from the Orient, had once held Sicily in its embrace during the Arab rule. Those were days of splendor and enchantment when [125.GetName]'s streets teemed with traders from distant lands, bearing gifts of silken marvels. The city's artisans wove intricate patterns, inspired by the exotic tales of Silk Road journeys. As the centuries unfolded, the golden age of silk slowly dimmed. However, during the rule of the Hohenstaufen dynasty, the art of sericulture experienced a revival. These German monarchs recognized the allure and prosperity silk production brought. Yet, like the phases of the moon, the fate of silk waxed and waned. When the Hohenstaufen dynasty yielded its reign in Sicily, the silk industry once again dwindled. The city's reputation in silk production, once illustrious, began to fade, leaving a lingering sense of loss in its cobbled streets. \nIn the year of our Lord, [GetYear], the wise parliament of Sicily convened to debate the kingdom's destiny. Among the voices of merchants, scholars, and nobles, one man, a merchant by the name of Marco di Salvatori, stood with a vision. 'Your Graces,' he began, his voice echoing through the hallowed halls. 'Sicily was once celebrated as a realm of silk and splendor. Our ancestors, in the days of the Arab rule, wove threads of prosperity and artistry. I beseech thee, let us revive the noble craft of sericulture!' \nThe proposal was met with a chorus of murmurs. Many nobles had seen the decline of the once-flourishing trade, and skepticism lingered in the air like a morning fog. Yet, a flicker of hope glimmered in the eyes of some."
+ FEE_Trade_Goods_Events.1107.OPT1: "We should improve cloth production!"
+ FEE_Trade_Goods_Events.1107.OPT2: "Silk is the new gold."
+ FEE_Trade_Goods_Events.1107.OPT3: "Changes are too expensive..."
+
+ FEE_Trade_Goods_Events.1108.T: "Il baco di Messina"
+ FEE_Trade_Goods_Events.1108.D: "In the enchanting city of [124.GetName], a parallel tale of silk's reawakening was etching itself into the annals of history. Like a hidden treasure, [124.GetName] had long held a secret that nature itself had whispered into the soil of this coastal jewel. And now, in the year 1444, that secret was destined to shine like a lustrous pearl. Under Arab rule, [124.GetName]'s sericulture was second to none. The industrious artisans of the city spun tales of fine silk, each thread telling the story of a journey that began in the Far East and found its richest destination in [124.GetName]. The city's silken marvels graced the courts of Europe, whispering the secrets of the Silk Road to those who admired them. Yet, as dynasties changed and empires rose and fell, the echo of silken whispers in [124.GetName] started to fade. The lustrous thread of silk was gradually woven into the tapestry of history, only to be briefly rekindled by the Hohenstaufen monarchs. But like a delicate moth fluttering against the gilded cage of time, the legacy of silk slipped through the city's grasp. It was in 1444, in the grand assembly of [124.GetName], that a vision emerged. Gianluca di Contarini, a passionate merchant, stood before the council and spoke of the city's dormant treasure. 'Esteemed members,' he began, his voice resonating with conviction, 'our forefathers laid the roots of the silkworm's haven in our city. It is time for us to rekindle this legacy.'"
+ FEE_Trade_Goods_Events.1108.OPT1: "We should improve cloth production!"
+ FEE_Trade_Goods_Events.1108.OPT2: "Silk is the new gold."
+ FEE_Trade_Goods_Events.1108.OPT3: "Changes are too expensive..."
+
+ FEE_Trade_Goods_Events.1109.T: "Manifattura Ebraica"
+ FEE_Trade_Goods_Events.1109.D: "The Jews of Messina had a long and rich history in the city, dating back to the 11th century. They were a vibrant and active community, and they played an important role in the city's economy and culture. One of the main areas of Jewish expertise in Messina was silk cultivation and production. The Jews had brought with them the mulberry tree, which is essential for silkworm cultivation, and they had developed a deep understanding of the silk production process. The Jews of Messina owned and operated silk mills, and they were skilled in all aspects of silk production, from silkworm cultivation to weaving and dyeing. They produced a wide range of silk products, including velvet, brocade, and damask. Jewish silk products from Messina were renowned for their high quality and beautiful designs. They were exported all over the Mediterranean and beyond, and they were prized by the nobility and wealthy."
+ FEE_Trade_Goods_Events.1109.OPT1: "From the Giudecca help has come!"
+
+ FEE_Trade_Goods_Events.1110.T: "Manifattura Forestiera"
+ FEE_Trade_Goods_Events.1110.D: "Following the establishment of the silk industry in Palermo in the 15th century, foreign craftsmen came from the major centers of Italy such as Siena, Lucca, Florence, and Milan, as well as from Seville and the Flanders to explore and work on such extravagant work. These craftsmen brought with them a wealth of skills and knowledge, which helped to elevate the quality of Sicilian silk to new heights. They introduced new techniques for weaving, dyeing, and finishing silk fabrics. They also created new designs that were inspired by the different cultures they represented. The arrival of these foreign craftsmen had a significant impact on the silk industry in Palermo. It helped to make Sicilian silk more competitive in the international market. It also helped to create a new generation of skilled Sicilian silk workers. The arrival of foreign craftsmen helped to make Palermo one of the leading centers of silk production in Europe. Sicilian silk was renowned for its high quality, beautiful designs, and wide range of colors. It was exported all over Europe and used to make luxurious garments, tapestries, and other textiles for the nobility and wealthy."
+ FEE_Trade_Goods_Events.1110.OPT1: "The Tuscans will introduce new weaving and dyeing techniques."
+ FEE_Trade_Goods_Events.1110.OPT2: "The Sevillian craftsmen will bring forth the influence of Moorish culture!"
+ FEE_Trade_Goods_Events.1110.OPT3: "The Dutch will help us with tapestry weaving."
+
+ FEE_Trade_Goods_Events.1111.T: "A Jewish Dilemma..."
+ FEE_Trade_Goods_Events.1111.D: "The year 1492 marked a turning point not only for Messina but also for the city of Palermo, where the ramifications of the royal decree from Spain had far-reaching consequences. In Palermo, a thriving center for silk production and a diverse cultural hub, the expulsion of the Jewish community and the dismantling of their vibrant neighborhood had profound effects on the city. The Jewish community had been an integral part of Palermo's social, economic, and cultural fabric for centuries. Their expertise in silk production, commerce, and craftsmanship had significantly contributed to the city's reputation as a silk hub. The Giudecca in Palermo was not just a neighborhood; it was a bustling center of activity, where artisans, merchants, and families had woven together a rich tapestry of life."
+ FEE_Trade_Goods_Events.1111.OPT1: "We will obey the Church."
+ FEE_Trade_Goods_Events.1111.OPT2: "No, our jewish bretherns will continue living in Sicily!"
+
+ FEE_Trade_Goods_Events.1112.T: "End of the Giudecca?"
+ FEE_Trade_Goods_Events.1112.D: "In the fateful year of 1492, a dark and somber decree arrived in the city of Messina, casting a shadow of anguish and upheaval. The royal command from Spain, with its unrelenting force, dictated the dismantling of the Giudecca, the heart of Messina's Jewish community. It demanded the expulsion of the Jewish population from the island of Sicily, a decree that would echo through history. The Giudecca, once a vibrant center of Jewish life, was now marked for dissolution. Its narrow streets, bustling with artisans and merchants, bore witness to generations of Jewish culture, artistry, and commerce. The life and vitality that had coursed through the district were now threatened, as the city's Jewish community faced disbandment."
+ FEE_Trade_Goods_Events.1112.OPT1: "We will obey the Church."
+ FEE_Trade_Goods_Events.1112.OPT2: "No, our jewish bretherns will continue living in Sicily!"
+
+ FEE_Trade_Goods_Events.1113.T: "Ashes on our Silk?"
+ FEE_Trade_Goods_Events.1113.D: "In the latter half of the 16th century, the once-prosperous city of [124.GetName] found itself teetering on the precipice of economic decline. The silk and clothing industry, which had been the lifeblood of the city, was languishing, its fortunes waning like the ashes of Mount Etna's volcanic eruptions over Catania. Urgent action was needed to prevent the city from descending into the annals of history. The decline in trade and production posed a dire threat to [124.GetName]'s prosperity and identity. For generations, the city had been renowned for the exquisite silks and garments it produced. The very name of [124.GetName] had become synonymous with quality and craftsmanship, drawing merchants and traders from near and far. However, the city's workshops and looms now lay silent, their once-vibrant activity replaced by an eerie hush."
+ FEE_Trade_Goods_Events.1113.OPT1: "Let it die, it's worthless anyway."
+ FEE_Trade_Goods_Events.1113.OPT2: "Launch a marketing campaign to promote the sale of Sicilian silk."
+ FEE_Trade_Goods_Events.1113.OPT3: "Provide low-interest loans to silk producers."
+ FEE_Trade_Goods_Events.1113.OPT4: "The Silk Corp could be used to promote the sale of Sicilian silk and clothing."
+
+ FEE_Trade_Goods_Events.1114.T: "The Messina Earthquake"
+ FEE_Trade_Goods_Events.1114.D: "In the year 1693, tragedy struck the city of Messina with unforgiving force. A catastrophic earthquake, like the wrath of an ancient titan, shattered the very foundations of the city. As the earth trembled and buildings crumbled, the heart of Messina was torn asunder, leaving in its wake a scene of devastation. Amidst the rubble and despair, the once-thriving silk production industry of Messina lay in ruins. The looms and workshops, which had once woven tales of artistry and craftsmanship, were now silent, their delicate threads and patterns scattered to the winds. The city's economic lifeblood, the silk trade, faced near-complete obliteration. The earthquake had brought Messina to its knees, robbing the city not only of its architectural splendor but also of its cultural and economic heritage. The intricate silk fabrics that had once adorned the nobility's wardrobes and graced international markets were now lost to the annals of history."
+ FEE_Trade_Goods_Events.1114.OPT1: "This will be renown as a Story of Survival and Strength"
+ FEE_Trade_Goods_Events.1114.OPT2: "Rebuilding the city has its topmost priority."
+
+
+### Cotton Events
+FEE_Trade_Goods_Events.2000.T: "Booming Cotton Industry"
+ FEE_Trade_Goods_Events.2000.D: "Golkonda relies on its diamonds for 90% of its economy, this used to work just fine while part of a larger realm like during the time of the Bahmani and Delhi sultanates. Now that we find ourselves independent we can no longer rely on one thing alone that dictates and controls our entire economy. Thus [Root.Monarch.GetName] has tasked his steward to find something Golkonda is rich in and something we can rely on. After doing an extensive dive in the country of our rather young state it was remarked there is yet hope for the economy of Golkonda. In a report given by the esteemed steward of [Root.Monarch.GetName], it states how there is no crop that grows and flourishes in golconda as well as cotton. This created an opening and a lifeline for our economy. With the Persianate incline for weaving and production of clothes, this shift would compliment the state greatly. The plan was henceforth to produce an exorbitant amount of cotton; what we don't need we will sell in export. What we do need for cloth, clothes and other forms of weaving shall be worked by artisans. Shifting our economy from diamonds to cloth clothing and rugs."
+ FEE_Trade_Goods_Events.2000.OPT1: "Cotton is King!"
+ FEE_Trade_Goods_Events.2000.OPT2: "Diamonds are forever!"
+
+
+### Copper Events
+ FEE_Trade_Goods_Events.3000.T: "Bidriware"
+ FEE_Trade_Goods_Events.3000.D: "In the late 14th century the artisans of Karunadu (Karnataka) under Bahmani patronage started to become famous for their use of White brass. White brass, while not new in fact it had been all but forgotten since antiquity, is a beautiful alloy made from copper zinc and silver. Then it is blackened by fire and polished with the soot that formed on it as the polishing agent. This process is in effect an early form of chroming. After this a process of carving and further inlaying with pure silver would follow. This then again would be followed by another round of smoothing and buffing. Lastly to finish the Bidir they would be oxidised one last time using earth and ammonium chloride. Which would give the White brass a metallic yet matted shine to it while the silver would gleam and glow like stands or pears of moonlight in contrast. This contrats is exactly what made it so beautiful: the full shimmer of the silver combined with the sparkling effect of white brass. The art form became extremely popular locally in the 14th century, but by the end of the 14th century it would become renowned all over India, the middle east, east africa, parts of indo china and even russia. This made the silversmith of Bidar famous throughout all of Asia not only for their precision work but for crafting artefacts that seemed to go beyond what was thought possible with the metals in question. The Bahmani sultans would for this reason decree a new set of laws that fully functions to protect the Bidri smiths. They would be exempted from tax protected by the state, this meant that stealing, killing, refusing to pay or committing any form of crime was punishable by death. In return they would have to uphold a very high standard which would be policed by an entity that functioned extremely close to what in europe would be called artisans guild."
+ FEE_Trade_Goods_Events.3000.OPT1: "Bidir is just so beautiful."
+ FEE_Trade_Goods_Events.3000.OPT2: "Not enough Gold, my Lord."
+
+ FEE_Trade_Goods_Events.3001.T: "Copper Mines of Røros"
+ FEE_Trade_Goods_Events.3001.D: "In the 16s, several copper mines were established in the area around the town of Røros. While it initially provided a poor yield, eventually the valuable veins would open for mining, and soon the mining company was financially secure. The 17th and 18th century would see the continued expansion of the mines, and the development of local industry to support them."
+ FEE_Trade_Goods_Events.3001.OPT1: "Dig deep and greedily."
+ FEE_Trade_Goods_Events.3001.OPT2: "Sell off the mining rights."
+
+### Slave Events
+ FEE_Trade_Goods_Events.4000.T: "Noli the Slave Trader"
+ FEE_Trade_Goods_Events.4000.D: "In the year of our Lord 1466, Antonio Noli, an astute maritime entrepreneur, surveyed the burgeoning trade of slaves from Africa into the Mediterranean Sea. Recognizing the economic potential and the demand for this labor force, he conceived a proposal to monopolize this trade. Gathering before the Genovese council, Antonio unfolded his vision—a monopolistic venture that would consolidate the trade of African slaves under Genoa's control. With calculated persuasion, he detailed the potential profits and strategic advantages this monopoly could bring. The economic landscape of the Mediterranean, he argued, could be shaped by Genoa's dominance in this lucrative enterprise. As the council deliberated, the notion of monopolizing the slave trade stirred ethical and pragmatic considerations. Antonio, however, envisioned the venture not merely as a means of financial gain but as a strategic move that would elevate Genoa's influence in the Mediterranean and beyond. The outcome of this proposal hung in the balance—a decision that would shape not only the economic destiny of Genoa but also the moral compass of a city at the crossroads of commerce and conscience. Antonio Noli's proposition, a daring play in the game of trade and power, awaited its verdict in the grand chambers of Genoa's council."
+ FEE_Trade_Goods_Events.4000.OPT1: "The ships to guide them will be ours."
+ FEE_Trade_Goods_Events.4000.OPT2: "In God's name remove him from my sight!"
+
+### Sugar Events
+ FEE_Trade_Goods_Events.5000.T: "Sugar Cultivation in Brazil"
+ FEE_Trade_Goods_Events.5000.D: "Once a luxury only imported over harsh land routes from the East, sugarcane has found a favorable climate in our new colonies and is proving to be more profitable than anyone could have imagined as it becomes accessible to the public for the first time. \nOur colony in Brazil especially is beginning to find great success in growing this crop. Let's hope no one steals our success..."
+ FEE_Trade_Goods_Events.5000.OPT1: "Sweet!"
 
 # Modifiers
  fee_trade_goods_cocoa_trade: "Cocoa trade"
@@ -102,6 +213,33 @@
 
  fee_trade_goods_silk_ghent: "Silk of Ghent"
 
+ fee_trade_goods_catanzaro_seta: "Seta di Catanzaro"
+ desc_fee_nap_catanzaro_seta: ""
+ fee_trade_goods_foreign_craftsman: "Foreign Craftsman"
+ desc_fee_nap_silk_foreign_craftsman: ""
+ fee_trade_goods_consolato_seta: "Consolato della Seta"
+ desc_fee_nap_silk_consolato_seta: ""
+ fee_trade_goods_silk_new_world: "Silk for the New World"
+ desc_fee_nap_silk_new_world: ""
+ fee_trade_goods_neapolitan_black: "Neapolitan Black"
+ desc_fee_nap_neapolitan_black: ""
+
+ fee_trade_goods_foreign_craftsman_palermo: "Foreign Craftsman"
+ desc_fee_nap_silk_foreign_craftsman_palermo: ""
+ fee_trade_goods_jewish_craftsman_messina: "Jewish Craftsman"
+ desc_fee_nap_silk_jewish_craftsman_messina: ""
+ fee_trade_goods_refugess_from_palermo: "Refugees from Palermo"
+ desc_fee_nap_catanzaro_seta_jews_palermo: ""
+ fee_trade_goods_refugees_messina: "Refugees from Messina"
+ desc_fee_nap_catanzaro_seta_jews_messina: ""
+
  fee_trade_goods_dependence_on_diamonds: "Dependence on Diamonds"
 
+ fee_trade_goods_sugar_rush: "Sugar Rush"
+
 # Tooltips
+ FEE_TRADE_GOODS_SILK_FOREIGN_CRAFTSMAN_PALERMO_TUSCAN_TT: "Every §YTuscan§! country will be welcomed to hear about our mutal help!"
+ FEE_TRADE_GOODS_SILK_FOREIGN_CRAFTSMAN_PALERMO_MOORISH_TT: "§YMoors§! from North Africa will be back in Sicily!"
+ FEE_TRADE_GOODS_SILK_FOREIGN_CRAFTSMAN_PALERMO_DUTCH_TT: "The §YDutch§! will be delighted by this!"
+
+ fee_until_trade_goods_swap_desc: "Until change of trade good."
