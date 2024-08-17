@@ -271,19 +271,19 @@ country_decisions = {
 				change_trade_goods = coffee
 				add_base_production = 3
 				add_province_modifier = {
-					name = fee_coffee_first_italian_coffee_plantation_modifier
+					name = fee_trade_goods_first_italian_coffee_plantation_modifier
 					duration = 5475
 				}
 				random = {
 					chance = 25
 					add_province_modifier = {
-						name = fee_coffee_failing_coffee_plantation_modifier
+						name = fee_trade_goods_failing_coffee_plantation_modifier
 						duration = 5475
 					}
 					add_province_modifier = {
-						name = fee_coffee_catastrophical_monoculture_failure_modifier
+						name = fee_trade_goods_catastrophical_monoculture_failure_modifier
 						duration = -1
-						desc = fee_coffee_catastrophical_monoculture_failure_modifier_duration_tt
+						desc = fee_trade_goods_catastrophical_monoculture_failure_modifier_duration_tt
 					}
 				}
 			}
@@ -383,8 +383,8 @@ country_decisions = {
 						province_id = 4733
 					}
 					OR = {
-						has_province_modifier = fee_coffee_first_italian_coffee_plantation_modifier
-						has_province_modifier = fee_coffee_po_valley_coffee_growth_modifier
+						has_province_modifier = fee_trade_goods_first_italian_coffee_plantation_modifier
+						has_province_modifier = fee_trade_goods_po_valley_coffee_growth_modifier
 					}
 				}
 			}
@@ -583,52 +583,52 @@ country_decisions = {
 			custom_trigger_tooltip = {
 				tooltip = fee_expand_coffee_cultivation_decision_trigger_tt
 				2983 = {
-					NOT = { has_province_modifier = fee_coffee_first_italian_coffee_plantation_modifier }
-					NOT = { has_province_modifier = fee_coffee_po_valley_coffee_growth_modifier }
+					NOT = { has_province_modifier = fee_trade_goods_first_italian_coffee_plantation_modifier }
+					NOT = { has_province_modifier = fee_trade_goods_po_valley_coffee_growth_modifier }
 				}
 				1934 = {
-					NOT = { has_province_modifier = fee_coffee_first_italian_coffee_plantation_modifier }
-					NOT = { has_province_modifier = fee_coffee_po_valley_coffee_growth_modifier }
+					NOT = { has_province_modifier = fee_trade_goods_first_italian_coffee_plantation_modifier }
+					NOT = { has_province_modifier = fee_trade_goods_po_valley_coffee_growth_modifier }
 				}
 				2984 = {
-					NOT = { has_province_modifier = fee_coffee_first_italian_coffee_plantation_modifier }
-					NOT = { has_province_modifier = fee_coffee_po_valley_coffee_growth_modifier }
+					NOT = { has_province_modifier = fee_trade_goods_first_italian_coffee_plantation_modifier }
+					NOT = { has_province_modifier = fee_trade_goods_po_valley_coffee_growth_modifier }
 				}
 				123 = {
-					NOT = { has_province_modifier = fee_coffee_first_italian_coffee_plantation_modifier }
-					NOT = { has_province_modifier = fee_coffee_po_valley_coffee_growth_modifier }
+					NOT = { has_province_modifier = fee_trade_goods_first_italian_coffee_plantation_modifier }
+					NOT = { has_province_modifier = fee_trade_goods_po_valley_coffee_growth_modifier }
 				}
 				121 = {
-					NOT = { has_province_modifier = fee_coffee_first_italian_coffee_plantation_modifier }
-					NOT = { has_province_modifier = fee_coffee_po_valley_coffee_growth_modifier }
+					NOT = { has_province_modifier = fee_trade_goods_first_italian_coffee_plantation_modifier }
+					NOT = { has_province_modifier = fee_trade_goods_po_valley_coffee_growth_modifier }
 				}
 				124 = {
-					NOT = { has_province_modifier = fee_coffee_first_italian_coffee_plantation_modifier }
-					NOT = { has_province_modifier = fee_coffee_po_valley_coffee_growth_modifier }
+					NOT = { has_province_modifier = fee_trade_goods_first_italian_coffee_plantation_modifier }
+					NOT = { has_province_modifier = fee_trade_goods_po_valley_coffee_growth_modifier }
 				}
 				125 = {
-					NOT = { has_province_modifier = fee_coffee_first_italian_coffee_plantation_modifier }
-					NOT = { has_province_modifier = fee_coffee_po_valley_coffee_growth_modifier }
+					NOT = { has_province_modifier = fee_trade_goods_first_italian_coffee_plantation_modifier }
+					NOT = { has_province_modifier = fee_trade_goods_po_valley_coffee_growth_modifier }
 				}
 				4736 = {
-					NOT = { has_province_modifier = fee_coffee_first_italian_coffee_plantation_modifier }
-					NOT = { has_province_modifier = fee_coffee_po_valley_coffee_growth_modifier }
+					NOT = { has_province_modifier = fee_trade_goods_first_italian_coffee_plantation_modifier }
+					NOT = { has_province_modifier = fee_trade_goods_po_valley_coffee_growth_modifier }
 				}
 				4737 = {
-					NOT = { has_province_modifier = fee_coffee_first_italian_coffee_plantation_modifier }
-					NOT = { has_province_modifier = fee_coffee_po_valley_coffee_growth_modifier }
+					NOT = { has_province_modifier = fee_trade_goods_first_italian_coffee_plantation_modifier }
+					NOT = { has_province_modifier = fee_trade_goods_po_valley_coffee_growth_modifier }
 				}
 				2982 = {
-					NOT = { has_province_modifier = fee_coffee_first_italian_coffee_plantation_modifier }
-					NOT = { has_province_modifier = fee_coffee_po_valley_coffee_growth_modifier }
+					NOT = { has_province_modifier = fee_trade_goods_first_italian_coffee_plantation_modifier }
+					NOT = { has_province_modifier = fee_trade_goods_po_valley_coffee_growth_modifier }
 				}
 				4734 = {
-					NOT = { has_province_modifier = fee_coffee_first_italian_coffee_plantation_modifier }
-					NOT = { has_province_modifier = fee_coffee_po_valley_coffee_growth_modifier }
+					NOT = { has_province_modifier = fee_trade_goods_first_italian_coffee_plantation_modifier }
+					NOT = { has_province_modifier = fee_trade_goods_po_valley_coffee_growth_modifier }
 				}
 				4733 = {
-					NOT = { has_province_modifier = fee_coffee_first_italian_coffee_plantation_modifier }
-					NOT = { has_province_modifier = fee_coffee_po_valley_coffee_growth_modifier }
+					NOT = { has_province_modifier = fee_trade_goods_first_italian_coffee_plantation_modifier }
+					NOT = { has_province_modifier = fee_trade_goods_po_valley_coffee_growth_modifier }
 				}
 			}
 			naples_area = {
@@ -866,7 +866,7 @@ country_decisions = {
 				change_trade_goods = coffee
 				add_base_production = 2
 				add_province_modifier = {
-					name = fee_coffee_po_valley_coffee_growth_modifier
+					name = fee_trade_goods_po_valley_coffee_growth_modifier
 					duration = 5475
 				}
 			}
@@ -1054,13 +1054,13 @@ country_decisions = {
 		}
 		effect = {
 			set_global_flag = fee_instituted_coffee_italica
-			country_event = { id = FEE_Coffee_Events.2 }
+			country_event = { id = FEE_Trade_Goods_Events.6001 }
 			hidden_effect = {
 				every_province = {
 					limit = {
-						has_province_modifier = fee_coffee_catastrophical_monoculture_failure_modifier
+						has_province_modifier = fee_trade_goods_catastrophical_monoculture_failure_modifier
 					}
-					remove_province_modifier = fee_coffee_catastrophical_monoculture_failure_modifier
+					remove_province_modifier = fee_trade_goods_catastrophical_monoculture_failure_modifier
 				}
 			}
 		}

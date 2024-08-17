@@ -1,4 +1,19 @@
 ﻿l_english:
+
+### Decisions:
+ fee_import_coffee_seeds_decision_title: "Import Coffee Seeds"
+ fee_import_coffee_seeds_decision_desc: "By importing Coffee Seeds we can lay the foundations of a domestic Coffee Economy, but this path won't be cheap or easy."
+ fee_expand_coffee_cultivation_decision_title: "Expand Coffee Cultivation"
+ fee_expand_coffee_cultivation_decision_desc: "With our initial successes in our first plantation means we should attempt to expand this industry."
+ fee_institute_coffee_italica_decision_title: "Institute Coffee Italica"
+ fee_institute_coffee_italica_decision_desc: "We have invited experts from all across the Mediterranean to evaluate and identify the plants that have become endemic to our plantations. They confirmed that the local climat combined with crossbreeding various imported plants has resulted in a completely new variant of Coffee."
+
+ fee_import_coffee_seeds_decision_trigger_tt_1: "Have Expanded Infratructure at least §Y1§! time in each of the following provinces: §Y[2983.GetName]§!, §Y[1934.GetName]§!, §Y[2984.GetName]§!, §Y[123.GetName]§!, §Y[121.GetName]§!, §Y[124.GetName]§!, §Y[125.GetName]§!, §Y[4736.GetName]§!, §Y[4737.GetName]§!, §Y[2982.GetName]§!, §Y[4734.GetName]§! and §Y[4733.GetName]§!"
+ fee_import_coffee_seeds_decision_trigger_tt_2: "Have at least §Y20§! development in each of the following provinces: §Y[2983.GetName]§!, §Y[1934.GetName]§!, §Y[2984.GetName]§!, §Y[123.GetName]§!, §Y[121.GetName]§!, §Y[124.GetName]§!, §Y[125.GetName]§!, §Y[4736.GetName]§!, §Y[4737.GetName]§!, §Y[2982.GetName]§!, §Y[4734.GetName]§! and §Y[4733.GetName]§!"
+ fee_expand_coffee_cultivation_decision_trigger_tt: "§Y[2983.GetName]§!, §Y[1934.GetName]§!, §Y[2984.GetName]§!, §Y[123.GetName]§!, §Y[121.GetName]§!, §Y[124.GetName]§!, §Y[125.GetName]§!, §Y[4736.GetName]§!, §Y[4737.GetName]§!, §Y[2982.GetName]§!, §Y[4734.GetName]§! and §Y[4733.GetName]§! do NOT have the modifier '§YFirst Italian Coffee Plantation§!' or '§YItalian Coffee Growth'§!"
+ fee_institute_coffee_italica_decision_trigger_tt: "Have a §YManufactory§! and the trade good be §YCoffee§! in each of the following provinces: §Y[2983.GetName]§!, §Y[1934.GetName]§!, §Y[2984.GetName]§!, §Y[123.GetName]§!, §Y[121.GetName]§!, §Y[124.GetName]§!, §Y[125.GetName]§!, §Y[4736.GetName]§!, §Y[4737.GetName]§!, §Y[2982.GetName]§!, §Y[4734.GetName]§! and §Y[4733.GetName]§!"
+ fee_trade_goods_catastrophical_monoculture_failure_modifier_duration_tt: "until we enact the '§YInstitute Coffee Italica§!' decision"
+
 ### Chocolate Events
 FEE_Trade_Goods_Events.1.T: "Chocolate!"
  FEE_Trade_Goods_Events.1.D: "The word “chocolate” is not new. A heated mixture of cacao and water called “cacahuatl” had been drunk by the Mesoamericans for millennia. It was first brought over to Europe by Spanish conquistadors in 1528, but due to its popularity in the royal court, its spread was initially limited. It was in Spain where the first addition of sugar to the beverage occurred. At first used only by the court, it spread from there to nunneries where it was deemed as medicine as well as an aid to fasting since it was not considered food. It quickly boomed in popularity among Spanish nobility as well. While hot chocolate never really took hold in the Low Countries the way it did elsewhere, Flemish and Dutch trading companies began smuggling their own supply of cacao into Europe to profit off the growing demand. \nA breakthrough for chocolate came in [GetYear], when a group of Flemish traders created their own company to import cacao to [90.GetName]. That company first developed the process of roasting and fermenting cocoa beans in discarded beer brewing vats to make solid cocoa butter. While not yet an edible candy, it made for easier transport, use in medicine, and shelf life, and made Brugge the center of cocoa trade in Europe"
@@ -173,6 +188,20 @@ FEE_Trade_Goods_Events.2000.T: "Booming Cotton Industry"
  FEE_Trade_Goods_Events.5000.D: "Once a luxury only imported over harsh land routes from the East, sugarcane has found a favorable climate in our new colonies and is proving to be more profitable than anyone could have imagined as it becomes accessible to the public for the first time. \nOur colony in Brazil especially is beginning to find great success in growing this crop. Let's hope no one steals our success..."
  FEE_Trade_Goods_Events.5000.OPT1: "Sweet!"
 
+### Coffee
+ FEE_Trade_Goods_Events.6000.T: "Coffee Plant smuggled into Italy"
+ FEE_Trade_Goods_Events.6000.D: "The Coffee bean has once been a coveted secret of Yemen and Ethiopia with live plants being guarded better than the lives of some Kings. However when the Dutch managed to steal one it set in motion an industry that would fuel the scholars for centuries to come, and one of those plants has reached our court."
+ FEE_Trade_Goods_Events.6000.OPT1: "Sell it! We have no other use for it."
+ FEE_Trade_Goods_Events.6000.OPT2: "This would be a fine way to start an exotic garden."
+
+ FEE_Trade_Goods_Events.6001.T: "The Birth of the Coffee Italica"
+ FEE_Trade_Goods_Events.6001.D: "Coffee has become a staple export of southern Italy, but with this new strain of coffee identified we are approaching unmatched prosperity and we have to make a decision on how to proceed from our position."
+ FEE_Trade_Goods_Events.6001.OPT1: "As the Arabs before we should guard the secret closely."
+ FEE_Trade_Goods_Events.6001.OPT2: "We should share our Secrets for the sake of Coffee."
+
+ FEE_Trade_Goods_Events.6001.tt.1: "Every owned province producing §YCoffee§! gets '§YCoffee Italica§!' until the end of the game, giving the following effects: \nLocal Goods Produced: §G+3.00§!\n"
+ FEE_Trade_Goods_Events.6001.tt.2: "Every owned province producing §YCoffee§! gets '§YCoffee Italica§!' until the end of the game, giving the following effects: \nLocal Goods Produced: §G+1.00§!\n"
+
 # Modifiers
  fee_trade_goods_cocoa_trade: "Cocoa trade"
  desc_fee_trade_goods_cocoa_trade: ""
@@ -236,6 +265,15 @@ FEE_Trade_Goods_Events.2000.T: "Booming Cotton Industry"
  fee_trade_goods_dependence_on_diamonds: "Dependence on Diamonds"
 
  fee_trade_goods_sugar_rush: "Sugar Rush"
+
+### Coffee:
+ fee_trade_goods_exotic_garden_modifier: "Exotic Garden"
+ fee_trade_goods_first_italian_coffee_plantation_modifier: "First Italian Coffee Plantation"
+ fee_trade_goods_failing_coffee_plantation_modifier: "Failing Coffee Plantation"
+ fee_trade_goods_catastrophical_monoculture_failure_modifier: "Catastrophic Monoculture Failure"
+ fee_trade_goods_po_valley_coffee_growth_modifier: "Italian Coffee Growth"
+ fee_trade_goods_coffee_italica_modifier_1: "Coffee Italica"
+ fee_trade_goods_coffee_italica_modifier_2: "Coffee Italica"
 
 # Tooltips
  FEE_TRADE_GOODS_SILK_FOREIGN_CRAFTSMAN_PALERMO_TUSCAN_TT: "Every §YTuscan§! country will be welcomed to hear about our mutal help!"
