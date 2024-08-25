@@ -12,11 +12,7 @@ country_event = {
 	trigger = {
 		owns_or_non_sovereign_subject_of = 2099
 		primary_culture = sinhala
-		OR = {
-			religion = buddhism
-			religion = vajrayana
-			religion = mahayana
-		}
+		emf_religion_is_buddhist = yes
 		current_age = age_of_discovery
 	}
 
@@ -175,11 +171,7 @@ country_event = {
 		add_karma = -15
 		every_country = {
 			limit = {
-				OR = {
-					religion = buddhism
-					religion = vajrayana
-					religion = mahayana
-				}
+				emf_religion_is_buddhist = yes
 			}
 			add_opinion = {
 				who = ROOT

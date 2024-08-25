@@ -1,0 +1,7 @@
+emf_religion_is_buddhist = {
+	OR = {
+		religion = buddhism
+		religion = vajrayana
+		religion = mahayana
+	}
+}
