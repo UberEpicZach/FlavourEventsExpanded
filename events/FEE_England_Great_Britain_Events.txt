@@ -205,10 +205,6 @@ country_event = {
 		owns_or_subject_of = 4378
 	}
 
-	mean_time_to_happen = {
-		months = 1
-	}
-
 	option = {
 		name = FEE_England_Great_Britain_Events.4.OPT1
 
@@ -315,10 +311,6 @@ country_event = {
 			value = 2
 			culture = highland_scottish
 		}
-	}
-
-	mean_time_to_happen = {
-		months = 1
 	}
 
 	option = {
@@ -612,10 +604,6 @@ country_event = {
 		num_of_loans = 2
 	}
 
-	mean_time_to_happen = {
-		months = 1
-	}
-
 	option = {
 		name = FEE_England_Great_Britain_Events.8.OPT1
 
@@ -700,10 +688,6 @@ country_event = {
 			}
 		}
 		is_year = 1500
-	}
-
-	mean_time_to_happen = {
-		months = 1
 	}
 
 	immediate = {
@@ -804,10 +788,6 @@ province_event = {
 		is_state = yes
 	}
 
-	mean_time_to_happen = {
-		months = 1
-	}
-
 	immediate = {
 		hidden_effect = {
 			add_province_modifier = {
@@ -845,10 +825,6 @@ province_event = {
 				}
 			}
 		}
-	}
-
-	mean_time_to_happen = {
-		months = 1
 	}
 
 	immediate = {

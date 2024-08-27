@@ -62,11 +62,8 @@ country_event = {
 	title = FEE_Russia_Events.2.T
 	desc = FEE_Russia_Events.2.D
 	picture = COURT_eventPicture
-	fire_only_once = yes
 
-	mean_time_to_happen = {
-		months = 1
-	}
+	fire_only_once = yes
 
 	trigger = {
 		tag = RUS
@@ -82,6 +79,10 @@ country_event = {
 		owns = 19
 		owns = 4113
 		owns = 4152
+	}
+
+	mean_time_to_happen = {
+		months = 12
 	}
 
 	option = {

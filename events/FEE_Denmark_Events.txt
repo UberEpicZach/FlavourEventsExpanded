@@ -515,10 +515,6 @@ country_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		days = 10
-	}
-
 	immediate = {
 		hidden_effect = {
 			remove_country_modifier = fee_dan_danish_absolutism
@@ -542,10 +538,6 @@ country_event = {
 	trigger = {
 		tag = SCA
 		has_ruler_flag = fee_danish_elective
-	}
-
-	mean_time_to_happen = {
-		days = 1
 	}
 
 	option = {

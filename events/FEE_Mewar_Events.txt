@@ -182,10 +182,6 @@ country_event = {
 		dip = 5
 	}
 
-	mean_time_to_happen = {
-		days = 20
-	}
-
 	option = {
 		name = FEE_Mewar_Events.3.OPT1
 		add_country_modifier = {
@@ -224,10 +220,6 @@ country_event = {
 		exists = MER
 	}
 
-	mean_time_to_happen = {
-		days = 20
-	}
-
 	option = {
 		name = FEE_Mewar_Events.4.OPT1
 
@@ -256,10 +248,6 @@ country_event = {
 		tag = MAW
 		has_ruler = "Jodha"
 		dynasty = "Rathore"
-	}
-
-	mean_time_to_happen = {
-		days = 1
 	}
 
 	immediate = {

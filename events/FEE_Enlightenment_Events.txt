@@ -16,10 +16,6 @@ country_event = {
 		has_first_revolution_started = no
 	}
 
-	mean_time_to_happen = {
-		months = 1
-	}
-
 	immediate = {
 		set_country_flag = fee_enlightenment_had_start_of_enlightenment
 	}

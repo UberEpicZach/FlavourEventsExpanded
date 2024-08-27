@@ -459,10 +459,6 @@ country_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		days = 30
-	}
-
 	option = {
 		name = FEE_Ansbach_Events.9.OPT1
 		ai_chance = {
@@ -556,10 +552,6 @@ country_event = {
 				value = 2
 			}
 		}
-	}
-
-	mean_time_to_happen = {
-		days = 30
 	}
 
 	option = {

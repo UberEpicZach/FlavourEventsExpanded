@@ -12,10 +12,6 @@ country_event = {
 		NOT = { has_country_flag = fee_child_of_destiny_event_1 }
 	}
 
-	mean_time_to_happen = {
-		days = 5
-	}
-
 	immediate = {
 		hidden_effect = {
 			set_country_flag = fee_child_of_destiny_event_1
@@ -284,10 +280,6 @@ country_event = {
 		heir_age = 14
 	}
 
-	mean_time_to_happen = {
-		days = 1
-	}
-
 	option = {
 		name = FEE_Child_of_Destiny_Events.10.OPT1
 
@@ -309,10 +301,6 @@ country_event = {
 	trigger = {
 		has_ruler_flag = fee_child_of_destiny
 		NOT = { has_ruler_flag = fee_child_of_destiny_event_2 }
-	}
-
-	mean_time_to_happen = {
-		days = 1
 	}
 
 	immediate = {

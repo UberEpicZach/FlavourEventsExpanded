@@ -280,10 +280,6 @@ country_event = {
 
 	is_triggered_only = yes
 
-	mean_time_to_happen = {
-		days = 1
-	}
-
 	option = {
 		name = FEE_Hungary_Events.6.OPT1
 		ai_chance = {
@@ -601,10 +597,6 @@ country_event = {
 		dynasty = "Hunyadi"
 	}
 
-	mean_time_to_happen = {
-		days = 30
-	}
-
 	option = {
 		name = FEE_Hungary_Events.12.OPT1
 
@@ -834,10 +826,6 @@ country_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		days = 1
-	}
-
 	option = {
 		name = FEE_Hungary_Events.15.OPT1
 		ai_chance = {
@@ -1035,10 +1023,6 @@ country_event = {
 				num_of_rebel_controlled_provinces = 1
 			}
 		}
-	}
-
-	mean_time_to_happen = {
-		days = 30
 	}
 
 	option = {

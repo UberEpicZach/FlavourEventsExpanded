@@ -28,7 +28,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 1
+		months = 9
 	}
 
 	option = {
@@ -68,7 +68,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 1
+		months = 9
 	}
 
 	option = {
@@ -334,10 +334,6 @@ country_event = {
 		num_of_loans = 1
 	}
 
-	mean_time_to_happen = {
-		months = 1
-	}
-
 	option = {
 		name = FEE_Meme_Events.9.OPT1
 
@@ -407,10 +403,6 @@ country_event = {
 	trigger = {
 		has_global_flag = fee_meme_active
 		has_institution = industrialization
-	}
-
-	mean_time_to_happen = {
-		months = 1
 	}
 
 	option = {

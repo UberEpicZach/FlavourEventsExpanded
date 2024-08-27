@@ -501,6 +501,7 @@ country_event = {
 	title = FEE_Scotland_Events.7.T
 	desc = FEE_Scotland_Events.7.D
 	picture = BATTLE_eventPicture
+
 	trigger = {
 		tag = SCO
 		is_year = 1444
@@ -519,10 +520,9 @@ country_event = {
 			war_score = -25
 		}
 	}
-	mean_time_to_happen = {
-		days = 1
-	}
+
 	fire_only_once = yes
+
 	option = {
 		name = FEE_Scotland_Events.7.OPT1
 		custom_tooltip = FEE_Scotland_Events.7.OPT1.TT

@@ -22,10 +22,6 @@ country_event = {
 
 	fire_only_once = yes
 
-	mean_time_to_happen = {
-		months = 1
-	}
-
 	immediate = {
 		hidden_effect = {
 			set_country_flag = fee_hungary_corvinus
@@ -229,10 +225,6 @@ country_event = {
 	}
 
 	fire_only_once = yes
-
-	mean_time_to_happen = {
-		days = 30
-	}
 
 	option = {
 		name = FEE_Bohemia_Events.5.OPT1
@@ -725,10 +717,6 @@ country_event = {
 		}
 		is_year = 1720
  	}
-
-	mean_time_to_happen = {
-		days = 1
-	}
 
 	option = {
 		name = FEE_Bohemia_Events.13.OPT1 #Will we ever recover?

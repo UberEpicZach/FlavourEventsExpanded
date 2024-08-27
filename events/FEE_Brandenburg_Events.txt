@@ -26,10 +26,6 @@ country_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		days = 30
-	}
-
 	option = {
 		name = FEE_Brandenburg_Events.1.OPT1
 		ai_chance = {
@@ -83,10 +79,6 @@ country_event = {
 				}
 			}
 		}
-	}
-
-	mean_time_to_happen = {
-		days = 30
 	}
 
 	immediate = {
@@ -1501,10 +1493,6 @@ country_event = {
 			}
 			had_recent_war = 1
 		}
-	}
-
-	mean_time_to_happen = {
-		days = 1
 	}
 
 	major = yes
@@ -3754,10 +3742,6 @@ country_event = {
 
 	fire_only_once = yes
 
-	mean_time_to_happen = {
-		days = 30
-	}
-
 	option = {
 		name = FEE_Brandenburg_Events.60.OPT1
 		ai_chance = {
@@ -3819,10 +3803,6 @@ country_event = {
 
 	fire_only_once = yes
 
-	mean_time_to_happen = {
-		days = 30
-	}
-
 	option = {
 		name = FEE_Brandenburg_Events.61.OPT1
 		ai_chance = {
@@ -3868,10 +3848,6 @@ country_event = {
 	}
 
 	fire_only_once = yes
-
-	mean_time_to_happen = {
-		days = 30
-	}
 
 	option = {
 		name = FEE_Brandenburg_Events.62.OPT1

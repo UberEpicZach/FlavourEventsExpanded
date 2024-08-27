@@ -403,10 +403,6 @@ country_event = {
 		has_country_flag = fee__bill_event_fired
 	}
 
-	mean_time_to_happen = {
-		months = 1
-	}
-
 	immediate = {
 		hidden_effect = {
 			set_global_flag = fee_gel_guelders_wars_start

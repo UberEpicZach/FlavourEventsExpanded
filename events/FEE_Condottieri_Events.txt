@@ -180,7 +180,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 6
+		months = 9
 	}
 
 	major = yes
@@ -261,7 +261,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 6
+		months = 9
 	}
 
 	goto = 105
@@ -307,7 +307,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 6
+		months = 9
 	}
 
 	major = yes
@@ -462,7 +462,7 @@ country_event = {
 	goto = 121
 
 	mean_time_to_happen = {
-		months = 6
+		months = 9
 	}
 
 	option = {
@@ -554,10 +554,6 @@ country_event = {
 		NOT = { is_year = 1446 }
 	}
 
-	mean_time_to_happen = {
-		days = 30
-	}
-
 	immediate = {
 		hidden_effect = {
 			set_country_flag = fee_condottiero_michele_attendolo
@@ -607,10 +603,6 @@ country_event = {
 		}
 		is_year = 1442
 		NOT = { is_year = 1452 }
-	}
-
-	mean_time_to_happen = {
-		days = 15
 	}
 
 	goto = 1862
@@ -875,10 +867,6 @@ country_event = {
 		NOT = { is_year = 1448 }
 	}
 
-	mean_time_to_happen = {
-		days = 30
-	}
-
 	immediate = {
 		hidden_effect = {
 			set_country_flag = fee_condottiero_bartolomeo_colleoni
@@ -940,10 +928,6 @@ country_event = {
 		exists = VEN
 		is_year = 1448
 		NOT = { is_year = 1452 }
-	}
-
-	mean_time_to_happen = {
-		days = 30
 	}
 
 	option = {
@@ -1030,10 +1014,6 @@ country_event = {
 		exists = BUR
 		is_year = 1471
 		NOT = { is_year = 1475 }
-	}
-
-	mean_time_to_happen = {
-		days = 30
 	}
 
 	option = {
@@ -1257,10 +1237,6 @@ country_event = {
 		owns = 121
 		is_year = 1447
 		NOT = { is_year = 1448 }
-	}
-
-	mean_time_to_happen = {
-		days = 30
 	}
 
 	immediate = {

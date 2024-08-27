@@ -94,10 +94,6 @@ country_event = {
 		NOT = { num_of_cities = 6 }
 	}
 
-	mean_time_to_happen = {
-		days = 3
-	}
-
 	option = {
 		name = FEE_Swabia_Events.2.OPT1		# We will join this defensive league.
 		ai_chance = {

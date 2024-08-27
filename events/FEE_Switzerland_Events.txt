@@ -510,10 +510,6 @@ country_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		months = 1
-	}
-
 	option = {
 		name = FEE_Switzerland_Events.11.OPT1
 
@@ -642,7 +638,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 1
+		months = 12
 	}
 
 	immediate = {

@@ -76,10 +76,6 @@ country_event = {
 		is_at_war = yes
 	}
 
-	mean_time_to_happen = {
-		days = 1
-	}
-
 	major = yes
 	major_trigger = {
 		war_with = ROOT
@@ -131,10 +127,6 @@ country_event = {
 		}
 	}
 
-	mean_time_to_happen = {
-		months = 1
-	}
-
 	major = yes
 	major_trigger = {
 		has_country_modifier = fee_mlo_condottieri_rivalry
@@ -171,10 +163,6 @@ country_event = {
 			had_country_flag = { flag = sforza_hired days = 700 }   # this is required for event ambrosian_republic.6 
 			NOT = { has_country_flag = mlo_military_rule } # this mean that you have not chosen the first option... although it might fire too fast [like first, so we could just increase the first days]			
 		}
-	}
-
-	mean_time_to_happen = {
-		months = 1
 	}
 
 	goto = 2977

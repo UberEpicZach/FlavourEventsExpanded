@@ -79,10 +79,6 @@ country_event = {
 		NOT = { has_country_flag = fee_partition_of_poland_first_neighbor_notification }
 	}
 
-	mean_time_to_happen = {
-		months = 1
-	}
-
 	immediate = {
 		hidden_effect = {
 			set_country_flag = fee_partition_of_poland_first_neighbor_notification
@@ -132,10 +128,6 @@ country_event = {
 		}
 		NOT = { has_disaster = fee_partition_of_poland }
 		NOT = { has_country_flag = fee_partition_of_poland_second_neighbor_notification }
-	}
-
-	mean_time_to_happen = {
-		months = 1
 	}
 
 	immediate = {
@@ -192,10 +184,6 @@ country_event = {
 				value = 1
 			}
 		}
-	}
-
-	mean_time_to_happen = {
-		months = 1
 	}
 
 	immediate = {
@@ -1083,10 +1071,6 @@ country_event = {
 				owned_by = ROOT
 			}
 		}
-	}
-
-	mean_time_to_happen = {
-		months = 1
 	}
 
 	immediate = {
