@@ -528,6 +528,7 @@ country_event = {
 		is_or_was_tag = { tag = JFN }
 		any_country = {
 			capital_scope = { continent = europe }
+			num_of_explorers = 1
 			OR = {
 				lanka_area = {
 					has_discovered = PREV
