@@ -1,0 +1,307 @@
+namespace = FEE_Punjab_Events
+
+# Path to Jivanmukta
+country_event = {
+	id = FEE_Punjab_Events.1
+	title = FEE_Punjab_Events.1.T
+	desc = FEE_Punjab_Events.1.D
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_or_was_tag = { tag = PUN }
+		NOT = {
+			lahore_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		NOT = {
+			sirhind_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		NOT = {
+			sind_sagar_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = FEE_Punjab_Events.1.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_mil_power = 25
+		lahore_area = { add_permanent_claim = ROOT }
+		sirhind_area = { add_permanent_claim = ROOT }
+		sind_sagar_area = { add_permanent_claim = ROOT }
+	}
+
+	option = {
+		name = FEE_Punjab_Events.1.OPT2
+		ai_chance = {
+			factor = 75
+		}
+
+		add_stability_or_adm_power = yes
+		every_neighbor_country = {
+			add_opinion = {
+				who = ROOT
+				modifier = opinion_eased_tension
+			}
+			reverse_add_opinion = {
+				who = ROOT
+				modifier = opinion_eased_tension
+			}
+		}
+	}
+}
+
+# The Sikh Confederacy
+country_event = {
+	id = FEE_Punjab_Events.2
+	title = FEE_Punjab_Events.2.T
+	desc = FEE_Punjab_Events.2.D
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_or_was_tag = { tag = PUN }
+		religion = sikhism
+		MUG = {
+			is_neighbor_of = ROOT
+			any_owned_province = {
+				OR = {
+					religion = sikhism
+					culture = panjabi
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = {
+		name = FEE_Punjab_Events.2.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_yearly_manpower = 3
+		add_army_tradition = 15
+		add_country_modifier = {
+			name = fee_pun_martyrdom
+			duration = -1
+			desc = FEE_PUN_MARTYRDOM_TT
+		}
+		custom_tooltip = FEE_PUN_MARTYRDOM_CLAIM_TT
+		hidden_effect = {
+			MUG = {
+				every_owned_province = {
+					limit = {
+						OR = {
+							religion = sikhism
+							culture = panjabi
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+		}
+	}
+}
+
+# Khaalasaa Raaj
+country_event = {
+	id = FEE_Punjab_Events.3
+	title = FEE_Punjab_Events.3.T
+	desc = FEE_Punjab_Events.3.D
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_or_was_tag = { tag = PUN }
+		religion = sikhism
+		total_development = 500
+		capital_scope = {
+			development = 20
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = {
+		name = FEE_Punjab_Events.3.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		change_adm = 1
+		change_dip = 1
+		change_mil = 1
+		set_government_rank_force = 3
+		add_prestige_or_monarch_power = { amount = 25 }
+		add_legitimacy_equivalent = { amount = 15 republican_tradition = 7 }
+		add_ruler_modifier = {
+			name = fee_pun_throne_timeless_one
+			duration = -1
+		}
+		add_country_modifier = {
+			name = fee_pun_divine_guidance
+			duration = -1
+		}
+	}
+}
+
+# Eternal Army
+country_event = {
+	id = FEE_Punjab_Events.4
+	title = FEE_Punjab_Events.4.T
+	desc = FEE_Punjab_Events.4.D
+	picture = MILITARISTICALLY_TALENTED_RULER_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_or_was_tag = { tag = PUN }
+		religion = sikhism
+		is_year = 1600
+		NOT = { is_year = 1700 }
+	}
+
+	mean_time_to_happen = {
+		months = 120
+	}
+
+	option = {
+		name = FEE_Punjab_Events.4.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_country_modifier = {
+			name = fee_pun_akal_sean
+			duration = 36500
+		}
+	}
+}
+
+# Reforming the Akal Sena
+country_event = {
+	id = FEE_Punjab_Events.5
+	title = FEE_Punjab_Events.5.T
+	desc = FEE_Punjab_Events.5.D
+	picture = MILITARISTICALLY_TALENTED_RULER_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_or_was_tag = { tag = PUN }
+		religion = sikhism
+		OR = {
+			is_year = 1700
+			AND = {
+				is_year = 1690
+				has_country_modifier = fee_pun_akal_sean
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	option = {
+		name = FEE_Punjab_Events.5.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		remove_country_modifier = fee_pun_akal_sean
+		add_country_modifier = {
+			name = fee_pun_khalsa_fauj
+			duration = 18250
+		}
+	}
+}
+
+# The Sikh Khalsa Army
+country_event = {
+	id = FEE_Punjab_Events.6
+	title = FEE_Punjab_Events.6.T
+	desc = FEE_Punjab_Events.6.D
+	picture = MILITARISTICALLY_TALENTED_RULER_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_or_was_tag = { tag = PUN }
+		religion = sikhism
+		OR = {
+			is_year = 1750
+			AND = {
+				is_year = 1740
+				has_country_modifier = fee_pun_akal_sean
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	option = {
+		name = FEE_Punjab_Events.6.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		remove_country_modifier = fee_pun_khalsa_fauj
+		add_country_modifier = {
+			name = fee_pun_sikh_army
+			duration = 18250
+		}
+	}
+}
+
+# 
+# country_event = {
+# 	id = FEE_Punjab_Events.
+# 	title = FEE_Punjab_Events..T
+# 	desc = FEE_Punjab_Events..D
+# 	picture = GOOD_WITH_MONARCH_eventPicture
+#
+# 	fire_only_once = yes
+#
+# 	trigger = {
+# 		is_or_was_tag = { tag = VIJ }
+# 	}
+#
+# 	mean_time_to_happen = {
+# 		months = 12
+# 	}
+#
+# 	option = {
+# 		name = FEE_Punjab_Events..OPT1
+# 		ai_chance = {
+# 			factor = 75
+# 		}
+#
+# 	}
+# }

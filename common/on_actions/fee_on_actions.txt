@@ -425,6 +425,14 @@ on_war_lost = {
 		set_country_flag = fee_gujarat_battle_of_diu_getting_triggered_by_war_lost
 		country_event = { id = FEE_Gujarat_Events.5 }
 	}
+	if = {
+		limit = {
+			is_or_was_tag = { tag = PUN }
+			has_country_modifier = fee_pun_martyrdom
+			FROM = { tag = MUG }
+		}
+		remove_country_modifier = fee_pun_martyrdom
+	}
 }
 
 # root = winning country, from = loser country
@@ -446,6 +454,14 @@ on_war_won = {
 			has_country_flag = fee_gujarati_consequences
 		}
 		set_country_flag = fee_gujarat_battle_of_diu_done
+	}
+	if = {
+		limit = {
+			is_or_was_tag = { tag = PUN }
+			has_country_modifier = fee_pun_martyrdom
+			FROM = { tag = MUG }
+		}
+		remove_country_modifier = fee_pun_martyrdom
 	}
 }
 
@@ -579,6 +595,19 @@ on_religion_change = {
 				}
 			}
 		}
+	}
+	if = {
+		limit = {
+			tag = PUN
+			has_country_modifier = fee_pun_martyrdom
+			OR = {
+				NOT = { religion = sikhism }
+				NOT = {
+					MUG = { religion_group = muslim }
+				}
+			}
+		}
+		remove_country_modifier = fee_pun_martyrdom
 	}
 }
 
