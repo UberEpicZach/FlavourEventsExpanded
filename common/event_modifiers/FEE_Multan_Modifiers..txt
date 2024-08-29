@@ -1,0 +1,57 @@
+fee_mul_brutal_ruler = {
+	diplomatic_reputation = -1
+	global_unrest = 1
+}
+fee_mul_merciful_ruler = {
+	global_unrest = -0.5
+}
+
+fee_mul_shared_ties = {
+	technology_cost = -0.05
+	institution_spread_from_true_faith = 0.15
+}
+fee_mul_baluch_community = {
+	local_friendly_movement_speed = 0.15
+	local_institution_spread = 0.33
+}
+fee_mul_langah_community = {
+	local_development_cost = -0.15
+	local_institution_spread = 0.33
+}
+
+fee_mul_baloch_settlement = {
+	local_development_cost = -0.10
+	local_manpower_modifier = 0.25
+}
+fee_mul_magnificent_frontier = {
+	local_development_cost = -0.15
+	local_manpower_modifier = 0.15
+	local_hostile_attrition = 3
+	max_hostile_attrition = 3
+}
+
+fee_mul_baloch_barracks = {
+	local_development_cost = -0.10
+	local_manpower_modifier = 0.25
+	local_regiment_cost = -0.15
+	regiment_recruit_speed = -0.15
+	min_local_autonomy = 0.10
+}
+
+fee_mul_balochi_guard = {
+	diplomatic_upkeep = 0.5
+	num_accepted_cultures = 1
+	infantry_power = 0.10
+}
+
+fee_mul_restored_union = {
+	local_development_cost = -0.10
+	local_monthly_devastation = -0.50
+	local_prosperity_growth = 1
+	local_tax_modifier = 0.15
+}
+
+fee_mul_markets_north = {
+	province_trade_power_modifier = 0.25
+	province_trade_power_value = 0.15
+}

@@ -1,28 +1,736 @@
 namespace = FEE_Multan_Events
 
-#A New Dynasty
+# Shaikh Yusuf’s rebellion
 country_event = {
 	id = FEE_Multan_Events.1
 	title = FEE_Multan_Events.1.T
 	desc = FEE_Multan_Events.1.D
-	picture = COURT_eventPicture
+	picture = REVOLT_eventPicture
 
 	fire_only_once = yes
 
 	trigger = {
-		tag = MUL
-		NOT = { is_year = 1450 }
-		dynasty = "Langa"
+		is_or_was_tag = { tag = MUL }
+		is_year = 1443
+		NOT = { is_year = 1445 }
 	}
 
 	mean_time_to_happen = {
-		months = 2
+		months = 12
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = fee_mul_shaikh_yusuf_rebellion
+		}
 	}
 
 	option = {
-		name = FEE_Multan_Events.1.OPT1 #The time for them to accept their new sultans has not yet come.
+		name = FEE_Multan_Events.1.OPT1
+		ai_chance = {
+			factor = 75
+		}
 
-		add_legitimacy_equivalent = { amount = -25 republican_tradition = -12 }
-		add_stability = -1
+		random_owned_province = {
+			limit = {
+				controlled_by = ROOT
+				NOT = { is_capital_of = ROOT }
+			}
+			spawn_rebels = {
+				size = 1
+				type = pretender_rebels
+				win = yes
+				leader = "Shaikh Yusuf"
+				leader_dynasty = "Zakariya"
+			}
+		}
+	}
+}
+
+# Yusuf’s defeat
+country_event = {
+	id = FEE_Multan_Events.2
+	title = FEE_Multan_Events.2.T
+	desc = FEE_Multan_Events.2.D
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		is_or_was_tag = { tag = MUL }
+		has_country_flag = fee_mul_shaikh_yusuf_rebellion
+		NOT = { num_of_rebel_controlled_provinces = 1 }
+		NOT = { num_of_rebel_armies = 1 }
+		NOT = { dynasty = "Zakariya" }
+	}
+
+	option = {
+		name = FEE_Multan_Events.2.OPT1
+		ai_chance = {
+			factor = 25
+		}
+
+		add_prestige_or_monarch_power = { amount = 5 }
+		add_legitimacy_equivalent = { amount = 10 republican_tradition = 5 }
+		add_ruler_personality = cruel_personality
+		add_ruler_modifier = {
+			name = fee_mul_brutal_ruler
+			duration = -1
+		}
+		every_neighbor_country = {
+			add_opinion = {
+				who = ROOT
+				modifier = beheaded_governor
+			}
+		}
+		hidden_effect = { clr_country_flag = fee_mul_shaikh_yusuf_rebellion }
+	}
+
+	option = {
+		name = FEE_Multan_Events.2.OPT2
+		ai_chance = {
+			factor = 75
+		}
+
+		custom_tooltip = "I will surely find a way to retake this throne of mine!"
+		add_ruler_modifier = {
+			name = fee_mul_merciful_ruler
+			duration = -1
+		}
+		every_neighbor_country = {
+			add_opinion = {
+				who = ROOT
+				modifier = opinion_eased_tension
+			}
+		}
+	}
+}
+
+# Yusuf at the court of Delhi
+country_event = {
+	id = FEE_Multan_Events.3
+	title = FEE_Multan_Events.3.T
+	desc = FEE_Multan_Events.3.D
+	picture = ADVISOR_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		any_country = { has_country_flag = fee_mul_shaikh_yusuf_rebellion }
+		is_or_was_tag = { tag = DLH }
+		is_year = 1453
+		NOT = { is_year = 1498 }
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = FEE_Multan_Events.3.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		create_general = {
+			tradition = 50
+			name = "Shaikh Yusuf"
+		}
+		random_country = {
+			limit = { has_country_flag = fee_mul_shaikh_yusuf_rebellion }
+			add_opinion = {
+				who = ROOT
+				modifier = opinion_supports_dissidents
+			}
+			reverse_add_opinion = {
+				who = ROOT
+				modifier = opinion_supports_dissidents
+			}
+			add_casus_belli = {
+				type = cb_insult
+				target = ROOT
+			}
+		}
+		hidden_effect = { set_country_flag = fee_mul_shaikh_yusuf_court_of_delhi }
+	}
+
+	option = {
+		name = FEE_Multan_Events.3.OPT2
+		ai_chance = {
+			factor = 25
+		}
+
+		random_country = {
+			limit = { has_country_flag = fee_mul_shaikh_yusuf_rebellion }
+			add_opinion = {
+				who = ROOT
+				modifier = opinion_diplomatic_solution
+			}
+			reverse_add_opinion = {
+				who = ROOT
+				modifier = opinion_diplomatic_solution
+			}
+			hidden_effect = { clr_country_flag = fee_mul_shaikh_yusuf_rebellion }
+		}
+		every_neighbor_country = {
+			add_opinion = {
+				who = ROOT
+				modifier = opinion_eased_tension
+			}
+		}
+	}
+}
+
+# Yusuf’s revenge
+country_event = {
+	id = FEE_Multan_Events.4
+	title = FEE_Multan_Events.4.T
+	desc = FEE_Multan_Events.4.D
+	picture = FAT_WARRIORS_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		has_country_flag = fee_mul_shaikh_yusuf_court_of_delhi
+		any_country = { has_country_flag = fee_mul_shaikh_yusuf_rebellion }
+		is_year = 1469
+		NOT = { is_year = 1498 }
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = FEE_Multan_Events.4.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		random_country = {
+			limit = { has_country_flag = fee_mul_shaikh_yusuf_rebellion }
+			add_spy_network_from = {
+				who = ROOT
+				value = 50
+			}
+			reverse_add_casus_belli = {
+				type = cb_conquest
+				target = ROOT
+			}
+			every_owned_province = {
+				limit = {
+					OR = {
+						is_neighbor_of = ROOT
+						is_capital = yes
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Multan_Events.4.OPT2
+		ai_chance = {
+			factor = 25
+		}
+
+		every_neighbor_country = {
+			add_opinion = {
+				who = ROOT
+				modifier = opinion_eased_tension
+			}
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			clr_country_flag = fee_mul_shaikh_yusuf_court_of_delhi
+			random_country = {
+				limit = { has_country_flag = fee_mul_shaikh_yusuf_rebellion }
+				clr_country_flag = fee_mul_shaikh_yusuf_rebellion
+			}
+		}
+	}
+}
+
+# The Baluch and Langah
+country_event = {
+	id = FEE_Multan_Events.5
+	title = FEE_Multan_Events.5.T
+	desc = FEE_Multan_Events.5.D
+	picture = CARAVAN_EVENT_Picture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_or_was_tag = {tag = MUL }
+		is_year = 1445
+		exists = BAL
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	major = yes
+	major_trigger = {
+		tag = BAL
+	}
+
+	option = {
+		name = FEE_Multan_Events.5.OPT1
+		trigger = {
+			NOT = {
+				any_owned_province = { is_neighbor_of = BAL }
+			}
+		}
+		ai_chance = {
+			factor = 75
+		}
+
+		add_country_modifier = {
+			name = fee_mul_shared_ties
+			duration = 365
+		}
+		add_opinion = {
+			who = BAL
+			modifier = fee_mul_shared_ties_opinion
+		}
+		BAL = {
+			add_country_modifier = {
+				name = fee_mul_shared_ties
+				duration = 365
+			}
+			add_opinion = {
+				who = ROOT
+				modifier = fee_mul_shared_ties_opinion
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Multan_Events.5.OPT2
+		trigger = {
+			any_owned_province = { is_neighbor_of = BAL }
+		}
+		ai_chance = {
+			factor = 75
+		}
+
+		add_opinion = {
+			who = BAL
+			modifier = fee_mul_baluch_langah_communities
+		}
+		random_owned_province = {
+			limit = { is_neighbor_of = BAL }
+			add_permanent_province_modifier = {
+				name = fee_mul_baluch_community
+				duration = -1
+			}
+		}
+		BAL = {
+			add_opinion = {
+				who = BAL
+				modifier = fee_mul_baluch_langah_communities
+			}
+			random_owned_province = {
+				limit = { is_neighbor_of = ROOT }
+				add_permanent_province_modifier = {
+					name = fee_mul_langah_community
+					duration = -1
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Multan_Events.5.OPT3
+		ai_chance = {
+			factor = 25
+		}
+
+		add_prestige_or_monarch_power = { amount = 15 }
+		add_legitimacy_equivalent = { amount = 10 republican_tradition = 5 }
+		random_owned_province = {
+			limit = {
+				any_neighbor_province = {
+					NOT = { owned_by = ROOT }
+				}
+			}
+			add_province_modifier = {
+				name = local_fortress
+				duration = 3650
+			}
+		}
+	}
+}
+
+# The Derajat Border
+country_event = {
+	id = FEE_Multan_Events.6
+	title = FEE_Multan_Events.6.T
+	desc = FEE_Multan_Events.6.D
+	picture = CITY_DEVELOPMENT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_or_was_tag = {tag = MUL }
+		is_year = 1445
+		owns = 2079
+		NOT = { is_year = 1498 }
+	}
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	major = yes
+	major_trigger = {
+		tag = BAL
+	}
+
+	goto = 2079
+
+	option = {
+		name = FEE_Multan_Events.6.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		custom_tooltip = "The arrival of the Balochi will help us guard our old frontiers"
+		BAL = {
+			add_opinion = {
+				who = ROOT
+				modifier = fee_mul_accepts_our_population
+			}
+			reverse_add_opinion = {
+				who = ROOT
+				modifier = fee_mul_accepts_our_population
+			}
+		}
+		2079 = {
+			add_permanent_province_modifier = {
+				name = fee_mul_baloch_settlement
+				duration = -1
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Multan_Events.6.OPT2
+		ai_chance = {
+			factor = 25
+		}
+
+		add_prestige_or_monarch_power = { amount = 10 }
+		2079 = {
+			add_permanent_province_modifier = {
+				name = fee_mul_magnificent_frontier
+				duration = -1
+			}
+		}
+	}
+}
+
+# Balochi Expansion: A Growing Force
+country_event = {
+	id = FEE_Multan_Events.7
+	title = FEE_Multan_Events.7.T
+	desc = FEE_Multan_Events.7.D
+	picture = FORTIFIED_CITY_WITH_CARAVAN_OUTSIDE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		2079 = {
+			owned_by = ROOT
+			has_province_modifier = fee_mul_baloch_settlement
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 48
+	}
+
+	goto = 2079
+
+	option = {
+		name = FEE_Multan_Events.7.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_legitimacy_equivalent = { amount = -15 republican_tradition = -7 }
+		add_accepted_culture = baluchi
+		2079 = {
+			change_culture = baluchi
+			remove_province_modifier = fee_mul_baloch_settlement
+			add_or_upgrade_manpower_building = yes
+			add_permanent_province_modifier = {
+				name = fee_mul_baloch_barracks
+				duration = -1
+				desc = FEE_MUL_AS_LONG_AS_PROVINCE_IS_BALUCHI_TT
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Multan_Events.7.OPT2
+		ai_chance = {
+			factor = 25
+		}
+
+		add_stability_or_adm_power = yes
+		2079 = { remove_province_modifier = fee_mul_baloch_settlement }
+	}
+}
+
+# The Rise of the Balochi Stronghold
+country_event = {
+	id = FEE_Multan_Events.8
+	title = FEE_Multan_Events.8.T
+	desc = FEE_Multan_Events.8.D
+	picture = FORTIFIED_CITY_WITH_CARAVAN_OUTSIDE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		2079 = {
+			owned_by = ROOT
+			has_province_modifier = fee_mul_baloch_barracks
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	goto = 2079
+
+	option = {
+		name = FEE_Multan_Events.8.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_country_modifier = {
+			name = fee_mul_balochi_guard
+			duration = -1
+			desc = "For as long as we accept Baluchi"
+		}
+		2079 = { add_or_upgrade_forcelimit_building = yes }
+	}
+}
+
+# Reuniting the Magnificent Frontier
+country_event = {
+	id = FEE_Multan_Events.9
+	title = FEE_Multan_Events.9.T
+	desc = FEE_Multan_Events.9.D
+	picture = CONQUEROR_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_or_was_tag = { tag = MUL }
+		OR = {
+			land_forcelimit = 1
+			army_size = 10
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = FEE_Multan_Events.9.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		lahore_area = { add_claim = ROOT }
+		northern_sindh_area = { add_claim = ROOT }
+		sind_sagar_area = { add_claim = ROOT }
+		sindh_area = { add_claim = ROOT }
+	}
+}
+
+# Reuniting the Magnificent Frontier
+country_event = {
+	id = FEE_Multan_Events.10
+	title = FEE_Multan_Events.10.T
+	desc = FEE_Multan_Events.10.D
+	picture = CONQUEST_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_or_was_tag = { tag = MUL }
+		northern_sindh_area = {
+			type = all
+			owned_by = ROOT
+		}
+		sindh_area = {
+			type = all
+			owned_by = ROOT
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = FEE_Multan_Events.10.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		northern_sindh_area = {
+			add_province_modifier = {
+				name = fee_mul_restored_union
+				duration = 9125
+			}
+		}
+		sind_sagar_area = {
+			add_province_modifier = {
+				name = fee_mul_restored_union
+				duration = 9125
+			}
+		}
+	}
+}
+
+# Reuniting the Magnificent Frontier
+country_event = {
+	id = FEE_Multan_Events.11
+	title = FEE_Multan_Events.11.T
+	desc = FEE_Multan_Events.11.D
+	picture = CONQUEST_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_or_was_tag = { tag = MUL }
+		lahore_area = {
+			type = all
+			owned_by = ROOT
+		}
+		sind_sagar_area = {
+			type = all
+			owned_by = ROOT
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = FEE_Multan_Events.11.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		lahore_area = {
+			add_province_modifier = {
+				name = fee_mul_markets_north
+				duration = 9125
+			}
+		}
+		sind_sagar_area = {
+			add_province_modifier = {
+				name = fee_mul_markets_north
+				duration = 9125
+			}
+		}
+	}
+}
+
+# Reuniting the Magnificent Frontier
+country_event = {
+	id = FEE_Multan_Events.12
+	title = FEE_Multan_Events.12.T
+	desc = FEE_Multan_Events.12.D
+	picture = FORTIFIED_CITY_WITH_CARAVAN_OUTSIDE_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_or_was_tag = { tag = MUL }
+		lahore_area = {
+			type = all
+			owned_by = ROOT
+			NOT = { devastation = 1 }
+			is_core = ROOT
+		}
+		sind_sagar_area = {
+			type = all
+			owned_by = ROOT
+			NOT = { devastation = 1 }
+			is_core = ROOT
+		}
+		northern_sindh_area = {
+			type = all
+			owned_by = ROOT
+			NOT = { devastation = 1 }
+			is_core = ROOT
+		}
+		sindh_area = {
+			type = all
+			owned_by = ROOT
+			NOT = { devastation = 1 }
+			is_core = ROOT
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = FEE_Multan_Events.12.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_mercantilism_or_monarch_power = { amount = 5 }
+		add_years_of_owned_provinces_production_income = {
+			years = 5
+			trigger = {
+				OR = {
+					trade_goods = cloth
+					trade_goods = silk
+				}	
+			}
+		}
+		lahore_area = {
+			random_province_in_state = {
+				add_base_production = 2
+				add_or_upgrade_trade_building = yes
+			}
+		}
+		sind_sagar_area = {
+			random_province_in_state = {
+				add_base_production = 2
+				add_or_upgrade_trade_building = yes
+			}
+		}
+		northern_sindh_area = {
+			random_province_in_state = {
+				add_base_production = 2
+				add_or_upgrade_trade_building = yes
+			}
+		}
+		sindh_area = {
+			random_province_in_state = {
+				add_base_production = 2
+				add_or_upgrade_trade_building = yes
+			}
+		}
 	}
 }
