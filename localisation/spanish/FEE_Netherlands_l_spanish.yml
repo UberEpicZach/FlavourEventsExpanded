@@ -97,8 +97,30 @@
  FEE_Netherlands_Events.21.OPT1: "The world is changing, and industry is the future"
  FEE_Netherlands_Events.21.OPT2: "The investment of capital is core to a nation's success"
  FEE_Netherlands_Events.21.OPT3: "Trade is the lifeblood of nations, we would be foolish to abandon it now"
+ FEE_Netherlands_Events.22.T: "The States General"
+ FEE_Netherlands_Events.22.D: "While we have brought stable and loyal governance to the rich trade lands of the Low Countries, these provinces have long held a fierce traditions of local rights and privileges. At the same time, with the decline of the Hanseatic League, the merchants of the Low Countries are amassing ever more wealth and influence with which to back up their demands. \nThese bourgeoisie, along with prominent nobility and bishops of our subjects, have gathered to request a general meeting of delegations from all our subject states, called the States General."
+ FEE_Netherlands_Events.22.OPT1: "Convene the States General!"
+ FEE_Netherlands_Events.22.OPT2: "These shopkeepers need to stick to their trades and stay out of politics"
 
- #Modifiers:
+ FEE_Netherlands_Events.23.T: "Baltic Grain"
+ FEE_Netherlands_Events.23.D: "Situated perfectly at the confluence of the Baltic Sea, English Channel, and Rhine River trade routes, Amsterdam grew in importance and influence throughout the 15th century. As the Hanseatic League to the east began to lose coherence, merchants from Amsterdam increasingly filled the vacuum in the Baltic Sea. The growing population of the Lowlands also led to an increased demand for grain from the Baltic shores, since land could no longer be reclaimed fast enough to keep up with demand for food. \nThe upshot of all this was that Amsterdam would become the primary port in Europe for the important and distribution of grain from the Baltic."
+ FEE_Netherlands_Events.23.OPT1: "Excellent!"
+
+ FEE_Netherlands_Events.24.T: "The Frisian Peasant Rebellion"
+ FEE_Netherlands_Events.24.D: "The area of Frisian has long been known for its “Frisian Freedom,” the near-complete absence of feudalism and serfdom that was known almost nowhere else in the world during the Middle Ages. However, external forces gradually eroded the Frisian Freedom through military efforts or even outright buying off of local power brokers. By 1498, the Freedom was all but gone, and Imperial forces would occupy Frisia. \nIt wouldn't take long before this occupation and revocation of ancient freedoms, stemming from the time of Charlemagne himself, would be rejected by the population. Things came to a head when the Black Band, a mercenary company stationed to maintain order, extracted “payment” by looting local villages."
+ FEE_Netherlands_Events.24.OPT1: "How dare they?"
+ FEE_Netherlands_Events.24.OPT2: "Give them their freedom, we have more important concerns now"
+
+ FEE_Netherlands_Events.25.T: "La Furia Espanola"
+ FEE_Netherlands_Events.25.D: "During the Eighty Years' War, or Dutch Revolt, the many Spanish tercios of the Army of Flanders under Julian Romero, employed to purge the anti-Catholic heresy and bring the rebel provinces of Holland and Zeeland back into line were growing restless. They were weary of endless fighting with little to no rest, and frustrated at their lack of pay by the Spanish Crown. The troops had their pay delayed due to Spain's recent declaration of bankruptcy, leading to the bankers refusing to authorise payment until they had negotiated with Phillip II. This meant that the King had to send the physical money by sea, which was much more perilous. To make matters worse, 400,000 florins intended for the soldiers were seized by the English after the ships carrying them were forced to take refuge in English ports during a storm. This pushed the tercios too far. They decided to find their pay for themselves, as was a time old tradition, by sacking a major city. They chose the de facto capital of the Seventeen Provinces at the time, Antwerp, from which to take what they were owed. This was due to the treachery of the Spanish commander of Antwerp Citadel, Sancho d'Avila. He attempted to convince the commander of the garrison of German mercenaries to deliver the city into Spanish hands. This, however, had the opposite effect. The Germans began to improvise defences against the Spaniards and a day before the mutinying tercios arrived, 6,000 Walloon mercenaries were let into the city to help defend it. This was not enough, unfortunately for the city and its citizens. The defences were overrun by the professionally trained soldiers and the Walloon troops not only failed to defend the city, but even fled or participated in the looting ofAntwerp. The few remaining Germans and the civilians were massacred, some 7,000 lives lost."
+ FEE_Netherlands_Events.25.OPT1: "God punishes those who do not obey him."
+ FEE_Netherlands_Events.25.OPT2: "Punish these treacherous mutineers!"
+
+ FEE_Netherlands_Events.26.T: "The Spanish Fury"
+ FEE_Netherlands_Events.26.D: "The treacherous Spaniards have sacked Antwerp! Those uncouth dogs have destroyed the jewel of the Netherlands, and we must take revenge. We are called upon by God to avenge the deaths of these innocents, and to punish the Spanish for their tyranny and insolence! For now, bury the dead and repair the damage. This is truly a death knell for Antwerp and a black day for our people."
+ FEE_Netherlands_Events.26.OPT1: "The star has faded forever more."
+
+# Modifiers:
  fee_ned_generality_lands: "Generality Lands"
  desc_fee_ned_generality_lands: "This province is governed directly by the estates general, as it lacks its own administrative organisation."
  fee_ned_dutch_warehouses: "Dutch Warehouses"
@@ -142,6 +164,38 @@
  desc_fee_ned_banking_focus: ""
  fee_ned_trade_compacency: "Trade Complacency"
  desc_fee_ned_trade_compacency: ""
+ fee_ned_estates_general: "Estates General"
+ desc_fee_ned_estates_general: ""
+ fee_ned_rights_privileges: "Rights and Privileges"
+ desc_fee_ned_rights_privileges: ""
+ fee_ned_asserted_control_3: "Asserted Control"
+ desc_fee_ned_asserted_control_3: ""
+ fee_ned_asserted_control_2: "Asserted Control"
+ desc_fee_ned_asserted_control_2: ""
+ fee_ned_asserted_control_1: "Asserted Control"
+ desc_fee_ned_asserted_control_1: ""
+ fee_ned_asserted_control_0: "Asserted Control"
+ desc_fee_ned_asserted_control_0: ""
+ fee_ned_rights_suppressed: "Rights Suppressed"
+ desc_fee_ned_rights_suppressed: ""
+
+ fee_ned_grain_import_center: "Grain Import Center"
+ desc_fee_ned_grain_import_center: ""
+
+ fee_ned_spanish_fury: "Spanish Fury"
+ desc_fee_ned_spanish_fury: ""
+ fee_ned_discipline_restored: "Discipline Restored"
+ desc_fee_ned_discipline_restored: ""
+ fee_ned_destroyed_infrastructure: "Destroyed Infrastructure"
+ desc_fee_ned_destroyed_infrastructure: ""
+ fee_ned_decline_antwerp_cloth_market: "Decline of the Antwerp Cloth Market"
+ desc_fee_ned_decline_antwerp_cloth_market: ""
+ fee_ned_black_legend: "Black Legend"
+ desc_fee_ned_black_legend: ""
+ fee_ned_refugees_antwerp: "Refugees from Antwerp"
+ desc_fee_ned_refugees_antwerp: ""
+ fee_ned_legacy_antwerp: "Legacy of Antwerp"
+ desc_fee_ned_legacy_antwerp: ""
 
 # Opinion Modifiers
  fee_ned_stole_our_province: "Stole our Province"
@@ -151,8 +205,16 @@
  fee_ned_huguenot_influx_opinion: "Huguenot Influx"
  fee_ned_secured_borders_opinion: "Secured Borders"
 
-#Trade Modifiers
+ fee_ned_sacked_antwerp: "Sacked Antwerp!"
+ fee_ned_sacked_antwerp_punished_mutineers: "Sacked Antwerp but Punished Mutineers"
+
+# Trade Modifiers
  fee_ned_esat_indian_trade_ports: "East Indian Trade Ports"
+
+ fee_ned_baltic_trade_influence: "Baltic Trade Influence"
+
+# Triggered Modifiers
+ guelders_wars: "Guelders Wars"
 
 # Tooltips
  fee_ned_offer_ruler_gerle_burgundy_tt: "The ruler of Burgundy will be offered to rule Gelre for 3 ducats. They may decline."

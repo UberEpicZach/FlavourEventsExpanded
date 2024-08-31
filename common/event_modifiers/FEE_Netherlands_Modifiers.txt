@@ -80,3 +80,71 @@ fee_ned_trade_compacency = {
 	development_cost = 0.05
 	trade_efficiency = 0.05
 }
+
+fee_ned_estates_general = {
+	diplomatic_annexation_cost = 0.15
+	reduced_liberty_desire = 15
+}
+fee_ned_rights_privileges = {
+	min_local_autonomy = 25
+	local_production_efficiency = 0.10
+}
+fee_ned_asserted_control_3 = {
+	diplomatic_annexation_cost = -0.15
+	global_tax_income = 18
+}
+fee_ned_asserted_control_2 = {
+	diplomatic_annexation_cost = -0.15
+	global_tax_income = 12
+}
+fee_ned_asserted_control_1 = {
+	diplomatic_annexation_cost = -0.15
+	global_tax_income = 6
+}
+fee_ned_asserted_control_0 = {
+	diplomatic_annexation_cost = -0.15
+}
+fee_ned_rights_suppressed = {
+	local_unrest = 2
+	local_autonomy = -0.03
+}
+
+fee_ned_grain_import_center = {
+	province_trade_power_value = 5
+	local_manpower_modifier = 0.10
+}
+
+fee_ned_spanish_fury = {
+	loot_amount = 0.3
+	merc_maintenance_modifier = -0.15
+	mercenary_cost = -0.1
+	mercenary_discipline = -0.05
+}
+
+fee_ned_discipline_restored = {
+	movement_speed = 0.1
+	merc_maintenance_modifier = 0.15
+	mercenary_cost = 0.1
+	mercenary_discipline = 0.05
+}
+
+fee_ned_destroyed_infrastructure = {
+	local_development_cost = 0.3
+}
+fee_ned_decline_antwerp_cloth_market = {
+	province_trade_power_modifier = -0.3
+	trade_goods_size_modifier = -0.1
+}
+
+fee_ned_black_legend = {
+	tolerance_own = 1
+	tolerance_heathen = -1
+}
+fee_ned_refugees_antwerp = {
+	local_development_cost = -0.1
+}
+fee_ned_legacy_antwerp = {
+	province_trade_power_modifier = 0.1
+	trade_goods_size_modifier = 0.05
+	local_defensiveness = 0.33
+}
