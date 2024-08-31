@@ -1,4 +1,94 @@
 ﻿l_german:
- FEE_Multan_Events.1.T: "Ascension of the Langa"
- FEE_Multan_Events.1.D: "Multan has been in a state of turmoil since the sack of Delhi by Tamerlane in 1398. For all this time, we have suffered from internal strife and incompetent rulers whose courts do not even reside in the Panjabi heartland. However, a turn for the better came; an influential Sheikh was elected into power and stability seemed to be returning. But in 1443, a conspiracy led by Rae Sahra of the Afghan Langas exiled the Sheikh to Delhi and Sahra installed himself as Sultan. Under this new dynasty, we can only hope that order can return to Multan once more."
- FEE_Multan_Events.1.OPT1: "The time for them to accept their new sultans has not yet come." 
+ FEE_Multan_Events.1.T: "Shaikh Yusuf’s rebellion"
+ FEE_Multan_Events.1.D: "The noble descendant of the revered Sufi saint Baha-ud-din Zakariya has returned to our lands, his heart burning with a righteous fire. He carries the weight of his ancestors and has sworn an oath of vengeance against our beloved ruler, whom he accuses of unjustly seizing the throne of the illustrious city of Multan, the jewel of Punjab. With every breath, he calls upon the spirits of his forebears and the power of divine justice to restore the honour of his lineage. The people whisper in fear and anticipation, for the winds of destiny have stirred, and a great reckoning approaches."
+ FEE_Multan_Events.1.OPT1: "We will meet on the battlefield"
+
+ FEE_Multan_Events.2.T: "Yusuf’s defeat"
+ FEE_Multan_Events.2.D: "The mighty armies of the Multan Sultanate have triumphed, crushing the rebellion led by Shaikh Yusuf, and the city stands secure once more, its walls echoing with the chants of victory. The valour of our soldiers and the wisdom of our commanders have preserved the sanctity of our realm, driving the traitorous forces into submission. Now, as the dust of battle settles and the smoke clears from the fields of conflict, we stand at a crossroads, faced with a decision that will shape the future of our rule. How should we handle the prisoners? Should we spare the life of Shaikh Yusuf and the men he guided against us, or pass them under the might of our swords?"
+ FEE_Multan_Events.2.OPT1: "Kill him!"
+ FEE_Multan_Events.2.OPT2: "Spare the life of this vermin"
+
+ FEE_Multan_Events.3.T: "Yusuf at the court of Delhi"
+ FEE_Multan_Events.3.D: "Following the crushing defeat of Yusuf's rebellion by the mighty forces of Multan, the humbled Shaikh Yusuf has crawled to our court in Delhi, seeking refuge and offering his services as a seasoned general. His arrival presents us with a complex dilemma. The Sultan of Multan, who regards Yusuf as nothing more than "vermin," will undoubtedly see our acceptance of him as a grave insult, likely leading to a significant deterioration in our relations. On the other hand, rejecting Yusuf could signal weakness, or we could use this opportunity to seek a diplomatic resolution, easing tensions with neighbouring powers who might view us as opportunistic and untrustworthy. The choice we make will shape our future standing in the region."
+ FEE_Multan_Events.3.OPT1: "Welcome my friend"
+ FEE_Multan_Events.3.OPT2: "A vermin at my court?"
+
+ FEE_Multan_Events.4.T: "Yusuf’s revenge"
+ FEE_Multan_Events.4.D: "Years have passed since we accepted Shaikh Yusuf as a trusted general in our ranks. His leadership has led our armies to several victories, though not without suffering significant losses. Now, however, Yusuf’s true intentions have surfaced - he is brewing plots of revenge against the Sultanate of Multan, the kingdom that once crushed his rebellion. His intimate knowledge of the Multani lands would undoubtedly be a great asset in battle, but the prospect of war at this moment is daunting. The conflict could take a heavy toll on our resources and stability. We must carefully consider whether to support Yusuf’s quest for vengeance or to temper his ambitions for the greater good of our realm."
+ FEE_Multan_Events.4.OPT1: "For Yusuf!"
+ FEE_Multan_Events.4.OPT2: "We will not risk the war for you"
+
+ FEE_Multan_Events.5.T: "The Baluch and Langah"
+ FEE_Multan_Events.5.D: "The ancient traditions of the Persian and Parthian cultures from Baluchistan have once again come into contact with the rich Fatimid and Indian heritage of Multan. The potential for a fruitful alliance between the Baluch and Langah dynasties could elevate both realms, uniting the strengths of two great regions. Yet, this opportunity also brings a significant decision: Should we embrace this union, intertwining our fates with those beyond the Brahui mountains? Or should we remain focused on our land, preserving our distinct identity and concentrating solely on the Indian subcontinent?"
+ FEE_Multan_Events.5.OPT1: "Strengthen the ties"
+ FEE_Multan_Events.5.OPT2: "Invite them over"
+ FEE_Multan_Events.5.OPT3: "The Brahui are our eastern borders"
+
+ FEE_Multan_Events.6.T: "The Derajat Border"
+ FEE_Multan_Events.6.D: "The province of Derajat, a vital crossroads between India and Persia, has long been a bastion of our Sultanate's civilization and strength. Known for its beauty and order, it stands as a beacon of culture amidst the harsh frontier. Yet, our borders are challenging. The relentless desert has brought forth a new caravan of Balochi tribesmen, masters of the sands, seeking to settle within our fertile lands. These warriors, renowned as the Ghosts of the Desert, bring with them the strength of ancient traditions and unparalleled skill in desert warfare. Their mastery of desert warfare could bolster our frontier and forge a powerful alliance. However, embracing them could challenge the purity and independence of our lands. Now, the question arises: should we embrace these formidable people and establish a Balochi Settlement within Derajat, or should we strengthen our borders and maintain the integrity of our Sultanate?"
+ FEE_Multan_Events.6.OPT1: "Foster the Balochi Settlement"
+ FEE_Multan_Events.6.OPT2: "Strengthen Our Borders"
+
+ FEE_Multan_Events.7.T: "Balochi Expansion: A Growing Force"
+ FEE_Multan_Events.7.D: "Years have passed since the creation of the Balochi Settlement in Derajat. What began as a modest community has now flourished into a thriving town, its population swelling with each passing year. The Balochi, true to their warrior heritage, are now seeking to establish barracks, and field training grounds, and strengthen other critical military structures within the settlement. Their expertise in desert warfare and battle tactics is unmatched, and such developments could enhance the region's defence. However, their growing military influence raises concerns about the balance of power and the Sultanate’s control over the town. The time has come to decide whether to allow the Balochi to build and fortify their presence or reassert our authority and remove them from the city."
+ FEE_Multan_Events.7.OPT1: "Permit Balochi Military Development"
+ FEE_Multan_Events.7.OPT2: "Reassert Sultanate Control"
+
+ FEE_Multan_Events.8.T: "The Rise of the Balochi Stronghold"
+ FEE_Multan_Events.8.D: "Nearly a decade has passed since the first Balochi caravans crossed the rugged Brahui Mountains and settled in the fertile lands of Derajat. What began as a simple settlement has transformed into a fortified city, a marvel of military strength and strategic ingenuity. Over these years, the Balochi have become more than just settlers-they have integrated into our cities, and their culture has woven itself into the fabric of our society. Their military prowess and dedication have not gone unnoticed, and they now stand ready to serve as a formidable addition to our army and Sultanate. The time has come to recognize this integration and determine the future role of the Balochi within our realm."
+ FEE_Multan_Events.8.OPT1: "Hail our Balochi guard!"
+
+ FEE_Multan_Events.9.T: "Reuniting the Magnificent Frontier"
+ FEE_Multan_Events.9.D: "The world has changed, and so has the Sultanate of Multan. Once a frontier under the Abbasid Caliphate, our lands have long been known as the "Magnificent Frontier" - a beacon of civilization where others might expect desolation. We take immense pride in the beauty, cleanliness, and pristine quality of our cities, standing as a testament to our resilience and dedication. Now, the time has come to restore the ancient provinces of the Abbasid Caliphate to our rule. The banners of Multan shall rise again, and we shall march upon Sindh and Lahore to reunite our ancestral lands."
+ FEE_Multan_Events.9.OPT1: "Campaign on Sindh and Lahore"
+
+ FEE_Multan_Events.10.T: "Abbasid Sindh"
+ FEE_Multan_Events.10.D: "The conquest of Sindh stands as a pivotal achievement for the Sultanate of Multan, bringing under our rule a region rich in prosperity, spiritual significance, and strategic importance. As a vital hub for Arabian traders, Sindh has become the primary gateway for goods between the Islamic world and the East, enhancing our influence across Arabia, Persia, and Egypt. Known as the "Land of the Blue Mosques," Sindh’s sacred structures, with their striking red-orange sandstone and abundant blue lapis lazuli tiles, are now symbols of our legacy, drawing scholars and pilgrims from afar. The Makli Necropolis, a vast city of the dead with over 100 mausoleums, further adds to the region’s spiritual depth, serving as a place of pilgrimage and meditation. The unification of Sindh under our rule has expanded our territory and deepened our cultural and spiritual heritage, solidifying Multan as a beacon of trade, art, and faith in the Islamic world."
+ FEE_Multan_Events.10.OPT1: "Provincial Unity"
+
+ FEE_Multan_Events.11.T: "Expanding the Caravanserai"
+ FEE_Multan_Events.11.D: "Following our initial stabilization, we turned our gaze northward, where the fertile plains of Lahore awaited our arrival. Through strategic conquests, we have brought these rich farmlands under our dominion, further solidifying Multan’s status as a powerful and prosperous sultanate. Lahore, known for its bountiful harvests and thriving agricultural trade, now feeds not only its people but also contributes to the wealth and stability of our growing empire. The acquisition of Lahore has not only expanded our territory but also strengthened our economic foundation, ensuring that Multan remains a beacon of prosperity and power in the region."
+ FEE_Multan_Events.11.OPT1: "Provincial Unity"
+
+ FEE_Multan_Events.12.T: "The Start of the New Silk Road"
+ FEE_Multan_Events.12.D: "From the bustling port of Thatta to the towering mountains in the North, the mighty sultanate of Multan has unified the westernmost reaches of India, extending the ancient Abbasid province of Sindh beyond the Caliphate's grandest visions. With our recent expansion, the time has come to contemplate the establishment of a new Silk Road, one that leverages both our strategic acumen and religious law. Our innovative caravan system, cleverly navigating through Islamic statutes, allows us to forge security and trade contracts that are shielded by religious protection. By intertwining trade routes with pilgrimage paths, we ensure that our caravans are safeguarded under the auspices of Allah and the Prophet. This unique blend of commerce and sacred duty has created a secure network of trade corridors, where the sanctity of pilgrimage guarantees the protection of our traders and their goods. As we move forward, we must consider how best to foster and expand this sacred Silk Road to solidify our economic and spiritual dominance."
+ FEE_Multan_Events.12.OPT1: "Restore the Multani Caravanserai"
+
+# Modifiers
+ fee_mul_brutal_ruler: "Brutal Ruler"
+ desc_fee_mul_brutal_ruler: ""
+ fee_mul_merciful_ruler: "Merciful Ruler"
+ desc_fee_mul_merciful_ruler: ""
+
+ fee_mul_shared_ties: "Shared Ties"
+ desc_fee_mul_shared_ties: ""
+ fee_mul_baluch_community: "Baluch Community"
+ desc_fee_mul_baluch_community: ""
+ fee_mul_langah_community: "Langah Community"
+ desc_fee_mul_langah_community: ""
+
+ fee_mul_baloch_settlement: "Baloch Settlement"
+ desc_fee_mul_baloch_settlement: ""
+ fee_mul_magnificent_frontier: "The Magnificent Frontier"
+ desc_fee_mul_magnificent_frontier: ""
+
+ fee_mul_baloch_barracks: "Baloch Barracks"
+ desc_fee_mul_baloch_barracks: ""
+
+ fee_mul_balochi_guard: "Balochi Guards"
+ desc_fee_mul_balochi_guard: ""
+
+ fee_mul_restored_union: "Restored Union"
+ desc_fee_mul_restored_union: ""
+
+ fee_mul_markets_north: "Markets of the North"
+ desc_fee_mul_markets_north: ""
+
+# Opinion Modifiers
+ fee_mul_shared_ties_opinion: "Shared Ties"
+ fee_mul_baluch_langah_communities: "Balcuh-Langah Communities"
+ fee_mul_accepts_our_population: "Accepts our population"
+
+# Tooltips
+ FEE_MUL_AS_LONG_AS_PROVINCE_IS_BALUCHI_TT: "For as long as the province is Baluchi"
+ FEE_MUL_AS_LONG_AS_ACCEPTS_BALUCHI_TT: "For as long as we accept Baluchi"
