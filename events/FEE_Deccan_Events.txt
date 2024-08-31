@@ -1,10 +1,10 @@
-namespace = FEE_Deccani_Sultanates_Events
+namespace = FEE_Deccan_Events
 
 # A New Capital
 country_event = {
-	id = FEE_Deccani_Sultanates_Events.1
-	title = FEE_Deccani_Sultanates_Events.1.T
-	desc = FEE_Deccani_Sultanates_Events.1.D
+	id = FEE_Deccan_Events.1
+	title = FEE_Deccan_Events.1.T
+	desc = FEE_Deccan_Events.1.D
 	picture = CITY_VIEW_eventPicture
 
 	fire_only_once = yes
@@ -22,7 +22,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Deccani_Sultanates_Events.1.OPT1
+		name = FEE_Deccan_Events.1.OPT1
 
 		ai_chance = {
 			factor = 0.5
@@ -36,14 +36,14 @@ country_event = {
 		}
 		544 = {
 			add_province_modifier = {
-				name = fee_deccani_sultanates_a_new_capital
+				name = fee_dec_a_new_capital
 				duration = -1
 			}
 		}
 	}
 
 	option = {
-		name = FEE_Deccani_Sultanates_Events.1.OPT2
+		name = FEE_Deccan_Events.1.OPT2
 
 		ai_chance = {
 			factor = 0.25
@@ -72,7 +72,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Deccani_Sultanates_Events.1.OPT3
+		name = FEE_Deccan_Events.1.OPT3
 
 		trigger = {
 			NOT = { capital = 544 }
@@ -88,9 +88,9 @@ country_event = {
 
 # Public Water Network
 country_event = {
-	id = FEE_Deccani_Sultanates_Events.2
-	title = FEE_Deccani_Sultanates_Events.2.T
-	desc = FEE_Deccani_Sultanates_Events.2.D
+	id = FEE_Deccan_Events.2
+	title = FEE_Deccan_Events.2.T
+	desc = FEE_Deccan_Events.2.D
 	picture = CITY_DEVELOPMENT_eventPicture
 
 	fire_only_once = yes
@@ -110,7 +110,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Deccani_Sultanates_Events.2.OPT1
+		name = FEE_Deccan_Events.2.OPT1
 
 		ai_chance = {
 			factor = 0.5
@@ -124,14 +124,14 @@ country_event = {
 		569 = {
 			add_base_tax = 2
 			add_province_modifier = {
-				name = fee_deccani_sultanates_public_waterworks_of_bijapur
+				name = fee_dec_public_waterworks_of_bijapur
 				duration = -1
 			}
 		}
 	}
 
 	option = {
-		name = FEE_Deccani_Sultanates_Events.2.OPT2
+		name = FEE_Deccan_Events.2.OPT2
 
 		ai_chance = {
 			factor = 0.35
@@ -144,14 +144,14 @@ country_event = {
 		add_years_of_income = -0.25
 		569 = {
 			add_province_modifier = {
-				name = fee_deccani_sultanates_mediocre_public_waterworks_of_bijapur
+				name = fee_dec_mediocre_public_waterworks_of_bijapur
 				duration = -1
 			}
 		}
 	}
 
 	option = {
-		name = FEE_Deccani_Sultanates_Events.2.OPT3
+		name = FEE_Deccan_Events.2.OPT3
 
 		ai_chance = {
 			factor = 0.15
@@ -161,7 +161,7 @@ country_event = {
 		569 = {
 			add_base_tax = -2
 			add_province_modifier = {
-				name = fee_deccani_sultanates_not_enough_water
+				name = fee_dec_not_enough_water
 				duration = 3650
 			}
 			particularist_rebels = 3
@@ -171,9 +171,9 @@ country_event = {
 
 # The Hundred Bazaars
 country_event = {
-	id = FEE_Deccani_Sultanates_Events.3
-	title = FEE_Deccani_Sultanates_Events.3.T
-	desc = FEE_Deccani_Sultanates_Events.3.D
+	id = FEE_Deccan_Events.3
+	title = FEE_Deccan_Events.3.T
+	desc = FEE_Deccan_Events.3.D
 	picture = MERCHANTS_TALKING_eventPicture
 
 	fire_only_once = yes
@@ -201,7 +201,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Deccani_Sultanates_Events.3.OPT1
+		name = FEE_Deccan_Events.3.OPT1
 
 		ai_chance = {
 			factor = 0.9
@@ -213,20 +213,20 @@ country_event = {
 
 		add_years_of_income = -1
 		add_country_modifier = {
-			name = fee_deccani_sultanates_bijapuri_mint
+			name = fee_dec_bijapuri_mint
 			duration = 18250
 		}
 		569 = {
 			add_or_upgrade_trade_building = yes
 			add_province_modifier = {
-				name = fee_deccani_sultanates_hundred_bazaars
+				name = fee_dec_hundred_bazaars
 				duration = -1
 			}
 		}
 	}
 
 	option = {
-		name = FEE_Deccani_Sultanates_Events.3.OPT2
+		name = FEE_Deccan_Events.3.OPT2
 
 		ai_chance = {
 			factor = 0.1
@@ -235,19 +235,19 @@ country_event = {
 		add_years_of_income = 0.25
 		add_corruption = 3
 		add_country_modifier = {
-			name = fee_deccani_sultanates_unrestricted_free_market
+			name = fee_dec_unrestricted_free_market
 			duration = 18250
 		}
 		569 = {
 			add_province_modifier = {
-				name = fee_deccani_sultanates_unregulated_trade
+				name = fee_dec_unregulated_trade
 				duration = -1
 			}
 		}
 	}
 
 	option = {
-		name = FEE_Deccani_Sultanates_Events.3.OPT3
+		name = FEE_Deccan_Events.3.OPT3
 
 		highlight = yes
 		trigger = {
@@ -262,10 +262,10 @@ country_event = {
 			}
 		}
 
-		set_country_flag = fee_deccani_sultanates_southern_capital
+		set_country_flag = fee_dec_southern_capital
 		add_years_of_income = -1.25
 		add_country_modifier = {
-			name = fee_deccani_sultanates_bijapuri_mint
+			name = fee_dec_bijapuri_mint
 			duration = 18250
 		}
 		if = {
@@ -277,11 +277,11 @@ country_event = {
 		569 = {
 			add_or_upgrade_trade_building = yes
 			add_province_modifier = {
-				name = fee_deccani_sultanates_hundred_bazaars
+				name = fee_dec_hundred_bazaars
 				duration = -1
 			}
 			add_province_modifier = {
-				name = fee_deccani_sultanates_new_imperial_capital
+				name = fee_dec_new_imperial_capital
 				duration = -1
 				hidden = yes
 			}
@@ -290,7 +290,7 @@ country_event = {
 					owned_by = ROOT
 				}
 				add_province_modifier = {
-					name = fee_deccani_sultanates_new_imperial_capital_region
+					name = fee_dec_new_imperial_capital_region
 					duration = -1
 				}
 			}
@@ -299,7 +299,7 @@ country_event = {
 					owned_by = ROOT
 				}
 				add_province_modifier = {
-					name = fee_deccani_sultanates_new_imperial_capital_region
+					name = fee_dec_new_imperial_capital_region
 					duration = -1
 				}
 			}
@@ -307,7 +307,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Deccani_Sultanates_Events.3.OPT4
+		name = FEE_Deccan_Events.3.OPT4
 
 		highlight = yes
 		trigger = {
@@ -324,17 +324,17 @@ country_event = {
 
 		add_years_of_income = -1.25
 		add_country_modifier = {
-			name = fee_deccani_sultanates_bijapuri_mint
+			name = fee_dec_bijapuri_mint
 			duration = 18250
 		}
 		569 = {
 			add_or_upgrade_trade_building = yes
 			add_province_modifier = {
-				name = fee_deccani_sultanates_hundred_bazaars
+				name = fee_dec_hundred_bazaars
 				duration = -1
 			}
 			add_province_modifier = {
-				name = fee_deccani_sultanates_winter_capital_of_the_mughals
+				name = fee_dec_winter_capital_of_the_mughals
 				duration = -1
 			}
 			deccan_region = {
@@ -342,7 +342,7 @@ country_event = {
 					owned_by = ROOT
 				}
 				add_province_modifier = {
-					name = fee_deccani_sultanates_winter_capital_of_the_mughals_region
+					name = fee_dec_winter_capital_of_the_mughals_region
 					duration = -1
 				}
 			}
@@ -352,9 +352,9 @@ country_event = {
 
 # Cultural Center for the Deccan
 country_event = {
-	id = FEE_Deccani_Sultanates_Events.4
-	title = FEE_Deccani_Sultanates_Events.4.T
-	desc = FEE_Deccani_Sultanates_Events.4.D
+	id = FEE_Deccan_Events.4
+	title = FEE_Deccan_Events.4.T
+	desc = FEE_Deccan_Events.4.D
 	picture = GOOD_WITH_MONARCH_eventPicture
 
 	fire_only_once = yes
@@ -373,7 +373,7 @@ country_event = {
 		569 = {
 			OR = {
 				is_capital_of = ROOT
-				has_province_modifier = fee_deccani_sultanates_winter_capital_of_the_mughals
+				has_province_modifier = fee_dec_winter_capital_of_the_mughals
 			}
 			OR = {
 				NOT = { has_dlc = "Mandate of Heaven" }
@@ -387,11 +387,11 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Deccani_Sultanates_Events.4.OPT1
+		name = FEE_Deccan_Events.4.OPT1
 
 		569 = {
 			add_province_modifier = {
-				name = fee_deccani_sultanates_deccani_cultural_center
+				name = fee_dec_deccani_cultural_center
 				duration = -1
 			}
 		}
@@ -400,9 +400,9 @@ country_event = {
 
 # The Darush-Shafa
 country_event = {
-	id = FEE_Deccani_Sultanates_Events.5
-	title = FEE_Deccani_Sultanates_Events.5.T
-	desc = FEE_Deccani_Sultanates_Events.5.D
+	id = FEE_Deccan_Events.5
+	title = FEE_Deccan_Events.5.T
+	desc = FEE_Deccan_Events.5.D
 	picture = COLONIZATION_eventPicture
 
 	fire_only_once = yes
@@ -426,7 +426,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Deccani_Sultanates_Events.5.OPT1
+		name = FEE_Deccan_Events.5.OPT1
 
 		ai_chance = {
 			factor = 0.5
@@ -444,13 +444,13 @@ country_event = {
 			mil = 50
 		}
 		add_country_modifier = {
-			name = fee_deccani_sultanates_hospitals_of_bijapur
+			name = fee_dec_hospitals_of_bijapur
 			duration = -1
 		}
 	}
 
 	option = {
-		name = FEE_Deccani_Sultanates_Events.5.OPT2
+		name = FEE_Deccan_Events.5.OPT2
 
 		ai_chance = {
 			factor = 0.5
@@ -463,9 +463,9 @@ country_event = {
 
 # Ratirahasya - How to please a King
 country_event = {
-	id = FEE_Deccani_Sultanates_Events.6
-	title = FEE_Deccani_Sultanates_Events.6.T
-	desc = FEE_Deccani_Sultanates_Events.6.D
+	id = FEE_Deccan_Events.6
+	title = FEE_Deccan_Events.6.T
+	desc = FEE_Deccan_Events.6.D
 	picture = COLONIZATION_eventPicture
 
 	trigger = {
@@ -489,7 +489,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Deccani_Sultanates_Events.6.OPT1
+		name = FEE_Deccan_Events.6.OPT1
 
 		ai_chance = { factor = 0.5 }
 
@@ -501,7 +501,7 @@ country_event = {
 			add_piety = -0.15
 			add_prestige_or_monarch_power = { amount = 25 }
 			add_ruler_modifier = {
-				name = fee_deccani_sultanates_institutionalized_ratirahasya
+				name = fee_dec_institutionalized_ratirahasya
 				duration = -1
 			}
 		}
@@ -511,7 +511,7 @@ country_event = {
 			}
 			add_prestige_or_monarch_power = { amount = 25 }
 			add_ruler_modifier = {
-				name = fee_deccani_sultanates_blessings_of_kamadeva
+				name = fee_dec_blessings_of_kamadeva
 				duration = -1
 			}
 		}
@@ -519,14 +519,14 @@ country_event = {
 			add_adm_power = -25
 			add_prestige = -10
 			add_ruler_modifier = {
-				name = fee_deccani_sultanates_ratirahasya_in_the_court
+				name = fee_dec_ratirahasya_in_the_court
 				duration = -1
 			}
 		}
 	}
 
 	option = {
-		name = FEE_Deccani_Sultanates_Events.6.OPT2
+		name = FEE_Deccan_Events.6.OPT2
 
 		ai_chance = { factor = 0.5 }
 
@@ -537,7 +537,7 @@ country_event = {
 			add_piety = 0.15
 			add_prestige = -10
 			add_ruler_modifier = {
-				name = fee_deccani_sultanates_throw_this_smut_out
+				name = fee_dec_throw_this_smut_out
 				duration = -1
 			}
 		}
@@ -548,7 +548,7 @@ country_event = {
 			add_prestige = -10
 			add_adm_power = 100
 			add_ruler_modifier = {
-				name = fee_deccani_sultanates_sensualism_censored
+				name = fee_dec_sensualism_censored
 				duration = -1
 			}
 		}
@@ -556,9 +556,92 @@ country_event = {
 			add_adm_power = 25
 			add_prestige_or_monarch_power = { amount = 25 }
 			add_ruler_modifier = {
-				name = fee_deccani_sultanates_hindu_rituals_censored
+				name = fee_dec_hindu_rituals_censored
 				duration = -1
 			}
 		}
+	}
+}
+
+# Expand Golkonda Fort
+country_event = {
+	id = FEE_Deccan_Events.7
+	title = FEE_Deccan_Events.7.T
+	desc = FEE_Deccan_Events.7.D
+	picture = FORT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GOC
+		is_year = 1507
+		NOT = { is_year = 1590 }
+	}
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	option = {
+		name = FEE_Deccan_Events.7.OPT1
+
+		add_treasury = -25
+		542 = {
+			add_base_manpower = 1
+			add_province_modifier = {
+				name = fee_dec_expansion_golkonda_fort
+				duration = 1
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Deccan_Events.7.OPT2
+
+		add_mil_power = 15
+	}
+}
+
+# Move the capital
+country_event = {
+	id = FEE_Deccan_Events.8
+	title = FEE_Deccan_Events.8.T
+	desc = FEE_Deccan_Events.8.D
+	picture = FORT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = GOC
+		owns = 542
+		is_year = 1570
+		NOT = { is_year = 1620 }
+	}
+
+	mean_time_to_happen = {
+		months = 30
+	}
+
+	option = {
+		name = FEE_Deccan_Events.8.OPT1
+		ai_chance = {
+			factor = 90
+		}
+
+		add_mil_power = 25
+		set_capital = 542
+		542 = {
+			add_base_tax = 1
+			add_base_production = 1
+		}
+	}
+
+	option = {
+		name = FEE_Deccan_Events.8.OPT2
+		ai_chance = {
+			factor = 10
+		}
+
+		add_treasury = 10
 	}
 }
