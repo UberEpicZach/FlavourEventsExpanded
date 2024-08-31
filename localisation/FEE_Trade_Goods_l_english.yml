@@ -202,6 +202,11 @@ FEE_Trade_Goods_Events.2000.T: "Booming Cotton Industry"
  FEE_Trade_Goods_Events.6001.tt.1: "Every owned province producing §YCoffee§! gets '§YCoffee Italica§!' until the end of the game, giving the following effects: \nLocal Goods Produced: §G+3.00§!\n"
  FEE_Trade_Goods_Events.6001.tt.2: "Every owned province producing §YCoffee§! gets '§YCoffee Italica§!' until the end of the game, giving the following effects: \nLocal Goods Produced: §G+1.00§!\n"
 
+### Wool
+ FEE_Trade_Goods_Events.7000.T: "Cashmere Wool"
+ FEE_Trade_Goods_Events.7000.D: "Our wool provinces in the Kashmir region have long been renowned for their quality, but recent events have brought even greater prosperity. A wave of Turkistani weavers has settled in the area, bringing with them advanced techniques in wool processing. Their expertise promises to enhance our production significantly. With this newfound knowledge, our wool industry is poised for growth, and the wealth of our nation will surely increase. Let us celebrate this fortuitous development and ensure that our prosperity continues to rise."
+ FEE_Trade_Goods_Events.7000.OPT1: "Invite the Turkistani weavers."
+
 # Modifiers
  fee_trade_goods_cocoa_trade: "Cocoa trade"
  desc_fee_trade_goods_cocoa_trade: ""
@@ -245,18 +250,18 @@ FEE_Trade_Goods_Events.2000.T: "Booming Cotton Industry"
  fee_trade_goods_catanzaro_seta: "Seta di Catanzaro"
  desc_fee_nap_catanzaro_seta: ""
  fee_trade_goods_foreign_craftsman: "Foreign Craftsman"
- desc_fee_nap_silk_foreign_craftsman: ""
+ desc_fee_trade_goods_foreign_craftsman: ""
  fee_trade_goods_consolato_seta: "Consolato della Seta"
- desc_fee_nap_silk_consolato_seta: ""
+ desc_fee_trade_goods_consolato_seta: ""
  fee_trade_goods_silk_new_world: "Silk for the New World"
- desc_fee_nap_silk_new_world: ""
+ desc_fee_trade_goods_new_world: ""
  fee_trade_goods_neapolitan_black: "Neapolitan Black"
  desc_fee_nap_neapolitan_black: ""
 
  fee_trade_goods_foreign_craftsman_palermo: "Foreign Craftsman"
- desc_fee_nap_silk_foreign_craftsman_palermo: ""
+ desc_fee_trade_goods_foreign_craftsman_palermo: ""
  fee_trade_goods_jewish_craftsman_messina: "Jewish Craftsman"
- desc_fee_nap_silk_jewish_craftsman_messina: ""
+ desc_fee_trade_goods_jewish_craftsman_messina: ""
  fee_trade_goods_refugess_from_palermo: "Refugees from Palermo"
  desc_fee_nap_catanzaro_seta_jews_palermo: ""
  fee_trade_goods_refugees_messina: "Refugees from Messina"
@@ -265,6 +270,9 @@ FEE_Trade_Goods_Events.2000.T: "Booming Cotton Industry"
  fee_trade_goods_dependence_on_diamonds: "Dependence on Diamonds"
 
  fee_trade_goods_sugar_rush: "Sugar Rush"
+
+ fee_trade_goods_cashmere_wool: "Cashmere"
+ desc_fee_trade_goods_cashmere_wool: ""
 
 ### Coffee:
  fee_trade_goods_exotic_garden_modifier: "Exotic Garden"

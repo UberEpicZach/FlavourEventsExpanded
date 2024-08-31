@@ -601,6 +601,12 @@ on_trade_good_changed = {
 		}
 		remove_province_modifier = fee_bahmanis_bidir_district
 	}
+	if = {
+		limit = {
+			NOT = { trade_goods = wool }
+		}
+		remove_province_modifier = fee_trade_goods_cashmere_wool
+	}
 }
 
 #ROOT - Winer #FROM - Loser
