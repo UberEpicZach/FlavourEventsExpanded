@@ -250,7 +250,7 @@ country_event = {
 			factor = 0
 		}
 
-		add_legitimacy_or_mil_power = { amount = 25 republican_tradition = 12 }
+		add_legitimacy_equivalent = { amount = 25 republican_tradition = 12 }
 		add_prestige_or_monarch_power = { amount = 15 }
 		capital_scope = {
 			add_base_tax = 1

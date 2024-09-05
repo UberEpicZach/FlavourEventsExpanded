@@ -339,7 +339,7 @@ country_event = {
 			name = "Mujahid Khan"
 			dynasty = "Dandani"
 		}
-		add_legitimacy_equivalent = { amount = 10 }
+		add_legitimacy_equivalent = { amount = 10 republican_tradition = 5 }
 
 		ai_chance = {
 			factor = 0
@@ -353,7 +353,7 @@ country_event = {
 			who = MER
 		}
 		add_stability_or_adm_power = yes
-		add_legitimacy_equivalent = { amount = 25 }
+		add_legitimacy_equivalent = { amount = 25 republican_tradition = 13 }
 		if = {
 			limit = {
 				OR = {
