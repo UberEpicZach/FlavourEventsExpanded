@@ -18,6 +18,7 @@ country_event = {
 		religion_group = muslim
 		is_year = 1500
 		NOT = { is_year = 1530 }
+		owns = 451
 	}
 
 	mean_time_to_happen = {
@@ -46,6 +47,13 @@ country_event = {
 		add_ruler_personality = conqueror_personality
 		convert_ruler_to_general = yes
 
+		define_ruler_to_general = {
+			fire = 6
+			shock = 5
+			manuever = 4
+			siege = 5
+			trait = cannoneer_personality
+		}
 		hidden_effect = {
 			set_country_flag = fee_babur
 		}
@@ -57,7 +65,9 @@ country_event = {
 			factor = 10
 		}
 
-		capital_scope = {
+		goto = 451
+
+		451 = {
 			spawn_rebels = {
 				size = 2
 				type = pretender_rebels
