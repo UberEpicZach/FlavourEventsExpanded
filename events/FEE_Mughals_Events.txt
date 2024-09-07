@@ -33,14 +33,14 @@ country_event = {
 		kill_heir = { allow_new_heir = no }
 		kill_ruler = yes
 		define_ruler = {
-			name = "Bâbur"
+			name = "Babur"
 			dynasty = "Timurid"
 			culture = uzbehk
 			age = 20
 			adm = 5
 			dip = 6
 			mil = 6
-			attach_leader = "Bâbur"
+			attach_leader = "Babur"
 		}
 		add_ruler_personality = patron_of_arts_personality
 		add_ruler_personality = conqueror_personality
@@ -61,11 +61,10 @@ country_event = {
 			spawn_rebels = {
 				size = 2
 				type = pretender_rebels
-				leader = "Bâbur"
+				leader = "Babur"
 				leader_dynasty = "Timurid"
 				culture = uzbehk
 				religion = sunni
-
 			}
 		}
 	}
