@@ -1,8 +1,10 @@
-#Mughal events
-
 namespace = FEE_Mughals_Events
 
-#The Red Fort
+#############
+### Babur ###
+#############
+
+# Young Timurid prince without a kingdom
 country_event = {
 	id = FEE_Mughals_Events.1
 	title = FEE_Mughals_Events.1.T
@@ -12,40 +14,41 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = MUG
-		owns = 522
-		is_year = 1630
-		NOT = { is_year = 1670 }
+		tag = AFG
+		religion_group = muslim
+		is_year = 1500
+		NOT = { is_year = 1530 }
 	}
 
 	mean_time_to_happen = {
-		months = 240
-		modifier = {
-			factor = 2
-			is_at_war = yes
-		}
+		months = 24
 	}
 
 	option = {
 		name = FEE_Mughals_Events.1.OPT1
 		ai_chance = {
-			factor = 90
-			modifier = {
-				num_of_loans = 25
-				factor = 0
-			}
+			factor = 80
 		}
 
-		add_years_of_income = -0.2
-		add_dip_power = 20
-		add_mil_power = 30
-		522 = {
-			add_province_modifier = {
-				name = fee_mug_red_fort
-				duration = -1
-			}
+		kill_heir = { allow_new_heir = no }
+		kill_ruler = yes
+		define_ruler = {
+			name = "Bâbur"
+			dynasty = "Timurid"
+			culture = uzbehk
+			age = 20
+			adm = 5
+			dip = 6
+			mil = 6
+			attach_leader = "Bâbur"
 		}
-		add_prestige_or_monarch_power = { amount = 20 }
+		add_ruler_personality = patron_of_arts_personality
+		add_ruler_personality = conqueror_personality
+		convert_ruler_to_general = yes
+
+		hidden_effect = {
+			set_country_flag = fee_babur
+		}
 	}
 
 	option = {
@@ -54,35 +57,58 @@ country_event = {
 			factor = 10
 		}
 
-		add_adm_power = 10
-		add_prestige = -1
+		capital_scope = {
+			spawn_rebels = {
+				size = 2
+				type = pretender_rebels
+				leader = "Bâbur"
+				leader_dynasty = "Timurid"
+				culture = uzbehk
+				religion = sunni
+
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Mughals_Events.1.OPT3
+		trigger = {
+			dynasty = "Timurid"
+		}
+		ai_chance = {
+			factor = 10
+		}
+
+		define_general = {
+			fire = 6
+			shock = 5
+			manuever = 4
+			siege = 5
+			trait = cannoneer_personality
+		}
 	}
 }
 
-#Integration with Indian Culture
+# Gardens of Babur
 country_event = {
 	id = FEE_Mughals_Events.2
 	title = FEE_Mughals_Events.2.T
 	desc = FEE_Mughals_Events.2.D
-	picture = FORT_eventPicture
+	picture = GREAT_BUILDING_eventPicture
 
 	fire_only_once = yes
 
 	trigger = {
-		tag = MUG
-		num_of_owned_provinces_with = {
-			value = 4
-			religion = hinduism
-		}
+		tag = AFG
+		has_country_flag = fee_babur
+		owns = 451
 	}
 
 	mean_time_to_happen = {
-		months = 240
-		modifier = {
-			factor = 0.7
-			has_idea_group = humanist_ideas
-		}
+		months = 12
 	}
+
+	goto = 451
 
 	option = {
 		name = FEE_Mughals_Events.2.OPT1
@@ -90,36 +116,47 @@ country_event = {
 			factor = 80
 		}
 
-		add_dip_power = 50
-		add_country_modifier = {
-			name = fee_mug_integration_hindu_culture
-			duration = 36500
+		add_years_of_income = -2
+		451	= {
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+			add_prosperity = 50
+			if = {
+				limit = {
+					is_expanded_mod_active = { mod = great_monuments }
+					NOT = {
+						has_great_project = {
+							type = gme_gardens_babur
+							tier = 3
+						}
+					}
+				}
+				add_great_project_tier = {
+					type = gme_gardens_babur
+					tier = 1
+				}
+			}
+			else = {
+				add_permanent_province_modifier = {
+					name = fee_mug_bagh_babur
+					duration = -1
+				}
+			}
 		}
 	}
 
 	option = {
 		name = FEE_Mughals_Events.2.OPT2
 		ai_chance = {
-			factor = 10
+			factor = 20
 		}
 
-		add_country_modifier = {
-			name = fee_mug_hindu_conversion_policy
-			duration = 730
-		}
-	}
-
-	option = {
-		name = FEE_Mughals_Events.2.OPT3
-		ai_chance = {
-			factor = 10
-		}
-
-		add_stability_or_adm_power = yes
+		add_prestige = -5
 	}
 }
 
-#Payment from tributary
+# Ottoman generals
 country_event = {
 	id = FEE_Mughals_Events.3
 	title = FEE_Mughals_Events.3.T
@@ -127,16 +164,11 @@ country_event = {
 	picture = CONQUEST_eventPicture
 
 	trigger = {
-		tag = MUG
-		NOT = { has_country_flag = fee_mug_received_tribute }
-		any_subject_country = {
-			OR = {
-				NOT = { has_country_flag = fee_mug_paid_tribute }
-				had_country_flag = {
-					flag = fee_mug_paid_tribute
-					days = 3650
-				}
-			}
+		tag = AFG
+		has_country_flag = fee_babur
+		has_opinion = {
+			who = TUR
+			value = 50
 		}
 	}
 
@@ -144,24 +176,38 @@ country_event = {
 		months = 120
 	}
 
-	immediate = {
-		hidden_effect = {
-			set_country_flag = fee_mug_received_tribute
-		}
-	}
-
 	option = {
 		name = FEE_Mughals_Events.3.OPT1
 
-		add_years_of_income = 0.2
-		random_subject_country = {
-			reverse_add_opinion = {
-				who = MUG
-				modifier = fee_mug_paid_tribute
+		define_general = {
+			fire = 6
+			shock = 3
+			manuever = 4
+			siege = 2
+			name = "Mustafa Rumi"
+			trait = master_of_arms_personality
+		}
+		if = {
+			limit = {
+				is_expanded_mod_active = { mod = advisor_types }
 			}
-			add_opinion = {
-				who = MUG
-				modifier = fee_mug_paid_tribute
+			define_advisor = {
+				type = ate_advisor_master_of_artillery
+				name = "Ustad Ali Quli"
+				skill = 3
+				cost_multiplier = 0.66
+				religion = sunni
+				culture = turkish
+			}
+		}
+		else = {
+			define_advisor = {
+				type = commandant
+				name = "Ustad Ali Quli"
+				skill = 3
+				cost_multiplier = 0.66
+				religion = sunni
+				culture = turkish
 			}
 		}
 	}

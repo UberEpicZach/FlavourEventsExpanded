@@ -1,26 +1,22 @@
 ﻿l_english:
- FEE_Mughals_Events.1.T: "The Red Fort"
- FEE_Mughals_Events.1.D: "Finished in 1648, the Mughal Emperor Shah Jahan built an enormous palace complex, with imposing, red sandstone walls, taller than those of any other fort in India.\n\nThe Red Fort would serve as the emperor's residence in the new capital of Delhi. Designed by Ahmad Lahauri, the principal architect of the Taj Mahal, it was a grand monument to Mughal architecture's mix of Islamic, Persian, Timurid and Indian culture. The fort complex was so grand that a canal, the \"Stream of Paradise\" connected the pavillions of the Imperial Residence.\n\nIt became a major influence on later buildings and gardens, and was a symbol of imperial power and military might until the fall of the empire."
- FEE_Mughals_Events.1.OPT1: "We need a grand fort!"
- FEE_Mughals_Events.1.OPT2: "The plans sound too expensive. Let's build a little garden instead."
+ FEE_Mughals_Events.1.T: "Young Timurid prince without a kingdom"
+ FEE_Mughals_Events.1.D: "A young Timurid prince who became ruler of Fergana when he was 11 and conquered Samarkand twice at the age of 15. But because was too capable his relatives installed his younger and more controllable brother on the throne of Fergana. While he was trying to reclaim Fergana he was defeated in battle and thus Babur was without a kingdom. His situation was so dire that wandering through the mountains he and his followers only had 1 tent which was used by his mother. Fortunately, he has finally found some luck in Afghanistan, Kabul is ruled by an unpopular and weak ruler so it would be easy for him to take over it."
+ FEE_Mughals_Events.1.OPT1: "We can only submit to him."
+ FEE_Mughals_Events.1.OPT2: "Try to fight off the Timurid prince."
+ FEE_Mughals_Events.1.OPT3: "Welcome Babur to your court."
 
- FEE_Mughals_Events.2.T: "Integration With Indian Culture"
- FEE_Mughals_Events.2.D: "Over the course of its conquests in India, the Mughal's stability was thanks to an achievement that had evaded numerous conquerors before them. Loyalty from the hindus.\n\nWhile muslim and Persian in origin, Mughal custom and government practices developed to accomodate those of the conquered Indian regions. Instead of single-minded opression, they exhibited practiced understanding of the cultures they ruled over. Over time, local culture was adopted more and more by the ruling class, ensuring the empire was governed by a fusion of cultural influences. This resulted in large parts of India was controlled by the empire and vassal sultanates under a muslim elite, but supported by hindu lords, generals and bureaucrats."
- FEE_Mughals_Events.2.OPT1: "As we come to accept their ways, they accept ours."
- FEE_Mughals_Events.2.OPT2: "One empire, one religion. Our subjects will be uniform and united."
- FEE_Mughals_Events.2.OPT3: "Let's focus on expanding our bureaucracy the way we always have."
+ FEE_Mughals_Events.2.T: "Gardens of Babur"
+ FEE_Mughals_Events.2.D: ""
+ FEE_Mughals_Events.2.OPT1: "Re-develop the area into a guest house."
+ FEE_Mughals_Events.2.OPT2: "It is too expensive."
 
- FEE_Mughals_Events.3.T: "Payment From Tributary"
- FEE_Mughals_Events.3.D: "With numerous vassal sultanates swearing loyalty to the empire, gold flowed from the regions to the imperial court.\n\nThis year one of our tributaries has provided us with great riches beyond our regular demands."
- FEE_Mughals_Events.3.OPT1: "Blessed be [Root.Monarch.GetTitle] [Root.Monarch.GetName], and all [Root.Monarch.GetHerHis] servants."
+ FEE_Mughals_Events.3.T: "Ottoman generals"
+ FEE_Mughals_Events.3.D: ""
+ FEE_Mughals_Events.3.OPT1: "I have so much to learn from Ottoman tactics."
 
 # Modifiers
- fee_mug_red_fort: "The Red Fort"
- desc_fee_mug_red_fort: "A grand palace, fortification, and monument to our greatness."
- fee_mug_integration_hindu_culture: "Integration of Hindu Culture"
- desc_fee_mug_integration_hindu_culture: "We are embracing Hindu culture, to better understand and interact with our subjects."
- fee_mug_hindu_conversion_policy: "Hindu Conversion Policy"
- desc_fee_mug_hindu_conversion_policy: "We have decided the best way to unify our country is to turn each and every subject to our ways."
+ fee_mug_bagh_babur: "Bagh-e Babur"
+ desc_fee_mug_bagh_babur: ""
 
 # Opinion Modifiers
  fee_mug_paid_tribute: "Paid Tribute"
