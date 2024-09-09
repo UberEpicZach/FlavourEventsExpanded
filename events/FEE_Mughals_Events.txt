@@ -110,7 +110,15 @@ country_event = {
 	trigger = {
 		tag = AFG
 		has_country_flag = fee_babur
-		owns = 451
+		451 = {
+			owned_by = ROOT
+			NOT = {
+				has_great_project = {
+					type = gme_gardens_babur
+					tier = 3
+				}
+			}
+		}
 	}
 
 	mean_time_to_happen = {
