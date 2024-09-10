@@ -31,8 +31,10 @@ country_event = {
 			factor = 80
 		}
 
-		kill_heir = { allow_new_heir = no }
-		kill_ruler = yes
+		if = {
+			limit = { has_heir = yes }
+			kill_heir = { allow_new_heir = no }
+		}
 		define_ruler = {
 			name = "Babur"
 			dynasty = "Timurid"
@@ -41,20 +43,18 @@ country_event = {
 			adm = 5
 			dip = 6
 			mil = 6
-			attach_leader = "Babur"
 		}
-		add_ruler_personality = patron_of_arts_personality
-		add_ruler_personality = conqueror_personality
-		convert_ruler_to_general = yes
-
-		define_ruler_to_general = {
-			fire = 6
-			shock = 5
-			manuever = 4
-			siege = 5
-			trait = cannoneer_personality
-		}
+		custom_tooltip = fee_mug_babur_stats_tt
 		hidden_effect = {
+			add_ruler_personality = patron_of_arts_personality
+			add_ruler_personality = conqueror_personality
+			define_ruler_to_general = {
+				fire = 6
+				shock = 5
+				manuever = 4
+				siege = 5
+				trait = cannoneer_personality
+			}
 			set_country_flag = fee_babur
 		}
 	}
@@ -73,10 +73,10 @@ country_event = {
 				type = pretender_rebels
 				leader = "Babur"
 				leader_dynasty = "Timurid"
-				culture = uzbehk
-				religion = sunni
 			}
 		}
+		set_country_flag = fee_mug_fighting_babur_rebels
+		custom_tooltip = fee_mug_babur_rebel_tt
 	}
 
 	option = {
@@ -89,6 +89,7 @@ country_event = {
 		}
 
 		define_general = {
+			name = "Babur Timurid"
 			fire = 6
 			shock = 5
 			manuever = 4
@@ -108,7 +109,6 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = AFG
 		has_country_flag = fee_babur
 		owns = 451
 	}
@@ -133,6 +133,7 @@ country_event = {
 			add_prosperity = 50
 			if = {
 				limit = {
+					has_dlc = "Leviathan"
 					is_expanded_mod_active = { mod = great_monuments }
 					NOT = {
 						has_great_project = {
@@ -172,6 +173,8 @@ country_event = {
 	desc = FEE_Mughals_Events.3.D
 	picture = CONQUEST_eventPicture
 
+	fire_only_once = yes
+
 	trigger = {
 		tag = AFG
 		has_country_flag = fee_babur
@@ -204,7 +207,7 @@ country_event = {
 				type = ate_advisor_master_of_artillery
 				name = "Ustad Ali Quli"
 				skill = 3
-				cost_multiplier = 0.66
+				cost_multiplier = 0.34
 				religion = sunni
 				culture = turkish
 			}
@@ -214,10 +217,925 @@ country_event = {
 				type = commandant
 				name = "Ustad Ali Quli"
 				skill = 3
-				cost_multiplier = 0.66
+				cost_multiplier = 0.34
 				religion = sunni
 				culture = turkish
 			}
 		}
+		set_country_flag = fee_mug_ottoman_generals
 	}
 }
+
+# Modernize and train the army
+country_event = {
+	id = FEE_Mughals_Events.4
+	title = FEE_Mughals_Events.4.T
+	desc = FEE_Mughals_Events.4.D
+	picture = LAND_MILITARY_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = AFG
+		is_at_war = no
+		has_country_flag = fee_babur
+		has_country_flag = fee_mug_ottoman_generals
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = {
+		name = FEE_Mughals_Events.4.OPT1
+		add_mil_power = -200
+		add_ruler_modifier = { name = fee_mug_ottoman_tactics }
+		clr_country_flag = fee_mug_ottoman_generals
+	}
+}
+
+# Timurid claim on Punjab
+country_event = {
+	id = FEE_Mughals_Events.5
+	title = FEE_Mughals_Events.5.T
+	desc = FEE_Mughals_Events.5.D
+	picture = BIG_BOOK_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = AFG
+		has_country_flag = fee_babur
+		NOT = { has_country_flag = fee_babur_timurid_path }
+		NOT = { num_of_cities = 12 }
+		is_year = 1520
+		NOT = {
+			any_owned_province = {
+				OR = {
+					area = lahore_area
+					area = sind_sagar_area
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = FEE_Mughals_Events.5.OPT1
+
+		custom_tooltip = fee_mug_punjab_claim_tt
+		lahore_area = { add_core = ROOT }
+		sind_sagar_area = { add_core = ROOT }
+		set_country_flag = fee_punjab_claim
+	}
+}
+
+# Struggle for Punjab
+country_event = {
+	id = FEE_Mughals_Events.6
+	title = FEE_Mughals_Events.6.T
+	desc = FEE_Mughals_Events.6.D
+	picture = 12_Maratha_Estate_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = AFG
+		is_free_or_tributary_trigger = yes
+		is_at_war = no
+		has_country_flag = fee_babur
+		has_country_flag = fee_punjab_claim
+		lahore_area = {
+			type = all
+			owned_by = DLH
+		}
+		sind_sagar_area = {
+			type = all
+			owned_by = DLH
+		}
+		any_neighbor_province = { owned_by = DLH }
+	}
+
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = fee_punjab_claim
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = {
+		name = FEE_Mughals_Events.6.OPT1
+
+		DLH = {
+			country_event = {
+				id = FEE_Mughals_Events.7
+			}
+		}
+	}
+}
+
+# Babur demands Punjab (Delhi)
+country_event = {
+	id = FEE_Mughals_Events.7
+	title = FEE_Mughals_Events.7.T
+	desc = FEE_Mughals_Events.7.D
+	picture = BAD_WITH_MONARCH_eventPicture
+
+	is_triggered_only = yes
+
+	option = { # Refuse
+		name = FEE_Mughals_Events.7.OPT1
+
+		custom_tooltip = fee_mug_delhi_warning_tt
+		AFG = {
+			country_event = {
+				id = FEE_Mughals_Events.8
+				days = 60
+			}
+		}
+	}
+
+	option = { # Accept
+		name = FEE_Mughals_Events.7.OPT2
+
+		add_prestige = -50
+		lahore_area = { cede_province = AFG }
+		sind_sagar_area = { cede_province = AFG }
+		ai_chance = { factor = 0 }
+	}
+}
+
+# Delhi refuses our demands
+country_event = {
+	id = FEE_Mughals_Events.8
+	title = FEE_Mughals_Events.8.T
+	desc = FEE_Mughals_Events.8.D
+	picture = BORDER_TENSION_eventPicture
+
+	is_triggered_only = yes
+
+	option = { # attack
+		name = FEE_Mughals_Events.8.OPT1
+		declare_war_with_cb = {
+			casus_belli = cb_annex
+			who = DLH
+		}
+		custom_tooltip = fee_mug_delhi_war_modifier_tt
+		hidden_effect = {
+			DLH = {
+				country_event = {
+					id = FEE_Mughals_Events.9
+				}
+			}
+			add_country_modifier = {
+				name = fee_mug_babur_tactics
+				duration = -1
+			}
+		}
+	}
+
+	option = { # back down
+		name = FEE_Mughals_Events.8.OPT2
+
+		lahore_area = {
+			remove_core = ROOT
+			add_permanent_claim = ROOT
+		}
+		sind_sagar_area = {
+			remove_core = ROOT
+			add_permanent_claim = ROOT
+		}
+		ai_chance = { factor = 0 }
+	}
+}
+
+# Babur's attack (Delhi)
+country_event = {
+	id = FEE_Mughals_Events.9
+	title = FEE_Mughals_Events.9.T
+	desc = FEE_Mughals_Events.9.D
+	picture = muslim_CIVIL_WAR_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Mughals_Events.9.OPT1
+
+		convert_ruler_to_general = 40
+		custom_tooltip = fee_mug_delhi_how_to_win_tt
+	}
+}
+
+# Dreams of Punjab shattered
+country_event = {
+	id = FEE_Mughals_Events.10
+	title = FEE_Mughals_Events.10.T
+	desc = FEE_Mughals_Events.10.D
+	picture = COUNTRY_COLLAPSE_eventPicture
+	major = yes
+
+	trigger = {
+		tag = AFG
+		war_with = DLH
+		has_country_modifier = fee_mug_babur_tactics
+		OR = {
+			capital_scope = {
+				controller = {
+					OR = {
+						tag = DLH
+						alliance_with = DLH
+					}
+				}
+			}
+			NOT = {
+				war_score_against = {
+					who = DLH
+					value = -49
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			remove_country_modifier = fee_mug_babur_tactics
+		}
+	}
+
+	option = {
+		name = FEE_Mughals_Events.10.OPT1
+
+		white_peace = DLH
+		add_prestige = -50
+		lahore_area = { remove_core = ROOT }
+		sind_sagar_area = { remove_core = ROOT }
+		DLH = {
+			add_prestige_or_monarch_power = { value = 15 }
+			add_legitimacy = 10
+			add_treasury = 50
+		}
+	}
+}
+
+# Triumph over Hindustan
+country_event = {
+	id = FEE_Mughals_Events.11
+	title = FEE_Mughals_Events.11.T
+	desc = FEE_Mughals_Events.11.D
+	picture = CONQUEST_eventPicture
+	major = yes
+
+	trigger = {
+		tag = AFG
+		war_with = DLH
+		has_country_modifier = fee_mug_babur_tactics
+		OR = {
+			has_country_flag = fee_mug_defeated_delhi
+			war_score_against = {
+				who = DLH
+				value = 40
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = fee_mug_defeated_delhi
+			remove_country_modifier = fee_mug_babur_tactics
+		}
+	}
+
+	option = {
+		name = FEE_Mughals_Events.11.OPT1
+
+		add_prestige_or_monarch_power = { value = 50 }
+		remove_ruler_personality = conqueror_personality
+		add_ruler_personality = legendary_conqueror_personality
+		custom_tooltip = fee_mug_annex_delhi_tt
+		add_ruler_modifier = { name = fee_mug_babur_generalship }
+		hidden_effect = {
+			white_peace = DLH
+			DLH = {
+				release_all_subjects = yes
+				every_core_province = {
+					add_core = ROOT
+				}
+				every_owned_province = {
+					cede_province = ROOT
+				}	
+			}
+			hindusthan_region = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = fee_mug_memories_of_timur
+					duration = 3650
+				}
+			}
+			if = {
+				limit = {
+					exists = MER
+				}
+				MER = {
+					country_event = {
+						id = FEE_Mughals_Events.12
+						days = 1825
+					}
+				}
+			}
+			522 = { # copy of form mughals decision from here
+				move_capital_effect = yes
+			}
+			change_tag = MUG
+			hindusthan_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = MUG
+			}
+			on_change_tag_effect = yes
+			restore_country_name = yes
+			swap_non_generic_missions = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			change_primary_culture = kanauji
+			set_government_rank = 3
+			522 = {
+			 	add_base_tax = 1
+				add_base_production = 1
+			 	add_base_manpower = 1
+			}
+			if = {
+				limit = {
+					NOT = { technology_group = indian }
+				}
+				change_technology_group = indian
+				change_unit_type = indian
+			}
+			if = {
+				limit = {
+					NOT = { government = monarchy }
+					is_revolutionary = no
+				}
+				change_government = monarchy
+			}
+			if = {
+				limit = {
+					has_dlc = "Dharma"
+					is_revolutionary = no
+				}
+				add_government_reform = indian_sultanate_reform
+			}
+			if = {
+				limit = {
+					OR = {
+						has_dlc = "Dharma"
+						has_dlc = "King of Kings"
+						has_dlc = "Winds of Change"
+					}
+					is_revolutionary = no
+				}
+				add_government_reform = mughal_government
+			}
+			if = {
+				limit = {
+					OR = {
+						has_dlc = "Dharma"
+						has_dlc = "Domination"
+					}
+					reform_level = 3
+				}
+				add_government_reform = mansabdari_reform
+			}
+			if = {
+				limit = {
+					OR = {
+						has_dlc = "Dharma"
+						has_dlc = "King of Kings"
+					}
+					reform_level = 4
+				}
+				add_government_reform = zabt_reform
+			}
+			if = {
+				limit = {
+					has_reform = states_general_reform
+				}
+				remove_government_reform = states_general_reform
+			}
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			every_province = {
+				limit = {
+					NOT = { owned_by = MUG }
+					OR = {
+						region = persia_region
+						region = khorasan_region
+						region = caucasia_region
+						region = central_asia_region
+					}
+					is_permanent_claim = MUG
+				}
+				remove_claim = MUG
+			}
+			every_province = {
+				limit = {
+					NOT = { owned_by = MUG }
+					OR = {
+						region = persia_region
+						region = khorasan_region
+						region = caucasia_region
+						region = central_asia_region
+					}
+					is_core = MUG
+				}
+				remove_core = MUG
+			}
+			set_country_flag = formed_mughal_empire_flag
+		}
+	}
+}
+
+# Timurid incursion in India (Mewar)
+country_event = {
+	id = FEE_Mughals_Events.12
+	title = FEE_Mughals_Events.12.T
+	desc = FEE_Mughals_Events.12.D
+	picture = SPY_eventPicture
+
+	is_triggered_only = yes
+
+	option = { #attack
+		name = FEE_Mughals_Events.12.OPT1
+		
+		custom_tooltip = fee_mug_mewar_coalition_tt
+		declare_war_with_cb = {
+			casus_belli = cb_humiliate
+			who = MUG
+		}
+		add_years_of_income = 2
+		add_yearly_manpower = 2
+		custom_tooltip = fee_mug_mewar_modifier_tt
+		capital_scope = {
+			build_to_forcelimit = {
+				infantry = 0.7
+				cavalry = 0.3
+			}
+		}
+		hidden_effect = {
+			add_country_modifier = {
+				name = fee_mug_rajput_coalition
+				duration = -1
+			}
+			MUG = {
+				country_event = {
+					id = FEE_Mughals_events.13
+				}
+			}
+		}
+	}
+
+	option = { #back down
+		name = FEE_Mughals_Events.12.OPT2
+
+		custom_tooltip = fee_mug_mewar_back_down_tt
+		ai_chance = { factor = 0 }
+	}
+}
+
+# Rajput Attack
+country_event = {
+	id = FEE_Mughals_Events.13
+	title = FEE_Mughals_Events.13.T
+	desc = FEE_Mughals_Events.13.D
+	picture = 3_Rajput_Estate__eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Mughals_Events.13.OPT1
+
+		custom_tooltip = fee_mug_rajput_attack_tt
+		hidden_effect = {
+			add_country_modifier = {
+				name = fee_mug_rajput_fear
+				duration = -1
+			}
+			set_country_flag = fee_mug_fighting_rajput_coalition
+		}
+	}
+}
+
+# Rajput victory
+country_event = {
+	id = FEE_Mughals_Events.14
+	title = FEE_Mughals_Events.14.T
+	desc = FEE_Mughals_Events.14.D
+	picture = COUNTRY_COLLAPSE_eventPicture
+	major = yes
+
+	trigger = {
+		tag = MUG
+		has_country_flag = fee_mug_fighting_rajput_coalition
+		NOT = {
+			war_score_against = {
+				who = MER
+				value = -49
+			}
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = fee_mug_fighting_rajput_coalition
+			white_peace = MER
+			remove_country_modifier = fee_mug_rajput_fear
+			MER = { remove_country_modifier = fee_mug_rajput_coalition }
+		}
+	}
+
+	option = {
+		name = FEE_Mughals_Events.14.OPT1
+
+		tooltip = { white_peace = MER }
+		release = DLH
+		remove_country_modifier = fee_mug_babur_generalship
+		india_superregion = {
+			limit = {
+				NOT = { owned_by = ROOT }
+			}
+			remove_core = ROOT
+		}
+		hidden_effect = {
+			MER = {
+				country_event = {
+					id = FEE_Mughals_Events.15
+				}
+			}
+		}
+	}
+}
+
+# Timurid incursion expelled (Mewar)
+country_event = {
+	id = FEE_Mughals_Events.15
+	title = FEE_Mughals_Events.15.T
+	desc = FEE_Mughals_Events.15.D
+	picture = 12_Maratha_Estate_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Mughals_Events.15.OPT1
+
+		add_country_modifier = {
+			name = fee_mug_rajput_triumph
+			duration = 18250
+		}
+		if = {
+			limit = {
+				NOT = { adm = 6 }
+			}
+			change_adm = 1
+		}
+		else = {
+			add_adm_power = 100
+		}
+		if = {
+			limit = {
+				NOT = { dip = 6 }
+			}
+			change_dip = 1
+		}
+		else = {
+			add_dip_power = 100
+		}
+		if = {
+			limit = {
+				NOT = { mil = 6 }
+			}
+			change_mil = 1
+		}
+		else = {
+			add_mil_power = 100
+		}
+		DLH = {
+			country_event = {
+				id = FEE_Mughals_Events.16
+			}
+		}
+	}
+}
+
+# Rajput puppet
+country_event = {
+	id = FEE_Mughals_Events.16
+	title = FEE_Mughals_Events.16.T
+	desc = FEE_Mughals_Events.16.D
+	picture = CONQUEST_eventPicture
+	major = yes
+
+	is_triggered_only = yes
+
+	option = { # refuse
+		name = FEE_Mughals_Events.16.OPT1
+
+		MER = {
+			add_casus_belli = {
+				type = cb_vassalize_mission
+				target = DLH
+			}
+		}
+	}
+
+	option = { # accept
+		name = FEE_Mughals_Events.16.OPT2
+
+		MER = {
+			vassalize = DLH
+			add_historical_friend = DLH
+		}
+		add_historical_friend = MER
+	}
+}
+
+# Rajputs have been defeated
+country_event = {
+	id = FEE_Mughals_Events.17
+	title = FEE_Mughals_Events.17.T
+	desc = FEE_Mughals_Events.17.D
+	picture = 3_Rajput_Estate__eventPicture
+	major = yes
+
+	trigger = {
+		tag = MUG
+		has_country_flag = fee_mug_fighting_rajput_coalition
+		war_score_against = {
+			who = MER
+			value = 25
+		}
+	}
+
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = fee_mug_fighting_rajput_coalition
+			white_peace = MER
+			remove_country_modifier = fee_mug_rajput_fear
+			MER = { remove_country_modifier = fee_mug_rajput_coalition }
+		}
+	}
+
+	option = {
+		name = FEE_Mughals_Events.17.OPT1
+
+		tooltip = { white_peace = MER }
+		add_prestige_or_monarch_power = { value = 50 }
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+	}
+}
+
+# Summer Capital
+country_event = {
+	id = FEE_Mughals_Events.18
+	title = FEE_Mughals_Events.18.T
+	desc = FEE_Mughals_Events.18.D
+	picture = CITY_VIEW_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = MUG
+		owns_core_province = 451
+		OR = {
+			has_country_flag = fee_babur
+			NOT = { current_age = age_of_discovery }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = FEE_Mughals_Events.18.OPT1
+
+		451 = {
+			add_base_tax = 1
+			add_base_production = 1
+			add_base_manpower = 1
+			add_province_modifier = {
+				name = fee_mug_summer_capital
+				duration = -1
+			}
+		}
+	}
+}
+
+# Death of Babur
+country_event = {
+	id = FEE_Mughals_Events.19
+	title = FEE_Mughals_Events.19.T
+	desc = FEE_Mughals_Events.19.D
+	picture = KING_SICK_IN_BED_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		tag = MUG
+		has_country_flag = fee_babur
+	}
+
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = fee_babur
+		}
+	}
+
+	option = { # bury in capital
+		name = FEE_Mughals_Events.19.OPT1
+
+		add_country_modifier = {
+			name = fee_mug_baburs_legacy
+			duration = 18250
+		}
+	}
+
+	option = { # bury in kabul
+		name = FEE_Mughals_Events.19.OPT2
+
+		highlight = yes
+		trigger = {
+			owns = 451
+		}
+		add_country_modifier = {
+			name = fee_mug_baburs_legacy
+			duration = 18250
+		}
+		451 = {
+			add_base_production = 2
+			if = {
+				limit = {
+					has_dlc = "Leviathan"
+					is_expanded_mod_active = { mod = great_monuments }
+					NOT = {
+						has_great_project = {
+							type = gme_gardens_babur
+							tier = 3
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_great_project = {
+							type = gme_gardens_babur
+							tier = 2
+						}
+					}
+					add_great_project_tier = {
+						type = gme_gardens_babur
+						tier = 1
+					}
+				}
+				else_if = {
+					limit = {
+						has_great_project = {
+							type = gme_gardens_babur
+							tier = 1
+						}
+					}
+					add_great_project_tier = {
+						type = gme_gardens_babur
+						tier = 2
+					}
+				}
+				else = {
+					add_great_project_tier = {
+						type = gme_gardens_babur
+						tier = 3
+					}
+				}
+			}
+			else_if = {
+				limit = {
+					has_dlc = "Leviathan"
+					is_expanded_mod_active = { mod = great_monuments }
+					has_great_project = {
+						type = gme_gardens_babur
+						tier = 3
+					}
+				}
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			else_if = {
+				limit = {
+					NOT = { has_province_modifier = fee_mug_bagh_babur }
+					
+				}
+				add_permanent_province_modifier = {
+					name = fee_mug_bagh_babur
+					duration = -1
+				}
+			}
+			else = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+		}
+	}
+}
+
+# hidden event giving afghanistan babur if they lose to his rebels
+country_event = {
+	id = FEE_Mughals_Events.20
+	hidden = yes
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	trigger = {
+		capital_scope = {
+			has_rebel_faction = pretender_rebels
+		}
+		has_country_flag = fee_mug_fighting_babur_rebels
+	}
+
+	option = {
+		clr_country_flag = fee_mug_fighting_babur_rebels
+		capital_scope = {
+			clear_rebels = yes
+			change_controller = ROOT
+		}
+		if = {
+			limit = { has_heir = yes }
+			kill_heir = { allow_new_heir = no }
+		}
+		define_ruler = {
+			name = "Babur"
+			dynasty = "Timurid"
+			culture = uzbehk
+			age = 20
+			adm = 5
+			dip = 6
+			mil = 6
+		}
+		add_ruler_personality = patron_of_arts_personality
+		add_ruler_personality = conqueror_personality
+
+		define_ruler_to_general = {
+			fire = 6
+			shock = 5
+			manuever = 4
+			siege = 5
+			trait = cannoneer_personality
+		}
+		set_country_flag = fee_babur
+	}
+}
+
+# hidden event removing flag
+country_event = {
+	id = FEE_Mughals_Events.21
+	hidden = yes
+
+	fire_only_once = yes
+
+	trigger = {
+		has_country_flag = fee_mug_fighting_babur_rebels
+		NOT = { num_of_rebel_armies = 1 }
+		NOT = { num_of_rebel_controlled_provinces = 1 }
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		clr_country_flag = fee_mug_fighting_babur_rebels
+	}
+}
+
+###########################
+### End of Babur Events ###
+###########################

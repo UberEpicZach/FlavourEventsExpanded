@@ -3,3 +3,43 @@ fee_mug_bagh_babur = {
 	local_prosperity_growth = 0.5
 	monthly_splendor = 1
 }
+
+fee_mug_ottoman_tactics = {
+	infantry_fire = 0.5
+	artillery_fire = 0.5
+}
+
+fee_mug_babur_tactics = {
+	military_tactics = 0.75
+}
+
+fee_mug_babur_generalship = {
+	military_tactics = 0.2
+}
+
+fee_mug_memories_of_timur = {
+	local_unrest = 3
+	min_local_autonomy = 20
+}
+
+fee_mug_rajput_coalition = {
+	land_forcelimit = 25
+	land_maintenance_modifier = -0.25
+}
+
+fee_mug_rajput_fear = {
+	land_morale = -0.1
+}
+
+fee_mug_rajput_triumph = {
+	land_morale = 0.1
+}
+
+fee_mug_summer_capital = {
+	local_development_cost = -0.1
+	local_governing_cost = -1
+}
+
+fee_mug_baburs_legacy = {
+	fire_damage = 0.2
+}
