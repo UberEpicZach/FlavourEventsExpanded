@@ -390,10 +390,10 @@ country_event = {
 				}
 			}
 		}
-		custom_tooltip = fee_por_end_war_tt
 		add_country_modifier = {
 			name = fee_por_avenge_betrayal
 			duration = -1
+			desc = FEE_UNTIL_WARS_ENDS_TT
 		}
 	}
 

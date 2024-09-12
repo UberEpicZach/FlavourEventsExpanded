@@ -397,16 +397,16 @@ country_event = {
 			casus_belli = cb_annex
 			who = DLH
 		}
-		custom_tooltip = fee_mug_delhi_war_modifier_tt
+		add_country_modifier = {
+			name = fee_mug_babur_tactics
+			duration = -1
+			desc = FEE_UNTIL_WARS_ENDS_TT
+		}
 		hidden_effect = {
 			DLH = {
 				country_event = {
 					id = FEE_Mughals_Events.9
 				}
-			}
-			add_country_modifier = {
-				name = fee_mug_babur_tactics
-				duration = -1
 			}
 		}
 	}
