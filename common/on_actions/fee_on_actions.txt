@@ -157,6 +157,18 @@ on_dependency_lost = {
 	}
 }
 
+# When a non-native changes government type
+on_government_change = {
+	if = {
+		limit = {
+			is_or_was_tag = { tag = DAN }
+			has_country_modifier = fee_dan_danish_absolutism
+			NOT = { government = monarchy }
+		}
+		remove_country_modifier = fee_dan_danish_absolutism
+	}
+}
+
 # country
 on_heir_death = {
 	events = {
@@ -560,6 +572,49 @@ on_siege_lost_country = {
 	}
 }
 
+# province
+# root = location, from = winning country
+on_siege_lost_province =  {
+	owner = {
+		if = {
+			limit = {
+				capital_scope = {
+					has_rebel_faction = pretender_rebels
+				}
+				has_country_flag = fee_mug_fighting_babur_rebels
+			}
+		}
+		capital_scope = {
+			clear_rebels = yes
+			change_controller = ROOT
+		}
+		if = {
+			limit = { has_heir = yes }
+			kill_heir = { allow_new_heir = no }
+		}
+		define_ruler = {
+			name = "Babur"
+			dynasty = "Timurid"
+			culture = uzbehk
+			age = 20
+			adm = 5
+			dip = 6
+			mil = 6
+		}
+		add_ruler_personality = patron_of_arts_personality
+		add_ruler_personality = conqueror_personality
+
+		define_ruler_to_general = {
+			fire = 6
+			shock = 5
+			manuever = 4
+			siege = 5
+			trait = cannoneer_personality
+		}
+		set_country_flag = fee_babur
+	}
+}
+
 # country
 # root = winning country, from = location
 on_siege_won_country = {
@@ -764,6 +819,67 @@ on_monthly_pulse = {
 	MUL = {
 		country_event = { id = FEE_Multan_Events.2 }
 	}
+	if = {
+		limit = {
+			has_country_flag = fee_mug_fighting_babur_rebels
+			NOT = { num_of_rebel_armies = 1 }
+			NOT = { num_of_rebel_controlled_provinces = 1 }
+		}
+		clr_country_flag = fee_mug_fighting_babur_rebels
+	}
+	HUN = {
+		if = {
+			limit = {
+				has_country_flag = hun_has_had_matthias_corvinus_event	#vanilla flag
+				has_regency = no
+				mil = 6
+				NOT = { is_year = 1500 }
+			}
+			set_country_flag = fee_hungary_corvinus
+			set_ruler_flag = fee_hungary_matyas_reign
+		}
+	}
+	BOH = {
+		if = {
+			limit = {
+				has_country_flag = first_hussite_king	#vanilla flag
+				NOT = { has_country_flag = FEE_Podebrad }
+				NOT = { is_year = 1500 }
+			}
+			set_country_flag = FEE_Podebrad
+			add_ruler_modifier = {
+				name = fee_boh_infertility
+				duration = -1
+			}
+		}
+	}
+	if = {
+		limit = { has_country_flag = fee_gbr_statute_flag }
+		every_owned_province = {
+			if = {
+				limit = {
+					NOT = { has_province_modifier = fee_gbr_statute }
+					has_owner_culture = no
+					is_state = yes
+				}
+				add_province_modifier = {
+					name = fee_gbr_statute
+					duration = -1
+				}
+			}
+			else = { remove_province_modifier = fee_gbr_statute }
+		}
+	}
+	MAW = {
+		if = {
+			limit = {
+				has_ruler = "Jodha"
+				dynasty = "Rathore"
+				NOT = { has_global_flag = fee_return_of_rana_jodha_rathore }
+			}
+			set_global_flag = fee_return_of_rana_jodha_rathore
+		}
+	}
 }
 
 on_bi_yearly_pulse_5 = {
@@ -772,4 +888,52 @@ on_bi_yearly_pulse_5 = {
 
 on_yearly_pulse_5 = {
 	fee_diseases_yearly = yes
+	if = {
+		limit = {
+			NOT = { is_institution_enabled = global_trade }
+			has_global_flag = fee_trading_fairs_enabled
+			OR = {
+				had_country_flag = {
+					flag = fee_trading_fair_started
+					days = 5475
+				}
+				NOT = { has_country_flag = fee_trading_fair_started }
+			}
+			any_owned_province = {
+				province_has_center_of_trade_of_level = 1
+				OR = {
+					NOT = { has_province_flag = fee_province_trading_fair_started }
+					had_province_flag = {
+						flag = fee_province_trading_fair_started
+						days = 7300
+					}
+				}
+			}
+		}
+
+		clr_country_flag = fee_trading_fair_started
+
+		random_owned_province = {
+			limit = {
+				province_has_center_of_trade_of_level = 1
+				OR = {
+					NOT = { has_province_flag = fee_province_trading_fair_started }
+					had_province_flag = {
+						flag = fee_province_trading_fair_started
+						days = 5475
+					}
+				}
+			}
+			set_province_flag = fee_province_trading_fair_started
+			save_event_target_as = event_target_fee_fair_province
+			owner = {
+				country_event = {
+					id = FEE_Fairs_Events.3
+					days = 30
+				}
+			}
+		}
+
+		set_country_flag = fee_trading_fair_started
+	}
 }

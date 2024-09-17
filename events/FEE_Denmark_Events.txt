@@ -493,39 +493,6 @@ country_event = {
 	}
 }
 
-#Remove Absolutism Bonus
-country_event = {
-	id = FEE_Denmark_Events.10
-	title = FEE_Denmark_Events.10.T
-	desc = FEE_Denmark_Events.10.D
-	picture = GOOD_WITH_MONARCH_eventPicture
-
-	fire_only_once = yes
-
-	hidden = yes
-
-	trigger = {
-		OR = {
-			tag = DAN
-			tag = SCA
-		}
-		has_country_modifier = fee_dan_danish_absolutism
-		NOT = {
-			government = monarchy
-		}
-	}
-
-	immediate = {
-		hidden_effect = {
-			remove_country_modifier = fee_dan_danish_absolutism
-		}
-	}
-
-	option = {
-		name = FEE_Denmark_Events.10.OPT1
-	}
-}
-
 #End of Elective Monarchy (for Scandinavia)
 country_event = {
 	id = FEE_Denmark_Events.11

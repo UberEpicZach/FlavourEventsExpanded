@@ -70,13 +70,6 @@ country_event = {
 
 	is_triggered_only = yes
 
-	hidden = yes
-
-	immediate = {
-		hidden_effect = {
-		}
-	}
-
 	option = {
 		name = FEE_Malwa_Events.2.OPT1
 		ai_chance = { factor = 75 }
