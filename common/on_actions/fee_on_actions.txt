@@ -580,38 +580,39 @@ on_siege_lost_province =  {
 			limit = {
 				capital_scope = {
 					has_rebel_faction = pretender_rebels
+					controlled_by = REB
 				}
 				has_country_flag = fee_mug_fighting_babur_rebels
 			}
+			capital_scope = {
+				clear_rebels = yes
+				change_controller = ROOT
+			}
+			if = {
+				limit = { has_heir = yes }
+				kill_heir = { allow_new_heir = no }
+			}
+			define_ruler = {
+				name = "Babur"
+				dynasty = "Timurid"
+				culture = uzbehk
+				age = 20
+				adm = 5
+				dip = 6
+				mil = 6
+			}
+			add_ruler_personality = patron_of_arts_personality
+			add_ruler_personality = conqueror_personality
+	
+			define_ruler_to_general = {
+				fire = 6
+				shock = 5
+				manuever = 4
+				siege = 5
+				trait = cannoneer_personality
+			}
+			set_country_flag = fee_babur
 		}
-		capital_scope = {
-			clear_rebels = yes
-			change_controller = ROOT
-		}
-		if = {
-			limit = { has_heir = yes }
-			kill_heir = { allow_new_heir = no }
-		}
-		define_ruler = {
-			name = "Babur"
-			dynasty = "Timurid"
-			culture = uzbehk
-			age = 20
-			adm = 5
-			dip = 6
-			mil = 6
-		}
-		add_ruler_personality = patron_of_arts_personality
-		add_ruler_personality = conqueror_personality
-
-		define_ruler_to_general = {
-			fire = 6
-			shock = 5
-			manuever = 4
-			siege = 5
-			trait = cannoneer_personality
-		}
-		set_country_flag = fee_babur
 	}
 }
 

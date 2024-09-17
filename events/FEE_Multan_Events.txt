@@ -10,7 +10,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		is_or_was_tag = { tag = MUL }
+		tag = MUL
 		is_year = 1443
 		NOT = { is_year = 1445 }
 	}
@@ -58,7 +58,7 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		is_or_was_tag = { tag = MUL }
+		tag = MUL
 		has_country_flag = fee_mul_shaikh_yusuf_rebellion
 		NOT = { num_of_rebel_controlled_provinces = 1 }
 		NOT = { num_of_rebel_armies = 1 }
@@ -265,7 +265,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		is_or_was_tag = {tag = MUL }
+		tag = MUL
 		is_year = 1445
 		exists = BAL
 	}
@@ -377,7 +377,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		is_or_was_tag = {tag = MUL }
+		tag = MUL
 		is_year = 1445
 		owns = 2079
 		NOT = { is_year = 1498 }
@@ -535,7 +535,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		is_or_was_tag = { tag = MUL }
+		tag = MUL
 		OR = {
 			land_forcelimit = 1
 			army_size = 10
@@ -569,7 +569,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		is_or_was_tag = { tag = MUL }
+		tag = MUL
 		northern_sindh_area = {
 			type = all
 			owned_by = ROOT
@@ -615,7 +615,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		is_or_was_tag = { tag = MUL }
+		tag = MUL
 		lahore_area = {
 			type = all
 			owned_by = ROOT
@@ -661,7 +661,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		is_or_was_tag = { tag = MUL }
+		tag = MUL
 		lahore_area = {
 			type = all
 			owned_by = ROOT
