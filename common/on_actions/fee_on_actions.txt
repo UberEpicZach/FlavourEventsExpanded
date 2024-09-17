@@ -680,6 +680,25 @@ on_war_ended = {
 		}
 		POR = { remove_country_modifier = fee_por_avenge_betrayal }
 	}
+	if = {
+		limit = {
+			OR = {
+				tag = JNP
+				FROM = { tag = JNP }
+			}
+			JNP = {
+				OR = {
+					has_country_modifier = fee_jnp_war_weary_populace 
+					has_country_modifier = fee_jnp_war_for_hindustan 
+				}
+				NOT = { war_with = DLH }
+			}
+		}
+		JNP = {
+			remove_country_modifier = fee_jnp_war_weary_populace
+			remove_country_modifier = fee_jnp_war_for_hindustan
+		}
+	}
 }
 
 # root = loser country, from = winner country

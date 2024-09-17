@@ -1,0 +1,20 @@
+fee_jnp_war_weary_populace = {
+	war_exhaustion_cost = 2
+	land_morale = -0.05
+	mercenary_cost = 0.15
+	global_regiment_cost = 0.15
+}
+fee_jnp_war_for_hindustan = {
+	province_warscore_cost = -0.20
+}
+
+fee_jnp_ujjainiya_sabotage = {
+	global_supply_limit_modifier = -0.10
+}
+fee_jnp_terror_tactics = {
+	global_unrest = -2
+}
+
+fee_jnp_golden_era_for_jaunpuri_culture = {
+	tolerance_own = 2
+}

@@ -1,0 +1,32 @@
+﻿l_english:
+
+# Events
+ FEE_Jaunpur_Events.1.T: "Intervention Requested by Bibi Raji"
+ FEE_Jaunpur_Events.1.D: "Turmoil erupted within the borders of the Delhi Sultanate as the Sayyid rulers were forced into exile following the rebellion of the Governor of Sirhind, Bahlol Lodi. Our Sultan’s favourite wife, Bibi Raji, the sister of the deposed Alam Shah has requested us to intervene in this conflict and put an end to the tyranny perpetrated by the Lodi savages. While this may be a prime opportunity to capture the city of Delhi and reverse our previous humiliation, our populace has grown immensely tired by the state of constant war. Even though we outnumber them on the battlefield, we must be wary of Bahlol’s strategic brilliance, for if we lose this gambit, our hegemony over Hindustan may be forever lost."
+ FEE_Jaunpur_Events.1.OPT1: "Rally the Faujdaars! We ride to war!"
+ FEE_Jaunpur_Events.1.OPT2: "Only a minor hurdle for our Sultan"
+ FEE_Jaunpur_Events.1.OPT3: "A fruitless endeavour"
+
+ FEE_Jaunpur_Events.2.T: "The Rebellion of the Ujjainiya Rajputs"
+ FEE_Jaunpur_Events.2.D: "While our realm stretches across wide swathes of land, many of these territories are ruled by local chiefs on our behalf. Most of these chiefs have continued to prove their loyalty to the Sharqi Sultans, yet there have been certain…unruly ones. The most rowdy of these chiefs have been the Ujjainiya Rajputs, inhabiting the rich region of Bhojpur. Rumour has it that hostilities erupted between our forces after Malik Sarwar’s army disturbed the local Brahmin priests during the campaign of Chausa. Since then, these hooligans have waged a long guerilla war against our state, disrupting our supply lines and harassing our caravans. After years of dormancy however, they have returned with a greater force under the command of a capable commander, Sangram Deo. Let us crush their vile mutiny and restore order and stability to Bhojpur once and for all."
+ FEE_Jaunpur_Events.2.OPT1: "Send in the soldiers… again"
+ FEE_Jaunpur_Events.2.OPT2: "The Sultan can sort the matter out himself"
+ FEE_Jaunpur_Events.2.OPT3: "I want their corpses hung from a Banyan Tree!"
+
+ FEE_Jaunpur_Events.3.T: "Sufi Premakhyan"
+ FEE_Jaunpur_Events.3.D: "Under the patronage of the Sharqi Sultans, Jaunpur developed as a centre of creativity and spirituality. The thousands of Sufi saints who called Jaunpur home expressed their devotion to the Supreme Maker by writing Premakhyans (“love-lores”). These poems, in order to reach a wider audience were usually composed in dialects local to their place of origin, such as Awadhi,  instead of the court language - Persian. Many Premakhyans possessed similar themes and writing styles, such as the awakening of love between the hero and heroine after a vision, prophecy or divine intervention and a tragic ending, the untimely death of lovers who were never meant to be together. One of the most prominent love-lores during the rule of the Sharqis was the Mrigavati, written by the Sufi saint Shaikh Qutban Suhrawadi, the story of a Rajkumar whose desire for a princess, disguised as a seven-coloured doe led him into various near-death experiences. The poet used vivid geographic imagery to describe the internal struggles of the prince and his yearning for knowledge which leads him down the road to becoming a yogi. These prose left a deep impact on the populace, since the trend of composing Premakhyan continued well after the collapse of the Jaunpur Sultanate, with recitals such as “Padmaavat” being completed during the Mughal Era."
+ FEE_Jaunpur_Events.3.OPT1: "Fascinating!"
+
+# Modifiers
+ fee_jnp_war_weary_populace: "War-Weary Populace"
+ desc_fee_jnp_war_weary_populace: ""
+ fee_jnp_war_for_hindustan: "War for Hindustan"
+ desc_fee_jnp_war_for_hindustan: ""
+
+ fee_jnp_ujjainiya_sabotage: "Ujjainiya Sabotage"
+ desc_fee_jnp_ujjainiya_sabotage: ""
+ fee_jnp_terror_tactics: "Terror Tactics"
+ desc_fee_jnp_terror_tactics: ""
+
+ fee_jnp_golden_era_for_jaunpuri_culture: "Golden Era for Jaunpuri Culture"
+ desc_fee_jnp_golden_era_for_jaunpuri_culture: ""
