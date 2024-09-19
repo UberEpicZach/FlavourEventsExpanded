@@ -575,15 +575,18 @@ on_siege_lost_country = {
 # province
 # root = location, from = winning country
 on_siege_lost_province =  {
-	owner = {
-		if = {
-			limit = {
+	if = {
+		limit = {
+			is_capital_of = ROOT
+			owner = {
 				capital_scope = {
 					has_rebel_faction = pretender_rebels
 					controlled_by = REB
 				}
 				has_country_flag = fee_mug_fighting_babur_rebels
 			}
+		}
+		owner = {
 			capital_scope = {
 				clear_rebels = yes
 				change_controller = ROOT
@@ -612,6 +615,7 @@ on_siege_lost_province =  {
 				trait = cannoneer_personality
 			}
 			set_country_flag = fee_babur
+			clr_country_flag = fee_mug_fighting_babur_rebels
 		}
 	}
 }

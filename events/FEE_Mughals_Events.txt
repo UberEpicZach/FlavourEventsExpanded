@@ -818,10 +818,6 @@ country_event = {
 	option = {
 		name = FEE_Mughals_Events.15.OPT1
 
-		add_country_modifier = {
-			name = fee_mug_rajput_triumph
-			duration = 18250
-		}
 		if = {
 			limit = {
 				NOT = { adm = 6 }
@@ -849,6 +845,10 @@ country_event = {
 		else = {
 			add_mil_power = 100
 		}
+		add_country_modifier = {
+			name = fee_mug_rajput_triumph
+			duration = 18250
+		}
 		DLH = {
 			country_event = {
 				id = FEE_Mughals_Events.16
@@ -857,7 +857,7 @@ country_event = {
 	}
 }
 
-# Rajput puppet
+# Rajput Demands
 country_event = {
 	id = FEE_Mughals_Events.16
 	title = FEE_Mughals_Events.16.T

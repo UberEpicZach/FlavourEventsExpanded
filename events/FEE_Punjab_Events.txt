@@ -275,7 +275,7 @@ country_event = {
 		remove_country_modifier = fee_pun_khalsa_fauj
 		add_country_modifier = {
 			name = fee_pun_sikh_army
-			duration = 18250
+			duration = -1
 		}
 	}
 }
