@@ -705,18 +705,12 @@ country_event = {
 		}
 		add_years_of_income = 2
 		add_yearly_manpower = 2
-		custom_tooltip = fee_mug_mewar_modifier_tt
-		capital_scope = {
-			build_to_forcelimit = {
-				infantry = 0.7
-				cavalry = 0.3
-			}
+		add_country_modifier = {
+			name = fee_mug_rajput_coalition
+			duration = -1
+			desc = FEE_UNTIL_WARS_ENDS_TT
 		}
 		hidden_effect = {
-			add_country_modifier = {
-				name = fee_mug_rajput_coalition
-				duration = -1
-			}
 			MUG = {
 				country_event = {
 					id = FEE_Mughals_events.13
@@ -730,6 +724,18 @@ country_event = {
 
 		custom_tooltip = fee_mug_mewar_back_down_tt
 		ai_chance = { factor = 0 }
+	}
+
+	after = {
+		if = {
+			limit = { has_country_modifier = fee_mug_rajput_coalition }
+			capital_scope = {
+				build_to_forcelimit = {
+					infantry = 0.7
+					cavalry = 0.3
+				}
+			}
+		}
 	}
 }
 
