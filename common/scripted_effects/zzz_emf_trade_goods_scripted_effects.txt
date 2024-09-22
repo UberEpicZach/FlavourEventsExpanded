@@ -1,0 +1,12 @@
+change_trade_good_ivory_or_elephants = {
+	if = {
+		limit = {
+			is_expanded_mod_active = { mod = trade_goods }
+		}
+		random_list = {
+			50 = { change_trade_goods = ivory }
+			50 = { change_trade_goods = elephants }
+		}
+	}
+	else = { change_trade_goods = ivory }
+}

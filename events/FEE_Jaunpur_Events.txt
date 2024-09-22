@@ -239,3 +239,90 @@ country_event = {
 		}
 	}
 }
+
+# Raiding the Garjati Forests
+country_event = {
+	id = FEE_Jaunpur_Events.5
+	title = FEE_Jaunpur_Events.5.T
+	desc = FEE_Jaunpur_Events.5.D
+	picture = VILLAGE_RAIDED_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = JNP
+		any_country = {
+			OR = {
+				primary_culture = garjati
+				tag = ORI
+			}
+			ROOT = {
+				has_won_war_against = {
+					who = PREV
+					max_years_since = 5
+				}
+			}
+		}
+		num_of_owned_provinces_with = {
+			value = 5
+			has_terrain = jungle
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = FEE_Jaunpur_Events.5.OPT1
+		ai_chance = {
+			factor = 33
+		}
+
+		add_country_modifier = {
+			name = fee_jnp_elephants_in_abundance
+			duration = 7300
+		}
+		capital_scope = {
+			change_trade_good_ivory_or_elephants = yes
+			add_base_tax = 2
+			add_base_production = 1
+			add_base_manpower = 1
+			add_province_modifier = {
+				name = local_goods_in_demand
+				duration = 7300
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Jaunpur_Events.5.OPT2
+		trigger = {
+			OR = {
+				full_idea_group = quality_ideas
+				full_idea_group = offensive_ideas
+				mil = 5
+			}
+		}
+		ai_chance = {
+			factor = 33
+		}
+
+		add_country_modifier = {
+			name = fee_jnp_elephant_aided_siege
+			duration = 7300
+		}
+	}
+
+	option = {
+		name = FEE_Jaunpur_Events.5.OPT3
+		ai_chance = {
+			factor = 33
+		}
+
+		add_country_modifier = {
+			name = fee_jnp_elephant_incorporation
+			duration = 7300
+		}
+	}
+}

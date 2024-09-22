@@ -18,3 +18,14 @@ fee_jnp_terror_tactics = {
 fee_jnp_golden_era_for_jaunpuri_culture = {
 	tolerance_own = 2
 }
+
+fee_jnp_elephants_in_abundance = {
+	cavalry_cost = -0.15
+}
+fee_jnp_elephant_aided_siege = {
+	siege_ability = 0.15
+}
+fee_jnp_elephant_incorporation = {
+	cavalry_power = 0.15
+	cavalry_cost = 0.05
+}
