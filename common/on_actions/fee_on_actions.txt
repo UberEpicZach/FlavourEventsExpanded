@@ -541,9 +541,6 @@ on_religion_change = {
 # country
 # root = losing country, from = location
 on_siege_lost_country = {
-	events = {
-		FEE_Mughals_Events.20
-	}
 	if = {
 		limit = {
 			NOT = { has_global_flag = fee_surrender_main }
