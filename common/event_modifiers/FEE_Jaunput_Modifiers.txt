@@ -19,6 +19,11 @@ fee_jnp_golden_era_for_jaunpuri_culture = {
 	tolerance_own = 2
 }
 
+fee_jnp_jaunpuri_music = {
+	prestige_decay = -0.01
+	stability_cost_modifier = -0.15
+}
+
 fee_jnp_elephants_in_abundance = {
 	cavalry_cost = -0.15
 }

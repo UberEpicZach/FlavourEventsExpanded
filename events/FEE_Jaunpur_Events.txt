@@ -240,6 +240,47 @@ country_event = {
 	}
 }
 
+# Proliferation of the Shahnai and Jaunpuri Music
+country_event = {
+	id = FEE_Jaunpur_Events.4
+	title = FEE_Jaunpur_Events.4.T
+	desc = FEE_Jaunpur_Events.4.D
+	picture = ADVISOR_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_or_was_tag = { tag = JNP }
+		capital_scope = {
+			development = 25
+		}
+		stability = 1
+		is_at_war = no
+		OR = {
+			has_adm_advisor = yes
+			has_dip_advisor = yes
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 300
+	}
+
+	option = {
+		name = FEE_Jaunpur_Events.4.OPT1
+		ai_chance = {
+			factor = 80
+		}
+
+		add_dip_power = 100
+		add_splendor = 100
+		add_country_modifier = {
+			name = fee_jnp_jaunpuri_music
+			duration = 7300
+		}
+	}
+}
+
 # Raiding the Garjati Forests
 country_event = {
 	id = FEE_Jaunpur_Events.5
