@@ -697,6 +697,7 @@ country_event = {
 
 	option = { #attack
 		name = FEE_Mughals_Events.12.OPT1
+		ai_chance = { factor = 100 }
 		
 		custom_tooltip = fee_mug_mewar_coalition_tt
 		declare_war_with_cb = {
@@ -721,9 +722,10 @@ country_event = {
 
 	option = { #back down
 		name = FEE_Mughals_Events.12.OPT2
+		ai_chance = { factor = 0 }
 
 		custom_tooltip = fee_mug_mewar_back_down_tt
-		ai_chance = { factor = 0 }
+		add_prestige = -5
 	}
 
 	after = {
@@ -880,6 +882,7 @@ country_event = {
 			add_casus_belli = {
 				type = cb_vassalize_mission
 				target = DLH
+				months = 240
 			}
 		}
 	}
