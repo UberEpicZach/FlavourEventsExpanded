@@ -39,10 +39,6 @@
  FEE_Denmark_Events.9.D: "\"The Monarch shall from this day forth be revered and considered the most perfect and supreme person on the Earth by all his subjects, standing above all human laws and having no judge above his person, neither in spiritual nor temporal matters, except God alone\"\n\nThis text established absolute monarchy in Denmark, ensuring that the king had unrestricted authority over all offices in the country. This removed the traditional pretense of election in the Danish succession, but more importantly it allowed the king to abolish the \"Rigsraad,\" the group of nobles responsible for co-governing Denmark. Over centuries the council had become more and more difficult for the king, as it acted more in the interest of nobles than the monarch.\nNow it is finally time for the monarch to rule as they see necessary, just as God intended."
  FEE_Denmark_Events.9.OPT1: "The [Root.Monarch.GetTitle] will rule undisputed."
 
- FEE_Denmark_Events.10.T: "The End of Danish Absolutism"
- FEE_Denmark_Events.10.D: "Following the recent tumult in our country, our people are happier and we are mightier than ever before. However, there is no denying that there were certain practicalities in having an absolute monarch that we now have to work through with our bureaucracy."
- FEE_Denmark_Events.10.OPT1: "$COUNTRY$ will be ruled the way God intended."
-
  FEE_Denmark_Events.11.T: "End of Elective Monarchy"
  FEE_Denmark_Events.11.D: "With the assertion of the [Root.Monarch.GetTitle] as ruler of all $COUNTRY$, we can discard the pretense of an election to the throne. [Root.Monarch.GetName] is the [Root.Monarch.GetTitle] and [Root.Monarch.GetHerHis] heir will rule undisputed."
  FEE_Denmark_Events.11.OPT1: "I am the [Root.Monarch.GetTitle]!"
