@@ -303,336 +303,361 @@ guiTypes = {
 				windowType = {
 					name = "expanded_mod_family_window"
 					if_resolution = {
-						min_height = 1080
-						position = { x = 115 y = 180 }
-					}
-					if_resolution = {
-						max_height = 1079
 						min_height = 1050
-						position = { x = 115 y = 175 }
+						position = { x = 105 y = 190 }
 					}
 					if_resolution = {
 						max_height = 1049
-						position = { x = -550 y = 200 }
+						position = { x = -470 y = 30 }
 						orientation = upper_right
 					}
 
 					iconType = {
 						name = "expanded_mod_family_window_bg"
-						position = { x = 0 y = 0 }
+						position = { x = -5 y = -10 }
 						spriteType = "GFX_expanded_mod_family_background"
-					}
-
-					instantTextBoxType = {
-						name = "expanded_mod_family_title"
-						position = { x = 46 y = 148 }
-						format = center
-						font = "Main_14"
-						text = "EXPANDED_MOD_FAMILY_TITLE"
-						maxWidth = 220
-						maxHeight = 20
-						fixedsize = yes
-						alwaystransparent = yes
 					}
 
 					### First Column of Mods
 					windowType = {
 						name = "advisor_types_expanded"
-						position = { x = 10 y = 166 }
-						size = { x = 147 y = 26 }
-
-						iconType = {
-							name = "mod_icon"
-							position = { x = 0 y = 1 }
-							spriteType = "GFX_mod_icon_advisor_types_expanded"
-							scale = 0.5
-						}
+						position = { x = 29 y = 230 }
+						size = { x = 158 y = 45 }
 
 						iconType = {
 							name = "mod_text_bg"
-							position = { x = 26 y = 2 }
+							position = { x = 0 y = 0 }
 							spriteType = "GFX_expanded_mod_family_entry_background"
+						}
+
+						iconType = {
+							name = "mod_icon"
+							position = { x = 114 y = 2 }
+							spriteType = "GFX_mod_icon_advisor_types_expanded"
+							scale = 0.84
 						}
 
 						instantTextBoxType = {
 							name = "mod_text"
-							position = { x = 26 y = 6 }
+							position = { x = 18 y = 7 }
 							format = center
 							font = "Main_16"
 							text = "MOD_TEXT_ADVISOR_TYPES_EXPANDED"
-							maxWidth = 120
-							maxHeight = 20
-							alwaystransparent = yes
-						}
-					}
-
-					windowType = {
-						name = "ages_and_splendor_expanded"
-						position = { x = 10 y = 192 }
-						size = { x = 147 y = 26 }
-
-						iconType = {
-							name = "mod_icon"
-							position = { x = 0 y = 1 }
-							spriteType = "GFX_mod_icon_ages_and_splendor_expanded"
-							scale = 0.5
-						}
-
-						iconType = {
-							name = "mod_text_bg"
-							position = { x = 26 y = 2 }
-							spriteType = "GFX_expanded_mod_family_entry_background"
-						}
-
-						instantTextBoxType = {
-							name = "mod_text"
-							position = { x = 26 y = 6 }
-							format = center
-							font = "Main_16"
-							text = "MOD_TEXT_AGES_AND_SPLENDOR_EXPANDED"
-							maxWidth = 120
-							maxHeight = 20
+							maxWidth = 96
+							maxHeight = 33
+							vertical_alignment = center
 							alwaystransparent = yes
 						}
 					}
 
 					windowType = {
 						name = "flavour_and_events_expanded"
-						position = { x = 10 y = 218 }
-						size = { x = 147 y = 26 }
-
-						iconType = {
-							name = "mod_icon"
-							position = { x = 0 y = 1 }
-							spriteType = "GFX_mod_icon_flavour_and_events_expanded"
-							scale = 0.5
-						}
+						position = { x = 29 y = 277 }
+						size = { x = 158 y = 45 }
 
 						iconType = {
 							name = "mod_text_bg"
-							position = { x = 26 y = 2 }
+							position = { x = 0 y = 0 }
 							spriteType = "GFX_expanded_mod_family_entry_background"
+						}
+
+						iconType = {
+							name = "mod_icon"
+							position = { x = 114 y = 2 }
+							spriteType = "GFX_mod_icon_flavour_and_events_expanded"
+							scale = 0.84
 						}
 
 						instantTextBoxType = {
 							name = "mod_text"
-							position = { x = 26 y = 6 }
+							position = { x = 18 y = 7 }
 							format = center
 							font = "Main_16"
 							text = "MOD_TEXT_FLAVOUR_AND_EVENTS_EXPANDED"
-							maxWidth = 120
-							maxHeight = 20
-							alwaystransparent = yes
-						}
-					}
-
-					windowType = {
-						name = "governments_expanded"
-						position = { x = 10 y = 244 }
-						size = { x = 147 y = 26 }
-
-						iconType = {
-							name = "mod_icon"
-							position = { x = 0 y = 1 }
-							spriteType = "GFX_mod_icon_governments_expanded"
-							scale = 0.5
-						}
-
-						iconType = {
-							name = "mod_text_bg"
-							position = { x = 26 y = 2 }
-							spriteType = "GFX_expanded_mod_family_entry_background"
-						}
-
-						instantTextBoxType = {
-							name = "mod_text"
-							position = { x = 26 y = 6 }
-							format = center
-							font = "Main_16"
-							text = "MOD_TEXT_GOVERNMENTS_EXPANDED"
-							maxWidth = 120
-							maxHeight = 20
+							maxWidth = 96
+							maxHeight = 33
+							vertical_alignment = center
 							alwaystransparent = yes
 						}
 					}
 
 					windowType = {
 						name = "great_monuments_expanded"
-						position = { x = 10 y = 270 }
-						size = { x = 147 y = 26 }
-
-						iconType = {
-							name = "mod_icon"
-							position = { x = 0 y = 1 }
-							spriteType = "GFX_mod_icon_great_monuments_expanded"
-							scale = 0.5
-						}
+						position = { x = 29 y = 324 }
+						size = { x = 158 y = 45 }
 
 						iconType = {
 							name = "mod_text_bg"
-							position = { x = 26 y = 2 }
+							position = { x = 0 y = 0 }
 							spriteType = "GFX_expanded_mod_family_entry_background"
+						}
+
+						iconType = {
+							name = "mod_icon"
+							position = { x = 114 y = 2 }
+							spriteType = "GFX_mod_icon_great_monuments_expanded"
+							scale = 0.84
 						}
 
 						instantTextBoxType = {
 							name = "mod_text"
-							position = { x = 26 y = 6 }
+							position = { x = 18 y = 7 }
 							format = center
 							font = "Main_16"
 							text = "MOD_TEXT_GREAT_MONUMENTS_EXPANDED"
-							maxWidth = 120
-							maxHeight = 20
-							alwaystransparent = yes
-						}
-					}
-
-					### Second Column of Mods
-					windowType = {
-						name = "historical_ideas_expanded"
-						position = { x = 157 y = 166 }
-						size = { x = 147 y = 26 }
-
-						iconType = {
-							name = "mod_icon"
-							position = { x = 0 y = 1 }
-							spriteType = "GFX_mod_icon_historical_ideas_expanded"
-							scale = 0.5
-						}
-
-						iconType = {
-							name = "mod_text_bg"
-							position = { x = 26 y = 2 }
-							spriteType = "GFX_expanded_mod_family_entry_background"
-						}
-
-						instantTextBoxType = {
-							name = "mod_text"
-							position = { x = 26 y = 6 }
-							format = center
-							font = "Main_16"
-							text = "MOD_TEXT_HISTORICAL_IDEAS_EXPANDED"
-							maxWidth = 120
-							maxHeight = 20
+							maxWidth = 96
+							maxHeight = 33
+							vertical_alignment = center
 							alwaystransparent = yes
 						}
 					}
 
 					windowType = {
 						name = "holy_roman_empire_expanded"
-						position = { x = 157 y = 192 }
-						size = { x = 147 y = 26 }
-
-						iconType = {
-							name = "mod_icon"
-							position = { x = 0 y = 1 }
-							spriteType = "GFX_mod_icon_holy_roman_empire_expanded"
-							scale = 0.5
-						}
+						position = { x = 29 y = 371 }
+						size = { x = 158 y = 45 }
 
 						iconType = {
 							name = "mod_text_bg"
-							position = { x = 26 y = 2 }
+							position = { x = 0 y = 0 }
 							spriteType = "GFX_expanded_mod_family_entry_background"
+						}
+
+						iconType = {
+							name = "mod_icon"
+							position = { x = 114 y = 2 }
+							spriteType = "GFX_mod_icon_holy_roman_empire_expanded"
+							scale = 0.84
 						}
 
 						instantTextBoxType = {
 							name = "mod_text"
-							position = { x = 26 y = 6 }
+							position = { x = 18 y = 7 }
 							format = center
 							font = "Main_16"
 							text = "MOD_TEXT_HOLY_ROMAN_EMPIRE_EXPANDED"
-							maxWidth = 120
-							maxHeight = 20
+							maxWidth = 96
+							maxHeight = 33
+							vertical_alignment = center
+							alwaystransparent = yes
+						}
+					}
+
+					windowType = {
+						name = "religions_and_cultures_expanded"
+						position = { x = 29 y = 418 }
+						size = { x = 158 y = 45 }
+
+						iconType = {
+							name = "mod_text_bg"
+							position = { x = 0 y = 0 }
+							spriteType = "GFX_expanded_mod_family_entry_background"
+						}
+
+						iconType = {
+							name = "mod_icon"
+							position = { x = 114 y = 2 }
+							spriteType = "GFX_mod_icon_religions_and_cultures_expanded"
+							scale = 0.84
+						}
+
+						instantTextBoxType = {
+							name = "mod_text"
+							position = { x = 18 y = 7 }
+							format = center
+							font = "Main_16"
+							text = "MOD_TEXT_RELIGIONS_AND_CULTURES_EXPANDED"
+							maxWidth = 96
+							maxHeight = 33
+							vertical_alignment = center
+							alwaystransparent = yes
+						}
+					}
+
+					### Second Column of Mods
+					windowType = {
+						name = "ages_and_splendor_expanded"
+						position = { x = 188 y = 230 }
+						size = { x = 158 y = 45 }
+
+						iconType = {
+							name = "mod_text_bg"
+							position = { x = 0 y = 0 }
+							spriteType = "GFX_expanded_mod_family_entry_background"
+						}
+
+						iconType = {
+							name = "mod_icon"
+							position = { x = 114 y = 2 }
+							spriteType = "GFX_mod_icon_ages_and_splendor_expanded"
+							scale = 0.84
+						}
+
+						instantTextBoxType = {
+							name = "mod_text"
+							position = { x = 18 y = 7 }
+							format = center
+							font = "Main_16"
+							text = "MOD_TEXT_AGES_AND_SPLENDOR_EXPANDED"
+							maxWidth = 96
+							maxHeight = 33
+							vertical_alignment = center
+							alwaystransparent = yes
+						}
+					}
+
+					windowType = {
+						name = "governments_expanded"
+						position = { x = 188 y = 277 }
+						size = { x = 158 y = 45 }
+
+						iconType = {
+							name = "mod_text_bg"
+							position = { x = 0 y = 0 }
+							spriteType = "GFX_expanded_mod_family_entry_background"
+						}
+
+						iconType = {
+							name = "mod_icon"
+							position = { x = 114 y = 2 }
+							spriteType = "GFX_mod_icon_governments_expanded"
+							scale = 0.84
+						}
+
+						instantTextBoxType = {
+							name = "mod_text"
+							position = { x = 18 y = 7 }
+							format = center
+							font = "Main_16"
+							text = "MOD_TEXT_GOVERNMENTS_EXPANDED"
+							maxWidth = 96
+							maxHeight = 33
+							vertical_alignment = center
+							alwaystransparent = yes
+						}
+					}
+
+					windowType = {
+						name = "historical_ideas_expanded"
+						position = { x = 188 y = 324 }
+						size = { x = 158 y = 45 }
+
+						iconType = {
+							name = "mod_text_bg"
+							position = { x = 0 y = 0 }
+							spriteType = "GFX_expanded_mod_family_entry_background"
+						}
+
+						iconType = {
+							name = "mod_icon"
+							position = { x = 114 y = 2 }
+							spriteType = "GFX_mod_icon_historical_ideas_expanded"
+							scale = 0.84
+						}
+
+						instantTextBoxType = {
+							name = "mod_text"
+							position = { x = 18 y = 7 }
+							format = center
+							font = "Main_16"
+							text = "MOD_TEXT_HISTORICAL_IDEAS_EXPANDED"
+							maxWidth = 96
+							maxHeight = 33
+							vertical_alignment = center
 							alwaystransparent = yes
 						}
 					}
 
 					windowType = {
 						name = "peace_treaties_expanded"
-						position = { x = 157 y = 218 }
-						size = { x = 147 y = 26 }
-
-						iconType = {
-							name = "mod_icon"
-							position = { x = 0 y = 1 }
-							spriteType = "GFX_mod_icon_peace_treaties_expanded"
-							scale = 0.5
-						}
+						position = { x = 188 y = 371 }
+						size = { x = 158 y = 45 }
 
 						iconType = {
 							name = "mod_text_bg"
-							position = { x = 26 y = 2 }
+							position = { x = 0 y = 0 }
 							spriteType = "GFX_expanded_mod_family_entry_background"
+						}
+
+						iconType = {
+							name = "mod_icon"
+							position = { x = 114 y = 2 }
+							spriteType = "GFX_mod_icon_peace_treaties_expanded"
+							scale = 0.84
 						}
 
 						instantTextBoxType = {
 							name = "mod_text"
-							position = { x = 26 y = 6 }
+							position = { x = 18 y = 7 }
 							format = center
 							font = "Main_16"
 							text = "MOD_TEXT_PEACE_TREATIES_EXPANDED"
-							maxWidth = 120
-							maxHeight = 20
+							maxWidth = 96
+							maxHeight = 33
+							vertical_alignment = center
 							alwaystransparent = yes
 						}
 					}
 
 					windowType = {
 						name = "subjects_expanded"
-						position = { x = 157 y = 244 }
-						size = { x = 147 y = 26 }
-
-						iconType = {
-							name = "mod_icon"
-							position = { x = 0 y = 1 }
-							spriteType = "GFX_mod_icon_subjects_expanded"
-							scale = 0.5
-						}
+						position = { x = 188 y = 418 }
+						size = { x = 158 y = 45 }
 
 						iconType = {
 							name = "mod_text_bg"
-							position = { x = 26 y = 2 }
+							position = { x = 0 y = 0 }
 							spriteType = "GFX_expanded_mod_family_entry_background"
+						}
+
+						iconType = {
+							name = "mod_icon"
+							position = { x = 114 y = 2 }
+							spriteType = "GFX_mod_icon_subjects_expanded"
+							scale = 0.84
 						}
 
 						instantTextBoxType = {
 							name = "mod_text"
-							position = { x = 26 y = 6 }
+							position = { x = 18 y = 7 }
 							format = center
 							font = "Main_16"
 							text = "MOD_TEXT_SUBJECTS_EXPANDED"
-							maxWidth = 120
-							maxHeight = 20
+							maxWidth = 96
+							maxHeight = 33
+							vertical_alignment = center
 							alwaystransparent = yes
 						}
 					}
 
+					### Center Column of Mods
 					windowType = {
 						name = "trade_goods_expanded"
-						position = { x = 157 y = 270 }
-						size = { x = 147 y = 26 }
-
-						iconType = {
-							name = "mod_icon"
-							position = { x = 0 y = 1 }
-							spriteType = "GFX_mod_icon_trade_goods_expanded"
-							scale = 0.5
-						}
+						position = { x = 108 y = 465 }
+						size = { x = 158 y = 45 }
 
 						iconType = {
 							name = "mod_text_bg"
-							position = { x = 26 y = 2 }
+							position = { x = 0 y = 0 }
 							spriteType = "GFX_expanded_mod_family_entry_background"
+						}
+
+						iconType = {
+							name = "mod_icon"
+							position = { x = 114 y = 2 }
+							spriteType = "GFX_mod_icon_trade_goods_expanded"
+							scale = 0.84
 						}
 
 						instantTextBoxType = {
 							name = "mod_text"
-							position = { x = 26 y = 6 }
+							position = { x = 18 y = 7 }
 							format = center
 							font = "Main_16"
 							text = "MOD_TEXT_TRADE_GOODS_EXPANDED"
-							maxWidth = 120
-							maxHeight = 20
+							maxWidth = 96
+							maxHeight = 33
+							vertical_alignment = center
 							alwaystransparent = yes
 						}
 					}
