@@ -43,3 +43,26 @@ fee_mug_summer_capital = {
 fee_mug_baburs_legacy = {
 	fire_damage = 0.2
 }
+
+fee_mug_timurid_partition = {
+	min_local_autonomy = 75
+}
+
+fee_mug_bengali_expansion = {
+	local_development_cost_modifier = -0.35
+}
+fee_mug_bengali_industrialisation = {
+	allowed_num_of_buildings = 1
+	allowed_num_of_manufactories = 1
+	local_development_cost_modifier = -0.10
+	supply_limit_modifier = 0.50
+	regiment_recruit_speed = -0.25
+	trade_goods_size = 4
+}
+fee_mug_bengali_shipyard = {
+	ship_recruit_speed = -0.50
+}
+fee_mug_mughal_industrialisation = {
+	local_development_cost_modifier = -0.05
+	trade_goods_size_modifier = 0.25
+}

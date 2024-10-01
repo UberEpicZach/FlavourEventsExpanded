@@ -1,4 +1,13 @@
 ﻿l_english:
+
+# Decisions
+ fee_mug_get_rid_of_brothers_title: "Get Rid of your Brothers"
+ fee_mug_get_rid_of_brothers_desc: ""
+ 
+ fee_mug_industrialise_india_title: "Industrialise India"
+ fee_mug_industrialise_india_desc: ""
+
+# Events
  FEE_Mughals_Events.1.T: "Young Timurid prince without a kingdom"
  FEE_Mughals_Events.1.D: "A young Timurid prince who became ruler of Fergana when he was 11 and conquered Samarkand twice at the age of 15. But because was too capable his relatives installed his younger and more controllable brother on the throne of Fergana. While he was trying to reclaim Fergana he was defeated in battle and thus Babur was without a kingdom. His situation was so dire that wandering through the mountains he and his followers only had 1 tent which was used by his mother. Fortunately, he has finally found some luck in Afghanistan, Kabul is ruled by an unpopular and weak ruler so it would be easy for him to take over it."
  FEE_Mughals_Events.1.OPT1: "We can only submit to him."
@@ -83,6 +92,18 @@
  FEE_Mughals_Events.19.OPT1: "Bury him in [Root.Capital.GetName]"
  FEE_Mughals_Events.19.OPT2: "He wished to be buried in Kabul."
 
+ FEE_Mughals_Events.20.T: "Timurid partition"
+ FEE_Mughals_Events.20.D: ""
+ FEE_Mughals_Events.20.OPT1: "The empire shall be split according to tradition."
+
+ FEE_Mughals_Events.21.T: "Bengal proto industrialization"
+ FEE_Mughals_Events.21.D: ""
+ FEE_Mughals_Events.21.OPT1: "We need to heavily invest into Bengal"
+
+ FEE_Mughals_Events.22.T: "Bengali province has industrialised"
+ FEE_Mughals_Events.22.D: ""
+ FEE_Mughals_Events.22.OPT1: "Wonderful"
+
 # Modifiers
  fee_mug_bagh_babur: "Bagh-e Babur"
  desc_fee_mug_bagh_babur: ""
@@ -104,6 +125,18 @@
  desc_fee_mug_summer_capital: ""
  fee_mug_baburs_legacy: "Babur's Legacy"
  desc_fee_mug_baburs_legacy: ""
+
+ fee_mug_timurid_partition: "Timurid Partition"
+ desc_fee_mug_timurid_partition: ""
+
+ fee_mug_bengali_expansion: "Bengali Expansion"
+ desc_fee_mug_bengali_expansion: ""
+ fee_mug_bengali_industrialisation: "Bengali Industrialisation"
+ desc_fee_mug_bengali_industrialisation: ""
+ fee_mug_bengali_shipyard: "Bengali Shipyard"
+ desc_fee_mug_bengali_shipyard: ""
+ fee_mug_mughal_industrialisation: "Mughal Industrialisation"
+ desc_fee_mug_mughal_industrialisation: ""
 
 # Opinion Modifiers
  fee_mug_paid_tribute: "Paid Tribute"
