@@ -66,3 +66,16 @@ fee_mug_mughal_industrialisation = {
 	local_development_cost_modifier = -0.05
 	trade_goods_size_modifier = 0.25
 }
+
+fee_mug_jharoka_darshana = {
+	global_unrest = -1
+	legitimacy = 0.5
+	stability_cost_modifier = -0.05
+}
+fee_abolished_jizya = {
+	local_tax_modifier = -0.10
+}
+fee_mug_ibadat_khana = {
+	religious_unity = 0.25
+	idea_cost = -0.10
+}

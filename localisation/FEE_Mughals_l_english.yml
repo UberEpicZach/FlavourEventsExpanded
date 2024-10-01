@@ -104,6 +104,22 @@
  FEE_Mughals_Events.22.D: ""
  FEE_Mughals_Events.22.OPT1: "Wonderful"
 
+ FEE_Mughals_Events.23.T: "Akbar the Great"
+ FEE_Mughals_Events.23.D: ""
+ FEE_Mughals_Events.23.OPT1: "Long live the young emperor."
+
+ FEE_Mughals_Events.24.T: "Jharoka Darshana"
+ FEE_Mughals_Events.24.D: "Emperor Akbar, in his devotion to a just and unified empire, initiated the practice of Jharokha Darshan. Each morning, Akbar would appear at the jharokha window of his residence in Agra Fort after his sun worship, greeting the gathered crowd below. Hindus, bathing in the river at dawn, and people of all walks of life—soldiers, merchants, craftsmen, peasants, and the infirm—gathered to witness their emperor. \nThis daily practice served a dual purpose: to reassure his subjects of his health and the stability of the empire, and to symbolically blend imperial authority with public faith. The emperor would spend hours each day, listening to grievances and petitions, with even the simplest of requests being heard. The Jharokha Darshan became a vital connection between ruler and subject, reinforcing Akbar's liberal approach to governance and ensuring the empire's cohesion. This practice of transparency and communication stood as a symbol of Akbar's commitment to his people, blending spiritual reverence with political duty."
+ FEE_Mughals_Events.24.OPT1: "Public appearances shall become a daily practice."
+
+ FEE_Mughals_Events.25.T: "Abolition of Jizya"
+ FEE_Mughals_Events.25.D: "I have made the monumental decision to abolish the Jizya, the tax levied on my non-Muslim subjects. Though this will undoubtedly decrease the revenue collected from the empire, the long-term benefits outweigh the cost. By removing this burden, we pave the way for a more unified and harmonious realm, fostering loyalty and gratitude among all subjects, regardless of their faith. This step will solidify the foundation of an empire where all religions can coexist peacefully, and our reign will be remembered as one that valued integration and justice over division."
+ FEE_Mughals_Events.25.OPT1: "A more just empire."
+
+ FEE_Mughals_Events.26.T: "House of Worship"
+ FEE_Mughals_Events.26.D: "In his quest to understand the spiritual fabric of his realm, Akbar has commissioned the construction of the Ibadat Khana, or House of Worship, at Fatehpur Sikri. This sacred hall will serve as a place where mystics, theologians, and scholars of various faiths—Hinduism, Islam, Zoroastrianism, Christianity, and even atheism—can gather to discuss and debate the truths of their beliefs. Inspired by the spiritual practices of Sulaiman Kirani, Akbar seeks to deepen his theological knowledge and explore the unity underlying all religions. This monumental initiative signals a bold new direction in the religious discourse of the empire, fostering dialogue and understanding across the faiths."
+ FEE_Mughals_Events.26.OPT1: "Uncover the Faith of the Divine"
+
 # Modifiers
  fee_mug_bagh_babur: "Bagh-e Babur"
  desc_fee_mug_bagh_babur: ""
@@ -138,8 +154,21 @@
  fee_mug_mughal_industrialisation: "Mughal Industrialisation"
  desc_fee_mug_mughal_industrialisation: ""
 
+ fee_mug_jharoka_darshana: "Jharoka Darshana"
+ desc_fee_mug_jharoka_darshana: ""
+ fee_abolished_jizya: "Abolished Jizya"
+ desc_fee_abolished_jizya: ""
+ fee_mug_ibadat_khana: "Ibadat Khana"
+ desc_fee_mug_ibadat_khana: ""
+
 # Opinion Modifiers
  fee_mug_paid_tribute: "Paid Tribute"
+
+# Privileges
+ estate_church_fee_abolished_jizya: "Abolished Jizya"
+ estate_church_fee_abolished_jizya_desc: ""
+ estate_church_fee_abolished_jizya_gt: "Every owned §YNon Muslim§! province gains the following bonus:"
+ estate_church_fee_abolished_jizya_rt: "The modifier '§YAbolished Jizya§!' is removed from all eligible provinces."
 
 # Tooltips
  fee_mug_punjab_claim_tt: "While we might be ready for war, we could §Ywait§! a few months and try and fabricate documents to legitimize our claims over Punjab..."

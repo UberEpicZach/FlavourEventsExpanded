@@ -1,0 +1,58 @@
+estate_church_fee_abolished_jizya = {
+	can_revoke = no
+	icon = privilege_build_jain_temple
+	land_share = 0
+	max_absolutism = -5
+	loyalty = -0.05
+	influence = 0.10
+	is_valid = { always = yes }
+	can_select = {
+		tag = MUG
+		religion_group = muslim
+	}
+	on_invalid = { }
+	penalties = { }
+	on_granted = {
+		custom_tooltip = estate_church_fee_abolished_jizya_gt
+		tooltip	= {
+			add_province_modifier = {
+				name = fee_abolished_jizya
+				duration = -1
+			}
+		}
+	}
+	on_granted_province = {
+		if = {
+			limit = {
+				NOT = { religion_group = muslim }
+			}
+			add_province_modifier = {
+				name = fee_abolished_jizya
+				duration = -1
+			}
+		}
+	}
+	on_invalid_province = {
+		if = {
+			limit = { has_province_modifier = fee_abolished_jizya }
+			remove_province_modifier = fee_abolished_jizya
+		}
+	}
+	on_revoked = {
+		custom_tooltip = estate_church_fee_abolished_jizya_rt
+	}
+	on_revoked_province = {
+		if = {
+			limit = { has_province_modifier = fee_abolished_jizya }
+			remove_province_modifier = fee_abolished_jizya
+		}
+	}
+	benefits = {
+		tolerance_heathen = 1
+		tolerance_of_heathens_capacity = 1
+	}
+	conditional_modifier = { }
+	ai_will_do = {
+		factor = 1
+	}
+}

@@ -204,6 +204,7 @@ on_monarch_death = {
 		FEE_Charles_V_Events.10 # Charles Dies
 		FEE_Bohemia_Events.3 # Death of Jiri Podebrad
 		FEE_Mughals_Events.19 # Death of Babur
+		FEE_Mughals_Events.23 # Akbar the Great
 	}
 	if = {
 		limit = {
