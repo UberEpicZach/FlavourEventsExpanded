@@ -550,7 +550,7 @@ country_event = {
 				}
 				every_owned_province = {
 					cede_province = ROOT
-				}	
+				}
 			}
 			hindusthan_region = {
 				limit = {
@@ -698,7 +698,7 @@ country_event = {
 	option = { #attack
 		name = FEE_Mughals_Events.12.OPT1
 		ai_chance = { factor = 100 }
-		
+
 		custom_tooltip = fee_mug_mewar_coalition_tt
 		declare_war_with_cb = {
 			casus_belli = cb_humiliate
@@ -714,7 +714,7 @@ country_event = {
 		hidden_effect = {
 			MUG = {
 				country_event = {
-					id = FEE_Mughals_events.13
+					id = FEE_Mughals_Events.13
 				}
 			}
 		}
@@ -1073,7 +1073,7 @@ country_event = {
 			else_if = {
 				limit = {
 					NOT = { has_province_modifier = fee_mug_bagh_babur }
-					
+
 				}
 				add_permanent_province_modifier = {
 					name = fee_mug_bagh_babur
@@ -1425,7 +1425,7 @@ country_event = {
 			AND = {
 				current_age = age_of_reformation
 				has_global_modifier_value = {
-					which = tolerance_heretic 
+					which = tolerance_heretic
 					value = 2
 				}
 				NOT = { ruler_has_personality = cruel_personality }
@@ -1485,7 +1485,7 @@ country_event = {
 			AND = {
 				current_age = age_of_reformation
 				has_global_modifier_value = {
-					which = tolerance_heretic 
+					which = tolerance_heretic
 					value = 2
 				}
 				NOT = { ruler_has_personality = cruel_personality }
@@ -1529,5 +1529,1330 @@ country_event = {
 			name = fee_mug_ibadat_khana
 			duration = -1
 		}
+	}
+}
+
+#################
+### Aurangzeb ###
+#################
+
+# A brave young prince faces off an elephant
+country_event = {
+	id = FEE_Mughals_Events.27
+	title = FEE_Mughals_Events.27.T
+	desc = FEE_Mughals_Events.27.D
+	picture = FEE_BATTLE_WITH_ELEPHANT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = MUG
+		religion_group = muslim
+		dynasty = "Timurid"
+		is_year = 1630
+		num_of_owned_provinces_with = {
+			value = 40
+			region = west_india_region
+		}
+		num_of_owned_provinces_with = {
+			value = 60
+			region = hindusthan_region
+		}
+		num_of_owned_provinces_with = {
+			value = 36
+			region = bengal_region
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = FEE_Mughals_Events.27.OPT1
+
+		ai_chance = { factor = 0.9 }
+
+		custom_tooltip = FEE_Mughals_Events.27.TT.1
+		set_country_flag = fee_mug_prince_aurangzeb
+	}
+
+	option = {
+		name = FEE_Mughals_Events.27.OPT2
+
+		ai_chance = { factor = 0.1 }
+
+		custom_tooltip = FEE_Mughals_Events.27.TT.2
+		set_country_flag = fee_mug_declined_aurangzeb
+	}
+}
+
+# Emperor at Death's doorstep
+country_event = {
+	id = FEE_Mughals_Events.28
+	title = FEE_Mughals_Events.28.T
+	desc = FEE_Mughals_Events.28.D
+	picture = KING_SICK_IN_BED_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			set_country_flag = fee_mug_emperor_at_deaths_doorstep
+		}
+	}
+
+	option = {
+		name = FEE_Mughals_Events.28.OPT1
+
+		goto = 524
+
+		trigger = {
+			has_country_flag = fee_mug_prince_aurangzeb
+		}
+
+		add_stability = -1
+		tooltip = {
+			kill_ruler = yes
+		}
+		if = {
+			limit = {
+				has_heir = yes
+			}
+			hidden_effect = {
+				clear_heir_education_flags = yes
+				clear_heir_success_flag = yes
+				clear_country_education_quality_flags = yes
+			}
+			kill_heir = { allow_new_heir = no }
+		}
+		define_ruler = {
+			name = "Aurangzeb"
+			dynasty = "Timurid"
+			culture = uzbehk
+			religion = sunni
+			ADM = 4
+			DIP = 5
+			MIL = 6
+			age = 30
+		}
+		if = {
+			limit = {
+				has_dlc = "Rights of Man"
+			}
+			add_ruler_personality = conqueror_personality
+			add_ruler_personality = zealot_personality
+		}
+		set_ruler_flag = heir_finished_education
+		set_ruler_flag = assigned_education
+		add_best_modern_army_education = yes
+
+		custom_tooltip = FEE_Mughals_Events.28.TT.1
+		west_india_region = {
+			limit = {
+				owned_by = ROOT
+			}
+			add_province_modifier = {
+				name = fee_mug_timurid_partition
+				duration = -1
+				desc = FEE_UNTIL_DEATH_OF_RULER_TT
+			}
+		}
+		bengal_region = {
+			limit = {
+				owned_by = ROOT
+			}
+			add_province_modifier = {
+				name = fee_mug_timurid_partition
+				duration = -1
+				desc = FEE_UNTIL_DEATH_OF_RULER_TT
+			}
+		}
+		524 = {
+			if = {
+				limit = {
+					owned_by = ROOT
+				}
+				spawn_rebels = {
+					type = pretender_rebels
+					size = 3
+					leader = "Dara Shikoh"
+					leader_dynasty = "Timurid"
+				}
+			}
+		}
+
+		clr_country_flag = fee_mug_prince_aurangzeb
+		set_country_flag = fee_mug_aurangzeb_sucession_war
+	}
+
+	option = {
+		name = FEE_Mughals_Events.28.OPT2
+
+		trigger = {
+			has_country_flag = fee_mug_prince_aurangzeb
+			num_of_owned_provinces_with = {
+				value = 30
+				region = deccan_region
+			}
+		}
+
+		add_stability = -1
+		tooltip = {
+			kill_ruler = yes
+		}
+		if = {
+			limit = {
+				has_heir = yes
+			}
+			hidden_effect = {
+				clear_heir_education_flags = yes
+				clear_heir_success_flag = yes
+				clear_country_education_quality_flags = yes
+			}
+			kill_heir = { allow_new_heir = no }
+		}
+		define_ruler = {
+			name = "Dara Shikoh"
+			dynasty = "Timurid"
+			culture = uzbehk
+			religion = sunni
+			ADM = 2
+			DIP = 1
+			MIL = 2
+			age = 33
+		}
+		if = {
+			limit = {
+				has_dlc = "Rights of Man"
+			}
+			add_ruler_personality = tolerant_personality
+			add_ruler_personality = patron_of_arts_personality
+		}
+		country_event = { id = FEE_Mughals_Events.29 days = 180 tooltip = FEE_Mughals_Events.28.TT.2 }
+
+		clr_country_flag = fee_mug_prince_aurangzeb
+	}
+
+	option = {
+		name = FEE_Mughals_Events.28.OPT3
+
+		trigger = {
+			has_country_flag = fee_mug_declined_aurangzeb
+		}
+
+		if = {
+			limit = {
+				has_heir = yes
+			}
+			hidden_effect = {
+				clear_heir_education_flags = yes
+				clear_heir_success_flag = yes
+				clear_country_education_quality_flags = yes
+			}
+			kill_heir = { allow_new_heir = no }
+		}
+		define_ruler = {
+			name = "Dara Shikoh"
+			dynasty = "Timurid"
+			culture = uzbehk
+			religion = sunni
+			ADM = 2
+			DIP = 1
+			MIL = 2
+			age = 33
+		}
+		if = {
+			limit = {
+				has_dlc = "Rights of Man"
+			}
+			add_ruler_personality = tolerant_personality
+			add_ruler_personality = patron_of_arts_personality
+		}
+
+		custom_tooltip = FEE_Mughals_Events.28.TT.1
+		west_india_region = {
+			limit = {
+				owned_by = ROOT
+			}
+			add_province_modifier = {
+				name = fee_mug_timurid_partition
+				duration = -1
+				desc = FEE_UNTIL_DEATH_OF_RULER_TT
+			}
+		}
+		bengal_region = {
+			limit = {
+				owned_by = ROOT
+			}
+			add_province_modifier = {
+				name = fee_mug_timurid_partition
+				duration = -1
+				desc = FEE_UNTIL_DEATH_OF_RULER_TT
+			}
+		}
+
+		clr_country_flag = fee_mug_declined_aurangzeb
+		set_country_flag = fee_mug_dara_shikoh
+	}
+}
+
+# Aurangzeb seizes Deccan
+country_event = {
+	id = FEE_Mughals_Events.29
+	title = FEE_Mughals_Events.29.T
+	desc = FEE_Mughals_Events.29.D
+	picture = CIVIL_WAR_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { exists = DEC }
+	}
+
+	option = {
+		name = FEE_Mughals_Events.29.OPT1
+
+		custom_tooltip = FEE_Mughals_Events.28.TT.1
+		west_india_region = {
+			limit = {
+				owned_by = ROOT
+			}
+			add_province_modifier = {
+				name = fee_mug_timurid_partition
+				duration = -1
+				desc = FEE_UNTIL_DEATH_OF_RULER_TT
+			}
+		}
+		bengal_region = {
+			limit = {
+				owned_by = ROOT
+			}
+			add_province_modifier = {
+				name = fee_mug_timurid_partition
+				duration = -1
+				desc = FEE_UNTIL_DEATH_OF_RULER_TT
+			}
+		}
+		hidden_effect = {
+			deccan_region = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_core = DEC
+			}
+		}
+		release = DEC
+		declare_war = DEC
+		add_country_modifier = {
+			name = fee_mug_deserted_army
+			duration = -1
+			desc = FEE_UNTIL_WARS_ENDS_TT
+		}
+		hidden_effect = {
+			DEC = {
+				change_government = monarchy
+				adopt_reform_progress = ROOT
+				embrace_institutions_of = ROOT
+				add_treasury = 10000
+				add_manpower = 300
+				define_ruler = {
+					name = "Aurangzeb"
+					dynasty = "Timurid"
+					culture = uzbehk
+					religion = sunni
+					ADM = 4
+					DIP = 5
+					MIL = 6
+					age = 30
+				}
+				if = {
+					limit = {
+						has_dlc = "Rights of Man"
+					}
+					add_ruler_personality = conqueror_personality
+					add_ruler_personality = zealot_personality
+				}
+				set_ruler_flag = heir_finished_education
+				set_ruler_flag = assigned_education
+				add_best_modern_army_education = yes
+				add_country_modifier = {
+					name = fee_mug_aurangzeb_leadership
+					duration = -1
+					desc = FEE_UNTIL_WARS_ENDS_TT
+				}
+				capital_scope = {
+					build_to_forcelimit = {
+						infantry = 0.5
+						cavalry = 0.25
+						artillery = 0.25
+					}
+				}
+			}
+		}
+	}
+}
+
+# Dara's Victory
+country_event = {
+	id = FEE_Mughals_Events.30
+	title = FEE_Mughals_Events.30.T
+	desc = FEE_Mughals_Events.30.D
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = MUG
+		has_country_modifier = fee_mug_deserted_army
+		war_with = DEC
+		war_score_against = {
+			who = DEC
+			value = 50
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = FEE_Mughals_Events.30.OPT1
+
+		white_peace = DEC
+		custom_tooltip = FEE_MUG_ANNEX_DEC_TT
+		hidden_effect = {
+			DEC = {
+				every_owned_province = {
+					cede_province = ROOT
+				}
+			}
+		}
+	}
+}
+
+# Aurangzeb's Victory
+country_event = {
+	id = FEE_Mughals_Events.31
+	title = FEE_Mughals_Events.31.T
+	desc = FEE_Mughals_Events.31.D
+	picture = BAD_WITH_MONARCH_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = MUG
+		has_country_modifier = fee_mug_deserted_army
+		war_with = DEC
+		DEC = {
+			war_score_against = {
+				who = ROOT
+				value = 50
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = FEE_Mughals_Events.31.OPT1
+
+		white_peace = DEC
+		custom_tooltip = FEE_MUG_ANNEX_DEC_TT
+		hidden_effect = {
+			DEC = {
+				every_owned_province = {
+					cede_province = ROOT
+				}
+			}
+		}
+
+		add_stability = -1
+		tooltip = {
+			kill_ruler = yes
+		}
+		if = {
+			limit = {
+				has_heir = yes
+			}
+			hidden_effect = {
+				clear_heir_education_flags = yes
+				clear_heir_success_flag = yes
+				clear_country_education_quality_flags = yes
+			}
+			kill_heir = { allow_new_heir = no }
+		}
+		define_ruler = {
+			name = "Aurangzeb"
+			dynasty = "Timurid"
+			culture = uzbehk
+			religion = sunni
+			ADM = 4
+			DIP = 5
+			MIL = 6
+			age = 30
+		}
+		if = {
+			limit = {
+				has_dlc = "Rights of Man"
+			}
+			add_ruler_personality = conqueror_personality
+			add_ruler_personality = zealot_personality
+		}
+		set_ruler_flag = heir_finished_education
+		set_ruler_flag = assigned_education
+		add_best_modern_army_education = yes
+
+		set_country_flag = fee_mug_aurangzeb_sucession_war
+	}
+}
+
+# Father's Wish
+country_event = {
+	id = FEE_Mughals_Events.32
+	title = FEE_Mughals_Events.32.T
+	desc = FEE_Mughals_Events.32.D
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = MUG
+		has_country_flag = fee_mug_dara_shikoh
+		OR = {
+			AND = {
+				NOT = { exists = BNG }
+				bengal_region = {
+					owned_by = ROOT
+				}
+			}
+			bengal_region = {
+				owned_by = ROOT
+				any_core_country = { exists = no }
+			}
+		}
+		OR = {
+			AND = {
+				NOT = { exists = DEC }
+				deccan_region = {
+					owned_by = ROOT
+				}
+			}
+			deccan_region = {
+				owned_by = ROOT
+				any_core_country = { exists = no }
+			}
+		}
+		OR = {
+			AND = {
+				NOT = { exists = GUJ }
+				west_india_region = {
+					owned_by = ROOT
+				}
+			}
+			west_india_region = {
+				owned_by = ROOT
+				any_core_country = { exists = no }
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = { exists = BNG }
+				}
+				BNG = { save_event_target_as = new_bengal_owner }
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						region = bengal_region
+						any_core_country = { exists = no }
+					}
+					random_core_country = {
+						limit = {
+							exists = no
+						}
+						save_event_target_as = new_bengal_owner
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = { exists = DEC }
+				}
+				DEC = { save_event_target_as = new_deccan_owner }
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						region = deccan_region
+						any_core_country = { exists = no }
+					}
+					random_core_country = {
+						limit = {
+							exists = no
+						}
+						save_event_target_as = new_deccan_owner
+					}
+				}
+			}
+			if = {
+				limit = {
+					NOT = { exists = GUJ }
+				}
+				GUJ = { save_event_target_as = new_west_india_owner }
+			}
+			else = {
+				random_owned_province = {
+					limit = {
+						region = west_india_region
+						any_core_country = { exists = no }
+					}
+					random_core_country = {
+						limit = {
+							exists = no
+						}
+						save_event_target_as = new_west_india_owner
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Mughals_Events.32.OPT1
+
+		hidden_effect = {
+			bengal_region = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_core = event_target:new_bengal_owner
+			}
+			deccan_region = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_core = event_target:new_deccan_owner
+			}
+			west_india_region = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_core = event_target:new_west_india_owner
+			}
+		}
+		release = event_target:new_bengal_owner
+		release = event_target:new_deccan_owner
+		release = event_target:new_west_india_owner
+		custom_tooltip = FEE_Mughals_Events.32.TT.1
+		hidden_effect = {
+			every_core_province = {
+				add_core = event_target:new_bengal_owner
+				add_core = event_target:new_deccan_owner
+				add_core = event_target:new_west_india_owner
+			}
+			event_target:new_bengal_owner = {
+				change_government = monarchy
+				adopt_reform_progress = ROOT
+				embrace_institutions_of = ROOT
+				change_religion = ROOT
+				define_ruler = {
+					dynasty = "Timurid"
+					culture = uzbehk
+					religion = sunni
+				}
+			}
+			event_target:new_deccan_owner = {
+				change_government = monarchy
+				adopt_reform_progress = ROOT
+				embrace_institutions_of = ROOT
+				change_religion = ROOT
+				define_ruler = {
+					dynasty = "Timurid"
+					culture = uzbehk
+					religion = sunni
+				}
+			}
+			event_target:new_west_india_owner = {
+				change_government = monarchy
+				adopt_reform_progress = ROOT
+				embrace_institutions_of = ROOT
+				change_religion = ROOT
+				define_ruler = {
+					dynasty = "Timurid"
+					culture = uzbehk
+					religion = sunni
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Mughals_Events.32.OPT2
+
+		add_stability = -2
+		add_ruler_modifier = {
+			name = fee_mug_overthrown_the_emperor
+			duration = -1
+		}
+		custom_tooltip = FEE_Mughals_Events.32.TT.2
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_province_modifier = fee_mug_timurid_partition
+				}
+				remove_province_modifier = fee_mug_timurid_partition
+			}
+		}
+	}
+}
+
+# Aurangzeb, Seizer of the World
+country_event = {
+	id = FEE_Mughals_Events.33
+	title = FEE_Mughals_Events.33.T
+	desc = FEE_Mughals_Events.33.D
+	picture = ASSASSINATION_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = MUG
+		has_country_flag = fee_mug_aurangzeb_sucession_war
+		NOT = { num_of_rebel_armies = 1 }
+		NOT = { num_of_rebel_controlled_provinces = 1 }
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = FEE_Mughals_Events.33.OPT1
+
+		custom_tooltip = FEE_Mughals_Events.33.TT.1
+		add_stability = -1
+		add_ruler_modifier = {
+			name = fee_mug_overthrown_the_emperor
+			duration = -1
+		}
+		custom_tooltip = FEE_Mughals_Events.32.TT.2
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					has_province_modifier = fee_mug_timurid_partition
+				}
+				remove_province_modifier = fee_mug_timurid_partition
+			}
+		}
+		clr_country_flag = fee_mug_aurangzeb_sucession_war
+		set_country_flag = fee_mug_aurangzeb_alamgir
+	}
+}
+
+# Pashtun Uprising
+country_event = {
+	id = FEE_Mughals_Events.34
+	title = FEE_Mughals_Events.34.T
+	desc = FEE_Mughals_Events.34.D
+	picture = ANGRY_MOB_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = MUG
+		num_of_owned_provinces_with = {
+			value = 5
+			culture = afghani
+		}
+		OR = {
+			has_country_flag = fee_mug_aurangzeb_alamgir
+			is_year = 1670
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = FEE_Mughals_Events.34.OPT1
+
+		custom_tooltip = FEE_Mughals_Events.34.TT.1
+		tooltip = {
+			add_province_modifier = {
+				name = fee_mug_closed_trade_route
+				duration = 3650
+			}
+		}
+		hidden_effect = {
+			kabulistan_area = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = fee_mug_closed_trade_route
+					duration = 3650
+				}
+			}
+			sind_sagar_area = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = fee_mug_closed_trade_route
+					duration = 3650
+				}
+			}
+			multan_area = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_province_modifier = {
+					name = fee_mug_closed_trade_route
+					duration = 3650
+				}
+			}
+		}
+		custom_tooltip = FEE_Mughals_Events.34.TT.2
+		tooltip = {
+			add_province_modifier = {
+				name = fee_mug_pashtun_revolt
+				duration = 10950
+			}
+		}
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					culture = afghani
+				}
+				particularist_rebels = 3
+				add_province_modifier = {
+					name = fee_mug_pashtun_revolt
+					duration = 10950
+				}
+			}
+		}
+
+		set_country_flag = fee_mug_pashtun_uprising
+	}
+}
+
+# Deal with the Pashtuns personally
+country_event = {
+	id = FEE_Mughals_Events.35
+	title = FEE_Mughals_Events.35.T
+	desc = FEE_Mughals_Events.35.D
+	picture = CONQUEST_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = MUG
+		has_country_flag = fee_mug_pashtun_uprising
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = {
+		name = FEE_Mughals_Events.35.OPT1
+
+		add_years_of_income = -0.5
+		custom_tooltip = FEE_Mughals_Events.35.TT
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					culture = afghani
+				}
+				add_devastation = 25
+				random = {
+					chance = 50
+					add_base_tax = -1
+					add_base_production = -1
+					add_base_manpower = -1
+				}
+			}
+			every_owned_province = {
+				remove_province_modifier = fee_mug_closed_trade_route
+				remove_province_modifier = fee_mug_pashtun_revolt
+			}
+		}
+		clr_country_flag = fee_mug_pashtun_uprising
+	}
+}
+
+# Crisis of the Rathore Tribe
+country_event = {
+	id = FEE_Mughals_Events.36
+	title = FEE_Mughals_Events.36.T
+	desc = FEE_Mughals_Events.36.D
+	picture = NEW_HEIR_eventPicture
+
+	fire_only_once = yes
+
+	goto = 514
+
+	trigger = {
+		tag = MUG
+		is_year = 1675
+		NOT = { is_year = 1700 }
+		mewar_area = {
+			type = all
+			owned_by = ROOT
+		}
+		marwar_area = {
+			type = all
+			owned_by = ROOT
+		}
+		OR = {
+			has_country_flag = fee_mug_aurangzeb_alamgir
+			AND = {
+				has_dlc = "Rights of Man"
+				NOT = { ruler_has_personality = tolerant_personality }
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = FEE_Mughals_Events.36.OPT1
+
+		514 = {
+			noble_rebels = 3
+		}
+		if = {
+			limit = {
+				has_estate = estate_rajput
+			}
+			add_ruler_modifier = {
+				name = fee_mug_meddling_in_rajput_politics
+				duration = -1
+			}
+		}
+		hidden_effect = {
+			country_event = { id = FEE_Mughals_Events.37 days = 180 }
+		}
+	}
+}
+
+# Rathore Rebellion
+country_event = {
+	id = FEE_Mughals_Events.37
+	title = FEE_Mughals_Events.37.T
+	desc = FEE_Mughals_Events.37.D
+	picture = BATTLE_eventPicture
+
+	is_triggered_only = yes
+
+	goto = highlight_province
+
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					mewar_area = {
+						owned_by = ROOT
+					}
+					NOT = { owns = 514 }
+				}
+				random_owned_province = {
+					limit = {
+						area = mewar_area
+					}
+					save_event_target_as = highlight_province
+				}
+			}
+			else = {
+				514 = {
+					save_event_target_as = highlight_province
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Mughals_Events.37.OPT1
+
+		514 = {
+			if = {
+				limit = {
+					owned_by = ROOT
+				}
+				noble_rebels = 3
+			}
+		}
+		mewar_area = {
+			limit = {
+				owned_by = ROOT
+			}
+			noble_rebels = 3
+		}
+		custom_tooltip = FEE_Mughals_Events.37.TT
+		tooltip = {
+			add_province_modifier = {
+				name = fee_mug_rajput_guerillas
+				duration = -1
+				desc = FEE_UNTIL_DEATH_OF_RULER_TT
+			}
+		}
+		hidden_effect = {
+			every_owned_province = {
+				limit = {
+					culture = rajput
+				}
+				add_province_modifier = {
+					name = fee_mug_rajput_guerillas
+					duration = -1
+					desc = FEE_UNTIL_DEATH_OF_RULER_TT
+				}
+			}
+		}
+		set_country_flag = fee_mug_rathore_rebellion
+	}
+}
+
+# [Root.Heir.GetName] attempts to overthrow me
+country_event = {
+	id = FEE_Mughals_Events.38
+	title = FEE_Mughals_Events.38.T
+	desc = FEE_Mughals_Events.38.D
+	picture = ACCUSATION_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = MUG
+		has_heir = yes
+		has_country_flag = fee_mug_rathore_rebellion
+		has_country_flag = fee_mug_aurangzeb_alamgir
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = FEE_Mughals_Events.38.OPT1
+
+		custom_tooltip = FEE_Mughals_Events.38.TT
+		kill_heir = { }
+	}
+}
+
+# Abolition of Jharoka Darshana
+country_event = {
+	id = FEE_Mughals_Events.39
+	title = FEE_Mughals_Events.39.T
+	desc = FEE_Mughals_Events.39.D
+	picture = COURT_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = MUG
+		religion_group = muslim
+		has_country_modifier = fee_mug_jharoka_darshana
+		OR = {
+			has_country_flag = fee_mug_aurangzeb_alamgir
+			AND = {
+				OR = {
+					current_age = age_of_absolutism
+					current_age = age_of_revolutions
+				}
+				OR = {
+					AND = {
+						uses_piety = yes
+						NOT = { piety = 0.5 }
+					}
+					AND = {
+						has_dlc = "Rights of Man"
+						OR = {
+							ruler_has_personality = cruel_personality
+							ruler_has_personality = zealot_personality
+							ruler_has_personality = pious_personality
+							ruler_has_personality = greedy_personality
+						}
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = FEE_Mughals_Events.39.OPT1
+
+		add_piety = 0.25
+		remove_country_modifier = fee_mug_jharoka_darshana
+	}
+}
+
+# Cheap Throne Room
+country_event = {
+	id = FEE_Mughals_Events.40
+	title = FEE_Mughals_Events.40.T
+	desc = FEE_Mughals_Events.40.D
+	picture = BANKRUPTCY_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = MUG
+		OR = {
+			has_country_flag = fee_mug_aurangzeb_alamgir
+			num_of_loans = 1
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 96
+	}
+
+	option = {
+		name = FEE_Mughals_Events.40.OPT1
+
+		add_prestige = -50
+		if = {
+			limit = {
+				has_dlc = "Mandate of Heaven"
+			}
+			add_splendor = -600
+		}
+		add_years_of_income = 0.5
+		add_piety = -0.25
+		add_ruler_modifier = {
+			name = fee_mug_cheap_throne_room
+			duration = -1
+		}
+	}
+}
+
+# Implementation of Jizya
+country_event = {
+	id = FEE_Mughals_Events.41
+	title = FEE_Mughals_Events.41.T
+	desc = FEE_Mughals_Events.41.D
+	picture = CORRUPTION_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = MUG
+		religion_group = muslim
+		has_estate_privilege = estate_church_fee_abolished_jizya
+		OR = {
+			has_country_flag = fee_mug_aurangzeb_alamgir
+			AND = {
+				OR = {
+					current_age = age_of_absolutism
+					current_age = age_of_revolutions
+				}
+				OR = {
+					NOT = { ADM = 4 }
+					AND = {
+						has_dlc = "Rights of Man"
+						OR = {
+							ruler_has_personality = zealot_personality
+							ruler_has_personality = pious_personality
+						}
+					}
+				}
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	option = {
+		name = FEE_Mughals_Events.41.OPT1
+
+		add_adm_power = -50
+		remove_estate_privilege = estate_church_fee_abolished_jizya
+		set_estate_privilege = estate_church_fee_reestablished_jizya
+	}
+}
+
+# Conqueror of the World
+country_event = {
+	id = FEE_Mughals_Events.42
+	title = FEE_Mughals_Events.42.T
+	desc = FEE_Mughals_Events.42.D
+	picture = GOOD_WITH_MONARCH_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = MUG
+		has_country_flag = fee_mug_aurangzeb_alamgir
+		num_of_owned_provinces_with = {
+			value = 200
+			superregion = india_superregion
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = FEE_Mughals_Events.42.OPT1
+
+		add_ruler_modifier = {
+			name = fee_mug_alamgir
+			duration = -1
+		}
+		if = {
+			limit = {
+				ruler_has_personality = conqueror_personality
+			}
+			remove_ruler_personality = conqueror_personality
+			add_ruler_personality = legendary_conqueror_personality
+		}
+		else_if = {
+			limit = {
+				has_dlc = "Rights of Man"
+				NOT = { months_of_ruling = 300 } # less than 3 personalities
+			}
+			add_ruler_personality = legendary_conqueror_personality
+		}
+		add_power_projection = {
+			type = 10_permanent_power_projection
+			amount = 10
+		}
+		custom_tooltip = FEE_Mughals_Events.42.TT
+		set_country_flag = fee_mug_perma_pp_removed_on_ruler_death
+	}
+}
+
+# Travelling physician from France
+country_event = {
+	id = FEE_Mughals_Events.43
+	title = FEE_Mughals_Events.43.T
+	desc = FEE_Mughals_Events.43.D
+	picture = ADVISOR_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = MUG
+		is_year = 1658
+		OR = {
+			has_country_flag = fee_mug_aurangzeb_alamgir
+			AND = {
+				OR = {
+					has_dlc = "Rights of Man"
+					has_dlc = "Emperor"
+				}
+				is_great_power = yes
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	option = {
+		name = FEE_Mughals_Events.43.OPT1
+
+		if = {
+			limit = {
+				is_expanded_mod_active = { mod = advisor_types }
+			}
+			define_advisor = {
+				type = ate_advisor_court_physician
+				skill = 2
+				name = "François Bernier"
+				cost_multiplier = 0.34
+			}
+		}
+		else = {
+			define_advisor = {
+				type = natural_scientist
+				skill = 2
+				name = "François Bernier"
+				cost_multiplier = 0.34
+			}
+		}
+	}
+}
+
+# Marathas Raid
+country_event = {
+	id = FEE_Mughals_Events.44
+	title = FEE_Mughals_Events.44.T
+	desc = FEE_Mughals_Events.44.D
+	picture = SIEGE_eventPicture
+
+	fire_only_once = yes
+
+	goto = 544
+
+	trigger = {
+		tag = MUG
+		is_year = 1657
+		owns = 544
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = FEE_Mughals_Events.44.OPT1
+
+		544 = {
+			area = {
+				limit = {
+					owned_by = ROOT
+				}
+				add_devastation = 50
+			}
+		}
+		if = {
+			limit = {
+				exists = MAR
+			}
+			MAR = {
+				country_event = { id = FEE_Mughals_Events.45 }
+			}
+		}
+	}
+}
+
+# Raid of [544.GetName]
+country_event = {
+	id = FEE_Mughals_Events.45
+	title = FEE_Mughals_Events.45.T
+	desc = FEE_Mughals_Events.45.D
+	picture = CORRUPTION_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Mughals_Events.45.OPT1
+
+		add_treasury = 1500
 	}
 }

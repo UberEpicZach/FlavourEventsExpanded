@@ -3,7 +3,7 @@
 # Decisions
  fee_mug_get_rid_of_brothers_title: "Get Rid of your Brothers"
  fee_mug_get_rid_of_brothers_desc: ""
- 
+
  fee_mug_industrialise_india_title: "Industrialise India"
  fee_mug_industrialise_india_desc: ""
 
@@ -120,6 +120,86 @@
  FEE_Mughals_Events.26.D: "In his quest to understand the spiritual fabric of his realm, Akbar has commissioned the construction of the Ibadat Khana, or House of Worship, at Fatehpur Sikri. This sacred hall will serve as a place where mystics, theologians, and scholars of various faiths—Hinduism, Islam, Zoroastrianism, Christianity, and even atheism—can gather to discuss and debate the truths of their beliefs. Inspired by the spiritual practices of Sulaiman Kirani, Akbar seeks to deepen his theological knowledge and explore the unity underlying all religions. This monumental initiative signals a bold new direction in the religious discourse of the empire, fostering dialogue and understanding across the faiths."
  FEE_Mughals_Events.26.OPT1: "Uncover the Faith of the Divine"
 
+ FEE_Mughals_Events.27.T: "A brave young prince faces off an elephant"
+ FEE_Mughals_Events.27.D: "PLACEHOLDER"
+ FEE_Mughals_Events.27.OPT1: "He will be great help in running the empire."
+ FEE_Mughals_Events.27.OPT2: "He was just lucky."
+
+ FEE_Mughals_Events.28.T: "Emperor at Death's doorstep"
+ FEE_Mughals_Events.28.D: "PLACEHOLDER"
+ FEE_Mughals_Events.28.OPT1: "Aurangzeb has the true skills to lead."
+ FEE_Mughals_Events.28.OPT2: "Aurangzeb is not a threat to me."
+ FEE_Mughals_Events.28.OPT3: "Dara Shikoh, my favourite son, will be the Emperor."
+
+ FEE_Mughals_Events.29.T: "Aurangzeb seizes Deccan"
+ FEE_Mughals_Events.29.D: "PLACEHOLDER"
+ FEE_Mughals_Events.29.OPT1: "Civil War is inevitable."
+
+ FEE_Mughals_Events.30.T: "Dara's Victory"
+ FEE_Mughals_Events.30.D: "PLACEHOLDER"
+ FEE_Mughals_Events.30.OPT1: "Make an example of Aurangzeb and execute him!"
+
+ FEE_Mughals_Events.31.T: "Aurangzeb's Victory"
+ FEE_Mughals_Events.31.D: "PLACEHOLDER"
+ FEE_Mughals_Events.31.OPT1: "Aurangzeb will be the Emperor!"
+
+ FEE_Mughals_Events.32.T: "Father's Wish"
+ FEE_Mughals_Events.32.D: "PLACEHOLDER"
+ FEE_Mughals_Events.32.OPT1: "As you wish, Father."
+ FEE_Mughals_Events.32.OPT2: "No, the whole Empire is mine."
+
+ FEE_Mughals_Events.33.T: "Aurangzeb, Seizer of the World"
+ FEE_Mughals_Events.33.D: "PLACEHOLDER"
+ FEE_Mughals_Events.33.OPT1: "Ya takht ya tabut!"
+
+ FEE_Mughals_Events.34.T: "Pashtun Uprising"
+ FEE_Mughals_Events.34.D: "PLACEHOLDER"
+ FEE_Mughals_Events.34.OPT1: "The governor of the region shall deal with it."
+
+ FEE_Mughals_Events.35.T: "Deal with the Pashtuns personally"
+ FEE_Mughals_Events.35.D: "PLACEHOLDER"
+ FEE_Mughals_Events.35.OPT1: "Use the carrots and stick approach on the tribes."
+
+ FEE_Mughals_Events.36.T: "Crisis of the Rathore Tribe"
+ FEE_Mughals_Events.36.D: "PLACEHOLDER"
+ FEE_Mughals_Events.36.OPT1: "The infant should be raised as muslim."
+
+ FEE_Mughals_Events.37.T: "Rathore Rebellion"
+ FEE_Mughals_Events.37.D: "PLACEHOLDER"
+ FEE_Mughals_Events.37.OPT1: "I cannot ignore this provocation!"
+
+ FEE_Mughals_Events.38.T: "[Root.Heir.GetName] attempts to overthrow me"
+ FEE_Mughals_Events.38.D: "PLACEHOLDER"
+ FEE_Mughals_Events.38.OPT1: "Let us see who dies first. [Root.Heir.GetSheHeCap] or I!"
+
+ FEE_Mughals_Events.39.T: "Abolition of Jharoka Darshana"
+ FEE_Mughals_Events.39.D: "PLACEHOLDER"
+ FEE_Mughals_Events.39.OPT1: "This practice is superstitious and against Islam."
+
+ FEE_Mughals_Events.40.T: "Cheap Throne Room"
+ FEE_Mughals_Events.40.D: "PLACEHOLDER"
+ FEE_Mughals_Events.40.OPT1: "The treasury lacks funds."
+
+ FEE_Mughals_Events.41.T: "Implementation of Jizya"
+ FEE_Mughals_Events.41.D: "PLACEHOLDER"
+ FEE_Mughals_Events.41.OPT1: "We need to replenish the treasury."
+
+ FEE_Mughals_Events.42.T: "Conqueror of the World"
+ FEE_Mughals_Events.42.D: "PLACEHOLDER"
+ FEE_Mughals_Events.42.OPT1: "My regnal name shall be Alamgir!"
+
+ FEE_Mughals_Events.43.T: "Travelling physician from France"
+ FEE_Mughals_Events.43.D: "PLACEHOLDER"
+ FEE_Mughals_Events.43.OPT1: "François Bernier shall be my personal physician."
+
+ FEE_Mughals_Events.44.T: "Marathas Raid"
+ FEE_Mughals_Events.44.D: "PLACEHOLDER"
+ FEE_Mughals_Events.44.OPT1: "The Damn Shivaji."
+
+ FEE_Mughals_Events.45.T: "Raid of [544.GetName]"
+ FEE_Mughals_Events.45.D: "PLACEHOLDER"
+ FEE_Mughals_Events.45.OPT1: "We have received a better offer."
+
 # Modifiers
  fee_mug_bagh_babur: "Bagh-e Babur"
  desc_fee_mug_bagh_babur: ""
@@ -161,6 +241,25 @@
  fee_mug_ibadat_khana: "Ibadat Khana"
  desc_fee_mug_ibadat_khana: ""
 
+ fee_mug_deserted_army: "Deserted Army"
+ desc_fee_mug_deserted_army: ""
+ fee_mug_aurangzeb_leadership: "Aurangzeb Leadership"
+ desc_fee_mug_aurangzeb_leadership: ""
+ fee_mug_overthrown_the_emperor: "Overthrown the Emperor"
+ desc_fee_mug_overthrown_the_emperor: ""
+ fee_mug_pashtun_revolt: "Pashtun Revolt"
+ desc_fee_mug_pashtun_revolt: ""
+ fee_mug_closed_trade_route: "Closed Trade Route"
+ desc_fee_mug_closed_trade_route: ""
+ fee_mug_rajput_guerillas: "Rajput Guerrillas"
+ desc_fee_mug_rajput_guerillas: ""
+ fee_mug_cheap_throne_room: "Cheap Throne Room"
+ desc_fee_mug_cheap_throne_room: ""
+ fee_jizya: "Jizya"
+ desc_fee_jizya: ""
+ fee_mug_alamgir: "Alamgir"
+ desc_fee_mug_alamgir: ""
+
 # Opinion Modifiers
  fee_mug_paid_tribute: "Paid Tribute"
 
@@ -169,6 +268,11 @@
  estate_church_fee_abolished_jizya_desc: ""
  estate_church_fee_abolished_jizya_gt: "Every owned §YNon Muslim§! province gains the following bonus:"
  estate_church_fee_abolished_jizya_rt: "The modifier '§YAbolished Jizya§!' is removed from all eligible provinces."
+
+ estate_church_fee_reestablished_jizya: "Reestablished Jizya"
+ estate_church_fee_reestablished_jizya_desc: ""
+ estate_church_fee_reestablished_jizya_gt: "Every owned §YNon Muslim§! province gains the following bonus:"
+ estate_church_fee_reestablished_jizya_rt: "The modifier '§YJizya§!' is removed from all eligible provinces."
 
 # Tooltips
  fee_mug_punjab_claim_tt: "While we might be ready for war, we could §Ywait§! a few months and try and fabricate documents to legitimize our claims over Punjab..."
@@ -181,3 +285,17 @@
  fee_mug_rajput_attack_tt: "[Root.Country.GetName] gets §YFear of the Rajput§! until §Ythe end of the war§!, giving the following effects:\nMorale of Armies: §R-10%§!"
  fee_mug_babur_rebel_tt: "\nIf these rebels take control of the capital, Babur will seize the country §Rimmediately§!."
  fee_mug_babur_stats_tt: "He will have the §YPatron of the Arts§! and §YConqueror§! traits and become a 6/5/4/5 general."
+ FEE_Mughals_Events.27.TT.1: "You send your son away from the court, for him to gain valuable experiences."
+ FEE_Mughals_Events.27.TT.2: "You acknowledge your son's bravery, but you don't like his demeanour."
+ FEE_Mughals_Events.28.TT.1: "Your brothers proclaim themselves as kings of their respective regions they govern over."
+ FEE_Mughals_Events.28.TT.2: "Your more ambitious and more cunning brother has been building connections and alliances with powerful people in the empire for years. Most of the army and generals are loyal to him. It is a matter of time before he tries to usurp the throne."
+ FEE_MUG_ANNEX_DEC_TT: "@[Root.GetTag] §Y[Root.GetName]§! annexes @DEC §Y[DEC.GetName]§! in its entirety."
+ FEE_Mughals_Events.32.TT.1: "@[new_bengal_owner.GetTag] §Y[new_bengal_owner.GetName]§!, @[new_deccan_owner.GetTag] §Y[new_deccan_owner.GetName]§!, @[new_west_india_owner.GetTag] §Y[new_west_india_owner.GetName]§! gain cores on all core provinces of @[Root.GetTag] §Y[Root.GetName]§!."
+ FEE_Mughals_Events.32.TT.2: "The modifier '§YTimurid Partition§!' is removed from all owned provinces."
+ FEE_Mughals_Events.33.TT.1: "You assassinated your brothers to unite the Empire."
+ FEE_Mughals_Events.34.TT.1: "Every owned province in the areas §YKabulistan§!, §YSind Sagar§! and §YMultan§!:"
+ FEE_Mughals_Events.34.TT.2: "Every owned province with the §YAfghani§! culture: \n§RParticularist§! regiments rise up in a revolt."
+ FEE_Mughals_Events.35.TT: "Every owned province loses the modifiers '§YPastun Revolt§!' and '§YClosed Trade Route§!'. \n\nEvery owned province with the §YAfghani§! culture gains §R25.0%§! devastation and has a chance of §Y50.0%§! to lose §R1§! of each development type."
+ FEE_Mughals_Events.37.TT: "Every owned province with the §YRajasthani§! culture:"
+ FEE_Mughals_Events.38.TT: "Your current heir goes into hiding in Deccan."
+ FEE_Mughals_Events.42.TT: "§YThis power projection does not decay, but it is removed on ruler death.§!"

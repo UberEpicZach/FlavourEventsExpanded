@@ -250,6 +250,41 @@ on_monarch_death = {
 			remove_province_modifier = fee_mug_timurid_partition
 		}
 	}
+	if = {
+		limit = {
+			tag = MUG
+			NOT = { has_country_flag = fee_mug_emperor_at_deaths_doorstep }
+			OR = {
+				has_country_flag = fee_mug_prince_aurangzeb
+				has_country_flag = fee_mug_declined_aurangzeb
+			}
+			religion_group = muslim
+			dynasty = "Timurid"
+			num_of_owned_provinces_with = {
+				value = 20
+				region = west_india_region
+			}
+			num_of_owned_provinces_with = {
+				value = 30
+				region = hindusthan_region
+			}
+			num_of_owned_provinces_with = {
+				value = 18
+				region = bengal_region
+			}
+		}
+		country_event = { id = FEE_Mughals_Events.28 }
+	}
+	if = {
+		limit = {
+			has_country_flag = fee_mug_perma_pp_removed_on_ruler_death
+		}
+		clr_country_flag = fee_mug_perma_pp_removed_on_ruler_death
+		remove_power_projection = {
+			type = 10_permanent_power_projection
+			amount = 10
+		}
+	}
 }
 
 on_new_age = {
@@ -785,8 +820,8 @@ on_war_ended = {
 			}
 			JNP = {
 				OR = {
-					has_country_modifier = fee_jnp_war_weary_populace 
-					has_country_modifier = fee_jnp_war_for_hindustan 
+					has_country_modifier = fee_jnp_war_weary_populace
+					has_country_modifier = fee_jnp_war_for_hindustan
 				}
 				NOT = { war_with = DLH }
 			}
@@ -794,6 +829,39 @@ on_war_ended = {
 		JNP = {
 			remove_country_modifier = fee_jnp_war_weary_populace
 			remove_country_modifier = fee_jnp_war_for_hindustan
+		}
+	}
+
+	if = {
+		limit = {
+			has_country_modifier = fee_mug_deserted_army
+			FROM = { tag = DEC }
+		}
+		remove_country_modifier = fee_mug_deserted_army
+	}
+	else_if = {
+		limit = {
+			FROM = { has_country_modifier = fee_mug_deserted_army }
+			tag = DEC
+		}
+		FROM = {
+			remove_country_modifier = fee_mug_deserted_army
+		}
+	}
+	if = {
+		limit = {
+			has_country_modifier = fee_mug_aurangzeb_leadership
+			FROM = { tag = MUG }
+		}
+		remove_country_modifier = fee_mug_aurangzeb_leadership
+	}
+	else_if = {
+		limit = {
+			FROM = { has_country_modifier = fee_mug_aurangzeb_leadership }
+			tag = MUG
+		}
+		FROM = {
+			remove_country_modifier = fee_mug_aurangzeb_leadership
 		}
 	}
 }
@@ -977,5 +1045,31 @@ on_yearly_pulse_5 = {
 		}
 
 		set_country_flag = fee_trading_fair_started
+	}
+	if = {
+		limit = {
+			tag = MUG
+			NOT = { has_country_flag = fee_mug_emperor_at_deaths_doorstep }
+			OR = {
+				has_country_flag = fee_mug_prince_aurangzeb
+				has_country_flag = fee_mug_declined_aurangzeb
+			}
+			is_year = 1658
+			religion_group = muslim
+			dynasty = "Timurid"
+			num_of_owned_provinces_with = {
+				value = 20
+				region = west_india_region
+			}
+			num_of_owned_provinces_with = {
+				value = 30
+				region = hindusthan_region
+			}
+			num_of_owned_provinces_with = {
+				value = 18
+				region = bengal_region
+			}
+		}
+		country_event = { id = FEE_Mughals_Events.28 }
 	}
 }

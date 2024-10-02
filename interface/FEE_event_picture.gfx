@@ -4,4 +4,9 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/HEIR_EDUCATION_eventPicture.dds"
 		allwaystransparent = yes
 	}
+	spriteType = {
+		name = "FEE_BATTLE_WITH_ELEPHANT_eventPicture"
+		texturefile = "gfx/event_pictures/FEE_BATTLE_WITH_ELEPHANT_eventPicture.dds"
+		allwaystransparent = yes
+	}
 }
