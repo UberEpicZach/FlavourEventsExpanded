@@ -2,6 +2,7 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_expanded_mod_family_background"
 		textureFile = "gfx/interface/expanded_mod_family/expanded_mod_family_background.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 	}
 	spriteType = {
 		name = "GFX_expanded_mod_family_entry_background"

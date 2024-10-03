@@ -304,24 +304,27 @@ guiTypes = {
 					name = "expanded_mod_family_window"
 					if_resolution = {
 						min_height = 1050
-						position = { x = 105 y = 190 }
+						position = { x = 100 y = 180 }
 					}
 					if_resolution = {
 						max_height = 1049
-						position = { x = -470 y = 30 }
+						position = { x = -475 y = 20 }
 						orientation = upper_right
 					}
+					backGround = "expanded_mod_family_window_bg"
+					moveable = 1
 
-					iconType = {
+					guiButtonType = {
 						name = "expanded_mod_family_window_bg"
-						position = { x = -5 y = -10 }
+						#position = { x = -5 y = -10 }
+						position = { x = 0 y = 0 }
 						spriteType = "GFX_expanded_mod_family_background"
 					}
 
 					### First Column of Mods
 					windowType = {
 						name = "advisor_types_expanded"
-						position = { x = 29 y = 230 }
+						position = { x = 34 y = 240 }
 						size = { x = 158 y = 45 }
 
 						iconType = {
@@ -352,7 +355,7 @@ guiTypes = {
 
 					windowType = {
 						name = "flavour_and_events_expanded"
-						position = { x = 29 y = 277 }
+						position = { x = 34 y = 287 }
 						size = { x = 158 y = 45 }
 
 						iconType = {
@@ -383,7 +386,7 @@ guiTypes = {
 
 					windowType = {
 						name = "great_monuments_expanded"
-						position = { x = 29 y = 324 }
+						position = { x = 34 y = 334 }
 						size = { x = 158 y = 45 }
 
 						iconType = {
@@ -414,7 +417,7 @@ guiTypes = {
 
 					windowType = {
 						name = "holy_roman_empire_expanded"
-						position = { x = 29 y = 371 }
+						position = { x = 34 y = 381 }
 						size = { x = 158 y = 45 }
 
 						iconType = {
@@ -445,7 +448,7 @@ guiTypes = {
 
 					windowType = {
 						name = "religions_and_cultures_expanded"
-						position = { x = 29 y = 418 }
+						position = { x = 34 y = 428 }
 						size = { x = 158 y = 45 }
 
 						iconType = {
@@ -477,7 +480,7 @@ guiTypes = {
 					### Second Column of Mods
 					windowType = {
 						name = "ages_and_splendor_expanded"
-						position = { x = 188 y = 230 }
+						position = { x = 193 y = 240 }
 						size = { x = 158 y = 45 }
 
 						iconType = {
@@ -508,7 +511,7 @@ guiTypes = {
 
 					windowType = {
 						name = "governments_expanded"
-						position = { x = 188 y = 277 }
+						position = { x = 193 y = 287 }
 						size = { x = 158 y = 45 }
 
 						iconType = {
@@ -539,7 +542,7 @@ guiTypes = {
 
 					windowType = {
 						name = "historical_ideas_expanded"
-						position = { x = 188 y = 324 }
+						position = { x = 193 y = 334 }
 						size = { x = 158 y = 45 }
 
 						iconType = {
@@ -570,7 +573,7 @@ guiTypes = {
 
 					windowType = {
 						name = "peace_treaties_expanded"
-						position = { x = 188 y = 371 }
+						position = { x = 193 y = 381 }
 						size = { x = 158 y = 45 }
 
 						iconType = {
@@ -601,7 +604,7 @@ guiTypes = {
 
 					windowType = {
 						name = "subjects_expanded"
-						position = { x = 188 y = 418 }
+						position = { x = 193 y = 428 }
 						size = { x = 158 y = 45 }
 
 						iconType = {
@@ -633,7 +636,7 @@ guiTypes = {
 					### Center Column of Mods
 					windowType = {
 						name = "trade_goods_expanded"
-						position = { x = 108 y = 465 }
+						position = { x = 113 y = 475 }
 						size = { x = 158 y = 45 }
 
 						iconType = {
