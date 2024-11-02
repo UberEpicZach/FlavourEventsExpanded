@@ -5,7 +5,10 @@ estate_church_fee_abolished_jizya = {
 	max_absolutism = -5
 	loyalty = -0.05
 	influence = 0.10
-	is_valid = { always = yes }
+	is_valid = {
+		tag = MUG
+		religion_group = muslim
+	}
 	can_select = {
 		tag = MUG
 		religion_group = muslim
@@ -58,13 +61,15 @@ estate_church_fee_abolished_jizya = {
 }
 
 estate_church_fee_reestablished_jizya = {
-	can_revoke = no
 	icon = privilege_build_jain_temple
 	land_share = 0
 	max_absolutism = -5
 	loyalty = 0.1
 	influence = 0.10
-	is_valid = { always = yes }
+	is_valid = {
+		tag = MUG
+		religion_group = muslim
+	}
 	can_select = {
 		tag = MUG
 		religion_group = muslim
