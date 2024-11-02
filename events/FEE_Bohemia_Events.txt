@@ -16,6 +16,7 @@ country_event = {
 		NOT = { has_ruler_modifier = fee_boh_infertility }
 		has_country_flag = FEE_Podebrad
 		is_free_or_tributary_trigger = yes
+		NOT = { has_ruler_flag = ruler_cant_trigger_this_event_flag }
 	}
 
 	option = {
