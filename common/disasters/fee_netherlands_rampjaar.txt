@@ -61,23 +61,118 @@ fee_netherlands_rampjaar = {
 		}
 		modifier = {
 			factor = 0.5
-			NOT = { war_score = -10 }
+			custom_trigger_tooltip = {
+				tooltip = FEE_NETHERLANDS_RAMPJAAR_LOSING_WAR_TT_10
+				is_at_war = yes
+				any_war_enemy_country = {
+					OR = {
+						is_in_war = {
+							attacker_leader = THIS
+							defender_leader = ROOT
+						}
+						is_in_war = {
+							attacker_leader = ROOT
+							defender_leader = THIS
+						}
+					}
+					war_score_against = {
+						who = ROOT
+						value = 10
+					}
+				}
+			}
 		}
 		modifier = {
 			factor = 0.5
-			NOT = { war_score = -25 }
+			custom_trigger_tooltip = {
+				tooltip = FEE_NETHERLANDS_RAMPJAAR_LOSING_WAR_TT_25
+				is_at_war = yes
+				any_war_enemy_country = {
+					OR = {
+						is_in_war = {
+							attacker_leader = THIS
+							defender_leader = ROOT
+						}
+						is_in_war = {
+							attacker_leader = ROOT
+							defender_leader = THIS
+						}
+					}
+					war_score_against = {
+						who = ROOT
+						value = 25
+					}
+				}
+			}
 		}
 		modifier = {
 			factor = 1
-			NOT = { war_score = -35 }
+			custom_trigger_tooltip = {
+				tooltip = FEE_NETHERLANDS_RAMPJAAR_LOSING_WAR_TT_35
+				is_at_war = yes
+				any_war_enemy_country = {
+					OR = {
+						is_in_war = {
+							attacker_leader = THIS
+							defender_leader = ROOT
+						}
+						is_in_war = {
+							attacker_leader = ROOT
+							defender_leader = THIS
+						}
+					}
+					war_score_against = {
+						who = ROOT
+						value = 35
+					}
+				}
+			}
 		}
 		modifier = {
 			factor = 2
-			NOT = { war_score = -50 }
+			custom_trigger_tooltip = {
+				tooltip = FEE_NETHERLANDS_RAMPJAAR_LOSING_WAR_TT_50
+				is_at_war = yes
+				any_war_enemy_country = {
+					OR = {
+						is_in_war = {
+							attacker_leader = THIS
+							defender_leader = ROOT
+						}
+						is_in_war = {
+							attacker_leader = ROOT
+							defender_leader = THIS
+						}
+					}
+					war_score_against = {
+						who = ROOT
+						value = 50
+					}
+				}
+			}
 		}
 		modifier = {
 			factor = 2
-			NOT = { war_score = -75 }
+			custom_trigger_tooltip = {
+				tooltip = FEE_NETHERLANDS_RAMPJAAR_LOSING_WAR_TT_75
+				is_at_war = yes
+				any_war_enemy_country = {
+					OR = {
+						is_in_war = {
+							attacker_leader = THIS
+							defender_leader = ROOT
+						}
+						is_in_war = {
+							attacker_leader = ROOT
+							defender_leader = THIS
+						}
+					}
+					war_score_against = {
+						who = ROOT
+						value = 75
+					}
+				}
+			}
 		}
 		modifier = {
 			factor = 0.5
