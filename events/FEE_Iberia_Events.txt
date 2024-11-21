@@ -272,22 +272,31 @@ country_event = {
 			name = iberia_spanish_cortes
 			duration = -1
 		}
-		catalonia_area = {
+		custom_tooltip = FEE_IBERIA_AUTONOMOUS_REGION_AREA_TT
+		tooltip = {
 			add_permanent_province_modifier = {
 				name = iberia_autonomous_regions
 				duration = -1
 			}
 		}
-		galicia_area = {
-			add_permanent_province_modifier = {
-				name = iberia_autonomous_regions
-				duration = -1
+		hidden_effect = {
+			catalonia_area = {
+				add_permanent_province_modifier = {
+					name = iberia_autonomous_regions
+					duration = -1
+				}
 			}
-		}
-		basque_country = {
-			add_permanent_province_modifier = {
-				name = iberia_autonomous_regions
-				duration = -1
+			galicia_area = {
+				add_permanent_province_modifier = {
+					name = iberia_autonomous_regions
+					duration = -1
+				}
+			}
+			basque_country = {
+				add_permanent_province_modifier = {
+					name = iberia_autonomous_regions
+					duration = -1
+				}
 			}
 		}
 	}
@@ -300,22 +309,31 @@ country_event = {
 		}
 		add_stability_or_adm_power = yes
 
-		catalonia_area = {
+		custom_tooltip = FEE_IBERIA_AUTONOMOUS_REGION_AREA_TT
+		tooltip = {
 			add_permanent_province_modifier = {
 				name = iberia_restricted_autonomy
 				duration = -1
 			}
 		}
-		galicia_area = {
-			add_permanent_province_modifier = {
-				name = iberia_restricted_autonomy
-				duration = -1
+		hidden_effect = {
+			catalonia_area = {
+				add_permanent_province_modifier = {
+					name = iberia_restricted_autonomy
+					duration = -1
+				}
 			}
-		}
-		basque_country = {
-			add_permanent_province_modifier = {
-				name = iberia_restricted_autonomy
-				duration = -1
+			galicia_area = {
+				add_permanent_province_modifier = {
+					name = iberia_restricted_autonomy
+					duration = -1
+				}
+			}
+			basque_country = {
+				add_permanent_province_modifier = {
+					name = iberia_restricted_autonomy
+					duration = -1
+				}
 			}
 		}
 	}
@@ -327,16 +345,7 @@ country_event = {
 			factor = 25
 		}
 		add_years_of_income = 1.5
-		if = {
-			limit = {
-				stability = 2
-			}
-			add_stability_or_adm_power_per_stab = { amount = 1 }
-			add_adm_power = 25
-		}
-		else = {
-			add_stability_or_adm_power_per_stab = { amount = 2 }
-		}
+		add_stability_or_adm_power_per_stab = { amount = 2 }
 		if = {
 			limit = {
 				has_estate = estate_nobles
@@ -418,77 +427,102 @@ country_event = {
 			name = iberia_autonomy_curalied
 			duration = -1
 		}
-		catalonia_area = {
+
+		custom_tooltip = FEE_IBERIA_AUTONOMOUS_REGION_AREA_TT
+		tooltip = {
 			add_permanent_province_modifier = {
 				name = iberia_abolished_local_privileges
 				duration = -1
 			}
 		}
-		galicia_area = {
-			add_permanent_province_modifier = {
-				name = iberia_abolished_local_privileges
-				duration = -1
+		hidden_effect = {
+			catalonia_area = {
+				add_permanent_province_modifier = {
+					name = iberia_abolished_local_privileges
+					duration = -1
+				}
 			}
-		}
-		basque_country = {
-			add_permanent_province_modifier = {
-				name = iberia_abolished_local_privileges
-				duration = -1
+			galicia_area = {
+				add_permanent_province_modifier = {
+					name = iberia_abolished_local_privileges
+					duration = -1
+				}
+			}
+			basque_country = {
+				add_permanent_province_modifier = {
+					name = iberia_abolished_local_privileges
+					duration = -1
+				}
 			}
 		}
 
 		random_province = {
-			limit = {
-				area = galicia_area
-			}
-			spawn_rebels = {
-				size = 3
-				type = particularist_rebels
-			}
-		}
-		random_province = {
-			limit = {
-				area = galicia_area
-			}
-			spawn_rebels = {
-				size = 2
-				type = nationalist_rebels
+			custom_tooltip = FEE_IBERIA_AUTONOMOUS_REGION_AREA_REBELS_TT
+			tooltip = {
+				spawn_rebels = {
+					size = 3
+					type = particularist_rebels
+				}
+				spawn_rebels = {
+					size = 2
+					type = nationalist_rebels
+				}
 			}
 		}
-		random_province = {
-			limit = {
-				area = catalonia_area
+		hidden_effect = {
+			random_province = {
+				limit = {
+					area = galicia_area
+				}
+				spawn_rebels = {
+					size = 3
+					type = particularist_rebels
+				}
 			}
-			spawn_rebels = {
-				size = 3
-				type = particularist_rebels
+			random_province = {
+				limit = {
+					area = galicia_area
+				}
+				spawn_rebels = {
+					size = 2
+					type = nationalist_rebels
+				}
 			}
-		}
-		random_province = {
-			limit = {
-				area = catalonia_area
+			random_province = {
+				limit = {
+					area = catalonia_area
+				}
+				spawn_rebels = {
+					size = 3
+					type = particularist_rebels
+				}
 			}
-			spawn_rebels = {
-				size = 2
-				type = nationalist_rebels
+			random_province = {
+				limit = {
+					area = catalonia_area
+				}
+				spawn_rebels = {
+					size = 2
+					type = nationalist_rebels
+				}
 			}
-		}
-		random_province = {
-			limit = {
-				area = basque_country
+			random_province = {
+				limit = {
+					area = basque_country
+				}
+				spawn_rebels = {
+					size = 3
+					type = particularist_rebels
+				}
 			}
-			spawn_rebels = {
-				size = 3
-				type = particularist_rebels
-			}
-		}
-		random_province = {
-			limit = {
-				area = basque_country
-			}
-			spawn_rebels = {
-				size = 2
-				type = nationalist_rebels
+			random_province = {
+				limit = {
+					area = basque_country
+				}
+				spawn_rebels = {
+					size = 2
+					type = nationalist_rebels
+				}
 			}
 		}
 	}
