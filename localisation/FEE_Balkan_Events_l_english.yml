@@ -38,7 +38,12 @@
  FEE_Balkan_Events.202.OPT3: "We cannot afford this right now, ask me later."
  FEE_Balkan_Events.202.OPT4: "NEVER."
 
- #Modifiers
+### Ragusan Events
+ FEE_Balkan_Events.300.T: "The Walls of Ragusa"
+ FEE_Balkan_Events.300.D: "There was indeed an ordinance issued by the Small Council and the Rector after the word of the fall of Constantinople reached the city. After that, they stipulated that every man coming into the city had to make a meaningful contribution ie carry a stone with himself which was then slotted into the fortifications in order to make them stronger and better able to withstand sieges."
+ FEE_Balkan_Events.300.OPT1: "Fortify em!"
+
+# Modifiers
  fee_balkan_athleta_christi: "Athleta Christi"
  desc_fee_balkan_athleta_christi: "Thanks to their fierce protection of Christendom, the pope has declared our ruler a true Champion of Christ."
 
@@ -59,3 +64,7 @@
  desc_fee_balkan_statue_simeon_great_dip: "The shining beacon of The Statue of Simeon the Great will forever shine over the Mediterranean!"
  fee_balkan_statue_simeon_great_constantinople: "Statue of Simeon the Great"
  desc_fee_balkan_statue_simeon_great_constantinople: "The shining beacon of The Statue of Simeon the Great will forever shine over the Mediterranean!" 
+
+
+ fee_balkan_walls_ragusa_gme: "Walls of Ragusa"
+ fee_balkan_walls_ragusa: "Walls of Ragusa"

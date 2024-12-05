@@ -358,3 +358,75 @@ country_event = {
 		add_prestige = -10
 	}
 }
+
+### Ragusan Events
+
+# Fortification of Ragusa
+country_event = {
+	id = FEE_Balkan_Events.300
+	title = FEE_Balkan_Events.300.T
+	desc = FEE_Balkan_Events.300.D
+	picture = FORTIFIED_CITY_WITH_CARAVAN_OUTSIDE_eventPicture
+
+	fire_only_once = yes
+	trigger = {
+		owns = 137
+		151 = {
+			owner = {
+				NOT = { tag = BYZ }
+				owns = 137
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = FEE_Balkan_Events.300.OPT1
+		ai_chance = {
+			factor = 33
+		}
+
+		137 = {
+			if = {
+				limit = {
+					is_expanded_mod_active = { mod = great_monuments }
+				}
+				add_permanent_province_modifier = {
+					name = fee_balkan_walls_ragusa_gme
+					duration = -1
+				}
+			}
+			else = {
+				add_permanent_province_modifier = {
+					name = fee_balkan_walls_ragusa
+					duration = -1
+				}
+			}
+		}
+	}
+}
+
+#
+#country_event = {
+#	id = FEE_Balkan_Events.
+#	title = FEE_Balkan_Events..T
+#	desc = FEE_Balkan_Events..D
+#	picture = FARMING_eventPicture
+#
+#	fire_only_once = yes
+#	trigger = {
+#		tag = NAP
+#	}
+#
+#	mean_time_to_happen = {
+#		days = 60
+#	}
+#
+#	option = {
+#		name = FEE_Balkan_Events..OPT1
+#
+#	}
+#}
