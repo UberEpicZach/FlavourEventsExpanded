@@ -4018,3 +4018,516 @@ country_event = {
 		}
 	}
 }
+
+#### EDICT OF POTSDAM
+
+# Edict de Fontainebleau (FRA)
+country_event = {
+	id = FEE_Brandenburg_Events.100
+	title = FEE_Brandenburg_Events.100.T
+	desc = FEE_Brandenburg_Events.100.D
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_year = 1685
+		tag = FRA
+		FRA = {
+			OR = {
+				has_country_modifier = edict_de_nantes
+				has_country_flag = revoked_the_edict_of_nantes
+			}
+		}
+		OR = {
+			exists = PRU
+			exists = BRA
+		}
+	}
+
+	option = {
+		name = FEE_Brandenburg_Events.100.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
+		add_prestige_or_monarch_power = { amount = 10 }
+		if = {
+			limit = {
+				has_country_modifier = edict_de_nantes
+			}
+			remove_country_modifier = edict_de_nantes
+			set_country_flag = revoked_the_edict_of_nantes
+		}
+		custom_tooltip = fee_edict_potsdam_hugenots_outside_tt
+		hidden_effect = {
+			if = {
+				limit = {
+					exists = PRU
+				}
+				PRU = {
+					country_event = {
+						id = FEE_Brandenburg_Events.101
+						days = 1
+					}
+				}
+			}
+			else = {
+				BRA = {
+					country_event = {
+						id = FEE_Brandenburg_Events.101
+						days = 1
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Brandenburg_Events.100.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
+		add_stability = -2
+	}
+}
+
+# Edict de Fontainebleau (PRU/BRA)
+country_event = {
+	id = FEE_Brandenburg_Events.101
+	title = FEE_Brandenburg_Events.101.T
+	desc = FEE_Brandenburg_Events.101.D
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Brandenburg_Events.101.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
+		add_years_of_income = -0.2
+		set_country_flag = fee_edict_potsdam_huguenots_invited
+	}
+
+	option = {
+		name = FEE_Brandenburg_Events.101.OPT2
+		ai_chance = {
+			factor = 0
+		}
+
+		add_prestige = -10
+	}
+}
+
+# French Exodus (FRA)
+country_event = {
+	id = FEE_Brandenburg_Events.102
+	title = FEE_Brandenburg_Events.102.T
+	desc = FEE_Brandenburg_Events.102.D
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = FRA
+		OR = {
+			PRU = {
+				has_country_flag = fee_edict_potsdam_huguenots_invited
+			}
+			BRA = {
+				has_country_flag = fee_edict_potsdam_huguenots_invited
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 365
+	}
+
+	immediate = {
+		hidden_effect = {
+			export_to_variable = {
+				which = 5_percent_of_development
+				value = trigger_value:total_development
+			}
+			multiply_variable = {
+				which = 5_percent_of_development
+				value = 0.05
+			}
+			set_variable = {
+				which = 5_percent_of_development_truncated
+				which = 5_percent_of_development
+			}
+			divide_variable = {
+				which = 5_percent_of_development_truncated
+				value = 1000
+			}
+			multiply_variable = {
+				which = 5_percent_of_development_truncated
+				value = 1000
+			}
+			if = {
+				limit = {
+					exists = PRU
+				}
+				PRU = {
+					set_variable = {
+						which = 5_percent_of_development_truncated
+						which = PREV
+					}
+				}
+			}
+			else = {
+				BRA = {
+					set_variable = {
+						which = 5_percent_of_development_truncated
+						which = PREV
+					}
+				}
+			}
+			while = {
+				limit = {
+					check_variable = {
+						which = 5_percent_of_development
+						value = 1
+					}
+				}
+				random_owned_province = {
+					limit = {
+						region = france_region
+						development = 4
+					}
+					if = {
+						limit = {
+							base_tax = 2
+						}
+						add_base_tax = -1
+					}
+					else_if = {
+						limit = {
+							base_production = 2
+						}
+						add_base_production = -1
+					}
+					else = {
+						add_base_manpower = -1
+					}
+				}
+				subtract_variable = {
+					which = 5_percent_of_development
+					value = 1
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Brandenburg_Events.102.OPT1
+
+		custom_tooltip = fee_edict_potsdam_loses_5_percent_development_for_France_tt
+		set_country_flag = huguenots_left
+	}
+}
+
+# The Edict of Potsdam (PRU/BRA)
+country_event = {
+	id = FEE_Brandenburg_Events.103
+	title = FEE_Brandenburg_Events.103.T
+	desc = FEE_Brandenburg_Events.103.D
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		if = {
+			limit = {
+				exists = PRU
+			}
+			tag = PRU
+		}
+		else = {
+			tag = BRA
+		}
+		FRA = {
+			has_country_flag = huguenots_left
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 365
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_variable = {
+				which = 50_percent_of_huguenots_dissidents_first_half
+				which = 5_percent_of_development_truncated
+			}
+			multiply_variable = {
+				which = 50_percent_of_huguenots_dissidents_first_half
+				value = 0.5
+			}
+			divide_variable = {
+				which = 50_percent_of_huguenots_dissidents_first_half
+				value = 1000
+			}
+			multiply_variable = {
+				which = 50_percent_of_huguenots_dissidents_first_half
+				value = 1000
+			}
+			set_variable = {
+				which = huguenots_arrived_in_capital
+				which = 50_percent_of_huguenots_dissidents_first_half
+			}
+			set_variable = {
+				which = 50_percent_of_huguenots_dissidents_second_half
+				which = 50_percent_of_huguenots_dissidents_first_half
+			}
+			capital_scope = {
+				export_to_variable = {
+					variable_name = PRU_BRA_capital_tax
+					value = trigger_value:base_tax
+				}
+				export_to_variable = {
+					variable_name = PRU_BRA_capital_production
+					value = trigger_value:base_production
+				}
+				export_to_variable = {
+					variable_name = PRU_BRA_capital_manpower
+					value = trigger_value:base_manpower
+				}
+			}
+			while = {
+				limit = {
+					check_variable = {
+						which = 50_percent_of_huguenots_dissidents_second_half
+						value = 1
+					}
+				}
+				random_country = {
+					limit = {
+						is_part_of_hre = yes
+						OR = {
+							religion = protestant
+							religion = reformed
+						}
+						if = {
+							limit = {
+								exists = PRU
+							}
+							NOT = {
+								total_development = PRU
+							}
+						}
+						else = {
+							NOT = {
+								total_development = BRA
+							}
+						}
+					}
+					country_event = {
+						id = FEE_Brandenburg_Events.104
+						days = 30
+					}
+				}
+				subtract_variable = {
+					which = 50_percent_of_huguenots_dissidents_second_half
+					value = 1
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Brandenburg_Events.103.OPT1
+
+		add_years_of_income = -1
+		custom_tooltip = fee_edict_potsdam_arrival_hugenots_tt
+		while = {
+			limit = {
+				check_variable = {
+					which = 50_percent_of_huguenots_dissidents_first_half
+					value = 1
+				}
+			}
+			capital_scope = {
+				if = {
+					limit = {
+						NOT = {
+							AND = {
+								check_variable = {
+									which = PRU_BRA_capital_tax
+									which = PRU_BRA_capital_production
+								}
+								check_variable = {
+									which = PRU_BRA_capital_tax
+									which = PRU_BRA_capital_production
+								}
+							}
+						}
+					}
+					add_base_tax = 1
+				}
+				else_if = {
+					limit = {
+						NOT = {
+							check_variable = {
+								which = PRU_BRA_capital_production
+								which = PRU_BRA_capital_manpower
+							}
+						}
+					}
+					add_base_production = 1
+				}
+				else = {
+					add_base_manpower = 1
+				}
+				export_to_variable = {
+					which = PRU_BRA_capital_tax
+					value = trigger_value:base_tax
+				}
+				export_to_variable = {
+					which = PRU_BRA_capital_production
+					value = trigger_value:base_production
+				}
+				export_to_variable = {
+					which = PRU_BRA_capital_manpower
+					value = trigger_value:base_manpower
+				}
+			}
+			subtract_variable = {
+				which = 50_percent_of_huguenots_dissidents_first_half
+				value = 1
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Brandenburg_Events.103.OPT2
+		add_prestige = -10
+		while = {
+			limit = {
+				check_variable = {
+					which = 50_percent_of_huguenots_dissidents_first_half
+					value = 1
+				}
+			}
+			random_country = {
+				limit = {
+					is_part_of_hre = yes
+					OR = {
+						religion = protestant
+						religion = reformed
+					}
+					if = {
+						limit = {
+							exists = PRU
+						}
+						NOT = {
+							total_development = PRU
+						}
+					}
+					else = {
+						NOT = {
+							total_development = BRA
+						}
+					}
+				}
+				country_event = {
+					id = FEE_Brandenburg_Events.104
+					days = 30
+				}
+			}
+			subtract_variable = {
+				which = 50_percent_of_huguenots_dissidents_first_half
+				value = 1
+			}
+		}
+	}
+}
+
+# Huguenot Dissidents
+country_event = {
+	id = FEE_Brandenburg_Events.104
+	title = FEE_Brandenburg_Events.104.T
+	desc = FEE_Brandenburg_Events.104.D
+	picture = ELECTION_REPUBLICAN_eventPicture
+
+	fire_only_once = no
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			capital_scope = {
+				export_to_variable = {
+					variable_name = CURRENT_capital_tax
+					value = trigger_value:base_tax
+				}
+				export_to_variable = {
+					variable_name = CURRENT_capital_production
+					value = trigger_value:base_production
+				}
+				export_to_variable = {
+					variable_name = CURRENT_capital_manpower
+					value = trigger_value:base_manpower
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Brandenburg_Events.104.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_prestige_or_monarch_power = { amount = 5 }
+		add_years_of_income = -0.05
+		capital_scope = {
+			if = {
+				limit = {
+					NOT = {
+						AND = {
+							check_variable = {
+								which = CURRENT_capital_tax
+								which = CURRENT_capital_production
+							}
+							check_variable = {
+								which = CURRENT_capital_tax
+								which = CURRENT_capital_production
+							}
+						}
+					}
+				}
+				add_base_tax = 1
+			}
+			else_if = {
+				limit = {
+					NOT = {
+						check_variable = {
+							which = CURRENT_capital_production
+							which = CURRENT_capital_manpower
+						}
+					}
+				}
+				add_base_production = 1
+			}
+			else = {
+				add_base_manpower = 1
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Brandenburg_Events.104.OPT2
+		ai_chance = {
+			factor = 25
+		}
+
+		add_prestige = -1
+	}
+}
