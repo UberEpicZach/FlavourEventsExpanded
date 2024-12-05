@@ -1,0 +1,40 @@
+#########	Catholic events	#########
+
+fee_religious_piety_resisted = {
+	global_unrest = 1
+}
+fee_religious_piety_supported = {
+	global_unrest = -1
+}
+
+#########	Coptic Events	#########
+
+fee_religious_basilica_of_thomas_the_apostle = {
+	local_missionary_strength = -0.05
+	local_unrest = -2
+}
+fee_religious_christian_ghetto_christian = {
+	local_autonomy = -0.05
+	local_unrest = -1
+	local_governing_cost = -0.1
+}
+fee_religious_christian_ghetto_not_christian = {
+	local_institution_spread = 0.33
+	local_unrest = 2
+}
+fee_religious_ezharappallikal = {
+	local_unrest = 8
+	local_missionary_strength = 0.02
+}
+fee_religious_thomist_christian_bastion = {
+	global_missionary_strength = 0.03
+	missionaries = 1
+}
+fee_religious_nestorian_religious_center_coptic = {
+	global_tax_income = 2
+	local_unrest = -2
+}
+fee_religious_nestorian_religious_center_not_coptic = {
+	local_missionary_strength = -0.05
+	local_religious_unity_contribution = -1
+}

@@ -536,32 +536,32 @@ on_religion_change = {
 			has_global_flag = fee_saint_thomas_christians_event
 			any_owned_province = {
 				OR = {
-					has_province_modifier = fee_indian_christianity_christian_ghetto_christian
-					has_province_modifier = fee_indian_christianity_christian_ghetto_not_christian
+					has_province_modifier = fee_religious_christian_ghetto_christian
+					has_province_modifier = fee_religious_christian_ghetto_not_christian
 				}
 			}
 		}
 		every_owned_province = {
 			limit = {
 				OR = {
-					has_province_modifier = fee_indian_christianity_christian_ghetto_christian
-					has_province_modifier = fee_indian_christianity_christian_ghetto_not_christian
+					has_province_modifier = fee_religious_christian_ghetto_christian
+					has_province_modifier = fee_religious_christian_ghetto_not_christian
 				}
 			}
-			remove_province_modifier = fee_indian_christianity_christian_ghetto_christian
-			remove_province_modifier = fee_indian_christianity_christian_ghetto_not_christian
+			remove_province_modifier = fee_religious_christian_ghetto_christian
+			remove_province_modifier = fee_religious_christian_ghetto_not_christian
 			if = {
 				limit = {
 					ROOT = { religion_group = christian }
 				}
 				add_province_modifier = {
-					name = fee_indian_christianity_christian_ghetto_christian
+					name = fee_religious_christian_ghetto_christian
 					duration = -1
 				}
 			}
 			else = {
 				add_province_modifier = {
-					name = fee_indian_christianity_christian_ghetto_not_christian
+					name = fee_religious_christian_ghetto_not_christian
 					duration = -1
 				}
 			}
@@ -572,32 +572,32 @@ on_religion_change = {
 			has_global_flag = fee_the_ezharappallikal_event
 			any_owned_province = {
 				OR = {
-					has_province_modifier = fee_indian_christianity_nestorian_religious_center_coptic
-					has_province_modifier = fee_indian_christianity_nestorian_religious_center_not_coptic
+					has_province_modifier = fee_religious_nestorian_religious_center_coptic
+					has_province_modifier = fee_religious_nestorian_religious_center_not_coptic
 				}
 			}
 		}
 		every_owned_province = {
 			limit = {
 				OR = {
-					has_province_modifier = fee_indian_christianity_nestorian_religious_center_coptic
-					has_province_modifier = fee_indian_christianity_nestorian_religious_center_not_coptic
+					has_province_modifier = fee_religious_nestorian_religious_center_coptic
+					has_province_modifier = fee_religious_nestorian_religious_center_not_coptic
 				}
 			}
-			remove_province_modifier = fee_indian_christianity_nestorian_religious_center_coptic
-			remove_province_modifier = fee_indian_christianity_nestorian_religious_center_not_coptic
+			remove_province_modifier = fee_religious_nestorian_religious_center_coptic
+			remove_province_modifier = fee_religious_nestorian_religious_center_not_coptic
 			if = {
 				limit = {
 					ROOT = { religion = coptic }
 				}
 				add_province_modifier = {
-					name = fee_indian_christianity_nestorian_religious_center_coptic
+					name = fee_religious_nestorian_religious_center_coptic
 					duration = -1
 				}
 			}
 			else = {
 				add_province_modifier = {
-					name = fee_indian_christianity_nestorian_religious_center_not_coptic
+					name = fee_religious_nestorian_religious_center_not_coptic
 					duration = -1
 				}
 			}

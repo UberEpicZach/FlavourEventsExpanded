@@ -1,0 +1,67 @@
+﻿l_french:
+
+######### Catholic events #########
+ FEE_Religious_Events.1.T: "Renaissance Masterpiece of Religious Art"
+ FEE_Religious_Events.1.D: "A famed artist in our country has produced a stunning piece of art that illustrates the supremacy of God over the world. It awes everyone who sees it, and beautifully confirms the order of existence. As the royal family patrons the artist, it is now up to us to decide what happens to it."
+ FEE_Religious_Events.1.OPT1: "Display it for the entire Christian world to see."
+ FEE_Religious_Events.1.OPT2: "Perfect timing, I was just in need of some money."
+ FEE_Religious_Events.1.OPT3: "A perfect illustration of our royal piety."
+
+ FEE_Religious_Events.2.T: "Growth of Popular Piety"
+ FEE_Religious_Events.2.D: "As many peasants feel that the church is growing more and more distant from their lives, they seek new ways of confirming their devoutness to God. This has led to local development of new practices, such as reparations to Christ and wider use of rosaries and scapulars. To make matters even more disconcerting, many are inventing personal prayers, rather than using the ones taught them by the church. Now the Pope himself has expressed worry at these deviations from Church doctrine."
+ FEE_Religious_Events.2.OPT1: "These maniacs should listen to the Pope!"
+ FEE_Religious_Events.2.OPT2: "People should always strive for new ways to express their faith."
+
+# Modifiers
+ fee_religious_piety_resisted: "Repressing Popular Piety"
+ desc_fee_religious_piety_resisted: "Our people fails to understand that the Pope's word is the only one that can guide religious practices."
+ fee_religious_piety_supported: "Supporting Popular Piety"
+ desc_fee_religious_piety_supported: "Our people is being encouraged to find any way of showing faith that brings them closer to God."
+
+
+######### Protestant Events #########
+ FEE_Religious_Events.100.T: "Johannes Bugenhagen, second Apostle of the North"
+ FEE_Religious_Events.100.D: "Johannes Bugenhagen was the pastor and confessor of Martin Luther, and one of the contributors to Luther's translation of the Bible into German. Known as Doctor Pomeranus, he was one of the central figures of the early protestant movement. He came to travel widely in Northern Germany and Scandinavia, and helped establish many of the protestant churches there. Thanks to our official reformation, Bugenhagen has turned his attention to aid us in the conversion of our country."
+ FEE_Religious_Events.100.OPT1: "He must advise us on how to convince our people of the true faith."
+ FEE_Religious_Events.100.OPT2: "Let him preach in the provinces."
+
+ FEE_Religious_Events.101.T: "A Protestant in [Root.GetAdjective] Lands"
+ FEE_Religious_Events.101.D: "There are Christian worshippers within our country that have started acting strangely. They are… worshipping a new god? A new church? It is really all quite difficult to understand, and to be honest the infidels are not really worth that much attention from us."
+ FEE_Religious_Events.101.OPT1: "If only they had turned to the true faith..."
+
+
+######### Coptic Events #########
+ FEE_Religious_Events.300.T: "Apostle Intombed"
+ FEE_Religious_Events.300.D: "In the humble city of Mylapore, we find an even more humble building, safeguarded and maintained by a small group of families. This, according to these families, is the original tomb of Thomas the Apostle. These families had once even attempted to contact the west via Venetian traders, sending three bones of the famed skeleton west to Rome and Constantinople with these traders. However, in their greed, none of the bones made it to either location and were sold to some Norman nobles in the south of Italy. This led them to believe they were abandoned by the ancient churches that Thomas preached so much about shortly before his death and the baptism of some families in southern and western India. It is the descendants of these families that still guard and maintain his tomb today. While it is not permitted to expand nor glorify the building on pain of death by the local Hindu authorities, it is in effect the Vatican or Constantinople of India. The Saint Peter’s Cathedral or Hagia Sophia of the Christians of Saint Thomas. These families have repeatedly asked to not only expand this “church” of theirs but also for the right to preach in the name of Thomas the Apostle."
+ FEE_Religious_Events.300.OPT1: "Intriguing. Permit them to expand their temple."
+ FEE_Religious_Events.300.OPT2: "Who cares?"
+
+ FEE_Religious_Events.301.T: "Saint Thomas Christians"
+ FEE_Religious_Events.301.D: "With the current upheaval in Tondainadu province, the spark of Christianity seems to have lit a set of new fires. The missionaries of Saint Thomas the Apostle have once again gained popularity after the fires of faith were lit at the tomb of one of the twelve. One of the twelve apostles is buried here on the subcontinent. The founder of Indian and possibly even Chinese Christianity. While the effects of Christianity were not felt as hard as in Europe or the Middle East, it still had a profound effect.  We know there are at least fifty families that converted and were baptised by Thomas the Apostle. Now, over a thousand years later, those families have since grown and we are talking a rather decent block of Christian communities in southern and central India. These communities would gain more and more influence over the 13th, 14th, and 15th centuries. In some regions and to some extent, local rulers began to notice and take action. In most places they were pushed into ghettos and their faith was criminalised on pain of death in public space. But then again you had rulers who let them be and saw them as a valued piece of their realm. Which road will you choose to go down?"
+ FEE_Religious_Events.301.OPT1: "Let the Nasrani Mappila be."
+ FEE_Religious_Events.301.OPT2: "The Nasrani Mappila must be controlled."
+
+ FEE_Religious_Events.302.T: "The Ezharappallikal"
+ FEE_Religious_Events.302.D: "The Ezharappallikal or the seven churches of India, are the seven dioceses founded by Thomas the apostle himself. These seven communities along the malabar coast combined with the tomb of the apostle in Tondainadu, form the backbone and the foundation of christianity in india. These physical locations are as vital to christianity in India as the faith itself. In the last 200 years christianity has increased in popularity enough to make its mark, especially in southern India. One might say it has resurrected itself after all but dying in the mid-10th century. Now the Christians are grasping the momentum and pleading with [Root.Monarch.GetName] to allow them the same privileges as the Hindu institutions. While it would be highly unlikely they gain this privilege, they argue that in their faith assuming that anything to do with their faith is unlikely given the resurrection of this Christ figure they so enthusiastically talk about. On the one hand, they have since become a quite sizable part of our patrimony and population. On the other hand, going against the ancestral faith of both our land and our people might have drastic consequences."
+ FEE_Religious_Events.302.OPT1: "Funny people these Christians."
+ FEE_Religious_Events.302.OPT2: "Resurrect the Ezharappallikal."
+
+# Modifiers:
+ fee_religious_basilica_of_thomas_the_apostle: "Basilica of Thomas the Apostle"
+ fee_religious_christian_ghetto_christian: "Christian Ghetto"
+ fee_religious_christian_ghetto_not_christian: "Christian Ghetto"
+ fee_religious_ezharappallikal: "Resurrection of the Ezharappallikal"
+ fee_religious_thomist_christian_bastion: "Thomist Christian Bastion"
+ fee_religious_nestorian_religious_center_coptic: "Nestorian Religious Center"
+ fee_religious_nestorian_religious_center_not_coptic: "Nestorian Religious Center"
+
+# Tooltips:
+ FEE_Religious_Events.301.tt.1: "The provinces §Y[535.GetName]§!, §Y[534.GetName]§!, §Y[4412.GetName]§!, §Y[537.GetName]§!, §Y[529.GetName]§!, §Y[539.GetName]§!, §Y[4416.GetName]§! and §Y[2100.GetName]§!: \nConvert to the §YCoptic§! faith. \n \nIf §Y[Root.GetName]§! follows the §YCoptic§! faith:"
+ FEE_Religious_Events.301.tt.2: "If §Y[Root.GetName]§! does NOT follow the §YCoptic§! faith:"
+ FEE_Religious_Events.301.tt.3: "Whenever our religion changes, the right modifier will be applied."
+ FEE_Religious_Events.301.tt.4: "The provinces §Y[535.GetName]§!, §Y[534.GetName]§!, §Y[4412.GetName]§!, §Y[537.GetName]§!, §Y[529.GetName]§!, §Y[539.GetName]§!, §Y[4416.GetName]§! and §Y[2100.GetName]§!: \nIf §Y[Root.GetName]§! follows a §YChristian§! faith:"
+ FEE_Religious_Events.301.tt.5: "If §Y[Root.GetName]§! does NOT follow a §YChristian§! faith:"
+ FEE_Religious_Events.301.tt.6: "Whenever our religion changes, the right modifier will be applied."
+ FEE_Religious_Events.302.tt.1: "\nThe provinces §Y[535.GetName]§!, §Y[529.GetName]§! and §Y[539.GetName]§!: \nIf §Y[Root.GetName]§! follows the §YCoptic§! faith:"
+ FEE_Religious_Events.302.tt.2: "If §Y[Root.GetName]§! does NOT follow the §YCoptic§! faith:"
+ FEE_Religious_Events.302.tt.3: "Whenever our religion changes, the right modifier will be applied. \n\nIf the modifier was already applied in the '§YSaint Thomas Christians§!' event, it will not stack."

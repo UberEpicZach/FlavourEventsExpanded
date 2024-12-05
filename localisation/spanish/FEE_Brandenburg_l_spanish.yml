@@ -321,6 +321,32 @@
  FEE_Brandenburg_Events.64.OPT1: "Curse them."
  FEE_Brandenburg_Events.64.OPT2: "Offer them Freedom in exchange for support."
 
+#### Edict of Potsdam ###
+
+ FEE_Brandenburg_Events.100.T: "Edict de Fontainebleau" # (For France)
+ FEE_Brandenburg_Events.100.D: "The disloyal and heretical Huguenots can no longer be tolerated, their presence is offensive to all godfearing men of France, and the idea of maintaining the Edict of Nantes has become a burden shackling our nation to the Huguenots, let us end this vile and destructive force, and throw on the yoke they imposed on us in 1598!"
+ FEE_Brandenburg_Events.100.OPT1: "I have a vision, its clear to me now, and oh what has to be done."
+ FEE_Brandenburg_Events.100.OPT2: "I suppose we can suffer them to live."
+
+ FEE_Brandenburg_Events.101.T: "Edict de Fontainebleau" # (For Prussia/Brandenburg)
+ FEE_Brandenburg_Events.101.D: "The king of France has gone mad and is declaring open season on his own subjects. After decades of abuse and mistreatement, sad that it has come to this. However, this could be an opportune moment to invite them over to repopulate our lands."
+ FEE_Brandenburg_Events.101.OPT1: "Start the presses and prepare the couriers, invite them all!"
+ FEE_Brandenburg_Events.101.OPT2: "Perhaps a later opportunity..."
+
+ FEE_Brandenburg_Events.102.T: "French Exodus"
+ FEE_Brandenburg_Events.102.D: "Sounds of 'The king has betrayed us' and 'flee for your lives' appears to be commonplace amongst the huguenots, and many of our pious citizens have taken it upon themselves to 'encourage' to expell their treasonous kin."
+ FEE_Brandenburg_Events.102.OPT1: "Good riddance!"
+
+ FEE_Brandenburg_Events.103.T: "The Edict of Potsdam"
+ FEE_Brandenburg_Events.103.D: "The French Exodus has not gone unnoticed, and many of the people that now lack a place to call home are looking for a new start. If grant them generous offers of 'Two Horses, a Cow, and fifty Thalers' in addition to a farmstead, we can ensure many will look for a better life in our realm!"
+ FEE_Brandenburg_Events.103.OPT1: "Issue it!"
+ FEE_Brandenburg_Events.103.OPT2: "We can't afford that. Let them go somewhere else..."
+
+ FEE_Brandenburg_Events.104.T: "Huguenot Dissidents"
+ FEE_Brandenburg_Events.104.D: "For some reasons Huguenot dissidents from France have decided to choose our capital for their safe heaven. We should incporporate them to our society and make them work for the greater glory of our state. It may cost a bit but outcomes might be even greater than the price."
+ FEE_Brandenburg_Events.104.OPT1: "Of course!"
+ FEE_Brandenburg_Events.104.OPT2: "We can't really afford that..."
+
  #Modifiers
  fee_bran_son_in_clergy: "Family in High Places"
  fee_bran_infertile: "Not possible to have an heir right now."
@@ -359,6 +385,10 @@
  fee_brandenburg_deny_treaty_tt: "This will attempt to seize the entire duchy for ourselves \nBerg will not appriciate this."
  fee_brandenburg_release_pomerania_tt: "Redirect the Pomeranians, we grant them control over hinterpommern and vorpommern in exchange for joining the war on Brandenburg's side."
  fee_brandenburg_bra_kus_release_tt: "Cedes our Lusatian and Neumarker possesions to our brother for his own margraviate."
+
+ fee_edict_potsdam_hugenots_outside_tt: "It might as well happen that these traitors will find some place to stay abroad..."
+ fee_edict_potsdam_loses_5_percent_development_for_France_tt: "§Y[Root.GetName]§! loses §R-5%§! (Exactly §R-[Root.5_percent_of_development_truncated.GetValue]§! development) of the current total development, distributed randomly between random provinces in §YFrench Region§!."
+ fee_edict_potsdam_arrival_hugenots_tt: "Huguenots from §Y[FRA.GetName]§! have arrived! §Y[Root.GetName]§! gets §G+[Root.huguenots_arrived_in_capital.GetValue]§! development in the capital province of §Y[Root.Capital.GetCapitalName]§!."
 
  #Renames
  BRA_KUS: "Brandenburg-Kustrin"
