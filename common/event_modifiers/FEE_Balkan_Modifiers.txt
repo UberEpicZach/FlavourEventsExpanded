@@ -1,0 +1,42 @@
+# Athleta Christi
+fee_balkan_athleta_christi = {
+	tolerance_own = 1
+	prestige = 0.5
+	global_unrest = -1
+}
+
+
+fee_balkan_tarnovo_great_gort = {
+	local_defensiveness = 0.25
+}
+
+fee_balkan_tarnovo_recruitment_drive = {
+	manpower_recovery_speed = 0.1
+	global_manpower_modifier = 0.1
+}
+
+fee_balkan_tarnovo_administrative_efforts = {
+	global_tax_modifier = 0.1
+}
+
+fee_balkan_tarnovo_land_revitalization_project = {
+	local_production_efficiency = 0.25
+}
+
+fee_balkan_parade_through_tsargrad = {
+	land_morale = 0.05
+	recover_army_morale_speed = 0.1
+}
+
+fee_balkan_statue_simeon_great_mil = {
+	land_morale = 0.05
+	infantry_power = 0.05
+}
+
+fee_balkan_statue_simeon_great_dip = {
+	trade_steering = 0.1
+}
+
+fee_balkan_statue_simeon_great_constantinople = {
+	province_trade_power_value = 20
+}

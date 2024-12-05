@@ -1,0 +1,360 @@
+namespace = FEE_Balkan_Events
+
+### Albanian Events
+
+# Athleta Christi
+country_event = {
+	id = FEE_Balkan_Events.1
+	title = FEE_Balkan_Events.1.T
+	desc = FEE_Balkan_Events.1.D
+	picture = RELIGION_eventPicture
+	fire_only_once = yes
+
+	trigger = {
+		tag = ALB
+		NOT = { vassal_of = TUR }
+		is_year = 1450
+		NOT = { is_year = 1475 }
+		owns = 143
+	}
+
+	mean_time_to_happen = {
+		months = 200
+	}
+
+	option = {
+		name = FEE_Balkan_Events.1.OPT1
+		add_ruler_modifier = {
+			name = fee_balkan_athleta_christi
+			duration = -1
+		}
+	}
+}
+
+### Moldavian Events
+
+# Atletul lui Hristos
+country_event = {
+	id = FEE_Balkan_Events.100
+	title = FEE_Balkan_Events.100.T
+	desc = FEE_Balkan_Events.100.D
+	picture = RELIGIOUS_WARS_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = MOL
+		NOT = { is_subject_of = TUR }
+		is_year = 1475
+		NOT = { is_year = 1600 }
+		owns = 1756
+		owns = 2405
+		owns = 268
+	}
+
+	mean_time_to_happen = {
+		months = 200
+	}
+
+	option = {
+		name = FEE_Balkan_Events.100.OPT1
+
+		add_ruler_modifier = {
+			name = fee_balkan_athleta_christi
+			duration = -1
+		}
+	}
+}
+
+# Mount Athos
+country_event = {
+	id = FEE_Balkan_Events.101
+	title = FEE_Balkan_Events.101.T
+	desc = FEE_Balkan_Events.101.D
+	picture = BANKRUPTCY_eventPicture
+
+	trigger = {
+		tag = MOL
+		is_year = 1475
+		NOT = { is_year = 1500 }
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 200
+	}
+
+	option = {
+		name = FEE_Balkan_Events.101.OPT1
+		ai_chance = {
+			factor = 1
+		}
+
+		add_treasury = -30
+		TUR = {
+			add_treasury = 30
+		}
+		add_prestige_or_monarch_power = { amount = 5 }
+		add_adm_power = -25
+		change_religious_influence_equivalent_fee = { remove = 15 }
+	}
+
+	option = {
+		name = FEE_Balkan_Events.101.OPT2
+
+		add_prestige = -5
+		add_adm_power = 25
+		change_religious_influence_equivalent_fee = { add = 1 }
+	}
+}
+
+# Vasile Lupu
+country_event = {
+	id = FEE_Balkan_Events.102
+	title = FEE_Balkan_Events.102.T
+	desc = FEE_Balkan_Events.102.D
+	picture = BAD_WITH_MONARCH_eventPicture
+
+	trigger = {
+		tag = MOL
+		has_heir = no
+		is_year = 1595
+		NOT = { is_year = 1690 }
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 18
+	}
+
+	option = {
+		name = FEE_Balkan_Events.102.OPT1
+
+		add_years_of_income = 2
+		define_heir = {
+			name = "Vasile"
+			dynasty = "Lupu"
+			claim = 50
+			adm = 5
+			dip = 3
+			mil = 3
+			age = 27
+		}
+	}
+
+	option = {
+		name = FEE_Balkan_Events.102.OPT2
+
+		add_stability_or_adm_power_per_stab = { amount = 2 }
+		define_heir = {
+			name = "George"
+			dynasty = "Ceaur"
+			claim = 100
+			adm = 2
+			dip = 4
+			mil = 3
+			age = 19
+		}
+	}
+}
+
+### Bulgarian Events
+
+# Designed by a(stolfo)_sassy_carrot, coded by babysnake
+country_event = {
+	id = FEE_Balkan_Events.200
+	title = FEE_Balkan_Events.200.T
+	desc = FEE_Balkan_Events.200.D
+	picture = ADVISOR_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_subject = no
+		tag = BUL
+		owns_core_province = 4704
+		grown_by_development = 20
+		4704 = {
+			# Tarnovo starts as 2/4/2 (8 dev)
+			# trade good is grain
+			development = 12
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 24
+	}
+
+	option = {
+		ai_chance = {
+			factor = 100
+		}
+
+		add_years_of_income = -0.25
+		name = FEE_Balkan_Events.200.OPT1
+		4704 = {
+			add_province_modifier = {
+				name = fee_balkan_tarnovo_great_gort
+				duration = -1
+			}
+			add_or_upgrade_fort_building = yes
+		}
+	}
+
+	option = {
+		name = FEE_Balkan_Events.200.OPT2
+
+		4704 = {
+			add_base_manpower = 2
+		}
+		add_country_modifier = {
+			name = fee_balkan_tarnovo_recruitment_drive
+			duration = 1825
+		}
+		add_years_of_income = -0.25
+	}
+
+	option = {
+		name = FEE_Balkan_Events.200.OPT3
+
+		4704 = {
+			add_base_tax = 1
+		}
+		add_country_modifier = {
+			name = fee_balkan_tarnovo_administrative_efforts
+			duration = 1825
+		}
+		add_years_of_income = -0.25
+	}
+
+	option = {
+		name = FEE_Balkan_Events.200.OPT4
+
+		4704 = {
+			add_base_production = 2
+			add_province_modifier = {
+				name = fee_balkan_tarnovo_land_revitalization_project
+				duration = 1825
+			}
+		}
+		add_years_of_income = -0.25
+	}
+}
+
+country_event = {
+	id = FEE_Balkan_Events.201
+	title = FEE_Balkan_Events.201.T
+	desc = FEE_Balkan_Events.201.D
+	picture = ADVISOR_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_subject = no
+		tag = BUL
+		owns_core_province = 151
+		is_at_war = no
+	}
+
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	option = {
+		name = FEE_Balkan_Events.201.OPT1
+
+		add_country_modifier = {
+			name = fee_balkan_parade_through_tsargrad
+			duration = 3650
+		}
+		151 = {
+			rename_capital = "Tsargrad"
+			add_devastation = -10
+			change_province_name = "Tsargrad"
+		}
+	}
+}
+
+country_event = {
+	id = FEE_Balkan_Events.202
+	title = FEE_Balkan_Events.202.T
+	desc = FEE_Balkan_Events.202.D
+	picture = ADVISOR_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_subject = no
+		tag = BUL
+		owns_core_province = 151
+		OR = {
+			is_great_power = yes
+			total_development = 500
+		}
+		uses_patriarch_authority = yes
+	}
+
+	option = {
+		name = FEE_Balkan_Events.202.OPT1
+		ai_chance = {
+			factor = 100
+		}
+
+		add_prestige = 20
+		add_years_of_income = -0.5
+		change_religious_influence_equivalent_fee = { add = 20 }
+		add_country_modifier = {
+			name = fee_balkan_statue_simeon_great_mil
+			duration = -1
+		}
+	}
+
+	option = {
+		name = FEE_Balkan_Events.202.OPT2
+		ai_chance = {
+			factor = 100
+		}
+
+		add_years_of_income = -0.5
+		add_prestige = 20
+		change_religious_influence_equivalent_fee = { add = 20 }
+		add_country_modifier = {
+			name = fee_balkan_statue_simeon_great_dip
+			duration = -1
+		}
+		151 = {
+			add_province_modifier = {
+				name = fee_balkan_statue_simeon_great_constantinople
+				duration = -1
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Balkan_Events.202.OPT3
+		ai_chance = {
+			factor = 0
+		}
+
+		add_prestige = -5
+		set_country_flag = FEE_Bulgaria_Statue_Later
+		country_event = {
+			id = FEE_Balkan_Events.202
+			days = 1825
+		}
+	}
+
+	option = {
+		name = FEE_Balkan_Events.202.OPT4
+		ai_chance = {
+			factor = 0
+		}
+		trigger = {
+			has_country_flag = FEE_Bulgaria_Statue_Later
+		}
+
+		add_prestige = -10
+	}
+}
