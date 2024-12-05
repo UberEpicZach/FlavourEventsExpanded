@@ -1,10 +1,10 @@
-namespace = FEE_Italian_Wars_Events
+namespace = FEE_Italy_Events
 
 #The wars of Italy
 country_event = {
-	id = FEE_Italian_Wars_Events.1
-	title = FEE_Italian_Wars_Events.1.T
-	desc = FEE_Italian_Wars_Events.1.D
+	id = FEE_Italy_Events.1
+	title = FEE_Italy_Events.1.T
+	desc = FEE_Italy_Events.1.D
 	picture = BATTLE_eventPicture
 
 	trigger = {
@@ -28,7 +28,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Italian_Wars_Events.1.OPT1
+		name = FEE_Italy_Events.1.OPT1
 		ai_chance = {
 			factor = 25
 		}
@@ -40,7 +40,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Italian_Wars_Events.1.OPT2
+		name = FEE_Italy_Events.1.OPT2
 		ai_chance = {
 			factor = 25
 		}
@@ -52,7 +52,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Italian_Wars_Events.1.OPT3
+		name = FEE_Italy_Events.1.OPT3
 		ai_chance = {
 			factor = 25
 		}
@@ -64,7 +64,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Italian_Wars_Events.1.OPT4
+		name = FEE_Italy_Events.1.OPT4
 		ai_chance = {
 			factor = 25
 		}
@@ -78,9 +78,9 @@ country_event = {
 
 # Guerra del Gesso
 country_event = {
-	id = FEE_Italian_Wars_Events.100
-	title = FEE_Italian_Wars_Events.100.T
-	desc = FEE_Italian_Wars_Events.100.D
+	id = FEE_Italy_Events.100
+	title = FEE_Italy_Events.100.T
+	desc = FEE_Italy_Events.100.D
 	picture = BATTLE_eventPicture
 
 	fire_only_once = yes
@@ -115,7 +115,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Italian_Wars_Events.100.OPT1
+		name = FEE_Italy_Events.100.OPT1
 		ai_chance = {
 			factor = 75
 			modifier = {
@@ -145,7 +145,7 @@ country_event = {
 				limit = {
 					is_free_or_tributary_trigger = yes
 				}
-				country_event = { id = FEE_Italian_Wars_Events.101 }
+				country_event = { id = FEE_Italy_Events.101 }
 			}
 		}
 		FER = {
@@ -153,7 +153,7 @@ country_event = {
 				limit = {
 					is_free_or_tributary_trigger = yes
 				}
-				country_event = { id = FEE_Italian_Wars_Events.101 }
+				country_event = { id = FEE_Italy_Events.101 }
 			}
 		}
 		PAP = {
@@ -161,7 +161,7 @@ country_event = {
 				limit = {
 					is_free_or_tributary_trigger = yes
 				}
-				country_event = { id = FEE_Italian_Wars_Events.101 }
+				country_event = { id = FEE_Italy_Events.101 }
 			}
 		}
 		VEN = {
@@ -169,7 +169,7 @@ country_event = {
 				limit = {
 					is_free_or_tributary_trigger = yes
 				}
-				country_event = { id = FEE_Italian_Wars_Events.101 }
+				country_event = { id = FEE_Italy_Events.101 }
 			}
 		}
 		MAN = {
@@ -177,7 +177,7 @@ country_event = {
 				limit = {
 					is_free_or_tributary_trigger = yes
 				}
-				country_event = { id = FEE_Italian_Wars_Events.101 }
+				country_event = { id = FEE_Italy_Events.101 }
 			}
 		}
 		GEN = {
@@ -185,7 +185,7 @@ country_event = {
 				limit = {
 					is_free_or_tributary_trigger = yes
 				}
-				country_event = { id = FEE_Italian_Wars_Events.101 }
+				country_event = { id = FEE_Italy_Events.101 }
 			}
 		}
 		ARA = {
@@ -193,7 +193,7 @@ country_event = {
 				limit = {
 					is_free_or_tributary_trigger = yes
 				}
-				country_event = { id = FEE_Italian_Wars_Events.101 }
+				country_event = { id = FEE_Italy_Events.101 }
 			}
 		}
 		CAS = {
@@ -201,13 +201,13 @@ country_event = {
 				limit = {
 					is_free_or_tributary_trigger = yes
 				}
-				country_event = { id = FEE_Italian_Wars_Events.101 }
+				country_event = { id = FEE_Italy_Events.101 }
 			}
 		}
 	}
 
 	option = {
-		name = FEE_Italian_Wars_Events.100.OPT2
+		name = FEE_Italy_Events.100.OPT2
 		ai_chance = {
 			factor = 25
 			modifier = {
@@ -239,15 +239,15 @@ country_event = {
 
 # French Claim on Naples
 country_event = {
-	id = FEE_Italian_Wars_Events.101
-	title = FEE_Italian_Wars_Events.101.T
-	desc = FEE_Italian_Wars_Events.101.D
+	id = FEE_Italy_Events.101
+	title = FEE_Italy_Events.101.T
+	desc = FEE_Italy_Events.101.D
 	picture = BATTLE_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = FEE_Italian_Wars_Events.101.OPT1
+		name = FEE_Italy_Events.101.OPT1
 		ai_chance = {
 			factor = 40
 			modifier = {
@@ -275,7 +275,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Italian_Wars_Events.101.OPT2
+		name = FEE_Italy_Events.101.OPT2
 		ai_chance = {
 			factor = 40
 			modifier = {
@@ -307,7 +307,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Italian_Wars_Events.101.OPT3
+		name = FEE_Italy_Events.101.OPT3
 		ai_chance = {
 			factor = 2
 			modifier = {
@@ -331,9 +331,9 @@ country_event = {
 
 # Battaglia di Fornovo
 country_event = {
-	id = FEE_Italian_Wars_Events.102
-	title = FEE_Italian_Wars_Events.102.T
-	desc = FEE_Italian_Wars_Events.102.D
+	id = FEE_Italy_Events.102
+	title = FEE_Italy_Events.102.T
+	desc = FEE_Italy_Events.102.D
 	picture = BATTLE_eventPicture
 
 	fire_only_once = yes
@@ -415,7 +415,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Italian_Wars_Events.102.OPT1
+		name = FEE_Italy_Events.102.OPT1
 
 		every_country = {
 			limit = {
@@ -488,9 +488,9 @@ country_event = {
 
 # Louis de la Trémoille
 country_event = {
-	id = FEE_Italian_Wars_Events.103
-	title = FEE_Italian_Wars_Events.103.T
-	desc = FEE_Italian_Wars_Events.103.D
+	id = FEE_Italy_Events.103
+	title = FEE_Italy_Events.103.T
+	desc = FEE_Italy_Events.103.D
 	picture = GENERALS_DISCUSSING_eventPicture
 
 	fire_only_once = yes
@@ -502,7 +502,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Italian_Wars_Events.103.OPT1
+		name = FEE_Italy_Events.103.OPT1
 
 		add_mil_power = 25
 		create_general = {
@@ -514,9 +514,9 @@ country_event = {
 
 # Ferrante d'Este
 country_event = {
-	id = FEE_Italian_Wars_Events.104
-	title = FEE_Italian_Wars_Events.104.T
-	desc = FEE_Italian_Wars_Events.104.D
+	id = FEE_Italy_Events.104
+	title = FEE_Italy_Events.104.T
+	desc = FEE_Italy_Events.104.D
 	picture = GENERALS_DISCUSSING_eventPicture
 
 	fire_only_once = yes
@@ -531,7 +531,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Italian_Wars_Events.104.OPT1
+		name = FEE_Italy_Events.104.OPT1
 
 		add_army_tradition = 5
 		create_general = {
@@ -543,9 +543,9 @@ country_event = {
 
 # Galeazzo Sanseverino
 country_event = {
-	id = FEE_Italian_Wars_Events.105
-	title = FEE_Italian_Wars_Events.105.T
-	desc = FEE_Italian_Wars_Events.105.D
+	id = FEE_Italy_Events.105
+	title = FEE_Italy_Events.105.T
+	desc = FEE_Italy_Events.105.D
 	picture = GENERALS_DISCUSSING_eventPicture
 
 	fire_only_once = yes
@@ -560,7 +560,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Italian_Wars_Events.105.OPT1
+		name = FEE_Italy_Events.105.OPT1
 
 		add_legitimacy_equivalent = { amount = 5 republican_tradition = 3 }
 		create_general = {
@@ -572,9 +572,9 @@ country_event = {
 
 # Guerra su Napoli
 country_event = {
-	id = FEE_Italian_Wars_Events.200
-	title = FEE_Italian_Wars_Events.200.T
-	desc = FEE_Italian_Wars_Events.200.D
+	id = FEE_Italy_Events.200
+	title = FEE_Italy_Events.200.T
+	desc = FEE_Italy_Events.200.D
 	picture = BATTLE_eventPicture
 
 	fire_only_once = yes
@@ -610,7 +610,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Italian_Wars_Events.200.OPT1
+		name = FEE_Italy_Events.200.OPT1
 		ai_chance = {
 			factor = 75
 			modifier = {
@@ -637,43 +637,43 @@ country_event = {
 		PAP = {
 			if = {
 				limit = { is_free_or_tributary_trigger = yes }
-				country_event = { id = FEE_Italian_Wars_Events.201 }
+				country_event = { id = FEE_Italy_Events.201 }
 			}
 		}
 		VEN = {
 			if = {
 				limit = { is_free_or_tributary_trigger = yes }
-				country_event = { id = FEE_Italian_Wars_Events.201 }
+				country_event = { id = FEE_Italy_Events.201 }
 			}
 		}
 		SWI = {
 			if = {
 				limit = { is_free_or_tributary_trigger = yes }
-				country_event = { id = FEE_Italian_Wars_Events.201 }
+				country_event = { id = FEE_Italy_Events.201 }
 			}
 		}
 		NAP = {
 			if = {
 				limit = { is_free_or_tributary_trigger = yes }
-				country_event = { id = FEE_Italian_Wars_Events.201 }
+				country_event = { id = FEE_Italy_Events.201 }
 			}
 		}
 		ARA = {
 			if = {
 				limit = { is_free_or_tributary_trigger = yes }
-				country_event = { id = FEE_Italian_Wars_Events.201 }
+				country_event = { id = FEE_Italy_Events.201 }
 			}
 		}
 		CAS = {
 			if = {
 				limit = { is_free_or_tributary_trigger = yes }
-				country_event = { id = FEE_Italian_Wars_Events.201 }
+				country_event = { id = FEE_Italy_Events.201 }
 			}
 		}
 	}
 
 	option = {
-		name = FEE_Italian_Wars_Events.200.OPT2
+		name = FEE_Italy_Events.200.OPT2
 		ai_chance = {
 			factor = 25
 			modifier = {
@@ -705,15 +705,15 @@ country_event = {
 
 # Defense of Milan
 country_event = {
-	id = FEE_Italian_Wars_Events.201
-	title = FEE_Italian_Wars_Events.201.T
-	desc = FEE_Italian_Wars_Events.201.D
+	id = FEE_Italy_Events.201
+	title = FEE_Italy_Events.201.T
+	desc = FEE_Italy_Events.201.D
 	picture = BATTLE_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = FEE_Italian_Wars_Events.201.OPT1
+		name = FEE_Italy_Events.201.OPT1
 		ai_chance = {
 			factor = 40
 			modifier = {
@@ -741,7 +741,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Italian_Wars_Events.201.OPT2
+		name = FEE_Italy_Events.201.OPT2
 		ai_chance = {
 			factor = 40
 			modifier = {
@@ -769,7 +769,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Italian_Wars_Events.201.OPT3
+		name = FEE_Italy_Events.201.OPT3
 		ai_chance = {
 			factor = 2
 			modifier = {
@@ -785,9 +785,9 @@ country_event = {
 
 # Guerra della Lega Santa
 country_event = {
-	id = FEE_Italian_Wars_Events.300
-	title = FEE_Italian_Wars_Events.300.T
-	desc = FEE_Italian_Wars_Events.300.D
+	id = FEE_Italy_Events.300
+	title = FEE_Italy_Events.300.T
+	desc = FEE_Italy_Events.300.D
 	picture = BATTLE_eventPicture
 
 	fire_only_once = yes
@@ -826,7 +826,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Italian_Wars_Events.300.OPT1
+		name = FEE_Italy_Events.300.OPT1
 		ai_chance = {
 			factor = 75
 			modifier = {
@@ -858,79 +858,79 @@ country_event = {
 		FER = {
 			if = {
 				limit = { is_free_or_tributary_trigger = yes }
-				country_event = { id = FEE_Italian_Wars_Events.301 }
+				country_event = { id = FEE_Italy_Events.301 }
 			}
 		}
 		MAN = {
 			if = {
 				limit = { is_free_or_tributary_trigger = yes }
-				country_event = { id = FEE_Italian_Wars_Events.301 }
+				country_event = { id = FEE_Italy_Events.301 }
 			}
 		}
 		MLO = {
 			if = {
 				limit = { is_free_or_tributary_trigger = yes }
-				country_event = { id = FEE_Italian_Wars_Events.301 }
+				country_event = { id = FEE_Italy_Events.301 }
 			}
 		}
 		URB = {
 			if = {
 				limit = { is_free_or_tributary_trigger = yes }
-				country_event = { id = FEE_Italian_Wars_Events.301 }
+				country_event = { id = FEE_Italy_Events.301 }
 			}
 		}
 		ENG = {
 			if = {
 				limit = { is_free_or_tributary_trigger = yes }
-				country_event = { id = FEE_Italian_Wars_Events.301 }
+				country_event = { id = FEE_Italy_Events.301 }
 			}
 		}
 		SCO = {
 			if = {
 				limit = { is_free_or_tributary_trigger = yes }
-				country_event = { id = FEE_Italian_Wars_Events.301 }
+				country_event = { id = FEE_Italy_Events.301 }
 			}
 		}
 		SWI = {
 			if = {
 				limit = { is_free_or_tributary_trigger = yes }
-				country_event = { id = FEE_Italian_Wars_Events.301 }
+				country_event = { id = FEE_Italy_Events.301 }
 			}
 		}
 		emperor = {
 			if = {
 				limit = { is_free_or_tributary_trigger = yes }
-				country_event = { id = FEE_Italian_Wars_Events.301 }
+				country_event = { id = FEE_Italy_Events.301 }
 			}
 		}
 		PAP = {
 			if = {
 				limit = { is_free_or_tributary_trigger = yes }
-				country_event = { id = FEE_Italian_Wars_Events.301 }
+				country_event = { id = FEE_Italy_Events.301 }
 			}
 		}
 		ARA = {
 			if = {
 				limit = { is_free_or_tributary_trigger = yes }
-				country_event = { id = FEE_Italian_Wars_Events.301 }
+				country_event = { id = FEE_Italy_Events.301 }
 			}
 		}
 		CAS = {
 			if = {
 				limit = { is_free_or_tributary_trigger = yes }
-				country_event = { id = FEE_Italian_Wars_Events.301 }
+				country_event = { id = FEE_Italy_Events.301 }
 			}
 		}
 		SPA = {
 			if = {
 				limit = { is_free_or_tributary_trigger = yes }
-				country_event = { id = FEE_Italian_Wars_Events.301 }
+				country_event = { id = FEE_Italy_Events.301 }
 			}
 		}
 	}
 
 	option = {
-		name = FEE_Italian_Wars_Events.300.OPT2
+		name = FEE_Italy_Events.300.OPT2
 		ai_chance = {
 			factor = 25
 			modifier = {
@@ -961,15 +961,15 @@ country_event = {
 
 # The Holy League
 country_event = {
-	id = FEE_Italian_Wars_Events.301
-	title = FEE_Italian_Wars_Events.301.T
-	desc = FEE_Italian_Wars_Events.301.D
+	id = FEE_Italy_Events.301
+	title = FEE_Italy_Events.301.T
+	desc = FEE_Italy_Events.301.D
 	picture = BATTLE_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = FEE_Italian_Wars_Events.301.OPT1
+		name = FEE_Italy_Events.301.OPT1
 		ai_chance = {
 			factor = 40
 			modifier = {
@@ -1017,7 +1017,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Italian_Wars_Events.301.OPT2
+		name = FEE_Italy_Events.301.OPT2
 		ai_chance = {
 			factor = 40
 			modifier = {
@@ -1061,7 +1061,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Italian_Wars_Events.301.OPT3
+		name = FEE_Italy_Events.301.OPT3
 		ai_chance = {
 			factor = 2
 			modifier = {
@@ -1077,9 +1077,9 @@ country_event = {
 
 # Guerra dei Quattro Anni
 country_event = {
-	id = FEE_Italian_Wars_Events.400
-	title = FEE_Italian_Wars_Events.400.T
-	desc = FEE_Italian_Wars_Events.400.D
+	id = FEE_Italy_Events.400
+	title = FEE_Italy_Events.400.T
+	desc = FEE_Italy_Events.400.D
 	picture = BATTLE_eventPicture
 
 	fire_only_once = yes
@@ -1128,7 +1128,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Italian_Wars_Events.400.OPT1
+		name = FEE_Italy_Events.400.OPT1
 		ai_chance = {
 			factor = 75
 			modifier = {
@@ -1156,13 +1156,13 @@ country_event = {
 		NAV = {
 			if = {
 				limit = { is_free_or_tributary_trigger = yes }
-				country_event = { id = FEE_Italian_Wars_Events.401 }
+				country_event = { id = FEE_Italy_Events.401 }
 			}
 		}
 		VEN = {
 			if = {
 				limit = { is_free_or_tributary_trigger = yes }
-				country_event = { id = FEE_Italian_Wars_Events.401 }
+				country_event = { id = FEE_Italy_Events.401 }
 			}
 		}
 		if = {
@@ -1171,7 +1171,7 @@ country_event = {
 				is_free_or_tributary_trigger = yes
 			}
 			SPA = {
-				country_event = { id = FEE_Italian_Wars_Events.401 }
+				country_event = { id = FEE_Italy_Events.401 }
 			}
 		}
 		if = {
@@ -1180,31 +1180,31 @@ country_event = {
 				is_free_or_tributary_trigger = yes
 			}
 			HAB = {
-				country_event = { id = FEE_Italian_Wars_Events.401 }
+				country_event = { id = FEE_Italy_Events.401 }
 			}
 		}
 		ENG = {
 			if = {
 				limit = { is_free_or_tributary_trigger = yes }
-				country_event = { id = FEE_Italian_Wars_Events.401 }
+				country_event = { id = FEE_Italy_Events.401 }
 			}
 		}
 		MAN = {
 			if = {
 				limit = { is_free_or_tributary_trigger = yes }
-				country_event = { id = FEE_Italian_Wars_Events.401 }
+				country_event = { id = FEE_Italy_Events.401 }
 			}
 		}
 		PAP = {
 			if = {
 				limit = { is_free_or_tributary_trigger = yes }
-				country_event = { id = FEE_Italian_Wars_Events.401 }
+				country_event = { id = FEE_Italy_Events.401 }
 			}
 		}
 	}
 
 	option = {
-		name = FEE_Italian_Wars_Events.400.OPT2
+		name = FEE_Italy_Events.400.OPT2
 		ai_chance = {
 			factor = 25
 			modifier = {
@@ -1236,15 +1236,15 @@ country_event = {
 
 # League of Cambrais
 country_event = {
-	id = FEE_Italian_Wars_Events.401
-	title = FEE_Italian_Wars_Events.401.T
-	desc = FEE_Italian_Wars_Events.401.D
+	id = FEE_Italy_Events.401
+	title = FEE_Italy_Events.401.T
+	desc = FEE_Italy_Events.401.D
 	picture = BATTLE_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = FEE_Italian_Wars_Events.401.OPT1
+		name = FEE_Italy_Events.401.OPT1
 		ai_chance = {
 			factor = 40
 			modifier = {
@@ -1274,7 +1274,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Italian_Wars_Events.401.OPT2
+		name = FEE_Italy_Events.401.OPT2
 		ai_chance = {
 			factor = 40
 			modifier = {
@@ -1301,7 +1301,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Italian_Wars_Events.401.OPT3
+		name = FEE_Italy_Events.401.OPT3
 		ai_chance = {
 			factor = 2
 			modifier = {
@@ -1317,9 +1317,9 @@ country_event = {
 
 # Guerra della Lega di Cognac
 country_event = {
-	id = FEE_Italian_Wars_Events.500
-	title = FEE_Italian_Wars_Events.500.T
-	desc = FEE_Italian_Wars_Events.500.D
+	id = FEE_Italy_Events.500
+	title = FEE_Italy_Events.500.T
+	desc = FEE_Italy_Events.500.D
 	picture = BATTLE_eventPicture
 
 	fire_only_once = yes
@@ -1355,7 +1355,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Italian_Wars_Events.500.OPT1
+		name = FEE_Italy_Events.500.OPT1
 		ai_chance = {
 			factor = 75
 			modifier = {
@@ -1383,73 +1383,73 @@ country_event = {
 		VEN = {
 			if = {
 				limit = { is_free_or_tributary_trigger = yes }
-				country_event = { id = FEE_Italian_Wars_Events.501 }
+				country_event = { id = FEE_Italy_Events.501 }
 			}
 		}
 		FRA = {
 			if = {
 				limit = { is_free_or_tributary_trigger = yes }
-				country_event = { id = FEE_Italian_Wars_Events.501 }
+				country_event = { id = FEE_Italy_Events.501 }
 			}
 		}
 		HAB = {
 			if = {
 				limit = { is_free_or_tributary_trigger = yes }
-				country_event = { id = FEE_Italian_Wars_Events.501 }
+				country_event = { id = FEE_Italy_Events.501 }
 			}
 		}
 		LAN = {
 			if = {
 				limit = { is_free_or_tributary_trigger = yes }
-				country_event = { id = FEE_Italian_Wars_Events.501 }
+				country_event = { id = FEE_Italy_Events.501 }
 			}
 		}
 		TUS = {
 			if = {
 				limit = { is_free_or_tributary_trigger = yes }
-				country_event = { id = FEE_Italian_Wars_Events.501 }
+				country_event = { id = FEE_Italy_Events.501 }
 			}
 		}
 		MLO = {
 			if = {
 				limit = { is_free_or_tributary_trigger = yes }
-				country_event = { id = FEE_Italian_Wars_Events.501 }
+				country_event = { id = FEE_Italy_Events.501 }
 			}
 		}
 		GEN = {
 			if = {
 				limit = { is_free_or_tributary_trigger = yes }
-				country_event = { id = FEE_Italian_Wars_Events.501 }
+				country_event = { id = FEE_Italy_Events.501 }
 			}
 		}
 		NAV = {
 			if = {
 				limit = { is_free_or_tributary_trigger = yes }
-				country_event = { id = FEE_Italian_Wars_Events.501 }
+				country_event = { id = FEE_Italy_Events.501 }
 			}
 		}
 		FER = {
 			if = {
 				limit = { is_free_or_tributary_trigger = yes }
-				country_event = { id = FEE_Italian_Wars_Events.501 }
+				country_event = { id = FEE_Italy_Events.501 }
 			}
 		}
 		SIE = {
 			if = {
 				limit = { is_free_or_tributary_trigger = yes }
-				country_event = { id = FEE_Italian_Wars_Events.501 }
+				country_event = { id = FEE_Italy_Events.501 }
 			}
 		}
 		MAN = {
 			if = {
 				limit = { is_free_or_tributary_trigger = yes }
-				country_event = { id = FEE_Italian_Wars_Events.501 }
+				country_event = { id = FEE_Italy_Events.501 }
 			}
 		}
 	}
 
 	option = {
-		name = FEE_Italian_Wars_Events.500.OPT2
+		name = FEE_Italy_Events.500.OPT2
 		ai_chance = {
 			factor = 25
 			modifier = {
@@ -1484,15 +1484,15 @@ country_event = {
 
 # Answer the League of Cognac
 country_event = {
-	id = FEE_Italian_Wars_Events.501
-	title = FEE_Italian_Wars_Events.501.T
-	desc = FEE_Italian_Wars_Events.501.D
+	id = FEE_Italy_Events.501
+	title = FEE_Italy_Events.501.T
+	desc = FEE_Italy_Events.501.D
 	picture = BATTLE_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = FEE_Italian_Wars_Events.501.OPT1
+		name = FEE_Italy_Events.501.OPT1
 		ai_chance = {
 			factor = 40
 			modifier = {
@@ -1526,7 +1526,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Italian_Wars_Events.501.OPT2
+		name = FEE_Italy_Events.501.OPT2
 		ai_chance = {
 			factor = 40
 			modifier = {
@@ -1566,7 +1566,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Italian_Wars_Events.501.OPT3
+		name = FEE_Italy_Events.501.OPT3
 		ai_chance = {
 			factor = 2
 			modifier = {
@@ -1582,9 +1582,9 @@ country_event = {
 
 # Sesta Guerra d'Italia
 country_event = {
-	id = FEE_Italian_Wars_Events.600
-	title = FEE_Italian_Wars_Events.600.T
-	desc = FEE_Italian_Wars_Events.600.D
+	id = FEE_Italy_Events.600
+	title = FEE_Italy_Events.600.T
+	desc = FEE_Italy_Events.600.D
 	picture = BATTLE_eventPicture
 
 	fire_only_once = yes
@@ -1620,7 +1620,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Italian_Wars_Events.600.OPT1
+		name = FEE_Italy_Events.600.OPT1
 		ai_chance = {
 			factor = 75
 			modifier = {
@@ -1647,13 +1647,13 @@ country_event = {
 		HAB = {
 			if = {
 				limit = { is_free_or_tributary_trigger = yes }
-				country_event = { id = FEE_Italian_Wars_Events.601 }
+				country_event = { id = FEE_Italy_Events.601 }
 			}
 		}
 	}
 
 	option = {
-		name = FEE_Italian_Wars_Events.600.OPT2
+		name = FEE_Italy_Events.600.OPT2
 		ai_chance = {
 			factor = 25
 			modifier = {
@@ -1687,15 +1687,15 @@ country_event = {
 
 # War on the Imperial Throne
 country_event = {
-	id = FEE_Italian_Wars_Events.601
-	title = FEE_Italian_Wars_Events.601.T
-	desc = FEE_Italian_Wars_Events.601.D
+	id = FEE_Italy_Events.601
+	title = FEE_Italy_Events.601.T
+	desc = FEE_Italy_Events.601.D
 	picture = BATTLE_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = FEE_Italian_Wars_Events.601.OPT1
+		name = FEE_Italy_Events.601.OPT1
 		ai_chance = {
 			factor = 40
 			modifier = {
@@ -1721,7 +1721,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Italian_Wars_Events.601.OPT2
+		name = FEE_Italy_Events.601.OPT2
 		ai_chance = {
 			factor = 40
 			modifier = {
@@ -1762,7 +1762,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Italian_Wars_Events.601.OPT3
+		name = FEE_Italy_Events.601.OPT3
 		ai_chance = {
 			factor = 2
 			modifier = {
@@ -1778,9 +1778,9 @@ country_event = {
 
 # Settima Guerra d'Italia
 country_event = {
-	id = FEE_Italian_Wars_Events.700
-	title = FEE_Italian_Wars_Events.700.T
-	desc = FEE_Italian_Wars_Events.700.D
+	id = FEE_Italy_Events.700
+	title = FEE_Italy_Events.700.T
+	desc = FEE_Italy_Events.700.D
 	picture = BATTLE_eventPicture
 
 	fire_only_once = yes
@@ -1819,7 +1819,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Italian_Wars_Events.700.OPT1
+		name = FEE_Italy_Events.700.OPT1
 		ai_chance = {
 			factor = 75
 			modifier = {
@@ -1862,55 +1862,55 @@ country_event = {
 		SPA = {
 			if = {
 				limit = { is_free_or_tributary_trigger = yes }
-				country_event = { id = FEE_Italian_Wars_Events.701 }
+				country_event = { id = FEE_Italy_Events.701 }
 			}
 		}
 		HAB = {
 			if = {
 				limit = { is_free_or_tributary_trigger = yes }
-				country_event = { id = FEE_Italian_Wars_Events.701 }
+				country_event = { id = FEE_Italy_Events.701 }
 			}
 		}
 		SAX = {
 			if = {
 				limit = { is_free_or_tributary_trigger = yes }
-				country_event = { id = FEE_Italian_Wars_Events.701 }
+				country_event = { id = FEE_Italy_Events.701 }
 			}
 		}
 		BRA = {
 			if = {
 				limit = { is_free_or_tributary_trigger = yes }
-				country_event = { id = FEE_Italian_Wars_Events.701 }
+				country_event = { id = FEE_Italy_Events.701 }
 			}
 		}
 		ENG = {
 			if = {
 				limit = { is_free_or_tributary_trigger = yes }
-				country_event = { id = FEE_Italian_Wars_Events.701 }
+				country_event = { id = FEE_Italy_Events.701 }
 			}
 		}
 		TUR = {
 			if = {
 				limit = { is_free_or_tributary_trigger = yes }
-				country_event = { id = FEE_Italian_Wars_Events.701 }
+				country_event = { id = FEE_Italy_Events.701 }
 			}
 		}
 		BRG = {
 			if = {
 				limit = { is_free_or_tributary_trigger = yes }
-				country_event = { id = FEE_Italian_Wars_Events.701 }
+				country_event = { id = FEE_Italy_Events.701 }
 			}
 		}
 		KLE = {
 			if = {
 				limit = { is_free_or_tributary_trigger = yes }
-				country_event = { id = FEE_Italian_Wars_Events.701 }
+				country_event = { id = FEE_Italy_Events.701 }
 			}
 		}
 	}
 
 	option = {
-		name = FEE_Italian_Wars_Events.700.OPT2
+		name = FEE_Italy_Events.700.OPT2
 		ai_chance = {
 			factor = 25
 			modifier = {
@@ -1949,15 +1949,15 @@ country_event = {
 
 # Treaty of Crépy
 country_event = {
-	id = FEE_Italian_Wars_Events.701
-	title = FEE_Italian_Wars_Events.701.T
-	desc = FEE_Italian_Wars_Events.701.D
+	id = FEE_Italy_Events.701
+	title = FEE_Italy_Events.701.T
+	desc = FEE_Italy_Events.701.D
 	picture = BATTLE_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = FEE_Italian_Wars_Events.701.OPT1
+		name = FEE_Italy_Events.701.OPT1
 		ai_chance = {
 			factor = 40
 			modifier = {
@@ -1988,7 +1988,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Italian_Wars_Events.701.OPT2
+		name = FEE_Italy_Events.701.OPT2
 		ai_chance = {
 			factor = 40
 			modifier = {
@@ -2031,7 +2031,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Italian_Wars_Events.701.OPT3
+		name = FEE_Italy_Events.701.OPT3
 		ai_chance = {
 			factor = 2
 			modifier = {
@@ -2047,9 +2047,9 @@ country_event = {
 
 # Guerra Asburgo-Valois
 country_event = {
-	id = FEE_Italian_Wars_Events.800
-	title = FEE_Italian_Wars_Events.800.T
-	desc = FEE_Italian_Wars_Events.800.D
+	id = FEE_Italy_Events.800
+	title = FEE_Italy_Events.800.T
+	desc = FEE_Italy_Events.800.D
 	picture = BATTLE_eventPicture
 
 	fire_only_once = yes
@@ -2085,7 +2085,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Italian_Wars_Events.800.OPT1
+		name = FEE_Italy_Events.800.OPT1
 		ai_chance = {
 			factor = 75
 			modifier = {
@@ -2112,61 +2112,61 @@ country_event = {
 		HAB = {
 			if = {
 				limit = { is_free_or_tributary_trigger = yes }
-				country_event = { id = FEE_Italian_Wars_Events.801 }
+				country_event = { id = FEE_Italy_Events.801 }
 			}
 		}
 		ENG = {
 			if = {
 				limit = { is_free_or_tributary_trigger = yes }
-				country_event = { id = FEE_Italian_Wars_Events.801 }
+				country_event = { id = FEE_Italy_Events.801 }
 			}
 		}
 		LAN = {
 			if = {
 				limit = { is_free_or_tributary_trigger = yes }
-				country_event = { id = FEE_Italian_Wars_Events.801 }
+				country_event = { id = FEE_Italy_Events.801 }
 			}
 		}
 		TUS = {
 			if = {
 				limit = { is_free_or_tributary_trigger = yes }
-				country_event = { id = FEE_Italian_Wars_Events.801 }
+				country_event = { id = FEE_Italy_Events.801 }
 			}
 		}
 		TUR = {
 			if = {
 				limit = { is_free_or_tributary_trigger = yes }
-				country_event = { id = FEE_Italian_Wars_Events.801 }
+				country_event = { id = FEE_Italy_Events.801 }
 			}
 		}
 		SAV = {
 			if = {
 				limit = { is_free_or_tributary_trigger = yes }
-				country_event = { id = FEE_Italian_Wars_Events.801 }
+				country_event = { id = FEE_Italy_Events.801 }
 			}
 		}
 		SPI = {
 			if = {
 				limit = { is_free_or_tributary_trigger = yes }
-				country_event = { id = FEE_Italian_Wars_Events.801 }
+				country_event = { id = FEE_Italy_Events.801 }
 			}
 		}
 		PAP = {
 			if = {
 				limit = { is_free_or_tributary_trigger = yes }
-				country_event = { id = FEE_Italian_Wars_Events.801 }
+				country_event = { id = FEE_Italy_Events.801 }
 			}
 		}
 		SIE = {
 			if = {
 				limit = { is_free_or_tributary_trigger = yes }
-				country_event = { id = FEE_Italian_Wars_Events.801 }
+				country_event = { id = FEE_Italy_Events.801 }
 			}
 		}
 	}
 
 	option = {
-		name = FEE_Italian_Wars_Events.800.OPT2
+		name = FEE_Italy_Events.800.OPT2
 		ai_chance = {
 			factor = 25
 			modifier = {
@@ -2201,15 +2201,15 @@ country_event = {
 
 # Chiamata alle Armi
 country_event = {
-	id = FEE_Italian_Wars_Events.801
-	title = FEE_Italian_Wars_Events.801.T
-	desc = FEE_Italian_Wars_Events.801.D
+	id = FEE_Italy_Events.801
+	title = FEE_Italy_Events.801.T
+	desc = FEE_Italy_Events.801.D
 	picture = BATTLE_eventPicture
 
 	is_triggered_only = yes
 
 	option = {
-		name = FEE_Italian_Wars_Events.801.OPT1
+		name = FEE_Italy_Events.801.OPT1
 		ai_chance = {
 			factor = 40
 			modifier = {
@@ -2239,7 +2239,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Italian_Wars_Events.801.OPT2
+		name = FEE_Italy_Events.801.OPT2
 		ai_chance = {
 			factor = 40
 			modifier = {
@@ -2290,7 +2290,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Italian_Wars_Events.801.OPT3
+		name = FEE_Italy_Events.801.OPT3
 		ai_chance = {
 			factor = 2
 			modifier = {
@@ -2306,9 +2306,9 @@ country_event = {
 
 #
 #country_event = {
-#	id = FEE_Italian_Wars_Events.
-#	title = FEE_Italian_Wars_Events..T
-#	desc = FEE_Italian_Wars_Events..D
+#	id = FEE_Italy_Events.
+#	title = FEE_Italy_Events..T
+#	desc = FEE_Italy_Events..D
 #	picture = BATTLE_eventPicture
 #
 #	fire_only_once = yes
@@ -2322,7 +2322,7 @@ country_event = {
 #	}
 #
 #	option = {
-#		name = FEE_Italian_Wars_Events..OPT1
+#		name = FEE_Italy_Events..OPT1
 #		ai_chance = {
 #			factor = 50
 #		}
@@ -2330,7 +2330,7 @@ country_event = {
 #	}
 #
 #	option = {
-#		name = FEE_Italian_Wars_Events..OPT2
+#		name = FEE_Italy_Events..OPT2
 #		ai_chance = {
 #			factor = 50
 #		}
