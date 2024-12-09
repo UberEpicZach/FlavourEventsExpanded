@@ -51,33 +51,12 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
-			set_variable = {
-				which = fee_trading_fair_event_months
-				value = 0
-			}
 			event_target:event_target_fee_fair_province = {
 				clr_province_flag = fee_province_trading_fair_started
-			}
-		}
-	}
-
-	option = {
-		name = FEE_Fairs_Events.3.OPT1
-		ai_chance = {
-			factor = 50
-		}
-
-		custom_tooltip = FEE_FAIRS_CHOSE_PROVINCE_TT
-		country_event = {
-			id = FEE_Fairs_Events.7
-			days = 1825
-		}
-		event_target:event_target_fee_fair_province = {
-			add_province_modifier = {
-				name = fee_trading_fair_province_modifier
-				duration = 1825
-			}
-			hidden_effect = {
+				set_variable = {
+					which = fee_trading_fair_event_months
+					value = 0
+				}
 				set_province_flag = fee_province_trading_fair_started
 				set_variable = {
 					which = feeTradingFairLevel
@@ -97,6 +76,25 @@ country_event = {
 						set_country_flag = fee_first_trading_fair_country
 					}
 				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Fairs_Events.3.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		custom_tooltip = FEE_FAIRS_CHOSE_PROVINCE_TT
+		country_event = {
+			id = FEE_Fairs_Events.7
+			days = 1825
+		}
+		event_target:event_target_fee_fair_province = {
+			add_province_modifier = {
+				name = fee_trading_fair_province_modifier
+				duration = 1825
 			}
 		}
 	}
