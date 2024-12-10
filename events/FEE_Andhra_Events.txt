@@ -615,5 +615,16 @@ country_event = {
 			name = fee_yor_vijayanagar
 			duration = 18250
 		}
+		custom_tooltip = FEE_ANDHRA_SATAVAHANA_CONQUEST_VIJ_TT
+		hidden_effect = {
+			if = {
+				limit = { exists = VIJ }
+				VIJ = {
+					every_owned_province = {
+						add_permanent_claim = ROOT
+					}
+				}
+			}
+		}
 	}
 }
