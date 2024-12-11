@@ -35,7 +35,7 @@ country_event = {
 			set_capital = 544
 		}
 		544 = {
-			add_province_modifier = {
+			add_permanent_province_modifier = {
 				name = fee_dec_a_new_capital
 				duration = -1
 			}
@@ -98,8 +98,8 @@ country_event = {
 	goto = 569
 
 	trigger = {
-		owns = 569
 		569 = {
+			owned_by = ROOT
 			development = 15
 			num_of_buildings_in_province = 4
 		}
@@ -123,7 +123,7 @@ country_event = {
 		add_years_of_income = -0.5
 		569 = {
 			add_base_tax = 2
-			add_province_modifier = {
+			add_permanent_province_modifier = {
 				name = fee_dec_public_waterworks_of_bijapur
 				duration = -1
 			}
@@ -143,7 +143,7 @@ country_event = {
 
 		add_years_of_income = -0.25
 		569 = {
-			add_province_modifier = {
+			add_permanent_province_modifier = {
 				name = fee_dec_mediocre_public_waterworks_of_bijapur
 				duration = -1
 			}
@@ -160,7 +160,7 @@ country_event = {
 		add_years_of_income = 0.1
 		569 = {
 			add_base_tax = -2
-			add_province_modifier = {
+			add_permanent_province_modifier = {
 				name = fee_dec_not_enough_water
 				duration = 3650
 			}
@@ -182,8 +182,8 @@ country_event = {
 
 	trigger = {
 		DIP = 4
-		owns = 569
 		569 = {
+			owned_by = ROOT
 			has_trade_building_trigger = yes
 			has_production_building_trigger = yes
 			base_production = 7
@@ -218,7 +218,7 @@ country_event = {
 		}
 		569 = {
 			add_or_upgrade_trade_building = yes
-			add_province_modifier = {
+			add_permanent_province_modifier = {
 				name = fee_dec_hundred_bazaars
 				duration = -1
 			}
@@ -239,7 +239,7 @@ country_event = {
 			duration = 18250
 		}
 		569 = {
-			add_province_modifier = {
+			add_permanent_province_modifier = {
 				name = fee_dec_unregulated_trade
 				duration = -1
 			}
@@ -276,11 +276,11 @@ country_event = {
 		}
 		569 = {
 			add_or_upgrade_trade_building = yes
-			add_province_modifier = {
+			add_permanent_province_modifier = {
 				name = fee_dec_hundred_bazaars
 				duration = -1
 			}
-			add_province_modifier = {
+			add_permanent_province_modifier = {
 				name = fee_dec_new_imperial_capital
 				duration = -1
 				hidden = yes
@@ -289,7 +289,7 @@ country_event = {
 				limit = {
 					owned_by = ROOT
 				}
-				add_province_modifier = {
+				add_permanent_province_modifier = {
 					name = fee_dec_new_imperial_capital_region
 					duration = -1
 				}
@@ -298,7 +298,7 @@ country_event = {
 				limit = {
 					owned_by = ROOT
 				}
-				add_province_modifier = {
+				add_permanent_province_modifier = {
 					name = fee_dec_new_imperial_capital_region
 					duration = -1
 				}
@@ -329,11 +329,11 @@ country_event = {
 		}
 		569 = {
 			add_or_upgrade_trade_building = yes
-			add_province_modifier = {
+			add_permanent_province_modifier = {
 				name = fee_dec_hundred_bazaars
 				duration = -1
 			}
-			add_province_modifier = {
+			add_permanent_province_modifier = {
 				name = fee_dec_winter_capital_of_the_mughals
 				duration = -1
 			}
@@ -341,7 +341,7 @@ country_event = {
 				limit = {
 					owned_by = ROOT
 				}
-				add_province_modifier = {
+				add_permanent_province_modifier = {
 					name = fee_dec_winter_capital_of_the_mughals_region
 					duration = -1
 				}
@@ -390,7 +390,7 @@ country_event = {
 		name = FEE_Deccan_Events.4.OPT1
 
 		569 = {
-			add_province_modifier = {
+			add_permanent_province_modifier = {
 				name = fee_dec_deccani_cultural_center
 				duration = -1
 			}
@@ -573,7 +573,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = GOC
+		owns = 542
 		is_year = 1507
 		NOT = { is_year = 1590 }
 	}
@@ -588,9 +588,9 @@ country_event = {
 		add_treasury = -25
 		542 = {
 			add_base_manpower = 1
-			add_province_modifier = {
+			add_permanent_province_modifier = {
 				name = fee_dec_expansion_golkonda_fort
-				duration = 1
+				duration = -1
 			}
 		}
 	}
