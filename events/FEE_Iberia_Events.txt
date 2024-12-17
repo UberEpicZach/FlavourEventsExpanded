@@ -59,43 +59,7 @@ country_event = {
 			}
 		}
 		206 = {
-			if = {
-				limit = {
-					has_building = fort_15th
-				}
-				add_building_construction = {
-					building = fort_16th
-					speed = 0.5
-					cost = 0.3
-				}
-			}
-			else_if = {
-				limit = {
-					has_building = fort_16th
-				}
-				add_building_construction = {
-					building = fort_17th
-					speed = 0.5
-					cost = 0.3
-				}
-			}
-			else_if = {
-				limit = {
-					has_building = fort_17th
-				}
-				add_building_construction = {
-					building = fort_18th
-					speed = 0.5
-					cost = 0.3
-				}
-			}
-			else = {
-				add_building_construction = {
-					building = fort_15th
-					speed = 0.5
-					cost = 0.3
-				}
-			}
+			add_or_upgrade_fort_building = yes
 		}
 		country_event = {
 			id = FEE_Iberia_Events.2

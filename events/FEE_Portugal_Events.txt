@@ -616,81 +616,7 @@ country_event = {
 			cede_province = ROOT
 
 			add_base_production = 3
-			if = {
-				limit = {
-					ROOT = { mil_tech = 24 }
-				}
-				if = {
-					limit = {
-						NOT = { has_building = fort_18th }
-					}
-					hidden_effect = {
-						remove_building = fort_15th
-						remove_building = fort_16th
-						remove_building = fort_17th
-					}
-					add_building_construction = {
-						building = fort_18th
-						speed = 1
-						cost = 0
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					ROOT = {
-						mil_tech = 19
-						NOT = { mil_tech = 24 }
-					}
-				}
-				if = {
-					limit = {
-						NOT = { has_building = fort_17th }
-					}
-					hidden_effect = {
-						remove_building = fort_15th
-						remove_building = fort_16th
-					}
-					add_building_construction = {
-						building = fort_17th
-						speed = 1
-						cost = 0
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					ROOT = {
-						mil_tech = 14
-						NOT = { mil_tech = 19 }
-					}
-				}
-				if = {
-					limit = {
-						NOT = { has_building = fort_16th }
-					}
-					hidden_effect = {
-						remove_building = fort_15th
-					}
-					add_building_construction = {
-						building = fort_16th
-						speed = 1
-						cost = 0
-					}
-				}
-			}
-			else = {
-				if = {
-					limit = {
-						NOT = { has_building = fort_15th }
-					}
-					add_building_construction = {
-						building = fort_15th
-						speed = 1
-						cost = 0
-					}
-				}
-			}
+			add_or_upgrade_fort_building = yes
 		}
 	}
 
@@ -985,84 +911,8 @@ country_event = {
 		hidden_effect = {
 			1466 = {
 				every_trade_node_member_province = {
-					limit = {
-						owned_by = ROOT
-					}
-					if = {
-						limit = {
-							ROOT = { mil_tech = 24 }
-						}
-						if = {
-							limit = {
-								NOT = { has_building = fort_18th }
-							}
-							hidden_effect = {
-								remove_building = fort_15th
-								remove_building = fort_16th
-								remove_building = fort_17th
-							}
-							add_building_construction = {
-								building = fort_18th
-								speed = 1
-								cost = 0
-							}
-						}
-					}
-					else_if = {
-						limit = {
-							ROOT = {
-								mil_tech = 19
-								NOT = { mil_tech = 24 }
-							}
-						}
-						if = {
-							limit = {
-								NOT = { has_building = fort_17th }
-							}
-							hidden_effect = {
-								remove_building = fort_15th
-								remove_building = fort_16th
-							}
-							add_building_construction = {
-								building = fort_17th
-								speed = 1
-								cost = 0
-							}
-						}
-					}
-					else_if = {
-						limit = {
-							ROOT = {
-								mil_tech = 14
-								NOT = { mil_tech = 19 }
-							}
-						}
-						if = {
-							limit = {
-								NOT = { has_building = fort_16th }
-							}
-							hidden_effect = {
-								remove_building = fort_15th
-							}
-							add_building_construction = {
-								building = fort_16th
-								speed = 1
-								cost = 0
-							}
-						}
-					}
-					else = {
-						if = {
-							limit = {
-								NOT = { has_building = fort_15th }
-							}
-							add_building_construction = {
-								building = fort_15th
-								speed = 1
-								cost = 0
-							}
-						}
-					}
+					limit = { owned_by = ROOT }
+					add_or_upgrade_fort_building = yes
 				}
 			}
 		}
