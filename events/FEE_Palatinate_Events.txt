@@ -563,9 +563,9 @@ country_event = {
 				who = ROOT
 				modifier = pal_sax_alliance
 			}
+			add_historical_friend = ROOT
 		}
 		add_historical_friend = SAX
-		SAX = {	add_historical_friend = ROOT }
 	}
 
 	option = {

@@ -968,9 +968,6 @@ country_event = {
 			random_owned_province = {
 				reformed_rebels = 1
 			}
-		}
-		add_prestige_or_monarch_power = { amount = 5 }
-		SCO = {
 			add_opinion = {
 				who = PREV
 				modifier = FEE_Scotland_infuriated_by_supporting_rebels
@@ -983,6 +980,7 @@ country_event = {
 				id = FEE_Scotland_Events.14
 			}
 		}
+		add_prestige_or_monarch_power = { amount = 5 }
 	}
 	option = {
 		name = FEE_Scotland_Events.13.OPT2

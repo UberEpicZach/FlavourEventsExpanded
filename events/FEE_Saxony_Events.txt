@@ -82,10 +82,12 @@ country_event = {
 
 	trigger = {
 		tag = SAX
-		BRA = { num_of_cities = 4 }
+		BRA = {
+			is_free_or_tributary_trigger = yes
+			num_of_cities = 4
+		}
 		num_of_cities = BRA
 		is_free_or_tributary_trigger = yes
-		BRA = { is_free_or_tributary_trigger = yes }
 		NOT = {
 			has_opinion = {
 				who = BRA

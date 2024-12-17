@@ -21,11 +21,9 @@ country_event = {
 		months = 120
 		modifier = {
 			factor = 0.5
-			OR = {
-				NOR = {
+			NOR = {
+				OR = {
 					religion = protestant
-				}
-				NOR = {
 					religion = reformed
 				}
 			}
