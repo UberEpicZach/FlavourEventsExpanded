@@ -373,6 +373,7 @@ country_event = {
 					owned_by = ROOT
 				}
 				add_local_autonomy = 20
+				noble_rebels = 1
 			}
 		}
 		211 = {
@@ -389,14 +390,6 @@ country_event = {
 					owned_by = ROOT
 				}
 				add_local_autonomy = 20
-			}
-		}
-		214 = {
-			if = {
-				limit = {
-					owned_by = ROOT
-				}
-				noble_rebels = 1
 			}
 		}
 	}
@@ -970,11 +963,9 @@ country_event = {
 			}
 		}
 		owns_core_province = 214
-		OR = {
-			214 = {
+		214 = {
+			OR = {
 				fort_level = 2
-			}
-			214 = {
 				any_neighbor_province = {
 					owned_by = ROOT
 					fort_level = 2

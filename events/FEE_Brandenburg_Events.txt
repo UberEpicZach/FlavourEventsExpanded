@@ -1482,15 +1482,11 @@ country_event = {
 
 	trigger = {
 		exists = BRG
-		BRG = {
-			is_subject = no
-		}
 		has_country_flag = fee_brandenburg_united_duchies_occupied_yes
 		NOT = { has_country_flag = fee_brandenburg_united_negotiations_yes }
 		BRG = {
-			NOT = {
-				is_at_war = yes
-			}
+			is_subject = no
+			NOT = { is_at_war = yes }
 			had_recent_war = 1
 		}
 	}

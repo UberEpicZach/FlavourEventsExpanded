@@ -1882,8 +1882,10 @@ country_event = {
 	option = {
 		name = FEE_Iberia_Events.20.OPT1
 
-		121 = { add_base_tax = 1 }
-		121 = { add_base_production = 1 }
+		121 = {
+			add_base_tax = 1
+			add_base_production = 1
+		}
 	}
 
 	# His talent should be used in other parts of our country.
