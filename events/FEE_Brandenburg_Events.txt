@@ -4343,61 +4343,63 @@ country_event = {
 
 		add_years_of_income = -1
 		custom_tooltip = fee_edict_potsdam_arrival_hugenots_tt
-		while = {
-			limit = {
-				check_variable = {
+		hidden_effect = {
+			while = {
+				limit = {
+					check_variable = {
+						which = 50_percent_of_huguenots_dissidents_first_half
+						value = 1
+					}
+				}
+				capital_scope = {
+					if = {
+						limit = {
+							NOT = {
+								AND = {
+									check_variable = {
+										which = PRU_BRA_capital_tax
+										which = PRU_BRA_capital_production
+									}
+									check_variable = {
+										which = PRU_BRA_capital_tax
+										which = PRU_BRA_capital_production
+									}
+								}
+							}
+						}
+						add_base_tax = 1
+					}
+					else_if = {
+						limit = {
+							NOT = {
+								check_variable = {
+									which = PRU_BRA_capital_production
+									which = PRU_BRA_capital_manpower
+								}
+							}
+						}
+						add_base_production = 1
+					}
+					else = {
+						add_base_manpower = 1
+					}
+					export_to_variable = {
+						which = PRU_BRA_capital_tax
+						value = trigger_value:base_tax
+					}
+					export_to_variable = {
+						which = PRU_BRA_capital_production
+						value = trigger_value:base_production
+					}
+					export_to_variable = {
+						which = PRU_BRA_capital_manpower
+						value = trigger_value:base_manpower
+					}
+				}
+				subtract_variable = {
 					which = 50_percent_of_huguenots_dissidents_first_half
 					value = 1
 				}
-			}
-			capital_scope = {
-				if = {
-					limit = {
-						NOT = {
-							AND = {
-								check_variable = {
-									which = PRU_BRA_capital_tax
-									which = PRU_BRA_capital_production
-								}
-								check_variable = {
-									which = PRU_BRA_capital_tax
-									which = PRU_BRA_capital_production
-								}
-							}
-						}
-					}
-					add_base_tax = 1
-				}
-				else_if = {
-					limit = {
-						NOT = {
-							check_variable = {
-								which = PRU_BRA_capital_production
-								which = PRU_BRA_capital_manpower
-							}
-						}
-					}
-					add_base_production = 1
-				}
-				else = {
-					add_base_manpower = 1
-				}
-				export_to_variable = {
-					which = PRU_BRA_capital_tax
-					value = trigger_value:base_tax
-				}
-				export_to_variable = {
-					which = PRU_BRA_capital_production
-					value = trigger_value:base_production
-				}
-				export_to_variable = {
-					which = PRU_BRA_capital_manpower
-					value = trigger_value:base_manpower
-				}
-			}
-			subtract_variable = {
-				which = 50_percent_of_huguenots_dissidents_first_half
-				value = 1
 			}
 		}
 	}

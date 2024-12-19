@@ -933,11 +933,7 @@ country_event = {
 					name = fee_gen_refugees_crimean_colonies
 					duration = 10950
 				}
-				random_list = {
-					33 = { add_base_tax = 1 }
-					33 = { add_base_production = 1 }
-					33 = { add_base_manpower = 1 }
-				}
+				add_random_development = 1
 			}
 		}
 		hidden_effect = {

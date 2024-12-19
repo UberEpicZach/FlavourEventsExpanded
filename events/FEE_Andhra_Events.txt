@@ -113,11 +113,7 @@ country_event = {
 		}
 
 		capital_scope = {
-			random_list = {
-				33 = { add_base_tax = 1 }
-				33 = { add_base_production = 1 }
-				33 = { add_base_manpower = 1 }
-			}
+			add_random_development = 1
 		}
 	}
 }
