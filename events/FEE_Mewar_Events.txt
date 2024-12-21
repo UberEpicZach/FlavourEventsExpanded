@@ -97,30 +97,32 @@ country_event = {
 	option = {
 		name = FEE_Mewar_Events.2.OPT1
 		custom_tooltip = fee_siege_of_chittor_tt
-		while = {
-			limit = {
-				check_variable = {
+		hidden_effect = {
+			while = {
+				limit = {
+					check_variable = {
+						which = fee_chittor_tradition_var
+						value = 1
+					}
+				}
+				add_army_tradition_or_mil_power = { amount = 1 }
+				change_variable = {
 					which = fee_chittor_tradition_var
-					value = 1
+					value = -1
 				}
 			}
-			add_army_tradition_or_mil_power = { amount = 1 }
-			change_variable = {
-				which = fee_chittor_tradition_var
-				value = -1
-			}
-		}
-		while = {
-			limit = {
-				check_variable = {
+			while = {
+				limit = {
+					check_variable = {
+						which = fee_chittor_months_var
+						value = 1
+					}
+				}
+				add_years_of_income = 0.083
+				change_variable = {
 					which = fee_chittor_months_var
-					value = 1
+					value = -1
 				}
-			}
-			add_years_of_income = 0.083
-			change_variable = {
-				which = fee_chittor_months_var
-				value = -1
 			}
 		}
 		if = {
