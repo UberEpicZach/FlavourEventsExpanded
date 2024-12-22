@@ -1301,7 +1301,7 @@ country_event = {
 					limit = {
 						is_capital = no
 						culture = danish
-						or = {
+						OR = {
 							trade_goods = grain
 							trade_goods = naval_supplies
 						}
@@ -1319,7 +1319,7 @@ country_event = {
 					limit = {
 						is_capital = no
 						culture = danish
-						or = {
+						OR = {
 							trade_goods = grain
 							trade_goods = naval_supplies
 						}

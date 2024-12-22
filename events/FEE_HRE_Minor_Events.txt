@@ -11,7 +11,7 @@ country_event = {
 			is_year = 1530
 		}
 		owns_core_province = 67
-		or = {
+		OR = {
 			67 = {
 				is_prosperous = yes
 			}
@@ -28,7 +28,7 @@ country_event = {
 		months = 300
 		modifier = {
 			factor = 0.5
-			or = {
+			OR = {
 				has_estate_privilege = estate_burghers_patronage_of_the_arts
 				has_estate_privilege = estate_vaisyas_patronage_of_the_arts				# im adding this 90% so I remember that the same privledge can exist between many estates
 			}
@@ -273,7 +273,7 @@ country_event = {
 	trigger = {
 		is_emperor = no
 		is_elector = yes
-		or = {
+		OR = {
 			naval_ideas = 3
 			maritime_ideas = 3
 		}
