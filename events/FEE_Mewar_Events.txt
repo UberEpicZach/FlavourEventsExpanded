@@ -13,8 +13,7 @@ country_event = {
 		has_dlc = Leviathan
 		is_expanded_mod_active = { mod = great_monuments }
 		OR = {
-			tag = MER
-			was_tag = MER
+			is_or_was_tag = { tag = MER }
 			dynasty = "Sisodiya"
 		}
 		owns = 518
@@ -22,7 +21,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 60
+		months = 24
 	}
 
 	option = {
@@ -32,7 +31,7 @@ country_event = {
 			name = fee_mer_monument_boost
 			duration = 18250
 		}
-		set_global_flag = chittor_fort_unrest
+		set_global_flag = fee_mer_chittor_fort_unrest
 		custom_tooltip = fee_chittor_fort_unrest_option_tt
 	}
 
@@ -51,7 +50,7 @@ country_event = {
 			name = fee_mer_monument_boost_extra
 			duration = 18250
 		}
-		set_global_flag = chittor_fort_morale
+		set_global_flag = fee_mer_chittor_fort_morale
 		custom_tooltip = fee_chittor_fort_morale_option_tt
 	}
 
