@@ -130,6 +130,7 @@ country_event = {
 			}
 			add_ruler_modifier = {
 				name = fee_conqueror_of_chittor
+				duration = -1
 			}
 		}
 		hidden_effect = {
