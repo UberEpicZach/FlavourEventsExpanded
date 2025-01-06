@@ -959,6 +959,7 @@ country_event = {
 		}
 		add_ruler_modifier = {
 			name = fee_por_prospering_jewish_communities
+			duration = -1
 		}
 		capital_scope = {
 			add_base_tax = 3
@@ -993,6 +994,7 @@ country_event = {
 		}
 		add_ruler_modifier = {
 			name = fee_por_jewish_weaponsmiths
+			duration = -1
 		}
 		random_owned_province = {
 			limit = {

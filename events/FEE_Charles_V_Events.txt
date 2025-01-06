@@ -368,6 +368,7 @@ country_event = {
 		set_country_flag = fee_charles_v_abdicate_option
 		add_ruler_modifier = {
 			name = fee_charles_v_charles_is_weak
+			duration = -1
 		}
 		add_stability = -2				#The nation will get testy
 		low_countries_region = {			#The Lowcountries will be problematic
@@ -381,6 +382,7 @@ country_event = {
 		HAB = {
 			add_ruler_modifier = {
 				name = fee_charles_v_charles_is_weak_c
+			duration = -1
 			}
 			capital_scope = {
 				spawn_rebels = {
