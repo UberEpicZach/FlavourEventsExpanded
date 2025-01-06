@@ -1189,7 +1189,7 @@ country_event = {
 			factor = 80
 		}
 
-		break_alliance_with_fee = { who = PRO }
+		break_alliance = PRO
 		PRO = {
 			add_opinion = {
 				who = ROOT
