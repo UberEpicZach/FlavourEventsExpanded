@@ -152,6 +152,7 @@ country_decisions = {
 				}
 				add_permanent_province_modifier = {
 					name = fee_mug_mughal_industrialisation
+					duration = -1
 				}
 			}
 		}
