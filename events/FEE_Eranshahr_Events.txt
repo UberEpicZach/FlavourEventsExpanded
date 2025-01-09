@@ -1,0 +1,857 @@
+namespace = FEE_Eranshahr_Events
+
+# Whispers of the Past
+country_event = {
+	id = FEE_Eranshahr_Events.1
+	title = FEE_Eranshahr_Events.1.T
+	desc = FEE_Eranshahr_Events.1.D
+	#picture =
+	fire_only_once = yes
+
+	trigger = {
+		tag = ERS
+		religion = zoroastrian
+		employed_advisor = {
+			category = ADM
+			skill = 2
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+		modifier = {
+			factor = 0.5
+			OR = {
+				employed_advisor = {
+					type = theologian
+				}
+				employed_advisor = {
+					type = inquisitor
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Eranshahr_Events.1.OPT1
+		country_event = {
+			id = FEE_Eranshahr_Events.2
+		}
+	}
+
+	option = {
+		name = FEE_Eranshahr_Events.1.OPT2
+		custom_tooltip = FEE_ERS_NOTHING_TT
+	}
+}
+
+# The Heirs of Yazdegerd
+country_event = {
+	id = FEE_Eranshahr_Events.2
+	title = FEE_Eranshahr_Events.2.T
+	desc = FEE_Eranshahr_Events.2.D
+	#picture =
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Eranshahr_Events.2.OPT1
+		add_years_of_income = -0.25
+		700 = {
+			province_event = {
+				id = FEE_Eranshahr_Events.3 # EoC
+				days = 500
+			}
+			hidden_effect = {
+				province_event = {
+					id = FEE_Eranshahr_Events.4 # Horde
+					days = 500
+				}
+				province_event = {
+					id = FEE_Eranshahr_Events.5 # Other
+					days = 500
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Eranshahr_Events.2.OPT2
+		add_prestige = -20
+		remove_advisor_by_category = ADM
+	}
+}
+
+# Scholars Received in Xi'an (EoC)
+province_event = {
+	id = FEE_Eranshahr_Events.3
+	title = FEE_Eranshahr_Events.3.T
+	desc = FEE_Eranshahr_Events.3.D
+	#picture =
+	is_triggered_only = yes
+
+	trigger = {
+		owner = {
+			is_emperor_of_china = yes
+			NOT = { has_reform = steppe_horde }
+		}
+	}
+
+	option = {
+		name = FEE_Eranshahr_Events.3.OPT1
+		owner = {
+			add_adm_power = -75
+			reverse_add_opinion = {
+				who = FROM
+				modifier = fee_ers_imperial_aid
+			}
+			add_legitimacy_equivalent = { amount = 10 }
+		}
+		FROM = {
+			country_event = {
+				id = FEE_Eranshahr_Events.6 # Aid from the Emperor
+				days = 100
+			}
+		}
+		
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				OR = {
+					war_exhaustion = 1
+					num_of_rebel_armies = 1
+					NOT = { stability = 1 }
+					NOT = {
+						has_opinion = {
+							who = FROM
+							value = 1
+						}
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Eranshahr_Events.3.OPT2
+		owner = {
+			add_prestige_or_monarch_power = { amount = 10 }
+			add_mandate = 2
+		}
+		FROM = {
+			country_event = {
+				id = FEE_Eranshahr_Events.7 # The Emperor Gives Permission
+				days = 100
+			}
+		}
+
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				NOT = {
+					has_opinion = {
+						who = FROM
+						value = 1
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				NOT = { war_exhaustion = 1 }
+				NOT = { num_of_rebel_armies = 1 }
+				stability = 1
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Eranshahr_Events.3.OPT3
+		owner = {
+			add_prestige_or_monarch_power = { amount = 20 }
+			add_mandate = 5
+			reverse_add_opinion = {
+				who = FROM
+				modifier = insulted
+				multiplier = 2
+			}
+		}
+		FROM = {
+			country_event = {
+				id = FEE_Eranshahr_Events.8 # Imperial Rejection
+				days = 100
+			}
+		}
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				has_opinion = {
+					who = FROM
+					value = 1
+				}
+			}
+		}
+	}
+}
+
+# Scholars Received in Xi'an (Horde)
+province_event = {
+	id = FEE_Eranshahr_Events.4
+	title = FEE_Eranshahr_Events.4.T
+	desc = FEE_Eranshahr_Events.4.D
+	#picture =
+	is_triggered_only = yes
+
+	trigger = {
+		owner = {
+			NOT = { is_emperor_of_china = yes }
+			has_reform = steppe_horde
+		}
+	}
+
+	option = {
+		name = FEE_Eranshahr_Events.4.OPT1
+		owner = {
+			add_adm_power = 50
+			add_prestige_or_monarch_power = { amount = 15 }
+		}
+		FROM = {
+			country_event = {
+				id = FEE_Eranshahr_Events.9 # Khan demands our submission
+				days = 100
+			}
+
+		}
+		
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				OR = {
+					is_rival = FROM
+					alliance_with = FROM
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Eranshahr_Events.4.OPT2
+		owner = {
+			add_prestige_or_monarch_power = { amount = 20 }
+			add_legitimacy_equivalent = { amount = 10 }
+			add_mil_power = 50
+		}
+		FROM = {
+			country_event = {
+				id = FEE_Eranshahr_Events.10 # Scholars Murdered
+				days = 100
+			}
+		}
+
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				NOT = { is_rival = FROM }
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Eranshahr_Events.4.OPT3
+		owner = {
+			add_dip_power = 50
+		}
+		FROM = {
+			country_event = {
+				id = FEE_Eranshahr_Events.11 # Khan Grants Our Request
+				days = 100
+			}
+		}
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				NOT = { alliance_with = FROM }
+			}
+		}
+	}
+}
+
+# Scholars Received in Xi'an (other)
+province_event = {
+	id = FEE_Eranshahr_Events.5
+	title = FEE_Eranshahr_Events.5.T
+	desc = FEE_Eranshahr_Events.5.D
+	#picture =
+	is_triggered_only = yes
+
+	trigger = {
+		owner = {
+			NOT = { is_emperor_of_china = yes }
+			NOT = { has_reform = steppe_horde }
+		}
+	}
+
+	option = {
+		name = FEE_Eranshahr_Events.5.OPT1
+		owner = {
+			add_adm_power = 50
+			reverse_add_opinion = {
+				who = FROM
+				modifier = fee_ers_helped_out
+			}
+		}
+		FROM = {
+			country_event = {
+				id = FEE_Eranshahr_Events.12 # Aid from the East
+				days = 100
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Eranshahr_Events.5.OPT2
+		owner = {
+			add_legitimacy_equivalent = { amount = 10 }
+			reverse_add_opinion = {
+				who = FROM
+				modifier = fee_ers_aid_stopped
+			}
+		}
+		FROM = {
+			country_event = {
+				id = FEE_Eranshahr_Events.13 # Aid Stopped
+				days = 100
+			}
+		}
+	}
+}
+
+# Aid from the Emperor
+country_event = {
+	id = FEE_Eranshahr_Events.6
+	title = FEE_Eranshahr_Events.6.T
+	desc = FEE_Eranshahr_Events.6.D
+	#picture =
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Eranshahr_Events.6.OPT1
+		random_list = {
+			80 = {
+				country_event = {
+					id = FEE_Eranshahr_Events.14 # An Heir is Revealed
+					days = 180
+				}
+			}
+			20 = {
+				country_event = {
+					id = FEE_Eranshahr_Events.15 # Expedition Ends in Failure
+					days = 180
+				}
+			}
+		}
+	}
+}
+
+# The Emperor Gives Permission
+country_event = {
+	id = FEE_Eranshahr_Events.7
+	title = FEE_Eranshahr_Events.7.T
+	desc = FEE_Eranshahr_Events.7.D
+	#picture =
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Eranshahr_Events.7.OPT1
+		random_list = {
+			50 = {
+				country_event = {
+					id = FEE_Eranshahr_Events.14 # An Heir is Revealed
+					days = 180
+				}
+			}
+			50 = {
+				country_event = {
+					id = FEE_Eranshahr_Events.15 # Expedition Ends in Failure
+					days = 180
+				}
+			}
+		}
+	}
+}
+
+# Imperial Rejection
+country_event = {
+	id = FEE_Eranshahr_Events.8
+	title = FEE_Eranshahr_Events.8.T
+	desc = FEE_Eranshahr_Events.8.D
+	#picture =
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Eranshahr_Events.8.OPT1
+		custom_tooltip = FEE_ERS_FAIL_TT
+	}
+
+	# gymbag
+}
+
+# Khan demands our Submission
+country_event = {
+	id = FEE_Eranshahr_Events.9
+	title = FEE_Eranshahr_Events.9.T
+	desc = FEE_Eranshahr_Events.9.D
+	#picture =
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Eranshahr_Events.9.OPT1
+		add_prestige = -25
+		FROM = {
+			owner = {
+				create_subject = {
+					subject_type = tributary_state
+					subject = ROOT
+				}
+			}
+		}
+		country_event = {
+			id = FEE_Eranshahr_Events.16 # An Audience with the Khan
+			days = 360
+		}
+		ai_chance = {
+			factor = 0
+		}
+	}
+
+	option = {
+		name = FEE_Eranshahr_Events.9.OPT2
+		custom_tooltip = FEE_ERS_INSULT_TT
+		add_prestige_or_monarch_power = { amount = 5 }
+		FROM = {
+			owner = {
+				add_casus_belli = {
+					target = ROOT
+					type = cb_insult
+					months = 12
+				}
+			}
+		}
+		country_event = {
+			id = FEE_Eranshahr_Events.10 # Scholars Murdered
+			days = 180
+		}
+	}
+}
+
+# Scholars Murdered
+country_event = {
+	id = FEE_Eranshahr_Events.10
+	title = FEE_Eranshahr_Events.10.T
+	desc = FEE_Eranshahr_Events.10.D
+	#picture =
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Eranshahr_Events.10.OPT1
+		custom_tooltip = FEE_ERS_FAIL_TT
+		add_adm_power = -100
+		add_dip_power = -100
+		add_mil_power = -100
+		700 = {
+			owner = {
+				ROOT = {
+					add_casus_belli = {
+						target = PREV
+						type = cb_insult
+						months = 300
+					}
+				}
+			}
+		}
+	}
+}
+
+# Khan Grants Our Request
+country_event = {
+	id = FEE_Eranshahr_Events.11
+	title = FEE_Eranshahr_Events.11.T
+	desc = FEE_Eranshahr_Events.11.D
+	#picture =
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Eranshahr_Events.11.OPT1
+		random_list = {
+			50 = {
+				country_event = {
+					id = FEE_Eranshahr_Events.14 # An Heir is Revealed
+					days = 180
+				}
+			}
+			50 = {
+				country_event = {
+					id = FEE_Eranshahr_Events.15 # Expedition Ends in Failure
+					days = 180
+				}
+			}
+		}
+	}
+}
+
+# Aid from the East
+country_event = {
+	id = FEE_Eranshahr_Events.12
+	title = FEE_Eranshahr_Events.12.T
+	desc = FEE_Eranshahr_Events.12.D
+	#picture =
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Eranshahr_Events.12.OPT1
+		random_list = {
+			70 = {
+				country_event = {
+					id = FEE_Eranshahr_Events.14 # An Heir is Revealed
+					days = 180
+				}
+			}
+			30 = {
+				country_event = {
+					id = FEE_Eranshahr_Events.15 # Expedition Ends in Failure
+					days = 180
+				}
+			}
+		}
+	}
+}
+
+# Aid Stopped
+country_event = {
+	id = FEE_Eranshahr_Events.13
+	title = FEE_Eranshahr_Events.13.T
+	desc = FEE_Eranshahr_Events.13.D
+	#picture =
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Eranshahr_Events.13.OPT1
+		random_list = {
+			30 = {
+				country_event = {
+					id = FEE_Eranshahr_Events.14 # An Heir is Revealed
+					days = 180
+				}
+			}
+			70 = {
+				country_event = {
+					id = FEE_Eranshahr_Events.15 # Expedition Ends in Failure
+					days = 180
+				}
+			}
+		}
+	}
+}
+
+# An Heir is Revealed
+country_event = {
+	id = FEE_Eranshahr_Events.14
+	title = FEE_Eranshahr_Events.14.T
+	desc = FEE_Eranshahr_Events.14.D
+	#picture =
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = FEE_Eranshahr_Events.14.OPT1
+		define_heir = {
+			name = "Juluo"
+			dynasty = "Sassanid"
+			male = yes
+			culture = xibei
+			religion = zoroastrian
+			adm = 6
+			dip = 6
+			mil = 6
+			age = 16 # no age specified but the event text of "nobles push back" suggests an education
+			claim = 100
+		}
+		country_event = {
+			id = FEE_Eranshahr_Events.17 # Nobles Push Back
+			days = 240
+		}
+	}
+}
+
+# Expedition Ends in Failure
+country_event = {
+	id = FEE_Eranshahr_Events.15
+	title = FEE_Eranshahr_Events.15.T
+	desc = FEE_Eranshahr_Events.15.D
+	#picture =
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Eranshahr_Events.15.OPT1
+	}
+}
+
+# An Audience with the Khan
+country_event = {
+	id = FEE_Eranshahr_Events.16
+	title = FEE_Eranshahr_Events.16.T
+	desc = FEE_Eranshahr_Events.16.D
+	#picture =
+	is_triggered_only = yes
+
+	immediate = {
+		export_to_variable = {
+			which = fee_ers_money_paid
+			value = monthly_income
+		}
+		multiply_variable = {
+			which = fee_ers_money_paid
+			value = 3
+		}
+	}
+
+	option = {
+		name = FEE_Eranshahr_Events.16.OPT1
+		add_prestige = -25
+		add_years_of_income = -0.25
+		while = {
+			limit = {
+				check_variable = {
+					which = fee_ers_money_paid
+					value = 1
+				}
+			}
+			700 = {
+				owner = {
+					add_treasury = 1
+				}
+			}
+			subtract_variable = {
+				which = fee_ers_money_paid
+				value = 1
+			}
+		}
+		random_list = {
+			70 = {
+				country_event = {
+					id = FEE_Eranshahr_Events.14 # An Heir is Revealed
+					days = 180
+				}
+			}
+			30 = {
+				country_event = {
+					id = FEE_Eranshahr_Events.15 # Expedition Ends in Failure
+					days = 180
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Eranshahr_Events.16.OPT2
+		add_prestige_or_monarch_power = { amount = 10 }
+		700 = {
+			owner = {
+				add_casus_belli = {
+					target = ROOT
+					type = cb_insult
+					months = 60
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = scornfully_insulted
+				}
+			}
+		}
+		random = {
+			chance = 50
+			kill_ruler = yes
+		}
+		country_event = {
+			id = FEE_Eranshahr_Events.10 # Scholars Murdered
+			days = 180
+		}
+	}
+}
+
+# Nobles Push Back
+country_event = {
+	id = FEE_Eranshahr_Events.17
+	title = FEE_Eranshahr_Events.17.T
+	desc = FEE_Eranshahr_Events.17.D
+	#picture =
+	is_triggered_only = yes
+
+	trigger = {
+		has_heir = "Juluo" # added since event is nonsense if he died (though maybe there should be a second event if he already became ruler)
+	}
+
+	option = {
+		name = FEE_Eranshahr_Events.17.OPT1
+		add_prestige_or_monarch_power = { amount = 50 }
+		add_stability = -1
+		capital_scope = {
+			random_province_in_state = {
+				spawn_rebels = {
+					type = pretender_rebels
+					size = 3
+					culture = persian
+					religion = ROOT
+				}
+			}
+			random_province_in_state = {
+				spawn_rebels = {
+					type = pretender_rebels
+					size = 3
+					culture = persian
+					religion = ROOT
+				}
+			}
+			random_province_in_state = {
+				spawn_rebels = {
+					type = pretender_rebels
+					size = 3
+					culture = persian
+					religion = ROOT
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Eranshahr_Events.17.OPT2
+		kill_heir = {}
+		add_prestige = -50
+		add_stability_or_adm_power = yes
+		ai_chance = {
+			factor = 0
+		}
+	}
+}
+
+# Learning One's Roots
+country_event = {
+	id = FEE_Eranshahr_Events.18
+	title = FEE_Eranshahr_Events.18.T
+	desc = FEE_Eranshahr_Events.18.D
+	#picture =
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 2
+	}
+
+	trigger = {
+		has_ruler = "Juluo"
+		dynasty = "Sassanid"
+		NOT = { ruler_culture = persian }
+		NOT = { ruler_culture = ROOT }
+	}
+
+	option = {
+		name = FEE_Eranshahr_Events.18.OPT1
+		add_prestige = -25
+		add_stability_or_adm_power = yes
+		set_ruler_culture = persian
+		if = {
+			limit = {
+				has_heir = yes
+				NOT = { heir_culture = persian }
+			}
+			set_heir_culture = persian
+		}
+		add_country_modifier = {
+			name = fee_ers_studying_persian_roots
+			duration = 730
+		}
+		add_ruler_modifier = {
+			name = fee_ers_embraced_persian_culture
+			duration = -1
+		}
+	}
+
+	option = {
+		name = FEE_Eranshahr_Events.18.OPT2
+		add_prestige_or_monarch_power = { amount = 10 }
+		add_ruler_modifier = {
+			name = fee_ers_chinese_emperor
+			duration = -1
+		}
+		if = {
+			limit = {
+				any_country = {
+					is_emperor_of_china = yes
+				}
+			}
+			random_country = {
+				limit = {
+					is_emperor_of_china = yes
+				}
+				add_historical_friend = ROOT
+				ROOT = {
+					add_historical_friend = PREV
+				}
+			}
+		}
+	}
+}
+
+# The Silk Road reborn
+country_event = {
+	id = FEE_Eranshahr_Events.19
+	title = FEE_Eranshahr_Events.19.T
+	desc = FEE_Eranshahr_Events.19.D
+	#picture =
+	fire_only_once = yes
+	major = yes
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	trigger = {
+		has_ruler = "Juluo"
+		dynasty = "Sassanid"
+		silk = 1
+	}
+
+	option = {
+		name = FEE_Eranshahr_Events.19.OPT1
+		add_years_of_income = -0.5
+		add_prestige_or_monarch_power = { amount = 25 }
+		change_price = {
+			trade_goods = silk
+			key = FEE_ERS_NEW_SILK_ROAD
+			value = 0.25
+			duration = -1
+		}
+		add_country_modifier = {
+			name = fee_ers_improved_silk_road
+			duration = -1
+		}
+	}
+
+	option = {
+		name = FEE_Eranshahr_Events.19.OPT2
+		add_years_of_income = 0.5
+		add_country_modifier = {
+			name = fee_ers_moderate_silk_road_success
+			duration = 9125
+		}
+		random_owned_province = {
+			limit = {
+				trade_goods = silk
+			}
+			add_base_production = 2
+		}
+	}
+}

@@ -1,0 +1,14 @@
+fee_ers_imperial_aid = {
+	opinion = 20
+	yearly_decay = 1
+}
+
+fee_ers_helped_out = {
+	opinion = 20
+	yearly_decay = 1
+}
+
+fee_ers_aid_stopped = {
+	opinion = -20
+	yearly_decay = 1
+}

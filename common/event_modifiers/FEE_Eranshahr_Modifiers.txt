@@ -1,0 +1,24 @@
+fee_ers_studying_persian_roots = {
+	advisor_cost = 0.2
+	global_unrest = -3
+}
+
+fee_ers_embraced_persian_culture = {
+	country_admin_power = 1
+}
+
+fee_ers_chinese_emperor = {
+	global_unrest = 2
+	improve_relation_modifier = 0.25
+	embracement_cost = -0.2
+}
+
+fee_ers_improved_silk_road = {
+	caravan_power = 0.25
+	trade_efficiency = 0.1
+}
+
+fee_ers_moderate_silk_road_success = {
+	caravan_power = 0.2
+	trade_steering = 0.25
+}
