@@ -1055,7 +1055,7 @@ country_event = {
 
 		add_years_of_income = -0.083
 		event_target:event_target_fee_fair_province = {
-			add_development_third_monarch_skill_fee = yes
+			add_dev_third_monarch_skill = yes
 			change_variable = {
 				which = feeTradingFairLevel
 				value = 10

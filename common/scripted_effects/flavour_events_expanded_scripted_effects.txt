@@ -91,26 +91,9 @@ change_religious_influence_equivalent_fee = {
 	]
 }
 
-## breaks the alliance between current scope and who
-### break_alliance_with_fee = { who = <scope> }
-break_alliance_with_fee = {
-	if = {
-		limit = {
-			alliance_with = $who$
-		}
-		$who$ = {
-			custom_tooltip = BREAK_ALLIANCE_WITH_TT
-		}
-		hidden_effect = {
-			add_rival = $who$
-			remove_rival = $who$
-		}
-	}
-}
-
 #Add from 1 to 6 develop in province[s] based on the Monarch's Skill
-# add_development_scaled_on_monarch_skill_yes = yes
-add_development_scaled_on_monarch_skill_fee = {
+# add_dev_scaled_on_monarch_skill_yes = yes
+add_dev_scaled_on_monarch_skill = {
 	if = {
 		limit = {
 			owner = { ADM = 6 }
@@ -220,10 +203,121 @@ add_development_scaled_on_monarch_skill_fee = {
 		add_base_manpower = 1
 	}
 }
-
+#Add from 1 to 6 develop in province[s] based on the Monthly Monarch Power Gained
+# add_dev_scaled_on_monthly_mana = yes
+add_dev_scaled_on_monthly_mana = {
+	if = {
+		limit = {
+			owner = { monthly_adm = 17 }
+		}
+		add_base_tax = 6
+	}
+	else_if = {
+		limit = {
+			owner = { monthly_adm = 14 }
+		}
+		add_base_tax = 5
+	}
+	else_if = {
+		limit = {
+			owner = { monthly_adm = 11 }
+		}
+		add_base_tax = 4
+	}
+	else_if = {
+		limit = {
+			owner = { monthly_adm = 8 }
+		}
+		add_base_tax = 3
+	}
+	else_if = {
+		limit = {
+			owner = { monthly_adm = 5 }
+		}
+		add_base_tax = 2
+	}
+	else_if = {
+		limit = {
+			owner = { monthly_adm = 2 }
+		}
+		add_base_tax = 1
+	}
+	if = {
+		limit = {
+			owner = { monthly_dip = 17 }
+		}
+		add_base_production = 6
+	}
+	else_if = {
+		limit = {
+			owner = { monthly_dip = 14 }
+		}
+		add_base_production = 5
+	}
+	else_if = {
+		limit = {
+			owner = { monthly_dip = 11 }
+		}
+		add_base_production = 4
+	}
+	else_if = {
+		limit = {
+			owner = { monthly_dip = 8 }
+		}
+		add_base_production = 3
+	}
+	else_if = {
+		limit = {
+			owner = { monthly_dip = 5 }
+		}
+		add_base_production = 2
+	}
+	else_if = {
+		limit = {
+			owner = { monthly_dip = 2 }
+		}
+		add_base_production = 1
+	}
+	if = {
+		limit = {
+			owner = { monthly_mil = 17 }
+		}
+		add_base_manpower = 6
+	}
+	else_if = {
+		limit = {
+			owner = { monthly_mil = 14 }
+		}
+		add_base_manpower = 5
+	}
+	else_if = {
+		limit = {
+			owner = { monthly_mil = 11 }
+		}
+		add_base_manpower = 4
+	}
+	else_if = {
+		limit = {
+			owner = { monthly_mil = 8 }
+		}
+		add_base_manpower = 3
+	}
+	else_if = {
+		limit = {
+			owner = { monthly_mil = 5 }
+		}
+		add_base_manpower = 2
+	}
+	else_if = {
+		limit = {
+			owner = { monthly_mil = 2 }
+		}
+		add_base_manpower = 1
+	}
+}
 #Remove from 1 to 6 develop in province[s] based on the Monarch's Skill
-# remove_development_scaled_on_monarch_skill_yes = yes
-remove_development_scaled_on_monarch_skill_fee = {
+# remove_dev_scaled_on_monarch_skill = yes
+remove_dev_scaled_on_monarch_skill = {
 	if = {
 		limit = {
 			owner = {
@@ -356,8 +450,8 @@ remove_development_scaled_on_monarch_skill_fee = {
 }
 
 #Add from 1 to 3 develop in province[s] based on the Monarch's Skill
-# add_development_half_monarch_skill_fee = yes
-add_development_half_monarch_skill_fee = {
+# add_dev_half_monarch_skill = yes
+add_dev_half_monarch_skill = {
 	if = {
 		limit = {
 			owner = { ADM = 6 }
@@ -413,10 +507,67 @@ add_development_half_monarch_skill_fee = {
 		add_base_manpower = 1
 	}
 }
-
+#Add from 1 to 3 develop in province[s] based on the Monthly Monarch Power Gained
+# add_dev_half_monthly_mana = yes
+add_dev_half_monthly_mana = {
+	if = {
+		limit = {
+			owner = { monthly_adm = 17 }
+		}
+		add_base_tax = 3
+	}
+	else_if = {
+		limit = {
+			owner = { monthly_adm = 11 }
+		}
+		add_base_tax = 2
+	}
+	else_if = {
+		limit = {
+			owner = { monthly_adm = 5 }
+		}
+		add_base_tax = 1
+	}
+	if = {
+		limit = {
+			owner = { monthly_dip = 17 }
+		}
+		add_base_production = 3
+	}
+	else_if = {
+		limit = {
+			owner = { monthly_dip = 11 }
+		}
+		add_base_production = 2
+	}
+	else_if = {
+		limit = {
+			owner = { monthly_dip = 5 }
+		}
+		add_base_production = 1
+	}
+	if = {
+		limit = {
+			owner = { monthly_mil = 17 }
+		}
+		add_base_manpower = 3
+	}
+	else_if = {
+		limit = {
+			owner = { monthly_mil = 11 }
+		}
+		add_base_manpower = 2
+	}
+	else_if = {
+		limit = {
+			owner = { monthly_mil = 5 }
+		}
+		add_base_manpower = 1
+	}
+}
 #Remove from 1 to 3 develop in province[s] based on the Monarch's Skill
-# remove_development_half_monarch_skill_fee = yes
-remove_development_half_monarch_skill_fee = {
+# remove_dev_half_monarch_skill = yes
+remove_dev_half_monarch_skill = {
 	if = {
 		limit = {
 			owner = {
@@ -533,8 +684,8 @@ remove_development_half_monarch_skill_fee = {
 }
 
 #Add from 1 to 2 develop in province[s] based on the Monarch's Skill
-# add_development_third_monarch_skill_fee = yes
-add_development_third_monarch_skill_fee = {
+# add_dev_third_monarch_skill = yes
+add_dev_third_monarch_skill = {
 	if = {
 		limit = {
 			owner = { ADM = 6 }
@@ -572,10 +723,49 @@ add_development_third_monarch_skill_fee = {
 		add_base_manpower = 1
 	}
 }
-
+#Add from 1 to 2 develop in province[s] based on the Monthly Monarch Power Gained
+# add_dev_third_monthly_mana = yes
+add_dev_third_monthly_mana = {
+	if = {
+		limit = {
+			owner = { monthly_adm = 14 }
+		}
+		add_base_tax = 2
+	}
+	else_if = {
+		limit = {
+			owner = { monthly_adm = 8 }
+		}
+		add_base_tax = 1
+	}
+	if = {
+		limit = {
+			owner = { monthly_dip = 14 }
+		}
+		add_base_production = 2
+	}
+	else_if = {
+		limit = {
+			owner = { monthly_dip = 8 }
+		}
+		add_base_production = 1
+	}
+	if = {
+		limit = {
+			owner = { monthly_mil = 14 }
+		}
+		add_base_manpower = 2
+	}
+	else_if = {
+		limit = {
+			owner = { monthly_mil = 8 }
+		}
+		add_base_manpower = 1
+	}
+}
 #Remove from 1 to 2 develop in province[s] based on the Monarch's Skill
-# remove_development_third_monarch_skill_fee = yes
-remove_development_third_monarch_skill_fee = {
+# remove_dev_third_monarch_skill_fee = yes
+remove_dev_third_monarch_skill_fee = {
 	if = {
 		limit = {
 			owner = {
@@ -696,7 +886,78 @@ add_mana_scaled_on_monarch_skill_fee = {
 		add_mil_power = 10
 	}
 }
-
+#add_mana_scaled_on_monthly_mana = yes
+add_mana_scaled_on_monthly_mana = {
+	if = {
+		limit = { monthly_adm = 17 }
+		add_adm_power = 120
+	}
+	else_if = {
+		limit = { monthly_adm = 14 }
+		add_adm_power = 100
+	}
+	else_if = {
+		limit = { monthly_adm = 11 }
+		add_adm_power = 80
+	}
+	else_if = {
+		limit = { monthly_adm = 8 }
+		add_adm_power = 60
+	}
+	else_if = {
+		limit = { monthly_adm = 5 }
+		add_adm_power = 40
+	}
+	else = {
+		add_adm_power = 20
+	}
+	if = {
+		limit = { monthly_dip = 17 }
+		add_dip_power = 120
+	}
+	else_if = {
+		limit = { monthly_dip = 14 }
+		add_dip_power = 100
+	}
+	else_if = {
+		limit = { monthly_dip = 11 }
+		add_dip_power = 80
+	}
+	else_if = {
+		limit = { monthly_dip = 8 }
+		add_dip_power = 60
+	}
+	else_if = {
+		limit = { monthly_dip = 5 }
+		add_dip_power = 40
+	}
+	else = {
+		add_dip_power = 20
+	}
+	if = {
+		limit = { monthly_mil = 17 }
+		add_mil_power = 120
+	}
+	else_if = {
+		limit = { monthly_mil = 14 }
+		add_mil_power = 100
+	}
+	else_if = {
+		limit = { monthly_mil = 11 }
+		add_mil_power = 80
+	}
+	else_if = {
+		limit = { monthly_mil = 8 }
+		add_mil_power = 60
+	}
+	else_if = {
+		limit = { monthly_mil = 5 }
+		add_mil_power = 40
+	}
+	else = {
+		add_mil_power = 20
+	}
+}
 #Remove from 120 to 10 monarch power based on the Monarch's Skill
 # remove_mana_scaled_on_monarch_skill_fee = yes
 remove_mana_scaled_on_monarch_skill_fee = {

@@ -261,7 +261,7 @@
 # 			random_neighbor_province = {
 # 				random_list = {
 # 					25 = {
-# 						add_development_third_monarch_skill_fee = yes
+# 						add_dev_third_monarch_skill = yes
 # 					}
 # 					75 = {
 # 						add_devastation = 25
@@ -380,7 +380,7 @@
 # 			33 = {
 # 				123 = {
 # 					random_list = {
-# 						50 = { add_development_third_monarch_skill_fee = yes }
+# 						50 = { add_dev_third_monarch_skill = yes }
 # 						50 = { add_prosperity = 25 }
 # 					}
 # 				}
@@ -388,7 +388,7 @@
 # 			33 = {
 # 				2984 = {
 # 					random_list = {
-# 						50 = { add_development_third_monarch_skill_fee = yes }
+# 						50 = { add_dev_third_monarch_skill = yes }
 # 						50 = { add_prosperity = 25 }
 # 					}
 # 				}
@@ -396,7 +396,7 @@
 # 			33 = {
 # 				1934 = {
 # 					random_list = {
-# 						50 = { add_development_third_monarch_skill_fee = yes }
+# 						50 = { add_dev_third_monarch_skill = yes }
 # 						50 = { add_prosperity = 25 }
 # 					}
 # 				}
