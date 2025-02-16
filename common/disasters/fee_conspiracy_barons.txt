@@ -11,9 +11,9 @@ fee_naples_conspiracy_barons_1 = {
 		NOT = { is_year = 1464 }
 		NOT = { is_subject_of = FRA }
 		NOT = {
-			estate_influence = {
+			estate_loyalty = {
 				estate = estate_nobles
-				influence = 70
+				loyalty = 70
 			}
 		}
 		OR = {
@@ -142,9 +142,9 @@ fee_naples_conspiracy_barons_2 = {
 		NOT = { is_year = 1486 }
 		NOT = { is_subject_of = FRA }
 		NOT = {
-			estate_influence = {
+			estate_loyalty = {
 				estate = estate_nobles
-				influence = 70
+				loyalty = 70
 			}
 		}
 		OR = {
