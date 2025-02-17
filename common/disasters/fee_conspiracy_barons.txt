@@ -10,10 +10,16 @@ fee_naples_conspiracy_barons_1 = {
 		is_year = 1459
 		NOT = { is_year = 1464 }
 		NOT = { is_subject_of = FRA }
-		NOT = {
-			estate_loyalty = {
+		OR = {
+			NOT = {
+				estate_loyalty = {
+					estate = estate_nobles
+					loyalty = 70
+				}
+			}
+			estate_influence = {
 				estate = estate_nobles
-				loyalty = 70
+				influence = 65
 			}
 		}
 		OR = {
@@ -64,7 +70,7 @@ fee_naples_conspiracy_barons_1 = {
 		modifier = {
 			factor = 1.5
 			estate_influence = {
-				influence = 90
+				influence = 70
 				estate = estate_nobles
 			}
 		}
@@ -141,10 +147,16 @@ fee_naples_conspiracy_barons_2 = {
 		is_year = 1485
 		NOT = { is_year = 1486 }
 		NOT = { is_subject_of = FRA }
-		NOT = {
-			estate_loyalty = {
+		OR = {
+			NOT = {
+				estate_loyalty = {
+					estate = estate_nobles
+					loyalty = 70
+				}
+			}
+			estate_influence = {
 				estate = estate_nobles
-				loyalty = 70
+				influence = 65
 			}
 		}
 		OR = {
@@ -195,7 +207,7 @@ fee_naples_conspiracy_barons_2 = {
 		modifier = {
 			factor = 1.5
 			estate_influence = {
-				influence = 90
+				influence = 70
 				estate = estate_nobles
 			}
 		}
