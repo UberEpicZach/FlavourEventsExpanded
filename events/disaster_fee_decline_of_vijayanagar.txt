@@ -31,6 +31,16 @@ country_event = {
 			duration = -1
 			disaster = fee_decline_vijayanagar
 		}
+		if = {
+			limit = {
+				is_expanded_mod_active = { mod = governments }
+			}
+			set_government_power = {
+				mechanic_type = imperial_control_mechanic
+				power_type = imperial_control
+				value = 0
+			}
+		}
 	}
 }
 
