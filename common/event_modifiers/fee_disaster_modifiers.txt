@@ -259,6 +259,7 @@ fee_vijayaba_kollaya_stabilized_realm = {
 fee_disaster_vij_political_instability = {
 	global_autonomy = 0.05
 	stability_cost_modifier = 0.25
+	monthly_imperial_control = -0.20
 }
 fee_disaster_vij_prosperity_southern_india = {
 	prestige = 0.50
