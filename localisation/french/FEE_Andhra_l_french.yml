@@ -57,6 +57,16 @@
  FEE_Andhra_Events.12.D: "In a devastating turn of events, the once-glorious city of Hampi lies in ruins, its temples shattered, its walls breached, and its streets strewn with debris. The heart of the Vijayanagara Empire has been torn asunder, leaving naught but rubble and despair in its wake. \nThe echoes of defeat reverberate through the air as the triumphant conquerors lay claim to Hampi, proclaiming their dominance over the southern reaches of India. With the city of Victory fallen, a new power rises from the ashes, poised to reshape the political landscape of the region. \nAmidst the chaos and destruction, a somber realization dawns upon the remnants of the old rulers of Vijayanagar. With their once-mighty stronghold now lost, they must heed the call to retreat and regroup, lest they be consumed by the relentless tide of conquest."
  FEE_Andhra_Events.12.OPT1: "Rise of a New Dominion"
 
+ FEE_Andhra_Events.13.T: "Reddy's Dominion"
+ FEE_Andhra_Events.13.D: "The lands of the Reddy chieftains lie before us, ripe for conquest. Their forts may stand, but their strength is nothing before the might of the Gajapatis. With one swift strike, we could break their rule and claim their wealth for ourselves. \nYet, a shadow looms to the south. The Vijayanagara Empire, ever watchful, may see this as a provocation. Though they have not yet marched against us, they are no strangers to war, and their armies are not to be underestimated. \nIs this our moment to strike? Will we let fear of Vijayanagara stay our hand, or will we show the world that Orissa bows to no one?"
+ FEE_Andhra_Events.13.OPT1: "We shall conquer"
+ FEE_Andhra_Events.13.OPT2: "We cannot afford this war now"
+
+ FEE_Andhra_Events.14.T: "Defending the Reddys"
+ FEE_Andhra_Events.14.D: "The Gajapatis march, their eyes set upon the lands of the Reddy chiefs. If we stand idle, Orissa may grow stronger, unchecked in their ambitions. But if we move, if we raise our banners in defense, we send a clear message-the Vijayanagara Empire does not forsake its allies. \nThis war would not be an easy one. The Gajapatis are formidable, their warriors fierce, their elephants unstoppable. Yet, is it not better to face them now rather than wait for the day they come for us? \nTo war, or to watch? A single decision may shape the fate of the Coromandel itself."
+ FEE_Andhra_Events.14.OPT1: "Muster the Knives-Dancers"
+ FEE_Andhra_Events.14.OPT1: "This war doesn't pertain us"
+
 # Modifiers
  fee_yor_rebuilding_amaravathi: "Rebuilding Amaravathi"
  desc_fee_yor_rebuilding_amaravathi: ""
@@ -90,6 +100,9 @@
 
  fee_yor_vijayanagar: "Vijayanagar"
  desc_fee_yor_vijayanagar: ""
+
+ fee_yor_reddy_revolt: "Reddy's Revolt"
+ desc_fee_yor_reddy_revolt: ""
 
 # Opinion Modifiers
  fee_yor_aided_reconstruction: "Aided Reconstruction"
