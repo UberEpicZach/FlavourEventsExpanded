@@ -743,6 +743,12 @@ on_mil_development = {
 }
 
 on_startup = {
+if = {
+		limit = {
+			NOT = { has_global_flag = flavour_and_events_expanded_mod_active }
+		}
+				FEE_initiate_starting_countries = yes
+	}
 	country_event = { id = flavour_and_events_expanded_events.1 } # set flag
 	country_event = { #set the meme flag
 		id = FEE_Meme_Events.1000
@@ -754,8 +760,7 @@ on_startup = {
 		days = 30
 		random = 15
 	}
-	FEE_init_country = yes
-}
+	}
 
 # ROOT = province, FROM = country
 on_trade_good_changed = {

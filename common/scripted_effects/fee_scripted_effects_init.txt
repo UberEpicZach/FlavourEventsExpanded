@@ -1,13 +1,3 @@
-FEE_init_country = {
-	if = {
-		limit = {
-			NOT = { has_global_flag = fee_initial_setup_done }
-		}
-		FEE_initiate_starting_countries = yes
-		set_global_flag = fee_initial_setup_done
-	}
-}
-
 FEE_initiate_starting_countries = {
 	NAP = { set_country_flag = naples_submits_to_the_pope }
 }
