@@ -313,7 +313,7 @@ country_event = {
 	}
 }
 
-# Embracing Ancient Roots
+# The Triumph of Golkonda
 country_event = {
 	id = FEE_Andhra_Events.6
 	title = FEE_Andhra_Events.6.T
@@ -620,6 +620,139 @@ country_event = {
 						add_permanent_claim = ROOT
 					}
 				}
+			}
+		}
+	}
+}
+
+### Additional Events
+# Gajapati's Invasion
+country_event = {
+	id = FEE_Andhra_Events.13
+	title = FEE_Andhra_Events.13.T
+	desc = FEE_Andhra_Events.13.D
+	picture = CONQUEST_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = ORI
+		exists = YOR
+		andhra_area = {
+			owned_by = YOR
+			any_neighbor_province = { owned_by = ROOT }
+		}
+	}
+
+	major = yes
+	major_trigger = {
+		is_neighbor_of = ROOT
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Andhra_Events.13.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		andhra_area = {
+			limit = { owned_by = YOR }
+			add_claim = ROOT
+		}
+		declare_war_with_cb = {
+			casus_belli = cb_annex
+			who = YOR
+		}
+		if = {
+			limit = {
+				VIJ = {
+					exists = yes
+					alliance_with = YOR
+					NOT = { has_guaranteed = YOR }
+				}
+			}
+			VIJ = {
+				country_event = {
+					id = FEE_Andhra_Events.14
+					days = 15
+				}
+			}
+		}
+		hidden_effect = { set_global_flag = fee_andhra_gajapati_wars }
+	}
+
+	option = {
+		name = FEE_Andhra_Events.13.OPT2
+		ai_chance = {
+			factor = 25
+		}
+
+		add_prestige = -15
+	}
+}
+
+# Reddy Protection
+country_event = {
+	id = FEE_Andhra_Events.14
+	title = FEE_Andhra_Events.14.T
+	desc = FEE_Andhra_Events.14.D
+	picture = GENERALS_DISCUSSING_eventPicture
+
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { war_with = ORI }
+	}
+
+	major = yes
+	major_trigger = {
+		is_neighbor_of = ROOT
+	}
+
+	option = {
+		name = FEE_Andhra_Events.14.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		join_all_defensive_wars_of = YOR
+		reverse_add_opinion = {
+			who = YOR
+			modifier = defended_allied_territory
+		}
+		add_opinion = {
+			who = YOR
+			modifier = defended_allied_territory
+		}
+	}
+
+	option = {
+		name = FEE_Andhra_Events.14.OPT1
+		ai_chance = {
+			factor = 25
+		}
+
+		add_prestige = -15
+		break_alliance = YOR
+		remove_guarantee = YOR
+		reverse_add_opinion = {
+			who = YOR
+			modifier = refused_join_war
+		}
+		add_opinion = {
+			who = YOR
+			modifier = refused_join_war
+		}
+		every_owned_province = {
+			limit = { is_core = YOR }
+			add_province_modifier = {
+				name = fee_yor_reddy_revolt
+				duration = 3650
 			}
 		}
 	}

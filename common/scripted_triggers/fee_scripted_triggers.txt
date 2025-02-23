@@ -33,3 +33,273 @@ fee_province_does_not_lack_any_institution = {
 		feudalism = 100
 	}
 }
+
+# usage:
+## province_belongs_trade_node = { center = 45 }
+### the node centers can be found in Europa Universalis IV/common/tradenodes
+province_belongs_trade_node = {
+	custom_trigger_tooltip = {
+		tooltip = province_belongs_trade_node_tt_$center$
+		OR = {
+			province_id = $center$
+			any_trade_node_member_province = {
+				province_id = $center$
+			}
+		}
+	}
+}
+
+# usage:
+## province_has_been_devved_adm = { category = adm/dip/mil, amount = 3 }
+### checks how much the province has had its base_adm/dip/mil improved
+province_has_been_devved = {
+	custom_trigger_tooltip = {
+		tooltip = fee_had_been_dev_tt_$category$
+		OR = {
+			always = yes
+			base_tax = $amount$ # for the tooltip
+			base_production = $amount$ # for the tooltip
+			base_manpower = $amount$ # for the tooltip
+		}
+		check_variable = {
+			which = fee_$category$_dev_improved
+			value = $amount$
+		}
+	}
+}
+
+# usage:
+## all_estates_loyalty = { amount = 60 }
+### Check if all the available Estates have at least Amount loyalty
+all_estates_loyalty = {
+	if = {
+		limit = { has_estate = estate_brahmins }
+		estate_loyalty = {
+			estate = estate_brahmins
+			loyalty = $amount$
+		}
+	}
+	if = {
+		limit = { has_estate = estate_burghers }
+		estate_loyalty = {
+			estate = estate_burghers
+			loyalty = $amount$
+		}
+	}
+	if = {
+		limit = { has_estate = estate_church }
+		estate_loyalty = {
+			estate = estate_church
+			loyalty = $amount$
+		}
+	}
+	if = {
+		limit = { has_estate = estate_cossacks }
+		estate_loyalty = {
+			estate = estate_cossacks
+			loyalty = $amount$
+		}
+	}
+	if = {
+		limit = { has_estate = estate_dhimmi }
+		estate_loyalty = {
+			estate = estate_dhimmi
+			loyalty = $amount$
+		}
+	}
+	if = {
+		limit = { has_estate = estate_eunuchs }
+		estate_loyalty = {
+			estate = estate_eunuchs
+			loyalty = $amount$
+		}
+	}
+	if = {
+		limit = { has_estate = estate_ghulams }
+		estate_loyalty = {
+			estate = estate_ghulams
+			loyalty = $amount$
+		}
+	}
+	if = {
+		limit = { has_estate = estate_jains }
+		estate_loyalty = {
+			estate = estate_jains
+			loyalty = $amount$
+		}
+	}
+	if = {
+		limit = { has_estate = estate_janissaries }
+		estate_loyalty = {
+			estate = estate_janissaries
+			loyalty = $amount$
+		}
+	}
+	if = {
+		limit = { has_estate = estate_maratha }
+		estate_loyalty = {
+			estate = estate_maratha
+			loyalty = $amount$
+		}
+	}
+	if = {
+		limit = { has_estate = estate_nobles }
+		estate_loyalty = {
+			estate = estate_nobles
+			loyalty = $amount$
+		}
+	}
+	if = {
+		limit = { has_estate = estate_nomadic_tribes }
+		estate_loyalty = {
+			estate = estate_nomadic_tribes
+			loyalty = $amount$
+		}
+	}
+	if = {
+		limit = { has_estate = estate_peasants }
+		estate_loyalty = {
+			estate = estate_peasants
+			loyalty = $amount$
+		}
+	}
+	if = {
+		limit = { has_estate = estate_qizilbash }
+		estate_loyalty = {
+			estate = estate_qizilbash
+			loyalty = $amount$
+		}
+	}
+	if = {
+		limit = { has_estate = estate_rajput }
+		estate_loyalty = {
+			estate = estate_rajput
+			loyalty = $amount$
+		}
+	}
+	if = {
+		limit = { has_estate = estate_vaisyas }
+		estate_loyalty = {
+			estate = estate_vaisyas
+			loyalty = $amount$
+		}
+	}
+}
+
+# usage:
+## all_estates_influence = { amount = 60 }
+### Check if all the available Estates have at least Amount influence
+all_estates_influence = {
+	if = {
+		limit = { has_estate = estate_brahmins }
+		estate_influence = {
+			estate = estate_brahmins
+			influence = $amount$
+		}
+	}
+	if = {
+		limit = { has_estate = estate_burghers }
+		estate_influence = {
+			estate = estate_burghers
+			influence = $amount$
+		}
+	}
+	if = {
+		limit = { has_estate = estate_church }
+		estate_influence = {
+			estate = estate_church
+			influence = $amount$
+		}
+	}
+	if = {
+		limit = { has_estate = estate_cossacks }
+		estate_influence = {
+			estate = estate_cossacks
+			influence = $amount$
+		}
+	}
+	if = {
+		limit = { has_estate = estate_dhimmi }
+		estate_influence = {
+			estate = estate_dhimmi
+			influence = $amount$
+		}
+	}
+	if = {
+		limit = { has_estate = estate_eunuchs }
+		estate_influence = {
+			estate = estate_eunuchs
+			influence = $amount$
+		}
+	}
+	if = {
+		limit = { has_estate = estate_ghulams }
+		estate_influence = {
+			estate = estate_ghulams
+			influence = $amount$
+		}
+	}
+	if = {
+		limit = { has_estate = estate_jains }
+		estate_influence = {
+			estate = estate_jains
+			influence = $amount$
+		}
+	}
+	if = {
+		limit = { has_estate = estate_janissaries }
+		estate_influence = {
+			estate = estate_janissaries
+			influence = $amount$
+		}
+	}
+	if = {
+		limit = { has_estate = estate_maratha }
+		estate_influence = {
+			estate = estate_maratha
+			influence = $amount$
+		}
+	}
+	if = {
+		limit = { has_estate = estate_nobles }
+		estate_influence = {
+			estate = estate_nobles
+			influence = $amount$
+		}
+	}
+	if = {
+		limit = { has_estate = estate_nomadic_tribes }
+		estate_influence = {
+			estate = estate_nomadic_tribes
+			influence = $amount$
+		}
+	}
+	if = {
+		limit = { has_estate = estate_peasants }
+		estate_influence = {
+			estate = estate_peasants
+			influence = $amount$
+		}
+	}
+	if = {
+		limit = { has_estate = estate_qizilbash }
+		estate_influence = {
+			estate = estate_qizilbash
+			influence = $amount$
+		}
+	}
+	if = {
+		limit = { has_estate = estate_rajput }
+		estate_influence = {
+			estate = estate_rajput
+			influence = $amount$
+		}
+	}
+	if = {
+		limit = { has_estate = estate_vaisyas }
+		estate_influence = {
+			estate = estate_vaisyas
+			influence = $amount$
+		}
+	}
+}

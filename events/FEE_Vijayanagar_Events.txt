@@ -26,8 +26,8 @@ country_event = {
 			factor = 75
 		}
 
-		add_stability_or_adm_power = yes
-		add_prestige_or_monarch_power = { amount = 20 }
+				add_prestige_or_monarch_power = { amount = 15 }
+add_splendor = 100
 		add_ruler_modifier = {
 			name = fee_vij_kavisarvabhauma
 			duration = -1
@@ -946,9 +946,7 @@ country_event = {
 			factor = 50
 		}
 
-		2030 = {
-			add_base_production = 1
-		}
+		reduce_estate_burghers_loyalty_effect = yes
 	}
 
 	after = {
