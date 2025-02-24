@@ -50,9 +50,9 @@ province_belongs_trade_node = {
 }
 
 # usage:
-## province_has_been_devved_adm = { category = adm/dip/mil, amount = 3 }
+## base_dev_increased_by_adm = { category = adm/dip/mil, amount = 3 }
 ### checks how much the province has had its base_adm/dip/mil improved
-province_has_been_devved = {
+base_dev_increased_by = {
 	custom_trigger_tooltip = {
 		tooltip = fee_had_been_dev_tt_$category$
 		OR = {

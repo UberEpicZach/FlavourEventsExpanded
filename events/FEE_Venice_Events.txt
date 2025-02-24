@@ -5322,9 +5322,9 @@ country_event = {
 	}
 }
 
-#########	Life of Doge Francesco Venier 1489-1556	#########
+#########	Life of Doge Venier 1489-1556	#########
 
-# Francesco Venier?
+# Venier?
 country_event = {
 	id = FEE_Venice_Events.93
 	title = FEE_Venice_Events.93.T
@@ -5350,7 +5350,6 @@ country_event = {
 		}
 
 		add_estate_burghers_loyalty_effect = yes
-		add_mercantilism_or_monarch_power = { amount = 3 }
 	}
 
 	after = {
@@ -5364,13 +5363,14 @@ country_event = {
 	}
 }
 
-# Francesco Venier in Savoy
+# Venier in Savoy
 country_event = {
 	id = FEE_Venice_Events.94
 	title = FEE_Venice_Events.94.T
 	desc = FEE_Venice_Events.94.D
 	picture = MERCHANTS_TALKING_eventPicture
 
+	is_triggered_only = yes
 	fire_only_once = yes
 
 	trigger = {
@@ -5443,17 +5443,16 @@ country_event = {
 			}
 		}
 
-		add_mil_power = 25
-		add_mercantilism_or_monarch_power = { amount = 3 }
-		random_country = {
-			limit = { owns = 205 }
-			add_opinion = {
-				who = ROOT
-				modifier = opinion_export_bad
-			}
-			reverse_add_opinion = {
-				who = ROOT
-				modifier = opinion_export_bad
+		205 = {
+			owner = {
+				add_opinion = {
+					who = ROOT
+					modifier = opinion_export_bad
+				}
+				reverse_add_opinion = {
+					who = ROOT
+					modifier = opinion_export_bad
+				}
 			}
 		}
 	}
@@ -5469,7 +5468,7 @@ country_event = {
 	}
 }
 
-# Francesco Venier in France
+# Venier in France
 country_event = {
 	id = FEE_Venice_Events.95
 	title = FEE_Venice_Events.95.T
@@ -5545,17 +5544,16 @@ country_event = {
 			}
 		}
 
-		add_mil_power = 25
-		add_mercantilism_or_monarch_power = { amount = 3 }
-		random_country = {
-			limit = { owns = 183 }
-			add_opinion = {
-				who = ROOT
-				modifier = opinion_export_bad
-			}
-			reverse_add_opinion = {
-				who = ROOT
-				modifier = opinion_export_bad
+		183 = {
+			owner = {
+				add_opinion = {
+					who = ROOT
+					modifier = opinion_export_bad
+				}
+				reverse_add_opinion = {
+					who = ROOT
+					modifier = opinion_export_bad
+				}
 			}
 		}
 	}
@@ -5571,7 +5569,7 @@ country_event = {
 	}
 }
 
-# Francesco Venier in London
+# Venier in London
 country_event = {
 	id = FEE_Venice_Events.96
 	title = FEE_Venice_Events.96.T
@@ -5647,17 +5645,16 @@ country_event = {
 			}
 		}
 
-		add_mil_power = 25
-		add_mercantilism_or_monarch_power = { amount = 3 }
-		random_country = {
-			limit = { owns = 236 }
-			add_opinion = {
-				who = ROOT
-				modifier = opinion_export_bad
-			}
-			reverse_add_opinion = {
-				who = ROOT
-				modifier = opinion_export_bad
+		236 = {
+			owner = {
+				add_opinion = {
+					who = ROOT
+					modifier = opinion_export_bad
+				}
+				reverse_add_opinion = {
+					who = ROOT
+					modifier = opinion_export_bad
+				}
 			}
 		}
 	}
