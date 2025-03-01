@@ -1,0 +1,71 @@
+has_carpet_trade_goods = {
+	OR = {
+		trade_goods = cloth
+		trade_goods = silk
+		trade_goods = wool
+	}
+}
+
+has_metal_goods = {
+	OR = {
+		trade_goods = copper
+		trade_goods = gold
+		trade_goods = iron
+	}
+}
+
+has_mining_goods = {
+	OR = {
+		trade_goods = iron
+		trade_goods = copper
+		trade_goods = gold
+		trade_goods = salt
+		trade_goods = coal
+		trade_goods = gems
+	}
+}
+
+has_gems_goods = {
+	OR = {
+		trade_goods = gems
+	}
+}
+
+has_plantage_goods = {
+	OR = {
+		trade_goods = spices 
+		trade_goods = coffee 
+		trade_goods = cotton 
+		trade_goods = sugar 
+		trade_goods = tobacco 
+		trade_goods = cocoa 
+		trade_goods = tea 
+		trade_goods = dyes
+		trade_goods = tropical_wood
+		trade_goods = slaves
+	}
+}
+
+has_rural_goods = {
+	OR = {
+		trade_goods = grain
+		trade_goods = wine 
+		trade_goods = wool
+		trade_goods = livestock
+		trade_goods = fish
+		trade_goods = fur
+		trade_goods = ivory
+		trade_goods = naval_supplies
+	}
+}
+
+has_urban_goods = {
+	OR = {
+		trade_goods = cloth
+		trade_goods = silk
+		trade_goods = incense
+		trade_goods = chinaware
+		trade_goods = paper
+		trade_goods = glass
+	}
+}

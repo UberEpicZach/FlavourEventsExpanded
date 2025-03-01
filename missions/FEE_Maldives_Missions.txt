@@ -1,0 +1,886 @@
+FEE_DGL_slot_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = { tag = DGL }
+
+	has_country_shield = yes
+
+	fee_dgl_establish_traders_aden = {
+		icon = mission_dominate_trade_in_aden
+		position = 2
+		required_missions = {
+			fee_dgl_sails_coral_fleet
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1099
+				AND = {
+					province_has_center_of_trade_of_level = 1
+					has_port = yes
+					any_trade_node_member_province = { province_id = 4346 }
+				}
+			}
+			NOT = { owned_by = ROOT }
+			NOT = {
+				ROOT = {
+					num_of_owned_provinces_with = {
+						value = 3
+						OR = {
+							province_id = 1099
+							AND = {
+								province_has_center_of_trade_of_level = 1
+								has_port = yes
+								any_trade_node_member_province = { province_id = 4346 }
+							}
+						}
+					}
+				}
+			}
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 3
+				OR = {
+					province_id = 1099
+					AND = {
+						province_has_center_of_trade_of_level = 1
+						has_port = yes
+						any_trade_node_member_province = { province_id = 4346 }
+					}
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = FEE_MALDIVES_CLAIM_ALL_COASTAL_HORMUZ_TT
+			hidden_effect = {
+				4346 = {
+					every_trade_node_member_province = {
+						limit = { has_port = yes }
+						add_permanent_claim = ROOT
+					}
+				}
+			}
+		}
+	}
+
+	fee_dgl_rediscovering_currents = {
+		icon = mission_look_west
+		position = 3
+		required_missions = { }
+		trigger = {
+			monthly_dip = 9
+			has_dip_advisor = yes
+			sailors_percentage = 0.75
+		}
+		effect = {
+			create_explorer = {
+				tradition = 50
+			}
+		}
+	}
+
+	fee_dgl_shores_setting_sun = {
+		icon = mission_establish_high_seas_navy
+		position = 4
+		required_missions = {
+			fee_dgl_rediscovering_currents
+		}
+		provinces_to_highlight = {
+			sea_zone = { superregion = east_african_sea_superregion }
+			NOT = { has_discovered = ROOT }
+		}
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = FEE_MALDIVES_EXPLORED_WESTERN_INDIAN_OCEAN_TT
+				all_province = {
+					OR = {
+						NOT = {
+							sea_zone = { superregion = east_african_sea_superregion }
+						}
+						has_discovered = ROOT 
+					}
+				}
+			}
+		}
+		effect = {
+			madagascar_highlands_area = { add_permanent_claim = ROOT }
+			southern_madagascar = { add_permanent_claim = ROOT }
+			sakalava_area = { add_permanent_claim = ROOT }
+			betsimasaraka_area = { add_permanent_claim = ROOT }
+			1101 = {
+				if = {
+					limit = {
+						NOT = { is_city = yes }
+					}
+					add_siberian_construction = 100
+				}
+				else_if = {
+					limit = {
+						NOT = { owned_by = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				else = {
+					add_base_production = 2
+				}
+			}
+		}
+	}
+
+	fee_dgl_golden_shell_trade = {
+		icon = invest_in_the_rich_trades
+		position = 5
+		required_missions = {
+			fee_dgl_shores_setting_sun
+		}
+		provinces_to_highlight = {
+			sea_zone = { superregion = east_african_sea_superregion }
+			superregion = southern_africa_superregion
+			NOT = { owned_by = ROOT }
+			NOT = {
+				ROOT = {
+					development_in_provinces = {
+						value = 150
+						superregion = southern_africa_superregion
+						sea_zone = { superregion = east_african_sea_superregion }
+					}
+				}
+			}
+		}
+		trigger = {
+			development_in_provinces = {
+				value = 150
+				superregion = southern_africa_superregion
+				sea_zone = { superregion = east_african_sea_superregion }
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = fee_dgl_cowrie_trader
+				duration = -1
+				desc = until_end_of_age_desc
+			}
+			add_mercantilism_or_monarch_power = { amount = 5 }
+			define_advisor = {
+				type = trader
+				skill = 2
+				discount = yes
+				cost_multiplier = 0.50
+				religion = ROOT
+				culture = ROOT
+			}
+		}
+	}
+}
+
+FEE_DGL_slot_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = { tag = DGL }
+
+	has_country_shield = yes
+
+	fee_dgl_commanding_gulf = {
+		icon = mission_coromandel_trade
+		position = 3
+		required_missions = {
+			fee_dgl_establish_traders_aden
+			fee_dgl_crown_coast
+		}
+		provinces_to_highlight = {
+			OR = {
+				4346 = {
+					NOT = { is_strongest_trade_power = ROOT }
+				}
+				1334 = {
+					NOT = { is_strongest_trade_power = ROOT }
+				}
+				1340 = {
+					NOT = { is_strongest_trade_power = ROOT }
+				}
+				504 = {
+					NOT = { is_strongest_trade_power = ROOT }
+				}
+			}
+		}
+		trigger = {
+			calc_true_if = {
+				amount = 3
+				4346 = { is_strongest_trade_power = ROOT }
+				1334 = { is_strongest_trade_power = ROOT }
+				1340 = { is_strongest_trade_power = ROOT }
+				504 = { is_strongest_trade_power = ROOT }
+			}
+		}
+		effect = {
+			custom_tooltip = FEE_MALDIVES_CLAIM_NORTHERN_WESTERN_INDIAN_OCEAN_TT
+			hidden_effect = {
+				africa_superregion = {
+					limit = {
+						sea_zone = { superregion = east_african_sea_superregion }
+					}
+					add_permanent_claim = ROOT
+				}
+				near_east_superregion = {
+					limit = {
+						sea_zone = { superregion = east_african_sea_superregion }
+					}
+					add_permanent_claim = ROOT
+				}
+				persia_superregion = {
+					limit = {
+						sea_zone = { superregion = east_african_sea_superregion }
+					}
+					add_permanent_claim = ROOT
+				}
+				india_superregion = {
+					limit = {
+						sea_zone = { superregion = east_african_sea_superregion }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+		}
+	}
+
+	fee_dgl_building_with_sea_gifts = {
+		icon = mission_zanzibari_trade
+		position = 4
+		required_missions = { }
+		provinces_to_highlight = {
+			sea_zone = { superregion = east_african_sea_superregion }
+			has_port = yes
+			NOT = { owned_by = ROOT }
+			NOT = { num_of_times_improved = 3 }
+			NOT = {
+				ROOT = {
+					num_of_owned_provinces_with = {
+						value = 5
+						num_of_times_improved = 3
+						has_port = yes
+						sea_zone = { superregion = east_african_sea_superregion }
+					}
+				}
+			}
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 5
+				num_of_times_improved = 3
+				has_port = yes
+				sea_zone = { superregion = east_african_sea_superregion }
+			}
+		}
+		effect = {
+			custom_tooltip = FEE_UNLOCK_PRIVILEGE_ESTATE_BURGHERS_COASTLINE_EXPANSION_TT
+		}
+	}
+
+	fee_dgl_sultan_land_sea = {
+		icon = ven_navy_mission_2
+		position = 5
+		required_missions = {
+			fee_dgl_building_with_sea_gifts
+			fee_dgl_supremacy_cowrie
+		}
+		provinces_to_highlight = {
+			sea_zone = { superregion = east_african_sea_superregion }
+			has_port = yes
+			NOT = { owned_by = ROOT }
+			NOT = { num_of_times_improved = 3 }
+			NOT = {
+				ROOT = {
+					num_of_owned_provinces_with = {
+						value = 5
+						num_of_times_improved = 3
+						has_port = yes
+						sea_zone = { superregion = east_african_sea_superregion }
+					}
+				}
+			}
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 5
+				num_of_times_improved = 3
+				has_port = yes
+				sea_zone = { superregion = east_african_sea_superregion }
+			}
+		}
+		effect = {
+			add_army_professionalism = 0.10
+			add_country_modifier = {
+				name = fee_dgl_defenders_ocean_edge
+				duration = -1
+			}
+		}
+	}
+}
+
+FEE_DGL_slot_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = { tag = DGL }
+
+	has_country_shield = yes
+
+	fee_dgl_sails_coral_fleet = {
+		icon = purely_for_commerce
+		position = 1
+		required_missions = { }
+		trigger = {
+			navy_size_percentage = 1
+		}
+		effect = {
+			define_admiral = {
+				fire = 3
+				shock = 2
+				manuever = 4
+				siege = 0
+			}
+			if = {
+				limit = {
+					NOT = {
+						is_expanded_mod_active = { mod = governments }
+					}
+				}
+				add_country_modifier = {
+					name = fee_dgl_coral_kingdom
+					duration = 7300
+				}
+			}
+			malabar_area = { add_permanent_claim = ROOT }
+			madura_area = { add_permanent_claim = ROOT }
+			lanka_area = { add_permanent_claim = ROOT }
+			south_lanka_area = { add_permanent_claim = ROOT }
+			4346 = {
+				every_trade_node_member_province = {
+					limit = {
+						has_port = yes
+						OR = {
+							province_has_center_of_trade_of_level = 1
+							province_id = 1099
+						}
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+		}
+	}
+
+	fee_dgl_crown_coast = {
+		icon = mission_secure_the_malabar_coast
+		position = 2
+		required_missions = {
+			fee_dgl_sails_coral_fleet
+		}
+		provinces_to_highlight = {
+			area = malabar_area
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			malabar_area = {
+				type = all
+				owned_by = ROOT	
+			}
+		}
+		effect = {
+			malabar_area = {
+				add_province_modifier = {
+					name = vij_malabar_modifier
+					duration = 7300
+				}
+			}
+			534 = {
+				if = {
+					limit = {
+						is_expanded_mod_active = { mod = great_monuments }
+						has_great_project = {
+							type = gme_port_of_malabar
+							tier = 1
+						}
+					}
+					add_great_project_tier = {
+						type = gme_port_of_malabar
+						tier = 1
+					}
+				}
+				else = {
+					add_or_upgrade_dock_building = yes
+					add_or_upgrade_shipyard_building = yes
+				}
+			}
+		}
+	}
+
+	fee_dgl_supremacy_cowrie = {
+		icon = mission_south_indian_trade
+		position = 4
+		required_missions = {
+			fee_dgl_commanding_gulf
+			fee_dgl_crown_coast
+			fee_dgl_masters_chola_routes
+		}
+		provinces_to_highlight = {
+			NOT = { owned_by = ROOT }
+			OR = {
+				superregion = africa_superregion
+				superregion = near_east_superregion
+				superregion = persia_superregion
+				superregion = india_superregion
+			}
+			sea_zone = { superregion = east_african_sea_superregion }
+			NOT = {
+				ROOT = {
+					development_in_provinces = {
+						value = 250
+						OR = {
+							superregion = africa_superregion
+							superregion = near_east_superregion
+							superregion = persia_superregion
+							superregion = india_superregion
+						}
+						sea_zone = { superregion = east_african_sea_superregion }
+					}
+				}
+			}
+		}
+		trigger = {
+			development_in_provinces = {
+				value = 250
+				OR = {
+					superregion = africa_superregion
+					superregion = near_east_superregion
+					superregion = persia_superregion
+					superregion = india_superregion
+				}
+				sea_zone = { superregion = east_african_sea_superregion }
+			}
+		}
+		effect = {
+		}
+	}
+
+	fee_dgl_empire_ocean_wealth = {
+		icon = mission_indian_ocean_supremacy
+		position = 6
+		required_missions = {
+			fee_dgl_golden_shell_trade
+			fee_dgl_sultan_land_sea
+			fee_dgl_indian_ocean_supremacy
+			fee_dgl_supremacy_cowrie
+		}
+		provinces_to_highlight = {
+			owned_by = ROOT
+			has_port = yes
+			NOT = { num_of_times_improved = 3 }
+			sea_zone = { superregion = east_african_sea_superregion }
+			NOT = { has_dock_building_trigger = yes }
+			NOT = { has_shipyard_building_trigger = yes }
+			NOT = {
+				ROOT = {
+					num_of_owned_provinces_with = {
+						value = 20
+						OR = {
+							has_dock_building_trigger = yes
+							has_shipyard_building_trigger = yes
+						}
+						has_port = yes
+						num_of_times_improved = 3
+						sea_zone = { superregion = east_african_sea_superregion }
+					}
+				}
+			}
+		}
+		trigger = {
+			capital_scope = { trade_node_value = 90 }
+			num_of_owned_provinces_with = {
+				value = 20
+				OR = {
+					has_dock_building_trigger = yes
+					has_shipyard_building_trigger = yes
+				}
+				has_port = yes
+				num_of_times_improved = 3
+				sea_zone = { superregion = east_african_sea_superregion }
+			}
+		}
+		effect = {
+			if = {
+				limit = { has_country_modifier = thalassocracy }
+				add_mercantilism_or_monarch_power = { amount = 5 }
+				add_prestige_or_monarch_power = { amount = 10 }
+				add_stability_or_adm_power = yes
+			}
+			else = {
+				add_country_modifier = {
+					name = "thalassocracy"
+					duration = -1
+					desc = until_end_of_age_desc
+				}
+				unlock_government_reform = { government_reform = thalassocracy_reform }
+			}
+		}
+	}
+}
+
+FEE_DGL_slot_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = { tag = DGL }
+
+	has_country_shield = yes
+
+	fee_dgl_masters_chola_routes = {
+		icon = mission_indian_trade_company
+		position = 3
+		required_missions = {
+			fee_dgl_crown_coast
+			fee_dgl_ceylon_precious_heart
+		}
+		provinces_to_highlight = {
+			NOT = { owned_by = ROOT }
+			has_port = yes
+			province_has_center_of_trade_of_level = 1
+			any_trade_node_member_province = { province_id = 1340 }
+		}
+		trigger = {
+			1340 = {
+				calc_true_if = {
+					all_trade_node_member_province = {
+						province_has_center_of_trade_of_level = 1
+						has_port = yes
+						owned_by = ROOT
+					}
+					amount = 6
+				}
+			}
+		}
+		effect = {
+			define_advisor = {
+				type = trader
+				skill = 2
+				discount = yes
+				cost_multiplier = 0.50
+				religion = ROOT
+				culture = ROOT
+			}
+			custom_tooltip = FEE_ANDHRA_CHOLA_TRADERS_TT
+			tooltip = {
+				add_or_upgrade_dock_building = yes
+				add_or_upgrade_shipyard_building = yes
+			}
+			custom_tooltip = FEE_ANDHRA_CHOLA_TRADERS_3_TT
+			tooltip = {
+				add_mercantilism = 33
+			}
+			hidden_effect = {
+				pick_best_provinces = {
+					1 = yes
+					scope = every_owned_province
+					scale = higher_development_than
+					global_trigger = "
+						province_has_center_of_trade_of_level = 1
+						has_port = yes
+					"
+					event_target_name = fee_dgl_port_target
+				}
+				event_target:fee_dgl_port_target_1 = {
+					add_or_upgrade_dock_building = yes
+					add_or_upgrade_shipyard_building = yes
+				}
+				set_variable = {
+					which = fee_dgl_port_targets
+					value = 3
+				}
+				while = {
+					limit = {
+						check_variable = {
+							which = fee_dgl_port_targets
+							value = 0
+						}
+					}
+					random_owned_province = {
+						limit = {
+							NOT = { has_province_modifier = tur_protection_from_raids_modifier }
+							province_has_center_of_trade_of_level = 1
+							has_port = yes
+							OR = {
+								num_of_times_improved = 3
+								base_production = 7
+							}
+						}
+						add_province_modifier = {
+							name = tur_protection_from_raids_modifier
+							duration = -1
+						}
+					}
+					change_variable = {
+						which = fee_dgl_port_targets
+						value = -1
+					}
+				}
+			}
+		}
+	}
+
+	fee_dgl_challenging_deep = {
+		icon = mission_launch_a_flagship
+		position = 4
+		required_missions = { }
+		provinces_to_highlight = {
+			sea_zone = { superregion = east_african_sea_superregion }
+			has_port = yes
+			NOT = { owned_by = ROOT }
+			NOT = { base_production = 5 }
+			NOT = {
+				ROOT = {
+					num_of_owned_provinces_with = {
+						value = 5
+						base_production = 5
+						has_port = yes
+						sea_zone = { superregion = east_african_sea_superregion }
+					}
+				}
+			}
+		}
+		trigger = {
+			OR = {
+				trade_ideas = 1
+				maritime_ideas = 1
+				naval_ideas = 1
+			}
+			num_of_owned_provinces_with = {
+				value = 5
+				base_production = 5
+				has_port = yes
+				sea_zone = { superregion = east_african_sea_superregion }
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = {
+						is_expanded_mod_active = { mod = historical_ideas }
+					}
+				}
+				add_country_modifier = {
+					name = fee_dgl_the_rope_industry
+					duration = -1
+					desc = until_end_of_age_desc
+				}
+			}
+			custom_tooltip = FEE_MALDIVES_5_PORTS_TT
+			tooltip = {
+				add_or_upgrade_dock_building = yes
+				add_or_upgrade_shipyard_building = yes
+			}
+			hidden_effect = {
+				set_variable = {
+					which = fee_maldives_five_ports
+					value = 3
+				}
+				while = {
+					limit = {
+						check_variable = {
+							which = fee_maldives_five_ports
+							value = 0
+						}
+					}
+					random_owned_province = {
+						limit = {
+							NOT = { has_dock_building_trigger = yes }
+							NOT = { has_shipyard_building_trigger = yes }
+							base_production = 5
+							has_port = yes
+							sea_zone = { superregion = east_african_sea_superregion }
+						}
+						add_or_upgrade_dock_building = yes
+						add_or_upgrade_shipyard_building = yes
+					}
+					change_variable = {
+						which = fee_maldives_five_ports
+						value = -1
+					}
+				}
+			}
+		}
+	}
+
+	fee_dgl_indian_ocean_supremacy = {
+		icon = invest_in_the_rich_trades
+		position = 5
+		required_missions = {
+			fee_dgl_supremacy_cowrie
+			fee_dgl_challenging_deep
+		}
+		provinces_to_highlight = {
+			sea_zone = { superregion = east_african_sea_superregion }
+			is_capital = yes
+			owner = { navy_size = ROOT }
+		}
+		trigger = {
+			OR = {
+				full_idea_group = trade_ideas
+				full_idea_group = maritime_ideas
+				full_idea_group = naval_ideas
+				monthly_dip = 9
+			}
+			has_dip_advisor_3 = yes
+			NOT = {
+				any_country = {
+					capital_scope = {
+						sea_zone = { superregion = east_african_sea_superregion }
+					}
+					navy_size = ROOT
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = fee_dgl_oceaninc_supremacy
+				duration = -1
+				desc = until_end_of_age_desc
+			}
+		}
+	}
+}
+
+FEE_DGL_slot_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = { tag = DGL }
+
+	has_country_shield = yes
+
+	fee_dgl_ceylon_precious_heart = {
+		icon = mission_conquer_lanka
+		position = 2
+		required_missions = {
+			fee_dgl_sails_coral_fleet
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = lanka_area
+				area = south_lanka_area
+			}
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			lanka_area = {
+				type = all
+				owned_by = ROOT
+			}
+			south_lanka_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_mercantilism_or_monarch_power = { amount = 3 }
+			add_accepted_culture_or_dip_power = {
+				culture = sinhala
+				dip_reward = yes
+				free = yes
+			}
+			2100 = {
+				if = {
+					limit = {
+						is_expanded_mod_active = { mod = great_monuments }
+						NOT = {
+							has_great_project = {
+								type = gme_port_of_jaffna
+								tier = 3
+							}
+						}
+					}
+					add_great_project_tier = {
+						type = gme_port_of_jaffna
+						tier = 1
+					}
+				}
+				else = {
+					add_or_upgrade_dock_building = yes
+					add_or_upgrade_shipyard_building = yes
+				}
+			}
+		}
+	}
+
+	fee_dgl_fragrant_kingdom = {
+		icon = mission_rb_colonise_spice_islands
+		position = 4
+		required_missions = {
+			fee_dgl_masters_chola_routes
+			fee_dgl_ceylon_precious_heart
+		}
+		provinces_to_highlight = {
+			NOT = { owned_by = ROOT }
+			trade_goods = spices
+			NOT = {
+				ROOT = {
+					development_in_provinces = {
+						value = 75
+						trade_goods = spices
+					}
+				}
+			}
+		}
+		trigger = {
+			OR = {
+				trade_goods_produced_amount = {
+					trade_goods = spices
+					amount = 65
+				}
+				trading_part = {
+					trade_goods = spices
+					value = 0.3
+				}
+			}
+			development_in_provinces = {
+				value = 75
+				trade_goods = spices
+			}
+		}
+		effect = {
+			custom_tooltip = FEE_MALDIVES_SPICE_DOMINION_TT
+			tooltip = {
+				add_or_upgrade_trade_building = yes
+				add_or_upgrade_dock_building = yes
+				add_or_upgrade_shipyard_building = yes
+				create_or_add_center_of_trade_level_fee = { level = 2 }
+				add_province_modifier = {
+					name = ven_source_of_spice_modifier
+					duration = -1
+				}
+			}
+			hidden_effect = {
+				pick_best_provinces = {
+					1 = yes
+					scope = every_owned_province
+					scale = higher_development_than
+					global_trigger = "
+						has_port = yes
+						trade_goods = spice
+					"
+					event_target_name = fee_dgl_spice_target
+				}
+				event_target:fee_dgl_spice_target_1 = {
+					add_or_upgrade_trade_building = yes
+					add_or_upgrade_dock_building = yes
+					add_or_upgrade_shipyard_building = yes
+					create_or_add_center_of_trade_level_fee = { level = 2 }
+					add_province_modifier = {
+						name = ven_source_of_spice_modifier
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+}

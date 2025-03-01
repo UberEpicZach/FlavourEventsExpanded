@@ -1,0 +1,68 @@
+custom_button = {
+	name = fee_swap_missions_open_button
+	potential = {
+		ai = no
+		country_has_both_fee_vanilla_missions = yes
+		NOT = {
+			check_variable = {
+				which = flavours_events_expanded_swapped_missions
+				value = 2
+			}
+		}
+		NOT = {
+			had_global_flag = {
+				flag = flavour_and_events_expanded_mod_active
+				days = 5
+			}
+		}
+	}
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = FEE_GAME_STARTED_5_DAYS_TT
+			NOT = {
+				had_global_flag = {
+					flag = flavour_and_events_expanded_mod_active
+					days = 5
+				}
+			}
+		}
+		custom_trigger_tooltip = {
+			tooltip = FEE_SWAP_MISSIONS_TT
+			NOT = {
+				check_variable = {
+					which = flavours_events_expanded_swapped_missions
+					value = 2
+				}
+			}
+		}
+	}
+	effect = {
+		hidden_effect = {
+			if = {
+				limit = { has_country_flag = fee_selected_missions_vanilla_@ROOT }
+				change_variable = {
+					which = flavours_events_expanded_swapped_missions
+					value = 1
+				}
+			}
+			else = {
+				set_country_flag = fee_selected_missions_vanilla_@ROOT
+				set_variable = {
+					which = flavours_events_expanded_swapped_missions
+					value = 1
+				}
+			}
+		}
+		if = {
+			limit = { has_country_flag = fee_selected_missions_vanilla }
+			clr_country_flag = fee_selected_missions_vanilla
+			custom_tooltip = HIE_RECEIVE_MODDED_MISSIONS_TT
+		}
+		else = {
+			set_country_flag = fee_selected_missions_vanilla
+			custom_tooltip = HIE_RECEIVE_VANILLA_MISSIONS_TT
+		}
+		swap_non_generic_missions = yes
+	}
+	tooltip = FEE_SWAP_MISSIONS_OPEN_BUTTON_TT
+}

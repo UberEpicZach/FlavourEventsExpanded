@@ -288,35 +288,16 @@ on_monarch_death = {
 }
 
 on_new_age = {
-	if = {
-		limit = { has_country_modifier = fee_por_henrique_naval_reforms }
-		remove_country_modifier = fee_por_henrique_naval_reforms
+	fee_on_new_age_mission_effect = yes
+	remove_country_modifier = fee_por_henrique_naval_reforms
+	remove_country_modifier = fee_france_scots_mercenaries
+	846 = { remove_province_modifier = fee_may_city_of_light }
+	random_province = {
+		limit = { has_province_modifier = fee_may_mightiest_tolla }
+		remove_province_modifier = fee_may_mightiest_tolla
 	}
-	if = {
-		limit = { has_country_modifier = fee_france_scots_mercenaries }
-		remove_country_modifier = fee_france_scots_mercenaries
-	}
-	846 = {
-		if = {
-			limit = { has_province_modifier = fee_may_city_of_light }
-			remove_province_modifier = fee_may_city_of_light
-		}
-	}
-	if = {
-		limit = {
-			any_province = { has_province_modifier = fee_may_mightiest_tolla }
-		}
-		random_province = {
-			limit = { has_province_modifier = fee_may_mightiest_tolla }
-			remove_province_modifier = fee_may_mightiest_tolla
-		}
-	}
-	519 = {
-		if = {
-			limit = { has_province_modifier = fee_dhundar_natural_philosophy }
-			remove_province_modifier = fee_dhundar_natural_philosophy
-		}
-	}
+	519 = { remove_province_modifier = fee_dhundar_natural_philosophy }
+	541 = { remove_province_modifier = fee_vij_where_king_and_deity_reside }
 }
 
 # country
@@ -366,6 +347,36 @@ on_new_monarch = {
 			duration = -1
 		}
 	}
+
+	if = {
+		limit = { tag = VIJ }
+		if = {
+			limit = { has_country_flag = fee_vij_scourge_of_the_deccan }
+			add_ruler_modifier = {
+				name = fee_vij_scourge_of_the_deccan_1
+				duration = -1
+			}
+			clr_country_flag = fee_vij_scourge_of_the_deccan
+			set_country_flag = fee_vij_scourge_of_the_deccan_1
+		}
+		else_if = {
+			limit = { has_country_flag = fee_vij_scourge_of_the_deccan_1 }
+			add_ruler_modifier = {
+				name = fee_vij_scourge_of_the_deccan_2
+				duration = -1
+			}
+			clr_country_flag = fee_vij_scourge_of_the_deccan_1
+			set_country_flag = fee_vij_scourge_of_the_deccan_2
+		}
+		else_if = {
+			limit = { has_country_flag = fee_vij_scourge_of_the_deccan_2 }
+			add_ruler_modifier = {
+				name = fee_vij_scourge_of_the_deccan_3
+				duration = -1
+			}
+			clr_country_flag = fee_vij_scourge_of_the_deccan_2
+		}
+	}
 }
 
 # province, general conversion through effects
@@ -381,7 +392,7 @@ on_province_culture_changed = {
 
 # FROM = old owner
 on_province_owner_change = {
-set_variable = { which = fee_adm_dev_improved value = 0 }
+	set_variable = { which = fee_adm_dev_improved value = 0 }
 	set_variable = { which = fee_dip_dev_improved value = 0 }
 	set_variable = { which = fee_mil_dev_improved value = 0 }
 	if = {
@@ -743,11 +754,11 @@ on_mil_development = {
 }
 
 on_startup = {
-if = {
+	if = {
 		limit = {
 			NOT = { has_global_flag = flavour_and_events_expanded_mod_active }
 		}
-				FEE_initiate_starting_countries = yes
+		FEE_initiate_starting_countries = yes
 	}
 	country_event = { id = flavour_and_events_expanded_events.1 } # set flag
 	country_event = { #set the meme flag
@@ -760,7 +771,7 @@ if = {
 		days = 30
 		random = 15
 	}
-	}
+}
 
 # ROOT = province, FROM = country
 on_trade_good_changed = {

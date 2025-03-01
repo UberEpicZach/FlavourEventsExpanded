@@ -1,0 +1,599 @@
+FEE_MUL_slot_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = { tag = MUL }
+
+	has_country_shield = yes
+
+	fee_mul_multani_tolerance = {
+		icon = mission_sufi_shrines
+		required_missions = { fee_mul_conquest_sind }
+		position = 3
+		provinces_to_highlight = { }
+		trigger = {
+			if = {
+				limit = { has_estate = estate_dhimmi }
+				OR = {
+					estate_loyalty = {
+						estate = estate_dhimmi
+						loyalty = 60
+					}
+					num_of_estate_privileges = {
+						estate = estate_dhimmi
+						value = 5
+					}
+				}
+			}
+			if = {
+				limit = { has_estate = estate_brahmins }
+				OR = {
+					estate_loyalty = {
+						estate = estate_brahmins
+						loyalty = 60
+					}
+					num_of_estate_privileges = {
+						estate = estate_brahmins
+						value = 5
+					}
+				}
+			}
+			religious_unity = 1
+			custom_trigger_tooltip = {
+				tooltip = MUG_1_toh
+				has_global_modifier_value = {
+					which = tolerance_heathen
+					value = 1
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = MUG_syncretism_3
+				duration = -1
+				desc = until_end_of_age_desc
+			}
+			define_advisor = {
+				type = theologian
+				skill = 3
+				culture = ROOT
+				religion = hinduism
+				cost_multiplier = 0.4
+			}
+		}
+	}
+
+	fee_mul_center_islamic_knowledge = {
+		icon = mission_vedic_education
+		required_missions = {
+			fee_mul_multani_tolerance
+			fee_mul_cities_saint
+		}
+		position = 5
+		provinces_to_highlight = { }
+		trigger = {
+			calc_true_if = {
+				amount = 2
+				is_ahead_of_time_in_technology = { tech = adm }
+				is_ahead_of_time_in_technology = { tech = dip }
+				is_ahead_of_time_in_technology = { tech = mil }
+			}
+			if = {
+				limit = { has_dlc = "Rule Britannia" }
+				innovativeness = 75
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = mlw_education
+				duration = -1
+				desc = until_end_of_age_desc
+			}
+			change_government_reform_progress = 50
+			add_ruler_personality = patron_of_arts_personality
+			change_adm = 2
+			change_heir_adm = 1
+			add_heir_personality = free_thinker_personality
+		}
+	}
+}
+
+FEE_MUL_slot_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = { tag = MUL }
+
+	has_country_shield = yes
+
+	fee_mul_conquest_sind = {
+		icon = mission_conquer_sindh_dlh
+		required_missions = { fee_mul_aftermath_of_coup }
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				area = sindh_area
+				area = northern_sindh_area
+			}
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			sindh_area = {
+				type = all
+				owned_by = ROOT	
+			}
+			northern_sindh_area = {
+				type = all
+				owned_by = ROOT	
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = dlh_sind_conquest_modifier
+				duration = 7300
+			}
+		}
+	}
+
+	fee_mul_cities_saint = {
+		icon = mission_sufism
+		position = 4
+		required_missions = {
+			fee_mul_conquest_sind
+			fee_mul_magnificent_frontier
+		}
+		provinces_to_highlight = {
+			OR = {
+				owned_by = ROOT
+				province_id = 505
+				province_id = 506
+			}
+			OR = {
+				NOT = { has_owner_religion = yes }
+				NOT = { has_tax_building_trigger = yes }
+				NOT = { development = 14 }
+			}
+			NOT = {
+				ROOT = {
+					num_of_owned_provinces_with = {
+						religion = ROOT
+						has_tax_building_trigger = yes
+						development = 14
+						value = 5
+					}
+				}
+			}
+		}
+		trigger = {
+			505 = {
+				has_owner_religion = yes
+				has_tax_building_trigger = yes
+				development = 14
+			}
+			506 = {
+				has_owner_religion = yes
+				has_tax_building_trigger = yes
+				development = 14
+			}
+			num_of_owned_provinces_with = {
+				religion = ROOT
+				has_tax_building_trigger = yes
+				development = 14
+				value = 5
+			}
+			if = {
+				limit = { religion_group = muslim }
+				OR = {
+					NOT = { piety = -0.33 }
+					piety = 0.75
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = turkoman_splendid_court
+				duration = -1
+				desc = until_end_of_age_desc
+			}
+			505 = {
+				if = {
+					limit = {
+						has_dlc = Leviathan
+						is_expanded_mod_active = { mod = great_monuments }
+						NOT = {
+							has_great_project = {
+								type = gme_shrine_lal_shahbaz_qalandar
+								tier = 3
+							}
+						}
+					}
+					add_great_project_tier = {
+						type = gme_shrine_lal_shahbaz_qalandar
+						tier = 1
+					}
+				}
+				else = {
+					add_base_tax = 1
+					add_or_upgrade_tax_building = yes
+				}
+			}
+			506 = {
+				if = {
+					limit = {
+						has_dlc = Leviathan
+						NOT = {
+							has_great_project = {
+								type = shah_rukn_e_alam_tomb
+								tier = 3
+							}
+						}
+					}
+					add_great_project_tier = {
+						type = shah_rukn_e_alam_tomb
+						tier = 1
+					}
+				}
+				else = {
+					add_base_tax = 1
+					add_or_upgrade_tax_building = yes
+				}
+			}
+		}
+	}
+}
+
+FEE_MUL_slot_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = { tag = MUL }
+
+	has_country_shield = yes
+
+	fee_mul_aftermath_of_coup = {
+		icon = mission_restore_rule_over_multan
+		position = 1
+		required_missions = { }
+		provinces_to_highlight = {
+			owned_by = ROOT
+			unrest = 0
+			is_in_capital_area = yes
+		}
+		trigger = {
+			is_year = 1446
+			NOT = {
+				capital_scope = {
+					area_for_scope_province = {
+						type = all
+						unrest = 0
+					}
+				}
+			}
+		}
+		effect = {
+			add_legitimacy_or_mil_power = { amount = 10 }
+			sind_sagar_area = { add_permanent_claim = ROOT }
+			lahore_area = { add_permanent_claim = ROOT }
+			sirhind_area = { add_permanent_claim = ROOT }
+			sindh_area = { add_permanent_claim = ROOT }
+			northern_sindh_area = { add_permanent_claim = ROOT }
+		}
+	}
+
+	fee_mul_magnificent_frontier = {
+		icon = mission_reclaim_lost_territory
+		position = 3
+		required_missions = {
+			fee_mul_conquest_sind
+			fee_mul_aftermath_of_coup
+			fee_mul_challenge_sultan
+		}
+		provinces_to_highlight = {
+			superregion = india_superregion
+			any_neighbor_province = { superregion = persia_superregion }
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			india_superregion = {
+				type = all
+				OR = {
+					owned_by = ROOT
+					NOT = {
+						any_neighbor_province = { superregion = persia_superregion }
+					}
+				}
+			}
+		}
+		effect = {
+			add_adm_power = 100
+			add_dip_power = 100
+			add_mil_power = 100
+			custom_tooltip = FEE_MUL_CLAIMS_PERSIA_BORDERING_INDIA_TT
+			hidden_effect = {
+				persia_superregion = {
+					limit = {
+						any_neighbor_province = { superregion = india_superregion }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+		}
+	}
+
+	fee_mul_multani_caravanserai = {
+		icon = mission_silk_road
+		position = 5
+		required_missions = {
+			fee_mul_magnificent_frontier
+			fee_mul_flourishing_traders
+		}
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					superregion = india_superregion
+					any_neighbor_province = { superregion = persia_superregion }
+				}
+				AND = {
+					superregion = persia_superregion
+					any_neighbor_province = { superregion = india_superregion }
+				}
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { has_trade_building_trigger = yes }
+				AND = {
+					NOT = { has_manufactory_trigger = yes }
+					NOT = {
+						ROOT = {
+							num_of_owned_provinces_with = {
+								value = 5
+								OR = {
+									india_superregion = {
+										any_neighbor_province = { superregion = persia_superregion }
+									}
+									persia_superregion = {
+										any_neighbor_province = { superregion = india_superregion }
+									}
+								}
+								has_manufactory_trigger = yes
+								has_trade_building_trigger = yes
+							}
+						}
+					}
+				}
+			}
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 5
+				custom_trigger_tooltip = {
+					tooltip = FEE_MUL_BORDERS_INDIA_PERSIA_TT
+					OR = {
+						india_superregion = {
+							any_neighbor_province = { superregion = persia_superregion }
+						}
+						persia_superregion = {
+							any_neighbor_province = { superregion = india_superregion }
+						}
+					}
+				}
+				has_manufactory_trigger = yes
+				has_trade_building_trigger = yes
+			}
+			india_superregion = {
+				type = all
+				custom_trigger_tooltip = {
+					tooltip = FEE_MUL_BORDERS_PERSIA_TRADE_BUILDING_TT
+					OR = {
+						NOT = {
+							any_neighbor_province = { superregion = persia_superregion }
+						}
+						AND = {
+							owned_by = ROOT
+							has_trade_building_trigger = yes
+						}
+					}
+				}
+			}
+			persia_superregion = {
+				type = all
+				custom_trigger_tooltip = {
+					tooltip = FEE_MUL_BORDERS_INDIA_TRADE_BUILDING_TT
+					OR = {
+						NOT = {
+							any_neighbor_province = { superregion = india_superregion }
+						}
+						AND = {
+							owned_by = ROOT
+							has_trade_building_trigger = yes
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = fee_mul_restored_caravanserai
+				duration = 36500
+			}
+			custom_tooltip = FEE_MUL_CARAVANSERAI_TT
+			tooltip = {
+				add_permanent_province_modifier = {
+					name = fee_mul_restored_caravanserai_province
+					duration = -1
+				}
+			}
+			hidden_effect = {
+				india_superregion = {
+					limit = {
+						any_neighbor_province = { superregion = persia_superregion }
+					}
+					add_permanent_province_modifier = {
+						name = fee_mul_restored_caravanserai_province
+						duration = -1
+					}
+				}
+				persia_superregion = {
+					limit = {
+						any_neighbor_province = { superregion = india_superregion }
+					}
+					add_permanent_province_modifier = {
+						name = fee_mul_restored_caravanserai_province
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+}
+
+FEE_MUL_slot_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = { tag = MUL }
+
+	has_country_shield = yes
+
+	fee_mul_challenge_sultan = {
+		icon = mission_assert_control_over_delhi
+		position = 2
+		required_missions = { fee_mul_aftermath_of_coup }
+		provinces_to_highlight = {
+			OR = {
+				area = sind_sagar_area
+				area = lahore_area
+				area = sirhind_area
+			}
+			NOT = { owned_by = ROOT }
+			NOT = {
+				ROOT = {
+					num_of_owned_provinces_with = {
+						value = 6
+						OR = {
+							area = sind_sagar_area
+							area = lahore_area
+							area = sirhind_area
+						}
+					}
+				}
+			}
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 6
+				OR = {
+					area = sind_sagar_area
+					area = lahore_area
+					area = sirhind_area
+				}
+			}
+		}
+		effect = {
+			add_adm_power = 100
+			upper_doab_area = { add_permanent_claim = ROOT }
+			kashmir_area = { add_permanent_claim = ROOT }
+		}
+	}
+
+	fee_mul_flourishing_traders = {
+		icon = mission_into_the_west
+		position = 4
+		required_missions = {
+			fee_mul_magnificent_frontier
+			fee_mul_challenge_sultan
+		}
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					province_id = 506
+					NOT = { owned_by = ROOT }
+				}
+				AND = {
+					province_id = 507
+					NOT = { has_most_province_trade_power = ROOT }
+				}
+			}
+		}
+		trigger = {
+			507 = { has_most_province_trade_power = ROOT }
+			506 = {
+				owned_by = ROOT
+				custom_trigger_tooltip = {
+					tooltip = FEE_MUL_25_TRADE_POWER_TT
+					variable_arithmetic_trigger = {
+						export_to_variable = {
+							which = this_trade_power
+							value = trigger_value:province_trade_power
+						}
+						check_variable = { which = this_trade_power value = 30 }
+					}
+				}
+			}
+		}
+		effect = {
+			define_advisor = {
+				type = trader
+				skill = 2
+				religion = ROOT
+				culture = ROOT
+				cost_multiplier = 0.50
+			}
+			capital_scope = {
+				add_or_upgrade_trade_building = yes
+				add_trade_node_income = 5
+				add_trade_modifier = {
+					who = ROOT
+					duration = 7300
+					power = 20
+					key = fee_mul_magnificent_frontier
+				}
+			}
+		}
+	}
+}
+
+FEE_MUL_slot_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = { tag = MUL }
+
+	has_country_shield = yes
+
+	fee_mul_sultanate_defeated = {
+		icon = mission_the_sultanate_restored
+		position = 3
+		required_missions = { fee_mul_challenge_sultan }
+		provinces_to_highlight = {
+			OR = {
+				AND = {
+					area = upper_doab_area
+					NOT = { owned_by = ROOT }
+				}
+				if = {
+					limit = {
+						exists = DLH
+						DLH = {
+							NOT = { is_subject_of = ROOT }
+						}
+					}
+					owned_by = DLH
+				}
+			}
+		}
+		trigger = {
+			OR = {
+				NOT = { exists = DLH }
+				overlord_of = DLH
+			}
+			upper_doab_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+
+		}
+	}
+}

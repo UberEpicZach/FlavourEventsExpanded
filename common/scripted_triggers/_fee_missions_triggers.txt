@@ -1,0 +1,26 @@
+fee_has_branching_missions = {
+	OR = {
+		has_mission = fee_vij_vijayanakara_iranuvam
+	}
+}
+
+fee_has_selected_a_branch = {
+	custom_trigger_tooltip = {
+		tooltip = has_selected_a_branch_tt
+		OR = {
+			AND = {
+				OR = {
+					has_country_flag = fee_vij_focus_artillery
+					has_country_flag = fee_vij_focus_cavalry
+				}
+				can_preview_mission_of_key_and_batch = { key = FEE_VIJ batch = $batch$ }
+			}
+		}
+	}
+}
+
+country_has_both_fee_vanilla_missions = {
+	OR = {
+		tag = VIJ
+	}
+}

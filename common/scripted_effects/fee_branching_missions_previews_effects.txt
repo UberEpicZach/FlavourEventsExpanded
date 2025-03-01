@@ -1,0 +1,53 @@
+fee_clear_all_branching_flags = {
+	if = {
+		limit = { can_preview_mission_of_key_and_batch = { key = FEE_VIJ batch = $batch$ } }
+		clr_preview_loc_branch = { key = FEE_VIJ batch = $batch$ }
+		clr_country_flag = fee_vij_focus_artillery
+		clr_country_flag = fee_vij_focus_cavalry
+	}
+}
+
+fee_select_current_branch = {
+	custom_tooltip = BYZ_end_preview
+	hidden_effect = { clr_country_flag = has_batch_$batch$_active }
+	if = { limit = { can_preview_mission_of_key_and_batch = { key = FEE_VIJ batch = $batch$ } } select_current_missions = { key = FEE_VIJ } }
+}
+
+fee_preview_mission_branch = {
+	fee_clear_all_branching_flags = { batch = $batch$ }
+	fee_preview_mission_branch_$branch$ = { batch = $batch$ }
+	hidden_effect = { swap_non_generic_missions = yes }
+}
+
+fee_preview_mission_branch_1 = {
+	if = {
+		limit = { can_preview_mission_of_key_and_batch = { key = FEE_VIJ batch = $batch$ } }
+		set_preview_loc_branch = { key = FEE_VIJ batch = $batch$ branch = 1 }
+		set_country_flag = fee_vij_focus_artillery
+		custom_tooltip = FEE_VIJ_FOCUS_ARTILLERY_PREVIEW_TT
+	}
+}
+
+fee_preview_mission_branch_2 = {
+	if = {
+		limit = { can_preview_mission_of_key_and_batch = { key = FEE_VIJ batch = $batch$ } }
+		set_preview_loc_branch = { key = FEE_VIJ batch = $batch$ branch = 2 }
+		set_country_flag = fee_vij_focus_cavalry
+		custom_tooltip = FEE_VIJ_FOCUS_CAVALRY_PREVIEW_TT
+	}
+}
+
+fee_preview_mission_branch_3 = {
+	# none
+}
+
+fee_preview_mission_branch_4 = {
+	# none
+}
+
+fee_preview_mission_branch_5 = {
+	# none
+}
+
+# Some might be empty on purpose, preview system only implemented for the sake of completion
+select_current_missions_FEE_VIJ = { }

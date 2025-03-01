@@ -109,3 +109,129 @@ fee_vij_achyutaraya_temple = {
 	local_development_cost = -0.10
 	religion = yes
 }
+
+# Mission Modifiers
+#1st
+fee_vij_navigadaprabhu = {
+	admiral_cost = -0.25
+}
+
+#2
+fee_vij_malabar_spice_trade = {
+	trade_goods_size_modifier = 0.20
+}
+fee_vij_city_spices = {
+	trade_value_modifier = 0.15
+	trade_goods_size_modifier = 0.10
+}
+fee_vij_indian_spice_market = {
+	local_build_cost = -0.25
+	local_development_cost_modifier = -0.05
+	trade_value = 1
+}
+fee_vij_architects_city_victory = {
+	local_build_cost = -0.20
+	local_great_project_upgrade_cost = -0.15
+	local_prosperity_growth = 0.7
+	institution_growth = 2
+}
+fee_vij_ministers = {
+	reform_progress_growth = 0.25
+	same_culture_advisor_cost = -0.15
+}
+
+#3
+fee_vij_trade_dominion = {
+	global_trade_power = 0.15
+}
+fee_vij_tamil_trader = {
+	ship_trade_power_modifier = 0.20
+	trade_steering = 0.10
+}
+fee_vij_patronising_kannada_literature = {
+	embracement_cost = -0.10
+	idea_cost = -0.10
+}
+fee_vij_amaranayaka_sainya = {
+	land_forcelimit_modifier = 0.25
+}
+fee_vij_hindu_cataphracts_ase = {
+	cavalry_shock = 0.25
+}
+fee_vij_hindu_cataphracts = {
+	cavalry_shock = 0.25
+	cav_to_inf_ratio = 0.20
+}
+fee_vij_gunpowder_empire = {
+	artillery_power = 0.10
+	artillery_level_modifier = 0.25
+}
+
+#4th
+fee_vij_center_production = {
+	trade_goods_size = 0.25
+	local_production_efficiency = 0.50
+}
+fee_vij_industrial_center = {
+	trade_goods_size = 0.50
+	local_production_efficiency = 1.0
+}
+fee_vij_scourge_of_the_deccan = {
+	monthly_splendor = 2
+	prestige = 2
+	legitimacy = 2
+	monthly_imperial_control = 0.20
+}
+fee_vij_scourge_of_the_deccan_1 = {
+	monthly_splendor = 1
+	prestige = 1
+	legitimacy = 1
+	monthly_imperial_control = 0.10
+}
+fee_vij_scourge_of_the_deccan_2 = {
+	monthly_splendor = 0.5
+	prestige = 0.5
+	legitimacy = 0.5
+	monthly_imperial_control = 0.05
+}
+fee_vij_scourge_of_the_deccan_3 = {
+	monthly_splendor = 0.25
+	prestige = 0.25
+	legitimacy = 0.25
+	monthly_imperial_control = 0.025
+}
+
+fee_vij_reddy_administration = {
+	global_autonomy = -0.025
+}
+fee_vij_ainnutruvar = {
+	trade_goods_size_modifier = 0.10
+}
+fee_vij_improved_fortifications = {
+	garrison_growth = 0.20
+	local_fort_maintenance_modifier = -0.25
+}
+
+fee_vij_increased_gunsmithing = {
+	artillery_cost = -0.15
+	artillery_barrage_cost = -0.10
+}
+fee_vij_elephant_stables = {
+	cavalry_cost = -0.10
+	cavalry_flanking = 0.25
+}
+
+#5th
+fee_vij_safe_trading_fairs = {
+	province_trade_power_modifier = 0.25
+	local_manpower_modifier = 0.25
+}
+
+# Mission Events
+fee_vij_deccan_under_one_banner = {
+	governing_capacity = 100
+	governing_capacity_modifier = 0.05
+}
+fee_vij_where_king_and_deity_reside = {
+	core_creation = -0.15
+}

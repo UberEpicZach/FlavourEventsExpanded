@@ -1,0 +1,944 @@
+FEE_YOR_slot_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = { tag = YOR }
+
+	has_country_shield = yes
+
+	fee_yor_mines_golkonda = {
+		icon = mission_growth_of_golcond
+		position = 2
+		required_missions = {
+			fee_yor_crossroads_andhra
+		}
+		provinces_to_highlight = {
+			area = golconda_area
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			golconda_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			country_event = { id = FEE_Andhra_Events.6 }
+			542 = {
+				add_province_modifier = {
+					name = mug_riches_of_golconda_modifier
+					duration = 10950
+				}
+			}
+		}
+	}
+
+	fee_yor_torquoise_throne = {
+		icon = mission_advance_to_kalyana
+		position = 4
+		required_missions = {
+			fee_yor_mines_golkonda
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = maidan_area
+				area = telingana_area
+			}
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			maidan_area = {
+				type = all
+				owned_by = ROOT
+			}
+			telingana_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			change_adm = 1
+			add_reform_progress_big_effect = yes
+		}
+	}
+
+	fee_yor_treaties_virtue = {
+		icon = mission_brahmin_administrators
+		position = 6
+		required_missions = { }
+		provinces_to_highlight = {
+			is_capital_of = ROOT
+			NOT = { num_of_times_improved = 2 }
+		}
+		trigger = {
+			has_adm_advisor = yes
+			has_dip_advisor = yes
+			has_mil_advisor = yes
+			capital_scope = { num_of_times_improved = 2 }
+		}
+		effect = {
+			if = {
+				limit = {
+					is_expanded_mod_active = { mod = historical_ideas }
+				}
+				add_country_modifier = {
+					name = fee_yor_purdhita_pradhani_sendapati_hie
+					duration = -1
+					desc = until_end_of_age_desc
+				}
+			}
+			else = {
+				add_adm_power = 100
+				add_country_modifier = {
+					name = fee_yor_purdhita_pradhani_sendapati
+					duration = -1
+					desc = until_end_of_age_desc
+				}
+			}
+			capital_scope = {
+				add_institution_embracement = {
+					which = renaissance
+					value = 75
+				}
+			}
+		}
+	}
+
+	fee_yor_telugu_literature = {
+		icon = mission_vedic_education
+		position = 8
+		required_missions = {
+			fee_yor_treaties_virtue
+		}
+		provinces_to_highlight = { }
+		trigger = {
+			has_adm_advisor_3 = yes
+			has_dip_advisor_3 = yes
+			has_mil_advisor_3 = yes
+			num_of_completed_idea_groups_by_category = {
+				amount = 1
+				type = adm
+			}
+		}
+		effect = {
+			change_government_reform_progress = 50
+			add_country_modifier = {
+				name = fee_yor_patronize_telugu_literature
+				duration = -1
+				desc = until_end_of_age_desc
+			}
+		}
+	}
+}
+
+FEE_YOR_slot_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = { tag = YOR }
+
+	has_country_shield = yes
+
+	fee_yor_gems_precious_stones = {
+		icon = mission_arabian_fort
+		position = 3
+		required_missions = {
+			fee_yor_mines_golkonda
+		}
+		provinces_to_highlight = {
+			has_mining_goods = yes
+			NOT = { owned_by = ROOT }
+			NOT = {
+				ROOT = {
+					development_in_provinces = {
+						value = 75
+						has_mining_goods = yes
+					}
+				}
+			}
+		}
+		trigger = {
+			development_in_provinces = {
+				value = 75
+				has_mining_goods = yes
+			}
+		}
+		effect = {
+			add_prestige_or_monarch_power = { amount = 25 }
+			add_legitimacy_or_mil_power = { amount = 30 }
+			add_splendor = 150
+		}
+	}
+
+	fee_yor_tanks_and_reservoirs = {
+		icon = mission_rule_the_garjats
+		position = 4
+		required_missions = {
+			fee_yor_rise_reddy
+		}
+		provinces_to_highlight = {
+			area_for_scope_province = {
+				any_neighbor_province = {
+					OR = {
+						is_capital_of = ROOT
+						area_for_scope_province = { is_capital_of = ROOT }
+					}
+				}
+			}
+			NOT = { is_sea = yes }
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+				NOT = { num_of_times_improved = 2 }
+				if = {
+					limit = { has_dlc = "Mandate of Heaven" }
+					NOT = { prosperity = 100 }
+				}
+				else = { devastation = 1 }
+			}
+		}
+		trigger = {
+			capital_scope = {
+				area_for_scope_province = {
+					type = all
+					any_neighbor_province = {
+						area_for_scope_province = {
+							type = all
+							owned_by = ROOT
+							num_of_times_improved = 2
+							if = {
+								limit = { has_dlc = "Mandate of Heaven" }
+								NOT = { prosperity = 100 }
+							}
+							else = { devastation = 1 }
+						}
+					}
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = FEE_ANDHRA_TANKS_RESERVOIRS_TT
+			tooltip = {
+				capital_scope = {
+					add_province_modifier = {
+						name = fee_yor_sagaras
+						duration = -1
+					}
+				}
+			}
+			hidden_effect = {
+				capital_scope = {
+					area = {
+						every_neighbor_province = {
+							area = {
+								add_province_modifier = {
+									name = fee_yor_sagaras
+									duration = -1
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+FEE_YOR_slot_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = { tag = YOR }
+
+	has_country_shield = yes
+
+	fee_yor_crossroads_andhra = {
+		icon = mission_deccanis
+		position = 1
+		required_missions = { }
+		trigger = {
+			army_size_percentage = 1
+		}
+		effect = {
+			capital_scope = {
+				area = {
+					if = {
+						limit = { owned_by = ROOT }
+						add_province_modifier = {
+							name = regimental_town
+							duration = 365
+						}
+					}
+					else = { add_core = ROOT }
+				}
+			}
+		}
+	}
+
+	fee_yor_gajapatis_threat = {
+		icon = mission_conquer_orissa_vij
+		position = 2
+		required_missions = {
+			fee_yor_crossroads_andhra
+		}
+		provinces_to_highlight = {
+			area = andhra_area
+			NOT = { owned_by = ROOT }
+		}
+		trigger = {
+			andhra_area = {
+				type = all
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_accepted_culture_or_dip_power = { culture = oriya }
+			give_claims = { area = orissa_area }
+			define_advisor = {
+				skill = 1
+				type = army_reformer
+				culture = oriya
+				cost_multiplier = 0.5
+				religion = ROOT
+			}
+		}
+	}
+
+	fee_yor_rise_reddy = {
+		icon = mission_gharbianss
+		position = 3
+		required_missions = {
+			fee_yor_mines_golkonda
+			fee_yor_gajapatis_threat
+			fee_yor_towards_the_city_of_victory
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = andhra_area
+				area = rayalaseema_area
+				area = north_carnatic_area
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		trigger = {
+			andhra_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			rayalaseema_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			north_carnatic_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			stability = 1
+			legitimacy_equivalent = 75
+			prestige = 50
+		}
+		effect = {
+			add_splendor = 300
+			add_ruler_modifier = {
+				name = fee_yor_sainyanayaka
+				duration = -1
+			}
+			custom_tooltip = FEE_ANDHRA_CLAIM_CAPITAL_BORDERING_AREAS_TT
+			hidden_effect = {
+				capital_scope = {
+					area = {
+						every_neighbor_province = {
+							area = { add_permanent_claim = ROOT }
+						}
+					}
+				}
+			}
+		}
+	}
+
+	fee_yor_south_indian_empire = {
+		icon = mission_persian_soldiers
+		position = 5
+		required_missions = {
+			fee_yor_torquoise_throne
+			# fee_yor_berar_horizon
+			# fee_yor_realm_of_the_koli
+			fee_yor_karnataka_samrajya_fall
+			fee_yor_rise_reddy
+		}
+		provinces_to_highlight = { }
+		trigger = {
+			total_development = 500
+			grown_by_states = 10
+		}
+		effect = {
+			add_country_modifier = {
+				name = fee_yor_protectors_india
+				duration = -1
+				desc = until_end_of_age_desc
+			}
+			capital_scope = {
+				add_base_tax = 4
+				add_base_production = 3
+				add_base_manpower = 2
+			}
+		}
+	}
+
+	fee_yor_imperial_capital = {
+		icon = mission_southern_frontier_dharma
+		position = 7
+		required_missions = {
+			fee_yor_dravidian_architecture
+			fee_yor_south_indian_empire
+			fee_yor_treaties_virtue
+		}
+		provinces_to_highlight = {
+			superregion = india_superregion
+			any_capital_province = {
+				is_capital_of = ROOT
+				PREV = { higher_development_than = PREV }
+			}
+		}
+		trigger = {
+			capital_scope = {
+				custom_trigger_tooltip = {
+					tooltip = FEE_NO_CAPITAL_IN_INDIA_BIGGER_THAN_ROOT_TT
+					NOT = {
+						india_superregion = { higher_development_than = PREV }
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = FEE_NO_COUNTRY_IN_INDIA_BIGGER_THAN_ROOT_TT
+				NOT = {
+					any_country = {
+						capital_scope = { superregion = india_superregion }
+						total_development = ROOT
+					}
+				}
+			}
+		}
+		effect = {
+			set_government_rank = 3
+			add_power_projection_mission = { amount = 20 }
+			if = {
+				limit = {
+					is_expanded_mod_active = { mod = governments }
+				}
+				add_country_modifier = {
+					name = fee_yor_glorious_dynasty_ge
+					duration = -1
+					desc = until_end_of_age_desc
+				}
+			}
+			else = {
+				add_country_modifier = {
+					name = fee_yor_glorious_dynasty
+					duration = -1
+					desc = until_end_of_age_desc
+				}
+			}
+		}
+	}
+}
+
+FEE_YOR_slot_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = { tag = YOR }
+
+	has_country_shield = yes
+
+	fee_yor_chola_traders = {
+		icon = mission_divert_trade_from_bengal
+		position = 3
+		required_missions = {
+			fee_yor_towards_the_city_of_victory
+		}
+		provinces_to_highlight = {
+			owned_by = ROOT
+			has_port = yes
+			province_has_center_of_trade_of_level = 1
+			NOT = { num_of_times_improved = 3 }
+			NOT = { base_production = 7 }
+			NOT = {
+				ROOT = {
+					num_of_owned_provinces_with = {
+						value = 3
+						province_has_center_of_trade_of_level = 1
+						has_port = yes
+						OR = {
+							num_of_times_improved = 3
+							base_production = 7
+						}
+					}
+				}
+			}
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 3
+				province_has_center_of_trade_of_level = 1
+				has_port = yes
+				OR = {
+					num_of_times_improved = 3
+					base_production = 7
+				}
+			}
+		}
+		effect = {
+			define_advisor = {
+				type = trader
+				skill = 2
+				discount = yes
+				cost_multiplier = 0.50
+				religion = ROOT
+				culture = ROOT
+			}
+			custom_tooltip = FEE_ANDHRA_CHOLA_TRADERS_TT
+			tooltip = {
+				add_or_upgrade_dock_building = yes
+				add_or_upgrade_shipyard_building = yes
+			}
+			custom_tooltip = FEE_ANDHRA_CHOLA_TRADERS_3_TT
+			tooltip = {
+				add_province_modifier = {
+					name = foreign_merchants_discriminated
+					duration = 7300
+				}
+			}
+			hidden_effect = {
+				pick_best_provinces = {
+					1 = yes
+					scope = every_owned_province
+					scale = higher_development_than
+					global_trigger = "
+						province_has_center_of_trade_of_level = 1
+						has_port = yes
+					"
+					event_target_name = fee_yor_port_target
+				}
+				event_target:fee_yor_port_target_1 = {
+					add_or_upgrade_dock_building = yes
+					add_or_upgrade_shipyard_building = yes
+				}
+				set_variable = {
+					which = fee_yor_port_targets
+					value = 3
+				}
+				while = {
+					limit = {
+						check_variable = {
+							which = fee_yor_port_targets
+							value = 0
+						}
+					}
+					random_owned_province = {
+						limit = {
+							NOT = { has_province_modifier = foreign_merchants_discriminated }
+							province_has_center_of_trade_of_level = 1
+							has_port = yes
+							OR = {
+								num_of_times_improved = 3
+								base_production = 7
+							}
+						}
+						add_province_modifier = {
+							name = foreign_merchants_discriminated
+							duration = 7300
+						}
+					}
+					change_variable = {
+						which = fee_yor_port_targets
+						value = -1
+					}
+				}
+			}
+		}
+	}
+
+	fee_yor_kondavidu_fortifications = {
+		icon = mission_fortify_mandu
+		position = 4
+		required_missions = {
+			fee_yor_rise_reddy
+		}
+		provinces_to_highlight = {
+			has_fort_building_trigger = yes
+			owned_by = ROOT
+			NOT = { num_of_times_improved = 3 }
+			NOT = {
+				ROOT = {
+					num_of_owned_provinces_with = {
+						value = 5
+						has_fort_building_trigger = yes
+						num_of_times_improved = 3
+					}
+				}
+			}
+		}
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 5
+				has_fort_building_trigger = yes
+				num_of_times_improved = 3
+			}
+		}
+		effect = {
+			define_advisor = {
+				type = fortification_expert
+				skill = 2
+				discount = yes
+				cost_multiplier = 0.50
+				religion = ROOT
+				culture = ROOT
+			}
+			custom_tooltip = FEE_ANDHRA_HIGHEST_DEV_FORT_TT
+			tooltip = {
+				add_or_upgrade_manpower_building = yes
+				add_or_upgrade_forcelimit_building = yes
+			}
+			custom_tooltip = FEE_ANDHRA_IMPROVED_FORTS_TT
+			tooltip = {
+				add_province_modifier = {
+					name = local_fortress
+					duration = -1
+				}
+			}
+			hidden_effect = {
+				pick_best_provinces = {
+					1 = yes
+					scope = every_owned_province
+					scale = higher_development_than
+					global_trigger = "
+						has_fort_building_trigger = yes
+						num_of_times_improved = 3
+					"
+					event_target_name = fee_yor_fort_target
+				}
+				event_target:fee_yor_fort_target_1 = {
+					add_or_upgrade_manpower_building = yes
+					add_or_upgrade_forcelimit_building = yes
+				}
+				set_variable = {
+					which = fee_yor_fort_target
+					value = 5
+				}
+				while = {
+					limit = {
+						check_variable = {
+							which = fee_yor_fort_target
+							value = 0
+						}
+					}
+					random_owned_province = {
+						limit = {
+							NOT = { has_province_modifier = local_fortress }
+							has_fort_building_trigger = yes
+							num_of_times_improved = 3
+						}
+						add_province_modifier = {
+							name = local_fortress
+							duration = -1
+						}
+					}
+					change_variable = {
+						which = fee_yor_fort_target
+						value = -1
+					}
+				}
+			}
+		}
+	}
+
+	fee_yor_gunpowder_empire = {
+		icon = mission_gunpowder_warfare
+		position = 6
+		required_missions = {
+			fee_yor_south_indian_empire
+			fee_yor_fourfold_divisions
+		}
+		provinces_to_highlight = {
+			superregion = india_superregion
+			owner = {
+				NOT = { tag = ROOT }
+				army_size = ROOT
+			}
+		}
+		trigger = {
+			monthly_mil = 9
+			has_mil_advisor_3 = yes
+			NOT = {
+				any_country = {
+					capital_scope = { superregion = india_superregion }
+					army_size = ROOT
+				}
+			}
+		}
+		effect = {
+			add_army_tradition_or_mil_power = { amount = 15 }
+			add_army_professionalism = 0.15
+		}
+	}
+}
+
+FEE_YOR_slot_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = { tag = YOR }
+
+	has_country_shield = yes
+
+	fee_yor_towards_the_city_of_victory = {
+		icon = mission_the_battle_for_raichur
+		position = 2
+		required_missions = {
+			fee_yor_crossroads_andhra
+		}
+		provinces_to_highlight = {
+			OR = {
+				area = rayalaseema_area
+				area = north_carnatic_area
+			}
+			NOT = { owned_by = ROOT }
+			NOT = { province_id = 541 }
+		}
+		trigger = {
+			rayalaseema_area = {
+				type = all
+						is_core = ROOT
+						owned_by = ROOT
+			}
+			north_carnatic_area = {
+				type = all
+				OR = {
+					province_id = 541
+					AND = {
+						is_core = ROOT
+						owned_by = ROOT
+					}
+				}
+			}
+		}
+		effect = {
+			add_permanent_claim = 541
+			add_prestige_or_monarch_power = { amount = 15 }
+			# custom_tooltip = FEE_ANDHRA_SIEGE_VIJI_TT
+		}
+	}
+
+	fee_yor_karnataka_samrajya_fall = {
+		icon = mission_city_of_victory_bah
+		position = 4
+		required_missions = {
+			fee_yor_towards_the_city_of_victory
+		}
+		provinces_to_highlight = {
+			province_id = 541
+			OR = {
+				NOT = { is_core = ROOT }
+				NOT = { owned_by = ROOT }
+			}
+		}
+		trigger = {
+			owns_core_province = 541
+		}
+		effect = {
+			541 = {
+				if = {
+					limit = {
+						has_dlc = "Leviathan"
+						NOT = {
+							has_great_project = {
+								type = hampi
+								tier = 3
+							}
+						}
+					}
+					add_great_project_tier = {
+						type = hampi
+						tier = 1
+					}
+				}
+				else = {
+					add_base_tax = 3
+					add_base_production = 2
+					add_base_manpower = 1
+				}
+			}
+		}
+	}
+
+	fee_yor_fourfold_divisions = {
+		icon = mission_integrate_the_purbias
+		position = 5
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = {
+			monthly_mil = 9
+			has_mil_advisor = yes
+			OR = {
+				army_size_percentage = 1
+				manpower_percentage = 0.75
+			}
+		}
+		effect = {
+			capital_scope = {
+				add_or_upgrade_manpower_building = yes
+				add_or_upgrade_forcelimit_building = yes
+			}
+			add_country_modifier = {
+				name = MUG_indian_recruitment
+				duration = 9125 
+			}
+		}
+	}
+
+	fee_yor_dravidian_architecture = {
+		icon = mission_develop_the_capital
+		position = 6
+		required_missions = { }
+		provinces_to_highlight = { }
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 5
+				num_of_buildings_in_province = 3
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = fee_yor_builders
+				duration = 7300
+			}
+		}
+	}
+
+	fee_yor_patrons_of_dharma = {
+		icon = mission_patronize_local_gods
+		position = 8
+		required_missions = {
+			fee_yor_dravidian_architecture
+		}
+		provinces_to_highlight = {
+			if = {
+				limit = { has_dlc = Leviathan }
+				if = {
+					limit = {
+						is_expanded_mod_active = { mod = great_monuments }
+					}
+					OR = {
+						province_id = 541
+						province_id = 545
+						province_id = 2026
+						province_id = 4425
+						province_id = 2085
+					}
+					NOT = {
+						has_great_project = {
+							type = any
+							tier = 2
+						}
+					}
+				}
+				else = {
+					OR = {
+						province_id = 541
+						province_id = 545
+						province_id = 2026
+					}
+					NOT = {
+						has_great_project = {
+							type = any
+							tier = 2
+						}
+					}
+				}
+			}
+		}
+		trigger = {
+			if = {
+				limit = { has_dlc = Leviathan }
+				if = {
+					limit = {
+						is_expanded_mod_active = { mod = great_monuments }
+					}
+					calc_true_if = {
+						amount = 3
+						541 = {
+							has_great_project = {
+								type = hampi
+								tier = 2
+							}
+						}
+						545 = {
+							has_great_project = {
+								type = ellora_caves
+								tier = 2
+							}
+						}
+						2026 = {
+							has_great_project = {
+								type = chola_temples
+								tier = 2
+							}
+						}
+						4425 = {
+							has_great_project = {
+								type = gme_nagarjunakonda
+								tier = 2
+							}
+						}
+						2085 = {
+							has_great_project = {
+								type = gme_ranganathaswamy_temple
+								tier = 2
+							}
+						}
+					}
+				}
+				else = {
+					541 = {
+						has_great_project = {
+							type = hampi
+							tier = 2
+						}
+					}
+					545 = {
+						has_great_project = {
+							type = ellora_caves
+							tier = 2
+						}
+					}
+					2026 = {
+						has_great_project = {
+							type = chola_temples
+							tier = 2
+						}
+					}
+				}
+			}
+			else = {
+				num_of_owned_provinces_with = {
+					value = 10
+					has_tax_building_trigger = yes
+					num_of_times_improved_by_owner = 3
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = fee_yor_dharmic_synchretism
+				duration = -1
+			}
+		}
+	}
+}

@@ -1,0 +1,46 @@
+fee_on_new_age_mission_effect = {
+	if = {
+		limit = { is_or_was_tag = { tag = ASS } }
+		remove_country_modifier = fee_ass_rebuilding_valley_brahmaputra_hie
+		remove_country_modifier = fee_ass_rebuilding_valley_brahmaputra
+		remove_country_modifier = fee_ass_patra_mantris
+		remove_country_modifier = TIM_gunpowder_empire
+	}
+	4483 = { remove_province_modifier = fee_ass_padmasambhava_hidden_valley }
+	571 = { remove_province_modifier = fee_ass_kamakhya_temple }
+	677 = { remove_province_modifier = fee_ass_potala_palace }
+	if = {
+		limit = { is_or_was_tag = { tag = YOR } }
+		remove_country_modifier = fee_yor_purdhita_pradhani_sendapati_hie
+		remove_country_modifier = fee_yor_purdhita_pradhani_sendapati
+		remove_country_modifier = fee_yor_patronize_telugu_literature
+		remove_country_modifier = fee_yor_protectors_india
+		remove_country_modifier = fee_yor_glorious_dynasty_ge
+		remove_country_modifier = fee_yor_glorious_dynasty
+	}
+	if = {
+		limit = { is_or_was_tag = { tag = DGL } }
+		remove_country_modifier = fee_dgl_cowrie_trader
+		remove_country_modifier = thalassocracy
+		remove_country_modifier = fee_dgl_the_rope_industry
+		remove_country_modifier = fee_dgl_oceaninc_supremacy
+	}
+	if = {
+		limit = { is_or_was_tag = { tag = MUL } }
+		remove_country_modifier = MUG_syncretism_3
+		remove_country_modifier = mlw_education
+		remove_country_modifier = turkoman_splendid_court
+	}
+	if = {
+		limit = { is_or_was_tag = { tag = VIJ } }
+		remove_country_modifier = fee_vij_navigadaprabhu
+		remove_country_modifier = fee_vij_trade_dominion
+		remove_country_modifier = fee_vij_patronising_kannada_literature
+		remove_country_modifier = fee_vij_amaranayaka_sainya
+		remove_country_modifier = fee_vij_increased_gunsmithing
+		remove_country_modifier = fee_vij_elephant_stables
+		remove_country_modifier = fee_vij_gunpowder_empire
+		remove_country_modifier = fee_vij_hindu_cataphracts_ase
+		remove_country_modifier = fee_vij_hindu_cataphracts
+	}
+}

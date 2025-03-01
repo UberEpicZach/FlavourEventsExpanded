@@ -58,4 +58,9 @@ spriteTypes = {
 		textureFile = "gfx/interface/fee_heir_education_info_mil_button.dds"
 		transparencecheck = yes
 	}
+	# Spwa Missions
+	spriteType = {
+		name = "GFX_fee_swap_missions_open_button"
+		textureFile = "gfx/interface/fee_swap_missions_open_button.dds"
+	}
 }
