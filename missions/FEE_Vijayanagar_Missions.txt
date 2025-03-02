@@ -12,7 +12,7 @@ FEE_VIJ_slot_1 = {
 
 	has_country_shield = yes
 	
-	fee_vij_south_indian_navy = {
+	fee_vij_waves_vijyayanagar = {
 		icon = mission_grand_bengali_shipyards
 		required_missions = { }
 		position = 4
@@ -89,7 +89,7 @@ FEE_VIJ_slot_1 = {
 	fee_vij_city_victory = {
 		icon = mission_city_of_victory_bah
 		required_missions = {
-			fee_vij_wonderous_palace
+			fee_vij_seat_raja
 		}
 		position = 8
 		provinces_to_highlight = {
@@ -200,10 +200,10 @@ FEE_VIJ_slot_2 = {
 
 	has_country_shield = yes
 
-	fee_vij_malabar_coast = {
+	fee_vij_gateway_western_seas = {
 		icon = mission_secure_the_malabar_coast
 		required_missions = {
-			fee_vij_coromandel_flow
+			fee_vij_guardians_coromandel
 		}
 		position = 2
 		provinces_to_highlight = {
@@ -226,10 +226,10 @@ FEE_VIJ_slot_2 = {
 		}
 	}
 
-	fee_vij_threehundred_ports = {
+	fee_vij_three_hundred_ports = {
 		icon = control_the_means_of_transaction
 		required_missions = {
-			fee_vij_malabar_coast
+			fee_vij_gateway_western_seas
 		}
 		position = 3
 		provinces_to_highlight = {
@@ -285,10 +285,10 @@ FEE_VIJ_slot_2 = {
 		}
 	}
 
-	fee_vij_spice_trader = {
+	fee_vij_keepers_spice_riches = {
 		icon = mission_dominate_persian_gulf
 		required_missions = {
-			fee_vij_threehundred_ports
+			fee_vij_three_hundred_ports
 			fee_vij_south_indian_trade
 		}
 		position = 4
@@ -328,11 +328,11 @@ FEE_VIJ_slot_2 = {
 		}
 	}
 
-	fee_vij_spice_malaccan_spices = {
+	fee_vij_rajendra_legacy = {
 		icon = mission_rajendras_ambition
 		required_missions = {
-			fee_vij_south_indian_navy
-			fee_vij_spice_trader
+			fee_vij_waves_vijyayanagar
+			fee_vij_keepers_spice_riches
 		}
 		position = 5
 		provinces_to_highlight = {
@@ -409,7 +409,7 @@ FEE_VIJ_slot_2 = {
 		}
 	}
 
-	fee_vij_wonderous_palace = {
+	fee_vij_seat_raja = {
 		icon = mission_develop_the_capital
 		required_missions = { }
 		position = 7
@@ -441,7 +441,7 @@ FEE_VIJ_slot_2 = {
 	fee_vij_administration_empire = {
 		icon = mission_patronize_sufi_scholars
 		required_missions = {
-			fee_vij_wonderous_palace
+			fee_vij_seat_raja
 		}
 		position = 9
 		trigger = {
@@ -449,7 +449,7 @@ FEE_VIJ_slot_2 = {
 			NOT = { all_estates_influence = { amount = 70 } }
 		}
 		effect = {
-			add_mana_scaled_on_monthly_monarch_power = yes
+			add_mana_scaled_on_monthly_mana = yes
 			add_country_modifier = {
 				name = fee_vij_ministers
 				duration = 9125
@@ -457,9 +457,9 @@ FEE_VIJ_slot_2 = {
 		}
 	}
 
-	fee_vij_iranuva_atcerppu = {
+	fee_vij_legions_deccan = {
 		icon = mission_rajput_trade_guilds
-		required_missions = { fee_vij_vijayanakara_iranuvam }
+		required_missions = { fee_vij_guardians_empire }
 		position = 11
 		provinces_to_highlight = {
 			owned_by = ROOT
@@ -526,7 +526,7 @@ FEE_VIJ_slot_3 = {
 
 	has_country_shield = yes
 
-	fee_vij_coromandel_flow = {
+	fee_vij_guardians_coromandel = {
 		icon = mission_gharbianss
 		required_missions = {  }
 		position = 1
@@ -575,10 +575,10 @@ FEE_VIJ_slot_3 = {
 		}
 	}
 
-	fee_vij_ilankai = {
+	fee_vij_jewel_ceylon = {
 		icon = mission_conquer_lanka
 		required_missions = {
-			fee_vij_coromandel_flow
+			fee_vij_guardians_coromandel
 		}
 		position = 2
 		provinces_to_highlight = {
@@ -606,8 +606,8 @@ FEE_VIJ_slot_3 = {
 	fee_vij_south_indian_trade = {
 		icon = mission_south_indian_trade
 		required_missions = {
-			fee_vij_ilankai
-			fee_vij_malabar_coast
+			fee_vij_jewel_ceylon
+			fee_vij_gateway_western_seas
 			fee_vij_hindu_princedoms
 		}
 		position = 3
@@ -665,7 +665,7 @@ FEE_VIJ_slot_3 = {
 		}
 	}
 
-	fee_vij_machilipatnam_minerals = {
+	fee_vij_glittering_wealth = {
 		icon = mission_modernize_production
 		required_missions = { fee_vij_south_indian_trade }
 		position = 4
@@ -723,7 +723,7 @@ FEE_VIJ_slot_3 = {
 
 	fee_vij_gem_cutting_industries = {
 		icon = mission_industrialize_bengal
-		required_missions = { fee_vij_machilipatnam_minerals }
+		required_missions = { fee_vij_glittering_wealth }
 		position = 5
 		provinces_to_highlight = {
 			any_trade_node_member_province = { province_id = 1340 }
@@ -777,7 +777,7 @@ FEE_VIJ_slot_3 = {
 	fee_vij_rivaling_tamil_kings = {
 		icon = mission_indian_trade_company
 		required_missions = {
-			fee_vij_spice_malaccan_spices
+			fee_vij_rajendra_legacy
 			fee_vij_vijayanagari_silk_weaving
 			fee_vij_gem_cutting_industries
 		}
@@ -838,7 +838,7 @@ FEE_VIJ_slot_3 = {
 	fee_vij_kannada_literature = {
 		icon = mission_vedic_education
 		required_missions = {
-			fee_vij_wonderous_palace
+			fee_vij_seat_raja
 		}
 		position = 8
 		provinces_to_highlight = {
@@ -870,7 +870,7 @@ FEE_VIJ_slot_3 = {
 		}
 	}
 
-	fee_vij_vijayanakara_iranuvam = {
+	fee_vij_guardians_empire = {
 		icon = mission_invade_the_deccan_ori
 		required_missions = { }
 		position = 10
@@ -923,8 +923,8 @@ FEE_VIJ_slot_branching_3 = {
 	fee_vij_branching_2 = {
 		icon = mission_unknown_mission
 		required_missions = {
-			fee_vij_iranuva_atcerppu
-			fee_vij_vijayanakara_iranuvam
+			fee_vij_legions_deccan
+			fee_vij_guardians_empire
 			fee_vij_branching_1
 		}
 		position = 12
@@ -956,11 +956,11 @@ FEE_VIJ_slot_artillery_3 = {
 	}
 	has_country_shield = yes
 
-	fee_vij_deccani_gunpowder_empire = {
+	fee_vij_flame_of_deccan = {
 		icon = mission_guns_of_urban
 		required_missions = {
-			fee_vij_iranuva_atcerppu
-			fee_vij_vijayanakara_iranuvam
+			fee_vij_legions_deccan
+			fee_vij_guardians_empire
 			fee_vij_study_persian_gunsmithing
 		}
 		position = 12
@@ -1003,12 +1003,12 @@ FEE_VIJ_slot_cavalry_3 = {
 	}
 	has_country_shield = yes
 
-	fee_vij_rivaling_deccani_cataphratcs = {
+	fee_vij_mounted_behemoths = {
 		icon = mission_protect_albania
 		required_missions = {
-			fee_vij_iranuva_atcerppu
-			fee_vij_vijayanakara_iranuvam
-			fee_vij_anegala_yuddha
+			fee_vij_legions_deccan
+			fee_vij_guardians_empire
+			fee_vij_tusks_victory
 		}
 		position = 12
 		provinces_to_highlight = { }
@@ -1075,7 +1075,7 @@ FEE_VIJ_slot_4 = {
 	fee_vij_hindu_princedoms = {
 		icon = mission_conquer_andhra_vij
 		required_missions = {
-			fee_vij_coromandel_flow
+			fee_vij_guardians_coromandel
 		}
 		position = 2
 		provinces_to_highlight = {
@@ -1352,7 +1352,7 @@ FEE_VIJ_slot_branching_4 = {
 	
 	fee_vij_branching_1 = {
 		icon = mission_unknown_mission
-		required_missions = { fee_vij_vijayanakara_iranuvam }
+		required_missions = { fee_vij_guardians_empire }
 		position = 11
 		provinces_to_highlight = { }
 		trigger = {
@@ -1384,7 +1384,7 @@ FEE_VIJ_slot_artillery_4 = {
 
 	fee_vij_study_persian_gunsmithing = {
 		icon = mission_gunpowder_warfare
-		required_missions = { fee_vij_vijayanakara_iranuvam }
+		required_missions = { fee_vij_guardians_empire }
 		position = 11
 		provinces_to_highlight = {
 			owned_by = ROOT
@@ -1486,9 +1486,9 @@ FEE_VIJ_slot_cavalry_4 = {
 	}
 	has_country_shield = yes
 
-	fee_vij_anegala_yuddha = {
+	fee_vij_tusks_victory = {
 		icon = mission_subah_of_ayuddhya
-		required_missions = { fee_vij_vijayanakara_iranuvam }
+		required_missions = { fee_vij_guardians_empire }
 		position = 11
 		provinces_to_highlight = {
 			OR = {

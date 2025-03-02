@@ -289,15 +289,36 @@ on_monarch_death = {
 
 on_new_age = {
 	fee_on_new_age_mission_effect = yes
-	remove_country_modifier = fee_por_henrique_naval_reforms
-	remove_country_modifier = fee_france_scots_mercenaries
-	846 = { remove_province_modifier = fee_may_city_of_light }
+	if = {
+		limit = { has_country_modifier = fee_por_henrique_naval_reforms }
+		remove_country_modifier = fee_por_henrique_naval_reforms
+	}
+	if = {
+		limit = { has_country_modifier = fee_france_scots_mercenaries }
+		remove_country_modifier = fee_france_scots_mercenaries
+	}
+	if = {
+		limit = {
+			846 = { has_province_modifier = fee_may_city_of_light }
+		}
+		846 = { remove_province_modifier = fee_may_city_of_light }
+	}
 	random_province = {
 		limit = { has_province_modifier = fee_may_mightiest_tolla }
 		remove_province_modifier = fee_may_mightiest_tolla
 	}
-	519 = { remove_province_modifier = fee_dhundar_natural_philosophy }
-	541 = { remove_province_modifier = fee_vij_where_king_and_deity_reside }
+	if = {
+		limit = {
+			519 = { has_province_modifier = fee_dhundar_natural_philosophy }
+		}
+		519 = { remove_province_modifier = fee_dhundar_natural_philosophy }
+	}
+	if = {
+		limit = {
+			541 = { has_province_modifier = fee_vij_where_king_and_deity_reside }
+		}
+		541 = { remove_province_modifier = fee_vij_where_king_and_deity_reside }
+	}
 }
 
 # country
