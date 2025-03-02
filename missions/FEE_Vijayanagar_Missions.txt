@@ -599,7 +599,7 @@ FEE_VIJ_slot_3 = {
 			}
 		}
 		effect = {
-			country_event = { id = FEE_Vijayanagar_Events.10 }
+			country_event = { id = FEE_Vijayanagar_Events.10 days = 5 }
 		}
 	}
 

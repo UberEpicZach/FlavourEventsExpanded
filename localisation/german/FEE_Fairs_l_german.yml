@@ -140,7 +140,9 @@
  FEE_FAIRS_CHOSE_PROVINCE_TT: "The Trading Caravans and Fairs have chosen [event_target_fee_fair_province.GetName] to host the next fair!"
  FEE_ORIGIN_TRADING_FAIRS_TT: "Every Province that was the §YSTARTING§! holder of §MTrading Fair§! will gain:"
 
- FEE_FAIR_STARTED_CHANGED_OWNER_TT: "This Fair started in a province after it changed ownership, this can cause some bugs, that's why you are reading this. \n If you are 100% sure this was not the case {the province still had the modifier related to the fair} report it to Melvasul of the Expanded Mod Family discord server."
+ FEE_FAIR_STARTED_CHANGED_OWNER_TT: "This Fair started in a province after it changed ownership, this can cause some bugs, that's why you are reading this. \n If you are 100% sure this was not the case {the province still had the modifier related to the fair} report it to Melvasul in the Expanded Mod Family discord server."
+
+ FEE_FAIRS_BETTER_OUTCOME_TT: "Trading Fairs will secure a better outcome."
 
  #
  fee_fair_decisions_title: "£icon_trade_power£ §MTrading Fair Explanation§!"

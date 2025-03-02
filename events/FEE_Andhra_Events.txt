@@ -669,10 +669,10 @@ country_event = {
 		}
 		if = {
 			limit = {
+				exists = VIJ
 				VIJ = {
-					exists = yes
-					alliance_with = YOR
 					NOT = { has_guaranteed = YOR }
+					NOT = { alliance_with = YOR }
 				}
 			}
 			VIJ = {
@@ -682,7 +682,6 @@ country_event = {
 				}
 			}
 		}
-		hidden_effect = { set_global_flag = fee_andhra_gajapati_wars }
 	}
 
 	option = {
