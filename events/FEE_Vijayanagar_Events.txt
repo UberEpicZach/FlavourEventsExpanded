@@ -1190,11 +1190,18 @@ country_event = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
+		NOT = {
+			andhra_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
 		any_owned_province = {
 			any_neighbor_province = {
 				OR = {
 					area = orissa_area
 					area = jharkhand_area
+					area = andhra_area
 				}
 				NOT = { owned_by = ROOT }
 			}
@@ -1213,7 +1220,27 @@ country_event = {
 
 		add_mil_power = -25
 		orissa_area = { add_permanent_claim = ROOT }
+		andhra_area = { add_permanent_claim = ROOT }
 		jharkhand_area = { add_permanent_claim = ROOT }
+		if = {
+			limit = {
+				exists = ORI
+				ORI = {
+					num_of_provinces_owned_or_owned_by_subjects_with = {
+						value = 10
+						OR = {
+							area = orissa_area
+							area = jharkhand_area
+							area = andhra_area
+						}
+					}
+				}
+			}
+			declare_war_with_cb = {
+				casus_belli = cb_annex
+				who = ORI
+			}
+		}
 	}
 
 	option = {
