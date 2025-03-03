@@ -652,15 +652,16 @@ FEE_VIJ_slot_3 = {
 			}
 		}
 		effect = {
-			set_country_flag = vij_trade_flag
-			country_event = {
-				id = flavor_vij.17
-				days = 3
-			}
 			add_country_modifier = {
 				name = fee_vij_trade_dominion
 				duration = -1
 				desc = until_end_of_age_desc
+			}
+			539 = {
+				add_province_modifier = {
+					name = "pulicat_booming"
+					duration = 3650
+				}
 			}
 		}
 	}
