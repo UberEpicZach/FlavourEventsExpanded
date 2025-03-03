@@ -671,7 +671,7 @@ FEE_VIJ_slot_3 = {
 		position = 4
 		provinces_to_highlight = {
 			province_belongs_trade_node = { center = 1340 }
-			has_gems_goods = yes
+			has_gems_pearls_good = yes
 			NOT = { owned_by = ROOT }
 			NOT = {
 				ROOT = {
@@ -687,7 +687,7 @@ FEE_VIJ_slot_3 = {
 			development_in_provinces = {
 				province_belongs_trade_node = { center = 1340 }
 				value = 50
-				trade_goods = gems
+				has_gems_pearls_good = yes
 			}
 		}
 		effect = {
@@ -705,7 +705,10 @@ FEE_VIJ_slot_3 = {
 					scope = every_owned_province
 					scale = higher_development_than
 					global_trigger = "
-					trade_goods = gems
+					OR = {
+						trade_goods = gems
+						trade_goods = pearl
+					}
 					province_belongs_trade_node = { center = 1340 }
 					"
 					event_target_name = fee_vij_gem_center
@@ -726,8 +729,8 @@ FEE_VIJ_slot_3 = {
 		required_missions = { fee_vij_glittering_wealth }
 		position = 5
 		provinces_to_highlight = {
-			any_trade_node_member_province = { province_id = 1340 }
-			trade_goods = gems
+			province_belongs_trade_node = { center = 1340 }
+			has_gems_pearls_good = yes
 			OR = {
 				NOT = { owned_by = ROOT }
 				NOT = { has_manufactory_trigger = yes }
@@ -735,9 +738,9 @@ FEE_VIJ_slot_3 = {
 			NOT = {
 				ROOT = {
 					development_in_provinces = {
-						any_trade_node_member_province = { province_id = 1340 }
+						province_belongs_trade_node = { center = 1340 }
 						value = 100
-						has_gems_goods = yes
+						has_gems_pearls_good = yes
 					}
 				}
 			}
@@ -746,7 +749,7 @@ FEE_VIJ_slot_3 = {
 			development_in_provinces = {
 				any_trade_node_member_province = { province_id = 1340 }
 				value = 100
-				has_gems_goods = yes
+				has_gems_pearls_good = yes
 				has_manufactory_trigger = yes
 			}
 			production_leader = { trade_goods = gems }
@@ -760,7 +763,7 @@ FEE_VIJ_slot_3 = {
 		effect = {
 			add_years_of_owned_provinces_production_income = {
 				years = 1
-				trigger = { trade_goods = gems }
+				trigger = { has_gems_pearls_good = yes }
 			}
 			random_owned_province = {
 				limit = { has_province_modifier = fee_vij_center_production }

@@ -721,7 +721,7 @@ country_event = {
 		add_army_tradition = -10
 		add_country_modifier = {
 			name = fee_vij_branch_focus
-			duration = -1
+			duration = 3650
 		}
 	}
 
