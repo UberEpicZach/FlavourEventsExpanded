@@ -878,7 +878,6 @@ FEE_VIJ_slot_3 = {
 		trigger = {
 			has_mil_advisor_2 = yes
 			has_completed_idea_group_of_category = { mil_ideas = yes }
-			NOT = { full_idea_group = naval_ideas }
 		}
 		effect = {
 			add_army_tradition_or_mil_power = { amount = 15 }
