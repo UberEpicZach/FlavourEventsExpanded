@@ -25,10 +25,13 @@ has_mining_goods = {
 	}
 }
 
-has_gems_goods = {
-	OR = {
-		trade_goods = gems
-	}
+has_gems_pearls_goods = {
+    OR = {
+        trade_goods = gems
+
+        # TGE Goods
+        trade_goods = pearl
+    }
 }
 
 has_plantage_goods = {
