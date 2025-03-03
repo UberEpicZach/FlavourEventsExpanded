@@ -1817,25 +1817,32 @@ FEE_VIJ_slot_5 = {
 			}
 		}
 		effect = {
-			garjat_area = {
-				random_area_province = {
-					limit = { has_fort_building_trigger = yes }
-					add_or_upgrade_manpower_building = yes
-					add_or_upgrade_forcelimit_building = yes
-				}
+			custom_tooltip = FEE_VIJ_SECURING_NORTHERN_FRONTIER_TT
+			tooltip = {
+				add_or_upgrade_manpower_building = yes
+				add_or_upgrade_forcelimit_building = yes
 			}
-			upper_mahanadi_area = {
-				random_area_province = {
-					limit = { has_fort_building_trigger = yes }
-					add_or_upgrade_manpower_building = yes
-					add_or_upgrade_forcelimit_building = yes
+			hidden_effect = {
+				garjat_area = {
+					random_area_province = {
+						limit = { has_fort_building_trigger = yes }
+						add_or_upgrade_manpower_building = yes
+						add_or_upgrade_forcelimit_building = yes
+					}
 				}
-			}
-			orissa_area = {
-				random_area_province = {
-					limit = { has_fort_building_trigger = yes }
-					add_or_upgrade_manpower_building = yes
-					add_or_upgrade_forcelimit_building = yes
+				upper_mahanadi_area = {
+					random_area_province = {
+						limit = { has_fort_building_trigger = yes }
+						add_or_upgrade_manpower_building = yes
+						add_or_upgrade_forcelimit_building = yes
+					}
+				}
+				orissa_area = {
+					random_area_province = {
+						limit = { has_fort_building_trigger = yes }
+						add_or_upgrade_manpower_building = yes
+						add_or_upgrade_forcelimit_building = yes
+					}
 				}
 			}
 		}
