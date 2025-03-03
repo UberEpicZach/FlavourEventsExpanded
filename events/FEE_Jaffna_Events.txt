@@ -183,7 +183,10 @@ country_event = {
 			add_base_production = 2
 			add_base_manpower = 2
 			add_or_upgrade_trade_building = yes
-			add_or_upgrade_shipyard_building = yes
+			if = {
+				limit = { has_port = yes }
+				add_or_upgrade_shipyard_building = yes
+			}
 			create_or_add_center_of_trade_level_fee = { level = 1 }
 		}
 		lanka_area = {
@@ -191,6 +194,7 @@ country_event = {
 			add_prosperity = 100
 			random_province_in_state = {
 				limit = {
+					has_port = yes
 					NOT = { is_capital = yes }
 				}
 				add_random_development = 1
@@ -205,6 +209,7 @@ country_event = {
 			add_prosperity = 100
 			random_province_in_state = {
 				limit = {
+					has_port = yes
 					NOT = { is_capital = yes }
 				}
 				add_random_development = 1
