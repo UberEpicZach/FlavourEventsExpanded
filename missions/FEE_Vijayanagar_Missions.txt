@@ -66,6 +66,7 @@ FEE_VIJ_slot_1 = {
 					random_owned_province = {
 						limit = {
 							NOT = { has_province_modifier = foreign_merchants_discriminated }
+							has_port = yes
 							OR = {
 								has_shipyard_building_trigger = yes
 								base_dev_increased_by = { category = dip amount = 3 }
