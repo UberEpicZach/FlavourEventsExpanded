@@ -1219,9 +1219,9 @@ country_event = {
 		}
 
 		add_mil_power = -25
-		orissa_area = { add_permanent_claim = ROOT }
-		andhra_area = { add_permanent_claim = ROOT }
-		jharkhand_area = { add_permanent_claim = ROOT }
+		orissa_area = { add_claim = ROOT }
+		andhra_area = { add_claim = ROOT }
+		jharkhand_area = { add_claim = ROOT }
 		if = {
 			limit = {
 				exists = ORI
