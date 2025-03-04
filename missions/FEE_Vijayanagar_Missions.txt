@@ -709,7 +709,7 @@ FEE_VIJ_slot_3 = {
 					global_trigger = "
 					OR = {
 						trade_goods = gems
-						trade_goods = pearl
+						trade_goods = pearls
 					}
 					province_belongs_trade_node = { center = 1340 }
 					"
