@@ -1500,7 +1500,7 @@ FEE_VIJ_slot_cavalry_4 = {
 					province_id = 541
 					OR = {
 						NOT = { owned_by = ROOT }
-						base_dev_increased_by = { category = base_manpower amount = 10 }
+						base_dev_increased_by = { category = mil amount = 10 }
 						has_manpower_building_trigger = yes
 						if = {
 							limit = {
@@ -1562,7 +1562,7 @@ FEE_VIJ_slot_cavalry_4 = {
 			}
 			541 = {
 				owned_by = ROOT
-				base_dev_increased_by = { category = base_manpower amount = 10 }
+				base_dev_increased_by = { category = mil amount = 10 }
 				has_manpower_building_trigger = yes
 				if = {
 					limit = {
