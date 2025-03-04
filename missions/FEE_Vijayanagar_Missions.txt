@@ -680,7 +680,7 @@ FEE_VIJ_slot_3 = {
 					development_in_provinces = {
 						province_belongs_trade_node = { center = 1340 }
 						value = 50
-						trade_goods = gems
+						has_gems_pearls_goods = yes
 					}
 				}
 			}
@@ -1329,7 +1329,7 @@ FEE_VIJ_slot_4 = {
 				name = fee_vij_scourge_of_the_deccan
 				duration = -1
 			}
-			custom_tooltip = "\nThe echoes of our victory will last for generations."
+			custom_tooltip = "The echoes of our victory will last for generations."
 			hidden_effect = { set_country_flag = fee_vij_scourge_of_the_deccan }
 		}
 	}
