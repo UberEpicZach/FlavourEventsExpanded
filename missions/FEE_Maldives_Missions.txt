@@ -866,7 +866,7 @@ FEE_DGL_slot_5 = {
 					scale = higher_development_than
 					global_trigger = "
 						has_port = yes
-						trade_goods = spice
+						trade_goods = spices
 					"
 					event_target_name = fee_dgl_spice_target
 				}
