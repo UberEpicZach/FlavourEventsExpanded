@@ -90,8 +90,16 @@ fee_ass_legacy_of_sukaphaa = {
 	regiment_recruit_speed = -0.15
 }
 fee_ass_sanskritisation = {
-	tolerance_own = 1
+	tolerance_own = 0.50
+	tolerance_heathen = 0.50
 	all_estate_loyalty_equilibrium = 0.075
+}
+fee_ass_sanskritization = {
+	local_unrest = -1.25
+	trade_goods_size_modifier = 0.10
+	local_tax_modifier = 0.10
+	local_religious_unity_contribution = -1
+	religion = yes
 }
 fee_ass_rebuilding_valley_brahmaputra_hie = {
 	development_cost_in_primary_culture = -0.15

@@ -830,12 +830,34 @@ FEE_VIJ_slot_3 = {
 			}
 			custom_tooltip = FEE_MERCANTILISM_BASED_ON_SPICE_PROV_TT
 			hidden_effect = {
+				set_variable = {
+					which = fee_add_mercantilism
+					value = 0
+				}
 				every_owned_province = {
 					limit = {
 						trade_goods = spices
 						development = 20
 					}
-					ROOT = { add_mercantilism = 2 }
+					if = {
+						limit = {
+							ROOT = {
+								NOT = {
+									check_variable = {
+										which = fee_add_mercantilism
+										value = 20
+									}
+								}
+							}
+						}
+						ROOT = {
+							add_mercantilism = 2
+							change_variable = {
+								which = fee_add_mercantilism
+								value = 2
+							}
+						}
+					}
 				}
 			}
 		}

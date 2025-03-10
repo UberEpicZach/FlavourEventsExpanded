@@ -62,7 +62,24 @@ FEE_ASS_slot_1 = {
 					has_dlc = Leviathan
 					is_expanded_mod_active = { mod = great_monuments }
 				}
+				set_country_flag = gme_access_nepali_tibetan_monuments
 				custom_tooltip = FEE_ACCESS_NEPALI_TIBETAN_MONUMENTS_TT
+			}
+			custom_tooltip = FEE_ASS_BUDDHIST_PROVINCES_TOLERANCE_TT
+			tooltip = {
+				add_permanent_province_modifier = {
+					name = fee_ass_sanskritization
+					duration = -1
+				}
+			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = { emf_religion_is_buddhist = yes }
+					add_permanent_province_modifier = {
+						name = fee_ass_sanskritization
+						duration = -1
+					}
+				}
 			}
 		}
 	}
@@ -143,7 +160,7 @@ FEE_ASS_slot_1 = {
 					}
 					add_great_project_tier = {
 						type = gme_padmasambhava_hidden_valley
-						tier = 3
+						tier = 1
 					}
 				}
 				else = {
