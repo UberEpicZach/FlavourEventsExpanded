@@ -1027,8 +1027,8 @@ FEE_ASS_slot_5 = {
 		provinces_to_highlight = { }
 		trigger = {
 			num_of_artillery = 30
-			num_of_battles = { amount = 15 }
-			num_of_wars = { amount = 5 }
+			num_of_battles = { amount = 125 }
+			num_of_wars = { amount = 30 }
 		}
 		effect = {
 			create_general_with_pips = {
