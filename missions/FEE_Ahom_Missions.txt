@@ -737,7 +737,7 @@ FEE_ASS_slot_4 = {
 			}
 			custom_tooltip = FEE_SHAN_RETURN_TT
 			tooltip = {
-				custom_tooltip = FEE_ADD_DEV_MANA_TT
+				custom_tooltip = FEE_ADD_HALF_DEV_MANA_TT
 				add_or_upgrade_courthouse_building = yes
 				add_or_upgrade_manpower_building = yes
 			}
@@ -752,7 +752,7 @@ FEE_ASS_slot_4 = {
 					event_target_name = fee_ass_assamese_province
 				}
 				event_target:fee_ass_assamese_province_1 = {
-					add_dev_scaled_on_monthly_mana = yes
+					add_dev_half_monthly_mana = yes
 					add_or_upgrade_courthouse_building = yes
 					add_or_upgrade_manpower_building = yes
 				}
@@ -766,7 +766,7 @@ FEE_ASS_slot_4 = {
 					event_target_name = fee_ass_shan_province
 				}
 				event_target:fee_ass_shan_province_1 = {
-					add_dev_scaled_on_monthly_mana = yes
+					add_dev_half_monthly_mana = yes
 					add_or_upgrade_courthouse_building = yes
 					add_or_upgrade_manpower_building = yes
 				}
