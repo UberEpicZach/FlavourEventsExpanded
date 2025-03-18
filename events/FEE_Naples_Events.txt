@@ -551,7 +551,6 @@ country_event = {
 		}
 
 		hidden_effect = {
-			clr_country_flag = fee_nap_followed_dream_ladislao
 			if = {
 				limit = {
 					is_part_of_hre = yes
@@ -573,17 +572,34 @@ country_event = {
 				limit = {
 					NOT = { government_rank = 2 }
 				}
-				set_in_empire = no
-				set_government_rank = 2
+				hidden_effect = {
+					set_in_empire = no
+				}
+				if = {
+					limit = {
+						NOT = { is_part_of_hre = yes } #for tooltip purposes
+					}
+					set_government_rank = 2
+				}
 			}
-			set_country_flag = formed_italy_flag
+			if = {
+				limit = {
+					NOT = { has_reform_on_level = 0 }
+				}
+				add_government_reform = signoria_reform
+			}
 			if = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
-			swap_non_generic_missions = yes
+			on_change_tag_effect = yes
+			set_country_flag = formed_italy_flag
+			set_global_flag = formed_italy_flag_global # for german mission
 		}
 		change_tag = ITA
+		italy_region = { add_permanent_claim = ITA }
+		add_prestige_or_monarch_power = { amount = 25 }
+		set_capital = 118
 		swap_non_generic_missions = yes
 	}
 
