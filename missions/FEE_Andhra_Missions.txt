@@ -164,8 +164,8 @@ FEE_YOR_slot_2 = {
 			}
 		}
 		effect = {
-			add_prestige_or_monarch_power = { amount = 25 }
-			add_legitimacy_or_mil_power = { amount = 30 }
+			add_prestige_or_monarch_power = { amount = 20 }
+			add_legitimacy_or_mil_power = { amount = 15 }
 			add_splendor = 150
 		}
 	}
@@ -260,6 +260,7 @@ FEE_YOR_slot_3 = {
 			army_size_percentage = 1
 		}
 		effect = {
+			country_event = { id = FEE_Andhra_Events.4 }
 			capital_scope = {
 				area = {
 					if = {
