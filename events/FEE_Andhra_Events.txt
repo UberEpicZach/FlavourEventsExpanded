@@ -319,6 +319,22 @@ country_event = {
 		change_religion = buddhism
 		capital_scope = { change_religion = buddhism }
 	}
+
+	after = {
+		hidden_effect = {
+			543 = {
+				if = {
+					limit = {
+						NOT = { has_province_modifier = fee_yor_testament_tolerance }
+					}
+					add_province_modifier = {
+						name = fee_yor_testament_tolerance
+						duration = -1
+					}
+				}
+			}
+		}
+	}
 }
 
 # The Triumph of Golkonda
