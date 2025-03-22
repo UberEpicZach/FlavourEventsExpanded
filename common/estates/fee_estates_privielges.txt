@@ -10,3 +10,14 @@ estate_church = {
 		estate_church_fee_reestablished_jizya
 	}
 }
+
+estate_jains = {
+	privileges = {
+		fee_estate_privilege_coastline_expansion
+	}
+}
+estate_burghers = {
+	privileges = {
+		fee_estate_privilege_coastline_expansion
+	}
+}
