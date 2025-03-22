@@ -291,10 +291,7 @@ FEE_DGL_slot_2 = {
 			}
 		}
 		effect = {
-			custom_tooltip = FEE_UNLOCK_PRIVILEGE_ESTATE_BURGHERS_COASTLINE_EXPANSION_TT
-			unlock_estate_privilege = {
-				estate_privilege = fee_estate_privilege_coastline_expansion
-			}
+			unlock_estate_privilege = { estate_privilege = fee_estate_privilege_coastline_expansion }
 		}
 	}
 
@@ -483,6 +480,7 @@ FEE_DGL_slot_3 = {
 		effect = {
 			add_years_of_trade_income = {
 				years = 2
+				custom_tooltip = YEARS_OF_TRADE_INCOME_2
 			}
 			capital_scope = { add_or_upgrade_trade_building = yes }
 		}
