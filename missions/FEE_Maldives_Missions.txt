@@ -291,7 +291,7 @@ FEE_DGL_slot_2 = {
 			}
 		}
 		effect = {
-			unlock_estate_privilege = { estate_privilege = fee_estate_privilege_coastline_expansion }
+			unlock_estate_privilege = { estate_privilege = emf_estate_privilege_coastline_expansion }
 		}
 	}
 
@@ -744,24 +744,32 @@ FEE_DGL_slot_4 = {
 			fee_dgl_challenging_deep
 		}
 		provinces_to_highlight = {
-			sea_zone = { superregion = east_african_sea_superregion }
-			is_capital = yes
-			owner = { navy_size = ROOT }
+			owner = {
+				num_of_owned_provinces_with = {
+					value = 5
+					sea_zone = { superregion = east_african_sea_superregion }
+				}
+				navy_size = ROOT
+			}
 		}
 		trigger = {
 			OR = {
 				full_idea_group = trade_ideas
 				full_idea_group = maritime_ideas
 				full_idea_group = naval_ideas
-				monthly_dip = 9
+				monthly_dip = 12
 			}
 			has_dip_advisor_3 = yes
-			NOT = {
-				any_country = {
-					capital_scope = {
-						sea_zone = { superregion = east_african_sea_superregion }
+			custom_trigger_tooltip = {
+				tooltip = FEE_MALDIVES_NO_COUNTRY_NAVY_EAST_AFRICAN_TT
+				NOT = {
+					any_country = {
+						num_of_owned_provinces_with = {
+							value = 5
+							sea_zone = { superregion = east_african_sea_superregion }
+						}
+						navy_size = ROOT
 					}
-					navy_size = ROOT
 				}
 			}
 		}
