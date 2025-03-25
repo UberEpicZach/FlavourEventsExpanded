@@ -265,6 +265,7 @@ country_event = {
 
 	trigger = {
 		has_country_flag = fee_renaissance_flag
+		NOT = { has_country_modifier = fee_renaissance_writer }
 	}
 
 	mean_time_to_happen = {
