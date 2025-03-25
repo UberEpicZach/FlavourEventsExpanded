@@ -57,17 +57,7 @@ country_event = {
 			set_capital = 544
 		}
 		544 = {
-			random_list = {
-				33 = {
-					add_base_tax = 3
-				}
-				33 = {
-					add_base_production = 3
-				}
-				33 = {
-					add_base_manpower = 3
-				}
-			}
+			add_random_development = 3
 		}
 	}
 
