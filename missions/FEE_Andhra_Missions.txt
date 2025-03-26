@@ -208,7 +208,7 @@ FEE_YOR_slot_2 = {
 							num_of_times_improved = 2
 							if = {
 								limit = { has_dlc = "Mandate of Heaven" }
-								NOT = { prosperity = 100 }
+								prosperity = 100
 							}
 							else = { devastation = 1 }
 						}
