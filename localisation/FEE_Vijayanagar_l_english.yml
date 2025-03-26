@@ -375,7 +375,7 @@
 # Tooltips Mission
  FEE_VIJ_SOUTH_INDIAN_NAVY_PORTS_TT: "\n§YThe three Coastal Province§! meeting the requirements will get all of the following:"
 
- FEE_NO_CAPITAL_IN_INDIA_BIGGER_THAN_ROOT_TT: "No §YCapital Province§! in the §MIndia Superregion§! has a bigger development than [Root.GetCapitalName]"
+ FEE_NO_CAPITAL_IN_INDIA_BIGGER_THAN_ROOT_TT: "No §YCapital Province§! in the §MIndia Superregion§! has a bigger development than [Root.Capital.GetCapitalName]"
 
  FEE_VIJ_SPICE_TRADER_CONQUEST_TT: "\n§Y[Root.GetName]§! will gain Permanent Claim on all the §Mspices§! provinces in the §YMalacca§! trade node.\n"
 
