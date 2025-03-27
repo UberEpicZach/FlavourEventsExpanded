@@ -874,44 +874,25 @@ FEE_YOR_slot_5 = {
 		trigger = {
 			if = {
 				limit = { has_dlc = Leviathan }
-				541 = {
-					owned_by = ROOT
-					has_great_project = {
-						type = hampi
-						tier = 2
-					}
-				}
-				545 = {
-					owned_by = ROOT
-					has_great_project = {
-						type = ellora_caves
-						tier = 2
-					}
-				}
-				2026 = {
-					owned_by = ROOT
-					has_great_project = {
-						type = chola_temples
-						tier = 2
-					}
-				}
-				if = {
-					limit = {
-						is_expanded_mod_active = { mod = great_monuments }
-					}
-					4425 = {
-						owned_by = ROOT
-						has_great_project = {
-							type = gme_nagarjunakonda
-							tier = 2
+				num_of_owned_provinces_with = {
+					value = 3
+					OR = {
+						province_id = 541
+						province_id = 545
+						province_id = 2026
+						if = {
+							limit = {
+								is_expanded_mod_active = { mod = great_monuments }
+							}
+							OR = {
+								province_id = 4425
+								province_id = 2085
+							}
 						}
 					}
-					2085 = {
-						owned_by = ROOT
-						has_great_project = {
-							type = gme_ranganathaswamy_temple
-							tier = 2
-						}
+					has_great_project = {
+						type = any
+						tier = 2
 					}
 				}
 			}
