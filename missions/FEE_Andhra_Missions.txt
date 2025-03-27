@@ -832,30 +832,22 @@ FEE_YOR_slot_5 = {
 		provinces_to_highlight = {
 			if = {
 				limit = { has_dlc = Leviathan }
-				if = {
-					limit = {
-						is_expanded_mod_active = { mod = great_monuments }
-					}
-					OR = {
-						province_id = 541
-						province_id = 545
-						province_id = 2026
-						province_id = 4425
-						province_id = 2085
-					}
-					NOT = {
-						has_great_project = {
-							type = any
-							tier = 2
+				OR = {
+					province_id = 541
+					province_id = 545
+					province_id = 2026
+					if = {
+						limit = {
+							is_expanded_mod_active = { mod = great_monuments }
+						}
+						OR = {
+							province_id = 4425
+							province_id = 2085
 						}
 					}
 				}
-				else = {
-					OR = {
-						province_id = 541
-						province_id = 545
-						province_id = 2026
-					}
+				OR = {
+					NOT = { owned_by = ROOT }
 					NOT = {
 						has_great_project = {
 							type = any
@@ -864,64 +856,60 @@ FEE_YOR_slot_5 = {
 					}
 				}
 			}
+			else = {
+				owned_by = ROOT
+				has_tax_building_trigger = yes
+				NOT = { num_of_times_improved_by_owner = 3 }
+				NOT = {
+					ROOT = {
+						num_of_owned_provinces_with = {
+							value = 10
+							has_tax_building_trigger = yes
+							num_of_times_improved_by_owner = 3
+						}
+					}
+				}
+			}
 		}
 		trigger = {
 			if = {
 				limit = { has_dlc = Leviathan }
+				541 = {
+					owned_by = ROOT
+					has_great_project = {
+						type = hampi
+						tier = 2
+					}
+				}
+				545 = {
+					owned_by = ROOT
+					has_great_project = {
+						type = ellora_caves
+						tier = 2
+					}
+				}
+				2026 = {
+					owned_by = ROOT
+					has_great_project = {
+						type = chola_temples
+						tier = 2
+					}
+				}
 				if = {
 					limit = {
 						is_expanded_mod_active = { mod = great_monuments }
 					}
-					calc_true_if = {
-						amount = 3
-						541 = {
-							has_great_project = {
-								type = hampi
-								tier = 2
-							}
-						}
-						545 = {
-							has_great_project = {
-								type = ellora_caves
-								tier = 2
-							}
-						}
-						2026 = {
-							has_great_project = {
-								type = chola_temples
-								tier = 2
-							}
-						}
-						4425 = {
-							has_great_project = {
-								type = gme_nagarjunakonda
-								tier = 2
-							}
-						}
-						2085 = {
-							has_great_project = {
-								type = gme_ranganathaswamy_temple
-								tier = 2
-							}
-						}
-					}
-				}
-				else = {
-					541 = {
+					4425 = {
+						owned_by = ROOT
 						has_great_project = {
-							type = hampi
+							type = gme_nagarjunakonda
 							tier = 2
 						}
 					}
-					545 = {
+					2085 = {
+						owned_by = ROOT
 						has_great_project = {
-							type = ellora_caves
-							tier = 2
-						}
-					}
-					2026 = {
-						has_great_project = {
-							type = chola_temples
+							type = gme_ranganathaswamy_temple
 							tier = 2
 						}
 					}
