@@ -53,3 +53,9 @@ fee_dhundar_natural_philosophy = {
 	local_development_cost = -0.1
 	local_institution_spread = 0.5
 }
+
+
+fee_code_rathore_rajputs = {
+	discipline = 0.05
+	is_rajput_modifier = yes
+}

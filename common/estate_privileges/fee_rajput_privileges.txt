@@ -11,8 +11,15 @@ fee_estate_rajput_rathore_code_privilege = {
 	benefits = {
 		allowed_rajput_fraction = 0.15
 		army_tradition = 0.5
-		discipline = 0.05
-		is_rajput_modifier = yes
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = fee_code_rathore_rajputs
+			duration = -1
+		}
+	}
+	on_revoked = {
+		remove_country_modifier = fee_code_rathore_rajputs
 	}
 	ai_will_do = {
 		factor = 1
