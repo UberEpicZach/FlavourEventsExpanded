@@ -170,7 +170,8 @@ country_event = {
 		has_country_flag = fee_ned_allow_for_founding_of_batavia
 		630 = {
 			owner = {
-				NOT = { war_with = ROOT }
+				is_at_war = no
+				controls = 630
 			}
 		}
 		west_java_area = {
@@ -250,6 +251,10 @@ country_event = {
 		add_permanent_claim_province = {
 			province = 630
 		}
+	}
+
+	after = {
+		hidden_effect = { clr_country_flag = fee_ned_allow_for_founding_of_batavia }
 	}
 }
 
