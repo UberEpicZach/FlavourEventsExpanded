@@ -3404,7 +3404,30 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 12
+		months = 18
+		modifier = {
+			factor = 1.5
+			112 = {
+				OR = {
+					prosperity = 100
+					NOT = { devastation = 1 }
+				}
+			}
+		}
+		modifier = {
+			factor = 0.75
+			112 = { devastation = 10 }
+		}
+		modifier = {
+			factor = 0.50
+			112 = {
+				OR = {
+					NOT = { controlled_by = ROOT }
+					has_siege = yes
+					is_blockaded = yes
+				}
+			}
+		}
 	}
 
 	immediate = {
@@ -3414,23 +3437,17 @@ country_event = {
 					is_year = 1483
 					NOT = { is_year = 1485 }
 				}
-				112 = {
-					set_province_flag = fee_ven_first_burning
-				}
+				112 = { set_province_flag = fee_ven_first_burning }
 			}
 			else_if = {
 				limit = {
 					is_year = 1574
 					NOT = { is_year = 1575 }
 				}
-				112 = {
-					set_province_flag = fee_ven_second_burning
-				}
+				112 = { set_province_flag = fee_ven_second_burning }
 			}
 			else = {
-				112 = {
-					set_province_flag = fee_ven_third_burning
-				}
+				112 = { set_province_flag = fee_ven_third_burning }
 			}
 		}
 	}
@@ -3443,25 +3460,7 @@ country_event = {
 			factor = 50
 		}
 
-		add_prestige = -10
-		change_innovativeness = -5
-		kill_advisor_by_category_effect = { ADM = yes }
-		if = {
-			limit = {
-				has_dlc = "Leviathan"
-				112 = {
-					has_great_project = {
-						type = doges_palace
-						tier = 1
-					}
-				}
-			}
-			add_years_of_income = -1
-		}
-		112 = {
-			add_base_tax = -3
-			add_devastation = 25
-		}
+		add_years_of_income = -1
 	}
 
 	option = {
