@@ -38,7 +38,7 @@
  FEE_Religious_Events.103.T: "Religious Stance of the [Root.Monarch.GetTitle]"
  FEE_Religious_Events.103.D: "As the Age of Reformation progresses, so do the religious affairs of [Root.GetUsableName] change. With the ascension of [Root.Monarch.GetTitle] [Root.Monarch.GetName] to the [Root.GetAdjective] throne, the [Root.GetAdjective] stance towards [Root.Religion.GetName] is once again a subject of the court's interests."
  FEE_Religious_Events.103.OPT1: "We must reform!"
- FEE_Religious_Events.102.OPT1C: "We must reform."
+ FEE_Religious_Events.103.OPT1C: "We must reform."
  FEE_Religious_Events.103.OPT2C: "We cannot divide the church!"
  FEE_Religious_Events.103.OPT2: "We cannot divide the church."
  FEE_Religious_Events.103.OPT3: "We must seek tolerance and reconciliation above all else!"
@@ -62,8 +62,11 @@
 
 # Modifiers:
  fee_religious_basilica_of_thomas_the_apostle: "Basilica of Thomas the Apostle"
+ desc_fee_religious_basilica_of_thomas_the_apostle: ""
  fee_religious_christian_ghetto_christian: "Christian Ghetto"
+ desc_fee_religious_christian_ghetto_christian: ""
  fee_religious_christian_ghetto_not_christian: "Christian Ghetto"
+ desc_fee_religious_christian_ghetto_not_christian: ""
 
  fee_religious_flemish_indifference: "Flemish Indifference"
  desc_fee_religious_flemish_indifference: ""
@@ -84,9 +87,13 @@
  desc_fee_religious_tolerant: ""
 
  fee_religious_ezharappallikal: "Resurrection of the Ezharappallikal"
+ desc_fee_religious_ezharappallikal: ""
  fee_religious_thomist_christian_bastion: "Thomist Christian Bastion"
+ desc_fee_religious_thomist_christian_bastion: ""
  fee_religious_nestorian_religious_center_coptic: "Nestorian Religious Center"
+ desc_fee_religious_nestorian_religious_center_coptic: ""
  fee_religious_nestorian_religious_center_not_coptic: "Nestorian Religious Center"
+ desc_fee_religious_nestorian_religious_center_not_coptic: ""
 
 # Tooltips:
  FEE_Religious_Events.301.tt.1: "The provinces §Y[535.GetName]§!, §Y[534.GetName]§!, §Y[4412.GetName]§!, §Y[537.GetName]§!, §Y[529.GetName]§!, §Y[539.GetName]§!, §Y[4416.GetName]§! and §Y[2100.GetName]§!: \nConvert to the §YCoptic§! faith. \n \nIf §Y[Root.GetName]§! follows the §YCoptic§! faith:"

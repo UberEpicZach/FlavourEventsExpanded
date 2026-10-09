@@ -223,11 +223,76 @@ province_event = {
 	}
 }
 
-# [Root.GetUsableNameCap] in the Age of Reformation
+
+# Religious Stance of the [Root.Monarch.GetTitle]
 country_event = {
 	id = FEE_Religious_Events.102
 	title = FEE_Religious_Events.102.T
 	desc = FEE_Religious_Events.102.D
+	picture = RELIGION_eventPicture
+
+	trigger = {
+		current_age = age_of_reformation
+		religion_group = christian
+		NOT = { religion = orthodox }
+		NOT = { religion = coptic }
+		OR = {
+			primary_culture = dutch
+			primary_culture = flemish
+			primary_culture = wallonian
+		}
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Religious_Events.102.OPT1
+		trigger = {
+			primary_culture = flemish
+		}
+
+		add_country_modifier_for_age = {
+			name = fee_religious_flemish_indifference
+			age = age_of_reformation
+		}
+	}
+
+	option = {
+		name = FEE_Religious_Events.102.OPT2
+		trigger = {
+			primary_culture = dutch
+		}
+
+		add_country_modifier_for_age = {
+			name = fee_religious_religious_uncertainty
+			age = age_of_reformation
+		}
+	}
+
+	option = {
+		name = FEE_Religious_Events.102.OPT3
+		trigger = {
+			primary_culture = wallonian
+		}
+
+		if = {
+			limit = { religion = catholic }
+			add_stability_or_adm_power = yes
+		}
+		else = { add_stability = -2 }
+		
+		add_country_modifier_for_age = {
+			name = fee_religious_walloon_catholic_zeal
+			age = age_of_reformation
+		}
+	}
+}
+
+# [Root.GetUsableNameCap] in the Age of Reformation
+country_event = {
+	id = FEE_Religious_Events.103
+	title = FEE_Religious_Events.103.T
+	desc = FEE_Religious_Events.103.D
 	picture = RELIGION_eventPicture
 
 	trigger = {
@@ -241,7 +306,7 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = FEE_Religious_Events.102.OPT1C
+		name = FEE_Religious_Events.103.OPT1C
 		trigger = {
 			religion = catholic
 		}
@@ -268,7 +333,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Religious_Events.102.OPT1
+		name = FEE_Religious_Events.103.OPT1
 		trigger = {
 			NOT = { religion = catholic }
 		}
@@ -286,7 +351,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Religious_Events.102.OPT2C
+		name = FEE_Religious_Events.103.OPT2C
 		trigger = {
 			religion = catholic
 		}
@@ -317,7 +382,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Religious_Events.102.OPT2
+		name = FEE_Religious_Events.103.OPT2
 		trigger = {
 			NOT = { religion = catholic }
 		}
@@ -334,7 +399,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Religious_Events.102.OPT3
+		name = FEE_Religious_Events.103.OPT3
 
 		add_ruler_modifier = {
 			name = fee_religious_tolerant
@@ -345,70 +410,6 @@ country_event = {
 			add_stability_or_adm_power = yes
 		}
 		else = { add_stability = -1 }
-	}
-}
-
-# Religious Stance of the [Root.Monarch.GetTitle]
-country_event = {
-	id = FEE_Religious_Events.103
-	title = FEE_Religious_Events.103.T
-	desc = FEE_Religious_Events.103.D
-	picture = RELIGION_eventPicture
-
-	trigger = {
-		current_age = age_of_reformation
-		religion_group = christian
-		NOT = { religion = orthodox }
-		NOT = { religion = coptic }
-		OR = {
-			primary_culture = dutch
-			primary_culture = flemish
-			primary_culture = wallonian
-		}
-	}
-
-	is_triggered_only = yes
-
-	option = {
-		name = FEE_Religious_Events.103.OPT1
-		trigger = {
-			primary_culture = flemish
-		}
-
-		add_country_modifier_for_age = {
-			name = fee_religious_flemish_indifference
-			age = age_of_reformation
-		}
-	}
-
-	option = {
-		name = FEE_Religious_Events.103.OPT2
-		trigger = {
-			primary_culture = dutch
-		}
-
-		add_country_modifier_for_age = {
-			name = fee_religious_religious_uncertainty
-			age = age_of_reformation
-		}
-	}
-
-	option = {
-		name = FEE_Religious_Events.103.OPT3
-		trigger = {
-			primary_culture = wallonian
-		}
-
-		if = {
-			limit = { religion = catholic }
-			add_stability_or_adm_power = yes
-		}
-		else = { add_stability = -2 }
-		
-		add_country_modifier_for_age = {
-			name = fee_religious_walloon_catholic_zeal
-			age = age_of_reformation
-		}
 	}
 }
 
