@@ -288,6 +288,9 @@ on_monarch_death = {
 }
 
 on_new_age = {
+	events = {
+		FEE_Religious_Events.102
+	}
 	if = {
 		limit = { has_country_modifier = fee_por_henrique_naval_reforms }
 		remove_country_modifier = fee_por_henrique_naval_reforms
@@ -345,6 +348,7 @@ on_new_monarch = {
 		FEE_Charles_V_Events.2
 		FEE_Bahmanis_Events.3
 		FEE_Marathas_Events.11
+		FEE_Religious_Events.102
 	}
 
 	if = {

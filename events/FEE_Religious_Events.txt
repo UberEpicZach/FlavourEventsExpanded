@@ -223,6 +223,195 @@ province_event = {
 	}
 }
 
+# [Root.GetUsableNameCap] in the Age of Reformation
+country_event = {
+	id = FEE_Religious_Events.102
+	title = FEE_Religious_Events.102.T
+	desc = FEE_Religious_Events.102.D
+	picture = RELIGION_eventPicture
+
+	trigger = {
+		OR = {
+			has_country_modifier = fee_religious_flemish_indifference
+			has_country_modifier = fee_religious_religious_uncertainty
+			has_country_modifier = fee_religious_walloon_catholic_zeal
+		}
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Religious_Events.102.OPT1C
+		trigger = {
+			religion = catholic
+		}
+
+		add_papal_influence = -100
+		add_ruler_modifier = {
+			name = fee_religious_heretic_ruler
+			duration = -1
+		}
+		if = {
+			limit = { primary_culture = wallonian }
+			add_stability = -1
+			random_owned_province = {
+				limit = { religion = catholic }
+				catholic_rebels = 2
+			}
+		}
+		random_owned_province = {
+			random_list = {
+				50 =  { change_religion = protestant }
+				50 =  { change_religion = reformed }
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Religious_Events.102.OPT1
+		trigger = {
+			NOT = { religion = catholic }
+		}
+
+		add_church_power = 50
+		add_fervor = 25
+		add_ruler_modifier = {
+			name = fee_religious_champion_reformation
+			duration = -1
+		}
+		if = {
+			limit = { primary_culture = dutch }
+			add_stability_or_adm_power = yes
+		}
+	}
+
+	option = {
+		name = FEE_Religious_Events.102.OPT2C
+		trigger = {
+			religion = catholic
+		}
+
+		add_papal_influence = 50
+		add_ruler_modifier = {
+			name = fee_religious_loyal_catholic_ruler
+			duration = -1
+		}
+		add_opinion = {
+			who = PAP
+			modifier = fee_religious_loyal_catholic_ruler
+		}
+		reverse_add_opinion = {
+			who = PAP
+			modifier = fee_religious_loyal_catholic_ruler
+		}
+		if = {
+			limit = {
+				NOT = { ruler_religion = catholic }
+			}
+			set_ruler_religion = catholic
+		}
+		if = {
+			limit = { primary_culture = wallonian }
+			add_stability_or_adm_power = yes
+		}
+	}
+
+	option = {
+		name = FEE_Religious_Events.102.OPT2
+		trigger = {
+			NOT = { religion = catholic }
+		}
+
+		add_church_power = -50
+		add_fervor = -100
+		add_ruler_modifier = {
+			name = fee_religious_papal_lapdog
+			duration = -1
+		}
+		random_owned_province = {
+			change_religion = catholic
+		}
+	}
+
+	option = {
+		name = FEE_Religious_Events.102.OPT3
+
+		add_ruler_modifier = {
+			name = fee_religious_tolerant
+			duration = -1
+		}
+		if = {
+			limit = { primary_culture = flemish }
+			add_stability_or_adm_power = yes
+		}
+		else = { add_stability = -1 }
+	}
+}
+
+# Religious Stance of the [Root.Monarch.GetTitle]
+country_event = {
+	id = FEE_Religious_Events.103
+	title = FEE_Religious_Events.103.T
+	desc = FEE_Religious_Events.103.D
+	picture = RELIGION_eventPicture
+
+	trigger = {
+		current_age = age_of_reformation
+		religion_group = christian
+		NOT = { religion = orthodox }
+		NOT = { religion = coptic }
+		OR = {
+			primary_culture = dutch
+			primary_culture = flemish
+			primary_culture = wallonian
+		}
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Religious_Events.103.OPT1
+		trigger = {
+			primary_culture = flemish
+		}
+
+		add_country_modifier_for_age = {
+			name = fee_religious_flemish_indifference
+			age = age_of_reformation
+		}
+	}
+
+	option = {
+		name = FEE_Religious_Events.103.OPT2
+		trigger = {
+			primary_culture = dutch
+		}
+
+		add_country_modifier_for_age = {
+			name = fee_religious_religious_uncertainty
+			age = age_of_reformation
+		}
+	}
+
+	option = {
+		name = FEE_Religious_Events.103.OPT3
+		trigger = {
+			primary_culture = wallonian
+		}
+
+		if = {
+			limit = { religion = catholic }
+			add_stability_or_adm_power = yes
+		}
+		else = { add_stability = -2 }
+		
+		add_country_modifier_for_age = {
+			name = fee_religious_walloon_catholic_zeal
+			age = age_of_reformation
+		}
+	}
+}
+
 #########	Coptic Events	#########
 
 # Apostle Intombed

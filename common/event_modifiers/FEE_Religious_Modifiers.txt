@@ -7,6 +7,62 @@ fee_religious_piety_supported = {
 	global_unrest = -1
 }
 
+#########	Protestant Events	#########
+fee_religious_flemish_indifference = {
+	religious_unity = 0.25
+	global_missionary_strength = -0.02
+	tolerance_heretic = 2
+	church_power_modifier = -0.25
+	papal_influence = -0.5
+	monthly_fervor_increase = -1
+}
+fee_religious_religious_uncertainty = {
+	stability_cost_modifier = 0.25
+	papal_influence = 1
+	monthly_fervor_increase = 1
+	church_power_modifier = 0.25
+	tolerance_heretic = -1
+	global_unrest = 2
+}
+fee_religious_walloon_catholic_zeal = {
+	tolerance_heretic = -3
+	global_heretic_missionary_strength = 0.02
+	papal_influence = 2
+	monthly_fervor_increase = -2
+	church_power_modifier = -0.33
+}
+
+fee_religious_heretic_ruler = {
+	tolerance_heretic = 2
+	tolerance_own = -2
+	global_heretic_missionary_strength = -0.02
+	church_influence_modifier = -0.15
+	religion = yes
+}
+fee_religious_champion_reformation = {
+	church_power_modifier = 0.50
+	monthly_fervor_increase = 1
+	tolerance_heretic = -2
+	tolerance_own = 1
+	religion = yes
+}
+fee_religious_loyal_catholic_ruler = {
+	religion = yes
+	curia_powers_cost = -0.25
+	manpower_in_true_faith_provinces = 0.25
+}
+fee_religious_papal_lapdog = {
+	religion = yes
+	land_morale = -0.05
+	diplomatic_reputation = -1
+}
+fee_religious_tolerant = {
+	religion = yes
+	tolerance_heretic = 2
+	tolerance_of_heretics_capacity = 2
+	tolerance_own = -1
+}
+
 #########	Coptic Events	#########
 
 fee_religious_basilica_of_thomas_the_apostle = {

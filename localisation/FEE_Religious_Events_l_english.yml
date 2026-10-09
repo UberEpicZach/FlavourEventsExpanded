@@ -29,6 +29,20 @@
  FEE_Religious_Events.101.D: "There are Christian worshippers within our country that have started acting strangely. They are… worshipping a new god? A new church? It is really all quite difficult to understand, and to be honest the infidels are not really worth that much attention from us."
  FEE_Religious_Events.101.OPT1: "If only they had turned to the true faith..."
 
+ FEE_Religious_Events.102.T: "[Root.GetUsableNameCap] in the Age of Reformation"
+ FEE_Religious_Events.102.D: "The tap of one hammer in the hands of an obscure Augustinian monk in Germany was heard throughout all of Europe, and its sound would echo through history forever. To everyone’s surprise, the initial complaints about the Papacy and the corruption in the Catholic Church sparked an explosive new age, one which heralded new heights of piety and zeal as well as new depths of internecine division and conflict. The various cultures of the Low Countries: Flemish, Walloon, and Dutch alike, reacted quite differently to the new world order. The Flemish, ever the savvy businessmen and skilled bargainers, were largely indifferent to matters of personal faith, preferring to live and let live. Their northern kin, the Dutch, would in time come to full-throatedly embrace the teachings of the Reformers, engaging in bloody conflict to preserve their church and at times enforce it harshly on others. Meanwhile, the French-speaking Walloons took the opposite route. Surpassing even the zeal of the knights of the Spanish Reconquista or the sea-faring Crusaders of the Mediterranean, Walloon governments, soldiers, and clerics would ruthlessly strive to maintain Catholic unity in the West, by any means necessary…"
+ FEE_Religious_Events.102.OPT1: "How interesting... Oh well, so long as it doesn't affect us directly, right?"
+ FEE_Religious_Events.102.OPT2: "Uncertain times ahead..."
+ FEE_Religious_Events.102.OPT3: "We must defend the Holy Mother Church!"
+
+ FEE_Religious_Events.103.T: "Religious Stance of the [Root.Monarch.GetTitle]"
+ FEE_Religious_Events.103.D: "As the Age of Reformation progresses, so do the religious affairs of [Root.GetUsableName] change. With the ascension of [Root.Monarch.GetTitle] [Root.Monarch.GetName] to the [Root.GetAdjective] throne, the [Root.GetAdjective] stance towards [Root.Religion.GetName] is once again a subject of the court's interests."
+ FEE_Religious_Events.103.OPT1: "We must reform!"
+ FEE_Religious_Events.102.OPT1C: "We must reform."
+ FEE_Religious_Events.103.OPT2C: "We cannot divide the church!"
+ FEE_Religious_Events.103.OPT2: "We cannot divide the church."
+ FEE_Religious_Events.103.OPT3: "We must seek tolerance and reconciliation above all else!"
+
 
 ######### Coptic Events #########
  FEE_Religious_Events.300.T: "Apostle Intombed"
@@ -50,6 +64,25 @@
  fee_religious_basilica_of_thomas_the_apostle: "Basilica of Thomas the Apostle"
  fee_religious_christian_ghetto_christian: "Christian Ghetto"
  fee_religious_christian_ghetto_not_christian: "Christian Ghetto"
+
+ fee_religious_flemish_indifference: "Flemish Indifference"
+ desc_fee_religious_flemish_indifference: ""
+ fee_religious_religious_uncertainty: "Religious Uncertainty"
+ desc_fee_religious_religious_uncertainty: ""
+ fee_religious_walloon_catholic_zeal: "Wallon Catholic Zeal"
+ desc_fee_religious_walloon_catholic_zeal: ""
+
+ fee_religious_heretic_ruler: "Heretic Ruler"
+ desc_fee_religious_heretic_ruler: ""
+ fee_religious_champion_reformation: "Champion of Reformation"
+ desc_fee_religious_champion_reformation: ""
+ fee_religious_loyal_catholic_ruler: "Loyal Catholic Ruler"
+ desc_fee_religious_loyal_catholic_ruler: ""
+ fee_religious_papal_lapdog: "Papal Lapdog"
+ desc_fee_religious_papal_lapdog: ""
+ fee_religious_tolerant: "Tolerant"
+ desc_fee_religious_tolerant: ""
+
  fee_religious_ezharappallikal: "Resurrection of the Ezharappallikal"
  fee_religious_thomist_christian_bastion: "Thomist Christian Bastion"
  fee_religious_nestorian_religious_center_coptic: "Nestorian Religious Center"
