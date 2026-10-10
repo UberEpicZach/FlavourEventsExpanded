@@ -82,6 +82,33 @@ fee_rel_iron_duke = {
 	harsh_treatment_cost = -0.50
 }
 
+fee_rel_taxation_clergy = {
+	church_influence_modifier = -0.15
+	global_tax_modifier = 0.33
+	monthly_fervor_increase = 0.5
+	church_power_modifier = 1
+}
+fee_rel_protection_clergy = {
+	church_loyalty_modifier = 0.10
+	tolerance_own = 1
+}
+
+fee_rel_curtailing_clergy_privileges = {
+	church_influence_modifier = -0.20
+}
+fee_rel_entrenched_clergy = {
+	church_influence_modifier = 0.10
+}
+
+fee_rel_latin_mass_victorious = {
+	missionaries = 1
+}
+
+fee_rel_reconcilation_faith = {
+	tolerance_own = 2
+	diplomatic_reputation = 1
+}
+
 #########	Coptic Events	#########
 
 fee_rel_basilica_of_thomas_the_apostle = {

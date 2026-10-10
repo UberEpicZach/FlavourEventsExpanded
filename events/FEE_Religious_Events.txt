@@ -413,7 +413,6 @@ country_event = {
 	}
 }
 
-
 # Beeldenstorm
 country_event = {
 	id = FEE_Rel_Events.104
@@ -621,7 +620,6 @@ country_event = {
 	option = {
 		name = FEE_Rel_Events.106.OPT1
 
-
 		custom_tooltip = fee_rel_council_troubles_TT
 		hidden_effect = {
 			while = {
@@ -665,6 +663,539 @@ country_event = {
 		}
 	}
 }
+
+# Dissolution of Monasteries
+country_event = {
+	id = FEE_Rel_Events.107
+	title = FEE_Rel_Events.107.T
+	desc = FEE_Rel_Events.107.D
+	picture = RELIGIOUS_TURMOIL_eventPicture
+
+	trigger = {
+		OR = {
+			has_country_modifier = fee_rel_flemish_indifference
+			has_country_modifier = fee_rel_religious_uncertainty
+			has_country_modifier = fee_rel_walloon_catholic_zeal
+		}
+		OR = {
+			religion = protestant
+			religion = reformed
+			religion = anglican
+			religion = hussite
+		}
+		any_owned_province = {
+			NOT = { is_overseas = yes }
+			religion_group = ROOT
+			is_in_capital_area = yes
+			NOT = { has_province_flag = fee_dissolution_province }
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 48
+	}
+
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					NOT = { is_overseas = yes }
+					religion_group = ROOT
+					is_in_capital_area = yes
+				}
+				set_province_flag = fee_dissolution_province
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Rel_Events.107.OPT1
+
+		add_stability = -1
+		add_estate_influence_modifier = {
+			influence = -10
+			duration = 3650
+			estate = estate_church
+			desc = fee_rel_raided_monasteries
+
+		}
+		change_estate_land_share = {
+			estate = estate_church
+			share = -2
+		}
+		every_neighbor_country = {
+			limit = { religion = catholic }
+			add_opinion = {
+				who = ROOT
+				modifier = fee_rel_raided_monasteries
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Rel_Events.107.OPT2
+
+		random_owned_province = {
+			limit = { has_province_flag = fee_dissolution_province }
+			add_loot_from_province_effect = yes
+			fee_spawn_religious_rebels = { size = 2 }
+		}
+	}
+
+	option = {
+		name = FEE_Rel_Events.107.OPT3
+
+		add_fervor = 25
+		add_church_power = 50
+		add_prestige_or_monarch_power = { amount = 10 }
+	}
+}
+
+# Taxation of the Church?
+country_event = {
+	id = FEE_Rel_Events.108
+	title = FEE_Rel_Events.108.T
+	desc = FEE_Rel_Events.108.D
+	picture = RELIGIOUS_TURMOIL_eventPicture
+
+	trigger = {
+		OR = {
+			has_country_modifier = fee_rel_flemish_indifference
+			has_country_modifier = fee_rel_religious_uncertainty
+			has_country_modifier = fee_rel_walloon_catholic_zeal
+		}
+		religion_group = christian
+	}
+
+	mean_time_to_happen = {
+		months = 48
+	}
+
+	option = {
+		name = FEE_Rel_Events.108.OPT1
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 1
+				OR = {
+					religion = protestant
+					religion = reformed
+					religion = anglican
+					religion = hussite
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					religion = catholic
+					religion = coptic
+					religion = orthodox
+				}
+			}
+		}
+
+		add_years_of_income = 0.25
+		if = {
+			limit = { religion = catholic }
+			add_papal_influence = -20
+			add_stability = -1
+		}
+		add_country_modifier = {
+			name = fee_rel_taxation_clergy
+			duration = 3650
+		}
+	}
+
+	option = {
+		name = FEE_Rel_Events.108.OPT2
+		ai_chance = {
+			factor = 75
+			modifier = {
+				factor = 1
+				OR = {
+					religion = catholic
+					religion = coptic
+					religion = orthodox
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					religion = protestant
+					religion = reformed
+					religion = anglican
+					religion = hussite
+				}
+			}
+		}
+
+		if = {
+			limit = { religion = catholic }
+			add_stability_or_adm_power = yes
+		}
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = 10
+		}
+		add_country_modifier = {
+			name = fee_rel_protection_clergy
+			duration = 18250
+		}
+	}
+}
+
+# Removal of Church Privileges
+country_event = {
+	id = FEE_Rel_Events.109
+	title = FEE_Rel_Events.109.T
+	desc = FEE_Rel_Events.109.D
+	picture = RELIGIOUS_TURMOIL_eventPicture
+
+	trigger = {
+		OR = {
+			has_country_modifier = fee_rel_flemish_indifference
+			has_country_modifier = fee_rel_religious_uncertainty
+			has_country_modifier = fee_rel_walloon_catholic_zeal
+		}
+		religion_group = christian
+	}
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	option = {
+		name = FEE_Rel_Events.109.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		if = {
+			limit = { religion = catholic }
+			add_papal_influence = -25
+		}
+		else_if = {
+			limit = { religion = reformed }
+			add_fervor = 50
+		}
+		else = {
+			add_church_power = 50
+		}
+		add_stability = -1
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = -10
+		}
+		add_country_modifier = {
+			name = fee_rel_curtailing_clergy_privileges
+			duration = 7300
+		}
+	}
+
+	option = {
+		name = FEE_Rel_Events.109.OPT2
+		ai_chance = {
+			factor = 25
+		}
+
+		if = {
+			limit = { religion = catholic }
+			add_papal_influence = 10
+		}
+		else_if = {
+			limit = { religion = reformed }
+			add_fervor = -100
+		}
+		else = {
+			add_church_power = -100
+		}
+		add_country_modifier = {
+			name = fee_rel_entrenched_clergy
+			duration = 7300
+		}
+	}
+}
+
+# Restoration of Literary Latin and Latin Mass
+country_event = {
+	id = FEE_Rel_Events.110
+	title = FEE_Rel_Events.110.T
+	desc = FEE_Rel_Events.110.D
+	picture = RELIGIOUS_TURMOIL_eventPicture
+
+	trigger = {
+		OR = {
+			has_country_modifier = fee_rel_flemish_indifference
+			has_country_modifier = fee_rel_religious_uncertainty
+			has_country_modifier = fee_rel_walloon_catholic_zeal
+		}
+		religion = catholic
+		OR = {
+			any_owned_province = {
+				is_core = ROOT
+				has_province_modifier = religious_zeal_at_conv
+			}
+			has_country_modifier = recently_changed_religion_dummy
+		}
+		NOT = { has_country_flag = fee_rel_latin_mass_victorious_flag }
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Rel_Events.110.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_stability_or_adm_power = yes
+		add_papal_influence = 25
+		if = {
+			limit = {
+				primary_culture = wallonian
+				is_expanded_mod_active = { mod = governments }
+			}
+			add_government_reform = ge_reintroduction_literary_latin
+		}
+		add_country_modifier = {
+			name = fee_rel_latin_mass_victorious
+			duration = 9125
+		}
+		add_opinion = {
+			who = PAP
+			modifier = fee_rel_latin_mass_victorious
+		}
+		set_country_flag = fee_rel_latin_mass_victorious_flag
+	}
+}
+
+# Reconciling with Rome
+country_event = {
+	id = FEE_Rel_Events.111
+	title = FEE_Rel_Events.111.T
+	desc = FEE_Rel_Events.111.D
+	picture = RELIGIOUS_TURMOIL_eventPicture
+
+	trigger = {
+		OR = {
+			has_country_modifier = fee_rel_flemish_indifference
+			has_country_modifier = fee_rel_religious_uncertainty
+			has_country_modifier = fee_rel_walloon_catholic_zeal
+		}
+		religion = catholic
+		has_country_modifier = recently_changed_religion_dummy
+		NOT = { has_country_flag = fee_rel_reconciliation_with_rome_flag }
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	option = {
+		name = FEE_Rel_Events.111.OPT1
+		ai_chance = {
+			factor = 75
+		}
+
+		add_papal_influence = 10
+		add_opinion = {
+			who = PAP
+			modifier = fee_rel_reconciliation_with_rome
+		}
+		set_country_flag = fee_rel_reconciliation_with_rome_flag
+	}
+}
+
+# Heretic Uprising in [ get province name]
+province_event = {
+	id = FEE_Rel_Events.112
+	title = FEE_Rel_Events.112.T
+	desc = FEE_Rel_Events.112.D
+	picture = RELIGIOUS_TURMOIL_eventPicture
+
+	trigger = {
+		owner = {
+			OR = {
+				has_country_modifier = fee_rel_flemish_indifference
+				has_country_modifier = fee_rel_religious_uncertainty
+				has_country_modifier = fee_rel_walloon_catholic_zeal
+			}
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 120
+		modifier = {
+			factor = 0.5
+			owner = { has_country_modifier = fee_rel_religious_uncertainty }
+		}
+		modifier = {
+			factor = 0.25
+			owner = { has_country_modifier = fee_rel_walloon_catholic_zeal }
+		}
+	}
+
+	option = {
+		name = FEE_Rel_Events.112.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		if = {
+			limit = {
+				owner = { religion = catholic }
+			}
+			random_list = {
+				50 = {
+					spawn_rebels = {
+						size = 2
+						type = protestant_rebels
+					}
+				}
+				50 = {
+					spawn_rebels = {
+						size = 2
+						type = reformed_rebels
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				owner = { religion = protestant }
+			}
+			random_list = {
+				50 = {
+					spawn_rebels = {
+						size = 2
+						type = catholic_rebels
+					}
+				}
+				50 = {
+					spawn_rebels = {
+						size = 2
+						type = reformed_rebels
+					}
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				owner = { religion = reformed }
+			}
+			random_list = {
+				50 = {
+					spawn_rebels = {
+						size = 2
+						type = catholic_rebels
+					}
+				}
+				50 = {
+					spawn_rebels = {
+						size = 2
+						type = protestant_rebels
+					}
+				}
+			}
+		}
+		else = {
+			spawn_rebels = {
+				size = 2
+				type = heretic_rebels
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Rel_Events.112.OPT2
+		ai_chance = {
+			factor = 50
+		}
+		if = {
+			limit = {
+				owner = { religion = catholic }
+			}
+			random_list = {
+				25 = { change_religion = protestant }
+				25 = { change_religion = reformed }
+				50 = { add_local_autonomy = 25 }
+			}
+		}
+		else_if = {
+			limit = {
+				owner = { religion = protestant }
+			}
+			random_list = {
+				25 = { change_religion = catholic }
+				25 = { change_religion = reformed }
+				50 = { add_local_autonomy = 25 }
+			}
+		}
+		else_if = {
+			limit = {
+				owner = { religion = reformed }
+			}
+			random_list = {
+				25 = { change_religion = catholic }
+				25 = { change_religion = protestant }
+				50 = { add_local_autonomy = 25 }
+			}
+		}
+		else = {
+			random_list = {
+				50 = {
+					fee_change_random_religion_group = { christian = 0 }
+				}
+				50 = { add_local_autonomy = 25 }
+			}
+		}
+	}
+}
+
+# Religious Settlement?
+country_event = {
+	id = FEE_Rel_Events.113
+	title = FEE_Rel_Events.113.T
+	desc = FEE_Rel_Events.113.D
+	picture = a_center_of_religion
+
+	trigger = {
+		had_global_flag = {
+			flag = fee_age_of_reformation_flag
+			days = 18250
+		}
+		OR = {
+			has_country_modifier = fee_rel_flemish_indifference
+			has_country_modifier = fee_rel_religious_uncertainty
+			has_country_modifier = fee_rel_walloon_catholic_zeal
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = FEE_Rel_Events.113.OPT1
+		ai_chance = {
+			factor = 50
+		}
+
+		add_stability_or_adm_power_per_stab = { amount = 2 }
+
+		remove_country_modifier = fee_rel_flemish_indifference
+		remove_country_modifier = fee_rel_religious_uncertainty
+		remove_country_modifier = fee_rel_walloon_catholic_zeal
+
+		add_country_modifier_for_age = {
+			name = fee_rel_reconcilation_faith
+			age = age_of_reformation
+		}
+	}
+}
+
 
 #########	Coptic Events	#########
 

@@ -123,6 +123,9 @@ on_colony_finished = {
 			id = FEE_Genoa_Events.34
 			days = 90
 		}
+		province_event = {
+			id = FEE_Rel_Events.112
+		}
 	}
 }
 
@@ -319,6 +322,10 @@ on_new_age = {
 			limit = { has_province_modifier = fee_dhundar_natural_philosophy }
 			remove_province_modifier = fee_dhundar_natural_philosophy
 		}
+	}
+	if = {
+		limit = { current_age = age_of_reformation }
+		set_global_flag = fee_age_of_reformation_flag
 	}
 }
 

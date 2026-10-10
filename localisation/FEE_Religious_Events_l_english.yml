@@ -58,6 +58,39 @@
  FEE_Rel_Events.106.D: "Established mere days after his appointment as Governor of the Netherlands, Alba hoped to use this council to circumvent traditional Flemish laws, jurisdictions, and rights, believing the established institutions to be hopelessly sympathetic to the heretics. The Court’s indiscriminate reprisals quickly earned it the moniker “Council of Blood” and backfired, leading to ever more discontent. \nAlba quickly turned his attention to the Catholic nobles of Flanders who supported reconciliation with the Reformers. Among the most influential of them was Lamoral, the Count of Egmont. All who Alba found insufficiently ardent for the purging of heresy, including the Count, were sentenced to death and executed in Brussels. In addition, Alba imposed heavy new taxes on the Netherlands, leading many cities to declare open rebellion in the beginnings of the Dutch Revolt."
  FEE_Rel_Events.106.OPT1: "It's treasonm then..."
 
+ FEE_Rel_Events.107.T: "Dissolution of Monasteries"
+ FEE_Rel_Events.107.D: "As the Reformation makes progress in our realm, the papist pushback has become increasingly muted. However, entrenched institutions are not easily uprooted, and one of the most deeply rooted bastions of Catholicism in our land are the various monasteries, grown both powerful and fat off of centuries of well-intentioned but misguided donations. Not to mention, they have powerful sway over the populace still by having a virtual monopoly on that commodity the masses all crave to numb their miseries; their beer and wine. They have not yet wielded their immense wealth and influence in a coordinated way against us, but if our cause is ever to truly succeed, something will have to be done to break their power once and for all."
+ FEE_Rel_Events.107.OPT1: "By order of the [Root.Monarch.GetRulerTitleAndNameOrRegency], their assets are forfeit to the Crown!"
+ FEE_Rel_Events.107.OPT2: "Perhaps a bit of mob justice wouldn’t hurt?"
+ FEE_Rel_Events.107.OPT3: "As misguided as they are, stealing is still a sin..."
+
+ FEE_Rel_Events.108.T: "Taxation of the Church?"
+ FEE_Rel_Events.108.D: "Long has the institution of the church been exempt from taxation due to their immense spiritual importance to the lives of all classes of society. With the new ideas of the Reformation, however, came new questions about this status, especially as churches and monasteries throughout the Middle Ages, once bound by vows of poverty, amassed fortunes well beyond those of most secular figures. The decision of whether to tax the church or not has come to the forefront in recent days. How shall we proceed?"
+ FEE_Rel_Events.108.OPT1: "This can only help our revenues."
+ FEE_Rel_Events.108.OPT2: "We cannot interfere with the holy church!"
+
+ FEE_Rel_Events.109.T: "Removal of Church Privileges"
+ FEE_Rel_Events.109.D: "“The serfs who worked for all, the knights who fought for all, the clergy who prayed for all.” Thus was the social order maintained for most of the Middle Ages. Due to the clergy’s influence as one of the major social classes, they have amassed quite a few privileges and concessions from our state. The Reformation has cast their privileged status into doubt. Even if we do not join their more radical factions and turn on the priestly class altogether, we can still use the religious strife to leverage our protection from the heretics and make them an offer they can’t refuse..."
+ FEE_Rel_Events.109.OPT1: "The clergy will depend on us!"
+ FEE_Rel_Events.109.OPT2: "We cannot"
+
+ FEE_Rel_Events.110.T: "Restoration of Literary Latin and Latin Mass"
+ FEE_Rel_Events.110.D: "The reformist heretics did a lot of damage to the holy practices of our mother church. One of the foremost among them is their abolishment of the Latin Mass, defying the decrees of the Church. Through our vigilant efforts to eradicate the heresy, we have finally burned enough people at the stake to make steps to reintroduce the Latin Mass"
+ FEE_Rel_Events.110.OPT1: "Te Deum!"
+
+ FEE_Rel_Events.111.T: "Reconciling with Rome"
+ FEE_Rel_Events.111.D: "After much efforts by the Inquisition, and even help from Catholic supporters abroad, the true Church has finally been returned to its seat of primacy in [Root.GetName]. Through the focused efforts of our diplomatic corps, emissaries have been dispatched to reestablish ties with the Papacy. The first few were made to make public professions of repentance on behalf of our people, going through St. Peter’s Square on their knees in sackcloth and ashes. The next set of emissaries, however, got somewhat better treatment, as the Papacy warmed up to our missives and became less suspicious of our intentions. The wounds between the Pope and ourselves are beginning to heal."
+ FEE_Rel_Events.111.OPT1: "May the Lord forgive us for the sins of the heretics."
+
+ FEE_Rel_Events.112.T: "Heretic Uprising in [Root.GetName]"
+ FEE_Rel_Events.112.D: "Despite our attempts at reconciliation, whether peacefully or otherwise, there are still many heretics who oppose our efforts. One never knows when their next uprising will occur next, as they possess many foreign backers and have a wide-ranging network. Yet again, a group of them has organized a revolt against the [Root.GovernmentName], with the stated goal of casting out the [Root.Religion.GetName] faith."
+ FEE_Rel_Events.112.OPT1: "Oh no..."
+ FEE_Rel_Events.112.OPT2: "Grant them religious autonomy"
+
+ FEE_Rel_Events.113.T: "Religious Settlement?"
+ FEE_Rel_Events.113.D: "Finally, after many long years of religious strife and uncertainty, it seems the zeal of our citizens for or against the state religion is finally burning itself out. That, or perhaps our wise leadership and efforts at reconciliation have finally paid off. Many following faiths considered heretical to each other have agreed to live and let live, and widespread acceptance of the dominance of the [Root.Religion.GetName] faith has spread. Although isolated skirmishes remain, the stability of the [Root.GovernmentName] is secured."
+ FEE_Rel_Events.113.OPT1: "Finally, an end to the chaos!"
+
 ######### Coptic Events #########
  FEE_Rel_Events.300.T: "Apostle Intombed"
  FEE_Rel_Events.300.D: "In the humble city of Mylapore, we find an even more humble building, safeguarded and maintained by a small group of families. This, according to these families, is the original tomb of Thomas the Apostle. These families had once even attempted to contact the west via Venetian traders, sending three bones of the famed skeleton west to Rome and Constantinople with these traders. However, in their greed, none of the bones made it to either location and were sold to some Norman nobles in the south of Italy. This led them to believe they were abandoned by the ancient churches that Thomas preached so much about shortly before his death and the baptism of some families in southern and western India. It is the descendants of these families that still guard and maintain his tomb today. While it is not permitted to expand nor glorify the building on pain of death by the local Hindu authorities, it is in effect the Vatican or Constantinople of India. The Saint Peter’s Cathedral or Hagia Sophia of the Christians of Saint Thomas. These families have repeatedly asked to not only expand this “church” of theirs but also for the right to preach in the name of Thomas the Apostle."
@@ -110,6 +143,22 @@
  fee_rel_iron_duke: "Iron Duke"
  desc_fee_rel_iron_duke: ""
 
+ fee_rel_taxation_clergy: "Taxation of the Clergy"
+ desc_fee_rel_taxation_clergy: ""
+ fee_rel_protection_clergy: "Protection of Clergy"
+ desc_fee_rel_protection_clergy: ""
+
+ fee_rel_curtailing_clergy_privileges: "Curtailing Clergy Privilges"
+ desc_fee_rel_curtailing_clergy_privileges: ""
+ fee_rel_entrenched_clergy: "Entrenched Clergy"
+ desc_fee_rel_entrenched_clergy: ""
+
+ fee_rel_latin_mass_victorious: "Latin Mass Victorious"
+ desc_fee_rel_latin_mass_victorious: ""
+
+ fee_rel_reconcilation_faith: "Reconciliation Faith"
+ desc_fee_rel_reconcilation_faith: ""
+
  fee_rel_ezharappallikal: "Resurrection of the Ezharappallikal"
  desc_fee_rel_ezharappallikal: ""
  fee_rel_thomist_christian_bastion: "Thomist Christian Bastion"
@@ -118,6 +167,10 @@
  desc_fee_rel_nestorian_religious_center_coptic: ""
  fee_rel_nestorian_religious_center_not_coptic: "Nestorian Religious Center"
  desc_fee_rel_nestorian_religious_center_not_coptic: ""
+
+# Opinion Modifiers
+ fee_rel_raided_monasteries: "Raided Monasteries"
+ fee_rel_reconciliation_with_rome: "Reconciliation with Rome"
 
 # Tooltips:
  fee_rel_council_troubles_TT: "Up to §Y6§! §RDutch Separatist§! rebels will rise up in Random Provinces in the §YFlanders§!, §YNroth Brabant§!, §YHolland§!, §YFrisia§! or §YSouth Brabant§! area."

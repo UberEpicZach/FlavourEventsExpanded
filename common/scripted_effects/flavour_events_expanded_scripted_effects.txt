@@ -1425,3 +1425,78 @@ fee_destroy_tax_building_or_lose_base_tax = {
 		add_base_tax = -2
 	}
 }
+
+fee_spawn_religious_rebels = {
+	if = {
+		limit = { religion = catholic }
+		spawn_rebels = {
+			size = $size$
+			type = catholic_rebels
+		}
+	}
+	else_if = {
+		limit = { religion = reformed }
+		spawn_rebels = {
+			size = $size$
+			type = reformed_rebels
+		}
+	}
+	else_if = {
+		limit = { religion = protestant }
+		spawn_rebels = {
+			size = $size$
+			type = protestant_rebels
+		}
+	}
+	else_if = {
+		limit = { religion = hussite }
+		spawn_rebels = {
+			size = $size$
+			type = hussite_rebels
+		}
+	}
+	else_if = {
+		limit = { religion = anglican }
+		spawn_rebels = {
+			size = $size$
+			type = anglican_rebels
+		}
+	}
+	else_if = {
+		limit = { religion = orthodox }
+		spawn_rebels = {
+			size = $size$
+			type = orthodox_rebels
+		}
+	}
+	else_if = {
+		limit = { religion = coptic }
+		spawn_rebels = {
+			size = $size$
+			type = coptic_rebels
+		}
+	}
+}
+
+fee_change_random_religion_group = {
+	[[christian]
+		random_list = {
+			14 = { change_religion = catholic }
+			14 = { change_religion = anglican }
+			14 = { change_religion = hussite }
+			14 = { change_religion = protestant }
+			14 = { change_religion = reformed }
+			14 = { change_religion = orthodox }
+			14 = { change_religion = coptic }
+		}
+		hidden_effect = { add_prestige = $christian$ }
+	]
+	[[muslim]
+		random_list = {
+			33 = { change_religion = sunni }
+			33 = { change_religion = shiite }
+			33 = { change_religion = ibadi }
+		}
+		hidden_effect = { add_prestige = $muslim$ }
+	]
+}

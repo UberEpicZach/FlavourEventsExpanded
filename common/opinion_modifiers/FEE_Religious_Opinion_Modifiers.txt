@@ -2,3 +2,17 @@ fee_rel_loyal_catholic_ruler = {
 	opinion = 50
 	yearly_decay = 2
 }
+
+fee_rel_raided_monasteries = {
+	opinion = -20
+	yearly_decay = 2
+}
+
+fee_rel_latin_mass_victorious = {
+	opinion = 25
+}
+
+fee_rel_reconciliation_with_rome = {
+	opinion = 25
+	yearly_decay = 2
+}
