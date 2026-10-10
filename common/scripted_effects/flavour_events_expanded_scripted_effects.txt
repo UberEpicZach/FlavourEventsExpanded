@@ -1411,3 +1411,17 @@ fee_reduce_estate_rajput_loyalty_effect_big = {
 		}
 	}
 }
+
+fee_destroy_tax_building_or_lose_base_tax = {
+	if = {
+		limit = { has_building = cathedral }
+		remove_building = cathedral
+	}
+	else_if = {
+		limit = { has_building = temple }
+		remove_building = temple
+	}
+	else = {
+		add_base_tax = -2
+	}
+}

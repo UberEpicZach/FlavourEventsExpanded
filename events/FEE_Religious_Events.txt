@@ -1,12 +1,12 @@
-namespace = FEE_Religious_Events
+namespace = FEE_Rel_Events
 
 #########	Catholic events	#########
 
 # Masterpiece of Religious Renaissance Art
 country_event = {
-	id = FEE_Religious_Events.1
-	title = FEE_Religious_Events.1.T
-	desc = FEE_Religious_Events.1.D
+	id = FEE_Rel_Events.1
+	title = FEE_Rel_Events.1.T
+	desc = FEE_Rel_Events.1.D
 	picture = IMPORTANT_STATUE_eventPicture
 
 	trigger = {
@@ -24,7 +24,7 @@ country_event = {
 
 	#Display it for the entire Christian world to see
 	option = {
-		name = FEE_Religious_Events.1.OPT1
+		name = FEE_Rel_Events.1.OPT1
 
 		change_religious_influence_equivalent_fee = { add = 10 }
 		add_prestige_or_monarch_power = { amount = 10 }
@@ -32,7 +32,7 @@ country_event = {
 
 	#Perfect timing, I was just in need of some money
 	option = {
-		name = FEE_Religious_Events.1.OPT2
+		name = FEE_Rel_Events.1.OPT2
 		trigger = {
 			ai = no
 		}
@@ -44,7 +44,7 @@ country_event = {
 
 	#This will show the people how pious I am
 	option = {
-		name = FEE_Religious_Events.1.OPT3
+		name = FEE_Rel_Events.1.OPT3
 
 		add_stability_or_adm_power = yes
 		change_religious_influence_equivalent_fee = { remove = 5 }
@@ -53,9 +53,9 @@ country_event = {
 
 # Growth of Popular Piety
 country_event = {
-	id = FEE_Religious_Events.2
-	title = FEE_Religious_Events.2.T
-	desc = FEE_Religious_Events.2.D
+	id = FEE_Rel_Events.2
+	title = FEE_Rel_Events.2.T
+	desc = FEE_Rel_Events.2.D
 	picture = RELIGION_eventPicture
 
 	trigger = {
@@ -92,7 +92,7 @@ country_event = {
 
 	# These people should listen to the pope
 	option = {
-		name = FEE_Religious_Events.2.OPT1
+		name = FEE_Rel_Events.2.OPT1
 		trigger = {
 			ai = no
 		}
@@ -100,18 +100,18 @@ country_event = {
 		add_reform_desire = 0.01
 		change_religious_influence_equivalent_fee = { add = 15 }
 		add_country_modifier = {
-			name = fee_religious_piety_resisted
+			name = fee_rel_piety_resisted
 			duration = 3650
 		}
 	}
 
 	# People should always strive for new ways to express their faith
 	option = {
-		name = FEE_Religious_Events.2.OPT2
+		name = FEE_Rel_Events.2.OPT2
 
 		change_religious_influence_equivalent_fee = { remove = 15 }
 		add_country_modifier = {
-			name = fee_religious_piety_supported
+			name = fee_rel_piety_supported
 			duration = 3650
 		}
 	}
@@ -122,9 +122,9 @@ country_event = {
 
 # Johannes Bugenhagen, second Apostle of the North
 country_event = {
-	id = FEE_Religious_Events.100
-	title = FEE_Religious_Events.100.T
-	desc = FEE_Religious_Events.100.D
+	id = FEE_Rel_Events.100
+	title = FEE_Rel_Events.100.T
+	desc = FEE_Rel_Events.100.D
 	picture = ADVISOR_eventPicture
 
 	trigger = {
@@ -163,7 +163,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Religious_Events.100.OPT1
+		name = FEE_Rel_Events.100.OPT1
 		define_advisor = {
 			type = inquisitor
 			name = "Johannes Bugenhagen"
@@ -173,16 +173,16 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Religious_Events.100.OPT2
+		name = FEE_Rel_Events.100.OPT2
 		add_stability_or_adm_power = yes
 	}
 }
 
 # A Protestant in [Owner.GetAdjective] Lands
 province_event = {
-	id = FEE_Religious_Events.101
-	title = FEE_Religious_Events.101.T
-	desc = FEE_Religious_Events.101.D
+	id = FEE_Rel_Events.101
+	title = FEE_Rel_Events.101.T
+	desc = FEE_Rel_Events.101.D
 	picture = RELIGION_eventPicture
 
 	trigger = {
@@ -217,7 +217,7 @@ province_event = {
 	}
 
 	option = {
-		name = FEE_Religious_Events.101.OPT1
+		name = FEE_Rel_Events.101.OPT1
 
 		change_religion = protestant
 	}
@@ -226,9 +226,9 @@ province_event = {
 
 # Religious Stance of the [Root.Monarch.GetTitle]
 country_event = {
-	id = FEE_Religious_Events.102
-	title = FEE_Religious_Events.102.T
-	desc = FEE_Religious_Events.102.D
+	id = FEE_Rel_Events.102
+	title = FEE_Rel_Events.102.T
+	desc = FEE_Rel_Events.102.D
 	picture = RELIGION_eventPicture
 
 	trigger = {
@@ -246,31 +246,31 @@ country_event = {
 	is_triggered_only = yes
 
 	option = {
-		name = FEE_Religious_Events.102.OPT1
+		name = FEE_Rel_Events.102.OPT1
 		trigger = {
 			primary_culture = flemish
 		}
 
 		add_country_modifier_for_age = {
-			name = fee_religious_flemish_indifference
+			name = fee_rel_flemish_indifference
 			age = age_of_reformation
 		}
 	}
 
 	option = {
-		name = FEE_Religious_Events.102.OPT2
+		name = FEE_Rel_Events.102.OPT2
 		trigger = {
 			primary_culture = dutch
 		}
 
 		add_country_modifier_for_age = {
-			name = fee_religious_religious_uncertainty
+			name = fee_rel_religious_uncertainty
 			age = age_of_reformation
 		}
 	}
 
 	option = {
-		name = FEE_Religious_Events.102.OPT3
+		name = FEE_Rel_Events.102.OPT3
 		trigger = {
 			primary_culture = wallonian
 		}
@@ -282,38 +282,38 @@ country_event = {
 		else = { add_stability = -2 }
 		
 		add_country_modifier_for_age = {
-			name = fee_religious_walloon_catholic_zeal
+			name = fee_rel_walloon_catholic_zeal
 			age = age_of_reformation
 		}
 	}
 }
 
-# [Root.GetUsableNameCap] in the Age of Reformation
+# Religious Stance of the [Root.Monarch.GetTitle]
 country_event = {
-	id = FEE_Religious_Events.103
-	title = FEE_Religious_Events.103.T
-	desc = FEE_Religious_Events.103.D
+	id = FEE_Rel_Events.103
+	title = FEE_Rel_Events.103.T
+	desc = FEE_Rel_Events.103.D
 	picture = RELIGION_eventPicture
 
 	trigger = {
 		OR = {
-			has_country_modifier = fee_religious_flemish_indifference
-			has_country_modifier = fee_religious_religious_uncertainty
-			has_country_modifier = fee_religious_walloon_catholic_zeal
+			has_country_modifier = fee_rel_flemish_indifference
+			has_country_modifier = fee_rel_religious_uncertainty
+			has_country_modifier = fee_rel_walloon_catholic_zeal
 		}
 	}
 
 	is_triggered_only = yes
 
 	option = {
-		name = FEE_Religious_Events.103.OPT1C
+		name = FEE_Rel_Events.103.OPT1C
 		trigger = {
 			religion = catholic
 		}
 
 		add_papal_influence = -100
 		add_ruler_modifier = {
-			name = fee_religious_heretic_ruler
+			name = fee_rel_heretic_ruler
 			duration = -1
 		}
 		if = {
@@ -333,7 +333,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Religious_Events.103.OPT1
+		name = FEE_Rel_Events.103.OPT1
 		trigger = {
 			NOT = { religion = catholic }
 		}
@@ -341,7 +341,7 @@ country_event = {
 		add_church_power = 50
 		add_fervor = 25
 		add_ruler_modifier = {
-			name = fee_religious_champion_reformation
+			name = fee_rel_champion_reformation
 			duration = -1
 		}
 		if = {
@@ -351,23 +351,23 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Religious_Events.103.OPT2C
+		name = FEE_Rel_Events.103.OPT2C
 		trigger = {
 			religion = catholic
 		}
 
 		add_papal_influence = 50
 		add_ruler_modifier = {
-			name = fee_religious_loyal_catholic_ruler
+			name = fee_rel_loyal_catholic_ruler
 			duration = -1
 		}
 		add_opinion = {
 			who = PAP
-			modifier = fee_religious_loyal_catholic_ruler
+			modifier = fee_rel_loyal_catholic_ruler
 		}
 		reverse_add_opinion = {
 			who = PAP
-			modifier = fee_religious_loyal_catholic_ruler
+			modifier = fee_rel_loyal_catholic_ruler
 		}
 		if = {
 			limit = {
@@ -382,7 +382,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Religious_Events.103.OPT2
+		name = FEE_Rel_Events.103.OPT2
 		trigger = {
 			NOT = { religion = catholic }
 		}
@@ -390,7 +390,7 @@ country_event = {
 		add_church_power = -50
 		add_fervor = -100
 		add_ruler_modifier = {
-			name = fee_religious_papal_lapdog
+			name = fee_rel_papal_lapdog
 			duration = -1
 		}
 		random_owned_province = {
@@ -399,10 +399,10 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Religious_Events.103.OPT3
+		name = FEE_Rel_Events.103.OPT3
 
 		add_ruler_modifier = {
-			name = fee_religious_tolerant
+			name = fee_rel_tolerant
 			duration = -1
 		}
 		if = {
@@ -413,13 +413,266 @@ country_event = {
 	}
 }
 
+
+# Beeldenstorm
+country_event = {
+	id = FEE_Rel_Events.104
+	title = FEE_Rel_Events.104.T
+	desc = FEE_Rel_Events.104.D
+	picture = RELIGIOUS_TURMOIL_eventPicture
+
+	trigger = {
+		current_age = age_of_reformation
+		num_of_owned_provinces_with = {
+			value = 2
+			area = flanders_area
+		}
+		owns = 1865
+		any_owned_province = { religion = reformed }
+		any_owned_province = {
+			religion = catholic
+			NOT = { has_province_flag = fee_beeldenstorm_flag }
+		}
+	}
+
+	fire_only_once = yes
+
+	mean_time_to_happen = {
+		months = 72
+	}
+
+	immediate = {
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					religion = catholic
+					NOT = { has_province_flag = fee_beeldenstorm_flag }
+				}
+				save_event_target_as = fee_ned_catholic_province
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Rel_Events.104.OPT1
+
+		event_target:fee_ned_catholic_province = {
+			reformed_rebels = 3
+			add_province_modifier = {
+				name = fee_rel_beeldenstorm_aftermath
+				duration = 7300
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Rel_Events.104.OPT2
+		trigger = {
+			NOT = { religion = reformed }
+		}
+
+		add_stability = -1
+		add_prestige = -20
+
+		event_target:fee_ned_catholic_province = {
+			add_devastation = 25
+			add_province_modifier = {
+				name = fee_rel_beeldenstorm_aftermath
+				duration = 7300
+			}
+			fee_destroy_tax_building_or_lose_base_tax = yes
+		}
+	}
+
+	option = {
+		name = FEE_Rel_Events.104.OPT3
+		trigger = {
+			religion = reformed
+		}
+
+
+		add_stability = -1
+		add_prestige = -20
+		add_fervor = 25
+		remove_country_modifier = fee_rel_flemish_indifference
+		add_country_modifier_for_age = {
+			name = fee_rel_flemish_reformed_zeal
+			age = age_of_reformation
+		}
+
+		event_target:fee_ned_catholic_province = {
+			add_devastation = 25
+			add_province_modifier = {
+				name = fee_rel_beeldenstorm_aftermath
+				duration = 7300
+			}
+			add_loot_from_province_effect = yes
+			fee_destroy_tax_building_or_lose_base_tax = yes
+		}
+	}
+
+	option = {
+		name = FEE_Rel_Events.104.OPT4
+		trigger = {
+			primary_culture = wallonian
+		}
+
+		country_event = {
+			id = FEE_Rel_Events.105
+			days = 3
+		}
+	}
+
+	after = {
+		hidden_effect = {
+			event_target:fee_ned_catholic_province = { set_province_flag = fee_beeldenstorm_flag }
+		}
+	}
+}
+
+# Duke of Alba
+country_event = {
+	id = FEE_Rel_Events.105
+	title = FEE_Rel_Events.105.T
+	desc = FEE_Rel_Events.105.D
+	picture = GENERALS_DISCUSSING_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Rel_Events.105.OPT1
+
+		define_general = {
+			name = "Fernando Alvarez de Toledo"
+			fire = 4
+			shock = 6
+			manuever = 4
+			siege = 4
+			trait = siege_specialist_personality
+		}
+		add_country_modifier = {
+			name = fee_rel_iron_duke
+			duration = 10950
+		}
+		country_event = {
+			id = FEE_Rel_Events.106
+			days = 3
+		}
+		every_owned_province = {
+			limit = {
+				OR = {
+					culture = dutch
+					culture = flemish
+				}
+			}
+			add_province_modifier = {
+				name = fee_rel_spanish_fury
+				duration = 10950
+			}
+		}
+		random_owned_province = {
+			limit = {
+				OR = {
+					area = flanders_area
+					area = brabant_area
+				}
+				religion_group = ROOT
+				NOT = { religion = ROOT }
+			}
+			spawn_rebels = {
+				size = 3
+				type = heretic_rebels
+			}
+			spawn_rebels = {
+				size = 3
+				type = heretic_rebels
+			}
+		}
+		random_owned_province = {
+			limit = {
+				OR = {
+					area = flanders_area
+					area = brabant_area
+				}
+			}
+			spawn_rebels = {
+				size = 3
+				type = nationalist_rebels
+				culture = dutch
+			}
+			spawn_rebels = {
+				size = 3
+				type = nationalist_rebels
+				culture = dutch
+			}
+		}
+	}
+}
+
+# Council of Troubles
+country_event = {
+	id = FEE_Rel_Events.106
+	title = FEE_Rel_Events.106.T
+	desc = FEE_Rel_Events.106.D
+	picture = GENERALS_DISCUSSING_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = FEE_Rel_Events.106.OPT1
+
+
+		custom_tooltip = fee_rel_council_troubles_TT
+		hidden_effect = {
+			while = {
+				limit = {
+					any_owned_province = {
+						OR = {
+							area = flanders_area
+							area = north_brabant_area
+							area = holland_area
+							area = frisia_area
+							area = brabant_area
+						}
+						NOT = { has_province_flag = fee_rel_council_troubles_flag }
+					}
+					NOT = {
+						num_of_owned_provinces_with = {
+							value = 6
+							has_province_flag = fee_rel_council_troubles_flag
+						}
+					}
+				}
+				random_owned_province = {
+					limit = {
+						OR = {
+							area = flanders_area
+							area = north_brabant_area
+							area = holland_area
+							area = frisia_area
+							area = brabant_area
+						}
+						NOT = { has_province_flag = fee_rel_council_troubles_flag }
+					}
+					set_province_flag = fee_rel_council_troubles_flag
+					spawn_rebels = {
+						size = 3
+						type = nationalist_rebels
+						culture = dutch
+					}
+				}
+			}
+		}
+	}
+}
+
 #########	Coptic Events	#########
 
 # Apostle Intombed
 country_event = {
-	id = FEE_Religious_Events.300
-	title = FEE_Religious_Events.300.T
-	desc = FEE_Religious_Events.300.D
+	id = FEE_Rel_Events.300
+	title = FEE_Rel_Events.300.T
+	desc = FEE_Rel_Events.300.D
 	picture = RELIGION_eventPicture
 
 	major = yes
@@ -446,7 +699,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Religious_Events.300.OPT1
+		name = FEE_Rel_Events.300.OPT1
 
 		ai_chance = { factor = 0.6 }
 
@@ -455,14 +708,14 @@ country_event = {
 			add_base_tax = 3
 			add_or_upgrade_tax_building = yes
 			add_province_modifier = {
-				name = fee_religious_basilica_of_thomas_the_apostle
+				name = fee_rel_basilica_of_thomas_the_apostle
 				duration = -1
 			}
 		}
 	}
 
 	option = {
-		name = FEE_Religious_Events.300.OPT2
+		name = FEE_Rel_Events.300.OPT2
 
 		ai_chance = { factor = 0.4 }
 
@@ -476,9 +729,9 @@ country_event = {
 
 # Saint Thomas Christians
 country_event = {
-	id = FEE_Religious_Events.301
-	title = FEE_Religious_Events.301.T
-	desc = FEE_Religious_Events.301.D
+	id = FEE_Rel_Events.301
+	title = FEE_Rel_Events.301.T
+	desc = FEE_Rel_Events.301.D
 	picture = RELIGION_eventPicture
 
 	fire_only_once = yes
@@ -509,25 +762,25 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Religious_Events.301.OPT1
+		name = FEE_Rel_Events.301.OPT1
 
 		ai_chance = { factor = 0.5 }
 
-		custom_tooltip = FEE_Religious_Events.301.tt.1
+		custom_tooltip = FEE_Rel_Events.301.tt.1
 		tooltip = {
 			add_province_modifier = {
-				name = fee_religious_nestorian_religious_center_coptic
+				name = fee_rel_nestorian_religious_center_coptic
 				duration = -1
 			}
 		}
-		custom_tooltip = FEE_Religious_Events.301.tt.2
+		custom_tooltip = FEE_Rel_Events.301.tt.2
 		tooltip = {
 			add_province_modifier = {
-				name = fee_religious_nestorian_religious_center_not_coptic
+				name = fee_rel_nestorian_religious_center_not_coptic
 				duration = -1
 			}
 		}
-		custom_tooltip = FEE_Religious_Events.301.tt.3
+		custom_tooltip = FEE_Rel_Events.301.tt.3
 		hidden_effect = {
 			every_owned_province = {
 				limit = {
@@ -548,13 +801,13 @@ country_event = {
 						ROOT = { religion = coptic }
 					}
 					add_province_modifier = {
-						name = fee_religious_nestorian_religious_center_coptic
+						name = fee_rel_nestorian_religious_center_coptic
 						duration = -1
 					}
 				}
 				else = {
 					add_province_modifier = {
-						name = fee_religious_nestorian_religious_center_not_coptic
+						name = fee_rel_nestorian_religious_center_not_coptic
 						duration = -1
 					}
 				}
@@ -563,25 +816,25 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Religious_Events.301.OPT2
+		name = FEE_Rel_Events.301.OPT2
 
 		ai_chance = { factor = 0.5 }
 
-		custom_tooltip = FEE_Religious_Events.301.tt.4
+		custom_tooltip = FEE_Rel_Events.301.tt.4
 		tooltip = {
 			add_province_modifier = {
-				name = fee_religious_christian_ghetto_christian
+				name = fee_rel_christian_ghetto_christian
 				duration = -1
 			}
 		}
-		custom_tooltip = FEE_Religious_Events.301.tt.5
+		custom_tooltip = FEE_Rel_Events.301.tt.5
 		tooltip = {
 			add_province_modifier = {
-				name = fee_religious_christian_ghetto_not_christian
+				name = fee_rel_christian_ghetto_not_christian
 				duration = -1
 			}
 		}
-		custom_tooltip = FEE_Religious_Events.301.tt.6
+		custom_tooltip = FEE_Rel_Events.301.tt.6
 		hidden_effect = {
 			every_owned_province = {
 				limit = {
@@ -601,13 +854,13 @@ country_event = {
 						ROOT = { religion_group = christian }
 					}
 					add_province_modifier = {
-						name = fee_religious_christian_ghetto_christian
+						name = fee_rel_christian_ghetto_christian
 						duration = -1
 					}
 				}
 				else = {
 					add_province_modifier = {
-						name = fee_religious_christian_ghetto_not_christian
+						name = fee_rel_christian_ghetto_not_christian
 						duration = -1
 					}
 				}
@@ -618,9 +871,9 @@ country_event = {
 
 # The Ezharappallikal
 country_event = {
-	id = FEE_Religious_Events.302
-	title = FEE_Religious_Events.302.T
-	desc = FEE_Religious_Events.302.D
+	id = FEE_Rel_Events.302
+	title = FEE_Rel_Events.302.T
+	desc = FEE_Rel_Events.302.D
 	picture = RELIGION_eventPicture
 
 	fire_only_once = yes
@@ -644,7 +897,7 @@ country_event = {
 	}
 
 	option = {
-		name = FEE_Religious_Events.302.OPT1
+		name = FEE_Rel_Events.302.OPT1
 
 		ai_chance = { factor = 0.95 }
 
@@ -678,20 +931,20 @@ country_event = {
 			}
 			add_local_autonomy = -30
 			add_province_modifier = {
-				name = fee_religious_ezharappallikal
+				name = fee_rel_ezharappallikal
 				duration = 18250
 			}
 		}
 	}
 
 	option = {
-		name = FEE_Religious_Events.302.OPT2
+		name = FEE_Rel_Events.302.OPT2
 
 		ai_chance = { factor = 0.05 }
 
 		change_religion = coptic
 		add_country_modifier = {
-			name = fee_religious_thomist_christian_bastion
+			name = fee_rel_thomist_christian_bastion
 			duration = 5475
 		}
 		535 = {
@@ -699,7 +952,7 @@ country_event = {
 			add_or_upgrade_tax_building = yes
 			hidden_effect = {
 				add_province_modifier = {
-					name = fee_religious_nestorian_religious_center_coptic
+					name = fee_rel_nestorian_religious_center_coptic
 					duration = -1
 				}
 			}
@@ -709,7 +962,7 @@ country_event = {
 			add_or_upgrade_tax_building = yes
 			hidden_effect = {
 				add_province_modifier = {
-					name = fee_religious_nestorian_religious_center_coptic
+					name = fee_rel_nestorian_religious_center_coptic
 					duration = -1
 				}
 			}
@@ -719,25 +972,25 @@ country_event = {
 			add_or_upgrade_tax_building = yes
 			hidden_effect = {
 				add_province_modifier = {
-					name = fee_religious_nestorian_religious_center_coptic
+					name = fee_rel_nestorian_religious_center_coptic
 					duration = -1
 				}
 			}
 		}
-		custom_tooltip = FEE_Religious_Events.302.tt.1
+		custom_tooltip = FEE_Rel_Events.302.tt.1
 		tooltip = {
 			add_province_modifier = {
-				name = fee_religious_nestorian_religious_center_coptic
+				name = fee_rel_nestorian_religious_center_coptic
 				duration = -1
 			}
 		}
-		custom_tooltip = FEE_Religious_Events.302.tt.2
+		custom_tooltip = FEE_Rel_Events.302.tt.2
 		tooltip = {
 			add_province_modifier = {
-				name = fee_religious_nestorian_religious_center_not_coptic
+				name = fee_rel_nestorian_religious_center_not_coptic
 				duration = -1
 			}
 		}
-		custom_tooltip = FEE_Religious_Events.302.tt.3
+		custom_tooltip = FEE_Rel_Events.302.tt.3
 	}
 }
