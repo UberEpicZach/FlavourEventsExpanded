@@ -1,0 +1,77 @@
+emf_change_random_religion_christian = {
+	random_list = {
+		14 = { change_religion = catholic }
+		14 = { change_religion = anglican }
+		14 = { change_religion = hussite }
+		14 = { change_religion = protestant }
+		14 = { change_religion = reformed }
+		14 = { change_religion = orthodox }
+		14 = { change_religion = coptic }
+	}
+}
+
+emf_spawn_christian_rebels = {
+	if = {
+		limit = {
+			owner = { religion = catholic }
+		}
+		spawn_rebels = {
+			size = $size$
+			type = catholic_rebels
+		}
+	}
+	else_if = {
+		limit = {
+			owner = { religion = reformed }
+		}
+		spawn_rebels = {
+			size = $size$
+			type = reformed_rebels
+		}
+	}
+	else_if = {
+		limit = {
+			owner = { religion = protestant }
+		}
+		spawn_rebels = {
+			size = $size$
+			type = protestant_rebels
+		}
+	}
+	else_if = {
+		limit = {
+			owner = { religion = hussite }
+		}
+		spawn_rebels = {
+			size = $size$
+			type = hussite_rebels
+		}
+	}
+	else_if = {
+		limit = {
+			owner = { religion = anglican }
+		}
+		spawn_rebels = {
+			size = $size$
+			type = anglican_rebels
+		}
+	}
+	else_if = {
+		limit = {
+			owner = { religion = orthodox }
+		}
+		spawn_rebels = {
+			size = $size$
+			type = orthodox_rebels
+		}
+	}
+	else_if = {
+		limit = {
+			owner = { religion = coptic }
+		}
+		spawn_rebels = {
+			size = $size$
+			type = coptic_rebels
+		}
+	}
+}

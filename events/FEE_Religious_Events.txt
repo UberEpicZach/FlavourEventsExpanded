@@ -731,7 +731,7 @@ country_event = {
 		random_owned_province = {
 			limit = { has_province_flag = fee_dissolution_province }
 			add_loot_from_province_effect = yes
-			fee_spawn_religious_rebels = { size = 2 }
+			emf_spawn_christian_rebels = { size = 2 }
 		}
 	}
 
