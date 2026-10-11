@@ -1477,26 +1477,3 @@ fee_spawn_religious_rebels = {
 		}
 	}
 }
-
-fee_change_random_religion_group = {
-	[[christian]
-		random_list = {
-			14 = { change_religion = catholic }
-			14 = { change_religion = anglican }
-			14 = { change_religion = hussite }
-			14 = { change_religion = protestant }
-			14 = { change_religion = reformed }
-			14 = { change_religion = orthodox }
-			14 = { change_religion = coptic }
-		}
-		hidden_effect = { add_prestige = $christian$ }
-	]
-	[[muslim]
-		random_list = {
-			33 = { change_religion = sunni }
-			33 = { change_religion = shiite }
-			33 = { change_religion = ibadi }
-		}
-		hidden_effect = { add_prestige = $muslim$ }
-	]
-}

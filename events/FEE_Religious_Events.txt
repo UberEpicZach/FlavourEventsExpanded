@@ -233,9 +233,7 @@ country_event = {
 
 	trigger = {
 		current_age = age_of_reformation
-		religion_group = christian
-		NOT = { religion = orthodox }
-		NOT = { religion = coptic }
+		emf_religion_is_christian_reformation = yes
 		OR = {
 			primary_culture = dutch
 			primary_culture = flemish
@@ -677,12 +675,7 @@ country_event = {
 			has_country_modifier = fee_rel_religious_uncertainty
 			has_country_modifier = fee_rel_walloon_catholic_zeal
 		}
-		OR = {
-			religion = protestant
-			religion = reformed
-			religion = anglican
-			religion = hussite
-		}
+		emf_religion_is_christian_reformation = yes
 		any_owned_province = {
 			NOT = { is_overseas = yes }
 			religion_group = ROOT
@@ -777,20 +770,11 @@ country_event = {
 			factor = 75
 			modifier = {
 				factor = 1
-				OR = {
-					religion = protestant
-					religion = reformed
-					religion = anglican
-					religion = hussite
-				}
+				emf_religion_is_christian_reformation = yes
 			}
 			modifier = {
 				factor = 0
-				OR = {
-					religion = catholic
-					religion = coptic
-					religion = orthodox
-				}
+				emf_religion_is_christian_non_reformation = yes
 			}
 		}
 
@@ -812,20 +796,11 @@ country_event = {
 			factor = 75
 			modifier = {
 				factor = 1
-				OR = {
-					religion = catholic
-					religion = coptic
-					religion = orthodox
-				}
+				emf_religion_is_christian_non_reformation = yes
 			}
 			modifier = {
 				factor = 0
-				OR = {
-					religion = protestant
-					religion = reformed
-					religion = anglican
-					religion = hussite
-				}
+				emf_religion_is_christian_reformation = yes
 			}
 		}
 
@@ -1146,7 +1121,7 @@ province_event = {
 		else = {
 			random_list = {
 				50 = {
-					fee_change_random_religion_group = { christian = 0 }
+					emf_change_random_religion_christian = yes
 				}
 				50 = { add_local_autonomy = 25 }
 			}

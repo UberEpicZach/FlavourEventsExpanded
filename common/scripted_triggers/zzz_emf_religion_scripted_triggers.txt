@@ -5,3 +5,20 @@ emf_religion_is_buddhist = {
 		religion = mahayana
 	}
 }
+
+emf_religion_is_christian_non_reformation = {
+	OR = {
+		religion = catholic
+		religion = coptic
+		religion = orthodox
+	}
+}
+
+emf_religion_is_christian_reformation = {
+	OR = {
+		religion = anglican
+		religion = hussite
+		religion = protestant
+		religion = reformed
+	}
+}

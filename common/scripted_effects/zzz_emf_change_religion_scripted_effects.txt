@@ -1,0 +1,11 @@
+emf_change_random_religion_christian = {
+	random_list = {
+		14 = { change_religion = catholic }
+		14 = { change_religion = anglican }
+		14 = { change_religion = hussite }
+		14 = { change_religion = protestant }
+		14 = { change_religion = reformed }
+		14 = { change_religion = orthodox }
+		14 = { change_religion = coptic }
+	}
+}
