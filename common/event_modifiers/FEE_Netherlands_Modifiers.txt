@@ -148,3 +148,36 @@ fee_ned_legacy_antwerp = {
 	trade_goods_size_modifier = 0.05
 	local_defensiveness = 0.33
 }
+
+fee_ned_burgundian_concessions = {
+	prestige = 0.5
+	tax_income = 24
+	liberty_desire = -0.10
+}
+fee_ned_placated_peasants = {
+	diplomatic_annexation_cost = 0.15
+	global_tax_modifier = -0.10
+	reduced_liberty_desire = 0.10
+}
+fee_ned_encouraged_rebels = {
+	local_unrest = 10
+}
+
+fee_ned_dulle_griet = {
+	mil_tech_cost_modifier = -0.10
+	local_defensiveness = 0.25
+}
+
+fee_ned_nieuwe_heilig_bloedbasiliek = {
+	tax_income = 12
+	prestige = 0.5
+}
+fee_ned_kirk_van_de_heilige_bloed = {
+	tax_income = 6
+	prestige = 0.25
+}
+
+fee_ned_brussels_town_hall = {
+	reform_progress_growth = 0.10
+	monthly_splendor = 1
+}

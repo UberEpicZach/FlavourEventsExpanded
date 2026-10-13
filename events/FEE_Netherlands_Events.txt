@@ -1226,16 +1226,7 @@ country_event = {
 				calc_true_if = {
 					amount = 3
 					all_subject_country = {
-						OR = {
-							AND = {
-								is_expanded_mod_active = { mod = subjects }
-								OR = {
-									is_subject_of_type = brother_kingdom
-									is_subject_of_type = integrated_personal_union
-								}
-							}
-							is_subject_of_type = personal_union
-						}
+						emf_subject_is_type_union_brother = yes
 					}
 				}
 			}
@@ -1249,16 +1240,7 @@ country_event = {
 				calc_true_if = {
 					amount = 2
 					all_subject_country = {
-						OR = {
-							AND = {
-								is_expanded_mod_active = { mod = subjects }
-								OR = {
-									is_subject_of_type = brother_kingdom
-									is_subject_of_type = integrated_personal_union
-								}
-							}
-							is_subject_of_type = personal_union
-						}
+						emf_subject_is_type_union_brother = yes
 					}
 				}
 			}
@@ -1272,16 +1254,7 @@ country_event = {
 				calc_true_if = {
 					amount = 1
 					all_subject_country = {
-						OR = {
-							AND = {
-								is_expanded_mod_active = { mod = subjects }
-								OR = {
-									is_subject_of_type = brother_kingdom
-									is_subject_of_type = integrated_personal_union
-								}
-							}
-							is_subject_of_type = personal_union
-						}
+						emf_subject_is_type_union_brother = yes
 					}
 				}
 			}
@@ -1565,6 +1538,258 @@ country_event = {
 			}
 			add_province_modifier = {
 				name = fee_ned_legacy_antwerp
+				duration = -1
+			}
+		}
+	}
+}
+
+# Gent Revolts
+country_event = {
+	id = FEE_Netherlands_Events.27
+	title = FEE_Netherlands_Events.27.T
+	desc = FEE_Netherlands_Events.27.D
+	picture = ANGRY_MOB_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = BUR
+		owns_or_non_sovereign_subject_of = 1744
+		owns_or_non_sovereign_subject_of = 1865
+		owns_or_non_sovereign_subject_of = 92
+		owns_or_non_sovereign_subject_of = 90
+		is_year = 1449
+	}
+
+	mean_time_to_happen = { years = 2 }
+
+	option = {
+		name = FEE_Netherlands_Events.27.OPT1
+		ai_chance = { factor = 50 }
+
+		if = {
+			limit = { owns = 1865 }
+			1865 = { add_local_autonomy = 50 }
+			1744 = {
+				add_permanent_province_modifier = {
+					name = fee_ned_encouraged_rebels
+					duration = 9125
+				}
+			}
+			92 = {
+				add_permanent_province_modifier = {
+					name = fee_ned_encouraged_rebels
+					duration = 9125
+				}
+			}
+			90 = {
+				add_permanent_province_modifier = {
+					name = fee_ned_encouraged_rebels
+					duration = 9125
+				}
+			}
+		}
+		else = {
+			add_country_modifier = {
+				name = fee_ned_placated_peasants
+				duration = -1
+				desc = fee_ned_placated_peasants_tt
+			}
+			1865 = {
+				owner = {
+					add_country_modifier = {
+						name = fee_ned_burgundian_concessions
+						duration = -1
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Netherlands_Events.27.OPT2
+		ai_chance = { factor = 50 }
+
+		1865 = {
+			if = {
+				limit = { owned_by = ROOT }
+				spawn_rebels = {
+					size = 3
+					type = particularist_rebels
+				}
+			}
+			else_if = {
+				limit = {
+					owner = { is_subject_of_type = personal_union }
+				}
+				spawn_rebels = {
+					size = 3
+					type = pretender_rebels
+				}
+			}
+			else = {
+				spawn_rebels = {
+					size = 2
+					type = particularist_rebels
+				}
+			}
+		}
+	}
+}
+
+#Dulle Griet
+country_event = {
+	id = FEE_Netherlands_Events.28
+	title = FEE_Netherlands_Events.28.T
+	desc = FEE_Netherlands_Events.28.D
+	picture = ADVISOR_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = BUR
+		owns_or_non_sovereign_subject_of = 1865
+		is_year = 1444
+		NOT = { is_year = 1450 }
+	}
+
+	mean_time_to_happen = {
+		months = 1
+	}
+
+	option = {
+		name = FEE_Netherlands_Events.28.OPT1
+
+		add_mil_power = 75
+		add_prestige_or_monarch_power = { amount = 15 }
+		1865 = {
+			add_permanent_province_modifier = {
+				name = fee_ned_dulle_griet
+				duration = 14600
+			}
+		}
+	}
+}
+
+# The Church of the Holy Blood (Renovation)
+country_event = {
+	id = FEE_Netherlands_Events.29
+	title = FEE_Netherlands_Events.29.T
+	desc = FEE_Netherlands_Events.29.D
+	picture = CHURCH_ESTATE_1_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		religion = catholic
+		90 = {
+			owned_by = ROOT
+			has_owner_religion = yes
+		}
+		is_year = 1444
+		NOT = { is_year = 1544 }
+	}
+
+	mean_time_to_happen = {
+		months = 60
+	}
+
+	option = {
+		name = FEE_Netherlands_Events.29.OPT1
+		ai_chance = { factor = 33 }
+
+		add_years_of_income = -0.5
+		add_papal_influence = 25
+		90 = {
+			add_or_upgrade_tax_building = yes
+			add_permanent_province_modifier = {
+				name = fee_ned_nieuwe_heilig_bloedbasiliek
+				duration = 18250
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Netherlands_Events.29.OPT2
+		ai_chance = { factor = 33 }
+
+		add_years_of_income = -0.2
+		add_papal_influence = 15
+		90 = {
+			add_permanent_province_modifier = {
+				name = fee_ned_kirk_van_de_heilige_bloed
+				duration = 18250
+			}
+		}
+	}
+
+	option = {
+		name = FEE_Netherlands_Events.29.OPT3
+		ai_chance = { factor = 33 }
+
+		add_prestige = -10
+		add_papal_influence = -5
+	}
+}
+
+# Building of Brugge City Hall
+country_event = {
+	id = FEE_Netherlands_Events.30
+	title = FEE_Netherlands_Events.30.T
+	desc = FEE_Netherlands_Events.30.D
+	picture = GREAT_BUILDING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 90
+		primary_culture = flemish
+		is_year = 1444
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = FEE_Netherlands_Events.30.OPT1
+		ai_chance = { factor = 33 }
+
+		change_government_reform_progress = 50
+		90 = {
+			add_building = town_hall
+		}
+	}
+}
+
+# Brussels Town Hall Finished!
+country_event = {
+	id = FEE_Netherlands_Events.31
+	title = FEE_Netherlands_Events.31.T
+	desc = FEE_Netherlands_Events.31.D
+	picture = GREAT_BUILDING_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		owns = 92
+		is_year = 1455
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = FEE_Netherlands_Events.31.OPT1
+		ai_chance = { factor = 33 }
+
+		92 = {
+			add_base_tax = 2
+			add_building = town_hall
+			add_permanent_province_modifier = {
+				name = fee_ned_brussels_town_hall
 				duration = -1
 			}
 		}

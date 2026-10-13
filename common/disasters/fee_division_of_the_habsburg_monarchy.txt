@@ -45,10 +45,7 @@ fee_division_of_the_habsburg_monarchy = {
 					all_subject_country = {
 						OR = {
 							junior_union_with = ROOT
-							AND = {
-								is_expanded_mod_active = { mod = subjects }
-								is_subject_of_type = brother_kingdom
-							}
+							emf_subject_is_type_union_brother = yes
 						}
 					}
 					amount = 2

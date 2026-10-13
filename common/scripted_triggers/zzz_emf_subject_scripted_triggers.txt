@@ -1,0 +1,13 @@
+emf_subject_is_type_union_brother = {
+	OR = {
+		is_subject_of_type = integrated_personal_union
+		is_subject_of_type = personal_union
+	}
+}
+
+emf_subject_is_type_union_all = {
+	OR = {
+		is_subject_of_type = integrated_personal_union
+		is_subject_of_type = personal_union
+	}
+}

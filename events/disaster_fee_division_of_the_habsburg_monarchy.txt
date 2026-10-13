@@ -665,10 +665,7 @@ country_event = {
 		HUN = {
 			OR = {
 				junior_union_with = ROOT
-				AND = {
-					is_expanded_mod_active = { mod = subjects }
-					is_subject_of_type = brother_kingdom
-				}
+				emf_subject_is_type_union_brother = yes
 			}
 		}
 	}
@@ -771,10 +768,7 @@ country_event = {
 		BOH = {
 			OR = {
 				junior_union_with = ROOT
-				AND = {
-					is_expanded_mod_active = { mod = subjects }
-					is_subject_of_type = brother_kingdom
-				}
+				emf_subject_is_type_union_brother = yes
 			}
 		}
 	}

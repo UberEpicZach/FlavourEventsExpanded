@@ -15,7 +15,7 @@
  fee_trade_goods_catastrophical_monoculture_failure_modifier_duration_tt: "until we enact the '§YInstitute Coffee Italica§!' decision"
 
 ### Chocolate Events
-FEE_Trade_Goods_Events.1.T: "Chocolate!"
+ FEE_Trade_Goods_Events.1.T: "Chocolate!"
  FEE_Trade_Goods_Events.1.D: "The word “chocolate” is not new. A heated mixture of cacao and water called “cacahuatl” had been drunk by the Mesoamericans for millennia. It was first brought over to Europe by Spanish conquistadors in 1528, but due to its popularity in the royal court, its spread was initially limited. It was in Spain where the first addition of sugar to the beverage occurred. At first used only by the court, it spread from there to nunneries where it was deemed as medicine as well as an aid to fasting since it was not considered food. It quickly boomed in popularity among Spanish nobility as well. While hot chocolate never really took hold in the Low Countries the way it did elsewhere, Flemish and Dutch trading companies began smuggling their own supply of cacao into Europe to profit off the growing demand. \nA breakthrough for chocolate came in [GetYear], when a group of Flemish traders created their own company to import cacao to [90.GetName]. That company first developed the process of roasting and fermenting cocoa beans in discarded beer brewing vats to make solid cocoa butter. While not yet an edible candy, it made for easier transport, use in medicine, and shelf life, and made Brugge the center of cocoa trade in Europe"
  FEE_Trade_Goods_Events.1.OPT1: "[90.GetName] shall be the City of Chocolate!"
  FEE_Trade_Goods_Events.1.OPT2: "The cloth trade has always sustained this city, and God willing it always will"
@@ -160,7 +160,7 @@ FEE_Trade_Goods_Events.1.T: "Chocolate!"
 
 
 ### Cotton Events
-FEE_Trade_Goods_Events.2000.T: "Booming Cotton Industry"
+ FEE_Trade_Goods_Events.2000.T: "Booming Cotton Industry"
  FEE_Trade_Goods_Events.2000.D: "Golkonda relies on its diamonds for 90% of its economy, this used to work just fine while part of a larger realm like during the time of the Bahmani and Delhi sultanates. Now that we find ourselves independent we can no longer rely on one thing alone that dictates and controls our entire economy. Thus [Root.Monarch.GetName] has tasked his steward to find something Golkonda is rich in and something we can rely on. After doing an extensive dive in the country of our rather young state it was remarked there is yet hope for the economy of Golkonda. In a report given by the esteemed steward of [Root.Monarch.GetName], it states how there is no crop that grows and flourishes in golconda as well as cotton. This created an opening and a lifeline for our economy. With the Persianate incline for weaving and production of clothes, this shift would compliment the state greatly. The plan was henceforth to produce an exorbitant amount of cotton; what we don't need we will sell in export. What we do need for cloth, clothes and other forms of weaving shall be worked by artisans. Shifting our economy from diamonds to cloth clothing and rugs."
  FEE_Trade_Goods_Events.2000.OPT1: "Cotton is King!"
  FEE_Trade_Goods_Events.2000.OPT2: "Diamonds are forever!"
@@ -248,26 +248,27 @@ FEE_Trade_Goods_Events.2000.T: "Booming Cotton Industry"
  fee_trade_goods_silk_ghent: "Silk of Ghent"
 
  fee_trade_goods_catanzaro_seta: "Seta di Catanzaro"
- desc_fee_nap_catanzaro_seta: ""
+ desc_fee_trade_goods_catanzaro_seta: ""
  fee_trade_goods_foreign_craftsman: "Foreign Craftsman"
  desc_fee_trade_goods_foreign_craftsman: ""
  fee_trade_goods_consolato_seta: "Consolato della Seta"
  desc_fee_trade_goods_consolato_seta: ""
  fee_trade_goods_silk_new_world: "Silk for the New World"
- desc_fee_trade_goods_new_world: ""
+ desc_fee_trade_goods_silk_new_world: ""
  fee_trade_goods_neapolitan_black: "Neapolitan Black"
- desc_fee_nap_neapolitan_black: ""
+ desc_fee_trade_goods_neapolitan_black: ""
 
  fee_trade_goods_foreign_craftsman_palermo: "Foreign Craftsman"
  desc_fee_trade_goods_foreign_craftsman_palermo: ""
  fee_trade_goods_jewish_craftsman_messina: "Jewish Craftsman"
  desc_fee_trade_goods_jewish_craftsman_messina: ""
  fee_trade_goods_refugess_from_palermo: "Refugees from Palermo"
- desc_fee_nap_catanzaro_seta_jews_palermo: ""
+ desc_fee_trade_goods_refugess_from_palermo: ""
  fee_trade_goods_refugees_messina: "Refugees from Messina"
- desc_fee_nap_catanzaro_seta_jews_messina: ""
+ desc_fee_trade_goods_refugees_messina: ""
 
  fee_trade_goods_dependence_on_diamonds: "Dependence on Diamonds"
+ desc_fee_trade_goods_dependence_on_diamonds: ""
 
  fee_trade_goods_sugar_rush: "Sugar Rush"
 
