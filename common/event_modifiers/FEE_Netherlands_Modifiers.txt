@@ -181,3 +181,14 @@ fee_ned_brussels_town_hall = {
 	reform_progress_growth = 0.10
 	monthly_splendor = 1
 }
+
+fee_ned_koudenberg_palace = {
+	prestige_decay = -0.01
+	local_unrest = -2
+	local_governing_cost = -0.50
+}
+
+fee_ned_bruges_lacemaking = {
+	local_development_cost = 0.10
+	trade_value = 0.50
+}

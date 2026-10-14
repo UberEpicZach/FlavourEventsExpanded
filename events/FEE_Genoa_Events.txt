@@ -302,7 +302,7 @@ country_event = {
 			add_base_production = -3
 			if = {
 				limit = {
-					has_dlc = Leviathan
+					has_dlc = "Leviathan"
 					is_expanded_mod_active = { mod = great_monuments }
 					has_great_project = {
 						type = gme_lanterna_genova
@@ -341,7 +341,7 @@ country_event = {
 	option = {
 		name = FEE_Genoa_Events.9.OPT1
 		trigger = {
-			has_dlc = Leviathan
+			has_dlc = "Leviathan"
 			is_expanded_mod_active = { mod = great_monuments }
 		}
 		ai_chance = {
@@ -378,7 +378,7 @@ country_event = {
 			add_base_production = 3
 			if = {
 				limit = {
-					NOT = { has_dlc = Leviathan }
+					NOT = { has_dlc = "Leviathan" }
 				}
 				remove_province_modifier = fee_gen_lanterna
 				add_permanent_province_modifier = {
