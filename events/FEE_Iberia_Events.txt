@@ -1897,3 +1897,57 @@ country_event = {
 		add_dip_power = 25
 	}
 }
+
+# Mudejares Emerge from Shadows
+country_event = {
+	id = FEE_Iberia_Events.21
+	title = FEE_Iberia_Events.21.T
+	desc = FEE_Iberia_Events.21.D
+	picture = muslim_RELIGIOUS_CONVERSION_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		has_country_flag = emf_mudejares
+		OR = {
+			tag = GRA
+			tag = ADU
+		}
+		religion_group = muslim
+		219 = {
+			owned_by = ROOT
+			controlled_by = ROOT
+		}
+		220 = {
+			owned_by = ROOT
+			controlled_by = ROOT
+		}
+		221 = {
+			owned_by = ROOT
+			controlled_by = ROOT
+		}
+		223 = {
+			owned_by = ROOT
+			controlled_by = ROOT
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+
+	option = {
+		name = FEE_Iberia_Events.21.OPT1
+		ai_chance = { factor = 75 }
+
+		add_prestige_or_monarch_power = { amount = 10 }
+		add_country_modifier = {
+			name = iberia_mudejares
+			duration = 3650
+		}
+		219 = { change_religion = ROOT }
+		220 = { change_religion = ROOT }
+		221 = { change_religion = ROOT }
+		223 = { change_religion = ROOT }
+	}
+}

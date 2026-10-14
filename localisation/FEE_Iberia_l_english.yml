@@ -112,48 +112,113 @@
  FEE_Iberia_Events.20.OPT1: "His work in Naples makes the Crown proud."
  FEE_Iberia_Events.20.OPT2: "His talent should be used in other parts of our empire."
 
+ FEE_Iberia_Events.21.T: "Mudejares Emerge from Shadows"
+ FEE_Iberia_Events.21.D: "With the return of the Emir to and Qurtuba, Tulaytullah, Mursiyya, and Balansiyya, the people have started to accept the new reality, that rather than a brief resurgence, one that flickers and goes out like so many other would-be caliphates, the Sayyids are here to stay. Secure in the knowledge that their religion would once more be respected, the Mudejares - those who publicly acknowledged the cross while worshipping Allah in private - have shed their facade and now practice their faith in public once more."
+ FEE_Iberia_Events.21.OPT1: "Alhamdulillah!"
+
  #Modifiers
  iberia_irmandinos_justified: "Irmandiños Justified"
+ desc_iberia_irmandinos_justified: ""
+
  iberia_spanish_cortes: "Spanish Cortes"
+ desc_iberia_spanish_cortes: ""
+
  iberia_autonomous_regions: "Autonomous Regions"
+ desc_iberia_autonomous_regions: ""
+
  iberia_restricted_autonomy: "Restricted Autonomy"
+ desc_iberia_restricted_autonomy: ""
+
  iberia_abolished_local_privileges: "Abolished Local Privileges"
+ desc_iberia_abolished_local_privileges: ""
+
  iberia_autonomy_curalied: "Autonomy Curtailed"
+ desc_iberia_autonomy_curalied: ""
+
  iberia_fueros_enforced: "Fueros Enforced"
+ desc_iberia_fueros_enforced: ""
+
  iberia_fueros_ignored: "Fueros Ignored"
+ desc_iberia_fueros_ignored: ""
+
  iberia_centralised_rule: "Centralized Rule enforced"
+ desc_iberia_centralised_rule: ""
+
  iberia_institutions_respected: "Institutions Respected"
+ desc_iberia_institutions_respected: ""
+
  iberia_institutions_modified: "Institutions Modified"
+ desc_iberia_institutions_modified: ""
+
  iberia_institutions_abolished: "Institutions Abolished"
+ desc_iberia_institutions_abolished: ""
+
  iberia_catalonian_constitution: "Catalonian Constitution"
+ desc_iberia_catalonian_constitution: ""
+
  iberia_constitution_concessions: "Constitution Concessions"
+ desc_iberia_constitution_concessions: ""
+
  iberia_segadores: "Segadores"
+ desc_iberia_segadores: ""
+
  iberia_ministerial_power: "Ministerial Power"
+ desc_iberia_ministerial_power: ""
+
  iberia_oppressive_government: "Oppressive Government"
+ desc_iberia_oppressive_government: ""
+
  iberia_order_restored: "Order Restored"
+ desc_iberia_order_restored: ""
+
  iberia_seismological_studies_innovativeness: "Seismological Studies"
+ desc_iberia_seismological_studies_innovativeness: ""
+
  iberia_seismological_studies_no_innovativeness: "Seismological Studies"
+ desc_iberia_seismological_studies_no_innovativeness: ""
+
+ iberia_mudejares: "Mudejares"
+ desc_iberia_mudejares: ""
 
  #Spanish Catholic Modifiers
  iberia_lay_piety: "Lay Piety"
+ desc_iberia_lay_piety: ""
  iberia_reforms_rejected: "Reforms Rejected"
+ desc_iberia_reforms_rejected: ""
  iberia_school_alcala: "School of Alcala"
+ desc_iberia_school_alcala: ""
  iberia_university_alcala: "University of Alcala"
+ desc_iberia_university_alcala: ""
  iberia_papal_fraud_uncovered: "Papal Fraud Uncovered"
+ desc_iberia_papal_fraud_uncovered: ""
  iberia_reconcilation_pope: "Reconciliation with the Pope"
+ desc_iberia_reconcilation_pope: ""
  iberia_submission_pope: "Submission to the Pope"
+ desc_iberia_submission_pope: ""
  iberia_recogimiento: "Recogimiento"
+ desc_iberia_recogimiento: ""
  iberia_juan_avila: "Juan de Avila"
+ desc_iberia_juan_avila: ""
  iberia_suppressed_reform: "Suppressed Reform"
+ desc_iberia_suppressed_reform: ""
  iberia_benedictine_reforms: "Benedictine Reforms"
+ desc_iberia_benedictine_reforms: ""
  iberia_strict_franciscans: "Strict Franciscans"
+ desc_iberia_strict_franciscans: ""
  iberia_gradual_franciscans_reform: "Gradual Franciscans Reform"
+ desc_iberia_gradual_franciscans_reform: ""
  iberia_orthodoxy_enforced: "Orthodosy Enforced"
+ desc_iberia_orthodoxy_enforced: ""
  iberia_jesuit_education: "Jesuit Education"
+ desc_iberia_jesuit_education: ""
  iberia_molinism: "Molinism"
+ desc_iberia_molinism: ""
  iberia_poor_laws: "Poor Laws"
+ desc_iberia_poor_laws: ""
  iberia_traditional_charity: "Traditional Charity"
+ desc_iberia_traditional_charity: ""
  iberia_poor_laws_church_support: "Poor Laws with Church Support"
+ desc_iberia_poor_laws_church_support: ""
 
  #Estate Modifiers
  iberia_irmandinos_nobles_curtail: "Curtailed the Nobles"

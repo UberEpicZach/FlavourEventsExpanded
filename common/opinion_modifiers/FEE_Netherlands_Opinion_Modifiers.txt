@@ -31,3 +31,8 @@ fee_ned_sacked_antwerp_punished_mutineers = {
 	opinion = -40
 	yearly_decay = 2
 }
+
+fee_ned_did_not_help_exiles = {
+	opinion = 60
+	yearly_decay = 2
+}

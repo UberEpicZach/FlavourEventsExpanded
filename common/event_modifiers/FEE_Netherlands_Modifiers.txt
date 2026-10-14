@@ -192,3 +192,63 @@ fee_ned_bruges_lacemaking = {
 	local_development_cost = 0.10
 	trade_value = 0.50
 }
+
+fee_ned_potato_boom = {
+	development_cost_modifier = -0.10
+	manpower_recovery_speed = 0.20
+}
+
+fee_ned_flemish_baroque_painting = {
+	tolerance_own = 1
+	papal_influence = 1
+	prestige = 0.5
+}
+
+fee_ned_ostend_company = {
+	merchants = 2
+	trade_range_modifier = 0.50
+}
+fee_ned_ostend_factory_investments = {
+	global_foreign_trade_power = 0.20
+	trade_company_investment_cost = -0.20
+}
+
+fee_ned_frijites = {
+	trade_goods_size = 1
+	local_development_cost = -0.10
+}
+fee_ned_introduction_fries = {
+	global_unrest = -2
+	manpower_recovery_speed = 0.10
+}
+
+fee_ned_binche_palace = {
+	all_estate_loyalty_equilibrium = 0.05
+	legitimacy = 1
+	reform_progress_growth = 0.15
+}
+
+fee_ned_multicultural_reformed_church = {
+	religion = yes
+	tolerance_own = 1
+	global_missionary_strength = 0.01
+}
+fee_ned_huguenot_communities = {
+	religion = yes
+	local_production_efficiency = 0.25
+}
+
+fee_ned_walloon_reformed_colonist = {
+	religion = yes
+	global_colonial_growth = 25
+	global_heathen_missionary_strength = 0.03
+}
+
+fee_ned_belgica_marble = {
+	local_build_cost = -0.20
+	trade_goods_size = 0.5
+}
+
+fee_ned_humiliated_fleet = {
+	naval_morale = -0.20
+}
