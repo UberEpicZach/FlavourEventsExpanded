@@ -1900,6 +1900,10 @@ country_event = {
 			NOT = { is_capital = yes }
 		}
 		1744 = { owned_by = ROOT }
+		OR = {
+			NOT = { tag = FLA }
+			NOT = { is_free_or_tributary_trigger = yes }
+		}
 	}
 
 	mean_time_to_happen = {
@@ -1957,7 +1961,10 @@ country_event = {
 	major = yes
 
 	immediate = {
-		hidden_effect = { set_country_flag = fee_taters_precious }
+		hidden_effect = {
+			set_country_flag = fee_taters_precious
+			set_global_flag = fee_potatoes_low_countries
+		}
 	}
 
 	option = {
@@ -2161,10 +2168,7 @@ country_event = {
 				}
 				AND = {
 					is_year = 1650
-					colonial_peru = {
-						owner = { is_colonial_nation = yes }
-					}
-					has_global_flag = columbian_exchange_happened
+					has_global_flag = fee_potatoes_low_countries
 				}
 			}
 		}
@@ -2579,6 +2583,43 @@ country_event = {
 		add_country_modifier = {
 			name = fee_ned_humiliated_fleet
 			duration = 7300
+		}
+	}
+}
+
+# Flemish Renaissance
+country_event = {
+	id = FEE_Netherlands_Events.45
+	title = FEE_Netherlands_Events.45.T
+	desc = FEE_Netherlands_Events.45.D
+	picture = ARTWORK_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		is_year = 1450
+		OR = {
+			owns = 90
+			owns = 1744
+			owns = 1865
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 100
+	}
+
+	option = {
+		name = FEE_Netherlands_Events.45.OPT1
+		ai_chance = { factor = 75 }
+
+		add_prestige_or_monarch_power = { amount = 20 }
+		define_advisor = {
+			type = artist
+			culture = flemish
+			religion = root
+			skill = 3
+			cost_multiplier = 0.25
 		}
 	}
 }
